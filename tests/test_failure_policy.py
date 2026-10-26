@@ -74,7 +74,7 @@ class Apple(FakeApple):
 
 
 def routes_for(site: Site, overrides: Optional[Dict[str, List[Spec]]] = None, version: int = 1) -> Dict[str, List[Spec]]:
-    """Each page answers 200 with an etag of its body (304 on a match, never asked for), unless overridden."""
+    """Each page answers 200 with an ETag of its body (never stored; 304 on a match, never asked for), unless overridden."""
     routes: Dict[str, List[Spec]] = {}
     for path, children in site.items():
         body = page(path, children)
@@ -273,18 +273,24 @@ class TestCleanRuns:
             await runs.run(routes)
             assert runs.requests() == {json_url(path): 2 if path == ROOT else 1 for path in SITE}
 
-    async def test_an_etag_rotation_changes_only_the_etags(self, runs: Runs) -> None:
-        """The same content under new etags (e.g. a CDN redeploy): only the etag values change."""
+    async def test_an_etag_rotation_changes_no_hash_file(self, runs: Runs) -> None:
+        """The same content under new ETags (Apple's CDN alternates "…" and "…-df"): the hash file
+        isn't written. No ETag is stored, and one a hash file still holds (as before) is ignored."""
         await seeded(runs)
-        before = runs.saved()
-        rotated = {url: [ok(spec["body"], f"{spec['etag']}-r") for spec in specs]
+        hash_file = Config.get_hash_file(FW)
+        assert '"etag"' not in hash_file.read_text()
+        # A hash file as written while ETags were stored
+        data = runs.saved()
+        for url, entry in data["hashes"].items():
+            if "hash" in entry:
+                entry["etag"] = f'"stored-{url}"'
+        hash_file.write_text(json.dumps(data, indent=2, sort_keys=True))
+        before, mtime = hash_file.read_bytes(), hash_file.stat().st_mtime_ns
+        rotated = {url: [ok(spec["body"], f"{spec['etag']}-df") for spec in specs]
                    for url, specs in routes_for(SITE).items()}
-        await runs.run(rotated)
-        after = runs.saved()
-        assert after["metadata"] == before["metadata"]
-        assert set(after["hashes"]) == set(before["hashes"])
-        for url, entry in before["hashes"].items():
-            assert after["hashes"][url] == {**entry, "etag": f"{entry['etag']}-r"}, url
+        scraper = await runs.run(rotated)
+        assert scraper.stats["pages_scraped"] == 0 and scraper.stats["pages_skipped"] >= len(SITE)
+        assert hash_file.read_bytes() == before and hash_file.stat().st_mtime_ns == mtime
 
     async def test_metadata_and_local_error_counts_survive_a_quiet_run(self, runs: Runs) -> None:
         await seeded(runs)
@@ -592,8 +598,8 @@ class TestLocalErrors:
             assert scraper.outcome.blocks == {"local_error": [json_url(ALPHA)]}
             entry = runs.entry(ALPHA)
             assert entry["consecutive_local_errors"] == run
-            # Write before hash: the old etag stays, so the next run refetches
-            assert entry["etag"] == alpha_before["etag"] and entry["hash"] == alpha_before["hash"]
+            # Write before hash: the old hash stays, so the next run converts it again
+            assert entry["hash"] == alpha_before["hash"]
             assert "consecutive_failures" not in entry
             # Links first: the child was reached and stays touched; beta waits for a clean run
             assert runs.orphans() == {file_of(BETA)}
@@ -628,7 +634,7 @@ class TestLocalErrors:
     async def test_a_dir_we_may_not_search(self, runs: Runs) -> None:
         """No permission on alpha's dir: alpha/child's file can't be checked or written.
 
-        Unchanged, the page is kept (its etag is still sent) and nothing
+        Unchanged, the page is kept (its hash still matches) and nothing
         blocks. Changed, it fails to save every run: it blocks until 3, and
         its entry and count survive scrape.py's cleanup, which prunes only
         the entries of files known to be gone.
@@ -711,21 +717,21 @@ class TestLocalErrors:
             scraper = await runs.run(routes_for(site, changed))
             entry = runs.entry(ALPHA)
             assert entry["consecutive_local_errors"] == run
-            # Its JSON-URL key records the file again, with no etag and an unknown hash
+            # Its JSON-URL key records the file again, with an unknown hash
             assert entry.get("status") != "error" and entry["file_path"] == str(file_of(ALPHA))
-            assert entry["hash"] == "" and "etag" not in entry and "consecutive_failures" not in entry
+            assert entry["hash"] == "" and "consecutive_failures" not in entry
             assert runs.orphans() == set()
         assert scraper.outcome.blocks == {}
         assert scraper.outcome.persistent_local_errors == [json_url(ALPHA)]
         # Never deleted on a local error
         assert would_delete(scraper) == {}
 
-        # The converter is fixed: refetched without an etag, converted and saved again
+        # The converter is fixed: converted and saved again
         monkeypatch.setattr(AppleJSONDocumentationScraper, "__init__", real_init)
         scraper = await runs.run(routes_for(site, changed))
         assert not scraper.outcome.skip_cleanup
         entry = runs.entry(ALPHA)
-        assert counters(entry) == {} and entry["hash"] and entry["etag"]
+        assert counters(entry) == {} and entry["hash"]
         assert "v2" in file_of(ALPHA).read_text(encoding="utf-8")
 
 
@@ -825,7 +831,7 @@ class TestRoot:
         assert "root_gone_runs" not in runs.saved()["metadata"]
         assert len(runs.logged("root_fetch_conflict")) == 1 and runs.logged("page_gone") == []
         entry = runs.entry(ROOT)
-        assert entry.get("status") != "error" and entry["file_path"] == str(file_of(ROOT)) and entry["etag"]
+        assert entry.get("status") != "error" and entry["file_path"] == str(file_of(ROOT)) and entry["hash"]
         assert counters(entry) == {}
         assert runs.orphans() == {file_of(path) for path in SITE if path != ROOT}
 
@@ -1275,7 +1281,7 @@ RENDER_NEW = RENDER_OLD + 1
 
 class TestRenderVersion:
     """4.13: a framework rendered by another RENDER_VERSION is rendered again whole (every page
-    fetched without its etag and written), and the new version is stored only after a clean run."""
+    written again), and the new version is stored only after a clean run."""
 
     @staticmethod
     def bump(monkeypatch: pytest.MonkeyPatch, version: int = RENDER_NEW) -> None:
@@ -1301,7 +1307,7 @@ class TestRenderVersion:
         assert runs.logged("render_version_stale") and runs.logged("render_version_stored")
         saved = runs.saved()
         assert saved["metadata"]["render"] == {"version": RENDER_NEW}
-        assert saved["hashes"] == hashes_before  # same JSON, same etags and files
+        assert saved["hashes"] == hashes_before  # same JSON, same hashes and files
         # The next run of the same version: every page is unchanged, nothing is written
         hash_file = Config.get_hash_file(FW)
         before, mtime = hash_file.read_bytes(), hash_file.stat().st_mtime_ns
@@ -1314,7 +1320,7 @@ class TestRenderVersion:
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         """Their files keep the old rendering (here held by the valve): the run that stores the
-        version drops their hash and etag, so they are rendered when Apple links them again unchanged."""
+        version drops their hash, so they are rendered when Apple links them again unchanged."""
         await seeded(runs)
         for path in SITE:
             file_of(path).write_text("# an older rendering\n", encoding="utf-8")
@@ -1333,9 +1339,9 @@ class TestRenderVersion:
         assert self.stored() == {"version": RENDER_NEW}
         for path in unreached:
             entry = runs.entry(path)
-            assert entry["hash"] == "" and "etag" not in entry and entry["file_path"] == str(file_of(path)), path
+            assert entry["hash"] == "" and entry["file_path"] == str(file_of(path)), path
         assert counters(runs.entry(GAMMA)) == {"consecutive_local_errors": 1}
-        assert runs.entry(ROOT)["hash"] and runs.entry(ROOT)["etag"]
+        assert runs.entry(ROOT)["hash"]
         report = runs.cleanup(scraper)
         assert report.deleted == {} and report.held == {FW: (4, 5)}
         assert runs.saved()["metadata"]["pending_orphans"] == sorted(str(file_of(path)) for path in unreached)
@@ -1349,7 +1355,7 @@ class TestRenderVersion:
             assert f"The {path} page." in file_of(path).read_text(encoding="utf-8"), path
         report = runs.cleanup(scraper)
         assert report.deleted == {} and report.held == {} and "pending_orphans" not in runs.saved()["metadata"]
-        assert all(runs.entry(path)["hash"] and runs.entry(path)["etag"] for path in unreached)
+        assert all(runs.entry(path)["hash"] for path in unreached)
         # Then every page is unchanged and nothing is written
         before = hash_file.read_bytes()
         scraper = await runs.run(routes_for(SITE))
@@ -1382,7 +1388,7 @@ class TestRenderVersion:
     async def test_a_persistent_local_error_keeps_the_version_unstored(
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch
     ) -> None:
-        """The page's old file is kept and its etag still matches: only an unstored version renders it again."""
+        """The page's old file is kept and its hash still matches: only an unstored version renders it again."""
         await seeded(runs)
         self.bump(monkeypatch)
         fail_convert(monkeypatch, ALPHA)

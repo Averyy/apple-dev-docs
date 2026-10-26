@@ -23,8 +23,8 @@ from scraper.utils.hash_manager import HashManager
 # but the scraper uses httpx.AsyncClient.session.get() as an async method.
 # Proper async network tests would require respx or similar async mocking library.
 
-class TestETagIntegration:
-    """Test ETag integration edge cases"""
+class TestHashStorage:
+    """Test hash storage edge cases"""
     
     def setup_method(self):
         """Set up test environment"""
@@ -39,12 +39,8 @@ class TestETagIntegration:
         import shutil
         shutil.rmtree(self.temp_dir, ignore_errors=True)
 
-    # Note: test_malformed_etag_header and test_missing_etag_header were removed
-    # because they mocked httpx.get but the scraper uses httpx.AsyncClient.session.get()
-    # The async API would require proper async mocking with respx or similar.
-
-    def test_etag_storage_corruption(self):
-        """Test handling of corrupted ETag storage"""
+    def test_hash_storage_corruption(self):
+        """Test handling of corrupted hash storage"""
         # Corrupt the hash file
         with open(self.hash_manager.cache_file, 'w') as f:
             f.write("invalid json content {")
@@ -57,9 +53,9 @@ class TestETagIntegration:
         assert result is True  # Should treat as new content
         
         # Should be able to update despite corruption
-        self.hash_manager.update_hash(url, content, "test-etag")
+        self.hash_manager.update_hash(url, content)
         
-        print("✓ ETag storage corruption test passed")
+        print("✓ Hash storage corruption test passed")
     
     def test_concurrent_hash_access(self):
         """Test concurrent access to hash files"""
@@ -72,13 +68,12 @@ class TestETagIntegration:
             try:
                 url = f"test_url_{worker_id}"
                 content = f"test content {worker_id}"
-                etag = f"test-etag-{worker_id}"
                 
                 # Each worker updates hash
-                self.hash_manager.update_hash(url, content, etag)
+                self.hash_manager.update_hash(url, content)
                 
                 # Then checks for changes
-                changed = self.hash_manager.has_changed(url, content, etag)
+                changed = self.hash_manager.has_changed(url, content)
                 results.put((worker_id, changed))
             except Exception as e:
                 results.put((worker_id, f"ERROR: {e}"))
@@ -158,7 +153,7 @@ def run_network_tests():
     """Run all network resilience tests"""
     print("🌐 Testing Network Resilience and Error Handling\n")
     
-    test_classes = [TestETagIntegration, TestRateLimiting]
+    test_classes = [TestHashStorage, TestRateLimiting]
     total_passed = 0
     total_failed = 0
     

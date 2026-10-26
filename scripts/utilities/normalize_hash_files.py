@@ -1,33 +1,38 @@
 #!/usr/bin/env python3
 """
-One-off normalization of the Apple framework hash files (D5 switch).
+One-off normalization of the DocC sites' hash files (the D5 switch, then the
+switch that stopped storing ETags).
 
-HashManager now writes only content fields (hash, etag, file_path; status and
+HashManager now writes only content fields (hash, file_path; status and
 error on an error entry; the run counters while > 0) with sorted keys, and
-drops the legacy fields on load (last_checked, session_id, a status other
-than "error", an error entry's hash; metadata last_updated, session_id,
-partial_session). save() writes only a modified manager, and a run whose
-pages are all unchanged modifies nothing, so no scrape would ever rewrite a
-file in the new format: this script loads every Apple framework hash file
-(one with a key under the JSON data URL) through HashManager, marks it
-modified and saves it.
+drops the legacy fields on load (last_checked, session_id, etag, a status
+other than "error", an error entry's hash; metadata last_updated,
+session_id, partial_session). save() writes only a modified manager, and a
+run whose pages are all unchanged modifies nothing, so no scrape would ever
+rewrite a file in the new format: this script loads every DocC site's hash
+file (one with a key under a site's JSON data URL: Apple's frameworks and
+modules, docs.swift.org's and the Swift Package Index packages', under
+.hashes/ and its namespace dirs) through HashManager, marks it modified and
+saves it.
 
 It also drops the root keys whose casing doesn't match the framework id (the
 hash file's name), both of each (JSON URL and doc URL), when the root in the
 id's casing is there too: Apple flipped a framework's URL casing once, and
 the scrape only ever writes the id's casing, so the other pair is stale.
 
-The other scrapers' hash files (HIG, Swift, MLX) are hash_utils' and are left
-alone. A second run writes the same bytes.
+The other scrapers' hash files (HIG, Swift, MLX) are hash_utils' and the
+indexer's meilisearch_hashes.json isn't a scraper's: they are left alone. A
+second run writes the same bytes.
 
-Usage (from the repo root, with the D5 switch's code applied on an
-up-to-date origin/main and no scrape run queued or in progress; with the old
-HashManager, which drops no legacy field, it refuses to run):
+Usage (from the repo root, with the switch's code applied on an up-to-date
+origin/main and no scrape run queued or in progress; with an older
+HashManager, which keeps etag, it refuses to run):
     python scripts/utilities/normalize_hash_files.py --dry-run  # Report; changes nothing
     python scripts/utilities/normalize_hash_files.py            # Normalize .hashes
+    CACHE_DIR=<dir> python scripts/utilities/normalize_hash_files.py  # Normalize a copy
 
 Exit code: 0, or 1 if a hash file failed to load or save (left as it was)
-or the HashManager is the old one (nothing changed).
+or the HashManager is an older one (nothing changed).
 """
 
 import argparse
@@ -43,10 +48,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
-from scraper.utils.hash_manager import HashManager, read_hash_file
+from scraper.site import APPLE, DOCC_SITES
+from scraper.utils.hash_manager import LEGACY_ENTRY_FIELDS, HashManager, read_hash_file
 
 HASH_FILE_SUFFIX: Final = "_hashes.json"
 APPLE_JSON_PREFIX: Final = AppleJSONDocumentationScraper.JSON_BASE_URL + "/"
+# A DocC site's hash file has keys under one of these
+DOCC_JSON_PREFIXES: Final = tuple(site.json_prefix for site in (APPLE, *DOCC_SITES))
+# The indexer's (scripts/index_to_meilisearch.py), not a scraper's
+INDEXER_HASH_FILE: Final = "meilisearch_hashes.json"
 
 
 @dataclass
@@ -58,6 +68,7 @@ class Report:
     entries_before: int = 0
     entries_after: int = 0
     entries_cleaned: int = 0
+    entries_losing_etag: int = 0
     metadata_keys_dropped: int = 0
     bytes_before: int = 0
     bytes_after: int = 0
@@ -67,7 +78,10 @@ class Report:
 
 
 def case_duplicate_roots(framework_id: str, manager: HashManager) -> List[str]:
-    """The root keys in another casing than framework_id's, if the id-cased root is there too."""
+    """The root keys in another casing than framework_id's, if the id-cased root is there too.
+
+    Apple's only: another site's hash file has no Apple root, so none.
+    """
     json_root = f"{APPLE_JSON_PREFIX}{framework_id}.json"
     doc_root = f"{Config.DOCUMENTATION_URL}/{framework_id}"
     if json_root not in manager.hashes:
@@ -79,7 +93,7 @@ def case_duplicate_roots(framework_id: str, manager: HashManager) -> List[str]:
 
 
 def normalize(path: Path, raw_hashes: Dict[str, Any], raw_metadata: Dict[str, Any], report: Report) -> None:
-    """Load one Apple hash file through HashManager, drop its case-duplicate roots and save it.
+    """Load one DocC hash file through HashManager, drop its case-duplicate roots and save it.
 
     raw_hashes and raw_metadata are the file as read_hash_file reads it, for the report.
     """
@@ -93,6 +107,9 @@ def normalize(path: Path, raw_hashes: Dict[str, Any], raw_metadata: Dict[str, An
     report.entries_before += len(raw_hashes)
     report.entries_cleaned += sum(
         1 for url, entry in manager.hashes.items() if entry != raw_hashes[url]
+    )
+    report.entries_losing_etag += sum(
+        1 for entry in raw_hashes.values() if isinstance(entry, dict) and "etag" in entry
     )
     report.metadata_keys_dropped += sum(
         1 for key in raw_metadata if key != "total_pages" and key not in manager.metadata
@@ -116,13 +133,15 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dry-run", action="store_true", help="Normalize copies and report; change nothing")
     args = parser.parse_args()
-    if not hasattr(HashManager, "set_file_path"):
-        # The old HashManager would rewrite every file in the old format
-        print("❌ This HashManager predates the D5 switch: apply its code first; nothing changed")
+    if "etag" not in LEGACY_ENTRY_FIELDS:
+        # An older HashManager would rewrite every file keeping its etags
+        print("❌ This HashManager still stores etags: apply the switch's code first; nothing changed")
         return 1
 
     report = Report()
-    paths = sorted(Config.CACHE_DIR.glob(f"*{HASH_FILE_SUFFIX}"))
+    paths = sorted(
+        path for path in Config.CACHE_DIR.rglob(f"*{HASH_FILE_SUFFIX}") if path.name != INDEXER_HASH_FILE
+    )
     with tempfile.TemporaryDirectory() as scratch:
         for path in paths:
             try:
@@ -130,7 +149,7 @@ def main() -> int:
             except (OSError, ValueError) as e:
                 report.failures.append(f"{path}: failed to load: {e}")
                 continue
-            if not any(url.startswith(APPLE_JSON_PREFIX) for url in hashes):
+            if not any(url.startswith(DOCC_JSON_PREFIXES) for url in hashes):
                 report.other_files += 1
                 continue
             if args.dry_run:
@@ -142,9 +161,9 @@ def main() -> int:
                 normalize(path, hashes, metadata, report)
 
     mode = "Would normalize" if args.dry_run else "Normalized"
-    print(f"{mode} {report.files} Apple hash files ({report.other_files} other hash files left alone)")
+    print(f"{mode} {report.files} DocC hash files ({report.other_files} other hash files left alone)")
     print(f"  entries: {report.entries_before:,} -> {report.entries_after:,} "
-          f"({report.entries_cleaned:,} lose legacy fields)")
+          f"({report.entries_cleaned:,} lose legacy fields, {report.entries_losing_etag:,} of them an etag)")
     print(f"  legacy metadata keys dropped: {report.metadata_keys_dropped:,}")
     print(f"  case-duplicate root keys dropped: {len(report.dropped_keys)}")
     for url in report.dropped_keys:

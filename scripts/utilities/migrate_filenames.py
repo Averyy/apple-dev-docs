@@ -28,7 +28,7 @@ so the next scrape deletes nothing because of the rename.
 4. The files are renamed (os.rename; `git add -A` sees the renames), and
    the dirs they leave empty are removed.
 5. Every live page's keys record its new path (HashManager.set_file_path:
-   hash, etag and counters untouched), metadata.pending_orphans follows the
+   hash and counters untouched), metadata.pending_orphans follows the
    renames (matched case-insensitively), and the changed hash files are
    saved.
 

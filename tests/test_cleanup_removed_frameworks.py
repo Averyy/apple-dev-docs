@@ -53,7 +53,7 @@ def make_framework(fw: str, pages: int = 2, docs_dir: Optional[str] = None,
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(f"# {fw} page {i}\n")
         for url in (json_url(f"{fw.lower()}/page{i}"), doc_url(f"{fw.lower()}/page{i}")):
-            manager.update_hash(url, path.read_text(), f"E-{i}", path)
+            manager.update_hash(url, path.read_text(), path)
     for key, value in metadata.items():
         manager.set_metadata(key, value)
     assert manager.save()

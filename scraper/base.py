@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Any, ClassVar, Dict, Final, Optional, Tuple, Union
+from typing import Any, ClassVar, Dict, Final, Optional, Union
 
 import httpx
 
@@ -26,7 +26,8 @@ class NotModified(Enum):
     NOT_MODIFIED = "not_modified"
 
 
-# The server answered 304 Not Modified to a conditional (ETag) request.
+# The server answered 304 Not Modified (no request sends If-None-Match, so a
+# 304 is unasked for; it is still not a failure).
 NOT_MODIFIED: Final = NotModified.NOT_MODIFIED
 
 
@@ -48,8 +49,8 @@ class FetchFailed:
     transient: bool
 
 
-# (content, etag) on 200, NOT_MODIFIED on 304, FetchFailed otherwise
-FetchResult = Union[Tuple[str, Optional[str]], NotModified, FetchFailed]
+# The content on 200, NOT_MODIFIED on 304, FetchFailed otherwise
+FetchResult = Union[str, NotModified, FetchFailed]
 
 
 class BaseAppleScraper(ABC):
@@ -185,36 +186,24 @@ class BaseAppleScraper(ABC):
         if not self.hash_manager.save() and exc_type is None:
             raise OSError(f"failed to save hash file {self.hash_manager.cache_file}")
     
-    async def fetch_page_with_etag(
-        self, url: str, use_etag: bool = True, hash_manager: Optional[HashManager] = None
-    ) -> FetchResult:
-        """Fetch a page with ETag support for efficient caching.
+    async def fetch_page(self, url: str) -> FetchResult:
+        """Fetch a page, unconditionally (no If-None-Match is sent).
         
         Never writes the URL's hash entry: callers decide what a failure
         means for it.
         
         Args:
             url: URL to fetch
-            use_etag: Whether to use ETag for conditional requests
-            hash_manager: The hash file whose stored ETag is sent (the
-                page's sink's); the framework's own by default
             
         Returns:
-            Tuple of (content, etag) on success, NOT_MODIFIED on 304 Not
-            Modified, or FetchFailed on a 4xx or once retries are exhausted
+            The content on success, NOT_MODIFIED on 304 Not Modified, or
+            FetchFailed on a 4xx or once retries are exhausted
         """
         if not self.session:
             raise RuntimeError("Scraper must be used as async context manager")
         
         # Rate limiting
         await self.rate_limiter.acquire()
-        
-        # Prepare headers with ETag if available
-        headers = {}
-        if use_etag:
-            stored_etag = (hash_manager if hash_manager is not None else self.hash_manager).get_etag(url)
-            if stored_etag:
-                headers["If-None-Match"] = stored_etag
         
         start_time = time.time()
         retries = 0
@@ -224,13 +213,14 @@ class BaseAppleScraper(ABC):
         backoff = self.retry_backoff if self.retry_backoff is not None else Config.RETRY_BACKOFF_FACTOR
         while retries <= max_retries:
             try:
-                response = await self.session.get(url, headers=headers)
+                response = await self.session.get(url)
                 
-                # Handle 304 Not Modified (content unchanged via ETag)
+                # 304 Not Modified: unasked for, but raise_for_status would
+                # make it a non-transient failure
                 if response.status_code == 304:
                     response_time = time.time() - start_time
                     self.rate_limiter.record_success(response_time)
-                    logger.debug("content_not_modified_etag", url=url, response_time=f"{response_time:.2f}s")
+                    logger.debug("content_not_modified", url=url, response_time=f"{response_time:.2f}s")
                     return NOT_MODIFIED
                 
                 response.raise_for_status()
@@ -239,18 +229,14 @@ class BaseAppleScraper(ABC):
                 response_time = time.time() - start_time
                 self.rate_limiter.record_success(response_time)
                 
-                # Extract ETag from response headers
-                etag = response.headers.get("ETag")
-                
                 logger.debug(
                     "page_fetched",
                     url=url,
                     status=response.status_code,
-                    response_time=f"{response_time:.2f}s",
-                    etag=etag[:8] if etag else None
+                    response_time=f"{response_time:.2f}s"
                 )
                 
-                return (response.text, etag)
+                return response.text
                 
             except httpx.HTTPStatusError as e:
                 last_error = e

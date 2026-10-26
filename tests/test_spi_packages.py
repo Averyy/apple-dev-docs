@@ -115,7 +115,7 @@ def pkg_routes(pages: Pages = PAGES, index: Optional[List[Spec]] = None,
 
 
 class NoETag(Apple):
-    """The fake host answers without an ETag (SPI's), so every page is fetched in full each run."""
+    """The fake host answers without an ETag, as SPI's does."""
 
     def __call__(self, request: httpx.Request) -> httpx.Response:
         response = super().__call__(request)

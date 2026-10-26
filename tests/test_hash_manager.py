@@ -2,6 +2,7 @@
 """Tests for HashManager content change detection."""
 
 import errno
+import hashlib
 import json
 import os
 import sys
@@ -25,87 +26,17 @@ def test_new_url_is_changed():
     print("PASS: new_url_is_changed")
 
 
-def test_same_etag_unchanged():
-    """Same ETag should be detected as unchanged."""
+def test_has_changed_compares_the_content_hash() -> None:
+    """Same content is unchanged, other content changed: only the content hash is compared."""
     with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
         hm = HashManager(Path(f.name))
 
     url = "https://example.com/page"
-    hm.update_hash(url, "content", etag="W/\"abc123\"")
+    hm.update_hash(url, "content")
 
-    assert hm.has_changed(url, "content", etag="W/\"abc123\"") is False
-    print("PASS: same_etag_unchanged")
-
-
-def test_different_etag_different_content_is_changed():
-    """Different ETag AND different content should be detected as changed."""
-    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
-        hm = HashManager(Path(f.name))
-
-    url = "https://example.com/page"
-    hm.update_hash(url, "old content", etag="W/\"old_etag\"")
-
-    assert hm.has_changed(url, "new content", etag="W/\"new_etag\"") is True
-    print("PASS: different_etag_different_content_is_changed")
-
-
-def test_different_etag_same_content_is_unchanged():
-    """Different ETag but same content should be detected as UNCHANGED.
-
-    This is the critical fix: Apple can regenerate ETags during CDN redeployments
-    without changing any actual content. The scraper must fall through to hash
-    comparison instead of trusting ETag changes blindly.
-    """
-    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
-        hm = HashManager(Path(f.name))
-
-    url = "https://example.com/page"
-    content = '{"identifier":{"url":"/documentation/swiftui/text"}}'
-
-    hm.update_hash(url, content, etag="W/\"old_etag\"")
-
-    # Same content, different ETag (CDN regenerated ETags)
-    assert hm.has_changed(url, content, etag="W/\"new_etag\"") is False
-    print("PASS: different_etag_same_content_is_unchanged")
-
-
-def test_no_etag_uses_hash():
-    """When no ETag is available, hash comparison should work."""
-    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
-        hm = HashManager(Path(f.name))
-
-    url = "https://example.com/page"
-    hm.update_hash(url, "content", etag=None)
-
-    assert hm.has_changed(url, "content", etag=None) is False
-    assert hm.has_changed(url, "different content", etag=None) is True
-    print("PASS: no_etag_uses_hash")
-
-
-def test_etag_updated_after_regeneration():
-    """After ETag regeneration, the new ETag should be stored via update_hash.
-
-    Simulates the full flow: ETag changes, hash says unchanged, code calls
-    update_hash with new ETag. Next check with new ETag should be fast (ETag match).
-    """
-    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as f:
-        hm = HashManager(Path(f.name))
-
-    url = "https://example.com/page"
-    content = "same content throughout"
-
-    # Initial scrape
-    hm.update_hash(url, content, etag="W/\"etag_v1\"")
-
-    # Apple regenerates ETags — has_changed falls through to hash, returns False
-    assert hm.has_changed(url, content, etag="W/\"etag_v2\"") is False
-
-    # Simulate what json_scraper does on the unchanged path: update_hash with new ETag
-    hm.update_hash(url, content, etag="W/\"etag_v2\"")
-
-    # Next run: ETag matches, fast path
-    assert hm.has_changed(url, content, etag="W/\"etag_v2\"") is False
-    print("PASS: etag_updated_after_regeneration")
+    assert hm.has_changed(url, "content") is False
+    assert hm.has_changed(url, "different content") is True
+    print("PASS: has_changed_compares_the_content_hash")
 
 
 def test_metadata_is_preserved_across_save_and_load() -> None:
@@ -136,8 +67,8 @@ def test_metadata_is_preserved_across_save_and_load() -> None:
 def test_legacy_fields_are_dropped_on_load() -> None:
     """The fields no longer written are dropped on load, and leave the file at its next save.
 
-    Per entry: last_checked, session_id, a status other than "error", and an
-    error entry's hash. Counters and every content field stay.
+    Per entry: last_checked, session_id, etag, a status other than "error",
+    and an error entry's hash. Counters and every content field stay.
     """
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
@@ -156,7 +87,7 @@ def test_legacy_fields_are_dropped_on_load() -> None:
         cache.write_text(legacy)
         hm = HashManager(cache)
         assert hm.hashes == {
-            "live": {"hash": "h", "etag": "E", "file_path": "documentation/fw/live.md"},
+            "live": {"hash": "h", "file_path": "documentation/fw/live.md"},
             "new": {"hash": "h2", "file_path": "documentation/fw/new.md", "consecutive_local_errors": 1},
             "gone": {"status": "error", "error": "HTTP 404", "consecutive_failures": 2},
             "kept": {"hash": "", "file_path": "documentation/fw/kept.md"},
@@ -174,19 +105,68 @@ def test_legacy_fields_are_dropped_on_load() -> None:
     print("PASS: legacy_fields_are_dropped_on_load")
 
 
+def test_a_legacy_etag_is_dropped_on_load_and_never_written() -> None:
+    """A stored etag (no longer written) is dropped on load, leaving the file as it is until a real change.
+
+    An unchanged page (its entry recorded as it was, now without its etag)
+    marks nothing modified, so an ETag that rotates no longer rewrites hash
+    files; a forced save (normalize_hash_files) writes the file without its
+    etags and is otherwise byte for byte what the scraper writes.
+    """
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        hm = HashManager(cache)
+        content_hash = hm.get_content_hash("content")
+        a, b = Path(d) / "a.md", Path(d) / "b.md"
+        a.write_text("# a\n")
+        b.write_text("# b\n")
+        legacy = json.dumps({
+            "metadata": {"total_pages": 3},
+            "hashes": {
+                "a": {"etag": "\"E1-df\"", "file_path": str(a), "hash": content_hash},
+                "b": {"consecutive_failures": 1, "etag": "\"E2\"", "file_path": str(b), "hash": content_hash},
+                "c": {"error": "HTTP 404", "status": "error"},
+            },
+        }, indent=2, sort_keys=True)
+        cache.write_text(legacy)
+        loaded = HashManager(cache)
+        assert all("etag" not in entry for entry in loaded.hashes.values())
+        assert loaded.hashes["a"] == {"hash": content_hash, "file_path": str(a)}
+        assert not loaded._modified
+        # An unchanged page under any ETag: touched, nothing modified, nothing written
+        assert loaded.has_changed("a", "content") is False
+        loaded.update_hash("a", "content", file_path=a)
+        assert loaded.touched == {"a"} and not loaded._modified
+        assert loaded.save() is True and cache.read_text() == legacy
+        # A forced save: only the etag lines go
+        loaded._modified = True
+        assert loaded.save() is True
+        saved = cache.read_text()
+        assert "etag" not in saved
+        assert saved.splitlines() == [line for line in legacy.splitlines() if '"etag"' not in line]
+        # The scraper's own save of the same entries writes the same bytes
+        fresh = HashManager(Path(d) / "fresh_hashes.json")
+        fresh.update_hash("a", "content", file_path=a)
+        fresh.update_hash("b", "content", file_path=b)
+        fresh.set_counter("b", "consecutive_failures", 1)
+        fresh.mark_error("c", "HTTP 404")
+        assert fresh.save() is True and fresh.cache_file.read_text() == saved
+    print("PASS: a_legacy_etag_is_dropped_on_load_and_never_written")
+
+
 def test_a_second_save_of_the_same_entries_is_byte_identical() -> None:
     """Sorted keys and no timestamps: a save of what a file holds writes the same bytes.
 
     Re-recording the same entries (a page re-marked as a 404 every run, an
-    unchanged page whose hash and etag are recorded again) doesn't even mark
+    unchanged page whose hash is recorded again) doesn't even mark
     the manager modified; a forced save (normalize_hash_files) writes the
     same bytes.
     """
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         hm = HashManager(cache)
-        hm.update_hash("b", "content", etag="E", file_path=Path("documentation/fw/b.md"))
-        hm.update_hash("a", "content", etag="E", file_path=Path("documentation/fw/a.md"))
+        hm.update_hash("b", "content", file_path=Path("documentation/fw/b.md"))
+        hm.update_hash("a", "content", file_path=Path("documentation/fw/a.md"))
         hm.mark_error("c", "HTTP 404")
         hm.set_counter("a", "consecutive_failures", 1)
         hm.set_metadata("pending_orphans", ["documentation/fw/x.md"])
@@ -198,7 +178,7 @@ def test_a_second_save_of_the_same_entries_is_byte_identical() -> None:
             if rewrite == "mark_error":
                 again.mark_error("c", "HTTP 404")
             else:
-                again.update_hash("b", "content", etag="E", file_path=Path("documentation/fw/b.md"))
+                again.update_hash("b", "content", file_path=Path("documentation/fw/b.md"))
             assert not again._modified, rewrite
             again._modified = True
             assert again.save() is True
@@ -207,19 +187,17 @@ def test_a_second_save_of_the_same_entries_is_byte_identical() -> None:
 
 
 def test_a_stale_render_version_refetches_and_renders_every_page() -> None:
-    """While the stored render version isn't the manager's: no etag is sent and every page has changed."""
+    """While the stored render version isn't the manager's, every page has changed."""
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         url = "https://example.com/page"
         hm = HashManager(cache, render_version=2)
-        hm.update_hash(url, "content", etag="E1")
+        hm.update_hash(url, "content")
         assert (hm.stale, hm.stored_render_version) == (True, None)
-        assert hm.get_etag(url) is None
-        assert hm.has_changed(url, "content", etag="E1") is True
+        assert hm.has_changed(url, "content") is True
         hm.mark_rendered()
         assert (hm.stale, hm.stored_render_version) == (False, 2)
-        assert hm.get_etag(url) == "E1"
-        assert hm.has_changed(url, "content", etag="E1") is False
+        assert hm.has_changed(url, "content") is False
         assert hm.save()
         assert json.loads(cache.read_text())["metadata"]["render"] == {"version": 2}
 
@@ -240,11 +218,11 @@ def test_a_manager_without_a_render_version_keeps_the_stored_one() -> None:
         cache = Path(d) / "fw_hashes.json"
         cache.write_text(json.dumps({
             "metadata": {"render": {"version": 1}},
-            "hashes": {"u": {"hash": "h", "etag": "E", "file_path": str(Path(d) / "gone.md")},
-                       "v": {"hash": "h", "etag": "E2", "file_path": str(cache)}},
+            "hashes": {"u": {"hash": "h", "file_path": str(Path(d) / "gone.md")},
+                       "v": {"hash": hashlib.sha256(b"content").hexdigest(), "file_path": str(cache)}},
         }))
         hm = HashManager(cache)
-        assert (hm.stale, hm.get_etag("v")) == (False, "E2")
+        assert (hm.stale, hm.has_changed("v", "content")) == (False, False)
         hm.mark_rendered()
         assert hm.metadata == {"render": {"version": 1}}
         assert hm.prune_missing_files() == 1 and hm.save()
@@ -257,14 +235,14 @@ def test_a_manager_without_a_render_version_keeps_the_stored_one() -> None:
     print("PASS: a_manager_without_a_render_version_keeps_the_stored_one")
 
 
-def test_forget_untouched_renderings_drops_only_their_hash_and_etag() -> None:
-    """Untouched live entries lose hash and etag, keeping file_path and counters; touched and
+def test_forget_untouched_renderings_drops_only_their_hash() -> None:
+    """Untouched live entries lose their hash, keeping file_path and counters; touched and
     error entries, and a value that isn't an entry, stay; a second call changes nothing."""
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         cache.write_text(json.dumps({"metadata": {}, "hashes": {
-            "held": {"hash": "h", "etag": "E", "file_path": "a.md", "consecutive_local_errors": 1},
-            "seen": {"hash": "h", "etag": "E", "file_path": "b.md"},
+            "held": {"hash": "h", "file_path": "a.md", "consecutive_local_errors": 1},
+            "seen": {"hash": "h", "file_path": "b.md"},
             "gone": {"status": "error", "error": "HTTP 404"},
             "digest": "d",
         }}))
@@ -273,12 +251,12 @@ def test_forget_untouched_renderings_drops_only_their_hash_and_etag() -> None:
         assert hm.forget_untouched_renderings() == 1 and hm.save()
         assert json.loads(cache.read_text())["hashes"] == {
             "held": {"hash": "", "file_path": "a.md", "consecutive_local_errors": 1},
-            "seen": {"hash": "h", "etag": "E", "file_path": "b.md"},
+            "seen": {"hash": "h", "file_path": "b.md"},
             "gone": {"status": "error", "error": "HTTP 404"},
             "digest": "d",
         }
         assert hm.forget_untouched_renderings() == 0 and not hm._modified
-    print("PASS: forget_untouched_renderings_drops_only_their_hash_and_etag")
+    print("PASS: forget_untouched_renderings_drops_only_their_hash")
 
 
 def test_set_metadata_marks_modified_and_drops_falsy() -> None:
@@ -308,15 +286,15 @@ def test_counters_survive_update_hash_mark_error_and_save() -> None:
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         hm = HashManager(cache)
-        hm.update_hash("u", "content", etag="E1", file_path=Path("documentation/fw/u.md"))
+        hm.update_hash("u", "content", file_path=Path("documentation/fw/u.md"))
         hm.set_counter("u", "consecutive_failures", 2)
         hm.set_counter("u", "consecutive_local_errors", 1)
-        hm.update_hash("u", "new content", etag="E2", file_path=Path("documentation/fw/u.md"))
+        hm.update_hash("u", "new content", file_path=Path("documentation/fw/u.md"))
         assert hm.hashes["u"]["consecutive_failures"] == 2
         assert hm.hashes["u"]["consecutive_local_errors"] == 1
         hm.mark_error("u", "HTTP 502")
         entry = hm.hashes["u"]
-        assert entry["status"] == "error" and "file_path" not in entry and "etag" not in entry
+        assert entry["status"] == "error" and "file_path" not in entry and "hash" not in entry
         assert entry["consecutive_failures"] == 2 and entry["consecutive_local_errors"] == 1
         hm.save()
         reloaded = HashManager(cache)
@@ -354,7 +332,7 @@ def test_touch_only_records_the_url() -> None:
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         hm = HashManager(cache)
-        hm.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        hm.update_hash("u", "content", file_path=Path("documentation/fw/u.md"))
         assert hm.save() is True
         later = HashManager(cache)
         before = dict(later.hashes["u"])
@@ -370,43 +348,40 @@ def test_update_hash_marks_modified_only_on_a_change() -> None:
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         hm = HashManager(cache)
-        hm.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        hm.update_hash("u", "content", file_path=Path("documentation/fw/u.md"))
         hm.set_counter("u", "consecutive_local_errors", 1)
         assert hm.save() is True
         saved = cache.read_text()
         same = HashManager(cache)
-        same.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        same.update_hash("u", "content", file_path=Path("documentation/fw/u.md"))
         assert same.touched == {"u"} and not same._modified
         cache.unlink()
         assert same.save() is True and not cache.exists()  # not modified: nothing written
-        for content, etag, file_path in (
-            ("content", "E2", "documentation/fw/u.md"),  # an etag rotation
-            ("new content", "E", "documentation/fw/u.md"),
-            ("content", "E", "documentation/fw/v.md"),
-            ("content", None, "documentation/fw/u.md"),
+        for content, file_path in (
+            ("new content", "documentation/fw/u.md"),
+            ("content", "documentation/fw/v.md"),
         ):
             cache.write_text(saved)
             changed = HashManager(cache)
-            changed.update_hash("u", content, etag=etag, file_path=Path(file_path))
-            assert changed._modified, (content, etag, file_path)
+            changed.update_hash("u", content, file_path=Path(file_path))
+            assert changed._modified, (content, file_path)
             assert changed.save() is True
             assert json.loads(cache.read_text())["hashes"]["u"] == {
-                "hash": changed.get_content_hash(content), **({"etag": etag} if etag else {}),
-                "file_path": file_path, "consecutive_local_errors": 1,
+                "hash": changed.get_content_hash(content), "file_path": file_path, "consecutive_local_errors": 1,
             }
         cache.write_text(saved)
         new_key = HashManager(cache)
-        new_key.update_hash("v", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        new_key.update_hash("v", "content", file_path=Path("documentation/fw/u.md"))
         assert new_key._modified
     print("PASS: update_hash_marks_modified_only_on_a_change")
 
 
 def test_set_file_path_sets_only_the_path() -> None:
-    """set_file_path leaves hash, etag and counters alone, and marks the manager modified only on a change."""
+    """set_file_path leaves hash and counters alone, and marks the manager modified only on a change."""
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         hm = HashManager(cache)
-        hm.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/old.md"))
+        hm.update_hash("u", "content", file_path=Path("documentation/fw/old.md"))
         hm.set_counter("u", "consecutive_failures", 2)
         assert hm.save() is True
         saved = cache.read_text()
@@ -420,7 +395,7 @@ def test_set_file_path_sets_only_the_path() -> None:
         assert renamed.touched == set()
         assert renamed.save() is True
         assert json.loads(cache.read_text())["hashes"]["u"] == {
-            "hash": renamed.get_content_hash("content"), "etag": "E", "file_path": "documentation/fw/new.md",
+            "hash": renamed.get_content_hash("content"), "file_path": "documentation/fw/new.md",
             "consecutive_failures": 2,
         }
         try:
@@ -452,8 +427,8 @@ def test_keep_file_records_a_file_on_disk_only() -> None:
         assert entry == {"hash": "", "file_path": str(page), "consecutive_failures": 3}
         assert hm.hashes["v"] == {"hash": "", "file_path": str(page.with_name("page.md"))}
         assert hm.touched == {"u", "v"}
-        # The next run refetches it without an etag and converts it again
-        assert hm.has_changed("u", "content") is True and hm.get_etag("u") is None
+        # The next run converts it again
+        assert hm.has_changed("u", "content") is True
         del hm.hashes["v"]
         assert hm.get_untouched_files(page.parent) == []
         assert hm.save() is True and json.loads(hm.cache_file.read_text())["hashes"]["u"] == entry
@@ -486,10 +461,9 @@ def test_a_path_that_cant_be_checked_counts_as_missing() -> None:
         before = dict(hm.hashes["u"])
         assert hm.keep_file("u", page) is False  # nothing changes: the URL keeps its counted error entry
         assert hm.hashes["u"] == before
-        # An entry that records such a path: refetched without an etag and converted again
-        hm.hashes["v"] = {"hash": "h", "etag": "E", "file_path": str(page)}
-        assert hm.get_etag("v") is None
-        assert hm.has_changed("v", "content", etag="E") is True
+        # An entry that records such a path: converted again
+        hm.hashes["v"] = {"hash": hm.get_content_hash("content"), "file_path": str(page)}
+        assert hm.has_changed("v", "content") is True
         assert hm.prune_missing_files() == 1 and "v" not in hm.hashes
         # Orphan detection checks a touched entry's path without raising
         hm.hashes["w"] = {"hash": "h", "file_path": str(page)}
@@ -501,8 +475,8 @@ def test_a_path_that_cant_be_checked_counts_as_missing() -> None:
 def test_a_dir_that_cant_be_listed_keeps_its_entries() -> None:
     """No permission on a page's dir: whether its file exists can't be told, and nothing raises.
 
-    keep_file doesn't vouch for it, but its entry isn't missing: the etag is
-    still sent and prune keeps the entry (and its counters).
+    keep_file doesn't vouch for it, but its entry isn't missing: an unchanged
+    page isn't converted again and prune keeps the entry (and its counters).
     """
     if hasattr(os, "geteuid") and os.geteuid() == 0:
         print("SKIP: a_dir_that_cant_be_listed_keeps_its_entries (root ignores file permissions)")
@@ -513,14 +487,13 @@ def test_a_dir_that_cant_be_listed_keeps_its_entries() -> None:
         locked.mkdir(parents=True)
         page = locked / "child.md"
         page.write_text("# child\n")
-        hm.hashes["u"] = {"hash": hm.get_content_hash("content"), "etag": "E", "file_path": str(page),
+        hm.hashes["u"] = {"hash": hm.get_content_hash("content"), "file_path": str(page),
                           "consecutive_local_errors": 2}
         hm.touch("u")
         hm.mark_error("v", "HTTP 502")
         locked.chmod(0)
         try:
-            assert hm.get_etag("u") == "E"
-            assert hm.has_changed("u", "content", etag="E") is False
+            assert hm.has_changed("u", "content") is False
             assert hm.prune_missing_files() == 0 and hm.hashes["u"]["consecutive_local_errors"] == 2
             before = dict(hm.hashes["v"])
             assert hm.keep_file("v", page) is False and hm.hashes["v"] == before
@@ -735,17 +708,14 @@ def test_write_text_atomic_writes_whole_or_not_at_all() -> None:
 def main():
     tests = [
         test_new_url_is_changed,
-        test_same_etag_unchanged,
-        test_different_etag_different_content_is_changed,
-        test_different_etag_same_content_is_unchanged,
-        test_no_etag_uses_hash,
-        test_etag_updated_after_regeneration,
+        test_has_changed_compares_the_content_hash,
         test_metadata_is_preserved_across_save_and_load,
         test_a_stale_render_version_refetches_and_renders_every_page,
         test_a_manager_without_a_render_version_keeps_the_stored_one,
-        test_forget_untouched_renderings_drops_only_their_hash_and_etag,
+        test_forget_untouched_renderings_drops_only_their_hash,
         test_set_metadata_marks_modified_and_drops_falsy,
         test_legacy_fields_are_dropped_on_load,
+        test_a_legacy_etag_is_dropped_on_load_and_never_written,
         test_a_second_save_of_the_same_entries_is_byte_identical,
         test_counters_survive_update_hash_mark_error_and_save,
         test_the_404_count_is_a_run_counter,

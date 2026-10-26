@@ -126,7 +126,8 @@ def kit_thing_body() -> str:
 
 def site_routes(pages: Pages = PAGES, index: Optional[List[Spec]] = None,
                 overrides: Optional[Dict[str, List[Spec]]] = None) -> Dict[str, List[Spec]]:
-    """The fake site: each page 200 with an etag of its body (304 on a match); its URLs are case-sensitive."""
+    """The fake site: each page 200 with an ETag of its body (never stored; 304 on a match, never asked for);
+    its URLs are case-sensitive."""
     routes: Dict[str, List[Spec]] = {}
     for path, (bundle, links) in pages.items():
         body = kit_thing_body() if path == "Kit/Thing" else topic_page(path, bundle, links)

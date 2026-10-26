@@ -22,8 +22,10 @@ RUN_METADATA_KEYS: Final = ("total_pages", "last_updated", "session_id", "partia
 
 # Per-entry fields no longer written, dropped on load, so an entry loses them
 # at its file's next save; so are a status other than "error" ("new",
-# "unchanged") and an error entry's hash (see _without_legacy_fields).
-LEGACY_ENTRY_FIELDS: Final = ("last_checked", "session_id")
+# "unchanged") and an error entry's hash (see _without_legacy_fields). etag:
+# no request is conditional, and Apple's CDN alternates a page's ETag
+# variants, so a stored one only rewrote hash files of unchanged pages.
+LEGACY_ENTRY_FIELDS: Final = ("last_checked", "session_id", "etag")
 
 # The mass-removal valve: more orphan candidates than this in one framework
 # (or at least half its files) are confirmed on a second clean run first.
@@ -165,9 +167,9 @@ class HashManager:
     def stale(self) -> bool:
         """The location's files were rendered by another converter version than render_version.
 
-        While stale, get_etag returns None and has_changed True, so every
-        page is fetched (200) and rendered again on the normal write-first
-        path. Never stale without a render_version.
+        While stale, has_changed returns True, so every page is rendered
+        again on the normal write-first path. Never stale without a
+        render_version.
         """
         return self.render_version is not None and self.stored_render_version != self.render_version
 
@@ -187,11 +189,10 @@ class HashManager:
         For a stale location's clean run, before it stores its version
         (mark_rendered): an untouched entry's file (one the valve holds, or a
         page the run no longer reached) keeps the old rendering. Its hash
-        becomes "" and its etag goes, as keep_file's entry, so a page that
-        comes back is fetched without If-None-Match and has changed. Its
-        file_path and run counters stay: orphan detection (the touched set)
-        and the failure policy see it as before. Error entries, and anything
-        that isn't an entry, are left as they are.
+        becomes "", as keep_file's entry, so a page that comes back has
+        changed. Its file_path and run counters stay: orphan detection (the
+        touched set) and the failure policy see it as before. Error entries,
+        and anything that isn't an entry, are left as they are.
 
         Returns:
             How many entries changed (the manager is then modified)
@@ -200,9 +201,8 @@ class HashManager:
         for url, entry in self.hashes.items():
             if url in self.touched or not isinstance(entry, dict) or entry.get("status") == "error":
                 continue
-            if entry.get("hash") != "" or "etag" in entry:
+            if entry.get("hash") != "":
                 entry["hash"] = ""
-                entry.pop("etag", None)
                 changed += 1
         if changed:
             self._modified = True
@@ -350,16 +350,15 @@ class HashManager:
         """
         return hashlib.sha256(content.encode('utf-8')).hexdigest()
     
-    def has_changed(self, url: str, content: str, etag: Optional[str] = None) -> bool:
-        """Check if content has changed since last scrape.
+    def has_changed(self, url: str, content: str) -> bool:
+        """Check if content has changed since last scrape, by its content hash.
         
-        Uses ETags for fast comparison when available, with hash as fallback.
-        Always True while the location is stale (another render version).
+        Always True while the location is stale (another render version)
+        or the entry's recorded file is missing.
         
         Args:
             url: URL of the content
             content: Current content
-            etag: Optional ETag from HTTP response headers
             
         Returns:
             True if content has changed or is new
@@ -376,7 +375,7 @@ class HashManager:
 
         # Self-heal: if the recorded output file is gone (e.g. deleted by
         # orphan cleanup while the hash entry survived), the page must be
-        # re-scraped regardless of what ETags/hashes say.
+        # re-scraped regardless of what its hash says.
         if self._output_file_missing(stored_data):
             logger.info(
                 "output_file_missing_rescrape",
@@ -385,22 +384,6 @@ class HashManager:
             )
             return True
 
-        # Primary: ETag comparison (fast, server-validated)
-        if etag and "etag" in stored_data:
-            if etag == stored_data["etag"]:
-                logger.debug("content_unchanged_via_etag", url=url, etag=etag[:8])
-                return False
-            else:
-                # ETags differ — but Apple may regenerate ETags without changing content
-                # (e.g., CDN redeployment). Fall through to hash comparison for certainty.
-                logger.debug(
-                    "etag_changed_checking_hash",
-                    url=url,
-                    old_etag=stored_data["etag"][:8],
-                    new_etag=etag[:8]
-                )
-
-        # Content hash comparison (reliable, content-based)
         current_hash = self.get_content_hash(content)
         stored_hash = stored_data.get("hash")
         
@@ -416,33 +399,12 @@ class HashManager:
         logger.debug("content_unchanged_via_hash", url=url)
         return False
     
-    def get_etag(self, url: str) -> Optional[str]:
-        """Get stored ETag for a URL to use in If-None-Match header.
-        
-        Args:
-            url: URL to get ETag for
-            
-        Returns:
-            Stored ETag or None if not available, or while the location is
-            stale (a 304 would skip the page's new rendering)
-        """
-        if self.stale:
-            return None
-        if url in self.hashes:
-            entry = self.hashes[url]
-            # Never send If-None-Match when the output file is missing — a
-            # 304 would short-circuit the re-scrape needed to restore it.
-            if self._output_file_missing(entry):
-                return None
-            return entry.get("etag")
-        return None
-
     @staticmethod
     def _output_file_missing(entry: Dict[str, Any]) -> bool:
         """True if the entry records an output file that is known not to exist.
 
         A file whose existence can't be told (see _output_file_on_disk) isn't
-        missing: its entry and etag are kept, as for a file on disk.
+        missing: its entry is kept, as for a file on disk.
         """
         file_path = entry.get("file_path")
         if not file_path:
@@ -505,10 +467,10 @@ class HashManager:
             self._modified = True
         return len(dead)
 
-    def update_hash(self, url: str, content: str, etag: Optional[str] = None, file_path: Optional[Path] = None) -> None:
-        """Update hash and ETag for a URL, and touch it.
+    def update_hash(self, url: str, content: str, file_path: Optional[Path] = None) -> None:
+        """Update the hash for a URL, and touch it.
         
-        The entry holds only content fields (hash, etag, file_path) and the
+        The entry holds only content fields (hash, file_path) and the
         run counters it had. Marks the manager modified only when the entry
         changes, so a run whose pages are all unchanged (each fetched, its
         entry recorded as it was) saves nothing.
@@ -516,16 +478,11 @@ class HashManager:
         Args:
             url: URL of the content
             content: Content to hash
-            etag: Optional ETag from HTTP response headers
             file_path: Optional file path where content is saved
         """
         current_hash = self.get_content_hash(content)
         entry: Dict[str, Any] = {"hash": current_hash}
         
-        # Store ETag if provided for faster future comparisons
-        if etag:
-            entry["etag"] = etag
-            
         # Store file path if provided for orphan detection
         if file_path:
             entry["file_path"] = str(file_path)
@@ -536,16 +493,13 @@ class HashManager:
             self._modified = True
         self.touch(url)
 
-        if etag:
-            logger.debug("updated_hash_and_etag", url=url, hash=current_hash[:8], etag=etag[:8])
-        else:
-            logger.debug("updated_hash", url=url, hash=current_hash[:8])
+        logger.debug("updated_hash", url=url, hash=current_hash[:8])
     
     def mark_error(self, url: str, error: str) -> None:
         """Mark a URL as having an error.
         
         The entry holds only status "error" and the error: it loses its
-        hash, etag and file_path but keeps its run counters, so a failure
+        hash and file_path but keeps its run counters, so a failure
         count survives the error entry. Marks the manager modified only when
         the entry changes (a URL that keeps answering 404 every run, e.g. a
         removed module's root, leaves the hash file as it is).
@@ -583,9 +537,8 @@ class HashManager:
         For a page this run saw live but couldn't save, whose entry lost its
         file_path (e.g. D8 marked both keys in a run whose cleanup didn't
         delete the file): the entry records the file again and is touched, so
-        orphan detection keeps it. Its hash is unknown and it has no etag, so
-        the next run refetches and converts the page again. Run counters
-        carry over.
+        orphan detection keeps it. Its hash is unknown, so the next run
+        converts the page again. Run counters carry over.
 
         Returns:
             True if the file is on disk and is now recorded; False, changing
@@ -601,7 +554,7 @@ class HashManager:
         return True
 
     def set_file_path(self, url: str, file_path: Union[str, Path]) -> None:
-        """Record the URL's file at a path, leaving its hash, etag and counters alone.
+        """Record the URL's file at a path, leaving its hash and counters alone.
 
         Marks the manager modified when the path changes, so save() writes
         it (e.g. a renamed file).

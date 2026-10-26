@@ -203,14 +203,14 @@ class TestSinkRegistry:
         sinks = SinkRegistry()
         sink = sinks.get(APPLE, "TestKit", "Test Kit", 1)
         url = f"{APPLE.json_prefix}testkit/a.json"
-        sink.hash_manager.update_hash(url, "body", "E1", Path("documentation/TestKit/a.md"))
+        sink.hash_manager.update_hash(url, "body", Path("documentation/TestKit/a.md"))
         sink.processed_urls.add(url)
         manager = sink.hash_manager
         assert sink.release() and not sink.loaded
         assert Config.get_hash_file("TestKit").exists()
         assert sinks.get(APPLE, "testkit", "x", 1) is sink and sink.processed_urls == {url}
         again = sink.hash_manager
-        assert again is not manager and again.hashes[url]["etag"] == "E1" and url in again.touched
+        assert again is not manager and again.hashes[url] == manager.hashes[url] and url in again.touched
 
     def test_a_top_level_sink_is_released_once_no_job_in_flight_uses_it(self, dirs: Path) -> None:
         sinks = SinkRegistry()
@@ -321,7 +321,7 @@ def d6_routes(
     implementations: Optional[Dict[str, List[Link]]] = None,
     occ: Optional[Dict[str, List[Dict[str, Any]]]] = None,
 ) -> Dict[str, List[Spec]]:
-    """Each page answers 200 with an etag of its body (304 on a match, never asked for), unless overridden.
+    """Each page answers 200 with an ETag of its body (never stored; 304 on a match, never asked for), unless overridden.
 
     implementations: a page's path -> its default implementations
     occ: a page's path -> its Objective-C/C variant's patch
@@ -1070,13 +1070,13 @@ class TestObjectiveCCuration:
         stray.write_text("# stray\n")
         broken = {"Umbrella/guide": occ_curation(OBJC_LINKS, broken=True)}
         guide = json_url("umbrella/guide")
-        etag = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]["etag"]
+        stored = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]["hash"]
         for run in (1, 2, 3):
             assert await d6.scrape(OBJC, ["Umbrella"], occ=broken) == 1
             assert [e["url"] for e in d6.logged("page_save_failed")] == [guide]
             assert d6.logged("error_processing_url") == []
             entry = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]
-            assert entry["consecutive_local_errors"] == run and entry["etag"] == etag
+            assert entry["consecutive_local_errors"] == run and entry["hash"] == stored
             assert docs() >= OBJC_ONLY
             # Blocked twice; the 3rd run's cleanup runs
             assert stray.exists() == (run < 3)
@@ -1084,7 +1084,7 @@ class TestObjectiveCCuration:
         # Apple's variant is fine again (the page as stored: unchanged)
         assert await d6.scrape(OBJC, ["Umbrella"], occ={"Umbrella/guide": occ_curation(OBJC_LINKS)}) == 0
         entry = json.loads(Config.get_hash_file("Umbrella").read_text())["hashes"][guide]
-        assert "consecutive_local_errors" not in entry and entry["etag"] == etag
+        assert "consecutive_local_errors" not in entry and entry["hash"] == stored
         assert docs() == {doc_file(path) for path in OBJC}
 
     async def test_a_stored_unchanged_page_whose_view_cant_be_built_is_a_local_error(

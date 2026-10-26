@@ -1,9 +1,9 @@
-"""fetch_page_with_etag's result sentinels and how each caller handles them.
+"""fetch_page's result sentinels and how each caller handles them.
 
-fetch_page_with_etag returns (content, etag), NOT_MODIFIED or FetchFailed and
-never writes a hash entry; its callers apply the failure policy. The DocC
-scraper sends one unconditional GET per page (no If-None-Match), so its pages
-never answer 304: a 304 to it is a transient failure. These tests pin every
+fetch_page returns the content, NOT_MODIFIED or FetchFailed and never writes
+a hash entry; its callers apply the failure policy. It sends one
+unconditional GET (no If-None-Match; no ETag is stored), so pages never
+answer 304: a 304 to the DocC scraper is a transient failure. These tests pin every
 caller's outcome for one call (return value, mark_error calls, hash entries,
 queued children, the failure recorded for the end-of-run count) for each
 response kind: 200 (changed or unchanged), 4xx, 429 and 5xx after all
@@ -67,7 +67,7 @@ def page(path: str, children: Sequence[str] = ()) -> str:
 
 
 def ok(body: str, etag: str) -> Spec:
-    """200 with an ETag, or 304 when the request's If-None-Match matches it."""
+    """200 with an ETag (never stored), or 304 when the request's If-None-Match matches it (none is sent)."""
     return {"kind": "ok", "body": body, "etag": etag}
 
 
@@ -146,7 +146,7 @@ class Rig:
     def touched(self) -> Set[str]:
         return self.scraper.hash_manager.touched
 
-    def seed_good(self, path: str, body: str, etag: str) -> Path:
+    def seed_good(self, path: str, body: str) -> Path:
         """Record `path` as a previously good page (both keys, file on disk)."""
         url = doc_url(path)
         file_path = self.scraper._get_organized_file_path(self.scraper.sink, url, {})
@@ -154,7 +154,6 @@ class Rig:
         file_path.write_text(f"# {path}\n", encoding="utf-8")
         entry = {
             "hash": hashlib.sha256(body.encode("utf-8")).hexdigest(),
-            "etag": etag,
             "file_path": str(file_path),
         }
         self.hashes[json_url(path)] = dict(entry)
@@ -183,7 +182,7 @@ def http_status_error(code: int, url: str) -> str:
 
 
 def assert_error_entry(entry: Dict[str, Any], error: str) -> None:
-    """mark_error's entry: only its status and error (no hash, file_path or etag survive)."""
+    """mark_error's entry: only its status and error (no hash or file_path survive)."""
     assert entry == {"status": "error", "error": error}
 
 
@@ -205,37 +204,42 @@ class TestSentinels:
             failed.status = 500  # type: ignore[misc]
 
 
-class TestFetchPageWithEtag:
+class TestFetchPage:
     """The fetch itself: what it returns, and that it never writes hashes."""
 
-    async def test_200_returns_content_and_etag(self, make_rig: Callable[..., Rig]) -> None:
+    async def test_200_returns_the_content(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        result = await rig.scraper.fetch_page_with_etag(json_url(ALPHA))
-        assert result == (ALPHA_BODY, "E-A")
+        result = await rig.scraper.fetch_page(json_url(ALPHA))
+        assert result == ALPHA_BODY
         assert rig.hashes == {}
 
-    async def test_304_returns_not_modified(self, make_rig: Callable[..., Rig]) -> None:
+    async def test_sends_no_if_none_match(self, make_rig: Callable[..., Rig]) -> None:
+        """A recorded page is fetched in full too: no ETag is stored or sent."""
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         before = json.loads(json.dumps(rig.hashes))
-        result = await rig.scraper.fetch_page_with_etag(json_url(ALPHA))
-        assert result is NOT_MODIFIED
-        assert rig.fake.requests == [(json_url(ALPHA), "E-A")]
+        result = await rig.scraper.fetch_page(json_url(ALPHA))
+        assert result == ALPHA_BODY
+        assert rig.fake.requests == [(json_url(ALPHA), None)]
         assert rig.hashes == before
 
-    async def test_use_etag_false_sends_no_if_none_match(self, make_rig: Callable[..., Rig]) -> None:
-        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
-        result = await rig.scraper.fetch_page_with_etag(json_url(ALPHA), use_etag=False)
-        assert result == (ALPHA_BODY, "E-A")
-        assert rig.fake.requests == [(json_url(ALPHA), None)]
+    async def test_an_unasked_304_returns_not_modified(self, make_rig: Callable[..., Rig]) -> None:
+        """Not a failure: raise_for_status would make it a non-transient one."""
+        rig = make_rig({json_url(ALPHA): [status(304)]})
+        rig.seed_good(ALPHA, ALPHA_BODY)
+        before = json.loads(json.dumps(rig.hashes))
+        result = await rig.scraper.fetch_page(json_url(ALPHA))
+        assert result is NOT_MODIFIED
+        assert len(rig.fake.requests) == 1
+        assert rig.hashes == before
+        assert rig.scraper.stats["pages_failed"] == 0
 
     @pytest.mark.parametrize("code", [403, 404, 410])
     async def test_4xx_fails_at_once_without_writing(self, make_rig: Callable[..., Rig], code: int) -> None:
         rig = make_rig({json_url(ALPHA): [status(code)]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         before = json.loads(json.dumps(rig.hashes))
-        result = await rig.scraper.fetch_page_with_etag(json_url(ALPHA))
+        result = await rig.scraper.fetch_page(json_url(ALPHA))
         assert result == FetchFailed(status=code, error=f"HTTP {code}", transient=False)
         assert len(rig.fake.requests) == 1
         assert rig.hashes == before
@@ -245,9 +249,9 @@ class TestFetchPageWithEtag:
     @pytest.mark.parametrize("code", [429, 500, 502, 503])
     async def test_status_exhausting_retries_is_transient(self, make_rig: Callable[..., Rig], code: int) -> None:
         rig = make_rig({json_url(ALPHA): [status(code)]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         before = json.loads(json.dumps(rig.hashes))
-        result = await rig.scraper.fetch_page_with_etag(json_url(ALPHA))
+        result = await rig.scraper.fetch_page(json_url(ALPHA))
         assert result == FetchFailed(
             status=code, error=http_status_error(code, json_url(ALPHA)), transient=True
         )
@@ -261,7 +265,7 @@ class TestFetchPageWithEtag:
         self, make_rig: Callable[..., Rig], spec: Spec, error: str
     ) -> None:
         rig = make_rig({json_url(ALPHA): [spec]})
-        result = await rig.scraper.fetch_page_with_etag(json_url(ALPHA))
+        result = await rig.scraper.fetch_page(json_url(ALPHA))
         assert result == FetchFailed(status=None, error=error, transient=True)
         assert len(rig.fake.requests) == MAX_RETRIES + 1
         assert rig.hashes == {}
@@ -269,8 +273,8 @@ class TestFetchPageWithEtag:
 
     async def test_recovers_within_retries(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({json_url(ALPHA): [status(502), TIMEOUT, ok(ALPHA_BODY, "E-A")]})
-        result = await rig.scraper.fetch_page_with_etag(json_url(ALPHA))
-        assert result == (ALPHA_BODY, "E-A")
+        result = await rig.scraper.fetch_page(json_url(ALPHA))
+        assert result == ALPHA_BODY
         assert len(rig.fake.requests) == 3
         assert rig.scraper.stats["pages_failed"] == 0
 
@@ -304,12 +308,12 @@ class TestProcessQueuedUrl:
     async def test_200_saves_and_enqueues(self, make_rig: Callable[..., Rig], tmp_path: Path) -> None:
         body = page(ALPHA, ["testkit/alpha/child", "testkit/alpha/new"])
         rig = make_rig({json_url(ALPHA): [ok(body, "E-A2")]})
-        file_path = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        file_path = rig.seed_good(ALPHA, ALPHA_BODY)
         queue = await self.process(rig, tmp_path)
         assert queue == [ALPHA_CHILD, json_url("testkit/alpha/new")]
         assert rig.mark_error_calls == []
         for key in (json_url(ALPHA), doc_url(ALPHA)):
-            assert rig.hashes[key]["etag"] == "E-A2"
+            assert rig.hashes[key]["hash"] == hashlib.sha256(body.encode()).hexdigest()
             assert key in rig.touched
             assert rig.hashes[key]["file_path"] == str(file_path)
         assert "The testkit/alpha page." in file_path.read_text(encoding="utf-8")
@@ -323,14 +327,14 @@ class TestProcessQueuedUrl:
     ) -> None:
         body = page(ALPHA, ["testkit/alpha/child", "testkit/alpha/new"])
         rig = make_rig({json_url(ALPHA): [ok(body, "E-A2")]})
-        file_path = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        file_path = rig.seed_good(ALPHA, ALPHA_BODY)
         file_path.unlink()
         seen: List[Tuple[str, bool]] = []
         real_update_hash = rig.scraper.hash_manager.update_hash
 
-        def spy(url: str, content: str, etag: Optional[str] = None, file_path: Optional[Path] = None) -> None:
+        def spy(url: str, content: str, file_path: Optional[Path] = None) -> None:
             seen.append((url, file_path is not None and file_path.exists()))
-            real_update_hash(url, content, etag, file_path)
+            real_update_hash(url, content, file_path)
 
         monkeypatch.setattr(rig.scraper.hash_manager, "update_hash", spy)
         await self.process(rig, tmp_path)
@@ -339,9 +343,9 @@ class TestProcessQueuedUrl:
     async def test_200_same_content_reuses_the_stored_path(
         self, make_rig: Callable[..., Rig], tmp_path: Path
     ) -> None:
-        # A new etag on the same content: the stored file path is kept, not recomputed
+        # The same content (under a new ETag): the stored file path is kept, not recomputed
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         stored = rig.scraper.output_dir / "alpha-stored.md"
         stored.write_text("# stored\n", encoding="utf-8")
         rig.hashes[json_url(ALPHA)]["file_path"] = str(stored)
@@ -349,7 +353,7 @@ class TestProcessQueuedUrl:
         assert queue == [ALPHA_CHILD]
         for key in (json_url(ALPHA), doc_url(ALPHA)):
             assert rig.hashes[key]["file_path"] == str(stored)
-            assert rig.hashes[key]["etag"] == "E-A2"
+            assert rig.hashes[key]["hash"] == hashlib.sha256(ALPHA_BODY.encode()).hexdigest()
             assert key in rig.touched
         assert stored.read_text(encoding="utf-8") == "# stored\n"
         assert rig.scraper.stats["pages_skipped"] == 1
@@ -359,7 +363,7 @@ class TestProcessQueuedUrl:
         self, make_rig: Callable[..., Rig], tmp_path: Path
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        file_path = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        file_path = rig.seed_good(ALPHA, ALPHA_BODY)
         file_path.unlink()
         del rig.hashes[json_url(ALPHA)]["file_path"]
         await self.process(rig, tmp_path)
@@ -372,7 +376,7 @@ class TestProcessQueuedUrl:
     ) -> None:
         """One unconditional GET reads the links; the entries stay as they were, so nothing is saved."""
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        file_path = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        file_path = rig.seed_good(ALPHA, ALPHA_BODY)
         before = {key: dict(rig.hashes[key]) for key in (json_url(ALPHA), doc_url(ALPHA))}
         queue = await self.process(rig, tmp_path)
         assert rig.fake.requests == [(json_url(ALPHA), None)]
@@ -392,7 +396,7 @@ class TestProcessQueuedUrl:
     ) -> None:
         """An entry without file_path: its page is converted and written again, and both keys record it."""
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        file_path = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        file_path = rig.seed_good(ALPHA, ALPHA_BODY)
         del rig.hashes[json_url(ALPHA)]["file_path"]
         queue = await self.process(rig, tmp_path)
         assert rig.fake.requests == [(json_url(ALPHA), None)]
@@ -411,7 +415,7 @@ class TestProcessQueuedUrl:
     ) -> None:
         """No If-None-Match was sent, so a 304 has no body to read: a failed fetch of a good page."""
         rig = make_rig({json_url(ALPHA): [status(304)]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         before = dict(rig.hashes[json_url(ALPHA)])
         queue = await self.process(rig, tmp_path)
         assert rig.fake.requests == [(json_url(ALPHA), None)]
@@ -430,7 +434,7 @@ class TestProcessQueuedUrl:
         # One fetch, no refetch: the JSON key becomes an error entry, so the
         # file is orphaned; nothing blocks
         rig = make_rig({json_url(ALPHA): [status(code)]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         doc_entry = dict(rig.hashes[doc_url(ALPHA)])
         queue = await self.process(rig, tmp_path)
         error = f"HTTP {code}"
@@ -450,14 +454,14 @@ class TestProcessQueuedUrl:
         self, make_rig: Callable[..., Rig], tmp_path: Path, spec: Spec
     ) -> None:
         rig = make_rig({json_url(ALPHA): [spec]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         json_entry = dict(rig.hashes[json_url(ALPHA)])
         doc_entry = dict(rig.hashes[doc_url(ALPHA)])
         queue = await self.process(rig, tmp_path)
         assert rig.mark_error_calls == []
         # One fetch (and its retries), unconditional; nothing else for a failed URL
         assert {url for url, _ in rig.fake.requests} == {json_url(ALPHA)}
-        assert all(etag is None for _, etag in rig.fake.requests)
+        assert all(if_none_match is None for _, if_none_match in rig.fake.requests)
         assert_touched_only(rig, json_url(ALPHA), json_entry)
         assert rig.hashes[doc_url(ALPHA)] == doc_entry
         assert queue == []
@@ -504,7 +508,7 @@ class TestProcessQueuedUrl:
     async def test_200_invalid_json_keeps_a_good_page(self, make_rig: Callable[..., Rig], tmp_path: Path) -> None:
         # Treated as FetchFailed(200, 'invalid json', transient=True)
         rig = make_rig({json_url(ALPHA): [ok("not json {", "E-BAD")]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         json_entry = dict(rig.hashes[json_url(ALPHA)])
         doc_entry = dict(rig.hashes[doc_url(ALPHA)])
         queue = await self.process(rig, tmp_path)
@@ -530,7 +534,7 @@ class TestProcessQueuedUrl:
     ) -> None:
         body = page(ALPHA, ["testkit/alpha/child", "testkit/alpha/new"])
         rig = make_rig({json_url(ALPHA): [ok(body, "E-A2")]})
-        file_path = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        file_path = rig.seed_good(ALPHA, ALPHA_BODY)
         json_entry = dict(rig.hashes[json_url(ALPHA)])
         doc_entry = dict(rig.hashes[doc_url(ALPHA)])
         write_text = Path.write_text
@@ -556,7 +560,7 @@ class TestProcessQueuedUrl:
         queue = await self.process(rig, tmp_path)
         # Links first: the children are queued even though the save failed
         assert queue == [ALPHA_CHILD, json_url("testkit/alpha/new")]
-        # File first: the old hash/etag/file_path stay, so the next run refetches
+        # File first: the old hash and file_path stay, so the next run converts it again
         assert_touched_only(rig, json_url(ALPHA), json_entry)
         assert rig.hashes[doc_url(ALPHA)] == doc_entry
         assert file_path.read_text(encoding="utf-8") == f"# {ALPHA}\n"
@@ -597,7 +601,7 @@ class TestProcessQueuedUrl:
     ) -> None:
         """The file is on disk, but D8 marked both keys (or a 404 the JSON-URL key) in a run that kept it."""
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        file_path = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        file_path = rig.seed_good(ALPHA, ALPHA_BODY)
         error_entry = {"status": "error", "error": "HTTP 502"}
         rig.hashes[json_url(ALPHA)] = {**error_entry, "consecutive_failures": 3}
         if keys == "both-errors":
@@ -620,8 +624,8 @@ class TestProcessQueuedUrl:
             monkeypatch.setattr(rig.scraper, "_extract_from_json", boom)
         queue = await self.process(rig, tmp_path)
         assert queue == [ALPHA_CHILD]
-        # The JSON-URL key records the file again and is touched; with no etag
-        # and an unknown hash, the next run refetches and converts the page
+        # The JSON-URL key records the file again and is touched; with an
+        # unknown hash, the next run converts the page again
         assert rig.hashes[json_url(ALPHA)] == {"hash": "", "file_path": str(file_path), "consecutive_failures": 3}
         assert json_url(ALPHA) in rig.touched
         assert rig.hashes[doc_url(ALPHA)] == doc_entry
@@ -654,7 +658,7 @@ class TestProcessQueuedUrl:
         self, make_rig: Callable[..., Rig], tmp_path: Path, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         for key in (json_url(ALPHA), doc_url(ALPHA)):
             rig.hashes[key] = {"status": "error", "error": "HTTP 502"}
         computed = rig.scraper.output_dir / "alpha-computed.md"
@@ -677,7 +681,7 @@ class TestProcessQueuedUrl:
         self, make_rig: Callable[..., Rig], tmp_path: Path, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
         for key in (json_url(ALPHA), doc_url(ALPHA)):
             rig.hashes[key] = {"status": "error", "error": "HTTP 502"}
 
@@ -736,7 +740,7 @@ class TestProcessQueuedUrl:
         self, make_rig: Callable[..., Rig], tmp_path: Path, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.seed_good(ALPHA, ALPHA_BODY)
 
         def boom(data: Dict[str, Any], occ_view: Optional[Dict[str, Any]] = None) -> List[str]:
             raise RuntimeError("parser bug")
@@ -771,9 +775,9 @@ class TestTripwire:
         return rig.scraper.output_dir / f"alpha{clash_suffix(json_url(ALPHA))}.md"
 
     @staticmethod
-    def record(rig: Rig, path: str, file_path: Path, body_hash: str, etag: str) -> Dict[str, Any]:
+    def record(rig: Rig, path: str, file_path: Path, body_hash: str) -> Dict[str, Any]:
         """Both of the page's keys record file_path; the entry they hold."""
-        entry = {"hash": body_hash, "etag": etag, "file_path": str(file_path)}
+        entry = {"hash": body_hash, "file_path": str(file_path)}
         rig.hashes[json_url(path)] = dict(entry)
         rig.hashes[doc_url(path)] = dict(entry)
         return entry
@@ -788,7 +792,7 @@ class TestTripwire:
         self, make_rig: Callable[..., Rig]
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+        theirs = rig.seed_good(OTHER, page(OTHER))
         await self.process(rig)
         hashed = self.hashed(rig)
         assert theirs.read_text(encoding="utf-8") == f"# {OTHER}\n"
@@ -808,7 +812,7 @@ class TestTripwire:
 
     async def test_a_page_rewritten_under_its_own_name_is_no_clash(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        mine = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        mine = rig.seed_good(ALPHA, ALPHA_BODY)
         rig.hashes[json_url(ALPHA)]["hash"] = "old"
         await self.process(rig)
         assert "The testkit/alpha page." in mine.read_text(encoding="utf-8")
@@ -816,10 +820,10 @@ class TestTripwire:
 
     async def test_a_hashed_stem_is_kept_while_the_page_is_unchanged(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+        theirs = rig.seed_good(OTHER, page(OTHER))
         hashed = self.hashed(rig)
         hashed.write_text("# alpha\n", encoding="utf-8")
-        entry = self.record(rig, ALPHA, hashed, hashlib.sha256(ALPHA_BODY.encode()).hexdigest(), "E-A")
+        entry = self.record(rig, ALPHA, hashed, hashlib.sha256(ALPHA_BODY.encode()).hexdigest())
         await self.process(rig)
         assert rig.fake.requests == [(json_url(ALPHA), None)]
         assert_touched_only(rig, json_url(ALPHA), entry)
@@ -830,10 +834,10 @@ class TestTripwire:
 
     async def test_a_hashed_stem_is_kept_while_the_other_page_has_the_name(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        rig.seed_good(OTHER, page(OTHER), "E-O")
+        rig.seed_good(OTHER, page(OTHER))
         hashed = self.hashed(rig)
         hashed.write_text("# alpha\n", encoding="utf-8")
-        self.record(rig, ALPHA, hashed, "old", "E-A")
+        self.record(rig, ALPHA, hashed, "old")
         await self.process(rig)
         assert "The testkit/alpha page." in hashed.read_text(encoding="utf-8")
         assert rig.hashes[json_url(ALPHA)]["file_path"] == str(hashed)
@@ -843,12 +847,12 @@ class TestTripwire:
     async def test_once_the_other_page_is_gone_the_page_takes_its_name_back(self, make_rig: Callable[..., Rig]) -> None:
         """Its hashed file is deleted, as no entry will record it again; the run is clean."""
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+        theirs = rig.seed_good(OTHER, page(OTHER))
         # Apple removed the other page last run; its file waits for cleanup
         rig.hashes[json_url(OTHER)] = {"status": "error", "error": "HTTP 404"}
         hashed = self.hashed(rig)
         hashed.write_text("# alpha\n", encoding="utf-8")
-        self.record(rig, ALPHA, hashed, "old", "E-A")
+        self.record(rig, ALPHA, hashed, "old")
         await self.process(rig)
         assert not hashed.exists()
         assert "The testkit/alpha page." in theirs.read_text(encoding="utf-8")
@@ -861,11 +865,11 @@ class TestTripwire:
         self, make_rig: Callable[..., Rig], monkeypatch: pytest.MonkeyPatch
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
-        rig.seed_good(OTHER, page(OTHER), "E-O")
+        rig.seed_good(OTHER, page(OTHER))
         rig.hashes[json_url(OTHER)] = {"status": "error", "error": "HTTP 404"}
         hashed = self.hashed(rig)
         hashed.write_text("# alpha\n", encoding="utf-8")
-        entry = self.record(rig, ALPHA, hashed, "old", "E-A")
+        entry = self.record(rig, ALPHA, hashed, "old")
 
         def boom(data: Dict[str, Any]) -> str:
             raise ValueError("bad table")
@@ -879,7 +883,7 @@ class TestTripwire:
         self, make_rig: Callable[..., Rig], monkeypatch: pytest.MonkeyPatch
     ) -> None:
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+        theirs = rig.seed_good(OTHER, page(OTHER))
 
         def boom(data: Dict[str, Any]) -> str:
             raise ValueError("bad table")
@@ -895,8 +899,8 @@ class TestTripwire:
     async def test_a_missing_file_path_never_records_the_other_pages_file(self, make_rig: Callable[..., Rig]) -> None:
         """An unchanged page whose entry lost its file_path is written again, under the hashed stem."""
         rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
-        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
-        rig.hashes[json_url(ALPHA)] = {"hash": hashlib.sha256(ALPHA_BODY.encode()).hexdigest(), "etag": "E-A"}
+        theirs = rig.seed_good(OTHER, page(OTHER))
+        rig.hashes[json_url(ALPHA)] = {"hash": hashlib.sha256(ALPHA_BODY.encode()).hexdigest()}
         await self.process(rig)
         hashed = self.hashed(rig)
         assert "The testkit/alpha page." in hashed.read_text(encoding="utf-8")
@@ -918,7 +922,7 @@ class TestScrapePage:
         file_path = rig.scraper.output_dir / f"{FW}.md"
         assert f"# {FW}" in file_path.read_text(encoding="utf-8")
         for key in (json_url(FW), doc_url(FW)):
-            assert rig.hashes[key]["etag"] == "E-ROOT"
+            assert rig.hashes[key]["hash"] == hashlib.sha256(ROOT_BODY.encode()).hexdigest()
             assert key in rig.touched
             assert rig.hashes[key]["file_path"] == str(file_path)
         assert rig.scraper._root_ok
@@ -926,7 +930,7 @@ class TestScrapePage:
 
     async def test_unchanged_200_touches_both_keys(self, make_rig: Callable[..., Rig]) -> None:
         rig = make_rig({json_url(FW): [ok(ROOT_BODY, "E-ROOT")]})
-        rig.seed_good(FW, ROOT_BODY, "E-ROOT")
+        rig.seed_good(FW, ROOT_BODY)
         before = {key: dict(rig.hashes[key]) for key in (json_url(FW), doc_url(FW))}
         assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert rig.fake.requests == [(json_url(FW), None)]
@@ -945,7 +949,7 @@ class TestScrapePage:
         """A missing doc key: the root is saved again (it has changed for that key). A missing
         file_path: the doc key's is recorded. Either changes an entry, so the manager saves it."""
         rig = make_rig({json_url(FW): [ok(ROOT_BODY, "E-ROOT")]})
-        file_path = rig.seed_good(FW, ROOT_BODY, "E-ROOT")
+        file_path = rig.seed_good(FW, ROOT_BODY)
         if missing == "doc-key":
             del rig.hashes[doc_url(FW)]
         else:
@@ -953,13 +957,13 @@ class TestScrapePage:
         data = await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW))
         assert (data is None) == (missing == "file-path")
         for key in (json_url(FW), doc_url(FW)):
-            assert rig.hashes[key]["file_path"] == str(file_path) and rig.hashes[key]["etag"] == "E-ROOT"
+            assert rig.hashes[key]["file_path"] == str(file_path)
             assert key in rig.touched
         assert rig.scraper.hash_manager.save()
         saved = json.loads(rig.scraper.hash_manager.cache_file.read_text())["hashes"]
         assert saved[json_url(FW)]["file_path"] == saved[doc_url(FW)]["file_path"] == str(file_path)
         assert saved[json_url(FW)] == saved[doc_url(FW)] == {
-            "hash": hashlib.sha256(ROOT_BODY.encode()).hexdigest(), "etag": "E-ROOT", "file_path": str(file_path)}
+            "hash": hashlib.sha256(ROOT_BODY.encode()).hexdigest(), "file_path": str(file_path)}
         assert rig.scraper.stats["pages_scraped" if missing == "doc-key" else "pages_skipped"] == 1
 
     @pytest.mark.parametrize("code", [404, 410])
@@ -969,7 +973,7 @@ class TestScrapePage:
     ) -> None:
         rig = make_rig({json_url(FW): [status(code)]})
         if stored:
-            rig.seed_good(FW, ROOT_BODY, "E-ROOT")
+            rig.seed_good(FW, ROOT_BODY)
         doc_entry = rig.hashes.get(doc_url(FW))
         assert await rig.scraper.scrape_page(rig.scraper.sink, doc_url(FW)) is None
         assert rig.mark_error_calls == [(json_url(FW), f"HTTP {code}")]
@@ -991,7 +995,7 @@ class TestScrapePage:
         self, make_rig: Callable[..., Rig], spec: Spec, error: Optional[str]
     ) -> None:
         rig = make_rig({json_url(FW): [spec]})
-        rig.seed_good(FW, ROOT_BODY, "E-ROOT")
+        rig.seed_good(FW, ROOT_BODY)
         json_entry = dict(rig.hashes[json_url(FW)])
         doc_entry = dict(rig.hashes[doc_url(FW)])
         with capture_logs() as events:
@@ -1022,7 +1026,7 @@ class TestScrapePage:
         self, make_rig: Callable[..., Rig], monkeypatch: pytest.MonkeyPatch
     ) -> None:
         rig = make_rig({json_url(FW): [ok(page(FW, [ALPHA, "testkit/beta"]), "E-ROOT2")]})
-        rig.seed_good(FW, ROOT_BODY, "E-ROOT")
+        rig.seed_good(FW, ROOT_BODY)
         json_entry = dict(rig.hashes[json_url(FW)])
         doc_entry = dict(rig.hashes[doc_url(FW)])
 

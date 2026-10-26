@@ -64,11 +64,11 @@ def test_every_touch_site_keeps_its_file(tmp_path: Path) -> None:
     files = {name: write(docs / f"{name}.md") for name in ("updated", "touched", "kept", "d8", "unrecorded")}
     old = HashManager(hash_file)
     for name in ("updated", "touched", "d8"):
-        old.update_hash(name, name, "E", files[name])
+        old.update_hash(name, name, files[name])
     old.save()
 
     hm = HashManager(hash_file)
-    hm.update_hash("updated", "new content", "E2", files["updated"])
+    hm.update_hash("updated", "new content", files["updated"])
     hm.touch("touched")
     hm.mark_error("kept", "local error: x")
     assert hm.keep_file("kept", files["kept"])
@@ -84,7 +84,7 @@ def test_a_recorded_path_in_another_casing_keeps_its_file(tmp_path: Path) -> Non
     docs = tmp_path / "docs"
     page = write(docs / "Page.md")
     hm = HashManager(hash_file)
-    hm.update_hash("u", "content", None, docs / "page.md")
+    hm.update_hash("u", "content", docs / "page.md")
     assert hm.get_untouched_files(docs) == []
     assert page.exists()
 
@@ -94,7 +94,7 @@ def test_a_recorded_path_in_another_casing_keeps_its_file(tmp_path: Path) -> Non
         other = write(docs / "page.md")
         assert hm.get_untouched_files(docs) == [page]
         hm2 = HashManager(hash_file)
-        hm2.update_hash("u", "content", None, docs / "PAGE.md")
+        hm2.update_hash("u", "content", docs / "PAGE.md")
         assert hm2.get_untouched_files(docs) == []
         assert other.exists()
 
@@ -104,7 +104,7 @@ def test_a_fresh_manager_touched_nothing(tmp_path: Path) -> None:
     hash_file = tmp_path / "fw_hashes.json"
     page = write(tmp_path / "docs" / "page.md")
     hm = HashManager(hash_file)
-    hm.update_hash("u", "content", None, page)
+    hm.update_hash("u", "content", page)
     hm.save()
     later = HashManager(hash_file)
     assert later.touched == set()
@@ -191,7 +191,7 @@ def framework_on_disk(pages: List[str]) -> HashManager:
     """A framework 'fw' whose hash file records each page."""
     hm = HashManager(Config.get_hash_file("fw"))
     for name in pages:
-        hm.update_hash(name, name, "E", write(Config.get_framework_output_dir("fw") / f"{name}.md"))
+        hm.update_hash(name, name, write(Config.get_framework_output_dir("fw") / f"{name}.md"))
     hm.set_metadata("failure_storm_runs", 1)
     hm.save()
     return hm
@@ -218,7 +218,7 @@ def test_interactive_cleanup_asks_once(sandbox: Path, monkeypatch: pytest.Monkey
     hm.set_metadata("pending_orphans", [str(fw_dir / "a.md")])
     hm.save()
     other = HashManager(Config.get_hash_file("other"))
-    other.update_hash("x", "x", "E", write(Config.get_framework_output_dir("other") / "x.md"))
+    other.update_hash("x", "x", write(Config.get_framework_output_dir("other") / "x.md"))
     other.save()
     cleanups = [
         FrameworkCleanup("fw", fw_dir, hm.cache_file, files=3, delete=[fw_dir / "a.md"], confirmed=1,

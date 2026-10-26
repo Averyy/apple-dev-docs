@@ -57,7 +57,7 @@ class Repo:
         json_key = f"{JSON}/{path}.json"
         doc_key = f"{DOC}/{path}"
         recorded = str(DOCS / file) if file else None
-        entry: Dict[str, Any] = {"hash": f"h-{path}", "etag": f"E-{path}"}
+        entry: Dict[str, Any] = {"hash": f"h-{path}"}
         if recorded:
             entry["file_path"] = recorded
         self.hashes[json_key] = dict(entry) if live else {"status": "error", "error": "HTTP 404"}
@@ -165,7 +165,7 @@ class TestMigration:
     def test_migrate_then_rerun(self, repo: Repo, capsys: pytest.CaptureFixture[str]) -> None:
         # A second framework, without a render version (TestKit has one): its file moves too
         other = Path("documentation") / "OtherKit"
-        other_entry = {"hash": "h-run", "etag": "E-run", "file_path": str(other / "run.md")}
+        other_entry = {"hash": "h-run", "file_path": str(other / "run.md")}
         repo.write(str(other / "run.md"), f"{DOC}/otherkit/run(_:)")
         Path(".hashes").mkdir(exist_ok=True)
         Path(".hashes/OtherKit_hashes.json").write_text(json.dumps({"metadata": {"total_pages": 2}, "hashes": {
@@ -299,7 +299,7 @@ class TestChecks:
 
     def test_a_page_in_two_hash_files(self, repo: Repo, capsys: pytest.CaptureFixture[str]) -> None:
         standard(repo)
-        entry = {"hash": "h", "etag": "E", "file_path": "documentation/OtherKit/alpha.md"}
+        entry = {"hash": "h", "file_path": "documentation/OtherKit/alpha.md"}
         data = {"metadata": {"total_pages": 1}, "hashes": {f"{JSON}/testkit/alpha.json": entry}}
         Path(".hashes/OtherKit_hashes.json").write_text(json.dumps(data))
         self.unchanged(repo, capsys, "pages in two hash files")

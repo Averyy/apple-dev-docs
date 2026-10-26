@@ -196,7 +196,7 @@ class TestFilenameGeneration:
 
 
 class TestHashManager:
-    """Test hash manager with ETag support."""
+    """Test hash manager change detection (by content hash; no ETag is stored)."""
     
     def setup_method(self):
         """Set up test fixtures."""
@@ -208,52 +208,34 @@ class TestHashManager:
         if self.temp_file.exists():
             self.temp_file.unlink()
             
-    def test_etag_stored_and_retrieved(self):
-        """Test that ETags are properly stored and retrieved."""
+    def test_hash_stored_without_etag(self):
+        """Test that the entry stores the content hash and no ETag."""
         url = "https://example.com/test.json"
         content = "test content"
-        etag = 'W/"abc123"'
         
-        # Store hash with ETag
-        self.hash_manager.update_hash(url, content, etag)
+        self.hash_manager.update_hash(url, content)
         
-        # Retrieve ETag
-        retrieved_etag = self.hash_manager.get_etag(url)
-        assert retrieved_etag == etag
-        print("✓ ETag storage test passed")
+        assert self.hash_manager.hashes[url] == {"hash": self.hash_manager.get_content_hash(content)}
+        print("✓ Hash storage test passed")
         
-    def test_etag_comparison_when_unchanged(self):
-        """Test ETag comparison detects unchanged content."""
+    def test_hash_comparison_when_unchanged(self):
+        """Test the content hash detects unchanged content."""
         url = "https://example.com/test.json"
         content = "test content"
-        etag = 'W/"abc123"'
         
-        # Store initial hash with ETag
-        self.hash_manager.update_hash(url, content, etag)
+        self.hash_manager.update_hash(url, content)
         
-        # Check with same ETag - should be unchanged
-        assert not self.hash_manager.has_changed(url, content, etag)
-        print("✓ ETag unchanged detection test passed")
+        assert not self.hash_manager.has_changed(url, content)
+        print("✓ Unchanged detection test passed")
         
-    def test_etag_comparison_when_changed(self):
-        """Test a changed ETag falls through to the content hash.
-
-        Apple's CDN can regenerate ETags without changing the content, so a
-        new ETag means changed only when the content hash differs too.
-        """
+    def test_hash_comparison_when_changed(self):
+        """Test the content hash detects changed content."""
         url = "https://example.com/test.json"
-        content = "test content"
-        old_etag = 'W/"abc123"'
-        new_etag = 'W/"def456"'
         
-        # Store initial hash with ETag
-        self.hash_manager.update_hash(url, content, old_etag)
+        self.hash_manager.update_hash(url, "test content")
         
-        # Different ETag, same content - unchanged
-        assert not self.hash_manager.has_changed(url, content, new_etag)
-        # Different ETag and different content - changed
-        assert self.hash_manager.has_changed(url, "changed content", new_etag)
-        print("✓ ETag change detection test passed")
+        assert self.hash_manager.has_changed(url, "changed content")
+        print("✓ Change detection test passed")
 
 
 def run_all_tests():
@@ -286,9 +268,9 @@ def run_all_tests():
     # Hash manager tests
     hash_tests = TestHashManager()
     hash_tests.setup_method()
-    hash_tests.test_etag_stored_and_retrieved()
-    hash_tests.test_etag_comparison_when_unchanged()
-    hash_tests.test_etag_comparison_when_changed()
+    hash_tests.test_hash_stored_without_etag()
+    hash_tests.test_hash_comparison_when_unchanged()
+    hash_tests.test_hash_comparison_when_changed()
     hash_tests.teardown_method()
     
     print("\n✅ All critical tests passed!")

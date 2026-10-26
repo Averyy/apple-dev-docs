@@ -937,7 +937,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 return
 
             # Got 200 OK - content is new, changed or unchanged
-            response_text, etag = result
+            response_text = result
 
             # Parse JSON for discovery
             try:
@@ -967,7 +967,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             # Only this inner try counts as a local error (the links are queued)
             try:
                 # Check if we need to process based on content hash
-                if hm.has_changed(json_url, response_text, etag):
+                if hm.has_changed(json_url, response_text):
                     # Extract and save page data
                     page_data = self._extract_from_json(sink, data, doc_url, occ_view)
                     if page_data:
@@ -976,7 +976,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
                         # Write the file first, then both hash keys
                         saved = await self._save_and_record(
-                            sink, json_url, doc_url, page_data, file_path, response_text, etag
+                            sink, json_url, doc_url, page_data, file_path, response_text
                         )
                 else:
                     # Content hasn't changed according to hash
@@ -992,15 +992,15 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     stored_path = hm.hashes[json_url].get('file_path')
                     if stored_path:
                         file_path = Path(stored_path)
-                        # Touch both keys and record a new etag; an entry
-                        # that doesn't change leaves the hash file as it is
-                        hm.update_hash(json_url, response_text, etag, file_path)
-                        hm.update_hash(doc_url, response_text, etag, file_path)
+                        # Touch both keys; an entry that doesn't change
+                        # leaves the hash file as it is
+                        hm.update_hash(json_url, response_text, file_path)
+                        hm.update_hash(doc_url, response_text, file_path)
                     else:
                         page_data = self._extract_from_json(sink, data, doc_url, occ_view)
                         file_path = self._get_organized_file_path(sink, doc_url, page_data)
                         await self._save_and_record(
-                            sink, json_url, doc_url, page_data, file_path, response_text, etag
+                            sink, json_url, doc_url, page_data, file_path, response_text
                         )
             except Exception as e:
                 self._handle_local_error(sink, json_url, e, file_path)
@@ -1087,7 +1087,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         page_data: Dict[str, Any],
         file_path: Path,
         content: str,
-        etag: Optional[str],
     ) -> bool:
         """Write the page's file, then record it on both hash keys.
 
@@ -1120,8 +1119,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             sink.hash_manager.mark_error(json_url, "unsafe file path")
             return False
         self._remove_moved_clash_file(sink, json_url, target)
-        sink.hash_manager.update_hash(json_url, content, etag, target)
-        sink.hash_manager.update_hash(doc_url, content, etag, target)
+        sink.hash_manager.update_hash(json_url, content, target)
+        sink.hash_manager.update_hash(doc_url, content, target)
         self._path_owners(sink)[self._path_key(target)] = json_url.lower()
         return True
 
@@ -1267,9 +1266,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """A convert or save error of ours: keep the page, block cleanup, count it.
 
         Never deletes: the page answered 200, so its file is kept. A live
-        entry keeps its hash, etag and file_path (the old etag and hash make
-        the next run convert it again) and is touched, so its file is never
-        orphaned. Without one, the page's file can still be on disk with no
+        entry keeps its hash and file_path (the old hash makes the next run
+        convert it again) and is touched, so its file is never orphaned.
+        Without one, the page's file can still be on disk with no
         live JSON-URL key recording it: its JSON-URL key answered 404/410
         (e.g. the root's first fetch this run), or D8 marked both keys, in a
         run whose cleanup didn't delete the file, or the hash file was lost.
@@ -1400,13 +1399,13 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Otherwise the stored version stays and
         the next run renders the framework again: a framework whose root
         404'd, or a page whose rendering keeps failing (its file kept, its
-        etag still matching), would else never be rendered again. A filename
+        hash still matching), would else never be rendered again. A filename
         clash doesn't count: its page was written, under a hashed stem.
         When it stores a new version, the entries this run didn't touch lose
-        their hash and etag (forget_untouched_renderings): their files keep
-        the old rendering (a file the valve holds, or a page no longer
-        reached), and such a page that comes back unchanged would else
-        match its stored etag or hash and never be rendered again.
+        their hash (forget_untouched_renderings): their files keep the old
+        rendering (a file the valve holds, or a page no longer reached),
+        and such a page that comes back unchanged would else match its
+        stored hash and never be rendered again.
         Saved by __aexit__.
 
         A multi-writer sink stores it at the end of the run instead
@@ -1716,7 +1715,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self._handle_fetch_failure(sink, json_url, result)
             return None
         
-        response_text, etag = result
+        response_text = result
         
         try:
             json_data = json.loads(response_text)
@@ -1729,7 +1728,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self._root_ok = True
         
         # Check hash to avoid re-processing unchanged content
-        if not hm.has_changed(json_url, response_text, etag) and not hm.has_changed(url, response_text, etag):
+        if not hm.has_changed(json_url, response_text) and not hm.has_changed(url, response_text):
             logger.debug("content_unchanged", url=url)
             
             # Content unchanged, but both keys are still touched for orphan
@@ -1738,8 +1737,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             # that doesn't change leaves the hash file as it is.
             stored_path = hm.hashes[json_url].get('file_path') or hm.hashes[url].get('file_path')
             file_path = Path(stored_path) if stored_path else self._get_organized_file_path(sink, url, {})
-            hm.update_hash(json_url, response_text, etag, file_path)
-            hm.update_hash(url, response_text, etag, file_path)
+            hm.update_hash(json_url, response_text, file_path)
+            hm.update_hash(url, response_text, file_path)
             
             self.stats["pages_skipped"] += 1
             return None
@@ -1765,7 +1764,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             file_path = self._get_organized_file_path(sink, url, data)
             
             # Write the file first, then both hash keys
-            saved = await self._save_and_record(sink, json_url, url, data, file_path, response_text, etag)
+            saved = await self._save_and_record(sink, json_url, url, data, file_path, response_text)
         except Exception as e:
             self._handle_local_error(sink, json_url, e)
             return None
@@ -1775,18 +1774,17 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self.stats["pages_scraped"] += 1
         return data
     
-    async def _fetch_page(self, json_url: str) -> Union[Tuple[str, Optional[str]], FetchFailed]:
-        """Fetch a page unconditionally (no If-None-Match): its body is read every run.
+    async def _fetch_page(self, json_url: str) -> Union[str, FetchFailed]:
+        """Fetch a page unconditionally (fetch_page): its body is read every run.
 
-        Its links come from the body, so a 304 would need a second request
-        to read them; has_changed decides whether the page is written. A
-        304 to this request, which asked for none, has no body: a transient
-        failure.
+        Its links come from the body; has_changed decides whether the page
+        is written. A 304 to this request, which asked for none, has no
+        body: a transient failure.
 
         Returns:
-            (content, etag) on 200, or FetchFailed
+            The content on 200, or FetchFailed
         """
-        result = await self.fetch_page_with_etag(json_url, use_etag=False)
+        result = await self.fetch_page(json_url)
         if result is NOT_MODIFIED:
             return FetchFailed(status=304, error="HTTP 304 without a conditional request", transient=True)
         return result
@@ -3430,9 +3428,9 @@ def store_render_version(sink: Sink, label: str) -> None:
     """Store a sink's RENDER_VERSION (metadata.render): every page it reached was rendered by it.
 
     When it stores a new version, the entries this run didn't touch lose
-    their hash and etag (forget_untouched_renderings): their files keep the
-    old rendering, and such a page that comes back unchanged would else
-    match its stored etag or hash and never be rendered again.
+    their hash (forget_untouched_renderings): their files keep the old
+    rendering, and such a page that comes back unchanged would else match
+    its stored hash and never be rendered again.
     """
     hm = sink.hash_manager
     if hm.stale:

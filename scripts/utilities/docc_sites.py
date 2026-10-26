@@ -197,14 +197,14 @@ class SiteIndexLoader(BaseAppleScraper):
             ("gone", [], why) for a 404/410; ("failed", [], why) otherwise
         """
         assert self.site.index_url is not None
-        result = await self.fetch_page_with_etag(self.site.index_url, use_etag=False)
+        result = await self.fetch_page(self.site.index_url)
         if isinstance(result, FetchFailed):
             state = "gone" if result.status in GONE_STATUSES else "failed"
             return state, [], f"{self.site.index_url}: {result.error}"
         if result is NOT_MODIFIED:
             return "failed", [], f"{self.site.index_url}: HTTP 304 without a conditional request"
         try:
-            roots = (navigator_roots if self.site.roots_from_index else index_roots)(self.site, result[0])
+            roots = (navigator_roots if self.site.roots_from_index else index_roots)(self.site, result)
         except ValueError as e:
             return "failed", [], f"{self.site.index_url}: not the site's index ({e})"
         self._site_file.set_metadata(INDEX_ROOTS_KEY, roots)
