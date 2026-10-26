@@ -2276,9 +2276,9 @@
       "hash": "04420f53b01763e735c6cc7a430cff6ed9d0d12afb6ac608a0e3f009d5760cf4"
     },
     "https://developer.apple.com/documentation/glkit/glkview": {
-      "etag": "\"fe98-65d55d9ba3085-df\"",
+      "etag": "\"1044a-65d616c321888-df\"",
       "file_path": "documentation/GLKit/glkview.md",
-      "hash": "7de14246bc41a57a1dc187b00a172119b7549a3931a22cd3bc8b23de0bc8ec58"
+      "hash": "46693a74145768d07f03b1ee834960eebfbcf006984a2c4f59e012970ddaa1e7"
     },
     "https://developer.apple.com/documentation/glkit/glkview/binddrawable()": {
       "etag": "\"2f92-65d55d9ba3085-df\"",
@@ -2584,10 +2584,6 @@
       "etag": "\"a3d7-65d55d9a9e7ad-df\"",
       "file_path": "documentation/GLKit/GLKit.md",
       "hash": "462e3596854790f407f846fbe95bfaf3211cfcc70ba024664f111c69a4b01a67"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/glkit/com.apple.glkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glk_sse3_intrinsics.json": {
       "etag": "\"44ea-65d55d9b0ae2b-df\"",
@@ -4860,9 +4856,9 @@
       "hash": "04420f53b01763e735c6cc7a430cff6ed9d0d12afb6ac608a0e3f009d5760cf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glkview.json": {
-      "etag": "\"fe98-65d55d9ba3085-df\"",
+      "etag": "\"1044a-65d616c321888-df\"",
       "file_path": "documentation/GLKit/glkview.md",
-      "hash": "7de14246bc41a57a1dc187b00a172119b7549a3931a22cd3bc8b23de0bc8ec58"
+      "hash": "46693a74145768d07f03b1ee834960eebfbcf006984a2c4f59e012970ddaa1e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/glkit/glkview/binddrawable().json": {
       "etag": "\"2f92-65d55d9ba3085-df\"",
@@ -5169,6 +5165,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1033
+    "total_pages": 1032
   }
 }

@@ -1260,10 +1260,6 @@
       "file_path": "documentation/SafariServices/building-and-testing-a-safari-web-extension.md",
       "hash": "f40780722f3d132eff3d86f8850f8a6bf3f74564b39a119d20455be773010736"
     },
-    "https://developer.apple.com/tutorials/data/documentation/safariservices/com.apple.safariservices/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/safariservices/converting-a-legacy-safari-extension-to-a-safari-app-extension.json": {
       "etag": "\"2d68-65902434ee7d7-df\"",
       "file_path": "documentation/SafariServices/converting-a-legacy-safari-extension-to-a-safari-app-extension.md",
@@ -2419,6 +2415,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 483
+    "total_pages": 482
   }
 }

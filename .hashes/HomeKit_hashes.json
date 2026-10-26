@@ -6795,10 +6795,6 @@
       "file_path": "documentation/HomeKit/characteristic-units.md",
       "hash": "8cb4f062f3d10495c0382665aa0b93884b28c0b0270e52ee81ebadd85f16764c"
     },
-    "https://developer.apple.com/tutorials/data/documentation/homekit/com.apple.homekit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/homekit/configuring-a-home-automation-device.json": {
       "etag": "\"6ec5-65d55fa7768d0-df\"",
       "file_path": "documentation/HomeKit/configuring-a-home-automation-device.md",
@@ -13489,6 +13485,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2697
+    "total_pages": 2696
   }
 }

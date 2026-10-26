@@ -1,0 +1,53 @@
+# INTransferMoneyIntentResponseCode.failureCredentialsUnverified
+
+**Framework**: Intents  
+**Kind**: case  
+**Role**: Case
+
+The transaction failed because you were unable to verify the user’s credentials.
+
+**Availability**:
+- iOS 11.0+ - Deprecated in 15.0
+- iPadOS 11.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 4.0+ - Deprecated in 8.0
+
+> **Deprecated**: This intent is no longer available. You may define a custom intent instead. For more information, see [Deprecated SiriKit Intent Domains](https://developer.apple.com/support/deprecated-sirikit-intent-domains).
+
+## Declaration
+
+```swift
+case failureCredentialsUnverified
+```
+
+```c
+INTransferMoneyIntentResponseCodeFailureCredentialsUnverified
+```
+
+#### Discussion
+
+Use this response code when you’re unable to verify the user’s credentials. You might use this response code if the user is currently logged out of your app or is unknown to you.
+
+## See Also
+
+### Constants
+- [INTransferMoneyIntentResponseCode.unspecified](./unspecified.md)
+  The response didn’t specify a response code.
+- [INTransferMoneyIntentResponseCode.ready](./ready.md)
+  You’re ready to handle the intent.
+- [INTransferMoneyIntentResponseCode.inProgress](./inprogress.md)
+  You’ve received the transaction details but haven’t yet scheduled the transaction.
+- [INTransferMoneyIntentResponseCode.success](./success.md)
+  You successfully scheduled the transaction.
+- [INTransferMoneyIntentResponseCode.failure](./failure.md)
+  You were unable to schedule the transaction.
+- [INTransferMoneyIntentResponseCode.failureRequiringAppLaunch](./failurerequiringapplaunch.md)
+  The user must launch your app to schedule the transaction.
+- [INTransferMoneyIntentResponseCode.failureInsufficientFunds](./failureinsufficientfunds.md)
+  The transaction failed because the user’s account didn’t contain sufficient funds.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/intents/intransfermoneyintentresponsecode/failurecredentialsunverified)*

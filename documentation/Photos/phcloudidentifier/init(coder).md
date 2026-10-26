@@ -1,0 +1,24 @@
+# init(coder:)
+
+**Framework**: Photos  
+**Kind**: init  
+**Role**: Initializer
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 10.13+
+- tvOS 15.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+init?(coder: NSCoder)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/photos/phcloudidentifier/init(coder:))*

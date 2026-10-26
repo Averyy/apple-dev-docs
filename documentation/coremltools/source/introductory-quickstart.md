@@ -219,7 +219,9 @@ To preview the model’s output for a given input, follow these steps:
 
 1. Click the **Preview** tab.
 2. Drag an image into the image well on the left side of the model preview.
-![xcode-quickstart4-model-preview-drag](https://apple.github.io/coremltools/docs-guides/_images/xcode-quickstart4-model-preview-drag.png)
+
+   ![xcode-quickstart4-model-preview-drag](https://apple.github.io/coremltools/docs-guides/_images/xcode-quickstart4-model-preview-drag.png)
+
 3. The output appears in the preview pane under the image.
 
 ![xcode-quickstart5-model-preview-daisy.png](https://apple.github.io/coremltools/docs-guides/_images/xcode-quickstart5-model-preview-daisy.png)

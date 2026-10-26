@@ -102,7 +102,8 @@ For More Information
 - For the details of how to preprocess image input for models in PyTorch’s  [torchvision](https://pytorch.org/vision/stable/index.html) library, see [Preprocessing for Torch](image-inputs.md#preprocessing-for-torch).
 - For examples of converting PyTorch models, see the following:
 
-[Converting a torchvision Model from PyTorch](convert-a-torchvision-model-from-pytorch.md)
-[Converting a PyTorch Segmentation Model](convert-a-pytorch-segmentation-model.md)
-[Converting an Open Efficient Language Model](convert-openelm.md)
+  - [Converting a torchvision Model from PyTorch](convert-a-torchvision-model-from-pytorch.md)
+  - [Converting a PyTorch Segmentation Model](convert-a-pytorch-segmentation-model.md)
+  - [Converting an Open Efficient Language Model](convert-openelm.md)
+
 - To learn how to debug and resolve numerical issues (such as NaNs, infinities, or inconsistent results) and performance problems, see [Debugging And Performance Utilities](mlmodel-debugging-perf-utilities.md).

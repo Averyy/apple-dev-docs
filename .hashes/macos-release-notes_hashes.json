@@ -66,9 +66,9 @@
       "hash": "6bf5ab034b3d82a3cd5fbdcf45a0627f26156a3f3458f823fea998f736930e4f"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-13-release-notes": {
-      "etag": "\"99d3-65b8a28a9285f-df\"",
+      "etag": "\"99d4-65defd9dbff72-df\"",
       "file_path": "documentation/macos-release-notes/macos-13-release-notes.md",
-      "hash": "969759ac64a4c3affc38fae5c8ba83450c6c20497bd7f8c1f1bde80328a3c5ad"
+      "hash": "59fc7eaa4d752b8d9d52148e6d1f0e944f2837eef338e454a9d9504626e7ffd9"
     },
     "https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes": {
       "etag": "\"265b-65d55a472557d-df\"",
@@ -381,9 +381,9 @@
       "hash": "6bf5ab034b3d82a3cd5fbdcf45a0627f26156a3f3458f823fea998f736930e4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13-release-notes.json": {
-      "etag": "\"99d3-65b8a28a9285f-df\"",
+      "etag": "\"99d4-65defd9dbff72-df\"",
       "file_path": "documentation/macos-release-notes/macos-13-release-notes.md",
-      "hash": "969759ac64a4c3affc38fae5c8ba83450c6c20497bd7f8c1f1bde80328a3c5ad"
+      "hash": "59fc7eaa4d752b8d9d52148e6d1f0e944f2837eef338e454a9d9504626e7ffd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/macos-release-notes/macos-13_1-release-notes.json": {
       "etag": "\"265b-65d55a472557d-df\"",

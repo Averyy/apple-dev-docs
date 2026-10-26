@@ -11,9 +11,9 @@
       "hash": "9b0da35a187f48cbba7fecd9195356e55b25cb6b6440cc6f7df0cc6d326d9c36"
     },
     "https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass": {
-      "etag": "\"2523c-65dd9d42ff5d2-df\"",
+      "etag": "\"25243-65e163581e233-df\"",
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
+      "hash": "22386df3392f0d1624debfb5848607c06bf3fd1373ebf623d021598dc87aa857"
     },
     "https://developer.apple.com/documentation/technologyoverviews/ai-machine-learning": {
       "etag": "\"363e-65902239accb2-df\"",
@@ -166,9 +166,9 @@
       "hash": "3aadd085443f127b24242ab71b2903a4b0cb3ac948ef06c0e2daaa18d45d99ad"
     },
     "https://developer.apple.com/documentation/technologyoverviews/interface-fundamentals": {
-      "etag": "\"19f78-65902239accb2-df\"",
+      "etag": "\"19f79-65dbf9698813e-df\"",
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
+      "hash": "bef25a62d34cd1f73d30a3b7fb5cae618f974f08f9c9353aa7af9131e10d64d6"
     },
     "https://developer.apple.com/documentation/technologyoverviews/liquid-glass": {
       "etag": "\"58bc-65902239accb2-df\"",
@@ -186,9 +186,9 @@
       "hash": "972742342b61b91ead245ff705003fbaead0577a4763f5ac7c9f978b20b670c4"
     },
     "https://developer.apple.com/documentation/technologyoverviews/preparing-your-app-for-iphone-duo": {
-      "etag": "\"15550-65e021a5625c8-df\"",
+      "etag": "\"15555-65e163581e233-df\"",
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "2da25364c293d2fd2bcb451d46a83b8040242faf32099dd8514a6adfbdf2affe"
+      "hash": "376984b83507e24706eccaba487518e9fd0830812b314fdffa82205c8e698464"
     },
     "https://developer.apple.com/documentation/technologyoverviews/shared-data": {
       "etag": "\"8fd9-65902239accb2-df\"",
@@ -211,9 +211,9 @@
       "hash": "b4bf2faf013afd90dcbb4cfbc451abaf956bf20848c71941db1ee4bf10297f03"
     },
     "https://developer.apple.com/documentation/technologyoverviews/swiftui": {
-      "etag": "\"c124-65d55a454c71a-df\"",
+      "etag": "\"c125-65db1b1367540-df\"",
       "file_path": "documentation/TechnologyOverviews/swiftui.md",
-      "hash": "4cc93882bc0edbf75d3a9e8f5d33047b5383f0d3eb463c28c37c3f0e9dc4f728"
+      "hash": "0cbe74f60109de175e40156f13bf76ca953e7bce152747a97fdd2f85da995eae"
     },
     "https://developer.apple.com/documentation/technologyoverviews/testing-and-performance": {
       "etag": "\"a4ff-65d55a454c71a-df\"",
@@ -251,9 +251,9 @@
       "hash": "9b0da35a187f48cbba7fecd9195356e55b25cb6b6440cc6f7df0cc6d326d9c36"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/adopting-liquid-glass.json": {
-      "etag": "\"2523c-65dd9d42ff5d2-df\"",
+      "etag": "\"25243-65e163581e233-df\"",
       "file_path": "documentation/TechnologyOverviews/adopting-liquid-glass.md",
-      "hash": "a41d1485f9815b51d040d2f723e7372e066eacbbda02b81493f21f6fee52ad47"
+      "hash": "22386df3392f0d1624debfb5848607c06bf3fd1373ebf623d021598dc87aa857"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/ai-machine-learning.json": {
       "etag": "\"363e-65902239accb2-df\"",
@@ -406,9 +406,9 @@
       "hash": "3aadd085443f127b24242ab71b2903a4b0cb3ac948ef06c0e2daaa18d45d99ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/interface-fundamentals.json": {
-      "etag": "\"19f78-65902239accb2-df\"",
+      "etag": "\"19f79-65dbf9698813e-df\"",
       "file_path": "documentation/TechnologyOverviews/interface-fundamentals.md",
-      "hash": "3686e6f022eb58cdfad4ec4cd04335d5f191ef61dacfb1c812cf7a2f452bdccb"
+      "hash": "bef25a62d34cd1f73d30a3b7fb5cae618f974f08f9c9353aa7af9131e10d64d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/liquid-glass.json": {
       "etag": "\"58bc-65902239accb2-df\"",
@@ -426,9 +426,9 @@
       "hash": "972742342b61b91ead245ff705003fbaead0577a4763f5ac7c9f978b20b670c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/preparing-your-app-for-iphone-duo.json": {
-      "etag": "\"15550-65e021a5625c8-df\"",
+      "etag": "\"15555-65e163581e233-df\"",
       "file_path": "documentation/TechnologyOverviews/preparing-your-app-for-iphone-duo.md",
-      "hash": "2da25364c293d2fd2bcb451d46a83b8040242faf32099dd8514a6adfbdf2affe"
+      "hash": "376984b83507e24706eccaba487518e9fd0830812b314fdffa82205c8e698464"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/shared-data.json": {
       "etag": "\"8fd9-65902239accb2-df\"",
@@ -451,9 +451,9 @@
       "hash": "b4bf2faf013afd90dcbb4cfbc451abaf956bf20848c71941db1ee4bf10297f03"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/swiftui.json": {
-      "etag": "\"c124-65d55a454c71a-df\"",
+      "etag": "\"c125-65db1b1367540-df\"",
       "file_path": "documentation/TechnologyOverviews/swiftui.md",
-      "hash": "4cc93882bc0edbf75d3a9e8f5d33047b5383f0d3eb463c28c37c3f0e9dc4f728"
+      "hash": "0cbe74f60109de175e40156f13bf76ca953e7bce152747a97fdd2f85da995eae"
     },
     "https://developer.apple.com/tutorials/data/documentation/technologyoverviews/testing-and-performance.json": {
       "etag": "\"a4ff-65d55a454c71a-df\"",

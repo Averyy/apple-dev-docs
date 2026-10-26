@@ -125,6 +125,8 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 - [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

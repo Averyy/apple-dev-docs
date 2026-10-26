@@ -16000,10 +16000,6 @@
       "file_path": "documentation/CoreGraphics/colorsyncprofile.md",
       "hash": "eecc3beb4b4c31b61f2416f142dbc9520a07d6347294ac07706230f6bdb448ba"
     },
-    "https://developer.apple.com/tutorials/data/documentation/coregraphics/com.apple.coregraphics/7testing17attachableasimagep.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/coregraphics/copysign(_:_:).json": {
       "etag": "\"71da-65d55af7540ab-df\"",
       "file_path": "documentation/CoreGraphics/copysign(_,_).md",
@@ -16883,6 +16879,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 3376
+    "total_pages": 3375
   }
 }

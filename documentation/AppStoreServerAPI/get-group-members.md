@@ -16,8 +16,6 @@ Get a paginated list of the customers that belong to a group.
 
 #### Discussion
 
-> ❗ **Important**:  This endpoint is only available in the sandbox environment.
-
 Call this endpoint to enumerate the customers that belong to a group. Get the `groupId` for a group by calling the [`Get Customer Groups`](./get-customer-groups.md) endpoint.
 
 The response, [`GetGroupMembersResponse`](./getgroupmembersresponse.md), contains a [`GroupMemberEntry`](./groupmemberentry.md) for each member. Each entry identifies the member by their [`appTransactionId`](./apptransactionid.md).
@@ -27,7 +25,7 @@ Each response returns at most the number of members you request in the `limit` q
 The following request gets the first 50 members of a group:
 
 ```javascript
-GET https://api.storekit-sandbox.apple.com/groups/v1/group/{groupId}?limit=50
+GET https://api.storekit.apple.com/groups/v1/group/{groupId}?limit=50
 ```
 
 Group membership is separate from any transaction information. To unlock content for a customer, read their transactions; don’t depend on this endpoint. For more information, see [`Get Customer Groups`](./get-customer-groups.md).

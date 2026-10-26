@@ -105,10 +105,6 @@
       "file_path": "documentation/FileProviderUI/adding-actions-to-the-context-menu.md",
       "hash": "99e948046dab9895e85eea70b3cfa2f301a6e9e9b542ae725208ea2ba3c9b6d5"
     },
-    "https://developer.apple.com/tutorials/data/documentation/fileproviderui/com.apple.fileproviderui/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fileproviderui-data-types.json": {
       "etag": "\"113a-659026b0dc9ff-df\"",
       "file_path": "documentation/FileProviderUI/fileproviderui-data-types.md",
@@ -199,6 +195,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 39
+    "total_pages": 38
   }
 }

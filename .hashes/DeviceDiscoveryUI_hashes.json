@@ -110,10 +110,6 @@
       "file_path": "documentation/DeviceDiscoveryUI/DeviceDiscoveryUI.md",
       "hash": "bed055ad65e8f6fc8c71e91daa2610d9a313caf85e377efc4760c6f1fa00cbd4"
     },
-    "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/com.apple.devicediscoveryui/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/devicediscoveryui/connecting-a-tvos-app-to-other-devices-over-the-local-network.json": {
       "etag": "\"8f07-65d5608725d7f-df\"",
       "file_path": "documentation/DeviceDiscoveryUI/connecting-a-tvos-app-to-other-devices-over-the-local-network.md",
@@ -219,6 +215,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 43
+    "total_pages": 42
   }
 }

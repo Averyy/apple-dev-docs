@@ -25,7 +25,8 @@ The example converts a [TensorFlow 1](https://www.tensorflow.org/) pre-trained f
    conda install tensorflow==1.15
    ```
 
-For alternatives, see [How to pip install old version of library(tensorflow)](https://stackoverflow.com/questions/41937915/how-to-pip-install-old-version-of-librarytensorflow) on StackOverflow.
+   For alternatives, see [How to pip install old version of library(tensorflow)](https://stackoverflow.com/questions/41937915/how-to-pip-install-old-version-of-librarytensorflow) on StackOverflow.
+
 3. Install the following for this conda environment:
 
    ```

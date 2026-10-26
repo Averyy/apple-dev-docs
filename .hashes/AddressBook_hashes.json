@@ -1227,9 +1227,9 @@
       "hash": "aacd76e4afbca3c49b032a8a8d4341b1ba5e79a486dc62b03a833d54b88bf2e2"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonview": {
-      "etag": "\"700d-65d55dfd5dbfe-df\"",
+      "etag": "\"75bf-65d617178d700-df\"",
       "file_path": "documentation/AddressBook/abpersonview.md",
-      "hash": "befe0f39c44dc4f3fd5cd68c7ebc0544fa678faed1c5d9fcb87e35725c794cce"
+      "hash": "eb945c6f82c9d914f93f79ecc9b92e888fa2d43188ea73ae5d66e9d737f36ffe"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonview/editing": {
       "etag": "\"2724-65d55dfd421a9-df\"",
@@ -4171,9 +4171,9 @@
       "hash": "aacd76e4afbca3c49b032a8a8d4341b1ba5e79a486dc62b03a833d54b88bf2e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonview.json": {
-      "etag": "\"700d-65d55dfd5dbfe-df\"",
+      "etag": "\"75bf-65d617178d700-df\"",
       "file_path": "documentation/AddressBook/abpersonview.md",
-      "hash": "befe0f39c44dc4f3fd5cd68c7ebc0544fa678faed1c5d9fcb87e35725c794cce"
+      "hash": "eb945c6f82c9d914f93f79ecc9b92e888fa2d43188ea73ae5d66e9d737f36ffe"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonview/editing.json": {
       "etag": "\"2724-65d55dfd421a9-df\"",

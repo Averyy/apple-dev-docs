@@ -416,7 +416,7 @@
       "hash": "cdd2414b0cb22841614f4ab54ef37f9b88e248d79df366aa17a05876e2f230f2"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_cdhash_t": {
-      "etag": "\"2ee6-65d55d1f11d08\"",
+      "etag": "\"2ee6-65d55d1f11d08-df\"",
       "file_path": "documentation/EndpointSecurity/es_cdhash_t.md",
       "hash": "912c1e134a168cb0231f88f43b02264878fdb037d1743e3e9a30c5831298ea3f"
     },
@@ -8576,7 +8576,7 @@
       "hash": "cdd2414b0cb22841614f4ab54ef37f9b88e248d79df366aa17a05876e2f230f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_cdhash_t.json": {
-      "etag": "\"2ee6-65d55d1f11d08\"",
+      "etag": "\"2ee6-65d55d1f11d08-df\"",
       "file_path": "documentation/EndpointSecurity/es_cdhash_t.md",
       "hash": "912c1e134a168cb0231f88f43b02264878fdb037d1743e3e9a30c5831298ea3f"
     },

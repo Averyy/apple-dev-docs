@@ -30,15 +30,50 @@
       "file_path": "documentation/PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md",
       "hash": "84c5b07cbf3e7be89e135a759ef66b73a6572a0541ec12ced295e41ae456f4c0"
     },
+    "https://developer.apple.com/documentation/photokit/deprecated-errors": {
+      "etag": "\"1eaf-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/deprecated-errors.md",
+      "hash": "0059db8f4a09ea4d8ae5a637788d4b973ca3c9427dfe64f20fc8881946edd9ba"
+    },
     "https://developer.apple.com/documentation/photokit/displaying-live-photos": {
       "etag": "\"5007-65a1bcdb0e4e0-df\"",
       "file_path": "documentation/PhotoKit/displaying-live-photos.md",
       "hash": "2ad709ce7967aed84d9932878b94cc07e35f980a55c073f0469ce16e05ef53ab"
     },
+    "https://developer.apple.com/documentation/photokit/editing-asset-content": {
+      "etag": "\"7da8-65b3b66525bd3-df\"",
+      "file_path": "documentation/PhotoKit/editing-asset-content.md",
+      "hash": "bc091472dfec3033e2cbdc2163a94079f4ddb08fbc6a556bffc1d48286b3b0de"
+    },
+    "https://developer.apple.com/documentation/photokit/editing-request-info-keys": {
+      "etag": "\"6842-65b3b66525bd3-df\"",
+      "file_path": "documentation/PhotoKit/editing-request-info-keys.md",
+      "hash": "8ca2ca0c0ffb43a3ca1d1d2500ac9d82e3cb93cfa11fb2395638bf6c6053126b"
+    },
+    "https://developer.apple.com/documentation/photokit/error-constants": {
+      "etag": "\"6e83-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/error-constants.md",
+      "hash": "f06eb724190604b8ddb182e33b1a55afeb5a749209dfb999272cf74535323e3a"
+    },
+    "https://developer.apple.com/documentation/photokit/fetching-assets": {
+      "etag": "\"5a86-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/fetching-assets.md",
+      "hash": "9472f2589f1735a503b4ce754d472468370c2674b7bea7bfa4a3856140033e8d"
+    },
     "https://developer.apple.com/documentation/photokit/fetching-objects-and-requesting-changes": {
       "etag": "\"348e-65a1bcdb0e4e0-df\"",
       "file_path": "documentation/PhotoKit/fetching-objects-and-requesting-changes.md",
       "hash": "36bf6bad7920086aa5814b42acbe9afeb4418f71b8ea49c255c563b4940c8d86"
+    },
+    "https://developer.apple.com/documentation/photokit/image-request-identifiers": {
+      "etag": "\"1b90-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/image-request-identifiers.md",
+      "hash": "0afa638b2b7194d74baff35444405c320ce6d0ff270dd8d0cd80ecb5e06209e4"
+    },
+    "https://developer.apple.com/documentation/photokit/image-result-info-keys": {
+      "etag": "\"3822-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/image-result-info-keys.md",
+      "hash": "1e803aa1cd871655e33fa65902eba2d909e6c474bd3c5fb84d3c31cc663e906b"
     },
     "https://developer.apple.com/documentation/photokit/implementing-an-inline-photos-picker": {
       "etag": "\"1c4e-65d560da5c313-df\"",
@@ -50,10 +85,35 @@
       "file_path": "documentation/PhotoKit/loading-and-caching-assets-and-thumbnails.md",
       "hash": "dd2de21e619ec96a3873f88ea0cd45f68223858b275bd175da6e408b0e0eebd7"
     },
+    "https://developer.apple.com/documentation/photokit/observing-changes-in-the-photo-library": {
+      "etag": "\"3e25-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/observing-changes-in-the-photo-library.md",
+      "hash": "63e5d22939d6a43914c7a5f622560a39c90f0a4e7eb368f3f94539c6f5c0a467"
+    },
+    "https://developer.apple.com/documentation/photokit/requesting-changes-to-the-photo-library": {
+      "etag": "\"9806-65d560da5c313-df\"",
+      "file_path": "documentation/PhotoKit/requesting-changes-to-the-photo-library.md",
+      "hash": "e3617882a3fab9b487d2c688125ac7be8bff55236a1b74d77589da34f0273796"
+    },
+    "https://developer.apple.com/documentation/photokit/resource-loading-request-identifiers": {
+      "etag": "\"1b5b-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/resource-loading-request-identifiers.md",
+      "hash": "8b5ff23ae0780c7a1243c335405dda508168040d1f8cd814d98e893b0e65684d"
+    },
+    "https://developer.apple.com/documentation/photokit/result-handler-info-dictionary-keys": {
+      "etag": "\"3402-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/result-handler-info-dictionary-keys.md",
+      "hash": "3c549bfb4d994f4ce1e934ee2c9ead21ab0caf482cbaa8a8d28b4a664c233a0a"
+    },
     "https://developer.apple.com/documentation/photokit/selecting-photos-and-videos-in-ios": {
       "etag": "\"5c67-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/selecting-photos-and-videos-in-ios.md",
       "hash": "e9952e78e0471ca11a7a9aa27c6f9efef8984c1c2452f408b77c2470a89505f9"
+    },
+    "https://developer.apple.com/documentation/photokit/uploading-asset-resources-in-the-background": {
+      "etag": "\"19369-65d560da5c313-df\"",
+      "file_path": "documentation/PhotoKit/uploading-asset-resources-in-the-background.md",
+      "hash": "f8fc60cb4809a5caa623ab7550422d93a89b826a3e6dd6d0c21f022f27e73268"
     },
     "https://developer.apple.com/tutorials/data/documentation/PhotoKit.json": {
       "etag": "\"2799-65d560da5c313-df\"",
@@ -85,15 +145,50 @@
       "file_path": "documentation/PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md",
       "hash": "84c5b07cbf3e7be89e135a759ef66b73a6572a0541ec12ced295e41ae456f4c0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/deprecated-errors.json": {
+      "etag": "\"1eaf-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/deprecated-errors.md",
+      "hash": "0059db8f4a09ea4d8ae5a637788d4b973ca3c9427dfe64f20fc8881946edd9ba"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photokit/displaying-live-photos.json": {
       "etag": "\"5007-65a1bcdb0e4e0-df\"",
       "file_path": "documentation/PhotoKit/displaying-live-photos.md",
       "hash": "2ad709ce7967aed84d9932878b94cc07e35f980a55c073f0469ce16e05ef53ab"
     },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/editing-asset-content.json": {
+      "etag": "\"7da8-65b3b66525bd3-df\"",
+      "file_path": "documentation/PhotoKit/editing-asset-content.md",
+      "hash": "bc091472dfec3033e2cbdc2163a94079f4ddb08fbc6a556bffc1d48286b3b0de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/editing-request-info-keys.json": {
+      "etag": "\"6842-65b3b66525bd3-df\"",
+      "file_path": "documentation/PhotoKit/editing-request-info-keys.md",
+      "hash": "8ca2ca0c0ffb43a3ca1d1d2500ac9d82e3cb93cfa11fb2395638bf6c6053126b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/error-constants.json": {
+      "etag": "\"6e83-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/error-constants.md",
+      "hash": "f06eb724190604b8ddb182e33b1a55afeb5a749209dfb999272cf74535323e3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/fetching-assets.json": {
+      "etag": "\"5a86-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/fetching-assets.md",
+      "hash": "9472f2589f1735a503b4ce754d472468370c2674b7bea7bfa4a3856140033e8d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/photokit/fetching-objects-and-requesting-changes.json": {
       "etag": "\"348e-65a1bcdb0e4e0-df\"",
       "file_path": "documentation/PhotoKit/fetching-objects-and-requesting-changes.md",
       "hash": "36bf6bad7920086aa5814b42acbe9afeb4418f71b8ea49c255c563b4940c8d86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/image-request-identifiers.json": {
+      "etag": "\"1b90-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/image-request-identifiers.md",
+      "hash": "0afa638b2b7194d74baff35444405c320ce6d0ff270dd8d0cd80ecb5e06209e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/image-result-info-keys.json": {
+      "etag": "\"3822-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/image-result-info-keys.md",
+      "hash": "1e803aa1cd871655e33fa65902eba2d909e6c474bd3c5fb84d3c31cc663e906b"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/implementing-an-inline-photos-picker.json": {
       "etag": "\"1c4e-65d560da5c313-df\"",
@@ -105,24 +200,45 @@
       "file_path": "documentation/PhotoKit/loading-and-caching-assets-and-thumbnails.md",
       "hash": "dd2de21e619ec96a3873f88ea0cd45f68223858b275bd175da6e408b0e0eebd7"
     },
-    "https://developer.apple.com/tutorials/data/documentation/photokit/photos.json": {
-      "error": "HTTP 404",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/photokit/observing-changes-in-the-photo-library.json": {
+      "etag": "\"3e25-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/observing-changes-in-the-photo-library.md",
+      "hash": "63e5d22939d6a43914c7a5f622560a39c90f0a4e7eb368f3f94539c6f5c0a467"
     },
-    "https://developer.apple.com/tutorials/data/documentation/photokit/photosui.json": {
-      "error": "HTTP 404",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/photokit/requesting-changes-to-the-photo-library.json": {
+      "etag": "\"9806-65d560da5c313-df\"",
+      "file_path": "documentation/PhotoKit/requesting-changes-to-the-photo-library.md",
+      "hash": "e3617882a3fab9b487d2c688125ac7be8bff55236a1b74d77589da34f0273796"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/resource-loading-request-identifiers.json": {
+      "etag": "\"1b5b-659029beb29c9-df\"",
+      "file_path": "documentation/PhotoKit/resource-loading-request-identifiers.md",
+      "hash": "8b5ff23ae0780c7a1243c335405dda508168040d1f8cd814d98e893b0e65684d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/result-handler-info-dictionary-keys.json": {
+      "etag": "\"3402-65a1bcdb0e4e0-df\"",
+      "file_path": "documentation/PhotoKit/result-handler-info-dictionary-keys.md",
+      "hash": "3c549bfb4d994f4ce1e934ee2c9ead21ab0caf482cbaa8a8d28b4a664c233a0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/photokit/selecting-photos-and-videos-in-ios.json": {
       "etag": "\"5c67-65d560da5c313-df\"",
       "file_path": "documentation/PhotoKit/selecting-photos-and-videos-in-ios.md",
       "hash": "e9952e78e0471ca11a7a9aa27c6f9efef8984c1c2452f408b77c2470a89505f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/photokit/uploading-asset-resources-in-the-background.json": {
+      "etag": "\"19369-65d560da5c313-df\"",
+      "file_path": "documentation/PhotoKit/uploading-asset-resources-in-the-background.md",
+      "hash": "f8fc60cb4809a5caa623ab7550422d93a89b826a3e6dd6d0c21f022f27e73268"
     }
   },
   "metadata": {
+    "child_modules": {
+      "photos": {},
+      "photosui": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 24
+    "total_pages": 46
   }
 }

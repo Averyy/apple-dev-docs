@@ -9307,7 +9307,7 @@
       "hash": "39edb692accd381507bf1865dc6ff2be27bbb5bdb8ed292ad0a7c1c7a7b94b77"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/medicalinstrumentusage/volume": {
-      "etag": "\"ec7-65d55ea1261e0\"",
+      "etag": "\"ec7-65d55ea1261e0-df\"",
       "file_path": "documentation/CoreHID/hidusage/medicalinstrumentusage/volume.md",
       "hash": "24618dd80b699edb1819f0cc9a54a2a06db5509ebd68fce9930887e1d01a9ef6"
     },
@@ -16306,26 +16306,6 @@
       "etag": "\"4f28-65d55ea3dd98f-df\"",
       "file_path": "documentation/CoreHID/hidreportid.md",
       "hash": "b1323e9318a9d421921e9e31c57727865d50382ffdb084c007f37dbe33f95cc9"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/...(_:)-4auo9.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/...(_:)-5ijq6.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/allreports.json": {
       "etag": "\"1bb7-65d55e9e980fb-df\"",
@@ -24708,7 +24688,7 @@
       "hash": "39edb692accd381507bf1865dc6ff2be27bbb5bdb8ed292ad0a7c1c7a7b94b77"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/medicalinstrumentusage/volume.json": {
-      "etag": "\"ec7-65d55ea1261e0\"",
+      "etag": "\"ec7-65d55ea1261e0-df\"",
       "file_path": "documentation/CoreHID/hidusage/medicalinstrumentusage/volume.md",
       "hash": "24618dd80b699edb1819f0cc9a54a2a06db5509ebd68fce9930887e1d01a9ef6"
     },
@@ -30787,6 +30767,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 6159
+    "total_pages": 6154
   }
 }

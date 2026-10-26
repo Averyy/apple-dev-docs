@@ -4921,9 +4921,9 @@
       "hash": "1ac8e992e6279836468bc6026ff4cfcde3aae5bcfd4e5f7948633625b1f83396"
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell": {
-      "etag": "\"be20-65d55e61fa1ad-df\"",
+      "etag": "\"b86e-65d617f65671e-df\"",
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
+      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
     },
     "https://developer.apple.com/documentation/appkit/nsactioncell/action": {
       "etag": "\"2089-65d55e516a1e8-df\"",
@@ -34751,9 +34751,9 @@
       "hash": "18f46096aaa139fc92ec0782ab06483ce624ee523114aea8fd005af73f402338"
     },
     "https://developer.apple.com/documentation/appkit/nspersistentdocument": {
-      "etag": "\"c262-65de7919deb6a-df\"",
+      "etag": "\"c814-65dda25917a05-df\"",
       "file_path": "documentation/AppKit/nspersistentdocument.md",
-      "hash": "d69dc441b3e29fa216b7652fdb9075fe40df5bdbfbbd2abe180f3c71a5d21289"
+      "hash": "488a6b89567e82b2be4d4cf7a356577c26e77a9ef8a9cd939186321d0885f89f"
     },
     "https://developer.apple.com/documentation/appkit/nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:)": {
       "etag": "\"6ff7-65dda256b76e0-df\"",
@@ -63655,10 +63655,6 @@
       "file_path": "documentation/AppKit/column-sort-direction.md",
       "hash": "12bb524695def05b75ccc54a50e5a96fb8ef0853b061a883fc8c69edbfc55543"
     },
-    "https://developer.apple.com/tutorials/data/documentation/appkit/com.apple.appkit/7testing17attachableasimagep.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/appkit/combo-box.json": {
       "etag": "\"5ae4-659026ef4e7f2-df\"",
       "file_path": "documentation/AppKit/combo-box.md",
@@ -68390,9 +68386,9 @@
       "hash": "1ac8e992e6279836468bc6026ff4cfcde3aae5bcfd4e5f7948633625b1f83396"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell.json": {
-      "etag": "\"be20-65d55e61fa1ad-df\"",
+      "etag": "\"b86e-65d617f65671e-df\"",
       "file_path": "documentation/AppKit/nsactioncell.md",
-      "hash": "5f586aac06f671d4f444a33a6e1fad710577e032c680c1f7dd3063ef272e8eb8"
+      "hash": "a7e09b084fbccb465e30841b96a2d31645768fa5187b313ba38be4a4ab953703"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsactioncell/action.json": {
       "etag": "\"2089-65d55e516a1e8-df\"",
@@ -98220,9 +98216,9 @@
       "hash": "18f46096aaa139fc92ec0782ab06483ce624ee523114aea8fd005af73f402338"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspersistentdocument.json": {
-      "etag": "\"c262-65de7919deb6a-df\"",
+      "etag": "\"c814-65dda25917a05-df\"",
       "file_path": "documentation/AppKit/nspersistentdocument.md",
-      "hash": "d69dc441b3e29fa216b7652fdb9075fe40df5bdbfbbd2abe180f3c71a5d21289"
+      "hash": "488a6b89567e82b2be4d4cf7a356577c26e77a9ef8a9cd939186321d0885f89f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).json": {
       "etag": "\"6ff7-65dda256b76e0-df\"",
@@ -126939,6 +126935,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 25387
+    "total_pages": 25386
   }
 }

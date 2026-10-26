@@ -13,11 +13,16 @@ The model is updatable and starts off empty, meaning that the nearest-neighbor c
 The input to the model is a 28 x 28 grayscale drawing. The background is expected to be black (`0`), while the strokes of the drawing should be rendered as white (`255`). Right-click these 28 x 28 images for the following example:
 
 - Drawing of a star:
-![Drawing of a star](https://apple.github.io/coremltools/docs-guides/_images/star28x28.png)
+
+  ![Drawing of a star](https://apple.github.io/coremltools/docs-guides/_images/star28x28.png)
+
 - Drawing of a heart:
-![Drawing of a heart](https://apple.github.io/coremltools/docs-guides/_images/heart28x28.png)
+
+  ![Drawing of a heart](https://apple.github.io/coremltools/docs-guides/_images/heart28x28.png)
+
 - Drawing of 5:
-![Drawing of 5](https://apple.github.io/coremltools/docs-guides/_images/five28x28.png)
+
+  ![Drawing of 5](https://apple.github.io/coremltools/docs-guides/_images/five28x28.png)
 
 ## Get the Embedding Model
 

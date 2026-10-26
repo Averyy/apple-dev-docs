@@ -4756,9 +4756,9 @@
       "hash": "a7b5f9db3778b3f2735543d1a72ddd76f069823e92229c592d82d736ebd6cf5f"
     },
     "https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller": {
-      "etag": "\"c562-65dad2a80132a-df\"",
+      "etag": "\"cb14-65d55d1e81ef9-df\"",
       "file_path": "documentation/StoreKit/skstoreproductviewcontroller.md",
-      "hash": "ffe9be669841deb4f61288d6521c258b2907d17ee0ff45779a6e8391603a0790"
+      "hash": "d781c26a661fd399005818195d4544c25795023cb41befd500de8085ab4fce4d"
     },
     "https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller/delegate": {
       "etag": "\"2926-65d55d1e1f57b-df\"",
@@ -7609,10 +7609,6 @@
       "etag": "\"45e3-65b8a674e8ce6-df\"",
       "file_path": "documentation/StoreKit/choosing-a-storekit-api-for-in-app-purchases.md",
       "hash": "1d6a8cefbd686d36f2240826c8b694c04535e0af1034cd2faa7ae8c4fbf1d674"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/storekit/com.apple.storekit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/combining-parameters-for-previous-skadnetwork-postback-versions.json": {
       "etag": "\"33e4-65d55d1f9ccac-df\"",
@@ -11880,9 +11876,9 @@
       "hash": "a7b5f9db3778b3f2735543d1a72ddd76f069823e92229c592d82d736ebd6cf5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skstoreproductviewcontroller.json": {
-      "etag": "\"c562-65dad2a80132a-df\"",
+      "etag": "\"cb14-65d55d1e81ef9-df\"",
       "file_path": "documentation/StoreKit/skstoreproductviewcontroller.md",
-      "hash": "ffe9be669841deb4f61288d6521c258b2907d17ee0ff45779a6e8391603a0790"
+      "hash": "d781c26a661fd399005818195d4544c25795023cb41befd500de8085ab4fce4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skstoreproductviewcontroller/delegate.json": {
       "etag": "\"2926-65d55d1e1f57b-df\"",
@@ -14249,6 +14245,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2849
+    "total_pages": 2848
   }
 }

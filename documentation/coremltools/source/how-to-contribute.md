@@ -69,17 +69,19 @@ Core ML team members will add labels to your issues, requests, questions, or pul
 
 - Status label (turquoise in color): The issue’s stage in the process. Status labels include:
 
-**triaged**: Team members have reviewed and examined the issue and assigned a release (if applicable). The issue may still be awaiting a response or investigation, or may need discussion.
-**awaiting response**: The issue needs a response from the issue’s author.
-**duplicate**: The issue is a duplicate. Progress will appear on a similar previously-logged issue.
-**repro needed**: Team members need more information to reproduce the issue.
-**investigation**: Team members are investigating the issue.
+  - **triaged**: Team members have reviewed and examined the issue and assigned a release (if applicable). The issue may still be awaiting a response or investigation, or may need discussion.
+  - **awaiting response**: The issue needs a response from the issue’s author.
+  - **duplicate**: The issue is a duplicate. Progress will appear on a similar previously-logged issue.
+  - **repro needed**: Team members need more information to reproduce the issue.
+  - **investigation**: Team members are investigating the issue.
+
 - Type of issue (red in color):
 
-**bug**: Unexpected behavior that should be fixed. Use this label with issues you create using the [bug template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=bug&amp;template=---bug-report.md&amp;title=).
-**docs**: Errors or accuracy issues in the documentation, including requests for clarification and additional information.
-**enhancement**: An improvement to an existing feature.
-**feature request**: Functionality that doesn’t currently exist. Use this label with issues you create using the [feature request template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=feature-request&amp;template=---feature-request.md&amp;title=).
-**question**: Question to the team, such as a request for clarification. Use this label with issues you create using the [question template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=question&amp;template=-question.md&amp;title=).
+  - **bug**: Unexpected behavior that should be fixed. Use this label with issues you create using the [bug template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=bug&amp;template=---bug-report.md&amp;title=).
+  - **docs**: Errors or accuracy issues in the documentation, including requests for clarification and additional information.
+  - **enhancement**: An improvement to an existing feature.
+  - **feature request**: Functionality that doesn’t currently exist. Use this label with issues you create using the [feature request template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=feature-request&amp;template=---feature-request.md&amp;title=).
+  - **question**: Question to the team, such as a request for clarification. Use this label with issues you create using the [question template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=question&amp;template=-question.md&amp;title=).
+
 - Framework label (orange in color)*:* Use this label to specify the framework that this issue is appearing in. Examples include **caffe**, **onnx**, **pytorch**, **tf1.x** (TensorFlow 1), and **tf2.x / tf.keras** (TensorFlow 2 and TensorFlow Keras).
 - Issues for contributors to complete: If an issue is good for a contributor to self-assign, it may include the **good first issue** label.

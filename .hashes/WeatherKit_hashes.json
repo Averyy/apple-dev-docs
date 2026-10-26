@@ -3461,26 +3461,6 @@
       "file_path": "documentation/WeatherKit/uvindex/exposurecategory.md",
       "hash": "6c84680a2aa1dbf4616e97777b590fd06d9feb28a9bc0ba5f1ff0f971323a167"
     },
-    "https://developer.apple.com/tutorials/data/documentation/weatherkit/uvindex/exposurecategory/...(_:)-2h7t6.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/weatherkit/uvindex/exposurecategory/...(_:)-455ha.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/weatherkit/uvindex/exposurecategory/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/weatherkit/uvindex/exposurecategory/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/weatherkit/uvindex/exposurecategory/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/uvindex/exposurecategory/accessibilitydescription.json": {
       "etag": "\"165a-65d560cfa4abd-df\"",
       "file_path": "documentation/WeatherKit/uvindex/exposurecategory/accessibilitydescription.md",
@@ -4347,6 +4327,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 871
+    "total_pages": 866
   }
 }

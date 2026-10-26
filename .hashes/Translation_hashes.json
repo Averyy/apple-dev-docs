@@ -61,9 +61,9 @@
       "hash": "a835b5b6c788193384fb0554f5293db9dad9549062992ca6d1289a701b528149"
     },
     "https://developer.apple.com/documentation/translation/translating-text-within-your-app": {
-      "etag": "\"af10-65d560ad515e0-df\"",
+      "etag": "\"af08-65e7b39131a84-df\"",
       "file_path": "documentation/Translation/translating-text-within-your-app.md",
-      "hash": "65e86f3283f4bd8d6d56c2ee951abe8c9bbf0c02d0b77d0583ba9f5a6fe51ccc"
+      "hash": "60d199f664eb0b83266fd376578770afb70814514f55837ec22ffe4ca75b9ac0"
     },
     "https://developer.apple.com/documentation/translation/translationerror": {
       "etag": "\"3e47-65d560ad515e0-df\"",
@@ -411,9 +411,9 @@
       "hash": "a835b5b6c788193384fb0554f5293db9dad9549062992ca6d1289a701b528149"
     },
     "https://developer.apple.com/tutorials/data/documentation/translation/translating-text-within-your-app.json": {
-      "etag": "\"af10-65d560ad515e0-df\"",
+      "etag": "\"af08-65e7b39131a84-df\"",
       "file_path": "documentation/Translation/translating-text-within-your-app.md",
-      "hash": "65e86f3283f4bd8d6d56c2ee951abe8c9bbf0c02d0b77d0583ba9f5a6fe51ccc"
+      "hash": "60d199f664eb0b83266fd376578770afb70814514f55837ec22ffe4ca75b9ac0"
     },
     "https://developer.apple.com/tutorials/data/documentation/translation/translationerror.json": {
       "etag": "\"3e47-65d560ad515e0-df\"",

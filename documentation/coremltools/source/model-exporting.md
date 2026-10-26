@@ -87,7 +87,8 @@ The following example builds a simple model from scratch and exports it to gener
    model.eval()
    ```
 4. Define the example input, which is needed by exporter, and export the model.
-Run `torch.export.export` on your model with an example input, and save the resulting exported object. For an example input, you can use one sample of training or validation data, or even use randomly-generated data as shown in the following code snippet:
+
+   Run `torch.export.export` on your model with an example input, and save the resulting exported object. For an example input, you can use one sample of training or validation data, or even use randomly-generated data as shown in the following code snippet:
 
    ```
    # Example input, needed by exporter
@@ -98,6 +99,7 @@ Run `torch.export.export` on your model with an example input, and save the resu
    # Generate ExportedProgram by exporting
    exported_model = torch.export.export(model, example_input, dynamic_shapes=dynamic_shapes)
    ```
+
 5. Convert the exported model to Core ML:
 
    ```

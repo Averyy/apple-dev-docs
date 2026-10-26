@@ -10765,14 +10765,6 @@
       "file_path": "documentation/HealthKit/healthkit-variables.md",
       "hash": "62f8932dbc8d69e2ee79fab0ffb75fc99e9bc8836f623137e18a6ba1e41662d9"
     },
-    "https://developer.apple.com/tutorials/data/documentation/healthkit/healthkitui.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/healthkit/healthkitui/hkactivityringview.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/healthkit/hkactivitymovemode.json": {
       "etag": "\"7d6b-65d560879717f-df\"",
       "file_path": "documentation/HealthKit/hkactivitymovemode.md",
@@ -21190,9 +21182,12 @@
     }
   },
   "metadata": {
+    "child_modules": {
+      "healthkitui": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 4238
+    "total_pages": 4236
   }
 }

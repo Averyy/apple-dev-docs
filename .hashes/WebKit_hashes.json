@@ -15295,14 +15295,6 @@
       "file_path": "documentation/WebKit/building-a-cross-platform-web-browser.md",
       "hash": "285523c1d8a0604b11b81f52d967057dd1694754fd69556bd8ed4fa0eba3ec5d"
     },
-    "https://developer.apple.com/tutorials/data/documentation/webkit/com.apple.webkit/objc(pl)nstextfinderclient.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/webkit/com.apple.webkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/webkit/data-store-record-types.json": {
       "etag": "\"4497-659024a3932ab-df\"",
       "file_path": "documentation/WebKit/data-store-record-types.md",
@@ -30407,6 +30399,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 6081
+    "total_pages": 6079
   }
 }

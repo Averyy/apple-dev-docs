@@ -2071,9 +2071,9 @@
       "hash": "375ad280feae85664b9cbaf28c45ee0f884b9f8126568390ef1896adb865ab62"
     },
     "https://developer.apple.com/documentation/spritekit/sknode": {
-      "etag": "\"26563-65d55d080f560-df\"",
+      "etag": "\"26b15-65d757820fe45-df\"",
       "file_path": "documentation/SpriteKit/sknode.md",
-      "hash": "c9a435124e73ba6608d700518eec5b8f33f1a77579edc6cbb52c831f6b803948"
+      "hash": "a9f7c28d160c3e5c659e3303f5ac3d67ad11fa3f003f976e08402abab7bf1c26"
     },
     "https://developer.apple.com/documentation/spritekit/sknode/accessibilitychildren": {
       "etag": "\"4c89-65d55d05b7bf1-df\"",
@@ -5565,10 +5565,6 @@
       "file_path": "documentation/SpriteKit/choosing-a-spritekit-scene-renderer.md",
       "hash": "27126b43bfb62404e0c6fca8631eb6b6facb1425a9617edc4ca810752ec2e8a4"
     },
-    "https://developer.apple.com/tutorials/data/documentation/spritekit/com.apple.spritekit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/configuring-a-physics-body.json": {
       "etag": "\"4c0d-65902562961fe-df\"",
       "file_path": "documentation/SpriteKit/configuring-a-physics-body.md",
@@ -7545,9 +7541,9 @@
       "hash": "375ad280feae85664b9cbaf28c45ee0f884b9f8126568390ef1896adb865ab62"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sknode.json": {
-      "etag": "\"26563-65d55d080f560-df\"",
+      "etag": "\"26b15-65d757820fe45-df\"",
       "file_path": "documentation/SpriteKit/sknode.md",
-      "hash": "c9a435124e73ba6608d700518eec5b8f33f1a77579edc6cbb52c831f6b803948"
+      "hash": "a9f7c28d160c3e5c659e3303f5ac3d67ad11fa3f003f976e08402abab7bf1c26"
     },
     "https://developer.apple.com/tutorials/data/documentation/spritekit/sknode/accessibilitychildren.json": {
       "etag": "\"4c89-65d55d05b7bf1-df\"",
@@ -10949,6 +10945,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2189
+    "total_pages": 2188
   }
 }

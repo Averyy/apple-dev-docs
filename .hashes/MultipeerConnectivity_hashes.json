@@ -565,10 +565,6 @@
       "file_path": "documentation/MultipeerConnectivity/MultipeerConnectivity.md",
       "hash": "b807779259fe52b9a02cacdce139d5abd1410a8407444a9088c7b1362a4f33ac"
     },
-    "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/com.apple.multipeerconnectivity/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/multipeerconnectivity/kmcsessionmaximumnumberofpeers.json": {
       "etag": "\"29d4-65d5608ab7be8-df\"",
       "file_path": "documentation/MultipeerConnectivity/kmcsessionmaximumnumberofpeers.md",
@@ -1129,6 +1125,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 225
+    "total_pages": 224
   }
 }

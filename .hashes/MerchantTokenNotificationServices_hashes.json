@@ -232,6 +232,9 @@
     }
   },
   "metadata": {
+    "child_modules": {
+      "applepaymerchanttokenmanagementapi": {}
+    },
     "render": {
       "version": 1
     },

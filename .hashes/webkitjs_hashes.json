@@ -8396,7 +8396,7 @@
       "hash": "65767bd23a0ae5fc816ac60b47b7f8958963d48eeb7ffd598e00aae0582adf88"
     },
     "https://developer.apple.com/documentation/webkitjs/htmlsourceelement/2871164-sizes": {
-      "etag": "\"df4-6593d10e2cae5\"",
+      "etag": "\"df4-6593d10e2cae5-df\"",
       "file_path": "documentation/webkitjs/htmlsourceelement/api-2871164-sizes.md",
       "hash": "607a823edc0fc0cf202c6ee524df3dae358686dd279b8a39285fe39087687cd1"
     },
@@ -24550,6 +24550,61 @@
       "file_path": "documentation/webkitjs/xmldocument.md",
       "hash": "31b3589e1d8da02bec00d5809713d91787f01795dead87f3b81a29fb1ed08477"
     },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1629921-withcredentials": {
+      "etag": "\"21a5-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1629921-withcredentials.md",
+      "hash": "1a4824f9f65a582ddfc6dc8662be4a1b58882cdeda495ccf1f29746a0c929e38"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1630055-loading": {
+      "etag": "\"220d-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630055-loading.md",
+      "hash": "1eea9ed64103f5a9eab11b03a2f29c0550fade6304ec0e0c42ead21dd2a203f0"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1630343-done": {
+      "etag": "\"2203-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630343-done.md",
+      "hash": "137c7d008e226b616867d83a53005b10af6ebc7b902a6163d719f8c1ec9dde50"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1630533-overridemimetype": {
+      "etag": "\"2368-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630533-overridemimetype.md",
+      "hash": "c937e784934768575228e02b72d18a8df63726178f726a33ef1c125b510f164d"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1630628-unsent": {
+      "etag": "\"2209-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630628-unsent.md",
+      "hash": "d412afd53b79973bfdd3258419f209cb8f1571c8daf8dcf0403f8326164e64b0"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1630664-responseurl": {
+      "etag": "\"2820-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630664-responseurl.md",
+      "hash": "95c9ca775ac358c8a6a060be21c7a76a88a9283189da155f698cc5873dea94d2"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1631575-upload": {
+      "etag": "\"2453-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1631575-upload.md",
+      "hash": "ebffee393fbd671aa106e071135b4d05ef74ee9e467664866f18e82190866379"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1632988-headers_received": {
+      "etag": "\"2233-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1632988-headers_received.md",
+      "hash": "92c41d4d3e5cf977eb38cf2f89493d0a411d5d682282f1c92d682b5106a25066"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/1634462-opened": {
+      "etag": "\"2209-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1634462-opened.md",
+      "hash": "7222817bf4f6e5f8ef2f1fbe73d7a080852680a71fc8063c48d3c14bf23ec9e6"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/2871089-responsecacheisvalid": {
+      "etag": "\"26d4-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-2871089-responsecacheisvalid.md",
+      "hash": "79c63d0b1f913a726d9bf7e30632cc634392a8a0cea07b6f9321249f4d08f13c"
+    },
+    "https://developer.apple.com/documentation/webkitjs/xmlhttprequest/2871231-retrieveresponse": {
+      "etag": "\"20f7-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-2871231-retrieveresponse.md",
+      "hash": "e693039a4a20bf57d5894d0916c0920e435d7887e27afaab5e4e7b3788f489f7"
+    },
     "https://developer.apple.com/documentation/webkitjs/xmlhttprequesteventtarget": {
       "etag": "\"1c11-6593d1053ad8e-df\"",
       "file_path": "documentation/webkitjs/xmlhttprequesteventtarget.md",
@@ -33066,7 +33121,7 @@
       "hash": "65767bd23a0ae5fc816ac60b47b7f8958963d48eeb7ffd598e00aae0582adf88"
     },
     "https://developer.apple.com/tutorials/data/documentation/webkitjs/htmlsourceelement/2871164-sizes.json": {
-      "etag": "\"df4-6593d10e2cae5\"",
+      "etag": "\"df4-6593d10e2cae5-df\"",
       "file_path": "documentation/webkitjs/htmlsourceelement/api-2871164-sizes.md",
       "hash": "607a823edc0fc0cf202c6ee524df3dae358686dd279b8a39285fe39087687cd1"
     },
@@ -49224,6 +49279,61 @@
       "file_path": "documentation/webkitjs/xmldocument.md",
       "hash": "31b3589e1d8da02bec00d5809713d91787f01795dead87f3b81a29fb1ed08477"
     },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1629921-withcredentials.json": {
+      "etag": "\"21a5-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1629921-withcredentials.md",
+      "hash": "1a4824f9f65a582ddfc6dc8662be4a1b58882cdeda495ccf1f29746a0c929e38"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1630055-loading.json": {
+      "etag": "\"220d-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630055-loading.md",
+      "hash": "1eea9ed64103f5a9eab11b03a2f29c0550fade6304ec0e0c42ead21dd2a203f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1630343-done.json": {
+      "etag": "\"2203-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630343-done.md",
+      "hash": "137c7d008e226b616867d83a53005b10af6ebc7b902a6163d719f8c1ec9dde50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1630533-overridemimetype.json": {
+      "etag": "\"2368-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630533-overridemimetype.md",
+      "hash": "c937e784934768575228e02b72d18a8df63726178f726a33ef1c125b510f164d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1630628-unsent.json": {
+      "etag": "\"2209-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630628-unsent.md",
+      "hash": "d412afd53b79973bfdd3258419f209cb8f1571c8daf8dcf0403f8326164e64b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1630664-responseurl.json": {
+      "etag": "\"2820-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1630664-responseurl.md",
+      "hash": "95c9ca775ac358c8a6a060be21c7a76a88a9283189da155f698cc5873dea94d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1631575-upload.json": {
+      "etag": "\"2453-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1631575-upload.md",
+      "hash": "ebffee393fbd671aa106e071135b4d05ef74ee9e467664866f18e82190866379"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1632988-headers_received.json": {
+      "etag": "\"2233-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1632988-headers_received.md",
+      "hash": "92c41d4d3e5cf977eb38cf2f89493d0a411d5d682282f1c92d682b5106a25066"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/1634462-opened.json": {
+      "etag": "\"2209-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-1634462-opened.md",
+      "hash": "7222817bf4f6e5f8ef2f1fbe73d7a080852680a71fc8063c48d3c14bf23ec9e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/2871089-responsecacheisvalid.json": {
+      "etag": "\"26d4-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-2871089-responsecacheisvalid.md",
+      "hash": "79c63d0b1f913a726d9bf7e30632cc634392a8a0cea07b6f9321249f4d08f13c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequest/2871231-retrieveresponse.json": {
+      "etag": "\"20f7-6590231fac70a-df\"",
+      "file_path": "documentation/webkitjs/xmlhttprequest/api-2871231-retrieveresponse.md",
+      "hash": "e693039a4a20bf57d5894d0916c0920e435d7887e27afaab5e4e7b3788f489f7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/webkitjs/xmlhttprequesteventtarget.json": {
       "etag": "\"1c11-6593d1053ad8e-df\"",
       "file_path": "documentation/webkitjs/xmlhttprequesteventtarget.md",
@@ -49346,9 +49456,12 @@
     }
   },
   "metadata": {
+    "handoff_from": {
+      "tvmljs": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 9869
+    "total_pages": 9891
   }
 }

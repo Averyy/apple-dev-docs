@@ -4400,10 +4400,6 @@
       "file_path": "documentation/QuartzCore/cakeyframeanimation/values.md",
       "hash": "035cccec54fec8b3bbccf9b9c2c79dc689115395c76f58fcceaf24985648e52c"
     },
-    "https://developer.apple.com/tutorials/data/documentation/quartzcore/calayer#layer-filters.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/quartzcore/calayer.json": {
       "etag": "\"301e3-65d55e112606d-df\"",
       "file_path": "documentation/QuartzCore/calayer.md",
@@ -6759,6 +6755,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1351
+    "total_pages": 1350
   }
 }

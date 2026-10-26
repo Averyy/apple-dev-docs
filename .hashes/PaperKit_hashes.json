@@ -1765,10 +1765,6 @@
       "file_path": "documentation/PaperKit/PaperKit.md",
       "hash": "6725048a2472f8790f257af8c1ddeeaf1d5494db6678b3ff2a19c1b0612bd2b0"
     },
-    "https://developer.apple.com/tutorials/data/documentation/paperkit/com.apple.paperkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/paperkit/featureset.json": {
       "etag": "\"4d7e-65d55d0a3f131-df\"",
       "file_path": "documentation/PaperKit/featureset.md",
@@ -3529,6 +3525,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 705
+    "total_pages": 704
   }
 }

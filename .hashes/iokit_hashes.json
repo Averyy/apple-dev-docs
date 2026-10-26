@@ -570,6 +570,46 @@
       "file_path": "documentation/iokit/api-1514886-iocataloguemoduleloaded.md",
       "hash": "26bfd44e57371c01faa7c73856db7cf5adc62d2f63f134f6ff40a181d92be190"
     },
+    "https://developer.apple.com/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetasciidata": {
+      "etag": "\"3e54-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetasciidata.md",
+      "hash": "d86a99789e2533714333ac7ba8ebf6dd534866b7a4bd311d77f4c460834e6b98"
+    },
+    "https://developer.apple.com/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetbinarydata": {
+      "etag": "\"3e62-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetbinarydata.md",
+      "hash": "a33eb435f9e04ea4c8b7600b2c1045ee94b4b589da1e2adb40a5c9c9c89940b7"
+    },
+    "https://developer.apple.com/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetmask": {
+      "etag": "\"3a40-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetmask.md",
+      "hash": "ec2fd1c0d581188587b9ad0a8cd294967029508701725198f21a615873d547f2"
+    },
+    "https://developer.apple.com/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetreserved": {
+      "etag": "\"3a70-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetreserved.md",
+      "hash": "176dec591afabc2dc74b8cd03871f700f6d0c81a67f5fc3503b994f7ea336ae0"
+    },
+    "https://developer.apple.com/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetutf8data": {
+      "etag": "\"3e48-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetutf8data.md",
+      "hash": "fe48b2fe69a39cb300e30ab07e59882c5d8dce3c26b08b4f428cafc9b4593f1e"
+    },
+    "https://developer.apple.com/documentation/iokit/1572966-anonymous/kinquiry_pageb1_page_length": {
+      "etag": "\"3a3a-65b3a475d5aab-df\"",
+      "file_path": "documentation/iokit/api-1572966-anonymous/kinquiry_pageb1_page_length.md",
+      "hash": "87c9ce44059c7d77228db17b6d206c862ee0b5275da96d0c74fa6487c9f86185"
+    },
+    "https://developer.apple.com/documentation/iokit/1644133-anonymous": {
+      "etag": "\"3973-65b3a4799ff0c-df\"",
+      "file_path": "documentation/iokit/api-1644133-anonymous.md",
+      "hash": "fd7d230c820433059bd82ada447dff9917ef80c2f9e25ddfa4d8624f5c3d44e6"
+    },
+    "https://developer.apple.com/documentation/iokit/2721366-anonymous/kc0datamaxstringlen": {
+      "etag": "\"39cc-65b3a4696a745-df\"",
+      "file_path": "documentation/iokit/api-2721366-anonymous/kc0datamaxstringlen.md",
+      "hash": "649e2e73872ce3885a12f623c91227ddfb367adf26e4c1bcbfbf8f7c16510cd3"
+    },
     "https://developer.apple.com/documentation/iokit/2870065-ionotificationportsetimportancer": {
       "etag": "\"3332-65b3a4784587c-df\"",
       "file_path": "documentation/iokit/api-2870065-ionotificationportsetimportancer.md",
@@ -584,6 +624,11 @@
       "etag": "\"36ab-65b3a479780f9-df\"",
       "file_path": "documentation/iokit/api-3753260-iomainport.md",
       "hash": "63b148491d3ac7a23ceb3a41065603689c48b7990781cd1f5681e2b1ccdc94f7"
+    },
+    "https://developer.apple.com/documentation/iokit/4160764-anonymous/kiostorageunmapoptionreserved": {
+      "etag": "\"30ee-65b3a4707352b-df\"",
+      "file_path": "documentation/iokit/api-4160764-anonymous/kiostorageunmapoptionreserved.md",
+      "hash": "59965977ff658cea5aa19305eda5bc3d87c3a7177f806d28e0209be2990b9fc8"
     },
     "https://developer.apple.com/documentation/iokit/communicating_with_a_modem_on_a_serial_port": {
       "etag": "\"7da2-65b3a47f9d4cf-df\"",
@@ -779,6 +824,66 @@
       "etag": "\"290c-65b3a46d5f330-df\"",
       "file_path": "documentation/iokit/iofixed.md",
       "hash": "d0b5af2d2f38d89b594eb36bd376d8290534ec31f2a08f6f892661236400a9a5"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidcompletion/1556167-action": {
+      "etag": "\"3998-65b3a47e506ab-df\"",
+      "file_path": "documentation/iokit/iohidcompletion/api-1556167-action.md",
+      "hash": "66f7d27be9d61e8704f4750ef6c933cf8aa3fa477b19ce98c14cf654ffccaf3a"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidcompletion/1556177-target": {
+      "etag": "\"34d8-65b3a47e506ab-df\"",
+      "file_path": "documentation/iokit/iohidcompletion/api-1556177-target.md",
+      "hash": "130a6ff34b2e77f5f9f3dce7f6c287da10e4d64480604d06f7a4707d74738792"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidcompletion/1556182-parameter": {
+      "etag": "\"34fc-65b3a47e506ab-df\"",
+      "file_path": "documentation/iokit/iohidcompletion/api-1556182-parameter.md",
+      "hash": "5d5c89ca06e7c5d7b99c4374b308f84642c31066af7e3d50d8dad9b8ad4483a6"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidelementcollectiontype": {
+      "etag": "\"5be9-65b3a46fc3399-df\"",
+      "file_path": "documentation/iokit/iohidelementcollectiontype.md",
+      "hash": "a95b4273f977cea3edd43692e2c2573219a59ee602e6c34492cfc84645b34093"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidelementtype": {
+      "etag": "\"5b5d-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/iohidelementtype.md",
+      "hash": "630de1b12a98ec08dd7f51860fa3b202d453eae41f4cd04235138584b221db4e"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidoptionstype": {
+      "etag": "\"36ed-65b3a47c102d4-df\"",
+      "file_path": "documentation/iokit/iohidoptionstype.md",
+      "hash": "c6e64daa1a51f1d05f113363d79d25095de8497f4d5c1af290ce2b355dabe1b0"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidqueueoptionstype": {
+      "etag": "\"37ab-65b3a474f6326-df\"",
+      "file_path": "documentation/iokit/iohidqueueoptionstype.md",
+      "hash": "10918bce03624a5562cf4c3502830f99343542dc66e7a2b0c4be750d332ec50f"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidreporttype": {
+      "etag": "\"47e3-65b3a471f2c02-df\"",
+      "file_path": "documentation/iokit/iohidreporttype.md",
+      "hash": "8be33248730ec262a57c155818abc30b77874e10c62d4c35de15b85b78255717"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidstandardtype": {
+      "etag": "\"3b63-65b3a47e044be-df\"",
+      "file_path": "documentation/iokit/iohidstandardtype.md",
+      "hash": "9400cabd56c5cc548d0bf4f00cc8c9cd5b215ee9a749dfe8ffe318167d8bd545"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidvalueoptions": {
+      "etag": "\"313d-65b3a47f9d4cf-df\"",
+      "file_path": "documentation/iokit/iohidvalueoptions.md",
+      "hash": "50660bc2066c4dd7317d85655ab23cd74e4d4b4d5e203c555f472ec1e776485f"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidvalueoptions/kiohidvalueoptionsflagsimplerelative": {
+      "etag": "\"3022-65b3a47a11e5a-df\"",
+      "file_path": "documentation/iokit/iohidvalueoptions/kiohidvalueoptionsflagsimplerelative.md",
+      "hash": "766b5c34920ee708bfa9ad3328fc064ca350679e30884eb0980d34ca36b0c134"
+    },
+    "https://developer.apple.com/documentation/iokit/iohidvaluescaletype": {
+      "etag": "\"35e7-65b3a47c102d4-df\"",
+      "file_path": "documentation/iokit/iohidvaluescaletype.md",
+      "hash": "434e705e08dbd85f29668ce26cd6e66393a504d9ad0a7158af78a884240ed3d1"
     },
     "https://developer.apple.com/documentation/iokit/ioitemcount": {
       "etag": "\"2947-65b3a47f9d4cf-df\"",
@@ -2910,6 +3015,101 @@
       "file_path": "documentation/iokit/uext_object_t.md",
       "hash": "adbe5b07bddafd577c5126305dd6f1d622e9fc05a870c8031080cd9263b8f17c"
     },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbbosdescriptor": {
+      "etag": "\"2f26-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbbosdescriptor.md",
+      "hash": "4bdd28e87a7d35a4f6c899e9ab82d2f9375612a05f257ab822b550e5d67e366b"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbconfigurationdescheader": {
+      "etag": "\"2e54-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbconfigurationdescheader.md",
+      "hash": "fe528a68fe5e5e933dd92befd9362ae8d7fb1d3284b902838c89241682841b93"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbconfigurationdescriptor": {
+      "etag": "\"3bf4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbconfigurationdescriptor.md",
+      "hash": "fd217ef8f8e72ff2771311ebe939d340da58f92997192aeebc59963fbb03bbf0"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdescriptorheader": {
+      "etag": "\"2c76-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdescriptorheader.md",
+      "hash": "26579661d04d331049dd0c03c9a25e4fad6c72c546cb264b58bf94a70fc86d14"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdevicecapabilitycontainerid": {
+      "etag": "\"31cc-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilitycontainerid.md",
+      "hash": "eccec604ab379fe9fc7e039a2dbb32e93f8d7a807f5f89026fb5e4dd74a9c407"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdevicecapabilitydescriptorheader": {
+      "etag": "\"308a-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilitydescriptorheader.md",
+      "hash": "24da031474f1de047f35391bcd4ec4fb52e471ad5a86b37bd280d1f84afe96ff"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdevicecapabilitysuperspeedusb": {
+      "etag": "\"3756-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilitysuperspeedusb.md",
+      "hash": "e84d4d8bdcbdd0ec380c480b977a9037a6bfca8d44ef6a8ecfd6d49422bc2f16"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdevicecapabilityusb2extension": {
+      "etag": "\"3042-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilityusb2extension.md",
+      "hash": "6598869cf220beb0550dbcfbed03f6acee3f18f3889b72141d180d83e36a7402"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdevicedescriptor": {
+      "etag": "\"44ce-65b3a4781c0cf-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicedescriptor.md",
+      "hash": "87d28580eea740026f7f9170f69740be23a3a55900f41a00c8d62d7365f2a695"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdevicequalifierdescriptor": {
+      "etag": "\"3cda-65b3a4781c0cf-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicequalifierdescriptor.md",
+      "hash": "2e6b368cc199992f00bd7fd3f13a17711c0cafc89a9cbcef2466ef509dd60fec"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbdfudescriptor": {
+      "etag": "\"3544-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdfudescriptor.md",
+      "hash": "5f093183f7c2d6de1545eb0a567accb6131f975b1cb60dac06083382ca2b0e2c"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbendpointdescriptor": {
+      "etag": "\"36fa-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbendpointdescriptor.md",
+      "hash": "6c39bca0679a807d3265e24a992879dabce814e16aa842143af48823b8436d84"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbhiddescriptor": {
+      "etag": "\"3af4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbhiddescriptor.md",
+      "hash": "9f9410a092de519132b1bda2327922c0a8362420a76a8932234ab7ece9b2dcea"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbhidreportdesc": {
+      "etag": "\"3270-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbhidreportdesc.md",
+      "hash": "e5814973a29c8abea8f0d97333d31d3528d8f6a6e19c32055e8896d94769114e"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbinterfaceassociationdescriptor": {
+      "etag": "\"3bd4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbinterfaceassociationdescriptor.md",
+      "hash": "de32b3ebc253227d3d6de890afc23e7a94b40a3a23f37cb9040581eea0b3430d"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbinterfacedescriptor": {
+      "etag": "\"3c7e-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbinterfacedescriptor.md",
+      "hash": "4d5a53699cc92a8587c0abacbb4b26b23feb0f517d56b0bcb705a5a1e876f29b"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousblowlatencyisocframe": {
+      "etag": "\"4a01-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousblowlatencyisocframe.md",
+      "hash": "8c99d92879e1b35eb30ccbfcf811276aace9783663865c5a05d15ff33dc3db1f"
+    },
+    "https://developer.apple.com/documentation/iokit/usb_h_user-space/iousbsuperspeedendpointcompaniondescriptor": {
+      "etag": "\"36c4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbsuperspeedendpointcompaniondescriptor.md",
+      "hash": "c96abc73727201bf6e97d797807ebcb7314f20e428be7010e577ffcab8e05967"
+    },
+    "https://developer.apple.com/documentation/iokit/usbdeviceinformationbits/kusbinformationdeviceisonthunderbolt": {
+      "etag": "\"32d8-65b3a479e947d-df\"",
+      "file_path": "documentation/iokit/usbdeviceinformationbits/kusbinformationdeviceisonthunderbolt.md",
+      "hash": "287378167b7985cb08b20e064fb5887b443096b0c637d3dd63abfab789c56686"
+    },
     "https://developer.apple.com/tutorials/data/documentation/iokit.json": {
       "etag": "\"1c978-65b3a480d9732-df\"",
       "file_path": "documentation/iokit/iokit.md",
@@ -3480,6 +3680,46 @@
       "file_path": "documentation/iokit/api-1514886-iocataloguemoduleloaded.md",
       "hash": "26bfd44e57371c01faa7c73856db7cf5adc62d2f63f134f6ff40a181d92be190"
     },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetasciidata.json": {
+      "etag": "\"3e54-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetasciidata.md",
+      "hash": "d86a99789e2533714333ac7ba8ebf6dd534866b7a4bd311d77f4c460834e6b98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetbinarydata.json": {
+      "etag": "\"3e62-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetbinarydata.md",
+      "hash": "a33eb435f9e04ea4c8b7600b2c1045ee94b4b589da1e2adb40a5c9c9c89940b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetmask.json": {
+      "etag": "\"3a40-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetmask.md",
+      "hash": "ec2fd1c0d581188587b9ad0a8cd294967029508701725198f21a615873d547f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetreserved.json": {
+      "etag": "\"3a70-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetreserved.md",
+      "hash": "176dec591afabc2dc74b8cd03871f700f6d0c81a67f5fc3503b994f7ea336ae0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/1572909-anonymous/kinquiry_page83_codesetutf8data.json": {
+      "etag": "\"3e48-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/api-1572909-anonymous/kinquiry_page83_codesetutf8data.md",
+      "hash": "fe48b2fe69a39cb300e30ab07e59882c5d8dce3c26b08b4f428cafc9b4593f1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/1572966-anonymous/kinquiry_pageb1_page_length.json": {
+      "etag": "\"3a3a-65b3a475d5aab-df\"",
+      "file_path": "documentation/iokit/api-1572966-anonymous/kinquiry_pageb1_page_length.md",
+      "hash": "87c9ce44059c7d77228db17b6d206c862ee0b5275da96d0c74fa6487c9f86185"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/1644133-anonymous.json": {
+      "etag": "\"3973-65b3a4799ff0c-df\"",
+      "file_path": "documentation/iokit/api-1644133-anonymous.md",
+      "hash": "fd7d230c820433059bd82ada447dff9917ef80c2f9e25ddfa4d8624f5c3d44e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/2721366-anonymous/kc0datamaxstringlen.json": {
+      "etag": "\"39cc-65b3a4696a745-df\"",
+      "file_path": "documentation/iokit/api-2721366-anonymous/kc0datamaxstringlen.md",
+      "hash": "649e2e73872ce3885a12f623c91227ddfb367adf26e4c1bcbfbf8f7c16510cd3"
+    },
     "https://developer.apple.com/tutorials/data/documentation/iokit/2870065-ionotificationportsetimportancer.json": {
       "etag": "\"3332-65b3a4784587c-df\"",
       "file_path": "documentation/iokit/api-2870065-ionotificationportsetimportancer.md",
@@ -3494,6 +3734,11 @@
       "etag": "\"36ab-65b3a479780f9-df\"",
       "file_path": "documentation/iokit/api-3753260-iomainport.md",
       "hash": "63b148491d3ac7a23ceb3a41065603689c48b7990781cd1f5681e2b1ccdc94f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/4160764-anonymous/kiostorageunmapoptionreserved.json": {
+      "etag": "\"30ee-65b3a4707352b-df\"",
+      "file_path": "documentation/iokit/api-4160764-anonymous/kiostorageunmapoptionreserved.md",
+      "hash": "59965977ff658cea5aa19305eda5bc3d87c3a7177f806d28e0209be2990b9fc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/iokit/communicating_with_a_modem_on_a_serial_port.json": {
       "etag": "\"7da2-65b3a47f9d4cf-df\"",
@@ -3689,6 +3934,66 @@
       "etag": "\"290c-65b3a46d5f330-df\"",
       "file_path": "documentation/iokit/iofixed.md",
       "hash": "d0b5af2d2f38d89b594eb36bd376d8290534ec31f2a08f6f892661236400a9a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidcompletion/1556167-action.json": {
+      "etag": "\"3998-65b3a47e506ab-df\"",
+      "file_path": "documentation/iokit/iohidcompletion/api-1556167-action.md",
+      "hash": "66f7d27be9d61e8704f4750ef6c933cf8aa3fa477b19ce98c14cf654ffccaf3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidcompletion/1556177-target.json": {
+      "etag": "\"34d8-65b3a47e506ab-df\"",
+      "file_path": "documentation/iokit/iohidcompletion/api-1556177-target.md",
+      "hash": "130a6ff34b2e77f5f9f3dce7f6c287da10e4d64480604d06f7a4707d74738792"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidcompletion/1556182-parameter.json": {
+      "etag": "\"34fc-65b3a47e506ab-df\"",
+      "file_path": "documentation/iokit/iohidcompletion/api-1556182-parameter.md",
+      "hash": "5d5c89ca06e7c5d7b99c4374b308f84642c31066af7e3d50d8dad9b8ad4483a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidelementcollectiontype.json": {
+      "etag": "\"5be9-65b3a46fc3399-df\"",
+      "file_path": "documentation/iokit/iohidelementcollectiontype.md",
+      "hash": "a95b4273f977cea3edd43692e2c2573219a59ee602e6c34492cfc84645b34093"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidelementtype.json": {
+      "etag": "\"5b5d-65b3a47b5960c-df\"",
+      "file_path": "documentation/iokit/iohidelementtype.md",
+      "hash": "630de1b12a98ec08dd7f51860fa3b202d453eae41f4cd04235138584b221db4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidoptionstype.json": {
+      "etag": "\"36ed-65b3a47c102d4-df\"",
+      "file_path": "documentation/iokit/iohidoptionstype.md",
+      "hash": "c6e64daa1a51f1d05f113363d79d25095de8497f4d5c1af290ce2b355dabe1b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidqueueoptionstype.json": {
+      "etag": "\"37ab-65b3a474f6326-df\"",
+      "file_path": "documentation/iokit/iohidqueueoptionstype.md",
+      "hash": "10918bce03624a5562cf4c3502830f99343542dc66e7a2b0c4be750d332ec50f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidreporttype.json": {
+      "etag": "\"47e3-65b3a471f2c02-df\"",
+      "file_path": "documentation/iokit/iohidreporttype.md",
+      "hash": "8be33248730ec262a57c155818abc30b77874e10c62d4c35de15b85b78255717"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidstandardtype.json": {
+      "etag": "\"3b63-65b3a47e044be-df\"",
+      "file_path": "documentation/iokit/iohidstandardtype.md",
+      "hash": "9400cabd56c5cc548d0bf4f00cc8c9cd5b215ee9a749dfe8ffe318167d8bd545"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidvalueoptions.json": {
+      "etag": "\"313d-65b3a47f9d4cf-df\"",
+      "file_path": "documentation/iokit/iohidvalueoptions.md",
+      "hash": "50660bc2066c4dd7317d85655ab23cd74e4d4b4d5e203c555f472ec1e776485f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidvalueoptions/kiohidvalueoptionsflagsimplerelative.json": {
+      "etag": "\"3022-65b3a47a11e5a-df\"",
+      "file_path": "documentation/iokit/iohidvalueoptions/kiohidvalueoptionsflagsimplerelative.md",
+      "hash": "766b5c34920ee708bfa9ad3328fc064ca350679e30884eb0980d34ca36b0c134"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/iohidvaluescaletype.json": {
+      "etag": "\"35e7-65b3a47c102d4-df\"",
+      "file_path": "documentation/iokit/iohidvaluescaletype.md",
+      "hash": "434e705e08dbd85f29668ce26cd6e66393a504d9ad0a7158af78a884240ed3d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iokit/ioitemcount.json": {
       "etag": "\"2947-65b3a47f9d4cf-df\"",
@@ -5819,12 +6124,110 @@
       "etag": "\"2bc6-65b3a473bffb6-df\"",
       "file_path": "documentation/iokit/uext_object_t.md",
       "hash": "adbe5b07bddafd577c5126305dd6f1d622e9fc05a870c8031080cd9263b8f17c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbbosdescriptor.json": {
+      "etag": "\"2f26-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbbosdescriptor.md",
+      "hash": "4bdd28e87a7d35a4f6c899e9ab82d2f9375612a05f257ab822b550e5d67e366b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbconfigurationdescheader.json": {
+      "etag": "\"2e54-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbconfigurationdescheader.md",
+      "hash": "fe528a68fe5e5e933dd92befd9362ae8d7fb1d3284b902838c89241682841b93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbconfigurationdescriptor.json": {
+      "etag": "\"3bf4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbconfigurationdescriptor.md",
+      "hash": "fd217ef8f8e72ff2771311ebe939d340da58f92997192aeebc59963fbb03bbf0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdescriptorheader.json": {
+      "etag": "\"2c76-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdescriptorheader.md",
+      "hash": "26579661d04d331049dd0c03c9a25e4fad6c72c546cb264b58bf94a70fc86d14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdevicecapabilitycontainerid.json": {
+      "etag": "\"31cc-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilitycontainerid.md",
+      "hash": "eccec604ab379fe9fc7e039a2dbb32e93f8d7a807f5f89026fb5e4dd74a9c407"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdevicecapabilitydescriptorheader.json": {
+      "etag": "\"308a-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilitydescriptorheader.md",
+      "hash": "24da031474f1de047f35391bcd4ec4fb52e471ad5a86b37bd280d1f84afe96ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdevicecapabilitysuperspeedusb.json": {
+      "etag": "\"3756-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilitysuperspeedusb.md",
+      "hash": "e84d4d8bdcbdd0ec380c480b977a9037a6bfca8d44ef6a8ecfd6d49422bc2f16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdevicecapabilityusb2extension.json": {
+      "etag": "\"3042-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicecapabilityusb2extension.md",
+      "hash": "6598869cf220beb0550dbcfbed03f6acee3f18f3889b72141d180d83e36a7402"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdevicedescriptor.json": {
+      "etag": "\"44ce-65b3a4781c0cf-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicedescriptor.md",
+      "hash": "87d28580eea740026f7f9170f69740be23a3a55900f41a00c8d62d7365f2a695"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdevicequalifierdescriptor.json": {
+      "etag": "\"3cda-65b3a4781c0cf-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdevicequalifierdescriptor.md",
+      "hash": "2e6b368cc199992f00bd7fd3f13a17711c0cafc89a9cbcef2466ef509dd60fec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbdfudescriptor.json": {
+      "etag": "\"3544-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbdfudescriptor.md",
+      "hash": "5f093183f7c2d6de1545eb0a567accb6131f975b1cb60dac06083382ca2b0e2c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbendpointdescriptor.json": {
+      "etag": "\"36fa-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbendpointdescriptor.md",
+      "hash": "6c39bca0679a807d3265e24a992879dabce814e16aa842143af48823b8436d84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbhiddescriptor.json": {
+      "etag": "\"3af4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbhiddescriptor.md",
+      "hash": "9f9410a092de519132b1bda2327922c0a8362420a76a8932234ab7ece9b2dcea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbhidreportdesc.json": {
+      "etag": "\"3270-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbhidreportdesc.md",
+      "hash": "e5814973a29c8abea8f0d97333d31d3528d8f6a6e19c32055e8896d94769114e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbinterfaceassociationdescriptor.json": {
+      "etag": "\"3bd4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbinterfaceassociationdescriptor.md",
+      "hash": "de32b3ebc253227d3d6de890afc23e7a94b40a3a23f37cb9040581eea0b3430d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbinterfacedescriptor.json": {
+      "etag": "\"3c7e-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbinterfacedescriptor.md",
+      "hash": "4d5a53699cc92a8587c0abacbb4b26b23feb0f517d56b0bcb705a5a1e876f29b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousblowlatencyisocframe.json": {
+      "etag": "\"4a01-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousblowlatencyisocframe.md",
+      "hash": "8c99d92879e1b35eb30ccbfcf811276aace9783663865c5a05d15ff33dc3db1f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usb_h_user-space/iousbsuperspeedendpointcompaniondescriptor.json": {
+      "etag": "\"36c4-65b3a477a7b63-df\"",
+      "file_path": "documentation/iokit/usb_h_user-space/iousbsuperspeedendpointcompaniondescriptor.md",
+      "hash": "c96abc73727201bf6e97d797807ebcb7314f20e428be7010e577ffcab8e05967"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/iokit/usbdeviceinformationbits/kusbinformationdeviceisonthunderbolt.json": {
+      "etag": "\"32d8-65b3a479e947d-df\"",
+      "file_path": "documentation/iokit/usbdeviceinformationbits/kusbinformationdeviceisonthunderbolt.md",
+      "hash": "287378167b7985cb08b20e064fb5887b443096b0c637d3dd63abfab789c56686"
     }
   },
   "metadata": {
+    "handoff_from": {
+      "kernel": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 1164
+    "total_pages": 1244
   }
 }

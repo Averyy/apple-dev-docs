@@ -931,7 +931,7 @@
       "hash": "11b5edf5e8a37dabdf29fd91194d203f6d9f6bdd962489d471361febb0c2e3a5"
     },
     "https://developer.apple.com/documentation/opengles/gl_compressed_rgba_astc_12x12_khr": {
-      "etag": "\"1731-65d55b3f15c5a-df\"",
+      "etag": "\"1731-65d55b3f15c5a\"",
       "file_path": "documentation/OpenGLES/gl_compressed_rgba_astc_12x12_khr.md",
       "hash": "4b016befd1814fd3972e42148fdb1dfe7f4d3e0b11ee7c25f753725160b0724d"
     },
@@ -8891,7 +8891,7 @@
       "hash": "11b5edf5e8a37dabdf29fd91194d203f6d9f6bdd962489d471361febb0c2e3a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/opengles/gl_compressed_rgba_astc_12x12_khr.json": {
-      "etag": "\"1731-65d55b3f15c5a-df\"",
+      "etag": "\"1731-65d55b3f15c5a\"",
       "file_path": "documentation/OpenGLES/gl_compressed_rgba_astc_12x12_khr.md",
       "hash": "4b016befd1814fd3972e42148fdb1dfe7f4d3e0b11ee7c25f753725160b0724d"
     },

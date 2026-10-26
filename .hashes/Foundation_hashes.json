@@ -38724,7 +38724,7 @@
       "hash": "03add6c72c2992d2f9edacd22dd241a6869ecc8f2fc01df84a8454d95380d36e"
     },
     "https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/avassettracksegmentsdidchange": {
-      "etag": "\"7dec-65d560fc5d6c2-df\"",
+      "etag": "\"7dec-65d560fc5d6c2\"",
       "file_path": "documentation/Foundation/nsnotification/name-swift.struct/avassettracksegmentsdidchange.md",
       "hash": "c656514bfcdfc8fbe08619793d9b6a8afc7ef98b6d95d929af8abf0d74afbbfa"
     },
@@ -73196,26 +73196,6 @@
       "file_path": "documentation/Foundation/date/minuseq(_,_).md",
       "hash": "c0a78190de08fe2dc22023f328f8ecf8584d8f7f5b01b319bcd38dd2bed885ef"
     },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/date/...(_:)-5kkdg.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/date/...(_:)-6kfkw.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/date/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/date/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/date/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/foundation/date/==(_:_:).json": {
       "etag": "\"2f4b-65d560e8077d5-df\"",
       "file_path": "documentation/Foundation/date/eqeq(_,_).md",
@@ -85564,26 +85544,6 @@
       "etag": "\"4803-65d560e48bf99-df\"",
       "file_path": "documentation/Foundation/measurement/minus(_,_)-2nnoy.md",
       "hash": "18638ae70682ec92fa43f21fcf67e08bc1589d05022b6e9c565ebedd21448e69"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/measurement/...(_:)-2o5x1.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/measurement/...(_:)-378b4.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/measurement/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/measurement/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/foundation/measurement/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/measurement/==(_:_:).json": {
       "etag": "\"274e-65d560e47254c-df\"",
@@ -103566,7 +103526,7 @@
       "hash": "03add6c72c2992d2f9edacd22dd241a6869ecc8f2fc01df84a8454d95380d36e"
     },
     "https://developer.apple.com/tutorials/data/documentation/foundation/nsnotification/name-swift.struct/avassettracksegmentsdidchange.json": {
-      "etag": "\"7dec-65d560fc5d6c2-df\"",
+      "etag": "\"7dec-65d560fc5d6c2\"",
       "file_path": "documentation/Foundation/nsnotification/name-swift.struct/avassettracksegmentsdidchange.md",
       "hash": "c656514bfcdfc8fbe08619793d9b6a8afc7ef98b6d95d929af8abf0d74afbbfa"
     },
@@ -129645,6 +129605,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 25931
+    "total_pages": 25921
   }
 }

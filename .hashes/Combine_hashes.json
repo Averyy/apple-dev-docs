@@ -5840,26 +5840,6 @@
       "file_path": "documentation/Combine/immediatescheduler/schedulertimetype.md",
       "hash": "2504f3ea7305b8c004e5ac19286e68fcb16fff8d73c29716719a09fb09f8b0cd"
     },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/...(_:)-5ai2g.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/...(_:)-6wy1j.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/advanced(by:).json": {
       "etag": "\"29ef-65d55e9a915b5-df\"",
       "file_path": "documentation/Combine/immediatescheduler/schedulertimetype/advanced(by).md",
@@ -5874,26 +5854,6 @@
       "etag": "\"65d4-65d55e9a915b5-df\"",
       "file_path": "documentation/Combine/immediatescheduler/schedulertimetype/stride.md",
       "hash": "9395771b744850777382d80df8b0576de4c903d2fbb566779123b0d3b6c7b501"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/stride/...(_:)-3ep4j.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/stride/...(_:)-4auj9.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/stride/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/stride/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/stride/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/combine/immediatescheduler/schedulertimetype/stride/floatliteraltype.json": {
       "etag": "\"213d-65d55e9a915b5-df\"",
@@ -10825,26 +10785,6 @@
       "file_path": "documentation/Combine/subscribers/demand/minuseq(_,_)-9pwnc.md",
       "hash": "519e0b9f92ffd7c9545834c2a32853d549c12d11f5ad362dec2dec3a9700431c"
     },
-    "https://developer.apple.com/tutorials/data/documentation/combine/subscribers/demand/...(_:)-3qgos.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/subscribers/demand/...(_:)-kb35.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/subscribers/demand/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/subscribers/demand/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/combine/subscribers/demand/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/combine/subscribers/demand/==(_:_:)-4oy8i.json": {
       "etag": "\"680a-65d55e9a915b5-df\"",
       "file_path": "documentation/Combine/subscribers/demand/eqeq(_,_)-4oy8i.md",
@@ -11025,6 +10965,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2225
+    "total_pages": 2210
   }
 }

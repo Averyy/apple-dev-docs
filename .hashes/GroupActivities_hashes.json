@@ -1289,10 +1289,6 @@
       "file_path": "documentation/GroupActivities/building-a-guessing-game-for-visionos.md",
       "hash": "310d98e53e5414fa9735445a8a9dad2d5d4f9759483bf4f58911981ca2e00e0f"
     },
-    "https://developer.apple.com/tutorials/data/documentation/groupactivities/com.apple.groupactivities/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/groupactivities/configure-your-app-for-sharing-with-people-nearby.json": {
       "etag": "\"9979-65d61987b77ba-df\"",
       "file_path": "documentation/GroupActivities/configure-your-app-for-sharing-with-people-nearby.md",
@@ -2517,6 +2513,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 503
+    "total_pages": 502
   }
 }

@@ -5,6 +5,11 @@
       "file_path": "documentation/VideoSubscriberAccount/VideoSubscriberAccount.md",
       "hash": "bddf7c8d0943b756699f05418d784b2fa8e6ea685684d7a123239ecfdd17af64"
     },
+    "https://developer.apple.com/documentation/videosubscriberaccount/authorizing-api-calls-using-bearer-tokens": {
+      "etag": "\"3188-65d55d434ea50-df\"",
+      "file_path": "documentation/VideoSubscriberAccount/authorizing-api-calls-using-bearer-tokens.md",
+      "hash": "30e0541530c7df8ec95f3d9717e40a4dbb1f36cfa98346f69c0407dbf6f0ebb7"
+    },
     "https://developer.apple.com/documentation/videosubscriberaccount/signing-people-in-to-media-apps-automatically": {
       "etag": "\"7a5e-65d55d4319e92-df\"",
       "file_path": "documentation/VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md",
@@ -695,6 +700,11 @@
       "file_path": "documentation/VideoSubscriberAccount/VideoSubscriberAccount.md",
       "hash": "bddf7c8d0943b756699f05418d784b2fa8e6ea685684d7a123239ecfdd17af64"
     },
+    "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/authorizing-api-calls-using-bearer-tokens.json": {
+      "etag": "\"3188-65d55d434ea50-df\"",
+      "file_path": "documentation/VideoSubscriberAccount/authorizing-api-calls-using-bearer-tokens.md",
+      "hash": "30e0541530c7df8ec95f3d9717e40a4dbb1f36cfa98346f69c0407dbf6f0ebb7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/videosubscriberaccount/signing-people-in-to-media-apps-automatically.json": {
       "etag": "\"7a5e-65d55d4319e92-df\"",
       "file_path": "documentation/VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md",
@@ -1382,9 +1392,12 @@
     }
   },
   "metadata": {
+    "handoff_from": {
+      "automaticsigninapi": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 276
+    "total_pages": 278
   }
 }

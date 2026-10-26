@@ -1,0 +1,138 @@
+{
+  "hashes": {
+    "https://developer.apple.com/documentation/signinwithapplerestapi": {
+      "etag": "\"427b-6590226dbbad7-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md",
+      "hash": "b4ea6ea6ed291c665bf7c6d1f337502f5c821d83e4f6de205afe8d2b0a38a55b"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/errorresponse": {
+      "etag": "\"1de6-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/errorresponse.md",
+      "hash": "7abf4a9271d662a3e2b04b06d2d9f0c3a4aa3062c3d4ff14e319064194ba7522"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/fetch-apple's-public-key-for-verifying-token-signature": {
+      "etag": "\"27fb-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/fetch-apples-public-key-for-verifying-token-signature.md",
+      "hash": "2439fcb781dab7a3f22ad46c80f634fe73504bdc93c8bca11c11af11731de5bf"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens": {
+      "etag": "\"4805-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/generate-and-validate-tokens.md",
+      "hash": "3d320b4e86a4db1a2ed25c6a374aa506b2c2d5db32cb1b5e0c98cd5047350918"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-contains-just-the-apple-logo.": {
+      "etag": "\"22ad-6590226dc547a-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-contains-just-the-apple-logo.md",
+      "hash": "57b49396fe11c90e4c76a2a20a47a6e6822755ca6e5fb635339d71c803403f2a"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-is-center-aligned.": {
+      "etag": "\"2722-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-is-center-aligned.md",
+      "hash": "8005e0a4fb9cbce5c8e0d3e30c40885aa46cb99adb313006aeda3f9b077283fc"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-is-left-aligned.": {
+      "etag": "\"350a-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-is-left-aligned.md",
+      "hash": "e334ac541d16f5d5d8b262f9bbe7eb7813f5ba46cf324690fd2365f00a3c3f47"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/jwkset": {
+      "etag": "\"15b0-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/jwkset.md",
+      "hash": "514519a788fc960d733d323b16f3d6a39d4d56ebe251523aa5080ddbfdee8318"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/jwkset/keys-data.dictionary": {
+      "etag": "\"1337-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/jwkset/keys-data.dictionary.md",
+      "hash": "9d903a9cf136ef05722f843849d3d6d632068c7956c778fae7bcf8f3b6adb506"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/request-an-authorization-to-the-sign-in-with-apple-server.": {
+      "etag": "\"514f-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/request-an-authorization-to-the-sign-in-with-apple-server.md",
+      "hash": "141fdc640e0d0bde1c270513c15ae86c63638ea1c760caed65988920729d5b3a"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/revoke-tokens": {
+      "etag": "\"2b3a-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/revoke-tokens.md",
+      "hash": "127e58869c8e12927ab705efce8084a9588d8ff12a00acff224a44498142ae01"
+    },
+    "https://developer.apple.com/documentation/signinwithapplerestapi/tokenresponse": {
+      "etag": "\"2a2a-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/tokenresponse.md",
+      "hash": "b9449a2c56227e7a84bdd3ec4acb9d777c8c4a258cfe27ad70d43f4f8049016e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi.json": {
+      "etag": "\"427b-6590226dbbad7-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/SigninwithAppleRESTAPI.md",
+      "hash": "b4ea6ea6ed291c665bf7c6d1f337502f5c821d83e4f6de205afe8d2b0a38a55b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/errorresponse.json": {
+      "etag": "\"1de6-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/errorresponse.md",
+      "hash": "7abf4a9271d662a3e2b04b06d2d9f0c3a4aa3062c3d4ff14e319064194ba7522"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/fetch-apple's-public-key-for-verifying-token-signature.json": {
+      "etag": "\"27fb-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/fetch-apples-public-key-for-verifying-token-signature.md",
+      "hash": "2439fcb781dab7a3f22ad46c80f634fe73504bdc93c8bca11c11af11731de5bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/generate-and-validate-tokens.json": {
+      "etag": "\"4805-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/generate-and-validate-tokens.md",
+      "hash": "3d320b4e86a4db1a2ed25c6a374aa506b2c2d5db32cb1b5e0c98cd5047350918"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-contains-just-the-apple-logo..json": {
+      "etag": "\"22ad-6590226dc547a-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-contains-just-the-apple-logo.md",
+      "hash": "57b49396fe11c90e4c76a2a20a47a6e6822755ca6e5fb635339d71c803403f2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-is-center-aligned..json": {
+      "etag": "\"2722-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-is-center-aligned.md",
+      "hash": "8005e0a4fb9cbce5c8e0d3e30c40885aa46cb99adb313006aeda3f9b077283fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/get-a-sign-in-with-apple-button-that-is-left-aligned..json": {
+      "etag": "\"350a-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/get-a-sign-in-with-apple-button-that-is-left-aligned.md",
+      "hash": "e334ac541d16f5d5d8b262f9bbe7eb7813f5ba46cf324690fd2365f00a3c3f47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/jwkset.json": {
+      "etag": "\"15b0-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/jwkset.md",
+      "hash": "514519a788fc960d733d323b16f3d6a39d4d56ebe251523aa5080ddbfdee8318"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/jwkset/keys-data.dictionary.json": {
+      "etag": "\"1337-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/jwkset/keys-data.dictionary.md",
+      "hash": "9d903a9cf136ef05722f843849d3d6d632068c7956c778fae7bcf8f3b6adb506"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/request-an-authorization-to-the-sign-in-with-apple-server..json": {
+      "etag": "\"514f-65d55a5997e4c-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/request-an-authorization-to-the-sign-in-with-apple-server.md",
+      "hash": "141fdc640e0d0bde1c270513c15ae86c63638ea1c760caed65988920729d5b3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/revoke-tokens.json": {
+      "etag": "\"2b3a-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/revoke-tokens.md",
+      "hash": "127e58869c8e12927ab705efce8084a9588d8ff12a00acff224a44498142ae01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/signinwithapplerestapi/tokenresponse.json": {
+      "etag": "\"2a2a-65d55a5989dbb-df\"",
+      "file_path": "documentation/SigninwithAppleRESTAPI/tokenresponse.md",
+      "hash": "b9449a2c56227e7a84bdd3ec4acb9d777c8c4a258cfe27ad70d43f4f8049016e"
+    }
+  },
+  "metadata": {
+    "module": {
+      "bundle": "com.apple.signinwithapple",
+      "parents": {
+        "signinwithapple": {
+          "unlinked_clean_runs": 0
+        }
+      }
+    },
+    "render": {
+      "version": 1
+    },
+    "total_pages": 24
+  }
+}

@@ -3556,7 +3556,7 @@
       "hash": "e7ec682aea2a02140884a008a7ac52fa230365e5e24f5324ce6f7bd7ca9f05d1"
     },
     "https://developer.apple.com/documentation/devicemanagement/managementorganizationinformation": {
-      "etag": "\"1fb8-65d55a33e7991-df\"",
+      "etag": "\"1fb8-65d55a33e7991\"",
       "file_path": "documentation/DeviceManagement/managementorganizationinformation.md",
       "hash": "06bd6eb65e853dc47a9c22897f06306d8a4dd0a6c450e0173d099aa898209954"
     },
@@ -10656,7 +10656,7 @@
       "hash": "e7ec682aea2a02140884a008a7ac52fa230365e5e24f5324ce6f7bd7ca9f05d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/managementorganizationinformation.json": {
-      "etag": "\"1fb8-65d55a33e7991-df\"",
+      "etag": "\"1fb8-65d55a33e7991\"",
       "file_path": "documentation/DeviceManagement/managementorganizationinformation.md",
       "hash": "06bd6eb65e853dc47a9c22897f06306d8a4dd0a6c450e0173d099aa898209954"
     },

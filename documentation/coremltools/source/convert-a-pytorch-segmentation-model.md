@@ -155,17 +155,20 @@ Follow these steps:
    )
    ```
 
-Note
-This example includes a name for the input to make it easier to construct the Core ML model’s input dictionary. To learn more about input options, see [Flexible Input Shapes](flexible-inputs.md).
+   Note
 
-or
+   This example includes a name for the input to make it easier to construct the Core ML model’s input dictionary. To learn more about input options, see [Flexible Input Shapes](flexible-inputs.md).
+
+   or
 
    ```
    mlmodel_from_export = ct.convert(exported_program)
    ```
 
-Note
-For torch.export, the input name is inherited from the torch model. As of Core ML Tools 8.0, the input name cannot be customized yet.
+   Note
+
+   For torch.export, the input name is inherited from the torch model. As of Core ML Tools 8.0, the input name cannot be customized yet.
+
 2. Save the ML program using the `.mlpackage` extension:
 
    ```

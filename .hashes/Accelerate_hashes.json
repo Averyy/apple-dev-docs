@@ -1480,6 +1480,11 @@
       "file_path": "documentation/Accelerate/bnns/fusedconvolutionnormalizationlayer.md",
       "hash": "fcb55c8650f4627bcaa3d56ba5440e73d648b88020317935b6c30e76e1c5c301"
     },
+    "https://developer.apple.com/documentation/accelerate/bnns/fusedconvolutionnormalizationlayer/init(input:output:convolutionweights:convolutionbias:convolutionstride:convolutiondilationstride:convolutionpadding:normalization:normalizationbeta:normalizationgamma:normalizationmomentum:normalizationepsilon:normalizationactivation:filter-30cwy": {
+      "etag": "\"6736-65d560e910dd6-df\"",
+      "file_path": "documentation/Accelerate/bnns/fusedconvolutionnormalizationlayer/init(input_output_convolutionweights_convolutionbias_convolutionstride_convolutiondilationstride_convolutionpadding_normalization_normalizationbeta_normalizationgamma_normalizationmomentum_normalizationepsilon_normaliz-2503b4c0.md",
+      "hash": "2b42e70a6eca63ab06fdbfae1464e33df6798c3a1426fb48b76c4af84fe4b06c"
+    },
     "https://developer.apple.com/documentation/accelerate/bnns/fusedconvolutionparameters": {
       "etag": "\"4db5-65d560ea01524-df\"",
       "file_path": "documentation/Accelerate/bnns/fusedconvolutionparameters.md",
@@ -7149,6 +7154,11 @@
       "etag": "\"72c6-65d560f231355-df\"",
       "file_path": "documentation/Accelerate/bnnslayerparameterslossyolo/i_desc.md",
       "hash": "af27a43ccf8154fe31f66c0f59f933efd6f766837eb3c207e5f49023d5d29d68"
+    },
+    "https://developer.apple.com/documentation/accelerate/bnnslayerparameterslossyolo/init(function:i_desc:o_desc:reduction:huber_delta:number_of_grid_columns:number_of_grid_rows:number_of_anchor_boxes:anchor_box_size:rescore:scale_xy:scale_wh:scale_object:scale_no_object:scale_classification:object_minimum_iou:no_object_max-4sykc": {
+      "etag": "\"6f2e-65d560f20902f-df\"",
+      "file_path": "documentation/Accelerate/bnnslayerparameterslossyolo/init(function_i_desc_o_desc_reduction_huber_delta_number_of_grid_columns_number_of_grid_rows_number_of_anchor_boxes_anchor_box_size_rescore_scale_xy_scale_wh_scale_object_scale_no_object_scale_classification_object_min-92e4a328.md",
+      "hash": "6691ffec16d8d803affbd458cb68f70131e516f3e88cb4369dd11dc3cf1dfbfb"
     },
     "https://developer.apple.com/documentation/accelerate/bnnslayerparameterslossyolo/no_object_maximum_iou": {
       "etag": "\"6fed-65d560f231355-df\"",
@@ -42180,9 +42190,10 @@
       "file_path": "documentation/Accelerate/bnns/fusedconvolutionnormalizationlayer.md",
       "hash": "fcb55c8650f4627bcaa3d56ba5440e73d648b88020317935b6c30e76e1c5c301"
     },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnns/fusedconvolutionnormalizationlayer/init(input:output:convolutionweights:convolutionbias:convolutionstride:convolutiondilationstride:convolutionpadding:normalization:normalizationbeta:normalizationgamma:normalizationmomentum:normalizationepsilon:normalizationactivation:filterparameters:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnns/fusedconvolutionnormalizationlayer/init(input:output:convolutionweights:convolutionbias:convolutionstride:convolutiondilationstride:convolutionpadding:normalization:normalizationbeta:normalizationgamma:normalizationmomentum:normalizationepsilon:normalizationactivation:filter-30cwy.json": {
+      "etag": "\"6736-65d560e910dd6-df\"",
+      "file_path": "documentation/Accelerate/bnns/fusedconvolutionnormalizationlayer/init(input_output_convolutionweights_convolutionbias_convolutionstride_convolutiondilationstride_convolutionpadding_normalization_normalizationbeta_normalizationgamma_normalizationmomentum_normalizationepsilon_normaliz-2503b4c0.md",
+      "hash": "2b42e70a6eca63ab06fdbfae1464e33df6798c3a1426fb48b76c4af84fe4b06c"
     },
     "https://developer.apple.com/tutorials/data/documentation/accelerate/bnns/fusedconvolutionparameters.json": {
       "etag": "\"4db5-65d560ea01524-df\"",
@@ -45939,46 +45950,6 @@
       "file_path": "documentation/Accelerate/bnnsgraph/builder/tensor/dotopeq(_,_)-6gvvh.md",
       "hash": "51e4af998c9d4e81158f162dd1c84d9fcb379edb2d4603c5be224f3a1766a31d"
     },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/.!(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/.!=(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/.&(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/.==(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/._(_:_:)-171l2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/._(_:_:)-6sgl6.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/._(_:_:)-6soc4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/._(_:_:)-9vd51.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/._=(_:_:)-20vpj.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/._=(_:_:)-6gvvh.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnsgraph/builder/tensor/abs().json": {
       "etag": "\"1d58-65d560eb506bf-df\"",
       "file_path": "documentation/Accelerate/bnnsgraph/builder/tensor/abs().md",
@@ -47894,9 +47865,10 @@
       "file_path": "documentation/Accelerate/bnnslayerparameterslossyolo/i_desc.md",
       "hash": "af27a43ccf8154fe31f66c0f59f933efd6f766837eb3c207e5f49023d5d29d68"
     },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnslayerparameterslossyolo/init(function:i_desc:o_desc:reduction:huber_delta:number_of_grid_columns:number_of_grid_rows:number_of_anchor_boxes:anchor_box_size:rescore:scale_xy:scale_wh:scale_object:scale_no_object:scale_classification:object_minimum_iou:no_object_maximum_iou:anchors_data:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnslayerparameterslossyolo/init(function:i_desc:o_desc:reduction:huber_delta:number_of_grid_columns:number_of_grid_rows:number_of_anchor_boxes:anchor_box_size:rescore:scale_xy:scale_wh:scale_object:scale_no_object:scale_classification:object_minimum_iou:no_object_max-4sykc.json": {
+      "etag": "\"6f2e-65d560f20902f-df\"",
+      "file_path": "documentation/Accelerate/bnnslayerparameterslossyolo/init(function_i_desc_o_desc_reduction_huber_delta_number_of_grid_columns_number_of_grid_rows_number_of_anchor_boxes_anchor_box_size_rescore_scale_xy_scale_wh_scale_object_scale_no_object_scale_classification_object_min-92e4a328.md",
+      "hash": "6691ffec16d8d803affbd458cb68f70131e516f3e88cb4369dd11dc3cf1dfbfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/accelerate/bnnslayerparameterslossyolo/no_object_maximum_iou.json": {
       "etag": "\"6fed-65d560f231355-df\"",
@@ -60392,590 +60364,6 @@
       "etag": "\"bdbb-65902a1dc1c1a-df\"",
       "file_path": "documentation/Accelerate/simd-macros.md",
       "hash": "3492d4de8bd81181723fb5e0b0f5ffd9deec1303398c164ba03b6d629beeee5c"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_bool.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char64.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_char8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_compiler_has_required_features.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_current_library_version.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double2x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double2x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double2x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double3x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double3x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double3x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double4x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double4x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double4x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_double8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float2x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float2x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float2x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float3x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float3x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float3x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float4x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float4x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float4x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_float8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half2x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half2x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half2x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half3x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half3x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half3x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half4x2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half4x3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half4x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_half8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_int1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_int16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_int2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_int3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_int4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_int8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_library_version.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_long1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_long2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_long3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_long4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_long8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_char16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_char2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_char32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_char4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_char64.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_char8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_double2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_double4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_double8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_float16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_float2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_float4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_float8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_int16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_int2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_int4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_int8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_long2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_long4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_long8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_short16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_short2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_short32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_short4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_short8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uchar16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uchar2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uchar32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uchar4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uchar64.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uchar8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uint16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uint2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uint4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_uint8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ulong2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ulong4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ulong8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ushort16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ushort2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ushort32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ushort4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_packed_ushort8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_quatd.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_quatf.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_short1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_short16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_short2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_short3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_short32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_short4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_short8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar64.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uchar8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uint1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uint16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uint2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uint3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uint4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_uint8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ulong1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ulong2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ulong3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ulong4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ulong8.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ushort1.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ushort16.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ushort2.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ushort3.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ushort32.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ushort4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/accelerate/simd/simd_ushort8.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/accelerate/single-channel-biquadratic-filters.json": {
       "etag": "\"3f8c-65902a0755eda-df\"",
@@ -82054,9 +81442,15 @@
     }
   },
   "metadata": {
+    "child_modules": {
+      "simd": {}
+    },
+    "handoff_from": {
+      "kernel": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 16443
+    "total_pages": 16289
   }
 }

@@ -5342,6 +5342,9 @@
     }
   },
   "metadata": {
+    "handoff_from": {
+      "webkitjs": {}
+    },
     "render": {
       "version": 1
     },

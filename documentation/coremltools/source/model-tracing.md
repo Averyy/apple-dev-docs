@@ -53,7 +53,8 @@ The following example builds a simple model from scratch and traces it to genera
    model = SimpleNet()  # Instantiate the network.
    ```
 4. Define the input, which is needed by jit tracer, and trace the model.
-Run `torch.jit.trace` on your model with an example input, and save the resulting traced object. For an example input, you can use one sample of training or validation data, or even use randomly-generated data as shown in the following code snippet:
+
+   Run `torch.jit.trace` on your model with an example input, and save the resulting traced object. For an example input, you can use one sample of training or validation data, or even use randomly-generated data as shown in the following code snippet:
 
    ```
    example = torch.rand(1, 3, 224, 224)  # Example input, needed by jit tracer.

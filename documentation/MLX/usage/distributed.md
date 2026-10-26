@@ -470,7 +470,7 @@ Force MPI to use the most performant network interface by setting `--mca
 btl_tcp_if_include <iface>` where `<iface>` should be the interface you want
 to use.
 
-## Distributed Withoutmlx.launch
+## Distributed Without mlx.launch
 
 None of the implementations of the distributed backends require launching with
 `mlx.launch`. The script simply connects to each host. Starts a process per
@@ -550,18 +550,25 @@ This is a small collection of tips to help you utilize better the distributed
 communication capabilities of MLX.
 
 - *Test locally first.*
-You can use the pattern `mlx.launch -n2 -- my_script.py` to run a small
-scale test on a single node first.
+
+  You can use the pattern `mlx.launch -n2 -- my_script.py` to run a small
+  scale test on a single node first.
+
 - *Batch your communication.*
-As described in the [training example](../examples/data_parallelism.md#training-example), performing a
-lot of small communications can hurt performance. Copy the approach of
-[mlx.nn.average_gradients()](../python/_autosummary/mlx.nn.average_gradients.md#mlx.nn.average_gradients) to gather many small communications in a
-single large one.
+
+  As described in the [training example](../examples/data_parallelism.md#training-example), performing a
+  lot of small communications can hurt performance. Copy the approach of
+  [mlx.nn.average_gradients()](../python/_autosummary/mlx.nn.average_gradients.md#mlx.nn.average_gradients) to gather many small communications in a
+  single large one.
+
 - *Visualize the connectivity.*
-Use `mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot` to
-visualize the connnections and make sure that the cables are connected
-correctly. See the [JACCL section](#jaccl-section) for examples.
+
+  Use `mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot` to
+  visualize the connnections and make sure that the cables are connected
+  correctly. See the [JACCL section](#jaccl-section) for examples.
+
 - *Use the debugger.*
-`mlx.launch` is meant for interactive use. It broadcasts stdin to all
-processes and gathers stdout from all processes. This makes using `pdb` a
-breeze.
+
+  `mlx.launch` is meant for interactive use. It broadcasts stdin to all
+  processes and gathers stdout from all processes. This makes using `pdb` a
+  breeze.

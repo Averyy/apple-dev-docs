@@ -53,17 +53,24 @@ signature is generated automatically.
 
 The full function signature will be generated using:
 
-- The shapes/dtypes of `inputs`In the above, `a` is an `mx.array` of type `mx.float16` and we pass it with the key `inp`
-so we will add `const device float16_t* inp` to the signature.
-`inp_shape`, `inp_strides` and `inp_ndim` are also added for convenience if they are present
-in `source`.
-- The list of `output_dtypes`In the above, `out` is an `mx.array` of type `mx.float16`
-so we add `device float16_t* out`.
-- Template parameters passed using `template`In the above, `template=[("T", mx.float32)]` adds a template of `template <typename T>` to the function
-and instantiates the template with `custom_kernel_myexp_float_float16_t_float16_t<float>`.
-Template parameters can be `mx.core.Dtype`, `int` or `bool`.
-- Metal attributes used in `source` such as `[[thread_position_in_grid]]`These will be added as function arguments.
-All the attributes defined in Table 5.8 of the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) are supported.
+- **The shapes/dtypes of `inputs`**
+  : In the above, `a` is an `mx.array` of type `mx.float16` and we pass it with the key `inp`
+  so we will add `const device float16_t* inp` to the signature.
+  `inp_shape`, `inp_strides` and `inp_ndim` are also added for convenience if they are present
+  in `source`.
+
+- **The list of `output_dtypes`**
+  : In the above, `out` is an `mx.array` of type `mx.float16`
+  so we add `device float16_t* out`.
+
+- **Template parameters passed using `template`**
+  : In the above, `template=[("T", mx.float32)]` adds a template of `template <typename T>` to the function
+  and instantiates the template with `custom_kernel_myexp_float_float16_t_float16_t<float>`.
+  Template parameters can be `mx.core.Dtype`, `int` or `bool`.
+
+- **Metal attributes used in `source` such as `[[thread_position_in_grid]]`**
+  : These will be added as function arguments.
+  All the attributes defined in Table 5.8 of the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) are supported.
 
 Putting this all together, the generated function signature for `myexp` is as follows:
 
@@ -319,10 +326,13 @@ define its custom vjp transform so MLX can differentiate it.
 The backwards pass requires atomically updating `x_grad`/`grid_grad` and so
 requires a few extra [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel) features:
 
-- `init_value=0`Initialize all of the kernel’s outputs to this value before it runs. This allows us to update only part of the output arrays with the kernel.
-- `atomic_outputs=True`Designate all of the kernel outputs as `atomic` in the function signature.
-This means we can use Metal’s `atomic` features to simultaneously update the `x_grad` and `grid_grad` arrays from multiple threadgroups.
-See section 6.15 of the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more details.
+- **`init_value=0`**
+  : Initialize all of the kernel’s outputs to this value before it runs. This allows us to update only part of the output arrays with the kernel.
+
+- **`atomic_outputs=True`**
+  : Designate all of the kernel outputs as `atomic` in the function signature.
+  This means we can use Metal’s `atomic` features to simultaneously update the `x_grad` and `grid_grad` arrays from multiple threadgroups.
+  See section 6.15 of the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more details.
 
 We can then implement the backwards pass as follows:
 

@@ -3770,6 +3770,11 @@
       "file_path": "documentation/CoreMIDI/midithruconnectionparams/init().md",
       "hash": "df7b9cc5db75c937f62c5bb5838b92ec6c201967176c70540c4335e4180768cc"
     },
+    "https://developer.apple.com/documentation/coremidi/midithruconnectionparams/init(version:numsources:sources:numdestinations:destinations:channelmap:lowvelocity:highvelocity:lownote:highnote:notenumber:velocity:keypressure:channelpressure:programchange:pitchbend:filteroutsysex:filteroutmtc:filteroutbeatclock:filtero-6y1ig": {
+      "etag": "\"a314-65d55ae4f7458-df\"",
+      "file_path": "documentation/CoreMIDI/midithruconnectionparams/init(version_numsources_sources_numdestinations_destinations_channelmap_lowvelocity_highvelocity_lownote_highnote_notenumber_velocity_keypressure_channelpressure_programchange_pitchbend_filteroutsysex_filteroutmtc_filt-7e159c9f.md",
+      "hash": "bdc51a3668684fba3372646ba90f2534993358c93c10620717bfc973879ece88"
+    },
     "https://developer.apple.com/documentation/coremidi/midithruconnectionparams/keypressure": {
       "etag": "\"76f7-65d55ae4f7458-df\"",
       "file_path": "documentation/CoreMIDI/midithruconnectionparams/keypressure.md",
@@ -8640,9 +8645,10 @@
       "file_path": "documentation/CoreMIDI/midithruconnectionparams/init().md",
       "hash": "df7b9cc5db75c937f62c5bb5838b92ec6c201967176c70540c4335e4180768cc"
     },
-    "https://developer.apple.com/tutorials/data/documentation/coremidi/midithruconnectionparams/init(version:numsources:sources:numdestinations:destinations:channelmap:lowvelocity:highvelocity:lownote:highnote:notenumber:velocity:keypressure:channelpressure:programchange:pitchbend:filteroutsysex:filteroutmtc:filteroutbeatclock:filterouttunerequest:reserved2:filteroutallcontrols:numcontroltransforms:nummaps:reserved3:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/coremidi/midithruconnectionparams/init(version:numsources:sources:numdestinations:destinations:channelmap:lowvelocity:highvelocity:lownote:highnote:notenumber:velocity:keypressure:channelpressure:programchange:pitchbend:filteroutsysex:filteroutmtc:filteroutbeatclock:filtero-6y1ig.json": {
+      "etag": "\"a314-65d55ae4f7458-df\"",
+      "file_path": "documentation/CoreMIDI/midithruconnectionparams/init(version_numsources_sources_numdestinations_destinations_channelmap_lowvelocity_highvelocity_lownote_highnote_notenumber_velocity_keypressure_channelpressure_programchange_pitchbend_filteroutsysex_filteroutmtc_filt-7e159c9f.md",
+      "hash": "bdc51a3668684fba3372646ba90f2534993358c93c10620717bfc973879ece88"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremidi/midithruconnectionparams/keypressure.json": {
       "etag": "\"76f7-65d55ae4f7458-df\"",
@@ -9749,6 +9755,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1949
+    "total_pages": 1950
   }
 }

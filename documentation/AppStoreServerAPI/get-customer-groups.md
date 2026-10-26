@@ -16,7 +16,7 @@ Get the groups that a customer belongs to, and their role in each group.
 
 #### Discussion
 
-> ❗ **Important**:  This endpoint is only available in the sandbox environment.
+> ❗ **Important**:  In the production environment, this endpoint returns only groups with a [`groupType`](./grouptype.md) of `ORGANIZATION`.
 
 Call this endpoint to determine whether a customer has access to your app or its in-app purchases through an organization or group, and what role they hold in it. A *group* consists of customers whose access is purchased and managed centrally by a single account, rather than individually. Groups come from multiseat purchases: an organization buys seats through Volume Purchasing, or a subscriber buys seats through Group Purchases and invites others to join.
 

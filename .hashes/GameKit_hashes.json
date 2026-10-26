@@ -5350,10 +5350,6 @@
       "file_path": "documentation/GameKit/choosing-a-leaderboard-for-your-challenges.md",
       "hash": "a1a04ad686aa35242a7e163e934654f54afab1c0860b92e47f37d74cb05d8c81"
     },
-    "https://developer.apple.com/tutorials/data/documentation/gamekit/com.apple.gamekit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/gamekit/connecting-players-with-their-friends-in-your-game.json": {
       "etag": "\"8cff-65d5607a9eaf4-df\"",
       "file_path": "documentation/GameKit/connecting-players-with-their-friends-in-your-game.md",
@@ -10639,6 +10635,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2127
+    "total_pages": 2126
   }
 }

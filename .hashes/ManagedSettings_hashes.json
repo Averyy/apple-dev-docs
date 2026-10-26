@@ -1328,26 +1328,6 @@
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/noteq(_,_).md",
       "hash": ""
     },
-    "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/...(_:)-1u7oy.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/...(_:)-7kfn5.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/_(_:_:).json": {
       "etag": "\"1f60-65d5609bd2ecb-df\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/op(_,_).md",
@@ -1653,6 +1633,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 331
+    "total_pages": 326
   }
 }

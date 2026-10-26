@@ -65,7 +65,7 @@ def step(model, x, y):
     return loss
 ```
 
-### Usingnn.average_gradients
+### Using nn.average_gradients
 
 Although the code example above works correctly; it performs one communication
 per gradient. It is significantly more efficient to aggregate several gradients

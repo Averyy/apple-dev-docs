@@ -12,4 +12,4 @@ Convert models from TensorFlow, PyTorch, and other libraries to Core ML.
 
 This guide includes instructions and examples. For details about using the API classes and methods, see the [coremltools API Reference](https://apple.github.io/coremltools/index.html).
 
-[Index](genindex.md)  |  [Search Page](search.md)
+[Index](https://apple.github.io/coremltools/docs-guides/genindex.html)  |  [Search Page](https://apple.github.io/coremltools/docs-guides/search.html)

@@ -1885,26 +1885,6 @@
       "file_path": "documentation/Synchronization/wordpair.md",
       "hash": "ff8f6cf94aa7b3ff57ed8308bd51700306de142f163057624023c8d358e062de"
     },
-    "https://developer.apple.com/tutorials/data/documentation/synchronization/wordpair/...(_:)-3zypg.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/synchronization/wordpair/...(_:)-83e98.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/synchronization/wordpair/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/synchronization/wordpair/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/synchronization/wordpair/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/synchronization/wordpair/==(_:_:).json": {
       "etag": "\"195d-65d560e1e69b7-df\"",
       "file_path": "documentation/Synchronization/wordpair/eqeq(_,_).md",
@@ -1982,9 +1962,12 @@
     }
   },
   "metadata": {
+    "handoff_from": {
+      "swift": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 397
+    "total_pages": 392
   }
 }

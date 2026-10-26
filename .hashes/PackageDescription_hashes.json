@@ -4543,26 +4543,6 @@
       "file_path": "documentation/PackageDescription/version/noteq(_,_).md",
       "hash": ""
     },
-    "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/...(_:)-69iyk.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/...(_:)-9ansa.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/==(_:_:).json": {
       "etag": "\"1ac7-659029b458116-df\"",
       "file_path": "documentation/PackageDescription/version/eqeq(_,_).md",
@@ -4683,6 +4663,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 937
+    "total_pages": 932
   }
 }

@@ -3895,6 +3895,11 @@
       "file_path": "documentation/CloudKit/cksubscription/notificationinfo-swift.class/desiredkeys.md",
       "hash": "9ac0c07e78d61e04c69057eebf29fd7a517e528ef36f33d99bc37a19142200ca"
     },
+    "https://developer.apple.com/documentation/cloudkit/cksubscription/notificationinfo-swift.class/init(alertbody:alertlocalizationkey:alertlocalizationargs:title:titlelocalizationkey:titlelocalizationargs:subtitle:subtitlelocalizationkey:subtitlelocalizationargs:alertactionlocalizationkey:alertlaunchimage:soundname:desiredkeys:shouldbad-47rj5": {
+      "etag": "\"69c1-65d55e6c5d73a-df\"",
+      "file_path": "documentation/CloudKit/cksubscription/notificationinfo-swift.class/init(alertbody_alertlocalizationkey_alertlocalizationargs_title_titlelocalizationkey_titlelocalizationargs_subtitle_subtitlelocalizationkey_subtitlelocalizationargs_alertactionlocalizationkey_alertlaunchimage_soundname-a72a0c89.md",
+      "hash": "39fa2db6a602d7521cd68a2dee15f5a6b9d0a939a0a397bf758f06bb3413a50e"
+    },
     "https://developer.apple.com/documentation/cloudkit/cksubscription/notificationinfo-swift.class/init(coder:)": {
       "etag": "\"1a5e-65d55e6bbefa8-df\"",
       "file_path": "documentation/CloudKit/cksubscription/notificationinfo-swift.class/init(coder).md",
@@ -9155,9 +9160,10 @@
       "file_path": "documentation/CloudKit/cksubscription/notificationinfo-swift.class/desiredkeys.md",
       "hash": "9ac0c07e78d61e04c69057eebf29fd7a517e528ef36f33d99bc37a19142200ca"
     },
-    "https://developer.apple.com/tutorials/data/documentation/cloudkit/cksubscription/notificationinfo-swift.class/init(alertbody:alertlocalizationkey:alertlocalizationargs:title:titlelocalizationkey:titlelocalizationargs:subtitle:subtitlelocalizationkey:subtitlelocalizationargs:alertactionlocalizationkey:alertlaunchimage:soundname:desiredkeys:shouldbadge:shouldsendcontentavailable:shouldsendmutablecontent:category:collapseidkey:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/cloudkit/cksubscription/notificationinfo-swift.class/init(alertbody:alertlocalizationkey:alertlocalizationargs:title:titlelocalizationkey:titlelocalizationargs:subtitle:subtitlelocalizationkey:subtitlelocalizationargs:alertactionlocalizationkey:alertlaunchimage:soundname:desiredkeys:shouldbad-47rj5.json": {
+      "etag": "\"69c1-65d55e6c5d73a-df\"",
+      "file_path": "documentation/CloudKit/cksubscription/notificationinfo-swift.class/init(alertbody_alertlocalizationkey_alertlocalizationargs_title_titlelocalizationkey_titlelocalizationargs_subtitle_subtitlelocalizationkey_subtitlelocalizationargs_alertactionlocalizationkey_alertlaunchimage_soundname-a72a0c89.md",
+      "hash": "39fa2db6a602d7521cd68a2dee15f5a6b9d0a939a0a397bf758f06bb3413a50e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkit/cksubscription/notificationinfo-swift.class/init(coder:).json": {
       "etag": "\"1a5e-65d55e6bbefa8-df\"",
@@ -10529,6 +10535,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2105
+    "total_pages": 2106
   }
 }

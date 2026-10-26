@@ -667,9 +667,9 @@ nanobind_add_module(
 target_link_libraries(mlx_sample_extensions PRIVATE mlx_ext)
 ```
 
-### Building withsetuptools
+### Building with setuptools
 
-#### Building with aCMakeLists.txt
+#### Building with a CMakeLists.txt
 
 Once we have set out the CMake build rules as described above, we can use the
 build utilities defined in `mlx.extension`:
@@ -721,7 +721,7 @@ When you try to install using the command `python -m pip install .` (in
 `cmake_extension/`), the Python module and its C++ and Metal libraries are
 installed together directly under `site-packages`.
 
-#### Building without aCMakeLists.txt
+#### Building without a CMakeLists.txt
 
 For a source-list based build, use `mlx.extension.MetalExtension` with
 `mlx.extension.BuildExtension`. The helper builds the C++/nanobind module and

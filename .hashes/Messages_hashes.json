@@ -780,10 +780,6 @@
       "file_path": "documentation/Messages/adding-your-sticker-packs-to-messages.md",
       "hash": "a4bf7f1b4d7bc91ed30bdb8d026875ae09aa34606a54fd3c5459c50a2f1ecb6f"
     },
-    "https://developer.apple.com/tutorials/data/documentation/messages/com.apple.messages/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/messages/creating-a-sticker-app-with-a-custom-layout.json": {
       "etag": "\"4b54-65d55dfbd7741-df\"",
       "file_path": "documentation/Messages/creating-a-sticker-app-with-a-custom-layout.md",
@@ -1539,6 +1535,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 307
+    "total_pages": 306
   }
 }

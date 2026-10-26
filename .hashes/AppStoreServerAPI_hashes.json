@@ -1,9 +1,9 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/AppStoreServerAPI": {
-      "etag": "\"f7fa-65daaf1ccabdf-df\"",
+      "etag": "\"fb29-65e7ac62f3fea-df\"",
       "file_path": "documentation/AppStoreServerAPI/AppStoreServerAPI.md",
-      "hash": "d7c380e250afcd084e1203add3e0f2e67e312479a5f03342528de59ab542be4b"
+      "hash": "a0c208cf7f296060482f265d676925042f08939266e5bffb814ced081ed7736f"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/accountnotfounderror": {
       "etag": "\"3daf-65d55a5d20cfc-df\"",
@@ -206,9 +206,9 @@
       "hash": "586528e32038feb012b9cca8f866f8862e7fbb76caed324824bf92fb52b6540e"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/app-store-server-api-changelog": {
-      "etag": "\"1d8ae-65d55a5cf3883-df\"",
+      "etag": "\"1dbe5-65e7ac63248fe-df\"",
       "file_path": "documentation/AppStoreServerAPI/app-store-server-api-changelog.md",
-      "hash": "e5b48a3431ece2613fa1b4bfea9bd6ec8b6e574ca3832bfdd7669909614e60da"
+      "hash": "4b90d45e854dbbcf38b9bbc52f8705c55c0a402118379b3649fcd3c225f5951b"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/appaccounttoken": {
       "etag": "\"4334-65d55a5ccf2d4-df\"",
@@ -516,14 +516,14 @@
       "hash": "493482f074b2f60aed977173cdaf8bbe90ccc5ea8f843794959f0060b85d1aff"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/get-customer-groups": {
-      "etag": "\"60f6-65d55a5cf3883-df\"",
+      "etag": "\"61ec-65e7ac63248fe-df\"",
       "file_path": "documentation/AppStoreServerAPI/get-customer-groups.md",
-      "hash": "54efd67622d08a1a7a411fb9c2c180e7439097374873645f76e075dff7837560"
+      "hash": "3749cf5b35058ec09609e12f27c15f7f01553478e092014ba76010485186b44f"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/get-group-members": {
-      "etag": "\"5d31-65d55a5d542c2-df\"",
+      "etag": "\"5c34-65e7ac63541b7-df\"",
       "file_path": "documentation/AppStoreServerAPI/get-group-members.md",
-      "hash": "8ebc0e086fda8e731433ac4f6c730d51e7e9e25ac22489ba0f7f9d2514dbdebc"
+      "hash": "6d9c440c00ff23e53bd643fc1887fd258b8ab4df48b5f60a54f2723a0b05b3d0"
     },
     "https://developer.apple.com/documentation/appstoreserverapi/get-notification-history": {
       "etag": "\"7e26-65d55a5d542c2-df\"",
@@ -1381,9 +1381,9 @@
       "hash": "dc1f300eb7ad79aaa65f4c874c23ff26f2aa7123edda4f67a08dd249d6336a97"
     },
     "https://developer.apple.com/tutorials/data/documentation/AppStoreServerAPI.json": {
-      "etag": "\"f7fa-65daaf1ccabdf-df\"",
+      "etag": "\"fb29-65e7ac62f3fea-df\"",
       "file_path": "documentation/AppStoreServerAPI/AppStoreServerAPI.md",
-      "hash": "d7c380e250afcd084e1203add3e0f2e67e312479a5f03342528de59ab542be4b"
+      "hash": "a0c208cf7f296060482f265d676925042f08939266e5bffb814ced081ed7736f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/accountnotfounderror.json": {
       "etag": "\"3daf-65d55a5d20cfc-df\"",
@@ -1586,9 +1586,9 @@
       "hash": "586528e32038feb012b9cca8f866f8862e7fbb76caed324824bf92fb52b6540e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/app-store-server-api-changelog.json": {
-      "etag": "\"1d8ae-65d55a5cf3883-df\"",
+      "etag": "\"1dbe5-65e7ac63248fe-df\"",
       "file_path": "documentation/AppStoreServerAPI/app-store-server-api-changelog.md",
-      "hash": "e5b48a3431ece2613fa1b4bfea9bd6ec8b6e574ca3832bfdd7669909614e60da"
+      "hash": "4b90d45e854dbbcf38b9bbc52f8705c55c0a402118379b3649fcd3c225f5951b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/appaccounttoken.json": {
       "etag": "\"4334-65d55a5ccf2d4-df\"",
@@ -1896,14 +1896,14 @@
       "hash": "493482f074b2f60aed977173cdaf8bbe90ccc5ea8f843794959f0060b85d1aff"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-customer-groups.json": {
-      "etag": "\"60f6-65d55a5cf3883-df\"",
+      "etag": "\"61ec-65e7ac63248fe-df\"",
       "file_path": "documentation/AppStoreServerAPI/get-customer-groups.md",
-      "hash": "54efd67622d08a1a7a411fb9c2c180e7439097374873645f76e075dff7837560"
+      "hash": "3749cf5b35058ec09609e12f27c15f7f01553478e092014ba76010485186b44f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-group-members.json": {
-      "etag": "\"5d31-65d55a5d542c2-df\"",
+      "etag": "\"5c34-65e7ac63541b7-df\"",
       "file_path": "documentation/AppStoreServerAPI/get-group-members.md",
-      "hash": "8ebc0e086fda8e731433ac4f6c730d51e7e9e25ac22489ba0f7f9d2514dbdebc"
+      "hash": "6d9c440c00ff23e53bd643fc1887fd258b8ab4df48b5f60a54f2723a0b05b3d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-notification-history.json": {
       "etag": "\"7e26-65d55a5d542c2-df\"",

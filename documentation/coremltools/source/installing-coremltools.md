@@ -106,12 +106,19 @@ The continuous integration (CI) system linked to the `coremltools` repo builds a
 To access the wheel for a particular `coremltools` release, follow these steps:
 
 1. Go to the [coremltoolsrepository](https://github.com/apple/coremltools) on GitHub, scroll down to the **README.md** heading, and click the **build passing** button. The **Branches** tab appears:
-![Branches tab](https://apple.github.io/coremltools/docs-guides/_images/repo-readme-build-passing-button-annot.png)
-![Branches passed](https://apple.github.io/coremltools/docs-guides/_images/repo-branches-passed-button.png)
+
+   ![Branches tab](https://apple.github.io/coremltools/docs-guides/_images/repo-readme-build-passing-button-annot.png)
+
+   ![Branches passed](https://apple.github.io/coremltools/docs-guides/_images/repo-branches-passed-button.png)
+
 2. Click the **passed** button to show the **Pipeline** tab:
-![Pipeline tab](https://apple.github.io/coremltools/docs-guides/_images/repo-build-wheel-selected.png)
+
+   ![Pipeline tab](https://apple.github.io/coremltools/docs-guides/_images/repo-build-wheel-selected.png)
+
 3. Click a wheel in the **Build** column. For example, in the previous figure, the **build_wheel_macos_py38** wheel is highlighted for clicking. After clicking a wheel, the raw job log appears, with the **Download** and **Browse** buttons in the right column:
-![Download and Browse](https://apple.github.io/coremltools/docs-guides/_images/repo-job-artifacts.png)
+
+   ![Download and Browse](https://apple.github.io/coremltools/docs-guides/_images/repo-job-artifacts.png)
+
 4. Click the **Download** button to download the `dist` folder with the wheel files.
 5. Install a wheel file using `pip`. For example, use the following command to install the `coremltools-4.0-cp38-none-macosx_10_12_intel.whl` wheel file for the 4.0 version of Core ML Tools:
 

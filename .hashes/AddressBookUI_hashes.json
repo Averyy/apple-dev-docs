@@ -226,9 +226,9 @@
       "hash": "dbf440e84d329cdd9381c6a45175fa7732ea85db5467aa20ec0fb0bb8c3fe00e"
     },
     "https://developer.apple.com/documentation/addressbookui/abpersonviewcontroller": {
-      "etag": "\"c1c8-65d5608699480-df\"",
+      "etag": "\"bc16-65dab53fd4f68-df\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller.md",
-      "hash": "500a6234ce3aaac9e81cf9a9d09cdde5b5ad883114e7a222f3708763e492a5eb"
+      "hash": "0c1be68be831fdd5b8f6d21bb21e1f83a1b31fed0e6fecbda0492b954ca3198b"
     },
     "https://developer.apple.com/documentation/addressbookui/abpersonviewcontroller/addressbook": {
       "etag": "\"3e7c-65d5608683d55-df\"",
@@ -566,9 +566,9 @@
       "hash": "dbf440e84d329cdd9381c6a45175fa7732ea85db5467aa20ec0fb0bb8c3fe00e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller.json": {
-      "etag": "\"c1c8-65d5608699480-df\"",
+      "etag": "\"bc16-65dab53fd4f68-df\"",
       "file_path": "documentation/AddressBookUI/abpersonviewcontroller.md",
-      "hash": "500a6234ce3aaac9e81cf9a9d09cdde5b5ad883114e7a222f3708763e492a5eb"
+      "hash": "0c1be68be831fdd5b8f6d21bb21e1f83a1b31fed0e6fecbda0492b954ca3198b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbookui/abpersonviewcontroller/addressbook.json": {
       "etag": "\"3e7c-65d5608683d55-df\"",
@@ -679,16 +679,12 @@
       "etag": "\"9ab8-659025e539d04-df\"",
       "file_path": "documentation/AddressBookUI/address-book-properties.md",
       "hash": "057fb21a2c64477716e3d2002783de083333592a16104e090bae233c919d2099"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/addressbookui/com.apple.addressbookui/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
     }
   },
   "metadata": {
     "render": {
       "version": 1
     },
-    "total_pages": 137
+    "total_pages": 136
   }
 }

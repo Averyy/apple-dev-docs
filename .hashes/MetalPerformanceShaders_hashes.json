@@ -14645,6 +14645,16 @@
       "file_path": "documentation/MetalPerformanceShaders/mpssvgf/encodebilateralfilter(to,stepdistance,sourcetexture,destinationtexture,sourcetexture2,destinationtexture2,depthnormaltexture).md",
       "hash": "5e2866dea5277b04f2b26dc5f2d9f63cad83e07e255991a5bbee6c635d6bda4f"
     },
+    "https://developer.apple.com/documentation/metalperformanceshaders/mpssvgf/encodereprojection(to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:previousframecount:destinationframecount:motionvectortexture:depthnormaltexture:previousdepthnormaltex-3k6zp": {
+      "etag": "\"5b23-65d55da90902e-df\"",
+      "file_path": "documentation/MetalPerformanceShaders/mpssvgf/encodereprojection(to_sourcetexture_previoustexture_destinationtexture_previousluminancemomentstexture_destinationluminancemomentstexture_previousframecount_destinationframecount_motionvectortexture_depthnormaltexture_-b41497b8.md",
+      "hash": "87c64fc70022ae69fc4f226b31aac364d625bad998021a5fa9561c1c7ef0d67d"
+    },
+    "https://developer.apple.com/documentation/metalperformanceshaders/mpssvgf/encodereprojection(to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:sourcetexture2:previoustexture2:destinationtexture2:previousluminancemomentstexture2:destinationlumina-5nbfn": {
+      "etag": "\"7558-65d55da90902e-df\"",
+      "file_path": "documentation/MetalPerformanceShaders/mpssvgf/encodereprojection(to_sourcetexture_previoustexture_destinationtexture_previousluminancemomentstexture_destinationluminancemomentstexture_sourcetexture2_previoustexture2_destinationtexture2_previousluminancemomentstext-a9ee93bd.md",
+      "hash": "d2acc7bd684dd175f79a1cdd9db8c1131dbfed4e612c0d83dd88c6b05917ef89"
+    },
     "https://developer.apple.com/documentation/metalperformanceshaders/mpssvgf/encodevarianceestimation(to:sourcetexture:luminancemomentstexture:destinationtexture:framecount:depthnormaltexture:)": {
       "etag": "\"3e31-65d55da90902e-df\"",
       "file_path": "documentation/MetalPerformanceShaders/mpssvgf/encodevarianceestimation(to,sourcetexture,luminancemomentstexture,destinationtexture,framecount,depthnormaltexture).md",
@@ -29855,13 +29865,15 @@
       "file_path": "documentation/MetalPerformanceShaders/mpssvgf/encodebilateralfilter(to,stepdistance,sourcetexture,destinationtexture,sourcetexture2,destinationtexture2,depthnormaltexture).md",
       "hash": "5e2866dea5277b04f2b26dc5f2d9f63cad83e07e255991a5bbee6c635d6bda4f"
     },
-    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpssvgf/encodereprojection(to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:previousframecount:destinationframecount:motionvectortexture:depthnormaltexture:previousdepthnormaltexture:).json": {
-      "error": "HTTP 404",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpssvgf/encodereprojection(to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:previousframecount:destinationframecount:motionvectortexture:depthnormaltexture:previousdepthnormaltex-3k6zp.json": {
+      "etag": "\"5b23-65d55da90902e-df\"",
+      "file_path": "documentation/MetalPerformanceShaders/mpssvgf/encodereprojection(to_sourcetexture_previoustexture_destinationtexture_previousluminancemomentstexture_destinationluminancemomentstexture_previousframecount_destinationframecount_motionvectortexture_depthnormaltexture_-b41497b8.md",
+      "hash": "87c64fc70022ae69fc4f226b31aac364d625bad998021a5fa9561c1c7ef0d67d"
     },
-    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpssvgf/encodereprojection(to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:sourcetexture2:previoustexture2:destinationtexture2:previousluminancemomentstexture2:destinationluminancemomentstexture2:previousframecount:destinationframecount:motionvectortexture:depthnormaltexture:previousdepthnormaltexture:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpssvgf/encodereprojection(to:sourcetexture:previoustexture:destinationtexture:previousluminancemomentstexture:destinationluminancemomentstexture:sourcetexture2:previoustexture2:destinationtexture2:previousluminancemomentstexture2:destinationlumina-5nbfn.json": {
+      "etag": "\"7558-65d55da90902e-df\"",
+      "file_path": "documentation/MetalPerformanceShaders/mpssvgf/encodereprojection(to_sourcetexture_previoustexture_destinationtexture_previousluminancemomentstexture_destinationluminancemomentstexture_sourcetexture2_previoustexture2_destinationtexture2_previousluminancemomentstext-a9ee93bd.md",
+      "hash": "d2acc7bd684dd175f79a1cdd9db8c1131dbfed4e612c0d83dd88c6b05917ef89"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshaders/mpssvgf/encodevarianceestimation(to:sourcetexture:luminancemomentstexture:destinationtexture:framecount:depthnormaltexture:).json": {
       "etag": "\"3e31-65d55da90902e-df\"",
@@ -30433,6 +30445,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 6086
+    "total_pages": 6088
   }
 }

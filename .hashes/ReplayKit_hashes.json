@@ -684,10 +684,6 @@
       "file_path": "documentation/ReplayKit/ReplayKit.md",
       "hash": "4253e6e606de1886065ea310c465ffbc2f1a0243cea87229c04ab5d4556dc7dd"
     },
-    "https://developer.apple.com/tutorials/data/documentation/replaykit/com.apple.replaykit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/recording-and-streaming-your-macos-app.json": {
       "etag": "\"1882-65d5609c8ba66-df\"",
       "file_path": "documentation/ReplayKit/recording-and-streaming-your-macos-app.md",
@@ -1367,6 +1363,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 273
+    "total_pages": 272
   }
 }

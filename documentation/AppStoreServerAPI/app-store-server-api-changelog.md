@@ -9,6 +9,10 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+##### Server update — 2026/10/23
+
+The [`Get Customer Groups`](./get-customer-groups.md) and [`Get Group Members`](./get-group-members.md) endpoints are now available in the production environment for groups with a [`groupType`](./grouptype.md) of `ORGANIZATION`.
+
 ##### 1.22 - 2026/09/28
 
 **New features**

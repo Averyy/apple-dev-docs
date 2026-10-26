@@ -290,10 +290,6 @@
       "file_path": "documentation/ExtensionKit/appextensionsceneconfiguration/init(_,configuration).md",
       "hash": "2ad1737f92407d46be4c163d46ed383125356c6c7d9cbade53dd5a9de0664fb9"
     },
-    "https://developer.apple.com/tutorials/data/documentation/extensionkit/com.apple.extensionkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/extensionkit/displaying-the-app-extensions-available-to-your-app.json": {
       "etag": "\"386c-65d55f662b5f7-df\"",
       "file_path": "documentation/ExtensionKit/displaying-the-app-extensions-available-to-your-app.md",
@@ -399,6 +395,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 79
+    "total_pages": 78
   }
 }

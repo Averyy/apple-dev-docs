@@ -53006,7 +53006,7 @@
       "hash": "eff15b735449f1d8352a09019a6973aa817a03bfa8c6d73d48cbd31ab028b965"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclustertemperaturemeasurement/readattributemeasuredvalue(completionhandler:)": {
-      "etag": "\"32c7-65d560f6e2cfb-df\"",
+      "etag": "\"32c7-65d560f6e2cfb\"",
       "file_path": "documentation/Matter/mtrbaseclustertemperaturemeasurement/readattributemeasuredvalue(completionhandler).md",
       "hash": "df76ec147e3fd0cdd4f84fd61ad64118f77cda145645f55dfe7bc704f0e5c327"
     },
@@ -92555,6 +92555,11 @@
       "file_path": "documentation/Matter/mtrdevicestoragebehaviorconfiguration/disablestoragebehavioroptimization.md",
       "hash": "ec5fcc9f64663a79a5cc82beb0f98e4bafd1dc4c1d0b6516d572ece82bce9e36"
     },
+    "https://developer.apple.com/documentation/matter/mtrdevicestoragebehaviorconfiguration/init(reporttopersistencedelaytime:reporttopersistencedelaytimemax:recentreporttimesmaxcount:timebetweenreportstooshortthreshold:timebetweenreportstooshortminthreshold:reporttopersistencedelaymaxmultiplier:devicereportingexcessivelyintervalt-6xgqf": {
+      "etag": "\"5186-65d560fdc750a-df\"",
+      "file_path": "documentation/Matter/mtrdevicestoragebehaviorconfiguration/init(reporttopersistencedelaytime_reporttopersistencedelaytimemax_recentreporttimesmaxcount_timebetweenreportstooshortthreshold_timebetweenreportstooshortminthreshold_reporttopersistencedelaymaxmultiplier_devicereporti-c06fe453.md",
+      "hash": "47eec32f0b798adc55de5697a934154d7246a00a1b3e8205c5a661b4e32632d2"
+    },
     "https://developer.apple.com/documentation/matter/mtrdevicestoragebehaviorconfiguration/recentreporttimesmaxcount": {
       "etag": "\"1f96-65d560fdc750a-df\"",
       "file_path": "documentation/Matter/mtrdevicestoragebehaviorconfiguration/recentreporttimesmaxcount.md",
@@ -100741,7 +100746,7 @@
       "hash": "8f1013a094c129614a1335c876351133a091dd5dc4a3dd66fb51bf9582993f10"
     },
     "https://developer.apple.com/documentation/matter/mtrgeneraldiagnosticshardwarefault/powersource": {
-      "etag": "\"197e-65d560fa0748a-df\"",
+      "etag": "\"197e-65d560fa0748a\"",
       "file_path": "documentation/Matter/mtrgeneraldiagnosticshardwarefault/powersource.md",
       "hash": "4fa19e603c1cf476ffdc2fb145974a1aafb9a0353da0d21b3aabdde247dd5957"
     },
@@ -174786,7 +174791,7 @@
       "hash": "eff15b735449f1d8352a09019a6973aa817a03bfa8c6d73d48cbd31ab028b965"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclustertemperaturemeasurement/readattributemeasuredvalue(completionhandler:).json": {
-      "etag": "\"32c7-65d560f6e2cfb-df\"",
+      "etag": "\"32c7-65d560f6e2cfb\"",
       "file_path": "documentation/Matter/mtrbaseclustertemperaturemeasurement/readattributemeasuredvalue(completionhandler).md",
       "hash": "df76ec147e3fd0cdd4f84fd61ad64118f77cda145645f55dfe7bc704f0e5c327"
     },
@@ -214335,9 +214340,10 @@
       "file_path": "documentation/Matter/mtrdevicestoragebehaviorconfiguration/disablestoragebehavioroptimization.md",
       "hash": "ec5fcc9f64663a79a5cc82beb0f98e4bafd1dc4c1d0b6516d572ece82bce9e36"
     },
-    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicestoragebehaviorconfiguration/init(reporttopersistencedelaytime:reporttopersistencedelaytimemax:recentreporttimesmaxcount:timebetweenreportstooshortthreshold:timebetweenreportstooshortminthreshold:reporttopersistencedelaymaxmultiplier:devicereportingexcessivelyintervalthreshold:).json": {
-      "error": "HTTP 404",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicestoragebehaviorconfiguration/init(reporttopersistencedelaytime:reporttopersistencedelaytimemax:recentreporttimesmaxcount:timebetweenreportstooshortthreshold:timebetweenreportstooshortminthreshold:reporttopersistencedelaymaxmultiplier:devicereportingexcessivelyintervalt-6xgqf.json": {
+      "etag": "\"5186-65d560fdc750a-df\"",
+      "file_path": "documentation/Matter/mtrdevicestoragebehaviorconfiguration/init(reporttopersistencedelaytime_reporttopersistencedelaytimemax_recentreporttimesmaxcount_timebetweenreportstooshortthreshold_timebetweenreportstooshortminthreshold_reporttopersistencedelaymaxmultiplier_devicereporti-c06fe453.md",
+      "hash": "47eec32f0b798adc55de5697a934154d7246a00a1b3e8205c5a661b4e32632d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrdevicestoragebehaviorconfiguration/recentreporttimesmaxcount.json": {
       "etag": "\"1f96-65d560fdc750a-df\"",
@@ -222525,7 +222531,7 @@
       "hash": "8f1013a094c129614a1335c876351133a091dd5dc4a3dd66fb51bf9582993f10"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrgeneraldiagnosticshardwarefault/powersource.json": {
-      "etag": "\"197e-65d560fa0748a-df\"",
+      "etag": "\"197e-65d560fa0748a\"",
       "file_path": "documentation/Matter/mtrgeneraldiagnosticshardwarefault/powersource.md",
       "hash": "4fa19e603c1cf476ffdc2fb145974a1aafb9a0353da0d21b3aabdde247dd5957"
     },
@@ -243569,6 +243575,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 48713
+    "total_pages": 48714
   }
 }

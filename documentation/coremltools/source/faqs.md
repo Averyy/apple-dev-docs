@@ -169,7 +169,7 @@ With `EnumeratedShapes` the model can be optimized for the finite set of input s
 
 For details and examples of using flexible input shapes, see [Flexible Input Shapes](flexible-inputs.md).
 
-## Whyoptimize.torchis better than PyTorch’s default quantization
+## Why optimize.torch is better than PyTorch’s default quantization
 
 You can use PyTorch’s quantization APIs directly, and then convert the model to Core ML.
 However, the converted model performance may not be optimal.

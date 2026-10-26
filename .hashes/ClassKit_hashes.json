@@ -915,10 +915,6 @@
       "file_path": "documentation/ClassKit/building-missing-contexts.md",
       "hash": "2dd625cca63b1053e68d518da9894216039efaaad0528560ffa4c502b8ea6798"
     },
-    "https://developer.apple.com/tutorials/data/documentation/classkit/classkitui.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/classkit/clsactivity.json": {
       "etag": "\"8132-65d55f157362c-df\"",
       "file_path": "documentation/ClassKit/clsactivity.md",
@@ -1799,6 +1795,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 359
+    "total_pages": 358
   }
 }

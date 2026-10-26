@@ -1,0 +1,28 @@
+# simd_min(_:_:)
+
+**Framework**: simd  
+**Kind**: func  
+**Role**: Function
+
+Returns the minimum value of each element in a vector.
+
+## Declaration
+
+```swift
+func simd_min(_ x: simd_uchar4, _ y: simd_uchar4) -> simd_uchar4
+```
+
+```c
+static simd_uchar4 simd_min(simd_uchar4 x, simd_uchar4 y);
+```
+
+## See Also
+
+### Extrema Functions
+- [func simd_max(simd_uchar4, simd_uchar4) -> simd_uchar4](./simd_max%28_,_%29-2f249.md)
+  Returns the maximum value of each element in a vector.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/simd/simd_min(_:_:)-9muwy)*

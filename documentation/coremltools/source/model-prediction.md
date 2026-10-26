@@ -200,14 +200,18 @@ By storing the `mlmodelc` file to a fixed location first, and then initializing 
 To use a compiled model file, follow these steps:
 
 1. Load a saved MLModel, or convert a model from a training framework (such as TensorFlow or PyTorch).
-For instructions on converting a model, see [Load and Convert Model Workflow](load-and-convert-model.md). This example uses the [regnet_y_128fg](https://pytorch.org/vision/main/models/generated/torchvision.models.regnet_y_128gf.html) torchvision model and assumes that you have already converted it to a Core ML `mlpackage`.
+
+   For instructions on converting a model, see [Load and Convert Model Workflow](load-and-convert-model.md). This example uses the [regnet_y_128fg](https://pytorch.org/vision/main/models/generated/torchvision.models.regnet_y_128gf.html) torchvision model and assumes that you have already converted it to a Core ML `mlpackage`.
+
 2. Get the compiled model directory by calling its `get_compiled_model_path` method.
-For example, the following code snippet loads a saved MLModel (`"regnet_y_128gf.mlpackage"`) and gets the compiled path:
+
+   For example, the following code snippet loads a saved MLModel (`"regnet_y_128gf.mlpackage"`) and gets the compiled path:
 
    ```
    mlmodel = ct.models.MLModel("regnet_y_128gf.mlpackage")
    compiled_model_path = mlmodel.get_compiled_model_path()
    ```
+
 3. The returned directory in `compiled_model_path` is only temporary. Copy that directory to a new persistent location (as in the following example, `regnet_y_128gf` with the extension `.mlmodelc` in the same directory) using the [shutil.copytree()](https://docs.python.org/3/library/shutil.html) method. You can then use CompiledMLModel to load the compiled model from `"regnet_y_128gf.mlmodelc"`:
 
    ```
@@ -217,7 +221,8 @@ For example, the following code snippet loads a saved MLModel (`"regnet_y_128gf.
    mlmodel = ct.models.CompiledMLModel("regnet_y_128gf.mlmodelc")
    ```
 
-This step includes compiling for device specialization. Therefore, the first load can still take a long time. However, since the location of the `mlmodelc` folder is fixed, the cache is able to work, so subsequent calls to model using CompiledMLModel are quick.
+   This step includes compiling for device specialization. Therefore, the first load can still take a long time. However, since the location of the `mlmodelc` folder is fixed, the cache is able to work, so subsequent calls to model using CompiledMLModel are quick.
+
 4. For each prediction, use the `mlmodel` object to take advantage of this caching:
 
    ```

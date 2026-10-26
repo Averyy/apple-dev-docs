@@ -31642,7 +31642,7 @@
       "hash": "eb4149a326a3b2ef54314a248c007a6909a3c5864b9cd490db47fd2533e8f2ab"
     },
     "https://developer.apple.com/documentation/swiftui/view/listitemtint(_:)": {
-      "etag": "\"2b81-65d55df2b5c2d\"",
+      "etag": "\"2b81-65d55df2b5c2d-df\"",
       "file_path": "documentation/SwiftUI/view/listitemtint(_).md",
       "hash": "0cbf5859aee634375c5db5627297aac3a5d54041a795e971e036d002f26d3229"
     },
@@ -39777,10 +39777,6 @@
       "etag": "\"1703-65d55de1096ea-df\"",
       "file_path": "documentation/SwiftUI/columnsformstyle/init().md",
       "hash": "441a62974f8dc33c4449965fd3698844af9959aa4cc3658a5bdb12b67e1a123e"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftui/com.apple.swiftui/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/commandgroup.json": {
       "etag": "\"3be4-65d55de4aa67a-df\"",
@@ -67366,7 +67362,7 @@
       "hash": "eb4149a326a3b2ef54314a248c007a6909a3c5864b9cd490db47fd2533e8f2ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftui/view/listitemtint(_:).json": {
-      "etag": "\"2b81-65d55df2b5c2d\"",
+      "etag": "\"2b81-65d55df2b5c2d-df\"",
       "file_path": "documentation/SwiftUI/view/listitemtint(_).md",
       "hash": "0cbf5859aee634375c5db5627297aac3a5d54041a795e971e036d002f26d3229"
     },
@@ -71445,6 +71441,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 14292
+    "total_pages": 14291
   }
 }

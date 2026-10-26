@@ -33,15 +33,16 @@ typically drop much faster in this workflow when the amount of compression incre
 A few examples when you may want to use this workflow:
 
 - The following two approaches can get a factor of 2x or more compression instantly
-with minimal loss of accuracy for most models, and decent latency gains depending on the specific model instance:
+  with minimal loss of accuracy for most models, and decent latency gains depending on the specific model instance:
 
-Palettization to 8 or 6 bits
-Linear quantization of weights to 8 bits
+  - Palettization to 8 or 6 bits
+  - Linear quantization of weights to 8 bits
+
 - In many cases, you may be able to compress more without much degradation. If it works for your model,
-it is a very quick way to get them up to four times smaller compared to the `float16` precision version!
+  it is a very quick way to get them up to four times smaller compared to the `float16` precision version!
 
-4-bit palettization with grouped channel mode (typical group sizes to try: 32, 16, 8)
-4-bit weight-only quantization with per block mode (typical block sizes to try: 64, 32, 16)
+  - 4-bit palettization with grouped channel mode (typical group sizes to try: 32, 16, 8)
+  - 4-bit weight-only quantization with per block mode (typical block sizes to try: 64, 32, 16)
 
 Since on-device performance metrics (latency, memory footprint, model size) depend solely on
 the compression configuration used, and not on the workflow used for compression, it is always recommended to start with the
@@ -76,10 +77,10 @@ available via the `cto.torch.layerwise_compression` API.
 - Even though you will typically start off from a pre-trained model, access to the full training pipeline and the training data is required for fine-tuning.
 - A few examples when this approach is appropriate:
 
-Palettization to 4 bits with a single lookup table (LUT) or to lower than 4 bits
-If activation quantization with calibration data loses accuracy, then quantization-aware training (QAT) is required to regain the loss.
-For pruning, this is the most effective workflow, and it is often required to achieve higher
-levels of sparsity (75% or more) without significant loss of accuracy.
+  - Palettization to 4 bits with a single lookup table (LUT) or to lower than 4 bits
+  - If activation quantization with calibration data loses accuracy, then quantization-aware training (QAT) is required to regain the loss.
+  - For pruning, this is the most effective workflow, and it is often required to achieve higher
+  levels of sparsity (75% or more) without significant loss of accuracy.
 
 For large models, if the data-free or calibration data based techniques lead to high degradation,
 then it is recommended to first compress the weights of the torch model, using something like the data-free

@@ -3630,10 +3630,6 @@
       "file_path": "documentation/MediaPlayer/becoming-a-now-playable-app.md",
       "hash": "170670c1de4b164b5c3b1ca630f217bf8f22b68c322a1c489e9650955d1cbdd8"
     },
-    "https://developer.apple.com/tutorials/data/documentation/mediaplayer/com.apple.mediaplayer/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/deprecated-types.json": {
       "etag": "\"8146-6590236c4c85b-df\"",
       "file_path": "documentation/MediaPlayer/deprecated-types.md",
@@ -7257,6 +7253,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1451
+    "total_pages": 1450
   }
 }

@@ -260,10 +260,6 @@
       "file_path": "documentation/EventKitUI/EventKitUI.md",
       "hash": "773609dfc35c419211ce5355412dabac4f785c71234215b316f97589fd2e3b68"
     },
-    "https://developer.apple.com/tutorials/data/documentation/eventkitui/com.apple.eventkitui/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser.json": {
       "etag": "\"a42d-65d5609c74ff5-df\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser.md",
@@ -519,6 +515,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 103
+    "total_pages": 102
   }
 }

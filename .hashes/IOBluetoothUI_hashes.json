@@ -316,9 +316,9 @@
       "hash": "da9d4d549f62f2470e2d7defd0a29316fc6a6ccb80b6feb5328e8a991d3c6f1c"
     },
     "https://developer.apple.com/documentation/iobluetoothui/iobluetoothpasskeydisplay": {
-      "etag": "\"f7d1-65d55c0a0ec49-df\"",
+      "etag": "\"f21f-65da34cd44406-df\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay.md",
-      "hash": "791bf1bea09a690acee4ad6e234b25c6b0ae6554b9f056aba00d14c5ab8b627b"
+      "hash": "f2f4a59836d46284d4e562b3feea1f396f8e0c5d40a356102ceaaa16048f75a6"
     },
     "https://developer.apple.com/documentation/iobluetoothui/iobluetoothpasskeydisplay/advancepasskeyindicator()": {
       "etag": "\"37f1-65d55c0a32f9d-df\"",
@@ -594,10 +594,6 @@
       "etag": "\"2683-65d55c0a4861d-df\"",
       "file_path": "documentation/IOBluetoothUI/bluetoothkeyboardreturntype/rawvalue.md",
       "hash": "7bdfc3c020174e94721ff8648f02baf7ee4d9cef5c50baab027023a60d6f5a73"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/com.apple.iobluetoothui/objc(cs)nsimagecell.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothaccessibilityignoredimagecell.json": {
       "etag": "\"797d-65d55c0a4861d-df\"",
@@ -880,9 +876,9 @@
       "hash": "da9d4d549f62f2470e2d7defd0a29316fc6a6ccb80b6feb5328e8a991d3c6f1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay.json": {
-      "etag": "\"f7d1-65d55c0a0ec49-df\"",
+      "etag": "\"f21f-65da34cd44406-df\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay.md",
-      "hash": "791bf1bea09a690acee4ad6e234b25c6b0ae6554b9f056aba00d14c5ab8b627b"
+      "hash": "f2f4a59836d46284d4e562b3feea1f396f8e0c5d40a356102ceaaa16048f75a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/advancepasskeyindicator().json": {
       "etag": "\"37f1-65d55c0a32f9d-df\"",
@@ -1129,6 +1125,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 225
+    "total_pages": 224
   }
 }

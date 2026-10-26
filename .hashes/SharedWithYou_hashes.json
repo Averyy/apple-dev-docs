@@ -650,10 +650,6 @@
       "file_path": "documentation/SharedWithYou/collaboration-views.md",
       "hash": "f308dbb64d5634e5ea37d4db6bcff5d8b69908f16960ea1a51d6735dd6f15f18"
     },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/com.apple.sharedwithyou/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/macros.json": {
       "etag": "\"b34-659026efe14af-df\"",
       "file_path": "documentation/SharedWithYou/macros.md",
@@ -668,66 +664,6 @@
       "etag": "\"461a-659026f004ee1-df\"",
       "file_path": "documentation/SharedWithYou/shared-content-interactions.md",
       "hash": "15577bb2b58ec00cc197fe448cc9f556be2533f9caf0d02aef9e6bafffda0625"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swaction.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationactionhandler.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationcoordinator.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationidentifier.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationmetadata.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationoption.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationoptionsgroup.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationoptionspickergroup.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swcollaborationshareoptions.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swlocalcollaborationidentifier.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swperson.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swstartcollaborationaction.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/swupdatecollaborationparticipantsaction.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/sharedwithyoucore/utcollaborationoptionstypeidentifier.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/sharedwithyou/swattributionview.json": {
       "etag": "\"1026d-65d560bc9c287-df\"",
@@ -1326,9 +1262,12 @@
     }
   },
   "metadata": {
+    "child_modules": {
+      "sharedwithyoucore": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 268
+    "total_pages": 252
   }
 }

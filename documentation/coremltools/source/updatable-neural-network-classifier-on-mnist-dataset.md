@@ -166,7 +166,7 @@ convert_keras_to_mlmodel(keras_model_path , coreml_model_path)
    		'An updatable hand-written digit classifier setup to train or be fine-tuned on MNIST like data.')
    ```
 
-## Definemake_updatable
+## Define make_updatable
 
 ```
 def make_updatable(builder, mlmodel_url, mlmodel_updatable_path):

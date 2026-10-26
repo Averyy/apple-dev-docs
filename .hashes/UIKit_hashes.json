@@ -21611,9 +21611,9 @@
       "hash": "60fb633668439eebe807f49d5b27f6d8f6c4e21e3d5dd1a3ac34a375bb467da3"
     },
     "https://developer.apple.com/documentation/uikit/uidragpreviewparameters": {
-      "etag": "\"4b51-65d55db0898a6-df\"",
+      "etag": "\"459f-65e02671837af-df\"",
       "file_path": "documentation/UIKit/uidragpreviewparameters.md",
-      "hash": "f931f60e45fe754833cb0fc7b7dcaf653915f92bac0ebf6c9c96d306d0f8aefa"
+      "hash": "0cbdaeadc60ea4fa120ef1f538f449b8e0b6a96ce4d493fe0d8ed9ac53e6438f"
     },
     "https://developer.apple.com/documentation/uikit/uidragpreviewtarget": {
       "etag": "\"484d-65d55dbded3b0-df\"",
@@ -52176,9 +52176,9 @@
       "hash": "8d3fc167e9bf480de6ffbe42d3828f33cfb156430e9a6ac99984077f7e65b535"
     },
     "https://developer.apple.com/documentation/uikit/uiview": {
-      "etag": "\"64abd-65dda174146fc-df\"",
+      "etag": "\"6450b-65dda5efe0898-df\"",
       "file_path": "documentation/UIKit/uiview.md",
-      "hash": "d3369c9b310aec47179d69e65912ebbcdb2a1ab5a3da54d4c6f4c41710c016c1"
+      "hash": "6754fc3f75440dc695f048daa8b5155fb05ae276aeda8c4f82ea7cda525cea11"
     },
     "https://developer.apple.com/documentation/uikit/uiview-deprecated-symbols": {
       "etag": "\"6dab-65dda16c85485-df\"",
@@ -55051,7 +55051,7 @@
       "hash": "282e21c3162b03a2b23e699fec826e391d178e934fa4ceaf7eef9273cf7dc07c"
     },
     "https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/isanimated": {
-      "etag": "\"38fe-65d55dc39b5a4\"",
+      "etag": "\"38fe-65d55dc39b5a4-df\"",
       "file_path": "documentation/UIKit/uiviewcontrollercontexttransitioning/isanimated.md",
       "hash": "1a8488fbd42ddf10090fb6daecf08d7e186ef12e0c81c40fd5300e2804ececb1"
     },
@@ -57464,10 +57464,6 @@
       "etag": "\"8c83-6590263701071-df\"",
       "file_path": "documentation/UIKit/color-creation.md",
       "hash": "6b99c69e1137382da8680a2956933cb908015cc681bbcf7d24e38907a78c8436"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/uikit/com.apple.uikit/7testing17attachableasimagep.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/computing-the-perpendicular-force-of-apple-pencil.json": {
       "etag": "\"191f-65d55dcb1ad96-df\"",
@@ -78710,9 +78706,9 @@
       "hash": "60fb633668439eebe807f49d5b27f6d8f6c4e21e3d5dd1a3ac34a375bb467da3"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uidragpreviewparameters.json": {
-      "etag": "\"4b51-65d55db0898a6-df\"",
+      "etag": "\"459f-65e02671837af-df\"",
       "file_path": "documentation/UIKit/uidragpreviewparameters.md",
-      "hash": "f931f60e45fe754833cb0fc7b7dcaf653915f92bac0ebf6c9c96d306d0f8aefa"
+      "hash": "0cbdaeadc60ea4fa120ef1f538f449b8e0b6a96ce4d493fe0d8ed9ac53e6438f"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uidragpreviewtarget.json": {
       "etag": "\"484d-65d55dbded3b0-df\"",
@@ -109280,9 +109276,9 @@
       "hash": "09eeecb1ddc96aaf003ea903c295bd573780740ab18be352adfd575be0081b3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview.json": {
-      "etag": "\"64abd-65dda174146fc-df\"",
+      "etag": "\"6450b-65dda5efe0898-df\"",
       "file_path": "documentation/UIKit/uiview.md",
-      "hash": "d3369c9b310aec47179d69e65912ebbcdb2a1ab5a3da54d4c6f4c41710c016c1"
+      "hash": "6754fc3f75440dc695f048daa8b5155fb05ae276aeda8c4f82ea7cda525cea11"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiview/accessibilityignoresinvertcolors.json": {
       "etag": "\"3ecc-65d55db88a159-df\"",
@@ -112150,7 +112146,7 @@
       "hash": "282e21c3162b03a2b23e699fec826e391d178e934fa4ceaf7eef9273cf7dc07c"
     },
     "https://developer.apple.com/tutorials/data/documentation/uikit/uiviewcontrollercontexttransitioning/isanimated.json": {
-      "etag": "\"38fe-65d55dc39b5a4\"",
+      "etag": "\"38fe-65d55dc39b5a4-df\"",
       "file_path": "documentation/UIKit/uiviewcontrollercontexttransitioning/isanimated.md",
       "hash": "1a8488fbd42ddf10090fb6daecf08d7e186ef12e0c81c40fd5300e2804ececb1"
     },
@@ -114199,6 +114195,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 22839
+    "total_pages": 22838
   }
 }

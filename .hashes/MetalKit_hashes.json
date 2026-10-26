@@ -600,10 +600,6 @@
       "file_path": "documentation/MetalKit/MetalKit.md",
       "hash": "89d19035284d086bbce04e929bf518819fdd406b8ae31a5973980121bca602da"
     },
-    "https://developer.apple.com/tutorials/data/documentation/metalkit/com.apple.metalkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/conversion-functions.json": {
       "etag": "\"3d53-65902954d05a5-df\"",
       "file_path": "documentation/MetalKit/conversion-functions.md",
@@ -1199,6 +1195,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 239
+    "total_pages": 238
   }
 }

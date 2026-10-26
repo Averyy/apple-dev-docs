@@ -81371,7 +81371,7 @@
       "hash": "3e21c10e507715f32099845e5fb61fd181e000f314711e29156241dd61d83d7a"
     },
     "https://developer.apple.com/documentation/kernel/evglobals/1571563-llelast": {
-      "etag": "\"dee-6593d12c1beae-df\"",
+      "etag": "\"dee-6593d12c1beae\"",
       "file_path": "documentation/kernel/evglobals/api-1571563-llelast.md",
       "hash": "c641a0313e87078c01e60df563f3ced598c9105567a43a0ea47131e79c985421"
     },
@@ -105371,7 +105371,7 @@
       "hash": "19969a1c10f7373e262f48a58b704e386867acb7e187f35f7000835ca89f5acb"
     },
     "https://developer.apple.com/documentation/kernel/iodisplaytimingrangev1/3131529-maxnumlinks": {
-      "etag": "\"e7f-6593d11f42952\"",
+      "etag": "\"e7f-6593d11f42952-df\"",
       "file_path": "documentation/kernel/iodisplaytimingrangev1/api-3131529-maxnumlinks.md",
       "hash": "850da936117c767dd79f756dda022292af11a84923b2b8a496949bb80f7202f7"
     },
@@ -278891,7 +278891,7 @@
       "hash": "3e21c10e507715f32099845e5fb61fd181e000f314711e29156241dd61d83d7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/evglobals/1571563-llelast.json": {
-      "etag": "\"dee-6593d12c1beae-df\"",
+      "etag": "\"dee-6593d12c1beae\"",
       "file_path": "documentation/kernel/evglobals/api-1571563-llelast.md",
       "hash": "c641a0313e87078c01e60df563f3ced598c9105567a43a0ea47131e79c985421"
     },
@@ -302891,7 +302891,7 @@
       "hash": "19969a1c10f7373e262f48a58b704e386867acb7e187f35f7000835ca89f5acb"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iodisplaytimingrangev1/3131529-maxnumlinks.json": {
-      "etag": "\"e7f-6593d11f42952\"",
+      "etag": "\"e7f-6593d11f42952-df\"",
       "file_path": "documentation/kernel/iodisplaytimingrangev1/api-3131529-maxnumlinks.md",
       "hash": "850da936117c767dd79f756dda022292af11a84923b2b8a496949bb80f7202f7"
     },

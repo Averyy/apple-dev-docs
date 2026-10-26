@@ -2205,10 +2205,6 @@
       "file_path": "documentation/RoomPlan/chairtype/unidentified.md",
       "hash": "dac54385ba1e6b7d4a8ca8f29ffc9f5307c7069af4544d4a1040691f54d59723"
     },
-    "https://developer.apple.com/tutorials/data/documentation/roomplan/com.apple.roomplan/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.json": {
       "etag": "\"ef5-65d560cc8a243-df\"",
       "file_path": "documentation/RoomPlan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md",
@@ -2739,6 +2735,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 547
+    "total_pages": 546
   }
 }

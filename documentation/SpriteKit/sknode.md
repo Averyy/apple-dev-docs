@@ -285,6 +285,8 @@ class SKNode
 - [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
 - [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UICoordinateSpace](../UIKit/uicoordinatespace.md)
 - [UIFocusEnvironment](../UIKit/uifocusenvironment.md)

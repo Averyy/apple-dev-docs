@@ -1706,9 +1706,9 @@
       "hash": "77e93f096a45fa04c673972b7ec2ba8293da4c34033988d9b49cfe16b29f9436"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingview": {
-      "etag": "\"9f5f-65d75a2661d84-df\"",
+      "etag": "\"99ad-65d55e2066dad-df\"",
       "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingview.md",
-      "hash": "ba3797d5658641bddff45841caa063e246c3f9800bb9124dd2a79664591a4308"
+      "hash": "a8b25b69e780517e404843a14897922b844db2dc2ce7918f79a77e1ea166b1ef"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingview/handle": {
       "etag": "\"218c-65d55e20d3afd-df\"",
@@ -3595,10 +3595,6 @@
       "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/shouldevaluateurls.md",
       "hash": "bfd7bab58f5c4ebeee2c2ee9c5c6024ba803860f121f08d16421f8ad5bed5608"
     },
-    "https://developer.apple.com/tutorials/data/documentation/browserenginekit/com.apple.browserenginekit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/creating-browser-extensions-in-xcode.json": {
       "etag": "\"8a41-65d55e201646c-df\"",
       "file_path": "documentation/BrowserEngineKit/creating-browser-extensions-in-xcode.md",
@@ -3745,9 +3741,9 @@
       "hash": "77e93f096a45fa04c673972b7ec2ba8293da4c34033988d9b49cfe16b29f9436"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingview.json": {
-      "etag": "\"9f5f-65d75a2661d84-df\"",
+      "etag": "\"99ad-65d55e2066dad-df\"",
       "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingview.md",
-      "hash": "ba3797d5658641bddff45841caa063e246c3f9800bb9124dd2a79664591a4308"
+      "hash": "a8b25b69e780517e404843a14897922b844db2dc2ce7918f79a77e1ea166b1ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingview/handle.json": {
       "etag": "\"218c-65d55e20d3afd-df\"",
@@ -3994,26 +3990,6 @@
       "file_path": "documentation/BrowserEngineKit/restrictedsandboxrevision.md",
       "hash": "b22b29cc71a644cb67767169f0a7bedc2b9359e044838c9920e72ae93b98a2e1"
     },
-    "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxrevision/...(_:)-1uguo.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxrevision/...(_:)-6obr2.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxrevision/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxrevision/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxrevision/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxrevision/revision1.json": {
       "etag": "\"1645-65d55e201646c-df\"",
       "file_path": "documentation/BrowserEngineKit/restrictedsandboxrevision/revision1.md",
@@ -4099,6 +4075,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 820
+    "total_pages": 814
   }
 }

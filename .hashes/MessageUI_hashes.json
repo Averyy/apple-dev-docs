@@ -251,9 +251,9 @@
       "hash": "dec915a6a86622e535811b32474abe5ef076504fad4c121f147dbe9dbf74ee69"
     },
     "https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller": {
-      "etag": "\"1173b-65e027a8b4ffe-df\"",
+      "etag": "\"11ced-65d55e5e167e4-df\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller.md",
-      "hash": "688ced519733007c0ea45fb95af92393106412dd0cf6dbf8c88d87817a2579cc"
+      "hash": "a19720d86ea76145f50b77c56d7df5f16affcf53d1b83a6c6e454a403d2cd5e1"
     },
     "https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller/addattachmentdata(_:typeidentifier:filename:)": {
       "etag": "\"7101-65d55e5e167e4-df\"",
@@ -399,10 +399,6 @@
       "etag": "\"3800-65d55e5e167e4-df\"",
       "file_path": "documentation/MessageUI/MessageUI.md",
       "hash": "55700036f86339ce3f324fcdf575eb76dc050f3973620a01ddd7e3d2870a1de3"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/messageui/com.apple.messageui/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/messagecomposeresult.json": {
       "etag": "\"3f04-65d55e5e021e7-df\"",
@@ -650,9 +646,9 @@
       "hash": "dec915a6a86622e535811b32474abe5ef076504fad4c121f147dbe9dbf74ee69"
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller.json": {
-      "etag": "\"1173b-65e027a8b4ffe-df\"",
+      "etag": "\"11ced-65d55e5e167e4-df\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller.md",
-      "hash": "688ced519733007c0ea45fb95af92393106412dd0cf6dbf8c88d87817a2579cc"
+      "hash": "a19720d86ea76145f50b77c56d7df5f16affcf53d1b83a6c6e454a403d2cd5e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/addattachmentdata(_:typeidentifier:filename:).json": {
       "etag": "\"7101-65d55e5e167e4-df\"",
@@ -799,6 +795,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 159
+    "total_pages": 158
   }
 }

@@ -2230,6 +2230,11 @@
       "file_path": "documentation/CoreMedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/identifier.md",
       "hash": "61648357b306c5e5998f3457fd3e6301555262eb91bfa52238e9dd9d2b0fdcad"
     },
+    "https://developer.apple.com/documentation/coremedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/init(algorithmkind:identifier:domain:role:distortioncoefficients:xframeadjustmentspolynomial:yframeadjustmentspolynomial:radialanglelimit:intrinsicmatrix:intrinsicmatrixprojectionoffset:intrinsicmatrixreferencedimensions:extrinsicoriginsour-4ejrv": {
+      "etag": "\"950f-65d55c8682d6e-df\"",
+      "file_path": "documentation/CoreMedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/init(algorithmkind_identifier_domain_role_distortioncoefficients_xframeadjustmentspolynomial_yframeadjustmentspolynomial_radialanglelimit_intrinsicmatrix_intrinsicmatrixprojectionoffset_intrinsicmatrixreferencedimensio-9843c46f.md",
+      "hash": "b4693eab339c8e28e94e1e51f2f31ebbfeb5b60b9b03b3149f336b930381bc62"
+    },
     "https://developer.apple.com/documentation/coremedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/intrinsicmatrix": {
       "etag": "\"27ac-65d55c8682d6e-df\"",
       "file_path": "documentation/CoreMedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/intrinsicmatrix.md",
@@ -13780,9 +13785,10 @@
       "file_path": "documentation/CoreMedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/identifier.md",
       "hash": "61648357b306c5e5998f3457fd3e6301555262eb91bfa52238e9dd9d2b0fdcad"
     },
-    "https://developer.apple.com/tutorials/data/documentation/coremedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/init(algorithmkind:identifier:domain:role:distortioncoefficients:xframeadjustmentspolynomial:yframeadjustmentspolynomial:radialanglelimit:intrinsicmatrix:intrinsicmatrixprojectionoffset:intrinsicmatrixreferencedimensions:extrinsicoriginsource:extrinsicorientationquaternion:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/coremedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/init(algorithmkind:identifier:domain:role:distortioncoefficients:xframeadjustmentspolynomial:yframeadjustmentspolynomial:radialanglelimit:intrinsicmatrix:intrinsicmatrixprojectionoffset:intrinsicmatrixreferencedimensions:extrinsicoriginsour-4ejrv.json": {
+      "etag": "\"950f-65d55c8682d6e-df\"",
+      "file_path": "documentation/CoreMedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/init(algorithmkind_identifier_domain_role_distortioncoefficients_xframeadjustmentspolynomial_yframeadjustmentspolynomial_radialanglelimit_intrinsicmatrix_intrinsicmatrixprojectionoffset_intrinsicmatrixreferencedimensio-9843c46f.md",
+      "hash": "b4693eab339c8e28e94e1e51f2f31ebbfeb5b60b9b03b3149f336b930381bc62"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremedia/cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/calibration/intrinsicmatrix.json": {
       "etag": "\"27ac-65d55c8682d6e-df\"",
@@ -23109,6 +23115,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 4621
+    "total_pages": 4622
   }
 }

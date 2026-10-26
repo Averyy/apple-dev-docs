@@ -11388,26 +11388,6 @@
       "file_path": "documentation/CreateML/mldatavalue/dictionarytype/datavaluetype.md",
       "hash": "85c05f716b6fee1af259137c8a3e35e1fcc476a76356e42ba4deb31ae8d042f9"
     },
-    "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/index/...(_:)-3dxsb.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/index/...(_:)-6bii8.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/index/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/index/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/index/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/init().json": {
       "file_path": "documentation/CreateML/mldatavalue/dictionarytype/init().md",
       "hash": ""
@@ -17625,6 +17605,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 3527
+    "total_pages": 3522
   }
 }

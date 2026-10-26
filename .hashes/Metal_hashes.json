@@ -11101,6 +11101,11 @@
       "file_path": "documentation/Metal/mtlindirectrendercommand/clearbarrier().md",
       "hash": "c47fdb807f5857f416575a0bb63deb0bfe4187511c27cb5ab1211c1f2357191d"
     },
+    "https://developer.apple.com/documentation/metal/mtlindirectrendercommand/drawindexedpatches(_:patchstart:patchcount:patchindexbuffer:patchindexbufferoffset:controlpointindexbuffer:controlpointindexbufferoffset:instancecount:baseinstance:tessellationfactorbuffer:tessellationfactorbufferoffset:tessellationfactorbu-4mdz8": {
+      "etag": "\"b7be-65d55e2d61bd7-df\"",
+      "file_path": "documentation/Metal/mtlindirectrendercommand/drawindexedpatches(__patchstart_patchcount_patchindexbuffer_patchindexbufferoffset_controlpointindexbuffer_controlpointindexbufferoffset_instancecount_baseinstance_tessellationfactorbuffer_tessellationfactorbufferoffse-1368a335.md",
+      "hash": "7b13c9066c3ef85251c26b32710fb8f8ccb907a388a8c6b275f628d805902109"
+    },
     "https://developer.apple.com/documentation/metal/mtlindirectrendercommand/drawindexedprimitives(_:indexcount:indextype:indexbuffer:indexbufferoffset:instancecount:basevertex:baseinstance:)": {
       "etag": "\"a03e-65d55e2d61bd7-df\"",
       "file_path": "documentation/Metal/mtlindirectrendercommand/drawindexedprimitives(_,indexcount,indextype,indexbuffer,indexbufferoffset,instancecount,basevertex,baseinstance).md",
@@ -30476,9 +30481,10 @@
       "file_path": "documentation/Metal/mtlindirectrendercommand/clearbarrier().md",
       "hash": "c47fdb807f5857f416575a0bb63deb0bfe4187511c27cb5ab1211c1f2357191d"
     },
-    "https://developer.apple.com/tutorials/data/documentation/metal/mtlindirectrendercommand/drawindexedpatches(_:patchstart:patchcount:patchindexbuffer:patchindexbufferoffset:controlpointindexbuffer:controlpointindexbufferoffset:instancecount:baseinstance:tessellationfactorbuffer:tessellationfactorbufferoffset:tessellationfactorbufferinstancestride:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/metal/mtlindirectrendercommand/drawindexedpatches(_:patchstart:patchcount:patchindexbuffer:patchindexbufferoffset:controlpointindexbuffer:controlpointindexbufferoffset:instancecount:baseinstance:tessellationfactorbuffer:tessellationfactorbufferoffset:tessellationfactorbu-4mdz8.json": {
+      "etag": "\"b7be-65d55e2d61bd7-df\"",
+      "file_path": "documentation/Metal/mtlindirectrendercommand/drawindexedpatches(__patchstart_patchcount_patchindexbuffer_patchindexbufferoffset_controlpointindexbuffer_controlpointindexbufferoffset_instancecount_baseinstance_tessellationfactorbuffer_tessellationfactorbufferoffse-1368a335.md",
+      "hash": "7b13c9066c3ef85251c26b32710fb8f8ccb907a388a8c6b275f628d805902109"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlindirectrendercommand/drawindexedprimitives(_:indexcount:indextype:indexbuffer:indexbufferoffset:instancecount:basevertex:baseinstance:).json": {
       "etag": "\"a03e-65d55e2d61bd7-df\"",
@@ -38759,6 +38765,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 7753
+    "total_pages": 7754
   }
 }

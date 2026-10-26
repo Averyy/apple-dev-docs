@@ -160,26 +160,6 @@
       "file_path": "documentation/WirelessInsights/serviceprediction/confidence.md",
       "hash": "1341a5654d0e937ae5c130e237f4f12d94ba9a1ec8346a6f21b951a465d9ce89"
     },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/...(_:)-7qzhp.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/...(_:)-7ymtt.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/high.json": {
       "etag": "\"1700-65d55dac78cdf-df\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidence/high.md",
@@ -224,26 +204,6 @@
       "etag": "\"2f7b-65d55dac78cdf-df\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/impact-swift.enum.md",
       "hash": "7ed98a577bab5dceb9160832e14c9c5eabc140b9df715f151cacdc9ecadac098"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/...(_:)-15yd1.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/...(_:)-ayl2.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/high.json": {
       "etag": "\"1827-65d55dac78cdf-df\"",
@@ -335,6 +295,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 68
+    "total_pages": 58
   }
 }

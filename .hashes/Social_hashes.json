@@ -320,14 +320,6 @@
       "file_path": "documentation/Social/Social.md",
       "hash": "a88a40eec386ce7a3d55d51370d7c5b14bae1404cd723b6aec3fa5675b7cf8a9"
     },
-    "https://developer.apple.com/tutorials/data/documentation/social/com.apple.social/objc(pl)nstextdelegate.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/social/com.apple.social/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller.json": {
       "etag": "\"ff1a-65d616ad99649-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller.md",
@@ -643,6 +635,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 128
+    "total_pages": 126
   }
 }

@@ -26732,10 +26732,6 @@
       "file_path": "documentation/AppIntents/casedisplayrepresentable/localizedstringresource-7gj71.md",
       "hash": "718ccf3c02a08e171b6926f6deb76bb345a24ef3e3ad4e98e6375dd4c57b4239"
     },
-    "https://developer.apple.com/tutorials/data/documentation/appintents/com.apple.appintents/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/appintents/common-data-types.json": {
       "etag": "\"2ebe-65b3b3b9bf1a2-df\"",
       "file_path": "documentation/AppIntents/common-data-types.md",
@@ -43793,6 +43789,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 8761
+    "total_pages": 8760
   }
 }

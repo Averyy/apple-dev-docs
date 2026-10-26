@@ -29,7 +29,8 @@ Specifies the selection accessory to display for the selected map item content.
 ### Place information
 - [struct MapItemDetailSelectionAccessoryStyle](../mapitemdetailselectionaccessorystyle.md)
   The map item detail selection accessory style.
-- [func mapFeatureSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some View\n](../../SwiftUI/view/mapfeatureselectionaccessory%28_%29.md)
+- [func mapFeatureSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some View
+](../../SwiftUI/view/mapfeatureselectionaccessory%28_%29.md)
   Specifies the selection accessory to display for a `MapFeature`
 - [static func callout(MapItemDetailSelectionAccessoryStyle.CalloutStyle) -> MapItemDetailSelectionAccessoryStyle](../mapitemdetailselectionaccessorystyle/callout%28_%29.md)
   Presents the accessory as an annotation callout on the map.

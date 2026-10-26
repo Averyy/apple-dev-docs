@@ -820,10 +820,6 @@
       "file_path": "documentation/QuickLook/arquicklookpreviewitem/init(fileaturl).md",
       "hash": "395644f11adf1eea0bdd17ba198902ceb12a5dd8a08e08fea12255e4a82f4b4e"
     },
-    "https://developer.apple.com/tutorials/data/documentation/quicklook/com.apple.quicklook/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/quicklook/editingmode.json": {
       "etag": "\"f9a-65d55e0e82fe3-df\"",
       "file_path": "documentation/QuickLook/editingmode.md",
@@ -1589,6 +1585,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 317
+    "total_pages": 316
   }
 }

@@ -26,9 +26,9 @@
       "hash": "14c3183cc9863fb1e87df35940241b1cec14e3fe2eea27762ace7e43428830e2"
     },
     "https://developer.apple.com/documentation/gamecontroller/discovering-game-controllers": {
-      "etag": "\"a87d-65d55d18e7627-df\"",
+      "etag": "\"a87e-65dc7c05649d0-df\"",
       "file_path": "documentation/GameController/discovering-game-controllers.md",
-      "hash": "cf2bd91978b0d18d317d464bc901ef71d8ce28ee825e82d3a3cac8f6601ac55f"
+      "hash": "a9f4a04afcbb82ad5a99246369cecee2d3873d1f494cb62f16be485c80740aa3"
     },
     "https://developer.apple.com/documentation/gamecontroller/dualshock-controller-input-names": {
       "etag": "\"5ec8-6590258541501-df\"",
@@ -1909,6 +1909,11 @@
       "etag": "\"1925-65d55d1ae93a7-df\"",
       "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init().md",
       "hash": "c676428d5343d9f35e2071a2138fd6bfb7b0cd4c9b33272b93f891590da0c4a1"
+    },
+    "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:supportsclickablethumbsticks:leftthumbstickbutton:rightthumb-26via": {
+      "etag": "\"533b-65d55d1ae93a7-df\"",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init(version_size_dpadx_dpady_buttona_buttonb_buttonx_buttony_leftshoulder_rightshoulder_leftthumbstickx_leftthumbsticky_rightthumbstickx_rightthumbsticky_lefttrigger_righttrigger_supportsclickablethumbsticks_leftthumb-fbc7a5cd.md",
+      "hash": "3af1c1bf7fbfa9d676edb4febba2285cf632c180950d43a2771c3ff3be88209f"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdata/leftshoulder": {
       "etag": "\"255c-65d55d1ae93a7-df\"",
@@ -5485,10 +5490,6 @@
       "file_path": "documentation/GameController/adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md",
       "hash": "0a356d080bcec000e60facb1bdf78ca797a4ac3f01edaf2ad29ed168c29987cb"
     },
-    "https://developer.apple.com/tutorials/data/documentation/gamecontroller/com.apple.gamecontroller/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/deprecated-symbols.json": {
       "etag": "\"669d-65902583e72fc-df\"",
       "file_path": "documentation/GameController/deprecated-symbols.md",
@@ -5505,9 +5506,9 @@
       "hash": "14c3183cc9863fb1e87df35940241b1cec14e3fe2eea27762ace7e43428830e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/discovering-game-controllers.json": {
-      "etag": "\"a87d-65d55d18e7627-df\"",
+      "etag": "\"a87e-65dc7c05649d0-df\"",
       "file_path": "documentation/GameController/discovering-game-controllers.md",
-      "hash": "cf2bd91978b0d18d317d464bc901ef71d8ce28ee825e82d3a3cac8f6601ac55f"
+      "hash": "a9f4a04afcbb82ad5a99246369cecee2d3873d1f494cb62f16be485c80740aa3"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/dualshock-controller-input-names.json": {
       "etag": "\"5ec8-6590258541501-df\"",
@@ -7389,9 +7390,10 @@
       "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init().md",
       "hash": "c676428d5343d9f35e2071a2138fd6bfb7b0cd4c9b33272b93f891590da0c4a1"
     },
-    "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:supportsclickablethumbsticks:leftthumbstickbutton:rightthumbstickbutton:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:supportsclickablethumbsticks:leftthumbstickbutton:rightthumb-26via.json": {
+      "etag": "\"533b-65d55d1ae93a7-df\"",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init(version_size_dpadx_dpady_buttona_buttonb_buttonx_buttony_leftshoulder_rightshoulder_leftthumbstickx_leftthumbsticky_rightthumbstickx_rightthumbsticky_lefttrigger_righttrigger_supportsclickablethumbsticks_leftthumb-fbc7a5cd.md",
+      "hash": "3af1c1bf7fbfa9d676edb4febba2285cf632c180950d43a2771c3ff3be88209f"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdata/leftshoulder.json": {
       "etag": "\"255c-65d55d1ae93a7-df\"",

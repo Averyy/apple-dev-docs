@@ -1,0 +1,30 @@
+# simd_make_int4_undef(_:)
+
+**Framework**: simd  
+**Kind**: func  
+**Role**: Function
+
+Returns a new vector with the first element set to a scalar value, and other elements undefined.
+
+## Declaration
+
+```swift
+func simd_make_int4_undef(_ other: Int32) -> simd_int4
+```
+
+```c
+static simd_int4 simd_make_int4_undef(int other);
+```
+
+## See Also
+
+### Functions to Create Four-Element Vectors From Scalar Values
+- [func simd_make_int4(Int32) -> simd_int4](./simd_make_int4%28_%29-7vwve.md)
+  Returns a new vector with the first element set to a scalar value, and other elements set to zero.
+- [func simd_make_int4(Int32, Int32, Int32, Int32) -> simd_int4](./simd_make_int4%28_,_,_,_%29.md)
+  Returns a new vector from the specified scalar values.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/simd/simd_make_int4_undef(_:)-2wt72)*

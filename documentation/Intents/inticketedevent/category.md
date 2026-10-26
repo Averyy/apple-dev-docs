@@ -1,0 +1,50 @@
+# category
+
+**Framework**: Intents  
+**Kind**: property  
+**Role**: Instance Property
+
+The type of ticketed event.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+- macOS 11.0+
+- visionOS 1.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+var category: INTicketedEventCategory { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readonly) INTicketedEventCategory category;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readonly) INTicketedEventCategory category;
+```
+
+## See Also
+
+### Getting Ticketed Event Information
+- [enum INTicketedEventCategory](../inticketedeventcategory.md)
+  Constants that define the type of ticketed event.
+- [var eventDuration: INDateComponentsRange](./eventduration.md)
+  The date and time range that indicates the beginning and end of the event.
+- [var location: CLPlacemark?](./location.md)
+  The name and location of the ticketed event.
+- [var name: String](./name.md)
+  The name of the event.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/intents/inticketedevent/category)*

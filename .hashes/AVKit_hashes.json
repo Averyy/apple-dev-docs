@@ -31,9 +31,9 @@
       "hash": "c77eb3884d11f40f80d62de666c7fdb50bc3c405eb7770f3db10d482a0586d17"
     },
     "https://developer.apple.com/documentation/avkit/adopting-the-system-player-interface-in-visionos": {
-      "etag": "\"c0a4-65d55ee33f4ec-df\"",
+      "etag": "\"c0a5-65da4fdcdc297-df\"",
       "file_path": "documentation/AVKit/adopting-the-system-player-interface-in-visionos.md",
-      "hash": "ad8fcb72f07f41ab597f257c40e9a8ded24520eae0387f824183796c68fc1cea"
+      "hash": "0665a8888936b7abbb49b803f7e3c4ad623ad4f25e18dd59d1d6b4cff966cca3"
     },
     "https://developer.apple.com/documentation/avkit/avcapturedevicedescriptor": {
       "etag": "\"639c-65d55ee3287e7-df\"",
@@ -116,9 +116,9 @@
       "hash": "db7f12f6c0fe41297ed21653aafe0d216d30fa2cf13857a5d06cf53c169f9838"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureeventinteraction": {
-      "etag": "\"7c14-65d55ee310052-df\"",
+      "etag": "\"7c15-65e7b4d623c04-df\"",
       "file_path": "documentation/AVKit/avcaptureeventinteraction.md",
-      "hash": "5d694d848528366a80537df858f02d983b5ebfd37c9fbaddc1bbd9552a5982ba"
+      "hash": "04b42df980bb1f79fd497d7c4cb86e313739e59318d54462dace50321a0d10ee"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureeventinteraction/defaultcapturesounddisabled": {
       "etag": "\"2dfc-65d55ee33f4ec-df\"",
@@ -206,9 +206,9 @@
       "hash": "a04ef27c1a709492c20c2e50b6feda7bc9419b52540a3088e65bb7192fd35d5e"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview": {
-      "etag": "\"7d14-65d61924330e2-df\"",
+      "etag": "\"82c6-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
+      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
     },
     "https://developer.apple.com/documentation/avkit/avcaptureview/controlsstyle": {
       "etag": "\"23d4-65d55ee2f3b37-df\"",
@@ -2831,9 +2831,9 @@
       "hash": "c77eb3884d11f40f80d62de666c7fdb50bc3c405eb7770f3db10d482a0586d17"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/adopting-the-system-player-interface-in-visionos.json": {
-      "etag": "\"c0a4-65d55ee33f4ec-df\"",
+      "etag": "\"c0a5-65da4fdcdc297-df\"",
       "file_path": "documentation/AVKit/adopting-the-system-player-interface-in-visionos.md",
-      "hash": "ad8fcb72f07f41ab597f257c40e9a8ded24520eae0387f824183796c68fc1cea"
+      "hash": "0665a8888936b7abbb49b803f7e3c4ad623ad4f25e18dd59d1d6b4cff966cca3"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcapturedevicedescriptor.json": {
       "etag": "\"639c-65d55ee3287e7-df\"",
@@ -2916,9 +2916,9 @@
       "hash": "db7f12f6c0fe41297ed21653aafe0d216d30fa2cf13857a5d06cf53c169f9838"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureeventinteraction.json": {
-      "etag": "\"7c14-65d55ee310052-df\"",
+      "etag": "\"7c15-65e7b4d623c04-df\"",
       "file_path": "documentation/AVKit/avcaptureeventinteraction.md",
-      "hash": "5d694d848528366a80537df858f02d983b5ebfd37c9fbaddc1bbd9552a5982ba"
+      "hash": "04b42df980bb1f79fd497d7c4cb86e313739e59318d54462dace50321a0d10ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureeventinteraction/defaultcapturesounddisabled.json": {
       "etag": "\"2dfc-65d55ee33f4ec-df\"",
@@ -3006,9 +3006,9 @@
       "hash": "a04ef27c1a709492c20c2e50b6feda7bc9419b52540a3088e65bb7192fd35d5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview.json": {
-      "etag": "\"7d14-65d61924330e2-df\"",
+      "etag": "\"82c6-65d55ee3287e7-df\"",
       "file_path": "documentation/AVKit/avcaptureview.md",
-      "hash": "483a49f404ca475181b9181a59b2dbe55048de42b6df5aa1ded83416a2bffbfd"
+      "hash": "711dad718440e001e8b6c1d0ed984757ec16512ca50227bbf5b9e13a144f75da"
     },
     "https://developer.apple.com/tutorials/data/documentation/avkit/avcaptureview/controlsstyle.json": {
       "etag": "\"23d4-65d55ee2f3b37-df\"",
@@ -5515,10 +5515,6 @@
       "file_path": "documentation/AVKit/choosing-a-camera-by-the-direction-it-faces.md",
       "hash": "af163e1cfa1f246ecf231ecab94e94554125506febb1d4c7ccc909e63b6c4ef3"
     },
-    "https://developer.apple.com/tutorials/data/documentation/avkit/com.apple.avkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/avkit/creating-a-multiview-video-playback-experience-in-visionos.json": {
       "etag": "\"cc36-65d55ee310052-df\"",
       "file_path": "documentation/AVKit/creating-a-multiview-video-playback-experience-in-visionos.md",
@@ -5609,6 +5605,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1121
+    "total_pages": 1120
   }
 }

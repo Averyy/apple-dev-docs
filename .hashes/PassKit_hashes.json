@@ -5795,10 +5795,6 @@
       "file_path": "documentation/PassKit/asyncshareablepassconfiguration/result/success(_).md",
       "hash": "8f0788be0f4522ccf2c2a103cc3c82bf34ef8b742bbdd798cd25809188341576"
     },
-    "https://developer.apple.com/tutorials/data/documentation/passkit/com.apple.passkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/passkit/complying-with-regional-regulations.json": {
       "etag": "\"26de-6590270b73643-df\"",
       "file_path": "documentation/PassKit/complying-with-regional-regulations.md",
@@ -11129,6 +11125,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2225
+    "total_pages": 2224
   }
 }

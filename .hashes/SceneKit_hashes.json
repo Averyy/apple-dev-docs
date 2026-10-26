@@ -8075,10 +8075,6 @@
       "file_path": "documentation/SceneKit/built-in-geometry-types.md",
       "hash": "742c8fa9b20d6d33fbbf734403f9d6da456209ecf063af56870d2fbd611f8860"
     },
-    "https://developer.apple.com/tutorials/data/documentation/scenekit/com.apple.scenekit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/scenekit/constraints.json": {
       "etag": "\"4d51-659025c3d0ff8-df\"",
       "file_path": "documentation/SceneKit/constraints.md",
@@ -16099,6 +16095,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 3219
+    "total_pages": 3218
   }
 }

@@ -181,9 +181,9 @@
       "hash": "2da473eada5f0082e387cc281197cebb6a3b69a2be772dc744b06aed875d7c2e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-changelog": {
-      "etag": "\"11946-65daaf2ccccc9-df\"",
+      "etag": "\"11f42-65e7ac73cd845-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-changelog.md",
-      "hash": "7aba555e171be5d889014b8936cf896458557bedaf6fa5ef3e3ef79c2aa3be16"
+      "hash": "7e7fe14d52a5810f5d7514297661b837570d2fdeffd39b1fb64a16bc09d716b7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v1": {
       "etag": "\"2ba2-65d55a704568d-df\"",
@@ -396,9 +396,9 @@
       "hash": "aa34315741551b629b976d1de2aba24900f8bd8a548d5b09ebf4556206b35363"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/notificationtype": {
-      "etag": "\"10017-65d55a7022f16-df\"",
+      "etag": "\"10458-65e7ac73b8850-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationtype.md",
-      "hash": "d172994a44014736b56557239244eec175281a9a735565aecc2dd2f53e415fa8"
+      "hash": "e6db96b5c9e4d8aeb59864d958fa823b7337f328f61efbdbf05569206de91d32"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/notificationuuid": {
       "etag": "\"1965-65daaf2cb8084-df\"",
@@ -851,9 +851,9 @@
       "hash": "2da473eada5f0082e387cc281197cebb6a3b69a2be772dc744b06aed875d7c2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-changelog.json": {
-      "etag": "\"11946-65daaf2ccccc9-df\"",
+      "etag": "\"11f42-65e7ac73cd845-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-changelog.md",
-      "hash": "7aba555e171be5d889014b8936cf896458557bedaf6fa5ef3e3ef79c2aa3be16"
+      "hash": "7e7fe14d52a5810f5d7514297661b837570d2fdeffd39b1fb64a16bc09d716b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-v1.json": {
       "etag": "\"2ba2-65d55a704568d-df\"",
@@ -1066,9 +1066,9 @@
       "hash": "aa34315741551b629b976d1de2aba24900f8bd8a548d5b09ebf4556206b35363"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notificationtype.json": {
-      "etag": "\"10017-65d55a7022f16-df\"",
+      "etag": "\"10458-65e7ac73b8850-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationtype.md",
-      "hash": "d172994a44014736b56557239244eec175281a9a735565aecc2dd2f53e415fa8"
+      "hash": "e6db96b5c9e4d8aeb59864d958fa823b7337f328f61efbdbf05569206de91d32"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notificationuuid.json": {
       "etag": "\"1965-65daaf2cb8084-df\"",

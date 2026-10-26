@@ -395,10 +395,6 @@
       "file_path": "documentation/ImagePlayground/ImagePlayground.md",
       "hash": "92eab2173bcf2eefd472a7f85db94cefb6260e14002cfc9a9448b725166e2784"
     },
-    "https://developer.apple.com/tutorials/data/documentation/imageplayground/com.apple.imageplayground/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imagecreator.json": {
       "etag": "\"3c4f-65d560b12671d-df\"",
       "file_path": "documentation/ImagePlayground/imagecreator.md",
@@ -789,6 +785,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 157
+    "total_pages": 156
   }
 }

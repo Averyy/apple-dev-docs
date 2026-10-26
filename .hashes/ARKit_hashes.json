@@ -12190,22 +12190,6 @@
       "file_path": "documentation/ARKit/choosing-which-camera-feed-to-augment.md",
       "hash": "79d912e7b0b11a431b92eb44463c8468b52edff78ce9be41874fde6d3bce34be"
     },
-    "https://developer.apple.com/tutorials/data/documentation/arkit/com.apple.arkit/objc(pl)scnboundingvolume.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/arkit/com.apple.arkit/objc(pl)scnscenerenderer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/arkit/com.apple.arkit/objc(pl)scntechniquesupport.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/arkit/com.apple.arkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/arkit/combining-user-face-tracking-and-world-tracking.json": {
       "etag": "\"6514-65de776cd426b-df\"",
       "file_path": "documentation/ARKit/combining-user-face-tracking-and-world-tracking.md",
@@ -14801,6 +14785,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 2960
+    "total_pages": 2956
   }
 }

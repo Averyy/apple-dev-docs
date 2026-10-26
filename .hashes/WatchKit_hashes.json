@@ -3665,10 +3665,6 @@
       "file_path": "documentation/WatchKit/building-watchos-app-interfaces-using-the-storyboard.md",
       "hash": "4d01f9e2906cbd696213e36addef10ac3075b5957089f62f8fc52a248be68d59"
     },
-    "https://developer.apple.com/tutorials/data/documentation/watchkit/com.apple.watchkit/objc(pl)scnscenerenderer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/watchkit/configuring-a-watchkit-scene-in-a-storyboard.json": {
       "etag": "\"279a-659028497a64c-df\"",
       "file_path": "documentation/WatchKit/configuring-a-watchkit-scene-in-a-storyboard.md",
@@ -7289,6 +7285,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1457
+    "total_pages": 1456
   }
 }

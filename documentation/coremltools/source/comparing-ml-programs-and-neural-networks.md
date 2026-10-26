@@ -22,11 +22,16 @@ A few of the major differences between a neural network and an ML program are as
 Converting to an ML program provides the following advantages over converting to a neural network:
 
 - *Typed execution* for control of numeric precision:
-An ML program defines types for the intermediate tensors that are produced by one segment of the model and consumed by another. The ML program runtime respects these specified types as the minimum compute precision. As a result, you can easily control the precision when you convert the model. By comparison, the neural network precision type is tied to the compute unit. For details, see [Typed Execution](typed-execution.md).
+
+  An ML program defines types for the intermediate tensors that are produced by one segment of the model and consumed by another. The ML program runtime respects these specified types as the minimum compute precision. As a result, you can easily control the precision when you convert the model. By comparison, the neural network precision type is tied to the compute unit. For details, see [Typed Execution](typed-execution.md).
+
 - *GPU runtime* for float 32 precision:
-ML programs use a GPU runtime that is backed by the [Metal Performance Shaders Graph framework](https://developer.apple.com/documentation/metalperformanceshadersgraph). While the GPU with neural networks supports only float 16 precision at runtime, this execution path supports both float 16 and float 32 precision. This path also provides performance improvements, especially for newer devices.
+
+  ML programs use a GPU runtime that is backed by the [Metal Performance Shaders Graph framework](https://developer.apple.com/documentation/metalperformanceshadersgraph). While the GPU with neural networks supports only float 16 precision at runtime, this execution path supports both float 16 and float 32 precision. This path also provides performance improvements, especially for newer devices.
+
 - More efficient compiling:
-Since ML programs do not store weights in the protobuf file format, the models are more memory-efficient to compile. You can significantly improve performance by using Core ML’s on-device compilation API. For details, see [Downloading and Compiling a Model on the User’s Device](https://developer.apple.com/documentation/coreml/core_ml_api/downloading_and_compiling_a_model_on_the_user_s_device).
+
+  Since ML programs do not store weights in the protobuf file format, the models are more memory-efficient to compile. You can significantly improve performance by using Core ML’s on-device compilation API. For details, see [Downloading and Compiling a Model on the User’s Device](https://developer.apple.com/documentation/coreml/core_ml_api/downloading_and_compiling_a_model_on_the_user_s_device).
 
 ## Model Representations
 
@@ -49,14 +54,22 @@ Although the graphical representation is useful for understanding and visualizat
 An ML program differs from a neural network in the following ways:
 
 - *Ops vs. layers*:
-An ML Program consists of a *main* function, which includes one or more blocks. Each block consists of a series of operations (“ops” for short), which are versioned as a set (“opset” for short).
-While the layers in a neural network are fully specified in the protobuf serialization file format itself ([Neuralnetwork.proto](https://github.com/apple/coremltools/blob/main/mlmodel/format/NeuralNetwork.proto)), the supported ops for an ML program are specified in [MIL ops/defs](https://github.com/apple/coremltools/tree/main/coremltools/converters/mil/mil/ops/defs) (see the [MIL Ops Reference](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html#mil-ops)), not in [MIL proto](https://github.com/apple/coremltools/blob/main/mlmodel/format/MIL.proto) messages.
+
+  An ML Program consists of a *main* function, which includes one or more blocks. Each block consists of a series of operations (“ops” for short), which are versioned as a set (“opset” for short).
+
+  While the layers in a neural network are fully specified in the protobuf serialization file format itself ([Neuralnetwork.proto](https://github.com/apple/coremltools/blob/main/mlmodel/format/NeuralNetwork.proto)), the supported ops for an ML program are specified in [MIL ops/defs](https://github.com/apple/coremltools/tree/main/coremltools/converters/mil/mil/ops/defs) (see the [MIL Ops Reference](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html#mil-ops)), not in [MIL proto](https://github.com/apple/coremltools/blob/main/mlmodel/format/MIL.proto) messages.
+
 - *Inputs without parameters*:
-A neural network layer distinguishes between the inputs and the parameters comprised of trained weights and other constants. By comparison, an ML program op has only inputs. (An exception is the `const` op which has attributes.) All the inputs are named, so their position is irrelevant. Some of the inputs are constrained to be constants.
+
+  A neural network layer distinguishes between the inputs and the parameters comprised of trained weights and other constants. By comparison, an ML program op has only inputs. (An exception is the `const` op which has attributes.) All the inputs are named, so their position is irrelevant. Some of the inputs are constrained to be constants.
+
 - *Variables are typed*:
-An ML program is typed (for details, see [Typed Execution](typed-execution.md)). The inputs and outputs of an op are called variables (“vars” for short). Each var has a type and shape associated with it.
+
+  An ML program is typed (for details, see [Typed Execution](typed-execution.md)). The inputs and outputs of an op are called variables (“vars” for short). Each var has a type and shape associated with it.
+
 - *Weights are serialized separately*:
-The weights for an ML program are serialized outside of the protobuf format. Since the architecture and weights are separated, an ML program can be saved only as a [Core ML model package](https://developer.apple.com/documentation/coreml/core_ml_api/updating_a_model_file_to_a_model_package). By comparison, neural networks save its entire representation in a single protobuf file and therefore can be saved as either an `.mlmodel` file or as an `.mlpackage` model package.
+
+  The weights for an ML program are serialized outside of the protobuf format. Since the architecture and weights are separated, an ML program can be saved only as a [Core ML model package](https://developer.apple.com/documentation/coreml/core_ml_api/updating_a_model_file_to_a_model_package). By comparison, neural networks save its entire representation in a single protobuf file and therefore can be saved as either an `.mlmodel` file or as an `.mlpackage` model package.
 
 To see the ML program representation that is executed, compile a model package of type `mlprogram` to the `mlmodelc` archive. You can then find the `model.mil` file inside the contents, which is the ML program expressed in a text format. To compile an `.mlpackage`, either compile your Xcode project with the `.mlpackage` added to it, or execute the following on the command line, which places the compiled archive in the current working directory:
 
@@ -67,9 +80,12 @@ xcrun coremlcompiler compile model.mlpackage .
 While the new ML program model type supports most of the functionality supported by neural networks, the following components are not yet supported. If you are using one of these features, you may want to continue to use the neural network format:
 
 - [On-device update](updatable-model-examples.md):
-You can still get the benefit of the ML program runtime by using a `pipeline` of the ML program, followed by a neural network consisting of just the updatable portion.
+
+  You can still get the benefit of the ML program runtime by using a `pipeline` of the ML program, followed by a neural network consisting of just the updatable portion.
+
 - [Custom operators](custom-operators.md) for neural networks, and your own Swift implementations:
-While custom layers may be useful for new layer types, in most cases [composite operators](composite-operators.md) built using the MIL builder library are sufficient for converter to handle unsupported layer types. Composite layers, which are built with existing layers, perform better than custom operators and work seamlessly with both neural network and ML program model types.
+
+  While custom layers may be useful for new layer types, in most cases [composite operators](composite-operators.md) built using the MIL builder library are sufficient for converter to handle unsupported layer types. Composite layers, which are built with existing layers, perform better than custom operators and work seamlessly with both neural network and ML program model types.
 
 ## ML Programs and MIL
 

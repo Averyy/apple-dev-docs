@@ -3157,26 +3157,6 @@
       "file_path": "documentation/SwiftData/defaulthistorytoken.md",
       "hash": "1b3678a0469db77491a244231cc5cb65a13d24451626018cc7577d782b4bcef1"
     },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/defaulthistorytoken/...(_:)-2yntd.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/defaulthistorytoken/...(_:)-xp7q.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/defaulthistorytoken/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/defaulthistorytoken/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/defaulthistorytoken/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/defaulthistorytoken/storeidentifier.json": {
       "etag": "\"1423-65d55e6234119-df\"",
       "file_path": "documentation/SwiftData/defaulthistorytoken/storeidentifier.md",
@@ -4081,26 +4061,6 @@
       "etag": "\"44b5-65d55e624e1ea-df\"",
       "file_path": "documentation/SwiftData/persistentidentifier.md",
       "hash": "ccd8c02086af1c8f9eb57dc89a5f42c8512b413d44bcc033878b39261e385e47"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/persistentidentifier/...(_:)-403wm.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/persistentidentifier/...(_:)-d67x.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/persistentidentifier/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/persistentidentifier/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/persistentidentifier/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/persistentidentifier/entityname.json": {
       "etag": "\"1e03-65d55e6234119-df\"",
@@ -5186,26 +5146,6 @@
       "file_path": "documentation/SwiftData/schema/version-swift.struct/noteq(_,_).md",
       "hash": ""
     },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/...(_:)-1hasx.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/...(_:)-7idu6.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/swiftdata/schema/version-swift.struct/==(_:_:).json": {
       "etag": "\"231d-65d55e61e294c-df\"",
       "file_path": "documentation/SwiftData/schema/version-swift.struct/eqeq(_,_).md",
@@ -5489,6 +5429,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1101
+    "total_pages": 1086
   }
 }

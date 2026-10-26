@@ -3610,18 +3610,6 @@
       "file_path": "documentation/PDFKit/book-display.md",
       "hash": "71c21ab2fef8f9561306bed702e7fd54078f6568b16caaef87fdcd3779053d1c"
     },
-    "https://developer.apple.com/tutorials/data/documentation/pdfkit/com.apple.pdfkit/objc(pl)nsanimationdelegate.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/pdfkit/com.apple.pdfkit/objc(pl)nsmenudelegate.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/pdfkit/com.apple.pdfkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/pdfkit/configurations.json": {
       "etag": "\"5eea-659026fc48cf7-df\"",
       "file_path": "documentation/PDFKit/configurations.md",
@@ -7187,6 +7175,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1437
+    "total_pages": 1434
   }
 }

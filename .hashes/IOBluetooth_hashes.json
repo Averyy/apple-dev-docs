@@ -370,6 +370,11 @@
       "file_path": "documentation/IOBluetooth/bluetoothenhancedsynchronousconnectioninfo/init().md",
       "hash": "509635e9baad73995eda1b17336adc5377e91b7143417a5b5e38b6a1083f619c"
     },
+    "https://developer.apple.com/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-5g3ma": {
+      "etag": "\"d80c-65d55cd4ea885-df\"",
+      "file_path": "documentation/IOBluetooth/bluetoothenhancedsynchronousconnectioninfo/init(transmitbandwidth_receivebandwidth_transmitcodingformat_receivecodingformat_transmitcodecframesize_receivecodecframesize_inputbandwidth_outputbandwidth_inputcodingformat_outputcodingformat_inputcodeddatasize_outpu-613ee4ec.md",
+      "hash": "fb49996cd722a6dd60f232d5e3b3561b38ec0c50d7c0db6a913d088f28ecf522"
+    },
     "https://developer.apple.com/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/inputbandwidth": {
       "etag": "\"1ef2-65d55cd4ea885-df\"",
       "file_path": "documentation/IOBluetooth/bluetoothenhancedsynchronousconnectioninfo/inputbandwidth.md",
@@ -915,6 +920,11 @@
       "file_path": "documentation/IOBluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/init().md",
       "hash": "83ee9dde6e4439395c39a9e2a6b697962b9ab6bc122c162771f2d7644ea7de6e"
     },
+    "https://developer.apple.com/documentation/iobluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-4r4o8": {
+      "etag": "\"5e05-65d55cd34fa71-df\"",
+      "file_path": "documentation/IOBluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/init(transmitbandwidth_receivebandwidth_transmitcodingformat_receivecodingformat_transmitcodecframesize_receivecodecframesize_inputbandwidth_outputbandwidth_inputcodingformat_outputcodingformat_inputcodeddatasize_outpu-5d579a69.md",
+      "hash": "e11fafa112e0e7c942f3db7f96bbbe604e86a6cce96a5147f6e839986698bf02"
+    },
     "https://developer.apple.com/documentation/iobluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/inputbandwidth": {
       "etag": "\"1e71-65d55cd34fa71-df\"",
       "file_path": "documentation/IOBluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/inputbandwidth.md",
@@ -1039,6 +1049,11 @@
       "etag": "\"1037-65d55ccbf9129-df\"",
       "file_path": "documentation/IOBluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init().md",
       "hash": "22b39dfe6832072add86201d289d25b80eb89c19506627a5d7bbf68f6e6d9d45"
+    },
+    "https://developer.apple.com/documentation/iobluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-4r4o8": {
+      "etag": "\"5d6d-65d55ccbf9129-df\"",
+      "file_path": "documentation/IOBluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init(transmitbandwidth_receivebandwidth_transmitcodingformat_receivecodingformat_transmitcodecframesize_receivecodecframesize_inputbandwidth_outputbandwidth_inputcodingformat_outputcodingformat_inputcodeddatasize_outpu-5d579a69.md",
+      "hash": "985fd79b1fdedc8cd4cc3e466e626028c1c2e3faa2e18d345ef5cbeb83957a4f"
     },
     "https://developer.apple.com/documentation/iobluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/inputbandwidth": {
       "etag": "\"1db9-65d55ccbf9129-df\"",
@@ -19825,9 +19840,10 @@
       "file_path": "documentation/IOBluetooth/bluetoothenhancedsynchronousconnectioninfo/init().md",
       "hash": "509635e9baad73995eda1b17336adc5377e91b7143417a5b5e38b6a1083f619c"
     },
-    "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpcmdataformat:outputpcmdataformat:inputpcmsampelpayloadmsbposition:outputpcmsampelpayloadmsbposition:inputdatapath:outputdatapath:inputtransportunitsize:outputtransportunitsize:maxlatency:voicesetting:retransmissioneffort:packettype:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-5g3ma.json": {
+      "etag": "\"d80c-65d55cd4ea885-df\"",
+      "file_path": "documentation/IOBluetooth/bluetoothenhancedsynchronousconnectioninfo/init(transmitbandwidth_receivebandwidth_transmitcodingformat_receivecodingformat_transmitcodecframesize_receivecodecframesize_inputbandwidth_outputbandwidth_inputcodingformat_outputcodingformat_inputcodeddatasize_outpu-613ee4ec.md",
+      "hash": "fb49996cd722a6dd60f232d5e3b3561b38ec0c50d7c0db6a913d088f28ecf522"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/inputbandwidth.json": {
       "etag": "\"1ef2-65d55cd4ea885-df\"",
@@ -20374,9 +20390,10 @@
       "file_path": "documentation/IOBluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/init().md",
       "hash": "83ee9dde6e4439395c39a9e2a6b697962b9ab6bc122c162771f2d7644ea7de6e"
     },
-    "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpcmdataformat:outputpcmdataformat:inputpcmsamplepayloadmsbposition:outputpcmsamplepayloadmsbposition:inputdatapath:outputdatapath:inputtransportunitsize:outputtransportunitsize:maxlatency:packettype:retransmissioneffort:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-4r4o8.json": {
+      "etag": "\"5e05-65d55cd34fa71-df\"",
+      "file_path": "documentation/IOBluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/init(transmitbandwidth_receivebandwidth_transmitcodingformat_receivecodingformat_transmitcodecframesize_receivecodecframesize_inputbandwidth_outputbandwidth_inputcodingformat_outputcodingformat_inputcodeddatasize_outpu-5d579a69.md",
+      "hash": "e11fafa112e0e7c942f3db7f96bbbe604e86a6cce96a5147f6e839986698bf02"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothhcienhancedacceptsynchronousconnectionrequestparams/inputbandwidth.json": {
       "etag": "\"1e71-65d55cd34fa71-df\"",
@@ -20503,9 +20520,10 @@
       "file_path": "documentation/IOBluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init().md",
       "hash": "22b39dfe6832072add86201d289d25b80eb89c19506627a5d7bbf68f6e6d9d45"
     },
-    "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpcmdataformat:outputpcmdataformat:inputpcmsamplepayloadmsbposition:outputpcmsamplepayloadmsbposition:inputdatapath:outputdatapath:inputtransportunitsize:outputtransportunitsize:maxlatency:packettype:retransmissioneffort:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-4r4o8.json": {
+      "etag": "\"5d6d-65d55ccbf9129-df\"",
+      "file_path": "documentation/IOBluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init(transmitbandwidth_receivebandwidth_transmitcodingformat_receivecodingformat_transmitcodecframesize_receivecodecframesize_inputbandwidth_outputbandwidth_inputcodingformat_outputcodingformat_inputcodeddatasize_outpu-5d579a69.md",
+      "hash": "985fd79b1fdedc8cd4cc3e466e626028c1c2e3faa2e18d345ef5cbeb83957a4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/inputbandwidth.json": {
       "etag": "\"1db9-65d55ccbf9129-df\"",
@@ -38927,6 +38945,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 7785
+    "total_pages": 7788
   }
 }

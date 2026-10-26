@@ -1279,10 +1279,6 @@
       "file_path": "documentation/VisionKit/cameraregionview/pixelbufferprocessingcontext/timestamp.md",
       "hash": "c0c4dfe507f6116c6b8a798853fc47f6e690f72438ce50a56340c12a826fb219"
     },
-    "https://developer.apple.com/tutorials/data/documentation/visionkit/com.apple.visionkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller.json": {
       "etag": "\"e5e5-65d5608810164-df\"",
       "file_path": "documentation/VisionKit/datascannerviewcontroller.md",
@@ -2497,6 +2493,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 499
+    "total_pages": 498
   }
 }

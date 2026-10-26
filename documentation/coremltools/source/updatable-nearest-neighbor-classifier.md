@@ -71,8 +71,9 @@ An empty `knn` model is updatable by default:
    3
    ```
 
-Note
-The number of neighbors is bounded by the default range:
+   Note
+
+   The number of neighbors is bounded by the default range:
 
    ```
    # The number of neighbors is bounded by the default range...
@@ -83,7 +84,7 @@ The number of neighbors is bounded by the default range:
    (1, 1000)
    ```
 
-If you set the number of neighbors to a value outside of this default range, an `ValueError` will occur as shown in the **Out** tab:
+   If you set the number of neighbors to a value outside of this default range, an `ValueError` will occur as shown in the **Out** tab:
 
    ```
    # If we try to set the number of neighbors to a value outside of this range
@@ -106,6 +107,7 @@ If you set the number of neighbors to a value outside of this default range, an 
 
    ValueError: number_of_neighbors is not within range bounds
    ```
+
 2. Change the bounds for the number of neighbors. Individual values can be set for the `numberOfNeighbors` parameter:
 
    ```

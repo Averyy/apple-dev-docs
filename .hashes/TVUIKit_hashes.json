@@ -11,9 +11,9 @@
       "hash": "716920b75048083f2066708870fafc975053d645afca9d6a8a27a8e4893c6306"
     },
     "https://developer.apple.com/documentation/tvuikit/tvcaptionbuttonview": {
-      "etag": "\"bc6c-65d55c1de6ecc-df\"",
+      "etag": "\"b6ba-65db1e2e57cee-df\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview.md",
-      "hash": "b0a606ff83ac8c4683e84e1bab42649ab6f7dc01f4687b772e98417636ad71ef"
+      "hash": "821a799052bb87de1515dfac28540a723d3e3b91f2de960f64fa4ed5b9498b0f"
     },
     "https://developer.apple.com/documentation/tvuikit/tvcaptionbuttonview/contentimage": {
       "etag": "\"2df0-65d55c1de6ecc-df\"",
@@ -576,9 +576,9 @@
       "hash": "91504411373b45986115088fc07907ce895528b40b2d6ef5974acd2be7cbdfe9"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramview": {
-      "etag": "\"a382-65da2c4cb0948-df\"",
+      "etag": "\"a934-65d55c1dceb71-df\"",
       "file_path": "documentation/TVUIKit/tvmonogramview.md",
-      "hash": "1d098f5471751d066a050b5301356d260d43907de14a76c7abe21052ae22a207"
+      "hash": "e044152f24121b446cddf4d02159318098cdc91ffcfbd7aefcd9773e22884a05"
     },
     "https://developer.apple.com/documentation/tvuikit/tvmonogramview/image": {
       "etag": "\"2c45-65d55c1de6ecc-df\"",
@@ -635,19 +635,15 @@
       "file_path": "documentation/TVUIKit/TVUIKit.md",
       "hash": "a34355105236afaedd0bf818b9199a9895c595bd0dd3dc3ee92c1642fdfce048"
     },
-    "https://developer.apple.com/tutorials/data/documentation/tvuikit/com.apple.tvuikit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/creating-immersive-experiences-using-a-full-screen-layout.json": {
       "etag": "\"22df-65d55c1e0b4de-df\"",
       "file_path": "documentation/TVUIKit/creating-immersive-experiences-using-a-full-screen-layout.md",
       "hash": "716920b75048083f2066708870fafc975053d645afca9d6a8a27a8e4893c6306"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview.json": {
-      "etag": "\"bc6c-65d55c1de6ecc-df\"",
+      "etag": "\"b6ba-65db1e2e57cee-df\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview.md",
-      "hash": "b0a606ff83ac8c4683e84e1bab42649ab6f7dc01f4687b772e98417636ad71ef"
+      "hash": "821a799052bb87de1515dfac28540a723d3e3b91f2de960f64fa4ed5b9498b0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview/contentimage.json": {
       "etag": "\"2df0-65d55c1de6ecc-df\"",
@@ -1210,9 +1206,9 @@
       "hash": "91504411373b45986115088fc07907ce895528b40b2d6ef5974acd2be7cbdfe9"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview.json": {
-      "etag": "\"a382-65da2c4cb0948-df\"",
+      "etag": "\"a934-65d55c1dceb71-df\"",
       "file_path": "documentation/TVUIKit/tvmonogramview.md",
-      "hash": "1d098f5471751d066a050b5301356d260d43907de14a76c7abe21052ae22a207"
+      "hash": "e044152f24121b446cddf4d02159318098cdc91ffcfbd7aefcd9773e22884a05"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/image.json": {
       "etag": "\"2c45-65d55c1de6ecc-df\"",
@@ -1269,6 +1265,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 253
+    "total_pages": 252
   }
 }

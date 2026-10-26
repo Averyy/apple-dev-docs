@@ -1356,7 +1356,7 @@
       "hash": "2ecb71daa52ecf940425bdffb910060b848a1a4f82028e8408b40236d1566a72"
     },
     "https://developer.apple.com/documentation/regexbuilder/regexcomponentbuilder/buildlimitedavailability(_:)-1l3rg": {
-      "etag": "\"2076-65d560e35851b-df\"",
+      "etag": "\"2076-65d560e35851b\"",
       "file_path": "documentation/RegexBuilder/regexcomponentbuilder/buildlimitedavailability(_)-1l3rg.md",
       "hash": "997af40ebe1bf81f952bd608288628ef00ec80593e8e5185159131a5dcb39547"
     },
@@ -2324,14 +2324,6 @@
       "etag": "\"15d4-65d560e2d5e1c-df\"",
       "file_path": "documentation/RegexBuilder/dotdotdot(_,_)-629xh.md",
       "hash": "88ec26240b9003b0c05e84e8b5166af0080fe7521d5a79749c75bd2e0f5062aa"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/regexbuilder/...(_:_:)-16g2a.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/regexbuilder/...(_:_:)-629xh.json": {
-      "error": "HTTP 403",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/regexbuilder/alternationbuilder.json": {
       "etag": "\"2ef93-65d560e287f8b-df\"",
@@ -3674,7 +3666,7 @@
       "hash": "2ecb71daa52ecf940425bdffb910060b848a1a4f82028e8408b40236d1566a72"
     },
     "https://developer.apple.com/tutorials/data/documentation/regexbuilder/regexcomponentbuilder/buildlimitedavailability(_:)-1l3rg.json": {
-      "etag": "\"2076-65d560e35851b-df\"",
+      "etag": "\"2076-65d560e35851b\"",
       "file_path": "documentation/RegexBuilder/regexcomponentbuilder/buildlimitedavailability(_)-1l3rg.md",
       "hash": "997af40ebe1bf81f952bd608288628ef00ec80593e8e5185159131a5dcb39547"
     },
@@ -4630,9 +4622,12 @@
     }
   },
   "metadata": {
+    "handoff_from": {
+      "swift": {}
+    },
     "render": {
       "version": 1
     },
-    "total_pages": 926
+    "total_pages": 924
   }
 }

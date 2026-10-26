@@ -1,0 +1,44 @@
+# log(_:)
+
+**Framework**: simd  
+**Kind**: func  
+**Role**: Function
+
+Returns the natural logarithm of each element in a vector.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func log(_ x: simd_double3) -> simd_double3
+```
+
+## See Also
+
+### Exponential and Logarithmic Functions
+- [func exp(simd_double3) -> simd_double3](./exp%28_%29-zash.md)
+  Returns *e* raised to the power of each element in a vector.
+- [func exp2(simd_double3) -> simd_double3](./exp2%28_%29-26tvo.md)
+  Returns 2 raised to the power of each element in a vector.
+- [func exp10(simd_double3) -> simd_double3](./exp10%28_%29-88dd5.md)
+  Returns 10 raised to the power of each element in a vector.
+- [func expm1(simd_double3) -> simd_double3](./expm1%28_%29-2ag4r.md)
+  Returns *eˣ-1* for each element in a vector.
+- [func log2(simd_double3) -> simd_double3](./log2%28_%29-3p8ex.md)
+  Returns the base 2 logarithm of each element in a vector.
+- [func log10(simd_double3) -> simd_double3](./log10%28_%29-1eshe.md)
+  Returns the base 10 logarithm of each element in a vector.
+- [func log1p(simd_double3) -> simd_double3](./log1p%28_%29-50npd.md)
+  Returns *log(1+x)* of each element in a vector.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/simd/log(_:)-70ujd)*

@@ -361,7 +361,7 @@
       "hash": "7ec902c2944dd87bc1006658be27c198765b415f7e5d942de0fb07c46131f3b1"
     },
     "https://developer.apple.com/documentation/callkit/cxcallupdate/remotehandle": {
-      "etag": "\"3db2-65d5608684e06\"",
+      "etag": "\"3db2-65d5608684e06-df\"",
       "file_path": "documentation/CallKit/cxcallupdate/remotehandle.md",
       "hash": "16cbfb229470297b2451f1fec4b4b703ed72cb94d0ee7a4ef921a38641617101"
     },
@@ -1756,7 +1756,7 @@
       "hash": "7ec902c2944dd87bc1006658be27c198765b415f7e5d942de0fb07c46131f3b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallupdate/remotehandle.json": {
-      "etag": "\"3db2-65d5608684e06\"",
+      "etag": "\"3db2-65d5608684e06-df\"",
       "file_path": "documentation/CallKit/cxcallupdate/remotehandle.md",
       "hash": "16cbfb229470297b2451f1fec4b4b703ed72cb94d0ee7a4ef921a38641617101"
     },

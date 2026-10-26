@@ -1,0 +1,41 @@
+# PHLocalIdentifierNotFound
+
+**Framework**: Photos  
+**Kind**: var  
+**Role**: Global Variable
+
+A constant value that indicates that the system can’t resolve a local object from a global identifier.
+
+**Availability**:
+- macOS 10.13+ - Deprecated in 12.0
+
+> **Deprecated**: Use [`PHLocalIdentifierMapping`](./phlocalidentifiermapping.md) instead.
+
+## Declaration
+
+```swift
+let PHLocalIdentifierNotFound: String
+```
+
+```c
+extern NSString * const PHLocalIdentifierNotFound;
+```
+
+## See Also
+
+### Converting Between Local and iCloud Identifiers
+- [func cloudIdentifierMappings(forLocalIdentifiers: [String]) -> [String : Result<PHCloudIdentifier, any Error>]](./phphotolibrary/cloudidentifiermappings%28forlocalidentifiers%29.md)
+  Retrieves the cloud identifier mappings for the list of local identifiers.
+- [func localIdentifierMappings(for: [PHCloudIdentifier]) -> [PHCloudIdentifier : Result<String, any Error>]](./phphotolibrary/localidentifiermappings%28for%29.md)
+  Retrieves the local identifier mappings for the list of cloud identifiers.
+- [class PHCloudIdentifier](./phcloudidentifier.md)
+  An object that identifies an asset or collection that syncs through iCloud Photos.
+- [func cloudIdentifiers(forLocalIdentifiers: [String]) -> [PHCloudIdentifier]](./phphotolibrary/cloudidentifiers%28forlocalidentifiers%29.md)
+  Retrieves the equivalent iCloud identifiers for the list of local identifiers.
+- [func localIdentifiers(for: [PHCloudIdentifier]) -> [String]](./phphotolibrary/localidentifiers%28for%29.md)
+  Retrieves the equivalent local identifiers for the list of iCloud identifiers.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/photos/phlocalidentifiernotfound)*

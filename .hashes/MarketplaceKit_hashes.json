@@ -1440,10 +1440,6 @@
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult/confirmed(installverificationtokens,authenticationcontext).md",
       "hash": "674caaf6a53bef3c5e93a9ac0d2e74e32641acd860e89b1fcee7d222a9f90b33"
     },
-    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/com.apple.marketplacekit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/creating-an-alternative-app-marketplace.json": {
       "etag": "\"75fe-65b8a746695f4-df\"",
       "file_path": "documentation/MarketplaceKit/creating-an-alternative-app-marketplace.md",
@@ -1869,6 +1865,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 373
+    "total_pages": 372
   }
 }

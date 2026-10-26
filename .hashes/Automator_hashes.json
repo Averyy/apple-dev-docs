@@ -1579,16 +1579,12 @@
       "etag": "\"1a46-65d55deaee413-df\"",
       "file_path": "documentation/Automator/amworkspace/shared.md",
       "hash": "92423502a551e1809fd21b60306bd3cf42325d0f9ed1c5fc07f2f4c39377dad5"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/automator/com.apple.automator/objc(cs)nscontroller.json": {
-      "error": "HTTP 404",
-      "status": "error"
     }
   },
   "metadata": {
     "render": {
       "version": 1
     },
-    "total_pages": 317
+    "total_pages": 316
   }
 }

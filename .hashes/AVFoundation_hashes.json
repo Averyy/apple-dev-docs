@@ -25140,6 +25140,16 @@
       "file_path": "documentation/AVFoundation/avvideocomposition/configuration/frameduration.md",
       "hash": "07e97b35f7abc0f1f3498b2cee5608ab9f4fd6aca812d1f43c1899e8bd7853b1"
     },
+    "https://developer.apple.com/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:perframehdrdisplaymetadatapolicy:renderscale:rendersize:sourcesampledatatrackids:sourcetr-2lwnx": {
+      "etag": "\"8568-65d55e0bb67d8-df\"",
+      "file_path": "documentation/AVFoundation/avvideocomposition/configuration/init(animationtool_colorprimaries_colortransferfunction_colorycbcrmatrix_customvideocompositorclass_frameduration_instructions_outputbufferdescription_perframehdrdisplaymetadatapolicy_renderscale_rendersize_sourcesampl-d13e75cb.md",
+      "hash": "9a1b774f5dae09d5e9200545510e9286c62ef15dde6e31b18cae7edbcb70d890"
+    },
+    "https://developer.apple.com/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:renderscale:rendersize:sourcesampledatatrackids:sourcetrackidforframetiming:spatialvideoc-j1vm": {
+      "etag": "\"79e0-65d55e0bb67d8-df\"",
+      "file_path": "documentation/AVFoundation/avvideocomposition/configuration/init(animationtool_colorprimaries_colortransferfunction_colorycbcrmatrix_customvideocompositorclass_frameduration_instructions_outputbufferdescription_renderscale_rendersize_sourcesampledatatrackids_sourcetrackidforfra-e67dc1c7.md",
+      "hash": "30040751850e55556bb02190008f0f40e7c8db391d1e54f289a5c0ac8da7bdd5"
+    },
     "https://developer.apple.com/documentation/avfoundation/avvideocomposition/configuration/init(for:prototypeinstruction:)": {
       "etag": "\"4c28-65d55e0bb67d8-df\"",
       "file_path": "documentation/AVFoundation/avvideocomposition/configuration/init(for,prototypeinstruction).md",
@@ -51750,17 +51760,15 @@
       "file_path": "documentation/AVFoundation/avvideocomposition/configuration/frameduration.md",
       "hash": "07e97b35f7abc0f1f3498b2cee5608ab9f4fd6aca812d1f43c1899e8bd7853b1"
     },
-    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:perframehdrdisplaymetadatapolicy:renderscale:rendersize:sourcesampledatatrackids:sourcetrackidforframetiming:).json": {
-      "error": "HTTP 404",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:perframehdrdisplaymetadatapolicy:renderscale:rendersize:sourcesampledatatrackids:sourcetr-2lwnx.json": {
+      "etag": "\"8568-65d55e0bb67d8-df\"",
+      "file_path": "documentation/AVFoundation/avvideocomposition/configuration/init(animationtool_colorprimaries_colortransferfunction_colorycbcrmatrix_customvideocompositorclass_frameduration_instructions_outputbufferdescription_perframehdrdisplaymetadatapolicy_renderscale_rendersize_sourcesampl-d13e75cb.md",
+      "hash": "9a1b774f5dae09d5e9200545510e9286c62ef15dde6e31b18cae7edbcb70d890"
     },
-    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:perframehdrdisplaymetadatapolicy:renderscale:rendersize:sourcesampledatatrackids:sourcetrackidforframetiming:spatialvideoconfigurations:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:renderscale:rendersize:sourcesampledatatrackids:sourcetrackidforframetiming:spatialvideoconfigurations:).json": {
-      "error": "HTTP 403",
-      "status": "error"
+    "https://developer.apple.com/tutorials/data/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:renderscale:rendersize:sourcesampledatatrackids:sourcetrackidforframetiming:spatialvideoc-j1vm.json": {
+      "etag": "\"79e0-65d55e0bb67d8-df\"",
+      "file_path": "documentation/AVFoundation/avvideocomposition/configuration/init(animationtool_colorprimaries_colortransferfunction_colorycbcrmatrix_customvideocompositorclass_frameduration_instructions_outputbufferdescription_renderscale_rendersize_sourcesampledatatrackids_sourcetrackidforfra-e67dc1c7.md",
+      "hash": "30040751850e55556bb02190008f0f40e7c8db391d1e54f289a5c0ac8da7bdd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avvideocomposition/configuration/init(for:prototypeinstruction:).json": {
       "etag": "\"4c28-65d55e0bb67d8-df\"",
@@ -53237,6 +53245,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 10647
+    "total_pages": 10648
   }
 }

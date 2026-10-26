@@ -3573,26 +3573,6 @@
       "file_path": "documentation/System/filepath/componentview.md",
       "hash": "afbb314415251299d0bfbc16b35b8e6c27b5c4c84d3f0db0ff2f9ee7d87cbaca"
     },
-    "https://developer.apple.com/tutorials/data/documentation/system/filepath/componentview/index/...(_:)-1nq69.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/system/filepath/componentview/index/...(_:)-vd6w.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/system/filepath/componentview/index/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/system/filepath/componentview/index/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/system/filepath/componentview/index/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/system/filepath/customdebugstringconvertible-implementations.json": {
       "etag": "\"bc3-6590267e8d91c-df\"",
       "file_path": "documentation/System/filepath/customdebugstringconvertible-implementations.md",
@@ -4493,6 +4473,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 899
+    "total_pages": 894
   }
 }

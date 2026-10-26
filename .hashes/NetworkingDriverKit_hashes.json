@@ -6932,6 +6932,9 @@
     }
   },
   "metadata": {
+    "handoff_from": {
+      "kernel": {}
+    },
     "render": {
       "version": 1
     },

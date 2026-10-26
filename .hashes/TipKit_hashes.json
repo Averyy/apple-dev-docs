@@ -960,10 +960,6 @@
       "file_path": "documentation/TipKit/anytip.md",
       "hash": "e519447a5134c1b54903156c05fc97c656360a58645dac1338c16f129bc2a715"
     },
-    "https://developer.apple.com/tutorials/data/documentation/tipkit/com.apple.tipkit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/highlightingappfeatureswithtipkit.json": {
       "etag": "\"afc4-65d560afee463-df\"",
       "file_path": "documentation/TipKit/highlightingappfeatureswithtipkit.md",
@@ -1909,6 +1905,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 381
+    "total_pages": 380
   }
 }

@@ -2,7 +2,7 @@
 
 **Framework**: Translation  
 **Role**: Sample Code  
-**Download**: [TranslatingTextWithinYourApp.zip](https://docs-assets.developer.apple.com/published/bb1d83066795/TranslatingTextWithinYourApp.zip)
+**Download**: [TranslatingTextWithinYourApp.zip](https://docs-assets.developer.apple.com/published/65752b45b4b8/TranslatingTextWithinYourApp.zip)
 
 Display simple system translations and create custom translation experiences.
 
@@ -100,7 +100,7 @@ struct SingleStringView: View {
             TextField("Enter text to translate", text: $sourceText)
                 .textFieldStyle(.roundedBorder)
             Button("Translate") {
-                triggerTranslation()
+                startTranslation()
             }
             Text(verbatim: targetText)
         }
@@ -120,7 +120,7 @@ struct SingleStringView: View {
         .navigationTitle("Single string")
     }
 
-    private func triggerTranslation() {
+    private func startTranslation() {
         guard configuration == nil else {
             configuration?.invalidate()
             return
@@ -157,7 +157,7 @@ struct BatchOfStringsView: View {
             }
             HStack {
                 Button("Translate") {
-                    triggerTranslation()
+                    startTranslation()
                 }
                 Button("Reset") {
                     viewModel.reset()
@@ -175,7 +175,7 @@ struct BatchOfStringsView: View {
         .navigationTitle("Batch all at once")
     }
 
-    private func triggerTranslation() {
+    private func startTranslation() {
         if configuration == nil {
             // Set the language pairing.
             configuration = .init(source: Locale.Language(identifier: "de"),

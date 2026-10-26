@@ -6,7 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/usage/using_streams.html
 
 # Using Streams
 
-## Specifying theStream
+## Specifying the Stream
 
 All operations (including random number generation) take an optional
 keyword argument `stream`. The `stream` kwarg specifies which

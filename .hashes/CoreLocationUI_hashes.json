@@ -235,10 +235,6 @@
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/sharemycurrentlocation.md",
       "hash": "97b5e854b176ae52dc9cabc4e044b0aacaafb87d68f2218ac14a7e556a558e73"
     },
-    "https://developer.apple.com/tutorials/data/documentation/corelocationui/com.apple.corelocationui/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton.json": {
       "etag": "\"4e10-65d560cf4855e-df\"",
       "file_path": "documentation/CoreLocationUI/locationbutton.md",
@@ -289,6 +285,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 57
+    "total_pages": 56
   }
 }

@@ -1,0 +1,28 @@
+# length(_:)
+
+**Framework**: simd  
+**Kind**: func  
+**Role**: Function
+
+Returns the length of a vector.
+
+## Declaration
+
+```swift
+func length(_ x: SIMD3<Float>) -> Float
+```
+
+## See Also
+
+### Length and Distance Functions
+- [func length_squared(SIMD3<Float>) -> Float](./length_squared%28_%29-8odp0.md)
+  Returns the square of the length of a vector.
+- [func distance(SIMD3<Float>, SIMD3<Float>) -> Float](./distance%28_,_%29-8t6ut.md)
+  Returns the distance between two vectors.
+- [func distance_squared(SIMD3<Float>, SIMD3<Float>) -> Float](./distance_squared%28_,_%29-87jjy.md)
+  Returns the square of the distance between two vectors.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/simd/length(_:)-6t47g)*

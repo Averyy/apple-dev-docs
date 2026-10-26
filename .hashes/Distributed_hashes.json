@@ -912,6 +912,9 @@
     }
   },
   "metadata": {
+    "handoff_from": {
+      "swift": {}
+    },
     "render": {
       "version": 1
     },

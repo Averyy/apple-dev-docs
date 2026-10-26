@@ -619,16 +619,12 @@
       "etag": "\"25fc-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller/isavbsupported().md",
       "hash": "3b0d2fbe76131411c67e436f0fbbd4698abdc72ed4b2f3e697079c2ea2c0b2a8"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/com.apple.coreaudiokit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
     }
   },
   "metadata": {
     "render": {
       "version": 1
     },
-    "total_pages": 125
+    "total_pages": 124
   }
 }

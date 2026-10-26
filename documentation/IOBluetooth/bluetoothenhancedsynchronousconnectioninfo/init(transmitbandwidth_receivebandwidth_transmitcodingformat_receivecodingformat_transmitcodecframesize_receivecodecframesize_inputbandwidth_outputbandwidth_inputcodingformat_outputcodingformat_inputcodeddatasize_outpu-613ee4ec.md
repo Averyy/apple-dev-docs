@@ -1,0 +1,19 @@
+# init(transmitBandWidth:receiveBandWidth:transmitCodingFormat:receiveCodingFormat:transmitCodecFrameSize:receiveCodecFrameSize:inputBandwidth:outputBandwidth:inputCodingFormat:outputCodingFormat:inputCodedDataSize:outputCodedDataSize:inputPCMDataFormat:outputPCMDataFormat:inputPCMSampelPayloadMSBPosition:outputPCMSampelPayloadMSBPosition:inputDataPath:outputDataPath:inputTransportUnitSize:outputTransportUnitSize:maxLatency:voiceSetting:retransmissionEffort:packetType:)
+
+**Framework**: IOBluetooth  
+**Kind**: init  
+**Role**: Initializer
+
+**Availability**:
+- macOS
+
+## Declaration
+
+```swift
+init(transmitBandWidth: BluetoothHCITransmitBandwidth, receiveBandWidth: BluetoothHCIReceiveBandwidth, transmitCodingFormat: BluetoothHCITransmitCodingFormat, receiveCodingFormat: BluetoothHCIReceiveCodingFormat, transmitCodecFrameSize: BluetoothHCITransmitCodecFrameSize, receiveCodecFrameSize: BluetoothHCIReceiveCodecFrameSize, inputBandwidth: BluetoothHCIInputBandwidth, outputBandwidth: BluetoothHCIOutputBandwidth, inputCodingFormat: BluetoothHCIInputCodingFormat, outputCodingFormat: BluetoothHCIOutputCodingFormat, inputCodedDataSize: BluetoothHCIInputCodedDataSize, outputCodedDataSize: BluetoothHCIOutputCodedDataSize, inputPCMDataFormat: BluetoothHCIInputPCMDataFormat, outputPCMDataFormat: BluetoothHCIOutputPCMDataFormat, inputPCMSampelPayloadMSBPosition: BluetoothHCIInputPCMSamplePayloadMSBPosition, outputPCMSampelPayloadMSBPosition: BluetoothHCIOutputPCMSamplePayloadMSBPosition, inputDataPath: BluetoothHCIInputDataPath, outputDataPath: BluetoothHCIOutputDataPath, inputTransportUnitSize: BluetoothHCIInputTransportUnitSize, outputTransportUnitSize: BluetoothHCIOutputTransportUnitSize, maxLatency: BluetoothHCIMaxLatency, voiceSetting: BluetoothHCIVoiceSetting, retransmissionEffort: BluetoothHCIRetransmissionEffort, packetType: BluetoothPacketType)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/bluetoothenhancedsynchronousconnectioninfo/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-5g3ma)*

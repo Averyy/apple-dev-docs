@@ -132,6 +132,12 @@
     }
   },
   "metadata": {
+    "child_modules": {
+      "applepaymerchanttokenmanagementapi": {}
+    },
+    "handoff_from": {
+      "merchanttokennotificationservices": {}
+    },
     "render": {
       "version": 1
     },

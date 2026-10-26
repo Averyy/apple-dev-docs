@@ -46,9 +46,9 @@
       "hash": "3f2a48f5216dbfa33fb71d15f7804c9160755088da2be0acd837634961f09d2e"
     },
     "https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox": {
-      "etag": "\"f295-65d89c7814792-df\"",
+      "etag": "\"f293-65d55d40d1de0-df\"",
       "file_path": "documentation/Security/accessing-files-from-the-macos-app-sandbox.md",
-      "hash": "71c367c3ebfd2ee4040d42c18db6cdd9feee34b07788f0140317fa70a11b3055"
+      "hash": "b6f950fda196f215e5e087ad6a9a1c9a6fe94b29b1d3d3b2a72474403720a778"
     },
     "https://developer.apple.com/documentation/security/acl-authorization-keys": {
       "etag": "\"811a-659025e5a800d-df\"",
@@ -11581,9 +11581,9 @@
       "hash": "3b2233a0a1f456fca64bb4fdfd1128db6916bee0060dd5cbb2149554025a7436"
     },
     "https://developer.apple.com/documentation/security/enabling-autofill-for-domain-bound-sms-codes": {
-      "etag": "\"33ec-65d89c7beb7ed-df\"",
+      "etag": "\"33eb-65d55d4bdff00-df\"",
       "file_path": "documentation/Security/enabling-autofill-for-domain-bound-sms-codes.md",
-      "hash": "acd3240a5c474ded32522db293ef878a91742616cced37bb8c72e6c8707f6149"
+      "hash": "286c04d98097a7ef2c79d267a8513041f9bf1e68738b81110d898aa9e93d9b2b"
     },
     "https://developer.apple.com/documentation/security/enabling-password-autofill-on-a-text-input-view": {
       "etag": "\"54b1-65d55d4197b06-df\"",
@@ -25984,9 +25984,9 @@
       "hash": "3f2a48f5216dbfa33fb71d15f7804c9160755088da2be0acd837634961f09d2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/accessing-files-from-the-macos-app-sandbox.json": {
-      "etag": "\"f295-65d89c7814792-df\"",
+      "etag": "\"f293-65d55d40d1de0-df\"",
       "file_path": "documentation/Security/accessing-files-from-the-macos-app-sandbox.md",
-      "hash": "71c367c3ebfd2ee4040d42c18db6cdd9feee34b07788f0140317fa70a11b3055"
+      "hash": "b6f950fda196f215e5e087ad6a9a1c9a6fe94b29b1d3d3b2a72474403720a778"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/acl-authorization-keys.json": {
       "etag": "\"811a-659025e5a800d-df\"",
@@ -26552,130 +26552,6 @@
       "etag": "\"14ef-65d55d43e72c6-df\"",
       "file_path": "documentation/Security/ber_tag_visible_string.md",
       "hash": "efe1af281b9eac93422af4005e54f9aa96c0447573ee79030a7f81505e8e5cfb"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.app-sandbox.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.assets.movies.read-only.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.assets.movies.read-write.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.assets.music.read-only.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.assets.music.read-write.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.assets.pictures.read-only.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.assets.pictures.read-write.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.automation.apple-events.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.cs.allow-dyld-environment-variables.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.cs.allow-jit.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.cs.allow-unsigned-executable-memory.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.cs.debugger.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.cs.disable-executable-page-protection.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.cs.disable-library-validation.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.device.audio-input.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.device.bluetooth.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.device.camera.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.device.microphone.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.device.usb.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.files.all.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.files.downloads.read-only.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.files.downloads.read-write.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.files.user-selected.read-only.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.files.user-selected.read-write.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.network.client.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.network.server.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.personal-information.addressbook.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.personal-information.calendars.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.personal-information.location.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.personal-information.photos-library.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/security/bundleresources/entitlements/com.apple.security.print.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/callersecuritysession.json": {
       "etag": "\"213a-65d55d485af12-df\"",
@@ -37643,9 +37519,9 @@
       "hash": "3b2233a0a1f456fca64bb4fdfd1128db6916bee0060dd5cbb2149554025a7436"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/enabling-autofill-for-domain-bound-sms-codes.json": {
-      "etag": "\"33ec-65d89c7beb7ed-df\"",
+      "etag": "\"33eb-65d55d4bdff00-df\"",
       "file_path": "documentation/Security/enabling-autofill-for-domain-bound-sms-codes.md",
-      "hash": "acd3240a5c474ded32522db293ef878a91742616cced37bb8c72e6c8707f6149"
+      "hash": "286c04d98097a7ef2c79d267a8513041f9bf1e68738b81110d898aa9e93d9b2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/security/enabling-password-autofill-on-a-text-input-view.json": {
       "etag": "\"54b1-65d55d4197b06-df\"",
@@ -52005,6 +51881,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 10407
+    "total_pages": 10376
   }
 }

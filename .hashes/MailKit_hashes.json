@@ -341,7 +341,7 @@
       "hash": "aaac040fbaeff7a639b5dc7edc1b4173a3541c56a10770c2a3e9628519d34748"
     },
     "https://developer.apple.com/documentation/mailkit/meencodedoutgoingmessage/init(rawdata:issigned:isencrypted:)": {
-      "etag": "\"3a97-65d55e19c056e-df\"",
+      "etag": "\"3a97-65d55e19c056e\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage/init(rawdata,issigned,isencrypted).md",
       "hash": "cb42e68719c1c3a0498fcd20ced4430a6bb1bfe602deb144d735d7ee7a47c5a8"
     },
@@ -1286,7 +1286,7 @@
       "hash": "aaac040fbaeff7a639b5dc7edc1b4173a3541c56a10770c2a3e9628519d34748"
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meencodedoutgoingmessage/init(rawdata:issigned:isencrypted:).json": {
-      "etag": "\"3a97-65d55e19c056e-df\"",
+      "etag": "\"3a97-65d55e19c056e\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage/init(rawdata,issigned,isencrypted).md",
       "hash": "cb42e68719c1c3a0498fcd20ced4430a6bb1bfe602deb144d735d7ee7a47c5a8"
     },

@@ -1673,26 +1673,6 @@
       "file_path": "documentation/Testing/sourcelocation.md",
       "hash": "aa8820e98b6182e2b38962a118f8f2814b2c99fe9ed889697d76ebf8cce20208"
     },
-    "https://developer.apple.com/tutorials/data/documentation/testing/sourcelocation/...(_:)-4s3iq.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/sourcelocation/...(_:)-7f4yi.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/sourcelocation/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/sourcelocation/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/sourcelocation/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/testing/sourcelocation/column.json": {
       "etag": "\"1264-65d560ae03864-df\"",
       "file_path": "documentation/Testing/sourcelocation/column.md",
@@ -1752,26 +1732,6 @@
       "etag": "\"419c-65d560ae03864-df\"",
       "file_path": "documentation/Testing/tag.md",
       "hash": "cd0daf5d59580b4a287f98c52929436dd7d53b8432fe53fa561dc500a4b04a2b"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/tag/...(_:)-4w7v.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/tag/...(_:)-77j2m.json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/tag/...(_:_:).json": {
-      "error": "HTTP 403",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/tag/.._(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/testing/tag/.._(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/testing/tag/list.json": {
       "etag": "\"3ebc-65d560ae0ddb4-df\"",
@@ -2061,6 +2021,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 414
+    "total_pages": 404
   }
 }

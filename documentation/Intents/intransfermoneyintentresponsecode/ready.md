@@ -1,0 +1,53 @@
+# INTransferMoneyIntentResponseCode.ready
+
+**Framework**: Intents  
+**Kind**: case  
+**Role**: Case
+
+You’re ready to handle the intent.
+
+**Availability**:
+- iOS 11.0+ - Deprecated in 15.0
+- iPadOS 11.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 4.0+ - Deprecated in 8.0
+
+> **Deprecated**: This intent is no longer available. You may define a custom intent instead. For more information, see [Deprecated SiriKit Intent Domains](https://developer.apple.com/support/deprecated-sirikit-intent-domains).
+
+## Declaration
+
+```swift
+case ready
+```
+
+```c
+INTransferMoneyIntentResponseCodeReady
+```
+
+#### Discussion
+
+Return this response code during the confirmation phase after you’ve verified that you’re able to fulfill the intent. Don’t return this response code when handling the intent; doing so causes the device to display an error.
+
+## See Also
+
+### Constants
+- [INTransferMoneyIntentResponseCode.unspecified](./unspecified.md)
+  The response didn’t specify a response code.
+- [INTransferMoneyIntentResponseCode.inProgress](./inprogress.md)
+  You’ve received the transaction details but haven’t yet scheduled the transaction.
+- [INTransferMoneyIntentResponseCode.success](./success.md)
+  You successfully scheduled the transaction.
+- [INTransferMoneyIntentResponseCode.failure](./failure.md)
+  You were unable to schedule the transaction.
+- [INTransferMoneyIntentResponseCode.failureRequiringAppLaunch](./failurerequiringapplaunch.md)
+  The user must launch your app to schedule the transaction.
+- [INTransferMoneyIntentResponseCode.failureCredentialsUnverified](./failurecredentialsunverified.md)
+  The transaction failed because you were unable to verify the user’s credentials.
+- [INTransferMoneyIntentResponseCode.failureInsufficientFunds](./failureinsufficientfunds.md)
+  The transaction failed because the user’s account didn’t contain sufficient funds.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/intents/intransfermoneyintentresponsecode/ready)*

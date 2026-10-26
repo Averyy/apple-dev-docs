@@ -5595,7 +5595,7 @@
       "hash": "10e9363db4456f229c31b5cc2c1ce040e4a5845172cb3ea0f64b06592f8f8a01"
     },
     "https://developer.apple.com/documentation/realitykit/charactercontrollerstatecomponent/isonground": {
-      "etag": "\"16dd-65d55e6c90202\"",
+      "etag": "\"16dd-65d55e6c90202-df\"",
       "file_path": "documentation/RealityKit/charactercontrollerstatecomponent/isonground.md",
       "hash": "e1b6cafc3e9ae36f27ef6d2cbaaf309556b9e4e44b0e26d1cc5fe9b6e10ceaee"
     },
@@ -35999,10 +35999,6 @@
       "file_path": "documentation/RealityKit/bloomoptionscomponent/threshold.md",
       "hash": "5821005619e794aecbd884ce550759c464c2a811cedadcd5bffdf3105bcb3367"
     },
-    "https://developer.apple.com/tutorials/data/documentation/realitykit/bodytrackedentity#configuring-body-tracking.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/bodytrackedentity.json": {
       "etag": "\"6fe4-65d55e73a1d8f-df\"",
       "file_path": "documentation/RealityKit/bodytrackedentity.md",
@@ -36499,7 +36495,7 @@
       "hash": "10e9363db4456f229c31b5cc2c1ce040e4a5845172cb3ea0f64b06592f8f8a01"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/charactercontrollerstatecomponent/isonground.json": {
-      "etag": "\"16dd-65d55e6c90202\"",
+      "etag": "\"16dd-65d55e6c90202-df\"",
       "file_path": "documentation/RealityKit/charactercontrollerstatecomponent/isonground.md",
       "hash": "e1b6cafc3e9ae36f27ef6d2cbaaf309556b9e4e44b0e26d1cc5fe9b6e10ceaee"
     },
@@ -38098,10 +38094,6 @@
       "file_path": "documentation/RealityKit/collisiongroup/sceneunderstanding.md",
       "hash": "add3b6d055f18dc05a25550131b9c485af572b9ead3a5c75b1a425620b3d4c31"
     },
-    "https://developer.apple.com/tutorials/data/documentation/realitykit/com.apple.realitykit/objc(pl)uiappearancecontainer.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/combining-2d-and-3d-views-in-an-immersive-app.json": {
       "etag": "\"9878-65d55e71810b4-df\"",
       "file_path": "documentation/RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md",
@@ -39504,10 +39496,6 @@
       "etag": "\"230b-65d55e70cbf1e-df\"",
       "file_path": "documentation/RealityKit/directionallightcomponent/layers.md",
       "hash": "8295c83a75f566045db8786d9a69067ba0eadb7ae00823103a735458eacf108e"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/realitykit/directionallightcomponent/shadow#registering-a-component-type.json": {
-      "error": "HTTP 404",
-      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/directionallightcomponent/shadow.json": {
       "etag": "\"4c87-65d55e70cbf1e-df\"",
@@ -50528,10 +50516,6 @@
       "file_path": "documentation/RealityKit/modeldebugoptionscomponent/init(visualizationmode).md",
       "hash": "716eb3e2d59c5c7a27d5bb33f169c2416158d95e257f96ef83b1a68b24cd2fcc"
     },
-    "https://developer.apple.com/tutorials/data/documentation/realitykit/modeldebugoptionscomponent/visualizationmode-swift.enum#raw-values.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/modeldebugoptionscomponent/visualizationmode-swift.enum.json": {
       "etag": "\"6448-65d55e71a0067-df\"",
       "file_path": "documentation/RealityKit/modeldebugoptionscomponent/visualizationmode-swift.enum.md",
@@ -60932,10 +60916,6 @@
       "file_path": "documentation/RealityKit/transientcomponent.md",
       "hash": "bb79108274163c58e4a35c82511cf38a4ec908b066cbf470cd2cab0ed2370c9a"
     },
-    "https://developer.apple.com/tutorials/data/documentation/realitykit/triggervolume#detecting-collisions.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/triggervolume.json": {
       "etag": "\"7376-65d55e6aef396-df\"",
       "file_path": "documentation/RealityKit/triggervolume.md",
@@ -61845,6 +61825,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 12372
+    "total_pages": 12367
   }
 }

@@ -11,6 +11,12 @@ App Store Server Notifications has two versions of notifications. Version 1 noti
 
 To set up your server to receive notifications, see [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md). Use this changelog to learn about feature updates, version information, deprecations, and removals for App Store Server Notifications.
 
+##### October 23, 2026
+
+**New features**
+
+- The `ASSIGNED` value of [`inAppOwnershipType`](./inappownershiptype.md) and the `ASSIGNMENT_REVOKE` value of [`revocationType`](./revocationtype.md) are now available in both the sandbox and production environments, for subscriptions that organizations assign to customers.
+
 ##### October 1, 2026
 
 **New features**
@@ -22,6 +28,7 @@ To set up your server to receive notifications, see [Enabling App Store Server N
 **New features**
 
 - Added the `ASSIGNED` value to [`inAppOwnershipType`](./inappownershiptype.md), and the `ASSIGNMENT_REVOKE` value to [`revocationType`](./revocationtype.md), to support multiseat purchases, which let organizations and groups buy your subscriptions in bulk. These values are only available in the sandbox environment.
+- The App Store sends a `REVOKE` notification when an organization removes a subscription that it assigned to a customer. In this case, the [`revocationType`](./revocationtype.md) in the transaction is `ASSIGNMENT_REVOKE`.
 - The [`quantity`](./quantity.md) field also reports the number of seats for a subscription that a customer buys as a multiseat purchase.
 
 ##### April 27, 2026

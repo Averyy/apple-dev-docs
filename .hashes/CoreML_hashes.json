@@ -531,7 +531,7 @@
       "hash": "fba48cf97576fa8b0730211a075a2db21bb76b5b5299e86e90bdb6b4b1b1ebdc"
     },
     "https://developer.apple.com/documentation/coreml/mlfeaturevalue/imageoption/croprect": {
-      "etag": "\"3863-65d55da64e9a9-df\"",
+      "etag": "\"3863-65d55da64e9a9\"",
       "file_path": "documentation/CoreML/mlfeaturevalue/imageoption/croprect.md",
       "hash": "7b18aa737a6943849c05ccbc3055eebfab824d505d9f68538193e3f41870f0a1"
     },
@@ -4066,7 +4066,7 @@
       "hash": "fba48cf97576fa8b0730211a075a2db21bb76b5b5299e86e90bdb6b4b1b1ebdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mlfeaturevalue/imageoption/croprect.json": {
-      "etag": "\"3863-65d55da64e9a9-df\"",
+      "etag": "\"3863-65d55da64e9a9\"",
       "file_path": "documentation/CoreML/mlfeaturevalue/imageoption/croprect.md",
       "hash": "7b18aa737a6943849c05ccbc3055eebfab824d505d9f68538193e3f41870f0a1"
     },
@@ -6240,94 +6240,6 @@
       "file_path": "documentation/CoreML/mltensor/minuseq(_,_).md",
       "hash": "5f970d0ab09c37288351703c3acdeb903a067a04c9b93e93342533c32ddd6d4a"
     },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.!(_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.!=(_:_:)-90xyy.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.!=(_:_:)-9i2ns.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.!=(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.&(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.==(_:_:)-8ejfu.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.==(_:_:)-9lqot.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/.==(_:_:).json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-32m7y.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-3m3ro.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-6kfoh.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-6llkp.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-7406y.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-7b1mq.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-7z7ks.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._(_:_:)-8il7w.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._=(_:_:)-1rc0m.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._=(_:_:)-2zak0.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._=(_:_:)-4y1x4.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._=(_:_:)-5qa2u.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._=(_:_:)-78naz.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/._=(_:_:)-otif.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/coreml/mltensor/_(_:_:)-5hhe4.json": {
       "etag": "\"5cb9-65d55da50a68b-df\"",
       "file_path": "documentation/CoreML/mltensor/op(_,_)-5hhe4.md",
@@ -7163,6 +7075,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1436
+    "total_pages": 1414
   }
 }

@@ -3505,10 +3505,6 @@
       "file_path": "documentation/Quartz/cell-layer-positions.md",
       "hash": "eaa6dd2ba5034d5815976e9a0d4f29f44e8a49b6c81c2485da7dfcc61d5c422c"
     },
-    "https://developer.apple.com/tutorials/data/documentation/quartz/com.apple.quartz/objc(cs)nscontroller.json": {
-      "error": "HTTP 404",
-      "status": "error"
-    },
     "https://developer.apple.com/tutorials/data/documentation/quartz/composition-categories.json": {
       "etag": "\"25b6-659023787b16c-df\"",
       "file_path": "documentation/Quartz/composition-categories.md",
@@ -6959,6 +6955,6 @@
     "render": {
       "version": 1
     },
-    "total_pages": 1391
+    "total_pages": 1390
   }
 }
