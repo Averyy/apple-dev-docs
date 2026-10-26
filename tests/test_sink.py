@@ -1,34 +1,56 @@
-"""The DocC site and the sinks (1.1 + D6, step 1a: a refactor with no new behavior).
+"""The DocC site, the sinks and the D6 modules (1.1 + D6).
 
+Step 1a (a refactor with no new behavior):
 - site.DocCSite: one site's URLs; APPLE gives the Apple scraper, the naming
   and the links every URL they use, and the scraper builds each from its site;
 - sink.Sink: one docs dir and its hash file with this run's state for its
   pages; a framework job's primary sink is its own dir and hash file;
 - sink.SinkRegistry: one sink per site and dir (in any casing), created on
-  first use; a run's jobs share one, and each job's sink leaves it once the
-  job is done.
+  first use; a run's jobs share one, and a top-level sink's hash manager
+  leaves memory once no job in flight uses it.
+
+Step 1b (the behavior), through whole scrape.py runs against a fake Apple:
+- the reference resolver (references[id].url, fragments stripped) and the
+  scope rule (the job's framework, or the page's bundle; never by substring);
+- routing: a module's pages go to its own dir and hash file (metadata.module,
+  the parent's child_modules), a same-bundle sibling's page to the sibling's
+  sink (a handoff, one hop; metadata.handoff_from), deduplicated per sink,
+  with the page's links for every job that reaches it;
+- the multi-writer end of run (finish_run) and the D6 removal rules 1–5:
+  a module unlinked by its only parent goes after 2 clean runs, one with
+  another parent stays, a deleted or renamed parent is pruned, a renamed or
+  promoted module, a protected failure or a parent unlisted for one run
+  deletes nothing, the subset runs never clean a module whose other parent
+  didn't run; the namespace_collision check; the stale error entries
+  (section anchors, item 8) leave through the normal cleanup.
 """
 
+import asyncio
 import dataclasses
+import hashlib
 import json
 import os
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, Iterator, List, Optional, Sequence, Set, Tuple
 
 import httpx
 import pytest
+from structlog.testing import capture_logs
+from structlog.typing import EventDict
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scripts', 'utilities')))
 
 import scrape_all_frameworks
+from cleanup_orphans_at_end import MODULE_UNLINKED_RUNS, remove_framework
 from scraper.config import Config
-from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.json_scraper import AppleJSONDocumentationScraper, PageLink
 from scraper.sink import Sink, SinkRegistry
 from scraper.site import APPLE, DocCSite
-from scraper.utils.naming import DOC_URL_PREFIX, JSON_URL_PREFIX
+from scraper.utils.naming import DOC_URL_PREFIX, JSON_URL_PREFIX, page_path
 from tests.test_failure_policy import FW, SITE, Apple, FrameworkList, Runs, Site, file_of, routes_for, sandbox_runs
+from tests.test_fetch_results import Spec, doc_url, json_url, ok, status
 
 EXAMPLE = DocCSite(
     name="example",
@@ -51,6 +73,11 @@ def write_hash_file(name: str, hashes: Dict[str, Dict[str, Any]]) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps({"metadata": {}, "hashes": hashes}))
     return path
+
+
+def loaded(sink: Sink) -> bool:
+    """Whether a sink's hash manager is in memory."""
+    return sink.loaded
 
 
 class TestDocCSite:
@@ -154,18 +181,37 @@ class TestSinkRegistry:
         assert alone.sinks is not sinks and alone.sink is not scraper.sink
         assert alone.sink.known_dirs == {"testkit": "TestKit"}
 
-    def test_evict_drops_a_sink_and_a_later_get_loads_its_hash_file_again(self, dirs: Path) -> None:
+    def test_release_saves_and_drops_the_manager_and_keeps_the_runs_state(self, dirs: Path) -> None:
+        """A released sink's next use loads its hash file again, with the run's touched set."""
         sinks = SinkRegistry()
         sink = sinks.get(APPLE, "TestKit", "Test Kit", 1)
         url = f"{APPLE.json_prefix}testkit/a.json"
         sink.hash_manager.update_hash(url, "body", "E1", Path("documentation/TestKit/a.md"))
-        assert sink.hash_manager.save()
-        sinks.evict(sink)
-        again = sinks.get(APPLE, "TestKit", "Test Kit", 1)
-        assert again is not sink and again.hash_manager.hashes[url]["etag"] == "E1"
-        # Evicting a sink that is no longer the registered one leaves the new one
-        sinks.evict(sink)
-        assert sinks.get(APPLE, "TestKit", "Test Kit", 1) is again
+        sink.processed_urls.add(url)
+        manager = sink.hash_manager
+        assert sink.release() and not sink.loaded
+        assert Config.get_hash_file("TestKit").exists()
+        assert sinks.get(APPLE, "testkit", "x", 1) is sink and sink.processed_urls == {url}
+        again = sink.hash_manager
+        assert again is not manager and again.hashes[url]["etag"] == "E1" and url in again.touched
+
+    def test_a_top_level_sink_is_released_once_no_job_in_flight_uses_it(self, dirs: Path) -> None:
+        sinks = SinkRegistry()
+        sink = sinks.get(APPLE, "TestKit", "Test Kit", 1)
+        sink.users.update({"testkit", "otherkit"})
+        sink.pages_in_flight = 1
+        sinks.job_done("testkit")
+        sinks.job_done("otherkit")
+        assert loaded(sink)  # a page still in flight records into it
+        sink.pages_in_flight = 0
+        sinks.release_if_idle(sink)
+        assert not loaded(sink)
+        # A module's sink stays loaded until the end of the run
+        module = sinks.get(APPLE, "Intents", "Intents", 1, module=True)
+        sinks.release_if_idle(module)
+        assert loaded(module)
+        sinks.save_all()
+        assert not loaded(module) and sinks.all() == []
 
     async def test_a_run_shares_one_registry_and_each_job_leaves_it(
         self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
@@ -196,9 +242,562 @@ class TestSinkRegistry:
         ])
         assert await scrape_all_frameworks.scrape_everything() == 0
         assert apple.unrouted == [] and len(registries) == 1
-        # The run's frameworks are linked locally, and every job's sink has left
+        # The run's frameworks are linked locally, and every sink was saved and left
         assert registries[0].known_dirs == {FW: FW, other: other}
-        assert registries[0]._sinks == {}
+        assert registries[0].all() == []
         for path in SITE:
             assert file_of(path).exists(), path
         assert runs.saved()["hashes"] and runs.saved(other)["hashes"]
+
+
+# ---------------------------------------------------------------------------
+# Step 1b: the resolver, the scope rule, routing and the D6 removal rules
+# ---------------------------------------------------------------------------
+
+A = "com.apple.umbrella"  # Umbrella's bundle: its pages', and its module ModKit's
+B = "com.apple.otherbrella"  # Otherbrella's (ModKit's second parent)
+S = "com.apple.sibkit"  # shared by Sibkit and SibkitUI, two top-level technologies
+
+# (a page's cased documentation path, the bundle its identifier names)
+Link = Tuple[str, str]
+# cased documentation path -> (the page's bundle, its links)
+Pages = Dict[str, Tuple[str, List[Link]]]
+
+
+def topic_page(path: str, bundle: str, links: Sequence[Link] = ()) -> str:
+    """A page whose links resolve through their references (url /documentation/<path, lowercased>)."""
+    identifiers = [f"doc://{link_bundle}/documentation/{link}" for link, link_bundle in links]
+    return json.dumps({
+        "identifier": {"url": f"doc://{bundle}/documentation/{path}", "interfaceLanguage": "swift"},
+        "metadata": {"title": path.split("/")[-1], "symbolKind": "class", "roleHeading": "Class"},
+        "abstract": [{"type": "text", "text": f"The {path} page."}],
+        "topicSections": [{"title": "Topics", "identifiers": identifiers}],
+        "references": {
+            identifier: {"type": "topic", "url": f"/documentation/{link.lower()}", "title": link.split("/")[-1],
+                         "identifier": identifier, "kind": "symbol", "role": "symbol"}
+            for identifier, (link, _) in zip(identifiers, links)
+        },
+    })
+
+
+def d6_routes(pages: Pages, overrides: Optional[Dict[str, List[Spec]]] = None) -> Dict[str, List[Spec]]:
+    """Each page answers 200 with an etag of its body (304 on a match), unless overridden."""
+    routes: Dict[str, List[Spec]] = {}
+    for path, (bundle, links) in pages.items():
+        body = topic_page(path, bundle, links)
+        routes[json_url(path.lower())] = [ok(body, "E-" + hashlib.sha256(body.encode()).hexdigest()[:12])]
+    for path, specs in (overrides or {}).items():
+        routes[json_url(path.lower())] = specs
+    return routes
+
+
+def doc_file(path: str) -> Path:
+    """A page's file: its dir is its first segment, as cased (relative, as in production)."""
+    dir_name = path.split("/")[0]
+    relative = page_path(dir_name, doc_url(path.lower()))
+    assert relative is not None
+    return Path("documentation") / relative
+
+
+def metadata(name: str) -> Dict[str, Any]:
+    """A hash file's metadata, as saved."""
+    data: Dict[str, Any] = json.loads(Config.get_hash_file(name).read_text())
+    return dict(data["metadata"])
+
+
+def module_of(name: str) -> Dict[str, Any]:
+    module: Dict[str, Any] = metadata(name)["module"]
+    return module
+
+
+def docs() -> Set[Path]:
+    """Every doc file in the sandbox."""
+    return set(Path("documentation").rglob("*.md"))
+
+
+def sandbox_bytes() -> Dict[str, bytes]:
+    """Every doc and hash file in the sandbox, with its bytes."""
+    return {str(path): path.read_bytes() for root in ("documentation", ".hashes")
+            for path in Path(root).rglob("*") if path.is_file()}
+
+
+UMBRELLA: Pages = {
+    "Umbrella": (A, [("Umbrella/guide", A), ("ModKit", A)]),
+    "Umbrella/guide": (A, []),
+    # ModKit links back to an umbrella page nothing else links
+    "ModKit": (A, [("ModKit/Thing", A), ("Umbrella/back", A)]),
+    "ModKit/Thing": (A, []),
+    "Umbrella/back": (A, []),
+}
+OTHERKIT: Pages = {"Otherkit": (A, [("Otherkit/one", A)]), "Otherkit/one": (A, [])}
+
+
+def without(pages: Pages, path: str, link: str) -> Pages:
+    """The pages, with one page no longer linking to one target."""
+    bundle, links = pages[path]
+    return {**pages, path: (bundle, [entry for entry in links if entry[0] != link])}
+
+
+class D6Runs:
+    """Whole scrape.py runs (--cleanup-orphans --auto-cleanup) over one sandbox, against a fake Apple."""
+
+    def __init__(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+        self.runs = sandbox_runs(tmp_path, monkeypatch)
+        self.monkeypatch = monkeypatch
+        self.events: List[EventDict] = []
+        self.requests: List[str] = []
+
+    async def scrape(
+        self,
+        pages: Pages,
+        listed: Sequence[str],
+        *names: str,
+        overrides: Optional[Dict[str, List[Spec]]] = None,
+        concurrent: int = 20,
+        delays: Optional[Dict[str, float]] = None,
+    ) -> int:
+        """One run: technologies.json lists `listed`; --frameworks names, else --all.
+
+        delays: a URL fragment -> seconds its response waits (a page in flight)
+        """
+        apple = Apple(d6_routes(pages, overrides))
+
+        async def handler(request: httpx.Request) -> httpx.Response:
+            for fragment, seconds in (delays or {}).items():
+                if fragment in str(request.url):
+                    await asyncio.sleep(seconds)
+            # Apple's URL space is case-insensitive (a job's root URL has its id's casing)
+            return apple(httpx.Request(request.method, str(request.url).lower(), headers=request.headers))
+
+        class MockedScraper(AppleJSONDocumentationScraper):
+            async def __aenter__(self) -> "MockedScraper":
+                self.session = httpx.AsyncClient(transport=httpx.MockTransport(handler), follow_redirects=True)
+                return self
+
+        frameworks = [{"id": framework, "title": framework} for framework in listed]
+
+        class Listed:
+            async def __aenter__(self) -> "Listed":
+                return self
+
+            async def __aexit__(self, *exc: Any) -> None:
+                return None
+
+            async def fetch_all_frameworks(self) -> List[Dict[str, str]]:
+                return [dict(framework) for framework in frameworks]
+
+        self.monkeypatch.setattr(scrape_all_frameworks, "AppleJSONDocumentationScraper", MockedScraper)
+        self.monkeypatch.setattr(scrape_all_frameworks, "AppleFrameworkListScraper", Listed)
+        selection = ["--frameworks", *names] if names else ["--all"]
+        self.monkeypatch.setattr(sys, "argv", [
+            "scrape.py", *selection, "--yes", "--cleanup-orphans", "--auto-cleanup", "--concurrent", str(concurrent),
+        ])
+        with capture_logs() as events:
+            code: int = await scrape_all_frameworks.scrape_everything()
+        self.events = events
+        self.requests = [url for url, _ in apple.requests]
+        return code
+
+    def logged(self, event: str) -> List[EventDict]:
+        return [e for e in self.events if e["event"] == event]
+
+
+@pytest.fixture
+def d6(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Iterator[D6Runs]:
+    yield D6Runs(tmp_path, monkeypatch)
+
+
+class TestResolver:
+    """The reference resolver and the scope rule (1.1)."""
+
+    def test_a_link_resolves_through_its_reference(self, dirs: Path) -> None:
+        scraper = AppleJSONDocumentationScraper("SiriKit")
+        intents = "doc://com.apple.sirikit/documentation/Intents"
+        anchor = "doc://com.apple.sirikit/documentation/SiriKit/A#a-section"
+        dots = "doc://com.apple.swift/documentation/Swift/Comparable/...(_:_:)"
+        refs = {
+            intents: {"type": "topic", "url": "/documentation/intents"},
+            anchor: {"type": "topic", "url": "/documentation/sirikit/a#a-section"},
+            dots: {"type": "topic", "url": "/documentation/swift/comparable/'...(_:_:)"},
+            "doc://com.apple.sirikit/tutorials/T": {"type": "topic", "url": "/tutorials/t"},
+            "doc://com.apple.sirikit/documentation/SiriKit/L": {"type": "link", "url": "https://example.com/l"},
+            "doc://com.apple.sirikit/documentation/SiriKit/N": {"type": "topic"},
+        }
+        # Apple's own URL: a module is /documentation/intents, never sirikit/intents
+        assert scraper._resolve(intents, refs) == PageLink(
+            json_url=f"{JSON_URL_PREFIX}intents.json", segment="intents", dir_name="Intents",
+            bundle="com.apple.sirikit", identifier=intents)
+        # A section anchor is its page; Apple's ' escape stays as it is
+        assert scraper._resolve(anchor, refs).json_url == f"{JSON_URL_PREFIX}sirikit/a.json"  # type: ignore[union-attr]
+        assert scraper._resolve(dots, refs).json_url == (  # type: ignore[union-attr]
+            f"{JSON_URL_PREFIX}swift/comparable/'...(_:_:).json")
+        # Not a documentation page: a tutorial, an external link, a reference with no URL
+        for identifier in ("doc://com.apple.sirikit/tutorials/T", "doc://com.apple.sirikit/documentation/SiriKit/L",
+                           "doc://com.apple.sirikit/documentation/SiriKit/N"):
+            assert scraper._resolve(identifier, refs) is None
+        assert scraper.reference_fallbacks == 0
+        # No reference: the identifier's own path (never the framework's id prepended), counted
+        fallback = scraper._resolve("doc://com.apple.sirikit/documentation/Intents/INIntent#x", {})
+        assert fallback is not None
+        assert (fallback.json_url, fallback.dir_name) == (f"{JSON_URL_PREFIX}intents/inintent.json", "Intents")
+        assert scraper.reference_fallbacks == 1
+
+    def test_the_scope_rule_follows_the_framework_and_its_bundle_never_a_substring(self, dirs: Path) -> None:
+        sinks = SinkRegistry(top_level={"apple": ["HealthKit", "SwiftUI", "Foundation"]})
+        scraper = AppleJSONDocumentationScraper("HealthKit", sinks=sinks)
+        targets = [
+            ("doc://com.apple.healthkit/documentation/HealthKit/HKUnit", "/documentation/healthkit/hkunit"),
+            # Same bundle, no top-level technology: a module
+            ("doc://com.apple.healthkit/documentation/HealthKitUI", "/documentation/healthkitui"),
+            # Same bundle, another top-level technology: its own sink (a handoff)
+            ("doc://com.apple.healthkit/documentation/SwiftUI/View", "/documentation/swiftui/view"),
+            # Another bundle: out of scope, whatever its name holds ("healthkit" in "healthkitui")
+            ("doc://com.apple.healthkitui/documentation/HealthKitUI/X", "/documentation/healthkitui/x"),
+            ("doc://com.apple.documentation/documentation/Foundation/NSString", "/documentation/foundation/nsstring"),
+            # The framework's own pages, from any bundle
+            ("doc://com.apple.other/documentation/HealthKit/Other", "/documentation/healthkit/other"),
+        ]
+        page = {
+            "identifier": {"url": "doc://com.apple.healthkit/documentation/HealthKit"},
+            "topicSections": [{"title": "Topics", "identifiers": [identifier for identifier, _ in targets]}],
+            "references": {identifier: {"type": "topic", "url": url} for identifier, url in targets},
+        }
+        assert scraper._extract_urls_from_json_data(page) == [
+            f"{JSON_URL_PREFIX}healthkit/hkunit.json", f"{JSON_URL_PREFIX}healthkitui.json",
+            f"{JSON_URL_PREFIX}swiftui/view.json", f"{JSON_URL_PREFIX}healthkit/other.json",
+        ]
+        # Another technology's root is its own job's; the job's own root keeps its id's casing
+        root_links = {
+            "identifier": {"url": "doc://com.apple.healthkit/documentation/HealthKit"},
+            "topicSections": [{"title": "Topics", "identifiers": ["doc://com.apple.healthkit/documentation/SwiftUI",
+                                                                  "doc://com.apple.healthkit/documentation/HealthKit"]}],
+            "references": {"doc://com.apple.healthkit/documentation/SwiftUI": {"type": "topic", "url": "/documentation/swiftui"},
+                           "doc://com.apple.healthkit/documentation/HealthKit": {"type": "topic", "url": "/documentation/healthkit"}},
+        }
+        assert scraper._extract_urls_from_json_data(root_links) == [f"{JSON_URL_PREFIX}healthkit.json"]
+        queue: List[str] = []
+        scraper._enqueue([f"{JSON_URL_PREFIX}healthkit.json"], queue)  # type: ignore[arg-type]
+        assert queue == [scraper.root_json_url] == [f"{JSON_URL_PREFIX}HealthKit.json"]
+        # Routing: the own sink, a module's (cased from the identifier), the sibling's (its title)
+        assert scraper._route(f"{JSON_URL_PREFIX}healthkit/hkunit.json") is scraper.sink
+        module = scraper._route(f"{JSON_URL_PREFIX}healthkitui.json")
+        sibling = scraper._route(f"{JSON_URL_PREFIX}swiftui/view.json")
+        assert module is not None and sibling is not None
+        assert (module.dir_name, module.module, module.framework_name) == ("HealthKitUI", True, "HealthKitUI")
+        assert (sibling.dir_name, sibling.module) == ("SwiftUI", False)
+        assert module.parents_this_run == sibling.parents_this_run == {"healthkit"}
+
+    def test_a_standalone_scraper_takes_its_top_level_set_from_the_hash_files(self, dirs: Path) -> None:
+        write_hash_file("SwiftUI", {f"{APPLE.json_prefix}swiftui/view.json": {"hash": "h"}})
+        write_hash_file("Intents", {f"{APPLE.json_prefix}intents/x.json": {"hash": "h"}})
+        intents = Config.get_hash_file("Intents")
+        data = json.loads(intents.read_text())
+        data["metadata"]["module"] = {"parents": {"sirikit": {"unlinked_clean_runs": 0}}}
+        intents.write_text(json.dumps(data))
+        (Config.CACHE_DIR / "broken_hashes.json").write_text("{")
+        write_hash_file("hig_docs", {"https://developer.apple.com/tutorials/data/design/x.json": {"hash": "h"}})
+        assert SinkRegistry().top_level(APPLE) == {"swiftui", "broken"}
+
+
+class TestModules:
+    """A module's pages go to its own dir and hash file, crawled through its parent."""
+
+    async def test_a_module_gets_its_own_dir_and_hash_file_and_a_rerun_changes_nothing(self, d6: D6Runs) -> None:
+        assert await d6.scrape(UMBRELLA, ["Umbrella"], "Umbrella") == 0
+        assert docs() == {doc_file(path) for path in UMBRELLA}
+        assert doc_file("ModKit/Thing") == Path("documentation/ModKit/thing.md")
+        assert "**Framework**: ModKit" in doc_file("ModKit/Thing").read_text()
+        assert "**Framework**: Umbrella" in doc_file("Umbrella/back").read_text()
+        assert module_of("ModKit") == {"bundle": A, "parents": {"umbrella": {"unlinked_clean_runs": 0}}}
+        assert metadata("ModKit")["render"] == {"version": AppleJSONDocumentationScraper.RENDER_VERSION}
+        assert metadata("Umbrella")["child_modules"] == {"modkit": {}}
+        assert "module" not in metadata("Umbrella")
+        # Each page fetched once, never under its umbrella's id
+        assert not any("umbrella/modkit" in url for url in d6.requests)
+        before = sandbox_bytes()
+        assert await d6.scrape(UMBRELLA, ["Umbrella"], "Umbrella") == 0
+        assert sandbox_bytes() == before
+        # Rule 5: the parent's size in the largest-first sort counts its module's
+        assert scrape_all_frameworks.scan_hash_dir(Config.CACHE_DIR).page_counts["umbrella"] == 6 + 4
+
+    async def test_a_modules_root_is_crawled_even_when_its_parent_links_only_pages_under_it(
+        self, d6: D6Runs
+    ) -> None:
+        """Accelerate's simd-library links simd's symbols, never simd: the pages only simd's root links."""
+        pages: Pages = {
+            "Umbrella": (A, [("ModKit/Thing", A)]),
+            "ModKit/Thing": (A, []),
+            "ModKit": (A, [("ModKit/Thing", A), ("ModKit/Overload", A)]),
+            "ModKit/Overload": (A, []),
+        }
+        assert await d6.scrape(pages, ["Umbrella"]) == 0
+        assert {doc_file("ModKit"), doc_file("ModKit/Overload")} <= docs()
+        # A module without a root page (Apple answers 404): nothing but its pages
+        rootless = {path: page for path, page in pages.items() if path != "ModKit"}
+        rootless["Umbrella"] = (A, [("ModKit/Thing", A), ("ModKit/Overload", A)])
+        assert await d6.scrape(rootless, ["Umbrella"]) == 0
+        assert doc_file("ModKit/Overload").exists() and not doc_file("ModKit").exists()
+
+    async def test_a_module_unlinked_by_its_only_parent_goes_after_2_clean_runs(self, d6: D6Runs) -> None:
+        assert await d6.scrape(UMBRELLA, ["Umbrella"]) == 0
+        unlinked = without(UMBRELLA, "Umbrella", "ModKit")
+        for run in range(1, MODULE_UNLINKED_RUNS):
+            assert await d6.scrape(unlinked, ["Umbrella"]) == 0
+            assert module_of("ModKit")["parents"] == {"umbrella": {"unlinked_clean_runs": run}}
+            assert doc_file("ModKit/Thing").exists()
+        assert await d6.scrape(unlinked, ["Umbrella"]) == 0
+        assert not Config.get_hash_file("ModKit").exists() and not (Path("documentation") / "ModKit").exists()
+        assert "child_modules" not in metadata("Umbrella")
+        assert [e["reason"] for e in d6.logged("framework_removed")] == ["module_unlinked"]
+
+    async def test_a_module_with_two_parents_stays_while_one_still_links_it(self, d6: D6Runs) -> None:
+        pages: Pages = {**UMBRELLA, "Otherbrella": (B, [("ModKit", B)])}
+        assert await d6.scrape(pages, ["Umbrella", "Otherbrella"]) == 0
+        assert module_of("ModKit")["parents"] == {
+            "otherbrella": {"unlinked_clean_runs": 0}, "umbrella": {"unlinked_clean_runs": 0}}
+        files = docs()
+        stops = without(pages, "Otherbrella", "ModKit")
+        for run in (1, 2, 3):
+            assert await d6.scrape(stops, ["Umbrella", "Otherbrella"]) == 0
+            assert module_of("ModKit")["parents"] == {
+                "otherbrella": {"unlinked_clean_runs": run}, "umbrella": {"unlinked_clean_runs": 0}}
+            assert docs() == files
+
+    @pytest.mark.parametrize("concurrent,delays", [(1, None), (20, {"/modkit.json": 0.05, "/modkit/thing.json": 0.05})],
+                             ids=["done", "in-flight"])
+    async def test_a_dedup_hit_gives_the_second_parent_the_pages_links(
+        self, d6: D6Runs, concurrent: int, delays: Optional[Dict[str, float]]
+    ) -> None:
+        """A page of Otherbrella only a module page links: reached though Umbrella fetched the module."""
+        pages: Pages = {**UMBRELLA, "Otherbrella": (B, [("ModKit", B)]),
+                 "ModKit/Thing": (A, [("Otherbrella/hidden", B)]), "Otherbrella/hidden": (B, [])}
+        for run in (1, 2):
+            assert await d6.scrape(pages, ["Umbrella", "Otherbrella"], concurrent=concurrent, delays=delays) == 0
+            assert doc_file("Otherbrella/hidden").exists(), run
+            # The module's pages are fetched once a run, by one parent (their 304's discovery refetch aside)
+            assert d6.requests.count(json_url("modkit/thing")) == (1 if run == 1 else 2)
+            assert module_of("ModKit")["parents"] == {
+                "otherbrella": {"unlinked_clean_runs": 0}, "umbrella": {"unlinked_clean_runs": 0}}
+
+    async def test_a_module_pages_failure_blocks_its_parent_and_is_counted_in_the_modules_file(
+        self, d6: D6Runs
+    ) -> None:
+        assert await d6.scrape(UMBRELLA, ["Umbrella"]) == 0
+        files = docs()
+        assert await d6.scrape(UMBRELLA, ["Umbrella"], overrides={"ModKit/Thing": [status(502)]}) == 1
+        assert docs() == files
+        entry = json.loads(Config.get_hash_file("ModKit").read_text())["hashes"][json_url("modkit/thing")]
+        assert entry["consecutive_failures"] == 1 and entry["file_path"] == str(doc_file("ModKit/Thing"))
+
+    async def test_a_parent_run_with_a_protected_failure_deletes_nothing(self, d6: D6Runs) -> None:
+        assert await d6.scrape(UMBRELLA, ["Umbrella"]) == 0
+        files = docs()
+        unlinked = without(UMBRELLA, "Umbrella", "ModKit")
+        for _ in (1, 2):
+            assert await d6.scrape(unlinked, ["Umbrella"], overrides={"Umbrella/guide": [status(502)]}) == 1
+            # Unclean runs don't count
+            assert module_of("ModKit")["parents"] == {"umbrella": {"unlinked_clean_runs": 0}}
+            assert docs() == files
+
+    async def test_a_parent_unlisted_for_one_run_keeps_its_modules(self, d6: D6Runs) -> None:
+        pages: Pages = {**UMBRELLA, **OTHERKIT}
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"]) == 0
+        files = docs()
+        module = module_of("ModKit")
+        # The pre-scrape counted it once (unlisted_runs 1): its hash file stays
+        hash_file = Config.get_hash_file("Umbrella")
+        data = json.loads(hash_file.read_text())
+        data["metadata"]["unlisted_runs"] = 1
+        hash_file.write_text(json.dumps(data))
+        assert await d6.scrape(pages, ["Otherkit"]) == 0
+        assert docs() == files and module_of("ModKit") == module
+
+    async def test_a_removed_parent_is_pruned_and_its_parentless_module_deleted(self, d6: D6Runs) -> None:
+        pages: Pages = {**UMBRELLA, **OTHERKIT}
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"]) == 0
+        # The pre-scrape removes it after 2 unlisted runs (docs dir and hash file)
+        remove_framework("Umbrella", Config.get_framework_output_dir("Umbrella"), Config.get_hash_file("Umbrella"),
+                         reason="unlisted")
+        assert await d6.scrape(pages, ["Otherkit"]) == 0
+        assert not Config.get_hash_file("ModKit").exists() and not doc_file("ModKit/Thing").exists()
+        assert [e["reason"] for e in d6.logged("framework_removed")] == ["module_parentless"]
+        assert doc_file("Otherkit/one").exists()
+
+    async def test_a_renamed_parent_takes_over_the_module(self, d6: D6Runs) -> None:
+        pages: Pages = {"Umbrella": (A, [("ModKit", A)]), "ModKit": (A, [("ModKit/Thing", A)]),
+                        "ModKit/Thing": (A, []), **OTHERKIT}
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"]) == 0
+        remove_framework("Umbrella", Config.get_framework_output_dir("Umbrella"), Config.get_hash_file("Umbrella"),
+                         reason="unlisted")
+        renamed = {**pages, "Umbrella2": (A, [("ModKit", A)])}
+        assert await d6.scrape(renamed, ["Umbrella2", "Otherkit"]) == 0
+        assert module_of("ModKit")["parents"] == {"umbrella2": {"unlinked_clean_runs": 0}}
+        assert doc_file("ModKit/Thing").exists() and d6.logged("framework_removed") == []
+
+    async def test_a_renamed_module_is_a_new_one_and_the_old_one_goes(self, d6: D6Runs) -> None:
+        pages: Pages = {"Umbrella": (A, [("ModKit", A)]), "ModKit": (A, [("ModKit/Thing", A)]),
+                        "ModKit/Thing": (A, [])}
+        assert await d6.scrape(pages, ["Umbrella"]) == 0
+        renamed: Pages = {"Umbrella": (A, [("NewKit", A)]), "NewKit": (A, [("NewKit/Thing", A)]),
+                          "NewKit/Thing": (A, [])}
+        for _ in range(MODULE_UNLINKED_RUNS):
+            assert await d6.scrape(renamed, ["Umbrella"]) == 0
+            assert doc_file("NewKit/Thing").exists()
+        assert not Config.get_hash_file("ModKit").exists()
+        assert metadata("Umbrella")["child_modules"] == {"newkit": {}}
+
+    async def test_a_promoted_module_keeps_its_dir_and_is_judged_as_a_framework(self, d6: D6Runs) -> None:
+        assert await d6.scrape(UMBRELLA, ["Umbrella"]) == 0
+        files = docs()
+        # technologies.json now lists ModKit: its own job; Umbrella hands it its pages (one hop)
+        assert await d6.scrape(UMBRELLA, ["Umbrella", "ModKit"], concurrent=1) == 0
+        assert docs() == files
+        assert "module" not in metadata("ModKit")
+        # Umbrella links only ModKit's root, which is ModKit's own job's: no handoff
+        assert "handoff_from" not in metadata("ModKit")
+        # back: only ModKit's pages link it, which Umbrella no longer follows: ModKit's job hands it over
+        assert metadata("Umbrella")["handoff_from"] == {"modkit": {}}
+        assert "child_modules" not in metadata("Umbrella")
+        assert await d6.scrape(UMBRELLA, ["Umbrella", "ModKit"]) == 0
+        assert docs() == files
+        # Umbrella alone: its handoff writer didn't run, so it isn't cleaned (back, untouched, stays)
+        assert await d6.scrape(UMBRELLA, ["Umbrella", "ModKit"], "Umbrella") == 0
+        assert docs() == files
+
+
+class TestSubsetRuns:
+    """Rule 1 under --frameworks: a module is cleaned only when every parent ran clean."""
+
+    async def test_its_only_parent_alone_finds_no_orphan_in_the_module(self, d6: D6Runs) -> None:
+        pages: Pages = {**UMBRELLA, **OTHERKIT}
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"]) == 0
+        files = docs()
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"], "Umbrella") == 0
+        assert docs() == files
+        assert [e for e in d6.logged("orphans_deleted")] == []
+
+    async def test_one_of_two_parents_alone_leaves_the_module_and_the_others_counter(self, d6: D6Runs) -> None:
+        # OnlyUmbrella: a module page only Umbrella's pages link
+        pages: Pages = {**UMBRELLA, "Umbrella/guide": (A, [("ModKit/OnlyUmbrella", A)]), "ModKit/OnlyUmbrella": (A, []),
+                 "Otherbrella": (B, [("ModKit", B)])}
+        assert await d6.scrape(pages, ["Umbrella", "Otherbrella"]) == 0
+        files = docs()
+        assert doc_file("ModKit/OnlyUmbrella") in files
+        for _ in (1, 2):
+            assert await d6.scrape(pages, ["Umbrella", "Otherbrella"], "Otherbrella") == 0
+            assert docs() == files
+            assert module_of("ModKit")["parents"] == {
+                "otherbrella": {"unlinked_clean_runs": 0}, "umbrella": {"unlinked_clean_runs": 0}}
+
+
+SIBLINGS: Pages = {
+    "Sibkit": (S, [("Sibkit/a", S)]),
+    "Sibkit/a": (S, []),
+    # A Sibkit page only its bundle sibling links; its own link is Sibkit's job's (one hop)
+    "SibkitUI": (S, [("SibkitUI/b", S), ("Sibkit/hidden", S)]),
+    "SibkitUI/b": (S, []),
+    "Sibkit/hidden": (S, [("Sibkit/deeper", S)]),
+    "Sibkit/deeper": (S, []),
+}
+
+
+class TestHandoff:
+    """A same-bundle sibling's page goes to the sibling's own sink (the measured 1.1 question)."""
+
+    async def test_a_page_only_a_bundle_sibling_links_is_handed_off_and_removed_once_unlinked(
+        self, d6: D6Runs
+    ) -> None:
+        listed = ["Sibkit", "SibkitUI"]
+        assert await d6.scrape(SIBLINGS, listed, concurrent=1) == 0
+        assert doc_file("Sibkit/hidden").exists() and "**Framework**: Sibkit" in doc_file("Sibkit/hidden").read_text()
+        assert not doc_file("Sibkit/deeper").exists() and json_url("sibkit/deeper") not in d6.requests
+        assert metadata("Sibkit")["handoff_from"] == {"sibkitui": {}}
+        assert "handoff_from" not in metadata("SibkitUI")
+        before = sandbox_bytes()
+        assert await d6.scrape(SIBLINGS, listed) == 0
+        assert sandbox_bytes() == before
+        # Sibkit alone: its handoff writer didn't run, so it isn't cleaned
+        assert await d6.scrape(SIBLINGS, listed, "Sibkit") == 0
+        assert doc_file("Sibkit/hidden").exists()
+        # Unlinked, with both jobs clean: removed by the normal orphan cleanup
+        assert await d6.scrape(without(SIBLINGS, "SibkitUI", "Sibkit/hidden"), listed) == 0
+        assert not doc_file("Sibkit/hidden").exists() and doc_file("Sibkit/a").exists()
+
+
+class TestNamespaceCollision:
+    """No Apple technology or module may take another scraper's top-level dir."""
+
+    def test_the_other_scrapers_dirs_come_from_their_configs(self, tmp_path: Path) -> None:
+        dirs = scrape_all_frameworks.other_scraper_dirs()
+        assert {"hig", "swift-book", "mlx", "mlx-swift", "coremltools"} <= set(dirs)
+        assert dirs["mlx-swift"] == "MLX-Swift"
+        scripts = tmp_path / "scripts"
+        scripts.mkdir()
+        (scripts / "scrape_mlx_docs.py").write_text('S = [Source(output_dir="Kit/sub"), Source(output_dir="Two")]\n')
+        (scripts / "scrape_swift_docs.py").write_text('OUTPUT_DIR = Path(__file__).parent / "documentation" / "Book"\n')
+        (scripts / "scrape_hig_docs.py").write_text('OUTPUT_DIR = Path(__file__).parent / "documentation"\n')
+        with pytest.raises(ValueError):
+            scrape_all_frameworks.other_scraper_dirs(scripts, import_mlx=False)
+        (scripts / "scrape_hig_docs.py").write_text('OUTPUT_DIR = BASE / "documentation" / "HIG"\n')
+        assert scrape_all_frameworks.other_scraper_dirs(scripts, import_mlx=False) == {
+            "kit": "Kit", "two": "Two", "book": "Book", "hig": "HIG"}
+
+    def test_the_mlx_scrapers_configured_sources_and_its_literal_dirs_agree(self) -> None:
+        """Where wafer-py is missing, the MLX source's literal output_dirs stand in for configured_sources()."""
+        pytest.importorskip("wafer")
+        assert scrape_all_frameworks.other_scraper_dirs() == scrape_all_frameworks.other_scraper_dirs(import_mlx=False)
+
+    async def test_a_colliding_technology_or_module_is_refused(self, d6: D6Runs) -> None:
+        pages: Pages = {**UMBRELLA, "Umbrella/guide": (A, [("MLX", A)]), "MLX": (A, []), "HIG": (A, [])}
+        assert await d6.scrape(pages, ["Umbrella", "HIG"]) == 1
+        assert not (Path("documentation") / "MLX").exists() and not (Path("documentation") / "HIG").exists()
+        assert json_url("mlx") not in d6.requests and json_url("hig") not in d6.requests
+        assert sorted(e["dir"] for e in d6.logged("namespace_collision")) == ["HIG", "MLX"]
+        assert doc_file("ModKit/Thing").exists()
+
+
+    async def test_unreadable_other_scraper_dirs_stop_the_run(self, d6: D6Runs) -> None:
+        """Without the reserved dirs nothing is routed: the run stops before any page is written."""
+        def unreadable(*args: object, **kwargs: object) -> Dict[str, str]:
+            raise OSError("scripts/scrape_hig_docs.py: unreadable")
+
+        d6.monkeypatch.setattr(scrape_all_frameworks, "other_scraper_dirs", unreadable)
+        assert await d6.scrape(UMBRELLA, ["Umbrella"]) == 2
+        assert not doc_file("Umbrella/guide").exists() and not d6.requests
+
+class TestStaleErrorEntries:
+    """Item 8: a section anchor's URL is never requested; its old error entry leaves through the cleanup."""
+
+    async def test_anchors_are_their_pages_and_unlinked_error_entries_are_dropped(self, d6: D6Runs) -> None:
+        pages: Pages = {**UMBRELLA, "Umbrella": (A, [("Umbrella/guide#a-section", A), ("ModKit", A)])}
+        assert await d6.scrape(pages, ["Umbrella"]) == 0
+        assert not any("#" in url for url in d6.requests)
+        assert doc_file("Umbrella/guide").exists()
+        # What earlier runs left: an anchor's 404, and a module page under its umbrella's id
+        hash_file = Config.get_hash_file("Umbrella")
+        data = json.loads(hash_file.read_text())
+        stale = [json_url("umbrella/guide#a-section"), json_url("umbrella/modkit")]
+        for url in stale:
+            data["hashes"][url] = {"status": "error", "error": "HTTP 404"}
+        # A never-good failure's count: no page links it any more, so its streak
+        # ends (the reset drops the count) and the entry goes too
+        flaky = json_url("umbrella/flaky")
+        data["hashes"][flaky] = {"status": "error", "error": "HTTP 502", "consecutive_failures": 1}
+        # A local error's count isn't reset by a run that doesn't reach the page: kept
+        local = json_url("umbrella/local")
+        data["hashes"][local] = {"status": "error", "error": "local error: x", "consecutive_local_errors": 1}
+        hash_file.write_text(json.dumps(data))
+        assert await d6.scrape(pages, ["Umbrella"]) == 0
+        hashes = json.loads(hash_file.read_text())["hashes"]
+        assert not {*stale, flaky} & set(hashes)
+        assert hashes[local] == {"status": "error", "error": "local error: x", "consecutive_local_errors": 1}
+        assert [e["dropped"] for e in d6.logged("dropped_stale_error_entries")] == [3]
+
+    async def test_a_blocked_run_drops_nothing(self, d6: D6Runs) -> None:
+        assert await d6.scrape(UMBRELLA, ["Umbrella"]) == 0
+        hash_file = Config.get_hash_file("Umbrella")
+        data = json.loads(hash_file.read_text())
+        data["hashes"][json_url("umbrella/gone")] = {"status": "error", "error": "HTTP 404"}
+        hash_file.write_text(json.dumps(data))
+        assert await d6.scrape(UMBRELLA, ["Umbrella"], overrides={"Umbrella/guide": [status(502)]}) == 1
+        assert json_url("umbrella/gone") in json.loads(hash_file.read_text())["hashes"]

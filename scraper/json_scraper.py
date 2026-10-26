@@ -8,15 +8,15 @@ import time
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Deque, Dict, Final, List, Literal, Optional, Set, Tuple, Union
+from typing import Any, Callable, Deque, Dict, Final, List, Literal, Optional, Sequence, Set, Tuple, Union
 from urllib.parse import urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
-from scraper.sink import Sink, SinkRegistry
-from scraper.site import APPLE
+from scraper.sink import HANDOFF_KEY, MODULE_KEY, Sink, SinkRegistry, metadata_ids, module_parents
+from scraper.site import APPLE, DocCSite
 from scraper.utils.assets import hosting_root, variant_url
-from scraper.utils.hash_manager import HashManager, same_name_any_case, write_text_atomic
+from scraper.utils.hash_manager import COUNTER_FIELDS, HashManager, same_name_any_case, write_text_atomic
 from scraper.utils.links import doc_link, link_base
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter, join_blocks, labeled, quote_blocks
@@ -181,6 +181,39 @@ class PageFetchFailure:
     failure: FetchFailed
 
 
+# The sections whose identifiers a page links its child pages through
+LINK_SECTIONS: Final = ('topicSections', 'relationshipsSections', 'seeAlsoSections', 'diffAvailability', 'variants')
+
+
+@dataclass(frozen=True)
+class PageLink:
+    """A page's link to a documentation page, as the reference resolver makes it (1.1).
+
+    Attributes:
+        json_url: The target's JSON URL, from its reference's URL
+            (references[id].url): fragment stripped, lowercased, dot
+            segments escaped
+        segment: Its first path segment, lowercased: the sink it goes to (D6)
+        dir_name: That segment as the identifier cases it: a new sink's dir
+        bundle: The identifier's bundle, lowercased (e.g. com.apple.sirikit)
+        identifier: The doc:// identifier
+    """
+
+    json_url: str
+    segment: str
+    dir_name: str
+    bundle: str
+    identifier: str
+
+
+@dataclass(frozen=True)
+class PageLinks:
+    """A page's outgoing links and its own bundle: what the scope rule reads (_in_scope)."""
+
+    bundle: str
+    links: Tuple[PageLink, ...]
+
+
 @dataclass
 class OrphanScan:
     """A framework's orphan candidates, computed right after its hash file was saved.
@@ -197,6 +230,8 @@ class OrphanScan:
             touched records (HashManager.get_untouched_files)
         pending_orphans: metadata.pending_orphans as the run's save left it:
             the candidates an earlier clean run held for confirmation
+        stale_errors: The error entries no page this run reached links to
+            any more (stale_error_entries): the cleanup drops them
     """
 
     framework_dir: Path
@@ -204,6 +239,7 @@ class OrphanScan:
     files: int
     orphans: List[Path]
     pending_orphans: List[str]
+    stale_errors: List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -235,6 +271,9 @@ class FrameworkOutcome:
         stats: The scraper's stats
         orphan_scan: The framework's orphan candidates, for a framework the
             end-of-run cleanup may clean (see scan_orphans)
+        handoff_writers: The other jobs its hash file records as writers
+            (metadata.handoff_from, D6): its cleanup also needs each of them
+            to have run clean this run (rule 1)
     """
 
     framework_id: str
@@ -248,6 +287,7 @@ class FrameworkOutcome:
     raised: Optional[str] = None
     stats: Dict[str, Any] = field(default_factory=dict)
     orphan_scan: Optional[OrphanScan] = None
+    handoff_writers: List[str] = field(default_factory=list)
 
     def block(self, reason: str, detail: str) -> None:
         """Block this framework's orphan cleanup for this run."""
@@ -264,6 +304,57 @@ class FrameworkOutcome:
     def skip_cleanup(self) -> bool:
         """Orphan cleanup must leave this framework alone this run."""
         return self.blocked or self.root_gone_runs > 0
+
+
+@dataclass
+class ModuleScan:
+    """A D6 module sink of this run, for the end-of-run cleanup (rules 1–4).
+
+    Attributes:
+        dir_name: Its docs dir's name
+        output_dir: Its docs dir
+        hash_file: Its hash file
+        routed_by: The parents that routed it a page this run (rule 2: their
+            counters reset)
+        orphan_scan: Its orphan candidates from every writer's touched set
+            (finish_run), with --cleanup-orphans
+    """
+
+    dir_name: str
+    output_dir: Path
+    hash_file: Path
+    routed_by: Set[str]
+    orphan_scan: Optional[OrphanScan] = None
+
+
+@dataclass
+class RunSinks:
+    """What the end-of-run cleanup needs of the run's sinks (D6 rules 1–4).
+
+    Attributes:
+        listed: The ids this run's technologies.json lists (its full list,
+            lowercased): a module whose id it lists is promoted
+        modules: The run's module sinks
+        module_files: The module hash files on disk at run start
+        handoff_files: The top-level hash files that carried handoff_from
+            at run start, or got it this run
+        child_modules: Module id (lowercased) -> the hash files of the
+            parents whose child_modules listed it at run start
+    """
+
+    listed: Set[str] = field(default_factory=set)
+    modules: List[ModuleScan] = field(default_factory=list)
+    module_files: List[Path] = field(default_factory=list)
+    handoff_files: List[Path] = field(default_factory=list)
+    child_modules: Dict[str, List[Path]] = field(default_factory=dict)
+
+
+def doc_url_of(site: DocCSite, json_url: str) -> str:
+    """A page's documentation URL, from its JSON URL on the site."""
+    path = json_url.replace(site.json_prefix, '')
+    if path.endswith('.json'):
+        path = path[:-5]
+    return site.doc_url(path)
 
 
 class AppleJSONDocumentationScraper(BaseAppleScraper):
@@ -299,8 +390,19 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # The framework's DocC site: every URL the scraper builds comes from it
         self.site = APPLE
         self.sinks = sinks if sinks is not None else SinkRegistry()
+        # The job's id: its framework's, lowercased (a module's parent, a handoff writer)
+        self.job_id = self.framework_id.lower()
         # The primary sink: the framework's own docs dir and hash file
         self.sink = self.sinks.get(self.site, self.framework_id, self.framework_name, self.RENDER_VERSION)
+        self.sink.primary_ran = True
+        self.sink.users.add(self.job_id)
+        # Discovery: the URLs this job has queued (each once), and how the
+        # links it followed case each other sink's dir and name its bundle
+        self._queued: Set[str] = set()
+        self._routes: Dict[str, Tuple[str, str]] = {}
+        self._collisions: Set[str] = set()
+        # Links with no reference, followed by their identifier's path
+        self.reference_fallbacks = 0
         # The page being converted (_extract_from_json) and its sink: its
         # links are relative to its file
         self._current_scraping_url = ''
@@ -315,9 +417,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # (the pages' own state is their sink's)
         self.root_json_url = f"{self.site.json_prefix}{self.framework_id}.json"
         self.outcome = FrameworkOutcome(framework_id=self.framework_id)
+        self.sinks.outcomes[self.job_id] = self.outcome
         self._root_ok = False  # the root answered 200 or 304
         self._root_gone = False  # the root answered 404/410
-        if self.hash_manager.load_error is not None:
+        if self.sink.load_error is not None:
             # The hash file exists but loaded nothing, so this run can't tell
             # the pages we have from new ones. This run's save replaces the
             # file, so the block lasts one run.
@@ -361,7 +464,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         return f"{self.site.json_prefix}{path}"
     
     def _convert_json_url_to_doc_url(self, json_url: str) -> str:
-        """Convert a JSON data URL back to documentation URL.
+        """Convert a JSON data URL back to documentation URL (doc_url_of).
         
         Args:
             json_url: JSON URL
@@ -369,14 +472,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Returns:
             Documentation URL
         """
-        # Extract path from JSON URL
-        path = json_url.replace(self.site.json_prefix, '')
-        
-        # Remove .json extension
-        if path.endswith('.json'):
-            path = path[:-5]
-        
-        return self.site.doc_url(path)
+        return doc_url_of(self.site, json_url)
     
     async def scrape_framework(self) -> Dict[str, Any]:
         """Override base scrape_framework to use streaming approach."""
@@ -385,6 +481,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # of unlisted runs (cleanup_removed_frameworks.py) starts over, also
         # when that script's own fetch failed this run. Saved by __aexit__.
         self.hash_manager.set_metadata("unlisted_runs", 0)
+        # The same goes for a D6 module that technologies.json now lists
+        # (promoted): from now on it is judged as a framework, in the same
+        # dir and hash file
+        if self.hash_manager.get_metadata(MODULE_KEY):
+            logger.info("module_promoted", framework=self.framework_name)
+            self.hash_manager.set_metadata(MODULE_KEY, None)
         if self.hash_manager.stale:
             logger.info(
                 "render_version_stale",
@@ -405,6 +507,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         if self.include_cross_refs:
             self.save_cross_framework_summary()
         self._log_unknown_content()
+        if self.reference_fallbacks:
+            logger.info("reference_fallbacks", framework=self.framework_name, count=self.reference_fallbacks)
         
         logger.info(
             "framework_scrape_complete",
@@ -449,13 +553,22 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             return False
     
     async def _discover_and_scrape_iterative(self, initial_json_urls) -> None:
-        """Iterative version of discovery to avoid recursion depth issues with optimized ETag usage."""
+        """Iterative version of discovery to avoid recursion depth issues with optimized ETag usage.
+
+        Each URL goes to its sink (_route), and a sink's page is processed
+        once per run, by the first job that reaches it (dedup per sink). A
+        later job reaching it still gets the links it follows from it
+        (_dedup_hit): from the page's kept links, or, while another job is
+        processing it, once that ends; the loop doesn't finish while such a
+        wait is pending.
+        """
         from collections import deque
 
         # Queue of URLs to process
         if isinstance(initial_json_urls, str):
             initial_json_urls = [initial_json_urls]
         url_queue = deque(initial_json_urls)
+        self._queued.update(initial_json_urls)
 
         logger.info(f"starting_iterative_discovery", initial_urls=len(initial_json_urls))
         
@@ -468,18 +581,29 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # so shared state (queue, the sinks' processed_urls and hash managers,
         # stats) is safe; URLs are marked processed before any await,
         # preventing duplicates.
-        in_flight: Set[asyncio.Task] = set()
+        in_flight: Set["asyncio.Future[None]"] = set()
+        # Dedup hits on pages another job is processing: page -> (its sink, its URL)
+        waiting: Dict["asyncio.Future[None]", Tuple[Sink, str]] = {}
 
-        while url_queue or in_flight:
+        while url_queue or in_flight or waiting:
             # Launch tasks up to the concurrency limit
             while url_queue and len(in_flight) < Config.INTRA_FRAMEWORK_CONCURRENCY:
                 max_queue_size = max(max_queue_size, len(url_queue))
                 json_url = url_queue.popleft()
-                # The page's sink: the framework's own
-                sink = self.sink
+                sink = self._route(json_url)
+                if sink is None:
+                    continue
+                if sink.module:
+                    # A module's root is part of its parents' crawl, also
+                    # when they link only pages under it (e.g. Accelerate's
+                    # simd-library links simd's symbols, never simd itself)
+                    self._enqueue([f"{self.site.json_prefix}{sink.dir_name.lower()}.json"], url_queue)
                 if json_url in sink.processed_urls:
+                    self._dedup_hit(sink, json_url, url_queue, waiting)
                     continue
                 sink.processed_urls.add(json_url)
+                if self.job_id != sink.primary_id:
+                    sink.writer[json_url] = self.job_id
                 processed_count += 1
                 if processed_count % 100 == 0:
                     logger.info(
@@ -488,15 +612,26 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                         queue_size=len(url_queue),
                         max_queue_size=max_queue_size,
                     )
+                # Counted, and its waiters registered, before the task starts
+                sink.pages_in_flight += 1
+                page_done: Optional["asyncio.Future[None]"] = None
+                if sink.stores_links(self.job_id):
+                    page_done = asyncio.get_running_loop().create_future()
+                    sink.pending[json_url] = page_done
                 in_flight.add(asyncio.create_task(
-                    self._process_queued_url(sink, json_url, url_queue)
+                    self._process_page(sink, json_url, url_queue, page_done)
                 ))
 
-            if not in_flight:
+            if not in_flight and not waiting:
                 continue  # queue contained only already-processed URLs
 
-            done, in_flight = await asyncio.wait(in_flight, return_when=asyncio.FIRST_COMPLETED)
+            done, _ = await asyncio.wait(in_flight | set(waiting), return_when=asyncio.FIRST_COMPLETED)
             for task in done:
+                if task in waiting:
+                    page_sink, page_url = waiting.pop(task)
+                    self._take_links(page_sink, page_url, url_queue)
+                    continue
+                in_flight.discard(task)
                 exc = task.exception()
                 if exc:
                     logger.error("worker_task_error", error=str(exc))
@@ -508,6 +643,146 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             max_queue_size=max_queue_size,
             framework=self.framework_name,
         )
+
+    async def _process_page(
+        self, sink: Sink, json_url: str, url_queue: Deque[str], page_done: Optional["asyncio.Future[None]"]
+    ) -> None:
+        """Process a page of a sink (_process_queued_url), then end its run accounting.
+
+        In the finally: the page's waiters are woken (a dedup hit of another
+        job waits on page_done), its count of pages in flight drops, and the
+        sink is released if nothing in flight uses it any more
+        (SinkRegistry.release_if_idle).
+        """
+        try:
+            await self._process_queued_url(sink, json_url, url_queue)
+        finally:
+            if page_done is not None:
+                sink.pending.pop(json_url, None)
+                page_done.set_result(None)
+            sink.pages_in_flight -= 1
+            self.sinks.release_if_idle(sink)
+
+    def _segment(self, json_url: str) -> Optional[str]:
+        """A JSON URL's first path segment, lowercased (None for a URL not of the site)."""
+        if not json_url.startswith(self.site.json_prefix):
+            return None
+        rest = json_url[len(self.site.json_prefix):]
+        if rest.endswith('.json'):
+            rest = rest[:-len('.json')]
+        return rest.split('/', 1)[0].lower()
+
+    def _route(self, json_url: str) -> Optional[Sink]:
+        """The sink of a page: its URL's first path segment's (D6).
+
+        The job's own framework's segment is its primary sink. Any other
+        segment the scope rule follows (_in_scope) is a D6 module's (a
+        segment of the job's bundle that is no top-level technology), or,
+        for a top-level technology of the job's bundle, that technology's own
+        sink (a handoff). A new sink's dir is cased as the link's identifier
+        cases it, reconciled with an existing hash file
+        (_canonical_framework_id), never from metadata.modules. The
+        routing is recorded before the per-sink dedup (_note_route).
+
+        Returns:
+            The page's sink, or None when the Apple sinks may not have its
+            dir: another scraper's top-level dir (namespace_collision, which
+            blocks this job's cleanup); the page isn't fetched
+        """
+        segment = self._segment(json_url)
+        if segment is None or segment == self.job_id:
+            return self.sink
+        sink = self.sinks.find(self.site, segment)
+        if sink is None:
+            dir_name, _ = self._routes.get(segment, (segment, ''))
+            if self.sinks.refuses(dir_name):
+                if segment not in self._collisions:
+                    self._collisions.add(segment)
+                    logger.error("namespace_collision", framework=self.framework_name, dir=dir_name, url=json_url)
+                self.outcome.block("namespace_collision", dir_name)
+                return None
+            dir_name = self._canonical_framework_id(dir_name)
+            if segment in self.sinks.top_level(self.site):
+                sink = self.sinks.get(self.site, dir_name, self.sinks.title(dir_name), self.RENDER_VERSION)
+            else:
+                sink = self.sinks.get(self.site, dir_name, dir_name, self.RENDER_VERSION, module=True)
+                logger.info("module_sink", module=sink.dir_name, parent=self.framework_name)
+        self._note_route(sink, segment)
+        return sink
+
+    def _note_route(self, sink: Sink, segment: str) -> None:
+        """Record the job's first routing to another sink this run, in both hash files.
+
+        A module records the job among its parents (metadata.module, with
+        its bundle) and the job's own hash file the module
+        (metadata.child_modules); a top-level sink records the job as a
+        handoff writer (metadata.handoff_from). The job is among the sink's
+        parents_this_run (rule 2: routed, whatever the page's fetch then
+        gives) and its users until it ends. A sink whose hash file failed
+        to load blocks the job's cleanup, as its own would.
+        """
+        if self.job_id in sink.parents_this_run:
+            return
+        sink.parents_this_run.add(self.job_id)
+        sink.users.add(self.job_id)
+        if sink.module:
+            sink.add_parent(self.job_id, self._routes.get(segment, ('', ''))[1])
+            self.sink.add_child_module(sink.dir_name.lower())
+        else:
+            sink.add_handoff_writer(self.job_id)
+            logger.info("handoff_sink", sink=sink.dir_name, writer=self.framework_name)
+        if sink.load_error is not None:
+            self.outcome.block("hash_load_failed", str(sink.hash_file))
+
+    def _follows(self, sink: Sink) -> bool:
+        """Whether the job follows the links of a sink's pages: its own, and a module's.
+
+        A handoff page (another top-level technology's) is one hop: its
+        links are that technology's job's to follow.
+        """
+        return sink is self.sink or sink.module
+
+    def _dedup_hit(
+        self,
+        sink: Sink,
+        json_url: str,
+        url_queue: Deque[str],
+        waiting: Dict["asyncio.Future[None]", Tuple[Sink, str]],
+    ) -> None:
+        """A page of a sink this run already processed (or is processing): the job's share of it.
+
+        Nothing for a page the job processed itself, or one whose links it
+        doesn't follow (_follows). Else the job gets the page's links in its
+        own scope (_take_links): at once when the page is done, or, while
+        another job is processing it, once that ends (the page's waiter).
+        """
+        if not self._follows(sink) or sink.writer_of(json_url) == self.job_id:
+            return
+        page_done = sink.pending.get(json_url)
+        if page_done is not None:
+            waiting[page_done] = (sink, json_url)
+            return
+        self._take_links(sink, json_url, url_queue)
+
+    def _take_links(self, sink: Sink, json_url: str, url_queue: Deque[str]) -> None:
+        """A page another job processed: its links in this job's scope, or the page's outcome.
+
+        Its kept links are queued (_in_scope). Without links: a page whose
+        processing raised blocks the job at once (exception), and one whose
+        fetch failed (ours, counted toward D8) records the job on it
+        (dedup_jobs): the end-of-run failure policy gives it the page's
+        block or persistent flag. The pages in its scope reachable only
+        through that page go untouched this run, and that block keeps its
+        cleanup from orphaning them. A page Apple removed (404/410) gives
+        nothing: what only it linked to is removed too.
+        """
+        links = sink.links.get(json_url)
+        if links is not None:
+            self._enqueue(self._in_scope(links), url_queue)
+        elif json_url in sink.raised:
+            self.outcome.block("exception", json_url)
+        elif json_url in sink.fetch_failures:
+            sink.dedup_jobs.setdefault(json_url, set()).add(self.job_id)
 
     async def _process_queued_url(self, sink: Sink, json_url: str, url_queue: Deque[str]) -> None:
         """Process a single discovered URL: fetch, enqueue children, save if changed.
@@ -565,9 +840,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             discovery_result = self._invalid_json_failure()
                         else:
                             # Extract URLs for discovery
-                            new_urls = self._extract_urls_from_json_data(data)
-                            self._enqueue(new_urls, url_queue)
-                            logger.debug("rediscovered_child_urls", parent=json_url, count=len(new_urls))
+                            count = self._discover_links(sink, json_url, data, url_queue)
+                            logger.debug("rediscovered_child_urls", parent=json_url, count=count)
                             sink.fetch_ok.add(json_url)
                     if isinstance(discovery_result, FetchFailed):
                         # The 304 proved the page live; only its links are missing
@@ -590,7 +864,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
             # Links first: enqueue the children before, and independently of,
             # the save, so a convert or save error can never orphan them
-            self._enqueue(self._extract_urls_from_json_data(data), url_queue)
+            self._discover_links(sink, json_url, data, url_queue)
 
             # Process and save this page
             doc_url = self._convert_json_url_to_doc_url(json_url)
@@ -653,11 +927,35 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             # Raised before the page's links were enqueued: block, don't count
             logger.error("error_processing_url", url=json_url, error=str(e))
             self.outcome.block("exception", json_url)
+            sink.raised.add(json_url)
+
+    def _discover_links(self, sink: Sink, json_url: str, data: Dict[str, Any], url_queue: Deque[str]) -> int:
+        """Read a fetched page's links: kept for the run if another job may need
+        them (Sink.stores_links), queued if the job follows them (_follows).
+
+        Returns:
+            How many links were queued
+        """
+        page_links = self._page_links(data)
+        if sink.stores_links(self.job_id):
+            sink.links[json_url] = page_links
+        if not self._follows(sink):
+            return 0
+        urls = self._in_scope(page_links)
+        self._enqueue(urls, url_queue)
+        return len(urls)
 
     def _enqueue(self, urls: List[str], url_queue: Deque[str]) -> None:
-        """Queue the URLs this run hasn't processed yet (in the framework's own sink)."""
+        """Queue the URLs this job hasn't queued yet; each sink deduplicates at pop time.
+
+        A link to the framework's own root (lowercased, as every resolved
+        link is) is its root URL, which keeps its id's casing.
+        """
         for new_url in urls:
-            if new_url not in self.sink.processed_urls:
+            if new_url != self.root_json_url and self._is_root(new_url):
+                new_url = self.root_json_url
+            if new_url not in self._queued:
+                self._queued.add(new_url)
                 url_queue.append(new_url)
 
     def _is_root(self, json_url: str) -> bool:
@@ -938,9 +1236,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """Count this run's failures once, and decide whether cleanup is blocked.
 
         Runs once per framework run, after discovery, for its primary sink.
-        Updates the per-entry consecutive_failures / consecutive_local_errors
-        counters and the root_gone_runs / failure_storm_runs metadata of the
-        sink's hash file, and fills self.outcome.
+        Updates the root_gone_runs metadata of the sink's hash file and the
+        per-entry counters of the pages this job processed
+        (apply_sink_failure_policy), and fills self.outcome. A sink whose
+        hash file carried handoff_from when it was loaded (Sink.deferred)
+        keeps only the root here: its storm check and per-entry counting are
+        done at the end of the run, over every writer's pages (finish_run).
         """
         hm = sink.hash_manager
         outcome = self.outcome
@@ -962,75 +1263,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             else:
                 logger.warning("root_gone", framework=self.framework_name, root_gone_runs=runs)
 
-        # Failure storm: too many fetch failures at once aren't counted
-        pages = max(sink.known_pages, len(sink.processed_urls))
-        limit = max(FAILURE_STORM_MIN, FAILURE_STORM_SHARE * pages)
-        counting = True
-        if len(sink.fetch_failures) > limit:
-            storm_runs = int(hm.get_metadata("failure_storm_runs", 0)) + 1
-            hm.set_metadata("failure_storm_runs", storm_runs)
-            counting = storm_runs >= FAILURE_STORM_RUNS
-            outcome.failure_storm = True
-            logger.warning(
-                "failure_storm",
-                framework=self.framework_name,
-                failures=len(sink.fetch_failures),
-                limit=limit,
-                failure_storm_runs=storm_runs,
-                counting=counting,
+        if not sink.deferred:
+            apply_sink_failure_policy(
+                sink, lambda job: outcome if job == self.job_id else self.sinks.outcomes.get(job),
+                self.framework_name, writers={self.job_id},
             )
-        else:
-            hm.set_metadata("failure_storm_runs", 0)
-
-        # Resets. The D8 count is of failed runs in a row: a 200, a 304 whose
-        # refetch succeeded, a 404/410 (a removal, not a failure) or a run
-        # that never fetched the URL (no page reached this run links to it)
-        # ends the streak, so a stale count can't lift the never-good block
-        # on our first new failure. A page processed without a local error
-        # resets that count.
-        unfetched = {
-            url for url, entry in hm.hashes.items()
-            if "consecutive_failures" in entry and url not in sink.processed_urls
-        }
-        for url in (sink.fetch_ok | sink.gone | unfetched) - sink.fetch_failures.keys():
-            hm.set_counter(url, "consecutive_failures", 0)
-        for url in sink.saved_ok - sink.local_errors.keys():
-            hm.set_counter(url, "consecutive_local_errors", 0)
-
-        for url, page_failure in sink.fetch_failures.items():
-            runs = hm.get_counter(url, "consecutive_failures")
-            if counting:
-                runs += 1
-                hm.set_counter(url, "consecutive_failures", runs)
-            if runs < PERSISTENT_FAILURE_RUNS:
-                outcome.block("fetch_failed", url)
-                continue
-            # No longer protected: it stops blocking, and flags the run
-            logger.error(
-                "persistent_fetch_failure",
-                url=url,
-                kind=page_failure.kind,
-                runs=runs,
-                error=page_failure.failure.error,
-            )
-            outcome.persistent_fetch_failures.append(url)
-            if page_failure.kind == "previously_good":
-                # D8: treat the page as removed. Both keys become error
-                # entries (keeping the count), so its file and any subtree no
-                # longer reachable are orphaned and cleaned in this run. After
-                # a 304 the page is live and stays touched, so its file is kept.
-                hm.mark_error(url, page_failure.failure.error)
-                hm.mark_error(self._convert_json_url_to_doc_url(url), page_failure.failure.error)
-
-        for url, error in sink.local_errors.items():
-            runs = hm.get_counter(url, "consecutive_local_errors") + 1
-            hm.set_counter(url, "consecutive_local_errors", runs)
-            if runs < PERSISTENT_FAILURE_RUNS:
-                outcome.block("local_error", url)
-            else:
-                # Stop blocking; the entry stays touched, so its file is kept
-                logger.error("persistent_local_error", url=url, runs=runs, error=error)
-                outcome.persistent_local_errors.append(url)
 
         if outcome.blocks:
             logger.warning(
@@ -1056,19 +1293,18 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         reached), and such a page that comes back unchanged would else
         answer 304 and never be rendered again.
         Saved by __aexit__.
+
+        A multi-writer sink stores it at the end of the run instead
+        (finish_run): one whose hash file carried handoff_from when loaded,
+        and one another job has processed a page of by now (that job's
+        failures are counted only then).
         """
         outcome = self.outcome
+        if sink.deferred or sink.other_writers():
+            return
         if outcome.skip_cleanup or outcome.persistent_local_errors:
             return
-        if sink.hash_manager.stale:
-            not_rendered = sink.hash_manager.forget_untouched_renderings()
-            logger.info(
-                "render_version_stored",
-                framework=self.framework_name,
-                version=self.RENDER_VERSION,
-                not_rendered=not_rendered,
-            )
-        sink.hash_manager.mark_rendered()
+        store_render_version(sink, self.framework_name)
 
     def scan_orphans(self, sink: Sink) -> None:
         """Find the orphan candidates of the framework's own sink, right after its hash file was saved.
@@ -1083,73 +1319,168 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         - The candidates are the .md files no entry this run touched records
           (the in-memory touched set). A blocked or raised framework keeps
           none.
+        A sink whose hash file carried handoff_from when it was loaded is
+        scanned at the end of the run instead, from every writer's touched
+        set (finish_run); so is, again, one that another job routed a page
+        to this run.
         """
         outcome = self.outcome
-        if outcome.root_gone_runs:
+        if outcome.root_gone_runs or sink.deferred:
             return
-        hm = sink.hash_manager
-        if not outcome.blocked and not hm.touched:
+        if not outcome.blocked and not sink.hash_manager.touched:
             logger.error("framework_zero_touched", framework=self.framework_name, framework_id=self.framework_id)
             outcome.block("zero_touched", self.framework_id)
         if outcome.blocked:
             return
-
-        # The output dir, or that dir in another casing
-        framework_dir = next(
-            (path for path in same_name_any_case(sink.output_dir) if path.is_dir()), sink.output_dir
-        )
-        existing = hm.framework_files(framework_dir)
-        pending = hm.get_metadata("pending_orphans")
-        outcome.orphan_scan = OrphanScan(
-            framework_dir=framework_dir,
-            hash_file=hm.cache_file,
-            files=len(existing),
-            orphans=hm.get_untouched_files(framework_dir, existing),
-            pending_orphans=[path for path in pending if isinstance(path, str)] if isinstance(pending, list) else [],
-        )
+        outcome.orphan_scan = orphan_scan_of(sink)
 
     def _extract_urls_from_json_data(self, data: Dict[str, Any]) -> List[str]:
-        """Extract all URLs from JSON data without recursing."""
-        urls = []
-        
+        """The JSON URLs of a page's links that the job follows (_page_links, then _in_scope)."""
+        return self._in_scope(self._page_links(data))
+
+    @staticmethod
+    def _bundle_of(identifier: str) -> str:
+        """A doc:// identifier's bundle, lowercased ("" for anything else)."""
+        if not identifier.startswith('doc://'):
+            return ''
+        return identifier[len('doc://'):].split('/', 1)[0].lower()
+
+    def _page_links(self, data: Dict[str, Any]) -> PageLinks:
+        """A page's links to documentation pages, resolved (_resolve), and its own bundle."""
+        identifier = data.get('identifier')
+        page_identifier = identifier.get('url', '') if isinstance(identifier, dict) else ''
+        references = data.get('references')
+        if not isinstance(references, dict):
+            references = {}
+        links: List[PageLink] = []
+
         # Extract related documentation from various sections
-        sections_to_check = [
-            'topicSections',
-            'relationshipsSections', 
-            'seeAlsoSections',
-            'diffAvailability',
-            'variants'
-        ]
-        
-        for section_name in sections_to_check:
+        for section_name in LINK_SECTIONS:
             if section_name in data and isinstance(data[section_name], list):
                 logger.debug(f"Extracting URLs from {section_name} with {len(data[section_name])} items")
                 
                 for section in data[section_name]:
-                    if 'identifiers' in section:
+                    if isinstance(section, dict) and 'identifiers' in section:
                         identifiers = section.get('identifiers', [])
                         section_title = section.get('title', 'Unknown')
                         logger.info(f"Found section '{section_title}' with {len(identifiers)} identifiers")
                         
-                        # Convert identifiers to URLs
-                        for identifier in identifiers:
-                            if identifier.startswith('doc://'):
-                                # Check if it's for current framework
-                                identifier_lower = identifier.lower()
-                                framework_check = f"com.apple.{self.framework_id.lower()}"
-                                is_current_framework = (framework_check in identifier_lower or 
-                                                      f"/{self.framework_id.lower()}/" in identifier_lower or 
-                                                      f"/{self.framework_id}/" in identifier)
-                                
-                                if is_current_framework:
-                                    json_url = self._convert_identifier_to_json_url(identifier)
-                                    if json_url:
-                                        urls.append(json_url)
-                                elif self.include_cross_refs:
-                                    # Track cross-framework reference
-                                    self._track_cross_framework_ref(identifier)
-        
+                        for link_identifier in identifiers:
+                            if isinstance(link_identifier, str) and link_identifier.startswith('doc://'):
+                                link = self._resolve(link_identifier, references)
+                                if link is not None:
+                                    links.append(link)
+        return PageLinks(bundle=self._bundle_of(page_identifier if isinstance(page_identifier, str) else ''),
+                         links=tuple(links))
+
+    def _resolve(self, identifier: str, references: Dict[str, Any]) -> Optional[PageLink]:
+        """The page a doc:// identifier links to, through its reference (1.1).
+
+        A reference of type topic whose url is a documentation page's
+        ("/documentation/…" on the site) gives the target: Apple's own URL,
+        with the module's real first segment (sirikit's Intents is
+        /documentation/intents, never sirikit/intents) and DocC's shortened
+        long paths. Its #fragment (a section of the page) is stripped, it is
+        lowercased and its dot segments escaped (_escape_dot_path_segments).
+        Any other reference links no documentation page. Only an identifier
+        with no reference falls back to its own path, as it is (never the
+        framework's id prepended): counted and logged.
+
+        Returns:
+            The link, or None if it isn't to a documentation page
+        """
+        doc_path = urlparse(self.site.doc_prefix).path
+        reference = references.get(identifier)
+        if reference is not None:
+            url = reference.get('url') if isinstance(reference, dict) else None
+            if not (isinstance(reference, dict) and reference.get('type') == 'topic'
+                    and isinstance(url, str) and url.startswith(doc_path)):
+                return None
+            json_url = self._page_json_url(url[len(doc_path):])
+        else:
+            json_url = self._convert_identifier_to_json_url(identifier)
+            if json_url is not None:
+                self.reference_fallbacks += 1
+                logger.info("reference_missing", identifier=identifier)
+        segment = self._segment(json_url) if json_url is not None else None
+        if json_url is None or segment is None:
+            return None
+        identifier_path = identifier.split('/documentation/', 1)[1] if '/documentation/' in identifier else ''
+        cased = identifier_path.split('#', 1)[0].split('/', 1)[0]
+        return PageLink(
+            json_url=json_url,
+            segment=segment,
+            dir_name=cased if cased.lower() == segment else segment,
+            bundle=self._bundle_of(identifier),
+            identifier=identifier,
+        )
+
+    def _page_json_url(self, path: str) -> Optional[str]:
+        """The JSON URL of the page at a documentation path (what follows
+        /documentation/): without its #fragment (a section of the page, never
+        part of the page's URL), lowercased, dot segments escaped. None for
+        an empty path."""
+        path = path.split('#', 1)[0].lower().strip('/')
+        if not path:
+            return None
+        return f"{self.site.json_prefix}{self._escape_dot_path_segments(path)}.json"
+
+    def _in_scope(self, page_links: PageLinks) -> List[str]:
+        """The scope rule: the JSON URLs of a page's links that this job follows.
+
+        A link is followed if its first path segment is the job's framework,
+        or if it is in the same bundle as the page (its identifier's bundle).
+        A same-bundle segment that is no top-level technology is a D6
+        module's; one that is another top-level technology goes to that
+        technology's own sink (a handoff, _route). The top-level set is the
+        full technologies.json (also under --frameworks) and our Apple hash
+        files that aren't modules' (SinkRegistry.top_level). Scope is never
+        decided by substring. Another top-level technology's root is never
+        followed: its own job always fetches it (a handoff is for the pages
+        it doesn't reach). Each followed link's dir casing and bundle are
+        kept for its sink (_route).
+        """
+        urls: List[str] = []
+        top_level: Optional[Set[str]] = None
+        for link in page_links.links:
+            if link.segment != self.job_id:
+                if not link.bundle or link.bundle != page_links.bundle:
+                    if self.include_cross_refs:
+                        self._track_cross_framework_ref(link.identifier)
+                    continue
+                if link.json_url == f"{self.site.json_prefix}{link.segment}.json":
+                    if top_level is None:
+                        top_level = self.sinks.top_level(self.site)
+                    if link.segment in top_level:
+                        # Another technology's root is its own job's, which
+                        # always fetches it (under its id's casing)
+                        continue
+                self._routes.setdefault(link.segment, (link.dir_name, link.bundle))
+            self._check_resolution(link)
+            urls.append(link.json_url)
         return urls
+
+    def _check_resolution(self, link: PageLink) -> None:
+        """Transition check (log only, temporary): url_resolution_changed when the
+        reference's URL isn't the one the identifier gave before 1.1
+        (_legacy_identifier_json_url) and that one is a live page of ours: its
+        file is superseded (normal orphan cleanup removes it). Expected never
+        to fire; remove the check after 2 clean runs with 1.1."""
+        legacy = self._legacy_identifier_json_url(link.identifier)
+        if legacy is None or legacy == link.json_url:
+            return
+        if self._is_previously_good(self.hash_manager.hashes.get(legacy)):
+            logger.warning("url_resolution_changed", framework=self.framework_name, old=legacy, new=link.json_url)
+
+    def _legacy_identifier_json_url(self, identifier: str) -> Optional[str]:
+        """The JSON URL an identifier gave before the resolver (1.1): its path
+        lowercased, with the framework's id prepended unless it starts with it."""
+        if '/documentation/' not in identifier:
+            return None
+        path = identifier.split('/documentation/', 1)[1].lower()
+        if not path.startswith(f"{self.job_id}/"):
+            path = f"{self.job_id}/{path}"
+        return f"{self.site.json_prefix}{self._escape_dot_path_segments(path)}.json"
     
     @staticmethod
     def _escape_dot_path_segments(path: str) -> str:
@@ -1169,34 +1500,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         return '/'.join(escaped)
 
     def _convert_identifier_to_json_url(self, identifier: str) -> Optional[str]:
-        """Convert a doc:// identifier to a JSON URL."""
-        try:
-            # Remove doc:// prefix and /documentation/ if present
-            path = identifier.replace('doc://', '')
-            if '/documentation/' in path:
-                # Split on /documentation/ and take the second part
-                parts = path.split('/documentation/', 1)
-                if len(parts) == 2:
-                    path = parts[1]
-                else:
-                    # Fallback
-                    path = path.replace('/documentation/', '')
-
-            # Convert to lowercase and ensure it starts with framework_id
-            path_lower = path.lower()
-
-            # If it starts with framework_id/, keep it. Otherwise prepend framework_id
-            if not path_lower.startswith(f"{self.framework_id.lower()}/"):
-                path_lower = f"{self.framework_id.lower()}/{path_lower}"
-
-            # Escape path segments starting with dots (e.g. range operators)
-            path_lower = self._escape_dot_path_segments(path_lower)
-
-            return f"{self.site.json_prefix}{path_lower}.json"
-            
-        except Exception as e:
-            logger.error(f"Error converting identifier {identifier}: {e}")
+        """A doc:// identifier's own path as a JSON URL (_page_json_url of what
+        follows /documentation/), never with the framework's id prepended.
+        None if it has no /documentation/ path."""
+        if '/documentation/' not in identifier:
             return None
+        return self._page_json_url(identifier.split('/documentation/', 1)[1])
     
     async def scrape_page(self, sink: Sink, url: str) -> Optional[Dict[str, Any]]:
         """Fetch the framework root page and save it if it changed.
@@ -2622,3 +2931,305 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             external_refs=summary_data["total_external_refs"],
             referenced_frameworks=len(summary_data["referenced_frameworks"])
         )
+
+
+def apply_sink_failure_policy(
+    sink: Sink,
+    outcome_of: Callable[[str], Optional[FrameworkOutcome]],
+    label: str,
+    writers: Optional[Set[str]] = None,
+    storm: bool = True,
+) -> None:
+    """Count a sink's page failures of this run once, and send each its block or flag.
+
+    The per-entry counters of the pages the given writers processed (all of
+    them by default): consecutive_failures (D8) and consecutive_local_errors.
+    Each failure's block ("fetch_failed", "local_error") or persistent flag
+    goes to the outcome of the job that processed the page, and of each job a
+    dedup hit recorded on it (Sink.dedup_jobs). Runs once for a framework
+    job's own pages, after its discovery (_apply_failure_policy), and once
+    for a multi-writer sink's, after its last writer (finish_run).
+
+    - Failure storm (storm): more failures than max(5, 1% of the sink's
+      pages) block but aren't counted, unless the storm lasts
+      FAILURE_STORM_RUNS runs (the sink's metadata.failure_storm_runs).
+    - Resets. The D8 count is of failed runs in a row: a 200, a 304 whose
+      refetch succeeded, a 404/410 (a removal, not a failure) or a run that
+      never fetched the URL (no writer processed it this run) ends the
+      streak, so a stale count can't lift the never-good block on our first
+      new failure. A page processed without a local error resets that count.
+    - At PERSISTENT_FAILURE_RUNS a failure stops blocking and flags the run;
+      a previously good page is then treated as removed (D8: both keys
+      become error entries, so its file is orphaned and cleaned).
+
+    Args:
+        sink: The sink
+        outcome_of: A job's outcome, by job id
+        label: The sink's name for the log
+        writers: Count only the pages these jobs processed (Sink.writer_of)
+        storm: Check for a failure storm (a first handoff run's end-of-run
+            pass counts its handoff writers' pages without it)
+    """
+    hm = sink.hash_manager
+
+    def counted(url: str) -> bool:
+        return writers is None or sink.writer_of(url) in writers
+
+    def outcomes(url: str) -> List[FrameworkOutcome]:
+        jobs = [sink.writer_of(url), *sorted(sink.dedup_jobs.get(url, ()))]
+        found = [outcome_of(job) for job in dict.fromkeys(job for job in jobs if job)]
+        return [outcome for outcome in found if outcome is not None]
+
+    failures = {url: failure for url, failure in sink.fetch_failures.items() if counted(url)}
+    counting = True
+    if storm:
+        pages = max(sink.known_pages, len(sink.processed_urls))
+        limit = max(FAILURE_STORM_MIN, FAILURE_STORM_SHARE * pages)
+        if len(failures) > limit:
+            storm_runs = int(hm.get_metadata("failure_storm_runs", 0)) + 1
+            hm.set_metadata("failure_storm_runs", storm_runs)
+            counting = storm_runs >= FAILURE_STORM_RUNS
+            for url in failures:
+                for outcome in outcomes(url):
+                    outcome.failure_storm = True
+            logger.warning(
+                "failure_storm",
+                framework=label,
+                failures=len(failures),
+                limit=limit,
+                failure_storm_runs=storm_runs,
+                counting=counting,
+            )
+        else:
+            hm.set_metadata("failure_storm_runs", 0)
+
+    unfetched = {
+        url for url, entry in hm.hashes.items()
+        if "consecutive_failures" in entry and url not in sink.processed_urls
+    }
+    fetched = {url for url in sink.fetch_ok | sink.gone if counted(url)}
+    for url in (fetched | unfetched) - sink.fetch_failures.keys():
+        hm.set_counter(url, "consecutive_failures", 0)
+    for url in {url for url in sink.saved_ok if counted(url)} - sink.local_errors.keys():
+        hm.set_counter(url, "consecutive_local_errors", 0)
+
+    for url, page_failure in failures.items():
+        runs = hm.get_counter(url, "consecutive_failures")
+        if counting:
+            runs += 1
+            hm.set_counter(url, "consecutive_failures", runs)
+        if runs < PERSISTENT_FAILURE_RUNS:
+            sink.decisions[url] = "block"
+            for outcome in outcomes(url):
+                outcome.block("fetch_failed", url)
+            continue
+        # No longer protected: it stops blocking, and flags the run
+        sink.decisions[url] = "persistent"
+        logger.error(
+            "persistent_fetch_failure",
+            url=url,
+            kind=page_failure.kind,
+            runs=runs,
+            error=page_failure.failure.error,
+        )
+        for outcome in outcomes(url):
+            outcome.persistent_fetch_failures.append(url)
+        if page_failure.kind == "previously_good":
+            # D8: treat the page as removed. Both keys become error
+            # entries (keeping the count), so its file and any subtree no
+            # longer reachable are orphaned and cleaned in this run. After
+            # a 304 the page is live and stays touched, so its file is kept.
+            hm.mark_error(url, page_failure.failure.error)
+            hm.mark_error(doc_url_of(sink.site, url), page_failure.failure.error)
+
+    for url, error in sink.local_errors.items():
+        if not counted(url):
+            continue
+        runs = hm.get_counter(url, "consecutive_local_errors") + 1
+        hm.set_counter(url, "consecutive_local_errors", runs)
+        if runs < PERSISTENT_FAILURE_RUNS:
+            for outcome in outcomes(url):
+                outcome.block("local_error", url)
+        else:
+            # Stop blocking; the entry stays touched, so its file is kept
+            logger.error("persistent_local_error", url=url, runs=runs, error=error)
+            sink.persistent_local_errors = True
+            for outcome in outcomes(url):
+                outcome.persistent_local_errors.append(url)
+
+
+def store_render_version(sink: Sink, label: str) -> None:
+    """Store a sink's RENDER_VERSION (metadata.render): every page it reached was rendered by it.
+
+    When it stores a new version, the entries this run didn't touch lose
+    their hash and etag (forget_untouched_renderings): their files keep the
+    old rendering, and such a page that comes back unchanged would else
+    answer 304 and never be rendered again.
+    """
+    hm = sink.hash_manager
+    if hm.stale:
+        not_rendered = hm.forget_untouched_renderings()
+        logger.info(
+            "render_version_stored",
+            framework=label,
+            version=hm.render_version,
+            not_rendered=not_rendered,
+        )
+    hm.mark_rendered()
+    sink.render_stored = True
+
+
+def stale_error_entries(sink: Sink) -> List[str]:
+    """A sink's error entries no page this run reached links to any more.
+
+    An error entry (a page that answered 404/410, an earlier never-good
+    failure, a D8) whose page no writer processed this run, with no run
+    counter left: a link nothing makes any more (e.g. a section anchor's
+    URL, or a module's page under its umbrella's id before 1.1). Its next
+    link would fetch the page again anyway. A doc-URL key is judged by its
+    JSON URL. The end-of-run cleanup drops them from a sink it cleans.
+    """
+    processed = {url.lower() for url in sink.processed_urls}
+    site = sink.site
+    stale = []
+    for url, entry in sink.hash_manager.hashes.items():
+        if (not isinstance(entry, dict) or entry.get('status') != 'error' or entry.get('file_path')
+                or any(counter in entry for counter in COUNTER_FIELDS)):
+            continue
+        if url.startswith(site.json_prefix):
+            json_url = url
+        elif url.startswith(site.doc_prefix):
+            json_url = f"{site.json_prefix}{url[len(site.doc_prefix):]}.json"
+        else:
+            continue
+        if json_url.lower() not in processed:
+            stale.append(url)
+    return sorted(stale)
+
+
+def orphan_scan_of(sink: Sink) -> OrphanScan:
+    """A sink's orphan candidates: the .md files no entry this run touched records.
+
+    From its hash manager's touched set, which for a multi-writer sink holds
+    every writer's touches (Sink.release keeps them). Its docs dir is its
+    output dir, or that dir in another casing.
+    """
+    hm = sink.hash_manager
+    framework_dir = next(
+        (path for path in same_name_any_case(sink.output_dir) if path.is_dir()), sink.output_dir
+    )
+    existing = hm.framework_files(framework_dir)
+    pending = hm.get_metadata("pending_orphans")
+    return OrphanScan(
+        framework_dir=framework_dir,
+        hash_file=hm.cache_file,
+        files=len(existing),
+        orphans=hm.get_untouched_files(framework_dir, existing),
+        pending_orphans=[path for path in pending if isinstance(path, str)] if isinstance(pending, list) else [],
+        stale_errors=stale_error_entries(sink),
+    )
+
+
+def sink_runs_clean(sink: Sink, outcome_of: Callable[[str], Optional[FrameworkOutcome]]) -> bool:
+    """Rule 1's clean condition for a multi-writer sink this run.
+
+    A module: every parent its hash file lists ran this run and ran clean
+    (its cleanup isn't skipped). A top-level sink: its primary job ran
+    clean, and every handoff writer its hash file records ran this run and
+    ran clean (a writer that failed before its first handoff would else
+    leave the pages only it reaches looking orphaned).
+    """
+    def clean(job: Optional[str]) -> bool:
+        outcome = outcome_of(job) if job else None
+        return outcome is not None and not outcome.skip_cleanup
+
+    hm = sink.hash_manager
+    if sink.module:
+        parents = module_parents(hm.get_metadata(MODULE_KEY))
+        return bool(parents) and all(clean(parent) for parent in parents)
+    if not sink.primary_ran or not clean(sink.primary_id):
+        return False
+    return all(clean(writer) for writer in metadata_ids(hm.get_metadata(HANDOFF_KEY)))
+
+
+def finish_run(
+    sinks: SinkRegistry, outcomes: Sequence[FrameworkOutcome], cleanup_orphans: bool
+) -> List[ModuleScan]:
+    """The end of a run for its multi-writer sinks (D6), once every job has finished.
+
+    The multi-writer sinks are every module sink, every top-level sink whose
+    hash file carried handoff_from when loaded (Sink.deferred), and every
+    top-level sink that another job routed a page to this run. In this order:
+    1. Their failure policy (apply_sink_failure_policy), from the union of
+       their writers' sets, each writer's blocks to its own outcome. A
+       first handoff run (a top-level sink not deferred) counts only its
+       handoff writers' pages, without the storm check: its primary job
+       counted its own.
+    2. Their render versions, under rule 1's clean condition
+       (sink_runs_clean) and with no persistent local error among their pages.
+    3. With cleanup_orphans, their orphan scans from every writer's touched
+       set: a module's for the end-of-run cleanup (ModuleScan), a top-level
+       sink's on its primary's outcome (handoff_writers too, for rule 1).
+       Batch 2's zero-touched guard applies to a deferred top-level sink; a
+       handoff-only sink (its primary didn't run) is never cleaned.
+    4. Every sink saved (SinkRegistry.save_all), with or without
+       cleanup_orphans: the cleanup then works on saved files.
+    framework_errors and the cleanup read the outcomes after this.
+
+    Returns:
+        The run's module sinks, for the end-of-run cleanup
+    """
+    by_job: Dict[str, FrameworkOutcome] = dict(sinks.outcomes)
+    for outcome in outcomes:
+        by_job.setdefault(outcome.framework_id.lower(), outcome)
+    multi = [sink for sink in sinks.all() if sink.deferred or sink.writer]
+
+    for sink in multi:
+        if sink.deferred:
+            apply_sink_failure_policy(sink, by_job.get, sink.dir_name)
+        else:
+            apply_sink_failure_policy(sink, by_job.get, sink.dir_name, writers=sink.other_writers(), storm=False)
+        sinks.release_if_idle(sink)
+
+    modules: List[ModuleScan] = []
+    for sink in multi:
+        if not sink.render_stored and not sink.persistent_local_errors and sink_runs_clean(sink, by_job.get):
+            store_render_version(sink, sink.dir_name)
+        if sink.module:
+            modules.append(ModuleScan(
+                dir_name=sink.dir_name,
+                output_dir=sink.output_dir,
+                hash_file=sink.hash_file,
+                routed_by=set(sink.parents_this_run),
+                orphan_scan=orphan_scan_of(sink) if cleanup_orphans else None,
+            ))
+        elif sink.primary_ran and sink.primary_id is not None:
+            primary = by_job.get(sink.primary_id)
+            if primary is not None:
+                primary.handoff_writers = sorted(metadata_ids(sink.hash_manager.get_metadata(HANDOFF_KEY)))
+                if cleanup_orphans:
+                    _rescan(sink, primary)
+        sinks.release_if_idle(sink)
+
+    sinks.save_all()
+    return modules
+
+
+def _rescan(sink: Sink, primary: FrameworkOutcome) -> None:
+    """A top-level multi-writer sink's orphan scan at the end of the run, on its primary's outcome.
+
+    From every writer's touched set: a scan right after its primary job's
+    save would take the pages a handoff writer routed in later for orphans.
+    A deferred sink gets Batch 2's zero-touched guard here; a sink whose
+    primary's cleanup is skipped gets no scan.
+    """
+    if primary.root_gone_runs:
+        return
+    if sink.deferred and not primary.blocked and not sink.hash_manager.touched:
+        logger.error("framework_zero_touched", framework=sink.framework_name, framework_id=sink.dir_name)
+        primary.block("zero_touched", sink.dir_name)
+    if primary.blocked:
+        primary.orphan_scan = None
+        return
+    if sink.deferred or primary.orphan_scan is not None:
+        primary.orphan_scan = orphan_scan_of(sink)

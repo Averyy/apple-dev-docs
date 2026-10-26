@@ -4,26 +4,167 @@ PRODUCTION: Scrape ALL Apple Frameworks
 Comprehensive scraper for all 342+ Apple frameworks using JSON API
 """
 
+import ast
 import asyncio
 import sys
 import os
 import json
+from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, Final, List, Sequence, Tuple
+from typing import Any, Dict, Final, List, Optional, Sequence, Set, Tuple
 
 # Add parent directories to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from scraper.config import Config
-from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome
-from scraper.sink import SinkRegistry
+from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome, RunSinks, finish_run
+from scraper.sink import CHILD_MODULES_KEY, HANDOFF_KEY, MODULE_KEY, SinkRegistry, metadata_ids, module_parents
+from scraper.site import APPLE
+from scraper.utils.hash_manager import read_hash_file
+from scraper.utils.logger import get_logger
 from scraper.utils.naming import dirmap
 from framework_list_scraper import AppleFrameworkListScraper
 from cleanup_removed_frameworks import framework_hash_files
 
+logger = get_logger(__name__)
+
 # The list guard: technologies.json must list at least this share of our Apple
 # framework hash files (those not already counted as unlisted), or the run aborts
 MIN_LISTED_SHARE: Final = 0.9
+
+# The other scrapers, whose top-level docs dirs no Apple sink may have
+# (namespace_collision): their configs are read from their source
+OTHER_SCRAPERS: Final = ("scrape_mlx_docs.py", "scrape_swift_docs.py", "scrape_hig_docs.py")
+SCRIPTS_DIR: Final = Path(__file__).resolve().parent.parent
+
+
+def _path_strings(node: ast.AST) -> List[str]:
+    """The string literals of a path expression joined with "/" (Path(…) / "a" / "b" -> ["a", "b"])."""
+    if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Div):
+        return _path_strings(node.left) + _path_strings(node.right)
+    if isinstance(node, ast.Constant) and isinstance(node.value, str):
+        return [node.value]
+    return []
+
+
+def _configured_mlx_dirs(scripts_dir: Path) -> Optional[List[str]]:
+    """The MLX scraper's configured output dirs (configured_sources()), if it can be imported.
+
+    It needs wafer-py, which the scheduled scrape installs (requirements-scrape.txt)
+    but a test environment may lack: None then.
+    """
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    try:
+        import scrape_mlx_docs
+    except ImportError as e:
+        logger.info("mlx_scraper_not_importable", error=str(e))
+        return None
+    return list(scrape_mlx_docs.configured_sources().values())
+
+
+def _literal_output_dirs(path: Path) -> List[str]:
+    """A scraper's docs dirs as its source states them (ast; it isn't imported).
+
+    Each literal output_dir="<dir>[/…]" of a source's config, and each
+    OUTPUT_DIR = … / "documentation" / "<dir>" assignment.
+    """
+    found: List[str] = []
+    for node in ast.walk(ast.parse(path.read_text(encoding="utf-8"), filename=path.name)):
+        if (isinstance(node, ast.keyword) and node.arg == "output_dir"
+                and isinstance(node.value, ast.Constant) and isinstance(node.value.value, str)):
+            found.append(node.value.value)
+        elif isinstance(node, ast.Assign) and any(
+                isinstance(target, ast.Name) and target.id == "OUTPUT_DIR" for target in node.targets):
+            parts = _path_strings(node.value)
+            if "documentation" in parts[:-1]:
+                found.append(parts[parts.index("documentation") + 1])
+    return found
+
+
+def other_scraper_dirs(scripts_dir: Path = SCRIPTS_DIR, import_mlx: bool = True) -> Dict[str, str]:
+    """The top-level docs dirs the MLX, Swift and HIG scrapers write, {name.lower(): name}.
+
+    From their configs: the MLX scraper's configured sources
+    (scrape_mlx_docs.configured_sources(), every source list, so a new source
+    is covered by itself), and the Swift and HIG scrapers' OUTPUT_DIR. Where
+    the MLX scraper can't be imported (no wafer-py), its source's literal
+    output_dirs stand in for configured_sources() (_literal_output_dirs);
+    the Swift and HIG scrapers are always read that way.
+
+    Raises:
+        OSError: A scraper's source can't be read
+        ValueError: A scraper's config names no docs dir (or doesn't parse,
+            or configured_sources() rejects it)
+    """
+    dirs: Dict[str, str] = {}
+    for name in OTHER_SCRAPERS:
+        found: Optional[List[str]] = None
+        if name == "scrape_mlx_docs.py" and import_mlx:
+            found = _configured_mlx_dirs(scripts_dir)
+        if found is None:
+            found = _literal_output_dirs(scripts_dir / name)
+        top = {path.strip("/").split("/")[0] for path in found if path.strip("/")}
+        if not top:
+            raise ValueError(f"{name} names no docs dir (no output_dir or OUTPUT_DIR)")
+        for dir_name in sorted(top):
+            dirs[dir_name.lower()] = dir_name
+    return dirs
+
+
+@dataclass
+class HashDirScan:
+    """What the run needs from the hash files at its start, read once.
+
+    Attributes:
+        page_counts: id (lowercased) -> its hash file's entries, plus its
+            modules' (rule 5: a parent crawls its modules)
+        module_files: The D6 module hash files (metadata.module)
+        handoff_files: The hash files with metadata.handoff_from
+        child_modules: Module id (lowercased) -> the hash files whose
+            metadata.child_modules lists it
+        top_level: The ids (lowercased) of the Apple hash files that aren't
+            D6 modules', and of those that can't be read (never taken for a
+            module): sink.apple_top_level's, for the scope rule
+    """
+
+    page_counts: Dict[str, int] = field(default_factory=dict)
+    module_files: List[Path] = field(default_factory=list)
+    handoff_files: List[Path] = field(default_factory=list)
+    child_modules: Dict[str, List[Path]] = field(default_factory=dict)
+    top_level: Set[str] = field(default_factory=set)
+
+
+def scan_hash_dir(hash_dir: Path) -> HashDirScan:
+    """Read every hash file of the dir once: sizes for the sort, and the D6 metadata.
+
+    A file that can't be read counts as a top-level technology's and is
+    otherwise left out (its framework's scrape reports it).
+    """
+    scan = HashDirScan()
+    module_sizes: List[Tuple[Dict[str, int], int]] = []
+    for path in sorted(hash_dir.glob("*_hashes.json")):
+        stem = path.name[:-len("_hashes.json")].lower()
+        try:
+            hashes, metadata = read_hash_file(path)
+        except (OSError, ValueError):
+            scan.top_level.add(stem)
+            continue
+        scan.page_counts[stem] = len(hashes)
+        module = metadata.get(MODULE_KEY)
+        if module:
+            scan.module_files.append(path)
+            module_sizes.append((module_parents(module), len(hashes)))
+        elif any(url.startswith(APPLE.json_prefix) for url in hashes):
+            scan.top_level.add(stem)
+        if metadata_ids(metadata.get(HANDOFF_KEY)):
+            scan.handoff_files.append(path)
+        for child in metadata_ids(metadata.get(CHILD_MODULES_KEY)):
+            scan.child_modules.setdefault(str(child).lower(), []).append(path)
+    for parents, size in module_sizes:
+        for parent in parents:
+            scan.page_counts[parent] = scan.page_counts.get(parent, 0) + size
+    return scan
 
 
 class ScrapeAborted(Exception):
@@ -118,8 +259,23 @@ def known_dirs(frameworks: Sequence[Dict[str, str]]) -> Dict[str, str]:
     return dirs
 
 
-async def scrape_frameworks(framework_list=None, resume_from=None, max_concurrent=20, cleanup_orphans=False):
+async def scrape_frameworks(
+    framework_list: Optional[List[Dict[str, str]]] = None,
+    resume_from: Optional[str] = None,
+    max_concurrent: int = 20,
+    cleanup_orphans: bool = False,
+    all_frameworks: Optional[Sequence[Dict[str, str]]] = None,
+) -> Dict[str, Any]:
     """Scrape specified frameworks or all frameworks with proper rolling concurrency
+
+    Args:
+        all_frameworks: technologies.json's full list, when framework_list is
+            a selection of it (--frameworks): the scope rule's top-level set
+            is the full list's, so a selected framework never crawls a
+            bundle sibling's pages as its modules
+
+    After every job: the multi-writer sinks' failure policy, render versions
+    and save (finish_run), with or without cleanup_orphans.
 
     Raises:
         ScrapeAborted: The fetched list failed the list guard, or the
@@ -134,6 +290,7 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
         # Fetch all frameworks
         print("📋 Fetching complete framework list from Apple...")
         frameworks = await fetch_framework_list()
+    listed = list(all_frameworks) if all_frameworks is not None else list(frameworks)
 
     # Filter if resuming
     if resume_from:
@@ -149,27 +306,37 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
             raise ScrapeAborted(f"Could not find framework '{resume_from}' to resume from")
 
     # Sort frameworks by page count (largest first) for optimal scheduling.
-    # Longest jobs start first so they don't become the tail when running concurrently.
-    hashes_dir = Path(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))).joinpath('.hashes')
-    if hashes_dir.exists():
-        page_counts = {}
-        for hf in hashes_dir.glob('*_hashes.json'):
-            try:
-                data = json.loads(hf.read_text())
-                fw_name = hf.stem.replace('_hashes', '')
-                page_counts[fw_name.lower()] = len(data.get('hashes', {}))
-            except Exception:
-                pass
-        if page_counts:
-            frameworks.sort(key=lambda fw: page_counts.get(fw['id'].lower(), 0), reverse=True)
-            top3 = [(fw['title'], page_counts.get(fw['id'].lower(), 0)) for fw in frameworks[:3]]
-            print(f"📐 Sorted by page count (largest first): {', '.join(f'{n} ({c:,})' for n, c in top3)}, ...")
+    # Longest jobs start first so they don't become the tail when running
+    # concurrently. A parent's count includes its D6 modules' (rule 5)
+    hash_scan = scan_hash_dir(Config.CACHE_DIR) if Config.CACHE_DIR.exists() else HashDirScan()
+    page_counts = hash_scan.page_counts
+    if page_counts:
+        frameworks.sort(key=lambda fw: page_counts.get(fw['id'].lower(), 0), reverse=True)
+        top3 = [(fw['title'], page_counts.get(fw['id'].lower(), 0)) for fw in frameworks[:3]]
+        print(f"📐 Sorted by page count (largest first): {', '.join(f'{n} ({c:,})' for n, c in top3)}, ...")
 
     print(f"\n📊 Will scrape {len(frameworks)} frameworks")
 
+    # The other scrapers' top-level docs dirs, which no Apple sink may have.
+    # Without them the run stops: an Apple page written into one of those
+    # dirs would be deleted by that scraper's own orphan scan
+    run_errors: List[str] = []
+    try:
+        reserved = other_scraper_dirs()
+    except (OSError, ValueError, SyntaxError) as e:
+        logger.error("other_scraper_dirs_unreadable", error=str(e))
+        raise ScrapeAborted(f"namespace check: the other scrapers' docs dirs can't be read: {e}") from e
+
     # The run's sinks. Local links reach every framework dir we have and
-    # every one this run scrapes
-    sinks = SinkRegistry(known_dirs(frameworks))
+    # every one this run scrapes. The scope rule's top-level technologies
+    # are technologies.json's full list and our Apple hash files that
+    # aren't D6 modules'
+    sinks = SinkRegistry(
+        known_dirs(frameworks),
+        top_level={APPLE.name: {fw['id'] for fw in listed} | hash_scan.top_level},
+        titles={fw['id']: fw['title'] for fw in listed},
+        reserved=reserved,
+    )
 
     # Track progress
     total = len(frameworks)
@@ -183,6 +350,11 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
     async def scrape_with_semaphore(fw, index):
         async with semaphore:
             print(f"\n[{index}/{total}] 🚀 Starting: {fw['title']} ({fw['id']})")
+            if sinks.refuses(fw['id']):
+                # Another scraper's top-level dir: never scraped into
+                logger.error("namespace_collision", framework=fw['title'], dir=fw['id'])
+                print(f"❌ {fw['title']} ({fw['id']}): its dir is another scraper's (namespace_collision); not scraped")
+                return fw, FrameworkOutcome(framework_id=fw['id'], blocks={"namespace_collision": [fw['id']]})
             try:
                 scraper = AppleJSONDocumentationScraper(
                     framework_id=fw['id'],
@@ -207,13 +379,19 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
     # Process results
     for result in results:
         if isinstance(result, tuple):
+            outcomes.append(result[1])
+        elif isinstance(result, Exception):
+            print(f"❌ Unexpected error: {result}")
+
+    # D6: the multi-writer sinks' failure policy (its blocks go to the jobs'
+    # outcomes), their render versions, then every sink saved
+    modules = finish_run(sinks, outcomes, cleanup_orphans)
+    for result in results:
+        if isinstance(result, tuple):
             fw, outcome = result
-            outcomes.append(outcome)
             if outcome.raised is not None:
                 failed.append((fw, outcome.raised))
                 print(f"❌ Failed: {fw['title']} - {outcome.raised}")
-        elif isinstance(result, Exception):
-            print(f"❌ Unexpected error: {result}")
     
     # Collect comprehensive stats
     total_pages_scraped = 0
@@ -240,7 +418,15 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
         'failed_frameworks': len(failed),
         'total_pages_scraped': total_pages_scraped,
         'total_pages_skipped': total_pages_skipped,
-        'framework_outcomes': outcomes
+        'framework_outcomes': outcomes,
+        'run_sinks': RunSinks(
+            listed={fw['id'].lower() for fw in listed},
+            modules=modules,
+            module_files=hash_scan.module_files,
+            handoff_files=hash_scan.handoff_files,
+            child_modules=hash_scan.child_modules,
+        ),
+        'errors': run_errors,
     }
 
 async def scrape_single_framework(scraper, framework, current, total, cleanup_orphans=False):
@@ -249,8 +435,10 @@ async def scrape_single_framework(scraper, framework, current, total, cleanup_or
     With cleanup_orphans, the outcome also carries the framework's orphan
     candidates, found right after its hash file was saved, so the end-of-run
     cleanup keeps neither the scraper nor its hash manager (every entry of
-    the framework) in memory. Either way, the framework's sink then leaves
-    the run's sinks (SinkRegistry.evict).
+    the framework) in memory (a multi-writer sink's are found at the end of
+    the run instead, finish_run). Either way, the job then leaves the sinks
+    it used, which release their hash managers once nothing in flight uses
+    them (SinkRegistry.job_done).
     """
     try:
         async with scraper:
@@ -269,7 +457,7 @@ async def scrape_single_framework(scraper, framework, current, total, cleanup_or
         if cleanup_orphans:
             scraper.scan_orphans(scraper.sink)
     finally:
-        scraper.sinks.evict(scraper.sink)
+        scraper.sinks.job_done(scraper.job_id)
 
     # Return the outcome (with its stats) for aggregation
     return scraper.outcome
@@ -378,8 +566,10 @@ async def scrape_everything() -> int:
     try:
         # If specific frameworks requested, fetch their info
         framework_list = None
+        all_frameworks = None
         if specific_frameworks:
-            framework_list, unknown = select_frameworks(await fetch_framework_list(), specific_frameworks)
+            all_frameworks = await fetch_framework_list()
+            framework_list, unknown = select_frameworks(all_frameworks, specific_frameworks)
             if unknown:
                 # Every name must pick a framework (e.g. "SwiftUI UIKit"
                 # passed as one argument picks none): never a partial run
@@ -391,10 +581,11 @@ async def scrape_everything() -> int:
             framework_list=framework_list,
             resume_from=resume_from,
             max_concurrent=max_concurrent,
-            cleanup_orphans=cleanup_orphans
+            cleanup_orphans=cleanup_orphans,
+            all_frameworks=all_frameworks,
         )
         outcomes = scrape_stats['framework_outcomes']
-        errors = framework_errors(outcomes)
+        errors = framework_errors(outcomes) + scrape_stats.get('errors', [])
         
         if errors:
             print("\n⚠️  SCRAPING COMPLETED, WITH ERRORS (listed at the end)")
@@ -416,6 +607,7 @@ async def scrape_everything() -> int:
             report = cleanup_after_scrape(
                 outcomes,
                 interactive='--auto-cleanup' not in sys.argv,
+                run=scrape_stats.get('run_sinks'),
             )
             errors.extend(f"cleanup: {failure}" for failure in report.failures)
         

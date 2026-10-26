@@ -251,7 +251,7 @@ class TestCleanRuns:
         hash_file = Config.get_hash_file(FW)
         data = json.loads(hash_file.read_text())
         data["metadata"]["pending_orphans"] = ["documentation/testkit/old.md"]
-        data["metadata"]["module"] = {"parent": "other"}
+        data["metadata"]["child_modules"] = {"otherkit": {}}
         unlinked = json_url("testkit/unlinked")
         data["hashes"][unlinked] = {
             "status": "error", "error": "HTTP 502", "consecutive_failures": 2, "consecutive_local_errors": 2,
@@ -260,8 +260,8 @@ class TestCleanRuns:
         await runs.run(routes_for(SITE))
         saved = runs.saved()
         assert saved["metadata"]["pending_orphans"] == ["documentation/testkit/old.md"]
-        assert saved["metadata"]["module"] == {"parent": "other"}
-        assert list(saved["metadata"]) == ["module", "pending_orphans", "render", "total_pages"]
+        assert saved["metadata"]["child_modules"] == {"otherkit": {}}
+        assert list(saved["metadata"]) == ["child_modules", "pending_orphans", "render", "total_pages"]
         # A local-error count resets only on a successful save; a run that
         # never fetched the URL ends its D8 streak
         assert counters(saved["hashes"][unlinked]) == {"consecutive_local_errors": 2}

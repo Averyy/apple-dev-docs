@@ -779,7 +779,7 @@ class TestProcessQueuedUrl:
         def boom(data: Dict[str, Any]) -> List[str]:
             raise RuntimeError("parser bug")
 
-        monkeypatch.setattr(rig.scraper, "_extract_urls_from_json_data", boom)
+        monkeypatch.setattr(rig.scraper, "_page_links", boom)
         queue: Deque[str] = deque()
         with capture_logs() as events:
             await rig.scraper._process_queued_url(rig.scraper.sink, json_url(ALPHA), queue)

@@ -407,6 +407,27 @@ class TestUnlistedFrameworks:
             assert prescrape(monkeypatch, ["kit00", "KIT01"]) == 0
             assert snapshot() == before, run
 
+    def test_an_unreadable_module_hash_file_its_parent_lists_is_never_judged(
+        self, runs: Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """A D6 module's file its parent lists in child_modules: never counted as unlisted (its next save
+        replaces it); unlisted ×2 would delete a module its parent still links."""
+        make_framework("kit00", child_modules={"modkit": {}})
+        broken = make_framework("ModKit", module={"parents": {"kit00": {"unlinked_clean_runs": 0}}})
+        broken.write_text(broken.read_text()[:100])
+        before = snapshot()
+        assert [f.framework_id for f in framework_hash_files(Config.CACHE_DIR).frameworks] == ["kit00"]
+        assert framework_hash_files(Config.CACHE_DIR).unreadable == {}
+        check_framework_list(frameworks(["kit00"]))  # 1 of 1
+        for run in (1, 2, 3):
+            assert prescrape(monkeypatch, ["kit00"]) == 0
+            assert snapshot() == before, run
+        # Without its parent's listing it is judged by its docs dir, as before
+        parent = json.loads(Config.get_hash_file("kit00").read_text())
+        del parent["metadata"]["child_modules"]
+        Config.get_hash_file("kit00").write_text(json.dumps(parent))
+        assert [f.framework_id for f in framework_hash_files(Config.CACHE_DIR).frameworks] == ["ModKit", "kit00"]
+
     @pytest.mark.parametrize("listed", [False, True])
     def test_an_unreadable_hash_file_with_no_docs_dir_is_never_touched(
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str], listed: bool

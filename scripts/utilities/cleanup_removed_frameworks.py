@@ -39,7 +39,7 @@ import asyncio
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, Final, List, Optional, Sequence
+from typing import Dict, Final, List, Optional, Sequence, Set, Tuple
 
 # The repo root, for the scraper package
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
@@ -48,6 +48,7 @@ from cleanup_orphans_at_end import remove_framework
 from framework_list_scraper import AppleFrameworkListScraper
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.sink import CHILD_MODULES_KEY, MODULE_KEY, metadata_ids
 from scraper.utils.hash_manager import HashManager, read_hash_file, same_name_any_case
 from scraper.utils.logger import get_logger
 
@@ -151,27 +152,42 @@ def framework_hash_files(hash_dir: Path) -> HashFiles:
     still judges a framework whose hash file can't be read, and the file it
     writes in its place, which has no entries until a scrape fills it.
 
+    A file that can't be read whose id a readable file's
+    metadata.child_modules lists is a D6 module's (its parent's scrape
+    routes it pages): it is never judged, and its module's next save
+    replaces it. A readable module file is judged by its metadata.module,
+    so a promoted module, whose own scrape dropped the key, is a framework's.
+
     The unlisted rule judges these, and the scrape's list guard counts them
     (scrape_all_frameworks.check_framework_list).
     """
     found = HashFiles()
+    failed: List[Tuple[Path, str]] = []
+    modules: Set[str] = set()
     for path in sorted(hash_dir.glob(f"*{HASH_FILE_SUFFIX}")):
         framework_id = framework_id_of(path)
         try:
             hashes, metadata = read_hash_file(path)
         except (OSError, ValueError) as e:  # ValueError: not UTF-8, JSON or a hash file
-            if _docs_dirs(framework_id):
-                found.frameworks.append(FrameworkHashFile(path, framework_id, 0, load_error=str(e)))
-            else:
-                found.unreadable[path] = str(e)
+            failed.append((path, str(e)))
             continue
-        if metadata.get("module"):
+        modules.update(str(module).lower() for module in metadata_ids(metadata.get(CHILD_MODULES_KEY)))
+        if metadata.get(MODULE_KEY):
             continue
         has_apple_key = any(url.startswith(APPLE_JSON_PREFIX) for url in hashes)
         if not has_apple_key and (hashes or not _docs_dirs(framework_id)):
             continue
         runs = metadata.get("unlisted_runs", 0)
         found.frameworks.append(FrameworkHashFile(path, framework_id, runs if isinstance(runs, int) else 0))
+    for path, error in failed:
+        framework_id = framework_id_of(path)
+        if framework_id.lower() in modules:
+            continue
+        if _docs_dirs(framework_id):
+            found.frameworks.append(FrameworkHashFile(path, framework_id, 0, load_error=error))
+        else:
+            found.unreadable[path] = error
+    found.frameworks.sort(key=lambda hash_file: hash_file.path)
     return found
 
 
