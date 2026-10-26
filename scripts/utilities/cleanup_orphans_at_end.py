@@ -15,6 +15,12 @@ page (rule 2), a module is cleaned only when every parent ran clean (rule 1),
 and it is deleted, dir and hash file, once it has no parent left, every
 parent's count reached MODULE_UNLINKED_RUNS, or its dir holds no file after
 its cleanup (rule 4).
+
+The DocC sites' docs (documentation/<namespace>/) follow the same rules, each
+on its own site's paths (.hashes/<namespace>/), with outcomes keyed by (site,
+id). Before anything else, the docs that left the config are removed
+(rule 7(a)): a top-level hash file whose root the site no longer lists, with
+its dir, and a whole namespace whose site left the config.
 """
 
 import shutil
@@ -34,7 +40,10 @@ from scraper.utils.hash_manager import COUNTER_FIELDS, HashManager, same_name_an
 from scraper.utils.logger import get_logger
 
 if TYPE_CHECKING:
-    from scraper.json_scraper import FrameworkOutcome, ModuleScan, OrphanScan, RunSinks
+    from scraper.json_scraper import FrameworkOutcome, ModuleScan, OrphanScan, RunSinks, SiteRemoval
+
+# An outcome's key: (its site's name, its id lowercased)
+Key = Tuple[str, str]
 
 logger = get_logger(__name__)
 
@@ -49,6 +58,8 @@ MODULE_UNLINKED_RUNS: Final = 2
 # Why a framework or module is removed (FrameworkCleanup.reason), for the log
 # and the summary
 ROOT_GONE: Final = "root_gone"
+# A DocC root or site that left the config (rule 7(a))
+NOT_CONFIGURED: Final = "not_configured"
 MODULE_REASONS: Final = {
     "module_parentless": "no parent left",
     "module_unlinked": f"unlinked by every parent for {MODULE_UNLINKED_RUNS} clean runs",
@@ -72,9 +83,9 @@ class FrameworkCleanup:
         pending_orphans: The framework's new metadata.pending_orphans if it
             changes ([] drops it), else None
         remove: Remove the whole framework, every casing of its docs dir and
-            hash file: its root returned 404/410 on 2 consecutive runs, or a
-            D6 module rule 4 deletes
-        reason: Why it is removed: ROOT_GONE, or one of MODULE_REASONS
+            hash file: its root returned 404/410 on 2 consecutive runs, a
+            DocC root that left the config, or a D6 module rule 4 deletes
+        reason: Why it is removed: ROOT_GONE, NOT_CONFIGURED, or one of MODULE_REASONS
         drop: The error entries no page links to any more
             (json_scraper.stale_error_entries), dropped from its hash file
     """
@@ -102,6 +113,8 @@ class CleanupReport:
         held: framework -> (orphans the valve holds in pending_orphans, the
             framework's files once the confirmed ones are deleted)
         removed: framework -> .md files in the removed framework's docs dir
+        unconfigured: DocC root or whole site that left the config (rule
+            7(a)) -> .md files its removed docs dir held
         removed_modules: D6 module -> (.md files its docs dir held, why: a
             MODULE_REASONS key)
         parents_pruned: D6 module -> the parents pruned from it (rule 3)
@@ -116,6 +129,7 @@ class CleanupReport:
     confirmed: Dict[str, int] = field(default_factory=dict)
     held: Dict[str, Tuple[int, int]] = field(default_factory=dict)
     removed: Dict[str, int] = field(default_factory=dict)
+    unconfigured: Dict[str, int] = field(default_factory=dict)
     removed_modules: Dict[str, Tuple[int, str]] = field(default_factory=dict)
     parents_pruned: Dict[str, List[str]] = field(default_factory=dict)
     pruned: int = 0
@@ -129,6 +143,7 @@ class CleanupReport:
         self.confirmed.update(other.confirmed)
         self.held.update(other.held)
         self.removed.update(other.removed)
+        self.unconfigured.update(other.unconfigured)
         self.removed_modules.update(other.removed_modules)
         self.parents_pruned.update(other.parents_pruned)
         self.pruned += other.pruned
@@ -232,6 +247,8 @@ def _remove_framework(cleanup: FrameworkCleanup, report: CleanupReport) -> None:
         return
     if cleanup.reason == ROOT_GONE:
         report.removed[cleanup.framework] = files
+    elif cleanup.reason == NOT_CONFIGURED:
+        report.unconfigured[cleanup.framework] = files
     else:
         report.removed_modules[cleanup.framework] = (files, cleanup.reason)
 
@@ -300,6 +317,7 @@ def _approved(cleanups: Sequence[FrameworkCleanup]) -> bool:
     for cleanup in sorted(cleanups, key=lambda c: c.framework):
         if cleanup.remove:
             why = (f"its root returned 404/410 on {ROOT_GONE_REMOVAL_RUNS} runs" if cleanup.reason == ROOT_GONE
+                   else "its root left the config" if cleanup.reason == NOT_CONFIGURED
                    else f"a module with {MODULE_REASONS[cleanup.reason]}")
             print(f"\n📁 {cleanup.framework}: {why}; its docs dir and hash file will be removed")
             continue
@@ -413,6 +431,9 @@ def _print_summary(report: CleanupReport, skipped: Sequence["FrameworkOutcome"],
         print(f"🗑️  Removed {len(report.removed)} frameworks whose root returned 404/410 on "
               f"{ROOT_GONE_REMOVAL_RUNS} runs (docs dir and hash file): "
               + ", ".join(f"{framework} ({files} files)" for framework, files in sorted(report.removed.items())))
+    if report.unconfigured:
+        print(f"🗑️  Removed {len(report.unconfigured)} DocC roots or sites that left the config (docs and hash files): "
+              + ", ".join(f"{name} ({files} files)" for name, files in sorted(report.unconfigured.items())))
     if report.removed_modules:
         print(f"🗑️  Removed {len(report.removed_modules)} modules (docs dir and hash file): "
               + ", ".join(f"{module} ({files} files, {MODULE_REASONS[reason]})"
@@ -422,46 +443,49 @@ def _print_summary(report: CleanupReport, skipped: Sequence["FrameworkOutcome"],
               + ", ".join(f"{module} ({', '.join(parents)})" for module, parents in sorted(report.parents_pruned.items())))
     if root_pending:
         print("⏳ Root returned 404/410 (removed if it does again next run): "
-              + ", ".join(f"{outcome.framework_id} (run {outcome.root_gone_runs})" for outcome in root_pending))
+              + ", ".join(f"{outcome.name} (run {outcome.root_gone_runs})" for outcome in root_pending))
     if root_gone:
         print("ℹ️  Root returned 404/410, with no docs dir or hash file left to remove: "
-              + ", ".join(outcome.framework_id for outcome in root_gone))
+              + ", ".join(outcome.name for outcome in root_gone))
     if skipped:
         print(f"⏸️  Cleanup skipped this run for {len(skipped)} frameworks: "
-              + ", ".join(f"{outcome.framework_id} ({describe_skip(outcome)})" for outcome in skipped))
+              + ", ".join(f"{outcome.name} ({describe_skip(outcome)})" for outcome in skipped))
     if waiting:
         print(f"⏸️  Not cleaned this run (rule 1) ({len(waiting)}): "
               + ", ".join(f"{name} ({why})" for name, why in waiting))
     for failure in report.failures:
         print(f"❌ {failure}")
-    if not (report.deleted or report.held or report.removed or report.removed_modules or report.cancelled
-            or report.failures):
+    if not (report.deleted or report.held or report.removed or report.unconfigured or report.removed_modules
+            or report.cancelled or report.failures):
         if skipped or root_pending or waiting:
             print("✅ No orphaned files found in the frameworks cleaned this run")
         else:
             print("✅ No orphaned files found!")
 
 
-def _ran_clean(outcomes: Mapping[str, "FrameworkOutcome"], job: str) -> bool:
+def _ran_clean(outcomes: Mapping[Key, "FrameworkOutcome"], key: Key) -> bool:
     """The job ran this run and ran clean: its cleanup isn't skipped (rule 1)."""
-    outcome = outcomes.get(job)
+    outcome = outcomes.get(key)
     return outcome is not None and not outcome.skip_cleanup
 
 
-def _gone(job: str, outcomes: Mapping[str, "FrameworkOutcome"], removed: Set[str]) -> bool:
+def _gone(key: Key, namespace: str, outcomes: Mapping[Key, "FrameworkOutcome"], removed: Set[Key]) -> bool:
     """Rule 3: a parent (or handoff writer) is pruned once deleted, or gone.
 
-    Deleted by this run's cleanup (root gone), or didn't run this run and
-    has no hash file left at the site's path (any casing): the pre-scrape's
+    Deleted by this run's cleanup (root gone, or left the config), or didn't
+    run this run and has no hash file left at its own site's path
+    (.hashes/[<namespace>/]<id>_hashes.json, any casing): the pre-scrape's
     unlisted removal deletes it, and a renamed parent's old id goes that
-    way. Never for "not in technologies.json" alone: a parent unlisted for
-    one run still has its hash file and keeps its modules.
+    way. Never for "not in technologies.json" (or the config's roots)
+    alone: a parent unlisted for one run still has its hash file and keeps
+    its modules.
     """
-    if job in removed:
+    if key in removed:
         return True
-    if job in outcomes:
+    if key in outcomes:
         return False
-    return not any(path.is_file() for path in same_name_any_case(Config.get_hash_file(job)))
+    hash_file = Config.get_hash_file(key[1], namespace=namespace)
+    return not any(path.is_file() for path in same_name_any_case(hash_file))
 
 
 def _save(hash_manager: HashManager, name: str, report: CleanupReport) -> bool:
@@ -483,30 +507,31 @@ def _unique(paths: Sequence[Path]) -> List[Path]:
     return unique
 
 
-def prune_handoff_writers(run: "RunSinks", outcomes: Mapping[str, "FrameworkOutcome"], removed: Set[str],
-                          report: CleanupReport) -> Dict[str, Set[str]]:
+def prune_handoff_writers(run: "RunSinks", outcomes: Mapping[Key, "FrameworkOutcome"], removed: Set[Key],
+                          report: CleanupReport) -> Dict[Key, Set[str]]:
     """Rule 3 for the handoff writers a top-level hash file records (metadata.handoff_from).
 
     Returns:
-        Hash file id (lowercased) -> the writers pruned from it
+        (Its site, hash file id lowercased) -> the writers pruned from it
     """
-    pruned: Dict[str, Set[str]] = {}
+    pruned: Dict[Key, Set[str]] = {}
     for path in _unique(run.handoff_files):
         if not path.is_file():
             continue
+        site, namespace = run.site_of(path)
         name = path.name[: -len(HASH_FILE_SUFFIX)]
         hash_manager = HashManager(path)
         if hash_manager.load_error is not None:
             report.failures.append(f"{name}: hash file failed to load: {hash_manager.load_error}")
             continue
         writers = metadata_ids(hash_manager.get_metadata(HANDOFF_KEY))
-        gone = {writer for writer in writers if _gone(writer, outcomes, removed)}
+        gone = {writer for writer in writers if _gone((site, writer), namespace, outcomes, removed)}
         if not gone:
             continue
         hash_manager.set_metadata(HANDOFF_KEY, {writer: value for writer, value in writers.items() if writer not in gone})
         if _save(hash_manager, name, report):
             logger.info("handoff_writers_pruned", framework=name, pruned=sorted(gone))
-            pruned[name.lower()] = gone
+            pruned[(site, name.lower())] = gone
     return pruned
 
 
@@ -536,6 +561,8 @@ class ModuleState:
         parent_files: Its parents' hash files (to drop it from their child_modules)
         eligible: Every remaining parent ran this run and ran clean (rule 1)
         routed: A parent routed it a page this run (it has a sink)
+        display: Its name for the console and the report: its id, under its
+            site's namespace
     """
 
     name: str
@@ -544,15 +571,21 @@ class ModuleState:
     parent_files: List[Path]
     eligible: bool
     routed: bool = False
+    display: str = ""
+
+    def __post_init__(self) -> None:
+        self.display = self.display or self.name
 
 
-def apply_module_rules(run: "RunSinks", outcomes: Mapping[str, "FrameworkOutcome"], removed: Set[str],
+def apply_module_rules(run: "RunSinks", outcomes: Mapping[Key, "FrameworkOutcome"], removed: Set[Key],
                        report: CleanupReport) -> Tuple[List[FrameworkCleanup], List[ModuleState]]:
     """Rules 3, 2 and 1 for every D6 module hash file, and what rule 4 removes at once.
 
     Over the module files on disk at run start and the run's module sinks,
     so a module no parent linked this run is counted too (it has no sink).
-    A module whose id this run's technologies.json lists is promoted: rules
+    Each is judged on its own site: its parents are jobs of that site, and
+    their hash files are at its namespace's path. A module whose id this
+    run's technologies.json (or its site's allow-list) lists is promoted: rules
     2–4 skip it (its own job dropped its module key) and its parents' hash
     files no longer list it in child_modules. For each other module, in
     this order:
@@ -576,9 +609,12 @@ def apply_module_rules(run: "RunSinks", outcomes: Mapping[str, "FrameworkOutcome
     cleanups: List[FrameworkCleanup] = []
     states: List[ModuleState] = []
     for path in _unique([*run.module_files, *(module.hash_file for module in run.modules)]):
+        site, namespace = run.site_of(path)
         name = path.name[: -len(HASH_FILE_SUFFIX)]
-        if name.lower() in run.listed:
-            _prune_child_module(name, run.child_modules.get(name.lower(), []), report)
+        display = f"{namespace}/{name}" if namespace else name
+        children = run.child_modules.get((site, name.lower()), [])
+        if (site, name.lower()) in run.listed:
+            _prune_child_module(name, children, report)
             continue
         if not path.is_file():
             continue
@@ -592,12 +628,12 @@ def apply_module_rules(run: "RunSinks", outcomes: Mapping[str, "FrameworkOutcome
         scan = scans.get(str(path).lower())
         routed = scan.routed_by if scan is not None else set()
         parents = module_parents(module)
-        parent_files = [Config.get_hash_file(parent) for parent in parents] + run.child_modules.get(name.lower(), [])
-        gone = sorted(parent for parent in parents if _gone(parent, outcomes, removed))
+        parent_files = [Config.get_hash_file(parent, namespace=namespace) for parent in parents] + children
+        gone = sorted(parent for parent in parents if _gone((site, parent), namespace, outcomes, removed))
         for parent in gone:
             del parents[parent]
         for parent in parents:
-            if _ran_clean(outcomes, parent):
+            if _ran_clean(outcomes, (site, parent)):
                 parents[parent] = 0 if parent in routed else parents[parent] + 1
         updated = module_metadata(module.get("bundle") if isinstance(module, dict) else None, parents)
         if updated != module:
@@ -605,20 +641,21 @@ def apply_module_rules(run: "RunSinks", outcomes: Mapping[str, "FrameworkOutcome
             if not _save(hash_manager, name, report):
                 continue
         if gone:
-            logger.info("module_parents_pruned", module=name, pruned=gone)
-            report.parents_pruned[name] = gone
-        output_dir = scan.output_dir if scan is not None else Config.get_framework_output_dir(name)
-        eligible = bool(parents) and all(_ran_clean(outcomes, parent) for parent in parents)
-        state = ModuleState(name, output_dir, path, parent_files, eligible, routed=scan is not None)
+            logger.info("module_parents_pruned", module=display, pruned=gone)
+            report.parents_pruned[display] = gone
+        output_dir = (scan.output_dir if scan is not None
+                      else Config.get_framework_output_dir(name, namespace=namespace))
+        eligible = bool(parents) and all(_ran_clean(outcomes, (site, parent)) for parent in parents)
+        state = ModuleState(name, output_dir, path, parent_files, eligible, routed=scan is not None, display=display)
         if not parents or (eligible and all(runs >= MODULE_UNLINKED_RUNS for runs in parents.values())):
             reason = "module_parentless" if not parents else "module_unlinked"
-            logger.warning("module_removal", module=name, reason=reason, parents=parents)
-            cleanups.append(FrameworkCleanup(name, output_dir, path, remove=True, reason=reason))
+            logger.warning("module_removal", module=display, reason=reason, parents=parents)
+            cleanups.append(FrameworkCleanup(display, output_dir, path, remove=True, reason=reason))
             states.append(state)
             continue
         states.append(state)
         if eligible and scan is not None and scan.orphan_scan is not None:
-            cleanups.append(plan_cleanup(name, scan.orphan_scan))
+            cleanups.append(plan_cleanup(display, scan.orphan_scan))
     return cleanups, states
 
 
@@ -630,14 +667,31 @@ def remove_empty_modules(states: Sequence[ModuleState], report: CleanupReport) -
     file now.
     """
     for state in states:
-        if not state.eligible or state.name in report.removed_modules or not state.hash_file.is_file():
+        if not state.eligible or state.display in report.removed_modules or not state.hash_file.is_file():
             continue
         dirs = [path for path in same_name_any_case(state.output_dir) if path.is_dir()]
         if any(HashManager.framework_files(path) for path in dirs):
             continue
-        logger.warning("module_removal", module=state.name, reason="module_empty")
-        _remove_framework(FrameworkCleanup(state.name, state.output_dir, state.hash_file, remove=True,
+        logger.warning("module_removal", module=state.display, reason="module_empty")
+        _remove_framework(FrameworkCleanup(state.display, state.output_dir, state.hash_file, remove=True,
                                            reason="module_empty"), report)
+
+
+def remove_namespace(removal: "SiteRemoval", report: CleanupReport) -> None:
+    """Rule 7(a) for a DocC site that left the config: its whole namespace goes,
+    docs dir and hash dir (every top-level and module hash file, and _site.json)."""
+    files = len(HashManager.framework_files(removal.output_dir)) if removal.output_dir.is_dir() else 0
+    try:
+        for path in (removal.output_dir, removal.hash_file):
+            if path.is_dir():
+                shutil.rmtree(path)
+    except OSError as e:
+        logger.error("site_removal_failed", site=removal.name, error=str(e))
+        report.failures.append(f"{removal.name}: removal failed: {e}")
+        return
+    logger.warning("site_removed", site=removal.name, reason=NOT_CONFIGURED, files=files,
+                   dirs=[str(removal.output_dir), str(removal.hash_file)])
+    report.unconfigured[removal.name] = files
 
 
 def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bool,
@@ -651,18 +705,20 @@ def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bo
     framework blocked by a failure of ours, or that raised, is never
     cleaned; neither is one whose root returned 404/410 this run, until it
     has on 2 consecutive runs: it is then removed outright (docs dir and
-    hash file), bypassing the zero-touched guard and the valve. With neither
-    left (a still-listed framework after its removal), its root_gone_runs
-    isn't saved (HashManager.save), so it stays at 1 and the summary says
-    there is nothing left to remove.
+    hash file, its own sink's: FrameworkOutcome.paths), bypassing the
+    zero-touched guard and the valve. With neither left (a still-listed
+    framework after its removal), its root_gone_runs isn't saved
+    (HashManager.save), so it stays at 1 and the summary says there is
+    nothing left to remove.
 
     With the run's sinks (run), the D6 rules, in this order: the
-    framework deletions first (root gone ×2), then rule 3's prunes of
-    deleted or gone parents and handoff writers, then rule 2's counters,
+    framework deletions first (rule 7(a): the DocC docs that left the
+    config; root gone ×2, rule 7(b) for a DocC root), then rule 3's prunes
+    of deleted or gone parents and handoff writers, then rule 2's counters,
     rule 1's eligibility, the eligible sinks' orphan pass, and rule 4's
     module removals (apply_module_rules, remove_empty_modules). A top-level
     framework with handoff writers is cleaned only if each of them ran
-    clean too (rule 1).
+    clean too (rule 1). Outcomes are keyed by (site, id).
 
     Args:
         outcomes: The run's framework outcomes
@@ -672,25 +728,42 @@ def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bo
     Returns:
         The report; its failures are errors for the run
     """
-    by_id = {outcome.framework_id.lower(): outcome for outcome in outcomes}
+    by_key: Dict[Key, "FrameworkOutcome"] = {outcome.key: outcome for outcome in outcomes}
     removals: List[FrameworkCleanup] = []
+    removal_keys: Dict[str, Set[Key]] = {}
+    report = CleanupReport()
+    for removal in (run.removals if run is not None else []):
+        if removal.framework_id:
+            removals.append(FrameworkCleanup(removal.name, removal.output_dir, removal.hash_file,
+                                             remove=True, reason=NOT_CONFIGURED))
+            removal_keys.setdefault(removal.name, set()).add((removal.site, removal.framework_id.lower()))
+        else:
+            # A whole site: every top-level id of its namespace is removed with it
+            ids = {path.name[: -len(HASH_FILE_SUFFIX)].lower()
+                   for path in removal.hash_file.glob(f"*{HASH_FILE_SUFFIX}")} if removal.hash_file.is_dir() else set()
+            if interactive and not _approved([FrameworkCleanup(removal.name, removal.output_dir, removal.hash_file,
+                                                               remove=True, reason=NOT_CONFIGURED)]):
+                report.cancelled = True
+                continue
+            remove_namespace(removal, report)
+            if removal.name in report.unconfigured:
+                removal_keys[removal.name] = {(removal.site, framework) for framework in ids}
     for outcome in outcomes:
         if outcome.root_gone_runs >= ROOT_GONE_REMOVAL_RUNS and not outcome.blocked:
-            removals.append(FrameworkCleanup(
-                outcome.framework_id,
-                Config.get_framework_output_dir(outcome.framework_id),
-                Config.get_hash_file(outcome.framework_id),
-                remove=True,
-            ))
-    report = delete_orphans(removals, interactive) if removals else CleanupReport()
-    removed = {framework.lower() for framework in report.removed}
+            output_dir, hash_file = outcome.paths
+            removals.append(FrameworkCleanup(outcome.name, output_dir, hash_file, remove=True))
+            removal_keys.setdefault(outcome.name, set()).add(outcome.key)
+    if removals:
+        report.merge(delete_orphans(removals, interactive))
+    removed = {key for name, keys in removal_keys.items()
+               if name in report.removed or name in report.unconfigured for key in keys}
 
-    pruned_writers: Dict[str, Set[str]] = {}
+    pruned_writers: Dict[Key, Set[str]] = {}
     module_cleanups: List[FrameworkCleanup] = []
     states: List[ModuleState] = []
     if run is not None:
-        pruned_writers = prune_handoff_writers(run, by_id, removed, report)
-        module_cleanups, states = apply_module_rules(run, by_id, removed, report)
+        pruned_writers = prune_handoff_writers(run, by_key, removed, report)
+        module_cleanups, states = apply_module_rules(run, by_key, removed, report)
 
     cleanups: List[FrameworkCleanup] = []
     skipped: List["FrameworkOutcome"] = []
@@ -698,39 +771,39 @@ def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bo
     root_gone: List["FrameworkOutcome"] = []
     waiting: List[Tuple[str, str]] = []
     for outcome in outcomes:
+        if outcome.key in removed:
+            continue
         if outcome.root_gone_runs >= ROOT_GONE_REMOVAL_RUNS and not outcome.blocked:
             continue
         if outcome.root_gone_runs and not outcome.blocked:
-            dirs, hash_files = _framework_on_disk(Config.get_framework_output_dir(outcome.framework_id),
-                                                  Config.get_hash_file(outcome.framework_id))
+            dirs, hash_files = _framework_on_disk(*outcome.paths)
             # While either exists, the framework's save kept the count for the next run
             (root_pending if dirs or hash_files else root_gone).append(outcome)
         elif outcome.skip_cleanup:
             skipped.append(outcome)
         elif outcome.orphan_scan is not None:
-            pruned = pruned_writers.get(outcome.framework_id.lower(), set())
+            pruned = pruned_writers.get(outcome.key, set())
             unclean = [writer for writer in outcome.handoff_writers
-                       if writer not in pruned and not _ran_clean(by_id, writer)]
+                       if writer not in pruned and not _ran_clean(by_key, (outcome.site, writer))]
             if unclean:
-                logger.info("cleanup_waits_for_writers", framework=outcome.framework_id, writers=unclean)
-                waiting.append((outcome.framework_id,
+                logger.info("cleanup_waits_for_writers", framework=outcome.name, writers=unclean)
+                waiting.append((outcome.name,
                                 f"handoff writer {', '.join(unclean)} didn't run, or didn't run clean"))
                 continue
-            cleanups.append(plan_cleanup(outcome.framework_id, outcome.orphan_scan))
+            cleanups.append(plan_cleanup(outcome.name, outcome.orphan_scan))
     report.merge(delete_orphans(cleanups + module_cleanups, interactive))
     removing = {cleanup.framework for cleanup in module_cleanups if cleanup.remove}
     for state in states:
-        if state.routed and not state.eligible and state.name not in removing:
-            waiting.append((state.name, "a parent didn't run, or didn't run clean"))
-    for cleanup in module_cleanups:
-        if cleanup.remove and cleanup.framework in report.removed_modules:
-            parents = next(state.parent_files for state in states if state.name == cleanup.framework)
-            _prune_child_module(cleanup.framework, parents, report)
+        if state.routed and not state.eligible and state.display not in removing:
+            waiting.append((state.display, "a parent didn't run, or didn't run clean"))
+    for state in states:
+        if state.display in removing and state.display in report.removed_modules:
+            _prune_child_module(state.name, state.parent_files, report)
     if run is not None and not report.cancelled:
         removed_before = set(report.removed_modules)
         remove_empty_modules(states, report)
         for state in states:
-            if state.name in report.removed_modules and state.name not in removed_before:
+            if state.display in report.removed_modules and state.display not in removed_before:
                 _prune_child_module(state.name, state.parent_files, report)
     _print_summary(report, skipped, root_pending, root_gone, waiting)
     return report

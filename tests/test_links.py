@@ -124,7 +124,11 @@ class TestConverterLinks:
             "doc://t/documentation/Swift/Comparable/...(_:_:)": (
                 "...(_:_:)", "/documentation/swift/comparable/'...(_:_:)", "../../Swift/comparable/dotdotdot%28_,_%29.md"),
             "doc://t/documentation/TestKit/guide#Setup": ("Setup", "/documentation/testkit/guide#Setup", "../guide.md#Setup"),
-            "doc://t/documentation/OtherKit/Thing": ("Thing", "/documentation/otherkit/thing", f"{DOC}/otherkit/thing"),
+            # Another bundle's page of a dir no hash file has: its URL
+            "doc://o/documentation/OtherKit/Thing": ("Thing", "/documentation/otherkit/thing", f"{DOC}/otherkit/thing"),
+            # A module of the page's bundle (D6): local from its first run, the
+            # dir its identifier cases (_module_link_dirs)
+            "doc://t/documentation/ModKit/Part": ("Part", "/documentation/modkit/part", "../../ModKit/part.md"),
         }
         references = {identifier: {"type": "topic", "kind": "article", "role": "article", "title": title, "url": url}
                       for identifier, (title, url, _) in targets.items()}

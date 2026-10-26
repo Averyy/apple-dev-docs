@@ -33,10 +33,11 @@ from pathlib import Path
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Mapping, Optional, Set, Tuple
 
 from scraper.config import Config
-from scraper.site import DocCSite
+from scraper.site import APPLE, DocCSite
 from scraper.utils.hash_manager import HashManager, read_hash_file
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter
+from scraper.utils.naming import dirmap
 
 if TYPE_CHECKING:
     from scraper.json_scraper import FrameworkOutcome, PageFetchFailure, PageLinks
@@ -101,7 +102,7 @@ class Sink:
             sink was created (a multi-writer sink from the start of the run;
             never a handoff_from a writer adds during the run)
         known_dirs: The docs dirs its pages link to locally, {name.lower(): name}:
-            the run's (SinkRegistry.known_dirs) and its own
+            its site's in the run (SinkRegistry.dirs_of) and its own
         markdown_converter: Renders its pages
         processed_urls: The JSON URLs of its pages this run fetched (or is fetching)
         writer: JSON URL -> the job that processed it, for the pages a job
@@ -150,7 +151,7 @@ class Sink:
             site: The DocC site of its pages
             dir_name: Its docs dir's name, already cased
             framework_name: What its pages' **Framework** line names
-            known_dirs: The run's docs dirs linked locally, {name.lower(): name}
+            known_dirs: The site's docs dirs linked locally in the run, {name.lower(): name}
             render_version: The scraper's RENDER_VERSION (HashManager.stale)
             module: A D6 module's sink
         """
@@ -159,13 +160,13 @@ class Sink:
         self.framework_name = framework_name
         self.module = module
         self.render_version = render_version
-        self.output_dir = Config.get_framework_output_dir(dir_name)
-        self.hash_file = Config.get_hash_file(dir_name)
+        self.output_dir = Config.get_framework_output_dir(dir_name, namespace=site.namespace)
+        self.hash_file = Config.get_hash_file(dir_name, namespace=site.namespace)
         self._hash_manager: Optional[HashManager] = None
         # The touched set of a released manager, carried over when it is loaded again
         self._kept_touched: Set[str] = set()
         self.known_dirs: Dict[str, str] = {**known_dirs, dir_name.lower(): dir_name}
-        self.markdown_converter = AppleDocMarkdownConverter(self.output_dir, self.known_dirs)
+        self.markdown_converter = AppleDocMarkdownConverter(self.output_dir, self.known_dirs, site)
         hash_manager = self.hash_manager
         self.load_error = hash_manager.load_error
         self.handoff_loaded = bool(metadata_ids(hash_manager.get_metadata(HANDOFF_KEY)))
@@ -303,9 +304,12 @@ def apple_top_level(hash_dir: Path, site: DocCSite) -> Set[str]:
 
     A file with a key under the site's JSON prefix and no metadata.module,
     and a file that can't be read (it may be a framework's: it is never
-    taken for a module). The other scrapers' files have no such key.
+    taken for a module). The other scrapers' files have no such key. A
+    namespaced site's are its hash dir's (.hashes/<namespace>/), with its
+    roots and the first segments of its excludes.
     """
-    found: Set[str] = set()
+    found: Set[str] = {root.lower() for root in site.roots}
+    found |= {exclude.split("/", 1)[0].lower() for exclude in site.excludes}
     for path in sorted(hash_dir.glob(f"*{HASH_FILE_SUFFIX}")):
         stem = path.name[: -len(HASH_FILE_SUFFIX)].lower()
         try:
@@ -337,11 +341,11 @@ class SinkRegistry:
         """Start a run's registry, with no sink yet.
 
         Args:
-            known_dirs: The docs dirs whose pages are linked locally,
+            known_dirs: The Apple docs dirs whose pages are linked locally,
                 {name.lower(): name}: the Apple framework dirs with a hash
                 file (naming.dirmap) and the run's frameworks. A sink's own
                 dir is always known; any other framework's pages get their
-                Apple URL
+                Apple URL. Another site's are added with add_site
             top_level: Each site's top-level technologies, {site name: ids}
                 (any casing): a first segment among them is never a module.
                 A site without one gets the technologies its hash files show
@@ -349,19 +353,40 @@ class SinkRegistry:
             titles: The top-level technologies' titles, {id.lower(): title},
                 what a sink created by a handoff names its pages' framework
             reserved: The top-level dirs of the other scrapers (MLX, Swift,
-                HIG), {name.lower(): name}: no Apple sink may have one
-                (namespace_collision)
+                HIG) and the DocC sites' namespaces, {name.lower(): name}: no
+                Apple sink may have one (namespace_collision)
         """
         self.known_dirs: Dict[str, str] = dict(known_dirs or {})
+        self._site_dirs: Dict[str, Dict[str, str]] = {APPLE.name: self.known_dirs}
         self._sinks: Dict[Tuple[str, str], Sink] = {}
         self._top_level: Dict[str, Set[str]] = {
             site: {name.lower() for name in names} for site, names in (top_level or {}).items()
         }
+        self._roots: Dict[str, Set[str]] = {}
         self.titles: Dict[str, str] = {name.lower(): title for name, title in (titles or {}).items()}
         self.reserved: Dict[str, str] = {name.lower(): name for name in (reserved or {}).values()}
-        # The run's jobs' outcomes, by job id: the multi-writer sinks' failure
-        # policy sends each writer's blocks to its own
-        self.outcomes: Dict[str, "FrameworkOutcome"] = {}
+        # The run's jobs' outcomes, by (site name, job id): the multi-writer
+        # sinks' failure policy sends each writer's blocks to its own
+        self.outcomes: Dict[Tuple[str, str], "FrameworkOutcome"] = {}
+
+    def add_site(
+        self, site: DocCSite, known_dirs: Mapping[str, str], top_level: Iterable[str], roots: Iterable[str]
+    ) -> None:
+        """Set a DocC site's share of the run: its docs dirs linked locally, its
+        top-level set and the roots it crawls (every other top-level page of it
+        is never fetched: SinkRegistry.crawls)."""
+        self._site_dirs[site.name] = dict(known_dirs)
+        self._top_level[site.name] = {name.lower() for name in top_level}
+        self._roots[site.name] = {root.lower() for root in roots}
+
+    def dirs_of(self, site: DocCSite) -> Dict[str, str]:
+        """A site's docs dirs linked locally in the run, {name.lower(): name}.
+
+        A site add_site didn't set gets those its hash dir shows (naming.dirmap).
+        """
+        if site.name not in self._site_dirs:
+            self._site_dirs[site.name] = dirmap(Config.get_hash_dir(site.namespace), site.json_prefix)
+        return self._site_dirs[site.name]
 
     @staticmethod
     def _key(site: DocCSite, dir_name: str) -> Tuple[str, str]:
@@ -371,12 +396,24 @@ class SinkRegistry:
     def top_level(self, site: DocCSite) -> Set[str]:
         """The site's top-level technologies, lowercased."""
         if site.name not in self._top_level:
-            self._top_level[site.name] = apple_top_level(Config.CACHE_DIR, site)
+            self._top_level[site.name] = apple_top_level(Config.get_hash_dir(site.namespace), site)
         return self._top_level[site.name]
 
-    def refuses(self, dir_name: str) -> bool:
-        """A dir no Apple sink may have: another scraper's top-level dir (namespace_collision)."""
-        return dir_name.lower() in self.reserved
+    def crawls(self, site: DocCSite, segment: str) -> bool:
+        """Whether a top-level segment of the site may be crawled: one of the
+        roots it crawls (add_site, else its config's), or any for a site
+        with neither (Apple's: every technology may be)."""
+        roots = self._roots.get(site.name)
+        if roots is None and site.roots:
+            roots = self._roots[site.name] = {root.lower() for root in site.roots}
+        return roots is None or segment.lower() in roots
+
+    def refuses(self, dir_name: str, site: DocCSite = APPLE) -> bool:
+        """A dir no sink of a top-level site (Apple's) may have: another
+        scraper's top-level dir, or a DocC site's namespace
+        (namespace_collision). A namespaced site's dirs are under its
+        namespace, so it refuses none."""
+        return not site.namespace and dir_name.lower() in self.reserved
 
     def find(self, site: DocCSite, dir_name: str) -> Optional[Sink]:
         """The run's sink of a site's dir, if it has one."""
@@ -402,7 +439,7 @@ class SinkRegistry:
         key = self._key(site, dir_name)
         sink = self._sinks.get(key)
         if sink is None:
-            sink = self._sinks[key] = Sink(site, dir_name, framework_name, self.known_dirs, render_version, module)
+            sink = self._sinks[key] = Sink(site, dir_name, framework_name, self.dirs_of(site), render_version, module)
         return sink
 
     def title(self, dir_name: str) -> str:
@@ -442,7 +479,7 @@ class SinkRegistry:
         if sink.primary_ran and sink.primary_id:
             jobs.add(sink.primary_id)
         for job in jobs:
-            outcome = self.outcomes.get(job)
+            outcome = self.outcomes.get((sink.site.name, job))
             if outcome is not None and outcome.raised is None:
                 outcome.raised = error
 

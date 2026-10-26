@@ -54,26 +54,41 @@ class Config:
             directory.mkdir(parents=True, exist_ok=True)
     
     @classmethod
-    def get_framework_output_dir(cls, framework_id: str, framework_name: Optional[str] = None) -> Path:
+    def get_framework_output_dir(
+        cls, framework_id: str, framework_name: Optional[str] = None, namespace: str = ""
+    ) -> Path:
         """Get the output directory for a specific framework.
         
         Args:
             framework_id: Framework ID (usually lowercase)
             framework_name: Framework display name (not used for directory)
+            namespace: Its DocC site's namespace (site.DocCSite.namespace):
+                documentation/<namespace>/<id>; "" for Apple's
         """
         # Always use framework_id for directory to match Apple's URL structure
-        return cls.OUTPUT_DIR / framework_id
+        return cls.get_docs_dir(namespace) / framework_id
     
     @classmethod
-    def get_hash_file(cls, framework_id: str, framework_name: Optional[str] = None) -> Path:
+    def get_hash_file(cls, framework_id: str, framework_name: Optional[str] = None, namespace: str = "") -> Path:
         """Get the hash file path for a specific framework.
         
         Args:
             framework_id: Framework ID (usually lowercase)
             framework_name: Framework display name (not used for filename)
+            namespace: Its DocC site's namespace: .hashes/<namespace>/<id>_hashes.json
         """
         # Always use framework_id for hash file to match directory structure
-        return cls.CACHE_DIR / f"{framework_id}_hashes.json"
+        return cls.get_hash_dir(namespace) / f"{framework_id}_hashes.json"
+
+    @classmethod
+    def get_docs_dir(cls, namespace: str = "") -> Path:
+        """A DocC site's docs root: documentation/<namespace> (the docs root itself for Apple's)."""
+        return cls.OUTPUT_DIR / namespace if namespace else cls.OUTPUT_DIR
+
+    @classmethod
+    def get_hash_dir(cls, namespace: str = "") -> Path:
+        """A DocC site's hash dir: .hashes/<namespace> (.hashes itself for Apple's)."""
+        return cls.CACHE_DIR / namespace if namespace else cls.CACHE_DIR
     
     @classmethod
     def get_metadata_file(cls, filename: str) -> Path:

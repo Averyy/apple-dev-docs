@@ -21,6 +21,7 @@ from scraper.utils.links import doc_link, link_base
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter, join_blocks, labeled, quote_blocks
 from scraper.utils.naming import clash_suffix, page_path, seg_name
+from scraper.utils.rate_limiter import AdaptiveRateLimiter
 
 logger = get_logger(__name__)
 
@@ -290,6 +291,11 @@ class FrameworkOutcome:
         handoff_writers: The other jobs its hash file records as writers
             (metadata.handoff_from, D6): its cleanup also needs each of them
             to have run clean this run (rule 1)
+        site: Its DocC site's name: an outcome is keyed by (site, id)
+        namespace: Its site's namespace ("" for Apple's)
+        output_dir: Its primary sink's docs dir (None: Config's for the id
+            and namespace), what a root-gone removal deletes
+        hash_file: Its primary sink's hash file (None: Config's)
     """
 
     framework_id: str
@@ -304,6 +310,29 @@ class FrameworkOutcome:
     stats: Dict[str, Any] = field(default_factory=dict)
     orphan_scan: Optional[OrphanScan] = None
     handoff_writers: List[str] = field(default_factory=list)
+    site: str = APPLE.name
+    namespace: str = ""
+    # Its own sink's paths, which its id and namespace give (so never compared)
+    output_dir: Optional[Path] = field(default=None, compare=False)
+    hash_file: Optional[Path] = field(default=None, compare=False)
+
+    @property
+    def key(self) -> Tuple[str, str]:
+        """Its key among the run's outcomes: (its site's name, its id lowercased)."""
+        return self.site, self.framework_id.lower()
+
+    @property
+    def name(self) -> str:
+        """Its name for the console and the logs: its id, under its site's namespace."""
+        return f"{self.namespace}/{self.framework_id}" if self.namespace else self.framework_id
+
+    @property
+    def paths(self) -> Tuple[Path, Path]:
+        """Its docs dir and hash file."""
+        return (
+            self.output_dir or Config.get_framework_output_dir(self.framework_id, namespace=self.namespace),
+            self.hash_file or Config.get_hash_file(self.framework_id, namespace=self.namespace),
+        )
 
     def block(self, reason: str, detail: str) -> None:
         """Block this framework's orphan cleanup for this run."""
@@ -334,6 +363,7 @@ class ModuleScan:
             counters reset)
         orphan_scan: Its orphan candidates from every writer's touched set
             (finish_run), with --cleanup-orphans
+        site: Its DocC site's name (its parents are jobs of that site)
     """
 
     dir_name: str
@@ -341,28 +371,68 @@ class ModuleScan:
     hash_file: Path
     routed_by: Set[str]
     orphan_scan: Optional[OrphanScan] = None
+    site: str = APPLE.name
+
+
+@dataclass
+class SiteRemoval:
+    """A DocC site's docs that the end-of-run cleanup removes before anything else (rule 7(a)).
+
+    Attributes:
+        site: The site's name
+        namespace: The site's namespace
+        framework_id: A top-level hash file's id (its root left the config);
+            "" for the whole namespace (the site left the config)
+        output_dir: The docs dir to delete (the namespace's docs dir for a
+            whole site)
+        hash_file: The hash file to delete (the namespace's hash dir for a
+            whole site)
+    """
+
+    site: str
+    namespace: str
+    framework_id: str
+    output_dir: Path
+    hash_file: Path
+
+    @property
+    def name(self) -> str:
+        """Its name for the console and the logs."""
+        return f"{self.namespace}/{self.framework_id}" if self.framework_id else self.namespace
 
 
 @dataclass
 class RunSinks:
-    """What the end-of-run cleanup needs of the run's sinks (D6 rules 1–4).
+    """What the end-of-run cleanup needs of the run's sinks (D6 rules 1–4, 7(a)).
 
     Attributes:
-        listed: The ids this run's technologies.json lists (its full list,
-            lowercased): a module whose id it lists is promoted
+        listed: The (site, id) of each root this run's lists list: Apple's
+            technologies.json (its full list, lowercased) and each DocC
+            site's allow-list. A module whose id is listed is promoted
         modules: The run's module sinks
-        module_files: The module hash files on disk at run start
+        module_files: The module hash files on disk at run start (Apple's,
+            and those under each DocC site's namespace)
         handoff_files: The top-level hash files that carried handoff_from
             at run start, or got it this run
-        child_modules: Module id (lowercased) -> the hash files of the
+        child_modules: (site, module id lowercased) -> the hash files of the
             parents whose child_modules listed it at run start
+        hash_dirs: A namespaced hash dir (its path, lowercased) -> (its
+            site's name, the namespace): whose a hash file there is (any
+            other is Apple's)
+        removals: The DocC docs that left the config (rule 7(a)), removed first
     """
 
-    listed: Set[str] = field(default_factory=set)
+    listed: Set[Tuple[str, str]] = field(default_factory=set)
     modules: List[ModuleScan] = field(default_factory=list)
     module_files: List[Path] = field(default_factory=list)
     handoff_files: List[Path] = field(default_factory=list)
-    child_modules: Dict[str, List[Path]] = field(default_factory=dict)
+    child_modules: Dict[Tuple[str, str], List[Path]] = field(default_factory=dict)
+    hash_dirs: Dict[str, Tuple[str, str]] = field(default_factory=dict)
+    removals: List[SiteRemoval] = field(default_factory=list)
+
+    def site_of(self, hash_file: Path) -> Tuple[str, str]:
+        """The (site name, namespace) of a hash file, by its dir (Apple's if no DocC site's)."""
+        return self.hash_dirs.get(str(hash_file.parent).lower(), (APPLE.name, ""))
 
 
 def doc_url_of(site: DocCSite, json_url: str) -> str:
@@ -380,6 +450,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     # Apple hash files use it
     JSON_BASE_URL = APPLE.json_base
     # Root-relative image and video URLs ("/images/…") are served under it
+    # (Apple's; a scraper's own is its site's, asset_root)
     ASSET_ROOT = hosting_root(JSON_BASE_URL)
     # The converter's output version (BaseAppleScraper.RENDER_VERSION): bump
     # it when a change to the conversion, the file names or the links changes
@@ -389,23 +460,37 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     RENDER_VERSION = 2
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
-                 include_cross_refs: bool = False, sinks: Optional[SinkRegistry] = None) -> None:
+                 include_cross_refs: bool = False, sinks: Optional[SinkRegistry] = None,
+                 site: DocCSite = APPLE, root_id: Optional[str] = None,
+                 rate_limiter: Optional[AdaptiveRateLimiter] = None) -> None:
         """Initialize JSON-based scraper.
         
         Args:
-            framework_id: Framework identifier (e.g., 'swiftui', 'uikit')
+            framework_id: Framework identifier (e.g., 'swiftui', 'uikit'):
+                its docs dir, cased as an existing hash file of its site cases it
             framework_name: Human-readable name (defaults to framework_id)
             include_cross_refs: Whether to include cross-framework references
             sinks: The run's sinks, shared by its framework jobs; they
-                hold the docs dirs linked locally (SinkRegistry.known_dirs).
+                hold the docs dirs linked locally (SinkRegistry.dirs_of).
                 A scraper on its own has its own, which knows no other dir
+            site: Its DocC site (Apple's by default)
+            root_id: Its root's id in its URL (a DocC site's lowercase root
+                id, e.g. migrationguide for the dir MigrationGuide); the
+                framework id by default (an Apple technology's casing)
+            rate_limiter: A limiter its site's jobs share (its own by default)
         """
         super().__init__(
             framework_id=framework_id,
-            framework_name=framework_name or framework_id.replace('-', ' ').title()
+            framework_name=framework_name or framework_id.replace('-', ' ').title(),
+            base_url=site.doc_url(root_id) if root_id else None,
+            hash_dir=Config.get_hash_dir(site.namespace),
+            rate_limiter=rate_limiter,
         )
         # The framework's DocC site: every URL the scraper builds comes from it
-        self.site = APPLE
+        self.site = site
+        # Its root-relative image and video URLs are under its hosting root
+        self.asset_root = hosting_root(site.json_base)
+        self.root_id = root_id or self.framework_id
         self.sinks = sinks if sinks is not None else SinkRegistry()
         # The job's id: its framework's, lowercased (a module's parent, a handoff writer)
         self.job_id = self.framework_id.lower()
@@ -424,6 +509,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # links are relative to its file
         self._current_scraping_url = ''
         self._current_sink = self.sink
+        self._current_link_dirs: Dict[str, str] = dict(self.sink.known_dirs)
         self.include_cross_refs = include_cross_refs
         self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
         # JSON the converter doesn't know, (what, name) -> count, logged at the end
@@ -432,9 +518,15 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
         # Failure policy state for this run, applied once by scrape_framework
         # (the pages' own state is their sink's)
-        self.root_json_url = f"{self.site.json_prefix}{self.framework_id}.json"
-        self.outcome = FrameworkOutcome(framework_id=self.framework_id)
-        self.sinks.outcomes[self.job_id] = self.outcome
+        self.root_json_url = f"{self.site.json_prefix}{self.root_id}.json"
+        self.outcome = FrameworkOutcome(
+            framework_id=self.framework_id,
+            site=self.site.name,
+            namespace=self.site.namespace,
+            output_dir=self.sink.output_dir,
+            hash_file=self.sink.hash_file,
+        )
+        self.sinks.outcomes[self.outcome.key] = self.outcome
         self._root_ok = False  # the root answered 200 or 304
         self._root_gone = False  # the root answered 404/410
         if self.sink.load_error is not None:
@@ -467,12 +559,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Returns:
             JSON URL like https://developer.apple.com/tutorials/data/documentation/swiftui/text.json
         """
-        parsed = urlparse(doc_url)
-        path = parsed.path
-        
-        # Remove /documentation/ prefix
-        if path.startswith('/documentation/'):
-            path = path[len('/documentation/'):]
+        if doc_url.startswith(self.site.doc_prefix):
+            # The path after the site's doc prefix
+            path = urlparse(doc_url[len(self.site.doc_prefix):]).path
+        else:
+            path = urlparse(doc_url).path
+            # Remove /documentation/ prefix
+            if path.startswith('/documentation/'):
+                path = path[len('/documentation/'):]
         
         # Add .json extension if not present
         if not path.endswith('.json'):
@@ -543,7 +637,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         framework_json_url = self.root_json_url
         
         # Scrape the main framework page first
-        main_doc_url = self.site.doc_url(self.framework_id)
+        main_doc_url = self.site.doc_url(self.root_id)
         await self._scrape_and_save_url(self.sink, main_doc_url)
         
         # Use iterative approach instead of recursion to avoid stack overflow
@@ -701,10 +795,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         (_canonical_framework_id), never from metadata.modules. The
         routing is recorded before the per-sink dedup (_note_route).
 
+        A namespaced site's new sink names its pages' framework by its label
+        (DocCSite.framework_label).
+
         Returns:
             The page's sink, or None when the Apple sinks may not have its
-            dir: another scraper's top-level dir (namespace_collision, which
-            blocks this job's cleanup); the page isn't fetched
+            dir: another scraper's top-level dir or a DocC site's namespace
+            (namespace_collision, which blocks this job's cleanup); the page
+            isn't fetched
         """
         segment = self._segment(json_url)
         if segment is None or segment == self.job_id:
@@ -712,17 +810,20 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         sink = self.sinks.find(self.site, segment)
         if sink is None:
             dir_name, _ = self._routes.get(segment, (segment, ''))
-            if self.sinks.refuses(dir_name):
+            if self.sinks.refuses(dir_name, self.site):
                 if segment not in self._collisions:
                     self._collisions.add(segment)
                     logger.error("namespace_collision", framework=self.framework_name, dir=dir_name, url=json_url)
                 self.outcome.block("namespace_collision", dir_name)
                 return None
-            dir_name = self._canonical_framework_id(dir_name)
+            dir_name = self._canonical_framework_id(dir_name, Config.get_hash_dir(self.site.namespace))
             if segment in self.sinks.top_level(self.site):
-                sink = self.sinks.get(self.site, dir_name, self.sinks.title(dir_name), self.RENDER_VERSION)
+                name = self.site.framework_label(dir_name) if self.site.namespace else self.sinks.title(dir_name)
+                sink = self.sinks.get(self.site, dir_name, name, self.RENDER_VERSION)
             else:
-                sink = self.sinks.get(self.site, dir_name, dir_name, self.RENDER_VERSION, module=True)
+                sink = self.sinks.get(
+                    self.site, dir_name, self.site.framework_label(dir_name), self.RENDER_VERSION, module=True
+                )
                 logger.info("module_sink", module=sink.dir_name, parent=self.framework_name)
         self._note_route(sink, segment)
         return sink
@@ -1307,7 +1408,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
         if not sink.deferred:
             apply_sink_failure_policy(
-                sink, lambda job: outcome if job == self.job_id else self.sinks.outcomes.get(job),
+                sink, lambda job: outcome if job == self.job_id else self.sinks.outcomes.get((self.site.name, job)),
                 self.framework_name, writers={self.job_id},
             )
 
@@ -1387,24 +1488,29 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             return ''
         return identifier[len('doc://'):].split('/', 1)[0].lower()
 
-    def _page_links(self, data: Dict[str, Any], occ_view: Optional[Dict[str, Any]] = None) -> PageLinks:
+    def _page_links(
+        self, data: Dict[str, Any], occ_view: Optional[Dict[str, Any]] = None, record: bool = True
+    ) -> PageLinks:
         """A page's links to documentation pages, resolved (_resolve), and its own bundle.
 
         The union of its Swift curation's links and its occ view's (1.5):
         the links only the occ variant lists come after the page's own, each
-        resolved through the occ view's (patched) references.
+        resolved through the occ view's (patched) references. Without
+        record, nothing is logged or counted (a second read of the page's links).
         """
         identifier = data.get('identifier')
         page_identifier = identifier.get('url', '') if isinstance(identifier, dict) else ''
         links: List[PageLink] = []
         seen: Set[str] = set()
-        self._section_links(data, links, seen)
+        self._section_links(data, links, seen, record)
         if occ_view is not None:
-            self._section_links(occ_view, links, seen)
+            self._section_links(occ_view, links, seen, record)
         return PageLinks(bundle=self._bundle_of(page_identifier if isinstance(page_identifier, str) else ''),
                          links=tuple(links))
 
-    def _section_links(self, document: Dict[str, Any], links: List[PageLink], seen: Set[str]) -> None:
+    def _section_links(
+        self, document: Dict[str, Any], links: List[PageLink], seen: Set[str], record: bool = True
+    ) -> None:
         """Add a page view's links (its LINK_SECTIONS' identifiers, resolved through
         its references) that the identifiers in seen and the links already found don't give."""
         references = document.get('references')
@@ -1421,7 +1527,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     if isinstance(section, dict) and 'identifiers' in section:
                         identifiers = section.get('identifiers') or []
                         section_title = section.get('title', 'Unknown')
-                        logger.info(f"Found section '{section_title}' with {len(identifiers)} identifiers")
+                        if record:
+                            logger.info(f"Found section '{section_title}' with {len(identifiers)} identifiers")
 
                         for link_identifier in identifiers:
                             if not (isinstance(link_identifier, str) and link_identifier.startswith('doc://')):
@@ -1429,12 +1536,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             if link_identifier in seen:
                                 continue
                             seen.add(link_identifier)
-                            link = self._resolve(link_identifier, references)
+                            link = self._resolve(link_identifier, references, record)
                             if link is not None and link.json_url not in found:
                                 found.add(link.json_url)
                                 links.append(link)
 
-    def _resolve(self, identifier: str, references: Dict[str, Any]) -> Optional[PageLink]:
+    def _resolve(self, identifier: str, references: Dict[str, Any], record: bool = True) -> Optional[PageLink]:
         """The page a doc:// identifier links to, through its reference (1.1).
 
         A reference of type topic whose url is a documentation page's
@@ -1445,12 +1552,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         lowercased and its dot segments escaped (_escape_dot_path_segments).
         Any other reference links no documentation page. Only an identifier
         with no reference falls back to its own path, as it is (never the
-        framework's id prepended): counted and logged.
+        framework's id prepended): counted and logged (with record).
 
         Returns:
             The link, or None if it isn't to a documentation page
         """
-        doc_path = urlparse(self.site.doc_prefix).path
+        doc_path = self.site.doc_path
         reference = references.get(identifier)
         if reference is not None:
             url = reference.get('url') if isinstance(reference, dict) else None
@@ -1460,7 +1567,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             json_url = self._page_json_url(url[len(doc_path):])
         else:
             json_url = self._convert_identifier_to_json_url(identifier)
-            if json_url is not None:
+            if json_url is not None and record:
                 self.reference_fallbacks += 1
                 logger.info("reference_missing", identifier=identifier)
         segment = self._segment(json_url) if json_url is not None else None
@@ -1495,20 +1602,33 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         module's; one that is another top-level technology goes to that
         technology's own sink (a handoff, _route). The top-level set is the
         full technologies.json (also under --frameworks) and our Apple hash
-        files that aren't modules' (SinkRegistry.top_level). Scope is never
-        decided by substring. Another top-level technology's root is never
-        followed: its own job always fetches it (a handoff is for the pages
-        it doesn't reach). Each followed link's dir casing and bundle are
-        kept for its sink (_route).
+        files that aren't modules' (SinkRegistry.top_level); a DocC site's is
+        its allow-list, its excludes and its index root's first segments.
+        Scope is never decided by substring. Another top-level technology's
+        root is never followed: its own job always fetches it (a handoff is
+        for the pages it doesn't reach). Each followed link's dir casing and
+        bundle are kept for its sink (_route).
+
+        A DocC site never fetches an excluded path (DocCSite.excluded) nor a
+        page of a top-level segment it doesn't crawl (SinkRegistry.crawls:
+        not in its allow-list, e.g. docs.swift.org's private stdlib modules).
         """
         urls: List[str] = []
         top_level: Optional[Set[str]] = None
         for link in page_links.links:
+            if self.site.excludes and self.site.excluded(link.json_url[len(self.site.json_prefix):-len('.json')]):
+                continue
             if link.segment != self.job_id:
                 if not link.bundle or link.bundle != page_links.bundle:
                     if self.include_cross_refs:
                         self._track_cross_framework_ref(link.identifier)
                     continue
+                if not self.sinks.crawls(self.site, link.segment):
+                    if top_level is None:
+                        top_level = self.sinks.top_level(self.site)
+                    if link.segment in top_level:
+                        # A top-level page the site never crawls
+                        continue
                 if link.json_url == f"{self.site.json_prefix}{link.segment}.json":
                     if top_level is None:
                         top_level = self.sinks.top_level(self.site)
@@ -1520,6 +1640,37 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self._check_resolution(link)
             urls.append(link.json_url)
         return urls
+
+    def _module_link_dirs(self, sink: Sink, page_links: PageLinks) -> Dict[str, str]:
+        """The D6 module dirs a page's links route to that its sink's known dirs lack, {segment: dir}.
+
+        A module's dir is known only once its hash file exists (the run's
+        known dirs are computed at its start), so without these a page
+        linking a module first reached this run (docs.swift.org's migration
+        guide, a new Apple module) would link it by URL, and keep doing so
+        while it answers 304. A link of the page's bundle to a segment that
+        is no top-level page (and isn't excluded or refused) routes to that
+        module's sink, whose dir its identifier cases (_route): a function
+        of the page alone, so its rendering doesn't depend on the run's order.
+        """
+        site = sink.site
+        dirs: Dict[str, str] = {}
+        top_level: Optional[Set[str]] = None
+        for link in page_links.links:
+            if link.segment in sink.known_dirs or link.segment in dirs:
+                continue
+            if not link.bundle or link.bundle != page_links.bundle:
+                continue
+            if site.excludes and site.excluded(link.json_url[len(site.json_prefix):-len('.json')]):
+                continue
+            if top_level is None:
+                top_level = self.sinks.top_level(site)
+            if link.segment in top_level or self.sinks.refuses(link.dir_name, site):
+                continue
+            existing = self.sinks.find(site, link.segment)
+            dirs[link.segment] = (existing.dir_name if existing is not None
+                                  else self._canonical_framework_id(link.dir_name, Config.get_hash_dir(site.namespace)))
+        return dirs
 
     def _check_resolution(self, link: PageLink) -> None:
         """Transition check (log only, temporary): url_resolution_changed when the
@@ -1700,14 +1851,19 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Returns:
             Extracted data in our format
         """
-        # Store current URL and sink for relative path calculation
+        # Store current URL and sink for relative path calculation, and the
+        # dirs its links reach locally: its sink's, and the module dirs its
+        # own links route to (_module_link_dirs)
         self._current_scraping_url = doc_url
         self._current_sink = sink
+        link_dirs = self._module_link_dirs(sink, self._page_links(json_data, occ_view, record=False))
+        self._current_link_dirs = {**sink.known_dirs, **link_dirs}
         
         data: Dict[str, Any] = {
             'source_url': doc_url,
             'framework': sink.framework_name,
-            'framework_id': sink.dir_name
+            'framework_id': sink.dir_name,
+            'link_dirs': link_dirs,
         }
         
         for key in json_data:
@@ -2370,7 +2526,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         Returns:
             The file's path, documentation/<dir_name>/….md by default
         """
-        relative = page_path(sink.dir_name, url)
+        relative = page_path(sink.dir_name, url, sink.site)
         if relative is None:
             # Not a page of this framework (never crawled): a file named
             # after the whole URL in the sink's dir
@@ -2384,13 +2540,15 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
         links.doc_link: the referenced page's file relative to this page's
         file in its sink's dir (self._current_sink), when its framework is a
-        known dir (the sink's known_dirs); else its URL as it is.
+        known dir (the sink's known_dirs, or a module dir the page's links
+        route to: _module_link_dirs); else its URL as it is.
 
         Args:
             apple_url: The referenced page's URL (_reference_url)
         """
-        base = link_base(self._current_sink.dir_name, self._current_scraping_url)
-        return doc_link(apple_url, base, self._current_sink.known_dirs)
+        sink = self._current_sink
+        base = link_base(sink.dir_name, self._current_scraping_url, sink.site)
+        return doc_link(apple_url, base, self._current_link_dirs, sink.site)
     
     def _format_declaration_from_tokens(self, tokens: List[Dict[str, Any]]) -> str:
         """Format declaration tokens with proper Swift formatting.
@@ -3074,7 +3232,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 alt_text = ref_data.get('alt') or ''
 
                 # The preferred variant (2x light), under the hosting root
-                image_url = variant_url(ref_data, self.ASSET_ROOT)
+                image_url = variant_url(ref_data, self.asset_root)
                 if image_url:
                     return f"![{alt_text}]({image_url})"
                 
@@ -3094,7 +3252,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 alt_text = ref_data.get('alt') or ''
 
             # The preferred variant (2x light), under the hosting root
-            image_url = variant_url(ref_data, self.ASSET_ROOT)
+            image_url = variant_url(ref_data, self.asset_root)
             if image_url:
                 return f"![{alt_text}]({image_url})"
         
@@ -3116,7 +3274,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         the hosting root), named by its alt text; "" when it has no URL."""
         identifier = video_item.get('identifier', '')
         ref_data = references.get(identifier) or {}
-        video_url = variant_url(ref_data, self.ASSET_ROOT)
+        video_url = variant_url(ref_data, self.asset_root)
         if not video_url:
             return ""
         name = video_item.get('alt') or ref_data.get('alt') or identifier
@@ -3404,21 +3562,28 @@ def finish_run(
     Returns:
         The run's module sinks, for the end-of-run cleanup
     """
-    by_job: Dict[str, FrameworkOutcome] = dict(sinks.outcomes)
+    by_job: Dict[Tuple[str, str], FrameworkOutcome] = dict(sinks.outcomes)
     for outcome in outcomes:
-        by_job.setdefault(outcome.framework_id.lower(), outcome)
+        by_job.setdefault(outcome.key, outcome)
     multi = [sink for sink in sinks.all() if sink.deferred or sink.writer]
+
+    def outcome_of(sink: Sink) -> Callable[[str], Optional[FrameworkOutcome]]:
+        """A job's outcome by its id: a sink's writers are jobs of its site."""
+        return lambda job: by_job.get((sink.site.name, job))
 
     for sink in multi:
         if sink.deferred:
-            apply_sink_failure_policy(sink, by_job.get, sink.dir_name)
+            apply_sink_failure_policy(sink, outcome_of(sink), sink.dir_name)
         else:
-            apply_sink_failure_policy(sink, by_job.get, sink.dir_name, writers=sink.other_writers(), storm=False)
+            apply_sink_failure_policy(
+                sink, outcome_of(sink), sink.dir_name, writers=sink.other_writers(), storm=False
+            )
         sinks.release_if_idle(sink)
 
     modules: List[ModuleScan] = []
     for sink in multi:
-        if not sink.render_stored and not sink.persistent_local_errors and sink_runs_clean(sink, by_job.get):
+        if (not sink.render_stored and not sink.persistent_local_errors
+                and sink_runs_clean(sink, outcome_of(sink))):
             store_render_version(sink, sink.dir_name)
         if sink.module:
             modules.append(ModuleScan(
@@ -3427,9 +3592,10 @@ def finish_run(
                 hash_file=sink.hash_file,
                 routed_by=set(sink.parents_this_run),
                 orphan_scan=orphan_scan_of(sink) if cleanup_orphans else None,
+                site=sink.site.name,
             ))
         elif sink.primary_ran and sink.primary_id is not None:
-            primary = by_job.get(sink.primary_id)
+            primary = by_job.get((sink.site.name, sink.primary_id))
             if primary is not None:
                 primary.handoff_writers = sorted(metadata_ids(sink.hash_manager.get_metadata(HANDOFF_KEY)))
                 if cleanup_orphans:

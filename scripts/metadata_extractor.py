@@ -167,9 +167,10 @@ class MetadataExtractor:
         self._qualified_name_pattern = re.compile(r'[^\W\d]\w*(?:(?:\.|::)[^\W\d]\w*)+')
         self._qualifier_split_pattern = re.compile(r'\.|::')
 
-        # The footer every Apple page ends with (markdown_converter.py): the URL it was
-        # scraped from, verbatim
-        self._footer_pattern = re.compile(r'^\*\[View on Apple Developer\]\((https?://\S+)\)\*$')
+        # The footer every DocC page ends with (markdown_converter.py): the URL it was
+        # scraped from, verbatim; Apple's says "View on Apple Developer", another DocC
+        # site's its own name (e.g. "View on docs.swift.org")
+        self._footer_pattern = re.compile(r'^\*\[View on [^\]\n]+\]\((https?://\S+)\)\*$')
 
         # Platform extraction patterns
         # Apple's **Availability** list, one platform per item:
@@ -659,8 +660,8 @@ class MetadataExtractor:
     
     def extract_source_url(self, content: str) -> Optional[str]:
         """
-        The URL in the footer every Apple page ends with
-        (*[View on Apple Developer](<url>)*): the page's own URL, as it was scraped.
+        The URL in the footer every DocC page ends with (*[View on Apple Developer](<url>)*,
+        or the name of the page's own DocC site): the page's own URL, as it was scraped.
         None for a page without one.
         """
         last_line = content[-4096:].rstrip().rsplit('\n', 1)[-1].strip()

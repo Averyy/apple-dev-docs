@@ -23,6 +23,7 @@ from structlog.testing import capture_logs
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+from scraper import site as site_config
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
 from scraper.utils import naming
@@ -32,6 +33,8 @@ from scraper.utils.naming import (
 )
 
 REPO = Path(__file__).resolve().parent.parent
+# The configured DocC sites, as imported (tests run with none: conftest)
+CONFIGURED_SITES = site_config.DOCC_SITES
 ALPHABET = re.compile(r'[a-z0-9._(),-]+')
 
 
@@ -195,7 +198,9 @@ def test_page_path_is_injective() -> None:
     A page's identity is its lowercased JSON URL with dot segments '-escaped
     as the crawler does (_escape_dot_path_segments: an old error entry's
     unescaped URL is the same page); its JSON-URL and doc-URL keys must give
-    the same path. Every name is within the cap and the alphabet.
+    the same path. Every name is within the cap and the alphabet. The
+    configured DocC sites' hash files (.hashes/<namespace>/) are read too:
+    their pages are under their namespace, which no Apple dir may be.
     """
     escape = AppleJSONDocumentationScraper._escape_dot_path_segments
     hash_dir = Path(os.environ.get("NAMING_HASH_DIR", REPO / ".hashes"))
@@ -224,6 +229,29 @@ def test_page_path_is_injective() -> None:
                 continue
             by_path[path.lower()].add(identity)
             paths_of[identity].add(path)
+    # The DocC sites' pages: <namespace>/<Dir>/…
+    site_dirs: Dict[str, str] = {}
+    for docc_site in CONFIGURED_SITES:
+        site_hash_dir = hash_dir / docc_site.namespace
+        found = dirmap(site_hash_dir, docc_site.json_prefix) if site_hash_dir.is_dir() else {}
+        assert docc_site.namespace_top.lower() not in dirs, docc_site.namespace
+        for name in sorted(found.values()):
+            site_dirs[f"{docc_site.namespace}/{name}"] = name
+            hashes, _ = read_hash_file(site_hash_dir / f"{name}{naming.HASH_FILE_SUFFIX}")
+            for key in hashes:
+                if key.startswith(docc_site.json_prefix) and key.endswith(".json"):
+                    rest = key[len(docc_site.json_prefix):-len(".json")]
+                elif key.startswith(docc_site.doc_prefix):
+                    rest = key[len(docc_site.doc_prefix):]
+                else:
+                    continue
+                identity = f"{docc_site.json_prefix}{escape(rest.lower())}.json"
+                path = page_path(name, docc_site.doc_prefix + rest, docc_site)
+                if path is None:
+                    foreign.append(key)
+                    continue
+                by_path[path.lower()].add(identity)
+                paths_of[identity].add(path)
     keys = len(paths_of)
 
     fixture = os.environ.get("NAVIGATOR_FIXTURE")
@@ -245,11 +273,18 @@ def test_page_path_is_injective() -> None:
     split = {identity: sorted(paths) for identity, paths in paths_of.items() if len(paths) > 1}
     # Every name seg_name gave (a root page, <Dir>/<Dir>.md, is named by its dir)
     roots = {f"{dir_name}/{dir_name}.md" for dir_name in dirs.values()}
-    names = {
-        part for paths in paths_of.values() for path in paths if path not in roots
-        for part in path.split("/")[1:]
-    }
-    print(f"\n{len(dirs)} dirs, {keys:,} pages from hash keys, {len(paths_of) - keys:,} more from "
+    roots |= {f"{base}/{dir_name}.md" for base, dir_name in site_dirs.items()}
+
+    def page_names(path: str) -> List[str]:
+        """The names after a page's dir (a DocC site's dir is <namespace>/<Dir>)."""
+        for base in site_dirs:
+            if path.startswith(f"{base}/"):
+                return path[len(base) + 1:].split("/")
+        return path.split("/")[1:]
+
+    names = {part for paths in paths_of.values() for path in paths if path not in roots for part in page_names(path)}
+    print(f"\n{len(dirs)} dirs + {len(site_dirs)} DocC site dirs, {keys:,} pages from hash keys, "
+          f"{len(paths_of) - keys:,} more from "
           f"the navigator fixture ({unknown:,} paths of unknown dirs), {len(by_path):,} paths")
     assert foreign == []
     assert collisions == {}, list(collisions.items())[:10]

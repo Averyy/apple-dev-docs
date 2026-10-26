@@ -798,12 +798,13 @@ class TestDefaultImplementations:
         assert await d6.scrape(REQUIREMENT, ["Umbrella"], implementations=IMPLEMENTATIONS) == 0
         assert docs() == {doc_file(path) for path in REQUIREMENT}
         assert "**Framework**: ModKit" in doc_file("ModKit/Thing/run()-3ngto").read_text()
-        # The requirement's own file keeps its name, and its link reaches its own default
-        # implementation; ModKit's dir is new this run, so its page is linked by URL (known
-        # dirs are taken at run start: local after the next RENDER_VERSION bump, todo-3:199)
+        # The requirement's own file keeps its name, and its links reach its default
+        # implementations; ModKit's dir is new this run, yet its page is linked locally (the
+        # module dirs a page's own links route to, _module_link_dirs, item 4)
         assert doc_file("Umbrella/Proto/run()") == Path("documentation/Umbrella/proto/run().md")
-        assert implementation_files("Umbrella/Proto/run()") == [doc_file("Umbrella/Proto/run()-1xq7p")]
-        assert f"]({doc_url('modkit/thing/run()-3ngto')})" in doc_file("Umbrella/Proto/run()").read_text()
+        assert implementation_files("Umbrella/Proto/run()") == [
+            doc_file("Umbrella/Proto/run()-1xq7p"), doc_file("ModKit/Thing/run()-3ngto")]
+        assert f"]({doc_url('modkit/thing/run()-3ngto')})" not in doc_file("Umbrella/Proto/run()").read_text()
         assert json_url("umbrella/proto/run()-1xq7p") in Config.get_hash_file("Umbrella").read_text()
         before = sandbox_bytes()
         assert await d6.scrape(REQUIREMENT, ["Umbrella"], implementations=IMPLEMENTATIONS) == 0

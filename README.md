@@ -78,7 +78,8 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 - **390+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
 - **Nested modules** - Intents, Photos, simd, Apple News Format and the other modules Apple nests under an umbrella framework, each in its own folder
 - **Human Interface Guidelines** - Apple's design documentation for all platforms
-- **Swift Language Guide** - The Swift Programming Language book, API Design Guidelines, C++ Interop
+- **Swift Language Guide** - The Swift Programming Language book, C++ Interop
+- **docs.swift.org** - the Swift 6 migration guide, Swift Package Manager and PackagePlugin, compiler diagnostics, Embedded Swift, Wasm, Android and Linux guides, swiftly, the VS Code extension, swift-java, C++ interop (Cxx, CxxStdlib), DocC and the API Design Guidelines
 - **MLX & CoreML Tools** - Apple's ML framework documentation, plus the Foundation Models Python SDK
 - **Apple open-source tooling docs** - container, SourceKit-LSP, swift-format, Game Porting Toolkit (Metal shader converter)
 - **App Store Review Guidelines** - and Apple's app privacy pages
@@ -228,7 +229,7 @@ cd scripts && python3 index_to_meilisearch.py
 ## License
 
 **Code**: MIT License
-**Documentation Content**: © Apple Inc. - For development use only
+**Documentation Content**: Apple's developer documentation is © Apple Inc. - For development use only. The open-source projects' documentation (Swift, MLX, coremltools, container and the others) is under each project's licence: see [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)
 
 ## Links
 

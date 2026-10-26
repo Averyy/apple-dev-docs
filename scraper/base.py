@@ -5,6 +5,7 @@ import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from enum import Enum
+from pathlib import Path
 from typing import Any, ClassVar, Dict, Final, Optional, Tuple, Union
 
 import httpx
@@ -64,7 +65,9 @@ class BaseAppleScraper(ABC):
         self,
         framework_id: str,
         framework_name: str,
-        base_url: Optional[str] = None
+        base_url: Optional[str] = None,
+        hash_dir: Optional[Path] = None,
+        rate_limiter: Optional[AdaptiveRateLimiter] = None,
     ) -> None:
         """Initialize base scraper.
         
@@ -72,15 +75,20 @@ class BaseAppleScraper(ABC):
             framework_id: Unique identifier for the framework
             framework_name: Human-readable name of the framework
             base_url: Base URL for the framework documentation
+            hash_dir: The dir of its site's hash files, whose casing of the
+                id wins (_canonical_framework_id); Apple's by default
+            rate_limiter: A limiter shared with other jobs (a DocC site's
+                jobs share one, so the site sees one job's rate); its own by
+                default
         """
-        framework_id = self._canonical_framework_id(framework_id)
+        framework_id = self._canonical_framework_id(framework_id, hash_dir)
         self.framework_id = framework_id
         self.framework_name = framework_name
         self.base_url = base_url or f"{Config.DOCUMENTATION_URL}/{framework_id}"
         
         # Initialize components. The framework's docs dir and hash file are
         # its primary sink's, which the subclass sets up (hash_manager)
-        self.rate_limiter = AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
+        self.rate_limiter = rate_limiter or AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
         self.session: Optional[httpx.AsyncClient] = None
         
         # Statistics
@@ -105,16 +113,22 @@ class BaseAppleScraper(ABC):
         """The framework's own hash file (its primary sink's): saved on exit."""
 
     @staticmethod
-    def _canonical_framework_id(framework_id: str) -> str:
+    def _canonical_framework_id(framework_id: str, hash_dir: Optional[Path] = None) -> str:
         """Reconcile framework id casing with any existing hash file.
 
         Apple's technologies.json changes URL casing between runs (e.g.
         'cryptokit' vs 'CryptoKit'). Framework identity is case-insensitive,
         so an existing hash file's casing wins over the incoming one to keep
         one directory and one hash file per framework.
+
+        Args:
+            framework_id: The id, as it comes
+            hash_dir: Its site's hash dir (a namespaced site's is
+                .hashes/<namespace>/); Apple's by default
         """
         suffix = "_hashes.json"
-        hash_dir = Config.get_hash_file(framework_id).parent
+        if hash_dir is None:
+            hash_dir = Config.get_hash_file(framework_id).parent
         if not hash_dir.exists():
             return framework_id
         wanted = f"{framework_id.lower()}{suffix}"

@@ -19,12 +19,15 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspa
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome, RunSinks, finish_run
 from scraper.sink import CHILD_MODULES_KEY, HANDOFF_KEY, MODULE_KEY, SinkRegistry, metadata_ids, module_parents
-from scraper.site import APPLE
+from scraper import site as site_config
+from scraper.site import APPLE, DocCSite
 from scraper.utils.hash_manager import read_hash_file
 from scraper.utils.logger import get_logger
 from scraper.utils.naming import dirmap
+from scraper.utils.rate_limiter import AdaptiveRateLimiter
 from framework_list_scraper import AppleFrameworkListScraper
 from cleanup_removed_frameworks import framework_hash_files
+import docc_sites
 
 logger = get_logger(__name__)
 
@@ -135,11 +138,12 @@ class HashDirScan:
     top_level: Set[str] = field(default_factory=set)
 
 
-def scan_hash_dir(hash_dir: Path) -> HashDirScan:
+def scan_hash_dir(hash_dir: Path, site: DocCSite = APPLE) -> HashDirScan:
     """Read every hash file of the dir once: sizes for the sort, and the D6 metadata.
 
     A file that can't be read counts as a top-level technology's and is
-    otherwise left out (its framework's scrape reports it).
+    otherwise left out (its framework's scrape reports it). hash_dir is the
+    site's (.hashes/<namespace>/ for a DocC site's).
     """
     scan = HashDirScan()
     module_sizes: List[Tuple[Dict[str, int], int]] = []
@@ -155,7 +159,7 @@ def scan_hash_dir(hash_dir: Path) -> HashDirScan:
         if module:
             scan.module_files.append(path)
             module_sizes.append((module_parents(module), len(hashes)))
-        elif any(url.startswith(APPLE.json_prefix) for url in hashes):
+        elif any(url.startswith(site.json_prefix) for url in hashes):
             scan.top_level.add(stem)
         if metadata_ids(metadata.get(HANDOFF_KEY)):
             scan.handoff_files.append(path)
@@ -240,7 +244,7 @@ def framework_errors(outcomes: Sequence[FrameworkOutcome]) -> List[str]:
         if outcome.filename_clashes:
             reasons.append(f"filename_clash x{len(outcome.filename_clashes)}")
         if reasons:
-            errors.append(f"{outcome.framework_id}: {', '.join(reasons)}")
+            errors.append(f"{outcome.name}: {', '.join(reasons)}")
     return errors
 
 
@@ -259,12 +263,37 @@ def known_dirs(frameworks: Sequence[Dict[str, str]]) -> Dict[str, str]:
     return dirs
 
 
+def site_job_outcome(fw: Dict[str, str], site: DocCSite, **fields: Any) -> FrameworkOutcome:
+    """The outcome of a job that didn't run its scraper: an Apple framework's, or a DocC site root's."""
+    return FrameworkOutcome(framework_id=fw['id'], site=site.name, namespace=site.namespace, **fields)
+
+
+async def load_sites(sites: Sequence[DocCSite]) -> Tuple[List["docc_sites.SiteRun"], Dict[str, AdaptiveRateLimiter]]:
+    """Each DocC site's share of the run (docc_sites.load_site), and the rate limiter its jobs share.
+
+    A site whose index root fails (7(f)), or whose load raises, runs no job
+    this run; its error is the run's.
+    """
+    runs = []
+    limiters: Dict[str, AdaptiveRateLimiter] = {}
+    for site in sites:
+        limiter = limiters[site.name] = AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
+        try:
+            site_run = await docc_sites.load_site(site, limiter)
+        except Exception as e:
+            logger.error("site_load_failed", site=site.name, error=str(e))
+            site_run = docc_sites.SiteRun(site=site, error=f"{site.name}: load failed: {e}")
+        runs.append(site_run)
+    return runs, limiters
+
+
 async def scrape_frameworks(
     framework_list: Optional[List[Dict[str, str]]] = None,
     resume_from: Optional[str] = None,
     max_concurrent: int = 20,
     cleanup_orphans: bool = False,
     all_frameworks: Optional[Sequence[Dict[str, str]]] = None,
+    sites: Sequence[DocCSite] = (),
 ) -> Dict[str, Any]:
     """Scrape specified frameworks or all frameworks with proper rolling concurrency
 
@@ -273,13 +302,19 @@ async def scrape_frameworks(
             a selection of it (--frameworks): the scope rule's top-level set
             is the full list's, so a selected framework never crawls a
             bundle sibling's pages as its modules
+        sites: The DocC sites to scrape too (site.DOCC_SITES): each root of
+            a site's allow-list is a job of this run, with the Apple ones
+            (docc_sites). With cleanup_orphans, their roots and sites that
+            left the config are removed (rule 7(a)); a site whose index
+            root fails runs no job (7(f))
 
     After every job: the multi-writer sinks' failure policy, render versions
     and save (finish_run), with or without cleanup_orphans.
 
     Raises:
-        ScrapeAborted: The fetched list failed the list guard, or the
-            --resume framework isn't in the list
+        ScrapeAborted: The fetched list failed the list guard, the
+            --resume framework isn't in the list, or a DocC namespace
+            collides with another top-level dir
     """
 
     # Get list of frameworks to scrape
@@ -305,17 +340,8 @@ async def scrape_frameworks(
         if not frameworks:
             raise ScrapeAborted(f"Could not find framework '{resume_from}' to resume from")
 
-    # Sort frameworks by page count (largest first) for optimal scheduling.
-    # Longest jobs start first so they don't become the tail when running
-    # concurrently. A parent's count includes its D6 modules' (rule 5)
     hash_scan = scan_hash_dir(Config.CACHE_DIR) if Config.CACHE_DIR.exists() else HashDirScan()
-    page_counts = hash_scan.page_counts
-    if page_counts:
-        frameworks.sort(key=lambda fw: page_counts.get(fw['id'].lower(), 0), reverse=True)
-        top3 = [(fw['title'], page_counts.get(fw['id'].lower(), 0)) for fw in frameworks[:3]]
-        print(f"📐 Sorted by page count (largest first): {', '.join(f'{n} ({c:,})' for n, c in top3)}, ...")
-
-    print(f"\n📊 Will scrape {len(frameworks)} frameworks")
+    page_counts: Dict[Tuple[str, str], int] = {(APPLE.name, fw): count for fw, count in hash_scan.page_counts.items()}
 
     # The other scrapers' top-level docs dirs, which no Apple sink may have.
     # Without them the run stops: an Apple page written into one of those
@@ -326,6 +352,17 @@ async def scrape_frameworks(
     except (OSError, ValueError, SyntaxError) as e:
         logger.error("other_scraper_dirs_unreadable", error=str(e))
         raise ScrapeAborted(f"namespace check: the other scrapers' docs dirs can't be read: {e}") from e
+    # The DocC namespaces: none may be another scraper's dir or an Apple
+    # framework's (checked from the config, before anything is scraped),
+    # and no Apple sink may have one
+    try:
+        docc_sites.check_namespaces(
+            site_config.DOCC_SITES, reserved, set(hash_scan.page_counts) | hash_scan.top_level)
+    except ValueError as e:
+        logger.error("namespace_collision", error=str(e))
+        raise ScrapeAborted(f"namespace check: {e}") from e
+    apple_reserved = {
+        **reserved, **{site.namespace_top.lower(): site.namespace_top for site in site_config.DOCC_SITES}}
 
     # The run's sinks. Local links reach every framework dir we have and
     # every one this run scrapes. The scope rule's top-level technologies
@@ -335,11 +372,61 @@ async def scrape_frameworks(
         known_dirs(frameworks),
         top_level={APPLE.name: {fw['id'] for fw in listed} | hash_scan.top_level},
         titles={fw['id']: fw['title'] for fw in listed},
-        reserved=reserved,
+        reserved=apple_reserved,
     )
 
+    # The DocC sites: each site's index root (7(f)), its share of the
+    # sinks, and its roots as jobs
+    run_sinks = RunSinks(
+        listed={(APPLE.name, fw['id'].lower()) for fw in listed},
+        module_files=list(hash_scan.module_files),
+        handoff_files=list(hash_scan.handoff_files),
+        child_modules={(APPLE.name, module): files for module, files in hash_scan.child_modules.items()},
+    )
+    site_runs, limiters = await load_sites(sites)
+    jobs: List[Dict[str, str]] = list(frameworks)
+    for site_run in site_runs:
+        site = site_run.site
+        hash_dir = Config.get_hash_dir(site.namespace)
+        run_sinks.hash_dirs[str(hash_dir).lower()] = (site.name, site.namespace)
+        run_sinks.listed |= {(site.name, root) for root in site.roots}
+        if cleanup_orphans:
+            run_sinks.removals += docc_sites.config_removals(site)
+        if hash_dir.exists():
+            site_scan = scan_hash_dir(hash_dir, site)
+            page_counts.update({(site.name, dir_id): count for dir_id, count in site_scan.page_counts.items()})
+            run_sinks.module_files += site_scan.module_files
+            run_sinks.handoff_files += site_scan.handoff_files
+            run_sinks.child_modules.update(
+                {(site.name, module): files for module, files in site_scan.child_modules.items()})
+        if site_run.error is not None:
+            run_errors.append(site_run.error)
+            print(f"❌ {site.name}: its jobs are skipped this run ({site_run.error})")
+            continue
+        sinks.add_site(site, site_run.known_dirs, site_run.top_level, site.roots)
+        jobs += [{'id': dir_name, 'title': site.framework_label(dir_name), 'site': site.name, 'root': root}
+                 for root, dir_name in site_run.jobs]
+    if cleanup_orphans and {site.name for site in sites} == {site.name for site in site_config.DOCC_SITES}:
+        # A site that left the config goes whole (only a run that covers every site knows)
+        run_sinks.removals += docc_sites.gone_sites(site_config.DOCC_SITES)
+
+    # Sort the jobs by page count (largest first) for optimal scheduling.
+    # Longest jobs start first so they don't become the tail when running
+    # concurrently. A parent's count includes its D6 modules' (rule 5)
+    def count(fw: Dict[str, str]) -> int:
+        return page_counts.get((fw.get('site', APPLE.name), fw['id'].lower()), 0)
+
+    if page_counts:
+        jobs.sort(key=count, reverse=True)
+        top3 = [(fw['title'], count(fw)) for fw in jobs[:3]]
+        print(f"📐 Sorted by page count (largest first): {', '.join(f'{n} ({c:,})' for n, c in top3)}, ...")
+
+    print(f"\n📊 Will scrape {len(jobs)} frameworks"
+          + (f" ({len(jobs) - len(frameworks)} of them DocC site roots)" if len(jobs) > len(frameworks) else ""))
+
     # Track progress
-    total = len(frameworks)
+    site_of_job = {site.name: site for site in (APPLE, *sites)}
+    total = len(jobs)
     completed = 0
     failed = []
     outcomes = []
@@ -349,27 +436,31 @@ async def scrape_frameworks(
     
     async def scrape_with_semaphore(fw, index):
         async with semaphore:
+            site = site_of_job[fw.get('site', APPLE.name)]
             print(f"\n[{index}/{total}] 🚀 Starting: {fw['title']} ({fw['id']})")
-            if sinks.refuses(fw['id']):
-                # Another scraper's top-level dir: never scraped into
+            if sinks.refuses(fw['id'], site):
+                # Another scraper's top-level dir, or a DocC namespace: never scraped into
                 logger.error("namespace_collision", framework=fw['title'], dir=fw['id'])
                 print(f"❌ {fw['title']} ({fw['id']}): its dir is another scraper's (namespace_collision); not scraped")
-                return fw, FrameworkOutcome(framework_id=fw['id'], blocks={"namespace_collision": [fw['id']]})
+                return fw, site_job_outcome(fw, site, blocks={"namespace_collision": [fw['id']]})
             try:
                 scraper = AppleJSONDocumentationScraper(
                     framework_id=fw['id'],
                     framework_name=fw['title'],
                     sinks=sinks,
+                    site=site,
+                    root_id=fw.get('root'),
+                    rate_limiter=limiters.get(site.name),
                 )
                 outcome = await scrape_single_framework(scraper, fw, index, total, cleanup_orphans)
                 return fw, outcome
             except Exception as e:
                 # A framework-level exception: its cleanup is blocked this run
-                return fw, FrameworkOutcome(framework_id=fw['id'], raised=str(e) or type(e).__name__)
+                return fw, site_job_outcome(fw, site, raised=str(e) or type(e).__name__)
     
     # Create all tasks at once
     tasks = []
-    for i, fw in enumerate(frameworks, 1):
+    for i, fw in enumerate(jobs, 1):
         task = scrape_with_semaphore(fw, i)
         tasks.append(task)
     
@@ -385,7 +476,7 @@ async def scrape_frameworks(
 
     # D6: the multi-writer sinks' failure policy (its blocks go to the jobs'
     # outcomes), their render versions, then every sink saved
-    modules = finish_run(sinks, outcomes, cleanup_orphans)
+    run_sinks.modules = finish_run(sinks, outcomes, cleanup_orphans)
     for result in results:
         if isinstance(result, tuple):
             fw, outcome = result
@@ -419,13 +510,7 @@ async def scrape_frameworks(
         'total_pages_scraped': total_pages_scraped,
         'total_pages_skipped': total_pages_skipped,
         'framework_outcomes': outcomes,
-        'run_sinks': RunSinks(
-            listed={fw['id'].lower() for fw in listed},
-            modules=modules,
-            module_files=hash_scan.module_files,
-            handoff_files=hash_scan.handoff_files,
-            child_modules=hash_scan.child_modules,
-        ),
+        'run_sinks': run_sinks,
         'errors': run_errors,
     }
 
@@ -474,8 +559,13 @@ async def scrape_everything() -> int:
       pages' file names clashed), the orphan cleanup failed to delete a file
       or write a hash file, or the re-indexing failed.
     - 2: aborted before scraping: the list guard (check_framework_list), a
-      --frameworks name that is no framework's id or title, or a --resume
-      framework that isn't in the list.
+      --frameworks name that is no framework's id or title, a --sites name
+      that is no DocC site's, a --resume framework that isn't in the list,
+      or a DocC namespace that collides with another top-level dir.
+
+    The DocC sites (site.DOCC_SITES, e.g. docs.swift.org) are scraped with
+    --all, or with no --frameworks; --sites picks some (alone, it scrapes
+    no Apple framework). A --frameworks run scrapes none of them.
     - 130: interrupted.
     """
     
@@ -490,6 +580,7 @@ async def scrape_everything() -> int:
     resume_from = None
     max_concurrent = 20
     specific_frameworks = []
+    site_names: List[str] = []
     
     if '--resume' in sys.argv:
         idx = sys.argv.index('--resume')
@@ -518,6 +609,25 @@ async def scrape_everything() -> int:
             print("❌ --frameworks needs at least one framework name. Nothing scraped.")
             return 2
         print(f"📌 Scraping specific frameworks: {', '.join(specific_frameworks)}")
+
+    if '--sites' in sys.argv:
+        idx = sys.argv.index('--sites') + 1
+        while idx < len(sys.argv) and not sys.argv[idx].startswith('--'):
+            site_names.append(sys.argv[idx])
+            idx += 1
+        configured = {site.name: site for site in site_config.DOCC_SITES}
+        unknown_sites = [name for name in site_names if name not in configured]
+        if not site_names or unknown_sites:
+            print(f"❌ --sites needs DocC site names ({', '.join(configured) or 'none configured'}): "
+                  f"{', '.join(unknown_sites) or 'none given'}. Nothing scraped.")
+            return 2
+        print(f"📌 Scraping DocC sites: {', '.join(site_names)}")
+    if site_names:
+        sites = [site for site in site_config.DOCC_SITES if site.name in site_names]
+    elif specific_frameworks:
+        sites = []
+    else:
+        sites = list(site_config.DOCC_SITES)
     
     # Check for orphan cleanup flag
     cleanup_orphans = False
@@ -536,6 +646,11 @@ async def scrape_everything() -> int:
             frameworks, unknown = select_frameworks(frameworks, specific_frameworks)
             if unknown:
                 print(f"⚠️  Not a framework id or title in technologies.json: {', '.join(unknown)}")
+        elif site_names and '--all' not in sys.argv:
+            frameworks = []
+        for site in sites:
+            print(f"🌐 Would scrape {site.name} ({site.doc_base}): {len(site.roots)} roots under "
+                  f"documentation/{site.namespace}/")
         
         print(f"\n📋 Would scrape {len(frameworks)} frameworks:")
         for i, fw in enumerate(frameworks[:20], 1):
@@ -565,8 +680,11 @@ async def scrape_everything() -> int:
     
     try:
         # If specific frameworks requested, fetch their info
-        framework_list = None
+        framework_list: Optional[List[Dict[str, str]]] = None
         all_frameworks = None
+        if site_names and not specific_frameworks and '--all' not in sys.argv:
+            # Only the DocC sites
+            framework_list = []
         if specific_frameworks:
             all_frameworks = await fetch_framework_list()
             framework_list, unknown = select_frameworks(all_frameworks, specific_frameworks)
@@ -583,6 +701,7 @@ async def scrape_everything() -> int:
             max_concurrent=max_concurrent,
             cleanup_orphans=cleanup_orphans,
             all_frameworks=all_frameworks,
+            sites=sites,
         )
         outcomes = scrape_stats['framework_outcomes']
         errors = framework_errors(outcomes) + scrape_stats.get('errors', [])
@@ -684,6 +803,7 @@ if __name__ == "__main__":
     print(f"  python3 {sys.argv[0]} --all --yes --cleanup-orphans --auto-cleanup # Auto-delete orphans")
     print(f"  python3 {sys.argv[0]} --all --yes --trigger-reindex # Scrape and re-index Meilisearch")
     print(f"  python3 {sys.argv[0]} --concurrent 5               # Use 5 concurrent scrapers")
+    print(f"  python3 {sys.argv[0]} --sites swift-org --yes      # Scrape only a DocC site (docs.swift.org)")
     print()
     
     try:

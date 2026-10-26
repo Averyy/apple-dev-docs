@@ -21,10 +21,14 @@ Examples:
     # Resume interrupted scraping, from a given framework:
     python3 scrape.py --resume SwiftUI --yes
 
+    # Only a DocC site (scraper/site.py DOCC_SITES; --all includes them all):
+    python3 scrape.py --sites swift-org --yes
+
 Exit code: 0 for a clean run, 1 for an error of ours (e.g. a failed request
 that blocked a framework's cleanup), 2 if it stopped before scraping (a
-failed or short framework list, an unknown --frameworks name or --resume
-target), 130 if interrupted (see scrape_everything).
+failed or short framework list, an unknown --frameworks or --sites name or
+--resume target, a DocC namespace colliding with another dir), 130 if
+interrupted (see scrape_everything).
 """
 
 import sys

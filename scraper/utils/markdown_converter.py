@@ -1,9 +1,11 @@
 """Convert Apple documentation HTML to clean markdown."""
 
+import json
 import re
 from pathlib import Path
 from typing import Dict, Final, List, Mapping, Optional, Any
 
+from scraper.site import APPLE, DocCSite
 from scraper.utils.links import doc_link, link_base
 from scraper.utils.logger import get_logger
 
@@ -47,32 +49,57 @@ def quote_blocks(label: str, blocks: List[str]) -> str:
 class AppleDocMarkdownConverter:
     """Convert Apple documentation HTML to markdown with proper formatting."""
     
-    def __init__(self, output_dir: Optional[Path] = None, known_dirs: Optional[Mapping[str, str]] = None) -> None:
+    def __init__(
+        self,
+        output_dir: Optional[Path] = None,
+        known_dirs: Optional[Mapping[str, str]] = None,
+        site: DocCSite = APPLE,
+    ) -> None:
         """Initialize markdown converter.
         
         Args:
             output_dir: Directory where markdown files are saved for cross-linking
                 (the framework's docs dir: its name is the framework's dir)
-            known_dirs: The docs dirs whose pages are linked locally,
-                {name.lower(): name}; the output dir's framework is always known
+            known_dirs: The docs dirs of the site whose pages are linked
+                locally, {name.lower(): name}; the output dir's framework is
+                always known
+            site: The pages' DocC site: its pages are linked locally, its
+                label names it in the footer, and a namespaced site's pages
+                start with front matter (url, framework)
         """
         self.output_dir = output_dir
+        self.site = site
         self.known_dirs: Dict[str, str] = dict(known_dirs or {})
         if output_dir is not None:
             self.known_dirs[output_dir.name.lower()] = output_dir.name
+        # The page being converted's: the known dirs and its link_dirs
+        self._page_dirs: Dict[str, str] = self.known_dirs
     
     def convert_page(self, data: Dict[str, Any]) -> str:
         """Convert extracted page data to markdown.
         
         Args:
             data: Extracted page data (its links are relative to the file of
-                its source_url's page)
+                its source_url's page; its link_dirs, the module dirs its
+                links route to, are linked locally too)
             
         Returns:
             Formatted markdown content
         """
         sections = []
         page_url = data.get('source_url') or ''
+        self._page_dirs = {**self.known_dirs, **(data.get('link_dirs') or {})}
+
+        # A namespaced site's page: its URL and its framework label as front
+        # matter, which the indexer reads before the path (double-quoted,
+        # so any URL is a valid YAML scalar)
+        if self.site.namespace and page_url:
+            sections.append("\n".join([
+                "---",
+                f"url: {json.dumps(page_url)}",
+                f"framework: {json.dumps(data.get('framework') or '')}",
+                "---",
+            ]))
         
         # Title and metadata
         sections.append(f"# {data.get('title', 'Untitled')}")
@@ -215,7 +242,7 @@ class AppleDocMarkdownConverter:
         
         # Source URL
         if data.get('source_url'):
-            sections.append(f"\n---\n\n*[View on Apple Developer]({data['source_url']})*")
+            sections.append(f"\n---\n\n*[View on {self.site.label}]({data['source_url']})*")
         
         return "\n\n".join(filter(None, sections))
     
@@ -435,5 +462,5 @@ class AppleDocMarkdownConverter:
         """
         if not self.output_dir:
             return f"[{link_text}]({apple_url})"
-        base = link_base(self.output_dir.name, page_url)
-        return f"[{link_text}]({doc_link(apple_url, base, self.known_dirs)})"
+        base = link_base(self.output_dir.name, page_url, self.site)
+        return f"[{link_text}]({doc_link(apple_url, base, self._page_dirs, self.site)})"

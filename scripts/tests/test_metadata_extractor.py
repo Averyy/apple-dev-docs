@@ -546,5 +546,24 @@ struct MyView: View {
         quoted = "# A\n\n*[View on Apple Developer](https://developer.apple.com/documentation/x/y)*\n\nMore.\n"
         self.assertIsNone(self.extractor.extract_source_url(quoted))
 
+    def test_a_docc_site_page_under_its_namespace(self) -> None:
+        """A DocC site's page (documentation/<namespace>/<Dir>/…, item 4): its front matter
+        names its url and its framework label, and its footer names its site."""
+        url = "https://docs.swift.org/latest/documentation/packageplugin/packagemanager/buildparameters"
+        content = ('---\nurl: "' + url + '"\nframework: "Swift-Org/PackagePlugin"\n---\n\n'
+                   "# PackageManager.BuildParameters\n\n**Framework**: Swift-Org/PackagePlugin  \n"
+                   "**Kind**: struct  \n**Role**: Structure\n\nParameters for a build.\n\n---\n\n"
+                   f"*[View on docs.swift.org]({url})*\n")
+        path = self.create_test_file(
+            content, "documentation/Swift-Org/PackagePlugin/packagemanager/buildparameters.md")
+        metadata = self.extractor.extract_metadata(content, path)
+        self.assertEqual(metadata["framework"], "Swift-Org/PackagePlugin")
+        self.assertEqual(metadata["url"], url)
+        self.assertEqual(self.extractor.extract_source_url(content), url)
+        self.assertEqual(metadata["api_name"], "BuildParameters")
+        self.assertEqual(metadata["title"], "PackageManager.BuildParameters")
+        self.assertEqual(metadata["kind"], "struct")
+        self.assertEqual(metadata["overview"], "Parameters for a build.")
+
 if __name__ == "__main__":
     unittest.main()

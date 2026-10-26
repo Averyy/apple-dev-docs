@@ -130,13 +130,9 @@ SOURCES: List[DocSource] = [
     ),
     # Note: Skipping TSPL.docc root files (The-Swift-Programming-Language.md)
     # as it's just a table of contents with internal links
-    # Swift.org website documentation
-    DocSource(
-        repo="swiftlang/swift-org-website",
-        branch="main",
-        path="documentation/api-design-guidelines",
-        output_subdir="APIDesignGuidelines",
-    ),
+    # Swift.org website documentation. The API Design Guidelines come from
+    # docs.swift.org's DocC copy (scraper/site.py SWIFT_ORG, root
+    # apiguidelines), so documentation/api-design-guidelines isn't imported
     # Note: Skipping documentation/server - niche content with broken swift.org links
     DocSource(
         repo="swiftlang/swift-org-website",

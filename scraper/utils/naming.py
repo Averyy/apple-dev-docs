@@ -16,7 +16,7 @@ import re
 from pathlib import Path
 from typing import Dict, Final, Match, Optional, Set
 
-from scraper.site import APPLE
+from scraper.site import APPLE, DocCSite
 from scraper.utils.hash_manager import read_hash_file
 from scraper.utils.logger import get_logger
 
@@ -122,11 +122,12 @@ def seg_name(segment: str) -> str:
     return name
 
 
-def page_path(dir_name: str, doc_url: str) -> Optional[str]:
-    """A documentation page's file, relative to the docs root: "<Dir>/….md".
+def page_path(dir_name: str, doc_url: str, site: DocCSite = APPLE) -> Optional[str]:
+    """A documentation page's file, relative to the docs root: "[<namespace>/]<Dir>/….md".
 
     <Dir>/ and the seg_name of each URL segment after the framework, with
-    ".md" on the last. The root page is <Dir>/<Dir>.md. A page whose first
+    ".md" on the last, under the site's namespace (an Apple dir is
+    top-level). The root page is <Dir>/<Dir>.md. A page whose first
     segment is named like the framework gets FRAMEWORK_NAMED_SUFFIX in both
     the file and the folder position (XCTest/XCTest -> XCTest/xctest-page.md,
     its children under XCTest/xctest-page/), so a folder name always equals
@@ -134,25 +135,27 @@ def page_path(dir_name: str, doc_url: str) -> Optional[str]:
 
     Args:
         dir_name: The framework's docs dir (its id, in the dir's casing)
-        doc_url: The page's URL, https://developer.apple.com/documentation/…
+        doc_url: The page's URL, <the site's doc prefix><framework>/…
             (the framework segment in any casing)
+        site: The page's DocC site: its doc prefix and its namespace
 
     Returns:
         The path, or None for a URL that isn't the framework's
     """
-    prefix = (DOC_URL_PREFIX + dir_name).lower()
+    prefix = (site.doc_prefix + dir_name).lower()
     if doc_url[:len(prefix)].lower() != prefix:
         return None
     rest = doc_url[len(prefix):]
     if rest and not rest.startswith('/'):
         return None
     rest = rest.lstrip('/')
+    base = f'{site.namespace}/{dir_name}' if site.namespace else dir_name
     if not rest:
-        return f'{dir_name}/{dir_name}.md'
+        return f'{base}/{dir_name}.md'
     names = [seg_name(segment) for segment in rest.split('/')]
     if names[0] == dir_name.lower():
         names[0] += FRAMEWORK_NAMED_SUFFIX
-    return f"{dir_name}/{'/'.join(names)}.md"
+    return f"{base}/{'/'.join(names)}.md"
 
 
 def clash_suffix(json_url: str) -> str:
@@ -164,13 +167,14 @@ def clash_suffix(json_url: str) -> str:
     return '-' + hashlib.sha256(json_url.lower().encode('utf-8')).hexdigest()[:8]
 
 
-def dirmap(hash_dir: Path) -> Dict[str, str]:
-    """The Apple framework docs dirs: {name.lower(): name}.
+def dirmap(hash_dir: Path, json_prefix: str = JSON_URL_PREFIX) -> Dict[str, str]:
+    """A DocC site's framework docs dirs: {name.lower(): name}.
 
-    Over the hash files in hash_dir with a key under JSON_URL_PREFIX, where
-    name is the file name minus "_hashes.json": the framework's docs dir, in
-    the same casing (the HIG, Swift and MLX hash files have no such key). A
-    hash file that can't be read is left out (logged).
+    Over the hash files in hash_dir (the site's: .hashes/<namespace>/ for a
+    namespaced site) with a key under json_prefix (the site's JSON prefix),
+    where name is the file name minus "_hashes.json": the framework's docs
+    dir, in the same casing (the HIG, Swift and MLX hash files have no such
+    key). A hash file that can't be read is left out (logged).
     """
     dirs: Dict[str, str] = {}
     for path in sorted(hash_dir.glob(f'*{HASH_FILE_SUFFIX}')):
@@ -179,7 +183,7 @@ def dirmap(hash_dir: Path) -> Dict[str, str]:
         except (OSError, ValueError) as e:
             logger.warning("dirmap_hash_file_unreadable", file=str(path), error=str(e))
             continue
-        if not any(url.startswith(JSON_URL_PREFIX) for url in hashes):
+        if not any(url.startswith(json_prefix) for url in hashes):
             continue
         name = path.name[:-len(HASH_FILE_SUFFIX)]
         if name.lower() in dirs:
