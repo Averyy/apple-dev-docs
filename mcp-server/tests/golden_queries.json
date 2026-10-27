@@ -380,5 +380,62 @@
     "expected_top3": [
       "https://developer.apple.com/documentation/swiftui/asyncimage"
     ]
+  },
+  {
+    "query": "@State",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftui/state"
+    ],
+    "expand": true
+  },
+  {
+    "query": "@escaping",
+    "expected_top3": [
+      "https://github.com/swiftlang/swift-book/blob/main/TSPL.docc/ReferenceManual/Attributes.md"
+    ]
+  },
+  {
+    "query": "SwiftData @Model",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/swiftdata/model()"
+    ]
+  },
+  {
+    "query": "CareKit OCKTask",
+    "expected_top3": [
+      "https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitstore/ocktask"
+    ]
+  },
+  {
+    "query": "WidgetKit timeline provider",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/widgetkit/timelineprovider"
+    ]
+  },
+  {
+    "query": "Product.purchase",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/storekit/product/purchase(options:)"
+    ],
+    "expand": true
+  },
+  {
+    "query": "DispatchQueue.main.async",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/dispatch/dispatchqueue/async(execute:)"
+    ],
+    "expand": true
+  },
+  {
+    "query": "tab bar design guidelines",
+    "expected_top3": [
+      "https://developer.apple.com/design/human-interface-guidelines/tab-bars"
+    ]
+  },
+  {
+    "query": "Keychain store password",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/security/adding-a-password-to-the-keychain"
+    ]
   }
 ]

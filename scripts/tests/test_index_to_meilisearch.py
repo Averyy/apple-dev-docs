@@ -1705,12 +1705,45 @@ def test_the_delete_waits_for_index_gen_to_be_filterable(corpus: Path) -> None:
 def test_settings_are_applied_to_the_live_index_only_where_they_differ(corpus: Path) -> None:
     client = FakeClient()
     run(corpus, client)
-    client.settings[LIVE]["sortableAttributes"] = ["file_size"]
+    client.settings[LIVE]["faceting"] = {"maxValuesPerFacet": 100}
     client.settings[LIVE]["filterableAttributes"].reverse()  # same set, another order
+    client.settings[LIVE]["sortableAttributes"].append("extra")  # one more is no new field
     client.reset_log()
     assert run(corpus, client) == 0
     assert client.enqueued == [("settingsUpdate", LIVE), ("documentAdditionOrUpdate", META)]
-    assert client.payloads[0] == {"sortableAttributes": ["last_modified", "file_size"]}
+    assert client.payloads[0] == {"faceting": INDEX_SETTINGS["faceting"],
+                                  "sortableAttributes": INDEX_SETTINGS["sortableAttributes"]}
+
+
+@pytest.mark.parametrize("setting, attribute", [("filterableAttributes", "api_name_unprefixed"),
+                                                ("sortableAttributes", "last_modified"),
+                                                ("searchableAttributes", "overview")])
+def test_a_field_the_live_index_lacks_rebuilds(corpus: Path, setting: str, attribute: str) -> None:
+    # A new indexed field (a new indexer's) arrives by a rebuild and swap, never by a
+    # settings task that re-indexes the live index in place
+    client = FakeClient()
+    run(corpus, client)
+    client.settings[LIVE][setting].remove(attribute)
+    client.reset_log()
+    assert run(corpus, client) == 0
+    assert rebuilt(client) and ("settingsUpdate", LIVE) not in client.enqueued
+    assert attribute in client.settings[LIVE][setting]
+    client.reset_log()
+    assert run(corpus, client) == 0 and not rebuilt(client)
+
+
+def test_missing_index_attributes() -> None:
+    missing = index_to_meilisearch.missing_index_attributes
+    current = json.loads(json.dumps(INDEX_SETTINGS))
+    assert missing(current) == []
+    current["filterableAttributes"] = [a for a in current["filterableAttributes"] if a != "api_name_unprefixed"]
+    assert missing(current) == ["api_name_unprefixed (filterableAttributes)"]
+    # Meilisearch's granular form, and a '*' that holds every attribute
+    current["filterableAttributes"] = [{"attributePatterns": INDEX_SETTINGS["filterableAttributes"], "features": {}}]
+    current["searchableAttributes"] = ["*"]
+    assert missing(current) == []
+    assert missing({}) == [f"{a} ({name})" for name in index_to_meilisearch.INDEXED_ATTRIBUTE_SETTINGS
+                           for a in INDEX_SETTINGS[name]]
 
 
 def test_settings_comparison() -> None:
@@ -1845,7 +1878,7 @@ def test_the_files_are_recorded_as_pending_before_anything_changes(corpus: Path)
     run(corpus, client)
     write_doc(corpus, "SwiftUI/item0.md", "Changed text.")
     write_doc(corpus, "SwiftUI/brandnew.md")
-    client.settings[LIVE]["sortableAttributes"] = ["file_size"]  # a settings task comes first
+    client.settings[LIVE]["faceting"] = {"maxValuesPerFacet": 100}  # a settings task comes first
     seen: List[Tuple[str, Dict[str, str]]] = []
     real_enqueue = client.enqueue
 

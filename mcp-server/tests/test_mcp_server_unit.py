@@ -323,7 +323,8 @@ class FakeIndex:
 
     def get_documents(self, params: Dict[str, Any]) -> SimpleNamespace:
         self.fetches.append(dict(params))
-        matches = [d for d in self.documents if self._matches(d, params.get("filter"))]
+        matches = [d for d in self.documents if self._matches(d, params.get("filter"))
+                   and ("ids" not in params or d.get("id") in params["ids"])]
         limit = params.get("limit", 20)
         return SimpleNamespace(
             results=[FakeDocument(self._project(d, params.get("fields"))) for d in matches[:limit]],
@@ -349,6 +350,11 @@ LONG_BODIES = [f"word{i} " * 6000 + "\n" for i in range(3)]
 LONG_PIECES = [f"## Section {i}\n\n" + body for i, body in enumerate(LONG_BODIES)]
 
 
+# The fields the indexer makes filterable (scripts/index_to_meilisearch.py INDEX_SETTINGS)
+FILTERABLE = ["framework", "platforms", "kind", "is_framework_main", "file_path", "api_name",
+              "api_name_unprefixed", "is_chunk", "index_gen"]
+
+
 class ToolTestCase(unittest.TestCase):
     """Runs the tools against a FakeIndex, and resolves local links against a docs
     directory of the test's own (empty unless the test calls use_docs)."""
@@ -372,9 +378,10 @@ class ToolTestCase(unittest.TestCase):
 
     def use_index(self, documents: List[Dict[str, Any]]) -> FakeIndex:
         index = FakeIndex(documents)
-        # The framework counts are this index's (get_framework_counts caches them)
+        # The framework counts are this index's (get_framework_counts caches them), and it
+        # filters on every field the indexer makes filterable
         for name, value in (("meili_index", index), ("ensure_meilisearch_connection", lambda: True),
-                            ("_frameworks_cache", None)):
+                            ("_frameworks_cache", None), ("filterable_attributes", lambda: FILTERABLE)):
             patcher = patch.object(apple_docs_mcp, name, value)
             patcher.start()
             self.addCleanup(patcher.stop)
@@ -390,7 +397,8 @@ class TestSearchDistinct(ToolTestCase):
         chunks = page_documents(PATH, pieces)
         task = page_documents("documentation/Swift/task.md", ["# Task\n\nasync let child tasks\n"],
                               title="Task", framework="Swift", kind="struct")
-        # Chunk 1 ranks best, so it is the page's hit
+        # Chunk 1 ranks best, so it is the page's hit (and the part that best matches)
+        chunks = [dict(chunk, _rankingScore=1.0 if chunk["chunk_index"] == 1 else 0.9) for chunk in chunks]
         index = self.use_index([chunks[1], chunks[0], task[0], chunks[2]])
 
         result = search_apple_docs("async let", summary_mode=True)
@@ -424,6 +432,12 @@ def symbol_doc(file_path: str, title: str, framework: str = "UIKit", kind: str =
 def result_titles(result: str) -> List[str]:
     """The titles of a search_apple_docs result list, in rank order (without their %)."""
     return re.findall(r"(?m)^## \d+\. (.*) \(\d+%\)$", result)
+
+
+def name_searches(index: "FakeIndex") -> List[Dict[str, Any]]:
+    """The searches an index got, without get_framework_counts' (a query of several words
+    looks up the frameworks it names: named_frameworks)."""
+    return [search for search in index.searches if not (search["q"] == "" and search.get("limit") == 0)]
 
 
 class TestLinkLabels(ToolTestCase):
@@ -518,13 +532,15 @@ class TestRanking(ToolTestCase):
                    "class to schedule local notifications instead.")
         method = {"title": "scheduleLocalNotification(_:)", "api_name": "scheduleLocalNotification",
                   "kind": "method", "deprecated": True, "deprecation": summary, "_rankingScore": 1.0}
-        self.assertEqual(score(method, "schedule local notification"), round(0.8 * factor, 6))
+        # (Its name holds the words: title_words_boost)
+        words = apple_docs_mcp.TITLE_WORDS_BOOST
+        self.assertEqual(score(method, "schedule local notification"), round(0.8 * factor + words, 6))
         # A word the summary doesn't hold: the page's own text matched
-        self.assertEqual(score(method, "schedule local notification delivery"), 0.8)
+        self.assertEqual(score(method, "schedule local notification delivery"), round(0.8 + words * 3 / 4, 6))
         # A link's destination isn't the summary's text
         self.assertEqual(score(method, "unusernotificationcenter md"), 0.8)
         # Deprecated without a summary, or named by the query (a title or named-symbol boost)
-        self.assertEqual(score(dict(method, deprecation=None), "schedule local notification"), 0.8)
+        self.assertEqual(score(dict(method, deprecation=None), "schedule local notification"), round(0.8 + words, 6))
         self.assertEqual(score(method, "scheduleLocalNotification"), 0.9)
         self.assertEqual(score(dict(method, title="UILocalNotification", api_name="UILocalNotification"),
                                "UILocalNotification schedule local notification"), 0.9)
@@ -532,7 +548,7 @@ class TestRanking(ToolTestCase):
         alert = {"title": "Alert", "api_name": "Alert", "kind": "struct", "deprecated": True,
                  "deprecation": "Use a [`View`](./view.md) modifier like [`alert(_:isPresented:actions:)`]"
                                 "(./view/alert%28_,ispresented,actions%29-8584l.md) instead.", "_rankingScore": 1.0}
-        self.assertEqual(score(alert, "show an alert"), 0.8)
+        self.assertEqual(score(alert, "show an alert"), round(0.8 + words / 2, 6))
         # The current page outranks the deprecated one the search scored higher, which is
         # marked deprecated with what to use instead
         deprecated = dict(symbol_doc("documentation/UIKit/uiapplication/schedulelocalnotification(_).md",
@@ -655,13 +671,16 @@ class TestRanking(ToolTestCase):
         self.assertEqual(index.searches[1]["filter"],
                          f'framework = "AVFAudio" AND api_name = "Data" AND {apple_docs_mcp.TYPE_KINDS_FILTER}')
         # A query of several words is no name (only the name its words spell is searched
-        # for: TestSpelledNames); top matches that weren't cut hold every match
+        # for: TestSpelledNames); top matches that weren't cut hold every match (with a
+        # framework, the types named so after a prefix are looked up: TestUnprefixedNames)
         index = self.use_index([dict(doc, content="data stream") for doc in properties] + [data])
         search_apple_docs("data stream", summary_mode=True)
         search_apple_docs("Data", framework="Foundation", summary_mode=True)
-        self.assertEqual([(s["q"], s.get("filter")) for s in index.searches],
+        self.assertEqual([(s["q"], s.get("filter")) for s in name_searches(index)],
                          [("data stream", None), ("datastream", 'api_name = "datastream"'),
-                          ("Data", 'framework = "Foundation"')])
+                          ("Data", 'framework = "Foundation"'),
+                          ("", 'framework = "Foundation" AND api_name_unprefixed IN ["Data"] AND '
+                               + apple_docs_mcp.TYPE_KINDS_FILTER)])
 
     def test_a_lowercase_name_matches_titles_in_any_case(self) -> None:
         # "color" says nothing about case: every page titled so gets the exact boost, and
@@ -696,16 +715,18 @@ class TestRanking(ToolTestCase):
         self.assertEqual(score(boosted, "async Task"), 0.9)
         # Not an article (its api_name is its title), not a word without a capital (a
         # lowercase word names properties of hundreds of types), not a one-word query (the
-        # title boosts decide it), and only the name as typed
-        self.assertEqual(score(dict(boosted, kind="article"), "async Task"), 0.8)
+        # title boosts decide it), and only the name as typed. (Its title holds one of the
+        # two words: title_words_boost's half.)
+        half = round(0.8 + apple_docs_mcp.TITLE_WORDS_BOOST / 2, 6)
+        self.assertEqual(score(dict(boosted, kind="article"), "async Task"), half)
         # Nor an API collection or sample code (kinded by their **Role** line), while a
         # framework (module) keeps it
-        self.assertEqual(score(dict(boosted, kind="collection"), "async Task"), 0.8)
-        self.assertEqual(score(dict(boosted, kind="sample-code"), "async Task"), 0.8)
+        self.assertEqual(score(dict(boosted, kind="collection"), "async Task"), half)
+        self.assertEqual(score(dict(boosted, kind="sample-code"), "async Task"), half)
         self.assertEqual(score(dict(boosted, kind="module"), "async Task"), 0.9)
-        self.assertEqual(score(dict(boosted, api_name="task", title="task"), "async task"), 0.8)
+        self.assertEqual(score(dict(boosted, api_name="task", title="task"), "async task"), half)
         self.assertEqual(score(dict(boosted, title="Task.init"), "Task"), 0.8)
-        self.assertEqual(score(boosted, "async TASK"), 0.8)
+        self.assertEqual(score(boosted, "async TASK"), half)
         # A title boost isn't added to
         self.assertEqual(score(dict(boosted, framework="Swift"), "Swift Task"), 1.0)
         # A capital that may only start the sentence names no symbol ("Color picker in
@@ -713,11 +734,11 @@ class TestRanking(ToolTestCase):
         # the query is no sentence ("Color SwiftUI", "Button SwiftUI": every word a name)
         color = {"title": "Color", "api_name": "Color", "kind": "struct", "_rankingScore": 1.0}
         self.assertEqual(score(color, "Color picker in SwiftUI"), 0.8)
-        self.assertEqual(score(color, "Color picker", "Color picker?"), 0.8)
+        self.assertEqual(score(color, "Color picker", "Color picker?"), half)
         self.assertEqual(score(color, "SwiftUI Color picker"), 0.9)
         self.assertEqual(score(color, "Color SwiftUI"), 0.9)
         self.assertEqual(score(dict(boosted, title="Error", api_name="Error"), "Error handling Swift"), 0.8)
-        self.assertEqual(score(boosted, "Task async"), 0.8)
+        self.assertEqual(score(boosted, "Task async"), half)
         view = {"title": "NavigationView", "api_name": "NavigationView", "kind": "struct", "_rankingScore": 1.0}
         self.assertEqual(score(view, "NavigationView navigationBarTitle"), 0.9)
         self.assertEqual(score(dict(view, api_name="URLSession", title="URLSession"), "URLSession delegate"), 0.9)
@@ -761,7 +782,7 @@ class TestQuestionQueries(ToolTestCase):
         self.assertIn("Search Results: What is NavigationStack?", result)
         self.assertEqual(result_titles(result), ["NavigationStack"])
         search_apple_docs("What’s New", summary_mode=True)
-        self.assertEqual(index.searches[-1]["q"], "What’s New")
+        self.assertEqual(name_searches(index)[-1]["q"], "What’s New")
 
 
 class TestSpelledNames(ToolTestCase):
@@ -780,7 +801,7 @@ class TestSpelledNames(ToolTestCase):
         result = search_apple_docs("vision entitlement services", summary_mode=True)
         self.assertEqual(result_titles(result), ["VisionEntitlementServices", "Entitlements", "WWDC25"])
         self.assertIn("## 1. VisionEntitlementServices (95%)", result)
-        name = index.searches[1]
+        name = name_searches(index)[1]
         self.assertEqual((name["q"], name["filter"], name["limit"], name["distinct"], name["showRankingScore"]),
                          ("visionentitlementservices", 'api_name = "visionentitlementservices"',
                           apple_docs_mcp.SYMBOL_CANDIDATES, "file_path", True))
@@ -840,7 +861,7 @@ class TestSpelledNames(ToolTestCase):
                               "UIScrollView.KeyboardDismissMode", kind="enum", api_name="KeyboardDismissMode")]
         index = self.use_index([article] + members)
         self.assertEqual(result_titles(search_apple_docs("table view", summary_mode=True)), ["Table views"])
-        self.assertEqual(index.searches[1]["q"], "tableview")
+        self.assertEqual(name_searches(index)[1]["q"], "tableview")
         self.assertEqual(result_titles(search_apple_docs("keyboard dismiss mode", summary_mode=True)),
                          ["Table views"])
 
@@ -850,12 +871,12 @@ class TestSpelledNames(ToolTestCase):
                                   kind="article", rank=0.99), content="Swift Data")
         index = self.use_index([article, data])
         result = search_apple_docs("What is Swift Data?", summary_mode=True)
-        self.assertEqual([s["q"] for s in index.searches], ["Swift Data", "SwiftData"])
+        self.assertEqual([s["q"] for s in name_searches(index)], ["Swift Data", "SwiftData"])
         self.assertEqual(result_titles(result), ["SwiftData", "Adding and editing"])
         # The search's filters apply to the name's too
         index.searches.clear()
         search_apple_docs("swift data", framework="SwiftData", platform="ios", summary_mode=True)
-        self.assertEqual(index.searches[1]["filter"],
+        self.assertEqual(name_searches(index)[1]["filter"],
                          'framework = "SwiftData" AND platforms = "ios" AND api_name = "swiftdata"')
 
     def test_only_a_query_of_plain_words_spells_a_name(self) -> None:
@@ -865,7 +886,7 @@ class TestSpelledNames(ToolTestCase):
         for query in ("State", "UI*View", "@State property wrapper", "mlx.core.array", "swift-data model"):
             index.searches.clear()
             search_apple_docs(query, summary_mode=True)
-            self.assertFalse([s for s in index.searches if "api_name =" in s.get("filter", "")], query)
+            self.assertFalse([s for s in index.searches if s.get("filter") == f'api_name = "{s["q"]}"'], query)
         spell = apple_docs_mcp.spelled_name
         self.assertEqual(spell("vision entitlement services"), "visionentitlementservices")
         self.assertEqual(spell("Swift Data"), "SwiftData")
@@ -945,6 +966,25 @@ class TestWildcards(ToolTestCase):
         details = index.searches[-1]
         self.assertEqual(details["q"], "")
         self.assertIn('file_path IN ["documentation/UIKit/uiviewcontroller.md", ', details["filter"])
+
+    def test_a_pattern_written_with_a_sigil(self) -> None:
+        # '@State*': the names starting with State, of the kinds '@' can name
+        docs = [symbol_doc("documentation/SwiftUI/state.md", "State", "SwiftUI", kind="struct"),
+                symbol_doc("documentation/SwiftUI/stateobject.md", "StateObject", "SwiftUI", kind="struct"),
+                symbol_doc("documentation/AppKit/nsview/state.md", "state", "AppKit", kind="property"),
+                symbol_doc("documentation/SwiftUI/preview(_,body).md", "Preview(_:body:)", "SwiftUI", kind="macro",
+                           api_name="Preview"),
+                symbol_doc("documentation/DeveloperToolsSupport/preview.md", "Preview", "DeveloperToolsSupport",
+                           kind="struct")]
+        index = self.use_index([dict(doc, content="State Preview") for doc in docs])
+        result = search_apple_docs("@State*", summary_mode=True)
+        self.assertEqual(result_titles(result), ["State", "StateObject"])
+        self.assertEqual(index.fetches[0]["filter"],
+                         f'kind IN ["class", "struct", "enum", "actor", "typealias", "macro"] AND '
+                         'api_name STARTS WITH "State"')
+        self.assertIn("Search Results: @State*", result)
+        # '#Name?': a macro only
+        self.assertEqual(result_titles(search_apple_docs("#Preview*", summary_mode=True)), ["Preview(_:body:)"])
 
     def test_prefix_pattern_ranks_the_exact_name_first(self) -> None:
         self.use_index(self.uikit())
@@ -1630,6 +1670,46 @@ class TestExtractSection(unittest.TestCase):
         self.assertEqual(apple_docs_mcp.extract_section(page, "resources"),
                          "#### Related\n\n- [Menus](menus.md)\n\n#### Videos\n\n- a talk")
 
+    # The DocC layout from render version 5: Apple's content headings at their own level
+    # ('## Overview', its level-3 and level-4 headings under it)
+    NEW_PAGE = ("# Commands\n\n**Kind**: article\n\n## Declaration\n\n```swift\nstruct Commands\n```\n\n"
+                "## Mentions\n\n- [Models](models.md)\n\n## Overview\n\nThe commands.\n\n"
+                "#### Configuration\n\nConfigure.\n\n### Building\n\nBuild.\n\n#### Debugging\n\nDebug.\n\n"
+                "## Discussion\n\nDiscussed.\n\n## Topics\n\n### Group A\n\n- a\n\n## See Also\n\n- c\n")
+
+    def test_the_current_layout_nests_by_level(self) -> None:
+        # A level-2 section holds its level-4 headings, even after text (the older
+        # layout's rule cut '## Overview' at its first '####': 18 pages)
+        section = apple_docs_mcp.extract_section
+        self.assertFalse(apple_docs_mcp.pushed_down_headings(self.NEW_PAGE))
+        self.assertEqual(section(self.NEW_PAGE, "overview"),
+                         "The commands.\n\n#### Configuration\n\nConfigure.\n\n### Building\n\nBuild.\n\n"
+                         "#### Debugging\n\nDebug.")
+        self.assertEqual(section(self.NEW_PAGE, "declaration"), "```swift\nstruct Commands\n```")
+        self.assertEqual(section(self.NEW_PAGE, "mentions"), "- [Models](models.md)")
+        self.assertEqual(section(self.NEW_PAGE, "building"), "Build.\n\n#### Debugging\n\nDebug.")
+        self.assertEqual(section(self.NEW_PAGE, "discussion"), "Discussed.")
+        self.assertEqual(section(self.NEW_PAGE, "topics"), "### Group A\n\n- a")
+
+    def test_the_older_layout_is_told_by_its_level_4_content_headings(self) -> None:
+        detect = apple_docs_mcp.pushed_down_headings
+        self.assertTrue(detect(self.PAGE))
+        # Its content headings by name (an article's '#### Overview')...
+        self.assertTrue(detect("# A\n\nAbstract.\n\n#### Overview\n\nText.\n\n#### Usage\n\nMore.\n"))
+        for name in ("Discussion", "Return Value"):
+            self.assertTrue(detect(f"# f()\n\n## Declaration\n\n```\nf()\n```\n\n#### {name}\n\nText.\n"))
+        # ...or any '####' right after the sections before the content
+        for leading in ("Declaration", "Possible Values", "Mentions"):
+            page = f"# K\n\n## {leading}\n\n- `a`\n\n#### Example\n\nText.\n\n## See Also\n\n- c\n"
+            self.assertTrue(detect(page), leading)
+            self.assertEqual(apple_docs_mcp.extract_section(page, leading.lower().replace(" ", "_")), "- `a`")
+        # Not a '####' under a content heading, nor the other sources' pages (HIG)
+        self.assertFalse(detect("# A\n\n## Overview\n\nText.\n\n#### Example\n\nMore.\n"))
+        self.assertFalse(detect("# Buttons\n\n## Best practices\n\nText.\n\n#### Push buttons\n\nPush.\n"))
+        self.assertEqual(apple_docs_mcp.extract_section(
+            "# Privacy\n\n## Optional disclosure\n\nText.\n\n#### Programs\n\nMore.\n\n## Types\n\n- t\n",
+            "optional_disclosure"), "Text.\n\n#### Programs\n\nMore.")
+
 
 class TestToolDescriptions(unittest.TestCase):
     """What clients are told: FastMCP publishes a docstring's text before Args, and each
@@ -1677,6 +1757,411 @@ class TestRetries(ToolTestCase):
             chunks = get_file_chunks(PATH)
         self.assertEqual([c["content"] for c in chunks], ["# Concurrency\n"])
         self.assertEqual(len(calls), 2)
+
+
+class TestSigils(ToolTestCase):
+    """'@Name' and '#Name' name an attribute, property wrapper or macro: compared without the
+    sigil, of the kinds so written, and a built-in attribute is searched in Swift's book."""
+
+    def test_sigils_and_their_kinds(self) -> None:
+        self.assertEqual(apple_docs_mcp.strip_sigils("@State var x # 1 #Preview a@b"), "State var x # 1 Preview a@b")
+        self.assertEqual(apple_docs_mcp.sigil_kinds("@MainActor"), apple_docs_mcp.ATTRIBUTE_KINDS)
+        self.assertEqual(apple_docs_mcp.sigil_kinds("#Preview"), ("macro",))
+        self.assertEqual(apple_docs_mcp.sigil_kinds("State a@b # c"), ())
+        self.assertNotIn("protocol", apple_docs_mcp.ATTRIBUTE_KINDS)
+        boost = apple_docs_mcp.title_boost
+        kinds = apple_docs_mcp.ATTRIBUTE_KINDS
+        self.assertEqual(boost("State", "State", "struct", kinds), apple_docs_mcp.TITLE_EXACT_BOOST)
+        # A macro titled with its arguments is the name; a property or protocol isn't one
+        self.assertEqual(boost("Model()", "Model", "macro", kinds), apple_docs_mcp.TITLE_EXACT_BOOST)
+        self.assertEqual(boost("model()", "Model", "macro", kinds), apple_docs_mcp.TITLE_NOCASE_BOOST)
+        self.assertEqual(boost("state", "State", "property", kinds), 0.0)
+        self.assertEqual(boost("Observable", "Observable", "protocol", kinds), 0.0)
+        self.assertEqual(boost("State", "State", "article", kinds), apple_docs_mcp.TITLE_EXACT_BOOST)
+        # Without a sigil, a macro's name(...) is a function of that name
+        self.assertEqual(boost("Model()", "Model", "macro"), apple_docs_mcp.TITLE_FUNCTION_BOOST)
+
+    def test_a_property_wrapper_past_the_top_matches(self) -> None:
+        # (The fake index matches the query as typed; Meilisearch drops the '@')
+        properties = [dict(symbol_doc(f"documentation/AppKit/class{i}/state.md", "state", "AppKit", kind="property"),
+                           content="@State") for i in range(100)]
+        state = dict(symbol_doc("documentation/SwiftUI/state.md", "State", "SwiftUI", kind="struct", rank=0.9),
+                     content="@State")
+        model = dict(symbol_doc("documentation/SwiftData/model().md", "Model()", "SwiftData", kind="macro",
+                                api_name="Model", rank=0.9), content="@Model")
+        index = self.use_index(properties + [state, model])
+        result = search_apple_docs("@State", summary_mode=True)
+        self.assertEqual(result_titles(result)[0], "State")
+        types = name_searches(index)[1]
+        self.assertEqual((types["q"], types["filter"]),
+                         ("State", 'api_name = "State" AND kind IN ["class", "struct", "enum", "actor", '
+                                   '"typealias", "macro"]'))
+        self.assertIn("and the symbols named 'State')", result)
+        # A macro is named by '@Name' too, and the 'state' properties aren't
+        self.assertEqual(result_titles(search_apple_docs("@Model", summary_mode=True))[0], "Model()")
+        self.assertEqual(apple_docs_mcp.calculate_relevance_score(dict(properties[0], _rankingScore=1.0), "@State"),
+                         0.8)
+
+    def test_a_builtin_attribute_is_searched_in_the_swift_book(self) -> None:
+        attributes = dict(symbol_doc("documentation/Swift-Book/ReferenceManual/Attributes.md", "Attributes",
+                                     "Swift-Book", kind="article"), content="escaping attribute objc attribute")
+        other = dict(symbol_doc("documentation/Swift/withoutactuallyescaping.md", "withoutActuallyEscaping(_:do:)",
+                                "Swift", kind="function", rank=0.9), content="escaping closures")
+        index = self.use_index([other, attributes])
+        result = search_apple_docs("@escaping", summary_mode=True)
+        self.assertEqual(result_titles(result), ["Attributes"])
+        self.assertIn("No type or macro is named 'escaping': results for 'escaping attribute'", result)
+        self.assertIn("escaping attribute", [s["q"] for s in index.searches])
+        # A type or macro of that name is the answer instead
+        # (The fake index matches the query as typed; Meilisearch drops the '@')
+        wrapper = dict(symbol_doc("documentation/X/escaping.md", "escaping", "X", kind="struct"),
+                       content="@escaping")
+        self.use_index([other, attributes, wrapper])
+        result = search_apple_docs("@escaping", summary_mode=True)
+        self.assertNotIn("No type or macro", result)
+        self.assertEqual(result_titles(result)[0], "escaping")
+
+    def test_expand_result_reads_a_sigil_name(self) -> None:
+        state = symbol_doc("documentation/SwiftUI/state.md", "State", "SwiftUI", kind="struct")
+        member = symbol_doc("documentation/AppKit/nsview/state.md", "State", "AppKit", kind="property")
+        model = symbol_doc("documentation/SwiftData/model().md", "Model()", "SwiftData", kind="macro",
+                           api_name="Model")
+        protocol = symbol_doc("documentation/X/model.md", "Model", "X", kind="protocol")
+        index = self.use_index([member, state, model, protocol])
+        result = expand_result("@State")
+        self.assertTrue(result.startswith("# State\n"))
+        self.assertEqual(index.fetches[-1]["filter"], 'file_path = "documentation/SwiftUI/state.md"')
+        # AppKit's property named so can't be written '@State'
+        self.assertNotIn("also matches", result)
+        self.assertIn("also matches pages in AppKit", expand_result("State"))
+        # '@Model': the macro, not a protocol (which can't be an attribute)
+        self.assertTrue(expand_result("@Model").startswith("# Model()\n"))
+        self.assertEqual(expand_result("@Nothing").splitlines()[0], "Symbol '@Nothing' not found")
+
+
+class TestNamedFrameworks(ToolTestCase):
+    """A framework the query names restricts the name lookups to it, for the rest of the query."""
+
+    FRAMEWORKS = ["CareKit/CareKitStore", "CareKit/CareKitUI", "AppIntents", "WidgetKit", "Photos", "PhotosUI",
+                  "swift-log/Logging", "SwiftUI"]
+
+    def use_frameworks(self, documents: List[Dict[str, Any]]) -> FakeIndex:
+        stubs = [symbol_doc(f"documentation/{name}/{name.lower()}.md", name.split("/")[-1], name, kind="module")
+                 for name in self.FRAMEWORKS]
+        return self.use_index(documents + stubs)
+
+    def test_named_frameworks(self) -> None:
+        self.use_frameworks([])
+        named = apple_docs_mcp.named_frameworks
+        self.assertEqual(named("CareKit OCKTask"), ("OCKTask", ["CareKit/CareKitStore", "CareKit/CareKitUI"]))
+        self.assertEqual(named("CareKitStore OCKTask"), ("OCKTask", ["CareKit/CareKitStore"]))
+        self.assertEqual(named("App Intents AppIntent"), ("AppIntent", ["AppIntents"]))
+        self.assertEqual(named("WidgetKit timeline provider"), ("timeline provider", ["WidgetKit"]))
+        self.assertEqual(named("swift-log logger"), ("logger", ["swift-log/Logging"]))
+        # The longest run of words from each word ('Photos UI' is PhotosUI, not Photos)
+        self.assertEqual(named("Photos UI picker"), ("picker", ["PhotosUI"]))
+        # One word, nothing named, or nothing else left
+        for query in ("CareKit", "OCKTask", "timeline provider", "CareKit SwiftUI"):
+            self.assertEqual(named(query), (query, []), query)
+        rest = apple_docs_mcp.without_framework_words
+        self.assertEqual(rest("CareKit OCKTask", "CareKit/CareKitStore"), "OCKTask")
+        self.assertEqual(rest("swift log Logger", "swift-log/Logging"), "Logger")
+
+    def test_the_rest_is_looked_up_within_the_named_framework(self) -> None:
+        events = [dict(symbol_doc(f"documentation/SPI/CareKit/CareKitStore/ocktaskevents{i}.md", f"OCKTaskEvents{i}",
+                                  "CareKit/CareKitStore", kind="struct", rank=0.99), content="CareKit OCKTask")
+                  for i in range(3)]
+        # Not in the top matches (Meilisearch ranked it 105th), found by its name
+        task = dict(symbol_doc("documentation/SPI/CareKit/CareKitStore/ocktask.md", "OCKTask", "CareKit/CareKitStore",
+                               kind="struct", rank=0.9), content="OCKTask")
+        index = self.use_frameworks(events + [task])
+        result = search_apple_docs("CareKit OCKTask", summary_mode=True)
+        self.assertEqual(result_titles(result)[0], "OCKTask")
+        types = [s for s in name_searches(index) if "api_name =" in s.get("filter", "")][0]
+        self.assertEqual((types["q"], types["filter"]),
+                         ("OCKTask", 'framework IN ["CareKit/CareKitStore", "CareKit/CareKitUI"] AND '
+                                     f'api_name = "OCKTask" AND {apple_docs_mcp.TYPE_KINDS_FILTER}'))
+
+    def test_the_whole_query_still_spells_a_name(self) -> None:
+        # 'photos picker' names Photos, but spells PhotosUI's PhotosPicker
+        picker = symbol_doc("documentation/PhotosUI/photospicker.md", "PhotosPicker", "PhotosUI", kind="struct")
+        article = dict(symbol_doc("documentation/Photos/picking.md", "Picking photos", "Photos", kind="article",
+                                  rank=0.99), content="photos picker")
+        index = self.use_frameworks([article, picker])
+        result = search_apple_docs("photos picker", summary_mode=True)
+        self.assertEqual(result_titles(result)[0], "PhotosPicker")
+        self.assertIn(("photospicker", 'api_name = "photospicker"'),
+                      [(s["q"], s.get("filter")) for s in index.searches])
+
+
+class TestDottedNames(ToolTestCase):
+    """'Type.member' finds the member's page under its type."""
+
+    def test_parent_name(self) -> None:
+        parent = apple_docs_mcp.parent_name
+        self.assertEqual(parent("documentation/StoreKit/product/purchase(options).md"), "product")
+        self.assertEqual(parent("documentation/SwiftUI/text-swift.struct/font(_).md"), "text")
+        self.assertEqual(parent("documentation/UIKit/uicontentunavailableconfiguration-c.class/button.md"),
+                         "uicontentunavailableconfiguration")
+        # A page at its framework's root is under its framework ('SwiftUI.Text')
+        self.assertEqual(parent("documentation/SwiftUI/text.md"), "swiftui")
+        self.assertEqual(parent("x.md"), "")
+
+    def test_a_member_under_its_type(self) -> None:
+        error = dict(symbol_doc("documentation/StoreKit/product/purchaseerror.md", "Product.PurchaseError",
+                                "StoreKit", kind="enum", api_name="PurchaseError", rank=0.99),
+                     content="Product purchase")
+        other = dict(symbol_doc("documentation/StoreKit/transaction/purchase.md", "purchase", "StoreKit",
+                                kind="method", rank=0.95), content="Product purchase")
+        member = dict(symbol_doc("documentation/StoreKit/product/purchase(options).md", "purchase(options:)",
+                                 "StoreKit", kind="method", api_name="purchase", rank=0.9),
+                      content="Product purchase")
+        async_ = dict(symbol_doc("documentation/Dispatch/dispatchqueue/async(execute).md", "async(execute:)",
+                                 "Dispatch", kind="method", api_name="async", rank=0.5),
+                      content="DispatchQueue main async")
+        index = self.use_index([error, other, member, async_])
+        result = search_apple_docs("Product.purchase", summary_mode=True)
+        self.assertEqual(result_titles(result)[0], "purchase(options:)")
+        self.assertEqual(member["file_path"], re.findall(r"^Path: `([^`]+)`$", result, re.MULTILINE)[0])
+        self.assertIn(("Product purchase", 'api_name = "purchase"'), [(s["q"], s.get("filter"))
+                                                                       for s in index.searches])
+        # A chain names the last component under any earlier one
+        self.assertEqual(result_titles(search_apple_docs("DispatchQueue.main.async", summary_mode=True))[0],
+                         "async(execute:)")
+        # Within a longer query, as a named symbol
+        score = apple_docs_mcp.calculate_relevance_score
+        self.assertEqual(score(dict(member, _rankingScore=1.0, _dotted="whole"), "Product.purchase"), 0.95)
+        self.assertEqual(score(dict(member, _rankingScore=1.0, _dotted="part"), "StoreKit Product.purchase"), 0.9)
+
+    def test_a_query_of_many_dotted_names_is_capped(self) -> None:
+        member = dict(symbol_doc("documentation/StoreKit/product/purchase(options).md", "purchase(options:)",
+                                 "StoreKit", kind="method", api_name="purchase"), content="a b c Product purchase")
+        index = self.use_index([member])
+        search_apple_docs(" ".join(f"a.x{i}" for i in range(40)), summary_mode=True)
+        candidates = [s for s in index.searches if "api_name =" in s.get("filter", "")]
+        self.assertEqual(len(candidates), apple_docs_mcp.DOTTED_NAMES_MAX)
+        # The candidates' paths only: their pages are fetched by the second search
+        self.assertEqual({tuple(s["attributesToRetrieve"]) for s in candidates}, {("file_path",)})
+        self.assertFalse([s for s in candidates if "attributesToHighlight" in s])
+
+    def test_expand_result_reads_a_dotted_name(self) -> None:
+        member = symbol_doc("documentation/StoreKit/product/purchase(options).md", "purchase(options:)", "StoreKit",
+                            kind="method", api_name="purchase")
+        overload = symbol_doc("documentation/StoreKit/product/purchase(confirmin,options).md",
+                              "purchase(confirmIn:options:)", "StoreKit", kind="method", api_name="purchase")
+        nested = symbol_doc("documentation/Combine/publishers/map.md", "Publishers.Map", "Combine", kind="struct",
+                            api_name="Map")
+        self.use_index([dict(doc, content=f"# {doc['title']}\nProduct purchase") for doc in (overload, member)]
+                       + [nested])
+        # The simplest overload
+        self.assertTrue(expand_result("Product.purchase").startswith("# purchase(options:)\n"))
+        # A dotted title is still its page
+        self.assertTrue(expand_result("Publishers.Map").startswith("# Publishers.Map\n"))
+        self.assertEqual(expand_result("Product.refund").splitlines()[0], "Symbol 'Product.refund' not found")
+
+
+class TestTieBreaks(ToolTestCase):
+    """Equally relevant results: a deprecated page after the others."""
+
+    def test_a_deprecated_page_after_its_equals(self) -> None:
+        deprecated = dict(symbol_doc("documentation/RealityKit/a/accessibilitylabel.md", "accessibilityLabel",
+                                     "RealityKit", kind="property"), deprecated=True)
+        current = symbol_doc("documentation/SpriteKit/sknode/accessibilitylabel.md", "accessibilityLabel",
+                             "SpriteKit", kind="property")
+        self.use_index([deprecated, current])
+        paths = re.findall(r"^Path: `([^`]+)`$", search_apple_docs("accessibilityLabel", summary_mode=True),
+                           re.MULTILINE)
+        self.assertEqual(paths, [current["file_path"], deprecated["file_path"]])
+
+
+class TestTitleWords(ToolTestCase):
+    """A multi-word query no name boost applies to prefers the pages whose title holds its words."""
+
+    def test_title_words_share(self) -> None:
+        share = apple_docs_mcp.title_words_share
+        self.assertEqual(share("Tab bars", "tab bar design guidelines"), 0.5)
+        self.assertEqual(share("TimelineProvider", "timeline provider"), 1.0)
+        self.assertEqual(share("Requesting authorization", "request authorization"), 1.0)
+        # Stop words aren't counted; a one-word query has no share; short words never match
+        self.assertEqual(share("Keychain", "the keychain"), 0.0)
+        self.assertEqual(share("Core ML", "core ml"), 0.5)
+        boost = apple_docs_mcp.title_words_boost
+        # A symbol by its name only, not its argument labels
+        method = {"title": "application(_:didRegisterForRemoteNotificationsWithDeviceToken:)",
+                  "api_name": "application", "kind": "method"}
+        self.assertEqual(boost(method, "remote notifications device token"), 0.0)
+        article = {"title": "Tab bars", "kind": "article"}
+        self.assertEqual(boost(article, "tab bar design guidelines"), apple_docs_mcp.TITLE_WORDS_BOOST / 2)
+        self.assertEqual(boost(article, "tab view design guidelines"), 0.0)
+
+    def test_the_page_titled_with_the_words_comes_first(self) -> None:
+        notes = dict(symbol_doc("documentation/Safari-Release-Notes/web-inspector.md", "Web Inspector",
+                                "Safari-Release-Notes", kind="article", rank=0.98), content="tab bar design guidelines")
+        tabs = dict(symbol_doc("documentation/HIG/tab-bars.md", "Tab bars", "HIG", kind="article", rank=0.95),
+                    content="tab bar design guidelines")
+        self.use_index([notes, tabs])
+        self.assertEqual(result_titles(search_apple_docs("tab bar design guidelines", summary_mode=True)),
+                         ["Tab bars", "Web Inspector"])
+
+
+class TestParts(ToolTestCase):
+    """A result from a page in several parts shows the part that best matches the query."""
+
+    def test_the_part_holding_the_other_words(self) -> None:
+        pieces = ["# App Review Guidelines\n\n1 Safety\n", "## 3.1.1 In-App Purchase\n\nreview guidelines purchase\n",
+                  "## 5 Legal\n\nreview guidelines purchase\n"]
+        chunks = page_documents("documentation/App-Store/app-review-guidelines.md", pieces,
+                                title="App Review Guidelines", framework="App-Store")
+        # Meilisearch scores parts 2 and 3 alike (to 0.01: every part has the title's words)
+        # and keeps part 3 (in a summary, only its part number changes)
+        chunks = [dict(chunk, _rankingScore=[0.5, 0.999, 0.998][chunk["chunk_index"]]) for chunk in chunks]
+        index = self.use_index([chunks[2], chunks[1], chunks[0]])
+        result = search_apple_docs("review guidelines purchase", summary_mode=True)
+        # Part 2 matches the word the title doesn't hold best
+        self.assertIn("| Part 2 of 3", result)
+        part_searches = [(s["q"], s["limit"]) for s in index.searches if s.get("filter", "").startswith("file_path =")]
+        self.assertEqual(part_searches, [("review guidelines purchase", 3), ("purchase", 3)])
+        # Only the title's words: nothing tells the parts apart, Meilisearch's stays
+        index.searches.clear()
+        self.assertIn("| Part 3 of 3", search_apple_docs("review guidelines", summary_mode=True))
+        self.assertFalse([s for s in index.searches if s.get("filter", "").startswith("file_path =")])
+        # The parts' scores only are searched; in full, the chosen part's content is
+        # fetched by its id
+        index.searches.clear()
+        index.fetches.clear()
+        result = search_apple_docs("review guidelines purchase")
+        self.assertIn("| Part 2 of 3", result)
+        self.assertIn("## 3.1.1 In-App Purchase", result)
+        self.assertEqual([s["attributesToRetrieve"] for s in index.searches
+                          if s.get("filter", "").startswith("file_path =")], [["chunk_index", "id"]] * 2)
+        self.assertEqual(index.fetches, [{"ids": [chunks[1]["id"]], "fields": ["content", "chunk_index"]}])
+        # A part scored clearly better stays
+        chunks[2]["_rankingScore"] = 1.0
+        chunks[1]["_rankingScore"] = 0.9
+        self.assertIn("| Part 3 of 3", search_apple_docs("review guidelines purchase", summary_mode=True))
+        self.assertEqual(apple_docs_mcp.part_label(chunks[1]), "Part 2 of 3")
+
+    def test_only_a_result_written_out_chooses_its_part(self) -> None:
+        # Each of 5 long pages would cost two searches; a budget that holds one result
+        # searches the parts of the results written (the first, and the one that didn't fit)
+        documents = []
+        for page in range(5):
+            pieces = [f"# Guide {page}\n\nguide intro\n", "## B\n\nguide purchase " + "x " * 3000 + "\n"]
+            documents += page_documents(f"documentation/App-Store/guide{page}.md", pieces, title=f"Guide {page}",
+                                        framework="App-Store")
+        index = self.use_index(documents)
+        search_apple_docs("guide purchase", token_budget=1000)
+        part_paths = {s["filter"] for s in index.searches if s.get("filter", "").startswith("file_path =")}
+        self.assertLessEqual(len(part_paths), 2)
+
+
+class TestUnprefixedNames(ToolTestCase):
+    """Within a framework, a type is found by its name without its prefix."""
+
+    def test_a_prefixed_type_by_its_name(self) -> None:
+        traits = [dict(symbol_doc(f"documentation/UIKit/uiaccessibilitytraits{i}/button.md", "button", "UIKit",
+                                  kind="property"), content="Button") for i in range(3)]
+        uibutton = dict(symbol_doc("documentation/UIKit/uibutton.md", "UIButton", "UIKit", rank=0.5),
+                        api_name_unprefixed="Button", content="A control")
+        swiftui = dict(symbol_doc("documentation/SwiftUI/button.md", "Button", "SwiftUI", kind="struct"),
+                       content="Button")
+        index = self.use_index(traits + [uibutton, swiftui])
+        result = search_apple_docs("Button", framework="UIKit", summary_mode=True)
+        self.assertEqual(result_titles(result)[0], "UIButton")
+        self.assertIn("## 1. UIButton (95%)", result)
+        self.assertIn(("", f'framework = "UIKit" AND api_name_unprefixed IN ["Button"] AND '
+                           f'{apple_docs_mcp.TYPE_KINDS_FILTER}'),
+                      [(s["q"], s.get("filter")) for s in index.searches])
+        # A framework the query names, the name typed as words too
+        device = dict(symbol_doc("documentation/Metal/mtldevice.md", "MTLDevice", "Metal", kind="protocol", rank=0.5),
+                      api_name_unprefixed="Device", content="GPU")
+        properties = [dict(symbol_doc(f"documentation/Metal/mtlbuffer{i}/device.md", "device", "Metal",
+                                      kind="property", rank=0.9), content="Metal device") for i in range(3)]
+        recognizer = dict(symbol_doc("documentation/Speech/sfspeechrecognizer.md", "SFSpeechRecognizer", "Speech",
+                                     rank=0.5), api_name_unprefixed="SpeechRecognizer", content="speech")
+        self.use_index(properties + [device, recognizer])
+        self.assertEqual(result_titles(search_apple_docs("Metal device", summary_mode=True))[0], "MTLDevice")
+        self.assertEqual(result_titles(search_apple_docs("Speech recognizer", summary_mode=True))[0],
+                         "SFSpeechRecognizer")
+        # Without a framework, or with an index built before the field, nothing is looked up
+        index = self.use_index(traits + [uibutton, swiftui])
+        search_apple_docs("Button", summary_mode=True)
+        with patch.object(apple_docs_mcp, "filterable_attributes", lambda: ["framework", "api_name"]):
+            search_apple_docs("Button", framework="UIKit", summary_mode=True)
+        self.assertFalse([s for s in index.searches if "api_name_unprefixed" in s.get("filter", "")])
+
+    def test_a_failed_read_is_retried_later_and_logged_once(self) -> None:
+        client = MagicMock()
+        client.index.return_value.get_filterable_attributes.side_effect = Exception("unavailable")
+        now = [1000.0]
+        with patch.object(apple_docs_mcp, "meili_client", client), \
+                patch.object(apple_docs_mcp, "_filterable_cache", None), \
+                patch.object(apple_docs_mcp, "_filterable_retry_at", 0.0), \
+                patch.object(apple_docs_mcp, "_filterable_failing", False), \
+                patch.object(apple_docs_mcp, "ensure_meilisearch_connection", lambda: True), \
+                patch.object(apple_docs_mcp.time, "time", lambda: now[0]), \
+                self.assertLogs(apple_docs_mcp.logger, "ERROR") as logs:
+            for _ in range(5):
+                self.assertEqual(apple_docs_mcp.filterable_attributes(), [])
+            calls = client.index.return_value.get_filterable_attributes.call_count
+            now[0] += apple_docs_mcp.FILTERABLE_RETRY_SECONDS + 1
+            self.assertEqual(apple_docs_mcp.filterable_attributes(), [])
+            self.assertEqual(client.index.return_value.get_filterable_attributes.call_count, calls + 1)
+            # Read again once it answers
+            client.index.return_value.get_filterable_attributes.side_effect = None
+            client.index.return_value.get_filterable_attributes.return_value = ["framework"]
+            now[0] += apple_docs_mcp.FILTERABLE_RETRY_SECONDS + 1
+            self.assertEqual(apple_docs_mcp.filterable_attributes(), ["framework"])
+        self.assertEqual(calls, 1)
+        self.assertEqual(len([line for line in logs.output if "filterable attributes" in line]), 1)
+
+    def test_filterable_attributes_are_read_once_per_ttl(self) -> None:
+        client = MagicMock()
+        client.index.return_value.get_filterable_attributes.return_value = [
+            "framework", {"attributePatterns": ["api_name_unprefixed"], "features": {}}]
+        with patch.object(apple_docs_mcp, "meili_client", client), \
+                patch.object(apple_docs_mcp, "_filterable_cache", None), \
+                patch.object(apple_docs_mcp, "ensure_meilisearch_connection", lambda: True):
+            self.assertEqual(apple_docs_mcp.filterable_attributes(), ["framework", "api_name_unprefixed"])
+            self.assertEqual(apple_docs_mcp.filterable_attributes(), ["framework", "api_name_unprefixed"])
+        self.assertEqual(client.index.return_value.get_filterable_attributes.call_count, 1)
+
+
+class TestPreferredOverloads(ToolTestCase):
+    """A link or path to an overload with no page of its own leads to its group's page."""
+
+    def test_without_disambiguation(self) -> None:
+        strip = apple_docs_mcp.without_disambiguation
+        self.assertEqual(strip("documentation/SwiftUI/text/init(_)-1a4oh.md"), "documentation/SwiftUI/text/init(_).md")
+        self.assertEqual(strip("../view/alert(_,ispresented,actions)-8584l.md"),
+                         "../view/alert(_,ispresented,actions).md")
+        self.assertEqual(strip("documentation/SwiftUI/view/frame-2ifgd.md"), "documentation/SwiftUI/view/frame.md")
+        # A function's hash may be all letters; an article's last word isn't a hash
+        self.assertEqual(strip("text/init(_)-abcde.md"), "text/init(_).md")
+        for path in ("documentation/HIG/tab-bars.md", "button/init-action-label.md", "x/init(_)-1a4oh7x.md",
+                     "documentation/coreservices/api-1536247-s64div.md", "documentation/SwiftUI/text.md"):
+            self.assertEqual(strip(path), path)
+
+    def test_a_link_to_an_overload_leads_to_its_group_page(self) -> None:
+        self.use_docs(["documentation/SwiftUI/text/init(_).md", "documentation/SwiftUI/text.md"])
+        hints = apple_docs_mcp.transform_internal_links
+        page = "documentation/SwiftUI/text.md"
+        self.assertEqual(hints("[init(_:)](text/init%28_%29-9d1g4.md)", page),
+                         "init(_:) (-> expand_result: documentation/SwiftUI/text/init(_).md)")
+        # No page without the suffix either: a search, without the hash
+        self.assertEqual(hints("[font(_:)](text/font%28_%29-9d1g4.md)", page), "font(_:) (-> search: text font(_))")
+        self.assertEqual(hints("[Tab bars](../hig/tab-bars.md)", page), "Tab bars (-> search: hig tab bars)")
+
+    def test_expand_result_shows_the_group_page(self) -> None:
+        group = symbol_doc("documentation/SwiftUI/text/init(_).md", "init(_:)", "SwiftUI", kind="init",
+                           api_name="init")
+        self.use_index([group])
+        result = expand_result("documentation/SwiftUI/text/init(_)-1a4oh.md")
+        self.assertTrue(result.startswith("# init(_:)\n"))
+        self.assertIn("`documentation/SwiftUI/text/init(_)-1a4oh.md` is not in the docs (an overload with no page "
+                      "of its own): showing `documentation/SwiftUI/text/init(_).md`", result)
+        self.assertEqual(expand_result("documentation/SwiftUI/text/font(_)-1a4oh.md"),
+                         "File not found: documentation/SwiftUI/text/font(_)-1a4oh.md")
 
 
 class TestCutText(unittest.TestCase):

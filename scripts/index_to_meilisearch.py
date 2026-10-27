@@ -78,7 +78,9 @@ TASK_TIMEOUT_MS = 10 * 60 * 1000
 #    else its file name, never an empty title (metadata_extractor extract_title); an
 #    overview is never cut inside a link (cut_overview)
 # 5: an overview after the title skips any leading quote, not only Apple's deprecation
-#    summary: the HIG's "> **Updated …:**" banner was 108 pages' summary
+#    summary (the HIG's "> **Updated …:**" banner was 108 pages' summary);
+#    api_name_unprefixed, a type's name without its prefix (metadata_extractor
+#    extract_unprefixed_name), filterable
 PROCESSOR_VERSION = 5
 
 # The hash file is a flat map of file path -> content hash plus this one key, which no
@@ -160,6 +162,7 @@ INDEX_SETTINGS: Dict[str, Any] = {
         'is_framework_main',
         'file_path',
         'api_name',
+        'api_name_unprefixed',  # a type's name without its prefix (the server's name lookup)
         'is_chunk',
         INDEX_GEN_ATTRIBUTE,  # old documents are deleted by it
     ],
@@ -183,6 +186,12 @@ INDEX_SETTINGS: Dict[str, Any] = {
 
 # Settings Meilisearch keeps as sets (it returns them in another order)
 UNORDERED_SETTINGS = {'filterableAttributes', 'sortableAttributes'}
+
+# The settings that name document fields Meilisearch indexes: one of their attributes the
+# live index lacks (a new indexer's field, e.g. api_name_unprefixed in PROCESSOR_VERSION 5)
+# is a rebuild by swap (missing_index_attributes), never a settings task on the live index,
+# which would re-index every document in place while it serves
+INDEXED_ATTRIBUTE_SETTINGS = ('filterableAttributes', 'sortableAttributes', 'searchableAttributes')
 
 
 class TaskFailedError(Exception):
@@ -245,6 +254,23 @@ def settings_to_update(current: Dict[str, Any], desired: Dict[str, Any]) -> Dict
         if not same:
             changes[name] = value
     return changes
+
+
+def missing_index_attributes(current: Dict[str, Any]) -> List[str]:
+    """The attributes INDEX_SETTINGS' INDEXED_ATTRIBUTE_SETTINGS name that an index's current
+    settings lack ('api_name_unprefixed (filterableAttributes)'). A '*' holds every attribute;
+    Meilisearch lists a filterable setting with features as {"attributePatterns": [...]}."""
+    missing: List[str] = []
+    for name in INDEXED_ATTRIBUTE_SETTINGS:
+        have: Set[str] = set()
+        for item in current.get(name) or []:
+            if isinstance(item, str):
+                have.add(item)
+            elif isinstance(item, dict):
+                have.update(str(pattern) for pattern in item.get('attributePatterns') or [])
+        if '*' not in have:
+            missing += [f"{attribute} ({name})" for attribute in INDEX_SETTINGS[name] if attribute not in have]
+    return missing
 
 
 def expected_file_count() -> Optional[int]:
@@ -543,7 +569,8 @@ class MeilisearchIndexer:
         Why the index must be rebuilt instead of updated, or None. The live index is never
         partial (every build is swapped in complete), so its state in the hash file says
         whether the stored hashes describe it, and its settings whether an older indexer
-        has run on it since.
+        has run on it since, or whether it lacks a field this indexer's settings name
+        (missing_index_attributes).
         """
         if live is None:
             return f"no '{self.index_name}' index yet"
@@ -561,6 +588,10 @@ class MeilisearchIndexer:
         if INDEX_GEN_ATTRIBUTE not in (live_settings.get('filterableAttributes') or []):
             return (f"an older indexer has run on the live index ({INDEX_GEN_ATTRIBUTE} isn't filterable), "
                     f"leaving documents no update deletes")
+        missing = missing_index_attributes(live_settings)
+        if missing:
+            # A field its documents may not hold yet, and adding it in place re-indexes them all
+            return f"the live index lacks {', '.join(missing)}"
         try:
             age = self.now() - parse_meilisearch_time(str(created_at))
         except ValueError:

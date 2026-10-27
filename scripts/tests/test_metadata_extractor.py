@@ -50,6 +50,30 @@ class TestMetadataExtractor(unittest.TestCase):
                 result = self.extractor.extract_api_name(content, "test.md")
                 self.assertEqual(result, expected)
 
+    def test_extract_unprefixed_name(self) -> None:
+        """A type's name after its prefix: 2-4 leading capitals (letters or digits after the
+        first) before a capitalized word; only for types."""
+        unprefixed = self.extractor.extract_unprefixed_name
+        for name, expected in (("UIButton", "Button"), ("MTLDevice", "Device"), ("NSWindow", "Window"),
+                               ("SFSpeechRecognizer", "SpeechRecognizer"), ("OCKTask", "Task"),
+                               ("MTL4ComputeCommandEncoder", "ComputeCommandEncoder"),
+                               ("CNContactStore", "ContactStore"), ("URLSession", "Session")):
+            self.assertEqual(unprefixed(name, "class"), expected, name)
+        # No prefix, a longer run of capitals, nothing after it, or not a type
+        for name in ("Button", "View", "NSURLSession", "URL", "ABCDEFGh", "uiButton", "UI_Button"):
+            self.assertIsNone(unprefixed(name, "struct"), name)
+        for kind in ("method", "property", "function", "macro", "article", "module"):
+            self.assertIsNone(unprefixed("UIButton", kind), kind)
+        for kind in ("class", "struct", "enum", "protocol", "actor", "typealias", "union", "type", "namespace"):
+            self.assertEqual(unprefixed("UIButton", kind), "Button", kind)
+
+    def test_extract_metadata_has_the_unprefixed_name(self) -> None:
+        content = ("# UIButton\n\n**Framework**: UIKit  \n**Kind**: class\n\nA control.\n\n---\n\n"
+                   "*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibutton)*\n")
+        file_path = self.create_test_file(content, "documentation/UIKit/uibutton.md")
+        metadata = self.extractor.extract_metadata(content, file_path)
+        self.assertEqual((metadata["api_name"], metadata["api_name_unprefixed"]), ("UIButton", "Button"))
+
     def test_extract_api_name_ignores_names_in_code_and_prose(self) -> None:
         """A declaration or sample code naming another type doesn't become the API name."""
         content = """# isResponding
@@ -553,6 +577,8 @@ struct MyView: View {
         self.assertEqual(metadata["framework"], "SwiftUI")
         self.assertEqual(metadata["title"], "View")
         self.assertEqual(metadata["kind"], "protocol")
+        # A name without a prefix has no unprefixed name (None values are left out)
+        self.assertNotIn("api_name_unprefixed", metadata)
         # The Availability list, not the visionOS in the sample code
         self.assertEqual(metadata["platforms"], ["iOS", "macOS", "tvOS", "watchOS"])
         # Overview should come from the Overview section, not the first paragraph

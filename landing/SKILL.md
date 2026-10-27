@@ -67,7 +67,7 @@ That's it for most lookups. Add complexity only when needed.
 
 | Parameter | Default | Notes |
 |-----------|---------|-------|
-| `query` | *required* | Use exact symbol names |
+| `query` | *required* | Use exact symbol names; `@State`, `#Preview` and `Type.member` (`Product.purchase`) work as written |
 | `framework` | all | "SwiftUI", "UIKit", "Foundation", etc. |
 | `platform` | all | ios, macos, visionos, watchos, tvos |
 | `summary_mode` | false | **Use `true` for initial searches** |
@@ -80,7 +80,7 @@ That's it for most lookups. Add complexity only when needed.
 
 | Parameter | Notes |
 |-----------|-------|
-| `file_path` | Path from search results (`documentation/SwiftUI/button.md`) or symbol name (`Button`) |
+| `file_path` | Path from search results (`documentation/SwiftUI/button.md`) or symbol name (`Button`, `@State`, `Product.purchase`) |
 | `sections` | Optional: `["declaration", "overview"]` to limit output (taken from the whole page) |
 | `framework` | Optional: framework for symbol lookups (`"SwiftUI"`); use it for common names like `List`, `Text`, `View` |
 | `part` | Optional: part of a long page to start from (`5` for the fifth; the reply holds as many parts as fit); without it, the whole page, or from part 1 if it doesn't fit in one response |

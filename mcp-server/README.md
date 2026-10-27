@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.4.3 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.5.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,18 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.5.0
+- A name written as Swift uses it finds its page: `@State`, `@Model`, `@MainActor`, `#Preview` are compared without the `@`/`#` (Meilisearch reads them as separators), and such a name is only a type that can be an attribute (a property wrapper, result builder or global actor: a class, struct, enum, actor or typealias), an attached macro, or for `#Name` a freestanding macro, whose page is titled `Name(…)` (`@Model` → SwiftData's `Model()`; `@State` and `@Model` were past the top 100). A one-word `@name` that no type or macro has (`@escaping`, `@objc`, `@main`, `@discardableResult`) is one of Swift's built-in attributes: it is searched as `name attribute`, which finds The Swift Programming Language's Attributes chapter, and the results say so. A wildcard pattern written so (`@State*`, `#Preview?`) matches the names without the sigil, of those kinds
+- A query that names a framework (`CareKit OCKTask`, `WidgetKit timeline provider`, `App Intents AppIntent`, `SwiftData @Model`) looks the rest of it up within that framework: the type it names, or the name its words spell. A nested module or package is named by any part of its name (`CareKit` for `CareKit/CareKitStore`, `swift-log` for `swift-log/Logging`), for this and for the title boosts. The whole query's spelled name is still looked up everywhere (`photos picker` → `PhotosPicker`)
+- `Type.member` finds the member under its type (`Product.purchase` → `purchase(options:)`, 21st before; `DispatchQueue.main.async` → `async(execute:)`, 81st; `Text.font`, `View.sheet`, `Color.red`, `UIApplication.shared`), ranked as the name it is, or as a named symbol within a longer query; `expand_result` reads `Type.member` and `@Name` too (they were "not found")
+- A type's name without its prefix finds it within a framework the search filters on or the query names (`Button` with `framework: "UIKit"` → `UIButton`, `Metal command queue` → `MTLCommandQueue`, `Speech recognizer` → `SFSpeechRecognizer`), ranked after a page titled with the name itself. The indexer records it (`api_name_unprefixed`: 2-4 leading capitals before a capitalized word, for types only; `PROCESSOR_VERSION` 5, so the first start rebuilds the index by swap; the indexer now also rebuilds whenever the live index lacks a filterable, sortable or searchable attribute its settings name, so a new field never arrives by an in-place settings task). Until the rebuild is swapped in the server doesn't look it up (it reads the index's filterable attributes)
+- A multi-word query that names no page prefers, slightly, the pages whose title holds most of its words (a symbol by its name, not its argument labels): `tab bar design guidelines` → HIG Tab bars, `Keychain store password`, `how to show a sheet in SwiftUI` → `sheet(isPresented:onDismiss:content:)`, golden questions on location permission and local notifications; long release notes and technotes that hold every word somewhere rank below them
+- Equally relevant pages go a deprecated one after the others (`accessibilityLabel`: SpriteKit's before RealityKit's deprecated one)
+- A result from a long page shows the part that best matches: every part holds the page's title, so the words the title doesn't hold break a near-tie (`in-app purchase App Store review guidelines` → App Review Guidelines Part 5, which holds 3.1.1, not Part 7)
+- A link to an overload with no page of its own (`text/init(_)-1a4oh.md`: Apple lists every overload on its group page, whose preferred one is the unsuffixed page) leads to that page in hints and `expand_result` (284 links, 113 targets); a link that stays a `search:` hint drops the DocC hash from its words (`expm1(_)`, not `expm1(_) xkzx`)
+- `expand_result`'s `sections` follow both DocC layouts: in the one from render version 5 (Apple's content headings at their own level, `## Overview` holding `####` headings) a section holds its deeper headings (18 pages' `overview` was cut at its first `####`, e.g. `Swift-Org/userdocs/commands.md` 5,227 → 103 characters); in the older one (`#### Overview` beside `## Declaration`) nothing changes
+- Measured on the local index (403,704 documents) against 3.4.3: golden hit@3 0.860 → 0.895, MRR 0.824 → 0.857; 9 new golden entries (66: 0.909 / 0.877, expand@1 13/13); the 2026-10-26 audit's 80 queries with an expected page top-1 52 → 61, top-3 64 → 70; 350 random titles unchanged but one deprecated page
 
 ### v3.4.3
 - `summary_mode` results show the overview's local links as hints too (`NavigationLink (-> expand_result: documentation/SwiftUI/navigationlink.md)`), as the content and the deprecation note do; the overview is cut to 400 characters after that, never inside a hint or a link. The indexer's own 500-character cut of an overview no longer falls inside a link either (259 overviews ended in half a link; until the rebuild below, such a half link isn't shown)

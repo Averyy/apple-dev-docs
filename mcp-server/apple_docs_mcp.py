@@ -59,7 +59,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.4.3"
+SERVER_VERSION = "3.5.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -138,8 +138,13 @@ URL_SCHEME_RE = re.compile(r'[A-Za-z][A-Za-z0-9+.-]*://')
 MARKDOWN_LINK_RE = re.compile(r'!?\[(?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*\]\((?:[^()\s]|\([^()\s]*\))*\)')
 UNCLOSED_LINK_RE = re.compile(r'!?\[(?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*\]\([^)\s]*$')
 # A heading line of a page (expand_result's sections), and a code fence's line
-HEADING_LINE_RE = re.compile(r'^(#{2,6})[ \t]+(.+?)[ \t]*$')
+HEADING_LINE_RE = re.compile(r'^(#{2,6})[ \t]+(.+?)[ \t]*$', re.MULTILINE)
 FENCE_RE = re.compile(r'^[ \t]*(`{3,}|~{3,})')
+# DocC's level-2 content sections (the headings Apple's pages start their content with),
+# and the sections the converter writes before a page's content: its declaration, the
+# possible values of a key or REST type, its mentions (pushed_down_headings)
+DOCC_CONTENT_HEADINGS = frozenset({"Overview", "Discussion", "Return Value"})
+DOCC_LEADING_SECTIONS = frozenset({"Declaration", "Possible Values", "Mentions"})
 
 # Search ranking (calculate_relevance_score): Meilisearch's _rankingScore, scaled into
 # 1 - TITLE_BOOST_MAX, plus a boost for a page whose title is the name the query asks for.
@@ -169,6 +174,49 @@ DEPRECATED_RANKING_FACTOR = 0.9
 # The kinds of pages that aren't symbols (scripts/metadata_extractor.py: a page without a
 # **Kind** line, by its **Role** line in ROLE_KINDS, else an article)
 NON_SYMBOL_KINDS = ("article", "collection", "sample-code")
+# A multi-word query no title boost applies to (a task, "tab bar design guidelines",
+# "Keychain store password"): Meilisearch has no length normalization and ranks a title
+# match only after proximity, so long pages holding every word somewhere (release notes,
+# sample code lists, technotes) outrank the page whose title holds them. A page whose
+# title holds at least TITLE_WORDS_MIN_SHARE of the query's words (QUESTION_STOP_WORDS
+# left out, at least two) gets TITLE_WORDS_BOOST times that share: small, so an exact
+# name (TITLE_FUNCTION_BOOST and up) still decides. A symbol's title is its api_name
+# only (not its argument labels or its type's name, which hold everyday words). Words
+# match with a short ending (TITLE_WORD_ENDING: bar/bars, request/requesting) when the
+# shorter has TITLE_WORD_MIN letters.
+TITLE_WORDS_BOOST = 0.05
+TITLE_WORDS_MIN_SHARE = 0.5
+TITLE_WORD_MIN = 3
+TITLE_WORD_ENDING = 3
+# A Swift attribute, property wrapper or macro written as used ('@State', '@MainActor',
+# '#Preview'): Meilisearch reads '@' and '#' as separators, so the query's names are
+# compared without them (strip_sigils), and such a name can only be a type (a property
+# wrapper, result builder or global actor) or a macro (sigil_kinds), or a built-in
+# attribute the Swift book documents ('@escaping', '@objc': ATTRIBUTE_SEARCH_WORD)
+SIGIL_RE = re.compile(r"(?<!\S)[@#](?=\w)")
+ATTRIBUTE_SEARCH_WORD = "attribute"
+# A member written after its type ('Product.purchase', 'DispatchQueue.main.async'): its
+# page is under the type's directory, which Apple suffixes with the symbol's language and
+# kind when two symbols share the name ('text-swift.struct', 'uicontentunavailable
+# configuration-c.class')
+DOTTED_NAME_RE = re.compile(r"[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)+")
+# The most dotted names of one query looked up (two searches each)
+DOTTED_NAMES_MAX = 3
+KIND_DIRECTORY_SUFFIX_RE = re.compile(r"-(?:swift|c|objc)\.[a-z.]+$")
+# A prefixed type typed without its prefix ('Button' in UIKit for UIButton, 'Metal device'
+# for MTLDevice, 'Speech recognizer' for SFSpeechRecognizer): the indexer's
+# api_name_unprefixed (scripts/metadata_extractor.py). Looked up only within a framework
+# the search filters on or the query names, where few types share it, and ranked as a
+# title that is the name but for case (TITLE_NOCASE_BOOST) with a full score: after a
+# page titled with the name itself, before every other page
+UNPREFIXED_NAME_FIELD = "api_name_unprefixed"
+UNPREFIXED_NAME_BOOST = TITLE_NOCASE_BOOST
+# A file name ending in a DocC disambiguation suffix ('init(_)-1a4oh.md', 'frame-2ifgd.md'):
+# a symbol's name (no '-': an article's name is words joined by '-', 'init-action-label')
+# and a hash of 4-6 lowercase letters and digits, which holds a digit unless the name is a
+# function's ('tab-bars' is an article's name). A link to an overload the scraper didn't
+# write (without_disambiguation)
+DISAMBIGUATION_SUFFIX_RE = re.compile(r"^([^/-]+)-([a-z0-9]{4,6})\.md$")
 
 # A question ("What is NavigationStack?", "How do I present a sheet in SwiftUI?") is
 # searched without its question and function words: every word must match, and pages
@@ -208,6 +256,12 @@ SYMBOL_CANDIDATES = 100
 # over members of the same name (SwiftUI's Text struct over AVCaption.Ruby's text)
 TYPE_KINDS = ("class", "struct", "enum", "protocol", "actor", "typealias", "union", "type", "namespace")
 TYPE_KINDS_FILTER = "kind IN [" + ", ".join(f'"{kind}"' for kind in TYPE_KINDS) + "]"
+# The kinds a name written '@Name' can be (SIGIL_RE): a property wrapper or result
+# builder (a struct, class or enum, or a typealias of one: Foundation's Published), a
+# global actor (MainActor), or an attached macro; never a protocol or a C type. A name
+# written '#Name' is a freestanding macro (sigil_kinds)
+ATTRIBUTE_KINDS = ("class", "struct", "enum", "actor", "typealias", "macro")
+MACRO_KINDS = ("macro",)
 # Frameworks the "also matches pages in" note names before "and N more"
 AMBIGUITY_FRAMEWORKS_SHOWN = 8
 
@@ -238,6 +292,15 @@ meili_index: Optional[Any] = None
 _frameworks_cache: Optional[Dict[str, int]] = None
 _frameworks_cache_time: float = 0
 _frameworks_cache_ttl: float = 300.0  # seconds
+
+# The live index's filterable attributes (filterable_attributes), refreshed after the
+# framework cache's TTL: a rebuild by swap brings a new indexer's fields
+_filterable_cache: Optional[List[str]] = None
+_filterable_cache_time: float = 0
+# After a failed read, when to try again (the error is logged once until a read succeeds)
+_filterable_retry_at: float = 0
+_filterable_failing = False
+FILTERABLE_RETRY_SECONDS = 30.0
 
 # The directories of a docs root by lowercased name, per root (framework_dirs)
 _framework_dirs: Dict[str, Dict[str, str]] = {}
@@ -427,6 +490,42 @@ def get_framework_counts() -> Dict[str, int]:
         return _frameworks_cache or {}
 
 
+def filterable_attributes() -> List[str]:
+    """The live index's filterable attributes, cached for _frameworks_cache_ttl ([] when
+    they can't be read; a failed refresh keeps the last ones read, and the next read is
+    FILTERABLE_RETRY_SECONDS later).
+
+    A new server starts beside an index the previous indexer built until its rebuild is
+    swapped in (UNPREFIXED_NAME_FIELD comes with PROCESSOR_VERSION 5), and a filter on an
+    attribute the index can't filter fails the whole search."""
+    global _filterable_cache, _filterable_cache_time, _filterable_retry_at, _filterable_failing
+    now = time.time()
+    if _filterable_cache is not None and now - _filterable_cache_time < _frameworks_cache_ttl:
+        return _filterable_cache
+    client = meili_client
+    if client is None or now < _filterable_retry_at:
+        return _filterable_cache or []
+    try:
+        # Not meili_index: a GET on the index object the searches share drops its
+        # Content-Type header (see health_check)
+        index = client.index(INDEX_NAME)
+        settings: List[Any] = _with_retries("settings fetch", index.get_filterable_attributes, 0)
+    except Exception as e:
+        # Tried again after FILTERABLE_RETRY_SECONDS, not on every search
+        _filterable_retry_at = now + FILTERABLE_RETRY_SECONDS
+        if not _filterable_failing:
+            logger.error(f"Failed to get filterable attributes (retrying every {FILTERABLE_RETRY_SECONDS:.0f} s): {e}")
+        _filterable_failing = True
+        return _filterable_cache or []
+    _filterable_failing = False
+    attributes: List[str] = []
+    for setting in settings or []:
+        # Meilisearch lists a setting with features as {"attributePatterns": [...], ...}
+        attributes += [setting] if isinstance(setting, str) else list(setting.get("attributePatterns") or [])
+    _filterable_cache, _filterable_cache_time = attributes, time.time()
+    return attributes
+
+
 def get_index_metadata() -> Optional[Dict]:
     """Get metadata about the last indexing run."""
     if not meili_client:
@@ -446,25 +545,42 @@ def get_index_metadata() -> Optional[Dict]:
 # HELPER FUNCTIONS
 # =============================================================================
 
-def without_framework_words(query: str, framework: str) -> str:
-    """query without the words that name framework, in one word or several ('SwiftUI' for
-    SwiftUI, 'Core Data' for CoreData, 'App Intents' for AppIntents; letters and digits
-    compared, ignoring case), or all of it when nothing else is left."""
-    def key(text: str) -> str:
-        return re.sub(r"[\W_]", "", text.lower())
+def framework_key(text: str) -> str:
+    """A framework name or query word compared as letters and digits, ignoring case."""
+    return re.sub(r"[\W_]", "", text.lower())
 
-    framework_key = key(framework)
+
+def framework_names(framework: str) -> List[str]:
+    """The names a query can call a framework value by: the value, and each part of a
+    nested module's or package's ('CareKit/CareKitStore': CareKit and CareKitStore;
+    'swift-log/Logging': swift-log and Logging)."""
+    return [framework] + (framework.split("/") if "/" in framework else [])
+
+
+def without_framework_words(query: str, framework: str) -> str:
+    """query without the words that name framework (framework_names), in one word or
+    several ('SwiftUI' for SwiftUI, 'Core Data' for CoreData, 'App Intents' for AppIntents,
+    'CareKit' for CareKit/CareKitStore; letters and digits compared, ignoring case), or all
+    of it when nothing else is left."""
+    for name in framework_names(framework):
+        query = _without_name_words(query, framework_key(name))
+    return query
+
+
+def _without_name_words(query: str, name_key: str) -> str:
+    """query without the runs of words whose keys join into name_key, or all of it when
+    nothing else is left."""
     words = query.split()
-    keys = [key(word) for word in words]
+    keys = [framework_key(word) for word in words]
     kept: List[str] = []
     start = 0
     while start < len(words):
         joined, end = "", 0
         for i in range(start, len(words)):
             joined += keys[i]
-            if not keys[i] or not framework_key.startswith(joined):
+            if not keys[i] or not name_key.startswith(joined):
                 break
-            if joined == framework_key:
+            if joined == name_key:
                 end = i + 1
                 break
         if end:
@@ -475,9 +591,80 @@ def without_framework_words(query: str, framework: str) -> str:
     return " ".join(kept or words)
 
 
-def title_boost(title: str, name: str) -> float:
+# The most words a framework's name is typed in ('Core Data', 'App Intents',
+# 'Swift Argument Parser' for swift-argument-parser)
+FRAMEWORK_NAME_MAX_WORDS = 4
+
+
+def named_frameworks(query: str) -> Tuple[str, List[str]]:
+    """The frameworks a query of several words names, and the rest of it: a run of one to
+    FRAMEWORK_NAME_MAX_WORDS words that spells a framework value or one of its names
+    (framework_names, compared as framework_key; the longest run from each word), every
+    framework of that name ('CareKit OCKTask' -> ('OCKTask', ['CareKit/CareKitStore',
+    'CareKit/CareKitUI', …]), 'WidgetKit timeline provider' -> ('timeline provider',
+    ['WidgetKit'])). The query and no frameworks when it is one word, names none, or
+    holds nothing else."""
+    words = query.split()
+    if len(words) < 2:
+        return query, []
+    names: Dict[str, List[str]] = defaultdict(list)
+    for value in get_framework_counts():
+        for name in framework_names(value):
+            if framework_key(name):
+                names[framework_key(name)].append(value)
+    keys = [framework_key(word) for word in words]
+    kept: List[str] = []
+    named: List[str] = []
+    start = 0
+    while start < len(words):
+        joined, end = "", 0
+        for i in range(start, min(len(words), start + FRAMEWORK_NAME_MAX_WORDS)):
+            if not keys[i]:
+                break
+            joined += keys[i]
+            if joined in names:
+                end = i + 1
+        if end:
+            named += names["".join(keys[start:end])]
+            start = end
+        else:
+            kept.append(words[start])
+            start += 1
+    if not kept:
+        return query, []
+    return " ".join(kept), sorted(set(named))
+
+
+def strip_sigils(text: str) -> str:
+    """text without the '@' or '#' starting its words ('@State' -> 'State', '#Preview' ->
+    'Preview'): SIGIL_RE."""
+    return SIGIL_RE.sub("", text)
+
+
+def sigil_kinds(text: str) -> Tuple[str, ...]:
+    """The kinds a name text writes with '@' or '#' can be: ATTRIBUTE_KINDS for '@Name',
+    MACRO_KINDS for '#Name' only, () without either (SIGIL_RE)."""
+    sigils = {match.group(0) for match in SIGIL_RE.finditer(text)}
+    return ATTRIBUTE_KINDS if "@" in sigils else MACRO_KINDS if sigils else ()
+
+
+def kinds_filter(kinds: Tuple[str, ...]) -> str:
+    """The filter for pages of these kinds."""
+    return "kind IN [" + ", ".join(f'"{kind}"' for kind in kinds) + "]"
+
+
+def title_boost(title: str, name: str, kind: str = "", sigil: Tuple[str, ...] = ()) -> float:
     """The boost for a page whose title is name: case and all (any case when name is all
-    lowercase), ignoring case, or a function of that name (name(...))."""
+    lowercase), ignoring case, or a function of that name (name(...)).
+
+    sigil: the kinds the query's name can be when it wrote it '@Name' or '#Name'
+    (sigil_kinds): no other symbol gets a boost (a page that is no symbol still can),
+    and a macro titled 'Name(…)' is that name ('@Model' is SwiftData's Model())."""
+    if sigil:
+        if kind not in sigil + NON_SYMBOL_KINDS:
+            return 0.0
+        if kind == "macro" and title.lower().startswith(name.lower() + "("):
+            return TITLE_EXACT_BOOST if title.startswith(name + "(") else TITLE_NOCASE_BOOST
     if title == name or (name.islower() and title.lower() == name):
         return TITLE_EXACT_BOOST
     if title.lower() == name.lower():
@@ -531,19 +718,64 @@ def calculate_relevance_score(hit: Dict, query: str, asked: str = "") -> float:
 
     A deprecated page the query doesn't name (no boost) ranks lower when its deprecation
     summary holds the query's words (deprecation_matches): DEPRECATED_RANKING_FACTOR.
+
+    Names are compared without a leading '@' or '#' ('@State'), and then only a page of
+    the kinds such a name can be, or one that is no symbol, is named (sigil_kinds,
+    title_boost). A member the query names after its type ('Product.purchase': the hit's
+    '_dotted', NamedPages) is boosted as a title that is the name but for case when that
+    is the whole query, else as a named symbol. A multi-word query that names no page
+    gives the pages whose title holds most of its words a small boost (title_words_boost).
     """
     ranking = float(hit.get("_rankingScore") or 0.0)
     title = str(hit.get("title", ""))
-    rest = without_framework_words(query, str(hit.get("framework", "")))
-    boost = title_boost(title, rest)
+    kind = str(hit.get("kind", ""))
+    sigil = sigil_kinds(query)
+    rest = strip_sigils(without_framework_words(query, str(hit.get("framework", ""))))
+    boost = title_boost(title, rest, kind, sigil)
     if asked.strip():
-        boost = max(boost, title_boost(title.rstrip("?"), asked.strip().rstrip("?")))
-    if not boost:
-        boost = named_symbol_boost(hit, rest.split(), asked.strip() or query)
+        boost = max(boost, title_boost(title.rstrip("?"), strip_sigils(asked.strip().rstrip("?")), kind, sigil))
+    if hit.get("_dotted"):
+        boost = max(boost, TITLE_NOCASE_BOOST if hit["_dotted"] == "whole" else NAMED_SYMBOL_BOOST)
+    if not boost and not (sigil and kind not in sigil):
+        boost = named_symbol_boost(hit, rest.split(), strip_sigils(asked.strip() or query))
     if not boost and deprecation_matches(str(hit.get("deprecation") or ""), query):
         ranking *= DEPRECATED_RANKING_FACTOR
+    if not boost and len(query.split()) > 1:
+        boost = title_words_boost(hit, rest)
     # Rounded, so that hits Meilisearch ranks alike compare equal (see rank_hits)
     return round(ranking * (1 - TITLE_BOOST_MAX) + boost, 6)
+
+
+def title_word_match(query_word: str, title_word: str) -> bool:
+    """Whether a query word is a title's word, or the same but for a short ending
+    (TITLE_WORD_ENDING letters: bar/bars, request/requesting, notification/notifications),
+    the shorter one of at least TITLE_WORD_MIN letters: shorter words (the 's' of "user's",
+    'ML', 'to') match the titles of too many unrelated pages (measured: a how-to question's
+    page fell behind one titled "…a user's location history")."""
+    short, long = sorted((query_word, title_word), key=len)
+    return len(short) >= TITLE_WORD_MIN and long.startswith(short) and len(long) - len(short) <= TITLE_WORD_ENDING
+
+
+def title_words_share(title: str, query: str) -> float:
+    """The share of a query's words (QUESTION_STOP_WORDS left out; 0 for fewer than two)
+    that title holds (title_word_match), its CamelCase names split into words
+    ('TimelineProvider' holds 'timeline' and 'provider')."""
+    words = [word for word in re.findall(r"\w+", query.lower()) if word not in QUESTION_STOP_WORDS]
+    if len(words) < 2:
+        return 0.0
+    title_words = re.findall(r"[a-z0-9_]+", re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", title).lower())
+    return sum(any(title_word_match(word, title_word) for title_word in title_words) for word in words) / len(words)
+
+
+def title_words_boost(hit: Dict, query: str) -> float:
+    """TITLE_WORDS_BOOST times the share of query's words the hit's title holds
+    (title_words_share), when that is at least TITLE_WORDS_MIN_SHARE; a symbol's title is
+    its api_name ('requestWhenInUseAuthorization', not its argument labels), else 0."""
+    kind = str(hit.get("kind", ""))
+    title = str(hit.get("title", ""))
+    name = title if kind in NON_SYMBOL_KINDS else str(hit.get("api_name") or title)
+    share = title_words_share(name, query)
+    return TITLE_WORDS_BOOST * share if share >= TITLE_WORDS_MIN_SHARE else 0.0
 
 
 def spelled_name(query: str) -> str:
@@ -660,25 +892,30 @@ def searchable_filter_value(value: str) -> bool:
     return "\\" not in value
 
 
-def symbol_candidates(name: str, framework: str = "") -> Tuple[List[Dict[str, Any]], List[str]]:
+# The fields of a symbol lookup's candidates (symbol_candidates)
+SYMBOL_FIELDS = ["title", "framework", "kind", "url", "file_path", "api_name", "platforms"]
+
+
+def symbol_candidates(name: str, framework: str = "",
+                      kinds_filter: str = TYPE_KINDS_FILTER) -> Tuple[List[Dict[str, Any]], List[str]]:
     """The pages expand_result's symbol lookup chooses from, one hit per page: the types
-    whose api_name is name (ignoring case), the other pages named so, then the top matches
-    for name (SYMBOL_CANDIDATES of each), within framework when given. Also, without a
-    framework, every framework that has a page whose api_name is name (its pages can
-    outnumber the candidates: 'init' names ~24,000)."""
+    whose api_name is name (ignoring case; the kinds of kinds_filter), the other pages named
+    so, then the top matches for name (SYMBOL_CANDIDATES of each), within framework when
+    given. Also, without a framework, every framework that has a page whose api_name is
+    name (its pages can outnumber the candidates: 'init' names ~24,000)."""
     if not searchable_filter_value(framework):
         return [], []
     base = [f'framework = "{escape_filter_value(framework)}"'] if framework else []
     named = api_name_filter(name)
     # No page is named with a backslash, and a search can't filter on one
-    searches = [base + [named, TYPE_KINDS_FILTER], base + [named], base] if searchable_filter_value(name) else [base]
+    searches = [base + [named, kinds_filter], base + [named], base] if searchable_filter_value(name) else [base]
     candidates: List[Dict[str, Any]] = []
     frameworks: List[str] = []
     seen = set()
     for filters in searches:
         params: Dict[str, Any] = {
             "limit": SYMBOL_CANDIDATES,
-            "attributesToRetrieve": ["title", "framework", "kind", "url", "file_path", "api_name", "platforms"],
+            "attributesToRetrieve": SYMBOL_FIELDS,
             # One candidate per page, so the chunks of one long page can't fill the window
             "distinct": "file_path",
         }
@@ -708,7 +945,8 @@ def generality(hit: Dict[str, Any]) -> Tuple[int, int, int]:
     return in_framework.count("/"), len(in_framework), -len(hit.get("platforms") or [])
 
 
-def pick_symbol(candidates: List[Dict[str, Any]], name: str) -> Optional[Dict[str, Any]]:
+def pick_symbol(candidates: List[Dict[str, Any]], name: str,
+                sigil: Tuple[str, ...] = ()) -> Optional[Dict[str, Any]]:
     """The candidate that is name's page, or None.
 
     In order: an exact, case-sensitive title ('Button' over 'Button tags'), that name's
@@ -716,10 +954,17 @@ def pick_symbol(candidates: List[Dict[str, Any]], name: str) -> Optional[Dict[st
     case-insensitive matches. Among the candidates of the first of these that has any: a
     type before a member, then the shortest title (the simplest overload), then the more
     general page (generality), then the candidates' order.
+
+    sigil: the kinds name can be when it was written '@Name' or '#Name' (sigil_kinds):
+    only a candidate of these can be its page, and a macro titled 'Name(…)' is the exact
+    name ('@Model' -> SwiftData's Model()).
     """
     lower = name.lower()
+    if sigil:
+        candidates = [h for h in candidates if h.get("kind") in sigil]
     tiers: List[Callable[[Dict[str, Any]], bool]] = [
-        lambda h: h.get("title", "") == name,
+        lambda h: h.get("title", "") == name or (
+            bool(sigil) and h.get("kind") == "macro" and h.get("title", "").startswith(name + "(")),
         lambda h: h.get("title", "").startswith(name + "("),
         lambda h: h.get("title", "").lower() == lower or h.get("api_name", "").lower() == lower,
         lambda h: h.get("title", "").lower().startswith(lower + "("),
@@ -736,8 +981,112 @@ def pick_symbol(candidates: List[Dict[str, Any]], name: str) -> Optional[Dict[st
 def rank_hits(hits: List[Dict]) -> List[Dict]:
     """Hits by relevance (their '_relevance'), best first, a wildcard match not in the
     pattern's case after those that are (its '_case_rank', wildcard_matches). Equally
-    relevant hits go the more general page first (generality), then in Meilisearch's order."""
-    return sorted(hits, key=lambda hit: (hit.get('_case_rank', 0), -hit['_relevance'], *generality(hit)))
+    relevant hits go a deprecated page after the others (RealityKit's deprecated
+    accessibilityLabel after the current ones), then the more general page first
+    (generality), then in Meilisearch's order."""
+    return sorted(hits, key=lambda hit: (hit.get('_case_rank', 0), -hit['_relevance'], bool(hit.get("deprecated")),
+                                         *generality(hit)))
+
+
+def parent_name(file_path: str) -> str:
+    """The name of the directory a page is in, within its framework's ('product' for
+    StoreKit/product/purchase(options).md), without the language and kind suffix Apple
+    gives a directory when two symbols share its name ('text-swift.struct' -> 'text'); for
+    a page at its framework's root, the framework's ('SwiftUI.Text' names SwiftUI/text.md)."""
+    parts = file_path.split("/")
+    if len(parts) < 3:
+        return ""
+    return KIND_DIRECTORY_SUFFIX_RE.sub("", parts[-2].lower())
+
+
+def dotted_member_pages(token: str, filters: List[str], params: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """The pages a dotted name names ('Product.purchase', 'DispatchQueue.main.async'): the
+    pages whose api_name is its last component and whose directory (parent_name) is one
+    of the others, from the top SYMBOL_CANDIDATES matches for its components as words,
+    within the filters (params: the search's other parameters). Each is scored as a page
+    named after the member is (its _rankingScore from a search for that name within
+    those pages), not by the type's name, which their text may not hold."""
+    parts = token.split(".")
+    member, parents = parts[-1], {part.lower() for part in parts[:-1]}
+    if not searchable_filter_value(member):
+        return []
+    # Only their paths: the pages under a parent are fetched whole by the second search
+    candidates = safe_search(" ".join(parts), {"limit": SYMBOL_CANDIDATES, "attributesToRetrieve": ["file_path"],
+                                               "distinct": "file_path",
+                                               "filter": " AND ".join(filters + [api_name_filter(member)])})
+    paths = [str(hit.get("file_path", "")) for hit in candidates.get("hits", [])
+             if parent_name(str(hit.get("file_path", ""))) in parents]
+    paths = [path for path in paths
+             if searchable_filter_value(path) and filter_value_bytes(path) <= MAX_FILTER_VALUE_BYTES]
+    if not paths:
+        return []
+    values = ", ".join(f'"{escape_filter_value(path, max_length=None)}"' for path in paths)
+    return list(safe_search(member, dict(params, limit=len(paths),
+                                         filter=" AND ".join(filters + [f"file_path IN [{values}]"]))).get("hits", []))
+
+
+def unprefixed_type_pages(names: List[str], filters: List[str], params: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """The types whose name without its prefix (UNPREFIXED_NAME_FIELD) is one of names,
+    ignoring case, within the filters (at most SYMBOL_CANDIDATES; params: the search's
+    other parameters)."""
+    names = [name for name in dict.fromkeys(names) if name and searchable_filter_value(name)]
+    if not names or UNPREFIXED_NAME_FIELD not in filterable_attributes():
+        # (An index built before the field: none of its types is found so)
+        return []
+    values = ", ".join(f'"{escape_filter_value(name, max_length=None)}"' for name in names)
+    flt = " AND ".join(filters + [f"{UNPREFIXED_NAME_FIELD} IN [{values}]", TYPE_KINDS_FILTER])
+    return list(safe_search("", dict(params, limit=SYMBOL_CANDIDATES, filter=flt)).get("hits", []))
+
+
+def framework_filter(frameworks: List[str]) -> List[str]:
+    """The filter for pages in any of frameworks ([] for none)."""
+    if not frameworks:
+        return []
+    return ["framework IN [" + ", ".join(f'"{escape_filter_value(name)}"' for name in frameworks) + "]"]
+
+
+def choose_part(hit: Dict[str, Any], query: str, with_content: bool) -> None:
+    """A result from a page in several parts shows the part that best matches query.
+
+    Search keeps one document per page (distinct), the first of those it scores alike, and
+    every part carries the page's title, so a query holding the title's words ('in-app
+    purchase App Store review guidelines') scores many parts alike. So the page's parts
+    are searched for query and for its words the title doesn't hold (their scores only),
+    and the hit becomes the part with the best score (to 0.01), then the best for those
+    words, then the first. A part differs from the others only by its content (the
+    indexer copies the page's fields to each), which is fetched by its id when the
+    result shows it (with_content: not summary_mode)."""
+    total = hit.get("total_chunks")
+    path = str(hit.get("file_path", ""))
+    if not (isinstance(total, int) and total > 1):
+        return
+    title_words = set(re.findall(r"\w+", str(hit.get("title", "")).lower()))
+    words = [word for word in re.findall(r"\w+", strip_sigils(query).lower()) if word not in title_words]
+    if not words or not searchable_filter_value(path) or filter_value_bytes(path) > MAX_FILTER_VALUE_BYTES:
+        return
+    params: Dict[str, Any] = {"limit": total, "filter": f'file_path = "{escape_filter_value(path, max_length=None)}"',
+                              "showRankingScore": True, "attributesToRetrieve": ["chunk_index", "id"]}
+    try:
+        parts = safe_search(query, params).get("hits", [])
+        rest = {part.get("chunk_index"): float(part.get("_rankingScore") or 0.0)
+                for part in safe_search(" ".join(words), params).get("hits", [])}
+        if not parts:
+            return
+        best = max(parts, key=lambda part: (round(float(part.get("_rankingScore") or 0.0), 2),
+                                            rest.get(part.get("chunk_index"), 0.0), -int(part.get("chunk_index") or 0)))
+        if best.get("chunk_index") == hit.get("chunk_index"):
+            return
+        if with_content:
+            documents = safe_get_documents({"ids": [best.get("id")], "fields": ["content", "chunk_index"]})
+            chosen = [dict(doc) for doc in documents.results]
+            if not chosen or chosen[0].get("chunk_index") != best.get("chunk_index"):
+                return
+            hit["content"] = chosen[0].get("content", "")
+    except Exception as e:
+        # The part search already found stays shown
+        logger.error(f"Part search failed for '{query}' in {path}: {e}")
+        return
+    hit["chunk_index"] = best.get("chunk_index")
 
 
 def estimate_tokens(text: str) -> int:
@@ -770,6 +1119,22 @@ def local_page(candidate: str) -> Optional[str]:
     if not os.path.isfile(os.path.join(DOCUMENTATION_PATH, *parts[1:])):
         return None
     return "/".join(parts)
+
+
+def without_disambiguation(path: str) -> str:
+    """A page path without the DocC disambiguation suffix ending its file name
+    ('…/text/init(_)-1a4oh.md' -> '…/text/init(_).md'; DISAMBIGUATION_SUFFIX_RE), else
+    path as it is.
+
+    Apple lists every overload of a symbol on its group page, and links to each by its
+    suffixed path, but the preferred overload has no page of its own: its content is the
+    group page, at the unsuffixed path. So a suffixed path that isn't in the docs falls
+    back to that page (link_hints, expand_result)."""
+    folder, slash, name = path.rpartition("/")
+    match = DISAMBIGUATION_SUFFIX_RE.match(name)
+    if match and (match.group(1).endswith(")") or any(char.isdigit() for char in match.group(2))):
+        return f"{folder}{slash}{match.group(1)}.md"
+    return path
 
 
 def transform_internal_links(content: str, file_path: str) -> str:
@@ -806,9 +1171,16 @@ def link_hints(content: str, file_path: str) -> Tuple[str, List[Tuple[int, int]]
             page = local_page(candidate)
             if page:
                 return f"{text} (-> expand_result: {page})"
+        # A link to an overload the scraper wrote no page for: its group's preferred one
+        for candidate in candidates:
+            unsuffixed = without_disambiguation(candidate)
+            page = local_page(unsuffixed) if unsuffixed != candidate else None
+            if page:
+                return f"{text} (-> expand_result: {page})"
         # The path's names, without a file-relative link's "." and ".." segments (the path
-        # itself when it has no other)
-        path = target.replace('.md', '')
+        # itself when it has no other) and without a disambiguation suffix, which no page's
+        # text holds
+        path = without_disambiguation(target).replace('.md', '')
         names = [name for name in path.split('/') if name not in ('', '.', '..')] or [path]
         search_term = ' '.join(names).replace('-', ' ')
         return f"{text} (-> search: {' '.join(search_term.split())})"
@@ -840,19 +1212,39 @@ def summary_text(overview: str, file_path: str, max_chars: int = SUMMARY_CHARS) 
     return UNCLOSED_LINK_RE.sub("", text.rstrip()).rstrip()
 
 
+def pushed_down_headings(content: str) -> bool:
+    """Whether a page has the DocC layout of render versions before 5, which wrote Apple's
+    content headings two levels down: its level-2 ones (Overview, Discussion, Return Value,
+    or an article's own) at '####', as siblings of the converter's '## Declaration' and
+    '## Mentions'. Such a page has '#### Overview', '#### Discussion' or '#### Return
+    Value', or a '####' heading right after one of the sections the converter writes
+    before the content (DOCC_LEADING_SECTIONS): Apple's content starts at level 2, so in
+    the current layout a '## ' heading follows them."""
+    previous: Tuple[int, str] = (0, "")
+    for match in HEADING_LINE_RE.finditer(content):
+        level, name = len(match.group(1)), match.group(2)
+        if level == 4 and (name in DOCC_CONTENT_HEADINGS
+                           or (previous[0] == 2 and previous[1] in DOCC_LEADING_SECTIONS)):
+            return True
+        previous = (level, name)
+    return False
+
+
 def extract_section(content: str, section_name: str) -> str:
     """A section of a page: the text under its heading, a line of level 2-6 (the '# ' line
     is the page's title: a property named 'parameters' would give its whole page), up to
     the next heading of the same or a higher level.
 
-    Level-1 lines end no section: after the title they are comments in code. A level-2
-    section also ends at a '####' heading: the converter writes Apple's level-2 content
-    headings (Overview, Discussion, Return Value) at that level, as siblings that follow
-    '## Declaration' and '## Mentions'. So '## Topics' keeps its '###' groups, and
-    '#### Overview' its '#####' subsections. Unless its '####' headings are its children:
-    when its first sub-heading is a '###', or a '####' with no text before it (HIG's
-    '## Platform considerations' / '### macOS' / '#### …', '## Resources' / '#### Related'),
-    a level-2 section runs to the next '## '."""
+    Level-1 lines end no section: after the title they are comments in code. On a page in
+    the older DocC layout (pushed_down_headings), a level-2 section also ends at a '####'
+    heading: Apple's level-2 content headings (Overview, Discussion, Return Value) are at
+    that level, as siblings that follow '## Declaration' and '## Mentions'. So '## Topics'
+    keeps its '###' groups, and '#### Overview' its '#####' subsections. Unless its '####'
+    headings are its children: when its first sub-heading is a '###', or a '####' with no
+    text before it, a level-2 section runs to the next '## '. On any other page (the
+    current DocC layout, where '## Overview' holds Apple's level-4 '####' headings, and
+    the other sources' pages: HIG's '## Platform considerations' / '### macOS' / '#### …')
+    a section holds every deeper heading."""
     name = re.escape(section_name.replace('_', ' ').title())
     heading = re.search(rf'^(#{{2,6}})[ \t]*{name}[ \t]*$', content, re.MULTILINE | re.IGNORECASE)
     if not heading:
@@ -860,7 +1252,7 @@ def extract_section(content: str, section_name: str) -> str:
     level = len(heading.group(1))
     body = content[heading.end():]
     end = rf'^#{{2,{level}}}\s'
-    if level == 2:
+    if level == 2 and pushed_down_headings(content):
         first = re.search(r'^(#{2,6})\s', body, re.MULTILINE)
         children = first is not None and (
             len(first.group(1)) == 3 or (len(first.group(1)) == 4 and not body[:first.start()].strip())
@@ -1000,6 +1392,161 @@ def link_label(url: str) -> str:
     return f"View on {LINK_HOST_NAMES.get(host, host or 'source')}"
 
 
+def unprefixed_relevance() -> float:
+    """The relevance of a type found by its name without its prefix (UNPREFIXED_NAME_FIELD):
+    a title that is the name but for case, with a full score (after a page titled with the
+    name itself, before every other page)."""
+    return round((1 - TITLE_BOOST_MAX) + UNPREFIXED_NAME_BOOST, 6)
+
+
+class NamedPages:
+    """The pages a (non-wildcard) query names that its top matches can miss, joined to them.
+
+    Meilisearch matches words: a name the query spells differently from the index (as
+    words, with '@', after its type, without its prefix), or a common name whose pages it
+    scores alike, can leave the page asked for out of the top matches or below pages that
+    hold the words apart. Each lookup searches for that name within the search's filters
+    and, when the query names frameworks ('CareKit OCKTask', 'Metal device':
+    named_frameworks), within them, using the rest of the query as the name:
+
+    - a one-word name: the types (and, written '@Name' / '#Name', the macros) named so
+      (only when the top matches were cut, or the query named a framework);
+    - a name typed as words ('async image'): the types and frameworks it spells
+      (spelled_name; scored by spelled_relevance), and with a framework named, also the
+      whole query's ('photos picker' -> PhotosPicker, 'Translation session');
+    - a one-word '@name' no type or macro has ('@escaping', '@objc'): a built-in
+      attribute, which Swift's book documents, so 'name attribute' is searched instead;
+    - 'Type.member' ('Product.purchase', 'DispatchQueue.main.async'): the member's pages
+      under the type (dotted_member_pages; '_dotted' for calculate_relevance_score);
+    - with a framework (the search's or named), the types named so without their prefix
+      ('Button' in UIKit -> UIButton; '_unprefixed', unprefixed_relevance).
+
+    hits: the top matches, joined by the pages found; added: what joined them, for the
+    results' total; attribute_search: the search run instead, if any."""
+
+    def __init__(self, hits: List[Dict[str, Any]], query: str, filters: List[str],
+                 search_params: Dict[str, Any], framework_given: bool) -> None:
+        self.hits = hits
+        self.query = query
+        self.filters = filters
+        self.search_params = search_params
+        self.framework_given = framework_given
+        self.added: List[str] = []
+        self.attribute_search = ""
+        self.rest, self.frameworks = named_frameworks(query)
+        self.name = strip_sigils(self.rest)
+        self.sigil = sigil_kinds(self.rest)
+        self.in_frameworks = self.filters + framework_filter(self.frameworks)
+        self.position = {hit.get("file_path"): i for i, hit in enumerate(hits)}
+
+    def search(self, query: str, filters: List[str], limit: int = SYMBOL_CANDIDATES) -> List[Dict[str, Any]]:
+        params = dict(self.search_params, limit=limit)
+        params.pop("filter", None)
+        if filters:
+            params["filter"] = " AND ".join(filters)
+        return list(safe_search(query, params).get("hits", []))
+
+    def join(self, hit: Dict[str, Any], replace: bool = False) -> bool:
+        """Add hit unless its page is there (replace: put it in that page's place);
+        whether it was added."""
+        path = hit.get("file_path")
+        if path in self.position:
+            if replace:
+                self.hits[self.position[path]] = hit
+            return False
+        self.position[path] = len(self.hits)
+        self.hits.append(hit)
+        return True
+
+    def join_all(self, window_full: bool) -> None:
+        # Words with an '@' spell no name (spelled_name), as words with any other character
+        spelled = spelled_name(self.rest)
+        one_word = bool(re.fullmatch(r"\w+", self.name))
+        if one_word and (window_full or self.frameworks):
+            self.join_types()
+        elif spelled:
+            self.join_spelled(spelled, self.in_frameworks)
+        whole = spelled_name(self.query)
+        if self.frameworks and whole and whole != spelled:
+            self.join_spelled(whole, self.filters)
+        if re.fullmatch(r"@\w+", self.rest.strip()):
+            self.attribute_instead()
+        for token in list(dict.fromkeys(DOTTED_NAME_RE.findall(self.name)))[:DOTTED_NAMES_MAX]:
+            self.join_dotted(token)
+        if self.framework_given or self.frameworks:
+            names = [self.name if one_word else spelled] + ([whole] if self.frameworks else [])
+            self.join_unprefixed([name for name in names if name])
+
+    def join_types(self) -> None:
+        # Meilisearch scores every page with the word as its title alike, in index order:
+        # for a common name (String, Data, Color, State) the type's own page can be past
+        # the top matches, so the types named so join them
+        kinds = kinds_filter(self.sigil) if self.sigil else TYPE_KINDS_FILTER
+        joined = [self.join(hit) for hit in self.search(
+            self.name, self.in_frameworks + [api_name_filter(self.name), kinds])]
+        if any(joined):
+            self.added.append(f"the {'symbols' if self.sigil else 'types'} named '{self.name}'")
+
+    def join_spelled(self, spelled: str, filters: List[str]) -> None:
+        # A name typed as words ('vision entitlement services', 'async image') is one word
+        # in the index (Meilisearch doesn't split CamelCase), which the words match only
+        # joined, and its typo rule counts each joined word as a typo: every page holding
+        # the words apart outranks the named page, even within the top matches. So the
+        # types and frameworks named what the words spell are searched by that name, and
+        # replace or join the top matches (spelled_relevance)
+        joined = False
+        for hit in self.search(spelled, filters + [api_name_filter(spelled)]):
+            if spells_title(str(hit.get("title", "")), spelled):
+                hit["_spelled"] = True
+                joined = self.join(hit, replace=True) or joined
+        if joined:
+            self.added.append(f"the pages named '{spelled}'")
+
+    def attribute_instead(self) -> None:
+        # '@name' that declares nothing in the docs is one of Swift's built-in attributes
+        name = self.name.strip()
+        if any(str(hit.get("api_name", "")).lower() == name.lower() and hit.get("kind") in ATTRIBUTE_KINDS
+               for hit in self.hits):
+            return
+        search = f"{name} {ATTRIBUTE_SEARCH_WORD}"
+        hits = self.search(search, self.filters, limit=int(self.search_params.get("limit") or SYMBOL_CANDIDATES))
+        if hits:
+            self.hits = hits
+            self.position = {hit.get("file_path"): i for i, hit in enumerate(hits)}
+            self.added = []
+            self.attribute_search = search
+
+    def join_dotted(self, token: str) -> None:
+        # 'Type.member': Meilisearch splits the dot into words, so every page holding both
+        # ranks alike (Product.PurchaseError before purchase(options:))
+        flag = "whole" if self.name.strip() == token else "part"
+        joined = False
+        for hit in dotted_member_pages(token, self.in_frameworks, self.search_params):
+            path = hit.get("file_path")
+            if path in self.position:
+                known = self.hits[self.position[path]]
+                if known.get("_dotted") != "whole":
+                    known["_dotted"] = flag
+            else:
+                hit["_dotted"] = flag
+                joined = self.join(hit) or joined
+        if joined:
+            self.added.append(f"the members '{token}' names")
+
+    def join_unprefixed(self, names: List[str]) -> None:
+        joined = False
+        for hit in unprefixed_type_pages(names, self.in_frameworks, self.search_params):
+            path = hit.get("file_path")
+            if path in self.position:
+                self.hits[self.position[path]]["_unprefixed"] = True
+            else:
+                hit["_unprefixed"] = True
+                joined = self.join(hit) or joined
+        if joined:
+            self.added.append("the types named " + " or ".join(f"'{name}'" for name in dict.fromkeys(names))
+                              + " after a prefix")
+
+
 def part_label(hit: Dict[str, Any]) -> str:
     """"Part i of N" for a chunk of a file indexed as several documents, else ""."""
     index, total = hit.get("chunk_index"), hit.get("total_chunks")
@@ -1106,9 +1653,12 @@ def search_apple_docs(
     same_case_pattern = None
     literal_chars = 0
     name_prefix = ""
-    spelled = ""  # the name the query's words spell (spelled_name)
+    wildcard_kinds: Tuple[str, ...] = ()  # the kinds a pattern written '@State*' can match
 
     if has_wildcards:
+        # '@State*', '#Preview?': the names without the sigil, of the kinds so written
+        wildcard_kinds = sigil_kinds(query)
+        query = strip_sigils(query)
         # fnmatch emits atomic groups, so a pattern can't backtrack
         # catastrophically (a hand-built '.*' per '*' let '******Q' freeze the
         # whole server). Runs of '*' collapse; '[' is escaped to stay literal.
@@ -1123,7 +1673,6 @@ def search_apple_docs(
         query = query.replace('*', ' ').replace('?', ' ').strip() or "a"
     else:
         query = question_terms(original_query, query)
-        spelled = spelled_name(query)
 
     # Build Meilisearch filter
     filters = []
@@ -1158,8 +1707,8 @@ def search_apple_docs(
         search_params["filter"] = " AND ".join(filters)
 
     names_total: Optional[int] = None  # names listed for a wildcard pattern's prefix
-    types_added = False  # types named as a one-word query, past the top matches
-    spelled_added = False  # pages named what the query's words spell, past the top matches
+    added: List[str] = []  # the pages named by the query that joined the top matches
+    attribute_search = ""  # the search a built-in attribute's name ran instead (NamedPages)
     try:
         results = safe_search(query, search_params)
         hits = results.get("hits", [])
@@ -1169,45 +1718,20 @@ def search_apple_docs(
             # The pattern's literal text, searched as words, finds a name like
             # UIViewController (one word) only by its first letters, so the top matches
             # are joined by the pages whose name starts with the pattern's prefix
-            hits = wildcard_matches(hits, wildcard_pattern, same_case_pattern, literal_chars)
+            kinds = [kinds_filter(wildcard_kinds)] if wildcard_kinds else []
+            hits = wildcard_matches([hit for hit in hits if not wildcard_kinds or hit.get("kind") in wildcard_kinds],
+                                    wildcard_pattern, same_case_pattern, literal_chars)
             if len(name_prefix) >= WILDCARD_PREFIX_MIN:
-                listed, names_total = list_names_by_prefix(name_prefix, filters)
+                listed, names_total = list_names_by_prefix(name_prefix, filters + kinds)
                 seen = {hit.get("file_path") for hit in hits}
                 for doc in wildcard_matches(listed, wildcard_pattern, same_case_pattern, literal_chars):
                     if doc.get("file_path") not in seen:
                         seen.add(doc.get("file_path"))
                         hits.append(dict(doc, _listed=True))
-        elif window_full and re.fullmatch(r"\w+", query):
-            # Meilisearch scores every page with the word as its title alike, in index
-            # order: for a common name (String, Data, Color, State) the type's own page can
-            # be past the top matches, so the types named so join them
-            type_params = dict(search_params, limit=SYMBOL_CANDIDATES,
-                               filter=" AND ".join(filters + [api_name_filter(query), TYPE_KINDS_FILTER]))
-            seen = {hit.get("file_path") for hit in hits}
-            for hit in safe_search(query, type_params).get("hits", []):
-                if hit.get("file_path") not in seen:
-                    seen.add(hit.get("file_path"))
-                    hits.append(hit)
-                    types_added = True
-        elif spelled:
-            # A name typed as words ('vision entitlement services', 'async image') is one
-            # word in the index (Meilisearch doesn't split CamelCase), which the words match
-            # only joined, and its typo rule counts each joined word as a typo: every page
-            # holding the words apart outranks the named page, even within the top matches.
-            # So the types and frameworks named what the words spell are searched by that
-            # name, and replace or join the top matches (spelled_relevance)
-            name_params = dict(search_params, limit=SYMBOL_CANDIDATES,
-                               filter=" AND ".join(filters + [api_name_filter(spelled)]))
-            position = {hit.get("file_path"): i for i, hit in enumerate(hits)}
-            for hit in safe_search(spelled, name_params).get("hits", []):
-                if spells_title(str(hit.get("title", "")), spelled):
-                    hit["_spelled"] = True
-                    if hit.get("file_path") in position:
-                        hits[position[hit.get("file_path")]] = hit
-                    else:
-                        position[hit.get("file_path")] = len(hits)
-                        hits.append(hit)
-                        spelled_added = True
+        else:
+            named_pages = NamedPages(hits, query, filters, search_params, bool(framework))
+            named_pages.join_all(window_full)
+            hits, added, attribute_search = named_pages.hits, named_pages.added, named_pages.attribute_search
     except Exception as e:
         logger.error(f"Search failed for query '{query}': {e}")
         raise ToolError("Search temporarily unavailable. Please try again in a moment.") from e
@@ -1226,6 +1750,8 @@ def search_apple_docs(
             score = spelled_relevance(hit)
         else:
             score = calculate_relevance_score(hit, query, original_query)
+            if hit.get('_unprefixed'):
+                score = max(score, unprefixed_relevance())
         if score >= relevance_threshold:
             hit['_relevance'] = score
             scored_hits.append(hit)
@@ -1238,21 +1764,16 @@ def search_apple_docs(
     scored_hits = rank_hits(scored_hits)
     total_text = f"{len(scored_hits)} results"
     names_capped = names_total is not None and names_total > WILDCARD_NAME_LIMIT
-    added = ""  # what joined the top matches
     if names_total:
         # Every page whose name starts with the prefix was matched, unless there were more
-        added = (f"the first {WILDCARD_NAME_LIMIT:,} of the {names_total:,} names starting with '{name_prefix}'"
-                 if names_capped else f"every name starting with '{name_prefix}'")
-    elif types_added:
-        added = f"the types named '{query}'"
-    elif spelled_added:
-        added = f"the pages named '{spelled}'"
+        added = [f"the first {WILDCARD_NAME_LIMIT:,} of the {names_total:,} names starting with '{name_prefix}'"
+                 if names_capped else f"every name starting with '{name_prefix}'"]
     if window_full:
         # Matches past the top ones were never seen, unless something else found them: a
         # title such as 'Publishers.Map' (api_name 'Map') comes only from the top matches
-        total_text += f" (ranked from the top {window} matches" + (f" and {added}" if added else "") + ")"
+        total_text += f" (ranked from the top {window} matches" + "".join(f" and {part}" for part in added) + ")"
     elif names_capped:
-        total_text += f" (matched against {added})"
+        total_text += f" (matched against {added[0]})"
 
     paginated = scored_hits[offset:offset + limit]
     if not paginated:
@@ -1277,6 +1798,10 @@ def search_apple_docs(
         output.append(f"Framework: {framework}")
     if platform_filter:
         output.append(f"Platform: {platform}")
+    if attribute_search:
+        name = attribute_search.split()[0]
+        output.append(f"No type or macro is named '{name}': results for '{attribute_search}' "
+                      "(Swift's built-in attributes are documented in The Swift Programming Language)")
     output.append("")
 
     # The reply's length in characters, counted whole (estimate_tokens of each piece,
@@ -1292,6 +1817,9 @@ def search_apple_docs(
 
     # Results are numbered by overall rank, so numbers continue across pages
     for rank, hit in enumerate(paginated, offset + 1):
+        if not has_wildcards:
+            # Only for a result written out (choose_part's searches)
+            choose_part(hit, query, not summary_mode)
         result_lines = []
         relevance = hit.get('_relevance', 0)
 
@@ -1438,11 +1966,26 @@ def expand_result(
     # like 'withAnimation' or 'viewDidLoad'
     is_symbol = '/' not in input_value and not input_value.lower().endswith('.md')
     ambiguity_note = ""
+    fallback_note = ""  # a path not in the docs, and the page shown instead
 
     try:
         if is_symbol:
-            hits, named_frameworks = symbol_candidates(input_value, framework)
-            match = pick_symbol(hits, input_value)
+            # '@State' and '#Preview' are State and Preview, of the kinds so written
+            sigil = sigil_kinds(input_value)
+            name = strip_sigils(input_value).strip() or input_value
+            hits, named_frameworks = symbol_candidates(name, framework,
+                                                       kinds_filter(sigil) if sigil else TYPE_KINDS_FILTER)
+            match = pick_symbol(hits, name, sigil)
+            if not match and not sigil and DOTTED_NAME_RE.fullmatch(name) and searchable_filter_value(framework):
+                # 'Product.purchase': the member under its type (a dotted title, such as
+                # 'Publishers.Map', is matched above)
+                members = dotted_member_pages(name, [f'framework = "{escape_filter_value(framework)}"']
+                                              if framework else [], {"attributesToRetrieve": SYMBOL_FIELDS,
+                                                                     "distinct": "file_path"})
+                name = name.rsplit(".", 1)[1]
+                match = pick_symbol(members, name)
+                if match:
+                    hits, named_frameworks = members, []
 
             if not match:
                 suggestions = [f"   - {h.get('api_name', h.get('title'))} ({h.get('framework')})" for h in hits[:5]]
@@ -1456,11 +1999,13 @@ def expand_result(
                 # Same name in other frameworks (a candidate's title, or any page's api_name):
                 # say so, so the caller can pick one
                 title = hit.get("title", "").lower()
+                # (Written '@Name', only the pages of the kinds so written)
                 others = sorted(({
                     h.get("framework", "") for h in hits
-                    if h.get("title", "").lower() == title
-                    or h.get("title", "").lower().startswith(input_value.lower() + "(")
-                } | set(named_frameworks)) - {hit.get("framework", "")})
+                    if (h.get("title", "").lower() == title
+                        or h.get("title", "").lower().startswith(name.lower() + "("))
+                    and (not sigil or h.get("kind") in sigil)
+                } | (set() if sigil else set(named_frameworks))) - {hit.get("framework", "")})
                 if others:
                     named = ", ".join(others[:AMBIGUITY_FRAMEWORKS_SHOWN]) + (
                         f" and {len(others) - AMBIGUITY_FRAMEWORKS_SHOWN} more"
@@ -1486,6 +2031,14 @@ def expand_result(
                 )
 
             chunks = get_file_chunks(relative_path)
+            unsuffixed = without_disambiguation(relative_path)
+            if not chunks and unsuffixed != relative_path:
+                # An overload with no page of its own: its group's preferred one
+                chunks = get_file_chunks(unsuffixed)
+                if chunks:
+                    fallback_note = (f"`{relative_path}` is not in the docs (an overload with no page of "
+                                     f"its own): showing `{chunks[0].get('file_path', unsuffixed)}`, the page "
+                                     "of that symbol's overloads.")
             if not chunks:
                 return f"File not found: {relative_path}"
 
@@ -1499,7 +2052,7 @@ def expand_result(
     if not any(pieces):
         return "No content available"
     doc_path = chunks[0].get("file_path", "")
-    notes = [ambiguity_note] if ambiguity_note else []
+    notes = [note for note in (fallback_note, ambiguity_note) if note]
 
     if sections:
         # From the whole page, so a section that spans two chunks comes whole
