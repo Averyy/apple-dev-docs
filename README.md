@@ -214,6 +214,11 @@ cd scripts && python3 index_to_meilisearch.py
 - A page that fails to convert or save on 3 runs, with no successful save in between, stops blocking but is kept
 - A framework's root page never counts toward the 3 failed fetch runs (a root that fails to convert or save follows the rule above). If the root or its links can't be read (a failure other than 404/410, or a 404/410 after the root answered normally earlier in the same run), the framework's cleanup is skipped on every run until the root recovers. A root that returns 404/410 (Apple may be removing the framework, not an error of ours) skips it too, unless the root answers normally later in the same run. Once it has returned 404/410 on 2 runs with no normal answer in between, the framework's docs dir and hash file are deleted at the end of that run
 
+**Links between pages** (the DocC sites: Apple, docs.swift.org and the Swift Package Index packages):
+- A framework's job fetches only its own pages. When another framework's crawl reaches one of its pages that its own crawl doesn't (460 Kernel, WebKit JS and TVML JS pages were missed this way), that page's links are recorded in the framework's hash file (`handoff_links`), as are its pages' links to other frameworks' pages that no crawl follows (`link_seeds`). The framework's own job fetches them from there, so what a run saves doesn't depend on the order its jobs run in; a newly linked page arrives, and an unlinked one goes, at most one run late
+- A link to a page the site has moved (an old `api-NNNN` URL, a renamed page) points at the page its web page redirects to. A link to a page whose web page answers 404/410 on 2 consecutive runs becomes plain text, and gets its link back if the page returns
+- Each run reports the in-scope pages its pages link to that no job fetched and we have no file of (`link_coverage`); the scheduled scrape shows them as a warning in its summary
+
 ### Re-indexing
 
 **`scripts/index_to_meilisearch.py`** - Keeps the `apple-docs` index in step with `documentation/` and records each file's hash for the next run. The live index serves every search throughout:

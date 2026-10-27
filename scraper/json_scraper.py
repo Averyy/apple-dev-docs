@@ -2,18 +2,22 @@
 
 import asyncio
 import copy
+import dataclasses
 import json
 import re
 import time
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Deque, Dict, Final, List, Literal, Mapping, Optional, Sequence, Set, Tuple, Union
+from typing import Any, Callable, Deque, Dict, Final, FrozenSet, List, Literal, Mapping, Optional, Sequence, Set, Tuple, Union
 from urllib.parse import urljoin, urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
-from scraper.sink import HASH_FILE_SUFFIX, HANDOFF_KEY, MODULE_KEY, Sink, SinkRegistry, metadata_ids, module_parents
+from scraper.sink import (
+    GONE_LINKS_KEY, HANDOFF_LINKS_KEY, HASH_FILE_SUFFIX, HANDOFF_KEY, LINK_SEEDS_KEY, MODULE_KEY, TEXT_LINKS_KEY, Sink,
+    SinkRegistry, metadata_ids, module_parents,
+)
 from scraper.site import APPLE, DocCSite
 from scraper.utils.assets import hosting_root, variant_url
 from scraper.utils.hash_manager import COUNTER_FIELDS, HashManager, same_name_any_case, write_text_atomic
@@ -34,10 +38,11 @@ logger = get_logger(__name__)
 KNOWN_BLOCK_TYPES: Final = frozenset({
     'paragraph', 'heading', 'codeListing', 'unorderedList', 'orderedList',
     'table', 'aside', 'imageBlock', 'termList', 'thematicBreak',
-    'tabNavigator', 'row', 'links', 'video',
+    'tabNavigator', 'row', 'links', 'video', 'overviewCard',
 })
 KNOWN_INLINE_TYPES: Final = frozenset({
     'text', 'reference', 'codeVoice', 'emphasis', 'strong', 'image', 'strikethrough',
+    'newTerm', 'inlineHead', 'superscript', 'subscript',
 })
 KNOWN_SECTION_KINDS: Final = frozenset({
     'declarations', 'content', 'discussion', 'returnValue', 'task', 'restBody',
@@ -61,6 +66,9 @@ KNOWN_METADATA_KEYS: Final = frozenset({
     # Ignored on purpose
     'role', 'availableLanguages', 'extendedModule', 'parent', 'images', 'color',
     'customMetadata', 'defaultSuggestedTags',
+    # A Swift Package Index symbol's source file on GitHub: a line of a branch
+    # that moves with every commit, not documentation (the footer links the page)
+    'remoteSource',
 })
 
 # A sample code download's relative URL (<hash>/<name>.zip) is served here
@@ -69,6 +77,12 @@ DOCS_ASSETS_URL: Final = "https://docs-assets.developer.apple.com/published/"
 # A doc:// link written as text in Apple's prose: up to the first whitespace or
 # ">" (parentheses occur inside them); a trailing ".", "," or ";" is the prose's
 DOC_LITERAL: Final = re.compile(r'doc://[^/\s>]+/[^\s>]*')
+
+# A DocC absolute symbol link written as a link's URL: ``/Module/Path[#fragment]``
+SYMBOL_LINK: Final = re.compile(r'``/([^`\s#?]+?)/?(#[^`\s]*)?``')
+
+# A redirect chain longer than this tells nothing of where a linked page went (_follow_link)
+MAX_LINK_REDIRECTS: Final = 5
 
 # A page's Objective-C/C declarations (interfaceLanguage occ) are fenced as
 # objc when one shows Objective-C syntax, else cpp when one shows C++, else c
@@ -224,10 +238,19 @@ class PageLink:
 
 @dataclass(frozen=True)
 class PageLinks:
-    """A page's outgoing links and its own bundle: what the scope rule reads (_in_scope)."""
+    """A page's outgoing links and its own bundle: what the scope rule reads (_in_scope).
+
+    Attributes:
+        bundle: The page's own bundle
+        links: Its curation's links (LINK_SECTIONS, an overload group's overloads)
+        inline: The pages its content links (_inline_identifiers) that its
+            curation doesn't: followed only when no curated link reaches them
+            (_defer_inline)
+    """
 
     bundle: str
     links: Tuple[PageLink, ...]
+    inline: Tuple[PageLink, ...] = ()
 
 
 @dataclass
@@ -430,6 +453,7 @@ class RunSinks:
             site's name, the namespace): whose a hash file there is (any
             other is Apple's)
         removals: The DocC docs that left the config (rule 7(a)), removed first
+        link_gaps: The run's link coverage gaps (link_coverage), by finish_run
     """
 
     listed: Set[Tuple[str, str]] = field(default_factory=set)
@@ -439,10 +463,66 @@ class RunSinks:
     child_modules: Dict[Tuple[str, str], List[Path]] = field(default_factory=dict)
     hash_dirs: Dict[str, Tuple[str, str]] = field(default_factory=dict)
     removals: List[SiteRemoval] = field(default_factory=list)
+    link_gaps: List["LinkGap"] = field(default_factory=list)
 
     def site_of(self, hash_file: Path) -> Tuple[str, str]:
         """The (site name, namespace) of a hash file, by its dir (Apple's if no DocC site's)."""
         return self.hash_dirs.get(str(hash_file.parent).lower(), (APPLE.name, ""))
+
+
+@dataclass(frozen=True)
+class LinkGap:
+    """A page a fetched page links locally that the run never fetched and we have no file of."""
+
+    url: str  # its documentation URL
+    framework: str  # its docs dir (as cased)
+    linked_from: str  # the URL of a page that links it
+
+
+# A file name ending in a DocC disambiguation suffix ("init(_)-1a4oh.md"): a
+# symbol's name, then a hash of 4-6 lowercase letters and digits, which holds a
+# digit unless the name is a function's (the MCP server's DISAMBIGUATION_SUFFIX_RE)
+DISAMBIGUATED_NAME: Final = re.compile(r'^([^/-]+)-([a-z0-9]{4,6})\.md$')
+
+
+def link_coverage(sinks: SinkRegistry) -> List[LinkGap]:
+    """The run's link coverage check: the local links to pages it never fetched (SinkRegistry.link_gaps).
+
+    Each page a link names that no job fetched by the end of the run, of a
+    sink whose own job ran (or a D6 module's), when we have no file of it:
+    the crawl rules never reached it, and the link is dead. Left out: a
+    page whose entry is an error entry (never good: e.g. Apple's firewall
+    answers 403 for it) and a preferred overload, which has no page of its
+    own (its group's page is at the unsuffixed path, where the MCP server
+    sends the link). Logged (link_coverage, and link_coverage_gaps with
+    examples as a WARN); a gap is never an error.
+    """
+    gaps: List[LinkGap] = []
+    for json_url, (site, dir_name, linked_from) in sinks.link_gaps.items():
+        sink = sinks.find(site, dir_name)
+        if sink is None or not (sink.primary_ran or sink.module) or json_url in sink.processed_urls:
+            continue
+        entry = sink.hash_manager.hashes.get(json_url)
+        if isinstance(entry, dict) and entry.get('status') == 'error':
+            continue
+        doc_url = doc_url_of(site, json_url)
+        file_path = page_path(sink.dir_name, doc_url, site) or ''
+        folder, _, name = file_path.rpartition('/')
+        match = DISAMBIGUATED_NAME.match(name)
+        if match and (match.group(1).endswith(')') or any(char.isdigit() for char in match.group(2))):
+            group = f"{json_url[:-len('.json')].rsplit('-', 1)[0]}.json"
+            if group in sink.processed_urls or AppleJSONDocumentationScraper._have_file(f"{folder}/{match.group(1)}.md"):
+                continue
+        gaps.append(LinkGap(url=doc_url, framework=sink.dir_name, linked_from=linked_from))
+    logger.info("link_coverage", gaps=len(gaps), candidates=len(sinks.link_gaps))
+    if gaps:
+        logger.warning(
+            "link_coverage_gaps",
+            count=len(gaps),
+            frameworks=dict(Counter(gap.framework for gap in gaps).most_common(10)),
+            examples=[f"{gap.url} <- {gap.linked_from}" for gap in gaps[:10]],
+        )
+    return gaps
 
 
 def doc_url_of(site: DocCSite, json_url: str) -> str:
@@ -475,7 +555,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     # content headings keep Apple's level (## Overview, was ####); a page
     # only an excluded collection lists is linked by its URL (a package's
     # proposal template); emphasis keeps its edge whitespace outside its
-    # markers, and a literal "*" in it is escaped
+    # markers, and a literal "*" in it is escaped; new terms, run-in heads,
+    # superscripts and overview cards are rendered (were their plain text); a
+    # link to a page the site moved or removed goes where it is now or is
+    # plain text (_check_link_targets), and a symbol link written as a URL
+    # (``/Module/Symbol``) is that page
     RENDER_VERSION = 4
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
@@ -531,6 +615,32 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self._current_scraping_url = ''
         self._current_sink = self.sink
         self._current_link_dirs: Dict[str, str] = dict(self.sink.known_dirs)
+        # The pages its crawl reached from its root, set when it first runs dry (_drain),
+        # if its root answered
+        self._own_reach: Optional[FrozenSet[str]] = None
+        self._drained = False
+        # Inline links in the job's scope, kept for the end of its crawl (_defer_inline)
+        self._inline_pending: Dict[str, None] = {}
+        # The pages links name that the site moved ({URL: its URL now}) or
+        # removed ({URL: ""}), and the URLs asked, each its check (_check_link_targets)
+        self._link_targets: Dict[str, str] = {}
+        # Pages the site's web page answered 200 for, and 404/410 for (_follow_link);
+        # the pages link references name (their web page's 404s are remembered, gone_links);
+        # pages gone on two runs in a row (_confirmed): a link to one is its text
+        self._link_alive: Set[str] = set()
+        self._web_gone: Set[str] = set()
+        self._link_kind: Set[str] = set()
+        self._confirmed_gone: Set[str] = set()
+        # The gone pages each page being converted shows as text, {its URL: their URLs}
+        self._unlinked_by_page: Dict[str, Set[str]] = {}
+        # The pages whose file shows a gone page's link as text, {JSON URL: (its sink, those pages' URLs)}
+        self._relink: Dict[str, Tuple[Sink, List[str]]] = {}
+        # The sinks of the pages this job fetched, by id (_store_link_memory)
+        self._link_sinks: Dict[int, Sink] = {}
+        self._link_checks: Dict[str, "asyncio.Future[None]"] = {}
+        # The pages this job fetched that link locally to a page we have no
+        # file of: {JSON URL: (its sink, {target URL: "link" or "topic"})}
+        self._dead_links: Dict[str, Tuple[Sink, Dict[str, str]]] = {}
         self.include_cross_refs = include_cross_refs
         self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
         # JSON the converter doesn't know, (what, name) -> count, logged at the end
@@ -631,6 +741,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             )
 
         await self.discover_and_scrape_streaming()
+        await self._heal_dead_links()
         self._apply_failure_policy(self.sink)
         self._store_render_version(self.sink)
         
@@ -720,7 +831,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # Dedup hits on pages another job is processing: page -> (its sink, its URL)
         waiting: Dict["asyncio.Future[None]", Tuple[Sink, str]] = {}
 
-        while url_queue or in_flight or waiting:
+        while url_queue or in_flight or waiting or self._drain(url_queue):
             # Launch tasks up to the concurrency limit
             while url_queue and len(in_flight) < Config.INTRA_FRAMEWORK_CONCURRENCY:
                 max_queue_size = max(max_queue_size, len(url_queue))
@@ -728,6 +839,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 sink = self._route(json_url)
                 if sink is None:
                     continue
+                if sink is not self.sink and not sink.module:
+                    # A page of another technology this job's crawl reaches (Sink.handoff_routed)
+                    sink.handoff_routed.add(json_url)
                 if sink.module:
                     # A module's root is part of its parents' crawl, also
                     # when they link only pages under it (e.g. Accelerate's
@@ -909,7 +1023,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     def _take_links(self, sink: Sink, json_url: str, url_queue: Deque[str]) -> None:
         """A page another job processed: its links in this job's scope, or the page's outcome.
 
-        Its kept links are queued (_in_scope). Without links: a page whose
+        Its kept links are queued (_in_scope), its inline ones kept for the
+        end of the crawl (_defer_inline). Without links: a page whose
         processing raised blocks the job at once (exception), and one whose
         fetch failed (ours, counted toward D8) records the job on it
         (dedup_jobs): the end-of-run failure policy gives it the page's
@@ -923,6 +1038,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         links = sink.links.get(json_url)
         if links is not None:
             self._enqueue(self._in_scope(links), url_queue)
+            self._defer_inline(links)
         elif json_url in sink.raised:
             self.outcome.block("exception", json_url)
         elif json_url in sink.fetch_failures or json_url in sink.gone_pending:
@@ -978,6 +1094,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 # Check if we need to process based on content hash
                 if hm.has_changed(json_url, response_text):
                     # Extract and save page data
+                    await self._check_link_targets(sink, data, occ_view, doc_url)
                     page_data = self._extract_from_json(sink, data, doc_url, occ_view)
                     if page_data:
                         # Calculate file path for hash updates
@@ -1006,6 +1123,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                         hm.update_hash(json_url, response_text, file_path)
                         hm.update_hash(doc_url, response_text, file_path)
                     else:
+                        await self._check_link_targets(sink, data, occ_view, doc_url)
                         page_data = self._extract_from_json(sink, data, doc_url, occ_view)
                         file_path = self._get_organized_file_path(sink, doc_url, page_data)
                         await self._save_and_record(
@@ -1063,8 +1181,127 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         if self._follows(sink):
             urls = self._in_scope(page_links)
             self._enqueue(urls, url_queue)
+            self._defer_inline(page_links)
             logger.debug("discovered_child_urls", parent=json_url, count=len(urls))
+            if sink is self.sink and self._own_reach is not None:
+                # Reached after its own crawl (seeds, handoffs, inline): its links as a handoff page's
+                sink.scope_links[json_url] = self._seed_entries(page_links, self.job_id)
+        elif not sink.module and sink.primary_id is not None:
+            # A handoff page: its links are its technology's job's to follow (one
+            # hop). Kept as that job's scope has them, for the seeds of its next
+            # run (HANDOFF_LINKS_KEY), and taken by it this run if its crawl
+            # hasn't ended (_drain)
+            sink.scope_links[json_url] = self._seed_entries(page_links, sink.primary_id)
+        self._note_dead_links(sink, json_url, data, occ_view, page_links)
+        self._note_cross_links(sink, json_url, page_links)
         return occ_view, occ_error
+
+    def _defer_inline(self, page_links: PageLinks) -> None:
+        """Keep a page's inline links in the job's scope for the end of its crawl (_drain).
+
+        A page only its content links (an inline reference, never a curated
+        one) is still Apple's page: it is fetched once the crawl has queued
+        everything curation reaches, if nothing queued it by then. Only the
+        job's own pages and its D6 modules': a page of another top-level
+        technology is that technology's job's, which follows its own pages'
+        inline links (a handoff for a mention alone would make it a
+        multi-writer sink). Nor a page an excluded collection lists
+        (DocCSite.collection_pages: a package's proposals; only curation
+        keeps one in the docs).
+        """
+        for url in self._inline_scope(page_links, self.job_id):
+            self._inline_pending.setdefault(url, None)
+
+    def _inline_scope(self, page_links: PageLinks, job: str) -> List[str]:
+        """A page's inline links that job follows (_defer_inline's rule, for any job)."""
+        if not page_links.inline:
+            return []
+        site, top_level = self.site, self.sinks.top_level(self.site)
+        urls = []
+        for url in self._in_scope(PageLinks(bundle=page_links.bundle, links=page_links.inline), job):
+            segment = self._segment(url)
+            path = url[len(site.json_prefix):-len('.json')]
+            if site.excludes and (site.linked_by_url(path) or path in site.collection_pages):
+                continue
+            if segment == job or segment not in top_level:
+                urls.append(url)
+        return urls
+
+    def _drain(self, url_queue: Deque[str]) -> bool:
+        """At the end of the crawl (nothing queued, in flight or waited on): queue what it still owes.
+
+        The first time: the pages its own crawl reached from its root are
+        its own reach (Sink.own_reach); then, as each time:
+        1. The inline links it kept (_defer_inline) that nothing queued.
+        2. The pages of its own sink another job reached first (handoffs,
+           Sink.writer) that it hasn't queued: each is a dedup hit, so the job
+           follows its links as if its own crawl had reached it (_take_links,
+           waiting for one still in flight). A technology's page that only
+           another technology curates (kernel/ionetworkstats, only IOKit's
+           header page lists it) would else have its links followed by no job.
+        3. The first time only: the seeds, the links its handoff pages had
+           on the last run (HANDOFF_LINKS_KEY, _seeds): a handoff page
+           another job processes after this crawl ended still has its links
+           followed by this job, every run, a run late at most when they change.
+
+        Returns:
+            True if it queued anything: the crawl goes on
+        """
+        seeds: List[str] = []
+        if not self._drained:
+            self._drained = True
+            if self._root_ok:
+                # (A crawl whose root failed reached nothing of its own: no own reach,
+                # no seeds; its hash file's seeds stay as they are, store_handoff_links)
+                self._own_reach = frozenset(self._queued)
+                self.sink.own_reach = self._own_reach
+                seeds = self._seeds()
+        inline = [url for url in self._inline_pending if url not in self._queued]
+        self._inline_pending.clear()
+        handed = [url for url in self.sink.writer if url not in self._queued]
+        self._enqueue(inline + handed + seeds, url_queue)
+        if url_queue:
+            logger.debug("crawl_drain", framework=self.framework_name, inline=len(inline), handoffs=len(handed),
+                         seeds=len(seeds))
+            return True
+        return False
+
+    def _seed_entries(self, page_links: PageLinks, job: str) -> Tuple[Tuple[str, str, str], ...]:
+        """A page's links that job follows (_in_scope, _inline_scope), each as
+        (JSON URL, dir as its identifier cases it, bundle): a seed (HANDOFF_LINKS_KEY)
+        routes as the link would (_routes: a new sink's dir casing, a module's parent bundle)."""
+        followed = set(self._in_scope(page_links, job) + self._inline_scope(page_links, job))
+        entries: Dict[str, Tuple[str, str, str]] = {}
+        for link in (*page_links.links, *page_links.inline):
+            if link.json_url in followed:
+                entries.setdefault(link.json_url, (link.json_url, link.dir_name, link.bundle))
+        return tuple(sorted(entries.values()))
+
+    def _seeds(self) -> List[str]:
+        """The JSON URLs its handoff pages linked on the last run (HANDOFF_LINKS_KEY), and
+        its pages other technologies' pages linked where no scope follows (LINK_SEEDS_KEY), in its scope.
+
+        Only a URL of its site that its scope can reach: a page of its own
+        sink, a module's, or another technology's (not its root, not one its
+        site never crawls or excludes). A seed whose page is gone goes the
+        way any page does (404/410: an error entry, its file orphaned).
+        """
+        seeds: List[str] = []
+        site = self.site
+        for links in [*self.sink.handoff_links_before.values(), self.sink.link_seeds_before]:
+            for url, dir_name, bundle in links:
+                segment = self._segment(url) if url.endswith('.json') else None
+                if segment is None or url in seeds or dir_name.lower() != segment:
+                    continue
+                path = url[len(site.json_prefix):-len('.json')]
+                if site.excludes and site.excluded(path):
+                    continue
+                if segment != self.job_id and segment in self.sinks.top_level(site) and (
+                        url == f"{site.json_prefix}{segment}.json" or not self.sinks.crawls(site, segment)):
+                    continue
+                self._routes.setdefault(segment, (dir_name, bundle))
+                seeds.append(url)
+        return seeds
 
     def _enqueue(self, urls: List[str], url_queue: Deque[str]) -> None:
         """Queue the URLs this job hasn't queued yet; each sink deduplicates at pop time.
@@ -1130,6 +1367,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self._remove_moved_clash_file(sink, json_url, target)
         sink.hash_manager.update_hash(json_url, content, target)
         sink.hash_manager.update_hash(doc_url, content, target)
+        self._record_unlinked(sink, json_url, sorted(self._unlinked_by_page.pop(doc_url, set())))
         self._path_owners(sink)[self._path_key(target)] = json_url.lower()
         return True
 
@@ -1492,8 +1730,47 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             self._section_links(occ_view, links, seen, record)
             if overload_group:
                 self._overload_links(occ_view, links, seen, record)
+        inline: List[PageLink] = []
+        found = {link.json_url for link in links}
+        for view in (data, occ_view):
+            references = view.get('references') if isinstance(view, dict) else None
+            if not isinstance(view, dict) or not isinstance(references, dict):
+                continue
+            for identifier in self._inline_identifiers(view):
+                # Only through a reference: an inline identifier without one is no link
+                if identifier.startswith('doc://') and identifier in references:
+                    self._add_link(identifier, references, inline, found, seen, record=False)
         return PageLinks(bundle=self._bundle_of(page_identifier if isinstance(page_identifier, str) else ''),
-                         links=tuple(links))
+                         links=tuple(links), inline=tuple(inline))
+
+    @staticmethod
+    def _inline_identifiers(document: Dict[str, Any]) -> List[str]:
+        """The identifiers a page view's content links, in order (a doc:// one, or a
+        link reference's URL): its inline
+        references ({"type": "reference"} anywhere in it), its links blocks' items and
+        its mentions. Never its references table, its curation (LINK_SECTIONS) or its
+        variants' patches (the occ view is read on its own)."""
+        identifiers: List[str] = []
+
+        def walk(value: Any) -> None:
+            if isinstance(value, dict):
+                kind = value.get('type')
+                if kind == 'reference' and isinstance(value.get('identifier'), str):
+                    identifiers.append(value['identifier'])
+                elif kind == 'links' and isinstance(value.get('items'), list):
+                    identifiers.extend(item for item in value['items'] if isinstance(item, str))
+                if value.get('kind') == 'mentions' and isinstance(value.get('mentions'), list):
+                    identifiers.extend(item for item in value['mentions'] if isinstance(item, str))
+                for child in value.values():
+                    walk(child)
+            elif isinstance(value, list):
+                for child in value:
+                    walk(child)
+
+        for key, value in document.items():
+            if key not in ('references', 'variantOverrides', *LINK_SECTIONS):
+                walk(value)
+        return identifiers
 
     def _section_links(
         self, document: Dict[str, Any], links: List[PageLink], seen: Set[str], record: bool = True
@@ -1627,8 +1904,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             return None
         return f"{self.site.json_prefix}{self._escape_dot_path_segments(path)}.json"
 
-    def _in_scope(self, page_links: PageLinks) -> List[str]:
-        """The scope rule: the JSON URLs of a page's links that this job follows.
+    def _in_scope(self, page_links: PageLinks, job: Optional[str] = None) -> List[str]:
+        """The scope rule: the JSON URLs of a page's links that this job follows
+        (job: as another job's scope has them, for a handoff page's seeds; this one's by default).
 
         A link is followed if its first path segment is the job's framework,
         or if it is in the same bundle as the page (its identifier's bundle).
@@ -1647,12 +1925,13 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         page of a top-level segment it doesn't crawl (SinkRegistry.crawls:
         not in its allow-list, e.g. docs.swift.org's private stdlib modules).
         """
+        job = job or self.job_id
         urls: List[str] = []
         top_level: Optional[Set[str]] = None
         for link in page_links.links:
             if self.site.excludes and self.site.excluded(link.json_url[len(self.site.json_prefix):-len('.json')]):
                 continue
-            if link.segment != self.job_id:
+            if link.segment != job:
                 if not link.bundle or link.bundle != page_links.bundle:
                     if self.include_cross_refs:
                         self._track_cross_framework_ref(link.identifier)
@@ -1670,8 +1949,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                         # Another technology's root is its own job's, which
                         # always fetches it (under its id's casing)
                         continue
-                self._routes.setdefault(link.segment, (link.dir_name, link.bundle))
-            self._check_resolution(link)
+                if job == self.job_id:
+                    # (another job's scope, for its seeds, never sets this job's routing)
+                    self._routes.setdefault(link.segment, (link.dir_name, link.bundle))
+            if job == self.job_id:
+                self._check_resolution(link)
             urls.append(link.json_url)
         return urls
 
@@ -1815,7 +2097,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # try counts as a local error: the root's links are enqueued when it
         # is processed again as the first queued URL.
         try:
-            data = self._extract_from_json(sink, json_data, url, self._occ_view(json_data))
+            occ_view = self._occ_view(json_data)
+            await self._check_link_targets(sink, json_data, occ_view, url)
+            data = self._extract_from_json(sink, json_data, url, occ_view)
             
             if not data:
                 logger.warning("no_data_extracted", url=url)
@@ -1876,6 +2160,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # dirs its links reach locally: its sink's, and the module dirs its
         # own links route to (_module_link_dirs)
         self._current_scraping_url = doc_url
+        self._unlinked_by_page.pop(doc_url, None)
         self._current_sink = sink
         link_dirs = self._module_link_dirs(sink, self._page_links(json_data, occ_view, record=False))
         self._current_link_dirs = {**sink.known_dirs, **link_dirs}
@@ -2090,15 +2375,450 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         is, any other relative URL resolved against the page's own URL as a
         browser resolves it (a "#section" of the page, a sibling such as
         SPI's "mlx" from …/documentation/mlxnn), "" for a reference without
-        one. Byte-order marks and spaces around it are dropped."""
+        one. Byte-order marks and spaces around it are dropped. A DocC symbol
+        link written as a link's URL (``/DeviceManagement/AssetData``, which
+        no URL holds) is the documentation page at its absolute path; a
+        relative one names no page (_symbol_link_url). A page the site moved
+        (_check_link_targets) is linked where it is now; one gone on two runs
+        in a row (_confirmed, or a link reference's page the site answered
+        404/410 for on this run and the last: Sink.gone_links_before) isn't
+        linked at all (""), which the page's sink records (TEXT_LINKS_KEY)."""
+        url = self._absolute_url(url_path, self._current_scraping_url)
+        if not url or not (self._link_targets or self._confirmed_gone or self._web_gone):
+            return url
+        location, hash_mark, fragment = url.partition('#')
+        key = self._link_key(location)
+        target = self._link_targets.get(key)
+        sink = self._current_sink
+        if target:
+            # Moved: linked where the site's web page sends it
+            return target + hash_mark + fragment
+        link_gone = key in self._web_gone and key in self._link_kind
+        if key in self._confirmed_gone or (link_gone and key in sink.gone_links_before):
+            # Gone on two runs in a row: its text, recorded so a page back gets its link again
+            self._unlinked_by_page.setdefault(self._current_scraping_url, set()).add(key)
+            return ''
+        if link_gone:
+            # The site answered 404/410 once: kept, and asked again on the next run
+            sink.gone_links_seen.add(key)
+        return url
+
+    def _absolute_url(self, url_path: str, page_url: str) -> str:
+        """A reference's URL made absolute (_reference_url), relative to the page at page_url;
+        one that isn't a URL, as it is."""
         url_path = url_path.strip().strip('\ufeff').strip()
+        if url_path.startswith('``'):
+            return self._symbol_link_url(url_path)
         if not url_path:
             return ''
-        if urlparse(url_path).scheme:
+        try:
+            if urlparse(url_path).scheme:
+                return url_path
+            if url_path.startswith('/') or not page_url:
+                return self.site.url(url_path)
+            return urljoin(page_url, url_path)
+        except ValueError:
+            # Not a URL (an unclosed "[" of an IPv6 host): as it is, a link of no page
             return url_path
-        if url_path.startswith('/') or not self._current_scraping_url:
-            return self.site.url(url_path)
-        return urljoin(self._current_scraping_url, url_path)
+
+    @staticmethod
+    def _link_key(location: str) -> str:
+        """A linked page's URL as _link_targets keys it: without its ?query and a trailing "/"."""
+        return location.partition('?')[0].rstrip('/')
+
+    def _local_target(self, sink: Sink, url: str) -> Optional[Tuple[str, str, str]]:
+        """A linked page's URL (fragment and query dropped) as a local link's target:
+        (its JSON URL, its docs dir, its file relative to the docs root), or None when
+        the link isn't local (another site's page, a dir of no sink, an excluded page)."""
+        site = sink.site
+        key = self._link_key(url.partition('#')[0])
+        if not key.startswith(site.doc_prefix):
+            return None
+        path = key[len(site.doc_prefix):]
+        dir_name = sink.known_dirs.get(path.split('/', 1)[0].lower())
+        json_url = self._page_json_url(path)
+        file_path = page_path(dir_name, key, site) if dir_name else None
+        if json_url is None or dir_name is None or file_path is None or (
+                site.excludes and site.linked_by_url(path.lower())):
+            return None
+        return json_url, dir_name, file_path
+
+    @staticmethod
+    def _have_file(file_path: str) -> bool:
+        """Whether the docs hold a page's file (relative to the docs root); a path
+        that can't be checked (too long, a dir we may not search) counts as held:
+        nothing is decided on it."""
+        try:
+            return (Config.OUTPUT_DIR / file_path).exists()
+        except OSError:
+            return True
+
+    def _link_references(
+        self, data: Dict[str, Any], occ_view: Optional[Dict[str, Any]], doc_url: str, topics: bool = True
+    ) -> Dict[str, str]:
+        """The pages of its site a page's links name, {URL: "link" or "topic"}: the link
+        references its content links (_inline_identifiers; a URL its author wrote) and,
+        with topics, every topic reference it holds. Each URL made absolute
+        (_absolute_url), fragment and query dropped, never the page's own; a topic
+        reference wins over a link reference to the same page."""
+        found: Dict[str, str] = {}
+        own = self._link_key(doc_url)
+        for view in (data, occ_view):
+            references = view.get('references') if isinstance(view, dict) else None
+            if not isinstance(view, dict) or not isinstance(references, dict):
+                continue
+            named = [references.get(identifier) for identifier in self._inline_identifiers(view)]
+            named_ids = {id(reference) for reference in named}
+            for reference in [*named, *(references.values() if topics else [])]:
+                if not (isinstance(reference, dict) and isinstance(reference.get('url'), str)
+                        and reference.get('type') in (('link', 'topic') if topics else ('link',))):
+                    continue
+                if reference['type'] == 'link' and id(reference) not in named_ids:
+                    continue
+                key = self._link_key(self._absolute_url(reference['url'], doc_url).partition('#')[0])
+                if key and key != own and found.get(key) != 'topic':
+                    found[key] = reference['type']
+        return found
+
+    def _confirmed(self, sink: Sink, dir_name: str, json_url: str, url: str) -> bool:
+        """Whether a page is gone on two runs in a row: its entry was a 404/410 error
+        entry when the run began (SinkRegistry.gone_before: its JSON answered so on an
+        earlier run), and its web page answers 404/410 now, with no redirect (_web_gone).
+        Read from the run's start and this run's own answer only, so it never depends
+        on which job fetched the page first. A page that answers 404 once (a package's
+        docs being rebuilt, a page just published that the CDN doesn't serve yet) keeps
+        its links."""
+        return url in self._web_gone and json_url in self.sinks.gone_before(sink.site, dir_name)
+
+    def _never_good(self, sink: Sink, dir_name: str, json_url: str) -> bool:
+        """Whether a page's entry is an error entry (a page we never had, e.g. one
+        Apple's firewall answers 403 for), read only from a hash file in memory."""
+        target = self.sinks.find(sink.site, dir_name)
+        entry = target.hash_manager.hashes.get(json_url) if target is not None and target.loaded else None
+        return isinstance(entry, dict) and entry.get('status') == 'error'
+
+    async def _check_link_targets(
+        self, sink: Sink, data: Dict[str, Any], occ_view: Optional[Dict[str, Any]], doc_url: str
+    ) -> None:
+        """Find out where the pages a page's links name went, before it's converted.
+
+        For each reference that would be a local link to a page we have no
+        file of (_local_target), never the page's own:
+        - one whose JSON answered 404/410 (this run, or its entry is an error
+          entry of one) may be an old URL whose web page redirects (a topic
+          reference to foundation/url_loading_system): its web page is
+          asked, and a redirect is linked where it ends; gone on two runs in
+          a row (_confirmed) and not redirected, its text is plain text;
+        - a link reference (a URL its author wrote, which DocC never
+          resolves and the crawl never fetches) names an old URL as often
+          as a page still to be scraped: Apple's numeric URLs
+          (…/transaction/3749718-subscriptiongroupid), renamed pages
+          (foundation/url_loading_system), removed ones, an author's
+          relative link to a file ("exclusivity-violation.md"). Unless the
+          crawl fetches or has queued the page this run, or its entry is an
+          error entry, the site's web page for it says which
+          (_follow_link), once per URL and run: a redirect is linked where
+          it ends, a 404 or 410 isn't linked; any other answer, or none,
+          leaves the link as it is.
+        A topic reference's page is the crawl's to fetch (curated or inline),
+        never asked: when it turns out gone, the end of the job re-renders
+        the page (_heal_dead_links).
+        """
+        for url, kind in self._link_references(data, occ_view, doc_url).items():
+            if kind == 'link':
+                self._link_kind.add(url)
+            if url in self._link_targets or url in self._link_checks:
+                if url in self._link_checks:
+                    await self._link_checks[url]
+                continue
+            target = self._local_target(sink, url)
+            if target is None:
+                continue
+            json_url, dir_name, file_path = target
+            if self._have_file(file_path):
+                continue
+            target_sink = self.sinks.find(sink.site, dir_name)
+            if self._answered_gone(sink, dir_name, json_url):
+                # Its JSON answers 404/410 (now, or on the last run): an old URL its web
+                # page may redirect (foundation/url_loading_system), asked before it's gone
+                await self._ask(url, sink.site, doc_url)
+                if self._confirmed(sink, dir_name, json_url, url):
+                    self._confirmed_gone.add(url)
+                continue
+            if kind == 'topic' or json_url in self._queued or self._never_good(sink, dir_name, json_url) or (
+                    target_sink is not None and json_url in target_sink.processed_urls):
+                continue
+            await self._ask(url, sink.site, doc_url)
+
+    async def _ask(self, url: str, site: DocCSite, page: str) -> None:
+        """Ask the site's web page where the page at url is, once per URL and run (_record_link_target)."""
+        if url not in self._link_checks:
+            self._link_checks[url] = asyncio.ensure_future(self._record_link_target(url, site, page))
+        await self._link_checks[url]
+
+    def _answered_gone(self, sink: Sink, dir_name: str, json_url: str) -> bool:
+        """Whether a page's JSON answered 404/410: this run, or on an earlier one (its entry
+        was an error entry of one when the run began, SinkRegistry.gone_before)."""
+        target = self.sinks.find(sink.site, dir_name)
+        return (target is not None and json_url in target.gone) or json_url in self.sinks.gone_before(
+            sink.site, dir_name)
+
+    async def _record_link_target(self, url: str, site: DocCSite, page: str) -> None:
+        """Ask where the page at url went (_follow_link) and record a move or a removal."""
+        target = await self._follow_link(url, site)
+        if target == url:
+            self._link_alive.add(url)
+        elif target == '':
+            self._web_gone.add(url)
+        elif target is not None:
+            self._link_targets[url] = target
+        if target is not None and target != url:
+            logger.info("link_target_moved" if target else "link_target_gone", page=page, url=url, target=target)
+
+    async def _follow_link(self, url: str, site: DocCSite) -> Optional[str]:
+        """Where the site's web page at url is (HEAD requests, redirects followed by
+        hand): the URL it ends at, "" if it answers 404 or 410, None if it can't tell
+        (any other answer, a redirect chain over MAX_LINK_REDIRECTS, or an error:
+        logged, never raised)."""
+        try:
+            for _ in range(MAX_LINK_REDIRECTS + 1):
+                if not self.session:
+                    return None
+                await self.rate_limiter.acquire()
+                response = await self.session.head(url, follow_redirects=False)
+                location = response.headers.get('location')
+                if response.is_redirect and location:
+                    url = urljoin(url, location).partition('#')[0]
+                    if url.startswith(site.doc_prefix):
+                        url = self._link_key(url)
+                    continue
+                if response.status_code in GONE_STATUSES:
+                    return ''
+                return url if response.status_code == 200 else None
+        except Exception as e:
+            logger.warning("link_check_failed", url=url, error=str(e))
+        return None
+
+    def _note_dead_links(
+        self, sink: Sink, json_url: str, data: Dict[str, Any], occ_view: Optional[Dict[str, Any]],
+        page_links: PageLinks,
+    ) -> None:
+        """Record a fetched page's local links to pages we have no file of, and
+        whether its file shows a gone page's link as text (TEXT_LINKS_KEY).
+
+        For the end of the job (_heal_dead_links: re-render the page if its
+        file holds a link a check can now fix, or the text of one that is
+        back; and a link its file still holds that nothing fixes is the run's
+        link coverage check's, SinkRegistry.link_gaps).
+        Never raises: a link that can't be read is left out (logged).
+        """
+        try:
+            self._link_sinks[id(sink)] = sink
+            doc_url = doc_url_of(sink.site, json_url)
+            unlinked = sink.hash_manager.get_metadata(TEXT_LINKS_KEY)
+            if isinstance(unlinked, dict) and isinstance(unlinked.get(json_url), list):
+                self._relink[json_url] = (sink, [url for url in unlinked[json_url] if isinstance(url, str)])
+            # Its curated and inline links, and the link references its content links
+            # (a reference the page only holds, e.g. a declaration token's, renders no link)
+            targets = self._link_references(data, occ_view, doc_url, topics=False)
+            for link in (*page_links.links, *page_links.inline):
+                targets[self._link_key(doc_url_of(sink.site, link.json_url))] = 'topic'
+            for url, kind in targets.items():
+                target = self._local_target(sink, url)
+                if target is None or self._fetched_or_kept(sink, target):
+                    continue
+                self._dead_links.setdefault(json_url, (sink, {}))[1][url] = kind
+        except Exception as e:
+            logger.warning("dead_links_note_failed", url=json_url, error=str(e))
+
+    def _note_cross_links(self, sink: Sink, json_url: str, page_links: PageLinks) -> None:
+        """Record the pages of other top-level technologies a fetched page links where no
+        scope follows: another bundle's curated link, any inline one (SinkRegistry.cross_links).
+
+        A page only such links reach (Foundation's NSNotification.Name lists Core Data's
+        notifications; USBDriverKit's keys link an IOKit constant) is still its own
+        technology's page: at the run's end the ones its own crawl didn't reach become
+        that technology's link seeds (store_link_seeds), fetched by its own job on its
+        next run. The page's technology here is its sink's (a module's: this job's).
+        Never raises (logged).
+        """
+        try:
+            site = sink.site
+            owner = self.job_id if sink.module or sink.primary_id is None else sink.primary_id
+            top_level = self.sinks.top_level(site)
+            dirs = self.sinks.dirs_of(site)
+            candidates = [link for link in page_links.links
+                          if not link.bundle or link.bundle != page_links.bundle] + list(page_links.inline)
+            for link in candidates:
+                segment = link.segment
+                if segment == owner or segment not in top_level or segment not in dirs:
+                    continue
+                if link.json_url == f"{site.json_prefix}{segment}.json" or not self.sinks.crawls(site, segment):
+                    continue
+                path = link.json_url[len(site.json_prefix):-len('.json')]
+                if site.excludes and (site.linked_by_url(path) or path in site.collection_pages):
+                    continue
+                # The least (dir, bundle) over every link to it: the same whichever page is fetched first
+                found = self.sinks.cross_links.setdefault((site.name, segment), {})
+                entry = (link.dir_name, link.bundle)
+                found[link.json_url] = min(found.get(link.json_url, entry), entry)
+        except Exception as e:
+            logger.warning("cross_links_note_failed", url=json_url, error=str(e))
+
+    def _fetched_or_kept(self, sink: Sink, target: Tuple[str, str, str]) -> bool:
+        """Whether a linked page (_local_target) was fetched this run (its file is
+        written or kept, maybe at another path: a filename clash's) or has a file."""
+        target_sink = self.sinks.find(sink.site, target[1])
+        return (target_sink is not None and target[0] in target_sink.fetch_ok) or self._have_file(target[2])
+
+    def _record_unlinked(self, sink: Sink, json_url: str, targets: List[str]) -> None:
+        """Record in a page's sink the gone pages its file shows as text (TEXT_LINKS_KEY);
+        none removes its record. Written only when it changes."""
+        unlinked = sink.hash_manager.get_metadata(TEXT_LINKS_KEY)
+        current = dict(unlinked) if isinstance(unlinked, dict) else {}
+        if targets:
+            current[json_url] = targets
+        else:
+            current.pop(json_url, None)
+        sink.hash_manager.set_metadata(TEXT_LINKS_KEY, current)
+
+    async def _heal_dead_links(self) -> None:
+        """Re-render the pages this job fetched whose file a check can now fix, at the end of its crawl.
+
+        1. A local link to a page we still have no file of (_note_dead_links)
+           that is fixable: the page is gone on two runs in a row
+           (_confirmed; e.g. a topic reference's page the crawl found gone
+           after the linking page was rendered) or, for a link reference, the
+           site now says it moved, or it answered 404/410 on this run and the
+           last (_follow_link, once per URL and run; a first 404 is
+           remembered for the next run, GONE_LINKS_KEY).
+        2. The text of a gone page's link (TEXT_LINKS_KEY) whose page is back:
+           fetched this run, or on disk, or, for a page the crawl never
+           fetches (a link reference's), its web page answers again (200 or
+           a redirect; asked once a run per page).
+        That heals, on the next run that fetches the page, a link a check
+        couldn't settle (a HEAD that failed) or whose page Apple renamed,
+        removed or restored since, though the page's own JSON never changed.
+        Only a page whose file holds the link (1) or the record (2) is
+        re-rendered (fetched again, then converted and saved as any page),
+        so a link already healed costs nothing; one nothing can fix (a page
+        Apple serves that we don't crawl, a firewall's 403) costs at most a
+        HEAD per run for a link reference, never a re-render. A failure
+        here is logged and changes nothing.
+        """
+        rerender: Dict[str, Sink] = {}
+        for json_url, (sink, targets) in list(self._dead_links.items()):
+            # The links whose page still has no file and wasn't fetched (most were, later in the crawl)
+            missing = {url: (kind, target) for url, kind in targets.items()
+                       if (target := self._local_target(sink, url)) is not None
+                       and not self._fetched_or_kept(sink, target)}
+            entry = sink.hash_manager.hashes.get(json_url) if missing and json_url in sink.saved_ok else None
+            stored = entry.get('file_path') if isinstance(entry, dict) else None
+            try:
+                text = Path(stored).read_text(encoding='utf-8') if stored else None
+            except OSError as e:
+                logger.warning("link_heal_failed", url=json_url, error=str(e))
+                continue
+            if text is None:
+                continue
+            doc_url = doc_url_of(sink.site, json_url)
+            base = link_base(sink.dir_name, doc_url, sink.site)
+            for url, (kind, target) in missing.items():
+                if f"]({doc_link(url, base, sink.known_dirs, sink.site)}" not in text:
+                    continue
+                answered_gone = self._answered_gone(sink, target[1], target[0])
+                if answered_gone:
+                    await self._ask(url, sink.site, doc_url)
+                    if self._confirmed(sink, target[1], target[0], url):
+                        self._confirmed_gone.add(url)
+                elif kind == 'link' and not self._never_good(sink, target[1], target[0]):
+                    self._link_kind.add(url)
+                    await self._ask(url, sink.site, doc_url)
+                moved = self._link_targets.get(url)
+                link_gone = kind == 'link' and url in self._web_gone
+                if link_gone and url not in sink.gone_links_before:
+                    sink.gone_links_seen.add(url)
+                elif moved or url in self._confirmed_gone or link_gone:
+                    rerender[json_url] = sink
+                if not (moved or answered_gone or link_gone):
+                    # A dead local link nothing here fixes, nor a removal pending
+                    # (404/410 once): a page no job may have fetched (link_coverage)
+                    self.sinks.link_gaps.setdefault(target[0], (sink.site, target[1], doc_url))
+        for json_url, (sink, gone) in self._relink.items():
+            if json_url not in sink.saved_ok:
+                continue
+            for url in gone:
+                target = self._local_target(sink, url)
+                if target is None:
+                    continue
+                if not self._fetched_or_kept(sink, target):
+                    target_sink = self.sinks.find(sink.site, target[1])
+                    if target_sink is not None and target[0] in target_sink.processed_urls:
+                        # The crawl fetched it: still gone (404/410), or failed
+                        continue
+                    # A page the crawl never fetches (a link reference's): its web page, once a run
+                    if url not in self._link_checks:
+                        self._link_checks[url] = asyncio.ensure_future(
+                            self._record_link_target(url, sink.site, doc_url_of(sink.site, json_url)))
+                    await self._link_checks[url]
+                    if url not in self._link_alive and not self._link_targets.get(url):
+                        continue
+                rerender[json_url] = sink
+                break
+        for json_url, sink in rerender.items():
+            await self._rerender(sink, json_url)
+        self._dead_links.clear()
+        self._relink.clear()
+        self._store_link_memory()
+
+    def _store_link_memory(self) -> None:
+        """Save what the link checks remember for the next run, in the sinks of the pages this job fetched.
+
+        GONE_LINKS_KEY: the link references' pages answered 404/410 once:
+        the job's own sink and a D6 module (whose parents all write the
+        run's so far) get this run's as they stand (an older one no page
+        asked again is dropped); another sink, the run's so far, if any.
+        TEXT_LINKS_KEY of its own sink keeps only its live pages'.
+        """
+        for sink in self._link_sinks.values():
+            if sink is self.sink or sink.module or sink.gone_links_seen:
+                sink.hash_manager.set_metadata(GONE_LINKS_KEY, sorted(sink.gone_links_seen))
+        unlinked = self.sink.hash_manager.get_metadata(TEXT_LINKS_KEY)
+        if isinstance(unlinked, dict):
+            hashes = self.sink.hash_manager.hashes
+            self.sink.hash_manager.set_metadata(TEXT_LINKS_KEY, {
+                url: targets for url, targets in unlinked.items() if self._is_previously_good(hashes.get(url))})
+        self._link_sinks.clear()
+
+    async def _rerender(self, sink: Sink, json_url: str) -> None:
+        """Fetch a page again and convert and save it as any page (_heal_dead_links)."""
+        try:
+            result = await self._fetch_page(json_url)
+            if isinstance(result, FetchFailed):
+                logger.warning("link_heal_skipped", url=json_url, error=result.error)
+                return
+            data = json.loads(result)
+            occ_view = self._occ_view(data)
+            doc_url = self._convert_json_url_to_doc_url(json_url)
+            await self._check_link_targets(sink, data, occ_view, doc_url)
+            page_data = self._extract_from_json(sink, data, doc_url, occ_view)
+            file_path = self._get_organized_file_path(sink, doc_url, page_data)
+            await self._save_and_record(sink, json_url, doc_url, page_data, file_path, result)
+            logger.info("link_healed", url=doc_url)
+        except Exception as e:
+            logger.warning("link_heal_failed", url=json_url, error=str(e))
+
+    def _symbol_link_url(self, url_path: str) -> str:
+        """The page a DocC symbol link written as a link's URL names: for
+        ``/Module/Symbol`` (DocC's absolute symbol path, its module first) the
+        site's documentation page at module/symbol, lowercased as DocC's URLs
+        are (its #fragment as it is); "" for a relative one (``Symbol``),
+        which DocC resolves through the symbol graph we don't have, and for
+        anything else in backticks."""
+        match = SYMBOL_LINK.fullmatch(url_path)
+        if match is None:
+            return ''
+        return self.site.doc_url(match.group(1).lower()) + (match.group(2) or '')
 
     @staticmethod
     def _is_symbol_reference(ref_data: Dict[str, Any]) -> bool:
@@ -2752,6 +3472,22 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             elif item_type == 'strikethrough':
                 inner = self._resolve_inline_content(item.get('inlineContent', []), references, True)
                 resolved_parts.append(emphasis(inner, '~~'))
+            elif item_type == 'newTerm':
+                # A term the text defines: italic, as DocC-Render shows it
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references, True)
+                resolved_parts.append(emphasis(inner, '*'))
+            elif item_type == 'inlineHead':
+                # A run-in head: bold, the same way
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references, True)
+                resolved_parts.append(emphasis(inner, '**'))
+            elif item_type == 'superscript':
+                # An exponent ("2<sup>Log2n</sup>") or an index: HTML, as
+                # markdown has no syntax for them
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references, emphasized)
+                resolved_parts.append(f"<sup>{inner}</sup>")
+            elif item_type == 'subscript':
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references, emphasized)
+                resolved_parts.append(f"<sub>{inner}</sub>")
             elif item_type == 'image':
                 # Handle inline images
                 image_content = self._process_image(item, references)
@@ -3206,6 +3942,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 if video_content:
                     processed_parts.append(self._with_caption(video_content, item, references))
 
+            elif item_type == 'overviewCard':
+                # A technology overview's card: its head (heading, link) above its content
+                processed_parts.extend(self._process_content_items(item.get('head', []), references))
+                processed_parts.extend(self._process_content_items(item.get('content', []), references))
+                continue
+
             else:
                 # Not rendered above: its text, never silently dropped, and a
                 # WARN for a type that isn't known
@@ -3627,6 +4369,66 @@ def sink_runs_clean(sink: Sink, outcome_of: Callable[[str], Optional[FrameworkOu
     return all(clean(writer) for writer in metadata_ids(hm.get_metadata(HANDOFF_KEY)))
 
 
+def store_handoff_links(sink: Sink, outcome_of: Callable[[str], Optional["FrameworkOutcome"]]) -> None:
+    """Store a top-level sink's handoff links, the seeds of its own job's next crawl (HANDOFF_LINKS_KEY).
+
+    Its handoff pages are the pages of it another job's crawl reached this
+    run that its own crawl from its root didn't (Sink.handoff_routed minus
+    Sink.own_reach): both sets are the crawl's, so whichever job processed
+    a page, and whenever, the stored links are the same. For each, the
+    links as its own scope has them (Sink.scope_links) when it was
+    processed OK this run; the stored ones when it wasn't (a failed fetch
+    keeps its seeds, so what only it links stays); none once it is gone
+    (404/410). A page no job reached this run is left out only when the
+    sink runs clean (sink_runs_clean: its own job and every handoff writer
+    ran clean), else its stored links stay. Only when its own job's crawl
+    ran to its end (Sink.own_reach); written only when it changes.
+    """
+    if sink.module or sink.own_reach is None:
+        return
+    old = sink.handoff_links_before
+    new: Dict[str, List[List[str]]] = {}
+    for url in sorted(sink.handoff_routed - sink.own_reach):
+        scoped = sink.scope_links.get(url)
+        if scoped is not None:
+            if scoped:
+                new[url] = [list(entry) for entry in scoped]
+        elif url in old and url not in sink.gone:
+            new[url] = old[url]
+    if old and not sink_runs_clean(sink, outcome_of):
+        for url, links in old.items():
+            if url not in new and url not in sink.gone and url not in sink.scope_links:
+                new[url] = links
+    if new != old:
+        # (its manager loaded again only for a change)
+        sink.hash_manager.set_metadata(HANDOFF_LINKS_KEY, dict(sorted(new.items())))
+
+
+def store_link_seeds(sinks: SinkRegistry, sink: Sink, full_clean: bool) -> None:
+    """Store a top-level sink's link seeds (LINK_SEEDS_KEY): its pages fetched pages linked
+    where no scope follows (SinkRegistry.cross_links) that its own crawl from its root
+    didn't reach (Sink.own_reach). Replaced each run, but on a run that isn't full and
+    clean (a framework didn't run, or one's cleanup is skipped: a page that links one
+    may not have been read) the stored ones stay too. Only when its own job's crawl ran
+    to its end; written only when it changes.
+
+    A seed whose page is gone stays while a page links it, as a curated link's does:
+    fetched once a run, its 404/410 error entry is touched and stays as it is (dropping
+    the seed would let the entry go stale, be dropped, and the seed come back: the hash
+    file would change every run)."""
+    if sink.module or sink.own_reach is None or sink.primary_id is None:
+        return
+    found = sinks.cross_links.get((sink.site.name, sink.primary_id), {})
+    new: Dict[str, List[str]] = {
+        url: [url, dir_name, bundle] for url, (dir_name, bundle) in found.items() if url not in sink.own_reach}
+    if not full_clean:
+        for entry in sink.link_seeds_before:
+            new.setdefault(entry[0], entry)
+    seeds = [entry for _, entry in sorted(new.items())]
+    if seeds != sink.link_seeds_before:
+        sink.hash_manager.set_metadata(LINK_SEEDS_KEY, seeds)
+
+
 def finish_run(
     sinks: SinkRegistry, outcomes: Sequence[FrameworkOutcome], cleanup_orphans: bool,
     run: Optional[RunSinks] = None,
@@ -3648,7 +4450,8 @@ def finish_run(
        sink's on its primary's outcome (handoff_writers too, for rule 1).
        Batch 2's zero-touched guard applies to a deferred top-level sink; a
        handoff-only sink (its primary didn't run) is never cleaned.
-    4. Every sink saved (SinkRegistry.save_all), with or without
+    4. The run's link coverage check (link_coverage, into run.link_gaps),
+       then every sink saved (SinkRegistry.save_all), with or without
        cleanup_orphans: the cleanup then works on saved files.
     5. With the run's sinks (run), the run counters of the modules no
        parent routed a page to this run (reset_unreached_modules).
@@ -3696,6 +4499,17 @@ def finish_run(
                 if cleanup_orphans:
                     _rescan(sink, primary)
         sinks.release_if_idle(sink)
+
+    # The seeds of each top-level sink's next crawl, then the run's link
+    # coverage, before the sinks leave memory
+    full_clean = run is not None and all(key in by_job for key in run.listed) and all(
+        not outcome.skip_cleanup for outcome in by_job.values())
+    for sink in sinks.all():
+        store_handoff_links(sink, outcome_of(sink))
+        store_link_seeds(sinks, sink, full_clean)
+    gaps = link_coverage(sinks)
+    if run is not None:
+        run.link_gaps = gaps
 
     # (save_all drops the sinks)
     loaded = {(sink.site.name, sink.dir_name.lower()) for sink in sinks.all()}

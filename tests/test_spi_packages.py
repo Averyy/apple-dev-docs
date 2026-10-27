@@ -539,6 +539,12 @@ class TestExcludedCollection:
         assert await scrape(pkg_runs, pkg_routes(overrides=overrides)) == 0
         assert "excluded_pages" not in site_metadata()
         assert "](./kp-0001.md)" in pkg_file("KitCore/Thing", "KitCore").read_text()
+        # Path-only exclusion: Thing's inline link reached the proposal
+        assert pkg_file("KitCore/KP-0001", "KitCore").exists()
+        # Once the collection is read, an inline link to a page it lists is never
+        # followed: no curation keeps the proposal, so it goes
+        assert await scrape(pkg_runs, pkg_routes(overrides=linking_proposal())) == 0
+        assert docs() == ALL
         assert await scrape(pkg_runs, pkg_routes(overrides=linking_proposal())) == 0
         assert docs() == ALL
         # Its sinks' renderings record the excluded pages: the new set renders

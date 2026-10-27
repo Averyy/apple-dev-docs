@@ -1429,3 +1429,30 @@ href="#modes">#</a></caption><thead><tr><th>Mode</th><th>Bits</th></tr></thead>
     assert body == ("\n# respond\n\n```python\nrespond(prompt)\n```\n\n```python\nrespond(prompt, schema)\n```\n\n"
                     "Responds to a prompt.\n\nSee [the modes](#modes).\n\n**Quantization modes**\n\n"
                     "| Mode | Bits |\n| --- | --- |\n| affine | 4 |\n")
+
+
+def test_links_to_repo_files_we_dont_take_are_github_urls() -> None:
+    source = GitHubDocSource(name="kit", repo="example/kit", branch="main", output_dir="Kit", framework="Kit")
+    content = "\n".join([
+        "See [Building](../BUILDING.md#local), [the guide](guide.md), [Logging](/CONTRIBUTING.md#logging),",
+        "[Usage](Docs/Usage%20Guide.md), [example](examples/example.c), [a dir](Libraries/Core) and",
+        '![diagram](/docs/assets/model.svg "Model"), [top](#top), [site](https://example.com/x), [mail](mailto:a@b.c).',
+        "Code: `[not](CONTRIBUTING.md)`, and [outside](../../../elsewhere.md).",
+        "See [`Token.swift`](../Sources/Token.swift) and `x` [`y`](guide.md).",
+        "```",
+        "[still code](CONTRIBUTING.md)",
+        "```",
+    ])
+    linked = scrape_mlx_docs.repo_links(content, source, "docs/README.md", ["docs/guide.md", "docs/Docs/Usage Guide.md"])
+    blob = "https://github.com/example/kit/blob/main/"
+    assert linked.split("\n") == [
+        f"See [Building]({blob}BUILDING.md#local), [the guide](guide.md), [Logging]({blob}CONTRIBUTING.md#logging),",
+        f"[Usage](Docs/Usage%20Guide.md), [example]({blob}docs/examples/example.c), [a dir]({blob}docs/Libraries/Core) and",
+        '![diagram](https://github.com/example/kit/raw/main/docs/assets/model.svg "Model"), [top](#top), '
+        "[site](https://example.com/x), [mail](mailto:a@b.c).",
+        "Code: `[not](CONTRIBUTING.md)`, and [outside](../../../elsewhere.md).",
+        f"See [`Token.swift`]({blob}Sources/Token.swift) and `x` [`y`](guide.md).",
+        "```",
+        "[still code](CONTRIBUTING.md)",
+        "```",
+    ]

@@ -30,7 +30,7 @@ a later job routes it a page.
 
 import asyncio
 from pathlib import Path
-from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Mapping, Optional, Set, Tuple
+from typing import TYPE_CHECKING, Any, Dict, FrozenSet, Iterable, List, Mapping, Optional, Set, Tuple
 
 from scraper.config import Config
 from scraper.site import APPLE, DocCSite
@@ -54,8 +54,33 @@ UNLINKED_KEY = "unlinked_clean_runs"
 # A top-level hash file's other writers: {<job id>: {}}, the jobs that routed
 # it a page (a handoff)
 HANDOFF_KEY = "handoff_from"
+# The links of a sink's handoff pages (its pages another job's crawl reaches,
+# not its own's) as its own scope has them, {handoff page JSON URL: [[JSON URL,
+# dir as cased, bundle], ...]}: the seeds of its own job's next crawl (json_scraper._drain), so a
+# handoff page another job processes after that crawl ended still has its
+# links followed by it
+HANDOFF_LINKS_KEY = "handoff_links"
+# The pages of a sink that other technologies' pages link where no scope
+# follows (another bundle's link, an inline link) and its own crawl doesn't
+# reach, [[JSON URL, dir as cased, bundle], ...]: seeds of its own job's next
+# crawl too (json_scraper.store_link_seeds)
+LINK_SEEDS_KEY = "link_seeds"
+# The pages of a sink whose file shows a link's text for a page that was gone
+# (404/410 on two runs in a row), {page JSON URL: [the gone pages' URLs]}: each
+# is rendered again once one of them is back (_heal_dead_links)
+TEXT_LINKS_KEY = "text_links"
+# The pages a link reference of its pages names that the site's web page
+# answered 404/410 for (a HEAD) on the last run that asked, [URLs]: gone on a
+# second run in a row, a link to one is its text
+GONE_LINKS_KEY = "gone_links"
 # A parent's modules: {<module id>: {}}, on the parent's own hash file
 CHILD_MODULES_KEY = "child_modules"
+
+
+def gone_entries(hashes: Mapping[str, Any]) -> Set[str]:
+    """The URLs whose entry is a 404/410 error entry (a page Apple answered as gone)."""
+    return {url for url, entry in hashes.items()
+            if isinstance(entry, dict) and entry.get('status') == 'error' and entry.get('error') in ("HTTP 404", "HTTP 410")}
 
 
 def metadata_ids(value: Any) -> Dict[str, Any]:
@@ -118,7 +143,22 @@ class Sink:
             when a run's failures cut discovery short
         path_owner_map: The write-time tripwire's map, seeded on first use
             (AppleJSONDocumentationScraper._path_owners)
+        gone_before: Its pages whose entry was a 404/410 error entry when its
+            hash file was loaded: one that answers 404/410 again this run is
+            gone on two runs in a row (its links are their text)
+        gone_links_before: metadata.gone_links as loaded; gone_links_seen:
+            this run's (written by the jobs that ask, json_scraper)
+        handoff_links_before, link_seeds_before: metadata.handoff_links and
+            metadata.link_seeds as loaded (its own job's seeds, json_scraper._seeds)
         primary_ran: Its own framework's job ran this run
+        handoff_routed: Its pages another job's crawl reached this run (its
+            handoff pages, whoever processed them)
+        scope_links: JSON URL -> the links of a page of it as its own job's
+            scope has them, for a handoff page (and a page its own job
+            reached after its crawl from its root): HANDOFF_LINKS_KEY's
+            source (json_scraper.store_handoff_links)
+        own_reach: The pages its own job's crawl reached from its root this
+            run (None until then, or if it didn't run)
         parents_this_run: The jobs other than its primary that routed it a
             page this run (recorded at the routing decision, before the
             dedup check): a module's parents, a top-level sink's handoff writers
@@ -188,9 +228,28 @@ class Sink:
             if url.startswith(site.json_base) and isinstance(entry, dict) and entry.get('file_path')
         )
         self.path_owner_map: Optional[Dict[str, str]] = None
+        self.gone_before: Set[str] = gone_entries(hash_manager.hashes)
+        loaded_gone_links = hash_manager.get_metadata(GONE_LINKS_KEY)
+        self.gone_links_before: Set[str] = set(loaded_gone_links) if isinstance(loaded_gone_links, list) else set()
+        self.gone_links_seen: Set[str] = set()
+        # metadata.handoff_links as loaded: a malformed entry is none
+        loaded_handoff_links = hash_manager.get_metadata(HANDOFF_LINKS_KEY)
+        loaded_link_seeds = hash_manager.get_metadata(LINK_SEEDS_KEY)
+        self.link_seeds_before: List[List[str]] = [
+            list(entry) for entry in (loaded_link_seeds if isinstance(loaded_link_seeds, list) else [])
+            if isinstance(entry, list) and len(entry) == 3 and all(isinstance(part, str) for part in entry)]
+        self.handoff_links_before: Dict[str, List[List[str]]] = {
+            url: [list(link) for link in links
+                  if isinstance(link, list) and len(link) == 3 and all(isinstance(part, str) for part in link)]
+            for url, links in (loaded_handoff_links.items() if isinstance(loaded_handoff_links, dict) else [])
+            if isinstance(url, str) and isinstance(links, list)
+        }
 
         # D6: its writers and what they need of each other's pages
         self.primary_ran = False
+        self.handoff_routed: Set[str] = set()
+        self.scope_links: Dict[str, Tuple[Tuple[str, str, str], ...]] = {}
+        self.own_reach: Optional[FrozenSet[str]] = None
         self.parents_this_run: Set[str] = set()
         self.links: Dict[str, "PageLinks"] = {}
         self.pending: Dict[str, "asyncio.Future[None]"] = {}
@@ -382,6 +441,17 @@ class SinkRegistry:
         # The run's jobs' outcomes, by (site name, job id): the multi-writer
         # sinks' failure policy sends each writer's blocks to its own
         self.outcomes: Dict[Tuple[str, str], "FrameworkOutcome"] = {}
+        # The pages of each top-level technology, {(site name, segment): {JSON URL:
+        # (dir as cased, bundle)}}, that a fetched page links where no scope follows
+        # (json_scraper._note_cross_links): its link seeds' source
+        self.cross_links: Dict[Tuple[str, str], Dict[str, Tuple[str, str]]] = {}
+        # The 404/410 error entries of the hash files of dirs with no sink this
+        # run, read once each (gone_before)
+        self._gone_before: Dict[Tuple[str, str], Set[str]] = {}
+        # Pages a fetched page links locally that no job had fetched yet and
+        # we have no file of, {JSON URL: (site, dir, the linking page's URL)}:
+        # the run's link coverage check (json_scraper.link_coverage)
+        self.link_gaps: Dict[str, Tuple[DocCSite, str, str]] = {}
 
     def add_site(
         self, site: DocCSite, known_dirs: Mapping[str, str], top_level: Iterable[str], roots: Iterable[str]
@@ -455,6 +525,22 @@ class SinkRegistry:
         if sink is None:
             sink = self._sinks[key] = Sink(site, dir_name, framework_name, self.dirs_of(site), render_version, module)
         return sink
+
+    def gone_before(self, site: DocCSite, dir_name: str) -> Set[str]:
+        """A dir's pages whose entry was a 404/410 error entry when the run began: its sink's
+        (Sink.gone_before), or, for a dir with no sink this run (whose hash file the run
+        doesn't change), read once from its hash file (an unreadable one: none)."""
+        sink = self.find(site, dir_name)
+        if sink is not None:
+            return sink.gone_before
+        key = self._key(site, dir_name)
+        if key not in self._gone_before:
+            try:
+                hashes, _ = read_hash_file(Config.get_hash_file(dir_name, namespace=site.namespace))
+            except (OSError, ValueError):
+                hashes = {}
+            self._gone_before[key] = gone_entries(hashes)
+        return self._gone_before[key]
 
     def title(self, dir_name: str) -> str:
         """A top-level technology's title (its id, titled, if technologies.json has none)."""

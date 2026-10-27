@@ -378,13 +378,16 @@ async def load_site(site: DocCSite, rate_limiter: Optional[AdaptiveRateLimiter] 
                 # The pages only its excluded collections list (none of its
                 # hash files records them live: no crawl reached them) are
                 # linked by URL (DocCSite.excluded_pages); one in-scope
-                # curation reaches is crawled and linked locally as ever
+                # curation reaches is crawled and linked locally as ever. An
+                # inline link to any of them is never followed (collection_pages)
                 live = live_json_urls(Config.get_hash_dir(site.namespace), site)
-                pages = [page for page in await index.load_excluded_pages()
-                         if page_json_url(site, page) not in live]
+                listed = await index.load_excluded_pages()
+                pages = [page for page in listed if page_json_url(site, page) not in live]
                 if pages:
                     logger.info("excluded_pages", site=site.name, pages=len(pages))
-                    run.site = site = dataclasses.replace(site, excluded_pages=frozenset(pages))
+                if listed:
+                    run.site = site = dataclasses.replace(
+                        site, excluded_pages=frozenset(pages), collection_pages=frozenset(listed))
     if run.error is not None:
         logger.error("index_root_failed", site=site.name, url=site.index_url, error=run.error)
         return run

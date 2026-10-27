@@ -62,11 +62,32 @@ CONFIRMING = dataclasses.replace(APPLE, page_gone_runs=2)
 class Apple(FakeApple):
     """FakeApple that 404s (and records) any URL the test didn't route."""
 
-    def __init__(self, routes: Dict[str, List[Spec]]) -> None:
+    def __init__(self, routes: Dict[str, List[Spec]], redirects: Optional[Dict[str, str]] = None) -> None:
         super().__init__(routes)
         self.unrouted: List[str] = []
+        self.heads: List[str] = []
+        self.redirects = redirects or {}  # web pages that answer a 301 to another (or a status: "503")
 
     def __call__(self, request: httpx.Request) -> httpx.Response:
+        if request.method == "HEAD":
+            # A page's web page (a link's check): there while its JSON is routed, as on the site
+            url = str(request.url)
+            self.heads.append(url)
+            if url in self.redirects:
+                location = self.redirects[url]
+                if location.isdigit():
+                    # A status instead (a web page that fails)
+                    return httpx.Response(int(location), request=request)
+                return httpx.Response(301, headers={"Location": location}, request=request)
+            json_urls = {url.replace("/documentation/", data, 1) + ".json"
+                         for data in ("/tutorials/data/documentation/", "/data/documentation/")}
+            specs = [self.routes[json] for json in json_urls if json in self.routes]
+            if not specs:
+                return httpx.Response(404, request=request)
+            # As its JSON answers now: a 404/410 page's web page answers the same
+            spec = specs[0][min(self.calls.get(next(iter(json_urls & set(self.routes))), 0), len(specs[0]) - 1)]
+            gone = spec["kind"] == "status" and spec["code"] in (404, 410)
+            return httpx.Response(spec["code"] if gone else 200, request=request)
         if str(request.url) not in self.routes:
             self.unrouted.append(str(request.url))
             return httpx.Response(404, text="unrouted", request=request)
@@ -103,9 +124,9 @@ class Runs:
         self.last: Optional[AppleJSONDocumentationScraper] = None  # the last run's scraper
         self.apple: Optional[Apple] = None  # the last run's fake Apple (its requests)
 
-    async def run(self, routes: Dict[str, List[Spec]], fw: str = FW,
-                  site: DocCSite = APPLE) -> AppleJSONDocumentationScraper:
-        apple = Apple(routes)
+    async def run(self, routes: Dict[str, List[Spec]], fw: str = FW, site: DocCSite = APPLE,
+                  redirects: Optional[Dict[str, str]] = None) -> AppleJSONDocumentationScraper:
+        apple = Apple(routes, redirects)
         scraper = AppleJSONDocumentationScraper(fw, fw.title(), site=site)
         with capture_logs() as events:
             async with scraper:
@@ -1421,3 +1442,145 @@ class TestRenderVersion:
         assert report.failures == [] and report.pruned > 0
         assert not stray.exists() and not file_of(GAMMA).exists()
         assert self.stored() == {"version": RENDER_OLD}
+
+
+class TestLinkTargets:
+    """A link reference to a page we don't have asks Apple's web page where it went, once, while its page renders."""
+
+    async def test_a_moved_page_is_linked_where_it_is_and_a_removed_one_is_text(self, runs: Runs) -> None:
+        body = json.loads(page(ALPHA))
+        legacy, removed = doc_url("testkit/1402872-beta"), doc_url("testkit/removed")
+        body["abstract"] = [{"type": "text", "text": "See "},
+                            {"type": "reference", "identifier": legacy, "isActive": True},
+                            {"type": "text", "text": " and "},
+                            {"type": "reference", "identifier": removed, "isActive": True}]
+        body["references"] = {url: {"type": "link", "identifier": url, "title": title, "url": url}
+                              for url, title in ((legacy, "Beta"), (removed, "Removed"))}
+        routes = routes_for(SITE, {ALPHA: [ok(json.dumps(body), "E-alpha")]})
+        await runs.run(routes, redirects={legacy: "/documentation/testkit/beta"})
+        # A first 404 keeps the link (a page just published, a rebuild), remembered
+        assert "See [Beta](./beta.md) and [Removed](./removed.md)" in file_of(ALPHA).read_text()
+        assert runs.apple is not None and sorted(runs.apple.heads) == [legacy, doc_url(BETA), removed]
+        assert [(e["url"], e["target"]) for e in runs.logged("link_target_moved")] == [(legacy, doc_url(BETA))]
+        assert [e["url"] for e in runs.logged("link_target_gone")] == [removed]
+        assert Runs.saved()["metadata"]["gone_links"] == [removed]
+        # A 404 on the next run too: the page renders again (its JSON didn't change), as text
+        await runs.run(routes, redirects={legacy: "/documentation/testkit/beta"})
+        # (the heal asks the gone page; the re-render asks its other link again)
+        assert sorted(runs.apple.heads) == [legacy, doc_url(BETA), removed]
+        assert [e["url"] for e in runs.logged("link_healed")] == [doc_url(ALPHA)]
+        assert "See [Beta](./beta.md) and Removed" in file_of(ALPHA).read_text()
+        assert Runs.saved()["metadata"]["text_links"] == {json_url(ALPHA): [removed]}
+        # Settled: nothing is asked or rendered again
+        before = file_of(ALPHA).read_text()
+        await runs.run(routes, redirects={legacy: "/documentation/testkit/beta"})
+        # The page the crawl never fetches is asked once a run while it's text...
+        assert runs.apple.heads == [removed] and runs.logged("link_healed") == []
+        assert file_of(ALPHA).read_text() == before and "gone_links" not in Runs.saved()["metadata"]
+        # ...and once its web page answers again, the page gets its link back
+        back = {legacy: "/documentation/testkit/beta", removed: "200"}
+        await runs.run(routes, redirects=back)
+        assert [e["url"] for e in runs.logged("link_healed")] == [doc_url(ALPHA)]
+        assert "See [Beta](./beta.md) and [Removed](./removed.md)" in file_of(ALPHA).read_text()
+        assert "text_links" not in Runs.saved()["metadata"]
+        # A link to a page Apple serves that we don't crawl: a HEAD a run, nothing rendered again
+        await runs.run(routes, redirects=back)
+        assert runs.apple.heads == [removed] and runs.logged("link_healed") == []
+
+    async def test_an_inline_topic_reference_is_crawled_and_one_gone_is_text(self, runs: Runs) -> None:
+        """A page only an inline reference names is crawled at the end of the crawl; one
+        whose JSON answers 404 has its web page asked (once a run, while the linking page
+        links it), and on two runs in a row with no redirect (a REST object's property with
+        no page) the linking page renders again with its name as text; once it answers
+        200 the page gets its link back."""
+        body = json.loads(page(ALPHA))
+        refs = {"testkit/alpha/prop": f"doc://com.apple.{FW}/documentation/testkit/alpha/prop",
+                BETA: f"doc://com.apple.{FW}/documentation/{BETA}",
+                "testkit/unlisted": f"doc://com.apple.{FW}/documentation/testkit/unlisted",
+                "otherkit/thing": "doc://com.apple.otherkit/documentation/otherkit/thing"}
+        body["abstract"] = [{"type": "reference", "identifier": identifier, "isActive": True}
+                            for identifier in refs.values()]
+        body["references"] = {identifier: {"type": "topic", "kind": "symbol", "role": "symbol", "identifier": identifier,
+                                           "title": path.rsplit("/", 1)[-1], "url": f"/documentation/{path}"}
+                              for path, identifier in refs.items()}
+        routes = routes_for(SITE, {ALPHA: [ok(json.dumps(body), "E-alpha")], "testkit/alpha/prop": [status(404)],
+                                   "testkit/unlisted": [ok(page("testkit/unlisted"), "E-unlisted")]})
+        await runs.run(routes)
+        # Its JSON answered 404: its web page is asked (an old URL may redirect), once
+        prop = doc_url("testkit/alpha/prop")
+        assert runs.apple is not None and runs.apple.heads == [prop]
+        assert file_of("testkit/unlisted").exists() and runs.requests()[json_url("testkit/unlisted")] == 1
+        # A first 404: the link stays
+        assert runs.logged("link_healed") == []
+        assert "[`prop`](./alpha/prop.md)" in file_of(ALPHA).read_text()
+        # A second 404 in a row: rendered again with the property's name as text
+        await runs.run(routes)
+        assert [e["url"] for e in runs.logged("link_healed")] == [doc_url(ALPHA)]
+        assert runs.requests()[json_url(ALPHA)] == 2 and runs.apple.heads == [prop]
+        text = file_of(ALPHA).read_text()
+        assert ("`prop`[`beta`](./beta.md)[`unlisted`](./unlisted.md)"
+                "[`thing`](https://developer.apple.com/documentation/otherkit/thing)") in text
+        # Settled: a third run changes nothing and renders nothing again
+        await runs.run(routes)
+        assert runs.logged("link_healed") == [] and runs.apple.heads == []
+        assert runs.requests()[json_url(ALPHA)] == 1 and file_of(ALPHA).read_text() == text
+        # The property's page is back: crawled, and the linking page gets its link again
+        routes[json_url("testkit/alpha/prop")] = [ok(page("testkit/alpha/prop"), "E-prop")]
+        await runs.run(routes)
+        assert file_of("testkit/alpha/prop").exists()
+        assert [e["url"] for e in runs.logged("link_healed")] == [doc_url(ALPHA)]
+        assert "[`prop`](./alpha/prop.md)" in file_of(ALPHA).read_text()
+        assert "text_links" not in Runs.saved()["metadata"]
+
+    async def test_a_link_a_check_couldnt_settle_heals_on_a_later_run(self, runs: Runs) -> None:
+        """A HEAD that fails leaves the link; a later run that finds the page still linking
+        it locally asks again and renders the page again (its JSON never changed). A link
+        that went where Apple sends it (a page Apple serves that we have no file of) is
+        settled: nothing is asked or rendered again."""
+        body = json.loads(page(ALPHA))
+        legacy, served = doc_url("testkit/1402872-beta"), doc_url("testkit/uncrawled")
+        body["abstract"] = [{"type": "reference", "identifier": url, "isActive": True} for url in (legacy, served)]
+        body["references"] = {url: {"type": "link", "identifier": url, "title": url.rsplit("/", 1)[-1], "url": url}
+                              for url in (legacy, served)}
+        routes = routes_for(SITE, {ALPHA: [ok(json.dumps(body), "E-alpha")]})
+        uncrawled = {served: "/documentation/testkit/uncrawled-page"}
+        await runs.run(routes, redirects={legacy: "503", **uncrawled, doc_url("testkit/uncrawled-page"): "200"})
+        assert "[1402872-beta](./api-1402872-beta.md)" in file_of(ALPHA).read_text()
+        # Apple's web page answers again: healed on the next run
+        await runs.run(routes, redirects={legacy: "/documentation/testkit/beta", **uncrawled,
+                                          doc_url("testkit/uncrawled-page"): "200"})
+        assert [e["url"] for e in runs.logged("link_healed")] == [doc_url(ALPHA)]
+        text = file_of(ALPHA).read_text()
+        assert "[1402872-beta](./beta.md)" in text and "](./uncrawled-page.md)" in text
+        # Nothing left to fix: nothing is asked or rendered again
+        for _ in range(2):
+            await runs.run(routes, redirects={legacy: "/documentation/testkit/beta", **uncrawled,
+                                              doc_url("testkit/uncrawled-page"): "200"})
+            assert runs.logged("link_healed") == [] and file_of(ALPHA).read_text() == text
+            assert runs.apple is not None and runs.requests()[json_url(ALPHA)] == 1 and runs.apple.heads == []
+
+    async def test_a_link_that_isnt_a_url_never_blocks(self, runs: Runs) -> None:
+        body = json.loads(page(ALPHA))
+        bad = "http://[bad"
+        body["abstract"] = [{"type": "reference", "identifier": bad, "isActive": True}]
+        body["references"] = {bad: {"type": "link", "identifier": bad, "title": "Bad", "url": bad}}
+        routes = routes_for(SITE, {ALPHA: [ok(json.dumps(body), "E-alpha")]})
+        scraper = await runs.run(routes)
+        assert "[Bad](http://[bad)" in file_of(ALPHA).read_text()
+        assert not runs.logged("error_processing_url") and not scraper.outcome.skip_cleanup
+
+    async def test_a_topic_reference_to_an_old_url_links_where_it_redirects(self, runs: Runs) -> None:
+        """A topic reference whose JSON answers 404 but whose web page redirects (Apple's own
+        references to foundation/url_loading_system): linked to the redirect's page, never
+        text, and not a coverage gap."""
+        body = json.loads(page(ALPHA))
+        old = f"doc://com.apple.{FW}/documentation/testkit/old_name"
+        body["abstract"] = [{"type": "reference", "identifier": old, "isActive": True}]
+        body["references"] = {old: {"type": "topic", "kind": "article", "role": "article", "identifier": old,
+                                    "title": "Old", "url": "/documentation/testkit/old_name"}}
+        routes = routes_for(SITE, {ALPHA: [ok(json.dumps(body), "E-alpha")], "testkit/old_name": [status(404)]})
+        redirects = {doc_url("testkit/old_name"): "/documentation/testkit/beta"}
+        for _ in range(3):
+            await runs.run(routes, redirects=redirects)
+            assert "[Old](./beta.md)" in file_of(ALPHA).read_text()
+            assert runs.logged("link_coverage_gaps") == []

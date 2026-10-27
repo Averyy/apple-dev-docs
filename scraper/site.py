@@ -63,6 +63,10 @@ class DocCSite:
             link to one keeps its URL (linked_by_url), as one to the
             collection does. Never a crawl rule: a page in-scope curation
             reaches is crawled as ever
+        collection_pages: Every page its excluded collections list, read
+            with excluded_pages (whether a crawl reached it or not): an
+            inline link to one is never followed (a proposal is no page of
+            the docs, OD3), so only curation keeps one in the docs
         max_retries: Its requests' retries after a 5xx, 429 or network
             error (None: Config.MAX_RETRIES, Apple's)
         retry_backoff: The wait before the n-th retry after a 5xx or a
@@ -89,6 +93,7 @@ class DocCSite:
     roots: Tuple[str, ...] = ()
     excludes: Tuple[str, ...] = ()
     excluded_pages: FrozenSet[str] = frozenset()
+    collection_pages: FrozenSet[str] = frozenset()
     max_retries: Optional[int] = None
     retry_backoff: Optional[float] = None
     max_jobs: int = 0

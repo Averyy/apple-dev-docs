@@ -54,6 +54,9 @@ jobs:
         continue-on-error: true
         timeout-minutes: 330
         run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
+        env:
+          # The run's link coverage check, for the Summary step
+          LINK_COVERAGE_REPORT: ${{ runner.temp }}/link-coverage.md
 
       - name: Run Swift language docs scraper
         id: swift
@@ -184,6 +187,18 @@ jobs:
             echo "**Result:** No changes detected. Documentation is up to date." >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
+          # The Apple run's link coverage: linked pages its crawl never fetched
+          # (a crawl gap). A warning, never a failure
+          REPORT="${{ runner.temp }}/link-coverage.md"
+          if [ -s "$REPORT" ]; then
+            echo "### Link Coverage" >> $GITHUB_STEP_SUMMARY
+            cat "$REPORT" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            GAPS=$(head -1 "$REPORT" | grep -oE '[0-9]+' | head -1)
+            if [ "${GAPS:-0}" != "0" ]; then
+              echo "::warning::$(head -1 "$REPORT") (see the run summary)"
+            fi
+          fi
           echo "### Disk Usage" >> $GITHUB_STEP_SUMMARY
           df -h | grep -E '^/dev|Filesystem' >> $GITHUB_STEP_SUMMARY
 

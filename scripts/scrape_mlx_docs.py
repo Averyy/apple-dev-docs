@@ -67,6 +67,7 @@ import argparse
 import asyncio
 import hashlib
 import logging
+import posixpath
 import re
 import sys
 import textwrap
@@ -74,14 +75,23 @@ from collections import deque
 from dataclasses import dataclass, field
 from pathlib import Path, PurePosixPath
 from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
-from urllib.parse import urljoin, urlparse, urlunparse
+from urllib.parse import unquote, urljoin, urlparse, urlunparse
 
 import aiohttp
 from bs4 import BeautifulSoup, Comment, PageElement, Tag
 from rich.console import Console
 from wafer import AsyncSession, WaferError
 
-from utilities.docc import DocCPage, catalog_articles, convert_docc, docc_catalog, emphasis, strip_html_comments
+from utilities.docc import (
+    CODE_SPAN_PATTERN,
+    FENCE_PATTERN,
+    DocCPage,
+    catalog_articles,
+    convert_docc,
+    docc_catalog,
+    emphasis,
+    strip_html_comments,
+)
 from utilities.hash_utils import (
     HashFileError,
     compute_hash,
@@ -121,6 +131,11 @@ console = Console()
 # Output directory (relative to project root)
 OUTPUT_BASE = Path(__file__).parent.parent / "documentation"
 
+# A markdown link or image: "!" for an image, its text, its target, its "title"
+MARKDOWN_LINK_PATTERN = re.compile(r'(!?)\[([^\]]*)\]\(([^)\s]*)((?:\s+"[^"]*")?)\)')
+# A URL's scheme ("https:", "mailto:")
+URL_SCHEME_PATTERN = re.compile(r'[A-Za-z][A-Za-z0-9+.-]*:')
+
 # Hash file for incremental updates
 HASH_FILE = Path(__file__).parent.parent / ".hashes" / "mlx_docs_hashes.json"
 
@@ -159,7 +174,8 @@ POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, SOURCES_KEY, RENDER_KEY)
 # The converter's output version: bump it when a change to the conversion
 # changes the files of pages that didn't change, so the next clean run
 # renders every page again (source_policy's metadata.render)
-# 4: GitHub files without their HTML comments; emphasis with its edge
+# 4: GitHub files without their HTML comments, their links to repo files
+#    we don't take as GitHub URLs; emphasis with its edge
 #    whitespace outside the markers and its own asterisks escaped, none on
 #    punctuation; Sphinx signatures
 #    as code blocks (```python, ```cpp), definitions that hold blocks
@@ -1073,6 +1089,55 @@ def docc_page(source: GitHubDocSource, catalog: str, output_path: Path) -> DocCP
                     f"{GITHUB_RAW}/{source.repo}/{source.branch}/{quote_path(catalog)}/Assets")
 
 
+def repo_links(content: str, source: GitHubDocSource, file_path: str, fetched: Iterable[str]) -> str:
+    """A GitHub file's relative links (a link's or an image's, repo-relative when they
+    start with "/", as on GitHub) to repo files we don't take (a CONTRIBUTING.md, an
+    example's source, a directory) as their GitHub URL: the file's page, an image's
+    raw file. A link to a file the source takes (fetched: their repo paths) stays
+    relative: its file is at the same path in the source's output dir. Code is left
+    as it is (fenced blocks, code spans), and so is a link that leaves the repo."""
+    taken = set(fetched)
+    base = posixpath.dirname(file_path)
+
+    def absolute(match: "re.Match[str]") -> str:
+        image, label, target, title = match.groups()
+        if not target or target.startswith('#') or URL_SCHEME_PATTERN.match(target):
+            return match.group(0)
+        path, hash_mark, fragment = target.partition('#')
+        path = path.partition('?')[0]
+        repo_path = posixpath.normpath(unquote(path.lstrip('/')) if path.startswith('/')
+                                       else posixpath.join(base, unquote(path)))
+        if repo_path in taken or repo_path.startswith('..') or repo_path == '.':
+            return match.group(0)
+        kind = 'raw' if image else 'blob'
+        url = f"https://github.com/{source.repo}/{kind}/{source.branch}/{quote_path(repo_path)}"
+        return f"{image}[{label}]({url}{hash_mark}{fragment}{title})"
+
+    lines = content.split('\n')
+    fence: Optional[str] = None
+    for index, line in enumerate(lines):
+        fence_match = FENCE_PATTERN.match(line)
+        if fence is not None:
+            if fence_match and fence_match.group(1)[0] == fence[0] and len(fence_match.group(1)) >= len(fence) \
+                    and not fence_match.group(2).strip():
+                fence = None
+            continue
+        if fence_match:
+            fence = fence_match.group(1)
+            continue
+        # A link that starts inside a code span is code; one whose text is a
+        # code span ([`Token.swift`](…)) is a link
+        spans = [span.span() for span in CODE_SPAN_PATTERN.finditer(line)]
+
+        def outside_code(match: "re.Match[str]") -> str:
+            if any(start <= match.start() < end for start, end in spans):
+                return match.group(0)
+            return absolute(match)
+
+        lines[index] = MARKDOWN_LINK_PATTERN.sub(outside_code, line)
+    return '\n'.join(lines)
+
+
 def validate_github_path(file_path: str) -> bool:
     """Validate that a GitHub file path is safe (no path traversal)."""
     # Reject paths with .. sequences
@@ -1195,6 +1260,7 @@ async def scrape_github_source(
             catalog = docc_catalog(file_path)
             if catalog is not None:
                 content = convert_docc(content, docc_page(source, catalog, output_path))
+            content = repo_links(content, source, file_path, files_to_fetch)
 
             # Add source header
             content = add_github_source_header(content, source, file_path)

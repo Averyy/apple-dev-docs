@@ -9,6 +9,7 @@ import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import httpx
 import pytest
 
 from scraper.config import Config
@@ -493,23 +494,56 @@ class TestContent:
         ]})]))
         assert "- **Mode**: A mode.\n- **term**: Plain." in md
 
+    def test_terms_heads_and_scripts(self, scraper: AppleJSONDocumentationScraper) -> None:
+        def inline(kind: str, *inline: Any) -> Dict[str, Any]:
+            return {"type": kind, "inlineContent": [text(i) if isinstance(i, str) else i for i in inline]}
+
+        md = render(scraper, page([content(
+            para("Configure the ", inline("newTerm", "always-on live view "), ", a special view."),
+            para(inline("inlineHead", "Note:"), " Read this."),
+            para("Up to ", {"type": "codeVoice", "code": "2"}, inline("superscript", "Log2n"), " elements; H",
+                 inline("subscript", "2"), "O."),
+            para(inline("strong", "x", inline("superscript", "a*b")), "."),
+        )]))
+        assert "Configure the *always-on live view* , a special view." in md
+        assert "**Note:** Read this." in md
+        assert "Up to `2`<sup>Log2n</sup> elements; H<sub>2</sub>O." in md
+        # Inside emphasis a script's "*" is escaped like the rest of its text
+        assert r"**x<sup>a\*b</sup>**." in md
+
+    def test_overview_card_shows_its_head_first(self, scraper: AppleJSONDocumentationScraper) -> None:
+        references = {"doc://t/documentation/TestKit/swiftui": {
+            "type": "topic", "kind": "article", "role": "article", "title": "SwiftUI",
+            "url": "/documentation/testkit/swiftui"}}
+        card = {"type": "overviewCard",
+                "head": [{"type": "heading", "level": 2, "text": "SwiftUI apps", "anchor": "SwiftUI-apps"},
+                         para({"type": "reference", "identifier": "doc://t/documentation/TestKit/swiftui",
+                               "isActive": True, "overridingTitle": "Read about SwiftUI"})],
+                "content": [para("SwiftUI is declarative."),
+                            {"type": "row", "columns": [{"content": [para("Left.")]}]}]}
+        md = render(scraper, page([content(para("Intro."), card, para("After."))], references=references))
+        assert ("Intro.\n\n## SwiftUI apps\n\n[Read about SwiftUI](./swiftui.md)\n\n"
+                "SwiftUI is declarative.\n\nLeft.\n\nAfter.") in md
+
     def test_unknown_types_render_their_text_and_are_counted(
         self, scraper: AppleJSONDocumentationScraper, monkeypatch: pytest.MonkeyPatch
     ) -> None:
         md = render(scraper, page(
             [content({"type": "small", "inlineContent": [text("Fine print.")]},
-                     para("A ", {"type": "newTerm", "inlineContent": [text("term")]}, " and ",
+                     para("A ", {"type": "futureInline", "inlineContent": [text("term")]}, " and ",
                           {"type": "strikethrough", "inlineContent": [text("old")]}, ".")),
              {"kind": "futureSection", "content": [para("Future text.")]}],
-            metadata={"newKey": 1}, futureKey=[]))
+            metadata={"newKey": 1, "remoteSource": {"fileName": "Widget.swift", "url": "https://github.com/x/Widget.swift#L2"}},
+            futureKey=[]))
         assert "Fine print." in md
         assert "A term and ~~old~~." in md
         assert "Future text." in md
+        assert "Widget.swift" not in md
         warnings = warnings_of(monkeypatch)
         render(scraper, page([content({"type": "small", "inlineContent": [text("Again.")]})]))
         scraper._log_unknown_content()
         seen = {(w["what"], w["name"]): w["count"] for w in warnings if w["event"] == "unknown_content"}
-        assert seen == {("block type", "small"): 2, ("inline type", "newTerm"): 1, ("section kind", "futureSection"): 1,
+        assert seen == {("block type", "small"): 2, ("inline type", "futureInline"): 1, ("section kind", "futureSection"): 1,
                         ("metadata key", "newKey"): 1, ("top-level key", "futureKey"): 1}
 
     def test_unknown_types_keep_all_their_text(
@@ -647,6 +681,120 @@ class TestReferences:
                 "[APS Environment Entitlement](https://developer.apple.com/documentation/bundleresources/aps) "
                 "[USB-IF](https://www.usb.org/) Event [`OSBundleUsageDescription`](./key.md)") in md
         assert "comhttps" not in md
+
+    def test_symbol_links_written_as_urls(self, scraper: AppleJSONDocumentationScraper) -> None:
+        """DocC's ``/Module/Symbol`` syntax as a link's URL (DeviceManagement's articles) is that
+        page; a relative ``Symbol`` names none we can tell, so its title is plain text."""
+        def link(url: str, title: str) -> Dict[str, Any]:
+            return {"type": "link", "identifier": url, "title": title, "url": url}
+
+        references = {u: link(u, t) for u, t in [
+            ("``/TestKit/AssetData``", "com.apple.asset.data"),
+            ("``/TestKit/Widget/Size#Overview``", "size"),
+            ("``/OtherKit/Thing``", "Thing"),
+            ("``AssetData``", "relative"),
+        ]}
+        md = render(scraper, page([content(para(*[
+            part for u in references
+            for part in ({"type": "reference", "identifier": u, "isActive": True}, " ")]))],
+            references=references))
+        assert ("[com.apple.asset.data](./assetdata.md) [size](./widget/size.md#Overview) "
+                "[Thing](https://developer.apple.com/documentation/otherkit/thing) relative ") in md
+        assert "`" not in md.split("# Widget", 1)[1].replace("```", "")
+
+    async def test_moved_and_removed_link_targets(self, scraper: AppleJSONDocumentationScraper) -> None:
+        """A link reference to a page we don't have asks the site's web page once: a redirect
+        links where it ends, a 404 or 410 isn't linked, anything else leaves the link as it is."""
+        doc = "https://developer.apple.com/documentation/testkit/"
+        answers = {
+            doc + "widget/1402872-size": (301, "/documentation/testkit/widget/size"),
+            doc + "widget/url_loading": (301, doc + "widget/url-loading-v1"),
+            doc + "widget/url-loading-v1": (308, doc + "widget/url-loading"),
+            doc + "widget/url-loading": (200, None),
+            doc + "widget/3294190-old": (404, None),
+            doc + "widget/size": (200, None),
+            doc + "models": (410, None),
+            doc + "widget/4000-news": (301, "https://developer.apple.com/news/"),
+            "https://developer.apple.com/news/": (200, None),
+            doc + "widget/new": (200, None),
+            doc + "widget/flaky": (503, None),
+            doc + "widget/malformed": (301, "http://[bad"),
+        }
+        heads: List[str] = []
+
+        def site(request: httpx.Request) -> httpx.Response:
+            assert request.method == "HEAD"
+            heads.append(str(request.url))
+            code, location = answers[str(request.url)]
+            return httpx.Response(code, headers={"Location": location} if location else {}, request=request)
+
+        def link(url: str) -> Dict[str, Any]:
+            return {"type": "link", "identifier": url, "title": url.rstrip("/").rsplit("/", 1)[-1], "url": url}
+
+        urls = [doc + "widget/1402872-size#1965632", doc + "widget/url_loading/", doc + "widget/3294190-old?language=occ",
+                "models", doc + "widget/4000-news", doc + "widget/new", doc + "widget/flaky", doc + "guide",
+                doc + "widget/1402872-size", doc + "widget/malformed", URL + "#overview", doc + "widget/queued"]
+        references = {u: link(u) for u in urls}
+        references["doc://t/documentation/TestKit/Missing"] = topic("Missing", "/documentation/testkit/missing")
+        (Config.OUTPUT_DIR / "TestKit").mkdir(parents=True)
+        (Config.OUTPUT_DIR / "TestKit" / "guide.md").write_text("# Guide\n")
+        json_page = page([content(para(*[part for u in references
+                                         for part in ({"type": "reference", "identifier": u, "isActive": True}, " ")]))],
+                         references=references)
+        scraper.session = httpx.AsyncClient(transport=httpx.MockTransport(site))
+        # A page the crawl has queued is its to fetch: never asked
+        scraper._queued.add("https://developer.apple.com/tutorials/data/documentation/testkit/widget/queued.json")
+        await scraper._check_link_targets(scraper.sink, json_page, None, URL)
+        await scraper._check_link_targets(scraper.sink, json_page, None, URL)
+        # A first 404/410: still linked, remembered for the next run (Sink.gone_links_seen)
+        md = render(scraper, json_page)
+        assert "[3294190-old?language=occ](./widget/api-3294190-old.md?language=occ)" not in md
+        assert "[models](./models.md) " in md and "[3294190-old?language=occ](" in md
+        assert scraper.sink.gone_links_seen == {doc + "widget/3294190-old", doc + "models"}
+        # Gone on the last run too: their text
+        scraper.sink.gone_links_before = set(scraper.sink.gone_links_seen)
+        md = render(scraper, json_page)
+        assert ("[1402872-size#1965632](./widget/size.md#1965632) [url_loading](./widget/url-loading.md) "
+                "3294190-old?language=occ models [4000-news](https://developer.apple.com/news/) "
+                "[new](./widget/new.md) [flaky](./widget/flaky.md) [guide](./guide.md) "
+                "[1402872-size](./widget/size.md) [malformed](./widget/malformed.md) "
+                "[widget#overview](./widget.md#overview) [queued](./widget/queued.md) [`Missing`](./missing.md) ") in md
+        # Each URL asked once, redirects followed to their end (none for a file
+        # we have, the page itself, a page the crawl queued, a topic reference
+        # or a second check); a malformed Location leaves the link
+        assert sorted(heads) == sorted(answers)
+
+    async def test_the_heal_never_asks_about_a_page_fetched_this_run(
+        self, scraper: AppleJSONDocumentationScraper
+    ) -> None:
+        """A linked page fetched this run whose file sits at another path (a filename
+        clash's hashed stem) is no dead link: no HEAD, no re-render."""
+        def site(request: httpx.Request) -> httpx.Response:
+            raise AssertionError(f"asked {request.url}")
+
+        scraper.session = httpx.AsyncClient(transport=httpx.MockTransport(site))
+        sink = scraper.sink
+        page_json = "https://developer.apple.com/tutorials/data/documentation/testkit/widget.json"
+        target = "https://developer.apple.com/documentation/testkit/1234-moved"
+        page_file = Config.OUTPUT_DIR / "TestKit" / "widget.md"
+        page_file.parent.mkdir(parents=True)
+        page_file.write_text("[Moved](./api-1234-moved.md)\n")
+        sink.hash_manager.update_hash(page_json, "{}", page_file)
+        sink.saved_ok.add(page_json)
+        sink.fetch_ok.add("https://developer.apple.com/tutorials/data/documentation/testkit/1234-moved.json")
+        scraper._dead_links[page_json] = (sink, {target: "link"})
+        await scraper._heal_dead_links()
+
+    async def test_a_link_check_that_fails_leaves_the_link(self, scraper: AppleJSONDocumentationScraper) -> None:
+        def down(request: httpx.Request) -> httpx.Response:
+            raise httpx.ConnectError("refused", request=request)
+
+        url = "https://developer.apple.com/documentation/testkit/1234-gone"
+        json_page = page([content(para({"type": "reference", "identifier": url, "isActive": True}))],
+                         references={url: {"type": "link", "identifier": url, "title": "Gone", "url": url}})
+        scraper.session = httpx.AsyncClient(transport=httpx.MockTransport(down))
+        await scraper._check_link_targets(scraper.sink, json_page, None, URL)
+        assert "[Gone](./api-1234-gone.md)" in render(scraper, json_page)
 
     def test_doc_literals_in_text(self, scraper: AppleJSONDocumentationScraper) -> None:
         md = render(scraper, page([content(

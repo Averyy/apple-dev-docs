@@ -48,6 +48,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import sys
 from collections import deque
 from pathlib import Path
@@ -407,6 +408,7 @@ class D6Runs:
         delays: Optional[Dict[str, float]] = None,
         implementations: Optional[Dict[str, List[Link]]] = None,
         occ: Optional[Dict[str, List[Dict[str, Any]]]] = None,
+        redirects: Optional[Dict[str, str]] = None,
     ) -> int:
         """One run: technologies.json lists `listed`; --frameworks names, else --all.
 
@@ -414,7 +416,7 @@ class D6Runs:
         implementations: a page's path -> its default implementations
         occ: a page's path -> its Objective-C/C variant's patch
         """
-        apple = Apple(d6_routes(pages, overrides, implementations, occ))
+        apple = Apple(d6_routes(pages, overrides, implementations, occ), redirects)
 
         async def handler(request: httpx.Request) -> httpx.Response:
             for fragment, seconds in (delays or {}).items():
@@ -786,7 +788,8 @@ class TestSubsetRuns:
 SIBLINGS: Pages = {
     "Sibkit": (S, [("Sibkit/a", S)]),
     "Sibkit/a": (S, []),
-    # A Sibkit page only its bundle sibling links; its own link is Sibkit's job's (one hop)
+    # A Sibkit page only its bundle sibling links (a handoff); its own link is
+    # followed too: by Sibkit's job, or by its writer once Sibkit's crawl has ended
     "SibkitUI": (S, [("SibkitUI/b", S), ("Sibkit/hidden", S)]),
     "SibkitUI/b": (S, []),
     "Sibkit/hidden": (S, [("Sibkit/deeper", S)]),
@@ -801,20 +804,213 @@ class TestHandoff:
         self, d6: D6Runs
     ) -> None:
         listed = ["Sibkit", "SibkitUI"]
+        hidden, deeper = json_url("sibkit/hidden"), json_url("sibkit/deeper")
+        # One job at a time: Sibkit's crawl ends before SibkitUI hands it hidden
         assert await d6.scrape(SIBLINGS, listed, concurrent=1) == 0
         assert doc_file("Sibkit/hidden").exists() and "**Framework**: Sibkit" in doc_file("Sibkit/hidden").read_text()
-        assert not doc_file("Sibkit/deeper").exists() and json_url("sibkit/deeper") not in d6.requests
+        assert not doc_file("Sibkit/deeper").exists()
         assert metadata("Sibkit")["handoff_from"] == {"sibkitui": {}}
         assert "handoff_from" not in metadata("SibkitUI")
+        # hidden's links, as Sibkit's scope has them: the seeds of Sibkit's next crawl
+        assert metadata("Sibkit")["handoff_links"] == {hidden: [[deeper, "Sibkit", S]]}
+        assert d6.logged("link_coverage")[0]["gaps"] == 1
+        # Fetched by Sibkit's own job on the next run, and every run
+        assert await d6.scrape(SIBLINGS, listed, concurrent=1) == 0
+        assert "**Framework**: Sibkit" in doc_file("Sibkit/deeper").read_text()
+        assert d6.requests.count(deeper) == 1 and d6.logged("link_coverage")[0]["gaps"] == 0
         before = sandbox_bytes()
         assert await d6.scrape(SIBLINGS, listed) == 0
         assert sandbox_bytes() == before
-        # Sibkit alone: its handoff writer didn't run, so it isn't cleaned
+        # Sibkit alone: its handoff writer didn't run, so it isn't cleaned, and its seeds stay
         assert await d6.scrape(SIBLINGS, listed, "Sibkit") == 0
-        assert doc_file("Sibkit/hidden").exists()
-        # Unlinked, with both jobs clean: removed by the normal orphan cleanup
-        assert await d6.scrape(without(SIBLINGS, "SibkitUI", "Sibkit/hidden"), listed) == 0
-        assert not doc_file("Sibkit/hidden").exists() and doc_file("Sibkit/a").exists()
+        assert doc_file("Sibkit/hidden").exists() and doc_file("Sibkit/deeper").exists()
+        assert metadata("Sibkit")["handoff_links"] == {hidden: [[deeper, "Sibkit", S]]}
+        # Unlinked, with both jobs clean: hidden goes, its seeds with it; deeper, seeded
+        # this run, goes on the next one (normal orphan cleanup)
+        unlinked = without(SIBLINGS, "SibkitUI", "Sibkit/hidden")
+        assert await d6.scrape(unlinked, listed) == 0
+        assert not doc_file("Sibkit/hidden").exists() and doc_file("Sibkit/deeper").exists()
+        assert "handoff_links" not in metadata("Sibkit")
+        assert await d6.scrape(unlinked, listed) == 0
+        assert not doc_file("Sibkit/deeper").exists() and doc_file("Sibkit/a").exists()
+
+    async def test_a_handoff_pages_links_are_the_same_whichever_job_ends_first(self, d6: D6Runs) -> None:
+        """kernel/ionetworkstats: only IOKit's header page lists it, so it is a handoff, and its
+        members were never fetched. Only its own job (Sibkit's) follows its links: at the end of
+        its crawl when the handoff came first, from the seeds the handoff page left on the last
+        run when it came late. After two runs, both orders give the same files and hash files
+        (handoff_from, a module's parents and counters, the seeds), with a page that both
+        Sibkit's own crawl and the handoff page reach, a module page, another bundle's page in
+        Sibkit, SibkitUI's page in its bundle (a handoff from Sibkit) and in another bundle (a
+        link seed of SibkitUI's), and a third technology's."""
+        other = "com.apple.other"
+        listed = ["Sibkit", "SibkitUI", "Thirdkit"]
+        pages: Pages = {
+            **SIBLINGS,
+            "Sibkit/a": (S, [("Sibkit/both", S)]),
+            "Sibkit/hidden": (S, [("Sibkit/deeper", S), ("Sibkit/both", S), ("Sibkit/xb", other),
+                                  ("SibkitUI/extra", S), ("SibkitUI/xb", other), ("Thirdkit/t", S), ("SibMod/m", S)]),
+            "Sibkit/both": (S, []), "Sibkit/xb": (S, []), "SibkitUI/extra": (S, []), "SibkitUI/xb": (S, []),
+            "Thirdkit": (S, []), "Thirdkit/t": (S, []), "SibMod": (S, []), "SibMod/m": (S, []),
+        }
+        results = []
+        for late, delays in (("writer", {"sibkitui/b.json": 0.3}), ("primary", {"sibkit/a.json": 0.3})):
+            for root in ("documentation", ".hashes"):
+                shutil.rmtree(root, ignore_errors=True)
+            for _ in range(2):
+                assert await d6.scrape(pages, listed, delays=delays) == 0
+            drained = [e["handoffs"] for e in d6.logged("crawl_drain") if e["framework"] == "Sibkit"]
+            # How Sibkit got hidden's links depends on the order (taken, or seeded only)...
+            assert (any(drained)) == (late == "primary")
+            # ...what they reach doesn't: its own segment in any bundle, another only in its bundle
+            for path in ("Sibkit/deeper", "Sibkit/both", "Sibkit/xb", "SibkitUI/extra", "Thirdkit/t", "SibMod/m"):
+                assert doc_file(path).exists(), path
+            # SibkitUI/xb, which no scope reaches (another bundle's link to another
+            # technology): a link seed of SibkitUI's, fetched by its own job
+            assert "**Framework**: SibkitUI" in doc_file("SibkitUI/xb").read_text()
+            assert metadata("SibkitUI")["link_seeds"] == [[json_url("sibkitui/xb"), "SibkitUI", other]]
+            assert metadata("Thirdkit")["handoff_from"] == {"sibkit": {}}
+            assert metadata("SibkitUI")["handoff_from"] == {"sibkit": {}}
+            assert metadata("Sibkit")["handoff_from"] == {"sibkitui": {}}
+            assert module_of("SibMod")["parents"] == {"sibkit": {"unlinked_clean_runs": 0}}
+            assert metadata("Sibkit")["handoff_links"] == {json_url("sibkit/hidden"): sorted(
+                [json_url(path.lower()), path.split("/")[0], other if path == "Sibkit/xb" else S]
+                for path in ("Sibkit/deeper", "Sibkit/both", "Sibkit/xb", "SibkitUI/extra", "Thirdkit/t", "SibMod/m"))}
+            assert d6.logged("link_coverage")[0]["gaps"] == 0
+            results.append(sandbox_bytes())
+        assert results[0] == results[1]
+
+    async def test_a_handoff_page_whose_fetch_fails_keeps_its_seeds_and_deletes_nothing(self, d6: D6Runs) -> None:
+        listed = ["Sibkit", "SibkitUI"]
+        for _ in range(2):
+            assert await d6.scrape(SIBLINGS, listed, concurrent=1) == 0
+        files, seeds = docs(), metadata("Sibkit")["handoff_links"]
+        assert doc_file("Sibkit/deeper") in files
+        # SibkitUI's fetch of hidden fails (5xx): the writer is blocked, Sibkit still
+        # crawls deeper from its seeds, nothing is deleted, the seeds stay
+        failing = {"Sibkit/hidden": [status(503)]}
+        for _ in range(2):
+            assert await d6.scrape(SIBLINGS, listed, overrides=failing, concurrent=1) != 0
+            assert docs() == files and metadata("Sibkit")["handoff_links"] == seeds
+            assert d6.requests.count(json_url("sibkit/deeper")) == 1
+        assert await d6.scrape(SIBLINGS, listed, concurrent=1) == 0
+        assert docs() == files
+
+
+class TestInlineLinks:
+    """A page only an inline reference names is Apple's page too: crawled when no curation reaches it."""
+
+    async def test_an_inline_only_page_is_crawled_and_removed_once_unlinked(self, d6: D6Runs) -> None:
+        pages: Pages = {**UMBRELLA, "Umbrella/note": (A, [])}
+        guide = json.loads(topic_page("Umbrella/guide", A, []))
+        note = f"doc://{A}/documentation/Umbrella/note"
+        guide["abstract"] = [{"type": "text", "text": "See "}, {"type": "reference", "identifier": note}]
+        guide["references"][note] = {"type": "topic", "url": "/documentation/umbrella/note", "title": "note",
+                                     "identifier": note, "kind": "article", "role": "article"}
+        inline = {"Umbrella/guide": [ok(json.dumps(guide), "E-guide")]}
+        assert await d6.scrape(pages, ["Umbrella"], overrides=inline) == 0
+        assert doc_file("Umbrella/note").exists() and d6.requests.count(json_url("umbrella/note")) == 1
+        assert "See [note](./note.md)" in doc_file("Umbrella/guide").read_text()
+        before = sandbox_bytes()
+        assert await d6.scrape(pages, ["Umbrella"], overrides=inline) == 0
+        assert sandbox_bytes() == before
+        # Unlinked: removed by the normal orphan cleanup
+        assert await d6.scrape(pages, ["Umbrella"]) == 0
+        assert not doc_file("Umbrella/note").exists()
+
+
+class TestLinkCoverage:
+    async def test_a_linked_page_no_job_fetches_is_reported(self, d6: D6Runs, tmp_path: Path) -> None:
+        """A page Otherkit's crawl never reaches, linked from Umbrella in another bundle (so
+        Umbrella's job never follows it): a gap, logged and written to the report. A page
+        whose entry is an error entry (a firewall's 403) isn't one."""
+        other = "com.apple.other"
+        pages: Pages = {**UMBRELLA, **OTHERKIT, "Otherkit/hidden": (A, []),
+                        "Umbrella/guide": (A, [("Otherkit/hidden", other), ("Otherkit/blocked", other)])}
+        report = tmp_path / "coverage.md"
+        d6.monkeypatch.setenv("LINK_COVERAGE_REPORT", str(report))
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit"],
+                               overrides={"Otherkit/one": [ok(topic_page("Otherkit/one", A, [("Otherkit/blocked", A)]),
+                                                              "E-one")],
+                                          "Otherkit/blocked": [status(403)]}) == 0
+        gaps = d6.logged("link_coverage_gaps")
+        assert [e["count"] for e in gaps] == [1] and gaps[0]["frameworks"] == {"Otherkit": 1}
+        assert gaps[0]["examples"] == [f"{doc_url('otherkit/hidden')} <- {doc_url('umbrella/guide')}"]
+        lines = report.read_text().splitlines()
+        assert lines[0].startswith("Link coverage: 1 ") and "| Otherkit | 1 |" in lines
+        assert f"- {doc_url('otherkit/hidden')} (linked from {doc_url('umbrella/guide')})" in lines
+        # A link seed of Otherkit's: fetched by its own job on the next run, then every run
+        assert metadata("Otherkit")["link_seeds"] == [[json_url("otherkit/hidden"), "Otherkit", other]]
+        for _ in range(2):
+            assert await d6.scrape(pages, ["Umbrella", "Otherkit"],
+                                   overrides={"Otherkit/one": [ok(topic_page("Otherkit/one", A,
+                                                                             [("Otherkit/blocked", A)]), "E-one")],
+                                              "Otherkit/blocked": [status(403)]}) == 0
+            assert "**Framework**: Otherkit" in doc_file("Otherkit/hidden").read_text()
+            assert d6.logged("link_coverage")[0]["gaps"] == 0
+            assert report.read_text().startswith("Link coverage: 0 ")
+
+    async def test_a_gone_link_seed_on_a_multi_writer_sink_settles(self, d6: D6Runs) -> None:
+        """A cross-bundle link to a page that answers 404, in a sink with handoff writers
+        (deferred): the seed stays, its page is fetched once a run, its error entry stays,
+        and nothing changes from run to run."""
+        other = "com.apple.other"
+        pages: Pages = {**UMBRELLA, **OTHERKIT, "Otherkit/x": (A, []),
+                        "Umbrella/guide": (A, [("Otherkit/gone", other), ("Otherkit/x", A)])}
+        overrides = {"Otherkit/gone": [status(404)]}
+        for _ in range(3):
+            assert await d6.scrape(pages, ["Umbrella", "Otherkit"], overrides=overrides) == 0
+        assert metadata("Otherkit")["handoff_from"] == {"umbrella": {}}
+        settled = sandbox_bytes()
+        for _ in range(4):
+            assert await d6.scrape(pages, ["Umbrella", "Otherkit"], overrides=overrides) == 0
+            assert sandbox_bytes() == settled
+            assert d6.requests.count(json_url("otherkit/gone")) == 1
+        assert metadata("Otherkit")["link_seeds"] == [[json_url("otherkit/gone"), "Otherkit", other]]
+
+    @pytest.mark.parametrize("late", ["umbrella/guide.json", "thirdkit.json"])
+    async def test_a_link_seed_is_the_same_whichever_linking_page_comes_first(self, d6: D6Runs, late: str) -> None:
+        pages: Pages = {**UMBRELLA, **OTHERKIT, "Otherkit/hidden": (A, []),
+                        "Umbrella/guide": (A, [("Otherkit/hidden", "com.apple.x")]),
+                        "Thirdkit": ("com.apple.t", [("Otherkit/hidden", "com.apple.y")])}
+        assert await d6.scrape(pages, ["Umbrella", "Otherkit", "Thirdkit"], delays={late: 0.2}) == 0
+        assert metadata("Otherkit")["link_seeds"] == [[json_url("otherkit/hidden"), "Otherkit", "com.apple.x"]]
+
+    async def test_a_run_whose_root_fails_keeps_the_seeds(self, d6: D6Runs) -> None:
+        """No own reach without a root: the seeds stay as stored, not every page of the sink."""
+        listed = ["Sibkit", "SibkitUI"]
+        # SibkitUI also links pages Sibkit's own crawl reaches: a (a handoff link,
+        # with a link of its own) and b2 (another bundle's)
+        pages: Pages = {**SIBLINGS, "Sibkit": (S, [("Sibkit/a", S), ("Sibkit/b2", S)]),
+                        "Sibkit/a": (S, [("Sibkit/a/child", S)]), "Sibkit/a/child": (S, []), "Sibkit/b2": (S, []),
+                        "SibkitUI/b": (S, [("Sibkit/a", S), ("Sibkit/b2", "com.apple.other")])}
+        for _ in range(2):
+            assert await d6.scrape(pages, listed, concurrent=1) == 0
+        before = metadata("Sibkit")
+        assert set(before["handoff_links"]) == {json_url("sibkit/hidden")} and "link_seeds" not in before
+        assert await d6.scrape(pages, listed, overrides={"Sibkit": [status(503)]}, concurrent=1) != 0
+        after = metadata("Sibkit")
+        assert after["handoff_links"] == before["handoff_links"] and "link_seeds" not in after
+
+    async def test_a_link_healed_by_a_redirect_or_a_removal_pending_is_no_gap(self, d6: D6Runs) -> None:
+        """The release run's 259: 213 link references to old URLs (numeric ids, underscores)
+        already linked where Apple's web page redirects, and 41 whose web page answered 404
+        once (removed: their text on the next run), were counted; neither is a crawl gap."""
+        guide = json.loads(topic_page("Umbrella/guide", A, []))
+        old, removed = doc_url("umbrella/1402872-back"), doc_url("umbrella/removed")
+        guide["abstract"] = [{"type": "reference", "identifier": url, "isActive": True} for url in (old, removed)]
+        guide["references"].update({url: {"type": "link", "identifier": url, "title": url.rsplit("/", 1)[-1],
+                                          "url": url} for url in (old, removed)})
+        overrides = {"Umbrella/guide": [ok(json.dumps(guide), "E-guide")]}
+        redirects = {old: "/documentation/umbrella/back"}
+        assert await d6.scrape(UMBRELLA, ["Umbrella"], overrides=overrides, redirects=redirects) == 0
+        assert "[1402872-back](./back.md)" in doc_file("Umbrella/guide").read_text()
+        assert d6.logged("link_coverage")[0]["gaps"] == 0
+        # On the next run the removed page is its text (two 404s in a row); still no gap
+        assert await d6.scrape(UMBRELLA, ["Umbrella"], overrides=overrides, redirects=redirects) == 0
+        assert "[1402872-back](./back.md)" in doc_file("Umbrella/guide").read_text()
+        assert "](./removed.md)" not in doc_file("Umbrella/guide").read_text()
+        assert d6.logged("link_coverage")[0]["gaps"] == 0
 
 
 def implementation_files(path: str) -> List[Path]:
@@ -885,8 +1081,12 @@ class TestDefaultImplementations:
         handed_off = doc_file("Sibkit/a/run()-6673q")
         assert handed_off.exists() and "**Framework**: Sibkit" in handed_off.read_text()
         assert implementation_files("SibkitUI/b/run()") == [handed_off]
-        # One hop: the handed-off page's own links are Sibkit's job's to follow
-        assert json_url("sibkit/a/run()-6673q/deeper") not in d6.requests
+        # The handed-off page's own links in Sibkit are Sibkit's job's: taken at the
+        # end of its crawl, or from the seeds the page left (the next run at most)
+        assert await d6.scrape(pages, listed, implementations=implementations) == 0
+        assert d6.requests.count(json_url("sibkit/a/run()-6673q/deeper")) == 1
+        deeper = doc_file("Sibkit/a/run()-6673q/deeper")
+        assert "**Framework**: Sibkit" in deeper.read_text()
         assert metadata("Sibkit")["handoff_from"] == {"sibkitui": {}}
         assert json_url("sibkit/a/run()-6673q") in Config.get_hash_file("Sibkit").read_text()
         assert json_url("sibkit/a/run()-6673q") not in Config.get_hash_file("SibkitUI").read_text()
@@ -895,11 +1095,13 @@ class TestDefaultImplementations:
         assert sandbox_bytes() == before
         # Sibkit alone: its handoff writer didn't run, so the page it alone reaches stays (rule 1)
         assert await d6.scrape(pages, listed, "Sibkit") == 0
-        assert handed_off.exists()
+        assert handed_off.exists() and deeper.exists()
         assert d6.logged("orphans_deleted") == []
         # No longer listed, with both jobs clean: removed by the normal orphan cleanup
-        assert await d6.scrape(pages, listed) == 0
-        assert not handed_off.exists() and doc_file("Sibkit/a").exists()
+        # (the page, then what only its seeds still reached)
+        for _ in range(3):
+            assert await d6.scrape(pages, listed) == 0
+        assert not handed_off.exists() and not deeper.exists() and doc_file("Sibkit/a").exists()
 
 
 def overload_page(path: str, members: Sequence[str], group: bool, links: Sequence[Link] = ()) -> str:
@@ -1004,10 +1206,11 @@ class TestOverloadGroups:
         assert await d6.scrape(OVERLOADS, ["Umbrella"], overrides=overload_routes(MEMBERS[:1])) == 0
         assert docs() == {doc_file(path) for path in (*OVERLOADS, GROUP, MEMBERS[0])}
         assert json_url(MEMBERS[1].lower()) not in Config.get_hash_file("Umbrella").read_text()
-        # The group goes: so do its overloads
+        # The group goes: so do its overloads, but the one the guide links inline,
+        # which is still Apple's page (an inline link no curation reaches is followed)
         assert await d6.scrape(without(OVERLOADS, "Umbrella/Text", GROUP), ["Umbrella"],
                                overrides=overload_routes()) == 0
-        assert docs() == {doc_file(path) for path in OVERLOADS}
+        assert docs() == {doc_file(path) for path in (*OVERLOADS, MEMBERS[0])}
 
 
 def occ_curation(

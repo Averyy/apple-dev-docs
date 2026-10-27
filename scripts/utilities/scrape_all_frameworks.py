@@ -18,7 +18,7 @@ from urllib.parse import urlsplit
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from scraper.config import Config
-from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome, RunSinks, finish_run
+from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome, LinkGap, RunSinks, finish_run
 from scraper.sink import CHILD_MODULES_KEY, HANDOFF_KEY, MODULE_KEY, SinkRegistry, metadata_ids, module_parents
 from scraper import site as site_config
 from scraper.site import APPLE, DocCSite
@@ -36,10 +36,42 @@ logger = get_logger(__name__)
 # framework hash files (those not already counted as unlisted), or the run aborts
 MIN_LISTED_SHARE: Final = 0.9
 
+# Where the run writes its link coverage report (markdown) for the scheduled
+# scrape's Summary step, when set (write_link_coverage)
+LINK_COVERAGE_REPORT_ENV: Final = "LINK_COVERAGE_REPORT"
+# The gaps the report lists (all are counted)
+LINK_COVERAGE_EXAMPLES: Final = 25
+
 # The other scrapers, whose top-level docs dirs no Apple sink may have
 # (namespace_collision): their configs are read from their source
 OTHER_SCRAPERS: Final = ("scrape_mlx_docs.py", "scrape_swift_docs.py", "scrape_hig_docs.py")
 SCRIPTS_DIR: Final = Path(__file__).resolve().parent.parent
+
+
+def write_link_coverage(gaps: Sequence[LinkGap], path: Optional[str] = None) -> None:
+    """The run's link coverage (json_scraper.link_coverage) as markdown, at path
+    (LINK_COVERAGE_REPORT_ENV's value when none is given; nothing without one).
+
+    Its first line counts the gaps ("Link coverage: N …"), which the Summary
+    step turns into a warning when N isn't 0; then the gaps per framework and
+    the first LINK_COVERAGE_EXAMPLES, each with a page that links it. A
+    failed write is logged, never an error of the run.
+    """
+    path = path or os.environ.get(LINK_COVERAGE_REPORT_ENV)
+    if not path:
+        return
+    lines = [f"Link coverage: {len(gaps)} linked pages the crawl never fetched (and we have no file of)"]
+    if gaps:
+        counts: Dict[str, int] = {}
+        for gap in gaps:
+            counts[gap.framework] = counts.get(gap.framework, 0) + 1
+        lines += ["", "| Framework | Pages |", "| --- | --- |"]
+        lines += [f"| {name} | {count} |" for name, count in sorted(counts.items(), key=lambda item: -item[1])]
+        lines += ["", *(f"- {gap.url} (linked from {gap.linked_from})" for gap in gaps[:LINK_COVERAGE_EXAMPLES])]
+    try:
+        Path(path).write_text("\n".join(lines) + "\n", encoding="utf-8")
+    except OSError as e:
+        logger.warning("link_coverage_report_failed", path=path, error=str(e))
 
 
 def _path_strings(node: ast.AST) -> List[str]:
@@ -518,6 +550,7 @@ async def scrape_frameworks(
     # outcomes), their render versions, then every sink saved, and the
     # counts of the modules no parent reached reset
     run_sinks.modules = finish_run(sinks, outcomes, cleanup_orphans, run_sinks)
+    write_link_coverage(run_sinks.link_gaps)
     for result in results:
         if isinstance(result, tuple):
             fw, outcome = result
