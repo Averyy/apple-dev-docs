@@ -1,302 +1,242 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/PushKit": {
-      "etag": "\"4608-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/PushKit.md",
       "hash": "720fc14856028781ba3396ae7671f6cbbaac3604e2df3e14b6b7f95af19ed85e"
     },
     "https://developer.apple.com/documentation/pushkit/exporting-broadcast-push-notification-metrics": {
-      "etag": "\"51ed-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/exporting-broadcast-push-notification-metrics.md",
       "hash": "50dff8cac6d7eae47ea6e970d8385e0f4fb9331b52f3f97e4d87aae88de2f8bd"
     },
     "https://developer.apple.com/documentation/pushkit/exporting-delivery-metrics-logs": {
-      "etag": "\"4c8f-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/exporting-delivery-metrics-logs.md",
       "hash": "bbe6c40dfecb8dc5a00d90b5f13230d138cd31b1abbb0ece74bf6880cf75914c"
     },
     "https://developer.apple.com/documentation/pushkit/pk_export": {
-      "etag": "\"9de-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pk_export.md",
       "hash": "faef8ec9ddfa66ffa31d86d099878f5487fc0279516f40c78fdeea64987aa02d"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushcredentials": {
-      "etag": "\"4d95-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials.md",
       "hash": "ac95c15f0eb8bf6da252309fd781b2c425eb2baa2d0f2f14cabe28a85a5d1374"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushcredentials/token": {
-      "etag": "\"234c-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials/token.md",
       "hash": "00ff1be9ba38851462d1e10c2e8bc39c8ad96c4c888b02f33edd5101d94726d9"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushcredentials/type": {
-      "etag": "\"252d-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials/type.md",
       "hash": "be767c31ebd1b40aebec427e16d68e161958251f5d8068b010e2d2c89243d054"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushpayload": {
-      "etag": "\"35d9-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushpayload.md",
       "hash": "45e77b18d732d2d63797a79d08294082aef616ddf9cac3626ca90f0023bd8b20"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushpayload/dictionarypayload": {
-      "etag": "\"2420-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushpayload/dictionarypayload.md",
       "hash": "27df3460126ac103d5ec7ea03b52b78632f7594bb2cfd42c4c5d5a7c64f62ae6"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushpayload/type": {
-      "etag": "\"2557-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushpayload/type.md",
       "hash": "348a4ea99024e1eb05d0af12a13ace7ef63c4ccca3952929427dbc543bce2bea"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistry": {
-      "etag": "\"60dd-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry.md",
       "hash": "b1ed8ed10be472c0f9b0859de3397e03cd8b6cf0361b0e7062ae23c0a451e9f1"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistry/delegate": {
-      "etag": "\"2a6e-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/delegate.md",
       "hash": "00dd6ad39bce067e59a9f52b1bdaa9ab3089c045eebddfac1b29fe349c6d7c67"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistry/desiredpushtypes": {
-      "etag": "\"2f8f-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/desiredpushtypes.md",
       "hash": "ac102d53f2c9f58794f15f47e671fb5f759c62876092badf861905f78a262118"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistry/init(queue:)": {
-      "etag": "\"2364-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/init(queue).md",
       "hash": "f39749a81ef8eaab16acbb7016de6077214f1efcd7d0ff867b05407b71050e41"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistry/pushtoken(for:)": {
-      "etag": "\"304c-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/pushtoken(for).md",
       "hash": "db6b6e94f4dd5cc5849a890226d7ac78d8c7ce12f780046ce69bfd91fc8ee2c0"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate": {
-      "etag": "\"602c-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate.md",
       "hash": "f112f9870fba49bcdb8a1029eccc82a94948aa297b07cd5981038f4b70e58945"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didinvalidatepushtokenfor:)": {
-      "etag": "\"3c1a-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didinvalidatepushtokenfor).md",
       "hash": "d34f24bcf15dfa72465ec6d9b016a7de10dfdd2e51dfc88282202cb310e62344"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:)": {
-      "etag": "\"476b-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didreceiveincomingpushwith,for).md",
       "hash": "e83ab6a0076f08543f842391cd26e5591f86f9aba1153c99f41711957a48de4c"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:completion:)": {
-      "etag": "\"6ca9-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didreceiveincomingpushwith,for,completion).md",
       "hash": "b05ef3234e2a47c6bc3d15d70417d4ecc06541edfc8ff6db6333f6afd3223d5b"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingvoippushwith:metadata:withcompletionhandler:)": {
-      "etag": "\"7154-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didreceiveincomingvoippushwith,metadata,withcompletionhandler).md",
       "hash": "92661ca769dff08e1ab00c31d1e2a3f6a1254d73fbdb555c91459b96b2c526cc"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didupdate:for:)": {
-      "etag": "\"4bdd-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didupdate,for).md",
       "hash": "21f60ec119edd44036faa39bf831bbfc2de21ca964adcd969dfa1ff52f7754ed"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushtype": {
-      "etag": "\"36d5-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype.md",
       "hash": "74e92fdc152d0c283de8e5fa08273c99b663835477d6bc1e8cd62a0dc4b40683"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushtype/complication": {
-      "etag": "\"2c20-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/complication.md",
       "hash": "cddc42a2decd92c31310ea99989649b4b1bed5241bd9cc80fd6f86874db9b01f"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushtype/fileprovider": {
-      "etag": "\"2864-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/fileprovider.md",
       "hash": "55af0b5a4f59f6625aca0777bc2d3b84ce7f4b42e937775a53661cbcd19ccdd7"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushtype/init(rawvalue:)": {
-      "etag": "\"12c8-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/init(rawvalue).md",
       "hash": "7997a5b83bd45f42081ac0974cfa617e689b1f008297041cf1e38f390d1742ef"
     },
     "https://developer.apple.com/documentation/pushkit/pkpushtype/voip": {
-      "etag": "\"3375-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/voip.md",
       "hash": "530c4beb9f3feb0409322f9ef06872848cbb2d5c274f62bde023e9e0014c9281"
     },
     "https://developer.apple.com/documentation/pushkit/pkvoippushmetadata": {
-      "etag": "\"3909-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkvoippushmetadata.md",
       "hash": "1972ec46a1d8380a109ed9b2163061871da427c5f5d9d68ab708f691d15e9005"
     },
     "https://developer.apple.com/documentation/pushkit/pkvoippushmetadata/mustreport": {
-      "etag": "\"1d6d-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkvoippushmetadata/mustreport.md",
       "hash": "aacb7d6260288d25cd44fd041e1cb938ae9c6632f13851e0e5c81021a0b1f105"
     },
     "https://developer.apple.com/documentation/pushkit/responding-to-voip-notifications-from-pushkit": {
-      "etag": "\"9532-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/responding-to-voip-notifications-from-pushkit.md",
       "hash": "2a714bcea79ec7cb9710ea53efde8886a9dae7ca2c72d2b624c43533e5dccfa0"
     },
     "https://developer.apple.com/documentation/pushkit/supporting-pushkit-notifications-in-your-app": {
-      "etag": "\"4d39-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/supporting-pushkit-notifications-in-your-app.md",
       "hash": "8ebada78a1443c24bbdad03dcb416177f6dfe10d114ff517e7af7d3dbaed8d23"
     },
     "https://developer.apple.com/tutorials/data/documentation/PushKit.json": {
-      "etag": "\"4608-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/PushKit.md",
       "hash": "720fc14856028781ba3396ae7671f6cbbaac3604e2df3e14b6b7f95af19ed85e"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/exporting-broadcast-push-notification-metrics.json": {
-      "etag": "\"51ed-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/exporting-broadcast-push-notification-metrics.md",
       "hash": "50dff8cac6d7eae47ea6e970d8385e0f4fb9331b52f3f97e4d87aae88de2f8bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/exporting-delivery-metrics-logs.json": {
-      "etag": "\"4c8f-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/exporting-delivery-metrics-logs.md",
       "hash": "bbe6c40dfecb8dc5a00d90b5f13230d138cd31b1abbb0ece74bf6880cf75914c"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pk_export.json": {
-      "etag": "\"9de-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pk_export.md",
       "hash": "faef8ec9ddfa66ffa31d86d099878f5487fc0279516f40c78fdeea64987aa02d"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushcredentials.json": {
-      "etag": "\"4d95-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials.md",
       "hash": "ac95c15f0eb8bf6da252309fd781b2c425eb2baa2d0f2f14cabe28a85a5d1374"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushcredentials/token.json": {
-      "etag": "\"234c-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials/token.md",
       "hash": "00ff1be9ba38851462d1e10c2e8bc39c8ad96c4c888b02f33edd5101d94726d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushcredentials/type.json": {
-      "etag": "\"252d-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushcredentials/type.md",
       "hash": "be767c31ebd1b40aebec427e16d68e161958251f5d8068b010e2d2c89243d054"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushpayload.json": {
-      "etag": "\"35d9-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushpayload.md",
       "hash": "45e77b18d732d2d63797a79d08294082aef616ddf9cac3626ca90f0023bd8b20"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushpayload/dictionarypayload.json": {
-      "etag": "\"2420-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushpayload/dictionarypayload.md",
       "hash": "27df3460126ac103d5ec7ea03b52b78632f7594bb2cfd42c4c5d5a7c64f62ae6"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushpayload/type.json": {
-      "etag": "\"2557-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushpayload/type.md",
       "hash": "348a4ea99024e1eb05d0af12a13ace7ef63c4ccca3952929427dbc543bce2bea"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry.json": {
-      "etag": "\"60dd-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry.md",
       "hash": "b1ed8ed10be472c0f9b0859de3397e03cd8b6cf0361b0e7062ae23c0a451e9f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/delegate.json": {
-      "etag": "\"2a6e-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/delegate.md",
       "hash": "00dd6ad39bce067e59a9f52b1bdaa9ab3089c045eebddfac1b29fe349c6d7c67"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/desiredpushtypes.json": {
-      "etag": "\"2f8f-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/desiredpushtypes.md",
       "hash": "ac102d53f2c9f58794f15f47e671fb5f759c62876092badf861905f78a262118"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/init(queue:).json": {
-      "etag": "\"2364-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/init(queue).md",
       "hash": "f39749a81ef8eaab16acbb7016de6077214f1efcd7d0ff867b05407b71050e41"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistry/pushtoken(for:).json": {
-      "etag": "\"304c-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistry/pushtoken(for).md",
       "hash": "db6b6e94f4dd5cc5849a890226d7ac78d8c7ce12f780046ce69bfd91fc8ee2c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate.json": {
-      "etag": "\"602c-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate.md",
       "hash": "f112f9870fba49bcdb8a1029eccc82a94948aa297b07cd5981038f4b70e58945"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didinvalidatepushtokenfor:).json": {
-      "etag": "\"3c1a-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didinvalidatepushtokenfor).md",
       "hash": "d34f24bcf15dfa72465ec6d9b016a7de10dfdd2e51dfc88282202cb310e62344"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:).json": {
-      "etag": "\"476b-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didreceiveincomingpushwith,for).md",
       "hash": "e83ab6a0076f08543f842391cd26e5591f86f9aba1153c99f41711957a48de4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:completion:).json": {
-      "etag": "\"6ca9-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didreceiveincomingpushwith,for,completion).md",
       "hash": "b05ef3234e2a47c6bc3d15d70417d4ecc06541edfc8ff6db6333f6afd3223d5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingvoippushwith:metadata:withcompletionhandler:).json": {
-      "etag": "\"7154-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didreceiveincomingvoippushwith,metadata,withcompletionhandler).md",
       "hash": "92661ca769dff08e1ab00c31d1e2a3f6a1254d73fbdb555c91459b96b2c526cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didupdate:for:).json": {
-      "etag": "\"4bdd-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushregistrydelegate/pushregistry(_,didupdate,for).md",
       "hash": "21f60ec119edd44036faa39bf831bbfc2de21ca964adcd969dfa1ff52f7754ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype.json": {
-      "etag": "\"36d5-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype.md",
       "hash": "74e92fdc152d0c283de8e5fa08273c99b663835477d6bc1e8cd62a0dc4b40683"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/complication.json": {
-      "etag": "\"2c20-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/complication.md",
       "hash": "cddc42a2decd92c31310ea99989649b4b1bed5241bd9cc80fd6f86874db9b01f"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/fileprovider.json": {
-      "etag": "\"2864-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/fileprovider.md",
       "hash": "55af0b5a4f59f6625aca0777bc2d3b84ce7f4b42e937775a53661cbcd19ccdd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/init(rawvalue:).json": {
-      "etag": "\"12c8-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/init(rawvalue).md",
       "hash": "7997a5b83bd45f42081ac0974cfa617e689b1f008297041cf1e38f390d1742ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkpushtype/voip.json": {
-      "etag": "\"3375-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkpushtype/voip.md",
       "hash": "530c4beb9f3feb0409322f9ef06872848cbb2d5c274f62bde023e9e0014c9281"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkvoippushmetadata.json": {
-      "etag": "\"3909-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkvoippushmetadata.md",
       "hash": "1972ec46a1d8380a109ed9b2163061871da427c5f5d9d68ab708f691d15e9005"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/pkvoippushmetadata/mustreport.json": {
-      "etag": "\"1d6d-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/pkvoippushmetadata/mustreport.md",
       "hash": "aacb7d6260288d25cd44fd041e1cb938ae9c6632f13851e0e5c81021a0b1f105"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/responding-to-voip-notifications-from-pushkit.json": {
-      "etag": "\"9532-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/responding-to-voip-notifications-from-pushkit.md",
       "hash": "2a714bcea79ec7cb9710ea53efde8886a9dae7ca2c72d2b624c43533e5dccfa0"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushkit/supporting-pushkit-notifications-in-your-app.json": {
-      "etag": "\"4d39-65d55f69abc4d-df\"",
       "file_path": "documentation/PushKit/supporting-pushkit-notifications-in-your-app.md",
       "hash": "8ebada78a1443c24bbdad03dcb416177f6dfe10d114ff517e7af7d3dbaed8d23"
     }

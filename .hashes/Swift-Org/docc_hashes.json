@@ -1,712 +1,570 @@
 {
   "hashes": {
     "https://docs.swift.org/latest/data/documentation/docc.json": {
-      "etag": "\"2e79-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/docc.md",
       "hash": "510d0e79b37d606155f7b7eed7e3b02f84b882fab63b4ce9bf788607971a4bf8"
     },
     "https://docs.swift.org/latest/data/documentation/docc/adding-code-snippets-to-your-content.json": {
-      "etag": "\"46ae-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-code-snippets-to-your-content.md",
       "hash": "f594f5a2f61d8a0ddd28f4aaca6ea98af23d36a8bce94495f67eb30ac74a1c92"
     },
     "https://docs.swift.org/latest/data/documentation/docc/adding-images.json": {
-      "etag": "\"27b5-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-images.md",
       "hash": "a21c31cb9e0c14797f1a1ac8e594869b08efd382a103fac65d2b25bd15803241"
     },
     "https://docs.swift.org/latest/data/documentation/docc/adding-structure-to-your-documentation-pages.json": {
-      "etag": "\"6727-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-structure-to-your-documentation-pages.md",
       "hash": "5d9b02487b939a9f510fe760a30887da86bfcf2c86ba350be6538070492d37bf"
     },
     "https://docs.swift.org/latest/data/documentation/docc/adding-supplemental-content-to-a-documentation-catalog.json": {
-      "etag": "\"4d10-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-supplemental-content-to-a-documentation-catalog.md",
       "hash": "74419d379ffb1b131e42cc9a9f2a8f1006e4e7cfcb60e89fb41ce66eeb671790"
     },
     "https://docs.swift.org/latest/data/documentation/docc/adding-tables-of-data.json": {
-      "etag": "\"4b0f-65c302f2e1a00\"",
       "file_path": "documentation/Swift-Org/docc/adding-tables-of-data.md",
       "hash": "c99d3c16b0abb5976ff8f4ec572eec52991d721edcb5b73a1412a1f552f17f61"
     },
     "https://docs.swift.org/latest/data/documentation/docc/alternaterepresentation.json": {
-      "etag": "\"2213-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/alternaterepresentation.md",
       "hash": "b7ab57d6314bcc333a0ffac62b5328383433cc9ab8c1787e9623f75f84aafc9d"
     },
     "https://docs.swift.org/latest/data/documentation/docc/api-reference-syntax.json": {
-      "etag": "\"21d9-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/api-reference-syntax.md",
       "hash": "04b3d4c667b1b86557a6fa8fb88953c6850688d57033819a4e70809c73497398"
     },
     "https://docs.swift.org/latest/data/documentation/docc/article.json": {
-      "etag": "\"2923-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/article.md",
       "hash": "af482af922ebfdaa9d7f723ed03b56c38db8f5f5602ef83c821d967320f4a4d9"
     },
     "https://docs.swift.org/latest/data/documentation/docc/assessments.json": {
-      "etag": "\"1df6-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/assessments.md",
       "hash": "e2a90f287fa45783614ddf378023082264dc9d6806db3ab57b780cc1051c51b8"
     },
     "https://docs.swift.org/latest/data/documentation/docc/automaticarticlesubheading.json": {
-      "etag": "\"1944-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/automaticarticlesubheading.md",
       "hash": "09c0b1e9c3f27854f489c2e8ef068977f752dd37483b169fcc97f738fc58999c"
     },
     "https://docs.swift.org/latest/data/documentation/docc/automaticseealso.json": {
-      "etag": "\"1731-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/automaticseealso.md",
       "hash": "622889deda7316fffaf2cac8aaa9d59113fbf12b65cb43bc6c17ee6df81025aa"
     },
     "https://docs.swift.org/latest/data/documentation/docc/automatictitleheading.json": {
-      "etag": "\"183a-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/automatictitleheading.md",
       "hash": "7e512470634f3f1b9f8004283c8d970a579e630e3240ae31b4ba7798b5e5a525"
     },
     "https://docs.swift.org/latest/data/documentation/docc/available.json": {
-      "etag": "\"26da-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/available.md",
       "hash": "d3a99d205c5def16e36e349c39080ba0c2d689624c5e44476814fdcf0c7b31ca"
     },
     "https://docs.swift.org/latest/data/documentation/docc/building-an-interactive-tutorial.json": {
-      "etag": "\"5840-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/building-an-interactive-tutorial.md",
       "hash": "ef05be019c3255019fa61a82c6fbab655d215d7042d3875dbea3a36019f274e2"
     },
     "https://docs.swift.org/latest/data/documentation/docc/calltoaction.json": {
-      "etag": "\"38e2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/calltoaction.md",
       "hash": "a6b9b7ff9fe8de4ff09e1c41daaabe6e645c186a1da8f29c03e3ee8fa17741cb"
     },
     "https://docs.swift.org/latest/data/documentation/docc/chapter.json": {
-      "etag": "\"31b2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/chapter.md",
       "hash": "5493a2884ca451bdd13f8d104e121170e09b6bf919718fed61f8cf2427dc03cb"
     },
     "https://docs.swift.org/latest/data/documentation/docc/choice.json": {
-      "etag": "\"28f2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/choice.md",
       "hash": "e36eebaf82740aadc90b4f873f5b44733272c0673fa2b1249bf6b0181656a0ed"
     },
     "https://docs.swift.org/latest/data/documentation/docc/code.json": {
-      "etag": "\"2d45-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/code.md",
       "hash": "ebdca467afa01a602be99780570e88541cd0f329cca1b15d15374d3e913c098f"
     },
     "https://docs.swift.org/latest/data/documentation/docc/column.json": {
-      "etag": "\"1251-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/column.md",
       "hash": "f26a8c449a98a919bf3ca4f70f8ca2eba1fed7c63db710d1397b14df595f183a"
     },
     "https://docs.swift.org/latest/data/documentation/docc/comment.json": {
-      "etag": "\"a4a-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/comment.md",
       "hash": "2099b36e9c397a7e2014bbbca01cf3f54293422f091a4828831d64dcfe051d6c"
     },
     "https://docs.swift.org/latest/data/documentation/docc/contentandmedia.json": {
-      "etag": "\"21f2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/contentandmedia.md",
       "hash": "9aa75d4c8be37b6980a061d082ebb43912489e255934ae8721315297a0f5e995"
     },
     "https://docs.swift.org/latest/data/documentation/docc/customizing-the-appearance-of-your-documentation-pages.json": {
-      "etag": "\"64cc-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/customizing-the-appearance-of-your-documentation-pages.md",
       "hash": "0772d111267be3ae18f5f22a842b7a4bf70ac6606887ae11ab2e7b308b407b30"
     },
     "https://docs.swift.org/latest/data/documentation/docc/deprecationsummary.json": {
-      "etag": "\"1686-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/deprecationsummary.md",
       "hash": "901d3c26c4433000aabc0ebf5a2e1560a6eacd046b207d7e7c73332440ae8cc0"
     },
     "https://docs.swift.org/latest/data/documentation/docc/displayname.json": {
-      "etag": "\"2f03-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/displayname.md",
       "hash": "0002439ea46ccd66df22abed94a0e957b5cbe6f590507f28daa3ca71eda73cad"
     },
     "https://docs.swift.org/latest/data/documentation/docc/distributing-documentation-to-other-developers.json": {
-      "etag": "\"424b-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/distributing-documentation-to-other-developers.md",
       "hash": "b30f2796a4c659be95b8e51930835af752da72b8e4d5898d77bc469a5b830910"
     },
     "https://docs.swift.org/latest/data/documentation/docc/documentation.json": {
-      "etag": "\"2136-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/documentation.md",
       "hash": "de04def31cb07a0f24c4d224a7e38f93f9d76b50e290aa687bc4cc38c00ca3c7"
     },
     "https://docs.swift.org/latest/data/documentation/docc/documentationextension.json": {
-      "etag": "\"1b20-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/documentationextension.md",
       "hash": "970a91adbc1d03001483e23cc27fde0f9e18549558f327ca57723d4f3755d1d0"
     },
     "https://docs.swift.org/latest/data/documentation/docc/documenting-a-swift-framework-or-package.json": {
-      "etag": "\"4275-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/documenting-a-swift-framework-or-package.md",
       "hash": "3b666ddd60945632e1889804428e3a703385a72223d532fa6e8d8c6c201138d4"
     },
     "https://docs.swift.org/latest/data/documentation/docc/documenting-api-with-different-language-representations.json": {
-      "etag": "\"3a9b-65c302f2e1a00\"",
       "file_path": "documentation/Swift-Org/docc/documenting-api-with-different-language-representations.md",
       "hash": "1639f55c2abc81ee036658cbcd720f6e52d6fc8849151cc17a606c2c6973e847"
     },
     "https://docs.swift.org/latest/data/documentation/docc/downloads.json": {
-      "etag": "\"23a1-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/downloads.md",
       "hash": "19c6a30732b41aef4872747dd46710c9264d2822c1b14a74a5159ef15c6ee050"
     },
     "https://docs.swift.org/latest/data/documentation/docc/formatting-your-documentation-content.json": {
-      "etag": "\"558d-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/formatting-your-documentation-content.md",
       "hash": "39c0e41cc2da695168292b4bfbb256df0ddb155a302818538faa437c424b15f2"
     },
     "https://docs.swift.org/latest/data/documentation/docc/forums.json": {
-      "etag": "\"2317-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/forums.md",
       "hash": "2d527f97b4e065dfc75a59f94438b3c98df160be37ae30c8269c27f502636c63"
     },
     "https://docs.swift.org/latest/data/documentation/docc/image.json": {
-      "etag": "\"4032-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/image.md",
       "hash": "3d8bf9190901f2ff68e58b62670e569a184b57ff7d2bccc26ea713df5a8cbb42"
     },
     "https://docs.swift.org/latest/data/documentation/docc/intro.json": {
-      "etag": "\"2f9c-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/intro.md",
       "hash": "1cbb5e1719de92acece0a9697c62689f91e1a687702719cbfcbc25cc04769c7b"
     },
     "https://docs.swift.org/latest/data/documentation/docc/justification.json": {
-      "etag": "\"1c46-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/justification.md",
       "hash": "c491baab9f2b96e22305607c1ffde7161f76d4a69eb32f47d47a04b5b20cbe7f"
     },
     "https://docs.swift.org/latest/data/documentation/docc/linking-to-symbols-and-other-content.json": {
-      "etag": "\"920e-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/linking-to-symbols-and-other-content.md",
       "hash": "2d39724dfaf4b5028d741d1da335f16d25eef0b749c75d70ab5c513cff44ebe0"
     },
     "https://docs.swift.org/latest/data/documentation/docc/links.json": {
-      "etag": "\"1df8-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/links.md",
       "hash": "b797495a27481bfdb30e9f779ce49f6c76ef489b0161cde9f553fec70c038cb4"
     },
     "https://docs.swift.org/latest/data/documentation/docc/metadata.json": {
-      "etag": "\"5038-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/metadata.md",
       "hash": "83b18f3ada83299ae0c50fce3f99f76e0d2434c567b528bbc0059d08182f2007"
     },
     "https://docs.swift.org/latest/data/documentation/docc/multiplechoice.json": {
-      "etag": "\"1c6a-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/multiplechoice.md",
       "hash": "074a8b0305d5142a40ce05395870213addd093d2d6a538671bf2f7cd69b99961"
     },
     "https://docs.swift.org/latest/data/documentation/docc/options.json": {
-      "etag": "\"26df-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/options.md",
       "hash": "90639dcbcc44c190d5ff449c66364c06a398507048aa0e722226b8c17720f72e"
     },
     "https://docs.swift.org/latest/data/documentation/docc/other-formatting-options.json": {
-      "etag": "\"2ec0-65c302f2e1a00\"",
       "file_path": "documentation/Swift-Org/docc/other-formatting-options.md",
       "hash": "6e9279d3f76777d0c3ccadecc62b2697771577f50a246c6f2f7f081da9784fb9"
     },
     "https://docs.swift.org/latest/data/documentation/docc/pagecolor.json": {
-      "etag": "\"2e74-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/pagecolor.md",
       "hash": "67fb8d56a8127bb853e1ddb4c44839c08ac63573ba723acb98869e3f3ce4d1f5"
     },
     "https://docs.swift.org/latest/data/documentation/docc/pageimage.json": {
-      "etag": "\"35b6-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/pageimage.md",
       "hash": "918376efad41e0fa3c099dc6c5c7bb1bb408d72f49945e0aba2b0a350c23edb2"
     },
     "https://docs.swift.org/latest/data/documentation/docc/pagekind.json": {
-      "etag": "\"2595-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/pagekind.md",
       "hash": "0e3db7815f34a1396511cb5d80a7d7ba166c43849515ad6f6a8e8526ed027543"
     },
     "https://docs.swift.org/latest/data/documentation/docc/redirected.json": {
-      "etag": "\"1f16-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/redirected.md",
       "hash": "ad04fe91774e72f802b618e050965579a9c8ddf0516198c49f38817949c3a0dd"
     },
     "https://docs.swift.org/latest/data/documentation/docc/resources.json": {
-      "etag": "\"29cf-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/resources.md",
       "hash": "5e4d77adfb9de2e3df893a72184e72ea02d13b4565300bbe2b1f481a2cfa6f07"
     },
     "https://docs.swift.org/latest/data/documentation/docc/row.json": {
-      "etag": "\"1f45-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/row.md",
       "hash": "53895c90d556273206f98129b120624cf71baca38052626fbfccd19ca83f2b9b"
     },
     "https://docs.swift.org/latest/data/documentation/docc/samplecode.json": {
-      "etag": "\"21d1-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/samplecode.md",
       "hash": "d714a8a9f6c10375742d04e5f33978337f6eb5c3b14f950b0b1b7f3bf75cb330"
     },
     "https://docs.swift.org/latest/data/documentation/docc/section.json": {
-      "etag": "\"2aa3-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/section.md",
       "hash": "e0bd1751caf2bdeead7dccf9a69bb82849d9bbf6ceecacda6d1df3cd19b206a6"
     },
     "https://docs.swift.org/latest/data/documentation/docc/small.json": {
-      "etag": "\"17ec-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/small.md",
       "hash": "0e6d4a57786672ed7f540287ea58fe9f80103d49af26c4d5536d026346312eac"
     },
     "https://docs.swift.org/latest/data/documentation/docc/snippet.json": {
-      "etag": "\"1ce6-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/snippet.md",
       "hash": "045ddd7357610c7afd3361eeca61f706b1b2db3303d6553cb817e6496bc4eae0"
     },
     "https://docs.swift.org/latest/data/documentation/docc/stack.json": {
-      "etag": "\"1ea6-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/stack.md",
       "hash": "2b69929463ddfdbde06a6b1b64eac5ff41179323f4abef3769275fbbdd95a647"
     },
     "https://docs.swift.org/latest/data/documentation/docc/step.json": {
-      "etag": "\"267f-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/step.md",
       "hash": "810c0731998eeb4e9e7e1c2695fcfc8c1023d0f9462452febd04b9a5a62d0be7"
     },
     "https://docs.swift.org/latest/data/documentation/docc/steps.json": {
-      "etag": "\"1c0c-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/steps.md",
       "hash": "9ba3acaa7dacddbe15bfdaf1263d8a20f20eefb4d6198f93dc28973e302f9deb"
     },
     "https://docs.swift.org/latest/data/documentation/docc/supportedlanguage.json": {
-      "etag": "\"1956-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/supportedlanguage.md",
       "hash": "2c2f7e47a4de05dd03fef13293c22e4b9fb6f3854e6349df1f0878ef6c34bb84"
     },
     "https://docs.swift.org/latest/data/documentation/docc/tab.json": {
-      "etag": "\"1072-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tab.md",
       "hash": "154b9e8269fcbf27aae17a991d749a5ce99f222d79697cd1d46e536339327369"
     },
     "https://docs.swift.org/latest/data/documentation/docc/tabnavigator.json": {
-      "etag": "\"1bd2-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tabnavigator.md",
       "hash": "f3525c3aa4f09f2a1e6333bf6a59ca20a9e47a07d327c41533c668a97f0342b8"
     },
     "https://docs.swift.org/latest/data/documentation/docc/technologyroot.json": {
-      "etag": "\"1b29-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/technologyroot.md",
       "hash": "0eb091f6aa96c7e6db89a93d48409e61d9f32eaf1f996ba00525419bae126abc"
     },
     "https://docs.swift.org/latest/data/documentation/docc/titleheading.json": {
-      "etag": "\"2826-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/titleheading.md",
       "hash": "9378fc2489f4b87b5d479fbc82deba60965e06c5185f46540d6391d00ead7aec"
     },
     "https://docs.swift.org/latest/data/documentation/docc/topicsvisualstyle.json": {
-      "etag": "\"117b-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/topicsvisualstyle.md",
       "hash": "f4df0750dcdd8384f2ef6af1f57ae88ed6f443a1b002182c063f27921788b8f0"
     },
     "https://docs.swift.org/latest/data/documentation/docc/tutorial-shared-directives.json": {
-      "etag": "\"134d-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorial-shared-directives.md",
       "hash": "8c8bf3cd184377299bc62202cee85a957ccb77812c26a6f194fc40fe5a9efb01"
     },
     "https://docs.swift.org/latest/data/documentation/docc/tutorial-syntax.json": {
-      "etag": "\"1c7c-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorial-syntax.md",
       "hash": "d9682f8605228a9a10ee30813623a8e0e419e63e444d27eafeb67c545e76a877"
     },
     "https://docs.swift.org/latest/data/documentation/docc/tutorial.json": {
-      "etag": "\"5fcb-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorial.md",
       "hash": "c18ea5c1032bc988d4d3051c1fe1d704c3e9da9b67785cb4ebbaf68433ffe3b9"
     },
     "https://docs.swift.org/latest/data/documentation/docc/tutorialreference.json": {
-      "etag": "\"15f9-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorialreference.md",
       "hash": "412fb9eac1c2a5168590e0495b61db36547c7ef1967856e1b129f2e7bba36a92"
     },
     "https://docs.swift.org/latest/data/documentation/docc/tutorials.json": {
-      "etag": "\"35a1-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorials.md",
       "hash": "6829d87a4647722a7a18d2bf2435b8a0dd5178a606877b736e42652eebfeaff3"
     },
     "https://docs.swift.org/latest/data/documentation/docc/video.json": {
-      "etag": "\"3217-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/video.md",
       "hash": "f05b7651b79f09eef2c30d05d3590fd1d88e2b71833b460736d0f854ab1a7926"
     },
     "https://docs.swift.org/latest/data/documentation/docc/videos.json": {
-      "etag": "\"2339-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/videos.md",
       "hash": "6206ac41626ef05f6e6e9c431d32c85cc54ed1c5b3a138e55fb584ced194ac6e"
     },
     "https://docs.swift.org/latest/data/documentation/docc/volume.json": {
-      "etag": "\"1fb2-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/volume.md",
       "hash": "9cb93aa0e6e8ef3fc0e5516454da9f635b8e55956e06fe12cdb3e5df312772ea"
     },
     "https://docs.swift.org/latest/data/documentation/docc/writing-symbol-documentation-in-your-source-files.json": {
-      "etag": "\"6ff9-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/writing-symbol-documentation-in-your-source-files.md",
       "hash": "a51af1e30a8bbddf41ab43fb91e43378f4d06310b730f30a4fe32c5fb495dfb0"
     },
     "https://docs.swift.org/latest/data/documentation/docc/xcoderequirement.json": {
-      "etag": "\"160d-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/xcoderequirement.md",
       "hash": "c554747a5fe1bf13ec6968ffedee556ff9ffef352ee47a3328b19d882f2ad85e"
     },
     "https://docs.swift.org/latest/documentation/docc": {
-      "etag": "\"2e79-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/docc.md",
       "hash": "510d0e79b37d606155f7b7eed7e3b02f84b882fab63b4ce9bf788607971a4bf8"
     },
     "https://docs.swift.org/latest/documentation/docc/adding-code-snippets-to-your-content": {
-      "etag": "\"46ae-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-code-snippets-to-your-content.md",
       "hash": "f594f5a2f61d8a0ddd28f4aaca6ea98af23d36a8bce94495f67eb30ac74a1c92"
     },
     "https://docs.swift.org/latest/documentation/docc/adding-images": {
-      "etag": "\"27b5-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-images.md",
       "hash": "a21c31cb9e0c14797f1a1ac8e594869b08efd382a103fac65d2b25bd15803241"
     },
     "https://docs.swift.org/latest/documentation/docc/adding-structure-to-your-documentation-pages": {
-      "etag": "\"6727-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-structure-to-your-documentation-pages.md",
       "hash": "5d9b02487b939a9f510fe760a30887da86bfcf2c86ba350be6538070492d37bf"
     },
     "https://docs.swift.org/latest/documentation/docc/adding-supplemental-content-to-a-documentation-catalog": {
-      "etag": "\"4d10-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/adding-supplemental-content-to-a-documentation-catalog.md",
       "hash": "74419d379ffb1b131e42cc9a9f2a8f1006e4e7cfcb60e89fb41ce66eeb671790"
     },
     "https://docs.swift.org/latest/documentation/docc/adding-tables-of-data": {
-      "etag": "\"4b0f-65c302f2e1a00\"",
       "file_path": "documentation/Swift-Org/docc/adding-tables-of-data.md",
       "hash": "c99d3c16b0abb5976ff8f4ec572eec52991d721edcb5b73a1412a1f552f17f61"
     },
     "https://docs.swift.org/latest/documentation/docc/alternaterepresentation": {
-      "etag": "\"2213-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/alternaterepresentation.md",
       "hash": "b7ab57d6314bcc333a0ffac62b5328383433cc9ab8c1787e9623f75f84aafc9d"
     },
     "https://docs.swift.org/latest/documentation/docc/api-reference-syntax": {
-      "etag": "\"21d9-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/api-reference-syntax.md",
       "hash": "04b3d4c667b1b86557a6fa8fb88953c6850688d57033819a4e70809c73497398"
     },
     "https://docs.swift.org/latest/documentation/docc/article": {
-      "etag": "\"2923-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/article.md",
       "hash": "af482af922ebfdaa9d7f723ed03b56c38db8f5f5602ef83c821d967320f4a4d9"
     },
     "https://docs.swift.org/latest/documentation/docc/assessments": {
-      "etag": "\"1df6-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/assessments.md",
       "hash": "e2a90f287fa45783614ddf378023082264dc9d6806db3ab57b780cc1051c51b8"
     },
     "https://docs.swift.org/latest/documentation/docc/automaticarticlesubheading": {
-      "etag": "\"1944-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/automaticarticlesubheading.md",
       "hash": "09c0b1e9c3f27854f489c2e8ef068977f752dd37483b169fcc97f738fc58999c"
     },
     "https://docs.swift.org/latest/documentation/docc/automaticseealso": {
-      "etag": "\"1731-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/automaticseealso.md",
       "hash": "622889deda7316fffaf2cac8aaa9d59113fbf12b65cb43bc6c17ee6df81025aa"
     },
     "https://docs.swift.org/latest/documentation/docc/automatictitleheading": {
-      "etag": "\"183a-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/automatictitleheading.md",
       "hash": "7e512470634f3f1b9f8004283c8d970a579e630e3240ae31b4ba7798b5e5a525"
     },
     "https://docs.swift.org/latest/documentation/docc/available": {
-      "etag": "\"26da-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/available.md",
       "hash": "d3a99d205c5def16e36e349c39080ba0c2d689624c5e44476814fdcf0c7b31ca"
     },
     "https://docs.swift.org/latest/documentation/docc/building-an-interactive-tutorial": {
-      "etag": "\"5840-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/building-an-interactive-tutorial.md",
       "hash": "ef05be019c3255019fa61a82c6fbab655d215d7042d3875dbea3a36019f274e2"
     },
     "https://docs.swift.org/latest/documentation/docc/calltoaction": {
-      "etag": "\"38e2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/calltoaction.md",
       "hash": "a6b9b7ff9fe8de4ff09e1c41daaabe6e645c186a1da8f29c03e3ee8fa17741cb"
     },
     "https://docs.swift.org/latest/documentation/docc/chapter": {
-      "etag": "\"31b2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/chapter.md",
       "hash": "5493a2884ca451bdd13f8d104e121170e09b6bf919718fed61f8cf2427dc03cb"
     },
     "https://docs.swift.org/latest/documentation/docc/choice": {
-      "etag": "\"28f2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/choice.md",
       "hash": "e36eebaf82740aadc90b4f873f5b44733272c0673fa2b1249bf6b0181656a0ed"
     },
     "https://docs.swift.org/latest/documentation/docc/code": {
-      "etag": "\"2d45-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/code.md",
       "hash": "ebdca467afa01a602be99780570e88541cd0f329cca1b15d15374d3e913c098f"
     },
     "https://docs.swift.org/latest/documentation/docc/column": {
-      "etag": "\"1251-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/column.md",
       "hash": "f26a8c449a98a919bf3ca4f70f8ca2eba1fed7c63db710d1397b14df595f183a"
     },
     "https://docs.swift.org/latest/documentation/docc/comment": {
-      "etag": "\"a4a-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/comment.md",
       "hash": "2099b36e9c397a7e2014bbbca01cf3f54293422f091a4828831d64dcfe051d6c"
     },
     "https://docs.swift.org/latest/documentation/docc/contentandmedia": {
-      "etag": "\"21f2-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/contentandmedia.md",
       "hash": "9aa75d4c8be37b6980a061d082ebb43912489e255934ae8721315297a0f5e995"
     },
     "https://docs.swift.org/latest/documentation/docc/customizing-the-appearance-of-your-documentation-pages": {
-      "etag": "\"64cc-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/customizing-the-appearance-of-your-documentation-pages.md",
       "hash": "0772d111267be3ae18f5f22a842b7a4bf70ac6606887ae11ab2e7b308b407b30"
     },
     "https://docs.swift.org/latest/documentation/docc/deprecationsummary": {
-      "etag": "\"1686-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/deprecationsummary.md",
       "hash": "901d3c26c4433000aabc0ebf5a2e1560a6eacd046b207d7e7c73332440ae8cc0"
     },
     "https://docs.swift.org/latest/documentation/docc/displayname": {
-      "etag": "\"2f03-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/displayname.md",
       "hash": "0002439ea46ccd66df22abed94a0e957b5cbe6f590507f28daa3ca71eda73cad"
     },
     "https://docs.swift.org/latest/documentation/docc/distributing-documentation-to-other-developers": {
-      "etag": "\"424b-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/distributing-documentation-to-other-developers.md",
       "hash": "b30f2796a4c659be95b8e51930835af752da72b8e4d5898d77bc469a5b830910"
     },
     "https://docs.swift.org/latest/documentation/docc/documentation": {
-      "etag": "\"2136-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/documentation.md",
       "hash": "de04def31cb07a0f24c4d224a7e38f93f9d76b50e290aa687bc4cc38c00ca3c7"
     },
     "https://docs.swift.org/latest/documentation/docc/documentationextension": {
-      "etag": "\"1b20-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/documentationextension.md",
       "hash": "970a91adbc1d03001483e23cc27fde0f9e18549558f327ca57723d4f3755d1d0"
     },
     "https://docs.swift.org/latest/documentation/docc/documenting-a-swift-framework-or-package": {
-      "etag": "\"4275-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/documenting-a-swift-framework-or-package.md",
       "hash": "3b666ddd60945632e1889804428e3a703385a72223d532fa6e8d8c6c201138d4"
     },
     "https://docs.swift.org/latest/documentation/docc/documenting-api-with-different-language-representations": {
-      "etag": "\"3a9b-65c302f2e1a00\"",
       "file_path": "documentation/Swift-Org/docc/documenting-api-with-different-language-representations.md",
       "hash": "1639f55c2abc81ee036658cbcd720f6e52d6fc8849151cc17a606c2c6973e847"
     },
     "https://docs.swift.org/latest/documentation/docc/downloads": {
-      "etag": "\"23a1-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/downloads.md",
       "hash": "19c6a30732b41aef4872747dd46710c9264d2822c1b14a74a5159ef15c6ee050"
     },
     "https://docs.swift.org/latest/documentation/docc/formatting-your-documentation-content": {
-      "etag": "\"558d-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/formatting-your-documentation-content.md",
       "hash": "39c0e41cc2da695168292b4bfbb256df0ddb155a302818538faa437c424b15f2"
     },
     "https://docs.swift.org/latest/documentation/docc/forums": {
-      "etag": "\"2317-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/forums.md",
       "hash": "2d527f97b4e065dfc75a59f94438b3c98df160be37ae30c8269c27f502636c63"
     },
     "https://docs.swift.org/latest/documentation/docc/image": {
-      "etag": "\"4032-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/image.md",
       "hash": "3d8bf9190901f2ff68e58b62670e569a184b57ff7d2bccc26ea713df5a8cbb42"
     },
     "https://docs.swift.org/latest/documentation/docc/intro": {
-      "etag": "\"2f9c-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/intro.md",
       "hash": "1cbb5e1719de92acece0a9697c62689f91e1a687702719cbfcbc25cc04769c7b"
     },
     "https://docs.swift.org/latest/documentation/docc/justification": {
-      "etag": "\"1c46-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/justification.md",
       "hash": "c491baab9f2b96e22305607c1ffde7161f76d4a69eb32f47d47a04b5b20cbe7f"
     },
     "https://docs.swift.org/latest/documentation/docc/linking-to-symbols-and-other-content": {
-      "etag": "\"920e-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/linking-to-symbols-and-other-content.md",
       "hash": "2d39724dfaf4b5028d741d1da335f16d25eef0b749c75d70ab5c513cff44ebe0"
     },
     "https://docs.swift.org/latest/documentation/docc/links": {
-      "etag": "\"1df8-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/links.md",
       "hash": "b797495a27481bfdb30e9f779ce49f6c76ef489b0161cde9f553fec70c038cb4"
     },
     "https://docs.swift.org/latest/documentation/docc/metadata": {
-      "etag": "\"5038-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/metadata.md",
       "hash": "83b18f3ada83299ae0c50fce3f99f76e0d2434c567b528bbc0059d08182f2007"
     },
     "https://docs.swift.org/latest/documentation/docc/multiplechoice": {
-      "etag": "\"1c6a-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/multiplechoice.md",
       "hash": "074a8b0305d5142a40ce05395870213addd093d2d6a538671bf2f7cd69b99961"
     },
     "https://docs.swift.org/latest/documentation/docc/options": {
-      "etag": "\"26df-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/options.md",
       "hash": "90639dcbcc44c190d5ff449c66364c06a398507048aa0e722226b8c17720f72e"
     },
     "https://docs.swift.org/latest/documentation/docc/other-formatting-options": {
-      "etag": "\"2ec0-65c302f2e1a00\"",
       "file_path": "documentation/Swift-Org/docc/other-formatting-options.md",
       "hash": "6e9279d3f76777d0c3ccadecc62b2697771577f50a246c6f2f7f081da9784fb9"
     },
     "https://docs.swift.org/latest/documentation/docc/pagecolor": {
-      "etag": "\"2e74-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/pagecolor.md",
       "hash": "67fb8d56a8127bb853e1ddb4c44839c08ac63573ba723acb98869e3f3ce4d1f5"
     },
     "https://docs.swift.org/latest/documentation/docc/pageimage": {
-      "etag": "\"35b6-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/pageimage.md",
       "hash": "918376efad41e0fa3c099dc6c5c7bb1bb408d72f49945e0aba2b0a350c23edb2"
     },
     "https://docs.swift.org/latest/documentation/docc/pagekind": {
-      "etag": "\"2595-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/pagekind.md",
       "hash": "0e3db7815f34a1396511cb5d80a7d7ba166c43849515ad6f6a8e8526ed027543"
     },
     "https://docs.swift.org/latest/documentation/docc/redirected": {
-      "etag": "\"1f16-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/redirected.md",
       "hash": "ad04fe91774e72f802b618e050965579a9c8ddf0516198c49f38817949c3a0dd"
     },
     "https://docs.swift.org/latest/documentation/docc/resources": {
-      "etag": "\"29cf-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/resources.md",
       "hash": "5e4d77adfb9de2e3df893a72184e72ea02d13b4565300bbe2b1f481a2cfa6f07"
     },
     "https://docs.swift.org/latest/documentation/docc/row": {
-      "etag": "\"1f45-659e1d565dbc0\"",
       "file_path": "documentation/Swift-Org/docc/row.md",
       "hash": "53895c90d556273206f98129b120624cf71baca38052626fbfccd19ca83f2b9b"
     },
     "https://docs.swift.org/latest/documentation/docc/samplecode": {
-      "etag": "\"21d1-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/samplecode.md",
       "hash": "d714a8a9f6c10375742d04e5f33978337f6eb5c3b14f950b0b1b7f3bf75cb330"
     },
     "https://docs.swift.org/latest/documentation/docc/section": {
-      "etag": "\"2aa3-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/section.md",
       "hash": "e0bd1751caf2bdeead7dccf9a69bb82849d9bbf6ceecacda6d1df3cd19b206a6"
     },
     "https://docs.swift.org/latest/documentation/docc/small": {
-      "etag": "\"17ec-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/small.md",
       "hash": "0e6d4a57786672ed7f540287ea58fe9f80103d49af26c4d5536d026346312eac"
     },
     "https://docs.swift.org/latest/documentation/docc/snippet": {
-      "etag": "\"1ce6-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/snippet.md",
       "hash": "045ddd7357610c7afd3361eeca61f706b1b2db3303d6553cb817e6496bc4eae0"
     },
     "https://docs.swift.org/latest/documentation/docc/stack": {
-      "etag": "\"1ea6-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/stack.md",
       "hash": "2b69929463ddfdbde06a6b1b64eac5ff41179323f4abef3769275fbbdd95a647"
     },
     "https://docs.swift.org/latest/documentation/docc/step": {
-      "etag": "\"267f-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/step.md",
       "hash": "810c0731998eeb4e9e7e1c2695fcfc8c1023d0f9462452febd04b9a5a62d0be7"
     },
     "https://docs.swift.org/latest/documentation/docc/steps": {
-      "etag": "\"1c0c-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/steps.md",
       "hash": "9ba3acaa7dacddbe15bfdaf1263d8a20f20eefb4d6198f93dc28973e302f9deb"
     },
     "https://docs.swift.org/latest/documentation/docc/supportedlanguage": {
-      "etag": "\"1956-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/supportedlanguage.md",
       "hash": "2c2f7e47a4de05dd03fef13293c22e4b9fb6f3854e6349df1f0878ef6c34bb84"
     },
     "https://docs.swift.org/latest/documentation/docc/tab": {
-      "etag": "\"1072-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tab.md",
       "hash": "154b9e8269fcbf27aae17a991d749a5ce99f222d79697cd1d46e536339327369"
     },
     "https://docs.swift.org/latest/documentation/docc/tabnavigator": {
-      "etag": "\"1bd2-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tabnavigator.md",
       "hash": "f3525c3aa4f09f2a1e6333bf6a59ca20a9e47a07d327c41533c668a97f0342b8"
     },
     "https://docs.swift.org/latest/documentation/docc/technologyroot": {
-      "etag": "\"1b29-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/technologyroot.md",
       "hash": "0eb091f6aa96c7e6db89a93d48409e61d9f32eaf1f996ba00525419bae126abc"
     },
     "https://docs.swift.org/latest/documentation/docc/titleheading": {
-      "etag": "\"2826-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/titleheading.md",
       "hash": "9378fc2489f4b87b5d479fbc82deba60965e06c5185f46540d6391d00ead7aec"
     },
     "https://docs.swift.org/latest/documentation/docc/topicsvisualstyle": {
-      "etag": "\"117b-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/topicsvisualstyle.md",
       "hash": "f4df0750dcdd8384f2ef6af1f57ae88ed6f443a1b002182c063f27921788b8f0"
     },
     "https://docs.swift.org/latest/documentation/docc/tutorial": {
-      "etag": "\"5fcb-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorial.md",
       "hash": "c18ea5c1032bc988d4d3051c1fe1d704c3e9da9b67785cb4ebbaf68433ffe3b9"
     },
     "https://docs.swift.org/latest/documentation/docc/tutorial-shared-directives": {
-      "etag": "\"134d-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorial-shared-directives.md",
       "hash": "8c8bf3cd184377299bc62202cee85a957ccb77812c26a6f194fc40fe5a9efb01"
     },
     "https://docs.swift.org/latest/documentation/docc/tutorial-syntax": {
-      "etag": "\"1c7c-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorial-syntax.md",
       "hash": "d9682f8605228a9a10ee30813623a8e0e419e63e444d27eafeb67c545e76a877"
     },
     "https://docs.swift.org/latest/documentation/docc/tutorialreference": {
-      "etag": "\"15f9-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorialreference.md",
       "hash": "412fb9eac1c2a5168590e0495b61db36547c7ef1967856e1b129f2e7bba36a92"
     },
     "https://docs.swift.org/latest/documentation/docc/tutorials": {
-      "etag": "\"35a1-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/tutorials.md",
       "hash": "6829d87a4647722a7a18d2bf2435b8a0dd5178a606877b736e42652eebfeaff3"
     },
     "https://docs.swift.org/latest/documentation/docc/video": {
-      "etag": "\"3217-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/video.md",
       "hash": "f05b7651b79f09eef2c30d05d3590fd1d88e2b71833b460736d0f854ab1a7926"
     },
     "https://docs.swift.org/latest/documentation/docc/videos": {
-      "etag": "\"2339-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/videos.md",
       "hash": "6206ac41626ef05f6e6e9c431d32c85cc54ed1c5b3a138e55fb584ced194ac6e"
     },
     "https://docs.swift.org/latest/documentation/docc/volume": {
-      "etag": "\"1fb2-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/volume.md",
       "hash": "9cb93aa0e6e8ef3fc0e5516454da9f635b8e55956e06fe12cdb3e5df312772ea"
     },
     "https://docs.swift.org/latest/documentation/docc/writing-symbol-documentation-in-your-source-files": {
-      "etag": "\"6ff9-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/writing-symbol-documentation-in-your-source-files.md",
       "hash": "a51af1e30a8bbddf41ab43fb91e43378f4d06310b730f30a4fe32c5fb495dfb0"
     },
     "https://docs.swift.org/latest/documentation/docc/xcoderequirement": {
-      "etag": "\"160d-659e1d5751e00\"",
       "file_path": "documentation/Swift-Org/docc/xcoderequirement.md",
       "hash": "c554747a5fe1bf13ec6968ffedee556ff9ffef352ee47a3328b19d882f2ad85e"
     }

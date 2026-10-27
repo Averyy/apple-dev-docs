@@ -1,32 +1,26 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api": {
-      "etag": "\"14e5-6590231953c9b-df\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-and-business-manager-api.md",
       "hash": "ef8ea5ca27e1fca6164c4055cb20e3f4f054564e6bb29dcbb2cf27c406127ce9"
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog": {
-      "etag": "\"c875-65c2d3e0d195c-df\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md",
       "hash": "8cbea83ee09ab180192c41e5834796765a337b8783141656b12c334ce9bde315"
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api": {
-      "etag": "\"5263-65d55ab9319d6-df\"",
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md",
       "hash": "991600612eba89f1128a72d7837ae6929a418c7b4bd2c606dd80e27e91462660"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api.json": {
-      "etag": "\"14e5-6590231953c9b-df\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-and-business-manager-api.md",
       "hash": "ef8ea5ca27e1fca6164c4055cb20e3f4f054564e6bb29dcbb2cf27c406127ce9"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.json": {
-      "etag": "\"c875-65c2d3e0d195c-df\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md",
       "hash": "8cbea83ee09ab180192c41e5834796765a337b8783141656b12c334ce9bde315"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.json": {
-      "etag": "\"5263-65d55ab9319d6-df\"",
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md",
       "hash": "991600612eba89f1128a72d7837ae6929a418c7b4bd2c606dd80e27e91462660"
     }

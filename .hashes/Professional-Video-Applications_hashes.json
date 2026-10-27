@@ -1,717 +1,574 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/professional-video-applications/adding-onscreen-controls-to-plug-ins": {
-      "etag": "\"14e2c-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md",
       "hash": "7d2e628578b266bca07af784201441b09287e153460fee42fbc19dc521137559"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adding-parameters-to-plug-ins": {
-      "etag": "\"ec7c-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/adding-parameters-to-plug-ins.md",
       "hash": "5a0c3fd7b28ddd653d0671a06a0d45ae09901fd2acc9aeec1e9a66c685fdf8da"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-360-transform": {
-      "etag": "\"28f4-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-360-transform.md",
       "hash": "aad2e41195a3c7d4d9b0c09f2b92eb789a152ddd35b8700424a190748c2db46f"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-blend": {
-      "etag": "\"36d1-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-blend.md",
       "hash": "833651f22407ce500c8fc8f851bae024cb01156d5c9dad01e03026c3bcb15610"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-cinematic": {
-      "etag": "\"2ad8-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-cinematic.md",
       "hash": "7c3ac9860033a91d3075dfef55a35b15ef8536c42e29bb5ba67f2621b44bea36"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-conform": {
-      "etag": "\"2795-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-conform.md",
       "hash": "67f6f943e4c70c936b0b836085df818c4b17d21ffdbeeadde5c37925c873d152"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-corners": {
-      "etag": "\"27e6-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-corners.md",
       "hash": "0c25d2bf9a048ac2a45c7bcc809d1c47aba59d7e8fa752cb8a07546aea36f39d"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-crop": {
-      "etag": "\"2e65-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-crop.md",
       "hash": "c56f7e426798718c395728713f455e873a9c82ca836f8981ed04390fc949facd"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-eq": {
-      "etag": "\"270f-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-eq.md",
       "hash": "611fc0eac2f429074b570c81234469f1b53ee9df5ac9e7c66b70d333ad4d746c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-humreduction": {
-      "etag": "\"227e-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-humreduction.md",
       "hash": "be4df05b192fd8ae0e034fb3d6427091a650db64c5c7e95e39d7a73671517eec"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-loudness": {
-      "etag": "\"2635-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-loudness.md",
       "hash": "6b79596799835bf5f13dc467f5b6c577ba1f5268c6c631657060ae8e6ad7b78d"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-matcheq": {
-      "etag": "\"2288-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-matcheq.md",
       "hash": "65ac62c014e9f7f6b9a2894e80ea3114216e41eb2c5f02bd00e673a30035b969"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-noisereduction": {
-      "etag": "\"227a-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-noisereduction.md",
       "hash": "e9deb0c06993f46415c07e51e9f259c9b68dab419cb8d3a42709d8d59fe06c9c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-orientation": {
-      "etag": "\"2229-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-orientation.md",
       "hash": "01666a3e25e267b3ad0dc695ad523048c4edf99bf5b169ee2c8a6ccfd3f8c7b9"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-panner": {
-      "etag": "\"3650-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-panner.md",
       "hash": "a2ff4571444f43ae61722390ec85e1c21190e087257bc3c7783e0f316153a43e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-reorient": {
-      "etag": "\"1fb2-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-reorient.md",
       "hash": "5537f7761bf9e16c8b0f0b1a9d3c074c4b639fa9fb08a684d6809ed09d76caba"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-rollingshutter": {
-      "etag": "\"2672-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-rollingshutter.md",
       "hash": "e584643ac588ea51d73522fd72701d35060215311bf755593bc04db651fc361c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-stabilization": {
-      "etag": "\"2679-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-stabilization.md",
       "hash": "4574f7ca23989959669162dceb6df81859f4813c8558edd7553f2d4315f25c3e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-transform": {
-      "etag": "\"2f43-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-transform.md",
       "hash": "3686e21ac5ebfd1ba9b425aa552b4f53187f613919d858dd404cd4db7c80614e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjust-volume": {
-      "etag": "\"228a-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-volume.md",
       "hash": "52825f4fc7d8a815c93205f754c6d8b798810d8f2bd454e58b49c7bf272e8860"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjustment-attributes-and-effect-parameters": {
-      "etag": "\"4547-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjustment-attributes-and-effect-parameters.md",
       "hash": "b9934ef01e72e602111a9460c9977db5a581252be80ded53f8201397ed1cac02"
     },
     "https://developer.apple.com/documentation/professional-video-applications/adjustment-elements": {
-      "etag": "\"6605-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjustment-elements.md",
       "hash": "f23cfc51a9eb45368070acac5231ed11b350d91798b8a7f49e8ab406c3ec4c6a"
     },
     "https://developer.apple.com/documentation/professional-video-applications/analysis-marker": {
-      "etag": "\"1cc7-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/analysis-marker.md",
       "hash": "a2bcad20f18e07dcca243ded4e890603f3b4cf2486c79acd277097ffffd52713"
     },
     "https://developer.apple.com/documentation/professional-video-applications/analyzing-media": {
-      "etag": "\"13386-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/analyzing-media.md",
       "hash": "53d1881be50e955fba29fffbf6fd963c577c390b8b5be5091e91f3fce75344d7"
     },
     "https://developer.apple.com/documentation/professional-video-applications/animation": {
-      "etag": "\"4045-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/animation.md",
       "hash": "a3f156978c4705e5f221088e6b2732139806f3e918554cf9f11bf22a40b7b019"
     },
     "https://developer.apple.com/documentation/professional-video-applications/asset": {
-      "etag": "\"5458-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/asset.md",
       "hash": "cb6b4d2ad0ff21fb2503732f7accd5bb4c77cca78f06284e0bcce73ab5853d27"
     },
     "https://developer.apple.com/documentation/professional-video-applications/asset-clip": {
-      "etag": "\"3735-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/asset-clip.md",
       "hash": "2362c724cd8c0aac6de2f4ff85c1d46074c97cba7eafd73eab93b8dc9bd4059a"
     },
     "https://developer.apple.com/documentation/professional-video-applications/associating-ratings-keywords-markers-and-metadata-with-media": {
-      "etag": "\"c0c7-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/associating-ratings-keywords-markers-and-metadata-with-media.md",
       "hash": "d7f9154312ccfdca417de333906993b193889c4e1bb4b5f6ecd47b6f2f97bf37"
     },
     "https://developer.apple.com/documentation/professional-video-applications/audio": {
-      "etag": "\"32f5-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio.md",
       "hash": "df5ee06aaf8e375d6032d6cf834b993fb32f3c3b127b5ec39abd66864543ee38"
     },
     "https://developer.apple.com/documentation/professional-video-applications/audio-channel-source": {
-      "etag": "\"2187-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-channel-source.md",
       "hash": "f79c341fdb07ccad9a0707ba3b7cf713ba826be07db4506c6111437034692447"
     },
     "https://developer.apple.com/documentation/professional-video-applications/audio-components-and-multicam": {
-      "etag": "\"1ecb-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-components-and-multicam.md",
       "hash": "14c4d527a7a784c5cfc5d28a6a9c5bcd5944ebb5915bdd48460164c3fe6e362e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/audio-components-in-compound-clips": {
-      "etag": "\"1b19-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-components-in-compound-clips.md",
       "hash": "88a0ecbfa09d1e4eccbdd1b474cfd2eb2adcb72c456b1f08d9fd8afddac27c30"
     },
     "https://developer.apple.com/documentation/professional-video-applications/audio-role-source": {
-      "etag": "\"1db6-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-role-source.md",
       "hash": "769b6b89088ac5ac68532d0fb288fb7354f3edbe682807c9aad38dff22948fd8"
     },
     "https://developer.apple.com/documentation/professional-video-applications/audition": {
-      "etag": "\"2ab3-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/audition.md",
       "hash": "e2e2b3a94a6ea33f33e2220e1864969afafdccc692f5e13186c419201b50c651"
     },
     "https://developer.apple.com/documentation/professional-video-applications/bookmark": {
-      "etag": "\"24b3-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/bookmark.md",
       "hash": "3ec7d3157952bd254bc7e0db023840592d8d24e4cecc2c599c004c4d9724ac91"
     },
     "https://developer.apple.com/documentation/professional-video-applications/building-a-workflow-extension": {
-      "etag": "\"3f3d-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-a-workflow-extension.md",
       "hash": "6313dc0deb59dc0ee6cc8f7befd37e75eedc9eb1bcc0844266473a6288aa2617"
     },
     "https://developer.apple.com/documentation/professional-video-applications/building-an-encoder-extension": {
-      "etag": "\"2b99-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-encoder-extension.md",
       "hash": "3d2a28cd388cb657d237b9211e546ce48d7f9b766aeb1505fc4705b175f18a6e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-from-an-xcode-template": {
-      "etag": "\"37bf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-fxplug-plug-in-from-an-xcode-template.md",
       "hash": "7bc1268ba776cced1619bd7501528e1547bfcfc59a769d593cb718bec1ad9094"
     },
     "https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually": {
-      "etag": "\"dbae-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-fxplug-plug-in-manually.md",
       "hash": "56b0c8f413c60c7bfe7f95eab426f698d65ea0574eb26774ae4abee55db44a0b"
     },
     "https://developer.apple.com/documentation/professional-video-applications/caption": {
-      "etag": "\"2b6d-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/caption.md",
       "hash": "2617c688b6d07552501a51fd65636fe89820e7f020237d3130b83d034aef36d0"
     },
     "https://developer.apple.com/documentation/professional-video-applications/chapter-marker": {
-      "etag": "\"1cc9-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/chapter-marker.md",
       "hash": "8f6949989b2b5d6e2251aec9bc0af6a5876e8b009d8f55b978ede108b07e0088"
     },
     "https://developer.apple.com/documentation/professional-video-applications/clip": {
-      "etag": "\"32eb-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/clip.md",
       "hash": "ad3ebad10d6d02442f0aaf000b46e5c53733c9d4e29caee75bb392ad8f5b8ba2"
     },
     "https://developer.apple.com/documentation/professional-video-applications/collection-folder": {
-      "etag": "\"1aa9-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/collection-folder.md",
       "hash": "0188e134f52889cf608088b65cfa5eafc723f349776058b59e40038c9d88cacf"
     },
     "https://developer.apple.com/documentation/professional-video-applications/communicating-with-the-plug-in-state": {
-      "etag": "\"38b3-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/communicating-with-the-plug-in-state.md",
       "hash": "491f6cb6517d48e0a0e5cb1027cbb9b27b9088118a72984baea274d452fc362b"
     },
     "https://developer.apple.com/documentation/professional-video-applications/compound-clip-media": {
-      "etag": "\"1dac-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/compound-clip-media.md",
       "hash": "115a4f9696739188a34ffbf9cc7fe32b26ae120a4d3c7e0f5f27e0e57816d71a"
     },
     "https://developer.apple.com/documentation/professional-video-applications/conform-rate": {
-      "etag": "\"323a-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/conform-rate.md",
       "hash": "527c6a4c5b51bc4873fbbeaadf006f36e746fb7de079450580cf5c79f2c641ea"
     },
     "https://developer.apple.com/documentation/professional-video-applications/content-and-metadata-exchanges-with-final-cut-pro": {
-      "etag": "\"32c4-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/content-and-metadata-exchanges-with-final-cut-pro.md",
       "hash": "647aaec4252ffe1fa17fab5faedf4f0f58e71e9e2e5b0244d251d803f4fd434f"
     },
     "https://developer.apple.com/documentation/professional-video-applications/create-an-effect-template-for-use-in-final-cut-pro": {
-      "etag": "\"11cd-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/create-an-effect-template-for-use-in-final-cut-pro.md",
       "hash": "914f83bafe000c91826ac0e6b1fa6268b3e203826eb2736a32468745f57a9bb4"
     },
     "https://developer.apple.com/documentation/professional-video-applications/creating-bookmark-data": {
-      "etag": "\"272d-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/creating-bookmark-data.md",
       "hash": "76dea095ecdd53352e984e550a25d712126778b95b962c5be65437b206cc2a79"
     },
     "https://developer.apple.com/documentation/professional-video-applications/creating-fcpxml-documents": {
-      "etag": "\"3ffe-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/creating-fcpxml-documents.md",
       "hash": "9824291faf5c7dadac36464ef9c31d8e6c786cadd43473c45d205831c535d6f8"
     },
     "https://developer.apple.com/documentation/professional-video-applications/creating-scripting-definitions-for-custom-share-destinations": {
-      "etag": "\"8295-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/creating-scripting-definitions-for-custom-share-destinations.md",
       "hash": "6727a9d9c84721c37312747f46d5c772111f212c5a615f536ab25789ba53dc39"
     },
     "https://developer.apple.com/documentation/professional-video-applications/describing-final-cut-pro-items-in-fcpxml": {
-      "etag": "\"6ed4-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/describing-final-cut-pro-items-in-fcpxml.md",
       "hash": "f05ea86f0f57bc4ae0e99d065c5f460753c5ef9a528b5e79aaf3a6e3791f57a1"
     },
     "https://developer.apple.com/documentation/professional-video-applications/designing-workflow-extensions": {
-      "etag": "\"3b00-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/designing-workflow-extensions.md",
       "hash": "152988bfbc72257e831de4bdb3cdc9f2f0bd9f7ba46c5315a931b2b73db30835"
     },
     "https://developer.apple.com/documentation/professional-video-applications/document-type-definition": {
-      "etag": "\"b7a0-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/document-type-definition.md",
       "hash": "6d2d279bcbab26ff09d60bbab43f82380b75ddcfab562ecb2ad94e2cda6880df"
     },
     "https://developer.apple.com/documentation/professional-video-applications/editing-property-lists-for-fxplug-plug-ins": {
-      "etag": "\"442d-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/editing-property-lists-for-fxplug-plug-ins.md",
       "hash": "9db558b80235cadae495752acca7731b081308ed41c5a43ebcca9a81d60996cd"
     },
     "https://developer.apple.com/documentation/professional-video-applications/effect": {
-      "etag": "\"2a8d-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/effect.md",
       "hash": "6322f5266ccee1a6c654c6ff4b47e5058d8b4872810b72151450407d8f38bfea"
     },
     "https://developer.apple.com/documentation/professional-video-applications/enabling-security-scoped-bookmark-and-url-access": {
-      "etag": "\"2b39-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/enabling-security-scoped-bookmark-and-url-access.md",
       "hash": "3fa491fd6359eb16623793bc6e9123bee5f7f3ca657b557af0d32e279ac2e287"
     },
     "https://developer.apple.com/documentation/professional-video-applications/encoder-attributes-settings": {
-      "etag": "\"b37e-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/encoder-attributes-settings.md",
       "hash": "dfc920cfd0c19279221b44e5ed2ed1de74d3ea4d50e1796e61ae4d9c88b54bd1"
     },
     "https://developer.apple.com/documentation/professional-video-applications/encoder-extensions": {
-      "etag": "\"42d5-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/encoder-extensions.md",
       "hash": "0cd164323f154e36b14b3c3206f9e6e2caec33762d5b9ac0f195bf35fd26c0af"
     },
     "https://developer.apple.com/documentation/professional-video-applications/event": {
-      "etag": "\"3305-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/event.md",
       "hash": "c22e6d14766bb76f50456ef89ecfbc5a25ff2c20105fab83fd9e10a503cd2aeb"
     },
     "https://developer.apple.com/documentation/professional-video-applications/fcpxml": {
-      "etag": "\"2aad-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fcpxml.md",
       "hash": "0f32e1a169fcf26ce3ef3092f0fcf76aadcb2e605b53f5ce82f7438c0a77c9e1"
     },
     "https://developer.apple.com/documentation/professional-video-applications/fcpxml-bundle-reference": {
-      "etag": "\"2d8c-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fcpxml-bundle-reference.md",
       "hash": "46005e730040709ab4ba847bf215c5bf7ef4fb1bdfc8d8e51e582c2093957048"
     },
     "https://developer.apple.com/documentation/professional-video-applications/fcpxml-reference": {
-      "etag": "\"6937-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fcpxml-reference.md",
       "hash": "23c6d8a91c3bd5432a6f607381c3b94806762168f37d2f0652590bdbab308bc2"
     },
     "https://developer.apple.com/documentation/professional-video-applications/filter-audio": {
-      "etag": "\"2b84-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/filter-audio.md",
       "hash": "80693066a96db4374058dc2e8d16b899fb9709a261313feb5ed6916cc25525a9"
     },
     "https://developer.apple.com/documentation/professional-video-applications/filter-video": {
-      "etag": "\"3917-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/filter-video.md",
       "hash": "7628a9bc2046bc4ae2f5b8ee1fd447267b60c4fe6d398b0bd1b18051ffc90a45"
     },
     "https://developer.apple.com/documentation/professional-video-applications/format": {
-      "etag": "\"4b11-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/format.md",
       "hash": "7b4e154662fd9b4438122c49c1fdba84f7834ca30a4b8ec92641f9af85b8638c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/frame-sampling": {
-      "etag": "\"1ef6-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/frame-sampling.md",
       "hash": "938297031ae0e5c67fb71db0964b97f46a0483b948994dd9f004cb4d90939560"
     },
     "https://developer.apple.com/documentation/professional-video-applications/fxplug": {
-      "etag": "\"e300-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/fxplug.md",
       "hash": "5a99f8d871b2a1c4dc50345f8b0ab251e58b34a5649c89e9d3eaaaf38ceb1092"
     },
     "https://developer.apple.com/documentation/professional-video-applications/fxplug-macros": {
-      "etag": "\"1213-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fxplug-macros.md",
       "hash": "c3370f327813c3d947a27f64d636a5be9b61e51fe647ac5ca8d8f28ca5f90a09"
     },
     "https://developer.apple.com/documentation/professional-video-applications/gap": {
-      "etag": "\"299b-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/gap.md",
       "hash": "4a3c2bb1b697fb0b4b0712e39584dd2f7503a2a81fb05ba8ee8cefdaebc50a69"
     },
     "https://developer.apple.com/documentation/professional-video-applications/id": {
-      "etag": "\"27f2-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/id.md",
       "hash": "fab9a65c71109cbb16412d45e9e2ca8afdc9ded4b6cc09dd4f1910d36d6f6739"
     },
     "https://developer.apple.com/documentation/professional-video-applications/import-options": {
-      "etag": "\"2dec-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/import-options.md",
       "hash": "eac23f946bf68db3b4ea078e282a5ee03e86e9d5f77bbda3f796d0707047a0af"
     },
     "https://developer.apple.com/documentation/professional-video-applications/importing-fcpxml-data": {
-      "etag": "\"3cfb-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/importing-fcpxml-data.md",
       "hash": "578d9556f07c737d00fb4822c9e42c4add5868a783f13aed8f8a735630434e70"
     },
     "https://developer.apple.com/documentation/professional-video-applications/interacting-with-the-final-cut-pro-timeline": {
-      "etag": "\"7d16-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md",
       "hash": "cd3c2d2b131a0c4e0bb19de258a43fdfb36751278d31bde4fdc57e09ad203857"
     },
     "https://developer.apple.com/documentation/professional-video-applications/keyframeanimation": {
-      "etag": "\"186c-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/keyframeanimation.md",
       "hash": "dc6905b49b2504ed2f4eff45b506a4a6e838cbe400de64e56f590227d09d376e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/keyword": {
-      "etag": "\"1cd7-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/keyword.md",
       "hash": "89d2e725f4dafdcf648321f48e420c03ac2d6a117f5ad8196291795d6624bbc3"
     },
     "https://developer.apple.com/documentation/professional-video-applications/keyword-collection": {
-      "etag": "\"18a1-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/keyword-collection.md",
       "hash": "3c7dc358ace96dbb8715ed0500186dfdeb75f3e4b19643c36b495aa64a8338a2"
     },
     "https://developer.apple.com/documentation/professional-video-applications/library": {
-      "etag": "\"2bf3-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/library.md",
       "hash": "19475210ceadc66ffd639db638377aee0726d5c8ca8f30739c0b4784f7ac1bf3"
     },
     "https://developer.apple.com/documentation/professional-video-applications/locator": {
-      "etag": "\"2352-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/locator.md",
       "hash": "9915e86ec7868d3a56ca8037c9491669384582c93d9572d2f3498851247e6bbb"
     },
     "https://developer.apple.com/documentation/professional-video-applications/managing-color-space-and-gamut-in-plug-ins": {
-      "etag": "\"9ca7-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md",
       "hash": "cddcbacb46e356e3e64ff8d06abc5bef005a0fae6ee58770021aec1c6f7d6e9e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/marker": {
-      "etag": "\"1cd9-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/marker.md",
       "hash": "a625d50a2e20a6f01b65a6acecab5d5ee1bcafe2592a2f8697424f541d468087"
     },
     "https://developer.apple.com/documentation/professional-video-applications/mask-isolation": {
-      "etag": "\"1cfd-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/mask-isolation.md",
       "hash": "abfd1d00771422c494049ba4d81cbfd896e92820bc3e41c85cd4336af7bc8a2c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/mask-shape": {
-      "etag": "\"1a94-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/mask-shape.md",
       "hash": "d3fa152937acc2cbdefcc644e5cc77a3b0335b87ce6e19f43bc2122672ba5523"
     },
     "https://developer.apple.com/documentation/professional-video-applications/masked-filters": {
-      "etag": "\"3861-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/masked-filters.md",
       "hash": "fbf07cce677d94181893517d99940d4b6026d49cad056470023b41cb7f63c85d"
     },
     "https://developer.apple.com/documentation/professional-video-applications/mc-clip": {
-      "etag": "\"3085-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/mc-clip.md",
       "hash": "c0723b57b08d8272f266efbc0f2b49f3f2ef6fa8c063ac282d3019dd419817ac"
     },
     "https://developer.apple.com/documentation/professional-video-applications/media": {
-      "etag": "\"31f2-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/media.md",
       "hash": "0aa70b0550000156c11584f4af7f11c87cd42f67ba2b34e8de48efea64296c06"
     },
     "https://developer.apple.com/documentation/professional-video-applications/media-rep": {
-      "etag": "\"31f7-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/media-rep.md",
       "hash": "02fbfc5ad07a65db7b3a566e604fae796488bcbd30f2ab449cf4e18844181e24"
     },
     "https://developer.apple.com/documentation/professional-video-applications/metadata": {
-      "etag": "\"28ea-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/metadata.md",
       "hash": "32241dc52e73f00a81219e6b4644a387d10a0059ebc79e5876418ed2438aa04c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/metadata-keys-and-sources": {
-      "etag": "\"5014-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/metadata-keys-and-sources.md",
       "hash": "2fb1ece5c3bd8d0c3b0df03cccf88b8689770196e8e43b7349abb956c711597b"
     },
     "https://developer.apple.com/documentation/professional-video-applications/migrating-fxplug-3-plug-ins-to-fxplug-4": {
-      "etag": "\"7989-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/migrating-fxplug-3-plug-ins-to-fxplug-4.md",
       "hash": "4e208c1fe501f7648d66f0442f62fcb0968c595464a6bb100756d3c280e42060"
     },
     "https://developer.apple.com/documentation/professional-video-applications/multicam-media": {
-      "etag": "\"2c28-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/multicam-media.md",
       "hash": "291df774967b7facaa277c8eaeff0535c57ef987289ac00cbb5cc8ceec909fa5"
     },
     "https://developer.apple.com/documentation/professional-video-applications/mute": {
-      "etag": "\"170b-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/mute.md",
       "hash": "388fa98dca838e0149dd2a598cb1eb29e4c25e421f3bfb57814b61426163bbfb"
     },
     "https://developer.apple.com/documentation/professional-video-applications/name": {
-      "etag": "\"1da9-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/name.md",
       "hash": "81af61fad752c939a7182971ac3d656fff7536f5f4f280912720981e2e5d45e9"
     },
     "https://developer.apple.com/documentation/professional-video-applications/notarizing-your-fxplug-plug-in": {
-      "etag": "\"4983-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/notarizing-your-fxplug-plug-in.md",
       "hash": "df16d421fbf8972c857a6cf399d4c541af07ccc80971480bca73bf49d637393c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/note": {
-      "etag": "\"1cdd-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/note.md",
       "hash": "237a1394d6b03f222134fa8d77eca4945c65de460bc068b865e0bc4d3d41a371"
     },
     "https://developer.apple.com/documentation/professional-video-applications/object-tracker": {
-      "etag": "\"245f-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/object-tracker.md",
       "hash": "714e45a5a08ae32a5606be87955f732ab232fb56273e5b5ad1775b7294b4e5ef"
     },
     "https://developer.apple.com/documentation/professional-video-applications/optimizing-fxplug-plug-ins": {
-      "etag": "\"80d5-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/optimizing-fxplug-plug-ins.md",
       "hash": "0ceacac450664e67a874b5819c9808c6ae35d2da3bcf08bd1b686ac028540fde"
     },
     "https://developer.apple.com/documentation/professional-video-applications/predefined-video-formats": {
-      "etag": "\"59ef-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/predefined-video-formats.md",
       "hash": "e284aa1e09855a8e9a378b2a48caa226e5d1f2a79d9d5175c5ea1fe47180bef0"
     },
     "https://developer.apple.com/documentation/professional-video-applications/preparing-plug-ins-for-use-in-final-cut-pro": {
-      "etag": "\"41a9-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/preparing-plug-ins-for-use-in-final-cut-pro.md",
       "hash": "74081d1dae0a46ab49660d07013216470e35ff0adf18e6aed6378fcdb8eef455"
     },
     "https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-constants": {
-      "etag": "\"3a43-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-constants.md",
       "hash": "b0b06ff3e10c54066db6c66399b8c34996abb58af07908af89495c41a054f56d"
     },
     "https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-data-types": {
-      "etag": "\"2690-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-data-types.md",
       "hash": "1d91ac60fa162cf1b420af1aca1fe0166358f120bddf1317a868a56db9700afa"
     },
     "https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-enumerations": {
-      "etag": "\"7110-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-enumerations.md",
       "hash": "84cdf52fac83b1d2a841e036e32f017e3c91ac072b26022cf4115a3cc964b48e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/professional-video-applications-protocols": {
-      "etag": "\"303c-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-protocols.md",
       "hash": "a8f19dfc2a014e9bdc50e16772a42c91570385db1c96af25797999f7d79d1b06"
     },
     "https://developer.apple.com/documentation/professional-video-applications/project": {
-      "etag": "\"2900-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/project.md",
       "hash": "3c350e745b0cdd112b8cd8f3aa6b7388e4899ad57e50cd69632cc4e363e12ac6"
     },
     "https://developer.apple.com/documentation/professional-video-applications/rating": {
-      "etag": "\"1cd9-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/rating.md",
       "hash": "609bf3fa0b5003af966c959fee799a01ca69b22be444786c335ab5cebe8d81f1"
     },
     "https://developer.apple.com/documentation/professional-video-applications/receiving-media-and-data-through-a-custom-share-destination": {
-      "etag": "\"7bae-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/receiving-media-and-data-through-a-custom-share-destination.md",
       "hash": "6dbe39143e558d805b46a698d8924495432920c6d8048c0408433d00d12760bf"
     },
     "https://developer.apple.com/documentation/professional-video-applications/ref-clip": {
-      "etag": "\"34b5-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/ref-clip.md",
       "hash": "9b2eada0aa01b5fc240793ece9ffaf519a754235d218f5648c635d852bb4862e"
     },
     "https://developer.apple.com/documentation/professional-video-applications/rendering-in-fxplug": {
-      "etag": "\"4cbf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/rendering-in-fxplug.md",
       "hash": "8a09643474a02001afce8853f01a392d39dc913e6a7048ebb36199d90e544fa8"
     },
     "https://developer.apple.com/documentation/professional-video-applications/resources": {
-      "etag": "\"2775-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/resources.md",
       "hash": "3ac155ec4a7a07ae922a99683e455c52ceba169f22426a7b8820c6e150ccceeb"
     },
     "https://developer.apple.com/documentation/professional-video-applications/responding-to-apple-events-from-final-cut-pro": {
-      "etag": "\"aa79-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/responding-to-apple-events-from-final-cut-pro.md",
       "hash": "63acacfb8a4e6ed52c88bd57d192eebe7b234bcf921fb269bef5fcb492362f6c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/roles-attribute": {
-      "etag": "\"1f0d-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/roles-attribute.md",
       "hash": "3dc7ca809b9ceee9b18e7d29e56e83f09faa11504b52f9317c533043e5004407"
     },
     "https://developer.apple.com/documentation/professional-video-applications/scheduling-media-in-plug-ins": {
-      "etag": "\"4e43-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/scheduling-media-in-plug-ins.md",
       "hash": "52a045ad85e9c5ee6027a3534b61d45f9876404651575ffa862dd1c699acce7b"
     },
     "https://developer.apple.com/documentation/professional-video-applications/sending-data-programmatically-to-final-cut-pro": {
-      "etag": "\"412b-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/sending-data-programmatically-to-final-cut-pro.md",
       "hash": "8f0194717060108c540acef2243f903dadd885ceb62ac753df6f50ceabfff491"
     },
     "https://developer.apple.com/documentation/professional-video-applications/sending-media-and-metadata-to-final-cut-pro": {
-      "etag": "\"2b82-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/sending-media-and-metadata-to-final-cut-pro.md",
       "hash": "b3869df4b1d2d0a53ed8ce3f634b56270832e2ce53ae616eebb3a07cba28a6ae"
     },
     "https://developer.apple.com/documentation/professional-video-applications/sending-media-to-final-cut-pro-as-it-s-recorded": {
-      "etag": "\"2d9e-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/sending-media-to-final-cut-pro-as-it-s-recorded.md",
       "hash": "8fe8d4c9a5bcd8e6a82f3d5e8d676568a597fe19037b0554705f63de43f46481"
     },
     "https://developer.apple.com/documentation/professional-video-applications/sequence": {
-      "etag": "\"2991-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/sequence.md",
       "hash": "b8cbf48f8fbb9d04b0ed303dd46d97f41fa3c4614673305308af6783be97b2b6"
     },
     "https://developer.apple.com/documentation/professional-video-applications/setting-up-for-fxplug-development": {
-      "etag": "\"1ebb-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/setting-up-for-fxplug-development.md",
       "hash": "f5eb832c370e162516cee3fe66df7ab0f9668d3a1a40a1249da79aacf4571d24"
     },
     "https://developer.apple.com/documentation/professional-video-applications/smart-collection": {
-      "etag": "\"4eee-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/smart-collection.md",
       "hash": "3226993fcd90590b21dd30e59e8dacd2427c5e2063aa1e56c883f4dad03d2b83"
     },
     "https://developer.apple.com/documentation/professional-video-applications/spine": {
-      "etag": "\"2997-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/spine.md",
       "hash": "83227a3725ce277e69dac8a6fc1963075aeb4d606a804b63511ec9649218a4ad"
     },
     "https://developer.apple.com/documentation/professional-video-applications/story-elements": {
-      "etag": "\"76d5-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/story-elements.md",
       "hash": "0b4be31fc0366a0bdcbe43b06ef9f20d0ef8b73eb819c2eca636a891290a576c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/supporting-conversions-with-scripting-class-extensions": {
-      "etag": "\"3cd0-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/supporting-conversions-with-scripting-class-extensions.md",
       "hash": "f6c7468e8cbac8f5ceee6e9ba5aabf5bdf8483de8ef9825a00e4e2cd159b19e1"
     },
     "https://developer.apple.com/documentation/professional-video-applications/supporting-drag-and-drop-for-data-sent-to-final-cut-pro": {
-      "etag": "\"5607-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/supporting-drag-and-drop-for-data-sent-to-final-cut-pro.md",
       "hash": "3560fb91a53da5c58c22b5fca0aa9d798092083591b3b0268eae0f3e71592cb0"
     },
     "https://developer.apple.com/documentation/professional-video-applications/supporting-drag-and-drop-to-receive-final-cut-pro-data": {
-      "etag": "\"3875-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/supporting-drag-and-drop-to-receive-final-cut-pro-data.md",
       "hash": "f13652aa43d00d87e453baca9b7489e4ec41c8c029a73aedfc05c1e939ab2bdb"
     },
     "https://developer.apple.com/documentation/professional-video-applications/sync-clip": {
-      "etag": "\"2c0c-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/sync-clip.md",
       "hash": "ec548aedbc1d428159ef4f22942b3aeecc262d2e56e3a1a5645a399fb938fe4f"
     },
     "https://developer.apple.com/documentation/professional-video-applications/testing-fxplug-plug-ins": {
-      "etag": "\"513d-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/testing-fxplug-plug-ins.md",
       "hash": "8b6c605d1acac4d2264863c66c11912fe20022c79c98f2db1ebf2072ce60b7b8"
     },
     "https://developer.apple.com/documentation/professional-video-applications/text": {
-      "etag": "\"25af-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/text.md",
       "hash": "e153a24c6d2e8ac13ee483d5c325ccd1e3952853a58b5d130bd7c4caaf3893fc"
     },
     "https://developer.apple.com/documentation/professional-video-applications/text-style": {
-      "etag": "\"3607-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/text-style.md",
       "hash": "95b61918ad3173ce96e7282dc0fce9c9fd03229f0c8b3a593e0a3f944d457613"
     },
     "https://developer.apple.com/documentation/professional-video-applications/text-style-def": {
-      "etag": "\"17ef-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/text-style-def.md",
       "hash": "66e5aed29518841264e0f9cba253fc895c0ada6d2a2b3edb877854781ad26d16"
     },
     "https://developer.apple.com/documentation/professional-video-applications/thread-safety-in-plug-ins": {
-      "etag": "\"881c-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/thread-safety-in-plug-ins.md",
       "hash": "d35c56d7f15b97e5aa7a87763a8ef3e4b7d6709f3090a61c385b79da605705e3"
     },
     "https://developer.apple.com/documentation/professional-video-applications/timeline-attributes": {
-      "etag": "\"2bd7-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/timeline-attributes.md",
       "hash": "5ba04a298d008bc0ea0b05888bbdfc204e32dd400f3ece6492ebf1c93e5ab3dd"
     },
     "https://developer.apple.com/documentation/professional-video-applications/timemap": {
-      "etag": "\"2002-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/timemap.md",
       "hash": "561a827a690f5f45c5c0e57dc112be75cb61caa0908c99e7e8754ce76fb9654c"
     },
     "https://developer.apple.com/documentation/professional-video-applications/timing-attributes": {
-      "etag": "\"2256-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/timing-attributes.md",
       "hash": "33154d15cbf6232b351166f8169e47bf4203fc57e52977167ba2ff5f53cc475d"
     },
     "https://developer.apple.com/documentation/professional-video-applications/title": {
-      "etag": "\"2dcf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/title.md",
       "hash": "e92edfea7098f670f589a1da62a3609c86050b66e1519c5c938be14e22165909"
     },
     "https://developer.apple.com/documentation/professional-video-applications/tracking-shape": {
-      "etag": "\"269e-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/tracking-shape.md",
       "hash": "2d7de40a0e27cc65360c83c6329402dba9b5c379c3d5e20d5446337a47393601"
     },
     "https://developer.apple.com/documentation/professional-video-applications/transition": {
-      "etag": "\"2c7e-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/transition.md",
       "hash": "a6b6ccb07672bb1bac616692d58921ef259205bde602cc7137d74889cc422295"
     },
     "https://developer.apple.com/documentation/professional-video-applications/understanding-time-in-fxplug": {
-      "etag": "\"9d98-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/understanding-time-in-fxplug.md",
       "hash": "ec8411c6736987221abdd133c6eb52fa3226fff30d5d854003f649e5ec30ff46"
     },
     "https://developer.apple.com/documentation/professional-video-applications/using-bookmark-data": {
-      "etag": "\"29c3-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/using-bookmark-data.md",
       "hash": "a0b3ef3869f50cc713c6c11e6215fdb331ffa3853c85539be85340eed49e74c0"
     },
     "https://developer.apple.com/documentation/professional-video-applications/using-fxplug-apis": {
-      "etag": "\"4a55-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/using-fxplug-apis.md",
       "hash": "bbb3f54cdbb9a76e2125d7f0db977287cd6b29d86855f832efa673fda0aa74e5"
     },
     "https://developer.apple.com/documentation/professional-video-applications/using-out-of-process-fxplug-plug-ins": {
-      "etag": "\"43af-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/using-out-of-process-fxplug-plug-ins.md",
       "hash": "5d1b1a40cd93461aa5aefb4409d7388d46a2b559543a2b0b26801273ffd362a1"
     },
     "https://developer.apple.com/documentation/professional-video-applications/versioning-and-obsoleting-old-plug-ins": {
-      "etag": "\"451e-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md",
       "hash": "cfe06defce381d0bd651dec3a6eca90ac3c771321666af1fb11ffc0f3216c0ba"
     },
     "https://developer.apple.com/documentation/professional-video-applications/video": {
-      "etag": "\"2d5c-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/video.md",
       "hash": "8401c4cde1f0d4f8fbb16daf9184d3b6b7bd399f6efb1c2c63b567289261c5db"
     },
     "https://developer.apple.com/documentation/professional-video-applications/workflow-extensions": {
-      "etag": "\"7291-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/workflow-extensions.md",
       "hash": "08d5a5ef6a78d4d60fab8f9bae72fa217432266da8d08bee78145014323891d5"
     },
     "https://developer.apple.com/documentation/professional-video-applications/working-with-tiled-images": {
-      "etag": "\"c233-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/working-with-tiled-images.md",
       "hash": "ee0d72d71fceeb9ff117d7dca615bdbe31d9b9110752c9c42258899ffb157c68"
     },
@@ -720,717 +577,574 @@
       "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adding-onscreen-controls-to-plug-ins.json": {
-      "etag": "\"14e2c-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md",
       "hash": "7d2e628578b266bca07af784201441b09287e153460fee42fbc19dc521137559"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adding-parameters-to-plug-ins.json": {
-      "etag": "\"ec7c-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/adding-parameters-to-plug-ins.md",
       "hash": "5a0c3fd7b28ddd653d0671a06a0d45ae09901fd2acc9aeec1e9a66c685fdf8da"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-360-transform.json": {
-      "etag": "\"28f4-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-360-transform.md",
       "hash": "aad2e41195a3c7d4d9b0c09f2b92eb789a152ddd35b8700424a190748c2db46f"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-blend.json": {
-      "etag": "\"36d1-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-blend.md",
       "hash": "833651f22407ce500c8fc8f851bae024cb01156d5c9dad01e03026c3bcb15610"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-cinematic.json": {
-      "etag": "\"2ad8-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-cinematic.md",
       "hash": "7c3ac9860033a91d3075dfef55a35b15ef8536c42e29bb5ba67f2621b44bea36"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-conform.json": {
-      "etag": "\"2795-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-conform.md",
       "hash": "67f6f943e4c70c936b0b836085df818c4b17d21ffdbeeadde5c37925c873d152"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-corners.json": {
-      "etag": "\"27e6-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-corners.md",
       "hash": "0c25d2bf9a048ac2a45c7bcc809d1c47aba59d7e8fa752cb8a07546aea36f39d"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-crop.json": {
-      "etag": "\"2e65-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-crop.md",
       "hash": "c56f7e426798718c395728713f455e873a9c82ca836f8981ed04390fc949facd"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-eq.json": {
-      "etag": "\"270f-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-eq.md",
       "hash": "611fc0eac2f429074b570c81234469f1b53ee9df5ac9e7c66b70d333ad4d746c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-humreduction.json": {
-      "etag": "\"227e-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-humreduction.md",
       "hash": "be4df05b192fd8ae0e034fb3d6427091a650db64c5c7e95e39d7a73671517eec"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-loudness.json": {
-      "etag": "\"2635-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-loudness.md",
       "hash": "6b79596799835bf5f13dc467f5b6c577ba1f5268c6c631657060ae8e6ad7b78d"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-matcheq.json": {
-      "etag": "\"2288-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-matcheq.md",
       "hash": "65ac62c014e9f7f6b9a2894e80ea3114216e41eb2c5f02bd00e673a30035b969"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-noisereduction.json": {
-      "etag": "\"227a-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-noisereduction.md",
       "hash": "e9deb0c06993f46415c07e51e9f259c9b68dab419cb8d3a42709d8d59fe06c9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-orientation.json": {
-      "etag": "\"2229-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-orientation.md",
       "hash": "01666a3e25e267b3ad0dc695ad523048c4edf99bf5b169ee2c8a6ccfd3f8c7b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-panner.json": {
-      "etag": "\"3650-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-panner.md",
       "hash": "a2ff4571444f43ae61722390ec85e1c21190e087257bc3c7783e0f316153a43e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-reorient.json": {
-      "etag": "\"1fb2-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-reorient.md",
       "hash": "5537f7761bf9e16c8b0f0b1a9d3c074c4b639fa9fb08a684d6809ed09d76caba"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-rollingshutter.json": {
-      "etag": "\"2672-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-rollingshutter.md",
       "hash": "e584643ac588ea51d73522fd72701d35060215311bf755593bc04db651fc361c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-stabilization.json": {
-      "etag": "\"2679-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-stabilization.md",
       "hash": "4574f7ca23989959669162dceb6df81859f4813c8558edd7553f2d4315f25c3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-transform.json": {
-      "etag": "\"2f43-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-transform.md",
       "hash": "3686e21ac5ebfd1ba9b425aa552b4f53187f613919d858dd404cd4db7c80614e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjust-volume.json": {
-      "etag": "\"228a-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjust-volume.md",
       "hash": "52825f4fc7d8a815c93205f754c6d8b798810d8f2bd454e58b49c7bf272e8860"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjustment-attributes-and-effect-parameters.json": {
-      "etag": "\"4547-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjustment-attributes-and-effect-parameters.md",
       "hash": "b9934ef01e72e602111a9460c9977db5a581252be80ded53f8201397ed1cac02"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/adjustment-elements.json": {
-      "etag": "\"6605-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/adjustment-elements.md",
       "hash": "f23cfc51a9eb45368070acac5231ed11b350d91798b8a7f49e8ab406c3ec4c6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/analysis-marker.json": {
-      "etag": "\"1cc7-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/analysis-marker.md",
       "hash": "a2bcad20f18e07dcca243ded4e890603f3b4cf2486c79acd277097ffffd52713"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/analyzing-media.json": {
-      "etag": "\"13386-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/analyzing-media.md",
       "hash": "53d1881be50e955fba29fffbf6fd963c577c390b8b5be5091e91f3fce75344d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/animation.json": {
-      "etag": "\"4045-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/animation.md",
       "hash": "a3f156978c4705e5f221088e6b2732139806f3e918554cf9f11bf22a40b7b019"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/asset-clip.json": {
-      "etag": "\"3735-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/asset-clip.md",
       "hash": "2362c724cd8c0aac6de2f4ff85c1d46074c97cba7eafd73eab93b8dc9bd4059a"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/asset.json": {
-      "etag": "\"5458-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/asset.md",
       "hash": "cb6b4d2ad0ff21fb2503732f7accd5bb4c77cca78f06284e0bcce73ab5853d27"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/associating-ratings-keywords-markers-and-metadata-with-media.json": {
-      "etag": "\"c0c7-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/associating-ratings-keywords-markers-and-metadata-with-media.md",
       "hash": "d7f9154312ccfdca417de333906993b193889c4e1bb4b5f6ecd47b6f2f97bf37"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/audio-channel-source.json": {
-      "etag": "\"2187-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-channel-source.md",
       "hash": "f79c341fdb07ccad9a0707ba3b7cf713ba826be07db4506c6111437034692447"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/audio-components-and-multicam.json": {
-      "etag": "\"1ecb-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-components-and-multicam.md",
       "hash": "14c4d527a7a784c5cfc5d28a6a9c5bcd5944ebb5915bdd48460164c3fe6e362e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/audio-components-in-compound-clips.json": {
-      "etag": "\"1b19-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-components-in-compound-clips.md",
       "hash": "88a0ecbfa09d1e4eccbdd1b474cfd2eb2adcb72c456b1f08d9fd8afddac27c30"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/audio-role-source.json": {
-      "etag": "\"1db6-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio-role-source.md",
       "hash": "769b6b89088ac5ac68532d0fb288fb7354f3edbe682807c9aad38dff22948fd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/audio.json": {
-      "etag": "\"32f5-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/audio.md",
       "hash": "df5ee06aaf8e375d6032d6cf834b993fb32f3c3b127b5ec39abd66864543ee38"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/audition.json": {
-      "etag": "\"2ab3-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/audition.md",
       "hash": "e2e2b3a94a6ea33f33e2220e1864969afafdccc692f5e13186c419201b50c651"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/bookmark.json": {
-      "etag": "\"24b3-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/bookmark.md",
       "hash": "3ec7d3157952bd254bc7e0db023840592d8d24e4cecc2c599c004c4d9724ac91"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/building-a-workflow-extension.json": {
-      "etag": "\"3f3d-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-a-workflow-extension.md",
       "hash": "6313dc0deb59dc0ee6cc8f7befd37e75eedc9eb1bcc0844266473a6288aa2617"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/building-an-encoder-extension.json": {
-      "etag": "\"2b99-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-encoder-extension.md",
       "hash": "3d2a28cd388cb657d237b9211e546ce48d7f9b766aeb1505fc4705b175f18a6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/building-an-fxplug-plug-in-from-an-xcode-template.json": {
-      "etag": "\"37bf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-fxplug-plug-in-from-an-xcode-template.md",
       "hash": "7bc1268ba776cced1619bd7501528e1547bfcfc59a769d593cb718bec1ad9094"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/building-an-fxplug-plug-in-manually.json": {
-      "etag": "\"dbae-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/building-an-fxplug-plug-in-manually.md",
       "hash": "56b0c8f413c60c7bfe7f95eab426f698d65ea0574eb26774ae4abee55db44a0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/caption.json": {
-      "etag": "\"2b6d-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/caption.md",
       "hash": "2617c688b6d07552501a51fd65636fe89820e7f020237d3130b83d034aef36d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/chapter-marker.json": {
-      "etag": "\"1cc9-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/chapter-marker.md",
       "hash": "8f6949989b2b5d6e2251aec9bc0af6a5876e8b009d8f55b978ede108b07e0088"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/clip.json": {
-      "etag": "\"32eb-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/clip.md",
       "hash": "ad3ebad10d6d02442f0aaf000b46e5c53733c9d4e29caee75bb392ad8f5b8ba2"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/collection-folder.json": {
-      "etag": "\"1aa9-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/collection-folder.md",
       "hash": "0188e134f52889cf608088b65cfa5eafc723f349776058b59e40038c9d88cacf"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/communicating-with-the-plug-in-state.json": {
-      "etag": "\"38b3-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/communicating-with-the-plug-in-state.md",
       "hash": "491f6cb6517d48e0a0e5cb1027cbb9b27b9088118a72984baea274d452fc362b"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/compound-clip-media.json": {
-      "etag": "\"1dac-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/compound-clip-media.md",
       "hash": "115a4f9696739188a34ffbf9cc7fe32b26ae120a4d3c7e0f5f27e0e57816d71a"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/conform-rate.json": {
-      "etag": "\"323a-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/conform-rate.md",
       "hash": "527c6a4c5b51bc4873fbbeaadf006f36e746fb7de079450580cf5c79f2c641ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/content-and-metadata-exchanges-with-final-cut-pro.json": {
-      "etag": "\"32c4-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/content-and-metadata-exchanges-with-final-cut-pro.md",
       "hash": "647aaec4252ffe1fa17fab5faedf4f0f58e71e9e2e5b0244d251d803f4fd434f"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/create-an-effect-template-for-use-in-final-cut-pro.json": {
-      "etag": "\"11cd-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/create-an-effect-template-for-use-in-final-cut-pro.md",
       "hash": "914f83bafe000c91826ac0e6b1fa6268b3e203826eb2736a32468745f57a9bb4"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/creating-bookmark-data.json": {
-      "etag": "\"272d-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/creating-bookmark-data.md",
       "hash": "76dea095ecdd53352e984e550a25d712126778b95b962c5be65437b206cc2a79"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/creating-fcpxml-documents.json": {
-      "etag": "\"3ffe-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/creating-fcpxml-documents.md",
       "hash": "9824291faf5c7dadac36464ef9c31d8e6c786cadd43473c45d205831c535d6f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/creating-scripting-definitions-for-custom-share-destinations.json": {
-      "etag": "\"8295-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/creating-scripting-definitions-for-custom-share-destinations.md",
       "hash": "6727a9d9c84721c37312747f46d5c772111f212c5a615f536ab25789ba53dc39"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/describing-final-cut-pro-items-in-fcpxml.json": {
-      "etag": "\"6ed4-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/describing-final-cut-pro-items-in-fcpxml.md",
       "hash": "f05ea86f0f57bc4ae0e99d065c5f460753c5ef9a528b5e79aaf3a6e3791f57a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/designing-workflow-extensions.json": {
-      "etag": "\"3b00-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/designing-workflow-extensions.md",
       "hash": "152988bfbc72257e831de4bdb3cdc9f2f0bd9f7ba46c5315a931b2b73db30835"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/document-type-definition.json": {
-      "etag": "\"b7a0-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/document-type-definition.md",
       "hash": "6d2d279bcbab26ff09d60bbab43f82380b75ddcfab562ecb2ad94e2cda6880df"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/editing-property-lists-for-fxplug-plug-ins.json": {
-      "etag": "\"442d-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/editing-property-lists-for-fxplug-plug-ins.md",
       "hash": "9db558b80235cadae495752acca7731b081308ed41c5a43ebcca9a81d60996cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/effect.json": {
-      "etag": "\"2a8d-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/effect.md",
       "hash": "6322f5266ccee1a6c654c6ff4b47e5058d8b4872810b72151450407d8f38bfea"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/enabling-security-scoped-bookmark-and-url-access.json": {
-      "etag": "\"2b39-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/enabling-security-scoped-bookmark-and-url-access.md",
       "hash": "3fa491fd6359eb16623793bc6e9123bee5f7f3ca657b557af0d32e279ac2e287"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/encoder-attributes-settings.json": {
-      "etag": "\"b37e-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/encoder-attributes-settings.md",
       "hash": "dfc920cfd0c19279221b44e5ed2ed1de74d3ea4d50e1796e61ae4d9c88b54bd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/encoder-extensions.json": {
-      "etag": "\"42d5-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/encoder-extensions.md",
       "hash": "0cd164323f154e36b14b3c3206f9e6e2caec33762d5b9ac0f195bf35fd26c0af"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/event.json": {
-      "etag": "\"3305-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/event.md",
       "hash": "c22e6d14766bb76f50456ef89ecfbc5a25ff2c20105fab83fd9e10a503cd2aeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/fcpxml-bundle-reference.json": {
-      "etag": "\"2d8c-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fcpxml-bundle-reference.md",
       "hash": "46005e730040709ab4ba847bf215c5bf7ef4fb1bdfc8d8e51e582c2093957048"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/fcpxml-reference.json": {
-      "etag": "\"6937-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fcpxml-reference.md",
       "hash": "23c6d8a91c3bd5432a6f607381c3b94806762168f37d2f0652590bdbab308bc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/fcpxml.json": {
-      "etag": "\"2aad-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fcpxml.md",
       "hash": "0f32e1a169fcf26ce3ef3092f0fcf76aadcb2e605b53f5ce82f7438c0a77c9e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/filter-audio.json": {
-      "etag": "\"2b84-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/filter-audio.md",
       "hash": "80693066a96db4374058dc2e8d16b899fb9709a261313feb5ed6916cc25525a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/filter-video.json": {
-      "etag": "\"3917-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/filter-video.md",
       "hash": "7628a9bc2046bc4ae2f5b8ee1fd447267b60c4fe6d398b0bd1b18051ffc90a45"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/format.json": {
-      "etag": "\"4b11-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/format.md",
       "hash": "7b4e154662fd9b4438122c49c1fdba84f7834ca30a4b8ec92641f9af85b8638c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/frame-sampling.json": {
-      "etag": "\"1ef6-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/frame-sampling.md",
       "hash": "938297031ae0e5c67fb71db0964b97f46a0483b948994dd9f004cb4d90939560"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/fxplug-macros.json": {
-      "etag": "\"1213-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/fxplug-macros.md",
       "hash": "c3370f327813c3d947a27f64d636a5be9b61e51fe647ac5ca8d8f28ca5f90a09"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/fxplug.json": {
-      "etag": "\"e300-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/fxplug.md",
       "hash": "5a99f8d871b2a1c4dc50345f8b0ab251e58b34a5649c89e9d3eaaaf38ceb1092"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/gap.json": {
-      "etag": "\"299b-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/gap.md",
       "hash": "4a3c2bb1b697fb0b4b0712e39584dd2f7503a2a81fb05ba8ee8cefdaebc50a69"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/id.json": {
-      "etag": "\"27f2-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/id.md",
       "hash": "fab9a65c71109cbb16412d45e9e2ca8afdc9ded4b6cc09dd4f1910d36d6f6739"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/import-options.json": {
-      "etag": "\"2dec-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/import-options.md",
       "hash": "eac23f946bf68db3b4ea078e282a5ee03e86e9d5f77bbda3f796d0707047a0af"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/importing-fcpxml-data.json": {
-      "etag": "\"3cfb-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/importing-fcpxml-data.md",
       "hash": "578d9556f07c737d00fb4822c9e42c4add5868a783f13aed8f8a735630434e70"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/interacting-with-the-final-cut-pro-timeline.json": {
-      "etag": "\"7d16-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md",
       "hash": "cd3c2d2b131a0c4e0bb19de258a43fdfb36751278d31bde4fdc57e09ad203857"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/keyframeanimation.json": {
-      "etag": "\"186c-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/keyframeanimation.md",
       "hash": "dc6905b49b2504ed2f4eff45b506a4a6e838cbe400de64e56f590227d09d376e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/keyword-collection.json": {
-      "etag": "\"18a1-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/keyword-collection.md",
       "hash": "3c7dc358ace96dbb8715ed0500186dfdeb75f3e4b19643c36b495aa64a8338a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/keyword.json": {
-      "etag": "\"1cd7-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/keyword.md",
       "hash": "89d2e725f4dafdcf648321f48e420c03ac2d6a117f5ad8196291795d6624bbc3"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/library.json": {
-      "etag": "\"2bf3-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/library.md",
       "hash": "19475210ceadc66ffd639db638377aee0726d5c8ca8f30739c0b4784f7ac1bf3"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/locator.json": {
-      "etag": "\"2352-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/locator.md",
       "hash": "9915e86ec7868d3a56ca8037c9491669384582c93d9572d2f3498851247e6bbb"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/managing-color-space-and-gamut-in-plug-ins.json": {
-      "etag": "\"9ca7-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md",
       "hash": "cddcbacb46e356e3e64ff8d06abc5bef005a0fae6ee58770021aec1c6f7d6e9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/marker.json": {
-      "etag": "\"1cd9-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/marker.md",
       "hash": "a625d50a2e20a6f01b65a6acecab5d5ee1bcafe2592a2f8697424f541d468087"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/mask-isolation.json": {
-      "etag": "\"1cfd-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/mask-isolation.md",
       "hash": "abfd1d00771422c494049ba4d81cbfd896e92820bc3e41c85cd4336af7bc8a2c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/mask-shape.json": {
-      "etag": "\"1a94-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/mask-shape.md",
       "hash": "d3fa152937acc2cbdefcc644e5cc77a3b0335b87ce6e19f43bc2122672ba5523"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/masked-filters.json": {
-      "etag": "\"3861-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/masked-filters.md",
       "hash": "fbf07cce677d94181893517d99940d4b6026d49cad056470023b41cb7f63c85d"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/mc-clip.json": {
-      "etag": "\"3085-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/mc-clip.md",
       "hash": "c0723b57b08d8272f266efbc0f2b49f3f2ef6fa8c063ac282d3019dd419817ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/media-rep.json": {
-      "etag": "\"31f7-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/media-rep.md",
       "hash": "02fbfc5ad07a65db7b3a566e604fae796488bcbd30f2ab449cf4e18844181e24"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/media.json": {
-      "etag": "\"31f2-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/media.md",
       "hash": "0aa70b0550000156c11584f4af7f11c87cd42f67ba2b34e8de48efea64296c06"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/metadata-keys-and-sources.json": {
-      "etag": "\"5014-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/metadata-keys-and-sources.md",
       "hash": "2fb1ece5c3bd8d0c3b0df03cccf88b8689770196e8e43b7349abb956c711597b"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/metadata.json": {
-      "etag": "\"28ea-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/metadata.md",
       "hash": "32241dc52e73f00a81219e6b4644a387d10a0059ebc79e5876418ed2438aa04c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/migrating-fxplug-3-plug-ins-to-fxplug-4.json": {
-      "etag": "\"7989-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/migrating-fxplug-3-plug-ins-to-fxplug-4.md",
       "hash": "4e208c1fe501f7648d66f0442f62fcb0968c595464a6bb100756d3c280e42060"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/multicam-media.json": {
-      "etag": "\"2c28-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/multicam-media.md",
       "hash": "291df774967b7facaa277c8eaeff0535c57ef987289ac00cbb5cc8ceec909fa5"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/mute.json": {
-      "etag": "\"170b-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/mute.md",
       "hash": "388fa98dca838e0149dd2a598cb1eb29e4c25e421f3bfb57814b61426163bbfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/name.json": {
-      "etag": "\"1da9-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/name.md",
       "hash": "81af61fad752c939a7182971ac3d656fff7536f5f4f280912720981e2e5d45e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/notarizing-your-fxplug-plug-in.json": {
-      "etag": "\"4983-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/notarizing-your-fxplug-plug-in.md",
       "hash": "df16d421fbf8972c857a6cf399d4c541af07ccc80971480bca73bf49d637393c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/note.json": {
-      "etag": "\"1cdd-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/note.md",
       "hash": "237a1394d6b03f222134fa8d77eca4945c65de460bc068b865e0bc4d3d41a371"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/object-tracker.json": {
-      "etag": "\"245f-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/object-tracker.md",
       "hash": "714e45a5a08ae32a5606be87955f732ab232fb56273e5b5ad1775b7294b4e5ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/optimizing-fxplug-plug-ins.json": {
-      "etag": "\"80d5-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/optimizing-fxplug-plug-ins.md",
       "hash": "0ceacac450664e67a874b5819c9808c6ae35d2da3bcf08bd1b686ac028540fde"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/predefined-video-formats.json": {
-      "etag": "\"59ef-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/predefined-video-formats.md",
       "hash": "e284aa1e09855a8e9a378b2a48caa226e5d1f2a79d9d5175c5ea1fe47180bef0"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/preparing-plug-ins-for-use-in-final-cut-pro.json": {
-      "etag": "\"41a9-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/preparing-plug-ins-for-use-in-final-cut-pro.md",
       "hash": "74081d1dae0a46ab49660d07013216470e35ff0adf18e6aed6378fcdb8eef455"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/professional-video-applications-constants.json": {
-      "etag": "\"3a43-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-constants.md",
       "hash": "b0b06ff3e10c54066db6c66399b8c34996abb58af07908af89495c41a054f56d"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/professional-video-applications-data-types.json": {
-      "etag": "\"2690-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-data-types.md",
       "hash": "1d91ac60fa162cf1b420af1aca1fe0166358f120bddf1317a868a56db9700afa"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/professional-video-applications-enumerations.json": {
-      "etag": "\"7110-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-enumerations.md",
       "hash": "84cdf52fac83b1d2a841e036e32f017e3c91ac072b26022cf4115a3cc964b48e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/professional-video-applications-protocols.json": {
-      "etag": "\"303c-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/professional-video-applications-protocols.md",
       "hash": "a8f19dfc2a014e9bdc50e16772a42c91570385db1c96af25797999f7d79d1b06"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/project.json": {
-      "etag": "\"2900-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/project.md",
       "hash": "3c350e745b0cdd112b8cd8f3aa6b7388e4899ad57e50cd69632cc4e363e12ac6"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/rating.json": {
-      "etag": "\"1cd9-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/rating.md",
       "hash": "609bf3fa0b5003af966c959fee799a01ca69b22be444786c335ab5cebe8d81f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/receiving-media-and-data-through-a-custom-share-destination.json": {
-      "etag": "\"7bae-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/receiving-media-and-data-through-a-custom-share-destination.md",
       "hash": "6dbe39143e558d805b46a698d8924495432920c6d8048c0408433d00d12760bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/ref-clip.json": {
-      "etag": "\"34b5-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/ref-clip.md",
       "hash": "9b2eada0aa01b5fc240793ece9ffaf519a754235d218f5648c635d852bb4862e"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/rendering-in-fxplug.json": {
-      "etag": "\"4cbf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/rendering-in-fxplug.md",
       "hash": "8a09643474a02001afce8853f01a392d39dc913e6a7048ebb36199d90e544fa8"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/resources.json": {
-      "etag": "\"2775-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/resources.md",
       "hash": "3ac155ec4a7a07ae922a99683e455c52ceba169f22426a7b8820c6e150ccceeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/responding-to-apple-events-from-final-cut-pro.json": {
-      "etag": "\"aa79-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/responding-to-apple-events-from-final-cut-pro.md",
       "hash": "63acacfb8a4e6ed52c88bd57d192eebe7b234bcf921fb269bef5fcb492362f6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/roles-attribute.json": {
-      "etag": "\"1f0d-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/roles-attribute.md",
       "hash": "3dc7ca809b9ceee9b18e7d29e56e83f09faa11504b52f9317c533043e5004407"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/scheduling-media-in-plug-ins.json": {
-      "etag": "\"4e43-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/scheduling-media-in-plug-ins.md",
       "hash": "52a045ad85e9c5ee6027a3534b61d45f9876404651575ffa862dd1c699acce7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/sending-data-programmatically-to-final-cut-pro.json": {
-      "etag": "\"412b-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/sending-data-programmatically-to-final-cut-pro.md",
       "hash": "8f0194717060108c540acef2243f903dadd885ceb62ac753df6f50ceabfff491"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/sending-media-and-metadata-to-final-cut-pro.json": {
-      "etag": "\"2b82-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/sending-media-and-metadata-to-final-cut-pro.md",
       "hash": "b3869df4b1d2d0a53ed8ce3f634b56270832e2ce53ae616eebb3a07cba28a6ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/sending-media-to-final-cut-pro-as-it-s-recorded.json": {
-      "etag": "\"2d9e-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/sending-media-to-final-cut-pro-as-it-s-recorded.md",
       "hash": "8fe8d4c9a5bcd8e6a82f3d5e8d676568a597fe19037b0554705f63de43f46481"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/sequence.json": {
-      "etag": "\"2991-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/sequence.md",
       "hash": "b8cbf48f8fbb9d04b0ed303dd46d97f41fa3c4614673305308af6783be97b2b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/setting-up-for-fxplug-development.json": {
-      "etag": "\"1ebb-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/setting-up-for-fxplug-development.md",
       "hash": "f5eb832c370e162516cee3fe66df7ab0f9668d3a1a40a1249da79aacf4571d24"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/smart-collection.json": {
-      "etag": "\"4eee-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/smart-collection.md",
       "hash": "3226993fcd90590b21dd30e59e8dacd2427c5e2063aa1e56c883f4dad03d2b83"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/spine.json": {
-      "etag": "\"2997-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/spine.md",
       "hash": "83227a3725ce277e69dac8a6fc1963075aeb4d606a804b63511ec9649218a4ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/story-elements.json": {
-      "etag": "\"76d5-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/story-elements.md",
       "hash": "0b4be31fc0366a0bdcbe43b06ef9f20d0ef8b73eb819c2eca636a891290a576c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/supporting-conversions-with-scripting-class-extensions.json": {
-      "etag": "\"3cd0-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/supporting-conversions-with-scripting-class-extensions.md",
       "hash": "f6c7468e8cbac8f5ceee6e9ba5aabf5bdf8483de8ef9825a00e4e2cd159b19e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/supporting-drag-and-drop-for-data-sent-to-final-cut-pro.json": {
-      "etag": "\"5607-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/supporting-drag-and-drop-for-data-sent-to-final-cut-pro.md",
       "hash": "3560fb91a53da5c58c22b5fca0aa9d798092083591b3b0268eae0f3e71592cb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/supporting-drag-and-drop-to-receive-final-cut-pro-data.json": {
-      "etag": "\"3875-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/supporting-drag-and-drop-to-receive-final-cut-pro-data.md",
       "hash": "f13652aa43d00d87e453baca9b7489e4ec41c8c029a73aedfc05c1e939ab2bdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/sync-clip.json": {
-      "etag": "\"2c0c-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/sync-clip.md",
       "hash": "ec548aedbc1d428159ef4f22942b3aeecc262d2e56e3a1a5645a399fb938fe4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/testing-fxplug-plug-ins.json": {
-      "etag": "\"513d-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/testing-fxplug-plug-ins.md",
       "hash": "8b6c605d1acac4d2264863c66c11912fe20022c79c98f2db1ebf2072ce60b7b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/text-style-def.json": {
-      "etag": "\"17ef-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/text-style-def.md",
       "hash": "66e5aed29518841264e0f9cba253fc895c0ada6d2a2b3edb877854781ad26d16"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/text-style.json": {
-      "etag": "\"3607-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/text-style.md",
       "hash": "95b61918ad3173ce96e7282dc0fce9c9fd03229f0c8b3a593e0a3f944d457613"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/text.json": {
-      "etag": "\"25af-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/text.md",
       "hash": "e153a24c6d2e8ac13ee483d5c325ccd1e3952853a58b5d130bd7c4caaf3893fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/thread-safety-in-plug-ins.json": {
-      "etag": "\"881c-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/thread-safety-in-plug-ins.md",
       "hash": "d35c56d7f15b97e5aa7a87763a8ef3e4b7d6709f3090a61c385b79da605705e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/timeline-attributes.json": {
-      "etag": "\"2bd7-6590231d57413-df\"",
       "file_path": "documentation/Professional-Video-Applications/timeline-attributes.md",
       "hash": "5ba04a298d008bc0ea0b05888bbdfc204e32dd400f3ece6492ebf1c93e5ab3dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/timemap.json": {
-      "etag": "\"2002-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/timemap.md",
       "hash": "561a827a690f5f45c5c0e57dc112be75cb61caa0908c99e7e8754ce76fb9654c"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/timing-attributes.json": {
-      "etag": "\"2256-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/timing-attributes.md",
       "hash": "33154d15cbf6232b351166f8169e47bf4203fc57e52977167ba2ff5f53cc475d"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/title.json": {
-      "etag": "\"2dcf-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/title.md",
       "hash": "e92edfea7098f670f589a1da62a3609c86050b66e1519c5c938be14e22165909"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/tracking-shape.json": {
-      "etag": "\"269e-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/tracking-shape.md",
       "hash": "2d7de40a0e27cc65360c83c6329402dba9b5c379c3d5e20d5446337a47393601"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/transition.json": {
-      "etag": "\"2c7e-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/transition.md",
       "hash": "a6b6ccb07672bb1bac616692d58921ef259205bde602cc7137d74889cc422295"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/understanding-time-in-fxplug.json": {
-      "etag": "\"9d98-65d55abee01c9-df\"",
       "file_path": "documentation/Professional-Video-Applications/understanding-time-in-fxplug.md",
       "hash": "ec8411c6736987221abdd133c6eb52fa3226fff30d5d854003f649e5ec30ff46"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/using-bookmark-data.json": {
-      "etag": "\"29c3-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/using-bookmark-data.md",
       "hash": "a0b3ef3869f50cc713c6c11e6215fdb331ffa3853c85539be85340eed49e74c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/using-fxplug-apis.json": {
-      "etag": "\"4a55-65d55abf08b09-df\"",
       "file_path": "documentation/Professional-Video-Applications/using-fxplug-apis.md",
       "hash": "bbb3f54cdbb9a76e2125d7f0db977287cd6b29d86855f832efa673fda0aa74e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/using-out-of-process-fxplug-plug-ins.json": {
-      "etag": "\"43af-6590231d32c93-df\"",
       "file_path": "documentation/Professional-Video-Applications/using-out-of-process-fxplug-plug-ins.md",
       "hash": "5d1b1a40cd93461aa5aefb4409d7388d46a2b559543a2b0b26801273ffd362a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/versioning-and-obsoleting-old-plug-ins.json": {
-      "etag": "\"451e-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md",
       "hash": "cfe06defce381d0bd651dec3a6eca90ac3c771321666af1fb11ffc0f3216c0ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/video.json": {
-      "etag": "\"2d5c-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/video.md",
       "hash": "8401c4cde1f0d4f8fbb16daf9184d3b6b7bd399f6efb1c2c63b567289261c5db"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/workflow-extensions.json": {
-      "etag": "\"7291-6590231d89fbe-df\"",
       "file_path": "documentation/Professional-Video-Applications/workflow-extensions.md",
       "hash": "08d5a5ef6a78d4d60fab8f9bae72fa217432266da8d08bee78145014323891d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/professional-video-applications/working-with-tiled-images.json": {
-      "etag": "\"c233-65d55abebe284-df\"",
       "file_path": "documentation/Professional-Video-Applications/working-with-tiled-images.md",
       "hash": "ee0d72d71fceeb9ff117d7dca615bdbe31d9b9110752c9c42258899ffb157c68"
     }

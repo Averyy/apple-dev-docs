@@ -1,42 +1,34 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/ApplePencil": {
-      "etag": "\"635e-659021f033aa5-df\"",
       "file_path": "documentation/ApplePencil/ApplePencil.md",
       "hash": "5a752ab74f9035ecb68040d4e709ec0a135c18961f2ee3457a0bb5f43a2ed14a"
     },
     "https://developer.apple.com/documentation/applepencil/handling-double-taps-from-apple-pencil": {
-      "etag": "\"6331-65d82b0478759-df\"",
       "file_path": "documentation/ApplePencil/handling-double-taps-from-apple-pencil.md",
       "hash": "2b4b1f8f38fadaf3d8fa5156312d7979cca5ccd7c95e0e7d13b65fbbc6fcd473"
     },
     "https://developer.apple.com/documentation/applepencil/handling-squeezes-from-apple-pencil": {
-      "etag": "\"6a7f-65dc6eeda926e-df\"",
       "file_path": "documentation/ApplePencil/handling-squeezes-from-apple-pencil.md",
       "hash": "030b35e093d65b800ea7737ba9776ee39bf90912bec07e11811980f50c13e46b"
     },
     "https://developer.apple.com/documentation/applepencil/playing-haptic-feedback-in-your-app": {
-      "etag": "\"6c68-65d82b0478759-df\"",
       "file_path": "documentation/ApplePencil/playing-haptic-feedback-in-your-app.md",
       "hash": "7c966c2dc57b1317a382e19e67123e64c2a4e8d75f4737f5b7f86f01a5286d4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/ApplePencil.json": {
-      "etag": "\"635e-659021f033aa5-df\"",
       "file_path": "documentation/ApplePencil/ApplePencil.md",
       "hash": "5a752ab74f9035ecb68040d4e709ec0a135c18961f2ee3457a0bb5f43a2ed14a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/handling-double-taps-from-apple-pencil.json": {
-      "etag": "\"6331-65d82b0478759-df\"",
       "file_path": "documentation/ApplePencil/handling-double-taps-from-apple-pencil.md",
       "hash": "2b4b1f8f38fadaf3d8fa5156312d7979cca5ccd7c95e0e7d13b65fbbc6fcd473"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/handling-squeezes-from-apple-pencil.json": {
-      "etag": "\"6a7f-65dc6eeda926e-df\"",
       "file_path": "documentation/ApplePencil/handling-squeezes-from-apple-pencil.md",
       "hash": "030b35e093d65b800ea7737ba9776ee39bf90912bec07e11811980f50c13e46b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/playing-haptic-feedback-in-your-app.json": {
-      "etag": "\"6c68-65d82b0478759-df\"",
       "file_path": "documentation/ApplePencil/playing-haptic-feedback-in-your-app.md",
       "hash": "7c966c2dc57b1317a382e19e67123e64c2a4e8d75f4737f5b7f86f01a5286d4f"
     }

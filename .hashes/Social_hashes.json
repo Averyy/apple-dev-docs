@@ -1,672 +1,538 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/Social": {
-      "etag": "\"24c9-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/Social.md",
       "hash": "a88a40eec386ce7a3d55d51370d7c5b14bae1404cd723b6aec3fa5675b7cf8a9"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller": {
-      "etag": "\"f968-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller.md",
       "hash": "75cef269ff449925f73d8b6536ebe4755c45c7be06580e55836b079c9f3ba215"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/autocompletionviewcontroller": {
-      "etag": "\"292c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/autocompletionviewcontroller.md",
       "hash": "f5772ac78a7812cb2df2f2c151068769b28061a7003075cd06d3d95d76a4ef33"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/cancel()": {
-      "etag": "\"200d-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/cancel().md",
       "hash": "4ddfe75f02c2b01dccd2ff9781826de85b90151ec4d2fc3d6abea4113a19cb50"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/charactersremaining": {
-      "etag": "\"2f14-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/charactersremaining.md",
       "hash": "4b36ac5a4e6960f0f99d4bc9b4e958197cc7388842aba05c3096c83ab93f4bff"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/configurationitems()": {
-      "etag": "\"2ba2-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/configurationitems().md",
       "hash": "a07fa5fa50aeb3964862d3fdb2d1fd77c0017cbd6493d3a61abb04face587b87"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/contenttext": {
-      "etag": "\"2a6c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/contenttext.md",
       "hash": "cf3d32457260fd0371a9d2916098b9e7c12ed8f70373cd8f0322b0085a32d990"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/didselectcancel()": {
-      "etag": "\"2c8b-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/didselectcancel().md",
       "hash": "44f6ba9325577706d8a8721dae20dfa890d71cee2a2159577d92f6ff1450e831"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/didselectpost()": {
-      "etag": "\"337d-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/didselectpost().md",
       "hash": "606a25d62c01615580353bfdb120e8a394736f13c1012fe2f70de2b0b3c62477"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/iscontentvalid()": {
-      "etag": "\"35a3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/iscontentvalid().md",
       "hash": "144a64878b6bfd89bfbe980f0586e6a173b7355831420b1a0f6ecae1eee9c049"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/loadpreviewview()": {
-      "etag": "\"227d-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/loadpreviewview().md",
       "hash": "df594f863cc33dffe7169f0a52f6aba51973c316182ae90b4062f70ccd8ea202"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/placeholder": {
-      "etag": "\"2a9c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/placeholder.md",
       "hash": "14163fc198881106c55406d2029c5ce9621916a1433adbea26ba95e1632256e4"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/popconfigurationviewcontroller()": {
-      "etag": "\"232b-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/popconfigurationviewcontroller().md",
       "hash": "634674fe8b2669a75c295aeaa8bdf1d2945ec4241da1fbbcefa40e7ac6f2a080"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/presentationanimationdidfinish()": {
-      "etag": "\"3319-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/presentationanimationdidfinish().md",
       "hash": "e3e3d29afb894b17d6401d2464f200fd69a3bb530dc39a95836b56ff73268e86"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/pushconfigurationviewcontroller(_:)": {
-      "etag": "\"32db-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/pushconfigurationviewcontroller(_).md",
       "hash": "0ff80dcc15b566363a0a2c5643fda6c3396b4c4240c3d168711bfc87c196a5f8"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/reloadconfigurationitems()": {
-      "etag": "\"2e21-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/reloadconfigurationitems().md",
       "hash": "73328f5eeb9a5872fb7cedc1c07a2fc095adf00bc6d96fc4cae40991d0ca8732"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/textview": {
-      "etag": "\"33dd-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/textview.md",
       "hash": "e05454e9654cf2431415bf06ade8b7d7a0f1805cb85b62618faf535a1e3bc780"
     },
     "https://developer.apple.com/documentation/social/slcomposeserviceviewcontroller/validatecontent()": {
-      "etag": "\"28b1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/validatecontent().md",
       "hash": "e0926ece508480284bed887906751130bb4b64c26d8036eafdbcb70a9ecf54c1"
     },
     "https://developer.apple.com/documentation/social/slcomposesheetconfigurationitem": {
-      "etag": "\"62d7-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem.md",
       "hash": "ef3941bfdeb14b60df2b783bff5de4f4a2cb5f70d6888d8af481b87848d739ec"
     },
     "https://developer.apple.com/documentation/social/slcomposesheetconfigurationitem/init()": {
-      "etag": "\"19ff-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/init().md",
       "hash": "8d76ae7ced1a978cab53518a639ef08456dd583edaa9a420ecf9e5ff2fe58f81"
     },
     "https://developer.apple.com/documentation/social/slcomposesheetconfigurationitem/taphandler": {
-      "etag": "\"25e8-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/taphandler.md",
       "hash": "aa2d90d028f65f1589196fee989705c828781024ff948696d1a655700cfdc9c5"
     },
     "https://developer.apple.com/documentation/social/slcomposesheetconfigurationitem/title": {
-      "etag": "\"27d0-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/title.md",
       "hash": "0e732a010d5994715450e8a71d27da7db542fdc856db9612162a274ed7853d89"
     },
     "https://developer.apple.com/documentation/social/slcomposesheetconfigurationitem/value": {
-      "etag": "\"27c7-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/value.md",
       "hash": "2e2f05360ac50a1858cf02e2694523f55064b89934bc0cbde86afed5928d37d6"
     },
     "https://developer.apple.com/documentation/social/slcomposesheetconfigurationitem/valuepending": {
-      "etag": "\"2ee0-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/valuepending.md",
       "hash": "f8376173c758c79bed983522330b211b828c6e920fcded338868d746cb3685d6"
     },
     "https://developer.apple.com/documentation/social/slcomposesheetconfigurationitemtaphandler": {
-      "etag": "\"1f56-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitemtaphandler.md",
       "hash": "4394cde27fbc36ea107354d29764039e541dead26b5878e49790a54ba3dd1d98"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller": {
-      "etag": "\"b037-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller.md",
       "hash": "b6e7a64766d5ddf582b1bab23d4e413dc2a0e969f9844feb8f5a58b348835c1c"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/add(_:)-1z68a": {
-      "etag": "\"464b-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/add(_)-1z68a.md",
       "hash": "9addd3b866c38850adac845586ce792cb2052c7bf90a589bd724eec9c283a092"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/add(_:)-3mn1w": {
-      "etag": "\"43b8-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/add(_)-3mn1w.md",
       "hash": "3cbd1333357494b009e8f6d584d707849bae9d01ea96af6dae27b1a6410450bb"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/completionhandler": {
-      "etag": "\"2be1-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/completionhandler.md",
       "hash": "a00491d15f5115678685fcd59e94c9844df77722106871fe72b85e841eab396e"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/init(forservicetype:)": {
-      "etag": "\"2aed-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/init(forservicetype).md",
       "hash": "4d6d3e5eb0b5300dc026f3ac60a9340d387135bf31536941faad695aa8f038f1"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/isavailable(forservicetype:)": {
-      "etag": "\"2e8d-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/isavailable(forservicetype).md",
       "hash": "2e5a6a0d3ab6bc3c48ec4edc68e8f2aa592c07538e1144e0695289ce87072616"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/removeallimages()": {
-      "etag": "\"3938-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/removeallimages().md",
       "hash": "79d296d9f91de6a1ec8036d87b59426d64adaca326665d66a9ddfc82fa87d579"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/removeallurls()": {
-      "etag": "\"391c-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/removeallurls().md",
       "hash": "672cf0d2fa15e0576534cdbecbf3f4509ebc126f1cb9afee909c452f4a5e319c"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/servicetype": {
-      "etag": "\"2b55-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/servicetype.md",
       "hash": "e5bb0e111ca3a1957778e4bba4e05cea471c162b5b5a0bb94c7111eab3e3c9e7"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontroller/setinitialtext(_:)": {
-      "etag": "\"43cd-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/setinitialtext(_).md",
       "hash": "82cbe332e7d7aa4bcfdf705f4a2e903f1237fa793ae1a156aeb673389d90f5b5"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontrollercompletionhandler": {
-      "etag": "\"299c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollercompletionhandler.md",
       "hash": "f7825833ca79c6ff0228a15e12f5297a3d6587bdd2e031ca75eaf02048d1b6f2"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontrollerresult": {
-      "etag": "\"3f76-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult.md",
       "hash": "ed6f28d4f8b3072571842a37fd4716c419664b0426d84c7f76e2b24b1450b3da"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontrollerresult/cancelled": {
-      "etag": "\"2431-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/cancelled.md",
       "hash": "c3cee7b57554e6202133b4d9abe4565c47840650f483039c5fc5b96c3a83cce1"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontrollerresult/done": {
-      "etag": "\"23fb-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/done.md",
       "hash": "e15fe3c7ec4f0d380d2a93b9939d296e9a0d6ce46fb7f6f8253e9a2828145292"
     },
     "https://developer.apple.com/documentation/social/slcomposeviewcontrollerresult/init(rawvalue:)": {
-      "etag": "\"18cd-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/init(rawvalue).md",
       "hash": "5837ed15ac6de9e3fa1936e595fa2e044f043e39297f4e0481a5255b161cdd69"
     },
     "https://developer.apple.com/documentation/social/slrequest": {
-      "etag": "\"a283-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest.md",
       "hash": "bb3d69a36c4a1be21fb3c24cca8434e0080ee3f89d67df19e5bcfd5ed4375b1a"
     },
     "https://developer.apple.com/documentation/social/slrequest/account": {
-      "etag": "\"1e62-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/account.md",
       "hash": "84f68e44768ca3f007373e845c0aaad8cd9a94435798dba3a683216abd023448"
     },
     "https://developer.apple.com/documentation/social/slrequest/addmultipartdata(_:withname:type:)": {
-      "etag": "\"34f1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/addmultipartdata(_,withname,type).md",
       "hash": "328c2c08d7aeeae4336c45eb2d921c0003a878f30e410437b025ff5d9fb8494f"
     },
     "https://developer.apple.com/documentation/social/slrequest/addmultipartdata(_:withname:type:filename:)": {
-      "etag": "\"3bff-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/addmultipartdata(_,withname,type,filename).md",
       "hash": "652a965b3276aa58734c1b7ab61112bf39b98064e807b6615aba097a6a84ae08"
     },
     "https://developer.apple.com/documentation/social/slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1": {
-      "etag": "\"58c3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/init(forservicetype,requestmethod,url,parameters)-2cnf1.md",
       "hash": "72b900957d39197292ebe1531e63c320ac91a1c31944a21c8faccfbc4fb84806"
     },
     "https://developer.apple.com/documentation/social/slrequest/init(forservicetype:requestmethod:url:parameters:)-92b1d": {
-      "etag": "\"24c5-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/init(forservicetype,requestmethod,url,parameters)-92b1d.md",
       "hash": "276155a0aafcd9f30137c02183e23a035c3169500f780a97274d438b9be2f0bd"
     },
     "https://developer.apple.com/documentation/social/slrequest/parameters": {
-      "etag": "\"3e12-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/parameters.md",
       "hash": "a6880e8e57d2a9de158f629524a20ca34d619b4ae86f183c1dc6f2824f030393"
     },
     "https://developer.apple.com/documentation/social/slrequest/perform(handler:)": {
-      "etag": "\"2513-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/perform(handler).md",
       "hash": "edcb876509c07faafbad7ae201c011fa7b4a4d612fa0c1a344aeb399e13b8e36"
     },
     "https://developer.apple.com/documentation/social/slrequest/preparedurlrequest()": {
-      "etag": "\"38c6-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/preparedurlrequest().md",
       "hash": "fb6f0a1ad44cd5f9503f3df79828c63db39d653bfcb46b7022943e43753ae8e5"
     },
     "https://developer.apple.com/documentation/social/slrequest/requestmethod": {
-      "etag": "\"3b6a-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/requestmethod.md",
       "hash": "f5aa46a15c99d7f2125b57d56e53a4ec050d58b0cd5cb79ecbe84fae85db32bc"
     },
     "https://developer.apple.com/documentation/social/slrequest/url": {
-      "etag": "\"3d65-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/url.md",
       "hash": "55f29fd694deb219748e0969e339f2aea9d9dd47d98ebad0cecac2a28697250d"
     },
     "https://developer.apple.com/documentation/social/slrequesthandler": {
-      "etag": "\"30d3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequesthandler.md",
       "hash": "150973a1572c57041cd6b968c7e56d8d8cb4dbcdfd426bae5606ab1cecd9cd5f"
     },
     "https://developer.apple.com/documentation/social/slrequestmethod": {
-      "etag": "\"53be-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequestmethod.md",
       "hash": "aa54d8e3c6330aa7a44fb44ad76fffb9ca069cf709f7c12cc96d1e6790374b3d"
     },
     "https://developer.apple.com/documentation/social/slrequestmethod/delete": {
-      "etag": "\"22d8-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/delete.md",
       "hash": "68e8dc3752ca2a142aae55aa4c3268d8b3cdfec27fbc7e4609ad8acc7c5b5c3f"
     },
     "https://developer.apple.com/documentation/social/slrequestmethod/get": {
-      "etag": "\"23e8-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/get.md",
       "hash": "dd1b4d1ced6f254af0bf614b24ce1b9a912692283ad0d13441ae5790ee8713bc"
     },
     "https://developer.apple.com/documentation/social/slrequestmethod/init(rawvalue:)": {
-      "etag": "\"1252-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/init(rawvalue).md",
       "hash": "2b6c861e3340c6375e56993aa3ee4ec498c8b97d75aa27f7ff2f8f001e678149"
     },
     "https://developer.apple.com/documentation/social/slrequestmethod/post": {
-      "etag": "\"23d1-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/post.md",
       "hash": "5dd170052b1f551b038284fdaa5df5446043e48373989de9d5fef6bc866a772a"
     },
     "https://developer.apple.com/documentation/social/slrequestmethod/put": {
-      "etag": "\"22c4-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/put.md",
       "hash": "cb7c654689c8b60e39e01b26bfb0df71f979a7a0cd2d99e63c5b3b4424539b62"
     },
     "https://developer.apple.com/documentation/social/slservicetypefacebook": {
-      "etag": "\"32c1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypefacebook.md",
       "hash": "e3ba2c0b58290c64643836263ba161f83e6794b79f23bfa1df4de4ed3109f6bc"
     },
     "https://developer.apple.com/documentation/social/slservicetypelinkedin": {
-      "etag": "\"32c1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypelinkedin.md",
       "hash": "d91b0dd39012b9781ce2c6a20e0706dc2eb044cabac211c33ecd7247c7868452"
     },
     "https://developer.apple.com/documentation/social/slservicetypesinaweibo": {
-      "etag": "\"32cc-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypesinaweibo.md",
       "hash": "d453cd1d0c79198aefbd80031a320366868ba5c5e1e1c2afe4307a2807943c2b"
     },
     "https://developer.apple.com/documentation/social/slservicetypetencentweibo": {
-      "etag": "\"32ea-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypetencentweibo.md",
       "hash": "1bf1fb3d557b2d3c1609663b6a22364104346f5e307eb1835f240ac1e114b4c6"
     },
     "https://developer.apple.com/documentation/social/slservicetypetwitter": {
-      "etag": "\"32b7-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypetwitter.md",
       "hash": "998b6c81d51ed7d8464f26f682a5248f0ed3a93ff33b3d0887e9ec91b8126fab"
     },
     "https://developer.apple.com/documentation/social/social_class_available": {
-      "etag": "\"aa3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/social_class_available.md",
       "hash": "a2a349b9c12fe3ab1972bd9974b4f10178750018977c42989b9f2f8e02f76d3e"
     },
     "https://developer.apple.com/documentation/social/social_class_available_ios": {
-      "etag": "\"a87-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/social_class_available_ios.md",
       "hash": "1430f48868189f917c155843f8ae080d681e1f7e7c2f3f5b60a70b6cdd40fbc5"
     },
     "https://developer.apple.com/documentation/social/social_class_available_mac": {
-      "etag": "\"a88-65d55d4460890-df\"",
       "file_path": "documentation/Social/social_class_available_mac.md",
       "hash": "d01c5ec06d0662820db6595b988c2970e022d227f0b7be1df24ca6ca54fc94c6"
     },
     "https://developer.apple.com/documentation/social/social_extern": {
-      "etag": "\"986-65d55d4460890-df\"",
       "file_path": "documentation/Social/social_extern.md",
       "hash": "22d57edabfe562acc73ccf8de0a7e33d3592bdf5e4a480e0f400564683c59c99"
     },
     "https://developer.apple.com/tutorials/data/documentation/Social.json": {
-      "etag": "\"24c9-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/Social.md",
       "hash": "a88a40eec386ce7a3d55d51370d7c5b14bae1404cd723b6aec3fa5675b7cf8a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller.json": {
-      "etag": "\"f968-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller.md",
       "hash": "75cef269ff449925f73d8b6536ebe4755c45c7be06580e55836b079c9f3ba215"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/autocompletionviewcontroller.json": {
-      "etag": "\"292c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/autocompletionviewcontroller.md",
       "hash": "f5772ac78a7812cb2df2f2c151068769b28061a7003075cd06d3d95d76a4ef33"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/cancel().json": {
-      "etag": "\"200d-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/cancel().md",
       "hash": "4ddfe75f02c2b01dccd2ff9781826de85b90151ec4d2fc3d6abea4113a19cb50"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/charactersremaining.json": {
-      "etag": "\"2f14-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/charactersremaining.md",
       "hash": "4b36ac5a4e6960f0f99d4bc9b4e958197cc7388842aba05c3096c83ab93f4bff"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/configurationitems().json": {
-      "etag": "\"2ba2-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/configurationitems().md",
       "hash": "a07fa5fa50aeb3964862d3fdb2d1fd77c0017cbd6493d3a61abb04face587b87"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/contenttext.json": {
-      "etag": "\"2a6c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/contenttext.md",
       "hash": "cf3d32457260fd0371a9d2916098b9e7c12ed8f70373cd8f0322b0085a32d990"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/didselectcancel().json": {
-      "etag": "\"2c8b-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/didselectcancel().md",
       "hash": "44f6ba9325577706d8a8721dae20dfa890d71cee2a2159577d92f6ff1450e831"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/didselectpost().json": {
-      "etag": "\"337d-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/didselectpost().md",
       "hash": "606a25d62c01615580353bfdb120e8a394736f13c1012fe2f70de2b0b3c62477"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/iscontentvalid().json": {
-      "etag": "\"35a3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/iscontentvalid().md",
       "hash": "144a64878b6bfd89bfbe980f0586e6a173b7355831420b1a0f6ecae1eee9c049"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/loadpreviewview().json": {
-      "etag": "\"227d-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/loadpreviewview().md",
       "hash": "df594f863cc33dffe7169f0a52f6aba51973c316182ae90b4062f70ccd8ea202"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/placeholder.json": {
-      "etag": "\"2a9c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/placeholder.md",
       "hash": "14163fc198881106c55406d2029c5ce9621916a1433adbea26ba95e1632256e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/popconfigurationviewcontroller().json": {
-      "etag": "\"232b-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/popconfigurationviewcontroller().md",
       "hash": "634674fe8b2669a75c295aeaa8bdf1d2945ec4241da1fbbcefa40e7ac6f2a080"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/presentationanimationdidfinish().json": {
-      "etag": "\"3319-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/presentationanimationdidfinish().md",
       "hash": "e3e3d29afb894b17d6401d2464f200fd69a3bb530dc39a95836b56ff73268e86"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/pushconfigurationviewcontroller(_:).json": {
-      "etag": "\"32db-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/pushconfigurationviewcontroller(_).md",
       "hash": "0ff80dcc15b566363a0a2c5643fda6c3396b4c4240c3d168711bfc87c196a5f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/reloadconfigurationitems().json": {
-      "etag": "\"2e21-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/reloadconfigurationitems().md",
       "hash": "73328f5eeb9a5872fb7cedc1c07a2fc095adf00bc6d96fc4cae40991d0ca8732"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/textview.json": {
-      "etag": "\"33dd-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/textview.md",
       "hash": "e05454e9654cf2431415bf06ade8b7d7a0f1805cb85b62618faf535a1e3bc780"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeserviceviewcontroller/validatecontent().json": {
-      "etag": "\"28b1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeserviceviewcontroller/validatecontent().md",
       "hash": "e0926ece508480284bed887906751130bb4b64c26d8036eafdbcb70a9ecf54c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem.json": {
-      "etag": "\"62d7-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem.md",
       "hash": "ef3941bfdeb14b60df2b783bff5de4f4a2cb5f70d6888d8af481b87848d739ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/init().json": {
-      "etag": "\"19ff-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/init().md",
       "hash": "8d76ae7ced1a978cab53518a639ef08456dd583edaa9a420ecf9e5ff2fe58f81"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/taphandler.json": {
-      "etag": "\"25e8-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/taphandler.md",
       "hash": "aa2d90d028f65f1589196fee989705c828781024ff948696d1a655700cfdc9c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/title.json": {
-      "etag": "\"27d0-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/title.md",
       "hash": "0e732a010d5994715450e8a71d27da7db542fdc856db9612162a274ed7853d89"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/value.json": {
-      "etag": "\"27c7-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/value.md",
       "hash": "2e2f05360ac50a1858cf02e2694523f55064b89934bc0cbde86afed5928d37d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitem/valuepending.json": {
-      "etag": "\"2ee0-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitem/valuepending.md",
       "hash": "f8376173c758c79bed983522330b211b828c6e920fcded338868d746cb3685d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposesheetconfigurationitemtaphandler.json": {
-      "etag": "\"1f56-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposesheetconfigurationitemtaphandler.md",
       "hash": "4394cde27fbc36ea107354d29764039e541dead26b5878e49790a54ba3dd1d98"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller.json": {
-      "etag": "\"b037-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller.md",
       "hash": "b6e7a64766d5ddf582b1bab23d4e413dc2a0e969f9844feb8f5a58b348835c1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/add(_:)-1z68a.json": {
-      "etag": "\"464b-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/add(_)-1z68a.md",
       "hash": "9addd3b866c38850adac845586ce792cb2052c7bf90a589bd724eec9c283a092"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/add(_:)-3mn1w.json": {
-      "etag": "\"43b8-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/add(_)-3mn1w.md",
       "hash": "3cbd1333357494b009e8f6d584d707849bae9d01ea96af6dae27b1a6410450bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/completionhandler.json": {
-      "etag": "\"2be1-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/completionhandler.md",
       "hash": "a00491d15f5115678685fcd59e94c9844df77722106871fe72b85e841eab396e"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/init(forservicetype:).json": {
-      "etag": "\"2aed-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/init(forservicetype).md",
       "hash": "4d6d3e5eb0b5300dc026f3ac60a9340d387135bf31536941faad695aa8f038f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/isavailable(forservicetype:).json": {
-      "etag": "\"2e8d-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/isavailable(forservicetype).md",
       "hash": "2e5a6a0d3ab6bc3c48ec4edc68e8f2aa592c07538e1144e0695289ce87072616"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/removeallimages().json": {
-      "etag": "\"3938-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/removeallimages().md",
       "hash": "79d296d9f91de6a1ec8036d87b59426d64adaca326665d66a9ddfc82fa87d579"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/removeallurls().json": {
-      "etag": "\"391c-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/removeallurls().md",
       "hash": "672cf0d2fa15e0576534cdbecbf3f4509ebc126f1cb9afee909c452f4a5e319c"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/servicetype.json": {
-      "etag": "\"2b55-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/servicetype.md",
       "hash": "e5bb0e111ca3a1957778e4bba4e05cea471c162b5b5a0bb94c7111eab3e3c9e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontroller/setinitialtext(_:).json": {
-      "etag": "\"43cd-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontroller/setinitialtext(_).md",
       "hash": "82cbe332e7d7aa4bcfdf705f4a2e903f1237fa793ae1a156aeb673389d90f5b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollercompletionhandler.json": {
-      "etag": "\"299c-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollercompletionhandler.md",
       "hash": "f7825833ca79c6ff0228a15e12f5297a3d6587bdd2e031ca75eaf02048d1b6f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult.json": {
-      "etag": "\"3f76-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult.md",
       "hash": "ed6f28d4f8b3072571842a37fd4716c419664b0426d84c7f76e2b24b1450b3da"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult/cancelled.json": {
-      "etag": "\"2431-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/cancelled.md",
       "hash": "c3cee7b57554e6202133b4d9abe4565c47840650f483039c5fc5b96c3a83cce1"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult/done.json": {
-      "etag": "\"23fb-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/done.md",
       "hash": "e15fe3c7ec4f0d380d2a93b9939d296e9a0d6ce46fb7f6f8253e9a2828145292"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slcomposeviewcontrollerresult/init(rawvalue:).json": {
-      "etag": "\"18cd-65d55d4460890-df\"",
       "file_path": "documentation/Social/slcomposeviewcontrollerresult/init(rawvalue).md",
       "hash": "5837ed15ac6de9e3fa1936e595fa2e044f043e39297f4e0481a5255b161cdd69"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest.json": {
-      "etag": "\"a283-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest.md",
       "hash": "bb3d69a36c4a1be21fb3c24cca8434e0080ee3f89d67df19e5bcfd5ed4375b1a"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/account.json": {
-      "etag": "\"1e62-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/account.md",
       "hash": "84f68e44768ca3f007373e845c0aaad8cd9a94435798dba3a683216abd023448"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/addmultipartdata(_:withname:type:).json": {
-      "etag": "\"34f1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/addmultipartdata(_,withname,type).md",
       "hash": "328c2c08d7aeeae4336c45eb2d921c0003a878f30e410437b025ff5d9fb8494f"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/addmultipartdata(_:withname:type:filename:).json": {
-      "etag": "\"3bff-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/addmultipartdata(_,withname,type,filename).md",
       "hash": "652a965b3276aa58734c1b7ab61112bf39b98064e807b6615aba097a6a84ae08"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1.json": {
-      "etag": "\"58c3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/init(forservicetype,requestmethod,url,parameters)-2cnf1.md",
       "hash": "72b900957d39197292ebe1531e63c320ac91a1c31944a21c8faccfbc4fb84806"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/init(forservicetype:requestmethod:url:parameters:)-92b1d.json": {
-      "etag": "\"24c5-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/init(forservicetype,requestmethod,url,parameters)-92b1d.md",
       "hash": "276155a0aafcd9f30137c02183e23a035c3169500f780a97274d438b9be2f0bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/parameters.json": {
-      "etag": "\"3e12-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/parameters.md",
       "hash": "a6880e8e57d2a9de158f629524a20ca34d619b4ae86f183c1dc6f2824f030393"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/perform(handler:).json": {
-      "etag": "\"2513-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/perform(handler).md",
       "hash": "edcb876509c07faafbad7ae201c011fa7b4a4d612fa0c1a344aeb399e13b8e36"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/preparedurlrequest().json": {
-      "etag": "\"38c6-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/preparedurlrequest().md",
       "hash": "fb6f0a1ad44cd5f9503f3df79828c63db39d653bfcb46b7022943e43753ae8e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/requestmethod.json": {
-      "etag": "\"3b6a-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/requestmethod.md",
       "hash": "f5aa46a15c99d7f2125b57d56e53a4ec050d58b0cd5cb79ecbe84fae85db32bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequest/url.json": {
-      "etag": "\"3d65-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequest/url.md",
       "hash": "55f29fd694deb219748e0969e339f2aea9d9dd47d98ebad0cecac2a28697250d"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequesthandler.json": {
-      "etag": "\"30d3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequesthandler.md",
       "hash": "150973a1572c57041cd6b968c7e56d8d8cb4dbcdfd426bae5606ab1cecd9cd5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod.json": {
-      "etag": "\"53be-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slrequestmethod.md",
       "hash": "aa54d8e3c6330aa7a44fb44ad76fffb9ca069cf709f7c12cc96d1e6790374b3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/delete.json": {
-      "etag": "\"22d8-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/delete.md",
       "hash": "68e8dc3752ca2a142aae55aa4c3268d8b3cdfec27fbc7e4609ad8acc7c5b5c3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/get.json": {
-      "etag": "\"23e8-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/get.md",
       "hash": "dd1b4d1ced6f254af0bf614b24ce1b9a912692283ad0d13441ae5790ee8713bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/init(rawvalue:).json": {
-      "etag": "\"1252-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/init(rawvalue).md",
       "hash": "2b6c861e3340c6375e56993aa3ee4ec498c8b97d75aa27f7ff2f8f001e678149"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/post.json": {
-      "etag": "\"23d1-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/post.md",
       "hash": "5dd170052b1f551b038284fdaa5df5446043e48373989de9d5fef6bc866a772a"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slrequestmethod/put.json": {
-      "etag": "\"22c4-65d55d4460890-df\"",
       "file_path": "documentation/Social/slrequestmethod/put.md",
       "hash": "cb7c654689c8b60e39e01b26bfb0df71f979a7a0cd2d99e63c5b3b4424539b62"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypefacebook.json": {
-      "etag": "\"32c1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypefacebook.md",
       "hash": "e3ba2c0b58290c64643836263ba161f83e6794b79f23bfa1df4de4ed3109f6bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypelinkedin.json": {
-      "etag": "\"32c1-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypelinkedin.md",
       "hash": "d91b0dd39012b9781ce2c6a20e0706dc2eb044cabac211c33ecd7247c7868452"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypesinaweibo.json": {
-      "etag": "\"32cc-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypesinaweibo.md",
       "hash": "d453cd1d0c79198aefbd80031a320366868ba5c5e1e1c2afe4307a2807943c2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypetencentweibo.json": {
-      "etag": "\"32ea-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypetencentweibo.md",
       "hash": "1bf1fb3d557b2d3c1609663b6a22364104346f5e307eb1835f240ac1e114b4c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/slservicetypetwitter.json": {
-      "etag": "\"32b7-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/slservicetypetwitter.md",
       "hash": "998b6c81d51ed7d8464f26f682a5248f0ed3a93ff33b3d0887e9ec91b8126fab"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/social_class_available.json": {
-      "etag": "\"aa3-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/social_class_available.md",
       "hash": "a2a349b9c12fe3ab1972bd9974b4f10178750018977c42989b9f2f8e02f76d3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/social_class_available_ios.json": {
-      "etag": "\"a87-65d55d4453c4f-df\"",
       "file_path": "documentation/Social/social_class_available_ios.md",
       "hash": "1430f48868189f917c155843f8ae080d681e1f7e7c2f3f5b60a70b6cdd40fbc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/social_class_available_mac.json": {
-      "etag": "\"a88-65d55d4460890-df\"",
       "file_path": "documentation/Social/social_class_available_mac.md",
       "hash": "d01c5ec06d0662820db6595b988c2970e022d227f0b7be1df24ca6ca54fc94c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/social/social_extern.json": {
-      "etag": "\"986-65d55d4460890-df\"",
       "file_path": "documentation/Social/social_extern.md",
       "hash": "22d57edabfe562acc73ccf8de0a7e33d3592bdf5e4a480e0f400564683c59c99"
     }

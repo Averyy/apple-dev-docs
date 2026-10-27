@@ -5,92 +5,74 @@
       "status": "error"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/commonproblems.json": {
-      "etag": "\"1def5-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/commonproblems.md",
       "hash": "31343cde1fc070632392fb2d3f02a4a70fac6a0a32cd17a11d20409e49297f30"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/dataracesafety.json": {
-      "etag": "\"1960a-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/dataracesafety.md",
       "hash": "e042b08052fb1b758f9b291846dec643564504850120e83f438c88fc57cf6d0e"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/enabledataracesafety.json": {
-      "etag": "\"5dfd-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/enabledataracesafety.md",
       "hash": "a300834062ef178d3bb251b28096ba8b32e4b6cacb8a068e15a2bf3e44123f91"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/featuremigration.json": {
-      "etag": "\"2e91-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/featuremigration.md",
       "hash": "a838b16b87c691e7ed76bfe6bbf862deb5933e1f659a20f712b52ede7f043b03"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/incrementaladoption.json": {
-      "etag": "\"100ab-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/incrementaladoption.md",
       "hash": "44ceb9216e4a508e212a9ec38da7929b7d68849fb85b237c4dba8ace4fdd7957"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/libraryevolution.json": {
-      "etag": "\"8efb-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/libraryevolution.md",
       "hash": "0ba76849775b09fabbf3df6b7871adac28f63f9568f68961d5c085b66fb5d438"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/migrationstrategy.json": {
-      "etag": "\"6ed2-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/migrationstrategy.md",
       "hash": "b905c9dc4f1a650b538278c956ee7c05aa36c4dae7db4f1f15da6438bda4c9f9"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/runtimebehavior.json": {
-      "etag": "\"1b2d-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/runtimebehavior.md",
       "hash": "fb6aeb9aed4b3d7887a3691e76c911b09a54d47a28139176619686650959cbd4"
     },
     "https://docs.swift.org/latest/data/documentation/swift-6-concurrency-migration-guide/sourcecompatibility.json": {
-      "etag": "\"7391-659e1d6b58d40\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/sourcecompatibility.md",
       "hash": "2f46c9dc1b03167038d517a9ae2c7e27ecb3a048149fdcb651a2b47e16774d3b"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/commonproblems": {
-      "etag": "\"1def5-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/commonproblems.md",
       "hash": "31343cde1fc070632392fb2d3f02a4a70fac6a0a32cd17a11d20409e49297f30"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/dataracesafety": {
-      "etag": "\"1960a-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/dataracesafety.md",
       "hash": "e042b08052fb1b758f9b291846dec643564504850120e83f438c88fc57cf6d0e"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/enabledataracesafety": {
-      "etag": "\"5dfd-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/enabledataracesafety.md",
       "hash": "a300834062ef178d3bb251b28096ba8b32e4b6cacb8a068e15a2bf3e44123f91"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/featuremigration": {
-      "etag": "\"2e91-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/featuremigration.md",
       "hash": "a838b16b87c691e7ed76bfe6bbf862deb5933e1f659a20f712b52ede7f043b03"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/incrementaladoption": {
-      "etag": "\"100ab-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/incrementaladoption.md",
       "hash": "44ceb9216e4a508e212a9ec38da7929b7d68849fb85b237c4dba8ace4fdd7957"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/libraryevolution": {
-      "etag": "\"8efb-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/libraryevolution.md",
       "hash": "0ba76849775b09fabbf3df6b7871adac28f63f9568f68961d5c085b66fb5d438"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/migrationstrategy": {
-      "etag": "\"6ed2-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/migrationstrategy.md",
       "hash": "b905c9dc4f1a650b538278c956ee7c05aa36c4dae7db4f1f15da6438bda4c9f9"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/runtimebehavior": {
-      "etag": "\"1b2d-659e1d6a64b00\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/runtimebehavior.md",
       "hash": "fb6aeb9aed4b3d7887a3691e76c911b09a54d47a28139176619686650959cbd4"
     },
     "https://docs.swift.org/latest/documentation/swift-6-concurrency-migration-guide/sourcecompatibility": {
-      "etag": "\"7391-659e1d6b58d40\"",
       "file_path": "documentation/Swift-Org/Swift-6-Concurrency-Migration-Guide/sourcecompatibility.md",
       "hash": "2f46c9dc1b03167038d517a9ae2c7e27ecb3a048149fdcb651a2b47e16774d3b"
     }

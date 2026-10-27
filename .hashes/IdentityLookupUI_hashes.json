@@ -1,72 +1,58 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/identitylookupui": {
-      "etag": "\"f0c-659029b6aba3c-df\"",
       "file_path": "documentation/IdentityLookupUI/IdentityLookupUI.md",
       "hash": "37e22c9f38676a82b2df9685eca63dca1d4fa7899c8a18545d8a553bb7d9b818"
     },
     "https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensioncontext": {
-      "etag": "\"410b-65d5603eee612-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensioncontext.md",
       "hash": "c157ad2680a943fe2778cba7ee9790705e70c84c92994d2e6050fdc1411c48cb"
     },
     "https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensioncontext/isreadyforclassificationresponse": {
-      "etag": "\"2318-65d5603eee612-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensioncontext/isreadyforclassificationresponse.md",
       "hash": "bfb70749fbeb79b39ff42ef68552ae17e3d603a76e3ac311577144c170dcbf73"
     },
     "https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller": {
-      "etag": "\"7b83-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller.md",
       "hash": "3625b564d0db2aa7617b8c8d6c8a9dab6dc542cbdc3e46d0157c2ff4f34614c2"
     },
     "https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/classificationresponse(for:)": {
-      "etag": "\"3554-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller/classificationresponse(for).md",
       "hash": "6141bce4b33991d697cae6a9a4eaee899e3b001d17b913bcf75db36fadc65263"
     },
     "https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/extensioncontext": {
-      "etag": "\"2625-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller/extensioncontext.md",
       "hash": "5b93cb57f94b64f669443fc677a54ce87459aff81a878b329c41f7da4613c1ce"
     },
     "https://developer.apple.com/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/prepare(for:)": {
-      "etag": "\"2e1c-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller/prepare(for).md",
       "hash": "a9870c2baa57a907ad57debeee84565bafd7d6e1276e318cbca38171f27295f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookupui.json": {
-      "etag": "\"f0c-659029b6aba3c-df\"",
       "file_path": "documentation/IdentityLookupUI/IdentityLookupUI.md",
       "hash": "37e22c9f38676a82b2df9685eca63dca1d4fa7899c8a18545d8a553bb7d9b818"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookupui/ilclassificationuiextensioncontext.json": {
-      "etag": "\"410b-65d5603eee612-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensioncontext.md",
       "hash": "c157ad2680a943fe2778cba7ee9790705e70c84c92994d2e6050fdc1411c48cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookupui/ilclassificationuiextensioncontext/isreadyforclassificationresponse.json": {
-      "etag": "\"2318-65d5603eee612-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensioncontext/isreadyforclassificationresponse.md",
       "hash": "bfb70749fbeb79b39ff42ef68552ae17e3d603a76e3ac311577144c170dcbf73"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookupui/ilclassificationuiextensionviewcontroller.json": {
-      "etag": "\"7b83-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller.md",
       "hash": "3625b564d0db2aa7617b8c8d6c8a9dab6dc542cbdc3e46d0157c2ff4f34614c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/classificationresponse(for:).json": {
-      "etag": "\"3554-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller/classificationresponse(for).md",
       "hash": "6141bce4b33991d697cae6a9a4eaee899e3b001d17b913bcf75db36fadc65263"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/extensioncontext.json": {
-      "etag": "\"2625-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller/extensioncontext.md",
       "hash": "5b93cb57f94b64f669443fc677a54ce87459aff81a878b329c41f7da4613c1ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitylookupui/ilclassificationuiextensionviewcontroller/prepare(for:).json": {
-      "etag": "\"2e1c-65d5603ee5226-df\"",
       "file_path": "documentation/IdentityLookupUI/ilclassificationuiextensionviewcontroller/prepare(for).md",
       "hash": "a9870c2baa57a907ad57debeee84565bafd7d6e1276e318cbca38171f27295f6"
     }

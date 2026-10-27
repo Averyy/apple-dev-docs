@@ -1,42 +1,34 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/healthkitui": {
-      "etag": "\"1237-65d5608a2a12e-df\"",
       "file_path": "documentation/HealthKitUI/HealthKitUI.md",
       "hash": "c97eab423bb66e7064fe73ba56cab340d48667fde0071d8d34e8ea56037e45aa"
     },
     "https://developer.apple.com/documentation/healthkitui/hkactivityringview": {
-      "etag": "\"dca7-65d5608543d40-df\"",
       "file_path": "documentation/HealthKitUI/hkactivityringview.md",
       "hash": "17295fce54052f6c4639e91717ccd0affa3656ab40fcb7f62df6d8478ddf4ecf"
     },
     "https://developer.apple.com/documentation/healthkitui/hkactivityringview/activitysummary": {
-      "etag": "\"2a85-65d5608543d40-df\"",
       "file_path": "documentation/HealthKitUI/hkactivityringview/activitysummary.md",
       "hash": "eedea0cc64e865974210f6bb61772e966e4072bd0fee6b2760b287041fb02f8b"
     },
     "https://developer.apple.com/documentation/healthkitui/hkactivityringview/setactivitysummary(_:animated:)": {
-      "etag": "\"362d-65d5608543d40-df\"",
       "file_path": "documentation/HealthKitUI/hkactivityringview/setactivitysummary(_,animated).md",
       "hash": "d14f9ac5d4853cc601c35fe0b438454fab71c0ea20c5ec22dfef110a62772cf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkitui.json": {
-      "etag": "\"1237-65d5608a2a12e-df\"",
       "file_path": "documentation/HealthKitUI/HealthKitUI.md",
       "hash": "c97eab423bb66e7064fe73ba56cab340d48667fde0071d8d34e8ea56037e45aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkitui/hkactivityringview.json": {
-      "etag": "\"dca7-65d5608543d40-df\"",
       "file_path": "documentation/HealthKitUI/hkactivityringview.md",
       "hash": "17295fce54052f6c4639e91717ccd0affa3656ab40fcb7f62df6d8478ddf4ecf"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkitui/hkactivityringview/activitysummary.json": {
-      "etag": "\"2a85-65d5608543d40-df\"",
       "file_path": "documentation/HealthKitUI/hkactivityringview/activitysummary.md",
       "hash": "eedea0cc64e865974210f6bb61772e966e4072bd0fee6b2760b287041fb02f8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/healthkitui/hkactivityringview/setactivitysummary(_:animated:).json": {
-      "etag": "\"362d-65d5608543d40-df\"",
       "file_path": "documentation/HealthKitUI/hkactivityringview/setactivitysummary(_,animated).md",
       "hash": "d14f9ac5d4853cc601c35fe0b438454fab71c0ea20c5ec22dfef110a62772cf8"
     }

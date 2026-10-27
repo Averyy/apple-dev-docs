@@ -1,172 +1,138 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/AppDataTransfer": {
-      "etag": "\"673c-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/AppDataTransfer.md",
       "hash": "5349f24c726cdc04b4dd07d6ee53e0e9d0c43c124e7645d6ecacb3ab20a2f599"
     },
     "https://developer.apple.com/documentation/appdatatransfer/cancel-request": {
-      "etag": "\"1ca4-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/cancel-request.md",
       "hash": "ffc53566840f0a7b31746f869a4cae3b4f8a5825710603c64613e6eb7e24c47e"
     },
     "https://developer.apple.com/documentation/appdatatransfer/cancellationrequest": {
-      "etag": "\"12b4-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/cancellationrequest.md",
       "hash": "ec996fde8184d875a6ea7813f97d3f9da5990a7d8f4f68303a055c26440198fa"
     },
     "https://developer.apple.com/documentation/appdatatransfer/cancellationresponse": {
-      "etag": "\"1364-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/cancellationresponse.md",
       "hash": "eea8721425d62c8d433b9cf5206e811200a6b408efdf7b3b49171d4eb3f849b9"
     },
     "https://developer.apple.com/documentation/appdatatransfer/createdjob": {
-      "etag": "\"2235-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/createdjob.md",
       "hash": "8b9bc25aeb3c48d4ec01b8f25c49d9d39e3ac9850ee099dbd470e31b4e560e65"
     },
     "https://developer.apple.com/documentation/appdatatransfer/downloaderror": {
-      "etag": "\"1aad-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/downloaderror.md",
       "hash": "fbf56d1f7ed3bc691776c7ae2cd19251dceb8d68533e4a0e7e37bf79214c98a9"
     },
     "https://developer.apple.com/documentation/appdatatransfer/downloadlinks": {
-      "etag": "\"18ea-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/downloadlinks.md",
       "hash": "fc20e0c1a0c38f8b81b2527e4b15fee056eb5d2216b7fa1f0682a5dc9cc3db7d"
     },
     "https://developer.apple.com/documentation/appdatatransfer/get-one-time-request-download-urls": {
-      "etag": "\"1c1b-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-one-time-request-download-urls.md",
       "hash": "fb5b41b1b079d92f6fb2d07a44e8f65a49ec127b212caf3ac441fb4f68f9bb4d"
     },
     "https://developer.apple.com/documentation/appdatatransfer/get-one-time-request-status": {
-      "etag": "\"1678-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-one-time-request-status.md",
       "hash": "d26d68667270a780732dfe85971a5a215519cb749191abf13256e81ebc674527"
     },
     "https://developer.apple.com/documentation/appdatatransfer/get-recurring-request-download-urls": {
-      "etag": "\"1de7-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-recurring-request-download-urls.md",
       "hash": "fec395a08339912fc7718f2a9e900c0124f538eaf369eba08454dc23003b9327"
     },
     "https://developer.apple.com/documentation/appdatatransfer/get-recurring-request-status": {
-      "etag": "\"18f0-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-recurring-request-status.md",
       "hash": "a329adc4ea9d2af2ecb15de177bc547daa21896121900fc1744775c892cd1ea2"
     },
     "https://developer.apple.com/documentation/appdatatransfer/jobsubmission": {
-      "etag": "\"19ae-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/jobsubmission.md",
       "hash": "f8aa5c4e21145f96d5b94d0d14e0bb6f468a97a68ecbb27304ffa872a2c21f27"
     },
     "https://developer.apple.com/documentation/appdatatransfer/requeststatus": {
-      "etag": "\"1456-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/requeststatus.md",
       "hash": "dded344c3f910b934e5c25c198042243f4ae155f1f177574e7d852112dba3c6c"
     },
     "https://developer.apple.com/documentation/appdatatransfer/resubmissionrequest": {
-      "etag": "\"1d1a-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/resubmissionrequest.md",
       "hash": "183f08722b6a54f16fc37c1dafc06fee70a191b667df90e6c9a17ef569ebf200"
     },
     "https://developer.apple.com/documentation/appdatatransfer/resubmissionresponse": {
-      "etag": "\"1f55-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/resubmissionresponse.md",
       "hash": "66f100b865126ff2278dfbd7390d4f9f53bb2b45daa4e51ea1d85d41029cb379"
     },
     "https://developer.apple.com/documentation/appdatatransfer/resubmit-request": {
-      "etag": "\"2171-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/resubmit-request.md",
       "hash": "f57c7c4cea0043b3abc4a2a4933b1f60d06c34b33aca5117e99864e6c74ac5d0"
     },
     "https://developer.apple.com/documentation/appdatatransfer/submit-request": {
-      "etag": "\"245f-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/submit-request.md",
       "hash": "99ca841d7f817fbd51b5b445c89716737314e7a59005c13e4e6ee196bdbcdbe2"
     },
     "https://developer.apple.com/tutorials/data/documentation/AppDataTransfer.json": {
-      "etag": "\"673c-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/AppDataTransfer.md",
       "hash": "5349f24c726cdc04b4dd07d6ee53e0e9d0c43c124e7645d6ecacb3ab20a2f599"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/cancel-request.json": {
-      "etag": "\"1ca4-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/cancel-request.md",
       "hash": "ffc53566840f0a7b31746f869a4cae3b4f8a5825710603c64613e6eb7e24c47e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/cancellationrequest.json": {
-      "etag": "\"12b4-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/cancellationrequest.md",
       "hash": "ec996fde8184d875a6ea7813f97d3f9da5990a7d8f4f68303a055c26440198fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/cancellationresponse.json": {
-      "etag": "\"1364-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/cancellationresponse.md",
       "hash": "eea8721425d62c8d433b9cf5206e811200a6b408efdf7b3b49171d4eb3f849b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/createdjob.json": {
-      "etag": "\"2235-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/createdjob.md",
       "hash": "8b9bc25aeb3c48d4ec01b8f25c49d9d39e3ac9850ee099dbd470e31b4e560e65"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/downloaderror.json": {
-      "etag": "\"1aad-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/downloaderror.md",
       "hash": "fbf56d1f7ed3bc691776c7ae2cd19251dceb8d68533e4a0e7e37bf79214c98a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/downloadlinks.json": {
-      "etag": "\"18ea-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/downloadlinks.md",
       "hash": "fc20e0c1a0c38f8b81b2527e4b15fee056eb5d2216b7fa1f0682a5dc9cc3db7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/get-one-time-request-download-urls.json": {
-      "etag": "\"1c1b-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-one-time-request-download-urls.md",
       "hash": "fb5b41b1b079d92f6fb2d07a44e8f65a49ec127b212caf3ac441fb4f68f9bb4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/get-one-time-request-status.json": {
-      "etag": "\"1678-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-one-time-request-status.md",
       "hash": "d26d68667270a780732dfe85971a5a215519cb749191abf13256e81ebc674527"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/get-recurring-request-download-urls.json": {
-      "etag": "\"1de7-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-recurring-request-download-urls.md",
       "hash": "fec395a08339912fc7718f2a9e900c0124f538eaf369eba08454dc23003b9327"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/get-recurring-request-status.json": {
-      "etag": "\"18f0-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/get-recurring-request-status.md",
       "hash": "a329adc4ea9d2af2ecb15de177bc547daa21896121900fc1744775c892cd1ea2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/jobsubmission.json": {
-      "etag": "\"19ae-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/jobsubmission.md",
       "hash": "f8aa5c4e21145f96d5b94d0d14e0bb6f468a97a68ecbb27304ffa872a2c21f27"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/requeststatus.json": {
-      "etag": "\"1456-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/requeststatus.md",
       "hash": "dded344c3f910b934e5c25c198042243f4ae155f1f177574e7d852112dba3c6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/resubmissionrequest.json": {
-      "etag": "\"1d1a-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/resubmissionrequest.md",
       "hash": "183f08722b6a54f16fc37c1dafc06fee70a191b667df90e6c9a17ef569ebf200"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/resubmissionresponse.json": {
-      "etag": "\"1f55-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/resubmissionresponse.md",
       "hash": "66f100b865126ff2278dfbd7390d4f9f53bb2b45daa4e51ea1d85d41029cb379"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/resubmit-request.json": {
-      "etag": "\"2171-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/resubmit-request.md",
       "hash": "f57c7c4cea0043b3abc4a2a4933b1f60d06c34b33aca5117e99864e6c74ac5d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/appdatatransfer/submit-request.json": {
-      "etag": "\"245f-65d55a6ddcec0-df\"",
       "file_path": "documentation/AppDataTransfer/submit-request.md",
       "hash": "99ca841d7f817fbd51b5b445c89716737314e7a59005c13e4e6ee196bdbcdbe2"
     }

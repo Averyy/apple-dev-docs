@@ -1,342 +1,274 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/applenewsapi": {
-      "etag": "\"6d35-65902291ba4f4-df\"",
       "file_path": "documentation/AppleNewsAPI/AppleNewsAPI.md",
       "hash": "120613365fbbda5a8bec1bef997e8ea6208f295167f90cf62acddbb49cf05161"
     },
     "https://developer.apple.com/documentation/applenewsapi/article": {
-      "etag": "\"5558-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/article.md",
       "hash": "d0be5d078be1041cb0541f1b616e98ffc1c72bf6bfa7de174fe2562c880f51ac"
     },
     "https://developer.apple.com/documentation/applenewsapi/articlelinksrequest": {
-      "etag": "\"2ece-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/articlelinksrequest.md",
       "hash": "1d159da7c6718190aa34ba33207f932176fa8d675b0e1d9f70222cfa3fee8e66"
     },
     "https://developer.apple.com/documentation/applenewsapi/articlelinksresponse": {
-      "etag": "\"3146-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/articlelinksresponse.md",
       "hash": "e4bc18246c9f167536a8000b87dd91783c30f83db698218c5e88236355f3222c"
     },
     "https://developer.apple.com/documentation/applenewsapi/articleresponse": {
-      "etag": "\"2f05-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/articleresponse.md",
       "hash": "4d7149483d949a932f8534ff5df3d81ce4125c54f2c038943c9e24642637ea93"
     },
     "https://developer.apple.com/documentation/applenewsapi/channel": {
-      "etag": "\"1e0f-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/channel.md",
       "hash": "0b847fc7c2484c040c3e3bba7a818021b246316146c26ef841c98f5604f69fd2"
     },
     "https://developer.apple.com/documentation/applenewsapi/channellinks": {
-      "etag": "\"1990-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/channellinks.md",
       "hash": "7ea4e047e7e904fbf5a59f1ccdb4fb70cd05745ec0b368abd1e96bf6b99b825b"
     },
     "https://developer.apple.com/documentation/applenewsapi/channelresponse": {
-      "etag": "\"1588-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/channelresponse.md",
       "hash": "66b3900a2143243617789933381336e3416d28afbda51f817ec5422590bcfb07"
     },
     "https://developer.apple.com/documentation/applenewsapi/code": {
-      "etag": "\"4f03-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/code.md",
       "hash": "8c8f60840e5687c75144e3f4af056aeefbe446c887e00b0a1341f8205198d09c"
     },
     "https://developer.apple.com/documentation/applenewsapi/create-article-metadata-fields": {
-      "etag": "\"483e-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/create-article-metadata-fields.md",
       "hash": "b74ff1990423fe7cc1c8c749b79aa8767d818f8dc06c4460779e88c1b2dc7803"
     },
     "https://developer.apple.com/documentation/applenewsapi/delete-articles-_articleid_": {
-      "etag": "\"446a-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/delete-articles-_articleid_.md",
       "hash": "81cb72c96244d27316b06a43931ddbe4cdd5d20f19d6eecc7cf8743707c390c7"
     },
     "https://developer.apple.com/documentation/applenewsapi/error": {
-      "etag": "\"202f-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/error.md",
       "hash": "508096a790ac0093236f6d4809821065f8ed68de4dfb9bd8659b14593daed28f"
     },
     "https://developer.apple.com/documentation/applenewsapi/get-articles-_articleid_": {
-      "etag": "\"4cc2-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-articles-_articleid_.md",
       "hash": "4c50e63925fcb9711dc40cd910ae0a22cd16206f52e0278f1f82649b24125ff2"
     },
     "https://developer.apple.com/documentation/applenewsapi/get-channels-_channelid_": {
-      "etag": "\"3912-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_.md",
       "hash": "538fe8c933b064e704f0bec49dcaf3911d07b2fb60404061d3f9165759eace79"
     },
     "https://developer.apple.com/documentation/applenewsapi/get-channels-_channelid_-articles": {
-      "etag": "\"5b51-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_-articles.md",
       "hash": "7ed16d47f51703d0b5dd01e6790795bb40f3e57870bf1f1110c8e71a3735e4fd"
     },
     "https://developer.apple.com/documentation/applenewsapi/get-channels-_channelid_-quota": {
-      "etag": "\"332b-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_-quota.md",
       "hash": "a30f293678e40d684b4fc0f68060afaa40da1750e327998049075acef706e969"
     },
     "https://developer.apple.com/documentation/applenewsapi/get-channels-_channelid_-sections": {
-      "etag": "\"3ba5-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_-sections.md",
       "hash": "def12ab410e217025369b706524289df688f857d530caa95c3f9f1a8e64e0bd6"
     },
     "https://developer.apple.com/documentation/applenewsapi/get-sections-_sectionid_": {
-      "etag": "\"33e7-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/get-sections-_sectionid_.md",
       "hash": "74e38e70afdee2f75aed20554dbd1f70070ad7050feb297663ea8209817d0b11"
     },
     "https://developer.apple.com/documentation/applenewsapi/get-sections-_sectionid_-articles": {
-      "etag": "\"5bb3-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-sections-_sectionid_-articles.md",
       "hash": "3b10fd616bda4460009d13af1c82a48717c107a6d639ac1fdf77d2d1607e42f1"
     },
     "https://developer.apple.com/documentation/applenewsapi/meta": {
-      "etag": "\"3202-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/meta.md",
       "hash": "48a6189fcf03ec020ff8c92fc45aa4d55a1be63e766c33d68f3c602d5088f400"
     },
     "https://developer.apple.com/documentation/applenewsapi/post-articles-_articleid_": {
-      "etag": "\"a0b4-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/post-articles-_articleid_.md",
       "hash": "c44348baa2cccd3f0e19789d49a2d276f3359af2a804be06e611f75a05e3025a"
     },
     "https://developer.apple.com/documentation/applenewsapi/post-channels-_channelid_-articles": {
-      "etag": "\"bb8e-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/post-channels-_channelid_-articles.md",
       "hash": "31afdb01fead2562a0c3241a514fcd348abe5394d65cc238064435ef676a4362"
     },
     "https://developer.apple.com/documentation/applenewsapi/post-sections-_sectionid_-promotedarticles": {
-      "etag": "\"3923-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/post-sections-_sectionid_-promotedarticles.md",
       "hash": "2549be698445fbbd6e02b5c2a998c846d2fb53b5e7d78939945c4d48a320374a"
     },
     "https://developer.apple.com/documentation/applenewsapi/promotearticlerequest": {
-      "etag": "\"1d67-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/promotearticlerequest.md",
       "hash": "672d6bdbc1002eef82a5af85b649139e0f8034b9fe62b3b992ea99bcc5e94b05"
     },
     "https://developer.apple.com/documentation/applenewsapi/promotearticleresponse": {
-      "etag": "\"1d54-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/promotearticleresponse.md",
       "hash": "3873fbd2b2dee96b248e00dded837a2f2b8fff36430d25a1228fd940b43e56e8"
     },
     "https://developer.apple.com/documentation/applenewsapi/searchresponse": {
-      "etag": "\"36f4-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/searchresponse.md",
       "hash": "111bcc7c911e18444a34ab8314c3b71fcbc8c30854a05d9f88643fa70a5248f6"
     },
     "https://developer.apple.com/documentation/applenewsapi/searchresponse/links-data.dictionary": {
-      "etag": "\"1060-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/searchresponse/links-data.dictionary.md",
       "hash": "d5231caca4118967aecb394c43b995ae1b2d1e1e0c48d3cbc93c4ce03a152686"
     },
     "https://developer.apple.com/documentation/applenewsapi/section": {
-      "etag": "\"22cd-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/section.md",
       "hash": "7319b8e027f5c87934ee5da8d59e1bea84854188b1803b8d00a9b93c831d9943"
     },
     "https://developer.apple.com/documentation/applenewsapi/sectionlinks": {
-      "etag": "\"1e99-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/sectionlinks.md",
       "hash": "0e492fb622b535a0c348eaaffc7c0b63f54d3a6810d1861c7f5574ce0451c691"
     },
     "https://developer.apple.com/documentation/applenewsapi/sectionresponse": {
-      "etag": "\"1d0b-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/sectionresponse.md",
       "hash": "4a1c9b82c40cda20f8b6ddf54891f744f8401da54f7e56e95704f4ba24c61d8c"
     },
     "https://developer.apple.com/documentation/applenewsapi/status": {
-      "etag": "\"19ff-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/status.md",
       "hash": "4954f90d986fa2c4220de53c5994711fe31f1bf522554a8d871cf135da1882a5"
     },
     "https://developer.apple.com/documentation/applenewsapi/throttling": {
-      "etag": "\"32ee-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/throttling.md",
       "hash": "034a2478a8ee9c6ef1aba507bbb93d2e84a795f71d3cdd6e031f20bf68b09d7b"
     },
     "https://developer.apple.com/documentation/applenewsapi/update-article-metadata-fields": {
-      "etag": "\"4e99-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/update-article-metadata-fields.md",
       "hash": "61ca33fcd84b7de7584a0fb88f95f5994e37626ead60fcd7e9e77d3296439825"
     },
     "https://developer.apple.com/documentation/applenewsapi/warning": {
-      "etag": "\"169e-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/warning.md",
       "hash": "9053dbbd7996fbe0eac9719a7ff4fad09defc0c1fdda974399438b02060d1bac"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi.json": {
-      "etag": "\"6d35-65902291ba4f4-df\"",
       "file_path": "documentation/AppleNewsAPI/AppleNewsAPI.md",
       "hash": "120613365fbbda5a8bec1bef997e8ea6208f295167f90cf62acddbb49cf05161"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/article.json": {
-      "etag": "\"5558-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/article.md",
       "hash": "d0be5d078be1041cb0541f1b616e98ffc1c72bf6bfa7de174fe2562c880f51ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/articlelinksrequest.json": {
-      "etag": "\"2ece-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/articlelinksrequest.md",
       "hash": "1d159da7c6718190aa34ba33207f932176fa8d675b0e1d9f70222cfa3fee8e66"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/articlelinksresponse.json": {
-      "etag": "\"3146-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/articlelinksresponse.md",
       "hash": "e4bc18246c9f167536a8000b87dd91783c30f83db698218c5e88236355f3222c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/articleresponse.json": {
-      "etag": "\"2f05-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/articleresponse.md",
       "hash": "4d7149483d949a932f8534ff5df3d81ce4125c54f2c038943c9e24642637ea93"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/channel.json": {
-      "etag": "\"1e0f-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/channel.md",
       "hash": "0b847fc7c2484c040c3e3bba7a818021b246316146c26ef841c98f5604f69fd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/channellinks.json": {
-      "etag": "\"1990-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/channellinks.md",
       "hash": "7ea4e047e7e904fbf5a59f1ccdb4fb70cd05745ec0b368abd1e96bf6b99b825b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/channelresponse.json": {
-      "etag": "\"1588-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/channelresponse.md",
       "hash": "66b3900a2143243617789933381336e3416d28afbda51f817ec5422590bcfb07"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/code.json": {
-      "etag": "\"4f03-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/code.md",
       "hash": "8c8f60840e5687c75144e3f4af056aeefbe446c887e00b0a1341f8205198d09c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/create-article-metadata-fields.json": {
-      "etag": "\"483e-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/create-article-metadata-fields.md",
       "hash": "b74ff1990423fe7cc1c8c749b79aa8767d818f8dc06c4460779e88c1b2dc7803"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/delete-articles-_articleid_.json": {
-      "etag": "\"446a-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/delete-articles-_articleid_.md",
       "hash": "81cb72c96244d27316b06a43931ddbe4cdd5d20f19d6eecc7cf8743707c390c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/error.json": {
-      "etag": "\"202f-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/error.md",
       "hash": "508096a790ac0093236f6d4809821065f8ed68de4dfb9bd8659b14593daed28f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/get-articles-_articleid_.json": {
-      "etag": "\"4cc2-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-articles-_articleid_.md",
       "hash": "4c50e63925fcb9711dc40cd910ae0a22cd16206f52e0278f1f82649b24125ff2"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/get-channels-_channelid_-articles.json": {
-      "etag": "\"5b51-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_-articles.md",
       "hash": "7ed16d47f51703d0b5dd01e6790795bb40f3e57870bf1f1110c8e71a3735e4fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/get-channels-_channelid_-quota.json": {
-      "etag": "\"332b-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_-quota.md",
       "hash": "a30f293678e40d684b4fc0f68060afaa40da1750e327998049075acef706e969"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/get-channels-_channelid_-sections.json": {
-      "etag": "\"3ba5-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_-sections.md",
       "hash": "def12ab410e217025369b706524289df688f857d530caa95c3f9f1a8e64e0bd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/get-channels-_channelid_.json": {
-      "etag": "\"3912-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-channels-_channelid_.md",
       "hash": "538fe8c933b064e704f0bec49dcaf3911d07b2fb60404061d3f9165759eace79"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/get-sections-_sectionid_-articles.json": {
-      "etag": "\"5bb3-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/get-sections-_sectionid_-articles.md",
       "hash": "3b10fd616bda4460009d13af1c82a48717c107a6d639ac1fdf77d2d1607e42f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/get-sections-_sectionid_.json": {
-      "etag": "\"33e7-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/get-sections-_sectionid_.md",
       "hash": "74e38e70afdee2f75aed20554dbd1f70070ad7050feb297663ea8209817d0b11"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/meta.json": {
-      "etag": "\"3202-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/meta.md",
       "hash": "48a6189fcf03ec020ff8c92fc45aa4d55a1be63e766c33d68f3c602d5088f400"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/post-articles-_articleid_.json": {
-      "etag": "\"a0b4-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/post-articles-_articleid_.md",
       "hash": "c44348baa2cccd3f0e19789d49a2d276f3359af2a804be06e611f75a05e3025a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/post-channels-_channelid_-articles.json": {
-      "etag": "\"bb8e-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/post-channels-_channelid_-articles.md",
       "hash": "31afdb01fead2562a0c3241a514fcd348abe5394d65cc238064435ef676a4362"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/post-sections-_sectionid_-promotedarticles.json": {
-      "etag": "\"3923-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/post-sections-_sectionid_-promotedarticles.md",
       "hash": "2549be698445fbbd6e02b5c2a998c846d2fb53b5e7d78939945c4d48a320374a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/promotearticlerequest.json": {
-      "etag": "\"1d67-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/promotearticlerequest.md",
       "hash": "672d6bdbc1002eef82a5af85b649139e0f8034b9fe62b3b992ea99bcc5e94b05"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/promotearticleresponse.json": {
-      "etag": "\"1d54-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/promotearticleresponse.md",
       "hash": "3873fbd2b2dee96b248e00dded837a2f2b8fff36430d25a1228fd940b43e56e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/searchresponse.json": {
-      "etag": "\"36f4-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/searchresponse.md",
       "hash": "111bcc7c911e18444a34ab8314c3b71fcbc8c30854a05d9f88643fa70a5248f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/searchresponse/links-data.dictionary.json": {
-      "etag": "\"1060-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/searchresponse/links-data.dictionary.md",
       "hash": "d5231caca4118967aecb394c43b995ae1b2d1e1e0c48d3cbc93c4ce03a152686"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/section.json": {
-      "etag": "\"22cd-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/section.md",
       "hash": "7319b8e027f5c87934ee5da8d59e1bea84854188b1803b8d00a9b93c831d9943"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/sectionlinks.json": {
-      "etag": "\"1e99-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/sectionlinks.md",
       "hash": "0e492fb622b535a0c348eaaffc7c0b63f54d3a6810d1861c7f5574ce0451c691"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/sectionresponse.json": {
-      "etag": "\"1d0b-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/sectionresponse.md",
       "hash": "4a1c9b82c40cda20f8b6ddf54891f744f8401da54f7e56e95704f4ba24c61d8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/status.json": {
-      "etag": "\"19ff-65d55a79a1cb2-df\"",
       "file_path": "documentation/AppleNewsAPI/status.md",
       "hash": "4954f90d986fa2c4220de53c5994711fe31f1bf522554a8d871cf135da1882a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/throttling.json": {
-      "etag": "\"32ee-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/throttling.md",
       "hash": "034a2478a8ee9c6ef1aba507bbb93d2e84a795f71d3cdd6e031f20bf68b09d7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/update-article-metadata-fields.json": {
-      "etag": "\"4e99-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/update-article-metadata-fields.md",
       "hash": "61ca33fcd84b7de7584a0fb88f95f5994e37626ead60fcd7e9e77d3296439825"
     },
     "https://developer.apple.com/tutorials/data/documentation/applenewsapi/warning.json": {
-      "etag": "\"169e-65d55a7991451-df\"",
       "file_path": "documentation/AppleNewsAPI/warning.md",
       "hash": "9053dbbd7996fbe0eac9719a7ff4fad09defc0c1fdda974399438b02060d1bac"
     }

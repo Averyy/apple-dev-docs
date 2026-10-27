@@ -1,392 +1,314 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/ScriptingBridge": {
-      "etag": "\"30ea-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/ScriptingBridge.md",
       "hash": "c5c8d33373e659222529aecca167180b743da4c8ce50d8986fecdde027730dff"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication": {
-      "etag": "\"89e1-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication.md",
       "hash": "06d49a0f83d2673bf428354b08b3a8ffe0dc8fb3c22847b9936c0c09f6fa3830"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/activate()": {
-      "etag": "\"3060-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/activate().md",
       "hash": "0412e4d1e489a6d2f6ae55d500e307de41035572be349484a86c4bcd03992214"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/applicationwithbundleidentifier:": {
-      "etag": "\"2b4f-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithbundleidentifier_.md",
       "hash": "d9e837ab3fcf59803b610c7a76a7abae623c2dabfdab3cd1dfd0fe5c9c5d51a3"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/applicationwithprocessidentifier:": {
-      "etag": "\"3209-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithprocessidentifier_.md",
       "hash": "dda0b7a146d7a2ed9d965c30248e85f041b1b7af8cae3ae56b1f64813e1f2008"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/applicationwithurl:": {
-      "etag": "\"2fa7-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithurl_.md",
       "hash": "9abd01c50dd8371e674a6e40a7105b6fa7be6108e622e24a7e8bfc9a09f756ed"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/class(forscriptingclass:)": {
-      "etag": "\"3588-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/class(forscriptingclass).md",
       "hash": "7ce5a85b4c4f965606d6a1b7f42bbc1d18f9bb2d48daf3f0bc31a4d58c50a162"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/delegate": {
-      "etag": "\"325d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/delegate.md",
       "hash": "d95f4aeb3ccf710a269eee7a876369e188384c03264c7f4bf383095afdb9306b"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/init(bundleidentifier:)": {
-      "etag": "\"4521-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(bundleidentifier).md",
       "hash": "96abd6d0475e461e1041e2a8905074edb5004baeb12e1b1c12425d351e566b78"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/init(processidentifier:)": {
-      "etag": "\"45db-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(processidentifier).md",
       "hash": "664460d5313417fbf6a1d86ad4e09b9f1da87bb95c04cf1c919f18b87e66ffee"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/init(url:)-2kr06": {
-      "etag": "\"1645-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(url)-2kr06.md",
       "hash": "ced49d898fd26c81522d22a3bfd454ed16b4bf1db5296942af0eec873b467070"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/init(url:)-4bno1": {
-      "etag": "\"163e-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(url)-4bno1.md",
       "hash": "e32d4608c4c04819fbc0a496ddf3aa820ce3a8cd1f3faac100c9306aee4931c6"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/init(url:)-6xbe5": {
-      "etag": "\"4695-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(url)-6xbe5.md",
       "hash": "bcffc59d26f0d716c59b3d74de6c2edaaa12d882bb080d1f62dbb37dd9a35c3b"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/isrunning": {
-      "etag": "\"3c2d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/isrunning.md",
       "hash": "858a2d34a289ad27ab4770d3c9fb6d9a884167de08cc2c951aaf5d3f235d1ea1"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/launchflags": {
-      "etag": "\"3670-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/launchflags.md",
       "hash": "d3a3a2131a168325faf5fc2c715b51f43544e0d9aeeae7a89a5c359b16560b25"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/sendmode": {
-      "etag": "\"3b23-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/sendmode.md",
       "hash": "36e9b6ead1e0851ec08ea6c80e646f4ea14ac0b280a3f252c7e5fd07550b44b3"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplication/timeout": {
-      "etag": "\"3feb-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/timeout.md",
       "hash": "578107e53f543367415236f0a705f8fed049146082d23b3f778ffbb6f754c452"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplicationdelegate": {
-      "etag": "\"3323-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplicationdelegate.md",
       "hash": "3b0f425657b59eb0002a46023b2713020db7fd3bb7372c37b7c54d52ebbb3e70"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbapplicationdelegate/eventdidfail(_:witherror:)": {
-      "etag": "\"573e-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplicationdelegate/eventdidfail(_,witherror).md",
       "hash": "3c6b126afabd4d71406c896cc576a0edeab59399db9993346d6cbf2a6b2b996d"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbelementarray": {
-      "etag": "\"894f-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray.md",
       "hash": "dea759c4cd921dc0e54e7f1fc9ffbe210e41434ce20d063b65f3f30615fd35fa"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbelementarray/array(byapplying:)": {
-      "etag": "\"39c7-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/array(byapplying).md",
       "hash": "eb7fd3291421954052097d24f46c4cb6a97e4fc15d884382727543622cb49a07"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbelementarray/array(byapplying:with:)": {
-      "etag": "\"3c8d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/array(byapplying,with).md",
       "hash": "c5a4614982ad9ae120ec56100405f19da42074e1cf5a26f2238cd1b003f3364b"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbelementarray/get()": {
-      "etag": "\"2658-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/get().md",
       "hash": "8ff94df2ed2a8f4d94c4ab5b8cb99ac0a27a2c8206d7c2aedffce430acfe10b2"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbelementarray/object(atlocation:)": {
-      "etag": "\"421d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object(atlocation).md",
       "hash": "f8a6e4e5df391cc1810826a03714a3a302177bb2dbd91a0c09ebebfc44afc2ea"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbelementarray/object(withid:)": {
-      "etag": "\"3e29-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object(withid).md",
       "hash": "09679ad3c1b21386e08c67a4c4f3883f6596590ae4f41f073c5bd9bfa59caeb9"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbelementarray/object(withname:)": {
-      "etag": "\"4377-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object(withname).md",
       "hash": "3055a2f7da22204b1223b98e5e3590d4e1e7c6909765a82bc9d79bf77e2ca702"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject": {
-      "etag": "\"8992-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject.md",
       "hash": "80a1ad4ec68b7cf5988b025af9fd61895f5b978b64ced63585c16c303213bcb2"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/elementarray(withcode:)": {
-      "etag": "\"460c-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/elementarray(withcode).md",
       "hash": "14b307cc1e855f0c968ef020315b74408b8e1ac7b9448f8c76fce938141a7f6d"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/get()": {
-      "etag": "\"21b2-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/get().md",
       "hash": "d2f1701ea34442e647517bcac2d9d2bed79ecca992e0934ad3144c905be65a20"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/init()": {
-      "etag": "\"3ad8-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init().md",
       "hash": "41d36301e1f12876001342e77290ff2ae760b2ad9367dfb00c2c0aadd4deafdc"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/init(coder:)": {
-      "etag": "\"155f-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(coder).md",
       "hash": "0c7288366dadc113d0459aba8de21a50cab1e71906612e145afe63a4825df247"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/init(data:)": {
-      "etag": "\"3fe4-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(data).md",
       "hash": "c002ef6c2607dfb040bc0f3714475cacc3161bcab506b8464d260313b82d94cb"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/init(elementcode:properties:data:)": {
-      "etag": "\"5261-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(elementcode,properties,data).md",
       "hash": "2e97077d09944c829d094a0c1a7e5f74da48d80178108ce8cf86424330ab2811"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/init(properties:)": {
-      "etag": "\"43c2-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(properties).md",
       "hash": "cf5f5d179989bec6869428b5235f566ac34e4bed534c94e4e39ad2ca0d8f86fe"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/lasterror()": {
-      "etag": "\"1c83-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/lasterror().md",
       "hash": "b806dc9190adda376630aef1b170970de928d9ab0617b54fde5527302b4e09ef"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/property(with:code:)": {
-      "etag": "\"42f0-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/property(with,code).md",
       "hash": "d7556fa4c7ff08b5f07876ad1b39a5e139f4ce82e4824d51b7bd17d53cb5bfc2"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/property(withcode:)": {
-      "etag": "\"3713-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/property(withcode).md",
       "hash": "419252607813b496143e280432569f7ad071c9e0507ae33440677c5717bc7a07"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/sendevent:id:parameters:": {
-      "etag": "\"2e39-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/sendevent_id_parameters_.md",
       "hash": "26f3ebfe5288155822995c887c59a236a3ab310631251c3e82932cf18f33eee3"
     },
     "https://developer.apple.com/documentation/scriptingbridge/sbobject/setto(_:)": {
-      "etag": "\"2e66-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/setto(_).md",
       "hash": "97f09bcaeaaba4fb3d1ae7461ea6d20874bf124b193b6322083353f503d72a70"
     },
     "https://developer.apple.com/tutorials/data/documentation/ScriptingBridge.json": {
-      "etag": "\"30ea-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/ScriptingBridge.md",
       "hash": "c5c8d33373e659222529aecca167180b743da4c8ce50d8986fecdde027730dff"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication.json": {
-      "etag": "\"89e1-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication.md",
       "hash": "06d49a0f83d2673bf428354b08b3a8ffe0dc8fb3c22847b9936c0c09f6fa3830"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/activate().json": {
-      "etag": "\"3060-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/activate().md",
       "hash": "0412e4d1e489a6d2f6ae55d500e307de41035572be349484a86c4bcd03992214"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/applicationwithbundleidentifier:.json": {
-      "etag": "\"2b4f-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithbundleidentifier_.md",
       "hash": "d9e837ab3fcf59803b610c7a76a7abae623c2dabfdab3cd1dfd0fe5c9c5d51a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/applicationwithprocessidentifier:.json": {
-      "etag": "\"3209-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithprocessidentifier_.md",
       "hash": "dda0b7a146d7a2ed9d965c30248e85f041b1b7af8cae3ae56b1f64813e1f2008"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/applicationwithurl:.json": {
-      "etag": "\"2fa7-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/applicationwithurl_.md",
       "hash": "9abd01c50dd8371e674a6e40a7105b6fa7be6108e622e24a7e8bfc9a09f756ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/class(forscriptingclass:).json": {
-      "etag": "\"3588-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/class(forscriptingclass).md",
       "hash": "7ce5a85b4c4f965606d6a1b7f42bbc1d18f9bb2d48daf3f0bc31a4d58c50a162"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/delegate.json": {
-      "etag": "\"325d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/delegate.md",
       "hash": "d95f4aeb3ccf710a269eee7a876369e188384c03264c7f4bf383095afdb9306b"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(bundleidentifier:).json": {
-      "etag": "\"4521-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(bundleidentifier).md",
       "hash": "96abd6d0475e461e1041e2a8905074edb5004baeb12e1b1c12425d351e566b78"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(processidentifier:).json": {
-      "etag": "\"45db-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(processidentifier).md",
       "hash": "664460d5313417fbf6a1d86ad4e09b9f1da87bb95c04cf1c919f18b87e66ffee"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(url:)-2kr06.json": {
-      "etag": "\"1645-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(url)-2kr06.md",
       "hash": "ced49d898fd26c81522d22a3bfd454ed16b4bf1db5296942af0eec873b467070"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(url:)-4bno1.json": {
-      "etag": "\"163e-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(url)-4bno1.md",
       "hash": "e32d4608c4c04819fbc0a496ddf3aa820ce3a8cd1f3faac100c9306aee4931c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/init(url:)-6xbe5.json": {
-      "etag": "\"4695-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/init(url)-6xbe5.md",
       "hash": "bcffc59d26f0d716c59b3d74de6c2edaaa12d882bb080d1f62dbb37dd9a35c3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/isrunning.json": {
-      "etag": "\"3c2d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/isrunning.md",
       "hash": "858a2d34a289ad27ab4770d3c9fb6d9a884167de08cc2c951aaf5d3f235d1ea1"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/launchflags.json": {
-      "etag": "\"3670-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/launchflags.md",
       "hash": "d3a3a2131a168325faf5fc2c715b51f43544e0d9aeeae7a89a5c359b16560b25"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/sendmode.json": {
-      "etag": "\"3b23-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/sendmode.md",
       "hash": "36e9b6ead1e0851ec08ea6c80e646f4ea14ac0b280a3f252c7e5fd07550b44b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplication/timeout.json": {
-      "etag": "\"3feb-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplication/timeout.md",
       "hash": "578107e53f543367415236f0a705f8fed049146082d23b3f778ffbb6f754c452"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplicationdelegate.json": {
-      "etag": "\"3323-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplicationdelegate.md",
       "hash": "3b0f425657b59eb0002a46023b2713020db7fd3bb7372c37b7c54d52ebbb3e70"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbapplicationdelegate/eventdidfail(_:witherror:).json": {
-      "etag": "\"573e-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbapplicationdelegate/eventdidfail(_,witherror).md",
       "hash": "3c6b126afabd4d71406c896cc576a0edeab59399db9993346d6cbf2a6b2b996d"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray.json": {
-      "etag": "\"894f-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray.md",
       "hash": "dea759c4cd921dc0e54e7f1fc9ffbe210e41434ce20d063b65f3f30615fd35fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/array(byapplying:).json": {
-      "etag": "\"39c7-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/array(byapplying).md",
       "hash": "eb7fd3291421954052097d24f46c4cb6a97e4fc15d884382727543622cb49a07"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/array(byapplying:with:).json": {
-      "etag": "\"3c8d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/array(byapplying,with).md",
       "hash": "c5a4614982ad9ae120ec56100405f19da42074e1cf5a26f2238cd1b003f3364b"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/get().json": {
-      "etag": "\"2658-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/get().md",
       "hash": "8ff94df2ed2a8f4d94c4ab5b8cb99ac0a27a2c8206d7c2aedffce430acfe10b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/object(atlocation:).json": {
-      "etag": "\"421d-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object(atlocation).md",
       "hash": "f8a6e4e5df391cc1810826a03714a3a302177bb2dbd91a0c09ebebfc44afc2ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/object(withid:).json": {
-      "etag": "\"3e29-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object(withid).md",
       "hash": "09679ad3c1b21386e08c67a4c4f3883f6596590ae4f41f073c5bd9bfa59caeb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbelementarray/object(withname:).json": {
-      "etag": "\"4377-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbelementarray/object(withname).md",
       "hash": "3055a2f7da22204b1223b98e5e3590d4e1e7c6909765a82bc9d79bf77e2ca702"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject.json": {
-      "etag": "\"8992-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject.md",
       "hash": "80a1ad4ec68b7cf5988b025af9fd61895f5b978b64ced63585c16c303213bcb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/elementarray(withcode:).json": {
-      "etag": "\"460c-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/elementarray(withcode).md",
       "hash": "14b307cc1e855f0c968ef020315b74408b8e1ac7b9448f8c76fce938141a7f6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/get().json": {
-      "etag": "\"21b2-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/get().md",
       "hash": "d2f1701ea34442e647517bcac2d9d2bed79ecca992e0934ad3144c905be65a20"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init().json": {
-      "etag": "\"3ad8-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init().md",
       "hash": "41d36301e1f12876001342e77290ff2ae760b2ad9367dfb00c2c0aadd4deafdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init(coder:).json": {
-      "etag": "\"155f-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(coder).md",
       "hash": "0c7288366dadc113d0459aba8de21a50cab1e71906612e145afe63a4825df247"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init(data:).json": {
-      "etag": "\"3fe4-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(data).md",
       "hash": "c002ef6c2607dfb040bc0f3714475cacc3161bcab506b8464d260313b82d94cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init(elementcode:properties:data:).json": {
-      "etag": "\"5261-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(elementcode,properties,data).md",
       "hash": "2e97077d09944c829d094a0c1a7e5f74da48d80178108ce8cf86424330ab2811"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/init(properties:).json": {
-      "etag": "\"43c2-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/init(properties).md",
       "hash": "cf5f5d179989bec6869428b5235f566ac34e4bed534c94e4e39ad2ca0d8f86fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/lasterror().json": {
-      "etag": "\"1c83-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/lasterror().md",
       "hash": "b806dc9190adda376630aef1b170970de928d9ab0617b54fde5527302b4e09ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/property(with:code:).json": {
-      "etag": "\"42f0-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/property(with,code).md",
       "hash": "d7556fa4c7ff08b5f07876ad1b39a5e139f4ce82e4824d51b7bd17d53cb5bfc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/property(withcode:).json": {
-      "etag": "\"3713-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/property(withcode).md",
       "hash": "419252607813b496143e280432569f7ad071c9e0507ae33440677c5717bc7a07"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/sendevent:id:parameters:.json": {
-      "etag": "\"2e39-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/sendevent_id_parameters_.md",
       "hash": "26f3ebfe5288155822995c887c59a236a3ab310631251c3e82932cf18f33eee3"
     },
     "https://developer.apple.com/tutorials/data/documentation/scriptingbridge/sbobject/setto(_:).json": {
-      "etag": "\"2e66-65d560cce1aaf-df\"",
       "file_path": "documentation/ScriptingBridge/sbobject/setto(_).md",
       "hash": "97f09bcaeaaba4fb3d1ae7461ea6d20874bf124b193b6322083353f503d72a70"
     }

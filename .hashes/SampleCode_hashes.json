@@ -1,12 +1,10 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/SampleCode": {
-      "etag": "\"70721-65e52969fd8b4-df\"",
       "file_path": "documentation/SampleCode/SampleCode.md",
       "hash": "981645241c89cdd07f60b79c48011809a161b6e5ddfe51909f410e015e9b0861"
     },
     "https://developer.apple.com/tutorials/data/documentation/SampleCode.json": {
-      "etag": "\"70721-65e52969fd8b4-df\"",
       "file_path": "documentation/SampleCode/SampleCode.md",
       "hash": "981645241c89cdd07f60b79c48011809a161b6e5ddfe51909f410e015e9b0861"
     }

@@ -1,132 +1,106 @@
 {
   "hashes": {
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation.json": {
-      "etag": "\"2fd3-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/SwiftJavaDocumentation.md",
       "hash": "8b06bf76016892c024f9c657f4c6279fe55130d2ee54d6c67f418243b3b2b2f8"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/android.json": {
-      "etag": "\"1b44-65af05725a640\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/android.md",
       "hash": "f549614c8f5436f0e42f18a811465a248e46420b3b246dc4275e0a4eb883d7fa"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/examplecommandlineprogram.json": {
-      "etag": "\"3770-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/examplecommandlineprogram.md",
       "hash": "0d6bed213dc4f195ebfba6ecc5c264131075c4978aabcde10be400519a24877e"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/featuresjavakitmacros.json": {
-      "etag": "\"a8b8-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/featuresjavakitmacros.md",
       "hash": "b3ee09ccef48618b2ebef65fa55bbad7fb3fe81775b1cce99f6b9c2d5d0578cf"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/featuresjextract.json": {
-      "etag": "\"179a1-65e3d3802fd80\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/featuresjextract.md",
       "hash": "2ddd27d737df036fb94d6d1d5a59f25da01851f200566ec37105b5a263012f4d"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/featuresoverview.json": {
-      "etag": "\"23f3-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/featuresoverview.md",
       "hash": "1fbd82b6483b3997d2c10a93460d505d5e30ff9c7219a4c3b1b0aba9b087b520"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/reducingbinarysize.json": {
-      "etag": "\"1b24-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/reducingbinarysize.md",
       "hash": "f1bbc152f4d39b591d5cddc7f46162d6390c5314ea2812a1889b2684d68db9c3"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftjavacommandlinetool.json": {
-      "etag": "\"383f-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavacommandlinetool.md",
       "hash": "4ca03fe72a9039ce5cd7324e0beb0d8f332237bc44de36f668c11194fc0a8a8f"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftjavaconfigfile.json": {
-      "etag": "\"aff4-65e3d3802fd80\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavaconfigfile.md",
       "hash": "c7207552a7786072dc998f68766e23e67650ac3fa3b4e22202003906435cfdde"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftjavajextract.json": {
-      "etag": "\"4244-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavajextract.md",
       "hash": "11d9233efa4b1fa20e2fa1e22ee44e9c71bab3add509c141ce4c4c3f3c59eaf0"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftjavaresolve.json": {
-      "etag": "\"266c-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavaresolve.md",
       "hash": "9bab9383ab526e964176345a80bd3ec43489dbb30c7ce450ef5467ee33f2dd12"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftjavawrapjava.json": {
-      "etag": "\"6f82-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavawrapjava.md",
       "hash": "352ef5a48c3a050acf8b8ffa1a888a084f53fd7ec764385737a12b54a80327b6"
     },
     "https://docs.swift.org/latest/data/documentation/swiftjavadocumentation/swiftpmplugin.json": {
-      "etag": "\"2468-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftpmplugin.md",
       "hash": "21bb91435f8e7389bb48f93cbb1678f2939d9d903464a087565b225be027f232"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation": {
-      "etag": "\"2fd3-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/SwiftJavaDocumentation.md",
       "hash": "8b06bf76016892c024f9c657f4c6279fe55130d2ee54d6c67f418243b3b2b2f8"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/android": {
-      "etag": "\"1b44-65af05725a640\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/android.md",
       "hash": "f549614c8f5436f0e42f18a811465a248e46420b3b246dc4275e0a4eb883d7fa"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/examplecommandlineprogram": {
-      "etag": "\"3770-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/examplecommandlineprogram.md",
       "hash": "0d6bed213dc4f195ebfba6ecc5c264131075c4978aabcde10be400519a24877e"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/featuresjavakitmacros": {
-      "etag": "\"a8b8-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/featuresjavakitmacros.md",
       "hash": "b3ee09ccef48618b2ebef65fa55bbad7fb3fe81775b1cce99f6b9c2d5d0578cf"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/featuresjextract": {
-      "etag": "\"179a1-65e3d3802fd80\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/featuresjextract.md",
       "hash": "2ddd27d737df036fb94d6d1d5a59f25da01851f200566ec37105b5a263012f4d"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/featuresoverview": {
-      "etag": "\"23f3-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/featuresoverview.md",
       "hash": "1fbd82b6483b3997d2c10a93460d505d5e30ff9c7219a4c3b1b0aba9b087b520"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/reducingbinarysize": {
-      "etag": "\"1b24-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/reducingbinarysize.md",
       "hash": "f1bbc152f4d39b591d5cddc7f46162d6390c5314ea2812a1889b2684d68db9c3"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftjavacommandlinetool": {
-      "etag": "\"383f-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavacommandlinetool.md",
       "hash": "4ca03fe72a9039ce5cd7324e0beb0d8f332237bc44de36f668c11194fc0a8a8f"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftjavaconfigfile": {
-      "etag": "\"aff4-65e3d3802fd80\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavaconfigfile.md",
       "hash": "c7207552a7786072dc998f68766e23e67650ac3fa3b4e22202003906435cfdde"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftjavajextract": {
-      "etag": "\"4244-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavajextract.md",
       "hash": "11d9233efa4b1fa20e2fa1e22ee44e9c71bab3add509c141ce4c4c3f3c59eaf0"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftjavaresolve": {
-      "etag": "\"266c-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavaresolve.md",
       "hash": "9bab9383ab526e964176345a80bd3ec43489dbb30c7ce450ef5467ee33f2dd12"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftjavawrapjava": {
-      "etag": "\"6f82-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftjavawrapjava.md",
       "hash": "352ef5a48c3a050acf8b8ffa1a888a084f53fd7ec764385737a12b54a80327b6"
     },
     "https://docs.swift.org/latest/documentation/swiftjavadocumentation/swiftpmplugin": {
-      "etag": "\"2468-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftJavaDocumentation/swiftpmplugin.md",
       "hash": "21bb91435f8e7389bb48f93cbb1678f2939d9d903464a087565b225be027f232"
     }

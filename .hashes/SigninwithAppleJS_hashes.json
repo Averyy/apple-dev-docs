@@ -1,272 +1,218 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/signinwithapplejs": {
-      "etag": "\"2ec4-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithAppleJS/SigninwithAppleJS.md",
       "hash": "bfd5033fd5faca28c7ca0a945534324da9dba5fbd576d3697ec27c7e17c3599b"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authi": {
-      "etag": "\"1856-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi.md",
       "hash": "50ee86a29c20f850520f87311c3a62cf218112352b6907ec7a43f23c0bab5ca0"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authi/init": {
-      "etag": "\"1795-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi/init.md",
       "hash": "015ac26578b19db39c18f3a900aac3280ff9d9130022041e5a213849046ef273"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authi/renderbutton": {
-      "etag": "\"d57-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi/renderbutton.md",
       "hash": "ef9bf8d3d300ba2bbeb24336c431ac59bad529255b35947aa1a7cdb4052e2ab7"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authi/signin": {
-      "etag": "\"1c11-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi/signin.md",
       "hash": "7d2b5069e7f88c939c635779e99c4ac2e572d131b3c43b0ac408c64ab91ab904"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authorizationi": {
-      "etag": "\"186f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi.md",
       "hash": "bc996797aa3d4a39090a1c339703242d20bf37ef6c3236b327176d82db944e7d"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authorizationi/code": {
-      "etag": "\"119f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi/code.md",
       "hash": "457c2d4b40c428e6577d93f6789a544d537447552097c356a19d898e73541d11"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authorizationi/id_token": {
-      "etag": "\"437c-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi/id_token.md",
       "hash": "3c3e9261c5c9a849493fac374a59efb2f6d0fb0a5926a87314dc006d61fbbef1"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/authorizationi/state": {
-      "etag": "\"10e1-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi/state.md",
       "hash": "9c0c5990c83f7a591e451f8a327ad1dc0a0f823323554219661378e47a80d33d"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi": {
-      "etag": "\"2141-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi.md",
       "hash": "5fc7dfb7994a34a25e992914bf409b197089f39298fd4b01af06fb8181bd359e"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/clientid": {
-      "etag": "\"180f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/clientid.md",
       "hash": "d9c2632ce7cf8a8fe7d3a93f6fcc13c8b294161ef1ad891833016ebdce16f888"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/nonce": {
-      "etag": "\"1816-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/nonce.md",
       "hash": "8a0becef5f3ab49ad16fa3d315035ed4b084304a541f637695cfd13d10bdb2dc"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/redirecturi": {
-      "etag": "\"1db5-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/redirecturi.md",
       "hash": "995e3bce045f116ffa66a6d7b783dd8ccbec5b21e1b7028148c9c2951387f583"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/scope": {
-      "etag": "\"1e23-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/scope.md",
       "hash": "e404067f1f5b26d5946a9be9626dfa23345811623ea27fd995024aafa8eed4b7"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/state": {
-      "etag": "\"18dd-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/state.md",
       "hash": "4b8a3237b7a3183841247f7181b3eee26be5c8ede4990d1fa89fda27aed93879"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/usepopup": {
-      "etag": "\"1711-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/usepopup.md",
       "hash": "22f66924972c8407b3ff253a0b0fd142f1c76cef687fb196ceb0e8f0e4d78efb"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/namei": {
-      "etag": "\"10b1-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/namei.md",
       "hash": "3dc272a4091c6a4f89ecee6fdefc3aa0da3dd5d3feca8a97065c2b29b050baec"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/namei/firstname": {
-      "etag": "\"10a0-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/namei/firstname.md",
       "hash": "ef013170dd369ad0f5086d057a7612729f8d04129f9000ac55eb7a58b0f35a7e"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/namei/lastname": {
-      "etag": "\"109b-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/namei/lastname.md",
       "hash": "e7910c5b2d5573cf4fb2d49f81c015887ba3a098bd68fa09bb10db90f72fbe0e"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/signinerrori": {
-      "etag": "\"1429-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinerrori.md",
       "hash": "29fc2420e5b7c610b9bbeb4b4505dde10f8b36eebee4dab7332f7ba197eb3935"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/signinerrori/error": {
-      "etag": "\"c10-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinerrori/error.md",
       "hash": "6a8e03cabe4a3fa8303a1c630501dc3b1341df4d2c7f160b853af41875e45cb4"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/signinresponsei": {
-      "etag": "\"168a-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinresponsei.md",
       "hash": "97a4a4617faf3e7b580868e42b55633a616284a96f078e63f5837cad714fad63"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/signinresponsei/authorization": {
-      "etag": "\"114f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinresponsei/authorization.md",
       "hash": "c9b1521ace375952f0a7dfa6b5f56929d68883958fe6bc0474f6dac4da82a6c8"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/signinresponsei/user": {
-      "etag": "\"10ec-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinresponsei/user.md",
       "hash": "c9e3d4dabeb43f171505b702c3185e658fbb32eba0b31388380e3cdc25ef676a"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/useri": {
-      "etag": "\"14cb-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/useri.md",
       "hash": "57414ce4e521c2cc55def1ab30488e956aa4b357b9aef0eb0539eaa6465e9364"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/useri/email": {
-      "etag": "\"1307-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/useri/email.md",
       "hash": "bfe945ba7a26a2b25a8ba558a6298552e2da4646b65f12fdd1846773c235eb34"
     },
     "https://developer.apple.com/documentation/signinwithapplejs/useri/name": {
-      "etag": "\"16c1-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/useri/name.md",
       "hash": "1fa2c99e79589f151b3f45a9aab51c360d5bbc02d7b47b3db40743ffdd57ffd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs.json": {
-      "etag": "\"2ec4-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithAppleJS/SigninwithAppleJS.md",
       "hash": "bfd5033fd5faca28c7ca0a945534324da9dba5fbd576d3697ec27c7e17c3599b"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authi.json": {
-      "etag": "\"1856-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi.md",
       "hash": "50ee86a29c20f850520f87311c3a62cf218112352b6907ec7a43f23c0bab5ca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authi/init.json": {
-      "etag": "\"1795-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi/init.md",
       "hash": "015ac26578b19db39c18f3a900aac3280ff9d9130022041e5a213849046ef273"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authi/renderbutton.json": {
-      "etag": "\"d57-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi/renderbutton.md",
       "hash": "ef9bf8d3d300ba2bbeb24336c431ac59bad529255b35947aa1a7cdb4052e2ab7"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authi/signin.json": {
-      "etag": "\"1c11-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authi/signin.md",
       "hash": "7d2b5069e7f88c939c635779e99c4ac2e572d131b3c43b0ac408c64ab91ab904"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authorizationi.json": {
-      "etag": "\"186f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi.md",
       "hash": "bc996797aa3d4a39090a1c339703242d20bf37ef6c3236b327176d82db944e7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authorizationi/code.json": {
-      "etag": "\"119f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi/code.md",
       "hash": "457c2d4b40c428e6577d93f6789a544d537447552097c356a19d898e73541d11"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authorizationi/id_token.json": {
-      "etag": "\"437c-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi/id_token.md",
       "hash": "3c3e9261c5c9a849493fac374a59efb2f6d0fb0a5926a87314dc006d61fbbef1"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/authorizationi/state.json": {
-      "etag": "\"10e1-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/authorizationi/state.md",
       "hash": "9c0c5990c83f7a591e451f8a327ad1dc0a0f823323554219661378e47a80d33d"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/clientconfigi.json": {
-      "etag": "\"2141-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi.md",
       "hash": "5fc7dfb7994a34a25e992914bf409b197089f39298fd4b01af06fb8181bd359e"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/clientconfigi/clientid.json": {
-      "etag": "\"180f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/clientid.md",
       "hash": "d9c2632ce7cf8a8fe7d3a93f6fcc13c8b294161ef1ad891833016ebdce16f888"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/clientconfigi/nonce.json": {
-      "etag": "\"1816-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/nonce.md",
       "hash": "8a0becef5f3ab49ad16fa3d315035ed4b084304a541f637695cfd13d10bdb2dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/clientconfigi/redirecturi.json": {
-      "etag": "\"1db5-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/redirecturi.md",
       "hash": "995e3bce045f116ffa66a6d7b783dd8ccbec5b21e1b7028148c9c2951387f583"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/clientconfigi/scope.json": {
-      "etag": "\"1e23-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/scope.md",
       "hash": "e404067f1f5b26d5946a9be9626dfa23345811623ea27fd995024aafa8eed4b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/clientconfigi/state.json": {
-      "etag": "\"18dd-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/state.md",
       "hash": "4b8a3237b7a3183841247f7181b3eee26be5c8ede4990d1fa89fda27aed93879"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/clientconfigi/usepopup.json": {
-      "etag": "\"1711-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/clientconfigi/usepopup.md",
       "hash": "22f66924972c8407b3ff253a0b0fd142f1c76cef687fb196ceb0e8f0e4d78efb"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/namei.json": {
-      "etag": "\"10b1-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/namei.md",
       "hash": "3dc272a4091c6a4f89ecee6fdefc3aa0da3dd5d3feca8a97065c2b29b050baec"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/namei/firstname.json": {
-      "etag": "\"10a0-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/namei/firstname.md",
       "hash": "ef013170dd369ad0f5086d057a7612729f8d04129f9000ac55eb7a58b0f35a7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/namei/lastname.json": {
-      "etag": "\"109b-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/namei/lastname.md",
       "hash": "e7910c5b2d5573cf4fb2d49f81c015887ba3a098bd68fa09bb10db90f72fbe0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/signinerrori.json": {
-      "etag": "\"1429-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinerrori.md",
       "hash": "29fc2420e5b7c610b9bbeb4b4505dde10f8b36eebee4dab7332f7ba197eb3935"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/signinerrori/error.json": {
-      "etag": "\"c10-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinerrori/error.md",
       "hash": "6a8e03cabe4a3fa8303a1c630501dc3b1341df4d2c7f160b853af41875e45cb4"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/signinresponsei.json": {
-      "etag": "\"168a-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinresponsei.md",
       "hash": "97a4a4617faf3e7b580868e42b55633a616284a96f078e63f5837cad714fad63"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/signinresponsei/authorization.json": {
-      "etag": "\"114f-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinresponsei/authorization.md",
       "hash": "c9b1521ace375952f0a7dfa6b5f56929d68883958fe6bc0474f6dac4da82a6c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/signinresponsei/user.json": {
-      "etag": "\"10ec-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/signinresponsei/user.md",
       "hash": "c9e3d4dabeb43f171505b702c3185e658fbb32eba0b31388380e3cdc25ef676a"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/useri.json": {
-      "etag": "\"14cb-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/useri.md",
       "hash": "57414ce4e521c2cc55def1ab30488e956aa4b357b9aef0eb0539eaa6465e9364"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/useri/email.json": {
-      "etag": "\"1307-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/useri/email.md",
       "hash": "bfe945ba7a26a2b25a8ba558a6298552e2da4646b65f12fdd1846773c235eb34"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapplejs/useri/name.json": {
-      "etag": "\"16c1-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithAppleJS/useri/name.md",
       "hash": "1fa2c99e79589f151b3f45a9aab51c360d5bbc02d7b47b3db40743ffdd57ffd6"
     }

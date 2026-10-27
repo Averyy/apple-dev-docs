@@ -1,642 +1,514 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/BackgroundTasks": {
-      "etag": "\"67f1-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/BackgroundTasks.md",
       "hash": "cc339de7a9ca8a13e2a3778831ef4095dfb3be67b716ef5379164adfdb0ae930"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bg_extern": {
-      "etag": "\"a46-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bg_extern.md",
       "hash": "2744657e56a78be5fbb164881ae5a1a1f7ce280c7886632b729bd7ef1686f118"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgapprefreshtask": {
-      "etag": "\"4d78-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtask.md",
       "hash": "5b6656eb1dc62870543b153c05292ca9ac0bbd7830dcad0b1c57cf38d83e763f"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgapprefreshtaskrequest": {
-      "etag": "\"4e8f-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtaskrequest.md",
       "hash": "d710d7739010fe702610279a6c6db4939e418c96b385e1240041fc23aee9ee16"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgapprefreshtaskrequest/init(identifier:)": {
-      "etag": "\"2440-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtaskrequest/init(identifier).md",
       "hash": "97d7f50b3c0acdb02100308a3633cde0ce3c4cb6eee2e9d68ffa8d1142787710"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtask": {
-      "etag": "\"5b3d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask.md",
       "hash": "9d62c542bb51e65d659631bd0d425d0f345d90d4827f28ba20c31b086f84d483"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtask/subtitle": {
-      "etag": "\"36fc-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/subtitle.md",
       "hash": "041e810ed4168d5f5f9f70cee3e8e0c3e1efdb2035b906e80ee0a4cc5c75aa54"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtask/title": {
-      "etag": "\"36db-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/title.md",
       "hash": "286dd37e83d3743ebfa413edf540608cb6e0a1dce1e5ae150e030ea119c2f301"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtask/updatetitle(_:subtitle:)": {
-      "etag": "\"34f3-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/updatetitle(_,subtitle).md",
       "hash": "d2c5fe25ad7d47082bdaad7e80c7993542a7c7210606fe99bdea915f3c969055"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest": {
-      "etag": "\"7cfb-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest.md",
       "hash": "ebed05e57d22f45055aa165a31d1b79b39263200d73a07f0f8a7a2942360e456"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/init(identifier:title:subtitle:)": {
-      "etag": "\"397a-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/init(identifier,title,subtitle).md",
       "hash": "5ae5c9a9cb7d6766f11a0489ccefccdfdd9deeccc5d9a20c80bd2caa1c011c10"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/requiredresources": {
-      "etag": "\"40a4-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/requiredresources.md",
       "hash": "b7e1216cac8a6388694f26d72308e746b1b06b7221e3fb197e3732094b7082f1"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources": {
-      "etag": "\"565c-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources.md",
       "hash": "fbe69e3a0b193390e7a1488cca6f42fe0cddf4933850a4bf0eee739edf209833"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources/gpu": {
-      "etag": "\"3947-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources/gpu.md",
       "hash": "672060fb71a9c0a117c71d640e2749575580899be488ae4fcfc993359a7b1a65"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources/init(rawvalue:)": {
-      "etag": "\"1be3-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources/init(rawvalue).md",
       "hash": "dcc5a7b0ad77c1cef951377c69b130eeb592a5e7d60c04638a67071518981d18"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/strategy": {
-      "etag": "\"34d3-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/strategy.md",
       "hash": "20f9481100cf820cb15baf59dc249ad64fb9fcbf5dcb28f55af01d41aebdcb39"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy": {
-      "etag": "\"4de4-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy.md",
       "hash": "ba3be1d005b4e803076bba62ad53a8b9bbfc0a2b54523ea4fad392004e691676"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/fail": {
-      "etag": "\"3031-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/fail.md",
       "hash": "1f292abcec23373f36e53e9e2c391f440112b14ae4be52d1350f7c1d84b22432"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/init(rawvalue:)": {
-      "etag": "\"1c47-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/init(rawvalue).md",
       "hash": "ae385d3958040cb145ef3854ed42392d020eaed68d472a863cb19cfa670337c5"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/queue": {
-      "etag": "\"3238-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/queue.md",
       "hash": "0a929282be7124868ef2c71cfc2306444837fc4116bede72ac35f73a480502b5"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/subtitle": {
-      "etag": "\"3025-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/subtitle.md",
       "hash": "a54ab45de64da726e14848f0e72eaaabd465773e875c3a97a313edd0f8ace623"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/title": {
-      "etag": "\"300c-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/title.md",
       "hash": "a338dc90232e09e5c0aaa9b9f0a4f1ec7a2c2ac0c9fa4e1dc1363398005e464f"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtaskrequestresources/bgcontinuedprocessingtaskrequestresourcesdefault": {
-      "etag": "\"1bb8-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequestresources/bgcontinuedprocessingtaskrequestresourcesdefault.md",
       "hash": "6ccbc870d90fc73f1fa6f6d8e92ba3e4fd8db8490351c6d58d8bc35046637f9b"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bghealthresearchtask": {
-      "etag": "\"3f71-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtask.md",
       "hash": "730a55791155c4d8119ac2be38d43871ba9441c5e9c1172f64a0cfa4060c2d98"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bghealthresearchtaskrequest": {
-      "etag": "\"4f5e-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtaskrequest.md",
       "hash": "6f33c04f3e088ce5ea66b3e3dd1261e0810535eba37d92d29379b43a391a4a53"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bghealthresearchtaskrequest/protectiontypeofrequireddata": {
-      "etag": "\"21f6-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtaskrequest/protectiontypeofrequireddata.md",
       "hash": "edba4c285e7a2556da12796548b19b2f5c00b1530fede64da20d6920497040ec"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgprocessingtask": {
-      "etag": "\"5555-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtask.md",
       "hash": "96b2f945bfce945f5b1df135e6177250a31f320722f1491673778a439d4ebf15"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgprocessingtaskrequest": {
-      "etag": "\"5a0b-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest.md",
       "hash": "f15c11e1188fe657ef8c981953a4ff5da5dd5e9b24f7782d190ea1ab9b17ea29"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgprocessingtaskrequest/init(identifier:)": {
-      "etag": "\"246b-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/init(identifier).md",
       "hash": "47d3bad0fa4628082ccbdaf421d6bc63280353f545ccd7baabe300a454617abb"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgprocessingtaskrequest/requiresexternalpower": {
-      "etag": "\"26e9-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/requiresexternalpower.md",
       "hash": "1d9d28ddb78a29655208e21b497d3f30d2aa06840df71eaf2ad95c0e79f28f0a"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgprocessingtaskrequest/requiresnetworkconnectivity": {
-      "etag": "\"2718-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/requiresnetworkconnectivity.md",
       "hash": "7313a0c0eff47e3b4a029a845e9003d4cc0827e78eb26e4101b78dbdd8866f7b"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtask": {
-      "etag": "\"5e0d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask.md",
       "hash": "e5f2f490620078352f3c1caabadcc9c399e1ff1e1f222923bfc5e8f2d0371959"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtask/expirationhandler": {
-      "etag": "\"3011-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/expirationhandler.md",
       "hash": "3e115a7998a077a139b3f2785bb77bd90e862532bc59d10cd8c46b1de2bd2f4c"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtask/identifier": {
-      "etag": "\"2a21-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/identifier.md",
       "hash": "cf094c959a6e615077aa0137bfedad17ff141af56653181a9c9165a8480c88ff"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtask/settaskcompleted(success:)": {
-      "etag": "\"2dae-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/settaskcompleted(success).md",
       "hash": "b42e966b5045eee7662cc00e59cfda80504fec4d742459ed4baf78eca95f75f6"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskrequest": {
-      "etag": "\"5681-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest.md",
       "hash": "7aa8c996e6bb7895d8c328d617928b5a91aa135d81d7215d238084bb684eb8ae"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskrequest/earliestbegindate": {
-      "etag": "\"268b-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest/earliestbegindate.md",
       "hash": "41be4cd68908e7941b8da97e235dc7cbf11504673d7b90ade9b7bd52da35f529"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskrequest/identifier": {
-      "etag": "\"26b9-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest/identifier.md",
       "hash": "58b440f70d1e65d45babb6554bb02310cba3ccdf178bef542e057f85ba1676b0"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler": {
-      "etag": "\"8884-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler.md",
       "hash": "6e6801467c20e82ee33dc5a0e68ce57a77a55bb75451a34174c150f0ec4f7ec0"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/cancel(taskrequestwithidentifier:)": {
-      "etag": "\"2bd8-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/cancel(taskrequestwithidentifier).md",
       "hash": "c737d2ae2d5e60a588a0d25e7c1035d9ef6f008e9013b2539c4f67000a034719"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/cancelalltaskrequests()": {
-      "etag": "\"222a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/cancelalltaskrequests().md",
       "hash": "dbee24e66eed5824fa51185cf44e8976473e4a92866b12a3f066cbc057622a7b"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error": {
-      "etag": "\"4312-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error.md",
       "hash": "7f37a00e4422826f2609d113164cdc38e8c46ad494d8ab7f406cb4871d1b0048"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/code": {
-      "etag": "\"4eec-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code.md",
       "hash": "1d285c0895aa4489d306dea4150d763b58a3583edbc73617c02e963e395e06b6"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/code/immediaterunineligible": {
-      "etag": "\"49c7-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/immediaterunineligible.md",
       "hash": "8cee75ee61812ad89375ca9bbb632d0277addad5616c1fd769c01054a377c669"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/code/init(rawvalue:)": {
-      "etag": "\"1c6a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/init(rawvalue).md",
       "hash": "183ac28b8c96873232b41981449991363976a881a6865665ee1038f61d1ab2fc"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/code/notpermitted": {
-      "etag": "\"416c-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/notpermitted.md",
       "hash": "2034e721e129e81194faf28dc8b952ebb3724d4711593a33e58e0c4d92c99c23"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/code/toomanypendingtaskrequests": {
-      "etag": "\"3687-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/toomanypendingtaskrequests.md",
       "hash": "45354e876c759a9efbc83ec508643068b0e9d1725418d3ca279b7097ad079cdb"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/code/unavailable": {
-      "etag": "\"3f90-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/unavailable.md",
       "hash": "1dc1c22041481f2fe2c36a8ab1b26f619d73896aadd6141aad0ab5e4e54638c6"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/errordomain": {
-      "etag": "\"18a2-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/errordomain.md",
       "hash": "08e1363e42467df072e439e6feb78edda8be8bea456114267860426f5f8738bd"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/immediaterunineligible": {
-      "etag": "\"1f60-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/immediaterunineligible.md",
       "hash": "24193858b346aa205bed607057708776cd368ef873f18b323e920224094a00a9"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/notpermitted": {
-      "etag": "\"366f-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/notpermitted.md",
       "hash": "a4145d8b7eba7657ae922b83352a27298a2df79f0b545388b87828bec4dbb44d"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/toomanypendingtaskrequests": {
-      "etag": "\"2b52-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/toomanypendingtaskrequests.md",
       "hash": "9b75ce28232b07e3c3b51660a73200a5735cd06b7165e3ce2a63c0654d689c13"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/error/unavailable": {
-      "etag": "\"3497-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/unavailable.md",
       "hash": "8b6224d38deecce3e04c00c78e850000a5d2d09f71c582ab1ec5873e86e1eeae"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/errordomain": {
-      "etag": "\"272f-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/errordomain.md",
       "hash": "f096fb3dae27f8a5b2080218d663a245b0e2a0becc4efb9407c177bdaa100f25"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/getpendingtaskrequests(completionhandler:)": {
-      "etag": "\"3e2d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/getpendingtaskrequests(completionhandler).md",
       "hash": "54cddf9bc8c185f37211c1117e1a54e7b2ec254711c775faa9707599bb6594c3"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/register(fortaskwithidentifier:using:launchhandler:)": {
-      "etag": "\"6491-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/register(fortaskwithidentifier,using,launchhandler).md",
       "hash": "eefd2b9ef80ff082c566ba2273e55440ba7755bf27dc37889704a1d91a476f86"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/shared": {
-      "etag": "\"1d74-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/shared.md",
       "hash": "1f7fd00b1434030e617a710c6a8f1e6d5b8da08e8413a406ac47327591164f36"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/submit(_:)": {
-      "etag": "\"49be-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/submit(_).md",
       "hash": "877360cea4048abbf86f3d573aefcc96ceeb4b895be29bd41a4568ee6f1a2a8a"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/submittaskrequest(_:completionhandler:)": {
-      "etag": "\"5c25-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/submittaskrequest(_,completionhandler).md",
       "hash": "98c2546883cca67d3b87fce962dd3d8767afd8a30fc2d9b537a78e20575f1413"
     },
     "https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler/supportedresources": {
-      "etag": "\"3a5a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/supportedresources.md",
       "hash": "3e16a11b3a967a817dc70810d204db4ba8ca6579ac2d14f90172bfa17de63c76"
     },
     "https://developer.apple.com/documentation/backgroundtasks/choosing-background-strategies-for-your-app": {
-      "etag": "\"81f1-65902970fdddd-df\"",
       "file_path": "documentation/BackgroundTasks/choosing-background-strategies-for-your-app.md",
       "hash": "870b454da9340d00d337598c014f6609a2140d27b636b1bd1a6473dc1745f942"
     },
     "https://developer.apple.com/documentation/backgroundtasks/performing-long-running-tasks-on-ios-and-ipados": {
-      "etag": "\"9fae-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/performing-long-running-tasks-on-ios-and-ipados.md",
       "hash": "0c32a078971e43f0a0016b9f3f1adaf25e4edf404a245138a5f63e494bf5442e"
     },
     "https://developer.apple.com/documentation/backgroundtasks/refreshing-and-maintaining-your-app-using-background-tasks": {
-      "etag": "\"2658-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks.md",
       "hash": "a6a87b09d28a05be4df757466d9c2602f26bae9b4ecdab707c53326da004ee48"
     },
     "https://developer.apple.com/documentation/backgroundtasks/starting-and-terminating-tasks-during-development": {
-      "etag": "\"1b48-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/starting-and-terminating-tasks-during-development.md",
       "hash": "91be7b24802a836eef631e6b3242768b42eeea4b195b4434afec0d43101eaaa8"
     },
     "https://developer.apple.com/tutorials/data/documentation/BackgroundTasks.json": {
-      "etag": "\"67f1-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/BackgroundTasks.md",
       "hash": "cc339de7a9ca8a13e2a3778831ef4095dfb3be67b716ef5379164adfdb0ae930"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bg_extern.json": {
-      "etag": "\"a46-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bg_extern.md",
       "hash": "2744657e56a78be5fbb164881ae5a1a1f7ce280c7886632b729bd7ef1686f118"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgapprefreshtask.json": {
-      "etag": "\"4d78-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtask.md",
       "hash": "5b6656eb1dc62870543b153c05292ca9ac0bbd7830dcad0b1c57cf38d83e763f"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgapprefreshtaskrequest.json": {
-      "etag": "\"4e8f-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtaskrequest.md",
       "hash": "d710d7739010fe702610279a6c6db4939e418c96b385e1240041fc23aee9ee16"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgapprefreshtaskrequest/init(identifier:).json": {
-      "etag": "\"2440-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtaskrequest/init(identifier).md",
       "hash": "97d7f50b3c0acdb02100308a3633cde0ce3c4cb6eee2e9d68ffa8d1142787710"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask.json": {
-      "etag": "\"5b3d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask.md",
       "hash": "9d62c542bb51e65d659631bd0d425d0f345d90d4827f28ba20c31b086f84d483"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask/subtitle.json": {
-      "etag": "\"36fc-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/subtitle.md",
       "hash": "041e810ed4168d5f5f9f70cee3e8e0c3e1efdb2035b906e80ee0a4cc5c75aa54"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask/title.json": {
-      "etag": "\"36db-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/title.md",
       "hash": "286dd37e83d3743ebfa413edf540608cb6e0a1dce1e5ae150e030ea119c2f301"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask/updatetitle(_:subtitle:).json": {
-      "etag": "\"34f3-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/updatetitle(_,subtitle).md",
       "hash": "d2c5fe25ad7d47082bdaad7e80c7993542a7c7210606fe99bdea915f3c969055"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest.json": {
-      "etag": "\"7cfb-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest.md",
       "hash": "ebed05e57d22f45055aa165a31d1b79b39263200d73a07f0f8a7a2942360e456"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/init(identifier:title:subtitle:).json": {
-      "etag": "\"397a-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/init(identifier,title,subtitle).md",
       "hash": "5ae5c9a9cb7d6766f11a0489ccefccdfdd9deeccc5d9a20c80bd2caa1c011c10"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/requiredresources.json": {
-      "etag": "\"40a4-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/requiredresources.md",
       "hash": "b7e1216cac8a6388694f26d72308e746b1b06b7221e3fb197e3732094b7082f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources.json": {
-      "etag": "\"565c-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources.md",
       "hash": "fbe69e3a0b193390e7a1488cca6f42fe0cddf4933850a4bf0eee739edf209833"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources/gpu.json": {
-      "etag": "\"3947-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources/gpu.md",
       "hash": "672060fb71a9c0a117c71d640e2749575580899be488ae4fcfc993359a7b1a65"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources/init(rawvalue:).json": {
-      "etag": "\"1be3-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources/init(rawvalue).md",
       "hash": "dcc5a7b0ad77c1cef951377c69b130eeb592a5e7d60c04638a67071518981d18"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/strategy.json": {
-      "etag": "\"34d3-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/strategy.md",
       "hash": "20f9481100cf820cb15baf59dc249ad64fb9fcbf5dcb28f55af01d41aebdcb39"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy.json": {
-      "etag": "\"4de4-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy.md",
       "hash": "ba3be1d005b4e803076bba62ad53a8b9bbfc0a2b54523ea4fad392004e691676"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/fail.json": {
-      "etag": "\"3031-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/fail.md",
       "hash": "1f292abcec23373f36e53e9e2c391f440112b14ae4be52d1350f7c1d84b22432"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/init(rawvalue:).json": {
-      "etag": "\"1c47-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/init(rawvalue).md",
       "hash": "ae385d3958040cb145ef3854ed42392d020eaed68d472a863cb19cfa670337c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/queue.json": {
-      "etag": "\"3238-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/queue.md",
       "hash": "0a929282be7124868ef2c71cfc2306444837fc4116bede72ac35f73a480502b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/subtitle.json": {
-      "etag": "\"3025-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/subtitle.md",
       "hash": "a54ab45de64da726e14848f0e72eaaabd465773e875c3a97a313edd0f8ace623"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/title.json": {
-      "etag": "\"300c-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/title.md",
       "hash": "a338dc90232e09e5c0aaa9b9f0a4f1ec7a2c2ac0c9fa4e1dc1363398005e464f"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequestresources/bgcontinuedprocessingtaskrequestresourcesdefault.json": {
-      "etag": "\"1bb8-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequestresources/bgcontinuedprocessingtaskrequestresourcesdefault.md",
       "hash": "6ccbc870d90fc73f1fa6f6d8e92ba3e4fd8db8490351c6d58d8bc35046637f9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bghealthresearchtask.json": {
-      "etag": "\"3f71-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtask.md",
       "hash": "730a55791155c4d8119ac2be38d43871ba9441c5e9c1172f64a0cfa4060c2d98"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bghealthresearchtaskrequest.json": {
-      "etag": "\"4f5e-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtaskrequest.md",
       "hash": "6f33c04f3e088ce5ea66b3e3dd1261e0810535eba37d92d29379b43a391a4a53"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bghealthresearchtaskrequest/protectiontypeofrequireddata.json": {
-      "etag": "\"21f6-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtaskrequest/protectiontypeofrequireddata.md",
       "hash": "edba4c285e7a2556da12796548b19b2f5c00b1530fede64da20d6920497040ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtask.json": {
-      "etag": "\"5555-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtask.md",
       "hash": "96b2f945bfce945f5b1df135e6177250a31f320722f1491673778a439d4ebf15"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest.json": {
-      "etag": "\"5a0b-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest.md",
       "hash": "f15c11e1188fe657ef8c981953a4ff5da5dd5e9b24f7782d190ea1ab9b17ea29"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest/init(identifier:).json": {
-      "etag": "\"246b-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/init(identifier).md",
       "hash": "47d3bad0fa4628082ccbdaf421d6bc63280353f545ccd7baabe300a454617abb"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest/requiresexternalpower.json": {
-      "etag": "\"26e9-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/requiresexternalpower.md",
       "hash": "1d9d28ddb78a29655208e21b497d3f30d2aa06840df71eaf2ad95c0e79f28f0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest/requiresnetworkconnectivity.json": {
-      "etag": "\"2718-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/requiresnetworkconnectivity.md",
       "hash": "7313a0c0eff47e3b4a029a845e9003d4cc0827e78eb26e4101b78dbdd8866f7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask.json": {
-      "etag": "\"5e0d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask.md",
       "hash": "e5f2f490620078352f3c1caabadcc9c399e1ff1e1f222923bfc5e8f2d0371959"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask/expirationhandler.json": {
-      "etag": "\"3011-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/expirationhandler.md",
       "hash": "3e115a7998a077a139b3f2785bb77bd90e862532bc59d10cd8c46b1de2bd2f4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask/identifier.json": {
-      "etag": "\"2a21-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/identifier.md",
       "hash": "cf094c959a6e615077aa0137bfedad17ff141af56653181a9c9165a8480c88ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask/settaskcompleted(success:).json": {
-      "etag": "\"2dae-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/settaskcompleted(success).md",
       "hash": "b42e966b5045eee7662cc00e59cfda80504fec4d742459ed4baf78eca95f75f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskrequest.json": {
-      "etag": "\"5681-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest.md",
       "hash": "7aa8c996e6bb7895d8c328d617928b5a91aa135d81d7215d238084bb684eb8ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskrequest/earliestbegindate.json": {
-      "etag": "\"268b-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest/earliestbegindate.md",
       "hash": "41be4cd68908e7941b8da97e235dc7cbf11504673d7b90ade9b7bd52da35f529"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskrequest/identifier.json": {
-      "etag": "\"26b9-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest/identifier.md",
       "hash": "58b440f70d1e65d45babb6554bb02310cba3ccdf178bef542e057f85ba1676b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler.json": {
-      "etag": "\"8884-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler.md",
       "hash": "6e6801467c20e82ee33dc5a0e68ce57a77a55bb75451a34174c150f0ec4f7ec0"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/cancel(taskrequestwithidentifier:).json": {
-      "etag": "\"2bd8-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/cancel(taskrequestwithidentifier).md",
       "hash": "c737d2ae2d5e60a588a0d25e7c1035d9ef6f008e9013b2539c4f67000a034719"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/cancelalltaskrequests().json": {
-      "etag": "\"222a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/cancelalltaskrequests().md",
       "hash": "dbee24e66eed5824fa51185cf44e8976473e4a92866b12a3f066cbc057622a7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error.json": {
-      "etag": "\"4312-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error.md",
       "hash": "7f37a00e4422826f2609d113164cdc38e8c46ad494d8ab7f406cb4871d1b0048"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code.json": {
-      "etag": "\"4eec-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code.md",
       "hash": "1d285c0895aa4489d306dea4150d763b58a3583edbc73617c02e963e395e06b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/immediaterunineligible.json": {
-      "etag": "\"49c7-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/immediaterunineligible.md",
       "hash": "8cee75ee61812ad89375ca9bbb632d0277addad5616c1fd769c01054a377c669"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/init(rawvalue:).json": {
-      "etag": "\"1c6a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/init(rawvalue).md",
       "hash": "183ac28b8c96873232b41981449991363976a881a6865665ee1038f61d1ab2fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/notpermitted.json": {
-      "etag": "\"416c-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/notpermitted.md",
       "hash": "2034e721e129e81194faf28dc8b952ebb3724d4711593a33e58e0c4d92c99c23"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/toomanypendingtaskrequests.json": {
-      "etag": "\"3687-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/toomanypendingtaskrequests.md",
       "hash": "45354e876c759a9efbc83ec508643068b0e9d1725418d3ca279b7097ad079cdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/unavailable.json": {
-      "etag": "\"3f90-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/unavailable.md",
       "hash": "1dc1c22041481f2fe2c36a8ab1b26f619d73896aadd6141aad0ab5e4e54638c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/errordomain.json": {
-      "etag": "\"18a2-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/errordomain.md",
       "hash": "08e1363e42467df072e439e6feb78edda8be8bea456114267860426f5f8738bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/immediaterunineligible.json": {
-      "etag": "\"1f60-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/immediaterunineligible.md",
       "hash": "24193858b346aa205bed607057708776cd368ef873f18b323e920224094a00a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/notpermitted.json": {
-      "etag": "\"366f-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/notpermitted.md",
       "hash": "a4145d8b7eba7657ae922b83352a27298a2df79f0b545388b87828bec4dbb44d"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/toomanypendingtaskrequests.json": {
-      "etag": "\"2b52-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/toomanypendingtaskrequests.md",
       "hash": "9b75ce28232b07e3c3b51660a73200a5735cd06b7165e3ce2a63c0654d689c13"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/unavailable.json": {
-      "etag": "\"3497-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/unavailable.md",
       "hash": "8b6224d38deecce3e04c00c78e850000a5d2d09f71c582ab1ec5873e86e1eeae"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/errordomain.json": {
-      "etag": "\"272f-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/errordomain.md",
       "hash": "f096fb3dae27f8a5b2080218d663a245b0e2a0becc4efb9407c177bdaa100f25"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/getpendingtaskrequests(completionhandler:).json": {
-      "etag": "\"3e2d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/getpendingtaskrequests(completionhandler).md",
       "hash": "54cddf9bc8c185f37211c1117e1a54e7b2ec254711c775faa9707599bb6594c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/register(fortaskwithidentifier:using:launchhandler:).json": {
-      "etag": "\"6491-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/register(fortaskwithidentifier,using,launchhandler).md",
       "hash": "eefd2b9ef80ff082c566ba2273e55440ba7755bf27dc37889704a1d91a476f86"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/shared.json": {
-      "etag": "\"1d74-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/shared.md",
       "hash": "1f7fd00b1434030e617a710c6a8f1e6d5b8da08e8413a406ac47327591164f36"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/submit(_:).json": {
-      "etag": "\"49be-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/submit(_).md",
       "hash": "877360cea4048abbf86f3d573aefcc96ceeb4b895be29bd41a4568ee6f1a2a8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/submittaskrequest(_:completionhandler:).json": {
-      "etag": "\"5c25-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/submittaskrequest(_,completionhandler).md",
       "hash": "98c2546883cca67d3b87fce962dd3d8767afd8a30fc2d9b537a78e20575f1413"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/supportedresources.json": {
-      "etag": "\"3a5a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/supportedresources.md",
       "hash": "3e16a11b3a967a817dc70810d204db4ba8ca6579ac2d14f90172bfa17de63c76"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/choosing-background-strategies-for-your-app.json": {
-      "etag": "\"81f1-65902970fdddd-df\"",
       "file_path": "documentation/BackgroundTasks/choosing-background-strategies-for-your-app.md",
       "hash": "870b454da9340d00d337598c014f6609a2140d27b636b1bd1a6473dc1745f942"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/performing-long-running-tasks-on-ios-and-ipados.json": {
-      "etag": "\"9fae-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/performing-long-running-tasks-on-ios-and-ipados.md",
       "hash": "0c32a078971e43f0a0016b9f3f1adaf25e4edf404a245138a5f63e494bf5442e"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/refreshing-and-maintaining-your-app-using-background-tasks.json": {
-      "etag": "\"2658-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks.md",
       "hash": "a6a87b09d28a05be4df757466d9c2602f26bae9b4ecdab707c53326da004ee48"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/starting-and-terminating-tasks-during-development.json": {
-      "etag": "\"1b48-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/starting-and-terminating-tasks-during-development.md",
       "hash": "91be7b24802a836eef631e6b3242768b42eeea4b195b4434afec0d43101eaaa8"
     }

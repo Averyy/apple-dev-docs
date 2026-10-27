@@ -1,1862 +1,1490 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/MarketplaceKit": {
-      "etag": "\"8089-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/MarketplaceKit.md",
       "hash": "d030bdbcef68b27baeadca52dc759f8a3049b3e85c048c0861974ddc67fb97d4"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton": {
-      "etag": "\"bee4-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton.md",
       "hash": "836f2302b1f4a5ad90118b6397a4e4740e28b3de88c1a9e8732513f201df04cd"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum": {
-      "etag": "\"1b16-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum.md",
       "hash": "a4439db66c012cc7c118305cac9ef916d137e63ae6c0e1ff36dfab6aa7ce95ba"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/batchinstall(_:)": {
-      "etag": "\"15d2-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/batchinstall(_).md",
       "hash": "fbfa026f3d8becec350210a077663739576a1fd1f24f6297b82d2d5669a556a2"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/delete(_:)": {
-      "etag": "\"1497-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/delete(_).md",
       "hash": "9319816d0afda0431d8073b2c1cfd71ceacd2fa0b94ad8f40363470b92a208f2"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/install(_:)": {
-      "etag": "\"1559-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/install(_).md",
       "hash": "b16846350540d23686cd69e561281f8ac8a09ef8ac2cae370f6c457cd2b3d464"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/launch(_:)": {
-      "etag": "\"1497-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/launch(_).md",
       "hash": "cc96c88875a3744eff14c3c2b55b5f2654258640fc88b791e160d1528e30fbc5"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.property": {
-      "etag": "\"174a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.property.md",
       "hash": "e547ef69485c99ce23316abc103e522f66dea043a608bbdcbd0d44f9bfb0a969"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/backgroundcolor": {
-      "etag": "\"16bf-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/backgroundcolor.md",
       "hash": "6ebae8168871ffcf620bca86a6a9c1218114b5f6a42b9eebd458758eb93798ff"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/bordercolor": {
-      "etag": "\"15e1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/bordercolor.md",
       "hash": "047642411dc8796dcdff7c68ce190d2f53d15c3c51e040e2aa151e956603d18e"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/borderwidth": {
-      "etag": "\"159c-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/borderwidth.md",
       "hash": "c9895964138214d7473f7fd45eda854284591dff272876083d8a4133defec90c"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement": {
-      "etag": "\"255a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement.md",
       "hash": "59793202f1f8259c3b03493576ccb36a2cb7d8e0d7b3a78df20c91e6a6e6c177"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/bottom": {
-      "etag": "\"108a-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/bottom.md",
       "hash": "9bb12c9af1acbc389d40c07f62112b616ac14613234dc8cc720af40c9cd8d694"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/leading": {
-      "etag": "\"1095-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/leading.md",
       "hash": "e45a635177157720f3317dc2528536b19b7167c2f2ab301a9a57e2c7e2008f41"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/top": {
-      "etag": "\"1069-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/top.md",
       "hash": "c4f12823369da70fd10e468b1c25e38b4afe78794d83f83ace7c0c27dbb7f1a8"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/trailing": {
-      "etag": "\"10a0-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/trailing.md",
       "hash": "1a05446c43e5278e673d2881241e7cb235a8e8330e39f389f0450f4ac9f922d2"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/cornerradius": {
-      "etag": "\"15a7-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/cornerradius.md",
       "hash": "426feacab65fb5bc4319a127443680ec6aa9eaef4381f3959fcee98a1648cccd"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/fontsize": {
-      "etag": "\"157a-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/fontsize.md",
       "hash": "2ec2028031c432298215ba92f352bf9edceb590a3af0e958e34182668d549f95"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/imagename": {
-      "etag": "\"14e2-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/imagename.md",
       "hash": "6d2e1ab9a0fcbe73ef7ec84fb45c93a65dc24d39b8d1093c7230d4a67df482cf"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/imageplacement": {
-      "etag": "\"1843-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/imageplacement.md",
       "hash": "7afee28b6c8c2f7ffcc2ef542c9a68c81b3868fa9f052f7b693841b2f417cb82"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/init(action:)": {
-      "etag": "\"1750-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/init(action).md",
       "hash": "e3551604a255c42a9505a5f0c849530fbc82d075b655752623d973614071235b"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/isenabled": {
-      "etag": "\"1586-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/isenabled.md",
       "hash": "c0092a705d1c45b59c7a68cf78241aeb81e4b215a1abf4c4ab2c724b3577afdf"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/ishighlighted": {
-      "etag": "\"15b2-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/ishighlighted.md",
       "hash": "c82226255d3efcb0825991c915972e3df456952fb91e49d097eaa55eca19a1eb"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/label": {
-      "etag": "\"147d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/label.md",
       "hash": "c0260dfd1f17d3ce8e41c0f71e6bbb32a672b156118cc59d0e5180dc5b303c79"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/size": {
-      "etag": "\"159d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/size.md",
       "hash": "cd1cce253b45a7b58ab41120dde70f0c7bda5eccf044fd668da6a388645c1b6e"
     },
     "https://developer.apple.com/documentation/marketplacekit/actionbutton/tintcolor": {
-      "etag": "\"167d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/tintcolor.md",
       "hash": "fef0695ed263096cbad2a3de47ced72b1e8eadff57744b2f93e2054f448035cb"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor": {
-      "etag": "\"3b26-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor.md",
       "hash": "21ef520033552331283408db47feaa831d84bacf9c7f80d5253adfef0e984ffe"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor/appstore": {
-      "etag": "\"fed-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/appstore.md",
       "hash": "a6260e17c017fd904958113a596f9a4dc650aba1ea921824b8078374b4fa2be6"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor/current": {
-      "etag": "\"1a22-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/current.md",
       "hash": "9246f7ee92b1471110f17801a920d85ba757c912b5b49503dae6c3af2f28d273"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor/eligibilityregion": {
-      "etag": "\"1ea9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/eligibilityregion.md",
       "hash": "24efea3b3d1e85b598c30019d3633b78c409ef6a655a4636a066305c5ced91f0"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor/marketplace(_:)": {
-      "etag": "\"13ea-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/marketplace(_).md",
       "hash": "1ef8932189688724256f8350fe543346e33c88cfa40fa099813730d681f0fcba"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor/other": {
-      "etag": "\"fcc-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/other.md",
       "hash": "b9bf28377ea38958c1ef3e4ede2bc43206fa21e9f73dc9412afa4965eb6fce80"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor/testflight": {
-      "etag": "\"1004-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/testflight.md",
       "hash": "7499326836f3876c926e008ddaa0b09f5c988d09baa47ae9442fd59b5767a534"
     },
     "https://developer.apple.com/documentation/marketplacekit/appdistributor/web": {
-      "etag": "\"1243-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/web.md",
       "hash": "9e48b4c30f73426668905a7d31f8fae05151daa7ceacdf88ae359473c42a43a5"
     },
     "https://developer.apple.com/documentation/marketplacekit/appleitemid": {
-      "etag": "\"2953-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/appleitemid.md",
       "hash": "d85d001656fa27c265418a921f078925763438a0ab4f5e55e568198f7c41e03a"
     },
     "https://developer.apple.com/documentation/marketplacekit/appleversionid": {
-      "etag": "\"2973-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/appleversionid.md",
       "hash": "5994a298628cc772080d08990fd40bc0c737569a0a14e7807f3db8b22ff96ffc"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary": {
-      "etag": "\"a649-65da2dd5a6e70-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary.md",
       "hash": "1cda3234f247c83f8e9b12d85cd4c1ae15145b6640e9d6bfd1e6924ae46e8567"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app": {
-      "etag": "\"5cf6-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app.md",
       "hash": "b19de89f8ce9ebf3e656ff399a716939987085f2be0f367cede67b1617fd5c01"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app(forappleitemid:)": {
-      "etag": "\"2133-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app(forappleitemid).md",
       "hash": "bdd55c1c04282fe4c997108f226d79c8ec347c6fcf3d23f16646fdc847774a3f"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installation-swift.property": {
-      "etag": "\"2af9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swift.property.md",
       "hash": "aac1e89f42946eaa1d188912be50bc82964ef0f97b053d707db662c2e79eac5e"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installation-swift.struct": {
-      "etag": "\"2fa8-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swift.struct.md",
       "hash": "b295852175339b1836682a879a307de549d061fbc96501aa8f75e17a8dd71691"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installation-swift.struct/progress": {
-      "etag": "\"1e52-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swift.struct/progress.md",
       "hash": "30f83582e1dd5f620d2cecd79376bba09ff06bc50a6719f5baf1fab750b32d5e"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installationerror": {
-      "etag": "\"2a9f-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installationerror.md",
       "hash": "1638951f2dd37bff8ce85a01a6ab4ea79379cefeac766228b9edc69d8b4a512b"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installedmetadata": {
-      "etag": "\"1e07-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installedmetadata.md",
       "hash": "d74a0a1266af07ea86449554ddd72dfeec6fac51315e652f7051f5d2646abd88"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/isinstalled": {
-      "etag": "\"29ed-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isinstalled.md",
       "hash": "b63042d492664780d0588321e5b66a396802282bd609ea976061dc9bc2f32738"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/isinstalling": {
-      "etag": "\"29f5-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isinstalling.md",
       "hash": "d1eca875d98ea0caa3e6e81005020c6c994095e52f43bbdcaccecd3c9f4ea65c"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/isupdating": {
-      "etag": "\"29e4-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isupdating.md",
       "hash": "3398ced002f60a3303b3065791504ede12389693acd249ae7d3d2320520a7cfb"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata": {
-      "etag": "\"2c15-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata.md",
       "hash": "7cfd0da6f834dbba9a999696f32f66a6bea4b0ee949bc3024cd5cb3e64fa8125"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/account": {
-      "etag": "\"1f6c-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/account.md",
       "hash": "e59752907010f4b5a0768d0645f04c9369161cfd3bc5ed6a26ba670a836db274"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/appleversionid": {
-      "etag": "\"2008-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/appleversionid.md",
       "hash": "da3a592f3dd815d1d9bbd1bf10d629eb370b24223efc905c36f72bd30c85f8d9"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/shortversion": {
-      "etag": "\"1f4e-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/shortversion.md",
       "hash": "e6e30152aa2bb0da4416fe73c6ba8cc65aa19f36ac728e9f422e1b35c376e4c2"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/version": {
-      "etag": "\"1f34-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/version.md",
       "hash": "88d30b6649fe3e17f1d13ff01c12f8429391374400ae81483525b9a6e883f395"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/presentageexceptionapproveinpersonsheet()": {
-      "etag": "\"2549-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/presentageexceptionapproveinpersonsheet().md",
       "hash": "84e3d048ebe19907815d0b542d286c406868f252dca7ca38372e98327dc11f02"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/app/requestdeletion(in:)": {
-      "etag": "\"1dc1-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/requestdeletion(in).md",
       "hash": "2d8ad566497ba4e93a9f6ea389114a8b25282fec45354b72cfa38ac1a818d844"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/catalogregion": {
-      "etag": "\"1957-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/catalogregion.md",
       "hash": "0d52298d0dc0d3c5c23deb448b501de36ec7bd6abebac65bfdc70b77ab9e7979"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/current": {
-      "etag": "\"1513-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/current.md",
       "hash": "61367b999500b3c81c50a136bd11aa5af983538b23bba87b196634078f5d4b7b"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/currentageexceptionrequests()": {
-      "etag": "\"2e1e-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/currentageexceptionrequests().md",
       "hash": "23164c178889c0c126d98f5b6f0a1cf914d58f5d243f90af5d053712f1a7bde5"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/didauthenticate(account:)": {
-      "etag": "\"20d9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/didauthenticate(account).md",
       "hash": "198ee584e02f373851037a20cb8242f24c0e76790ed1af92d07cb5cce18eccbf"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/exceptionrequest": {
-      "etag": "\"347e-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest.md",
       "hash": "7821648e083545ea025746e613c85508d2c9086c7b06770ec2927f27f3ef41d5"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/exceptionrequest/appleitemid": {
-      "etag": "\"1568-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/appleitemid.md",
       "hash": "dc2e18a8c3cab8715fead397af4f0d8e01ac865b04da39dc0067dbbce55697eb"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum": {
-      "etag": "\"3a2a-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum.md",
       "hash": "c14323a7c6fa608c08dfa8f2e6c726dfedb3b56a9e61c685afb250e5c53ba0eb"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/approved": {
-      "etag": "\"1bf9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/approved.md",
       "hash": "d24830beb52cafe0ae999adc73ac025aa9acb7030e1551364e5b1772c866428c"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/declined": {
-      "etag": "\"1bfc-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/declined.md",
       "hash": "7089a156cb593b589c6a43c783fbe054be8ff77a0c5834017aef22253b1bf752"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/pending": {
-      "etag": "\"1bfa-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/pending.md",
       "hash": "06a9ec1e1cf6343c54570e34e6e1c06cbed2475110212d783180c778c18f4229"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.property": {
-      "etag": "\"1b85-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.property.md",
       "hash": "3bed351b40d8cf54f8e7177f972c323265a2a967bfa9d6acc5676b07a711061d"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest": {
-      "etag": "\"3088-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest.md",
       "hash": "7e5a8e3eebaf48d6dc0bdea19b340b0f4cb871eb08dd4545250e5cb721978b63"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/account": {
-      "etag": "\"1e19-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/account.md",
       "hash": "5c2bd220a2a4f5d9b542a072551add1589256963bb4fd791451041761f3bdbae"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/alternativedistributionpackageurl": {
-      "etag": "\"1efa-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/alternativedistributionpackageurl.md",
       "hash": "bf119e9afa76c34561e0833a929d0f5adcbf96ae5288b4eaf5eb29fe05d96f80"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/appshareurl": {
-      "etag": "\"1ec4-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/appshareurl.md",
       "hash": "dd3895a71478d054ec660528cc14bcbb08d947178891594e802030dcf31346ae"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/init(alternativedistributionpackageurl:account:installverificationtoken:)": {
-      "etag": "\"1dce-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/init(alternativedistributionpackageurl,account,installverificationtoken).md",
       "hash": "4fec88733afdd95c4b4157af9047ccc4ff94091a300de9921c87b4e441954be1"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/installverificationtoken": {
-      "etag": "\"1e6f-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/installverificationtoken.md",
       "hash": "9ad738df82d1f8fdedfd039c198a77f6d2608f1fad8d8db261a37faaaebc62f9"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installedapps": {
-      "etag": "\"2062-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installedapps.md",
       "hash": "3066163a761fbae86b2d25dd728f570ac0e7915f553d2cf87d97b7811c124f82"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/installingapps": {
-      "etag": "\"26cc-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installingapps.md",
       "hash": "74199d8f12a56d461fb1a8d99037566335f4f09eb134618df1a365e6aca3f0ad"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/isloading": {
-      "etag": "\"243c-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/isloading.md",
       "hash": "75fe0cbbb8a34184179f4f494f10a8315917c01250e9778c2db12b872ebe16bc"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/maximumallowedagerating": {
-      "etag": "\"2f39-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/maximumallowedagerating.md",
       "hash": "19841eb9f6145369694cc0c97db9c50590872af113128f60f1f05311943a9f87"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappinstallation(_:)": {
-      "etag": "\"2281-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallation(_).md",
       "hash": "e21abfe58febc3382fd3bd9be2897f5fa090c4c4f89f982f6c4d1cff0e373b7c"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappinstallation(for:account:installverificationtoken:)": {
-      "etag": "\"2689-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallation(for,account,installverificationtoken).md",
       "hash": "3c4cc962f2385652d6fb35d4a8d6a79b22245e8e221c800534950e2f59c14361"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappinstallationfrombrowser(for:referrer:)": {
-      "etag": "\"2757-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallationfrombrowser(for,referrer).md",
       "hash": "f68eff2eb8dad3a20f646205643fa0cb97c11d5064f43cc76c23bb2912f998c1"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappupdate(_:)": {
-      "etag": "\"1c95-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappupdate(_).md",
       "hash": "e18693523985b7531c6e3a3547e92008fe105a0787a577ebf85d51de8bf154d8"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappupdate(for:account:installverificationtoken:)": {
-      "etag": "\"23b4-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappupdate(for,account,installverificationtoken).md",
       "hash": "29c2e0dfbb6ce438a4fd7d3851897abe297a58263fcdc8190548cb47d49a320d"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/requestinlineappinstallation(_:subjecttoken:)": {
-      "etag": "\"3286-65da2dd5e7945-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestinlineappinstallation(_,subjecttoken).md",
       "hash": "557ab18c3841c512fa7d3e07e3436015c1db4e73460541538b379190e802ee5e"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/requestlicenserenewal(appleitemids:)": {
-      "etag": "\"1a8a-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestlicenserenewal(appleitemids).md",
       "hash": "a8b17a89fc88fce04dfc88b96e8daa537ded7543ee5d01b04e4c38ea6f39fe9d"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/searchterritory": {
-      "etag": "\"1945-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/searchterritory.md",
       "hash": "b3d6b23be7aca5241179087acb204a04ef23b20eeb2de68bbb843966d6b95757"
     },
     "https://developer.apple.com/documentation/marketplacekit/applibrary/setsearchterritory(_:)": {
-      "etag": "\"1f91-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/setsearchterritory(_).md",
       "hash": "bf1604f42635e221026e21bf27284862e1d79aa9902eecb2cdbca159cfc043b7"
     },
     "https://developer.apple.com/documentation/marketplacekit/appversion": {
-      "etag": "\"3b2d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/appversion.md",
       "hash": "81790cf813d4a516fe780ad05d2413f5669b2989ea86168928a7766714fe996c"
     },
     "https://developer.apple.com/documentation/marketplacekit/appversion/appleitemid": {
-      "etag": "\"110f-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appversion/appleitemid.md",
       "hash": "dceba3527dc860bcbc5d29665e043b47e4b455840fa83b105c24d6e0b423519d"
     },
     "https://developer.apple.com/documentation/marketplacekit/appversion/appleversionid": {
-      "etag": "\"10c4-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appversion/appleversionid.md",
       "hash": "27f832ba59f7acfa42f3f307d5c8aef8b6b280993ec810b4e86abbb31bb0c158"
     },
     "https://developer.apple.com/documentation/marketplacekit/appversion/init(appleitemid:appleversionid:)": {
-      "etag": "\"1696-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appversion/init(appleitemid,appleversionid).md",
       "hash": "d6bed46860f02dfa88f950a9a2d9fac75a8faac867ee91122fd0094b1a6c6554"
     },
     "https://developer.apple.com/documentation/marketplacekit/automaticupdate": {
-      "etag": "\"43bc-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate.md",
       "hash": "d4c4e1dc828107a8b196550c0a540ac93652918b9072b5c87fda8a5e725f167a"
     },
     "https://developer.apple.com/documentation/marketplacekit/automaticupdate/account": {
-      "etag": "\"108c-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/account.md",
       "hash": "a0fd9e4e77c0aa5044643127b1d6c86d9109b5b6a54baab78c428a67bed6e73d"
     },
     "https://developer.apple.com/documentation/marketplacekit/automaticupdate/alternativedistributionpackage": {
-      "etag": "\"11f5-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/alternativedistributionpackage.md",
       "hash": "c0bd32e17ed3a73e6949d86684bcd24a39623cfdd934b42620e89486c36cbba4"
     },
     "https://developer.apple.com/documentation/marketplacekit/automaticupdate/appleitemid": {
-      "etag": "\"115b-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/appleitemid.md",
       "hash": "97623a1f299248ff5c99b5f266266bc8c379534cfb8e63f10eb7c73c41887729"
     },
     "https://developer.apple.com/documentation/marketplacekit/automaticupdate/appshareurl": {
-      "etag": "\"1176-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/appshareurl.md",
       "hash": "6d272c852fd81919728270ed221873e2815491f34a928b48aec6a1a07b7186c4"
     },
     "https://developer.apple.com/documentation/marketplacekit/automaticupdate/init(appleitemid:alternativedistributionpackage:account:installverificationtoken:)": {
-      "etag": "\"1f94-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/init(appleitemid,alternativedistributionpackage,account,installverificationtoken).md",
       "hash": "871f4b66887dea0447293810a95d73da8a943556f772267bd971139881e2fa8c"
     },
     "https://developer.apple.com/documentation/marketplacekit/automaticupdate/installverificationtoken": {
-      "etag": "\"1148-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/installverificationtoken.md",
       "hash": "6325518867f8aa46664c74d5c8e086d674f05940e1f56cbb02ce07bcb0f586ef"
     },
     "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration": {
-      "etag": "\"31c1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration.md",
       "hash": "26776a52c362a55c2fb9cf721ea239c8e410b9652e92eef0be3d13798a4e36f0"
     },
     "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration/confirminstall": {
-      "etag": "\"148c-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/confirminstall.md",
       "hash": "b804a54fcc0d9770959d63bf032a733d1ab82a6e642b88d68f328b5f30972fe5"
     },
     "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration/init(installs:confirminstall:)": {
-      "etag": "\"1af8-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/init(installs,confirminstall).md",
       "hash": "5e7e52afae2d6dfad455eed31cd9c3a3c7227d3b8b096bd1f5b922372db1745c"
     },
     "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration/installs": {
-      "etag": "\"129c-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/installs.md",
       "hash": "738e8cf1c8f4cf2ace99463e56f33d919d5302efa2fce667a09c225849852ad3"
     },
     "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult": {
-      "etag": "\"3c16-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult.md",
       "hash": "c228217fec308ad1ac84da4559058da46c51efa001bf08b20dd5e28e80c88953"
     },
     "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult/cancel": {
-      "etag": "\"e50-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult/cancel.md",
       "hash": "df8ba8850762c2a1fa6039fc3c2f58c69425a7b9e2fbf36e03f1ff929f9964ac"
     },
     "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:)": {
-      "etag": "\"1ebd-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult/confirmed(installverificationtokens,authenticationcontext).md",
       "hash": "674caaf6a53bef3c5e93a9ac0d2e74e32641acd860e89b1fcee7d222a9f90b33"
     },
     "https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace": {
-      "etag": "\"75fe-65b8a746695f4-df\"",
       "file_path": "documentation/MarketplaceKit/creating-an-alternative-app-marketplace.md",
       "hash": "99f57a5d3a3c63f70704d5c4cbd609c82d2bd4683a1125a6076cb54fb0bb8f3f"
     },
     "https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website": {
-      "etag": "\"886c-65da2dd5bc9cb-df\"",
       "file_path": "documentation/MarketplaceKit/distributing-your-app-from-your-website.md",
       "hash": "cfd4bc26bb979d112c1d8ca392eb3aa757f66718a0f50145d1d297c03925a362"
     },
     "https://developer.apple.com/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace": {
-      "etag": "\"7947-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/distributing-your-app-on-an-alternative-marketplace.md",
       "hash": "c21c63ab5ac1cd8302505f47d16789f34af90467b114de552fee0262edd3669f"
     },
     "https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser": {
-      "etag": "\"4b7f-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/enabling-alternative-distribution-app-installation-in-a-browser.md",
       "hash": "9dcdf0cda708d084ce9b58938ce40ea91681738134fd9180d6c91c76ab823639"
     },
     "https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package": {
-      "etag": "\"8db1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/ingesting-an-alternative-distribution-package.md",
       "hash": "a6c8e4981ef11aff26da1c1422e2e9b0acd3203120c6dc5c4a48b998646f9eda"
     },
     "https://developer.apple.com/documentation/marketplacekit/installconfiguration": {
-      "etag": "\"3102-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration.md",
       "hash": "e8a076284417f005b9a9e50a084024e0d34e306d74a7fad5be338d56f533c07d"
     },
     "https://developer.apple.com/documentation/marketplacekit/installconfiguration/confirminstall": {
-      "etag": "\"1403-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/confirminstall.md",
       "hash": "bf725879074695027b067827d182a0c397e22a2aa15e9f1bcda2a3c1d603fae6"
     },
     "https://developer.apple.com/documentation/marketplacekit/installconfiguration/init(install:confirminstall:)": {
-      "etag": "\"1a59-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/init(install,confirminstall).md",
       "hash": "270e758c1f4c716f93b2e6fead3edb8913ff1c9a6a26d3b5cd6f2c99a64b76a7"
     },
     "https://developer.apple.com/documentation/marketplacekit/installconfiguration/install": {
-      "etag": "\"11f9-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/install.md",
       "hash": "e196592961eff9b049f42a95c02e14ca393df533a1510a10aa339b562ddbc571"
     },
     "https://developer.apple.com/documentation/marketplacekit/installconfirmationresult": {
-      "etag": "\"38b3-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult.md",
       "hash": "a040787018d2d8f07172df992a1796763074d73ca77bbc470354ddf855e244d7"
     },
     "https://developer.apple.com/documentation/marketplacekit/installconfirmationresult/cancel": {
-      "etag": "\"dfe-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult/cancel.md",
       "hash": "d784c49aa0bba2675a2c981ba6c4c9edd4b5e7f420bb7de867376c778982fd45"
     },
     "https://developer.apple.com/documentation/marketplacekit/installconfirmationresult/confirmed(installverificationtoken:authenticationcontext:)": {
-      "etag": "\"1a43-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult/confirmed(installverificationtoken,authenticationcontext).md",
       "hash": "55672443c8b543003037f7dbecca58fb25bb442d7a73c84b6a7592c23fb0dad1"
     },
     "https://developer.apple.com/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace": {
-      "etag": "\"aebf-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/installing-apps-from-an-alternative-marketplace.md",
       "hash": "4f089002543184147538f50a784454e1276ec7fd8f49131983b03b571106c587"
     },
     "https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website": {
-      "etag": "\"7561-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/installing-your-app-from-your-website.md",
       "hash": "f0663c4775b0b29d3ef571b2fd3f0ad8e8b1704c14673e7c1a0d90c97d1132b1"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata": {
-      "etag": "\"4cc1-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata.md",
       "hash": "df7327570364e6b55e62df3236c88875d4e2466da651a9de4cd78c3bb6b16ed0"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/account": {
-      "etag": "\"2765-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/account.md",
       "hash": "544333d0bc1dd38e8bfd1f11d8c1dcc642327d6859d0627cd69f377bc8bad71d"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/alternativedistributionpackage": {
-      "etag": "\"23f0-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/alternativedistributionpackage.md",
       "hash": "a6e7a0c3e8f2a8765aa28a498dd475c27cb9ffaf2c0e59949f3bdf4256db4335"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/appleitemid": {
-      "etag": "\"1edf-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/appleitemid.md",
       "hash": "3e6a7b9050a5b10dc0422fdda658b7f4fefeaa46af8318fd3aa82de98ca12dc0"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/appshareurl": {
-      "etag": "\"2038-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/appshareurl.md",
       "hash": "99a7f9eb1bee80716377d266b7b5263afaacfd725ab94a2614e7bb34f55a23b9"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:)": {
-      "etag": "\"2e19-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/init(account,appleitemid,alternativedistributionpackage,isupdate).md",
       "hash": "f4a11ffa334eea65451f66b0621d27130317c09e5c05aa9a1915b4a967b3eed8"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:appshareurl:requestageexception:)": {
-      "etag": "\"3fca-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/init(account,appleitemid,alternativedistributionpackage,isupdate,appshareurl,requestageexception).md",
       "hash": "fc650ca7db6ff2b8e7cf30af857afeeca321ab21152ab11aa7bcea58202d1804"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/isupdate": {
-      "etag": "\"1ec8-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/isupdate.md",
       "hash": "e1f2851d93a61c40fc84b7a87e85f78849af66533f618b3024fe7e469631b9e0"
     },
     "https://developer.apple.com/documentation/marketplacekit/installmetadata/requestageexception": {
-      "etag": "\"2365-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/requestageexception.md",
       "hash": "ca20202e420ba434d2a1513cec9768a3a0cc5ae804e6f0eafd5f7b736a0fda10"
     },
     "https://developer.apple.com/documentation/marketplacekit/installrequirements": {
-      "etag": "\"3cd5-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements.md",
       "hash": "b3d26f67becd02a632567e34adfb64325e89b2a18437c42f447548f12385831a"
     },
     "https://developer.apple.com/documentation/marketplacekit/installrequirements/ageratingrank": {
-      "etag": "\"10ee-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/ageratingrank.md",
       "hash": "b3c187f99613b6217dfa202f3dd1df7454b02a7fccbc4848e1bfecaf6e39fa98"
     },
     "https://developer.apple.com/documentation/marketplacekit/installrequirements/expectedinstallsize": {
-      "etag": "\"11a2-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/expectedinstallsize.md",
       "hash": "653fc2de91a27b6421df6b1b79c8db1113308f9dde6093a88a357003e7295955"
     },
     "https://developer.apple.com/documentation/marketplacekit/installrequirements/init()": {
-      "etag": "\"ca7-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/init().md",
       "hash": "42b370771b9a91b556be26a83e023b330e561f610d6e66d355adbf3610fdcc26"
     },
     "https://developer.apple.com/documentation/marketplacekit/installrequirements/minimumsystemversion": {
-      "etag": "\"1245-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/minimumsystemversion.md",
       "hash": "f38f097553f3323c4641a663c7d3f552c557bf154567867e33eba80fc177d278"
     },
     "https://developer.apple.com/documentation/marketplacekit/installrequirements/requireddevicecapabilities": {
-      "etag": "\"19a5-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/requireddevicecapabilities.md",
       "hash": "3c7286a653c6fcd8032d0c7b76f2c31ccf596e0c74077e0ee5ee2fad12a4368d"
     },
     "https://developer.apple.com/documentation/marketplacekit/installrequirements/satisfiedbydevice()": {
-      "etag": "\"1176-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/satisfiedbydevice().md",
       "hash": "c12d8d9c82ad9404044fb5f70f47f0990c7b02fa7dbdba1120c60218ed6c9feb"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceappextension": {
-      "etag": "\"36ed-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension.md",
       "hash": "56d1147a9b65080f7c531676343a9b9d0ad13f33c04d8aa995b2c4a2b26ab6f3"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceappextension/additionalheaders(for:account:)": {
-      "etag": "\"2a96-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/additionalheaders(for,account).md",
       "hash": "e6c27e32c35b5ede0876a756764bfa317a3c7fc7ac8090034bc4a613dffec7f9"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceappextension/automaticupdates(for:)": {
-      "etag": "\"19e3-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/automaticupdates(for).md",
       "hash": "7531e425877d51453fa58257ccca48f5d0989339c949458b890cc7c9776f18d8"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceappextension/availableappversions(forappleitemids:)": {
-      "etag": "\"1956-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/availableappversions(forappleitemids).md",
       "hash": "5239e59592a975ae76be8289ae60f655eac81dce5c8509664196e04ee14b7db1"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceappextension/requestfailed(response:)": {
-      "etag": "\"2486-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/requestfailed(response).md",
       "hash": "533c25b120ad3d0d9c6b8eef3d86d273b3558d3044782b009411598426a44638"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption": {
-      "etag": "\"3873-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption.md",
       "hash": "baff7a9080bc000fb00b7a2519998c1e2a0c126d3daa5f76ce663d03e63fbf66"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/authentication(account:)": {
-      "etag": "\"12ec-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/authentication(account).md",
       "hash": "135d7a54a1be2320c35f36f4866e0398abd51a9e5a0cc4b80cda0674a39463d5"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/productpage(appleitemid:appleversionid:)": {
-      "etag": "\"1929-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/productpage(appleitemid,appleversionid).md",
       "hash": "80dba337ee50e85d8630445cad7cb421366dae732e1a9f1c41562be5273d638e"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/searchresults(query:)": {
-      "etag": "\"12cd-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/searchresults(query).md",
       "hash": "37b5e370f366f5e88180ff761324378eae09a24dbece3f6359961e95cd4e3827"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceextension": {
-      "etag": "\"2c3c-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension.md",
       "hash": "390323c2c51df74fcaff769b5365386949278c434a700e31a2860f88ba7dfb9a"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/additionalheaders(for:account:)": {
-      "etag": "\"1bb1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/additionalheaders(for,account).md",
       "hash": "f4c4508974cf43a7b126d7ac93f0b7b3e31a3bf9ecc36604ea9b2aab13002a79"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/automaticupdates(for:)": {
-      "etag": "\"1a6a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/automaticupdates(for).md",
       "hash": "df33a46bad71977d4f077d174ac60499a3bc616447a318db6762e3e40845c4d7"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/availableappversions(forappleitemids:)": {
-      "etag": "\"1928-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/availableappversions(forappleitemids).md",
       "hash": "e881cc1fcf1bcbe5be58d1c7c37a25a5d10cba4927585f0f7242610b4477bea7"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/requestfailed(with:)": {
-      "etag": "\"1a2a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/requestfailed(with).md",
       "hash": "0a6a5770a165f78e74de9582c598a23a7c27ba56c6c3e0f7615aba7599e4f964"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplaceextensionconfiguration": {
-      "etag": "\"1c88-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextensionconfiguration.md",
       "hash": "f847d2dd59b5b1c45a0b0a3b4e0642ccc484639bd035b2a339f4143af3caf5d0"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror": {
-      "etag": "\"6950-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror.md",
       "hash": "84cb8f7ff07835e76e87096f80701e6a1f994c2277e71db29c821102190468c8"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/ageratingexceptionnotneeded": {
-      "etag": "\"2116-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/ageratingexceptionnotneeded.md",
       "hash": "4b9af1fc26dd5e6c1762195cee85f50528685a8342065ae2fcbe8178eb009279"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/appnotinstalled": {
-      "etag": "\"1bca-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/appnotinstalled.md",
       "hash": "e98e94371ab12cc7df4218ae9c510f4148f44815e321864576c9ff4379a09b11"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/cancelled": {
-      "etag": "\"1c86-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/cancelled.md",
       "hash": "25fb7ddb20e573c686776da20442a9eba254ce599f5b1bf5adf0c155a6d986c7"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/featureunavailable": {
-      "etag": "\"19d1-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/featureunavailable.md",
       "hash": "a9badc9291a5ebc7f5f0eae06c291a2922d7b70686b44be447ec8ab949c047a7"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/installationofmarketplacedenied": {
-      "etag": "\"1c01-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/installationofmarketplacedenied.md",
       "hash": "154c893b36ce6bfe5da6997eae60a52e5b297d1cbfab13ae690e6c276acbf3c1"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/installationrestricted": {
-      "etag": "\"1bd4-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/installationrestricted.md",
       "hash": "ff90e5591f333682dcb51028b46d0ac8e638a3eb5ba1110f28656e7579a79d61"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/insufficientstoragespace(_:)": {
-      "etag": "\"28b3-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/insufficientstoragespace(_).md",
       "hash": "63d66df475061e0d59d56275a6d255dac3dabe480f9353be663052804c6476bd"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackagesignature": {
-      "etag": "\"1c36-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidalternativedistributionpackagesignature.md",
       "hash": "50872d69250adf2cdde9ae9a60315bead22d6bc3c3b5fb9ebb51985117df25ad"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackageurl": {
-      "etag": "\"1c12-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidalternativedistributionpackageurl.md",
       "hash": "6edde76759c1800f2f1464bb13aa309843ad85cb7d1edda5f65963dacb4f541d"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidlicense": {
-      "etag": "\"1b8b-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidlicense.md",
       "hash": "d0f8de49389b66cd930f9d2951c547bbc3c3cab45d4d874a636f91f30854634b"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidmanifest": {
-      "etag": "\"1b9a-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidmanifest.md",
       "hash": "303dfd20590a39c4c791fb6de1a405d53871dbf9e03f1478bba2da9217a2f0aa"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidurl": {
-      "etag": "\"1b7a-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidurl.md",
       "hash": "e223ecbbfb59495110084e49cc1854e0c589f4693b439334479637f515cc7419"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/minimumplatformversionnotsatisfied(_:)": {
-      "etag": "\"21b7-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/minimumplatformversionnotsatisfied(_).md",
       "hash": "47c4bd9d3426a1b629b2857942970185040dde2fdfe2bfbb96f07cf2cab11eed"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/mismatchedinstalltype": {
-      "etag": "\"1bfa-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/mismatchedinstalltype.md",
       "hash": "7cef353273242743df546eda1e60b98a6e3ac7d7e8a24a2e6d2a2da0d5f25cf8"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/missingageratingexceptionrequest": {
-      "etag": "\"22d1-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missingageratingexceptionrequest.md",
       "hash": "39f7a6d3a1017cbafb540a848981c57195c6579a003ad57d385d86e6ee734541"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/missingcapabilities(_:)": {
-      "etag": "\"215e-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missingcapabilities(_).md",
       "hash": "dbb8315455216cb4d2e774dad693088d4f0393fc8c44f642eb3270cf987d129e"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/missinginstallverificationtoken": {
-      "etag": "\"1c01-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missinginstallverificationtoken.md",
       "hash": "6004a1a4059d7260976863e0f1fec983f50e58c41c6ca50bd95170a22f5a1e08"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/networkerror": {
-      "etag": "\"19ae-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/networkerror.md",
       "hash": "6987bc1e8baa135ab1aefe8493985bfe59550459e10100f88755ea642d077895"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/nosupportedvariant": {
-      "etag": "\"1e10-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/nosupportedvariant.md",
       "hash": "0e648f540380be53d9a8fce735ee78c146eaecd158bf58c76f26f1faf7fa3b06"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/oauthtokenerror": {
-      "etag": "\"19d3-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/oauthtokenerror.md",
       "hash": "d008e7bd786dcadac172b10dee94da10e37a143f13306ac3d35de23fdec6f65a"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/ratingrestricted": {
-      "etag": "\"1c88-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/ratingrestricted.md",
       "hash": "56ed1b75c5109f2ec14a450e7bef257db6ea4cd90c6f4c9bc8802a843c85f392"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/unknown": {
-      "etag": "\"198f-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/unknown.md",
       "hash": "dff3471d4069ecfcd5fedddf030afce63eb754610d3749bd90c22509186ea241"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/unsupportedplatform": {
-      "etag": "\"1e06-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/unsupportedplatform.md",
       "hash": "519e35bd49a0f07295b29a6c26a24ba08af99a1360bf82d3a0c13ff540753110"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacekiturischeme": {
-      "etag": "\"4cbd-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiturischeme.md",
       "hash": "bf7b3321cbe22f4b696ebbea159fcc826fdefe4da2eed8e5e9a28f904d13f7b1"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacescenedelegate": {
-      "etag": "\"2749-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacescenedelegate.md",
       "hash": "adeaeb84a23f3f8d38b3d9b34ab90f5ae5f19abfc3b5fe4cd3745952843decfd"
     },
     "https://developer.apple.com/documentation/marketplacekit/marketplacescenedelegate/scene(_:askedtodisplay:)": {
-      "etag": "\"19fe-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacescenedelegate/scene(_,askedtodisplay).md",
       "hash": "ef06cce2f2f8206497bcea553bfed64e1cf11c0359196eabd73d84dbee6ed155"
     },
     "https://developer.apple.com/documentation/marketplacekit/participating-in-alternative-distribution-for-specific-regions": {
-      "etag": "\"3342-659026b67da24-df\"",
       "file_path": "documentation/MarketplaceKit/participating-in-alternative-distribution-for-specific-regions.md",
       "hash": "22d766f9c669d51af2193b0468e97bca45d4ff595b60c6ab347b949050e612b3"
     },
     "https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications": {
-      "etag": "\"5ccd-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/processing-alternative-marketplace-notifications.md",
       "hash": "5b3312701a6e2360dcad86e3f75945372dd36738f368443309f9e0a4b26d1a18"
     },
     "https://developer.apple.com/documentation/marketplacekit/providing-age-rating-appropriate-content": {
-      "etag": "\"6265-659026b67da24-df\"",
       "file_path": "documentation/MarketplaceKit/providing-age-rating-appropriate-content.md",
       "hash": "9ef91871a6b4378faafd7980cf094d9e3e7b2b4c11f48b578f384a45dba19860"
     },
     "https://developer.apple.com/documentation/marketplacekit/reauthenticating-a-person-to-manage-apps": {
-      "etag": "\"708e-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/reauthenticating-a-person-to-manage-apps.md",
       "hash": "ff20a9de4024bdf3ccc0121f94c28faf372ebc7e3e1ffa5ec62dc6efdebd069d"
     },
     "https://developer.apple.com/documentation/marketplacekit/reporting-transactions-for-core-technology-commission": {
-      "etag": "\"4b04-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/reporting-transactions-for-core-technology-commission.md",
       "hash": "40504a95cd1a15ab61f4df0a81816d9f9bbb198a0860ec004cb0d0f89b127e73"
     },
     "https://developer.apple.com/documentation/marketplacekit/requestappdeletionaction": {
-      "etag": "\"2b7e-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/requestappdeletionaction.md",
       "hash": "202a3ecf4326469cf53f11b8a7584b29a55035699ec87c9f9de37227dfa1a66c"
     },
     "https://developer.apple.com/documentation/marketplacekit/requestappdeletionaction/callasfunction(_:)": {
-      "etag": "\"1b25-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/requestappdeletionaction/callasfunction(_).md",
       "hash": "1f6e8a59b035bd9b2a8f609fa061efc007ce1095a92d779255d0053742cfd3a6"
     },
     "https://developer.apple.com/documentation/marketplacekit/supplying-an-install-verification-token": {
-      "etag": "\"5f39-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/supplying-an-install-verification-token.md",
       "hash": "07d3e90bcc50a28ea31b6dd790cdbacb2a970b64219de4626f867abe772f2d83"
     },
     "https://developer.apple.com/documentation/marketplacekit/transactionreporting": {
-      "etag": "\"25d7-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting.md",
       "hash": "f8493eb8beb04c627928ef48b866d25a4082b95401fd8d17641f62389eb1da0a"
     },
     "https://developer.apple.com/documentation/marketplacekit/transactionreporting/token(for:)": {
-      "etag": "\"32d0-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/token(for).md",
       "hash": "a07ce37bc1530000377db47d9ef19d01e5eed3cd021376d4cce604c1efd03db1"
     },
     "https://developer.apple.com/documentation/marketplacekit/transactionreporting/tokentype": {
-      "etag": "\"1bde-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/tokentype.md",
       "hash": "784eacb6ef2bd01c7d59c8b41ff0f987805592ad95bb303e67b1a639056d2f9d"
     },
     "https://developer.apple.com/documentation/marketplacekit/transactionreporting/tokentype/coretechnology": {
-      "etag": "\"20a0-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/tokentype/coretechnology.md",
       "hash": "10a13beb61562067e80ac9a69125f9f6722e0876561c403a5e2b4a1f82c7431a"
     },
     "https://developer.apple.com/tutorials/data/documentation/MarketplaceKit.json": {
-      "etag": "\"8089-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/MarketplaceKit.md",
       "hash": "d030bdbcef68b27baeadca52dc759f8a3049b3e85c048c0861974ddc67fb97d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton.json": {
-      "etag": "\"bee4-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton.md",
       "hash": "836f2302b1f4a5ad90118b6397a4e4740e28b3de88c1a9e8732513f201df04cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum.json": {
-      "etag": "\"1b16-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum.md",
       "hash": "a4439db66c012cc7c118305cac9ef916d137e63ae6c0e1ff36dfab6aa7ce95ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/batchinstall(_:).json": {
-      "etag": "\"15d2-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/batchinstall(_).md",
       "hash": "fbfa026f3d8becec350210a077663739576a1fd1f24f6297b82d2d5669a556a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/delete(_:).json": {
-      "etag": "\"1497-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/delete(_).md",
       "hash": "9319816d0afda0431d8073b2c1cfd71ceacd2fa0b94ad8f40363470b92a208f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/install(_:).json": {
-      "etag": "\"1559-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/install(_).md",
       "hash": "b16846350540d23686cd69e561281f8ac8a09ef8ac2cae370f6c457cd2b3d464"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/launch(_:).json": {
-      "etag": "\"1497-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/launch(_).md",
       "hash": "cc96c88875a3744eff14c3c2b55b5f2654258640fc88b791e160d1528e30fbc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.property.json": {
-      "etag": "\"174a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.property.md",
       "hash": "e547ef69485c99ce23316abc103e522f66dea043a608bbdcbd0d44f9bfb0a969"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/backgroundcolor.json": {
-      "etag": "\"16bf-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/backgroundcolor.md",
       "hash": "6ebae8168871ffcf620bca86a6a9c1218114b5f6a42b9eebd458758eb93798ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/bordercolor.json": {
-      "etag": "\"15e1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/bordercolor.md",
       "hash": "047642411dc8796dcdff7c68ce190d2f53d15c3c51e040e2aa151e956603d18e"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/borderwidth.json": {
-      "etag": "\"159c-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/borderwidth.md",
       "hash": "c9895964138214d7473f7fd45eda854284591dff272876083d8a4133defec90c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement.json": {
-      "etag": "\"255a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement.md",
       "hash": "59793202f1f8259c3b03493576ccb36a2cb7d8e0d7b3a78df20c91e6a6e6c177"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/bottom.json": {
-      "etag": "\"108a-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/bottom.md",
       "hash": "9bb12c9af1acbc389d40c07f62112b616ac14613234dc8cc720af40c9cd8d694"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/leading.json": {
-      "etag": "\"1095-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/leading.md",
       "hash": "e45a635177157720f3317dc2528536b19b7167c2f2ab301a9a57e2c7e2008f41"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/top.json": {
-      "etag": "\"1069-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/top.md",
       "hash": "c4f12823369da70fd10e468b1c25e38b4afe78794d83f83ace7c0c27dbb7f1a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/trailing.json": {
-      "etag": "\"10a0-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/trailing.md",
       "hash": "1a05446c43e5278e673d2881241e7cb235a8e8330e39f389f0450f4ac9f922d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/cornerradius.json": {
-      "etag": "\"15a7-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/cornerradius.md",
       "hash": "426feacab65fb5bc4319a127443680ec6aa9eaef4381f3959fcee98a1648cccd"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/fontsize.json": {
-      "etag": "\"157a-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/fontsize.md",
       "hash": "2ec2028031c432298215ba92f352bf9edceb590a3af0e958e34182668d549f95"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/imagename.json": {
-      "etag": "\"14e2-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/imagename.md",
       "hash": "6d2e1ab9a0fcbe73ef7ec84fb45c93a65dc24d39b8d1093c7230d4a67df482cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/imageplacement.json": {
-      "etag": "\"1843-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/imageplacement.md",
       "hash": "7afee28b6c8c2f7ffcc2ef542c9a68c81b3868fa9f052f7b693841b2f417cb82"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/init(action:).json": {
-      "etag": "\"1750-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/init(action).md",
       "hash": "e3551604a255c42a9505a5f0c849530fbc82d075b655752623d973614071235b"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/isenabled.json": {
-      "etag": "\"1586-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/isenabled.md",
       "hash": "c0092a705d1c45b59c7a68cf78241aeb81e4b215a1abf4c4ab2c724b3577afdf"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/ishighlighted.json": {
-      "etag": "\"15b2-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/ishighlighted.md",
       "hash": "c82226255d3efcb0825991c915972e3df456952fb91e49d097eaa55eca19a1eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/label.json": {
-      "etag": "\"147d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/label.md",
       "hash": "c0260dfd1f17d3ce8e41c0f71e6bbb32a672b156118cc59d0e5180dc5b303c79"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/size.json": {
-      "etag": "\"159d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/size.md",
       "hash": "cd1cce253b45a7b58ab41120dde70f0c7bda5eccf044fd668da6a388645c1b6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/tintcolor.json": {
-      "etag": "\"167d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/tintcolor.md",
       "hash": "fef0695ed263096cbad2a3de47ced72b1e8eadff57744b2f93e2054f448035cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor.json": {
-      "etag": "\"3b26-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor.md",
       "hash": "21ef520033552331283408db47feaa831d84bacf9c7f80d5253adfef0e984ffe"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/appstore.json": {
-      "etag": "\"fed-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/appstore.md",
       "hash": "a6260e17c017fd904958113a596f9a4dc650aba1ea921824b8078374b4fa2be6"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/current.json": {
-      "etag": "\"1a22-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/current.md",
       "hash": "9246f7ee92b1471110f17801a920d85ba757c912b5b49503dae6c3af2f28d273"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/eligibilityregion.json": {
-      "etag": "\"1ea9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/eligibilityregion.md",
       "hash": "24efea3b3d1e85b598c30019d3633b78c409ef6a655a4636a066305c5ced91f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/marketplace(_:).json": {
-      "etag": "\"13ea-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/marketplace(_).md",
       "hash": "1ef8932189688724256f8350fe543346e33c88cfa40fa099813730d681f0fcba"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/other.json": {
-      "etag": "\"fcc-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/other.md",
       "hash": "b9bf28377ea38958c1ef3e4ede2bc43206fa21e9f73dc9412afa4965eb6fce80"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/testflight.json": {
-      "etag": "\"1004-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/testflight.md",
       "hash": "7499326836f3876c926e008ddaa0b09f5c988d09baa47ae9442fd59b5767a534"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/web.json": {
-      "etag": "\"1243-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/web.md",
       "hash": "9e48b4c30f73426668905a7d31f8fae05151daa7ceacdf88ae359473c42a43a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appleitemid.json": {
-      "etag": "\"2953-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/appleitemid.md",
       "hash": "d85d001656fa27c265418a921f078925763438a0ab4f5e55e568198f7c41e03a"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appleversionid.json": {
-      "etag": "\"2973-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/appleversionid.md",
       "hash": "5994a298628cc772080d08990fd40bc0c737569a0a14e7807f3db8b22ff96ffc"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary.json": {
-      "etag": "\"a649-65da2dd5a6e70-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary.md",
       "hash": "1cda3234f247c83f8e9b12d85cd4c1ae15145b6640e9d6bfd1e6924ae46e8567"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app(forappleitemid:).json": {
-      "etag": "\"2133-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app(forappleitemid).md",
       "hash": "bdd55c1c04282fe4c997108f226d79c8ec347c6fcf3d23f16646fdc847774a3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app.json": {
-      "etag": "\"5cf6-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app.md",
       "hash": "b19de89f8ce9ebf3e656ff399a716939987085f2be0f367cede67b1617fd5c01"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.property.json": {
-      "etag": "\"2af9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swift.property.md",
       "hash": "aac1e89f42946eaa1d188912be50bc82964ef0f97b053d707db662c2e79eac5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.struct.json": {
-      "etag": "\"2fa8-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swift.struct.md",
       "hash": "b295852175339b1836682a879a307de549d061fbc96501aa8f75e17a8dd71691"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.struct/progress.json": {
-      "etag": "\"1e52-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swift.struct/progress.md",
       "hash": "30f83582e1dd5f620d2cecd79376bba09ff06bc50a6719f5baf1fab750b32d5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installationerror.json": {
-      "etag": "\"2a9f-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installationerror.md",
       "hash": "1638951f2dd37bff8ce85a01a6ab4ea79379cefeac766228b9edc69d8b4a512b"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installedmetadata.json": {
-      "etag": "\"1e07-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installedmetadata.md",
       "hash": "d74a0a1266af07ea86449554ddd72dfeec6fac51315e652f7051f5d2646abd88"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isinstalled.json": {
-      "etag": "\"29ed-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isinstalled.md",
       "hash": "b63042d492664780d0588321e5b66a396802282bd609ea976061dc9bc2f32738"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isinstalling.json": {
-      "etag": "\"29f5-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isinstalling.md",
       "hash": "d1eca875d98ea0caa3e6e81005020c6c994095e52f43bbdcaccecd3c9f4ea65c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isupdating.json": {
-      "etag": "\"29e4-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isupdating.md",
       "hash": "3398ced002f60a3303b3065791504ede12389693acd249ae7d3d2320520a7cfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata.json": {
-      "etag": "\"2c15-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata.md",
       "hash": "7cfd0da6f834dbba9a999696f32f66a6bea4b0ee949bc3024cd5cb3e64fa8125"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/account.json": {
-      "etag": "\"1f6c-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/account.md",
       "hash": "e59752907010f4b5a0768d0645f04c9369161cfd3bc5ed6a26ba670a836db274"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/appleversionid.json": {
-      "etag": "\"2008-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/appleversionid.md",
       "hash": "da3a592f3dd815d1d9bbd1bf10d629eb370b24223efc905c36f72bd30c85f8d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/shortversion.json": {
-      "etag": "\"1f4e-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/shortversion.md",
       "hash": "e6e30152aa2bb0da4416fe73c6ba8cc65aa19f36ac728e9f422e1b35c376e4c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/version.json": {
-      "etag": "\"1f34-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/version.md",
       "hash": "88d30b6649fe3e17f1d13ff01c12f8429391374400ae81483525b9a6e883f395"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/presentageexceptionapproveinpersonsheet().json": {
-      "etag": "\"2549-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/presentageexceptionapproveinpersonsheet().md",
       "hash": "84e3d048ebe19907815d0b542d286c406868f252dca7ca38372e98327dc11f02"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/requestdeletion(in:).json": {
-      "etag": "\"1dc1-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/requestdeletion(in).md",
       "hash": "2d8ad566497ba4e93a9f6ea389114a8b25282fec45354b72cfa38ac1a818d844"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/catalogregion.json": {
-      "etag": "\"1957-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/catalogregion.md",
       "hash": "0d52298d0dc0d3c5c23deb448b501de36ec7bd6abebac65bfdc70b77ab9e7979"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/current.json": {
-      "etag": "\"1513-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/current.md",
       "hash": "61367b999500b3c81c50a136bd11aa5af983538b23bba87b196634078f5d4b7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/currentageexceptionrequests().json": {
-      "etag": "\"2e1e-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/currentageexceptionrequests().md",
       "hash": "23164c178889c0c126d98f5b6f0a1cf914d58f5d243f90af5d053712f1a7bde5"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/didauthenticate(account:).json": {
-      "etag": "\"20d9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/didauthenticate(account).md",
       "hash": "198ee584e02f373851037a20cb8242f24c0e76790ed1af92d07cb5cce18eccbf"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest.json": {
-      "etag": "\"347e-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest.md",
       "hash": "7821648e083545ea025746e613c85508d2c9086c7b06770ec2927f27f3ef41d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/appleitemid.json": {
-      "etag": "\"1568-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/appleitemid.md",
       "hash": "dc2e18a8c3cab8715fead397af4f0d8e01ac865b04da39dc0067dbbce55697eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum.json": {
-      "etag": "\"3a2a-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum.md",
       "hash": "c14323a7c6fa608c08dfa8f2e6c726dfedb3b56a9e61c685afb250e5c53ba0eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/approved.json": {
-      "etag": "\"1bf9-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/approved.md",
       "hash": "d24830beb52cafe0ae999adc73ac025aa9acb7030e1551364e5b1772c866428c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/declined.json": {
-      "etag": "\"1bfc-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/declined.md",
       "hash": "7089a156cb593b589c6a43c783fbe054be8ff77a0c5834017aef22253b1bf752"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/pending.json": {
-      "etag": "\"1bfa-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/pending.md",
       "hash": "06a9ec1e1cf6343c54570e34e6e1c06cbed2475110212d783180c778c18f4229"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.property.json": {
-      "etag": "\"1b85-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.property.md",
       "hash": "3bed351b40d8cf54f8e7177f972c323265a2a967bfa9d6acc5676b07a711061d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest.json": {
-      "etag": "\"3088-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest.md",
       "hash": "7e5a8e3eebaf48d6dc0bdea19b340b0f4cb871eb08dd4545250e5cb721978b63"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/account.json": {
-      "etag": "\"1e19-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/account.md",
       "hash": "5c2bd220a2a4f5d9b542a072551add1589256963bb4fd791451041761f3bdbae"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/alternativedistributionpackageurl.json": {
-      "etag": "\"1efa-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/alternativedistributionpackageurl.md",
       "hash": "bf119e9afa76c34561e0833a929d0f5adcbf96ae5288b4eaf5eb29fe05d96f80"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/appshareurl.json": {
-      "etag": "\"1ec4-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/appshareurl.md",
       "hash": "dd3895a71478d054ec660528cc14bcbb08d947178891594e802030dcf31346ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/init(alternativedistributionpackageurl:account:installverificationtoken:).json": {
-      "etag": "\"1dce-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/init(alternativedistributionpackageurl,account,installverificationtoken).md",
       "hash": "4fec88733afdd95c4b4157af9047ccc4ff94091a300de9921c87b4e441954be1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/installverificationtoken.json": {
-      "etag": "\"1e6f-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/installverificationtoken.md",
       "hash": "9ad738df82d1f8fdedfd039c198a77f6d2608f1fad8d8db261a37faaaebc62f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installedapps.json": {
-      "etag": "\"2062-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installedapps.md",
       "hash": "3066163a761fbae86b2d25dd728f570ac0e7915f553d2cf87d97b7811c124f82"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installingapps.json": {
-      "etag": "\"26cc-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installingapps.md",
       "hash": "74199d8f12a56d461fb1a8d99037566335f4f09eb134618df1a365e6aca3f0ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/isloading.json": {
-      "etag": "\"243c-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/isloading.md",
       "hash": "75fe0cbbb8a34184179f4f494f10a8315917c01250e9778c2db12b872ebe16bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/maximumallowedagerating.json": {
-      "etag": "\"2f39-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/maximumallowedagerating.md",
       "hash": "19841eb9f6145369694cc0c97db9c50590872af113128f60f1f05311943a9f87"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallation(_:).json": {
-      "etag": "\"2281-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallation(_).md",
       "hash": "e21abfe58febc3382fd3bd9be2897f5fa090c4c4f89f982f6c4d1cff0e373b7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallation(for:account:installverificationtoken:).json": {
-      "etag": "\"2689-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallation(for,account,installverificationtoken).md",
       "hash": "3c4cc962f2385652d6fb35d4a8d6a79b22245e8e221c800534950e2f59c14361"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallationfrombrowser(for:referrer:).json": {
-      "etag": "\"2757-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallationfrombrowser(for,referrer).md",
       "hash": "f68eff2eb8dad3a20f646205643fa0cb97c11d5064f43cc76c23bb2912f998c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappupdate(_:).json": {
-      "etag": "\"1c95-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappupdate(_).md",
       "hash": "e18693523985b7531c6e3a3547e92008fe105a0787a577ebf85d51de8bf154d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappupdate(for:account:installverificationtoken:).json": {
-      "etag": "\"23b4-65d55e078137f-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappupdate(for,account,installverificationtoken).md",
       "hash": "29c2e0dfbb6ce438a4fd7d3851897abe297a58263fcdc8190548cb47d49a320d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestinlineappinstallation(_:subjecttoken:).json": {
-      "etag": "\"3286-65da2dd5e7945-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestinlineappinstallation(_,subjecttoken).md",
       "hash": "557ab18c3841c512fa7d3e07e3436015c1db4e73460541538b379190e802ee5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestlicenserenewal(appleitemids:).json": {
-      "etag": "\"1a8a-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestlicenserenewal(appleitemids).md",
       "hash": "a8b17a89fc88fce04dfc88b96e8daa537ded7543ee5d01b04e4c38ea6f39fe9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/searchterritory.json": {
-      "etag": "\"1945-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/searchterritory.md",
       "hash": "b3d6b23be7aca5241179087acb204a04ef23b20eeb2de68bbb843966d6b95757"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/setsearchterritory(_:).json": {
-      "etag": "\"1f91-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/setsearchterritory(_).md",
       "hash": "bf1604f42635e221026e21bf27284862e1d79aa9902eecb2cdbca159cfc043b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion.json": {
-      "etag": "\"3b2d-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/appversion.md",
       "hash": "81790cf813d4a516fe780ad05d2413f5669b2989ea86168928a7766714fe996c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/appleitemid.json": {
-      "etag": "\"110f-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appversion/appleitemid.md",
       "hash": "dceba3527dc860bcbc5d29665e043b47e4b455840fa83b105c24d6e0b423519d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/appleversionid.json": {
-      "etag": "\"10c4-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appversion/appleversionid.md",
       "hash": "27f832ba59f7acfa42f3f307d5c8aef8b6b280993ec810b4e86abbb31bb0c158"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/init(appleitemid:appleversionid:).json": {
-      "etag": "\"1696-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/appversion/init(appleitemid,appleversionid).md",
       "hash": "d6bed46860f02dfa88f950a9a2d9fac75a8faac867ee91122fd0094b1a6c6554"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate.json": {
-      "etag": "\"43bc-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate.md",
       "hash": "d4c4e1dc828107a8b196550c0a540ac93652918b9072b5c87fda8a5e725f167a"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/account.json": {
-      "etag": "\"108c-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/account.md",
       "hash": "a0fd9e4e77c0aa5044643127b1d6c86d9109b5b6a54baab78c428a67bed6e73d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/alternativedistributionpackage.json": {
-      "etag": "\"11f5-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/alternativedistributionpackage.md",
       "hash": "c0bd32e17ed3a73e6949d86684bcd24a39623cfdd934b42620e89486c36cbba4"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/appleitemid.json": {
-      "etag": "\"115b-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/appleitemid.md",
       "hash": "97623a1f299248ff5c99b5f266266bc8c379534cfb8e63f10eb7c73c41887729"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/appshareurl.json": {
-      "etag": "\"1176-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/appshareurl.md",
       "hash": "6d272c852fd81919728270ed221873e2815491f34a928b48aec6a1a07b7186c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/init(appleitemid:alternativedistributionpackage:account:installverificationtoken:).json": {
-      "etag": "\"1f94-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/init(appleitemid,alternativedistributionpackage,account,installverificationtoken).md",
       "hash": "871f4b66887dea0447293810a95d73da8a943556f772267bd971139881e2fa8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/installverificationtoken.json": {
-      "etag": "\"1148-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/installverificationtoken.md",
       "hash": "6325518867f8aa46664c74d5c8e086d674f05940e1f56cbb02ce07bcb0f586ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration.json": {
-      "etag": "\"31c1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration.md",
       "hash": "26776a52c362a55c2fb9cf721ea239c8e410b9652e92eef0be3d13798a4e36f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/confirminstall.json": {
-      "etag": "\"148c-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/confirminstall.md",
       "hash": "b804a54fcc0d9770959d63bf032a733d1ab82a6e642b88d68f328b5f30972fe5"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/init(installs:confirminstall:).json": {
-      "etag": "\"1af8-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/init(installs,confirminstall).md",
       "hash": "5e7e52afae2d6dfad455eed31cd9c3a3c7227d3b8b096bd1f5b922372db1745c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/installs.json": {
-      "etag": "\"129c-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/installs.md",
       "hash": "738e8cf1c8f4cf2ace99463e56f33d919d5302efa2fce667a09c225849852ad3"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult.json": {
-      "etag": "\"3c16-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult.md",
       "hash": "c228217fec308ad1ac84da4559058da46c51efa001bf08b20dd5e28e80c88953"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/cancel.json": {
-      "etag": "\"e50-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult/cancel.md",
       "hash": "df8ba8850762c2a1fa6039fc3c2f58c69425a7b9e2fbf36e03f1ff929f9964ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:).json": {
-      "etag": "\"1ebd-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult/confirmed(installverificationtokens,authenticationcontext).md",
       "hash": "674caaf6a53bef3c5e93a9ac0d2e74e32641acd860e89b1fcee7d222a9f90b33"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/creating-an-alternative-app-marketplace.json": {
-      "etag": "\"75fe-65b8a746695f4-df\"",
       "file_path": "documentation/MarketplaceKit/creating-an-alternative-app-marketplace.md",
       "hash": "99f57a5d3a3c63f70704d5c4cbd609c82d2bd4683a1125a6076cb54fb0bb8f3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/distributing-your-app-from-your-website.json": {
-      "etag": "\"886c-65da2dd5bc9cb-df\"",
       "file_path": "documentation/MarketplaceKit/distributing-your-app-from-your-website.md",
       "hash": "cfd4bc26bb979d112c1d8ca392eb3aa757f66718a0f50145d1d297c03925a362"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace.json": {
-      "etag": "\"7947-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/distributing-your-app-on-an-alternative-marketplace.md",
       "hash": "c21c63ab5ac1cd8302505f47d16789f34af90467b114de552fee0262edd3669f"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser.json": {
-      "etag": "\"4b7f-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/enabling-alternative-distribution-app-installation-in-a-browser.md",
       "hash": "9dcdf0cda708d084ce9b58938ce40ea91681738134fd9180d6c91c76ab823639"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/ingesting-an-alternative-distribution-package.json": {
-      "etag": "\"8db1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/ingesting-an-alternative-distribution-package.md",
       "hash": "a6c8e4981ef11aff26da1c1422e2e9b0acd3203120c6dc5c4a48b998646f9eda"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration.json": {
-      "etag": "\"3102-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration.md",
       "hash": "e8a076284417f005b9a9e50a084024e0d34e306d74a7fad5be338d56f533c07d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/confirminstall.json": {
-      "etag": "\"1403-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/confirminstall.md",
       "hash": "bf725879074695027b067827d182a0c397e22a2aa15e9f1bcda2a3c1d603fae6"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/init(install:confirminstall:).json": {
-      "etag": "\"1a59-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/init(install,confirminstall).md",
       "hash": "270e758c1f4c716f93b2e6fead3edb8913ff1c9a6a26d3b5cd6f2c99a64b76a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/install.json": {
-      "etag": "\"11f9-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/install.md",
       "hash": "e196592961eff9b049f42a95c02e14ca393df533a1510a10aa339b562ddbc571"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult.json": {
-      "etag": "\"38b3-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult.md",
       "hash": "a040787018d2d8f07172df992a1796763074d73ca77bbc470354ddf855e244d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult/cancel.json": {
-      "etag": "\"dfe-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult/cancel.md",
       "hash": "d784c49aa0bba2675a2c981ba6c4c9edd4b5e7f420bb7de867376c778982fd45"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult/confirmed(installverificationtoken:authenticationcontext:).json": {
-      "etag": "\"1a43-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult/confirmed(installverificationtoken,authenticationcontext).md",
       "hash": "55672443c8b543003037f7dbecca58fb25bb442d7a73c84b6a7592c23fb0dad1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace.json": {
-      "etag": "\"aebf-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/installing-apps-from-an-alternative-marketplace.md",
       "hash": "4f089002543184147538f50a784454e1276ec7fd8f49131983b03b571106c587"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installing-your-app-from-your-website.json": {
-      "etag": "\"7561-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/installing-your-app-from-your-website.md",
       "hash": "f0663c4775b0b29d3ef571b2fd3f0ad8e8b1704c14673e7c1a0d90c97d1132b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata.json": {
-      "etag": "\"4cc1-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata.md",
       "hash": "df7327570364e6b55e62df3236c88875d4e2466da651a9de4cd78c3bb6b16ed0"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/account.json": {
-      "etag": "\"2765-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/account.md",
       "hash": "544333d0bc1dd38e8bfd1f11d8c1dcc642327d6859d0627cd69f377bc8bad71d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/alternativedistributionpackage.json": {
-      "etag": "\"23f0-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/alternativedistributionpackage.md",
       "hash": "a6e7a0c3e8f2a8765aa28a498dd475c27cb9ffaf2c0e59949f3bdf4256db4335"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/appleitemid.json": {
-      "etag": "\"1edf-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/appleitemid.md",
       "hash": "3e6a7b9050a5b10dc0422fdda658b7f4fefeaa46af8318fd3aa82de98ca12dc0"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/appshareurl.json": {
-      "etag": "\"2038-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/appshareurl.md",
       "hash": "99a7f9eb1bee80716377d266b7b5263afaacfd725ab94a2614e7bb34f55a23b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:).json": {
-      "etag": "\"2e19-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/init(account,appleitemid,alternativedistributionpackage,isupdate).md",
       "hash": "f4a11ffa334eea65451f66b0621d27130317c09e5c05aa9a1915b4a967b3eed8"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:appshareurl:requestageexception:).json": {
-      "etag": "\"3fca-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/init(account,appleitemid,alternativedistributionpackage,isupdate,appshareurl,requestageexception).md",
       "hash": "fc650ca7db6ff2b8e7cf30af857afeeca321ab21152ab11aa7bcea58202d1804"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/isupdate.json": {
-      "etag": "\"1ec8-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/isupdate.md",
       "hash": "e1f2851d93a61c40fc84b7a87e85f78849af66533f618b3024fe7e469631b9e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/requestageexception.json": {
-      "etag": "\"2365-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/requestageexception.md",
       "hash": "ca20202e420ba434d2a1513cec9768a3a0cc5ae804e6f0eafd5f7b736a0fda10"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements.json": {
-      "etag": "\"3cd5-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements.md",
       "hash": "b3d26f67becd02a632567e34adfb64325e89b2a18437c42f447548f12385831a"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/ageratingrank.json": {
-      "etag": "\"10ee-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/ageratingrank.md",
       "hash": "b3c187f99613b6217dfa202f3dd1df7454b02a7fccbc4848e1bfecaf6e39fa98"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/expectedinstallsize.json": {
-      "etag": "\"11a2-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/expectedinstallsize.md",
       "hash": "653fc2de91a27b6421df6b1b79c8db1113308f9dde6093a88a357003e7295955"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/init().json": {
-      "etag": "\"ca7-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/init().md",
       "hash": "42b370771b9a91b556be26a83e023b330e561f610d6e66d355adbf3610fdcc26"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/minimumsystemversion.json": {
-      "etag": "\"1245-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/minimumsystemversion.md",
       "hash": "f38f097553f3323c4641a663c7d3f552c557bf154567867e33eba80fc177d278"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/requireddevicecapabilities.json": {
-      "etag": "\"19a5-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/requireddevicecapabilities.md",
       "hash": "3c7286a653c6fcd8032d0c7b76f2c31ccf596e0c74077e0ee5ee2fad12a4368d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/satisfiedbydevice().json": {
-      "etag": "\"1176-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/satisfiedbydevice().md",
       "hash": "c12d8d9c82ad9404044fb5f70f47f0990c7b02fa7dbdba1120c60218ed6c9feb"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension.json": {
-      "etag": "\"36ed-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension.md",
       "hash": "56d1147a9b65080f7c531676343a9b9d0ad13f33c04d8aa995b2c4a2b26ab6f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/additionalheaders(for:account:).json": {
-      "etag": "\"2a96-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/additionalheaders(for,account).md",
       "hash": "e6c27e32c35b5ede0876a756764bfa317a3c7fc7ac8090034bc4a613dffec7f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/automaticupdates(for:).json": {
-      "etag": "\"19e3-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/automaticupdates(for).md",
       "hash": "7531e425877d51453fa58257ccca48f5d0989339c949458b890cc7c9776f18d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/availableappversions(forappleitemids:).json": {
-      "etag": "\"1956-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/availableappversions(forappleitemids).md",
       "hash": "5239e59592a975ae76be8289ae60f655eac81dce5c8509664196e04ee14b7db1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/requestfailed(response:).json": {
-      "etag": "\"2486-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/requestfailed(response).md",
       "hash": "533c25b120ad3d0d9c6b8eef3d86d273b3558d3044782b009411598426a44638"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption.json": {
-      "etag": "\"3873-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption.md",
       "hash": "baff7a9080bc000fb00b7a2519998c1e2a0c126d3daa5f76ce663d03e63fbf66"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/authentication(account:).json": {
-      "etag": "\"12ec-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/authentication(account).md",
       "hash": "135d7a54a1be2320c35f36f4866e0398abd51a9e5a0cc4b80cda0674a39463d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/productpage(appleitemid:appleversionid:).json": {
-      "etag": "\"1929-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/productpage(appleitemid,appleversionid).md",
       "hash": "80dba337ee50e85d8630445cad7cb421366dae732e1a9f1c41562be5273d638e"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/searchresults(query:).json": {
-      "etag": "\"12cd-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/searchresults(query).md",
       "hash": "37b5e370f366f5e88180ff761324378eae09a24dbece3f6359961e95cd4e3827"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension.json": {
-      "etag": "\"2c3c-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension.md",
       "hash": "390323c2c51df74fcaff769b5365386949278c434a700e31a2860f88ba7dfb9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/additionalheaders(for:account:).json": {
-      "etag": "\"1bb1-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/additionalheaders(for,account).md",
       "hash": "f4c4508974cf43a7b126d7ac93f0b7b3e31a3bf9ecc36604ea9b2aab13002a79"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/automaticupdates(for:).json": {
-      "etag": "\"1a6a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/automaticupdates(for).md",
       "hash": "df33a46bad71977d4f077d174ac60499a3bc616447a318db6762e3e40845c4d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/availableappversions(forappleitemids:).json": {
-      "etag": "\"1928-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/availableappversions(forappleitemids).md",
       "hash": "e881cc1fcf1bcbe5be58d1c7c37a25a5d10cba4927585f0f7242610b4477bea7"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/requestfailed(with:).json": {
-      "etag": "\"1a2a-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/requestfailed(with).md",
       "hash": "0a6a5770a165f78e74de9582c598a23a7c27ba56c6c3e0f7615aba7599e4f964"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextensionconfiguration.json": {
-      "etag": "\"1c88-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextensionconfiguration.md",
       "hash": "f847d2dd59b5b1c45a0b0a3b4e0642ccc484639bd035b2a339f4143af3caf5d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror.json": {
-      "etag": "\"6950-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror.md",
       "hash": "84cb8f7ff07835e76e87096f80701e6a1f994c2277e71db29c821102190468c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/ageratingexceptionnotneeded.json": {
-      "etag": "\"2116-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/ageratingexceptionnotneeded.md",
       "hash": "4b9af1fc26dd5e6c1762195cee85f50528685a8342065ae2fcbe8178eb009279"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/appnotinstalled.json": {
-      "etag": "\"1bca-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/appnotinstalled.md",
       "hash": "e98e94371ab12cc7df4218ae9c510f4148f44815e321864576c9ff4379a09b11"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/cancelled.json": {
-      "etag": "\"1c86-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/cancelled.md",
       "hash": "25fb7ddb20e573c686776da20442a9eba254ce599f5b1bf5adf0c155a6d986c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/featureunavailable.json": {
-      "etag": "\"19d1-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/featureunavailable.md",
       "hash": "a9badc9291a5ebc7f5f0eae06c291a2922d7b70686b44be447ec8ab949c047a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/installationofmarketplacedenied.json": {
-      "etag": "\"1c01-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/installationofmarketplacedenied.md",
       "hash": "154c893b36ce6bfe5da6997eae60a52e5b297d1cbfab13ae690e6c276acbf3c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/installationrestricted.json": {
-      "etag": "\"1bd4-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/installationrestricted.md",
       "hash": "ff90e5591f333682dcb51028b46d0ac8e638a3eb5ba1110f28656e7579a79d61"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/insufficientstoragespace(_:).json": {
-      "etag": "\"28b3-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/insufficientstoragespace(_).md",
       "hash": "63d66df475061e0d59d56275a6d255dac3dabe480f9353be663052804c6476bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackagesignature.json": {
-      "etag": "\"1c36-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidalternativedistributionpackagesignature.md",
       "hash": "50872d69250adf2cdde9ae9a60315bead22d6bc3c3b5fb9ebb51985117df25ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackageurl.json": {
-      "etag": "\"1c12-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidalternativedistributionpackageurl.md",
       "hash": "6edde76759c1800f2f1464bb13aa309843ad85cb7d1edda5f65963dacb4f541d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidlicense.json": {
-      "etag": "\"1b8b-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidlicense.md",
       "hash": "d0f8de49389b66cd930f9d2951c547bbc3c3cab45d4d874a636f91f30854634b"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidmanifest.json": {
-      "etag": "\"1b9a-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidmanifest.md",
       "hash": "303dfd20590a39c4c791fb6de1a405d53871dbf9e03f1478bba2da9217a2f0aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidurl.json": {
-      "etag": "\"1b7a-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidurl.md",
       "hash": "e223ecbbfb59495110084e49cc1854e0c589f4693b439334479637f515cc7419"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/minimumplatformversionnotsatisfied(_:).json": {
-      "etag": "\"21b7-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/minimumplatformversionnotsatisfied(_).md",
       "hash": "47c4bd9d3426a1b629b2857942970185040dde2fdfe2bfbb96f07cf2cab11eed"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/mismatchedinstalltype.json": {
-      "etag": "\"1bfa-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/mismatchedinstalltype.md",
       "hash": "7cef353273242743df546eda1e60b98a6e3ac7d7e8a24a2e6d2a2da0d5f25cf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missingageratingexceptionrequest.json": {
-      "etag": "\"22d1-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missingageratingexceptionrequest.md",
       "hash": "39f7a6d3a1017cbafb540a848981c57195c6579a003ad57d385d86e6ee734541"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missingcapabilities(_:).json": {
-      "etag": "\"215e-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missingcapabilities(_).md",
       "hash": "dbb8315455216cb4d2e774dad693088d4f0393fc8c44f642eb3270cf987d129e"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missinginstallverificationtoken.json": {
-      "etag": "\"1c01-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missinginstallverificationtoken.md",
       "hash": "6004a1a4059d7260976863e0f1fec983f50e58c41c6ca50bd95170a22f5a1e08"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/networkerror.json": {
-      "etag": "\"19ae-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/networkerror.md",
       "hash": "6987bc1e8baa135ab1aefe8493985bfe59550459e10100f88755ea642d077895"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/nosupportedvariant.json": {
-      "etag": "\"1e10-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/nosupportedvariant.md",
       "hash": "0e648f540380be53d9a8fce735ee78c146eaecd158bf58c76f26f1faf7fa3b06"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/oauthtokenerror.json": {
-      "etag": "\"19d3-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/oauthtokenerror.md",
       "hash": "d008e7bd786dcadac172b10dee94da10e37a143f13306ac3d35de23fdec6f65a"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/ratingrestricted.json": {
-      "etag": "\"1c88-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/ratingrestricted.md",
       "hash": "56ed1b75c5109f2ec14a450e7bef257db6ea4cd90c6f4c9bc8802a843c85f392"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/unknown.json": {
-      "etag": "\"198f-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/unknown.md",
       "hash": "dff3471d4069ecfcd5fedddf030afce63eb754610d3749bd90c22509186ea241"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/unsupportedplatform.json": {
-      "etag": "\"1e06-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/unsupportedplatform.md",
       "hash": "519e35bd49a0f07295b29a6c26a24ba08af99a1360bf82d3a0c13ff540753110"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiturischeme.json": {
-      "etag": "\"4cbd-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiturischeme.md",
       "hash": "bf7b3321cbe22f4b696ebbea159fcc826fdefe4da2eed8e5e9a28f904d13f7b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacescenedelegate.json": {
-      "etag": "\"2749-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacescenedelegate.md",
       "hash": "adeaeb84a23f3f8d38b3d9b34ab90f5ae5f19abfc3b5fe4cd3745952843decfd"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacescenedelegate/scene(_:askedtodisplay:).json": {
-      "etag": "\"19fe-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/marketplacescenedelegate/scene(_,askedtodisplay).md",
       "hash": "ef06cce2f2f8206497bcea553bfed64e1cf11c0359196eabd73d84dbee6ed155"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/participating-in-alternative-distribution-for-specific-regions.json": {
-      "etag": "\"3342-659026b67da24-df\"",
       "file_path": "documentation/MarketplaceKit/participating-in-alternative-distribution-for-specific-regions.md",
       "hash": "22d766f9c669d51af2193b0468e97bca45d4ff595b60c6ab347b949050e612b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/processing-alternative-marketplace-notifications.json": {
-      "etag": "\"5ccd-65d55e075bd7c-df\"",
       "file_path": "documentation/MarketplaceKit/processing-alternative-marketplace-notifications.md",
       "hash": "5b3312701a6e2360dcad86e3f75945372dd36738f368443309f9e0a4b26d1a18"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/providing-age-rating-appropriate-content.json": {
-      "etag": "\"6265-659026b67da24-df\"",
       "file_path": "documentation/MarketplaceKit/providing-age-rating-appropriate-content.md",
       "hash": "9ef91871a6b4378faafd7980cf094d9e3e7b2b4c11f48b578f384a45dba19860"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/reauthenticating-a-person-to-manage-apps.json": {
-      "etag": "\"708e-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/reauthenticating-a-person-to-manage-apps.md",
       "hash": "ff20a9de4024bdf3ccc0121f94c28faf372ebc7e3e1ffa5ec62dc6efdebd069d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/reporting-transactions-for-core-technology-commission.json": {
-      "etag": "\"4b04-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/reporting-transactions-for-core-technology-commission.md",
       "hash": "40504a95cd1a15ab61f4df0a81816d9f9bbb198a0860ec004cb0d0f89b127e73"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/requestappdeletionaction.json": {
-      "etag": "\"2b7e-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/requestappdeletionaction.md",
       "hash": "202a3ecf4326469cf53f11b8a7584b29a55035699ec87c9f9de37227dfa1a66c"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/requestappdeletionaction/callasfunction(_:).json": {
-      "etag": "\"1b25-65d55e0743a8e-df\"",
       "file_path": "documentation/MarketplaceKit/requestappdeletionaction/callasfunction(_).md",
       "hash": "1f6e8a59b035bd9b2a8f609fa061efc007ce1095a92d779255d0053742cfd3a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/supplying-an-install-verification-token.json": {
-      "etag": "\"5f39-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/supplying-an-install-verification-token.md",
       "hash": "07d3e90bcc50a28ea31b6dd790cdbacb2a970b64219de4626f867abe772f2d83"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting.json": {
-      "etag": "\"25d7-65d55e06af28a-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting.md",
       "hash": "f8493eb8beb04c627928ef48b866d25a4082b95401fd8d17641f62389eb1da0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting/token(for:).json": {
-      "etag": "\"32d0-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/token(for).md",
       "hash": "a07ce37bc1530000377db47d9ef19d01e5eed3cd021376d4cce604c1efd03db1"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting/tokentype.json": {
-      "etag": "\"1bde-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/tokentype.md",
       "hash": "784eacb6ef2bd01c7d59c8b41ff0f987805592ad95bb303e67b1a639056d2f9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting/tokentype/coretechnology.json": {
-      "etag": "\"20a0-65d55e0777e9c-df\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/tokentype/coretechnology.md",
       "hash": "10a13beb61562067e80ac9a69125f9f6722e0876561c403a5e2b4a1f82c7431a"
     }

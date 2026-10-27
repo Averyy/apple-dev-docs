@@ -1,72 +1,58 @@
 {
   "hashes": {
     "https://docs.swift.org/latest/data/documentation/swiftlinux.json": {
-      "etag": "\"1404-65e3d3802fd80\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/SwiftLinux.md",
       "hash": "3de2d534d7d707fa2486311a627ef891f55eb4abde86dfad54a58c5d8fa97d2a"
     },
     "https://docs.swift.org/latest/data/documentation/swiftlinux/building.json": {
-      "etag": "\"72c2-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/building.md",
       "hash": "c485514119ebaf23246b0ad494698237a40694b7c522dc4cc1e5ad5faeca72b7"
     },
     "https://docs.swift.org/latest/data/documentation/swiftlinux/debugging-a-service-using-a-backtrace.json": {
-      "etag": "\"7951-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/debugging-a-service-using-a-backtrace.md",
       "hash": "2e0df2cd4c89545ef38e1ce22115cd7fb1aa79b45e393e73b00ec66732b88399"
     },
     "https://docs.swift.org/latest/data/documentation/swiftlinux/deploying-static-binaries.json": {
-      "etag": "\"46c0-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/deploying-static-binaries.md",
       "hash": "b1445caef701427403ebca98b03d907b48a4b75e80aadcb038a90bfaf69e0623"
     },
     "https://docs.swift.org/latest/data/documentation/swiftlinux/packaging.json": {
-      "etag": "\"8079-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/packaging.md",
       "hash": "eaf15da96632b9c6cad865e2ae096a57c1554f539cddb63fdcadf8bea15f1627"
     },
     "https://docs.swift.org/latest/data/documentation/swiftlinux/prior-articles.json": {
-      "etag": "\"323d-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/prior-articles.md",
       "hash": "dc9d743b65c4292d43ddc9656e9c972501ce2f19d1d57331ebf0439029f9b1eb"
     },
     "https://docs.swift.org/latest/data/documentation/swiftlinux/serverguides.json": {
-      "etag": "\"120e-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/serverguides.md",
       "hash": "510200f377d0da04095aa3903673939b3ac92f799b49ef8fb098c35fe40401d1"
     },
     "https://docs.swift.org/latest/documentation/swiftlinux": {
-      "etag": "\"1404-65e3d3802fd80\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/SwiftLinux.md",
       "hash": "3de2d534d7d707fa2486311a627ef891f55eb4abde86dfad54a58c5d8fa97d2a"
     },
     "https://docs.swift.org/latest/documentation/swiftlinux/building": {
-      "etag": "\"72c2-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/building.md",
       "hash": "c485514119ebaf23246b0ad494698237a40694b7c522dc4cc1e5ad5faeca72b7"
     },
     "https://docs.swift.org/latest/documentation/swiftlinux/debugging-a-service-using-a-backtrace": {
-      "etag": "\"7951-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/debugging-a-service-using-a-backtrace.md",
       "hash": "2e0df2cd4c89545ef38e1ce22115cd7fb1aa79b45e393e73b00ec66732b88399"
     },
     "https://docs.swift.org/latest/documentation/swiftlinux/deploying-static-binaries": {
-      "etag": "\"46c0-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/deploying-static-binaries.md",
       "hash": "b1445caef701427403ebca98b03d907b48a4b75e80aadcb038a90bfaf69e0623"
     },
     "https://docs.swift.org/latest/documentation/swiftlinux/packaging": {
-      "etag": "\"8079-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/packaging.md",
       "hash": "eaf15da96632b9c6cad865e2ae096a57c1554f539cddb63fdcadf8bea15f1627"
     },
     "https://docs.swift.org/latest/documentation/swiftlinux/prior-articles": {
-      "etag": "\"323d-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/prior-articles.md",
       "hash": "dc9d743b65c4292d43ddc9656e9c972501ce2f19d1d57331ebf0439029f9b1eb"
     },
     "https://docs.swift.org/latest/documentation/swiftlinux/serverguides": {
-      "etag": "\"120e-659e1dc6e6540\"",
       "file_path": "documentation/Swift-Org/SwiftLinux/serverguides.md",
       "hash": "510200f377d0da04095aa3903673939b3ac92f799b49ef8fb098c35fe40401d1"
     }

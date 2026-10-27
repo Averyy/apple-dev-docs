@@ -1,2242 +1,1794 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/IOSurface": {
-      "etag": "\"71fb-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/IOSurface.md",
       "hash": "a3d61b98a4fb9bc59799ab39bb9854ec77dc269e2a8f442e9ba96c58bed80a1d"
     },
     "https://developer.apple.com/documentation/iosurface/iosfc_deprecated_msg": {
-      "etag": "\"ee6-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosfc_deprecated_msg.md",
       "hash": "3431793f5ef8473b1be0c3dadc1ba2497df2d2bf8bb482d30d62b9e53827d1cb"
     },
     "https://developer.apple.com/documentation/iosurface/iosfc_ios_deprecated_msg": {
-      "etag": "\"efe-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosfc_ios_deprecated_msg.md",
       "hash": "187dc04ea3870a361cf368653bc2f204f8148674da6b46ee991946cffda75a62"
     },
     "https://developer.apple.com/documentation/iosurface/iosfc_swift_name": {
-      "etag": "\"ed1-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosfc_swift_name.md",
       "hash": "40ac34b7896db7f105253f999739ec057dbfcd5de7d5d28757cd41d72c520c40"
     },
     "https://developer.apple.com/documentation/iosurface/iosfc_swift_nonsendable": {
-      "etag": "\"ac0-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosfc_swift_nonsendable.md",
       "hash": "33bb78c93b20c66d597e43edf49b5990d7af7e25ef66d6702d9df76e4caba7ca"
     },
     "https://developer.apple.com/documentation/iosurface/iosfc_swift_sendable": {
-      "etag": "\"a9c-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosfc_swift_sendable.md",
       "hash": "ee90b93a16842d60b2802eb541b67b2c5a88dcd3546712f08d20e03d4f241ea1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface": {
-      "etag": "\"ed4a-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurface-page.md",
       "hash": "de2901ca67f794193900dcd37d1f5e93ef4c8a28ae768d34a505e3be5f7d202f"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface-constants": {
-      "etag": "\"b02b-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-constants.md",
       "hash": "9829dcc8fa1b34c56298d676002c0a60f149e5b0030d5b55f01de7c7bed5dba1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface-data-types": {
-      "etag": "\"165f-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-data-types.md",
       "hash": "0076322f4bd9283893f3580d46d8543687ec6bc7fd8cf351e7d69ee728b495c1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface-enumerations": {
-      "etag": "\"28e3-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-enumerations.md",
       "hash": "06a9a3d0714eff6b273b242bd88c5c5b1662ebca4507823d33d9763a18739ddb"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface-functions": {
-      "etag": "\"13c05-659028e9d5f50-df\"",
       "file_path": "documentation/IOSurface/iosurface-functions.md",
       "hash": "6343bd5d2dbbdc01b9de58a9f31acc02b35aa8b731300592e19550fa4ffa7df3"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface-structures": {
-      "etag": "\"1968-659028ea9312b-df\"",
       "file_path": "documentation/IOSurface/iosurface-structures.md",
       "hash": "d7d18d54e88278b84d9540ab523f96b7a0b2d02ab635ccda17ea9cc06456addf"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/allattachments()": {
-      "etag": "\"741c-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/allattachments().md",
       "hash": "1a6fcc14ec01156210a48ce770fa3c6eeedbf103bbe7d839028343c394343c6d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/allocationsize": {
-      "etag": "\"52b7-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/allocationsize.md",
       "hash": "56f0e48e69ce4b861551ba7f95693f3e4b6c5f19ed2c3bc4f3b94da7fa8eca06"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/allowspixelsizecasting": {
-      "etag": "\"538a-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/allowspixelsizecasting.md",
       "hash": "9a1ae4b2821ef08f38676452a9c0f63328a85806974b0e38f1a64dd63c07351a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/attachment(forkey:)": {
-      "etag": "\"7551-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/attachment(forkey).md",
       "hash": "b0586c841fac0797138f4f8ed20bce9d82c18c662e9966178d9c655579f07b71"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/baseaddress": {
-      "etag": "\"5360-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/baseaddress.md",
       "hash": "8a56e21a88bfa73c23229cb32b79ff5b20dca31b8095db4b0529970630dde081"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/baseaddressofplane(at:)": {
-      "etag": "\"7540-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/baseaddressofplane(at).md",
       "hash": "c3515b8faba16f3fe3c570dde93fd4dcab584a1b7015d02e93945d2a77daacdb"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/bytesperelement": {
-      "etag": "\"52c0-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperelement.md",
       "hash": "4a32f427fbf36cf6efe150ed825ff0201c4da5241a654fa6681a94fa858b2174"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/bytesperelementofplane(at:)": {
-      "etag": "\"72d3-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperelementofplane(at).md",
       "hash": "14daf666e5035245e4c26c997e1e38e8caacd5b87a4c2c3607dd616c39a55369"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/bytesperrow": {
-      "etag": "\"529c-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperrow.md",
       "hash": "53982b8bc0b8b3e33d9bebce702f223cf2f22bfd713cdd822b0ddd8d9fcb654a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/bytesperrowofplane(at:)": {
-      "etag": "\"72af-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperrowofplane(at).md",
       "hash": "f9001583031a908edfa789e266847f275d8866c8cc53623ed93429503b688943"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/decrementusecount()": {
-      "etag": "\"6d41-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/decrementusecount().md",
       "hash": "5237237cc7d016f5d2f804a2511a9fe20bf40dc92be7f46d75519a61d6a9078c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/elementheight": {
-      "etag": "\"52ae-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementheight.md",
       "hash": "ae23973dda80b0e91aa95e9f85471b8ca2af524c70ed6694fe84fd093b450752"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/elementheightofplane(at:)": {
-      "etag": "\"72c1-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementheightofplane(at).md",
       "hash": "e4113a9f82bed3c88d3fb6f5ac611d43b76de5515c851fb5bdf87e790b6ef752"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/elementwidth": {
-      "etag": "\"52a5-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementwidth.md",
       "hash": "87730a0496a28782952407cd9d7f775ee9123d5864943619dfa12f0341d4a61b"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/elementwidthofplane(at:)": {
-      "etag": "\"72b8-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementwidthofplane(at).md",
       "hash": "c745c4e45b916be0ae7ea46ce94e4654d6f706b210e6cbae1a5804c200265832"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/height": {
-      "etag": "\"526f-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/height.md",
       "hash": "40b586e33d01b2a5627bbee6135a8ba389ef9dd260cc9adc37f4a92bd91587b3"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/heightofplane(at:)": {
-      "etag": "\"7282-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/heightofplane(at).md",
       "hash": "780941f98a9e47f6011e75cccc2cce8c4552536da030c2c344ba1a9846198da1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/incrementusecount()": {
-      "etag": "\"6d41-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/incrementusecount().md",
       "hash": "b1e668b7cc6f87e30ba374fafab75917c022af71bb31b0935b70af673def7910"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/init(_:)": {
-      "etag": "\"14d6-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/init(_).md",
       "hash": "2f8a7d889883d324a6ed9e7585f9d7ea3df3d7c31fecdf775531e717bfe958d5"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/init(coder:)": {
-      "etag": "\"142d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/init(coder).md",
       "hash": "626146db4db6850d31c5f99633e703ea113830d0471416b1ddebf4ea6886dd79"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/init(properties:)": {
-      "etag": "\"2353-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/init(properties).md",
       "hash": "3ac51b84dc3dff7df6cb101c5a3d8f7a17606101ed877ce860fc3c82de378a1f"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/isinuse": {
-      "etag": "\"537a-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/isinuse.md",
       "hash": "68f4e78398586408e90d892d508a5bfcbfb9a4d7cf3a88a04c3b50b0220b93d4"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/localusecount": {
-      "etag": "\"5303-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/localusecount.md",
       "hash": "738776d3880f056c0f40350911d61cb78303f52f53ae17e8b38f6f286095700c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/lock(options:seed:)": {
-      "etag": "\"8001-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/lock(options,seed).md",
       "hash": "0d8ab7b8c5158dfa664f5a9db9a1fd68748c6d3f1acc5553aec116b0c2ffd21c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/pixelformat": {
-      "etag": "\"5231-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/pixelformat.md",
       "hash": "0275a84433d5f82e74156a9712a91299f4f32b3f78f1fbe8e1e8815bca4d3d89"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/planecount": {
-      "etag": "\"5295-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/planecount.md",
       "hash": "81ec295e1ab6860320c5b1ba97741eb6a83bb9b1c2dadbedf65af9f18c4013a2"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/removeallattachments()": {
-      "etag": "\"6d5c-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/removeallattachments().md",
       "hash": "3cc99ca3a5de0b65d005831dcb5d2feb9f62ffadbbd48926cd8ab0e2f26beb32"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/removeattachment(forkey:)": {
-      "etag": "\"71f0-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/removeattachment(forkey).md",
       "hash": "76db39a8fec6b44aaba55e4d4f376c519d2562bb83c084a224f6081a4754413f"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/seed": {
-      "etag": "\"52c1-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/seed.md",
       "hash": "ce868a5e3bd2e8f9a17746cb8c1b16c89e5a9f5c784aa1b4e7c14138d3e38cf8"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/setallattachments(_:)": {
-      "etag": "\"7558-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/setallattachments(_).md",
       "hash": "f45713bceda49a2563c3df0567a5342e5df5d6bc8ee0857d2c790d9f6f8fe3b4"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/setattachment(_:forkey:)": {
-      "etag": "\"76d0-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/setattachment(_,forkey).md",
       "hash": "cae25b3eab311c33190b5a9adf78e2e28b83bcc0a114a94fcab269b2894ab6cc"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/setpurgeable(_:oldstate:)": {
-      "etag": "\"7f69-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/setpurgeable(_,oldstate).md",
       "hash": "0427be382bd1dfc302e65a613aff45af181156633235f80711ea475365acc9e6"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/surfaceid": {
-      "etag": "\"1b6d-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/surfaceid.md",
       "hash": "a7b1da74cd3b2da614c95fe70607051094dc349e47f7a692acaa36d44d6414a7"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/unlock(options:seed:)": {
-      "etag": "\"7ffe-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/unlock(options,seed).md",
       "hash": "4111b0db867bf0eadaa0213f4d0d322c9be5c58bfb386c92af54c312a96c4c5b"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/width": {
-      "etag": "\"5266-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/width.md",
       "hash": "35cc2adeadb0df1b367d0594513beae66197f4fc1158b4ed8225de141f662e08"
     },
     "https://developer.apple.com/documentation/iosurface/iosurface/widthofplane(at:)": {
-      "etag": "\"70e3-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/widthofplane(at).md",
       "hash": "5c77f80067264a127f2e6765624b8bad8c1503abc315eb5e387b20c38c8ccaa0"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacealignproperty(_:_:)": {
-      "etag": "\"7c6e-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacealignproperty(_,_).md",
       "hash": "1e25a11358f5303994dec4376beba1664e99d601a720ae65d19aea9ef9430702"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceallowspixelsizecasting(_:)": {
-      "etag": "\"79f2-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceallowspixelsizecasting(_).md",
       "hash": "d5d331f93fa6426e0e1bf51ec21506c909183cd0546aedf18d3666238cf1cd94"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname": {
-      "etag": "\"639b-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname.md",
       "hash": "b5aa6efbfcf1148e3bc6a1fa3383aa4e104ce62537a6c938e05ed125f68a23bd"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/alpha": {
-      "etag": "\"36af-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/alpha.md",
       "hash": "9a29ae843811a13c2604e87816fbcba1d77de6bf521e95d67bf44c14012210b0"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/blue": {
-      "etag": "\"36a6-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/blue.md",
       "hash": "408f2c8179ff64a75e99e69d01ad5c177d6a7b16e6cc8c5226f130fbf20a2a96"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/chromablue": {
-      "etag": "\"36dc-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/chromablue.md",
       "hash": "4d561d4687071c98defa3c416b0b2f271385becc7ede844aedf15e2c4af95708"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/chromared": {
-      "etag": "\"36d3-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/chromared.md",
       "hash": "e294aebca2bfe2f981fec0f778229b95fe0ea687ed7a1d6f6f5f1e5d2a1cfccc"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/green": {
-      "etag": "\"36af-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/green.md",
       "hash": "60669e58cbb015a04b56a57ba913b8c7652e6050738e977ea9c6d1ad4b5aefa1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/init(rawvalue:)": {
-      "etag": "\"13dd-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/init(rawvalue).md",
       "hash": "df1469339fdbb3758b8023a3b5a3b67e451ff35e0bdae22c6e62efd3d6b5561d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/luma": {
-      "etag": "\"36a6-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/luma.md",
       "hash": "8dfc71f4320f0902902d8d59babc7353b63aa3a00ea4f26193c8fa1cbb51cd8d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/red": {
-      "etag": "\"369d-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/red.md",
       "hash": "160103d8ad7e1cb3ffbdd891605afd97f5d3413c1faae34ff9d332e320187d42"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentname/unknown": {
-      "etag": "\"36c1-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/unknown.md",
       "hash": "94bef1c626f02c71e791d99ba2fd7610ff83de6a1894dee0dfb786f9516becf8"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentrange": {
-      "etag": "\"532d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange.md",
       "hash": "4cd2f8a265d0005a9c4d398f1d97b3afb8af82076997e3ab36ac15bbb51b5603"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentrange/fullrange": {
-      "etag": "\"266d-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/fullrange.md",
       "hash": "2187641ea5d7aa9ae7963a56543aca609c584493689cf54f3317fede5885b493"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentrange/init(rawvalue:)": {
-      "etag": "\"13f0-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/init(rawvalue).md",
       "hash": "7c87a8e2082ce1af2bc07a26f25d6652fe1df90bc1c435df76d8d1aeb0c9d72d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentrange/unknown": {
-      "etag": "\"265b-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/unknown.md",
       "hash": "85daf29ff6ea9598d0c6678852af135a4a71f18c6b3cb3f2f8e000652b953421"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentrange/videorange": {
-      "etag": "\"2676-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/videorange.md",
       "hash": "aca8befb45bbf14d4ac6bf77622f85999c7c50f66a976df11be28672dca22187"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponentrange/widerange": {
-      "etag": "\"266d-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/widerange.md",
       "hash": "73e2dc42835e8d8dea87d80ba8aa32b637ead3424748b8b0d7e88b1206d478b2"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponenttype": {
-      "etag": "\"57f5-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype.md",
       "hash": "444609a943ee7764997df7a2a86ca651e6f0d5583a1664a7ec6c0054f79f60a0"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponenttype/float": {
-      "etag": "\"2b09-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/float.md",
       "hash": "240a32c1787f71a70e8c1b5558d820639bc487baa5ad8381e16d21779c19a1a9"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponenttype/init(rawvalue:)": {
-      "etag": "\"13dd-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/init(rawvalue).md",
       "hash": "1c4591fceeb29f5699012d13c0a3c7769007855abb071b46f40b8acc178de853"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponenttype/signedinteger": {
-      "etag": "\"2b51-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/signedinteger.md",
       "hash": "6ac5bf9b7ae223f2d2ebcdb340e0d702c4008ef064372342bd5db313d492c97d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponenttype/signednormalized": {
-      "etag": "\"2b6c-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/signednormalized.md",
       "hash": "b8e1d45ae25c8d9235b735748c2c86c9c9b3abbd60c2ba340855328d06d34587"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponenttype/unknown": {
-      "etag": "\"2b1b-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/unknown.md",
       "hash": "51f44ea208e3aeba0fcc4b27bc8f36fc929167325f91907de3f3891e768a6382"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecomponenttype/unsignedinteger": {
-      "etag": "\"2b63-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/unsignedinteger.md",
       "hash": "f1c26ec50e104c1b884aed72fc7736bdf09000dba9641f2b3341cb59eefeda5e"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecopyallvalues(_:)": {
-      "etag": "\"7bfd-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacecopyallvalues(_).md",
       "hash": "f7bf97461a29f4fc9b170131bcdb024656ab5cf67127a7d79d840da7ce9644fc"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecopyvalue(_:_:)": {
-      "etag": "\"83fd-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecopyvalue(_,_).md",
       "hash": "dcb59c30618606fe1be4312d14a6e84fcbe369d714b853f12439e50b84f87ee4"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecreate(_:)": {
-      "etag": "\"7c11-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacecreate(_).md",
       "hash": "79f6eff076d20908a937899a264fb7d0e92e10ad503d26c2196d6bf3c4b13fc6"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecreatemachport(_:)": {
-      "etag": "\"7c94-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacecreatemachport(_).md",
       "hash": "a74a45f3cdc9571c833bdc17f1d62c701394051c8c945b1ffc652e4b2898973d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacecreatexpcobject(_:)": {
-      "etag": "\"79ee-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacecreatexpcobject(_).md",
       "hash": "e068ff67b60983d76baef0bb9463591502864360d665e7a09e7c840dec22a905"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacedecrementusecount(_:)": {
-      "etag": "\"7764-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacedecrementusecount(_).md",
       "hash": "0532db733b45a31d452f2f21f8a4c69c1eb2cf8cfaa97e01b001f9278d2472aa"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetallocsize(_:)": {
-      "etag": "\"7b3d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetallocsize(_).md",
       "hash": "cd510bdbccb7d5093c4a9fd6721d28f51d90ac6e5994404e7ddd20c116937c7e"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbaseaddress(_:)": {
-      "etag": "\"7c1e-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbaseaddress(_).md",
       "hash": "12f388670f9123e96e11b09d5becdc1e5be2d95eca0346ac2624ca86b2b31510"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbaseaddressofplane(_:_:)": {
-      "etag": "\"8096-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbaseaddressofplane(_,_).md",
       "hash": "028b8df45e93ad3aaae6dda520c69337291c334a8df85cb21035e270972564a0"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbitdepthofcomponentofplane(_:_:_:)": {
-      "etag": "\"7e26-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbitdepthofcomponentofplane(_,_,_).md",
       "hash": "e8203a1d03c9dc9e63d8b6f5e59f0ad0f16e1231767cd019c495a4b046a94277"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbitoffsetofcomponentofplane(_:_:_:)": {
-      "etag": "\"7e2f-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbitoffsetofcomponentofplane(_,_,_).md",
       "hash": "d2233e723a2c9bc3f8541ea3a59099a11ac615c66c4a129b05755c0f5af8dcf0"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbytesperelement(_:)": {
-      "etag": "\"7b73-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperelement(_).md",
       "hash": "5f5be715d2cba8e9fff13a83eb565dab9c5755bf99059f2e16e9ef934b0a9621"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbytesperelementofplane(_:_:)": {
-      "etag": "\"7e22-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperelementofplane(_,_).md",
       "hash": "efdb9329f87955a78489c82f397f64c32f539b981aba24db44b4e2ca8bc54134"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbytesperrow(_:)": {
-      "etag": "\"7b4b-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperrow(_).md",
       "hash": "e31730dfa059690ae39f416bf08c559bc72f31165ee707f7b2ec8837e6fc7d5a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetbytesperrowofplane(_:_:)": {
-      "etag": "\"7eba-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperrowofplane(_,_).md",
       "hash": "2829456b9c0e23bb4adbe82c1662ed6f1ab67bd75f0854c069a243eb8221f2e6"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetelementheight(_:)": {
-      "etag": "\"7b7f-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementheight(_).md",
       "hash": "d6938b4f5a8c182cca2dc0ab688b43eb257c351cd0207b108cf6bdf829c8d418"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetelementheightofplane(_:_:)": {
-      "etag": "\"7ef2-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementheightofplane(_,_).md",
       "hash": "7111afe88ba829db0240a7f11eaf20aa7c08d372e13c929ce795a0fc91fef533"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetelementwidth(_:)": {
-      "etag": "\"7b68-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementwidth(_).md",
       "hash": "0c91a7cfbf8a22ef27212accd38648da14872e081a71a0c4dd38a0e798cfed55"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetelementwidthofplane(_:_:)": {
-      "etag": "\"7edb-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementwidthofplane(_,_).md",
       "hash": "4e0d0660c7f0c21a43df5694a0132e59f57e9248cf571255f227716405b7493a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetheight(_:)": {
-      "etag": "\"7aca-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetheight(_).md",
       "hash": "793bbc1b14c58d26d75dabfc5d2ea74240a0da608df4930332f1d9b5037e14e4"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetheightofplane(_:_:)": {
-      "etag": "\"7e3f-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetheightofplane(_,_).md",
       "hash": "c13946d0df22c5bdecf1ecb0c7bf7dfe4c311bad8e9c7c99f7abab37a4817451"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetid(_:)": {
-      "etag": "\"7d78-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetid(_).md",
       "hash": "a27f1c2bd5e0aaea1c700dcb8851c1ba07eb515f4c2e4e8cb4d2805151170600"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetnameofcomponentofplane(_:_:_:)": {
-      "etag": "\"8447-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetnameofcomponentofplane(_,_,_).md",
       "hash": "975cf0315e5be532530a640b990ea9b02d74fc780479105bbdcaace78b0eb2f0"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetnumberofcomponentsofplane(_:_:)": {
-      "etag": "\"7c8f-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetnumberofcomponentsofplane(_,_).md",
       "hash": "aed052538a6c80d1fc6eba5aa2fe1ac3048c369f645a1cf5fbdd83b3ad3195f9"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetpixelformat(_:)": {
-      "etag": "\"7b0a-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetpixelformat(_).md",
       "hash": "e4afa78e9dfe1f294e61e959642947b637bc446c7364f7cb803dec69b94d5544"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetplanecount(_:)": {
-      "etag": "\"79af-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetplanecount(_).md",
       "hash": "39668b2ab18841bac786faefdf22e1a636cab2555cc22eec328aa2f85201137a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetpropertyalignment(_:)": {
-      "etag": "\"7d23-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetpropertyalignment(_).md",
       "hash": "1784d3cbb7c166a5be9bb1980a1a831daedb4a683e7bd45d34bbb6bc5107487d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetpropertymaximum(_:)": {
-      "etag": "\"7fcd-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetpropertymaximum(_).md",
       "hash": "6fd7ae8e8c5650c7c403afe25eda7aa6b80d7e8d95587833aaf4dfe44cf39037"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetrangeofcomponentofplane(_:_:_:)": {
-      "etag": "\"8472-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetrangeofcomponentofplane(_,_,_).md",
       "hash": "a37a125166aa025028d7300e9d3a215b256f21323996ea4af03126df01e4f57c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetseed(_:)": {
-      "etag": "\"79df-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetseed(_).md",
       "hash": "5ed10f24eb8a69154c52c9b2c71afc445140d2098370c84b86d1a0665cfea348"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetsubsampling(_:)": {
-      "etag": "\"7bff-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetsubsampling(_).md",
       "hash": "c060e34edf8268d2b3bbcbb9f3c4411f15b1def1ca996593a1599664ce0d87da"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegettypeid()": {
-      "etag": "\"72c2-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegettypeid().md",
       "hash": "d6d5b8453b62ca1f4dfaf4202e3029312ebf0e2e2f6c3c2cf54afbcdca12feb5"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegettypeofcomponentofplane(_:_:_:)": {
-      "etag": "\"8447-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegettypeofcomponentofplane(_,_,_).md",
       "hash": "2269304e8693d9f4acef64662d3a08a88f230d4b3b87daa4583fbad7619c5dcc"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetusecount(_:)": {
-      "etag": "\"7a91-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetusecount(_).md",
       "hash": "1bd1fced9295d897b60e414ccc5c97511a43949e0c82a2294103742a46f32c69"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetwidth(_:)": {
-      "etag": "\"7ab3-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetwidth(_).md",
       "hash": "89bf96805b39b63653457d86cda86f76c279276f54757b0e8082f16fa057891f"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacegetwidthofplane(_:_:)": {
-      "etag": "\"7e28-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetwidthofplane(_,_).md",
       "hash": "4fe3daa361052656055e350110a3b9ab907fbc8b99639031c89e683921713d0a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceid": {
-      "etag": "\"16eb-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfaceid.md",
       "hash": "838dfeb7c0284a2fc5324dbf8d5b39afe5fbfa68b7c5e027baa158ecadffb952"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceincrementusecount(_:)": {
-      "etag": "\"77bf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfaceincrementusecount(_).md",
       "hash": "3211b702f28510b298208e3fe5f9e0f96fcfcbbc7df2c3f2b669e6a0a69b437e"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceisinuse(_:)": {
-      "etag": "\"79a6-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfaceisinuse(_).md",
       "hash": "e8bb2e8c1e7118f07fd8ee4dfa7b95549e165dd6bf1e0558082bc823a267ef8d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelock(_:_:_:)": {
-      "etag": "\"980b-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacelock(_,_,_).md",
       "hash": "d14ed1483796e2a6334f94df8de8d2a87b59c05607365b4694b2e17f63d65ee1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelockoptions": {
-      "etag": "\"40ce-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions.md",
       "hash": "e907ac7afd2d61edb3025cc91e0ff8849ed99ca0bc94722ce79e1fd77a8f1c7d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelockoptions/avoidsync": {
-      "etag": "\"21f6-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/avoidsync.md",
       "hash": "74a6ab2b00bea51751a9b9993bfae5d44bd7a1156792c5a14e3c328faea4e014"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelockoptions/init(rawvalue:)": {
-      "etag": "\"13c4-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/init(rawvalue).md",
       "hash": "b86ea2dd3029ace880e2c8f1536ea6398ca1d238701c2e38f433ab34b522180a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelockoptions/readonly": {
-      "etag": "\"21c4-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/readonly.md",
       "hash": "9508c7de3048a23109dbd6a0d81ede95e853af67d1a38a10f6ca69f4a6ec20bc"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelookup(_:)": {
-      "etag": "\"7bc7-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacelookup(_).md",
       "hash": "1109faf52e0c49967dca35217a1f3ec7510b94ae15a682688238f8d1dbec3cd3"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelookupfrommachport(_:)": {
-      "etag": "\"7c25-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacelookupfrommachport(_).md",
       "hash": "17c2735717ccce6154f5e588995e24501ea0ffbfa84970344c5854c6efc4e6ca"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacelookupfromxpcobject(_:)": {
-      "etag": "\"7b29-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelookupfromxpcobject(_).md",
       "hash": "5074fad4fdda10c484bc482b56e9f0337f2ea87c247c17117eb727000695ad23"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgerflags": {
-      "etag": "\"4ba9-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags.md",
       "hash": "62a603f9a2093895cbfefd58646c099f049a23e5fb6b5d35a35a7fa3a5cb5994"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgerflags/init(rawvalue:)": {
-      "etag": "\"1436-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags/init(rawvalue).md",
       "hash": "990897fe0d50e359bca84d599e9601b680f807c359eb07bc399dbf24f6b824e1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgerflags/nofootprint": {
-      "etag": "\"1bb4-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags/nofootprint.md",
       "hash": "8d977dfa9e9ed4948d781ceab376c942335432023cb9cf8763c135c85ec72a41"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgertags": {
-      "etag": "\"5796-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags.md",
       "hash": "72fbff915d9cf7136be158aaaff985510086705cd8408273835a951a21e344e6"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgertags/default": {
-      "etag": "\"2ae0-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/default.md",
       "hash": "7390491000d3ecfdaa218014dac2a6bfbfd6fe8ca9650ea8cbfdff2ffaeb6102"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgertags/graphics": {
-      "etag": "\"2ae5-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/graphics.md",
       "hash": "d9f46faed21b1f84b955a0cfa972197a446559ce26ecd990bc3a7c25683a3b49"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgertags/init(rawvalue:)": {
-      "etag": "\"1416-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/init(rawvalue).md",
       "hash": "81228e759a20e1cfbd1fc60ef4696929bc4e1d6a277397aefd0ad1b7c75cce9c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgertags/media": {
-      "etag": "\"2aca-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/media.md",
       "hash": "625d3954571b976b748f5b37af83bd64f572e597bbbcf701d377436704f229e5"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgertags/network": {
-      "etag": "\"2adc-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/network.md",
       "hash": "34240ad51602a562fee7ed05b670584dbcfc7e6f7c685979a95dee52d754b015"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacememoryledgertags/neural": {
-      "etag": "\"2ad3-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/neural.md",
       "hash": "29d15e61d8d18cb3696330ad5fac79e0bd7dbb8cc3d79240978e51432574ee00"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey": {
-      "etag": "\"a658-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey.md",
       "hash": "864da1ca9768d82d4bb826963d22910558952a42efca3a7a8ae3e5d84abe5cf1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/allocsize": {
-      "etag": "\"6a49-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/allocsize.md",
       "hash": "9028c1a9285348f4a83339460cf18b0807ddb80904dc307b84b1ad019b2675c2"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/allocsizekey": {
-      "etag": "\"6c77-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/allocsizekey.md",
       "hash": "f17a2fb0f71759f68c27627535d682b5df290caa99c413ce36215db2f94b77a1"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/bytesperelement": {
-      "etag": "\"6a97-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/bytesperelement.md",
       "hash": "a650867401474860f4c6afb7439aed1f1b5b8cb3c48b198475bacca317c47e23"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/bytesperrow": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/bytesperrow.md",
       "hash": "fce17907efeb0d6d5219a1204eb225419d9b9488da6a462f0a3de77c2d5f39cd"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/cachemode": {
-      "etag": "\"6a61-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/cachemode.md",
       "hash": "2a2de4902822cd57f4720436d835cceba02c027d3688171fff7ab4aa0e856e7c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/elementheight": {
-      "etag": "\"6a85-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/elementheight.md",
       "hash": "86a369caf6e5dac8aa73049adc1e0765eb052bfb1ebc8b86adf1a3db75159e22"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/elementwidth": {
-      "etag": "\"6a7c-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/elementwidth.md",
       "hash": "cf0b5c0a7f0e928997b21ff114abadafd84f6cbb486a90ebf9e80b0611fa9e31"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/height": {
-      "etag": "\"6a46-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/height.md",
       "hash": "dd8f679b1e049206f20e932c0d5f9a9ac6e5f1a8d2c0ea7a77343b8ba5274a47"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/init(rawvalue:)": {
-      "etag": "\"1389-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/init(rawvalue).md",
       "hash": "1e1c717a924e9465850f5937d6de386b1eb7a5dcb55b0113da630b510939e59c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/name": {
-      "etag": "\"69de-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/name.md",
       "hash": "846d05b1a363d02d8a89febc6c9694cffefe43709be9b83e186f0c26ac354223"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/offset": {
-      "etag": "\"6a46-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/offset.md",
       "hash": "a21a7faec8b19b3281bcf6b2dc1776655a830f6175a45cd3b2c4b1c136307e91"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/pixelformat": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/pixelformat.md",
       "hash": "a43c077dbcd794e4d9f393dad3893d6eefbe092a62b54f661e97f55fb60a6ac3"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/pixelsizecastingallowed": {
-      "etag": "\"6adf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/pixelsizecastingallowed.md",
       "hash": "dde39e867727f3200e9123f2da92fbf4a9012becc39ad003c2c978ec14eaf15d"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planebase": {
-      "etag": "\"6a61-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebase.md",
       "hash": "3fc9ec4854be22012ad05ca7816330c91e9c062d029116c38635dd97c8357e23"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planebytesperelement": {
-      "etag": "\"6ac4-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebytesperelement.md",
       "hash": "531b07efc22bac38ffe32d1e2449c870cc70d4bf74534d0d7463bd816c97ee37"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planebytesperrow": {
-      "etag": "\"6aa0-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebytesperrow.md",
       "hash": "b96161a7f0d84239010ce5c4bb31cedb8cb356f6f196850432bb0a6eb9baa566"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planeelementheight": {
-      "etag": "\"6ab2-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeelementheight.md",
       "hash": "8e81d16640920ebbc1937a700c1c7ac2843fb01cde5545843d72ca62ab042b13"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planeelementwidth": {
-      "etag": "\"6aa9-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeelementwidth.md",
       "hash": "5e95820adcf4c1887eb53c16eb7e166ffb1f4687f86c042c036cd8e47aee784c"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planeheight": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeheight.md",
       "hash": "c87bb8b94755fb8b701467aa4549fee07c77d6fe29d375880e51b7c6bad5a517"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planeinfo": {
-      "etag": "\"6a49-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeinfo.md",
       "hash": "920e56a78239bc48d4307fb6a292f1ecf8fdd7b343f91dd5b0f99ef84f858ec4"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planeoffset": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeoffset.md",
       "hash": "a249d64a5862bfe0c9d0185b625cb1841aac12c1dc654b115314c44d0acc0bc0"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planesize": {
-      "etag": "\"6a49-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planesize.md",
       "hash": "c8840a1a56c00498721091274f1ade68a54b5f7452fbcfc83216b78fc623d94f"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/planewidth": {
-      "etag": "\"6a5e-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planewidth.md",
       "hash": "3d68fa0b3fa5ad4aab58dd89c71c9e41d155cd771b6e9e5b1a6061b2c0973ddb"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepropertykey/width": {
-      "etag": "\"69f5-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/width.md",
       "hash": "9b090296eece9053c1b10497897f288de28effd0bdc75fc65666e374bc81db04"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate": {
-      "etag": "\"4a90-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate.md",
       "hash": "939e78f66ded923256269448b07a5d8c851044dac19ae872a011709ad3ffe030"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate/init(rawvalue:)": {
-      "etag": "\"1436-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/init(rawvalue).md",
       "hash": "7886eb7491c8c672c1f10dbecab45bc8113eed09267242743321b1965f002e3a"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile": {
-      "etag": "\"1080-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile.md",
       "hash": "888552cd3716076cef6378deb3ac7072d2fdd74a7e7bad43196cb025b398d64e"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate/purgeableempty": {
-      "etag": "\"2756-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeableempty.md",
       "hash": "282ab84d5cef08bb25dae513e9f63dc4bd11e81cc342c6f56b06a084f4cf1708"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate/purgeablekeepcurrent": {
-      "etag": "\"278c-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeablekeepcurrent.md",
       "hash": "af5b218554f5c244057477e8f2d8370903a595eb1faa0b49d9b6ce9cd52874b9"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacepurgeabilitystate/purgeablevolatile": {
-      "etag": "\"2771-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeablevolatile.md",
       "hash": "4821904e2de347a175ca3197ec049e1b273660cec41b5e4ce90bd680598079fa"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceref": {
-      "etag": "\"282a-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfaceref.md",
       "hash": "ba0e6c2708c11e232bb9c845a35e8fbd545ecab8649a90167572d4bb0b71ff59"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceref/init(_:)": {
-      "etag": "\"14e2-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfaceref/init(_).md",
       "hash": "f0a395bd6a4bb61e771bbb0e56288e56d5a2fe4e8566bc39409e5a8a767e43a5"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceremoveallvalues(_:)": {
-      "etag": "\"75d9-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceremoveallvalues(_).md",
       "hash": "8eff742fd3bd98345f5d9a8b4df94c4090d0915b22bacc6a0d40086d6c4a4eee"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceremovevalue(_:_:)": {
-      "etag": "\"7faf-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceremovevalue(_,_).md",
       "hash": "c49c4d3a8920685e9ff65c87ebf9fce6655dced472991f36d66d1cda46325d13"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesetownershipidentity(_:_:_:_:)": {
-      "etag": "\"8840-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetownershipidentity(_,_,_,_).md",
       "hash": "d57335c0e9f19cf53d374d734000b0cc76cbf8a88307fa987fb6d7fa2c9547e2"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesetpurgeable(_:_:_:)": {
-      "etag": "\"8516-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetpurgeable(_,_,_).md",
       "hash": "52920ec8aaef56960e7d52eec4cb3da0236cfff2095ae9ef929e0e7d5239bef6"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesetvalue(_:_:_:)": {
-      "etag": "\"8592-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetvalue(_,_,_).md",
       "hash": "955d7b2487a86d8db1606fd1ba7f4c1d480610ea729b90e571b6e04dd8a95833"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesetvalues(_:_:)": {
-      "etag": "\"7cd1-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetvalues(_,_).md",
       "hash": "0d030f359ca1000d2bee3920cff7e4e28ba1305a28458865a1f02011934fdd41"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesubsampling": {
-      "etag": "\"57aa-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling.md",
       "hash": "a8cd5cb6bbdc46b238f6a44aef511053da4da7aafc34ec92468aef7f8a6ed2a5"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesubsampling/init(rawvalue:)": {
-      "etag": "\"13b7-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/init(rawvalue).md",
       "hash": "7acad9b5261581f68935e91b11c2e1b1be3cdbfd8c6cfbadaaef983a12ad4e04"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesubsampling/subsampling411": {
-      "etag": "\"2ac8-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling411.md",
       "hash": "4c04d38396fe52ff5bcc1868ad2c438d00311a56779d6d849ccb6cd7b604d773"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesubsampling/subsampling420": {
-      "etag": "\"2ac8-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling420.md",
       "hash": "f49a7d3d0814dc7ac1a3a3ace8cada1e370264285d5176c57f4b1d20d59a62df"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesubsampling/subsampling422": {
-      "etag": "\"2ac8-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling422.md",
       "hash": "f40ab1f5b6a33bcc772f26d34209da31bfe2c89566f71b9f8a67c28d0c4ed3af"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesubsampling/subsamplingnone": {
-      "etag": "\"2ad1-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsamplingnone.md",
       "hash": "fc98e439eb6ff53bc50e2c4c532a61c6fe39e53ed6bb77f8d5de12c009c1bb70"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfacesubsampling/subsamplingunknown": {
-      "etag": "\"2aec-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsamplingunknown.md",
       "hash": "da8338240a6e8f7f2704a50b2aa3ca9f788d4c4597d39a0afeac412041137d76"
     },
     "https://developer.apple.com/documentation/iosurface/iosurfaceunlock(_:_:_:)": {
-      "etag": "\"98fa-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceunlock(_,_,_).md",
       "hash": "441161513f9369e3b23d395fc8e974a98a1374a49d64a71190f3190a0e662c60"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceallocsize": {
-      "etag": "\"6128-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceallocsize.md",
       "hash": "93de2bcbbf4e2ddd337159db44be67ee4ce55948713b34c3afa67bc73adb7409"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacebytesperelement": {
-      "etag": "\"659d-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacebytesperelement.md",
       "hash": "6b94487e80ab1610097b763ece6766310f41427752f968d8ccc61e52a43bc42c"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacebytesperrow": {
-      "etag": "\"6638-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacebytesperrow.md",
       "hash": "6f067654eac2e3c8cf5e41886f6509a0a419d7ee60e11900fb3d13314370fd96"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacecachemode": {
-      "etag": "\"65ba-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecachemode.md",
       "hash": "cb0b385d6567a4f544e1d1be2b91e9f305d611c07f1441dfe771f0fa0fc9456b"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacecolorspace": {
-      "etag": "\"5fb5-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecolorspace.md",
       "hash": "c970fc42a0974dbec0e6d280c2a952363a2bf5cec532f002e71a7c0693c3988b"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacecontentheadroom": {
-      "etag": "\"19a3-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecontentheadroom.md",
       "hash": "442b76fb35f73daedb2a17803abe9aed3ad44b9b10b041b0815e92c274a06221"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacecopybackcache": {
-      "etag": "\"1656-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecopybackcache.md",
       "hash": "45926360caaec5ef57d5e33c2a46ca8a71051564dfef23d50f880a861942a2be"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacecopybackinnercache": {
-      "etag": "\"16bf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecopybackinnercache.md",
       "hash": "0679166859d6d39ec8548d36665d07aaec3af1130eaa1977f002488866c9abb9"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacedefaultcache": {
-      "etag": "\"1641-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacedefaultcache.md",
       "hash": "c855d467b35993c252491fc3874872b2f2372f51d8531122473c497a953ef891"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceelementheight": {
-      "etag": "\"60de-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceelementheight.md",
       "hash": "6e217bb8573de6df8f8cfa8eafbed9396788e98dbd1b423b962afa090b06bbdc"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceelementwidth": {
-      "etag": "\"60d5-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceelementwidth.md",
       "hash": "533565153e3fbea370e92724751ac902f719d76b7cd9ed551215ceb731b95737"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceheight": {
-      "etag": "\"6563-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceheight.md",
       "hash": "e739870609a5014a490733f06bb59a7a3559ee1b06f6e87f47972c117e92db69"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceiccprofile": {
-      "etag": "\"5fb5-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceiccprofile.md",
       "hash": "6dc409294243f3321c4083ae4625e7520eb09f01259d28e44cb64f6e537e22d2"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceinhibitcache": {
-      "etag": "\"1641-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceinhibitcache.md",
       "hash": "9dfb7005f16adb9221d2af174cfa6f9b3e43ebeb942ced4d1d59689288b7f66f"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceisglobal": {
-      "etag": "\"638e-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceisglobal.md",
       "hash": "eab28165e4e6b446e76c286b9739756412f344dc8938f94162692fdd214f3513"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacemapcacheshift": {
-      "etag": "\"1657-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcacheshift.md",
       "hash": "45e0e30bc61f15dae65010f9047ab964e71f080f0a06f036ce1972a94164de6b"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacemapcopybackcache": {
-      "etag": "\"1696-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcopybackcache.md",
       "hash": "b93bb07c8e6c683e31f146867037cc936cf2890890dcb6045694658a291d229e"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacemapcopybackinnercache": {
-      "etag": "\"16ff-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcopybackinnercache.md",
       "hash": "2c37e7efa18423bda66eed0cd5c89d2a5a4d60d5587d96d548e7ac9176c2e66c"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacemapdefaultcache": {
-      "etag": "\"1681-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapdefaultcache.md",
       "hash": "5d6684044b8b4c1626d94b949d74bf5d4d762c91e895e8c3e682762684cb30a1"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacemapinhibitcache": {
-      "etag": "\"1681-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapinhibitcache.md",
       "hash": "72d323d31d4f327369cc9e838ab49e5f7a452ce2f9b9e5ff82e29ce8980867fe"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacemapwritecombinecache": {
-      "etag": "\"16ea-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapwritecombinecache.md",
       "hash": "bf314be95e2f3dadf395d841eb3eeb3b78271c531585f93dde85892abad0b225"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacemapwritethrucache": {
-      "etag": "\"16ab-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapwritethrucache.md",
       "hash": "22d65fe8cade11a21d03831620594f9e4e3f0b24e541b6b79f06186e7c385576"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacename": {
-      "etag": "\"5f7f-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacename.md",
       "hash": "b7826db8dd95db71f7a5660e2fabb931f4f6ad6b05c36a3798efd0213c69ae51"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceoffset": {
-      "etag": "\"6549-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceoffset.md",
       "hash": "4c81b427e3f978d34994bd6b7fba46cdde8dfc3be87b68aa781dcfab72e74e57"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacepixelformat": {
-      "etag": "\"6594-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacepixelformat.md",
       "hash": "2f721656ed8045891be10489429af06ed451cd091be9e775696f3c370e8c178e"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacepixelsizecastingallowed": {
-      "etag": "\"602c-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacepixelsizecastingallowed.md",
       "hash": "a16df33658d722ce3b363be681f4d6675a4bb699e09e542b34888e777048ad51"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanebase": {
-      "etag": "\"6587-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebase.md",
       "hash": "0759d796872323b72e515daceb9cb3257d12aa2436bc243c27d4a4b99447cd17"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanebitsperelement": {
-      "etag": "\"6008-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebitsperelement.md",
       "hash": "031fa6c30257c53030cf8a82a1d7e7f4d5e81d2587e2b4dd4a1f239aac4b5a60"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanebytesperelement": {
-      "etag": "\"6619-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebytesperelement.md",
       "hash": "f2e4bee78a14a68ef4051629628ed198a484ce33e743c49789675dec6db58dec"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanebytesperrow": {
-      "etag": "\"6679-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebytesperrow.md",
       "hash": "1c033a1621b694d03645f67246d26fb4754d5a49fe2cf33dbe94d8772bbe5284"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanecomponentbitdepths": {
-      "etag": "\"605c-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentbitdepths.md",
       "hash": "1c195b3b22e066b619b6261ca3495b3404b698c7a54100a885810e31a05ce5f4"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanecomponentbitoffsets": {
-      "etag": "\"6071-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentbitoffsets.md",
       "hash": "29bf683f0ffed19aad559db569bdb582d1adacf5605f7ded163236d8c992bb64"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanecomponentnames": {
-      "etag": "\"6008-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentnames.md",
       "hash": "63f1ef476e9f642624ffe339a746cecabc66d69abd2a59c7c00df2594032210b"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanecomponentranges": {
-      "etag": "\"601d-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentranges.md",
       "hash": "34745fba1a2da2d0494536a34d0aa3715b04c37b0aeba6658cadbfc55c5004cc"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanecomponenttypes": {
-      "etag": "\"6008-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponenttypes.md",
       "hash": "9aac2a31de16080a82b91c2e53e1a15c06f3f829719f9977f5d8f987aaf9f0f1"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplaneelementheight": {
-      "etag": "\"65e9-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneelementheight.md",
       "hash": "f7dd8b4870a5d2692dc7f75b7ab1e52488085ed64368207c93c3528ac4091394"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplaneelementwidth": {
-      "etag": "\"65d2-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneelementwidth.md",
       "hash": "b0e5a87b60e8c86ae2e29c985bd3483e37c744dfeea8dcbb7bd659611e7e088a"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplaneheight": {
-      "etag": "\"655d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneheight.md",
       "hash": "26373a87d0bdf2b37df54f47fd6f502671ef325ab7131c342ee44da6d78e998b"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplaneinfo": {
-      "etag": "\"60cc-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneinfo.md",
       "hash": "bd2fcbb0d6cc31d77e0645e2fc2d8bff5bfb20f2febea47cdd005f40df4cff58"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplaneoffset": {
-      "etag": "\"65c6-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneoffset.md",
       "hash": "b43690958a1d51d051a2fe5215d6236ed6c992c8a7231d798cd135121be6ef74"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanesize": {
-      "etag": "\"6557-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanesize.md",
       "hash": "2c90fe14a53670b96f97dc3ce3ba44998cd08ec622b520d0db3e65681baa07b1"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfaceplanewidth": {
-      "etag": "\"6546-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanewidth.md",
       "hash": "3726f69d70e38c41bd3f56f70958ca9c3504cd723267dca60005a79e850e06e6"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacesubsampling": {
-      "etag": "\"5f60-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacesubsampling.md",
       "hash": "9fb35b1cd81403ba9355f45877e3540dae8b89e36ab889762ffad69b3738f18b"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacesuccess": {
-      "etag": "\"5c69-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacesuccess.md",
       "hash": "42951148177ff3ff6550a238bf554a3662af705ac33580a70110f1aa3310eb59"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacewidth": {
-      "etag": "\"64f6-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacewidth.md",
       "hash": "012c2f1d5fc39cfa74a66d91e7f59fbc41fba83c99a0b3e09158e5fb421d8bcb"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacewritecombinecache": {
-      "etag": "\"16aa-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacewritecombinecache.md",
       "hash": "f0f7e8b1ec42e3e89108ddf8918ae8d9454edb65db014626b34931d4b29c0102"
     },
     "https://developer.apple.com/documentation/iosurface/kiosurfacewritethrucache": {
-      "etag": "\"166b-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacewritethrucache.md",
       "hash": "8db2d5e9f8ed6f55d652f8f7ce8978702e9bd6aae86abae33a1bd7bfc84666c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/IOSurface.json": {
-      "etag": "\"71fb-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/IOSurface.md",
       "hash": "a3d61b98a4fb9bc59799ab39bb9854ec77dc269e2a8f442e9ba96c58bed80a1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_deprecated_msg.json": {
-      "etag": "\"ee6-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosfc_deprecated_msg.md",
       "hash": "3431793f5ef8473b1be0c3dadc1ba2497df2d2bf8bb482d30d62b9e53827d1cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_ios_deprecated_msg.json": {
-      "etag": "\"efe-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosfc_ios_deprecated_msg.md",
       "hash": "187dc04ea3870a361cf368653bc2f204f8148674da6b46ee991946cffda75a62"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_swift_name.json": {
-      "etag": "\"ed1-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosfc_swift_name.md",
       "hash": "40ac34b7896db7f105253f999739ec057dbfcd5de7d5d28757cd41d72c520c40"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_swift_nonsendable.json": {
-      "etag": "\"ac0-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosfc_swift_nonsendable.md",
       "hash": "33bb78c93b20c66d597e43edf49b5990d7af7e25ef66d6702d9df76e4caba7ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosfc_swift_sendable.json": {
-      "etag": "\"a9c-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosfc_swift_sendable.md",
       "hash": "ee90b93a16842d60b2802eb541b67b2c5a88dcd3546712f08d20e03d4f241ea1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-constants.json": {
-      "etag": "\"b02b-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-constants.md",
       "hash": "9829dcc8fa1b34c56298d676002c0a60f149e5b0030d5b55f01de7c7bed5dba1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-data-types.json": {
-      "etag": "\"165f-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-data-types.md",
       "hash": "0076322f4bd9283893f3580d46d8543687ec6bc7fd8cf351e7d69ee728b495c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-enumerations.json": {
-      "etag": "\"28e3-659028ea65910-df\"",
       "file_path": "documentation/IOSurface/iosurface-enumerations.md",
       "hash": "06a9a3d0714eff6b273b242bd88c5c5b1662ebca4507823d33d9763a18739ddb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-functions.json": {
-      "etag": "\"13c05-659028e9d5f50-df\"",
       "file_path": "documentation/IOSurface/iosurface-functions.md",
       "hash": "6343bd5d2dbbdc01b9de58a9f31acc02b35aa8b731300592e19550fa4ffa7df3"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-structures.json": {
-      "etag": "\"1968-659028ea9312b-df\"",
       "file_path": "documentation/IOSurface/iosurface-structures.md",
       "hash": "d7d18d54e88278b84d9540ab523f96b7a0b2d02ab635ccda17ea9cc06456addf"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface.json": {
-      "etag": "\"ed4a-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurface-page.md",
       "hash": "de2901ca67f794193900dcd37d1f5e93ef4c8a28ae768d34a505e3be5f7d202f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/allattachments().json": {
-      "etag": "\"741c-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/allattachments().md",
       "hash": "1a6fcc14ec01156210a48ce770fa3c6eeedbf103bbe7d839028343c394343c6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/allocationsize.json": {
-      "etag": "\"52b7-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/allocationsize.md",
       "hash": "56f0e48e69ce4b861551ba7f95693f3e4b6c5f19ed2c3bc4f3b94da7fa8eca06"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/allowspixelsizecasting.json": {
-      "etag": "\"538a-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/allowspixelsizecasting.md",
       "hash": "9a1ae4b2821ef08f38676452a9c0f63328a85806974b0e38f1a64dd63c07351a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/attachment(forkey:).json": {
-      "etag": "\"7551-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/attachment(forkey).md",
       "hash": "b0586c841fac0797138f4f8ed20bce9d82c18c662e9966178d9c655579f07b71"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/baseaddress.json": {
-      "etag": "\"5360-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/baseaddress.md",
       "hash": "8a56e21a88bfa73c23229cb32b79ff5b20dca31b8095db4b0529970630dde081"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/baseaddressofplane(at:).json": {
-      "etag": "\"7540-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/baseaddressofplane(at).md",
       "hash": "c3515b8faba16f3fe3c570dde93fd4dcab584a1b7015d02e93945d2a77daacdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperelement.json": {
-      "etag": "\"52c0-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperelement.md",
       "hash": "4a32f427fbf36cf6efe150ed825ff0201c4da5241a654fa6681a94fa858b2174"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperelementofplane(at:).json": {
-      "etag": "\"72d3-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperelementofplane(at).md",
       "hash": "14daf666e5035245e4c26c997e1e38e8caacd5b87a4c2c3607dd616c39a55369"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperrow.json": {
-      "etag": "\"529c-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperrow.md",
       "hash": "53982b8bc0b8b3e33d9bebce702f223cf2f22bfd713cdd822b0ddd8d9fcb654a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperrowofplane(at:).json": {
-      "etag": "\"72af-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/bytesperrowofplane(at).md",
       "hash": "f9001583031a908edfa789e266847f275d8866c8cc53623ed93429503b688943"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/decrementusecount().json": {
-      "etag": "\"6d41-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/decrementusecount().md",
       "hash": "5237237cc7d016f5d2f804a2511a9fe20bf40dc92be7f46d75519a61d6a9078c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementheight.json": {
-      "etag": "\"52ae-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementheight.md",
       "hash": "ae23973dda80b0e91aa95e9f85471b8ca2af524c70ed6694fe84fd093b450752"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementheightofplane(at:).json": {
-      "etag": "\"72c1-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementheightofplane(at).md",
       "hash": "e4113a9f82bed3c88d3fb6f5ac611d43b76de5515c851fb5bdf87e790b6ef752"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementwidth.json": {
-      "etag": "\"52a5-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementwidth.md",
       "hash": "87730a0496a28782952407cd9d7f775ee9123d5864943619dfa12f0341d4a61b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementwidthofplane(at:).json": {
-      "etag": "\"72b8-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/elementwidthofplane(at).md",
       "hash": "c745c4e45b916be0ae7ea46ce94e4654d6f706b210e6cbae1a5804c200265832"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/height.json": {
-      "etag": "\"526f-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/height.md",
       "hash": "40b586e33d01b2a5627bbee6135a8ba389ef9dd260cc9adc37f4a92bd91587b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/heightofplane(at:).json": {
-      "etag": "\"7282-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/heightofplane(at).md",
       "hash": "780941f98a9e47f6011e75cccc2cce8c4552536da030c2c344ba1a9846198da1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/incrementusecount().json": {
-      "etag": "\"6d41-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/incrementusecount().md",
       "hash": "b1e668b7cc6f87e30ba374fafab75917c022af71bb31b0935b70af673def7910"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/init(_:).json": {
-      "etag": "\"14d6-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/init(_).md",
       "hash": "2f8a7d889883d324a6ed9e7585f9d7ea3df3d7c31fecdf775531e717bfe958d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/init(coder:).json": {
-      "etag": "\"142d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/init(coder).md",
       "hash": "626146db4db6850d31c5f99633e703ea113830d0471416b1ddebf4ea6886dd79"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/init(properties:).json": {
-      "etag": "\"2353-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/init(properties).md",
       "hash": "3ac51b84dc3dff7df6cb101c5a3d8f7a17606101ed877ce860fc3c82de378a1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/isinuse.json": {
-      "etag": "\"537a-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/isinuse.md",
       "hash": "68f4e78398586408e90d892d508a5bfcbfb9a4d7cf3a88a04c3b50b0220b93d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/localusecount.json": {
-      "etag": "\"5303-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/localusecount.md",
       "hash": "738776d3880f056c0f40350911d61cb78303f52f53ae17e8b38f6f286095700c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/lock(options:seed:).json": {
-      "etag": "\"8001-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/lock(options,seed).md",
       "hash": "0d8ab7b8c5158dfa664f5a9db9a1fd68748c6d3f1acc5553aec116b0c2ffd21c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/pixelformat.json": {
-      "etag": "\"5231-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/pixelformat.md",
       "hash": "0275a84433d5f82e74156a9712a91299f4f32b3f78f1fbe8e1e8815bca4d3d89"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/planecount.json": {
-      "etag": "\"5295-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/planecount.md",
       "hash": "81ec295e1ab6860320c5b1ba97741eb6a83bb9b1c2dadbedf65af9f18c4013a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/removeallattachments().json": {
-      "etag": "\"6d5c-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/removeallattachments().md",
       "hash": "3cc99ca3a5de0b65d005831dcb5d2feb9f62ffadbbd48926cd8ab0e2f26beb32"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/removeattachment(forkey:).json": {
-      "etag": "\"71f0-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/removeattachment(forkey).md",
       "hash": "76db39a8fec6b44aaba55e4d4f376c519d2562bb83c084a224f6081a4754413f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/seed.json": {
-      "etag": "\"52c1-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/seed.md",
       "hash": "ce868a5e3bd2e8f9a17746cb8c1b16c89e5a9f5c784aa1b4e7c14138d3e38cf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/setallattachments(_:).json": {
-      "etag": "\"7558-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/setallattachments(_).md",
       "hash": "f45713bceda49a2563c3df0567a5342e5df5d6bc8ee0857d2c790d9f6f8fe3b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/setattachment(_:forkey:).json": {
-      "etag": "\"76d0-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/setattachment(_,forkey).md",
       "hash": "cae25b3eab311c33190b5a9adf78e2e28b83bcc0a114a94fcab269b2894ab6cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/setpurgeable(_:oldstate:).json": {
-      "etag": "\"7f69-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/setpurgeable(_,oldstate).md",
       "hash": "0427be382bd1dfc302e65a613aff45af181156633235f80711ea475365acc9e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/surfaceid.json": {
-      "etag": "\"1b6d-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/surfaceid.md",
       "hash": "a7b1da74cd3b2da614c95fe70607051094dc349e47f7a692acaa36d44d6414a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/unlock(options:seed:).json": {
-      "etag": "\"7ffe-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/unlock(options,seed).md",
       "hash": "4111b0db867bf0eadaa0213f4d0d322c9be5c58bfb386c92af54c312a96c4c5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/width.json": {
-      "etag": "\"5266-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/width.md",
       "hash": "35cc2adeadb0df1b367d0594513beae66197f4fc1158b4ed8225de141f662e08"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/widthofplane(at:).json": {
-      "etag": "\"70e3-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurface-page/widthofplane(at).md",
       "hash": "5c77f80067264a127f2e6765624b8bad8c1503abc315eb5e387b20c38c8ccaa0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacealignproperty(_:_:).json": {
-      "etag": "\"7c6e-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacealignproperty(_,_).md",
       "hash": "1e25a11358f5303994dec4376beba1664e99d601a720ae65d19aea9ef9430702"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceallowspixelsizecasting(_:).json": {
-      "etag": "\"79f2-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceallowspixelsizecasting(_).md",
       "hash": "d5d331f93fa6426e0e1bf51ec21506c909183cd0546aedf18d3666238cf1cd94"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname.json": {
-      "etag": "\"639b-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname.md",
       "hash": "b5aa6efbfcf1148e3bc6a1fa3383aa4e104ce62537a6c938e05ed125f68a23bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/alpha.json": {
-      "etag": "\"36af-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/alpha.md",
       "hash": "9a29ae843811a13c2604e87816fbcba1d77de6bf521e95d67bf44c14012210b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/blue.json": {
-      "etag": "\"36a6-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/blue.md",
       "hash": "408f2c8179ff64a75e99e69d01ad5c177d6a7b16e6cc8c5226f130fbf20a2a96"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/chromablue.json": {
-      "etag": "\"36dc-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/chromablue.md",
       "hash": "4d561d4687071c98defa3c416b0b2f271385becc7ede844aedf15e2c4af95708"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/chromared.json": {
-      "etag": "\"36d3-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/chromared.md",
       "hash": "e294aebca2bfe2f981fec0f778229b95fe0ea687ed7a1d6f6f5f1e5d2a1cfccc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/green.json": {
-      "etag": "\"36af-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/green.md",
       "hash": "60669e58cbb015a04b56a57ba913b8c7652e6050738e977ea9c6d1ad4b5aefa1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/init(rawvalue:).json": {
-      "etag": "\"13dd-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/init(rawvalue).md",
       "hash": "df1469339fdbb3758b8023a3b5a3b67e451ff35e0bdae22c6e62efd3d6b5561d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/luma.json": {
-      "etag": "\"36a6-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/luma.md",
       "hash": "8dfc71f4320f0902902d8d59babc7353b63aa3a00ea4f26193c8fa1cbb51cd8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/red.json": {
-      "etag": "\"369d-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/red.md",
       "hash": "160103d8ad7e1cb3ffbdd891605afd97f5d3413c1faae34ff9d332e320187d42"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/unknown.json": {
-      "etag": "\"36c1-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/unknown.md",
       "hash": "94bef1c626f02c71e791d99ba2fd7610ff83de6a1894dee0dfb786f9516becf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange.json": {
-      "etag": "\"532d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange.md",
       "hash": "4cd2f8a265d0005a9c4d398f1d97b3afb8af82076997e3ab36ac15bbb51b5603"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/fullrange.json": {
-      "etag": "\"266d-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/fullrange.md",
       "hash": "2187641ea5d7aa9ae7963a56543aca609c584493689cf54f3317fede5885b493"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/init(rawvalue:).json": {
-      "etag": "\"13f0-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/init(rawvalue).md",
       "hash": "7c87a8e2082ce1af2bc07a26f25d6652fe1df90bc1c435df76d8d1aeb0c9d72d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/unknown.json": {
-      "etag": "\"265b-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/unknown.md",
       "hash": "85daf29ff6ea9598d0c6678852af135a4a71f18c6b3cb3f2f8e000652b953421"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/videorange.json": {
-      "etag": "\"2676-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/videorange.md",
       "hash": "aca8befb45bbf14d4ac6bf77622f85999c7c50f66a976df11be28672dca22187"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/widerange.json": {
-      "etag": "\"266d-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/widerange.md",
       "hash": "73e2dc42835e8d8dea87d80ba8aa32b637ead3424748b8b0d7e88b1206d478b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype.json": {
-      "etag": "\"57f5-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype.md",
       "hash": "444609a943ee7764997df7a2a86ca651e6f0d5583a1664a7ec6c0054f79f60a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/float.json": {
-      "etag": "\"2b09-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/float.md",
       "hash": "240a32c1787f71a70e8c1b5558d820639bc487baa5ad8381e16d21779c19a1a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/init(rawvalue:).json": {
-      "etag": "\"13dd-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/init(rawvalue).md",
       "hash": "1c4591fceeb29f5699012d13c0a3c7769007855abb071b46f40b8acc178de853"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/signedinteger.json": {
-      "etag": "\"2b51-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/signedinteger.md",
       "hash": "6ac5bf9b7ae223f2d2ebcdb340e0d702c4008ef064372342bd5db313d492c97d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/signednormalized.json": {
-      "etag": "\"2b6c-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/signednormalized.md",
       "hash": "b8e1d45ae25c8d9235b735748c2c86c9c9b3abbd60c2ba340855328d06d34587"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/unknown.json": {
-      "etag": "\"2b1b-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/unknown.md",
       "hash": "51f44ea208e3aeba0fcc4b27bc8f36fc929167325f91907de3f3891e768a6382"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/unsignedinteger.json": {
-      "etag": "\"2b63-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/unsignedinteger.md",
       "hash": "f1c26ec50e104c1b884aed72fc7736bdf09000dba9641f2b3341cb59eefeda5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecopyallvalues(_:).json": {
-      "etag": "\"7bfd-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacecopyallvalues(_).md",
       "hash": "f7bf97461a29f4fc9b170131bcdb024656ab5cf67127a7d79d840da7ce9644fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecopyvalue(_:_:).json": {
-      "etag": "\"83fd-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacecopyvalue(_,_).md",
       "hash": "dcb59c30618606fe1be4312d14a6e84fcbe369d714b853f12439e50b84f87ee4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecreate(_:).json": {
-      "etag": "\"7c11-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacecreate(_).md",
       "hash": "79f6eff076d20908a937899a264fb7d0e92e10ad503d26c2196d6bf3c4b13fc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecreatemachport(_:).json": {
-      "etag": "\"7c94-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacecreatemachport(_).md",
       "hash": "a74a45f3cdc9571c833bdc17f1d62c701394051c8c945b1ffc652e4b2898973d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecreatexpcobject(_:).json": {
-      "etag": "\"79ee-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacecreatexpcobject(_).md",
       "hash": "e068ff67b60983d76baef0bb9463591502864360d665e7a09e7c840dec22a905"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacedecrementusecount(_:).json": {
-      "etag": "\"7764-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacedecrementusecount(_).md",
       "hash": "0532db733b45a31d452f2f21f8a4c69c1eb2cf8cfaa97e01b001f9278d2472aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetallocsize(_:).json": {
-      "etag": "\"7b3d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetallocsize(_).md",
       "hash": "cd510bdbccb7d5093c4a9fd6721d28f51d90ac6e5994404e7ddd20c116937c7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbaseaddress(_:).json": {
-      "etag": "\"7c1e-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbaseaddress(_).md",
       "hash": "12f388670f9123e96e11b09d5becdc1e5be2d95eca0346ac2624ca86b2b31510"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbaseaddressofplane(_:_:).json": {
-      "etag": "\"8096-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbaseaddressofplane(_,_).md",
       "hash": "028b8df45e93ad3aaae6dda520c69337291c334a8df85cb21035e270972564a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbitdepthofcomponentofplane(_:_:_:).json": {
-      "etag": "\"7e26-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbitdepthofcomponentofplane(_,_,_).md",
       "hash": "e8203a1d03c9dc9e63d8b6f5e59f0ad0f16e1231767cd019c495a4b046a94277"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbitoffsetofcomponentofplane(_:_:_:).json": {
-      "etag": "\"7e2f-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbitoffsetofcomponentofplane(_,_,_).md",
       "hash": "d2233e723a2c9bc3f8541ea3a59099a11ac615c66c4a129b05755c0f5af8dcf0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperelement(_:).json": {
-      "etag": "\"7b73-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperelement(_).md",
       "hash": "5f5be715d2cba8e9fff13a83eb565dab9c5755bf99059f2e16e9ef934b0a9621"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperelementofplane(_:_:).json": {
-      "etag": "\"7e22-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperelementofplane(_,_).md",
       "hash": "efdb9329f87955a78489c82f397f64c32f539b981aba24db44b4e2ca8bc54134"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperrow(_:).json": {
-      "etag": "\"7b4b-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperrow(_).md",
       "hash": "e31730dfa059690ae39f416bf08c559bc72f31165ee707f7b2ec8837e6fc7d5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperrowofplane(_:_:).json": {
-      "etag": "\"7eba-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperrowofplane(_,_).md",
       "hash": "2829456b9c0e23bb4adbe82c1662ed6f1ab67bd75f0854c069a243eb8221f2e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementheight(_:).json": {
-      "etag": "\"7b7f-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementheight(_).md",
       "hash": "d6938b4f5a8c182cca2dc0ab688b43eb257c351cd0207b108cf6bdf829c8d418"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementheightofplane(_:_:).json": {
-      "etag": "\"7ef2-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementheightofplane(_,_).md",
       "hash": "7111afe88ba829db0240a7f11eaf20aa7c08d372e13c929ce795a0fc91fef533"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementwidth(_:).json": {
-      "etag": "\"7b68-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementwidth(_).md",
       "hash": "0c91a7cfbf8a22ef27212accd38648da14872e081a71a0c4dd38a0e798cfed55"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementwidthofplane(_:_:).json": {
-      "etag": "\"7edb-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementwidthofplane(_,_).md",
       "hash": "4e0d0660c7f0c21a43df5694a0132e59f57e9248cf571255f227716405b7493a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetheight(_:).json": {
-      "etag": "\"7aca-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetheight(_).md",
       "hash": "793bbc1b14c58d26d75dabfc5d2ea74240a0da608df4930332f1d9b5037e14e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetheightofplane(_:_:).json": {
-      "etag": "\"7e3f-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetheightofplane(_,_).md",
       "hash": "c13946d0df22c5bdecf1ecb0c7bf7dfe4c311bad8e9c7c99f7abab37a4817451"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetid(_:).json": {
-      "etag": "\"7d78-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetid(_).md",
       "hash": "a27f1c2bd5e0aaea1c700dcb8851c1ba07eb515f4c2e4e8cb4d2805151170600"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetnameofcomponentofplane(_:_:_:).json": {
-      "etag": "\"8447-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetnameofcomponentofplane(_,_,_).md",
       "hash": "975cf0315e5be532530a640b990ea9b02d74fc780479105bbdcaace78b0eb2f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetnumberofcomponentsofplane(_:_:).json": {
-      "etag": "\"7c8f-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetnumberofcomponentsofplane(_,_).md",
       "hash": "aed052538a6c80d1fc6eba5aa2fe1ac3048c369f645a1cf5fbdd83b3ad3195f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetpixelformat(_:).json": {
-      "etag": "\"7b0a-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetpixelformat(_).md",
       "hash": "e4afa78e9dfe1f294e61e959642947b637bc446c7364f7cb803dec69b94d5544"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetplanecount(_:).json": {
-      "etag": "\"79af-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetplanecount(_).md",
       "hash": "39668b2ab18841bac786faefdf22e1a636cab2555cc22eec328aa2f85201137a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetpropertyalignment(_:).json": {
-      "etag": "\"7d23-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetpropertyalignment(_).md",
       "hash": "1784d3cbb7c166a5be9bb1980a1a831daedb4a683e7bd45d34bbb6bc5107487d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetpropertymaximum(_:).json": {
-      "etag": "\"7fcd-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetpropertymaximum(_).md",
       "hash": "6fd7ae8e8c5650c7c403afe25eda7aa6b80d7e8d95587833aaf4dfe44cf39037"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetrangeofcomponentofplane(_:_:_:).json": {
-      "etag": "\"8472-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetrangeofcomponentofplane(_,_,_).md",
       "hash": "a37a125166aa025028d7300e9d3a215b256f21323996ea4af03126df01e4f57c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetseed(_:).json": {
-      "etag": "\"79df-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetseed(_).md",
       "hash": "5ed10f24eb8a69154c52c9b2c71afc445140d2098370c84b86d1a0665cfea348"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetsubsampling(_:).json": {
-      "etag": "\"7bff-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetsubsampling(_).md",
       "hash": "c060e34edf8268d2b3bbcbb9f3c4411f15b1def1ca996593a1599664ce0d87da"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegettypeid().json": {
-      "etag": "\"72c2-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegettypeid().md",
       "hash": "d6d5b8453b62ca1f4dfaf4202e3029312ebf0e2e2f6c3c2cf54afbcdca12feb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegettypeofcomponentofplane(_:_:_:).json": {
-      "etag": "\"8447-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacegettypeofcomponentofplane(_,_,_).md",
       "hash": "2269304e8693d9f4acef64662d3a08a88f230d4b3b87daa4583fbad7619c5dcc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetusecount(_:).json": {
-      "etag": "\"7a91-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetusecount(_).md",
       "hash": "1bd1fced9295d897b60e414ccc5c97511a43949e0c82a2294103742a46f32c69"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetwidth(_:).json": {
-      "etag": "\"7ab3-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetwidth(_).md",
       "hash": "89bf96805b39b63653457d86cda86f76c279276f54757b0e8082f16fa057891f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetwidthofplane(_:_:).json": {
-      "etag": "\"7e28-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacegetwidthofplane(_,_).md",
       "hash": "4fe3daa361052656055e350110a3b9ab907fbc8b99639031c89e683921713d0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceid.json": {
-      "etag": "\"16eb-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfaceid.md",
       "hash": "838dfeb7c0284a2fc5324dbf8d5b39afe5fbfa68b7c5e027baa158ecadffb952"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceincrementusecount(_:).json": {
-      "etag": "\"77bf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfaceincrementusecount(_).md",
       "hash": "3211b702f28510b298208e3fe5f9e0f96fcfcbbc7df2c3f2b669e6a0a69b437e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceisinuse(_:).json": {
-      "etag": "\"79a6-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfaceisinuse(_).md",
       "hash": "e8bb2e8c1e7118f07fd8ee4dfa7b95549e165dd6bf1e0558082bc823a267ef8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelock(_:_:_:).json": {
-      "etag": "\"980b-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacelock(_,_,_).md",
       "hash": "d14ed1483796e2a6334f94df8de8d2a87b59c05607365b4694b2e17f63d65ee1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions.json": {
-      "etag": "\"40ce-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions.md",
       "hash": "e907ac7afd2d61edb3025cc91e0ff8849ed99ca0bc94722ce79e1fd77a8f1c7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions/avoidsync.json": {
-      "etag": "\"21f6-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/avoidsync.md",
       "hash": "74a6ab2b00bea51751a9b9993bfae5d44bd7a1156792c5a14e3c328faea4e014"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions/init(rawvalue:).json": {
-      "etag": "\"13c4-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/init(rawvalue).md",
       "hash": "b86ea2dd3029ace880e2c8f1536ea6398ca1d238701c2e38f433ab34b522180a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions/readonly.json": {
-      "etag": "\"21c4-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/readonly.md",
       "hash": "9508c7de3048a23109dbd6a0d81ede95e853af67d1a38a10f6ca69f4a6ec20bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelookup(_:).json": {
-      "etag": "\"7bc7-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacelookup(_).md",
       "hash": "1109faf52e0c49967dca35217a1f3ec7510b94ae15a682688238f8d1dbec3cd3"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelookupfrommachport(_:).json": {
-      "etag": "\"7c25-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacelookupfrommachport(_).md",
       "hash": "17c2735717ccce6154f5e588995e24501ea0ffbfa84970344c5854c6efc4e6ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelookupfromxpcobject(_:).json": {
-      "etag": "\"7b29-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacelookupfromxpcobject(_).md",
       "hash": "5074fad4fdda10c484bc482b56e9f0337f2ea87c247c17117eb727000695ad23"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgerflags.json": {
-      "etag": "\"4ba9-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags.md",
       "hash": "62a603f9a2093895cbfefd58646c099f049a23e5fb6b5d35a35a7fa3a5cb5994"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgerflags/init(rawvalue:).json": {
-      "etag": "\"1436-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags/init(rawvalue).md",
       "hash": "990897fe0d50e359bca84d599e9601b680f807c359eb07bc399dbf24f6b824e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgerflags/nofootprint.json": {
-      "etag": "\"1bb4-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags/nofootprint.md",
       "hash": "8d977dfa9e9ed4948d781ceab376c942335432023cb9cf8763c135c85ec72a41"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags.json": {
-      "etag": "\"5796-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags.md",
       "hash": "72fbff915d9cf7136be158aaaff985510086705cd8408273835a951a21e344e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/default.json": {
-      "etag": "\"2ae0-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/default.md",
       "hash": "7390491000d3ecfdaa218014dac2a6bfbfd6fe8ca9650ea8cbfdff2ffaeb6102"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/graphics.json": {
-      "etag": "\"2ae5-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/graphics.md",
       "hash": "d9f46faed21b1f84b955a0cfa972197a446559ce26ecd990bc3a7c25683a3b49"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/init(rawvalue:).json": {
-      "etag": "\"1416-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/init(rawvalue).md",
       "hash": "81228e759a20e1cfbd1fc60ef4696929bc4e1d6a277397aefd0ad1b7c75cce9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/media.json": {
-      "etag": "\"2aca-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/media.md",
       "hash": "625d3954571b976b748f5b37af83bd64f572e597bbbcf701d377436704f229e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/network.json": {
-      "etag": "\"2adc-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/network.md",
       "hash": "34240ad51602a562fee7ed05b670584dbcfc7e6f7c685979a95dee52d754b015"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/neural.json": {
-      "etag": "\"2ad3-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/neural.md",
       "hash": "29d15e61d8d18cb3696330ad5fac79e0bd7dbb8cc3d79240978e51432574ee00"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey.json": {
-      "etag": "\"a658-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey.md",
       "hash": "864da1ca9768d82d4bb826963d22910558952a42efca3a7a8ae3e5d84abe5cf1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/allocsize.json": {
-      "etag": "\"6a49-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/allocsize.md",
       "hash": "9028c1a9285348f4a83339460cf18b0807ddb80904dc307b84b1ad019b2675c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/allocsizekey.json": {
-      "etag": "\"6c77-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/allocsizekey.md",
       "hash": "f17a2fb0f71759f68c27627535d682b5df290caa99c413ce36215db2f94b77a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/bytesperelement.json": {
-      "etag": "\"6a97-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/bytesperelement.md",
       "hash": "a650867401474860f4c6afb7439aed1f1b5b8cb3c48b198475bacca317c47e23"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/bytesperrow.json": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/bytesperrow.md",
       "hash": "fce17907efeb0d6d5219a1204eb225419d9b9488da6a462f0a3de77c2d5f39cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/cachemode.json": {
-      "etag": "\"6a61-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/cachemode.md",
       "hash": "2a2de4902822cd57f4720436d835cceba02c027d3688171fff7ab4aa0e856e7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/elementheight.json": {
-      "etag": "\"6a85-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/elementheight.md",
       "hash": "86a369caf6e5dac8aa73049adc1e0765eb052bfb1ebc8b86adf1a3db75159e22"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/elementwidth.json": {
-      "etag": "\"6a7c-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/elementwidth.md",
       "hash": "cf0b5c0a7f0e928997b21ff114abadafd84f6cbb486a90ebf9e80b0611fa9e31"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/height.json": {
-      "etag": "\"6a46-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/height.md",
       "hash": "dd8f679b1e049206f20e932c0d5f9a9ac6e5f1a8d2c0ea7a77343b8ba5274a47"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/init(rawvalue:).json": {
-      "etag": "\"1389-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/init(rawvalue).md",
       "hash": "1e1c717a924e9465850f5937d6de386b1eb7a5dcb55b0113da630b510939e59c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/name.json": {
-      "etag": "\"69de-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/name.md",
       "hash": "846d05b1a363d02d8a89febc6c9694cffefe43709be9b83e186f0c26ac354223"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/offset.json": {
-      "etag": "\"6a46-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/offset.md",
       "hash": "a21a7faec8b19b3281bcf6b2dc1776655a830f6175a45cd3b2c4b1c136307e91"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/pixelformat.json": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/pixelformat.md",
       "hash": "a43c077dbcd794e4d9f393dad3893d6eefbe092a62b54f661e97f55fb60a6ac3"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/pixelsizecastingallowed.json": {
-      "etag": "\"6adf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/pixelsizecastingallowed.md",
       "hash": "dde39e867727f3200e9123f2da92fbf4a9012becc39ad003c2c978ec14eaf15d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planebase.json": {
-      "etag": "\"6a61-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebase.md",
       "hash": "3fc9ec4854be22012ad05ca7816330c91e9c062d029116c38635dd97c8357e23"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planebytesperelement.json": {
-      "etag": "\"6ac4-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebytesperelement.md",
       "hash": "531b07efc22bac38ffe32d1e2449c870cc70d4bf74534d0d7463bd816c97ee37"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planebytesperrow.json": {
-      "etag": "\"6aa0-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebytesperrow.md",
       "hash": "b96161a7f0d84239010ce5c4bb31cedb8cb356f6f196850432bb0a6eb9baa566"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeelementheight.json": {
-      "etag": "\"6ab2-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeelementheight.md",
       "hash": "8e81d16640920ebbc1937a700c1c7ac2843fb01cde5545843d72ca62ab042b13"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeelementwidth.json": {
-      "etag": "\"6aa9-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeelementwidth.md",
       "hash": "5e95820adcf4c1887eb53c16eb7e166ffb1f4687f86c042c036cd8e47aee784c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeheight.json": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeheight.md",
       "hash": "c87bb8b94755fb8b701467aa4549fee07c77d6fe29d375880e51b7c6bad5a517"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeinfo.json": {
-      "etag": "\"6a49-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeinfo.md",
       "hash": "920e56a78239bc48d4307fb6a292f1ecf8fdd7b343f91dd5b0f99ef84f858ec4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeoffset.json": {
-      "etag": "\"6a73-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeoffset.md",
       "hash": "a249d64a5862bfe0c9d0185b625cb1841aac12c1dc654b115314c44d0acc0bc0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planesize.json": {
-      "etag": "\"6a49-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planesize.md",
       "hash": "c8840a1a56c00498721091274f1ade68a54b5f7452fbcfc83216b78fc623d94f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planewidth.json": {
-      "etag": "\"6a5e-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planewidth.md",
       "hash": "3d68fa0b3fa5ad4aab58dd89c71c9e41d155cd771b6e9e5b1a6061b2c0973ddb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/width.json": {
-      "etag": "\"69f5-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/width.md",
       "hash": "9b090296eece9053c1b10497897f288de28effd0bdc75fc65666e374bc81db04"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate.json": {
-      "etag": "\"4a90-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate.md",
       "hash": "939e78f66ded923256269448b07a5d8c851044dac19ae872a011709ad3ffe030"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/init(rawvalue:).json": {
-      "etag": "\"1436-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/init(rawvalue).md",
       "hash": "7886eb7491c8c672c1f10dbecab45bc8113eed09267242743321b1965f002e3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile.json": {
-      "etag": "\"1080-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/kiosurfacepurgeablenonvolatile.md",
       "hash": "888552cd3716076cef6378deb3ac7072d2fdd74a7e7bad43196cb025b398d64e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/purgeableempty.json": {
-      "etag": "\"2756-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeableempty.md",
       "hash": "282ab84d5cef08bb25dae513e9f63dc4bd11e81cc342c6f56b06a084f4cf1708"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/purgeablekeepcurrent.json": {
-      "etag": "\"278c-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeablekeepcurrent.md",
       "hash": "af5b218554f5c244057477e8f2d8370903a595eb1faa0b49d9b6ce9cd52874b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/purgeablevolatile.json": {
-      "etag": "\"2771-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeablevolatile.md",
       "hash": "4821904e2de347a175ca3197ec049e1b273660cec41b5e4ce90bd680598079fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceref.json": {
-      "etag": "\"282a-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfaceref.md",
       "hash": "ba0e6c2708c11e232bb9c845a35e8fbd545ecab8649a90167572d4bb0b71ff59"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceref/init(_:).json": {
-      "etag": "\"14e2-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfaceref/init(_).md",
       "hash": "f0a395bd6a4bb61e771bbb0e56288e56d5a2fe4e8566bc39409e5a8a767e43a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceremoveallvalues(_:).json": {
-      "etag": "\"75d9-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceremoveallvalues(_).md",
       "hash": "8eff742fd3bd98345f5d9a8b4df94c4090d0915b22bacc6a0d40086d6c4a4eee"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceremovevalue(_:_:).json": {
-      "etag": "\"7faf-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceremovevalue(_,_).md",
       "hash": "c49c4d3a8920685e9ff65c87ebf9fce6655dced472991f36d66d1cda46325d13"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetownershipidentity(_:_:_:_:).json": {
-      "etag": "\"8840-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetownershipidentity(_,_,_,_).md",
       "hash": "d57335c0e9f19cf53d374d734000b0cc76cbf8a88307fa987fb6d7fa2c9547e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetpurgeable(_:_:_:).json": {
-      "etag": "\"8516-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetpurgeable(_,_,_).md",
       "hash": "52920ec8aaef56960e7d52eec4cb3da0236cfff2095ae9ef929e0e7d5239bef6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetvalue(_:_:_:).json": {
-      "etag": "\"8592-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetvalue(_,_,_).md",
       "hash": "955d7b2487a86d8db1606fd1ba7f4c1d480610ea729b90e571b6e04dd8a95833"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetvalues(_:_:).json": {
-      "etag": "\"7cd1-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfacesetvalues(_,_).md",
       "hash": "0d030f359ca1000d2bee3920cff7e4e28ba1305a28458865a1f02011934fdd41"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling.json": {
-      "etag": "\"57aa-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling.md",
       "hash": "a8cd5cb6bbdc46b238f6a44aef511053da4da7aafc34ec92468aef7f8a6ed2a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/init(rawvalue:).json": {
-      "etag": "\"13b7-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/init(rawvalue).md",
       "hash": "7acad9b5261581f68935e91b11c2e1b1be3cdbfd8c6cfbadaaef983a12ad4e04"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsampling411.json": {
-      "etag": "\"2ac8-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling411.md",
       "hash": "4c04d38396fe52ff5bcc1868ad2c438d00311a56779d6d849ccb6cd7b604d773"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsampling420.json": {
-      "etag": "\"2ac8-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling420.md",
       "hash": "f49a7d3d0814dc7ac1a3a3ace8cada1e370264285d5176c57f4b1d20d59a62df"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsampling422.json": {
-      "etag": "\"2ac8-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling422.md",
       "hash": "f40ab1f5b6a33bcc772f26d34209da31bfe2c89566f71b9f8a67c28d0c4ed3af"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsamplingnone.json": {
-      "etag": "\"2ad1-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsamplingnone.md",
       "hash": "fc98e439eb6ff53bc50e2c4c532a61c6fe39e53ed6bb77f8d5de12c009c1bb70"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsamplingunknown.json": {
-      "etag": "\"2aec-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsamplingunknown.md",
       "hash": "da8338240a6e8f7f2704a50b2aa3ca9f788d4c4597d39a0afeac412041137d76"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceunlock(_:_:_:).json": {
-      "etag": "\"98fa-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/iosurfaceunlock(_,_,_).md",
       "hash": "441161513f9369e3b23d395fc8e974a98a1374a49d64a71190f3190a0e662c60"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceallocsize.json": {
-      "etag": "\"6128-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceallocsize.md",
       "hash": "93de2bcbbf4e2ddd337159db44be67ee4ce55948713b34c3afa67bc73adb7409"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacebytesperelement.json": {
-      "etag": "\"659d-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacebytesperelement.md",
       "hash": "6b94487e80ab1610097b763ece6766310f41427752f968d8ccc61e52a43bc42c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacebytesperrow.json": {
-      "etag": "\"6638-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacebytesperrow.md",
       "hash": "6f067654eac2e3c8cf5e41886f6509a0a419d7ee60e11900fb3d13314370fd96"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecachemode.json": {
-      "etag": "\"65ba-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecachemode.md",
       "hash": "cb0b385d6567a4f544e1d1be2b91e9f305d611c07f1441dfe771f0fa0fc9456b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecolorspace.json": {
-      "etag": "\"5fb5-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecolorspace.md",
       "hash": "c970fc42a0974dbec0e6d280c2a952363a2bf5cec532f002e71a7c0693c3988b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecontentheadroom.json": {
-      "etag": "\"19a3-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecontentheadroom.md",
       "hash": "442b76fb35f73daedb2a17803abe9aed3ad44b9b10b041b0815e92c274a06221"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecopybackcache.json": {
-      "etag": "\"1656-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecopybackcache.md",
       "hash": "45926360caaec5ef57d5e33c2a46ca8a71051564dfef23d50f880a861942a2be"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecopybackinnercache.json": {
-      "etag": "\"16bf-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfacecopybackinnercache.md",
       "hash": "0679166859d6d39ec8548d36665d07aaec3af1130eaa1977f002488866c9abb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacedefaultcache.json": {
-      "etag": "\"1641-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacedefaultcache.md",
       "hash": "c855d467b35993c252491fc3874872b2f2372f51d8531122473c497a953ef891"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceelementheight.json": {
-      "etag": "\"60de-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceelementheight.md",
       "hash": "6e217bb8573de6df8f8cfa8eafbed9396788e98dbd1b423b962afa090b06bbdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceelementwidth.json": {
-      "etag": "\"60d5-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceelementwidth.md",
       "hash": "533565153e3fbea370e92724751ac902f719d76b7cd9ed551215ceb731b95737"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceheight.json": {
-      "etag": "\"6563-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceheight.md",
       "hash": "e739870609a5014a490733f06bb59a7a3559ee1b06f6e87f47972c117e92db69"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceiccprofile.json": {
-      "etag": "\"5fb5-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceiccprofile.md",
       "hash": "6dc409294243f3321c4083ae4625e7520eb09f01259d28e44cb64f6e537e22d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceinhibitcache.json": {
-      "etag": "\"1641-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceinhibitcache.md",
       "hash": "9dfb7005f16adb9221d2af174cfa6f9b3e43ebeb942ced4d1d59689288b7f66f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceisglobal.json": {
-      "etag": "\"638e-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceisglobal.md",
       "hash": "eab28165e4e6b446e76c286b9739756412f344dc8938f94162692fdd214f3513"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapcacheshift.json": {
-      "etag": "\"1657-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcacheshift.md",
       "hash": "45e0e30bc61f15dae65010f9047ab964e71f080f0a06f036ce1972a94164de6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapcopybackcache.json": {
-      "etag": "\"1696-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcopybackcache.md",
       "hash": "b93bb07c8e6c683e31f146867037cc936cf2890890dcb6045694658a291d229e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapcopybackinnercache.json": {
-      "etag": "\"16ff-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcopybackinnercache.md",
       "hash": "2c37e7efa18423bda66eed0cd5c89d2a5a4d60d5587d96d548e7ac9176c2e66c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapdefaultcache.json": {
-      "etag": "\"1681-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapdefaultcache.md",
       "hash": "5d6684044b8b4c1626d94b949d74bf5d4d762c91e895e8c3e682762684cb30a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapinhibitcache.json": {
-      "etag": "\"1681-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapinhibitcache.md",
       "hash": "72d323d31d4f327369cc9e838ab49e5f7a452ce2f9b9e5ff82e29ce8980867fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapwritecombinecache.json": {
-      "etag": "\"16ea-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapwritecombinecache.md",
       "hash": "bf314be95e2f3dadf395d841eb3eeb3b78271c531585f93dde85892abad0b225"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapwritethrucache.json": {
-      "etag": "\"16ab-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacemapwritethrucache.md",
       "hash": "22d65fe8cade11a21d03831620594f9e4e3f0b24e541b6b79f06186e7c385576"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacename.json": {
-      "etag": "\"5f7f-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacename.md",
       "hash": "b7826db8dd95db71f7a5660e2fabb931f4f6ad6b05c36a3798efd0213c69ae51"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceoffset.json": {
-      "etag": "\"6549-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceoffset.md",
       "hash": "4c81b427e3f978d34994bd6b7fba46cdde8dfc3be87b68aa781dcfab72e74e57"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacepixelformat.json": {
-      "etag": "\"6594-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacepixelformat.md",
       "hash": "2f721656ed8045891be10489429af06ed451cd091be9e775696f3c370e8c178e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacepixelsizecastingallowed.json": {
-      "etag": "\"602c-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacepixelsizecastingallowed.md",
       "hash": "a16df33658d722ce3b363be681f4d6675a4bb699e09e542b34888e777048ad51"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebase.json": {
-      "etag": "\"6587-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebase.md",
       "hash": "0759d796872323b72e515daceb9cb3257d12aa2436bc243c27d4a4b99447cd17"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebitsperelement.json": {
-      "etag": "\"6008-65d55cc915428-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebitsperelement.md",
       "hash": "031fa6c30257c53030cf8a82a1d7e7f4d5e81d2587e2b4dd4a1f239aac4b5a60"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebytesperelement.json": {
-      "etag": "\"6619-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebytesperelement.md",
       "hash": "f2e4bee78a14a68ef4051629628ed198a484ce33e743c49789675dec6db58dec"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebytesperrow.json": {
-      "etag": "\"6679-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebytesperrow.md",
       "hash": "1c033a1621b694d03645f67246d26fb4754d5a49fe2cf33dbe94d8772bbe5284"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentbitdepths.json": {
-      "etag": "\"605c-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentbitdepths.md",
       "hash": "1c195b3b22e066b619b6261ca3495b3404b698c7a54100a885810e31a05ce5f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentbitoffsets.json": {
-      "etag": "\"6071-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentbitoffsets.md",
       "hash": "29bf683f0ffed19aad559db569bdb582d1adacf5605f7ded163236d8c992bb64"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentnames.json": {
-      "etag": "\"6008-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentnames.md",
       "hash": "63f1ef476e9f642624ffe339a746cecabc66d69abd2a59c7c00df2594032210b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentranges.json": {
-      "etag": "\"601d-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentranges.md",
       "hash": "34745fba1a2da2d0494536a34d0aa3715b04c37b0aeba6658cadbfc55c5004cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponenttypes.json": {
-      "etag": "\"6008-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponenttypes.md",
       "hash": "9aac2a31de16080a82b91c2e53e1a15c06f3f829719f9977f5d8f987aaf9f0f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneelementheight.json": {
-      "etag": "\"65e9-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneelementheight.md",
       "hash": "f7dd8b4870a5d2692dc7f75b7ab1e52488085ed64368207c93c3528ac4091394"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneelementwidth.json": {
-      "etag": "\"65d2-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneelementwidth.md",
       "hash": "b0e5a87b60e8c86ae2e29c985bd3483e37c744dfeea8dcbb7bd659611e7e088a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneheight.json": {
-      "etag": "\"655d-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneheight.md",
       "hash": "26373a87d0bdf2b37df54f47fd6f502671ef325ab7131c342ee44da6d78e998b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneinfo.json": {
-      "etag": "\"60cc-65d55cc93c554-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneinfo.md",
       "hash": "bd2fcbb0d6cc31d77e0645e2fc2d8bff5bfb20f2febea47cdd005f40df4cff58"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneoffset.json": {
-      "etag": "\"65c6-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneoffset.md",
       "hash": "b43690958a1d51d051a2fe5215d6236ed6c992c8a7231d798cd135121be6ef74"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanesize.json": {
-      "etag": "\"6557-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanesize.md",
       "hash": "2c90fe14a53670b96f97dc3ce3ba44998cd08ec622b520d0db3e65681baa07b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanewidth.json": {
-      "etag": "\"6546-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanewidth.md",
       "hash": "3726f69d70e38c41bd3f56f70958ca9c3504cd723267dca60005a79e850e06e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacesubsampling.json": {
-      "etag": "\"5f60-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacesubsampling.md",
       "hash": "9fb35b1cd81403ba9355f45877e3540dae8b89e36ab889762ffad69b3738f18b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacesuccess.json": {
-      "etag": "\"5c69-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacesuccess.md",
       "hash": "42951148177ff3ff6550a238bf554a3662af705ac33580a70110f1aa3310eb59"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacewidth.json": {
-      "etag": "\"64f6-65d55cc9569b2-df\"",
       "file_path": "documentation/IOSurface/kiosurfacewidth.md",
       "hash": "012c2f1d5fc39cfa74a66d91e7f59fbc41fba83c99a0b3e09158e5fb421d8bcb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacewritecombinecache.json": {
-      "etag": "\"16aa-65d55cc8f91af-df\"",
       "file_path": "documentation/IOSurface/kiosurfacewritecombinecache.md",
       "hash": "f0f7e8b1ec42e3e89108ddf8918ae8d9454edb65db014626b34931d4b29c0102"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacewritethrucache.json": {
-      "etag": "\"166b-65d55cc96825c-df\"",
       "file_path": "documentation/IOSurface/kiosurfacewritethrucache.md",
       "hash": "8db2d5e9f8ed6f55d652f8f7ce8978702e9bd6aae86abae33a1bd7bfc84666c7"
     }

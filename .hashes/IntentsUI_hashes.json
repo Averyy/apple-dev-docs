@@ -1,512 +1,410 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/intentsui": {
-      "etag": "\"2e5a-65d5609e63eab-df\"",
       "file_path": "documentation/IntentsUI/IntentsUI.md",
       "hash": "9a1719d6a33341d29c4a8bf1dad88e5afea6ea1341353186dd523af17bae189b"
     },
     "https://developer.apple.com/documentation/intentsui/intentsuiversionnumber": {
-      "etag": "\"111c-6590299fc9242-df\"",
       "file_path": "documentation/IntentsUI/intentsuiversionnumber.md",
       "hash": "0ca5a2a323d0a68b2dce2010b5ee5de3d7a12a57806d81e98f07ccde8c110e5e"
     },
     "https://developer.apple.com/documentation/intentsui/intentsuiversionstring": {
-      "etag": "\"1162-6590299f9f60e-df\"",
       "file_path": "documentation/IntentsUI/intentsuiversionstring.md",
       "hash": "f51582f956030c9c5b49c3b03e645be0a6079b2807f04dfb31071e1eff89a7c0"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton": {
-      "etag": "\"f977-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton.md",
       "hash": "6546dff8c6619c67cab89058aa5d22f8f1339c3936abe68778d757816efbc868"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton/cornerradius": {
-      "etag": "\"2881-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/cornerradius.md",
       "hash": "39acb6970212766532026e550aa36b221dd354a31bc3ebb0416a3a60b90c584f"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton/delegate": {
-      "etag": "\"28b4-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/delegate.md",
       "hash": "5ae22c848ae1b6e7a52d6daba3da0540d1c1389bf3afc4c19e7b74a6a3eebd51"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton/init(style:)": {
-      "etag": "\"27b6-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/init(style).md",
       "hash": "cfca120aa665863a2e408b26c9c5c345c0a218fa986a3c838ba1b74bbf1eb443"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton/setstyle(_:)": {
-      "etag": "\"2bfc-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/setstyle(_).md",
       "hash": "c5924fca938506d331aefece5cd593cd4a571e89c913e97a5052c0eff86a4bd9"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton/shortcut": {
-      "etag": "\"2f2f-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/shortcut.md",
       "hash": "d5749d104da4abc8974ef7582e3e66ae53ffc1fd99d23a80ae627614f678fcb7"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbutton/style": {
-      "etag": "\"2ff3-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/style.md",
       "hash": "81b6c53eabed4a0799b5298120253fddba18d59e6717c524a273a0ace82b6958"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttondelegate": {
-      "etag": "\"38db-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttondelegate.md",
       "hash": "8d29ffa717aaa42668d67660814c4ecc6feefb719bf3f8a170a60a4fe59cb09a"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttondelegate/present(_:for:)-5foo8": {
-      "etag": "\"3bcd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttondelegate/present(_,for)-5foo8.md",
       "hash": "ed199f2eba9ba46a01125078c401b30c9298a13a3e35ede69cf8a224790d773b"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttondelegate/present(_:for:)-9n4m9": {
-      "etag": "\"3bdd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttondelegate/present(_,for)-9n4m9.md",
       "hash": "abe51f40ccfe1cdb89067bfe0e6513410c4a5dc26b9a036eba89a197bee427e9"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle": {
-      "etag": "\"4e68-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle.md",
       "hash": "784e19fa9139e3e93fd2c52343b20418e3870e7188764fce9ab6cfffc43b97be"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/automatic": {
-      "etag": "\"3312-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/automatic.md",
       "hash": "c8df490cba879cc30718bcdd466862500466b4eb47d3c34cb349bf7924d983ac"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/automaticoutline": {
-      "etag": "\"3351-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/automaticoutline.md",
       "hash": "2d411327424e8672838198ed47425269850eca741b0fea87d55d1607e1d71d28"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/black": {
-      "etag": "\"3336-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/black.md",
       "hash": "ad94733898f092f98b14de9035de513efa9007be06c5c6805a0e0648dad9979c"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/blackoutline": {
-      "etag": "\"3398-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/blackoutline.md",
       "hash": "441e63eb86b176a2c1f28ea8a94390212a710d9f673d3624b94de28b44d069a2"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/init(rawvalue:)": {
-      "etag": "\"1434-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/init(rawvalue).md",
       "hash": "903c7d86cc3575862b650c5b97dcd295016d413f3e8cd2893820ca6f3a185100"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/white": {
-      "etag": "\"3336-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/white.md",
       "hash": "b5e4b479f63cd51ff08bb0d674570858bce19697363d5407edf16d162a76a33b"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/whiteoutline": {
-      "etag": "\"3398-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/whiteoutline.md",
       "hash": "f9bee0fee3b8790568cc30d8e6b17cb542e1a2b87c3300707d3607d57a0c25c7"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontroller": {
-      "etag": "\"a3c7-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontroller.md",
       "hash": "12456b3e72344e7ddcf6ffe3f353af738eebd3911953e3245070ad547318a306"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontroller/delegate": {
-      "etag": "\"25a3-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontroller/delegate.md",
       "hash": "c0f7b5aed77dd868490d1b570480c4046a8e236bd6d74d470dc688cc43c8866a"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontroller/init(shortcut:)": {
-      "etag": "\"2780-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontroller/init(shortcut).md",
       "hash": "20f4290ddfeb22c8b1f8155b19c60a275eb444220befea2e5eb9fab3eb1e3647"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontrollerdelegate": {
-      "etag": "\"365e-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontrollerdelegate.md",
       "hash": "761d10adfd01afbd66463f6924ad7f0c73e712375c1693efb8a2509b7bfa3442"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontroller(_:didfinishwith:error:)": {
-      "etag": "\"43c2-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontroller(_,didfinishwith,error).md",
       "hash": "2cc04bbe76dc9c2b51cbf15caad4e815727b03950e98878611b58d40ac29420a"
     },
     "https://developer.apple.com/documentation/intentsui/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontrollerdidcancel(_:)": {
-      "etag": "\"3344-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontrollerdidcancel(_).md",
       "hash": "e30e05be43600bf58fce341b679e04916619c75fed42ffee33cd5efab8f582ce"
     },
     "https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontroller": {
-      "etag": "\"9c1c-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontroller.md",
       "hash": "03ea116dcded2329257f71b293fbaef0df0874b90ca2a5939f59a50976d9d2f6"
     },
     "https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontroller/delegate": {
-      "etag": "\"25d2-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontroller/delegate.md",
       "hash": "3974a6b9451000f129b92762dc63791b032f92548cf8e8811d0e0b61effe2632"
     },
     "https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontroller/init(voiceshortcut:)": {
-      "etag": "\"2554-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontroller/init(voiceshortcut).md",
       "hash": "42b899a65310e4b57943602a0cb39ac8c7e2681456f32af284b58ad9a6ad9cd1"
     },
     "https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate": {
-      "etag": "\"40cc-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate.md",
       "hash": "407bfe9665c1eedb9298d0ac06da0a450b76c1dd3de37fe4d570cb21ace05f79"
     },
     "https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_:diddeletevoiceshortcutwithidentifier:)": {
-      "etag": "\"438f-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_,diddeletevoiceshortcutwithidentifier).md",
       "hash": "d4b2c539e92b92f80152690549921e6345a45a7bd3651acd9d3f0bd048c2dc32"
     },
     "https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_:didupdate:error:)": {
-      "etag": "\"4bab-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_,didupdate,error).md",
       "hash": "2212634293bd98ff2b27e2e9e8e33ae48fcf4b4d323771739bdbc5e3cde92f1c"
     },
     "https://developer.apple.com/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontrollerdidcancel(_:)": {
-      "etag": "\"2903-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontrollerdidcancel(_).md",
       "hash": "8c1d300a4a03951c43dcd97c4b9013b1018356308916adebbbefa792f9870366"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewcontext": {
-      "etag": "\"3529-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext.md",
       "hash": "258f2af4b044af68005c0cd798211f1d6a7c3bf0c0f4cf1dab787626576ece4b"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewcontext/init(rawvalue:)": {
-      "etag": "\"12ff-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext/init(rawvalue).md",
       "hash": "ea464f81edf73cf4f0adf81425f4d12e4829615b1295f8d0f897baac82369cde"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewcontext/mapscard": {
-      "etag": "\"2072-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext/mapscard.md",
       "hash": "f71371aeb3b57d7e73babaaa5c2a236da7585dafee2691c5360703fb3214455c"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewcontext/sirisnippet": {
-      "etag": "\"1ddd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext/sirisnippet.md",
       "hash": "365de133dc668d348b6e77aa1ae9aae0fa4399a49ce2c4df5b66428b8d851694"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling": {
-      "etag": "\"792b-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontrolling.md",
       "hash": "07feaf1188474e9bcfa9e5c9a05fc2ecc3113c242337f50d1640822e74ff2c55"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:)": {
-      "etag": "\"781b-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontrolling/configure(with,context,completion).md",
       "hash": "381711b58fd59a5c2251eee7424fe388d2ac5c9fb7afefe156d3e79724472647"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configureview(for:of:interactivebehavior:context:completion:)": {
-      "etag": "\"9c74-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontrolling/configureview(for,of,interactivebehavior,context,completion).md",
       "hash": "e60e79ed7152d8ba0d6dba639a2f204b7ede7b32ab087def5dafcbeafd13641e"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewsiriproviding": {
-      "etag": "\"4694-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding.md",
       "hash": "2ec7bec7fbf2b2c32be79712cd532e2693f5fde2d96187b1c5465587ff544d00"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewsiriproviding/displaysmap": {
-      "etag": "\"33e7-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding/displaysmap.md",
       "hash": "3cd598b7887ef3e7ce3f8d642d2427fcd1c6f7f491cea1adfaeefd6ee7a6c6b2"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewsiriproviding/displaysmessage": {
-      "etag": "\"3237-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding/displaysmessage.md",
       "hash": "3a48f03150f62ed5240d67c6d6adda89656d3ce0e0e8e0be77ab9470741252be"
     },
     "https://developer.apple.com/documentation/intentsui/inuihostedviewsiriproviding/displayspaymenttransaction": {
-      "etag": "\"3290-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding/displayspaymenttransaction.md",
       "hash": "c8ba1a939d5479b2a5cefd11a863cf480f9534a12297b917635e821507b255c7"
     },
     "https://developer.apple.com/documentation/intentsui/inuiinteractivebehavior": {
-      "etag": "\"50d0-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior.md",
       "hash": "b17d2671a3d880cfd326ccc312d70440c97a9dba86654d5f72d764563fdb2987"
     },
     "https://developer.apple.com/documentation/intentsui/inuiinteractivebehavior/genericaction": {
-      "etag": "\"26f7-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/genericaction.md",
       "hash": "d1eddeb8297d66c1930fff8dc6737a15fb0fc9b7fe673418cd650b9a0c9ef304"
     },
     "https://developer.apple.com/documentation/intentsui/inuiinteractivebehavior/init(rawvalue:)": {
-      "etag": "\"1335-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/init(rawvalue).md",
       "hash": "380713e9d6414c9ef69c367389ae4b0a1f625731b2727481f2505d143ef35010"
     },
     "https://developer.apple.com/documentation/intentsui/inuiinteractivebehavior/launch": {
-      "etag": "\"26b4-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/launch.md",
       "hash": "21c8fc94e964aa0b2ef2cad96dc2c8d5e3c6aef6f71b88b9248781138508fb18"
     },
     "https://developer.apple.com/documentation/intentsui/inuiinteractivebehavior/nextview": {
-      "etag": "\"26cd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/nextview.md",
       "hash": "708a9cc743cb6068e7d7e97e4b1ed7d118b4baa36a8fec95300830e523a5c5b7"
     },
     "https://developer.apple.com/documentation/intentsui/inuiinteractivebehavior/none": {
-      "etag": "\"2679-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/none.md",
       "hash": "83cc4b2a56651aafd2806bd85712218edbb10b2ec3f771a5fe5b391eee2fc996"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui.json": {
-      "etag": "\"2e5a-65d5609e63eab-df\"",
       "file_path": "documentation/IntentsUI/IntentsUI.md",
       "hash": "9a1719d6a33341d29c4a8bf1dad88e5afea6ea1341353186dd523af17bae189b"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/intentsuiversionnumber.json": {
-      "etag": "\"111c-6590299fc9242-df\"",
       "file_path": "documentation/IntentsUI/intentsuiversionnumber.md",
       "hash": "0ca5a2a323d0a68b2dce2010b5ee5de3d7a12a57806d81e98f07ccde8c110e5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/intentsuiversionstring.json": {
-      "etag": "\"1162-6590299f9f60e-df\"",
       "file_path": "documentation/IntentsUI/intentsuiversionstring.md",
       "hash": "f51582f956030c9c5b49c3b03e645be0a6079b2807f04dfb31071e1eff89a7c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton.json": {
-      "etag": "\"f977-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton.md",
       "hash": "6546dff8c6619c67cab89058aa5d22f8f1339c3936abe68778d757816efbc868"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton/cornerradius.json": {
-      "etag": "\"2881-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/cornerradius.md",
       "hash": "39acb6970212766532026e550aa36b221dd354a31bc3ebb0416a3a60b90c584f"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton/delegate.json": {
-      "etag": "\"28b4-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/delegate.md",
       "hash": "5ae22c848ae1b6e7a52d6daba3da0540d1c1389bf3afc4c19e7b74a6a3eebd51"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton/init(style:).json": {
-      "etag": "\"27b6-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/init(style).md",
       "hash": "cfca120aa665863a2e408b26c9c5c345c0a218fa986a3c838ba1b74bbf1eb443"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton/setstyle(_:).json": {
-      "etag": "\"2bfc-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/setstyle(_).md",
       "hash": "c5924fca938506d331aefece5cd593cd4a571e89c913e97a5052c0eff86a4bd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton/shortcut.json": {
-      "etag": "\"2f2f-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/shortcut.md",
       "hash": "d5749d104da4abc8974ef7582e3e66ae53ffc1fd99d23a80ae627614f678fcb7"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbutton/style.json": {
-      "etag": "\"2ff3-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbutton/style.md",
       "hash": "81b6c53eabed4a0799b5298120253fddba18d59e6717c524a273a0ace82b6958"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttondelegate.json": {
-      "etag": "\"38db-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttondelegate.md",
       "hash": "8d29ffa717aaa42668d67660814c4ecc6feefb719bf3f8a170a60a4fe59cb09a"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttondelegate/present(_:for:)-5foo8.json": {
-      "etag": "\"3bcd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttondelegate/present(_,for)-5foo8.md",
       "hash": "ed199f2eba9ba46a01125078c401b30c9298a13a3e35ede69cf8a224790d773b"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttondelegate/present(_:for:)-9n4m9.json": {
-      "etag": "\"3bdd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttondelegate/present(_,for)-9n4m9.md",
       "hash": "abe51f40ccfe1cdb89067bfe0e6513410c4a5dc26b9a036eba89a197bee427e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle.json": {
-      "etag": "\"4e68-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle.md",
       "hash": "784e19fa9139e3e93fd2c52343b20418e3870e7188764fce9ab6cfffc43b97be"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/automatic.json": {
-      "etag": "\"3312-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/automatic.md",
       "hash": "c8df490cba879cc30718bcdd466862500466b4eb47d3c34cb349bf7924d983ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/automaticoutline.json": {
-      "etag": "\"3351-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/automaticoutline.md",
       "hash": "2d411327424e8672838198ed47425269850eca741b0fea87d55d1607e1d71d28"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/black.json": {
-      "etag": "\"3336-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/black.md",
       "hash": "ad94733898f092f98b14de9035de513efa9007be06c5c6805a0e0648dad9979c"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/blackoutline.json": {
-      "etag": "\"3398-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/blackoutline.md",
       "hash": "441e63eb86b176a2c1f28ea8a94390212a710d9f673d3624b94de28b44d069a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/init(rawvalue:).json": {
-      "etag": "\"1434-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/init(rawvalue).md",
       "hash": "903c7d86cc3575862b650c5b97dcd295016d413f3e8cd2893820ca6f3a185100"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/white.json": {
-      "etag": "\"3336-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/white.md",
       "hash": "b5e4b479f63cd51ff08bb0d674570858bce19697363d5407edf16d162a76a33b"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutbuttonstyle/whiteoutline.json": {
-      "etag": "\"3398-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutbuttonstyle/whiteoutline.md",
       "hash": "f9bee0fee3b8790568cc30d8e6b17cb542e1a2b87c3300707d3607d57a0c25c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutviewcontroller.json": {
-      "etag": "\"a3c7-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontroller.md",
       "hash": "12456b3e72344e7ddcf6ffe3f353af738eebd3911953e3245070ad547318a306"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutviewcontroller/delegate.json": {
-      "etag": "\"25a3-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontroller/delegate.md",
       "hash": "c0f7b5aed77dd868490d1b570480c4046a8e236bd6d74d470dc688cc43c8866a"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutviewcontroller/init(shortcut:).json": {
-      "etag": "\"2780-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontroller/init(shortcut).md",
       "hash": "20f4290ddfeb22c8b1f8155b19c60a275eb444220befea2e5eb9fab3eb1e3647"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutviewcontrollerdelegate.json": {
-      "etag": "\"365e-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontrollerdelegate.md",
       "hash": "761d10adfd01afbd66463f6924ad7f0c73e712375c1693efb8a2509b7bfa3442"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontroller(_:didfinishwith:error:).json": {
-      "etag": "\"43c2-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontroller(_,didfinishwith,error).md",
       "hash": "2cc04bbe76dc9c2b51cbf15caad4e815727b03950e98878611b58d40ac29420a"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontrollerdidcancel(_:).json": {
-      "etag": "\"3344-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiaddvoiceshortcutviewcontrollerdelegate/addvoiceshortcutviewcontrollerdidcancel(_).md",
       "hash": "e30e05be43600bf58fce341b679e04916619c75fed42ffee33cd5efab8f582ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuieditvoiceshortcutviewcontroller.json": {
-      "etag": "\"9c1c-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontroller.md",
       "hash": "03ea116dcded2329257f71b293fbaef0df0874b90ca2a5939f59a50976d9d2f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuieditvoiceshortcutviewcontroller/delegate.json": {
-      "etag": "\"25d2-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontroller/delegate.md",
       "hash": "3974a6b9451000f129b92762dc63791b032f92548cf8e8811d0e0b61effe2632"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuieditvoiceshortcutviewcontroller/init(voiceshortcut:).json": {
-      "etag": "\"2554-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontroller/init(voiceshortcut).md",
       "hash": "42b899a65310e4b57943602a0cb39ac8c7e2681456f32af284b58ad9a6ad9cd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate.json": {
-      "etag": "\"40cc-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate.md",
       "hash": "407bfe9665c1eedb9298d0ac06da0a450b76c1dd3de37fe4d570cb21ace05f79"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_:diddeletevoiceshortcutwithidentifier:).json": {
-      "etag": "\"438f-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_,diddeletevoiceshortcutwithidentifier).md",
       "hash": "d4b2c539e92b92f80152690549921e6345a45a7bd3651acd9d3f0bd048c2dc32"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_:didupdate:error:).json": {
-      "etag": "\"4bab-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontroller(_,didupdate,error).md",
       "hash": "2212634293bd98ff2b27e2e9e8e33ae48fcf4b4d323771739bdbc5e3cde92f1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontrollerdidcancel(_:).json": {
-      "etag": "\"2903-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuieditvoiceshortcutviewcontrollerdelegate/editvoiceshortcutviewcontrollerdidcancel(_).md",
       "hash": "8c1d300a4a03951c43dcd97c4b9013b1018356308916adebbbefa792f9870366"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewcontext.json": {
-      "etag": "\"3529-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext.md",
       "hash": "258f2af4b044af68005c0cd798211f1d6a7c3bf0c0f4cf1dab787626576ece4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewcontext/init(rawvalue:).json": {
-      "etag": "\"12ff-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext/init(rawvalue).md",
       "hash": "ea464f81edf73cf4f0adf81425f4d12e4829615b1295f8d0f897baac82369cde"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewcontext/mapscard.json": {
-      "etag": "\"2072-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext/mapscard.md",
       "hash": "f71371aeb3b57d7e73babaaa5c2a236da7585dafee2691c5360703fb3214455c"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewcontext/sirisnippet.json": {
-      "etag": "\"1ddd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontext/sirisnippet.md",
       "hash": "365de133dc668d348b6e77aa1ae9aae0fa4399a49ce2c4df5b66428b8d851694"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewcontrolling.json": {
-      "etag": "\"792b-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontrolling.md",
       "hash": "07feaf1188474e9bcfa9e5c9a05fc2ecc3113c242337f50d1640822e74ff2c55"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:).json": {
-      "etag": "\"781b-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontrolling/configure(with,context,completion).md",
       "hash": "381711b58fd59a5c2251eee7424fe388d2ac5c9fb7afefe156d3e79724472647"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewcontrolling/configureview(for:of:interactivebehavior:context:completion:).json": {
-      "etag": "\"9c74-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewcontrolling/configureview(for,of,interactivebehavior,context,completion).md",
       "hash": "e60e79ed7152d8ba0d6dba639a2f204b7ede7b32ab087def5dafcbeafd13641e"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewsiriproviding.json": {
-      "etag": "\"4694-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding.md",
       "hash": "2ec7bec7fbf2b2c32be79712cd532e2693f5fde2d96187b1c5465587ff544d00"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewsiriproviding/displaysmap.json": {
-      "etag": "\"33e7-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding/displaysmap.md",
       "hash": "3cd598b7887ef3e7ce3f8d642d2427fcd1c6f7f491cea1adfaeefd6ee7a6c6b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewsiriproviding/displaysmessage.json": {
-      "etag": "\"3237-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding/displaysmessage.md",
       "hash": "3a48f03150f62ed5240d67c6d6adda89656d3ce0e0e8e0be77ab9470741252be"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuihostedviewsiriproviding/displayspaymenttransaction.json": {
-      "etag": "\"3290-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuihostedviewsiriproviding/displayspaymenttransaction.md",
       "hash": "c8ba1a939d5479b2a5cefd11a863cf480f9534a12297b917635e821507b255c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiinteractivebehavior.json": {
-      "etag": "\"50d0-65d5609e7fc63-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior.md",
       "hash": "b17d2671a3d880cfd326ccc312d70440c97a9dba86654d5f72d764563fdb2987"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiinteractivebehavior/genericaction.json": {
-      "etag": "\"26f7-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/genericaction.md",
       "hash": "d1eddeb8297d66c1930fff8dc6737a15fb0fc9b7fe673418cd650b9a0c9ef304"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiinteractivebehavior/init(rawvalue:).json": {
-      "etag": "\"1335-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/init(rawvalue).md",
       "hash": "380713e9d6414c9ef69c367389ae4b0a1f625731b2727481f2505d143ef35010"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiinteractivebehavior/launch.json": {
-      "etag": "\"26b4-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/launch.md",
       "hash": "21c8fc94e964aa0b2ef2cad96dc2c8d5e3c6aef6f71b88b9248781138508fb18"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiinteractivebehavior/nextview.json": {
-      "etag": "\"26cd-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/nextview.md",
       "hash": "708a9cc743cb6068e7d7e97e4b1ed7d118b4baa36a8fec95300830e523a5c5b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/intentsui/inuiinteractivebehavior/none.json": {
-      "etag": "\"2679-65d5609ea4df2-df\"",
       "file_path": "documentation/IntentsUI/inuiinteractivebehavior/none.md",
       "hash": "83cc4b2a56651aafd2806bd85712218edbb10b2ec3f771a5fe5b391eee2fc996"
     }

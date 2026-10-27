@@ -1,682 +1,546 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/SpatialPreview": {
-      "etag": "\"3b6e-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/SpatialPreview.md",
       "hash": "db9bee2e7f004545d4b457eebed9eb1b130dafbbbfe5c1289084355f3798a43c"
     },
     "https://developer.apple.com/documentation/spatialpreview/bridging-an-external-usd-runtime-to-spatial-preview": {
-      "etag": "\"6bbb-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/bridging-an-external-usd-runtime-to-spatial-preview.md",
       "hash": "b206d565d5f2c6baac3c9fdd809e1d7cd9158fc22432bc8db2b1366f415ac847"
     },
     "https://developer.apple.com/documentation/spatialpreview/connectedspatialendpointobserver": {
-      "etag": "\"339e-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver.md",
       "hash": "c9f156d12748e6d122bb56b7503525e8a764492fbcd40127a249cc45a02a941a"
     },
     "https://developer.apple.com/documentation/spatialpreview/connectedspatialendpointobserver/endpoint": {
-      "etag": "\"228c-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/endpoint.md",
       "hash": "069cf72c7d0b4a3abffad85db2b8e44d441661483170ce063d4d6f06b17b8c68"
     },
     "https://developer.apple.com/documentation/spatialpreview/connectedspatialendpointobserver/init()": {
-      "etag": "\"114f-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/init().md",
       "hash": "8b20f4f83c4962d0ea456880093044370291bd8f701a63f4c101b01688d6a947"
     },
     "https://developer.apple.com/documentation/spatialpreview/connectedspatialendpointobserver/isendpointavailable": {
-      "etag": "\"17cd-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/isendpointavailable.md",
       "hash": "9e31537926f03567c3e050ed660ef17788d28da9856e518895b0b95ddb951dfb"
     },
     "https://developer.apple.com/documentation/spatialpreview/connectedspatialendpointobserver/unavailableerror": {
-      "etag": "\"2824-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/unavailableerror.md",
       "hash": "8e0614493222f9b2c984a86c672fd791235a2e3882ee2899057b2927c036ecd3"
     },
     "https://developer.apple.com/documentation/spatialpreview/documentpreviewsession": {
-      "etag": "\"694e-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession.md",
       "hash": "b692fc6b64112fadd89fcb3ebadc0aaf6078b38a5c3f19ebf785ae63f23fe9f1"
     },
     "https://developer.apple.com/documentation/spatialpreview/documentpreviewsession/contenttype": {
-      "etag": "\"1327-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/contenttype.md",
       "hash": "3a35d1ed4ddfe7b8818a39b1bfc2e79cf595e4069512b89bb7ca9d72ab4e520f"
     },
     "https://developer.apple.com/documentation/spatialpreview/documentpreviewsession/init(name:contenttype:)": {
-      "etag": "\"18a4-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/init(name,contenttype).md",
       "hash": "c6b50d5d2b6decfa1673302acb4b4033aca330c9c7b206602d920565009a2755"
     },
     "https://developer.apple.com/documentation/spatialpreview/documentpreviewsession/name": {
-      "etag": "\"1183-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/name.md",
       "hash": "0fdb557093a8154534e03bcbfef6c780a82869974b7c5b310fd74a7edbdffbca"
     },
     "https://developer.apple.com/documentation/spatialpreview/documentpreviewsession/start(endpoint:)": {
-      "etag": "\"27e3-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/start(endpoint).md",
       "hash": "b463103cf0eb813ad774de21075079e91362ca9e90ddc0f7fef58771050fed7a"
     },
     "https://developer.apple.com/documentation/spatialpreview/documentpreviewsession/updatecontents(data:)": {
-      "etag": "\"1579-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/updatecontents(data).md",
       "hash": "45e3f87ddfc55a0862b809fd21c4264e3ada6402e927569b8b9715569d124219"
     },
     "https://developer.apple.com/documentation/spatialpreview/documentpreviewsession/updatecontents(url:)": {
-      "etag": "\"15cf-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/updatecontents(url).md",
       "hash": "e23240305beb5cea319a900267c28c94a8b64a970a72d07ee390721d0f41e98c"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewdevicepicker": {
-      "etag": "\"245a-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewdevicepicker.md",
       "hash": "4ce5808d1ad153e66c8b098748995c296c1ddb1370e7c19cda71a1a7591249c2"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewdevicepicker/init(ispresented:onselect:)": {
-      "etag": "\"25d9-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewdevicepicker/init(ispresented,onselect).md",
       "hash": "793ce2ac75522017af3e08b1bcb7d690cca2f95ac804d8f5f5befb1d583d8933"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewendpoint": {
-      "etag": "\"39d7-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewendpoint.md",
       "hash": "84a36b9875b4d241757e6b66ccac77fac7ba64683ede86adfc01d3146e3601af"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsession": {
-      "etag": "\"20e0-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession.md",
       "hash": "bc0b15036f7c037402c0e077a982ad8a6be74481d6f3131be49226ddeec6b6e4"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsession/close()": {
-      "etag": "\"f9d-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/close().md",
       "hash": "0ac2a6fe9770743234c2a60209d272714f31b9b9ac0df3606649214613496f39"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsession/progress": {
-      "etag": "\"12cd-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/progress.md",
       "hash": "1ee327df5d93aa248fe14e3031f765a0a106e866496271145e2a5e44b32aa938"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsession/state": {
-      "etag": "\"12ed-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/state.md",
       "hash": "710c7734ab94dd401f7ffd8a4750c709648e0286ed6f7fa1261a5710e34a7a98"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionerror": {
-      "etag": "\"3152-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror.md",
       "hash": "c0ef73cf88f6ac6c4286467bb7d2f0e9e3f35edae44ef3920fdae5113b75637c"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionerror/invalidated": {
-      "etag": "\"d5c-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/invalidated.md",
       "hash": "d0ff862adb55a943a61a659b8d70a9310f74f58a2473e956bb38509c9e73daed"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionerror/invalidspatialpreviewendpoint": {
-      "etag": "\"ea7-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/invalidspatialpreviewendpoint.md",
       "hash": "11f50ed55f02b19b3b5ca494315cbabd5a4d5cd0da2da59c096034e56a7ce0f2"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionerror/toomanysessions": {
-      "etag": "\"e42-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/toomanysessions.md",
       "hash": "06dd19c6f53ea745ed70c4ad30c54af232a732e2cc16006841d015bb137d819d"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionstate": {
-      "etag": "\"3831-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate.md",
       "hash": "6514d88ba35f92e4a7ea6399363132fe6915a80489b839af3da0f72d81fefa4a"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionstate/connected": {
-      "etag": "\"1136-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/connected.md",
       "hash": "a78fcc3d30f2ec6eae54018c6293fc5550a0508359dae5c01fa7c5fcd3a240d8"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionstate/interrupted": {
-      "etag": "\"1183-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/interrupted.md",
       "hash": "7e91242cb534b197a79b0ebd877fb4f6d8a213a888d7194ca8fe1e4751a44d3f"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionstate/invalidated": {
-      "etag": "\"1181-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/invalidated.md",
       "hash": "a0414028a2c498082198644512822b32d5a4b8311f16e9ef8e607bb66341d0c2"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionstate/isinvalidated": {
-      "etag": "\"11f2-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/isinvalidated.md",
       "hash": "aa2707d8f0ac74b81bb9fe99dc718c453fa3ef333b61c1715ae4653e4c23c31e"
     },
     "https://developer.apple.com/documentation/spatialpreview/spatialpreviewsessionstate/waiting": {
-      "etag": "\"113a-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/waiting.md",
       "hash": "f6f0f8b8c479a0ff69b7da8b40922207fdea191cbb356e5d1719f0c7fcdf9426"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession": {
-      "etag": "\"61e3-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession.md",
       "hash": "3619e3fa0d94bebd9ee21688daae479407ebcc954d6fe49f146608b8b4229a63"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate": {
-      "etag": "\"2d09-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate.md",
       "hash": "e9b7bc97142193a1b70af6f915fe7a664b10dc62e3b658eb099fd1de130d7aa6"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(_:)": {
-      "etag": "\"263b-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges(_).md",
       "hash": "4c95d68883636764bdcf99cf33e7a620119314c0c67430b1c37c70cc410c5adb"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(_:)-43pk6": {
-      "etag": "\"1cd4-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges(_)-43pk6.md",
       "hash": "054ef5ee7cee0bb0c1c592ca9b5996492571133c324d5cd278cb7e0de3f31235"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(instanceidentifier:operationidentifier:)": {
-      "etag": "\"26d7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges(instanceidentifier,operationidentifier).md",
       "hash": "d3f2323586addcc67fd2ffb34de26eaa9d2502260f9dc8bc2efb74936266f852"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/onredorequest()": {
-      "etag": "\"18d7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/onredorequest().md",
       "hash": "e9b50d2f3ca9d3b315b5528fd05f61c945aa16088861c5191ad98449fe27d91d"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/onundorequest()": {
-      "etag": "\"18d7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/onundorequest().md",
       "hash": "b0c15cdb676b9e582370b070093a34d9eebdf2aded474393dafd0f4dc1cab644"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(_:)": {
-      "etag": "\"2646-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges(_).md",
       "hash": "a0697b891cce0c8dc22ecde8a554d9ef17419d859afe39c62ebcf62f84bbf88c"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(_:)-4seho": {
-      "etag": "\"1ce0-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges(_)-4seho.md",
       "hash": "28bb95fda2856c1b5a8506dab752ef2fc3210cacc606393a2543c2cfc08704ac"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(instanceidentifier:operationidentifier:)": {
-      "etag": "\"26de-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges(instanceidentifier,operationidentifier).md",
       "hash": "da69875392a575677df4b1278914e6bb811282f014cbfce3443a78e626d32bad"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/delegate": {
-      "etag": "\"162a-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/delegate.md",
       "hash": "ba6c8b8e6e1ed58ee1c415aaec5b944323110a50e5290bcbe7a27b64bbaa3878"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/error": {
-      "etag": "\"3198-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error.md",
       "hash": "9165b656695c69cbd93b4b09497ffa11728e506a925440539e393adeef9ac464"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/error/assetunshareable": {
-      "etag": "\"1123-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error/assetunshareable.md",
       "hash": "7a3b9f6631c75faf77a30f6afb64031faa65bb0172c1bb61e57c0d7ff2c20da3"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/error/readonlystage": {
-      "etag": "\"1176-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error/readonlystage.md",
       "hash": "4481526e82b59fcde37e3363a2f3641b8a7ef922c2853f60339008b6bebefbd2"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/event": {
-      "etag": "\"2fe6-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event.md",
       "hash": "a60f6520c96c320d148e6303e647e881624f878ef5cad9233ae79fabfc5bf3d1"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/event/error(_:)": {
-      "etag": "\"17b7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/error(_).md",
       "hash": "d3a04441c6de7e13ebb357f3db3e54d4b1375a5f8af95eb677feeef5fa0f1fcb"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/event/playbackstatechanged(isplaying:)": {
-      "etag": "\"16a5-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/playbackstatechanged(isplaying).md",
       "hash": "6d57b644a88c55e7cf74a5a413710374678e56e45c7a87393f43396967ecd6af"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/event/timechanged(_:)": {
-      "etag": "\"1762-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/timechanged(_).md",
       "hash": "e9c2b89211b054530be72e0b1da31e92faddba22b355e80bc8c1a8e0b7d21346"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/events": {
-      "etag": "\"1c70-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/events.md",
       "hash": "5cc43442b77ef26cc5409e33b88005993dc3a5b23cd2a2d46121187aebd7cf14"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/init(stage:)": {
-      "etag": "\"124e-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/init(stage).md",
       "hash": "e0f06cce6ccf819322a8c4a20be94ae1289e5c7406c97aa7db63c845098896e6"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/isplaying": {
-      "etag": "\"1210-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/isplaying.md",
       "hash": "8f698384ad34af11cbe5d1277ebfbcef225838f468e1b111b1011e5be91dee6b"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/optimizationparameters": {
-      "etag": "\"1fb2-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters.md",
       "hash": "1ab34311efb6a92ce58e17807f8b69177b019e4d144cd4fdac85a9a6ed45d3a3"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/optimizationparameters/processed(_:)": {
-      "etag": "\"1a4e-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters/processed(_).md",
       "hash": "55827c56f657877a17e72e5803fe0b94f71e6843197856582644266a261ca4cd"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/optimizationparameters/unmodified": {
-      "etag": "\"11ae-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters/unmodified.md",
       "hash": "e0114fa78f81106e96375c85ad9361af57a7c1b4f2171908e59499fe8fec96f8"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/optimizationsteps": {
-      "etag": "\"2e56-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps.md",
       "hash": "550882e5ebb5f42052316aecd465ac06f3cf2413726f7bef2fd68113cc8ed6c9"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/optimizationsteps/compressed": {
-      "etag": "\"1c11-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps/compressed.md",
       "hash": "6fa1cc23d9af32953e196dab28995bea95f53a8451f7bab974d59f1fb675e985"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/optimizationsteps/optimized": {
-      "etag": "\"1939-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps/optimized.md",
       "hash": "d85896e7ddcb7323e7627d0641f9fd9bc9d280550c4b09c4530307a3a76b2513"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions": {
-      "etag": "\"3cbe-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions.md",
       "hash": "e0a0d136658e77ce1e8f7224d3012f0d04c5e0e1f3a45efd509cfb82e4dc9a1a"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/annotations": {
-      "etag": "\"17a1-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/annotations.md",
       "hash": "925f2d23566c1fc4785449a6b0eba0dfafc14c68d989951543c2a226d3f23501"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/default": {
-      "etag": "\"1722-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/default.md",
       "hash": "4183d7901ae00d48d4969cbfa02585b008b66a1b45f51e2fe8fe47e3c52cfe96"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/description": {
-      "etag": "\"1592-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/description.md",
       "hash": "a845889207091ea1884e8e48838035a7b6e88393cfceee7e0b4886f4d1bd8838"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/export": {
-      "etag": "\"172b-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/export.md",
       "hash": "802b2bc4e25a27c9bfb1e8dce2c3952b6deaf9bd15b5c71610125bc242ea8c5a"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/perobjectmanipulation": {
-      "etag": "\"1829-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/perobjectmanipulation.md",
       "hash": "e3aaa5b2cf89d416cad37e979f562a4013254deecfbfa212b9d5651f9428c7ef"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/start(endpoint:parameters:vieweroptions:)": {
-      "etag": "\"4205-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/start(endpoint,parameters,vieweroptions).md",
       "hash": "47ce749fbbf1353f12a85c8f61e728b432945a3c8c873b7b38d46f064d788ef3"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/time": {
-      "etag": "\"141f-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/time.md",
       "hash": "935930025d8db31769c1c07d59e4aa20ee51a010c50c77330d0dbf4d72edb97d"
     },
     "https://developer.apple.com/documentation/spatialpreview/usdpreviewsession/updateundoredocounts(undo:redo:)": {
-      "etag": "\"17b5-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/updateundoredocounts(undo,redo).md",
       "hash": "c555f0575b082a08cb951b2b984978114a670b98e643a9c860d02e964879e626"
     },
     "https://developer.apple.com/documentation/spatialpreview/working-with-content-from-your-mac-app-using-spatial-preview": {
-      "etag": "\"13ee-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/working-with-content-from-your-mac-app-using-spatial-preview.md",
       "hash": "b2455d24d6d688f592da409bd7c012279e81ed5ff1c95614872ea49f7b5ec1c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/SpatialPreview.json": {
-      "etag": "\"3b6e-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/SpatialPreview.md",
       "hash": "db9bee2e7f004545d4b457eebed9eb1b130dafbbbfe5c1289084355f3798a43c"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/bridging-an-external-usd-runtime-to-spatial-preview.json": {
-      "etag": "\"6bbb-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/bridging-an-external-usd-runtime-to-spatial-preview.md",
       "hash": "b206d565d5f2c6baac3c9fdd809e1d7cd9158fc22432bc8db2b1366f415ac847"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver.json": {
-      "etag": "\"339e-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver.md",
       "hash": "c9f156d12748e6d122bb56b7503525e8a764492fbcd40127a249cc45a02a941a"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/endpoint.json": {
-      "etag": "\"228c-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/endpoint.md",
       "hash": "069cf72c7d0b4a3abffad85db2b8e44d441661483170ce063d4d6f06b17b8c68"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/init().json": {
-      "etag": "\"114f-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/init().md",
       "hash": "8b20f4f83c4962d0ea456880093044370291bd8f701a63f4c101b01688d6a947"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/isendpointavailable.json": {
-      "etag": "\"17cd-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/isendpointavailable.md",
       "hash": "9e31537926f03567c3e050ed660ef17788d28da9856e518895b0b95ddb951dfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/connectedspatialendpointobserver/unavailableerror.json": {
-      "etag": "\"2824-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/connectedspatialendpointobserver/unavailableerror.md",
       "hash": "8e0614493222f9b2c984a86c672fd791235a2e3882ee2899057b2927c036ecd3"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession.json": {
-      "etag": "\"694e-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession.md",
       "hash": "b692fc6b64112fadd89fcb3ebadc0aaf6078b38a5c3f19ebf785ae63f23fe9f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/contenttype.json": {
-      "etag": "\"1327-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/contenttype.md",
       "hash": "3a35d1ed4ddfe7b8818a39b1bfc2e79cf595e4069512b89bb7ca9d72ab4e520f"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/init(name:contenttype:).json": {
-      "etag": "\"18a4-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/init(name,contenttype).md",
       "hash": "c6b50d5d2b6decfa1673302acb4b4033aca330c9c7b206602d920565009a2755"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/name.json": {
-      "etag": "\"1183-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/name.md",
       "hash": "0fdb557093a8154534e03bcbfef6c780a82869974b7c5b310fd74a7edbdffbca"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/start(endpoint:).json": {
-      "etag": "\"27e3-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/start(endpoint).md",
       "hash": "b463103cf0eb813ad774de21075079e91362ca9e90ddc0f7fef58771050fed7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/updatecontents(data:).json": {
-      "etag": "\"1579-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/updatecontents(data).md",
       "hash": "45e3f87ddfc55a0862b809fd21c4264e3ada6402e927569b8b9715569d124219"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/documentpreviewsession/updatecontents(url:).json": {
-      "etag": "\"15cf-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/documentpreviewsession/updatecontents(url).md",
       "hash": "e23240305beb5cea319a900267c28c94a8b64a970a72d07ee390721d0f41e98c"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewdevicepicker.json": {
-      "etag": "\"245a-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewdevicepicker.md",
       "hash": "4ce5808d1ad153e66c8b098748995c296c1ddb1370e7c19cda71a1a7591249c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewdevicepicker/init(ispresented:onselect:).json": {
-      "etag": "\"25d9-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewdevicepicker/init(ispresented,onselect).md",
       "hash": "793ce2ac75522017af3e08b1bcb7d690cca2f95ac804d8f5f5befb1d583d8933"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewendpoint.json": {
-      "etag": "\"39d7-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewendpoint.md",
       "hash": "84a36b9875b4d241757e6b66ccac77fac7ba64683ede86adfc01d3146e3601af"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession.json": {
-      "etag": "\"20e0-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession.md",
       "hash": "bc0b15036f7c037402c0e077a982ad8a6be74481d6f3131be49226ddeec6b6e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession/close().json": {
-      "etag": "\"f9d-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/close().md",
       "hash": "0ac2a6fe9770743234c2a60209d272714f31b9b9ac0df3606649214613496f39"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession/progress.json": {
-      "etag": "\"12cd-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/progress.md",
       "hash": "1ee327df5d93aa248fe14e3031f765a0a106e866496271145e2a5e44b32aa938"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsession/state.json": {
-      "etag": "\"12ed-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsession/state.md",
       "hash": "710c7734ab94dd401f7ffd8a4750c709648e0286ed6f7fa1261a5710e34a7a98"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror.json": {
-      "etag": "\"3152-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror.md",
       "hash": "c0ef73cf88f6ac6c4286467bb7d2f0e9e3f35edae44ef3920fdae5113b75637c"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror/invalidated.json": {
-      "etag": "\"d5c-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/invalidated.md",
       "hash": "d0ff862adb55a943a61a659b8d70a9310f74f58a2473e956bb38509c9e73daed"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror/invalidspatialpreviewendpoint.json": {
-      "etag": "\"ea7-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/invalidspatialpreviewendpoint.md",
       "hash": "11f50ed55f02b19b3b5ca494315cbabd5a4d5cd0da2da59c096034e56a7ce0f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionerror/toomanysessions.json": {
-      "etag": "\"e42-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionerror/toomanysessions.md",
       "hash": "06dd19c6f53ea745ed70c4ad30c54af232a732e2cc16006841d015bb137d819d"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate.json": {
-      "etag": "\"3831-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate.md",
       "hash": "6514d88ba35f92e4a7ea6399363132fe6915a80489b839af3da0f72d81fefa4a"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/connected.json": {
-      "etag": "\"1136-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/connected.md",
       "hash": "a78fcc3d30f2ec6eae54018c6293fc5550a0508359dae5c01fa7c5fcd3a240d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/interrupted.json": {
-      "etag": "\"1183-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/interrupted.md",
       "hash": "7e91242cb534b197a79b0ebd877fb4f6d8a213a888d7194ca8fe1e4751a44d3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/invalidated.json": {
-      "etag": "\"1181-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/invalidated.md",
       "hash": "a0414028a2c498082198644512822b32d5a4b8311f16e9ef8e607bb66341d0c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/isinvalidated.json": {
-      "etag": "\"11f2-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/isinvalidated.md",
       "hash": "aa2707d8f0ac74b81bb9fe99dc718c453fa3ef333b61c1715ae4653e4c23c31e"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/spatialpreviewsessionstate/waiting.json": {
-      "etag": "\"113a-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/spatialpreviewsessionstate/waiting.md",
       "hash": "f6f0f8b8c479a0ff69b7da8b40922207fdea191cbb356e5d1719f0c7fcdf9426"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession.json": {
-      "etag": "\"61e3-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession.md",
       "hash": "3619e3fa0d94bebd9ee21688daae479407ebcc954d6fe49f146608b8b4229a63"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate.json": {
-      "etag": "\"2d09-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate.md",
       "hash": "e9b7bc97142193a1b70af6f915fe7a664b10dc62e3b658eb099fd1de130d7aa6"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(_:)-43pk6.json": {
-      "etag": "\"1cd4-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges(_)-43pk6.md",
       "hash": "054ef5ee7cee0bb0c1c592ca9b5996492571133c324d5cd278cb7e0de3f31235"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(_:).json": {
-      "etag": "\"263b-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges(_).md",
       "hash": "4c95d68883636764bdcf99cf33e7a620119314c0c67430b1c37c70cc410c5adb"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/didapplychanges(instanceidentifier:operationidentifier:).json": {
-      "etag": "\"26d7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/didapplychanges(instanceidentifier,operationidentifier).md",
       "hash": "d3f2323586addcc67fd2ffb34de26eaa9d2502260f9dc8bc2efb74936266f852"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/onredorequest().json": {
-      "etag": "\"18d7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/onredorequest().md",
       "hash": "e9b50d2f3ca9d3b315b5528fd05f61c945aa16088861c5191ad98449fe27d91d"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/onundorequest().json": {
-      "etag": "\"18d7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/onundorequest().md",
       "hash": "b0c15cdb676b9e582370b070093a34d9eebdf2aded474393dafd0f4dc1cab644"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(_:)-4seho.json": {
-      "etag": "\"1ce0-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges(_)-4seho.md",
       "hash": "28bb95fda2856c1b5a8506dab752ef2fc3210cacc606393a2543c2cfc08704ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(_:).json": {
-      "etag": "\"2646-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges(_).md",
       "hash": "a0697b891cce0c8dc22ecde8a554d9ef17419d859afe39c62ebcf62f84bbf88c"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/changelistdelegate/willapplychanges(instanceidentifier:operationidentifier:).json": {
-      "etag": "\"26de-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/changelistdelegate/willapplychanges(instanceidentifier,operationidentifier).md",
       "hash": "da69875392a575677df4b1278914e6bb811282f014cbfce3443a78e626d32bad"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/delegate.json": {
-      "etag": "\"162a-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/delegate.md",
       "hash": "ba6c8b8e6e1ed58ee1c415aaec5b944323110a50e5290bcbe7a27b64bbaa3878"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/error.json": {
-      "etag": "\"3198-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error.md",
       "hash": "9165b656695c69cbd93b4b09497ffa11728e506a925440539e393adeef9ac464"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/error/assetunshareable.json": {
-      "etag": "\"1123-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error/assetunshareable.md",
       "hash": "7a3b9f6631c75faf77a30f6afb64031faa65bb0172c1bb61e57c0d7ff2c20da3"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/error/readonlystage.json": {
-      "etag": "\"1176-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/error/readonlystage.md",
       "hash": "4481526e82b59fcde37e3363a2f3641b8a7ef922c2853f60339008b6bebefbd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event.json": {
-      "etag": "\"2fe6-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event.md",
       "hash": "a60f6520c96c320d148e6303e647e881624f878ef5cad9233ae79fabfc5bf3d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event/error(_:).json": {
-      "etag": "\"17b7-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/error(_).md",
       "hash": "d3a04441c6de7e13ebb357f3db3e54d4b1375a5f8af95eb677feeef5fa0f1fcb"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event/playbackstatechanged(isplaying:).json": {
-      "etag": "\"16a5-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/playbackstatechanged(isplaying).md",
       "hash": "6d57b644a88c55e7cf74a5a413710374678e56e45c7a87393f43396967ecd6af"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/event/timechanged(_:).json": {
-      "etag": "\"1762-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/event/timechanged(_).md",
       "hash": "e9c2b89211b054530be72e0b1da31e92faddba22b355e80bc8c1a8e0b7d21346"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/events.json": {
-      "etag": "\"1c70-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/events.md",
       "hash": "5cc43442b77ef26cc5409e33b88005993dc3a5b23cd2a2d46121187aebd7cf14"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/init(stage:).json": {
-      "etag": "\"124e-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/init(stage).md",
       "hash": "e0f06cce6ccf819322a8c4a20be94ae1289e5c7406c97aa7db63c845098896e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/isplaying.json": {
-      "etag": "\"1210-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/isplaying.md",
       "hash": "8f698384ad34af11cbe5d1277ebfbcef225838f468e1b111b1011e5be91dee6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationparameters.json": {
-      "etag": "\"1fb2-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters.md",
       "hash": "1ab34311efb6a92ce58e17807f8b69177b019e4d144cd4fdac85a9a6ed45d3a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationparameters/processed(_:).json": {
-      "etag": "\"1a4e-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters/processed(_).md",
       "hash": "55827c56f657877a17e72e5803fe0b94f71e6843197856582644266a261ca4cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationparameters/unmodified.json": {
-      "etag": "\"11ae-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationparameters/unmodified.md",
       "hash": "e0114fa78f81106e96375c85ad9361af57a7c1b4f2171908e59499fe8fec96f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationsteps.json": {
-      "etag": "\"2e56-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps.md",
       "hash": "550882e5ebb5f42052316aecd465ac06f3cf2413726f7bef2fd68113cc8ed6c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationsteps/compressed.json": {
-      "etag": "\"1c11-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps/compressed.md",
       "hash": "6fa1cc23d9af32953e196dab28995bea95f53a8451f7bab974d59f1fb675e985"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/optimizationsteps/optimized.json": {
-      "etag": "\"1939-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/optimizationsteps/optimized.md",
       "hash": "d85896e7ddcb7323e7627d0641f9fd9bc9d280550c4b09c4530307a3a76b2513"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions.json": {
-      "etag": "\"3cbe-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions.md",
       "hash": "e0a0d136658e77ce1e8f7224d3012f0d04c5e0e1f3a45efd509cfb82e4dc9a1a"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/annotations.json": {
-      "etag": "\"17a1-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/annotations.md",
       "hash": "925f2d23566c1fc4785449a6b0eba0dfafc14c68d989951543c2a226d3f23501"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/default.json": {
-      "etag": "\"1722-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/default.md",
       "hash": "4183d7901ae00d48d4969cbfa02585b008b66a1b45f51e2fe8fe47e3c52cfe96"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/description.json": {
-      "etag": "\"1592-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/description.md",
       "hash": "a845889207091ea1884e8e48838035a7b6e88393cfceee7e0b4886f4d1bd8838"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/export.json": {
-      "etag": "\"172b-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/export.md",
       "hash": "802b2bc4e25a27c9bfb1e8dce2c3952b6deaf9bd15b5c71610125bc242ea8c5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/spatialvieweroptions/perobjectmanipulation.json": {
-      "etag": "\"1829-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/spatialvieweroptions/perobjectmanipulation.md",
       "hash": "e3aaa5b2cf89d416cad37e979f562a4013254deecfbfa212b9d5651f9428c7ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/start(endpoint:parameters:vieweroptions:).json": {
-      "etag": "\"4205-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/start(endpoint,parameters,vieweroptions).md",
       "hash": "47ce749fbbf1353f12a85c8f61e728b432945a3c8c873b7b38d46f064d788ef3"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/time.json": {
-      "etag": "\"141f-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/time.md",
       "hash": "935930025d8db31769c1c07d59e4aa20ee51a010c50c77330d0dbf4d72edb97d"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/usdpreviewsession/updateundoredocounts(undo:redo:).json": {
-      "etag": "\"17b5-65d55dcd5267f-df\"",
       "file_path": "documentation/SpatialPreview/usdpreviewsession/updateundoredocounts(undo,redo).md",
       "hash": "c555f0575b082a08cb951b2b984978114a670b98e643a9c860d02e964879e626"
     },
     "https://developer.apple.com/tutorials/data/documentation/spatialpreview/working-with-content-from-your-mac-app-using-spatial-preview.json": {
-      "etag": "\"13ee-65d55dcd442ac-df\"",
       "file_path": "documentation/SpatialPreview/working-with-content-from-your-mac-app-using-spatial-preview.md",
       "hash": "b2455d24d6d688f592da409bd7c012279e81ed5ff1c95614872ea49f7b5ec1c1"
     }

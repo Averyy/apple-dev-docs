@@ -1,482 +1,386 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/SafetyKit": {
-      "etag": "\"5b44-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/SafetyKit.md",
       "hash": "626c05eb83a6371580a1c978b5ab5bde622fbf1e99b24c37d52f4179f2814ecf"
     },
     "https://developer.apple.com/documentation/safetykit/sa_export": {
-      "etag": "\"99a-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/sa_export.md",
       "hash": "17ac51f75dd0af4d90aa35efb7f181d0611fcffa5aeefa3d50679e3eae51a1ce"
     },
     "https://developer.apple.com/documentation/safetykit/sa_extern": {
-      "etag": "\"99a-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sa_extern.md",
       "hash": "e54ae524d175afbe842daa6dc2c83d60b54d2a0b0771a67d6eb04879c5bddcda"
     },
     "https://developer.apple.com/documentation/safetykit/saauthorizationstatus": {
-      "etag": "\"4fdb-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus.md",
       "hash": "90dab524a7c7948eb7dab5277d7ae524972cab6dd5a157b03049d4a1d32b9aa9"
     },
     "https://developer.apple.com/documentation/safetykit/saauthorizationstatus/authorized": {
-      "etag": "\"22fb-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/authorized.md",
       "hash": "c8f546b0b33bcecbd3622ca770e2715d0d3d7d54dcb96900e595b41e2fe06def"
     },
     "https://developer.apple.com/documentation/safetykit/saauthorizationstatus/denied": {
-      "etag": "\"22fd-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/denied.md",
       "hash": "fce6b4510fc93da655be1e77668959fec1a96fc79b56e20664b90db332758f4f"
     },
     "https://developer.apple.com/documentation/safetykit/saauthorizationstatus/init(rawvalue:)": {
-      "etag": "\"1353-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/init(rawvalue).md",
       "hash": "381e5d11ee805b4d9179b7649990ada566f45f001c843de07a0408b54a89ce6f"
     },
     "https://developer.apple.com/documentation/safetykit/saauthorizationstatus/notdetermined": {
-      "etag": "\"231a-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/notdetermined.md",
       "hash": "1968689f45e79ad8c67f9300accbdf1e1910d4601e919c3c7a26757e428ff74f"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectiondelegate": {
-      "etag": "\"360a-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectiondelegate.md",
       "hash": "e4307ef56db8a8c9f8896590d2828c5539be52cb6f1461a3ebe8b3cd89fd45f5"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectiondelegate/crashdetectionmanager(_:diddetect:)": {
-      "etag": "\"3fe4-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectiondelegate/crashdetectionmanager(_,diddetect).md",
       "hash": "355d78e4bc20e702001c2d703cb4c3afb0912ceada80eeb1f5cef2e3cb193354"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent": {
-      "etag": "\"69bc-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent.md",
       "hash": "445073ebd5d326df2c6a6836aae551384acd9d3ecb869ad35490439357c97d13"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/date": {
-      "etag": "\"2dd7-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/date.md",
       "hash": "d38894a9dac76f10888040fbe90efdfd477db6ee2cb1158beb287457204c0422"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/init(coder:)": {
-      "etag": "\"1492-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/init(coder).md",
       "hash": "75762cacff798bf96c3ffcc62578dbc3835db5bc076a48689c38e120e2ad37f7"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/location": {
-      "etag": "\"2fc2-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/location.md",
       "hash": "ed4e78df7c8ff17e4db841277ef37bc24bed430376f877a070d5c43ee23ce232"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/response-swift.enum": {
-      "etag": "\"4678-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum.md",
       "hash": "1bfb8e28d7f89ad4140c0bc42432b99913527bd1cf7b68d03c4e8e163b823a34"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/response-swift.enum/attempted": {
-      "etag": "\"2582-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum/attempted.md",
       "hash": "40e5d3afd55356016fe0bbf71e8c55259b251901aea5677435f0e642dffb0c26"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/response-swift.enum/disabled": {
-      "etag": "\"25a9-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum/disabled.md",
       "hash": "a399404ab53dabe906483d892538d973982a99037451e0c638b28e631f7686fa"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/response-swift.enum/init(rawvalue:)": {
-      "etag": "\"191b-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum/init(rawvalue).md",
       "hash": "8bc7a1181737d437744999b809c2389bc997d1b420ea03e3b2f3212291a2ccdf"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionevent/response-swift.property": {
-      "etag": "\"2e79-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.property.md",
       "hash": "71ceaf184ab3e8f11aef0fe040580644433ae2e86ee3d24908ac4ac84a56a7ea"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionmanager": {
-      "etag": "\"6b87-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager.md",
       "hash": "a618f3b962befefd90820bcc627db0ec7d3844066bd91ef554fe9b94bd4ef431"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionmanager/authorizationstatus": {
-      "etag": "\"2779-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/authorizationstatus.md",
       "hash": "8b238b1c0300382487b5b2f6b865f94c5ad08acddf939d47ad8dde408296ef80"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionmanager/delegate": {
-      "etag": "\"2a06-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/delegate.md",
       "hash": "ef79aa37906c7301032cde827d26d95469a2e4fecd316440eee0e2fd310c8a35"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionmanager/isavailable": {
-      "etag": "\"2531-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/isavailable.md",
       "hash": "222faa57a56e555b8d202da23bfb24d7fddd47ac6e6f13ee9d692281c5e6b582"
     },
     "https://developer.apple.com/documentation/safetykit/sacrashdetectionmanager/requestauthorization(completionhandler:)": {
-      "etag": "\"4739-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/requestauthorization(completionhandler).md",
       "hash": "ec8f2536dd66d2c833bd60babca4fe6b1251143e82d6625aca4568fdd32d148a"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsedelegate": {
-      "etag": "\"31ff-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsedelegate.md",
       "hash": "d729efd03b5adc7c8fa4f869624eb854b767198ecb84a79258ae5f03cfa850c3"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsedelegate/emergencyresponsemanager(_:didupdatevoicecallstatus:)": {
-      "etag": "\"3694-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsedelegate/emergencyresponsemanager(_,didupdatevoicecallstatus).md",
       "hash": "0afe09c23ea379d49d62990013a32c53edf4b3cdd07ae29a9ddd3b37ac1e6692"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager": {
-      "etag": "\"4fa3-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager.md",
       "hash": "5c8ceecceb585698442fe77c5144d1d36d48ea5caeb29ec837fa66134061250f"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/delegate": {
-      "etag": "\"31ab-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/delegate.md",
       "hash": "e79528919381f457e95f70b3035d6d79af834906f3f49a7098e2f15c710d177d"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/dialvoicecall(tophonenumber:completionhandler:)": {
-      "etag": "\"4adb-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/dialvoicecall(tophonenumber,completionhandler).md",
       "hash": "31ea1c7918228cb8955d3e4376494018ef884140b162dd39b039dc9e64e22f88"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/voicecallstatus": {
-      "etag": "\"544b-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus.md",
       "hash": "6e460880d041b27681893012b143bd8e2718fd0beb68855c16aa8869a1ae9aa5"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/active": {
-      "etag": "\"3177-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/active.md",
       "hash": "d83285aa1566c8f0cf2cdfa4fcf305d3a64197c5b456bcbded0e8559a5db4eb9"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/dialing": {
-      "etag": "\"314b-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/dialing.md",
       "hash": "faa83faf91136d3ffffd2be0bbdb6785ddaf47b9036b23498b6fd5d3488f2528"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/disconnected": {
-      "etag": "\"3181-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/disconnected.md",
       "hash": "6586db3231cec179e4e6ad68012a542915699f0aa6dc2c090fbd47ea04e27cb4"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/failed": {
-      "etag": "\"3150-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/failed.md",
       "hash": "34699ac1edc0272303f046cf1c54893fd95c09f32dd298f777d4dc2b5d614d77"
     },
     "https://developer.apple.com/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/init(rawvalue:)": {
-      "etag": "\"19a5-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/init(rawvalue).md",
       "hash": "8ea2dd112f7e6a7affd1b967a21786a5c44c192caa054892e22e2ea11c5c4777"
     },
     "https://developer.apple.com/documentation/safetykit/saerror": {
-      "etag": "\"3517-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror.md",
       "hash": "ba167771257285bf603593f72be76fd7c1d6f9acfa9f4878e7eec42e261df0d5"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/code": {
-      "etag": "\"4044-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code.md",
       "hash": "12236774c9fe74c75b7fb0fdc3839514fffb58010a98c3f7802ba9a2705de5ec"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/code/init(rawvalue:)": {
-      "etag": "\"14a0-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/init(rawvalue).md",
       "hash": "5877480f043f139f288cf62929c69dafbafa582ca1531464b2687d22c7d2e034"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/code/invalidargument": {
-      "etag": "\"27b3-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/invalidargument.md",
       "hash": "7551bf02889c4b87f4367b55ff396ee40fa5fd35ebaa3bed5ed04684e14a896d"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/code/notallowed": {
-      "etag": "\"27ab-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/notallowed.md",
       "hash": "8bc646d3629653f1b134cc352e48701900b79536e937548b7b703363e1c6d988"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/code/notauthorized": {
-      "etag": "\"27c0-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/notauthorized.md",
       "hash": "333816f59ad12af5b921a62f6cf7d13b6dc928ebcaf943d4aa4205d5e6b8140c"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/code/operationfailed": {
-      "etag": "\"27c9-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/operationfailed.md",
       "hash": "860547b8b616db0a9afeb9efabdfcc1ff23ee9b610365b96ab408c170f9fa6e6"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/errordomain": {
-      "etag": "\"10e2-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/errordomain.md",
       "hash": "3c60bc4448188c9cfcba4dad06d8389e07799397d1534bf44949bcaa3b60309b"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/invalidargument": {
-      "etag": "\"24c0-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/invalidargument.md",
       "hash": "1dde4020249fbb86c79e2181673ce2adce206d4237fef4122d81abdd5309c03f"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/notallowed": {
-      "etag": "\"24a8-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/notallowed.md",
       "hash": "192d9a5f82127c42df4d836a3bb0c72807610ce21cd6f2c866d4ce793c19d2c0"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/notauthorized": {
-      "etag": "\"24bf-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/notauthorized.md",
       "hash": "8987283e9c694c6b4d9b0e0e6da748fe860dd855785bdb25a2499f322b0c40ee"
     },
     "https://developer.apple.com/documentation/safetykit/saerror/operationfailed": {
-      "etag": "\"24bc-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/operationfailed.md",
       "hash": "6cd9aee6df4c10f2d585e0bfb79b6311d874ddc436b1f23f9916c9d9aebba045"
     },
     "https://developer.apple.com/documentation/safetykit/saerrordomain": {
-      "etag": "\"1d85-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saerrordomain.md",
       "hash": "580203b1f2fcec1f08732d207238de75ef52f0aa7c5d3aec1f4a6a533d711fa1"
     },
     "https://developer.apple.com/tutorials/data/documentation/SafetyKit.json": {
-      "etag": "\"5b44-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/SafetyKit.md",
       "hash": "626c05eb83a6371580a1c978b5ab5bde622fbf1e99b24c37d52f4179f2814ecf"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sa_export.json": {
-      "etag": "\"99a-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/sa_export.md",
       "hash": "17ac51f75dd0af4d90aa35efb7f181d0611fcffa5aeefa3d50679e3eae51a1ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sa_extern.json": {
-      "etag": "\"99a-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sa_extern.md",
       "hash": "e54ae524d175afbe842daa6dc2c83d60b54d2a0b0771a67d6eb04879c5bddcda"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saauthorizationstatus.json": {
-      "etag": "\"4fdb-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus.md",
       "hash": "90dab524a7c7948eb7dab5277d7ae524972cab6dd5a157b03049d4a1d32b9aa9"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saauthorizationstatus/authorized.json": {
-      "etag": "\"22fb-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/authorized.md",
       "hash": "c8f546b0b33bcecbd3622ca770e2715d0d3d7d54dcb96900e595b41e2fe06def"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saauthorizationstatus/denied.json": {
-      "etag": "\"22fd-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/denied.md",
       "hash": "fce6b4510fc93da655be1e77668959fec1a96fc79b56e20664b90db332758f4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saauthorizationstatus/init(rawvalue:).json": {
-      "etag": "\"1353-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/init(rawvalue).md",
       "hash": "381e5d11ee805b4d9179b7649990ada566f45f001c843de07a0408b54a89ce6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saauthorizationstatus/notdetermined.json": {
-      "etag": "\"231a-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saauthorizationstatus/notdetermined.md",
       "hash": "1968689f45e79ad8c67f9300accbdf1e1910d4601e919c3c7a26757e428ff74f"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectiondelegate.json": {
-      "etag": "\"360a-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectiondelegate.md",
       "hash": "e4307ef56db8a8c9f8896590d2828c5539be52cb6f1461a3ebe8b3cd89fd45f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectiondelegate/crashdetectionmanager(_:diddetect:).json": {
-      "etag": "\"3fe4-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectiondelegate/crashdetectionmanager(_,diddetect).md",
       "hash": "355d78e4bc20e702001c2d703cb4c3afb0912ceada80eeb1f5cef2e3cb193354"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent.json": {
-      "etag": "\"69bc-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent.md",
       "hash": "445073ebd5d326df2c6a6836aae551384acd9d3ecb869ad35490439357c97d13"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/date.json": {
-      "etag": "\"2dd7-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/date.md",
       "hash": "d38894a9dac76f10888040fbe90efdfd477db6ee2cb1158beb287457204c0422"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/init(coder:).json": {
-      "etag": "\"1492-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/init(coder).md",
       "hash": "75762cacff798bf96c3ffcc62578dbc3835db5bc076a48689c38e120e2ad37f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/location.json": {
-      "etag": "\"2fc2-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/location.md",
       "hash": "ed4e78df7c8ff17e4db841277ef37bc24bed430376f877a070d5c43ee23ce232"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/response-swift.enum.json": {
-      "etag": "\"4678-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum.md",
       "hash": "1bfb8e28d7f89ad4140c0bc42432b99913527bd1cf7b68d03c4e8e163b823a34"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/response-swift.enum/attempted.json": {
-      "etag": "\"2582-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum/attempted.md",
       "hash": "40e5d3afd55356016fe0bbf71e8c55259b251901aea5677435f0e642dffb0c26"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/response-swift.enum/disabled.json": {
-      "etag": "\"25a9-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum/disabled.md",
       "hash": "a399404ab53dabe906483d892538d973982a99037451e0c638b28e631f7686fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/response-swift.enum/init(rawvalue:).json": {
-      "etag": "\"191b-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.enum/init(rawvalue).md",
       "hash": "8bc7a1181737d437744999b809c2389bc997d1b420ea03e3b2f3212291a2ccdf"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionevent/response-swift.property.json": {
-      "etag": "\"2e79-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionevent/response-swift.property.md",
       "hash": "71ceaf184ab3e8f11aef0fe040580644433ae2e86ee3d24908ac4ac84a56a7ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionmanager.json": {
-      "etag": "\"6b87-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager.md",
       "hash": "a618f3b962befefd90820bcc627db0ec7d3844066bd91ef554fe9b94bd4ef431"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionmanager/authorizationstatus.json": {
-      "etag": "\"2779-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/authorizationstatus.md",
       "hash": "8b238b1c0300382487b5b2f6b865f94c5ad08acddf939d47ad8dde408296ef80"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionmanager/delegate.json": {
-      "etag": "\"2a06-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/delegate.md",
       "hash": "ef79aa37906c7301032cde827d26d95469a2e4fecd316440eee0e2fd310c8a35"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionmanager/isavailable.json": {
-      "etag": "\"2531-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/isavailable.md",
       "hash": "222faa57a56e555b8d202da23bfb24d7fddd47ac6e6f13ee9d692281c5e6b582"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/sacrashdetectionmanager/requestauthorization(completionhandler:).json": {
-      "etag": "\"4739-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/sacrashdetectionmanager/requestauthorization(completionhandler).md",
       "hash": "ec8f2536dd66d2c833bd60babca4fe6b1251143e82d6625aca4568fdd32d148a"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsedelegate.json": {
-      "etag": "\"31ff-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsedelegate.md",
       "hash": "d729efd03b5adc7c8fa4f869624eb854b767198ecb84a79258ae5f03cfa850c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsedelegate/emergencyresponsemanager(_:didupdatevoicecallstatus:).json": {
-      "etag": "\"3694-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsedelegate/emergencyresponsemanager(_,didupdatevoicecallstatus).md",
       "hash": "0afe09c23ea379d49d62990013a32c53edf4b3cdd07ae29a9ddd3b37ac1e6692"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager.json": {
-      "etag": "\"4fa3-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager.md",
       "hash": "5c8ceecceb585698442fe77c5144d1d36d48ea5caeb29ec837fa66134061250f"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/delegate.json": {
-      "etag": "\"31ab-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/delegate.md",
       "hash": "e79528919381f457e95f70b3035d6d79af834906f3f49a7098e2f15c710d177d"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/dialvoicecall(tophonenumber:completionhandler:).json": {
-      "etag": "\"4adb-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/dialvoicecall(tophonenumber,completionhandler).md",
       "hash": "31ea1c7918228cb8955d3e4376494018ef884140b162dd39b039dc9e64e22f88"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/voicecallstatus.json": {
-      "etag": "\"544b-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus.md",
       "hash": "6e460880d041b27681893012b143bd8e2718fd0beb68855c16aa8869a1ae9aa5"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/active.json": {
-      "etag": "\"3177-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/active.md",
       "hash": "d83285aa1566c8f0cf2cdfa4fcf305d3a64197c5b456bcbded0e8559a5db4eb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/dialing.json": {
-      "etag": "\"314b-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/dialing.md",
       "hash": "faa83faf91136d3ffffd2be0bbdb6785ddaf47b9036b23498b6fd5d3488f2528"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/disconnected.json": {
-      "etag": "\"3181-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/disconnected.md",
       "hash": "6586db3231cec179e4e6ad68012a542915699f0aa6dc2c090fbd47ea04e27cb4"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/failed.json": {
-      "etag": "\"3150-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/failed.md",
       "hash": "34699ac1edc0272303f046cf1c54893fd95c09f32dd298f777d4dc2b5d614d77"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saemergencyresponsemanager/voicecallstatus/init(rawvalue:).json": {
-      "etag": "\"19a5-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saemergencyresponsemanager/voicecallstatus/init(rawvalue).md",
       "hash": "8ea2dd112f7e6a7affd1b967a21786a5c44c192caa054892e22e2ea11c5c4777"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror.json": {
-      "etag": "\"3517-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror.md",
       "hash": "ba167771257285bf603593f72be76fd7c1d6f9acfa9f4878e7eec42e261df0d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/code.json": {
-      "etag": "\"4044-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code.md",
       "hash": "12236774c9fe74c75b7fb0fdc3839514fffb58010a98c3f7802ba9a2705de5ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/code/init(rawvalue:).json": {
-      "etag": "\"14a0-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/init(rawvalue).md",
       "hash": "5877480f043f139f288cf62929c69dafbafa582ca1531464b2687d22c7d2e034"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/code/invalidargument.json": {
-      "etag": "\"27b3-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/invalidargument.md",
       "hash": "7551bf02889c4b87f4367b55ff396ee40fa5fd35ebaa3bed5ed04684e14a896d"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/code/notallowed.json": {
-      "etag": "\"27ab-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/notallowed.md",
       "hash": "8bc646d3629653f1b134cc352e48701900b79536e937548b7b703363e1c6d988"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/code/notauthorized.json": {
-      "etag": "\"27c0-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/notauthorized.md",
       "hash": "333816f59ad12af5b921a62f6cf7d13b6dc928ebcaf943d4aa4205d5e6b8140c"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/code/operationfailed.json": {
-      "etag": "\"27c9-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/code/operationfailed.md",
       "hash": "860547b8b616db0a9afeb9efabdfcc1ff23ee9b610365b96ab408c170f9fa6e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/errordomain.json": {
-      "etag": "\"10e2-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/errordomain.md",
       "hash": "3c60bc4448188c9cfcba4dad06d8389e07799397d1534bf44949bcaa3b60309b"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/invalidargument.json": {
-      "etag": "\"24c0-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/invalidargument.md",
       "hash": "1dde4020249fbb86c79e2181673ce2adce206d4237fef4122d81abdd5309c03f"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/notallowed.json": {
-      "etag": "\"24a8-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/notallowed.md",
       "hash": "192d9a5f82127c42df4d836a3bb0c72807610ce21cd6f2c866d4ce793c19d2c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/notauthorized.json": {
-      "etag": "\"24bf-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/notauthorized.md",
       "hash": "8987283e9c694c6b4d9b0e0e6da748fe860dd855785bdb25a2499f322b0c40ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerror/operationfailed.json": {
-      "etag": "\"24bc-65d55d396a4e5-df\"",
       "file_path": "documentation/SafetyKit/saerror/operationfailed.md",
       "hash": "6cd9aee6df4c10f2d585e0bfb79b6311d874ddc436b1f23f9916c9d9aebba045"
     },
     "https://developer.apple.com/tutorials/data/documentation/safetykit/saerrordomain.json": {
-      "etag": "\"1d85-65d55d3972993-df\"",
       "file_path": "documentation/SafetyKit/saerrordomain.md",
       "hash": "580203b1f2fcec1f08732d207238de75ef52f0aa7c5d3aec1f4a6a533d711fa1"
     }

@@ -1,12 +1,10 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information": {
-      "etag": "\"27c9-65d55a4a21663-df\"",
       "file_path": "documentation/ApplePayMerchantTokenManagementAPI/adding-merchant-token-usage-information.md",
       "hash": "1370b5023314101dd139a1250747ec2266e7d60d9005ebad1fe30deecf7ff5a9"
     },
     "https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications": {
-      "etag": "\"520d-65d55a4a21663-df\"",
       "file_path": "documentation/ApplePayMerchantTokenManagementAPI/receiving-and-handling-merchant-token-notifications.md",
       "hash": "9e5ca2a7a518d29c9fe774726fc6b17464a6fc7ed089221c749f6cb14e70a702"
     },
@@ -15,12 +13,10 @@
       "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information.json": {
-      "etag": "\"27c9-65d55a4a21663-df\"",
       "file_path": "documentation/ApplePayMerchantTokenManagementAPI/adding-merchant-token-usage-information.md",
       "hash": "1370b5023314101dd139a1250747ec2266e7d60d9005ebad1fe30deecf7ff5a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications.json": {
-      "etag": "\"520d-65d55a4a21663-df\"",
       "file_path": "documentation/ApplePayMerchantTokenManagementAPI/receiving-and-handling-merchant-token-notifications.md",
       "hash": "9e5ca2a7a518d29c9fe774726fc6b17464a6fc7ed089221c749f6cb14e70a702"
     }

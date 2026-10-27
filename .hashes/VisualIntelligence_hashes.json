@@ -1,92 +1,74 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/VisualIntelligence": {
-      "etag": "\"2610-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/VisualIntelligence.md",
       "hash": "40b3abe57706b9a01956cdb5081ee7d28cce1a0c9e4dbeaabdba240d31fe8937"
     },
     "https://developer.apple.com/documentation/visualintelligence/integrating-your-app-with-visual-intelligence": {
-      "etag": "\"7d02-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/integrating-your-app-with-visual-intelligence.md",
       "hash": "a1880bf7f608c6ce7977f4bd886f4d448862762586245a195136836227fa5bca"
     },
     "https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor": {
-      "etag": "\"536c-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor.md",
       "hash": "d7b70d8260a6ecb2fdd76e4a03019f821d31bf490b3a55ebd09cf295818dd882"
     },
     "https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/defaultresolverspecification": {
-      "etag": "\"2164-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/defaultresolverspecification.md",
       "hash": "3e505cb19cd6e4fd3166dbbeb157dedad72d2fc9e675d43346b8e00d366bc3cd"
     },
     "https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/labels": {
-      "etag": "\"20d8-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/labels.md",
       "hash": "de671bfd30fb05ae057c88e9d1dd8273c59801ef9ed37795b18dfc79f5c000ab"
     },
     "https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/pixelbuffer": {
-      "etag": "\"1e1a-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/pixelbuffer.md",
       "hash": "12eb2288c1f5eb2739a90e4c871b68b05709bfeefbc7c3cd2f4091c2cd7f9019"
     },
     "https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/specification": {
-      "etag": "\"219f-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/specification.md",
       "hash": "64a83307abbbf4c4cc2c15c80964cba6b0f539be1d73caa339122e3470990f1c"
     },
     "https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/unwrappedtype": {
-      "etag": "\"1f33-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/unwrappedtype.md",
       "hash": "79d62faab906083a72aa9e4d197ed77593b6070258ef7a2c519de03e4abee2e2"
     },
     "https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/valuetype": {
-      "etag": "\"1f0d-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/valuetype.md",
       "hash": "39956dfad9c8b586c8f5fc3b2191b337c166b2a2fe3066492e9db50fea322dc1"
     },
     "https://developer.apple.com/tutorials/data/documentation/VisualIntelligence.json": {
-      "etag": "\"2610-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/VisualIntelligence.md",
       "hash": "40b3abe57706b9a01956cdb5081ee7d28cce1a0c9e4dbeaabdba240d31fe8937"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/integrating-your-app-with-visual-intelligence.json": {
-      "etag": "\"7d02-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/integrating-your-app-with-visual-intelligence.md",
       "hash": "a1880bf7f608c6ce7977f4bd886f4d448862762586245a195136836227fa5bca"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor.json": {
-      "etag": "\"536c-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor.md",
       "hash": "d7b70d8260a6ecb2fdd76e4a03019f821d31bf490b3a55ebd09cf295818dd882"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/defaultresolverspecification.json": {
-      "etag": "\"2164-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/defaultresolverspecification.md",
       "hash": "3e505cb19cd6e4fd3166dbbeb157dedad72d2fc9e675d43346b8e00d366bc3cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/labels.json": {
-      "etag": "\"20d8-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/labels.md",
       "hash": "de671bfd30fb05ae057c88e9d1dd8273c59801ef9ed37795b18dfc79f5c000ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/pixelbuffer.json": {
-      "etag": "\"1e1a-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/pixelbuffer.md",
       "hash": "12eb2288c1f5eb2739a90e4c871b68b05709bfeefbc7c3cd2f4091c2cd7f9019"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/specification.json": {
-      "etag": "\"219f-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/specification.md",
       "hash": "64a83307abbbf4c4cc2c15c80964cba6b0f539be1d73caa339122e3470990f1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/unwrappedtype.json": {
-      "etag": "\"1f33-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/unwrappedtype.md",
       "hash": "79d62faab906083a72aa9e4d197ed77593b6070258ef7a2c519de03e4abee2e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/valuetype.json": {
-      "etag": "\"1f0d-65d55e585b210-df\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/valuetype.md",
       "hash": "39956dfad9c8b586c8f5fc3b2191b337c166b2a2fe3066492e9db50fea322dc1"
     }

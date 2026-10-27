@@ -1,652 +1,522 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/CoreAudioKit": {
-      "etag": "\"6887-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/CoreAudioKit.md",
       "hash": "f84fa2a24f9fde3bc8215ab424333d031bb55fd3b49da2caf5dee7b5bd27e617"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auapplecustomviewloader": {
-      "etag": "\"2f99-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/auapplecustomviewloader.md",
       "hash": "d650916631ae506f9be06cfc31812b8f51f6ca037ba152dff8ead6ed02aaff07"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auapplecustomviewloader/customviewcontroller(for:audiounit:v3au:)": {
-      "etag": "\"24fe-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auapplecustomviewloader/customviewcontroller(for,audiounit,v3au).md",
       "hash": "98415aac1868d05c95a55366397cd1d69a8cf34f31896ff8322eb1752039755c"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auapplecustomviewloader/init()": {
-      "etag": "\"cd2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auapplecustomviewloader/init().md",
       "hash": "67548e0c9736623b6bcce47599ee2d98899885a9be9fdc5388fd1e68162ebb2b"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration": {
-      "etag": "\"6827-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration.md",
       "hash": "a6138aa11b569217e5171577e6ca1f9b36b0b65c15b373efa7b582a264b1609a"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration/height": {
-      "etag": "\"2af2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/height.md",
       "hash": "b0d1fe1d71aeebaf1f4c4ded6d2ddd5492de02e73c909426866cc7cb99c3c637"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration/hosthascontroller": {
-      "etag": "\"2b56-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/hosthascontroller.md",
       "hash": "e165c4595cc6d2687f566a99c6c60d0143d7e3a3e1fd243e9cf1956c91e14977"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration/init(coder:)": {
-      "etag": "\"1588-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/init(coder).md",
       "hash": "77e77a6bb55caf8cbfbd45af7b7a44654ed841471f70fdfcdcb0cfff9c0b011d"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration/init(width:height:hosthascontroller:)": {
-      "etag": "\"2dc6-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/init(width,height,hosthascontroller).md",
       "hash": "2a78974a54588103fc40bdfe8488baadcfa421b8ca37e84ac2309909cd61b863"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration/width": {
-      "etag": "\"2ae7-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/width.md",
       "hash": "d3ef58b429f368e40be777af954213270255fe4f6396279dadc0f5a3c949ccde"
     },
     "https://developer.apple.com/documentation/coreaudiokit/aucustomviewpersistentdata": {
-      "etag": "\"3347-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/aucustomviewpersistentdata.md",
       "hash": "b1125303eb15d4659fbea6323bddc375480e26ace0d773f4ff4c357ae1945cfc"
     },
     "https://developer.apple.com/documentation/coreaudiokit/aucustomviewpersistentdata/customviewpersistentdata": {
-      "etag": "\"2193-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/aucustomviewpersistentdata/customviewpersistentdata.md",
       "hash": "8e68076bfde1ac2569604689ca09ca76177ea4d670ed16474a05c36629613209"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericview": {
-      "etag": "\"8846-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview.md",
       "hash": "c492d973b4ca6ae136e4de2d6c61675f4ae73fd3dab2d1995b0b9ca51539e96f"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericview/audiounit": {
-      "etag": "\"1d16-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/audiounit.md",
       "hash": "1aa1872f5c8d2cae4637e5fece3b31c51fcf3c4401480c75c5f4bc651457e4ed"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericview/init(audiounit:)": {
-      "etag": "\"29da-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/init(audiounit).md",
       "hash": "72a965f9fed184e64f88d07eba6444f085a0c5e403655300428edfa58981e7bc"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericview/init(audiounit:displayflags:)": {
-      "etag": "\"377f-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/init(audiounit,displayflags).md",
       "hash": "47a5c9d7bfe4d20751731203d8969de58ebad57954fecafa5a9312570c95182a"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericview/showsexpertparameters": {
-      "etag": "\"2218-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/showsexpertparameters.md",
       "hash": "3a01b76fef418ea23022af1f3f043a1f1f194ebb960b957f02fc9c08cc2f9301"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewcontroller": {
-      "etag": "\"8043-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewcontroller.md",
       "hash": "d88e3a32559ba1713d71e40c23f58a86a012e50627122bdad287e4996660637a"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewcontroller/auaudiounit": {
-      "etag": "\"1ea1-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewcontroller/auaudiounit.md",
       "hash": "abeb20c01361c738d135c73e08e6333abea31db2805ac5378f451e5dfca24e89"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewdisplayflags": {
-      "etag": "\"3e4b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags.md",
       "hash": "9889516999d9ec72ce21d8400f850fc3ac5403f554150bf236964effad0da5b0"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewdisplayflags/init(rawvalue:)": {
-      "etag": "\"1358-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/init(rawvalue).md",
       "hash": "b87cda25610976c0addbb1f9820cc580920cdca89b89b08507432fee1bc382c2"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewdisplayflags/viewparametersdisplayflag": {
-      "etag": "\"2834-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/viewparametersdisplayflag.md",
       "hash": "2aee85800e908d005d75c5be4d0496f0f60737f87fda9ec92d1f941fb900f469"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewdisplayflags/viewpropertiesdisplayflag": {
-      "etag": "\"2834-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/viewpropertiesdisplayflag.md",
       "hash": "1c596bba79cec1c236f5c83262b79fa21e1be1336b5741ee8f9e2eafedc1870d"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewdisplayflags/viewtitledisplayflag": {
-      "etag": "\"2808-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/viewtitledisplayflag.md",
       "hash": "7589da4511153fc266fa833b8e0c436a375d809fefafc220e448cde004660b95"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal": {
-      "etag": "\"c26e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal.md",
       "hash": "31ce9601a96b8deb5e0ee8d364ed13dfd853a034ae94380e8647ac82d900dd58"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/auaudiounit": {
-      "etag": "\"1fdb-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/auaudiounit.md",
       "hash": "742660b7b052cb04160365e15b26ca963f251374f471beeb7592a5246995807c"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/init(coder:)": {
-      "etag": "\"1953-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/init(coder).md",
       "hash": "8f5f3d19130284db4a3295ec013cd35389014eacd3ea44e87e7c130755d88f2f"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/init(frame:)": {
-      "etag": "\"18c7-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/init(frame).md",
       "hash": "35f2ac2b4d91c8033ddc022db1d0b7805b344d7480827551fb156be7c8b91855"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/owningcontroller": {
-      "etag": "\"2579-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/owningcontroller.md",
       "hash": "21ada6789ef8ff0c95952e261f7ddb93ecc39dfe3f9fa3030b1c5ed9d4f6aa07"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/paramobservertoken": {
-      "etag": "\"2027-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/paramobservertoken.md",
       "hash": "34a6ede1a84f9545c0850ec97b43285661c033d48e6baeb6578f63bb06f54fb2"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/removefromsuperview()": {
-      "etag": "\"1829-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/removefromsuperview().md",
       "hash": "fcb38250e3ae9583ead2f33b2a52f5b8099e49c9d4c461b378bd6eebe61a8b18"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/removescheduledupdatestimer()": {
-      "etag": "\"1811-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/removescheduledupdatestimer().md",
       "hash": "2f96680a2819c63c8605f3ae5bc5ed34c47eba76f25e69860aadbbc303a68389"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/showsingleclumpindex": {
-      "etag": "\"1e28-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/showsingleclumpindex.md",
       "hash": "352963c42a4da5c32e2c2b859f03637bb26b1fb0709605df411a8d4e424f2b97"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternal/traitcollectiondidchange(_:)": {
-      "etag": "\"1d7a-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/traitcollectiondidchange(_).md",
       "hash": "6be5b39b3bdb57dc9ed27dd1f07af0255fbbf1edacc3826fbc3967125a360b21"
     },
     "https://developer.apple.com/documentation/coreaudiokit/augenericviewinternalbase": {
-      "etag": "\"165f-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternalbase.md",
       "hash": "0a5fa73e5d222aa85250463ef8b777bd2e01e1e4eb1519bc0a9dc5634431c219"
     },
     "https://developer.apple.com/documentation/coreaudiokit/aupannerview": {
-      "etag": "\"7a54-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/aupannerview.md",
       "hash": "f9dd36d7e9938f9e1ef48a95adcf9420a1ad1f2a7f9385aa33fa0a5b2a97e557"
     },
     "https://developer.apple.com/documentation/coreaudiokit/aupannerview/audiounit": {
-      "etag": "\"1cfb-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/aupannerview/audiounit.md",
       "hash": "d13446280c74960a55131713a2903e6b60a7ccee970ff55df8467cce8edf8d75"
     },
     "https://developer.apple.com/documentation/coreaudiokit/aupannerview/init(audiounit:)": {
-      "etag": "\"23e5-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/aupannerview/init(audiounit).md",
       "hash": "1544429c91a8739ad30bf699cc67a0796cd1d30df9b16568f1317f750880c841"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auviewcolor": {
-      "etag": "\"e51-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcolor.md",
       "hash": "a159fc64f4f21a2b439914344352dd674d3742fe63a12a14de949a7b67a8e7af"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auviewcontroller": {
-      "etag": "\"a38b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcontroller.md",
       "hash": "72281057be41cd72e622c2c0369284d88de5099dbac49038bdfa751398aca0f9"
     },
     "https://developer.apple.com/documentation/coreaudiokit/auviewcontrollerbase": {
-      "etag": "\"2c8b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcontrollerbase.md",
       "hash": "78d9e5449143549651a480e3746cd59794ae947ae0e8389daf1270893d482296"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cabtlemidiwindowcontroller": {
-      "etag": "\"4f0f-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cabtlemidiwindowcontroller.md",
       "hash": "10bd174b8da59c8e80efddc43cc682f620b0b3379387add139a0118067c455f7"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cabtmidicentralviewcontroller": {
-      "etag": "\"840e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cabtmidicentralviewcontroller.md",
       "hash": "b5796d0f26bacaa04b926eddeaf14a91c180b04433e5372e662fb34417b5b994"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cabtmidilocalperipheralviewcontroller": {
-      "etag": "\"7a4f-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cabtmidilocalperipheralviewcontroller.md",
       "hash": "1bcf48bbbf941c03da0345a3de45ce0168c28f75b49c46142660c46ed944d2d0"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudioswitcherview": {
-      "etag": "\"982e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview.md",
       "hash": "688bcdff622b8d35f9f11323997b3b70c45883d3dd9f237b7a1c2b408ca9cc4c"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudioswitcherview/contentwidth()": {
-      "etag": "\"2bf6-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview/contentwidth().md",
       "hash": "1edcc0696c555c480f005932cd78d1c8faa86785d0325c4793e9849e7d7f5bb1"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudioswitcherview/isshowingappnames": {
-      "etag": "\"2cc7-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview/isshowingappnames.md",
       "hash": "55fb8183b9d039b624e67095c9ec1ec1a94cedcfd06b5f39b901d45fe0040e96"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudioswitcherview/setoutputaudiounit(_:)": {
-      "etag": "\"2e4f-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview/setoutputaudiounit(_).md",
       "hash": "3a49dcc4c57ebc9393971f2604f1e358edb236c8a5babc765b2f725674288365"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview": {
-      "etag": "\"c082-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview.md",
       "hash": "1fe251abc0e5855899d609bc28073664220f5380e0966f2b1ffa5e9d5d73dc4d"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/currenttimelabelfont": {
-      "etag": "\"55f5-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/currenttimelabelfont.md",
       "hash": "e4b9b8da6ccd4686f7d28a3df2ed62baab6f4216e5e2ccaaa1fe77ad5bbc7b36"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/isconnected": {
-      "etag": "\"552d-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isconnected.md",
       "hash": "a729241a63704ada5a0aaf53f192fb86e9c8a103059b3f783bc18221a7acc40b"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/isenabled": {
-      "etag": "\"54d1-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isenabled.md",
       "hash": "764f417e9549e75c7ae7c15460a1dbba558873e27f3d874bfc2aa4f4ce3a92ab"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/isplaying": {
-      "etag": "\"5519-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isplaying.md",
       "hash": "00406c5862fd296941bc82d1f9553089b3311d3235e8a2a6bd55a47eae1b0424"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/isrecording": {
-      "etag": "\"552d-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isrecording.md",
       "hash": "7a43e1202465270ff9a7813c18041fb379ea3e990d9e7852f8a46b3540a3b2a8"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/labelcolor": {
-      "etag": "\"55a3-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/labelcolor.md",
       "hash": "ae12a3244bd6e77777c2b7e291ef49c6c1ec067be40c296feed16a63d4f55c5c"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/pausebuttoncolor": {
-      "etag": "\"55d9-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/pausebuttoncolor.md",
       "hash": "0885ba93f373957b8d8037698b57c715b9467812f54bbac0fe00b63e93919821"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/playbuttoncolor": {
-      "etag": "\"55d0-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/playbuttoncolor.md",
       "hash": "5e4a6312ef118fae620e856dd3deec81a374dde8bd7ff37692fd50107669200b"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/recordbuttoncolor": {
-      "etag": "\"55e2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/recordbuttoncolor.md",
       "hash": "12a8b57e04a0dbfed9430a78ae18fd2b5592189ee431654648072aee5cc08b5e"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/rewindbuttoncolor": {
-      "etag": "\"55e2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/rewindbuttoncolor.md",
       "hash": "830d779a2590d654346153ced20a9881d35c737b3ef64fa501f0cf5d913a346b"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterappaudiotransportview/setoutputaudiounit(_:)": {
-      "etag": "\"56a7-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/setoutputaudiounit(_).md",
       "hash": "7871ad9a09f75c97da339c3290d2ab987e7128cb986e99436fc7336e0808a013"
     },
     "https://developer.apple.com/documentation/coreaudiokit/cainterdeviceaudioviewcontroller": {
-      "etag": "\"4d1e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterdeviceaudioviewcontroller.md",
       "hash": "b8d6eab6e064815bff96133e8aca8703177366ff33efb2de30264164717d844a"
     },
     "https://developer.apple.com/documentation/coreaudiokit/canetworkbrowserwindowcontroller": {
-      "etag": "\"4f84-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller.md",
       "hash": "3628429fecff3316caf9cd8038f19e4d9aad555c4149b40831c93b3da4542151"
     },
     "https://developer.apple.com/documentation/coreaudiokit/canetworkbrowserwindowcontroller/init()": {
-      "etag": "\"1778-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller/init().md",
       "hash": "2076fc43f260d899b19b48eb1b955e61fc6a9603df7df789fec5074c35bf7fe9"
     },
     "https://developer.apple.com/documentation/coreaudiokit/canetworkbrowserwindowcontroller/isavbsupported()": {
-      "etag": "\"25fc-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller/isavbsupported().md",
       "hash": "3b0d2fbe76131411c67e436f0fbbd4698abdc72ed4b2f3e697079c2ea2c0b2a8"
     },
     "https://developer.apple.com/documentation/coreaudiokit/core-audio-kit-data-types": {
-      "etag": "\"816-659026c4365d7-df\"",
       "file_path": "documentation/CoreAudioKit/core-audio-kit-data-types.md",
       "hash": "66340277cef27d8631994d2a7d8cc13cf2cfa8fe85a4af4ea4e60ec84a661aaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreAudioKit.json": {
-      "etag": "\"6887-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/CoreAudioKit.md",
       "hash": "f84fa2a24f9fde3bc8215ab424333d031bb55fd3b49da2caf5dee7b5bd27e617"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auapplecustomviewloader.json": {
-      "etag": "\"2f99-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/auapplecustomviewloader.md",
       "hash": "d650916631ae506f9be06cfc31812b8f51f6ca037ba152dff8ead6ed02aaff07"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auapplecustomviewloader/customviewcontroller(for:audiounit:v3au:).json": {
-      "etag": "\"24fe-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auapplecustomviewloader/customviewcontroller(for,audiounit,v3au).md",
       "hash": "98415aac1868d05c95a55366397cd1d69a8cf34f31896ff8322eb1752039755c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auapplecustomviewloader/init().json": {
-      "etag": "\"cd2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auapplecustomviewloader/init().md",
       "hash": "67548e0c9736623b6bcce47599ee2d98899885a9be9fdc5388fd1e68162ebb2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auaudiounitviewconfiguration.json": {
-      "etag": "\"6827-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration.md",
       "hash": "a6138aa11b569217e5171577e6ca1f9b36b0b65c15b373efa7b582a264b1609a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auaudiounitviewconfiguration/height.json": {
-      "etag": "\"2af2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/height.md",
       "hash": "b0d1fe1d71aeebaf1f4c4ded6d2ddd5492de02e73c909426866cc7cb99c3c637"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auaudiounitviewconfiguration/hosthascontroller.json": {
-      "etag": "\"2b56-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/hosthascontroller.md",
       "hash": "e165c4595cc6d2687f566a99c6c60d0143d7e3a3e1fd243e9cf1956c91e14977"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auaudiounitviewconfiguration/init(coder:).json": {
-      "etag": "\"1588-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/init(coder).md",
       "hash": "77e77a6bb55caf8cbfbd45af7b7a44654ed841471f70fdfcdcb0cfff9c0b011d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auaudiounitviewconfiguration/init(width:height:hosthascontroller:).json": {
-      "etag": "\"2dc6-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/init(width,height,hosthascontroller).md",
       "hash": "2a78974a54588103fc40bdfe8488baadcfa421b8ca37e84ac2309909cd61b863"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auaudiounitviewconfiguration/width.json": {
-      "etag": "\"2ae7-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auaudiounitviewconfiguration/width.md",
       "hash": "d3ef58b429f368e40be777af954213270255fe4f6396279dadc0f5a3c949ccde"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/aucustomviewpersistentdata.json": {
-      "etag": "\"3347-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/aucustomviewpersistentdata.md",
       "hash": "b1125303eb15d4659fbea6323bddc375480e26ace0d773f4ff4c357ae1945cfc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/aucustomviewpersistentdata/customviewpersistentdata.json": {
-      "etag": "\"2193-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/aucustomviewpersistentdata/customviewpersistentdata.md",
       "hash": "8e68076bfde1ac2569604689ca09ca76177ea4d670ed16474a05c36629613209"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericview.json": {
-      "etag": "\"8846-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview.md",
       "hash": "c492d973b4ca6ae136e4de2d6c61675f4ae73fd3dab2d1995b0b9ca51539e96f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericview/audiounit.json": {
-      "etag": "\"1d16-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/audiounit.md",
       "hash": "1aa1872f5c8d2cae4637e5fece3b31c51fcf3c4401480c75c5f4bc651457e4ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericview/init(audiounit:).json": {
-      "etag": "\"29da-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/init(audiounit).md",
       "hash": "72a965f9fed184e64f88d07eba6444f085a0c5e403655300428edfa58981e7bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericview/init(audiounit:displayflags:).json": {
-      "etag": "\"377f-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/init(audiounit,displayflags).md",
       "hash": "47a5c9d7bfe4d20751731203d8969de58ebad57954fecafa5a9312570c95182a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericview/showsexpertparameters.json": {
-      "etag": "\"2218-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericview/showsexpertparameters.md",
       "hash": "3a01b76fef418ea23022af1f3f043a1f1f194ebb960b957f02fc9c08cc2f9301"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewcontroller.json": {
-      "etag": "\"8043-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewcontroller.md",
       "hash": "d88e3a32559ba1713d71e40c23f58a86a012e50627122bdad287e4996660637a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewcontroller/auaudiounit.json": {
-      "etag": "\"1ea1-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewcontroller/auaudiounit.md",
       "hash": "abeb20c01361c738d135c73e08e6333abea31db2805ac5378f451e5dfca24e89"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewdisplayflags.json": {
-      "etag": "\"3e4b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags.md",
       "hash": "9889516999d9ec72ce21d8400f850fc3ac5403f554150bf236964effad0da5b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewdisplayflags/init(rawvalue:).json": {
-      "etag": "\"1358-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/init(rawvalue).md",
       "hash": "b87cda25610976c0addbb1f9820cc580920cdca89b89b08507432fee1bc382c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewdisplayflags/viewparametersdisplayflag.json": {
-      "etag": "\"2834-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/viewparametersdisplayflag.md",
       "hash": "2aee85800e908d005d75c5be4d0496f0f60737f87fda9ec92d1f941fb900f469"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewdisplayflags/viewpropertiesdisplayflag.json": {
-      "etag": "\"2834-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/viewpropertiesdisplayflag.md",
       "hash": "1c596bba79cec1c236f5c83262b79fa21e1be1336b5741ee8f9e2eafedc1870d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewdisplayflags/viewtitledisplayflag.json": {
-      "etag": "\"2808-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewdisplayflags/viewtitledisplayflag.md",
       "hash": "7589da4511153fc266fa833b8e0c436a375d809fefafc220e448cde004660b95"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal.json": {
-      "etag": "\"c26e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal.md",
       "hash": "31ce9601a96b8deb5e0ee8d364ed13dfd853a034ae94380e8647ac82d900dd58"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/auaudiounit.json": {
-      "etag": "\"1fdb-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/auaudiounit.md",
       "hash": "742660b7b052cb04160365e15b26ca963f251374f471beeb7592a5246995807c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/init(coder:).json": {
-      "etag": "\"1953-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/init(coder).md",
       "hash": "8f5f3d19130284db4a3295ec013cd35389014eacd3ea44e87e7c130755d88f2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/init(frame:).json": {
-      "etag": "\"18c7-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/init(frame).md",
       "hash": "35f2ac2b4d91c8033ddc022db1d0b7805b344d7480827551fb156be7c8b91855"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/owningcontroller.json": {
-      "etag": "\"2579-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/owningcontroller.md",
       "hash": "21ada6789ef8ff0c95952e261f7ddb93ecc39dfe3f9fa3030b1c5ed9d4f6aa07"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/paramobservertoken.json": {
-      "etag": "\"2027-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/paramobservertoken.md",
       "hash": "34a6ede1a84f9545c0850ec97b43285661c033d48e6baeb6578f63bb06f54fb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/removefromsuperview().json": {
-      "etag": "\"1829-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/removefromsuperview().md",
       "hash": "fcb38250e3ae9583ead2f33b2a52f5b8099e49c9d4c461b378bd6eebe61a8b18"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/removescheduledupdatestimer().json": {
-      "etag": "\"1811-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/removescheduledupdatestimer().md",
       "hash": "2f96680a2819c63c8605f3ae5bc5ed34c47eba76f25e69860aadbbc303a68389"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/showsingleclumpindex.json": {
-      "etag": "\"1e28-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/showsingleclumpindex.md",
       "hash": "352963c42a4da5c32e2c2b859f03637bb26b1fb0709605df411a8d4e424f2b97"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternal/traitcollectiondidchange(_:).json": {
-      "etag": "\"1d7a-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternal/traitcollectiondidchange(_).md",
       "hash": "6be5b39b3bdb57dc9ed27dd1f07af0255fbbf1edacc3826fbc3967125a360b21"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/augenericviewinternalbase.json": {
-      "etag": "\"165f-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/augenericviewinternalbase.md",
       "hash": "0a5fa73e5d222aa85250463ef8b777bd2e01e1e4eb1519bc0a9dc5634431c219"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/aupannerview.json": {
-      "etag": "\"7a54-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/aupannerview.md",
       "hash": "f9dd36d7e9938f9e1ef48a95adcf9420a1ad1f2a7f9385aa33fa0a5b2a97e557"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/aupannerview/audiounit.json": {
-      "etag": "\"1cfb-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/aupannerview/audiounit.md",
       "hash": "d13446280c74960a55131713a2903e6b60a7ccee970ff55df8467cce8edf8d75"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/aupannerview/init(audiounit:).json": {
-      "etag": "\"23e5-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/aupannerview/init(audiounit).md",
       "hash": "1544429c91a8739ad30bf699cc67a0796cd1d30df9b16568f1317f750880c841"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auviewcolor.json": {
-      "etag": "\"e51-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcolor.md",
       "hash": "a159fc64f4f21a2b439914344352dd674d3742fe63a12a14de949a7b67a8e7af"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auviewcontroller.json": {
-      "etag": "\"a38b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcontroller.md",
       "hash": "72281057be41cd72e622c2c0369284d88de5099dbac49038bdfa751398aca0f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/auviewcontrollerbase.json": {
-      "etag": "\"2c8b-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/auviewcontrollerbase.md",
       "hash": "78d9e5449143549651a480e3746cd59794ae947ae0e8389daf1270893d482296"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cabtlemidiwindowcontroller.json": {
-      "etag": "\"4f0f-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cabtlemidiwindowcontroller.md",
       "hash": "10bd174b8da59c8e80efddc43cc682f620b0b3379387add139a0118067c455f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cabtmidicentralviewcontroller.json": {
-      "etag": "\"840e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cabtmidicentralviewcontroller.md",
       "hash": "b5796d0f26bacaa04b926eddeaf14a91c180b04433e5372e662fb34417b5b994"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cabtmidilocalperipheralviewcontroller.json": {
-      "etag": "\"7a4f-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cabtmidilocalperipheralviewcontroller.md",
       "hash": "1bcf48bbbf941c03da0345a3de45ce0168c28f75b49c46142660c46ed944d2d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudioswitcherview.json": {
-      "etag": "\"982e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview.md",
       "hash": "688bcdff622b8d35f9f11323997b3b70c45883d3dd9f237b7a1c2b408ca9cc4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudioswitcherview/contentwidth().json": {
-      "etag": "\"2bf6-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview/contentwidth().md",
       "hash": "1edcc0696c555c480f005932cd78d1c8faa86785d0325c4793e9849e7d7f5bb1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudioswitcherview/isshowingappnames.json": {
-      "etag": "\"2cc7-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview/isshowingappnames.md",
       "hash": "55fb8183b9d039b624e67095c9ec1ec1a94cedcfd06b5f39b901d45fe0040e96"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudioswitcherview/setoutputaudiounit(_:).json": {
-      "etag": "\"2e4f-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudioswitcherview/setoutputaudiounit(_).md",
       "hash": "3a49dcc4c57ebc9393971f2604f1e358edb236c8a5babc765b2f725674288365"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview.json": {
-      "etag": "\"c082-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview.md",
       "hash": "1fe251abc0e5855899d609bc28073664220f5380e0966f2b1ffa5e9d5d73dc4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/currenttimelabelfont.json": {
-      "etag": "\"55f5-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/currenttimelabelfont.md",
       "hash": "e4b9b8da6ccd4686f7d28a3df2ed62baab6f4216e5e2ccaaa1fe77ad5bbc7b36"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/isconnected.json": {
-      "etag": "\"552d-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isconnected.md",
       "hash": "a729241a63704ada5a0aaf53f192fb86e9c8a103059b3f783bc18221a7acc40b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/isenabled.json": {
-      "etag": "\"54d1-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isenabled.md",
       "hash": "764f417e9549e75c7ae7c15460a1dbba558873e27f3d874bfc2aa4f4ce3a92ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/isplaying.json": {
-      "etag": "\"5519-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isplaying.md",
       "hash": "00406c5862fd296941bc82d1f9553089b3311d3235e8a2a6bd55a47eae1b0424"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/isrecording.json": {
-      "etag": "\"552d-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/isrecording.md",
       "hash": "7a43e1202465270ff9a7813c18041fb379ea3e990d9e7852f8a46b3540a3b2a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/labelcolor.json": {
-      "etag": "\"55a3-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/labelcolor.md",
       "hash": "ae12a3244bd6e77777c2b7e291ef49c6c1ec067be40c296feed16a63d4f55c5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/pausebuttoncolor.json": {
-      "etag": "\"55d9-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/pausebuttoncolor.md",
       "hash": "0885ba93f373957b8d8037698b57c715b9467812f54bbac0fe00b63e93919821"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/playbuttoncolor.json": {
-      "etag": "\"55d0-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/playbuttoncolor.md",
       "hash": "5e4a6312ef118fae620e856dd3deec81a374dde8bd7ff37692fd50107669200b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/recordbuttoncolor.json": {
-      "etag": "\"55e2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/recordbuttoncolor.md",
       "hash": "12a8b57e04a0dbfed9430a78ae18fd2b5592189ee431654648072aee5cc08b5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/rewindbuttoncolor.json": {
-      "etag": "\"55e2-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/rewindbuttoncolor.md",
       "hash": "830d779a2590d654346153ced20a9881d35c737b3ef64fa501f0cf5d913a346b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterappaudiotransportview/setoutputaudiounit(_:).json": {
-      "etag": "\"56a7-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterappaudiotransportview/setoutputaudiounit(_).md",
       "hash": "7871ad9a09f75c97da339c3290d2ab987e7128cb986e99436fc7336e0808a013"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/cainterdeviceaudioviewcontroller.json": {
-      "etag": "\"4d1e-65d55d1861d1f-df\"",
       "file_path": "documentation/CoreAudioKit/cainterdeviceaudioviewcontroller.md",
       "hash": "b8d6eab6e064815bff96133e8aca8703177366ff33efb2de30264164717d844a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/canetworkbrowserwindowcontroller.json": {
-      "etag": "\"4f84-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller.md",
       "hash": "3628429fecff3316caf9cd8038f19e4d9aad555c4149b40831c93b3da4542151"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/canetworkbrowserwindowcontroller/init().json": {
-      "etag": "\"1778-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller/init().md",
       "hash": "2076fc43f260d899b19b48eb1b955e61fc6a9603df7df789fec5074c35bf7fe9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/canetworkbrowserwindowcontroller/isavbsupported().json": {
-      "etag": "\"25fc-65d55d1871532-df\"",
       "file_path": "documentation/CoreAudioKit/canetworkbrowserwindowcontroller/isavbsupported().md",
       "hash": "3b0d2fbe76131411c67e436f0fbbd4698abdc72ed4b2f3e697079c2ea2c0b2a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudiokit/core-audio-kit-data-types.json": {
-      "etag": "\"816-659026c4365d7-df\"",
       "file_path": "documentation/CoreAudioKit/core-audio-kit-data-types.md",
       "hash": "66340277cef27d8631994d2a7d8cc13cf2cfa8fe85a4af4ea4e60ec84a661aaf"
     }

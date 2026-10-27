@@ -1,132 +1,106 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/SigninwithApple": {
-      "etag": "\"2416-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/SigninwithApple.md",
       "hash": "1194c61f5920b854af00adebc23148c6eaf362984a1205a722e7ad4395cd7ef6"
     },
     "https://developer.apple.com/documentation/signinwithapple/authenticating-users-with-sign-in-with-apple": {
-      "etag": "\"4e76-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithApple/authenticating-users-with-sign-in-with-apple.md",
       "hash": "0b4651bdcffa26fcd6155f819dc9988f312be17fe241b60e6bcf1df74ef6c594"
     },
     "https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team": {
-      "etag": "\"548e-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/bringing-new-apps-and-users-into-your-team.md",
       "hash": "10a3550db82305241093355f05d15b925d25683db612bdf02e13f0267d02ade3"
     },
     "https://developer.apple.com/documentation/signinwithapple/communicating-using-the-private-email-relay-service": {
-      "etag": "\"20ae-65a1a3b51db82-df\"",
       "file_path": "documentation/SigninwithApple/communicating-using-the-private-email-relay-service.md",
       "hash": "fb9b5df5d5da4892773bed5ed23226d00f1b305d901166b3950f30a81f7976a3"
     },
     "https://developer.apple.com/documentation/signinwithapple/configuring-your-environment-for-sign-in-with-apple": {
-      "etag": "\"48ff-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/configuring-your-environment-for-sign-in-with-apple.md",
       "hash": "4e0cf106ca7f02502c9b9defdba968fe14ab7a9ad49b0fdb32d83d1405cb007b"
     },
     "https://developer.apple.com/documentation/signinwithapple/configuring-your-webpage-for-sign-in-with-apple": {
-      "etag": "\"4fc4-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/configuring-your-webpage-for-sign-in-with-apple.md",
       "hash": "87e5f4d7efb2cdffa389066c68e2f6883020268f4d925d1b9a85b8d5a509ef62"
     },
     "https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app": {
-      "etag": "\"1573-65b787ed0c652-df\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md",
       "hash": "5c2a2fb6dd1104cf6940ea472e1e3498c3b03f2a75f2e8929d22e10aae4453da"
     },
     "https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-on-the-web": {
-      "etag": "\"4290-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-on-the-web.md",
       "hash": "273af90436f88d5687925e8791b0b57a4a3946efcfad19c4ebe2f35b6e75ff89"
     },
     "https://developer.apple.com/documentation/signinwithapple/incorporating-sign-in-with-apple-into-other-platforms": {
-      "etag": "\"89a4-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md",
       "hash": "00cf844ff1292723ee8cf97c8919f5a47e4e27780a64983763a2e7397a8dfb36"
     },
     "https://developer.apple.com/documentation/signinwithapple/processing-changes-for-sign-in-with-apple-accounts": {
-      "etag": "\"56cf-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/processing-changes-for-sign-in-with-apple-accounts.md",
       "hash": "7ad4e5d57d10a94468b3c6eaf5d80234afb3e4d094844f2fd2f49b5e66309dda"
     },
     "https://developer.apple.com/documentation/signinwithapple/receiving-a-users-identity-token": {
-      "etag": "\"29e8-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithApple/receiving-a-users-identity-token.md",
       "hash": "bde83e054b62629a8608bb343e3b9a3294228f0e85e95c745d9288fe076731b0"
     },
     "https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team": {
-      "etag": "\"3d58-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/transferring-your-apps-and-users-to-another-team.md",
       "hash": "3ee3aaac19b1e8f981ecb2b07c022decf06197bcff119144ba9150dce09a1d08"
     },
     "https://developer.apple.com/documentation/signinwithapple/verifying-a-user": {
-      "etag": "\"3c0e-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithApple/verifying-a-user.md",
       "hash": "f753b978c05a101d829fb4cb49fc3ecaeb8635ba71622d3f76d30d8b58e0521b"
     },
     "https://developer.apple.com/tutorials/data/documentation/SigninwithApple.json": {
-      "etag": "\"2416-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/SigninwithApple.md",
       "hash": "1194c61f5920b854af00adebc23148c6eaf362984a1205a722e7ad4395cd7ef6"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/authenticating-users-with-sign-in-with-apple.json": {
-      "etag": "\"4e76-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithApple/authenticating-users-with-sign-in-with-apple.md",
       "hash": "0b4651bdcffa26fcd6155f819dc9988f312be17fe241b60e6bcf1df74ef6c594"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team.json": {
-      "etag": "\"548e-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/bringing-new-apps-and-users-into-your-team.md",
       "hash": "10a3550db82305241093355f05d15b925d25683db612bdf02e13f0267d02ade3"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/communicating-using-the-private-email-relay-service.json": {
-      "etag": "\"20ae-65a1a3b51db82-df\"",
       "file_path": "documentation/SigninwithApple/communicating-using-the-private-email-relay-service.md",
       "hash": "fb9b5df5d5da4892773bed5ed23226d00f1b305d901166b3950f30a81f7976a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/configuring-your-environment-for-sign-in-with-apple.json": {
-      "etag": "\"48ff-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/configuring-your-environment-for-sign-in-with-apple.md",
       "hash": "4e0cf106ca7f02502c9b9defdba968fe14ab7a9ad49b0fdb32d83d1405cb007b"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/configuring-your-webpage-for-sign-in-with-apple.json": {
-      "etag": "\"4fc4-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/configuring-your-webpage-for-sign-in-with-apple.md",
       "hash": "87e5f4d7efb2cdffa389066c68e2f6883020268f4d925d1b9a85b8d5a509ef62"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app.json": {
-      "etag": "\"1573-65b787ed0c652-df\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md",
       "hash": "5c2a2fb6dd1104cf6940ea472e1e3498c3b03f2a75f2e8929d22e10aae4453da"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-on-the-web.json": {
-      "etag": "\"4290-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-on-the-web.md",
       "hash": "273af90436f88d5687925e8791b0b57a4a3946efcfad19c4ebe2f35b6e75ff89"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/incorporating-sign-in-with-apple-into-other-platforms.json": {
-      "etag": "\"89a4-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md",
       "hash": "00cf844ff1292723ee8cf97c8919f5a47e4e27780a64983763a2e7397a8dfb36"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/processing-changes-for-sign-in-with-apple-accounts.json": {
-      "etag": "\"56cf-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/processing-changes-for-sign-in-with-apple-accounts.md",
       "hash": "7ad4e5d57d10a94468b3c6eaf5d80234afb3e4d094844f2fd2f49b5e66309dda"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/receiving-a-users-identity-token.json": {
-      "etag": "\"29e8-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithApple/receiving-a-users-identity-token.md",
       "hash": "bde83e054b62629a8608bb343e3b9a3294228f0e85e95c745d9288fe076731b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team.json": {
-      "etag": "\"3d58-65d55a5989dbb-df\"",
       "file_path": "documentation/SigninwithApple/transferring-your-apps-and-users-to-another-team.md",
       "hash": "3ee3aaac19b1e8f981ecb2b07c022decf06197bcff119144ba9150dce09a1d08"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/verifying-a-user.json": {
-      "etag": "\"3c0e-6590226dbbad7-df\"",
       "file_path": "documentation/SigninwithApple/verifying-a-user.md",
       "hash": "f753b978c05a101d829fb4cb49fc3ecaeb8635ba71622d3f76d30d8b58e0521b"
     }

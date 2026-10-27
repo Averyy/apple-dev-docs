@@ -1,1022 +1,818 @@
 {
   "hashes": {
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs.json": {
-      "etag": "\"4b45-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/PackageManagerDocs.md",
       "hash": "2d0a85020ed0807c0cb8be0bd27070e26030d21245a4d22ab14472db21f32a3a"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/5.3.json": {
-      "etag": "\"2458-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.3.md",
       "hash": "30e1656e039716c7e84a873b871a86decaedddb76f10e092c9d33fe3e4bafeb7"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/5.4.json": {
-      "etag": "\"233f-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.4.md",
       "hash": "21e895313f537fc8f2dfc29f7c2dfcd60d11815f0d45de47829f1d0ab7b4d124"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/5.5.json": {
-      "etag": "\"21f6-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.5.md",
       "hash": "e2767f05cb1232a8a5c75c29a1d7f3c6c9f6d1dbbe92725077fb824cf1f3245b"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/5.6.json": {
-      "etag": "\"2c67-65b66c53a7b80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.6.md",
       "hash": "21bf8fafa58e684ede833adb8ef1783bcae8bbc27272f602c1f7e053e6486338"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/5.7.json": {
-      "etag": "\"274b-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.7.md",
       "hash": "a97b3ad1503c14dde6caa77a2760b9421ba9163b4ded3bbbceb509ce0d954a60"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/5.8.json": {
-      "etag": "\"2609-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.8.md",
       "hash": "27f4c8a8d400ef0e973241c80702b621ff9d71330edd4565da08dc5ae093339b"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/5.9.json": {
-      "etag": "\"1eb8-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.9.md",
       "hash": "cc022392db9b3eddf95fc997359932e5ebad124ede3e5cf1b1adb6fabd9be69a"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/6.3.json": {
-      "etag": "\"2baa-65b66c53a7b80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-6.3.md",
       "hash": "51289056f6c34fbcf066afff7d647cdc02db7b898bfcb5d99e559952411b9299"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/6.4.json": {
-      "etag": "\"4842-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-6.4.md",
       "hash": "186ca5bebd9243a01e96f45ae0af91ddfe4712303972f92f7c2ab36cc6c786af"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/addingdependencies.json": {
-      "etag": "\"54ee-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingdependencies.md",
       "hash": "e58ddb004956fcaf3f8ce741396d65bf7b35bed453fb612e3c2713edcb393307"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/addingsystemlibrarydependency.json": {
-      "etag": "\"3afc-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingsystemlibrarydependency.md",
       "hash": "4c2466c953e825a0ef7c2b28fca1537dc6445346ccbfc6767d58cf817817032a"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/bundlingresources.json": {
-      "etag": "\"381a-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/bundlingresources.md",
       "hash": "1e621f468450f863b45da6739e551466c093cd708aa657d9e170bf75a77658a3"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/continuousintegration.json": {
-      "etag": "\"3556-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/continuousintegration.md",
       "hash": "3df7729346cc129dbddfa5998538fd77829a8f1e53b06b9b27959af63983b0f3"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/creatingclanguagetargets.json": {
-      "etag": "\"1746-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/creatingclanguagetargets.md",
       "hash": "8761cb2b6d3f584cfcf2c6ee435797ade1f20afb9ca39d4b7a649274cb533015"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/creatingswiftpackage.json": {
-      "etag": "\"495f-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/creatingswiftpackage.md",
       "hash": "5edfdca42605e1d5c6a9ce314a976378b1724e2825e615e7d35a757e7b572bd4"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/debuggingmodulemaps.json": {
-      "etag": "\"1f89-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/debuggingmodulemaps.md",
       "hash": "9d02979a5f9c2dbb68be35575c3396658ea29c90be7132de3f0a1ede92fde5cd"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/editingdependencypackage.json": {
-      "etag": "\"2fd6-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/editingdependencypackage.md",
       "hash": "91af75ffd7f9e6565fb909da873858c210b918564c213a8b2a8ae0aae585bb15"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/enablebuildplugin.json": {
-      "etag": "\"1417-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/enablebuildplugin.md",
       "hash": "dafde4090d4729cac4e637b4fb2ca34b93901d852fcedf66dd2eaeb4183d35d3"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/enablecommandplugin.json": {
-      "etag": "\"1c67-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/enablecommandplugin.md",
       "hash": "e53749126919aa51a58b2bbc9c5f673720468ba32b85fa879656b8249d3519d8"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/examplesystemlibrarypkgconfig.json": {
-      "etag": "\"2d7c-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/examplesystemlibrarypkgconfig.md",
       "hash": "0390c2824c342307fb2905a4ef7812c17c8d75d8c1900b34c39327ab3a2ed87e"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/generatingsboms.json": {
-      "etag": "\"3ba6-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/generatingsboms.md",
       "hash": "acc0118a0589eeadd483bb7f0d0ef71e89206c90d9e0cbcca45a49ea4962c660"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/gettingstarted.json": {
-      "etag": "\"71ef-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/gettingstarted.md",
       "hash": "b4bc2dfe7cec85569d5baea0c29448f5e105836dd271a34251931e88fa55982c"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/introducingpackages.json": {
-      "etag": "\"2e99-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/introducingpackages.md",
       "hash": "a5c73824535a80cbfae1f0e7fc945d79bc26d175650763671e8ff64221d68c7e"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/modulealiasing.json": {
-      "etag": "\"3be4-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulealiasing.md",
       "hash": "656d0e0b581625d68f841955f226cc6d191c1b0e8252c3d4c902a2ab6a7a92e3"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/modulemapreference.json": {
-      "etag": "\"7b8d-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulemapreference.md",
       "hash": "1438e7cc00a03f220f4155bf6a4c0bbb5e6ce6674f77ce30110beea9126e0bc4"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/modulemaps.json": {
-      "etag": "\"3f29-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulemaps.md",
       "hash": "ec5abd12bff5f996ddd869d40b17ff5040beb3ab1b88594596621659ee1f2539"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageadddependency.json": {
-      "etag": "\"7894-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageadddependency.md",
       "hash": "1d5d4b5c7053655410b3e1e6e145e2364b3fa47d98916395d88cf5898749d84c"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageaddproduct.json": {
-      "etag": "\"7064-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddproduct.md",
       "hash": "c17a320699917a394934e72b900f0ffaba825f25a8f0ca220a73a28746664605"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageaddsetting.json": {
-      "etag": "\"6f55-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddsetting.md",
       "hash": "43f9df583fb05f1c12ee99680f3774da9b5c3cbc7d99ee4376d7ca5aa765eaa6"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageaddtarget.json": {
-      "etag": "\"76fe-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddtarget.md",
       "hash": "a0b6aeead9dd85bd312b941f7bc4680f2f5126f8008e6cb7e81acd4442903854"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageaddtargetdependency.json": {
-      "etag": "\"7067-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddtargetdependency.md",
       "hash": "a5aacc5c3103eb7c54c1ff7229aae099cf75b8129bae0fa001671d962bcfa113"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagearchivesource.json": {
-      "etag": "\"6148-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagearchivesource.md",
       "hash": "fc85bbd46fd1bdecf747fd544135b7f873c2fc6b30145f9beef2bf3f392f25a2"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageclean.json": {
-      "etag": "\"6161-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageclean.md",
       "hash": "ef0e9abfa33ad4a84e02ca1e346cdae8c9ff84aeb691d6bae4e5917d534a43ee"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecollectionadd.json": {
-      "etag": "\"80be-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionadd.md",
       "hash": "f948843bc70466ac59d1a3a737d1874158e0b5b80599c9691857bd51c3e86901"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecollectiondescribe.json": {
-      "etag": "\"7476-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectiondescribe.md",
       "hash": "a76ec99809494019e2e914b52fdc8dc9b995eeba9ff8fbc8a2787820126cb56a"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecollectionlist.json": {
-      "etag": "\"63de-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionlist.md",
       "hash": "84f8330f6fc76c364310433fc24e91e5c1c7ac6b6ddbc199423502c28653f759"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecollectionrefresh.json": {
-      "etag": "\"5f62-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionrefresh.md",
       "hash": "f0346842266477946e152906f37ff7836612fc8291d1f2900d3932edb05b31cf"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecollectionremove.json": {
-      "etag": "\"6076-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionremove.md",
       "hash": "44ce4ec19221450b1e8da7c4790e22c4a67e9523808e36996eaa6b996f033d43"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecollections.json": {
-      "etag": "\"bc15-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollections.md",
       "hash": "a3fe9118ef5a782fe7a8009240e79712317e7067bd5a95746bad2b503b59adb8"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecollectionsearch.json": {
-      "etag": "\"67cb-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionsearch.md",
       "hash": "0903dc23ad5d3b76e109ece0de7060f02f5412512764998c08cf378a5bc2940e"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecompletiontool.json": {
-      "etag": "\"5e65-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecompletiontool.md",
       "hash": "10a2ffc81e717048fcaa8ae015d958be3d5bf8dd8ebcbf42138cce639ec3d64f"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagecomputechecksum.json": {
-      "etag": "\"611b-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecomputechecksum.md",
       "hash": "40d50ffbd420421f91d05b7b9af9698e3576322dcad4e8ae94374d263055c021"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageconfiggetmirror.json": {
-      "etag": "\"2c81-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageconfiggetmirror.md",
       "hash": "97624e929b2525bb8196506c236fc6f970a54c99bb9f6865a306088279264ff6"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageconfigsetmirror.json": {
-      "etag": "\"64e7-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageconfigsetmirror.md",
       "hash": "044b3cbdc98effcbd84ded941929478e6e57308a5fb18d927a10a2f3d1825c2f"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageconfigunsetmirror.json": {
-      "etag": "\"64e3-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageconfigunsetmirror.md",
       "hash": "25af74fe7acfc11e4aaa3bb6fc7340b20181bb87fc40a7c542b19d458af2948c"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagedescribe.json": {
-      "etag": "\"6b98-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagedescribe.md",
       "hash": "c612a6c62bb5ae1e62a9211371f0b993f7a2b67d4c8a4cdb97d84e64716677dd"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagediagnoseapibreakingchange.json": {
-      "etag": "\"74f0-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagediagnoseapibreakingchange.md",
       "hash": "13819ad1558355e7cf27add49e639290cf09bbf4f69be8fc4972a5f7b52b8677"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagedumppackage.json": {
-      "etag": "\"6a1f-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagedumppackage.md",
       "hash": "403ddc508e2bb08bff647b3b0b95c37d7de6f17c7b99437ffaff4bf0332cfb71"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagedumpsymbolgraph.json": {
-      "etag": "\"7517-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagedumpsymbolgraph.md",
       "hash": "0bb83aa08344a03f22dafc072ebf85d6e9e329aa37baade46f8c3c9d50d3ce97"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageedit.json": {
-      "etag": "\"71fe-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageedit.md",
       "hash": "75476176f912973921f9b872a1f986ddacd85c94877d7e4469611f1f1b94827c"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageexperimentalinstall.json": {
-      "etag": "\"620f-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageexperimentalinstall.md",
       "hash": "e0fdfa291bc3cc001e8ead8f53188a1595f1402e1a0dc7561cd76007be5bd598"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageexperimentaluninstall.json": {
-      "etag": "\"61e2-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageexperimentaluninstall.md",
       "hash": "3a40e8c9130439abe9bdc993db201ab6961f8732c29b4abca62998082c2e2734"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagegeneratesbom.json": {
-      "etag": "\"79c4-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagegeneratesbom.md",
       "hash": "a0d3f69cfe9c1a2dff1996402c6b5e277a4a8f55e9c4d4e208fb35b4d8a8f33a"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageinit.json": {
-      "etag": "\"66e2-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageinit.md",
       "hash": "e7a8b8d89f0dc5de520637fd058b6791adafa9181d5bd7d344a5701a8dcfbbe4"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagemigrate.json": {
-      "etag": "\"6f81-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagemigrate.md",
       "hash": "275004e0ac0b741877a996dda47feeb5c78b58ad01e0f00b4154ada56e3cf009"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageplugin.json": {
-      "etag": "\"6b32-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageplugin.md",
       "hash": "9780ae3d1f6a955b52957e964fe4e0183df378e5292697539999e524172b7f17"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagepurgecache.json": {
-      "etag": "\"6158-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagepurgecache.md",
       "hash": "d603686e5125cc5c315ca8ec2da619c4e01aebdfbbe630711029bccada9fa0dd"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageregistrylogin.json": {
-      "etag": "\"984f-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistrylogin.md",
       "hash": "4fbbfa84555efecc5fa423cea40f005647e9e370f64ef57edf1698d356f168f8"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageregistrylogout.json": {
-      "etag": "\"6f2c-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistrylogout.md",
       "hash": "92d07b663ec92b26a3210f27cece371c340fef0e8fda86b38dc81e6510e0d142"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageregistrypublish.json": {
-      "etag": "\"907a-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistrypublish.md",
       "hash": "f65addb4cd89a93ecc9333dbcebf3e55e5799fa32b0a8ffd5cae9b233148f9b3"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageregistryset.json": {
-      "etag": "\"724d-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistryset.md",
       "hash": "154c35f69feb88084cabccbdc28501aa2411efe740e59f747c3b94a5ffd8ce2e"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageregistryunset.json": {
-      "etag": "\"62ff-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistryunset.md",
       "hash": "b5bdcbb2c39ba647b0d2c2035301aa823070f4f92fdadc101395b0e19a3bcfb7"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagereset.json": {
-      "etag": "\"6161-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagereset.md",
       "hash": "575324ef5d1c795ff300a330d52b80cd4a01f752b0e285efe9aace9b63eb7976"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageresolve.json": {
-      "etag": "\"6b6b-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageresolve.md",
       "hash": "7e64af0de967291d60e6fad518a9db8ae4ea3bac8bc408ad2a76e30fc8ccd15f"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagesecurity.json": {
-      "etag": "\"7ce3-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagesecurity.md",
       "hash": "4a4b2bd74f5f16734015f1c9aff4798a3b9f026798bd89d0875d5be712c06213"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageshowdependencies.json": {
-      "etag": "\"6d4d-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageshowdependencies.md",
       "hash": "9e44ff5744b46721fd9140d37635a2ae4df5fc038cf06f30f9927a08465f0ac1"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageshowexecutables.json": {
-      "etag": "\"6b93-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageshowexecutables.md",
       "hash": "c5174b579d3743eb0dd582e66752633a02898d723d19474886561686077b648b"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageshowtraits.json": {
-      "etag": "\"6dc6-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageshowtraits.md",
       "hash": "640a3f85bc289f8821284b894916fe97ce2396c6de418e2541e662721f017823"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagetoolsversion.json": {
-      "etag": "\"6d42-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagetoolsversion.md",
       "hash": "c92e0bce6977b9fec5ba3179c09726fbc7768a33b91af363a5dc58a587b3ec36"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packagetraits.json": {
-      "etag": "\"4221-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagetraits.md",
       "hash": "c91477e232a1258c91cc75f3e845ee75a7498615155a032d1e767a42ba33c23f"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageunedit.json": {
-      "etag": "\"6f11-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageunedit.md",
       "hash": "740e4de2f1283e6c0380953c71e4bae826c72405f5251b9ee0f011d363cff328"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/packageupdate.json": {
-      "etag": "\"6261-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageupdate.md",
       "hash": "0fc05d14f0ec9a4f7764cd0a7bbe7e548e043c9ea0681dc8c5672a27112b53c6"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/plugins.json": {
-      "etag": "\"25bb-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/plugins.md",
       "hash": "b782adf7eb439bbcdab07b25921742ea582d5757592ea786f9c17b010b779132"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/registryserverspecification.json": {
-      "etag": "\"1f3f1-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/registryserverspecification.md",
       "hash": "2e868767a257c0eed1f3870473c19e2cc0999771a87818237949d9118bbb7bbb"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/releasenotes.json": {
-      "etag": "\"11e1-65b66c53a7b80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/releasenotes.md",
       "hash": "c2b56a65a81b75226f4211ec2737ebe64699e6007e8798a1e400b16286d2ea63"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/releasingpublishingapackage.json": {
-      "etag": "\"20e1-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/releasingpublishingapackage.md",
       "hash": "ff21aae0fa7ba6fe14193540b206e5576a9c9fba24b8a893a01a97938cbad72f"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/resolvingdependencyfailures.json": {
-      "etag": "\"303c-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/resolvingdependencyfailures.md",
       "hash": "64065c835de9221cf7cb66ca8387f68f91f963f2b2479fc24caae5c34587b47e"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/resolvingpackageversions.json": {
-      "etag": "\"3342-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/resolvingpackageversions.md",
       "hash": "cccbcbac455750918262d40dc7768bbdd5666e5431ac7ee7af0469ec87a1b699"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/sdkconfigurationreset.json": {
-      "etag": "\"2d84-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigurationreset.md",
       "hash": "d0827c6bbcb214c3dadfbf0b2b94f38c406fb6b0650e61ddad5910ce5e03b288"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/sdkconfigurationset.json": {
-      "etag": "\"2ea1-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigurationset.md",
       "hash": "977a318cc9d7e30ba0521f802927f8244f6791cd988fb2bbe4d06369acea852b"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/sdkconfigurationshow.json": {
-      "etag": "\"22d8-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigurationshow.md",
       "hash": "44b0c2aea5a6006a7c2a4c4ec4295bdab77f040f44b908a4d6cd43fbefc27313"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/sdkconfigure.json": {
-      "etag": "\"2cdb-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigure.md",
       "hash": "8ab4208af303990e7d9e5090c1e8c3e46ac60b974242fb284419b80964151fd0"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/sdkinstall.json": {
-      "etag": "\"207b-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkinstall.md",
       "hash": "5a462fbac71efd7cc5c3eaea67692ab64e2eac7dcb879791375bf488cf4d507e"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/sdklist.json": {
-      "etag": "\"19dd-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdklist.md",
       "hash": "d8e20cb8c786d3cfcca41415380e72b82cb96dbc06e01320d330dee0dbd33db3"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/sdkremove.json": {
-      "etag": "\"1b9a-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkremove.md",
       "hash": "c486ae13d4425f15bbd086af698b7b287c39d2cef48b47edb0a6fc0e8429c06a"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/settingswifttoolsversion.json": {
-      "etag": "\"24f8-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/settingswifttoolsversion.md",
       "hash": "34b2a6c2b8c27c7f68c9cfff9baa065ce056100728dc08e9cfa32b24197d52b9"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftbuild.json": {
-      "etag": "\"87c4-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftbuild.md",
       "hash": "4020c56e8c27cf87df51fc5b1b4e044da3460ed3a53ba046b7dfb8ed5f1d1f80"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftbuildpreview.json": {
-      "etag": "\"548b-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftbuildpreview.md",
       "hash": "9b546a395385ed12045224c13bf97f0a8f0f88ffa655020cfa3aa22dca93dfc2"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftpackagecollectioncommands.json": {
-      "etag": "\"2151-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpackagecollectioncommands.md",
       "hash": "6f8668388ae8ede32a4bdb9e6549acb3ac18d5240e1962507eb898c74f3df713"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftpackagecommands.json": {
-      "etag": "\"5a0e-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpackagecommands.md",
       "hash": "5221bb2ef6f2a657e23a9d95ff53f025fd5caf68ece6d97511c02c08bd26cb39"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftpackageregistrycommands.json": {
-      "etag": "\"1dac-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpackageregistrycommands.md",
       "hash": "abfb561062fdccb330669d5168a06dd26aeedde1395399ec4257e519da54b971"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftpmasalibrary.json": {
-      "etag": "\"b54-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpmasalibrary.md",
       "hash": "93f315eedac3fad3534a7157f71ebb69104becf12215fbbcce30571de2c6aec6"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftrun.json": {
-      "etag": "\"7b58-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftrun.md",
       "hash": "3e14d468b0e4b999be4e679ec314e4a4058d3540275a5fd46f365816125fd188"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftsdkcommands.json": {
-      "etag": "\"2bb9-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftsdkcommands.md",
       "hash": "416ff951d2019cf227a5abc3af57e1155b66001c6dbb1ed732a30596279734ef"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swifttest.json": {
-      "etag": "\"140e2-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swifttest.md",
       "hash": "347474b5a31295144e5b1dcbb96036ba029c5f02f1e1da3685f04d1123a3d958"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/swiftversionspecificpackaging.json": {
-      "etag": "\"3b58-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftversionspecificpackaging.md",
       "hash": "06d4c7f7f0c6829c68ec2845a4ed2782ff7741d2750e97b638b818a78c6ce512"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/usingbuildconfigurations.json": {
-      "etag": "\"29f2-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/usingbuildconfigurations.md",
       "hash": "15fa47b1607cae43d64c93302fabdcb46ec471e29af0a3e094373a4d5028a178"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/usingshellcompletion.json": {
-      "etag": "\"1e1c-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/usingshellcompletion.md",
       "hash": "3e85c3ac85a0af4e37a85ee1139fbd1175f18f091557c8a9cee95a7dbd26f471"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/usingswiftpackageregistry.json": {
-      "etag": "\"b018-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/usingswiftpackageregistry.md",
       "hash": "3a89b6a104ac5332391be8350f9f2e3a26b0b3584291edbba85a93cfe066b1e0"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/writingbuildtoolplugin.json": {
-      "etag": "\"66a3-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/writingbuildtoolplugin.md",
       "hash": "841a527a3962f79e41937186990d5d79b6df99a49c46df00b59def5ee613c7eb"
     },
     "https://docs.swift.org/latest/data/documentation/packagemanagerdocs/writingcommandplugin.json": {
-      "etag": "\"3f0d-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/writingcommandplugin.md",
       "hash": "96e4bf4ab2f568eac4b23e1c4efdf4a4c0c97d180d7b0616a74e5e2f0193e3e8"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs": {
-      "etag": "\"4b45-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/PackageManagerDocs.md",
       "hash": "2d0a85020ed0807c0cb8be0bd27070e26030d21245a4d22ab14472db21f32a3a"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.3": {
-      "etag": "\"2458-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.3.md",
       "hash": "30e1656e039716c7e84a873b871a86decaedddb76f10e092c9d33fe3e4bafeb7"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.4": {
-      "etag": "\"233f-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.4.md",
       "hash": "21e895313f537fc8f2dfc29f7c2dfcd60d11815f0d45de47829f1d0ab7b4d124"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.5": {
-      "etag": "\"21f6-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.5.md",
       "hash": "e2767f05cb1232a8a5c75c29a1d7f3c6c9f6d1dbbe92725077fb824cf1f3245b"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.6": {
-      "etag": "\"2c67-65b66c53a7b80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.6.md",
       "hash": "21bf8fafa58e684ede833adb8ef1783bcae8bbc27272f602c1f7e053e6486338"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.7": {
-      "etag": "\"274b-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.7.md",
       "hash": "a97b3ad1503c14dde6caa77a2760b9421ba9163b4ded3bbbceb509ce0d954a60"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.8": {
-      "etag": "\"2609-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.8.md",
       "hash": "27f4c8a8d400ef0e973241c80702b621ff9d71330edd4565da08dc5ae093339b"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/5.9": {
-      "etag": "\"1eb8-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-5.9.md",
       "hash": "cc022392db9b3eddf95fc997359932e5ebad124ede3e5cf1b1adb6fabd9be69a"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/6.3": {
-      "etag": "\"2baa-65b66c53a7b80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-6.3.md",
       "hash": "51289056f6c34fbcf066afff7d647cdc02db7b898bfcb5d99e559952411b9299"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/6.4": {
-      "etag": "\"4842-65b66c52b3940\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/api-6.4.md",
       "hash": "186ca5bebd9243a01e96f45ae0af91ddfe4712303972f92f7c2ab36cc6c786af"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/addingdependencies": {
-      "etag": "\"54ee-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingdependencies.md",
       "hash": "e58ddb004956fcaf3f8ce741396d65bf7b35bed453fb612e3c2713edcb393307"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/addingsystemlibrarydependency": {
-      "etag": "\"3afc-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/addingsystemlibrarydependency.md",
       "hash": "4c2466c953e825a0ef7c2b28fca1537dc6445346ccbfc6767d58cf817817032a"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/bundlingresources": {
-      "etag": "\"381a-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/bundlingresources.md",
       "hash": "1e621f468450f863b45da6739e551466c093cd708aa657d9e170bf75a77658a3"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/continuousintegration": {
-      "etag": "\"3556-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/continuousintegration.md",
       "hash": "3df7729346cc129dbddfa5998538fd77829a8f1e53b06b9b27959af63983b0f3"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/creatingclanguagetargets": {
-      "etag": "\"1746-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/creatingclanguagetargets.md",
       "hash": "8761cb2b6d3f584cfcf2c6ee435797ade1f20afb9ca39d4b7a649274cb533015"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/creatingswiftpackage": {
-      "etag": "\"495f-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/creatingswiftpackage.md",
       "hash": "5edfdca42605e1d5c6a9ce314a976378b1724e2825e615e7d35a757e7b572bd4"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/debuggingmodulemaps": {
-      "etag": "\"1f89-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/debuggingmodulemaps.md",
       "hash": "9d02979a5f9c2dbb68be35575c3396658ea29c90be7132de3f0a1ede92fde5cd"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/editingdependencypackage": {
-      "etag": "\"2fd6-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/editingdependencypackage.md",
       "hash": "91af75ffd7f9e6565fb909da873858c210b918564c213a8b2a8ae0aae585bb15"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/enablebuildplugin": {
-      "etag": "\"1417-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/enablebuildplugin.md",
       "hash": "dafde4090d4729cac4e637b4fb2ca34b93901d852fcedf66dd2eaeb4183d35d3"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/enablecommandplugin": {
-      "etag": "\"1c67-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/enablecommandplugin.md",
       "hash": "e53749126919aa51a58b2bbc9c5f673720468ba32b85fa879656b8249d3519d8"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/examplesystemlibrarypkgconfig": {
-      "etag": "\"2d7c-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/examplesystemlibrarypkgconfig.md",
       "hash": "0390c2824c342307fb2905a4ef7812c17c8d75d8c1900b34c39327ab3a2ed87e"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/generatingsboms": {
-      "etag": "\"3ba6-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/generatingsboms.md",
       "hash": "acc0118a0589eeadd483bb7f0d0ef71e89206c90d9e0cbcca45a49ea4962c660"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/gettingstarted": {
-      "etag": "\"71ef-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/gettingstarted.md",
       "hash": "b4bc2dfe7cec85569d5baea0c29448f5e105836dd271a34251931e88fa55982c"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/introducingpackages": {
-      "etag": "\"2e99-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/introducingpackages.md",
       "hash": "a5c73824535a80cbfae1f0e7fc945d79bc26d175650763671e8ff64221d68c7e"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/modulealiasing": {
-      "etag": "\"3be4-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulealiasing.md",
       "hash": "656d0e0b581625d68f841955f226cc6d191c1b0e8252c3d4c902a2ab6a7a92e3"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/modulemapreference": {
-      "etag": "\"7b8d-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulemapreference.md",
       "hash": "1438e7cc00a03f220f4155bf6a4c0bbb5e6ce6674f77ce30110beea9126e0bc4"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/modulemaps": {
-      "etag": "\"3f29-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/modulemaps.md",
       "hash": "ec5abd12bff5f996ddd869d40b17ff5040beb3ab1b88594596621659ee1f2539"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageadddependency": {
-      "etag": "\"7894-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageadddependency.md",
       "hash": "1d5d4b5c7053655410b3e1e6e145e2364b3fa47d98916395d88cf5898749d84c"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageaddproduct": {
-      "etag": "\"7064-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddproduct.md",
       "hash": "c17a320699917a394934e72b900f0ffaba825f25a8f0ca220a73a28746664605"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageaddsetting": {
-      "etag": "\"6f55-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddsetting.md",
       "hash": "43f9df583fb05f1c12ee99680f3774da9b5c3cbc7d99ee4376d7ca5aa765eaa6"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageaddtarget": {
-      "etag": "\"76fe-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddtarget.md",
       "hash": "a0b6aeead9dd85bd312b941f7bc4680f2f5126f8008e6cb7e81acd4442903854"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageaddtargetdependency": {
-      "etag": "\"7067-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageaddtargetdependency.md",
       "hash": "a5aacc5c3103eb7c54c1ff7229aae099cf75b8129bae0fa001671d962bcfa113"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagearchivesource": {
-      "etag": "\"6148-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagearchivesource.md",
       "hash": "fc85bbd46fd1bdecf747fd544135b7f873c2fc6b30145f9beef2bf3f392f25a2"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageclean": {
-      "etag": "\"6161-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageclean.md",
       "hash": "ef0e9abfa33ad4a84e02ca1e346cdae8c9ff84aeb691d6bae4e5917d534a43ee"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecollectionadd": {
-      "etag": "\"80be-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionadd.md",
       "hash": "f948843bc70466ac59d1a3a737d1874158e0b5b80599c9691857bd51c3e86901"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecollectiondescribe": {
-      "etag": "\"7476-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectiondescribe.md",
       "hash": "a76ec99809494019e2e914b52fdc8dc9b995eeba9ff8fbc8a2787820126cb56a"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecollectionlist": {
-      "etag": "\"63de-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionlist.md",
       "hash": "84f8330f6fc76c364310433fc24e91e5c1c7ac6b6ddbc199423502c28653f759"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecollectionrefresh": {
-      "etag": "\"5f62-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionrefresh.md",
       "hash": "f0346842266477946e152906f37ff7836612fc8291d1f2900d3932edb05b31cf"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecollectionremove": {
-      "etag": "\"6076-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionremove.md",
       "hash": "44ce4ec19221450b1e8da7c4790e22c4a67e9523808e36996eaa6b996f033d43"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecollections": {
-      "etag": "\"bc15-65af05101fe80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollections.md",
       "hash": "a3fe9118ef5a782fe7a8009240e79712317e7067bd5a95746bad2b503b59adb8"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecollectionsearch": {
-      "etag": "\"67cb-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecollectionsearch.md",
       "hash": "0903dc23ad5d3b76e109ece0de7060f02f5412512764998c08cf378a5bc2940e"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecompletiontool": {
-      "etag": "\"5e65-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecompletiontool.md",
       "hash": "10a2ffc81e717048fcaa8ae015d958be3d5bf8dd8ebcbf42138cce639ec3d64f"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagecomputechecksum": {
-      "etag": "\"611b-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagecomputechecksum.md",
       "hash": "40d50ffbd420421f91d05b7b9af9698e3576322dcad4e8ae94374d263055c021"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageconfiggetmirror": {
-      "etag": "\"2c81-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageconfiggetmirror.md",
       "hash": "97624e929b2525bb8196506c236fc6f970a54c99bb9f6865a306088279264ff6"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageconfigsetmirror": {
-      "etag": "\"64e7-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageconfigsetmirror.md",
       "hash": "044b3cbdc98effcbd84ded941929478e6e57308a5fb18d927a10a2f3d1825c2f"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageconfigunsetmirror": {
-      "etag": "\"64e3-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageconfigunsetmirror.md",
       "hash": "25af74fe7acfc11e4aaa3bb6fc7340b20181bb87fc40a7c542b19d458af2948c"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagedescribe": {
-      "etag": "\"6b98-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagedescribe.md",
       "hash": "c612a6c62bb5ae1e62a9211371f0b993f7a2b67d4c8a4cdb97d84e64716677dd"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagediagnoseapibreakingchange": {
-      "etag": "\"74f0-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagediagnoseapibreakingchange.md",
       "hash": "13819ad1558355e7cf27add49e639290cf09bbf4f69be8fc4972a5f7b52b8677"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagedumppackage": {
-      "etag": "\"6a1f-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagedumppackage.md",
       "hash": "403ddc508e2bb08bff647b3b0b95c37d7de6f17c7b99437ffaff4bf0332cfb71"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagedumpsymbolgraph": {
-      "etag": "\"7517-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagedumpsymbolgraph.md",
       "hash": "0bb83aa08344a03f22dafc072ebf85d6e9e329aa37baade46f8c3c9d50d3ce97"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageedit": {
-      "etag": "\"71fe-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageedit.md",
       "hash": "75476176f912973921f9b872a1f986ddacd85c94877d7e4469611f1f1b94827c"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageexperimentalinstall": {
-      "etag": "\"620f-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageexperimentalinstall.md",
       "hash": "e0fdfa291bc3cc001e8ead8f53188a1595f1402e1a0dc7561cd76007be5bd598"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageexperimentaluninstall": {
-      "etag": "\"61e2-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageexperimentaluninstall.md",
       "hash": "3a40e8c9130439abe9bdc993db201ab6961f8732c29b4abca62998082c2e2734"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagegeneratesbom": {
-      "etag": "\"79c4-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagegeneratesbom.md",
       "hash": "a0d3f69cfe9c1a2dff1996402c6b5e277a4a8f55e9c4d4e208fb35b4d8a8f33a"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageinit": {
-      "etag": "\"66e2-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageinit.md",
       "hash": "e7a8b8d89f0dc5de520637fd058b6791adafa9181d5bd7d344a5701a8dcfbbe4"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagemigrate": {
-      "etag": "\"6f81-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagemigrate.md",
       "hash": "275004e0ac0b741877a996dda47feeb5c78b58ad01e0f00b4154ada56e3cf009"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageplugin": {
-      "etag": "\"6b32-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageplugin.md",
       "hash": "9780ae3d1f6a955b52957e964fe4e0183df378e5292697539999e524172b7f17"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagepurgecache": {
-      "etag": "\"6158-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagepurgecache.md",
       "hash": "d603686e5125cc5c315ca8ec2da619c4e01aebdfbbe630711029bccada9fa0dd"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageregistrylogin": {
-      "etag": "\"984f-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistrylogin.md",
       "hash": "4fbbfa84555efecc5fa423cea40f005647e9e370f64ef57edf1698d356f168f8"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageregistrylogout": {
-      "etag": "\"6f2c-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistrylogout.md",
       "hash": "92d07b663ec92b26a3210f27cece371c340fef0e8fda86b38dc81e6510e0d142"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageregistrypublish": {
-      "etag": "\"907a-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistrypublish.md",
       "hash": "f65addb4cd89a93ecc9333dbcebf3e55e5799fa32b0a8ffd5cae9b233148f9b3"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageregistryset": {
-      "etag": "\"724d-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistryset.md",
       "hash": "154c35f69feb88084cabccbdc28501aa2411efe740e59f747c3b94a5ffd8ce2e"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageregistryunset": {
-      "etag": "\"62ff-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageregistryunset.md",
       "hash": "b5bdcbb2c39ba647b0d2c2035301aa823070f4f92fdadc101395b0e19a3bcfb7"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagereset": {
-      "etag": "\"6161-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagereset.md",
       "hash": "575324ef5d1c795ff300a330d52b80cd4a01f752b0e285efe9aace9b63eb7976"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageresolve": {
-      "etag": "\"6b6b-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageresolve.md",
       "hash": "7e64af0de967291d60e6fad518a9db8ae4ea3bac8bc408ad2a76e30fc8ccd15f"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagesecurity": {
-      "etag": "\"7ce3-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagesecurity.md",
       "hash": "4a4b2bd74f5f16734015f1c9aff4798a3b9f026798bd89d0875d5be712c06213"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageshowdependencies": {
-      "etag": "\"6d4d-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageshowdependencies.md",
       "hash": "9e44ff5744b46721fd9140d37635a2ae4df5fc038cf06f30f9927a08465f0ac1"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageshowexecutables": {
-      "etag": "\"6b93-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageshowexecutables.md",
       "hash": "c5174b579d3743eb0dd582e66752633a02898d723d19474886561686077b648b"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageshowtraits": {
-      "etag": "\"6dc6-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageshowtraits.md",
       "hash": "640a3f85bc289f8821284b894916fe97ce2396c6de418e2541e662721f017823"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagetoolsversion": {
-      "etag": "\"6d42-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagetoolsversion.md",
       "hash": "c92e0bce6977b9fec5ba3179c09726fbc7768a33b91af363a5dc58a587b3ec36"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packagetraits": {
-      "etag": "\"4221-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packagetraits.md",
       "hash": "c91477e232a1258c91cc75f3e845ee75a7498615155a032d1e767a42ba33c23f"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageunedit": {
-      "etag": "\"6f11-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageunedit.md",
       "hash": "740e4de2f1283e6c0380953c71e4bae826c72405f5251b9ee0f011d363cff328"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/packageupdate": {
-      "etag": "\"6261-659e1d5dfedc0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/packageupdate.md",
       "hash": "0fc05d14f0ec9a4f7764cd0a7bbe7e548e043c9ea0681dc8c5672a27112b53c6"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/plugins": {
-      "etag": "\"25bb-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/plugins.md",
       "hash": "b782adf7eb439bbcdab07b25921742ea582d5757592ea786f9c17b010b779132"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/registryserverspecification": {
-      "etag": "\"1f3f1-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/registryserverspecification.md",
       "hash": "2e868767a257c0eed1f3870473c19e2cc0999771a87818237949d9118bbb7bbb"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/releasenotes": {
-      "etag": "\"11e1-65b66c53a7b80\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/releasenotes.md",
       "hash": "c2b56a65a81b75226f4211ec2737ebe64699e6007e8798a1e400b16286d2ea63"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/releasingpublishingapackage": {
-      "etag": "\"20e1-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/releasingpublishingapackage.md",
       "hash": "ff21aae0fa7ba6fe14193540b206e5576a9c9fba24b8a893a01a97938cbad72f"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/resolvingdependencyfailures": {
-      "etag": "\"303c-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/resolvingdependencyfailures.md",
       "hash": "64065c835de9221cf7cb66ca8387f68f91f963f2b2479fc24caae5c34587b47e"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/resolvingpackageversions": {
-      "etag": "\"3342-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/resolvingpackageversions.md",
       "hash": "cccbcbac455750918262d40dc7768bbdd5666e5431ac7ee7af0469ec87a1b699"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/sdkconfigurationreset": {
-      "etag": "\"2d84-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigurationreset.md",
       "hash": "d0827c6bbcb214c3dadfbf0b2b94f38c406fb6b0650e61ddad5910ce5e03b288"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/sdkconfigurationset": {
-      "etag": "\"2ea1-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigurationset.md",
       "hash": "977a318cc9d7e30ba0521f802927f8244f6791cd988fb2bbe4d06369acea852b"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/sdkconfigurationshow": {
-      "etag": "\"22d8-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigurationshow.md",
       "hash": "44b0c2aea5a6006a7c2a4c4ec4295bdab77f040f44b908a4d6cd43fbefc27313"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/sdkconfigure": {
-      "etag": "\"2cdb-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkconfigure.md",
       "hash": "8ab4208af303990e7d9e5090c1e8c3e46ac60b974242fb284419b80964151fd0"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/sdkinstall": {
-      "etag": "\"207b-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkinstall.md",
       "hash": "5a462fbac71efd7cc5c3eaea67692ab64e2eac7dcb879791375bf488cf4d507e"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/sdklist": {
-      "etag": "\"19dd-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdklist.md",
       "hash": "d8e20cb8c786d3cfcca41415380e72b82cb96dbc06e01320d330dee0dbd33db3"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/sdkremove": {
-      "etag": "\"1b9a-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/sdkremove.md",
       "hash": "c486ae13d4425f15bbd086af698b7b287c39d2cef48b47edb0a6fc0e8429c06a"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/settingswifttoolsversion": {
-      "etag": "\"24f8-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/settingswifttoolsversion.md",
       "hash": "34b2a6c2b8c27c7f68c9cfff9baa065ce056100728dc08e9cfa32b24197d52b9"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftbuild": {
-      "etag": "\"87c4-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftbuild.md",
       "hash": "4020c56e8c27cf87df51fc5b1b4e044da3460ed3a53ba046b7dfb8ed5f1d1f80"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftbuildpreview": {
-      "etag": "\"548b-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftbuildpreview.md",
       "hash": "9b546a395385ed12045224c13bf97f0a8f0f88ffa655020cfa3aa22dca93dfc2"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftpackagecollectioncommands": {
-      "etag": "\"2151-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpackagecollectioncommands.md",
       "hash": "6f8668388ae8ede32a4bdb9e6549acb3ac18d5240e1962507eb898c74f3df713"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftpackagecommands": {
-      "etag": "\"5a0e-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpackagecommands.md",
       "hash": "5221bb2ef6f2a657e23a9d95ff53f025fd5caf68ece6d97511c02c08bd26cb39"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftpackageregistrycommands": {
-      "etag": "\"1dac-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpackageregistrycommands.md",
       "hash": "abfb561062fdccb330669d5168a06dd26aeedde1395399ec4257e519da54b971"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftpmasalibrary": {
-      "etag": "\"b54-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftpmasalibrary.md",
       "hash": "93f315eedac3fad3534a7157f71ebb69104becf12215fbbcce30571de2c6aec6"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftrun": {
-      "etag": "\"7b58-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftrun.md",
       "hash": "3e14d468b0e4b999be4e679ec314e4a4058d3540275a5fd46f365816125fd188"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftsdkcommands": {
-      "etag": "\"2bb9-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftsdkcommands.md",
       "hash": "416ff951d2019cf227a5abc3af57e1155b66001c6dbb1ed732a30596279734ef"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swifttest": {
-      "etag": "\"140e2-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swifttest.md",
       "hash": "347474b5a31295144e5b1dcbb96036ba029c5f02f1e1da3685f04d1123a3d958"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/swiftversionspecificpackaging": {
-      "etag": "\"3b58-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/swiftversionspecificpackaging.md",
       "hash": "06d4c7f7f0c6829c68ec2845a4ed2782ff7741d2750e97b638b818a78c6ce512"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/usingbuildconfigurations": {
-      "etag": "\"29f2-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/usingbuildconfigurations.md",
       "hash": "15fa47b1607cae43d64c93302fabdcb46ec471e29af0a3e094373a4d5028a178"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/usingshellcompletion": {
-      "etag": "\"1e1c-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/usingshellcompletion.md",
       "hash": "3e85c3ac85a0af4e37a85ee1139fbd1175f18f091557c8a9cee95a7dbd26f471"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/usingswiftpackageregistry": {
-      "etag": "\"b018-65af0511140c0\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/usingswiftpackageregistry.md",
       "hash": "3a89b6a104ac5332391be8350f9f2e3a26b0b3584291edbba85a93cfe066b1e0"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/writingbuildtoolplugin": {
-      "etag": "\"66a3-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/writingbuildtoolplugin.md",
       "hash": "841a527a3962f79e41937186990d5d79b6df99a49c46df00b59def5ee613c7eb"
     },
     "https://docs.swift.org/latest/documentation/packagemanagerdocs/writingcommandplugin": {
-      "etag": "\"3f0d-659e1d5ef3000\"",
       "file_path": "documentation/Swift-Org/PackageManagerDocs/writingcommandplugin.md",
       "hash": "96e4bf4ab2f568eac4b23e1c4efdf4a4c0c97d180d7b0616a74e5e2f0193e3e8"
     }

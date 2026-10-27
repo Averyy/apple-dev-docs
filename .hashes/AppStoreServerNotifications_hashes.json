@@ -1,1342 +1,1074 @@
 {
   "hashes": {
     "https://developer.apple.com/documentation/AppStoreServerNotifications": {
-      "etag": "\"66df-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/AppStoreServerNotifications.md",
       "hash": "23fe2c02963e6cec0b09cb2b7a622e14fdb9db743fb31c42bdf8cb6a9c38c17e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerce-datatypes": {
-      "etag": "\"864b-65b8a2df263d7-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerce-datatypes.md",
       "hash": "940af9dccdc925c77e0d651124e1c6433f7f27c45dc82038b1a775c8ca9a309d"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceconsistencytoken": {
-      "etag": "\"38b6-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceconsistencytoken.md",
       "hash": "d480947ac95765b00573f8a26ced0efaa0f6e60fe38aa0e89b3ee6ed3d16d332"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercedescription": {
-      "etag": "\"3898-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedescription.md",
       "hash": "9ad9f052dcc66e388c00c284e67bde748fff8bf990ceb389e5052ca650fdc877"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercedescriptors": {
-      "etag": "\"288e-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedescriptors.md",
       "hash": "24928f7a19e9417a941e07f9d07fb395a93d75cd9e351ef8666cc8ec308e1b9f"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercedisplayname": {
-      "etag": "\"3898-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedisplayname.md",
       "hash": "58cd158be4b5c78a09f0cfcd47c1d74271f6ca023782e94af5296f26944778f3"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceestimatedtax": {
-      "etag": "\"389d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceestimatedtax.md",
       "hash": "0eee6506667fa918c6a41de5a5ed5a8a07cacf1fdfa42d68bb871475a8d0015f"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceoffer": {
-      "etag": "\"2f9a-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceoffer.md",
       "hash": "536c23fb82e84c7c4ad71fbac0f0013754b7556342ba389d659856c4e24028ca"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceofferperiod": {
-      "etag": "\"39d3-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceofferperiod.md",
       "hash": "bed8ec04014b02ed95fe7bc68c16c661a27191267d3b308eafb2fcb3d02acf66"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceofferprice": {
-      "etag": "\"3891-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceofferprice.md",
       "hash": "7bb9dbf9b5a91ee9814e1704e56897f0b2757a16a4496d4b1f8d656d2665aeac"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceperiod": {
-      "etag": "\"3961-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceperiod.md",
       "hash": "f9a1dfe0c182a6d1bb42f834bd52103fb66d57ad9cb64175ec06353f612f1a1b"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceperiodcount": {
-      "etag": "\"3897-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceperiodcount.md",
       "hash": "1a3bdf49ab6d97b8b19efc53983d27a39e6a24569f932d283eabcf885c523eba"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommerceprice": {
-      "etag": "\"3873-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceprice.md",
       "hash": "3f323c4f9c8c6021ce954ed8b938b9e2bae0d3c25c270a22438668a2f850639c"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfo": {
-      "etag": "\"314b-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfo.md",
       "hash": "c8845832c04f4220ee2db208b99705c22d85e9f28627eff16794f6fccbfb0048"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfodependentsku": {
-      "etag": "\"3bed-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfodependentsku.md",
       "hash": "3320ade1901eaa568a4d5b09a578c044bb1d67ce077b480348fb8c8060c7c15f"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfoprice": {
-      "etag": "\"3bc2-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfoprice.md",
       "hash": "0f471894e1e8f9542265a5fa348839faffa158a5b9c2f2326ee0c6e0545d7ce3"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfostatus": {
-      "etag": "\"3c6b-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfostatus.md",
       "hash": "240bfdfbce7a0222110cf85ad74143e2064be2bf1219cecc1d1822353e020c21"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercereason": {
-      "etag": "\"3920-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercereason.md",
       "hash": "63b726cfaa6e6112979419ac6f0937349f55e6f2d93b9e2d31a263a674ad0cbb"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerefund": {
-      "etag": "\"2fe6-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefund.md",
       "hash": "1b490c9988beb8f8e382aba59a22382cbae4597f1c6a00b41024736ba15a7dd2"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerefundamount": {
-      "etag": "\"389d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundamount.md",
       "hash": "9454d90a0b861b96efe0f7a0afe1e34ff9df56c3fdbd68f05b3d43ac927db574"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerefunddate": {
-      "etag": "\"3895-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefunddate.md",
       "hash": "b11280346bf6c288a267ee72de5183c6f325b4c9ffd43f483d9993645136aeb9"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerefundreason": {
-      "etag": "\"39fd-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundreason.md",
       "hash": "3f89d0b2f0b9b0078dac41c58a0c97f657d5fdf05cf1a92aa146f4573a683d8d"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerefunds": {
-      "etag": "\"3bb5-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefunds.md",
       "hash": "80e59e786daaffef34cbed65c0dd2efc9232cb3084f1af258db411fd83c846d3"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerefundtype": {
-      "etag": "\"3920-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundtype.md",
       "hash": "cc9774d227b559f68d3d4e1d50fe1bb7d19840c3cf6f4482c95354c659f86e4e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerenewalinfo": {
-      "etag": "\"3534-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalinfo.md",
       "hash": "c20e0a2391a679b4d8c6867af49379229dcc1ac29c602f515361df1b912c9772"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerenewalitem": {
-      "etag": "\"3220-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalitem.md",
       "hash": "2b216fefb44e9d82899a0e05da720ef34ce4c7d574e18676811d1092b4042663"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerenewalitems": {
-      "etag": "\"3c23-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalitems.md",
       "hash": "ee7a349fc6801c8ee2391c13e6ee9f8fdc2551de8acbd13fed137586ffe706e2"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercerequestreferenceid": {
-      "etag": "\"38ec-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerequestreferenceid.md",
       "hash": "def0bb5cefdd1daa2a4132f8e7d3fcbacb7881c51df53d2141038c94eebafec5"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercesku": {
-      "etag": "\"3829-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercesku.md",
       "hash": "3329a45725f503461acb39bf6f0f0aab884b98bf60b3c40b5fe3e775f3b4f8da"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercetaxcode": {
-      "etag": "\"385d-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxcode.md",
       "hash": "180acf1fd5e59e7c256a791faebce51157093fa460e590ed1e80e3de97c9bf27"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercetaxexclusiveprice": {
-      "etag": "\"38de-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxexclusiveprice.md",
       "hash": "6c3faae4cf9a1b9dca836ba1000a3bac3b2eacb4c183ec1ebe8ec7b6ac6ea15e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercetaxrate": {
-      "etag": "\"385d-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxrate.md",
       "hash": "015904e574daf1a233b8c0c4021ff443700df7381e037ca0ebae2bce52273fa2"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercetransactioninfo": {
-      "etag": "\"3cd2-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactioninfo.md",
       "hash": "75aae07f19c34c818f8c4c76c0decbc265b4e7c662a34c17da04b53e65592409"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercetransactionitem": {
-      "etag": "\"382f-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactionitem.md",
       "hash": "4eaff70c2775289690c7e08aef54f53e57f9b67088e5fc9d533d6bdc9115d79f"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/advancedcommercetransactionitems": {
-      "etag": "\"3c7b-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactionitems.md",
       "hash": "278395ad7e5e0d78c4233d8697217050f71249ae4cb22136f84a279d65786b3b"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/alg": {
-      "etag": "\"f72-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/alg.md",
       "hash": "2da473eada5f0082e387cc281197cebb6a3b69a2be772dc744b06aed875d7c2e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-changelog": {
-      "etag": "\"11f42-65e7ac73cd845-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-changelog.md",
       "hash": "7e7fe14d52a5810f5d7514297661b837570d2fdeffd39b1fb64a16bc09d716b7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v1": {
-      "etag": "\"2ba2-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-v1.md",
       "hash": "13bc64e88647ec5372072fa308e9f8769646cffa5169430de83124d5a2c7d0ea"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2": {
-      "etag": "\"2bc5-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-v2.md",
       "hash": "74e33f010fdd7ab0c2b9103ef7612497f68a216cedfc03991b0e1c17eb87e3b6"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-version-1": {
-      "etag": "\"11f1-65902296c1e92-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-version-1.md",
       "hash": "282c1d19ad999899268fba8f806ee6870bf0f209be9e9e48d43a4977282d1ceb"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/appaccounttoken": {
-      "etag": "\"1fb9-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/appaccounttoken.md",
       "hash": "85408cb9e6718377848493a9867ca3124408391d1e77f3dea61be36fb38e4ba3"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/appappleid": {
-      "etag": "\"1777-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/appappleid.md",
       "hash": "6fe959ee432d857bc35d6f564034d06c8954321a82e842d478857421195b99a8"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/appdata": {
-      "etag": "\"3047-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/appdata.md",
       "hash": "af4aa48d75880a5af3abfdbd987f6e5e7a62319ebe55ced65a2581663e7fcf57"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/apptransactionid": {
-      "etag": "\"1336-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/apptransactionid.md",
       "hash": "030a284d7a3fdb36147da1e936d0062c92be5dc2d3e28b8eb427f175d0e6f66d"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/autorenewproductid": {
-      "etag": "\"23c8-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/autorenewproductid.md",
       "hash": "4bfc1b01bc12f77bf66f526c69e842eb06f7112f178f5ae8d787bb09db2706f1"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/autorenewstatus": {
-      "etag": "\"2599-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/autorenewstatus.md",
       "hash": "e5a265ffd9a57da9bc00dfd4fa88019611cb9912a66edfb69be590d153acd58b"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/billingperiodnumber": {
-      "etag": "\"289e-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/billingperiodnumber.md",
       "hash": "b17e89a6091c2fab70d53f0f36e38b9faca79faf96ec450e567381cd5fd6ff17"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/billingplantype": {
-      "etag": "\"26ba-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/billingplantype.md",
       "hash": "fd879b407bf8e11592093112a9b4c480181bc31c7e69613bbe9b0d5016b94165"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/bundleid": {
-      "etag": "\"175b-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/bundleid.md",
       "hash": "837d57e10786f63440124c4ee2779e813a71afd922e1e3a40730e109d90f70df"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/bundleversion": {
-      "etag": "\"179d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/bundleversion.md",
       "hash": "191e0b388bfa23ff5eccff19f227cf0dbba689c24e839bc57844c8cd6ae79aaf"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/commitmentautorenewproductid": {
-      "etag": "\"285c-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentautorenewproductid.md",
       "hash": "bb1a8c9bd2851392997d9d6ad0afa1048dea1262bbb4b1877bcecf95dc2489e8"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/commitmentautorenewstatus": {
-      "etag": "\"28bc-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentautorenewstatus.md",
       "hash": "b7c4e4fc75a012209176ca8a97cf94e26ebcde122ed109bc88128b412ca02dcc"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/commitmentexpiresdate": {
-      "etag": "\"2835-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentexpiresdate.md",
       "hash": "dafa91781643168df5de44e539ba65f4630b2f83f83e7a8bef56ae9ccc7fc571"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/commitmentprice": {
-      "etag": "\"280d-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentprice.md",
       "hash": "32973b97c2a72649bd2e5bb0778fe84bd091677f733c16ae54e4623c3a31bf9a"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/commitmentrenewalbillingplantype": {
-      "etag": "\"28fa-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentrenewalbillingplantype.md",
       "hash": "906ac01ddeb883855a00b4ebd4174278f9206a59e6afa2a77a62caf4400d46c6"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/commitmentrenewaldate": {
-      "etag": "\"2835-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentrenewaldate.md",
       "hash": "52136166665ee6c282bdc6c242779517c4fa0d12da4035d425ba31c28913ce51"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/commitmentrenewalprice": {
-      "etag": "\"2837-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentrenewalprice.md",
       "hash": "4b5b70ced82925f4369b5d4b11295db90dadd9f7d836f082da3e1223371b6be4"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/consumptionrequestreason": {
-      "etag": "\"1b8e-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/consumptionrequestreason.md",
       "hash": "2ee115f7a877b2dc4682fef9e4d0e3630901b9f2077d0c5b91662fdff8411856"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/currency": {
-      "etag": "\"2363-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/currency.md",
       "hash": "6e68e7816230f7bcf4b6b638a143aebe77d862882b17cad04f9a3dad05029b0f"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/data": {
-      "etag": "\"5561-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/data.md",
       "hash": "d97e31477bedc0f0588e9fc75656cb499e19f1cb9509636bd964c2af2b3e733e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/eligiblewinbackofferids": {
-      "etag": "\"1ca9-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/eligiblewinbackofferids.md",
       "hash": "4c3ed35ced7af718d66ffbeeb0ca553fb1a7fb9f66d21fa50d7f68133841e7bb"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications": {
-      "etag": "\"3a55-65902296aa952-df\"",
       "file_path": "documentation/AppStoreServerNotifications/enabling-app-store-server-notifications.md",
       "hash": "063d9d3d8a8e2a04954c7114b716bcae84777b2838821184a398e5828ba33c7e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/environment": {
-      "etag": "\"21e4-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/environment.md",
       "hash": "32425d55183376a771b5ceab4906b071f619630e6de7a4615b30033b9bf852d0"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/expirationintent": {
-      "etag": "\"2dc6-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/expirationintent.md",
       "hash": "4cc190e0448391d99f21e57643f0b5c934efef81ee4a7f5fedb29cb4dc26a7c6"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/expiresdate": {
-      "etag": "\"2580-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/expiresdate.md",
       "hash": "241e0d744196af380dbfbebf9587c9a30cd13d33e9c912359869b28c3749577d"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/externalpurchaseid": {
-      "etag": "\"1d96-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/externalpurchaseid.md",
       "hash": "014d45d376574e4bf24588b23dbf4e7b413fd14b15985a102b49203c335d4a77"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/externalpurchasetoken": {
-      "etag": "\"44c0-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/externalpurchasetoken.md",
       "hash": "06f20806d797a5bbc4a3c6b27b5e6fcb5d6e032542768bb3ab2046b99e26dbdc"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/failedcount": {
-      "etag": "\"23e4-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/failedcount.md",
       "hash": "f6d478b56c7a66707a1d473357ecac2bfa03fe100f8f5f99ba0d6f9073b994a7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/graceperiodexpiresdate": {
-      "etag": "\"1397-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/graceperiodexpiresdate.md",
       "hash": "5350f700479e8496bc6b58e09612b8d7503133501dab966804244b49d7e6a47d"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/inappownershiptype": {
-      "etag": "\"1256-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/inappownershiptype.md",
       "hash": "f067934cef91653bbeb553125c1dca547acfc0a2cfdf9f4c8432108f6e847065"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/isinbillingretryperiod": {
-      "etag": "\"10e0-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/isinbillingretryperiod.md",
       "hash": "c799984310f53dca4d3d20c7257dd6ddfba9d6040f7708d3ca91032d08eb3488"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/isupgraded": {
-      "etag": "\"2862-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/isupgraded.md",
       "hash": "1f48ef85b6397b9be7b16f994df0e2af75dbd7b2d581877c6414ddd74a8dd4e7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/jwsapptransaction": {
-      "etag": "\"10b9-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsapptransaction.md",
       "hash": "4b172191f7bcb93f218d1ba301f525898dfbaf2a07376af4d01803808bd3c453"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/jwsdecodedheader": {
-      "etag": "\"3820-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsdecodedheader.md",
       "hash": "a2410faf93c50c05271ad5a189e064624cda58ad9ea680ba1c99572766dcd0ec"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/jwsrenewalinfo": {
-      "etag": "\"20e8-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsrenewalinfo.md",
       "hash": "1d6e297879d27be96bfeae0cd826d9bb035908a842058131210e3beef9a17789"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/jwsrenewalinfodecodedpayload": {
-      "etag": "\"8608-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsrenewalinfodecodedpayload.md",
       "hash": "ed5221eb13dc458c171416b0450879f7aed3c4e0bcf8df8af0bcc176bda8c093"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/jwstransaction": {
-      "etag": "\"2776-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwstransaction.md",
       "hash": "6f63aa674ff2b31ff02f9b7fa7b3a5e5d2b22337ff2f2c9cc07518c4e007f24a"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/jwstransactiondecodedpayload": {
-      "etag": "\"b987-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwstransactiondecodedpayload.md",
       "hash": "fa28237a6a00520310d432d663c0f100e8b0d6b2ed1227a39818b7b6c6768ec3"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/notification_type": {
-      "etag": "\"9e8d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notification_type.md",
       "hash": "aa34315741551b629b976d1de2aba24900f8bd8a548d5b09ebf4556206b35363"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/notificationtype": {
-      "etag": "\"10458-65e7ac73b8850-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationtype.md",
       "hash": "e6db96b5c9e4d8aeb59864d958fa823b7337f328f61efbdbf05569206de91d32"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/notificationuuid": {
-      "etag": "\"1965-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationuuid.md",
       "hash": "7ce7aa7822dc0dccc9fb7a1309d9f6de34ce11c1058a01465eb557ab4291f191"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/offerdiscounttype": {
-      "etag": "\"3001-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offerdiscounttype.md",
       "hash": "3a10e1f41383598b0591098ae70f1a294939071028f62200ada381f77dbd1a37"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/offeridentifier": {
-      "etag": "\"1fcf-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offeridentifier.md",
       "hash": "0dc784cabf6bb8cc2123d6f704f419326851a74560001590b159ed2fba2bcd43"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/offerperiod": {
-      "etag": "\"1ff8-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offerperiod.md",
       "hash": "86e676af1ed40869045727a80d194c8f8e6e9098005e0478437bbc72ed910ce7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/offertype": {
-      "etag": "\"2da7-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offertype.md",
       "hash": "57061243701b644a5f1e1587e5e90e26270f582be553499de81168fb4c1c53a7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/originalpurchasedate": {
-      "etag": "\"14e1-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/originalpurchasedate.md",
       "hash": "ae626c6436504a9a59d6b463f2612b14a659085def94b488e2e4d16c791b8f77"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/originaltransactionid": {
-      "etag": "\"1851-65daaf2ccccc9-df\"",
       "file_path": "documentation/AppStoreServerNotifications/originaltransactionid.md",
       "hash": "0a1ba762f67dd18b2206f5822046d1b7b20917ff1958a370a713e3e1807fcbf8"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/previousoriginaltransactionid": {
-      "etag": "\"19b2-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/previousoriginaltransactionid.md",
       "hash": "5515180e6d71c06775299f931c4a59c93162a12b88930d5c95f809d790796a1c"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/price": {
-      "etag": "\"3b1d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/price.md",
       "hash": "7527ecdfb9a665eb252b6236a49b8a7de82f4a2b3bf75423c1a99364f91e0b7c"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/priceincreasestatus": {
-      "etag": "\"1452-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/priceincreasestatus.md",
       "hash": "884c836bca1b97e93e496a3f4357962e775bd5308382b9461f3ce3473de13ff7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/productid": {
-      "etag": "\"24a1-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/productid.md",
       "hash": "f2e0454c99022cddc072b18aa39549d5077657b936146ff548f3eb11fa87e116"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/purchasedate": {
-      "etag": "\"14e8-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/purchasedate.md",
       "hash": "3ce86689dfe1919e872f553149dc4ea492ff74eeecca32ac60ea44ee1733ae71"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/quantity": {
-      "etag": "\"1931-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/quantity.md",
       "hash": "f5044e97c7abfc8e2136f46ef78cc3c74a1f374b4e360c4546f8d91d026103fc"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/receiving-app-store-server-notifications": {
-      "etag": "\"4030-65b8a2df0b00e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/receiving-app-store-server-notifications.md",
       "hash": "4a91bf4630eceb004a39210e5a676ac7feb9a06535000f016152e1d8d3f703d3"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/recentsubscriptionstartdate": {
-      "etag": "\"1cf5-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/recentsubscriptionstartdate.md",
       "hash": "3a13379da5fc9beb982d3ccc80050b2df0d69249eab0d04d027639ccfd82a838"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/renewalbillingplantype": {
-      "etag": "\"26e4-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewalbillingplantype.md",
       "hash": "98ad1ea565789bc83b6c2ab60e14ee845d9fe93e268e580afa96a3d2579c5abf"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/renewalcommitmentinfo": {
-      "etag": "\"33fe-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewalcommitmentinfo.md",
       "hash": "8e0ed74b11beb2f1618c2539ca280f21222940c31d39d15109326abdb22ba39c"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/renewaldate": {
-      "etag": "\"264c-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewaldate.md",
       "hash": "7fe1ca7f393bec9ea3bc2b6092cf4f0979379da7a35ee812050ae81f15793466"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/renewalprice": {
-      "etag": "\"3769-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewalprice.md",
       "hash": "fd6626befbecd3851889aac16ab2b7b5332e7e5cd84562fb78cacb6d8dcbc7fa"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/requestidentifier": {
-      "etag": "\"2afc-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/requestidentifier.md",
       "hash": "a2a10accbee1145c4b2d9d1f3f1624431d3a6475a8587d732a7c0322f4c66e24"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/responding-to-app-store-server-notifications": {
-      "etag": "\"2ca5-65902296c1e92-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responding-to-app-store-server-notifications.md",
       "hash": "de66cd1f500efd0d445e928cb1bfc71522a8cacff0e185198b71935aef66671e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/responsebodyv1": {
-      "etag": "\"45c4-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv1.md",
       "hash": "89cda85556c90418db4eb86ab88719a756ac66417fa2f070644ea813ba5db213"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/responsebodyv2": {
-      "etag": "\"37b1-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2.md",
       "hash": "cc1f2937817be1fdbc165e8985e6c66808e1211684ad53dbf4e001701d507c54"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/responsebodyv2decodedpayload": {
-      "etag": "\"6cf0-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2decodedpayload.md",
       "hash": "b829f8d5a3ae87175e0e5bb4f2d6a02260db54ed92b8eb468db2e6f9c16c4431"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/revocationdate": {
-      "etag": "\"15fb-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationdate.md",
       "hash": "c121b31f1a6a5a623b6ec39e737d534d9aaa9dff3c1e4a2f314e20024c1067b4"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/revocationpercentage": {
-      "etag": "\"2257-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationpercentage.md",
       "hash": "529e0c9d63905d59896bf7c5be1b612d03f111091f8972a3e400e4b7ff03e68b"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/revocationreason": {
-      "etag": "\"19bf-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationreason.md",
       "hash": "29eb90b919129936de7525ea95eef4089100dcc3dd91fbc04e9bcc0e4efd887b"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/revocationtype": {
-      "etag": "\"1efd-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationtype.md",
       "hash": "fad16b03d8e59ad0f07d94b1ec600d1d452cf803d1863dbc05f219c4a2031f5c"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/signeddate": {
-      "etag": "\"1ed3-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/signeddate.md",
       "hash": "929ec47f2d76de88487cd4dee605944618abbd220fd2c2597c1957b23fff7601"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/signedpayload": {
-      "etag": "\"1c2a-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/signedpayload.md",
       "hash": "d4727f6673f50bf90f78ef356e7e342802e8d7a46bfe1f1a5044830bf9361b09"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/status": {
-      "etag": "\"2273-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/status.md",
       "hash": "34eafe5314391154edb44df83f2d2967663fd14eece877792bffba81516c37b8"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/storefront": {
-      "etag": "\"1714-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefront.md",
       "hash": "05632293fee9b14c7cf6ed1aca627bd8c69ab66f533faea87e3fa66843c864f3"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/storefrontcountrycode": {
-      "etag": "\"2578-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontcountrycode.md",
       "hash": "786ad46527168e1576551312ef93c86f5cbfa076544ddb676bef7c203137ef53"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/storefrontcountrycodes": {
-      "etag": "\"2f16-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontcountrycodes.md",
       "hash": "0e97f9dfe19c5d646c1fbd607d9e0abb3d89dd5ab009baef970a05c6b6827748"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/storefrontid": {
-      "etag": "\"165b-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontid.md",
       "hash": "834037b8b90a37bdcc156723fdc35cda0047afa302a36e815667f22d5d57cf6f"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/subscriptiongroupidentifier": {
-      "etag": "\"18db-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/subscriptiongroupidentifier.md",
       "hash": "ad44e0e60d3a8ea4892bb0392f180cb4abfccbc6b62aeaaf76e44141ccd867a2"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/subtype": {
-      "etag": "\"5d26-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/subtype.md",
       "hash": "72d507186746c970b747285c0475be4bac093a6ca454a27ad3de99b6517542f5"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/succeededcount": {
-      "etag": "\"23fb-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/succeededcount.md",
       "hash": "1a9cd02863265271a529ba118b6dda2784b3c0d5532e4874572293587ebd61d2"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/summary": {
-      "etag": "\"5354-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/summary.md",
       "hash": "d2b0766c85546da51ce0cdd68eb250e6ae71616fb95162e2144d3d5b9025b0fb"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/tokencreationdate": {
-      "etag": "\"1d75-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/tokencreationdate.md",
       "hash": "76762a231108f616296b18bc963716481aea1306ac538e82f10fab2961c9a6aa"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/tokenexpirationdate": {
-      "etag": "\"1935-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/tokenexpirationdate.md",
       "hash": "c33f38cdc1d23853cb23414d66a1025513d83f2b1e9449b1bbf26d4dd22766b5"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/tokentype": {
-      "etag": "\"2436-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/tokentype.md",
       "hash": "500a4ecf3fb7413d3cc94190ad573b2b166c6e0afafe0c889ae735463e5dfeba"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/totalbillingperiods": {
-      "etag": "\"2825-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/totalbillingperiods.md",
       "hash": "696183ee515628da63d147ce5613de1ccaaceffdad17425be8e89951ff8533c2"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/transaction-data-types": {
-      "etag": "\"c796-65daaf2ccccc9-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transaction-data-types.md",
       "hash": "112e1d044a67eb84b20c021416f81de5994c254a3785450df5564008526e9906"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/transactioncommitmentinfo": {
-      "etag": "\"3227-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transactioncommitmentinfo.md",
       "hash": "d2e251b4a8dc618ee8f1bdc83bc2f2bae096bcd4ae4410023be074cf7861af68"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/transactionid": {
-      "etag": "\"1a37-65daaf2cdf31f-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transactionid.md",
       "hash": "1b8b59344e785694bbc6c7b4bc002794f4620864d2b5b17a2f28908ec0d17110"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/transactionreason": {
-      "etag": "\"1523-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transactionreason.md",
       "hash": "ee6130212fd4ed28c1553054d5bb40f9675338b1bf324dd92d0f4a3187e7455e"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/type": {
-      "etag": "\"1714-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/type.md",
       "hash": "9c3eb35ec282449e390e175ec37bfc5f66a403f7e49251c43aacd34f4b851640"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt": {
-      "etag": "\"2c1b-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt.md",
       "hash": "a01a7317b43452c0476328839c867bdc82fc21c10f792b2766b2b91059b80ff7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary": {
-      "etag": "\"841b-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt/latest_receipt_info-data.dictionary.md",
       "hash": "148fd543ec8e4d434d1ee732b19c51043139f8ee1fc4b860bc8c0a9700e11f79"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/pending_renewal_info-data.dictionary": {
-      "etag": "\"49fa-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt/pending_renewal_info-data.dictionary.md",
       "hash": "85134cf9159698f5d49cc6dedc85beeb636ceeee27652609149262bcbc94c912"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/version": {
-      "etag": "\"2084-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/version.md",
       "hash": "a9d4e3cc26ce84f1d576dfac7019c1715b4002b1bead79bbdb1020676784ccf0"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/weborderlineitemid": {
-      "etag": "\"1784-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/weborderlineitemid.md",
       "hash": "1d8f8ba2ffe2b721ba6dbee29b4564e7389bd670956d88b0d58501ccb6b3408c"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/x5c": {
-      "etag": "\"1210-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/x5c.md",
       "hash": "4481d3ed2183d19c825e1347c8e970cfdb7a43c75a1ef07232b7f80b3b023387"
     },
     "https://developer.apple.com/tutorials/data/documentation/AppStoreServerNotifications.json": {
-      "etag": "\"66df-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/AppStoreServerNotifications.md",
       "hash": "23fe2c02963e6cec0b09cb2b7a622e14fdb9db743fb31c42bdf8cb6a9c38c17e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerce-datatypes.json": {
-      "etag": "\"864b-65b8a2df263d7-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerce-datatypes.md",
       "hash": "940af9dccdc925c77e0d651124e1c6433f7f27c45dc82038b1a775c8ca9a309d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceconsistencytoken.json": {
-      "etag": "\"38b6-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceconsistencytoken.md",
       "hash": "d480947ac95765b00573f8a26ced0efaa0f6e60fe38aa0e89b3ee6ed3d16d332"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercedescription.json": {
-      "etag": "\"3898-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedescription.md",
       "hash": "9ad9f052dcc66e388c00c284e67bde748fff8bf990ceb389e5052ca650fdc877"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercedescriptors.json": {
-      "etag": "\"288e-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedescriptors.md",
       "hash": "24928f7a19e9417a941e07f9d07fb395a93d75cd9e351ef8666cc8ec308e1b9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercedisplayname.json": {
-      "etag": "\"3898-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedisplayname.md",
       "hash": "58cd158be4b5c78a09f0cfcd47c1d74271f6ca023782e94af5296f26944778f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceestimatedtax.json": {
-      "etag": "\"389d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceestimatedtax.md",
       "hash": "0eee6506667fa918c6a41de5a5ed5a8a07cacf1fdfa42d68bb871475a8d0015f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceoffer.json": {
-      "etag": "\"2f9a-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceoffer.md",
       "hash": "536c23fb82e84c7c4ad71fbac0f0013754b7556342ba389d659856c4e24028ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceofferperiod.json": {
-      "etag": "\"39d3-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceofferperiod.md",
       "hash": "bed8ec04014b02ed95fe7bc68c16c661a27191267d3b308eafb2fcb3d02acf66"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceofferprice.json": {
-      "etag": "\"3891-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceofferprice.md",
       "hash": "7bb9dbf9b5a91ee9814e1704e56897f0b2757a16a4496d4b1f8d656d2665aeac"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceperiod.json": {
-      "etag": "\"3961-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceperiod.md",
       "hash": "f9a1dfe0c182a6d1bb42f834bd52103fb66d57ad9cb64175ec06353f612f1a1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceperiodcount.json": {
-      "etag": "\"3897-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceperiodcount.md",
       "hash": "1a3bdf49ab6d97b8b19efc53983d27a39e6a24569f932d283eabcf885c523eba"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceprice.json": {
-      "etag": "\"3873-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceprice.md",
       "hash": "3f323c4f9c8c6021ce954ed8b938b9e2bae0d3c25c270a22438668a2f850639c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfo.json": {
-      "etag": "\"314b-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfo.md",
       "hash": "c8845832c04f4220ee2db208b99705c22d85e9f28627eff16794f6fccbfb0048"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfodependentsku.json": {
-      "etag": "\"3bed-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfodependentsku.md",
       "hash": "3320ade1901eaa568a4d5b09a578c044bb1d67ce077b480348fb8c8060c7c15f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfoprice.json": {
-      "etag": "\"3bc2-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfoprice.md",
       "hash": "0f471894e1e8f9542265a5fa348839faffa158a5b9c2f2326ee0c6e0545d7ce3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfostatus.json": {
-      "etag": "\"3c6b-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfostatus.md",
       "hash": "240bfdfbce7a0222110cf85ad74143e2064be2bf1219cecc1d1822353e020c21"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercereason.json": {
-      "etag": "\"3920-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercereason.md",
       "hash": "63b726cfaa6e6112979419ac6f0937349f55e6f2d93b9e2d31a263a674ad0cbb"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefund.json": {
-      "etag": "\"2fe6-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefund.md",
       "hash": "1b490c9988beb8f8e382aba59a22382cbae4597f1c6a00b41024736ba15a7dd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefundamount.json": {
-      "etag": "\"389d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundamount.md",
       "hash": "9454d90a0b861b96efe0f7a0afe1e34ff9df56c3fdbd68f05b3d43ac927db574"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefunddate.json": {
-      "etag": "\"3895-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefunddate.md",
       "hash": "b11280346bf6c288a267ee72de5183c6f325b4c9ffd43f483d9993645136aeb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefundreason.json": {
-      "etag": "\"39fd-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundreason.md",
       "hash": "3f89d0b2f0b9b0078dac41c58a0c97f657d5fdf05cf1a92aa146f4573a683d8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefunds.json": {
-      "etag": "\"3bb5-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefunds.md",
       "hash": "80e59e786daaffef34cbed65c0dd2efc9232cb3084f1af258db411fd83c846d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefundtype.json": {
-      "etag": "\"3920-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundtype.md",
       "hash": "cc9774d227b559f68d3d4e1d50fe1bb7d19840c3cf6f4482c95354c659f86e4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerenewalinfo.json": {
-      "etag": "\"3534-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalinfo.md",
       "hash": "c20e0a2391a679b4d8c6867af49379229dcc1ac29c602f515361df1b912c9772"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerenewalitem.json": {
-      "etag": "\"3220-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalitem.md",
       "hash": "2b216fefb44e9d82899a0e05da720ef34ce4c7d574e18676811d1092b4042663"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerenewalitems.json": {
-      "etag": "\"3c23-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalitems.md",
       "hash": "ee7a349fc6801c8ee2391c13e6ee9f8fdc2551de8acbd13fed137586ffe706e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerequestreferenceid.json": {
-      "etag": "\"38ec-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerequestreferenceid.md",
       "hash": "def0bb5cefdd1daa2a4132f8e7d3fcbacb7881c51df53d2141038c94eebafec5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercesku.json": {
-      "etag": "\"3829-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercesku.md",
       "hash": "3329a45725f503461acb39bf6f0f0aab884b98bf60b3c40b5fe3e775f3b4f8da"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetaxcode.json": {
-      "etag": "\"385d-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxcode.md",
       "hash": "180acf1fd5e59e7c256a791faebce51157093fa460e590ed1e80e3de97c9bf27"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetaxexclusiveprice.json": {
-      "etag": "\"38de-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxexclusiveprice.md",
       "hash": "6c3faae4cf9a1b9dca836ba1000a3bac3b2eacb4c183ec1ebe8ec7b6ac6ea15e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetaxrate.json": {
-      "etag": "\"385d-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxrate.md",
       "hash": "015904e574daf1a233b8c0c4021ff443700df7381e037ca0ebae2bce52273fa2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetransactioninfo.json": {
-      "etag": "\"3cd2-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactioninfo.md",
       "hash": "75aae07f19c34c818f8c4c76c0decbc265b4e7c662a34c17da04b53e65592409"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetransactionitem.json": {
-      "etag": "\"382f-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactionitem.md",
       "hash": "4eaff70c2775289690c7e08aef54f53e57f9b67088e5fc9d533d6bdc9115d79f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetransactionitems.json": {
-      "etag": "\"3c7b-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactionitems.md",
       "hash": "278395ad7e5e0d78c4233d8697217050f71249ae4cb22136f84a279d65786b3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/alg.json": {
-      "etag": "\"f72-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/alg.md",
       "hash": "2da473eada5f0082e387cc281197cebb6a3b69a2be772dc744b06aed875d7c2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-changelog.json": {
-      "etag": "\"11f42-65e7ac73cd845-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-changelog.md",
       "hash": "7e7fe14d52a5810f5d7514297661b837570d2fdeffd39b1fb64a16bc09d716b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-v1.json": {
-      "etag": "\"2ba2-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-v1.md",
       "hash": "13bc64e88647ec5372072fa308e9f8769646cffa5169430de83124d5a2c7d0ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-v2.json": {
-      "etag": "\"2bc5-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-v2.md",
       "hash": "74e33f010fdd7ab0c2b9103ef7612497f68a216cedfc03991b0e1c17eb87e3b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-version-1.json": {
-      "etag": "\"11f1-65902296c1e92-df\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-version-1.md",
       "hash": "282c1d19ad999899268fba8f806ee6870bf0f209be9e9e48d43a4977282d1ceb"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/appaccounttoken.json": {
-      "etag": "\"1fb9-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/appaccounttoken.md",
       "hash": "85408cb9e6718377848493a9867ca3124408391d1e77f3dea61be36fb38e4ba3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/appappleid.json": {
-      "etag": "\"1777-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/appappleid.md",
       "hash": "6fe959ee432d857bc35d6f564034d06c8954321a82e842d478857421195b99a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/appdata.json": {
-      "etag": "\"3047-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/appdata.md",
       "hash": "af4aa48d75880a5af3abfdbd987f6e5e7a62319ebe55ced65a2581663e7fcf57"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/apptransactionid.json": {
-      "etag": "\"1336-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/apptransactionid.md",
       "hash": "030a284d7a3fdb36147da1e936d0062c92be5dc2d3e28b8eb427f175d0e6f66d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/autorenewproductid.json": {
-      "etag": "\"23c8-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/autorenewproductid.md",
       "hash": "4bfc1b01bc12f77bf66f526c69e842eb06f7112f178f5ae8d787bb09db2706f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/autorenewstatus.json": {
-      "etag": "\"2599-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/autorenewstatus.md",
       "hash": "e5a265ffd9a57da9bc00dfd4fa88019611cb9912a66edfb69be590d153acd58b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/billingperiodnumber.json": {
-      "etag": "\"289e-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/billingperiodnumber.md",
       "hash": "b17e89a6091c2fab70d53f0f36e38b9faca79faf96ec450e567381cd5fd6ff17"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/billingplantype.json": {
-      "etag": "\"26ba-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/billingplantype.md",
       "hash": "fd879b407bf8e11592093112a9b4c480181bc31c7e69613bbe9b0d5016b94165"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/bundleid.json": {
-      "etag": "\"175b-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/bundleid.md",
       "hash": "837d57e10786f63440124c4ee2779e813a71afd922e1e3a40730e109d90f70df"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/bundleversion.json": {
-      "etag": "\"179d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/bundleversion.md",
       "hash": "191e0b388bfa23ff5eccff19f227cf0dbba689c24e839bc57844c8cd6ae79aaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/commitmentautorenewproductid.json": {
-      "etag": "\"285c-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentautorenewproductid.md",
       "hash": "bb1a8c9bd2851392997d9d6ad0afa1048dea1262bbb4b1877bcecf95dc2489e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/commitmentautorenewstatus.json": {
-      "etag": "\"28bc-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentautorenewstatus.md",
       "hash": "b7c4e4fc75a012209176ca8a97cf94e26ebcde122ed109bc88128b412ca02dcc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/commitmentexpiresdate.json": {
-      "etag": "\"2835-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentexpiresdate.md",
       "hash": "dafa91781643168df5de44e539ba65f4630b2f83f83e7a8bef56ae9ccc7fc571"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/commitmentprice.json": {
-      "etag": "\"280d-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentprice.md",
       "hash": "32973b97c2a72649bd2e5bb0778fe84bd091677f733c16ae54e4623c3a31bf9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/commitmentrenewalbillingplantype.json": {
-      "etag": "\"28fa-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentrenewalbillingplantype.md",
       "hash": "906ac01ddeb883855a00b4ebd4174278f9206a59e6afa2a77a62caf4400d46c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/commitmentrenewaldate.json": {
-      "etag": "\"2835-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentrenewaldate.md",
       "hash": "52136166665ee6c282bdc6c242779517c4fa0d12da4035d425ba31c28913ce51"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/commitmentrenewalprice.json": {
-      "etag": "\"2837-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/commitmentrenewalprice.md",
       "hash": "4b5b70ced82925f4369b5d4b11295db90dadd9f7d836f082da3e1223371b6be4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/consumptionrequestreason.json": {
-      "etag": "\"1b8e-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/consumptionrequestreason.md",
       "hash": "2ee115f7a877b2dc4682fef9e4d0e3630901b9f2077d0c5b91662fdff8411856"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/currency.json": {
-      "etag": "\"2363-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/currency.md",
       "hash": "6e68e7816230f7bcf4b6b638a143aebe77d862882b17cad04f9a3dad05029b0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/data.json": {
-      "etag": "\"5561-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/data.md",
       "hash": "d97e31477bedc0f0588e9fc75656cb499e19f1cb9509636bd964c2af2b3e733e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/eligiblewinbackofferids.json": {
-      "etag": "\"1ca9-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/eligiblewinbackofferids.md",
       "hash": "4c3ed35ced7af718d66ffbeeb0ca553fb1a7fb9f66d21fa50d7f68133841e7bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/enabling-app-store-server-notifications.json": {
-      "etag": "\"3a55-65902296aa952-df\"",
       "file_path": "documentation/AppStoreServerNotifications/enabling-app-store-server-notifications.md",
       "hash": "063d9d3d8a8e2a04954c7114b716bcae84777b2838821184a398e5828ba33c7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/environment.json": {
-      "etag": "\"21e4-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/environment.md",
       "hash": "32425d55183376a771b5ceab4906b071f619630e6de7a4615b30033b9bf852d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/expirationintent.json": {
-      "etag": "\"2dc6-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/expirationintent.md",
       "hash": "4cc190e0448391d99f21e57643f0b5c934efef81ee4a7f5fedb29cb4dc26a7c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/expiresdate.json": {
-      "etag": "\"2580-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/expiresdate.md",
       "hash": "241e0d744196af380dbfbebf9587c9a30cd13d33e9c912359869b28c3749577d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/externalpurchaseid.json": {
-      "etag": "\"1d96-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/externalpurchaseid.md",
       "hash": "014d45d376574e4bf24588b23dbf4e7b413fd14b15985a102b49203c335d4a77"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/externalpurchasetoken.json": {
-      "etag": "\"44c0-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/externalpurchasetoken.md",
       "hash": "06f20806d797a5bbc4a3c6b27b5e6fcb5d6e032542768bb3ab2046b99e26dbdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/failedcount.json": {
-      "etag": "\"23e4-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/failedcount.md",
       "hash": "f6d478b56c7a66707a1d473357ecac2bfa03fe100f8f5f99ba0d6f9073b994a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/graceperiodexpiresdate.json": {
-      "etag": "\"1397-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/graceperiodexpiresdate.md",
       "hash": "5350f700479e8496bc6b58e09612b8d7503133501dab966804244b49d7e6a47d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/inappownershiptype.json": {
-      "etag": "\"1256-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/inappownershiptype.md",
       "hash": "f067934cef91653bbeb553125c1dca547acfc0a2cfdf9f4c8432108f6e847065"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/isinbillingretryperiod.json": {
-      "etag": "\"10e0-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/isinbillingretryperiod.md",
       "hash": "c799984310f53dca4d3d20c7257dd6ddfba9d6040f7708d3ca91032d08eb3488"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/isupgraded.json": {
-      "etag": "\"2862-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/isupgraded.md",
       "hash": "1f48ef85b6397b9be7b16f994df0e2af75dbd7b2d581877c6414ddd74a8dd4e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsapptransaction.json": {
-      "etag": "\"10b9-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsapptransaction.md",
       "hash": "4b172191f7bcb93f218d1ba301f525898dfbaf2a07376af4d01803808bd3c453"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsdecodedheader.json": {
-      "etag": "\"3820-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsdecodedheader.md",
       "hash": "a2410faf93c50c05271ad5a189e064624cda58ad9ea680ba1c99572766dcd0ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsrenewalinfo.json": {
-      "etag": "\"20e8-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsrenewalinfo.md",
       "hash": "1d6e297879d27be96bfeae0cd826d9bb035908a842058131210e3beef9a17789"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsrenewalinfodecodedpayload.json": {
-      "etag": "\"8608-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsrenewalinfodecodedpayload.md",
       "hash": "ed5221eb13dc458c171416b0450879f7aed3c4e0bcf8df8af0bcc176bda8c093"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwstransaction.json": {
-      "etag": "\"2776-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwstransaction.md",
       "hash": "6f63aa674ff2b31ff02f9b7fa7b3a5e5d2b22337ff2f2c9cc07518c4e007f24a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwstransactiondecodedpayload.json": {
-      "etag": "\"b987-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/jwstransactiondecodedpayload.md",
       "hash": "fa28237a6a00520310d432d663c0f100e8b0d6b2ed1227a39818b7b6c6768ec3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notification_type.json": {
-      "etag": "\"9e8d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notification_type.md",
       "hash": "aa34315741551b629b976d1de2aba24900f8bd8a548d5b09ebf4556206b35363"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notificationtype.json": {
-      "etag": "\"10458-65e7ac73b8850-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationtype.md",
       "hash": "e6db96b5c9e4d8aeb59864d958fa823b7337f328f61efbdbf05569206de91d32"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notificationuuid.json": {
-      "etag": "\"1965-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationuuid.md",
       "hash": "7ce7aa7822dc0dccc9fb7a1309d9f6de34ce11c1058a01465eb557ab4291f191"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offerdiscounttype.json": {
-      "etag": "\"3001-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offerdiscounttype.md",
       "hash": "3a10e1f41383598b0591098ae70f1a294939071028f62200ada381f77dbd1a37"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offeridentifier.json": {
-      "etag": "\"1fcf-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offeridentifier.md",
       "hash": "0dc784cabf6bb8cc2123d6f704f419326851a74560001590b159ed2fba2bcd43"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offerperiod.json": {
-      "etag": "\"1ff8-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offerperiod.md",
       "hash": "86e676af1ed40869045727a80d194c8f8e6e9098005e0478437bbc72ed910ce7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offertype.json": {
-      "etag": "\"2da7-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/offertype.md",
       "hash": "57061243701b644a5f1e1587e5e90e26270f582be553499de81168fb4c1c53a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/originalpurchasedate.json": {
-      "etag": "\"14e1-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/originalpurchasedate.md",
       "hash": "ae626c6436504a9a59d6b463f2612b14a659085def94b488e2e4d16c791b8f77"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/originaltransactionid.json": {
-      "etag": "\"1851-65daaf2ccccc9-df\"",
       "file_path": "documentation/AppStoreServerNotifications/originaltransactionid.md",
       "hash": "0a1ba762f67dd18b2206f5822046d1b7b20917ff1958a370a713e3e1807fcbf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/previousoriginaltransactionid.json": {
-      "etag": "\"19b2-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/previousoriginaltransactionid.md",
       "hash": "5515180e6d71c06775299f931c4a59c93162a12b88930d5c95f809d790796a1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/price.json": {
-      "etag": "\"3b1d-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/price.md",
       "hash": "7527ecdfb9a665eb252b6236a49b8a7de82f4a2b3bf75423c1a99364f91e0b7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/priceincreasestatus.json": {
-      "etag": "\"1452-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/priceincreasestatus.md",
       "hash": "884c836bca1b97e93e496a3f4357962e775bd5308382b9461f3ce3473de13ff7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/productid.json": {
-      "etag": "\"24a1-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/productid.md",
       "hash": "f2e0454c99022cddc072b18aa39549d5077657b936146ff548f3eb11fa87e116"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/purchasedate.json": {
-      "etag": "\"14e8-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/purchasedate.md",
       "hash": "3ce86689dfe1919e872f553149dc4ea492ff74eeecca32ac60ea44ee1733ae71"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/quantity.json": {
-      "etag": "\"1931-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/quantity.md",
       "hash": "f5044e97c7abfc8e2136f46ef78cc3c74a1f374b4e360c4546f8d91d026103fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/receiving-app-store-server-notifications.json": {
-      "etag": "\"4030-65b8a2df0b00e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/receiving-app-store-server-notifications.md",
       "hash": "4a91bf4630eceb004a39210e5a676ac7feb9a06535000f016152e1d8d3f703d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/recentsubscriptionstartdate.json": {
-      "etag": "\"1cf5-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/recentsubscriptionstartdate.md",
       "hash": "3a13379da5fc9beb982d3ccc80050b2df0d69249eab0d04d027639ccfd82a838"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/renewalbillingplantype.json": {
-      "etag": "\"26e4-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewalbillingplantype.md",
       "hash": "98ad1ea565789bc83b6c2ab60e14ee845d9fe93e268e580afa96a3d2579c5abf"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/renewalcommitmentinfo.json": {
-      "etag": "\"33fe-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewalcommitmentinfo.md",
       "hash": "8e0ed74b11beb2f1618c2539ca280f21222940c31d39d15109326abdb22ba39c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/renewaldate.json": {
-      "etag": "\"264c-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewaldate.md",
       "hash": "7fe1ca7f393bec9ea3bc2b6092cf4f0979379da7a35ee812050ae81f15793466"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/renewalprice.json": {
-      "etag": "\"3769-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/renewalprice.md",
       "hash": "fd6626befbecd3851889aac16ab2b7b5332e7e5cd84562fb78cacb6d8dcbc7fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/requestidentifier.json": {
-      "etag": "\"2afc-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/requestidentifier.md",
       "hash": "a2a10accbee1145c4b2d9d1f3f1624431d3a6475a8587d732a7c0322f4c66e24"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responding-to-app-store-server-notifications.json": {
-      "etag": "\"2ca5-65902296c1e92-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responding-to-app-store-server-notifications.md",
       "hash": "de66cd1f500efd0d445e928cb1bfc71522a8cacff0e185198b71935aef66671e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv1.json": {
-      "etag": "\"45c4-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv1.md",
       "hash": "89cda85556c90418db4eb86ab88719a756ac66417fa2f070644ea813ba5db213"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2.json": {
-      "etag": "\"37b1-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2.md",
       "hash": "cc1f2937817be1fdbc165e8985e6c66808e1211684ad53dbf4e001701d507c54"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2decodedpayload.json": {
-      "etag": "\"6cf0-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2decodedpayload.md",
       "hash": "b829f8d5a3ae87175e0e5bb4f2d6a02260db54ed92b8eb468db2e6f9c16c4431"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationdate.json": {
-      "etag": "\"15fb-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationdate.md",
       "hash": "c121b31f1a6a5a623b6ec39e737d534d9aaa9dff3c1e4a2f314e20024c1067b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationpercentage.json": {
-      "etag": "\"2257-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationpercentage.md",
       "hash": "529e0c9d63905d59896bf7c5be1b612d03f111091f8972a3e400e4b7ff03e68b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationreason.json": {
-      "etag": "\"19bf-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationreason.md",
       "hash": "29eb90b919129936de7525ea95eef4089100dcc3dd91fbc04e9bcc0e4efd887b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationtype.json": {
-      "etag": "\"1efd-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationtype.md",
       "hash": "fad16b03d8e59ad0f07d94b1ec600d1d452cf803d1863dbc05f219c4a2031f5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/signeddate.json": {
-      "etag": "\"1ed3-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/signeddate.md",
       "hash": "929ec47f2d76de88487cd4dee605944618abbd220fd2c2597c1957b23fff7601"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/signedpayload.json": {
-      "etag": "\"1c2a-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/signedpayload.md",
       "hash": "d4727f6673f50bf90f78ef356e7e342802e8d7a46bfe1f1a5044830bf9361b09"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/status.json": {
-      "etag": "\"2273-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/status.md",
       "hash": "34eafe5314391154edb44df83f2d2967663fd14eece877792bffba81516c37b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefront.json": {
-      "etag": "\"1714-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefront.md",
       "hash": "05632293fee9b14c7cf6ed1aca627bd8c69ab66f533faea87e3fa66843c864f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefrontcountrycode.json": {
-      "etag": "\"2578-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontcountrycode.md",
       "hash": "786ad46527168e1576551312ef93c86f5cbfa076544ddb676bef7c203137ef53"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefrontcountrycodes.json": {
-      "etag": "\"2f16-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontcountrycodes.md",
       "hash": "0e97f9dfe19c5d646c1fbd607d9e0abb3d89dd5ab009baef970a05c6b6827748"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefrontid.json": {
-      "etag": "\"165b-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontid.md",
       "hash": "834037b8b90a37bdcc156723fdc35cda0047afa302a36e815667f22d5d57cf6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/subscriptiongroupidentifier.json": {
-      "etag": "\"18db-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/subscriptiongroupidentifier.md",
       "hash": "ad44e0e60d3a8ea4892bb0392f180cb4abfccbc6b62aeaaf76e44141ccd867a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/subtype.json": {
-      "etag": "\"5d26-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/subtype.md",
       "hash": "72d507186746c970b747285c0475be4bac093a6ca454a27ad3de99b6517542f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/succeededcount.json": {
-      "etag": "\"23fb-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/succeededcount.md",
       "hash": "1a9cd02863265271a529ba118b6dda2784b3c0d5532e4874572293587ebd61d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/summary.json": {
-      "etag": "\"5354-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/summary.md",
       "hash": "d2b0766c85546da51ce0cdd68eb250e6ae71616fb95162e2144d3d5b9025b0fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/tokencreationdate.json": {
-      "etag": "\"1d75-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/tokencreationdate.md",
       "hash": "76762a231108f616296b18bc963716481aea1306ac538e82f10fab2961c9a6aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/tokenexpirationdate.json": {
-      "etag": "\"1935-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/tokenexpirationdate.md",
       "hash": "c33f38cdc1d23853cb23414d66a1025513d83f2b1e9449b1bbf26d4dd22766b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/tokentype.json": {
-      "etag": "\"2436-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/tokentype.md",
       "hash": "500a4ecf3fb7413d3cc94190ad573b2b166c6e0afafe0c889ae735463e5dfeba"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/totalbillingperiods.json": {
-      "etag": "\"2825-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/totalbillingperiods.md",
       "hash": "696183ee515628da63d147ce5613de1ccaaceffdad17425be8e89951ff8533c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transaction-data-types.json": {
-      "etag": "\"c796-65daaf2ccccc9-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transaction-data-types.md",
       "hash": "112e1d044a67eb84b20c021416f81de5994c254a3785450df5564008526e9906"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transactioncommitmentinfo.json": {
-      "etag": "\"3227-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transactioncommitmentinfo.md",
       "hash": "d2e251b4a8dc618ee8f1bdc83bc2f2bae096bcd4ae4410023be074cf7861af68"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transactionid.json": {
-      "etag": "\"1a37-65daaf2cdf31f-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transactionid.md",
       "hash": "1b8b59344e785694bbc6c7b4bc002794f4620864d2b5b17a2f28908ec0d17110"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transactionreason.json": {
-      "etag": "\"1523-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/transactionreason.md",
       "hash": "ee6130212fd4ed28c1553054d5bb40f9675338b1bf324dd92d0f4a3187e7455e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/type.json": {
-      "etag": "\"1714-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/type.md",
       "hash": "9c3eb35ec282449e390e175ec37bfc5f66a403f7e49251c43aacd34f4b851640"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt.json": {
-      "etag": "\"2c1b-65d55a705df8e-df\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt.md",
       "hash": "a01a7317b43452c0476328839c867bdc82fc21c10f792b2766b2b91059b80ff7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary.json": {
-      "etag": "\"841b-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt/latest_receipt_info-data.dictionary.md",
       "hash": "148fd543ec8e4d434d1ee732b19c51043139f8ee1fc4b860bc8c0a9700e11f79"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt/pending_renewal_info-data.dictionary.json": {
-      "etag": "\"49fa-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt/pending_renewal_info-data.dictionary.md",
       "hash": "85134cf9159698f5d49cc6dedc85beeb636ceeee27652609149262bcbc94c912"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/version.json": {
-      "etag": "\"2084-65d55a7022f16-df\"",
       "file_path": "documentation/AppStoreServerNotifications/version.md",
       "hash": "a9d4e3cc26ce84f1d576dfac7019c1715b4002b1bead79bbdb1020676784ccf0"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/weborderlineitemid.json": {
-      "etag": "\"1784-65daaf2cb8084-df\"",
       "file_path": "documentation/AppStoreServerNotifications/weborderlineitemid.md",
       "hash": "1d8f8ba2ffe2b721ba6dbee29b4564e7389bd670956d88b0d58501ccb6b3408c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/x5c.json": {
-      "etag": "\"1210-65d55a704568d-df\"",
       "file_path": "documentation/AppStoreServerNotifications/x5c.md",
       "hash": "4481d3ed2183d19c825e1347c8e970cfdb7a43c75a1ef07232b7f80b3b023387"
     }
