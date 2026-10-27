@@ -88,22 +88,23 @@ async def test_a_new_render_version_renders_every_file_once(site: FakeUpstream,
                                                              monkeypatch: pytest.MonkeyPatch) -> None:
     """Stale behaves as --force; the version is stored only by a clean run (not a blocked one,
     nor one that keeps a configured dir), then the next run renders nothing."""
+    version = scrape_swift_docs.RENDER_VERSION
     assert await run() == 0
-    assert metadata()["render"] == {"version": scrape_swift_docs.RENDER_VERSION}
+    assert metadata()["render"] == {"version": version}
     basics = scrape_swift_docs.OUTPUT_DIR / "Guide" / "Basics.md"
     basics.write_text("# an older rendering\n")
-    monkeypatch.setattr(scrape_swift_docs, "RENDER_VERSION", 2)
+    monkeypatch.setattr(scrape_swift_docs, "RENDER_VERSION", version + 1)
     site.faults[site.raw_path("org/book", "Book/Reference/Types.md")] = 502
     assert await run() == 1
-    assert metadata()["render"] == {"version": 1} and "an older rendering" not in basics.read_text()
+    assert metadata()["render"] == {"version": version} and "an older rendering" not in basics.read_text()
     site.faults.clear()
     site.faults[site.api_path("org/site", "docs/interop")] = 404  # source_gone_pending: Interop kept
     assert await run() == 0
-    assert metadata()["render"] == {"version": 1}
+    assert metadata()["render"] == {"version": version}
     site.faults.clear()
     basics.write_text("# an older rendering\n")
     assert await run() == 0
-    assert metadata()["render"] == {"version": 2} and "an older rendering" not in basics.read_text()
+    assert metadata()["render"] == {"version": version + 1} and "an older rendering" not in basics.read_text()
     before = scrape_swift_docs.HASH_FILE.read_text()
     basics.write_text("# an older rendering\n")  # not rendered again: its source didn't change
     assert await run() == 0
@@ -122,9 +123,10 @@ async def test_files_the_storing_run_didnt_render_are_rendered_when_back(site: F
             ("org/book", "Book/Reference/Types.md"), ("org/site", "docs/interop/A.md")]
     for repo, path in gone:
         remove_upstream(site, repo, path)
-    monkeypatch.setattr(scrape_swift_docs, "RENDER_VERSION", 2)
+    version = scrape_swift_docs.RENDER_VERSION + 1
+    monkeypatch.setattr(scrape_swift_docs, "RENDER_VERSION", version)
     assert await run() == 0 and docs() == ALL  # 4 of 7 held
-    assert metadata()["render"] == {"version": 2} and len(metadata()["pending_orphans"]) == 4
+    assert metadata()["render"] == {"version": version} and len(metadata()["pending_orphans"]) == 4
     hashes = hash_file()["hashes"]
     assert {key for key, value in hashes.items() if value == ""} == {f"{repo}:{path}" for repo, path in gone}
     assert all(hashes[f"{repo}:{path}"] for repo, path in FILES if (repo, path) not in gone)
@@ -652,3 +654,59 @@ def test_a_superseded_source_is_imported_until_its_copy_exists(tmp_path: Path) -
     (copy / "APIGuidelines.md").write_text("# API Design Guidelines\n")
     assert scrape_swift_docs.active_sources([book, guidelines], tmp_path) == [book]
     assert any(s.superseded_by == "Swift-Org/APIGuidelines" for s in scrape_swift_docs.ALL_SOURCES)
+
+
+def test_html_comments_are_removed_outside_code() -> None:
+    """Every HTML comment goes (the Swift Book's test code, licence footer and editor
+    notes, on their own lines or at a line's end), with the lines it leaves blank; a
+    fence inside a comment is the comment's. In a code block or a code span a comment
+    is code, kept. A comment that started its line ended a paragraph: one between two
+    lines of text leaves a blank line, so they stay two paragraphs."""
+    text = ("# Basics\n\nIntro.\n\n<!--\n  - test: `basics`\n\n  ```swifttest\n  -> let x = 1\n  ```\n-->\n\n"
+            "Text, see `<!-- kept -->`. <!-- TODO: say more -->\n"
+            "Changed.\n<!-- TODO TR: Confirm -->\nNext paragraph.\n\n"
+            "```html\n<!-- a code comment -->\n<p>x</p>\n```\n\n"
+            "Done.\n\n<!--\nThis source file is part of the Swift.org open source project\n-->\n")
+    assert scrape_swift_docs.strip_html_comments(text) == (
+        "# Basics\n\nIntro.\n\n"
+        "Text, see `<!-- kept -->`.\n"
+        "Changed.\n\nNext paragraph.\n\n"
+        "```html\n<!-- a code comment -->\n<p>x</p>\n```\n\n"
+        "Done.\n")
+    # A comment that starts inside a line runs on in its paragraph; one in an unclosed
+    # code block is code
+    assert scrape_swift_docs.strip_html_comments("A <!-- note\nmore -->\nB.\n") == "A\nB.\n"
+    assert scrape_swift_docs.strip_html_comments("~~~\n<!-- x -->\n") == "~~~\n<!-- x -->\n"
+    # Nothing to remove: the text as it is
+    plain = "# T\n\n\n\nText with -->, <!- and `code`.\n"
+    assert scrape_swift_docs.strip_html_comments(plain) == plain
+
+
+def test_html_comments_follow_commonmark() -> None:
+    """A "<!--" inside a line whose "-->" doesn't come before its paragraph ends is text;
+    one that starts its line (an HTML block) runs to its "-->" or the end. An indented code
+    block (4 columns after a blank line) and a fenced one in a quote are code."""
+    strip = scrape_swift_docs.strip_html_comments
+    text = "Write <!-- to start a comment.\n\n## Next\n\nBody <!-- and --> more.\n"
+    assert strip(text) == "Write <!-- to start a comment.\n\n## Next\n\nBody  more.\n"
+    assert strip("Text.\n\n<!-- never closed\n\nMore.\n") == "Text.\n"
+    indented = "Text:\n\n    <!-- a code comment -->\n\n    <p>x</p>\n\nAfter. <!-- gone -->\n"
+    assert strip(indented) == "Text:\n\n    <!-- a code comment -->\n\n    <p>x</p>\n\nAfter.\n"
+    quoted = "> ```html\n> <!-- kept -->\n> ```\n> Quoted. <!-- gone -->\n"
+    assert strip(quoted) == "> ```html\n> <!-- kept -->\n> ```\n> Quoted.\n"
+    # A paragraph's continuation line indented 4 columns is text, not code
+    assert strip("Text\n    more <!-- gone -->\n") == "Text\n    more\n"
+
+
+async def test_a_files_html_comments_are_removed(site: FakeUpstream) -> None:
+    """A DocC file and a Jekyll page lose their comments; their code keeps its own."""
+    site.github_file("org/book", "Book/Guide/Basics.md",
+                     "# Basics\n\n<!-- test: `x` -->\nAbout it.\n\n<!--\n  ```swifttest\n  -> 1\n  ```\n-->\n\n"
+                     "```swift\nlet a = 1 // <!-- not a comment -->\n```\n")
+    site.github_file("org/site", "docs/interop/A.md",
+                     "---\ntitle: A\n---\n\n<!-- -->\nInterop.\n\n<!-- Licensed under Apache 2.0 -->\n")
+    assert await run() == 0
+    out = scrape_swift_docs.OUTPUT_DIR
+    basics = (out / "Guide/Basics.md").read_text()
+    assert basics.endswith("# Basics\n\nAbout it.\n\n```swift\nlet a = 1 // <!-- not a comment -->\n```")
+    assert (out / "Interop/A.md").read_text().endswith("# A\n\nInterop.")

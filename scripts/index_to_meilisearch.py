@@ -77,7 +77,9 @@ TASK_TIMEOUT_MS = 10 * 60 * 1000
 # 4: a page without a "# " title takes its front matter's title, else its first heading,
 #    else its file name, never an empty title (metadata_extractor extract_title); an
 #    overview is never cut inside a link (cut_overview)
-PROCESSOR_VERSION = 4
+# 5: an overview after the title skips any leading quote, not only Apple's deprecation
+#    summary: the HIG's "> **Updated …:**" banner was 108 pages' summary
+PROCESSOR_VERSION = 5
 
 # The hash file is a flat map of file path -> content hash plus this one key, which no
 # .md path can be: the processor version and the createdAt of the live index the hashes

@@ -381,9 +381,34 @@ A Boolean value that indicates a response is being generated.
         abstract = ("# old\n\n**Framework**: Kit  \n**Kind**: func  \n**Role**: Function\n\nDoes the old thing.\n\n"
                     "**Availability**:\n- macOS 10.0+ - Deprecated in 13.0\n\n> **Deprecated**: Use new().\n")
         self.assertEqual(self.extractor.extract_overview(abstract), "Does the old thing.")
-        # Any other quote is the page's first paragraph, as before
+
+    def test_extract_overview_skips_any_leading_quote(self) -> None:
+        """Any quote before the page's first paragraph is a banner, not its summary: the
+        HIG's "Updated" note (108 pages' summary until PROCESSOR_VERSION 5), a GitHub
+        admonition, a guide's "Part of" note. A page with no paragraph after it takes the
+        first banner's text, without its markup (a deprecation summary is never one); a
+        quote after the first paragraph is text."""
+        hig = ("---\nurl: https://developer.apple.com/design/human-interface-guidelines/buttons\n---\n\n"
+               "# Buttons\n\n**Type:** article\n\n**Platforms:** ios, macos\n\n"
+               "> **Updated 2025-12-16:** Updated guidance for Liquid Glass.\n\n"
+               "A button initiates an instantaneous action.\n\n## Best practices\n")
+        self.assertEqual(self.extractor.extract_overview(hig), "A button initiates an instantaneous action.")
+        admonition = ("---\nsource: container\n---\n\n# How-to\n\n> [!IMPORTANT]\n"
+                      "> This file contains documentation for the CURRENT BRANCH.\n\n"
+                      "How to use the features of `container`.\n")
+        self.assertEqual(self.extractor.extract_overview(admonition), "How to use the features of `container`.")
         note = "# Guide\n\n**Framework**: Kit\n\n> **Note**: Read this first.\n"
-        self.assertEqual(self.extractor.extract_overview(note), "> **Note**: Read this first.")
+        self.assertEqual(self.extractor.extract_overview(note), "Read this first.")
+        banner_only = ("# Buttons\n\n> **Updated 2025-12-16:** Updated guidance for Liquid Glass.\n\n"
+                       "## Best practices\n\nUse a button.\n")
+        self.assertEqual(self.extractor.extract_overview(banner_only), "Updated guidance for Liquid Glass.")
+        important = "# How-to\n\n> [!IMPORTANT]\n> Read the release notes.\n>\n> More.\n\n> Second quote.\n"
+        self.assertEqual(self.extractor.extract_overview(important), "Read the release notes.")
+        deprecated_then_note = ("# old\n\n> **Deprecated**: Use new().\n\n> **Note:** Kept for old apps.\n\n"
+                                "## Declaration\n")
+        self.assertEqual(self.extractor.extract_overview(deprecated_then_note), "Kept for old apps.")
+        later = "# Guide\n\nThe guide.\n\n> **Note**: Read this first.\n"
+        self.assertEqual(self.extractor.extract_overview(later), "The guide.")
 
     def test_extract_overview_section_skips_rules_and_labels(self) -> None:
         """An Overview section's rule, lone "**Label**:" line or footer is no overview."""

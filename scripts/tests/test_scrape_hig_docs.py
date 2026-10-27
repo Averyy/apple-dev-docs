@@ -595,6 +595,18 @@ def test_a_reference_reads_as_the_prose_words_it() -> None:
         "and the kit.")
 
 
+
+def test_emphasis_keeps_its_markers_against_its_text() -> None:
+    """An emphasis or strong run's edge whitespace goes outside its markers, which
+    CommonMark reads as text with a space on their inner side ("**Note: **Text"); a run
+    without a letter or digit gets none."""
+    def run(kind: str, text: str) -> Dict[str, Any]:
+        return {"type": kind, "inlineContent": [{"type": "text", "text": text}]}
+    inline = [run("strong", "Note: "), {"type": "text", "text": "Use"}, run("emphasis", " this "),
+              {"type": "text", "text": "term"}, run("inlineHead", ":"), {"type": "text", "text": " a "},
+              run("newTerm", "toggle"), {"type": "text", "text": "."}]
+    assert HIGDocsScraper()._extract_text_from_inline_content(inline, {}) == "**Note:** Use *this* term: a *toggle*."
+
 def test_links_into_apple_docs_use_the_apple_scrapers_path_rule() -> None:
     """A link to an Apple documentation page is its file under the Apple scraper's
     path rule, relative to the HIG file (quoted, its fragment kept), when its framework

@@ -592,13 +592,16 @@ class MetadataExtractor:
 
         # Try to get first non-empty paragraph after title, past the header's
         # "**Key**: value" lines (and the list an empty one heads, e.g. **Availability**:)
-        # and a deprecation summary ("> **Deprecated**: …" and its "> " lines)
+        # and any quote before the first paragraph: a banner, never the page's summary
+        # (Apple's "> **Deprecated**: …", the HIG's "> **Updated …:**", a "> [!IMPORTANT]");
+        # a page with no paragraph after it takes the first banner's text (banner_text)
         lines = content.split('\n')
         found_title = False
         overview_lines: List[str] = []
         skip_empty = True
         in_key_list = False
-        in_deprecation = False
+        banner: List[str] = []  # the first quote skipped, unless a deprecation summary
+        quote: Optional[List[str]] = None  # the lines of the quote being skipped
         
         for i, line in enumerate(lines):
             # Found title
@@ -612,15 +615,16 @@ class MetadataExtractor:
                 
                 # Skip initial empty lines
                 if skip_empty and not line_stripped:
+                    quote = None
                     continue
                 if skip_empty:
-                    if line_stripped.startswith('> **Deprecated**:'):
-                        in_deprecation = True
+                    if line_stripped.startswith('>'):
                         in_key_list = False
+                        if quote is None:
+                            quote = [] if banner or line_stripped.startswith('> **Deprecated**:') else banner
+                        quote.append(line_stripped)
                         continue
-                    if in_deprecation and line_stripped.startswith('>'):
-                        continue
-                    in_deprecation = False
+                    quote = None
                     key_line = self._header_line_pattern.match(line_stripped)
                     if key_line:
                         in_key_list = not key_line.group('value')
@@ -644,8 +648,28 @@ class MetadataExtractor:
         overview = ' '.join(overview_lines)
         if self._word_pattern.search(overview):
             return self.cut_overview(overview)
+        overview = self.banner_text(banner)
+        if self._word_pattern.search(overview):
+            return self.cut_overview(overview)
         
         return ""
+
+    @staticmethod
+    def banner_text(quote: List[str]) -> str:
+        """A banner quote's first paragraph as a summary, without its markup: the "> "
+        markers, an admonition's "[!IMPORTANT]" line and a leading bold label
+        ("**Updated 2025-12-16:**", "**Note**:")."""
+        paragraph: List[str] = []
+        for line in quote:
+            text = re.sub(r'^(?:>\s?)+', '', line).strip()
+            if not text:
+                if paragraph:
+                    break
+                continue
+            if not paragraph and re.fullmatch(r'\[![A-Za-z]+\]', text):
+                continue
+            paragraph.append(text)
+        return re.sub(r'^\*\*[^*]*?(?::\*\*|\*\*:)\s*', '', ' '.join(paragraph))
 
     def cut_overview(self, overview: str) -> str:
         """An overview cut to OVERVIEW_MAX_CHARS, before a link the cut would fall in: half a

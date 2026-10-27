@@ -11,6 +11,11 @@ catalogs). The rules are DocC's, the same for every catalog:
 - an image named by its bare asset name (![alt](name)) is the catalog's asset;
 - @Metadata and @Comment blocks hold no page text.
 
+Also two markdown rules of the scrapers that write their own markdown: HTML
+comments hold no page text (strip_html_comments: the Swift and MLX
+scrapers' GitHub files, in a catalog or not), and emphasis keeps its
+markers against its text (emphasis: the MLX scraper's HTML, the HIG's).
+
 Dependency-free: each scraper says where a catalog's articles are on disk
 (catalog_articles) and where its assets are on GitHub (DocCPage.assets_url).
 """
@@ -29,6 +34,11 @@ ASSET_IMAGE_PATTERN = re.compile(r'!\[([^\]]*)\]\(([^)\s/:.#?]+)\)')
 METADATA_PATTERN = re.compile(r'@Metadata\s*\{[^}]*\}', re.DOTALL)
 COMMENT_PATTERN = re.compile(r'@Comment\s*\{[^}]*\}', re.DOTALL)
 HEADING_PATTERN = re.compile(r'(#{1,6})\s+(.+?)(?:\s+#+)?\s*$')
+# A fenced code block's fence line: the fence (``` or ~~~, 3 or more) and the rest of the line
+FENCE_PATTERN = re.compile(r'[ \t]*(`{3,}|~{3,})(.*)')
+CODE_SPAN_PATTERN = re.compile(r'(`+).+?\1')
+# A line's blockquote markers ("> ", "> > ")
+QUOTE_MARKERS_PATTERN = re.compile(r'^(?:[ ]{0,3}>[ ]?)+')
 
 Headings = List[Tuple[int, str]]
 
@@ -142,3 +152,127 @@ def convert_docc(content: str, docc: Optional[DocCPage]) -> str:
         content = ASSET_IMAGE_PATTERN.sub(
             lambda match: f"![{match.group(1)}]({docc.assets_url}/{match.group(2)}@2x.png)", content)
     return COMMENT_PATTERN.sub('', content)
+
+
+def strip_html_comments(text: str) -> str:
+    """text without its HTML comments (<!-- ... -->, on one line or across
+    several): a source's notes to its editors, its test code, its licence
+    footer, which neither DocC nor GitHub shows.
+
+    The comments are CommonMark's: one that starts its line (an HTML block)
+    runs to its "-->" or the end of the text; one inside a line is a comment
+    only when its "-->" comes before its paragraph ends (a blank line), and
+    text otherwise ("Write <!-- to start one" stays). Code is kept as it is:
+    a fenced code block (in a quote too), an indented one (4 columns after a
+    blank line) and a code span; a fence inside a comment is the comment's.
+    A line the removal leaves blank goes; a comment that starts its line ends
+    a markdown paragraph, so where one stood between two lines of text a
+    blank line keeps them apart, and where it stood between two blank lines
+    one of them goes."""
+    source = text.split('\n')
+    lines: List[str] = []
+    fence: Optional[str] = None  # the open code block's fence
+    indented = False  # in an indented code block
+    in_comment = False
+    block = False  # the open comment started its line
+    removed = False  # a comment that started its line was removed since the last line kept
+
+    def keep(line: str) -> None:
+        nonlocal removed
+        if removed and lines:
+            if line.strip() and lines[-1].strip():
+                lines.append('')
+            elif not line.strip() and not lines[-1].strip():
+                return
+        removed = False
+        lines.append(line)
+
+    def closes_in_paragraph(index: int) -> bool:
+        """Whether a "-->" comes on the lines from index before the paragraph ends."""
+        for line in source[index:]:
+            if not line.strip():
+                return False
+            if '-->' in line:
+                return True
+        return False
+
+    for index, line in enumerate(source):
+        if in_comment:
+            end = line.find('-->')
+            removed = removed or block
+            if end < 0:
+                continue
+            in_comment = False
+            line = line[end + 3:]
+            if not line.strip():
+                continue
+        else:
+            # A fence line, in a quote or not
+            fence_line = FENCE_PATTERN.fullmatch(QUOTE_MARKERS_PATTERN.sub('', line, count=1))
+            if fence is not None:
+                # Closed by a fence of its own character, at least as long, alone on its line
+                if fence_line is not None and fence_line.group(1).startswith(fence) and not fence_line.group(2).strip():
+                    fence = None
+                keep(line)
+                continue
+            # Opened by a fence (a ``` fence's info string holds no backtick)
+            if fence_line is not None and not (fence_line.group(1)[0] == '`' and '`' in fence_line.group(2)):
+                fence = fence_line.group(1)
+                keep(line)
+                continue
+            # Indented code: indented 4 columns, after a blank line or in the block
+            if line.strip():
+                expanded = line.expandtabs(4)
+                indented = len(expanded) - len(expanded.lstrip()) >= 4 and (
+                    indented or not lines or not lines[-1].strip())
+            if indented:
+                keep(line)
+                continue
+        if '<!--' not in line:
+            keep(line)
+            continue
+        # Prose: its comments outside code spans removed; the last may run on past the line
+        spans = {span.start(): span.end() for span in CODE_SPAN_PATTERN.finditer(line)}
+        pieces: List[str] = []
+        position = 0
+        while position < len(line):
+            if position in spans:
+                pieces.append(line[position:spans[position]])
+                position = spans[position]
+            elif line.startswith('<!--', position):
+                starts_line = not ''.join(pieces).strip()
+                end = line.find('-->', position + 4)
+                if end >= 0:
+                    block = starts_line
+                    position = end + 3
+                elif starts_line or closes_in_paragraph(index + 1):
+                    block = starts_line
+                    in_comment = True
+                    break
+                else:
+                    pieces.append('<!--')
+                    position += 4
+            else:
+                pieces.append(line[position])
+                position += 1
+        prose = ''.join(pieces)
+        if prose == line:
+            keep(line)
+        elif prose.strip():
+            keep(prose.rstrip())
+        else:
+            removed = removed or block
+    return '\n'.join(lines)
+
+
+def emphasis(text: str, marker: str) -> str:
+    """text emphasized with marker ('**' or '*'), its leading and trailing
+    whitespace outside the markers: CommonMark reads markers with a space on
+    their inner side as text ('**(i) Privacy Policies: **All' shows its
+    asterisks). Text without a letter or digit (Sphinx emphasizes each
+    punctuation token of a parameter's type, '(' and ', ') is no emphasis:
+    it stays as it is, where markers would run into their neighbours'."""
+    core = text.strip()
+    if not re.search(r'\w', core):
+        return text
+    return f"{text[:len(text) - len(text.lstrip())]}{marker}{core}{marker}{text[len(text.rstrip()):]}"

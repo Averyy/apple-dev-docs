@@ -21,8 +21,14 @@ GitHub Markdown:
 Web Pages (configured one by one, no crawl):
 - App-Store - App Review Guidelines, App privacy details, User privacy and data use
 
-A GitHub file in a DocC catalog (a *.docc dir) has its DocC markup converted
-(utilities/docc.py): its <doc:> links point to the articles of its own catalog.
+A GitHub file's HTML comments (editor notes, licence headers) are removed
+outside code, and one in a DocC catalog (a *.docc dir) has its DocC markup
+converted (utilities/docc.py): its <doc:> links point to the articles of its
+own catalog.
+
+A Sphinx signature (an API's <dt class="sig">) is a code block of its text
+(```python, MLX's C++ API ```cpp), and a definition that holds blocks (a
+parameter list) keeps them.
 
 The Sphinx pages and web pages are fetched with wafer-py, one at a time so
 its per-host rate limit spaces them, with its retries; so this script needs
@@ -71,11 +77,11 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 from urllib.parse import urljoin, urlparse, urlunparse
 
 import aiohttp
-from bs4 import BeautifulSoup, PageElement, Tag
+from bs4 import BeautifulSoup, Comment, PageElement, Tag
 from rich.console import Console
 from wafer import AsyncSession, WaferError
 
-from utilities.docc import DocCPage, catalog_articles, convert_docc, docc_catalog
+from utilities.docc import DocCPage, catalog_articles, convert_docc, docc_catalog, emphasis, strip_html_comments
 from utilities.hash_utils import (
     HashFileError,
     compute_hash,
@@ -138,6 +144,9 @@ XCODE_DIR_SUFFIXES = ('.xcassets', '.xcworkspace', '.xcodeproj', '.playground')
 # block by block (list_item_markdown)
 HEADING_TAGS = ('h1', 'h2', 'h3', 'h4', 'h5', 'h6')
 BLOCK_TAGS = ('p', 'ul', 'ol', 'pre', 'table', 'blockquote', 'dl', 'div', 'section', 'figure', *HEADING_TAGS)
+# A Sphinx signature's code block language, by its domain (the signature's class:
+# MLX's C++ API is the cpp domain, the Python APIs the py domain)
+SIGNATURE_LANGUAGES = {'py': 'python', 'cpp': 'cpp', 'c': 'c', 'js': 'javascript'}
 
 # Hash-file metadata: each configured source's output dir ({name: output_dir}),
 # plus every output dir no longer configured until its files are deleted: a
@@ -150,7 +159,13 @@ POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, SOURCES_KEY, RENDER_KEY)
 # The converter's output version: bump it when a change to the conversion
 # changes the files of pages that didn't change, so the next clean run
 # renders every page again (source_policy's metadata.render)
-RENDER_VERSION = 3
+# 4: GitHub files without their HTML comments; emphasis with its edge
+#    whitespace outside the markers and its own asterisks escaped, none on
+#    punctuation; Sphinx signatures
+#    as code blocks (```python, ```cpp), definitions that hold blocks
+#    (parameter lists) kept block by block, a description shared by several
+#    signatures written once; table captions
+RENDER_VERSION = 4
 
 
 @dataclass
@@ -745,6 +760,8 @@ def convert_code_block(element: Tag) -> str:
 
 def convert_element_to_markdown(element: PageElement, url: str) -> str:
     """Recursively convert HTML element to markdown (url: the page's URL)."""
+    if isinstance(element, Comment):  # An HTML comment is no page text
+        return ''
     if not isinstance(element, Tag):  # Text node
         text = str(element)
         # Normalize whitespace but preserve some structure
@@ -795,12 +812,25 @@ def convert_element_to_markdown(element: PageElement, url: str) -> str:
         result.append('\n')
 
     elif tag == 'dl':
-        for dt in element.find_all('dt', recursive=False):
-            term = process_inline_elements(dt, url)
-            result.append(f"\n**{term.strip()}**\n")
-            dd = dt.find_next_sibling('dd')
-            if isinstance(dd, Tag):
-                desc = process_inline_elements(dd, url, indent='  ')
+        # Each dd once, under the dt's before it (an overloaded API's signatures share one)
+        language: Optional[str] = None
+        for item in element.find_all(['dt', 'dd'], recursive=False):
+            if item.name == 'dt':
+                language = signature_language(item)
+                if language is not None:
+                    result.append(f"\n```{language}\n{signature_text(item)}\n```\n")
+                else:
+                    # Bold, unless it holds its own bold (a list's "**Train**: ..." item)
+                    term = process_inline_elements(item, url).strip()
+                    result.append(f"\n{term if '**' in term else emphasis(term, '**')}\n")
+                continue
+            if holds_blocks(item):
+                # Its blocks under the term (a field list's parameters keep their bullets)
+                result.append(f"\n{list_item_markdown(item, url, indent='')}\n")
+            elif language is not None:
+                result.append(f"\n{process_inline_elements(item, url).strip()}\n")
+            else:
+                desc = process_inline_elements(item, url, indent='  ')
                 result.append(f": {desc.strip()}\n")
 
     elif tag == 'blockquote':
@@ -813,12 +843,10 @@ def convert_element_to_markdown(element: PageElement, url: str) -> str:
         result.append(convert_table_to_markdown(element, url))
 
     elif tag in ['strong', 'b']:
-        text = element.get_text()
-        result.append(f"**{text}**")
+        result.append(emphasized(element, '**'))
 
     elif tag in ['em', 'i']:
-        text = element.get_text()
-        result.append(f"*{text}*")
+        result.append(emphasized(element, '*'))
 
     elif tag == 'br':
         result.append('\n')
@@ -839,19 +867,49 @@ def convert_element_to_markdown(element: PageElement, url: str) -> str:
     return ''.join(result)
 
 
+def emphasized(element: Tag, marker: str) -> str:
+    """A strong or em element's text emphasized with marker (utilities/docc.py
+    emphasis), its own asterisks escaped: Sphinx's "<strong>*args</strong>"
+    read "***args**"."""
+    return emphasis(element.get_text().replace('*', '\\*'), marker)
+
+
+def signature_language(dt: Tag) -> Optional[str]:
+    """The code block language of a definition term that is a Sphinx API
+    signature (its name, parameters and return type: class "sig", in a
+    domain SIGNATURE_LANGUAGES lists); None for any other term (e.g. an
+    environment variable's, in Sphinx's std domain), which stays a bold term."""
+    classes = attribute(dt, 'class').split()
+    if 'sig' not in classes:
+        return None
+    return next((SIGNATURE_LANGUAGES[name] for name in classes if name in SIGNATURE_LANGUAGES), None)
+
+
+def signature_text(dt: Tag) -> str:
+    """A Sphinx signature's text as code, each of its lines (a C++ template
+    line ends at a <br>) on one line: Sphinx marks each parameter, the / and
+    * separators included, as emphasis, which as markdown ran into '*/*' and
+    '***'."""
+    for br in dt.find_all('br'):
+        br.replace_with('\n')
+    lines = [' '.join(line.split()) for line in dt.get_text().split('\n')]
+    text = '\n'.join(line for line in lines if line)
+    return re.sub(r'\s+\)', ')', re.sub(r'\(\s+', '(', text))
+
+
 def holds_blocks(item: Tag) -> bool:
-    """Whether a list item is converted block by block (list_item_markdown):
-    it holds a nested list, a table, a quote or a definition list (inline
-    conversion has no case for them), more than one paragraph, or a
-    paragraph and inline content beside it (e.g. a rule's title before its
-    text)."""
+    """Whether a list item (or a definition's description) is converted block
+    by block (list_item_markdown): it holds a nested list, a table, a quote
+    or a definition list (inline conversion has no case for them), more than
+    one paragraph, or a paragraph and inline content beside it (e.g. a
+    rule's title before its text)."""
     names = [child.name for child in item.children if isinstance(child, Tag)]
     if any(name in names for name in ('ul', 'ol', 'table', 'blockquote', 'dl')) or names.count('p') > 1:
         return True
     return 'p' in names and any(
         child.get_text(strip=True) if isinstance(child, Tag) else str(child).strip()
         for child in item.children
-        if not (isinstance(child, Tag) and child.name in BLOCK_TAGS)
+        if not (isinstance(child, Tag) and child.name in BLOCK_TAGS) and not isinstance(child, Comment)
     )
 
 
@@ -899,14 +957,16 @@ def inline_markdown(nodes: Iterable[PageElement], url: str, indent: str = '') ->
     """Inline content (process_inline_elements), from a sequence of nodes."""
     result = []
     for child in nodes:
+        if isinstance(child, Comment):  # An HTML comment is no page text
+            continue
         if not isinstance(child, Tag):  # Text node
             result.append(str(child))
         elif child.name in ['code']:
             result.append(f"`{child.get_text()}`")
         elif child.name in ['strong', 'b']:
-            result.append(f"**{child.get_text()}**")
+            result.append(emphasized(child, '**'))
         elif child.name in ['em', 'i']:
-            result.append(f"*{child.get_text()}*")
+            result.append(emphasized(child, '*'))
         elif child.name == 'a':
             image = only_image(child)
             href = attribute(child, 'href')
@@ -955,6 +1015,11 @@ def convert_table_to_markdown(table: Tag, url: str) -> str:
             else:
                 rows.append('| ' + ' | '.join(cells) + ' |')
 
+    # Its caption above it (the target of a link to the table: "Quantization modes")
+    caption = table.find('caption')
+    title = table_cell_text(caption, url) if isinstance(caption, Tag) else ''
+    if title:
+        rows = [emphasis(title, '**'), '', *rows]
     return '\n' + '\n'.join(rows) + '\n' if rows else ''
 
 
@@ -1124,7 +1189,9 @@ async def scrape_github_source(
 
         # Convert and save; an error here is ours: the file is kept, never deleted
         try:
-            # A DocC catalog's page: its DocC markup converted, within its own catalog
+            # Its HTML comments removed (outside code); a DocC catalog's page: its
+            # DocC markup converted, within its own catalog
+            content = strip_html_comments(content)
             catalog = docc_catalog(file_path)
             if catalog is not None:
                 content = convert_docc(content, docc_page(source, catalog, output_path))

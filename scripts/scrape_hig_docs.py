@@ -53,6 +53,7 @@ from scraper.utils.assets import hosting_root, variant_url
 from scraper.utils.links import doc_link
 from scraper.utils.markdown_converter import join_blocks, labeled, quote_blocks
 from scraper.utils.naming import dirmap
+from utilities.docc import emphasis
 from utilities.hash_utils import HashFileError, compute_hash, read_hash_file, save_hashes, write_text_atomic
 from utilities.source_policy import (
     FAILURE_COUNTS_KEY,
@@ -497,10 +498,10 @@ class HIGDocsScraper:
                     parts.append(f"`{item.get('code', '')}`")
                 elif item_type == 'emphasis':
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
-                    parts.append(f"*{inner}*")
+                    parts.append(emphasis(inner, '*'))
                 elif item_type == 'strong':
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
-                    parts.append(f"**{inner}**")
+                    parts.append(emphasis(inner, '**'))
                 elif item_type == 'reference':
                     # Resolve reference: the prose's own wording (its overriding
                     # title) as the link text, else the target's title
@@ -540,10 +541,10 @@ class HIGDocsScraper:
                         parts.append(figure)
                 elif item_type == 'inlineHead':
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
-                    parts.append(f"**{inner}**")
+                    parts.append(emphasis(inner, '**'))
                 elif item_type == 'newTerm':
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
-                    parts.append(f"*{inner}*")
+                    parts.append(emphasis(inner, '*'))
                 elif item_type == 'superscript':
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
                     parts.append(f"<sup>{inner}</sup>")

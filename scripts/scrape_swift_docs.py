@@ -45,7 +45,15 @@ import yaml  # type: ignore[import-untyped]  # requirements.txt pins PyYAML with
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 
-from utilities.docc import DocCPage, catalog_articles, convert_docc, docc_catalog
+from utilities.docc import (
+    CODE_SPAN_PATTERN,
+    FENCE_PATTERN,
+    DocCPage,
+    catalog_articles,
+    convert_docc,
+    docc_catalog,
+    strip_html_comments,
+)
 from utilities.hash_utils import (
     HashFileError,
     compute_hash,
@@ -97,7 +105,9 @@ POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, RENDER_KEY)
 # The converter's output version: bump it when a change to the conversion
 # changes the files of sources that didn't change, so the next clean run
 # renders every file again (source_policy's metadata.render)
-RENDER_VERSION = 1
+# 2: every HTML comment outside code removed (the Swift Book's test code,
+#    licence footers and editor notes), not only <!-- test: ... -->
+RENDER_VERSION = 2
 
 
 @dataclass
@@ -258,12 +268,12 @@ def clean_docc_content(content: str, filename: str, docc: Optional[DocCPage] = N
     Clean DocC-specific syntax from markdown content.
 
     Transforms:
-    - HTML test comments (remove)
+    - HTML comments outside code (utilities/docc.py strip_html_comments: the
+      Swift Book's test code, licence footers and editor notes; removed)
     - DocC markup (utilities/docc.py convert_docc): <doc:> links, in a DocC
       catalog (docc) asset images, @Metadata and @Comment blocks
     """
-    # Remove HTML test comments like <!-- test: xxx -->
-    content = re.sub(r'<!--\s*test:[^>]*-->', '', content)
+    content = strip_html_comments(content)
 
     content = convert_docc(content, docc)
 
@@ -286,11 +296,8 @@ MARKUP_PATTERN = re.compile(r'<[A-Za-z/!]|\{:')
 KRAMDOWN_IAL_PATTERN = re.compile(r'([ \t]*)\{:([^}\n]*)\}[ \t]*')
 IAL_CLASS_PATTERN = re.compile(r'(?<!\S)\.([\w-]+)')
 LIST_ITEM_PATTERN = re.compile(r'[ \t]*([*+-]|\d+\.)[ \t]')
-# A fenced code block's fence line: the fence (``` or ~~~, 3 or more) and the rest of the line
-FENCE_PATTERN = re.compile(r'[ \t]*(`{3,}|~{3,})(.*)')
 # A root-relative link target: a markdown link's (](/...)) or an HTML href's (href="/...")
 ROOT_RELATIVE_LINK_PATTERN = re.compile(r'''(\]\(|\bhref=["'])(/[^\s)"']*)''')
-CODE_SPAN_PATTERN = re.compile(r'(`+).+?\1')
 
 
 def split_front_matter(content: str) -> Tuple[Optional[Dict[str, Any]], str]:
@@ -436,10 +443,10 @@ def map_outside_code(text: str, rewrite: Callable[[str], str]) -> str:
 
 def clean_jekyll_body(body: str) -> str:
     """A Jekyll page's body without its Liquid (render_liquid), kramdown
-    IALs, <style> blocks and the HTML comments left empty."""
+    IALs, <style> blocks and HTML comments (strip_html_comments)."""
     body = render_liquid(body)
     body = re.sub(r'<style\b[^>]*>.*?</style>', '', body, flags=re.DOTALL | re.IGNORECASE)
-    body = re.sub(r'<!--\s*-->', '', body)
+    body = strip_html_comments(body)
     body = strip_kramdown_ials(body)
     # Lines left holding only whitespace are blank lines
     body = re.sub(r'^[ \t]+$', '', body, flags=re.MULTILINE)
