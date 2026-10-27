@@ -60,6 +60,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, FrozenSet, List, Optional, Sequence, Set, Tuple
+from urllib.parse import unquote
 
 import httpx
 
@@ -314,7 +315,8 @@ def is_doc_file(path: Path) -> bool:
 
 
 def footer_url(path: Path) -> Optional[str]:
-    """The canonical URL in an Apple page's footer, or None if it has none."""
+    """The canonical URL in an Apple page's footer, its escapes decoded (the footer encodes
+    an unclosed "(", as the indexer's extract_source_url decodes it), or None if it has none."""
     try:
         with path.open("rb") as f:
             f.seek(max(0, path.stat().st_size - 2048))
@@ -323,7 +325,7 @@ def footer_url(path: Path) -> Optional[str]:
         raise EvalError(f"can't read {path}: {e}") from e
     lines = [line.strip() for line in text_lines(tail) if line.strip()]
     match = _FOOTER_RE.match(lines[-1]) if lines else None
-    return match.group(1) if match else None
+    return unquote(match.group(1)) if match else None
 
 
 def resolve_expectations(
@@ -480,7 +482,7 @@ def parse_expand_result(text: str, last_part: Optional[str] = None) -> Optional[
     end = split_expand_notes(last_part)[0] if last_part is not None else content
     footer = _FOOTER_RE.match(text_lines(end)[-1].strip()) if end else None
     if footer:
-        return footer.group(1)
+        return unquote(footer.group(1))
     url = MetadataExtractor().parse_yaml_frontmatter(content).get("url")
     if isinstance(url, str) and url:
         return url

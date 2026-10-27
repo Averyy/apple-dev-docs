@@ -317,6 +317,19 @@ def test_footer_url_reads_the_last_line(tmp_path: Path) -> None:
     assert ev.footer_url(page) is None
 
 
+# A URL Apple cut inside its argument list, and its footer's (markdown_url)
+CUT_URL = "https://developer.apple.com/documentation/metal/x/draw(_:patchstart:patch-4mdz8"
+CUT_FOOTER_URL = CUT_URL.replace("draw(", "draw%28")
+
+
+def test_footer_url_decodes_an_encoded_parenthesis(tmp_path: Path) -> None:
+    page = tmp_path / "draw.md"
+    for written in (CUT_FOOTER_URL, CUT_URL):  # an older rendering has it as it is
+        page.write_text(apple_page("draw", written))
+        assert ev.footer_url(page) == CUT_URL
+    assert ev.parse_expand_result(apple_page("draw", CUT_FOOTER_URL) + "\n") == CUT_URL
+
+
 @pytest.mark.parametrize("separator", LINE_SEPARATORS)
 def test_footer_url_splits_lines_only_at_newlines(tmp_path: Path, separator: str) -> None:
     page = tmp_path / "frame.md"

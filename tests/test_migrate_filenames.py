@@ -355,3 +355,12 @@ class TestRefusals:
         standard(repo)
         monkeypatch.setattr(Config, setting, Path("sandbox"))
         self.refused(capsys, "OUTPUT_DIR/CACHE_DIR must be the repo's", tmp_path)
+
+
+@pytest.mark.parametrize("written", ["init%28a:b-30cwy", "init(a:b-30cwy"])
+def test_footer_url_names_the_page_of_an_encoded_footer(tmp_path: Path, written: str) -> None:
+    """A footer whose URL the site cut has its "(" encoded (markdown_url; an older rendering
+    has it as it is): either names the page by its URL, as its hash keys record it."""
+    page = tmp_path / "init.md"
+    Repo.write(str(page), f"{DOC}/testkit/{written}")
+    assert migrate_filenames.footer_url(str(page)) == f"{DOC}/testkit/init(a:b-30cwy"

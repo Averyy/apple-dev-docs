@@ -546,6 +546,18 @@ struct MyView: View {
         self.assertEqual(metadata["url"],
                          "https://developer.apple.com/documentation/uikit/uisearchtab/init(viewcontrollerprovider:)")
 
+    def test_url_from_an_encoded_footer(self) -> None:
+        """A URL Apple cut inside its argument list: its footer encodes the unclosed "("
+        (markdown_url), and the page's URL, as scraped, is indexed; an older rendering
+        has it as it is."""
+        url = ("https://developer.apple.com/documentation/metal/mtlindirectrendercommand/"
+               "drawindexedpatches(_:patchstart:patchcount-4mdz8")
+        for written in (url.replace("patches(", "patches%28"), url):
+            content = f"# drawIndexedPatches\n\n**Kind**: method\n\n---\n\n*[View on Apple Developer]({written})*\n"
+            self.assertEqual(self.extractor.extract_source_url(content), url)
+            path = self.create_test_file(content, "documentation/Metal/mtlindirectrendercommand/drawindexedpatches.md")
+            self.assertEqual(self.extractor.extract_metadata(content, path)["url"], url)
+
     def test_url_without_footer(self) -> None:
         """Front matter's url first; a page with neither falls back to the path."""
         front = "---\nurl: https://github.com/swiftlang/swift-book/blob/main/A.md\n---\n\n# A\n"

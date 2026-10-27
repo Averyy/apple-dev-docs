@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Dict, Final, List, Mapping, Optional, Any
 
 from scraper.site import APPLE, DocCSite
-from scraper.utils.links import doc_link, link_base
+from scraper.utils.links import doc_link, link_base, markdown_url
 from scraper.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -240,9 +240,10 @@ class AppleDocMarkdownConverter:
             sections.append("## See Also")
             sections.append(self._format_see_also(data['see_also'], page_url))
         
-        # Source URL
+        # Source URL: the page's URL as a link holds it (markdown_url: a URL
+        # the site cut inside its argument list gets its parentheses encoded)
         if data.get('source_url'):
-            sections.append(f"\n---\n\n*[View on {self.site.label}]({data['source_url']})*")
+            sections.append(f"\n---\n\n*[View on {self.site.label}]({markdown_url(data['source_url'])})*")
         
         return "\n\n".join(filter(None, sections))
     

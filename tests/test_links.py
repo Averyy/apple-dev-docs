@@ -8,7 +8,10 @@ the scraper's own path rule (naming.page_path), relative to the linking file.
   Topics/See Also/Relationships/Mentions links (its source_url) agree;
 - the known dirs: naming.dirmap over the hash files and the run's frameworks
   (scrape_all_frameworks.known_dirs), so a framework scraped for the first
-  time links, and is linked to, locally.
+  time links, and is linked to, locally;
+- links.markdown_url: a page's footer URL as a link holds it (an unclosed "("
+  of a URL the site cut is encoded, any other URL is as it is), and
+  unquote gives the page's URL back.
 """
 
 import json
@@ -28,7 +31,9 @@ import scrape_all_frameworks
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
 from scraper.sink import SinkRegistry
-from scraper.utils.links import doc_link, link_base
+from scraper.site import spi_package
+from scraper.utils.links import doc_link, link_base, markdown_url
+from scraper.utils.markdown_converter import AppleDocMarkdownConverter
 from scraper.utils.naming import page_path
 from tests.test_exit_codes import CI, scrape
 from tests.test_failure_policy import Runs, sandbox_runs
@@ -100,6 +105,55 @@ class TestDocLink:
     ])
     def test_anything_else_keeps_its_url(self, url: str) -> None:
         assert doc_link(url, self.base, DIRS) == url
+
+
+# A symbol's URL Apple cut inside its argument list (as its JSON names it)
+CUT = f"{DOC}/accelerate/bnns/fusedconvolutionnormalizationlayer/init(input:output:filter-30cwy"
+
+
+class TestMarkdownUrl:
+    @pytest.mark.parametrize("url", [
+        f"{DOC}/swiftui/view/frame(width:height:alignment:)",
+        f"{DOC}/swift/comparable/'...(_:_:)",
+        f"{DOC}/swift/array/init()",
+        f"{DOC}/testkit/guide#Setup",
+        "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/x/init(from:)",
+        "https://docs.swift.org/swiftpm/documentation/packagedescription",
+    ])
+    def test_a_url_whose_parentheses_pair_up_is_as_it_is(self, url: str) -> None:
+        assert markdown_url(url) == url
+
+    def test_unpaired_parentheses_are_encoded(self) -> None:
+        assert markdown_url(CUT) == CUT.replace("init(", "init%28")
+        assert markdown_url("https://h.test/a)b(c") == "https://h.test/a%29b%28c"
+        assert markdown_url("https://h.test/(a)(b") == "https://h.test/%28a%29%28b"
+        # Characters a link can't hold, as the MCP server's link_url encodes them
+        assert markdown_url("https://h.test/caf\u00e9 <x>") == "https://h.test/caf%C3%A9%20%3Cx%3E"
+
+    def test_an_encoded_url_is_not_encoded_again(self) -> None:
+        once = markdown_url(CUT)
+        assert markdown_url(once) == once
+        assert markdown_url(f"{DOC}/x/a%28b%29") == f"{DOC}/x/a%28b%29"
+        assert unquote(once) == CUT
+
+    @pytest.mark.parametrize("site,url,label", [
+        (None, CUT, "Apple Developer"),
+        (spi_package("ml-explore", "mlx-swift-lm"),
+         "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/smollm3configuration/"
+         "init(modeltype:hiddensize:noropelayerinterval:-614q5", "Swift Package Index"),
+    ])
+    def test_the_footer_of_a_cut_url_is_a_valid_link(self, tmp_path: Path, site: Any, url: str, label: str) -> None:
+        converter = (AppleDocMarkdownConverter(tmp_path / "Accelerate") if site is None
+                     else AppleDocMarkdownConverter(tmp_path / "SPI" / "mlx-swift-lm" / "MLXLLM", site=site))
+        md = converter.convert_page({"title": "init", "source_url": url})
+        assert md.endswith(f"\n---\n\n*[View on {label}]({url.replace('init(', 'init%28')})*")
+        # A namespaced site's front matter keeps the URL as scraped (a YAML string)
+        assert (f'url: "{url}"' in md) == (site is not None)
+
+    def test_the_footer_of_any_other_url_is_as_before(self, tmp_path: Path) -> None:
+        url = f"{DOC}/swiftui/view/frame(width:height:alignment:)"
+        md = AppleDocMarkdownConverter(tmp_path / "SwiftUI").convert_page({"title": "frame", "source_url": url})
+        assert md.endswith(f"\n---\n\n*[View on Apple Developer]({url})*")
 
 
 @pytest.fixture

@@ -14,11 +14,35 @@ package's design proposals), keeps its absolute URL.
 """
 
 import posixpath
-from typing import Mapping
+from typing import Final, Mapping
 from urllib.parse import quote
 
 from scraper.site import APPLE, DocCSite
 from scraper.utils.naming import page_path
+
+# The characters an absolute URL in a link holds as they are (markdown_url): RFC 3986's
+# reserved ones and "%", so its delimiters and escapes stay. The same as the MCP server's
+# (mcp-server/apple_docs_mcp.py link_url) and scripts/utilities/source_policy.py's
+URL_SAFE_CHARACTERS: Final = "!#$%&'()*+,/:;=?@[]~"
+
+
+def markdown_url(url: str) -> str:
+    """An absolute URL as a markdown link's destination holds it (a page's footer): every
+    character a URL can't hold as it is percent-encoded, and its parentheses too when they
+    don't pair up (Apple and the Swift Package Index cut a long symbol's URL inside its
+    argument list, and an unclosed "(" leaves no link; the %28 form is the same page).
+    Paired ones stay, as in Apple's URLs (init(_:)), so any other page's URL is as it is.
+    The MCP server's link_url does the same for a result's link. A reader gets the page's
+    URL back with urllib.parse.unquote: a DocC page's URL holds no "%" of its own."""
+    url = quote(url, safe=URL_SAFE_CHARACTERS)
+    depth = 0
+    for char in url:
+        depth += {"(": 1, ")": -1}.get(char, 0)
+        if depth < 0:
+            break
+    if depth:
+        url = url.replace("(", "%28").replace(")", "%29")
+    return url
 
 
 def link_base(dir_name: str, doc_url: str, site: DocCSite = APPLE) -> str:

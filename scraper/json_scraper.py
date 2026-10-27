@@ -468,8 +468,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     # rendered again on its next clean run. 2: pages list the Objective-C
     # links of their occ variant (1.5), and link the D6 module dirs locally.
     # 3: relative link references resolve against the page's own URL (33
-    # files' 64 links pointed at a wrong path)
-    RENDER_VERSION = 3
+    # files' 64 links pointed at a wrong path). 4: the footer's URL is a
+    # valid link (markdown_url: 20 pages whose URL the site cut inside its
+    # argument list had an unclosed "(")
+    RENDER_VERSION = 4
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
                  include_cross_refs: bool = False, sinks: Optional[SinkRegistry] = None,

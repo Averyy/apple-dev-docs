@@ -103,7 +103,8 @@ LINK_HOST_NAMES = {"developer.apple.com": "Apple Developer", "github.com": "GitH
 
 # The characters a result link's URL holds as they are (link_url): RFC 3986's reserved ones
 # and "%", so its delimiters and escapes stay, as the scrapers encode the URLs they build
-# (scripts/utilities/source_policy.py encode_url)
+# (scripts/utilities/source_policy.py encode_url) and a DocC page's footer
+# (scraper/utils/links.py markdown_url, the same rule as link_url)
 URL_SAFE_CHARACTERS = "!#$%&'()*+,/:;=?@[]~"
 
 # The platforms a search filters on: the values the indexer gives a page's platforms

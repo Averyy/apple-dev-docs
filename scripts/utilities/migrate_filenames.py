@@ -57,6 +57,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, Final, List, Optional, Set, TextIO, Tuple
+from urllib.parse import unquote
 
 # The repo root, for the scraper package
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
@@ -117,7 +118,8 @@ class Plan:
 
 
 def footer_url(path: str) -> Optional[str]:
-    """The URL in a page file's footer (its last non-empty line), if it has one."""
+    """The page URL a page file's footer (its last non-empty line) names, if it has one:
+    its escapes decoded (scraper.utils.links.markdown_url encodes an unclosed "(")."""
     with open(path, 'rb') as f:
         f.seek(0, os.SEEK_END)
         f.seek(max(0, f.tell() - 4096))
@@ -125,7 +127,7 @@ def footer_url(path: str) -> Optional[str]:
     for line in reversed(tail.splitlines()):
         if line.strip():
             match = FOOTER.match(line.strip())
-            return match.group(1) if match else None
+            return unquote(match.group(1)) if match else None
     return None
 
 

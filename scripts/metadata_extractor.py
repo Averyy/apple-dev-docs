@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any, Set, Tuple
 import argparse
 from datetime import datetime
+from urllib.parse import unquote
 
 # The kind of an Apple page without a **Kind** line, by its **Role** line (Apple's
 # roleHeading); any other role, or none, is an article. A Framework role always comes
@@ -173,8 +174,10 @@ class MetadataExtractor:
         self._qualifier_split_pattern = re.compile(r'\.|::')
 
         # The footer every DocC page ends with (markdown_converter.py): the URL it was
-        # scraped from, verbatim; Apple's says "View on Apple Developer", another DocC
-        # site's its own name (e.g. "View on docs.swift.org")
+        # scraped from, as a link holds it (scraper/utils/links.py markdown_url: the
+        # parentheses of a URL the site cut inside its argument list are encoded; an
+        # older rendering has them as they are); Apple's says "View on Apple Developer",
+        # another DocC site's its own name (e.g. "View on docs.swift.org")
         self._footer_pattern = re.compile(r'^\*\[View on [^\]\n]+\]\((https?://\S+)\)\*$')
 
         # Platform extraction patterns
@@ -712,12 +715,13 @@ class MetadataExtractor:
     def extract_source_url(self, content: str) -> Optional[str]:
         """
         The URL in the footer every DocC page ends with (*[View on Apple Developer](<url>)*,
-        or the name of the page's own DocC site): the page's own URL, as it was scraped.
-        None for a page without one.
+        or the name of the page's own DocC site): the page's own URL, as it was scraped
+        (its escapes decoded: a DocC page's URL holds no "%" of its own, and the footer
+        encodes an unclosed "(" as %28). None for a page without one.
         """
         last_line = content[-4096:].rstrip().rsplit('\n', 1)[-1].strip()
         match = self._footer_pattern.match(last_line)
-        return match.group(1) if match else None
+        return unquote(match.group(1)) if match else None
 
     def generate_url(self, file_path: str) -> str:
         """
