@@ -1,7 +1,7 @@
 ---
 source: sourcekit-lsp
 framework: sourcekit-lsp
-url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Enable Extended Logging.md
+url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Enable%20Extended%20Logging.md
 ---
 
 # Enable Extended logging

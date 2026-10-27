@@ -1,7 +1,7 @@
 ---
 source: sourcekit-lsp
 framework: sourcekit-lsp
-url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Enable Experimental Background Indexing.md
+url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Enable%20Experimental%20Background%20Indexing.md
 ---
 
 # Enable Experimental Background Indexing

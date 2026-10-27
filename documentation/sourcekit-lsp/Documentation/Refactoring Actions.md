@@ -1,7 +1,7 @@
 ---
 source: sourcekit-lsp
 framework: sourcekit-lsp
-url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Refactoring Actions.md
+url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Refactoring%20Actions.md
 ---
 
 # Refactoring Actions

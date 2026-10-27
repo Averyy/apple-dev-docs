@@ -1,7 +1,7 @@
 ---
 source: sourcekit-lsp
 framework: sourcekit-lsp
-url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Editor Integration.md
+url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Editor%20Integration.md
 ---
 
 # Editor Integration

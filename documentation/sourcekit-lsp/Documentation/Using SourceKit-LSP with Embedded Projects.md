@@ -1,7 +1,7 @@
 ---
 source: sourcekit-lsp
 framework: sourcekit-lsp
-url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Using SourceKit-LSP with Embedded Projects.md
+url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Using%20SourceKit-LSP%20with%20Embedded%20Projects.md
 ---
 
 # Using SourceKit-LSP with Embedded Projects

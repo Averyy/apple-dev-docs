@@ -1,7 +1,7 @@
 ---
 source: sourcekit-lsp
 framework: sourcekit-lsp
-url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Diagnose Bundle.md
+url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Diagnose%20Bundle.md
 ---
 
 # Diagnose Bundle

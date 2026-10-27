@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-26T22:48:51.389369",
+    "last_updated": "2026-10-27T01:45:41.303819",
     "total_files": 855,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -20,7 +20,7 @@
       "App-Store": "App-Store"
     },
     "render": {
-      "version": 2
+      "version": 3
     }
   },
   "hashes": {
