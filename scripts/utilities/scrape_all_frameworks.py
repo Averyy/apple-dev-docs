@@ -448,7 +448,9 @@ async def scrape_frameworks(
           + (f" ({len(jobs) - len(frameworks)} of them DocC site roots)" if len(jobs) > len(frameworks) else ""))
 
     # Track progress
+    # (a DocC site's as its load gave it: with the pages its excluded collections list)
     site_of_job = {site.name: site for site in (APPLE, *sites)}
+    site_of_job.update({site_run.site.name: site_run.site for site_run in site_runs})
     total = len(jobs)
     completed = 0
     failed = []

@@ -19,7 +19,7 @@ Index package: SPI_PACKAGES), as docc_sites.load_site reads them.
 """
 
 from dataclasses import dataclass
-from typing import Final, Optional, Tuple
+from typing import FrozenSet, Final, Optional, Tuple
 
 # What a DocC site's index (DocCSite.index_url) is. A page index is a DocC
 # page whose references list the site's top-level pages; its roots are the
@@ -56,6 +56,13 @@ class DocCSite:
             navigator index lists them
         excludes: Documentation paths (lowercased, without "/documentation/")
             never fetched: a root id, or a page with every page under it
+        excluded_pages: The pages its excluded collections list that no
+            crawl of it has reached (their paths, as excludes), read at a
+            run's start (docc_sites.load_site): a page the collection alone
+            holds (a package's proposal template) is never fetched, so a
+            link to one keeps its URL (linked_by_url), as one to the
+            collection does. Never a crawl rule: a page in-scope curation
+            reaches is crawled as ever
         max_retries: Its requests' retries after a 5xx, 429 or network
             error (None: Config.MAX_RETRIES, Apple's)
         retry_backoff: The wait before the n-th retry after a 5xx or a
@@ -81,6 +88,7 @@ class DocCSite:
     index_kind: str = INDEX_PAGE
     roots: Tuple[str, ...] = ()
     excludes: Tuple[str, ...] = ()
+    excluded_pages: FrozenSet[str] = frozenset()
     max_retries: Optional[int] = None
     retry_backoff: Optional[float] = None
     max_jobs: int = 0
@@ -135,6 +143,11 @@ class DocCSite:
         """Whether a documentation path (lowercased, without "/documentation/") is never fetched:
         an excluded path, or a page under one."""
         return any(path == exclude or path.startswith(f"{exclude}/") for exclude in self.excludes)
+
+    def linked_by_url(self, path: str) -> bool:
+        """Whether a link to a documentation path (as excluded's) keeps its URL: an excluded
+        path or a page under one, or exactly one of excluded_pages."""
+        return self.excluded(path) or path in self.excluded_pages
 
 
 APPLE: Final = DocCSite(
@@ -227,7 +240,9 @@ def spi_package(owner: str, repo: str, excludes: Tuple[str, ...] = ()) -> DocCSi
 # The Swift Package Index packages: CareKit (OD2), the 6 Apple and MLX
 # packages that host no DocC of their own, and mlx-swift-lm (OD4). Their
 # design proposals aren't documentation (OD3): each proposals collection is
-# excluded, and with it the proposals only it lists
+# excluded, and with it the proposals only it lists, which are not under its
+# path (logging/slg-0001, not logging/proposals/…): never reached, they are
+# linked by URL (excluded_pages)
 SPI_PACKAGES: Final[Tuple[DocCSite, ...]] = (
     spi_package("carekit-apple", "CareKit"),
     spi_package("ml-explore", "mlx-swift"),

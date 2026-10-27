@@ -206,7 +206,8 @@ class Sink:
     def hash_manager(self) -> HashManager:
         """Its hash file's manager, loaded (again) on first use; the run's touched set carries over."""
         if self._hash_manager is None:
-            hash_manager = HashManager(self.hash_file, self.output_dir, render_version=self.render_version)
+            hash_manager = HashManager(self.hash_file, self.output_dir, render_version=self.render_version,
+                                       render_inputs=render_inputs(self.site))
             hash_manager.touched |= self._kept_touched
             self._hash_manager = hash_manager
         return self._hash_manager
@@ -302,6 +303,14 @@ class Sink:
         if member not in ids:
             ids[member] = {}
             hash_manager.set_metadata(key, dict(sorted(ids.items())))
+
+
+def render_inputs(site: DocCSite) -> Dict[str, Any]:
+    """What a site's pages' renderings depend on besides their JSON and the converter
+    (HashManager.render_inputs): the pages its excluded collections list, which they
+    link by URL. A change renders every page of its sinks again, so an unchanged page
+    that links one (swift-log's Logger, its proposal template) doesn't keep the old link."""
+    return {"excluded_pages": sorted(site.excluded_pages)} if site.excluded_pages else {}
 
 
 def apple_top_level(hash_dir: Path, site: DocCSite) -> Set[str]:

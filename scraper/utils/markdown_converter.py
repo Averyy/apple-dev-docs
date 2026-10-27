@@ -17,6 +17,23 @@ logger = get_logger(__name__)
 BLOCK_START: Final = re.compile(r'(?:[-*+]|\d{1,9}[.)])(?: |$)|```[^`\n]*(?:\n|$)|\||>|#{1,6}(?: |$)')
 
 
+def emphasis(text: str, marker: str) -> str:
+    """text emphasized with marker ('**', '*' or '~~'), its leading and trailing
+    whitespace outside the markers: CommonMark reads a marker with a space on
+    its inner side as text ("** DEPRECATED IN BLUETOOTH 2.2 **" shows its
+    asterisks). The rule of scripts/utilities/docc.py's emphasis (the Sphinx
+    and web converters'), which scraper/ can't import, except that DocC's
+    emphasis of punctuation alone keeps its markers: Apple's are whole items,
+    which CommonMark renders ("click **[+]**", a variadic parameter's "**…**"),
+    not Sphinx's per-token "(" and ", " that run into their neighbours'. An
+    empty or blank one (a placeholder Apple's JSON lost) renders as before:
+    without its markers, code spans on both sides of it would join into one."""
+    core = text.strip()
+    if not core:
+        return f"{marker}{text}{marker}"
+    return f"{text[:len(text) - len(text.lstrip())]}{marker}{core}{marker}{text[len(text.rstrip()):]}"
+
+
 def join_blocks(blocks: List[str], indent: int) -> str:
     """Blocks rendered as one list item's (or quote's) content, to follow its
     marker or label: the first block on that line, each later block after a

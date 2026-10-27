@@ -273,6 +273,56 @@ class TestDeclarations:
         assert ("```swift\nfunc title(_ key: String)\n```\n\n**Other overloads**:\n\n"
                 "```swift\nfunc title(_ text: Text)\n```\n\n```swift\nfunc title<S>(_ s: S)\n```") in md
 
+    def test_a_leading_attribute_keeps_its_arguments_on_its_line(self, scraper: AppleJSONDocumentationScraper) -> None:
+        """B1: an attribute's argument list (its text, and the type names in it as their own
+        tokens) stays on the attribute's line, which ends at its closing parenthesis."""
+        def token(kind: str, value: str) -> Dict[str, str]:
+            return {"kind": kind, "text": value}
+
+        fmt = scraper._format_declaration_from_tokens
+        # Observation's Observable(): the first attribute's line, then the rest as before
+        assert fmt([
+            token("attribute", "@attached"), token("text", "(member, conformances: "),
+            token("typeIdentifier", "Observable"), token("text", ", names: named(_$observationRegistrar)) "),
+            token("attribute", "@attached"), token("text", "(memberAttribute) "),
+            token("keyword", "macro"), token("text", " "), token("identifier", "Observable"), token("text", "()"),
+        ]) == ("@attached(member, conformances: Observable, names: named(_$observationRegistrar))\n"
+               "@attached(memberAttribute) macro Observable()")
+        assert fmt([
+            token("attribute", "@freestanding"), token("text", "(expression) "), token("keyword", "macro"),
+            token("text", " "), token("identifier", "expect"), token("text", "(_ condition: "),
+            token("typeIdentifier", "Bool"), token("text", ")"),
+        ]) == "@freestanding(expression)\nmacro expect(_ condition: Bool)"
+        assert fmt([
+            token("attribute", "nonisolated"), token("text", "(nonsending) "), token("keyword", "func"),
+            token("text", " "), token("identifier", "draw"), token("text", "() "), token("keyword", "async"),
+        ]) == "nonisolated(nonsending)\nfunc draw() async"
+        # Text after the closing parenthesis in the same token starts the next line
+        assert fmt([
+            token("attribute", "@objc"), token("text", "(MPAppEntityIdentifier) final "), token("keyword", "class"),
+        ]) == "@objc(MPAppEntityIdentifier)\nfinal class"
+        assert fmt([
+            token("attribute", "@objc"), token("text", "(x) "), token("text", "\n"), token("keyword", "var"),
+        ]) == "@objc(x)\nvar"
+
+    def test_every_other_declaration_is_unchanged(self, scraper: AppleJSONDocumentationScraper) -> None:
+        def token(kind: str, value: str) -> Dict[str, str]:
+            return {"kind": kind, "text": value}
+
+        fmt = scraper._format_declaration_from_tokens
+        assert fmt([
+            token("attribute", "@MainActor"), token("text", " "), token("attribute", "@preconcurrency"),
+            token("text", " "), token("keyword", "protocol"), token("text", " "), token("identifier", "View"),
+        ]) == "@MainActor\n@preconcurrency protocol View"
+        # An argument list that never closes: the attribute alone on its line, as before
+        assert fmt([token("attribute", "@available"), token("text", "(iOS, deprecated"), token("text", " ")]) == \
+            "@available\n(iOS, deprecated "
+        # An attribute inside the signature isn't a leading one
+        assert fmt([token("keyword", "func"), token("text", " f("), token("attribute", "@escaping"),
+                    token("text", " () -> Void)")]) == "func f(@escaping () -> Void)"
+        assert fmt([token("keyword", "struct"), token("text", " "), token("identifier", "Widget")]) == "struct Widget"
+        assert fmt([]) == ""
+
     def test_conformance_follows_the_declaration(self, scraper: AppleJSONDocumentationScraper) -> None:
         json_page = page([{"kind": "declarations", "declarations": [declaration("func hash(into hasher: inout Hasher)")]}],
                          metadata={"conformance": {
@@ -291,10 +341,23 @@ class TestContent:
             {"type": "heading", "level": 3, "text": "Review the code structure of a UIKit app", "anchor": "x"},
             {"type": "heading", "level": 3, "anchor": "Set-up-the-docking-region"},
         )]))
-        assert "#### Return Value\n" in md
-        assert "##### Review the code structure of a UIKit app\n" in md
+        # Apple's own level (B3: was two levels down, #### under the page's ## sections)
+        assert "\n## Return Value\n" in md
+        assert "\n### Review the code structure of a UIKit app\n" in md
         # Without text, the anchor (as before)
-        assert "##### Set Up the Docking Region" in md
+        assert "\n### Set Up the Docking Region" in md
+
+    def test_heading_levels_stay_between_2_and_6(self, scraper: AppleJSONDocumentationScraper) -> None:
+        md = render(scraper, page([content(
+            {"type": "heading", "level": 1, "text": "Top"},
+            {"type": "heading", "level": 4, "text": "Four"},
+            {"type": "heading", "level": 6, "text": "Six"},
+            {"type": "heading", "level": 8, "text": "Eight"},
+        )]))
+        # A level-1 line would read as the page's title: never one but the title
+        assert [line for line in md.splitlines() if line.startswith("# ")] == ["# Widget"]
+        assert "\n## Top\n" in md and "\n#### Four\n" in md
+        assert "\n###### Six\n" in md and "\n###### Eight\n" in md
 
     def test_code_listing_syntax(self, scraper: AppleJSONDocumentationScraper) -> None:
         md = render(scraper, page([content(
@@ -394,6 +457,41 @@ class TestContent:
         assert "| Input | Type |\n| --- | --- |\n| In | Float |\n\nRight." in md
         assert "- [Happy Beam](./happybeam.md)\n  Leverage a Full Space." in md
         assert "[Video: A video of the app.](https://developer.apple.com/tutorials/videos/com.apple.testkit/intro.mp4)" in md
+
+    def test_emphasis_keeps_edge_whitespace_outside_its_markers(self, scraper: AppleJSONDocumentationScraper) -> None:
+        """Markers with a space on their inner side are text in CommonMark ("** DEPRECATED … **"):
+        the space goes outside them; a literal "*" inside emphasis is escaped, so it can't close it."""
+        def strong(*inline: Any) -> Dict[str, Any]:
+            return {"type": "strong", "inlineContent": [text(i) if isinstance(i, str) else i for i in inline]}
+
+        def em(*inline: Any) -> Dict[str, Any]:
+            return {"type": "emphasis", "inlineContent": [text(i) if isinstance(i, str) else i for i in inline]}
+
+        md = render(scraper, page([content(
+            para(strong(" DEPRECATED IN BLUETOOTH 2.2 "), "Use the new API."),
+            para(strong("For LSMR - "), "the solver."),
+            para("Solve ", em("Y += alpha * AX"), " for ", em("Y"), "."),
+            para("Keep ", strong("bold"), ", ", em("italic"), ", ", strong(em("both")), " and ",
+                 strong({"type": "codeVoice", "code": "a*b"}), "."),
+            para("Empty ", {"type": "codeVoice", "code": "a."}, strong(), {"type": "codeVoice", "code": ".b"},
+                 "; ", strong("[+]"), " and ", em("—"), " keep theirs."),
+            para("Struck ", {"type": "strikethrough", "inlineContent": [text(" old ")]}, "text."),
+        )]))
+        assert " **DEPRECATED IN BLUETOOTH 2.2** Use the new API." in md
+        assert "**For LSMR -** the solver." in md
+        assert r"Solve *Y += alpha \* AX* for *Y*." in md
+        # Every other emphasis as before; a code span's "*" is code
+        assert "Keep **bold**, *italic*, ***both*** and **`a*b`**." in md
+        # An empty one as before: its code spans stay two; punctuation keeps its markers
+        assert "Empty `a.`****`.b`; **[+]** and *—* keep theirs." in md
+        assert "Struck  ~~old~~ text." in md
+
+    def test_a_term_keeps_edge_whitespace_outside_its_markers(self, scraper: AppleJSONDocumentationScraper) -> None:
+        md = render(scraper, page([content({"type": "termList", "items": [
+            {"term": {"inlineContent": [text("Mode ")]}, "definition": {"content": [para("A mode.")]}},
+            {"term": {"inlineContent": [text("term")]}, "definition": {"content": [para("Plain.")]}},
+        ]})]))
+        assert "- **Mode**: A mode.\n- **term**: Plain." in md
 
     def test_unknown_types_render_their_text_and_are_counted(
         self, scraper: AppleJSONDocumentationScraper, monkeypatch: pytest.MonkeyPatch
@@ -681,7 +779,7 @@ class TestRestAndKeys:
         md = render(scraper, json_page)
         assert ("- iOS 17.0+\n\n## Details\n\n- **Name**: `aps-environment` (APS Environment)\n- **Type**: string\n\n"
                 "## Possible Values\n\n- `development`: The development environment.\n"
-                "- `production`: The production environment.\n\n#### Discussion") in md
+                "- `production`: The production environment.\n\n## Discussion") in md
         same = page([{"kind": "details", "title": "Details", "details": {
             "name": "NSFoo", "ideTitle": "Foo", "value": [{"arrayMode": True, "baseType": "string"}]}}],
             metadata={"title": "Foo"})

@@ -212,6 +212,30 @@ def test_a_stale_render_version_refetches_and_renders_every_page() -> None:
     print("PASS: a_stale_render_version_refetches_and_renders_every_page")
 
 
+def test_other_render_inputs_make_the_location_stale() -> None:
+    """B7: the inputs a rendering depends on (a DocC site's excluded pages) are stored with the
+    version; another set makes every page render again, the same set doesn't."""
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        inputs = {"excluded_pages": ["kit/kp-0001"]}
+        hm = HashManager(cache, render_version=4, render_inputs=inputs)
+        hm.update_hash("https://example.com/page", "content")
+        hm.mark_rendered()
+        assert hm.save()
+        assert json.loads(cache.read_text())["metadata"]["render"] == {"version": 4, "excluded_pages": ["kit/kp-0001"]}
+        assert not HashManager(cache, render_version=4, render_inputs=inputs).stale
+        assert HashManager(cache, render_version=4, render_inputs={"excluded_pages": ["kit/kp-0002"]}).stale
+        assert HashManager(cache, render_version=4).stale
+        # A location rendered without inputs stays fresh for a manager without any
+        plain = Path(d) / "plain_hashes.json"
+        hm = HashManager(plain, render_version=4)
+        hm.mark_rendered()
+        assert hm.save()
+        assert not HashManager(plain, render_version=4).stale
+        assert HashManager(plain, render_version=4, render_inputs=inputs).stale
+    print("PASS: other_render_inputs_make_the_location_stale")
+
+
 def test_a_manager_without_a_render_version_keeps_the_stored_one() -> None:
     """A manager loaded only to prune or count is never stale, never writes render, and keeps it on save."""
     with tempfile.TemporaryDirectory() as d:

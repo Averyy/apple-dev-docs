@@ -4,7 +4,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
-from typing import Any, Dict, Final, Iterable, Optional, Set, List, Tuple, Union
+from typing import Any, Dict, Final, Iterable, Mapping, Optional, Set, List, Tuple, Union
 
 from scraper.utils.logger import get_logger
 
@@ -35,7 +35,8 @@ VALVE_MAX_ORPHANS: Final = 1000
 NAME_MAX: Final = 255
 
 # Metadata key of the converter output version the location's files were
-# last rendered with: {"version": <the scraper's RENDER_VERSION>}
+# last rendered with: {"version": <the scraper's RENDER_VERSION>}, and the
+# other inputs of their rendering, if any (render_inputs)
 RENDER_KEY: Final = "render"
 
 
@@ -123,6 +124,7 @@ class HashManager:
         cache_file: Path,
         output_dir: Optional[Path] = None,
         render_version: Optional[int] = None,
+        render_inputs: Optional[Mapping[str, Any]] = None,
     ) -> None:
         """Initialize hash manager with a cache file.
         
@@ -133,10 +135,15 @@ class HashManager:
             render_version: The scraper's RENDER_VERSION, for its own
                 manager (see stale, mark_rendered); a manager loaded only to
                 prune or count passes none and keeps the stored value as it is
+            render_inputs: What its pages' renderings depend on besides
+                their JSON and the converter, stored with render_version
+                (e.g. a DocC site's excluded_pages, which a page links by
+                URL): a change makes the location stale too
         """
         self.cache_file = cache_file
         self.output_dir = output_dir
         self.render_version = render_version
+        self.render_inputs: Dict[str, Any] = dict(render_inputs or {})
         # Why the cache file exists but couldn't be loaded (the manager then
         # starts empty), else None
         self.load_error: Optional[str] = None
@@ -164,24 +171,31 @@ class HashManager:
         return render.get("version") if isinstance(render, dict) else None
 
     @property
+    def rendering(self) -> Dict[str, Any]:
+        """What metadata.render records once its pages are rendered: render_version and render_inputs."""
+        return {"version": self.render_version, **self.render_inputs}
+
+    @property
     def stale(self) -> bool:
-        """The location's files were rendered by another converter version than render_version.
+        """The location's files were rendered by another converter version than render_version,
+        or with other render_inputs.
 
         While stale, has_changed returns True, so every page is rendered
         again on the normal write-first path. Never stale without a
         render_version.
         """
-        return self.render_version is not None and self.stored_render_version != self.render_version
+        return self.render_version is not None and self.metadata.get(RENDER_KEY) != self.rendering
 
     def mark_rendered(self) -> None:
-        """Store render_version as the location's (metadata.render): its pages were all rendered by it.
+        """Store render_version and render_inputs as the location's (metadata.render): its
+        pages were all rendered by them.
 
         For the scraper's own manager only, after a clean run (one that
         rendered every page it reached); a manager without a render_version
         never writes metadata.render.
         """
         if self.render_version is not None:
-            self.set_metadata(RENDER_KEY, {"version": self.render_version})
+            self.set_metadata(RENDER_KEY, self.rendering)
 
     def forget_untouched_renderings(self) -> int:
         """Make the live entries this run didn't touch render their page again when it is next reached.

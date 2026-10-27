@@ -328,10 +328,13 @@ class TestSiteScrape:
             site_file("OtherKit", "OtherKit"), site_file("OtherKit/one", "OtherKit"),
             site_file("OtherKit/Shared", "OtherKit"),
         }
-        # Never fetched: the excluded root and path, the private root the index lists, the landing page
+        # Never fetched: the excluded root, the pages under the excluded path,
+        # the private root the index lists, the landing page. The excluded
+        # collection is read once, at the site's load, for the pages it lists
         fetched = set(site_runs.requests)
-        for path in ("Stdlib/Array", "_Private/Hidden", "Kit/proposals", "Kit/proposals/kp-0001", "Landing"):
+        for path in ("Stdlib/Array", "_Private/Hidden", "Kit/proposals/kp-0001", "Landing", "Stdlib"):
             assert site_json(path) not in fetched, path
+        assert site_runs.requests.count(site_json("Kit/proposals")) == 1
         # Hash files under the namespace; the module's records its parent
         assert sorted(p.name for p in (Path(".hashes") / NS).iterdir()) == [
             "Guide-Concurrency_hashes.json", "Guide_hashes.json", "Kit_hashes.json", "OtherKit_hashes.json",

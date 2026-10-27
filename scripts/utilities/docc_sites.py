@@ -13,7 +13,11 @@ of todo-4's D6 design):
   failure; the site's jobs are skipped this run, which exits 1.
 The site's top-level set is its allow-list, its excludes and its index roots,
 so a page of a top-level segment it doesn't crawl (e.g. docs.swift.org's 14
-private stdlib modules) is never crawled, as a root or as a module.
+private stdlib modules) is never crawled, as a root or as a module. Each of
+its excluded paths that is a collection (a package's proposals) is fetched
+too: the pages it lists that no crawl reached (DocCSite.excluded_pages) are
+linked by URL, as the collection is; a failed fetch uses those its last
+successful one listed (persisted in _site.json), and is no error.
 
 A site whose index is a navigator index (a Swift Package Index package's
 index/index.json, DocCSite.roots_from_index) has no allow-list: the first
@@ -43,6 +47,7 @@ on that many consecutive 404/410 runs (consecutive_gone). Module sinks under
 a namespace (D6) are only ever removed by the module rules.
 """
 
+import dataclasses
 import json
 import sys
 from dataclasses import dataclass, field
@@ -76,6 +81,9 @@ INDEX_ROOTS_KEY: Final = "index_roots"
 ROOT_GONE_KEY: Final = "root_gone_runs"
 UNLISTED_KEY: Final = "unlisted_runs"
 GONE_STATUSES: Final = (404, 410)
+# The pages each excluded collection listed on its last successful fetch (in
+# _site.json), {exclude: [paths]}: what a run whose fetch of it fails excludes
+EXCLUDED_PAGES_KEY: Final = "excluded_pages"
 
 
 def site_file(site: DocCSite) -> Path:
@@ -118,6 +126,56 @@ def index_roots(site: DocCSite, body: str) -> List[str]:
     if not roots:
         raise ValueError("no documentation page in its references")
     return sorted(roots.values(), key=str.lower)
+
+
+def collection_pages(site: DocCSite, collection: str, body: str) -> List[str]:
+    """The pages an excluded collection's JSON curates (its topicSections): their paths, lowercased.
+
+    Each through its reference's URL, as the crawl resolves a link
+    ("/documentation/logging/slg-nnnn" -> logging/slg-nnnn), without its
+    #fragment. The collection itself and a top-level page (a root, never
+    excluded this way) are none. Raises ValueError for a body that isn't a
+    page (no JSON, or no references).
+    """
+    data = json.loads(body)
+    references = data.get("references") if isinstance(data, dict) else None
+    if not isinstance(references, dict):
+        raise ValueError("no references")
+    sections = data.get("topicSections")
+    pages: Set[str] = set()
+    for section in sections if isinstance(sections, list) else []:
+        identifiers = section.get("identifiers") if isinstance(section, dict) else None
+        for identifier in identifiers if isinstance(identifiers, list) else []:
+            reference = references.get(identifier) if isinstance(identifier, str) else None
+            if not isinstance(reference, dict) or reference.get("type") != "topic":
+                continue
+            url = reference.get("url")
+            if not (isinstance(url, str) and url.startswith(site.doc_path)):
+                continue
+            path = url[len(site.doc_path):].split("#", 1)[0].strip("/").lower()
+            if "/" in path and path != collection:
+                pages.add(path)
+    return sorted(pages)
+
+
+def page_json_url(site: DocCSite, path: str) -> str:
+    """A documentation path's JSON URL, as the crawl keys its hash entry (dot segments escaped with "'")."""
+    escaped = "/".join(f"'{segment}" if segment.startswith(".") else segment for segment in path.split("/"))
+    return f"{site.json_prefix}{escaped}.json"
+
+
+def live_json_urls(hash_dir: Path, site: DocCSite) -> Set[str]:
+    """The JSON URLs of the site's pages its hash files record live (a file, no error); unreadable files skipped."""
+    live: Set[str] = set()
+    for path in sorted(hash_dir.glob(f"*{HASH_FILE_SUFFIX}")) if hash_dir.is_dir() else []:
+        try:
+            hashes, _ = read_hash_file(path)
+        except (OSError, ValueError):
+            continue
+        live |= {url for url, entry in hashes.items()
+                 if url.startswith(site.json_prefix) and isinstance(entry, dict)
+                 and entry.get("file_path") and entry.get("status") != "error"}
+    return live
 
 
 def navigator_roots(site: DocCSite, body: str) -> List[str]:
@@ -210,13 +268,57 @@ class SiteIndexLoader(BaseAppleScraper):
         self._site_file.set_metadata(INDEX_ROOTS_KEY, roots)
         return "ok", roots, None
 
+    async def load_excluded_pages(self) -> List[str]:
+        """The pages the site's excluded collections list (collection_pages), one request each.
+
+        An excluded path below a root (a package's proposals collection) is
+        a collection; an excluded root id (docs.swift.org's "swift") is a
+        whole top-level segment, never fetched. Each collection's pages are
+        persisted in _site.json; a collection whose fetch fails (any status,
+        404/410 too: a package's host answers 404 while it rebuilds its
+        docs) or isn't a page gives the pages its last successful fetch
+        persisted, logged, and is no error of the run; so does one that
+        lists no page while pages are persisted (a package's host may serve
+        a collection empty while it rebuilds its docs), so that its pages'
+        renderings (sink.render_inputs) don't flip and back.
+        """
+        stored = self._site_file.get_metadata(EXCLUDED_PAGES_KEY)
+        persisted: Dict[str, Any] = stored if isinstance(stored, dict) else {}
+        loaded: Dict[str, List[str]] = {}
+        for collection in (exclude for exclude in self.site.excludes if "/" in exclude):
+            url = f"{self.site.json_prefix}{collection}.json"
+            result = await self.fetch_page(url)
+            error: Optional[str] = None
+            if isinstance(result, FetchFailed):
+                error = result.error
+            elif result is NOT_MODIFIED:
+                error = "HTTP 304 without a conditional request"
+            else:
+                try:
+                    loaded[collection] = collection_pages(self.site, collection, result)
+                except ValueError as e:
+                    error = f"not a page ({e})"
+                else:
+                    if not loaded[collection] and persisted.get(collection):
+                        error = "lists no page"
+            if error is not None:
+                previous = persisted.get(collection)
+                loaded[collection] = ([page for page in previous if isinstance(page, str)]
+                                      if isinstance(previous, list) else [])
+                logger.warning("excluded_collection_failed", site=self.site.name, url=url, error=error,
+                               persisted=len(loaded[collection]))
+        self._site_file.set_metadata(
+            EXCLUDED_PAGES_KEY, {collection: pages for collection, pages in loaded.items() if pages} or None)
+        return sorted({page for pages in loaded.values() for page in pages})
+
 
 @dataclass
 class SiteRun:
     """A DocC site's share of a run, from its config and its index root (load_site).
 
     Attributes:
-        site: The site
+        site: The site, with the pages its excluded collections list this
+            run (DocCSite.excluded_pages): its jobs' site
         jobs: Its roots to crawl this run, (root id, docs dir as cased):
             none when error is set
         top_level: Its top-level set (lowercased): its allow-list, its
@@ -272,6 +374,17 @@ async def load_site(site: DocCSite, rate_limiter: Optional[AdaptiveRateLimiter] 
         if not (site.roots_from_index and state == "gone" and not roots):
             # (A navigator-index site whose index is gone with nothing to run writes nothing)
             index.hash_manager.set_metadata(SITE_KEY, site.name)
+            if run.error is None and any("/" in exclude for exclude in site.excludes):
+                # The pages only its excluded collections list (none of its
+                # hash files records them live: no crawl reached them) are
+                # linked by URL (DocCSite.excluded_pages); one in-scope
+                # curation reaches is crawled and linked locally as ever
+                live = live_json_urls(Config.get_hash_dir(site.namespace), site)
+                pages = [page for page in await index.load_excluded_pages()
+                         if page_json_url(site, page) not in live]
+                if pages:
+                    logger.info("excluded_pages", site=site.name, pages=len(pages))
+                    run.site = site = dataclasses.replace(site, excluded_pages=frozenset(pages))
     if run.error is not None:
         logger.error("index_root_failed", site=site.name, url=site.index_url, error=run.error)
         return run

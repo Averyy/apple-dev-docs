@@ -34,6 +34,12 @@ occ variantOverrides) are crawled through its occ view, built once per page
 with the patched references and shared with its conversion, which lists them
 in their occ groups; an occ view that can't be built is a local error that
 still queues the links its operations list.
+
+Batch 7 B4-a: an overload group's page (externalID ending in ::OverloadGroup)
+links its other overloads (otherDeclarations), each crawled and saved as a
+page of its own, kept while the group lists it and removed by the normal
+orphan cleanup once it doesn't; an overload's own page links none of its
+siblings (nor the preferred overload, whose page is a copy of the group's).
 """
 
 import asyncio
@@ -894,6 +900,114 @@ class TestDefaultImplementations:
         # No longer listed, with both jobs clean: removed by the normal orphan cleanup
         assert await d6.scrape(pages, listed) == 0
         assert not handed_off.exists() and doc_file("Sibkit/a").exists()
+
+
+def overload_page(path: str, members: Sequence[str], group: bool, links: Sequence[Link] = ()) -> str:
+    """An overload's page (B4): its declaration lists the other overloads (otherDeclarations),
+    each resolved through its references. group: the group's page (DocC's externalID
+    ending in ::OverloadGroup), a copy of the preferred overload's."""
+    body = json.loads(topic_page(path, A, links))
+    name = path.split("/")[-1]
+    body["metadata"]["externalID"] = f"s:7Umbrella4TextV{name}" + ("::OverloadGroup" if group else "")
+    others = []
+    for member in members:
+        identifier = f"doc://{A}/documentation/{member}"
+        others.append({"identifier": identifier,
+                       "tokens": [{"kind": "keyword", "text": "init"}, {"kind": "text", "text": f"({member[-5:]})"}]})
+        body["references"][identifier] = {"type": "topic", "url": f"/documentation/{member.lower()}",
+                                          "title": "init(_:)", "identifier": identifier, "kind": "symbol",
+                                          "role": "symbol"}
+    body["primaryContentSections"] = [{"kind": "declarations", "declarations": [{
+        "languages": ["swift"], "platforms": ["iOS"],
+        "tokens": [{"kind": "keyword", "text": "init"}, {"kind": "text", "text": f"({name})"}],
+        "otherDeclarations": {"displayIndex": 0, "declarations": others}}]}]
+    return json.dumps(body)
+
+
+GROUP = "Umbrella/Text/init(_:)"
+PREFERRED = "Umbrella/Text/init(_:)-1a4oh"
+MEMBERS = ["Umbrella/Text/init(_:)-9d1g4", "Umbrella/Text/init(_:)-4k7ab"]
+# Umbrella/guide links an overload inline (its dead link before B4)
+OVERLOADS: Pages = {
+    **UMBRELLA,
+    "Umbrella/guide": (A, [("Umbrella/Text", A)]),
+    "Umbrella/Text": (A, [(GROUP, A)]),
+}
+
+
+def overload_routes(members: Sequence[str] = tuple(MEMBERS)) -> Dict[str, List[Spec]]:
+    """The group's page lists members; each member's own page lists its siblings and
+    the preferred overload (whose page, a copy of the group's, is never crawled)."""
+    routes: Dict[str, List[Spec]] = {
+        GROUP: [ok(overload_page(GROUP, members, group=True), "")],
+        PREFERRED: [ok(overload_page(PREFERRED, MEMBERS, group=False), "")],
+    }
+    for member in MEMBERS:
+        routes[member] = [ok(overload_page(member, [PREFERRED, *(m for m in MEMBERS if m != member)],
+                                           group=False), "")]
+    guide = json.loads(topic_page("Umbrella/guide", A, [("Umbrella/Text", A)]))
+    identifier = f"doc://{A}/documentation/{MEMBERS[0]}"
+    guide["abstract"] = [{"type": "text", "text": "Use "}, {"type": "reference", "identifier": identifier,
+                                                            "isActive": True}]
+    guide["references"][identifier] = {"type": "topic", "url": f"/documentation/{MEMBERS[0].lower()}",
+                                       "title": "init(_:)", "identifier": identifier, "kind": "symbol",
+                                       "role": "symbol"}
+    routes["Umbrella/guide"] = [ok(json.dumps(guide), "")]
+    return routes
+
+
+class TestOverloadGroups:
+    """B4-a: an overload group's page links its other overloads, each crawled and saved
+    as a page of its own; an overload's own page links none of its siblings."""
+
+    def test_only_a_group_page_links_its_other_overloads(self, dirs: Path) -> None:
+        scraper = AppleJSONDocumentationScraper("Umbrella")
+        group = scraper._page_links(json.loads(overload_page(GROUP, MEMBERS, group=True, links=[("Umbrella", A)])))
+        assert [link.json_url for link in group.links] == [
+            json_url("umbrella"), *(json_url(member.lower()) for member in MEMBERS)]
+        member = scraper._page_links(json.loads(overload_page(MEMBERS[0], [PREFERRED, MEMBERS[1]], group=False)))
+        assert member.links == ()
+        # Its occ view's declarations are read the same way
+        body = json.loads(overload_page(GROUP, [], group=True))
+        occ_member = "Umbrella/Text/init(_:)-0cc01"
+        body["references"][f"doc://{A}/documentation/{occ_member}"] = {
+            "type": "topic", "url": f"/documentation/{occ_member.lower()}", "title": "init"}
+        body["variantOverrides"] = [{"traits": [{"interfaceLanguage": "occ"}], "patch": [
+            {"op": "add", "path": "/primaryContentSections/0/declarations/0/otherDeclarations/declarations/0",
+             "value": {"identifier": f"doc://{A}/documentation/{occ_member}", "tokens": []}}]}]
+        links = scraper._page_links(body, scraper._occ_view(body)).links
+        assert [link.json_url for link in links] == [json_url(occ_member.lower())]
+
+    async def test_the_overloads_are_crawled_kept_and_removed_with_the_group(self, d6: D6Runs) -> None:
+        assert await d6.scrape(OVERLOADS, ["Umbrella"], overrides=overload_routes()) == 0
+        assert docs() == {doc_file(path) for path in (*OVERLOADS, GROUP, *MEMBERS)}
+        # Named like any page: the group's init(_).md, each overload's with its suffix
+        assert doc_file(MEMBERS[0]) == Path("documentation/Umbrella/text/init(_)-9d1g4.md")
+        assert doc_file(GROUP) == Path("documentation/Umbrella/text/init(_).md")
+        # The preferred overload's page (a copy of the group's) is never fetched
+        assert json_url(PREFERRED.lower()) not in d6.requests
+        member = doc_file(MEMBERS[0]).read_text()
+        assert "**Framework**: Umbrella" in member and "**Other overloads**:" in member
+        # The inline link to an overload is to its file (it was a dead link before B4)
+        guide = doc_file("Umbrella/guide")
+        link = re.search(r"Use \[`?init\(_:\)`?\]\(([^)]+\.md)\)", guide.read_text())
+        assert link is not None and (guide.parent / unquote(link.group(1))).resolve() == doc_file(MEMBERS[0]).resolve()
+        hashes = Config.get_hash_file("Umbrella").read_text()
+        assert all(json_url(path.lower()) in hashes for path in MEMBERS)
+
+        # Reached again through the group every run: nothing changes
+        before = sandbox_bytes()
+        assert await d6.scrape(OVERLOADS, ["Umbrella"], overrides=overload_routes()) == 0
+        assert sandbox_bytes() == before
+
+        # Apple drops an overload from the group: removed by the normal orphan cleanup
+        assert await d6.scrape(OVERLOADS, ["Umbrella"], overrides=overload_routes(MEMBERS[:1])) == 0
+        assert docs() == {doc_file(path) for path in (*OVERLOADS, GROUP, MEMBERS[0])}
+        assert json_url(MEMBERS[1].lower()) not in Config.get_hash_file("Umbrella").read_text()
+        # The group goes: so do its overloads
+        assert await d6.scrape(without(OVERLOADS, "Umbrella/Text", GROUP), ["Umbrella"],
+                               overrides=overload_routes()) == 0
+        assert docs() == {doc_file(path) for path in OVERLOADS}
 
 
 def occ_curation(

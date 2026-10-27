@@ -19,7 +19,7 @@ from scraper.utils.assets import hosting_root, variant_url
 from scraper.utils.hash_manager import COUNTER_FIELDS, HashManager, same_name_any_case, write_text_atomic
 from scraper.utils.links import doc_link, link_base
 from scraper.utils.logger import get_logger
-from scraper.utils.markdown_converter import AppleDocMarkdownConverter, join_blocks, labeled, quote_blocks
+from scraper.utils.markdown_converter import AppleDocMarkdownConverter, emphasis, join_blocks, labeled, quote_blocks
 from scraper.utils.naming import clash_suffix, page_path, seg_name
 from scraper.utils.rate_limiter import AdaptiveRateLimiter
 
@@ -470,7 +470,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     # 3: relative link references resolve against the page's own URL (33
     # files' 64 links pointed at a wrong path). 4: the footer's URL is a
     # valid link (markdown_url: 20 pages whose URL the site cut inside its
-    # argument list had an unclosed "(")
+    # argument list had an unclosed "("); a leading attribute keeps its
+    # argument list on its line (@attached(member, …), 310 declarations);
+    # content headings keep Apple's level (## Overview, was ####); a page
+    # only an excluded collection lists is linked by its URL (a package's
+    # proposal template); emphasis keeps its edge whitespace outside its
+    # markers, and a literal "*" in it is escaped
     RENDER_VERSION = 4
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
@@ -621,6 +626,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 framework=self.framework_name,
                 stored=self.hash_manager.stored_render_version,
                 version=self.RENDER_VERSION,
+                # A site's excluded pages, when they are what changed (HashManager.render_inputs)
+                **({"inputs": self.hash_manager.render_inputs} if self.hash_manager.render_inputs else {}),
             )
 
         await self.discover_and_scrape_streaming()
@@ -1469,16 +1476,22 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
         The union of its Swift curation's links and its occ view's (1.5):
         the links only the occ variant lists come after the page's own, each
-        resolved through the occ view's (patched) references. Without
+        resolved through the occ view's (patched) references. An overload
+        group's page also links its other overloads (_overload_links). Without
         record, nothing is logged or counted (a second read of the page's links).
         """
         identifier = data.get('identifier')
         page_identifier = identifier.get('url', '') if isinstance(identifier, dict) else ''
         links: List[PageLink] = []
         seen: Set[str] = set()
+        overload_group = self._is_overload_group(data)
         self._section_links(data, links, seen, record)
+        if overload_group:
+            self._overload_links(data, links, seen, record)
         if occ_view is not None:
             self._section_links(occ_view, links, seen, record)
+            if overload_group:
+                self._overload_links(occ_view, links, seen, record)
         return PageLinks(bundle=self._bundle_of(page_identifier if isinstance(page_identifier, str) else ''),
                          links=tuple(links))
 
@@ -1505,15 +1518,62 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             logger.info(f"Found section '{section_title}' with {len(identifiers)} identifiers")
 
                         for link_identifier in identifiers:
-                            if not (isinstance(link_identifier, str) and link_identifier.startswith('doc://')):
-                                continue
-                            if link_identifier in seen:
-                                continue
-                            seen.add(link_identifier)
-                            link = self._resolve(link_identifier, references, record)
-                            if link is not None and link.json_url not in found:
-                                found.add(link.json_url)
-                                links.append(link)
+                            self._add_link(link_identifier, references, links, found, seen, record)
+
+    @staticmethod
+    def _is_overload_group(data: Dict[str, Any]) -> bool:
+        """Whether a page is an overload group's (DocC's: its metadata.externalID ends in "::OverloadGroup").
+
+        The group's page is a copy of its preferred overload's, which its
+        topic sections list instead of every overload; its declaration lists
+        the other overloads (otherDeclarations), each a page of its own
+        (Text/init(_:)-9d1g4) that no curation may list.
+        """
+        metadata = data.get('metadata')
+        external_id = metadata.get('externalID') if isinstance(metadata, dict) else None
+        return isinstance(external_id, str) and external_id.endswith('::OverloadGroup')
+
+    def _overload_links(
+        self, document: Dict[str, Any], links: List[PageLink], seen: Set[str], record: bool = True
+    ) -> None:
+        """Add an overload group page's other overloads (_is_overload_group): the identifiers
+        of its declarations' otherDeclarations, resolved through its references.
+
+        Only a group's page links them: an overload's own page lists its
+        siblings and the preferred overload, whose page is a copy of the
+        group's, so following those would save that copy too.
+        """
+        references = document.get('references')
+        if not isinstance(references, dict):
+            references = {}
+        found = {link.json_url for link in links}
+        sections = document.get('primaryContentSections')
+        for section in sections if isinstance(sections, list) else []:
+            if not isinstance(section, dict) or section.get('kind') != 'declarations':
+                continue
+            for declaration in section.get('declarations') or []:
+                others = declaration.get('otherDeclarations') if isinstance(declaration, dict) else None
+                for other in (others.get('declarations') or []) if isinstance(others, dict) else []:
+                    if isinstance(other, dict):
+                        self._add_link(other.get('identifier'), references, links, found, seen, record)
+
+    def _add_link(
+        self,
+        identifier: Any,
+        references: Dict[str, Any],
+        links: List[PageLink],
+        found: Set[str],
+        seen: Set[str],
+        record: bool = True,
+    ) -> None:
+        """Add the link of a doc:// identifier not yet in seen, resolved (_resolve), unless found has its page."""
+        if not (isinstance(identifier, str) and identifier.startswith('doc://')) or identifier in seen:
+            return
+        seen.add(identifier)
+        link = self._resolve(identifier, references, record)
+        if link is not None and link.json_url not in found:
+            found.add(link.json_url)
+            links.append(link)
 
     def _resolve(self, identifier: str, references: Dict[str, Any], record: bool = True) -> Optional[PageLink]:
         """The page a doc:// identifier links to, through its reference (1.1).
@@ -2535,22 +2595,37 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         has_leading_attributes = False
         attribute_text = []
         i = 0
+        # The text after the argument list that closes the leading attributes
+        rest = ''
         
-        # Collect all leading attributes
+        # Collect all leading attributes. An attribute's argument list is the
+        # tokens after it (its text, and the type names in it as their own
+        # tokens) up to the parenthesis that closes it: it stays on the
+        # attribute's line (@attached(member, names: …), nonisolated(nonsending)),
+        # which ends there
         while i < len(tokens) and tokens[i].get('kind') == 'attribute':
             attribute_text.append(tokens[i].get('text', ''))
             i += 1
             has_leading_attributes = True
+            arguments = self._attribute_arguments(tokens, i)
+            if arguments is not None:
+                end, rest = arguments
+                attribute_text.extend(token.get('text', '') for token in tokens[i:end])
+                attribute_text[-1] = attribute_text[-1][:len(attribute_text[-1]) - len(rest)]
+                rest = rest.lstrip()
+                i = end
+                break
         
         # If we have attributes, add them on their own line
         if has_leading_attributes:
             parts.append(''.join(attribute_text))
             # Skip whitespace after attributes
-            while i < len(tokens) and tokens[i].get('text', '').strip() == '':
-                i += 1
+            if not rest:
+                while i < len(tokens) and tokens[i].get('text', '').strip() == '':
+                    i += 1
         
         # Add the rest of the declaration
-        remaining = []
+        remaining = [rest] if rest else []
         for j in range(i, len(tokens)):
             remaining.append(tokens[j].get('text', ''))
         
@@ -2569,6 +2644,27 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         return result
     
+    @staticmethod
+    def _attribute_arguments(tokens: List[Dict[str, Any]], start: int) -> Optional[Tuple[int, str]]:
+        """The argument list of the attribute before tokens[start], if tokens[start] opens one.
+
+        Returns:
+            (the index past the token that closes it, the text after its
+            closing parenthesis in that token), or None when tokens[start]
+            doesn't start with "(" or the list never closes (the attribute
+            alone is its line, as before)
+        """
+        if start >= len(tokens) or not tokens[start].get('text', '').startswith('('):
+            return None
+        depth = 0
+        for index in range(start, len(tokens)):
+            text = tokens[index].get('text', '')
+            for position, char in enumerate(text):
+                depth += {'(': 1, ')': -1}.get(char, 0)
+                if depth == 0:
+                    return index + 1, text[position + 1:]
+        return None
+
     def _validate_json_structure(self, json_data: Dict[str, Any]) -> bool:
         """Validate basic JSON structure from Apple API.
         
@@ -2590,12 +2686,16 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         return True
     
-    def _resolve_inline_content(self, inline_content: List[Dict[str, Any]], references: Dict[str, Any]) -> str:
+    def _resolve_inline_content(
+        self, inline_content: List[Dict[str, Any]], references: Dict[str, Any], emphasized: bool = False
+    ) -> str:
         """Resolve inline content with proper reference resolution.
         
         Args:
             inline_content: List of inline content items from Apple's JSON
             references: References dictionary for resolving identifiers
+            emphasized: It is inside emphasis markers: a literal "*" of its
+                text is escaped ("\\*"), so it can't close them
             
         Returns:
             Resolved text content
@@ -2606,7 +2706,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             item_type = item.get('type', '')
             
             if item_type == 'text':
-                resolved_parts.append(self._rewrite_doc_literals(item.get('text', '')))
+                text = self._rewrite_doc_literals(item.get('text', ''))
+                resolved_parts.append(text.replace('*', '\\*') if emphasized else text)
             elif item_type == 'reference':
                 # Resolve the reference to its actual name and create a proper link
                 identifier = item.get('identifier', '')
@@ -2614,7 +2715,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     ref_data = references[identifier]
                     if item.get('overridingTitleInlineContent'):
                         # The prose's own wording, formatted as Apple wrote it
-                        text = self._resolve_inline_content(item['overridingTitleInlineContent'], references)
+                        text = self._resolve_inline_content(
+                            item['overridingTitleInlineContent'], references, emphasized)
                     elif item.get('overridingTitle'):
                         text = item['overridingTitle']
                     else:
@@ -2639,16 +2741,17 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             elif item_type == 'codeVoice':
                 resolved_parts.append(f"`{item.get('code', '')}`")
             elif item_type == 'emphasis':
-                # Italic text - recursively resolve nested content
-                inner = self._resolve_inline_content(item.get('inlineContent', []), references)
-                resolved_parts.append(f"*{inner}*")
+                # Italic text, its nested content resolved; edge whitespace
+                # outside the markers (emphasis)
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references, True)
+                resolved_parts.append(emphasis(inner, '*'))
             elif item_type == 'strong':
-                # Bold text - recursively resolve nested content
-                inner = self._resolve_inline_content(item.get('inlineContent', []), references)
-                resolved_parts.append(f"**{inner}**")
+                # Bold text, the same way
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references, True)
+                resolved_parts.append(emphasis(inner, '**'))
             elif item_type == 'strikethrough':
-                inner = self._resolve_inline_content(item.get('inlineContent', []), references)
-                resolved_parts.append(f"~~{inner}~~")
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references, True)
+                resolved_parts.append(emphasis(inner, '~~'))
             elif item_type == 'image':
                 # Handle inline images
                 image_content = self._process_image(item, references)
@@ -2991,7 +3094,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     )
                 
                 if heading_text.strip():
-                    heading_prefix = '#' * min(level + 2, 6)  # Adjust level for markdown
+                    # Apple's own level (Overview and Discussion are 2, under
+                    # the page's # title), never a level-1 line, which would
+                    # read as the title, nor deeper than markdown's 6
+                    heading_prefix = '#' * min(max(level, 2), 6)
                     processed_parts.append(f"{heading_prefix} {heading_text}")
             
             elif item_type == 'codeListing':
@@ -3049,11 +3155,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 term_parts = []
                 for term_item in item.get('items', []):
                     term = term_item.get('term', {})
-                    term_text = self._resolve_inline_content(term.get('inlineContent', []), references)
+                    term_text = self._resolve_inline_content(term.get('inlineContent', []), references, True)
                     definition = term_item.get('definition', {})
                     def_content = self._process_content_items(definition.get('content', []), references)
-                    if term_text:
-                        term_parts.append(labeled(f"- **{term_text}**:", join_blocks(def_content, 2), 2))
+                    if term_text.strip():
+                        term_parts.append(labeled(f"- {emphasis(term_text, '**').strip()}:",
+                                                  join_blocks(def_content, 2), 2))
                 if term_parts:
                     processed_parts.append('\n'.join(term_parts))
 

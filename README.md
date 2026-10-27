@@ -78,11 +78,12 @@ This project provides a complete, searchable mirror of Apple's documentation in 
 - **400+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
 - **Nested modules** - Intents, Photos, simd, Apple News Format and the other modules Apple nests under an umbrella framework, each in its own folder
 - **Objective-C and C APIs** - the pages Apple lists only in a framework's Objective-C view (IOKit, Core Services, Application Services, Security and ~190 more), plus default implementations
+- **Every overload** - each overload of an overloaded symbol has its own page with its own description and parameters (SwiftUI's `Text` `init(_:)` overloads, ~3.1K pages), as on Apple's site, next to the group's page that lists their declarations
 - **Deprecation markers** - deprecated APIs are marked in results with what to use instead, and rank below current APIs when only their deprecation note matches
 - **Human Interface Guidelines** - Apple's design documentation for all platforms
 - **Swift Language Guide** - The Swift Programming Language book, C++ Interop
 - **docs.swift.org** - the Swift 6 migration guide, Swift Package Manager and PackagePlugin, compiler diagnostics, Embedded Swift, Wasm, Android and Linux guides, swiftly, the VS Code extension, swift-java, C++ interop (Cxx, CxxStdlib), DocC and the API Design Guidelines
-- **Swift Package Index packages** - the API reference of CareKit, MLX Swift, MLX Swift LM, Swift Argument Parser, SwiftLog, Swift Async Algorithms, Swift OpenAPI Generator and Swift Configuration
+- **Swift Package Index packages** - the API reference of CareKit, MLX Swift, MLX Swift LM, Swift Argument Parser, SwiftLog, Swift Async Algorithms, Swift OpenAPI Generator and Swift Configuration (not their design proposals)
 - **MLX & CoreML Tools** - Apple's ML framework documentation, plus the Foundation Models Python SDK
 - **Apple open-source tooling docs** - container, SourceKit-LSP, swift-format, Game Porting Toolkit (Metal shader converter)
 - **App Store Review Guidelines** - and Apple's app privacy pages

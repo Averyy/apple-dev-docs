@@ -10,7 +10,8 @@ URL's #fragment as it is. A page of any other dir keeps its absolute URL. Whethe
 file exists isn't checked, so a link to a page not yet in the docs heals by
 itself once the page is scraped. A page of another site (e.g. Apple's,
 linked from docs.swift.org), or one its site excludes (never fetched, e.g. a
-package's design proposals), keeps its absolute URL.
+package's design proposals and the pages only its proposals collection
+lists: DocCSite.linked_by_url), keeps its absolute URL.
 """
 
 import posixpath
@@ -81,7 +82,7 @@ def doc_link(url: str, base: str, dirs: Mapping[str, str], site: DocCSite = APPL
         return url
     location, hash_mark, fragment = url.partition('#')
     location = location.partition('?')[0].rstrip('/')
-    if site.excludes and site.excluded(location[len(site.doc_prefix):].lower()):
+    if site.excludes and site.linked_by_url(location[len(site.doc_prefix):].lower()):
         return url
     dir_name = dirs.get(location[len(site.doc_prefix):].split('/', 1)[0].lower())
     path = page_path(dir_name, location, site) if dir_name else None
