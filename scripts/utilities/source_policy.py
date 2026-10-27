@@ -97,6 +97,7 @@ from typing import (
     Type,
     Union,
 )
+from urllib.parse import quote
 
 import aiohttp
 
@@ -123,6 +124,13 @@ RETRYABLE_STATUSES = frozenset({429, 500, 502, 503, 504})
 
 GITHUB_RAW = "https://raw.githubusercontent.com"
 GITHUB_API = "https://api.github.com"
+
+# The characters a URL holds as they are (encode_url): RFC 3986's reserved ones and "%",
+# so its delimiters and escapes stay (quote keeps the unreserved letters, digits and "-._~")
+URL_SAFE_CHARACTERS: Final = "!#$%&'()*+,/:;=?@[]~"
+# The characters of a file's repo path a URL holds as they are (quote_path): RFC 3986's
+# path characters; a "%", "?" or "#" in a file name is encoded like a space
+PATH_SAFE_CHARACTERS: Final = "/!$&'()*+,;=:@~"
 
 # Hash-file metadata keys this policy owns (scrapers may add their own, e.g. MLX's sources)
 FAILURE_COUNTS_KEY: Final = "failure_counts"
@@ -245,6 +253,25 @@ def github_api_headers() -> Dict[str, str]:
     return headers
 
 
+def encode_url(url: str) -> str:
+    """url as a markdown link or front matter can hold it: every character a URL can't
+    hold as it is (a space, a quote, a non-ASCII letter) percent-encoded, its delimiters,
+    reserved characters and escapes as they are (a page's URL taken from a link)."""
+    return quote(url, safe=URL_SAFE_CHARACTERS)
+
+
+def quote_path(path: str) -> str:
+    """A file's repo path as a URL's path holds it: every character but the path's own
+    percent-encoded (sourcekit-lsp's "Documentation/Configuration File.md" is
+    Documentation/Configuration%20File.md), a "%" in a file name too (unlike encode_url)."""
+    return quote(path, safe=PATH_SAFE_CHARACTERS)
+
+
+def github_file_url(repo: str, branch: str, path: str) -> str:
+    """A repo file's page on GitHub (path: its repo path, quote_path)."""
+    return f"https://github.com/{repo}/blob/{branch}/{quote_path(path)}"
+
+
 async def fetch_github_raw(
     session: aiohttp.ClientSession,
     repo: str,
@@ -253,7 +280,7 @@ async def fetch_github_raw(
     timeout: Optional[aiohttp.ClientTimeout] = None,
 ) -> Union[str, FetchFailed]:
     """Fetch a file's raw content from GitHub."""
-    return await http_get(session, f"{GITHUB_RAW}/{repo}/{branch}/{path}", timeout=timeout)
+    return await http_get(session, f"{GITHUB_RAW}/{repo}/{branch}/{quote_path(path)}", timeout=timeout)
 
 
 async def list_github_directory(
@@ -269,7 +296,7 @@ async def list_github_directory(
     failure, never an empty directory: an empty listing would make every
     local file under it an orphan.
     """
-    url = f"{GITHUB_API}/repos/{repo}/contents/{path}?ref={branch}"
+    url = f"{GITHUB_API}/repos/{repo}/contents/{quote_path(path)}?ref={branch}"
     body = await http_get(session, url, headers=github_api_headers(), timeout=timeout)
     if isinstance(body, FetchFailed):
         return body

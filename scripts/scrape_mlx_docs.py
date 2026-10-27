@@ -93,10 +93,13 @@ from utilities.source_policy import (
     KeptLocation,
     ScrapeRun,
     discover_github_markdown,
+    encode_url,
     fetch_github_raw,
+    github_file_url,
     has_file_named,
     is_under,
     policy_metadata,
+    quote_path,
     status_failure,
 )
 
@@ -147,7 +150,7 @@ POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, SOURCES_KEY, RENDER_KEY)
 # The converter's output version: bump it when a change to the conversion
 # changes the files of pages that didn't change, so the next clean run
 # renders every page again (source_policy's metadata.render)
-RENDER_VERSION = 2
+RENDER_VERSION = 3
 
 
 @dataclass
@@ -631,7 +634,7 @@ def html_to_markdown(html: str, source: HTMLSource, url: str) -> str:
     result = f"""---
 source: {source.name}
 framework: {framework}
-url: {url}
+url: {encode_url(url)}
 ---
 
 {"".join(md_lines)}"""
@@ -980,7 +983,7 @@ def github_directory_key(repo: str, directory: str) -> str:
 
 def add_github_source_header(content: str, source: GitHubDocSource, file_path: str) -> str:
     """Add source attribution header to GitHub markdown content."""
-    source_url = f"https://github.com/{source.repo}/blob/{source.branch}/{file_path}"
+    source_url = github_file_url(source.repo, source.branch, file_path)
 
     # Don't add duplicate header
     if content.startswith('---'):
@@ -1002,7 +1005,7 @@ def docc_page(source: GitHubDocSource, catalog: str, output_path: Path) -> DocCP
     under its dir in the source's output dir (a discovered file keeps its
     repo path there)."""
     return DocCPage(output_path, catalog_articles([OUTPUT_BASE / source.output_dir / catalog]),
-                    f"{GITHUB_RAW}/{source.repo}/{source.branch}/{catalog}/Assets")
+                    f"{GITHUB_RAW}/{source.repo}/{source.branch}/{quote_path(catalog)}/Assets")
 
 
 def validate_github_path(file_path: str) -> bool:

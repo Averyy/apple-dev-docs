@@ -14,6 +14,7 @@ For STDIO clients, use mcp-remote: npx -y mcp-remote https://xdocs.dev/mcp
 import os
 import sys
 import re
+import difflib
 import fnmatch
 import posixpath
 import secrets
@@ -23,7 +24,7 @@ import unicodedata
 from collections import defaultdict
 from typing import Annotated, Callable, Dict, List, Optional, Any, Tuple, TypeVar
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 
 from pydantic import Field
 
@@ -58,7 +59,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.4.2"
+SERVER_VERSION = "3.4.3"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -100,6 +101,22 @@ FILE_CHUNKS_LIMIT = 100
 # is labelled with the host itself
 LINK_HOST_NAMES = {"developer.apple.com": "Apple Developer", "github.com": "GitHub"}
 
+# The characters a result link's URL holds as they are (link_url): RFC 3986's reserved ones
+# and "%", so its delimiters and escapes stay, as the scrapers encode the URLs they build
+# (scripts/utilities/source_policy.py encode_url)
+URL_SAFE_CHARACTERS = "!#$%&'()*+,/:;=?@[]~"
+
+# The platforms a search filters on: the values the indexer gives a page's platforms
+# (scripts/metadata_extractor.py platform_mappings), matched ignoring case
+PLATFORMS = ("iOS", "iPadOS", "Mac Catalyst", "macOS", "tvOS", "visionOS", "watchOS")
+
+# A summary_mode result's overview is cut to this many characters (summary_text)
+SUMMARY_CHARS = 400
+# Close framework names a search for an unknown framework suggests (difflib), and the
+# sections an expand_result naming one its page doesn't have lists before "and N more"
+FRAMEWORK_SUGGESTIONS = 3
+SECTIONS_LISTED = 30
+
 # The docs the index is built from (the image's copy, /data/documentation; outside it, the
 # checkout's documentation/ beside mcp-server/): a page's local links are resolved against
 # them (transform_internal_links). The image's docs are the ones its start indexes, so until
@@ -112,6 +129,16 @@ DOCUMENTATION_PATH = os.getenv("DOCUMENTATION_PATH", str(Path(__file__).parent.p
 LOCAL_LINK_RE = re.compile(r'\[((?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*)\]\(([^)\s]+?\.md)(#[^)\s]*)?\)')
 # A destination with a URL scheme (https://github.com/…/0001-keywords.md) is no local link
 URL_SCHEME_RE = re.compile(r'[A-Za-z][A-Za-z0-9+.-]*://')
+# Any markdown link or image, its text holding brackets two levels deep and its destination
+# balanced parentheses; and one whose destination a text's end left unclosed (an indexer
+# before PROCESSOR_VERSION 4 cut an overview at 500 characters, wherever that fell):
+# summary_text never shows one in half. Only from "](" on: a "[" alone may open a range
+# ("[min, max)") or a command's options ("[--disable-sandbox]")
+MARKDOWN_LINK_RE = re.compile(r'!?\[(?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*\]\((?:[^()\s]|\([^()\s]*\))*\)')
+UNCLOSED_LINK_RE = re.compile(r'!?\[(?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*\]\([^)\s]*$')
+# A heading line of a page (expand_result's sections), and a code fence's line
+HEADING_LINE_RE = re.compile(r'^(#{2,6})[ \t]+(.+?)[ \t]*$')
+FENCE_RE = re.compile(r'^[ \t]*(`{3,}|~{3,})')
 
 # Search ranking (calculate_relevance_score): Meilisearch's _rankingScore, scaled into
 # 1 - TITLE_BOOST_MAX, plus a boost for a page whose title is the name the query asks for.
@@ -756,6 +783,12 @@ def transform_internal_links(content: str, file_path: str) -> str:
     against the page (no legacy link starts so), so a link whose page is gone never
     resolves to a page of the same name at the framework's root. The hint leaves out the
     link's #fragment: expand_result takes a file path."""
+    return link_hints(content, file_path)[0]
+
+
+def link_hints(content: str, file_path: str) -> Tuple[str, List[Tuple[int, int]]]:
+    """transform_internal_links' text, and where each local link went in it: the (start,
+    end) of its hint, or of the link itself when it stays (summary_text cuts neither)."""
     parts = file_path.split("/")
     framework_dir = f"documentation/{parts[1]}" if len(parts) > 2 else ""
 
@@ -779,7 +812,31 @@ def transform_internal_links(content: str, file_path: str) -> str:
         search_term = ' '.join(names).replace('-', ' ')
         return f"{text} (-> search: {' '.join(search_term.split())})"
 
-    return LOCAL_LINK_RE.sub(replace_link, content)
+    pieces: List[str] = []
+    spans: List[Tuple[int, int]] = []
+    length = last = 0
+    for match in LOCAL_LINK_RE.finditer(content):
+        hint = replace_link(match)
+        start = length + match.start() - last
+        pieces += [content[last:match.start()], hint]
+        spans.append((start, start + len(hint)))
+        length, last = start + len(hint), match.end()
+    pieces.append(content[last:])
+    return "".join(pieces), spans
+
+
+def summary_text(overview: str, file_path: str, max_chars: int = SUMMARY_CHARS) -> str:
+    """A summary_mode result's overview: its local links made hints (transform_internal_links),
+    then cut to max_chars, never inside a hint or a link (half of one is neither), and
+    without a link the indexer's own cut left unclosed at its end."""
+    text, spans = link_hints(overview, file_path)
+    if len(text) > max_chars:
+        spans += [match.span() for match in MARKDOWN_LINK_RE.finditer(text)]
+        cut = max_chars
+        while any(start < cut < end for start, end in spans):
+            cut = min(start for start, end in spans if start < cut < end)
+        text = text[:cut]
+    return UNCLOSED_LINK_RE.sub("", text.rstrip()).rstrip()
 
 
 def extract_section(content: str, section_name: str) -> str:
@@ -891,6 +948,50 @@ def get_file_chunks(file_path: str) -> List[Dict[str, Any]]:
     return chunks
 
 
+def link_url(url: str) -> str:
+    """A result's URL as a markdown link holds it: every character a URL can't hold as it is
+    percent-encoded (a space ends a link's destination: sourcekit-lsp's "Configuration
+    File.md"), and its parentheses too when they don't pair up (Apple cuts a long symbol's
+    URL inside its argument list, and an unclosed "(" leaves no link). Paired ones stay, as
+    in Apple's URLs (init(_:)). The index's URL, as the scraper wrote it, is left as it is."""
+    url = quote(url, safe=URL_SAFE_CHARACTERS)
+    depth = 0
+    for char in url:
+        depth += {"(": 1, ")": -1}.get(char, 0)
+        if depth < 0:
+            break
+    if depth:
+        url = url.replace("(", "%28").replace(")", "%29")
+    return url
+
+
+def page_title(hit: Dict[str, Any]) -> str:
+    """A page's title, as indexed; its file name for a page indexed without one (by an
+    indexer before PROCESSOR_VERSION 4: a README that starts at '## ')."""
+    name = posixpath.basename(str(hit.get("file_path") or "")).removesuffix(".md")
+    return str(hit.get("title") or "") or name or "Untitled"
+
+
+def page_sections(content: str) -> List[str]:
+    """The sections of a page expand_result's sections can name: its headings of level
+    2-6 outside code, lowercased with '_' for spaces (as in 'platform_considerations'),
+    each once, in page order."""
+    names: List[str] = []
+    fence = ""  # the open code block's fence character, "" outside one
+    for line in content.split("\n"):
+        fence_match = FENCE_RE.match(line)
+        if fence_match:
+            marker = fence_match.group(1)[0]
+            fence = "" if fence == marker else fence or marker
+            continue
+        heading = None if fence else HEADING_LINE_RE.match(line)
+        if heading:
+            name = "_".join(heading.group(2).lower().split())
+            if name not in names:
+                names.append(name)
+    return names
+
+
 def link_label(url: str) -> str:
     """A result link's label, named by the URL's host: "View on Apple Developer" only for
     Apple's own pages (the index also holds GitHub, MLX and coremltools docs)."""
@@ -965,7 +1066,8 @@ def search_apple_docs(
             when either was cut
         framework: Only return results from this framework (e.g., 'SwiftUI', 'UIKit', 'CarPlay')
         strict_framework: Deprecated, no effect (framework always filters); accepted for older clients
-        platform: Filter by platform: 'ios', 'macos', 'tvos', 'watchos', 'visionos', or 'all'
+        platform: Filter by platform: 'ios', 'ipados', 'macos', 'mac catalyst', 'tvos', 'watchos',
+            'visionos', or 'all'
         limit: Number of results (1-20, default: 10)
         relevance_threshold: Minimum relevance score (0.0-1.0)
         token_budget: Response size limit in tokens (1000-25000, default: 5000)
@@ -1028,8 +1130,10 @@ def search_apple_docs(
         filters.append(f'framework = "{escape_filter_value(framework)}"')
     if platform_filter:
         filters.append(f'platforms = "{escape_filter_value(platform_filter)}"')
-    if not (searchable_filter_value(framework) and searchable_filter_value(platform_filter)):
-        # No framework or platform has a backslash, and a search can't filter on one
+    if not (searchable_filter_value(framework) and searchable_filter_value(platform_filter)) or (
+            platform_filter and platform_filter not in [name.lower() for name in PLATFORMS]):
+        # No framework or platform has a backslash, and a search can't filter on one; a
+        # platform no page has matches nothing (the reply names the platforms)
         return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
 
     # Search attributes
@@ -1190,7 +1294,7 @@ def search_apple_docs(
         result_lines = []
         relevance = hit.get('_relevance', 0)
 
-        result_lines.append(f"## {rank}. {hit.get('title', 'Untitled')} ({int(relevance * 100)}%)")
+        result_lines.append(f"## {rank}. {page_title(hit)} ({int(relevance * 100)}%)")
         # A hit from a long page is one of its parts: expand_result's part reads it
         part = part_label(hit)
         result_lines.append(f"Framework: {hit.get('framework', 'Unknown')} | Type: {hit.get('kind', '')}"
@@ -1199,14 +1303,15 @@ def search_apple_docs(
         if hit.get("file_path"):
             result_lines.append(f"Path: `{hit.get('file_path')}`")
         if hit.get("url"):
-            result_lines.append(f"[{link_label(hit['url'])}]({hit['url']})")
+            result_lines.append(f"[{link_label(hit['url'])}]({link_url(hit['url'])})")
         result_lines.append("")
 
         body = ""
         if not summary_mode and hit.get("content"):
             body = transform_internal_links(hit.get("content", ""), str(hit.get("file_path", "")))
         elif hit.get("overview"):
-            body = hit.get("overview", "")[:400]
+            # Its links as hints, as the content's and the deprecation's
+            body = summary_text(str(hit["overview"]), str(hit.get("file_path", "")))
         if summary_mode and hit.get("deprecation"):
             # What to use instead, its links as hints (the content holds it as the page does)
             deprecation = transform_internal_links(str(hit["deprecation"]), str(hit.get("file_path", "")))
@@ -1264,9 +1369,20 @@ def _build_no_results_response(query: str, framework: str, platform: str, has_wi
         lines.append("   - Try simpler keywords")
         lines.append("   - Use wildcards: Button* or NSTable*")
     if framework:
+        names = {name.lower(): name for name in get_framework_counts()}
+        if names and framework.lower() not in names:
+            # A name no page has (no names: the counts are unavailable, so nothing is said)
+            close = difflib.get_close_matches(framework.lower(), list(names), n=FRAMEWORK_SUGGESTIONS)
+            lines.append(f"   - '{framework}' is not a framework in the index"
+                         + (f": did you mean {', '.join(repr(names[name]) for name in close)}?" if close else ""))
+            lines.append("   - list_frameworks lists every framework's name (its query filters them)")
         lines.append("   - Try without framework filter")
     if platform and platform != "all":
-        lines.append("   - Try without platform filter")
+        if platform.lower() not in [name.lower() for name in PLATFORMS]:
+            lines.append(f"   - '{platform}' is not a platform: use one of "
+                         + ", ".join(name.lower() for name in PLATFORMS) + ", or all")
+        else:
+            lines.append("   - Try without platform filter")
     return "\n".join(lines)
 
 
@@ -1295,7 +1411,8 @@ def expand_result(
     Args:
         file_path: Symbol name (e.g., 'Button') or file path from search results
         sections: Specific sections to include (e.g., ['overview', 'declaration']), taken from the
-            whole page (part is ignored)
+            whole page (part is ignored); a name the page has no section for is reported with
+            the names it has
         framework: Framework to look a symbol up in (e.g., 'SwiftUI'); use it for names that exist
             in many frameworks, like 'List', 'Text' or 'View'. Ignored for file paths
         part: Part of a long page to start from, from 1 (a search result from a long page shows
@@ -1386,13 +1503,24 @@ def expand_result(
     if sections:
         # From the whole page, so a section that spans two chunks comes whole
         content = "\n".join(pieces)
-        output = [f"# {chunks[0].get('title', 'Documentation')}", ""]
+        output = [f"# {page_title(chunks[0])}", ""]
+        available = page_sections(content)
+        missing = []
         for section in sections:
             section_content = transform_internal_links(extract_section(content, section), doc_path)
             if section_content:
                 output.append(f"## {section.title()}")
                 output.append(section_content)
                 output.append("")
+            elif "_".join(section.lower().replace("_", " ").split()) not in available:
+                missing.append(section)
+        if missing:
+            # Name what the page has, so the next call can ask for it
+            listed = ", ".join(available[:SECTIONS_LISTED]) + (
+                f" and {len(available) - SECTIONS_LISTED} more" if len(available) > SECTIONS_LISTED else "")
+            notes.insert(0, f"No section {', '.join(repr(name) for name in missing)} in `{doc_path}`. "
+                         + (f"Its sections: {listed}." if available else
+                            "It has no sections: expand_result without sections returns it whole."))
         text = "\n".join(output)
         if estimate_tokens(text) > EXPAND_TOKEN_CAP:
             text = cut_text(text, EXPAND_TOKEN_CAP * 4) + (

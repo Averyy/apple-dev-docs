@@ -526,6 +526,20 @@ Literal {{ braces }} stay."""
                              "---\n\n# Nested\n\nNo official URL: [kept](/documentation/x).")
 
 
+async def test_urls_built_from_file_names_are_percent_encoded(site: FakeUpstream) -> None:
+    """A file whose name holds spaces is fetched and saved under its name, its url (its
+    GitHub page, or its official_url) percent-encoded so a link to it is valid markdown."""
+    site.github_file("org/site", "docs/interop/Using C++ Types.md", "# Using C++ Types\n")
+    site.github_file("org/site", "docs/interop/B.md",
+                     "---\ntitle: B\nofficial_url: https://swift.example/documentation/my guide/\n---\n\nBody.\n")
+    assert await run() == 0
+    out = scrape_swift_docs.OUTPUT_DIR
+    assert (out / "Interop/Using C++ Types.md").read_text().startswith(
+        "---\nsource: org/site\nurl: https://github.com/org/site/blob/main/docs/interop/Using%20C++%20Types.md\n---\n")
+    assert (out / "Interop/B.md").read_text().startswith(
+        "---\nsource: org/site\nurl: https://swift.example/documentation/my%20guide/\n---\n")
+
+
 async def test_an_unreadable_front_matter_keeps_the_page(site: FakeUpstream, caplog: pytest.LogCaptureFixture) -> None:
     """Front matter YAML can't load (an invalid date raises ValueError, not
     a YAMLError): the page is kept as text under its header, with a warning,

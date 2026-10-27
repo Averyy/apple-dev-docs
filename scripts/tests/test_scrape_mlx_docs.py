@@ -968,6 +968,34 @@ async def test_doc_links_resolve_in_their_own_catalog(site: FakeUpstream, monkey
     assert "See <doc:memory>." in (out / "README.md").read_text()
 
 
+async def test_urls_built_from_file_names_are_percent_encoded(site: FakeUpstream,
+                                                                monkeypatch: pytest.MonkeyPatch) -> None:
+    """A GitHub file whose name holds spaces (sourcekit-lsp's "Configuration File.md") is
+    fetched and saved under its name, its url percent-encoded so a link to it is valid
+    markdown; so is a DocC catalog's assets URL."""
+    catalog = GitHubDocSource(name="lib-swift", repo="org/lib-swift", branch="main",
+                              output_dir="Lib-Swift/lib-swift", framework="Lib-Swift", files=["README.md"],
+                              directories=["Docs", "My Lib.docc"])
+    monkeypatch.setattr(scrape_mlx_docs, "GITHUB_SOURCES", [GITHUB[0], catalog])
+    site.github_file("org/lib-swift", "Docs/Configuration File.md", "# Configuration File\n")
+    site.github_file("org/lib-swift", "My Lib.docc/Intro.md", "# Intro\n\n![A chart.](chart)\n")
+    assert await run() == 0
+    out = scrape_mlx_docs.OUTPUT_BASE / "Lib-Swift/lib-swift"
+    assert (out / "Docs/Configuration File.md").read_text().startswith(
+        "---\nsource: lib-swift\nframework: Lib-Swift\n"
+        "url: https://github.com/org/lib-swift/blob/main/Docs/Configuration%20File.md\n---\n\n# Configuration File\n")
+    assert ("![A chart.](https://raw.githubusercontent.com/org/lib-swift/main/My%20Lib.docc/Assets/chart@2x.png)"
+            in (out / "My Lib.docc/Intro.md").read_text())
+
+
+def test_a_page_url_is_written_percent_encoded() -> None:
+    """A page's url as front matter and a link can hold it: a space or a non-ASCII letter
+    encoded, its delimiters and escapes kept."""
+    source = WebPageSource(name="X", base_url="https://h.test/app-store/", output_dir="X", framework="X")
+    markdown = scrape_mlx_docs.html_to_markdown(WEB_PAGE, source, "https://h.test/app-store/my page/caf\u00e9%2F?a=b#c")
+    assert "\nurl: https://h.test/app-store/my%20page/caf%C3%A9%2F?a=b#c\n" in markdown
+
+
 async def test_web_pages_are_fetched_one_by_one_never_crawled(site: FakeUpstream) -> None:
     """Each configured page is fetched once and saved under its path without
     the trailing slash, from its main; a link to another page of the site is

@@ -62,11 +62,14 @@ from utilities.source_policy import (
     KeptLocation,
     ScrapeRun,
     discover_github_markdown,
+    encode_url,
     fetch_github_raw,
+    github_file_url,
     has_file_named,
     is_under,
     list_github_directory,
     policy_metadata,
+    quote_path,
 )
 
 # Setup logging
@@ -247,7 +250,7 @@ def docc_page(source: DocSource, file_path: str, output_path: Path) -> Optional[
         if other.repo == source.repo and other.branch == source.branch and docc_catalog(other.path) == catalog
     ]
     return DocCPage(output_path, catalog_articles(directories),
-                    f"{GITHUB_RAW}/{source.repo}/{source.branch}/{catalog}/Assets")
+                    f"{GITHUB_RAW}/{source.repo}/{source.branch}/{quote_path(catalog)}/Assets")
 
 
 def clean_docc_content(content: str, filename: str, docc: Optional[DocCPage] = None) -> str:
@@ -453,13 +456,13 @@ def add_source_header(content: str, source: DocSource, file_path: str) -> str:
     body is cleaned (clean_jekyll_body). A root-relative link on a page with
     an official_url is on that page's site: resolved against it.
     """
-    url = f"https://github.com/{source.repo}/blob/{source.branch}/{file_path}"
+    url = github_file_url(source.repo, source.branch, file_path)
     front_matter, body = split_front_matter(content)
     if front_matter is not None:
         content = clean_jekyll_body(body)
         official_url = front_matter.get('official_url')
         if isinstance(official_url, str) and official_url.startswith(('http://', 'https://')):
-            url = official_url
+            url = encode_url(official_url)
             content = map_outside_code(content, lambda prose: ROOT_RELATIVE_LINK_PATTERN.sub(
                 lambda match: match.group(1) + urljoin(official_url, match.group(2)), prose))
         title = front_matter.get('title')

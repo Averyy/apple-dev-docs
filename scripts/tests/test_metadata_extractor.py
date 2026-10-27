@@ -322,6 +322,20 @@ Here's how to use it.
         self.assertIn("MyClass", result)
         self.assertNotIn("Usage", result)
     
+    def test_extract_overview_is_never_cut_inside_a_link(self) -> None:
+        """An overview over 500 characters is cut before a link the cut would fall in, at 500
+        characters otherwise."""
+        link = "[`updatePostbackConversionValue(_:coarseValue:)`](./skadnetwork/updatepostback%28_,coarsevalue%29.md)"
+        content = "# A\n\n## Overview\n\n" + "x" * 480 + " See " + link + " for more.\n"
+        self.assertEqual(self.extractor.extract_overview(content), "x" * 480 + " See")
+        # A link with parentheses in its URL, and an image
+        for link in ("[frame](https://developer.apple.com/documentation/swiftui/view/frame(width:height:))",
+                     "![Diagram](https://h.test/diagram.png)"):
+            self.assertEqual(self.extractor.extract_overview("# A\n\n" + "y" * 495 + " " + link + "\n"), "y" * 495)
+        # One that ends before the cut stays whole
+        content = "# A\n\n[B](b.md) " + "z" * 600 + "\n"
+        self.assertEqual(self.extractor.extract_overview(content), "[B](b.md) " + "z" * 490)
+
     def test_extract_overview_skips_header_lines(self) -> None:
         """Without an Overview section: the abstract, not the header's **Key**: value lines."""
         apple = """# isResponding
@@ -564,6 +578,29 @@ struct MyView: View {
         self.assertEqual(metadata["title"], "PackageManager.BuildParameters")
         self.assertEqual(metadata["kind"], "struct")
         self.assertEqual(metadata["overview"], "Parameters for a build.")
+
+    def test_a_page_without_a_title_line_is_never_untitled(self) -> None:
+        """A page without a "# " heading (MLX's mlx-lm README starts at "## MLX LM") takes its
+        front matter's title, else its first heading of any level, else its file name; a
+        "# " line in code is never its title."""
+        front = "---\nsource: mlx-lm\nframework: MLX\nurl: https://github.com/ml-explore/mlx-lm/blob/main/README.md\n---\n\n"
+        readme = front + "## MLX LM \n\nMLX LM is a Python package.\n\n```sh\n# install it\npip install mlx-lm\n```\n"
+        path = self.create_test_file(readme, "documentation/MLX/mlx-lm/README.md")
+        metadata = self.extractor.extract_metadata(readme, path)
+        self.assertEqual(metadata["title"], "MLX LM")
+        self.assertEqual(metadata["api_name"], "MLX LM")
+        # A "# " heading after code is still the title; the "# " line in the code isn't
+        code_first = "```python\n# not a title\n```\n\n## Setup ##\n\n# Real Title\n"
+        self.assertEqual(self.extractor.extract_title(code_first), "Real Title")
+        self.assertEqual(self.extractor.extract_title("~~~\n# no\n~~~\n\n### Third ###\n"), "Third")
+        # The front matter's title before a lower heading
+        self.assertEqual(self.extractor.extract_title("---\ntitle: Guide\n---\n\n## Part\n"), "Guide")
+        # Nothing but text: the file name, when one is given
+        plain = "Just text.\n\n```\n# code\n```\n"
+        self.assertEqual(self.extractor.extract_title(plain, "documentation/X/getting-started.md"), "getting-started")
+        self.assertEqual(self.extractor.extract_title(plain), "")
+        self.assertEqual(self.extractor.extract_api_name(plain, "documentation/X/getting-started.md"),
+                         "getting-started")
 
 if __name__ == "__main__":
     unittest.main()

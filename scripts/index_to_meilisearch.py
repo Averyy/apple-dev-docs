@@ -74,7 +74,10 @@ TASK_TIMEOUT_MS = 10 * 60 * 1000
 # 2: sha1(file_path) document ids, one id per chunk, oversized blocks split wherever they
 #    come; kind, platforms, url, api_name and overview from the page's own lines
 # 3: deprecated and deprecation (metadata_extractor)
-PROCESSOR_VERSION = 3
+# 4: a page without a "# " title takes its front matter's title, else its first heading,
+#    else its file name, never an empty title (metadata_extractor extract_title); an
+#    overview is never cut inside a link (cut_overview)
+PROCESSOR_VERSION = 4
 
 # The hash file is a flat map of file path -> content hash plus this one key, which no
 # .md path can be: the processor version and the createdAt of the live index the hashes
@@ -172,7 +175,7 @@ INDEX_SETTINGS: Dict[str, Any] = {
     ],
     # Show all frameworks in facets
     'faceting': {
-        'maxValuesPerFacet': 500  # Allow up to 500 framework values
+        'maxValuesPerFacet': 5000  # Every framework value (462 on 2026-10-26): list_frameworks and the no-results message read the full list
     },
 }
 

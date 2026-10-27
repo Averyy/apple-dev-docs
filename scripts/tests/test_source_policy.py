@@ -17,8 +17,11 @@ from utilities.source_policy import (
     FetchFailed,
     KeptLocation,
     ScrapeRun,
+    encode_url,
     fetch_with_retry,
+    github_file_url,
     has_file_named,
+    quote_path,
     status_failure,
     unmatched,
     valve_trips,
@@ -46,6 +49,22 @@ def write(base: Path, *paths: str) -> List[Path]:
 
 
 # -- fetching ---------------------------------------------------------------
+
+def test_urls_are_percent_encoded() -> None:
+    """A URL built from a file name holds no character a URL can't (a markdown link with a
+    space in its URL isn't a link)."""
+    assert (github_file_url("swiftlang/sourcekit-lsp", "main", "Documentation/Configuration File.md")
+            == "https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Configuration%20File.md")
+    # A file name's own "%", "?" and "#" are encoded too; the path's other characters stay
+    assert quote_path("a/100% done?#1.md") == "a/100%25%20done%3F%231.md"
+    assert quote_path("Sources/init(_:)+x,y=z@~.md") == "Sources/init(_:)+x,y=z@~.md"
+    assert quote_path("caf\u00e9.md") == "caf%C3%A9.md"
+    # A URL keeps its delimiters and escapes
+    assert (encode_url("https://h.test/a b/c%20d/(e)?q=\"x\"&r=[1]#f g")
+            == "https://h.test/a%20b/c%20d/(e)?q=%22x%22&r=[1]#f%20g")
+    assert encode_url("https://developer.apple.com/documentation/swift/'...(_:_:)") == (
+        "https://developer.apple.com/documentation/swift/'...(_:_:)")
+
 
 def test_status_failure() -> None:
     assert status_failure(404).gone and status_failure(410).gone

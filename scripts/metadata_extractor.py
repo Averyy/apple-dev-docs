@@ -7,7 +7,7 @@ import json
 import hashlib
 import yaml
 from pathlib import Path
-from typing import Dict, List, Optional, Any, Set
+from typing import Dict, List, Optional, Any, Set, Tuple
 import argparse
 from datetime import datetime
 
@@ -15,6 +15,9 @@ from datetime import datetime
 # roleHeading); any other role, or none, is an article. A Framework role always comes
 # with **Kind**: module.
 ROLE_KINDS = {"Article": "article", "API Collection": "collection", "Sample Code": "sample-code"}
+
+# An overview's most characters (extract_overview); the cut never falls inside a link
+OVERVIEW_MAX_CHARS = 500
 
 
 class MetadataExtractor:
@@ -151,9 +154,11 @@ class MetadataExtractor:
         # YAML frontmatter
         self._yaml_end_pattern = re.compile(r'\n---\s*\n')
 
-        # Title extraction
+        # Title extraction (extract_title): the page's "# " heading; a heading line of any
+        # level, without its closing #s; a code fence's opening or closing line
         self._title_h1_pattern = re.compile(r'^#\s+(.+)$', re.MULTILINE)
-        self._title_metadata_pattern = re.compile(r'^title:\s*(.+)$', re.MULTILINE)
+        self._heading_line_pattern = re.compile(r'^(#{1,6})[ \t]+(.+?)(?:[ \t]+#+)?[ \t]*$')
+        self._fence_pattern = re.compile(r'^[ \t]*(`{3,}|~{3,})')
 
         # The header under the title: "**Key**: value" lines (Apple pages: Framework,
         # Kind, Required; the HIG writes "**Key:** value"). An empty value heads a list
@@ -207,6 +212,10 @@ class MetadataExtractor:
             re.IGNORECASE | re.MULTILINE
         )
         self._rule_pattern = re.compile(r'-{3,}|\*{3,}|_{3,}')
+        # A markdown link or image, its text holding brackets two levels deep and its
+        # destination balanced parentheses (cut_overview)
+        self._markdown_link_pattern = re.compile(
+            r'!?\[(?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*\]\((?:[^()\s]|\([^()\s]*\))*\)')
         self._whitespace_pattern = re.compile(r'\s+')
         self._word_pattern = re.compile(r'\w')
 
@@ -265,7 +274,7 @@ class MetadataExtractor:
             "file_path": self.normalize_file_path(file_path),
             "framework": self.extract_framework(content, file_path),
             "api_name": self.extract_api_name(content, file_path),
-            "title": self.extract_title(content),
+            "title": self.extract_title(content, file_path),
             "platforms": self.extract_platforms(content),
             "kind": self.extract_kind(content),
             "deprecated": self.extract_deprecated(content),
@@ -403,19 +412,49 @@ class MetadataExtractor:
             return False
         return url.rstrip('/').rsplit('/', 1)[-1].lower() != name.lower()
     
-    def extract_title(self, content: str) -> str:
-        """Extract document title."""
-        # Look for first level header
+    def extract_title(self, content: str, file_path: str = "") -> str:
+        """
+        The page's title: its "# " heading, else its front matter's title, else its first
+        heading of any level (a GitHub README can start at "## MLX LM"), never a line of
+        code ("# install" in a shell block); else, when file_path is given, its file name,
+        so a page is never indexed with an empty title. "" for a page without any of them
+        when no file_path is given (extract_api_name then takes the file name its way).
+        """
+        # Most pages start with their title: no code before it
         title_match = self._title_h1_pattern.search(content)
-        if title_match:
+        if title_match and '```' not in content[:title_match.start()] and '~~~' not in content[:title_match.start()]:
             return title_match.group(1).strip()
 
-        # Look for title in metadata
-        metadata_match = self._title_metadata_pattern.search(content)
-        if metadata_match:
-            return metadata_match.group(1).strip()
+        headings = self.headings(content)
+        title = next((text for level, text in headings if level == 1), "")
+        if title:
+            return title
+        front_matter_title = self.parse_yaml_frontmatter(content).get("title")
+        if isinstance(front_matter_title, str) and front_matter_title.strip():
+            return front_matter_title.strip()
+        if headings:
+            return headings[0][1]
+        return Path(file_path).stem if file_path else ""
 
-        return ""
+    def headings(self, content: str) -> List[Tuple[int, str]]:
+        """The page's headings outside code blocks, (level, text), in page order."""
+        headings: List[Tuple[int, str]] = []
+        fence = ""  # the open code block's fence (its character), "" outside one
+        for line in content.split('\n'):
+            fence_match = self._fence_pattern.match(line)
+            if fence_match:
+                marker = fence_match.group(1)[0]
+                if not fence:
+                    fence = marker
+                elif marker == fence:
+                    fence = ""
+                continue
+            if fence:
+                continue
+            heading = self._heading_line_pattern.match(line)
+            if heading:
+                headings.append((len(heading.group(1)), heading.group(2).strip()))
+        return headings
 
     def extract_platforms(self, content: str) -> List[str]:
         """
@@ -546,7 +585,7 @@ class MetadataExtractor:
         for heading in self._overview_heading_pattern.finditer(content):
             overview = self.section_paragraph(content, heading.end())
             if overview:
-                return overview[:500]  # Limit to 500 chars
+                return self.cut_overview(overview)
 
         # Try to get first non-empty paragraph after title, past the header's
         # "**Key**: value" lines (and the list an empty one heads, e.g. **Availability**:)
@@ -601,9 +640,21 @@ class MetadataExtractor:
         # A paragraph without a letter or digit (a stray "**" or "}") is no summary
         overview = ' '.join(overview_lines)
         if self._word_pattern.search(overview):
-            return overview[:500]
+            return self.cut_overview(overview)
         
         return ""
+
+    def cut_overview(self, overview: str) -> str:
+        """An overview cut to OVERVIEW_MAX_CHARS, before a link the cut would fall in: half a
+        link is neither a link nor text (259 overviews ended in one)."""
+        if len(overview) <= OVERVIEW_MAX_CHARS:
+            return overview
+        cut = OVERVIEW_MAX_CHARS
+        for link in self._markdown_link_pattern.finditer(overview):
+            if link.start() < cut < link.end():
+                cut = link.start()
+                break
+        return overview[:cut].rstrip()
     
     def section_paragraph(self, content: str, start: int) -> str:
         """

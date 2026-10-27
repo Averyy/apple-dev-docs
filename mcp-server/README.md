@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.4.2 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.4.3 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,13 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.4.3
+- `summary_mode` results show the overview's local links as hints too (`NavigationLink (-> expand_result: documentation/SwiftUI/navigationlink.md)`), as the content and the deprecation note do; the overview is cut to 400 characters after that, never inside a hint or a link. The indexer's own 500-character cut of an overview no longer falls inside a link either (259 overviews ended in half a link; until the rebuild below, such a half link isn't shown)
+- A result's link is valid markdown: a character a URL can't hold is percent-encoded (`Configuration%20File.md`: seven sourcekit-lsp docs had spaces in their URL), and so are the parentheses of a URL whose parentheses don't pair up (20 pages, 15 Apple and 5 Swift Package Index, whose URL the site cut inside its argument list). The scrapers now encode the URLs they build from file names (GitHub pages, DocC catalog assets) and the page URLs they write (MLX `RENDER_VERSION` 3: the next MLX scrape rewrites those seven docs)
+- No page is indexed with an empty title: a page without a `# ` heading takes its front matter's title, else its first heading of any level, else its file name, and a `# ` line in code is never a title (`documentation/MLX/mlx-lm/README.md`, which starts at `## MLX LM`, showed `## 1.  (NN%)`; `PROCESSOR_VERSION` 4, so the first start rebuilds the index by swap). Until then a result without a title shows its file name
+- A search filtering on a framework the index doesn't have says so, with the closest framework names and `list_frameworks`; one filtering on a platform that isn't one (`android`) says so and lists the platforms (`ios`, `ipados`, `mac catalyst`, `macos`, `tvos`, `visionos`, `watchos`, or `all`) instead of searching
+- `expand_result` with a section the page doesn't have (`sections=["no_such_section"]`) names it and lists the page's sections, instead of returning only the page's title
 
 ### v3.4.2
 - `/health`'s defaults follow the corpus after Batch 4 (~404K documents): `healthy` from 363,000 documents (`MIN_EXPECTED_DOCS`, ~90%), and indexing progress counted against 404,000 (`EXPECTED_FULL_INDEX_SIZE`)

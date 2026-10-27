@@ -372,7 +372,9 @@ class ToolTestCase(unittest.TestCase):
 
     def use_index(self, documents: List[Dict[str, Any]]) -> FakeIndex:
         index = FakeIndex(documents)
-        for name, value in (("meili_index", index), ("ensure_meilisearch_connection", lambda: True)):
+        # The framework counts are this index's (get_framework_counts caches them)
+        for name, value in (("meili_index", index), ("ensure_meilisearch_connection", lambda: True),
+                            ("_frameworks_cache", None)):
             patcher = patch.object(apple_docs_mcp, name, value)
             patcher.start()
             self.addCleanup(patcher.stop)
@@ -436,6 +438,32 @@ class TestLinkLabels(ToolTestCase):
         self.assertEqual(apple_docs_mcp.link_label("https://ml-explore.github.io/mlx/build/html/index.html"),
                          "View on ml-explore.github.io")
         self.assertEqual(apple_docs_mcp.link_label("not a url"), "View on source")
+
+    def test_link_urls_are_valid_markdown(self) -> None:
+        link_url = apple_docs_mcp.link_url
+        # A space (a GitHub file named "Configuration File.md", scraped before its URL was
+        # encoded) ends a link's destination
+        self.assertEqual(link_url("https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/"
+                                  "Configuration File.md"),
+                         "https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Configuration%20File.md")
+        # Paired parentheses, escapes, delimiters and quotes Apple uses stay
+        for url in ("https://developer.apple.com/documentation/swift/'...(_:_:)",
+                    "https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)",
+                    "https://h.test/a%20b?q=1&r=[2]#f", "https://h.test/x/Configuration%20File.md"):
+            self.assertEqual(link_url(url), url)
+        # Unpaired ones (Apple cuts a long symbol's URL inside its argument list) leave no link
+        self.assertEqual(link_url("https://developer.apple.com/documentation/metal/x/draw(_:patchstart:patch-4mdz8"),
+                         "https://developer.apple.com/documentation/metal/x/draw%28_:patchstart:patch-4mdz8")
+        self.assertEqual(link_url("https://h.test/a)b(c"), "https://h.test/a%29b%28c")
+        self.assertEqual(link_url("https://h.test/caf\u00e9 <x>"), "https://h.test/caf%C3%A9%20%3Cx%3E")
+
+    def test_a_result_link_with_a_space_is_encoded(self) -> None:
+        url = "https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Configuration File.md"
+        self.use_index([symbol_doc("documentation/sourcekit-lsp/Documentation/Configuration File.md",
+                                   "Configuration File", "sourcekit-lsp", kind="article", url=url)])
+        result = search_apple_docs("Configuration", summary_mode=True)
+        self.assertIn("[View on GitHub](https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/"
+                      "Configuration%20File.md)\n", result)
 
     def test_search_results_carry_the_label(self) -> None:
         mlx = "https://ml-explore.github.io/mlx/build/html/python/array.html"
@@ -994,6 +1022,89 @@ class TestWildcards(ToolTestCase):
             "   - Use wildcards: Button* or NSTable*\n   - Try without platform filter"))
 
 
+class TestSummaries(ToolTestCase):
+    """summary_mode's overview: its local links as hints, cut never inside one; a page indexed
+    without a title is shown by its file name."""
+
+    STACK = "documentation/SwiftUI/navigationstack.md"
+
+    def test_overview_links_become_hints(self) -> None:
+        self.use_docs(["documentation/SwiftUI/navigationlink.md"])
+        overview = ("A view that displays a root view and enables you to present additional views over the "
+                    "root view. Use a [`NavigationLink`](./navigationlink.md) or a [path](./gone.md).")
+        self.use_index([dict(symbol_doc(self.STACK, "NavigationStack", "SwiftUI", kind="struct"), overview=overview)])
+        result = search_apple_docs("NavigationStack", summary_mode=True)
+        self.assertIn("Use a `NavigationLink` (-> expand_result: documentation/SwiftUI/navigationlink.md) or a "
+                      "path (-> search: gone).\n", result)
+        self.assertNotIn("](./", result)
+
+    def test_the_cut_never_halves_a_hint_or_a_link(self) -> None:
+        self.use_docs(["documentation/SwiftUI/navigationlink.md"])
+        summary = apple_docs_mcp.summary_text
+        hint = "`NavigationLink` (-> expand_result: documentation/SwiftUI/navigationlink.md)"
+        # A hint the cut would fall in goes whole
+        text = "x" * 380 + " [`NavigationLink`](./navigationlink.md) more."
+        self.assertEqual(summary(text, self.STACK), "x" * 380)
+        # One that ends before the cut stays
+        text = "x" * 200 + " [`NavigationLink`](./navigationlink.md) " + "y" * 300
+        self.assertEqual(summary(text, self.STACK), "x" * 200 + " " + hint + " " + "y" * (400 - 202 - len(hint)))
+        # A link with a URL, or an image, the cut would fall in goes whole
+        for link in ("[Apple](https://developer.apple.com/documentation/swiftui/view/frame(width:height:))",
+                     "![Diagram](https://h.test/diagram.png)"):
+            self.assertEqual(summary("x" * 390 + " " + link + " end", self.STACK), "x" * 390)
+        # A link the indexer's 500-character cut left unclosed never shows; brackets that open
+        # no link stay (a range, a command's options)
+        self.assertEqual(summary("Short text, see [`NavigationLink`](./navigati", self.STACK), "Short text, see")
+        for text in ("Drawn from [min, max) for floats, and [min, max] for integers.",
+                     "swift package add-setting [--manifest-cache=<manifest-cache>] [--disable",
+                     "In the range `[0.0, 15.0/16.0)`. The origin `(0,0)` is at the top-left."):
+            self.assertEqual(summary(text, self.STACK), text)
+        # Under the limit: whole, its links as hints
+        self.assertEqual(summary("See [`NavigationLink`](./navigationlink.md).", self.STACK), f"See {hint}.")
+
+    def test_a_page_indexed_without_a_title_shows_its_file_name(self) -> None:
+        readme = dict(symbol_doc("documentation/MLX/mlx-lm/README.md", "", "MLX", kind="article",
+                                 api_name="README"), content="MLX LM is a Python package.")
+        self.use_index([readme])
+        self.assertEqual(result_titles(search_apple_docs("MLX LM", summary_mode=True)), ["README"])
+        self.assertEqual(expand_result(readme["file_path"], sections=["overview"]).splitlines()[0], "# README")
+
+
+class TestNoResults(ToolTestCase):
+    """A filter nothing can match says why: a framework the index doesn't have (with close
+    names and list_frameworks), a platform that isn't one (with the platforms)."""
+
+    def test_an_unknown_framework_points_to_list_frameworks(self) -> None:
+        self.use_index([symbol_doc("documentation/SwiftUI/button.md", "Button", "SwiftUI", kind="struct"),
+                        symbol_doc("documentation/UIKit/uibutton.md", "UIButton")])
+        result = search_apple_docs("Button", framework="SwiftUl", summary_mode=True)
+        self.assertTrue(result.startswith("No results found for 'Button'\n   Framework: SwiftUl\n"))
+        self.assertTrue(result.endswith(
+            "   - 'SwiftUl' is not a framework in the index: did you mean 'SwiftUI'?\n"
+            "   - list_frameworks lists every framework's name (its query filters them)\n"
+            "   - Try without framework filter"))
+        result = search_apple_docs("Button", framework="NoSuchFrameworkXYZ", summary_mode=True)
+        self.assertIn("   - 'NoSuchFrameworkXYZ' is not a framework in the index\n"
+                      "   - list_frameworks lists every framework's name", result)
+        # A framework the index has, with no match: only the plain tip
+        result = search_apple_docs("Qqq", framework="swiftui", summary_mode=True)
+        self.assertNotIn("list_frameworks", result)
+        self.assertTrue(result.endswith("   - Try without framework filter"))
+
+    def test_an_invalid_platform_names_the_platforms(self) -> None:
+        index = self.use_index([symbol_doc("documentation/SwiftUI/button.md", "Button", "SwiftUI", kind="struct",
+                                           platforms=ALL_PLATFORMS)])
+        result = search_apple_docs("Button", platform="android", summary_mode=True)
+        self.assertTrue(result.startswith("No results found for 'Button'\n   Platform: android\n"))
+        self.assertTrue(result.endswith("   - 'android' is not a platform: use one of ios, ipados, mac catalyst, "
+                                        "macos, tvos, visionos, watchos, or all"))
+        self.assertEqual(index.searches, [])
+        # Every platform a page can have is filtered on, in any case
+        for platform in ALL_PLATFORMS + ["IOS", "mac catalyst"]:
+            search_apple_docs("Button", platform=platform, summary_mode=True)
+            self.assertEqual(index.searches[-1]["filter"], f'platforms = "{platform.lower()}"', platform)
+
+
 class TestSymbolLookup(ToolTestCase):
     """expand_result's symbol lookup chooses among exact-name types, exact-name pages and the top matches."""
 
@@ -1026,7 +1137,8 @@ class TestSymbolLookup(ToolTestCase):
         self.assertEqual(search_apple_docs("Data", framework="Foundation\\").splitlines()[0],
                          "No results found for 'Data'")
         self.assertEqual(search_apple_docs("Data", platform="ios\\").splitlines()[0], "No results found for 'Data'")
-        self.assertEqual(index.searches, [])
+        # Only the framework names were read, for the reply (get_framework_counts)
+        self.assertEqual([s for s in index.searches if "facets" not in s], [])
 
     def test_a_type_found_past_the_top_matches(self) -> None:
         # Meilisearch ranks every page named "data" alike: the top matches are all properties
@@ -1253,6 +1365,30 @@ class TestExpandResult(ToolTestCase):
                          "## Topics\n### Creating a button\n\n- init(action:label:) (-> search: button init action "
                          "label)\n\n### Styling\n\n- ButtonStyle (-> expand_result: documentation/SwiftUI/"
                          "buttonstyle.md)\n")
+
+    def test_a_section_the_page_lacks_is_named_with_the_pages_sections(self) -> None:
+        button = "documentation/SwiftUI/button.md"
+        page = ("# Button\n\nA control.\n\n## Declaration\n\n```swift\n## not a section\nstruct Button\n```\n\n"
+                "#### Overview\n\nCreate a button.\n\n## Platform considerations\n\nNone.\n\n"
+                "## Topics\n\n### Creating a button\n\n- x\n")
+        self.use_index(page_documents(button, [page], title="Button", framework="SwiftUI", kind="struct"))
+        self.assertEqual(expand_result(button, sections=["no_such_section"]),
+                         f"# Button\n\n---\nNo section 'no_such_section' in `{button}`. Its sections: declaration, "
+                         "overview, platform_considerations, topics, creating_a_button.")
+        # The sections it has come as before, the missing ones are named after them
+        result = expand_result(button, sections=["overview", "Platform considerations", "returns", "see_also"])
+        self.assertTrue(result.startswith("# Button\n\n## Overview\nCreate a button.\n\n"
+                                          "## Platform Considerations\nNone.\n\n---\n"
+                                          "No section 'returns', 'see_also' in "), result)
+        # A page without sections says so
+        self.use_index(page_documents(PATH, ["# Concurrency\n\nJust text.\n"]))
+        self.assertEqual(expand_result(PATH, sections=["topics"]).split("---\n")[1],
+                         f"No section 'topics' in `{PATH}`. It has no sections: expand_result without sections "
+                         "returns it whole.")
+        # Over SECTIONS_LISTED, the rest are counted
+        many = "# Many\n\n" + "".join(f"## S{i}\n\nText.\n\n" for i in range(apple_docs_mcp.SECTIONS_LISTED + 2))
+        self.use_index(page_documents(PATH, [many], title="Many"))
+        self.assertTrue(expand_result(PATH, sections=["x"]).endswith(", s29 and 2 more."))
 
     def test_symbol_lookup_returns_the_whole_page_of_its_best_chunk(self) -> None:
         button = page_documents("documentation/SwiftUI/button.md", ["# Button\n\nA control.\n", "## Topics\n"],
