@@ -437,5 +437,17 @@
     "expected_top3": [
       "https://developer.apple.com/documentation/security/adding-a-password-to-the-keychain"
     ]
+  },
+  {
+    "query": "Metal device",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/metal/mtldevice"
+    ]
+  },
+  {
+    "query": "Contacts store",
+    "expected_top3": [
+      "https://developer.apple.com/documentation/contacts/cncontactstore"
+    ]
   }
 ]

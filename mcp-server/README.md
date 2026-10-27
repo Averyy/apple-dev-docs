@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.5.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.5.1 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,11 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.5.1
+- A type typed without its prefix and in lower case within a framework ranks first among the pages titled with that word: a name in lower case says nothing about case, and so nothing about a prefix either, so the type ranks as high as the best of them and the more general page comes first (`Metal device` → `MTLDevice`, 7th before, behind the `device` properties of Metal's types; `AppKit window` → `NSWindow`, `UIKit button` → `UIButton`, `Contacts contact` → `CNContact`). A type titled with the word itself ranks so too, and comes before the one named so after a prefix (`Foundation url` → `URL`, 4th before; `Foundation data` → `Data`, then `NSData`). Such a type goes before the other pages it ties with (`AppKit color` → `NSColor`, before AppKit's shorter-path `Color` API collection). Not for a name written `@name`, which asks for its own kinds. The results' note names the types' own spelling ("the types named 'ContactStore' after a prefix"), not the spellings looked up
+- The words before the last are also looked up in the singular (in any case), as a compound name has them, so a framework named in the plural finds its types (`Contacts store` → `CNContactStore`, 6th before; `Photos library` → `PHPhotoLibrary`, 18th)
+- Measured on the local index (405,421 documents) against 3.5.0: golden (57 and 66), the audit's 80 queries, 57 probes and 350 random titles unchanged; 30 unprefixed-name probes top-1 23 → 30; 24 framework-word queries 16 → 19; 61 new framework + word queries 28 → 54, none worse
 
 ### v3.5.0
 - A name written as Swift uses it finds its page: `@State`, `@Model`, `@MainActor`, `#Preview` are compared without the `@`/`#` (Meilisearch reads them as separators), and such a name is only a type that can be an attribute (a property wrapper, result builder or global actor: a class, struct, enum, actor or typealias), an attached macro, or for `#Name` a freestanding macro, whose page is titled `Name(…)` (`@Model` → SwiftData's `Model()`; `@State` and `@Model` were past the top 100). A one-word `@name` that no type or macro has (`@escaping`, `@objc`, `@main`, `@discardableResult`) is one of Swift's built-in attributes: it is searched as `name attribute`, which finds The Swift Programming Language's Attributes chapter, and the results say so. A wildcard pattern written so (`@State*`, `#Preview?`) matches the names without the sigil, of those kinds

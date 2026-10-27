@@ -59,7 +59,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.5.0"
+SERVER_VERSION = "3.5.1"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -208,7 +208,15 @@ KIND_DIRECTORY_SUFFIX_RE = re.compile(r"-(?:swift|c|objc)\.[a-z.]+$")
 # api_name_unprefixed (scripts/metadata_extractor.py). Looked up only within a framework
 # the search filters on or the query names, where few types share it, and ranked as a
 # title that is the name but for case (TITLE_NOCASE_BOOST) with a full score: after a
-# page titled with the name itself, before every other page
+# page titled with the name itself, before every other page. A one-word name typed in
+# lower case says nothing about case (TITLE_EXACT_BOOST for every page titled so), and so
+# nothing about a prefix either: the types named so, with a prefix or without, rank as high
+# as the best page titled with the name, and the more general page comes first, as for
+# the name alone ('Metal device': MTLDevice before the device properties of Metal's types;
+# 'Foundation url': URL before the url properties; 'Foundation data': Data, then NSData:
+# level_types). Words typed before the last are also looked up in the singular, as a
+# compound name has them ('Contacts store' -> CNContactStore, 'Photos library' ->
+# PHPhotoLibrary: singular_compound)
 UNPREFIXED_NAME_FIELD = "api_name_unprefixed"
 UNPREFIXED_NAME_BOOST = TITLE_NOCASE_BOOST
 # A file name ending in a DocC disambiguation suffix ('init(_)-1a4oh.md', 'frame-2ifgd.md'):
@@ -982,10 +990,11 @@ def rank_hits(hits: List[Dict]) -> List[Dict]:
     """Hits by relevance (their '_relevance'), best first, a wildcard match not in the
     pattern's case after those that are (its '_case_rank', wildcard_matches). Equally
     relevant hits go a deprecated page after the others (RealityKit's deprecated
-    accessibilityLabel after the current ones), then the more general page first
+    accessibilityLabel after the current ones), then a type level_types raised before the
+    other pages, then the more general page first
     (generality), then in Meilisearch's order."""
     return sorted(hits, key=lambda hit: (hit.get('_case_rank', 0), -hit['_relevance'], bool(hit.get("deprecated")),
-                                         *generality(hit)))
+                                         not hit.get("_leveled"), *generality(hit)))
 
 
 def parent_name(file_path: str) -> str:
@@ -1028,14 +1037,52 @@ def dotted_member_pages(token: str, filters: List[str], params: Dict[str, Any]) 
 def unprefixed_type_pages(names: List[str], filters: List[str], params: Dict[str, Any]) -> List[Dict[str, Any]]:
     """The types whose name without its prefix (UNPREFIXED_NAME_FIELD) is one of names,
     ignoring case, within the filters (at most SYMBOL_CANDIDATES; params: the search's
-    other parameters)."""
+    other parameters), each with its UNPREFIXED_NAME_FIELD."""
     names = [name for name in dict.fromkeys(names) if name and searchable_filter_value(name)]
     if not names or UNPREFIXED_NAME_FIELD not in filterable_attributes():
         # (An index built before the field: none of its types is found so)
         return []
     values = ", ".join(f'"{escape_filter_value(name, max_length=None)}"' for name in names)
     flt = " AND ".join(filters + [f"{UNPREFIXED_NAME_FIELD} IN [{values}]", TYPE_KINDS_FILTER])
-    return list(safe_search("", dict(params, limit=SYMBOL_CANDIDATES, filter=flt)).get("hits", []))
+    # With the name each was found by (the type's own spelling: 'ContactStore')
+    attrs = list(params.get("attributesToRetrieve") or []) + [UNPREFIXED_NAME_FIELD]
+    return list(safe_search("", dict(params, limit=SYMBOL_CANDIDATES, filter=flt,
+                                     attributesToRetrieve=attrs)).get("hits", []))
+
+
+def singular_compound(words: List[str]) -> str:
+    """The name words spell with each word before the last in the singular, as a compound
+    name has them ('Contacts store' -> 'Contactstore', 'Photos library' -> 'Photolibrary'):
+    a final 's' dropped from a word of more than three letters not ending in 'ss', in any
+    case ('CONTACTS store'). '' for one word, or when no such word ends in 's'."""
+    if len(words) < 2:
+        return ""
+    singular = [word[:-1] if len(word) > 3 and word.lower().endswith("s") and not word.lower().endswith("ss")
+                else word for word in words[:-1]]
+    return "".join(singular + words[-1:]) if singular != words[:-1] else ""
+
+
+def level_types(hits: List[Dict[str, Any]], word: str, query: str) -> None:
+    """For a one-word name typed in lower case that types were looked up by without their
+    prefix (word: NamedPages' unprefixed_word; query: the query searched), raise the
+    '_relevance' of each type named so, with its prefix or without (its '_unprefixed', the
+    name it was found by: UNPREFIXED_NAME_FIELD), to the best of the pages titled with the name (an exact
+    title_boost on the query without the words naming the page's framework, as
+    calculate_relevance_score compares). Such a type ('_leveled') goes before the other
+    pages it ties with, then the more general page first (rank_hits): AppKit's NSColor
+    before its 'Color' API collection, whose path is shorter. The query's other words ('Metal device', 'Foundation url') score the
+    pages titled with the name apart, where the name alone scores them alike."""
+    if not word or not word.islower():
+        return
+    titled = {id(hit): hit for hit in hits if not hit.get("_unprefixed") and title_boost(
+        str(hit.get("title", "")), strip_sigils(without_framework_words(query, str(hit.get("framework", ""))))
+    ) == TITLE_EXACT_BOOST}
+    best = max((float(hit["_relevance"]) for hit in titled.values()), default=0.0)
+    for hit in hits:
+        if str(hit.get("_unprefixed", "")).lower() == word or (
+                id(hit) in titled and hit.get("kind") in TYPE_KINDS):
+            hit["_relevance"] = max(float(hit["_relevance"]), best)
+            hit["_leveled"] = True
 
 
 def framework_filter(frameworks: List[str]) -> List[str]:
@@ -1419,7 +1466,9 @@ class NamedPages:
     - 'Type.member' ('Product.purchase', 'DispatchQueue.main.async'): the member's pages
       under the type (dotted_member_pages; '_dotted' for calculate_relevance_score);
     - with a framework (the search's or named), the types named so without their prefix
-      ('Button' in UIKit -> UIButton; '_unprefixed', unprefixed_relevance).
+      ('Button' in UIKit -> UIButton; 'Contacts store' -> CNContactStore, the words
+      before the last also in the singular: singular_compound; '_unprefixed',
+      unprefixed_relevance; level_types for a one-word name in lower case).
 
     hits: the top matches, joined by the pages found; added: what joined them, for the
     results' total; attribute_search: the search run instead, if any."""
@@ -1433,6 +1482,7 @@ class NamedPages:
         self.framework_given = framework_given
         self.added: List[str] = []
         self.attribute_search = ""
+        self.unprefixed_word = ""  # the one-word name types were looked up by without a prefix (level_types)
         self.rest, self.frameworks = named_frameworks(query)
         self.name = strip_sigils(self.rest)
         self.sigil = sigil_kinds(self.rest)
@@ -1475,6 +1525,11 @@ class NamedPages:
             self.join_dotted(token)
         if self.framework_given or self.frameworks:
             names = [self.name if one_word else spelled] + ([whole] if self.frameworks else [])
+            names += [singular_compound(self.rest.split()) if spelled else ""]
+            names += [singular_compound(self.query.split()) if self.frameworks and whole else ""]
+            # A name written '@Name' asks for the kinds it can be (sigil_kinds), which the
+            # pages titled with it may not be: no leveling (level_types)
+            self.unprefixed_word = self.name if one_word and not self.sigil else ""
             self.join_unprefixed([name for name in names if name])
 
     def join_types(self) -> None:
@@ -1534,16 +1589,20 @@ class NamedPages:
             self.added.append(f"the members '{token}' names")
 
     def join_unprefixed(self, names: List[str]) -> None:
-        joined = False
+        # The note names what the joined types matched, in their own spelling ('ContactStore'),
+        # not every spelling looked up ('Contactsstore', 'Contactstore')
+        matched: List[str] = []
         for hit in unprefixed_type_pages(names, self.in_frameworks, self.search_params):
             path = hit.get("file_path")
+            spelling = str(hit.get(UNPREFIXED_NAME_FIELD) or hit.get("api_name", ""))
             if path in self.position:
-                self.hits[self.position[path]]["_unprefixed"] = True
+                self.hits[self.position[path]]["_unprefixed"] = spelling
             else:
-                hit["_unprefixed"] = True
-                joined = self.join(hit) or joined
-        if joined:
-            self.added.append("the types named " + " or ".join(f"'{name}'" for name in dict.fromkeys(names))
+                hit["_unprefixed"] = spelling
+                if self.join(hit):
+                    matched.append(spelling)
+        if matched:
+            self.added.append("the types named " + " or ".join(f"'{name}'" for name in dict.fromkeys(matched))
                               + " after a prefix")
 
 
@@ -1709,6 +1768,7 @@ def search_apple_docs(
     names_total: Optional[int] = None  # names listed for a wildcard pattern's prefix
     added: List[str] = []  # the pages named by the query that joined the top matches
     attribute_search = ""  # the search a built-in attribute's name ran instead (NamedPages)
+    unprefixed_word = ""  # the one-word name types were looked up by without a prefix (NamedPages)
     try:
         results = safe_search(query, search_params)
         hits = results.get("hits", [])
@@ -1732,6 +1792,7 @@ def search_apple_docs(
             named_pages = NamedPages(hits, query, filters, search_params, bool(framework))
             named_pages.join_all(window_full)
             hits, added, attribute_search = named_pages.hits, named_pages.added, named_pages.attribute_search
+            unprefixed_word = named_pages.unprefixed_word
     except Exception as e:
         logger.error(f"Search failed for query '{query}': {e}")
         raise ToolError("Search temporarily unavailable. Please try again in a moment.") from e
@@ -1742,19 +1803,17 @@ def search_apple_docs(
     # Score and filter results (framework is already a hard filter in the
     # search, so strict_framework has nothing left to do). A wildcard match's
     # relevance is how closely its name fits the pattern (wildcard_matches).
-    scored_hits = []
     for hit in hits:
         if has_wildcards:
-            score = hit['_relevance']
-        elif hit.get('_spelled'):
-            score = spelled_relevance(hit)
+            continue
+        if hit.get('_spelled'):
+            hit['_relevance'] = spelled_relevance(hit)
         else:
-            score = calculate_relevance_score(hit, query, original_query)
+            hit['_relevance'] = calculate_relevance_score(hit, query, original_query)
             if hit.get('_unprefixed'):
-                score = max(score, unprefixed_relevance())
-        if score >= relevance_threshold:
-            hit['_relevance'] = score
-            scored_hits.append(hit)
+                hit['_relevance'] = max(hit['_relevance'], unprefixed_relevance())
+    level_types(hits, unprefixed_word, query)
+    scored_hits = [hit for hit in hits if hit['_relevance'] >= relevance_threshold]
 
     if not scored_hits:
         if relevance_threshold > 0:

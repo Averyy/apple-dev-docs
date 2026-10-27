@@ -2090,6 +2090,83 @@ class TestUnprefixedNames(ToolTestCase):
             search_apple_docs("Button", framework="UIKit", summary_mode=True)
         self.assertFalse([s for s in index.searches if "api_name_unprefixed" in s.get("filter", "")])
 
+    def test_a_lowercase_name_ranks_its_types_first(self) -> None:
+        # 'Metal device': the query's framework word scores the device properties of
+        # Metal's types above the type found without its prefix; a name in lower case says
+        # nothing about case or prefix, so the type ranks level with them, and the more
+        # general page comes first
+        properties = [dict(symbol_doc(f"documentation/Metal/mtlbuffer{i}/device.md", "device", "Metal",
+                                      kind="property"), content="Metal device") for i in range(3)]
+        device = dict(symbol_doc("documentation/Metal/mtldevice.md", "MTLDevice", "Metal", kind="protocol", rank=0.5),
+                      api_name_unprefixed="Device", content="GPU")
+        self.use_index(properties + [device])
+        result = search_apple_docs("Metal device", summary_mode=True)
+        self.assertEqual(result_titles(result), ["MTLDevice", "device", "device", "device"])
+        self.assertIn("## 1. MTLDevice (100%)", result)
+        # The same for a type titled with the name, and the one named so after a prefix
+        # comes after it (a longer path): 'Foundation url' -> URL, then NSURL
+        properties = [dict(symbol_doc(f"documentation/Foundation/urlrequest{i}/url.md", "url", "Foundation",
+                                      kind="property"), content="Foundation url") for i in range(3)]
+        url = dict(symbol_doc("documentation/Foundation/url.md", "URL", "Foundation", kind="struct", rank=0.6),
+                   content="url")
+        nsurl = dict(symbol_doc("documentation/Foundation/nsurl.md", "NSURL", "Foundation", rank=0.5),
+                     api_name_unprefixed="URL", content="An object")
+        self.use_index(properties + [url, nsurl])
+        self.assertEqual(result_titles(search_apple_docs("Foundation url", summary_mode=True))[:3],
+                         ["URL", "NSURL", "url"])
+        # A name with a capital asks for that case: nothing is raised
+        hits = [dict(device, _relevance=0.95, _unprefixed=True), dict(properties[0], title="Device", _relevance=1.0)]
+        apple_docs_mcp.level_types(hits, "Device", "Metal Device")
+        self.assertEqual([hit["_relevance"] for hit in hits], [0.95, 1.0])
+        apple_docs_mcp.level_types(hits, "", "Metal device")
+        self.assertEqual(hits[0]["_relevance"], 0.95)
+        # A raised type goes before the pages it ties with, though a page at the
+        # framework's root has a shorter path (AppKit's 'Color' API collection)
+        collection = dict(symbol_doc("documentation/AppKit/color.md", "Color", "AppKit", kind="collection"),
+                          content="AppKit color")
+        nscolor = dict(symbol_doc("documentation/AppKit/nscolor.md", "NSColor", "AppKit", rank=0.5),
+                       api_name_unprefixed="Color", content="An object")
+        self.use_index([collection, nscolor])
+        result = search_apple_docs("AppKit color", summary_mode=True)
+        self.assertEqual(result_titles(result), ["NSColor", "Color"])
+        self.assertIn("## 1. NSColor (100%)", result)
+        # A name written '@name' asks for the kinds it can be: no leveling
+        self.use_index(properties + [url, nsurl])
+        with patch.object(apple_docs_mcp, "level_types", wraps=apple_docs_mcp.level_types) as level:
+            search_apple_docs("Foundation @url", summary_mode=True)
+            search_apple_docs("Foundation url", summary_mode=True)
+        self.assertEqual([call.args[1] for call in level.call_args_list], ["", "url"])
+
+    def test_words_before_the_last_in_the_singular(self) -> None:
+        # 'Contacts store': the framework is named in the plural, its types in the singular
+        singular = apple_docs_mcp.singular_compound
+        self.assertEqual(singular(["Contacts", "store"]), "Contactstore")
+        self.assertEqual(singular(["Photos", "library", "items"]), "Photolibraryitems")
+        self.assertEqual(singular(["Class", "store"]), "")  # 'ss' is no plural
+        self.assertEqual(singular(["ios", "store"]), "")  # nor a word of three letters
+        self.assertEqual(singular(["stores"]), "")
+        self.assertEqual(singular(["CONTACTS", "store"]), "CONTACTstore")  # in any case
+        # (Top matches that were cut, so the results name what joined them)
+        stores = [dict(symbol_doc(f"documentation/Contacts/saving-contacts-{i}.md", f"Saving contacts {i}",
+                                  "Contacts", kind="article", rank=0.9), content="Contacts store") for i in range(100)]
+        store = dict(symbol_doc("documentation/Contacts/cncontactstore.md", "CNContactStore", "Contacts", rank=0.3),
+                     api_name_unprefixed="ContactStore", content="An object")
+        index = self.use_index(stores + [store])
+        result = search_apple_docs("Contacts store", summary_mode=True)
+        self.assertEqual(result_titles(result)[0], "CNContactStore")
+        # The note names what the type matched, in its own spelling
+        self.assertIn("and the types named 'ContactStore' after a prefix)", result)
+        # Only a type named so without its prefix ranks level with the pages titled with
+        # the word: CNContactStore isn't named 'store'
+        hits = [dict(store, _unprefixed="ContactStore", _relevance=0.95),
+                dict(symbol_doc("documentation/Contacts/cnsaverequest/store.md", "store", "Contacts",
+                                kind="property"), _relevance=1.0)]
+        apple_docs_mcp.level_types(hits, "store", "Contacts store")
+        self.assertEqual([hit["_relevance"] for hit in hits], [0.95, 1.0])
+        self.assertIn(("", 'framework IN ["Contacts"] AND api_name_unprefixed IN ["store", "Contactsstore", '
+                           f'"Contactstore"] AND {apple_docs_mcp.TYPE_KINDS_FILTER}'),
+                      [(s["q"], s.get("filter")) for s in index.searches])
+
     def test_a_failed_read_is_retried_later_and_logged_once(self) -> None:
         client = MagicMock()
         client.index.return_value.get_filterable_attributes.side_effect = Exception("unavailable")
