@@ -485,6 +485,38 @@ class LinkGap:
 DISAMBIGUATED_NAME: Final = re.compile(r'^([^/-]+)-([a-z0-9]{4,6})\.md$')
 
 
+def preferred_overload(
+    sinks: SinkRegistry, site: DocCSite, dir_name: str, json_url: str, reach: Optional[FrozenSet[str]] = None
+) -> bool:
+    """Whether a page is a preferred overload: its file name ends in a DocC disambiguation
+    suffix (DISAMBIGUATED_NAME: "padding3d(_)-6bex4") and its group's page, at the
+    unsuffixed path, was fetched this run (its sink's processed_urls) or has a file.
+
+    An overload group's page lists every overload but its preferred one, whose content
+    IS the group's page (B4): its own URL answers the same JSON, so a page for it would
+    be a copy, and a link to it goes to the group's page (the MCP server's link
+    fallback). Never a coverage gap (link_coverage) nor a seed (_seeds,
+    store_handoff_links, store_link_seeds): one rule for all of them. A non-preferred
+    overload is listed by its group's page, so a crawl that reaches the group reaches it.
+
+    With reach (a seed's job's own reach, Sink.own_reach), the group's page must be in
+    it: then every overload the group lists is in it too, and one outside it is the
+    preferred one. A group that is itself a handoff page (out of reach, fetched by
+    another job, with a file) keeps its listed overloads as seeds.
+    """
+    file_path = page_path(dir_name, doc_url_of(site, json_url), site) or ''
+    folder, _, name = file_path.rpartition('/')
+    match = DISAMBIGUATED_NAME.match(name)
+    if not match or not (match.group(1).endswith(')') or any(char.isdigit() for char in match.group(2))):
+        return False
+    group = f"{json_url[:-len('.json')].rsplit('-', 1)[0]}.json"
+    if reach is not None:
+        return group in reach
+    sink = sinks.find(site, dir_name)
+    return (sink is not None and group in sink.processed_urls) or AppleJSONDocumentationScraper._have_file(
+        f"{folder}/{match.group(1)}.md")
+
+
 def link_coverage(sinks: SinkRegistry) -> List[LinkGap]:
     """The run's link coverage check: the local links to pages it never fetched (SinkRegistry.link_gaps).
 
@@ -505,15 +537,9 @@ def link_coverage(sinks: SinkRegistry) -> List[LinkGap]:
         entry = sink.hash_manager.hashes.get(json_url)
         if isinstance(entry, dict) and entry.get('status') == 'error':
             continue
-        doc_url = doc_url_of(site, json_url)
-        file_path = page_path(sink.dir_name, doc_url, site) or ''
-        folder, _, name = file_path.rpartition('/')
-        match = DISAMBIGUATED_NAME.match(name)
-        if match and (match.group(1).endswith(')') or any(char.isdigit() for char in match.group(2))):
-            group = f"{json_url[:-len('.json')].rsplit('-', 1)[0]}.json"
-            if group in sink.processed_urls or AppleJSONDocumentationScraper._have_file(f"{folder}/{match.group(1)}.md"):
-                continue
-        gaps.append(LinkGap(url=doc_url, framework=sink.dir_name, linked_from=linked_from))
+        if preferred_overload(sinks, site, sink.dir_name, json_url):
+            continue
+        gaps.append(LinkGap(url=doc_url_of(site, json_url), framework=sink.dir_name, linked_from=linked_from))
     logger.info("link_coverage", gaps=len(gaps), candidates=len(sinks.link_gaps))
     if gaps:
         logger.warning(
@@ -1283,8 +1309,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
         Only a URL of its site that its scope can reach: a page of its own
         sink, a module's, or another technology's (not its root, not one its
-        site never crawls or excludes). A seed whose page is gone goes the
-        way any page does (404/410: an error entry, its file orphaned).
+        site never crawls or excludes), never a preferred overload
+        (preferred_overload; an older run may have stored one). A seed whose
+        page is gone goes the way any page does (404/410: an error entry,
+        its file orphaned).
         """
         seeds: List[str] = []
         site = self.site
@@ -1298,6 +1326,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     continue
                 if segment != self.job_id and segment in self.sinks.top_level(site) and (
                         url == f"{site.json_prefix}{segment}.json" or not self.sinks.crawls(site, segment)):
+                    continue
+                if self._own_reach is not None and preferred_overload(self.sinks, site, dir_name, url, self._own_reach):
+                    # (stored by an older run: its group's page is the page)
                     continue
                 self._routes.setdefault(segment, (dir_name, bundle))
                 seeds.append(url)
@@ -4369,7 +4400,9 @@ def sink_runs_clean(sink: Sink, outcome_of: Callable[[str], Optional[FrameworkOu
     return all(clean(writer) for writer in metadata_ids(hm.get_metadata(HANDOFF_KEY)))
 
 
-def store_handoff_links(sink: Sink, outcome_of: Callable[[str], Optional["FrameworkOutcome"]]) -> None:
+def store_handoff_links(
+    sinks: SinkRegistry, sink: Sink, outcome_of: Callable[[str], Optional["FrameworkOutcome"]]
+) -> None:
     """Store a top-level sink's handoff links, the seeds of its own job's next crawl (HANDOFF_LINKS_KEY).
 
     Its handoff pages are the pages of it another job's crawl reached this
@@ -4399,6 +4432,9 @@ def store_handoff_links(sink: Sink, outcome_of: Callable[[str], Optional["Framew
         for url, links in old.items():
             if url not in new and url not in sink.gone and url not in sink.scope_links:
                 new[url] = links
+    # Never a preferred overload (preferred_overload), also in links an older run stored
+    new = {url: kept for url, links in new.items()
+           if (kept := [entry for entry in links if not preferred_overload(sinks, sink.site, entry[1], entry[0], sink.own_reach)])}
     if new != old:
         # (its manager loaded again only for a change)
         sink.hash_manager.set_metadata(HANDOFF_LINKS_KEY, dict(sorted(new.items())))
@@ -4424,7 +4460,8 @@ def store_link_seeds(sinks: SinkRegistry, sink: Sink, full_clean: bool) -> None:
     if not full_clean:
         for entry in sink.link_seeds_before:
             new.setdefault(entry[0], entry)
-    seeds = [entry for _, entry in sorted(new.items())]
+    # Never a preferred overload (preferred_overload), also one an older run stored
+    seeds = [entry for _, entry in sorted(new.items()) if not preferred_overload(sinks, sink.site, entry[1], entry[0], sink.own_reach)]
     if seeds != sink.link_seeds_before:
         sink.hash_manager.set_metadata(LINK_SEEDS_KEY, seeds)
 
@@ -4505,7 +4542,7 @@ def finish_run(
     full_clean = run is not None and all(key in by_job for key in run.listed) and all(
         not outcome.skip_cleanup for outcome in by_job.values())
     for sink in sinks.all():
-        store_handoff_links(sink, outcome_of(sink))
+        store_handoff_links(sinks, sink, outcome_of(sink))
         store_link_seeds(sinks, sink, full_clean)
     gaps = link_coverage(sinks)
     if run is not None:

@@ -53,6 +53,7 @@ import sys
 from collections import deque
 from pathlib import Path
 from typing import Any, Deque, Dict, Iterator, List, Optional, Sequence, Set, Tuple
+from unittest import mock
 from urllib.parse import unquote
 
 import httpx
@@ -1104,16 +1105,16 @@ class TestDefaultImplementations:
         assert not handed_off.exists() and not deeper.exists() and doc_file("Sibkit/a").exists()
 
 
-def overload_page(path: str, members: Sequence[str], group: bool, links: Sequence[Link] = ()) -> str:
+def overload_page(path: str, members: Sequence[str], group: bool, links: Sequence[Link] = (), bundle: str = A) -> str:
     """An overload's page (B4): its declaration lists the other overloads (otherDeclarations),
     each resolved through its references. group: the group's page (DocC's externalID
     ending in ::OverloadGroup), a copy of the preferred overload's."""
-    body = json.loads(topic_page(path, A, links))
+    body = json.loads(topic_page(path, bundle, links))
     name = path.split("/")[-1]
     body["metadata"]["externalID"] = f"s:7Umbrella4TextV{name}" + ("::OverloadGroup" if group else "")
     others = []
     for member in members:
-        identifier = f"doc://{A}/documentation/{member}"
+        identifier = f"doc://{bundle}/documentation/{member}"
         others.append({"identifier": identifier,
                        "tokens": [{"kind": "keyword", "text": "init"}, {"kind": "text", "text": f"({member[-5:]})"}]})
         body["references"][identifier] = {"type": "topic", "url": f"/documentation/{member.lower()}",
@@ -1161,6 +1162,61 @@ def overload_routes(members: Sequence[str] = tuple(MEMBERS)) -> Dict[str, List[S
 class TestOverloadGroups:
     """B4-a: an overload group's page links its other overloads, each crawled and saved
     as a page of its own; an overload's own page links none of its siblings."""
+
+    @staticmethod
+    def cross_linked(*targets: str) -> Pages:
+        """OVERLOADS, with Otherbrella's page linking targets in Umbrella from another bundle
+        (as Updates/swiftui links SwiftUI's preferred overloads): no scope follows them."""
+        return {**OVERLOADS, "Otherbrella": (B, [(target, A) for target in targets])}
+
+    async def test_a_preferred_overload_linked_from_another_bundle_is_never_a_seed(self, d6: D6Runs) -> None:
+        """Its page is a copy of its group's (B4): never stored as a seed, never fetched, no
+        file, over two runs, and no coverage gap; a non-preferred one is the group's, fetched once."""
+        listed = ["Umbrella", "Otherbrella"]
+        pages = self.cross_linked(PREFERRED, MEMBERS[1])
+        for _ in range(2):
+            assert await d6.scrape(pages, listed, overrides=overload_routes()) == 0
+            assert json_url(PREFERRED.lower()) not in d6.requests and not doc_file(PREFERRED).exists()
+            assert d6.requests.count(json_url(MEMBERS[1].lower())) == 1 and doc_file(MEMBERS[1]).exists()
+            assert "link_seeds" not in metadata("Umbrella")
+            assert d6.logged("link_coverage")[0]["gaps"] == 0
+
+    async def test_a_preferred_overload_seed_an_older_run_stored_is_dropped_and_its_copy_removed(
+        self, d6: D6Runs
+    ) -> None:
+        """A seed run 2 of the 059042bb1d6 release stored (its copy fetched and saved): never
+        fetched again, dropped from the seeds, and its copy removed by the normal orphan cleanup."""
+        listed = ["Umbrella", "Otherbrella"]
+        pages = self.cross_linked(PREFERRED)
+        # The older rule: no preferred-overload check
+        with mock.patch("scraper.json_scraper.preferred_overload", lambda *args, **kwargs: False):
+            for _ in range(2):
+                assert await d6.scrape(pages, listed, overrides=overload_routes()) == 0
+        assert metadata("Umbrella")["link_seeds"] == [[json_url(PREFERRED.lower()), "Umbrella", A]]
+        assert doc_file(PREFERRED).exists()
+        assert await d6.scrape(pages, listed, overrides=overload_routes()) == 0
+        assert json_url(PREFERRED.lower()) not in d6.requests and "link_seeds" not in metadata("Umbrella")
+        assert not doc_file(PREFERRED).exists() and doc_file(GROUP).exists()
+
+    async def test_a_group_page_that_is_a_handoff_page_keeps_its_overloads_as_seeds(self, d6: D6Runs) -> None:
+        """A group's page only a bundle sibling links (a handoff page, out of its own crawl's
+        reach, with a file): its listed overloads are its handoff links, fetched by its own
+        job every run and kept; the preferred-overload rule applies only to a group in reach."""
+        group, members = "Sibkit/Text/init(_:)", ["Sibkit/Text/init(_:)-9d1g4", "Sibkit/Text/init(_:)-4k7ab"]
+        pages: Pages = {**SIBLINGS, "SibkitUI": (S, [("SibkitUI/b", S), (group, S)])}
+        routes = {group: [ok(overload_page(group, members, group=True, bundle=S), "")]}
+        for member in members:
+            routes[member] = [ok(overload_page(member, [m for m in members if m != member], group=False, bundle=S), "")]
+        listed = ["Sibkit", "SibkitUI"]
+        for _ in range(4):
+            assert await d6.scrape(pages, listed, overrides=routes) == 0
+        assert doc_file(group).exists() and all(doc_file(member).exists() for member in members)
+        assert sorted(entry[0] for entry in metadata("Sibkit")["handoff_links"][json_url(group.lower())]) == sorted(
+            json_url(member.lower()) for member in members)
+        assert d6.logged("orphans_deleted") == [] and d6.logged("link_coverage")[0]["gaps"] == 0
+        before = sandbox_bytes()
+        assert await d6.scrape(pages, listed, overrides=routes) == 0
+        assert sandbox_bytes() == before
 
     def test_only_a_group_page_links_its_other_overloads(self, dirs: Path) -> None:
         scraper = AppleJSONDocumentationScraper("Umbrella")
