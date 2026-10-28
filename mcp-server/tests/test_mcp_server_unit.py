@@ -1629,28 +1629,33 @@ class TestInternalLinks(ToolTestCase):
 class TestExtractSection(unittest.TestCase):
     """A section runs from its heading to the next heading of its level or a higher one."""
 
+    # The DocC layout (render version 4): Apple's content headings at their own level
+    # ('## Overview', its level-3 and level-4 headings under it)
     PAGE = ("# parameters\n\n**Kind**: property\n\nThe parameters.\n\n## Declaration\n\n```python\n"
-            "# a comment\nparameters = {}\n```\n\n## Mentions\n\n- [Models](models.md)\n\n#### Overview\n\n"
-            "Text with ## inside.\n\n##### Details\n\nMore.\n\n#### Discussion\n\nDiscussed.\n\n"
+            "# a comment\nparameters = {}\n```\n\n## Mentions\n\n- [Models](models.md)\n\n## Overview\n\n"
+            "Text with ## inside.\n\n#### Configuration\n\nConfigure.\n\n### Building\n\nBuild.\n\n"
+            "#### Debugging\n\nDebug.\n\n## Discussion\n\nDiscussed.\n\n"
             "## Topics\n\n### Group A\n\n- a\n\n### Group B\n\n- b\n\n## See Also\n\n- c\n")
 
     def section(self, name: str) -> str:
         return apple_docs_mcp.extract_section(self.PAGE, name)
 
-    def test_a_level_2_section_ends_at_the_next_level_2_or_4_heading(self) -> None:
-        # Level-1 lines are comments in code, and the converter writes Apple's level-2
-        # content headings at level 4, after Declaration and Mentions
+    def test_a_level_2_section_ends_at_the_next_level_2_heading(self) -> None:
+        # Level-1 lines are comments in code
         self.assertEqual(self.section("declaration"), "```python\n# a comment\nparameters = {}\n```")
         self.assertEqual(self.section("mentions"), "- [Models](models.md)")
-        # ...and keeps its level-3 groups
-        self.assertEqual(self.section("topics"), "### Group A\n\n- a\n\n### Group B\n\n- b")
+        self.assertEqual(self.section("discussion"), "Discussed.")
         self.assertEqual(self.section("see_also"), "- c")
 
-    def test_a_deeper_section_keeps_its_subsections(self) -> None:
-        self.assertEqual(self.section("overview"), "Text with ## inside.\n\n##### Details\n\nMore.")
-        self.assertEqual(self.section("Discussion"), "Discussed.")
+    def test_a_section_holds_its_deeper_headings(self) -> None:
+        # Even a level-4 heading after text (an older rule cut '## Overview' at its first '####')
+        self.assertEqual(self.section("overview"),
+                         "Text with ## inside.\n\n#### Configuration\n\nConfigure.\n\n### Building\n\nBuild.\n\n"
+                         "#### Debugging\n\nDebug.")
+        self.assertEqual(self.section("topics"), "### Group A\n\n- a\n\n### Group B\n\n- b")
+        self.assertEqual(self.section("building"), "Build.\n\n#### Debugging\n\nDebug.")
         self.assertEqual(self.section("group_b"), "- b")
-        self.assertEqual(self.section("details"), "More.")
+        self.assertEqual(self.section("debugging"), "Debug.")
 
     def test_the_title_is_no_section(self) -> None:
         # A property named "parameters" would give its whole page
@@ -1659,9 +1664,8 @@ class TestExtractSection(unittest.TestCase):
         self.assertEqual(apple_docs_mcp.extract_section("# T\n\n## Overview", "overview"), "")
         self.assertEqual(apple_docs_mcp.extract_section("## Overview  \nlast\n", "overview"), "last")
 
-    def test_a_level_2_section_keeps_level_4_children(self) -> None:
-        # HIG: a level-2 section whose first sub-heading is a '###', or a '####' right after
-        # its heading, holds its '####' headings and runs to the next '## '
+    def test_the_other_sources_pages_nest_by_level_too(self) -> None:
+        # HIG: '## Platform considerations' / '### macOS' / '#### …'
         page = ("# Buttons\n\n## Platform considerations\n\n### macOS\n\n#### Push buttons\n\nPush.\n\n"
                 "### visionOS\n\nIn space.\n\n## Resources\n\n#### Related\n\n- [Menus](menus.md)\n\n"
                 "#### Videos\n\n- a talk\n")
@@ -1669,43 +1673,6 @@ class TestExtractSection(unittest.TestCase):
                          "### macOS\n\n#### Push buttons\n\nPush.\n\n### visionOS\n\nIn space.")
         self.assertEqual(apple_docs_mcp.extract_section(page, "resources"),
                          "#### Related\n\n- [Menus](menus.md)\n\n#### Videos\n\n- a talk")
-
-    # The DocC layout from render version 5: Apple's content headings at their own level
-    # ('## Overview', its level-3 and level-4 headings under it)
-    NEW_PAGE = ("# Commands\n\n**Kind**: article\n\n## Declaration\n\n```swift\nstruct Commands\n```\n\n"
-                "## Mentions\n\n- [Models](models.md)\n\n## Overview\n\nThe commands.\n\n"
-                "#### Configuration\n\nConfigure.\n\n### Building\n\nBuild.\n\n#### Debugging\n\nDebug.\n\n"
-                "## Discussion\n\nDiscussed.\n\n## Topics\n\n### Group A\n\n- a\n\n## See Also\n\n- c\n")
-
-    def test_the_current_layout_nests_by_level(self) -> None:
-        # A level-2 section holds its level-4 headings, even after text (the older
-        # layout's rule cut '## Overview' at its first '####': 18 pages)
-        section = apple_docs_mcp.extract_section
-        self.assertFalse(apple_docs_mcp.pushed_down_headings(self.NEW_PAGE))
-        self.assertEqual(section(self.NEW_PAGE, "overview"),
-                         "The commands.\n\n#### Configuration\n\nConfigure.\n\n### Building\n\nBuild.\n\n"
-                         "#### Debugging\n\nDebug.")
-        self.assertEqual(section(self.NEW_PAGE, "declaration"), "```swift\nstruct Commands\n```")
-        self.assertEqual(section(self.NEW_PAGE, "mentions"), "- [Models](models.md)")
-        self.assertEqual(section(self.NEW_PAGE, "building"), "Build.\n\n#### Debugging\n\nDebug.")
-        self.assertEqual(section(self.NEW_PAGE, "discussion"), "Discussed.")
-        self.assertEqual(section(self.NEW_PAGE, "topics"), "### Group A\n\n- a")
-
-    def test_the_older_layout_is_told_by_its_level_4_content_headings(self) -> None:
-        detect = apple_docs_mcp.pushed_down_headings
-        self.assertTrue(detect(self.PAGE))
-        # Its content headings by name (an article's '#### Overview')...
-        self.assertTrue(detect("# A\n\nAbstract.\n\n#### Overview\n\nText.\n\n#### Usage\n\nMore.\n"))
-        for name in ("Discussion", "Return Value"):
-            self.assertTrue(detect(f"# f()\n\n## Declaration\n\n```\nf()\n```\n\n#### {name}\n\nText.\n"))
-        # ...or any '####' right after the sections before the content
-        for leading in ("Declaration", "Possible Values", "Mentions"):
-            page = f"# K\n\n## {leading}\n\n- `a`\n\n#### Example\n\nText.\n\n## See Also\n\n- c\n"
-            self.assertTrue(detect(page), leading)
-            self.assertEqual(apple_docs_mcp.extract_section(page, leading.lower().replace(" ", "_")), "- `a`")
-        # Not a '####' under a content heading, nor the other sources' pages (HIG)
-        self.assertFalse(detect("# A\n\n## Overview\n\nText.\n\n#### Example\n\nMore.\n"))
-        self.assertFalse(detect("# Buttons\n\n## Best practices\n\nText.\n\n#### Push buttons\n\nPush.\n"))
         self.assertEqual(apple_docs_mcp.extract_section(
             "# Privacy\n\n## Optional disclosure\n\nText.\n\n#### Programs\n\nMore.\n\n## Types\n\n- t\n",
             "optional_disclosure"), "Text.\n\n#### Programs\n\nMore.")

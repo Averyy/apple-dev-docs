@@ -59,7 +59,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.5.1"
+SERVER_VERSION = "3.5.2"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -140,11 +140,6 @@ UNCLOSED_LINK_RE = re.compile(r'!?\[(?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*\]
 # A heading line of a page (expand_result's sections), and a code fence's line
 HEADING_LINE_RE = re.compile(r'^(#{2,6})[ \t]+(.+?)[ \t]*$', re.MULTILINE)
 FENCE_RE = re.compile(r'^[ \t]*(`{3,}|~{3,})')
-# DocC's level-2 content sections (the headings Apple's pages start their content with),
-# and the sections the converter writes before a page's content: its declaration, the
-# possible values of a key or REST type, its mentions (pushed_down_headings)
-DOCC_CONTENT_HEADINGS = frozenset({"Overview", "Discussion", "Return Value"})
-DOCC_LEADING_SECTIONS = frozenset({"Declaration", "Possible Values", "Mentions"})
 
 # Search ranking (calculate_relevance_score): Meilisearch's _rankingScore, scaled into
 # 1 - TITLE_BOOST_MAX, plus a boost for a page whose title is the name the query asks for.
@@ -1259,54 +1254,23 @@ def summary_text(overview: str, file_path: str, max_chars: int = SUMMARY_CHARS) 
     return UNCLOSED_LINK_RE.sub("", text.rstrip()).rstrip()
 
 
-def pushed_down_headings(content: str) -> bool:
-    """Whether a page has the DocC layout of render versions before 5, which wrote Apple's
-    content headings two levels down: its level-2 ones (Overview, Discussion, Return Value,
-    or an article's own) at '####', as siblings of the converter's '## Declaration' and
-    '## Mentions'. Such a page has '#### Overview', '#### Discussion' or '#### Return
-    Value', or a '####' heading right after one of the sections the converter writes
-    before the content (DOCC_LEADING_SECTIONS): Apple's content starts at level 2, so in
-    the current layout a '## ' heading follows them."""
-    previous: Tuple[int, str] = (0, "")
-    for match in HEADING_LINE_RE.finditer(content):
-        level, name = len(match.group(1)), match.group(2)
-        if level == 4 and (name in DOCC_CONTENT_HEADINGS
-                           or (previous[0] == 2 and previous[1] in DOCC_LEADING_SECTIONS)):
-            return True
-        previous = (level, name)
-    return False
-
-
 def extract_section(content: str, section_name: str) -> str:
     """A section of a page: the text under its heading, a line of level 2-6 (the '# ' line
     is the page's title: a property named 'parameters' would give its whole page), up to
     the next heading of the same or a higher level.
 
-    Level-1 lines end no section: after the title they are comments in code. On a page in
-    the older DocC layout (pushed_down_headings), a level-2 section also ends at a '####'
-    heading: Apple's level-2 content headings (Overview, Discussion, Return Value) are at
-    that level, as siblings that follow '## Declaration' and '## Mentions'. So '## Topics'
-    keeps its '###' groups, and '#### Overview' its '#####' subsections. Unless its '####'
-    headings are its children: when its first sub-heading is a '###', or a '####' with no
-    text before it, a level-2 section runs to the next '## '. On any other page (the
-    current DocC layout, where '## Overview' holds Apple's level-4 '####' headings, and
-    the other sources' pages: HIG's '## Platform considerations' / '### macOS' / '#### …')
-    a section holds every deeper heading."""
+    Level-1 lines end no section: after the title they are comments in code. A section
+    holds every deeper heading: DocC's '## Overview' its level-3 and level-4 headings,
+    '## Topics' its '###' groups, HIG's '## Platform considerations' its '### macOS' and
+    '#### …' (every DocC page is in the layout of render version 4, where Apple's content
+    headings are at their own level)."""
     name = re.escape(section_name.replace('_', ' ').title())
     heading = re.search(rf'^(#{{2,6}})[ \t]*{name}[ \t]*$', content, re.MULTILINE | re.IGNORECASE)
     if not heading:
         return ""
     level = len(heading.group(1))
     body = content[heading.end():]
-    end = rf'^#{{2,{level}}}\s'
-    if level == 2 and pushed_down_headings(content):
-        first = re.search(r'^(#{2,6})\s', body, re.MULTILINE)
-        children = first is not None and (
-            len(first.group(1)) == 3 or (len(first.group(1)) == 4 and not body[:first.start()].strip())
-        )
-        if not children:
-            end += r'|^####\s'
-    stop = re.search(end, body, re.MULTILINE)
+    stop = re.search(rf'^#{{2,{level}}}\s', body, re.MULTILINE)
     return (body[:stop.start()] if stop else body).strip()
 
 

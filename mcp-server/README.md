@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.5.1 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.5.2 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -53,6 +53,10 @@ docker-compose up -d
 
 ## Changelog
 
+### v3.5.2
+- `expand_result`'s `sections` read only the current DocC layout (render version 4, live since the 2026-10-28 scrape re-rendered every DocC page): a section holds every deeper heading. The older layout's rule (a level-2 section also ending at a `####` heading) is gone; no page of the corpus has that layout any more (`pushed_down_headings` matched 0 of its files)
+- The v3.5.0 entry below named the new layout's render version 5; it is DocC render version 4
+
 ### v3.5.1
 - A type typed without its prefix and in lower case within a framework ranks first among the pages titled with that word: a name in lower case says nothing about case, and so nothing about a prefix either, so the type ranks as high as the best of them and the more general page comes first (`Metal device` → `MTLDevice`, 7th before, behind the `device` properties of Metal's types; `AppKit window` → `NSWindow`, `UIKit button` → `UIButton`, `Contacts contact` → `CNContact`). A type titled with the word itself ranks so too, and comes before the one named so after a prefix (`Foundation url` → `URL`, 4th before; `Foundation data` → `Data`, then `NSData`). Such a type goes before the other pages it ties with (`AppKit color` → `NSColor`, before AppKit's shorter-path `Color` API collection). Not for a name written `@name`, which asks for its own kinds. The results' note names the types' own spelling ("the types named 'ContactStore' after a prefix"), not the spellings looked up
 - The words before the last are also looked up in the singular (in any case), as a compound name has them, so a framework named in the plural finds its types (`Contacts store` → `CNContactStore`, 6th before; `Photos library` → `PHPhotoLibrary`, 18th)
@@ -67,7 +71,7 @@ docker-compose up -d
 - Equally relevant pages go a deprecated one after the others (`accessibilityLabel`: SpriteKit's before RealityKit's deprecated one)
 - A result from a long page shows the part that best matches: every part holds the page's title, so the words the title doesn't hold break a near-tie (`in-app purchase App Store review guidelines` → App Review Guidelines Part 5, which holds 3.1.1, not Part 7)
 - A link to an overload with no page of its own (`text/init(_)-1a4oh.md`: Apple lists every overload on its group page, whose preferred one is the unsuffixed page) leads to that page in hints and `expand_result` (284 links, 113 targets); a link that stays a `search:` hint drops the DocC hash from its words (`expm1(_)`, not `expm1(_) xkzx`)
-- `expand_result`'s `sections` follow both DocC layouts: in the one from render version 5 (Apple's content headings at their own level, `## Overview` holding `####` headings) a section holds its deeper headings (18 pages' `overview` was cut at its first `####`, e.g. `Swift-Org/userdocs/commands.md` 5,227 → 103 characters); in the older one (`#### Overview` beside `## Declaration`) nothing changes
+- `expand_result`'s `sections` follow both DocC layouts: in the one from render version 4 (Apple's content headings at their own level, `## Overview` holding `####` headings) a section holds its deeper headings (18 pages' `overview` was cut at its first `####`, e.g. `Swift-Org/userdocs/commands.md` 5,227 → 103 characters); in the older one (`#### Overview` beside `## Declaration`) nothing changes
 - Measured on the local index (403,704 documents) against 3.4.3: golden hit@3 0.860 → 0.895, MRR 0.824 → 0.857; 9 new golden entries (66: 0.909 / 0.877, expand@1 13/13); the 2026-10-26 audit's 80 queries with an expected page top-1 52 → 61, top-3 64 → 70; 350 random titles unchanged but one deprecated page
 
 ### v3.4.3
