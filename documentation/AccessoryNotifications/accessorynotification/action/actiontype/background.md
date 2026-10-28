@@ -15,7 +15,7 @@ An action type that handles background interactions with a notification.
 case background
 ```
 
-#### Discussion
+## Discussion
 
 The app that sends the notification might not be running on the accessory, but your companion app can perform a task in the background when a person interacts with the notification.
 

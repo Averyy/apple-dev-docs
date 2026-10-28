@@ -21,11 +21,11 @@ Returns a localized version of a string from the table that you specify, which X
 #define NSLocalizedStringFromTable(key, tbl, comment)
 ```
 
-#### Return Value
+## Return Value
 
 The result of invoking [`localizedString(forKey:value:table:)`](./bundle/localizedstring%28forkey,value,table%29.md) on the main bundle, passing the specified `key` and `tableName`.
 
-#### Discussion
+## Discussion
 
 Use this macro to automatically generate a strings file named `[tableName].strings` from your code when exporting localizations from Xcode or the `genstrings` utility. You can specify Unicode characters in `key` using `\\Uxxxx`—see the `-u` option for the `genstrings` utility.
 

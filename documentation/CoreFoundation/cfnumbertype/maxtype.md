@@ -25,7 +25,7 @@ static var maxType: CFNumberType { get }
 kCFNumberMaxType
 ```
 
-#### Discussion
+## Discussion
 
 Note that in OS X v10.4, [`maxType`](./maxtype.md) was the same as [`CFNumberType.cfIndexType`](./cfindextype.md) .
 

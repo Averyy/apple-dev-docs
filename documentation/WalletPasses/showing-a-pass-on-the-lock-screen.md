@@ -5,7 +5,7 @@
 
 Add information to your pass so the system can display it on the Lock Screen at a relevant time and place.
 
-#### Overview
+## Overview
 
 Make it easier for the user to access your pass by enabling the system to show it on the lock screen when it’s relevant. For example, show a gym membership card at the gym, or a boarding pass when it’s time to board the plane.
 
@@ -39,7 +39,7 @@ A pass can have only 10 relevant locations. If your pass needs more locations, s
 
 > **Note**:  Test your pass relevancy settings on a device. Simulator doesn’t show passes on the lock screen.
 
-##### Add Relevancy with iBeacons
+### Add Relevancy with iBeacons
 
 Show your pass on the lock screen when the device comes close to an iBeacon. Add up to ten different UUIDs for iBeacons to the `beacons` array of the [`Pass`](./pass.md) object.
 

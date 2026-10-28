@@ -24,7 +24,7 @@ var isSelected: Bool { get set }
 @property (nonatomic, getter=isSelected) BOOL selected;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t set the value of this property directly. If the property contains [`true`](../../Swift/true.md), the annotation view is displaying a callout.
 

@@ -19,7 +19,7 @@ var gestureRecognizers: [NSGestureRecognizer] { get set }
 @property (copy) NSArray<__kindof NSGestureRecognizer *> * gestureRecognizers;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in the array are concrete implementations of the `NSGestureRecognizer` class. If the view has no attached gesture recognizers, the array is empty.
 

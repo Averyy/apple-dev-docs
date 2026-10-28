@@ -5,7 +5,7 @@
 
 Configure the appearance of Sign in with Apple buttons programatically.
 
-#### Overview
+## Overview
 
 For SwiftUI, use [`SignInWithAppleButton`](../AuthenticationServices/signinwithapplebutton.md) to create and customize a Sign in with Apple button in your app.
 

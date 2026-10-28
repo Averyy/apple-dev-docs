@@ -23,7 +23,7 @@ convenience init(identityProvider url: URL)
 + (instancetype) authorizationProviderWithIdentityProviderURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A single sign-on authorization provider.
 

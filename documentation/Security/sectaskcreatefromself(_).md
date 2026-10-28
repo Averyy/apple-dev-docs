@@ -20,7 +20,7 @@ func SecTaskCreateFromSelf(_ allocator: CFAllocator?) -> SecTask?
 SecTaskRefSecTaskCreateFromSelf(CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this task’s memory when you are done with it.
 

@@ -19,11 +19,11 @@ convenience init(forInterItemGapBefore indexPath: IndexPath)
 + (instancetype) layoutAttributesForInterItemGapBeforeIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new layout attributes object configured with the initial attributes for the inter-item gap view.
 
-#### Discussion
+## Discussion
 
 Call this method when you need to create a layout attributes object for an inter-item gap view in a collection view. Gap views are used during drag and drop to indicate the area where content will drop. This method uses the parameters to set the initial values of the [`indexPath`](./indexpath.md) property of the returned object. The [`representedElementKind`](./representedelementkind.md) property is set to [`elementKindInterItemGapIndicator`](../nscollectionview/elementkindinteritemgapindicator.md).
 

@@ -16,11 +16,6 @@ created or a generic function or initializer is called.
 
 For an overview of generics in Swift, see [Generics](../LanguageGuide/Generics.md).
 
-<!--
-  NOTE: Generic types are sometimes referred to as :newTerm:`parameterized types`
-  because they're declared with one or more type parameters.
--->
-
 ## Generic Parameter Clause
 
 A *generic parameter clause* specifies the type parameters of a generic
@@ -62,19 +57,6 @@ func simpleMax<T: Comparable>(_ x: T, _ y: T) -> T {
 }
 ```
 
-<!--
-  - test: `generic-params`
-
-  ```swifttest
-  -> func simpleMax<T: Comparable>(_ x: T, _ y: T) -> T {
-        if x < y {
-           return y
-        }
-        return x
-     }
-  ```
--->
-
 Because `Int` and `Double`, for example, both conform to the `Comparable` protocol,
 this function accepts arguments of either type. In contrast with generic types, you don't
 specify a generic argument clause when you use a generic function or initializer.
@@ -85,24 +67,6 @@ to the function or initializer.
 simpleMax(17, 42) // T is inferred to be Int
 simpleMax(3.14159, 2.71828) // T is inferred to be Double
 ```
-
-<!--
-  - test: `generic-params`
-
-  ```swifttest
-  >> let r0 =
-  -> simpleMax(17, 42) // T is inferred to be Int
-  >> assert(r0 == 42)
-  >> let r1 =
-  -> simpleMax(3.14159, 2.71828) // T is inferred to be Double
-  >> assert(r1 == 3.14159)
-  ```
--->
-
-<!--
-  Rewrite the above to avoid bare expressions.
-  Tracking bug is <rdar://problem/35301593>
--->
 
 The last generic parameter in a generic parameter list
 can be followed by an optional comma.
@@ -232,43 +196,6 @@ extension Collection where Element: SomeProtocol {
 }
 ```
 
-<!--
-  - test: `contextual-where-clauses-combine`
-
-  ```swifttest
-  >> protocol SomeProtocol { }
-  >> extension Int: SomeProtocol { }
-  -> extension Collection where Element: SomeProtocol {
-         func startsWithZero() -> Bool where Element: Numeric {
-             return first == .zero
-         }
-     }
-  >> print( [1, 2, 3].startsWithZero() )
-  << false
-  ```
--->
-
-<!--
-  - test: `contextual-where-clause-combine-err`
-
-  ```swifttest
-  >> protocol SomeProtocol { }
-  >> extension Bool: SomeProtocol { }
-
-  >> extension Collection where Element: SomeProtocol {
-  >>     func returnTrue() -> Bool where Element == Bool {
-  >>         return true
-  >>     }
-  >>     func returnTrue() -> Bool where Element == Int {
-  >>         return true
-  >>     }
-  >> }
-  !$ error: no type for 'Self.Element' can satisfy both 'Self.Element == Int' and 'Self.Element : SomeProtocol'
-  !! func returnTrue() -> Bool where Element == Int {
-  !!                                            ^
-  ```
--->
-
 You can overload a generic function or initializer by providing different
 constraints, requirements, or both on the type parameters.
 When you call an overloaded generic function or initializer,
@@ -297,12 +224,6 @@ see [Generic Where Clauses](../LanguageGuide/Generics.md#Generic-Where-Clauses).
 > *same-type-requirement* → *type-identifier* **`==`** *type* \
 > *same-type-requirement* → *type-identifier* **`==`** *signed-integer-literal*
 
-<!--
-  NOTE: A conformance requirement can only have one type after the colon,
-  otherwise, you'd have a syntactic ambiguity
-  (a comma-separated list types inside of a comma-separated list of requirements).
--->
-
 ## Generic Argument Clause
 
 A *generic argument clause* specifies the type arguments of a generic
@@ -329,10 +250,6 @@ struct Dictionary<Key: Hashable, Value>: Collection, ExpressibleByDictionaryLite
 }
 ```
 
-<!--
-  TODO: How are we supposed to wrap code lines like the above?
--->
-
 The specialized version of the generic `Dictionary` type, `Dictionary<String, Int>`
 is formed by replacing the generic parameters `Key: Hashable` and `Value`
 with the concrete type arguments `String` and `Int`. Each type argument must satisfy
@@ -351,14 +268,6 @@ to form an array whose elements are themselves arrays of integers.
 let arrayOfArrays: Array<Array<Int>> = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 ```
 
-<!--
-  - test: `array-of-arrays`
-
-  ```swifttest
-  -> let arrayOfArrays: Array<Array<Int>> = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-  ```
--->
-
 The last type argument in a generic argument list
 can be followed by an optional comma.
 
@@ -371,13 +280,3 @@ of a generic function or initializer.
 > *generic-argument-clause* → **`<`** *generic-argument-list* **`,`**_?_ **`>`** \
 > *generic-argument-list* → *generic-argument* | *generic-argument* **`,`** *generic-argument-list* \
 > *generic-argument* → *type* | *signed-integer-literal*
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

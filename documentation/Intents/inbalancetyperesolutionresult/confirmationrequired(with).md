@@ -23,11 +23,11 @@ class func confirmationRequired(with balanceTypeToConfirm: INBalanceType) -> Sel
 + (instancetype) confirmationRequiredWithBalanceTypeToConfirm:(INBalanceType) balanceTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBalanceTypeResolutionResult`](../inbalancetyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the balance type to a single value that is similar to the type specified by the user, but not exactly the same.
 

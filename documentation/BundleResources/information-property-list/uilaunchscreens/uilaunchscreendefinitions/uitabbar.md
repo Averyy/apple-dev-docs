@@ -15,7 +15,7 @@ Tab bar visibility and configuration during launch.
 - **Name**: `UITabBar`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 When you provide a dictionary for this key, the system displays a tab bar during launch. You can optionally set the dictionary’s [`UIImageName`](./uitabbar/uiimagename.md) key to define a custom image for the tab bar.
 

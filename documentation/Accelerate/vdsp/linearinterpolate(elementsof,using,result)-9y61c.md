@@ -21,7 +21,7 @@ Calculates the interpolation between the neighboring elements of a single-precis
 static func linearInterpolate<T, U, V>(elementsOf vector: T, using controlVector: U, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Single-precision and double-precision [`linearInterpolate(elementsOf:using:result:)`](./linearinterpolate%28elementsof,using,result%29-4n3lr.md) functions calculate an array of an arbitrary length that’s constructed from the linearly interpolated values in a source array. Pass [`linearInterpolate(elementsOf:using:result:)`](./linearinterpolate%28elementsof,using,result%29-4n3lr.md) a control vector that defines the interpolation: the integer part of each element in the control vector is the zero-based index of the first element of a pair of adjacent values in the source array, and the fractional part defines the linear interpolation between the values at those indices.
 

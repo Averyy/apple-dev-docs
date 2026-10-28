@@ -14,9 +14,9 @@ The name of the class to instantiate when the system requires a client connectio
 - **Name**: `IOUserClientClass`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
-The value of this key is a string that contains the name of an [IOService](../../kernel/ioservice-1g.md) subclass in your driver.
+The value of this key is a string that contains the name of an [IOService](../../kernel/ioservice.md) subclass in your driver.
 
 ## See Also
 

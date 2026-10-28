@@ -23,11 +23,11 @@ func invalidationContext(forInteractivelyMovingItems targetIndexPaths: [IndexPat
 - (UICollectionViewLayoutInvalidationContext *) invalidationContextForInteractivelyMovingItems:(NSArray<NSIndexPath *> *) targetIndexPaths withTargetPosition:(CGPoint) targetPosition previousIndexPaths:(NSArray<NSIndexPath *> *) previousIndexPaths previousPosition:(CGPoint) previousPosition;
 ```
 
-#### Return Value
+## Return Value
 
 An invalidation context that includes information about what changes need to be made to the layout.
 
-#### Discussion
+## Discussion
 
 The layout object uses this method to retrieve invalidation contexts when an interactive move of one or more items is in progress. The default implementation creates an instance of the class provided by the [`invalidationContextClass`](./invalidationcontextclass.md) class method, fills it with the provided information, and returns it. If you want to use a custom invalidation context object with your layout, always override that method and return your custom class.
 

@@ -21,7 +21,7 @@ The prominence of the background underneath views associated with this environme
 var backgroundProminence: BackgroundProminence { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Foreground elements above an increased prominence background are typically adjusted to have higher contrast against a potentially vivid color, such as taking on a higher opacity monochrome appearance according to the `colorScheme`. System styles like `primary`, `secondary`, etc will automatically resolve to an appropriate style in this context. The property can be read and used for custom styled elements.
 

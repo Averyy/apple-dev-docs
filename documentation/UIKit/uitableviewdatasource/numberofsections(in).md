@@ -23,11 +23,11 @@ optional func numberOfSections(in tableView: UITableView) -> Int
 - (NSInteger) numberOfSectionsInTableView:(UITableView *) tableView;
 ```
 
-#### Return Value
+## Return Value
 
 The number of sections in `tableView`.
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, the table configures the table with one section.
 

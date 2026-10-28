@@ -25,7 +25,7 @@ static let invalidSendPortException: NSExceptionName
 extern NSExceptionName const NSInvalidSendPortException;
 ```
 
-#### Discussion
+## Discussion
 
 This is a distributed objects–specific exception.
 

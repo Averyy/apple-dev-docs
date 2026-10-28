@@ -24,7 +24,7 @@ var textureCubeMap: GLKEffectPropertyTexture { get }
 @property (nonatomic, readonly) GLKEffectPropertyTexture * textureCubeMap;
 ```
 
-#### Discussion
+## Discussion
 
 Your application should create a complete texture cube map in its initialization code. Then, assign the name of this texture to the [`textureCubeMap`](./texturecubemap.md) property of the skybox object.
 

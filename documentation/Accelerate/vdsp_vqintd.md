@@ -21,7 +21,7 @@ Calculates double-precision vector quadratic interpolation.
 extern void vDSP_vqintD(const double *__A, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __M);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vqint`](./vdsp_vqint.md), except for the types of vectors `A`, `B`, and `C`.
 

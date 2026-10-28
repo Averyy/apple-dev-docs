@@ -29,7 +29,7 @@ optional func resolveTransactionScheduledDate(for intent: INPayBillIntent) async
 - (void) resolveTransactionScheduledDateForPayBill:(INPayBillIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the date on which to transfer money from the user’s account to the payee. The user can optionally specify a date on which to schedule payment. If the user doesn’t specify a date, assume that the user wants to pay the bill immediately. Don’t check to see if the scheduled date occurs before the bill’s due date. Instead, use this method only to identify the date on which you can perform the transaction.
 

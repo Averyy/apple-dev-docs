@@ -23,7 +23,7 @@ var segments: [SFTranscriptionSegment] { get }
 @property (nonatomic, copy, readonly) NSArray<SFTranscriptionSegment *> * segments;
 ```
 
-#### Discussion
+## Discussion
 
 The order of the segments in the array matches the order in which the corresponding utterances occur in the spoken content.
 

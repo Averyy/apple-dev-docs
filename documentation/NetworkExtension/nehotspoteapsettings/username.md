@@ -22,7 +22,7 @@ var username: String { get set }
 @property (copy) NSString * username;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be configured for PEAP, EAP-TTLS, and EAP-FAST authentication. It is optional for EAP-TLS authentication. The length of this property must be 1 to 253 characters, inclusive.
 

@@ -23,11 +23,11 @@ init(item: any UIDynamicItem, offsetFromCenter offset: UIOffset, attachedToAncho
 - (instancetype) initWithItem:(id<UIDynamicItem>) item offsetFromCenter:(UIOffset) offset attachedToAnchor:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized attachment behavior, or `nil` if there was a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 The behavior created by this method acts like a solid rod connecting the item to the specified anchor point. The item is free to rotate around the anchor point, but its distance to the anchor point remains fixed. If you specify a nonzero offset value, the item is connected at the specified point instead of the center of the item.
 

@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 
 # mlx.core.expand_dims
 
-**expand_dims(*a: array*, */*, *axis: int | Sequence[int]*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Add a size one dimension at the given axis.
+```python
+expand_dims(a: array, /, axis: int | Sequence[int], *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Add a size one dimension at the given axis.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**axes** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)*) – The index of the inserted dimensions.
+**Parameters:**
 
-Returns:
-The array with inserted dimensions.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **axes** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int))) – The index of the inserted dimensions.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The array with inserted dimensions.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

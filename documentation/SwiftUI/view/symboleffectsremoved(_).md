@@ -22,11 +22,11 @@ Returns a new view with its inherited symbol image effects either removed or lef
 nonisolated func symbolEffectsRemoved(_ isEnabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the view with its symbol effects either removed or left unchanged.
 
-#### Discussion
+## Discussion
 
 The following example adds a repeating pulse effect to two symbol images, but then disables the effect on one of them:
 

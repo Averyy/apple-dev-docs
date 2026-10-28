@@ -21,7 +21,7 @@ If `other` does not have a root, append each component of `other`. If `other` ha
 mutating func push(_ other: FilePath)
 ```
 
-#### Discussion
+## Discussion
 
 This operation mimics traversing a directory structure (similar to the `cd` command), where pushing a relative path will append its components and pushing an absolute path will first clear `self`’s existing components.
 

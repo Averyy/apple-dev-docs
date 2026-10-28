@@ -12,7 +12,7 @@ A package dependency of a Swift package.
 class Dependency
 ```
 
-#### Overview
+## Overview
 
 A package dependency consists of a Git URL to the source of the package, and a requirement for the version of the package.
 

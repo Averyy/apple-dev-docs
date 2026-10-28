@@ -18,7 +18,7 @@ case left
 kCGMouseButtonLeft
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the only mouse button on a one-button mouse, or the left mouse button on a two-button or three-button mouse.
 

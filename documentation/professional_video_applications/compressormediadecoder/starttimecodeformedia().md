@@ -20,11 +20,11 @@ func startTimeCodeForMedia() -> [AnyHashable : Any]!
 - (NSDictionary *) startTimeCodeForMedia;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with key-value pairs specifying the source media timecode information.
 
-#### Discussion
+## Discussion
 
 Use this timecode information if you plan to encode the source media timecode. The dictionary has the following keys:
 

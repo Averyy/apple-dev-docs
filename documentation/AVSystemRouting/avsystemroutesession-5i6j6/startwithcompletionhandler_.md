@@ -17,7 +17,7 @@ Starts the session and initiates media playback on the remote device.
 - (void) startWithCompletionHandler:(void (^)(NSError *launchError, AVSystemRouteMediaSession *mediaSession)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to begin the playback session after adding it to an [`AVSystemRoute`](../avsystemroute-9kkj3.md). The session uses the URL and launch mode specified during initialization to start playback on the remote device.
 

@@ -17,7 +17,7 @@ An asynchronous sequence that emits events when the set of alarms changes.
 var alarmUpdates: some AsyncSequence<Array<Alarm>, Never> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to receive a notification when an alarm alerts, snoozes, or dismisses.
 

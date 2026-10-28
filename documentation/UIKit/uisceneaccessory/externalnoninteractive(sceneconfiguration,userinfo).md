@@ -25,7 +25,7 @@ class func externalNonInteractive(sceneConfiguration: UISceneConfiguration, user
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 When the display connects, the scene accessory’s content may be presented on it.
 

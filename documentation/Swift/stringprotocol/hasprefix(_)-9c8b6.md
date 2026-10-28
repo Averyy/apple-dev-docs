@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the string begins with the specified 
 func hasPrefix<Prefix>(_ prefix: Prefix) -> Bool where Prefix : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the string begins with `prefix`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The comparison is both case sensitive and Unicode safe. The case-sensitive comparison will only match strings whose corresponding characters have the same case.
 

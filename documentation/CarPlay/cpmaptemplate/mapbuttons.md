@@ -21,7 +21,7 @@ var mapButtons: [CPMapButton] { get set }
 @property (nonatomic, strong) NSArray<CPMapButton *> * mapButtons;
 ```
 
-#### Discussion
+## Discussion
 
 When the array contains more than three buttons, the map template displays only the first three, ignoring the remaining buttons.
 

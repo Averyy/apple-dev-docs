@@ -20,11 +20,11 @@ func selectedRange() -> NSRange
 - (NSRange) selectedRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range of selected text or `{NSNotFound, 0}` if there is no selection.
 
-#### Discussion
+## Discussion
 
 The returned range measures from the start of the receiver’s text storage, that is, from 0 to the document length.
 

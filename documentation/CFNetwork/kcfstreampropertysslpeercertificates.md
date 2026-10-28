@@ -23,7 +23,7 @@ let kCFStreamPropertySSLPeerCertificates: CFString
 extern CFStringRef const kCFStreamPropertySSLPeerCertificates;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see `SSLGetPeerCertificates` in `Security/SecureTransport.h`.
 

@@ -25,7 +25,7 @@ class var simdLocalUp: simd_float3 { get }
 @property (class, nonatomic, readonly) simd_float3 simdLocalUp;
 ```
 
-#### Discussion
+## Discussion
 
 The “up” direction of a node affects cameras attached to a node, as well as relative orientation and movement effects such as [`simdLook(at:)`](./simdlook%28at%29.md), [`SCNLookAtConstraint`](../scnlookatconstraint.md), and [`SCNBillboardConstraint`](../scnbillboardconstraint.md).
 

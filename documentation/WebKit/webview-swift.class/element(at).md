@@ -21,7 +21,7 @@ func element(at point: NSPoint) -> [AnyHashable : Any]!
 - (NSDictionary *) elementAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary description of the element at `point` in the receiver’s coordinates.
 

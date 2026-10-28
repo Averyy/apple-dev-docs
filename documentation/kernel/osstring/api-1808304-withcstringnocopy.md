@@ -12,11 +12,11 @@ static OSString * withCStringNoCopy(
  const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSString containing `cString`, and with a reference count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 An OSString object created with this function does not claim ownership of the C string, but shares it with the caller. When the caller determines that the OSString object has actually been freed, it can safely dispose of the data buffer. Conversely, if it frees the shared data buffer, it must not attempt to use the OSString object and should release it.
 

@@ -19,7 +19,7 @@ optional func adjustedRange(from textRange: NSTextRange, forEditingTextSelection
 - (NSTextRange *) adjustedRangeFromRange:(NSTextRange *) textRange forEditingTextSelection:(BOOL) forEditingTextSelection;
 ```
 
-#### Return Value
+## Return Value
 
 When `textRange` is intersecting or following the current edited range, the method returns the range adjusted for the modification in the editing session. Returns `nil`, when no adjustment necessary.
 

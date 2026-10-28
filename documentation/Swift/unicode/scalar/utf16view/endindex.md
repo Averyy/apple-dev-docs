@@ -21,7 +21,7 @@ The “past the end” position—that is, the position one greater than the las
 var endIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `endIndex` is equal to `startIndex`.
 

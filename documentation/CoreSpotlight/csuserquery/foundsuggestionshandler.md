@@ -27,7 +27,7 @@ var foundSuggestionsHandler: (([CSSuggestion]) -> Void)? { get set }
 
 - [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 Specify a value for this property only if you start your query with the [`start()`](./start%28%29.md) method. While the query runs, the query object executes the provided closure one or more times to deliver suggested completions for the current search term. Use your handler to retrieve the suggested completions and update your app’s search interface. The query object stops delivering suggested items when it runs out of suggestions or reaches the maximum number found in the [`maxSuggestionCount`](../csuserquerycontext/maxsuggestioncount.md) property of the query configuration parameters.
 

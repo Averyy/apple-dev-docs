@@ -21,7 +21,7 @@ Returns a display option that displays the component when a specified component 
 static func displayWhen(_ component: URL.FormatStyle.Component, matches requirements: Set<String>) -> URL.FormatStyle.ComponentDisplayOption
 ```
 
-#### Return Value
+## Return Value
 
 A display option that displays the component when a specified component meets the specified requirements.
 

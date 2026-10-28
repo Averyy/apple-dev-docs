@@ -25,7 +25,7 @@ typealias CFBagReleaseCallBack = (CFAllocator?, UnsafeRawPointer?) -> Void
 typedef void (*)(const struct __CFAllocator *, const void *) CFBagReleaseCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFBagCreate(_:_:_:_:)`](./cfbagcreate%28_,_,_,_%29.md) in a [`CFBagCallBacks`](./cfbagcallbacks.md) structure.
 

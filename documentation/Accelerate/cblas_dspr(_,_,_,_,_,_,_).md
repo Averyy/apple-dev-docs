@@ -25,7 +25,7 @@ func cblas_dspr(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ A
 void cblas_dspr(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const double ALPHA, const double *X, const __LAPACK_int INCX, double *AP);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates `A + alpha*x*x` and stores the result in `A`.
 

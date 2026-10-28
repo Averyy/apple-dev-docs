@@ -23,7 +23,7 @@ optional func session(_ session: WCSession, didReceive file: WCSessionFile)
 - (void) session:(WCSession *) session didReceiveFile:(WCSessionFile *) file;
 ```
 
-#### Discussion
+## Discussion
 
 The session object calls this method when it successfully receives a file from its counterpart. Implement this method to incorporate the file information into the current app. The system calls this method on a background thread.
 

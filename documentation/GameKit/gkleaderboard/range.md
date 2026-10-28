@@ -35,7 +35,7 @@ var range: NSRange { get set }
 @property (atomic, assign) NSRange range;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit ignores the [`range`](./range.md) property if the leaderboard request initializes using the [`init(playerIDs:)`](./init%28playerids%29.md) method. Otherwise, the [`range`](./range.md) property filters which scores to return to your game. For example, if you specify a range of `[1,10]`, when the search completes, your game receives the best ten scores. The default range is `[1,25]`.
 

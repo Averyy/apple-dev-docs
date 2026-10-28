@@ -26,11 +26,11 @@ func descendants(matching type: XCUIElement.ElementType) -> XCUIElementQuery
 - (XCUIElementQuery *) descendantsMatchingType:(XCUIElementType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new query that defines a search that extends the search criteria of the receiver. The new search finds all decendant of elements that match the original search and are of the requested type. For a list of the types, see [`XCUIElement.ElementType`](../xcuielement/elementtype.md).
 
-#### Discussion
+## Discussion
 
 Because [`XCUIElementQuery`](../xcuielementquery.md) conforms to the [`XCUIElementTypeQueryProvider`](../xcuielementtypequeryprovider.md) protocol, you can use the protocol’s properties as shorthand for calling [`descendants(matching:)`](./descendants%28matching%29.md) for different element types. For example, rather than calling `query.descendants(matching: .button)`, you can use the [`buttons`](../xcuielementtypequeryprovider/buttons.md) property from the protocol to retrieve `query.buttons`.
 

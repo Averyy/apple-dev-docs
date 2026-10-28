@@ -23,11 +23,11 @@ optional func textStyling(at position: UITextPosition, in direction: UITextStora
 - (NSDictionary<NSString *,id> *) textStylingAtPosition:(UITextPosition *) position inDirection:(UITextStorageDirection) direction;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary whose elements are one or more of the key-value pairs defining text color, font, and background color. See [Style dictionary keys](../style-dictionary-keys.md) for descriptions of these key-value pairs.
 
-#### Discussion
+## Discussion
 
 Text styling information can affect, for example, the appearance of a correction rectangle.
 

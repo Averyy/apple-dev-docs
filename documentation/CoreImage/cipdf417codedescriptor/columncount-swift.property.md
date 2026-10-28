@@ -24,7 +24,7 @@ var columnCount: Int { get }
 @property (readonly) NSInteger columnCount;
 ```
 
-#### Discussion
+## Discussion
 
 Valid column count values are from 1 to 30. This count excluded the columns used to indicate the symbol structure.
 

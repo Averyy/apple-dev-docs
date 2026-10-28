@@ -25,11 +25,11 @@ class var nonBaseCharacters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * nonBaseCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the non-base characters.
 
-#### Discussion
+## Discussion
 
 This set is also defined as all legal Unicode characters with a non-spacing priority greater than `0`. Informally, this set is the set of all characters used as modifiers of base characters.
 

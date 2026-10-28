@@ -23,11 +23,11 @@ optional func splitViewController(_ splitViewController: UISplitViewController, 
 - (BOOL) splitViewController:(UISplitViewController *) splitViewController collapseSecondaryViewController:(UIViewController *) secondaryViewController ontoPrimaryViewController:(UIViewController *) primaryViewController;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) to let the split view controller try to incorporate the secondary view controller’s content into the collapsed interface, or [`true`](../../Swift/true.md) to indicate that you do not want the split view controller to do anything with the secondary view controller.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to classic split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

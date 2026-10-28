@@ -15,7 +15,7 @@ An error a validator emits when the maximum value given isn’t numeric.
 interface MaxValueNotNumericError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`.
 

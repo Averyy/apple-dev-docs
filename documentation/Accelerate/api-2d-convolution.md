@@ -5,7 +5,7 @@
 
 Perform convolution operations on matrices of real data.
 
-#### Overview
+## Overview
 
 Use the functions in this group to apply a convolution kernel to a 2D matrix. The vDSP library provides functions to convolve with fixed-sized kernels and kernels with an arbitrary size.
 

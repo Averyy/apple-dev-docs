@@ -18,7 +18,7 @@ A protocol that defines methods that your extension adopts to start and stop the
 protocol NEHotspotAuthenticationProvider : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol in your hotspot helper app extension to handle the hotspot commands [`NEHotspotHelperCommandType.authenticate`](./nehotspothelpercommandtype/authenticate.md), [`NEHotspotHelperCommandType.maintain`](./nehotspothelpercommandtype/maintain.md), [`NEHotspotHelperCommandType.presentUI`](./nehotspothelpercommandtype/presentui.md), and [`NEHotspotHelperCommandType.logoff`](./nehotspothelpercommandtype/logoff.md).
 

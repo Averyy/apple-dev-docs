@@ -21,7 +21,7 @@ An option to format Boolean values as true or false strings.
 case truth
 ```
 
-#### Discussion
+## Discussion
 
 This option formats a Boolean true value as `true` and a Boolean false value as `false`.
 

@@ -17,7 +17,7 @@ The parameter that sets the initial Wi-Fi Aware data path configuration for any 
 struct DatapathParameters
 ```
 
-#### Overview
+## Overview
 
 The `DatapathParameters` is an optional “`datapath:`” component of the `.wifiAware()` instruction to a `NetworkListener`. If you don’t set a specific parameter, then the system applies the default parameters with bulk performance mode.
 

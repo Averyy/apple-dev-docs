@@ -22,7 +22,7 @@ func encode(withMTL4CommandEncoder encoder: any MTL4ComputeCommandEncoder, sourc
 - (void) encodeWithMTL4CommandEncoder:(id<MTL4ComputeCommandEncoder>) encoder sourceArrays:(NSArray<MPSNDArray *> *) sourceArrays destinationArray:(MPSNDArray *) destination;
 ```
 
-#### Discussion
+## Discussion
 
 Encode a simple inference NDArray kernel. The encoder associates the commands with MTLStageDispatch. Synchronize your workloads against this stage when using this function to prevent race conditions.
 

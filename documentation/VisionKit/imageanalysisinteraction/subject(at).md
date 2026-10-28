@@ -19,11 +19,11 @@ Returns the subject at the given point within the interaction’s image, if one 
 final func subject(at point: CGPoint) async -> ImageAnalysisInteraction.Subject?
 ```
 
-#### Return Value
+## Return Value
 
 The subject that resides at `point`; or, `nil`, if no subject resides at `point`.
 
-#### Discussion
+## Discussion
 
 This method works for interaction types that include [`imageSubject`](./interactiontypes/imagesubject.md).
 

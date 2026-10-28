@@ -23,7 +23,7 @@ var isPrefetchingEnabled: Bool { get set }
 @property (nonatomic, getter=isPrefetchingEnabled) BOOL prefetchingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the collection view requests cells in advance of when they will be displayed, spreading the rendering over multiple layout passes. When [`false`](../../Swift/false.md), the cells are requested as they are needed for display, often with multiple cells being requested in the same render loop. Setting this property to [`false`](../../Swift/false.md) also disables data prefetching. The default value of this property is [`true`](../../Swift/true.md).
 

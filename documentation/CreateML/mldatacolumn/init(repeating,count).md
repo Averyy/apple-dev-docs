@@ -26,7 +26,7 @@ init(repeating repeatedValue: Element, count: Int)
 init(repeating repeatedValue: MLDataValue, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of repeating elements with any type that conforms to [`MLDataValueConvertible`](../mldatavalueconvertible.md), including integers, doubles, strings, arrays, and dictionaries.
 

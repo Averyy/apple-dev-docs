@@ -15,7 +15,7 @@ The width of the OpenGL pixel buffer’s texture, in pixels.
 @property (readonly) GLsizei pixelsWide;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the texture (in pixels).
 

@@ -25,7 +25,7 @@ func CMClockMakeHostTimeFromSystemUnits(_ hostTime: UInt64) -> CMTime
 extern CMTime CMClockMakeHostTimeFromSystemUnits(uint64_t hostTime);
 ```
 
-#### Discussion
+## Discussion
 
 The return value has a large integer timescale (for example, nanoseconds). This function handles situations where the host time’s native units use a non-integer timescale.
 

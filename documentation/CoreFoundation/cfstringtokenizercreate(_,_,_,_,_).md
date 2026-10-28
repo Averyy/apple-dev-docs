@@ -25,7 +25,7 @@ func CFStringTokenizerCreate(_ alloc: CFAllocator!, _ string: CFString!, _ range
 extern CFStringTokenizerRefCFStringTokenizerCreate(CFAllocatorRef alloc, CFStringRef string, CFRange range, CFOptionFlags options, CFLocaleRef locale);
 ```
 
-#### Return Value
+## Return Value
 
 A tokenizer to analyze the range `range` of `string` for the given locale and options. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -19,7 +19,7 @@ var string: String { get }
 @property (copy, readonly) NSString * string;
 ```
 
-#### Discussion
+## Discussion
 
 The string contains the 6 hexadecimal bytes of the MAC address, separated by colon characters. Alphabetical characters are lowercase in the string. An example string is `01:23:45:ab:cd:ef`.
 

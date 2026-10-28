@@ -5,7 +5,7 @@
 
 A cache used to create and manage OpenGL ES texture objects.
 
-#### Overview
+## Overview
 
 Core Video uses OpenGL ES texture caches to cache and manage [`CVOpenGLESTexture`](./cvopenglestexture.md) textures. These texture caches provide you with a way to directly read and write buffers with various pixel formats, such as 420v or BGRA, from GL ES.
 

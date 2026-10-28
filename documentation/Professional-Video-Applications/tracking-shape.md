@@ -5,13 +5,13 @@
 
 Define a shape that the object-tracker uses to match the movement of an object.
 
-#### Overview
+## Overview
 
 In Final Cut Pro, users can track the shape-mask of a video effect such as a blur, highlight, or color effect to a moving object in a video clip.
 
 Use the `tracking-shape` element to define the shape that the [object-tracker](./object-tracker.md) element uses to match the movement of a moving object in a video clip. Each object-tracker element consists of one or more tracking shapes.
 
-##### Tracking-Shape Elements Attributes
+### Tracking-Shape Elements Attributes
 
 - **`id`**: Specifies a local identifier to use within the FCPXML document.
 - **`name`**: Specifies the name of the shape.

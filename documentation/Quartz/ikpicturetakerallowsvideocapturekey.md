@@ -19,7 +19,7 @@ let IKPictureTakerAllowsVideoCaptureKey: String
 extern NSString * const IKPictureTakerAllowsVideoCaptureKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an `NSNumber` value (`BOOL`) whose default value is [`true`](../Swift/true.md).
 

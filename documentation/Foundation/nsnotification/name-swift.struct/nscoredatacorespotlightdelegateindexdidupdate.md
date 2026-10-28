@@ -19,7 +19,7 @@ A notification that posts after Spotlight completes an index update.
 static let NSCoreDataCoreSpotlightDelegateIndexDidUpdate: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the Core Spotlight delegate. The framework posts the notification to a private thread. Move to a known thread before peforming any work.
 

@@ -12,11 +12,11 @@ virtual bool DoesHBAPerformDeviceManagement (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 return true means objects for target devices will only be created when the child class calls the CreateTargetForID method.
 
-#### Overview
+## Overview
 
 This method is used to determine if the HBA will manage target device creation and destruction.
 

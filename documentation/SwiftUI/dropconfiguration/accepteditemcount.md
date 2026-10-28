@@ -15,7 +15,7 @@ Specifies the number of items that the drop side wants to accept.
 var acceptedItemCount: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Some drop destinations can accept only a limited number of dropped items. On macOS, the number is displayed as a cursor badge.
 

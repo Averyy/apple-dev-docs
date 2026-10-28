@@ -25,7 +25,7 @@ var videoComposition: AVVideoComposition? { get set }
 @property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

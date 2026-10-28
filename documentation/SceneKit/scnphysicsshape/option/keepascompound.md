@@ -25,7 +25,7 @@ static let keepAsCompound: SCNPhysicsShape.Option
 extern SCNPhysicsShapeOption const SCNPhysicsShapeKeepAsCompoundKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`true`](../../../Swift/true.md), specifying that SceneKit convert separate geometries into separate shapes and join the resulting shapes. If [`false`](../../../Swift/false.md), SceneKit creates a single shape approximating the combined form of the geometries.
 

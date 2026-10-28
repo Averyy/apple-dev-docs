@@ -23,7 +23,7 @@ func setPrimaryConstituentDeviceSwitchingBehaviorForRecording(_ switchingBehavio
 - (void) setPrimaryConstituentDeviceSwitchingBehaviorForRecording:(AVCapturePrimaryConstituentDeviceSwitchingBehavior) switchingBehavior restrictedSwitchingBehaviorConditions:(AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions) restrictedSwitchingBehaviorConditions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to control the camera switching behavior the system uses when recording a movie. The behavior you specify takes effect when you enable it by setting the value of [`isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled`](./isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md) to [`true`](../../Swift/true.md).
 

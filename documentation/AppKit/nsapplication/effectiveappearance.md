@@ -19,7 +19,7 @@ var effectiveAppearance: NSAppearance { get }
 @property (strong, readonly) NSAppearance * effectiveAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 This property always contains an [`NSAppearance`](../nsappearance.md) object representing the appearance to use during drawing. If you don’t explicitly assign a value to the [`appearance`](./appearance.md) property, the app inherits the system’s effective appearance.
 

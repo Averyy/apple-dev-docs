@@ -16,7 +16,7 @@ A foveated streaming provider extension.
 protocol FoveatedStreamingExtension : AnyObject, AppExtension
 ```
 
-#### Overview
+## Overview
 
 Foveated streaming providers are a system extension that allows developers to use your custom protocol with a [`FoveatedStreamingSession`](./foveatedstreamingsession.md).
 

@@ -23,7 +23,7 @@ let DDErrorDomain: String
 extern NSString * const DDErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Error domains](../CoreFoundation/error-domains.md).
 

@@ -24,7 +24,7 @@ class HMAccessoryProfile
 @interface HMAccessoryProfile : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is an abstract superclass for classes such as [`HMCameraProfile`](./hmcameraprofile.md) and [`HMNetworkConfigurationProfile`](./hmnetworkconfigurationprofile.md). Each profile subclass controls specific features for a specific set of accessories.
 

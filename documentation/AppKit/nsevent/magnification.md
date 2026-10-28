@@ -19,7 +19,7 @@ var magnification: CGFloat { get }
 @property (readonly) CGFloat magnification;
 ```
 
-#### Discussion
+## Discussion
 
 The change in magnification that should be added to the current scaling of an item to achieve the new scale factor. This message is valid only for events of type [`NSEvent.EventType.magnify`](./eventtype/magnify.md).
 

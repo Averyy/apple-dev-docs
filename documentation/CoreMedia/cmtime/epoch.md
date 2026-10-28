@@ -25,7 +25,7 @@ var epoch: CMTimeEpoch
 CMTimeEpoch epoch;
 ```
 
-#### Discussion
+## Discussion
 
 Use the epoch to differentiate between equal timestamps that are different due to looping, multi-item sequencing, and so on.
 

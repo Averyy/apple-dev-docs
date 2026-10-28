@@ -24,7 +24,7 @@ func JSValueGetType(_ ctx: JSContextRef!, _ value: JSValueRef!) -> JSType
 JSType JSValueGetType(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSType`](./jstype.md) value that identifies the value’s type.
 

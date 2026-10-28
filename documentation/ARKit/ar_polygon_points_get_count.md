@@ -15,7 +15,7 @@ Gets the number of points in the collection.
 extern size_t ar_polygon_points_get_count(ar_polygon_points_t polygon_points);
 ```
 
-#### Return Value
+## Return Value
 
 The number of points in the collection.
 

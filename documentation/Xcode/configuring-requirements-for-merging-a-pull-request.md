@@ -5,7 +5,7 @@
 
 Protect stable branches by requiring a successful Xcode Cloud build or action before it’s possible to merge a pull request.
 
-#### Overview
+## Overview
 
 When you configure an Xcode Cloud workflow that starts a new build for every change to a pull request (PR), Xcode Cloud reports the build status on your source code management (SCM) provider’s webpage for a PR. As a result, you can identify issues that changes in the PR caused. However, the build status doesn’t prevent you from merging a PR with a failed Xcode Cloud build.
 
@@ -19,7 +19,7 @@ The user interface for configuring requirements for PRs depends on the SCM provi
 
 > **Note**: To configure requirements for PRs, you need the same permission or role that you need to initially connect Xcode Cloud to your Git repository. For information about required permissions and roles, see [Use a remote source control repository](./setting-up-your-project-to-use-xcode-cloud.md#Use-a-remote-source-control-repository).
 
-#### Configure requirements
+## Configure requirements
 
 To require a successful Xcode Cloud build or action before it’s possible to merge a PR:
 

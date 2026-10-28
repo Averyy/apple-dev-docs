@@ -23,7 +23,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized collection view layout object.
 

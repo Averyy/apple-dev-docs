@@ -24,7 +24,7 @@ init(rect r: CGRect)
 - (instancetype) initWithRect:(CGRect) r;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized CIFilterShape object, or `nil` if the method fails.
 

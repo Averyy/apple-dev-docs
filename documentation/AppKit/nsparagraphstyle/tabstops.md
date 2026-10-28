@@ -19,7 +19,7 @@ var tabStops: [NSTextTab] { get }
 @property (copy, readonly) NSArray<NSTextTab *> * tabStops;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSTextTab`](../nstexttab.md) objects, sorted by location, define the tab stops for the paragraph style. The default value is an array of 12 left-aligned tabs at 28-point intervals.
 

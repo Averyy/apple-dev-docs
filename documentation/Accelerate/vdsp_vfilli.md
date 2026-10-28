@@ -21,7 +21,7 @@ Populates an integer vector with a specified scalar value.
 extern void vDSP_vfilli(const int *__A, int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The functions in this group populate a vector with a specified scalar value.
 

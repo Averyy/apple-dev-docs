@@ -25,7 +25,7 @@ An animation for the properties of scenes or entities.
 
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
-#### Overview
+## Overview
 
 You find animation resources in an entity’s [`availableAnimations`](./entity/availableanimations.md) array. Animation resources come bundled with an entity when you load the entity from a file. They describe an animation that’s specific to the entity to which they are attached.
 

@@ -20,7 +20,7 @@ Creates an item that contains the name of a song.
 static func song(_ name: String) -> GroupSessionEvent.Action.QueueChange.Item
 ```
 
-#### Discussion
+## Discussion
 
 When a participant adds a song or changes the next song in the queue, call this method to create an item with the song name. When you show the change notice, SharePlay displays the song name to the participant.
 

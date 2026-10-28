@@ -28,7 +28,7 @@ class UITabGroup
 
 - [Elevating your iPad app with a tab bar and sidebar](./elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Overview
+## Overview
 
 Use tab groups to create a rich hierarchy of tab items. On iPad, the system displays the tab group as a section in the sidebar. For more information, see [Elevating your iPad app with a tab bar and sidebar](./elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
 

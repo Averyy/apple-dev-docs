@@ -25,7 +25,7 @@ let kSecTrustExtendedValidation: CFString
 extern CFStringRef const kSecTrustExtendedValidation;
 ```
 
-#### Discussion
+## Discussion
 
 When the key is present and the value set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), it indicates the chain is validated for Extended Validation (EV).
 

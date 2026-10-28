@@ -16,7 +16,7 @@ get span(): CoordinateSpan;
 set span(span: CoordinateSpanData);
 ```
 
-#### Discussion
+## Discussion
 
 A [`CoordinateSpan`](../coordinatespan.md) also defines the current zoom level used by the map object.
 

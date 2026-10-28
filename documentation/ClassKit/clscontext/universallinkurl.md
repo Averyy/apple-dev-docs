@@ -27,7 +27,7 @@ var universalLinkURL: URL? { get set }
 
 - [Linking directly to assignments](../linking-directly-to-assignments.md)
 
-#### Discussion
+## Discussion
 
 Use this property if your app already supports universal links. Otherwise, consider supporting user activities instead. For more information, see in [Linking directly to assignments](../linking-directly-to-assignments.md).
 

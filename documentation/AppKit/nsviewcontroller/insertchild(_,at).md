@@ -19,7 +19,7 @@ func insertChild(_ childViewController: NSViewController, at index: Int)
 - (void) insertChildViewController:(NSViewController *) childViewController atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 You should instead use the [`addChild(_:)`](./addchild%28_%29.md) method unless you want to perform work on child view controllers as you add them. In that case, override this method to perform that work.
 

@@ -9,7 +9,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Develop baremetal, embedded, and standalone software in Swift using Embedded Swift’s compilation and language mode.
 
-#### Overview
+## Overview
 
 Embedded Swift provides a compilation model tailored to microcontrollers and other resource-constrained devices, producing small, freestanding binaries with no hidden runtime costs. The mode eliminates dynamic language features like reflection and runtime type metadata, replacing them with compile-time specialization so that generics, protocols, and other high-level Swift features compile down to code comparable to a traditional C compiler’s output. Embedded Swift also provides full C and C++ interoperability, letting you integrate with existing vendor SDKs and hardware drivers, or write fully baremetal code with no SDK at all.
 

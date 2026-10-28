@@ -23,7 +23,7 @@ let NSMetadataItemURLKey: String
 extern NSString * const NSMetadataItemURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSURL`](./nsurl.md) object that you can use to open the file.
 

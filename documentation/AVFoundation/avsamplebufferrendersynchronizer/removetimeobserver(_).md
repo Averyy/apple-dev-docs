@@ -25,7 +25,7 @@ func removeTimeObserver(_ observer: Any)
 - (void) removeTimeObserver:(id) observer;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to explicitly cancel time observers added using [`addPeriodicTimeObserver(forInterval:queue:using:)`](./addperiodictimeobserver%28forinterval,queue,using%29.md) or [`addBoundaryTimeObserver(forTimes:queue:using:)`](./addboundarytimeobserver%28fortimes,queue,using%29.md)
 

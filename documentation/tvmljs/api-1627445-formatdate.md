@@ -18,7 +18,7 @@ String formatDate(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the formatted date.
 

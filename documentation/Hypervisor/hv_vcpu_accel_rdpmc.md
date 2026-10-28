@@ -23,7 +23,7 @@ HV_VCPU_ACCEL_RDPMC
 
 - [Extending vCPU Capabilities Using Model-Specific Registers](./extending-vcpu-capabilities-using-model-specific-registers.md)
 
-#### Discussion
+## Discussion
 
 When the guest issues RDPMC instructions, a VM exit occurs. When set, this flag instructs the kernel to handle RDRPMC VM exits directly, and more efficiently, than passing them on to user space.
 

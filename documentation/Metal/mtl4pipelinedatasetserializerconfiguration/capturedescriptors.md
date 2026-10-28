@@ -24,7 +24,7 @@ static var captureDescriptors: MTL4PipelineDataSetSerializerConfiguration { get 
 MTL4PipelineDataSetSerializerConfigurationCaptureDescriptors
 ```
 
-#### Discussion
+## Discussion
 
 Set this mask to use [`serializeAsPipelinesScript()`](../mtl4pipelinedatasetserializer/serializeaspipelinesscript%28%29.md).
 

@@ -19,7 +19,7 @@ protocol FSManageableResourceMaintenanceOperations : NSObjectProtocol
 @protocol FSManageableResourceMaintenanceOperations <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol includes operations to check and format a resource for an [`FSUnaryFileSystem`](./fsunaryfilesystem.md). Conform to this protocol if you implement a [`FSUnaryFileSystem`](./fsunaryfilesystem.md) that uses an [`FSBlockDeviceResource`](./fsblockdeviceresource.md).
 

@@ -21,7 +21,7 @@ Creates a user info key from the given string.
 init(_ rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer. Instead, extend the [`UndoManager.UserInfoKey`](../userinfokey.md) namespace as follows:
 

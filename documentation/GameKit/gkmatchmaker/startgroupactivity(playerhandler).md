@@ -28,7 +28,7 @@ func startGroupActivity(playerHandler handler: @escaping (GKPlayer) -> Void)
 - [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
-#### Discussion
+## Discussion
 
 SharePlay lets people share experiences in a group activity, such as joining your game using FaceTime or the Messages app. If you implement a custom group activity interface, use this method to show a group activity that your game provides in apps that support the SharePlay interface. For macOS apps, add the Group Activities capability to your Xcode to enable this feature.
 

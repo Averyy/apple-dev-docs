@@ -25,7 +25,7 @@ var inputParameters: [AVAudioMixInputParameters] { get set }
 @property (nonatomic, copy) NSArray<AVAudioMixInputParameters *> * inputParameters;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains instances of [`AVAudioMixInputParameters`](../avaudiomixinputparameters.md). You don’t need an instance for each audio track that contributes to the mix. By default, the system processes audio for those tracks without an associated `AVAudioMixInputParameters` instance.
 

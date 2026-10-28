@@ -27,7 +27,7 @@ var safeAreaInsets: UIEdgeInsets { get }
 
 - [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
 
-#### Discussion
+## Discussion
 
 The safe area of a view reflects the area not covered by navigation bars, tab bars, toolbars, and other ancestors that obscure a view controller’s view. (In tvOS, the safe area reflects the area not covered by the screen’s bezel.) You obtain the safe area for a view by applying the insets in this property to the view’s bounds rectangle. If the view is not currently installed in a view hierarchy, or is not yet visible onscreen, the edge insets in this property are `0`.
 

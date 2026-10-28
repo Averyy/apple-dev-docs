@@ -20,7 +20,7 @@ var isRunning: Bool { get }
 @property (nonatomic, readonly, getter=isRunning) BOOL running;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the controller’s workflow is currently running; [`false`](../../Swift/false.md) otherwise. Use `isRunning:` to determine whether the receiver’s workflow is currently running.
 

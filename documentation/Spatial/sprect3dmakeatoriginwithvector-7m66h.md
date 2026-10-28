@@ -19,11 +19,11 @@
 static SPRect3D SPRect3DMakeAtOriginWithVector(SPVector3D origin, SPVector3D size);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle at the specified origin using Spatial vectors.
 

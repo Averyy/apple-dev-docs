@@ -25,7 +25,7 @@ struct NSFileProviderServiceName
 typedef NSString * NSFileProviderServiceName;
 ```
 
-#### Discussion
+## Discussion
 
 The team providing the protocol also defines the name. To create a new service’s name:
 

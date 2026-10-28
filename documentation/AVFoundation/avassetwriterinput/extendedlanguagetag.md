@@ -24,7 +24,7 @@ var extendedLanguageTag: String? { get set }
 @property (nonatomic, copy, nullable) NSString * extendedLanguageTag;
 ```
 
-#### Discussion
+## Discussion
 
 Extended language tags are normally set only when an ISO 639-2/T language code alone is ambiguous. For example, you may use an extended language tag to distinguish media by the regional dialect in use or the writing system employed.
 

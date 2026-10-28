@@ -26,7 +26,7 @@ class func fetchJobs(action: PHAssetResourceUploadJob.Action, options: PHFetchOp
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 The jobs available on which you can apply an action found in [`PHAssetResourceUploadJob.Action`](./action.md).
 

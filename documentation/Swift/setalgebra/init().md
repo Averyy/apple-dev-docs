@@ -22,7 +22,7 @@ Creates an empty set.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is equivalent to initializing with an empty array literal. For example, you create an empty `Set` instance with either this initializer or with an empty array literal.
 

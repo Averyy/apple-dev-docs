@@ -18,11 +18,11 @@ Get current quantized state without updating
 func getQuantizedState() -> ((MLXArray, MLXArray, MLXArray?), (MLXArray, MLXArray, MLXArray?))?
 ```
 
-#### Return Value
+## Return Value
 
 Current quantized state, or nil if cache is empty
 
-#### Discussion
+## Discussion
 
 Useful for accessing cached data without adding new tokens.
 

@@ -32,7 +32,7 @@ var attachments: [UNNotificationAttachment] { get }
 @property (atomic, copy, readonly) NSArray<UNNotificationAttachment *> * attachments;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the images, movies, and audio files associated with your notification’s content. A notification content app extension might use these values to add the associated content to its view controller.
 

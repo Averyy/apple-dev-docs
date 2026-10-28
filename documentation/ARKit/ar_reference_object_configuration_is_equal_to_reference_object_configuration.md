@@ -15,7 +15,7 @@ Returns a bool value that indicates whether the two reference object configurati
 extern bool ar_reference_object_configuration_is_equal_to_reference_object_configuration(ar_reference_object_configuration_t reference_object_configuration, ar_reference_object_configuration_t other_reference_object_configuration);
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the reference object configurations are equal, otherwise `NO`.
 

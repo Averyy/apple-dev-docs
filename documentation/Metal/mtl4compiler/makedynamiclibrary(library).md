@@ -25,7 +25,7 @@ func makeDynamicLibrary(library: any MTLLibrary) throws -> any MTLDynamicLibrary
 - (id<MTLDynamicLibrary>) newDynamicLibrary:(id<MTLLibrary>) library error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new dynamic Metal library upon success, `nil` otherwise.
 

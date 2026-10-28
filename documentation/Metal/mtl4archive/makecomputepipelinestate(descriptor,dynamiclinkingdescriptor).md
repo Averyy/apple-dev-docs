@@ -20,7 +20,7 @@ Creates a compute pipeline state from the archive with a compute descriptor and 
 func makeComputePipelineState(descriptor: MTL4ComputePipelineDescriptor, dynamicLinkingDescriptor: MTL4PipelineStageDynamicLinkingDescriptor? = nil) throws -> any MTLComputePipelineState
 ```
 
-#### Return Value
+## Return Value
 
 A compute pipeline state object upon success, otherwise this function throws.
 

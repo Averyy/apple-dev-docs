@@ -27,7 +27,7 @@ var userInterfaceIdiom: UIUserInterfaceIdiom { get }
 
 - [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
 
-#### Discussion
+## Discussion
 
 The default user interface idiom for a trait collection is [`UIUserInterfaceIdiom.unspecified`](../uiuserinterfaceidiom/unspecified.md).
 

@@ -25,7 +25,7 @@ convenience init(object: Any, forKey key: any NSCopying)
 + (instancetype) dictionaryWithObject:(ObjectType) object forKey:(id<NSCopying>) key;
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary containing a single object, `object`, for a single key, `aKey`.
 

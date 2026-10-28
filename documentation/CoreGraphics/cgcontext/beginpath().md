@@ -25,7 +25,7 @@ func beginPath()
 extern void CGContextBeginPath(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 A graphics context can have only a single path in use at any time. If the specified context already contains a current path when you call this function, the old path and any data associated with it is discarded.
 

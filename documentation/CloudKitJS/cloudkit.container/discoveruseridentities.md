@@ -17,11 +17,11 @@ Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverUserIdentitie
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.UserIdentitiesResponse`](../cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 This method returns information about those users who meet the following criteria:
 

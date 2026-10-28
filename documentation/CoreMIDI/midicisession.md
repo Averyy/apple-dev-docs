@@ -25,7 +25,7 @@ class MIDICISession
 @interface MIDICISession : NSObject
 ```
 
-#### Overview
+## Overview
 
 A MIDI-CI session is a bidirectional communication path between a MIDI source and destination identified using MIDI-CI discovery. Use a session to manipulate MIDI-CI profiles and to discover device capabilities.
 

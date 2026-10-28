@@ -25,7 +25,7 @@ case dynamic
 SCNPhysicsBodyTypeDynamic
 ```
 
-#### Discussion
+## Discussion
 
 Use dynamic bodies for the elements of your scene that are moved by the physics simulation.
 

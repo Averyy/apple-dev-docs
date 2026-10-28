@@ -24,13 +24,13 @@ class HKDocumentSample
 @interface HKDocumentSample : HKSample
 ```
 
-#### Overview
+## Overview
 
 You should never instantiate an `HKDocumentSample` object directly. Instead, you always work with a concrete subclass. In iOS 10 and watchOS 3, the only concrete class is the [`HKCDADocumentSample`](./hkcdadocumentsample.md) class.
 
 Document samples are immutable: You set the sample’s properties when you create it, and they cannot change.
 
-##### Extend Document Samples
+### Extend Document Samples
 
 Like many HealthKit classes, you should not create any custom subclasses of the `HKDocumentSample` class. You can extend the `HKDocumentSample` class and its subclasses by adding custom metadata keys and values to the metadata dictionary when the object is instantiated.
 

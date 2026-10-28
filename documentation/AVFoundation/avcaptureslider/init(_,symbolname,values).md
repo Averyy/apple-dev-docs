@@ -20,7 +20,7 @@ Creates a discrete slider control that selects a value from a list.
 convenience init(_ localizedTitle: String, symbolName: String, values: [Float])
 ```
 
-#### Discussion
+## Discussion
 
 Use discrete sliders when your app supports selecting from a specific list of values.
 

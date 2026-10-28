@@ -19,7 +19,7 @@ static var disableScreenCornerInteractions: NSApplication.PresentationOptions { 
 NSApplicationPresentationDisableScreenCornerInteractions
 ```
 
-#### Discussion
+## Discussion
 
 `.autoHideDock` or `.hideDock` must also be set for this option to take effect.
 

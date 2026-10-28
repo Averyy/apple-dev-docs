@@ -23,7 +23,7 @@ func connectNode(_ sourceNode: AVAudioNode, to destNodes: [AVAudioConnectionPoin
 - (BOOL) connect:(AVAudioNode *) sourceNode toConnectionPoints:(NSArray<AVAudioConnectionPoint *> *) destNodes fromBus:(AVAudioNodeBus) sourceBus format:(AVAudioFormat *) format error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Establish connections between a source node and multiple destination nodes.
 

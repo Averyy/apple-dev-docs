@@ -25,11 +25,11 @@ func CMTimeCodeFormatDescriptionCreate(allocator: CFAllocator?, timeCodeFormatTy
 extern OSStatus CMTimeCodeFormatDescriptionCreate(CFAllocatorRef allocator, CMTimeCodeFormatType timeCodeFormatType, CMTime frameDuration, uint32_t frameQuanta, uint32_t flags, CFDictionaryRef extensions, CMTimeCodeFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 
-#### Discussion
+## Discussion
 
 The caller owns the returned `CMFormatDescription`, and must release it when done with it. All input parameters are copied (the extensions are deep-copied).  The caller can deallocate them or re-use them after making this call.
 

@@ -27,7 +27,7 @@ var fetchShareParticipantsCompletionBlock: (((any Error)?) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^fetchShareParticipantsCompletionBlock)(NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameter:
 

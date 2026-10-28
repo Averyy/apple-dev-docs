@@ -19,7 +19,7 @@ var actualTrackingAdjustment: CGFloat { get }
 @property (nonatomic, readonly) CGFloat actualTrackingAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 If you specified a custom value in the [`minimumTrackingAdjustment`](./minimumtrackingadjustment.md) property, when drawing is complete, this property contains the actual tracking value that was used.
 

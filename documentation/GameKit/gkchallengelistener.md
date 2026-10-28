@@ -25,7 +25,7 @@ protocol GKChallengeListener : NSObjectProtocol
 @protocol GKChallengeListener <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Your game can ignore a challenge, start up in a specific state so the local player can respond to a challenge, or notify the challenger when the local player completes a challenge.
 

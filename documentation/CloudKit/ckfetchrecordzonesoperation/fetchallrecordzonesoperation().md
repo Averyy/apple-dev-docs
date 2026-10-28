@@ -25,7 +25,7 @@ class func fetchAllRecordZonesOperation() -> Self
 + (instancetype) fetchAllRecordZonesOperation;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a value to the [`fetchRecordZonesCompletionBlock`](./fetchrecordzonescompletionblock.md) property of the operation that this method returns so that you can process the results.
 

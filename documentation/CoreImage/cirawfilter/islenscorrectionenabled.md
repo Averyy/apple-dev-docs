@@ -24,7 +24,7 @@ var isLensCorrectionEnabled: Bool { get set }
 @property (readwrite, getter=isLensCorrectionEnabled) BOOL lensCorrectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value varies by image.
 

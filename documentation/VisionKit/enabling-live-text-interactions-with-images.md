@@ -5,7 +5,7 @@
 
 Add a Live Text interface that enables users to perform actions with text and QR codes that appear in images.
 
-#### Overview
+## Overview
 
 Enhance the user experience with images in your app by adding standard Live Text interactions. Live Text lets users tap text in an image to copy it, make a call, send an email, translate it, or look up directions. VisionKit provides this familiar Live Text interface to your images and across platforms.
 
@@ -19,11 +19,11 @@ In your app, you decide whether Live Text recognizes text and data within text, 
 
 > ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](../Swift/task.md) structure. For details on asynchronous flows, see [Concurrency](../Swift/concurrency.md).
 
-##### Check whether the device supports Live Text
+### Check whether the device supports Live Text
 
 Before showing a Live Text interface in your app, check whether the device supports Live Text. For iOS apps, the image analyzer is available only on devices with the A12 Bionic chip and later. If the `ImageAnalyzer` [`isSupported`](./imageanalyzer/issupported.md) property is `true`, show the Live Text interface. Otherwise, disable any feature in your app that relies on Live Text. If you attempt to start the Live Text interface when this property is `false`, the interface doesn’t appear.
 
-##### Add a Live Text interaction object to your view in iOS
+### Add a Live Text interaction object to your view in iOS
 
 For iOS apps, you add the Live Text interface by adding an interaction object to the view containing the image. If you use a [`UIImageView`](../UIKit/uiimageview.md) to display the image, it handles the image content area calculations for you.
 
@@ -42,7 +42,7 @@ interaction.delegate = self
 
 If you don’t use a [`UIImageView`](../UIKit/uiimageview.md) object, inform the interaction object when the content area of the image changes while the interaction bounds don’t change. Implement the `ImageAnalysisInteractionDelegate` [`contentsRect(for:)`](./imageanalysisinteractiondelegate/contentsrect%28for%29.md) protocol method to return the content area of the image. This keeps the Live Text highlights within the bounds of the image. Then use the [`setContentsRectNeedsUpdate()`](./imageanalysisinteraction/setcontentsrectneedsupdate%28%29.md) method to notify the interaction if the content area changes.
 
-##### Add a Live Text view to your image view in macOS
+### Add a Live Text view to your image view in macOS
 
 For macOS apps, add the Live Text interface by adding a view above the view containing the image. If you use an [`NSImageView`](../AppKit/nsimageview.md) to display the image, it handles the image content area calculations for you.
 
@@ -87,7 +87,7 @@ If you aren’t using an [`NSImageView`](../AppKit/nsimageview.md) object, imple
 
 ![A diagram showing an image that is offset in an arbitrary view with the overlay view on top of it.](https://developer.apple.com/tutorials/images/com.apple.VisionKit/enabling_live_text_interactions_with_images-2@2x.png)
 
-##### Find items and start the interaction with an image
+### Find items and start the interaction with an image
 
 Process the image that your view displays using an [`ImageAnalyzer`](./imageanalyzer.md) object. First, specify the types of items in the image you want to find when you create an [`ImageAnalyzer.Configuration`](./imageanalyzer/configuration.md) object. For iOS apps, the analyzer recognizes both text and machine-readable QR codes in an image; for macOS apps, the analyzer recognizes text in an image.
 
@@ -116,7 +116,7 @@ overlayView.analysis = analysis
 
 The standard Live Text menu appears when users click and hold items in the image. The user chooses actions from this menu, depending on the type of item.
 
-##### Customize behavior using interaction types
+### Customize behavior using interaction types
 
 You can change the behavior of the interface by enabling types of interactions with items the analyzer finds in the image. If you set the interaction or overlay view [`preferredInteractionTypes`](./imageanalysisinteraction/preferredinteractiontypes.md) property to [`automatic`](./imageanalysisinteraction/interactiontypes/automatic.md), users can interact with all types of items that the analyzer finds.
 
@@ -134,7 +134,7 @@ To let users interact with data that the analyzer detects in text in macOS, set 
 
 For iOS apps only, users can touch and hold QR codes and perform an action, depending on the payload, such as following an embedded link. To enable QR code interactions, set the [`ImageAnalyzer.Configuration`](./imageanalyzer/configuration.md) structure’s [`analysisTypes`](./imageanalyzer/configuration/analysistypes.md) property to [`machineReadableCode`](./imageanalyzer/analysistypes/machinereadablecode.md).
 
-##### Change the supplementary interface
+### Change the supplementary interface
 
 You can modify the Live Text supplementary interface to conform better to the look of your app. The supplementary interface consists of the quick actions in the lower-left corner and the Live Text button in the lower-right corner of the interface.
 
@@ -144,7 +144,7 @@ If your interface overlaps the supplementary interface, set the [`supplementaryI
 
 If you want the supplementary interface to use a custom font, set the [`supplementaryInterfaceFont`](./imageanalysisinteraction/supplementaryinterfacefont.md) property. Quick actions use the specified font for text and font weight for symbols. For button size consistency, the Live Text interface ignores the point size.
 
-##### Specify recognized languages
+### Specify recognized languages
 
 By default the image analyzer attempts to recognize the user’s preferred languages. If you want the analyzer to consider other languages, set the [`locales`](./imageanalyzer/configuration/locales.md) property of the [`ImageAnalyzer.Configuration`](./imageanalyzer/configuration.md) object.
 

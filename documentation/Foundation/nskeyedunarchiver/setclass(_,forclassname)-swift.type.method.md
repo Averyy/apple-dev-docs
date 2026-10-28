@@ -25,7 +25,7 @@ class func setClass(_ cls: AnyClass?, forClassName codedName: String)
 + (void) setClass:(Class) cls forClassName:(NSString *) codedName;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding, the class’s translation mapping is used only if no translation is found first in an instance’s separate translation map.
 

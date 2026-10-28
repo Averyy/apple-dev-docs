@@ -19,7 +19,7 @@ var state: WKGestureRecognizerState { get }
 @property (nonatomic, readonly) WKGestureRecognizerState state;
 ```
 
-#### Discussion
+## Discussion
 
 As the gesture recognizer processes touch events, it updates the value of this property. Some states apply only to gestures that comprise a continuous sequences of touch events that must be tracked over time, such as pan gestures.
 

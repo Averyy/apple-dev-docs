@@ -25,7 +25,7 @@ func sortedArray(options opts: NSSortOptions = [], usingComparator cmptr: (Any, 
 - (NSArray<id> *) sortedArrayWithOptions:(NSSortOptions) opts usingComparator:(NSComparator) cmptr;
 ```
 
-#### Return Value
+## Return Value
 
 An array that lists the receiving ordered set’s elements in ascending order, as determined by the comparison method specified `cmptr`.
 

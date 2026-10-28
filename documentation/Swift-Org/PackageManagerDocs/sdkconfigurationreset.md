@@ -13,7 +13,7 @@ Resets configuration properties currently applied to a given Swift SDK and targe
 **Availability**:
 - Swift 6.1+
 
-#### Overview
+## Overview
 
 ```
 sdk configuration reset [--package-path=<package-path>]

@@ -24,11 +24,11 @@ func GRU(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, inputWeight:
 - (NSArray<MPSGraphTensor *> *) GRUWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias initState:(MPSGraphTensor *) initState mask:(MPSGraphTensor *) mask secondaryBias:(MPSGraphTensor *) secondaryBias descriptor:(MPSGraphGRUDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` array of size 1 or 2 depending on value of  `descriptor.training`. The layout of the state output is [T,N,H] or [T,N,2H] for bidirectional, and the layout of the `trainingState` output is [T,N,3H] or [T,N,6H] for bidirectional.
 
-#### Discussion
+## Discussion
 
 This operation returns tensors `h` and optionally `z` that are defined recursively as follows:
 

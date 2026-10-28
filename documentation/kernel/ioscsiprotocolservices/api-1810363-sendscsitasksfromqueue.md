@@ -12,7 +12,7 @@ void SendSCSITasksFromQueue (
  void );
 ```
 
-#### Overview
+## Overview
 
 Internal method called to start processing SCSITasks. Only one client or workloop thread may process SCSITasks at any point in time. This method coordinates to ensure only one thread does so.
 

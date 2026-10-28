@@ -19,7 +19,7 @@ A device matches if it has the given commissioning identifier.
 case commissioningID(UUID)
 ```
 
-#### Discussion
+## Discussion
 
 The match occurs if the identifier is as provided by [`commissionDevice(in:onboardingPayload:commissioningID:)`](../../matteradddeviceextensionrequesthandler/commissiondevice%28in,onboardingpayload,commissioningid%29.md)
 

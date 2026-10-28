@@ -12,11 +12,11 @@ Configure the minimum deployment target version for the watchOS platform.
 static func watchOS(_ version: SupportedPlatform.WatchOSVersion) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 5.0
 

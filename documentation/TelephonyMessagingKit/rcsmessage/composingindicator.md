@@ -15,7 +15,7 @@ A structure that represents RFC 3994 composing indicator content in an RCS messa
 struct ComposingIndicator
 ```
 
-#### Overview
+## Overview
 
 This content type indicates whether the party sending the message is currently active. Your app can use this to provide an “is typing” indicator to the person using the app.
 

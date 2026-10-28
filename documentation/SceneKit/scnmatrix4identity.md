@@ -25,7 +25,7 @@ let SCNMatrix4Identity: SCNMatrix4
 extern const SCNMatrix4 SCNMatrix4Identity;
 ```
 
-#### Discussion
+## Discussion
 
 Elements on the diagonal of this matrix are `1.0`; all other elements are `0.0`. Multiplying another matrix by the identity matrix or multiplying the identity matrix by another matrix yields the other matrix.
 

@@ -24,7 +24,7 @@ func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext)
 - (void) drawMapRect:(MKMapRect) mapRect zoomScale:(MKZoomScale) zoomScale inContext:(CGContextRef) context;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override this method and use it to draw the overlay’s contents.
 

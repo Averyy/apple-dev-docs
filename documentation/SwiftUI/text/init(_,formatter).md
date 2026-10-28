@@ -27,7 +27,7 @@ init<Subject>(_ subject: Subject, formatter: Formatter) where Subject : NSObject
 init<Subject>(_ subject: Subject, formatter: Formatter) where Subject : ReferenceConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a text view that formats `subject` using `formatter`.
 

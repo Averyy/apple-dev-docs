@@ -25,7 +25,7 @@ func play()
 - (void) play;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`play(at:)`](./play%28at%29.md) with a value of `nil`.
 

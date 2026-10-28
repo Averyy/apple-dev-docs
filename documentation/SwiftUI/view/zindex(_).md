@@ -22,7 +22,7 @@ nonisolated
 func zIndex(_ value: Double) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `zIndex(_:)` when you want to control the front-to-back ordering of views.
 

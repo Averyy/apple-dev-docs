@@ -14,7 +14,7 @@ Authenticate users biometrically or with a passphrase they already know.
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 Many users rely on biometric authentication like Face ID, Touch ID, or Optic ID to enable secure, effortless access to their devices. As a fallback option, and for devices without biometry, a passcode or password serves a similar purpose. Use the LocalAuthentication framework to leverage these mechanisms in your app and extend authentication procedures your app already implements.
 

@@ -20,7 +20,7 @@ An error that indicates an object is invalid in a specific context.
 static var invalidObject: PHASEError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`addChild(_:)`](../phaseobject/addchild%28_%29.md) function throws this error if the specified child already has a parent in the scene graph hierarchy.
 

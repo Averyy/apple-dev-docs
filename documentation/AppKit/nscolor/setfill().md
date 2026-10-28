@@ -19,7 +19,7 @@ func setFill()
 - (void) setFill;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented in subclasses.
 

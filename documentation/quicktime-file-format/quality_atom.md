@@ -6,7 +6,7 @@
 
 A quality atom describes the relative quality of a movie.
 
-#### Overview
+## Overview
 
 This acts as a tiebreaker if more than one movie meets the specified requirements, and it is not otherwise obvious which movie should be played.
 

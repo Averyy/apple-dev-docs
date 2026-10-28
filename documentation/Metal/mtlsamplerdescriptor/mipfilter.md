@@ -28,7 +28,7 @@ var mipFilter: MTLSamplerMipFilter { get set }
 
 - [Adding mipmap filtering to samplers](../adding-mipmap-filtering-to-samplers.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLSamplerMipFilter.notMipmapped`](../mtlsamplermipfilter/notmipmapped.md).
 

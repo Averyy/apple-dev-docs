@@ -21,7 +21,7 @@ The collection’s “past the end” position—that is, the position one great
 var endIndex: Repeated<Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In a `Repeated` collection, `endIndex` is always equal to `count`. If the collection is empty, `endIndex` is equal to `startIndex`.
 

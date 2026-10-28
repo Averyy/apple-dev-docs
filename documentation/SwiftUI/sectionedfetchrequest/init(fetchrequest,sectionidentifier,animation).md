@@ -24,7 +24,7 @@ Creates a fully configured sectioned fetch request that uses the specified anima
 
 Available when `SectionIdentifier` conforms to `Hashable` and `Result` conforms to `NSFetchRequestResult`.
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want to configure a fetch request with more than a predicate and sort descriptors. For example, you can vend a request from a `Quake` managed object that the [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data. Limit the number of results to `1000` by setting a [`fetchLimit`](../../CoreData/nsfetchrequest/fetchlimit.md) for the request:
 

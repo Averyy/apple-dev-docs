@@ -19,7 +19,7 @@ func textDidBeginEditing(_ notification: Notification)
 - (void) textDidBeginEditing:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This action causes the text field’s delegate to receive a [`controlTextDidBeginEditing:`](../../ObjectiveC/nsobject-swift.class/controltextdidbeginediting_.md) message. See [`NSControl`](../nscontrol.md) for more information about the text delegate method.
 

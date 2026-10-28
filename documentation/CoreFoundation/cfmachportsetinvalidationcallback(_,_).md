@@ -25,7 +25,7 @@ func CFMachPortSetInvalidationCallBack(_ port: CFMachPort!, _ callout: CFMachPor
 extern void CFMachPortSetInvalidationCallBack(CFMachPortRef port, CFMachPortInvalidationCallBack callout);
 ```
 
-#### Discussion
+## Discussion
 
 If `port` is already invalid, `callout` is invoked immediately.
 

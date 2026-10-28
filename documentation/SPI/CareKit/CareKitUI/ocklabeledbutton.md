@@ -18,7 +18,7 @@ A button with a filled background color.
 class OCKLabeledButton
 ```
 
-#### Overview
+## Overview
 
 ```
 +--------------------------+

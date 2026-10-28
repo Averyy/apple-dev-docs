@@ -15,13 +15,13 @@ The request body for creating a new budget order.
 object SharedBudgetCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `SharedBudgetCreate` object is the request payload for creating a new budget order.
 
 Ensure the `currency` in the `Money` object matches the ad account’s currency. Once created, you can assign the budget order to one or more campaigns using `SharedBudgetAssignment` on each campaign.
 
-##### Example
+### Example
 
 ```json
 {

@@ -20,7 +20,7 @@ A Boolean value indicating whether to enable the seat cooling system.
 final var enableCooling: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the user modifies the heating or massage settings.
 

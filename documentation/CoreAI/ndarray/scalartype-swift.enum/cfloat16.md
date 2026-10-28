@@ -19,7 +19,7 @@ A 16-bit complex floating-point type.
 case cfloat16
 ```
 
-#### Discussion
+## Discussion
 
 Complex Float16 represents complex numbers with 16-bit float real and imaginary parts, totaling 32 bits per value.
 

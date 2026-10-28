@@ -24,7 +24,7 @@ class var shared: UIMenuController { get }
 @property (class, nonatomic, readonly) UIMenuController * sharedMenuController;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`UIMenuController`](../uimenucontroller.md) instance.
 

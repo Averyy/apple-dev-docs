@@ -24,7 +24,7 @@ static let basalBodyTemperature: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBasalBodyTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 Basal body temperature measures the body’s temperature when at rest (for example, taking the temperature immediately after waking). These samples use temperature units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

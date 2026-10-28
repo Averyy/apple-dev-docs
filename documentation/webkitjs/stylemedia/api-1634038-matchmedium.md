@@ -18,11 +18,11 @@ boolean matchMedium(
 );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the media query is logically true; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 For example, `window.styleMedia.matchMedium("(color)")` returns `true` if the display device is a color device. You can also use this method to check whether the browser supports 3D transforms as follows:
 

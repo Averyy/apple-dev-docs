@@ -21,7 +21,7 @@ Reasons for the cancellation of an app intent’s operation.
 struct IntentCancellationReason
 ```
 
-#### Overview
+## Overview
 
 This type contains the possible reasons for the cancellation of an app intent. You don’t create instances of this type yourself. Instead, you receive a value in the cancellation handler you pass to the [`withIntentCancellationHandler(operation:onCancel:isolation:)`](./cancellableintent/withintentcancellationhandler%28operation,oncancel,isolation%29.md) method when running your app intent’s code. Use the reason to make decisions about how to respond to the cancellation.
 

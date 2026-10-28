@@ -22,7 +22,7 @@ var automaticallyShowsSearchResultsController: Bool { get set }
 @property (nonatomic) BOOL automaticallyShowsSearchResultsController;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`true`](../../Swift/true.md). When it’s [`true`](../../Swift/true.md), [`UISearchController`](../uisearchcontroller.md) automatically shows its results controller based on the contents of its text property. If you set [`showsSearchResultsController`](./showssearchresultscontroller.md), this property becomes [`false`](../../Swift/false.md).
 

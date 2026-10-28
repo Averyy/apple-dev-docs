@@ -27,7 +27,7 @@ func requestThumbnailData(options: [ICCameraItemThumbnailOption : Any]? = nil) a
 - (void) requestThumbnailDataWithOptions:(NSDictionary<NSString *,id> *) options completion:(void (^)(NSData *, NSError *)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The completion block executes on an any available queue; often this is not the main queue.
 

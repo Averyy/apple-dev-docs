@@ -25,11 +25,11 @@ func CFStringCreateWithPascalStringNoCopy(_ alloc: CFAllocator!, _ pStr: ConstSt
 extern CFStringRefCFStringCreateWithPascalStringNoCopy(CFAllocatorRef alloc, ConstStr255Param pStr, CFStringEncoding encoding, CFAllocatorRef contentsDeallocator);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string containing `pStr`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates an immutable CFString objects from the character contents of a Pascal string (after stripping off the initial length byte).
 
@@ -39,7 +39,7 @@ The function includes a `contentsDeallocator` parameter with which to specify an
 
 If at creation time the string decides it can’t use the buffer, and there is an allocator specified in the `contentsDeallocator` parameter, it will use this allocator to free the buffer at that time.
 
-##### Special Considerations
+### Special Considerations
 
 If an error occurs during the creation of the string, then `pStr` is not deallocated. In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
 

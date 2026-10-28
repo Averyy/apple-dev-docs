@@ -23,7 +23,7 @@ var afterScreenUpdates: Bool { get set }
 @property (nonatomic) BOOL afterScreenUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which causes the web view to incorporate any recent changes to the view’s content and then generate the snapshot. If you change the value to [`false`](../../Swift/false.md), the web view takes the snapshot immediately, and before incorporating any new changes.
 

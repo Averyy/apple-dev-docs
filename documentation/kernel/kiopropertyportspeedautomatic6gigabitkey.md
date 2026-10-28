@@ -14,7 +14,7 @@
 #define kIOPropertyPortSpeedAutomatic6GigabitKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Automatic (6 Gigabit) for the key kIOPropertyPortSpeedKey. If the speed of the port is 6 Gigabits per second and is automatically determined by host software, this key should be used. Note: This value can change. It is not a static value.
 

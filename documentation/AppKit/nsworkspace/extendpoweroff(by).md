@@ -19,11 +19,11 @@ func extendPowerOff(by requested: Int) -> Int
 - (NSInteger) extendPowerOffBy:(NSInteger) requested;
 ```
 
-#### Return Value
+## Return Value
 
 The number of milliseconds granted by the system. This method currently returns `0`.
 
-#### Discussion
+## Discussion
 
 This method currently does nothing. Do not call it.
 

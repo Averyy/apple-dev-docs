@@ -27,7 +27,7 @@ func perform(queueTransaction: @escaping (MPMusicPlayerControllerMutableQueue) -
 - (void) performQueueTransaction:(void (^)(MPMusicPlayerControllerMutableQueue *queue)) queueTransaction completionHandler:(void (^)(MPMusicPlayerControllerQueue *queue, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Perform all of your queue modifications inside of the queue transition block. After the system modifies the queue inside of the queue transition block, it returns the new queue from the completion handler after the user accepts the new queue. Don’t access the completion handler’s queue outside of the completion handler.
 

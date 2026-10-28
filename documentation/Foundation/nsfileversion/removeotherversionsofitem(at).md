@@ -25,7 +25,7 @@ class func removeOtherVersionsOfItem(at url: URL) throws
 + (BOOL) removeOtherVersionsOfItemAtURL:(NSURL *) url error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes all versions except the current one from the version store, freeing up the associated storage space.
 

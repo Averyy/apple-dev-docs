@@ -20,7 +20,7 @@ The type for the value that the action modifies over time.
 let animatedValueType: (any AnimatableData.Type)?
 ```
 
-#### Discussion
+## Discussion
 
 Set to `nil` for an action that doesn’t modify a value.
 

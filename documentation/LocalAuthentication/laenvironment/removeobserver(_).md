@@ -22,7 +22,7 @@ func removeObserver(_ observer: any LAEnvironment.Observer)
 - (void) removeObserver:(id<LAEnvironmentObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 Removes the previously registered observer.
 

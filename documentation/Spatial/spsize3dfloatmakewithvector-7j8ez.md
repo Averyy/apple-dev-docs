@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatMakeWithVector(SPVector3DFloat xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new size stucture.
 
-#### Discussion
+## Discussion
 
 Creates a size structure with dimensions specified as a Spatial vector.
 

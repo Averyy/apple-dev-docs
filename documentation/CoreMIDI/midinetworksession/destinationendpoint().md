@@ -23,7 +23,7 @@ func destinationEndpoint() -> MIDIEndpointRef
 - (MIDIEndpointRef) destinationEndpoint;
 ```
 
-#### Return Value
+## Return Value
 
 The destination endpoint.
 

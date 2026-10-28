@@ -26,7 +26,7 @@ func use(_ credential: URLCredential, for challenge: URLAuthenticationChallenge)
 - (void) useCredential:(NSURLCredential *) credential forAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if it is called with an authentication challenge that has already been handled.
 

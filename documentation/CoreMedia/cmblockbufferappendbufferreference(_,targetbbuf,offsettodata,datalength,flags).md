@@ -25,11 +25,11 @@ func CMBlockBufferAppendBufferReference(_ theBuffer: CMBlockBuffer, targetBBuf: 
 extern OSStatus CMBlockBufferAppendBufferReference(CMBlockBufferRef theBuffer, CMBlockBufferRef targetBBuf, size_t offsetToData, size_t dataLength, CMBlockBufferFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 
-#### Discussion
+## Discussion
 
 Adds a buffer reference of (a possibly subset portion of) another `CMBlockBuffer`, the target `CMBlockBuffer`, to an existing `CMBlockBuffer`. The existing `CMBlockBuffer's` total data length will be increased by the specified `dataLength`. Note that append operations are not thread safe, so care must be taken when appending to block buffers that are used by multiple threads.
 

@@ -22,7 +22,7 @@ case confirmation
 UIApplicationShortcutIconTypeConfirmation
 ```
 
-#### Discussion
+## Discussion
 
 ![Confirmation icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934524@2x.png)
 

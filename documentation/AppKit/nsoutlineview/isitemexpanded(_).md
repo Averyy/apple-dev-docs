@@ -19,7 +19,7 @@ func isItemExpanded(_ item: Any?) -> Bool
 - (BOOL) isItemExpanded:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `item` is expanded, otherwise [`false`](../../Swift/false.md).
 

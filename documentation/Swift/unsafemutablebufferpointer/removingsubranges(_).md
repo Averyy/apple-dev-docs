@@ -21,11 +21,11 @@ Returns a collection of the elements in this collection that are not represented
 func removingSubranges(_ subranges: RangeSet<Self.Index>) -> DiscontiguousSlice<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A collection of the elements that are not in `subranges`.
 
-#### Discussion
+## Discussion
 
 For example, this code sample finds the indices of all the vowel characters in the string, and then retrieves a collection that omits those characters.
 

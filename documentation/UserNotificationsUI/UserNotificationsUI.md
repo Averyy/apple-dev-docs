@@ -13,7 +13,7 @@ Customize the interface that displays local and remote notifications.
 - macOS 11.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Customize how local and remote notifications appear on the user’s device by adding a notification content app extension to the bundle of your iOS app. Your extension manages a custom view controller, which you use to present the content from incoming notifications. When a notification arrives, the system displays your view controller in addition to, or in place of, the default system interface.
 

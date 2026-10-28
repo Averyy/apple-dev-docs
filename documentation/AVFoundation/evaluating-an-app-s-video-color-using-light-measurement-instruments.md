@@ -5,11 +5,11 @@
 
 Measure front-of-screen luminance by using test pattern files with a spectroradiometer or colorimeter.
 
-#### Overview
+## Overview
 
 Evaluate the color characteristics of your AVFoundation-based app or workflow using test pattern files. Output these files to a spectroradiometer or colorimeter to measure the front-of-screen (FoS) luminance, and compare your measurements against the expected values.
 
-##### Measure FoS luminance
+### Measure FoS luminance
 
 Use the test files from the `SDR_BT709_HDTV` folder (see “Color Test Patterns” on the [AVFoundation Developer Page](https://developer.apple.com/av-foundation/)) with a measuring instrument such as a spectroradiometer or colorimeter to measure the FoS luminance. Take your measurements after aligning the instrument to the center of the display in a dark room to prevent stray light or glare from influencing the measurements. You may see some variation in the readings depending on your instrument’s tolerances and its calibration.
 

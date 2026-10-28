@@ -25,11 +25,11 @@ class func setTexture(_ texture: SKTexture) -> SKAction
 + (SKAction *) setTexture:(SKTexture *) texture;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action can only be executed by an [`SKSpriteNode`](../skspritenode.md) object. When the action executes, the sprite’s [`texture`](../skspritenode/texture.md) property changes immediately to the new texture.
 

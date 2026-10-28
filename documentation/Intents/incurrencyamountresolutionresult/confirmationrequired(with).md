@@ -24,11 +24,11 @@ class func confirmationRequired(with currencyAmountToConfirm: INCurrencyAmount?)
 + (instancetype) confirmationRequiredWithCurrencyAmountToConfirm:(INCurrencyAmount *) currencyAmountToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCurrencyAmountResolutionResult`](../incurrencyamountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

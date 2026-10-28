@@ -21,11 +21,11 @@ Creates a new inactive workloop with the specified label.
 extern dispatch_workloop_tdispatch_workloop_create_inactive(const char *label);
 ```
 
-#### Return Value
+## Return Value
 
 The newly created workloop.
 
-#### Discussion
+## Discussion
 
 Use this function when you want to change the default behavior of the workloop before activating it. For example, use this method if you call [`dispatch_set_qos_class_floor`](./dispatch_set_qos_class_floor.md) to configure the minimum quality of service level.
 

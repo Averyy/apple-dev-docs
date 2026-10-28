@@ -19,7 +19,7 @@ struct OBEXErrorData
 struct OBEXErrorData;
 ```
 
-#### Overview
+## Overview
 
 Is readable when the event is of type kOBEXSessionEventTypeError (see OBEXSessionEventTypes).
 

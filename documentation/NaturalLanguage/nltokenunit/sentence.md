@@ -25,7 +25,7 @@ case sentence
 NLTokenUnitSentence
 ```
 
-#### Discussion
+## Discussion
 
 Use this linguistic unit to tokenize text into sentences, like in the following example:
 

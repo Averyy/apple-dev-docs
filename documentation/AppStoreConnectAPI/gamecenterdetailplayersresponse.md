@@ -15,7 +15,7 @@ The response body for endpoints that list the blocked players for a game.
 object GameCenterDetailPlayersResponse
 ```
 
-#### Overview
+## Overview
 
 The [`List Blocked Players`](./get-v1-gamecenterdetails-_id_-blockedplayers.md) endpoint returns this response.
 

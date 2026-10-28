@@ -23,7 +23,7 @@ struct InferenceFunction
 
 - [Integrating on-device AI models in your app with Core AI](./integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Overview
+## Overview
 
 An `InferenceFunction` owns the resources needed for inference, including model weights and intermediate buffers. You load a function from an [`AIModel`](./aimodel.md) and call [`run(inputs:states:outputViews:)`](./inferencefunction/run%28inputs,states,outputviews%29-14emi.md) to perform inference.
 

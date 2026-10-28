@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two hand skeleton joints are equal.
 static func == (lhs: HandSkeleton.Joint, rhs: HandSkeleton.Joint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two hand skeleton joints are equal; otherwise, `false`.
 

@@ -21,7 +21,7 @@ Two evaluators — or a single evaluator returning multiple metrics — produced
 case duplicateMetricName(name: String)
 ```
 
-#### Discussion
+## Discussion
 
 Metric names double as DataFrame column names, so a repeated name would otherwise silently overwrite the first metric’s value instead of failing loudly.
 

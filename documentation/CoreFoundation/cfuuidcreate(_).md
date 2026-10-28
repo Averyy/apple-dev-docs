@@ -25,7 +25,7 @@ func CFUUIDCreate(_ alloc: CFAllocator!) -> CFUUID!
 extern CFUUIDRefCFUUIDCreate(CFAllocatorRef alloc);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFUUID object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

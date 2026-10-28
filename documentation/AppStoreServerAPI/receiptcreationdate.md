@@ -15,7 +15,7 @@ The date that the App Store signs a JSON Web Signature (JWS) app transaction.
 timestamp receiptCreationDate
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`JWSAppTransactionDecodedPayload`](./jwsapptransactiondecodedpayload.md).
 

@@ -19,11 +19,11 @@ class func embeddedPrincipal() -> Any!
 + (id) embeddedPrincipal;
 ```
 
-#### Return Value
+## Return Value
 
 An object used for XPC communication with the in-process embedded principal.
 
-#### Discussion
+## Discussion
 
 If this method returns `nil`, the host app is unable to communicate with your plug-in’s XPC service.
 

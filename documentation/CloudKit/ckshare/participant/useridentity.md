@@ -26,7 +26,7 @@ var userIdentity: CKUserIdentity { get }
 @property (copy, readonly) CKUserIdentity * userIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a reference to the user identity for the share participant.
 

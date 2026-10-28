@@ -29,7 +29,7 @@ class INSendMessageIntent
 - [Dispatching intents to handlers](../SiriKit/dispatching-intents-to-handlers.md)
 - [Improving interactions between Siri and your messaging app](../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Overview
+## Overview
 
 Siri creates an [`INSendMessageIntent`](./insendmessageintent.md) object when the user asks to send a message to one or more users. This intent object contains the message to send and the recipients of the message, which can include groups of users. Use the information in this object to construct and send the message.
 
@@ -37,7 +37,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 > **Note**:  To allow a user wearing AirPods to automatically hear messages, you must implement both [`INSearchForMessagesIntent`](./insearchformessagesintent.md) and [`INSendMessageIntent`](./insendmessageintent.md). Add [`announcement`](../UserNotifications/unauthorizationoptions/announcement.md) to the options when calling [`requestAuthorization(options:completionHandler:)`](../UserNotifications/unusernotificationcenter/requestauthorization%28options,completionhandler%29.md). Finally, add [`allowAnnouncement`](../UserNotifications/unnotificationcategoryoptions/allowannouncement.md) to the category option and [`INSearchForMessagesIntent`](./insearchformessagesintent.md) to the category intent identifier.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 Additional attributes of this intent object include the following:
 

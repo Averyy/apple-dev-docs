@@ -16,7 +16,7 @@ The session finished installing a credential.
 case credentialFinishedInstalling(credential: CredentialSession.Credential)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value `credential` indicates which credential finished installing.
 

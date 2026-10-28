@@ -21,7 +21,7 @@ Create a transferable representation of an attributed string as interpreted in a
 init(text: AttributedString, in environment: EnvironmentValues)
 ```
 
-#### Discussion
+## Discussion
 
 When exporting the `text` into different data formats, the transfer representation may use the given `environment` to resolve semantic attribute values, such as certain colors or fonts to concrete values. This means that depending on the representation used during transfer, some semantic information may be lost in that step.
 

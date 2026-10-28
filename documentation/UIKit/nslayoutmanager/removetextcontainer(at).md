@@ -23,7 +23,7 @@ func removeTextContainer(at index: Int)
 - (void) removeTextContainerAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method invalidates glyph information as needed.
 

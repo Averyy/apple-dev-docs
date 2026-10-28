@@ -14,11 +14,11 @@ CMError CMOpenProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 If the `CMOpenProfile` function executes successfully, the profile reference refers to the opened profile. Your application uses this reference, for example, when it calls functions to color match, copy, and update a profile, and validate its contents.
 

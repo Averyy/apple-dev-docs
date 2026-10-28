@@ -29,7 +29,7 @@ class INImage
 
 - [Displaying Shortcut Information in a Siri Watch Face Card](../SiriKit/displaying-shortcut-information-in-a-siri-watch-face-card.md)
 
-#### Overview
+## Overview
 
 [`INImage`](./inimage.md) is a wrapper for image data that you include in a response to an intent. When providing a response to an intent, you must specify any image parameters using instances of this class. [`INImage`](./inimage.md) supports the same formats as the underlying platform.
 

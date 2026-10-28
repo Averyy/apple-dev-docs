@@ -16,7 +16,7 @@ A key that specifies the location ID of the device.
 #define kIOHIDLocationIDKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a number that contains the location identifier.
 

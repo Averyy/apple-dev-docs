@@ -23,7 +23,7 @@ final class ConversationManager
 
 - [Initiating VoIP conversations with LiveCommunicationKit](./initiating-voip-conversations-with-livecommunicationkit.md)
 
-#### Overview
+## Overview
 
 Use `ConversationManager` to provide VoIP conversation functionality in your app. For more information, see [Preparing your app to be the default dialer app](./preparing-your-app-to-be-the-default-dialer-app.md).
 

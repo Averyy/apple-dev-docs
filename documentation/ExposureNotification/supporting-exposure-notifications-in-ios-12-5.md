@@ -5,11 +5,11 @@
 
 Prepare your Exposure Notifications app to run on a previous version of iOS.
 
-#### Overview
+## Overview
 
 To increase adoption and broaden usage, the Exposure Notification framework now supports iPhones compatible with iOS 12.5. Because Exposure Notifications was originally released in iOS 13.5, special considerations apply when developing for iOS 12.5. However, all privacy protections put in place with the original release also apply in iOS 12.5.
 
-##### Determine the Level of Support You Need
+### Determine the Level of Support You Need
 
 Depending on your circumstances, you have a couple of options for adopting Exposure Notifications.
 
@@ -17,7 +17,7 @@ If you havenʼt already developed an Exposure Notifications app, or if you have 
 
 If you have an app that uses version 1 risk scoring and want to support iOS 12.5, consider updating to the more robust version 2 scoring. For more information, see [`ENExposureConfiguration`](./enexposureconfiguration.md).
 
-##### Set the Deployment Target and Link the Framework
+### Set the Deployment Target and Link the Framework
 
 Exposure Notifications for iOS 12.5 requires Xcode 12.3 or later. In your Xcode project’s Build Settings tab, set the iOS deployment target. From the menu, select Other and type “12.5.”
 
@@ -27,7 +27,7 @@ Select the Exposure Notification framework explicitly in the Link Binary With Li
 
 ![Image that shows how to add the Exposure Notification framework to your Xcode project.](https://developer.apple.com/tutorials/images/com.apple.exposurenotification/media-3705004@2x.png)
 
-##### Perform API and iOS Version Checks
+### Perform API and iOS Version Checks
 
 Extend your app to handle different versions of iOS and Exposure Notifications by incorporating the following code. Call `getSupportedExposureNotificationsVersion()` to determine if Exposure Notifications is available on the device, and if so, which API version to support.
 
@@ -81,7 +81,7 @@ ENSupportedAPIVersion getSupportedExposureNotificationVersion() {
 
 Although iOS 13.0 to 13.4 doesn’t support Exposure Notifications, your app might still download onto devices with those versions of iOS. If that happens, present a dialog to let the user know Exposure Notifications isn’t available for their device.
 
-##### Set Background Task Interval and Request Runtime
+### Set Background Task Interval and Request Runtime
 
 Apps that support Exposure Notifications periodically need time in the background to download and evaluate temporary exposure keys. Because [`BGTaskScheduler`](../BackgroundTasks/bgtaskscheduler.md) isn’t available in iOS 12.5, Bluetooth explicitly grants apps with the Exposure Notifications entitlement 3.5 minutes at least once a day.
 

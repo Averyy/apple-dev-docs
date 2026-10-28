@@ -21,7 +21,7 @@ Performs the transformation on selected columns of the data frame.
 func applied(to input: DataFrame, eventHandler: EventHandler? = nil) async throws -> DataFrame
 ```
 
-#### Return Value
+## Return Value
 
 A data frame produced by applying the transformer to selected columns.
 

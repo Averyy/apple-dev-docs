@@ -5,7 +5,7 @@
 
 Create new atoms and insert them in a QT atom container.
 
-#### Overview
+## Overview
 
 You can use the `QTInsertChild` function to create new atoms and insert them in a QT atom container. The `QTInsertChild` function creates a new child atom for a parent atom. The caller specifies an atom type and atom ID for the new atom. If you specify a value of `0` for the atom ID, `QTInsertChild` assigns a unique ID to the atom.
 

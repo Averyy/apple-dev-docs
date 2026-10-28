@@ -5,7 +5,7 @@
 
 Play short sounds or trigger a vibration effect on iOS devices with the appropriate hardware.
 
-#### Overview
+## Overview
 
 System Sound Services provides a C interface for playing short sounds and for invoking vibration on iOS devices that support vibration.
 

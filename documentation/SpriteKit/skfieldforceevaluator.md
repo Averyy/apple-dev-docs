@@ -25,7 +25,7 @@ typealias SKFieldForceEvaluator = (vector_float3, vector_float3, Float, Float, T
 typedef float (^)(float __attribute__((ext_vector_type(3))), float __attribute__((ext_vector_type(3))), float, float, double) __attribute__((ext_vector_type(3))) SKFieldForceEvaluator;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

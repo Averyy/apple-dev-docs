@@ -5,11 +5,11 @@
 
 Analyze AirPlay errors in your apps.
 
-#### Overview
+## Overview
 
 The data in this report contains aggregate information about [AirPlay](https://developer.apple.com/airplay) errors. It presents errors and information about multiple dimensions of device configuration, and shows the count and percentage of each error occurrence.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

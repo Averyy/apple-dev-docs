@@ -26,7 +26,7 @@ init(pixelBufferAttributes: [String : any Sendable]? = nil)
 - (instancetype) initWithPixelBufferAttributes:(NSDictionary<NSString *,id> *) pixelBufferAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized video output object.
 

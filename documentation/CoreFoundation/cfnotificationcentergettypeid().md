@@ -25,7 +25,7 @@ func CFNotificationCenterGetTypeID() -> CFTypeID
 extern CFTypeID CFNotificationCenterGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFNotificationCenter opaque type.
 

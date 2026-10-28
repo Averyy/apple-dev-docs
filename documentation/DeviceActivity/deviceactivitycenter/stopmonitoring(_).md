@@ -17,7 +17,7 @@ Stops monitoring the specified device activities.
 func stopMonitoring(_ activities: [DeviceActivityName] = [])
 ```
 
-#### Discussion
+## Discussion
 
 This method ignores names that don’t correspond to monitored activities.
 

@@ -26,7 +26,7 @@ dictionary ApplePayShippingMethod {
 
 - [Apple Pay on the Web Version 12 Release Notes](./apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Overview
+## Overview
 
 The Apple Pay sheet displays all the properties of a shipping method except `identifier`. The following listing is an example of a shipping method that shows free shipping.
 

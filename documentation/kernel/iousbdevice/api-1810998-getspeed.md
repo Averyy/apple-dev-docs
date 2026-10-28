@@ -10,7 +10,7 @@ virtual UInt8 GetSpeed(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns the speed of the device
 

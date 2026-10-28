@@ -15,7 +15,7 @@ Gets the transport type of the driver.
 IOUserVideoTransportType GetTransportType();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

@@ -15,9 +15,9 @@ A group of field-level changes that occurred within a single activity context in
 object ActivityDetail
 ```
 
-#### Discussion
+## Discussion
 
-##### Locate ActivityDetail in the response hierarchy
+### Locate ActivityDetail in the response hierarchy
 
 Change history detail responses use a three-level nesting:
 
@@ -29,7 +29,7 @@ ChangeDetails
 
 Each [`ChangeDetails`](./changedetails.md) record has one or more `ActivityDetail` entries in its `details` array. Each `ActivityDetail` groups the field-level changes that share a common activity context within the transaction. In most cases, a single `ActivityDetail` contains all field changes for the entity.
 
-##### Iterate over field changes
+### Iterate over field changes
 
 To access individual field changes, iterate the `changes` array on each `ActivityDetail`:
 
@@ -47,7 +47,7 @@ To access individual field changes, iterate the `changes` array on each `Activit
 
 The API encodes all values in `oldValues` and `newValues` as strings, regardless of the underlying field type. Parse them according to the field’s expected type.
 
-##### Example
+### Example
 
 ```json
 {

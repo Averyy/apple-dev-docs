@@ -20,7 +20,7 @@ var imageResolution: CGSize { get }
 @property (nonatomic, readonly) CGSize imageResolution;
 ```
 
-#### Discussion
+## Discussion
 
 This size describes the image in the [`capturedImage`](../arframe/capturedimage.md) buffer, which contains image data in the camera device’s native sensor orientation. To convert image coordinates to match a specific display orientation of that image, use the `ARCamera/viewMatrix(for:)` or `ARCamera/projectPoint(_:orientation:viewportSize:)` method.
 

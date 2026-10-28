@@ -24,7 +24,7 @@ The request’s sort descriptors, accessed as value types.
 
 Available when `Result` inherits `NSManagedObject`.
 
-#### Discussion
+## Discussion
 
 Set this configuration value to cause a [`FetchRequest`](../../fetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](../../../Foundation/sortdescriptor.md) instances. If you want to use [`NSSortDescriptor`](../../../Foundation/nssortdescriptor.md) instances, set [`nsSortDescriptors`](./nssortdescriptors.md) instead.
 

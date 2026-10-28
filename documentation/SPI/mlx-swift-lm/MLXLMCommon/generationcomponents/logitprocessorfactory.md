@@ -17,7 +17,7 @@ Optional factory producing a custom [`LogitProcessor`](../logitprocessor.md) tha
 var logitProcessorFactory: (@Sendable () -> any LogitProcessor)?
 ```
 
-#### Discussion
+## Discussion
 
 This lets custom logit processing – for example grammar-constrained or otherwise structured decoding – ride any parameters-driven API, including [`ChatSession`](../chatsession.md) and the parameters-based [`TokenIterator`](../tokeniterator.md) initializers.
 

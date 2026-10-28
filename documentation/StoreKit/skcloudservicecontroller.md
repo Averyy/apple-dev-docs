@@ -32,7 +32,7 @@ class SKCloudServiceController
 - [Requesting Access to Apple Music Library](./requesting-access-to-apple-music-library.md)
 - [Offering Apple Music Subscription in Your App](./offering-apple-music-subscription-in-your-app.md)
 
-#### Overview
+## Overview
 
 Use an [`SKCloudServiceController`](./skcloudservicecontroller.md) object to determine the current capabilities of a customer’s Music library, like whether the device allows playback of Apple Music catalog tracks and the addition of tracks to the library.
 

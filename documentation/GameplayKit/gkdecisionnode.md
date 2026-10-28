@@ -24,7 +24,7 @@ class GKDecisionNode
 @interface GKDecisionNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`GKDecisionNode`](./gkdecisionnode.md) instance represents an element in a decision tree (a [`GKDecisionTree`](./gkdecisiontree.md) object). Decision trees contain two kinds of nodes. Some nodes, including the tree’s root node, represent individual decisions to be made (also called a question or *attribute*) and reference child nodes for each possible outcome of (or *branch* from) that decision. Each branch can lead to another question node, or to a leaf node—nodes that have no branches represent a final outcome (or *action*) to result from the tree’s decision-making process. After creating a decision tree from a set of nodes, you can present the tree with a set of inputs (values for attributes, or answers to questions) and the tree provides a final action that follows from the branches corresponding to each attribute.
 

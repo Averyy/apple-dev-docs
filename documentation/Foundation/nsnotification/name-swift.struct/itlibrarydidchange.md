@@ -15,7 +15,7 @@ A notification the system posts when a library change occurs.
 static let ITLibraryDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 Call [`reloadData()`](../../../iTunesLibrary/itlibrary/reloaddata%28%29.md) to retrieve a new view of the library contents.
 

@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may have read-write access to the
 - **Name**: `com.apple.security.personal-information.calendars` (Calendars)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, first enable the App Sandbox or Hardened Runtime capability in Xcode, and then select Calendar.
 

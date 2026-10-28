@@ -22,7 +22,7 @@ The UNIX time, in milliseconds, that the most recent auto-renewable subscription
 var renewalDate: Date? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`renewalDate`](./renewaldate.md) is a value that’s always present for auto-renewable subscriptions, even for expired subscriptions. This date indicates the expiration date of the most recent auto-renewable subscription purchase, including renewals, and may be in the past. For subscriptions that renew successfully, the [`renewalDate`](./renewaldate.md) is the date when the subscription renews.
 

@@ -24,7 +24,7 @@ var aspectRatio: Float { get set }
 @property (nonatomic, readwrite) float aspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 In a 3D game, you set this value to the same aspect ratio you use to create your perspective matrix, which is typically `width/height`.
 

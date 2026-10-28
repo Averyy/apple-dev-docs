@@ -21,7 +21,7 @@ A type that represents an XML property list.
 extern UTType * const UTTypeXMLPropertyList;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.xml-property-list`.
 

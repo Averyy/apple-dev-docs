@@ -22,7 +22,7 @@ var scopeBarActivation: UISearchController.ScopeBarActivation { get set }
 @property (nonatomic) UISearchControllerScopeBarActivation scopeBarActivation;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  [`UISearchBar`](../uisearchbar.md) doesn’t show the scope bar if [`scopeButtonTitles`](../uisearchbar/scopebuttontitles.md) contains fewer than two titles.
 

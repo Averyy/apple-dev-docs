@@ -21,7 +21,7 @@ Examines the content of output data while inside your output handler.
 final func parseOutput(minimumIncompleteLength: Int, maximumLength: Int, parse: (UnsafeMutableRawBufferPointer?, Bool) -> Int) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the requested length was available to parse, or false if the conditions could not be met.
 

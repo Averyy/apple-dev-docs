@@ -19,7 +19,7 @@ var maximumNumberOfTouches: Int { get set }
 @property NSInteger maximumNumberOfTouches;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to 0 to require exactly `minimumNumberOfTouches` touches to recognize the gesture. Defaults to `NSIntegerMax`.
 

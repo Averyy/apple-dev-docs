@@ -16,7 +16,7 @@ A key that specifies the manufacturer of the device.
 #define kIOHIDManufacturerKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a string that contains the manufacturer's name.
 

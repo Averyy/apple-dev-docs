@@ -28,7 +28,7 @@ class UISearchTab
 
 - [Elevating your iPad app with a tab bar and sidebar](./elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Overview
+## Overview
 
 For more information, see [Elevating your iPad app with a tab bar and sidebar](./elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
 

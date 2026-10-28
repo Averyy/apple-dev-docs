@@ -12,11 +12,11 @@ Add the power of a photography studio and lighting rig to your app with the new 
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10162: [Capturing consistent color images](https://developer.apple.com/wwdc24/10162/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Run this sample code on a device that provides the required flash module, such as the following:
 

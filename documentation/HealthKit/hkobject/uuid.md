@@ -24,7 +24,7 @@ var uuid: UUID { get }
 @property (strong, readonly) NSUUID * UUID;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit assigns a UUID to the object when you create it. If you want to add your own unique ID, add it to the object’s metadata using the [`HKMetadataKeyExternalUUID`](../hkmetadatakeyexternaluuid.md) key.
 

@@ -22,7 +22,7 @@ optional func fontPickerViewControllerDidPickFont(_ viewController: UIFontPicker
 - (void) fontPickerViewControllerDidPickFont:(UIFontPickerViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 When the user picks a font, you can retrieve information about the user’s selected font from the view controller’s [`selectedFontDescriptor`](../uifontpickerviewcontroller/selectedfontdescriptor.md).
 

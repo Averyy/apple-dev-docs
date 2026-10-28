@@ -22,7 +22,7 @@ case green
 MKPinAnnotationColorGreen
 ```
 
-#### Discussion
+## Discussion
 
 The head of the pin is green. Green pins indicate starting points on the map.
 

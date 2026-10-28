@@ -27,7 +27,7 @@ optional func goBack(for context: WKWebExtensionContext) async throws
 - (void) goBackForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Navigates to the previous page in the tab’s web view via [`goBack()`](../wkwebview/goback%28%29.md) if not implemented.
 

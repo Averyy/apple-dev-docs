@@ -28,11 +28,11 @@ func authorizationStatus(for type: HKObjectType) -> HKAuthorizationStatus
 
 - [Authorizing access to health data](../authorizing-access-to-health-data.md)
 
-#### Return Value
+## Return Value
 
 A value indicating the app’s authorization status for this type. For a list of possible values, see [`HKAuthorizationStatus`](../hkauthorizationstatus.md).
 
-#### Discussion
+## Discussion
 
 This method checks the authorization status for saving data to the HealthKit store.
 

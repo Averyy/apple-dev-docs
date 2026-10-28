@@ -22,7 +22,7 @@ var addPassButtonStyle: PKAddPassButtonStyle { get set }
 @property (nonatomic, assign) PKAddPassButtonStyle addPassButtonStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For a complete list of styles, see [`PKAddPassButtonStyle`](../pkaddpassbuttonstyle.md).
 

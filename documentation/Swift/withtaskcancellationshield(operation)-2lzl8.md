@@ -21,7 +21,7 @@ Enters a scope in which a task cancellation shield is active.
 func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value where Failure : Error
 ```
 
-#### Discussion
+## Discussion
 
 Cancellation shields are primarily used to ensure some cleanup code will definitely run, even if the context in which the cleanup functions are called from is a cancelled task, and the functions may otherwise return early (due to observing the cancellation of the current task).
 

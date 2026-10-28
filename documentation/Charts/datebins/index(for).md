@@ -21,7 +21,7 @@ Returns the bin index for the given value.
 func index(for value: Date) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The bin index.
 

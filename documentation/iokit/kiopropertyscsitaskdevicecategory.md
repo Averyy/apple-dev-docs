@@ -14,7 +14,7 @@
 #define kIOPropertySCSITaskDeviceCategory
 ```
 
-#### Discussion
+## Discussion
 
 IORegistry property for the SCSITaskUserClient. This category identifies which type of device and interface to the device is used in conjunction with the SCSITaskUserClient.
 

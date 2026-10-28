@@ -18,7 +18,7 @@ Returns length of string not including null terminator.
 size_t getLength() const;
 ```
 
-#### Return Value
+## Return Value
 
 Length of data present.
 

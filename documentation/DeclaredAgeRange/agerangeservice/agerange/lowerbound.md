@@ -18,7 +18,7 @@ The minimum age in the person’s declared age range.
 var lowerBound: Int?
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `nil`, the person’s age range is below the lowest age gate specified by the `requestAgeRange(ageGates:_:_:in:)` methods (for example, [`requestAgeRange(ageGates:_:_:in:)`](../requestagerange%28agegates,_,_,in%29-2go8c.md)), indicating the person is under your minimum age requirement.
 

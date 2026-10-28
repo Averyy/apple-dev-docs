@@ -19,7 +19,7 @@ func validateVisibleItems()
 - (void) validateVisibleItems;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you override this method and use it to customize the validation process. The default implementation calls the [`validate()`](../nstoolbaritem/validate%28%29.md) method of each visible item in the toolbar, including items that have their [`autovalidates`](../nstoolbaritem/autovalidates.md) property set to [`false`](../../Swift/false.md). If you override this method, call `super` at some point during your implementation.
 

@@ -19,7 +19,7 @@ static var newAxis: MLXNewAxisIndex { get }
 
 Available when `Self` is `MLXNewAxisIndex`.
 
-#### Discussion
+## Discussion
 
 This is the equivalent of the `None` index in python:
 
@@ -35,7 +35,7 @@ Written as this in swift:
 array[0, .newAxis]
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](../indexing.md)
 

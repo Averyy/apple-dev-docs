@@ -25,7 +25,7 @@ weak var delegate: (any NSUserActivityDelegate)? { get set }
 @property (weak, nullable) id<NSUserActivityDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The user activity delegate is informed when the activity is being saved or continued. For more information on how to implement the delegate, see [`NSUserActivityDelegate`](../nsuseractivitydelegate.md).
 

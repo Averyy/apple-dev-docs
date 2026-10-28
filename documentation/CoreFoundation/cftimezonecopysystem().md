@@ -25,7 +25,7 @@ func CFTimeZoneCopySystem() -> CFTimeZone!
 extern CFTimeZoneRefCFTimeZoneCopySystem();
 ```
 
-#### Return Value
+## Return Value
 
 A time zone representing the time zone currently used by the system, or the GMT time zone if the current zone cannot be determined. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

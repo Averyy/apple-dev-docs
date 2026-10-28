@@ -26,7 +26,7 @@ func updateRecurrence(_ recurrence: DateComponents?) async throws
 - (void) updateRecurrence:(NSDateComponents *) recurrence completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 See [`recurrence`](./recurrence.md) for a discussion of how the recurrence value is used.
 

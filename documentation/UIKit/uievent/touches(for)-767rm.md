@@ -23,7 +23,7 @@ func touches(for window: UIWindow) -> Set<UITouch>?
 - (NSSet<UITouch *> *) touchesForWindow:(UIWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 A set of [`UITouch`](../uitouch.md) objects representing the touches that belong to the specified window.
 

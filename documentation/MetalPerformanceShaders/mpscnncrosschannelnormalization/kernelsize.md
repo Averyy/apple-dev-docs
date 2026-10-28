@@ -24,7 +24,7 @@ var kernelSize: Int { get }
 @property (nonatomic, readonly) NSUInteger kernelSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `5`.
 

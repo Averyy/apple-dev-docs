@@ -23,7 +23,7 @@ mutating func append(contentsOf newIdentifiers: [Entity.ID])
 
 Available when `Entity` conforms to `AppEntity`.
 
-#### Discussion
+## Discussion
 
 - Parameter:
 

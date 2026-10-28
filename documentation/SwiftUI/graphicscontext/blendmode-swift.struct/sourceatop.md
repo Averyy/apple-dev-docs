@@ -21,7 +21,7 @@ A mode that you use to paint the opaque parts of the source image onto the opaqu
 static var sourceAtop: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = S*Da + D*(1 - Sa)` where
 

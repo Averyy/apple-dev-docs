@@ -26,7 +26,7 @@ var predicate: NSPredicate? { get set }
 @property (copy, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property while a query is running stops the query and discards the current results. The receiver immediately starts a new query.
 

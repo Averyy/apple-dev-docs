@@ -21,7 +21,7 @@ The coefficients of the parabolic equation.
 let equationCoefficients: simd_float3
 ```
 
-#### Discussion
+## Discussion
 
 This equation describes the parabola on which the detected contour is traveling. The equation and the projected points get refined over time.
 

@@ -25,7 +25,7 @@ func evaluation(on labeledImages: MLImageClassifier.DataSource) -> MLClassifierM
 func evaluation(on labeledImages: [String : [URL]]) -> MLClassifierMetrics
 ```
 
-#### Return Value
+## Return Value
 
 The metrics that indicate the performance of the classifier when operating on the input dataset.
 

@@ -17,11 +17,11 @@ A Boolean value that indicates whether the framework supports app impressions on
 static var isSupported: Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the current device supports app impressions; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Check this value to ensure the current device supports app impressions before calling methods on an `AppImpression`.
 

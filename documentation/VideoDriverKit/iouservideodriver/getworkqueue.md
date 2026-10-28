@@ -15,11 +15,11 @@ Gets the work queue created by the video object.
 OSSharedPtr<IODispatchQueue> GetWorkQueue();
 ```
 
-#### Return Value
+## Return Value
 
 An OSSharedPtr to an IODispatchQueue on success
 
-#### Discussion
+## Discussion
 
 The work queue is used to synchronize access to the driver’s state. Setters and Getters for the driver will be done on the work queue.
 

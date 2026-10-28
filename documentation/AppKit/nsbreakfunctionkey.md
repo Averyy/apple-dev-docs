@@ -19,7 +19,7 @@ var NSBreakFunctionKey: Int { get }
 NSBreakFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

@@ -15,7 +15,7 @@ A flattened array of items that includes annotations and overlays.
 getFlattenedItemList(): (Annotation | Overlay)[];
 ```
 
-#### Discussion
+## Discussion
 
 The items in an [`ItemCollection`](../itemcollection.md) may include nested item collections. Use [`getFlattenedItemList()`](./getflatteneditemlist.md) when you need a flat array that contains individual annotations and overlays.
 

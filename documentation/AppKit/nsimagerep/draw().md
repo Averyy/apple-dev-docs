@@ -19,11 +19,11 @@ func draw() -> Bool
 - (BOOL) draw;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image was successfully drawn; otherwise, [`false`](../../Swift/false.md) if there was a problem. The default version of this method simply returns [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 Subclass override this method to draw the image using the image data. By the time this method is called, the graphics state is already configured for you to draw the image at location (0.0, 0.0) in the current coordinate system.
 

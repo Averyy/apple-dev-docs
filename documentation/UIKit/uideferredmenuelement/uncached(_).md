@@ -23,7 +23,7 @@ class func uncached(_ elementProvider: @escaping (@escaping ([UIMenuElement]) ->
 + (instancetype) elementWithUncachedProvider:(void (^)(void (^completion)(NSArray<UIMenuElement *> *elements))) elementProvider;
 ```
 
-#### Discussion
+## Discussion
 
 When you use this initializer, the system calls each deferred element’s completion closure every time it encounters the element in a menu. The system doesn’t cache the element for reuse.
 

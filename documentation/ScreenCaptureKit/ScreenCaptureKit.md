@@ -14,7 +14,7 @@ Stream screen content and audio to your app with fine-grained control over what 
 - tvOS 27.0+
 - visionOS 27.0+
 
-#### Overview
+## Overview
 
 Use ScreenCaptureKit to capture high-performance video and audio across iOS, iPadOS, macOS, tvOS, and visionOS. The framework gives you fine-grained control to select and stream only the content you want to capture, delivering media to your app as [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) objects with the associated metadata.
 

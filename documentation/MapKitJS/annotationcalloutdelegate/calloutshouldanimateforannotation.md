@@ -15,11 +15,11 @@ Determines whether the callout animates.
 calloutShouldAnimateForAnnotation?(annotation: Annotation): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns a Boolean value that determines if the callout should be animated.
 
-#### Discussion
+## Discussion
 
 This method determines whether an appearance annotation should run. The animation runs if the value is `true`.
 

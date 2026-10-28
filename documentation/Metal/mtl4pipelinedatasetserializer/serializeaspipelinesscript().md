@@ -25,7 +25,7 @@ func serializeAsPipelinesScript() throws -> Data
 - (NSData *) serializeAsPipelinesScriptWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` instance containing the pipeline script.
 

@@ -21,7 +21,7 @@ var navigationController: UINavigationController { get }
 @property (nonatomic, readonly) UINavigationController * navigationController;
 ```
 
-#### Discussion
+## Discussion
 
 The root controller in which all content is presented. Native controllers can also be pushed onto this controller, or they may be presented manually.
 

@@ -23,7 +23,7 @@ func appPushManager(_ manager: NEAppPushManager, didReceiveIncomingCallWithUserI
 - (void) appPushManager:(NEAppPushManager *) manager didReceiveIncomingCallWithUserInfo:(NSDictionary *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The framwork calls this method on your delegate when the provider calls the [`reportIncomingCall(userInfo:)`](../neapppushprovider/reportincomingcall%28userinfo%29.md) method.
 

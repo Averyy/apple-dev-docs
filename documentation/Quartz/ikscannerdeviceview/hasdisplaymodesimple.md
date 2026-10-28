@@ -19,7 +19,7 @@ var hasDisplayModeSimple: Bool { get set }
 @property BOOL hasDisplayModeSimple;
 ```
 
-#### Discussion
+## Discussion
 
 If you create an `IKScannerDeviceView` object programmatically and want to use the simple display mode, do the following:
 

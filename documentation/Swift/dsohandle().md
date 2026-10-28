@@ -18,11 +18,11 @@ Produces the dynamic shared object (DSO) handle in use where the macro appears.
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro dsohandle() -> UnsafeRawPointer
+@freestanding(expression)
+macro dsohandle() -> UnsafeRawPointer
 ```
 
-#### Return Value
+## Return Value
 
 The DSO handle.
 

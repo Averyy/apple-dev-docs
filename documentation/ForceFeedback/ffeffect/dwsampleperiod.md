@@ -20,7 +20,7 @@ var dwSamplePeriod: DWORD
 DWORD dwSamplePeriod;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0 indicates that the default playback sample rate should be used.
 

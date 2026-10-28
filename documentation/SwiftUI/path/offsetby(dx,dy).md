@@ -21,7 +21,7 @@ Returns a path constructed by translating all its points.
 func offsetBy(dx: CGFloat, dy: CGFloat) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new copy of the path with the offset applied to all points.
 

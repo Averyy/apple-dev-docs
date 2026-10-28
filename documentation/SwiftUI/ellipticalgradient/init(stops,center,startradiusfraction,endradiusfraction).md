@@ -22,7 +22,7 @@ nonisolated
 init(stops: [Gradient.Stop], center: UnitPoint = .center, startRadiusFraction: CGFloat = 0, endRadiusFraction: CGFloat = 0.5)
 ```
 
-#### Discussion
+## Discussion
 
 For example, an elliptical gradient centered on the top-leading corner of the view, with some extra green area:
 

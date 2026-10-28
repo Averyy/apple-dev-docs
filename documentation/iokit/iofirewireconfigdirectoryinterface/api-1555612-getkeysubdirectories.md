@@ -14,7 +14,7 @@
 IOReturn (*GetKeySubdirectories)(IOFireWireLibConfigDirectoryRef self, int inKey, io_iterator_t *outIterator);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

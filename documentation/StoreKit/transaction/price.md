@@ -22,7 +22,7 @@ The price of the Apple In-App Purchase that the system records in the transactio
 var price: Decimal? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the price of the Apple In-App Purchase, in units of the [`currency`](./currency.md), that the system records in the transaction. The [`price`](./price.md) value reflects all of the following:
 

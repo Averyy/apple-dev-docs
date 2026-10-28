@@ -5,11 +5,11 @@
 
 Detects invalid and overflowing shifts.
 
-#### Overview
+## Overview
 
 Use this check to detect bitwise shifts with invalid shift amounts and shifts that might overflow. These shifts have undefined behavior and the optimizer may omit them. Available in Xcode 9 and later.
 
-##### Invalid shift amount in C
+### Invalid shift amount in C
 
 The following code shows a shift with an invalid shift amount because the destination type can’t represent the result:
 
@@ -20,11 +20,11 @@ x <<= 32; // Error: (1 << 32) can't be represented in an int32_t
 
 If the optimizer can prove that a shift amount may be invalid, it may replace the result of the shift with an arbitrary value.
 
-###### Solution
+#### Solution
 
 Use a larger destination type, such as an `int64_t`.
 
-##### Shift overflow in C
+### Shift overflow in C
 
 In the following code, the second shift overflows `x` because `int32_t` can’t represent `((1U << 31) - 1) << 2`:
 
@@ -33,7 +33,7 @@ int32_t x = (1U << 31) - 1;
 x <<= 2; // Error: the shift result can't fit in x
 ```
 
-###### Solution
+#### Solution
 
 Use a larger destination type, such as an `int64_t`.
 

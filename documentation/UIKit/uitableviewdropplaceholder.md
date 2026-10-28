@@ -23,7 +23,7 @@ class UITableViewDropPlaceholder
 @interface UITableViewDropPlaceholder : UITableViewPlaceholder
 ```
 
-#### Overview
+## Overview
 
 When you want to insert a placeholder cell into your table, create a [`UITableViewDropPlaceholder`](./uitableviewdropplaceholder.md) object and pass it to the [`drop(_:to:)`](./uitableviewdropcoordinator/drop%28_,to%29-3znax.md) method of your [`UITableViewDropCoordinator`](./uitableviewdropcoordinator.md). You use a placeholder cell to display a temporary interface while you load the cell’s contents asynchronously. For example, your placeholder cell might display a progress indicator or a message that the cell content isn’t yet available. The placeholder object contains the reuse identifier of the temporary cell you want to display in your table. It can also include a custom preview to use during the drop.
 

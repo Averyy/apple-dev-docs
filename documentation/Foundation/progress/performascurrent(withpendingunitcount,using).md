@@ -21,11 +21,11 @@ Retrieves the current thread’s progress object, executes the specified block, 
 func performAsCurrent<ReturnType>(withPendingUnitCount unitCount: Int64, using work: () throws -> ReturnType) rethrows -> ReturnType
 ```
 
-#### Return Value
+## Return Value
 
 The return type and value of the block that you specify for the `work` parameter.
 
-#### Discussion
+## Discussion
 
 Use this function as a convenience method to wrap an existing method or block to increment the current progress object. This function retrieves the current progress object, does the work you specify in the work block, and returns the value from that block. When the block is complete, this function increments the current progress object. This function is the same as calling [`becomeCurrent(withPendingUnitCount:)`](./becomecurrent%28withpendingunitcount%29.md), doing the work you specify in the block, and calling [`resignCurrent()`](./resigncurrent%28%29.md).
 

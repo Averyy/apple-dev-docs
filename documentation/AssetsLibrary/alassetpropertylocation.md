@@ -12,7 +12,7 @@ The key to retrieve the location information of the asset.
 extern NSString * const ALAssetPropertyLocation;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a [`CLLocation`](../CoreLocation/cllocation.md) object. This is only available if location services are enabled for the caller.
 

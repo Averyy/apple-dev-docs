@@ -13,7 +13,7 @@
 kIONetworkInterfaceRegisteredState = 0x1
 ```
 
-#### Discussion
+## Discussion
 
 The interface object has registered with the data link layer.
 

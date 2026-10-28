@@ -16,7 +16,7 @@ get map(): Map | null;
 set map(_: Map | null);
 ```
 
-#### Discussion
+## Discussion
 
 This property is `null` if you don’t add the overlay to a map, or if you remove it from a map.
 

@@ -19,7 +19,7 @@ A 3-bit unsigned integer.
 case uint3
 ```
 
-#### Discussion
+## Discussion
 
 Three-bit unsigned integers can represent values in the range [0, 7]. This type is used for quantization and in lookup tables.
 

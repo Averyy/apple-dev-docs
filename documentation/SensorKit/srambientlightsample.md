@@ -21,7 +21,7 @@ class SRAmbientLightSample
 @interface SRAmbientLightSample : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`ambientLightSensor`](./srsensor/ambientlightsensor.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 

@@ -20,7 +20,7 @@ var backgroundColor: NSColor? { get set }
 @property (copy, nullable) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The background color is drawn behind the cell’s text.
 

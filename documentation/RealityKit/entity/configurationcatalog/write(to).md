@@ -21,7 +21,7 @@ Writes the configurations of the configuration catalog to a reality file.
 func write(to url: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Another configuration catalog instance can open the `.reality` file for reading.
 

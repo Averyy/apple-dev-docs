@@ -19,7 +19,7 @@ Persistent data representation of changes for later restoration.
 @property (readonly) NSData * dataRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The script changes are only used with the original Cinematic movie from which the script came from.
 

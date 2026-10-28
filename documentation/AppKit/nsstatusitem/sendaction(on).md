@@ -21,7 +21,7 @@ func sendAction(on mask: NSEvent.EventTypeMask) -> Int
 - (NSInteger) sendActionOn:(NSEventMask) mask;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask containing the previous settings. This bit mask uses the same values as specified in the `mask` parameter.
 

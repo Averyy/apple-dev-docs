@@ -19,7 +19,7 @@ var isHorizontallyCentered: Bool { get set }
 @property (getter=isHorizontallyCentered) BOOL horizontallyCentered;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the image is centered horizontally; otherwise, [`false`](../../Swift/false.md).
 

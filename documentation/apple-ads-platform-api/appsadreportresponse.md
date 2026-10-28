@@ -15,11 +15,11 @@ The top-level response envelope for apps ad-level reports.
 object AppsAdReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 Check for `error` before processing `result`. Note that ad-level reports don’t support `HOURLY` granularity.
 
-##### Example
+### Example
 
 ```json
 {

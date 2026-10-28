@@ -19,7 +19,7 @@ protocol XCSourceEditorExtension : NSObjectProtocol
 @protocol XCSourceEditorExtension <NSObject>
 ```
 
-#### Overview
+## Overview
 
 There are no guarantees about the thread or queue on which any Xcode Source Editor Extension methods are executed, including the designated initializer.
 

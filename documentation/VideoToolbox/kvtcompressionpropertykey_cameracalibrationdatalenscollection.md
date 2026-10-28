@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_CameraCalibrationDataLensCollection: CFString
 extern CFStringRef const kVTCompressionPropertyKey_CameraCalibrationDataLensCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies intrinsic and extrinsic parameters for single or multiple lenses.
 

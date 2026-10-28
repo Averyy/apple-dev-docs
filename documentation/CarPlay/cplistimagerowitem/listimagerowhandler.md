@@ -21,7 +21,7 @@ var listImageRowHandler: ((CPListImageRowItem, Int, @escaping () -> Void) -> Voi
 @property (nonatomic, copy, nullable) void (^listImageRowHandler)(CPListImageRowItem *item, NSInteger index, dispatch_block_t completionBlock);
 ```
 
-#### Discussion
+## Discussion
 
 In Swift, this property is a closure that has three parameters:
 

@@ -15,7 +15,7 @@ The response from retiring a user.
 object RetireVppUserResponse
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  If the user passes the `userId` value for an already-retired user, this request returns an error that indicates the user was already retired.
 

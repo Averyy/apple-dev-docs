@@ -23,7 +23,7 @@ struct AVCaptureTimecode
 struct AVCaptureTimecode;
 ```
 
-#### Overview
+## Overview
 
 This structure corresponds to the SMPTE 12M-1 Linear Timecode (LTC) format, widely used for professional video and audio synchronization.
 

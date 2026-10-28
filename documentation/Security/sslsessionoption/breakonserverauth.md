@@ -22,7 +22,7 @@ case breakOnServerAuth
 kSSLSessionOptionBreakOnServerAuth
 ```
 
-#### Discussion
+## Discussion
 
 Note that in iOS (all versions) and macOS 10.8 and later, setting this option disables Secure Transport’s automatic verification of server certificates.
 

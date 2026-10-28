@@ -24,11 +24,11 @@ class UITextSelectionRect
 @interface UITextSelectionRect : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class is an abstract class and must be subclassed to be used. The system text input views provide their own concrete implementations of this class.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 If you are implementing a custom text input view, you can subclass and use your custom class to return selection-related information. When subclassing, you should override and reimplement all properties. In your custom implementations, do not call `super`.
 

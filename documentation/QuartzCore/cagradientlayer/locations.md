@@ -24,7 +24,7 @@ var locations: [NSNumber]? { get set }
 @property (copy, nullable) NSArray<NSNumber *> * locations;
 ```
 
-#### Discussion
+## Discussion
 
 The gradient stops are specified as values between `0` and `1`. The values must be monotonically increasing. If `nil`, the stops are spread uniformly across the range. Defaults to `nil`.
 

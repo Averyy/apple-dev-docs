@@ -24,7 +24,7 @@ func UIGraphicsBeginPDFPage()
 extern void UIGraphicsBeginPDFPage();
 ```
 
-#### Discussion
+## Discussion
 
 This function ends any previous page before beginning a new one. It sets the media box of the new page to the rectangle you specified when you created the PDF context.
 

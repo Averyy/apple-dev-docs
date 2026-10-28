@@ -25,7 +25,7 @@ var formatDescriptionReplacements: [AVCompositionTrackFormatDescriptionReplaceme
 @property (readonly) NSArray<AVCompositionTrackFormatDescriptionReplacement *> * formatDescriptionReplacements;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s values specify an original and a replacement format description, as set in a previous call to [`replaceFormatDescription(_:with:)`](../avmutablecompositiontrack/replaceformatdescription%28_,with%29.md).
 

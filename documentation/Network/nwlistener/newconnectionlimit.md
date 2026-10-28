@@ -21,7 +21,7 @@ The remaining number of inbound connections to deliver before rejecting connecti
 final var newConnectionLimit: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the new connection limit is set to a non-infinite value, it will decrement for every received connection. Once the value hits zero, new connections will be queued and eventually blocked, until you raise the limit. This allows you to limit the rate of inbound connections you handle.
 

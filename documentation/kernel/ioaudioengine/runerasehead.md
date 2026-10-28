@@ -9,7 +9,7 @@
 bool runEraseHead;
 ```
 
-#### Overview
+## Overview
 
 Set to true if the erase head is to run when the audio engine is running. This is the case if there are any output streams.
 

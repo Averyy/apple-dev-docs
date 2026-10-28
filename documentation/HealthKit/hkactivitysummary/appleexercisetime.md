@@ -24,7 +24,7 @@ var appleExerciseTime: HKQuantity { get set }
 @property (nonatomic, strong) HKQuantity * appleExerciseTime;
 ```
 
-#### Discussion
+## Discussion
 
 Exercise time measures every full minute of movement that equals or exceeds the intensity of a brisk walk.
 

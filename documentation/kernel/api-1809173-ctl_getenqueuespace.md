@@ -13,11 +13,11 @@
 errno_t ctl_getenqueuespace(kern_ctl_ref kctlref, u_int32_t unit, size_t *space);
 ```
 
-#### Return Value
+## Return Value
 
 0 - Success; the amount of space is returned to caller. EINVAL - Invalid parameters.
 
-#### Discussion
+## Discussion
 
 Retrieve the amount of space currently available for data to be sent from the kernel control to the client.
 

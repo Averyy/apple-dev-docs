@@ -16,7 +16,7 @@
 kSENSE_DATA_VALID
 ```
 
-#### Discussion
+## Discussion
 
 Sense data is valid.
 

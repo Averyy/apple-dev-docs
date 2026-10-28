@@ -21,7 +21,7 @@ Initializes a set of options with the specific scope.
 - (instancetype) initWithScope:(CKSyncEngineSendChangesScope *) scope;
 ```
 
-#### Discussion
+## Discussion
 
 If no scope is provided, the default scope will include everything.
 

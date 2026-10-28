@@ -21,7 +21,7 @@ Modifies a format style to display a URL’s path component in accordance with t
 func path(_ strategy: URL.FormatStyle.ComponentDisplayOption = .always) -> URL.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.FormatStyle`](../formatstyle.md) that incorporates the specified behavior.
 

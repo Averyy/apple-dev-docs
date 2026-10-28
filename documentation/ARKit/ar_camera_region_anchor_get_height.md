@@ -15,11 +15,11 @@ Get the height of a given anchor.
 extern float ar_camera_region_anchor_get_height(ar_camera_region_anchor_t camera_region_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The height of the anchor.
 
-#### Discussion
+## Discussion
 
 > **Note**: The height of the anchor is the length along the Y-axis, in meters. This is [-height/2, height/2] from the center.
 

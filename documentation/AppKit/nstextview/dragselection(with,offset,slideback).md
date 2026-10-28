@@ -19,11 +19,11 @@ func dragSelection(with event: NSEvent, offset mouseOffset: NSSize, slideBack: B
 - (BOOL) dragSelectionWithEvent:(NSEvent *) event offset:(NSSize) mouseOffset slideBack:(BOOL) slideBack;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drag can be successfully initiated, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Primarily for subclasses, who can override it to intervene at the beginning of a drag.
 

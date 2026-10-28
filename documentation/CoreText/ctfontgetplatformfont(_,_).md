@@ -21,7 +21,7 @@ func CTFontGetPlatformFont(_ font: CTFont, _ attributes: UnsafeMutablePointer<Un
 extern ATSFontRef CTFontGetPlatformFont(CTFontRef font, CTFontDescriptorRef*attributes);
 ```
 
-#### Return Value
+## Return Value
 
 An [`ATSFontRef`](./atsfontref.md) object for the given font reference.
 

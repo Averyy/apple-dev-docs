@@ -24,7 +24,7 @@ case tier1
 MTLArgumentBuffersTier1
 ```
 
-#### Discussion
+## Discussion
 
 Tier 1 argument buffers are supported on all iOS, tvOS, and macOS GPUs.
 

@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatScaleUniform(SPSize3DFloat size, float scale);
 ```
 
-#### Return Value
+## Return Value
 
 A size that’s uniformly scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a size with dimensions uniformly scaled by the specified value.
 

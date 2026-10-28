@@ -15,11 +15,11 @@ Creates a critical region object.
 OSStatus MPCreateCriticalRegion(MPCriticalRegionID *criticalRegion);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 Also see the function  [`MPDeleteCriticalRegion`](./api-1585704-mpdeletecriticalregion.md). 
 

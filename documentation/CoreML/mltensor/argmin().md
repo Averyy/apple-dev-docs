@@ -21,7 +21,7 @@ Returns the index of the minimum value of the flattened scalars.
 func argmin() -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let x = MLTensor(shape: [3, 2], scalars: [2, 3, 4, 5, 6, 7], scalarType: Float.self)

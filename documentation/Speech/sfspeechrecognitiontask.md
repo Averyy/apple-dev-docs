@@ -23,7 +23,7 @@ class SFSpeechRecognitionTask
 @interface SFSpeechRecognitionTask : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an `SFSpeechRecognitionTask` object to determine the state of a speech recognition task, to cancel an ongoing task, or to signal the end of the task.
 

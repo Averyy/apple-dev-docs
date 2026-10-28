@@ -23,7 +23,7 @@ var estimatedProgress: Double { get }
 @property (nonatomic, readonly) double estimatedProgress;
 ```
 
-#### Discussion
+## Discussion
 
 This value ranges from `0.0` to `1.0` based on the total number of bytes received, including the main document and all of its potential subresources. After navigation loading completes, the `estimatedProgress` value remains at `1.0` until a new navigation starts, at which point the `estimatedProgress` value resets to `0.0`. The [`WKWebView`](../wkwebview.md) class is key-value observing (KVO) compliant for this property.
 

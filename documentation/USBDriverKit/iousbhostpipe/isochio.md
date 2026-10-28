@@ -15,11 +15,11 @@ Performs a synchronous or asynchronous request on an isochronous endpoint.
 virtual kern_return_t IsochIO(IOMemoryDescriptor *dataBuffer, IOMemoryDescriptor *frameList, uint64_t firstFrameNumber, OSAction *completion);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to issue isochronous requests. Allocate and initialize an array of [`IOUSBIsochronousFrame`](../iousbisochronousframe.md) structures, which describe the frames to transfer. See [`IOUSBIsochronousFrame`](../iousbisochronousframe.md) for information regarding structure initialization requirements and usage.
 

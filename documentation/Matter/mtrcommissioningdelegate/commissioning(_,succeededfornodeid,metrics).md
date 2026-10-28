@@ -25,7 +25,7 @@ optional func commissioning(_ commissioning: MTRCommissioningOperation, succeede
 - (void) commissioning:(MTRCommissioningOperation *) commissioning succeededForNodeID:(NSNumber *) nodeID metrics:(MTRMetrics *) metrics;
 ```
 
-#### Discussion
+## Discussion
 
 This selector will not be used if commissioning:succeededForNodeID:metrics:context: is supported.
 

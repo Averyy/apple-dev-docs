@@ -19,11 +19,11 @@ func convert(_ fontObj: NSFont, toFamily family: String) -> NSFont
 - (NSFont *) convertFont:(NSFont *) fontObj toFamily:(NSString *) family;
 ```
 
-#### Return Value
+## Return Value
 
 A font with matching traits and the given family, or `aFont` if it can’t be converted.
 
-#### Discussion
+## Discussion
 
 This method attempts to match the weight and posture of `aFont` as closely as possible. Italic is mapped to Oblique, for example. Weights are mapped based on an approximate numeric scale of 0 to 15.
 

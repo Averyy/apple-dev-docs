@@ -20,11 +20,11 @@ A cloned data column of doubles.
 var doubles: MLDataColumn<Double>? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data column if the underlying type of the column is [`Double`](../../Swift/double.md); otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This property is functionally equivalent to passing [`Double`](../../Swift/double.md)`.self` to [`column(type:)`](./column%28type%29.md). Typically you ensure [`type`](./type.md) is equal to [`MLDataValue.ValueType.double`](../mldatavalue/valuetype/double.md) before getting this property.
 

@@ -21,7 +21,7 @@ Computes the cross-spectrum of two complex double-precision vectors.
 extern void vDSP_zcspecD(const DSPDoubleSplitComplex *__A, const DSPDoubleSplitComplex *__B, const DSPDoubleSplitComplex *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_zcspec`](./vdsp_zcspec.md), except for the types of vectors `A`, `B`, and `C`.
 

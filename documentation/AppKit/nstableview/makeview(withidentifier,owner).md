@@ -19,11 +19,11 @@ func makeView(withIdentifier identifier: NSUserInterfaceItemIdentifier, owner: A
 - (NSView *) makeViewWithIdentifier:(NSUserInterfaceItemIdentifier) identifier owner:(id) owner;
 ```
 
-#### Return Value
+## Return Value
 
 A view for the row.
 
-#### Discussion
+## Discussion
 
 Typically, `identifier` is associated with a cell view that’s contained in a table’s Nib file. When this method is called, the table view automatically instantiates the cell view with the specified owner, which is usually the table view’s delegate. (The owner is useful in setting up outlets and target/actions from the view.) Note that a cell view’s identifier must be the same as its table column’s identifier for bindings to work. If you’re using bindings, it’s recommended that you use the Automatic identifier setting in Interface Builder.
 

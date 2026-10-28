@@ -26,11 +26,11 @@ optional func collectionView(_ collectionView: UICollectionView, canHandle sessi
 
 - [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the collection view can accept the dragged data or [`false`](../../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to dynamically determine whether to accept dropped data in your collection view. In your implementation, check the type of the dragged data and return a Boolean value indicating whether you can accept the drop. For example, you might call the [`hasItemsConforming(toTypeIdentifiers:)`](../uidragdropsession/hasitemsconforming%28totypeidentifiers%29.md) method of the session object to determine whether it contains data that your app can accept.
 

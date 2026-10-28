@@ -20,7 +20,7 @@ func selector(forCommand commandDescription: NSScriptCommandDescription) -> Sele
 - (SEL) selectorForCommand:(NSScriptCommandDescription *) commandDescription;
 ```
 
-#### Return Value
+## Return Value
 
 The selector from the receiver for the command specified by `commandDescription`. Searches in the receiver first, then in any superclass. Returns `NULL` if no matching selector is found.
 

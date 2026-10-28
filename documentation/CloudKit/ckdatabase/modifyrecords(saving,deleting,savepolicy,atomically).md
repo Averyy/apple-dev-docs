@@ -21,14 +21,14 @@ Modifies the specified records and returns the results to an awaiting caller.
 func modifyRecords(saving recordsToSave: [CKRecord], deleting recordIDsToDelete: [CKRecord.ID], savePolicy: CKModifyRecordsOperation.RecordSavePolicy = .ifServerRecordUnchanged, atomically: Bool = true) async throws -> (saveResults: [CKRecord.ID : Result<CKRecord, any Error>], deleteResults: [CKRecord.ID : Result<Void, any Error>])
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with the following named elements:
 
 - **`saveResults`**: A dictionary of saved records. The dictionary uses the identifiers of the records you specify in `recordsToSave` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding modified record (as it appears on the server), or an error that describes why CloudKit can’t modify that record.
 - **`deleteResults`**: A dictionary of deleted records. The dictionary uses the identifiers you specify in `recordIDsToDelete` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either [`Void`](../../Swift/void.md) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record.
 
-#### Discussion
+## Discussion
 
 Deleting records may cause additional deletions if other records in the database reference the deleted records. CloudKit doesn’t provide the identifiers of any additional records it deletes. This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account, or when `atomically` is [`true`](../../Swift/true.md) and one or more of the specified changes fail; otherwise, the returned tuple includes any individual record errors.
 

@@ -25,7 +25,7 @@ func object_getClass(_ obj: Any?) -> AnyClass?
 extern Classobject_getClass(id obj);
 ```
 
-#### Return Value
+## Return Value
 
 The class object of which `object` is an instance, or `Nil` if `object` is `nil`.
 

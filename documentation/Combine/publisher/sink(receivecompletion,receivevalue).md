@@ -25,11 +25,11 @@ func sink(receiveCompletion: @escaping (Subscribers.Completion<Self.Failure>) ->
 
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
-#### Return Value
+## Return Value
 
 A cancellable instance, which you use when you end assignment of the received value. Deallocation of the result will tear down the subscription stream.
 
-#### Discussion
+## Discussion
 
 Use [`sink(receiveCompletion:receiveValue:)`](./sink%28receivecompletion,receivevalue%29.md) to observe values received by the publisher and process them using a closure you specify.
 

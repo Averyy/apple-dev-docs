@@ -15,7 +15,7 @@ Computes the environment textures with very high sampling rates.
 case veryHigh
 ```
 
-#### Discussion
+## Discussion
 
 Use only to capture very small frequency details in the specular texture.
 

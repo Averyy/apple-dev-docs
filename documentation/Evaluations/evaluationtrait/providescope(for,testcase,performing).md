@@ -18,11 +18,11 @@ Runs the evaluation and makes its result available to the test body through an e
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func provideScope(for test: Test, testCase: Test.Case?, performing function: @Sendable () async throws -> Void) async throws
+nonisolated(nonsending)
+func provideScope(for test: Test, testCase: Test.Case?, performing function: @Sendable () async throws -> Void) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The Swift Testing framework calls this method automatically when you attach the trait to a test. The evaluation runs first, the framework stores its result in [`EvaluationContext`](../evaluationcontext.md), and then the test body executes inside that context.
 

@@ -17,7 +17,7 @@ Train (or continue training) LoRA weights.
 static func train(model: Module, train: [String], validate: [String], optimizer: Optimizer, loss: @escaping LoraLossFunction = loss, tokenizer: Tokenizer, parameters: Parameters, progress: (Progress) -> ProgressDisposition) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LoRATrainError.sampleTooShort(dataset:index:tokenCount:)`](../loratrainerror/sampletooshort%28dataset,index,tokencount%29.md) if a training or validation sample encodes to fewer than 2 tokens. Checked before training starts.
 

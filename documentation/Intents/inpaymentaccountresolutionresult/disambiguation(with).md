@@ -23,11 +23,11 @@ class func disambiguation(with paymentAccountsToDisambiguate: [INPaymentAccount]
 + (instancetype) disambiguationWithPaymentAccountsToDisambiguate:(NSArray<INPaymentAccount *> *) paymentAccountsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentAccountResolutionResult`](../inpaymentaccountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the user account uniquely and need the user to select from a limited set of possible options.
 

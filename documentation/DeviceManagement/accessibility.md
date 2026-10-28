@@ -15,11 +15,11 @@ The payload that configures the accessibility features of the device.
 object Accessibility
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.universalaccess` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.universalaccess` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

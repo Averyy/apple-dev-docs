@@ -21,7 +21,7 @@ Synchronously transmits an APDU command to the card and returns the response.
 - (NSData *) sendIns:(UInt8) ins p1:(UInt8) p1 p2:(UInt8) p2 data:(NSData *) requestData le:(NSNumber *) le sw:(UInt16 *) sw error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The returned data without the first two bytes (`SW1SW2`), or `nil` if an error occurred.
 

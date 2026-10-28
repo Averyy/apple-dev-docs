@@ -24,11 +24,11 @@ func SSLGetPeerID(_ context: SSLContext, _ peerID: UnsafeMutablePointer<UnsafeRa
 OSStatus SSLGetPeerID(SSLContextRef context, const void **peerID, size_t *peerIDLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If the peer ID data for this context was not set by calling the [`SSLSetPeerID(_:_:_:)`](./sslsetpeerid%28_,_,_%29.md) function, this function returns a `NULL` pointer in the `peerID` parameter, and `0` in the `peerIDLen` parameter.
 

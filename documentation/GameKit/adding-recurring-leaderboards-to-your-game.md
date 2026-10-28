@@ -12,7 +12,7 @@ Encourage competition in your games by adding leaderboards that have a duration 
 - Mac Catalyst 15.0+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10067: Bring Recurring Leaderboards to Your Game](https://developer.apple.com/wwdc21/10067/).
 

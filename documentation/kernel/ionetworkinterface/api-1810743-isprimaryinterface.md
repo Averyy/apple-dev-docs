@@ -12,11 +12,11 @@ virtual bool isPrimaryInterface(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the interface is the primary interface, false otherwise.
 
-#### Overview
+## Overview
 
 The definition of a primary interface and its discovery is platform specific.
 

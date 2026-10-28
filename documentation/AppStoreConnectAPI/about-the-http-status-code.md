@@ -5,7 +5,7 @@
 
 Learn how the status code helps you determine if an App Store Connect  API request succeeded or why it failed.
 
-#### Overview
+## Overview
 
 The codes the API returns are defined by the HTTP standard and fall in these meaningful ranges:
 

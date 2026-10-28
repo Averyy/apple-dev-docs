@@ -16,7 +16,7 @@ Constructs a new help link with the specified action.
 @preconcurrency init(action: @escaping () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want the standard help button appearance with a custom button action that does not open an article in an Apple Help book.
 

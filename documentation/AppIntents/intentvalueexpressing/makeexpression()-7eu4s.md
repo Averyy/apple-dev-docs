@@ -21,11 +21,11 @@ Creates an intent value expression that represents this value.
 func makeExpression() -> IntentValueExpression
 ```
 
-#### Return Value
+## Return Value
 
 An intent value expression representing this value.
 
-#### Discussion
+## Discussion
 
 This implementation creates an expression that wraps this value directly, allowing for lazy evaluation during the conversion process.
 

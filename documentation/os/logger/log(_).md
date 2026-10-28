@@ -21,7 +21,7 @@ Writes a message to the log using the default log type.
 func log(_ message: OSLogMessage)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](../oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 

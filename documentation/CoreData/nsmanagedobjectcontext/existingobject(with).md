@@ -25,11 +25,11 @@ func existingObject(with objectID: NSManagedObjectID) throws -> NSManagedObject
 - (NSManagedObject *) existingObjectWithID:(NSManagedObjectID *) objectID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The identified object from either the context or the persistent store.
 
-#### Discussion
+## Discussion
 
 If the context recognizes the specified object, the method returns that object. Otherwise, the context fetches and returns a fully realized object from the persistent store; unlike [`object(with:)`](./object%28with%29.md), this method never returns a fault. If the object doesn’t exist in both the context and the persistent store, the method throws an error.
 

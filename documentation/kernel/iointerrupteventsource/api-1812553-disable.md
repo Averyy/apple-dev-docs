@@ -11,7 +11,7 @@ Disable event source.
 virtual void disable();
 ```
 
-#### Overview
+## Overview
 
 A subclass implementation is expected to respect the enabled state when checkForWork is called.
 

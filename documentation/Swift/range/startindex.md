@@ -23,7 +23,7 @@ var startIndex: Range<Bound>.Index { get }
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

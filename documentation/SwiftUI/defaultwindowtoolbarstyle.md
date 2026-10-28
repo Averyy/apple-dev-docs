@@ -15,7 +15,7 @@ The default window toolbar style.
 struct DefaultWindowToolbarStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./windowtoolbarstyle/automatic.md) to construct this style.
 

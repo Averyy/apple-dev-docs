@@ -9,9 +9,9 @@ Fetch one or more Charts Playlists by using their Storefront value.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

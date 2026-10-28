@@ -23,7 +23,7 @@ case `defer`
 GCControllerHomeButtonSettingInAppActionDefer
 ```
 
-#### Discussion
+## Discussion
 
 The system reponse to the game controller Home button press is disabled when the app indicates that it wants to handle the Home button press.  The app indicates that it wants to handle the Home button press by setting:
 

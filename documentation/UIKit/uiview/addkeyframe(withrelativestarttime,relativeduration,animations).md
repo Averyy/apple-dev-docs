@@ -23,7 +23,7 @@ class func addKeyframe(withRelativeStartTime frameStartTime: Double, relativeDur
 + (void) addKeyframeWithRelativeStartTime:(double) frameStartTime relativeDuration:(double) frameDuration animations:(void (^)()) animations;
 ```
 
-#### Discussion
+## Discussion
 
 To animate view properties during a keyframe animation, call this method from within the animation block you pass to the [`animateKeyframes(withDuration:delay:options:animations:completion:)`](./animatekeyframes%28withduration,delay,options,animations,completion%29.md) method. To animate between different values, or to tweak the timing of your view property animations, you can call this method multiple times within a block.
 

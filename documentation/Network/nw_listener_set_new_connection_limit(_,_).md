@@ -25,7 +25,7 @@ func nw_listener_set_new_connection_limit(_ listener: nw_listener_t, _ new_conne
 void nw_listener_set_new_connection_limit(nw_listener_t listener, uint32_t new_connection_limit);
 ```
 
-#### Discussion
+## Discussion
 
 When the new connection limit is set to a non-infinite value, it will decrement for every received connection. Once the value hits zero, new connections will be queued and eventually blocked, until you raise the limit. This allows you to limit the rate of inbound connections you handle.
 

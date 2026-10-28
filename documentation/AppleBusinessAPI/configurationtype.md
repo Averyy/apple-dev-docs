@@ -41,7 +41,7 @@ string ConfigurationType
 - `WEB_FILTER`
 - `WIFI`
 
-#### Possible Values
+## Possible Values
 
 - `CUSTOM_SETTING` - A custom Configuration profile (can be created/updated via API)
 - `AIR_DROP` - AirDrop settings

@@ -30,13 +30,13 @@ class HKAnchoredObjectQuery
 - [Executing Observer Queries](./executing-observer-queries.md)
 - [Receiving Downhill Skiing and Snowboarding Data](./receiving-downhill-skiing-and-snowboarding-data.md)
 
-#### Overview
+## Overview
 
 Anchored object queries provide an easy way to search for new data in the HealthKit store. An [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md) returns an anchor value that corresponds to the last sample or deleted object received by that query. Subsequent queries can use this anchor to restrict their results to only newer saved or deleted objects.
 
 Anchored object queries are mostly immutable. You can assign the query’s [`updateHandler`](./hkanchoredobjectquery/updatehandler.md) property after instantiating the object, but you must set all other properties when you instantiate the object. You can’t change them.
 
-##### Combine Snapshots and Updates
+### Combine Snapshots and Updates
 
 The anchored object query can combine the abilities of a regular query with a long-running query.
 

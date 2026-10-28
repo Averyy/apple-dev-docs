@@ -5,7 +5,7 @@
 
 Allow Xcode Cloud to access your Bitbucket Cloud repository.
 
-#### Overview
+## Overview
 
 When you first configure your project or workspace to use Xcode Cloud, you need to allow Xcode Cloud to access your Git repository. It uses this access to automatically build and test your code when you make changes to the codebase.
 

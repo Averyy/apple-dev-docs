@@ -19,7 +19,7 @@ var isFieldEditor: Bool { get set }
 @property (getter=isFieldEditor) BOOL fieldEditor;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md), the receiver interprets Tab, Shift-Tab, and Return (Enter) as cues to end editing and possibly to change the first responder; if `flag` is [`false`](../../Swift/false.md), it doesn’t, instead accepting these characters as text input.
 

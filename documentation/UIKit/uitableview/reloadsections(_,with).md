@@ -23,7 +23,7 @@ func reloadSections(_ sections: IndexSet, with animation: UITableView.RowAnimati
 - (void) reloadSections:(NSIndexSet *) sections withRowAnimation:(UITableViewRowAnimation) animation;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method causes the table view to ask its data source for new cells for the specified sections. The table view animates the insertion of new cells in as it animates the old cells out. Call this method if you want to alert the user that the values of the designated sections are changing. If, however, you just want to change values in cells of the specified sections without alerting the user, you can get those cells and directly set their new values.
 

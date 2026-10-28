@@ -15,7 +15,7 @@ A sequence of media content for playback, with links to the previous and next se
 object Queue
 ```
 
-#### Discussion
+## Discussion
 
 A `Queue` object is a segment of the full playback queue. You may instruct the client to insert a `Queue` object into its current playback queue, or replace it entirely.
 

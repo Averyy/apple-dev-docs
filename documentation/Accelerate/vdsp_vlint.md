@@ -25,7 +25,7 @@ extern void vDSP_vlint(const float *__A, const float *__B, vDSP_Stride __IB, flo
 
 - [Using linear interpolation to construct new data points](./using-linear-interpolation-to-construct-new-data-points.md)
 
-#### Discussion
+## Discussion
 
 Performs the following operation:
 

@@ -21,7 +21,7 @@ Returns the output value (y component) of the curve at the given time.
 func value(at progress: Double) -> Double
 ```
 
-#### Return Value
+## Return Value
 
 The output value (y component) of the curve at the given progress.
 

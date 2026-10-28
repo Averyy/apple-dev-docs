@@ -21,11 +21,11 @@ Gets the minimum and maximum corner points of the object’s bounding box.
 - (BOOL) getBoundingBoxMin:(SCNVector3 *) min max:(SCNVector3 *) max;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the object has a nonzero volume; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Scene Kit defines a bounding box in the local coordinate space using two points identifying its corners, which implicitly determine six axis-aligned planes marking its limits. For example, if a geometry’s bounding box has the minimum corner `{-1, 0, 2}` and the maximum corner `{3, 4, 5}`, all points in the geometry’s vertex data have an x-coordinate value between `-1.0` and `3.0`, inclusive.
 

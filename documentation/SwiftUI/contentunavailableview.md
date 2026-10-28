@@ -22,7 +22,7 @@ nonisolated
 struct ContentUnavailableView<Label, Description, Actions> where Label : View, Description : View, Actions : View
 ```
 
-#### Overview
+## Overview
 
 It is recommended to use `ContentUnavailableView` in situations where a view’s content cannot be displayed. That could be caused by a network error, a list without items, a search that returns no results etc.
 

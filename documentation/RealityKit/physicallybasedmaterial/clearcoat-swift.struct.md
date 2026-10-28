@@ -20,7 +20,7 @@ An object that defines the intensity of an entity’s clear, shiny coating.
 struct Clearcoat
 ```
 
-#### Overview
+## Overview
 
 A clearcoat is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects.
 

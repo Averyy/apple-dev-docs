@@ -24,7 +24,7 @@ var startDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil` which requests the first payment as part of the initial transaction.
 

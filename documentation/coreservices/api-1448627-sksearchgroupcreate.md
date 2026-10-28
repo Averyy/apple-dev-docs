@@ -17,11 +17,11 @@ Creates a search group as an array of references to indexes.
 SKSearchGroupRef SKSearchGroupCreate(CFArrayRef inArrayOfInIndexes);
 ```
 
-#### Return Value
+## Return Value
 
 An SKSearchGroup opaque type.
 
-#### Discussion
+## Discussion
 
 Creates a search group as an array of references to indexes.
 

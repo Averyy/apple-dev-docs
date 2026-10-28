@@ -29,7 +29,7 @@ func makeArgumentTable(descriptor: MTL4ArgumentTableDescriptor) throws -> any MT
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Return Value
+## Return Value
 
 A [`MTL4ArgumentTable`](../mtl4argumenttable.md) instance, or `nil` if the function failed.
 

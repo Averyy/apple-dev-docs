@@ -23,7 +23,7 @@ class NSToolbarItem
 @interface NSToolbarItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSToolbarItem`](./nstoolbaritem.md) object displays an image and text string in the toolbar area of a window. You can also create toolbar items that display custom views you provide. Toolbar items provide fast access to common commands or features in the window. For example, the Finder window uses toolbar items to help someone navigate the file system.
 

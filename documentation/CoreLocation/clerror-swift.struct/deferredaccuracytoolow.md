@@ -21,7 +21,7 @@ A constant that indicates deferred mode isn’t supported for the requested accu
 static var deferredAccuracyTooLow: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The accuracy must be set to [`kCLLocationAccuracyBest`](../kcllocationaccuracybest.md) or [`kCLLocationAccuracyBestForNavigation`](../kcllocationaccuracybestfornavigation.md).
 

@@ -16,7 +16,7 @@ The shipping method selected by the user.
 readonly attribute ApplePayShippingMethod shippingMethod;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ApplePayShippingMethod`](../applepayshippingmethod.md).
 

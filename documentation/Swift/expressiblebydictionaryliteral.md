@@ -21,7 +21,7 @@ A type that can be initialized using a dictionary literal.
 protocol ExpressibleByDictionaryLiteral
 ```
 
-#### Overview
+## Overview
 
 A dictionary literal is a simple way of writing a list of key-value pairs. You write each key-value pair with a colon (`:`) separating the key and the value. The dictionary literal is made up of one or more key-value pairs, separated by commas and surrounded with square brackets.
 
@@ -46,7 +46,7 @@ print(frequencies.count)
 
 > **Note**:  A dictionary literal is *not* the same as an instance of `Dictionary`. You can’t initialize a type that conforms to `ExpressibleByDictionaryLiteral` simply by assigning an instance of `Dictionary`, `KeyValuePairs`, or similar.
 
-### Conforming to the ExpressibleByDictionaryLiteral Protocol
+## Conforming to the ExpressibleByDictionaryLiteral Protocol
 
 To add the capability to be initialized with a dictionary literal to your own custom types, declare an `init(dictionaryLiteral:)` initializer. The following example shows the dictionary literal initializer for a hypothetical `CountedSet` type, which uses setlike semantics while keeping track of the count for duplicate elements:
 

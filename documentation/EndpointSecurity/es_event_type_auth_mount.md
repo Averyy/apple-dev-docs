@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_MOUNT: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_MOUNT
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`mount`](./es_events_t/mount.md), which has the type [`es_event_mount_t`](./es_event_mount_t.md).
 

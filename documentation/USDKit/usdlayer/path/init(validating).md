@@ -20,7 +20,7 @@ Creates a path from its string representation, validating that `path` is well-fo
 init?(validating path: String)
 ```
 
-#### Return Value
+## Return Value
 
 `nil` if `path` cannot be parsed as a USD path expression.
 

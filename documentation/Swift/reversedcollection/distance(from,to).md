@@ -23,11 +23,11 @@ func distance(from start: ReversedCollection<Base>.Index, to end: ReversedCollec
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The distance between `start` and `end`. The result can be negative only if the collection conforms to the `BidirectionalCollection` protocol.
 
-#### Discussion
+## Discussion
 
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 

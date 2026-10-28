@@ -21,7 +21,7 @@ Multiplies two values and produces their product.
 static func * (lhs: Int32, rhs: Int32) -> Int32
 ```
 
-#### Discussion
+## Discussion
 
 The multiplication operator (`*`) calculates the product of its two arguments. For example:
 

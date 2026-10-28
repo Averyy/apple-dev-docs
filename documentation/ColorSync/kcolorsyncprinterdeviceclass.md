@@ -20,7 +20,7 @@ var kColorSyncPrinterDeviceClass: Unmanaged<CFString>!
 extern CFStringRef kColorSyncPrinterDeviceClass;
 ```
 
-#### Discussion
+## Discussion
 
 The string that represents a printer device is `prtr`.
 

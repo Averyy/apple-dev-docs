@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetInterfaceType(_ interface: SCNetworkInterface) -> CFSt
 CFStringRefSCNetworkInterfaceGetInterfaceType(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The interface type.
 

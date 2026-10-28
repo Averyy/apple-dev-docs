@@ -24,7 +24,7 @@ var drawableSize: CGSize { get set }
 @property (nonatomic) CGSize drawableSize;
 ```
 
-#### Discussion
+## Discussion
 
 Changing this value adjusts the size of any color, depth, stencil, and multisampling textures created by the view. If [`autoResizeDrawable`](./autoresizedrawable.md) is [`true`](../../Swift/true.md), this property is updated automatically whenever the view’s size changes. If [`autoResizeDrawable`](./autoresizedrawable.md) is [`false`](../../Swift/false.md), set this value to change the size of the texture objects.
 

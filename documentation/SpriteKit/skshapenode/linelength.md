@@ -25,7 +25,7 @@ var lineLength: CGFloat { get }
 @property (nonatomic, readonly) CGFloat lineLength;
 ```
 
-#### Discussion
+## Discussion
 
 This property takes effect only when the shape has a stroke. The valid range is between `[0.1]` where one indicates that the shape is fully stroked, and zero indicates that the shape is not stroked at all. By interpolating this value over time (for example, in your scene’s [`update(_:)`](../skscene/update%28_%29.md) callback), you can animate the shape as if it were drawn in real time.
 

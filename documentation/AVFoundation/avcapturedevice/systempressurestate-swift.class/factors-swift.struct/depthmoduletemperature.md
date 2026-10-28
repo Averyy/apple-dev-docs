@@ -23,7 +23,7 @@ static var depthModuleTemperature: AVCaptureDevice.SystemPressureState.Factors {
 AVCaptureSystemPressureFactorDepthModuleTemperature
 ```
 
-#### Discussion
+## Discussion
 
 As system pressure increases, depth quality may become degraded. To reduce system pressure from this factor, reduce depth capture frame rate.
 

@@ -20,7 +20,7 @@ Determines the position and direction of a ray through the given point in the 2D
 @preconcurrency func ray(through screenPoint: CGPoint) -> (origin: SIMD3<Float>, direction: SIMD3<Float>)?
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that represents a ray in AR coordinates that goes from the camera origin through the specified point on the screen.
 

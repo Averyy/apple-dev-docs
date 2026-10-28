@@ -17,7 +17,7 @@ static var volumetric: VolumetricWindowStyle { get }
 
 Available when `Self` is `VolumetricWindowStyle`.
 
-#### Discussion
+## Discussion
 
 Use a volumetric window — or a *volume* — to display 3D content within a bounded region. For example, [Hello World](../../visionOS/world.md) uses a volume to present a `Globe` model that people can pick up and move around the Shared Space using the window bar:
 

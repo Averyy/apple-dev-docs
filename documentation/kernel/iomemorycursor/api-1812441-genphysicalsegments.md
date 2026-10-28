@@ -17,11 +17,11 @@ virtual UInt32 genPhysicalSegments(
  IOByteCount *transferSize = 0);
 ```
 
-#### Return Value
+## Return Value
 
 If the descriptor is exhausted of memory, a zero is returned, otherwise the number of segments that were filled in is returned.
 
-#### Overview
+## Overview
 
 Generates a list of physical segments from the given memory descriptor, relative to the current position of the descriptor.
 

@@ -19,7 +19,7 @@ let IKImageBrowserCellsOutlineColorKey: String
 extern NSString * const IKImageBrowserCellsOutlineColorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSColor`](../AppKit/nscolor.md) object.
 

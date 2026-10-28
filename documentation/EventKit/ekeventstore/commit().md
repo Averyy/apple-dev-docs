@@ -27,7 +27,7 @@ func commit() throws
 
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 This method allows you to save batched changes to the event store. For example, if you pass [`false`](../../Swift/false.md) as the `commit` parameter to the [`saveCalendar(_:commit:)`](./savecalendar%28_,commit%29.md), [`removeCalendar(_:commit:)`](./removecalendar%28_,commit%29.md), [`save(_:span:commit:)`](./save%28_,span,commit%29.md), or [`remove(_:span:commit:)`](./remove%28_,span,commit%29.md) methods, the changes aren’t saved until [`commit()`](./commit%28%29.md) is invoked. Likewise, if you pass [`true`](../../Swift/true.md) as the `commit` parameter to the above methods, you don’t need to call [`commit()`](./commit%28%29.md).
 

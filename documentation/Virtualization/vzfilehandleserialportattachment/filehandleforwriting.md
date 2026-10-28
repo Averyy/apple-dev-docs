@@ -19,7 +19,7 @@ var fileHandleForWriting: FileHandle? { get }
 @property (strong, readonly, nullable) NSFileHandle * fileHandleForWriting;
 ```
 
-#### Discussion
+## Discussion
 
 When you want to receive data from the guest operating system, read data from the file handle in this property.
 

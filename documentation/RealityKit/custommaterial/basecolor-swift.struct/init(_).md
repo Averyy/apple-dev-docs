@@ -19,7 +19,7 @@ Creates a custom base color object from an existing physically based material’
 init(_ value: PhysicallyBasedMaterial.BaseColor)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a [`CustomMaterial.BaseColor`](../basecolor-swift.struct.md) that contains the same tint and texture values as an existing [`PhysicallyBasedMaterial.BaseColor`](../../physicallybasedmaterial/basecolor-swift.struct.md) object.
 

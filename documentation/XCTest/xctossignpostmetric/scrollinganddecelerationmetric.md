@@ -25,7 +25,7 @@ class var scrollingAndDecelerationMetric: any XCTMetric { get }
 @property (class, readonly) id<XCTMetric> scrollingAndDecelerationMetric;
 ```
 
-#### Discussion
+## Discussion
 
 In a compatible iPad or iPhone app running in visionOS, the system doesn’t report hitch- or animation-related metrics that occur during scrolling.
 

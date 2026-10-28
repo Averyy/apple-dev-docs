@@ -21,11 +21,11 @@ optional func collectionView(_ collectionView: NSCollectionView, namesOfPromised
 - (NSArray<NSString *> *) collectionView:(NSCollectionView *) collectionView namesOfPromisedFilesDroppedAtDestination:(NSURL *) dropURL forDraggedItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings containing the filenames you created, or intend to create, at the specified URL.
 
-#### Discussion
+## Discussion
 
 At the start of a drag operation, your app must provide the data that constitutes the items being dragged. If you specify a file promise, instead of the data itself, use this method to specify the names of the files you promised. If the files already exist, move them to the directory specified by the `dropURL` parameter. If you must create the files first, use this method to specify the names of the files you intend to provide and begin creating those files asynchronously on a background thread.
 

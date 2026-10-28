@@ -18,7 +18,7 @@ case listenOnly
 kCGEventTapOptionListenOnly
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that a new event tap is a passive listener.
 

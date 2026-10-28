@@ -25,7 +25,7 @@ static let posixPermissions: FileAttributeKey
 extern NSFileAttributeKey const NSFilePosixPermissions;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object. Use the [`int16Value`](../nsnumber/int16value.md) method to retrieve the integer value for the permissions.
 

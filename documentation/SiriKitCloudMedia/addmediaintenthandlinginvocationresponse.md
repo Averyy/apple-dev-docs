@@ -19,7 +19,7 @@ The service’s response to a request to process an add media intent.
 
 **Allowed Types**: `AddMediaIntentHandlingResolveMediaItemsInvocationResponse`, `AddMediaIntentHandlingResolveMediaDestinationInvocationResponse`, `AddMediaIntentHandlingConfirmInvocationResponse`, `AddMediaIntentHandlingHandleInvocationResponse`, `ProtocolExceptionInvocationResponse`
 
-#### Discussion
+## Discussion
 
 Allowed types: [`AddMediaIntentHandlingResolveMediaItemsInvocationResponse`](./addmediaintenthandlingresolvemediaitemsinvocationresponse.md), [`AddMediaIntentHandlingResolveMediaDestinationInvocationResponse`](./addmediaintenthandlingresolvemediadestinationinvocationresponse.md), [`AddMediaIntentHandlingConfirmInvocationResponse`](./addmediaintenthandlingconfirminvocationresponse.md), [`AddMediaIntentHandlingHandleInvocationResponse`](./addmediaintenthandlinghandleinvocationresponse.md).
 

@@ -14,7 +14,7 @@
 MPLibrary_DevelopmentRevision = 1
 ```
 
-#### Discussion
+## Discussion
 
 Development revision number.
 

@@ -21,7 +21,7 @@ A base type that represents a playlist.
 extern UTType * const UTTypePlaylist;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.playlist`.
 

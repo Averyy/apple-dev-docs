@@ -25,7 +25,7 @@ var isReplayable: Bool { get }
 @property (nonatomic, assign, readonly, getter=isReplayable) BOOL replayable;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`false`](../../Swift/false.md), players can earn the achievement only once. After the player earns the achievement, Game Center ignores any further progress you report for it. If the value of this property is [`true`](../../Swift/true.md), the player earns the achievement each time you report it.
 

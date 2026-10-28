@@ -16,7 +16,7 @@ Sets the UV0 coordinate transformation for the rendered output.
 void output::setUVTransform(float2 uvOffset, float2 uvScale)
 ```
 
-#### Discussion
+## Discussion
 
 This function customizes how texture coordinates are applied to the rendered output by specifying an offset and scale. The UV transform affects texture mapping without modifying the underlying particle data.
 

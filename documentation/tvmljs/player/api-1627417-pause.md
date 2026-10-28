@@ -15,7 +15,7 @@ Pauses the currently playing media item.
 void pause();
 ```
 
-#### Discussion
+## Discussion
 
 The player UI remains onscreen while the media item is paused.
 

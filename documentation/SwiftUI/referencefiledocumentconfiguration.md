@@ -22,7 +22,7 @@ The properties of an open reference file document.
 @preconcurrency struct ReferenceFileDocumentConfiguration<Document> where Document : ReferenceFileDocument
 ```
 
-#### Overview
+## Overview
 
 You receive an instance of this structure when you create a [`DocumentGroup`](./documentgroup.md) with a reference file type. Use it to access the document in your viewer or editor.
 

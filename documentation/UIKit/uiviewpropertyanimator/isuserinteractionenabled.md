@@ -23,7 +23,7 @@ var isUserInteractionEnabled: Bool { get set }
 @property (nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), touch events are delivered to views normally. Setting this property to [`false`](../../Swift/false.md) causes touch events to be ignored in animated views for the duration of the animations. The default value of this property is [`true`](../../Swift/true.md).
 

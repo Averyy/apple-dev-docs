@@ -21,7 +21,7 @@ Type that defines time styles varied in length or components included.
 struct TimeStyle
 ```
 
-#### Overview
+## Overview
 
 The exact format depends on the locale. Possible time styles include [`omitted`](./timestyle/omitted.md), [`shortened`](./timestyle/shortened.md), [`standard`](./timestyle/standard.md), and [`complete`](./timestyle/complete.md).
 

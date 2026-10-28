@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Reduction or aggregation functions.
 
-#### Overview
+## Overview
 
 MLX has a number of functions to reduce or aggregate data in `MLXArray`. These functions typically work over one or more axes, though there are overloads where the axis can be omitted and the work occurs on the entire array.
 

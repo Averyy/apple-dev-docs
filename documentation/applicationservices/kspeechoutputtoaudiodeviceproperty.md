@@ -19,7 +19,7 @@ let kSpeechOutputToAudioDeviceProperty: CFString
 const CFStringRef kSpeechOutputToAudioDeviceProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFNumber` object that contains an [`AudioDeviceID`](../CoreAudio/audiodeviceid.md). To play the speech output to an audio device, use the [`AudioDeviceID`](../CoreAudio/audiodeviceid.md) that represents the device; to generate sound through the computer’s speakers, use `0`.
 

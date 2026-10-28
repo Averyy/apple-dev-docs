@@ -23,7 +23,7 @@ var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode { get }
 @property (readonly) AVCaptureCinematicVideoFocusMode cinematicVideoFocusMode;
 ```
 
-#### Discussion
+## Discussion
 
 Default is [`AVCaptureDevice.CinematicVideoFocusMode.none`](../avcapturedevice/cinematicvideofocusmode/none.md).
 

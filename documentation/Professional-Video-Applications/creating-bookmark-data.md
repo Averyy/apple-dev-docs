@@ -5,7 +5,7 @@
 
 Create bookmark data to access file-system resources in a sandboxed app.
 
-#### Overview
+## Overview
 
 When you export an FCPXML document as a file, you create a security-scoped bookmark relative to the containing document. When you export an FCPXML document for drag-and-drop, you create an unscoped bookmark.
 

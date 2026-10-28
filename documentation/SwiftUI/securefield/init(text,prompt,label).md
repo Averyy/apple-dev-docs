@@ -24,7 +24,7 @@ init(text: Binding<String>, prompt: Text? = nil, @ContentBuilder label: () -> La
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever someone submits this secure field — for example, by pressing the Return key.
 

@@ -21,7 +21,7 @@ struct MenuContents
 enum AVLegibleMediaOptionsMenuContents : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 ```
 		An option set, describing the different contents of legible option menus.

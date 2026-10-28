@@ -21,7 +21,7 @@ var version: SKAdTestPostbackVersion { get }
 @property (nonatomic, strong, readonly) SKAdTestPostbackVersion version;
 ```
 
-#### Discussion
+## Discussion
 
 For information about the SKAdNetwork versions, See [SKAdNetwork release notes](../../StoreKit/skadnetwork-release-notes.md).
 

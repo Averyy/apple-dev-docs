@@ -25,7 +25,7 @@ class MTRBaseClusterMessages
 @interface MTRBaseClusterMessages : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 This cluster provides an interface for passing messages to be presented by a device.
 

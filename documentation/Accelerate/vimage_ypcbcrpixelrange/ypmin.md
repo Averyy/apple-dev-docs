@@ -25,7 +25,7 @@ var YpMin: Int32
 int32_t YpMin;
 ```
 
-#### Discussion
+## Discussion
 
 All values less than this are clamped to this value.
 

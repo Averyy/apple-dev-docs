@@ -19,11 +19,11 @@ func draggingImageForItems(at indexes: IndexSet, with event: NSEvent, offset dra
 - (NSImage *) draggingImageForItemsAtIndexes:(NSIndexSet *) indexes withEvent:(NSEvent *) event offset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Return Value
+## Return Value
 
 An image containing a rendering of the visible portions of the views for each item.
 
-#### Discussion
+## Discussion
 
 You can override the default image by subclassing NSCollectionView and overriding this method, or by implementing the [`collectionView(_:draggingImageForItemsAt:with:offset:)`](../nscollectionviewdelegate/collectionview%28_,draggingimageforitemsat,with,offset%29-4yvk5.md) delegate method, it will be preferred over this method.
 

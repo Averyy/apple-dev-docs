@@ -15,7 +15,7 @@ Returns the host device object that contains this interface.
 virtual kern_return_t CopyDevice(IOUSBHostDevice **device);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

@@ -25,7 +25,7 @@ func isDateInToday(_ date: Date) -> Bool
 - (BOOL) isDateInToday:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given date is in “today,” otherwise [`false`](../../Swift/false.md).
 

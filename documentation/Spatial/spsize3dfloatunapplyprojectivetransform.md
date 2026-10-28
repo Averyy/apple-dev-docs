@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatUnapplyProjectiveTransform(SPSize3DFloat size, SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed size.
 
-#### Discussion
+## Discussion
 
 Returns a size that’s transformed by the inverse of the specified projective transform.
 

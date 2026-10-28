@@ -25,7 +25,7 @@ func enableUpdates()
 - (void) enableUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Unless you use [`enumerateResults(_:)`](./enumerateresults%28_%29.md) or [`enumerateResults(options:using:)`](./enumerateresults%28options,using%29.md), you should invoke this method after you’re done iterating over the query results.
 

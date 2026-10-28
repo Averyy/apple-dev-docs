@@ -25,7 +25,7 @@ func font(_ font: Font?) -> some AxisMark
 
 - [Customizing axes in Swift Charts](../customizing-axes-in-swift-charts.md)
 
-#### Return Value
+## Return Value
 
 An axis content that uses the given default font for text.
 

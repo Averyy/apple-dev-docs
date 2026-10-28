@@ -20,7 +20,7 @@ init?(mouseEventSource source: CGEventSource?, mouseType: CGEventType, mouseCurs
 extern CGEventRefCGEventCreateMouseEvent(CGEventSourceRef source, CGEventType mouseType, CGPoint mouseCursorPosition, CGMouseButton mouseButton);
 ```
 
-#### Return Value
+## Return Value
 
 A new mouse event, or `NULL` if the event could not be created. When you no longer need the event, you should release it using the function `CFRelease`.
 

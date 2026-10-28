@@ -5,7 +5,7 @@
 
 Send requests from your app when it’s running in the background.
 
-#### Overview
+## Overview
 
 Use background requests when your app is running in the background or about to become inactive.
 

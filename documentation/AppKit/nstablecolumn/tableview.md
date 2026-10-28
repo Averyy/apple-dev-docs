@@ -19,7 +19,7 @@ weak var tableView: NSTableView? { get set }
 @property (weak, nullable) NSTableView * tableView;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to set this property; it’s set automatically when you add a table column to a table view using the `NSTableView` class’s method [`addTableColumn(_:)`](../nstableview/addtablecolumn%28_%29.md).
 

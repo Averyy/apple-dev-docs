@@ -19,7 +19,7 @@ func rowIndexes(in rect: NSRect) -> IndexSet!
 - (NSIndexSet *) rowIndexesInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An index set containing the item indexes.
 

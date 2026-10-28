@@ -23,7 +23,7 @@ func didChange() -> Publishers.Map<NSObject.KeyValueObservingPublisher<Subject, 
 
 Available when `Subject` inherits `NSObject`.
 
-#### Return Value
+## Return Value
 
 A key-value observing publisher.
 

@@ -25,7 +25,7 @@ func CGPDFArrayGetCount(_ array: CGPDFArrayRef) -> Int
 extern size_t CGPDFArrayGetCount(CGPDFArrayRef array);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of items in the array.
 

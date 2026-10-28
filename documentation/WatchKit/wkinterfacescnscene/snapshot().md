@@ -19,11 +19,11 @@ func snapshot() -> UIImage
 - (UIImage *) snapshot;
 ```
 
-#### Return Value
+## Return Value
 
 An image object depicting the scene in its current state.
 
-#### Discussion
+## Discussion
 
 This method is thread-safe and may be called at any time.
 

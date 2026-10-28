@@ -19,7 +19,7 @@ var window: NSWindow? { get set }
 @property (strong, nullable) NSWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property loads the nib file if there is one and it has not yet been loaded. If the window was loaded, the following methods are called in order: [`windowWillLoad()`](./windowwillload%28%29.md), [`loadWindow()`](./loadwindow%28%29.md), and [`windowDidLoad()`](./windowdidload%28%29.md). If the window controller has a document, the document’s corresponding methods [`windowControllerWillLoadNib(_:)`](../nsdocument/windowcontrollerwillloadnib%28_%29.md) and [`windowControllerDidLoadNib(_:)`](../nsdocument/windowcontrollerdidloadnib%28_%29.md) are also called (if implemented). To affect nib loading or do something before or after it happens, you should always override these methods.
 

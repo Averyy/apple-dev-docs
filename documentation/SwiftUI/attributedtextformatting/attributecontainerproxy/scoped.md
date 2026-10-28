@@ -24,7 +24,7 @@ struct Scoped<Subscope> where Subscope : AttributeScope
 
 Available when `Scope` conforms to `AttributeScope`, `Attribute` conforms to `AttributedStringKey`, and `Attribute.Value` conforms to `Sendable`.
 
-#### Overview
+## Overview
 
 Exposes `Attribute` as read-write and all other attributes in the scope as read-only. The type automatically queries the underlying [`AttributedTextFormattingDefinition`](../../attributedtextformattingdefinition.md) to constrain values that are accessed.
 

@@ -15,7 +15,7 @@ Specifies the behavior for resolving [`NSTextAlignment.natural`](../nstextalignm
 NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection
 ```
 
-#### Discussion
+## Discussion
 
 When set, the resolved visual alignment is determined by the resolved base writing direction; otherwise, it is using the user’s preferred language.
 

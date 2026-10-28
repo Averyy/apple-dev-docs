@@ -21,7 +21,7 @@ var actions: [CPButton]? { get set }
 @property (nonatomic, copy, nullable) NSArray<__kindof CPButton *> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an array of [`CPButton`](../cpbutton.md) objects to this property to update the action buttons that the template displays for this contact. The template can display four buttons maximum. If the array contains more buttons, the template uses only the first four.
 

@@ -15,7 +15,7 @@ Set the maximum length of a symbolic link on a filesystem.
 void vfs_setmaxsymlen(mount_t mp, uint32_t symlen);
 ```
 
-#### Return Value
+## Return Value
 
 Max symlink length.
 

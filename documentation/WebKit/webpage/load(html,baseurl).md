@@ -20,11 +20,11 @@ Loads the contents of the specified HTML string and navigates to it.
 @MainActor final func load(html: String, baseURL: URL = Foundation.URL(string: "about:blank")!) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence you use to track the loading progress of the navigation. If the `Task` enclosing the sequence is cancelled, the page will stop loading all resources.
 
-#### Discussion
+## Discussion
 
 Use this method to navigate to a webpage that you loaded or created yourself. For example, you might use this method to load HTML content that your app generates programmatically.
 

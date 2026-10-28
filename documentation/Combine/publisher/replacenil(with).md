@@ -21,11 +21,11 @@ Replaces nil elements in the stream with the provided element.
 func replaceNil<T>(with output: T) -> Publishers.Map<Self, T> where Self.Output == T?
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that replaces `nil` elements from the upstream publisher with the provided element.
 
-#### Discussion
+## Discussion
 
 The [`replaceNil(with:)`](./replacenil%28with%29.md) operator enables replacement of `nil` values in a stream with a substitute value. In the example below, a collection publisher contains a nil value. The [`replaceNil(with:)`](./replacenil%28with%29.md) operator replaces this with `0.0`.
 

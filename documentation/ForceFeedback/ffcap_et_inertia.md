@@ -18,7 +18,7 @@ var FFCAP_ET_INERTIA: Int { get }
 FFCAP_ET_INERTIA
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a inertia force effect.
 

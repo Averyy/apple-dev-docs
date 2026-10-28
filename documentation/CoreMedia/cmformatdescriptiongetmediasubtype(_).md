@@ -25,11 +25,11 @@ func CMFormatDescriptionGetMediaSubType(_ desc: CMFormatDescription) -> FourChar
 extern FourCharCode CMFormatDescriptionGetMediaSubType(CMFormatDescriptionRef desc);
 ```
 
-#### Return Value
+## Return Value
 
 A media type that identifies the subtype of the `CMFormatDescription`.
 
-#### Discussion
+## Discussion
 
 For audio streams, the media subtype is the `asbd.mFormatID`. For video streams, the media subtype is the video codec type. For muxed streams, it’s the format of the muxed stream.
 

@@ -21,7 +21,7 @@ Specifies how much to attempt to match when using a quantifier.
 struct RegexRepetitionBehavior
 ```
 
-#### Overview
+## Overview
 
 See [`repetitionBehavior(_:)`](./regex/repetitionbehavior%28_%29.md) for more about specifying the default matching behavior for all or part of a regex.
 

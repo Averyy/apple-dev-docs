@@ -19,7 +19,7 @@ func addView(_ view: NSView, in gravity: NSStackView.Gravity)
 - (void) addView:(NSView *) view inGravity:(NSStackViewGravity) gravity;
 ```
 
-#### Discussion
+## Discussion
 
 The location of a newly added view depends on the stack view layout direction and, for a horizontal stack view, on user interface language:
 

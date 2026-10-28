@@ -24,7 +24,7 @@ class NSCollectionLayoutEdgeSpacing
 @interface NSCollectionLayoutEdgeSpacing : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use edge spacing to create additional spacing around the edges of an item to adjust the position of the item in relation to its container and other items.
 

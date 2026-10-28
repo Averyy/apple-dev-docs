@@ -19,7 +19,7 @@ Reads the accessory and returns a fresh snapshot of its settings.
 func settings(context: Self.Context, for accessory: HMAccessory) async throws -> Self.Container
 ```
 
-#### Return Value
+## Return Value
 
 The accessory’s current settings.
 

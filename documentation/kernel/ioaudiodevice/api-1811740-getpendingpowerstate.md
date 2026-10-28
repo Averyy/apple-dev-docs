@@ -11,7 +11,7 @@ Returns the pending power state if a state change is in progress. Otherwise it r
 virtual IOAudioDevicePowerState getPendingPowerState();
 ```
 
-#### Return Value
+## Return Value
 
 The pending power state
 

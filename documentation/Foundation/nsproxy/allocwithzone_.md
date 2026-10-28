@@ -21,7 +21,7 @@ Returns a new instance of the receiving class
 + (id) allocWithZone:(NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the receiving class, as described in the `NSObject` class specification under the [`allocWithZone:`](../../ObjectiveC/nsobject-swift.class/allocwithzone_.md) class method.
 

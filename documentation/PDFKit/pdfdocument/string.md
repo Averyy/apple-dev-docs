@@ -24,11 +24,11 @@ var string: String? { get }
 @property (nonatomic, readonly, nullable) NSString * string;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the textual content of the entire document.
 
-#### Discussion
+## Discussion
 
 Pages are delimited with linefeed characters.
 

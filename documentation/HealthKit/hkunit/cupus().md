@@ -24,7 +24,7 @@ class func cupUS() -> Self
 + (instancetype) cupUSUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring volume in US cups.
 

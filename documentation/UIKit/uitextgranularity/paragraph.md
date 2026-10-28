@@ -21,7 +21,7 @@ case paragraph
 UITextGranularityParagraph
 ```
 
-#### Discussion
+## Discussion
 
 The unit of text is a paragraph.
 

@@ -24,7 +24,7 @@ var superEllipticPower: vector_float2 { get set }
 @property (nonatomic, readwrite) vector_float2 superEllipticPower;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only if the inherited [`lightType`](../mdllight/lighttype.md) property’s value is [`MDLLightType.superElliptical`](../mdllighttype/superelliptical.md). A superellipse is a two-dimensional figure that can vary in shape according to two parameters. The x- and y-components of this vector control the general shape of the figure along the corresponding axes:
 

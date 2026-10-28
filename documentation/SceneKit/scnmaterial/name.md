@@ -25,7 +25,7 @@ var name: String? { get set }
 @property (nonatomic, copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a descriptive name for a material to make managing your scene graph easier. Materials loaded from a scene file may have names assigned by an artist using a 3D authoring tool. Use the [`SCNSceneSource`](../scnscenesource.md) class to examine materials in a scene file without loading its scene graph.
 

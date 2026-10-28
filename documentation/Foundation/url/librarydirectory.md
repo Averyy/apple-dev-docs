@@ -21,7 +21,7 @@ The standard directory for documentation, support, and configuration files.
 static var libraryDirectory: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this directory is within the app’s sandbox directory. In macOS, it’s within the app’s sandbox directory for sandboxed apps, or in the current user’s home directory `(~/Library)` if the app isn’t sandboxed.
 

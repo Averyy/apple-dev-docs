@@ -23,7 +23,7 @@ func playAudio(at when: AVAudioTime?) throws
 - (BOOL) playAtTime:(AVAudioTime *) when error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Start or resume playback at a specific time.
 

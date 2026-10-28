@@ -25,7 +25,7 @@ case managedAccountRestricted
 CKErrorManagedAccountRestricted
 ```
 
-#### Discussion
+## Discussion
 
 The system restricts CloudKit access for this account. This is a nonrecoverable error.
 

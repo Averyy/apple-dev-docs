@@ -15,11 +15,11 @@ Reports the change in mouse position since the last mouse movement event receive
 func CGGetLastMouseDelta() -> (x: Int32, y: Int32)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple whose `x` and `y` members represent the horizontal and vertical change in the mouse position since the last mouse movement event.
 
-#### Discussion
+## Discussion
 
 This function is not recommended for general use. Instead, you should use the mouse-tracking functions provided by the [`NSEvent`](../AppKit/nsevent.md) class.
 

@@ -25,7 +25,7 @@ var sizeFunction: ((UnsafeRawPointer) -> Int)? { get set }
 @property (nullable) unsigned long (*)(const void *) sizeFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This function is used for copy-in operations (unless the collection has an object personality).
 

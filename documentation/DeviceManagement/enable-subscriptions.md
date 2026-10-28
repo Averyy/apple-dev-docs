@@ -6,7 +6,7 @@
 
 Declare that your device management service supports subscription management.
 
-#### Discussion
+## Discussion
 
 Send a POST request to declare that your device management service supports subscription management. Until you enable subscription management for a token, content managers can’t purchase subscriptions into the organizational unit that the token represents.
 
@@ -14,7 +14,7 @@ This request takes no body. The server processes it synchronously and returns th
 
 > **Note**:  You can reverse this declaration with [`Disable Subscriptions`](./disable-subscriptions.md), but only while the organizational unit has no subscriptions. After content managers purchase subscriptions into it, disabling fails until no subscriptions remain.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

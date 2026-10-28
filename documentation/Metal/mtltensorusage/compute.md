@@ -24,7 +24,7 @@ static var compute: MTLTensorUsage { get }
 MTLTensorUsageCompute
 ```
 
-#### Discussion
+## Discussion
 
 You can use tensors with this context in [`MTL4ComputeCommandEncoder`](../mtl4computecommandencoder.md) or [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instances.
 

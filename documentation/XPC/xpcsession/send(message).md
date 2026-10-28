@@ -21,7 +21,7 @@ Sends a dictionary message over the session to the destination service.
 func send(message: XPCDictionary) throws
 ```
 
-#### Discussion
+## Discussion
 
 Sessions send messages serially in a first-in, first-out (FIFO) order. This method is safe to call from multiple dispatch queues. The session can’t indicate whether the message *delivery* is successful or not. While the session may successfully enqueue the message at the remote end of the connection, there’s no guarantee about when the destination dequeues the message and invokes the receiving session’s handler.
 

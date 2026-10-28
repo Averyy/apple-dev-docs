@@ -17,7 +17,7 @@ Attributes corresponding to this formatting style.
 @property (nonatomic, copy, readonly, nonnull) NSDictionary<NSString *,id> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 Alongside `title`, these may be used to create a preview for this formatting style.
 

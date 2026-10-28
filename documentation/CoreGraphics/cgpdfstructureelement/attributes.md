@@ -19,7 +19,7 @@ The accessibility and presentation attributes of a structure element.
 struct Attributes
 ```
 
-#### Overview
+## Overview
 
 The underlying tagged-PDF API accepts these attributes only at creation time, so they are supplied as a value when constructing a `CGPDFStructureElement` rather than mutated afterwards.
 

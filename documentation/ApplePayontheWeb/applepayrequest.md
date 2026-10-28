@@ -37,7 +37,7 @@ dictionary ApplePayRequest {
 - [Setting up the payment request API to accept Apple Pay](./setting-up-the-payment-request-api-to-accept-apple-pay.md)
 - [Apple Pay on the Web Version 6 Release Notes](./apple-pay-on-the-web-version-6-release-notes.md)
 
-#### Overview
+## Overview
 
 The dictionary contains the supported Apple Pay properties for the `data` object of the `PaymentMethodData` dictionary in the Payment Request API.
 

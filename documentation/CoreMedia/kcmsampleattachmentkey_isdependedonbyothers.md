@@ -25,7 +25,7 @@ let kCMSampleAttachmentKey_IsDependedOnByOthers: CFString
 extern CFStringRef const kCMSampleAttachmentKey_IsDependedOnByOthers;
 ```
 
-#### Discussion
+## Discussion
 
 This key has no default value. If this key is not present, dependency information for the sample is unknown. If this key is present and its value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), the frame is considered droppable.
 

@@ -15,11 +15,11 @@ Creates and returns an image provider with both one-piece and two-piece images.
 - (instancetype) initWithOnePieceImage:(UIImage *) onePieceImage twoPieceImageBackground:(UIImage *) twoPieceImageBackground twoPieceImageForeground:(UIImage *) twoPieceImageForeground;
 ```
 
-#### Return Value
+## Return Value
 
 An image provider with both the one-piece and two-piece images.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to display a two-piece image in multicolor environments. In monochrome environments, the image provider still displays the one-piece image. After creating the image provider, you can customize the tint color applied to your images by modifying the [`tintColor`](./tintcolor.md) property.
 

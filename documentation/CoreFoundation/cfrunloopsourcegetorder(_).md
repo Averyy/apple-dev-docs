@@ -25,7 +25,7 @@ func CFRunLoopSourceGetOrder(_ source: CFRunLoopSource!) -> CFIndex
 extern CFIndex CFRunLoopSourceGetOrder(CFRunLoopSourceRef source);
 ```
 
-#### Return Value
+## Return Value
 
 The ordering parameter for `source`, which the run loop uses (for version 0 sources only) to determine the order in which sources are processed when multiple sources are firing.
 

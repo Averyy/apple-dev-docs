@@ -20,11 +20,11 @@ string AdGroup.SystemStatus
 - `RUNNING`: The ad group is active and serving ads.
 - `NOT_RUNNING`: The ad group is not serving ads. Check `systemStatusReasons` for the specific cause.
 
-#### Discussion
+## Discussion
 
 This status reflects the ad group specifically, separate from the advertiser-set [`AdGroup.Status`](./status-data.typealias.md) and the system status of ads within it.
 
-##### Example
+### Example
 
 ```json
 {

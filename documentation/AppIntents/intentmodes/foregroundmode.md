@@ -21,7 +21,7 @@ A type that defines the available foreground behaviors for an app intent.
 struct ForegroundMode
 ```
 
-#### Overview
+## Overview
 
 Use this type to specify the foreground behaviors you want to apply to your app intent. Each option specifies when and how the system brings your app to the foreground to perform the app intent’s action.
 

@@ -24,11 +24,11 @@ OSStatus AuthorizationCopyRights(AuthorizationRef authorization, const Authoriza
 
 - [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 There are three main reasons to use this function. The first reason is to preauthorize rights by specifying the [`preAuthorize`](./authorizationflags/preauthorize.md), [`interactionAllowed`](./authorizationflags/interactionallowed.md), and [`extendRights`](./authorizationflags/extendrights.md) masks as authorization options. Preauthorization is most useful when a right has a zero timeout. For example, you can preauthorize in the application and if it succeeds, call the helper tool and request authorization. This eliminates calling the helper tool if the Security Server cannot later authorize the specified rights.
 

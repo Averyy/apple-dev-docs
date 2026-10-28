@@ -19,7 +19,7 @@ var transferMode: IKCameraDeviceViewTransferMode { get set }
 @property IKCameraDeviceViewTransferMode transferMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are described in [`IKCameraDeviceViewTransferMode`](../ikcameradeviceviewtransfermode.md).
 

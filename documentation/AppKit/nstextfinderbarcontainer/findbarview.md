@@ -20,7 +20,7 @@ var findBarView: NSView? { get set }
 @property (strong, nullable) NSView * findBarView;
 ```
 
-#### Discussion
+## Discussion
 
 This property is managed by `NSTextFinder` and you must not set this property.
 

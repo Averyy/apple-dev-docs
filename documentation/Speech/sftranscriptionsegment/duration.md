@@ -23,7 +23,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 The [`duration`](./duration.md) contains the number of seconds it took for the user to speak the one or more words (utterance) represented by the segment. For example, the [`SFSpeechRecognizer`](../sfspeechrecognizer.md) sets [`duration`](./duration.md) to `0.6` if the user took `0.6` seconds to say `“time”` in the transcription of `“What time is it?"`.
 

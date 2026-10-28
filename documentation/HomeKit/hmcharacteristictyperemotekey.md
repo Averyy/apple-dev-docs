@@ -24,7 +24,7 @@ let HMCharacteristicTypeRemoteKey: String
 extern NSString * const HMCharacteristicTypeRemoteKey;
 ```
 
-#### Overview
+## Overview
 
 `HMCharacteristicTypeRemoteKey` describes a mechanism to send control key presses to televisions. The handling of the key presses depend on the current active input source, or the application that is running. The corresponding value is one of the constants in the [`HMCharacteristicValueRemoteKey`](./hmcharacteristicvalueremotekey.md) enumeration.
 

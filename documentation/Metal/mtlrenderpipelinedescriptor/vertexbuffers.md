@@ -24,7 +24,7 @@ var vertexBuffers: MTLPipelineBufferDescriptorArray { get }
 @property (readonly) MTLPipelineBufferDescriptorArray * vertexBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an array of [`MTLPipelineBufferDescriptor`](../mtlpipelinebufferdescriptor.md) instances, where each element corresponds to the same index in the buffer argument table for the render pipeline’s vertex function.
 

@@ -24,11 +24,11 @@ class func supportsAssetResourceTypes(_ types: [NSNumber]) -> Bool
 + (BOOL) supportsAssetResourceTypes:(NSArray<NSNumber *> *) types;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if Photos supports the specified combination of resource types; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 When you request creation of an asset from resource data, Photos does not validate that the resources can construct a complete asset until the complete [`PHPhotoLibrary`](../phphotolibrary.md) [`performChanges(_:completionHandler:)`](../phphotolibrary/performchanges%28_,completionhandler%29.md) change block executes. (If an asset cannot be constructed from the provided resources, Photos calls the `completionHandler` you provide in that method with an error describing the failure.) To perform preflight validation before executing an asset creation request, use this method to verify that the set of resource types from which you want to create an asset are correct.
 

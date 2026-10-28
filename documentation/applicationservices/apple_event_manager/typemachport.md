@@ -13,7 +13,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 You might use this constant as part of sending an Apple event to an arbitrary Mach port. Your code for creating the descriptor might look like the following:
 

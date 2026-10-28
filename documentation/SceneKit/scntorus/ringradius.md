@@ -25,7 +25,7 @@ var ringRadius: CGFloat { get set }
 @property (nonatomic) CGFloat ringRadius;
 ```
 
-#### Discussion
+## Discussion
 
 In the definition of a torus as a surface of revolution, the ring radius is the distance from the center of a circle (defined by the [`pipeRadius`](./piperadius.md) property) to the axis of revolution (the y-axis of the torus’s local coordinate space). Rotating the circle around the axis forms a pipe that follows a ring-shaped path.
 

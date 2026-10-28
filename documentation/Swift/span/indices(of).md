@@ -21,7 +21,7 @@ Returns the indices within this span where the memory represented by other is lo
 func indices(of other: borrowing Span<Element>) -> Range<Span<Element>.Index>?
 ```
 
-#### Return Value
+## Return Value
 
 A range of indices within `self`, or `nil`.
 

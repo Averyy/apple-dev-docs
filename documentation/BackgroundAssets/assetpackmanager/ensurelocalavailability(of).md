@@ -24,7 +24,7 @@ func ensureLocalAvailability(of assetPack: AssetPack) async throws
 
 - [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
 
-#### Discussion
+## Discussion
 
 This method checks whether the asset pack is currently downloaded. If it isn’t, then the system schedules it to be downloaded and waits for the download to complete. It’s guaranteed that the requested asset pack will be available locally once this method returns without throwing. If the method throws, then the asset pack *isn’t* guaranteed to be available locally. You can optionally monitor download progress by awaiting status updates from [`statusUpdates`](./statusupdates.md) or [`statusUpdates(forAssetPackWithID:)`](./statusupdates%28forassetpackwithid%29.md) in a separate task.
 

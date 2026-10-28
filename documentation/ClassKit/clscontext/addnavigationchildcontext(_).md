@@ -23,7 +23,7 @@ func addNavigationChildContext(_ child: CLSContext)
 - (void) addNavigationChildContext:(CLSContext *) child;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add a child to the [`navigationChildContexts`](./navigationchildcontexts.md) collection of a given context. This only affects presentation. The method doesn’t alter your app’s context hierarchy because it has no effect on the context’s [`identifierPath`](./identifierpath.md).
 

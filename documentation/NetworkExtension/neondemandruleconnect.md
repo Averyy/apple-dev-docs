@@ -24,7 +24,7 @@ class NEOnDemandRuleConnect
 @interface NEOnDemandRuleConnect : NEOnDemandRule
 ```
 
-#### Overview
+## Overview
 
 When rules of this class match, the system starts the VPN connection whenever an application running on the system opens a network connection.
 

@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatShear(SPVector3DFloat vector, SPAxis shearAxis, float shearFactor0, float shearFactor1);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed vector.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s sheared over an axis by shear factors for the other two axes.
 

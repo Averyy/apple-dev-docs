@@ -5,14 +5,14 @@
 
 Determine the authorization your app needs to access location data.
 
-#### Overview
+## Overview
 
 The authorization status that your app has determines if and when it receives location events. There are two types of authorization your app can request:
 
 - **When In Use**: Your app can use all location services and receive events while the app is in use. In general, iOS apps are considered in use when they’re in the foreground or running in the background with the background location usage indicator enabled.
 - **Always**: Your app can use all location services and receive events even if the user is not aware that your app is running. If your app isn’t running, the system launches your app and delivers the event.
 
-##### Prefer When In Use Authorization
+### Prefer When In Use Authorization
 
 Whenever possible, request only When In Use authorization. This mode has powerful features, allowing your app to:
 
@@ -28,7 +28,7 @@ Location services are available to apps with [`CLAuthorizationStatus.authorizedW
 
 For watchOS, the system always considers a complication on the current watch face to be in use. However, while the complication can receive location updates, you request authorization prompts from the main watch app. On watchOS there’s no way to opt out of showing the background location usage indicator.
 
-##### Ask for Always Authorization
+### Ask for Always Authorization
 
 Your app might require Always authorization in some situations where users can’t or don’t want to engage with your app every time you need location information. You may need to ask for Always authorization if:
 
@@ -47,7 +47,7 @@ While all platforms support When In Use authorization, the availability and func
 - **Mac Catalyst**: Your UIKit code can and should request the authorization that makes sense on iOS; the same choice will work when the app runs on the Mac. When In Use and Always authorizations are functionally equivalent on the Mac.
 - **iOS**: Supports When In Use and Always authorization.
 
-##### Request Authorization for Apps Running in iOS 12 and Earlier
+### Request Authorization for Apps Running in iOS 12 and Earlier
 
 Apps compiled with iOS 13 or later SDKs but running in iOS 12 or earlier will exhibit behavior consistent with iOS 12 for When In Use authorization. Specifically, in iOS 12 or earlier, some location services are only available to apps with Always authorization, as shown in this table:
 

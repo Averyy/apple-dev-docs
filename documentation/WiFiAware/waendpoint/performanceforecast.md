@@ -17,7 +17,7 @@ The forecasted performance for connections setup to the remote device, per WAPer
 let performanceForecast: [WAPerformanceMode : WAPerformanceForecast]
 ```
 
-#### Discussion
+## Discussion
 
 This estimation makes certain worst case assumptions about the remote device when calculating performance. A more accurate performance report is available though WAPerformanceReport after a connection is setup. Returns an empty dictionary if the forecast cannot be estimated.
 

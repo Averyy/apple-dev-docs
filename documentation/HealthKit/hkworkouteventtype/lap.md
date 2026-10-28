@@ -28,7 +28,7 @@ HKWorkoutEventTypeLap
 
 - [Running workout sessions](../running-workout-sessions.md)
 
-#### Discussion
+## Discussion
 
 Lap events partition a workout into segments of equal distance (for example, laps around a track or laps in a pool). The lap’s [`dateInterval`](../hkworkoutevent/dateinterval.md) property should mark the start and end of the lap. Lap events can’t overlap.
 

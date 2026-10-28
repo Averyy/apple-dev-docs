@@ -20,11 +20,11 @@ Provides the view that contains the image.
 func contentView(for interaction: ImageAnalysisInteraction) -> UIView?
 ```
 
-#### Return Value
+## Return Value
 
 The view that contains the image for this interaction.
 
-#### Discussion
+## Discussion
 
 Implement this delegate method only when the view that contains the image isn’t the same as the interaction’s view.
 

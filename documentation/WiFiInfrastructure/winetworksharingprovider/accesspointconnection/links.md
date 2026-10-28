@@ -17,7 +17,7 @@ The set of active data links with the Access Point.
 let links: [WINetworkSharingProvider.AccessPointConnection.Link]
 ```
 
-#### Discussion
+## Discussion
 
 The primary link will be the first element in the array, if multiple elements are present.
 

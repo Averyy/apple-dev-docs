@@ -19,7 +19,7 @@ The default set of attributes to include with your app entity in the Spotlight i
 var defaultAttributeSet: CSSearchableItemAttributeSet { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an attribute set with the title, subtitle, and image values from the entity’s display representaiton. Provide any custom attributes for your entity using the [`attributeSet`](./attributeset.md) property instead of this one.
 

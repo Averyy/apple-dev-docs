@@ -22,7 +22,7 @@ Retrieves a dictionary of all joints in the observation or joint group.
 func allJoints(in groupName: Self.PoseJointsGroupName?) -> [Self.PoseJointName : Joint]
 ```
 
-#### Return Value
+## Return Value
 
 The list of joints in the observation or joint group. If no `groupName` is specified, the system returns all joints in the observation..
 

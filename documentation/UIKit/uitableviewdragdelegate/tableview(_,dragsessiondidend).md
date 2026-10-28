@@ -22,7 +22,7 @@ optional func tableView(_ tableView: UITableView, dragSessionDidEnd session: any
 - (void) tableView:(UITableView *) tableView dragSessionDidEnd:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the drag session ended, usually because the content was dropped but possibly because the drag was terminated. Use this method to close out any tasks related to the management of the drag session in your app.
 

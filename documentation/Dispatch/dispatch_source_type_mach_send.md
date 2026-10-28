@@ -21,7 +21,7 @@ A type of dispatch source for monitoring a mach send port.
 #define DISPATCH_SOURCE_TYPE_MACH_SEND
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that monitors a Mach port for dead name notifications (the send right no longer has any corresponding receive right). The handle is a Mach port with a send or send-once right (`mach_port_t`). The mask is a mask of desired events from `Dispatch Source Mach Send Event Flags`.
 

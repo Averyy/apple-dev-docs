@@ -23,7 +23,7 @@ class var beforeCADisplayLinkDispatch: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * beforeCADisplayLinkDispatch;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs before [`CADisplayLink`](../../QuartzCore/cadisplaylink.md) callbacks run.
 

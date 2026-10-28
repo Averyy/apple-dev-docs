@@ -23,7 +23,7 @@ func tileColumnIndex(fromPosition position: CGPoint) -> Int
 - (NSUInteger) tileColumnIndexFromPosition:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 The tile map node object’s tile column index for the specified position.
 

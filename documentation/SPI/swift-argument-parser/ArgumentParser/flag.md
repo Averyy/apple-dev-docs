@@ -22,7 +22,7 @@ struct Flag<Value>
 
 - [Declaring Arguments, Options, and Flags](./declaringarguments.md)
 
-#### Overview
+## Overview
 
 Use the `@Flag` wrapper to define a property of your custom type as a command-line flag. A *flag* is a dash-prefixed label that can be provided on the command line, such as `-d` and `--debug`.
 

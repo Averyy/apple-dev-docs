@@ -23,7 +23,7 @@ func setPreferredDataSource(_ dataSource: AVAudioSessionDataSourceDescription?) 
 - (BOOL) setPreferredDataSource:(AVAudioSessionDataSourceDescription *) dataSource error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to request a change to the audio session’s preferred data source. To determine whether the change has taken effect, inspect the [`selectedDataSource`](./selecteddatasource.md) property. (For details, see Configuring standard audio behaviors in the [`AVAudioSession`](../avaudiosession.md) class reference).
 

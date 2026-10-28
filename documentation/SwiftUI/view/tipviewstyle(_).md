@@ -22,11 +22,11 @@ nonisolated
 func tipViewStyle(_ style: some TipViewStyle) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified style on its child views.
 
-#### Discussion
+## Discussion
 
 For more information on styling tips, see `TipKit/TipViewStyle`.
 

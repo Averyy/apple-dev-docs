@@ -21,7 +21,7 @@ Publicly known name of the area or place of interest.
 let commonName: String?
 ```
 
-#### Discussion
+## Discussion
 
 Locations that don’t have a public name (such a private residence) should be `nil`.
 

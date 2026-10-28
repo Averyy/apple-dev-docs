@@ -24,7 +24,7 @@ init(rentalCompanyName: String, type: String?, make: String?, model: String?, re
 - (instancetype) initWithRentalCompanyName:(NSString *) rentalCompanyName type:(NSString *) type make:(NSString *) make model:(NSString *) model rentalCarDescription:(NSString *) rentalCarDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRentalCar`](../inrentalcar.md) object or `nil` if one can’t be created.
 

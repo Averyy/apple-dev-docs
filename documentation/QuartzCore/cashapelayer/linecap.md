@@ -24,7 +24,7 @@ var lineCap: CAShapeLayerLineCap { get set }
 @property (copy) CAShapeLayerLineCap lineCap;
 ```
 
-#### Discussion
+## Discussion
 
 The line cap style specifies the shape of the endpoints of an open path when stroked. The supported values are described in [Line Cap Values](../line-cap-values.md). The following figure shows the appearance of the available line cap styles.
 

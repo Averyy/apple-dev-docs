@@ -25,7 +25,7 @@ func CFStringLowercase(_ theString: CFMutableString!, _ locale: CFLocale!)
 extern void CFStringLowercase(CFMutableStringRef theString, CFLocaleRef locale);
 ```
 
-#### Discussion
+## Discussion
 
 The `locale` parameter type changed from void * to CFLocaleRef in OS X v10.3.
 

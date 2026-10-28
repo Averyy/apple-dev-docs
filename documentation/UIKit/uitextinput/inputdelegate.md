@@ -24,7 +24,7 @@ weak var inputDelegate: (any UITextInputDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UITextInputDelegate> inputDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The text input system automatically assigns a delegate to this property at runtime. It is the responsibility of the view that adopts the [`UITextInput`](../uitextinput.md) protocol to notify the input delegate at the appropriate junctures.
 

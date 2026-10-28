@@ -5,11 +5,11 @@
 
 Learn about important changes to Core ML.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Core ML](../CoreML/CoreML.md).
 
-#### June 2024
+## June 2024
 
 - Stitch machine learning models and manipulate model inputs and outputs using the [`MLTensor`](../CoreML/mltensor.md) type.
 - Add efficient reshaping and transposing to [`MLShapedArray`](../CoreML/mlshapedarray.md).

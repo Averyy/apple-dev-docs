@@ -23,7 +23,7 @@ enum Category
 enum DDDeviceCategory : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The device ([`DDDevice`](../dddevice.md)) [`category`](./category-swift.property.md) property is of this type.
 

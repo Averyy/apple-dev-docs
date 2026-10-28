@@ -20,7 +20,7 @@ The base protocol for action handlers.
 protocol ActionHandlerProtocol
 ```
 
-#### Overview
+## Overview
 
 One of two approaches can be taken when subscribing to, and responding to action events. Which approach is taken is dictated by complexity of the action, and user preference.
 

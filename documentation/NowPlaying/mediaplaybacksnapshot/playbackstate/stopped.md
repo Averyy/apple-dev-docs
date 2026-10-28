@@ -21,7 +21,7 @@ Playback is stopped.
 case stopped
 ```
 
-#### Discussion
+## Discussion
 
 Use this state when no media is loaded or when playback ends completely.
 

@@ -22,7 +22,7 @@ case delegate
 UITextDropPerformerDelegate
 ```
 
-#### Discussion
+## Discussion
 
 If this performer is used, the delegate must implement the [`textDroppableView(_:willPerformDrop:)`](../../uitextdropdelegate/textdroppableview%28_,willperformdrop%29.md) method. Otherwise, the text view handles the drop operation, which is the same behavior as specifying [`UITextDropProposal.Performer.view`](./view.md) as the performer.
 

@@ -25,7 +25,7 @@ func insetBy(dx: Double, dy: Double) -> MKMapRect
 extern MKMapRect MKMapRectInset(MKMapRect rect, double dx, double dy);
 ```
 
-#### Return Value
+## Return Value
 
 The inset rectangle. If the original rectangle was null, that rectangle is returned instead.
 

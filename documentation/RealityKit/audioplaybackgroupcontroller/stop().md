@@ -21,7 +21,7 @@ Stops playback of the audio resource and discards the location in the audio stre
 @preconcurrency func stop()
 ```
 
-#### Discussion
+## Discussion
 
 The next time you call [`play()`](./play%28%29.md), playback starts at the beginning of the stream.
 

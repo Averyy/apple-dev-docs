@@ -23,7 +23,7 @@ var isFocusPointOfInterestSupported: Bool { get }
 @property (nonatomic, readonly, getter=isFocusPointOfInterestSupported) BOOL focusPointOfInterestSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

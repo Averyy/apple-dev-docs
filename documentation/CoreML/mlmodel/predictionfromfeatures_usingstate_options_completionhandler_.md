@@ -21,7 +21,7 @@ Run a stateful prediction asynchronously.
 - (void) predictionFromFeatures:(id<MLFeatureProvider>) inputFeatures usingState:(MLState *) state options:(MLPredictionOptions *) options completionHandler:(void (^)(id<MLFeatureProvider>output, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to run predictions on a stateful model.
 

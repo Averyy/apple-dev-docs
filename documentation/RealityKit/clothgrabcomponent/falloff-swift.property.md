@@ -17,7 +17,7 @@ Controls whether the grabbing strength falls off based on distance from the volu
 var falloff: ClothGrabComponent.Falloff
 ```
 
-#### Discussion
+## Discussion
 
 This property only applies to the `.volume` mode.
 

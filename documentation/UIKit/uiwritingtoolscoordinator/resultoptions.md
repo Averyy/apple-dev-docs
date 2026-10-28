@@ -22,7 +22,7 @@ var resultOptions: UIWritingToolsResultOptions { get }
 @property (nonatomic, readonly) UIWritingToolsResultOptions resultOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the set of options that Writing Tools outputs for your view. Writing Tools takes the value in the [`preferredResultOptions`](./preferredresultoptions.md) property into consideration when determining this value.
 

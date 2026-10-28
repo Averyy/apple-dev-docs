@@ -15,7 +15,7 @@ The menu key.
 static let menu: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

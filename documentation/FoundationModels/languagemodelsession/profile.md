@@ -24,7 +24,7 @@ struct Profile
 
 - [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Overview
+## Overview
 
 A profile binds [`DynamicInstructions`](../dynamicinstructions.md) to a set of session-level configuration values. The [`DynamicInstructions`](../dynamicinstructions.md) describes the content and tools and a [`LanguageModelSession.DynamicProfile`](./dynamicprofile.md) orchestrates transitions between session configurations.
 

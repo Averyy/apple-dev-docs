@@ -19,7 +19,7 @@ var isHidden: Bool { get set }
 @property (getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). As an optimization, the collection view might not create the corresponding view when the value of this property is [`true`](../../Swift/true.md). Because there might not be a view, hidden elements do not participate in hit testing for the collection view.
 

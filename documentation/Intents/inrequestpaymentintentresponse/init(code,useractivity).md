@@ -23,11 +23,11 @@ init(code: INRequestPaymentIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INRequestPaymentIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the details of the payment request into an [`INPaymentRecord`](../inpaymentrecord.md) object and assign that object to the [`paymentRecord`](./paymentrecord.md) property. The payment record contains the details for Siri to display to the user.
 

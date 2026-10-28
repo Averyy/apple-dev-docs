@@ -5,7 +5,7 @@
 
 Assign resources to fragment shaders, including buffers, textures, acceleration structures, sampler states, and function tables.
 
-#### Overview
+## Overview
 
 Fragment shaders share argument tables for each resource type, such as buffers, textures, and sampler states. Each shader type has its own argument tables, separate from fragment shaders and other shader types.
 

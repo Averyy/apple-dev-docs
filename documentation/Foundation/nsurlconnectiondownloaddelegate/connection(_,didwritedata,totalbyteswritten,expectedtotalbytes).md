@@ -25,7 +25,7 @@ optional func connection(_ connection: NSURLConnection, didWriteData bytesWritte
 - (void) connection:(NSURLConnection *) connection didWriteData:(long long) bytesWritten totalBytesWritten:(long long) totalBytesWritten expectedTotalBytes:(long long) expectedTotalBytes;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked repeatedly during the download of a URL asset to the destination file. The delegate typically uses the values of the three “bytes” parameters to update a progress indicator in the application’s user interface.
 

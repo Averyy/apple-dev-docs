@@ -23,7 +23,7 @@ protocol FxAnalysisAPI
 
 - [Analyzing media](../Professional-Video-Applications/analyzing-media.md)
 
-#### Overview
+## Overview
 
 Host applications implement this protocol to provide frame analysis information to plug-ins that support the FxAnalyzer protocol.
 

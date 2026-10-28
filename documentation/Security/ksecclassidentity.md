@@ -29,7 +29,7 @@ extern CFStringRef const kSecClassIdentity;
 
 - [Storing an Identity in the Keychain](./storing-an-identity-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 An identity is a certificate paired with its associated private key. Keychain services stores the certificate and the private key separately; it represents the pair as an identity if the certificate’s [`kSecAttrPublicKeyHash`](./ksecattrpublickeyhash.md) attribute matches the key’s [`kSecAttrApplicationLabel`](./ksecattrapplicationlabel.md) attribute.
 

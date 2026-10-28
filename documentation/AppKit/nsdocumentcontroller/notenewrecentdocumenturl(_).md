@@ -19,7 +19,7 @@ func noteNewRecentDocumentURL(_ url: URL)
 - (void) noteNewRecentDocumentURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 `NSDocument` automatically calls this method when appropriate for `NSDocument`-based applications. Applications not based on `NSDocument` must also implement the [`application(_:openFile:)`](../nsapplicationdelegate/application%28_,openfile%29.md) method in the application delegate to handle requests from the Open Recent menu command. You can override this method in an `NSDocument`-based application to prevent certain kinds of documents from getting into the list (but you have to identify them by URL).
 

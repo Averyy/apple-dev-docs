@@ -19,7 +19,7 @@ var autosaveName: NSTableView.AutosaveName? { get set }
 @property (copy, nullable) NSTableViewAutosaveName autosaveName;
 ```
 
-#### Discussion
+## Discussion
 
 The table information is saved separately in user defaults for each user and for each application that user uses. If no name has been set, the value of this property is `nil`. Even when a table view has an autosave name, it only saves the table information when the [`autosaveTableColumns`](./autosavetablecolumns.md) property is [`true`](../../Swift/true.md).
 

@@ -28,7 +28,7 @@ var scene: SKScene? { get }
 
 - [Choosing a SpriteKit Scene Renderer](../choosing-a-spritekit-scene-renderer.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

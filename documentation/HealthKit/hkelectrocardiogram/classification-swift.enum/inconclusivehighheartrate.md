@@ -24,7 +24,7 @@ case inconclusiveHighHeartRate
 HKElectrocardiogramClassificationInconclusiveHighHeartRate
 ```
 
-#### Discussion
+## Discussion
 
 The [`HKAppleECGAlgorithmVersion.version1`](../../hkappleecgalgorithmversion/version1.md) algorithm can categorize heart rates below 120 BPM. [`HKAppleECGAlgorithmVersion.version2`](../../hkappleecgalgorithmversion/version2.md) can categorize heart rates up to 150 BPM.
 

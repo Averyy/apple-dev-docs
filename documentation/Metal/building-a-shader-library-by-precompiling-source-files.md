@@ -5,7 +5,7 @@
 
 Create a shader library that you can add to an Xcode project with the Metal compiler tools in a command-line environment.
 
-#### Overview
+## Overview
 
 Manually compile your Metal Shading Language (MSL) source files into a Metal shader library outside of an Xcode project with the Metal command-line tools. The `metal` compiler tool converts each shader source file into an intermediate representation file. The `metal` and `metal-ar` tools then compile intermediate representation files into a library and a binary archive, respectively.
 
@@ -13,7 +13,7 @@ Manually compile your Metal Shading Language (MSL) source files into a Metal sha
 
 You can create a library from one or more intermediate representation files, one or more archive files, or a combination of both.
 
-##### Compile a shader source file into a library
+### Compile a shader source file into a library
 
 The simplest way to compile and build a single MSL source file into a library file is with two commands. The first command invokes the `metal` compiler tool, which compiles the source file into an intermediate representation file.
 
@@ -45,7 +45,7 @@ The command produces a Metal library that your app can load at runtime. One way 
 
 > **Note**:  The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
 
-##### Retrieve and load a library
+### Retrieve and load a library
 
 At runtime, you can access a library by creating an [`MTLLibrary`](./mtllibrary.md) instance with the [`makeLibrary(URL:)`](./mtldevice/makelibrary%28url%29.md) method.
 

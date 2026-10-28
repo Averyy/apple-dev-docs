@@ -15,7 +15,7 @@ Initializes a custom property.
 virtual bool init(IOUserVideoDriver *in_video_driver, IOUserVideoObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserVideoCustomPropertyDataType in_qualifier_data_type, IOUserVideoCustomPropertyDataType in_data_type);
 ```
 
-#### Return Value
+## Return Value
 
 True on success.
 

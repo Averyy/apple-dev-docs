@@ -21,7 +21,7 @@ func less(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevi
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Less than on two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -36,7 +36,7 @@ if (a .< b).all().item() {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](./logical.md)
 

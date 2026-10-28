@@ -15,11 +15,11 @@ Updates an ad in an ad group.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to update or replace an [`Ad`](./ad.md). Use your `adId` in the resource path. The follow-up step is to create an [`Ad`](./ad.md) using your `creativeId`. See [`Create an Ad`](./create-an-ad.md). You can assign one active custom product page to an ad group. For information about how to edit a subset of object properties without having to include all object properties in the payload, see the Use Partial Updates section in [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Update an ad
+### Payload example: Update an ad
 
 **Request**:
 

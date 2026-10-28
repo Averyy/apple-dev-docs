@@ -15,11 +15,11 @@ Performs a synchronous request on a bulk or interrupt endpoint.
 virtual kern_return_t IO(IOMemoryDescriptor *dataBuffer, uint32_t dataBufferLength, uint32_t *bytesTransferred, uint32_t completionTimeoutMs);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method acquires the service’s workloop lock and performs an appropriate USB I/O request on the device. The method waits for the request to complete, and may call [`commandSleep`](../../kernel/iocommandgate/api-1573818-commandsleep.md) during that time.
 

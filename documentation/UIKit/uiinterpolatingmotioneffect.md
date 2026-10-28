@@ -24,7 +24,7 @@ class UIInterpolatingMotionEffect
 @interface UIInterpolatingMotionEffect : UIMotionEffect
 ```
 
-#### Overview
+## Overview
 
 You use this class to determine the amount of tilt along a single axis to apply to a view. After creating an instance of this class, you must assign appropriate values to the [`minimumRelativeValue`](./uiinterpolatingmotioneffect/minimumrelativevalue.md) and [`maximumRelativeValue`](./uiinterpolatingmotioneffect/maximumrelativevalue.md) properties. As the user moves the device, the motion effect object translates the fixed offset values returned by the system (which are in the range `-1` to `1`) to the range of values you specified. UIKit then applies the translated values to any target views.
 

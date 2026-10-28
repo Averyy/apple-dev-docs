@@ -25,7 +25,7 @@ let kSecAttrCertificateEncoding: CFString
 extern CFStringRef const kSecAttrCertificateEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and denotes the certificate encoding (see the `CSSM_CERT_ENCODING` enumeration in cssmtype.h). Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 

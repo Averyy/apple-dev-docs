@@ -15,7 +15,7 @@ Gets the audio class identifier of the base class object.
 virtual IOUserAudioClassID GetBaseClassID();
 ```
 
-#### Return Value
+## Return Value
 
 The audio class identifier of the base class object.
 

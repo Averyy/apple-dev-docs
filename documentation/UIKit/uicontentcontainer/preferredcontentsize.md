@@ -24,7 +24,7 @@ var preferredContentSize: CGSize { get }
 @property (nonatomic, readonly) CGSize preferredContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIViewController`](../uiviewcontroller.md) class implements a writable version of this property.
 

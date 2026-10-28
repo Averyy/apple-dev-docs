@@ -16,7 +16,7 @@ The authentication counter of the security domain.
 var securityDomainCounter: Int { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property fetches the latest counter from the remote hardware.
 

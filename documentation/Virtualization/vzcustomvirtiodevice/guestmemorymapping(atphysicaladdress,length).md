@@ -19,7 +19,7 @@ func guestMemoryMapping(atPhysicalAddress physicalAddress: UInt64, length: Int) 
 - (VZGuestMemoryMapping *) guestMemoryMappingAtPhysicalAddress:(uint64_t) physicalAddress length:(size_t) length;
 ```
 
-#### Return Value
+## Return Value
 
 A [`VZGuestMemoryMapping`](../vzguestmemorymapping.md) object that contains the guest memory in the host address space, or `nil` if `physicalAddress` and `length` do not reference a valid guest RAM region.
 

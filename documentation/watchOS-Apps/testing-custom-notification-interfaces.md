@@ -5,7 +5,7 @@
 
 Test your notification interfaces on watchOS using a notification scheme and payload file.
 
-#### Overview
+## Overview
 
 When you’re ready to test your dynamic interface in the simulator, create a custom build scheme for running your notification interface. To configure the scheme, specify the JSON data file containing the test data you want delivered to your interface.
 
@@ -13,7 +13,7 @@ When you create a new WatchKit App project or add a WatchKit App template to an 
 
 If Xcode added the notification scenes for you, just modify the `PushNotificationPayload.apns` file so that it contains test data appropriate for your app. If you added the notification scenes yourself, you need to set up the scheme and payload file as well.
 
-##### Add a scheme
+### Add a scheme
 
 As you add notifications to your app, you also need to add a scheme to test the notifications. To test multiple notification categories, add a scheme for each category.
 
@@ -31,7 +31,7 @@ In the Edit Scheme sheet, set the Watch Interface to Dynamic Notification. Also 
 
 ![A screenshot showing the Edit Scheme sheet, with the notification interface and test data selected.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/testing-custom-notification-interfaces-3@2x.png)
 
-##### Create a payload file
+### Create a payload file
 
 To test notification interfaces, you can specify a payload file that contains the test data for your notification. Payload files are text files with an `.apns` extension. They contain the JSON payload data for your notification. For example, a simple payload file includes the following.
 
@@ -65,7 +65,7 @@ To add a new payload file:
 
 The template creates a new file with the default JSON payload data. To use this file, select it in the Scheme editor when configuring the build scheme for a notification interface. You can include multiple payload files in your project and either change the build scheme or create multiple build schemes to simplify your testing.
 
-##### Edit the JSON payload
+### Edit the JSON payload
 
 The system packages most of the JSON data into a dictionary and delivers it to your app at runtime. You can modify the contents of the payload file to match the actual content of typical notifications sent to your app. At a minimum, change the value of the `category` key to match the name of your notification category. For more information on creating a notification payload, see [Generating a remote notification](../UserNotifications/generating-a-remote-notification.md).
 
@@ -79,7 +79,7 @@ Each dictionary can contain the following keys:
 - **`destructive`**: (Optional) The value `1` or `0`, where `1` causes the resulting button to be rendered in a way that indicates it performs a destructive action. The value `0` causes the button to be rendered normally.
 - **`background`**: (Optional) The value `1` or `0`, where `1` causes the button to launch the app in the background.
 
-##### Send test notifications to the watch
+### Send test notifications to the watch
 
 Because the system automatically determines whether to deliver notifications to Apple Watch, when testing on the device, you may need to set the devices’ states to make sure the system routes the notification to Apple Watch as expected. To test your notification interfaces while the device isn’t on your wrist:
 

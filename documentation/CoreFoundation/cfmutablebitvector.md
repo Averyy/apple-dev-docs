@@ -23,7 +23,7 @@ class CFMutableBitVector
 typedef struct __CFBitVector * CFMutableBitVectorRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableBitVector objects manage dynamic bit vectors. The basic interface for managing bit vectors is provided by [`CFBitVector`](./cfbitvector.md). CFMutableBitVector adds functions to modify the contents of a bit vector.
 

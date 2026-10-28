@@ -23,11 +23,11 @@ func initialize<S>(from source: S) -> (unwritten: S.Iterator, index: Slice<Base>
 
 Available when `Base` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 An iterator to any elements of `source` that didn’t fit in the buffer, and an index to the next uninitialized element in the buffer.
 
-#### Discussion
+## Discussion
 
 Prior to calling the `initialize(from:)` method on a buffer slice, the memory it references must be uninitialized, or the `Element` type must be a trivial type. After the call, the memory referenced by the buffer slice up to, but not including, the returned index is initialized. The buffer slice must contain sufficient memory to accommodate `source.underestimatedCount`.
 

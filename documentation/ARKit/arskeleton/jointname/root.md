@@ -20,7 +20,7 @@ static let root: ARSkeleton.JointName
 extern ARSkeletonJointName const ARSkeletonJointNameRoot;
 ```
 
-#### Discussion
+## Discussion
 
 The root skeletal joint is at the hip, and is located at the origin of its associated body anchor.
 

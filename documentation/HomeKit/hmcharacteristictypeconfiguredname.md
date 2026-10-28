@@ -24,7 +24,7 @@ let HMCharacteristicTypeConfiguredName: String
 extern NSString * const HMCharacteristicTypeConfiguredName;
 ```
 
-#### Overview
+## Overview
 
 The `HMCharacteristicTypeConfiguredName` must not be defined as an empty string unless you define a nonempty `HMCharacteristicTypeName`. The initial value will be the current or default name that is set on the television. `HMCharacteristicTypeConfiguredName` is an editable text from either the accessory or the controller. When it’s an empty string, use [`HMCharacteristicTypeName`](./hmcharacteristictypename.md) as the name for this input source.
 

@@ -15,7 +15,7 @@ A regressor that estimates the target by learning rules to split the data.
 case decisionTree(MLDecisionTreeRegressor)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLRegressor`](../mlregressor.md) using one of its enumeration cases. Use the regressor’s initializer instead.
 

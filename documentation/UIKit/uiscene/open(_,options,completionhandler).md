@@ -27,7 +27,7 @@ func open(_ url: URL, options: UIScene.OpenExternalURLOptions?) async -> Bool
 - (void) openURL:(NSURL *) url options:(UISceneOpenExternalURLOptions *) options completionHandler:(void (^)(BOOL success)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to open the specified resource. If the specified URL scheme is handled by another app, iOS launches that app and passes the URL to it. Launching the app brings the other app to the foreground.
 

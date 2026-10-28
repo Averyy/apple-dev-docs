@@ -5,11 +5,11 @@
 
 Improve peoples’ experience of your app by downloading only immediately needed language assets.
 
-#### Overview
+## Overview
 
 In macOS 27, iOS 27, tvOS 27, and visionOS 27, asset packs support a `language` designation. Compared to asset packs that support many languages, localized asset packs download faster, and take up less storage on the device. Use language-specific asset packs to deliver a better experience in your app.
 
-##### Create localized asset packs
+### Create localized asset packs
 
 As described in [Creating managed asset packs](./creating-managed-asset-packs.md), use the Terminal command `xcrun ba-package template` to create an asset pack template as a JSON file. Beginning in Xcode 27, the JSON entries in the generated file contains a key named `language`.
 
@@ -24,7 +24,7 @@ For the `language` key’s value, provide a language identifier string as an ISO
 
 Don’t use variant subtags or any extensions to the BCP-47 standard; Background Assets only supports language, region, and script.
 
-##### Download localized asset packs
+### Download localized asset packs
 
 Host your localized asset packs on App Store Connect to make them available to your app. You can inspect available localized asset packs in Swift by acessing the [`manifest`](./assetpackmanager/manifest.md) property of [`AssetPackManager`](./assetpackmanager.md). The [`AssetPackManifest`](./assetpackmanifest.md) property [`localizedAssetPacks`](./assetpackmanifest/localizedassetpacks.md) provides a set of asset packs that best matches the language preferences in Settings or System Settings. In Objective-C, use the [`BAAssetPackManager`](./baassetpackmanager.md) method [`getManifestWithCompletionHandler:`](./baassetpackmanager/getmanifestwithcompletionhandler_.md) and the [`BAAssetPackManifest`](./baassetpackmanifest.md) property [`localizedAssetPacks`](./baassetpackmanifest/localizedassetpacks.md) to get the set of localized asset packs.
 
@@ -34,7 +34,7 @@ When you know the language for which you want to download an asset pack, get the
 
 The API is similar in Objective-C: you can get the [`resolvedLanguage`](./baassetpackmanager/resolvedlanguage.md) from the [`BAAssetPackManager`](./baassetpackmanager.md), then call [`ensureLocalAvailabilityOfAssetPack:completionHandler:`](./baassetpackmanager/ensurelocalavailabilityofassetpack_completionhandler_.md).
 
-##### Specify one or more languages
+### Specify one or more languages
 
 If your app provides its own language-selection interface, you can override the default behavior and fetch assets for languages that don’t necessarily match the current system selection. The [`resolvedLanguage`](./assetpackmanager/resolvedlanguage.md) property of [`AssetPackManager`](./assetpackmanager.md) is read/write: you can set the value to indicate you want to use a different language. If you want to revert to system defaults later, set this property to `nil`.
 
@@ -48,7 +48,7 @@ If any of the downloads fail, this method throws [`AssetPackManager.LocalAvailab
 
 In Objective-C, the equivalent method is [`ensureLocalAvailabilityOfAssetPacks:requireLatestVersions:completionHandler:`](./baassetpackmanager/ensurelocalavailabilityofassetpacks_requirelatestversions_completionhandler_.md), which provides an [`NSError`](../Foundation/nserror.md) to the completion handler if downloading fails.
 
-##### Retrieve content from localized asset packs
+### Retrieve content from localized asset packs
 
 [`AssetPackManager`](./assetpackmanager.md) provides methods to fetch the contents of an asset by passing in a [`FilePath`](../System/filepath.md)  within the asset pack, returning either [`Data`](../Foundation/data.md), a [`FileDescriptor`](../System/filedescriptor.md), or a [`URL`](../Foundation/url.md). When supporting multiple languages with multiple localized asset packs, you may need to specify the language. For example, in the game scenario described above, several asset packs might have an entry at `videos/openingmovie.m4v`, and searching by just the file path is ambiguous. To handle the ambiguity, call the variants of the content-access methods that contain an “as localized for” parameter, as summarized in the following table:
 

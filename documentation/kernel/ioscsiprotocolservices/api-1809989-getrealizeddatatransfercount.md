@@ -12,11 +12,11 @@ UInt64 GetRealizedDataTransferCount (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 The realized data transfer count.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the realized data transfer count associated with the specified request.
 

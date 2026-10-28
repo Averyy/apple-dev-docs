@@ -16,7 +16,7 @@ The change anchor expired and is no longer valid.
 case changeAnchorExpired
 ```
 
-#### Discussion
+## Discussion
 
 When this error occurs, the system discards locally cached data and restarts a content enumeration.
 

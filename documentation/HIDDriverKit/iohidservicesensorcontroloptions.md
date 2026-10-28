@@ -14,7 +14,7 @@
 typedef enum { ... } IOHIDServiceSensorControlOptions;
 ```
 
-#### Overview
+## Overview
 
 List of control options  for sensor controls in HID event system
 

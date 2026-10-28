@@ -25,7 +25,7 @@ class func https(host: String, path: String) -> Self
 + (instancetype) callbackWithHTTPSHost:(NSString *) host path:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a session that requires a callback with an `https://` URL:
 

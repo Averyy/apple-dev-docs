@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, shouldChangeIte
 - (NSSet<NSIndexPath *> *) collectionView:(NSCollectionView *) collectionView shouldChangeItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths toHighlightState:(NSCollectionViewItemHighlightState) highlightState;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the items that you want to receive the specified highlight. If you do not want any items to receive the specified highlight state, return an empty set.
 
-#### Discussion
+## Discussion
 
 Use this method to approve or modify the set of items targeted to receive the specified highlight state. During interactive selection or dragging, the collection view calls this method when actions occur that would affect the highlight state of items. Your implementation of the method can return the proposed set of index paths as-is or modify the set and disallow the highlighting of some or all of the items. Removing items from the set suppresses the corresponding actions, such as selecting the item or showing its eligibility as a drop target.
 

@@ -24,7 +24,7 @@ init(numberOfBands: Int)
 - (instancetype) initWithNumberOfBands:(NSUInteger) numberOfBands;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioUnitEQ` instance.
 

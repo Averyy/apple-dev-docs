@@ -16,11 +16,11 @@ Returns the name of the queue as a C string.
 const char * GetName(void);
 ```
 
-#### Return Value
+## Return Value
 
 A C-string pointer to the queue's internal storage.
 
-#### Discussion
+## Discussion
 
 Returns a pointer to the queue's name. This string is valid only while the queue is retained.
 

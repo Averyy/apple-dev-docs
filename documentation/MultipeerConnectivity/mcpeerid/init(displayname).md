@@ -26,11 +26,11 @@ init(displayName myDisplayName: String)
 - (instancetype) initWithDisplayName:(NSString *) myDisplayName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized peer ID object.
 
-#### Discussion
+## Discussion
 
 Call this method *only* when creating the local peer, not when you create objects that represent other devices.
 

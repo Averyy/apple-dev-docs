@@ -23,7 +23,7 @@ case failureAppConfigurationRequired
 INStartCallIntentResponseCodeFailureAppConfigurationRequired
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when your app isn’t configured to handle the start call request. For example, return this code if the user hasn’t yet set up a calling account. Don’t use it for general errors or to force the user to launch your app.
 

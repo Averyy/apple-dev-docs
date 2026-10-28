@@ -20,7 +20,7 @@ typealias CGWheelCount = UInt32
 typedef uint32_t CGWheelCount;
 ```
 
-#### Discussion
+## Discussion
 
 See the function [`CGPostScrollWheelEvent`](./cgpostscrollwheelevent.md).
 

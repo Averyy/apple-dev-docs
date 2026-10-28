@@ -19,7 +19,7 @@ class let didChangeItemNotification: NSNotification.Name
 extern NSNotificationName NSMenuDidChangeItemNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Changes include enabling/disabling, changes in state, and changes to title. The notification object is the instance of `NSMenu` with the menu item that changed. The `userInfo` dictionary contains the following information.
 

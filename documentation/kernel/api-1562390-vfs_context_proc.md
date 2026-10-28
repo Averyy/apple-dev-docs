@@ -15,7 +15,7 @@ Get the BSD process structure associated with a vfs_context_t.
 proc_t vfs_context_proc(vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 Process if available, NULL otherwise.
 

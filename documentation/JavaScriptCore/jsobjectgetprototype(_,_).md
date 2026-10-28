@@ -24,7 +24,7 @@ func JSObjectGetPrototype(_ ctx: JSContextRef!, _ object: JSObjectRef!) -> JSVal
 JSValueRefJSObjectGetPrototype(JSContextRef ctx, JSObjectRef object);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValueRef`](./jsvalueref.md) that is the object’s prototype.
 

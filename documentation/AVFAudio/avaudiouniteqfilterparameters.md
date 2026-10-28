@@ -25,7 +25,7 @@ class AVAudioUnitEQFilterParameters
 @interface AVAudioUnitEQFilterParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  Don’t create an instance of the `AVAudioUnitEQFilterParameters` class directly. Use the array that returns from the [`bands`](./avaudiouniteq/bands.md) property of [`AVAudioUnitEQ`](./avaudiouniteq.md).
 

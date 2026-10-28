@@ -22,7 +22,7 @@ The renewal price of the auto-renewable subscription that renews at the next bil
 var renewalPrice: Decimal? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the renewal price of the auto-renewable subscription, in units of the [`currency`](./currency.md).
 

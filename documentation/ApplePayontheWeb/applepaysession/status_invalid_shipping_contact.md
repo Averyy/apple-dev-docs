@@ -15,7 +15,7 @@ The shipping contact information is invalid.
 const unsigned short STATUS_INVALID_SHIPPING_CONTACT;
 ```
 
-#### Discussion
+## Discussion
 
 Use this status code only for Apple Pay API version 1 or 2 style calls. For version 3, use an [`ApplePayError`](../applepayerror.md) with a status of [`STATUS_FAILURE`](./status_failure.md)  and error code instead.
 

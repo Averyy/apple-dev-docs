@@ -19,7 +19,7 @@ var isStopOnLockEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isStopOnLockEnabled) BOOL stopOnLockEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Stop background sounds when iPhone is locked
 

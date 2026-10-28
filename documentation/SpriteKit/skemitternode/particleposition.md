@@ -25,7 +25,7 @@ var particlePosition: CGPoint { get set }
 @property (nonatomic) CGPoint particlePosition;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `(0.0,0.0)`.
 

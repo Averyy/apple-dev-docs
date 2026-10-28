@@ -25,7 +25,7 @@ var commandQueue: any MTLCommandQueue { get }
 @property (readonly) id<MTLCommandQueue> commandQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Each command buffer can only submit its commands to the queue that creates it.
 

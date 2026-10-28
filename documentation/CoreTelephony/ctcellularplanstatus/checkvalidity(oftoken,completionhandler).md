@@ -25,7 +25,7 @@ class func checkValidity(ofToken token: String) async throws -> Bool
 + (void) checkValidityOfToken:(NSString *) token completionHandler:(void (^)(BOOL isValid, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The `isValid` parameter in the completion handler is `true` when the ICCID associated with the token is present and turned on.
 

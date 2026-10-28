@@ -24,7 +24,7 @@ var operatingSystemVersion: OperatingSystemVersion { get }
 @property (assign, readonly) NSOperatingSystemVersion operatingSystemVersion;
 ```
 
-#### Discussion
+## Discussion
 
 For samples saved on watchOS 4.0, HealthKit sets the operating system property to `{4, 0, 0}`.
 

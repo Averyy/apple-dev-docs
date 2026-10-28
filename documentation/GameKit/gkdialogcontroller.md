@@ -19,7 +19,7 @@ class GKDialogController
 @interface GKDialogController : NSResponder
 ```
 
-#### Overview
+## Overview
 
 For macOS games, use a `GKDialogController` object to present the dashboard from which players can browse and manage their Game Center data.
 

@@ -24,7 +24,7 @@ var compactInlineLayoutAppearance: UITabBarItemAppearance { get set }
 @property (nonatomic, copy, readwrite) UITabBarItemAppearance * compactInlineLayoutAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 If you didn’t provide a set of explicit attributes at initialization time, UIKit provides an object with default attributes.
 

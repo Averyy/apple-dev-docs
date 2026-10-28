@@ -24,11 +24,11 @@ func MusicSequenceGetIndTrack(_ inSequence: MusicSequence, _ inTrackIndex: UInt3
 extern OSStatus MusicSequenceGetIndTrack(MusicSequence inSequence, UInt32 inTrackIndex, MusicTrack*outTrack);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function is for accessing only music tracks, not the tempo track.
 

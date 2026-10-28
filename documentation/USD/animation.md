@@ -5,11 +5,11 @@
 
 A prim that contains a transform animation.
 
-#### Overview
+## Overview
 
 Assign this property a prim that contains a transform animation.
 
-##### Declaration
+### Declaration
 
 ```other
 rel xformTarget

@@ -25,7 +25,7 @@ var artworkData: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * artworkData;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this image in the usage pane of the Settings app.
 

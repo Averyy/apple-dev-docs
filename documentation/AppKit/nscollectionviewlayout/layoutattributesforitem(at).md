@@ -19,11 +19,11 @@ func layoutAttributesForItem(at indexPath: IndexPath) -> NSCollectionViewLayoutA
 - (NSCollectionViewLayoutAttributes *) layoutAttributesForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object containing the layout information to apply to the item.
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method. In your implementation, create an instance of the appropriate layout attributes class and fill the resulting object with the layout information for the specified item. The default implementation of this method does nothing and returns `nil`.
 

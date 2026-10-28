@@ -21,7 +21,7 @@ Allocates and initializes a tensor with existing size and stride populated by `C
 mutating func allocate<T>(initializingFrom source: some AccelerateBuffer) where T : BNNSScalar
 ```
 
-#### Discussion
+## Discussion
 
 This function copies the data in `source` to the tensor and sets the tensor’s `data_type` property to that of the source collection’s elements.
 

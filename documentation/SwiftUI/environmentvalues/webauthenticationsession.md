@@ -20,7 +20,7 @@ A value provided in the SwiftUI environment that views can use to authenticate a
 var webAuthenticationSession: WebAuthenticationSession { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can start a web authentication session when the user taps a button:
 

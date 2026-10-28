@@ -15,7 +15,7 @@ The value for properties that apply to the main element or to the entire scope.
 constexpr const IOUserVideoObjectPropertyElement IOUserVideoObjectPropertyElementMain;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used with [`IOUserVideoObjectPropertyElement`](./iouservideoobjectpropertyelement.md).
 

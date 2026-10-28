@@ -15,11 +15,11 @@ CMError CMIterateCMMInfo (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMIterateCMMInfo` function returns information for all CMMs installed on the system. The caller can pass nil for the `CMMIterateUPP` param to simply get a count of CMMs. If a `CMMIterateUPP` proc is provided, it is called once for each CMM installed - with the `CMMInfo` structure filled accordingly. The caller can pass a data reference to `CMIterateCMMInfo` which will then be passed to the `CMMIterateUPP`. This might be used to allow some of the information in the `CMMInfo` data structure to be put into a menu, for example, by passing a menu reference as the refcon. Either the proc or the count parameter must be provided. The caller will get a `paramErr` if both are nil.
 

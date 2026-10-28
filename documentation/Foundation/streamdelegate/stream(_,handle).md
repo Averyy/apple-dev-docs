@@ -29,7 +29,7 @@ optional func stream(_ aStream: Stream, handle eventCode: Stream.Event)
 
 - [Uploading streams of data](../uploading-streams-of-data.md)
 
-#### Discussion
+## Discussion
 
 The delegate receives this message only if `theStream` is scheduled on a run loop. The message is sent on the stream object’s thread. The delegate should examine `streamEvent` to determine the appropriate action it should take.
 

@@ -15,7 +15,7 @@ When this value for the clock algorithm is specified, the Host applies a simple 
 SimpleIIR
 ```
 
-#### Discussion
+## Discussion
 
 This is the default algorithm used for devices that don’t implement `DevicePropertyClockAlgorithm`.
 

@@ -25,7 +25,7 @@ static var prettyPrinted: JSONSerialization.WritingOptions { get }
 NSJSONWritingPrettyPrinted
 ```
 
-#### Discussion
+## Discussion
 
 If this option isn’t set, the serialization generates the most compact possible JSON representation.
 

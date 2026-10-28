@@ -16,7 +16,7 @@ Payment pass activation states.
 enum ApplePayPaymentPassActivationState
 ```
 
-#### Overview
+## Overview
 
 Use one of the following values for the activation state:
 

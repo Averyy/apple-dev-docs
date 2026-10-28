@@ -20,7 +20,7 @@ A component that defines a virtual camera and its controls.
 struct PerspectiveCameraComponent
 ```
 
-#### Overview
+## Overview
 
 Each scene requires a camera that defines the viewpoint from which RealityKit renders the scene. In RealityKit, the default camera is a *perspective camera*, which simulates the way real cameras and human vision work. Entities that are farther away from the camera render smaller.
 

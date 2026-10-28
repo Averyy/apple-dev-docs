@@ -19,7 +19,7 @@ object DropCapStyle
 
 - [Defining and Applying Text Styles](../AppleNews/defining-and-applying-text-styles.md)
 
-#### Discussion
+## Discussion
 
 Use a `DropCapStyle` object to define a drop cap that a [`ComponentTextStyle`](./componenttextstyle.md) object can use. You can apply drop caps to the first paragraph of the following components:
 
@@ -37,7 +37,7 @@ Use a `DropCapStyle` object to define a drop cap that a [`ComponentTextStyle`](.
 
 You can use this object in [`TextStyle`](./textstyle.md) and [`ComponentTextStyle`](./componenttextstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

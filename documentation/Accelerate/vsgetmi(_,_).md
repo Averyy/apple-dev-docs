@@ -21,7 +21,7 @@ func vSgetmi(_ size: Int32, _ x: UnsafeMutablePointer<vFloat>)
 extern void vSgetmi(int32_t size, vFloat *x);
 ```
 
-#### Discussion
+## Discussion
 
 The matrix `x` is transposed in place.
 

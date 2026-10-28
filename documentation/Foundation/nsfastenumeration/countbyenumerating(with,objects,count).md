@@ -26,11 +26,11 @@ func countByEnumerating(with state: UnsafeMutablePointer<NSFastEnumerationState>
 - (NSUInteger) countByEnumeratingWithState:(NSFastEnumerationState *) state objects:(id[]) buffer count:(NSUInteger) len;
 ```
 
-#### Return Value
+## Return Value
 
 The number of objects returned in `stackbuf`. Returns `0` when the iteration is finished.
 
-#### Discussion
+## Discussion
 
 The state structure is assumed to be of stack local memory, so you can recast the passed in state structure to one more suitable for your iteration.
 

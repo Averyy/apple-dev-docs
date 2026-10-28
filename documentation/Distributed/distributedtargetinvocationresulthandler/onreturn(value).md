@@ -22,7 +22,7 @@ Invoked when the distributed target execution returns successfully. The `value` 
 func onReturn<Success>(value: Success) async throws
 ```
 
-##### Serialization Requirement
+### Serialization Requirement
 
 Implementations of this method must ensure that the `Success` type parameter conforms to the types’ `SerializationRequirement`.
 

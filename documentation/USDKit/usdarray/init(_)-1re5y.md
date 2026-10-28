@@ -20,7 +20,7 @@ Creates an array containing the elements of `s`.
 init(_ s: some Sequence<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 The backing C++ storage is reserved up front from the sequence’s `underestimatedCount`, so the common case allocates once rather than reallocating repeatedly while appending. `underestimatedCount` is exact and `O(1)` for collections such as `Array`; for sequences whose count isn’t known it is a lower bound (possibly zero) used purely as a reservation hint, which avoids a second traversal just to count.
 

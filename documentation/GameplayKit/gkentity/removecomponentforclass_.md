@@ -20,7 +20,7 @@ Removes the component of the specified class from the entity.
 - (void) removeComponentForClass:(Class) componentClass;
 ```
 
-#### Discussion
+## Discussion
 
 An entity’s [`components`](./components.md) list always has no more than one instance of any component class. If the entity does not contain a component of the specified class, this method does nothing.
 

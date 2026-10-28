@@ -24,7 +24,7 @@ var stride: Int { get set }
 @property (nonatomic, assign) NSUInteger stride;
 ```
 
-#### Discussion
+## Discussion
 
 Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 

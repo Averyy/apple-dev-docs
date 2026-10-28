@@ -15,7 +15,7 @@ Paragraph formatting information.
 extern NSPasteboardType NSRulerPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`ruler`](./nspasteboard/pasteboardtype/ruler.md) instead.
 

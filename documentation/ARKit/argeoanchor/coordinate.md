@@ -20,7 +20,7 @@ var coordinate: CLLocationCoordinate2D { get }
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set by the app at anchor initialization.
 

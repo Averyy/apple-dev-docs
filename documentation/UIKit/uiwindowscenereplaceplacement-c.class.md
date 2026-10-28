@@ -13,7 +13,7 @@
 @interface UIWindowSceneReplacePlacement : UIWindowScenePlacement
 ```
 
-#### Overview
+## Overview
 
 > **Deprecated**: Use [`UIWindowScenePushPlacement`](./uiwindowscenepushplacement-swift.struct.md) instead.
 

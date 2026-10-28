@@ -25,7 +25,7 @@ func xpc_get_type(_ object: xpc_object_t) -> xpc_type_t
 extern xpc_type_txpc_get_type(xpc_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 An opaque pointer describing the type of the object. This pointer is suitable for direct comparison to exported type constants with the equality operator.
 

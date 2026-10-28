@@ -25,7 +25,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the user stops engaging in the associated activity and that activity is no longer available. For example, you might call this method when the user closes the window associated with the activity. After calling this method on a user activity object, calling the [`becomeCurrent()`](./becomecurrent%28%29.md) method on that object has no effect.
 

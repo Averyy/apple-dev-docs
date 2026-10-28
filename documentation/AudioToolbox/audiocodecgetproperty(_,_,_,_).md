@@ -24,11 +24,11 @@ func AudioCodecGetProperty(_ inCodec: AudioCodec, _ inPropertyID: AudioCodecProp
 extern OSStatus AudioCodecGetProperty(AudioCodec inCodec, AudioCodecPropertyID inPropertyID, UInt32 *ioPropertyDataSize, void *outPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NoErr` if successful, otherwise, a result code. See `Result Codes` for a list of possible values.
 
-#### Discussion
+## Discussion
 
 All property values can be read regardless of the state of the codec. However, the values of some properties depend on whether the codec is initialized. Before calling this function, call the [`AudioCodecGetPropertyInfo(_:_:_:_:)`](./audiocodecgetpropertyinfo%28_,_,_,_%29.md) function to determine the size of buffer you need for the property value.
 

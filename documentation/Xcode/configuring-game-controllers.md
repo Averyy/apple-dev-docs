@@ -5,7 +5,7 @@
 
 Enhance gameplay input by enabling the discovery, configuration, and use of physical game controllers.
 
-#### Overview
+## Overview
 
 Game controllers provide physical controls to trigger actions in your game. Apple specifies the look and behavior of the controls to MFi accessory manufacturers, which means you can rely on a consistent set of high-quality controls in all supported game controllers.
 
@@ -19,7 +19,7 @@ After you add the Game Controllers capability to your game’s target, Xcode app
 
 > **Note**: The Game Controllers capability is only available to games that target iOS, iPadOS, tvOS, and visionOS.
 
-##### Select the supported game controller profiles
+### Select the supported game controller profiles
 
 When you add support for game controllers to your app, you don’t integrate with specific hardware. Instead, you integrate one or more of the game-controller profiles that the [Game Controller](../GameController/GameController.md) framework provides. Each profile maps to a control layout that Apple defines, and that profile describes a set of physical controls that the hardware manufacturer guarantees to be available on the controller.
 

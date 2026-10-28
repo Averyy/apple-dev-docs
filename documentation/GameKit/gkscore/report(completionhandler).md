@@ -32,7 +32,7 @@ func report() async throws
 - (void) reportScoreWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The `value` property must be set before calling this method.
 

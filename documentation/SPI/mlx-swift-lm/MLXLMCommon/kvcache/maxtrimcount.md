@@ -22,7 +22,7 @@ var maxTrimCount: Int { get }
 
 - [KV Cache Quantization](../kv-cache-quantization.md)
 
-#### Discussion
+## Discussion
 
 Unlike [`isTrimmable`](./istrimmable.md), this can describe a bounded rewind into retained history.
 

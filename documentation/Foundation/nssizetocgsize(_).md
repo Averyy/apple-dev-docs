@@ -20,7 +20,7 @@ func NSSizeToCGSize(_ nssize: NSSize) -> CGSize
 static CGSize NSSizeToCGSize(NSSize nssize);
 ```
 
-#### Return Value
+## Return Value
 
 A `CGSize` typecast from an `NSSize`.
 

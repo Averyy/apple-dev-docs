@@ -25,7 +25,7 @@ var publicCloudDatabase: CKDatabase { get }
 @property (nonatomic, strong, readonly) CKDatabase * publicCloudDatabase;
 ```
 
-#### Discussion
+## Discussion
 
 This database is available regardless of whether the user’s device has an iCloud account. The contents of the public database are readable by all users of the app, and users have write access to the records, and other objects, they create. The public database’s contents are visible in the developer portal, where you can assign roles to users and restrict access as necessary.
 

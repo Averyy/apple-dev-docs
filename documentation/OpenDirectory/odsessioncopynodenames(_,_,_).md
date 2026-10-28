@@ -20,7 +20,7 @@ func ODSessionCopyNodeNames(_ allocator: CFAllocator!, _ session: ODSessionRef!,
 extern CFArrayRefODSessionCopyNodeNames(CFAllocatorRef allocator, ODSessionRef session, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 An array of valid node names in the given session.
 

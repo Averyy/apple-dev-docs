@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, acceptDrop info: any NSD
 - (BOOL) outlineView:(NSOutlineView *) outlineView acceptDrop:(id<NSDraggingInfo>) info item:(id) item childIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drop operation was successful, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The data source should incorporate the data from the dragging pasteboard in the implementation of this method. You can get the data for the drop operation from info using the [`draggingPasteboard`](../nsdragginginfo/draggingpasteboard.md) method.
 

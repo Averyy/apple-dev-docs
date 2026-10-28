@@ -25,11 +25,11 @@ func CMBufferQueueGetMaxPresentationTimeStamp(_ queue: CMBufferQueue) -> CMTime
 extern CMTime CMBufferQueueGetMaxPresentationTimeStamp(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The greatest presentation timestamp of the interrogated `CMBufferQueue`.
 
-#### Discussion
+## Discussion
 
 If the `getPresentationTimeStamp` callback is `NULL`, `kCMTimeInvalid` will be returned.
 

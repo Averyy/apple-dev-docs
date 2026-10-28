@@ -21,7 +21,7 @@ A notification that posts before a coordinator removes a store.
 extern NSString * const NSPersistentStoreCoordinatorWillRemoveStoreNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the changed store coordinator. The framework posts the notification to an internal thread. Don’t peform any asynchronous work or block the calling thread.
 

@@ -16,7 +16,7 @@ struct vnop_mmap_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This function is typically called as part of a TTY revoke, but can also be used on regular files. Most filesystems simply use nop_revoke(), which calls vn_revoke(), as their revoke vnop implementation.
 

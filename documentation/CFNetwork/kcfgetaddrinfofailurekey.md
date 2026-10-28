@@ -22,7 +22,7 @@ let kCFGetAddrInfoFailureKey: CFString
 extern CFStringRef const kCFGetAddrInfoFailureKey;
 ```
 
-#### Discussion
+## Discussion
 
 If an error of type `kCFHostErrorUnknown` is returned, this key returns the last error code returned by getaddrinfo in response to a DNS lookup. To interpret the results, look up the error code in `/usr/include/netdb.h`.
 

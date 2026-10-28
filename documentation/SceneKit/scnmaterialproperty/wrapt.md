@@ -25,7 +25,7 @@ var wrapT: SCNWrapMode { get set }
 @property (nonatomic) SCNWrapMode wrapT;
 ```
 
-#### Discussion
+## Discussion
 
 Wrapping modes determine texture mapping behavior for cases where a material’s texture coordinates extend outside the range from `0.0` to `1.0`. For example, if you use the [`contentsTransform`](./contentstransform.md) property to shrink a texture relative to the surface of a geometry, you use the wrap mode properties to determine whether the texture repeats across the surface.
 

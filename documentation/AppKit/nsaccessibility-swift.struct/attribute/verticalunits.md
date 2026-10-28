@@ -19,7 +19,7 @@ static let verticalUnits: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityVerticalUnitsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 See [Measurement Unit Attributes](../../measurement-unit-attributes.md) for possible values.
 

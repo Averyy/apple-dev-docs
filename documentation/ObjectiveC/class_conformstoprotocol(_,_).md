@@ -25,11 +25,11 @@ func class_conformsToProtocol(_ cls: AnyClass?, _ protocol: Protocol?) -> Bool
 extern BOOL class_conformsToProtocol(Class cls, Protocol *protocol);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if `cls` conforms to `protocol`, otherwise [`NO`](./no.md).
 
-#### Discussion
+## Discussion
 
 You should usually use `NSObject`’s [`conforms(to:)`](./nsobjectprotocol/conforms%28to%29.md) method instead of this function.
 

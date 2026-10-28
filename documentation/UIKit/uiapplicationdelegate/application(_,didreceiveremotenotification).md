@@ -24,7 +24,7 @@ optional func application(_ application: UIApplication, didReceiveRemoteNotifica
 - (void) application:(UIApplication *) application didReceiveRemoteNotification:(NSDictionary *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Implement the [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](./application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md) method instead of this one whenever possible. If your delegate implements both methods, the app object calls the [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](./application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md) method.
 

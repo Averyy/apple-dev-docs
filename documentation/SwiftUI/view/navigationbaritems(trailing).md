@@ -22,7 +22,7 @@ nonisolated
 func navigationBarItems<T>(trailing: T) -> some View where T : View
 ```
 
-#### Discussion
+## Discussion
 
 Use `navigationBarItems(trailing:)` to add navigation bar items to the trailing edge of the navigation bar for this view. This modifier only takes effect when this view is inside of and visible within a [`NavigationView`](../navigationview.md).
 

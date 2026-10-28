@@ -24,7 +24,7 @@ func contour(at contourIndex: Int) throws -> VNContour
 - (VNContour *) contourAtIndex:(NSInteger) contourIndex error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The contour object at the specified index.
 

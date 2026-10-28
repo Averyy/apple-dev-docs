@@ -25,7 +25,7 @@ var particleZPosition: CGFloat { get set }
 @property (nonatomic) CGFloat particleZPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

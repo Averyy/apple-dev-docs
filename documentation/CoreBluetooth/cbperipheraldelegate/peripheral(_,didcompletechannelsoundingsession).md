@@ -19,7 +19,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didCompleteChannelSoundingS
 - (void) peripheral:(CBPeripheral *) peripheral didCompleteChannelSoundingSession:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a channel sounding session completes.
 

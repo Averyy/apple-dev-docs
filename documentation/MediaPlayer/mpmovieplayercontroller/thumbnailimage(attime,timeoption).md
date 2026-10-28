@@ -23,11 +23,11 @@ func thumbnailImage(atTime playbackTime: TimeInterval, timeOption option: MPMovi
 - (UIImage *) thumbnailImageAtTime:(NSTimeInterval) playbackTime timeOption:(MPMovieTimeOption) option;
 ```
 
-#### Return Value
+## Return Value
 
 An image object containing the image from the movie or `nil` if the thumbnail could not be captured.
 
-#### Discussion
+## Discussion
 
 This method captures the thumbnail image synchronously from the current movie (which is accessible from the [`MPMovieSourceType.unknown`](../mpmoviesourcetype/unknown.md) property).
 

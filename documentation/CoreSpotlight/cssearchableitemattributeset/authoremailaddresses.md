@@ -23,7 +23,7 @@ var authorEmailAddresses: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * authorEmailAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property is not human-readable.
 

@@ -24,11 +24,11 @@ init(name: String?, channelEncoding: MDLTextureChannelEncoding, textureDimension
 - (instancetype) initWithName:(NSString *) name channelEncoding:(MDLTextureChannelEncoding) channelEncoding textureDimensions:(vector_int2) textureDimensions turbidity:(float) turbidity sunElevation:(float) sunElevation upperAtmosphereScattering:(float) upperAtmosphereScattering groundAlbedo:(float) groundAlbedo;
 ```
 
-#### Return Value
+## Return Value
 
 A new sky cube texture object.
 
-#### Discussion
+## Discussion
 
 The newly created texture is a cube texture; that is, its [`isCube`](../mdltexture/iscube.md) property is [`true`](../../Swift/true.md), and its [`dimensions`](../mdltexture/dimensions.md) property reflects the vertical layout of cube faces.
 

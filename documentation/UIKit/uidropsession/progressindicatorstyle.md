@@ -23,7 +23,7 @@ var progressIndicatorStyle: UIDropSessionProgressIndicatorStyle { get set }
 @property (nonatomic) UIDropSessionProgressIndicatorStyle progressIndicatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the type of progress indicator displayed when the drop operation takes a significant amount of time. The [`UIDropSessionProgressIndicatorStyle.default`](../uidropsessionprogressindicatorstyle/default.md) style indicates that a progress indicator is shown by the system. If you prefer to show your own progress indicator, set this property to [`UIDropSessionProgressIndicatorStyle.none`](../uidropsessionprogressindicatorstyle/none.md).
 

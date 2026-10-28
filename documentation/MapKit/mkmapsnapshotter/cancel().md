@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 If the snapshotter isn’t in the process of generating the snapshot, calling this method does nothing.
 

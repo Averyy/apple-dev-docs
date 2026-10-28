@@ -24,7 +24,7 @@ func AudioOutputUnitStop(_ ci: AudioUnit) -> OSStatus
 extern OSStatus AudioOutputUnitStop(AudioUnit ci);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

@@ -19,7 +19,7 @@ class NSGraphicsContext
 @interface NSGraphicsContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can think of a graphics context as a destination to which drawing and graphics state operations are sent for execution. Each graphics context contains its own graphics environment and state.
 

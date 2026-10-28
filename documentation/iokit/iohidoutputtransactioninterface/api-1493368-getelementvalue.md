@@ -16,11 +16,11 @@ Obtains the value of an element in a transaction.
 IOReturn (*getElementValue)(void *self, IOHIDElementCookie elementCookie, IOHIDEventStruct *outValueEvent);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 An error will be returned if the element has not been added to the transaction.
 

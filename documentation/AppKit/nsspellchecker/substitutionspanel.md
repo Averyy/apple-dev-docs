@@ -19,7 +19,7 @@ var substitutionsPanel: NSPanel { get }
 @property (strong, readonly) NSPanel * substitutionsPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The substitutions checking panel.
 

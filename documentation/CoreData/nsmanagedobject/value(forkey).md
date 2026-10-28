@@ -25,11 +25,11 @@ func value(forKey key: String) -> Any?
 - (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the property specified by `key`.
 
-#### Discussion
+## Discussion
 
 If `key` is not a property defined by the model, the method raises an exception. This method is overridden by `NSManagedObject` to access the managed object’s generic dictionary storage unless the receiver’s class explicitly provides key-value coding compliant accessor methods for `key`.
 

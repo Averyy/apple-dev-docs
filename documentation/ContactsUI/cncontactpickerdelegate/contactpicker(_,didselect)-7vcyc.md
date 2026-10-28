@@ -39,7 +39,7 @@ optional func contactPicker(_ picker: CNContactPicker, didSelect contact: CNCont
 - (void) contactPicker:(CNContactPicker *) picker didSelectContact:(CNContact *) contact;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method is called when the user selects a single contact.
 

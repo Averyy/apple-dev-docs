@@ -20,11 +20,11 @@ Retrieves a column with the specified name and type.
 subscript<T>(columnName: String, columnType: T.Type) -> MLDataColumn<T>? where T : MLDataValueConvertible { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MLDataColumn`](../mldatacolumn.md) with the specified name and type, if it exists; otherwise `nil`.
 
-#### Overview
+## Overview
 
 Use this subscript to get a typed [`MLDataColumn`](../mldatacolumn.md), which is easier to work with than a [`MLUntypedColumn`](../mluntypedcolumn.md) returned from [`subscript(_:)`](./subscript%28_%29-3wjk.md).
 

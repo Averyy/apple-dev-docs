@@ -21,7 +21,7 @@ var preferredDisplayCriteria: AVDisplayCriteria? { get set }
 @property (nonatomic, copy, nullable) AVDisplayCriteria * preferredDisplayCriteria;
 ```
 
-#### Discussion
+## Discussion
 
 The display manager uses the preferred display criteria only when user settings allow. Set this property to `nil` to allow the system to guide you to a display mode that’s suitable for a wide range of video and nonvideo content.
 

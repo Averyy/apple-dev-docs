@@ -16,11 +16,11 @@ Returns the current size of the element.
 float2 element::size()
 ```
 
-#### Return Value
+## Return Value
 
 The size as a 2D vector (width, height)
 
-#### Discussion
+## Discussion
 
 Use this function to read the element’s dimensions in meters, which represent its width and height.
 

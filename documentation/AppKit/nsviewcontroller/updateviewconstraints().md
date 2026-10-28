@@ -19,7 +19,7 @@ func updateViewConstraints()
 - (void) updateViewConstraints;
 ```
 
-#### Discussion
+## Discussion
 
 This method gets called, for example, when the user interacts with a view in a way that causes the layout to change. When called, the default implementation of this method in turn calls the [`updateConstraints()`](../nsview/updateconstraints%28%29.md) method on the view controller’s view.
 

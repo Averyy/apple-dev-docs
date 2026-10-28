@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRea
 - (void) peripheralManager:(CBPeripheralManager *) peripheral didReceiveReadRequest:(CBATTRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 When you receive this callback, call the [`respond(to:withResult:)`](../cbperipheralmanager/respond%28to,withresult%29.md) method of the [`CBPeripheralManager`](../cbperipheralmanager.md) class exactly once to respond to the read request.
 

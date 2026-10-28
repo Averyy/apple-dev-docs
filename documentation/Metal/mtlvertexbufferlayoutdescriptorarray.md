@@ -24,7 +24,7 @@ class MTLVertexBufferLayoutDescriptorArray
 @interface MTLVertexBufferLayoutDescriptorArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLVertexBufferLayoutDescriptorArray`](./mtlvertexbufferlayoutdescriptorarray.md) holds an array of vertex buffer layout states. The methods of [`MTLVertexBufferLayoutDescriptorArray`](./mtlvertexbufferlayoutdescriptorarray.md) set the vertex buffer layout state in the array or retrieve the state from the array.
 

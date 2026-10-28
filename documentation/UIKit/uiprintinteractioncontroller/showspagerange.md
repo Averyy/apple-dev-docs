@@ -24,7 +24,7 @@ var showsPageRange: Bool { get set }
 @property (nonatomic) BOOL showsPageRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If you assign printable content to the [`printingItems`](./printingitems.md) property, the page-range control is not shown, even if `showPageRange` is [`true`](../../Swift/true.md). In other cases, the number of pages to print must be greater than 1 form the page-range control to appear.
 

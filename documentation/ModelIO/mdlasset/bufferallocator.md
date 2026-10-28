@@ -24,7 +24,7 @@ var bufferAllocator: any MDLMeshBufferAllocator { get }
 @property (nonatomic, retain, readonly) id<MDLMeshBufferAllocator> bufferAllocator;
 ```
 
-#### Discussion
+## Discussion
 
 You specify an allocator when loading an asset with the [`init(url:vertexDescriptor:bufferAllocator:)`](./init%28url,vertexdescriptor,bufferallocator%29-1tchi.md) initializer. If you do not specify an allocator, or import an asset through other means, the [`MDLAsset`](../mdlasset.md) class uses an internal allocator object.
 

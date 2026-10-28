@@ -22,7 +22,7 @@ var isAutoContentAwareDistortionCorrectionEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoContentAwareDistortionCorrectionEnabled) BOOL autoContentAwareDistortionCorrectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Enabling this setting introduces a small amount of latency when processing the photo request.
 

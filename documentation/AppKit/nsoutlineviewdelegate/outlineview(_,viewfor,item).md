@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NST
 - (NSView *) outlineView:(NSOutlineView *) outlineView viewForTableColumn:(NSTableColumn *) tableColumn item:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The view to display the specified column and row. Returning `nil` is acceptable, in which case a view is not shown at that location.
 
-#### Discussion
+## Discussion
 
 This method is required if you wish to use `NSView` objects instead of `NSCell` objects for the cells within an outline view. Cells and views cannot be mixed within the same outline view.
 

@@ -23,7 +23,7 @@ func addInputs(_ inputs: [String : MLCTensor]) -> Bool
 - (BOOL) addInputs:(NSDictionary<NSString *,MLCTensor *> *) inputs;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 

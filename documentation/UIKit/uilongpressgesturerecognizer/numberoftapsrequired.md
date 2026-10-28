@@ -27,7 +27,7 @@ var numberOfTapsRequired: Int { get set }
 
 - [Handling long-press gestures](../handling-long-press-gestures.md)
 
-#### Discussion
+## Discussion
 
 The default number of taps is `0`.
 

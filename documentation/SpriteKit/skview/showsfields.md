@@ -24,7 +24,7 @@ var showsFields: Bool { get set }
 @property (nonatomic) BOOL showsFields;
 ```
 
-#### Discussion
+## Discussion
 
 When this debugging option is enabled, each time a frame is rendered, an image is drawn behind your scene that shows the effects of any physics fields contained in the scene.
 

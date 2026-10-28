@@ -25,7 +25,7 @@ var isAdvertising: Bool { get }
 @property (nonatomic, assign, readonly) BOOL isAdvertising;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the peripheral is advertising data as a result of successfully calling the [`startAdvertising(_:)`](./startadvertising%28_%29.md) method. The value is [`false`](../../Swift/false.md) if the peripheral is no longer advertising its data.
 

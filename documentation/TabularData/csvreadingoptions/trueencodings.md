@@ -21,7 +21,7 @@ The set of strings that stores acceptable spellings for true Boolean values.
 var trueEncodings: Set<String>
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `["1", "True", "TRUE", "true"]`.
 

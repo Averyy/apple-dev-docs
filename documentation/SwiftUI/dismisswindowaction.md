@@ -20,7 +20,7 @@ An action that dismisses a window associated to a particular scene.
 @preconcurrency struct DismissWindowAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`dismissWindow`](./environmentvalues/dismisswindow.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to dismiss a window. You call the instance directly because it defines a [`callAsFunction(id:)`](./dismisswindowaction/callasfunction%28id%29.md) method that Swift calls when you call the instance.
 

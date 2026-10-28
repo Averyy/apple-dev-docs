@@ -32,7 +32,7 @@ var countryCode: String { get }
 @property (atomic, copy, readonly) NSString * countryCode;
 ```
 
-#### Discussion
+## Discussion
 
 ISO is the default country code for phone numbers. This is determined by the device’s SIM card or the operating system’s configured language.
 

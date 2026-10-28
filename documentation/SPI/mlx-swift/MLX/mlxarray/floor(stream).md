@@ -17,7 +17,7 @@ Element-wise floor.
 func floor(stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`round(decimals:stream:)`](./round%28decimals,stream%29.md)

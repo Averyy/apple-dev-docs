@@ -25,7 +25,7 @@ var uniformType: SKUniformType { get }
 @property (nonatomic, readonly) SKUniformType uniformType;
 ```
 
-#### Discussion
+## Discussion
 
 A uniform object’s type is set to [`SKUniformType.none`](../skuniformtype/none.md) until the first time that the uniform variable’s value is set; this happens automatically if you use an initialization method that provides an initial type and value. Once the uniform object is given an initial value, its type changes to that value’s type and thereafter cannot be changed.
 

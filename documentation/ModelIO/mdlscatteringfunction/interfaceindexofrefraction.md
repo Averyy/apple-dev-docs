@@ -24,7 +24,7 @@ var interfaceIndexOfRefraction: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * interfaceIndexOfRefraction;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the `n2` parameter in Schlick’s equation for approximating Fresnel reflection effects.
 

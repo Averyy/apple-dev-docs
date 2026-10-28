@@ -23,7 +23,7 @@ func update(_ percentComplete: CGFloat)
 - (void) updateInteractiveTransition:(CGFloat) percentComplete;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that calls through to the [`updateInteractiveTransition(_:)`](../uiviewcontrollercontexttransitioning/updateinteractivetransition%28_%29.md) method of the context object.
 

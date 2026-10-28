@@ -24,7 +24,7 @@ var representedObject: Any? { get set }
 @property (nonatomic, strong, nullable) id representedObject;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to associate the search suggestion with a corresponding object.
 

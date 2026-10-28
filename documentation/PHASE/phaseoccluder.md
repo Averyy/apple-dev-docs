@@ -28,7 +28,7 @@ class PHASEOccluder
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 The framework lowers the volume of an audio signal when an instance of this class positions somewhere along the path between the sound source and the listener.
 

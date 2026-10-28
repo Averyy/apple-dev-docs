@@ -23,7 +23,7 @@ func setBadgeTextAttributes(_ textAttributes: [NSAttributedString.Key : Any]?, f
 - (void) setBadgeTextAttributes:(NSDictionary<NSString *,id> *) textAttributes forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 The [`setTitleTextAttributes(_:for:)`](../uibaritem/settitletextattributes%28_,for%29.md) method allows you to customize the appearance of the item’s title. Use this method to apply similar customizations to the badge’s value to achieve a consistent appearance.
 

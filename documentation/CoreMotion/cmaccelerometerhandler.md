@@ -24,7 +24,7 @@ typealias CMAccelerometerHandler = (CMAccelerometerData?, (any Error)?) -> Void
 typedef void (^)(CMAccelerometerData *, NSError *) CMAccelerometerHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Blocks of type `CMAccelerometerHandler` are called when there is accelerometer data to process. You pass the block into [`startAccelerometerUpdates(to:withHandler:)`](./cmmotionmanager/startaccelerometerupdates%28to,withhandler%29.md) as the second argument. Blocks of this type return no value but take two arguments:
 

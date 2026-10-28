@@ -11,11 +11,11 @@ Updates negative keywords in a campaign.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To update campaign negative keywords, use the associated `campaignId` in the URI. The `id` in the payload must belong to a negative keyword that exists inside the campaign in the URI. Use `PAUSED` or `ACTIVE` values to update the `status` field. Use partial updates to edit a subset of object properties without having to include all object properties in the payload. For more information, see the Use Partial Updates section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Update campaign negative keywords
+### Payload example: Update campaign negative keywords
 
 Negative keywords can be created in both ad groups and automated ad groups.
 

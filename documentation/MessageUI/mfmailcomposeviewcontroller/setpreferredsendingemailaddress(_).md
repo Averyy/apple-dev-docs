@@ -22,7 +22,7 @@ func setPreferredSendingEmailAddress(_ emailAddress: String)
 - (void) setPreferredSendingEmailAddress:(NSString *) emailAddress;
 ```
 
-#### Discussion
+## Discussion
 
 If the user doesn’t have an account with a preferred address set up, the default account is used instead.
 

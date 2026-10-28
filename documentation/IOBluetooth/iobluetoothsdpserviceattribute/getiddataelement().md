@@ -19,7 +19,7 @@ func getIDDataElement() -> IOBluetoothSDPDataElement!
 - (IOBluetoothSDPDataElement *) getIDDataElement;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the data element representing the attribute ID for the target service attribute.
 

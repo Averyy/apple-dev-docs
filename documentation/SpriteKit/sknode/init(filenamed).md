@@ -29,11 +29,11 @@ convenience init?(fileNamed filename: String)
 
 - [Creating a Scene from a File](../creating-a-scene-from-a-file.md)
 
-#### Return Value
+## Return Value
 
 The unarchived node object.
 
-#### Discussion
+## Discussion
 
 If you call this method on a subclass of the [`SKScene`](../skscene.md) class and the object in the archive is an [`SKScene`](../skscene.md) object, the returned object is initialized as if it is a member of the subclass. You use this behavior to create scene layouts in the Xcode Editor and provide custom behaviors in your subclass.
 

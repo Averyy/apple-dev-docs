@@ -25,7 +25,7 @@ func nw_quic_get_idle_timeout(_ options: nw_protocol_options_t) -> UInt32
 uint32_t nw_quic_get_idle_timeout(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 An idle timeout value, in milliseconds.
 

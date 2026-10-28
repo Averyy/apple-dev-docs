@@ -25,11 +25,11 @@ optional func metadataQuery(_ query: NSMetadataQuery, replacementObjectForResult
 - (id) metadataQuery:(NSMetadataQuery *) query replacementObjectForResultObject:(NSMetadataItem *) result;
 ```
 
-#### Return Value
+## Return Value
 
 Object that replaces the query result object.
 
-#### Discussion
+## Discussion
 
 By default query result objects are instances of the [`NSMetadataItem`](../nsmetadataitem.md) class. By implementing this method, you can return an object of a different class type for the specified result object.
 

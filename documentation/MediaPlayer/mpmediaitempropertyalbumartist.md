@@ -25,7 +25,7 @@ let MPMediaItemPropertyAlbumArtist: String
 extern NSString * const MPMediaItemPropertyAlbumArtist;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSString`](../Foundation/nsstring.md) object.
 

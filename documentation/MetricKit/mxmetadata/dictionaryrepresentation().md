@@ -25,7 +25,7 @@ func dictionaryRepresentation() -> [AnyHashable : Any]
 - (NSDictionary *) dictionaryRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A [`Dictionary`](../../Swift/dictionary.md) (Swift) or [`NSDictionary`](../../Foundation/nsdictionary.md) (Objective-C) object containing a key-value representation of the metrics in the payload.
 

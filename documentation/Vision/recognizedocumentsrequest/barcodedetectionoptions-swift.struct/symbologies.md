@@ -20,7 +20,7 @@ The barcode symbologies that the request detects in an image.
 var symbologies: [BarcodeSymbology]
 ```
 
-#### Discussion
+## Discussion
 
 By default, a request scans for all symbologies. Specify a subset of symbologies to limit the request’s detection range. To see the specific codes recognized refer to [`supportedBarcodeSymbologies`](../supportedbarcodesymbologies.md).
 

@@ -19,7 +19,7 @@ Adds gestures that control the position and direction of a virtual camera.
 @preconcurrency func realityViewCameraControls(_ controls: CameraControls) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can use a drag gesture from a mouse, trackpad, or screen touches with iOS and iPadOS devices to `.tilt`, `.pan`, `.orbit`, or `.dolly` a virtual camera.
 

@@ -26,7 +26,7 @@ var indexTitle: String? { get }
 @property (nonatomic, readonly, nullable) NSString * indexTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This is used when displaying the index.
 

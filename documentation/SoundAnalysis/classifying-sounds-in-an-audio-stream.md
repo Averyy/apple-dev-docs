@@ -5,7 +5,7 @@
 
 Identify individual sounds in an audio data stream, such as from a microphone, with an audio stream analyzer.
 
-#### Overview
+## Overview
 
 Use an [`SNAudioStreamAnalyzer`](./snaudiostreamanalyzer.md) to recognize sounds, such as human speech, music, and singing, by processing an audio stream, such as from a microphone. For example, a sound recording app can use an audio stream analyzer to show a visual label for sounds the app identifies in real time.
 
@@ -14,7 +14,7 @@ This article builds on the [Classifying Sounds in an Audio File](./classifying-s
 - Creating an [`SNClassifySoundRequest`](./snclassifysoundrequest.md)
 - Implementing a type that conforms to [`SNResultsObserving`](./snresultsobserving.md)
 
-##### Start an Audio Engine
+### Start an Audio Engine
 
 The [Audio engine](../AVFAudio/audio-engine.md) API simplifies audio-related tasks, including capturing audio data with a microphone.
 
@@ -46,7 +46,7 @@ When you create an audio engine instance, its default [`inputNode`](../AVFAudio/
 
 > ❗ **Important**:  To access the device’s microphone in iOS or watchOS, add a description for the [`NSMicrophoneUsageDescription`](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) key in your project’s `Info.plist` file.
 
-##### Create a Stream Analyzer
+### Create a Stream Analyzer
 
 Analyze the microphone audio by configuring an [`SNAudioStreamAnalyzer`](./snaudiostreamanalyzer.md) to the input device’s native PCM (pulse code modulation) audio format.
 
@@ -67,7 +67,7 @@ try streamAnalyzer.add(classifySoundRequest,
                        withObserver: resultsObserver)
 ```
 
-##### Analyze the Sound Data with an Audio Tap
+### Analyze the Sound Data with an Audio Tap
 
 Access the microphone’s audio data by creating a tap to the audio engine’s input node.
 

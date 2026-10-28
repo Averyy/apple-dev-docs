@@ -23,7 +23,7 @@ var highResolutionStillImageDimensions: CMVideoDimensions { get }
 @property (nonatomic, readonly) CMVideoDimensions highResolutionStillImageDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the [`AVCaptureStillImageOutput`](../../avcapturestillimageoutput.md) class emits images with the same dimensions as the source [`AVCaptureDevice`](../../avcapturedevice.md) instance’s [`activeFormat`](../activeformat.md). However, if you set `highResolutionStillImageOutputEnabled` to [`true`](../../../Swift/true.md), [`AVCaptureStillImageOutput`](../../avcapturestillimageoutput.md) emits still images with its source [`AVCaptureDevice`](../../avcapturedevice.md) instance’s `activeFormat.highResolutionStillImageDimensions` dimensions.
 

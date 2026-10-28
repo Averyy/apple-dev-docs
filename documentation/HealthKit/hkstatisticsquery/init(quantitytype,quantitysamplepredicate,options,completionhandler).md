@@ -28,11 +28,11 @@ init(quantityType: HKQuantityType, quantitySamplePredicate: NSPredicate?, option
 
 - [Executing Statistical Queries](../executing-statistical-queries.md)
 
-#### Return Value
+## Return Value
 
 A newly initialized statistics query object.
 
-#### Discussion
+## Discussion
 
 After instantiating the query, call the `HKHealthStore` class’s `executeQuery:` method to run this query. Queries run on an anonymous background queue. As soon as the query is complete, the results handler is executed on the same background queue (but not necessarily on the same thread). You typically dispatch these results to the main queue to update the user interface.
 

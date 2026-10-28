@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, draggingSession session:
 - (void) outlineView:(NSOutlineView *) outlineView draggingSession:(NSDraggingSession *) session endedAtPoint:(NSPoint) screenPoint operation:(NSDragOperation) operation;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this optional delegate method to know when the dragging source operation ended at a specific location, such as the trash (by checking for an operation of [`delete`](../nsdragoperation/delete.md)).
 

@@ -15,11 +15,11 @@ Generates a physical scatter/gather for the current DMA command
 virtual IOReturn genIOVMSegments(UInt64 *offset, void *segments, UInt32 *numSegments);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, kIOReturnOverrun if the memory descriptor is exhausted, kIOReturnMessageTooLarge if the output segment function's address bits has insufficient resolution for a segment, kIOReturnNotReady if the DMA command has not be prepared, kIOReturnBadArgument if the DMA command doesn't have a memory descriptor yet or some of the parameters are NULL and kIOReturnNotReady if the DMA command is not prepared.
 
-#### Discussion
+## Discussion
 
 Generates a list of physical segments from the given memory descriptor, relative to the current position of the descriptor. The constraints that are set during initialisation will be respected. This function maintains the state across multiple calls for efficiency. However the state is discarded if the new offset is not the expected one.
 

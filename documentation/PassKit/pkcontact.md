@@ -24,7 +24,7 @@ class PKContact
 @interface PKContact : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances contain only the information needed for the given transaction. All other properties are set to `nil`.
 

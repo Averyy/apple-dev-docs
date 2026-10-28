@@ -24,11 +24,11 @@ func AudioUnitGetPropertyInfo(_ inUnit: AudioUnit, _ inID: AudioUnitPropertyID, 
 extern OSStatus AudioUnitGetPropertyInfo(AudioUnit inUnit, AudioUnitPropertyID inID, AudioUnitScope inScope, AudioUnitElement inElement, UInt32 *outDataSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Some properties that have read/write access when an audio unit is uninitialized become read-only when the audio unit is initialized.
 

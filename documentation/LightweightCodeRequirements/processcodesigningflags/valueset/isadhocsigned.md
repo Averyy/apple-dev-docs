@@ -21,7 +21,7 @@ The code is adhoc signed i.e. it contains a code directory and page hashes but n
 static let isAdhocSigned: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `CS_ADHOC` in C APIs.
 

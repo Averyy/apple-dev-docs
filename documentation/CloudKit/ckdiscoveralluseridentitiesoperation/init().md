@@ -26,7 +26,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the operation only once. Create a new operation for each subsequent search.
 

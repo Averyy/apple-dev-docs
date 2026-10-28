@@ -20,11 +20,11 @@ func numberOfSlideshowItems() -> Int
 - (NSUInteger) numberOfSlideshowItems;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in the slideshow.
 
-#### Discussion
+## Discussion
 
 Your data source must implement this method.
 

@@ -10,11 +10,11 @@ Most disks attached to Apple devices use [Apple File System](../Foundation/about
 
 ---
 
-#### File, directory, and bundle concepts
+## File, directory, and bundle concepts
 
 Apple platforms adopt specific conventions for files and directories, and it’s easier to write file-related code when you know these conventions.
 
-##### File paths
+### File paths
 
 To specify the location of a file or directory, create a [`URL`](../Foundation/url.md) with the path to the item. Build your path from the directory names that precede the item’s location. When creating paths, adopt the following best practices:
 
@@ -24,7 +24,7 @@ To specify the location of a file or directory, create a [`URL`](../Foundation/u
 - **Include filename extensions for all files.** The system uses filename extensions to route files to appropriate apps. It also uses them as a hint for the file’s contents.
 - **Show display names only from your interface.** A file or directory can have a second name, known as its *display name*, which you show only from your app’s interface. The system shows [display names](../Foundation/filemanager/displayname%28atpath%29.md) to create a more friendly view of the file system. For example, the display name for a file might hide the filename extension. If your app shows file and directory names in its interface, show display names when they’re available. Never use display names in file paths or in code that accesses the file system.
 
-##### Well-known directories
+### Well-known directories
 
 The system organizes system files, apps, and all other content into well-known locations, each with a specific purpose. Use each directory only for its intended purpose.
 
@@ -35,7 +35,7 @@ The system organizes system files, apps, and all other content into well-known l
 
 Get paths for other well-known directories from the [`URL`](../Foundation/url.md) or [`FileManager`](../Foundation/filemanager.md) type. macOS in particular has many more well-known directories, most of which people can access directly from the Finder or Terminal apps. You might use one of these locations in specific circumstances. For example, you might want to put an item directly into the home directory of the logged-in account. You rarely use these locations outside of macOS apps.
 
-##### Bundles
+### Bundles
 
 A *bundle* is a directory that the system presents to people as a single file. Bundles simplify people’s interactions with apps, app extensions, and other bundled items. For example, interacting with an app launches that app instead of showing you the app’s code and resource files.
 
@@ -72,13 +72,13 @@ Although bundles have a well-defined structure, you don’t need to know the det
 
 The Info pane of your project in Xcode also contains static information about your app’s [features and configuration](../BundleResources/information-property-list.md). Configure this file in Xcode by selecting it and using the associated editor to [add relevant entries](../BundleResources/managing-your-app-s-information-property-list.md).
 
-##### File packages
+### File packages
 
 Like a bundle, a *file package* is a directory that the system presents to people as a single file. You use file packages to implement custom file formats, especially when those formats contain multiple different types of data. For example, a word processor document type that contains one or more files with text and separate files for images and media can keep those resources separate using a file package.
 
 Unlike bundles, file packages have no predefined structure, so you’re responsible for determining the contents and organization of your app’s file packages. To define a custom document type, [add that type](../BundleResources/managing-your-app-s-information-property-list.md) to the Info pane of your project in Xcode. To turn a document type into a package, add the [`LSTypeIsPackage`](../BundleResources/information-property-list/cfbundledocumenttypes/lstypeispackage.md) key to its definition.
 
-##### Asset catalogs
+### Asset catalogs
 
 An [asset catalog](../Xcode/managing-assets-with-asset-catalogs.md) is one of the best ways to manage resources in your app bundle. Asset catalogs help you organize the images icons, colors, and other resources your app uses. Depending on the device and system settings, your app might need to display images and colors with a several different appearances. For example, you might need to display light or dark versions of an image or one with a high contrast ratio. Asset catalogs let you gather all of these related resources under a single name in your app bundle. When you need a resource, you specify the name and the system provides the version of the resource that best matches the current settings.
 
@@ -86,7 +86,7 @@ An [asset catalog](../Xcode/managing-assets-with-asset-catalogs.md) is one of th
 
 ---
 
-#### Read, write, and manage files and directories
+## Read, write, and manage files and directories
 
 System-provided objects minimize the time you spend reading, writing, and managing files directly. In a document-based app, [`FileDocument`](../SwiftUI/filedocument.md), [`UIDocument`](../UIKit/uidocument.md), and [`NSDocument`](../AppKit/nsdocument.md) automatically read and write the underlying file for you, and support autosave operations and your app’s menus. Similarly, [`Image`](../SwiftUI/image.md), [`UIImage`](../UIKit/uiimage.md), and [`NSImage`](../AppKit/nsimage.md) types read image files and provide you with an object you can use directly in your app. These types let you focus on using the data, and are often more efficient than managing the files yourself.
 
@@ -129,7 +129,7 @@ If your app shares files with other processes, [coordinate access](./shared-data
 
 ---
 
-#### Download large files in the background
+## Download large files in the background
 
 When people buy your app from the App Store, they want to be able to download it quickly and try it out. If your app has large data files that it doesn’t need right away, consider downloading them separately after your app is already on someone’s device. A game might ship with the assets for the first level and download assets for other levels separately. Similarly, you might choose to download a large language model separately, so you can update it later.
 
@@ -137,7 +137,7 @@ To support background downloads, store your files on your company’s servers or
 
 ---
 
-#### Protect the files you create
+## Protect the files you create
 
 Enable automatic encryption for files you create by assigning an appropriate [data protection level](../Foundation/urlfileprotection.md) to each one. The system stores your files encrypted on disk, making them accessible only under specific circumstances. For example, you might make files accessible only after someone unlocks their device. Choose a level of protection based on the type of data you’re saving, adopting more strict protection rules for sensitive or personal data.
 

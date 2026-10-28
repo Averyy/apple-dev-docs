@@ -20,7 +20,7 @@ A module that performs a voice activity detection (VAD) analysis.
 final class SpeechDetector
 ```
 
-#### Overview
+## Overview
 
 This module asks “is there speech?” and provides you with the ability to gate transcription by the presence of voices, saving power otherwise used by attempting to transcribe what is likely to be silence.
 

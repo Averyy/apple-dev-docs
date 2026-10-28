@@ -24,7 +24,7 @@ var unavailabilityReason: (any Error)? { get }
 @property (atomic, strong, readonly, nullable) NSError * unavailabilityReason;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a valid error only when the library is unavailable.
 

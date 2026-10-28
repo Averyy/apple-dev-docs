@@ -21,11 +21,11 @@ The declaration to configure Siri settings.
 object SiriSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.siri.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ Specify `com.apple.configuration.siri.settings` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
 This configuration restricts Siri features.
 

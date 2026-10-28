@@ -5,7 +5,7 @@
 
 Handling tracks with more than one associated metadata track.
 
-#### Overview
+## Overview
 
 A “presentation” track (for example, video or audio) may have more than one metadata track associated with it via `'cdsc'` type track references. The union of all metadata across those tracks should be considered the metadata for the presentation track — just as if there was a single metadata track with all the corresponding metadata.
 

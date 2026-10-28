@@ -25,7 +25,7 @@ var affectedStores: [NSPersistentStore]? { get set }
 @property (nonatomic, strong, nullable) NSArray<NSPersistentStore *> * affectedStores;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the array are the identifiers for the stores to be searched when the fetch request is executed.
 

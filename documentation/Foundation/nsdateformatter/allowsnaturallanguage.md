@@ -15,15 +15,15 @@ Returns a Boolean value that indicates whether the receiver attempts to process 
 - (BOOL) allowsNaturalLanguage;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver attempts to process dates entered as a vernacular string (“today,” “next week,” “dinner time,” and so on), otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Natural-language processing supports only a limited set of colloquial phrases, primarily in English. It may give unexpected results, and its use is strongly discouraged.
 
-##### Special Considerations
+### Special Considerations
 
 This method is for use with formatters using `NSDateFormatterBehavior10_0` behavior.
 

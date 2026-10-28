@@ -23,7 +23,7 @@ var kDNSServiceType_CNAME: Int { get }
 kDNSServiceType_CNAME
 ```
 
-#### Discussion
+## Discussion
 
 Canonical name.
 

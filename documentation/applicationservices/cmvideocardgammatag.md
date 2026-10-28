@@ -13,7 +13,7 @@
 var cmVideoCardGammaTag: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Constant for profile tag that specifies video card gamma information. When you create a tag to store video card gamma data in a profile, you use the `cmVideoCardGammaTag` constant to specify the tag.
 

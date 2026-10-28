@@ -12,11 +12,11 @@ virtual void getORBAddress(
  FWAddress *address );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the FireWire address of this ORB.
 
-#### Overview
+## Overview
 
 Returns the FireWire bus address of this ORB. This is not the same as the Macintosh address for the IOFireWireSBP2ORB.
 

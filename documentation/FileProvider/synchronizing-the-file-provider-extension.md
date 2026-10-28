@@ -5,7 +5,7 @@
 
 Keep the local and remote copies of your File Provider extension’s content in sync.
 
-#### Overview
+## Overview
 
 The system manages a local copy of the items—both documents and folders—stored on your file provider’s remote storage. The local copy can contain either *dataless* or *materialized* copies of these items. A dataless copy just stores the information needed to display the item in the UI, while a materialized copy includes the item’s content.
 
@@ -13,7 +13,7 @@ For documents, a dataless copy means the system just saves the item’s metadata
 
 The system uses dataless copies where possible to preserve both disk space and bandwidth. However, users can open materialized copies immediately, without requiring additional access to your remote storage. It’s important, therefore, to keep materialized copies of any items the user is likely to access frequently or when they’re offline. For more information, see Specify the Working Set in  [Synchronizing the File Provider Extension](./synchronizing-the-file-provider-extension.md).
 
-##### Provide Content from Your Remote Server
+### Provide Content from Your Remote Server
 
 The system communicates with your extension whenever it needs additional information about the contents of your remote storage. For example, whenever the user opens a new folder, the system calls [`enumerator(for:request:)`](./nsfileproviderenumerating/enumerator%28for,request%29.md) to populate that folder.
 
@@ -27,7 +27,7 @@ The system typically requests information as a response to either user actions o
 
 > **Note**:  To avoid possible data loss, the system won’t convert a materialized item into a dataless item if the item has pending changes that the File Provider extension needs to sync.
 
-##### Specify the Working Set
+### Specify the Working Set
 
 The working set is a list of items that the user may find particularly interesting. Your file provider must maintain its own working set. For a consistent experience across file providers, the working set typically includes the following:
 
@@ -45,13 +45,13 @@ To access the working set, the system calls your File Provider extension’s [`e
 
 Unlike other containers, the user doesn’t drive the enumeration of the working set as they browse through your file provider’s content. Instead, the system typically updates the working set as needed in the background. The system saves materialized copies of the working set’s content—letting the user access the content when offline. The device’s Spotlight database also indexes the working set’s contents. The system updates the Spotlight database whenever you notify it of changes to the working set.
 
-##### Track Materialized Items
+### Track Materialized Items
 
 When a remote update occurs, your file provider only needs to alert the system if the item or its parent are in the working set. To optimize remote updates, your File Provider extension can track items as the system materializes them or renders them dataless, adding or removing those items from the working set. If you don’t track the materialized items, your working set must include all items on your remote storage, and you must alert the system to all changes.
 
 The system calls your file provider’s [`materializedItemsDidChange(completionHandler:)`](./nsfileproviderreplicatedextension/materializeditemsdidchange%28completionhandler%29.md) method and posts a [`NSFileProviderMaterializedSetDidChange`](./nsfileprovidermaterializedsetdidchange.md) notification when it materializes a new item or when it renders a materialized item dataless. Your file provider must then enumerate the changes by calling [`enumeratorForMaterializedItems()`](./nsfileprovidermanager/enumeratorformaterializeditems%28%29.md) on the file provider manager for the corresponding domain, and use the provided enumerator to access the changes since the previous sync anchor. Update your working set based on these changes.
 
-##### Update the Local Copy
+### Update the Local Copy
 
 When the user, an app, or some other event creates, modifies, or deletes an item on your remote storage, your File Provider extension should check the working set to determine whether you need to signal an update. If your file provider doesn’t track materialized items, the working set includes all items on your remote storage, and you must signal an update for every change.
 

@@ -19,7 +19,7 @@ var tag: Int { get }
 @property (readonly) NSInteger tag;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `–1`. Subclasses can override this property to provide individual tags for views, possibly redefining the property as `readwrite` so that you can modify it more easily.
 

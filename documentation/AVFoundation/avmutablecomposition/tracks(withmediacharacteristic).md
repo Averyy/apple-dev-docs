@@ -25,11 +25,11 @@ func tracks(withMediaCharacteristic mediaCharacteristic: AVMediaCharacteristic) 
 - (NSArray<AVMutableCompositionTrack *> *) tracksWithMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Return Value
+## Return Value
 
 An array of composition tracks, which is empty if there are no matching tracks.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method. Load tracks asynchronously using [`loadTracks(withMediaCharacteristic:completionHandler:)`](./loadtracks%28withmediacharacteristic,completionhandler%29.md) instead.
 

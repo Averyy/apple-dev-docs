@@ -24,7 +24,7 @@ let HMCharacteristicTypeSetDuration: String
 extern NSString * const HMCharacteristicTypeSetDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an integer in units of seconds.
 

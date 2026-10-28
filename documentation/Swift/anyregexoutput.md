@@ -21,7 +21,7 @@ The type-erased, dynamic output of a regular expression match.
 struct AnyRegexOutput
 ```
 
-#### Overview
+## Overview
 
 When you find a match using regular expression that has `AnyRegexOutput` as its output type, you can find information about matches by iterating
 

@@ -23,7 +23,7 @@ func fma(y: some BNNSGraph.Builder.OperationParameter<T>, z: some BNNSGraph.Buil
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function treats the current tensor as `x` in `x * y + z`.
 

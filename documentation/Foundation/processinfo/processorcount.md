@@ -25,7 +25,7 @@ var processorCount: Int { get }
 @property (readonly) NSUInteger processorCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is equal to the result of entering the command `sysctl -n hw.ncpu` on the current system.
 

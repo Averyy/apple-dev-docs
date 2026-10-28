@@ -14,7 +14,7 @@ An entitlement that enables an app to use the Accessory Access framework to mana
 - **Name**: `com.apple.developer.accessory-access.usb`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement enables your app to gain exclusive access to USB devices using the Accessory Access framework.
 

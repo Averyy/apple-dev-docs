@@ -17,7 +17,7 @@ The unique name of an activity.
 struct DeviceActivityName
 ```
 
-#### Overview
+## Overview
 
 Use `DeviceActivityName` to associate an activity with some of your application’s data. It’s not possible to have multiple activities with the same name. Monitoring a second activity with the same name as a previous activity overwrites the schedule for the first one.
 

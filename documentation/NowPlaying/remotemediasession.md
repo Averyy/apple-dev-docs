@@ -22,7 +22,7 @@ class RemoteMediaSession<Attributes> where Attributes : RemoteMediaSessionAttrib
 
 - [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use a remote session to represent media playback sessions happening outside of this device, but that your app wants to donate to the system so they may appear in the system’s Now Playing interface.
 

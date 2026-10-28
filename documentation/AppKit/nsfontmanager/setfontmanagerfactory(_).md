@@ -19,7 +19,7 @@ class func setFontManagerFactory(_ factoryId: AnyClass?)
 + (void) setFontManagerFactory:(Class) factoryId;
 ```
 
-#### Discussion
+## Discussion
 
 When you call the [`shared`](./shared.md) method of [`NSFontManager`](../nsfontmanager.md), it creates an instance of `aClass`, if no instance already exists. The class in `aClass` must implement `init` as its designated initializer. The default font manager factory is `NSFontManager`.
 

@@ -24,7 +24,7 @@ var colorMaterialEnabled: GLboolean { get set }
 @property (nonatomic, assign) GLboolean colorMaterialEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is set to `GL_TRUE`, then the color attribute provided in the vertex data is used as the material’s color when performing any lighting calculations. If the value is set to `GL_FALSE` then the colors stored in the [`material`](./material.md) property are used to light the primitive. The default value is `GL_FALSE`.
 

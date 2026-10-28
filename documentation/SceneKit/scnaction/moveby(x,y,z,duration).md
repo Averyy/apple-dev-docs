@@ -25,11 +25,11 @@ class func moveBy(x deltaX: CGFloat, y deltaY: CGFloat, z deltaZ: CGFloat, durat
 + (SCNAction *) moveByX:(CGFloat) deltaX y:(CGFloat) deltaY z:(CGFloat) deltaZ duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`position`](../scnnode/position.md) property animates from its current position to its new position.
 

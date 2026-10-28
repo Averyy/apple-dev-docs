@@ -16,7 +16,7 @@ case denied
 INBookRestaurantReservationIntentCodeDenied
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the restaurant declines the reservation for any reason.
 

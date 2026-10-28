@@ -24,7 +24,7 @@ func accessibilityRowCount() -> Int
 - (NSUInteger) accessibilityRowCount;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows.
 

@@ -21,7 +21,7 @@ A transformer that composes two transformers by applying them one after the othe
 struct ComposedTransformer<Inner, Outer> where Inner : Transformer, Outer : Transformer, Inner.Output == Outer.Input
 ```
 
-#### Overview
+## Overview
 
 The inner transformer’s output must match the outer transformer input. The result of this transformer is equivalent to invoking `outer(inner(x))` on an input `x`,
 

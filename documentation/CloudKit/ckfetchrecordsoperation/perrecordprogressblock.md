@@ -25,7 +25,7 @@ var perRecordProgressBlock: ((CKRecord.ID, Double) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^perRecordProgressBlock)(CKRecordID *recordID, double progress);
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

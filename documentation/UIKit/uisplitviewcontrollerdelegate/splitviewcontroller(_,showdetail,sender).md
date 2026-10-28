@@ -23,11 +23,11 @@ optional func splitViewController(_ splitViewController: UISplitViewController, 
 - (BOOL) splitViewController:(UISplitViewController *) splitViewController showDetailViewController:(UIViewController *) vc sender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you handled the presentation of the view controller, or [`false`](../../Swift/false.md) if you want the split view controller to do it.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to classic split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

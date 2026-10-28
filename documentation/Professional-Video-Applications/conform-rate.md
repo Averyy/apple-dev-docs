@@ -5,7 +5,7 @@
 
 Apply rate conforming to match media frame rate to timeline frame rate.
 
-#### Overview
+## Overview
 
 When your media has specific combinations of timeline frame rate and media frame rate, Final Cut Pro automatically applies rate conforming by converting the media frame rate to match the timeline frame rate, as shown in the Final Cut Pro rate conforming chart below. As a result, Final Cut Pro also adjusts the duration. When this occurs, the Rate Conform section appears in Final Cut Pro Video Inspector. Use the `conform-rate` element to indicate rate conforming.
 

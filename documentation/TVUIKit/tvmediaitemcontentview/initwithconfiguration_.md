@@ -15,7 +15,7 @@ Creates a media item content view with the configuration you specify.
 - (instancetype) initWithConfiguration:(TVMediaItemContentConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`TVMediaItemContentView`](../tvmediaitemcontentview.md) instance.
 

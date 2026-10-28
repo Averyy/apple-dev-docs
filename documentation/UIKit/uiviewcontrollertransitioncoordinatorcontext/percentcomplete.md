@@ -24,11 +24,11 @@ var percentComplete: CGFloat { get }
 @property (nonatomic, readonly) CGFloat percentComplete;
 ```
 
-#### Return Value
+## Return Value
 
 The percentage of completion when an interactive transition moves to its noninteractive completion phase.
 
-#### Discussion
+## Discussion
 
 Use this value to determine how much of the interactive transition completed before the transition was canceled or moved to its final animations.
 

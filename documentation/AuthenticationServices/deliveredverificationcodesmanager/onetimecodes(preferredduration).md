@@ -20,7 +20,7 @@ Stream one-time codes received by the system.
 func oneTimeCodes(preferredDuration: TimeInterval) async throws -> some AsyncSequence<ASVerificationCode, any Error>
 ```
 
-#### Discussion
+## Discussion
 
 When requested, the user may decide whether your app may receive one-time codes. This stream will automatically disconnect after a period of time.
 

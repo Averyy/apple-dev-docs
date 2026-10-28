@@ -15,7 +15,7 @@ Creates an instance of a camera zoom range object with the specified numeric arg
 constructor(min: number, max: number);
 ```
 
-#### Discussion
+## Discussion
 
 Calling the constructor with minimal camera distance and maximum camera distance creates a [`CameraZoomRange`](../camerazoomrange.md) instance that constrains the camera.
 

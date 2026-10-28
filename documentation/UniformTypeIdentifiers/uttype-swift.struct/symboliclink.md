@@ -21,7 +21,7 @@ A type that represents a symbolic link.
 static var symbolicLink: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.symlink`.
 

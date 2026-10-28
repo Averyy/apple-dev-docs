@@ -27,7 +27,7 @@ func removeData(ofTypes dataTypes: Set<String>, modifiedSince date: Date) async
 - (void) removeDataOfTypes:(NSSet<NSString *> *) dataTypes modifiedSince:(NSDate *) date completionHandler:(void (^)(void)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the specified data type from all records, but only if a website modified the record’s data after the specified `date`.
 

@@ -19,7 +19,7 @@ class NSScrollView
 @interface NSScrollView : NSView
 ```
 
-#### Overview
+## Overview
 
 The [`NSScrollView`](./nsscrollview.md) class is the central coordinator for AppKit’s scrolling machinery, which is composed of this class, and the [`NSClipView`](./nsclipview.md) and [`NSScroller`](./nsscroller.md) classes.
 

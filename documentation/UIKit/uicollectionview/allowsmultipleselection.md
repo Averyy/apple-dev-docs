@@ -27,7 +27,7 @@ var allowsMultipleSelection: Bool { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 This property controls whether multiple items can be selected simultaneously. The default value of this property is [`false`](../../Swift/false.md).
 

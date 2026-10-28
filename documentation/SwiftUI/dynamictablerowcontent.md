@@ -19,7 +19,7 @@ A type of table row content that generates table rows from an underlying collect
 protocol DynamicTableRowContent : TableRowContent
 ```
 
-#### Overview
+## Overview
 
 This table row content type provides drag-and-drop support for tables. Use the [`onInsert(of:perform:)`](./dynamictablerowcontent/oninsert%28of,perform%29.md) modifier to add an action to call when the table inserts new contents into its underlying collection.
 

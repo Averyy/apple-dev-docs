@@ -13,7 +13,7 @@ List configured collections.
 **Availability**:
 - Swift 5.5+
 
-#### Overview
+## Overview
 
 This subcommand lists all collections that are configured by the user:
 
@@ -25,7 +25,7 @@ Sample Package Collection - https://example.com/packages.json
 
 The result can optionally be returned as JSON using `--json` for integration into other tools.
 
-#### Usage
+## Usage
 
 ```
 package-collection list [--json]

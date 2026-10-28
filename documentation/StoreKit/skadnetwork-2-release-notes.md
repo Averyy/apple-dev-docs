@@ -5,7 +5,7 @@
 
 A version of SKAdNetwork available in iOS 14 and later.
 
-#### Overview
+## Overview
 
 Use `“2.0”` as the version number when signing ads for this version.
 
@@ -23,7 +23,7 @@ MEkwEwYHKoZIzj0CAQYIKoZIzj0DAQEDMgAEMyHD625uvsmGq4C43cQ9BnfN2xslVT5V1nOmAMP6qaRR
 
 For more information, see [Verifying an install-validation postback](./verifying-an-install-validation-postback.md).
 
-##### New features
+### New features
 
 New features include:
 

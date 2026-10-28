@@ -25,7 +25,7 @@ var expectedContentLength: Int64 { get }
 @property (readonly) long long expectedContentLength;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is [`NSURLResponseUnknownLength`](../nsurlresponseunknownlength.md) if the length can’t be determined.
 

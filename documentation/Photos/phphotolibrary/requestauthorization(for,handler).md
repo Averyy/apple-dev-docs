@@ -33,7 +33,7 @@ class func requestAuthorization(for accessLevel: PHAccessLevel) async -> PHAutho
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 For more information about accessing the user’s Photos library, see [Delivering an Enhanced Privacy Experience in Your Photos App](../../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md).
 

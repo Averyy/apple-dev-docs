@@ -27,7 +27,7 @@ optional func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWit
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 Use this method to respond to taps in the detail button accessory view of a row. The table view does not call this method for other types of accessory views.
 

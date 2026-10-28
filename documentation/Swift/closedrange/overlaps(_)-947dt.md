@@ -23,11 +23,11 @@ func overlaps(_ other: Range<Bound>) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if this range and `other` have at least one element in common; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This example shows two overlapping ranges:
 

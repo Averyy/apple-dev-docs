@@ -25,7 +25,7 @@ var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 @property (nonatomic, copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The default value on iOS is [`lowQualityZeroLatency`](../avaudiotimepitchalgorithm/lowqualityzerolatency.md); on macOS, the default is [`timeDomain`](../avaudiotimepitchalgorithm/timedomain.md). The device automatically mutes audio when [`timebase`](../avqueuedsamplebufferrendering/timebase.md) is not supported by [`AVAudioTimePitchAlgorithm`](../avaudiotimepitchalgorithm.md). Modifying this property while [`timebase`](../avqueuedsamplebufferrendering/timebase.md) is not `0.0` may cause the rate to briefly change to `0.0`.
 

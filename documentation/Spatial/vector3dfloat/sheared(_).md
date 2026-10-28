@@ -21,7 +21,7 @@ Returns a sheared vector.
 func sheared(_ shear: AxisWithFactors) -> Vector3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The sheared vector.
 

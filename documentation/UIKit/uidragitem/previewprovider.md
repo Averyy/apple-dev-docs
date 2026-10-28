@@ -22,7 +22,7 @@ var previewProvider: (() -> UIDragPreview?)? { get set }
 @property (nonatomic, copy, nullable) UIDragPreview * (^previewProvider)();
 ```
 
-#### Discussion
+## Discussion
 
 As the user drags an item across the screen, the system displays a preview. You can change the preview by setting [`previewProvider`](./previewprovider.md) to a block that returns a [`UIDragPreview`](../uidragpreview.md) object. The system invokes the block if and when it needs the drag item preview.
 

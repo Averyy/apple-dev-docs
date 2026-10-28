@@ -25,7 +25,7 @@ case failureCredentialsUnverified
 INSearchForBillsIntentResponseCodeFailureCredentialsUnverified
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you’re unable to verify the credentials of the current user. You might use this response code if the user is currently logged out of your app or is unknown to you. You might also use it if the user’s account isn’t configured to handle bill payments.
 

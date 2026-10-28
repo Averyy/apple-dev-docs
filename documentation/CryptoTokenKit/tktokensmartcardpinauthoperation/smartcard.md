@@ -25,7 +25,7 @@ var smartCard: TKSmartCard? { get set }
 @property (nullable) TKSmartCard * smartCard;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only used if the [`apduTemplate`](./apdutemplate.md) property has a set value.
 

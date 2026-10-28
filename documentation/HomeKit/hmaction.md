@@ -24,7 +24,7 @@ class HMAction
 @interface HMAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Actions can be added to [`HMActionSet`](./hmactionset.md) objects. Action sets can then be set for automatic execution in response to specific conditions using [`HMTrigger`](./hmtrigger.md) objects, or manually triggered with [`executeActionSet(_:completionHandler:)`](./hmhome/executeactionset%28_,completionhandler%29.md).
 

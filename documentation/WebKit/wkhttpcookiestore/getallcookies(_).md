@@ -27,7 +27,7 @@ func allCookies() async -> [HTTPCookie]
 - (void) getAllCookies:(void (^)(NSArray<NSHTTPCookie *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get the set of cookies currently associated with your web view. Iterate over the contents of the provided array to retrieve the specific cookie you need for your code.
 

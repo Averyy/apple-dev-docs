@@ -19,7 +19,7 @@ A unique identifier that distinguishes one person from another.
 case custom
 ```
 
-#### Discussion
+## Discussion
 
 An example of a handle can be a custom user ID.
 

@@ -20,7 +20,7 @@ var ES_PROC_CHECK_TYPE_LISTPIDS: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_LISTPIDS
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_listpids`, `proc_listallpids`, `proc_listpgrppids`, and `proc_listchildpids` functions from `libproc.h`.
 

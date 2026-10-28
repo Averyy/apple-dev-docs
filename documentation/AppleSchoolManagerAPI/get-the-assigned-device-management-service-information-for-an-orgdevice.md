@@ -9,7 +9,7 @@ Get the assigned device management service information for a device.
 **Availability**:
 - Apple School Manager API 1.7+
 
-##### Example
+### Example
 
 **Request**:
 

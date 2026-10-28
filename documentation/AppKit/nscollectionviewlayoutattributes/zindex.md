@@ -19,7 +19,7 @@ var zIndex: Int { get set }
 @property NSInteger zIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the front-to-back ordering of items during layout. Items with higher index values appear on top of those with lower values. Items with the same value have an undetermined order.
 

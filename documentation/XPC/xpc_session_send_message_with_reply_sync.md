@@ -21,11 +21,11 @@ Sends a message over the session to the destination service, blocking the caller
 extern xpc_object_txpc_session_send_message_with_reply_sync(xpc_session_t session, xpc_object_t message, xpc_rich_error_t*error_out);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, the response to the message; otherwise [`nil`](../ObjectiveC/nil-227m0.md).
 
-#### Discussion
+## Discussion
 
 This method supports priority inversion avoidance. Use this method instead of calling [`xpc_session_send_message_with_reply_async`](./xpc_session_send_message_with_reply_async.md) and using a semaphore.
 

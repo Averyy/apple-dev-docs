@@ -25,7 +25,7 @@ var currentEventSkipControlLabel: String? { get }
 @property (readonly, nullable) NSString * currentEventSkipControlLabel;
 ```
 
-#### Discussion
+## Discussion
 
 If a localizedStringsBundle has been set on the AVPlayerInterstitialEventController, and a skipControlLocalizedLabelBundleKey is set on the currentEvent, then this value will be the localized string that was matched to the event’s skipControlLocalizedLabelBundleKey for the corresponding system language in the supplied Bundle, if any. If currentEvent is nil, then the value will be nil.
 

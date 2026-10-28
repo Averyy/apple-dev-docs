@@ -17,7 +17,7 @@ Creates a contactless card session.
 init() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Creating a card session depends on the following conditions:
 

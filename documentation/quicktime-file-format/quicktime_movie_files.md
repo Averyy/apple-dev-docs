@@ -5,7 +5,7 @@
 
 The QuickTime file format describes the characteristics of QuickTime movie files.
 
-#### Overview
+## Overview
 
 A QuickTime movie file contains a QuickTime movie resource, or else points to one or more external sources using movie references. The media samples used by the movie (such as video frames or groups of audio samples) may be included in the movie file, or may be external to the movie file in one or more files, streams, or other sources.
 

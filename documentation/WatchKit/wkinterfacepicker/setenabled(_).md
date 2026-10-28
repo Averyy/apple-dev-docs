@@ -19,7 +19,7 @@ func setEnabled(_ enabled: Bool)
 - (void) setEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 A disabled picker does not respond to taps in its content area and cannot receive focus. When the user selects an item in an enabled picker, WatchKit executes the associated action method (if any) in your WatchKit extension code.
 

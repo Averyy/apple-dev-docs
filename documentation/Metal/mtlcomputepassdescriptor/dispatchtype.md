@@ -24,7 +24,7 @@ var dispatchType: MTLDispatchType { get set }
 @property (nonatomic) MTLDispatchType dispatchType;
 ```
 
-#### Discussion
+## Discussion
 
 The default dispatch type is [`MTLDispatchType.serial`](../mtldispatchtype/serial.md).
 

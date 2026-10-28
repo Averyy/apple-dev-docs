@@ -10,11 +10,11 @@ framework: "swift-configuration/Configuration"
 
 Review common use cases with ready-to-copy code samples.
 
-#### Overview
+## Overview
 
 For complete working examples with step-by-step instructions, see the [Examples directory](https://github.com/apple/swift-configuration/tree/main/Examples) in the repository.
 
-##### Reading from environment variables
+### Reading from environment variables
 
 Use [`EnvironmentVariablesProvider`](./environmentvariablesprovider.md) to read configuration values from environment variables where your app launches. The following example creates a [`ConfigReader`](./configreader.md) with an environment variable provider, and reads the key `server.port`, providing a default value of `8080`:
 
@@ -27,7 +27,7 @@ let port = config.int(forKey: "server.port", default: 8080)
 
 The default environment key encoder uses an underscore to separate key components, making the environment variable name above `SERVER_PORT`.
 
-##### Reading from a JSON configuration file
+### Reading from a JSON configuration file
 
 You can store multiple configuration values together in a JSON file and read them from the filesystem using [`FileProvider`](./fileprovider.md) with [`JSONSnapshot`](./jsonsnapshot.md). The following example creates a [`ConfigReader`](./configreader.md) for a JSON file at the path `/etc/config.json`, and reads a url and port number collected as properties of the `database` JSON object:
 
@@ -54,7 +54,7 @@ The matching JSON for this configuration might look like:
 }
 ```
 
-##### Reading from a directory of secret files
+### Reading from a directory of secret files
 
 Use the [`DirectoryFilesProvider`](./directoryfilesprovider.md) to read multiple values collected together in a directory on the filesystem, each in a separate file. The default directory key encoder uses a hyphen in the filename to separate key components. The following example uses the directory `/run/secrets` as a base, and reads the file `database-password` as the key `database.password`:
 
@@ -76,7 +76,7 @@ This pattern is useful for reading secrets that your infrastructure makes availa
 
 > 💡 **Tip**: For comprehensive guidance on handling secrets securely, see [Handling secrets correctly](./handling-secrets-correctly.md).
 
-##### Handling optional configuration files
+### Handling optional configuration files
 
 File-based providers support an `allowMissing` parameter to control whether the provider throws an error for missing files or treats them as empty configuration. This is useful when configuration files are optional.
 
@@ -141,7 +141,7 @@ let reloadingConfig = ConfigReader(
 
 > ❗ **Important**: The `allowMissing` parameter only affects missing files. Malformed files, such as invalid JSON and YAML syntax errors will still throw parsing errors regardless of this setting.
 
-##### Setting up a fallback hierarchy
+### Setting up a fallback hierarchy
 
 Use multiple providers together to provide a configuration hierarchy that can override values at different levels. The following example uses both an environment variable provider and a JSON provider together, with values from environment variables overriding values from the JSON file. In this example, an [`InMemoryProvider`](./inmemoryprovider.md) provides the defaults, which the reader only consults if the environment variable or the JSON key don’t exist:
 
@@ -162,7 +162,7 @@ let config = ConfigReader(providers: [
 ])
 ```
 
-##### Fetching a value from a remote source
+### Fetching a value from a remote source
 
 You can host dynamic configuration that your app can retrieve remotely and use either the “fetch” or “watch” access pattern. The following example uses the “fetch” access pattern to asynchronously retrieve a configuration from the remote provider:
 
@@ -178,7 +178,7 @@ let samplingRatio = try await config.fetchDouble(forKey: "sampling.ratio")
 
 > 💡 **Tip**: To understand when to use each access pattern, check out [Choosing the access pattern](./choosing-access-patterns.md).
 
-##### Watching for configuration changes
+### Watching for configuration changes
 
 You can periodically update configuration values using a reloading provider. The following example reloads a YAML file from the filesystem every 30 seconds, and illustrates using [`watchInt(forKey:isSecret:fileID:line:updatesHandler:)`](./configreader/watchint%28forkey,issecret,fileid,line,updateshandler%29.md) to provide an async sequence of updates that you can apply.
 
@@ -209,7 +209,7 @@ try await config.watchInt(forKey: "http.requestTimeout", default: 30) { updates 
 
 For details on reloading providers and ServiceLifecycle integration, see [Using reloading providers](./using-reloading-providers.md).
 
-##### Prefixing configuration keys
+### Prefixing configuration keys
 
 In most cases, the provider can directly use the configuration key from the reader, for example using `http.timeout` as the environment variable name `HTTP_TIMEOUT`.
 

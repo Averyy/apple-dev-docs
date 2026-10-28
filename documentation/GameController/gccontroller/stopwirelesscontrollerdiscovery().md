@@ -24,7 +24,7 @@ class func stopWirelessControllerDiscovery()
 + (void) stopWirelessControllerDiscovery;
 ```
 
-#### Discussion
+## Discussion
 
 If you call this method while the framework searches for wireless controllers, the framework stops searching and invokes the completion handler you pass to the [`startWirelessControllerDiscovery(completionHandler:)`](./startwirelesscontrollerdiscovery%28completionhandler%29.md) method.
 

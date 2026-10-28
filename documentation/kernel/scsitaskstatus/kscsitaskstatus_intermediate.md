@@ -13,7 +13,7 @@
 kSCSITaskStatus_INTERMEDIATE = 0x10
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of INTERMEDIATE.
 

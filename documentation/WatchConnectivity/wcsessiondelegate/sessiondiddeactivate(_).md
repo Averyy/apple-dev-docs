@@ -23,7 +23,7 @@ func sessionDidDeactivate(_ session: WCSession)
 - (void) sessionDidDeactivate:(WCSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 You must implement this method to support quick switching between Apple Watch devices in your iOS app. The session calls this method when there is no more pending data to deliver to your app and the previous session can be formally closed.
 

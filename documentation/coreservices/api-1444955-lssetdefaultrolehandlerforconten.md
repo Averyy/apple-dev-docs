@@ -20,15 +20,15 @@ func LSSetDefaultRoleHandlerForContentType(_ inContentType: CFString, _ inRole: 
 OSStatus LSSetDefaultRoleHandlerForContentType(CFStringRef inContentType, LSRolesMask inRole, CFStringRef inHandlerBundleID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 Call [`LSCopyDefaultRoleHandlerForContentType(_:_:)`](./api-1449868-lscopydefaultrolehandlerforconte.md) to get the current setting of the user’s preferred default handler for a specified content type.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since OS X v10.4.
 

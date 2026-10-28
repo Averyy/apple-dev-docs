@@ -23,11 +23,11 @@ func recommendedVideoSettingsForAssetWriter(writingTo outputFileType: AVFileType
 - (NSDictionary<NSString *,id> *) recommendedVideoSettingsForAssetWriterWithOutputFileType:(AVFileType) outputFileType;
 ```
 
-#### Return Value
+## Return Value
 
 A fully populated dictionary of keys and values that are compatible with [`AVAssetWriter`](../avassetwriter.md).
 
-#### Discussion
+## Discussion
 
 This dictionary contains keys and values described in [Video settings](../video-settings.md) and is suitable for use when creating an [`AVAssetWriterInput`](../avassetwriterinput.md) with the [`init(mediaType:outputSettings:)`](../avassetwriterinput/init%28mediatype,outputsettings%29.md) initializer. For QuickTime movie and ISO file types, the recommended video settings produce output comparable to that of [`AVCaptureMovieFileOutput`](../avcapturemoviefileoutput.md).
 

@@ -25,7 +25,7 @@ extern void vDSP_conv(const float *__A, vDSP_Stride __IA, const float *__F, vDSP
 
 - [Controlling vDSP operations with stride](./controlling-vdsp-operations-with-stride.md)
 
-#### Discussion
+## Discussion
 
 Use this function to compute either the convolution or the correlation of an input signal and a filter vector. Both operations compute the sliding dot product of the filter and the section of the input signal that the filter is over. Specify a positive stride through the filter to perform correlation and a negative stride through the filter to perform convolution. When you perform convolution, the `__F` parameter must point to the last element in the filter.
 
@@ -39,7 +39,7 @@ let filter: [Float] = [10, 20, 30]
 let outputCount = signal.count - filter.count + 1
 ```
 
-##### Perform Correlation
+### Perform Correlation
 
 The following code performs correlation. In this example, the stride through the filter is `1`:
 
@@ -84,7 +84,7 @@ On return, `correlationResult` contains the values `[140.0, 200.0, 260.0, 320.0,
 
 ![A block diagram of a correlation operation. The top row represents the input signal and contains eight cells numbered one through eight. The six subsequent rows represent the output elements that the function calculates from the three-element filter sliding from left to right. For example, the bottom row represents the last output element and aligns with the input cells six, seven, and eight. The value of the last  output element is the sum of six times ten, seven times twenty, and eight times thirty, where ten, twenty, and thirty are the three filter elements.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3920909@2x.png)
 
-##### Perform Convolution
+### Perform Convolution
 
 The following code performs convolution. In this example, the stride through the filter is `-1` and the filter parameter points to the last element in the filter:
 

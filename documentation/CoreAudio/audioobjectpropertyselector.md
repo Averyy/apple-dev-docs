@@ -18,7 +18,7 @@ typealias AudioObjectPropertySelector = UInt32
 typedef UInt32 AudioObjectPropertySelector;
 ```
 
-#### Discussion
+## Discussion
 
 An AudioObjectPropertySelector is a four char code that identifies, along with the AudioObjectPropertyScope and AudioObjectPropertyElement, a specific piece of information about an AudioObject.
 

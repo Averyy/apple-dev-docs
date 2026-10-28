@@ -24,7 +24,7 @@ var indexBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange indexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes share the same index buffer, with each index representing the first control point of a curve segment.
 

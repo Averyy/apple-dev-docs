@@ -21,7 +21,7 @@ The stream used to deliver the HTTP body.
 var httpBodyStream: InputStream? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The stream is returned for examination only; it’s unsafe for the caller to manipulate the stream in any way.
 

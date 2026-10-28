@@ -20,7 +20,7 @@ struct es_tcc_authorization_reason_t
 typedef enum { ... } es_tcc_authorization_reason_t;
 ```
 
-#### Overview
+## Overview
 
 Represents the reason a TCC permission was updated.
 

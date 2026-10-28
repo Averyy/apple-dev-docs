@@ -26,7 +26,7 @@ func matching(identifier: String) -> XCUIElementQuery
 - (XCUIElementQuery *) matchingIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A new query that defines a search that extends the search criteria of the receiver. The new search matches elements that match the original search and have an identifying property that matches a provided identifier.
 

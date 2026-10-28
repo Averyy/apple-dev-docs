@@ -19,7 +19,7 @@ var accessoryView: NSView? { get set }
 @property (strong, nullable) NSView * accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 You can customize the window tab by adding an accessory view that displays alongside the tab’s title.
 

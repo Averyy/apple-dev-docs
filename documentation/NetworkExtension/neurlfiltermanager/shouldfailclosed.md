@@ -18,7 +18,7 @@ A Boolean value that determines how the filter behaves if it fails to make a fil
 var shouldFailClosed: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the filter blocks URLs if the filter is enabled but failed to make any filtering decision. This can be the case when the filter encounters a communication failure with the PIR server. If the value is `false`, URLs are allowed even if the filter failed to make a filtering decision.
 

@@ -24,7 +24,7 @@ var isCumulative: Bool { get set }
 @property (getter=isCumulative) BOOL cumulative;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), then the value of the property is the value at the end of the previous repeat cycle, plus the value of the current repeat cycle. If [`false`](../../Swift/false.md), the value of the property is simply the value calculated for the current repeat cycle. The default is [`false`](../../Swift/false.md).
 

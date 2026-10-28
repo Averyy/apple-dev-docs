@@ -25,7 +25,7 @@ var weekday: Int { get set }
 @property NSInteger weekday;
 ```
 
-#### Discussion
+## Discussion
 
 Weekday units are the numbers 1 through *n*, where *n* is the number of days in the week. For example, in the Gregorian calendar, *n* is 7 and Sunday is represented by 1.
 

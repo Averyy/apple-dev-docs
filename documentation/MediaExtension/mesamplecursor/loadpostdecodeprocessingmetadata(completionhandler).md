@@ -23,7 +23,7 @@ optional func postDecodeProcessingMetadata() async throws -> [String : any Senda
 - (void) loadPostDecodeProcessingMetadataWithCompletionHandler:(void (^)(NSDictionary<NSString *,id> *postDecodeProcessingMetadata, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should provide either a valid NSDictionary or `nil`. If the method fails, the NSError will contain error information.
 

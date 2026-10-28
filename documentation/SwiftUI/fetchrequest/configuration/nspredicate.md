@@ -22,7 +22,7 @@ The request’s predicate.
 @preconcurrency var nsPredicate: NSPredicate?
 ```
 
-#### Discussion
+## Discussion
 
 Set this configuration value to cause a [`FetchRequest`](../../fetchrequest.md) to execute a fetch with a new predicate.
 

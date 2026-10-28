@@ -19,7 +19,7 @@ var hasStepwiseTemporalSubLayerAccess: Bool { get set }
 @property (nonatomic, getter=hasStepwiseTemporalSubLayerAccess) BOOL stepwiseTemporalSubLayerAccess;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMSampleAttachmentKey_HEVCStepwiseTemporalSubLayerAccess`](../../CoreMedia/kcmsampleattachmentkey_hevcstepwisetemporalsublayeraccess.md) sample buffer attachment.
 

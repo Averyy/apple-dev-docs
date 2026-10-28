@@ -23,7 +23,7 @@ var nativeAudioFormat: AVAudioFormat { get }
 @property (nonatomic, readonly) AVAudioFormat * nativeAudioFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Use the audio format in this property as a hint for optimal recording, but don’t depend on the value remaining unchanged.
 

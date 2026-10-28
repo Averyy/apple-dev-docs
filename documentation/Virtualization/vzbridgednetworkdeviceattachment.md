@@ -19,7 +19,7 @@ class VZBridgedNetworkDeviceAttachment
 @interface VZBridgedNetworkDeviceAttachment : VZNetworkDeviceAttachment
 ```
 
-#### Overview
+## Overview
 
 A [`VZBridgedNetworkDeviceAttachment`](./vzbridgednetworkdeviceattachment.md) object represents a physical interface on the host computer. Use this object when configuring a network interface for your virtual machine. A bridged network device sends and receives packets on the same physical interface as the host computer, but does so using a different network layer.
 

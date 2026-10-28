@@ -22,7 +22,7 @@ A control for navigating to a URL.
 @preconcurrency struct Link<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Create a link by providing a destination URL and a title. The title tells the user the purpose of the link, and can be a string, a title key that produces a localized string, or a view that acts as a label. The example below creates a link to `example.com` and displays the title string as a link-styled view:
 

@@ -15,11 +15,11 @@ The object for setting borders for tables.
 object TableBorder
 ```
 
-#### Discussion
+## Discussion
 
 The `TableBorder` object defines a table cell border. The border style is the same for all sides of the table cell. Use a value of `false` for any side of a border that you don’t want to show.
 
-##### Example
+### Example
 
 ```json
 {

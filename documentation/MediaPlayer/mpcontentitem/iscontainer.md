@@ -24,7 +24,7 @@ var isContainer: Bool { get set }
 @property (nonatomic, assign, getter=isContainer) BOOL container;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the designated content item’s identified as being able to contain other content items. For example, an album is a container that holds multiple songs.
 

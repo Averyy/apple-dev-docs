@@ -12,7 +12,7 @@ The acceleration value for the z axis of the device.
 @property (nonatomic, readonly) UIAccelerationValue z;
 ```
 
-#### Discussion
+## Discussion
 
 With the device held in portrait orientation and the screen facing you, the z axis runs from back (negative values) to front (positive values) through the device.
 

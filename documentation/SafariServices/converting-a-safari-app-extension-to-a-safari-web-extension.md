@@ -5,7 +5,7 @@
 
 Unify your web extensions and simplify development by sharing code with a Safari web extension.
 
-#### Overview
+## Overview
 
 Safari 14 and later in macOS and Safari 15 and later in iOS include support for Safari web extensions, which support the same JavaScript APIs that other browsers use in their extensions. If you have an extension for other browsers and a Safari app extension that offer the same features, you can replace your Safari app extension with a Safari web extension and share code.
 
@@ -17,7 +17,7 @@ To convert your Safari app extension to a Safari web extension:
 - Update the JavaScript APIs from your Safari app extension that are specific to Safari to use the Safari web extensions JavaScript APIs. For more information, see [Assessing your Safari web extension’s browser compatibility](./assessing-your-safari-web-extension-s-browser-compatibility.md).
 - Update your `Info.plist` file to migrate your users (see details below).
 
-##### Migrate your users to your Safari web extension
+### Migrate your users to your Safari web extension
 
 To replace your Safari app extension with a Safari web extension, you just need to update your `Info.plist` file to migrate your users from one to the other.
 

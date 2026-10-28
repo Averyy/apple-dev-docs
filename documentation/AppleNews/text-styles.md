@@ -5,7 +5,7 @@
 
 Learn about text styles and how to apply them to your text and text components.
 
-#### Overview
+## Overview
 
 With Apple News Format, you can determine every detail about the appearance of your text, from fonts to special effects. Here are some of the things you can do with text styles:
 

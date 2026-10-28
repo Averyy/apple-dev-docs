@@ -19,7 +19,7 @@ var isSkipBackwardEnabled: Bool { get set }
 @property (nonatomic, getter=isSkipBackwardEnabled) BOOL skipBackwardEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property affects the appearance of the backward-skipping indicator. The value you set for the player view controller’s [`skippingBehavior`](./skippingbehavior.md) property determines its backward-skipping behavior.
 

@@ -5,7 +5,7 @@
 
 Customize the appearance of your iOS app’s notification alerts with a notification content app extension.
 
-#### Overview
+## Overview
 
 When an iOS device receives a notification containing an alert, the system displays the contents of the alert in two stages. Initially, it displays an abbreviated banner with the title, subtitle, and two to four lines of body text from the notification. If the user presses the abbreviated banner, iOS displays the full notification interface, including any notification-related actions. The system provides the interface for the abbreviated banner, but you can customize the full interface using a notification content app extension.
 
@@ -22,7 +22,7 @@ Your app extension must configure its view controller using the data immediately
 
 > **Note**: Notification content app extensions are supported only in iOS apps. For information about how to customize the appearance of notifications in watchOS, see [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969).
 
-##### Add the Notification Content App Extension to Your Project
+### Add the Notification Content App Extension to Your Project
 
 To add a notification content app extension to your iOS app:
 
@@ -34,7 +34,7 @@ To add a notification content app extension to your iOS app:
 
 > **Note**: You may add more than one notification content app extension to your project, but each one must support a unique set of notification categories. You specify the categories for your app extension in its `Info.plist` file, as described in [Declare the Supported Notification Types](./customizing-the-appearance-of-notifications.md#Declare-the-Supported-Notification-Types).
 
-##### Add Views to Your View Controller
+### Add Views to Your View Controller
 
 The template provided by Xcode includes a storyboard and a view controller for you to configure. Build your custom notification interface by adding views to your view controller. For example, use labels to display the title, subtitle, and body text of the notification. You can also add image views and views that display noninteractive content. You don’t need to provide any initial content for your views.
 
@@ -42,7 +42,7 @@ You can add interactive controls (for example, buttons or switches) in iOS 12 an
 
 > ❗ **Important**: Don’t add additional view controllers to your app extension or storyboard file. Your app extension must contain exactly one view controller.
 
-##### Configure Your View Controller
+### Configure Your View Controller
 
 Use the [`didReceive(_:)`](./unnotificationcontentextension/didreceive%28_%29.md) method of your view controller to update its labels and other views. The notification payload contains the data to use when configuring your view controller. You can also use data from the other files of your app extension. The code listing below shows a version of this method that retrieves the title and body text from the notification payload and assigns the strings to two [`UILabel`](../UIKit/uilabel.md) controls, which are stored as outlets on the view controller.
 
@@ -55,7 +55,7 @@ func didReceive(_ notification: UNNotification) {
 
 If a second notification arrives when your view controller is already visible, the system calls the [`didReceive(_:)`](./unnotificationcontentextension/didreceive%28_%29.md) method again with the new notification payload.
 
-##### Declare the Supported Notification Types
+### Declare the Supported Notification Types
 
 Specify the types of notifications for which your notification content app extension provides an interface. When it receives a notification, the system matches the notification’s category value—its type—with the declared categories of any notification content app extensions in your app. If it finds a match, the system loads the corresponding app extension.
 
@@ -71,7 +71,7 @@ For a local notification, put its category string into the [`categoryIdentifier`
 
 For more information about the keys in your `Info.plist` file, see [`UNNotificationContentExtension`](./unnotificationcontentextension.md).
 
-##### Hide the Default Notification Interface
+### Hide the Default Notification Interface
 
 The system displays some default information with every notification, including those for which you provide a custom interface. The system always displays a header that includes the app name and icon. The system also displays an interface with the title, subtitle, and body text of the notification, but you can hide this portion of the interface if you prefer.
 
@@ -81,7 +81,7 @@ For example, you might hide the default notification interface if your custom in
 
 To remove the default system content, add the `UNNotificationExtensionDefaultContentHidden` key to your extension’s `Info.plist` file and set the value of the key to `true`. For more information about this key, see [`UNNotificationContentExtension`](./unnotificationcontentextension.md).
 
-##### Incorporating Media Into Your Interface
+### Incorporating Media Into Your Interface
 
 To support the playback of audio or video from your custom notifications interface, implement the following:
 
@@ -94,7 +94,7 @@ The system draws a media button for you, handling all user interactions. When th
 
 To programmatically start or stop playback of your media file, call the current [`NSExtensionContext`](../Foundation/nsextensioncontext.md) object’s [`mediaPlayingStarted()`](../Foundation/nsextensioncontext/mediaplayingstarted%28%29.md) and [`mediaPlayingPaused()`](../Foundation/nsextensioncontext/mediaplayingpaused%28%29.md) methods. Use your view controller’s [`extensionContext`](../UIKit/uiviewcontroller/extensioncontext.md) property to access the extension context.
 
-##### Support Interactive Controls
+### Support Interactive Controls
 
 In iOS 12 and later you can enable user interactions in your custom notifications. This lets you add interactive controls, such as buttons and switches to your custom interface.
 

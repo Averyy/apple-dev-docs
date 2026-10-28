@@ -18,7 +18,7 @@ Indicates that the camera needs to view the phsyical environment under better li
 extern NIAlgorithmConvergenceStatusReason const NIAlgorithmConvergenceStatusReasonInsufficientLighting;
 ```
 
-#### Discussion
+## Discussion
 
 Coach the user to resolve the issue, such as by presenting text that asks the user to turn on the lights.
 

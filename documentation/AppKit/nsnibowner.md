@@ -15,7 +15,7 @@ The external object that is responsible for the instantiated nib.
 extern NSString * NSNibOwner;
 ```
 
-#### Discussion
+## Discussion
 
 This key is required.
 

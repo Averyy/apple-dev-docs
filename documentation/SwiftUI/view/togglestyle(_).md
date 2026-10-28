@@ -22,11 +22,11 @@ nonisolated
 func toggleStyle<S>(_ style: S) -> some View where S : ToggleStyle
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified toggle style for itself and its child views.
 
-#### Discussion
+## Discussion
 
 Use this modifier on a [`Toggle`](../toggle.md) instance to set a style that defines the control’s appearance and behavior. For example, you can choose the [`switch`](../togglestyle/switch.md) style:
 
@@ -42,7 +42,7 @@ Built-in styles typically have a similar appearance across platforms, tailored t
 | iOS, iPadOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is green. The toggle and its text appear in a rounded rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-1-iOS@2x.png) |
 | macOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is blue. The toggle and its text appear on a neutral background.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-1-macOS@2x.png) |
 
-##### Styling toggles in a hierarchy
+### Styling toggles in a hierarchy
 
 You can set a style for all toggle instances within a view hierarchy by applying the style modifier to a container view. For example, you can apply the [`button`](../togglestyle/button.md) style to an [`HStack`](../hstack.md):
 
@@ -65,7 +65,7 @@ The example above has the following appearance when `isFlagged` is `true` and `i
 | iOS, iPadOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-2-iOS@2x.png) |
 | macOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-toggleStyle-2-macOS@2x.png) |
 
-##### Automatic styling
+### Automatic styling
 
 If you don’t set a style, SwiftUI assumes a value of [`automatic`](../togglestyle/automatic.md), which corresponds to a context-specific default. Specify the automatic style explicitly to override a container’s style and revert to the default:
 

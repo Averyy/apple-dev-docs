@@ -20,7 +20,7 @@ A texture you can create and export with lossy compression.
 static var `default`: TextureResource.Compression { get }
 ```
 
-#### Discussion
+## Discussion
 
 The selected compression preserves perceptual texture details (no aggressive compression).
 

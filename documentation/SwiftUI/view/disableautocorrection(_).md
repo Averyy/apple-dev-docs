@@ -24,7 +24,7 @@ nonisolated
 func disableAutocorrection(_ disable: Bool?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when the effect of autocorrection would make it more difficult for the user to input information. The entry of proper names and street addresses are examples where autocorrection can negatively affect the user’s ability complete a data entry task.
 

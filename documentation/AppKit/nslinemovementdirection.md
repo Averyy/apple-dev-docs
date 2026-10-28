@@ -15,7 +15,7 @@ The direction in which a line moves.
 enum NSLineMovementDirection : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Line movement is the direction in which lines move. For information on line sweep direction, see [`NSLineSweepDirection`](./nslinesweepdirection.md).
 

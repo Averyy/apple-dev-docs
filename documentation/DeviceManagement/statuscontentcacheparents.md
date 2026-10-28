@@ -15,9 +15,9 @@ The status item that reports information about the Content Cache service parent 
 object StatusContentCacheParents
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +28,7 @@ object StatusContentCacheParents
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 **New or updated parent**:
 

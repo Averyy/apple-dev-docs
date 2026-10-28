@@ -32,7 +32,7 @@ var identifier: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Identifier is used only for properties in labeled arrays. If the property is not an array of labeled values, the value of the identifier is `nil`.
 

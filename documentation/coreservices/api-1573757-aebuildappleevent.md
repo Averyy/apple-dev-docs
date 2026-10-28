@@ -15,11 +15,11 @@ Constructs an entire Apple event in a single call.
 OSStatus AEBuildAppleEvent(AEEventClass theClass, AEEventID theID, DescType addressType, const void *addressData, Size addressLength, SInt16 returnID, SInt32 transactionID, AppleEvent *result, AEBuildError *error, const char *paramsFmt, ...);
 ```
 
-#### Return Value
+## Return Value
 
 A numeric result code indicating the success of the call. A value of `AEBuildSyntaxNoErr` (zero) means the call succeeded. You can use the `error` parameter to discover information about other errors. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 **IMPORTANT:** Following the parameters described above, the `AEBuildAppleEvent` function takes a variable number of parameters as specified by the format string provided in the `paramsFmt` parameter.
 
@@ -33,7 +33,7 @@ The syntax of the formatting string for an entire Apple event (as passed to `AEB
 
 It is important to note that the identifier for the direct parameter in an Apple event, specified by the constant `keyDirectObject`, is four minus signs (`'----'`). The minus sign has special meaning in AEBuild strings, and it should always be enclosed in single quotes when it is used to identify the direct parameter for an Apple event in a descriptor string.
 
-##### Version-Notes
+### Version-Notes
 
 Prior to OS X version 10.3, `AEBuildAppleEvent` would fail if you supplied a data parameter with size greater than 32767 bytes.
 

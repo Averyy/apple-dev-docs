@@ -15,7 +15,7 @@ A human-readable description of the ruler’s units.
 @property (copy, nullable) NSString * accessibilityUnitDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a ruler element.
 

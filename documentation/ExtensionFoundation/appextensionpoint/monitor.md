@@ -25,7 +25,7 @@ final class Monitor
 
 - [Discovering app extensions from your app](../discovering-app-extensions-from-your-app.md)
 
-#### Overview
+## Overview
 
 A host app uses this type to discover the app extensions that are ready for it to use. This type provides both a static list of current extensions and a way for you to monitor changes in app extension availability. You can use items from this list to instantiate an [`AppExtensionProcess`](../appextensionprocess.md) type when you’re ready to run the app extension’s code.
 

@@ -20,7 +20,7 @@ var errSecCSHostReject: OSStatus { get }
 errSecCSHostReject
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that there’s an internal requirement in the signature on the guest code that specifies conditions that the code host must meet, and the host failed to meet that requirement. For example, if the guest requires that the host be signed by Apple and it wasn’t, the system returns this error when validating requirements.
 

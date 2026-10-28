@@ -25,11 +25,11 @@ func CMBufferQueueMarkEndOfData(_ queue: CMBufferQueue) -> OSStatus
 extern OSStatus CMBufferQueueMarkEndOfData(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`
 
-#### Discussion
+## Discussion
 
 All subsequent Enqueues will be rejected until [`CMBufferQueueReset(_:)`](./cmbufferqueuereset%28_%29.md) is called. Subsequent Dequeues will succeed as long as the queue is not empty.
 

@@ -15,7 +15,7 @@ Gets a point at a specific index.
 extern simd_float2 ar_polygon_points_get_point_at_index(ar_polygon_points_t polygon_points, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The point at the specified index.
 

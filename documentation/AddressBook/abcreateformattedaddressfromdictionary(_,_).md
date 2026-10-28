@@ -19,7 +19,7 @@ func ABCreateFormattedAddressFromDictionary(_ addressBook: ABAddressBookRef!, _ 
 extern CFStringRefABCreateFormattedAddressFromDictionary(ABAddressBookRef addressBook, CFDictionaryRef address);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a string containing the formatted address. You are responsible for releasing this object.
 

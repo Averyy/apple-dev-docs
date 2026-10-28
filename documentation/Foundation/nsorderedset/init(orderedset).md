@@ -25,7 +25,7 @@ convenience init(orderedSet set: NSOrderedSet)
 - (instancetype) initWithOrderedSet:(NSOrderedSet<id> *) set;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ordered set containing references to the objects in the set.
 

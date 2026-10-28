@@ -25,7 +25,7 @@ func CFWriteStreamGetStatus(_ stream: CFWriteStream!) -> CFStreamStatus
 extern CFStreamStatus CFWriteStreamGetStatus(CFWriteStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 The current state of `stream`. See [`CFStreamStatus`](./cfstreamstatus.md) for the list of possible states.
 

@@ -19,7 +19,7 @@ class let didCloseNotification: NSNotification.Name
 extern NSNotificationName const NSPopoverDidCloseNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the `userInfo` key [`closeReasonUserInfoKey`](./closereasonuserinfokey.md) specifies the reason for closing. It can currently be either [`standard`](./closereason/standard.md) or [`detachToWindow`](./closereason/detachtowindow.md), although more reasons for closing may be added in the future.
 

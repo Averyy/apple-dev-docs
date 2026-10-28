@@ -19,7 +19,7 @@ func toggleToolbarShown(_ sender: Any?)
 - (void) toggleToolbarShown:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`NSToolbar`](../nstoolbar.md) class description for additional information.
 

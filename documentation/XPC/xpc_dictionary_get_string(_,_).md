@@ -25,7 +25,7 @@ func xpc_dictionary_get_string(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar
 extern const char *xpc_dictionary_get_string(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying C string for the specified key. NULL if the value for the specified key is not a C string value or if there is no value for the specified key.
 

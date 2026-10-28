@@ -13,11 +13,11 @@
 + (IOBluetoothPairingController *) pairingController;
 ```
 
-#### Return Value
+## Return Value
 
 An `IOBluetoothPairingController` instance, or `nil` if the method fails.
 
-#### Overview
+## Overview
 
 Method call to instantiate a new IOBluetoothPairingController object.
 

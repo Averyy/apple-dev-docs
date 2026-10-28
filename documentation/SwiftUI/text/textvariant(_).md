@@ -21,7 +21,7 @@ Controls the way text size variants are chosen.
 func textVariant<V>(_ preference: V) -> some View where V : TextVariantPreference
 ```
 
-#### Discussion
+## Discussion
 
 Certain types of text, such as `Text(_:format:)`, can generate strings of different size to better fit the available space. By default, all text uses the widest available variant. Setting the variant to be [`sizeDependent`](../textvariantpreference/sizedependent.md) allows the text to take the available space into account when choosing what content to display.
 

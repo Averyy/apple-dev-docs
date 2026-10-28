@@ -22,7 +22,7 @@ var images: [UIImage]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UIImage *> * images;
 ```
 
-#### Discussion
+## Discussion
 
 The value stored in this property is an array of [`UIImage`](../uiimage.md) objects. The associated array of representation types is [`typeListImage`](./typelistimage.md), which includes types `kUTTypePNG` and `kUTTypeJPEG`. Setting this property replaces all current items in the pasteboard with the new items. The returned array may have fewer objects than the number of pasteboard items; this happens if a pasteboard item does not have a value of the indicated type.
 

@@ -21,7 +21,7 @@ The animation’s rate of playback.
 @preconcurrency var speed: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The animation applies the value of this property as an irrational factor of the unaltered speed. For example, a value of `2` plays the animation twice as fast, a value of `0.5` plays the animation at half speed, and a value of `1` plays the animation at the unaltered rate.
 

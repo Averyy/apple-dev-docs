@@ -18,11 +18,11 @@ itemForPolygon?(
 ): PolygonOverlay | null;
 ```
 
-#### Return Value
+## Return Value
 
 A map item or an array of map items.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method for each individual `polygon` geometry object. The framework breaks `MultiPolygon` geometry types into individual polygon types.
 

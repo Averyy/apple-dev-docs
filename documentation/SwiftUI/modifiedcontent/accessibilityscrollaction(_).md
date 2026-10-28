@@ -24,7 +24,7 @@ func accessibilityScrollAction(_ handler: @escaping (Edge) -> Void) -> ModifiedC
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 For example, this is how a scroll action to trigger a refresh could be added to a view.
 

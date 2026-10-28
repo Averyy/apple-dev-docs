@@ -15,11 +15,11 @@ Gets the terminal type of the stream.
 IOUserAudioStreamTerminalType GetTerminalType();
 ```
 
-#### Return Value
+## Return Value
 
 The stream’s terminal type.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

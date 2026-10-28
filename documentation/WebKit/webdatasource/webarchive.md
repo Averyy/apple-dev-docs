@@ -19,7 +19,7 @@ var webArchive: WebArchive! { get }
 @property (nonatomic, strong, readonly) WebArchive * webArchive;
 ```
 
-#### Discussion
+## Discussion
 
 In the case of HTML, if the current content is preferred, then send [`webArchive`](./webarchive.md) to the appropriate DOM object.
 

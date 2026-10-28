@@ -33,7 +33,7 @@ var formattedValue: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * formattedValue;
 ```
 
-#### Discussion
+## Discussion
 
 This property is invalid on a newly initialized score object. On a score returned from GameKit, it contains a formatted string based on the player’s score. You determine how a score is formatted when you define the leaderboard in App Store Connect.
 

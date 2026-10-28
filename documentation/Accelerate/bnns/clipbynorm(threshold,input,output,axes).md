@@ -23,7 +23,7 @@ Clips the input tensor to a Euclidean norm and writes the result to the output t
 static func clipByNorm(threshold: Float, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to clip the values in an input tensor to a maximum Euclidean norm. The Euclidean norm is the square root of the sum of squares of the two tensors.
 

@@ -25,7 +25,7 @@ case systemExtraLarge
 - [Adding interactivity to widgets and Live Activities](../adding-interactivity-to-widgets-and-live-activities.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
-#### Discussion
+## Discussion
 
 Extra-large widgets are available in iPadOS and macOS. To add an extra-large widget to your visionOS app, use [`WidgetFamily.systemExtraLargePortrait`](./systemextralargeportrait.md). To add an extra-large visionOS widget to a compatible iOS and iPadOS app, use the `systemExtraLarge` widget family. The extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](./systemextralargeportrait.md) widget of a visionOS app.
 

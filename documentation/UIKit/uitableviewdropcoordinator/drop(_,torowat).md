@@ -27,7 +27,7 @@ func drop(_ dragItem: UIDragItem, toRowAt indexPath: IndexPath) -> any UIDragAni
 
 - [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
-#### Discussion
+## Discussion
 
 Use this method to animate the dragged item to the specific location in the table view. Typically, you use this method for content that originated in the collection view and is moving to a new location.
 

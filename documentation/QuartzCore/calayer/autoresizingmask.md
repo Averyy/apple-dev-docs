@@ -20,7 +20,7 @@ var autoresizingMask: CAAutoresizingMask { get set }
 @property CAAutoresizingMask autoresizingMask;
 ```
 
-#### Discussion
+## Discussion
 
 If your app does not use a layout manager or constraints to handle layout changes, you can assign a value to this property to adjust the layer’s size in response to changes in the superlayer’s bounds. For a list of possible values, see [`CAAutoresizingMask`](../caautoresizingmask.md).
 

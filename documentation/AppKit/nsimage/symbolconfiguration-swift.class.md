@@ -19,7 +19,7 @@ class SymbolConfiguration
 @interface NSImageSymbolConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Symbol image configuration objects include details such as the point size, scale, text style, and weight to apply to your symbol image. The system uses these details to determine which variant of the image to use and how to scale or style the image.
 

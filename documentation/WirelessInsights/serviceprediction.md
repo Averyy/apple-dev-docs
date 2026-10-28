@@ -16,7 +16,7 @@ An individual prediction of anticipated cellular network availability.
 struct ServicePrediction
 ```
 
-#### Overview
+## Overview
 
 Your app receives arrays of curent predictions from the [`servicePredictions`](./servicepredictionprovider/servicepredictions.md) asynchronous sequence. Inspect the timing and impact properties of these predictions, and the associated confidence scores, to determine if your app takes action before a possible change in cellular conditions.
 

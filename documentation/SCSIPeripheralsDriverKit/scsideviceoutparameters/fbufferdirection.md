@@ -15,7 +15,7 @@ The direction for the buffer to send or receive data.
 uint8_t fBufferDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Use the following `DriverKit/IOMemoryDescriptor.h` direction values to populate this field:
 

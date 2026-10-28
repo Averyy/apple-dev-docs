@@ -21,7 +21,7 @@ The closure to execute after CloudKit processes all share access requests.
 @property (nonatomic, copy, nullable) void (^)(NSError *) shareRequestAccessCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameter:
 

@@ -21,11 +21,11 @@ Returns a sequence formed from repeated lazy applications of `next` to a mutable
 func sequence<T, State>(state: State, next: @escaping (inout State) -> T?) -> UnfoldSequence<T, State>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence that yields each successive value from `next`.
 
-#### Discussion
+## Discussion
 
 The elements of the sequence are obtained by invoking `next` with a mutable state. The same state is passed to all invocations of `next`, so subsequent calls will see any mutations made by previous calls. The sequence ends when `next` returns `nil`. If `next` never returns `nil`, the sequence is infinite.
 

@@ -16,7 +16,7 @@ Closes the device.
 IOReturn (*close)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

@@ -25,7 +25,7 @@ var presentedTime: CFTimeInterval { get }
 @property (nonatomic, readonly) CFTimeInterval presentedTime;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you query this property in a callback method. See [`addPresentedHandler(_:)`](./addpresentedhandler%28_%29.md).
 

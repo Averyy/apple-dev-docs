@@ -20,7 +20,7 @@ Configuration for detecting machine-readable codes in the document.
 var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions
 ```
 
-#### Discussion
+## Discussion
 
 Enable barcode detection and set what symbologies (eg. `.qrCode`) will be detected.
 

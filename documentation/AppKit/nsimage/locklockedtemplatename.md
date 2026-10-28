@@ -22,7 +22,7 @@ class let lockLockedTemplateName: String
 extern NSImageName const NSImageNameLockLockedTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Use to indicate locked content.
 

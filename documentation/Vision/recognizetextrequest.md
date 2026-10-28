@@ -20,7 +20,7 @@ An image-analysis request that recognizes text in an image.
 struct RecognizeTextRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates a collection of [`RecognizedTextObservation`](./recognizedtextobservation.md) objects that describe the text the request detects. By default, a text-recognition request first locates all possible glyphs or characters in the input image, and then analyzes each string. To specify or limit the languages to find in the request, set [`recognitionLanguages`](./recognizetextrequest/recognitionlanguages.md) to an array that contains the names of the languages of text you want to recognize.
 

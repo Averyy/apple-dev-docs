@@ -32,7 +32,7 @@ class UINavigationController
 - [Customizing the behavior of segue-based presentations](./customizing-the-behavior-of-segue-based-presentations.md)
 - [Displaying and managing views with a view controller](./displaying-and-managing-views-with-a-view-controller.md)
 
-#### Overview
+## Overview
 
 A navigation controller displays one view controller at a time. The ordered array of view controllers it manages forms the *navigation stack*. When you push a view controller onto the stack, it animates onscreen and covers the view controller that was previously on top.
 
@@ -48,7 +48,7 @@ The following image shows the relationships between the navigation controller an
 
 ![A diagram that illustrates objects a navigation controller contains and manages. On the left side of the diagram is a box titled UINavigationController. Inside the box are four boxes that each have arrows pointing to boxes outside the UINavigationController box. The first is titled viewControllers (NSArray), and points to three stacked boxes titled View controller, with the caption Navigation stack. The second is titled navigationBar, and points to a box titled UINavigationBar. The UINavigationBar box has an arrow with the caption delegate that points back to the UINavigationController box. The third box is titled toolbar, and points to a box titled UIToolbar. The fourth box is titled delegate, and points to a box titled Custom delegate object.](https://developer.apple.com/tutorials/images/com.apple.uikit/uinavigationcontroller-02@2x.png)
 
-#### Manage the navigation bar and toolbar
+## Manage the navigation bar and toolbar
 
 A navigation controller embeds the content of other view controllers in its own view, and it manages the creation, configuration, and display of its bars.
 
@@ -62,17 +62,17 @@ If you subclass [`UINavigationBar`](./uinavigationbar.md), initialize your navig
 
 > 💡 **Tip**: To prevent interfering with Liquid Glass in your navigation bar, avoid using custom backgrounds and [`UIAppearance`](./uiappearance.md) APIs.
 
-#### Update navigation controls
+## Update navigation controls
 
 As people navigate your app, the navigation controller updates its bars. The top-level view controller on the navigation stack defines its navigation and toolbar items. Navigation controllers adapt their layout based on the current [`traitCollection`](./uitraitenvironment/traitcollection.md).
 
-##### Horizontal and vertical axes
+### Horizontal and vertical axes
 
 In a horizontal layout, navigation controls appear across the top of the view and toolbars appear along the bottom. On iPhone Duo, the system considers whether your content is better suited for a vertical or horizontal axis. On a vertical axis, navigation controls and toolbar items, along with tab bar items, consolidate into a shared region as a unified vertical stack.
 
 The following sections relate to navigation bar items on a horizontal axis. Designing for the horizontal axis allows your app to adapt for the vertical axis in ways people expect. In most cases, when moved to the vertical axis, horizontal bars effectively rotate 90 degrees to stack their content with the leading item at the top. For more detail on how bar items adjust to the vertical axis, watch [Raise the bar with iPhone Duo](https://developer.apple.com/videos/play/tech-talks/111462). For design guidance, see [Vertical controls](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo#Vertical-controls) in Human Interface Guidelines > [Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo).
 
-##### Leading items
+### Leading items
 
 For all but the root view controller on the navigation stack, the leading-most item of the navigation bar provides navigation back to the previous view controller. The navigation controller determines the contents of this leading button as follows:
 
@@ -83,7 +83,7 @@ For all but the root view controller on the navigation stack, the leading-most i
 
 When a Back button’s title is too long to fit, the navigation bar displays a back image, but only when the previous view controller provides the Back button. If the new top-level view controller instead has a leading item, the navigation bar doesn’t change that item’s title. If the item’s title is too long to fit, the navigation bar places it in the menu of the overflow item on the trailing edge.
 
-##### Center items
+### Center items
 
 The navigation controller updates the center of the navigation bar as follows:
 
@@ -91,7 +91,7 @@ The navigation controller updates the center of the navigation bar as follows:
 - If you don’t set a custom title view, the navigation bar displays a label containing the view controller’s default title. The string for this label is usually obtained from the [`title`](./uiviewcontroller/title.md) property of the view controller itself. If you want to display a different title than the one associated with the view controller, set the [`title`](./uinavigationitem/title.md) property of the view controller’s navigation item instead. If you want to change the appearance of the title, such as its font or color, use [`attributedTitle`](./uinavigationitem/attributedtitle-25fxb.md).
 - If you set [`style`](./uinavigationitem/style.md) to [`UINavigationItem.ItemStyle.browser`](./uinavigationitem/itemstyle/browser.md) or [`UINavigationItem.ItemStyle.editor`](./uinavigationitem/itemstyle/editor.md), the navigation item’s title appears on the leading side of the navigation bar, and center items appear in the center of the bar when space is available. To specify center item groups, set the [`centerItemGroups`](./uinavigationitem/centeritemgroups.md) property of the view controller’s navigation item.
 
-##### Trailing items
+### Trailing items
 
 The navigation controller updates the trailing side of the navigation bar as follows:
 
@@ -99,20 +99,20 @@ The navigation controller updates the trailing side of the navigation bar as fol
 - If the view controller has no custom trailing items, the trailing edge of the navigation bar is empty.
 - If leading or center items don’t fit, the navigation bar moves them into an overflow item on the trailing edge, whether or not the view controller has custom trailing items. The overflow item is a button with an ellipsis that opens a menu of the items that moved.
 
-#### Display a toolbar
+## Display a toolbar
 
 A navigation controller object manages an optional toolbar in its view hierarchy. When the navigation controller displays this toolbar, the toolbar obtains its current items from the [`toolbarItems`](./uiviewcontroller/toolbaritems.md) property of the active view controller. When the active view controller changes, the navigation controller updates the toolbar items to match the new view controller, animating the new items into position when appropriate.
 
 The toolbar is hidden by default. To hide or show it, use the [`isToolbarHidden`](./uinavigationcontroller/istoolbarhidden.md) property or [`setToolbarHidden(_:animated:)`](./uinavigationcontroller/settoolbarhidden%28_,animated%29.md) method of your navigation controller object. Prefer the provided toolbar so the system can decide whether a vertical or horizontal axis better suits your content. To use a custom [`UIToolbar`](./uitoolbar.md) subclass, initialize the navigation controller using the [`init(navigationBarClass:toolbarClass:)`](./uinavigationcontroller/init%28navigationbarclass,toolbarclass%29.md) method.
 
-#### Handle orientation and presentation context
+## Handle orientation and presentation context
 
 A navigation controller supports the following behaviors for its interface:
 
 - **Supported interface orientations**: A navigation controller object doesn’t consult the view controllers on its navigation stack when determining the supported interface orientations. On iPhone and the outer display of iPhone Duo, a navigation controller supports all orientations except portrait upside-down. On iPad and the inner display of iPhone Duo, a navigation controller supports all orientations. If the navigation controller has a delegate object, the delegate can specify a different set of supported orientations using the [`navigationControllerSupportedInterfaceOrientations(_:)`](./uinavigationcontrollerdelegate/navigationcontrollersupportedinterfaceorientations%28_%29.md) method.
 - **Presentation context**: A navigation controller defines the presentation context for modally presented view controllers. When [`modalPresentationStyle`](./uiviewcontroller/modalpresentationstyle.md) is [`UIModalPresentationStyle.currentContext`](./uimodalpresentationstyle/currentcontext.md) or [`UIModalPresentationStyle.overCurrentContext`](./uimodalpresentationstyle/overcurrentcontext.md), modal presentations from the view controllers in the navigation stack cover the entire navigation interface.
 
-#### Preserve navigation state
+## Preserve navigation state
 
 When you assign a value to a navigation controller’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property, it attempts to preserve itself and the contained view controllers on its navigation stack. The navigation controller starts at the bottom of the stack and moves upward, encoding each view controller that also has a valid restoration identifier string. During the next launch, the navigation controller restores the preserved view controllers to the navigation stack in the same order it preserved them.
 

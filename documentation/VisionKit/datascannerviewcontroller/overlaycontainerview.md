@@ -22,7 +22,7 @@ var overlayContainerView: UIView { get }
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 Optionally, add custom highlights to this view that doesn’t interfere with hit-testing or the guidance objects. If you want to add interface objects above the highlights, add those objects as subviews of the [`view`](../../UIKit/uiviewcontroller/view.md) property.
 

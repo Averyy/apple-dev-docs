@@ -23,7 +23,7 @@ func multiply<Matrix, DestFormat>(by matrix: Matrix, preBias: [Float], postBias:
 
 Available when `Format` conforms to `MultiplePlanePixelFormat` and `Format.ComponentType` is `Float`.
 
-#### Discussion
+## Discussion
 
 This function applies the following operation to each pixel:
 

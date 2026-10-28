@@ -25,7 +25,7 @@ class CBPeer
 @interface CBPeer : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`CBPeer`](./cbpeer.md) class is an abstract base class that defines common behavior for objects representing remote devices. You typically don’t create instances of either [`CBPeer`](./cbpeer.md) or its concrete subclasses. Instead, the system creates them for you during the process of peer discovery.
 

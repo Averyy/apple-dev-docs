@@ -11,9 +11,9 @@ Get information about a particular user.
 
 > **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

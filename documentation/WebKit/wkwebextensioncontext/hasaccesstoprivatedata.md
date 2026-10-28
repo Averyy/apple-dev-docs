@@ -23,7 +23,7 @@ var hasAccessToPrivateData: Bool { get set }
 @property (nonatomic) BOOL hasAccessToPrivateData;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the extension is granted permission to interact with private windows, tabs, and cookies. Access to private data should be explicitly allowed by the user before setting this property. This value should be saved and restored as needed by the app.
 

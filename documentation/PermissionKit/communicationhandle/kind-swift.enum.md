@@ -19,7 +19,7 @@ An enumeration that identifies different types of communication handles.
 enum Kind
 ```
 
-#### Overview
+## Overview
 
 Use these cases to specify whether a handle represents an email address, phone number, username, or custom identifier when requesting communication permission.
 

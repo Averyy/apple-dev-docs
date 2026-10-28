@@ -19,7 +19,7 @@ struct StyleMask
 enum NSCellStyleMask : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These contents are used by the [`highlightsBy`](../nsbuttoncell/highlightsby.md) and [`showsStateBy`](../nsbuttoncell/showsstateby.md) methods of [`NSButtonCell`](../nsbuttoncell.md).
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a whitespace character.
 var isWhitespace: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` for scalars that are spaces, separator characters, and other control characters that should be treated as whitespace for the purposes of parsing text elements.
 

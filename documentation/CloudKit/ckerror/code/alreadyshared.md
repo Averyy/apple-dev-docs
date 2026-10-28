@@ -25,7 +25,7 @@ case alreadyShared
 CKErrorAlreadyShared
 ```
 
-#### Discussion
+## Discussion
 
 A record can exist in only a single share at a time. This error means that one of the following conditions exists:
 

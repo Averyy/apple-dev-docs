@@ -24,11 +24,11 @@ class func colorBurnBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) colorBurnBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color-burn blend mode filter to an image. The effect darkens the background image to reflect the input image’s color.
 

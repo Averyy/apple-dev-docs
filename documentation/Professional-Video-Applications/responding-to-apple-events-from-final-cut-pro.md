@@ -5,7 +5,7 @@
 
 Tell Final Cut Pro about the kind of data your users want to receive in your app through a custom share destination.
 
-#### Overview
+## Overview
 
 An Apple event is a type of interprocess message that can specify complex operations and data. Apple events provide a message transport through which an app can send a request to another app and receive an answer. (For more information about Apple events, see [`NSAppleEventManager`](../Foundation/nsappleeventmanager.md).)
 
@@ -28,7 +28,7 @@ When responding to Apple events, you should also know how to:
 - Support conversions between the Apple event descriptor types used by Final Cut Pro and the respective Foundation object classes. See [Supporting Conversions with Scripting Class Extensions](./supporting-conversions-with-scripting-class-extensions.md).
 - Use an AppleScript script to test your app and its ability to interact with Final Cut Pro. See [Test Your App with AppleScript](./responding-to-apple-events-from-final-cut-pro.md#Test-Your-App-with-AppleScript).
 
-##### Respond to the Create Asset Apple Event
+### Respond to the Create Asset Apple Event
 
 When a Final Cut Pro user chooses File > Share and selects your app’s custom share destination, Final Cut Pro inspects your app’s `Info.plist` file to see if your app can respond to Apple events from Final Cut Pro. (See [Signal Your App’s Capabilities](./receiving-media-and-data-through-a-custom-share-destination.md#Signal-Your-Apps-Capabilities).) Once it confirms your app’s capability, Final Cut Pro sends your app a `Create Asset` Apple event containing the name of the asset, the set of share metadata, and a list of metadata views.
 
@@ -53,7 +53,7 @@ While handling the `Create Asset` event, your app can bring up its UI before Fin
 
 To avoid initiating user interactions while your app is handling Apple events as part of an automated workflow, be sure to check the user interaction levels for incoming Apple events. See [Monitor User Interaction Levels When Using Apple Events](./responding-to-apple-events-from-final-cut-pro.md#Monitor-User-Interaction-Levels-When-Using-Apple-Events).
 
-##### Respond to the Get Location Info Property Apple Event
+### Respond to the Get Location Info Property Apple Event
 
 Final Cut Pro sends a `Get Location Info Property` Apple event to ask your app for the location of the exported output files.
 
@@ -67,7 +67,7 @@ The record’s `folder` property specifies the location of the folder to contain
 
 If your user wants an FCPXML file, be sure to set the `has description` property in the asset location record to `true`. If your user wants a media file, set the `has media` property in the asset location record to `true`.
 
-##### Respond to the Get Library Info Property Apple Event
+### Respond to the Get Library Info Property Apple Event
 
 Final Cut Pro sends a `Get Library Info Property` event asking for the location of the library output files.
 
@@ -81,7 +81,7 @@ The record’s `library folder` property should specify the location of the fold
 
 If your user wants library files, be sure to set the `has archive` and `has library description` properties to `true` in the library location record. If you don’t specify the `library folder` property, Final Cut Pro uses the asset location folder. If you don’t specify the `library base name` property, Final Cut Pro uses the asset name with a suffix to show that it is the FCPXML for the library, such as `MyProject-Library`. If your app doesn’t respond to this event, Final Cut Pro assumes your user doesn’t want library files.
 
-##### Respond to the Get Metadata Property Apple Event
+### Respond to the Get Metadata Property Apple Event
 
 Final Cut Pro sends a `Get Metadata Property` event to get an updated set of share metadata. Final Cut Pro supplied the original set of metadata through the `Create Asset` event.
 
@@ -93,7 +93,7 @@ Your app must return a user record containing the share metadata keys and their 
 
 Specifically, your app can generate a unique ID using the `com.apple.proapps.share.id` metadata key that represents the unique ID for the media asset your user is sharing (usually a project). Final Cut Pro includes the metadata for that key in the exported media files so your app can track the files associated with the asset.
 
-##### Respond to the Get Data Options Property Apple Event
+### Respond to the Get Data Options Property Apple Event
 
 Final Cut Pro sends a `Get Data Options Property` Apple event to request the data options to be used when it generates the exported output.
 
@@ -110,7 +110,7 @@ Your app should return a user record with the following keys and their associate
 
 If no metadata view is specified, Final Cut Pro uses the currently selected metadata view to filter the share metadata. (For a list of keys for share metadata, see [Review Share Metadata](./associating-ratings-keywords-markers-and-metadata-with-media.md#Review-Share-Metadata).)
 
-##### Respond to the Open Document Apple Event
+### Respond to the Open Document Apple Event
 
 Once Final Cut Pro completes exporting the files your app requested, it sends an `Open Document` Apple event to notify your app that output files are available.
 
@@ -124,7 +124,7 @@ Because Cocoa scripting handles the `Open Document` Apple event, your app doesn�
 
 In some cases, Final Cut Pro creates multiple media files (for example, when your custom share destination is configured to export each role as a separate file). In these cases, the export filename is the asset name returned as the `base name` property of the asset location record, followed by a hyphen (-) and a suffix that indicates the role of the data, such as dialogue or effect.
 
-##### Monitor User Interaction Levels When Using Apple Events
+### Monitor User Interaction Levels When Using Apple Events
 
 To avoid initiating user interactions while handling Apple events sent by an automated workflow, make sure your app checks the user interaction level of the Apple events *before* initiating your user interaction. In the scripting command handler for the `make` command (or the `Create Asset` Apple event), get the current Apple event and its `keyInteractLevelAttr` attribute to check the user interaction level.
 
@@ -139,7 +139,7 @@ kAECanSwitchLayer   = 0x00000040, /* interaction may switch layer */
 
 See the [`NSAppleEventManager`](../Foundation/nsappleeventmanager.md) Class Reference for details on getting the current Apple event.
 
-##### Test Your App with AppleScript
+### Test Your App with AppleScript
 
 Use the following AppleScript script to test your app’s ability to interact with Final Cut Pro.
 

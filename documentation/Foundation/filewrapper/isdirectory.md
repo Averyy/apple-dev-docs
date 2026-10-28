@@ -25,7 +25,7 @@ var isDirectory: Bool { get }
 @property (readonly, getter=isDirectory) BOOL directory;
 ```
 
-#### Discussion
+## Discussion
 
 This property will contain YES when the file wrapper is a directory file wrapper, otherwise it contains NO.
 

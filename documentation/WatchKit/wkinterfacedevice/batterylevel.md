@@ -19,7 +19,7 @@ var batteryLevel: Float { get }
 @property (nonatomic, readonly) float batteryLevel;
 ```
 
-#### Discussion
+## Discussion
 
 If battery monitoring is enabled, this property is set to a value between `0.0` (0% charge) and `1.0` (100% charge). When the [`batteryState`](./batterystate.md) property is set to [`WKInterfaceDeviceBatteryState.unknown`](../wkinterfacedevicebatterystate/unknown.md) (for example, when battery monitoring is disabled), the value is `-1.0`.
 

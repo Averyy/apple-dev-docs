@@ -20,7 +20,7 @@ optional func apply(_ layoutAttributes: NSCollectionViewLayoutAttributes)
 - (void) applyLayoutAttributes:(NSCollectionViewLayoutAttributes *) layoutAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 In your custom elements, you can use this method to apply the specified attributes to your content. For example, if your element object is a view controller, you would override this method and use it to apply the attributes to the root view object. When using your element with a layout object that supports custom attributes, you would also use this method to apply those custom attributes.
 

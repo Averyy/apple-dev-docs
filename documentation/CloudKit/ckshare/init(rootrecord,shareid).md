@@ -25,7 +25,7 @@ init(rootRecord: CKRecord, shareID: CKRecord.ID)
 - (instancetype) initWithRootRecord:(CKRecord *) rootRecord shareID:(CKRecordID *) shareID;
 ```
 
-#### Discussion
+## Discussion
 
 When saving a newly created [`CKShare`](../ckshare.md), you save both the share and its [`rootRecord`](./metadata/rootrecord.md) in the same [`CKModifyRecordsOperation`](../ckmodifyrecordsoperation.md) batch.
 

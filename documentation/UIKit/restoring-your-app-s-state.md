@@ -12,7 +12,7 @@ Provide continuity for the user by preserving current activities.
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample project demonstrates how to preserve your app’s state information and restore the app to that previous state on subsequent launches. During a subsequent launch, restoring your interface to the previous interaction point provides continuity for the user, and lets them finish active tasks quickly.
 
@@ -26,11 +26,11 @@ For scene-based apps, UIKit asks each scene to save its state information using 
 
 For additional information about state restoration, see  [Preserving your app’s UI across launches](./preserving-your-app-s-ui-across-launches.md).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 In Xcode, select your development team on the iOS target’s General tab.
 
-##### Enable state preservation and restoration
+### Enable state preservation and restoration
 
 To provide the necessary activity object, the sample implements the [`stateRestorationActivity(for:)`](./uiscenedelegate/staterestorationactivity%28for%29.md) method of its scene delegate as shown in the example below. Implementing this method tells the system that the sample supports user-activity-based state restoration. The implementation of this method returns the activity object from the scene’s [`userActivity`](./uiresponder/useractivity.md) property, which the sample populates when the scene becomes inactive.
 
@@ -58,11 +58,11 @@ func application(_ application: UIApplication, shouldRestoreSecureApplicationSta
 }
 ```
 
-##### Restore the app state with an activity object
+### Restore the app state with an activity object
 
 Scene-based state restoration is the recommended way to restore the app’s user interface. An [`NSUserActivity`](../Foundation/nsuseractivity.md) object captures the app’s state at the current moment in time. For this sample, the app preserves and restores the product information as the user displays or edits it. The sample app saves the product’s data in an `NSUserActivity` object when the user closes the app or the app enters the background. When the user launches the app again, the sample’s [`scene(_:willConnectTo:options:)`](./uiscenedelegate/scene%28_,willconnectto,options%29.md) method checks for the presence of an activity object. If one is present, the method configures the detail view controller that the activity object specifies.
 
-##### Restore the app state using view controllers
+### Restore the app state using view controllers
 
 This sample preserves its state by saving the state of its view controller hierarchy. View controllers adopt the [`UIStateRestoring`](./uistaterestoring.md) protocol, which defines methods for saving custom state information to an archive and restoring that information later.
 
@@ -96,7 +96,7 @@ override func decodeRestorableState(with coder: NSCoder) {
 }
 ```
 
-##### Test state restoration on a device
+### Test state restoration on a device
 
 This sample restores the following user interface:
 

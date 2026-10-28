@@ -26,7 +26,7 @@ class func knownAnimalIdentifiers(forRevision requestRevision: Int) throws -> [V
 + (NSArray<NSString *> *) knownAnimalIdentifiersForRevision:(NSUInteger) requestRevision error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The animal identifiers.
 

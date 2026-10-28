@@ -24,7 +24,7 @@ var connectedNodes: [GKGraphNode] { get }
 @property (nonatomic, readonly) NSArray<GKGraphNode *> * connectedNodes;
 ```
 
-#### Discussion
+## Discussion
 
 In GameplayKit, the connections between nodes in a graph are directional. For example, if the [`connectedNodes`](./connectednodes.md) list of Node A contains Node B, then a traveler on the graph can move directly from Node A to Node B. For the reverse to also be true, the [`connectedNodes`](./connectednodes.md) list of Node B must contain Node A. To conveniently create connections in both directions, use the `bidirectional` parameter of the [`addConnections(to:bidirectional:)`](./addconnections%28to,bidirectional%29.md) method.
 

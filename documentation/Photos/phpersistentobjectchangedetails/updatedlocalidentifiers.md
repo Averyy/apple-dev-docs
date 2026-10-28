@@ -24,7 +24,7 @@ var updatedLocalIdentifiers: Set<String> { get }
 @property (nonatomic, strong, readonly) NSSet<NSString *> * updatedLocalIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 This value includes assets the user moves to the trash or hides, so they may later be available if the user removes an asset from the trash or unhides it.
 

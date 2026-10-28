@@ -22,7 +22,7 @@ unowned(unsafe) var shippingAddress: ABRecord? { get }
 @property (nonatomic, assign, readonly, nullable) ABRecordRef shippingAddress;
 ```
 
-#### Discussion
+## Discussion
 
 Only the fields specified in the the [`requiredShippingAddressFields`](../pkpaymentrequest/requiredshippingaddressfields.md) property of the [`PKPaymentRequest`](../pkpaymentrequest.md) object are populated. If no required shipping fields were specified, the value of this property is `nil`.
 

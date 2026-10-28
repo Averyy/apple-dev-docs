@@ -27,11 +27,11 @@ nonisolated
 func defaultSize(_ size: Size3D) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that uses a default size for new windows.
 
-#### Discussion
+## Discussion
 
 Use this scene modifier to indicate a default initial size for a new window that the system creates from a [`Scene`](../scene.md) declaration. For example, you can request that new windows that a [`WindowGroup`](../windowgroup.md) generates occupy 600 points in the x-dimension and 400 points in the y-dimension:
 

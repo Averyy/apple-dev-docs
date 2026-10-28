@@ -21,11 +21,11 @@ Returns a file handle initialized for reading and writing to the file, device, o
 convenience init(forUpdatingURL url: URL) throws
 ```
 
-#### Return Value
+## Return Value
 
 The initialized file handle object or `nil` if no file exists at `url`.
 
-#### Discussion
+## Discussion
 
 The file pointer is set to the beginning of the file. The returned object responds to both `NSFileHandle``read...` messages and [`write(_:)`](./write%28_%29.md).
 

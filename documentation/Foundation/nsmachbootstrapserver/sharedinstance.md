@@ -16,7 +16,7 @@ Returns the shared instance of the bootstrap server.
 + (id) sharedInstance;
 ```
 
-#### Return Value
+## Return Value
 
 The shared instance of `NSMachBootstrapServer` with which you register and look up `NSMachPort` objects.
 

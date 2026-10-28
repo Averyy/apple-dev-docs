@@ -21,7 +21,7 @@ A currency sign.
 case currencySymbol
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Currency_Symbol` (abbreviated `Sc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

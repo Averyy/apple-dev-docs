@@ -17,7 +17,7 @@ Any other targets on which this target depends, in the same order as specified i
 var dependencies: [TargetDependency]
 ```
 
-#### Discussion
+## Discussion
 
 Conditional dependencies that do not apply have already been filtered out.
 

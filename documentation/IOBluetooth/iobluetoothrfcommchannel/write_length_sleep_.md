@@ -15,11 +15,11 @@ Sends a block of data in the channel syncronously.
 - (IOReturn) write:(void *) data length:(UInt16) length sleep:(BOOL) sleep;
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 ***WARNING*** This method is being deprecated in favor of -writeSync:… and -writeAsync:… Sends data through the channel. The number of bytes to be sent must not exceed the channel MTU. If the return value is an error condition none of the data was sent.
 

@@ -21,7 +21,7 @@ A textual representation of the file path, suitable for debugging.
 var debugDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the content of the path isn’t a well-formed Unicode string, this replaces invalid bytes with U+FFFD. See `String.init(decoding:)`
 

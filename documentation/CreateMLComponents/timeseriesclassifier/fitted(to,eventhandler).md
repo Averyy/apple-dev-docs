@@ -20,11 +20,11 @@ Fits a time series classifier model to a sequence of examples.
 func fitted(to input: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler? = nil) async throws -> TimeSeriesClassifier<Scalar, Label>.Model
 ```
 
-#### Return Value
+## Return Value
 
 The fitted time series classifier model.
 
-#### Discussion
+## Discussion
 
 The training process partitions the input into random batches according to the batch size configuration parameter. Training stops when the validation loss stops improving or when the maximum number of iterations is reached.
 

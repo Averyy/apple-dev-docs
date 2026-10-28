@@ -21,11 +21,11 @@ Checks if a tag contains a specific category.
 static Boolean CMTagHasCategory(CMTag tag, CMTagCategory category);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` when the tag’s category and the category argument match.
 
-#### Discussion
+## Discussion
 
 Prefer using this function over directly comparing a tag’s [`category`](./cmtag-c.struct/category.md) property to a value.
 

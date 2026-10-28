@@ -19,7 +19,7 @@ var contentViewController: NSViewController? { get set }
 @property (strong, nullable) NSViewController * contentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property provides the content view of the window. Setting this value removes the existing value of [`contentView`](./contentview.md) and makes the `contentViewController.view` the main content view for the window. By default, the value of this property is `nil`.
 

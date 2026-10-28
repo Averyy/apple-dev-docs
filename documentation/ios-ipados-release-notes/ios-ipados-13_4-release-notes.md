@@ -5,54 +5,54 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 13.4 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.4. The SDK comes bundled with Xcode 11.4. For information on the compatibility requirements for Xcode 11.4, see [Xcode 11.4 Release Notes](../Xcode-Release-Notes/xcode-11_4-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - To install iOS 13.4 using the Restore Image, first install Xcode 11.4.
 
-##### Keyboard
+### Keyboard
 
-###### New Features
+#### New Features
 
 - QuickType Keyboard now supports predictive input for Arabic.
 - QuickType Keyboard now supports Live Conversion for Japanese and Chinese (Zhuyin).
 - QuickType Keyboard now supports Swiss German layout for 12.9-inch iPad layout.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - 12.9-inch iPad layouts for several languages now match the hardware keyboard layouts.
 
-##### Location Services
+### Location Services
 
-###### New Features
+#### New Features
 
 - When an app requests Always authorization for the first time after having previously been authorized for While Using the App, the device immediately presents the location authorization prompt. (57106235)
 
-##### Photos
+### Photos
 
-###### New Features
+#### New Features
 
 - New keyboard shortcuts are available in Photos on iPadOS, which create quick navigation between Tabs, Search, and Create Albums. While in full-screen mode, you can also delete, duplicate, and enter Edit mode using a keyboard. (57195967)
 
-##### RealityKit
+### RealityKit
 
-###### Known Issues
+#### Known Issues
 
 - After updating to iOS & iPadOS 13.4, you won’t be able to synchronize scenes with peers using earlier versions of RealityKit, due to a fundamental change in the physics system. If two peers running a [`MultipeerConnectivityService`](../RealityKit/multipeerconnectivityservice.md) have incompatible versions, they will remain connected in the underlying [`MCSession`](../MultipeerConnectivity/mcsession.md), but won’t synchronize scenes. iOS & iPadOS 13.4 adds a new [`NetworkCompatibilityToken`](../RealityKit/networkcompatibilitytoken.md) class so a host can avoid inviting incompatible clients to its [`MCSession`](../MultipeerConnectivity/mcsession.md). Please see the [`NetworkCompatibilityToken`](../RealityKit/networkcompatibilitytoken.md) documentation for additional details. (59262764)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - When using a [`NavigationView`](../SwiftUI/navigationview.md) with multiple columns, the navigation bar now shows a control to toggle the columns. (49074511)
 - The `onDrag` and `onDrop` modifiers are now available on iOS. (49661347)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - [`safeAreaInsets`](../SwiftUI/geometryproxy/safeareainsets.md) in navigation and tab views now extend to the top edge as expected. If you previously used `edgesIgnoringSafeArea(_:)` as a workaround, it should now be removed. (52851281)
 

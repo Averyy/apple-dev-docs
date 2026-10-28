@@ -30,7 +30,7 @@ func mergeChanges(fromContextDidSave notification: Notification)
 - [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Discussion
+## Discussion
 
 This method refreshes any objects which have been updated in the other context, faults in any newly-inserted objects, and invokes [`delete(_:)`](./delete%28_%29.md): on those which have been deleted.
 

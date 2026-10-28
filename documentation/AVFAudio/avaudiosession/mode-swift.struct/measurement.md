@@ -24,7 +24,7 @@ static let measurement: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeMeasurement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode for apps that need to minimize the amount of system-supplied signal processing to input and output signals. If recording on devices with more than one built-in microphone, the session uses the primary microphone.
 

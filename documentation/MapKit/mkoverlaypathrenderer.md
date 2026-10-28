@@ -24,7 +24,7 @@ class MKOverlayPathRenderer
 @interface MKOverlayPathRenderer : MKOverlayRenderer
 ```
 
-#### Overview
+## Overview
 
 Use this renderer when a [`CGPath`](../CoreGraphics/cgpath.md) object defines your overlay’s shape. By default, this renderer fills the overlay’s shape and represents the strokes of the path using its current attributes.
 

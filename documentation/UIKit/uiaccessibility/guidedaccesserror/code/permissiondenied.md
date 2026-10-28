@@ -22,7 +22,7 @@ case permissionDenied
 UIGuidedAccessErrorPermissionDenied
 ```
 
-#### Discussion
+## Discussion
 
 For example, this error might indicate that your app is requesting a configuration change but isn’t locked into Single App Mode through a configuration profile.
 

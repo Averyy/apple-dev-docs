@@ -17,7 +17,7 @@ The source files associated with this target
 let sourceFiles: FileList
 ```
 
-#### Discussion
+## Discussion
 
 Any files that have been excluded in the manifest have already been filtered out.
 

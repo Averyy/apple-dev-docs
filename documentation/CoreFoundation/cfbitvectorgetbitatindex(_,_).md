@@ -25,7 +25,7 @@ func CFBitVectorGetBitAtIndex(_ bv: CFBitVector!, _ idx: CFIndex) -> CFBit
 extern CFBit CFBitVectorGetBitAtIndex(CFBitVectorRef bv, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 The bit value at index `idx` in `bv`.
 

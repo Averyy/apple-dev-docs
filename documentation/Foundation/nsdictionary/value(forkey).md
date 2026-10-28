@@ -25,11 +25,11 @@ func value(forKey key: String) -> Any?
 - (ObjectType) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with `key`.
 
-#### Discussion
+## Discussion
 
 If `key` does not start with “`@`”, invokes [`object(forKey:)`](./object%28forkey%29.md). If `key` does start with “`@`”, strips the “@” and invokes `[super valueForKey:]` with the rest of the key.
 

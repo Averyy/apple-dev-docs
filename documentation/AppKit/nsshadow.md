@@ -19,7 +19,7 @@ class NSShadow
 @interface NSShadow : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you create shadows, the system draws them in the default user coordinate space, where coordinates are independent from the pixel values of any particular device. Rotations, translations, and other transformations of the current transformation matrix (CTM) don’t affect the shadow or the apparent position of the shadow’s light source.
 

@@ -19,7 +19,7 @@ object RateLimitExceededError
 
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 For more information, including a list of endpoints and their rate limits, see [Identifying rate limits](./identifying-rate-limits.md).
 

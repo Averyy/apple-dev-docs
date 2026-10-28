@@ -25,7 +25,7 @@ struct AVAudio3DVectorOrientation
 struct AVAudio3DVectorOrientation;
 ```
 
-#### Overview
+## Overview
 
 Two orthogonal vectors describe the orientation of the listener. The forward vector points in the direction the listener faces. The up vector is orthogonal to the forward vector and points upward from the listener’s head.
 

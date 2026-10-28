@@ -21,7 +21,7 @@ var allowsAirPlayVideo: Bool { get set }
 @property BOOL allowsAirPlayVideo;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

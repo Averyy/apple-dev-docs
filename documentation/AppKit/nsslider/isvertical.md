@@ -23,7 +23,7 @@ var vertical: Bool { get set }
 @property (readwrite, getter=isVertical) BOOL vertical;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `1` if the slider is vertical, `0` if it’s horizontal, and `-1` if the orientation is unknown (for example, if the slider hasn’t been displayed yet). A slider is defined as vertical if its height is greater than its width.
 

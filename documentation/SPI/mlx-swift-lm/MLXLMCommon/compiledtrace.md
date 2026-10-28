@@ -17,7 +17,7 @@ A compiled trace of a body that reads module weights.
 final class CompiledTrace<Owner> where Owner : Module
 ```
 
-#### Overview
+## Overview
 
 The declared modules’ weights become compile `inputs:`, so every call reads their current values instead of the ones the first call happened to see. Without that, a compiled forward silently ignores a loaded adapter or a training step.
 

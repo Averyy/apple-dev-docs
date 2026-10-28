@@ -19,7 +19,7 @@ Information describing the properties of the ecosystem.
 struct Topology
 ```
 
-#### Overview
+## Overview
 
 The topology of a fabric consists of its homes, rooms, and devices. The number of homes included in this class determines whether the setup presents a home selection step. If there are two or more homes, the user selects one home to add the device to.
 

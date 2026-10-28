@@ -18,7 +18,7 @@ var FFERR_EFFECTTYPENOTSUPPORTED: Int { get }
 #define FFERR_EFFECTTYPENOTSUPPORTED
 ```
 
-#### Discussion
+## Discussion
 
 The effect type requested is not explicitly supported by the particular device.
 

@@ -22,7 +22,7 @@ Generates a data frame, that you choose how to sort, with two columns, one that 
 func counts(order: Order?) -> DataFrame
 ```
 
-#### Discussion
+## Discussion
 
 The name of the data frame’s column that stores the number of rows in each group is *count*.
 

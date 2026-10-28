@@ -23,7 +23,7 @@ case unspecified
 INListRideOptionsIntentResponseCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Consider specifying this constant during handling of the intent a failure on your part and it results in an error.
 

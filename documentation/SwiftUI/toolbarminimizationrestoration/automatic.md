@@ -21,7 +21,7 @@ The system determines the restoration behavior.
 static let automatic: ToolbarMinimizationRestoration
 ```
 
-#### Discussion
+## Discussion
 
 By default, the toolbar restores when the user reverses scroll direction.
 

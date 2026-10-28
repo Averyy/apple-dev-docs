@@ -25,11 +25,11 @@ func CFStringConvertNSStringEncodingToEncoding(_ encoding: UInt) -> CFStringEnco
 extern CFStringEncoding CFStringConvertNSStringEncodingToEncoding(unsigned long encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation string encoding that is closest to the Cocoa string encoding `encoding`. Returns the [`kCFStringEncodingInvalidId`](./kcfstringencodinginvalidid.md) constant if the mapping is not known.
 
-#### Discussion
+## Discussion
 
 The [`CFStringConvertEncodingToNSStringEncoding(_:)`](./cfstringconvertencodingtonsstringencoding%28_%29.md) function is complementary to this function.
 

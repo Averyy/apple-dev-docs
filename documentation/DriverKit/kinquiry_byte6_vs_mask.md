@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_VS_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the VS bit.
 

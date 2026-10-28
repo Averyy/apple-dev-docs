@@ -5,7 +5,7 @@
 
 Display a graphical representation of images, icons, data, and more on a two-dimensional braille display.
 
-#### Overview
+## Overview
 
 A refreshable braille display is a hardware device that shows rows of pins that can raise and lower. People who are blind or deafblind use these devices to read digital content through interaction with a screenreader, such as VoiceOver. For information about connecting a braille display to an Apple device, read [Use a braille display with VoiceOver on iPhone](https://support.apple.com/guide/iphone/use-a-braille-display-iph73b8c43/ios).
 

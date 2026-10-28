@@ -24,7 +24,7 @@ class HKQueryAnchor
 @interface HKQueryAnchor : NSObject
 ```
 
-#### Overview
+## Overview
 
 The system returns [`HKQueryAnchor`](./hkqueryanchor.md) objects in both the anchored object query’s results handler and it’s update handler. Use the anchors to query for samples added or deleted after the result or update.
 

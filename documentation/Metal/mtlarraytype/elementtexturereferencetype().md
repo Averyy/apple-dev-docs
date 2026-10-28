@@ -24,11 +24,11 @@ func elementTextureReferenceType() -> MTLTextureReferenceType?
 - (MTLTextureReferenceType *) elementTextureReferenceType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the texture. If the array elements aren’t textures, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method if [`elementType`](./elementtype.md) is [`MTLDataType.texture`](../mtldatatype/texture.md).
 

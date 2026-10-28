@@ -23,11 +23,11 @@ optional func characterOffset(of position: UITextPosition, within range: UITextR
 - (NSInteger) characterOffsetOfPosition:(UITextPosition *) position withinRange:(UITextRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 The number of characters in a document’s text that occur between `position` and the beginning of `range`.
 
-#### Discussion
+## Discussion
 
 You should implement this method if you don’t have a one-to-one correspondence between [`UITextPosition`](../uitextposition.md) objects within the given range and character offsets into a document string.
 

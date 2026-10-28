@@ -25,7 +25,7 @@ func CFTreeRemove(_ tree: CFTree!)
 extern void CFTreeRemove(CFTreeRef tree);
 ```
 
-#### Discussion
+## Discussion
 
 When a child tree is removed from its parent, the parent releases it. If you want to use the child after you have removed it, you should ensure you retain it before removing it from its parent.
 

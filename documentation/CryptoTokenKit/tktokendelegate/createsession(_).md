@@ -26,11 +26,11 @@ func createSession(_ token: TKToken) throws -> TKTokenSession
 - (TKTokenSession *) token:(TKToken *) token createSessionWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new token session, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 All operations for a token are performed within a session representing an authentication context. This delegate method is called whenever new authentication context is needed. For example, a client may want to perform a token operation using a keychain object that has an associated `LAContext`.
 

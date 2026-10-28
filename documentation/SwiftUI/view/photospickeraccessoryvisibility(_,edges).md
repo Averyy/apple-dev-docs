@@ -19,7 +19,7 @@ nonisolated
 func photosPickerAccessoryVisibility(_ visibility: Visibility, edges: Edge.Set = .all) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A Photos picker with the specified accessory visibility.
 

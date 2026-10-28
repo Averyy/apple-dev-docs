@@ -21,11 +21,11 @@ func ABPersonGetCompositeNameFormatForRecord(_ record: ABRecord!) -> ABPersonCom
 extern ABPersonCompositeNameFormat ABPersonGetCompositeNameFormatForRecord(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The person-name display format to use for the given record.
 
-#### Discussion
+## Discussion
 
 If the record is `NULL`, or if it has no first name, middle name, or last name, then the user’s default order preference is returned. For possible values, see [Composite Name Format](./api-1619815-composite-name-format.md).
 

@@ -5,7 +5,7 @@
 
 Pass image data between the Core Graphics framework and the vImage library.
 
-#### Overview
+## Overview
 
 The vImage library uses the [`CGImage`](../CoreGraphics/cgimage.md) class as the main type to consume and produce still images. A [`CGImage`](../CoreGraphics/cgimage.md) instance may originate from [`NSImage`](../AppKit/nsimage.md) or [`UIImage`](../UIKit/uiimage.md) images, or from a [`CGContext`](../CoreGraphics/cgcontext.md) drawing destination.
 

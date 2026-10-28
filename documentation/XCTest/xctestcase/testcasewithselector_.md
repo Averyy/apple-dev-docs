@@ -12,7 +12,7 @@ Creates a test case with a selector.
 + (instancetype) testCaseWithSelector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 A test case with a selector.
 

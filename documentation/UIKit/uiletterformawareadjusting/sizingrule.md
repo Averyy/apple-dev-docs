@@ -24,7 +24,7 @@ var sizingRule: UILetterformAwareSizingRule { get set }
 @property (nonatomic) UILetterformAwareSizingRule sizingRule;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on sizing behaviors, see [`UILetterformAwareAdjusting`](../uiletterformawareadjusting.md).
 

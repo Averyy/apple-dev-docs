@@ -20,7 +20,7 @@ object data
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 - [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
 
-#### Discussion
+## Discussion
 
 The `data` object is part of the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md). It’s present in the payload for [`notificationType`](./notificationtype.md) values related to in-app purchases, except for the `RENEWAL_EXTENSION` notification type with a `SUMMARY` [`subtype`](./subtype.md), and the `EXTERNAL_PURCHASE_TOKEN` notification type.
 

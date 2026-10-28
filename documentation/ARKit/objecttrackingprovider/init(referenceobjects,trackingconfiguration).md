@@ -15,7 +15,7 @@ Creates an object-tracking provider.
 init(referenceObjects: [ReferenceObject], trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The method clamps the numeric parameter values for configuring tracking if they’re outside their supported range.
 

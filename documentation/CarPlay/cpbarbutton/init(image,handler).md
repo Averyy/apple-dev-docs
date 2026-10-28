@@ -21,7 +21,7 @@ init(image: UIImage, handler: CPBarButtonHandler? = nil)
 - (instancetype) initWithImage:(UIImage *) image handler:(CPBarButtonHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A bar button that displays the provided image.
 

@@ -19,7 +19,7 @@ The order in which the framework draws splats to blend their opacity.
 final var sortingMode: GaussianSplatResource.SortingMode
 ```
 
-#### Discussion
+## Discussion
 
 The default value sorts by depth relative to the camera.
 

@@ -25,11 +25,11 @@ func CMBufferQueueGetMinPresentationTimeStamp(_ queue: CMBufferQueue) -> CMTime
 extern CMTime CMBufferQueueGetMinPresentationTimeStamp(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The earliest presentation timestamp of the interrogated `CMBufferQueue`.
 
-#### Discussion
+## Discussion
 
 The search for earliest presentation timstamp is performed in                this API. If you know your queue is sorted by presentation time,                [`CMBufferQueueGetBufferCount(_:)`](./cmbufferqueuegetbuffercount%28_%29.md) is a faster alternative. If the                `getPresentationTimeStamp` callback is `NULL`, kCMTimeInvalid will                be returned.
 

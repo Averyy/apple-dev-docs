@@ -22,7 +22,7 @@ A sequence containing the same elements as this one, possibly with a simpler typ
 var elements: Self.Elements { get }
 ```
 
-#### Discussion
+## Discussion
 
 When implementing lazy operations, wrapping `elements` instead of `self` can prevent result types from growing an extra `LazySequence` layer.
 

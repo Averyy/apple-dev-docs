@@ -21,7 +21,7 @@ Used by CoreFoundation’s toll-free bridging.
 extern Classobjc_getFutureClass(const char *name);
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this function yourself.
 

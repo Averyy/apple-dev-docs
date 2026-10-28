@@ -5,7 +5,7 @@
 
 Set criteria for assigning players to teams in your game using matchmaking rules.
 
-#### Overview
+## Overview
 
 If your game has teams, add team rules to balance the assignment of players to teams that makes gameplay more fair and enjoyable for the players. Team rules create constraints on adding players to teams.
 
@@ -19,7 +19,7 @@ Before you begin adding team rules:
 
 For more information on creating the other types of rules, see [Letting players join matches using party codes](./letting-players-join-matches-using-party-codes.md) and [Finding players with similar skill levels](./finding-players-with-similar-skill-levels.md).
 
-##### Add teams to the rule set
+### Add teams to the rule set
 
 Create two or more teams to compete in your game using the [`Create a Team`](../AppStoreConnectAPI/post-v1-gamecentermatchmakingteams.md) endpoint.
 
@@ -71,7 +71,7 @@ POST /v1/gameCenterMatchmakingTeams
 }
 ```
 
-##### Add team rules to the rule set
+### Add team rules to the rule set
 
 You can add one or more team rules to your rule set depending on how many constraints you want to add to the team assignments. For example, if your matches have a variable number of team members, you can create a team rule that keeps the sizes of the teams balanced. You can also balance the teams by skill level and ensure that invited players are on the same team.
 
@@ -110,7 +110,7 @@ POST /v1/gameCenterMatchmakingRules
 
 In team rule expressions, the [Player](../AppStoreConnectAPI/player.md) object has a `requestName` field that is an identifier for the associated match request. For more information on the [Team](../AppStoreConnectAPI/team.md) and [Player](../AppStoreConnectAPI/player.md) objects you use in team rules, see [Expressions](../AppStoreConnectAPI/expressions.md) in App Store Connect API.
 
-##### Create match requests that assign players to teams
+### Create match requests that assign players to teams
 
 In your code, create a [`GKMatchRequest`](./gkmatchrequest.md) object that initiates a team game. Set the [`queueName`](./gkmatchrequest/queuename.md) property to the reference name of the queue that contains your team rules.
 
@@ -132,7 +132,7 @@ request.properties = [ "skill": skill]
 
 Game Center finds all compatible players and assigns them to teams.
 
-##### Get team assignments when players accept invitations
+### Get team assignments when players accept invitations
 
 When all the players accept their invitations, GameKit invokes the `GKMatchmakerViewControllerDelegate` [`matchmakerViewController(_:didFind:)`](./gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller%28_,didfind%29.md) method in the app instances for all players in the game, including the player who sent the invitations.
 

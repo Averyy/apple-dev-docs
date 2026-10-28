@@ -20,7 +20,7 @@ Creates an Aztec code descriptor for the given payload and parameters.
 + (instancetype) descriptorWithPayload:(NSData *) errorCorrectedPayload isCompact:(BOOL) isCompact layerCount:(NSInteger) layerCount dataCodewordCount:(NSInteger) dataCodewordCount;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 

@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, didPublishL2C
 - (void) peripheralManager:(CBPeripheralManager *) peripheral didPublishL2CAPChannel:(CBL2CAPPSM) PSM error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The peripheral manager calls this method after you call [`publishL2CAPChannel(withEncryption:)`](../cbperipheralmanager/publishl2capchannel%28withencryption%29.md). The `PSM` parameter contains the PSM assigned for the published channel.
 

@@ -28,7 +28,7 @@ class UIGestureRecognizer
 
 - [About app development with UIKit](./about-app-development-with-uikit.md)
 
-#### Overview
+## Overview
 
 A *gesture recognizer* decouples the logic for recognizing a sequence of touches (or other input) and acting on that recognition. When one of these objects recognizes a common gesture or, in some cases, a change in the gesture, it sends an action message to each designated target object.
 
@@ -75,7 +75,7 @@ A window delivers touch events to a gesture recognizer before it delivers them t
 
 Note that “recognize” in the above descriptions doesn’t necessarily equate to a transition to the Recognized state.
 
-##### Subclassing notes
+### Subclassing notes
 
 You may create a subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md) that recognizes a distinctive gesture — for example, a “check mark” gesture. If you’re going to create such a concrete gesture recognizer, be sure to import the `UIGestureRecognizerSubclass.h` header file (for Objective-C) or the `UIKit.UIGestureRecognizerSubclass` module (for Swift). This file declares all the methods and properties a subclass must either override, call, or reset.
 
@@ -90,11 +90,11 @@ The Changed state is optional and may occur multiple times before the Cancelled 
 
 Subclasses must set the [`state`](./uigesturerecognizer/state-swift.property.md) property to the appropriate value when they transition between states.
 
-###### Methods to override
+#### Methods to override
 
 The methods that subclasses must override are described in [Implementing subclasses](./uigesturerecognizer.md#Implementing-subclasses). Subclasses must also periodically reset the [`state`](./uigesturerecognizer/state-swift.property.md) property (as described above) and may call the [`ignore(_:for:)`](./uigesturerecognizer/ignore%28_,for%29-5f685.md) method.
 
-###### Special considerations
+#### Special considerations
 
 The [`state`](./uigesturerecognizer/state-swift.property.md) property is declared in `UIGestureRecognizer.h` as being read-only. This property declaration is intended for clients of gesture recognizers. Subclasses of `UIGestureRecognizer` must import the `UIGestureRecognizerSubclass.h` header file (for Objective-C) or the `UIKit.UIGestureRecognizerSubclass` module (for Swift). This file contains a redeclaration of `state` that makes it read-write.
 

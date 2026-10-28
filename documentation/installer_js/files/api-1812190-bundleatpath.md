@@ -11,7 +11,7 @@ Provides the contents of the info plist file of the identified bundle.
 bundleAtPath(filePath)
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary (associative array) with the contents of the bundle’s info plist file.
 

@@ -9,11 +9,11 @@ Delete a location group by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint soft-deletes the location group. The system doesn’t physically remove the record. Instead, it marks the record with `systemStatus: DELETED` and excludes it from query results and ad group targeting lookups. Deletion is permanent. There is no restore operation.
 
-##### Downstream Effects
+### Downstream Effects
 
 Ad groups that reference the deleted location group lose that targeting constraint immediately and will only continue to serve if they are targeting other location groups.
 
@@ -22,12 +22,12 @@ Deletion carries a few important caveats:
 | Constraint | Detail |
 | --- | --- |
 | Permanent | Deleted groups cannot be restored. Create a new group to replace a deleted one. |
-| Still retrievable | A deleted group can still be fetched by ID and appears in queries that include a `deleted EQUALS true` filter. |
+| Still retrievable | A deleted group can still be fetched by ID. |
 | Targeting impact | Ad groups referencing a deleted group lose the location constraint immediately upon deletion. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Deletes a location group by its unique identifier.
 
@@ -35,7 +35,7 @@ Deletes a location group by its unique identifier.
 DELETE /v1/location-groups/5764607523034238976
 ```
 
-##### Response
+### Response
 
 ```json
 {

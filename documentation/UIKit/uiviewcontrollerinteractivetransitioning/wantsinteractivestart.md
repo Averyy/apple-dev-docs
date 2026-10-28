@@ -23,7 +23,7 @@ optional var wantsInteractiveStart: Bool { get }
 @property (nonatomic, readonly) BOOL wantsInteractiveStart;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the transition is interactive from the moment it starts. The property is [`false`](../../Swift/false.md) when the transition starts off as noninteractive. However, even a transition that starts off as noninteractive may become interactive later if it implements the [`interruptibleAnimator(using:)`](../uiviewcontrolleranimatedtransitioning/interruptibleanimator%28using%29.md) method of the [`UIViewControllerAnimatedTransitioning`](../uiviewcontrolleranimatedtransitioning.md) protocol.
 

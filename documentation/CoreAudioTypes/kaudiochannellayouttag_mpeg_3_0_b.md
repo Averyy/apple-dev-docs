@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_MPEG_3_0_B: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_MPEG_3_0_B
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

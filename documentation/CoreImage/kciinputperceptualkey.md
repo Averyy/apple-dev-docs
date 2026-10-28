@@ -24,7 +24,7 @@ let kCIInputPerceptualKey: String
 extern NSString * const kCIInputPerceptualKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be an `NSNumber` instance.
 

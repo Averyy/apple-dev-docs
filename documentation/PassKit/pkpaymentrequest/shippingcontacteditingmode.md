@@ -28,7 +28,7 @@ var shippingContactEditingMode: PKShippingContactEditingMode { get set }
 
 - [Displaying a Read-Only Pickup Address](../displaying-a-read-only-pickup-address.md)
 
-#### Discussion
+## Discussion
 
 Set the value to [`PKShippingContactEditingMode.storePickup`](../pkshippingcontacteditingmode/storepickup.md) for an in-store or other pickup to prevent the user from editing the shipping address.
 

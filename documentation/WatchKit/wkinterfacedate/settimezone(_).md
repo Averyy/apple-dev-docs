@@ -19,7 +19,7 @@ func setTimeZone(_ timeZone: TimeZone?)
 - (void) setTimeZone:(NSTimeZone *) timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to configure the time zone to one that is different from the user’s current time zone. For example, a world clock app might use this method to configure the time display information.
 

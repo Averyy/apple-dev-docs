@@ -25,7 +25,7 @@ func enableUndoRegistration()
 - (void) enableUndoRegistration;
 ```
 
-#### Discussion
+## Discussion
 
 Because undo registration is enabled by default, it is often used to balance a prior [`disableUndoRegistration()`](./disableundoregistration%28%29.md) message. Undo registration isn’t actually re-enabled until an enable message balances the last disable message in effect. Raises an `NSInternalInconsistencyException` if invoked while no [`disableUndoRegistration()`](./disableundoregistration%28%29.md) message is in effect.
 

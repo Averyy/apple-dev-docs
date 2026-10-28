@@ -19,7 +19,7 @@ func reload()
 - (void) reloadSession;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from your extension to regenerate address annotations to replace existing annotations for the session. In response, MailKit invokes [`annotateAddressesForSession(_:completion:)`](../mecomposesessionhandler/annotateaddressesforsession%28_,completion%29.md) for all addresses in the To, Cc, and Bcc fields.
 

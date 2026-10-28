@@ -19,7 +19,7 @@ class SFCertificateView
 @interface SFCertificateView : NSVisualEffectView
 ```
 
-#### Overview
+## Overview
 
 The following figure shows a certificate view that includes editable trust settings and certificate details.
 

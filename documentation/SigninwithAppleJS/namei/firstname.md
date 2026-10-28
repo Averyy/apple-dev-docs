@@ -15,7 +15,7 @@ The user’s first name.
 attribute string firstName;
 ```
 
-#### Discussion
+## Discussion
 
 Apple doesn’t receive the user’s full name shared with the system UI. The raw data is passed directly to your app from the browser and is not included in the user’s identity token. To help prevent cross-site scripting attacks, validate and sanitize the user-submitted first and last name values before storing on your app servers.
 

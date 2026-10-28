@@ -30,7 +30,7 @@ class MLModel
 - [Downloading and Compiling a Model on the User’s Device](./downloading-and-compiling-a-model-on-the-user-s-device.md)
 - [Encrypting a Model in Your App](./encrypting-a-model-in-your-app.md)
 
-#### Overview
+## Overview
 
 [`MLModel`](./mlmodel.md) encapsulates a model’s prediction methods, configuration, and model description.
 

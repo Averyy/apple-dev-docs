@@ -15,7 +15,7 @@ An array of DOM event objects that list the low-level events that led to the rec
 readonly domEvents: Event[];
 ```
 
-#### Discussion
+## Discussion
 
 You can inspect these event objects and tailor the code to react according to additional low-level events, such as modifier keys for the events.
 

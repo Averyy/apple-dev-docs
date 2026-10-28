@@ -19,7 +19,7 @@ static let selectedIndex: NSBindingName
 extern NSBindingName NSSelectedIndexBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

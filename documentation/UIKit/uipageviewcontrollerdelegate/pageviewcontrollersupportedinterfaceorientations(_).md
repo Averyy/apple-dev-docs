@@ -22,7 +22,7 @@ optional func pageViewControllerSupportedInterfaceOrientations(_ pageViewControl
 - (UIInterfaceOrientationMask) pageViewControllerSupportedInterfaceOrientations:(UIPageViewController *) pageViewController;
 ```
 
-#### Return Value
+## Return Value
 
 One of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants that represents the set of   interface orientations supported by the page view controller.
 

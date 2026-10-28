@@ -23,11 +23,11 @@ func scopeBarButtonDividerImage(forLeftSegmentState leftState: UIControl.State, 
 - (UIImage *) scopeBarButtonDividerImageForLeftSegmentState:(UIControlState) leftState rightSegmentState:(UIControlState) rightState;
 ```
 
-#### Return Value
+## Return Value
 
 The divider image to use for the combination of `leftState` and `rightState`.
 
-#### Discussion
+## Discussion
 
 For more details, see [`setScopeBarButtonDividerImage(_:forLeftSegmentState:rightSegmentState:)`](./setscopebarbuttondividerimage%28_,forleftsegmentstate,rightsegmentstate%29.md)
 

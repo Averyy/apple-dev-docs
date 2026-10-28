@@ -20,7 +20,7 @@ Returns a sample predicate that matches category samples.
 static func categorySample(type categoryType: HKCategoryType, predicate: NSPredicate? = nil) -> HKSamplePredicate<HKCategorySample>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an [`HKSamplePredicate`](../hksamplepredicate.md) instance that you can use to query for [`HKCategorySample`](../hkcategorysample.md) objects.
 

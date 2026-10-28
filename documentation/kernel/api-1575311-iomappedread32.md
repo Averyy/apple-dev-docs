@@ -15,11 +15,11 @@ Read four bytes from the desired "Physical" IOSpace address.
 UInt32 IOMappedRead32(IOPhysicalAddress address);
 ```
 
-#### Return Value
+## Return Value
 
 Data contained at that location
 
-#### Discussion
+## Discussion
 
 Read four bytes from the desired "Physical" IOSpace address. This function allows the developer to read an address returned from any memory descriptor's getPhysicalSegment routine. It can then be used by segmenting a physical page slightly to tag the physical page with its kernel space virtual address.
 

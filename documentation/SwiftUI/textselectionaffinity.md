@@ -21,7 +21,7 @@ A representation of the direction or association of a selection or cursor relati
 enum TextSelectionAffinity
 ```
 
-#### Overview
+## Overview
 
 This type also determines whether, for example, the insertion point appears after the last character on a line or before the first character on the following line in cases where text wraps across line boundaries.
 

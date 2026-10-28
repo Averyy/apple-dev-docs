@@ -21,7 +21,7 @@ The affine transform’s inverse.
 var inverse: AffineTransform3DFloat? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the source transform isn’t invertible, this value is `nil`.
 

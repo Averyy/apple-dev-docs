@@ -368,6 +368,14 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/evaluation(on,featurecolumns,labelcolumn,recordingfilecolumn).md",
       "hash": "9d96421040bffc132a2589a0b341246d6dd3a5f153f2e2ce237fa662410d6548"
     },
+    "https://developer.apple.com/documentation/createml/mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:)-1ib5p": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/evaluation(on,featurecolumns,labelcolumn,recordingfilecolumn)-1ib5p.md",
+      "hash": "453c53fefcb158d83c2755e994e14594c95ee1d69ada68f9f4b7565a98f55215"
+    },
+    "https://developer.apple.com/documentation/createml/mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:)-3r5em": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/evaluation(on,featurecolumns,labelcolumn,recordingfilecolumn)-3r5em.md",
+      "hash": "3c769bafd1241ecc3eb70be71159f197fbc13a8ea53e2f94d1989f8ab2ff9da6"
+    },
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/featurecolumns": {
       "file_path": "documentation/CreateML/mlactivityclassifier/featurecolumns.md",
       "hash": "579b675adf5b41715ef450ef36d1834d7520e22a14185db10b39017216fd6955"
@@ -380,6 +388,10 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/init(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters).md",
       "hash": "df03a9b1f1b8969d1e8f3b23e82dae5b2bb17a28776f22f5771fd62d7efb2fb4"
     },
+    "https://developer.apple.com/documentation/createml/mlactivityclassifier/init(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:)-1z9ai": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/init(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters)-1z9ai.md",
+      "hash": "f1c0374af5897500d897ca021d94c8bd5ab3e5b9c632a2c0a3a55daa35b08850"
+    },
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/labelcolumn": {
       "file_path": "documentation/CreateML/mlactivityclassifier/labelcolumn.md",
       "hash": "b90d8596f88d07b0b68b6cb98a1ef62ab6ff619fc207cb8d2bdd5794053ee15f"
@@ -387,6 +399,10 @@
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlactivityclassifier/maketrainingsession(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters).md",
       "hash": "c07296d19ae9b2981ea552760bccf6e8b0dfe687c54798422d117c3bf6d1edc7"
+    },
+    "https://developer.apple.com/documentation/createml/mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-3ic8k": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/maketrainingsession(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters)-3ic8k.md",
+      "hash": "0c294021cad4b7eb06e417a586e37826595d0a18eeb8051d935aa51f939b22a3"
     },
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/model": {
       "file_path": "documentation/CreateML/mlactivityclassifier/model.md",
@@ -432,6 +448,10 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/modelparameters-swift.struct/init(validationdata,batchsize,maximumiterations,predictionwindowsize).md",
       "hash": "562a63bd410b974d255ad09c4eaa56462e40358bb07bdb4490d70ae4c39b08f6"
     },
+    "https://developer.apple.com/documentation/createml/mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:)-6lc3g": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/modelparameters-swift.struct/init(validationdata,batchsize,maximumiterations,predictionwindowsize)-6lc3g.md",
+      "hash": "c55daf783512172d6230076250061ddc5ddb9f85056a853d369e0fdb3913477d"
+    },
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/modelparameters-swift.struct/maximumiterations": {
       "file_path": "documentation/CreateML/mlactivityclassifier/modelparameters-swift.struct/maximumiterations.md",
       "hash": "91db60d5b29b36cad23a10045fdc17f0062453ada145ad632630194d3b78d51d"
@@ -476,6 +496,10 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/predictions(from,perwindowprediction).md",
       "hash": "4fe838942a6010ebdb499ae8d701f18cda0d773d8c88d161b1a06eec801ca423"
     },
+    "https://developer.apple.com/documentation/createml/mlactivityclassifier/predictions(from:perwindowprediction:)-6tatv": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/predictions(from,perwindowprediction)-6tatv.md",
+      "hash": "b15d24023ee709e3776457dd5ef0f17b1b86f6536bfbce98c3b3b43b05fec2d7"
+    },
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/recordingfilecolumn": {
       "file_path": "documentation/CreateML/mlactivityclassifier/recordingfilecolumn.md",
       "hash": "c64999af79d3260c572ba4d3e8d61c098337fcb7023d803d5a9678de732d91a8"
@@ -491,6 +515,10 @@
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlactivityclassifier/train(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters).md",
       "hash": "3ec63366009176fa66ba735a2a337fd6d3b605820a0930050861bc277a1781b3"
+    },
+    "https://developer.apple.com/documentation/createml/mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-43yhp": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/train(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters)-43yhp.md",
+      "hash": "3870d32be09a4b58eaa6a438271bb92c7f59bb20e969e491f033453cdc56374f"
     },
     "https://developer.apple.com/documentation/createml/mlactivityclassifier/trainingmetrics": {
       "file_path": "documentation/CreateML/mlactivityclassifier/trainingmetrics.md",
@@ -536,6 +564,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/evaluation(on).md",
       "hash": "7c3b5dcfad7e4c55e40c41e1c8c01c5bb4c3d15b80ee0137bf16824826003edd"
     },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/evaluation(on:)-4uhu9": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/evaluation(on)-4uhu9.md",
+      "hash": "2a9f88e1d077622ac5d7bc91fa3d20896be8e9e2f043778601da833530401b83"
+    },
     "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/featurecolumns": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/featurecolumns.md",
       "hash": "d0ac637d7c5acab6b91d90bf244b5a081319de80f473f29647ad860204a43d4d"
@@ -548,9 +580,17 @@
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "37abf340f9153530d2e583baf1b19cb7cb2d6f0790454a4da39514508e24a8ed"
     },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-8w2dm": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-8w2dm.md",
+      "hash": "5e52c1ead2bf9d83177fc660ed07901746df15e525ed929292f1ce30c8bfe328"
+    },
     "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "7719139529636e72c91202b74112aba5e31bfd1c6c7abcddd26d68db48ef92fd"
+    },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-334sj": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-334sj.md",
+      "hash": "ae8952ee3615bcc96edf6b1c274f0a193ee9c7484b33f17eb11fd25c58f3bb2e"
     },
     "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/model": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/model.md",
@@ -668,6 +708,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/predictions(from).md",
       "hash": "cc88348aecb532f1ead4df4f52bf45217d8b04ac0daea1a8c6a89fb0779430e4"
     },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/predictions(from:)-17rgd": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/predictions(from)-17rgd.md",
+      "hash": "d578ef68de9a56dd13bbc9de3bd06e56232d71bbbaed460a33b0a676df2a0353"
+    },
     "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/restoretrainingsession(sessionparameters).md",
       "hash": "e9a5f64392e635716d21a62d2da56dc77b7f7bb34db91d96a093ab905104a507"
@@ -683,6 +727,10 @@
     "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "5093e9c4af8bc320bea790af27980521de227e9f7cd247f5402287b10936286f"
+    },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-79pib": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-79pib.md",
+      "hash": "78103b66f22cf2bddd8b714bac15e97d1b8993846096b7e500ca1d8207b2467f"
     },
     "https://developer.apple.com/documentation/createml/mlboostedtreeclassifier/trainingmetrics": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/trainingmetrics.md",
@@ -728,6 +776,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeregressor/evaluation(on).md",
       "hash": "0dfd4dff40df7951092c71bff4ebcad8d7873355b82ea69cd63084983bdd1f34"
     },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/evaluation(on:)-2tsxy": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/evaluation(on)-2tsxy.md",
+      "hash": "b1c7aa89a7e5788ab54e2a8f5fb2c9230dd1fb8ae6d364a756a0a88a914e6276"
+    },
     "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/featurecolumns": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/featurecolumns.md",
       "hash": "fb8df7b84a26362825016f9f187f5c39ffdd5aafb29f22a322616ed1a14e9ddf"
@@ -740,9 +792,17 @@
       "file_path": "documentation/CreateML/mlboostedtreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "aa62873db5128546ae41569631b59b13dc9434c7ab8e8276cd80c36bb00901fd"
     },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-hfxs": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-hfxs.md",
+      "hash": "c8c283e1ccca0df454ca32853238cb157cebf4714fb1262b6a968710c285e6c2"
+    },
     "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "3fd72228c40fccbf9ce23af96d8628ade3f2845738b7ae3cb0060b18aed4d80a"
+    },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-4d0fx": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-4d0fx.md",
+      "hash": "68ebfd22c33c24b163ab469af4afcf8d244a38699029d463b2415d7c7d0bd465"
     },
     "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/model": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/model.md",
@@ -860,6 +920,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeregressor/predictions(from).md",
       "hash": "4d8cb6df9a433998cc43e9c2f279de78c5b41b57ef4a9a01285b803dd9c17739"
     },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/predictions(from:)-3daff": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/predictions(from)-3daff.md",
+      "hash": "670df5f03ce731c6bc5e06516773ab473de570b41f90f28686d6f4493aed015e"
+    },
     "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/restoretrainingsession(sessionparameters).md",
       "hash": "215914a6d8ec233bb3cbe00c2136dff2d61999271273ad02a74af9800eb3244e"
@@ -875,6 +939,10 @@
     "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "814f6645f8dc2dd08faef81fcd6ba44f022c4d397c5450770e1d098dd2941322"
+    },
+    "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-4okyp": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-4okyp.md",
+      "hash": "0a87b6cdf6c00cbc422de29e8023b3025858ddb5bf6f81963de752c878a149ba"
     },
     "https://developer.apple.com/documentation/createml/mlboostedtreeregressor/trainingmetrics": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/trainingmetrics.md",
@@ -1000,6 +1068,10 @@
       "file_path": "documentation/CreateML/mlclassifier/evaluation(on).md",
       "hash": "4574c389b7e4396dc24352570c5ca9d40dee660f7105846181b3984ffcfa32ad"
     },
+    "https://developer.apple.com/documentation/createml/mlclassifier/evaluation(on:)-6433y": {
+      "file_path": "documentation/CreateML/mlclassifier/evaluation(on)-6433y.md",
+      "hash": "5075d70dd1cfdf948f218a09951aaefeb8bc9791e2f6a63ecbe6b564d50e8ed8"
+    },
     "https://developer.apple.com/documentation/createml/mlclassifier/featurecolumns": {
       "file_path": "documentation/CreateML/mlclassifier/featurecolumns.md",
       "hash": "836d9ee249f1d3fc60d1ac8eeb3d6fa77d85b5241538adda0538b6a2c250aa16"
@@ -1007,6 +1079,10 @@
     "https://developer.apple.com/documentation/createml/mlclassifier/init(trainingdata:targetcolumn:featurecolumns:)": {
       "file_path": "documentation/CreateML/mlclassifier/init(trainingdata,targetcolumn,featurecolumns).md",
       "hash": "42f95c183f8b6c7c09ee749bef7d57a66359bb5cfb5fc247930738de2bdcae70"
+    },
+    "https://developer.apple.com/documentation/createml/mlclassifier/init(trainingdata:targetcolumn:featurecolumns:)-p3f6": {
+      "file_path": "documentation/CreateML/mlclassifier/init(trainingdata,targetcolumn,featurecolumns)-p3f6.md",
+      "hash": "c84f92a8d45c1694627c3b560ad74646fccd6829500efa6ec3e0f8402f279253"
     },
     "https://developer.apple.com/documentation/createml/mlclassifier/logisticregression(_:)": {
       "file_path": "documentation/CreateML/mlclassifier/logisticregression(_).md",
@@ -1023,6 +1099,10 @@
     "https://developer.apple.com/documentation/createml/mlclassifier/predictions(from:)": {
       "file_path": "documentation/CreateML/mlclassifier/predictions(from).md",
       "hash": "43aec841b74b6bbf955a0a14fcf3e6e8d6a8714c2f94f4801ec836362c69886e"
+    },
+    "https://developer.apple.com/documentation/createml/mlclassifier/predictions(from:)-50jlv": {
+      "file_path": "documentation/CreateML/mlclassifier/predictions(from)-50jlv.md",
+      "hash": "56d72b94b8a33fb34a681041fec9929937a87a8a80b3565e897a16a7d235c12e"
     },
     "https://developer.apple.com/documentation/createml/mlclassifier/randomforest(_:)": {
       "file_path": "documentation/CreateML/mlclassifier/randomforest(_).md",
@@ -1504,6 +1584,10 @@
       "file_path": "documentation/CreateML/mldatacolumn/init(repeating,count).md",
       "hash": "32925b50b98ef5a2253ef2ffe02538708d8d94874baf1ca6081f4c05a42b2aa7"
     },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/init(repeating:count:)-4ljwl": {
+      "file_path": "documentation/CreateML/mldatacolumn/init(repeating,count)-4ljwl.md",
+      "hash": "6695c7919bcd67333c5cae5848b264529aa0373835ac7943d6d70177cb57bdaf"
+    },
     "https://developer.apple.com/documentation/createml/mldatacolumn/isempty": {
       "file_path": "documentation/CreateML/mldatacolumn/isempty.md",
       "hash": "cdaf4600d07c5ab0fb321f287fe8f07ea4abf147e32a164268c6b1f8bd026173"
@@ -1515,6 +1599,10 @@
     "https://developer.apple.com/documentation/createml/mldatacolumn/map(_:)": {
       "file_path": "documentation/CreateML/mldatacolumn/map(_).md",
       "hash": "e5c5b5b0f942642cb7dd90e7d22c677d3e5eb76e2aa835bc9f8d0a8d5e8935a0"
+    },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/map(_:)-72ypl": {
+      "file_path": "documentation/CreateML/mldatacolumn/map(_)-72ypl.md",
+      "hash": "dddd569c57ba326e86477968992081753be4529fb2ae0068d51087f0f1552054"
     },
     "https://developer.apple.com/documentation/createml/mldatacolumn/map(to:)": {
       "file_path": "documentation/CreateML/mldatacolumn/map(to).md",
@@ -1532,13 +1620,25 @@
       "file_path": "documentation/CreateML/mldatacolumn/max().md",
       "hash": "e3c474bea6d632d420f004186df2711edace4a9b5b74f6bc092afad4d2b30ce1"
     },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/max()-5ty6r": {
+      "file_path": "documentation/CreateML/mldatacolumn/max()-5ty6r.md",
+      "hash": "c2a6945c9b5def43d1fd9c1a2b299b059bd7852d42c94ff56d472b2e6667592e"
+    },
     "https://developer.apple.com/documentation/createml/mldatacolumn/mean()": {
       "file_path": "documentation/CreateML/mldatacolumn/mean().md",
       "hash": "0ca58342b1b7484d835a654cf65ae997c2250803efb17c507526b6ec2b585b98"
     },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/mean()-5q8pp": {
+      "file_path": "documentation/CreateML/mldatacolumn/mean()-5q8pp.md",
+      "hash": "4d42587dc59709f9cde7c90fba6ab9795fd5d4e1778621379176840a1926fa73"
+    },
     "https://developer.apple.com/documentation/createml/mldatacolumn/min()": {
       "file_path": "documentation/CreateML/mldatacolumn/min().md",
       "hash": "cf6d78bfe81c843b724b93c78767a38290d0758463a648c7b5c28499600fcd3e"
+    },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/min()-6xxpx": {
+      "file_path": "documentation/CreateML/mldatacolumn/min()-6xxpx.md",
+      "hash": "642b2cebf2e30f2b504c2b5e01598533f723c37909c68d719c64e85d96d61f6b"
     },
     "https://developer.apple.com/documentation/createml/mldatacolumn/playgrounddescription": {
       "file_path": "documentation/CreateML/mldatacolumn/playgrounddescription.md",
@@ -1560,9 +1660,17 @@
       "file_path": "documentation/CreateML/mldatacolumn/std().md",
       "hash": "cf862b031e73470bf688263516093bf2c8ac2de6c5c432961ffd805b7230a34f"
     },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/std()-69udj": {
+      "file_path": "documentation/CreateML/mldatacolumn/std()-69udj.md",
+      "hash": "50bedd4883edc761e5cd1485512c8792797bc458b516a1fba7da8bc503f88ee7"
+    },
     "https://developer.apple.com/documentation/createml/mldatacolumn/stdev()": {
       "file_path": "documentation/CreateML/mldatacolumn/stdev().md",
       "hash": "e78f8bf7f866f4e6e8072b7fa4e148c7a72f9412112d7cb75bdf31e10b774499"
+    },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/stdev()-6fy3a": {
+      "file_path": "documentation/CreateML/mldatacolumn/stdev()-6fy3a.md",
+      "hash": "85925b8e45459e3f0f15febc6c40461b9c51d42ad637f9fe352613f001fd1fc1"
     },
     "https://developer.apple.com/documentation/createml/mldatacolumn/subscript(_:)": {
       "file_path": "documentation/CreateML/mldatacolumn/subscript(_).md",
@@ -1592,6 +1700,10 @@
       "file_path": "documentation/CreateML/mldatacolumn/sum().md",
       "hash": "656c99f0c62f6782941c1aceb8c197b2661adbd1b3138f30699df65e1091cbfd"
     },
+    "https://developer.apple.com/documentation/createml/mldatacolumn/sum()-9t8h3": {
+      "file_path": "documentation/CreateML/mldatacolumn/sum()-9t8h3.md",
+      "hash": "34fb8fc5afbd77233dac62f392cfe51e4fe704f6ea3615b139209554652a6d37"
+    },
     "https://developer.apple.com/documentation/createml/mldatatable": {
       "file_path": "documentation/CreateML/mldatatable.md",
       "hash": "c17f0fc9563fa2f59a64eaaa3998f4129e32b44b8d5476959a6adee41680b470"
@@ -1599,6 +1711,14 @@
     "https://developer.apple.com/documentation/createml/mldatatable/addcolumn(_:named:)": {
       "file_path": "documentation/CreateML/mldatatable/addcolumn(_,named).md",
       "hash": "b16dec40c7d694b7336beaafa8b25aaf4d5953974329ff261de907dc1b07d688"
+    },
+    "https://developer.apple.com/documentation/createml/mldatatable/addcolumn(_:named:)-9cb24": {
+      "file_path": "documentation/CreateML/mldatatable/addcolumn(_,named)-9cb24.md",
+      "hash": "d126be4c8aa0723333da921cb54b25f897c6f021ae82f1bc4eaafac7e79f4300"
+    },
+    "https://developer.apple.com/documentation/createml/mldatatable/addcolumn(_:named:)-kkbw": {
+      "file_path": "documentation/CreateML/mldatatable/addcolumn(_,named)-kkbw.md",
+      "hash": "0bd370c3430818d34eec8ce1ed4394c9f6fd857176f707909df9e773fb7fd599"
     },
     "https://developer.apple.com/documentation/createml/mldatatable/aggregator": {
       "file_path": "documentation/CreateML/mldatatable/aggregator.md",
@@ -1783,6 +1903,14 @@
     "https://developer.apple.com/documentation/createml/mldatatable/map(_:)": {
       "file_path": "documentation/CreateML/mldatatable/map(_).md",
       "hash": "1aeb122ad32af6a4a1b64064120c4d1658eb33948dea967619fc400f1e0aa92b"
+    },
+    "https://developer.apple.com/documentation/createml/mldatatable/map(_:)-3yamp": {
+      "file_path": "documentation/CreateML/mldatatable/map(_)-3yamp.md",
+      "hash": "32a27c35a2794f62d57701c7c5962851f7ce84c06f5983665f25ec0cb0d9dc1e"
+    },
+    "https://developer.apple.com/documentation/createml/mldatatable/map(_:)-92wrj": {
+      "file_path": "documentation/CreateML/mldatatable/map(_)-92wrj.md",
+      "hash": "730d50a4a805c99bc8592a523af8dbc2582af9d528fed6a57f4b1c865442d5c2"
     },
     "https://developer.apple.com/documentation/createml/mldatatable/pack(columnsnamed:to:type:filling:)": {
       "file_path": "documentation/CreateML/mldatatable/pack(columnsnamed,to,type,filling).md",
@@ -1996,9 +2124,17 @@
       "file_path": "documentation/CreateML/mldatatable/subscript(_)-3opgl.md",
       "hash": "b707bb414fe69fcdeb0bdcce4c4dd13c65062a5f8920d516a6cf5dffff59eb87"
     },
+    "https://developer.apple.com/documentation/createml/mldatatable/subscript(_:)-3wjk": {
+      "file_path": "documentation/CreateML/mldatatable/subscript(_)-3wjk.md",
+      "hash": "2abee9ca01f70f98e7ed392e69294239244691beb8c856239308220e1648d992"
+    },
     "https://developer.apple.com/documentation/createml/mldatatable/subscript(_:)-5le8a": {
       "file_path": "documentation/CreateML/mldatatable/subscript(_)-5le8a.md",
       "hash": "254f31ddb891889bc016e85e79319caefb61bf4510b1b703373919770284540d"
+    },
+    "https://developer.apple.com/documentation/createml/mldatatable/subscript(_:)-5tl9r": {
+      "file_path": "documentation/CreateML/mldatatable/subscript(_)-5tl9r.md",
+      "hash": "a954b9628bf7bda850cc963a2a1e0136f0dff58a3725bba75e2c49e84a54ecab"
     },
     "https://developer.apple.com/documentation/createml/mldatatable/subscript(_:)-7h4j3": {
       "file_path": "documentation/CreateML/mldatatable/subscript(_)-7h4j3.md",
@@ -2180,6 +2316,10 @@
       "file_path": "documentation/CreateML/mldatavalue/multiarraytype/subscript(_).md",
       "hash": "a897d76ef0d6170a202a1a8116e639dc426e41ff2fb23c1cf6617fe99d9ce20e"
     },
+    "https://developer.apple.com/documentation/createml/mldatavalue/multiarraytype/subscript(_:)-7lt8q": {
+      "file_path": "documentation/CreateML/mldatavalue/multiarraytype/subscript(_)-7lt8q.md",
+      "hash": "89bb1b8b4273a775a6becd065a534d78beaa745d371b2146ff9b8b7b44ad2cf6"
+    },
     "https://developer.apple.com/documentation/createml/mldatavalue/multiarrayvalue": {
       "file_path": "documentation/CreateML/mldatavalue/multiarrayvalue.md",
       "hash": "6f34f4c0dfd995287f629f279d54edd0c955afd94921d5a4540b5571333f6cab"
@@ -2207,6 +2347,10 @@
     "https://developer.apple.com/documentation/createml/mldatavalue/sequencetype/init(_:)": {
       "file_path": "documentation/CreateML/mldatavalue/sequencetype/init(_).md",
       "hash": "6361c019212a48618a02ac42175fbf7ef239a0e3ad9fe7459478bb09ea5f5a5d"
+    },
+    "https://developer.apple.com/documentation/createml/mldatavalue/sequencetype/init(_:)-3u0oh": {
+      "file_path": "documentation/CreateML/mldatavalue/sequencetype/init(_)-3u0oh.md",
+      "hash": "dac42ed0e99fbf692f1449b380f5d1bcd6fabe7b0d94eaba57998d4383d925d5"
     },
     "https://developer.apple.com/documentation/createml/mldatavalue/sequencetype/init(from:)": {
       "file_path": "documentation/CreateML/mldatavalue/sequencetype/init(from).md",
@@ -2328,6 +2472,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/evaluation(on).md",
       "hash": "f214bfc1b7970bf06b8acea160437f56c57085f4c58774f5be23f6f949c52fda"
     },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/evaluation(on:)-69gvl": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/evaluation(on)-69gvl.md",
+      "hash": "9f7f937f96e966b96b4fad079b0e1e7e5221a2e1fc3752a29b5c76b71d61b2b2"
+    },
     "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/featurecolumns": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/featurecolumns.md",
       "hash": "f680ce7b1139f89f7cc98efd4724ecfb7477dac201e6180e603582ed518e7b91"
@@ -2340,9 +2488,17 @@
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "a2c5447dd82d4f8993d92a2b86d020ab5db8b13c5eff247b33cbb47bb4d7cce3"
     },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-hmwt": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-hmwt.md",
+      "hash": "348abdf60098e4875e3e630b4dc5c31b10399c42cf49fca96dc429a357db8b8c"
+    },
     "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "d60d27c589db451ffc049bad5289abbff4251a83116538ce388d65f111074643"
+    },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-1cgxc": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-1cgxc.md",
+      "hash": "f17afd05848c97760c20a5a2708e2ea532bfbbac38680ea29e8b1ac1ef07cfa1"
     },
     "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/model": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/model.md",
@@ -2440,6 +2596,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/predictions(from).md",
       "hash": "5e51d1f25d1ef422665c3f9456b894cb8536a0075387882ed587c611f559cae7"
     },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/predictions(from:)-2di6j": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/predictions(from)-2di6j.md",
+      "hash": "86b1ca6a4b6dbf153de2f2afec1500c3745c32fc21b08c5b7c262c1403bb47d1"
+    },
     "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/restoretrainingsession(sessionparameters).md",
       "hash": "a71aca59ac669825278dbca8f4b891244d43c14de67e41c63a609185ac190efb"
@@ -2455,6 +2615,10 @@
     "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "c3407842fde3b7262940cff0c75e60f33a65d2ec7a092a893bb6c67d059350a5"
+    },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-50xr2": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-50xr2.md",
+      "hash": "4d2903510d49d4c6df030ccc1255c749c7d8b65e3e4359d971e178cf7400db1b"
     },
     "https://developer.apple.com/documentation/createml/mldecisiontreeclassifier/trainingmetrics": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/trainingmetrics.md",
@@ -2500,6 +2664,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeregressor/evaluation(on).md",
       "hash": "639d0521ef40a8c017b08facb4bbd096b8e9354340490367af8075ddb81bf142"
     },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/evaluation(on:)-7zk9x": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/evaluation(on)-7zk9x.md",
+      "hash": "bbbbcc552fec127b427db0c20c8bbdf33dba79170588e60aa097527cc1695422"
+    },
     "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/featurecolumns": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/featurecolumns.md",
       "hash": "6e67d4cd50dd89ca8592bf115cbb267ce045f0f591c107db3ae93a3f36fa2893"
@@ -2512,9 +2680,17 @@
       "file_path": "documentation/CreateML/mldecisiontreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "64e42c12b6c6db5e183f3a4aa0e66121c018a772a4b61c784aaa49e6681e3a35"
     },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-7cjvn": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-7cjvn.md",
+      "hash": "b73a274b7f02637a62fe3581c253fa8d16c7952028ff3ef2bf9329015462814c"
+    },
     "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "efef5ab7bbcf0e47649f071d4ae588ff88cb8caed0ee721b385c43c67d10a5b6"
+    },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-9ginr": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-9ginr.md",
+      "hash": "0d2850bf7365d6c024f95023358b904988d027311075328cc2d5ca78105afc5e"
     },
     "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/model": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/model.md",
@@ -2612,6 +2788,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeregressor/predictions(from).md",
       "hash": "3ecb8338a70357b1228d8f4ed14a39fc9e9de7e1d7158305f460eee8e9fd76f1"
     },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/predictions(from:)-20026": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/predictions(from)-20026.md",
+      "hash": "eaad59936b365c377c368d982f71cb0cb45d9aee9049708ca66dd10835b78219"
+    },
     "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/restoretrainingsession(sessionparameters).md",
       "hash": "8adff4fe91e966d0a40025fb641056bf2a1a6ec709d1244a5a05c8a41da270ba"
@@ -2627,6 +2807,10 @@
     "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "2e9d6fcba495a63fd37137bf83c0ff8d93c182a9dc846c3c919f8cb883724bae"
+    },
+    "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-5l3pj": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-5l3pj.md",
+      "hash": "f96bfa2a9495022db8504e14134b15d437a5519bcb0082c8e4469bef705b4b12"
     },
     "https://developer.apple.com/documentation/createml/mldecisiontreeregressor/trainingmetrics": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/trainingmetrics.md",
@@ -3344,6 +3528,14 @@
       "file_path": "documentation/CreateML/mlimageclassifier/evaluation(on).md",
       "hash": "2dec6b66782f739403f6aeb3927f4a8e48bacb03c9b41d527b93e6c21c214bc1"
     },
+    "https://developer.apple.com/documentation/createml/mlimageclassifier/evaluation(on:)-7338q": {
+      "file_path": "documentation/CreateML/mlimageclassifier/evaluation(on)-7338q.md",
+      "hash": "21feab32b08260776ab38e3896e5df562f776af4e5a86d2a36a615127b26636f"
+    },
+    "https://developer.apple.com/documentation/createml/mlimageclassifier/evaluation(on:)-9p8mi": {
+      "file_path": "documentation/CreateML/mlimageclassifier/evaluation(on)-9p8mi.md",
+      "hash": "1e97341a5fb2712af3aaa39ac57ffe24dcadfc5de15b2889ed4d057ffc7dc752"
+    },
     "https://developer.apple.com/documentation/createml/mlimageclassifier/featureextractortype": {
       "file_path": "documentation/CreateML/mlimageclassifier/featureextractortype.md",
       "hash": "52d11238dba1eed479d6c78cb5810366caa58b458107a784514f3e2605e43dea"
@@ -3420,6 +3612,14 @@
       "file_path": "documentation/CreateML/mlimageclassifier/init(trainingdata,parameters).md",
       "hash": "c8f8ae37bdd97d7f99eb9971299f5ba6157171d94a40ef7d563cfe51c839b536"
     },
+    "https://developer.apple.com/documentation/createml/mlimageclassifier/init(trainingdata:parameters:)-4r6hr": {
+      "file_path": "documentation/CreateML/mlimageclassifier/init(trainingdata,parameters)-4r6hr.md",
+      "hash": "f062ba6df740d25c9ed8434b4e3cd41e9849153b392093fd2a2f705d75034ee2"
+    },
+    "https://developer.apple.com/documentation/createml/mlimageclassifier/init(trainingdata:parameters:)-7j4w6": {
+      "file_path": "documentation/CreateML/mlimageclassifier/init(trainingdata,parameters)-7j4w6.md",
+      "hash": "11face35ec85505281ec0a0be16c3c4f4cfa11d16506a78fd1e4852f1a348958"
+    },
     "https://developer.apple.com/documentation/createml/mlimageclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlimageclassifier/maketrainingsession(trainingdata,parameters,sessionparameters).md",
       "hash": "2e5dce4d94521a5c1645b5042c46a942472666c47a9b33d572d27d4d34677cca"
@@ -3488,6 +3688,10 @@
       "file_path": "documentation/CreateML/mlimageclassifier/modelparameters-swift.struct/init(featureextractor,validationdata,maxiterations,augmentationoptions).md",
       "hash": "d0084111ba9b0120f36e38ee1af9622be36f7305e1ef3e66d8618c0e0b242338"
     },
+    "https://developer.apple.com/documentation/createml/mlimageclassifier/modelparameters-swift.struct/init(featureextractor:validationdata:maxiterations:augmentationoptions:)-5we70": {
+      "file_path": "documentation/CreateML/mlimageclassifier/modelparameters-swift.struct/init(featureextractor,validationdata,maxiterations,augmentationoptions)-5we70.md",
+      "hash": "6b851ab399307cf7e19c056b22b0a5a84c70ad76cbd5c17969eb2bc34583f91b"
+    },
     "https://developer.apple.com/documentation/createml/mlimageclassifier/modelparameters-swift.struct/init(validation:maxiterations:augmentation:algorithm:)": {
       "file_path": "documentation/CreateML/mlimageclassifier/modelparameters-swift.struct/init(validation,maxiterations,augmentation,algorithm).md",
       "hash": "795782ba384e1bdb30192c5adbdcc6618a90d0941954a9c8d80d5e29472eaf14"
@@ -3543,6 +3747,10 @@
     "https://developer.apple.com/documentation/createml/mlimageclassifier/prediction(from:)": {
       "file_path": "documentation/CreateML/mlimageclassifier/prediction(from).md",
       "hash": "8ab2853b1581b8a7e11a7f9b39fd6a05b40482d96a6fcf3c05f690c59c3010b2"
+    },
+    "https://developer.apple.com/documentation/createml/mlimageclassifier/prediction(from:)-7fitc": {
+      "file_path": "documentation/CreateML/mlimageclassifier/prediction(from)-7fitc.md",
+      "hash": "d4810ef52d92641d1837ad79bbb09ac9af7a766a64b78ada326fd5b2a79db1e7"
     },
     "https://developer.apple.com/documentation/createml/mlimageclassifier/predictions(from:)": {
       "file_path": "documentation/CreateML/mlimageclassifier/predictions(from).md",
@@ -3636,6 +3844,10 @@
       "file_path": "documentation/CreateML/mllinearregressor/evaluation(on).md",
       "hash": "f11f082a49b196f2bee36c2320690e798a0a21fbfca35e580fbe44eb0ade2895"
     },
+    "https://developer.apple.com/documentation/createml/mllinearregressor/evaluation(on:)-6pyq9": {
+      "file_path": "documentation/CreateML/mllinearregressor/evaluation(on)-6pyq9.md",
+      "hash": "a948e2a68f75ae217593cc10f0a3baa9e42bdd95ff55f70a6c7fb4da42ca215d"
+    },
     "https://developer.apple.com/documentation/createml/mllinearregressor/featurecolumns": {
       "file_path": "documentation/CreateML/mllinearregressor/featurecolumns.md",
       "hash": "9d22c358fde10cbde010abbce4e056cb4c3d9725c70da4bc94aa10db5a3c7b86"
@@ -3648,9 +3860,17 @@
       "file_path": "documentation/CreateML/mllinearregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "ec1ac788f6be42ee0f53cb139fbfced00161c2fd0b784d9cc3f96418be7a2ef4"
     },
+    "https://developer.apple.com/documentation/createml/mllinearregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-5lmry": {
+      "file_path": "documentation/CreateML/mllinearregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-5lmry.md",
+      "hash": "71ed1e765ba75bf7f0709ada10f7c1717e9eef60d4498e79ffb6bd25e9cb182e"
+    },
     "https://developer.apple.com/documentation/createml/mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mllinearregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "9c8009a470f447f1dd21fa88ef0b8c9359449348f81ca7486d9831771c955023"
+    },
+    "https://developer.apple.com/documentation/createml/mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-3cosv": {
+      "file_path": "documentation/CreateML/mllinearregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-3cosv.md",
+      "hash": "009f0cd0c994c78c6a9d3f98adb37152ace4cdf5433891c7af87236c602e9905"
     },
     "https://developer.apple.com/documentation/createml/mllinearregressor/model": {
       "file_path": "documentation/CreateML/mllinearregressor/model.md",
@@ -3756,6 +3976,10 @@
       "file_path": "documentation/CreateML/mllinearregressor/predictions(from).md",
       "hash": "817bd659adb909c926fb9923e82ee1ed7ad526adbf8178a9a2599566b8dee673"
     },
+    "https://developer.apple.com/documentation/createml/mllinearregressor/predictions(from:)-2gc5w": {
+      "file_path": "documentation/CreateML/mllinearregressor/predictions(from)-2gc5w.md",
+      "hash": "b35d91061b01b6e4d78446f07082c5be674755da2cbf2f07184d36921e6ff900"
+    },
     "https://developer.apple.com/documentation/createml/mllinearregressor/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mllinearregressor/restoretrainingsession(sessionparameters).md",
       "hash": "eced4d9d769f4222de986b38f8a22496cf9ef1e39ec2c5fa4f45a207e1027b75"
@@ -3771,6 +3995,10 @@
     "https://developer.apple.com/documentation/createml/mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mllinearregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "0cb2829919f459e8fe4408c2e591a7ed1fc4064fb43a1cc63b8d42e0778342fe"
+    },
+    "https://developer.apple.com/documentation/createml/mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-1v1q5": {
+      "file_path": "documentation/CreateML/mllinearregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-1v1q5.md",
+      "hash": "8ad59ad5bea322f89de747e2a83d7fc60a53f498759233bc2842ead0c449e8d9"
     },
     "https://developer.apple.com/documentation/createml/mllinearregressor/trainingmetrics": {
       "file_path": "documentation/CreateML/mllinearregressor/trainingmetrics.md",
@@ -3816,6 +4044,10 @@
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/evaluation(on).md",
       "hash": "621fb4e57ab22b77f4eae1da3d8fad39631063fe2fa797d45319c2a907c8377d"
     },
+    "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/evaluation(on:)-8v2xt": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/evaluation(on)-8v2xt.md",
+      "hash": "8206420feddf74efe929c1f7705da02f2ca9383b60f507da452c50ea3e376354"
+    },
     "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/featurecolumns": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/featurecolumns.md",
       "hash": "05201d09ce523506d2fb6d1de2af78b2b323975127e4f95ca56b610e7ea19153"
@@ -3828,9 +4060,17 @@
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "132f3294b1208c634750b0c95f1ebe138c92c647a8365430c7c90bf82ca24e0e"
     },
+    "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-7xy2g": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-7xy2g.md",
+      "hash": "58400c79729dd4174782e4e2b23b2e46ed9dbd8e7569af96f18c900ce3e4fe6b"
+    },
     "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "cd9476b37eb33c50a1dcf4f8b725473c65d420340e6fc1509e4c868e211fe1ab"
+    },
+    "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-7l7f0": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-7l7f0.md",
+      "hash": "fa725bdeec8d6c07fed0ebb5e3a7a56917842324b33b947352a2112e59c48a57"
     },
     "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/model": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/model.md",
@@ -3936,6 +4176,10 @@
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/predictions(from).md",
       "hash": "986aa0ffeaad9f5e12b844fc9383efc242517508dff47fd2ec0fe698f9776f84"
     },
+    "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/predictions(from:)-80abo": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/predictions(from)-80abo.md",
+      "hash": "5df200ed8559698c04b850caaa426ad0fbed0f70c39bf8962842cf1c8dfa5516"
+    },
     "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/restoretrainingsession(sessionparameters).md",
       "hash": "5c945ce020e8caf85730d483371f7564729d9c69e9c15373a05fad68c1db5949"
@@ -3951,6 +4195,10 @@
     "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "17e3df8a18b75fa448bba5966b6eeab0437a2b8f82a6854bf96a5ff9ae85d6cd"
+    },
+    "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-8vpa1": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-8vpa1.md",
+      "hash": "ab97d1243d8feff0c03302a92e3a07ab051254cd133b0c793fbaa850f632f222"
     },
     "https://developer.apple.com/documentation/createml/mllogisticregressionclassifier/trainingmetrics": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/trainingmetrics.md",
@@ -4536,6 +4784,10 @@
       "file_path": "documentation/CreateML/mlrandomforestclassifier/evaluation(on).md",
       "hash": "631dc3b0cf57be15a24ca700485eb08864795baa51654c0a3afc306706a3eb5f"
     },
+    "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/evaluation(on:)-3w3a0": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/evaluation(on)-3w3a0.md",
+      "hash": "b3c2424e01edda9aac068cc98ebfe2e74df2f84ad61e5f871686889788eb9027"
+    },
     "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/featurecolumns": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/featurecolumns.md",
       "hash": "4796be7bb7b98e87b43b745801f88a5cd33d4c04a1ee8b2180d5f96820be7717"
@@ -4548,9 +4800,17 @@
       "file_path": "documentation/CreateML/mlrandomforestclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "c6a9b7c533d2118cf77208a76080b6263c94d4f27a421aa4a04bd240aa086302"
     },
+    "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-4pxej": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-4pxej.md",
+      "hash": "d29392a474e504722be684655eda9a3b364670b65164f21f5dba34005d3436ad"
+    },
     "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "24408eec485ecaccf9d260cf960611057e0452b350420d20e2cd9ed554210af5"
+    },
+    "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-7e0li": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-7e0li.md",
+      "hash": "3e334aad28e13daab77e907f96d205adf610c22c62a9af34aef3ea79759f6efd"
     },
     "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/model": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/model.md",
@@ -4660,6 +4920,10 @@
       "file_path": "documentation/CreateML/mlrandomforestclassifier/predictions(from).md",
       "hash": "35905f2973375ef1d47510aad66bebd29685e85d8711ddb798ca715919af81f2"
     },
+    "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/predictions(from:)-9dvl3": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/predictions(from)-9dvl3.md",
+      "hash": "95ed1a7809382cfadf0bdb008e670fb16dd89b41eaa8e0bbf91cd9346f9c91e8"
+    },
     "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/restoretrainingsession(sessionparameters).md",
       "hash": "a67a87656e6c650e34bf3999881882e2ac80a2009b9fe81041b4e756f0a51962"
@@ -4675,6 +4939,10 @@
     "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "d92b03d7e38a16e99f9609ef4c2d5d61142a2808e6b283876eba36c6a2a24e7e"
+    },
+    "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-1q4n7": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-1q4n7.md",
+      "hash": "7f2619514fb63f7995e011a3349972464af04fc29f9b8afeb5052b61f9d15600"
     },
     "https://developer.apple.com/documentation/createml/mlrandomforestclassifier/trainingmetrics": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/trainingmetrics.md",
@@ -4720,6 +4988,10 @@
       "file_path": "documentation/CreateML/mlrandomforestregressor/evaluation(on).md",
       "hash": "04a26c5f887599bf554b6d2074da140da93b1f9d1ab082d907e2636b5abae2a4"
     },
+    "https://developer.apple.com/documentation/createml/mlrandomforestregressor/evaluation(on:)-99j4w": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/evaluation(on)-99j4w.md",
+      "hash": "79066bbb3053421c7057491b80d3e2b273cbdb07e9fc45740e6691623ba9800f"
+    },
     "https://developer.apple.com/documentation/createml/mlrandomforestregressor/featurecolumns": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/featurecolumns.md",
       "hash": "dae74d5ffd1a23d92692e91e4e7142d0d7d9f83c178545ca5fc3fa000ce61041"
@@ -4732,9 +5004,17 @@
       "file_path": "documentation/CreateML/mlrandomforestregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "6a32d6262c43853db4d632da919fa1a51ccbfc2ad88d2abefef041e913c82a3d"
     },
+    "https://developer.apple.com/documentation/createml/mlrandomforestregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-9p7os": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-9p7os.md",
+      "hash": "5e261801bedb755b4db8279215822fbf9c44dae4e56676025dbff4910eeabb01"
+    },
     "https://developer.apple.com/documentation/createml/mlrandomforestregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "45d8bc79328daffa5345d22002dadd49f09092387639342df0f3d1725b3d9c7f"
+    },
+    "https://developer.apple.com/documentation/createml/mlrandomforestregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-3e9dp": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-3e9dp.md",
+      "hash": "61744fe5210e90a4632039af1824e05237e7234541f0409f0264dd1cbc948966"
     },
     "https://developer.apple.com/documentation/createml/mlrandomforestregressor/model": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/model.md",
@@ -4844,6 +5124,10 @@
       "file_path": "documentation/CreateML/mlrandomforestregressor/predictions(from).md",
       "hash": "b1607fa1b344fa5d9e29d2a7164c049c671c9bcfd186ef96c174716d911741ba"
     },
+    "https://developer.apple.com/documentation/createml/mlrandomforestregressor/predictions(from:)-59u6": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/predictions(from)-59u6.md",
+      "hash": "c4670edd9a446a15fa993f665bdceb7730854eb97b4db9b0595ad88c673ab2b2"
+    },
     "https://developer.apple.com/documentation/createml/mlrandomforestregressor/restoretrainingsession(sessionparameters:)": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/restoretrainingsession(sessionparameters).md",
       "hash": "1c481f4b21544f0cbf1d81278b81b6b48688539243ea2a983a0638a3b994c3ff"
@@ -4859,6 +5143,10 @@
     "https://developer.apple.com/documentation/createml/mlrandomforestregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
       "hash": "a19547648cefb4293a4a6d32a1f6add16403a927f7b3061b7339c7e32ce91f96"
+    },
+    "https://developer.apple.com/documentation/createml/mlrandomforestregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-4mev0": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-4mev0.md",
+      "hash": "984d9ed6d60a1492c9c9611b4c86760d2f10a2e99d6c55e3c73aadfde740e4e2"
     },
     "https://developer.apple.com/documentation/createml/mlrandomforestregressor/trainingmetrics": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/trainingmetrics.md",
@@ -4884,13 +5172,29 @@
       "file_path": "documentation/CreateML/mlrecommender/evaluation(on,usercolumn,itemcolumn,ratingcolumn,cutoffs,excludingobserved).md",
       "hash": "9f157bfb1cf739a80f74f82246ea0c75f4e284865ca90139466fb5502c4dfa4d"
     },
+    "https://developer.apple.com/documentation/createml/mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:)-50o7t": {
+      "file_path": "documentation/CreateML/mlrecommender/evaluation(on,usercolumn,itemcolumn,ratingcolumn,cutoffs,excludingobserved)-50o7t.md",
+      "hash": "4ae38a5f0b2e5bb3e43067562a8279bf6aa5bc547f78277e4553417ef09bde6e"
+    },
     "https://developer.apple.com/documentation/createml/mlrecommender/getsimilaritems(fromitems:maxcount:)": {
       "file_path": "documentation/CreateML/mlrecommender/getsimilaritems(fromitems,maxcount).md",
       "hash": "cd1ea9881fb7c2b0b7efabf30cabd9da67a88d2815dae2ed65a9670e474eb7e5"
     },
+    "https://developer.apple.com/documentation/createml/mlrecommender/getsimilaritems(fromitems:maxcount:)-9scon": {
+      "file_path": "documentation/CreateML/mlrecommender/getsimilaritems(fromitems,maxcount)-9scon.md",
+      "hash": "7ad5cb3e0780749b9bc39d935b205287f45daceecae3ff7871839a2418e5c7a1"
+    },
+    "https://developer.apple.com/documentation/createml/mlrecommender/getsimilaritems(fromitems:maxcount:)-kq37": {
+      "file_path": "documentation/CreateML/mlrecommender/getsimilaritems(fromitems,maxcount)-kq37.md",
+      "hash": "e0d7d01ebcea9577235a7cc8dc78d0ac5d6d5dc35572e488f641773b19e90162"
+    },
     "https://developer.apple.com/documentation/createml/mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)": {
       "file_path": "documentation/CreateML/mlrecommender/init(trainingdata,usercolumn,itemcolumn,ratingcolumn,parameters).md",
       "hash": "fc6001f9083667e38518b1f7a46b0e35f7084ce625367284485f4d42de89fc45"
+    },
+    "https://developer.apple.com/documentation/createml/mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-20dcf": {
+      "file_path": "documentation/CreateML/mlrecommender/init(trainingdata,usercolumn,itemcolumn,ratingcolumn,parameters)-20dcf.md",
+      "hash": "29e81431e4be024bba4a4afde982304c8ce3d2b3dc00195d7435eb15d17a94eb"
     },
     "https://developer.apple.com/documentation/createml/mlrecommender/itemidentifiercolumn": {
       "file_path": "documentation/CreateML/mlrecommender/itemidentifiercolumn.md",
@@ -4979,6 +5283,14 @@
     "https://developer.apple.com/documentation/createml/mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)": {
       "file_path": "documentation/CreateML/mlrecommender/recommendations(fromusers,maxcount,restrictingtoitems,excluding,excludingobserved).md",
       "hash": "a75b077498819f3eb9c9dabd09c8c1f772431e6084e523e873e401aec85df64f"
+    },
+    "https://developer.apple.com/documentation/createml/mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-416wd": {
+      "file_path": "documentation/CreateML/mlrecommender/recommendations(fromusers,maxcount,restrictingtoitems,excluding,excludingobserved)-416wd.md",
+      "hash": "4a807991d2bd135b665eb04ed692162b6628da1522c24cc7323e67e978e1b8f4"
+    },
+    "https://developer.apple.com/documentation/createml/mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-7an46": {
+      "file_path": "documentation/CreateML/mlrecommender/recommendations(fromusers,maxcount,restrictingtoitems,excluding,excludingobserved)-7an46.md",
+      "hash": "b7d0f2cd2c0882343dbc424149974251bb54d2f1f29e0612cfef37020b7140ae"
     },
     "https://developer.apple.com/documentation/createml/mlrecommender/similaritytype": {
       "file_path": "documentation/CreateML/mlrecommender/similaritytype.md",
@@ -5096,6 +5408,10 @@
       "file_path": "documentation/CreateML/mlregressor/evaluation(on).md",
       "hash": "f4e522317731dd91531aae204acba23722f12cbeb278cdde4049cd9ced044bf3"
     },
+    "https://developer.apple.com/documentation/createml/mlregressor/evaluation(on:)-7pirm": {
+      "file_path": "documentation/CreateML/mlregressor/evaluation(on)-7pirm.md",
+      "hash": "bdba4f2418974ad6769edf9c81db7671d79d89ae28eb505bbd029189de2336b6"
+    },
     "https://developer.apple.com/documentation/createml/mlregressor/featurecolumns": {
       "file_path": "documentation/CreateML/mlregressor/featurecolumns.md",
       "hash": "e692c4cdcb390de6090e55724fdef7564c49227c789ec2f1232e7c1a5207a63a"
@@ -5103,6 +5419,10 @@
     "https://developer.apple.com/documentation/createml/mlregressor/init(trainingdata:targetcolumn:featurecolumns:)": {
       "file_path": "documentation/CreateML/mlregressor/init(trainingdata,targetcolumn,featurecolumns).md",
       "hash": "abc05972698843e573c69058e037029e18c4b9efc895e166fc0f4dbe1fdff54e"
+    },
+    "https://developer.apple.com/documentation/createml/mlregressor/init(trainingdata:targetcolumn:featurecolumns:)-56rvo": {
+      "file_path": "documentation/CreateML/mlregressor/init(trainingdata,targetcolumn,featurecolumns)-56rvo.md",
+      "hash": "bab17614aded4947865af5c7c6183d8db74726c3addd1d22479b3703169401bb"
     },
     "https://developer.apple.com/documentation/createml/mlregressor/linear(_:)": {
       "file_path": "documentation/CreateML/mlregressor/linear(_).md",
@@ -5119,6 +5439,10 @@
     "https://developer.apple.com/documentation/createml/mlregressor/predictions(from:)": {
       "file_path": "documentation/CreateML/mlregressor/predictions(from).md",
       "hash": "30375fbaa979a30c438d3d406ebb8d5cad9496d52e504802710ba4bb8b0b850d"
+    },
+    "https://developer.apple.com/documentation/createml/mlregressor/predictions(from:)-3gkt1": {
+      "file_path": "documentation/CreateML/mlregressor/predictions(from)-3gkt1.md",
+      "hash": "3eb5f99a473a3235504689e25089c5e338087e662e41f0b7fe02daa83a3b59b6"
     },
     "https://developer.apple.com/documentation/createml/mlregressor/randomforest(_:)": {
       "file_path": "documentation/CreateML/mlregressor/randomforest(_).md",
@@ -5256,6 +5580,14 @@
       "file_path": "documentation/CreateML/mlsoundclassifier/evaluation(on).md",
       "hash": "72fc61b82bf8d5f4447e7a3916bb5a8766ee22c7d3530f727e882bbb3d24aa7f"
     },
+    "https://developer.apple.com/documentation/createml/mlsoundclassifier/evaluation(on:)-7fmux": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/evaluation(on)-7fmux.md",
+      "hash": "a3e9a49edfc5758a7f193d13e9c0a2c601285e446b9a45b872470c695d4b9ea5"
+    },
+    "https://developer.apple.com/documentation/createml/mlsoundclassifier/evaluation(on:)-8kplo": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/evaluation(on)-8kplo.md",
+      "hash": "2362d70fac5a0693e3063e0bae4fcb69a25b2a004a2f862b699262389710cb2d"
+    },
     "https://developer.apple.com/documentation/createml/mlsoundclassifier/extractfeatures(trainingdata:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlsoundclassifier/extractfeatures(trainingdata,parameters,sessionparameters).md",
       "hash": "38d117ddfeda85323adb45fa9f65cf2e021dfeca8c67cef8d560b2df2f1d92bf"
@@ -5291,6 +5623,10 @@
     "https://developer.apple.com/documentation/createml/mlsoundclassifier/init(trainingdata:parameters:)": {
       "file_path": "documentation/CreateML/mlsoundclassifier/init(trainingdata,parameters).md",
       "hash": "a34d8a3360057515b5a4d7eaa3b6d408171327dbd355ee07c264e091926a91f7"
+    },
+    "https://developer.apple.com/documentation/createml/mlsoundclassifier/init(trainingdata:parameters:)-83tih": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/init(trainingdata,parameters)-83tih.md",
+      "hash": "da59b1705edb5b2968affe7dbda453ea4640f09a6008f5594219e3946acd74ac"
     },
     "https://developer.apple.com/documentation/createml/mlsoundclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlsoundclassifier/maketrainingsession(trainingdata,parameters,sessionparameters).md",
@@ -5463,6 +5799,10 @@
     "https://developer.apple.com/documentation/createml/mlsoundclassifier/train(trainingdata:parameters:sessionparameters:)": {
       "file_path": "documentation/CreateML/mlsoundclassifier/train(trainingdata,parameters,sessionparameters).md",
       "hash": "203d0a4df758419320aee472c048477d28196305cd6c3c1079b98163171d799b"
+    },
+    "https://developer.apple.com/documentation/createml/mlsoundclassifier/train(trainingdata:parameters:sessionparameters:)-6z4c8": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/train(trainingdata,parameters,sessionparameters)-6z4c8.md",
+      "hash": "60f6b0ffcd4d1886d330b60e7ec4189703b1d36809b816a9ac8fcded2b394352"
     },
     "https://developer.apple.com/documentation/createml/mlsoundclassifier/trainingmetrics": {
       "file_path": "documentation/CreateML/mlsoundclassifier/trainingmetrics.md",
@@ -5716,6 +6056,10 @@
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/evaluation(on).md",
       "hash": "6342988172f3990a29803761843adb170145c5dba04756e93b0f7e09a7a0b1b5"
     },
+    "https://developer.apple.com/documentation/createml/mlsupportvectorclassifier/evaluation(on:)-815go": {
+      "file_path": "documentation/CreateML/mlsupportvectorclassifier/evaluation(on)-815go.md",
+      "hash": "22db19f3cec6899d9ec411ede36333526cf632b57eb74aac6b8af0d919b6cf04"
+    },
     "https://developer.apple.com/documentation/createml/mlsupportvectorclassifier/featurecolumns": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/featurecolumns.md",
       "hash": "12cea818ad399466a8800ebf91c914c753a9d319f75df6f6e7bda3569be52b04"
@@ -5723,6 +6067,10 @@
     "https://developer.apple.com/documentation/createml/mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "cd302585d8ac4afe3d543bf5252de1fd91bf0f64082d166ff3d8f405444d437f"
+    },
+    "https://developer.apple.com/documentation/createml/mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-9ob53": {
+      "file_path": "documentation/CreateML/mlsupportvectorclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-9ob53.md",
+      "hash": "985f334d817d1886b1841cefd8d931cdc5047d7401b77d6247690419201278e2"
     },
     "https://developer.apple.com/documentation/createml/mlsupportvectorclassifier/model": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/model.md",
@@ -5820,6 +6168,10 @@
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/predictions(from).md",
       "hash": "d1d111d091d4d60b099236d48f8c44f5fedd9994339bc503f57a61a71c423c6d"
     },
+    "https://developer.apple.com/documentation/createml/mlsupportvectorclassifier/predictions(from:)-8pjz": {
+      "file_path": "documentation/CreateML/mlsupportvectorclassifier/predictions(from)-8pjz.md",
+      "hash": "2d6b6bdc8b0c5ae18a70c8bf953c563dc1046ca8e34b863c45c6eea03038b7a6"
+    },
     "https://developer.apple.com/documentation/createml/mlsupportvectorclassifier/targetcolumn": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/targetcolumn.md",
       "hash": "8381f5f89477327cf23c45264065f445e729529cc20cb62add4a901e4aca5aec"
@@ -5884,9 +6236,21 @@
       "file_path": "documentation/CreateML/mltextclassifier/evaluation(on).md",
       "hash": "57c3d74565d8b21bd7868ce045d3c3a5bbd6f13fd8e5843418386f25078317d6"
     },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/evaluation(on:)-3h6eu": {
+      "file_path": "documentation/CreateML/mltextclassifier/evaluation(on)-3h6eu.md",
+      "hash": "f62d92cf5ac9a4447603a88d01be6c5149558ef86ea6160ec2c18baf8dab28ec"
+    },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/evaluation(on:)-8ch4k": {
+      "file_path": "documentation/CreateML/mltextclassifier/evaluation(on)-8ch4k.md",
+      "hash": "f367c16135ade4e07f527cc22cd595d1c2628b4c1714ff4087bedb49fd759661"
+    },
     "https://developer.apple.com/documentation/createml/mltextclassifier/evaluation(on:textcolumn:labelcolumn:)": {
       "file_path": "documentation/CreateML/mltextclassifier/evaluation(on,textcolumn,labelcolumn).md",
       "hash": "29632c66e11ee761d33a6ab19c279a118b3ec6fcc3cef0f1bc0230369ac0f77f"
+    },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/evaluation(on:textcolumn:labelcolumn:)-6emxa": {
+      "file_path": "documentation/CreateML/mltextclassifier/evaluation(on,textcolumn,labelcolumn)-6emxa.md",
+      "hash": "bba5aeb65d22c3212a61c901cd9852d3f316d0bdd4eb87b0ce010894439f642c"
     },
     "https://developer.apple.com/documentation/createml/mltextclassifier/featureextractortype": {
       "file_path": "documentation/CreateML/mltextclassifier/featureextractortype.md",
@@ -5940,9 +6304,21 @@
       "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,parameters).md",
       "hash": "1bf003e667c4106d7e315835e2e106f9f082c3c60bd8301e3bdfc6082561a8c3"
     },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/init(trainingdata:parameters:)-8n8vs": {
+      "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,parameters)-8n8vs.md",
+      "hash": "a4e35b8306f6e0685d29abc201a712274741716a01864b04c3f5ad1ab7016f2b"
+    },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/init(trainingdata:parameters:)-9uj3q": {
+      "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,parameters)-9uj3q.md",
+      "hash": "16c334df3efe50a5cfcd9133a2e8c3b518830878ca08812b018e90fc9b993e76"
+    },
     "https://developer.apple.com/documentation/createml/mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:)": {
       "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,textcolumn,labelcolumn,parameters).md",
       "hash": "5f91e68f92da60f9fb233611131a1a5708f6438e3505c9b90382a94958ede519"
+    },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:)-7lp6w": {
+      "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,textcolumn,labelcolumn,parameters)-7lp6w.md",
+      "hash": "615b33e1f542a17a25781301189de2a33b08131ddd0d0ea890ca81fefa58a2f4"
     },
     "https://developer.apple.com/documentation/createml/mltextclassifier/model": {
       "file_path": "documentation/CreateML/mltextclassifier/model.md",
@@ -6028,6 +6404,10 @@
       "file_path": "documentation/CreateML/mltextclassifier/modelparameters-swift.struct/init(validationdata,algorithm,language).md",
       "hash": "4471ee4d59bf220e8007dbbb55122b80d5349a982ab37a25494bb3125abcacb4"
     },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:)-xplw": {
+      "file_path": "documentation/CreateML/mltextclassifier/modelparameters-swift.struct/init(validationdata,algorithm,language)-xplw.md",
+      "hash": "b08e6d0f08584ab58c6be428902da33089a8bee3ef89c4c06e6d7ae6e127bcda"
+    },
     "https://developer.apple.com/documentation/createml/mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:textcolumnvalidationdata:labelcolumnvalidationdata:)": {
       "file_path": "documentation/CreateML/mltextclassifier/modelparameters-swift.struct/init(validationdata,algorithm,language,textcolumnvalidationdata,labelcolumnvalidationdata).md",
       "hash": "9006ed4ccaa31623d6314e6fa46126fb072e07e1244374a1bdf20cb45e1552da"
@@ -6100,9 +6480,17 @@
       "file_path": "documentation/CreateML/mltextclassifier/predictions(from).md",
       "hash": "0bdbc5e59a9231bc938ef5b0a0265a85af7121047401f688a86e167f0b668d44"
     },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/predictions(from:)-40gtb": {
+      "file_path": "documentation/CreateML/mltextclassifier/predictions(from)-40gtb.md",
+      "hash": "4299fe72fccddd01d55843b0ecc7802c7283b88b9aa1fcd6f235cf45ade9ce83"
+    },
     "https://developer.apple.com/documentation/createml/mltextclassifier/predictionswithconfidence(from:)": {
       "file_path": "documentation/CreateML/mltextclassifier/predictionswithconfidence(from).md",
       "hash": "c36817defe906dd13d3926808d31493c9baa19aae791bcfa5d088e838f5119eb"
+    },
+    "https://developer.apple.com/documentation/createml/mltextclassifier/predictionswithconfidence(from:)-1w9zo": {
+      "file_path": "documentation/CreateML/mltextclassifier/predictionswithconfidence(from)-1w9zo.md",
+      "hash": "263ebf2c73f8238546c40e9b620519fe11914f44c56316e8c51964b05663262f"
     },
     "https://developer.apple.com/documentation/createml/mltextclassifier/predictionwithconfidence(from:)": {
       "file_path": "documentation/CreateML/mltextclassifier/predictionwithconfidence(from).md",
@@ -6728,6 +7116,10 @@
       "file_path": "documentation/CreateML/mlwordtagger/evaluation(on,tokencolumn,labelcolumn).md",
       "hash": "b61871c86005fc2c8d882ff050e92e6ae721aa0de57fb374b67799219b88866e"
     },
+    "https://developer.apple.com/documentation/createml/mlwordtagger/evaluation(on:tokencolumn:labelcolumn:)-31x1l": {
+      "file_path": "documentation/CreateML/mlwordtagger/evaluation(on,tokencolumn,labelcolumn)-31x1l.md",
+      "hash": "73ba6fc1eca75d7eda613e19617255a6ce5223e782e9c2bba57fb58575b7b371"
+    },
     "https://developer.apple.com/documentation/createml/mlwordtagger/featureextractortype": {
       "file_path": "documentation/CreateML/mlwordtagger/featureextractortype.md",
       "hash": "7222a095777e9e7ad9adee5a9e33ce13994eee4b5dfc8cc48e361420ea51e3f0"
@@ -6775,6 +7167,10 @@
     "https://developer.apple.com/documentation/createml/mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:)": {
       "file_path": "documentation/CreateML/mlwordtagger/init(trainingdata,tokencolumn,labelcolumn,parameters).md",
       "hash": "ee70fda374ba3b286af2b0283cc0be677b5137d49531c81ad0da590d1a10f32e"
+    },
+    "https://developer.apple.com/documentation/createml/mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:)-97qtg": {
+      "file_path": "documentation/CreateML/mlwordtagger/init(trainingdata,tokencolumn,labelcolumn,parameters)-97qtg.md",
+      "hash": "6597403ece13edc322208bb9953688f9400c2f02aa38596fb2d81fd27479ce0f"
     },
     "https://developer.apple.com/documentation/createml/mlwordtagger/model": {
       "file_path": "documentation/CreateML/mlwordtagger/model.md",
@@ -6920,13 +7316,25 @@
       "file_path": "documentation/CreateML/mlwordtagger/prediction(from).md",
       "hash": "83f7f7b046eae23432f3833e59f2afa6fa8ffc5c4c2df6998dbc5fc7c6473bc3"
     },
+    "https://developer.apple.com/documentation/createml/mlwordtagger/prediction(from:)-7rqyq": {
+      "file_path": "documentation/CreateML/mlwordtagger/prediction(from)-7rqyq.md",
+      "hash": "197602919601cd84a75aba21021cfb6ef32094f1f9fa106935e31df775fed4a4"
+    },
     "https://developer.apple.com/documentation/createml/mlwordtagger/predictions(from:)": {
       "file_path": "documentation/CreateML/mlwordtagger/predictions(from).md",
       "hash": "58e25b94d718255c8dbfad8655aa77eae526c7ae47555426b45e6a09f3f14382"
     },
+    "https://developer.apple.com/documentation/createml/mlwordtagger/predictions(from:)-22b8d": {
+      "file_path": "documentation/CreateML/mlwordtagger/predictions(from)-22b8d.md",
+      "hash": "57fbc456cefb2aaf7a98db346825ae0845fb5cb2c0804471dc6fd413d7d8f89c"
+    },
     "https://developer.apple.com/documentation/createml/mlwordtagger/predictionwithconfidence(from:)": {
       "file_path": "documentation/CreateML/mlwordtagger/predictionwithconfidence(from).md",
       "hash": "667e223a34f71497ffe89deb26a7fe98e1476001fbd10c807ec96becd6e6c8dc"
+    },
+    "https://developer.apple.com/documentation/createml/mlwordtagger/predictionwithconfidence(from:)-37coi": {
+      "file_path": "documentation/CreateML/mlwordtagger/predictionwithconfidence(from)-37coi.md",
+      "hash": "fdd1acd5b9c84f47f3c69f14b0d66b49592c39de28c3fc2282a34218b7be0f8d"
     },
     "https://developer.apple.com/documentation/createml/mlwordtagger/token": {
       "file_path": "documentation/CreateML/mlwordtagger/token.md",
@@ -7408,6 +7816,14 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/description.md",
       "hash": "395eb0fde5a569dc5ff4ff52ad0d93244a9504de9b4cd64b6269e57dce4df88e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:)-1ib5p.json": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/evaluation(on,featurecolumns,labelcolumn,recordingfilecolumn)-1ib5p.md",
+      "hash": "453c53fefcb158d83c2755e994e14594c95ee1d69ada68f9f4b7565a98f55215"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:)-3r5em.json": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/evaluation(on,featurecolumns,labelcolumn,recordingfilecolumn)-3r5em.md",
+      "hash": "3c769bafd1241ecc3eb70be71159f197fbc13a8ea53e2f94d1989f8ab2ff9da6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/evaluation(on,featurecolumns,labelcolumn,recordingfilecolumn).md",
       "hash": "9d96421040bffc132a2589a0b341246d6dd3a5f153f2e2ce237fa662410d6548"
@@ -7420,6 +7836,10 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/init(checkpoint).md",
       "hash": "0796255b1a0efddab2ab8bd7f18b028290c9d7b1267ef4fb0e22be74f48c2b22"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/init(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:)-1z9ai.json": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/init(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters)-1z9ai.md",
+      "hash": "f1c0374af5897500d897ca021d94c8bd5ab3e5b9c632a2c0a3a55daa35b08850"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/init(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:).json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/init(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters).md",
       "hash": "df03a9b1f1b8969d1e8f3b23e82dae5b2bb17a28776f22f5771fd62d7efb2fb4"
@@ -7427,6 +7847,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/labelcolumn.json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/labelcolumn.md",
       "hash": "b90d8596f88d07b0b68b6cb98a1ef62ab6ff619fc207cb8d2bdd5794053ee15f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-3ic8k.json": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/maketrainingsession(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters)-3ic8k.md",
+      "hash": "0c294021cad4b7eb06e417a586e37826595d0a18eeb8051d935aa51f939b22a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/maketrainingsession(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/maketrainingsession(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters).md",
@@ -7472,6 +7896,10 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/modelparameters-swift.struct/init(validation,batchsize,maximumiterations,predictionwindowsize).md",
       "hash": "00a0f2a1422793136f724a5bdae430fd484a0398bf150be47839fd977d93dbdf"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:)-6lc3g.json": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/modelparameters-swift.struct/init(validationdata,batchsize,maximumiterations,predictionwindowsize)-6lc3g.md",
+      "hash": "c55daf783512172d6230076250061ddc5ddb9f85056a853d369e0fdb3913477d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:).json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/modelparameters-swift.struct/init(validationdata,batchsize,maximumiterations,predictionwindowsize).md",
       "hash": "562a63bd410b974d255ad09c4eaa56462e40358bb07bdb4490d70ae4c39b08f6"
@@ -7516,6 +7944,10 @@
       "file_path": "documentation/CreateML/mlactivityclassifier/playgrounddescription.md",
       "hash": "8663480a8cbf0b7ee74af14a244fa379dd657f63d1f4ca21f5c26f301e4c5441"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/predictions(from:perwindowprediction:)-6tatv.json": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/predictions(from,perwindowprediction)-6tatv.md",
+      "hash": "b15d24023ee709e3776457dd5ef0f17b1b86f6536bfbce98c3b3b43b05fec2d7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/predictions(from:perwindowprediction:).json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/predictions(from,perwindowprediction).md",
       "hash": "4fe838942a6010ebdb499ae8d701f18cda0d773d8c88d161b1a06eec801ca423"
@@ -7531,6 +7963,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/resume(_:).json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/resume(_).md",
       "hash": "9ca9a4060e61e982befda6175c42c3c169bea84e0cab8f73117306f151fc2b49"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:)-43yhp.json": {
+      "file_path": "documentation/CreateML/mlactivityclassifier/train(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters)-43yhp.md",
+      "hash": "3870d32be09a4b58eaa6a438271bb92c7f59bb20e969e491f033453cdc56374f"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlactivityclassifier/train(trainingdata:featurecolumns:labelcolumn:recordingfilecolumn:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlactivityclassifier/train(trainingdata,featurecolumns,labelcolumn,recordingfilecolumn,parameters,sessionparameters).md",
@@ -7576,6 +8012,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/description.md",
       "hash": "75ee764f97824b2615bb7d4d5d3dd4ea4dd15bd0ac047325b0a59f0b718aa24d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/evaluation(on:)-4uhu9.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/evaluation(on)-4uhu9.md",
+      "hash": "2a9f88e1d077622ac5d7bc91fa3d20896be8e9e2f043778601da833530401b83"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/evaluation(on).md",
       "hash": "7c3b5dcfad7e4c55e40c41e1c8c01c5bb4c3d15b80ee0137bf16824826003edd"
@@ -7588,9 +8028,17 @@
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/init(checkpoint).md",
       "hash": "ee9afa7028feb5b738006844f81812251f25caa90832cb157ccbef9433da2029"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-8w2dm.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-8w2dm.md",
+      "hash": "5e52c1ead2bf9d83177fc660ed07901746df15e525ed929292f1ce30c8bfe328"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "37abf340f9153530d2e583baf1b19cb7cb2d6f0790454a4da39514508e24a8ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-334sj.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-334sj.md",
+      "hash": "ae8952ee3615bcc96edf6b1c274f0a193ee9c7484b33f17eb11fd25c58f3bb2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -7708,6 +8156,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/playgrounddescription.md",
       "hash": "3d59279b028d477fa9486ac264b502cd987eafc80b6c4e60f8cfc39dc28f2c5a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/predictions(from:)-17rgd.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/predictions(from)-17rgd.md",
+      "hash": "d578ef68de9a56dd13bbc9de3bd06e56232d71bbbaed460a33b0a676df2a0353"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/predictions(from).md",
       "hash": "cc88348aecb532f1ead4df4f52bf45217d8b04ac0daea1a8c6a89fb0779430e4"
@@ -7723,6 +8175,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/targetcolumn.json": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/targetcolumn.md",
       "hash": "9f703d92cdcb526c1e998a4e41b720e23973f967775723cd4aebd7e9f7199dcd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-79pib.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-79pib.md",
+      "hash": "78103b66f22cf2bddd8b714bac15e97d1b8993846096b7e500ca1d8207b2467f"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -7768,6 +8224,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeregressor/description.md",
       "hash": "c6347ed9e638e64f80e4016c1f68fa78547dc2be6645aab4c3ed56a0f6037775"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/evaluation(on:)-2tsxy.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/evaluation(on)-2tsxy.md",
+      "hash": "b1c7aa89a7e5788ab54e2a8f5fb2c9230dd1fb8ae6d364a756a0a88a914e6276"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/evaluation(on).md",
       "hash": "0dfd4dff40df7951092c71bff4ebcad8d7873355b82ea69cd63084983bdd1f34"
@@ -7780,9 +8240,17 @@
       "file_path": "documentation/CreateML/mlboostedtreeregressor/init(checkpoint).md",
       "hash": "6990aabcdf3c2bdb61a3126f6e9f7af4d60be2958eeab60bfc5310def408c45c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-hfxs.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-hfxs.md",
+      "hash": "c8c283e1ccca0df454ca32853238cb157cebf4714fb1262b6a968710c285e6c2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "aa62873db5128546ae41569631b59b13dc9434c7ab8e8276cd80c36bb00901fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-4d0fx.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-4d0fx.md",
+      "hash": "68ebfd22c33c24b163ab469af4afcf8d244a38699029d463b2415d7c7d0bd465"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -7900,6 +8368,10 @@
       "file_path": "documentation/CreateML/mlboostedtreeregressor/playgrounddescription.md",
       "hash": "df5c1ab50b1fc0ed739156ec76162048150dc2ba3f135deb9de8ac812e0d9869"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/predictions(from:)-3daff.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/predictions(from)-3daff.md",
+      "hash": "670df5f03ce731c6bc5e06516773ab473de570b41f90f28686d6f4493aed015e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/predictions(from).md",
       "hash": "4d8cb6df9a433998cc43e9c2f279de78c5b41b57ef4a9a01285b803dd9c17739"
@@ -7915,6 +8387,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/targetcolumn.json": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/targetcolumn.md",
       "hash": "2a76cf91af9fa333772bf0590efed09e2b2e423adf6ebfbb3fba393a3cc89c3b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-4okyp.json": {
+      "file_path": "documentation/CreateML/mlboostedtreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-4okyp.md",
+      "hash": "0a87b6cdf6c00cbc422de29e8023b3025858ddb5bf6f81963de752c878a149ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlboostedtreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlboostedtreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -8040,6 +8516,10 @@
       "file_path": "documentation/CreateML/mlclassifier/description.md",
       "hash": "c4670f3b5c55fc16740e0deb4c6167fa8819126e819f35efd10fd026bca3515f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/evaluation(on:)-6433y.json": {
+      "file_path": "documentation/CreateML/mlclassifier/evaluation(on)-6433y.md",
+      "hash": "5075d70dd1cfdf948f218a09951aaefeb8bc9791e2f6a63ecbe6b564d50e8ed8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlclassifier/evaluation(on).md",
       "hash": "4574c389b7e4396dc24352570c5ca9d40dee660f7105846181b3984ffcfa32ad"
@@ -8047,6 +8527,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/featurecolumns.json": {
       "file_path": "documentation/CreateML/mlclassifier/featurecolumns.md",
       "hash": "836d9ee249f1d3fc60d1ac8eeb3d6fa77d85b5241538adda0538b6a2c250aa16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/init(trainingdata:targetcolumn:featurecolumns:)-p3f6.json": {
+      "file_path": "documentation/CreateML/mlclassifier/init(trainingdata,targetcolumn,featurecolumns)-p3f6.md",
+      "hash": "c84f92a8d45c1694627c3b560ad74646fccd6829500efa6ec3e0f8402f279253"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/init(trainingdata:targetcolumn:featurecolumns:).json": {
       "file_path": "documentation/CreateML/mlclassifier/init(trainingdata,targetcolumn,featurecolumns).md",
@@ -8063,6 +8547,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/playgrounddescription.json": {
       "file_path": "documentation/CreateML/mlclassifier/playgrounddescription.md",
       "hash": "b5c5ed00c929e8b8389c98e77ece6d5934fa1bc5bc030c594f7892cb225b9f86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/predictions(from:)-50jlv.json": {
+      "file_path": "documentation/CreateML/mlclassifier/predictions(from)-50jlv.md",
+      "hash": "56d72b94b8a33fb34a681041fec9929937a87a8a80b3565e897a16a7d235c12e"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlclassifier/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlclassifier/predictions(from).md",
@@ -8544,6 +9032,10 @@
       "file_path": "documentation/CreateML/mldatacolumn/init(column).md",
       "hash": "39befaf87788985f7e96d2510d5c4c7644ce3b78efdb028043b9cfc8042ac1b8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/init(repeating:count:)-4ljwl.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/init(repeating,count)-4ljwl.md",
+      "hash": "6695c7919bcd67333c5cae5848b264529aa0373835ac7943d6d70177cb57bdaf"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/init(repeating:count:).json": {
       "file_path": "documentation/CreateML/mldatacolumn/init(repeating,count).md",
       "hash": "32925b50b98ef5a2253ef2ffe02538708d8d94874baf1ca6081f4c05a42b2aa7"
@@ -8555,6 +9047,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/isvalid.json": {
       "file_path": "documentation/CreateML/mldatacolumn/isvalid.md",
       "hash": "384700af808ecac77469f98834bf2c141ba416983d3b63dd2046cfb3f07775bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/map(_:)-72ypl.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/map(_)-72ypl.md",
+      "hash": "dddd569c57ba326e86477968992081753be4529fb2ae0068d51087f0f1552054"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/map(_:).json": {
       "file_path": "documentation/CreateML/mldatacolumn/map(_).md",
@@ -8572,13 +9068,25 @@
       "file_path": "documentation/CreateML/mldatacolumn/materialize().md",
       "hash": "aa3a90133c20ef92c61bc271a1afb15f5e67c7f2723f319e7a1fa4ce7730a936"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/max()-5ty6r.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/max()-5ty6r.md",
+      "hash": "c2a6945c9b5def43d1fd9c1a2b299b059bd7852d42c94ff56d472b2e6667592e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/max().json": {
       "file_path": "documentation/CreateML/mldatacolumn/max().md",
       "hash": "e3c474bea6d632d420f004186df2711edace4a9b5b74f6bc092afad4d2b30ce1"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/mean()-5q8pp.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/mean()-5q8pp.md",
+      "hash": "4d42587dc59709f9cde7c90fba6ab9795fd5d4e1778621379176840a1926fa73"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/mean().json": {
       "file_path": "documentation/CreateML/mldatacolumn/mean().md",
       "hash": "0ca58342b1b7484d835a654cf65ae997c2250803efb17c507526b6ec2b585b98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/min()-6xxpx.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/min()-6xxpx.md",
+      "hash": "642b2cebf2e30f2b504c2b5e01598533f723c37909c68d719c64e85d96d61f6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/min().json": {
       "file_path": "documentation/CreateML/mldatacolumn/min().md",
@@ -8600,9 +9108,17 @@
       "file_path": "documentation/CreateML/mldatacolumn/sort(byincreasingorder).md",
       "hash": "127582ceef15190ccbde98fd27ee24bf5340004a65f312c44a7c218eca60dcb5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/std()-69udj.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/std()-69udj.md",
+      "hash": "50bedd4883edc761e5cd1485512c8792797bc458b516a1fba7da8bc503f88ee7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/std().json": {
       "file_path": "documentation/CreateML/mldatacolumn/std().md",
       "hash": "cf862b031e73470bf688263516093bf2c8ac2de6c5c432961ffd805b7230a34f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/stdev()-6fy3a.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/stdev()-6fy3a.md",
+      "hash": "85925b8e45459e3f0f15febc6c40461b9c51d42ad637f9fe352613f001fd1fc1"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/stdev().json": {
       "file_path": "documentation/CreateML/mldatacolumn/stdev().md",
@@ -8632,6 +9148,10 @@
       "file_path": "documentation/CreateML/mldatacolumn/suffix(_).md",
       "hash": "17ade3cb2cb60144915f3ed0252dd0d99c2e6c2d3acc5ca1ef53d7370312be10"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/sum()-9t8h3.json": {
+      "file_path": "documentation/CreateML/mldatacolumn/sum()-9t8h3.md",
+      "hash": "34fb8fc5afbd77233dac62f392cfe51e4fe704f6ea3615b139209554652a6d37"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatacolumn/sum().json": {
       "file_path": "documentation/CreateML/mldatacolumn/sum().md",
       "hash": "656c99f0c62f6782941c1aceb8c197b2661adbd1b3138f30699df65e1091cbfd"
@@ -8639,6 +9159,14 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable.json": {
       "file_path": "documentation/CreateML/mldatatable.md",
       "hash": "c17f0fc9563fa2f59a64eaaa3998f4129e32b44b8d5476959a6adee41680b470"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/addcolumn(_:named:)-9cb24.json": {
+      "file_path": "documentation/CreateML/mldatatable/addcolumn(_,named)-9cb24.md",
+      "hash": "d126be4c8aa0723333da921cb54b25f897c6f021ae82f1bc4eaafac7e79f4300"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/addcolumn(_:named:)-kkbw.json": {
+      "file_path": "documentation/CreateML/mldatatable/addcolumn(_,named)-kkbw.md",
+      "hash": "0bd370c3430818d34eec8ce1ed4394c9f6fd857176f707909df9e773fb7fd599"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/addcolumn(_:named:).json": {
       "file_path": "documentation/CreateML/mldatatable/addcolumn(_,named).md",
@@ -8823,6 +9351,14 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/jointype/right.json": {
       "file_path": "documentation/CreateML/mldatatable/jointype/right.md",
       "hash": "ea1f7ce007392e77ae57b12732544df26adb68cfe15aa8ba5339737a1af1a414"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/map(_:)-3yamp.json": {
+      "file_path": "documentation/CreateML/mldatatable/map(_)-3yamp.md",
+      "hash": "32a27c35a2794f62d57701c7c5962851f7ce84c06f5983665f25ec0cb0d9dc1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/map(_:)-92wrj.json": {
+      "file_path": "documentation/CreateML/mldatatable/map(_)-92wrj.md",
+      "hash": "730d50a4a805c99bc8592a523af8dbc2582af9d528fed6a57f4b1c865442d5c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/map(_:).json": {
       "file_path": "documentation/CreateML/mldatatable/map(_).md",
@@ -9036,9 +9572,17 @@
       "file_path": "documentation/CreateML/mldatatable/subscript(_)-3opgl.md",
       "hash": "b707bb414fe69fcdeb0bdcce4c4dd13c65062a5f8920d516a6cf5dffff59eb87"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/subscript(_:)-3wjk.json": {
+      "file_path": "documentation/CreateML/mldatatable/subscript(_)-3wjk.md",
+      "hash": "2abee9ca01f70f98e7ed392e69294239244691beb8c856239308220e1648d992"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/subscript(_:)-5le8a.json": {
       "file_path": "documentation/CreateML/mldatatable/subscript(_)-5le8a.md",
       "hash": "254f31ddb891889bc016e85e79319caefb61bf4510b1b703373919770284540d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/subscript(_:)-5tl9r.json": {
+      "file_path": "documentation/CreateML/mldatatable/subscript(_)-5tl9r.md",
+      "hash": "a954b9628bf7bda850cc963a2a1e0136f0dff58a3725bba75e2c49e84a54ecab"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatatable/subscript(_:)-7h4j3.json": {
       "file_path": "documentation/CreateML/mldatatable/subscript(_)-7h4j3.md",
@@ -9220,6 +9764,10 @@
       "file_path": "documentation/CreateML/mldatavalue/multiarraytype/mlmultiarray.md",
       "hash": "699e908c9b86185ba2b3ad2a4e45aa09a361e2267dde5291a6a352995fcf024a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/multiarraytype/subscript(_:)-7lt8q.json": {
+      "file_path": "documentation/CreateML/mldatavalue/multiarraytype/subscript(_)-7lt8q.md",
+      "hash": "89bb1b8b4273a775a6becd065a534d78beaa745d371b2146ff9b8b7b44ad2cf6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/multiarraytype/subscript(_:).json": {
       "file_path": "documentation/CreateML/mldatavalue/multiarraytype/subscript(_).md",
       "hash": "a897d76ef0d6170a202a1a8116e639dc426e41ff2fb23c1cf6617fe99d9ce20e"
@@ -9247,6 +9795,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/sequencetype/init().json": {
       "file_path": "documentation/CreateML/mldatavalue/sequencetype/init().md",
       "hash": ""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/sequencetype/init(_:)-3u0oh.json": {
+      "file_path": "documentation/CreateML/mldatavalue/sequencetype/init(_)-3u0oh.md",
+      "hash": "dac42ed0e99fbf692f1449b380f5d1bcd6fabe7b0d94eaba57998d4383d925d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/sequencetype/init(_:).json": {
       "file_path": "documentation/CreateML/mldatavalue/sequencetype/init(_).md",
@@ -9368,6 +9920,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/description.md",
       "hash": "f2be5f91032d42c248f00b100f37fd23ae0dd95f50017990aff74f941546f0e6"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/evaluation(on:)-69gvl.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/evaluation(on)-69gvl.md",
+      "hash": "9f7f937f96e966b96b4fad079b0e1e7e5221a2e1fc3752a29b5c76b71d61b2b2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/evaluation(on).md",
       "hash": "f214bfc1b7970bf06b8acea160437f56c57085f4c58774f5be23f6f949c52fda"
@@ -9380,9 +9936,17 @@
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/init(checkpoint).md",
       "hash": "26bc78787ecaeb104e576925023fa8bd6ce9ec499c04b7f50e2d62b8bb903d83"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-hmwt.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-hmwt.md",
+      "hash": "348abdf60098e4875e3e630b4dc5c31b10399c42cf49fca96dc429a357db8b8c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "a2c5447dd82d4f8993d92a2b86d020ab5db8b13c5eff247b33cbb47bb4d7cce3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-1cgxc.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-1cgxc.md",
+      "hash": "f17afd05848c97760c20a5a2708e2ea532bfbbac38680ea29e8b1ac1ef07cfa1"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -9480,6 +10044,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/playgrounddescription.md",
       "hash": "a0877598f61ad7ad1ed6a62650e4ce977a473f26bef41885ad2abaa86ed44dd9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/predictions(from:)-2di6j.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/predictions(from)-2di6j.md",
+      "hash": "86b1ca6a4b6dbf153de2f2afec1500c3745c32fc21b08c5b7c262c1403bb47d1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/predictions(from:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/predictions(from).md",
       "hash": "5e51d1f25d1ef422665c3f9456b894cb8536a0075387882ed587c611f559cae7"
@@ -9495,6 +10063,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/targetcolumn.json": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/targetcolumn.md",
       "hash": "18157abf2f22ae90b21a95bf8254af33bd24c39e0681df7c2a8b1e9bf6a6fc9a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-50xr2.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-50xr2.md",
+      "hash": "4d2903510d49d4c6df030ccc1255c749c7d8b65e3e4359d971e178cf7400db1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -9540,6 +10112,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeregressor/description.md",
       "hash": "70da9577e7d99ebdef361de02a7e31050fef505cb7ac105a024f29e0a4b73861"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/evaluation(on:)-7zk9x.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/evaluation(on)-7zk9x.md",
+      "hash": "bbbbcc552fec127b427db0c20c8bbdf33dba79170588e60aa097527cc1695422"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/evaluation(on).md",
       "hash": "639d0521ef40a8c017b08facb4bbd096b8e9354340490367af8075ddb81bf142"
@@ -9552,9 +10128,17 @@
       "file_path": "documentation/CreateML/mldecisiontreeregressor/init(checkpoint).md",
       "hash": "23fcaab89d8fa6743d6f5034d4b22e2f557f7fdb95985bd88cbdd7cfed81089c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-7cjvn.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-7cjvn.md",
+      "hash": "b73a274b7f02637a62fe3581c253fa8d16c7952028ff3ef2bf9329015462814c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "64e42c12b6c6db5e183f3a4aa0e66121c018a772a4b61c784aaa49e6681e3a35"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-9ginr.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-9ginr.md",
+      "hash": "0d2850bf7365d6c024f95023358b904988d027311075328cc2d5ca78105afc5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -9652,6 +10236,10 @@
       "file_path": "documentation/CreateML/mldecisiontreeregressor/playgrounddescription.md",
       "hash": "31ed0500935331969fc80d5ddc3c410e752979b3127c302c896f32de1ffb6090"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/predictions(from:)-20026.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/predictions(from)-20026.md",
+      "hash": "eaad59936b365c377c368d982f71cb0cb45d9aee9049708ca66dd10835b78219"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/predictions(from:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/predictions(from).md",
       "hash": "3ecb8338a70357b1228d8f4ed14a39fc9e9de7e1d7158305f460eee8e9fd76f1"
@@ -9667,6 +10255,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/targetcolumn.json": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/targetcolumn.md",
       "hash": "8f00ebd8aae42fc7984c5a739532f9252966f8811bed2ee4fcc87d7287753f6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-5l3pj.json": {
+      "file_path": "documentation/CreateML/mldecisiontreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-5l3pj.md",
+      "hash": "f96bfa2a9495022db8504e14134b15d437a5519bcb0082c8e4469bef705b4b12"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldecisiontreeregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mldecisiontreeregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -10384,6 +10976,14 @@
       "file_path": "documentation/CreateML/mlimageclassifier/description.md",
       "hash": "539e93fa9a8b5350fbac0a25374e610a547e78ccb4a5ba312a9ce0aad572381b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/evaluation(on:)-7338q.json": {
+      "file_path": "documentation/CreateML/mlimageclassifier/evaluation(on)-7338q.md",
+      "hash": "21feab32b08260776ab38e3896e5df562f776af4e5a86d2a36a615127b26636f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/evaluation(on:)-9p8mi.json": {
+      "file_path": "documentation/CreateML/mlimageclassifier/evaluation(on)-9p8mi.md",
+      "hash": "1e97341a5fb2712af3aaa39ac57ffe24dcadfc5de15b2889ed4d057ffc7dc752"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlimageclassifier/evaluation(on).md",
       "hash": "2dec6b66782f739403f6aeb3927f4a8e48bacb03c9b41d527b93e6c21c214bc1"
@@ -10460,6 +11060,14 @@
       "file_path": "documentation/CreateML/mlimageclassifier/init(checkpoint).md",
       "hash": "0478e604b572c41a7ccac955201ff0be302491d7cad30a41964aeac34ade3e10"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/init(trainingdata:parameters:)-4r6hr.json": {
+      "file_path": "documentation/CreateML/mlimageclassifier/init(trainingdata,parameters)-4r6hr.md",
+      "hash": "f062ba6df740d25c9ed8434b4e3cd41e9849153b392093fd2a2f705d75034ee2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/init(trainingdata:parameters:)-7j4w6.json": {
+      "file_path": "documentation/CreateML/mlimageclassifier/init(trainingdata,parameters)-7j4w6.md",
+      "hash": "11face35ec85505281ec0a0be16c3c4f4cfa11d16506a78fd1e4852f1a348958"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/init(trainingdata:parameters:).json": {
       "file_path": "documentation/CreateML/mlimageclassifier/init(trainingdata,parameters).md",
       "hash": "c8f8ae37bdd97d7f99eb9971299f5ba6157171d94a40ef7d563cfe51c839b536"
@@ -10528,6 +11136,10 @@
       "file_path": "documentation/CreateML/mlimageclassifier/modelparameters-swift.struct/init(featureextractor,validation,maxiterations,augmentationoptions).md",
       "hash": "2400eb8be2700d8f0b438b30c87598e4fc38228ab8cefcfb1a51569303adc3ab"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/modelparameters-swift.struct/init(featureextractor:validationdata:maxiterations:augmentationoptions:)-5we70.json": {
+      "file_path": "documentation/CreateML/mlimageclassifier/modelparameters-swift.struct/init(featureextractor,validationdata,maxiterations,augmentationoptions)-5we70.md",
+      "hash": "6b851ab399307cf7e19c056b22b0a5a84c70ad76cbd5c17969eb2bc34583f91b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/modelparameters-swift.struct/init(featureextractor:validationdata:maxiterations:augmentationoptions:).json": {
       "file_path": "documentation/CreateML/mlimageclassifier/modelparameters-swift.struct/init(featureextractor,validationdata,maxiterations,augmentationoptions).md",
       "hash": "d0084111ba9b0120f36e38ee1af9622be36f7305e1ef3e66d8618c0e0b242338"
@@ -10583,6 +11195,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/playgrounddescription.json": {
       "file_path": "documentation/CreateML/mlimageclassifier/playgrounddescription.md",
       "hash": "3966081c720c360b24708bb49362353b1278830a7dabb4af5b98d78b35b00905"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/prediction(from:)-7fitc.json": {
+      "file_path": "documentation/CreateML/mlimageclassifier/prediction(from)-7fitc.md",
+      "hash": "d4810ef52d92641d1837ad79bbb09ac9af7a766a64b78ada326fd5b2a79db1e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlimageclassifier/prediction(from:).json": {
       "file_path": "documentation/CreateML/mlimageclassifier/prediction(from).md",
@@ -10676,6 +11292,10 @@
       "file_path": "documentation/CreateML/mllinearregressor/description.md",
       "hash": "a26a648a2d587c768dad390dd8224c58245b650ea69b73e8419a5b7a0b4c338a"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/evaluation(on:)-6pyq9.json": {
+      "file_path": "documentation/CreateML/mllinearregressor/evaluation(on)-6pyq9.md",
+      "hash": "a948e2a68f75ae217593cc10f0a3baa9e42bdd95ff55f70a6c7fb4da42ca215d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mllinearregressor/evaluation(on).md",
       "hash": "f11f082a49b196f2bee36c2320690e798a0a21fbfca35e580fbe44eb0ade2895"
@@ -10688,9 +11308,17 @@
       "file_path": "documentation/CreateML/mllinearregressor/init(checkpoint).md",
       "hash": "0604c979599ddf7ce60b3df1bffa98327469d812871aecf625f5799870e02472"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-5lmry.json": {
+      "file_path": "documentation/CreateML/mllinearregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-5lmry.md",
+      "hash": "71ed1e765ba75bf7f0709ada10f7c1717e9eef60d4498e79ffb6bd25e9cb182e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mllinearregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "ec1ac788f6be42ee0f53cb139fbfced00161c2fd0b784d9cc3f96418be7a2ef4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-3cosv.json": {
+      "file_path": "documentation/CreateML/mllinearregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-3cosv.md",
+      "hash": "009f0cd0c994c78c6a9d3f98adb37152ace4cdf5433891c7af87236c602e9905"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mllinearregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -10796,6 +11424,10 @@
       "file_path": "documentation/CreateML/mllinearregressor/playgrounddescription.md",
       "hash": "2973abfaf3d6054963d5c101f83cc154c16eab4816790c0ab5497c20879eeb38"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/predictions(from:)-2gc5w.json": {
+      "file_path": "documentation/CreateML/mllinearregressor/predictions(from)-2gc5w.md",
+      "hash": "b35d91061b01b6e4d78446f07082c5be674755da2cbf2f07184d36921e6ff900"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/predictions(from:).json": {
       "file_path": "documentation/CreateML/mllinearregressor/predictions(from).md",
       "hash": "817bd659adb909c926fb9923e82ee1ed7ad526adbf8178a9a2599566b8dee673"
@@ -10811,6 +11443,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/targetcolumn.json": {
       "file_path": "documentation/CreateML/mllinearregressor/targetcolumn.md",
       "hash": "068c7ea9e037f7b7c86c13c5417d0b294711242153206d3f488b5416b68e8303"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-1v1q5.json": {
+      "file_path": "documentation/CreateML/mllinearregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-1v1q5.md",
+      "hash": "8ad59ad5bea322f89de747e2a83d7fc60a53f498759233bc2842ead0c449e8d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mllinearregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -10856,6 +11492,10 @@
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/description.md",
       "hash": "a473ab60db30fb7c6864b279e42a608ce5e7c0aaf4dd2f62adb036b9bcb91a69"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/evaluation(on:)-8v2xt.json": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/evaluation(on)-8v2xt.md",
+      "hash": "8206420feddf74efe929c1f7705da02f2ca9383b60f507da452c50ea3e376354"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/evaluation(on).md",
       "hash": "621fb4e57ab22b77f4eae1da3d8fad39631063fe2fa797d45319c2a907c8377d"
@@ -10868,9 +11508,17 @@
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/init(checkpoint).md",
       "hash": "cd4f561882a732686b2bbb8e0392146b0edd2b6402ecead7b7d5a619cd6aa675"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-7xy2g.json": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-7xy2g.md",
+      "hash": "58400c79729dd4174782e4e2b23b2e46ed9dbd8e7569af96f18c900ce3e4fe6b"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "132f3294b1208c634750b0c95f1ebe138c92c647a8365430c7c90bf82ca24e0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-7l7f0.json": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-7l7f0.md",
+      "hash": "fa725bdeec8d6c07fed0ebb5e3a7a56917842324b33b947352a2112e59c48a57"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -10976,6 +11624,10 @@
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/playgrounddescription.md",
       "hash": "3dfdd25416f57dd1de8ea85e88d314269944566cb8dc6577aa00112ae3fb8f89"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/predictions(from:)-80abo.json": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/predictions(from)-80abo.md",
+      "hash": "5df200ed8559698c04b850caaa426ad0fbed0f70c39bf8962842cf1c8dfa5516"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/predictions(from:).json": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/predictions(from).md",
       "hash": "986aa0ffeaad9f5e12b844fc9383efc242517508dff47fd2ec0fe698f9776f84"
@@ -10991,6 +11643,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/targetcolumn.json": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/targetcolumn.md",
       "hash": "bd77c836cf6dee60d9dc09f4e4f535a6fea61c73ffafcfc720508332e315907e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-8vpa1.json": {
+      "file_path": "documentation/CreateML/mllogisticregressionclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-8vpa1.md",
+      "hash": "ab97d1243d8feff0c03302a92e3a07ab051254cd133b0c793fbaa850f632f222"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mllogisticregressionclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mllogisticregressionclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -11576,6 +12232,10 @@
       "file_path": "documentation/CreateML/mlrandomforestclassifier/description.md",
       "hash": "0e462cfb51ddabaae4a2c4fa188e9146eeb3196151315770170bcc1c20d7cdc3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/evaluation(on:)-3w3a0.json": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/evaluation(on)-3w3a0.md",
+      "hash": "b3c2424e01edda9aac068cc98ebfe2e74df2f84ad61e5f871686889788eb9027"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/evaluation(on).md",
       "hash": "631dc3b0cf57be15a24ca700485eb08864795baa51654c0a3afc306706a3eb5f"
@@ -11588,9 +12248,17 @@
       "file_path": "documentation/CreateML/mlrandomforestclassifier/init(checkpoint).md",
       "hash": "5b04772ae5e42b6c99c1600d4bfb0cee5ea84bf148a1abd8c8d6a613682baa28"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-4pxej.json": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-4pxej.md",
+      "hash": "d29392a474e504722be684655eda9a3b364670b65164f21f5dba34005d3436ad"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "c6a9b7c533d2118cf77208a76080b6263c94d4f27a421aa4a04bd240aa086302"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-7e0li.json": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-7e0li.md",
+      "hash": "3e334aad28e13daab77e907f96d205adf610c22c62a9af34aef3ea79759f6efd"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -11700,6 +12368,10 @@
       "file_path": "documentation/CreateML/mlrandomforestclassifier/playgrounddescription.md",
       "hash": "9d062813207d163f219c6315715712a7bed18979214591bc1f967017c7e78b1e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/predictions(from:)-9dvl3.json": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/predictions(from)-9dvl3.md",
+      "hash": "95ed1a7809382cfadf0bdb008e670fb16dd89b41eaa8e0bbf91cd9346f9c91e8"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/predictions(from).md",
       "hash": "35905f2973375ef1d47510aad66bebd29685e85d8711ddb798ca715919af81f2"
@@ -11715,6 +12387,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/targetcolumn.json": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/targetcolumn.md",
       "hash": "caf8dc2722b01d43f49c18ca5e6058c837ad347000b9c83a7d74a53535a0562d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-1q4n7.json": {
+      "file_path": "documentation/CreateML/mlrandomforestclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-1q4n7.md",
+      "hash": "7f2619514fb63f7995e011a3349972464af04fc29f9b8afeb5052b61f9d15600"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlrandomforestclassifier/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -11760,6 +12436,10 @@
       "file_path": "documentation/CreateML/mlrandomforestregressor/description.md",
       "hash": "070bebb2a85becffa5304a8bad4771acbd3aea1e83b8b2f43ef9ce3e32e3ca5e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/evaluation(on:)-99j4w.json": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/evaluation(on)-99j4w.md",
+      "hash": "79066bbb3053421c7057491b80d3e2b273cbdb07e9fc45740e6691623ba9800f"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/evaluation(on).md",
       "hash": "04a26c5f887599bf554b6d2074da140da93b1f9d1ab082d907e2636b5abae2a4"
@@ -11772,9 +12452,17 @@
       "file_path": "documentation/CreateML/mlrandomforestregressor/init(checkpoint).md",
       "hash": "6ff15ea040b6442afb76ac225552c5aaaa12a4c77b50123d16c01a34081e8b01"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:)-9p7os.json": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/init(trainingdata,targetcolumn,featurecolumns,parameters)-9p7os.md",
+      "hash": "5e261801bedb755b4db8279215822fbf9c44dae4e56676025dbff4910eeabb01"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
       "hash": "6a32d6262c43853db4d632da919fa1a51ccbfc2ad88d2abefef041e913c82a3d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-3e9dp.json": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-3e9dp.md",
+      "hash": "61744fe5210e90a4632039af1824e05237e7234541f0409f0264dd1cbc948966"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/maketrainingsession(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -11884,6 +12572,10 @@
       "file_path": "documentation/CreateML/mlrandomforestregressor/playgrounddescription.md",
       "hash": "9554efd3fd16a0899be2f5f99fbc0d1327f03aa3c91d6e4869e3c206920c4851"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/predictions(from:)-59u6.json": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/predictions(from)-59u6.md",
+      "hash": "c4670edd9a446a15fa993f665bdceb7730854eb97b4db9b0595ad88c673ab2b2"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/predictions(from).md",
       "hash": "b1607fa1b344fa5d9e29d2a7164c049c671c9bcfd186ef96c174716d911741ba"
@@ -11899,6 +12591,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/targetcolumn.json": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/targetcolumn.md",
       "hash": "11cb0fbdfbdf6c5f5b2062d9da5971eaf53a28f6f7bc3d7d472dd9ffb4c666a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:)-4mev0.json": {
+      "file_path": "documentation/CreateML/mlrandomforestregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters)-4mev0.md",
+      "hash": "984d9ed6d60a1492c9c9611b4c86760d2f10a2e99d6c55e3c73aadfde740e4e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrandomforestregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlrandomforestregressor/train(trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters).md",
@@ -11924,13 +12620,29 @@
       "file_path": "documentation/CreateML/mlrecommender.md",
       "hash": "be1b17890e07233372f4df37f81a1ef86bae1d360421c211161383c1f21e43ee"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:)-50o7t.json": {
+      "file_path": "documentation/CreateML/mlrecommender/evaluation(on,usercolumn,itemcolumn,ratingcolumn,cutoffs,excludingobserved)-50o7t.md",
+      "hash": "4ae38a5f0b2e5bb3e43067562a8279bf6aa5bc547f78277e4553417ef09bde6e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/evaluation(on:usercolumn:itemcolumn:ratingcolumn:cutoffs:excludingobserved:).json": {
       "file_path": "documentation/CreateML/mlrecommender/evaluation(on,usercolumn,itemcolumn,ratingcolumn,cutoffs,excludingobserved).md",
       "hash": "9f157bfb1cf739a80f74f82246ea0c75f4e284865ca90139466fb5502c4dfa4d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/getsimilaritems(fromitems:maxcount:)-9scon.json": {
+      "file_path": "documentation/CreateML/mlrecommender/getsimilaritems(fromitems,maxcount)-9scon.md",
+      "hash": "7ad5cb3e0780749b9bc39d935b205287f45daceecae3ff7871839a2418e5c7a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/getsimilaritems(fromitems:maxcount:)-kq37.json": {
+      "file_path": "documentation/CreateML/mlrecommender/getsimilaritems(fromitems,maxcount)-kq37.md",
+      "hash": "e0d7d01ebcea9577235a7cc8dc78d0ac5d6d5dc35572e488f641773b19e90162"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/getsimilaritems(fromitems:maxcount:).json": {
       "file_path": "documentation/CreateML/mlrecommender/getsimilaritems(fromitems,maxcount).md",
       "hash": "cd1ea9881fb7c2b0b7efabf30cabd9da67a88d2815dae2ed65a9670e474eb7e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:)-20dcf.json": {
+      "file_path": "documentation/CreateML/mlrecommender/init(trainingdata,usercolumn,itemcolumn,ratingcolumn,parameters)-20dcf.md",
+      "hash": "29e81431e4be024bba4a4afde982304c8ce3d2b3dc00195d7435eb15d17a94eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:).json": {
       "file_path": "documentation/CreateML/mlrecommender/init(trainingdata,usercolumn,itemcolumn,ratingcolumn,parameters).md",
@@ -12019,6 +12731,14 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/ratingcolumn.json": {
       "file_path": "documentation/CreateML/mlrecommender/ratingcolumn.md",
       "hash": "70792a53663cbc5d4bd954c37a75b07f70c0514bb4e02e6a0f1ab25539f6b260"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-416wd.json": {
+      "file_path": "documentation/CreateML/mlrecommender/recommendations(fromusers,maxcount,restrictingtoitems,excluding,excludingobserved)-416wd.md",
+      "hash": "4a807991d2bd135b665eb04ed692162b6628da1522c24cc7323e67e978e1b8f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-7an46.json": {
+      "file_path": "documentation/CreateML/mlrecommender/recommendations(fromusers,maxcount,restrictingtoitems,excluding,excludingobserved)-7an46.md",
+      "hash": "b7d0f2cd2c0882343dbc424149974251bb54d2f1f29e0612cfef37020b7140ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:).json": {
       "file_path": "documentation/CreateML/mlrecommender/recommendations(fromusers,maxcount,restrictingtoitems,excluding,excludingobserved).md",
@@ -12136,6 +12856,10 @@
       "file_path": "documentation/CreateML/mlregressor/description.md",
       "hash": "8422d39a6d2f06ea1fbdb5f7bad9b89dccf352e752501ae9fb44fd4dbd10f313"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/evaluation(on:)-7pirm.json": {
+      "file_path": "documentation/CreateML/mlregressor/evaluation(on)-7pirm.md",
+      "hash": "bdba4f2418974ad6769edf9c81db7671d79d89ae28eb505bbd029189de2336b6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlregressor/evaluation(on).md",
       "hash": "f4e522317731dd91531aae204acba23722f12cbeb278cdde4049cd9ced044bf3"
@@ -12143,6 +12867,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/featurecolumns.json": {
       "file_path": "documentation/CreateML/mlregressor/featurecolumns.md",
       "hash": "e692c4cdcb390de6090e55724fdef7564c49227c789ec2f1232e7c1a5207a63a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/init(trainingdata:targetcolumn:featurecolumns:)-56rvo.json": {
+      "file_path": "documentation/CreateML/mlregressor/init(trainingdata,targetcolumn,featurecolumns)-56rvo.md",
+      "hash": "bab17614aded4947865af5c7c6183d8db74726c3addd1d22479b3703169401bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/init(trainingdata:targetcolumn:featurecolumns:).json": {
       "file_path": "documentation/CreateML/mlregressor/init(trainingdata,targetcolumn,featurecolumns).md",
@@ -12159,6 +12887,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/playgrounddescription.json": {
       "file_path": "documentation/CreateML/mlregressor/playgrounddescription.md",
       "hash": "e6e4da069290ea0d3afbb110541928adf14b3d8e81cae4dd4d1da7c80e9d7ab8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/predictions(from:)-3gkt1.json": {
+      "file_path": "documentation/CreateML/mlregressor/predictions(from)-3gkt1.md",
+      "hash": "3eb5f99a473a3235504689e25089c5e338087e662e41f0b7fe02daa83a3b59b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlregressor/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlregressor/predictions(from).md",
@@ -12296,6 +13028,14 @@
       "file_path": "documentation/CreateML/mlsoundclassifier/description.md",
       "hash": "de1058214522132f747b397a6ab56c424116e4ede5c7c0a7cf78d6380264968c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/evaluation(on:)-7fmux.json": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/evaluation(on)-7fmux.md",
+      "hash": "a3e9a49edfc5758a7f193d13e9c0a2c601285e446b9a45b872470c695d4b9ea5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/evaluation(on:)-8kplo.json": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/evaluation(on)-8kplo.md",
+      "hash": "2362d70fac5a0693e3063e0bae4fcb69a25b2a004a2f862b699262389710cb2d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlsoundclassifier/evaluation(on).md",
       "hash": "72fc61b82bf8d5f4447e7a3916bb5a8766ee22c7d3530f727e882bbb3d24aa7f"
@@ -12331,6 +13071,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/init(checkpoint:).json": {
       "file_path": "documentation/CreateML/mlsoundclassifier/init(checkpoint).md",
       "hash": "2078fe23574ded7da16115304ab0836315278b44d5b11dd93e2cb439f9576537"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/init(trainingdata:parameters:)-83tih.json": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/init(trainingdata,parameters)-83tih.md",
+      "hash": "da59b1705edb5b2968affe7dbda453ea4640f09a6008f5594219e3946acd74ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/init(trainingdata:parameters:).json": {
       "file_path": "documentation/CreateML/mlsoundclassifier/init(trainingdata,parameters).md",
@@ -12503,6 +13247,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/resume(_:).json": {
       "file_path": "documentation/CreateML/mlsoundclassifier/resume(_).md",
       "hash": "cf09665809ea06ed1c13a69048014c3482bf76efab0d9c7ea499857d4d72dcb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/train(trainingdata:parameters:sessionparameters:)-6z4c8.json": {
+      "file_path": "documentation/CreateML/mlsoundclassifier/train(trainingdata,parameters,sessionparameters)-6z4c8.md",
+      "hash": "60f6b0ffcd4d1886d330b60e7ec4189703b1d36809b816a9ac8fcded2b394352"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsoundclassifier/train(trainingdata:parameters:sessionparameters:).json": {
       "file_path": "documentation/CreateML/mlsoundclassifier/train(trainingdata,parameters,sessionparameters).md",
@@ -12756,6 +13504,10 @@
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/description.md",
       "hash": "6150bae9ae36e39601273f6aad57f1f708ddad78ed224e0eea59108df1a8a8c3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlsupportvectorclassifier/evaluation(on:)-815go.json": {
+      "file_path": "documentation/CreateML/mlsupportvectorclassifier/evaluation(on)-815go.md",
+      "hash": "22db19f3cec6899d9ec411ede36333526cf632b57eb74aac6b8af0d919b6cf04"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsupportvectorclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/evaluation(on).md",
       "hash": "6342988172f3990a29803761843adb170145c5dba04756e93b0f7e09a7a0b1b5"
@@ -12763,6 +13515,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsupportvectorclassifier/featurecolumns.json": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/featurecolumns.md",
       "hash": "12cea818ad399466a8800ebf91c914c753a9d319f75df6f6e7bda3569be52b04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:)-9ob53.json": {
+      "file_path": "documentation/CreateML/mlsupportvectorclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters)-9ob53.md",
+      "hash": "985f334d817d1886b1841cefd8d931cdc5047d7401b77d6247690419201278e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).json": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/init(trainingdata,targetcolumn,featurecolumns,parameters).md",
@@ -12860,6 +13616,10 @@
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/playgrounddescription.md",
       "hash": "0da5322e2ce343f0a10ff2ff2a4fbf2127a539713a483065c64fc90685611c75"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlsupportvectorclassifier/predictions(from:)-8pjz.json": {
+      "file_path": "documentation/CreateML/mlsupportvectorclassifier/predictions(from)-8pjz.md",
+      "hash": "2d6b6bdc8b0c5ae18a70c8bf953c563dc1046ca8e34b863c45c6eea03038b7a6"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlsupportvectorclassifier/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlsupportvectorclassifier/predictions(from).md",
       "hash": "d1d111d091d4d60b099236d48f8c44f5fedd9994339bc503f57a61a71c423c6d"
@@ -12924,9 +13684,21 @@
       "file_path": "documentation/CreateML/mltextclassifier/description.md",
       "hash": "3c907daa8340fdb4455e720a1994fea0fe755f35b3ac1bbaa38af8ab9f4040a3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/evaluation(on:)-3h6eu.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/evaluation(on)-3h6eu.md",
+      "hash": "f62d92cf5ac9a4447603a88d01be6c5149558ef86ea6160ec2c18baf8dab28ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/evaluation(on:)-8ch4k.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/evaluation(on)-8ch4k.md",
+      "hash": "f367c16135ade4e07f527cc22cd595d1c2628b4c1714ff4087bedb49fd759661"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/evaluation(on:).json": {
       "file_path": "documentation/CreateML/mltextclassifier/evaluation(on).md",
       "hash": "57c3d74565d8b21bd7868ce045d3c3a5bbd6f13fd8e5843418386f25078317d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/evaluation(on:textcolumn:labelcolumn:)-6emxa.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/evaluation(on,textcolumn,labelcolumn)-6emxa.md",
+      "hash": "bba5aeb65d22c3212a61c901cd9852d3f316d0bdd4eb87b0ce010894439f642c"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/evaluation(on:textcolumn:labelcolumn:).json": {
       "file_path": "documentation/CreateML/mltextclassifier/evaluation(on,textcolumn,labelcolumn).md",
@@ -12980,9 +13752,21 @@
       "file_path": "documentation/CreateML/mltextclassifier/featureextractortype/staticembedding.md",
       "hash": "6587a03185fd97cde65756d4d4ca87a948161cf8fe0fc0e0659f3508b583a0e7"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/init(trainingdata:parameters:)-8n8vs.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,parameters)-8n8vs.md",
+      "hash": "a4e35b8306f6e0685d29abc201a712274741716a01864b04c3f5ad1ab7016f2b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/init(trainingdata:parameters:)-9uj3q.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,parameters)-9uj3q.md",
+      "hash": "16c334df3efe50a5cfcd9133a2e8c3b518830878ca08812b018e90fc9b993e76"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/init(trainingdata:parameters:).json": {
       "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,parameters).md",
       "hash": "1bf003e667c4106d7e315835e2e106f9f082c3c60bd8301e3bdfc6082561a8c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:)-7lp6w.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,textcolumn,labelcolumn,parameters)-7lp6w.md",
+      "hash": "615b33e1f542a17a25781301189de2a33b08131ddd0d0ea890ca81fefa58a2f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/init(trainingdata:textcolumn:labelcolumn:parameters:).json": {
       "file_path": "documentation/CreateML/mltextclassifier/init(trainingdata,textcolumn,labelcolumn,parameters).md",
@@ -13068,6 +13852,10 @@
       "file_path": "documentation/CreateML/mltextclassifier/modelparameters-swift.struct/init(validation,algorithm,language).md",
       "hash": "cd938d6f31ed4d05cddf451182b7db7f2e5614239c943bbfdce44b54d097afb5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:)-xplw.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/modelparameters-swift.struct/init(validationdata,algorithm,language)-xplw.md",
+      "hash": "b08e6d0f08584ab58c6be428902da33089a8bee3ef89c4c06e6d7ae6e127bcda"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/modelparameters-swift.struct/init(validationdata:algorithm:language:).json": {
       "file_path": "documentation/CreateML/mltextclassifier/modelparameters-swift.struct/init(validationdata,algorithm,language).md",
       "hash": "4471ee4d59bf220e8007dbbb55122b80d5349a982ab37a25494bb3125abcacb4"
@@ -13140,9 +13928,17 @@
       "file_path": "documentation/CreateML/mltextclassifier/prediction(from).md",
       "hash": "c9e68dfd183ca7c0e83b21b6127c9abb031054dbc801337be489d22a63ab34ff"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/predictions(from:)-40gtb.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/predictions(from)-40gtb.md",
+      "hash": "4299fe72fccddd01d55843b0ecc7802c7283b88b9aa1fcd6f235cf45ade9ce83"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/predictions(from:).json": {
       "file_path": "documentation/CreateML/mltextclassifier/predictions(from).md",
       "hash": "0bdbc5e59a9231bc938ef5b0a0265a85af7121047401f688a86e167f0b668d44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/predictionswithconfidence(from:)-1w9zo.json": {
+      "file_path": "documentation/CreateML/mltextclassifier/predictionswithconfidence(from)-1w9zo.md",
+      "hash": "263ebf2c73f8238546c40e9b620519fe11914f44c56316e8c51964b05663262f"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mltextclassifier/predictionswithconfidence(from:).json": {
       "file_path": "documentation/CreateML/mltextclassifier/predictionswithconfidence(from).md",
@@ -13768,6 +14564,10 @@
       "file_path": "documentation/CreateML/mlwordtagger/evaluation(on).md",
       "hash": "c2a5cbd8734214b0804a037637edd2673d616e161e24e8d2ca8580eab8c20210"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/evaluation(on:tokencolumn:labelcolumn:)-31x1l.json": {
+      "file_path": "documentation/CreateML/mlwordtagger/evaluation(on,tokencolumn,labelcolumn)-31x1l.md",
+      "hash": "73ba6fc1eca75d7eda613e19617255a6ce5223e782e9c2bba57fb58575b7b371"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/evaluation(on:tokencolumn:labelcolumn:).json": {
       "file_path": "documentation/CreateML/mlwordtagger/evaluation(on,tokencolumn,labelcolumn).md",
       "hash": "b61871c86005fc2c8d882ff050e92e6ae721aa0de57fb374b67799219b88866e"
@@ -13815,6 +14615,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/init(trainingdata:parameters:).json": {
       "file_path": "documentation/CreateML/mlwordtagger/init(trainingdata,parameters).md",
       "hash": "fc50d6634248f4d7416cbff2d9bcd0962d0d7ca2532ac50c8f3111e4525d9019"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:)-97qtg.json": {
+      "file_path": "documentation/CreateML/mlwordtagger/init(trainingdata,tokencolumn,labelcolumn,parameters)-97qtg.md",
+      "hash": "6597403ece13edc322208bb9953688f9400c2f02aa38596fb2d81fd27479ce0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:).json": {
       "file_path": "documentation/CreateML/mlwordtagger/init(trainingdata,tokencolumn,labelcolumn,parameters).md",
@@ -13960,13 +14764,25 @@
       "file_path": "documentation/CreateML/mlwordtagger/playgrounddescription.md",
       "hash": "0cacea69a43ce3177feafa0150b5ab6d9780f99b34a2a074a294a808bd130b4d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/prediction(from:)-7rqyq.json": {
+      "file_path": "documentation/CreateML/mlwordtagger/prediction(from)-7rqyq.md",
+      "hash": "197602919601cd84a75aba21021cfb6ef32094f1f9fa106935e31df775fed4a4"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/prediction(from:).json": {
       "file_path": "documentation/CreateML/mlwordtagger/prediction(from).md",
       "hash": "83f7f7b046eae23432f3833e59f2afa6fa8ffc5c4c2df6998dbc5fc7c6473bc3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/predictions(from:)-22b8d.json": {
+      "file_path": "documentation/CreateML/mlwordtagger/predictions(from)-22b8d.md",
+      "hash": "57fbc456cefb2aaf7a98db346825ae0845fb5cb2c0804471dc6fd413d7d8f89c"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/predictions(from:).json": {
       "file_path": "documentation/CreateML/mlwordtagger/predictions(from).md",
       "hash": "58e25b94d718255c8dbfad8655aa77eae526c7ae47555426b45e6a09f3f14382"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/predictionwithconfidence(from:)-37coi.json": {
+      "file_path": "documentation/CreateML/mlwordtagger/predictionwithconfidence(from)-37coi.md",
+      "hash": "fdd1acd5b9c84f47f3c69f14b0d66b49592c39de28c3fc2282a34218b7be0f8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mlwordtagger/predictionwithconfidence(from:).json": {
       "file_path": "documentation/CreateML/mlwordtagger/predictionwithconfidence(from).md",
@@ -14091,8 +14907,8 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 3522
+    "total_pages": 3726
   }
 }

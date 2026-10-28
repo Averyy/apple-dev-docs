@@ -50,7 +50,7 @@
 #define kIOPMAssertionLevelKey CFSTR("AssertLevel")
 ```
 
-#### Overview
+## Overview
 
 Keys into dictionaries describing assertions.
 

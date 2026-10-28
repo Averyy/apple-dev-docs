@@ -25,7 +25,7 @@ let kCGPDFContextCropBox: CFString
 extern CFStringRef const kCGPDFContextCropBox;
 ```
 
-#### Discussion
+## Discussion
 
 This key is optional. If present, the value of this key must be a [`CFData`](../CoreFoundation/cfdata.md) object that contains a [`CGRect`](../CoreFoundation/cgrect.md) (stored by value, not by reference).
 

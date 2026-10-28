@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Common patterns from python and mapping `mlx` function names.
 
-#### Indexing
+## Indexing
 
 [`MLXArray`](./mlxarray.md) supports all the same indexing (see [Indexing](./indexing.md)) as the python `mx.array`, though in some cases they are written differently. In all cases both `MLXArray` and `mx.array` indexing strive to match [numpy indexing](https://numpy.org/doc/stable/user/basics.indexing.html).
 
@@ -38,9 +38,9 @@ Here is a mapping of some observed calls:
 
 See [Indexing](./indexing.md) for more information.
 
-#### Name Mapping
+## Name Mapping
 
-##### Swift Naming
+### Swift Naming
 
 Note that the element-wise logical operations such as:
 
@@ -57,7 +57,7 @@ Functions and method are typically named in a similar fashion changing `snake_ca
 
 and so on.
 
-##### mx.array methods
+### mx.array methods
 
 Here is a mapping of python `mx.array` methods to their [`MLXArray`](./mlxarray.md) counterparts.
 Note: some of the symbols are not linkable.
@@ -138,7 +138,7 @@ Note: some of the symbols are not linkable.
 | `transpose` | [`transposed(_:stream:)`](./mlxarray/transposed%28_,stream%29.md) |
 | `var` | [`variance(axes:keepDims:ddof:stream:)`](./mlxarray/variance%28axes,keepdims,ddof,stream%29.md) |
 
-##### mx free functions
+### mx free functions
 
 This is a mapping of `mx` free functions to their [MLX](./MLX.md) counterparts.
 

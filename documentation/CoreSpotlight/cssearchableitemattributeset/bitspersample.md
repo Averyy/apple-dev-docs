@@ -23,7 +23,7 @@ var bitsPerSample: NSNumber? { get set }
 @property (strong, nullable) NSNumber * bitsPerSample;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can represent the bit depth of an image (such as 8-bit or 16-bit) or the bit depth per audio sample of uncompressed audio data (such as 8, 16, 24, 32, 64, and so on).
 

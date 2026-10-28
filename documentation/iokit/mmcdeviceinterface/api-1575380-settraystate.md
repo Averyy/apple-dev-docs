@@ -16,11 +16,11 @@ Issues a START_STOP_UNIT command to the device as defined in SBC-3.
 IOReturn (*SetTrayState)(void *self, UInt8 trayState);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNotPermitted if media is inserted, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened and all volumes associated with that device's media have been unmounted, the client may send this command to eject the tray.
 

@@ -19,11 +19,11 @@ class var underPageBackgroundColor: NSColor { get }
 @property (class, strong, readonly) NSColor * underPageBackgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 Use this color to fill the backdrop underneath your app’s main content.
 
-#### Discussion
+## Discussion
 
 When applied to an [`NSBox`](../nsbox.md) object, this color supports Desktop Tinting in Dark Mode. With Desktop Tinting, the system modifies this color dynamically by incorporating some of the color from the underlying desktop image. The system does not apply this dynamic tinting effect to other types of views.
 

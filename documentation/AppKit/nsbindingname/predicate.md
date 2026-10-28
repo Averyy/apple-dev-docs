@@ -19,7 +19,7 @@ static let predicate: NSBindingName
 extern NSBindingName NSPredicateBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

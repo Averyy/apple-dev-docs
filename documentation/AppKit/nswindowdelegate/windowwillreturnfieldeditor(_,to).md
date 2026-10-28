@@ -20,7 +20,7 @@ optional func windowWillReturnFieldEditor(_ sender: NSWindow, to client: Any?) -
 - (id) windowWillReturnFieldEditor:(NSWindow *) sender toObject:(id) client;
 ```
 
-#### Return Value
+## Return Value
 
 The field editor for `client`; returns `nil` when the delegate has no field editor to assign.
 

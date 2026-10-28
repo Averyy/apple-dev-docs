@@ -23,7 +23,7 @@ var modalTransitionStyle: UIModalTransitionStyle { get set }
 @property (nonatomic, assign) UIModalTransitionStyle modalTransitionStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how the view controller’s is animated onscreen when it is presented using the [`present(_:animated:completion:)`](./present%28_,animated,completion%29.md) method. To change the transition type, you must set this property before presenting the view controller. The default value for this property is [`UIModalTransitionStyle.coverVertical`](../uimodaltransitionstyle/coververtical.md).
 

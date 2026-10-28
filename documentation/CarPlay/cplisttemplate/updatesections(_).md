@@ -21,7 +21,7 @@ func updateSections(_ sections: [CPListSection])
 - (void) updateSections:(NSArray<CPListSection *> *) sections;
 ```
 
-#### Discussion
+## Discussion
 
 This method is multipurpose. Use it to add new sections to the list, to remove or reorder existing sections, and to update a section’s appearance. At runtime, use [`maximumSectionCount`](./maximumsectioncount.md) to determine the maximum number of sections the list can display. CarPlay trims the array if its size exceeds this limit.
 

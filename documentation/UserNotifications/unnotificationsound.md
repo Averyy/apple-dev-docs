@@ -28,7 +28,7 @@ class UNNotificationSound
 
 - [Generating a remote notification](./generating-a-remote-notification.md)
 
-#### Overview
+## Overview
 
 Create a [`UNNotificationSound`](./unnotificationsound.md) object when you want the system to play a specific sound when it delivers with your notification. To play the default system sound, create your sound object using the [`default`](./unnotificationsound/default.md) method. If you want to play a custom sound, create a new sound object and specify the name of the audio file that you want to play.
 
@@ -40,7 +40,7 @@ Audio files must already be on the user’s device before the system can play th
 - The `/Library/Sounds` directory of one of the app’s shared group container directories.
 - The main bundle of the current executable.
 
-##### Prepare Sound Resources
+### Prepare Sound Resources
 
 The system sound facility plays custom alert sounds, so they must be in one of the following audio data formats:
 

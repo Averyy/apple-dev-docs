@@ -25,11 +25,11 @@ func CFArrayCreateCopy(_ allocator: CFAllocator!, _ theArray: CFArray!) -> CFArr
 extern CFArrayRefCFArrayCreateCopy(CFAllocatorRef allocator, CFArrayRef theArray);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFArray object that contains the same values as `theArray`. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The pointer values from `theArray` are copied into the new array; the values are also retained by the new array. The count of the new array is the same as `theArray`. The new array uses the same callbacks as `theArray`.
 

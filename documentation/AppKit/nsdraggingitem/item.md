@@ -19,7 +19,7 @@ var item: Any { get }
 @property (strong, readonly) id item;
 ```
 
-#### Discussion
+## Discussion
 
 When you create an `NSDraggingItem` instance, `item` is the `pasteboardWriter` passed to [`init(pasteboardWriter:)`](./init%28pasteboardwriter%29.md).
 

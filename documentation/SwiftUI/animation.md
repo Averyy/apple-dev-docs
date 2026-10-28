@@ -26,7 +26,7 @@ struct Animation
 
 - [Unifying your app’s animations](./unifying-your-app-s-animations.md)
 
-#### Overview
+## Overview
 
 An `Animation` provides a visual transition of a view when a state value changes from one value to another. The characteristics of this transition vary according to the animation type. For instance, a [`linear`](./animation/linear.md) animation provides a mechanical feel to the animation because its speed is consistent from start to finish. In contrast, an animation that uses easing, like [`easeOut`](./animation/easeout.md), offers a more natural feel by varying the acceleration of the animation.
 

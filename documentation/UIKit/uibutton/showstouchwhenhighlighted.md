@@ -24,7 +24,7 @@ var showsTouchWhenHighlighted: Bool { get set }
 @property (nonatomic) BOOL showsTouchWhenHighlighted;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the button glows when tapped; otherwise, it does not. The image and button behavior is not changed by the glow. The default value is [`false`](../../Swift/false.md).
 

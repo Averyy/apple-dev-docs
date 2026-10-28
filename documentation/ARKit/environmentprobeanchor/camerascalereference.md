@@ -15,7 +15,7 @@ The camera scale reference of this anchor.
 var cameraScaleReference: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns the camera scale reference of a pixel with rgb value [1,1,1] in the environment texture.
 

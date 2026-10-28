@@ -19,7 +19,7 @@ init(destinationNetwork networkEndpoint: NWHostEndpoint, prefix destinationPrefi
 - (instancetype) initWithDestinationNetwork:(NWHostEndpoint *) networkEndpoint prefix:(NSUInteger) destinationPrefix protocol:(NENetworkRuleProtocol) protocol;
 ```
 
-#### Discussion
+## Discussion
 
 If the port string of `networkEndpoint` is `0` or the empty string, the rule matches traffic on any port destined for the given address or network.
 

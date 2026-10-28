@@ -16,7 +16,7 @@ get selectionAccessory(): PlaceSelectionAccessory | null;
 set selectionAccessory(value: PlaceSelectionAccessory | null);
 ```
 
-#### Discussion
+## Discussion
 
 You need to initialize an annotation with an instance of a [`place`](../annotationconstructoroptions/place.md) so that the accessory displays the correct place.
 

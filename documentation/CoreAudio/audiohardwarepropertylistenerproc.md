@@ -18,11 +18,11 @@ typealias AudioHardwarePropertyListenerProc = (AudioHardwarePropertyID, UnsafeMu
 typedef int (*)(unsigned int, void *) AudioHardwarePropertyListenerProc;
 ```
 
-#### Return Value
+## Return Value
 
 The return value is currently unused and should always be 0.
 
-#### Discussion
+## Discussion
 
 Clients register an AudioHardwarePropertyListenerProc with the AudioSystemObject in order to receive notifications when the properties of the object change.
 

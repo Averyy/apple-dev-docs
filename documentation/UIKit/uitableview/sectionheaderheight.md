@@ -27,7 +27,7 @@ var sectionHeaderHeight: CGFloat { get set }
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`automaticDimension`](./automaticdimension.md). If the delegate doesn’t implement [`tableView(_:heightForHeaderInSection:)`](../uitableviewdelegate/tableview%28_,heightforheaderinsection%29.md), the table view calculates the height automatically. To override automatic height calculation, set this property to a positive value.
 

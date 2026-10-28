@@ -24,7 +24,7 @@ var canPerformMultiplePasses: Bool { get }
 @property (nonatomic, readonly) BOOL canPerformMultiplePasses;
 ```
 
-#### Discussion
+## Discussion
 
 When the value for this property is [`true`](../../Swift/true.md), configure your source media data for random access. After appending the media data for the current pass, as specified by the [`currentPassDescription`](./currentpassdescription.md) property, call [`markCurrentPassAsFinished()`](./markcurrentpassasfinished%28%29.md) so the system can determine whether it needs to perform additional passes. The system may perform only the initial pass if it determines there’s no benefit to performing multiple passes.
 

@@ -26,7 +26,7 @@ func splitTotalEnergy(_ totalEnergy: HKQuantity, start startDate: Date, end endD
 - (void) splitTotalEnergy:(HKQuantity *) totalEnergy startDate:(NSDate *) startDate endDate:(NSDate *) endDate resultsHandler:(void (^)(HKQuantity *restingEnergy, HKQuantity *activeEnergy, NSError *error)) resultsHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method operates asynchronously. As soon as the calculation is finished, it calls the completion block on a background queue.
 

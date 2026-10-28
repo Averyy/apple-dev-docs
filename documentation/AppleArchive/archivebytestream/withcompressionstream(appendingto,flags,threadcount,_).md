@@ -21,11 +21,11 @@ Reopens a compression sequential output stream and calls the given closure.
 static func withCompressionStream<E>(appendingTo compressedStream: ArchiveByteStream, flags: ArchiveFlags = [], threadCount: Int = 0, _ body: (ArchiveByteStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 
-#### Discussion
+## Discussion
 
 This function opens a stream created by [`compressionStream(appendingTo:flags:threadCount:)`](./compressionstream%28appendingto,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 

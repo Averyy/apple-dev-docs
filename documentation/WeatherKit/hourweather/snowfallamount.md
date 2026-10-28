@@ -21,7 +21,7 @@ The amount of snowfall for the hour.
 var snowfallAmount: Measurement<UnitLength>
 ```
 
-#### Discussion
+## Discussion
 
 Snowfall amount refers to the depth of snow rather than the liquid equivalent. The system computes this value  by applying a temperature-based conversion to crystal size.
 

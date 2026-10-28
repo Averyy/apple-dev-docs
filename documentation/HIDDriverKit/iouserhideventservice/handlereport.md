@@ -16,7 +16,7 @@ Converts an incoming device report into dispatchable events.
 virtual void handleReport(uint64_t timestamp, uint8_t *report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
 ```
 
-#### Discussion
+## Discussion
 
 Implement a custom version of this method and use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 

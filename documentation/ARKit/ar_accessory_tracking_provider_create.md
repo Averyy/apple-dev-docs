@@ -15,11 +15,11 @@ Create an accessory tracking provider.
 extern ar_accessory_tracking_provider_tar_accessory_tracking_provider_create(ar_accessory_tracking_configuration_t accessory_tracking_configuration);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_accessory_tracking_provider_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

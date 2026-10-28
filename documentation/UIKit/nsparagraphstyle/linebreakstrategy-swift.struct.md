@@ -24,7 +24,7 @@ struct LineBreakStrategy
 enum NSLineBreakStrategy : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Line break strategy describes a collection of options that can affect where line breaks are placed in a paragraph. This is independent from line break mode, which describes what happens when text is too long to fit within its container. These options won’t have any effect when used with line break modes that don’t support multiple lines, like clipping or truncating middle.
 

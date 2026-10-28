@@ -24,11 +24,11 @@ func AudioUnitAddRenderNotify(_ inUnit: AudioUnit, _ inProc: AURenderCallback, _
 extern OSStatus AudioUnitAddRenderNotify(AudioUnit inUnit, AURenderCallback inProc, void *inProcUserData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The registered callback function is called both before the audio unit performs its render operations (when the render flag’s pre-render bit is set) and after the audio unit has completed its render operation (the render flag’s post-render bit is set).
 

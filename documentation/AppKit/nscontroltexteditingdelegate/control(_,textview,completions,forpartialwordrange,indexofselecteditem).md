@@ -20,11 +20,11 @@ optional func control(_ control: NSControl, textView: NSTextView, completions wo
 - (NSArray<NSString *> *) control:(NSControl *) control textView:(NSTextView *) textView completions:(NSArray<NSString *> *) words forPartialWordRange:(NSRange) charRange indexOfSelectedItem:(NSInteger *) index;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects containing the list of completions to use in place of the array in the `words` parameter. The returned array should list the completions in their preferred order
 
-#### Discussion
+## Discussion
 
 Each string you return should be a complete word that the user might be trying to type. The strings must be complete words rather than just the remainder of the word, in case completion requires some slight modification of what the user has already typed—for example, the addition of an accent, or a change in capitalization. You can also use this method to support abbreviations that complete into words that do not start with the characters of the abbreviation. The `index` argument allows you to return by reference an index specifying which of the completions should be selected initially.
 

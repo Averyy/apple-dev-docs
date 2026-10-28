@@ -25,11 +25,11 @@ func CMTimeRangeGetUnion(_ range: CMTimeRange, otherRange: CMTimeRange) -> CMTim
 extern CMTimeRange CMTimeRangeGetUnion(CMTimeRange range, CMTimeRange otherRange);
 ```
 
-#### Return Value
+## Return Value
 
 A time range with the unique time elements of the input.
 
-#### Discussion
+## Discussion
 
 The return value contains the smallest range that includes all times that are in either range.
 

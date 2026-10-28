@@ -21,7 +21,7 @@ A set of effect options that prefers to not repeat.
 - (instancetype) optionsWithNonRepeating;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the effect options that prefers to not repeat.
 

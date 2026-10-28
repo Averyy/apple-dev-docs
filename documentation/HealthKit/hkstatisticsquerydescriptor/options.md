@@ -20,7 +20,7 @@ A list of options that define the type of statistical calculations performed and
 var options: HKStatisticsOptions
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid options, see [`HKStatisticsOptions`](../hkstatisticsoptions.md).
 

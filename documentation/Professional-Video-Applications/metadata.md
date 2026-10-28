@@ -5,7 +5,7 @@
 
 Describe metadata about media that is of interest to other applications.
 
-#### Overview
+## Overview
 
 Final Cut Pro maintains various metadata item values, such as camera name, reel, copyright. Metadata typically comes from the media and may be of interest to other applications, but is not critical for Final Cut Pro to perform its tasks.
 
@@ -20,7 +20,7 @@ Use the metadata elements listed below to describe metadata about a media.
 | `array` | Contains a collection of `string` elements that define the value(s) for an array of strings. |
 | `string` | Defines one metadata value in an array of strings. |
 
-##### md Element Attributes
+### md Element Attributes
 
 | Attribute | Description |
 | --- | --- |

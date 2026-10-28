@@ -25,7 +25,7 @@ var willPlayOnce: Bool { get set }
 @property (nonatomic, readonly) BOOL willPlayOnce;
 ```
 
-#### Discussion
+## Discussion
 
 The “once” provision takes effect at the start of interstitial playback. The system doesn’t schedule playback again even if the first playback is canceled before completion.
 

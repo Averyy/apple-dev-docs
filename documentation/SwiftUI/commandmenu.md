@@ -25,7 +25,7 @@ struct CommandMenu<Content> where Content : View
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
 
-#### Overview
+## Overview
 
 Command menus are realized as menu bar menus on macOS, inserted between the built-in View and Window menus in order of declaration. On iOS, iPadOS, and tvOS, SwiftUI creates key commands for each of a menu’s commands that has a keyboard shortcut.
 

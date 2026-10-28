@@ -26,7 +26,7 @@ func roundingMode() -> NSDecimalNumber.RoundingMode
 - (NSRoundingMode) roundingMode;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current rounding mode. See [`NSDecimalNumber.RoundingMode`](../nsdecimalnumber/roundingmode.md) for possible values.
 

@@ -25,7 +25,7 @@ var pathExtension: String { get }
 @property (copy, readonly) NSString * pathExtension;
 ```
 
-#### Discussion
+## Discussion
 
 The path extension is the portion of the last path component which follows the final period, if there is one. The extension divider is not included. The following table illustrates the effect of [`pathExtension`](./pathextension.md) on a variety of different paths:
 

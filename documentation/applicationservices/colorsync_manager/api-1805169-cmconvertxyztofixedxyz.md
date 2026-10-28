@@ -15,11 +15,11 @@ CMError CMConvertXYZToFixedXYZ (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMConvertXYZToFixedXYZ` function converts one or more colors whose components are defined as XYZ colors to equivalent colors whose components are defined as Fixed XYZ colors. Fixed XYZ colors allow for 32-bit precision. The XYZ color space is device independent. 
 

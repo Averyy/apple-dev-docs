@@ -22,7 +22,7 @@ var pressAndHoldTouchBar: NSTouchBar? { get set }
 @property (strong, nullable) NSTouchBar * pressAndHoldTouchBar;
 ```
 
-#### Discussion
+## Discussion
 
 This [`NSTouchBar`](../nstouchbar.md) can be the same as the one used for the [`popoverTouchBar`](./popovertouchbar.md) property, but does not have to be.
 

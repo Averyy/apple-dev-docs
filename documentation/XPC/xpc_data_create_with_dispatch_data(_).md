@@ -25,11 +25,11 @@ func xpc_data_create_with_dispatch_data(_ ddata: dispatch_data_t) -> xpc_object_
 extern xpc_object_txpc_data_create_with_dispatch_data(dispatch_data_t ddata);
 ```
 
-#### Return Value
+## Return Value
 
 A new data object.
 
-#### Discussion
+## Discussion
 
 The object returned by this method will refer to the buffer returned by [`dispatch_data_create_map`](../Dispatch/dispatch_data_create_map.md). The point where XPC will make the call to [`dispatch_data_create_map`](../Dispatch/dispatch_data_create_map.md) is undefined.
 

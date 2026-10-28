@@ -23,7 +23,7 @@ var customMirror: Mirror { get }
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 If this type has value semantics, the mirror should be unaffected by subsequent mutations of the instance.
 

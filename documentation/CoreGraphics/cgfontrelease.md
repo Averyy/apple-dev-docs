@@ -21,7 +21,7 @@ Decrements the retain count of a font.
 extern void CGFontRelease(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `font` parameter is `NULL`.
 

@@ -16,11 +16,11 @@ Method to create SCSITasks.
 SCSITaskInterface **(*CreateSCSITask)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a handle to an instance of a SCSITaskInterface or NULL if one could not be allocated.
 
-#### Discussion
+## Discussion
 
 Once a SCSITaskDeviceInterface is opened, the client may request exclusive access to the device. Once the client has successfully gained exclusive access, it becomes the Logical Unit Driver. It then can use this method to allocate SCSITasks to be sent to the device.
 

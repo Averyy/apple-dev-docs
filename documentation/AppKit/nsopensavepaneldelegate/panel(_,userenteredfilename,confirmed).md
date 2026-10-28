@@ -20,11 +20,11 @@ optional func panel(_ sender: Any, userEnteredFilename filename: String, confirm
 - (NSString *) panel:(id) sender userEnteredFilename:(NSString *) filename confirmed:(BOOL) okFlag;
 ```
 
-#### Return Value
+## Return Value
 
 The filename selected by the user, or `nil` if you want to cancel the save operation and leave the Save panel onscreen.
 
-#### Discussion
+## Discussion
 
 The Save panel calls this method before appending any required filename extension information, and before it asks the user whether to replace an existing file, if a file with the specified name already exists in the given location.
 

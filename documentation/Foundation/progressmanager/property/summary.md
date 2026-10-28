@@ -22,7 +22,7 @@ The type used for aggregated summaries of this property.
 associatedtype Summary : Equatable, Sendable
 ```
 
-#### Discussion
+## Discussion
 
 This associated type represents the type used when summarizing property values across multiple progress managers in a subtree. The currently allowed types are `Int`, `Double`, `[String?]`, `[URL?]` or `[UInt64]`.
 

@@ -20,11 +20,11 @@ Returns a Core Graphics size structure corresponding to the data in a given stri
 extern CGSize CGSizeFromString(NSString *string);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics structure that represents a size. If the string is not well-formed, the function returns [`CGSizeZero`](../CoreGraphics/cgsizezero.md).
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`NSStringFromCGSize`](./nsstringfromcgsize.md) function.
 

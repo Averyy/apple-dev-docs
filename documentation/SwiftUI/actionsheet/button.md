@@ -22,7 +22,7 @@ A button representing an operation of an action sheet presentation.
 typealias Button = Alert.Button
 ```
 
-#### Discussion
+## Discussion
 
 The [`ActionSheet`](../actionsheet.md) button is type-aliased to the [`Alert`](../alert.md) button type, which provides default, cancel, and destructive styles.
 

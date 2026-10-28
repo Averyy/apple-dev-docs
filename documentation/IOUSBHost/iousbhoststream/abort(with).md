@@ -20,7 +20,7 @@ func abort(with option: IOUSBHostAbortOption) throws
 - (BOOL) abortWithOption:(IOUSBHostAbortOption) option error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Set the stream context as nonactive on the device with an out-of-band (class-defined) mechanism before calling this method, in accordance with USB 3.2, 8.12.1.4. The device won’t select a nonactive stream to become the current stream on the endpoint.
 

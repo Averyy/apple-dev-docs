@@ -22,7 +22,7 @@ nonisolated
 func underline(_ isActive: Bool = true, pattern: Text.LineStyle.Pattern = .solid, color: Color? = nil) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view where text has a line running along its baseline.
 

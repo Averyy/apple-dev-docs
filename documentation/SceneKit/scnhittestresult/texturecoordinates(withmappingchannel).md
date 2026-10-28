@@ -25,11 +25,11 @@ func textureCoordinates(withMappingChannel channel: Int) -> CGPoint
 - (CGPoint) textureCoordinatesWithMappingChannel:(NSInteger) channel;
 ```
 
-#### Return Value
+## Return Value
 
 The texture coordinates at the point of intersection, or [`CGPointZero`](../../CoreGraphics/cgpointzero.md) if the geometry does not have a texture coordinate source for the specified channel.
 
-#### Discussion
+## Discussion
 
 An [`SCNGeometry`](../scngeometry.md) object can contain multiple sources of texture coordinates, or texture mapping channels. (With multiple channels, you can map texture images for different material properties in different ways.) To use the texture coordinates of a hit-test result, specify which texture coordinate source to look up coordinates in.
 

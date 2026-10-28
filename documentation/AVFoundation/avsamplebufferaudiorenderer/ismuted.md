@@ -25,7 +25,7 @@ var isMuted: Bool { get set }
 @property (nonatomic, getter=isMuted) BOOL muted;
 ```
 
-#### Discussion
+## Discussion
 
 This property only affects muting the renderer instance and not the device.
 

@@ -22,7 +22,7 @@ struct Observation
 
 - [Track custom objects in a frame](../track-custom-objects-in-a-frame.md)
 
-#### Overview
+## Overview
 
 This object represents an observation about a single video frame, including information about the type of subject, the coordinates of the subject, and the angle of the subject’s face. DockKit generates tracking vectors from this frame information. When performing your own tracking, you provide one or more [`DockAccessory.Observation`](./observation.md) objects to [`track(_:cameraInformation:)`](./track%28_,camerainformation%29-44mwn.md).
 

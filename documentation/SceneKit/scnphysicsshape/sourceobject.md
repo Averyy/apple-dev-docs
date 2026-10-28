@@ -25,7 +25,7 @@ var sourceObject: Any { get }
 @property (nonatomic, readonly) id sourceObject;
 ```
 
-#### Discussion
+## Discussion
 
 This property, along with the [`transforms`](./transforms.md) and [`options`](./options.md) properties, provides the information that was used to create the shape. You can use this information, for example, to draw editing or debugging UI in your scene.
 

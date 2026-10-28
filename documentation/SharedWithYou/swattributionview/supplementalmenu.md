@@ -40,7 +40,7 @@ var supplementalMenu: NSMenuItem? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSMenuItem * supplementalMenu;
 ```
 
-#### Discussion
+## Discussion
 
 Use `supplementalMenu` when there are additional actions a user can take on content represented by this view’s [`SWHighlight`](../swhighlight.md). A `nil` value informs the system to not add a supplemental menu.
 

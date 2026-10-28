@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Build sources into binary products.
 
-#### Overview
+## Overview
 
 ```
 build [--package-path=<package-path>]
@@ -311,7 +311,7 @@ SEE ALSO: [swift run](./swiftrun.md), [swift package](./swiftpackagecommands.md)
 
 *Show help information.*
 
-#### build.help
+## build.help
 
 Show subcommand help information.
 

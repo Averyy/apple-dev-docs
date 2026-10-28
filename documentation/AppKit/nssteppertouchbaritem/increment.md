@@ -22,7 +22,7 @@ var increment: Double { get set }
 @property double increment;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

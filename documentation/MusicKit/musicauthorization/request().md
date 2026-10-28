@@ -21,7 +21,7 @@ Asks the user for permission for the current app to access MusicKit.
 static func request() async -> MusicAuthorization.Status
 ```
 
-#### Discussion
+## Discussion
 
 Before using any other MusicKit API in your app, make sure the user grants your app access to their Apple Music data, You can do this either by comparing [`currentStatus`](./currentstatus.md) to [`MusicAuthorization.Status.authorized`](./status/authorized.md), or by simply calling [`request()`](./request%28%29.md) regardless of the current authorization status value. Calling [`request()`](./request%28%29.md) results in presenting a standard user consent dialog to the user when necessary.
 

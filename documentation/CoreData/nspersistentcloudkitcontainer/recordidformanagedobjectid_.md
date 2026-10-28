@@ -25,7 +25,7 @@ Returns the CloudKit record ID for the specified managed object ID.
 
 - [Reading CloudKit Records for Core Data](../reading-cloudkit-records-for-core-data.md)
 
-#### Return Value
+## Return Value
 
 An instance of [`CKRecord.ID`](../../CloudKit/ckrecord/id.md) if the managed object has an underlying CloudKit record; otherwise, `nil`.
 

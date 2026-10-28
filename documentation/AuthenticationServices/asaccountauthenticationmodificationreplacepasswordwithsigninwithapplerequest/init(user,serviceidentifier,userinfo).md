@@ -22,11 +22,11 @@ init(user: String, serviceIdentifier: ASCredentialServiceIdentifier, userInfo: [
 - (instancetype) initWithUser:(NSString *) user serviceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier userInfo:(NSDictionary *) userInfo;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized request object with details about the account to upgrade to Sign in with Apple.
 
-#### Discussion
+## Discussion
 
 If your extension needs information to authenticate with your server, such as an authentication token, set it in the `userInfo` dictionary before calling this method.
 

@@ -23,11 +23,11 @@ func shouldRequireFailure(of otherGestureRecognizer: UIGestureRecognizer) -> Boo
 - (BOOL) shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *) otherGestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to set up the failure requirement; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Overriding this method allows a subclass to define a class-wide failure requirement.
 

@@ -20,7 +20,7 @@ The system’s recommended exposure bias range for this device format.
 var systemRecommendedExposureBiasRange: ClosedRange<Float>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to create a slider in your app’s user interface that controls a device’s exposure bias within a system-recommended range. When a recommendation isn’t available, this property returns `nil`.
 

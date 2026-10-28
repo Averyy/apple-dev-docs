@@ -22,7 +22,7 @@ var pixelEncoding: CFString? { get }
 extern CFStringRefCGDisplayModeCopyPixelEncoding(CGDisplayModeRef mode);
 ```
 
-#### Discussion
+## Discussion
 
 The returned string can be used to determine various aspects of the pixel encoding, such as bits per pixel and bits per sample. For more information, see the header file IOKit/IOGraphicsTypes.h in [IOKit](../../iokit/iokit.md).
 

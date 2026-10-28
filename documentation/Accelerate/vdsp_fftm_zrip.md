@@ -25,7 +25,7 @@ extern void vDSP_fftm_zrip(FFTSetup __Setup, const DSPSplitComplex *__C, vDSP_St
 
 - [Performing Fourier Transforms on Multiple Signals](./performing-fourier-transforms-on-multiple-signals.md)
 
-#### Discussion
+## Discussion
 
 The function performs discrete Fourier transforms on multiple signals using a single call. They will work for input signals of 4 points or greater. Each of the input signals processed by a given call must have the same length and address stride.
 

@@ -24,7 +24,7 @@ var anisotropic: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * anisotropic;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero—specular highlights appear the same from any angle.
 

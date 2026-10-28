@@ -22,7 +22,7 @@ func mediaGroup(forIdentifier mediaGroupIdentifier: String) -> MLMediaGroup?
 - (MLMediaGroup *) mediaGroupForIdentifier:(NSString *) mediaGroupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The media source must have finished loading before this method returns valid data. Specifically, the root media group must be available before the lookup methods will succeed. Otherwise, the return value is undefined.
 

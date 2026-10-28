@@ -22,7 +22,7 @@ func reloadComponent(_ component: Int)
 - (void) reloadComponent:(NSInteger) component;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method causes the picker view to query the delegate for new data for the given component.
 

@@ -17,7 +17,7 @@ Loads filters from an image unit that have the appropriate executable status.
 + (void) loadPlugIn:(NSURL *) url allowNonExecutable:(BOOL) allowNonExecutable;
 ```
 
-#### Discussion
+## Discussion
 
 You need to call this method only once to load a specific image unit. The behavior of this method is not defined for multiple calls for the same image unit.
 

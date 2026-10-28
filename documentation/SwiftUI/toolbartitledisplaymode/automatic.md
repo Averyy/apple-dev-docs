@@ -21,7 +21,7 @@ The automatic mode.
 static var automatic: ToolbarTitleDisplayMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 For root content in a navigation stack in iOS, iPadOS, or tvOS this behavior will:
 

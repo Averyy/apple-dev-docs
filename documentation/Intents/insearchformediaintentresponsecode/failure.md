@@ -24,7 +24,7 @@ case failure
 INSearchForMediaIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that prevent your app from searching for the media.
 

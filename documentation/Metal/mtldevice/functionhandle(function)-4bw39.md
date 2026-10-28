@@ -25,11 +25,11 @@ func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?
 - (id<MTLFunctionHandle>) functionHandleWithFunction:(id<MTLFunction>) function;
 ```
 
-#### Return Value
+## Return Value
 
 A function handle if the method succeeds, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 - [`compileToBinary`](../mtlfunctionoptions/compiletobinary.md)
 - [`pipelineIndependent`](../mtlfunctionoptions/pipelineindependent.md)

@@ -12,11 +12,11 @@ UInt8 GetLogicalUnitNumber (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 A valid single-byte LUN value.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the logical unit number associated with the specified request. NOTE: This method is deprecated in favor of GetLogicalUnitBytes().
 

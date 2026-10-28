@@ -23,7 +23,7 @@ optional func fallDetectionManager(_ fallDetectionManager: CMFallDetectionManage
 - (void) fallDetectionManager:(CMFallDetectionManager *) fallDetectionManager didDetectEvent:(CMFallDetectionEvent *) event completionHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If the user authorized fall detection, the system wakes or launches your app when a fall detection event occurs. Your app receives a short amount of time to run in the background. You must process the event and call the completion handler before the time expires, or the system suspends your app.
 

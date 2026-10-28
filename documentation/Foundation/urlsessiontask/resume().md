@@ -35,7 +35,7 @@ func resume()
 - [Pausing and resuming uploads](../pausing-and-resuming-uploads.md)
 - [Uploading data to a website](../uploading-data-to-a-website.md)
 
-#### Discussion
+## Discussion
 
 Newly-initialized tasks begin in a suspended state, so you need to call this method to start the task.
 

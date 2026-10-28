@@ -20,11 +20,11 @@ Returns a new movie object from a movie file’s data.
 + (instancetype) movieWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A movie object.
 
-#### Discussion
+## Discussion
 
 Use this method to create movies from movie headers that aren’t stored in files, which can include movies that the pasteboard contains.
 

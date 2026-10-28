@@ -13,11 +13,11 @@
 errno_t ifnet_interface_family_find(const char *module_string, ifnet_family_t *family_id);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, otherwise errno error.
 
-#### Discussion
+## Discussion
 
 Look up the interface family identifier for a string. If there is no interface family identifier assigned for this string a new interface family identifier is created and assigned. It is recommended to use the bundle id of the KEXT as the string to avoid collisions with other KEXTs. The lookup operation is not optimized so a module should call this function once during startup and cache the interface family identifier. The interface family identifier for a string will not be re-assigned until the system reboots.
 

@@ -9,13 +9,13 @@ Fetch a single ad creative by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single ad creative by its unique identifier. The response includes the full ad creative object, including type, spec, destination, current review state, and eligibility details.
 
 The `systemStatus` field conveys the ad creative’s current operational state, reflecting the internal review outcome. To determine whether the ad creative is eligible to serve, check `systemStatus` (`VALID`, `INVALID`, `PENDING`) together with the `eligibility.status` field.
 
-##### Understand System Status and Ad Delivery
+### Understand System Status and Ad Delivery
 
 While `systemStatus` is `PENDING`, any ads associated with this ad creative will also have `systemStatus: NOT_RUNNING` and won’t deliver impressions. Once the ad creative reaches `VALID`, associated ads resume normal delivery, provided the ad group and campaign are also active.
 
@@ -28,11 +28,11 @@ A couple of edge cases are worth calling out when fetching an ad creative by ID.
 | Deleted ad creatives | Fetching a deleted ad creative by ID returns a 404. Use the query endpoint with `"deleted": true` to retrieve deleted records. |
 | Eligibility details | The system populates the `eligibility` object after review completes. It is empty or `null` while `systemStatus` is `PENDING`. |
 
-#### Payload Examples
+## Payload Examples
 
 **Product Page Creative**:
 
-##### Request
+### Request
 
 Retrieves a custom product page ad creative. The response includes the full ad creative object with its current review state and eligibility details.
 
@@ -40,7 +40,7 @@ Retrieves a custom product page ad creative. The response includes the full ad c
 GET /v1/creatives/666777888
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -79,7 +79,7 @@ GET /v1/creatives/666777888
 
 **Apple Maps Creative**:
 
-##### Request
+### Request
 
 Retrieves an Apple Maps ad creative. The response includes the ad creative spec with localized text and brand configuration.
 
@@ -87,7 +87,7 @@ Retrieves an Apple Maps ad creative. The response includes the ad creative spec 
 GET /v1/creatives/666777889
 ```
 
-##### Response
+### Response
 
 ```json
 {

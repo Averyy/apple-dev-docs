@@ -20,7 +20,7 @@ A policy that defines when a referenced entity loads.
 var loadingPolicy: ReferenceComponent.LoadingPolicy { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default loading policy is [`ReferenceComponent.LoadingPolicy.onDemand`](./loadingpolicy-swift.enum/ondemand.md).
 

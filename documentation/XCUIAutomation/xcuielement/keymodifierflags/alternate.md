@@ -26,7 +26,7 @@ static var alternate: XCUIElement.KeyModifierFlags { get }
 XCUIKeyModifierAlternate
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Use [`option`](./option.md) instead.
 

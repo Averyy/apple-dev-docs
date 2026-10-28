@@ -13,11 +13,11 @@ void CriticalOrbSubmission (
  SCSITaskIdentifier request );
 ```
 
-#### Return Value
+## Return Value
 
 none.
 
-#### Overview
+## Overview
 
 xxx.
 

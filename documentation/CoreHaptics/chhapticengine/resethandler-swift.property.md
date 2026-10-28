@@ -24,7 +24,7 @@ var resetHandler: CHHapticEngine.ResetHandler { get set }
 @property (atomic, readwrite) CHHapticEngineResetHandler resetHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the handler has to reset itself after a server failure, the system calls this block asynchronously. In this block, release all haptic pattern players and recreate them. The system preserves [`CHHapticPattern`](../chhapticpattern.md) objects and [`CHHapticEngine`](../chhapticengine.md) properties across restarts. Consider trying to restart the engine inside the reset block.
 

@@ -19,7 +19,7 @@ func xpc_transaction_end()
 extern void xpc_transaction_end();
 ```
 
-#### Discussion
+## Discussion
 
 As described in [`xpc_transaction_begin()`](./xpc_transaction_begin%28%29.md), this API may be used interchangeably with `vproc_transaction_end()`.
 

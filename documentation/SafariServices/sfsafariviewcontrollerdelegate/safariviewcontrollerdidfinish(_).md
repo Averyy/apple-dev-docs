@@ -21,7 +21,7 @@ optional func safariViewControllerDidFinish(_ controller: SFSafariViewController
 - (void) safariViewControllerDidFinish:(SFSafariViewController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 You can perform any necessary cleanup here. The view controller is dismissed afterwards.
 

@@ -25,7 +25,7 @@ func generateMipmaps(texture: any MTLTexture)
 - (void) generateMipmapsForTexture:(id<MTLTexture>) texture;
 ```
 
-#### Discussion
+## Discussion
 
 This method generates mipmaps for a mipmapped texture. The texture you provide needs to have a [`mipmapLevelCount`](../mtltexture/mipmaplevelcount.md) greater than `1`, and a color-renderable or color-filterable [`pixelFormat`](../mtltexture/pixelformat.md).
 

@@ -5,7 +5,7 @@
 
 Specifies a local identifier to use within the FCPXML document.
 
-#### Overview
+## Overview
 
 Each resource has an `id` attribute that specifies a local identifier to use within the FCPXML document.
 

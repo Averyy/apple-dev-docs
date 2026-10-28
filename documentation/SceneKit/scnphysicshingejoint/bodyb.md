@@ -25,7 +25,7 @@ var bodyB: SCNPhysicsBody? { get }
 @property (nonatomic, readonly, nullable) SCNPhysicsBody * bodyB;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is `nil` if the joint was created using the [`init(body:axis:anchor:)`](./init%28body,axis,anchor%29.md) method.
 

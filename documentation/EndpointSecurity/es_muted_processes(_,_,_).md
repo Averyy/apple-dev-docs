@@ -21,11 +21,11 @@ func es_muted_processes(_ client: OpaquePointer, _ count: UnsafeMutablePointer<I
 extern es_return_t es_muted_processes(es_client_t *client, size_t *count, audit_token_t **audit_tokens);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the request succeeded or failed with an error.
 
-#### Discussion
+## Discussion
 
 The caller handles freeing the memory pointed to by `audit_token`.
 

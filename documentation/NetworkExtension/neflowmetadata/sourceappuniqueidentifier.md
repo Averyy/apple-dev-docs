@@ -23,7 +23,7 @@ var sourceAppUniqueIdentifier: Data { get }
 @property (readonly) NSData * sourceAppUniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The property contains the Code Directory Hash for the application.
 

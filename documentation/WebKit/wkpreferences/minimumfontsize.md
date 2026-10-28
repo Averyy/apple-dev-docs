@@ -23,7 +23,7 @@ var minimumFontSize: CGFloat { get set }
 @property (nonatomic) CGFloat minimumFontSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`.
 

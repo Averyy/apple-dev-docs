@@ -5,7 +5,7 @@
 
 Guide learners toward a solution by hiding some symbols and showing others.
 
-#### Overview
+## Overview
 
 You can customize the code completions shown in the shortcut bar by hiding and showing different symbols or sets of symbols. You can change the completions shown while editing any part of the playground page.
 
@@ -13,7 +13,7 @@ The following image shows customized code completion in the Learn to Code 1 play
 
 ![Screenshot showing a playground page. The shortcut bar is highlighted; it only shows 4 available completions because other candidates have been hidden.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/customizing-the-completions-in-the-shortcut-bar-1@2x.png)
 
-##### Add Code Completion Comments
+### Add Code Completion Comments
 
 Specify the completions you want to show or hide by using the `code-completion` delimiter on a line by itself without any preceding whitespace.
 
@@ -23,7 +23,7 @@ Use this delimiter to add or remove a symbol or group of symbols from the list o
 
 You can include many `code-completion` delimiters on a playground page. The list of possible completions that a learner sees in the shortcut bar consists of all of the symbols visible at the current insertion point. The `code-completion` delimiters after the current insertion point don’t take effect until the insertion point is moved to a line below those delimeters in the source editor.
 
-##### Select the Symbol Namespace
+### Select the Symbol Namespace
 
 Use the *namespace* argument of the `code-completion` delimiter to select the scope of the symbols that you’re showing or hiding. You can use any of the following values to select the symbol namespace:
 

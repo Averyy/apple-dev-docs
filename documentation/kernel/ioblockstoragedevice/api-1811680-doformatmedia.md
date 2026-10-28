@@ -12,7 +12,7 @@ virtual IOReturn doFormatMedia(
  UInt64byteCapacity) = 0;
 ```
 
-#### Overview
+## Overview
 
 The specified byte capacity must be one supported by the device. Supported capacities can be obtained by calling doGetFormatCapacities.
 

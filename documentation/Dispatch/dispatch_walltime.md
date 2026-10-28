@@ -21,11 +21,11 @@ Creates a `dispatch_time_t` using an absolute time according to the wall clock.
 extern dispatch_time_t dispatch_walltime(const struct timespec *when, int64_t delta);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`dispatch_time_t`](./dispatch_time_t.md).
 
-#### Discussion
+## Discussion
 
 The wall clock is based on `gettimeofday(_:_:)`.
 

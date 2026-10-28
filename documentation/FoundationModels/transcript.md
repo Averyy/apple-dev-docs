@@ -26,7 +26,7 @@ struct Transcript
 - [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
 - [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
 
-#### Overview
+## Overview
 
 Use a `Transcript` to visualize previous instructions, prompts and model responses. If you use tool calling, a `Transcript` includes a history of tool calls and their results.
 

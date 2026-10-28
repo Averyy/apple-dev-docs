@@ -20,11 +20,11 @@ init(aeDescNoCopy aeDesc: UnsafePointer<AEDesc>)
 - (instancetype) initWithAEDescNoCopy:(const AEDesc *) aeDesc;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSAppleEventDescriptor` that is associated with the structure pointed to by `aeDesc`, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 The initialized object takes responsibility for calling the `AEDisposeDesc` function on the `AEDesc` at object deallocation time. This is the designated initializer for this class.
 

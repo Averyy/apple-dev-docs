@@ -25,7 +25,7 @@ init(configuration: URLSessionConfiguration)
 + (NSURLSession *) sessionWithConfiguration:(NSURLSessionConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling [`init(configuration:delegate:delegateQueue:)`](./init%28configuration,delegate,delegatequeue%29.md) with a `nil` delegate and queue.
 

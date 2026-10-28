@@ -23,7 +23,7 @@ protocol INSearchForAccountsIntentHandling : NSObjectProtocol
 @protocol INSearchForAccountsIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSearchForAccountsIntentHandling`](./insearchforaccountsintenthandling.md) protocol to resolve, confirm, and handle requests to search for the user’s account information. Adopt this protocol in an object of your Intents extension that is capable of searching for accounts and returning account details such as the current balance.
 

@@ -16,7 +16,7 @@
 kSCSITaskStatus_INTERMEDIATE_CONDITION_MET
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of INTERMEDIATE_CONDITION_MET.
 

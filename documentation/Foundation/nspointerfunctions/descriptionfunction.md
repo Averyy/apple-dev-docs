@@ -25,7 +25,7 @@ var descriptionFunction: ((UnsafeRawPointer) -> String?)? { get set }
 @property (nullable) NSString *(*)(const void *) descriptionFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This function is used by description methods for hash and map tables.
 

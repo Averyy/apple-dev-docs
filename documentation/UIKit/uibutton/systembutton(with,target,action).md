@@ -23,7 +23,7 @@ class func systemButton(with image: UIImage, target: Any?, action: Selector?) ->
 + (instancetype) systemButtonWithImage:(UIImage *) image target:(id) target action:(SEL) action;
 ```
 
-#### Discussion
+## Discussion
 
 This method is a convenience constructor for creating a `UIButtonTypeSystem` type button objects with a specific target and action.
 

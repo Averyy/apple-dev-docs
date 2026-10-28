@@ -19,7 +19,7 @@ Opens the Settings app to the screen in game controller settings where the user 
 func openControllerHomeButtonSettings(for activity: GCControllerHomeButtonSettingsManager.SettingsCustomizationActivity) throws
 ```
 
-#### Discussion
+## Discussion
 
 This function returns immediately after attempting to open the Settings app.
 

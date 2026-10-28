@@ -25,7 +25,7 @@ static let invalid: CMTime
 extern const CMTime kCMTimeInvalid;
 ```
 
-#### Discussion
+## Discussion
 
 An invalid time has all of its fields set to `0`.
 

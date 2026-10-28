@@ -24,7 +24,7 @@ protocol UIDataSourceTranslating : NSObjectProtocol
 @protocol UIDataSourceTranslating <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of this protocol to map between the positions of items and sections in your data source object and the positions of those same items and sections in your presented layout. Objects that adopt this protocol do so because the position of items in their data source object don’t always match the corresponding positions in their presented layout.
 

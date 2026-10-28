@@ -25,7 +25,7 @@ class var defaultMaxConcurrentOperationCount: Int { get }
 static const NSInteger NSOperationQueueDefaultMaxConcurrentOperationCount;
 ```
 
-#### Discussion
+## Discussion
 
 The operation queue determines this number dynamically based on current system conditions.
 

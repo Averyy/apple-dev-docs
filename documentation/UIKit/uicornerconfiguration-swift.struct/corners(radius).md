@@ -19,7 +19,7 @@ A configuration that applies the given radius independently to all corners.
 static func corners(radius: UICornerRadius) -> UICornerConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 Use a container concentric radius to allow each individual corner to resolve to different radii.
 

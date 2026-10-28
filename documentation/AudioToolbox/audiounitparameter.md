@@ -24,7 +24,7 @@ struct AudioUnitParameter
 struct AudioUnitParameter;
 ```
 
-#### Overview
+## Overview
 
 This data structure is used by functions declared in the `AudioToolbox/AudioUnitUtilities.h` header file in macOS.
 

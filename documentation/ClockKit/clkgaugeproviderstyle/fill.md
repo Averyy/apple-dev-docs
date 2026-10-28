@@ -21,7 +21,7 @@ case fill
 CLKGaugeProviderStyleFill
 ```
 
-#### Discussion
+## Discussion
 
 The system draws a gauge with the color bar filled in up to the selected value. The rest of the gauge is shown as empty.
 

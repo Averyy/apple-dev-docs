@@ -15,13 +15,13 @@ The response object for a negative keyword operation.
 object NegativeKeywordResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `NegativeKeywordResponse` object is the single-item response envelope returned by create and update negative keyword operations.
 
 This wrapper follows the same pattern as other single-object response types in the API. Inspect `error` to detect failures before accessing `result`.
 
-##### Example
+### Example
 
 ```json
 {

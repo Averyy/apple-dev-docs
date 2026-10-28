@@ -25,7 +25,7 @@ func addBarrierBlock(_ barrier: @escaping @Sendable () -> Void)
 - (void) addBarrierBlock:(void (^)()) barrier;
 ```
 
-#### Discussion
+## Discussion
 
 This method is similar to [`dispatch_barrier_async`](../../Dispatch/dispatch_barrier_async.md).
 

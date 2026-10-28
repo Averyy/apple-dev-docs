@@ -25,7 +25,7 @@ var label: String { get }
 @property (nonatomic, readonly) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Metal assigns the value of the property to the encoder’s [`label`](../mtlcommandencoder/label.md) property.
 

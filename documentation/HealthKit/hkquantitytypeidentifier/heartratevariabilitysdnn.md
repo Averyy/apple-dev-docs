@@ -24,7 +24,7 @@ static let heartRateVariabilitySDNN: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeartRateVariabilitySDNN;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use time units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

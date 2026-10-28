@@ -25,7 +25,7 @@ func setPipelineState(_ pipelineState: any MTL4MachineLearningPipelineState)
 - (void) setPipelineState:(id<MTL4MachineLearningPipelineState>) pipelineState;
 ```
 
-#### Discussion
+## Discussion
 
 The pipeline state instance affects all subsequent Machine Learning commands.
 

@@ -21,7 +21,7 @@ Total size, in bytes
 var size: Int64 { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The semantics of this property are tied to the underlying C `st_size` field, which can have file-system–dependent behavior. For example, this property can return different values for a file’s data fork and resource fork, and some file systems report logical size rather than actual disk usage for compressed or cloned files.
 

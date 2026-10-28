@@ -29,7 +29,7 @@ var contentEditingOutput: PHContentEditingOutput? { get set }
 - [Editing Asset Content](../../PhotoKit/editing-asset-content.md)
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Discussion
+## Discussion
 
 To edit an asset’s image or video content, you must first begin a content editing session with the asset’s [`requestContentEditingInput(with:completionHandler:)`](../phasset/requestcontenteditinginput%28with,completionhandler%29.md) method. You commit a content edit by setting the [`contentEditingOutput`](./contenteditingoutput.md) property of a change request within a change block. For more information about asset content editing, see [`PHAsset`](../phasset.md).
 

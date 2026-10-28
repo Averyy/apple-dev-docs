@@ -32,7 +32,7 @@ var playerID: String? { get }
 @property (atomic, retain, readonly, nullable) NSString * playerID;
 ```
 
-#### Discussion
+## Discussion
 
 When you initialize a new score object, the [`playerID`](./playerid.md) property is set to the identifier for the local player. If the score object was returned to your game by loading scores from Game Center, the [`playerID`](./playerid.md) property identifies the player who recorded that score.
 

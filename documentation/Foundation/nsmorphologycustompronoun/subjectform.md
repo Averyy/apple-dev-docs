@@ -21,7 +21,7 @@ The subject pronoun form to apply when using this custom pronoun behavior.
 @property (nonatomic, copy, nullable) NSString * subjectForm;
 ```
 
-#### Discussion
+## Discussion
 
 In the English phrase “she reads,” the pronoun “she” exhibits the subject form.
 

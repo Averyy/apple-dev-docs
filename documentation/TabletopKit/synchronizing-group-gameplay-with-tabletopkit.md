@@ -10,13 +10,13 @@ Maintain game state across multiple players in a race to capture all the coins.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to overcome the difficult task of maintaining a multiplayer game’s state in real time. TabletopKit supports automatic game-state synchronization by keeping gameplay items, such as player tokens, dice, coins, and scenery updates — all with positions and actions — in sync during a multiplayer game. TabletopKit also supports many more gameplay styles than the traditional board game layout.
 
 [Video: A video of a game where the player moves their character across the game stage to collect coins and avoid water. The player moves the character by pulling back in a slingshot motion while the character collects a coin.](https://developer.apple.com/tutorials/videos/com.apple.tabletopkit/tabletopkit-mini-game-01@2x.mp4)
 
-#### Set up the app
+## Set up the app
 
 The TabletopKit app object creates an instance of the `Game` class, which sets up, observes, and renders the [`TabletopGame`](./tabletopgame.md) state. `Game` equipment, objects that implement the [`Equipment`](./equipment.md) protocol, represents all interactive portions of a game. The `Game` class also handles game start and reset, initiating programmatic interactions, and adding equipment reset actions. The `GameSetup` class initializes and positions all game equipment.
 
@@ -98,7 +98,7 @@ class GroupActivityManager: Observable {
 }
 ```
 
-#### Define gameplay
+## Define gameplay
 
 The game begins when the player taps the Start Game button in the toolbar. This sets the `Game.gameStarted` state to `true` and initiates `Log` entity interactions. Objects that implement the [`TabletopInteraction.Delegate`](./tabletopinteraction/delegate.md) protocol handle all gameplay event updates.
 

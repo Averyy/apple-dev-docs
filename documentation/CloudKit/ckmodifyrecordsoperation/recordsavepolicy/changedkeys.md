@@ -25,7 +25,7 @@ case changedKeys
 CKRecordSaveChangedKeys
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: This policy doesn’t compare record change tags. To only save changes to the most recent version of a record, use [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](./ifserverrecordunchanged.md) instead.
 

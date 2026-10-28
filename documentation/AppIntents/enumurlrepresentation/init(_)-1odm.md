@@ -21,7 +21,7 @@ Creates a URL representation for an app enum using the provided dictionary.
 init(_ urlRepresentations: [Enum : EnumURLRepresentation<Enum>.EnumSingleURLRepresentation])
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when the URLs for each case differ significantly.
 

@@ -18,7 +18,7 @@ A color gamut conversion applied during resolve.
 struct ColorMatch
 ```
 
-#### Overview
+## Overview
 
 The `colorGamutConversion` matrix transforms from the renderer’s working color space to the output display’s color space. Use `LowLevelRenderer.ColorMatch.init(workingColorSpace:targetColorSpace:)` to compute the correct matrix from a `CGColorSpace` pair, rather than constructing it manually.
 

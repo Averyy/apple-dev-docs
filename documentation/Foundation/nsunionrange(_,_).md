@@ -25,7 +25,7 @@ func NSUnionRange(_ range1: NSRange, _ range2: NSRange) -> NSRange
 extern NSRange NSUnionRange(NSRange range1, NSRange range2);
 ```
 
-#### Return Value
+## Return Value
 
 A range covering all indices in and between `range1` and `range2`. If one range is completely contained in the other, the returned range is equal to the larger range.
 

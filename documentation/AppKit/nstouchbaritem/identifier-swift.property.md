@@ -22,7 +22,7 @@ var identifier: NSTouchBarItem.Identifier { get }
 @property (copy, readonly) NSTouchBarItemIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This read-only property returns the value the item was initialized with.
 

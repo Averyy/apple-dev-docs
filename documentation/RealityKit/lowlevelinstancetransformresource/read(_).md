@@ -18,7 +18,7 @@ Reads the current transform data synchronously on the CPU.
 final func read<R, E>(_ body: (consuming Span<float4x4>) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 You pass a closure that receives a read-only span representing the transform data. This span is valid only for the duration of the closure.
 

@@ -23,7 +23,7 @@ func log(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Tensor<T>
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function calculates `log(self+epsilon)`.
 

@@ -21,7 +21,7 @@ A set of values of any comparable type, represented by ranges.
 struct RangeSet<Bound> where Bound : Comparable
 ```
 
-#### Overview
+## Overview
 
 You can use a range set to efficiently represent a set of `Comparable` values that spans any number of discontiguous ranges. Range sets are commonly used to represent multiple subranges of a collection, by storing ranges of a collection’s index type.
 

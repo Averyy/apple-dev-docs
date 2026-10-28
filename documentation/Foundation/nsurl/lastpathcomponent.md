@@ -25,7 +25,7 @@ var lastPathComponent: String? { get }
 @property (copy, readonly, nullable) NSString * lastPathComponent;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the last path component, unescaped using the [`replacingPercentEscapes(using:)`](../nsstring/replacingpercentescapes%28using%29.md) method.  For example, in the URL `file:///path/to/file`, the last path component is `file`.
 

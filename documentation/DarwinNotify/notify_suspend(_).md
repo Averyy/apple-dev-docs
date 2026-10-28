@@ -23,11 +23,11 @@ func notify_suspend(_ token: Int32) -> UInt32
 extern uint32_t notify_suspend(int token);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Suspend delivery of notifications for a token. Notifications for this token will be pended and coalesced, then delivered following a matching call to notify_resume. Calls to notify_suspend may be nested. Notifications remain suspended until an equal number of calls have been made to notify_resume.
 

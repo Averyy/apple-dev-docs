@@ -5,7 +5,7 @@
 
 Learn how to migrate your Multipeer Connectivity app to Network framework.
 
-#### Overview
+## Overview
 
 Xcode 27 deprecates the entire Multipeer Connectivity framework.  If you have an app that uses Multipeer Connectivity, plan to migrate your code to [Network](../Network/Network.md) framework.  Follow this step-by-step guide:
 
@@ -34,7 +34,7 @@ This technote uses the Network framework API introduced in iOS 26 and aligned re
 
 Many of the techniques described by this technote are covered by sample code, including [Building peer-to-peer apps](../WiFiAware/building-peer-to-peer-apps.md), [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md), [Building a custom peer-to-peer protocol](../Network/building-a-custom-peer-to-peer-protocol.md), and [Configuring a Wi-Fi accessory to join a network](../NetworkExtension/configuring-a-wi-fi-accessory-to-join-a-network.md).
 
-#### Plan for security
+## Plan for security
 
 To start, think about security.  Multipeer Connectivity offers three security models, expressed as [`MCEncryptionPreference`](../MultipeerConnectivity/mcencryptionpreference.md) choices:
 
@@ -130,7 +130,7 @@ Given that TLS is a fundamental part of QUIC, it doesn’t support the equivalen
 
 Adding meaningful security to your app means coming up with a plan for managing digital identities.  The details of that are up to you, but many approaches require you to locally create a new digital identity.  Apple platforms have no API to do that; you’ll need to write or acquire your own library for it.  One such library is the [swift-certificates](https://github.com/apple/swift-certificates) package.
 
-#### Select a network architecture
+## Select a network architecture
 
 Multipeer Connectivity uses a fully connected network architecture.  All peers are equal, and every peer is effectively connected to every other peer.  Many apps work better with the client-server architecture, where one peer acts on the server and all the others are clients.  Network framework supports both architectures.
 
@@ -151,7 +151,7 @@ This is likely to generate a lot of redundant connections, as peer A connects to
 
 The client-server architecture is more familiar and easier to implement.  If you previously struggled with the fully connected network architecture, use this opportunity to switch to client-server.
 
-#### Create a peer identifier
+## Create a peer identifier
 
 Multipeer Connectivity uses [`MCPeerID`](../MultipeerConnectivity/mcpeerid.md) to uniquely identify each peer.  There’s nothing particularly special about `MCPeerID`; it’s effectively a wrapper around a large random number.
 
@@ -185,7 +185,7 @@ func isBetter(local: UUID, remote: UUID) -> Bool {
 }
 ```
 
-#### Choose a protocol to match your send mode
+## Choose a protocol to match your send mode
 
 Multipeer Connectivity offers two send modes, expressed as [`MCSessionSendDataMode`](../MultipeerConnectivity/mcsessionsenddatamode.md) choices:
 
@@ -212,7 +212,7 @@ If you need best-effort datagrams, get started with a reliable stream and use th
 
 > ❗ **Important**: For step 3, get peer B’s IP address from the [`currentPath`](../Network/networkconnection/currentpath.md) property of the reliable WebSocket connection.
 
-#### Discover peers
+## Discover peers
 
 Multipeer Connectivity has a type for advertising a peer’s session ([`MCAdvertiserAssistant`](../MultipeerConnectivity/mcadvertiserassistant.md)) and a type for browsing for peers ([`MCNearbyServiceBrowser`](../MultipeerConnectivity/mcnearbyservicebrowser.md)).
 
@@ -282,13 +282,13 @@ In this example `isThisTheDroidWereLookingFor(_:)` is a filter function you writ
 
 The end result of both of these processes is an endpoint that the client connects to with `NetworkConnection`.
 
-##### About service types
+### About service types
 
 The examples in this technote use `_example._udp` for the service type.  The first part, `_example`, is directly analogous to the `serviceType` value you supply when creating `MCAdvertiserAssistant` and `MCNearbyServiceBrowser` objects.  The second part is either `_tcp` or `_udp` depending on the underlying transport protocol.  For TCP and WebSocket, use `_tcp`.  For UDP and QUIC, use `_udp` (QUIC is implemented on top of UDP).
 
 Service types are described in [RFC 6335](https://tools.ietf.org/html/rfc6335).  If you deploy an app that uses a new service type, register that service type with the [Internet Assigned Numbers Authority](https://www.iana.org) (IANA).
 
-##### Discovery UI
+### Discovery UI
 
 Multipeer Connectivity also has UI components for advertising ([`MCNearbyServiceAdvertiser`](../MultipeerConnectivity/mcnearbyserviceadvertiser.md)) and browsing ([`MCBrowserViewController`](../MultipeerConnectivity/mcbrowserviewcontroller.md)).  There’s no direct equivalent to these in Network framework, but there are other options:
 
@@ -296,7 +296,7 @@ Multipeer Connectivity also has UI components for advertising ([`MCNearbyService
 - Similarly, if you’re creating an Apple TV app, use [DeviceDiscoveryUI](../DeviceDiscoveryUI/DeviceDiscoveryUI.md) to connect to your iOS, iPadOS, or watchOS app and then use Network framework to communicate with it
 - Otherwise, use your preferred UI framework to create a UI that best suits your app.
 
-##### Discover TXT records
+### Discover TXT records
 
 The Bonjour service discovery protocol used by Network framework supports TXT records.  Using these, a listener can associate metadata with its service and a browser can get that metadata for each discovered service.
 
@@ -332,7 +332,7 @@ func isThisTheDroidWereLookingFor(_ endpoint: Bonjour.Endpoint) -> Bool
 
 This example returns true if the TXT record contains a specific peer identifier, but that’s just one potential use for TXT records.
 
-#### Design for privacy
+## Design for privacy
 
 This section covers some privacy issues to consider as you implement your app.  This isn’t an exhaustive list.  For general advice on this topic, see [Protecting user privacy](../HealthKit/protecting-user-privacy.md).
 
@@ -366,7 +366,7 @@ A persistent peer identifier is of particular concern if you use it as your serv
 
 If you use a custom name for your service, make sure to handle the case where Network framework renames your service due to a name conflict.
 
-#### Configure your connections
+## Configure your connections
 
 Multipeer Connectivity’s symmetric architecture means that it uses a single type, [`MCSession`](../MultipeerConnectivity/mcsession.md), to manage the connections to all peers.  In Network framework, that role is fulfilled by two types:
 
@@ -483,7 +483,7 @@ QUIC(alpn: ["MyALPN"])
     … other TLS modifiers …
 ```
 
-##### Enable peer-to-peer Wi-Fi
+### Enable peer-to-peer Wi-Fi
 
 By default, Network framework doesn’t enable peer-to-peer Wi-Fi.  If you want that, explicitly enable it using the [`peerToPeerIncluded(_:)`](../Network/nwparametersprovider/peertopeerincluded%28_%29-60331.md) modifier.  This involves a slight tweak to the overall builder closure, as shown in this connection example:
 
@@ -505,7 +505,7 @@ A similar approach works for `NetworkListener` and `NetworkBrowser`.
 
 If you enable peer-to-peer Wi-Fi, it’s critical to stop network operations as soon as you’re done with them.  For example, if you’re browsing for services with peer-to-peer Wi-Fi enabled and the user picks a service, stop the browse operation immediately, before you kick off the connection to that service.  Otherwise, the ongoing browse operation might affect the performance of your connection.
 
-#### Manage a listener
+## Manage a listener
 
 In Network framework, use [`NetworkListener`](../Network/networklistener.md) to listen for incoming connections:
 
@@ -572,7 +572,7 @@ In Multipeer Connectivity, the session ([`MCSession`](../MultipeerConnectivity/m
 - In contrast, the server must manage connections to all client peers.
 - In the fully connected network architecture, every peer must maintain a listener *and* connections to each of the other peers.
 
-##### Understand UDP flows
+### Understand UDP flows
 
 Network framework handles UDP using the same [`NetworkListener`](../Network/networklistener.md) and [`NetworkConnection`](../Network/networkconnection.md) types as it uses for TCP.  However, the underlying UDP protocol is stateless; it has no notion of listeners and connections.  To square this circle Network framework works in terms of UDP flows.  A UDP flow is defined as a bidirectional sequence of UDP datagrams with the same 4 tuple (local IP address, local port, remote IP address, and remote port).  In Network framework:
 
@@ -583,7 +583,7 @@ This introduces some complexity.  For example, because UDP is stateless your lis
 
 To avoid this complexity, use QUIC datagrams rather than using UDP directly.  In QUIC, you start by creating a QUIC connection (`NetworkConnection<QUIC>`).  While that connection is actually implemented on top of UDP, QUIC adds its own connection semantics.  When you get the connection’s QUIC datagram channel ([`datagrams`](../Network/networkconnection/datagrams.md)), it remains associated with the connection.  So, to learn about the client going away, monitor the state of the connection as a whole.
 
-#### Manage a network connection
+## Manage a network connection
 
 In Network framework, call [`withNetworkConnection(to:using:_:)`](../Network/withnetworkconnection%28to,using,_%29-1sik8.md) to start an outgoing connection:
 
@@ -653,7 +653,7 @@ These rules have important consequences for QUIC.  First, if your code calls [`i
 
 Second, if you cancel a task that’s handling new streams by running inside `inboundStreams(_:)`, that automatically cancels all of the child tasks running one the connection’s streams.
 
-#### Send and receive reliable messages
+## Send and receive reliable messages
 
 In Multipeer Connectivity, a single session supports both reliable and best-effort send modes.  In Network framework, the supported send modes vary based on the connection type.  Again, this example focuses on QUIC, but the techniques discussed here also apply to other stream-oriented protocols, most notably TCP.
 
@@ -740,7 +740,7 @@ Many network apps use a request-response protocol: The client sends a request an
 
 Multipeer Connectivity supports sending the same message to multiple peers in a single send call.  In Network framework each send call targets a specific connection.  To send a message to multiple peers, make a send call on the connection associated with each peer.
 
-#### Send and receive best-effort messages
+## Send and receive best-effort messages
 
 In Multipeer Connectivity, a single session supports both reliable and best-effort send modes.  In Network framework, the exact set of data transfer operations depends on the connection type.  A QUIC connection supports zero or more reliable streams and at most one best-effort datagram channel.
 
@@ -774,7 +774,7 @@ let (datagramReceived, _) = try await datagramChannel.receive()
 
 > **Note**: This example, like the earlier receive examples, ignores the returned metadata.
 
-#### Start a stream
+## Start a stream
 
 In Multipeer Connectivity you can ask the session to start a stream to a specific peer.  The way you do this in Network framework depends on the connection type.  For a QUIC connection it’s very straightforward:
 
@@ -841,7 +841,7 @@ func consumeChunkReceived(_ chunk: Data) async throws {
 // -- DON’T DO THIS --
 ```
 
-#### Send a resource
+## Send a resource
 
 In Multipeer Connectivity you can ask the session to send a complete resource, identified by either a file or HTTP URL, to a specific peer.  Network framework has no direct support for this.  If you need this, implement it on top of a stream.  For example, to transfer a file:
 
@@ -850,17 +850,17 @@ In Multipeer Connectivity you can ask the session to send a complete resource, i
 
 As the file might be larger than the available memory it’s critical to implement flow control, as described in the previous section.
 
-#### Final notes
+## Final notes
 
 The following sections collect together some general hints and tips.
 
-##### Concurrency
+### Concurrency
 
 In Multipeer Connectivity, each session ([`MCSession`](../MultipeerConnectivity/mcsession.md)) has its own internal Dispatch queue and calls delegate callbacks on that queue.  Network framework is based on Swift concurrency rather than Dispatch queues.  Enable the Swift 6 language mode so that the compiler finds and reports any data races in your code.
 
 In a simple app it’s reasonable to use the main actor for networking.  If you do this, be careful not to do CPU intensive work in your networking code.  For example, if you receive a message that holds JPEG data, don’t decode that data on the main actor, but instead call out to a concurrent async function.  Also, if your app uses the network intensively—for example, a server that manages dozens of simultaneous connections—that might overload the main actor and you should consider alternatives.
 
-##### Overriding protocol defaults
+### Overriding protocol defaults
 
 TCP and QUIC are intended to be deployed at vast scale across the wider Internet.  For that reason they use default options that aren’t optimized for local networking.  Consider changing these defaults in your app.
 
@@ -877,7 +877,7 @@ QUIC has the concept of an *idle timeout*.  A QUIC connection that’s been idle
 
 QUIC also has the concept of *keepalives*.  QUIC keepalives default to disabled.  To enable them, change the [`keepAlive`](../Network/nwprotocolquic/metadata/keepalive.md) property on the protocol metadata.
 
-#### Symbol cross reference
+## Symbol cross reference
 
 If you’re not sure where to start with a specific Multipeer Connectivity construct, find it in the tables below and follow the link to the relevant section.
 
@@ -922,7 +922,7 @@ Within [`MCSessionDelegate`](../MultipeerConnectivity/mcsessiondelegate.md):
 | [`session(_:didStartReceivingResourceWithName:fromPeer:with:)`](../MultipeerConnectivity/mcsessiondelegate/session%28_,didstartreceivingresourcewithname,frompeer,with%29.md) | [Send a resource](./tn3213-moving-from-multipeer-connectivity-to-network-framework.md#Send-a-resource) |
 | [`session(_:peer:didChange:)`](../MultipeerConnectivity/mcsessiondelegate/session%28_,peer,didchange%29.md) | [Manage a network connection](./tn3213-moving-from-multipeer-connectivity-to-network-framework.md#Manage-a-network-connection) |
 
-#### Revision History
+## Revision History
 
 - **2026-07-14** Republished as TN3213.  Updated to use the latest Network framework API and to focus on QUIC.
 - **2025-03-07** First published as ”Moving from Multipeer Connectivity to Network Framework” on the Apple Developer Forums

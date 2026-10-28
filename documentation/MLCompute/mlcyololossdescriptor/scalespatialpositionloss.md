@@ -23,7 +23,7 @@ var scaleSpatialPositionLoss: Float { get set }
 @property (nonatomic, readwrite) float scaleSpatialPositionLoss;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `10.0`.
 

@@ -24,7 +24,7 @@ var mean: Float { get }
 @property (nonatomic, assign, readonly) float mean;
 ```
 
-#### Discussion
+## Discussion
 
 Random samplings from the distribution are most likely to result in the mean value, with other values increasingly far from the mean occurring with decreasing probability.
 

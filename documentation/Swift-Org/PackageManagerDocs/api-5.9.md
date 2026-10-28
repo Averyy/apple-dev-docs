@@ -8,15 +8,15 @@ framework: "Swift-Org/PackageManagerDocs"
 **Framework**: Swift-Org/PackageManagerDocs  
 **Role**: Article
 
-#### Cross compilation
+## Cross compilation
 
 SwiftPM now supports cross compilation based on the Swift SDK bundle format. While the feature is still considered experimental, we invite users to try it out and provide feedback.
 
-#### Package registry
+## Package registry
 
 SwiftPM can now publish to a registry following the specification defined in SE-0391, as well as support signed packages, which may be required by a registry. Trust-on-first-use (TOFU) validation checks can now use signing identities in addition to fingerprints, and are enforced for source archives as well as package manifests.
 
-#### Embedded resources
+## Embedded resources
 
 Basic support for a new `.embedInCode` resource rule which allows embedding the contents of the resource into the executable code by generating a byte array
 
@@ -26,7 +26,7 @@ struct PackageResources {
 }
 ```
 
-#### Other improvements
+## Other improvements
 
 The `CompilerPluginSupport` module enables defining macro targets. Macro targets allow authoring and distributing custom Swift macros as APIs in a library.
 

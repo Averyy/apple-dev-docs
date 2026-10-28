@@ -24,7 +24,7 @@ case unknownError
 PKPaymentUnknownError
 ```
 
-#### Discussion
+## Discussion
 
 User this error code if an unknown but non-fatal error occurred during payment processing.  The user can attempt to authorize the transaction again.
 

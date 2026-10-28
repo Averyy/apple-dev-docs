@@ -13,11 +13,11 @@
 ifaddr_t ifaddr_withroute(int flags, const struct sockaddr *destination, const struct sockaddr *gateway);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface address.
 
-#### Discussion
+## Discussion
 
 Returns an interface address given a destination and gateway. Increments the reference count on the ifaddr before returning to the caller. Caller is responsible for calling ifaddr_release.
 

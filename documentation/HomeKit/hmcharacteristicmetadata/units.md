@@ -24,7 +24,7 @@ var units: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * units;
 ```
 
-#### Discussion
+## Discussion
 
 The [`units`](./units.md) property tells you how to use the corresponding characteristic’s [`value`](../hmcharacteristic/value.md) in calculations or how to format it for presentation. For example, you can extend the [`HMCharacteristic`](../hmcharacteristic.md) class with a computed property that returns the appropriate symbol to accompany the value in printed output:
 

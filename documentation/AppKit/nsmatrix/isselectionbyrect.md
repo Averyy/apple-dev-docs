@@ -19,7 +19,7 @@ var isSelectionByRect: Bool { get set }
 @property (getter=isSelectionByRect) BOOL selectionByRect;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the matrix allows the user to select a rectangle of cells by dragging. When the value of this property is [`false`](../../Swift/false.md), selection in the matrix is on a row-by-row basis. The default value of this property is [`true`](../../Swift/true.md).
 

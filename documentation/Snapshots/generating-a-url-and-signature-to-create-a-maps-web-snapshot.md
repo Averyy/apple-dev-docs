@@ -5,13 +5,13 @@
 
 Create a Snapshot URL and generate a signature to validate the request.
 
-#### Overview
+## Overview
 
 You can use the Maps Web Snapshots service to retrieve static map images using a URL, in which you set the parameters that define the image. Begin by gathering your credentials, then create a snapshot URL using the parameters described in [`Create a Maps Web Snapshot`](./get-a-map-snapshot.md). Next, generate a signature by signing the URL string with your credentials. Finally, append the `signature` parameter to your Snapshot URL setting its value to the signature that you generated.
 
 You can also obtain HTML to show information about a place using [Create a Map](https://developer.apple.com/maps/create-a-map/).
 
-##### Gather Credentials
+### Gather Credentials
 
 All snapshot URLs must include a signature. To create your signature, gather the required credentials:
 
@@ -23,7 +23,7 @@ If you don’t have a MapKit JS key, learn how to obtain one in [Creating a Maps
 
 > 💡 **Tip**:  To locate your Team ID, sign in to your [Apple Developer account](https://developer.apple.com/account) and click Membership in the left sidebar.
 
-##### Create a Snapshot URL and Signature
+### Create a Snapshot URL and Signature
 
 Once you have your Team ID, Key ID, and private key file, use these credentials to generate a signature for a Maps Web Snapshots URL. You generate the signature using your credentials plus the snapshot URL request path and all query parameters, as described in [`Create a Maps Web Snapshot`](./get-a-map-snapshot.md).
 
@@ -45,7 +45,7 @@ To generate a signature, sign the string with your private key using a ES256 alg
 
 The generated signature allows you to access the exact request path and query parameters used in the signing process. If you modify or reorder the query parameters, you must generate a new signature.
 
-##### Append the Signature to a Maps Snapshot URL
+### Append the Signature to a Maps Snapshot URL
 
 Append the `signature` parameter to your snapshots URL, and set the value of this parameter to the signature you generated. The `signature` parameter should always be the final parameter in a snapshots URL, as in this example:
 
@@ -55,7 +55,7 @@ https://snapshot.apple-mapkit.com/api/v1/snapshot?center=apple+park&teamId=<your
 
 If the signature is the not the last query parameter, the request returns `401 Authorization Error`.
 
-##### Generate a Signed URL with Example Code
+### Generate a Signed URL with Example Code
 
 This example script uses JavaScript to do the following:
 

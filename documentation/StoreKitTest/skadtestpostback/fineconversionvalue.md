@@ -21,7 +21,7 @@ var fineConversionValue: Int { get }
 @property (nonatomic, assign, readonly) NSInteger fineConversionValue;
 ```
 
-#### Discussion
+## Discussion
 
 A postback in SKAdNetwork version 4 and later provides this [`fineConversionValue`](./fineconversionvalue.md) or a [`coarseConversionValue`](./coarseconversionvalue.md). Earlier versions of SKAdNetwork use a single [`conversionValue`](./conversionvalue.md).
 

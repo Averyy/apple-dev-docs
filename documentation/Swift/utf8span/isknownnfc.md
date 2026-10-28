@@ -21,7 +21,7 @@ Returns whether the contents are known to be NFC. This is not always checked at 
 var isKnownNFC: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

@@ -25,11 +25,11 @@ func reflection(functionName: String) -> MTLFunctionReflection?
 - (MTLFunctionReflection *) reflectionForFunctionWithName:(NSString *) functionName;
 ```
 
-#### Return Value
+## Return Value
 
 An `MTLFunctionReflection` instance when the method succeeds; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 The reflection instance contains metadata information about a specific GPU function, which can include:
 

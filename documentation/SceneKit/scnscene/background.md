@@ -25,7 +25,7 @@ var background: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * background;
 ```
 
-#### Discussion
+## Discussion
 
 If the material property’s [`contents`](../scnmaterialproperty/contents.md) object is `nil`, SceneKit does not draw any background before drawing the rest of the scene. (If the scene is presented in an [`SCNView`](../scnview.md) instance, the view’s background color is visible behind the contents of the scene.)
 

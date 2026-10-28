@@ -15,7 +15,7 @@ The name of a glyph info object.
 extern NSAttributedStringKey NSGlyphInfoAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSLayoutManager`](./nslayoutmanager.md) object assigns the glyph specified by this [`NSGlyphInfo`](./nsglyphinfo.md) object to the entire attribute range, provided that its contents match the specified base string, and that the specified glyph is available in the font specified by `NSFontAttributeName`.
 

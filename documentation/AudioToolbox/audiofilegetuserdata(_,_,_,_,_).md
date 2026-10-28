@@ -24,7 +24,7 @@ func AudioFileGetUserData(_ inAudioFile: AudioFileID, _ inUserDataID: UInt32, _ 
 extern OSStatus AudioFileGetUserData(AudioFileID inAudioFile, UInt32 inUserDataID, UInt32 inIndex, UInt32 *ioUserDataSize, void *outUserData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code if there’s an error (see Result Codes) or `noErr` if the operation succeeds.
 

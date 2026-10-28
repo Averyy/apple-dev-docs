@@ -25,7 +25,7 @@ var errSSLATSMinimumKeySizeViolation: OSStatus { get }
 errSSLATSMinimumKeySizeViolation
 ```
 
-#### Discussion
+## Discussion
 
 For more information about App Transport Security (ATS) compliance, see [Preventing Insecure Network Connections](./preventing-insecure-network-connections.md).
 

@@ -20,7 +20,7 @@ class ARGeometrySource
 @interface ARGeometrySource : NSObject
 ```
 
-#### Overview
+## Overview
 
 Mesh-anchor geometry ([`ARMeshGeometry`](./armeshgeometry.md)) uses geometry sources to hold 3D data like vertices, and normals, in an efficent, array-like format. A Metal buffer wraps the data, and other properties specify  how to interpret that data.
 

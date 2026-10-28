@@ -17,7 +17,7 @@ Indicates that the device activity interval ended.
 func intervalDidEnd(for activity: DeviceActivityName)
 ```
 
-#### Discussion
+## Discussion
 
 An activity ends when someone first uses the device outside the activity’s scheduled time interval or when your app stops monitoring an activity with an ongoing interval. In other words, the system only invokes this method when the device is in use.
 

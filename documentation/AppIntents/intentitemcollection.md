@@ -21,7 +21,7 @@ Return this object to provide an advanced list of options, optionally divided in
 struct IntentItemCollection<Result> where Result : _IntentValue
 ```
 
-#### Example
+## Example
 
 ```swift
 struct CreateBookIntent: AppIntent {

@@ -15,7 +15,7 @@ Sets the value for the box’s acquirability.
 kern_return_t SetIsAcquirable(bool in_is_acquirable);
 ```
 
-#### Discussion
+## Discussion
 
 The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 

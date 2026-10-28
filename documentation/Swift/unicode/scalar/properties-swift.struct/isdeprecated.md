@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is deprecated.
 var isDeprecated: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Scalars are never removed from the Unicode Standard, but the usage of deprecated scalars is strongly discouraged.
 

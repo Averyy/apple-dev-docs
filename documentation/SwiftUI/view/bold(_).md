@@ -22,7 +22,7 @@ nonisolated
 func bold(_ isActive: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with bold text.
 

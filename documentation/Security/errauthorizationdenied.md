@@ -20,7 +20,7 @@ var errAuthorizationDenied: OSStatus { get }
 errAuthorizationDenied
 ```
 
-#### Discussion
+## Discussion
 
 This error is also returned if there was no definition found in the policy database, or a definition could not be created.
 

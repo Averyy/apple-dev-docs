@@ -23,11 +23,11 @@ func propertyForGlyph(at glyphIndex: Int) -> NSLayoutManager.GlyphProperty
 - (NSGlyphProperty) propertyForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The glyph property associated with the specified glyph. [`NSLayoutManager.GlyphProperty`](./glyphproperty.md) lists the values that can be returned.
 
-#### Discussion
+## Discussion
 
 If noncontiguous layout is not enabled, this method causes generation of all glyphs up to and including the one at `glyphIndex`.
 

@@ -26,7 +26,7 @@ var automaticallyPreservesTimeOffsetFromLive: Bool { get set }
 @property (nonatomic) BOOL automaticallyPreservesTimeOffsetFromLive;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). If the value is [`true`](../../Swift/true.md), the player seeks forward after it finishes buffering to restore the position that the playhead had when buffering began, relative to the end of the player item’s [`seekableTimeRanges`](./seekabletimeranges.md) property value.
 

@@ -21,7 +21,7 @@ A type that represents an app extension.
 static var applicationExtension: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.application-and-system-extension`.
 

@@ -23,7 +23,7 @@ class MLCTensorData
 @interface MLCTensorData : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  A tensor data instance doesn’t take ownership of the `bytes` pointer and therefore won’t free it upon deallocation.
 

@@ -9,19 +9,19 @@ Return the user ID and organization ID of the authenticated API caller.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns the `userId` and `orgId` associated with the access token used to authenticate the request. To confirm which user account is active and retrieve the root organization for subsequent API calls, use this endpoint.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```
 GET /v1/me
 ```
 
-##### Response
+### Response
 
 ```json
 {

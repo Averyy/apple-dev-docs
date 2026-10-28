@@ -29,7 +29,7 @@ GKFriendsAuthorizationStatusDenied
 
 - [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
-#### Discussion
+## Discussion
 
 The local player can deny access to the friends list by disabling friends in the Game Center settings.
 

@@ -6,7 +6,7 @@
 
 An object-oriented file format for the storage and exchange of digital media between devices, applications, and operating systems.
 
-#### Overview
+## Overview
 
 The QuickTime File Format (QTFF) accommodates storing and accessing many kinds of digital multimedia data. The QTFF is an ideal format for the exchange of digital media between devices, applications, and operating systems, because you can use it to describe almost any media structure.
 

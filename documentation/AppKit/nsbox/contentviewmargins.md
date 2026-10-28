@@ -19,7 +19,7 @@ var contentViewMargins: NSSize { get set }
 @property NSSize contentViewMargins;
 ```
 
-#### Discussion
+## Discussion
 
 The width (the horizontal distance between the innermost edge of the border and the content view) and height  (the vertical distance between the innermost edge of the border and the content view) describing the distance between the border and the content view. By default, these are both 5.0 in the box’s coordinate system.
 

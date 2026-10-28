@@ -18,7 +18,7 @@ Accepts or rejects an incoming XPC connection.
 func handle(xpcConnection: xpc_connection_t)
 ```
 
-#### Discussion
+## Discussion
 
 When your browser app calls [`makeLibXPCConnection()`](../renderingprocess/makelibxpcconnection%28%29.md), the framework calls this method on your extension, passing the newly created connection as the parameter. To accept the connection, call [`xpc_connection_set_event_handler(_:_:)`](../../XPC/xpc_connection_set_event_handler%28_,_%29.md) to install an event handler and listen for incoming messages.
 

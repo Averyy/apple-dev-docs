@@ -17,7 +17,7 @@ Includes only paired devices matching the provided live filter predicate.
 static func matching(_ pairedDevicesFilter: Predicate<WAPairedDevice>) -> WAPublisherListener.Devices
 ```
 
-#### Return Value
+## Return Value
 
 A new `Devices` containing the device filter to use.
 

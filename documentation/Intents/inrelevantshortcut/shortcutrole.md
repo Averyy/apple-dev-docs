@@ -35,7 +35,7 @@ var shortcutRole: INRelevantShortcutRole { get set }
 
 - [Defining Relevant Shortcuts for the Siri Watch Face](../../SiriKit/defining-relevant-shortcuts-for-the-siri-watch-face.md)
 
-#### Discussion
+## Discussion
 
 The role provides a hint to Siri so it can provide a better experience to the user when suggesting the shortcut. The default is [`INRelevantShortcutRole.action`](../inrelevantshortcutrole/action.md).
 

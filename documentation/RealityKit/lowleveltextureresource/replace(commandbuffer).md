@@ -18,11 +18,11 @@ Returns a Metal texture you populate on the GPU with the new contents of the tex
 final func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture
 ```
 
-#### Return Value
+## Return Value
 
 A `MTLTexture` ready for GPU write operations.
 
-#### Discussion
+## Discussion
 
 Upon return the texture’s contents are undefined; the caller is responsible for populating it with valid data. The renderer waits for the provided command buffer to complete before using the texture for rendering.
 

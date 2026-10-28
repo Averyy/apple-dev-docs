@@ -20,7 +20,7 @@ The URL of a writable directory into which the plugin or the build commands it c
 let pluginWorkDirectoryURL: URL
 ```
 
-#### Discussion
+## Discussion
 
 This could include generated source files to processed further, as well as any caches used by the build tool or the plugin. The plugin is in complete control of what is written under this directory, and the package manager preserves the contents between builds.
 

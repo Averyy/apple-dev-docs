@@ -19,7 +19,7 @@ var isDiscardable: Bool { get set }
 @property (getter=isDiscardable) BOOL discardable;
 ```
 
-#### Discussion
+## Discussion
 
 Marking a file version as discardable gives the system the flexibility to reclaim the space, occupied by the associated file, at some future time. Do not, however, depend on the file being discarded.
 

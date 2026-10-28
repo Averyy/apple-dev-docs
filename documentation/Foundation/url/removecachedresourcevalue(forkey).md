@@ -21,7 +21,7 @@ Removes the cached resource value identified by a given resource value key from 
 mutating func removeCachedResourceValue(forKey key: URLResourceKey)
 ```
 
-#### Discussion
+## Discussion
 
 Removing a cached resource value may remove other cached resource values because some resource values are cached as a set of values, and because some resource values depend on other resource values (temporary resource values have no dependencies). This method is currently applicable only to URLs for file system resources.
 

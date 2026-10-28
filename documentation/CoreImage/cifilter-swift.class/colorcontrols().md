@@ -24,11 +24,11 @@ class func colorControls() -> any CIFilter & CIColorControls
 + (CIFilter<CIColorControls> *) colorControlsFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color controls filter to an image. The effect calculates saturation by linearly interpolating between a grayscale image with a saturation of `0.0` and the original image saturation of `1.0.`
 

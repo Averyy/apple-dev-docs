@@ -15,7 +15,7 @@ A Boolean value that determines whether the row is disclosing other rows.
 @property (getter=isAccessibilityDisclosed) BOOL accessibilityDisclosed;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in the elements representing an outline’s row.
 

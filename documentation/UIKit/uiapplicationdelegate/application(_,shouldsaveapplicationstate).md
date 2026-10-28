@@ -24,11 +24,11 @@ optional func application(_ application: UIApplication, shouldSaveApplicationSta
 - (BOOL) application:(UIApplication *) application shouldSaveApplicationState:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the app’s state should be preserved; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Apps must implement this method and the [`application(_:shouldRestoreApplicationState:)`](./application%28_,shouldrestoreapplicationstate%29.md) method for state preservation to occur. In addition, your implementation of this method must return [`true`](../../Swift/true.md) each time UIKit tries to preserve the state of your app. You can return [`false`](../../Swift/false.md) to disable state preservation temporarily. For example, during testing, you could disable state preservation to test specific code paths.
 

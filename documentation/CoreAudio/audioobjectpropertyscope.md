@@ -18,7 +18,7 @@ typealias AudioObjectPropertyScope = UInt32
 typedef UInt32 AudioObjectPropertyScope;
 ```
 
-#### Discussion
+## Discussion
 
 An AudioObjectPropertyScope is a four char code that identifies, along with the AudioObjectPropertySelector and AudioObjectPropertyElement, a specific piece of information about an AudioObject.
 

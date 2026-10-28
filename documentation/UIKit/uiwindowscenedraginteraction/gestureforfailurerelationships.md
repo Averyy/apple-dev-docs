@@ -22,7 +22,7 @@ var gestureForFailureRelationships: UIGestureRecognizer { get }
 @property (nonatomic, readonly) UIGestureRecognizer * gestureForFailureRelationships;
 ```
 
-#### Discussion
+## Discussion
 
 If your app provides other gestures in the same view hierarchy, you may want to set up failure requirements between your app’s gestures and the drag interaction’s gesture. To do this, use the [`require(toFail:)`](../uigesturerecognizer/require%28tofail%29.md) method to relate your gestures to this gesture. For example:
 

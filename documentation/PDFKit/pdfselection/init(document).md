@@ -24,7 +24,7 @@ init(document: PDFDocument)
 - (instancetype) initWithDocument:(PDFDocument *) document;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you don’t need to create a `PDFSelection` object, but you can use an empty `PDFSelection` object as a container into which you can place selections, using [`PDFSelection`](../pdfselection.md) and addSelections.
 

@@ -25,7 +25,7 @@ var audioSamplePacketRefreshCount: Int
 NSInteger audioSamplePacketRefreshCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of [`audioSampleIsIndependentlyDecodable`](./audiosampleisindependentlydecodable.md) must be [`true`](../../Swift/true.md) for this value to take effect.
 

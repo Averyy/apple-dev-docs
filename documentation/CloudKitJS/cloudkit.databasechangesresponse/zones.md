@@ -15,7 +15,7 @@ The zones in the database where the changes occurred.
 readonly attribute CloudKit.RecordZoneChangesOptions[] zones;
 ```
 
-#### Discussion
+## Discussion
 
 To fetch record changes in these zones, pass this property to the [`fetchRecordZoneChanges`](../cloudkit.database/fetchrecordzonechanges.md) method in the [`CloudKit.Database`](../cloudkit.database.md) class.
 

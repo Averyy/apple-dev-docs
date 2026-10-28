@@ -5,7 +5,7 @@
 
 The characteristics of an image the runtime should scan for in order to attach a prim.
 
-#### Overview
+## Overview
 
 An asset assigns this property a prim with type `Preliminary_ReferenceImage`.
 
@@ -13,13 +13,13 @@ The runtime searches for an image described by this property in the physical env
 
 The runtime employs the information contained in this property only when [preliminary:anchoring:type](./preliminary-anchoring-type.md) is `image`.
 
-##### Declaration
+### Declaration
 
 ```other
 rel preliminary:imageAnchoring:referenceImage
 ```
 
-##### Anchor a cube to an image
+### Anchor a cube to an image
 
 The following example demonstrates how an asset defines a reference image (`ImageReference`) that the runtime should look for in the physical environment. The asset includes a cube that assigns an [Preliminary_ReferenceImage](./preliminary-referenceimage.md) to its [preliminary:imageAnchoring:referenceImage](./preliminary-imageanchoring-referenceimage.md) property, instructing the runtime to anchor it to a real-world object that matches the image criteria.
 

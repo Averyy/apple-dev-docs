@@ -20,7 +20,7 @@ Initiates playback from the current queue.
 func play() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If playback isn’t underway, this method resumes playback from its paused location; otherwise, this method plays the first available entry from the beginning.
 

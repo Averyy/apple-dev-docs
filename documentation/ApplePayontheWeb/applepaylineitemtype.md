@@ -16,7 +16,7 @@ A type that indicates whether a line item is final or pending.
 enum ApplePayLineItemType
 ```
 
-#### Overview
+## Overview
 
 The constant values are:
 

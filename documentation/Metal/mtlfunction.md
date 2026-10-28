@@ -24,7 +24,7 @@ protocol MTLFunction : NSObjectProtocol, Sendable
 @protocol MTLFunction <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use [`MTLFunction`](./mtlfunction.md) instances to specify which shaders a Metal pipeline calls when the GPU executes commands that specify that pipeline. For more information on creating pipeline states, see [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) and [`MTLComputePipelineDescriptor`](./mtlcomputepipelinedescriptor.md).
 

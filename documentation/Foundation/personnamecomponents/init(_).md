@@ -21,7 +21,7 @@ Creates a person name components object from a given string.
 init(_ value: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer uses a combination of locale rules and heuristics to determine the most likely name components for a particular string representation. Parsing name components from a representation created for an existing name components object may not produce equivalent results.
 

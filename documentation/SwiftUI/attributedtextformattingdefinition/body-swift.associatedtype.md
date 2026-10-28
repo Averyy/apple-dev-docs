@@ -22,7 +22,7 @@ The type of view representing the body of this formatting definition.
 associatedtype Body : AttributedTextFormattingDefinition
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom definition, Swift infers this type from your implementation of the required [`body`](./body-1b01t.md) property.
 

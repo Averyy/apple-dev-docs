@@ -19,7 +19,7 @@ func stopModal()
 - (void) stopModal;
 ```
 
-#### Discussion
+## Discussion
 
 This method should always be paired with a previous invocation of [`runModal(for:)`](./runmodal%28for%29.md) or [`beginModalSession(for:)`](./beginmodalsession%28for%29.md). When [`runModal(for:)`](./runmodal%28for%29.md) is stopped with this method, it returns `NSModalResponseStop`. In macOS 10.9 and later, you can use this method to stop a [`runModal(for:)`](./runmodal%28for%29.md) loop outside of an event callback, such as from within a method repeatedly invoked by an [`Timer`](../../Foundation/timer.md) object or a method running in a different thread.
 

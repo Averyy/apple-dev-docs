@@ -22,7 +22,7 @@ class AVCaptureBracketedStillImageSettings
 @interface AVCaptureBracketedStillImageSettings : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  The `AVCaptureBracketedStillImageSettings` class must not be instantiated directly. You should create instances of the `AVCaptureManualExposureBracketedStillImageSettings` and `AVCaptureAutoExposureBracketedStillImageSettings` classes as appropriate.
 

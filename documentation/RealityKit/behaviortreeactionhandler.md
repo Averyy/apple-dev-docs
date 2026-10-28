@@ -20,7 +20,7 @@ Behavior Tree-specific event handlers that allow an `ActionResult` to be returne
 protocol BehaviorTreeActionHandler : ActionHandlerProtocol
 ```
 
-#### Overview
+## Overview
 
 Behavior trees send Started, Updated and Ended events. Optionally subscribe directly to any of these events in order to override default event handling in cases when conforming a new, custom event handler type.
 

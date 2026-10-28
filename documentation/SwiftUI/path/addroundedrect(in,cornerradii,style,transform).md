@@ -21,7 +21,7 @@ Adds a rounded rectangle with uneven corners to the path.
 mutating func addRoundedRect(in rect: CGRect, cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle = .continuous, transform: CGAffineTransform = .identity)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that adds a rounded rectangle to a path, starting by moving to the center of the right edge and then adding lines and curves counter-clockwise to create a rounded rectangle, closing the subpath.
 

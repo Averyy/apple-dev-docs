@@ -5,11 +5,11 @@
 
 Optimize system performance by adding real-time audio threads that run asynchronously to the I/O thread to custom audio workgroups.
 
-#### Overview
+## Overview
 
 If your app creates auxiliary real-time threads that run asynchronously to the audio server’s I/O thread, add them to a custom audio workgroup. Doing so informs the system of these threads and their deadlines, which helps it optimize performance.
 
-##### Create Workgroups
+### Create Workgroups
 
 If your auxiliary real-time threads run asynchronously to the I/O thread, you don’t add them to the audio device workgroup, but instead create a new audio workgroup. For each thread that has a unique work interval, create a new audio workgroup for it by calling [`AudioWorkIntervalCreate`](./audioworkintervalcreate.md). Your workgroup may contain multiple threads, but only one is the primary thread and is responsible for controlling the others. In this thread, call [`os_workgroup_interval_start`](../os/os_workgroup_interval_start.md) in each work cycle. The start time that you pass to this function can be the present, or a time in the past if you know exactly when the system scheduled your work cycle to begin. The function’s deadline argument has to be a timestamp value greater than the start time.
 

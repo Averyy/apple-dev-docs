@@ -15,7 +15,7 @@ Creates a regular icosahedron, a shape with 20 triangular faces, that the player
 static func icosahedron(height: Float, in unit: UnitLength = .meters, restitution: Float? = nil) -> TossableRepresentation
 ```
 
-#### Discussion
+## Discussion
 
 The vertices for the simulated icosahedron with given face to opposite face height (h) are derived from the points on the circumscribed sphere with radius (r) with the following coordinates: phi = (sqrt(5) + 1) / 2, r = h/2 ⋅ sqrt(phi^2 + 1)⋅sqrt(3)/phi^2: ±Y face: ±{       0, +1,       -2/phi^2 } ⋅ h/2, ±{+1/phi^2, +1, +sqrt(3)/phi^2 } ⋅ h/2, ±{+1/phi^2, +1, -sqrt(3)/phi^2 } ⋅ h/2 Equator: ±{      0, +1/phi^3,        2/phi } ⋅ h/2, ±{ -1/phi, +1/phi^3, +sqrt(3)/phi } ⋅ h/2, ±{ -1/phi, +1/phi^3, -sqrt(3)/phi } ⋅ h/2
 

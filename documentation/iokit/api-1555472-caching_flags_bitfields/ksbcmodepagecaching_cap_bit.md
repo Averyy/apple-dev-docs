@@ -14,7 +14,7 @@
 kSBCModePageCaching_CAP_Bit = 5
 ```
 
-#### Discussion
+## Discussion
 
 CAP Bit definition.
 

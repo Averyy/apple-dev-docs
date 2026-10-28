@@ -17,7 +17,7 @@ Indicates whether two targets are equal.
 static func == (lhs: BodyTrackingComponent.Target, rhs: BodyTrackingComponent.Target) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two targets are equal.
 

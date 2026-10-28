@@ -13,7 +13,7 @@
 #define kIOPropertySCSIVendorIdentification
 ```
 
-#### Discussion
+## Discussion
 
 Vendor ID as reported in the INQUIRY data. Additional space characters (0x20) are truncated.
 

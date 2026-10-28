@@ -18,7 +18,7 @@ func scopeProvider(for test: Test, testCase: Test.Case?) -> Self?
 
 Available when `Self` conforms to `TestScoping`.
 
-#### Discussion
+## Discussion
 
 The testing library uses this implementation of [`scopeProvider(for:testCase:)`](./scopeprovider%28for,testcase%29.md) when the trait type conforms to both [`SuiteTrait`](../suitetrait.md) and [`TestScoping`](../testscoping.md).
 

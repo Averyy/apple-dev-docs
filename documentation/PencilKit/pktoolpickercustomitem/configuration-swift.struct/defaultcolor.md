@@ -18,7 +18,7 @@ The default color for the tool.
 var defaultColor: UIColor
 ```
 
-#### Discussion
+## Discussion
 
 The default color is black.
 

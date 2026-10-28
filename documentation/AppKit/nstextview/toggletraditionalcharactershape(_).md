@@ -21,7 +21,7 @@ func toggleTraditionalCharacterShape(_ sender: Any?)
 - (void) toggleTraditionalCharacterShape:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSCharacterShapeAttributeName` constant is defined in NSAttributedString Application Kit Additions Reference.
 

@@ -25,7 +25,7 @@ func dictionaryRepresentation(forAuxiliaryDataType outAuxDataType: Autoreleasing
 - (NSDictionary *) dictionaryRepresentationForAuxiliaryDataType:(NSString **) outAuxDataType;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of primitive map information for [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](../../ImageIO/cgimagedestinationaddauxiliarydatainfo%28_,_,_%29.md).
 

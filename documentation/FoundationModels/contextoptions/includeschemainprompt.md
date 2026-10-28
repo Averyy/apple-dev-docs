@@ -20,7 +20,7 @@ A Boolean value that indicates whether to inject the schema into the prompt to b
 var includeSchemaInPrompt: Bool?
 ```
 
-#### Discussion
+## Discussion
 
 Has no effect if there’s no schema provided
 

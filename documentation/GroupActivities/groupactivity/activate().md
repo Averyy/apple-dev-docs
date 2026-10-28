@@ -25,7 +25,7 @@ func activate() async throws -> Bool
 - [Configure your visionOS app for sharing with people nearby](../configure-your-app-for-sharing-with-people-nearby.md)
 - [Presenting SharePlay activities from your app’s UI](../promoting-shareplay-activities-from-your-apps-ui.md)
 
-#### Discussion
+## Discussion
 
 Typically, you call this method only when the [`prepareForActivation()`](./prepareforactivation%28%29.md) method delivers the [`GroupActivityActivationResult.activationPreferred`](../groupactivityactivationresult/activationpreferred.md) result. However, you may call it directly if your activity only makes sense in a group setting. For example, call it if the activity applies only to groups and can’t be performed without other participants.
 

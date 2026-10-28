@@ -5,13 +5,13 @@
 
 Update your code to use new language features and test your apps against changes.
 
-#### Overview
+## Overview
 
 Read these notes when you’re writing Swift apps in Xcode 10.
 
-##### Swift Compiler
+### Swift Compiler
 
-###### New Features
+#### New Features
 
 - The behavior of casts from optional types to generic types has changed in some circumstances in Swift 4.2. For example:
 
@@ -54,7 +54,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.
 
   The new compilation strategy should be transparent in terms of the build products. However, in case it causes a problem, you can revert to the previous single file strategy with a custom Build Setting `SWIFT_ENABLE_BATCH_MODE=NO`. (39253613)
 
-##### Known Issues
+### Known Issues
 
 - If you indirectly modify a property using a nonmutating setter that’s defined in a protocol or extension on a class instance, the Swift compiler might miscompile it by releasing the instance after the getter is invoked. This might cause the program to crash or have unpredictable behavior at runtime. (45274900)
 
@@ -187,7 +187,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.
   }
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - An Objective-C method that takes a block argument annotated with `__attribute__((noescape))` invoked by Swift, no longer raises an incorrect “closure argument passed as `@noescape` to Objective-C has escaped” runtime error. (40857699)
 - The Swift REPL shipped in the Command Line Tools package now successfully imports Objective-C frameworks or Swift frameworks that depend on Objective-C frameworks. (40537961)
@@ -259,9 +259,9 @@ Read these notes when you’re writing Swift apps in Xcode 10.
 - The [`Bundle`](../Foundation/bundle.md) initializer [`init(for:)`](../Foundation/bundle/init%28for%29.md) now returns the correct bundle when used on a class that inherits from a generic class. (40367300)
 - The [`type(of:)`](../Swift/type%28of%29.md) function now provides the expected result when object is being observed using key-value observing. (37319860)
 
-##### Swift Language
+### Swift Language
 
-###### New Features
+#### New Features
 
 - Custom compile-time warnings or error messages can be emitted using the `#warning(_:)` and `#error(_:)` directives ([SE-0196](https://github.com/apple/swift-evolution/blob/master/proposals/0196-diagnostic-directives.md)). (16015824)
 
@@ -293,7 +293,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.
 
   Note that the presence of the attribute itself does not force inlining or any other optimization to be performed, nor does it have any effect on optimizations performed within a single module.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Protocol conformances are now able to be synthesized in extensions in the same file as the type definition, allowing automatic synthesis of conditional conformances to [`Hashable`](../Swift/hashable.md), [`Equatable`](../Swift/equatable.md) and [`Codable`](../Swift/codable.md). For instance, if there is a generic wrapper type that can only be [`Equatable`](../Swift/equatable.md) when its wrapped type is also [`Equatable`](../Swift/equatable.md), the `==` method can be automatically constructed by the compiler:
 
@@ -337,15 +337,15 @@ Read these notes when you’re writing Swift apps in Xcode 10.
   // Optional(main.Generic<main.Conforms>())
   ```
 
-##### Swift Migrator
+### Swift Migrator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The Swift 4.2 migrator correctly updates member variable references to global variable references. (41658300)
 
-##### Swift Package Manager
+### Swift Package Manager
 
-###### New Features
+#### New Features
 
 - The `generate-xcodeproj` command has a new `--watch` option to watch the file system and automatically regenerate the Xcode project if needed. (32390792)
 - The `swiftLanguageVersions` property in the PackageDescription manifest API for tools version 4.2 is changed from an array of integers to an array of `SwiftVersion` enumeration cases. ([SE-0209](https://github.com/apple/swift-evolution/blob/master/proposals/0209-package-manager-swift-lang-version-update.md)) (38721967) For example:
@@ -365,7 +365,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.
 - Swift targets are now compiled using batch mode. (39262812)
 - The package manager emits deprecation notices for manifests that use the version 3 API in a package dependency graph. (41792011)
 
-###### Known Issues
+#### Known Issues
 
 - The package manager might crash if a package graph contains shared dependencies with versioned and revision based requirements. Consider the following example package graph:
 
@@ -383,9 +383,9 @@ Read these notes when you’re writing Swift apps in Xcode 10.
 
   **Workaround:** Use either versioned or revisioned based requirement for the shared package dependencies.
 
-##### Swift Standard Library
+### Swift Standard Library
 
-###### New Features
+#### New Features
 
 - [`Range`](../Swift/range.md) is now conditionally a [`RandomAccessCollection`](../Swift/randomaccesscollection.md) when its `Bound` is `Strideable` with a [`SignedInteger`](../Swift/signedinteger.md) stride. This means that you can now use use [`Range`](../Swift/range.md) as a collection when these criteria are met. (40564272)
 
@@ -437,7 +437,7 @@ Read these notes when you’re writing Swift apps in Xcode 10.
   The [`RandomNumberGenerator`](../Swift/randomnumbergenerator.md) protocol has been introduced as a source of randomness to drive these methods, with a default implementation for each platform. This implementation wraps `arc4random_buf(_:_:)`. (40564129)
 - `Random.default` is renamed [`SystemRandomNumberGenerator`](../Swift/systemrandomnumbergenerator.md) to avoid misuse and to conform to naming guidelines. For more information, see the amendment in [SE-202](https://github.com/apple/swift-evolution/blob/master/proposals/0202-random-unification.md). (42298827)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The behavior of the [`description`](../Swift/customstringconvertible/description.md) and [`debugDescription`](../Swift/customdebugstringconvertible/debugdescription.md) properties for floating-point numbers use a new algorithm that is both more accurate and significantly faster than the previous code. In particular, it’s now guaranteed that `Double(String(d)) == d` for every [`Double`](../Swift/double.md) value `d`. Previously these unconditionally printed a fixed number of decimal digits (15 and 17 for [`Double`](../Swift/double.md), respectively). They now print exactly as many digits as are needed for the resulting string to convert back to the original source value, and no more ([SR-106](https://bugs.swift.org/browse/SR-106)). (40565639)
 

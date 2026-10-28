@@ -22,7 +22,7 @@ protocol UISheetPresentationControllerDetentResolutionContext : NSObjectProtocol
 @protocol UISheetPresentationControllerDetentResolutionContext <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A context of this type is available in the `resolver` closure of [`custom(identifier:resolver:)`](./uisheetpresentationcontroller/detent/custom%28identifier,resolver%29.md) (Swift) or  [`customDetentWithIdentifier:resolver:`](./uisheetpresentationcontrollerdetent/customdetentwithidentifier_resolver_.md) (Objective-C).
 

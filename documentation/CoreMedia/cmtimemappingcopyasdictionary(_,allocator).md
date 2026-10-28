@@ -25,7 +25,7 @@ func CMTimeMappingCopyAsDictionary(_ mapping: CMTimeMapping, allocator: CFAlloca
 extern CFDictionaryRefCMTimeMappingCopyAsDictionary(CMTimeMapping mapping, CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary representation of a time mapping.
 

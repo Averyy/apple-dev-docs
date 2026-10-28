@@ -28,7 +28,7 @@ class UIScene
 
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Overview
+## Overview
 
 UIKit creates a scene object for each instance of your app’s UI that the user or your app requests. Typically, UIKit creates a [`UIWindowScene`](./uiwindowscene.md) object instead of a [`UIScene`](./uiscene.md) object, but you use the methods and properties of this class to access information about a scene.
 

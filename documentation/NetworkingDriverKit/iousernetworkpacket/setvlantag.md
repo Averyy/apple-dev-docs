@@ -13,7 +13,7 @@
 void setVlanTag(uint16_t vlanTag);
 ```
 
-#### Discussion
+## Discussion
 
 Set the Vlan Tag for the packet.
 

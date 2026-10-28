@@ -16,7 +16,7 @@ Returns a list of balances that meet the criteria in the provided account query.
 func accountBalances(query: AccountBalanceQuery) async throws -> [AccountBalance]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`AccountBalance`](../accountbalance.md) structures.
 

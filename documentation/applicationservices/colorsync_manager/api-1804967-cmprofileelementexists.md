@@ -15,11 +15,11 @@ CMError CMProfileElementExists (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 You cannot use this function to test whether certain data in the `CM2Header` profile header exists. Instead, you must call the function [CMGetProfileHeader](./api-1804879-cmgetprofileheader.md) to copy the entire profile header and read its contents. 
 

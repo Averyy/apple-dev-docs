@@ -32,7 +32,7 @@ var latency: TimeInterval { get }
 @property (atomic, readonly) NSTimeInterval latency;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the delay between when an impulse arrives in the input stream vs. output stream. This should reflect the delay due to signal processing (e.g. FFTs), not as an effect (e.g. reverberation).
 

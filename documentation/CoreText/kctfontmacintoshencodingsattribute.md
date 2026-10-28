@@ -25,7 +25,7 @@ let kCTFontMacintoshEncodingsAttribute: CFString
 extern CFStringRef const kCTFontMacintoshEncodingsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing a bit field of the Macintosh encodings. This attribute is provided for legacy compatibility.
 

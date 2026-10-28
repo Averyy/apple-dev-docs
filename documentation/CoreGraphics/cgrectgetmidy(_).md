@@ -25,7 +25,7 @@ func CGRectGetMidY(_ rect: CGRect) -> CGFloat
 extern CGFloat CGRectGetMidY(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The y-coordinate of the center of the specified rectangle.
 

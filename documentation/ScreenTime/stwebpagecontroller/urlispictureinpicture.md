@@ -22,7 +22,7 @@ var urlIsPictureInPicture: Bool { get set }
 @property (nonatomic) BOOL URLIsPictureInPicture;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NO`](../../ObjectiveC/no.md). Set this value when the webpage starts or stops displaying a Picture in Picture window.
 

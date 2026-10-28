@@ -22,7 +22,7 @@ class CMRecordedPressureData
 @interface CMRecordedPressureData : CMAmbientPressureData
 ```
 
-#### Overview
+## Overview
 
 Use SensorKit’s [`ambientPressure`](../SensorKit/srsensor/ambientpressure.md) sensor to read ambient pressure data.
 

@@ -38,7 +38,7 @@ SKPaymentTransactionStatePurchased
 - [Testing an interrupted purchase](../testing-an-interrupted-purchase.md)
 - [Testing resubscribing from the subscriptions page](../testing-resubscribing-from-the-subscriptions-page.md)
 
-#### Discussion
+## Discussion
 
 Your application should provide the content the user purchased.
 

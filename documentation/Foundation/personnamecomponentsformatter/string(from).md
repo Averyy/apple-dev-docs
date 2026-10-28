@@ -25,7 +25,7 @@ func string(from components: PersonNameComponents) -> String
 - (NSString *) stringFromPersonNameComponents:(NSPersonNameComponents *) components;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representation of the given name components.
 

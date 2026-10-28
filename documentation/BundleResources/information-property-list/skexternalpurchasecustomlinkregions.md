@@ -20,7 +20,7 @@ An array of country code strings that indicate the regions where your app suppor
 - **Name**: `SKExternalPurchaseCustomLinkRegions`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](../entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement and uses the [`ExternalPurchaseCustomLink`](../../StoreKit/externalpurchasecustomlink.md) API.
 

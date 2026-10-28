@@ -22,11 +22,11 @@ var managedObjectContext: NSManagedObjectContext { get }
 @property (nonatomic, strong, readonly) NSManagedObjectContext * managedObjectContext;
 ```
 
-#### Discussion
+## Discussion
 
 The document automatically creates a managed object context using its persistent store coordinator.
 
-##### Special considerations
+### Special considerations
 
 You must not use the document’s managed object context in [`writeAdditionalContent(_:to:originalContentsURL:)`](./writeadditionalcontent%28_,to,originalcontentsurl%29.md), or any of the asynchronous [`UIDocument`](../uidocument.md) methods.
 

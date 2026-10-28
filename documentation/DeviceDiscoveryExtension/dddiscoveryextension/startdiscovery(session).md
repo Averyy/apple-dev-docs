@@ -20,7 +20,7 @@ Begins the extension’s device discovery process.
 func startDiscovery(session: DDDiscoverySession)
 ```
 
-#### Discussion
+## Discussion
 
 The system controls the discovery process using this function by calling it when [`AVRoutePickerView`](../../AVKit/avroutepickerview.md) displays. You code your extension to search the local network or paired Bluetooth devices for a third-party device of interest that you want the system to include in the picker.
 

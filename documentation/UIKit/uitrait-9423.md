@@ -19,7 +19,7 @@ A type representing a trait in a trait collection.
 typealias UITrait = any UITraitDefinition.Type
 ```
 
-#### Discussion
+## Discussion
 
 The type of a trait serves as a key to uniquely identify a trait in a trait collection. The [`subscript(_:)`](./uitraitcollection/subscript%28_%29-96v58.md) method of [`UITraitCollection`](./uitraitcollection.md) and [`registerForTraitChanges(_:handler:)`](./uitraitchangeobservable-67e94/registerfortraitchanges%28_,handler%29.md) are two examples that take trait types to identify traits in the collection.
 

@@ -25,7 +25,7 @@ func CMTimeRangeFromTimeToTime(start: CMTime, end: CMTime) -> CMTimeRange
 extern CMTimeRange CMTimeRangeFromTimeToTime(CMTime start, CMTime end);
 ```
 
-#### Return Value
+## Return Value
 
 A valid time range structure.
 

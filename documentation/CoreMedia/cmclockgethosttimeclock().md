@@ -25,7 +25,7 @@ func CMClockGetHostTimeClock() -> CMClock
 extern CMClockRefCMClockGetHostTimeClock();
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, the host time clock uses `mach_absolute_time` but returns a value with a large integer timescale (e.g. nanoseconds).
 

@@ -19,7 +19,7 @@ class VZSerialPortAttachment
 @interface VZSerialPortAttachment : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create a [`VZSerialPortAttachment`](./vzserialportattachment.md) object directly. Instead, instantiate a concrete subclass such as [`VZFileHandleSerialPortAttachment`](./vzfilehandleserialportattachment.md) to configure how the virtual machine’s serial port connects with the host computer.
 

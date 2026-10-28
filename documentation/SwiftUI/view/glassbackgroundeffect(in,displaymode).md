@@ -16,11 +16,11 @@ nonisolated
 func glassBackgroundEffect<S>(in shape: S, displayMode: GlassBackgroundDisplayMode = .always) -> some View where S : InsettableShape
 ```
 
-#### Return Value
+## Return Value
 
 A view with a glass background.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a 3D glass background material that includes thickness, specularity, glass blur, shadows, and other effects. Because of its physical depth, the glass background influences z-axis layout.
 

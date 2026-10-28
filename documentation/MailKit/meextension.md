@@ -20,7 +20,7 @@ protocol MEExtension : NSObjectProtocol
 @protocol MEExtension <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To implement an app extension, you provide an object that conforms to the [`MEExtension`](./meextension.md) protocol. The [`MEExtensionCapabilities`](../BundleResources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities.md) key of your extension’s `Info.plist` defines the capabilities that you support, as follows:
 

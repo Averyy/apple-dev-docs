@@ -28,7 +28,7 @@ var currentDownloads: [BADownload] { get async throws }
 - (void) fetchCurrentDownloadsWithCompletionHandler:(void (^)(NSArray<BADownload *> *downloads, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

@@ -21,7 +21,7 @@ The duration.
 var duration: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Precondition: `duration >= 0`
 

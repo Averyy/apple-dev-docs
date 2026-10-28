@@ -26,7 +26,7 @@ func endAccessingResources()
 - (void) endAccessingResources;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method as soon as you have finished using the tags managed by this request. If needed, this method will be called by the system when the resource request object is deallocated.
 

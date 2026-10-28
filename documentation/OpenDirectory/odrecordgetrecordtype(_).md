@@ -20,7 +20,7 @@ func ODRecordGetRecordType(_ record: ODRecordRef!) -> Unmanaged<CFString>!
 extern CFStringRefODRecordGetRecordType(ODRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The type of the record.
 

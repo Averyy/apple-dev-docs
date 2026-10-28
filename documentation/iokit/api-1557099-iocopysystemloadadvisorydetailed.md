@@ -16,11 +16,11 @@ Indicates how user activity, battery level, and thermal level each contribute to
 CFDictionaryRef IOCopySystemLoadAdvisoryDetailed(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a CFDictionaryRef, or NULL on error. Caller must release the returned dictionary.
 
-#### Discussion
+## Discussion
 
 See dictionary keys defined above.
 

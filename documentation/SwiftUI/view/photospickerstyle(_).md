@@ -19,7 +19,7 @@ nonisolated
 func photosPickerStyle(_ style: PhotosPickerStyle) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A Photos picker that uses the specified mode.
 

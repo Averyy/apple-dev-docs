@@ -16,7 +16,7 @@ The appearance of the Apple Pay button, such as a black button with white letter
 attribute ApplePayButtonStyle buttonstyle;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of button styles, see [`ApplePayButtonStyle`](../applepaybuttonstyle.md).
 

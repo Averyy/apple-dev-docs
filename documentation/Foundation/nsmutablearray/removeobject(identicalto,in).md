@@ -25,7 +25,7 @@ func removeObject(identicalTo anObject: Any, in range: NSRange)
 - (void) removeObjectIdenticalTo:(ObjectType) anObject inRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method determines a match by comparing the address of `anObject` to the addresses of objects in the receiver. If the array does not contain `anObject` within `aRange`, the method has no effect (although it does incur the overhead of searching the contents).
 

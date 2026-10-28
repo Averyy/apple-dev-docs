@@ -19,7 +19,7 @@ var createsNewApplicationInstance: Bool { get set }
 @property BOOL createsNewApplicationInstance;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../../Swift/true.md), the system always launches a new version of the app, even if an existing copy is already running. The default value of this property is [`false`](../../../Swift/false.md), which causes the system to open the already running app when present.
 

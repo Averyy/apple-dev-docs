@@ -23,7 +23,7 @@ func deselectAssets(withIdentifiers identifiers: [String])
 - (void) deselectAssetsWithIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
-#### Discussion
+## Discussion
 
 This method ignores assets that are invalid or aren’t in a selected state, and if you don’t specify a library when calling [`init(photoLibrary:)`](../phpickerconfiguration-swift.struct/init%28photolibrary%29.md).
 

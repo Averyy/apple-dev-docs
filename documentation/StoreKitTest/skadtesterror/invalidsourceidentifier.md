@@ -17,7 +17,7 @@ The postback’s identifier isn’t two, three, or four digits.
 static var invalidSourceIdentifier: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 A valid postback includes two to four digits of the impression’s [`sourceIdentifier`](../../StoreKit/skadimpression/sourceidentifier.md). For more information about the varying length of source identifiers, see [Receiving postbacks in multiple conversion windows](../../StoreKit/receiving-postbacks-in-multiple-conversion-windows.md).
 

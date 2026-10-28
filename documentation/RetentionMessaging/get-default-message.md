@@ -15,7 +15,7 @@ Gets the default message for a specific product in a specific locale, if it’s 
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to retrieve the default message you previously configured for a specific product in a specific locale. If a default message isn’t configured, the endpoint returns an `HTTP 404` error with [`DefaultMessageNotFoundError`](./defaultmessagenotfounderror.md).
 

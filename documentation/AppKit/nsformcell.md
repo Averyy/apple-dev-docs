@@ -19,7 +19,7 @@ class NSFormCell
 @interface NSFormCell : NSActionCell
 ```
 
-#### Overview
+## Overview
 
 An `NSFormCell` object implements the user interface of an [`NSForm`](./nsform.md) object.
 

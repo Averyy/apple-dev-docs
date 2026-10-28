@@ -29,7 +29,7 @@ var verticalAlignmentMode: SKLabelVerticalAlignmentMode { get set }
 
 - [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [`SKLabelVerticalAlignmentMode`](../sklabelverticalalignmentmode.md). The default value of this property is [`SKLabelVerticalAlignmentMode.baseline`](../sklabelverticalalignmentmode/baseline.md).
 

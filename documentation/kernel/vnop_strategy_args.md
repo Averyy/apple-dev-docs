@@ -16,7 +16,7 @@ struct vnop_strategy_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_BLOCKMAP() returns the information required to pass a request for a contiguous region down to a device's strategy routine.
 

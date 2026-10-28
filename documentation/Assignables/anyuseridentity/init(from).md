@@ -18,7 +18,7 @@ Creates a new instance by decoding from the given decoder.
 init(from decoder: any Decoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
 

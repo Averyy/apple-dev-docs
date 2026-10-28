@@ -20,7 +20,7 @@ The orientation with which the system uses to apply the field-of-view degrees.
 var fieldOfViewOrientation: CameraFieldOfViewOrientation
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property determines the orientation that the system uses to apply the [`fieldOfViewInDegrees`](./fieldofviewindegrees.md) value.
 

@@ -23,7 +23,7 @@ static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<NSExtens
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidEnterBackgroundMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSExtensionContext.DidEnterBackgroundMessage`](../../nsextensioncontext/didenterbackgroundmessage.md).
 

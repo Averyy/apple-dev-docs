@@ -10,13 +10,13 @@ framework: "Swift-Org/WasmGuide"
 
 Make your code cross-platform and compatible with WebAssembly by checking for libraries and APIs available for this platform.
 
-#### Overview
+## Overview
 
 In the currently standardized form widely supported by browsers and other hosts, WebAssembly is a 32-bit architecture. You have to take this into account when porting code from other platforms, since `Int` type is a signed 32-bit integer, and `UInt` is an unsigned 32-bit integer when building with Wasm. You’ll need to audit codepaths that cast 64-bit integers to `Int` or `UInt`, and a good amount of cross-platform test coverage can help with that.
 
 Additionally, there are differences in APIs exposed by the standard C library and Swift core libraries which we discuss in the next few subsections.
 
-#### `WASILibc` module
+## `WASILibc` module
 
 When porting existing projects from other platforms to Wasm you might stumble upon code that relies on importing a platform-specific [C library](https://en.wikipedia.org/wiki/C_standard_library) module directly. It looks like `import Glibc` on Linux, or `import Darwin` on Apple platforms. Fortunately, most of the standard C library APIs are available when using Swift for Wasm, you just need to use `import WASILibc` to get access to it. You will most likely want to preserve compatibility with other platforms, thus your imports would look like this:
 
@@ -30,11 +30,11 @@ import WASILibc
 #endif
 ```
 
-##### Limitations
+### Limitations
 
 WebAssembly and [WASI](https://wasi.dev/) provide a constrained environment. Multi-threading, for example, is an experimental feature and is only supported in development snapshots from the `main` branch. Please be aware of these limitations when porting your code, which also has an impact on what can be supported in the Swift Foundation library.
 
-#### Swift Foundation and Dispatch
+## Swift Foundation and Dispatch
 
 [The Foundation core library](https://swift.org/core-libraries/#foundation) is available in Wasm, but in a limited capacity. The main reason is that [the Dispatch core library](https://swift.org/core-libraries/#libdispatch) is unavailable, as it relies heavily on multi-threading support that is still experimental in Swift for WebAssembly. Many Foundation APIs rely on the presence of Dispatch under the hood. A few other types are unavailable in browsers or aren’t standardized in WASI hosts, such as support for sockets and low-level networking, and they had to be disabled. These types are therefore absent in Foundation for Wasm:
 
@@ -63,11 +63,11 @@ WebAssembly and [WASI](https://wasi.dev/) provide a constrained environment. Mul
 | `Timer` | ❌ Unavailable |
 | `UserDefaults` | ✅ Available after 6.0 |
 
-#### Swift Testing
+## Swift Testing
 
 The new [Swift Testing](https://developer.apple.com/documentation/testing) library is the recommended way to write tests for your Wasm projects. All of its cross-platform APIs are available on WebAssembly, providing a modern and expressive way to validate your code.
 
-#### XCTest
+## XCTest
 
 [The swift-corelibs-xctest project](https://github.com/swiftlang/swift-corelibs-xctest) is available on WebAssembly platforms, and you can use it to write tests for your Wasm projects.
 

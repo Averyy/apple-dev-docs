@@ -24,7 +24,7 @@ protocol ASAuthorizationPublicKeyCredentialAssertion : ASPublicKeyCredential
 @protocol ASAuthorizationPublicKeyCredentialAssertion <ASPublicKeyCredential>
 ```
 
-#### Overview
+## Overview
 
 Both [`ASAuthorizationSecurityKeyPublicKeyCredentialAssertion`](./asauthorizationsecuritykeypublickeycredentialassertion.md) and [`ASAuthorizationPlatformPublicKeyCredentialAssertion`](./asauthorizationplatformpublickeycredentialassertion.md) adhere to this interface.
 

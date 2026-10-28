@@ -19,7 +19,7 @@ func updateChangeCount(_ change: NSDocument.ChangeType)
 - (void) updateChangeCount:(NSDocumentChangeType) change;
 ```
 
-#### Discussion
+## Discussion
 
 The change count indicates the document’s edited status; if the change count is 0, the document has no changes to save, and if the change count is greater than 0, the document has been edited and is unsaved. If you are implementing undo and redo in an app, you should increment the change count every time you create an undo group and decrement the change count when an undo or redo operation is performed.
 

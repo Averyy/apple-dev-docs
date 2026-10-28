@@ -19,7 +19,7 @@ func withLocale(_ locale: Locale?) -> NSImage
 - (NSImage *) imageWithLocale:(NSLocale *) locale;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver contains locale-sensitive representations, the returned image will prefer to draw using representations appropriate for the specified locale. If locale is `nil`, the returned image uses the default behavior of choosing representations appropriate for the system’s currently-configured locale.
 

@@ -19,7 +19,7 @@ The color of an entity unmodified by lighting.
 var baseColor: CustomMaterial.BaseColor { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In physically based rendering, the base color of an entity is its color before RealityKit applies any lighting calculations or other rendering calculations to it. With custom materials, the base color `texture` and `tint` are available as inputs in your surface shader. With custom materials, RealityKit doesn’t automatically use the values set on the [`baseColor`](./basecolor-swift.property.md) property. The material’s surface shader is responsible for calculating or setting the actual base color value for rendering by calling `params.surface().set_base_color()`.
 

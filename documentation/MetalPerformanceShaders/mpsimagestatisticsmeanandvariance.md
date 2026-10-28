@@ -24,7 +24,7 @@ class MPSImageStatisticsMeanAndVariance
 @interface MPSImageStatisticsMeanAndVariance : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 The mean and variance values are written to the destination image at the following pixel locations:
 

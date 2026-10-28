@@ -19,7 +19,7 @@ func addWindowsItem(_ win: NSWindow, title string: String, filename isFilename: 
 - (void) addWindowsItem:(NSWindow *) win title:(NSString *) string filename:(BOOL) isFilename;
 ```
 
-#### Discussion
+## Discussion
 
 You rarely need to invoke this method directly because Cocoa places an item in the Window menu automatically whenever you set the title of an `NSWindow` object.
 

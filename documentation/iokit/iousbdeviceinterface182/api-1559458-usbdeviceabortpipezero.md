@@ -16,11 +16,11 @@ Aborts a transaction on the default control pipe.
 IOReturn (*USBDeviceAbortPipeZero)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNotOpen if the device is not open for exclusive access.
 
-#### Discussion
+## Discussion
 
 The device must be open to use this function.
 

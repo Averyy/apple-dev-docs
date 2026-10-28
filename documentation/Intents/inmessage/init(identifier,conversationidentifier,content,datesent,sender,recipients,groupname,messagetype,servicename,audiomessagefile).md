@@ -23,11 +23,11 @@ convenience init(identifier: String, conversationIdentifier: String?, content: S
 - (instancetype) initWithIdentifier:(NSString *) identifier conversationIdentifier:(NSString *) conversationIdentifier content:(NSString *) content dateSent:(NSDate *) dateSent sender:(INPerson *) sender recipients:(NSArray<INPerson *> *) recipients groupName:(INSpeakableString *) groupName messageType:(INMessageType) messageType serviceName:(NSString *) serviceName audioMessageFile:(INFile *) audioMessageFile;
 ```
 
-#### Return Value
+## Return Value
 
 A message that SiriKit configures with the specified parameters, or `nil` if there was a problem creating the message.
 
-#### Discussion
+## Discussion
 
 Use the `conversationIdentifier` parameter to associate individual messages with a larger discussion among a specific group of people.
 

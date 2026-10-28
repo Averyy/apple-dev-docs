@@ -19,7 +19,7 @@ func updateStatus(_ inSender: Any!) -> Bool
 - (BOOL) updateStatus:(id) inSender;
 ```
 
-#### Discussion
+## Discussion
 
 Calls to [`updateStatus(_:)`](./updatestatus%28_%29.md) return [`true`](../../Swift/true.md) if in the unlocked state, [`false`](../../Swift/false.md) otherwise.
 

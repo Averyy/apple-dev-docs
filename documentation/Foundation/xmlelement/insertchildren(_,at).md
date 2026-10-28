@@ -20,7 +20,7 @@ func insertChildren(_ children: [XMLNode], at index: Int)
 - (void) insertChildren:(NSArray<NSXMLNode *> *) children atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Insertion of the node increases the indexes of sibling nodes after it by the count of `children`.
 

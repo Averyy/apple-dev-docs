@@ -19,7 +19,7 @@ init?(posixUID uid: uid_t, authority: CBIdentityAuthority)
 + (CBUserIdentity *) userIdentityWithPosixUID:(uid_t) uid authority:(CBIdentityAuthority *) authority;
 ```
 
-#### Return Value
+## Return Value
 
 The user identity with the given UID in the specified identity authority, or `nil` if no identity exists with the specified UID.
 

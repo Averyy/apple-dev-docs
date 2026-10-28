@@ -20,7 +20,7 @@ struct CMSSignedAttributes
 enum CMSSignedAttributes : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these flags with the [`CMSEncoderAddSignedAttributes(_:_:)`](./cmsencoderaddsignedattributes%28_,_%29.md) method to cause the encoder to add attributes to a signed message that can be interpreted by the recipient. These attributes are not used for unsigned messages.
 

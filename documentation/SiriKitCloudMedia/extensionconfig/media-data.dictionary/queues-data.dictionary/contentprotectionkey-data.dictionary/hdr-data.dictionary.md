@@ -15,7 +15,7 @@ Headers to include with requests to the content protection key endpoint.
 object ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary that contains the header names and their values.
 

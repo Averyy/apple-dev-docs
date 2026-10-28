@@ -22,7 +22,7 @@ func GLKVector3AllEqualToVector3(_ vectorLeft: GLKVector3, _ vectorRight: GLKVec
 static bool GLKVector3AllEqualToVector3(GLKVector3 vectorLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if all of the vectors’ components are equal, [`false`](../Swift/false.md) otherwise.
 

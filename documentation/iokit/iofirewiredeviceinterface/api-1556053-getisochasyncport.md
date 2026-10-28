@@ -16,11 +16,11 @@ Returns the notification port used for async and isoch callbacks
 mach_port_t (*GetIsochAsyncPort)(IOFireWireLibDeviceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the mach_port used for notifications
 
-#### Discussion
+## Discussion
 
 If necessary GetIsochAsyncPort will allocate the port.
 

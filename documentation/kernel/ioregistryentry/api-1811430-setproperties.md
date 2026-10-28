@@ -12,11 +12,11 @@ virtual IOReturn setProperties(
  OSObject *properties );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code to be returned to the caller.
 
-#### Overview
+## Overview
 
 This method is not implemented by IORegistryEntry, but is available to kernel and non-kernel clients to set properties in a registry entry. IOUserClient provides connection based, more controlled access to this functionality and may be more appropriate for many uses, since there is no differentiation between clients available to this method.
 

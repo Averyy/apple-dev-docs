@@ -24,7 +24,7 @@ case applicationPassword
 LACredentialTypeApplicationPassword
 ```
 
-#### Discussion
+## Discussion
 
 If not set, the user is prompted for their password when needed. When entered using the provided authentication dialog, the entered text is stored as UTF-8 encoded data.
 

@@ -21,7 +21,7 @@ A floating-point numeric type.
 protocol FloatingPoint : Hashable, SignedNumeric, Strideable where Self == Self.Magnitude
 ```
 
-#### Overview
+## Overview
 
 Floating-point types are used to represent fractional numbers, like 5.5, 100.0, or 3.14159274. Each floating-point type has its own possible range and precision. The floating-point types in the standard library are `Float`, `Double`, and `Float80` where available.
 
@@ -64,11 +64,11 @@ let magnitude = 1.0625 * Double(2 ** 3)
 
 Types that conform to the `FloatingPoint` protocol provide most basic (clause 5) operations of the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933). The base, precision, and exponent range are not fixed in any way by this protocol, but it enforces the basic requirements of any IEEE 754 floating-point type.
 
-### Additional Considerations
+## Additional Considerations
 
 In addition to representing specific numbers, floating-point types also have special values for working with overflow and nonnumeric results of calculation.
 
-#### Infinity
+## Infinity
 
 Any value whose magnitude is so great that it would round to a value outside the range of representable numbers is rounded to *infinity*. For a type `F`, positive and negative infinity are represented as `F.infinity` and `-F.infinity`, respectively. Positive infinity compares greater than every finite value and negative infinity, while negative infinity compares less than every finite value and positive infinity. Infinite values with the same sign are equal to each other.
 
@@ -80,7 +80,7 @@ print(values.sorted())
 
 Operations with infinite values follow real arithmetic as much as possible: Adding or subtracting a finite value, or multiplying or dividing infinity by a nonzero finite value, results in infinity.
 
-#### NaN (“not a number”)
+## NaN (“not a number”)
 
 Floating-point types represent values that are neither finite numbers nor infinity as NaN, an abbreviation for “not a number.” Comparing a NaN with any value, including another NaN, results in `false`.
 

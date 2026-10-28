@@ -21,7 +21,7 @@ let kSecDigestTypeAttribute: CFString
 extern CFStringRef const kSecDigestTypeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 Use one of the values listed in [Digest Types](./transform-attributes.md#Digest-Types).
 

@@ -21,7 +21,7 @@ func QLPreviewRequestSetURLRepresentation(_ preview: QLPreviewRequest!, _ url: C
 extern void QLPreviewRequestSetURLRepresentation(QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns preview data at the given URL to the client. How the Quick Look feature handles the data depends upon the value of the given content type UTI. The content data of the preview must be of a native Quick Look type. Quick Look supports the following UTIs:
 

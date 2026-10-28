@@ -17,7 +17,7 @@ optional func systemExtensionWillBecomeDisabled(_ systemExtensionInfo: OSSystemE
 - (void) systemExtensionWillBecomeDisabled:(OSSystemExtensionInfo *) systemExtensionInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method will be called when the user disables an already enabled system extension, or when the system extension is first installed and is in the disabled state.
 

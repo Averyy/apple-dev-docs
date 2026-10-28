@@ -21,7 +21,7 @@ Replaces the given index with its predecessor.
 func formIndex(before index: inout Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: To improve performance, this method does not validate that the given index is valid before decrementing it. Index validation is deferred until the resulting index is used to access an element. This optimization may be removed in future versions; do not rely on it.
 

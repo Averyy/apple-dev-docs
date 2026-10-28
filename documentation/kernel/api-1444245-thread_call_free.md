@@ -15,11 +15,11 @@ Release a thread call.
 boolean_t thread_call_free(thread_call_t call);
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the thread call has been successfully released, else FALSE.
 
-#### Discussion
+## Discussion
 
 Should only be used on thread calls allocated with thread_call_allocate or thread_call_allocate_with_priority. Once thread_call_free has been called, no other operations may be performed on a thread call. If the thread call is currently pending, thread_call_free will return FALSE and will have no effect. Calling thread_call_free from a thread call's own callback is safe; the work item is not considering "pending" at that point.
 

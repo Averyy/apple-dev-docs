@@ -17,11 +17,11 @@ Return a directory containing symbol graph files for the given target and option
 func getSymbolGraph(for target: Target, options: SymbolGraphOptions) throws -> SymbolGraphResult
 ```
 
-#### Return Value
+## Return Value
 
 The symbol graphs for the target you specify.
 
-#### Discussion
+## Discussion
 
 If the symbol graphs need to be created or updated first, they will be. Swift package manager or an IDE may generate these symbol graph files in any way it sees fit.
 

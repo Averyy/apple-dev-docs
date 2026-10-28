@@ -16,7 +16,7 @@ Configures the receiver to allow requests from multiple threads to the remote ob
 - (void) enableMultipleThreads;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.5 and later, multiple thread support is enabled by default and this method does nothing.
 

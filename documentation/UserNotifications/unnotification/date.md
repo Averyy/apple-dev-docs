@@ -33,7 +33,7 @@ var date: Date { get }
 @property (atomic, copy, readonly) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this date to the user in Notification Center.
 

@@ -19,7 +19,7 @@ The radius of inner points relative to outer points, in unit coordinate space (0
 var innerRadius: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.5` creates inner points halfway to the center.
 

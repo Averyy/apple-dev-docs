@@ -5,13 +5,13 @@
 
 Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
 
-#### Overview
+## Overview
 
 When you include a map element on your webpage, your webpage loads a version of MapKit JS. Load the most recent version of MapKit JS available whenever possible.
 
 Load MapKit JS directly using a `<script>` tag, or by using the `@apple/mapkit-loader` package; save payload size and bandwidth by specifying only the libraries that you need. Increase the security of your website by implementing a Content Security Policy.
 
-#### Load with the MapKit JS Loader
+## Load with the MapKit JS Loader
 
 The `@apple/mapkit-loader` package is a convenient way to load MapKit JS: it provides a single API that you can use to load MapKit JS directly from your JavaScript or TypeScript source code, without having access to HTML.
 
@@ -33,7 +33,7 @@ Your application code needs to call the `load()` function as early as possible, 
 
 The package automatically resolves type definitions for the interfaces that you load.
 
-#### Select MapKit JS libraries
+## Select MapKit JS libraries
 
 Pick only the interfaces you need to optimize your app load time. MapKit JS divides its interfaces into libraries that you can specify when loading the framework:
 
@@ -50,7 +50,7 @@ You can set the libraries to load statically by defining them in the `libraries`
 
 You can load additional libraries using the [`load()`](./mapkit/load.md) method after MapKit JS initialization; the method returns a promise that resolves when the libraries finish loading. The [`init()`](./mapkit/init.md) method also offers a `libraries` property in [`MapKitInitializationOptions`](./mapkitinitializationoptions.md).
 
-#### Load with a script tag
+## Load with a script tag
 
 Load MapKit JS through autoupdate URLs (which are backward-compatible with previous MapKit JS versions), as in the example below:
 
@@ -66,7 +66,7 @@ See [Creating a Maps token](./creating-a-maps-token.md) to obtain a Maps token a
 
 Once the callback triggers, `mapkit` is available as a global object. Install `@types/apple-mapkit` separately to access its type definitions.
 
-##### Select script element attributes
+### Select script element attributes
 
 The `script` tag you use to load MapKit JS supports several attribute elements that allow you to customize the loading of the framework to support only the features you need.
 
@@ -92,7 +92,7 @@ The data attributes you can set on the `script` element are:
 - **`data-libraries`**: Required; this is a comma-separated list of libraries to load at initialization. See the list of available libraries and the services they provide below.
 - **`data-token`**: Required unless you intend to call [`init()`](./mapkit/init.md) later. See [Creating a Maps token](./creating-a-maps-token.md) to obtain a Maps token.
 
-#### Choose specific releases using semantic versioning
+## Choose specific releases using semantic versioning
 
 MapKit JS follows semantic versioning with each release. As a result, you have full control over when to upgrade to a new version of MapKit JS. Each version follows the standard semantic versioning pattern `MAJOR.MINOR.PATCH,` which conveys the following information:
 
@@ -126,7 +126,7 @@ Here, the script tag pins the `major.minor` version at `6.0`, and the server aut
 
 Autoupdate URLs have a cache time of 5 minutes.
 
-#### Use explicitly versioned URLs
+## Use explicitly versioned URLs
 
 If your code depends upon a specific MapKit JS version, each version of MapKit JS has a unique URL. Linking to a specific version ensures that your app always gets that exact version of MapKit JS.
 
@@ -144,7 +144,7 @@ Below is an example of a version URL, loading MapKit JS with a `<script>` tag:
 
 Browsers cache version URLs for a longer time. Use versioned URLs if you want to be in full control of when MapKit JS updates and get the benefits of browser caching.
 
-#### Load the full bundle of MapKit JS
+## Load the full bundle of MapKit JS
 
 > **Note**:  The full bundle does not contain newer features like [`LookAround`](./lookaround.md).
 
@@ -176,7 +176,7 @@ The loading of individual libraries isn’t applicable to the full bundle.
 
 MapKit JS Loader doesn’t support loading the full bundle.
 
-#### Implement a Content Security Policy
+## Implement a Content Security Policy
 
 To mitigate possible security attacks such as data injection or Cross-Site Scripting (XSS), consider implementing Content Security Policy (CSP) in your app. MapKit JS supports a `nonce`-based CSP.
 

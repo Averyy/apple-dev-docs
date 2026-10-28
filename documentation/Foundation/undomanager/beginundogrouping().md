@@ -25,7 +25,7 @@ func beginUndoGrouping()
 - (void) beginUndoGrouping;
 ```
 
-#### Discussion
+## Discussion
 
 All individual undo operations before a subsequent [`endUndoGrouping()`](./endundogrouping%28%29.md) message are grouped together and reversed by a later [`undo()`](./undo%28%29.md) message. By default undo groups are begun automatically at the start of the event loop, but you can begin your own undo groups with this method, and nest them within other groups.
 

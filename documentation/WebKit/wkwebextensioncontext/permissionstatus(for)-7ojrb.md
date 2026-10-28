@@ -23,7 +23,7 @@ func permissionStatus(for url: URL) -> WKWebExtensionContext.PermissionStatus
 - (WKWebExtensionContextPermissionStatus) permissionStatusForURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 URLs and match patterns can be granted on a per-tab basis. When the tab is known, access checks should always use the method that checks in a tab.
 

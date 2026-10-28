@@ -25,11 +25,11 @@ class func repeatForever(_ action: SKAction) -> SKAction
 + (SKAction *) repeatActionForever:(SKAction *) action;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the associated action runs to completion and then repeats.
 

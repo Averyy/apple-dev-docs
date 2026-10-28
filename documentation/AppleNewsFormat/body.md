@@ -22,11 +22,11 @@ object Body
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 An article can have multiple `body` components. One `body` component can contain multiple paragraphs.
 
-##### Example
+### Example
 
 ```json
 {

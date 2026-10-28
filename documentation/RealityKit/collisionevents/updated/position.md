@@ -20,7 +20,7 @@ A position representing the estimated point of contact.
 let position: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 The point is an average calculated from the intersecting shapes. It’s specified in the coordinate space of the physics simulation, which means it’s relative to [`nearestSimulationEntity(for:)`](../../physicssimulationcomponent/nearestsimulationentity%28for%29.md). If the physics origin is `nil`, the point is given in scene space.
 

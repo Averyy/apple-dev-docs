@@ -24,7 +24,7 @@ var maxAnisotropy: Int { get set }
 @property (nonatomic) NSUInteger maxAnisotropy;
 ```
 
-#### Discussion
+## Discussion
 
 Values need to be between `1` and `16`, inclusive. The default value is `1`.
 

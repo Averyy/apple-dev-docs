@@ -19,7 +19,7 @@ The preferred corner radius, using a continuous corner curve, for the background
 @property (nonatomic) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 This value doesn’t apply to the custom view. The default value is `0.0`.
 

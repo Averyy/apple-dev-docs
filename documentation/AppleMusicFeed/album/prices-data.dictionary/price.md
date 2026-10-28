@@ -15,7 +15,7 @@ Information about a pricing offer.
 object Album.Prices.Price
 ```
 
-#### Discussion
+## Discussion
 
 See the [`Album.Prices`](../prices-data.dictionary.md) data example.
 

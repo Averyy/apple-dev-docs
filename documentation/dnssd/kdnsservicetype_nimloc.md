@@ -23,7 +23,7 @@ var kDNSServiceType_NIMLOC: Int { get }
 kDNSServiceType_NIMLOC
 ```
 
-#### Discussion
+## Discussion
 
 Nimrod Locator.
 

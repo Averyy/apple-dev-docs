@@ -23,7 +23,7 @@ case inherited
 NSFileProviderNamespacePolicyInherited
 ```
 
-#### Discussion
+## Discussion
 
 This is the default namespace policy on every item other than the root.
 

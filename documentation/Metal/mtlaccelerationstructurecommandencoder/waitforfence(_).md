@@ -25,7 +25,7 @@ func waitForFence(_ fence: any MTLFence)
 - (void) waitForFence:(id<MTLFence>) fence;
 ```
 
-#### Discussion
+## Discussion
 
 You can synchronize memory operations of an acceleration structure pass that access resources with an [`MTLFence`](../mtlfence.md). This method instructs the GPU to wait until another pass updates `fence` before running the acceleration structure pass. The fence indicates when the pass can access those resources without a race condition.
 
@@ -34,7 +34,7 @@ For more information about synchronization with fences, see:
 - [Resource synchronization](../resource-synchronization.md)
 - [Synchronizing passes with a fence](../synchronizing-passes-with-a-fence.md)
 
-##### Reuse a fence by waiting first and updating second
+### Reuse a fence by waiting first and updating second
 
 When encoding an acceleration structure pass that reuses a fence, wait for other passes to update the fence before repurposing that fence to notify subsequent passes with an update:
 

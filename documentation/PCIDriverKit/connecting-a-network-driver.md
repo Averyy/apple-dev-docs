@@ -11,7 +11,7 @@ Create an Ethernet driver that interfaces with the system’s network protocol s
 - macOS 11.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 The `NetworkingDriverKitSample` project provides an example of how to write a driver with the NetworkingDriverKit APIs. Once installed and started, it appears like any other networking driver, viewable in IORegistry, System Settings, and the command-line interface `ifconfig`.
 
@@ -24,7 +24,7 @@ The project contains two targets:
 - NetworkingDriverKitSample — The sample driver, written in C++.
 - NetworkingDriverKitSampleApp — A SwiftUI-based app that uses the SystemExtensions framework to install the driver.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the sample code project, you first need to build and run `NetworkingDriverKitSampleApp`, which installs the dexts.
 
@@ -62,7 +62,7 @@ Back in Xcode, do the following:
 1. In the Project navigator’s Signing & Capabilities tab, disable “Automatically manage signing,” so that you can manually assign the provisioning profile. For each target, enter the unique bundle ID you chose earlier in the Bundle Identifier field, and use the Provisioning Profile popup to select the profile you downloaded in the previous two steps.
 2. If you want to run `NetworkingDriverKitSampleApp` directly from Xcode, enter dext development mode with the Terminal command `systemextensionsctl developer on` (for more information, see [Debugging and testing system extensions](../DriverKit/debugging-and-testing-system-extensions.md)). Alternately, you can drag the built `DriverKitSample.app` from the build directory into the `/Applications` directory and run it from there.
 
-##### Use the System Extensions framework to install the driver extension
+### Use the System Extensions framework to install the driver extension
 
 The `NetworkingDriverKitSampleApp` target declares `NetworkingDriverKitSample` as a dependency, so building the app target builds the dext and its installer together. When it’s running, `NetworkingDriverKitSampleApp` shows a single window with an Install Dext button.
 
@@ -95,7 +95,7 @@ You can also inspect its entry in the I/O Registry with the Terminal command `io
     | +-o NetworkingDriverKitSample  <class IOUserNetworkEthernet, id 0x100028cee, registered, matched, active, busy 0 (4 ms), retain 16>
 ```
 
-##### Start the driver by creating transmit and receive queues
+### Start the driver by creating transmit and receive queues
 
 At startup, NetworkingDriverKit calls the following methods on a driver as part of its lifecycle:
 
@@ -186,7 +186,7 @@ if (ret != kIOReturnSuccess)
     goto disable;
 ```
 
-##### Receive packets in an action callback
+### Receive packets in an action callback
 
 When the timer fires, it calls the sample’s `ReceiveTimer` callback. For the purposes of the sample project, this creates a fake ICMP request packet that it can submit to the receive-completion queue. For each packet dequeued from the [`IOUserNetworkRxSubmissionQueue`](../NetworkingDriverKit/iousernetworkrxsubmissionqueue.md), this method performs the following steps:
 
@@ -245,7 +245,7 @@ if (ret != kIOReturnSuccess) {
 }
 ```
 
-##### Transmit packets in an action callback
+### Transmit packets in an action callback
 
 The `Start` method created the action `TxPacketAvailable` to handle callbacks when the networking stack places packets on the transmit-submssion queue. Like the packet-receive handler, this method dequeues available packets, this time from the [`IOUserNetworkTxSubmissionQueue`](../NetworkingDriverKit/iousernetworktxsubmissionqueue.md), and loops over them. For the purposes of the sample, this method implementation just logs the data address, data offset, and link header length of each packet, and enqueues it in the [`IOUserNetworkTxCompletionQueue`](../NetworkingDriverKit/iousernetworktxcompletionqueue.md).
 
@@ -276,7 +276,7 @@ if (dequeueCount) {
 }
 ```
 
-##### Remove the running driver
+### Remove the running driver
 
 When shipping a DriverKit driver, people delete the driver by removing the parent app from their `/Applications` directory. If you’re using dext developer mode to build and run the driver from Xcode, then you need to remove the driver manually.
 

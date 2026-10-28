@@ -25,7 +25,7 @@ func awakeFromInsert()
 - (void) awakeFromInsert;
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this method to initialize special default property values. This method is invoked only once in the object’s lifetime.
 
@@ -33,7 +33,7 @@ If you want to set attribute values in an implementation of this method, you sho
 
 > ❗ **Important**:  Subclasses must invoke super’s implementation before performing their own initialization.
 
-##### Special Considerations
+### Special Considerations
 
 If you create a managed object then perform undo operations to bring the managed object context to a state prior to the object’s creation, then perform redo operations to bring the managed object context back to a state after the object’s creation, [`awakeFromInsert()`](./awakefrominsert%28%29.md) is *not* invoked a second time.
 

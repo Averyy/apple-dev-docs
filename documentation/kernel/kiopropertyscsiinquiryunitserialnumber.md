@@ -13,7 +13,7 @@
 #define kIOPropertySCSIINQUIRYUnitSerialNumber
 ```
 
-#### Discussion
+## Discussion
 
 Key that describes the INQUIRY Unit Serial Number in the IORegistry.
 

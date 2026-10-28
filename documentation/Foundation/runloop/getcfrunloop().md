@@ -25,11 +25,11 @@ func getCFRunLoop() -> CFRunLoop
 - (CFRunLoopRef) getCFRunLoop;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s underlying [`CFRunLoop`](../../CoreFoundation/cfrunloop.md) object.
 
-#### Discussion
+## Discussion
 
 You can use the returned run loop to configure the current run loop using Core Foundation function calls. For example, you might use this function to set up a run loop observer.
 

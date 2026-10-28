@@ -19,7 +19,7 @@ func draw(withExpansionFrame cellFrame: NSRect, in view: NSView)
 - (void) drawWithExpansionFrame:(NSRect) cellFrame inView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the cell to perform custom expansion tool tip drawing. By default, `NSCell` simply calls [`draw(withFrame:in:)`](./draw%28withframe,in%29.md).
 

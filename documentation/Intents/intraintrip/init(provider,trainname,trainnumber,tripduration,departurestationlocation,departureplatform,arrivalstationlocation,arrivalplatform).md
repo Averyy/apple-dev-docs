@@ -24,7 +24,7 @@ init(provider: String?, trainName: String?, trainNumber: String?, tripDuration: 
 - (instancetype) initWithProvider:(NSString *) provider trainName:(NSString *) trainName trainNumber:(NSString *) trainNumber tripDuration:(INDateComponentsRange *) tripDuration departureStationLocation:(CLPlacemark *) departureStationLocation departurePlatform:(NSString *) departurePlatform arrivalStationLocation:(CLPlacemark *) arrivalStationLocation arrivalPlatform:(NSString *) arrivalPlatform;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTrainTrip`](../intraintrip.md) object or `nil` if unable to create one.
 

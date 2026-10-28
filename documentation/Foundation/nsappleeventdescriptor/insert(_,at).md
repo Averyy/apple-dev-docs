@@ -20,7 +20,7 @@ func insert(_ descriptor: NSAppleEventDescriptor, at index: Int)
 - (void) insertDescriptor:(NSAppleEventDescriptor *) descriptor atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Because it actually replaces the descriptor, if any, at the specified position, this method might better be called `replaceDescriptor:atIndex:`. The receiver must be a list descriptor. The indices are one-based. Currently provides no indication if an error occurs.
 

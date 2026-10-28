@@ -17,7 +17,7 @@ A property wrapper that loads the view controller’s view before accessing the 
 struct ViewLoading<Value>
 ```
 
-#### Overview
+## Overview
 
 Use this property wrapper on view controller properties that can be `nil` before the view controller’s view loads. Wrapping view controller properties this way eliminates crashes that can occur from implicitly defining properties as [`Optional`](../../Swift/optional.md), and then referencing them before the view controller finishes loading.
 

@@ -21,7 +21,7 @@ Generates a categorical summary of the columns you select by name.
 func summary(of columnNames: String...) -> any GroupSummaries
 ```
 
-#### Return Value
+## Return Value
 
 A [`GroupSummaries`](../groupsummaries.md) instance that contains categorical summary of the columns you select.
 

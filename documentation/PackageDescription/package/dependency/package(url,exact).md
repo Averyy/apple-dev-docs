@@ -15,11 +15,11 @@ Adds a remote package dependency that uses an exact version requirement.
 static func package(url: String, exact version: Version) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Package.Dependency` instance.
 
-#### Discussion
+## Discussion
 
 Specifying exact version requirements are not recommended as they can cause conflicts in your dependency graph when other packages depend on this package. As Swift packages follow the semantic versioning convention, think about specifying a version range instead.
 

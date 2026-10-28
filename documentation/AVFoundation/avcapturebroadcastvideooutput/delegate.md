@@ -23,7 +23,7 @@ var delegate: (any AVCaptureBroadcastVideoOutputDelegate)? { get }
 @property (nonatomic, readonly, nullable) id<AVCaptureBroadcastVideoOutputDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an object conforming to the [`AVCaptureBroadcastVideoOutputDelegate`](../avcapturebroadcastvideooutputdelegate.md) protocol that will be able to monitor the broadcast output operations.
 

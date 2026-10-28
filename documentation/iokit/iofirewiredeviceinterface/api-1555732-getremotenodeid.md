@@ -16,11 +16,11 @@ Get node ID of device to which this interface is attached.
 IOReturn (*GetRemoteNodeID)(IOFireWireLibDeviceRef self, UInt32 checkGeneration, UInt16 *outRemoteNodeID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if a valid nodeID has been returned in 'outRemoteNodeID'. Returns kIOFireWireBusReset if 'checkGeneration' does not match the current bus generation number.
 
-#### Discussion
+## Discussion
 
 Availability: IOFireWireDeviceInterface_v4 and newer
 

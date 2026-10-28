@@ -19,11 +19,11 @@ Initializes and returns a table cell object.
 - (id) initWithFrame:(CGRect) frame reuseIdentifier:(NSString *) reuseIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`UITableViewCell`](../uitableviewcell.md) object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the class. The reuse identifier is associated with those cells (rows) of a table view that have the same general configuration, minus cell content. In its implementation of [`tableView(_:cellForRowAt:)`](../uitableviewdatasource/tableview%28_,cellforrowat%29.md), the table view’s delegate calls the `UITableView` method [`dequeueReusableCell(withIdentifier:)`](../uitableview/dequeuereusablecell%28withidentifier%29.md), passing in a reuse identifier, to obtain the cell object to use as the basis for the current row.
 

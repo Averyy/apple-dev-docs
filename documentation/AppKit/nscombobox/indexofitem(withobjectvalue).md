@@ -19,15 +19,15 @@ func indexOfItem(withObjectValue object: Any) -> Int
 - (NSInteger) indexOfItemWithObjectValue:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 The lowest index in the internal item list whose corresponding value is equal to that of the specified object. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 If none of the objects in the receiver’s internal item list are equal to `anObject`, [`indexOfItem(withObjectValue:)`](./indexofitem%28withobjectvalue%29.md) returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 This method logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 

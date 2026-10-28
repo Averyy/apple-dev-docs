@@ -8,11 +8,11 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Returning `Array` or `Dictionary` values from functions and closures is a common pattern in Swift. However, these collection types are backed by heap-allocated storage, and returning them from a function produces an implicit copy of the collection value.
 
-#### Problem
+## Problem
 
 When a function returns an `Array` or a `Dictionary`, it must first construct the collection in heap-allocated backing storage. The caller then receives a copy of the collection value - a wrapper struct that contains a pointer to that storage. Although no element-by-element deep copy occurs at the return boundary (Swift’s collections use copy-on-write to defer that until mutation), the heap allocation itself is unavoidable, and the copy of the wrapper value carries its own costs.
 
@@ -35,9 +35,9 @@ for frame in frames {
 }
 ```
 
-#### Alternatives
+## Alternatives
 
-##### 1. Use `inout` parameters
+### 1. Use `inout` parameters
 
 Pass the collection as an `inout` parameter instead of returning it. This allows the function to populate the caller’s collection directly, avoiding the need to allocate and return a new value.
 
@@ -61,7 +61,7 @@ for frame in frames {
 }
 ```
 
-##### 2. Use `Span` for read-only access
+### 2. Use `Span` for read-only access
 
 When the caller only needs to read the collection’s elements without taking ownership, consider exposing the data as a [Span](https://developer.apple.com/documentation/swift/span). A `Span` is a non-escapable view into contiguous memory. The compiler guarantees that a `Span` cannot outlive the view data so its usage incurs no additional heap allocation and reference counting overhead. The `Span` value itself is a lightweight data structure with a pointer and a count, making it cheap to create and pass around.
 
@@ -81,7 +81,7 @@ for frame in frames {
 }
 ```
 
-##### 3. Restructure to avoid returning transient collections
+### 3. Restructure to avoid returning transient collections
 
 In some cases, a function builds a collection only for the caller to immediately process and discard it. The collection itself is transient so the caller does not need to own a standalone copy of it. This pattern can be restructured so that the function passes the data to a caller-provided closure instead of returning it, avoiding the allocation entirely.
 
@@ -119,7 +119,7 @@ stack.pop(count: n) { elements in
 }
 ```
 
-#### Summary
+## Summary
 
 Returning `Array` or `Dictionary` values from functions involves heap allocation and reference counting overhead that can accumulate in performance-critical code paths. Use `inout` parameters to allow the caller to provide and reuse storage, `Span` for non-owning read-only access, or restructure the code to avoid materializing intermediate collections. These alternatives eliminate the implicit copies that occur when returning collection values.
 

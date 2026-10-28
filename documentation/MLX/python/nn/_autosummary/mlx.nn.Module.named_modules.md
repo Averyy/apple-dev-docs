@@ -6,9 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.named_modules
 
-**Module.named_modules()**
-: Return a list with all the modules in this instance and their name
+```python
+Module.named_modules()
+```
+
+Return a list with all the modules in this instance and their name
 with dot notation.
 
-Returns:
-A list of tuples (str, [mlx.nn.Module](../module.md#mlx.nn.Module)).
+**Returns:**
+: A list of tuples (str, [mlx.nn.Module](../module.md#mlx.nn.Module)).

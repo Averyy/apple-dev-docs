@@ -19,7 +19,7 @@ func setInteriorColor(_ color: NSColor!)
 - (void) setInteriorColor:(NSColor *) color;
 ```
 
-#### Discussion
+## Discussion
 
 The ornament at the end of a line is optional (for more information, see the Adobe PDF Specification 1.4).
 

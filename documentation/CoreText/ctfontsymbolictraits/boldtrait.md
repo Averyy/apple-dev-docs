@@ -27,7 +27,7 @@ static var boldTrait: CTFontSymbolicTraits { get }
 kCTFontBoldTrait
 ```
 
-#### Discussion
+## Discussion
 
 Additional detail is available via [`kCTFontWeightTrait`](../kctfontweighttrait.md).
 

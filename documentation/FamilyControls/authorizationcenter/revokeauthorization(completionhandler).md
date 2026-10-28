@@ -16,7 +16,7 @@ Revokes authorization to provide parental controls.
 func revokeAuthorization(completionHandler: @escaping (Result<Void, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 If your app’s authentication status is [`AuthorizationStatus.approved`](../authorizationstatus/approved.md) this method revokes authentication.
 

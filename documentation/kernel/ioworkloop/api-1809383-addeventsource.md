@@ -10,11 +10,11 @@ virtual IOReturn addEventSource(
  IOEventSource *newEvent);
 ```
 
-#### Return Value
+## Return Value
 
 Always returns kIOReturnSuccess.
 
-#### Overview
+## Overview
 
 Add an event source to be monitored by the work loop. This function does not return until the work loop has acknowledged the arrival of the new event source. When a new event has been added the threadMain will always restart its loop and check all outstanding events. The event source is retained by the work loop.
 

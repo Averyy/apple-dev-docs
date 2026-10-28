@@ -19,7 +19,7 @@ var selectionMode: NSMenu.SelectionMode { get set }
 @property NSMenuSelectionMode selectionMode;
 ```
 
-#### Discussion
+## Discussion
 
 The selection mode only affects menu items that belong to the same selection group. A selection group consists of the items with the same target-action.
 

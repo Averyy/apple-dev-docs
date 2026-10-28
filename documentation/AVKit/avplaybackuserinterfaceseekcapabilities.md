@@ -21,7 +21,7 @@ struct AVPlaybackUserInterfaceSeekCapabilities
 enum AVPlaybackUserInterfaceSeekCapabilities : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 This option set defines timeline navigation operations. Different content types and sources may have varying levels of navigation support based on technical limitations, licensing restrictions, or content type.
 

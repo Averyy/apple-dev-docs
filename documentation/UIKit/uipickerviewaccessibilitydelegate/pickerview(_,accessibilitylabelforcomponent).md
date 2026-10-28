@@ -22,11 +22,11 @@ optional func pickerView(_ pickerView: UIPickerView, accessibilityLabelForCompon
 - (NSString *) pickerView:(UIPickerView *) pickerView accessibilityLabelForComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 A succinct label, in a localized string, that identifies the picker view component.
 
-#### Discussion
+## Discussion
 
 Implement this optional method to ensure that the accessibility element representing the picker view provides an appropriate label for each component. The system prefers the [`pickerView(_:accessibilityAttributedLabelForComponent:)`](./pickerview%28_,accessibilityattributedlabelforcomponent%29.md) method over this one. For in-depth information on how to create an appropriate label, see [Crafting Useful Labels and Hints](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Making_Application_Accessible/Making_Application_Accessible.html#//apple_ref/doc/uid/TP40008785-CH102-SW6).
 

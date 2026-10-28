@@ -25,7 +25,7 @@ func imp_getBlock(_ anImp: IMP) -> Any?
 extern idimp_getBlock(IMP anImp);
 ```
 
-#### Return Value
+## Return Value
 
 The block called by `anImp`.
 

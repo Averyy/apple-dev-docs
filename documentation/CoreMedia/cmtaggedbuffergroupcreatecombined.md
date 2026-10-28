@@ -21,11 +21,11 @@ Creates a new tagged buffer group from an array of existing tagged buffer groups
 extern OSStatus CMTaggedBufferGroupCreateCombined(CFAllocatorRef allocator, CFArrayRef taggedBufferGroups, CMTaggedBufferGroupRef*groupOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tagged Buffer Group Error Codes on failure.
 
-#### Discussion
+## Discussion
 
 Buffers strongly retain their references when creating a new tagged buffer group, rather than performing a copy.
 

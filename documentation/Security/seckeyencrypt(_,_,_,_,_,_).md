@@ -26,11 +26,11 @@ func SecKeyEncrypt(_ key: SecKey, _ padding: SecPadding, _ plainText: UnsafePoin
 OSStatus SecKeyEncrypt(SecKeyRef key, SecPadding padding, const uint8_t *plainText, size_t plainTextLen, uint8_t *cipherText, size_t *cipherTextLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The input buffer (`plainText`) can be the same as the output buffer (`cipherText`) to reduce the amount of memory used by the function.
 

@@ -19,7 +19,7 @@ var alignment: NSTextAlignment { get set }
 @property NSTextAlignment alignment;
 ```
 
-#### Discussion
+## Discussion
 
 Natural text alignment is realized as left or right alignment depending on the line sweep direction of the first script contained in the paragraph.
 

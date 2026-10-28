@@ -19,7 +19,7 @@ var startingRow: Int { get }
 @property (readonly) NSInteger startingRow;
 ```
 
-#### Return Value
+## Return Value
 
 The table row at which this text table block starts.
 

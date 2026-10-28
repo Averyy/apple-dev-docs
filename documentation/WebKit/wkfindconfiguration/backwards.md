@@ -23,7 +23,7 @@ var backwards: Bool { get set }
 @property (nonatomic) BOOL backwards;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), searches proceed backward from the current selection. When the value is [`false`](../../Swift/false.md), searches proceed forward from the current selection. The default value of this property is [`false`](../../Swift/false.md).
 

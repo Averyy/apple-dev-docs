@@ -26,11 +26,11 @@ func segment(forTrackTime trackTime: CMTime) -> AVAssetTrackSegment?
 - (AVAssetTrackSegment *) segmentForTrackTime:(CMTime) trackTime;
 ```
 
-#### Return Value
+## Return Value
 
 The track segment matching, or closest to, the specied time.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load a segment asynchronously using [`loadSegment(forTrackTime:completionHandler:)`](./loadsegment%28fortracktime,completionhandler%29.md) instead.
 

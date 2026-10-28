@@ -21,7 +21,7 @@ The payload that applies a set of declarations to the device through the Setting
 object Declarations
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.declarations` as the payload type.
 
@@ -29,7 +29,7 @@ This profile applies a set of declarations to the device. Users use this profile
 
 > ❗ **Important**:  When a user installs the profile, the device only applies configuration declarations that allow a “local” enrollment. Consult the documentation for each configuration type to see if you can use it.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ This profile applies a set of declarations to the device. Users use this profile
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, macOS, tvOS, visionOS, watchOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

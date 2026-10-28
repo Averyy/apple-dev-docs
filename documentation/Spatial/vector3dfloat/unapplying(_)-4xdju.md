@@ -21,7 +21,7 @@ Returns the primitive that results from applying a pose to the primitive.
 func unapplying(_ pose: Pose3DFloat) -> Vector3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

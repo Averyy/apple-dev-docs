@@ -20,7 +20,7 @@ init?(for aClass: AnyClass)
 + (NSScriptClassDescription *) classDescriptionForClass:(Class) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class description for the class specified by `aClass` or, if that class isn’t scriptable, for the class description for the first superclass that is. Returns `nil` if it doesn’t find a scriptable class.
 

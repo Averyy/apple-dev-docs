@@ -21,7 +21,7 @@ func compositionAspectRatio() -> NSSize
 - (NSSize) compositionAspectRatio;
 ```
 
-#### Return Value
+## Return Value
 
 The aspect ratio.
 

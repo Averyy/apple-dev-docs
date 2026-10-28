@@ -23,7 +23,7 @@ init(data: Data) throws
 - (instancetype) initWithData:(NSData *) data error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new canvas object initialized with the specified data.
 

@@ -20,7 +20,7 @@ An error that indicates a media analysis operation failed.
 enum MediaIntelligenceError
 ```
 
-#### Overview
+## Overview
 
 Framework methods throw this error when they encounter a problem processing a request.
 

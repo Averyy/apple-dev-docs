@@ -19,15 +19,15 @@ func AECreateAppleEvent(_ theAEEventClass: AEEventClass, _ theAEEventID: AEEvent
 OSErr AECreateAppleEvent(AEEventClass theAEEventClass, AEEventID theAEEventID, const AEAddressDesc *target, AEReturnID returnID, AETransactionID transactionID, AppleEvent *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The `AECreateAppleEvent `function creates an empty Apple event. You can add parameters to the Apple event after you create it with the functions described in [Apple Event Manager](../applicationservices/apple_event_manager.md). 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

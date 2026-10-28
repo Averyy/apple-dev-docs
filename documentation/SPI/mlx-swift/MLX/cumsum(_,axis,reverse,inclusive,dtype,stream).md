@@ -21,7 +21,7 @@ func cumsum(_ array: MLXArray, axis: Int, reverse: Bool = false, inclusive: Bool
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -30,7 +30,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.cumsum(axis: 0)
 ```
 
-##### See Also
+### See Also
 
 - [Cumulative Operations](./cumulative.md)
 - [`cumsum(_:reverse:inclusive:dtype:stream:)`](./cumsum%28_,reverse,inclusive,dtype,stream%29.md)

@@ -14,7 +14,7 @@ kern_return_t IOAudioSetErase(
    int *oldVal);
 ```
 
-#### Return Value
+## Return Value
 
 kern_return_t
 

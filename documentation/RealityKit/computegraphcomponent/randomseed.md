@@ -19,7 +19,7 @@ An optional fixed random seed for the simulation.
 var randomSeed: UInt32? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, a random seed is chosen each time the simulation is (re)initialized.
 

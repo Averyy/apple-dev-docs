@@ -22,7 +22,7 @@ init(addPassButtonStyle style: PKAddPassButtonStyle)
 - (instancetype) initWithAddPassButtonStyle:(PKAddPassButtonStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`PKAddPassButton`](../pkaddpassbutton.md) instance with the specified style.
 

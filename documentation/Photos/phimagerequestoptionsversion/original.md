@@ -24,7 +24,7 @@ case original
 PHImageRequestOptionsVersionOriginal
 ```
 
-#### Discussion
+## Discussion
 
 The resulting image is originally captured or imported version of the asset, regardless of any edits made.
 

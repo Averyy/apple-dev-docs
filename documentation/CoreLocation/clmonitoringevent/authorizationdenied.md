@@ -18,7 +18,7 @@ A Boolean value that indicates whether the app has local authorization.
 @property (nonatomic, readonly) BOOL authorizationDenied;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), then the app isn’t receiving location updates because it’s denied local authorization.
 

@@ -18,7 +18,7 @@ The expected size of the scalar inputs.
 uint32_t checkStructureInputSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this field is [`kIOUserClientVariableStructureSize`](../kiouserclientvariablestructuresize.md), don’t validate the structure size. For all other values, the value in this property must equal the value in either the [`structureInput`](../iouserclientmethodarguments/structureinput.md) or [`structureInputDescriptor`](../iouserclientmethodarguments/structureinputdescriptor.md) fields of the [`IOUserClientMethodArguments`](../iouserclientmethodarguments.md) structure.
 

@@ -23,7 +23,7 @@ func MIDISendSysex(_ request: UnsafeMutablePointer<MIDISysexSendRequest>) -> OSS
 extern OSStatus MIDISendSysex(MIDISysexSendRequest *request);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

@@ -16,11 +16,11 @@ nonisolated
 func touchBarCustomizationLabel(_ label: Text) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A Touch Bar element with a set customization label.
 
-#### Discussion
+## Discussion
 
 This string is visible during user customization.
 

@@ -13,8 +13,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) init(device: any MTLDevice) async
+nonisolated(nonsending)
+init(device: any MTLDevice) async
 ```
 
 **Other overloads**:

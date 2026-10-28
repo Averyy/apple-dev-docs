@@ -27,7 +27,7 @@ func replaceText(_ originalText: String, withText replacementText: String, optio
 - (void) replaceText:(NSString *) originalText withText:(NSString *) replacementText options:(BETextReplacementOptions) options completionHandler:(void (^)(NSArray<UITextSelectionRect *> *rects)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Completion handler should be invoked with the rects representing the replacementText.  If the replaceText could not be completed succesfully, such as when the originalText no longer matches the current text, then the completion handler should be invoked with an empty array.
 

@@ -24,11 +24,11 @@ class func archiveRootObject(_ rootObject: Any, toFile path: String) -> Bool
 + (BOOL) archiveRootObject:(id) rootObject toFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the archive was written successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This convenience method invokes [`archivedData(withRootObject:)`](./archiveddata%28withrootobject%29.md) to get the encoded data, and then sends that data object the message [`write(toFile:atomically:)`](../nsdata/write%28tofile,atomically%29.md), using `path` for the first argument and [`true`](../../Swift/true.md) for the second.
 

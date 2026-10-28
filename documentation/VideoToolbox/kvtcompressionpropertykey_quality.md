@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_Quality: CFString
 extern CFStringRef const kVTCompressionPropertyKey_Quality;
 ```
 
-#### Discussion
+## Discussion
 
 Some encoders, such as JPEG, describe the compression level of each image with a quality value.  This value should be specified as a number in the range of 0.0 to 1.0, where low = 0.25, normal = 0.50, high = 0.75, and 1.0 implies lossless compression for encoders that support it.
 

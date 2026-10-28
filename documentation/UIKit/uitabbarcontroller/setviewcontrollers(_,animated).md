@@ -23,7 +23,7 @@ func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool)
 - (void) setViewControllers:(NSArray<__kindof UIViewController *> *) viewControllers animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 When you assign a new set of view controllers at runtime, the tab bar controller removes all of the old view controllers before installing the new ones. When changing the view controllers, the tab bar controller remembers the view controller object that was previously selected and attempts to reselect it. If the selected view controller is no longer present, it attempts to select the view controller at the same index in the array as the previous selection. If that index is invalid, it selects the view controller at index 0.
 

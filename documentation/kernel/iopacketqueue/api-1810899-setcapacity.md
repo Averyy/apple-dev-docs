@@ -12,7 +12,7 @@ virtual bool setCapacity(
  UInt32capacity);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the new capacity was accepted, false otherwise.
 

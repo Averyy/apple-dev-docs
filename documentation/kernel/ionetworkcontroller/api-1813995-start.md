@@ -12,11 +12,11 @@ virtual bool start(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise.
 
-#### Overview
+## Overview
 
 After the controller driver has successfully matched to a provider, this method is called to start the network controller. IONetworkController will allocate resources and gather controller properties in its implementation. No I/O will be performed until the subclass tries to attach a client object. A driver must override this method, and call super::start() at the beginning of its own implementation. Then check the return value to make sure that its superclass was started successfully before proceeding. Tasks that are usually performed by a driver's start method are: resource allocation, hardware initialization, allocation of IOEventSources and attaching them to a workloop, publishing a medium dictionary, and finally, attaching an interface object when it is ready to handle client requests.
 

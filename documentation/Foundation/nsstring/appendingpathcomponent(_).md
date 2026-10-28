@@ -25,11 +25,11 @@ func appendingPathComponent(_ str: String) -> String
 - (NSString *) stringByAppendingPathComponent:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 A new string made by appending `aString` to the receiver, preceded if necessary by a path separator.
 
-#### Discussion
+## Discussion
 
 The following table illustrates the effect of this method on a variety of different paths, assuming that `aString` is supplied as “`scratch.tiff`”:
 

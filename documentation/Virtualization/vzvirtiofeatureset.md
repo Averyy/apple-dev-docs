@@ -19,7 +19,7 @@ class VZVirtioFeatureSet
 @interface VZVirtioFeatureSet : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `VZVirtioFeatureSet` encapsulates the 64-bit Virtio feature set as two 32-bit subsets. The Virtio specification currently supports up to 64 feature bits, where subset0 represents bits 0 through 31 and subset1 represents bits 32 through 63.
 

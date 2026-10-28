@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may have read-write access to con
 - **Name**: `com.apple.security.personal-information.addressbook` (Address Book)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode and then select Contacts, or enable the Hardened Runtime capability and then select Address Book.
 

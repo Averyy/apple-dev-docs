@@ -19,7 +19,7 @@ Creates a data source from a data table that contains the location and annotatio
 case labeledVideoData(table: MLDataTable, videoColumn: String = __Defaults.videoColumnName, labelColumn: String = __Defaults.labelColumnName, startTimeColumn: String? = nil, endTimeColumn: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 - endTimeColumn: The name of the column in the data table that contains the hand action’s ending-time in the video file. Otherwise `nil`, if every video example ends at the end of the video file.
 

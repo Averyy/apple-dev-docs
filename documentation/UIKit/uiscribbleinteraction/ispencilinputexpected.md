@@ -21,7 +21,7 @@ class var isPencilInputExpected: Bool { get }
 @property (class, nonatomic, readonly, getter=isPencilInputExpected) BOOL pencilInputExpected;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`true`](../../Swift/true.md), adjust the layout of UI elements that aren’t optimal for direct handwriting input. This allows more room for interaction with Apple Pencil. For example, small or resizable text fields can temporarily change their height to receive input from Apple Pencil, while preserving padding along the bottom of the text field.
 

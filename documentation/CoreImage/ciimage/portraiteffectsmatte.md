@@ -24,7 +24,7 @@ var portraitEffectsMatte: AVPortraitEffectsMatte? { get }
 @property (nonatomic, readonly, nullable) AVPortraitEffectsMatte * portraitEffectsMatte;
 ```
 
-#### Discussion
+## Discussion
 
 [`AVPortraitEffectsMatte`](../../AVFoundation/avportraiteffectsmatte.md) representation of portrait effects.
 

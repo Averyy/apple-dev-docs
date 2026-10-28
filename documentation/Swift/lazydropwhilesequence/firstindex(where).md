@@ -21,11 +21,11 @@ Returns the first index in which an element of the collection satisfies the give
 func firstIndex(where predicate: (Self.Element) throws -> Bool) rethrows -> Self.Index?
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first element for which `predicate` returns `true`. If no elements in the collection satisfy the given predicate, returns `nil`.
 
-#### Discussion
+## Discussion
 
 You can use the predicate to find an element of a type that doesn’t conform to the `Equatable` protocol or to find an element that matches particular criteria. Here’s an example that finds a student name that begins with the letter “A”:
 

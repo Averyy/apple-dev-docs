@@ -19,11 +19,11 @@ Applies the style the model learned to an image.
 func stylize(image: CGImage) throws -> CGImage?
 ```
 
-#### Return Value
+## Return Value
 
 An image of type `CGImage` stylized using style of the model.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `MLCreateError.generic` if stylization fails.
 

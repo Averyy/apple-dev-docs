@@ -22,7 +22,7 @@ A Boolean value that indicates the pass issuer disabled the pass.
 @property (nonatomic, assign, readonly, getter=isBlocked) BOOL blocked;
 ```
 
-#### Discussion
+## Discussion
 
 A blocked pass isn’t accepted at a transit terminal.
 

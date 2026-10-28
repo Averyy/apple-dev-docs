@@ -13,7 +13,7 @@
 kINQUIRY_ANSI_VERSION_SCSI_SPC_Compliant = 0x03
 ```
 
-#### Discussion
+## Discussion
 
 SPC conformance claimed by the device server.
 

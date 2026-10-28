@@ -10,13 +10,13 @@ Create an immersive video playback experience with RealityKit.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample shows how to build an immersive video playback experience for visionOS. It demonstrates the use of RealityKit to present multiple content types, in both windows and immersive spaces. It also presents some key factors to consider as you customize your app experience.
 
 > **Note**: This sample code project is associated with WWDC25 session 296: [Support immersive video playback in visionOS apps](https://developer.apple.com/videos/play/wwdc2025/296).
 
-#### Choose a playback approach
+## Choose a playback approach
 
 When it comes to providing immersive video playback on visionOS, there are a few different approaches you can take:
 
@@ -25,7 +25,7 @@ When it comes to providing immersive video playback on visionOS, there are a few
 
 If you’re already using RealityKit in your app, [`VideoPlayerComponent`](../RealityKit/videoplayercomponent.md) may be suitable, particularly if your video content is relatively short. In that case, it may not be necessary to offer controls for skipping, or to transition between full immersion and portal window viewing. For design guidance, see Human Interface Guidelines > [Playing video](https://developer.apple.com/design/human-interface-guidelines/playing-video#visionOS).
 
-#### Configure video player to play immersive media
+## Configure video player to play immersive media
 
 [`VideoPlayerComponent`](../RealityKit/videoplayercomponent.md) relies on three pairs of properties to play immersive media. For each pair, one property is used for mutation, and another for introspection.
 
@@ -49,7 +49,7 @@ entity.components[VideoPlayerComponent.self] = videoPlayerComponent
 
 Here, the app uses `desiredImmersiveViewingMode` to render the content as a portal window. It then uses `desiredSpatialVideoMode` to apply head-pose–based treatments, and specifies stereoscopic playback with `desiredViewingMode`.
 
-#### Size video for the shared space
+## Size video for the shared space
 
 When presented in an immersive space, [`VideoPlayerComponent`](../RealityKit/videoplayercomponent.md) automatically manages projection of the video content. In a window, however, additional considerations are necessary to achieve best results.
 
@@ -89,7 +89,7 @@ func scaleToFit(_ entity: Entity, proxy: GeometryProxy3D, content: RealityViewCo
 }
 ```
 
-#### Customize playback controls
+## Customize playback controls
 
 The sample provides custom playback controls with three basic functions:
 
@@ -118,7 +118,7 @@ private func updateImmersiveControls(with mitigation: VideoPlayerComponent.Video
 
 > **Note**: For details regarding managing changes in immersive viewing mode, see [Playing immersive video](../RealityKit/videoplayercomponent.md#Playing-immersive-video).
 
-#### Preserve motion comfort
+## Preserve motion comfort
 
 Because scenes with high motion can lead to motion discomfort, be mindful of motion comfort when presenting media immersively. Two key considerations include: configuring the immersive space properly, and responding to video comfort mitigation events in a timely fashion.
 

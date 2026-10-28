@@ -5,7 +5,7 @@
 
 The constants that define the values for the time pitch algorithms.
 
-#### Overview
+## Overview
 
 In iOS and macOS, the default algorithm for playback for apps linked on or after iOS 15 or macOS 12 is [`timeDomain`](./avaudiotimepitchalgorithm/timedomain.md).
 

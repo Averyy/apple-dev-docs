@@ -21,7 +21,7 @@ The argument matchers to validate against the tool call.
 var arguments: [ArgumentMatcher] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty array for [`anyOrder(_:)`](./anyorder%28_%29.md) groups.
 

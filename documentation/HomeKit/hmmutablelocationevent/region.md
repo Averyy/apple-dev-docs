@@ -23,7 +23,7 @@ var region: CLRegion? { get set }
 @property (nonatomic, strong, readwrite, nullable) CLRegion * region;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set the region on which the location event is triggered. The region object must have at least one of [`notifyOnEntry`](../../CoreLocation/clregion/notifyonentry.md) or [`notifyOnExit`](../../CoreLocation/clregion/notifyonexit.md) set to [`true`](../../Swift/true.md).
 

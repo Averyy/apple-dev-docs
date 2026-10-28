@@ -21,11 +21,11 @@ Prints an error message.
 __LAPACK_int cblas_errprn(__LAPACK_int ierr, __LAPACK_int info, char *form, ...);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the minimum of `ierr` or `info`.
 
-#### Discussion
+## Discussion
 
 Add any additional parameters required for the format string.
 

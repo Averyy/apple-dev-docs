@@ -25,7 +25,7 @@ var exposureAdaptationDarkeningSpeedFactor: CGFloat { get set }
 @property (nonatomic) CGFloat exposureAdaptationDarkeningSpeedFactor;
 ```
 
-#### Discussion
+## Discussion
 
 When using a High Dynamic Range (HDR) camera, SceneKit applies a process called *tone mapping* to translate the wide range of luminance values in the visible scene to the narrower range of brightness values that can be shown on a display. When the [`wantsExposureAdaptation`](./wantsexposureadaptation.md) property is enabled, SceneKit automatically adjusts the tone mapping curve based on the average luminance currently visible to the camera, and creates automatic transitions between exposure levels.
 

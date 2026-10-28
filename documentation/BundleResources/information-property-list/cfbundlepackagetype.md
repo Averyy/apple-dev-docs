@@ -19,7 +19,7 @@ The type of bundle.
 - **Name**: `CFBundlePackageType` (Bundle OS Type code)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key consists of a four-letter code for the bundle type. For apps, the code is `APPL`, for frameworks, it’s `FMWK`, and for bundles, it’s `BNDL`. The default value is derived from the bundle extension or, if it can’t be derived, the default value is `BNDL`.
 

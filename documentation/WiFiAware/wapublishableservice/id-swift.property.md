@@ -17,7 +17,7 @@ A stable ID that can be used to identify this publishable service.
 var id: WAPublishableService.ID { get }
 ```
 
-#### Discussion
+## Discussion
 
 The ID is stable for a given unique service name.
 

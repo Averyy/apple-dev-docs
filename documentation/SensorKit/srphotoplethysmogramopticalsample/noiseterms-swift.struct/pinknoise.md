@@ -17,7 +17,7 @@ An estimate of the pink noise of the sensor.
 let pinkNoise: Double
 ```
 
-#### Discussion
+## Discussion
 
 The total pink noise variance estimate in the [`normalizedReflectance`](../normalizedreflectance-15f2k.md) signal (Normalized Units²).
 

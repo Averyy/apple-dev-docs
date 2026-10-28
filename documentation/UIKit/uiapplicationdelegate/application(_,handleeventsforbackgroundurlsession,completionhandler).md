@@ -27,7 +27,7 @@ optional func application(_ application: UIApplication, handleEventsForBackgroun
 - (void) application:(UIApplication *) application handleEventsForBackgroundURLSession:(NSString *) identifier completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The app calls this method after all background transfers associated with an [`URLSession`](../../Foundation/urlsession.md) object are done, whether they finished successfully or resulted in an error. The app also calls this method if authentication is required for one or more transfers.
 

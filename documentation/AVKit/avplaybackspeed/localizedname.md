@@ -24,7 +24,7 @@ var localizedName: String { get }
 @property (nonatomic, readonly) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to represent the speed in a user interface where space allows. Use the [`localizedNumericName`](./localizednumericname.md) where limited space is available.
 

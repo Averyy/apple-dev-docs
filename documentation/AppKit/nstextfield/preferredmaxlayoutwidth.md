@@ -19,7 +19,7 @@ var preferredMaxLayoutWidth: CGFloat { get set }
 @property CGFloat preferredMaxLayoutWidth;
 ```
 
-#### Discussion
+## Discussion
 
 If the text field wraps, the intrinsic height is large enough to show the entire text contents at that width.
 

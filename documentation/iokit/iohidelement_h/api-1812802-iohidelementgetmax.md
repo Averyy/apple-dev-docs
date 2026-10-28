@@ -12,11 +12,11 @@ CF_EXPORT CFIndex IOHIDElementGetLogicalMax(
    IOHIDElementRef element) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the logical maximum.
 
-#### Overview
+## Overview
 
 This corresponds to the logical maximum, which indicates the upper bounds of a variable element.
 

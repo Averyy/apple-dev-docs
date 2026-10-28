@@ -25,7 +25,7 @@ case maximumLineSpacing
 kCTParagraphStyleSpecifierMaximumLineSpacing
 ```
 
-#### Discussion
+## Discussion
 
 This value is always nonnegative. Type: [CGFloat](https://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_121). Affects: [`CTFramesetter`](../ctframesetter.md).
 

@@ -25,7 +25,7 @@ static let exemplarCharacterSet: NSLocale.Key
 extern NSLocaleKey const NSLocaleExemplarCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSCharacterSet` object.
 

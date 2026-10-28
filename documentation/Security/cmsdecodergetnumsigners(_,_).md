@@ -19,11 +19,11 @@ func CMSDecoderGetNumSigners(_ cmsDecoder: CMSDecoder, _ numSignersOut: UnsafeMu
 OSStatus CMSDecoderGetNumSigners(CMSDecoderRef cmsDecoder, size_t *numSignersOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Call the `CMSDecoderCopySignerStatus` function to determine the status of a signature.
 

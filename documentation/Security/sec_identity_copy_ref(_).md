@@ -23,11 +23,11 @@ func sec_identity_copy_ref(_ identity: sec_identity_t) -> Unmanaged<SecIdentity>
 SecIdentityRefsec_identity_copy_ref(sec_identity_t identity);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `SecIdentityRef` instance.
 
-#### Discussion
+## Discussion
 
 Copy a retained reference to the underlying `SecIdentityRef` instance.
 

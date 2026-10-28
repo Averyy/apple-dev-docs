@@ -24,7 +24,7 @@ let HMCharacteristicTypeInputDeviceType: String
 extern NSString * const HMCharacteristicTypeInputDeviceType;
 ```
 
-#### Overview
+## Overview
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueInputDeviceType`](./hmcharacteristicvalueinputdevicetype.md) enumeration.
 

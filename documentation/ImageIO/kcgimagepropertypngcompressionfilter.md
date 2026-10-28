@@ -25,7 +25,7 @@ let kCGImagePropertyPNGCompressionFilter: CFString
 extern CFStringRef const kCGImagePropertyPNGCompressionFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md). The number contains a bitwise-OR of one or more filter constants, such as [`IMAGEIO_PNG_FILTER_AVG`](./imageio_png_filter_avg.md) or [`IMAGEIO_PNG_FILTER_SUB`](./imageio_png_filter_sub.md). The value has no effect on formats other than PNG.
 

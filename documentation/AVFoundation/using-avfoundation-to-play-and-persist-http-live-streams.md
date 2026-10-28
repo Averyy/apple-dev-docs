@@ -12,7 +12,7 @@ Play HTTP Live Streams and persist streams on disk for offline playback using AV
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample provides a catalog of HTTP Live Streams (HLS) that you can play by tapping the row in the table corresponding to the stream. To manage the download of a stream, tap the button associated with the stream in the table. Tapping the button causes a transition to a new view controller which provides an interface to initiate a download, cancel an already running download, or delete a downloaded stream from the device.
 
@@ -20,7 +20,7 @@ The sample creates and initializes an [`AVAssetDownloadConfiguration`](./avasset
 
 > **Note**: This sample doesn’t support saving FairPlay Streaming (FPS) content. For a version of the sample that demonstrates how to download FPS content, see [FairPlay Streaming Server SDK](https://developer.apple.com/streaming/fps/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Build and run the sample on an actual device or a simulator device running iOS 15 or later.
 
@@ -31,7 +31,7 @@ If you want to add your own streams to test with this sample, add an entry into 
 
 If any of the streams you add aren’t hosted securely, you’ll need to add an Application Transport Security (ATS) exception in the `Info.plist` file in the Xcode project. For more information on ATS and the relevant property list keys see [`NSAppTransportSecurity`](../BundleResources/information-property-list/nsapptransportsecurity.md)
 
-##### Play a stream
+### Play a stream
 
 To play an item, tap one of the rows in the table. Tapping the item causes a transition to a new view controller. As part of that transition, the table view creates an `AssetPlaybackManager` and assigns the appropriate asset to it, as shown in the following example:
 
@@ -106,7 +106,7 @@ playerItemObserver = playerItem?.observe(\AVPlayerItem.status, options: [.new, .
     }
 ```
 
-##### Download a stream
+### Download a stream
 
 When the person initiates a download by tapping the button in the corresponding stream’s table view cell, an instance of `AssetPersistenceManager` calls the following function to create an `AVAssetDownloadTask` object with an `AVAssetDownloadConfiguration` to download multiple [`AVMediaSelection`](./avmediaselection.md) for the [`AVURLAsset`](./avurlasset.md) of the stream:
 
@@ -159,7 +159,7 @@ func downloadStream(for asset: Asset) async throws {
 
 > **Note**: You can’t save an HTTP Live Stream while it’s in progress. If you try to save a live stream, the system throws an exception. Only Video On Demand (VOD) streams support offline playback.
 
-##### Cancel an in-progress download
+### Cancel an in-progress download
 
 Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Cancel to stop downloading the stream. The following function in `AssetPersistenceManager` cancels the download by calling the `URLSessionTask` [`cancel()`](../Foundation/urlsessiontask/cancel%28%29.md) method.
 
@@ -176,7 +176,7 @@ func cancelDownload(for asset: Asset) {
 }
 ```
 
-##### Remove a downloaded stream from disk
+### Remove a downloaded stream from disk
 
 Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Delete to delete the downloaded stream file. The following function in `AssetPersistenceManager` removes a downloaded stream on the device. First the asset URL corresponding to the file on the device is identified, then the `FileManager` [`removeItem(at:)`](../Foundation/filemanager/removeitem%28at%29.md) method is called to remove the downloaded stream at the specified URL.
 
@@ -203,7 +203,7 @@ func deleteAsset(_ asset: Asset) {
 }
 ```
 
-##### Measure playback performance
+### Measure playback performance
 
 > **Note**: You can view the various performance indicators in the console during playback.
 

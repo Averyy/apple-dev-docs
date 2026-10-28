@@ -15,7 +15,7 @@ An unknown error.
 static var unknown: WatchKitError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it can’t determine the precise reason for the failure.
 

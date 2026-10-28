@@ -17,17 +17,17 @@ Creates a new access object using the owner and access control list you provide.
 OSStatus SecAccessCreateFromOwnerAndACL(const CSSM_ACL_OWNER_PROTOTYPE *owner, uint32 aclCount, const CSSM_ACL_ENTRY_INFO *acls, SecAccessRef*accessRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecAccessCreateWithOwnerAndACL(_:_:_:_:_:)`](./secaccesscreatewithownerandacl%28_,_,_,_,_%29.md) instead.
 
 This function creates an access object from CSSM structures. You can use this function to create an access object for use with other Certificate, Key, and Trust API functions if you want to use CSSM to create the access control list. CSSM allows more complex access controls than you can construct with the Certificate, Key, and Trust API. For more information about the CSSM API, see *Common Security: CDSA and CSSM, version 2 (with corrigenda)* from The Open Group ([http://www.opengroup.org/security/cdsa.htm](http://www.opengroup.org/security/cdsa.htm)).
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecAccessCreateWithOwnerAndACL(_:_:_:_:_:)`](./secaccesscreatewithownerandacl%28_,_,_,_,_%29.md) instead.
 

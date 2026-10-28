@@ -20,11 +20,11 @@ func ODRecordGetRecordName(_ record: ODRecordRef!) -> Unmanaged<CFString>!
 extern CFStringRefODRecordGetRecordName(ODRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The official name of the record.
 
-#### Discussion
+## Discussion
 
 The official name of the record typically corresponds to the first value of the `kODAttributeTypeRecordName` attribute, but not always.
 

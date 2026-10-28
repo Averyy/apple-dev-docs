@@ -16,11 +16,11 @@ Sets credentials for interacting with a node with the Kerberos cache.
 extern bool ODNodeSetCredentialsUsingKerberosCache(ODNodeRef node, CFStringRef cacheName, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the credentials are successfully set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If this function fails, the previous credentials for the node are used.
 

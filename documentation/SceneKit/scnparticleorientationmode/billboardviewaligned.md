@@ -25,7 +25,7 @@ case billboardViewAligned
 SCNParticleOrientationModeBillboardViewAligned
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode for particle images whose individual appearance depends on a location and orientation in scene space, such as “impostor” images representing trees or clouds in a scene.
 

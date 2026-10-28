@@ -20,7 +20,7 @@ var keepBackupFile: Bool { get }
 @property (readonly) BOOL keepBackupFile;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), which causes each new save operation to replace the document’s on-disk content. If you override this method and return [`true`](../../Swift/true.md), a save operation saves the document’s previous contents in a backup file before saving the current contents.
 

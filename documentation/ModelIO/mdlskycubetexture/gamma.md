@@ -24,7 +24,7 @@ var gamma: Float { get set }
 @property (nonatomic, assign) float gamma;
 ```
 
-#### Discussion
+## Discussion
 
 To render a sky texture, Model I/O first simulates the colors visible in the sky at different directions and then applies tone mapping to fit the resulting colors into the range of displayable values. As part of this process, Model I/O applies this property to the gamma curve of the texture image.
 

@@ -13,7 +13,7 @@
 typedef void (*sock_upcall)(socket_t so, void *cookie, int waitf);
 ```
 
-#### Discussion
+## Discussion
 
 sock_upcall is used by a socket to notify an in kernel client that data is waiting. Instead of making blocking calls in the kernel, a client can specify an upcall which will be called when data is available or the socket is ready for sending.
 

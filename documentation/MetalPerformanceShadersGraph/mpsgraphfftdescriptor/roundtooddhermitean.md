@@ -24,7 +24,7 @@ var roundToOddHermitean: Bool { get set }
 @property (nonatomic, readwrite) BOOL roundToOddHermitean;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then MPSGraph rounds the last output dimension of the result tensor in [`HermiteanToRealFFT(_:axesTensor:descriptor:name:)`](../mpsgraph/hermiteantorealfft%28_,axestensor,descriptor,name%29.md) to an odd value. Has no effect in the other Fourier transform operations. Default value: `NO`.
 

@@ -25,11 +25,11 @@ init?(name: CFString)
 extern CGColorSpaceRefCGColorSpaceCreateWithName(CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 A new generic color space, or `NULL` if unsuccessful. In Objective-C, you’re responsible for releasing this object by calling [`CGColorSpaceRelease`](../cgcolorspacerelease.md).
 
-#### Discussion
+## Discussion
 
 You can use this function to create a generic color space. For more information, see [Accessing System-Defined Color Spaces](../cgcolorspace.md#Accessing-System-Defined-Color-Spaces).
 

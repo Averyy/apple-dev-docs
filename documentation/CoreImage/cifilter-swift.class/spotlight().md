@@ -24,11 +24,11 @@ class func spotLight() -> any CIFilter & CISpotLight
 + (CIFilter<CISpotLight> *) spotLightFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the spotlight filter to an image. The effect applies a directional spotlight effect to an image while creating a transparent area not highlighted by the spotlight.
 

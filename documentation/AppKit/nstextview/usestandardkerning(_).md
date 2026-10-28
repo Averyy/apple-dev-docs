@@ -19,7 +19,7 @@ func useStandardKerning(_ sender: Any?)
 - (void) useStandardKerning:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This data is taken from a font’s AFM file
 

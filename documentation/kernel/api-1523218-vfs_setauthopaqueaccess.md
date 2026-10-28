@@ -15,7 +15,7 @@ Mark a filesystem as having remote VNOP_ACCESS support.
 void vfs_setauthopaqueaccess(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

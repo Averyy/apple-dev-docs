@@ -27,7 +27,7 @@ var paymentPass: PKPaymentPass? { get }
 @property (nonatomic, copy, readonly, nullable) PKPaymentPass * paymentPass;
 ```
 
-#### Discussion
+## Discussion
 
 If your app has an association with the pass that is funding the payment, this property contains information about that pass; otherwise, it’s `nil`.
 

@@ -19,7 +19,7 @@ let kSecMatchDiacriticInsensitive: CFString
 extern CFStringRef const kSecMatchDiacriticInsensitive;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). If this value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), or if this attribute is not provided, then diacritic-sensitive string matching is performed.
 

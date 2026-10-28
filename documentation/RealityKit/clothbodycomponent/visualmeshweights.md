@@ -17,7 +17,7 @@ Optional weights by which the visual mesh should be deformed according to the si
 var visualMeshWeights: PerClothVertexData<Float>?
 ```
 
-#### Discussion
+## Discussion
 
 A weight of 1 indicates that the simulation will fully control the corresponding visual vertex, whereas a weight of 0 indicates that the simulation will not affect the visual vertex at all.
 

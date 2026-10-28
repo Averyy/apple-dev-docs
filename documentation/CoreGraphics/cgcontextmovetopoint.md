@@ -21,7 +21,7 @@ Begins a new subpath at the point you specify.
 extern void CGContextMoveToPoint(CGContextRef c, CGFloat x, CGFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 This point you specify becomes the start point of a new subpath. The current point is set to this start point.
 

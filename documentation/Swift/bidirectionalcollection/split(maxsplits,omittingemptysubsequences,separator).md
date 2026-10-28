@@ -23,7 +23,7 @@ func split(maxSplits: Int = Int.max, omittingEmptySubsequences: Bool = true, @Re
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection of substrings, split from this collection’s elements.
 

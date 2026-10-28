@@ -13,11 +13,11 @@ virtual unsigned int getNextIndexOfObject(
  unsigned intindex) const;
 ```
 
-#### Return Value
+## Return Value
 
 The next index of `anObject` in the array or (-1) if none is found.
 
-#### Overview
+## Overview
 
 This function uses pointer equivalence, and does not use isEqualTo.
 

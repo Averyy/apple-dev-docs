@@ -21,7 +21,7 @@ The distance between adjacent subviews.
 var spacing: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `nil` to use default distances between subviews.
 

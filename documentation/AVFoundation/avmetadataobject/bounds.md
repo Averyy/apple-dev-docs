@@ -23,7 +23,7 @@ var bounds: CGRect { get }
 @property (readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 The bounding rectangle is specified relative to the picture or video of the corresponding media. The rectangle’s origin is always specified in the top-left corner, and the x and y axis extend down and to the right.
 

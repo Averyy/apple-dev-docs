@@ -24,7 +24,7 @@ class GLKSkyboxEffect
 @interface GLKSkyboxEffect : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`GLKSkyboxEffect`](./glkskyboxeffect.md) provides a standard skybox effect for your application. Unlike the [`GLKBaseEffect`](./glkbaseeffect.md) class, the skybox does not require your application to configure and submit vertex data. Instead, it creates its own vertex data based on the configuration data you supply.
 

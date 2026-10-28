@@ -22,7 +22,7 @@ Creates a new instance with the representable value that’s closest to the give
 init<T>(clamping source: T) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 If the value passed as `source` is greater than the maximum representable value in this type, the result is the type’s `max` value. If `source` is less than the smallest representable value in this type, the result is the type’s `min` value.
 

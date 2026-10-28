@@ -15,7 +15,7 @@ Gets the attributes for this buf.
 bufattr_t buf_attr(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 bufattr_t.
 

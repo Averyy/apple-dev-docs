@@ -21,7 +21,7 @@ case unchanged
 NFCTypeNameFormatUnchanged
 ```
 
-#### Discussion
+## Discussion
 
 The first record in a series of chunked data records indicates the type name format for the series. The remaining records have a type name format of [`NFCTypeNameFormat.unchanged`](./unchanged.md).
 

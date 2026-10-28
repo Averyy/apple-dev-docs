@@ -25,7 +25,7 @@ var frameInterval: Int { get set }
 @property (nonatomic) NSInteger frameInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`, which results in the system notifying your app at the refresh rate of the display. If you set the value to a value greater than `1`, the display link notifies your app at a fraction of the native refresh rate. For example, setting the interval to `2` causes the display link to fire every other frame, providing half the frame rate.
 

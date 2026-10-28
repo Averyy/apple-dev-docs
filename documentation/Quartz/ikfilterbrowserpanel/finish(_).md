@@ -19,7 +19,7 @@ func finish(_ sender: Any!)
 - (void) finish:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Invoke this action when you want to dismiss the filter browser.
 

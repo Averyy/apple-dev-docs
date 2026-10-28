@@ -21,7 +21,7 @@ var backgroundContents: TCControlContents? { get set }
 @property (nonatomic, strong, nullable) TCControlContents * backgroundContents;
 ```
 
-#### Discussion
+## Discussion
 
 May be `nil`.
 

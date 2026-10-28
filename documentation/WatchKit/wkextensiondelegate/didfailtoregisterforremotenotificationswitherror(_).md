@@ -19,7 +19,7 @@ optional func didFailToRegisterForRemoteNotificationsWithError(_ error: any Erro
 - (void) didFailToRegisterForRemoteNotificationsWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method if it was unable to register your app with APNs or if your app is not properly configured for remote notifications. For example, WatchKit might call this method if you didn’t enable your WatchKit extension’s Push Notification capability.** **For more information about how to set up and send remote notifications in your app, see [Setting up a remote notification server](../../UserNotifications/setting-up-a-remote-notification-server.md) and [Registering your app with APNs](../../UserNotifications/registering-your-app-with-apns.md).
 

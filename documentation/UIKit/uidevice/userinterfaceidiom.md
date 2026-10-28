@@ -23,7 +23,7 @@ var userInterfaceIdiom: UIUserInterfaceIdiom { get }
 @property (nonatomic, readonly) UIUserInterfaceIdiom userInterfaceIdiom;
 ```
 
-#### Discussion
+## Discussion
 
 For universal applications, you can use this property to tailor the behavior of your application for a specific type of device. For example, iPhone and iPad devices have different screen sizes, so you might want to create different views and controls based on the type of the current device.
 

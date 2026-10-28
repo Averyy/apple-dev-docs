@@ -23,7 +23,7 @@ var animationImages: [UIImage]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UIImage *> * animationImages;
 ```
 
-#### Discussion
+## Discussion
 
 The array must contain [`UIImage`](../uiimage.md) objects. You may use the same image object more than once in the array. Setting this property to a value other than `nil` hides the image represented by the [`image`](./image.md) property. The value of this property is `nil` by default.
 

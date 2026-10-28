@@ -25,7 +25,7 @@ let kCVImageBufferPixelAspectRatioVerticalSpacingKey: CFString
 extern CFStringRef const kCVImageBufferPixelAspectRatioVerticalSpacingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The vertical spacing value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

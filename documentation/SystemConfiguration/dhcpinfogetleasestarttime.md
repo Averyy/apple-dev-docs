@@ -15,7 +15,7 @@ Returns the lease start time data.
 CFDateRefDHCPInfoGetLeaseStartTime(CFDictionaryRef info);
 ```
 
-#### Return Value
+## Return Value
 
 Data that corresponds to the lease start time, if this information is present, or `NULL` if the information is not present or if the configuration method is not DHCP.
 

@@ -24,11 +24,11 @@ func add(_ operand: UInt16, ordering: AtomicUpdateOrdering) -> (oldValue: UInt16
 
 Available when `Value` is `UInt16`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed.
 >

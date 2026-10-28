@@ -21,7 +21,7 @@ A size proposal that contains infinity in both dimensions.
 static let infinity: ProposedViewSize
 ```
 
-#### Discussion
+## Discussion
 
 Both dimensions contain [`infinity`](../../Swift/float/infinity.md) in this size proposal. Subviews of a custom layout return their maximum size when you propose this value using the [`dimensions(in:)`](../layoutsubview/dimensions%28in%29.md) method. A custom layout should also return its maximum size from the [`sizeThatFits(proposal:subviews:cache:)`](../layout/sizethatfits%28proposal,subviews,cache%29.md) method for this value.
 

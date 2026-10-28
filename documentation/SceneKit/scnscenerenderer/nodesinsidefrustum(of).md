@@ -26,11 +26,11 @@ func nodesInsideFrustum(of pointOfView: SCNNode) -> [SCNNode]
 - (NSArray<SCNNode *> *) nodesInsideFrustumWithPointOfView:(SCNNode *) pointOfView;
 ```
 
-#### Return Value
+## Return Value
 
 An array of nodes whose bounding boxes intersect the view frustum defined by the `pointOfView` node. If the array is empty, no nodes lie within the specified frustum.
 
-#### Discussion
+## Discussion
 
 Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](./pointofview.md) property for details). Such a node defines a *viewing frustum*—a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
 

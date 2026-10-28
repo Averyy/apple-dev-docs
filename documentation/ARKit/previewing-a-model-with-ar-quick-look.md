@@ -5,13 +5,13 @@
 
 Display a model or scene that the user can move, scale, and share with others.
 
-#### Overview
+## Overview
 
 AR Quick Look enables the user to place virtual content that you provide on any surface that ARKit finds in the real-world environment. Users can interact with your virtual content by moving and scaling it using touch gestures, or by sharing it with others through the iOS share sheet.
 
 ![Screenshot of a virtual guitar that’s placed in the real world environment via AR Quick Look.  ](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3226920@2x.png)
 
-##### Choose an Input Format
+### Choose an Input Format
 
 You provide content for your AR experience in `.usdz` or `.reality` format:
 
@@ -20,7 +20,7 @@ You provide content for your AR experience in `.usdz` or `.reality` format:
 
 > **Note**:  If you include a Reality Composer file (`.rcproject`) in your app’s Copy Files build phase, Xcode automatically outputs a converted `.reality` file in your app bundle at build time.
 
-##### Display an AR Experience in Your App
+### Display an AR Experience in Your App
 
 In your app, you enable AR Quick Look by providing [`QLPreviewController`](../QuickLook/qlpreviewcontroller.md) with a supported input file. The following code demonstrates previewing a scene named `myScene` from the app bundle.
 
@@ -49,7 +49,7 @@ class ViewController: UIViewController, QLPreviewControllerDataSource {
 
 To prevent the user from scaling your virtual content or to customize the default share sheet behavior, use [`ARQuickLookPreviewItem`](../QuickLook/arquicklookpreviewitem.md) instead of [`QLPreviewItem`](../QuickLook/qlpreviewitem.md).
 
-##### Display an AR Experience in Your Web Page
+### Display an AR Experience in Your Web Page
 
 In your web page, you enable AR Quick Look by linking a supported input file.
 

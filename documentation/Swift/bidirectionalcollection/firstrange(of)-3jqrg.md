@@ -23,7 +23,7 @@ func firstRange(@RegexComponentBuilder of content: () -> some RegexComponent) ->
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A range in the collection of the first occurrence of the first match of if the regex returned by `content`. Returns `nil` if no match for the regex is found.
 

@@ -17,7 +17,7 @@ The defined target audience to include using the age-range demographic.
 object AgeRange
 ```
 
-#### Discussion
+## Discussion
 
 Use this dimension to limit the age group to target your ad to.
 

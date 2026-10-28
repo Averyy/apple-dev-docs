@@ -25,7 +25,7 @@ func method_getNumberOfArguments(_ m: Method) -> UInt32
 extern unsigned int method_getNumberOfArguments(Method m);
 ```
 
-#### Return Value
+## Return Value
 
 An integer containing the number of arguments accepted by the given method.
 

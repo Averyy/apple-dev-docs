@@ -24,7 +24,7 @@ convenience init?(kernelWidth: Int, kernelHeight: Int, strideInX: Int, strideInY
 + (instancetype) descriptorWithKernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight strideInX:(NSUInteger) strideInX strideInY:(NSUInteger) strideInY paddingStyle:(MPSGraphPaddingStyle) paddingStyle dataLayout:(MPSGraphTensorNamedDataLayout) dataLayout;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor on autoreleasepool.
 

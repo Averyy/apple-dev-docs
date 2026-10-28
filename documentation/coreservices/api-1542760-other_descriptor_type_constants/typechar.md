@@ -14,7 +14,7 @@
 typeChar = 'TEXT'
 ```
 
-#### Discussion
+## Discussion
 
 Unterminated string of system script characters.
 

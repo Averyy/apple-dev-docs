@@ -25,7 +25,7 @@ var creationDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * creationDate;
 ```
 
-#### Discussion
+## Discussion
 
 The creation date reflects the time when CloudKit creates a record on the server with the current record’s ID. For new instances of this class, the value of this property is initially `nil`. When you save the record to the server, the value updates with the creation date for the record.
 

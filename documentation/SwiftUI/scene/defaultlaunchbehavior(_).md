@@ -17,7 +17,7 @@ nonisolated
 func defaultLaunchBehavior(_ behavior: SceneLaunchBehavior) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 This behavior can be used to define if a scene is shown on application launch in the absence of any previously saved state.
 

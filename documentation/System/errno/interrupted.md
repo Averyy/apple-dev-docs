@@ -25,7 +25,7 @@ static var interrupted: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The process caught an asynchronous signal (such as `SIGINT` or `SIGQUIT`) during the execution of an interruptible function. If the signal handler performs a normal return, the caller of the interrupted function call receives this error.
 

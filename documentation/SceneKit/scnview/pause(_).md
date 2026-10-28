@@ -26,7 +26,7 @@ func pause(_ sender: Any?)
 - (void) pause:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if the scene is already paused.
 

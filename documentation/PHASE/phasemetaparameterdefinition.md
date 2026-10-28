@@ -24,7 +24,7 @@ class PHASEMetaParameterDefinition
 @interface PHASEMetaParameterDefinition : PHASEDefinition
 ```
 
-#### Overview
+## Overview
 
 Instances of this class provide an app with dynamic control of various properies of live audio playback. This is a base class for the [`PHASENumberMetaParameterDefinition`](./phasenumbermetaparameterdefinition.md) and [`PHASEStringMetaParameterDefinition`](./phasestringmetaparameterdefinition.md) subclasses.
 

@@ -19,11 +19,11 @@ func SCNetworkInterfaceForceConfigurationRefresh(_ interface: SCNetworkInterface
 Boolean SCNetworkInterfaceForceConfigurationRefresh(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the notification was sent; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 Calling this function causes the DHCP client to contact the DHCP server immediately rather than waiting until its timeout has expired. The caller uses this function to inform the system that the network infrastructure or configuration has changed.
 

@@ -23,7 +23,7 @@ optional func windowState(for context: WKWebExtensionContext) -> WKWebExtension.
 - (WKWebExtensionWindowState) windowStateForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to[`WKWebExtension.WindowState.normal`](../wkwebextension/windowstate/normal.md) if not implemented.
 

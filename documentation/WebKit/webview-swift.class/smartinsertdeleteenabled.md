@@ -19,7 +19,7 @@ var smartInsertDeleteEnabled: Bool { get set }
 @property (nonatomic) BOOL smartInsertDeleteEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver inserts or deletes space around selected words so as to preserve proper spacing and punctuation. [`false`](../../Swift/false.md) if it inserts and deletes exactly what’s selected.
 

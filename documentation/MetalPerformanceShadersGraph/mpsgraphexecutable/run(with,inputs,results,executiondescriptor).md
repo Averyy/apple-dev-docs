@@ -24,11 +24,11 @@ func run(with commandQueue: any MTLCommandQueue, inputs inputsArray: [MPSGraphTe
 - (NSArray<MPSGraphTensorData *> *) runWithMTLCommandQueue:(id<MTLCommandQueue>) commandQueue inputsArray:(NSArray<MPSGraphTensorData *> *) inputsArray resultsArray:(NSArray<MPSGraphTensorData *> *) resultsArray executionDescriptor:(MPSGraphExecutableExecutionDescriptor *) executionDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensorData array with results synchronized to the CPU memory if MPSGraphOptionsSynchronizeResults set.
 
-#### Discussion
+## Discussion
 
 This call is synchronous and will return on completion of execution.
 

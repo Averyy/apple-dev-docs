@@ -12,11 +12,11 @@ virtual IODeviceMemory * getDeviceMemoryWithRegister(
  UInt8reg );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an instance of IODeviceMemory, or zero no such range was found. The IODeviceMemory is retained by the provider, so is valid while attached, or while any mappings to it exist. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method will return a pointer to an instance of IODeviceMemory for the physical memory range that was assigned to the configuration space base address register passed in. It is analogous to IOService::getDeviceMemoryWithIndex.
 

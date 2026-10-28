@@ -20,11 +20,11 @@ Creates and returns an instance of the layer object.
 + (instancetype) layer;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized layer object or `nil` if initialization was not successful.
 
-#### Discussion
+## Discussion
 
 If you subclass `CALayer`, you may override this method and use it to provide an instance of your specific subclass.
 

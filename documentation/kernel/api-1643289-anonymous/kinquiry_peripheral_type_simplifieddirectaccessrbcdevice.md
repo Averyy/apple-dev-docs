@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_SimplifiedDirectAccessRBCDevice = 0x0E
 ```
 
-#### Discussion
+## Discussion
 
 RBC Device.
 

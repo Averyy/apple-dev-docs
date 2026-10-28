@@ -21,7 +21,7 @@ An abbreviated unit width.
 static var abbreviated: Measurement<UnitType>.FormatStyle.UnitWidth { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `37.20 Cal` or `37,2 L`.
 

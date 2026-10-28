@@ -21,11 +21,11 @@ Computes the root mean squared error between predicted and ground truth values.
 func rootMeanSquaredError<T>(_ annotatedPredictions: [AnnotatedPrediction<T, T>]) -> T where T : FloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The root mean squared error.
 
-#### Discussion
+## Discussion
 
 If an empty `AnnotatedPrediction` is supplied, the result will be NaN.
 

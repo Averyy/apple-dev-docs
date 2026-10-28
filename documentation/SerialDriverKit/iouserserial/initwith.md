@@ -15,11 +15,11 @@ Initializes the private data structures associated with this class.
 virtual bool initWith(IOBufferMemoryDescriptor *ifmd);
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if initialization succeeded, or `NO` if it didn’t.
 
-#### Discussion
+## Discussion
 
 Do not override or call this method. Instead, override the [`init`](../../USBSerialDriverKit/iouserusbserial/init.md) method and use it to allocate memory for your driver’s data structures.
 

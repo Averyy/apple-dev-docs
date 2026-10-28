@@ -25,7 +25,7 @@ var headingAvailable: Bool { get }
 @property (nonatomic, readonly) BOOL headingAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Heading data may not be available on all iOS-based devices. You should check the value of this property before asking the location manager to deliver heading-related events.
 

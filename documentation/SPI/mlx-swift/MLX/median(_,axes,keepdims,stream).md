@@ -17,7 +17,7 @@ Compute the median(s) over the given axes.
 func median(_ a: MLXArray, axes: [Int], keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 

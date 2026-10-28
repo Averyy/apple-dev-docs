@@ -17,7 +17,7 @@ Return a flattened representation of the structured contents as an array of key/
 func flattened(prefix: String? = nil) -> [(String, Element)]
 ```
 
-##### See Also
+### See Also
 
 - [`unflattened(_:)`](./unflattened%28_%29-4p8bn.md)
 - [`unflattened(_:)`](./unflattened%28_%29-4p8bn.md)

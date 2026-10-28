@@ -15,11 +15,11 @@ Increase the iocount on a vnode, checking that the vnode is alive and has not ch
 int vnode_getwithvid(vnode_t, uint32_t);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, ENOENT if the vnode is dead, in the process of being reclaimed, or has been recycled and reused.
 
-#### Discussion
+## Discussion
 
 If vnode_getwithvid() succeeds, the resulting io-reference must be dropped with vnode_put(). This function succeeds unless the vnode in question is dead, in the process of dying, or has been recycled (and given a different vnode id). The intended usage is that a vnode is stored and its vid (vnode_vid(vp)) recorded while an iocount is held (example: a filesystem hash). The iocount is then dropped, and time passes (perhaps locks are dropped and picked back up). Subsequently, vnode_getwithvid() is called to get an iocount, but we are alerted if the vnode has been recycled.
 

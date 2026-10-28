@@ -15,7 +15,7 @@ A bidirectional channel for sending and receiving custom data.
 class MessageChannel
 ```
 
-#### Overview
+## Overview
 
 Use message channels to communicate with the application streaming foveated content to your visionOS app. You can send data with the [`sendMessage(_:)`](./messagechannel/sendmessage%28_%29.md) function and receive data through the [`receivedMessageStream`](./messagechannel/receivedmessagestream.md) async stream.
 

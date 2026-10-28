@@ -3,13 +3,13 @@
 **Framework**: QuickTime File Format  
 **Role**: Article
 
-#### Overview
+## Overview
 
 ```c
 typedef float                                       Float32;
 ```
 
-#### Sample Description Header Structure
+## Sample Description Header Structure
 
 ```c
 typedef struct QTVRSampleDescription {
@@ -22,7 +22,7 @@ typedef struct QTVRSampleDescription {
 } QTVRSampleDescription, *QTVRSampleDescriptionPtr, **QTVRSampleDescriptionHandle;
 ```
 
-#### String Atom Structure
+## String Atom Structure
 
 ```c
 typedef struct QTVRStringAtom {
@@ -32,7 +32,7 @@ typedef struct QTVRStringAtom {
 } QTVRStringAtom, *QTVRStringAtomPtr;
 ```
 
-#### VR World Header Atom Structure
+## VR World Header Atom Structure
 
 ```c
 typedef struct QTVRWorldHeaderAtom {
@@ -46,7 +46,7 @@ typedef struct QTVRWorldHeaderAtom {
 } QTVRWorldHeaderAtom, *QTVRWorldHeaderAtomPtr;
 ```
 
-#### Panorama-Imaging Atom Structure
+## Panorama-Imaging Atom Structure
 
 ```c
 typedef struct QTVRPanoImagingAtom {
@@ -63,7 +63,7 @@ typedef struct QTVRPanoImagingAtom {
 } QTVRPanoImagingAtom, *QTVRPanoImagingAtomPtr;
 ```
 
-#### Node Location Atom Structure
+## Node Location Atom Structure
 
 ```c
 typedef struct QTVRNodeLocationAtom {
@@ -77,7 +77,7 @@ typedef struct QTVRNodeLocationAtom {
 } QTVRNodeLocationAtom, *QTVRNodeLocationAtomPtr;
 ```
 
-#### Node Header Atom Structure
+## Node Header Atom Structure
 
 ```c
 typedef struct QTVRNodeHeaderAtom {
@@ -92,7 +92,7 @@ typedef struct QTVRNodeHeaderAtom {
 } QTVRNodeHeaderAtom, *QTVRNodeHeaderAtomPtr;
 ```
 
-#### Hot Spot Information Atom Structure
+## Hot Spot Information Atom Structure
 
 ```c
 typedef struct QTVRHotSpotInfoAtom {
@@ -113,7 +113,7 @@ typedef struct QTVRHotSpotInfoAtom {
 } QTVRHotSpotInfoAtom, *QTVRHotSpotInfoAtomPtr;
 ```
 
-#### Link Hot Spot Atom Structure
+## Link Hot Spot Atom Structure
 
 ```c
 typedef struct QTVRLinkHotSpotAtom {
@@ -137,7 +137,7 @@ typedef struct QTVRLinkHotSpotAtom {
 } QTVRLinkHotSpotAtom, *QTVRLinkHotSpotAtomPtr;
 ```
 
-#### Angle Range Atom Structure
+## Angle Range Atom Structure
 
 ```c
 typedef struct QTVRAngleRangeAtom {
@@ -146,7 +146,7 @@ typedef struct QTVRAngleRangeAtom {
 } QTVRAngleRangeAtom, *QTVRAngleRangeAtomPtr;
 ```
 
-#### Panorama Sample Atom Structure
+## Panorama Sample Atom Structure
 
 ```c
 typedef struct QTVRPanoSampleAtom {
@@ -177,7 +177,7 @@ typedef struct QTVRPanoSampleAtom {
 } QTVRPanoSampleAtom, *QTVRPanoSampleAtomPtr;
 ```
 
-#### Cubic View Atom Structure
+## Cubic View Atom Structure
 
 ```c
 struct QTVRCubicViewAtom {
@@ -195,7 +195,7 @@ struct QTVRCubicViewAtom {
 typedef struct QTVRCubicViewAtom    QTVRCubicViewAtom;
 ```
 
-#### Cubic Face Data Atom Structure
+## Cubic Face Data Atom Structure
 
 ```c
 struct QTVRCubicFaceData {
@@ -207,7 +207,7 @@ struct QTVRCubicFaceData {
 typedef struct QTVRCubicFaceData    QTVRCubicFaceData;
 ```
 
-#### Object Sample Atom Structure
+## Object Sample Atom Structure
 
 ```c
 typedef struct QTVRObjectSampleAtom {
@@ -239,7 +239,7 @@ typedef struct QTVRObjectSampleAtom {
 } QTVRObjectSampleAtom, *QTVRObjectSampleAtomPtr;
 ```
 
-#### Track Reference Entry Structure
+## Track Reference Entry Structure
 
 ```c
 struct QTVRTrackRefEntry {

@@ -20,7 +20,7 @@ nonisolated
 struct NewDocumentButton<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Use a new document button to give people the option to create documents in your app. In the following example, there are two new document buttons, both support [`Text`](./text.md) labels. When the user taps or clicks the first button, the system creates a new document in the directory currently open in the document browser. The second button presents a template picker, where a document can be prepopulated or preconfigured using a template.
 

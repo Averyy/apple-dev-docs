@@ -26,7 +26,7 @@ var locationType: HKWorkoutSessionLocationType { get }
 @property (readonly) HKWorkoutSessionLocationType locationType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible location values, see [`HKWorkoutSessionLocationType`](../hkworkoutsessionlocationtype.md).
 

@@ -22,7 +22,7 @@ A key decoding strategy defined by the closure you supply.
 case custom(@Sendable ([any CodingKey]) -> any CodingKey)
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this case is a closure you use to map names of keys from the decoded JSON object to the names of your type’s coding keys. During decoding, the closure executes once for each key in the [`Decodable`](../../../Swift/decodable.md) value. When called, the closure receives an array of [`CodingKey`](../../../Swift/codingkey.md) instances representing the sequence of keys needed to reach the value the decoder is currently decoding.
 

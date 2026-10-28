@@ -12,11 +12,11 @@ virtual bool setMediaAddressLength(
  UInt8length );
 ```
 
-#### Return Value
+## Return Value
 
 Always returns true.
 
-#### Overview
+## Overview
 
 Calls `ifnet_set_addrlen` if interface is attached to the network stack, and updates the `kIOMediaAddressLength` property using the provided value.
 

@@ -19,11 +19,11 @@ class func epsOperation(with view: NSView, inside rect: NSRect, to data: NSMutab
 + (NSPrintOperation *) EPSOperationWithView:(NSView *) view insideRect:(NSRect) rect toData:(NSMutableData *) data printInfo:(NSPrintInfo *) printInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The new `NSPrintOperation` object. You must run the operation to generate the EPS data.
 
-#### Discussion
+## Discussion
 
 This method raises an `NSPrintOperationExistsException` if there is already a print operation in progress; otherwise the returned object is made the current print operation for this thread.
 

@@ -28,7 +28,7 @@ var colorTransferFunction: String? { get set }
 
 - [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. When the value of this property is `nil`, the source’s transfer function is propagated and used. Valid values are those suitable for [`AVVideoTransferFunctionKey`](../avvideotransferfunctionkey.md).
 

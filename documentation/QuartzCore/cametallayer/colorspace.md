@@ -24,7 +24,7 @@ var colorspace: CGColorSpace? { get set }
 @property (nullable) CGColorSpaceRef colorspace;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to specify a color space for the contents of the layer. When a color space is present, Core Animation performs any necessary color space transformations when compositing this content.
 

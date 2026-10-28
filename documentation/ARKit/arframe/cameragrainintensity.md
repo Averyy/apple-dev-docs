@@ -20,7 +20,7 @@ var cameraGrainIntensity: Float { get }
 @property (nonatomic, readonly) float cameraGrainIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 This property is normalized within the range [0..1], where zero specifies no grain, and one specifies the maximum amount of grain.
 

@@ -12,11 +12,11 @@ virtual bool setUnitNumber(
  UInt16unit );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true to indicate success if the interface has not yet attached to the network stack, otherwise returns false.
 
-#### Overview
+## Overview
 
 This method is called internally before the interface is attached to the network stack, to assign an unique unit number to the interface object. The `kIOInterfaceUnit` property is also updated using the provided value.
 

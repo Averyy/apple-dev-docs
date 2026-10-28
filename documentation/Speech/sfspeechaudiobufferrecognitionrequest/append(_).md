@@ -23,7 +23,7 @@ func append(_ audioPCMBuffer: AVAudioPCMBuffer)
 - (void) appendAudioPCMBuffer:(AVAudioPCMBuffer *) audioPCMBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The audio must be in a native format and uncompressed.
 

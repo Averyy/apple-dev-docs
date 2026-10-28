@@ -23,7 +23,7 @@ case binary
 CLSProgressReportingCapabilityKindBinary
 ```
 
-#### Discussion
+## Discussion
 
 Add this capability to indicate that a context reports a binary condition at the end of a task, like pass or fail, using a [`CLSBinaryItem`](../../clsbinaryitem.md) instance.
 

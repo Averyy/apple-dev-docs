@@ -15,11 +15,11 @@ Gets a Boolean value that represents the clock’s stability.
 bool GetClockIsStable();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the clock is stable; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

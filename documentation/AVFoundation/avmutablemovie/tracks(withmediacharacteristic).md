@@ -24,11 +24,11 @@ func tracks(withMediaCharacteristic mediaCharacteristic: AVMediaCharacteristic) 
 - (NSArray<AVMutableMovieTrack *> *) tracksWithMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tracks, which is empty if there are no tracks with the media characteristic.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load tracks asynchronously using [`loadTracks(withMediaCharacteristic:completionHandler:)`](./loadtracks%28withmediacharacteristic,completionhandler%29.md) instead.
 

@@ -21,7 +21,7 @@ Returns `0` if the input value is less than the threshold; otherwise returns the
 case zeroFill
 ```
 
-#### Discussion
+## Discussion
 
 Use [`vDSP.ThresholdRule.zeroFill`](./zerofill.md) to calculate a new vector where the threshold operation sets all source values below the threshold to `0`.
 

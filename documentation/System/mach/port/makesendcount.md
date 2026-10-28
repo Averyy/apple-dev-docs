@@ -23,7 +23,7 @@ var makeSendCount: mach_port_mscount_t { get set }
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 Each get/set of this property makes a syscall.
 

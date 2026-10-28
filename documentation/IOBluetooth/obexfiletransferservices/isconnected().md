@@ -19,11 +19,11 @@ func isConnected() -> Bool
 - (BOOL) isConnected;
 ```
 
-#### Return Value
+## Return Value
 
 Success or failure code.
 
-#### Discussion
+## Discussion
 
 Asks the OBEXSession that was passed to it on creation if it has an open OBEX connection
 

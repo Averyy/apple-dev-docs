@@ -11,11 +11,11 @@ Returns the storage increment of the array.
 virtual unsigned int getCapacityIncrement() const;
 ```
 
-#### Return Value
+## Return Value
 
 The storage increment of the array.
 
-#### Overview
+## Overview
 
 An OSArray allocates storage for objects in multiples of the capacity increment.
 

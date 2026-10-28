@@ -24,7 +24,7 @@ Creates a new access logger that reports configuration access events.
 init(logger: Logger, level: Logger.Level = .debug, message: Logger.Message = "Config value accessed")
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let logger = Logger(label: "my.app.config")

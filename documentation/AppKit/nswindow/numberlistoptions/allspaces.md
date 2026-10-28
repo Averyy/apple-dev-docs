@@ -17,7 +17,7 @@ static var allSpaces: NSWindow.NumberListOptions { get }
 NSWindowNumberListAllSpaces
 ```
 
-#### Discussion
+## Discussion
 
 The window numbers of windows visible on any space and belonging to the calling application.
 

@@ -31,7 +31,7 @@ var distanceRemainingElectric: Measurement<UnitLength>? { get set }
 @property (atomic, copy, readwrite, nullable) NSMeasurement<NSUnitLength *> * distanceRemainingElectric;
 ```
 
-#### Discussion
+## Discussion
 
 Due to driving characteristics and power consumption, this value changes over time when the vehicle’s in motion.
 

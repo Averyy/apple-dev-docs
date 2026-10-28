@@ -24,11 +24,11 @@ class func hueBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) hueBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the hue-blend mode filter to an image. The effect uses the values of the saturation and luminance from the background image with the hue of the input image to produce the output.
 

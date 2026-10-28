@@ -22,11 +22,11 @@ func lockTextureRepresentation(with colorSpace: CGColorSpace!, forBounds bounds:
 - (BOOL) lockTextureRepresentationWithColorSpace:(CGColorSpaceRef) colorSpace forBounds:(NSRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) is successful; [`false`](../../Swift/false.md) if texture can’t be created.
 
-#### Discussion
+## Discussion
 
 Neither the content of the texture nor its states (for example, the wrap mode) must be modified; you can only draw with it. The texture is valid only in the plug-in context.
 

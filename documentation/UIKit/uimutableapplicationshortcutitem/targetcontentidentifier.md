@@ -22,7 +22,7 @@ var targetContentIdentifier: Any? { get set }
 @property (nonatomic, copy, nullable) id targetContentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an object to this property when you want a specific scene of your app to handle quick actions. UIKit applies the value in this property to the activation conditions defined by the [`UISceneActivationConditions`](../uisceneactivationconditions.md) objects of the available scenes. Based on the predicates you specify, UIKit selects the most appropriate scene for handling the action.
 

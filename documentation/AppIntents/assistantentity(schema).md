@@ -18,8 +18,8 @@ A Swift macro you use to make sure your app entity conforms to an assistant sche
 ## Declaration
 
 ```swift
-@attached
-(memberAttribute) @attached(extension, conformances: AppEntity, AssistantSchemaEntity, names: named(__assistantSchemaEntity)) macro AssistantEntity<T>(schema: T) where T : AssistantSchemas.Entity
+@attached(memberAttribute)
+@attached(extension, conformances: AppEntity, AssistantSchemaEntity, names: named(__assistantSchemaEntity)) macro AssistantEntity<T>(schema: T) where T : AssistantSchemas.Entity
 ```
 
 ## See Also

@@ -5,7 +5,7 @@
 
 Include an entitlement to indicate your extension is a MediaExtension video decoder.
 
-#### Overview
+## Overview
 
 MediaExtension video decoders must include a special entitlement key with a Boolean value set to `true`. To add the entitlement key in Xcode, follow these steps:
 

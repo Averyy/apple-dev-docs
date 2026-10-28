@@ -21,7 +21,7 @@ Randomly applies a transformer on an input.
 func applied(to input: RandomTransformer.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler? = nil) async throws -> RandomTransformer.Output
 ```
 
-#### Return Value
+## Return Value
 
 The randomly transformed input.
 

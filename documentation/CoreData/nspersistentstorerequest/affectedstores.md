@@ -25,7 +25,7 @@ var affectedStores: [NSPersistentStore]? { get set }
 @property (nonatomic, strong, nullable) NSArray<NSPersistentStore *> * affectedStores;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains instances of [`NSPersistentStore`](../nspersistentstore.md).
 

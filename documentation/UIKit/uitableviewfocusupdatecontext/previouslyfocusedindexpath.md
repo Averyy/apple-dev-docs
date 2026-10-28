@@ -23,7 +23,7 @@ var previouslyFocusedIndexPath: IndexPath? { get }
 @property (nonatomic, strong, readonly, nullable) NSIndexPath * previouslyFocusedIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the index path only when the [`previouslyFocusedView`](../uifocusupdatecontext/previouslyfocusedview.md) is located within a cell of the table view. Otherwise, it returns `nil`. This can happen if focus is moving into the table view, because the [`previouslyFocusedView`](../uifocusupdatecontext/previouslyfocusedview.md) isn’t associated with an index path in this table view.
 

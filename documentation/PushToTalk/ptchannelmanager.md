@@ -25,7 +25,7 @@ class PTChannelManager
 
 - [Creating a Push to Talk app](./creating-a-push-to-talk-app.md)
 
-#### Overview
+## Overview
 
 You must create a channel manager upon launching your app, otherwise the system tears down channels and their ability to receive push notifications. By providing a [`PTChannelRestorationDelegate`](./ptchannelrestorationdelegate.md), an app can rejoin or leave a previously active channel the system knows about. Once the channel resoration process completes, the system provides a [`PTChannelManager`](./ptchannelmanager.md) instance.
 

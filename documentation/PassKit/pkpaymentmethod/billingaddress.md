@@ -25,7 +25,7 @@ var billingAddress: CNContact? { get }
 @property (nonatomic, copy, readonly, nullable) CNContact * billingAddress;
 ```
 
-#### Discussion
+## Discussion
 
 For privacy, PassKit partially redacts the user’s billing address. PassKit populates this property only when the app doesn’t request a shipping address.
 

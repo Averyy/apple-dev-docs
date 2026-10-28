@@ -23,7 +23,7 @@ var kDNSServiceType_NSAP_PTR: Int { get }
 kDNSServiceType_NSAP_PTR
 ```
 
-#### Discussion
+## Discussion
 
 Reverse NSAP lookup (deprecated).
 

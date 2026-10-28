@@ -25,11 +25,11 @@ class func success(with resolvedValue: Int) -> Self
 + (instancetype) successWithResolvedValue:(NSInteger) resolvedValue;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INIntegerResolutionResult`](../inintegerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve a parameter successfully to a value in your own internal data structures.
 

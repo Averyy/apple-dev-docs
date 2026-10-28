@@ -16,11 +16,11 @@ Determines whether the device has the specified PCI bus power management capabil
 virtual kern_return_t HasPCIPowerManagement(uint64_t state);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) if the specified state is supported, or another value if isn’t supported. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 - state: The flags for the power management capabilities you want to check. If you specify `0`, this method checks for the power-management information in the device’s registry. For a list of possible flags, see [Power Management Capabilities](../power-management-capabilities-enum.md).
 

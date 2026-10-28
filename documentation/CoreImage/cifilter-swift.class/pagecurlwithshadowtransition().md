@@ -28,11 +28,11 @@ class func pageCurlWithShadowTransition() -> any CIFilter & CIPageCurlWithShadow
 
 - [Customizing Image Transitions](../customizing-image-transitions.md)
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the page curl with shadow transition filter to an image. The effect transitions from one image to another by simulating a curling page, revealing the target image as the page curls with a shadow effect from the backside image.
 

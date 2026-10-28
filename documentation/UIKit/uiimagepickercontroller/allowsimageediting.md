@@ -19,7 +19,7 @@ A Boolean value that indicates whether the user is allowed to edit a selected im
 @property (nonatomic) BOOL allowsImageEditing;
 ```
 
-#### Discussion
+## Discussion
 
 If you allow the user to edit images, the delegate may receive a dictionary with information about the edits that were made.
 

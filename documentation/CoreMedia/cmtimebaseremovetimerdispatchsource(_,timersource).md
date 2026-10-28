@@ -25,7 +25,7 @@ func CMTimebaseRemoveTimerDispatchSource(_ timebase: CMTimebase, timerSource: di
 extern OSStatus CMTimebaseRemoveTimerDispatchSource(CMTimebaseRef timebase, dispatch_source_t timerSource);
 ```
 
-#### Discussion
+## Discussion
 
 The timebase no longer maintains the timer source’s start time. If the system cancels the timer source, the timebase eventually removes it from its list and releases it even if you don’t call this function.
 

@@ -23,7 +23,7 @@ func createRequest() -> ASAuthorizationSingleSignOnRequest
 - (ASAuthorizationSingleSignOnRequest *) createRequest;
 ```
 
-#### Return Value
+## Return Value
 
 A single sign-on (SSO) authorization request.
 

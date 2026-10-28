@@ -13,11 +13,11 @@ Crop regions most likely drawing people’s attention from an image in your iOS 
 - watchOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session 237: [What’s new in image understanding](https://developer.apple.com/wwdc26/237/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 To configure the sample code project, do the following:
 

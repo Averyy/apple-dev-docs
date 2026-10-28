@@ -23,7 +23,7 @@ var browserAccessibilityRoleDescription: String? { get set }
 @property (nonatomic, strong, nullable) NSString * browserAccessibilityRoleDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of the element’s `aria-roledescription` attribute for this property.
 

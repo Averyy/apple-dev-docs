@@ -23,7 +23,7 @@ var indentationLevel: Int { get set }
 @property (nonatomic) NSInteger indentationLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of the property is zero (no indentation). Assigning a positive value to this property indents the cell’s content from the left edge of the cell separator. The amount of indentation is equal to the indentation level multiplied by the value in the [`indentationWidth`](./indentationwidth.md) property.
 

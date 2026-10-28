@@ -16,7 +16,7 @@ The timeout interval for outgoing remote messages.
 @property NSTimeInterval requestTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 If a remote message can’t be sent before the timeout, an [`portTimeoutException`](../nsexceptionname/porttimeoutexception.md) is raised. The default timeout is the maximum possible value.
 

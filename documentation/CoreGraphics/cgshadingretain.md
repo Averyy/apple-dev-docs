@@ -21,11 +21,11 @@ Increments the retain count of a shading object.
 extern CGShadingRefCGShadingRetain(CGShadingRef shading);
 ```
 
-#### Return Value
+## Return Value
 
 The same shading object you passed in as the `shading` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `shading` parameter is `NULL`.
 

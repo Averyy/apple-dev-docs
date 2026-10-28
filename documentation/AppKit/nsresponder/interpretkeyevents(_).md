@@ -19,7 +19,7 @@ func interpretKeyEvents(_ eventArray: [NSEvent])
 - (void) interpretKeyEvents:(NSArray<NSEvent *> *) eventArray;
 ```
 
-#### Discussion
+## Discussion
 
 This method, which is invoked by subclasses from the [`keyDown(with:)`](./keydown%28with%29.md) method, sends the character input in `eventArray` to the system input manager for interpretation as text to insert or commands to perform. The input manager responds to the request by sending [`insertText(_:)`](../nsstandardkeybindingresponding/inserttext%28_%29.md) and [`doCommand(by:)`](../nsstandardkeybindingresponding/docommand%28by%29.md) messages back to the invoker of this method. Subclasses shouldn’t override this method.
 

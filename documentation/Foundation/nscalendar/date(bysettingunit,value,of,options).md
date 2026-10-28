@@ -25,11 +25,11 @@ func date(bySettingUnit unit: NSCalendar.Unit, value v: Int, of date: Date, opti
 - (NSDate *) dateBySettingUnit:(NSCalendarUnit) unit value:(NSInteger) v ofDate:(NSDate *) date options:(NSCalendarOptions) opts;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` instance representing the date calculated by setting a specific component of a given date to a given value. If the unit already has that value, this may result in a date which is the same as the given date. If no such time exists for the specified components, the next available date is returned, which may be on a different calendar day.
 
-#### Discussion
+## Discussion
 
 Changing a component’s value often requires higher or coupled components to change as well. For example, setting the `weekday` to “Thursday” will require the `day` component to change its value, and possibly the `month` and `year` as well. You can use the [`nextDate(after:matching:value:options:)`](./nextdate%28after,matching,value,options%29.md) method to specify more precise behavior for determining the next or previous date for a given date component.
 

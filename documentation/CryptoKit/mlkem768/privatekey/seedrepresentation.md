@@ -21,7 +21,7 @@ The private key’s seed representation.
 var seedRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The seed is `d||z`, as specified in the algorithm `ML-KEM.KeyGen_internal(d,z)` (Algorithm 16) of FIPS 203.
 

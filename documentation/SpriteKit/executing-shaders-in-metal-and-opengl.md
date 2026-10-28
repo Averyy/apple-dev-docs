@@ -5,7 +5,7 @@
 
 Toggle between renderers to make sure your shader code compiles in both the Metal and OpenGL environments.
 
-#### Overview
+## Overview
 
 On devices that support it, the GLSL code you provide to [`SKShader`](./skshader.md) is automatically converted to Metal shading language and run on a Metal renderer. On older devices, shader code is run in OpenGL. It’s important to be mindful of this for debugging purposes because some issues may appear in one renderer but not the other.
 

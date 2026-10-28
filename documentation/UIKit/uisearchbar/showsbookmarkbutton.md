@@ -22,7 +22,7 @@ var showsBookmarkButton: Bool { get set }
 @property (nonatomic) BOOL showsBookmarkButton;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

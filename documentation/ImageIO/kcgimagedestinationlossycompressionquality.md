@@ -25,7 +25,7 @@ let kCGImageDestinationLossyCompressionQuality: CFString
 extern CFStringRef const kCGImageDestinationLossyCompressionQuality;
 ```
 
-#### Discussion
+## Discussion
 
 If present, the value associated with this key must be a `CFNumberRef` data type in the range `0.0` to `1.0`. A value of `1.0` specifies to use lossless compression if destination format supports it. A value of 0.0 implies to use maximum compression.
 

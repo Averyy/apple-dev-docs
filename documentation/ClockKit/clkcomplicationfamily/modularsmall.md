@@ -19,7 +19,7 @@ case modularSmall
 CLKComplicationFamilyModularSmall
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the modular small complication.
 

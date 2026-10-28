@@ -16,7 +16,7 @@ get size(): Size | null;
 set size(value: Size);
 ```
 
-#### Discussion
+## Discussion
 
 If supplied, indicates the desired size of the annotation in CSS pixels. The value must be an object with `width` and `height` number properties:
 

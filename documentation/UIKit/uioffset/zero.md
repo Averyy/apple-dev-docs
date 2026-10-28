@@ -24,7 +24,7 @@ static let zero: UIOffset
 extern const UIOffset UIOffsetZero;
 ```
 
-#### Discussion
+## Discussion
 
 This constant represents a [`UIOffset`](../uioffset.md) structure whose [`horizontal`](./horizontal.md) and [`vertical`](./vertical.md) fields are `0`.
 

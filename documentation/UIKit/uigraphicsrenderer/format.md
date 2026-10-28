@@ -23,7 +23,7 @@ var format: UIGraphicsRendererFormat { get }
 @property (nonatomic, readonly) UIGraphicsRendererFormat * format;
 ```
 
-#### Discussion
+## Discussion
 
 The property returns a copy of the [`UIGraphicsRendererFormat`](../uigraphicsrendererformat.md) instance used to create the graphics renderer.
 

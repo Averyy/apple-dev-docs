@@ -22,7 +22,7 @@ nonisolated
 init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>, stacking: MarkStackingMethod = .standard) where X : Plottable, Y : Plottable, S : Plottable
 ```
 
-#### Discussion
+## Discussion
 
 The initializer behaves like [`init(x:y:stacking:)`](./init%28x,y,stacking%29.md), except that you can indicate which region each data point belongs to by providing a value for the `series` input. This enables you to plot more than one region on a single chart.
 

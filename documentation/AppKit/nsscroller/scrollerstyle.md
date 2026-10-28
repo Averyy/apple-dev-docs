@@ -19,7 +19,7 @@ var scrollerStyle: NSScroller.Style { get set }
 @property NSScrollerStyle scrollerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For a scroller that’s managed by an [`NSScrollView`](../nsscrollview.md) object, the setter is automatically invoked by the scroll view with the appropriate setting, according to the user’s Appearance preference settings and possibly what pointing device(s) are present (see [`preferredScrollerStyle`](./preferredscrollerstyle.md)).
 

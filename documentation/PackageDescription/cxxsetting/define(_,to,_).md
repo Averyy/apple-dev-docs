@@ -15,7 +15,7 @@ Defines a value for a macro.
 static func define(_ name: String, to value: String? = nil, _ condition: BuildSettingCondition? = nil) -> CXXSetting
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a value, the macro’s default value is 1.
 

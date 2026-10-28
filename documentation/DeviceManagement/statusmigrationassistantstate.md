@@ -15,9 +15,9 @@ A status item that shows the device’s current migration state.
 object StatusMigrationAssistantState
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +28,7 @@ object StatusMigrationAssistantState
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

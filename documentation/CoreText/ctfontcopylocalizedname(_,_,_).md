@@ -25,11 +25,11 @@ func CTFontCopyLocalizedName(_ font: CTFont, _ nameKey: CFString, _ actualLangua
 extern CFStringRefCTFontCopyLocalizedName(CTFontRef font, CFStringRef nameKey, CFStringRef*actualLanguage);
 ```
 
-#### Return Value
+## Return Value
 
 A specific localized name from the font reference or `NULL` if the font does not have an entry for the requested name key.
 
-#### Discussion
+## Discussion
 
 The name is localized based on the user’s global language preference precedence. That is, the user’s language preference is a list of languages in order of precedence. So, for example, if the list had Japanese and English, in that order, then a font that did not have Japanese name strings but had English strings would return the English strings.
 

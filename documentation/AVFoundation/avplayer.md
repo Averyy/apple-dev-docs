@@ -36,7 +36,7 @@ class AVPlayer
 - [Presenting chapter markers](./presenting-chapter-markers.md)
 - [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
 
-#### Overview
+## Overview
 
 A player is a controller object that manages the playback and timing of a media asset. Use an instance of [`AVPlayer`](./avplayer.md) to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
 

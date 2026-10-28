@@ -15,7 +15,7 @@ The playback progress to display for the media item.
 var playbackProgress: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system clamps the value between `0.0` and `1.0`.
 

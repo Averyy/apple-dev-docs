@@ -25,7 +25,7 @@ var isResting: Bool { get set }
 @property (nonatomic, getter=isResting) BOOL resting;
 ```
 
-#### Discussion
+## Discussion
 
 This property is automatically set to [`true`](../../Swift/true.md) by the physics simulation when it determines that the body is at rest. This means that the body is at rest on another body in the system. Resting bodies do not participate in the physics simulation until an impulse is applied to the object or another object collides with it. This improves the performance of the physics simulation. If all bodies in the world are resting, the entire simulation is at rest, reducing the number of calculations that are performed by the physics world.
 

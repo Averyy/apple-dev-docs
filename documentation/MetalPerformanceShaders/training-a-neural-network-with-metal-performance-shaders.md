@@ -10,7 +10,7 @@ Use an MPS neural network graph to train a simple neural network digit classifie
 - macOS 10.15+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 The sample code describes how to write a neural network using [`MPSNNGraph`](./mpsnngraph.md) and how to train the network to recognize a digit in an image. The sample trains a network for 300 iterations on a batch size of 40 images. You’ll see how to set up training of weights and biases using data sources, including how to initialize and update weights. You’ll also see how to validate the network using a test dataset.
 
@@ -24,7 +24,7 @@ Please note that Apple does not own the copyright to this dataset nor makes any 
 
 If you choose to use this dataset, the sample includes a script that downloads the dataset from that location and pass it as input to the model.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 

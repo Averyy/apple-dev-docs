@@ -13,11 +13,11 @@
 errno_t mbuf_set_vlan_tag(mbuf_t mbuf, u_int16_t vlan);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This function is used by interfaces that support vlan tagging in hardware. This function will set properties in the mbuf to indicate which vlan the packet was received for.
 

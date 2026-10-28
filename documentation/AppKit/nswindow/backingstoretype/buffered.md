@@ -19,7 +19,7 @@ case buffered
 NSBackingStoreBuffered
 ```
 
-#### Discussion
+## Discussion
 
 You should use this mode. It supports hardware acceleration, Quartz drawing, and takes advantage of the GPU when possible. It also supports alpha channel drawing, opacity controls, using the compositor.
 

@@ -21,11 +21,11 @@ Publishes the first element of a stream to satisfy a predicate closure, then fin
 func first(where predicate: @escaping (Self.Output) -> Bool) -> Publishers.FirstWhere<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that only publishes the first element of a stream that satisfies the predicate.
 
-#### Discussion
+## Discussion
 
 Use [`first(where:)`](./first%28where%29.md) to republish only the first element of a stream that satisfies a closure you specify. The publisher ignores all elements after the first element that satisfies the closure and finishes normally. If this publisher doesn’t receive any elements, it finishes without publishing.
 

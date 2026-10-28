@@ -17,7 +17,7 @@ Create an attention mask using the parameters from the KVCache.
 func createAttentionMask(h: MLXArray, cache: [KVCache]?) -> MLXArray?
 ```
 
-#### Discussion
+## Discussion
 
 See also `MultiHeadAttention.createAdditiveCausalMask(_:dtype:)` – same idea but doesn’t honor the cache offset.
 

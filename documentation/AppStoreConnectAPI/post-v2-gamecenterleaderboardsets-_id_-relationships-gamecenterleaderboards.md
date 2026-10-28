@@ -9,7 +9,7 @@ Add a leaderboard to a Game Center leaderboard set.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - 204:

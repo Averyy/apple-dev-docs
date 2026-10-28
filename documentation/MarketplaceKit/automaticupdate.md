@@ -16,7 +16,7 @@ Information that describes an app that’s available for update, including a dow
 struct AutomaticUpdate
 ```
 
-#### Overview
+## Overview
 
 Your app’s [`MarketplaceAppExtension`](./marketplaceappextension.md) provides the operating system an instance of this structure when asked via your implementation of the [`automaticUpdates(for:)`](./marketplaceappextension/automaticupdates%28for%29.md) callback.
 

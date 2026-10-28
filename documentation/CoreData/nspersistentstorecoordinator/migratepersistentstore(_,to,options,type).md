@@ -21,7 +21,7 @@ Changes the location and, if necessary, the store type of the specified persiste
 func migratePersistentStore(_ store: NSPersistentStore, to storeURL: URL, options: [AnyHashable : Any]? = nil, type storeType: NSPersistentStore.StoreType) throws -> NSPersistentStore
 ```
 
-#### Discussion
+## Discussion
 
 Performance may vary depending on the store types of the old and new stores. Invoking this method removes the specified store from the coordinator.
 

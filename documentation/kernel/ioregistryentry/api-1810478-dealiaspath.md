@@ -13,11 +13,11 @@ static const char * dealiasPath(
  const IORegistryPlane *plane );
 ```
 
-#### Return Value
+## Return Value
 
 A C-string pointer to the value of the alias if one is found, or zero if not.
 
-#### Overview
+## Overview
 
 If the path specified begins with an alias found in the /aliases entry, the value of the alias is returned, and a pointer into the passed in path after the alias is passed back to the caller. If an alias is not found, zero is returned and the path parameter is unchanged.
 

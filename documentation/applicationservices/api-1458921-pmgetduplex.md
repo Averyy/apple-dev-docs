@@ -19,11 +19,11 @@ func PMGetDuplex(_ printSettings: PMPrintSettings, _ duplexSetting: UnsafeMutabl
 OSStatus PMGetDuplex(PMPrintSettings printSettings, PMDuplexMode *duplexSetting);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). 
 
-#### Discussion
+## Discussion
 
 Duplex printing is a print job that prints on both sides of the paper. The Two-Sided printing control is displayed in the Layout pane of the Print dialog.
 

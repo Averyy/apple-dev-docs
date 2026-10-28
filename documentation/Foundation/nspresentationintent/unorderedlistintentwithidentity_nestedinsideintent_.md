@@ -21,7 +21,7 @@ Creates an unordered-list intent with the provided information.
 + (NSPresentationIntent *) unorderedListIntentWithIdentity:(NSInteger) identity nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindUnorderedList`](../nspresentationintentkind/nspresentationintentkindunorderedlist.md).
 

@@ -24,7 +24,7 @@ func userContentController(_ userContentController: WKUserContentController, did
 - (void) userContentController:(WKUserContentController *) userContentController didReceiveScriptMessage:(WKScriptMessage *) message;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to respond to a message sent from the webpage’s JavaScript code. Use the message parameter to get the message contents and to determine the originating web view.
 

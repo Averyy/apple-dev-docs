@@ -19,7 +19,7 @@ uuid appAccountToken
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 When a customer initiates an in-app purchase, your app may create an [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md) and send it to the App Store. The App Store returns the same value in [`appAccountToken`](./appaccounttoken.md) in the transaction information after the customer completes the purchase.
 

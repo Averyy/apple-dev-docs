@@ -21,7 +21,7 @@ The automatic axis behavior.
 static let automatic: ToolbarItemAxisBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The system infers the supported axes based on the content type of the item. Image items support both axes; text and custom view items support only the horizontal axis.
 

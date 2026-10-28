@@ -15,11 +15,11 @@ Invokes the specified function of your component.
 ComponentResult CallComponentFunctionWithStorage(Handle storage, ComponentParameters *params, ComponentFunctionUPP func);
 ```
 
-#### Return Value
+## Return Value
 
 The value that is returned by the function referred to by the `func` parameter. Your component should use this value to set the current error for this connection. Use the [`SetComponentInstanceError`](./api-1516663-setcomponentinstanceerror.md) function to set the current error for a connection. 
 
-#### Discussion
+## Discussion
 
 When an application requests service from your component, your component receives a component parameters structure containing the parameters that the application provided when it called your component. Your component can use this structure to access the parameters directly. Alternatively, you can use either the  [`CallComponentFunction`](./api-1516603-callcomponentfunction.md)  function or this function to extract those parameters and pass them to a subroutine of your component. By taking advantage of these functions, you can simplify the structure of your component code. 
 

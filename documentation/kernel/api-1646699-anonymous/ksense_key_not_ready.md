@@ -13,7 +13,7 @@
 kSENSE_KEY_NOT_READY = 0x02
 ```
 
-#### Discussion
+## Discussion
 
 Device server is not ready.
 

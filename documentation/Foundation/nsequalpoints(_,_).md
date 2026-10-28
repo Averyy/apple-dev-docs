@@ -20,7 +20,7 @@ func NSEqualPoints(_ aPoint: NSPoint, _ bPoint: NSPoint) -> Bool
 extern BOOL NSEqualPoints(NSPoint aPoint, NSPoint bPoint);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two points `aPoint` and `bPoint` are identical, otherwise [`false`](../Swift/false.md).
 

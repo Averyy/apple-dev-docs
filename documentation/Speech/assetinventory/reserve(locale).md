@@ -21,11 +21,11 @@ Add an asset locale to the app’s current reservations.
 static func reserve(locale: Locale) async throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `false` if the locale was already reserved.
 
-#### Discussion
+## Discussion
 
 If an asset that supports the input locale exists, adds that asset’s locale to [`reservedLocales`](./reservedlocales.md).
 

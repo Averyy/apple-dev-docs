@@ -24,7 +24,7 @@ static var connectionOnDemand: SCNetworkReachabilityFlags { get }
 kSCNetworkReachabilityFlagsConnectionOnDemand
 ```
 
-#### Discussion
+## Discussion
 
 The connection will be established “On Demand” by the `CFSocketStream` programming interface (see CFStream Socket Additions for information on this). Other functions will not establish the connection.
 

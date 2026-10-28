@@ -5,7 +5,7 @@
 
 Create an app extension that lets users report unwanted SMS messages and calls as junk.
 
-#### Overview
+## Overview
 
 To report SMS messages and calls as spam, the user must enable an Unwanted Communication Reporting extension, called an SMS/Call Reporting extension in the Settings app (see Settings > Phone > SMS/Call Reporting). The user can only enable one Unwanted Communication Reporting extension at a time.
 
@@ -22,7 +22,7 @@ Specifically, the system:
 
 Use your [`ILClassificationUIExtensionViewController`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller.md) subclass to gather data from the user. Override the [`prepare(for:)`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller/prepare%28for%29.md) method to configure your controller.
 
-##### Cancel or Complete the Report
+### Cancel or Complete the Report
 
 The system provides a Cancel and a Done button for the controller. By default, the system disables the Done button. As soon as the user has entered all the information you require, enable the Done button by setting the view controller’s [`isReadyForClassificationResponse`](../IdentityLookupUI/ilclassificationuiextensioncontext/isreadyforclassificationresponse.md) property to [`true`](../Swift/true.md).
 
@@ -36,7 +36,7 @@ If the user presses Done, the system calls your view controller’s [`classifica
 
 Override the [`classificationResponse(for:)`](../IdentityLookupUI/ilclassificationuiextensionviewcontroller/classificationresponse%28for%29.md) method to return a [`ILClassificationResponse`](./ilclassificationresponse.md) based on the data the user has entered and information about the SMS message or call from the request object.
 
-##### Choose a Response
+### Choose a Response
 
 The system takes different actions based on the response. For [`ILClassificationAction.none`](./ilclassificationaction/none.md), the system dismisses your view controller, but doesn’t take any other action, as shown in the figure below.
 

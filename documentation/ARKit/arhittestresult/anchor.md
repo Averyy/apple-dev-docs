@@ -22,7 +22,7 @@ var anchor: ARAnchor? { get }
 @property (nonatomic, strong, readonly, nullable) ARAnchor * anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Results of the [`featurePoint`](./resulttype/featurepoint.md) type do not include an anchor.
 

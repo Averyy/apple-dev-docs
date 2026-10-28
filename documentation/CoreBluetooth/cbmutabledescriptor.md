@@ -25,7 +25,7 @@ class CBMutableDescriptor
 @interface CBMutableDescriptor : CBDescriptor
 ```
 
-#### Overview
+## Overview
 
 You use the [`CBMutableDescriptor`](./cbmutabledescriptor.md) class to create a local characteristic descriptor. After you create a descriptor and associate it with a local characteristic, you can publish it to the peripheral’s local database using the [`add(_:)`](./cbperipheralmanager/add%28_%29.md) method of the [`CBPeripheralManager`](./cbperipheralmanager.md) class. This also publishes the characteristic and local service to which the descriptor belongs. After you publish a local descriptor, Core Bluetooth caches the descriptor and you can no longer make changes to it.
 

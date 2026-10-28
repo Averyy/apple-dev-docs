@@ -25,7 +25,7 @@ optional func presentedSubitem(at oldURL: URL, didMoveTo newURL: URL)
 - (void) presentedSubitemAtURL:(NSURL *) oldURL didMoveToURL:(NSURL *) newURL;
 ```
 
-#### Discussion
+## Discussion
 
 This method is relevant for applications that present directories. This might occur if the delegate manages the contents of a directory or manages a file that is implemented as a file package. Your implementation of this method should take whatever actions necessary to handle the change in location of the specified item. For example, you might update references to the item in your application’s data structures and refresh your user interface.
 

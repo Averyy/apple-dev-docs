@@ -24,11 +24,11 @@ init(predicate: NSPredicate)
 - (instancetype) initWithPredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 A new predicate-based rule object.
 
-#### Discussion
+## Discussion
 
 Rules based on [`NSPredicate`](../../Foundation/nspredicate.md) objects typically test information in the [`state`](../gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively.
 

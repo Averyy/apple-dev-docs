@@ -18,7 +18,7 @@ The names of the icon files in the app’s asset catalog or bundle.
 - **Name**: `CFBundleIconFiles` (Icon files)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 > **Note**:  For Action extensions, to use a symbol from SF Symbols, you can specify the [`CFBundleSymbolName`](./cfbundlesymbolname.md) key instead of `CFBundleIconFiles`.
 

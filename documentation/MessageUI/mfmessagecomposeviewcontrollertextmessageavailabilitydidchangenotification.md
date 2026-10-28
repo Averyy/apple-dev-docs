@@ -18,7 +18,7 @@ Posted when the value returned by the [`canSendText()`](./mfmessagecomposeviewco
 extern NSString * const MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving this notification, query its `userInfo` dictionary with the [`MFMessageComposeViewControllerTextMessageAvailabilityKey`](./mfmessagecomposeviewcontrollertextmessageavailabilitykey.md) key. If the availability of text message sending has changed, your app should invalidate caches and update its user interface as appropriate.
 

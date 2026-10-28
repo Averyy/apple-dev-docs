@@ -25,7 +25,7 @@ var BNNSLossFunctionCategoricalCrossEntropy: BNNSLossFunction { get }
 BNNSLossFunctionCategoricalCrossEntropy
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionCategoricalCrossEntropy`](./bnnslossfunctioncategoricalcrossentropy.md) performs categorical cross entropy (that is, softmax activation plus a cross entropy loss) computation between input prediction and labels.
 

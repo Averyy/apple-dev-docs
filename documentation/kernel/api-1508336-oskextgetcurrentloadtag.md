@@ -15,11 +15,11 @@ Returns the run-time load tag for the calling kext as an `OSKextLoadTag`.
 OSKextLoadTag OSKextGetCurrentLoadTag(void);
 ```
 
-#### Return Value
+## Return Value
 
 The run-time load tag for the calling kext as an `OSKextLoadTag`.
 
-#### Discussion
+## Discussion
 
 The load tag identifies this loaded instance of the kext to the kernel and to kernel functions that operate on kexts.
 

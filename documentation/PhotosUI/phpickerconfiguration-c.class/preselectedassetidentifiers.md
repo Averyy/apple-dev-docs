@@ -19,7 +19,7 @@ An array of asset identifiers to preselect in the picker.
 @property (nonatomic, copy) NSArray<NSString *> * preselectedAssetIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Preselection works only when initializing a [`PHPickerConfiguration`](../phpickerconfiguration-swift.struct.md) object with a photo library. Otherwise, the system returns an error.
 

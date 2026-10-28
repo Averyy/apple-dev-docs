@@ -24,11 +24,11 @@ func NewMusicSequence(_ outSequence: UnsafeMutablePointer<MusicSequence?>) -> OS
 extern OSStatus NewMusicSequence(MusicSequence*outSequence);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 A new music sequence has only a tempo track, with a default tempo of 120 beats-per-minute. The default sequence type is beat-based. For the various sequence types, see [`MusicSequenceType`](./musicsequencetype.md).
 

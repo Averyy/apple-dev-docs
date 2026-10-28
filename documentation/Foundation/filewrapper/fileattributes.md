@@ -25,7 +25,7 @@ var fileAttributes: [String : Any] { get set }
 @property (copy) NSDictionary<NSString *,id> * fileAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The file attributes’ dictionary is the same format as that returned by [`attributesOfItem(atPath:)`](../filemanager/attributesofitem%28atpath%29.md) (`NSFileManager`).
 

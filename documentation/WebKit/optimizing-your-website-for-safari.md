@@ -5,7 +5,7 @@
 
 Improve your website by optimizing it for Safari.
 
-#### Overview
+## Overview
 
 Safari is a full-featured web browser that comes with macOS and iOS. While all W3C-compliant websites work in Safari, there are a few ways that you can optimizing your content for Safari to ensure it works great on Apple devices.
 

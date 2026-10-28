@@ -21,7 +21,7 @@ var highlightLine2: Bool { get set }
 @property (nonatomic) BOOL highlightLine2;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the text in row two is rendered with a highlight. When the value is [`false`](../../Swift/false.md), the image on line one is rendered with a highlight. The default value of this property is [`false`](../../Swift/false.md).
 

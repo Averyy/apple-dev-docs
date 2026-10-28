@@ -24,7 +24,7 @@ func willRemoveFromEntity()
 - (void) willRemoveFromEntity;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in a component subclass if you need to perform game logic when the component is removed from to an entity. For example, if one component’s behavior depends on the presence of other components in the same entity, you can examine the entity’s [`components`](../gkentity/components.md) array in this method and take action accordingly.
 

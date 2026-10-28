@@ -19,11 +19,11 @@ class func separator() -> NSMenuItem
 + (NSMenuItem *) separatorItem;
 ```
 
-#### Return Value
+## Return Value
 
 A menu item that is used to separate logical groups of menu commands.
 
-#### Discussion
+## Discussion
 
 This menu item is disabled. The default separator item is blank space.
 

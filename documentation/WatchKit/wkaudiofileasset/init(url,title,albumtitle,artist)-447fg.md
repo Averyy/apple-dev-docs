@@ -19,7 +19,7 @@ convenience init(url URL: URL, title: String?, albumTitle: String?, artist: Stri
 + (instancetype) assetWithURL:(NSURL *) URL title:(NSString *) title albumTitle:(NSString *) albumTitle artist:(NSString *) artist;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized asset object.
 

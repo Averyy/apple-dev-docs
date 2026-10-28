@@ -15,7 +15,7 @@ A unique identifier for this error.
 attribute string? requestUuid;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this unique identifier as a reference for the error that occurred.
 

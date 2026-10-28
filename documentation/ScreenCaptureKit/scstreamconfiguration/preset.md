@@ -20,7 +20,7 @@ enum Preset
 enum SCStreamConfigurationPreset : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Client can use SCStreamConfigurationPreset to create SCStreamConfiguration with suggested values of properties for various use cases
 

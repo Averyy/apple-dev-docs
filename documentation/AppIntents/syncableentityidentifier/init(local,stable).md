@@ -21,7 +21,7 @@ Creates an identifier with both local and stable IDs.
 init(local: LocalID, stable: StableID)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you use separate local and stable identifiers to refer to your entity.
 

@@ -25,7 +25,7 @@ static let common: RunLoop.Mode
 extern NSRunLoopMode const NSRunLoopCommonModes;
 ```
 
-#### Discussion
+## Discussion
 
 When you add an object to a run loop using this mode, the runloop monitors the object when running in any of the common modes. For details about adding a runloop mode to the set of common modes, see [`CFRunLoopAddCommonMode(_:_:)`](../../../CoreFoundation/cfrunloopaddcommonmode%28_,_%29.md).
 

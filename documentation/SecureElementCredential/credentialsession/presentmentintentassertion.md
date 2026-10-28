@@ -20,7 +20,7 @@ final class PresentmentIntentAssertion
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Overview
+## Overview
 
 Create an instance of this type to obtain a 60-second exclusive use window of the user interface for a selected credential. This prevents interruptions to your app from Wallet, any other default contactless app, or other apps using the SecureElementCredential framework.
 

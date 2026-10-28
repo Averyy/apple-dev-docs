@@ -19,11 +19,11 @@ var userReplacementsDictionary: [String : String] { get }
 @property (copy, readonly) NSDictionary<NSString *,NSString *> * userReplacementsDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary.
 
-#### Discussion
+## Discussion
 
 The key-value pairs in this dictionary are used by the [`quotes`](./optionkey/quotes.md) when replacing characters and words.
 

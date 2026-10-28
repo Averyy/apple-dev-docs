@@ -14,11 +14,11 @@ virtual IOReturn connectFlags(
  IOOptionBits *flags );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 Hardware that supports simple display sensing, or the classic 3 pin Apple sensing described in Designing Cards and Drivers, should implement this method to return mode flags relative to the sensed display. If this method is unimplemented, all modes have are given the flags kDisplayModeValidFlag | kDisplayModeSafeFlag.
 

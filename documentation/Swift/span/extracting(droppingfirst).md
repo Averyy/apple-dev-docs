@@ -21,11 +21,11 @@ Returns a span over all but the given number of initial elements.
 func extracting(droppingFirst k: Int) -> Span<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A span starting after the specified number of elements.
 
-#### Discussion
+## Discussion
 
 If the number of elements to drop exceeds the number of elements in the span, the result is an empty span.
 

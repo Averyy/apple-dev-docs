@@ -23,7 +23,7 @@ class PKConvertedBezierPointReference
 @interface PKConvertedBezierPoint : NSObject
 ```
 
-#### Overview
+## Overview
 
 `PKConvertedBezierPointReference` is passed to the `pointProvider` block of `PKStrokePathReference/initWithBezierPath:creationDate:pointProvider:` so you can initialize each `PKStrokePoint` of the resulting path with appropriate values. A single instance is reused for each point in the conversion.
 

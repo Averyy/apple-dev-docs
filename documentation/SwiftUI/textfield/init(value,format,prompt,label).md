@@ -31,7 +31,7 @@ nonisolated
 init<F>(value: Binding<F.FormatInput?>, format: F, prompt: Text? = nil, @ContentBuilder label: () -> Label) where F : ParseableFormatStyle, F.FormatOutput == String
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a text field that binds to a bound value, using a [`ParseableFormatStyle`](../../Foundation/parseableformatstyle.md) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the format style can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
 

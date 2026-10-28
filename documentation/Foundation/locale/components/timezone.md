@@ -21,7 +21,7 @@ The time zone used by the locale.
 var timeZone: TimeZone?
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to specify a time zone associated with the locale.
 

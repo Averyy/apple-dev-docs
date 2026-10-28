@@ -21,11 +21,11 @@ Increments the retain count of a CGGradient object.
 extern CGGradientRefCGGradientRetain(CGGradientRef gradient);
 ```
 
-#### Return Value
+## Return Value
 
 The same gradient object that you passed in as the `gradient` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `gradient` parameter is `NULL`.
 

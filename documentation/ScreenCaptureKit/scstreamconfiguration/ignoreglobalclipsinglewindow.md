@@ -20,7 +20,7 @@ var ignoreGlobalClipSingleWindow: Bool { get set }
 @property (nonatomic, assign) BOOL ignoreGlobalClipSingleWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The display that originates the stream determines clipping bounds. When this value is `true`, the stream contains content moved past the clipping bounds. The default value is `false`.
 

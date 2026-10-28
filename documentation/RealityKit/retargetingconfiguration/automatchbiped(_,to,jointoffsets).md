@@ -20,15 +20,15 @@ Creates a retargeting configuration for bipedal characters using automatic joint
 static func automatchBiped(_ sourceSkeleton: SkeletonResource, to targetSkeleton: SkeletonResource, jointOffsets: [String : simd_quatf] = [:]) throws -> RetargetingConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A configured retargeting instance ready for animation processing.
 
-#### Discussion
+## Discussion
 
 This method uses an automatic matching algorithm to analyze both skeletal hierarchies and establish correspondences between key joints. The algorithm performs joint identification to locate required anatomical landmarks and generates a retargeting configuration accordingly.
 
-##### Required Joints
+### Required Joints
 
 The algorithm identifies and requires the following joints in both skeletons:
 
@@ -36,21 +36,21 @@ The algorithm identifies and requires the following joints in both skeletons:
 - **Arms**: Left/Right Shoulder, Upper Arm, Elbow, Wrist
 - **Legs**: Left/Right Upper Leg, Knee, Ankle, Toe
 
-##### Optional Joints
+### Optional Joints
 
 The algorithm can optionally identify and use:
 
 - Toe End joints (Left/Right Toe End)
 - Finger Base joints (Left/Right Finger Base 0-4)
 
-##### Algorithm Behavior
+### Algorithm Behavior
 
 - Performs automatic joint identification using joint names and hierarchical structure.
 - Supports T-pose and A-pose configurations.
 - May optimize the resulting configuration by culling unnecessary joints.
 - Applies joint offsets on top of automatically detected correspondences during configuration creation.
 
-#### Example
+## Example
 
 ```swift
 do {

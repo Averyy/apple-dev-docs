@@ -15,7 +15,7 @@ The maximum mipmap level of the OpenGL pixel buffer’s texture.
 @property (readonly) GLint textureMaxMipMapLevel;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum mipmap level.
 

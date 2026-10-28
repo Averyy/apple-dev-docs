@@ -5,13 +5,13 @@
 
 Add support for universal links and a Shared with You shelf to support shared content in your app.
 
-#### Overview
+## Overview
 
 System apps like Safari, News, Music, Photos, and Podcasts use Shared with You to make it easier to share content with friends and family. By adopting universal links and adding a Shared with You shelf to your app, you can also share your content using Messages. When you add views to showcase shared content activity, your app allows people to view Messages conversations that contain your shared content and still stay focused on your app.
 
 Your app can also manage who can view or share your content using the [`SWAttributionView`](./swattributionview.md). This adds a new level of collaboration to your app. You can customize your content’s contextual menu to add even more functionality to shared content.
 
-##### Adopt universal links
+### Adopt universal links
 
 Your app uses universal links to share content with other apps. When a user activates a universal link, the system launches your app and sends it an [`NSUserActivity`](../Foundation/nsuseractivity.md) object. Query this object to take actions for your shared content.
 
@@ -22,7 +22,7 @@ To support universal links in your app:
 
 For more information, see [Supporting universal links in your app](../Xcode/supporting-universal-links-in-your-app.md).
 
-##### Add Shared with You capability
+### Add Shared with You capability
 
 To add the Shared with You capability in Xcode, follow these steps:
 
@@ -33,7 +33,7 @@ To add the Shared with You capability in Xcode, follow these steps:
 
 For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-##### Add Shared with You shelf
+### Add Shared with You shelf
 
 Instead of relying on Messages to display shared content activity, you can add a Shared with You shelf to your app. This is a custom view your app creates and manages to display [`SWHighlightCenter`](./swhighlightcenter.md) activity. People can see new content shares and interact with existing ones from your app.
 
@@ -57,7 +57,7 @@ class SharedWithYouViewController: UIViewController, SWHighlightCenterDelegate {
 }
 ```
 
-##### Add an SWAttributionView to your content
+### Add an SWAttributionView to your content
 
 The [`SWAttributionView`](./swattributionview.md) is the user interface your app customizes to give people a way to interact with [`SWHighlight`](./swhighlight.md) events, like the addition of a new participant or a title change to the shared content. You can adjust the alignment of the content, the width, and the [`SWAttributionView.DisplayContext`](./swattributionview/displaycontext-swift.enum.md) format.
 

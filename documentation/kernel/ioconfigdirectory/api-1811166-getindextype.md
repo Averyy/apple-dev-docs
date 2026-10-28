@@ -11,11 +11,11 @@ virtual IOReturn getIndexType(
  IOConfigKeyType &type);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the index exists in the dictionary
 
-#### Overview
+## Overview
 
 Gets the data type for entry at the specified index
 

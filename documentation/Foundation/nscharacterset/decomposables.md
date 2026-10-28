@@ -25,11 +25,11 @@ class var decomposables: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * decomposableCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the decomposable characters.
 
-#### Discussion
+## Discussion
 
 These characters include compatibility characters as well as pre-composed characters.
 

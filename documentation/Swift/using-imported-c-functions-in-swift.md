@@ -5,7 +5,7 @@
 
 Learn how to call imported functions that are declared in a C header.
 
-#### Overview
+## Overview
 
 Swift imports any function declared in a C header as a Swift global function.
 
@@ -29,7 +29,7 @@ func createPoint2D(_ x: Float, _ y: Float) -> Point2D
 func distance(_ from: Point2D, _ to: Point2D) -> Float
 ```
 
-##### Use a CVaListPointer to Call Variadic Functions
+### Use a CVaListPointer to Call Variadic Functions
 
 In Swift, you can call C variadic functions, such as `vasprintf(_:_:_:)`, using the Swift [`getVaList(_:)`](./getvalist%28_%29.md) or [`withVaList(_:_:)`](./withvalist%28_,_%29.md) functions. The `withVaList(_:_:)` function takes an array of [`CVarArg`](./cvararg.md) values and provides a [`CVaListPointer`](./cvalistpointer.md) value within the body of a closure parameter, whereas the `getVaList(_:)` function returns this value directly. With either function, you pass the resulting `CVaListPointer` value as the `va_list` argument of the C variadic function.
 
@@ -54,7 +54,7 @@ print(swiftprintf(format: "√2 ≅ %g", arguments: sqrt(2.0))!)
 
 Swift only imports C variadic functions that use a `va_list` for their arguments. C functions that use the `...` syntax for variadic arguments are not imported, and therefore can’t be called using `CVarArg` arguments.
 
-##### Call Functions with Pointer Parameters
+### Call Functions with Pointer Parameters
 
 Whenever possible, Swift avoids giving you direct access to pointers. When importing C function parameters, however, Swift maps pointer parameters to standard library pointer types. The following tables use `Type` as a placeholder type name to indicate syntax for the mappings.
 

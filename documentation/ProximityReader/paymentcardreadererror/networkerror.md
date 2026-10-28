@@ -17,7 +17,7 @@ A network error.
 case networkError
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if the system can’t reach a necessary server. Your app needs to ask the user to check their network settings and allow them to try again.
 

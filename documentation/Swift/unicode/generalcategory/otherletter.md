@@ -21,7 +21,7 @@ Other letters, including syllables and ideographs.
 case otherLetter
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Other_Letter` (abbreviated `Lo`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

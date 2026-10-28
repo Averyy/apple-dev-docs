@@ -19,11 +19,11 @@ func element(at index: Int, associatedPoints points: NSPointArray?) -> NSBezierP
 - (NSBezierPathElement) elementAtIndex:(NSInteger) index associatedPoints:(NSPointArray) points;
 ```
 
-#### Return Value
+## Return Value
 
 The type of the path element. For a list of constants, see [`NSBezierPath.ElementType`](./elementtype.md).
 
-#### Discussion
+## Discussion
 
 If you specify a value for the points parameter, your array must be large enough to hold the number of points for the given path element. Move, close path, and line segment commands return one point. Curve operations return three points.
 

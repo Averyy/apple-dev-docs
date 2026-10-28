@@ -22,7 +22,7 @@ var maximumContentWidth: CGFloat { get set }
 @property (nonatomic) CGFloat maximumContentWidth;
 ```
 
-#### Discussion
+## Discussion
 
 `UIPrintFormatter` uses this value to determine the maximum width of the content rectangle. It compares the value of this property with the printing rectangle’s width minus the left and right inset values and uses the lower of the two. The default value of this property is the maximum float value.
 

@@ -5,7 +5,7 @@
 
 Ensure that every Mach-O image has a UUID, and that every distinct Mach-O image has its own unique UUID.
 
-#### Overview
+## Overview
 
 Mach-O is the executable image format on Apple platforms.  A Mach-O image is a Mach-O file that the system can load and execute without further processing.  This includes executables, frameworks, dynamic libraries, and bundles.
 
@@ -20,7 +20,7 @@ Most Mach-O images are created by the Apple linker (`ld`).  If you use Xcode, it
 
 This technote explains how to investigate and resolve such problems.
 
-#### Display the build UUID
+## Display the build UUID
 
 To view a Mach-O image’s build UUID, run the `dwarfdump` command with the `--uuid` option:
 
@@ -56,7 +56,7 @@ There’s no Apple command to explicitly set a Mach-O image’s build UUID after
 
 If a Mach-O image is signed, that signature covers the build UUID.
 
-#### Ensure each Mach-O image has a build UUID
+## Ensure each Mach-O image has a build UUID
 
 Every Mach-O image should have a build UUID.  While it’s possible to create an image without a UUID, this is almost always a bad idea:
 
@@ -70,7 +70,7 @@ If that confirms that your Mach-O image is in fact missing its build UUID, inves
 - If you created the image with the Apple linker, check to see if the link command includes the `-no_uuid` option.  If it does, remove that option.
 - Some third-party tools create Mach-O images without a build UUID.  If you’re using third-party tooling, consult its documentation for advice on how to configure it to add a UUID.
 
-#### Use unique build UUIDs
+## Use unique build UUIDs
 
 Each distinct Mach-O image must have its own unique build UUID.
 
@@ -88,7 +88,7 @@ Normally this isn’t a problem because every app is built from different source
 
 If you encounter weird problems after installing two variants of your app on the same device, especially when it comes to the network subsystem, check that the main executable of each app has a different build UUID.  Use `dwarfdump` for this, as explained earlier.
 
-#### Force a unique main executable UUID
+## Force a unique main executable UUID
 
 If `dwarfdump` reveals that two of your apps have the same main executable UUID, fix that before distributing your apps.  How you do that depends on how your app is built.
 
@@ -104,7 +104,7 @@ If that doesn’t resolve the issue, add some unique code to each app.
 
 Once you’re done, run `dwarfdump` to confirm that you’ve achieved your ultimate goal of giving each app a unique main executable UUID.
 
-#### Revision History
+## Revision History
 
 - **2024-10-08** First published.
 

@@ -5,15 +5,15 @@
 
 Specifies the value used for a fillable element.
 
-#### Overview
+## Overview
 
 Use the `value` attribute to set the amount of area that is filled in, as a percentage.
 
-##### Values for value
+### Values for value
 
 - **Float**: The amount of area that is filled in, as a percentage. This can be a value between `0.0` and `1.0`, with `1.0` being equal to 100%.
 
-##### Elements that Use value
+### Elements that Use value
 
 - [progressBar](./progressbar.md)
 - [ratingBadge](./ratingbadge.md)

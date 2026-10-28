@@ -23,7 +23,7 @@ case failureCredentialsUnverified
 INSendPaymentIntentResponseCodeFailureCredentialsUnverified
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you are unable to verify the credentials of the sender or recipient of the payment.
 

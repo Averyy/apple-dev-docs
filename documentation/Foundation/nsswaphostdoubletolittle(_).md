@@ -25,7 +25,7 @@ func NSSwapHostDoubleToLittle(_ x: Double) -> NSSwappedDouble
 static NSSwappedDouble NSSwapHostDoubleToLittle(double x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the value in `x`, specified in the current endian format, to little-endian format and returns the resulting value. If it is necessary to swap the bytes, this function calls [`NSSwapDouble(_:)`](./nsswapdouble%28_%29.md) to perform the swap.
 

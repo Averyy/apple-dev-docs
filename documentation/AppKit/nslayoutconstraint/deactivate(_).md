@@ -19,7 +19,7 @@ class func deactivate(_ constraints: [NSLayoutConstraint])
 + (void) deactivateConstraints:(NSArray<NSLayoutConstraint *> *) constraints;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that provides an easy way to deactivate a set of constraints with one call. The effect of this method is the same as setting the [`isActive`](./isactive.md) property of each constraint to [`false`](../../Swift/false.md). Typically, using this method is more efficient than deactivating each constraint individually.
 

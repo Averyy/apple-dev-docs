@@ -6,7 +6,7 @@
 
 An 8-bit Boolean value that indicates whether the movie plays when opened.
 
-#### Overview
+## Overview
 
 The value is normally `1`, indicating that the movie plays when opened. Since there is no visible controller in full-screen mode, always set this field to `1` to prevent user confusion.
 

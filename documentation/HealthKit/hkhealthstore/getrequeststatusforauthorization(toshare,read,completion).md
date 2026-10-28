@@ -28,7 +28,7 @@ func statusForAuthorizationRequest(toShare typesToShare: Set<HKSampleType>, read
 - (void) getRequestStatusForAuthorizationToShareTypes:(NSSet<HKSampleType *> *) typesToShare readTypes:(NSSet<HKObjectType *> *) typesToRead completion:(void (^)(HKAuthorizationRequestStatus requestStatus, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 When working with clinical types, users may need to reauthorize access when new data is added.
 

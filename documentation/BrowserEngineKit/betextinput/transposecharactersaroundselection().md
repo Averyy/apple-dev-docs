@@ -23,7 +23,7 @@ func transposeCharactersAroundSelection()
 - (void) transposeCharactersAroundSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this method in response to a person pressing Control + T.
 

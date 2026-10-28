@@ -24,7 +24,7 @@ var isGreenCarTicketUsed: Bool { get }
 @property (nonatomic, assign, readonly, getter=isGreenCarTicketUsed) BOOL greenCarTicketUsed;
 ```
 
-#### Discussion
+## Discussion
 
 A Green Car ticket is valid for a single use. This flag indicates the ticket has been used and is not eligible for a refund.
 

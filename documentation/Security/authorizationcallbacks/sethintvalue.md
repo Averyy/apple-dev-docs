@@ -25,11 +25,11 @@ int (*)(struct __OpaqueAuthorizationEngine *, const char *, const struct Authori
 
 - [Extending authorization services with plug-ins](../extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 Your plug-in authorization mechanism can save and retrieve auxiliary information—called hints—for use by subsequent mechanisms that are part of the same authorization. You use the `SetHintValue` function to have the Security Server store this data and the [`GetHintValue`](./gethintvalue.md) function to retrieve it. Hints are not preserved as part of the authorization result; once all mechanisms have approved the authorization or any mechanism has denied it, the security engine disposes of the hints.
 

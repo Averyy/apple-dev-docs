@@ -8,7 +8,7 @@ An atom that describes the type and ID of a node, as well as other information a
 
 > **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-#### Overview
+## Overview
 
 A node header atom is a leaf atom that describes the type and ID of a node, as well as other information about the node. Its atom type is `kQTVRNodeHeaderAtomType` (`'ndhd'`).
 

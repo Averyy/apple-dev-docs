@@ -32,7 +32,7 @@ optional func pictureInPictureController(_ pictureInPictureController: AVPicture
 
 - [Adopting Picture in Picture in a custom player](../adopting-picture-in-picture-in-a-custom-player.md)
 
-#### Discussion
+## Discussion
 
 Implement this method if your player user interface requires configuration or layout to return to its default state.
 

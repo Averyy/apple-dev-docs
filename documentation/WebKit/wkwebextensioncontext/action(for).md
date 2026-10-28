@@ -23,7 +23,7 @@ func action(for tab: (any WKWebExtensionTab)?) -> WKWebExtension.Action?
 - (WKWebExtensionAction *) actionForTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 The returned object represents the action specific to the tab when provided; otherwise, it returns the default action. The default action is useful when the context is unrelated to a specific tab. When possible, specify the tab to get the most context-relevant action.
 

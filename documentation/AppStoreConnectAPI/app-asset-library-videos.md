@@ -5,7 +5,7 @@
 
 Upload and manage video assets in an app’s asset library.
 
-#### Overview
+## Overview
 
 The `appAssetLibraryVideos` resource represents a video asset in an app’s asset library that you can reuse across App Store surfaces through placements. Use it to:
 

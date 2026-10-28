@@ -21,7 +21,7 @@ func replaceGlyph(at glyphIndex: Int, withGlyph newGlyph: NSGlyph)
 - (void) replaceGlyphAtIndex:(NSUInteger) glyphIndex withGlyph:(NSGlyph) newGlyph;
 ```
 
-#### Discussion
+## Discussion
 
 Doesn’t alter the glyph-to-character mapping or invalidate layout information. The character index of the glyph is assumed to remain the same (although it can, of course, be set explicitly if needed).
 

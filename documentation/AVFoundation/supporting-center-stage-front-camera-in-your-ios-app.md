@@ -12,11 +12,11 @@ Enable Center Stage for photos and videos on the iPhone front camera.
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session 341: [Support Center Stage front camera in your iOS app](https://developer.apple.com/videos/play/wwdc2026/341).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Run this sample code on an iPhone with a Center Stage front camera, such as an iPhone 17, iPhone Air, or iPhone 17 Pro.
 

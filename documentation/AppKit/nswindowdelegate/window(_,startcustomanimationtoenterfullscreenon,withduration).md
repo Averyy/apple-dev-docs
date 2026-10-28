@@ -20,11 +20,11 @@ optional func window(_ window: NSWindow, startCustomAnimationToEnterFullScreenOn
 - (void) window:(NSWindow *) window startCustomAnimationToEnterFullScreenOnScreen:(NSScreen *) screen withDuration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this method to perform custom animation with the given duration to be in sync with the system animation.
 
-##### Special Considerations
+### Special Considerations
 
 This method is called only if [`customWindowsToEnterFullScreen(for:)`](./customwindowstoenterfullscreen%28for%29.md) returns non-`nil`. If [`window(_:startCustomAnimationToEnterFullScreenWithDuration:)`](./window%28_,startcustomanimationtoenterfullscreenwithduration%29.md) and this method are both implemented, this method is called.
 

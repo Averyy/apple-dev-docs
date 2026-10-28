@@ -19,11 +19,11 @@ func readRTFD(fromFile path: String) -> Bool
 - (BOOL) readRTFDFromFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 `path` should be the path for an `.rtf` file or an `.rtfd` file wrapper, not for the RTF file within an `.rtfd` file wrapper.
 

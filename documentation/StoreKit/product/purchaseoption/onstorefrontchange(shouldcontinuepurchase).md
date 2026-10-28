@@ -22,11 +22,11 @@ Indicates whether a transaction needs to continue if the App Store storefront ch
 static func onStorefrontChange(shouldContinuePurchase: @escaping @Sendable (Storefront) -> Bool) -> Product.PurchaseOption
 ```
 
-#### Return Value
+## Return Value
 
 [`Product.PurchaseOption`](../purchaseoption.md)
 
-#### Discussion
+## Discussion
 
 The default value is `true` if this option isn’t added to the purchase.
 

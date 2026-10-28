@@ -15,7 +15,7 @@ A four character code which, along with the scope and element, specifies a speci
 typedef uint32_t IOUserVideoObjectPropertySelector;
 ```
 
-#### Discussion
+## Discussion
 
 The property selector specifies the general classification of the property such as volume, stream format, or latency. Note that each class has a different set of selectors. A subclass inherits its superclass’s set of selectors, although it may not implement them all.
 

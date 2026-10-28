@@ -21,7 +21,7 @@ Creates a Curve25519 public key for key agreement from a collection of bytes.
 init<D>(rawRepresentation: D) throws where D : ContiguousBytes
 ```
 
-#### Discussion
+## Discussion
 
 - rawRepresentation: A raw representation of the key as a collection of contiguous bytes.
 

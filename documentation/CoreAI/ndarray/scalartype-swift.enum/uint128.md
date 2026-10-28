@@ -19,7 +19,7 @@ A 128-bit unsigned integer.
 case uint128
 ```
 
-#### Discussion
+## Discussion
 
 This integer type is not currently supported by any operation, but support may be added in the future.
 

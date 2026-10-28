@@ -17,7 +17,7 @@ Activity data for a specific time interval.
 struct ActivitySegment
 ```
 
-#### Overview
+## Overview
 
 This type contains all of the activity details for a particular person on a particular device during [`dateInterval`](./activitysegment/dateinterval.md).
 

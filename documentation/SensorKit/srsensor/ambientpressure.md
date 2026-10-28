@@ -21,7 +21,7 @@ static let ambientPressure: SRSensor
 extern SRSensor const SRSensorAmbientPressure;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is `[`[`CMRecordedPressureData`](../../CoreMotion/cmrecordedpressuredata.md)`]`.
 

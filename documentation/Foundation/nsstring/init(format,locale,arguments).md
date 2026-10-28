@@ -25,11 +25,11 @@ convenience init(format: String, locale: Any?, arguments argList: CVaListPointer
 - (instancetype) initWithFormat:(NSString *) format locale:(id) locale arguments:(va_list) argList;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object initialized by using `format` as a template into which values in `argList` are substituted according the locale information in `locale`. The returned object may be different from the original receiver.
 
-#### Discussion
+## Discussion
 
 The following Objective-C code fragment illustrates how to create a string from `myArgs`, which is derived from a string object with the value “Cost:” and an int with the value 32:
 

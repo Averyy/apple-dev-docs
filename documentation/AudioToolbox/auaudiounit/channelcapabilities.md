@@ -32,7 +32,7 @@ var channelCapabilities: [NSNumber]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSNumber *> * channelCapabilities;
 ```
 
-#### Discussion
+## Discussion
 
 Array elements are [`NSNumber`](../../Foundation/nsnumber.md) values containing integers.
 

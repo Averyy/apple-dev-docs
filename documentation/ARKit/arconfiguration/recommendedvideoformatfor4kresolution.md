@@ -20,7 +20,7 @@ class var recommendedVideoFormatFor4KResolution: ARConfiguration.VideoFormat? { 
 @property (class, nonatomic, readonly, nullable) ARVideoFormat * recommendedVideoFormatFor4KResolution;
 ```
 
-#### Discussion
+## Discussion
 
 If the device and configuration support 4K, the returned video format is also present in the configuration’s [`supportedVideoFormats`](./supportedvideoformats.md) array.
 

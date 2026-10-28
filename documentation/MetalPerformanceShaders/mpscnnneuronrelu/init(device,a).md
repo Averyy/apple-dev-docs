@@ -24,7 +24,7 @@ init(device: any MTLDevice, a: Float)
 - (instancetype) initWithDevice:(id<MTLDevice>) device a:(float) a;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSCNNNeuronReLU`](../mpscnnneuronrelu.md) object or `nil`, if failure.
 

@@ -19,7 +19,7 @@ class WKInterfaceMap
 @interface WKInterfaceMap : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 You can configure Maps dynamically from your interface controller. Use the methods of [`WKInterfaceMap`](./wkinterfacemap.md) to specify the visible region of the map and to add any annotations or points of interest. Tapping the map launches the Maps app on the user’s Apple Watch and displays the corresponding location.
 
@@ -43,7 +43,7 @@ During the initialization of your interface controller, WatchKit creates a new i
 
 The Apple Watch must have an active network connection to download map tiles.
 
-##### Configure the Map in Interface Builder
+### Configure the Map in Interface Builder
 
 In Xcode, you can configure information about your map from your storyboard file. The map interface object has an Enabled attribute that appears as a checkbox in the Attributes inspector. When you enable the map interface object in this checkbox, tapping the map launches the Maps app and displays the current selected location.
 

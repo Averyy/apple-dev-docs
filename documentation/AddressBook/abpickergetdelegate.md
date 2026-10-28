@@ -15,7 +15,7 @@ Obtains the delegate for a people-picker window.
 extern EventTargetRefABPickerGetDelegate(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 The window’s delegate.
 

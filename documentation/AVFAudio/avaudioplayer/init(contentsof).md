@@ -25,11 +25,11 @@ init(contentsOf url: URL) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) url error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new audio player instance, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurs.
 
-#### Discussion
+## Discussion
 
 The audio data must be in a format that Core Audio supports.
 

@@ -18,7 +18,7 @@ let kCGWindowMemoryUsage: CFString
 extern CFStringRef const kCGWindowMemoryUsage;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) type (encoded as [`CFNumberType.longLongType`](../CoreFoundation/cfnumbertype/longlongtype.md)) that contains an estimate of the amount of memory (measured in bytes) used by the window and its supporting data structures.
 

@@ -23,11 +23,11 @@ class func confirmationRequired(with paymentAmountToConfirm: INPaymentAmount?) -
 + (instancetype) confirmationRequiredWithPaymentAmountToConfirm:(INPaymentAmount *) paymentAmountToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentAmountResolutionResult`](../inpaymentamountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single value but want the user to confirm that value. For example, you might use this method if the user’s initial request did not specify a payment amount and you provide a suggested amount.
 

@@ -19,7 +19,7 @@ init!(imageProperties: [AnyHashable : Any]!, imageUTType: String!)
 - (instancetype) initWithImageProperties:(NSDictionary *) imageProperties imageUTType:(NSString *) imageUTType;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized object.
 

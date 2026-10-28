@@ -21,7 +21,7 @@ An opaque token that represents a connection between a thread and a workgroup.
 typedef struct os_workgroup_join_token_opaque_s * os_workgroup_join_token_t;
 ```
 
-#### Discussion
+## Discussion
 
 You provide an uninitialized token structure when calling the `os_workgroup_join_self` function, which initializes the structure and fills it with information. Use that token structure in a subsequent call to `os_workgroup_leave_self` to remove the thread from the workgroup.
 

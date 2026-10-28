@@ -20,7 +20,7 @@ var intrinsics: simd_float3x3 { get }
 @property (nonatomic, readonly) simd_float3x3 intrinsics;
 ```
 
-#### Discussion
+## Discussion
 
 The intrinsic matrix (commonly represented in equations as `K`) is based on physical characteristics of the device camera and a pinhole camera model. You can use the matrix to transform 3D coordinates to 2D coordinates on an image plane.
 

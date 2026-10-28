@@ -20,7 +20,7 @@ The paper size for the document.
 extern NSAttributedStringDocumentAttributeKey const NSPaperSizeDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../Foundation/nsvalue.md) object containing an [`NSSize`](../Foundation/nssize.md).
 

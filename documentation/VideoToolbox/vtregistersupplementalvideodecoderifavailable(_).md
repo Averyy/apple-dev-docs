@@ -24,7 +24,7 @@ func VTRegisterSupplementalVideoDecoderIfAvailable(_ codecType: CMVideoCodecType
 extern void VTRegisterSupplementalVideoDecoderIfAvailable(CMVideoCodecType codecType);
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to find and register video decoders that aren’t registered by default.
 

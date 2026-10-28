@@ -26,7 +26,7 @@ func providePlaceholder(at url: URL) async throws
 - (void) providePlaceholderAtURL:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >
@@ -42,21 +42,21 @@ The system calls this method when it needs a placeholder for a document that’s
 >
 > Exactly which methods are triggered, and their sequence, depends on the type of coordinated access. For example, a coordinated read using the `NSFileCoordinatorReadingImmediatelyAvailableMetadataOnly` option triggers only the creation of a placeholder. As a result, your extension should not create dependencies between these methods. They may be called in any order.
 
-##### Look Up the Document’s File Provider Item
+### Look Up the Document’s File Provider Item
 
 1. Get the document’s persistent identifier by calling [`persistentIdentifierForItem(at:)`](./persistentidentifierforitem%28at%29.md), and pass in the value of the `url` parameter.
 2. Call [`item(for:)`](./item%28for%29.md), and pass in the persistent identifier. This method returns the file provider item for the document.
 
-##### Write the Placeholder
+### Write the Placeholder
 
 1. Get the placeholder URL by calling [`placeholderURL(for:)`](../nsfileprovidermanager/placeholderurl%28for%29.md), and pass in the value of the url parameter.
 2. Call [`writePlaceholder(at:withMetadata:)`](../nsfileprovidermanager/writeplaceholder%28at,withmetadata%29.md), and pass in the placeholder URL and the file provider item.
 
-##### Call the Completion Handler
+### Call the Completion Handler
 
 After writing the placeholder to disk, call the completion handler. If any errors occur, pass them to the completion handler. The system then passes the error back to the original coordinated read or write.
 
-##### Sample Implementation
+### Sample Implementation
 
 ```swift
 override func providePlaceholder(at url: URL, completionHandler: @escaping (Error?) -> Void) {

@@ -25,7 +25,7 @@ init?(named name: String, duration: TimeInterval)
 + (SKAction *) actionNamed:(NSString *) name duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 

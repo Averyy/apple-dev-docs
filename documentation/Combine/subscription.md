@@ -26,7 +26,7 @@ protocol Subscription : Cancellable, CustomCombineIdentifierConvertible
 - [Processing Published Elements with Subscribers](./processing-published-elements-with-subscribers.md)
 - [Receiving and Handling Events with Combine](./receiving-and-handling-events-with-combine.md)
 
-#### Overview
+## Overview
 
 Subscriptions are class constrained because a [`Subscription`](./subscription.md) has identity, defined by the moment in time a particular subscriber attached to a publisher. Canceling a [`Subscription`](./subscription.md) must be thread-safe.
 

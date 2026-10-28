@@ -20,11 +20,11 @@ typealias CGRefreshRate = Double
 typedef double CGRefreshRate;
 ```
 
-#### Discussion
+## Discussion
 
 When requesting a new display mode, you can specify a desired refresh rate as a hint to Quartz. For example, see the function [`CGDisplayBestModeForParametersAndRefreshRate(_:_:_:_:_:_:)`](./cgdisplaybestmodeforparametersandrefreshrate%28_,_,_,_,_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Most applications should never need this data type. Starting in OS X v10.6, the `CGDisplayBestMode` functions are deprecated and the new display mode API does not use this type.
 

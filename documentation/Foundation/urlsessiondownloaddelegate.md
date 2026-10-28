@@ -31,7 +31,7 @@ protocol URLSessionDownloadDelegate : URLSessionTaskDelegate
 - [Downloading files in the background](./downloading-files-in-the-background.md)
 - [Fetching website data into memory](./fetching-website-data-into-memory.md)
 
-#### Overview
+## Overview
 
 In addition to the methods in this protocol, be sure to implement the methods in the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) and [`URLSessionDelegate`](./urlsessiondelegate.md) protocols to handle events common to all task types and session-level events, respectively.
 

@@ -842,8 +842,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/watchconnectivity/Shared/Logger.swift"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 210
   }

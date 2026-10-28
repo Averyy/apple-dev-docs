@@ -24,7 +24,7 @@ case auto
 AVAudioEnvironmentOutputTypeAuto
 ```
 
-#### Discussion
+## Discussion
 
 When using the automatic output type, wired output defaults to [`AVAudioEnvironmentOutputType.headphones`](./headphones.md), and manual rendering with a two-channel output layout defaults to [`AVAudioEnvironmentOutputType.externalSpeakers`](./externalspeakers.md).
 

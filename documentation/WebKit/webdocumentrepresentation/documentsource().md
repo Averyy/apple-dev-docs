@@ -20,11 +20,11 @@ func documentSource() -> String!
 - (NSString *) documentSource;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the document source associated with the receiver or `nil` if the source cannot be provided.
 
-#### Discussion
+## Discussion
 
 For example, for HTML documents, the receiver should return the HTML source.
 

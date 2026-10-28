@@ -15,11 +15,11 @@ Sets a Boolean value that indicates if this device can be the host’s default i
 kern_return_t SetCanBeDefaultInputDevice(bool in_can_be_default);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

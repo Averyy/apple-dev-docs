@@ -21,7 +21,7 @@ The numbering system used by the locale.
 var numberingSystem: Locale.NumberingSystem?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to override the locale’s default numbering system. To request the default numbering system used by the locale, use the [`Locale`](../../locale.md) property `numberingSystem`.
 

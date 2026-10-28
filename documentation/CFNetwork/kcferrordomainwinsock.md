@@ -22,7 +22,7 @@ let kCFErrorDomainWinSock: CFString
 extern CFStringRef const kCFErrorDomainWinSock;
 ```
 
-#### Discussion
+## Discussion
 
 Error domain that returns error codes specific to the underlying network layer when running CFNetwork code on Windows.
 

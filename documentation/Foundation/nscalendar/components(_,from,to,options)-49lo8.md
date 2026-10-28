@@ -25,11 +25,11 @@ func components(_ unitFlags: NSCalendar.Unit, from startingDateComp: DateCompone
 - (NSDateComponents *) components:(NSCalendarUnit) unitFlags fromDateComponents:(NSDateComponents *) startingDateComp toDateComponents:(NSDateComponents *) resultDateComp options:(NSCalendarOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDateComponents` object whose components are specified by `unitFlags` and calculated from the difference between the `startingDateComp` and `resultDateComp` using the options specified by `options`. Returns `nil` if either date falls outside the defined range of the receiver or if the computation cannot be performed.
 
-#### Discussion
+## Discussion
 
 If an `NSDateComponents` object does not specify a value for a calendar unit required to determine an absolute date, the base value of that unit is assumed. For example, given an `NSDateComponents` object with only a `year` and a `month` specified, the resulting `NSDate` object would be constructed using a `day` value of `1` and `hour`, `minute`, `second` and `nanosecond` values of `0`. Passing an `NSDateComponents` argument with an unspecified `era` or `year` value is not advised.
 

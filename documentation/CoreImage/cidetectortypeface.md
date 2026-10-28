@@ -24,7 +24,7 @@ let CIDetectorTypeFace: String
 extern NSString * const CIDetectorTypeFace;
 ```
 
-#### Discussion
+## Discussion
 
 For better accuracy and performance in face detection, use the [`CIDetectorImageOrientation`](./cidetectorimageorientation.md) key to specify the image orientation when using the [`features(in:options:)`](./cidetector/features%28in,options%29.md) method.
 

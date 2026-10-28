@@ -17,7 +17,7 @@ Any dependencies on other packages.
 let dependencies: [PackageDependency]
 ```
 
-#### Discussion
+## Discussion
 
 The dependencies are included in the same order as specified in the package manifest.
 

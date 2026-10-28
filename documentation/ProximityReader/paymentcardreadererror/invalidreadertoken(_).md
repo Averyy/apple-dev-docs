@@ -17,7 +17,7 @@ An error that indicates an invalid, non-empty reader token.
 case invalidReaderToken(String?)
 ```
 
-#### Discussion
+## Discussion
 
 There is an issue with the token provided by your payment service provider, check the description string for more details.
 

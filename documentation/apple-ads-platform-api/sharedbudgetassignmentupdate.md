@@ -15,11 +15,11 @@ Request payload for changing or removing a campaign’s budget order assignment.
 object SharedBudgetAssignmentUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The API embeds `SharedBudgetAssignmentUpdate` in [`CampaignUpdate`](./campaignupdate.md) to modify a campaign’s budget order assignment.
 
-##### Example
+### Example
 
 ```json
 {

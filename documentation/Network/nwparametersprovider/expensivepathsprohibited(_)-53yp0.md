@@ -21,7 +21,7 @@ Prohibit using expensive paths.
 func expensivePathsProhibited(_ prohibited: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Prohibit connections and listeners from using a network interface that is considered expensive by the system, for example some cellular interfaces.
 

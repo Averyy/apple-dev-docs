@@ -19,11 +19,11 @@ optional func webViewFooterHeight(_ sender: WebView!) -> Float
 - (float) webViewFooterHeight:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The height of the web view’s printed page footer. Returns `0.0` if no space is reserved for the footer.
 
-#### Discussion
+## Discussion
 
 The height returned by this method is used to calculate the rectangle passed to the [`webView(_:drawFooterIn:)`](./webview%28_,drawfooterin%29.md) method.
 

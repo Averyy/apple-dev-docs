@@ -24,7 +24,7 @@ func setStateFrom(_ extendedGamepad: GCExtendedGamepad)
 - (void) setStateFromExtendedGamepad:(GCExtendedGamepad *) extendedGamepad;
 ```
 
-#### Discussion
+## Discussion
 
 If this extended gamepad isn’t a snapshot, this method does nothing. A snapshot is a copy of a controller at a moment in time that has element values you can set.
 

@@ -30,7 +30,7 @@ var nameFieldShouldBeDisplayed: Bool { get set }
 @property (atomic) BOOL nameFieldShouldBeDisplayed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which displays the guest’s name.
 

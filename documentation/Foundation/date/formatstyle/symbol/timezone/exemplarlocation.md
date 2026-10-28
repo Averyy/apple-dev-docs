@@ -21,7 +21,7 @@ The exemplar city for a timezone.
 static var exemplarLocation: Date.FormatStyle.Symbol.TimeZone { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the exemplar city is unavailable, the system provides the localized exemplar city name for the special zone or `unknown`. For example, `Los Angeles`.
 

@@ -19,7 +19,7 @@ A Boolean value that indicates whether an app can be the default translation app
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add the Translation entitlement to your app by following these steps:
 

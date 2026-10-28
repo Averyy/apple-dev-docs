@@ -5,7 +5,7 @@
 
 Obsolete macros for use with the launch daemon.
 
-#### Overview
+## Overview
 
 The `LAUNCH_` macros originally allowed a `launchd` job to obtain file descriptors associated with the sockets it advertised in its `launchd.plist(5)`. However, you should now use the more convenient [`launch_activate_socket`](./launch_activate_socket.md) API instead.
 

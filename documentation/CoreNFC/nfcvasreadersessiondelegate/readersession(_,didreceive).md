@@ -22,7 +22,7 @@ func readerSession(_ session: NFCVASReaderSession, didReceive responses: [NFCVAS
 - (void) readerSession:(NFCVASReaderSession *) session didReceiveVASResponses:(NSArray<NFCVASResponse *> *) responses;
 ```
 
-#### Discussion
+## Discussion
 
 The reader session restarts polling when the detected tag moves from the session’s read range.
 

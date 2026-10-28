@@ -19,7 +19,7 @@ func saveTrustSettings()
 - (void) saveTrustSettings;
 ```
 
-#### Discussion
+## Discussion
 
 If trust settings are not editable, this method effectively does nothing. You can use `SecTrustGetUserTrust` to subsequently retrieve the trust settings.
 

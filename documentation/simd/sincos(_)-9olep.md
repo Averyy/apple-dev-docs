@@ -20,7 +20,7 @@ Returns the sine and cosine of each element in a vector.
 func sincos(_ x: simd_double4) -> (sin: simd_double4, cos: simd_double4)
 ```
 
-#### Return Value
+## Return Value
 
 A two-element tuple. The first element contains the sines, and the second element contains the cosines.
 

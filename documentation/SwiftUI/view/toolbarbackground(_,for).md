@@ -29,7 +29,7 @@ nonisolated
 func toolbarBackground(_ visibility: Visibility, for bars: ToolbarPlacement...) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The preferred style flows up to the nearest container that renders a bar. This could be a [`NavigationView`](../navigationview.md) or [`TabView`](../tabview.md) in iOS, or the root view of a [`WindowGroup`](../windowgroup.md) in macOS. This example shows a view that renders the navigation bar with a blue background and dark color scheme.
 

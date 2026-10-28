@@ -33,7 +33,7 @@ class SKReceiptRefreshRequest
 - [Restoring purchased products](./restoring-purchased-products.md)
 - [Validating receipts with the App Store](./validating-receipts-with-the-app-store.md)
 
-#### Overview
+## Overview
 
 > **Note**:  The receipt isn’t necessary if you use [`AppTransaction`](./apptransaction.md) to validate the app download, or [`Transaction`](./transaction.md) to validate in-app purchases. Only use the receipt if your app uses the [Original API for Apple In-App Purchase](./original-api-for-in-app-purchase.md), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](./apptransaction.md).
 
@@ -47,7 +47,7 @@ If the request fails and calls your delegate’s [`request(_:didFailWithError:)`
 
 In the sandbox environment, you can initialize a receipt with any combination of properties for testing when you call [`init(receiptProperties:)`](./skreceiptrefreshrequest/init%28receiptproperties%29.md).
 
-##### Use alternative techniques
+### Use alternative techniques
 
 There are times when using [`SKReceiptRefreshRequest`](./skreceiptrefreshrequest.md) isn’t necessary, so avoid doing so, such as in the following scenarios:
 

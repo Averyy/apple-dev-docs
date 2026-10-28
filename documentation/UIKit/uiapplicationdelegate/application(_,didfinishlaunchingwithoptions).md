@@ -29,11 +29,11 @@ optional func application(_ application: UIApplication, didFinishLaunchingWithOp
 - [Performing one-time setup for your app](../performing-one-time-setup-for-your-app.md)
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Return Value
+## Return Value
 
 Return [`false`](../../Swift/false.md) if the app can’t handle the URL resource or continue a user activity, otherwise return [`true`](../../Swift/true.md). The system ignores the return value if the app launches as a result of a remote notification.
 
-#### Discussion
+## Discussion
 
 Use this method (and the corresponding [`application(_:willFinishLaunchingWithOptions:)`](./application%28_,willfinishlaunchingwithoptions%29.md) method) to complete your app’s initialization. In an app that supports scenes:
 

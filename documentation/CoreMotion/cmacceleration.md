@@ -24,7 +24,7 @@ struct CMAcceleration
 typedef struct { ... } CMAcceleration;
 ```
 
-#### Overview
+## Overview
 
 A G is a unit of gravitation force equal to that exerted by the earth’s gravitational field (9.81 m s−2).
 

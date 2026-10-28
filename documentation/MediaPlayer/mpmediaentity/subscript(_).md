@@ -23,11 +23,11 @@ subscript(key: Any) -> Any? { get }
 - (id) objectForKeyedSubscript:(id) key;
 ```
 
-#### Return Value
+## Return Value
 
 The object that is specified by the key.
 
-#### Discussion
+## Discussion
 
 The method provides read-only support for Objective-C subscripting syntax with [`MPMediaEntity`](../mpmediaentity.md) property constants.
 

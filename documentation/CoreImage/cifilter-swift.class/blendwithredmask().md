@@ -24,11 +24,11 @@ class func blendWithRedMask() -> any CIFilter & CIBlendWithMask
 + (CIFilter<CIBlendWithMask> *) blendWithRedMaskFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the blend with red mask filter to an image. The effect uses values from the red mask image to interpolate between the input and background images. The mask image consists of shades of red that define the strength of the interpolation from zero (where the mask image is black) to the specified `radius` (where the mask image is red).
 

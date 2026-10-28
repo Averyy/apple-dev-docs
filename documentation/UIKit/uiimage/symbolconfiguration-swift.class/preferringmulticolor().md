@@ -24,11 +24,11 @@ class func preferringMulticolor() -> Self
 + (instancetype) configurationPreferringMulticolor;
 ```
 
-#### Return Value
+## Return Value
 
 A symbol configuration that acquires the multicolor variant of a symbol.
 
-#### Discussion
+## Discussion
 
 Use this method to acquire the multicolor variant of a symbol, if one exists. This method is the primary approach to retrieving multicolor symbols.
 

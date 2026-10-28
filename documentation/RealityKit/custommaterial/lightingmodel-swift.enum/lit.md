@@ -19,7 +19,7 @@ The entity renders using physically based rendering techniques without a clearco
 case lit
 ```
 
-#### Discussion
+## Discussion
 
 A custom material using the [`CustomMaterial.LightingModel.lit`](./lit.md) lighting model uses physically based rendering techniques, but doesn’t render a clearcoat. If a [`CustomMaterial.LightingModel.lit`](./lit.md) material’s surface shader calls `params.surface().set_clearcoat()` or `params.surface().set_clearcoat_roughness(),` ReallityKit ignores it.
 

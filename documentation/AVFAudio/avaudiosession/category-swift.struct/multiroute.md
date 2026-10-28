@@ -24,7 +24,7 @@ static let multiRoute: AVAudioSession.Category
 extern AVAudioSessionCategory const AVAudioSessionCategoryMultiRoute;
 ```
 
-#### Discussion
+## Discussion
 
 This category can be used for input, output, or both. For example, use this category to route audio to both a USB device and a set of headphones. Use of this category requires a more detailed knowledge of, and interaction with, the capabilities of the available audio routes.
 

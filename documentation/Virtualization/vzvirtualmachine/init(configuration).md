@@ -19,11 +19,11 @@ convenience init(configuration: VZVirtualMachineConfiguration)
 - (instancetype) initWithConfiguration:(VZVirtualMachineConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized VM object.
 
-#### Discussion
+## Discussion
 
 This VM uses your app’s main queue for all operations. You must perform all VM-related operations on the main queue, and the VM executes all callbacks and delegate methods on the main queue.
 

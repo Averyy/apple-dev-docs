@@ -26,11 +26,11 @@ init?(request: URLRequest, delegate: Any?, startImmediately: Bool)
 - (instancetype) initWithRequest:(NSURLRequest *) request delegate:(id) delegate startImmediately:(BOOL) startImmediately;
 ```
 
-#### Return Value
+## Return Value
 
 The URL connection for the URL request. Returns `nil` if a connection can’t be initialized.
 
-#### Discussion
+## Discussion
 
 During the download the connection maintains a strong reference to the `delegate`. It releases that strong reference when the connection finishes loading, fails, or is canceled.
 

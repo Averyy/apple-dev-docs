@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_TimeStamping;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

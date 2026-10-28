@@ -16,7 +16,7 @@ Information that describes an app, including its identifier and version number.
 struct AppVersion
 ```
 
-#### Overview
+## Overview
 
 Your app’s [`MarketplaceAppExtension`](./marketplaceappextension.md) provides the operating system an instance of this structure when asked via your implementation of the [`availableAppVersions(forAppleItemIDs:)`](./marketplaceappextension/availableappversions%28forappleitemids%29.md) callback.
 

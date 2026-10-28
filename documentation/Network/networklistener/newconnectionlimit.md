@@ -21,7 +21,7 @@ Configure the listener’s new connection limit.
 final var newConnectionLimit: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the value NWListener.InfiniteConnectionLimit to disable connection limits.
 

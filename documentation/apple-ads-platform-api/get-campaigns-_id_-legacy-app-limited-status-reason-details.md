@@ -9,15 +9,15 @@ Return a map of country or region codes to their associated limited-status reaso
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint helps diagnose why specific campaigns aren’t delivering in one or more countries or regions. The response contains information on why delivery is limited in each market.
 
-#### Payload Examples
+## Payload Examples
 
 Returns limited-status reasons per country or region for legacy app campaigns in the scoped ad account.
 
-##### Request
+### Request
 
 No request body is required. Include the `X-AP-Context` header with your `adAccountId`.
 
@@ -25,7 +25,7 @@ No request body is required. Include the `X-AP-Context` header with your `adAcco
 GET /v1/campaigns/{id}/legacy-app-limited-status-reason-details
 ```
 
-##### Response
+### Response
 
 ```json
 {

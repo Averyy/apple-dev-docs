@@ -22,7 +22,7 @@ The sort descriptors that tell the fetch how to order its results.
 var sortBy: [SortDescriptor<T>]
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify how to arrange the collection of models that a fetch returns. For example, if your app defines a `Person` model, you may want to sort by the `surname` attribute, then by the `firstName` attribute. The fetch applies the sort descriptors in the same order as they appear in the array.
 

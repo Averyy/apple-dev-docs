@@ -25,7 +25,7 @@ var queryItems: [URLQueryItem]? { get set }
 @property (copy, nullable) NSArray<NSURLQueryItem *> * queryItems;
 ```
 
-#### Discussion
+## Discussion
 
 When you get this property’s value, the [`NSURLComponents`](../nsurlcomponents.md) class parses the [`query`](./query.md) string and returns an array of [`NSURLQueryItem`](../nsurlqueryitem.md) objects, each of which represents a single key-value pair, in the order in which they appear in the original query string. Because a name may appear more than once in a single query string, the [`name`](../nsurlqueryitem/name.md) properties of query items are not guaranteed to be unique. If the [`query`](./query.md) property is an empty string, the [`queryItems`](./queryitems.md) property is an empty array. If the [`query`](./query.md) property is `nil`, the [`queryItems`](./queryitems.md) property is also `nil`.
 

@@ -18,7 +18,7 @@ A wrapper for a `UIGestureRecognizer` that you use to integrate that gesture rec
 @preconcurrency protocol UIGestureRecognizerRepresentable
 ```
 
-#### Overview
+## Overview
 
 Use a [`UIGestureRecognizerRepresentable`](./uigesturerecognizerrepresentable.md) instance to create and manage a [`UIGestureRecognizer`](../UIKit/uigesturerecognizer.md) object in your SwiftUI interface.
 
@@ -38,13 +38,13 @@ struct ContentView: View {
 
 Because your [`UIGestureRecognizerRepresentable`](./uigesturerecognizerrepresentable.md) is a struct, it can use the environment, have data dependencies, and is more similar to views in SwiftUI. The system will call the appropriate methods on your instance to propagate the latest data.
 
-#### Handling Gesture Recognizer Actions
+## Handling Gesture Recognizer Actions
 
 SwiftUI automatically installs a target to handle the gesture recognizer’s action on your behalf. Implement the `handleUIGestureRecognizerAction` method to react to the gesture recognizing its action.
 
 You can optionally include a coordinator object to forward delegate messages from your gesture recognizer or add additional targets.
 
-#### Coordinate Space Conversions
+## Coordinate Space Conversions
 
 The gesture recognizer you create may not be attached to a `UIView` in the hierarchy, or it may return a view with different geometry than your SwiftUI view.
 

@@ -5,7 +5,7 @@
 
 Share one or more records with other iCloud users.
 
-#### Overview
+## Overview
 
 CloudKit users can share records in their private databases with other iCloud users, which enables collaboration between the people using your app. The user that initiates sharing, the owner, handles all aspects of the collaboration, from inviting people to participate to restricting what actions the participants can perform.
 
@@ -15,7 +15,7 @@ CloudKit allows you to share both record zones and record hierarchies. If you wa
 
 For more information, see [Sharing CloudKit Data with Other iCloud Users](./sharing-cloudkit-data-with-other-icloud-users.md).
 
-##### Share a Record Zone or Hierarchy
+### Share a Record Zone or Hierarchy
 
 You store shareable records in a custom record zone in the user’s private database. As you create records in that zone, they become eligible for record zone sharing. If you then choose to share that record zone, CloudKit allows participants to access all the records it contains.
 
@@ -25,7 +25,7 @@ To begin sharing, create an instance of [`CKShare`](./ckshare.md) with either th
 
 After you create the share, save it using [`CKModifyRecordsOperation`](./ckmodifyrecordsoperation.md). The shared records must already exist in iCloud or be part of the same save operation.
 
-##### Invite Participants
+### Invite Participants
 
 After saving the share, CloudKit assigns it a stable share URL. Use this URL to invite other users to participate. In iOS, [`UICloudSharingController`](../UIKit/uicloudsharingcontroller.md) provides a consistent and familiar experience for managing a share’s participants and their permissions, and for distributing the share URL. Use [`NSItemProvider`](../Foundation/nsitemprovider.md) and [`NSSharingService`](../AppKit/nssharingservice.md) in macOS (with the [`cloudSharing`](../AppKit/nssharingservice/name/cloudsharing.md) service name) to achieve similar functionality. Only invited participants can join a private share. Anyone with the share URL can join a public share. For more information, see [`publicPermission`](./ckshare/publicpermission.md).
 
@@ -33,7 +33,7 @@ When an invited user taps or clicks the share URL, CloudKit verifies they have a
 
 > ❗ **Important**:  To enable the system to launch your app when the user taps or clicks the share URL, add the `CKSharingSupported` key to the app’s `Info.plist` file. For more information, see [`CKSharingSupported`](../BundleResources/information-property-list/cksharingsupported.md).
 
-##### Manage Share Participation
+### Manage Share Participation
 
 After receiving the share metadata from CloudKit, use [`CKAcceptSharesOperation`](./ckacceptsharesoperation.md) to confirm the user’s participation. CloudKit then creates a record zone in the participant’s shared database that provides a view into the owner’s private database. The record zone contains only the records in the share; no other data is accessible. A participant with write permissions can change or delete records in this new record zone. Any changes they make are visible to all participants.
 
@@ -41,7 +41,7 @@ Create a database subscription in the user’s shared database the first time th
 
 To stop sharing, the share’s owner must delete the share or, for shared hierarchies, the root record. If a participant wants to leave the share, delete the share record from their shared database. Use [`UICloudSharingController`](../UIKit/uicloudsharingcontroller.md) or [`NSSharingService`](../AppKit/nssharingservice.md) to allow a participant to stop participating. Or remove them from the share using the [`removeParticipant(_:)`](./ckshare/removeparticipant%28_%29.md) method, and then save the updated share to iCloud.
 
-##### Customize the Sharing Experience
+### Customize the Sharing Experience
 
 You can use the framework’s share-related operations to implement behavior similar to that of [`UICloudSharingController`](../UIKit/uicloudsharingcontroller.md) and [`NSSharingService`](../AppKit/nssharingservice.md) to build a custom sharing experience by following these steps:
 

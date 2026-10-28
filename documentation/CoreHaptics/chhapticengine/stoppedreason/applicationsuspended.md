@@ -24,7 +24,7 @@ case applicationSuspended
 CHHapticEngineStoppedReasonApplicationSuspended
 ```
 
-#### Discussion
+## Discussion
 
 This condition occurs if the system suspended your app while it was in the background. Restart the engine when your app returns to the foreground to ensure proper haptic playback.
 

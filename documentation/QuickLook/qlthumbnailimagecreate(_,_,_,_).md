@@ -21,15 +21,15 @@ func QLThumbnailImageCreate(_ allocator: CFAllocator!, _ url: CFURL!, _ maxThumb
 extern CGImageRefQLThumbnailImageCreate(CFAllocatorRef allocator, CFURLRef url, CGSize maxThumbnailSize, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 The thumbnail image, or `NULL` if Quick Look doesn’t support this file type.
 
-#### Discussion
+## Discussion
 
 This function doesn’t supplant the use of Icon Services by apps to get generic file icons and custom icons stored in the metadata fork of files.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread-safe, so you can call it from any thread. However, because it’s synchronous, you should generally call it in a background thread.
 

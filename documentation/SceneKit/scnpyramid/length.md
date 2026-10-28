@@ -25,7 +25,7 @@ var length: CGFloat { get set }
 @property (nonatomic) CGFloat length;
 ```
 
-#### Discussion
+## Discussion
 
 The pyramid is centered in its local coordinate system, and the width and length of the pyramid are the dimensions of its rectangular base. For example, a pyramid of length `10.0` extends from `-5.0` to `5.0` along the z-axis. The default length is `1.0`. A length of zero or less creates an empty geometry.
 

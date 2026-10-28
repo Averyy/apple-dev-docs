@@ -19,7 +19,7 @@ A document type that uses SwiftData to manage its storage.
 struct ModelDocument
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Don’t create instances of this type. Instead, use one of the initializers on [`DocumentGroup`](../SwiftUI/documentgroup.md).
 

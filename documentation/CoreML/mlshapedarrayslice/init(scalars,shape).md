@@ -21,7 +21,7 @@ Initialize with a sequence and the shape.
 init<S>(scalars: S, shape: [Int]) where Scalar == S.Element, S : Sequence
 ```
 
-#### Discussion
+## Discussion
 
 The length of the sequence must not be less than the number of scalars in the shaped array.
 

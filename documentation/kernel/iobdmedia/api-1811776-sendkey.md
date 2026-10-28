@@ -13,11 +13,11 @@ virtual IOReturn sendKey(
  UInt8format );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the data transfer.
 
-#### Overview
+## Overview
 
 Issue an MMC SEND KEY command.
 

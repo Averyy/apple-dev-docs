@@ -24,7 +24,7 @@ class PHASESpatialPipeline
 @interface PHASESpatialPipeline : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md) class contains an instance of this class, [`spatialPipeline`](./phasespatialmixerdefinition/spatialpipeline.md), to add optional sound layers to the output.
 

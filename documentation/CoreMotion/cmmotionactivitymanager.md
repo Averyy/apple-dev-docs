@@ -22,7 +22,7 @@ class CMMotionActivityManager
 @interface CMMotionActivityManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Motion data reflects whether the user is walking, running, in a vehicle, or stationary for periods of time. Using this class, you can ask for notifications when the current type of motion changes or you can gather past motion change data. For example, a navigation app might look for changes in the current type of motion and offer different directions for each.
 

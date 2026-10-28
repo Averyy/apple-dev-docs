@@ -19,7 +19,7 @@ var windingRule: NSBezierPath.WindingRule { get set }
 @property NSWindingRule windingRule;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be either [`NSNonZeroWindingRule`](../nsnonzerowindingrule.md) or [`NSEvenOddWindingRule`](../nsevenoddwindingrule.md). This value overrides the default value returned by the [`defaultWindingRule`](./defaultwindingrule.md) method.
 

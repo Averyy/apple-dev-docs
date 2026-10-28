@@ -15,7 +15,7 @@ Adds an [`ImmersiveMediaRemotePreviewReceiver`](../immersivemediaremotepreviewre
 func connectReceiver(name: String, endpoint: NWEndpoint) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws if anything fails establishing the connection to the receiver..
 

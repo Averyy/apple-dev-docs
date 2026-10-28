@@ -5,7 +5,7 @@
 
 Forecast future data points by training a machine learning model using historical data.
 
-#### Overview
+## Overview
 
 Some signals have patterns that repeat over time or have clear trends. For example, the energy consumption of a city has a pattern with peaks in the evening when most people get home. It’s common practice to refer to these signals as time-series data. Other examples of time-series data are:
 
@@ -17,7 +17,7 @@ Even though there are patterns to the data, these patterns aren’t trivial to f
 
 Training a time-series forecaster with the Create ML Components framework shares common training behavior with other model types.
 
-##### Prepare your training data
+### Prepare your training data
 
 The first step to begin forecasting the energy consumption is to prepare the data. Gather the data as a CSV file, using the following structure:
 
@@ -102,7 +102,7 @@ let validation = zip(features[validationPortion], annotations[validationPortion]
 let testing = zip(features[testingPotion], annotations[testingPotion]).map(AnnotatedFeature.init)
 ```
 
-##### Build and train a time-series forecaster
+### Build and train a time-series forecaster
 
 After preparing your training data, you can create a forecaster. The forecaster configuration takes the input window size and forecast window size. Depending on your task you may want to adjust these values. A larger input window provides more context to the model, but results in a larger model. For this example, set the input window size to 14 days (336 samples) and the forecast window size to 4 days (96 samples).
 
@@ -121,7 +121,7 @@ let model = try await estimator.fitted(to: training, validateOn: validation) { e
 }
 ```
 
-##### Evaluate the model
+### Evaluate the model
 
 Use your testing set to evaluate your model. Two useful metrics you use to check a forecaster model are the mean-squared error (MSE) and the mean-absolute error (MAE).
 
@@ -146,7 +146,7 @@ let mae = maeSum / Double(maeValues.count)
 print("MAE: \(mae)")
 ```
 
-##### Export the model
+### Export the model
 
 When you’re satisfied with the model’s accuracy, export it as a Core ML package:
 

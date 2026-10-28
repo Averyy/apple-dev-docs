@@ -19,7 +19,7 @@ var frame: CGRect { get set }
 @property (nonatomic) CGRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to define the portion of the image that you want to call out separately.
 

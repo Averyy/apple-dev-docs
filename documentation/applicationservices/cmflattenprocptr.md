@@ -19,11 +19,11 @@ typealias CMFlattenProcPtr = (Int32, UnsafeMutablePointer<Int>?, UnsafeMutableRa
 typedef OSErr (*CMFlattenProcPtr)(SInt32 command, long *size, void *data, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./colorsync_manager.md#1670295).
 
-#### Discussion
+## Discussion
 
 IThis callback can be used, for example, by PostScript functions to transfer data from a profile to text format usable by a PostScript driver. Starting in ColorSync version 2.5, the ColorSync Manager calls your data transfer function directly, without going through the preferred, or any, CMM. So any references to the CMM in the discussion that follows are applicable only to versions of ColorSync prior to version 2.5. Where the discussion does not involve CMMs, it is applicable to all versions of ColorSync.
 

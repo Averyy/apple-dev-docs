@@ -24,7 +24,7 @@ var creationDate: Date? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSDate * creationDate;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to change the creation date of an asset.
 

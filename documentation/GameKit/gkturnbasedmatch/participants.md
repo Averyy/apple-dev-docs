@@ -37,7 +37,7 @@ var participants: [GKTurnBasedParticipant] { get }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Use the objects in this array to show more information about the participants in your interface, such as their names, avatars, status, and outcomes. The size of the array and order of the participants remains the same throughout the match.
 

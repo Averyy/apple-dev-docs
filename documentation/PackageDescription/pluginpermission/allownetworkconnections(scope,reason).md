@@ -15,7 +15,7 @@ Create a permission to make network connections.
 case allowNetworkConnections(scope: PluginNetworkPermissionScope, reason: String)
 ```
 
-#### Discussion
+## Discussion
 
 The command plug-in requires permission to make network connections. The `reason` string is shown to the user at the time of request for approval, explaining why the plug-in is requesting access.
 

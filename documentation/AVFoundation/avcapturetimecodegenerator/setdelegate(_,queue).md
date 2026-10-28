@@ -23,7 +23,7 @@ func setDelegate(_ delegate: (any AVCaptureTimecodeGeneratorDelegate)?, queue ca
 - (void) setDelegate:(id<AVCaptureTimecodeGeneratorDelegate>) delegate queue:(dispatch_queue_t) callbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to configure a delegate that handles timecode updates. The specified `queue` ensures thread-safe invocation of delegate methods.
 

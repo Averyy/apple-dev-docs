@@ -25,11 +25,11 @@ init(capacity numItems: Int)
 - (instancetype) initWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 A counted set object initialized with enough memory to hold `numItems` objects
 
-#### Discussion
+## Discussion
 
 The method is the designated initializer for [`NSCountedSet`](../nscountedset.md).
 

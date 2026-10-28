@@ -22,11 +22,11 @@ setCameraBoundaryAnimated(
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Return Value
+## Return Value
 
 Returns the map object.
 
-#### Discussion
+## Discussion
 
 By default, the change of boundary animates.
 

@@ -21,7 +21,7 @@ func update() async throws
 
 - [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 If you change the [`visibility`](./visibility-swift.property.md) value by setting it directly, call [`update()`](./update%28%29.md) to save your changes to the App Store server. Changes take effect after you call [`update()`](./update%28%29.md) or [`updateAll(_:)`](./updateall%28_%29.md).
 

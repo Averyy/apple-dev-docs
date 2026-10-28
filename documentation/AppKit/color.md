@@ -5,7 +5,7 @@
 
 Represent colors using built-in or custom formats, and give users options for selecting and applying colors.
 
-#### Overview
+## Overview
 
 For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/color).
 

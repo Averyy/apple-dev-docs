@@ -21,7 +21,7 @@ The error code to indicate that the system is unable to generate a signature fro
 static var signatureInvalid: SHError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The most common cause of this error is silent audio input.
 

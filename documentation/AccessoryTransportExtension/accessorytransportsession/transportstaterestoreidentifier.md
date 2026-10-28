@@ -15,7 +15,7 @@ An optional identifier for restoring transport state across sessions.
 var transportStateRestoreIdentifier: String?
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier to restore an interrupted Bluetooth session in your transport extension. Restoring the prior session allows your extension to skip accessory scanning and notification-forwarding subscription after the system relaunches or resumes your extension from the background. When reinitializing your extension’s [`CBCentralManager`](../../CoreBluetooth/cbcentralmanager.md), pass the value of this property as the `CBCentralManagerOptionRestoreIdentifierKey` options key to the [`init(delegate:queue:options:)`](../../CoreBluetooth/cbcentralmanager/init%28delegate,queue,options%29.md) initializer:
 

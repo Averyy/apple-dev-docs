@@ -19,7 +19,7 @@ case directTouch
 NSEventTypeDirectTouch
 ```
 
-#### Discussion
+## Discussion
 
 Use events of this type to handle events occurring in an [`NSTouchBar`](../../nstouchbar.md) object.
 

@@ -23,7 +23,7 @@ func indexPath(forSupplementaryView supplementaryView: UICollectionReusableView)
 - (NSIndexPath *) indexPathForSupplementaryView:(UICollectionReusableView *) supplementaryView;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the specified view if it is in the collection view, else `nil`.
 

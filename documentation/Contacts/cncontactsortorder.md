@@ -24,7 +24,7 @@ enum CNContactSortOrder
 enum CNContactSortOrder : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The value [`CNContactSortOrder.userDefault`](./cncontactsortorder/userdefault.md) is the user’s preferred sort order.
 

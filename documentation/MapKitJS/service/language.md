@@ -16,7 +16,7 @@ get language(): string | null;
 set language(value: string | null);
 ```
 
-#### Discussion
+## Discussion
 
 When you set the [`language`](./language.md) property to a language ID (such as `fr-CA` or `en-GB`), the service returns results in this language, if available. If [`language`](./language.md) isn’t set when initializing a [`Service`](../service.md) object, then the service uses the language you provided when you initialized MapKit.
 

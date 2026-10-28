@@ -23,11 +23,11 @@ func target(forAction action: Selector, withSender sender: Any?) -> Any?
 - (id) targetForAction:(SEL) action withSender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The object whose action method is invoked to execute the command.
 
-#### Discussion
+## Discussion
 
 This method is called whenever an action needs to be invoked by the object. The default implementation calls the [`canPerformAction(_:withSender:)`](./canperformaction%28_,withsender%29.md) method to determine whether it can invoke the action. If the object can invoke the action, it returns itself, otherwise it passes the request up the responder chain. Your app should override this method if it wants to override how a target is selected.
 

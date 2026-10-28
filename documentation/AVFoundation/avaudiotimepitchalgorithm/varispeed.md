@@ -25,7 +25,7 @@ static let varispeed: AVAudioTimePitchAlgorithm
 extern AVAudioTimePitchAlgorithm const AVAudioTimePitchAlgorithmVarispeed;
 ```
 
-#### Discussion
+## Discussion
 
 The pitch varies with the rate, and supports variable rates from `1/32` to `32`.
 

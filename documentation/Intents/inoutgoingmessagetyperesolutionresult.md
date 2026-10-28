@@ -24,7 +24,7 @@ class INOutgoingMessageTypeResolutionResult
 @interface INOutgoingMessageTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 Return an [`INOutgoingMessageTypeResolutionResult`](./inoutgoingmessagetyperesolutionresult.md) when you resolve an [`INOutgoingMessageType`](./inoutgoingmessagetype.md) parameter. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

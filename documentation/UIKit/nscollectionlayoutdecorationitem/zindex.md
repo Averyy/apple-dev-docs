@@ -23,7 +23,7 @@ var zIndex: Int { get set }
 @property (nonatomic) NSInteger zIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0`, which means the decoration item appears below all other items in the section.
 

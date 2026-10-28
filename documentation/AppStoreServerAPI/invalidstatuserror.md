@@ -19,7 +19,7 @@ object InvalidStatusError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get All Subscription Statuses`](./get-all-subscription-statuses.md) endpoint returns this error if you provide an invalid `status` query parameter.
 

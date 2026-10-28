@@ -24,7 +24,7 @@ case floatRG11B10
 MTLAttributeFormatFloatRG11B10
 ```
 
-#### Discussion
+## Discussion
 
 This data format is identical to [`MTLPixelFormat.rg11b10Float`](../mtlpixelformat/rg11b10float.md), and used in compute functions for manipulating pixels.
 

@@ -24,7 +24,7 @@ let AVVideoH264EntropyModeKey: String
 extern NSString * const AVVideoH264EntropyModeKey;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls whether an H.264 encoder uses [`AVVideoH264EntropyModeCAVLC`](./avvideoh264entropymodecavlc.md) or [`AVVideoH264EntropyModeCABAC`](./avvideoh264entropymodecabac.md). CABAC generally gives better compression at the expense of higher computational overhead.
 

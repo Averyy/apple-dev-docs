@@ -20,7 +20,7 @@ var includeChildWindows: Bool { get set }
 @property (nonatomic, assign) BOOL includeChildWindows;
 ```
 
-#### Discussion
+## Discussion
 
 By default taking a screenshot captures subwindows. For example, alerts, popovers, and sheets are captured by default.
 

@@ -28,7 +28,7 @@ enum SWAttributionViewDisplayContext : NSInteger;
 
 - [Making your app content shareable](../making-your-app-content-shareable.md)
 
-#### Overview
+## Overview
 
 Set the appropriate display context on [`SWAttributionView`](../swattributionview.md) before the system adds the view to a window. This informs the system about how the user is consuming the attributed content, and influences future relevancy ranking of the [`SWHighlight`](../swhighlight.md) for this view.
 

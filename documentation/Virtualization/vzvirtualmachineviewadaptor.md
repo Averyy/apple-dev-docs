@@ -15,7 +15,7 @@ A sendable wrapper that connects a virtual machine view to a virtual machine.
 struct VZVirtualMachineViewAdaptor
 ```
 
-#### Discussion
+## Discussion
 
 `VZVirtualMachineViewAdaptor` enables Swift 6 strict concurrency when using [`VZVirtualMachineView`](./vzvirtualmachineview.md). Since [`VZVirtualMachine`](./vzvirtualmachine.md) operates on a specific dispatch queue and is not [`Sendable`](../Swift/sendable.md), assigning it directly to [`virtualMachine`](./vzvirtualmachineview/virtualmachine.md) would be a compiler error when crossing isolation boundaries. The adaptor holds a strong reference to the virtual machine, allowing you to  safely copy it  across actor boundaries.
 

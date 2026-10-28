@@ -20,7 +20,7 @@ class ARRaycastResult
 @interface ARRaycastResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you use [`ARView`](../RealityKit/arview.md) or [`ARSCNView`](./arscnview.md) as your renderer, you can search for real-world surfaces at a screen point using the [`raycast(from:allowing:alignment:)`](../RealityKit/arview/raycast%28from,allowing,alignment%29.md), and [`raycastQuery(from:allowing:alignment:)`](./arscnview/raycastquery%28from,allowing,alignment%29.md) functions, respectively.
 

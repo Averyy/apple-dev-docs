@@ -17,7 +17,7 @@ A unit for average pixel luminance measurements.
 final class AveragePixelLuminance
 ```
 
-#### Discussion
+## Discussion
 
 This is used as the `Dimension` type in [`value`](./pixelluminancemetric/value.md), which has type `AverageStatistics<AveragePixelLuminance>`. The base unit symbol is `"apl"` (average pixel luminance).
 

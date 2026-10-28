@@ -21,7 +21,7 @@ Constants that describe the compilation-optimization preference.
 struct OptimizationPreference
 ```
 
-#### Overview
+## Overview
 
 Use the constants that this structure defines to specify whether the BNNS library compiles a graph that’s optimized either for performance or for a smaller footprint.
 

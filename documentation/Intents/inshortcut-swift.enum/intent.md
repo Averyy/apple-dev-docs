@@ -19,7 +19,7 @@ The intent that performs the action when invoking the shortcut.
 var intent: INIntent? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is nil when you create the shortcut with an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object.
 

@@ -23,7 +23,7 @@ var selectedSegmentIndex: Int { get set }
 @property (nonatomic) NSInteger selectedSegmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`noSegment`](./nosegment.md) (no segment selected) until the user touches a segment. Set this property to `-1` to turn off the current selection. [`UISegmentedControl`](../uisegmentedcontrol.md) ignores this property when [`isMomentary`](./ismomentary.md) is [`true`](../../Swift/true.md). When the user touches a segment to change the selection, the system generates the control event [`valueChanged`](../uicontrol/event/valuechanged.md). If you set up the segmented control to respond to this control event, it sends an action message to its target.
 

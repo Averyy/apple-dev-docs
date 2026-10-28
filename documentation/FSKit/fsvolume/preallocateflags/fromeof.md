@@ -19,7 +19,7 @@ static var fromEOF: FSVolume.PreallocateFlags { get }
 FSPreallocateFlagsFromEOF
 ```
 
-#### Discussion
+## Discussion
 
 When implementing this behavior, ignore any offset in the preallocate call. This flag is currently set for all [`preallocateSpace(for:at:length:flags:context:replyHandler:)`](../preallocatehandler/preallocatespace%28for,at,length,flags,context,replyhandler%29.md) calls.
 

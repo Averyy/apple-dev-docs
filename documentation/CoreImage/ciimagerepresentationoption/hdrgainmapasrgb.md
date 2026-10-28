@@ -24,7 +24,7 @@ static let hdrGainMapAsRGB: CIImageRepresentationOption
 extern CIImageRepresentationOption const kCIImageRepresentationHDRGainMapAsRGB;
 ```
 
-#### Discussion
+## Discussion
 
 This key affects how the gain map image is calculated from the SDR receiver and the [`hdrImage`](./hdrimage.md) image value.
 

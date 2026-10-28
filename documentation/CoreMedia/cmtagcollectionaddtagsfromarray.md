@@ -21,11 +21,11 @@ Adds the tags contained in a C-style array to a tag collection.
 extern OSStatus CMTagCollectionAddTagsFromArray(CMMutableTagCollectionRef tagCollection, CMTag *tags, CMItemCount tagCount);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Using a value of `containedTagCount` greater than the number of elements in the array starting from `containedTags` causes undefined behavior.
 

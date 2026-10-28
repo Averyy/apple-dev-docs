@@ -15,11 +15,11 @@ The raw value of the data cast as an integer type and bound by the [`HIDElement`
 func logicalValue<IntegerType>(asTypeTruncatingIfNeeded: IntegerType.Type) -> IntegerType? where IntegerType : FixedWidthInteger
 ```
 
-#### Return Value
+## Return Value
 
 The data cast as the requested type, or nil if out of bounds.
 
-#### Discussion
+## Discussion
 
 If the raw value is out of bounds, this returns `nil`. For example, if the logical minimum and logical maximum are specified as `1` and `127` respectively, and the raw value is `0`, the logical value is undefined.
 

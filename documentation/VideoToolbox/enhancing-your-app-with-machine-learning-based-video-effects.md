@@ -10,7 +10,7 @@ Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - macOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Using this sample app, you can learn how to enhance your videos using one of several video effects.
 

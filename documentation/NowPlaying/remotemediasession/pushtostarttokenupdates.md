@@ -24,7 +24,7 @@ Available when `Attributes` conforms to `RemoteMediaSessionAttributes`.
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use push notifications to start new remote sessions and update ongoing ones. For additional information, see [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 

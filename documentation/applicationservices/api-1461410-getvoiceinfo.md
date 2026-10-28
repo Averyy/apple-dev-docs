@@ -19,11 +19,11 @@ func GetVoiceInfo(_ voice: UnsafePointer<VoiceSpec>?, _ selector: OSType, _ voic
 OSErr GetVoiceInfo(const VoiceSpec *voice, OSType selector, void *voiceInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 This function is intended primarily for use by synthesizers,but an application can call it too. 
 

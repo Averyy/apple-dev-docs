@@ -20,7 +20,7 @@ Writes the action entity resolution data into an encoder.
 func encode(to encoder: any Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the value fails to encode anything, `encoder` will encode an empty keyed container. This function throws an [`Error`](../../Swift/error.md) if any values are invalid for the given encoder’s format.
 

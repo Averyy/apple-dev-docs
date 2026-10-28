@@ -28,7 +28,7 @@ protocol GKGameCenterControllerDelegate : NSObjectProtocol
 
 - [Displaying the Game Center dashboard](./displaying-the-game-center-dashboard.md)
 
-#### Overview
+## Overview
 
 Delegates of [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) objects conform to the `GKGameCenterControllerDelegate` protocol.
 

@@ -24,7 +24,7 @@ init(data: Data, filename: String, typeIdentifier: String?)
 + (INFile *) fileWithData:(NSData *) data filename:(NSString *) filename typeIdentifier:(NSString *) typeIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INFile`](../infile.md) object containing the supplied information.
 

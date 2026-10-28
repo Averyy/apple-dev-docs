@@ -25,7 +25,7 @@ func setActionUserInfoValue(_ info: Any?, forKey key: UndoManager.UserInfoKey)
 - (void) setActionUserInfoValue:(id) info forKey:(NSUndoManagerUserInfoKey) key;
 ```
 
-#### Discussion
+## Discussion
 
 Set user info on an undo action to provide custom information to the action beyond its action name. You can use this for things like an icon to represent the undoable action, or a timestamp of when the undo manager registers the action.
 

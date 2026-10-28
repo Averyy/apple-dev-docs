@@ -22,7 +22,7 @@ var sourceDeviceType: AVCaptureDevice.DeviceType? { get }
 @property (nonatomic, readonly, nullable) AVCaptureDeviceType sourceDeviceType;
 ```
 
-#### Discussion
+## Discussion
 
 All ports contained in an input’s [`ports`](../ports.md) property have the same source device type, which each equal to the [`deviceType`](../../avcapturedevice/devicetype-swift.property.md) property of the input’s device.
 

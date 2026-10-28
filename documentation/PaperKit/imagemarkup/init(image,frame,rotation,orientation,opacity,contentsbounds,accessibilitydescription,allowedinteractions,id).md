@@ -19,7 +19,7 @@ Initializes and returns a new image markup from the specified parameters.
 init(image: CGImage, frame: CGRect, rotation: CGFloat = 0.0, orientation: CGImagePropertyOrientation = .up, opacity: CGFloat = 1.0, contentsBounds: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), accessibilityDescription: String? = nil, allowedInteractions: MarkupInteractions = .all, id: MarkupID<ImageMarkup> = MarkupID())
 ```
 
-#### Discussion
+## Discussion
 
 Image content is shown scaled to fill.
 

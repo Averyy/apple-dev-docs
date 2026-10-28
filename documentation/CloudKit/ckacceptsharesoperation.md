@@ -25,7 +25,7 @@ class CKAcceptSharesOperation
 @interface CKAcceptSharesOperation : CKOperation
 ```
 
-#### Overview
+## Overview
 
 Use this operation to accept participation in one or more shares. You create the operation with an array of share metadatas, which CloudKit provides to your app when the user taps or clicks a share’s [`url`](./ckshare/url.md). The method CloudKit calls varies by platform and app configuration. For more information, see [`CKShare.Metadata`](./ckshare/metadata.md). You can also fetch a share’s metadata using [`CKFetchShareMetadataOperation`](./ckfetchsharemetadataoperation.md).
 

@@ -25,7 +25,7 @@ let kCMMetadataKeySpace_QuickTimeMetadata: CFString
 extern CFStringRef const kCMMetadataKeySpace_QuickTimeMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 This keyspace defines its key values to be expressed as reverse-DNS strings, which allows third parties to define their own keys in a well established way that avoids collisions.
 

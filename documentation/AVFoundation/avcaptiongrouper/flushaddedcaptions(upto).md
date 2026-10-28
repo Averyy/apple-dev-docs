@@ -22,7 +22,7 @@ func flushAddedCaptions(upTo upToTime: CMTime) -> [AVCaptionGroup]
 - (NSArray<AVCaptionGroup *> *) flushAddedCaptionsIntoGroupsUpToTime:(CMTime) upToTime;
 ```
 
-#### Return Value
+## Return Value
 
 An array of zero or more caption groups.
 

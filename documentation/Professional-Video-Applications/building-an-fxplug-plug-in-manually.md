@@ -5,7 +5,7 @@
 
 Create your own plug-in in Xcode.
 
-#### Overview
+## Overview
 
 Every FxPlug plug-in is contained within an application bundle, and uses an XPC service to communicate with the host applications, Final Cut Pro and Motion. In most cases, you can use the Xcode template that’s installed with the FxPlug SDK as a base your FxPlug plug-in (see [Building an FxPlug plug-in from an Xcode template](./building-an-fxplug-plug-in-from-an-xcode-template.md)). However, if you’re creating an especially complex plug-in (or if you’re the type who likes to know behind-the- scenes details), then this article is for you.
 
@@ -13,7 +13,7 @@ You can create your own FxPlug plug-in that’s discoverable by Motion and ready
 
 > **Note**:  This document describes how to create a plug-in with FxPlug 4. FxPlug 3 isn’t supported in Final Cut Pro and Motion. For more information, see [Migrating FxPlug 3 plug-ins to FxPlug 4](./migrating-fxplug-3-plug-ins-to-fxplug-4.md).
 
-##### Build the structure for your plug-in
+### Build the structure for your plug-in
 
 To build the structure for your plug-in, follow these steps:
 
@@ -41,7 +41,7 @@ To build the structure for your plug-in, follow these steps:
 
 ![A screenshot showing the XPC Service target selected in the Targets pane. The Additional SDKs path shows the location of the FxPlug.sdk file.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3559532@2x.png)
 
-##### Make your plug-in discoverable
+### Make your plug-in discoverable
 
 macOS uses a technology called PlugInKit to discover and register plug-ins on your system. When a host application launches, PluginKit reports a list of plug-ins that are available for that host. To make your plug-in discoverable by PluginKit, make `pluginkit` your Wrapper Extension. In the Targets list, select your XPC service, select Build Settings from the Project menu bar, and select All to make sure you’re seeing all available settings. It’s helpful to search for “packaging” to find the correct section.
 
@@ -61,7 +61,7 @@ Tell Xcode where to embed the plug-in bundle in your application bundle:
 
 ![Screenshot of DynamicRegXPC.pluginkit added to Embed PlugIns with Code Sign On Copy selected.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3375356@2x.png)
 
-##### Connect the host application to the plug-in
+### Connect the host application to the plug-in
 
 The host application must make an XPC connection to your plug-in. To do that, your plug-in’s XPC must call the `FxPrincipal` starting method in its `main.swift` file. Be sure to import the `FxPlug/FxPlugSDK.h` header file. In Objective-C, import it in your `main.m` file. In Swift, import it in your `XPC Service-Bridging-Header.h` file.
 
@@ -88,7 +88,7 @@ When using Swift, also add the following code to your `main.swift` file:
 FxPrincipal.startServicePrincipal()
 ```
 
-##### Build and run your project
+### Build and run your project
 
 Once you finish editing your `Info.plist`, build and run your project. It should compile without errors and launch without complications. When you launch Motion, you see your plug-in either in the filter list or in the generator list (depending on whether your entry in `protocolNames` was `FxFilter` or `FxGenerator` as you indicated when [Editing property lists for FxPlug plug-ins](./editing-property-lists-for-fxplug-plug-ins.md)).
 
@@ -118,7 +118,7 @@ FxPlugBrightness(1.0)DE175335-4588-4C40-84D6-BCD4F0BCAC44 2019-07-09 15:41:18 +0
 
 > **Note**: Even though your plug-in has been discovered, it’s still not ready to use. If you use the plug-in in the library, you get unexpected results.
 
-##### Create your plug-in class
+### Create your plug-in class
 
 When a host application instantiates your plug-in, it looks for the `className` item in the `Info.plist` file for your XPC service. This class is where you write your plug-in code — making sure that it conforms to the [`FxTileableEffect`](../professional_video_applications/fxtileableeffect.md) protocol. (See [Rendering in FxPlug](./rendering-in-fxplug.md) for more information).
 
@@ -145,7 +145,7 @@ When a host application instantiates your plug-in, it looks for the `className` 
 @end
 ```
 
-##### Cache the host API manager
+### Cache the host API manager
 
 Before you can add methods for the [`FxTileableEffect`](../professional_video_applications/fxtileableeffect.md) protocol, use the following code to cache the host API manager. For more on the role of the host API, see [Using FxPlug APIs](./using-fxplug-apis.md).
 
@@ -182,7 +182,7 @@ In Objective-C, add the code for the initializer to the `FxPlugBrightnessFilter`
 }
 ```
 
-##### Define a properties dictionary
+### Define a properties dictionary
 
 Every plug-in defines a properties dictionary that holds configuration values unique to how that plug-in operates, including keys that specify if the plug-in can change its output size and if it supports tiled rendering. To define a properties dictionary for your plug-in, implement this method:
 
@@ -224,7 +224,7 @@ For information on other available key values, see `FxBaseEffect` `and` [`FxTile
 
 > **Note**: The property keys `kFxPropertyKey_IsThreadSafe` and `kFxPropertyKey_UsesRationalTime` are ignored for FxPlug 4 and newer plug-ins because all FxPlug 4 plug-ins are required to be thread-safe and use [`CMTime`](../CoreMedia/cmtime.md).
 
-##### Implement required and optional methods
+### Implement required and optional methods
 
 Plug-ins generally require user interface elements such as parameter sliders, image wells, and color pickers. Add the [`addParameters()`](../professional_video_applications/fxtileableeffect/addparameters%28%29.md) method to your plug-in. For more information about parameter types, and examples of their usage, see [Using FxPlug APIs](./using-fxplug-apis.md) and [Adding parameters to plug-ins](./adding-parameters-to-plug-ins.md).
 

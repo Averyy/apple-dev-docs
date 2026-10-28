@@ -25,7 +25,7 @@ init(cgImage: CGImage, format: vImage_CGImageFormat, flags options: vImage.Optio
 
 - [Creating and Populating Buffers from Core Graphics Images](../creating-and-populating-buffers-from-core-graphics-images.md)
 
-#### Discussion
+## Discussion
 
 This function converts the source Core Graphics image that the `cgImage` parameter specifies to the format that the `format` parameter describes.
 

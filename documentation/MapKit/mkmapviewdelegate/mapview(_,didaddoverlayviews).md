@@ -23,7 +23,7 @@ optional func mapView(_ mapView: MKMapView, didAddOverlayViews overlayViews: [An
 - (void) mapView:(MKMapView *) mapView didAddOverlayViews:(NSArray *) overlayViews;
 ```
 
-#### Discussion
+## Discussion
 
 By the time the map view calls this method, MapKit has added the specified views to the map.
 

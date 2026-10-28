@@ -16,7 +16,7 @@ Convert a volume scalar value to the equivalent dB value.
 func convertToDecibels(fromScalar scalar: Float) throws -> Float
 ```
 
-#### Return Value
+## Return Value
 
 A Float representing the equivalent dB value.
 

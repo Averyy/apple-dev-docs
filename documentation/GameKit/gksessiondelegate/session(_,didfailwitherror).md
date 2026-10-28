@@ -24,7 +24,7 @@ optional func session(_ session: GKSession, didFailWithError error: any Error)
 - (void) session:(GKSession *) session didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a serious internal error occurred in the session. Your application should disconnect the session from other peers and release the session.
 

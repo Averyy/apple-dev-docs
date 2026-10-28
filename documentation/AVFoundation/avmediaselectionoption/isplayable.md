@@ -25,7 +25,7 @@ var isPlayable: Bool { get }
 @property (nonatomic, readonly, getter=isPlayable) BOOL playable;
 ```
 
-#### Discussion
+## Discussion
 
 If the media data associated with the option cannot be decoded or otherwise rendered, the value of this property is [`false`](../../Swift/false.md).
 

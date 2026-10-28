@@ -24,7 +24,7 @@ var bufferDataType: MTLDataType { get }
 @property (readonly) MTLDataType bufferDataType;
 ```
 
-#### Discussion
+## Discussion
 
 If the argument is not a buffer, querying this property is a fatal error.
 

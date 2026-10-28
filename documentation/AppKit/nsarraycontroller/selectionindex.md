@@ -19,7 +19,7 @@ var selectionIndex: Int { get }
 @property (readonly) NSUInteger selectionIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This property is observable using key-value observing.
 

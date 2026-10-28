@@ -16,11 +16,11 @@ Method to get the task's SCSICommandDescriptorBlock size.
 UInt8 (*GetCommandDescriptorBlockSize)(void *task);
 ```
 
-#### Return Value
+## Return Value
 
 UInt8 which is the size of the SCSICommandDescriptorBlock. Valid values are 6, 10, 12, and 16 which have enums defined in SCSITask.h
 
-#### Discussion
+## Discussion
 
 This method can be used to get the size of the SCSITask's SCSICommandDescriptorBlock.
 

@@ -5,11 +5,11 @@
 
 Generate an API token to access CloudKit web services or use CloudKit JS.
 
-#### Overview
+## Overview
 
 With CloudKit, you can store data in iCloud and sync it across Apple devices. To access iCloud data from the web or other platforms, you can use [CloudKit JS](../CloudKitJS/CloudKitJS.md) or [CloudKit Web Services](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/) after obtaining a token.
 
-##### Select API access for your container
+### Select API access for your container
 
 Use your web browser to access the CloudKit Database app:
 
@@ -20,7 +20,7 @@ Use your web browser to access the CloudKit Database app:
 
 ![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Tokens & Keys menu item in the Settings section on the left.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699104@2x.png)
 
-##### Create the API token
+### Create the API token
 
 To obtain your container’s API token:
 

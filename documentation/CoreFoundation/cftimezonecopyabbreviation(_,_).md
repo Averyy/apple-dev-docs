@@ -25,11 +25,11 @@ func CFTimeZoneCopyAbbreviation(_ tz: CFTimeZone!, _ at: CFAbsoluteTime) -> CFSt
 extern CFStringRefCFTimeZoneCopyAbbreviation(CFTimeZoneRef tz, CFAbsoluteTime at);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the time zone abbreviation of `at`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that the abbreviation may be different at different dates. For example, during daylight savings time the US/Eastern time zone has an abbreviation of “EDT.” At other times, its abbreviation is “EST.”
 

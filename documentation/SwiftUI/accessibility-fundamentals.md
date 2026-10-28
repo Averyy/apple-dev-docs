@@ -5,7 +5,7 @@
 
 Make your SwiftUI apps accessible to everyone, including people with disabilities.
 
-#### Overview
+## Overview
 
 Like all Apple UI frameworks, SwiftUI comes with built-in accessibility support. The framework introspects common elements like navigation views, lists, text fields, sliders, buttons, and so on, and provides basic accessibility labels and values by default. You don’t have to do any extra work to enable these standard accessibility features.
 

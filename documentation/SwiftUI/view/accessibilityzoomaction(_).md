@@ -22,7 +22,7 @@ nonisolated
 func accessibilityZoomAction(_ handler: @escaping (AccessibilityZoomGestureAction) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how a zoom action is used to transform the scale of a shape which has a `MagnificationGesture`.
 

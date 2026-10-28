@@ -17,7 +17,7 @@ Disable person segmentation.
 static let disablePersonOcclusion: ARView.RenderOptions
 ```
 
-#### Discussion
+## Discussion
 
 By default, ARKit detects users in the frame, and hides content occluded by users. Add the [`disablePersonOcclusion`](./disablepersonocclusion.md) option to the AR view’s [`renderOptions`](../renderoptions-swift.property.md) to disable this feature.
 

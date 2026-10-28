@@ -24,7 +24,7 @@ func textViewportLayoutController(_ textViewportLayoutController: NSTextViewport
 - (void) textViewportLayoutController:(NSTextViewportLayoutController *) textViewportLayoutController configureRenderingSurfaceForTextLayoutFragment:(NSTextLayoutFragment *) textLayoutFragment;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate presents the text layout fragment in the UI, for example, in a sublayer or a subview. Layout information such as `viewportBounds` on `textViewportLayoutController` isn’t up to date at the point of this call.
 

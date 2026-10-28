@@ -21,11 +21,11 @@ Returns all samples in a sample buffer.
 func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers
 ```
 
-#### Return Value
+## Return Value
 
 All samples from the buffer.
 
-#### Discussion
+## Discussion
 
 The system creates temporary sample buffers for individual samples that refer to the sample data and containing its timing, size, and attachments.
 

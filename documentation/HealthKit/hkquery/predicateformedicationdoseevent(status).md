@@ -22,7 +22,7 @@ class func predicateForMedicationDoseEvent(status: HKMedicationDoseEvent.LogStat
 + (NSPredicate *) predicateForMedicationDoseEventWithStatus:(HKMedicationDoseEventLogStatus) status;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a predicate for use with HKQuery subclasses.
 

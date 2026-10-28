@@ -20,7 +20,7 @@ Adds an inherit arc to the prim.
 func add(_ primPath: USDLayer.Path, position: USDPrim.ListPosition = .backOfPrependList) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the inherit cannot be added.
 

@@ -24,7 +24,7 @@ var progress: Float { get }
 @property (readonly) float progress;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a float value between 0.0 and 1.0 representing the percentage of duration completed for this track. This value is updated as segments are completed.
 

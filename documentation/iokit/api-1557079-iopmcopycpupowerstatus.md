@@ -16,11 +16,11 @@ Copy status of all current CPU power levels.
 IOReturn IOPMCopyCPUPowerStatus(CFDictionaryRef *cpuPowerStatus);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess, or other error report. Returns kIOReturnNotFound if CPU PowerStatus has not been published.
 
-#### Discussion
+## Discussion
 
 The returned dictionary may define some of these keys, as defined in IOPM.h: - kIOPMCPUPowerLimitProcessorSpeedKey - kIOPMCPUPowerLimitProcessorCountKey - kIOPMCPUPowerLimitSchedulerTimeKey
 

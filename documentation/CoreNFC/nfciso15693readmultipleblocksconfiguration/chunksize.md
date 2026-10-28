@@ -19,7 +19,7 @@ var chunkSize: Int { get set }
 @property (nonatomic, assign) NSUInteger chunkSize;
 ```
 
-#### Discussion
+## Discussion
 
 Number of blocks to read per Read Multiple Blocks command. This may be limited by the tag hardware.
 

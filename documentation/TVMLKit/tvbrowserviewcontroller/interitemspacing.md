@@ -19,7 +19,7 @@ var interitemSpacing: CGFloat { get set }
 @property (nonatomic, assign) CGFloat interitemSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 20.0.
 

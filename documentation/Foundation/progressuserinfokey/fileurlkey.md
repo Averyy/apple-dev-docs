@@ -25,7 +25,7 @@ static let fileURLKey: ProgressUserInfoKey
 extern NSProgressUserInfoKey const NSProgressFileURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 If present, [`Progress`](../progress.md) presents additional information in its localized description.
 

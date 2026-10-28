@@ -20,7 +20,7 @@ func extensionViewController(signers messageSigners: [MEMessageSigner]) -> MEExt
 - (MEExtensionViewController *) extensionViewControllerForMessageSigners:(NSArray<MEMessageSigner *> *) messageSigners;
 ```
 
-#### Return Value
+## Return Value
 
 A view controller that users can display to see information about a message’s digital signature.
 

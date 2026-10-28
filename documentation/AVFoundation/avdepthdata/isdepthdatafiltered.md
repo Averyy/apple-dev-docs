@@ -24,7 +24,7 @@ var isDepthDataFiltered: Bool { get }
 @property (readonly, getter=isDepthDataFiltered) BOOL depthDataFiltered;
 ```
 
-#### Discussion
+## Discussion
 
 The capture system can smooth noise and fill in missing values (caused by low light or lens occlusion) in depth data maps by temporally interpolating between previous and subsequent frames of captured depth data. Use the [`AVCaptureDepthDataOutput`](../avcapturedepthdataoutput.md) [`isFilteringEnabled`](../avcapturedepthdataoutput/isfilteringenabled.md) property to control filtering for streaming depth capture, or the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) [`isDepthDataFiltered`](./isdepthdatafiltered.md) property to control filtering for depth data captured alongside photo capture.
 

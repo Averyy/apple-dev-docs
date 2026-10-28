@@ -21,7 +21,7 @@ The closure to execute when a subscription becomes available.
 var perSubscriptionResultBlock: ((CKSubscription.ID, Result<CKSubscription, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

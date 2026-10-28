@@ -25,7 +25,7 @@ func CFAttributedStringBeginEditing(_ aStr: CFMutableAttributedString!)
 extern void CFAttributedStringBeginEditing(CFMutableAttributedStringRef aStr);
 ```
 
-#### Discussion
+## Discussion
 
 Defers internal consistency-checking and coalescing for a mutable attributed string. You must balance a call to this function with a corresponding [`CFAttributedStringEndEditing(_:)`](./cfattributedstringendediting%28_%29.md).
 

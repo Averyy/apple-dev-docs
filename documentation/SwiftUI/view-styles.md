@@ -5,7 +5,7 @@
 
 Apply built-in and custom appearances and behaviors to different types of views.
 
-#### Overview
+## Overview
 
 SwiftUI defines built-in styles for certain kinds of views and automatically selects the appropriate style for a particular presentation context. For example, a [`Label`](./label.md) might appear as an icon, a string title, or both, depending on factors like the platform, whether the view appears in a toolbar, and so on.
 

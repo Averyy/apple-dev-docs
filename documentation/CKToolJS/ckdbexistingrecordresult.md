@@ -19,7 +19,7 @@ dictionary CKDBExistingRecordResult {
 };
 ```
 
-#### Overview
+## Overview
 
 The server returns a CKDBExistingRecordResult object when looking up a record succeeds as part of a batch record lookup operation.
 

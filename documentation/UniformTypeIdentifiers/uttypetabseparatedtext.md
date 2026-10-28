@@ -21,7 +21,7 @@ A type that represents text containing tab-separated values.
 extern UTType * const UTTypeTabSeparatedText;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.tab-separated-values-text`.
 

@@ -26,7 +26,7 @@ var tierIdentifiers: [String]! { get set }
 @property (nonatomic, copy, null_resettable) NSArray<NSString *> * tierIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 You should only use values that are in your availability feed’s tier restrictions.
 

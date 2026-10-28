@@ -5,7 +5,7 @@
 
 Detect and respond to squeezes a person makes on Apple Pencil Pro.
 
-#### Overview
+## Overview
 
 You can use Apple Pencil interactions to allow people to access functionality in your app quickly. Squeezing Apple Pencil Pro lets a person perform actions such as showing a contextual palette without moving the pencil to another location on the screen.
 
@@ -13,7 +13,7 @@ You can use Apple Pencil interactions to allow people to access functionality in
 
 > **Note**: Only Apple Pencil Pro supports squeeze interactions.
 
-##### Register for a squeeze
+### Register for a squeeze
 
 To respond to squeezes from Apple Pencil Pro in your app, you need to register your view to receive squeeze interactions.
 
@@ -46,7 +46,7 @@ class ViewController: UIViewController, UIPencilInteractionDelegate {
 }
 ```
 
-##### Check the preferred squeeze action
+### Check the preferred squeeze action
 
 A person can choose which action they prefer to perform when they squeeze Apple Pencil Pro. They choose this preference in Settings > Apple Pencil > Actions > Squeeze. In addition to drawing-specific actions like switching drawing tools, people can configure the preferred action for squeeze to perform any App Shortcut, including pre-configured shortcuts you provide for your app.
 
@@ -68,7 +68,7 @@ To check the preferred action, use the [`preferredSqueezeAction`](../UIKit/uipen
 UIPencilInteraction.preferredSqueezeAction
 ```
 
-##### Choose the action to perform
+### Choose the action to perform
 
 When possible, perform the preferred action to provide a consistent user experience across apps that support squeezes. If the preferred action doesn’t make sense in your app, consider giving people a way to specify a custom action that’s suitable for your app. For design guidance, read Human Interface Guidelines > Apple Pencil and Scribble > [Squeeze](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble#Squeeze).
 
@@ -197,14 +197,14 @@ func pencilInteraction(_ interaction: UIPencilInteraction,
 }
 ```
 
-#### See Also
+## See Also
 
-###### Related articles
+#### Related articles
 
 - [Handling double taps from Apple Pencil](./handling-double-taps-from-apple-pencil.md)
   Detect and respond to double taps a person makes on Apple Pencil.
 
-###### Related reference in SwiftUI
+#### Related reference in SwiftUI
 
 - [`onPencilSqueeze(perform:)`](../SwiftUI/view/onpencilsqueeze%28perform%29.md)
   Adds an action to perform when the user squeezes their Apple Pencil.
@@ -217,7 +217,7 @@ func pencilInteraction(_ interaction: UIPencilInteraction,
 - [`PencilHoverPose`](../SwiftUI/pencilhoverpose.md)
   A value describing the location and distance of an Apple Pencil hovering in the area above a view’s bounds.
 
-###### Related reference in UIKit
+#### Related reference in UIKit
 
 - [`UIPencilInteraction`](../UIKit/uipencilinteraction.md)
   An interaction that tells your app when a person double-taps or squeezes Apple Pencil.

@@ -17,7 +17,7 @@ Registers the `gemma4_assistant` model type with the shared MTP drafter type reg
 enum Gemma4AssistantRegistration
 ```
 
-#### Overview
+## Overview
 
 Callers must invoke this once before loading a drafter (typically at app launch). Re-registration is idempotent — it overwrites the prior creator with the same one.
 

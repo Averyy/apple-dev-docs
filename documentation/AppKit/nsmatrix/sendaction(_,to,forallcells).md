@@ -19,7 +19,7 @@ func sendAction(_ selector: Selector, to object: Any, forAllCells flag: Bool)
 - (void) sendAction:(SEL) selector to:(id) object forAllCells:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Iteration begins with the cell in the upper-left corner of the receiver, proceeding through the appropriate entries in the first row, then on to the next.
 

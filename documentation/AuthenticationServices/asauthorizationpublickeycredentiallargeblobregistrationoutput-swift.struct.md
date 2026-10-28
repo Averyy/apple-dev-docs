@@ -19,7 +19,7 @@ The result of the large binary object support check, resulting from a passkey re
 struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput
 ```
 
-#### Overview
+## Overview
 
 This type indicates whether the passkey provider that manages the passkey supports the `largeBlob` extension. The design of this type mirrors the response in the WebAuthn specification.
 

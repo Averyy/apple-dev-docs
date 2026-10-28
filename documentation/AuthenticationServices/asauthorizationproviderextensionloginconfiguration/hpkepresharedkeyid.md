@@ -17,7 +17,7 @@ var hpkePreSharedKeyID: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * hpkePreSharedKeyID;
 ```
 
-#### Discussion
+## Discussion
 
 The PreSharedKey Id to be used for HPKE PSK or AuthPSK mode.  This is requred if the hpkePreSharedKey is set.
 

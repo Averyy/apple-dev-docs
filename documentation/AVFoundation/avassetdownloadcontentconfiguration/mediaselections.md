@@ -25,7 +25,7 @@ var mediaSelections: [AVMediaSelection] { get set }
 @property (nonatomic, copy) NSArray<AVMediaSelection *> * mediaSelections;
 ```
 
-#### Discussion
+## Discussion
 
 If your configuration doesn’t indicate a media selection, the system uses the asset’s automatic media selection.
 

@@ -21,7 +21,7 @@ var isBezeled: Bool { get set }
 @property (getter=isBezeled) BOOL bezeled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the progress indicator is bezeled.
 

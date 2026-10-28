@@ -23,7 +23,7 @@ class INRideCompletionStatus
 @interface INRideCompletionStatus : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INRideCompletionStatus`](./inridecompletionstatus.md) object contains detailed information about the status of a completed ride. Use this object to provide details about whether the ride was successful or canceled. You can also provide details related to the cost of the ride and whether the rider made payment.
 

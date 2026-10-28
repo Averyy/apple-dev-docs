@@ -10,7 +10,7 @@ Implement custom linear interpolation to prevent the ringing effects associated 
 - macOS 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 Most vImage geometry operations, such as scale and rotate, use a process known as *resampling* to prevent image artifacts. vImage resamples with kernels that combine data from a target pixel and other nearby pixels to calculate a value for the destination pixel.
 
@@ -18,7 +18,7 @@ Because resampling involves evaluating the kernel at fractional pixel locations,
 
 For most vImage geometric operations, vImage supplies a default resampling filter that is an implementation of the Lanczos resampling method. However, the Lanczos method can produce ringing effects near regions of high-frequency signals (that is, regions that contain a lot of pixel variation, such as the hard edges typical of line art). To correct this, this sample code app implements a linear interpolation as a custom resampling filter.
 
-##### Declare the resampling filter
+### Declare the resampling filter
 
 This app allows the user to toggle between the default resampling filter (Lanczos) and the custom resampling filter. The code declares the filter independently of initialization to support that functionality:
 
@@ -37,7 +37,7 @@ resamplingFilter = vImageNewResamplingFilter(scale,
 
 On return, `resamplingFilter` is an initialized Lanczos resampling filter with the specified scale factor.
 
-##### Use shear operations to scale an image
+### Use shear operations to scale an image
 
 The vImage shear functions accept the resampling filter and perform the scaling. The shear functions operate in one dimension at a time, so to scale an image in both dimensions, the sample code calls [`shear(direction:translate:slope:resamplingFilter:backgroundColor:destination:)`](./vimage/pixelbuffer/shear%28direction,translate,slope,resamplingfilter,backgroundcolor,destination%29-5busu.md) twice. The first call passes [`vImage.ShearDirection.vertical`](./vimage/sheardirection/vertical.md), and the second call passes [`vImage.ShearDirection.horizontal`](./vimage/sheardirection/horizontal.md).
 
@@ -69,7 +69,7 @@ On return of the horizontal shear function, `destinationBuffer` contains the sou
 
 The ringing artifacts appear as faint lines between the magnified dots.
 
-##### Write a linear resampling filter function
+### Write a linear resampling filter function
 
 The shear functions that scale an image are both 1D, and therefore the resampling filter function the sample code project creates is also 1D. The code applies the same filter function for both the vertical and horizontal passes.
 
@@ -122,7 +122,7 @@ Dividing each of the values in `kernelValues` by its sum returns the normalized 
 
 The values that the resampling function generates form a 1D convolution kernel that the shear functions use in a similar way to the 1D convolution described in [Blurring an image](./blurring-an-image.md). However, unlike the kernels used for convolution, the resampling kernel is suitable for use with fractional pixel positions.
 
-##### Allocate the resampling filter function memory
+### Allocate the resampling filter function memory
 
 The resampling function, the scale factor, and the kernel width combine to determine the memory that the resampling function requires. The sample code uses the [`vImageGetResamplingFilterSize(_:_:_:_:)`](./vimagegetresamplingfiltersize%28_,_,_,_%29.md) function to calculate the size in bytes, and the [`allocate(byteCount:alignment:)`](../Swift/unsafemutablerawpointer/allocate%28bytecount,alignment%29.md) function to allocate the necessary memory.
 
@@ -140,7 +140,7 @@ resamplingFilter = ResamplingFilter.allocate(byteCount: size,
 
 On return, `resamplingFilter` is a [`ResamplingFilter`](./resamplingfilter.md) structure, allocated with the correct amount of uninitialized memory.
 
-##### Create a linear resampling filter
+### Create a linear resampling filter
 
 The sample code calls [`vImageNewResamplingFilterForFunctionUsingBuffer(_:_:_:_:_:_:)`](./vimagenewresamplingfilterforfunctionusingbuffer%28_,_,_,_,_,_%29.md) to create the resampling filter and populate `resamplingFilter`.
 
@@ -181,7 +181,7 @@ The following shows the same image that the Lanczos example uses, also maginifed
 
 Linear resampling eliminates the ringing artifacts.
 
-##### Free the resampling filter memory
+### Free the resampling filter memory
 
 After the sample app is finished working with the resampling filter, it’s important that it frees the allocated memory. This process will vary depending on whether the code has used the default or a custom filter. The following code frees the memory for the default:
 

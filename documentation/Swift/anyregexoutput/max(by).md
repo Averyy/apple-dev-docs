@@ -22,11 +22,11 @@ Returns the maximum element in the sequence, using the given predicate as the co
 func max(by areInIncreasingOrder: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The sequence’s maximum element if the sequence is not empty; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 The predicate must be a *strict weak ordering* over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
 

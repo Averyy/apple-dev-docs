@@ -18,11 +18,11 @@ Obtain the result of the deserialization performed by createFromBytes().
 OSObjectPtr copyObject();
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSObject with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Obtain the result of the deserialization performed by createFromBytes().
 

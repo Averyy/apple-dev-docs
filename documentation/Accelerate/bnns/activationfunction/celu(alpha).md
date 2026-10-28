@@ -23,7 +23,7 @@ An activation function that evaluates the continuously differentiable exponentia
 case celu(alpha: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

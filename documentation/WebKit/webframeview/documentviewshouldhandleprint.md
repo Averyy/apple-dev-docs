@@ -19,7 +19,7 @@ var documentViewShouldHandlePrint: Bool { get }
 @property (nonatomic, readonly) BOOL documentViewShouldHandlePrint;
 ```
 
-#### Discussion
+## Discussion
 
 If this method returns [`false`](../../Swift/false.md), the application terminates its print operation and sends [`printDocumentView()`](./printdocumentview%28%29.md) to the web frame view.
 

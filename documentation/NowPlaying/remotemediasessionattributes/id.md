@@ -19,7 +19,7 @@ A stable, unique identifier for the session these attributes describe.
 var id: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this value to match session lifecycle events (start, update, end) and to route push tokens to the correct session.
 

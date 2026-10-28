@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withNetworkConnection<ApplicationProtocol>(to endpoint: NWEndpoint, @ProtocolStackBuilder<ApplicationProtocol> using builder: () -> ApplicationProtocol, _ handler: (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws where ApplicationProtocol : MultiplexProtocol
+nonisolated(nonsending)
+func withNetworkConnection<ApplicationProtocol>(to endpoint: NWEndpoint, @ProtocolStackBuilder<ApplicationProtocol> using builder: () -> ApplicationProtocol, _ handler: (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws where ApplicationProtocol : MultiplexProtocol
 ```
 
 

@@ -19,7 +19,7 @@ var canRequestStop: Bool { get }
 @property (readonly) BOOL canRequestStop;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the VM is in a state that allows it to stop running. Call the [`requestStop()`](./requeststop%28%29.md) method to ask the guest operating system to stop running.
 

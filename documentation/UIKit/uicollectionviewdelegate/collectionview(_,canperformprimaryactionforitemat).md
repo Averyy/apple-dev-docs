@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, canPerformPrima
 - (BOOL) collectionView:(UICollectionView *) collectionView canPerformPrimaryActionForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the primary action can be performed; otherwise, [`false`](../../Swift/false.md). If you don’t implement this method, the default return value is [`true`](../../Swift/true.md) when the collection view isn’t in an editing state, and [`false`](../../Swift/false.md) when it is.
 
-#### Discussion
+## Discussion
 
 Primary actions allow you to distinguish between a distinct user action and a change in selection (like a focus change or other indirect selection change). A primary action occurs when a person selects a single cell without extending an existing selection.
 

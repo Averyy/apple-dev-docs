@@ -20,7 +20,7 @@ Enqueues an array of command buffer instances for execution with a set of option
 func commit(_ commandBuffers: [any MTL4CommandBuffer], options: MTL4CommitOptions? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Provide an [`MTL4CommitOptions`](../mtl4commitoptions.md) instance to configure the commit operation.
 

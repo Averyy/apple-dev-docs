@@ -25,7 +25,7 @@ class UIPreviewAction
 @interface UIPreviewAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 A peek quick action typically selects a deep link to your app and has a title, a style, and a handler. Peeks and peek quick actions are available on devices that support 3D Touch.
 

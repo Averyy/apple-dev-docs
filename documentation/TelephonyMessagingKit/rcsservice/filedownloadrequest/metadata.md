@@ -15,7 +15,7 @@ A structure that contains download metadata from the content server.
 struct Metadata
 ```
 
-#### Overview
+## Overview
 
 You receive this type as the return value from the [`download(_:)`](../download%28_%29.md) method of [`RCSService`](../../rcsservice.md).
 

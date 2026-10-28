@@ -25,7 +25,7 @@ func ColorSyncAPIVersion() -> UInt32
 extern uint32_t ColorSyncAPIVersion();
 ```
 
-#### Return Value
+## Return Value
 
 The API version as a binary-coded decimal `uint32_t`. From most to least significant byte, the value encodes the major OS version, minor OS version, patch version, and API version — that is, `(major << 24) | (minor << 16) | (dot << 8) | (apiVersion & 0xFF)`.
 

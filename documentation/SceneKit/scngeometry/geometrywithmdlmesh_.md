@@ -21,11 +21,11 @@ Creates a geometry from the specified Model I/O mesh object.
 + (instancetype) geometryWithMDLMesh:(MDLMesh *) mdlMesh;
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry object.
 
-#### Discussion
+## Discussion
 
 The Model I/O framework provides universal support for import, export, description, and processing of several 3D asset file formats and related resources. (For details, see [Model I/O](../../ModelIO/ModelIO.md).) The [`MDLMesh`](../../ModelIO/mdlmesh.md) class is a generic description of a 3D object, with vertex buffers corresponding to SceneKit geometry sources, and submeshes corresponding to SceneKit geometry elements. Because Model I/O associates materials with a mesh through its submeshes, importing a [`MDLMesh`](../../ModelIO/mdlmesh.md) object imports the materials assigned to its submeshes to the corresponding locations in the SceneKit geometry’s [`materials`](./materials.md) array.
 

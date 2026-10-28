@@ -15,11 +15,11 @@ Starts playback if the player is ready, or resumes playback if the player is pau
 Boolean play();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the player starts or resumes playback; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If the playback completes, this method fires the `ended` event. If the playback is paused (and not resumed) or stopped, the `ended` event is not fired.
 

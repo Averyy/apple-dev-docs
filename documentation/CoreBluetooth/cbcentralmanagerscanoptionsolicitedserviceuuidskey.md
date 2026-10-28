@@ -25,7 +25,7 @@ let CBCentralManagerScanOptionSolicitedServiceUUIDsKey: String
 extern NSString * const CBCentralManagerScanOptionSolicitedServiceUUIDsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The array is an instance of [`NSArray`](../Foundation/nsarray.md), and uses [`CBUUID`](./cbuuid.md) objects to represent the UUIDs to scan for.
 

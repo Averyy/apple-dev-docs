@@ -19,7 +19,7 @@ case inset
 NSTableViewStyleInset
 ```
 
-#### Discussion
+## Discussion
 
 In the inset style, each row is inset from the edges of the table, and the row background and selection both adopt a rounded appearance. The inset style also applies standard horizontal and vertical insets around the table’s columns and rows.
 

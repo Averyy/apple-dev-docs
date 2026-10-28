@@ -19,7 +19,7 @@ var preservesSelection: Bool { get set }
 @property BOOL preservesSelection;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the selection is preserved, if possible. The default value is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 

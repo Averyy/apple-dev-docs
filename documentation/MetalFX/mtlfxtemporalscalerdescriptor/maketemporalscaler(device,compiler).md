@@ -23,7 +23,7 @@ func makeTemporalScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (a
 - (id<MTL4FXTemporalScaler>) newTemporalScalerWithDevice:(id<MTLDevice>) device compiler:(id<MTL4Compiler>) compiler;
 ```
 
-#### Return Value
+## Return Value
 
  A new temporal scaler instance upon success, or `nil` otherwise.
 

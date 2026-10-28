@@ -21,7 +21,7 @@ The kind of the region.
 var kind: ReservedRegion.Kind { get }
 ```
 
-#### Discussion
+## Discussion
 
 The kind tells you how to respond to the region. Place your content outside an [`occlusion`](./kind-swift.struct/occlusion.md) region, and arrange it on both sides of a [`division`](./kind-swift.struct/division.md) region.
 

@@ -22,11 +22,11 @@ optional func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forCom
 - (UIView *) pickerView:(UIPickerView *) pickerView viewForRow:(NSInteger) row forComponent:(NSInteger) component reusingView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A view object to use as the content of `row`. The object can be any subclass of [`UIView`](../uiview.md), such as [`UILabel`](../uilabel.md), [`UIImageView`](../uiimageview.md), or even a custom view.
 
-#### Discussion
+## Discussion
 
 If the previously used view (the `view` parameter) is adequate, return that. If you return a different view, the previously used view is released. The picker view centers the returned view in the rectangle for `row`.
 

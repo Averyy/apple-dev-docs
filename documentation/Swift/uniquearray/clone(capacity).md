@@ -21,7 +21,7 @@ Copy the contents of this array into a newly allocated unique array instance wit
 func clone(capacity: Int) -> UniqueArray<Element>
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(`count`)
 

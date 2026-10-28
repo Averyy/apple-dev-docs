@@ -21,7 +21,7 @@ Monitors a model container’s data stores for remote changes and notifies when 
 final class HistoryObserver
 ```
 
-#### Overview
+## Overview
 
 `HistoryObserver` automatically listens for `ModelContainer/remoteChange` notifications and determines whether the incoming changes are relevant based on the models you specify at initialization. When relevant changes are detected, the observer updates its [`eventCounter`](./historyobserver/eventcounter.md) property.
 

@@ -22,7 +22,7 @@ protocol PKIdentityDocumentDescriptor : NSObjectProtocol
 @protocol PKIdentityDocumentDescriptor <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A descriptor object describes the type of document that your app can request or check whether a document is available to request. For example, you use a [`PKIdentityDriversLicenseDescriptor`](./pkidentitydriverslicensedescriptor.md) to request information from a user’s driver’s license (or equivalent document).
 

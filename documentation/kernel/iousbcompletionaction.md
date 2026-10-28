@@ -15,7 +15,7 @@ A function the system calls when the USB input/output request completes.
 typedef void (*IOUSBCompletionAction)(void *target, void *parameter, IOReturn status, UInt32 bufferSizeRemaining);
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this function when the USB input/output request completes.
 

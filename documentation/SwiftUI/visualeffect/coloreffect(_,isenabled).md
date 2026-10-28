@@ -20,11 +20,11 @@ Returns a new visual effect that applies `shader` to `self` as a filter effect o
 func colorEffect(_ shader: Shader, isEnabled: Bool = true) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 A new view that renders `self` with the shader applied as a color filter.
 
-#### Discussion
+## Discussion
 
 For a shader function to act as a color filter it must have a function signature matching:
 

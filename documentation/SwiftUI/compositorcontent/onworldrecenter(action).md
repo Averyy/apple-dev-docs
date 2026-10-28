@@ -24,7 +24,7 @@ nonisolated
 func onWorldRecenter(action: @escaping @MainActor (WorldRecenterPhase) -> Void) -> some CompositorContent
 ```
 
-#### Discussion
+## Discussion
 
 When the user recenters their content, the app will fade out and then be repositioned. Once it has been repositioned, the action will be called and the app will fade back in. The action will be called if the app is not backgrounded or suspended.
 

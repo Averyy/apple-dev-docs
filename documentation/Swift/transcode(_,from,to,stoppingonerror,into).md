@@ -21,11 +21,11 @@ Translates the given input from one Unicode encoding to another by calling the g
 func transcode<Input, InputEncoding, OutputEncoding>(_ input: Input, from inputEncoding: InputEncoding.Type, to outputEncoding: OutputEncoding.Type, stoppingOnError stopOnError: Bool, into processCodeUnit: (OutputEncoding.CodeUnit) -> Void) -> Bool where Input : IteratorProtocol, InputEncoding : _UnicodeEncoding, OutputEncoding : _UnicodeEncoding, Input.Element == InputEncoding.CodeUnit
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the translation detected encoding errors in `input`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The following example transcodes the UTF-8 representation of the string `"Fermata 𝄐"` into UTF-32.
 

@@ -19,7 +19,7 @@ var rotationInDegrees: CGFloat { get set }
 @property CGFloat rotationInDegrees;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the current rotation in effect for the gesture. Changing the value in this property also updates the value in the [`rotation`](./rotation.md) property.
 

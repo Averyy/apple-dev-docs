@@ -15,7 +15,7 @@ A window style which displays the title bar section of the window.
 struct TitleBarWindowStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`titleBar`](./windowstyle/titlebar.md) to construct this style.
 

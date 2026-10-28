@@ -20,7 +20,7 @@ object SubscriptionBuyLineItem
 - [Reporting tokens with transactions](./reportwithtransactions.md)
 - [Reporting corrections](./reportcorrections.md)
 
-#### Discussion
+## Discussion
 
 Use a `SubscriptionBuyLineItem` to report a subscription-related transaction or event, or a correction to the same.
 

@@ -20,7 +20,7 @@ var childCount: Int { get }
 @property (readonly) NSUInteger childCount;
 ```
 
-#### Discussion
+## Discussion
 
 This receiver should be an `NSXMLNode` object representing a document, element, or document type declaration. For performance reasons, use this method instead of getting the count from the array returned by [`children`](./children.md) (for example, `[[thisNode children] count`]).
 

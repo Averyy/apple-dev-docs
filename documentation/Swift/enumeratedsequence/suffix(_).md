@@ -21,7 +21,7 @@ Returns a subsequence, up to the given maximum length, containing the final elem
 func suffix(_ maxLength: Int) -> [Self.Element]
 ```
 
-#### Discussion
+## Discussion
 
 The sequence must be finite. If the maximum length exceeds the number of elements in the sequence, the result contains all the elements in the sequence.
 

@@ -20,7 +20,7 @@ Imports a custom IBL texture.
 final func importCustomIBLTexture(data: Data) throws -> USDPlayer.TextureData
 ```
 
-#### Discussion
+## Discussion
 
 Expects input data from an HDR image.
 

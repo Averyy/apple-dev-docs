@@ -10,11 +10,11 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Control the build configuration for your app or package.
 
-#### Overview
+## Overview
 
 Package manager supports two general build configurations: Debug (default) and Release.
 
-##### Debug
+### Debug
 
 By default, running `swift build` builds the package using its debug configuration. Alternatively, you can use `swift build -c debug`. Package manager locates the build artifacts in a directory called `debug` under the `.build` folder. When building in the debug configuration, a Swift target uses the following Swift compiler flags:
 
@@ -27,7 +27,7 @@ A C language target in the debug configuration uses the following flags:
 - `-O0`: Compile without any optimization.
 - `-g`: Generate debug information.
 
-##### Release
+### Release
 
 To build in release mode, type `swift build -c release`. Package manager locates the build artifacts in a directory called `release` under the `.build` folder. When building in the release configuration, a Swift target uses the following Swift compiler flags:
 
@@ -38,7 +38,7 @@ A C language target in the release configuration uses the following flags:
 
 - `-O2`: Compile with optimizations.
 
-##### Additional Flags
+### Additional Flags
 
 You can pass additional flags to the C, C++, or Swift compilers in three different ways:
 

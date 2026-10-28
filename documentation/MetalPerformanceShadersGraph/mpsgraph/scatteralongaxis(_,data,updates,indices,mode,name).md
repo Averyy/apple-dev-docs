@@ -24,11 +24,11 @@ func scatterAlongAxis(_ axis: Int, data dataTensor: MPSGraphTensor, updates upda
 - (MPSGraphTensor *) scatterAlongAxis:(NSInteger) axis withDataTensor:(MPSGraphTensor *) dataTensor updatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor mode:(MPSGraphScatterMode) mode name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Scatter values from `updatesTensor` along the specified `axis` at indices in `indicesTensor` onto `dataTensor`. Values in `dataTensor` are updated following `mode`. See MPSGraphScatterMode. The shape of `updatesTensor` and `indicesTensor` must match. The shape of `dataTensor` must match except at `axis`. If an index is out of bounds of `shape` along `axis` the update value is skipped. For example,
 

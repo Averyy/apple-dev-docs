@@ -24,7 +24,7 @@ func MTLIOFlushAndDestroyCompressionContext(_ context: MTLIOCompressionContext) 
 extern MTLIOCompressionStatus MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext context);
 ```
 
-#### Return Value
+## Return Value
 
 An [`MTLIOCompressionStatus`](./mtliocompressionstatus.md) instance.
 

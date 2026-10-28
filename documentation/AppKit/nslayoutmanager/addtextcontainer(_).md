@@ -19,7 +19,7 @@ func addTextContainer(_ container: NSTextContainer)
 - (void) addTextContainer:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 Invalidates glyphs and layout as needed, but doesn’t perform glyph generation or layout.
 

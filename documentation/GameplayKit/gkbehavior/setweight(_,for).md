@@ -24,7 +24,7 @@ func setWeight(_ weight: Float, for goal: GKGoal)
 - (void) setWeight:(float) weight forGoal:(GKGoal *) goal;
 ```
 
-#### Discussion
+## Discussion
 
 When an agent evaluates its behavior, it examines each goal and calculates the change in direction and speed necessary to move toward fulfilling that goal (within the limits of the current time step and the agent’s maximum speed and turn rate). The agent then combines these influences to determine the total change in direction and speed for the current time step. To modulate the effects of multiple goals in a behavior, use this method to increase or decrease the relative influence of each.
 

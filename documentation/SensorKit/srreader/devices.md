@@ -17,15 +17,15 @@ Returns device information for all devices that have stored data for the given s
 final var devices: [SRDevice] { get async throws }
 ```
 
-#### Return Value
+## Return Value
 
 An array of `SRDevice` objects representing available sensor devices
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the request failed
 
-#### Example
+## Example
 
 ```swift
 do {

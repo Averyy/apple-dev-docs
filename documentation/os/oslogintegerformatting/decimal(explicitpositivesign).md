@@ -21,7 +21,7 @@ Creates a decimal format with custom handling of the numerical sign.
 static func decimal(explicitPositiveSign: Bool = false) -> OSLogIntegerFormatting
 ```
 
-#### Return Value
+## Return Value
 
 A custom decimal format for integers.
 

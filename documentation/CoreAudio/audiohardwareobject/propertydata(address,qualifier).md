@@ -16,7 +16,7 @@ Queries an AudioHardwareObject to get the data of the given property.
 func propertyData(address: AudioObjectPropertyAddress, qualifier: Data? = nil) throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 A buffer containing the data for the given property
 

@@ -19,7 +19,7 @@ func CTFontCollectionCreateMatchingFontDescriptorsForFamily(_ collection: CTFont
 extern CFArrayRefCTFontCollectionCreateMatchingFontDescriptorsForFamily(CTFontCollectionRef collection, CFStringRef familyName, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CTFontDescriptor`](./ctfontdescriptor.md) objects that match the specified family in the collection, or `NULL` if there are none.
 

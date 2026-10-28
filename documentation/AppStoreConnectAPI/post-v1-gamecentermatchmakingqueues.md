@@ -9,9 +9,9 @@ Create a queue and add it to a rule set.
 **Availability**:
 - App Store Connect API 3.1+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

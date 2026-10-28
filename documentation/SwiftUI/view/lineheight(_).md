@@ -22,7 +22,7 @@ nonisolated
 func lineHeight(_ lineHeight: AttributedString.LineHeight?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. In that case, SwiftUI automatically chooses an appropriate line height setting for each context.
 

@@ -28,13 +28,13 @@ protocol ExpressibleByConfigString : CustomStringConvertible
 
 - [Choosing reader methods](./choosing-reader-methods.md)
 
-#### Overview
+## Overview
 
 Conform your custom types to this protocol to enable automatic conversion when using the `as:` parameter with configuration reader methods such as [`string(forKey:as:isSecret:fileID:line:)`](./configreader/string%28forkey,as,issecret,fileid,line%29-4oust.md).
 
 > 💡 **Tip**: If your type is a string-based enum, you don’t need to explicitly conform it to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md), as the same conversions work for types that conform to `RawRepresentable` with a `String` raw value automatically.
 
-#### Custom types
+## Custom types
 
 For other custom types, conform to the protocol [`ExpressibleByConfigString`](./expressiblebyconfigstring.md) by providing a failable initializer and the `description` property:
 
@@ -55,7 +55,7 @@ let config = ConfigReader(provider: EnvironmentVariablesProvider())
 let dbUrl = config.string(forKey: "database.url", as: DatabaseURL.self)
 ```
 
-#### Built-in conformances
+## Built-in conformances
 
 The following Foundation types already conform to [`ExpressibleByConfigString`](./expressiblebyconfigstring.md):
 

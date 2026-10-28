@@ -24,7 +24,7 @@ func removeAllDeliveredNotifications()
 - (void) removeAllDeliveredNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove all of your app’s delivered notifications from Notification Center. The method executes asynchronously, returning immediately and removing the identifiers on a background thread. This method does not affect any notification requests that are scheduled, but have not yet been delivered.
 

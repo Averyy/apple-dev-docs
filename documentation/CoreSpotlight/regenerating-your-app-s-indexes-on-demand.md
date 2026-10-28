@@ -5,13 +5,13 @@
 
 Create an app extension to maintain your app’s indexes and regenerate them as needed.
 
-#### Overview
+## Overview
 
 Keeping your app’s indexes up to date requires periodic maintenance. An app that crashes while updating its index might leave that index in an incorrect state. The system can also ask your app to regenerate the index if it’s missing or needs updated data. If your app isn’t running when the system needs these updates, it uses your reindexing app extension to generate them instead.
 
 A reindexing app extension is an important tool for keeping your indexes up to date at all times. Include this app extension in your app bundle, and make sure it has access to all of your app’s indexable data.
 
-##### Add a reindexing app extension to your app
+### Add a reindexing app extension to your app
 
 Xcode provides a template to make it easy to add a reindexing app extension to your app. Add this template to your project using the following steps:
 
@@ -49,7 +49,7 @@ class MyIndexingExtension: CSIndexExtensionRequestHandler {
 
 For information about how to add content to your app’s indexes, see [Adding your app’s content to Spotlight indexes](./adding-your-app-s-content-to-spotlight-indexes.md).
 
-##### Debug your app extension code
+### Debug your app extension code
 
 Verify your app extension behaves as expected using the Xcode debugger. Start by building your app extension and attaching the debugger to it.
 

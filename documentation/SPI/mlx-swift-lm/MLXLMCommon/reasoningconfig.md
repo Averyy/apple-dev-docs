@@ -17,7 +17,7 @@ Describes a model’s reasoning (chain-of-thought) protocol: the delimiters that
 struct ReasoningConfig
 ```
 
-#### Overview
+## Overview
 
 Rides on [`ModelConfiguration`](./modelconfiguration.md) (and therefore [`ResolvedModelConfiguration`](./resolvedmodelconfiguration.md)) so it reaches generation-time code via `ModelContext.configuration`, exactly like [`ToolCallFormat`](./toolcallformat.md).
 

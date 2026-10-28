@@ -11,7 +11,7 @@ Migrate your project to upcoming language features.
 
 Upcoming language features can be enabled in the Swift compiler via a `-enable-upcoming-feature <FeatureName>` flag. Some of these features also support a migration mode. This mode does not actually enable the desired feature. Instead, it produces compiler warnings with the necessary fix-its to make the existing code both source- and binary-compatible with the feature. The exact semantics of such a migration is dependent on the feature, see their [corresponding documentation](https://docs.swift.org/compiler/documentation/diagnostics/upcoming-language-features) for more details.
 
-#### SwiftPM
+## SwiftPM
 
 > **Note**: This feature is in active development. Test with a [nightly snapshot](https://www.swift.org/install) for best results.
 

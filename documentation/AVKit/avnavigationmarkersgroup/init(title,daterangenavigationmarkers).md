@@ -19,11 +19,11 @@ init(title: String?, dateRangeNavigationMarkers navigationMarkers: [AVDateRangeM
 - (instancetype) initWithTitle:(NSString *) title dateRangeNavigationMarkers:(NSArray<AVDateRangeMetadataGroup *> *) navigationMarkers;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation markers group.
 
-#### Discussion
+## Discussion
 
 To associate marker groups with an asset for playback, use the [`navigationMarkerGroups`](../../AVFoundation/avplayeritem/navigationmarkergroups.md) property of an [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) object.
 

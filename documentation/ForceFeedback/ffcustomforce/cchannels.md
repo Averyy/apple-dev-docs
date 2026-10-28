@@ -20,7 +20,7 @@ var cChannels: DWORD
 DWORD cChannels;
 ```
 
-#### Discussion
+## Discussion
 
 The first channel is applied to the first axis associated with the effect, the second to the second, and so on. If there are fewer channels than axes, nothing is associated with the extra axes.
 

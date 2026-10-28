@@ -32,7 +32,7 @@ var suggestedInvocationPhrase: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * suggestedInvocationPhrase;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays the suggested invocation phrase to the user when they create the shortcut. Use a short, memorable phrase, such as “Soup time”.
 

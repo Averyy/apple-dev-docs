@@ -17,7 +17,7 @@ A protocol to notify your app’s user interface about NFC-related events.
 protocol NFCWindowSceneDelegate
 ```
 
-#### Overview
+## Overview
 
 When the device is eligible to receive NFC-related events, use this protocol to update your user interface. The received [`NFCWindowSceneEvent`](./nfcwindowsceneevent.md) indicates whether the event represents the presence of a card reader or a gesture to initiate a contactless transaction by the person using the app.
 

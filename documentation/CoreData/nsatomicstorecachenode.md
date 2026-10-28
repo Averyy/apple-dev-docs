@@ -25,7 +25,7 @@ class NSAtomicStoreCacheNode
 @interface NSAtomicStoreCacheNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 A node represents a single record in a persistent store.
 

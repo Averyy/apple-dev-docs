@@ -21,7 +21,7 @@ The accessibility element frequently updates its label or value.
 static let updatesFrequently: AccessibilityTraits
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait when you want an assistive technology to poll for changes when it needs updated information. For example, you might use this trait to characterize the readout of a stopwatch.
 

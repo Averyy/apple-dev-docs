@@ -21,7 +21,7 @@ The block to execute when a record no longer exists.
 @property (nonatomic, copy, nullable) void (^recordWithIDWasDeletedBlock)(CKRecordID *recordID, CKRecordType recordType);
 ```
 
-#### Discussion
+## Discussion
 
 The block returns no value and takes the following parameters:
 

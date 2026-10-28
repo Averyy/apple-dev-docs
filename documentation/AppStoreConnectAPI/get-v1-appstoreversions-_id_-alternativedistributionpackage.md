@@ -9,9 +9,9 @@ Read the alternative distribution package for a specific App Store version.
 **Availability**:
 - App Store Connect API 3.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

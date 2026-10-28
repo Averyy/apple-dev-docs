@@ -27,7 +27,7 @@ func CVBufferGetAttachment(_ buffer: CVBuffer, _ key: CFString, _ attachmentMode
 extern CFTypeRefCVBufferGetAttachment(CVBufferRef buffer, CFStringRef key, CVAttachmentMode *attachmentMode);
 ```
 
-#### Return Value
+## Return Value
 
 The specified attachment, if it exists.
 

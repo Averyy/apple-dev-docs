@@ -23,7 +23,7 @@ A Boolean value indicating whether the request should transmit before the previo
 var httpShouldUsePipelining: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 HTTP/2 and later ignore this property. HTTP/1.1 only considers this property in the classic loading mode (`usesClassicLoadingMode`).
 

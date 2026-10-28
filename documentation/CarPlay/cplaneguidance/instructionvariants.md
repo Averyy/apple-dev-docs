@@ -21,7 +21,7 @@ var instructionVariants: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * instructionVariants;
 ```
 
-#### Discussion
+## Discussion
 
 You need to provide at least one variant. Provide the variant strings as localized, displayable content.
 

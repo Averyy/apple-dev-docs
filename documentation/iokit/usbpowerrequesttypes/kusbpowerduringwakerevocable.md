@@ -14,7 +14,7 @@
 kUSBPowerDuringWakeRevocable = 6
 ```
 
-#### Discussion
+## Discussion
 
 The power is to be used while the system is awake (i.e not sleeping), but can be taken away (via the kUSBPowerRequestWakeRelease message). The system can then allocate that extra power to another device.
 

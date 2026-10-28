@@ -17,7 +17,7 @@ A structure containing configuration information of the customer device.
 final var customerConfiguration: CustomerEngagementSession.CustomerConfiguration? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is available after the [`CustomerEngagementSession.Event.ready`](./event/ready.md) event.
 

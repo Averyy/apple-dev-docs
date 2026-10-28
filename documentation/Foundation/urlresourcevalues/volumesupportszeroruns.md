@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume keeps track of allocated but u
 var volumeSupportsZeroRuns: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For security reasons, parts of a file that were never written to appear to contain zeroes.
 

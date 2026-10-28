@@ -22,11 +22,11 @@ func GLKQuaternionConjugate(_ quaternion: GLKQuaternion) -> GLKQuaternion
 static GLKQuaternion GLKQuaternionConjugate(GLKQuaternion quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion that is the conjugate of the source quaternion.
 
-#### Discussion
+## Discussion
 
 The conjugate of a quaternion has the same scalar value, but the signs of the vector components are flipped.
 

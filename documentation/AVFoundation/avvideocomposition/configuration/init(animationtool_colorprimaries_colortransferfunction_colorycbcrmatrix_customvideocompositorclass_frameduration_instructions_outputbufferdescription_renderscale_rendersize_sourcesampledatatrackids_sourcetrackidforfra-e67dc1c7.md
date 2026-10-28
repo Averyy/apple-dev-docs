@@ -23,4 +23,4 @@ init(animationTool: AVVideoCompositionCoreAnimationTool? = nil, colorPrimaries: 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avvideocomposition/configuration/init(animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:renderscale:rendersize:sourcesampledatatrackids:sourcetrackidforframetiming:spatialvideoc-j1vm)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avvideocomposition/configuration/init%28animationtool:colorprimaries:colortransferfunction:colorycbcrmatrix:customvideocompositorclass:frameduration:instructions:outputbufferdescription:renderscale:rendersize:sourcesampledatatrackids:sourcetrackidforframetiming:spatialvideoc-j1vm)*

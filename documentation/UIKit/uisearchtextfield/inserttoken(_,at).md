@@ -22,7 +22,7 @@ func insertToken(_ token: UISearchToken, at tokenIndex: Int)
 - (void) insertToken:(UISearchToken *) token atIndex:(NSInteger) tokenIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re converting part of the search field’s text into a token, use [`replaceTextualPortion(of:with:at:)`](./replacetextualportion%28of,with,at%29.md).
 

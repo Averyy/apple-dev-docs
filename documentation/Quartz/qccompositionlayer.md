@@ -21,7 +21,7 @@ class QCCompositionLayer
 @interface QCCompositionLayer : CAOpenGLLayer
 ```
 
-#### Overview
+## Overview
 
 The composition tracks the Core Animation layer time and is rendered directly at the current dimensions of the [`QCCompositionLayer`](./qccompositionlayer.md) object.
 

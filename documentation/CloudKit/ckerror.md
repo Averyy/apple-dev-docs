@@ -25,7 +25,7 @@ struct CKError
 
 - [Designing and Creating a CloudKit Database](./designing-and-creating-a-cloudkit-database.md)
 
-#### Overview
+## Overview
 
 CloudKit provides operations that faciliate moving data between your app and iCloud. There are also convenience methods in [`CKContainer`](./ckcontainer.md) and [`CKDatabase`](./ckdatabase.md) that provide similar functionality. If an operation or method fails to complete its task, CloudKit provides detailed error information that you can use to recover. A failure might be due to network or server conditions, or because of conflicts between local and remote data. For a list of possible reasons, see [`CKError.Code`](./ckerror/code.md).
 

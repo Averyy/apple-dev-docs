@@ -22,7 +22,7 @@ let AVAudioSessionMicrophoneInjectionIsAvailableKey: String
 extern NSString * const AVAudioSessionMicrophoneInjectionIsAvailableKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSNumber`](../Foundation/nsnumber.md) that represents a Boolean value.
 

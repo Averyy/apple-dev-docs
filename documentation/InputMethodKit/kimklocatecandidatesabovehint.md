@@ -17,7 +17,7 @@ var kIMKLocateCandidatesAboveHint: Int { get }
 kIMKLocateCandidatesAboveHint
 ```
 
-#### Discussion
+## Discussion
 
 Place the candidates window above the start of the current text selection.
 

@@ -15,7 +15,7 @@ The request body that contains subscription-renewal-extension data for an indivi
 object ExtendRenewalDateRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) endpoint.
 

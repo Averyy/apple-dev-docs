@@ -21,7 +21,7 @@ static let visits: SRSensor
 extern SRSensor const SRSensorVisits;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRVisit`](../srvisit.md).
 

@@ -26,11 +26,11 @@ class func predicateForCategorySamples(with operatorType: NSComparisonPredicate.
 + (NSPredicate *) predicateForCategorySamplesWithOperatorType:(NSPredicateOperatorType) operatorType value:(NSInteger) value;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches category samples based on the provided expression. This predicate works only with category samples.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that checks a category sample’s value. The following listing uses both the convenience method and a predicate format string to create equivalent predicates.
 

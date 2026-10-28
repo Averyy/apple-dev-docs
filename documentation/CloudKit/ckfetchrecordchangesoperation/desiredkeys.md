@@ -25,7 +25,7 @@ var desiredKeys: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * desiredKeys;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the amount of data that the system retrieves for each record during the fetch operation. This property contains an array of strings, each of which contains the name of a field from the target records. When you retrieve a record, the returned records only include fields with names that match one of the keys in this property. The default value is `nil`, which causes the system to fetch all keys of the record.
 

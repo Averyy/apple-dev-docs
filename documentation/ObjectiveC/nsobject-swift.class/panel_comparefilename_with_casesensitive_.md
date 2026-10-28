@@ -17,17 +17,17 @@ Controls the ordering of files presented by the `NSSavePanel` object specified.
 - (NSComparisonResult) panel:(id) sender compareFilename:(NSString *) name1 with:(NSString *) name2 caseSensitive:(BOOL) caseSensitive;
 ```
 
-#### Return Value
+## Return Value
 
 One of the following:
 
-#### Discussion
+## Discussion
 
 - `NSOrderedAscending` if `fileName1` should precede `fileName2`
 - `NSOrderedSame` if the two names are equivalent
 - `NSOrderedDescending` if `fileName2` should precede `fileName1`
 
-#### Discussion
+## Discussion
 
 Don’t reorder filenames in the Save panel without good reason, because it may confuse the user to have files in one Save panel or Open panel ordered differently than those in other such panels or in the Finder. The default behavior of Save and Open panels is to order files as they appear in the Finder. Note also that by implementing this method you will reduce the operating performance of the panel.
 

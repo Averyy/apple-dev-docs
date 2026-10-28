@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INGetVisualCodeIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t generate the visual code until the user provides additional information in your app. Don’t use this code for general errors or to force the user to launch your app.
 

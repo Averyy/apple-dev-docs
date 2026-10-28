@@ -25,7 +25,7 @@ func NSEnumerateHashTable(_ table: NSHashTable<AnyObject>) -> NSHashEnumerator
 extern NSHashEnumerator NSEnumerateHashTable(NSHashTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 An NSHashEnumerator structure that will cause successive elements of `table` to be returned each time this enumerator is passed to `NSNextHashEnumeratorItem`.
 

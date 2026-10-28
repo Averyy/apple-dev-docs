@@ -20,7 +20,7 @@ The current content configuration of the cell.
 @preconcurrency var contentConfiguration: (any UIContentConfiguration)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Using a content configuration, you can set the cell’s content and styling for a variety of different cell states.
 

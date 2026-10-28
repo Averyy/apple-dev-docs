@@ -21,7 +21,7 @@ A type encapsulating the state of a single hinge.
 struct DeviceHinge
 ```
 
-#### Overview
+## Overview
 
 A hinge provides its angle along with a status determined by the system based on the current angle and device orientation. You use this type with the `View/onHingeChange(_:)` modifier.
 

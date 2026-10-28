@@ -15,7 +15,7 @@ Sets the output latency of the clock device.
 kern_return_t SetOutputLatency(uint32_t in_latency);
 ```
 
-#### Discussion
+## Discussion
 
 Drivers can change the latency of the clock device dynamically. The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 

@@ -19,11 +19,11 @@ func getResults() -> [Any]!
 - (NSArray *) getResults;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSArray of IOBluetoothDevice objects of devices that were paired. If the user cancelled the panel, nil will be returned.
 
-#### Discussion
+## Discussion
 
 There will only be results if the panel has been run, the user has successfully made a selection, that selection has been validated and the selected device paired. If kIOBluetoothUISuccess was returned for the session, there should be valid results. Currently only a single device is allowed to be selected, so the results array will only contain one object. However in the future multiple selection may be supported.
 

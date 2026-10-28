@@ -17,7 +17,7 @@ Returns the width of the scroller based on `controlSize` and assuming a scroller
 + (CGFloat) scrollerWidthForControlSize:(NSControlSize) controlSize;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values for `controlSize` are described in [`NSControl.ControlSize`](../nscontrol/controlsize-swift.enum.md) (`NSCell`).
 

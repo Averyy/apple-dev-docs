@@ -25,7 +25,7 @@ init(adjacency: SKTileAdjacencyMask, tileDefinitions: [SKTileDefinition])
 - (instancetype) initWithAdjacency:(SKTileAdjacencyMask) adjacency tileDefinitions:(NSArray<SKTileDefinition *> *) tileDefinitions;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile group rule.
 

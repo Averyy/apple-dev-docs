@@ -19,7 +19,7 @@ init(table: NSTextTable, startingRow row: Int, rowSpan: Int, startingColumn colu
 - (instancetype) initWithTable:(NSTextTable *) table startingRow:(NSInteger) row rowSpan:(NSInteger) rowSpan startingColumn:(NSInteger) column columnSpan:(NSInteger) columnSpan;
 ```
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

@@ -13,7 +13,7 @@
 MBUF_LOOP = 0x0040
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this packet is looped back.
 

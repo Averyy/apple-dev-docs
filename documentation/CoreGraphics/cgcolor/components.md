@@ -21,7 +21,7 @@ Returns the values of the color components (including alpha) associated with a c
 var components: [CGFloat]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 An array of intensity values for the color components (including alpha) associated with the specified color. The size of the array is equal to the color’s [`numberOfComponents`](./numberofcomponents.md) value.
 

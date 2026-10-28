@@ -10,7 +10,7 @@ Show a specific area of a video by using timed display mask rectangle metadata.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 A QuickTime movie can provide display mask rectangle metadata that indicates the area of a video to show during playback. On visionOS 26 and later, the system reads this metadata and crops the video to the specified display area and renders the area outside the display mask as transparent. You can use a display mask to remove the encoded black letterbox or pillarbox at rendering time, or dynamically change the visible portion of a video for creative effects.
 
@@ -32,7 +32,7 @@ The screen recordings below show how the display mask rectangle metadata (two ty
 
 > **Note**: For information on the details of this metadata type, see [Rectangular Mask Payload Metadata within the QuickTime Movie File Format - Format addition](https://developer.apple.com/av-foundation/Rectangular-Dynamic-Mask-Metadata.pdf).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 The sample requires three arguments:
 
@@ -49,7 +49,7 @@ The `display-mask-type` argument indicates the display mask to write to the movi
 - Type 1 display mask is a static square that’s 75 percent of the shorter side of the video’s dimensions, and centered on the video frame for the entire duration of the movie. For example, if the video’s dimensions are 1920 x 1080, then the display mask is 810 x 810 (1080 `*` 0.75 = 810), and centered at (960, 540).
 - Type 2 display mask is a per-frame square mask that’s 30 percent of the shorter side of the video’s dimensions, and moves across the video frame. This type illustrates dynamic display mask metadata that updates at the associated video track’s frame rate.
 
-#### Set up a display mask rectangle metadata track
+## Set up a display mask rectangle metadata track
 
 The sample provides a `MovieProcessor` class that contains the app’s metadata processing logic. When you run the app, it passes the command-line arguments you specify to the `MovieProcessor` class’s `processMovie(inputPath:outputPath:displayMaskType:)` method. This method sets up the reading and writing functionality using [`AVAssetReader`](./avassetreader.md) and [`AVAssetWriter`](./avassetwriter.md), respectively.
 
@@ -111,7 +111,7 @@ if writer.canAdd(metadataInput) {
 }
 ```
 
-#### Write display mask rectangle metadata
+## Write display mask rectangle metadata
 
 The `setupDisplayMaskMetadataTransfer(videoInfo:maskType:)` method handles writing the display mask metadata samples to the timed metadata track. This method uses the video track’s dimensions to calculate the raster rectangle parameters and writes the metadata samples using the adaptor created earlier.
 

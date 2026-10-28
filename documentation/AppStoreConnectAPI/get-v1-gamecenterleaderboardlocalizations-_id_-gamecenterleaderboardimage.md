@@ -11,9 +11,9 @@ Get information about the image associated with a leaderboard localization.
 
 > **Deprecated**: This endpoint is deprecated.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -17,7 +17,7 @@ func readRSSI(forDeviceComplete controller: Any!, device: IOBluetoothDevice!, in
 - (void) readRSSIForDeviceComplete:(id) controller device:(IOBluetoothDevice *) device info:(BluetoothHCIRSSIInfo *) info error:(IOReturn) error;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate gets invoked when an RSSI command complete event occurs. This could occur because you invoked it by issuing a `-readRSSIForDevice:` command, or someone else did from another app on the same controller.
 

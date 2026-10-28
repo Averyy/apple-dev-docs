@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, didMove marker: NSRulerMarker)
 - (void) rulerView:(NSRulerView *) ruler didMoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 The client can take whatever action it needs based on this message, such as updating the location of a tab stop in the selected paragraph, moving a layout guideline, or resizing a graphics element.
 

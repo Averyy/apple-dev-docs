@@ -20,7 +20,7 @@ Predefined transcriber configurations.
 struct Preset
 ```
 
-#### Overview
+## Overview
 
 You can configure a transcriber with a preset, or modify the values of a preset’s properties and configure a transcriber with the modified values. You can also create your own presets by extending this type.
 

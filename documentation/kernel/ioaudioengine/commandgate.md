@@ -9,7 +9,7 @@
 IOCommandGate *commandGate;
 ```
 
-#### Overview
+## Overview
 
 The IOCommandGate for this audio engine - attached to the driver's IOWorkLoop.
 

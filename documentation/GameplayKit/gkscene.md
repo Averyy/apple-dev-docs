@@ -24,7 +24,7 @@ class GKScene
 @interface GKScene : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you create a scene in the Xcode SpriteKit scene editor, Xcode automatically creates a [`GKScene`](./gkscene.md) object to manage any GameplayKit objects you add to the scene (entities, components, or pathfinding graphs) and archive them alongside the SpriteKit scene content.
 

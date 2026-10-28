@@ -24,7 +24,7 @@ class CMLogItem
 @interface CMLogItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CMLogItem` class defines a read-only [`timestamp`](./cmlogitem/timestamp.md) property that records the time a motion-event measurement was taken.
 

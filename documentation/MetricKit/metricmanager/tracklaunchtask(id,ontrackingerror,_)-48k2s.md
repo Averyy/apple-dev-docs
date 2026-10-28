@@ -23,7 +23,7 @@ final func trackLaunchTask<Result, Failure>(id: LaunchTaskID, onTrackingError: (
 
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Use this method to wrap asynchronous work that extends your app’s perceived launch time, such as fetching configuration data, loading initial content, or initializing a local database. Pass a [`LaunchTaskID`](../launchtaskid.md) and an `async` closure wrapping the work to measure. Measurement begins when the closure starts and ends it when the closure returns,  regardless of whether the closure throws.
 

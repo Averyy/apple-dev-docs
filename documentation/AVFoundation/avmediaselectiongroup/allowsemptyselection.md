@@ -25,7 +25,7 @@ var allowsEmptySelection: Bool { get }
 @property (nonatomic, readonly) BOOL allowsEmptySelection;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), you can deselect all of the available media options in the group by passing `nil` as the specified [`AVMediaSelectionOption`](../avmediaselectionoption.md) object to [`select(_:in:)`](../avplayeritem/select%28_,in%29.md).
 

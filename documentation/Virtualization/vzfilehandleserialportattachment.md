@@ -19,7 +19,7 @@ class VZFileHandleSerialPortAttachment
 @interface VZFileHandleSerialPortAttachment : VZSerialPortAttachment
 ```
 
-#### Overview
+## Overview
 
 Use a [`VZFileHandleSerialPortAttachment`](./vzfilehandleserialportattachment.md) object to configure a serial port using separate file handles for reading and writing data. In your virtual machine, use the file handles in this object in the following way:
 

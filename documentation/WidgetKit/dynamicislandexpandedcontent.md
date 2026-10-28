@@ -16,7 +16,7 @@ A view that describes the expanded presentation of a Live Activity that appears 
 struct DynamicIslandExpandedContent<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 This view holds the intermediate content for the [`DynamicIslandExpandedContentBuilder`](./dynamicislandexpandedcontentbuilder.md).
 

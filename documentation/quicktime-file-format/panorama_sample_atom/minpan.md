@@ -6,7 +6,7 @@
 
 The minimum pan angle, in degrees.
 
-#### Overview
+## Overview
 
 For a full panorama, the value of this field is usually `0.0`.
 

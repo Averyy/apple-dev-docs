@@ -30,7 +30,7 @@ func handle(intent: INSetTaskAttributeIntent) async -> INSetTaskAttributeIntentR
 - (void) handleSetTaskAttribute:(INSetTaskAttributeIntent *) intent completion:(void (^)(INSetTaskAttributeIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, update the task based on the information in the intent parameter, create a response object with the relevant details, and call the provided completion handler.
 

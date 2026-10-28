@@ -23,7 +23,7 @@ func completeRequest(withSelectedCredential credential: ASPasswordCredential, co
 - (void) completeRequestWithSelectedCredential:(ASPasswordCredential *) credential completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, the system dismisses the associated view controller.
 

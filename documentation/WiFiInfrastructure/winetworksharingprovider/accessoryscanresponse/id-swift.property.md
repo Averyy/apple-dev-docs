@@ -17,7 +17,7 @@ A stable identifier that uniquely identifies this scan response.
 var id: WINetworkSharingProvider.AccessoryScanResponse.ID { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is unique per accessory and per app extension launch.
 

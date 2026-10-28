@@ -20,7 +20,7 @@ Returns the source CMTaggedBufferGroupRef for the given track ID.
 - (CMTaggedBufferGroupRef) sourceTaggedBufferGroupByTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Discussion
+## Discussion
 
 Returns nil if the video track does not contain tagged buffers. Returns nil if the track does not contain video. This function should only be called when supportsSourceTaggedBuffers is YES.
 

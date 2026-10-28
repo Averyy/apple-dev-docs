@@ -19,7 +19,7 @@ func destroyContext()
 - (void) destroyContext;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly—it is invoked at the end of a print operation.
 

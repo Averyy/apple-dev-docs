@@ -21,7 +21,7 @@ Reserves enough space to store the specified number of elements.
 mutating func reserveCapacity(_ minimumCapacity: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If you are adding a known number of elements to an array, use this method to avoid multiple reallocations. This method ensures that the array has unique, mutable, contiguous storage, with space allocated for at least the requested number of elements.
 
@@ -29,7 +29,7 @@ Calling the `reserveCapacity(_:)` method on an array with bridged storage trigge
 
 For performance reasons, the size of the newly allocated storage might be greater than the requested capacity. Use the array’s `capacity` property to determine the size of the new storage.
 
-### Preserving an Array’s Geometric Growth Strategy
+## Preserving an Array’s Geometric Growth Strategy
 
 If you implement a custom data structure backed by an array that grows dynamically, naively calling the `reserveCapacity(_:)` method can lead to worse than expected performance. Arrays need to follow a geometric allocation pattern for appending elements to achieve amortized constant-time performance. The `Array` type’s `append(_:)` and `append(contentsOf:)` methods take care of this detail for you, but `reserveCapacity(_:)` allocates only as much space as you tell it to (padded to a round value), and no more. This avoids over-allocation, but can result in insertion not having amortized constant-time performance.
 

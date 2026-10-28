@@ -19,11 +19,11 @@ func glyph(withName name: String) -> NSGlyph
 - (NSGlyph) glyphWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The named encoded glyph.
 
-#### Discussion
+## Discussion
 
 Returns –1 if the glyph named `glyphName` isn’t encoded.
 

@@ -29,7 +29,7 @@ func storeCachedResponse(_ cachedResponse: CachedURLResponse, for request: URLRe
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 If you override this method, you should also override [`storeCachedResponse(_:for:)`](./storecachedresponse%28_,for%29-8uq91.md).
 

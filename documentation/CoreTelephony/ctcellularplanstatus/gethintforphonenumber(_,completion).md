@@ -25,7 +25,7 @@ class func hint(forPhoneNumber phoneNumber: String) async throws -> (CTCellularP
 + (void) getStatusHintForPhoneNumber:(NSString *) phoneNumber completion:(void (^)(CTCellularPlanStatusAvailability , CTCellularPlanStatusAvailabilityConfidence , NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Upon completion, the [`CTCellularPlanStatusAvailability`](../ctcellularplanstatusavailability.md) instance in the handler indicates whether the device has a cellular plan for the given phone number and the framework’s confidence ([`CTCellularPlanStatusAvailabilityConfidence`](../ctcellularplanstatusavailabilityconfidence.md)) that the determination is true.
 

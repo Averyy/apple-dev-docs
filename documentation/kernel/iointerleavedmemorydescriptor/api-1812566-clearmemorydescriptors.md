@@ -12,7 +12,7 @@ virtual void clearMemoryDescriptors(
  IODirection direction = direction );
 ```
 
-#### Overview
+## Overview
 
 Clears each IOMemoryDescriptor by completing (if needed) and releasing. The IOInterleavedMemoryDescriptor is then reset and may accept new descriptors up to the capacity specified when it was created.
 

@@ -23,11 +23,11 @@ convenience init(input: String, modifierFlags: UIKeyModifierFlags, action: Selec
 + (instancetype) keyCommandWithInput:(NSString *) input modifierFlags:(UIKeyModifierFlags) modifierFlags action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized key command object.
 
-#### Discussion
+## Discussion
 
 After creating a key command object, you can:
 

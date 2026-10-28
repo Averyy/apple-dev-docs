@@ -12,7 +12,7 @@ Display simple system translations and create custom translation experiences.
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 With the Translation framework, you can offer in-app translations from one language to another. To display simple system translations in your app, use the [`translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)`](../SwiftUI/view/translationpresentation%28ispresented,text,attachmentanchor,arrowedge,replacementaction%29.md) translation overlay.
 
@@ -30,7 +30,7 @@ This sample code project provides the `TranslatingText` sample app to demonstrat
 
 > **Note**: This sample code project is associated with WWDC24 session 10117: [Meet the Translation API](https://developer.apple.com/videos/play/wwdc2024/10117/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Before you run the sample code project, download and install Xcode 16 or later.
 
@@ -46,7 +46,7 @@ To run the sample code on a physical iOS device:
 4. Click the `TranslatingText` target and select your team from the Team menu in the Signing & Capabilities pane to let Xcode automatically manage your provisioning profile. For more information, see [Assign a project to a team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4).
 5. Choose Project > Run.
 
-#### Translate text with the simple translation overlay
+## Translate text with the simple translation overlay
 
 The *Translate Text* demo shows how to offer a translation using the system UI. The code example below indicates what happens when a person clicks the Translate button in that demo. First, the sample defines a variable to control when the system UI appears using a [`State`](../SwiftUI/state.md) property wrapper. Then it defines a variable representing the text to translate. Finally, it passes the `State` property wrapper that controls when the system UI displays along with the text to translate to the [`translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)`](../SwiftUI/view/translationpresentation%28ispresented,text,attachmentanchor,arrowedge,replacementaction%29.md) function that attaches to the view containing the text to translate.
 
@@ -81,7 +81,7 @@ The *Replace Text* demo also uses the system UI, and replaces the original text 
 }
 ```
 
-#### Offer a custom translation
+## Offer a custom translation
 
 For more control over the translation experience, you can create your own in-app translation experiences using the [`TranslationSession`](./translationsession.md) object, along with its associated translation functions.
 
@@ -134,7 +134,7 @@ struct SingleStringView: View {
 
 This pattern of defining a configuration as a `State` property wrapper and invalidating its state is recommended for initiating new translations. Storing [`TranslationSession.Configuration`](./translationsession/configuration.md) in a model object also works.
 
-#### Translate batches of strings
+## Translate batches of strings
 
 To translate multiple strings between the same languages, it’s most efficient to use one of the batch translation functions of [`TranslationSession`](./translationsession.md). You can translate a batch of strings and get the results all at once, or you can receive them incrementally as they arrive.
 
@@ -217,7 +217,7 @@ When translating a group of strings using the [`translations(from:)`](./translat
 
 You can also translate attributed string instances using [`translate(_:)`](./translationsession/translate%28_%29-59zi2.md), [`translations(from:)`](./translationsession/translations%28from%29.md), or [`translate(batch:)`](./translationsession/translate%28batch%29.md). When translating attributed strings, the Translation framework preserves both visual formatting (like bold text and links) and attributes such as accessibility instructions or time ranges from speech transcriptions, allowing you to synchronize captions or translations with custom metadata. For detailed examples, see [`attributedSourceText`](./translationsession/request/attributedsourcetext.md).
 
-#### Display the results as they arrive
+## Display the results as they arrive
 
 To translate multiple strings of text and display the results as they arrive, use the [`translate(batch:)`](./translationsession/translate%28batch%29.md) function.
 
@@ -248,7 +248,7 @@ extension ViewModel {
 }
 ```
 
-#### Check for language availability
+## Check for language availability
 
 The *Language Availability* demo shows how to check whether the framework supports a specific language pairing before offering it to people. A person selects a source and a target language from a picker, and the sample passes that language pairing to a function in the view model that checks whether the framework supports that pairing. The view then updates the display when the model sets the `isTranslationSupported` variable.
 
@@ -272,7 +272,7 @@ extension ViewModel {
 
 > **Note**: The framework doesn’t support translation between the same language, such as British English (en-GB) and U.S. English (en-US).
 
-#### Prepare for translation
+## Prepare for translation
 
 If you know which languages a translation needs, you can download the language models before offering the translation.
 

@@ -25,7 +25,7 @@ init(value: Int16)
 - (NSNumber *) initWithShort:(short) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as a signed `short`.
 

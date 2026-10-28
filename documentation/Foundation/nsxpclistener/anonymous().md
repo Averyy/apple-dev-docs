@@ -25,7 +25,7 @@ class func anonymous() -> NSXPCListener
 + (NSXPCListener *) anonymousListener;
 ```
 
-#### Discussion
+## Discussion
 
 Other processes can connect to this listener by passing this listener object’s `NSXPCListenerEndpoint` to the [`init(listenerEndpoint:)`](../nsxpcconnection/init%28listenerendpoint%29.md) method of an [`NSXPCConnection`](../nsxpcconnection.md) object.
 

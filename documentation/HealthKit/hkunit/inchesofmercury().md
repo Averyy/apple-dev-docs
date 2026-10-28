@@ -24,7 +24,7 @@ class func inchesOfMercury() -> Self
 + (instancetype) inchesOfMercuryUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring pressure in inches of mercury.
 

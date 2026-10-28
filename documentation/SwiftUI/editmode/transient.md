@@ -19,7 +19,7 @@ The view is in a temporary edit mode.
 case transient
 ```
 
-#### Discussion
+## Discussion
 
 The use of this state varies by platform and for different controls. As an example, SwiftUI might engage temporary edit mode over the duration of a swipe gesture.
 

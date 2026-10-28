@@ -15,7 +15,7 @@ A disconnect reason indicating the disconnect was initiated by the application.
 static var appInitiatedDisconnect: FoveatedStreamingSession.DisconnectReason { get }
 ```
 
-#### Discussion
+## Discussion
 
 This disconnect reason is given after you call [`disconnect()`](../disconnect%28%29.md), or when the person disconnects from the streaming session via system UI.
 

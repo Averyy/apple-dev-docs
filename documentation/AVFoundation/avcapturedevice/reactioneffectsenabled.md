@@ -23,7 +23,7 @@ class var reactionEffectsEnabled: Bool { get }
 @property (class, readonly) BOOL reactionEffectsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The system only renders reaction effects when the device’s active format supports the feature, which you determine by querying the value of its [`reactionEffectsSupported`](./format/reactioneffectssupported.md) property.
 

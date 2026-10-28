@@ -24,7 +24,7 @@ let HKMetadataKeySexualActivityProtectionUsed: String
 extern NSString * const HKMetadataKeySexualActivityProtectionUsed;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key’s value to [`true`](../Swift/true.md) if protection was used during sexual activity; otherwise, set it to [`false`](../Swift/false.md).
 

@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, willDisplayToolTip tooltip: Strin
 - (NSString *) textView:(NSTextView *) textView willDisplayToolTip:(NSString *) tooltip forCharacterAtIndex:(NSUInteger) characterIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The actual tooltip to display, or `nil` to suppress display of the tooltip.
 
-#### Discussion
+## Discussion
 
 The tooltip string is the value of the [`toolTip`](../../Foundation/nsattributedstring/key/tooltip.md) attribute at `characterIndex`.
 

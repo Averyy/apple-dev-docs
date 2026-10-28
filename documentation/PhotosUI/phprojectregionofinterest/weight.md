@@ -19,7 +19,7 @@ var weight: Double { get }
 @property (nonatomic, readonly) double weight;
 ```
 
-#### Discussion
+## Discussion
 
 The `weight` of a region of interest represents the pervasiveness of the face across the project as a whole. All regions of interest with the same identifier share the same weight. The values range between `0` and `1`. The default value is `0.5`.
 

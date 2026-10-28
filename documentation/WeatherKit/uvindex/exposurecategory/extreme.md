@@ -21,7 +21,7 @@ The UV index is extreme.
 case extreme
 ```
 
-#### Discussion
+## Discussion
 
 The valid values of this property are 11 and higher.
 

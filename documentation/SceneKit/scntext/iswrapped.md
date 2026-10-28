@@ -25,7 +25,7 @@ var isWrapped: Bool { get set }
 @property (nonatomic, getter=isWrapped) BOOL wrapped;
 ```
 
-#### Discussion
+## Discussion
 
 When you define a layout rectangle for the text using its [`containerFrame`](./containerframe.md) property, SceneKit uses the [`isWrapped`](./iswrapped.md) property to determine whether each line of text that is wider than the layout rectangle automatically wraps onto the next line.
 

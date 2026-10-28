@@ -19,7 +19,7 @@ A type that uses a custom intent to provide a value to a control template.
 protocol AppIntentControlValueProvider
 ```
 
-#### Overview
+## Overview
 
 The provider quickly and cheaply prepares a synchronous value to be shown while previewing the control in the add sheet. When the actual control needs to be rendered, the actual, current value will be fetched asynchronously.
 

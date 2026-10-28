@@ -25,7 +25,7 @@ struct ModelComponent
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 - [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mesh.md)
 
-#### Overview
+## Overview
 
 This component is a foundational component for all visual content in RealityKit. Use `ModelComponent` to render 3D models by attaching it to any [`Entity`](./entity.md) in your RealityKit scene.
 

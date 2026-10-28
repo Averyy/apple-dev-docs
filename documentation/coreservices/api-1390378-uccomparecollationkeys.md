@@ -19,11 +19,11 @@ func UCCompareCollationKeys(_ key1Ptr: UnsafePointer<UCCollationValue>!, _ key1L
 OSStatus UCCompareCollationKeys(const UCCollationValue *key1Ptr, ItemCount key1Length, const UCCollationValue *key2Ptr, ItemCount key2Length, Boolean *equivalent, SInt32 *order);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.  This function can return `paramErr`, for example, if `key1Ptr` or `key2Ptr` are `NULL`.
 
-#### Discussion
+## Discussion
 
 If you wish to compare the same strings several times, as when sorting a list of strings, it may be most efficient for you to derive a collation key for each string and then compare the collation keys. A collation key is a transformation of the string that depends on the collator object (that is, it depends on the locale, the collation variant if any, and the collation options).
 

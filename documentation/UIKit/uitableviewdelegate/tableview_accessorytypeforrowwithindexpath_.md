@@ -19,7 +19,7 @@ Asks the delegate for the type of standard accessory view to use as a disclosure
 - (UITableViewCellAccessoryType) tableView:(UITableView *) tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A constant identifying a type of standard accessory view. For details, see the “Constants” section in [`UITableViewCell`](../uitableviewcell.md).
 

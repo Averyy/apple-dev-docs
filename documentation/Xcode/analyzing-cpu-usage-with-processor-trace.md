@@ -5,7 +5,7 @@
 
 Identify code where your app uses the CPU inefficiently.
 
-#### Overview
+## Overview
 
 Recent Apple silicon devices can capture a *processor trace* where the CPU stores information about the code it runs, including the branches it takes and the instructions it jumps to. The CPU streams this information to an area on the file system so that you can analyze it with the Processor Trace instrument. A processor trace captures information about all running threads with very little runtime overhead. Your device is typically less than 1% slower than when it isn’t recording a processor trace.
 
@@ -15,7 +15,7 @@ You can use the Processor Trace instrument in Instruments 16.3 and later to anal
 
 Use the Processor Trace instrument to gather information about the functions your code runs while you perform particular activities in your app. Analyze slow, or processor-intensive, operations to identify whether your app might be able to process its data in more efficient ways, such as by using different algorithms, or caching the results of calculations to use again.
 
-#### Use supported hardware and software
+## Use supported hardware and software
 
 You can record a processor trace with the following hardware:
 
@@ -27,7 +27,7 @@ Record the trace in iOS 18.4 or later, iPadOS 18.4 or later, or macOS 15.4 or la
 
 You can use Instruments on any Mac to analyze a saved processor trace file, including those that don’t support *recording* processor traces.
 
-#### Record a processor trace
+## Record a processor trace
 
 Follow these steps in Xcode to record a processor trace:
 
@@ -51,7 +51,7 @@ To supply the debugging symbols for your app, follow these steps in Instruments:
 
 > **Note**:  Some addresses, such as branch islands that the compiler creates to support function calls between different libraries, don’t have function names. Instruments shows those addresses as raw pointer values even if you supply all the debugging symbols for your app.
 
-#### Analyze processor usage
+## Analyze processor usage
 
 In the Instruments timeline view, the Target view in the Processor Trace track displays three histograms:
 
@@ -69,19 +69,19 @@ The Summary: Function Calls view shows an aggregation of the functions that your
 
 The Function Calls view shows a list of all the functions that Instruments traces during the recording, along with their duration, the thread they run on, and the number of instructions. Use this view to explore thread backtraces of individual calls to certain functions, or to focus the inspection range in Instruments on the duration of a single function call.
 
-#### View a time-ordered flow of function calls
+## View a time-ordered flow of function calls
 
 Click the disclosure triangle next to your target process’s name in the timeline to see a list of the threads that Instruments traces in that process, along with a visualization in the timeline of the functions that are active in each thread. Select the timeline track for a thread, then choose View > Selected Track > Size to Fit to expand the track and display the names of active functions in their entries in the timeline. Use this view to understand which function is running in your app’s thread, and correlate that information with other events in the Instruments timeline.
 
 ![An Instruments screenshot of the timeline view showing the active functions on the main thread of a traced app.](https://developer.apple.com/tutorials/images/com.apple.Xcode/processor-trace-function-flow@2x.png)
 
-#### Filter detail views by function, process, or thread
+## Filter detail views by function, process, or thread
 
 In any of the Processor Trace instrument’s detail views, type a function name into the “Input filter” field, or Control-click a function and choose Add to Detail Filter, to filter the view so that it displays only information about that function. You can also filter by process, or by thread, by adding the process or thread’s name to the detail filter.
 
 ![An Instruments screenshot of the Input filter field with the word objc, and the Summary: Function Calls view showing only functions that contain objc in their names.](https://developer.apple.com/tutorials/images/com.apple.Xcode/processor-trace-filter@2x.png)
 
-#### Set the inspection range to the lifetime of a function call
+## Set the inspection range to the lifetime of a function call
 
 The Processor Trace instrument’s detail views show information about the processes that Instruments records within the inspection range you select in the timeline. To analyze the behavior of a particular function, set the inspection range to the lifetime of a call to that function.
 
@@ -89,7 +89,7 @@ In the Function Calls view, Control-click a function’s Duration value and choo
 
 ![An Instruments screenshot of the detail view showing the function calls that a traced process made during the selected inspection range in the timeline view.](https://developer.apple.com/tutorials/images/com.apple.Xcode/processor-trace-functions@2x.png)
 
-#### Charge, prune, and flatten function profiles
+## Charge, prune, and flatten function profiles
 
 You can charge functions to hide library code from the profile, while continuing to factor the time the processor spends running the library code into your analysis. When you charge a function to its callers, the system adds any instructions and cycles the CPU runs in that function, and in functions it calls, to the instruction and cycle counts for the calling functions. Control-click a symbol name and choose Charge “[*Function name*]” to Callers to remove calls to that function, as well as functions that it calls, from the view, and to include their profile information in the reported statistics for their callers. You can also charge all the functions in a particular library to their callers by Control-clicking the symbol name of a function from that library and choosing Charge “[*Library name*]” to Callers.
 
@@ -101,7 +101,7 @@ Review and change your choices by clicking the Charge, Prune, Flatten button at 
 
 ![An Instruments screenshot of the detail view showing the call profile for a traced app, where the functions in the AppKit library are flattened to boundary frames.](https://developer.apple.com/tutorials/images/com.apple.Xcode/processor-trace-flatten@2x.png)
 
-#### Review your app’s processor usage
+## Review your app’s processor usage
 
 Long-running operations on the main thread can cause freezes and hitches in your app’s UI, which a person perceives as your app being unresponsive. If the processor trace shows high levels of processor activity in your app’s main thread, identify opportunities to move processing to the background using Swift concurrency or dispatch queues. For more information, see [Understanding user interface responsiveness](./understanding-user-interface-responsiveness.md).
 

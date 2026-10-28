@@ -24,7 +24,7 @@ func preferredContentSizeDidChange(forChildContentContainer container: any UICon
 - (void) preferredContentSizeDidChangeForChildContentContainer:(id<UIContentContainer>) container;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method on a container view controller when the [`preferredContentSize`](./preferredcontentsize.md) property of one of its child view controllers changes. Similarly, if the view controller is managed by a presentation controller, UIKit calls this method on the presentation controller to let it know of the change. The parent view controller or presentation controller can use this method to initiate layout adjustments based on the new size information.
 

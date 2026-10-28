@@ -20,7 +20,7 @@ An object that references the pixel data for a single slice of a mipmap.
 struct Slice
 ```
 
-#### Overview
+## Overview
 
 2D array textures have `arrayLength` slices per mipmap, and cube textures have six slices per mipmap. 2D and 3D textures have a single slice per mipmap.
 

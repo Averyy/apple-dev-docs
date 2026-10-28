@@ -15,7 +15,7 @@ The value that associates a client session and an ID token.
 attribute string nonce;
 ```
 
-#### Discussion
+## Discussion
 
 This value mitigates replay attacks and is present only if passed during the authorization request.
 

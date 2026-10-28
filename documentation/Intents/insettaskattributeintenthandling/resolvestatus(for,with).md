@@ -29,7 +29,7 @@ optional func resolveStatus(for intent: INSetTaskAttributeIntent) async -> INTas
 - (void) resolveStatusForSetTaskAttribute:(INSetTaskAttributeIntent *) intent withCompletion:(void (^)(INTaskStatusResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the task’s intended status. In most cases, you return a successful resolution with the requested status. In the event that you cannot change the status to the requested value, return a successful result from this method and use your confirmation method to report the failure.
 

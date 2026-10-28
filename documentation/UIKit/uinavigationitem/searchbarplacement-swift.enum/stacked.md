@@ -22,7 +22,7 @@ case stacked
 UINavigationItemSearchBarPlacementStacked
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the traditional search bar layout available in versions of iOS earlier than iOS 16.
 

@@ -9,7 +9,7 @@ Remove a profile from a list of devices.
 **Availability**:
 - Device Assignment Services 5.0+
 
-#### Discussion
+## Discussion
 
 After this call, the devices in the list will have no profiles associated with them. However, if those devices have already obtained the profile, this has no effect until the device is wiped and activated again.
 

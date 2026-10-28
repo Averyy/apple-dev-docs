@@ -24,7 +24,7 @@ case savedPhotosAlbum
 UIImagePickerControllerSourceTypeSavedPhotosAlbum
 ```
 
-#### Discussion
+## Discussion
 
 If the device does not have a camera, specifies the Saved Photos album as the source.
 

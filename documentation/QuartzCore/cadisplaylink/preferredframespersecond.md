@@ -29,7 +29,7 @@ var preferredFramesPerSecond: Int { get set }
 
 - [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
-#### Discussion
+## Discussion
 
 The display link makes a best attempt to invoke your app’s callback at the frequency value you set to this property. However, the system also takes into account the device’s hardware capabilities and the other tasks your game or app is running.
 

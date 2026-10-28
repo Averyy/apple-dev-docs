@@ -22,7 +22,7 @@ static var selectionChangedNotification: UIAccessibility.Notification
 extern UIAccessibilityNotifications BEAccessibilitySelectionChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If an element contains a text selection and the content changes, or the editing cursor position changes, post this notification after posting [`valueChangedNotification`](./valuechangednotification.md) for the element.
 

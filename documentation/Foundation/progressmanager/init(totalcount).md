@@ -21,7 +21,7 @@ Initializes `self` with `totalCount`.
 convenience init(totalCount: Int?)
 ```
 
-#### Discussion
+## Discussion
 
 If `totalCount` is set to `nil`, `self` is indeterminate.
 

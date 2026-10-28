@@ -15,7 +15,7 @@ Field of view specification.
 typedef NSObject<OS_ar_field_of_view> * ar_field_of_view_t;
 ```
 
-#### Discussion
+## Discussion
 
 Represents either an Apple-defined preset field of view or a custom polygon-based specification. Preset field of views are recommended for most applications.
 

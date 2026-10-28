@@ -24,7 +24,7 @@ var capHeight: CGFloat { get }
 @property (nonatomic, readonly) CGFloat capHeight;
 ```
 
-#### Discussion
+## Discussion
 
 This value measures (in points) the height of a capital character. For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](../uifont.md).
 

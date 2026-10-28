@@ -25,11 +25,11 @@ func NSCreateMapTableWithZone(_ keyCallBacks: NSMapTableKeyCallBacks, _ valueCal
 extern NSMapTable *NSCreateMapTableWithZone(NSMapTableKeyCallBacks keyCallBacks, NSMapTableValueCallBacks valueCallBacks, NSUInteger capacity, NSZone *zone);
 ```
 
-#### Return Value
+## Return Value
 
 A new map table in allocated in `zone`. If `zone` is `NULL`, the hash table is created in the default zone.
 
-#### Discussion
+## Discussion
 
 The table’s size is dependent on (but generally not equal to) `capacity`. If `capacity` is 0, a small map table is created. The [`NSMapTableKeyCallBacks`](./nsmaptablekeycallbacks.md) arguments are structures that are very similar to the callback structure used by [`NSCreateHashTable(_:_:)`](./nscreatehashtable%28_,_%29.md); in fact, they have the same defaults as documented for that function.
 

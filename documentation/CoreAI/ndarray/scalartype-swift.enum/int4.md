@@ -19,7 +19,7 @@ A 4-bit signed integer.
 case int4
 ```
 
-#### Discussion
+## Discussion
 
 Four-bit signed integers can represent values in the range [-8, 7]. Widely used in model quantization for efficient storage and computation.
 

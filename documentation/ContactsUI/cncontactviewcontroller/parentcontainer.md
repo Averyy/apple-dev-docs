@@ -22,7 +22,7 @@ var parentContainer: CNContainer? { get set }
 @property (nonatomic, strong, nullable) CNContainer * parentContainer;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not set this property, the view controller adds a new contact to the default container.
 

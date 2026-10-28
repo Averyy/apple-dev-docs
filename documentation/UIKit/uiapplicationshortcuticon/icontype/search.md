@@ -22,7 +22,7 @@ case search
 UIApplicationShortcutIconTypeSearch
 ```
 
-#### Discussion
+## Discussion
 
 ![Search icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934514@2x.png)
 

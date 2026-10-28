@@ -5,7 +5,7 @@
 
 Use gamma functions to apply color transformations to images.
 
-#### Overview
+## Overview
 
 Gamma correction functions correct the brightness profile of an image by applying an exponent to each pixel in an image. The piecewise gamma correction functions allow you to add a linear transformation to pixels below a certain boundary. You can use gamma correction functions to prepare an image to display or print on a particular device.
 

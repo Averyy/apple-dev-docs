@@ -25,7 +25,7 @@ func encodeRootObject(_ rootObject: Any)
 - (void) encodeRootObject:(id) rootObject;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation simply invokes [`encode(_:)`](./encode%28_%29-9648d.md).
 

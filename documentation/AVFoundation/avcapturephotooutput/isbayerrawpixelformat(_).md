@@ -26,7 +26,7 @@ class func isBayerRAWPixelFormat(_ pixelFormat: OSType) -> Bool
 
 - [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the pixel format is a Bayer RAW format, otherwise [`false`](../../Swift/false.md).
 

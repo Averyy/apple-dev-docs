@@ -5,7 +5,7 @@
 
 Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
 
-#### Overview
+## Overview
 
 > **Note**: This article is associated with WWDC25 session 223: [Explore enhancements to your spatial business app](https://developer.apple.com/wwdc25/223/) and WWDC24 session 10139: [Introducing enterprise APIs for visionOS](https://developer.apple.com/wwdc24/10139/).
 
@@ -29,7 +29,7 @@ The second category focuses on platform control to help you get the most out of 
 
 > **Note**: Each of these entitlements allows a device to operate outside the default configuration. When using these features, be aware that they may impact the performance of other apps.
 
-##### Request the entitlements
+### Request the entitlements
 
 If you’re interested in using the enterprise APIs for visionOS in your app, the Account Holder of your organization’s Apple Developer Program or Apple Developer Enterprise Program membership can submit a [request for an enterprise API license and entitlements](https://developer.apple.com/go/?id=69613ca716fe11ef8ec848df370857f4). If you enrolled as an individual, you can’t request an enterprise API license.
 
@@ -42,7 +42,7 @@ Enterprise APIs for visionOS are eligible for business use only. You can distrib
 
 The Account Holder can also request access to the entitlements for *Development Only* purposes. With this access, you can build and run apps on your registered test devices with development provisioning profiles. A Development Only license applies at the team level and works across your team’s apps, whereas a distribution license applies to a single App ID.
 
-##### Configure your app’s Xcode project
+### Configure your app’s Xcode project
 
 To use entitlements, you need to include both the entitlement file and a corresponding license file in your app.
 
@@ -59,7 +59,7 @@ To add an entitlement in Xcode:
 
 After you add the `.license` and `.entitlements` files, you can implement and test the APIs you have approval to use. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-##### Verify your app’s license and entitlements
+### Verify your app’s license and entitlements
 
 Your app can use the VisionEntitlementServices framework to confirm that your enterprise API license is valid and that your app is approved for a specific enterprise entitlement.
 

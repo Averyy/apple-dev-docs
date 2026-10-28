@@ -51,7 +51,7 @@ func finishSyncing(_ statusDisplay: NSWindow) async
 - (void) finishSyncing:(NSWindow *) statusDisplay completionHandler:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If the sync results in a conflict, the framework displays a conflict resolution UI for the user to chose a version that will be used. If the user isn’t signed in to iCloud or iCloud drive, the framework informs the user and then switches to local saving.
 

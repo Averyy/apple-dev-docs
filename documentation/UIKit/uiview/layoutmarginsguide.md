@@ -23,7 +23,7 @@ var layoutMarginsGuide: UILayoutGuide { get }
 @property (strong, readonly) UILayoutGuide * layoutMarginsGuide;
 ```
 
-#### Discussion
+## Discussion
 
 Use this layout guide’s anchors to create constraints with the view’s margin.
 

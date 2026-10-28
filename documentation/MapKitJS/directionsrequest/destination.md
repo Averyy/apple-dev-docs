@@ -15,7 +15,7 @@ The end point for routing directions.
 destination: string | CoordinateData | Place;
 ```
 
-#### Discussion
+## Discussion
 
 The destination can be a string that’s an address, a coordinate, or a [`Place`](../place.md) object.
 

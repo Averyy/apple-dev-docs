@@ -25,7 +25,7 @@ class var shuffle: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * shuffle;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`shuffle`](./shuffle.md) key is an [`Bool`](../../Swift/bool.md).
 

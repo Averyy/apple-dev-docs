@@ -23,11 +23,11 @@ func sec_protocol_metadata_access_distinguished_names(_ metadata: sec_protocol_m
 bool sec_protocol_metadata_access_distinguished_names(sec_protocol_metadata_t metadata, void (^handler)(dispatch_data_t distinguished_name));
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the distinguished names were accessible, false otherwise.
 
-#### Discussion
+## Discussion
 
 Get the X.509 Distinguished Names from the protocol instance peer.
 

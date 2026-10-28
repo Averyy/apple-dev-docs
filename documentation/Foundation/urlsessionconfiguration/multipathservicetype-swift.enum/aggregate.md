@@ -22,7 +22,7 @@ case aggregate
 NSURLSessionMultipathServiceTypeAggregate
 ```
 
-#### Discussion
+## Discussion
 
 This option is available only for experimentation. Specify it for connections that use cellular data. You must also set the [`Multipath Entitlement`](../../../BundleResources/entitlements/com.apple.developer.networking.multipath.md) in the Xcode Capabilities pane for your app.
 

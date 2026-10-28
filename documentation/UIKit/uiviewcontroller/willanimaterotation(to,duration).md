@@ -23,7 +23,7 @@ func willAnimateRotation(to toInterfaceOrientation: UIInterfaceOrientation, dura
 - (void) willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation) toInterfaceOrientation duration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called from within the animation block used to rotate the view. You can override this method and use it to configure additional animations that should occur during the view rotation. For example, you could use it to adjust the zoom level of your content, change the scroller position, or modify other animatable properties of your view.
 

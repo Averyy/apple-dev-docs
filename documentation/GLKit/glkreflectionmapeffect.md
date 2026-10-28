@@ -24,7 +24,7 @@ class GLKReflectionMapEffect
 @interface GLKReflectionMapEffect : GLKBaseEffect
 ```
 
-#### Overview
+## Overview
 
 In addition to any of the properties provided by the [`GLKBaseEffect`](./glkbaseeffect.md) class, your application must also configure the properties on the reflection map. The default value of the [`textureOrder`](./glkbaseeffect/textureorder.md) property provided by the base effect is modified to include the reflection map as a final texturing stage; your application can modify the value of that property to change the order in which texturing occurs.
 

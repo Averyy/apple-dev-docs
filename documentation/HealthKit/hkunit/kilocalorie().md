@@ -24,11 +24,11 @@ class func kilocalorie() -> Self
 + (instancetype) kilocalorieUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring energy in kilocalories.
 
-#### Discussion
+## Discussion
 
 The kilocalorie is used to measure food energy in many regions.
 

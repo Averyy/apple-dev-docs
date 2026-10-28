@@ -24,7 +24,7 @@ var merchantCapabilities: PKMerchantCapability { get set }
 @property (nonatomic, assign) PKMerchantCapability merchantCapabilities;
 ```
 
-#### Discussion
+## Discussion
 
 The [`threeDSecure`](../pkmerchantcapability/threedsecure.md) and [`emv`](../pkmerchantcapability/emv.md) values of [`PKMerchantCapability`](../pkmerchantcapability.md) specify the supported cryptographic payment protocols. At least one of these two values is required.
 

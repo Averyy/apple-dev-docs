@@ -25,7 +25,7 @@ class NSDecimalNumberHandler
 @interface NSDecimalNumberHandler : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class allows you to set the way an [`NSDecimalNumber`](./nsdecimalnumber.md) object rounds off and handles errors, without having to create a custom class.
 

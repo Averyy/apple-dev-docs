@@ -16,7 +16,7 @@ A Boolean value that indicates whether an app can send or receive IP multicast t
 - **Name**: `com.apple.developer.networking.multicast`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Your app must have this entitlement to send or receive IP multicast or broadcast on iOS. It also allows your app to browse and advertise arbitrary Bonjour service types.
 

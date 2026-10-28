@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, setToolbarsVisible visible: Bool)
 - (void) webView:(WebView *) sender setToolbarsVisible:(BOOL) visible;
 ```
 
-#### Discussion
+## Discussion
 
 No action is taken if you do not implement this method.
 

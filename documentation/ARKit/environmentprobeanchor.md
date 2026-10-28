@@ -15,7 +15,7 @@ An environment probe in the world.
 struct EnvironmentProbeAnchor
 ```
 
-#### Overview
+## Overview
 
 Use environment probes to light virtual geometry by producing environment textures from the probe’s location in the world.
 

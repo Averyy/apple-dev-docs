@@ -15,7 +15,7 @@ A response that contains a single Game Center leaderboard image v2 resource.
 object GameCenterLeaderboardImageV2Response
 ```
 
-#### Overview
+## Overview
 
 - data:
 - included:

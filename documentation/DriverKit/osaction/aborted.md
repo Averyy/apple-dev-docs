@@ -18,7 +18,7 @@ Calls the abort handler of the action object.
 virtual void Aborted();
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. The system calls it when no other objects reference the action object.
 

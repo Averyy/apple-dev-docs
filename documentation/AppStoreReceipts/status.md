@@ -29,7 +29,7 @@ int status
 - `21009`: Internal data access error. Try again later.
 - `21010`: The system can’t find the user account or the user account has been deleted.
 
-#### Discussion
+## Discussion
 
 The [`verifyReceipt`](./verify-receipt.md) endpoint returns this field in the JSON response, [`responseBody`](./responsebody.md).
 

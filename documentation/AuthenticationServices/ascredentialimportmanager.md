@@ -19,11 +19,11 @@ A class to manage importing credentials.
 class ASCredentialImportManager
 ```
 
-#### Overview
+## Overview
 
 `ASCredentialImportManager` allows your app to exchange authentication credentials such as passwords and passkeys with other apps. Participating apps, such as password managers, export credentials to your app by using the [`ASCredentialExportManager`](./ascredentialexportmanager.md) class.
 
-##### Configuring your app
+### Configuring your app
 
 To participate in credential exchange, edit your credential provider extension’s information property list and add the following key with a Boolean value of `YES`:
 
@@ -35,7 +35,7 @@ Also, declare the versions of the credential data format your app supports using
 
 The value is an array of strings containing every version your app supports. Currently, the only available version is `1.0`.
 
-##### Importing credentials
+### Importing credentials
 
 Credential export begins when another app calls [`exportCredentials(_:)`](./ascredentialexportmanager/exportcredentials%28_%29.md), which brings up a system UI to choose an app to export to. When the person using the export app chooses your app to receive the credentials, the system launches your app and sends an  [`NSUserActivity`](../Foundation/nsuseractivity.md) whose [`activityType`](../Foundation/nsuseractivity/activitytype.md) is `ASCredentialExchangeActivity`. To support this process, add the [`NSUserActivityTypes`](../BundleResources/information-property-list/nsuseractivitytypes.md) array to your app’s information property list and add the item `ASCredentialExchangeActivityType` to the array.
 

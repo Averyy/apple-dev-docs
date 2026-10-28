@@ -5,11 +5,11 @@
 
 Set up or add a Border Router on a Thread network.
 
-#### Overview
+## Overview
 
 The Border Router acts as a bridge between the Thread and Wi-Fi or Ethernet networks in a home. Multiple Border Routers on the preferred network strengthen communication between devices and improve the network’s resiliency.
 
-##### Set up a new Border Router on the preferred network
+### Set up a new Border Router on the preferred network
 
 To begin setup, first check for a configured preferred network using [`isPreferredNetworkAvailable(completion:)`](./thclient/ispreferrednetworkavailable%28completion%29.md). If one is already configured, use [`retrievePreferredCredentials(_:)`](./thclient/retrievepreferredcredentials%28_%29.md) to read the credentials.
 
@@ -23,7 +23,7 @@ After you configure the Border Router, store the credentials to iCloud Keychain 
 
 Storing credentials marks the newly created Thread network as the preferred network in iCloud Keychain. This process makes the Thread network immediately available for devices to join.
 
-##### Add a Border Router to the preferred network
+### Add a Border Router to the preferred network
 
 If you’re setting up another Thread Border Router on the preferred network, ensure that the previously cached preferred network credentials match using [`checkPreferredNetwork(forActiveOperationalDataset:completion:)`](./thclient/checkpreferrednetwork%28foractiveoperationaldataset,completion%29.md). If they don’t match, re-read the preferred network credentials from iCloud Keychain using
 [`retrievePreferredCredentials(_:)`](./thclient/retrievepreferredcredentials%28_%29.md) and configure the Border Router with those credentials.

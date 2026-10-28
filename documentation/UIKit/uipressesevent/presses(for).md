@@ -23,7 +23,7 @@ func presses(for gesture: UIGestureRecognizer) -> Set<UIPress>
 - (NSSet<UIPress *> *) pressesForGestureRecognizer:(UIGestureRecognizer *) gesture;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`UIPress`](../uipress.md) instances that participated in this event that are associated with the gesture recognizer.
 

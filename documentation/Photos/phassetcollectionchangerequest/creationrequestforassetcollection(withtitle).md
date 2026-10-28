@@ -28,11 +28,11 @@ class func creationRequestForAssetCollection(withTitle title: String) -> Self
 
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Return Value
+## Return Value
 
 An asset collection creation request.
 
-#### Discussion
+## Discussion
 
 Call this method within a photo library change block to create a new asset collection. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

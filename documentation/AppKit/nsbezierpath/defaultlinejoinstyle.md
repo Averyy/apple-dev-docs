@@ -19,7 +19,7 @@ class var defaultLineJoinStyle: NSBezierPath.LineJoinStyle { get set }
 @property (class) NSLineJoinStyle defaultLineJoinStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The default line join style or `NSMiterLineJoinStyle` if no other value has been set. For a list of values, see Constants.
 

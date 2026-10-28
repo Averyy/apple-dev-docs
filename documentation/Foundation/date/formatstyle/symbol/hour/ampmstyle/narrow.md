@@ -21,7 +21,7 @@ A type that specifies the narrow day period if the locale prefers using day peri
 static let narrow: Date.FormatStyle.Symbol.Hour.AMPMStyle
 ```
 
-#### Discussion
+## Discussion
 
 This type represents the hour period in a narrow format where appropriate. For example, when used with `defaultDigits`, this style may represent 8 a.m. as `8` or `8a`, and 1 p.m. as `13`, or `1p`. With `twoDigits`, this style produces `08` or `08a`, and `13` or `01p`, respectively.
 

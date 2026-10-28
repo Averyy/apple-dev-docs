@@ -21,7 +21,7 @@ Shorthand for referring to the `shared.unownedExecutor` of this global actor.
 static var sharedUnownedExecutor: UnownedSerialExecutor { get }
 ```
 
-#### Discussion
+## Discussion
 
 When declaring a global actor with a custom executor, prefer to implement the underlying actor’s [`unownedExecutor`](../actor/unownedexecutor.md) property, and leave this `sharedUnownedExecutor` default implementation in-place as it will simply delegate to the `shared.unownedExecutor`.
 

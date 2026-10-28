@@ -4,7 +4,7 @@
 
 Set and test the `UCCollateOptions` field that specifies a fixed ordering scheme.
 
-#### Overview
+## Overview
 
 You can use these constants to set or obtain a value that specifies a fixed ordering scheme. For a description of the available types of fixed ordering schemes, see  [Fixed Ordering Scheme](./api-1390361-fixed_ordering_scheme.md).
 

@@ -15,7 +15,7 @@ A string that identifies the product.
 string productIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 Maximum length: 256
 

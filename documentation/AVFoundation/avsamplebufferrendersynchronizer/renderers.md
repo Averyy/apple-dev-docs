@@ -27,7 +27,7 @@ var renderers: [any AVQueuedSampleBufferRendering] { get }
 @property (atomic, readonly) NSArray<__kindof id<AVQueuedSampleBufferRendering>> * renderers;
 ```
 
-#### Discussion
+## Discussion
 
 This property includes all renderers that have been added to the synchronizer and haven’t been removed, including renderers that have been scheduled for removal, but have yet to be removed. This property is not KVO observable.
 

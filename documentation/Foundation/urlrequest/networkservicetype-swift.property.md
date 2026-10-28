@@ -21,7 +21,7 @@ The type of network service for all tasks within network sessions to enable Cell
 var networkServiceType: URLRequest.NetworkServiceType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 There are two steps to enable Cellular Network Slicing:
 

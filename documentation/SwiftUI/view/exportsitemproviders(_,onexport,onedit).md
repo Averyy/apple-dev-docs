@@ -16,7 +16,7 @@ nonisolated
 func exportsItemProviders(_ contentTypes: [UTType], onExport: @escaping () -> [NSItemProvider], onEdit: @escaping ([NSItemProvider]) -> Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 If the associated view supports selection, the exported item should reflect that selected subpart.
 

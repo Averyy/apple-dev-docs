@@ -13,11 +13,11 @@
 virtual kern_return_t ReferenceMicroframe(uint64_t *microframeNumber, uint64_t *theTime);
 ```
 
-#### Return Value
+## Return Value
 
 KERN_SUCCESS is successful see IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Return a recent microframe number of the USB controller.
 

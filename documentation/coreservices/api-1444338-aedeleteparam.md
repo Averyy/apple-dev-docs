@@ -19,11 +19,11 @@ func AEDeleteParam(_ theAppleEvent: UnsafeMutablePointer<AppleEvent>!, _ theAEKe
 OSErr AEDeleteParam(AppleEvent *theAppleEvent, AEKeyword theAEKeyword);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Thread safe starting in OS X v10.2.
 

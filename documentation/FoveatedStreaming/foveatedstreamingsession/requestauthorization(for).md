@@ -16,11 +16,11 @@ Requests authorization for the given input capabilities, prompting the user for 
 final func requestAuthorization(for inputCapabilities: Set<FoveatedStreamingSession.InputCapability>? = nil) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary mapping each requested capability to its authorization status following the prompt.
 
-#### Discussion
+## Discussion
 
 Use this method to drive authorization prompts ahead of [`connect(endpoint:)`](./connect%28endpoint%29.md) so apps that want to surface their own pre-flight UI can do so.  At [`connect(endpoint:)`](./connect%28endpoint%29.md) time the framework also calls this method automatically for [`requestedInputCapabilities`](./requestedinputcapabilities.md).
 

@@ -22,7 +22,7 @@ var pixelFormat: MTLPixelFormat { get set }
 @property (nonatomic, readwrite) MTLPixelFormat pixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 A desired pixel format of a texture view.
 

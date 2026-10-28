@@ -19,7 +19,7 @@ optional var toolbarItemName: String { get }
 @property (copy, readonly) NSString * toolbarItemName;
 ```
 
-#### Discussion
+## Discussion
 
 To add a toolbar item to the Finder, override the getter method for the toolbar image, name, and tooltip properties.
 

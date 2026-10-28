@@ -23,7 +23,7 @@ case userInitiated
 NSQualityOfServiceUserInitiated
 ```
 
-#### Discussion
+## Discussion
 
 Used for performing work that has been explicitly requested by the user, and for which results must be immediately presented in order to allow for further user interaction. For example, loading an email after a user has selected it in a message list.
 

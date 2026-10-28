@@ -19,7 +19,7 @@ class NSTextFinder
 @interface NSTextFinder : NSObject
 ```
 
-#### Overview
+## Overview
 
 The class serves as a controller for the standard Cocoa find bar. The `NSTextFinder` class interacts heavily with a `client` object which supports the [`NSTextFinderClient`](./nstextfinderclient.md) protocol. The client object provides access to the content being searched and provides visual feedback for a search operation.
 
@@ -27,7 +27,7 @@ All menu items related to finding (Find…, Find Next, Find Previous, Use Select
 
 > **Note**:  Before OS X v10.7, the default action for these menu items was [`performFindPanelAction(_:)`](./nstextview/performfindpanelaction%28_%29.md). Applications that wish to use OS X v10.7 should adopt the new behavior, if appropriate.
 
-##### Implementing a Find Bar
+### Implementing a Find Bar
 
 A responder of [`performTextFinderAction(_:)`](./nsresponder/performtextfinderaction%28_%29.md) is responsible for creating and owning an instance of `NSTextFinder`. Before any other messages are sent to the `NSTextFinder`, you should set its [`client`](./nstextfinder/client.md) property to an object which implements the [`NSTextFinderClient`](./nstextfinderclient.md) protocol.
 
@@ -75,7 +75,7 @@ One of the two approaches (implementing the `string` method the [`string(at:effe
 
 The text finder may require additional information from the [`client`](./nstextfinder/client.md) object to perform an action, or it may require the `client` to perform some parts of the action on its behalf. The  methods and properties described in [Text Finder Client Implementation Requirements](./nstextfinder.md#Text-Finder-Client-Implementation-Requirements) describes the hooks the text finder requires for each of the actions it supports. If the client does not implement one of these methods or properties, then the action that requires it will be disabled.
 
-###### Text Finder Client Implementation Requirements
+#### Text Finder Client Implementation Requirements
 
 The text finder’s client may implement the following properties for by the [`validateAction(_:)`](./nstextfinder/validateaction%28_%29.md) method: [`isSelectable`](./nstextfinderclient/isselectable.md), [`allowsMultipleSelection`](./nstextfinderclient/allowsmultipleselection.md), and `editable`. If any of these properties is not implemented, a value of [`true`](../Swift/true.md) is assumed. Returning [`false`](../Swift/false.md) from any of these methods will disable the actions that require them. For more information about these properties see [`NSTextFinderClient`](./nstextfinderclient.md).
 
@@ -87,7 +87,7 @@ The following implementation’s are required by the text client to support the 
 - The client protocol’s [`shouldReplaceCharacters(inRanges:with:)`](./nstextfinderclient/shouldreplacecharacters%28inranges,with%29.md), [`replaceCharacters(in:with:)`](./nstextfinderclient/replacecharacters%28in,with%29.md) and [`didReplaceCharacters()`](./nstextfinderclient/didreplacecharacters%28%29.md) methods are used by the [`NSTextFinder.Action.replace`](./nstextfinder/action/replace.md), [`NSTextFinder.Action.replaceAll`](./nstextfinder/action/replaceall.md), [`NSTextFinder.Action.replaceAllInSelection`](./nstextfinder/action/replaceallinselection.md), and [`NSTextFinder.Action.replaceAndFind`](./nstextfinder/action/replaceandfind.md) actions. The NSTextFinder instance does not have the ability to directly make changes to the [`client`](./nstextfinder/client.md) content, so the `client` is responsible for performing replace operations in these methods.
 - Before a replace operation is performed, the `NSTextFinder` instance calls the [`shouldReplaceCharacters(inRanges:with:)`](./nstextfinderclient/shouldreplacecharacters%28inranges,with%29.md) method to determine if a replacement should take place. If it returns [`false`](../Swift/false.md), then the given range will not be replaced. If the method returns [`true`](../Swift/true.md), or is not implemented, then the `NSTextFinder` instance will call the [`replaceCharacters(in:with:)`](./nstextfinderclient/replacecharacters%28in,with%29.md) method, instructing the `client` to carry out the replacement. Finally, the [`didReplaceCharacters()`](./nstextfinderclient/didreplacecharacters%28%29.md) method will be called, if implemented, to indicate that the replacement was completed. For [`NSTextFinder.Action.replaceAll`](./nstextfinder/action/replaceall.md) actions, these methods may be called multiple times, starting from the end of the string and moving toward the beginning, in order to preserve the indexes of the matches which precede the current one.
 
-##### Incremental Search Support
+### Incremental Search Support
 
 A common feature used in conjunction with the find bar is incremental search. This feature allows users to find matches immediately as they are typing. In OS X v10.7, the text finder provides this feature for its clients with minimal additional API.
 
@@ -99,7 +99,7 @@ During incremental search, all visible matches are highlighted. If the `client` 
 
 Finally, this mode also requires the same two [`NSTextFinderClient`](./nstextfinderclient.md) protocol methods that are used to display the find indicator: [`contentView(at:effectiveCharacterRange:)`](./nstextfinderclient/contentview%28at,effectivecharacterrange%29.md) and [`rects(forCharacterRange:)`](./nstextfinderclient/rects%28forcharacterrange%29.md) be implemented. However, the implementation of these methods is identical for both purposes, so no additional work is required to support incremental search.
 
-##### Replacing Text
+### Replacing Text
 
 The text replacement methods:[`NSTextFinder.Action`](./nstextfinder/action.md), [`findIndicatorNeedsUpdate`](./nstextfinder/findindicatorneedsupdate.md), and [`validateAction(_:)`](./nstextfinder/validateaction%28_%29.md) are used by the replace, replace all, replace all in section, and replace and find actions.
 
@@ -107,7 +107,7 @@ Before a replace operation is performed, the `NSTextFinder` instance calls the `
 
 For replace all actions, these methods will be called multiple times, starting from the last match and moving toward the first, in order to preserve the indexes of the matches which precede the current one.
 
-##### The Text Finder Container
+### The Text Finder Container
 
 In order to display the find bar, a container for the find bar must be specified. The container is an object that conforms to the [`NSTextFinderBarContainer`](./nstextfinderbarcontainer.md) protocol. You specify a find bar container using the following NSTextFinder class’s [`findBarContainer`](./nstextfinder/findbarcontainer.md) property.
 
@@ -115,17 +115,17 @@ When a new NSTextFinder instance is created and instructed to display the find b
 
 > **Note**:  The container is free to modify the width of the find bar view, but it should never modify its height directly.
 
-##### Implementation by AppKit Classes
+### Implementation by AppKit Classes
 
 Two AppKit classes already provide support for the `NSTextFinder` class, including: the [`NSScrollView`](./nsscrollview.md) and [`NSTextView`](./nstextview.md) classes.
 
-###### Scroll View Support for the Find Bar
+#### Scroll View Support for the Find Bar
 
 The [`NSScrollView`](./nsscrollview.md) class conforms to [`NSTextFinderBarContainer`](./nstextfinderbarcontainer.md) protocol in order to support the find bar for any document view searched by the find bar. The find bar can be positioned either above or below the document view by assigning one of the values of the [`NSScrollView.FindBarPosition`](./nsscrollview/findbarposition-swift.enum.md) constants to the [`findBarPosition`](./nsscrollview/findbarposition-swift.property.md) property.
 
 > **Note**:  The actual values for the constants `NSScrollViewFindBarPosition` constants will change from the current values.
 
-###### Text View Support for the Find Bar
+#### Text View Support for the Find Bar
 
 The [`NSTextView`](./nstextview.md) class also supports the find bar. The find bar can be enabled or disabled on a text view with the [`usesFindBar`](./nstextview/usesfindbar.md) property.
 

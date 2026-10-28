@@ -16,11 +16,11 @@ Returns the transfer type, max packet size, and interval of a specified endpoint
 IOReturn (*GetEndpointProperties)(void *self, UInt8 alternateSetting, UInt8 endpointNumber, UInt8 direction, UInt8 *transferType, UInt16 *maxPacketSize, UInt8 *interval);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 This function may be useful for determining which alternate interface to select when trying to balance bandwidth allocations among isochronous pipes.
 

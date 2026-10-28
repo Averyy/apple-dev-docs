@@ -20,11 +20,11 @@ Analyzes an input sequence, returning when the sequence terminates.
 final func analyzeSequence<InputSequence>(_ inputSequence: InputSequence) async throws -> CMTime? where InputSequence : Sendable, InputSequence : AsyncSequence, InputSequence.Element == AnalyzerInput
 ```
 
-#### Return Value
+## Return Value
 
 The time-code of the last audio sample that was consumed from this or an earlier input sequence, or `nil` if no audio sample has been consumed. You may use this value for the parameter of [`finalizeAndFinish(through:)`](./finalizeandfinish%28through%29.md) (or other methods).
 
-#### Discussion
+## Discussion
 
 When this method returns, the last audio consumed from the input sequence may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](./finalize%28through%29.md) and await its return.
 

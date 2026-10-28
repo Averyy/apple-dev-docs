@@ -19,11 +19,11 @@ func CMSEncoderCopyEncapsulatedContentType(_ cmsEncoder: CMSEncoder, _ eContentT
 OSStatus CMSEncoderCopyEncapsulatedContentType(CMSEncoderRef cmsEncoder, CFDataRef*eContentTypeOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 In a signed message, the signed data consists of any type of data (the *encapsulated content*) plus the signature values. This function returns the object identifier (OID) of the encapsulated content as it was specified with the `CMSEncoderSetEncapsulatedContentType` function.
 

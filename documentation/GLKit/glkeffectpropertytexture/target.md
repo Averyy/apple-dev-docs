@@ -24,7 +24,7 @@ var target: GLKTextureTarget { get set }
 @property (nonatomic, assign) GLKTextureTarget target;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`GLKTextureTarget.target2D`](../glktexturetarget/target2d.md).
 

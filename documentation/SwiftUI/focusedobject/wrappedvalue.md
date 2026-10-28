@@ -22,7 +22,7 @@ The underlying value referenced by the focused object.
 @preconcurrency var wrappedValue: ObjectType? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`FocusedObject`](../focusedobject.md) attribute.
 

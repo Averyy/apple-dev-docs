@@ -23,11 +23,11 @@ convenience init(action: CXAction)
 - (instancetype) initWithAction:(CXAction *) action;
 ```
 
-#### Return Value
+## Return Value
 
 A new transaction with the specified action.
 
-#### Discussion
+## Discussion
 
 This initializer is a convenience for using the designated initializer and calling the [`addAction(_:)`](./addaction%28_%29.md) method passing `action`.
 

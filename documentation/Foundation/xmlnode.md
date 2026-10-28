@@ -20,17 +20,17 @@ class XMLNode
 @interface NSXMLNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 Node objects can be of different kinds, corresponding to the following markup constructs in an XML document: element, attribute, text, processing instruction, namespace, and comment. In addition, a document-node object (specifically, an instance of [`XMLDocument`](./xmldocument.md)) represents an XML document in its entirety. [`XMLNode`](./xmlnode.md) objects can also represent document type declarations as well as declarations in Document Type Definitions (DTDs). Class factory methods of [`XMLNode`](./xmlnode.md) enable you to create nodes of each kind. Only document, element, and DTD nodes may have child nodes.
 
 Among the XML family of classes (excluding [`XMLParser`](./xmlparser.md)) the [`XMLNode`](./xmlnode.md) class is the base class. Inheriting from it are the classes [`XMLElement`](./xmlelement.md), [`XMLDocument`](./xmldocument.md), [`XMLDTD`](./xmldtd.md), and [`XMLDTDNode`](./xmldtdnode.md). [`XMLNode`](./xmlnode.md) specifies the interface common to all XML node objects and defines common node behavior and attributes, for example hierarchy level, node name and value, tree traversal, and the ability to emit representative XML markup text.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You can subclass [`XMLNode`](./xmlnode.md) if you want nodes of kinds different from the supported ones, You can also create a subclass with more specialized attributes or behavior than [`XMLNode`](./xmlnode.md).
 
-###### Methods to Override
+#### Methods to Override
 
 To subclass [`XMLNode`](./xmlnode.md) you need to override the primary initializer, [`init(kind:options:)`](./xmlnode/init%28kind,options%29.md), and the methods listed below. In most cases, you need only invoke the superclass implementation, adding any subclass-specific code before or after the invocation, as necessary.
 
@@ -46,7 +46,7 @@ To subclass [`XMLNode`](./xmlnode.md) you need to override the primary initializ
 
 By default [`XMLNode`](./xmlnode.md) implements the `NSObject` [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) method to perform a deep comparison: two [`XMLNode`](./xmlnode.md) objects are not considered equal unless they have the same name, same child nodes, same attributes, and so on. The comparison looks at the node and its children, but does not include the node’s parent. If you want a different standard of comparison, override `isEqual:`.
 
-###### Special Considerations
+#### Special Considerations
 
 Because of the architecture and data model of NSXML, when it parses and processes a source of XML it cannot know about your subclass unless you override the [`XMLDocument`](./xmldocument.md) class method [`replacementClass(for:)`](./xmldocument/replacementclass%28for%29.md) to return your custom class in place of an NSXML class. If your custom class has no direct NSXML counterpart—for example, it is a subclass of [`XMLNode`](./xmlnode.md) that represents CDATA sections—then you can walk the tree after it has been created and insert the new node where appropriate.
 

@@ -23,11 +23,11 @@ init(temporalEventTriggerResolutionResult: INTemporalEventTriggerResolutionResul
 - (instancetype) initWithTemporalEventTriggerResolutionResult:(INTemporalEventTriggerResolutionResult *) temporalEventTriggerResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INAddTasksTemporalEventTriggerResolutionResult`](../inaddtaskstemporaleventtriggerresolutionresult.md) object or nil if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to resolve the temporal event trigger for the user’s intent.
 

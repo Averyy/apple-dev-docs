@@ -16,7 +16,7 @@ The device’s internet connection is offline.
 case network
 ```
 
-#### Discussion
+## Discussion
 
 Your app can try again after receiving this error, to see if network communication is restored.
 

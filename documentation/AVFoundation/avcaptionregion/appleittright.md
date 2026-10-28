@@ -22,7 +22,7 @@ class var appleITTRight: AVCaptionRegion { get }
 @property (class, readonly) AVCaptionRegion * appleITTRightRegion;
 ```
 
-#### Discussion
+## Discussion
 
 This region occupies the right 15% of the display area, and it uses a TBRL layout where a line progresses from top to bottom and the block extends from right to left. Lines are right justified.
 

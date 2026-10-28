@@ -24,11 +24,11 @@ subscript(idx: Int) -> MDLMaterialProperty? { get }
 - (MDLMaterialProperty *) objectAtIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The material property at the specified index.
 
-#### Discussion
+## Discussion
 
 The ordering of material properties in a material is arbitrary, but you can use this method (together with the count property) to iterate through the material’s complete list of material properties. You can also iterate through material properties using [Fast Enumeration](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Enumeration.html#//apple_ref/doc/uid/TP40008195-CH17-SW3).
 

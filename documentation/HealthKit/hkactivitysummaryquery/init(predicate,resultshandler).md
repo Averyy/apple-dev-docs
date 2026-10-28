@@ -28,11 +28,11 @@ init(predicate: NSPredicate?, resultsHandler handler: @escaping @Sendable (HKAct
 
 - [Executing Activity Summary Queries](../executing-activity-summary-queries.md)
 
-#### Return Value
+## Return Value
 
 A newly initialized activity summary query.
 
-#### Discussion
+## Discussion
 
 After instantiating the query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method to run it. The queries run on an anonymous background queue. As soon as the query is complete, the results handler block is executed on the same background queue (but not necessarily the same thread). You typically dispatch these results to the main queue to update the user interface.
 

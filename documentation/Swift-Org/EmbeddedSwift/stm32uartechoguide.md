@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a baremetal Swift program that echoes UART1 input on the STM32F746G-DISCO board, with no vendor SDKs or external toolchains.
 
-#### Overview
+## Overview
 
 This example demonstrates how to drive the STM32F7’s USART peripheral directly through Swift MMIO, without depending on an SDK. The Swift code configures UART1 on pins A9 (TX) and B7 (RX), redirects `print()` and the C `putchar` entry point to that port, and echoes every received byte back over the wire.
 
@@ -52,15 +52,15 @@ public func putchar(_ value: CInt) -> CInt {
 
 > **Note**: This is a baremetal example — there’s no SDK or operating system involved. See [Using Embedded Swift in baremetal mode](./baremetal.md) for general guidance on baremetal Embedded Swift development. See [Blinking an LED on the STM32F746G-DISCO](./stm32blinkguide.md) for a simpler baremetal STM32F746G-DISCO example that only toggles a GPIO pin.
 
-#### Install dependencies
+## Install dependencies
 
 Install the [stlink](https://github.com/stlink-org/stlink) command line tools, for example with `brew install stlink`.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory and build it:
 
@@ -69,7 +69,7 @@ $ cd stm32-uart-echo
 $ make
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect the STM32F746G-DISCO board to your Mac using the ST-LINK USB port. The board’s ST-LINK interface exposes a “usbmodem” serial device under `/dev`. Open a serial terminal connected to it, for example with the macOS built-in `screen` program:
 

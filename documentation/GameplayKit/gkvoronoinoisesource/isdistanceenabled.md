@@ -24,7 +24,7 @@ var isDistanceEnabled: Bool { get set }
 @property (nonatomic, getter=isDistanceEnabled) BOOL distanceEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A Voronoi noise source generates a field of noise values by randomly picking seed points at random positions in a space, then dividing the space into cells so that all the points in a cell are closer to that cell’s seed point than to any other seed point.
 

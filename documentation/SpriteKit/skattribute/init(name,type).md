@@ -25,11 +25,11 @@ init(name: String, type: SKAttributeType)
 - (instancetype) initWithName:(NSString *) name type:(SKAttributeType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new attribute object.
 
-#### Discussion
+## Discussion
 
 Attribute names are typically named with a preceding “a” and an underscore. The following code shows how to initialize an attribute named `a_frequency` which is of type [`SKAttributeType.float`](../skattributetype/float.md).
 

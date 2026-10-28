@@ -24,7 +24,7 @@ class PKPaymentToken
 @interface PKPaymentToken : NSObject
 ```
 
-#### Overview
+## Overview
 
 You access the payment token for an authorized payment request using the [`token`](./pkpayment/token.md) property of [`PKPayment`](./pkpayment.md).
 

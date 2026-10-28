@@ -23,7 +23,7 @@ class var authorizationStatus: ENAuthorizationStatus { get }
 @property (class, nonatomic, assign, readonly) ENAuthorizationStatus authorizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

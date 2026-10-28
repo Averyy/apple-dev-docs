@@ -19,11 +19,11 @@ class var printerNames: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * printerNames;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains the name of an available printer.
 
-#### Discussion
+## Discussion
 
 The user constructs the list of available printers when adding a printer in the Print panel or setting up printers in the Print & Scan preferences pane.
 

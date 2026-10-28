@@ -25,7 +25,7 @@ let MPMediaItemPropertyHasProtectedAsset: String
 extern NSString * const MPMediaItemPropertyHasProtectedAsset;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object that represents a `BOOL` data type.
 

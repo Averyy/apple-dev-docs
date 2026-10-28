@@ -22,7 +22,7 @@ optional func documentInteractionController(_ controller: UIDocumentInteractionC
 - (void) documentInteractionController:(UIDocumentInteractionController *) controller willBeginSendingToApplication:(NSString *) application;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the user chooses to open a document, which could occur from within a document preview. When a document is passed to another application, the contents of the document interaction controller’s [`annotation`](../uidocumentinteractioncontroller/annotation.md) property are passed with it. You can use this method to configure the contents of that property or prepare your own application for handing off the document.
 

@@ -17,7 +17,7 @@ The static friction to use between the material pair.
 var staticFriction: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be non-negative; negative values are clamped to zero.
 

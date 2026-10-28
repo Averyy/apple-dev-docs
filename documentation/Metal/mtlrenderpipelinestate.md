@@ -29,7 +29,7 @@ protocol MTLRenderPipelineState : MTLAllocation, Sendable
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 - [Improving rendering performance with vertex amplification](./improving-rendering-performance-with-vertex-amplification.md)
 
-#### Overview
+## Overview
 
 The [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md) protocol is an interface that represents a specific configuration for the graphics-rendering pipeline, including which shaders it uses. Use a pipeline state to configure a render pass by calling the [`setRenderPipelineState(_:)`](./mtlrendercommandencoder/setrenderpipelinestate%28_%29.md) method of an [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) instance.
 

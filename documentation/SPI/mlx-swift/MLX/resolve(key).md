@@ -17,7 +17,7 @@ Resolve the given key to a concrete MLXArray (random key).
 func resolve(key: (some RandomStateOrKey)? = MLXArray?.none) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This will use the following values (in order until one is found) to resolve the random key:
 

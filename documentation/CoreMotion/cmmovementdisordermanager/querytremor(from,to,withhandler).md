@@ -19,7 +19,7 @@ func queryTremor(from fromDate: Date, to toDate: Date, withHandler handler: @esc
 - (void) queryTremorFromDate:(NSDate *) fromDate toDate:(NSDate *) toDate withHandler:(CMTremorResultHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to asynchronously query for tremor results recorded by the [`monitorKinesias(forDuration:)`](./monitorkinesias%28forduration%29.md) method. The movement disorder manager keeps tremor results for only seven days after the time of recording.
 

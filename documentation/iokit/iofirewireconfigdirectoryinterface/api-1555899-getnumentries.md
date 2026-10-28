@@ -14,7 +14,7 @@
 IOReturn (*GetNumEntries)(IOFireWireLibConfigDirectoryRef self, int *outNumEntries);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

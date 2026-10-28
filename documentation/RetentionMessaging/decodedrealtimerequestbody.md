@@ -21,7 +21,7 @@ object DecodedRealtimeRequestBody
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 - [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md)
 
-#### Discussion
+## Discussion
 
 The App Store server sends a request to your `Get Retention Message` endpoint that includes a [`RealtimeRequestBody`](./realtimerequestbody.md). The `DecodedRealtimeRequestBody` is the decoded version of that request body.
 

@@ -15,11 +15,11 @@ A single app search result.
 object AppInfo
 ```
 
-#### Discussion
+## Discussion
 
 The `AppInfo` object represents one app returned from the search apps endpoint. It includes the app’s Adam ID, display name, developer name, and the country or region codes where the app is available.
 
-##### Example
+### Example
 
 ```json
 {

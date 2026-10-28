@@ -18,7 +18,7 @@ A sorted array of recommended values for the [`lensAperture`](../avcapturedevice
 @property (nonatomic, readonly) NSArray<NSNumber *> * recommendedLensApertureStops;
 ```
 
-#### Discussion
+## Discussion
 
 If this array contains a single item, the aperture is fixed at that value and cannot be changed. If this array contains multiple items, the first will be the minimum recommended 𝑓-stop and the last will be the maximum recommended 𝑓-stop.
 

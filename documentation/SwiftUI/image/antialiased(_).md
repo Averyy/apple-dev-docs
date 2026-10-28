@@ -21,7 +21,7 @@ Specifies whether SwiftUI applies antialiasing when rendering the image.
 func antialiased(_ isAntialiased: Bool) -> Image
 ```
 
-#### Return Value
+## Return Value
 
 An image with the antialiasing behavior set.
 

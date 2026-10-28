@@ -14,7 +14,7 @@
 #define kFFEffectType_RampForce_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a ramp force effect type
 

@@ -20,7 +20,7 @@ The maximum value for either dimension of the source frame, in pixels, for a giv
 + (NSInteger) maximumDimensionForSpatialScaleFactor:(float) spatialScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Both `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumPixelCountForSpatialScaleFactor:`](./maximumpixelcountforspatialscalefactor_.md) to determine valid frame dimensions. For example, if [`maximumDimensionForSpatialScaleFactor:`](./maximumdimensionforspatialscalefactor_.md) is 1920 and [`maximumPixelCountForSpatialScaleFactor:`](./maximumpixelcountforspatialscalefactor_.md) corresponds to 1920×1080, then 1920×1080, 1080×1920, and 1440×1440 are all valid, but 1920×1920 is not. Returns `0` if an unsupported scale factor is provided or if processor is unsupported.
 

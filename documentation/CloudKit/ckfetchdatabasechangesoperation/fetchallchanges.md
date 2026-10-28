@@ -25,7 +25,7 @@ var fetchAllChanges: Bool { get set }
 @property (nonatomic, assign) BOOL fetchAllChanges;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the operation sends repeat requests to the server until it fetches all changes. CloudKit executes the handler you set on the [`changeTokenUpdatedBlock`](./changetokenupdatedblock.md) property with a change token after each request.
 

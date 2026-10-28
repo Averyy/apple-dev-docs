@@ -15,7 +15,7 @@ Returns the default container.
 CloudKit.Container getDefaultContainer();
 ```
 
-#### Return Value
+## Return Value
 
 The default container (the first container that appears in the configuration list of containers).
 

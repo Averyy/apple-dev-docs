@@ -22,11 +22,11 @@ nonisolated
 func contrast(_ amount: Double) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that applies color contrast to this view.
 
-#### Discussion
+## Discussion
 
 Apply contrast to a view to increase or decrease the separation between similar colors in the view.
 

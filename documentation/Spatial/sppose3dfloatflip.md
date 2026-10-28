@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatFlip(SPPose3DFloat pose, SPAxis flipAxis);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose flipped along the specified axis.
 
-#### Discussion
+## Discussion
 
 Returns a pose that’s flipped along the specified axis.
 

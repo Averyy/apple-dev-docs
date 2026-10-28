@@ -5,7 +5,7 @@
 
 Customize a toolbar item for your Safari app extension.
 
-#### Overview
+## Overview
 
 Safari has a user-customizable toolbar that can contain a selection of buttons. A Safari app extension can provide a new toolbar item, and when the Safari app extension is in an enabled state, Safari adds that item to the toolbar by default. The user may choose to hide your toolbar item by customizing the toolbar.
 
@@ -21,7 +21,7 @@ Add a toolbar item with the following steps:
 
 To learn how to add a toolbar item, see [Using contextual menu and toolbar item keys](./using-contextual-menu-and-toolbar-item-keys.md).
 
-##### Localize the toolbar label
+### Localize the toolbar label
 
 Provide an `InfoPlist.strings` file and include localized text for a custom key based on your toolbar identifier. For example, to provide a Polish translation for a toolbar item with an identifier of `translate`, add the following entry to your strings file:
 
@@ -31,11 +31,11 @@ Provide an `InfoPlist.strings` file and include localized text for a custom key 
 
 For more information, see [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md).
 
-##### Dynamically change the image of a toolbar item
+### Dynamically change the image of a toolbar item
 
 To update a toolbar item’s image dynamically, Safari uses the  [`setImage(_:)`](./sfsafaritoolbaritem/setimage%28_%29.md) method for `SFSafariToolbarItem`. Setting the image to `nil` sets the default image.
 
-##### Adjust the state of the toolbar item
+### Adjust the state of the toolbar item
 
 Your app extension has the following control over the toolbar item:
 
@@ -49,7 +49,7 @@ State changes can trigger in either of the following ways:
 
 > ❗ **Important**:  An injected content script can’t directly force the toolbar item to become enabled or disabled. However, you can implement this control yourself by sending a message to your app extension, and changing the toolbar state in your message handler. For more information, see [Passing messages between Safari app extensions and injected scripts](./passing-messages-between-safari-app-extensions-and-injected-scripts.md).
 
-##### Validate the Safari toolbar item
+### Validate the Safari toolbar item
 
 When an event occurs that may require your toolbar’s state to change, Safari calls your app extension’s event handler. The event handler receives parameters that indicate the window the toolbar appears in, and a completion handler for your app extension to call. Your event handler determines whether to enable or disable the toolbar button and whether to display a badge, and then returns this information to Safari.
 
@@ -87,7 +87,7 @@ override func validateToolbarItem(in window: SFSafariWindow, validationHandler: 
 }
 ```
 
-##### Set the toolbar information explicitly
+### Set the toolbar information explicitly
 
 If you have a reference to an [`SFSafariWindow`](./sfsafariwindow.md) object, you can use it to get a proxy object for the toolbar item, and then use that object to set the toolbar’s status directly.
 
@@ -113,7 +113,7 @@ override func toolbarItemClicked(in window: SFSafariWindow) {
 }
 ```
 
-##### Add commands to the toolbar item
+### Add commands to the toolbar item
 
 If you configure your toolbar item to send a command, clicking the toolbar button in Safari calls your extension handler’s [`toolbarItemClicked(in:)`](./sfsafariextensionhandling/toolbaritemclicked%28in%29.md) method. You can then process the event however you like. The window passes in as a parameter, so this code retrieves the toolbar item for that window and updates its badge.
 
@@ -139,7 +139,7 @@ window.getActiveTab { (activeTab) in
 }];
 ```
 
-##### Display a popover for a toolbar item
+### Display a popover for a toolbar item
 
 A popover is a window that pops up over an active window when the user clicks a toolbar button — no navigation is necessary. You can use a popover to show a small amount of information or to complete a small action. The popover closes automatically when the user changes focus (by clicking another window, for example). The [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview) describe how to best use popovers.
 

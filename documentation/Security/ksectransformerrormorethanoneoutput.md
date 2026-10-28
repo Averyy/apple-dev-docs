@@ -25,7 +25,7 @@ var kSecTransformErrorMoreThanOneOutput: CFIndex { get }
 kSecTransformErrorMoreThanOneOutput
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs if [`SecTransformExecute(_:_:)`](./sectransformexecute%28_,_%29.md) has already been called.
 

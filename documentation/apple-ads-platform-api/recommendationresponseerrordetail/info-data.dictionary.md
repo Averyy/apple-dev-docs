@@ -15,7 +15,7 @@ Additional context that supplements the error message, varying by endpoint and e
 object RecommendationResponseErrorDetail.Info
 ```
 
-#### Discussion
+## Discussion
 
 The `info` field supplements the parent detail’s `message` with structured context, such as the field name, the invalid value, or acceptable alternatives. Its shape depends on the endpoint and the error condition. For example, a `MISSING_REQUIRED_FILTER` error includes the missing filter’s field name and location, as in `{"field": "promotedObjectId", "location": "filters"}`.
 

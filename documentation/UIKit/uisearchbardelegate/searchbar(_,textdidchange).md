@@ -23,7 +23,7 @@ optional func searchBar(_ searchBar: UISearchBar, textDidChange searchText: Stri
 - (void) searchBar:(UISearchBar *) searchBar textDidChange:(NSString *) searchText;
 ```
 
-#### Discussion
+## Discussion
 
 This method is also invoked when text is cleared from the search text field.
 

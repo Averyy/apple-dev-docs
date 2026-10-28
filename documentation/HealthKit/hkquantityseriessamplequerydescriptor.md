@@ -20,7 +20,7 @@ A query interface that reads the series data associated with quantity samples us
 struct HKQuantitySeriesSampleQueryDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use [`HKQuantitySeriesSampleQueryDescriptor`](./hkquantityseriessamplequerydescriptor.md) to read the series data included in quantity samples. Apps can save any quantity data as a series using the [`HKQuantitySeriesSampleBuilder`](./hkquantityseriessamplebuilder.md) class; however, series data typically comes from high-frequency data saved during a workout. Any [`HKQuantitySample`](./hkquantitysample.md) that has a [`count`](./hkquantitysample/count.md) greater than `1` contains series data.
 

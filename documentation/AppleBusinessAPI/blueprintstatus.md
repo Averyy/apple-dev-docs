@@ -20,7 +20,7 @@ string BlueprintStatus
 - `ACTIVE`
 - `TO_BE_DELETED`
 
-#### Possible Values
+## Possible Values
 
 - `ACTIVE` - The Blueprint is active and operational.
 - `TO_BE_DELETED` - The Blueprint is pending deletion.

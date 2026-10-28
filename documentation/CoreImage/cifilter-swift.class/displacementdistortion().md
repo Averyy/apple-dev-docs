@@ -24,11 +24,11 @@ class func displacementDistortion() -> any CIFilter & CIDisplacementDistortion
 + (CIFilter<CIDisplacementDistortion> *) displacementDistortionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the displacement distortion filter to an image. This effect distorts an image by applying the grayscale color values of the texture image.
 

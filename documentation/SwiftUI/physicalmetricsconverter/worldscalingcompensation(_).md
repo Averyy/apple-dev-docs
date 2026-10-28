@@ -16,7 +16,7 @@ Obtains a new converter with a different world scale compensation behavior.
 @preconcurrency func worldScalingCompensation(_ compensation: WorldScalingCompensation) -> PhysicalMetricsConverter
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: [`WorldScalingCompensation`](../worldscalingcompensation.md)
 

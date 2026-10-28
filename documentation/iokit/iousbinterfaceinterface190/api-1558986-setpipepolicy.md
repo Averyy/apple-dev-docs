@@ -16,11 +16,11 @@ Changes the amount of bandwidth of an isochronous pipe or interrupt pipe, or the
 IOReturn (*SetPipePolicy)(void *self, UInt8 pipeRef, UInt16 maxPacketSize, UInt8 maxInterval);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNotOpen if the interface is not open for exclusive access. May also return kIOReturnNoBandwidth if there is not enough bandwidth available on the bus, or kIOReturnBadArgument if the desired maxPacketSize is outside of the allowed range.
 
-#### Discussion
+## Discussion
 
 A pipe may be made smaller or larger (up to the maxPacketSize specified in the endpoint descriptor). When an interface is first opened, all pipes are created with their descriptor-supplied maxPacketSize. For isochronous or interrupt pipes, if there is not enough bandwidth on the bus to allocate to the pipe, the pipe is created with a reserved bandwidth of zero. Any attempts to transfer data on a pipe with zero bandwidth will result in a kIOReturnNoBandwidth error. The pipe must first be given some bandwidth using this call. This can also be used to return bandwidth for an isochronous or an interrupt pipe. If the driver knows that the device will not be sending the maxPacketSize data, it can use this call to return that unused bandwidth to the system. If an interrupt pipe wants to change the polling interval, it can do so with this call.
 

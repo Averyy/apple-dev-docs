@@ -5,7 +5,7 @@
 
 Perform vector and matrix BLAS functions on arrays of 128-bit vectors.
 
-#### Overview
+## Overview
 
 vectorOps.h declares a set of vector and matrix BLAS functions on arrays of 128-bit vectors containing single-precision floating-point values. The arrays can be of any desired length, but the number of `float` elements must be a multiple of 4.
 

@@ -9,13 +9,13 @@ Fetch a library music video by using its identifier.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
 This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
-##### Example
+### Example
 
 **Request**:
 

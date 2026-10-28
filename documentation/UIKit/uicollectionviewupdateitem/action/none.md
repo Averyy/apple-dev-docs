@@ -21,7 +21,7 @@ case none
 UICollectionUpdateActionNone
 ```
 
-#### Discussion
+## Discussion
 
 Take no action on the item.
 

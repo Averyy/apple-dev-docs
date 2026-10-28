@@ -21,7 +21,7 @@ A named value produced by a view.
 protocol PreferenceKey
 ```
 
-#### Overview
+## Overview
 
 A view with multiple children automatically combines its values for a given preference into a single value visible to its ancestors.
 

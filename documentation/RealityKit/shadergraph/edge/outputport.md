@@ -18,7 +18,7 @@ The name of the output port on the source node.
 var outputPort: String?
 ```
 
-#### Discussion
+## Discussion
 
 Output ports represent values produced by a node that can be connected to inputs of other nodes. When `nil`, refers to the first output of a node.
 

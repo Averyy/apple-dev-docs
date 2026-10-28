@@ -18,7 +18,7 @@ The number of mesh instance array slots.
 final var meshInstancesArrayCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Increase this value before calling `setMeshInstances(_:at:)` to assign arrays to slots. Setting this to a smaller value removes trailing slots.
 

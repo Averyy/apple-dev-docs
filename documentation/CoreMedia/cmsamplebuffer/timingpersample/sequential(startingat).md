@@ -21,7 +21,7 @@ All samples are adjacent to each other and have the same duration.
 case sequential(startingAt: CMSampleTimingInfo)
 ```
 
-#### Discussion
+## Discussion
 
 Only the fist sample will have the decode time specified here. Samples must have the same decode and presentation order.
 

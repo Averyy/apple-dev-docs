@@ -24,7 +24,7 @@ let HMCharacteristicTypeAirQuality: String
 extern NSString * const HMCharacteristicTypeAirQuality;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants enumerated in [`HMCharacteristicValueAirQuality`](./hmcharacteristicvalueairquality.md).
 

@@ -20,7 +20,7 @@ The descriptor that produced this program.
 var descriptor: PortalMaterial.Program.Descriptor { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to inspect the shader graph and the input or function-constant values that were used to compile the program — for example, to enumerate the input names a parent material can set, or to construct a fresh descriptor with adjusted constants and recompile.
 

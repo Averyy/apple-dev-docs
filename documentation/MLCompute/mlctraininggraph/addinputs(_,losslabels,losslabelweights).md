@@ -23,11 +23,11 @@ func addInputs(_ inputs: [String : MLCTensor], lossLabels: [String : MLCTensor]?
 - (BOOL) addInputs:(NSDictionary<NSString *,MLCTensor *> *) inputs lossLabels:(NSDictionary<NSString *,MLCTensor *> *) lossLabels lossLabelWeights:(NSDictionary<NSString *,MLCTensor *> *) lossLabelWeights;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 
-#### Discussion
+## Discussion
 
 Each input, loss label, or label weights tensor has a string identifier. When you execute the training graph, the string identifies which data object is the input for each tensor whose device memory requires updating before the framework actually executes the graph.
 

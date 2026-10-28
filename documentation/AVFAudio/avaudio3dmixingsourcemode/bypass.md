@@ -24,7 +24,7 @@ case bypass
 AVAudio3DMixingSourceModeBypass
 ```
 
-#### Discussion
+## Discussion
 
 If input and output audio channel layouts are equivalent, the framework copies all input channels directly to corresponding output channels. If the input and output audio channel layouts differ, the framework mixes according to the [`kAudioFormatProperty_MatrixMixMap`](../../AudioToolbox/kaudioformatproperty_matrixmixmap.md) property of the layouts. It applies no occlusion, obstruction, or reverb in this mode.
 

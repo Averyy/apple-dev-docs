@@ -20,11 +20,11 @@ func attribute(forName name: String) -> XMLNode?
 - (NSXMLNode *) attributeForName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An XML node object representing a matching attribute or `nil` if no such node was found.
 
-#### Discussion
+## Discussion
 
 If `name` is a qualified name, then this method invokes [`attribute(forLocalName:uri:)`](./attribute%28forlocalname,uri%29.md) with the URI parameter set to the URI associated with the prefix. Otherwise comparison is based on string equality of the qualified or non-qualified name.
 

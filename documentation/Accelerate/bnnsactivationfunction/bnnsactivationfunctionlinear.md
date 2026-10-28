@@ -21,7 +21,7 @@ An activation function that returns its input multiplied by a specified value.
 BNNSActivationFunctionLinear
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

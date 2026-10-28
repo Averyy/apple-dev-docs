@@ -20,7 +20,7 @@ typealias OSLMarkUPP = OSLMarkProcPtr
 typedef OSLMarkProcPtr OSLMarkUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a mark callback function, see [`OSLMarkProcPtr`](./oslmarkprocptr.md). 
 

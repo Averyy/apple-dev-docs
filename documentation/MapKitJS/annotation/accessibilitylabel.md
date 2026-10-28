@@ -16,7 +16,7 @@ get accessibilityLabel(): string | null;
 set accessibilityLabel(value: string | null);
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null`.
 

@@ -24,7 +24,7 @@ var contentsGravity: CALayerContentsGravity { get set }
 @property (copy) CALayerContentsGravity contentsGravity;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [Contents Gravity Values](../contents-gravity-values.md).
 
@@ -36,7 +36,7 @@ The default value of this property is [`resize`](../calayercontentsgravity/resiz
 >
 > For more information, see [Coordinate system](https://developer.apple.com/library/content/documentation/General/Conceptual/Devpedia-CocoaApp/CoordinateSystem.html).
 
-[Figure 1](./api-1410872-contentsgravity.md#2851774) shows four examples of the effect of setting different values for a layer’s [`contentsGravity`](./contentsgravity.md) property.
+[Figure 1](./contentsgravity.md#2851774) shows four examples of the effect of setting different values for a layer’s [`contentsGravity`](./contentsgravity.md) property.
 
 ![Different effects of setting a layer’s contents gravity](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851774@2x.png)
 

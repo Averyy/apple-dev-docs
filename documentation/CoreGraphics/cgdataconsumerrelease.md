@@ -21,7 +21,7 @@ Decrements the retain count of a data consumer.
 extern void CGDataConsumerRelease(CGDataConsumerRef consumer);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `consumer` parameter is `NULL`.
 

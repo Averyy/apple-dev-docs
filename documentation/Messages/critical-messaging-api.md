@@ -5,11 +5,11 @@
 
 Send critical messages from inside your app using the Critical Messaging API.
 
-#### Overview
+## Overview
 
 The Critical Messaging API provides a way for apps to deliver critical messages to a set of phone numbers. This can serve a number of purposes. For example, if an enterprise wants to receive check-ins from employees working in hazardous or rural environments, being able to automatically message a corporate check-in point may help check the safety of those employees without disrupting their work, or if the employee is unable to access or unlock their iPhone.
 
-##### Enable your app to use the Critical Messaging API
+### Enable your app to use the Critical Messaging API
 
 Add the `com.apple.developer.messages.critical-messaging` entitlement to your app’s entitlement file in Xcode. For instructions on how to add this entitlement, see [`Critical Messaging`](../BundleResources/entitlements/com.apple.developer.messages.critical-messaging.md).
 
@@ -18,7 +18,7 @@ to your app’s `Info.plist` file and provide a usage description for the operat
 
 > ❗ **Important**: Critical messages sent via this API may not transmit in scenarios where SMS service is unavailable.
 
-##### Understand API restrictions and usage limitations
+### Understand API restrictions and usage limitations
 
 You app’s use of this API must follow the [Developer Program License Agreement](https://developer.apple.com/support/terms/apple-developer-program-license-agreement#other-tech); additionally the following API limitations and restrictions apply:
 
@@ -28,7 +28,7 @@ You app’s use of this API must follow the [Developer Program License Agreement
 
 A person can change the authorization to send critical messages in Settings, under Privacy & Security > Critical Messaging. Check authorization using [`checkAuthorizationStatus(for:)`](./mscriticalsmsmessenger/checkauthorizationstatus%28for%29.md) before using this capability.
 
-##### Send critical SMS messages from your app
+### Send critical SMS messages from your app
 
 To send messages from your app, create an instance of the background messaging manager and recipients, request authorization, then send your message. For example:
 

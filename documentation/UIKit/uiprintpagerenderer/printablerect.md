@@ -22,7 +22,7 @@ var printableRect: CGRect { get }
 @property (nonatomic, readonly) CGRect printableRect;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a rectangle that defines the area in which the printer can print content. Sometimes this is referred to as the imageable area of the paper.
 

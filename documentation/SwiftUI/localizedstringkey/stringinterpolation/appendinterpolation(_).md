@@ -66,7 +66,7 @@ mutating func appendInterpolation<T>(_ value: T) where T : _FormatSpecifiable
 mutating func appendInterpolation<T>(_ object: T)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 

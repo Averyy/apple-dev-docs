@@ -20,7 +20,7 @@ The view size.
 extern NSAttributedStringDocumentAttributeKey const NSViewSizeDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../Foundation/nsvalue.md) object containing an [`NSSize`](../Foundation/nssize.md).
 

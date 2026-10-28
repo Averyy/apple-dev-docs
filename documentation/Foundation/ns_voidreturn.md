@@ -21,7 +21,7 @@ Permits program control to exit from an exception-handling domain.
 #define NS_VOIDRETURN
 ```
 
-#### Discussion
+## Discussion
 
 The `NS_VOIDRETURN` macro returns program control to the caller out of the exception-handling domain—that is, a section of code between the [`NS_DURING`](./ns_during.md) and [`NS_HANDLER`](./ns_handler.md) macros that might raise an exception. The standard `return` statement does not work as expected in the exception-handling domain.
 

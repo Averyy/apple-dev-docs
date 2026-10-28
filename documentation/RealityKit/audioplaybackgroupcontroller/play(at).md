@@ -21,7 +21,7 @@ Plays all audio resources in the group asynchronously at a specified time.
 @preconcurrency func play(at time: AVAudioTime) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to schedule playback of the group to a precise time in the future. This method enables sample-accurate timing for the group and synchronization with other audio sources.
 

@@ -23,7 +23,7 @@ class func perform(withKeyModifiers flags: XCUIElement.KeyModifierFlags, block: 
 + (void) performWithKeyModifiers:(XCUIKeyModifierFlags) flags block:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets and holds the keyboard modifiers you provide while you call methods to click on, drag from, or type into elements in the block.
 

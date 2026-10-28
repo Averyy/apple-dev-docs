@@ -19,7 +19,7 @@ func setInputMuteStateChangeHandler(_ inputMuteHandler: ((Bool) -> Bool)?) throw
 - (BOOL) setInputMuteStateChangeHandler:(BOOL (^)(BOOL inputShouldBeMuted)) inputMuteHandler error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to set a closure to handle your macOS app’s input muting logic. The system calls thie closure when the input mute state changes, either due to setting the [`isInputMuted`](./isinputmuted.md) state, or due to a Bluetooth audio accessory gesture (certain AirPods / Beats headphones) changing the mute state.
 

@@ -21,7 +21,7 @@ Describes an unsigned integer.
 typedef unsigned long NSUInteger;
 ```
 
-#### Discussion
+## Discussion
 
 When building 32-bit applications, NSUInteger is a 32-bit unsigned integer. A 64-bit application treats NSUInteger as a 64-bit unsigned integer
 

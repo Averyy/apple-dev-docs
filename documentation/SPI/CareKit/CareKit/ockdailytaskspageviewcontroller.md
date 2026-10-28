@@ -22,7 +22,7 @@ class OCKDailyTasksPageViewController
 
 - [Creating and displaying tasks for a patient](./creating-and-displaying-tasks-for-a-patient.md)
 
-#### Overview
+## Overview
 
 The selection in the calendar generates an automatic query that populates the tasks.
 

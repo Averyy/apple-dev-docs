@@ -20,11 +20,11 @@ Returns the entity’s component for the specified component class.
 - (GKComponent *) componentForClass:(Class) componentClass;
 ```
 
-#### Return Value
+## Return Value
 
 The component instance for the specified class, or `nil` if the entity has no components of that class.
 
-#### Discussion
+## Discussion
 
 An entity’s [`components`](./components.md) list always has no more than one instance of any component class. Use this method to retrieve a component instance when all you know is that the entity contains a component of a particular class.
 

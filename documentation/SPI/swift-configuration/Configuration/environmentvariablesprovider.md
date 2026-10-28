@@ -31,11 +31,11 @@ struct EnvironmentVariablesProvider
 - [Example use cases](./example-use-cases.md)
 - [Migrating to Swift Configuration](./migrating-to-swift-configuration.md)
 
-#### Overview
+## Overview
 
 This provider reads configuration values from environment variables, supporting both the current process environment and `.env` files. It automatically converts hierarchical configuration keys into standard environment variable naming conventions and handles type conversion for all supported configuration value types.
 
-#### Key transformation
+## Key transformation
 
 This provider transforms configuration keys into environment variable names using these rules:
 
@@ -46,7 +46,7 @@ This provider transforms configuration keys into environment variable names usin
 
 For example: `http.serverTimeout` becomes `HTTP_SERVER_TIMEOUT`
 
-#### Supported data types
+## Supported data types
 
 The provider supports all standard configuration types:
 
@@ -55,15 +55,15 @@ The provider supports all standard configuration types:
 - Byte arrays (base64-encoded by default)
 - Arrays of byte chunks
 
-#### Secret handling
+## Secret handling
 
 You can mark environment variables as secrets using a [`SecretsSpecifier`](./secretsspecifier.md). The provider automatically redacts secret values in debug output and logging.
 
 > ❗ **Important**: This provider performs case-insensitive lookup of environment variable names.
 
-#### Usage
+## Usage
 
-##### Reading environment variables in the current process
+### Reading environment variables in the current process
 
 ```swift
 // Assuming the environment contains the following variables:
@@ -84,7 +84,7 @@ let userAgent = config.string(forKey: "http.client.user-agent", default: "unspec
 // ...
 ```
 
-##### Reading environment variables from a `.env`-style file
+### Reading environment variables from a `.env`-style file
 
 ```swift
 // Assuming the local file system has a file called `.env` in the current working directory
@@ -108,7 +108,7 @@ let userAgent = config.string(forKey: "http.client.user-agent", default: "unspec
 // ...
 ```
 
-##### Config context
+### Config context
 
 The environment variables provider ignores the context passed in [`context`](./absoluteconfigkey/context.md).
 

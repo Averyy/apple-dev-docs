@@ -19,11 +19,11 @@
 static float SPAngleFloatCos(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The cosine of the specified angle.
 
-#### Discussion
+## Discussion
 
 Returns the cosine of the specified angle.
 

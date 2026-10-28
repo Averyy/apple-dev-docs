@@ -19,7 +19,7 @@ init(name: String, description: String, elementID: Int)
 - (instancetype) initWithName:(NSString *) name description:(NSString *) description elementID:(NSInteger) elementID;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`MERAWProcessingParameter.ListElement`](../listelement.md).
 

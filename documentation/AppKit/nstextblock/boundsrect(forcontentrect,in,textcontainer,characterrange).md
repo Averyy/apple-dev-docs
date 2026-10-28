@@ -19,11 +19,11 @@ func boundsRect(forContentRect contentRect: NSRect, in rect: NSRect, textContain
 - (NSRect) boundsRectForContentRect:(NSRect) contentRect inRect:(NSRect) rect textContainer:(NSTextContainer *) textContainer characterRange:(NSRange) charRange;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle the text in the block actually occupies, including padding, borders, and margins.
 
-#### Discussion
+## Discussion
 
 This methods is called by the typesetter after the text block is laid out to return the rectangle the text in the block actually occupies, including padding, borders, and margins.
 

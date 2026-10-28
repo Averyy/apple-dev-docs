@@ -23,7 +23,7 @@ func lockIfAvailable() -> Bool
 
 Available when `State` is `()`.
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 

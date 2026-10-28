@@ -19,7 +19,7 @@ var VMX_REASON_SIPI: Int { get }
 VMX_REASON_SIPI
 ```
 
-#### Discussion
+## Discussion
 
 A Startup Inter-Processor Interrupt (SIPI) arrived while the logical processor was in the “wait-for-SIPI” state.
 

@@ -24,7 +24,7 @@ var kAudioFilePropertyMarkerList: AudioFilePropertyID { get }
 kAudioFilePropertyMarkerList
 ```
 
-#### Discussion
+## Discussion
 
 A list of [`CFString`](../CoreFoundation/cfstring.md) objects representing audio file markers defined in the file.
 

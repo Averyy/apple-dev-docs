@@ -21,7 +21,7 @@ Creates an adaptive gain curve.
 init(chromaticities: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.Chromaticities = .bt709, alternateCurves: [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.tooManyAlternateCurves(count:limit:)`](../../../../error/toomanyalternatecurves%28count,limit%29.md) if more than four curves are supplied, or [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.invalidCustomChromaticities`](../../../../error/invalidcustomchromaticities.md) if custom chromaticities fall outside the valid range.
 

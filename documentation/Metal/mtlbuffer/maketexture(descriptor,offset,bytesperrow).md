@@ -30,11 +30,11 @@ func makeTexture(descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int
 - [Developing Metal apps that run in Simulator](../developing-metal-apps-that-run-in-simulator.md)
 - [Optimizing texture data](../optimizing-texture-data.md)
 
-#### Return Value
+## Return Value
 
 A new texture that shares the buffer’s underlying storage.
 
-#### Discussion
+## Discussion
 
 This method creates a new [`MTLTexture`](../mtltexture.md) instance that uses the same data as the buffer’s. Modifying the buffer also modifies the new texture because they share the same underlying memory.
 

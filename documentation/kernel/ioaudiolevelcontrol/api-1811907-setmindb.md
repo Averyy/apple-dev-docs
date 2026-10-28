@@ -12,7 +12,7 @@ virtual void setMinDB(
  IOFixedminDB);
 ```
 
-#### Overview
+## Overview
 
 This value is represented as an IOFixed value which is a fixed point number. The IOFixed type is a 16.16 fixed point value.
 

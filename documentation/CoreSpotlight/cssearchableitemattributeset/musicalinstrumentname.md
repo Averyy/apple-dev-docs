@@ -23,7 +23,7 @@ var musicalInstrumentName: String? { get set }
 @property (copy, nullable) NSString * musicalInstrumentName;
 ```
 
-#### Discussion
+## Discussion
 
 For some instrument categories, such as Percussion and Keyboards, you can specify an instrument name.
 

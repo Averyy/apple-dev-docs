@@ -16,4 +16,4 @@ init(transmitBandwidth: UInt32, receiveBandwidth: UInt32, transmitCodingFormat: 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init(transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-4r4o8)*
+*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/bluetoothhcienhancedsetupsynchronousconnectionparams/init%28transmitbandwidth:receivebandwidth:transmitcodingformat:receivecodingformat:transmitcodecframesize:receivecodecframesize:inputbandwidth:outputbandwidth:inputcodingformat:outputcodingformat:inputcodeddatasize:outputcodeddatasize:inputpc-4r4o8)*

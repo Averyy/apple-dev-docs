@@ -25,7 +25,7 @@ var isPaused: Bool { get set }
 @property (nonatomic, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md) (the default), SceneKit continuously updates and renders the contents of the scene. Pausing a scene pauses any running animations or actions attached to the scene graph, and suspends updates of the scene’s physics simulation and any particle systems in the scene.
 

@@ -20,7 +20,7 @@ The per-axis weight of the FK demand on the joint.
 var fkWeightPerAxis: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 Values are in the closed range `[0, 1]`, where `0` means no influence, and `1` is maximum influence.
 

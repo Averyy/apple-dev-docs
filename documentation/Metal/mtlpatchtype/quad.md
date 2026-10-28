@@ -24,7 +24,7 @@ case quad
 MTLPatchTypeQuad
 ```
 
-#### Discussion
+## Discussion
 
 Metal uses this value if the shader is a post-tessellation vertex function with the `[[patch(quad)]]` attribute.
 

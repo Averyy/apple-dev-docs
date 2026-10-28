@@ -19,11 +19,11 @@ func writeSelection(to pboard: NSPasteboard, types: [NSPasteboard.PasteboardType
 - (BOOL) writeSelectionToPasteboard:(NSPasteboard *) pboard types:(NSArray<NSString *> *) types;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data for any single type was successfully written, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method declares the data types on `pboard` and then invokes [`writeSelection(to:type:)`](./writeselection%28to,type%29.md) or the delegate method [`textView(_:write:at:to:type:)`](../nstextviewdelegate/textview%28_,write,at,to,type%29.md) for each type in the `types` array.
 

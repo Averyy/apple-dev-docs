@@ -25,7 +25,7 @@ static func window<T>(ofType: T.Type, usingSequence sequence: vDSP.WindowSequenc
 
 - [Reducing spectral leakage with windowing](../reducing-spectral-leakage-with-windowing.md)
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with values of a specified window sequence.
 

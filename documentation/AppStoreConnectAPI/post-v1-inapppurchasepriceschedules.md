@@ -13,7 +13,7 @@ Create a scheduled price change for an In-App Purchase.
 
 - [Managing In-App Purchases](./managing-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  A base territory is now required when adding or creating a price for an In-App Purchase.
 

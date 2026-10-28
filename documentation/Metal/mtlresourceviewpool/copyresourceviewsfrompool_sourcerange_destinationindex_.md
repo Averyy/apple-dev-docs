@@ -20,7 +20,7 @@ Copies a range of resource views from a source view pool to a destination locati
 - (MTLResourceID) copyResourceViewsFromPool:(id<MTLResourceViewPool>) sourcePool sourceRange:(NSRange) sourceRange destinationIndex:(NSUInteger) destinationIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The [`MTLResourceID`](../mtlresourceid.md) of the resource view corresponding to `destinationIndex` of the copy in this resource view pool.
 

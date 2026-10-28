@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 To develop apps for macOS Big Sur 11.4, build your apps against the macOS 11.3 SDK or later. The SDK comes bundled with Xcode 12.5. For information on the compatibility requirements for Xcode 12.5, see [Xcode 12.5 Release Notes](../Xcode-Release-Notes/xcode-12_5-release-notes.md).
 
-##### Displays
+### Displays
 
-###### New Features
+#### New Features
 
 - You can now use graphics cards based on the AMD Navi RDNA2 architecture (6800, 6800XT and 6900XT). (73709953)
 
-##### Xcode
+### Xcode
 
-###### Deprecations
+#### Deprecations
 
 - Don’t use the iOS [`MinimumOSVersion`](../BundleResources/information-property-list/minimumosversion.md) information property list key to declare the minimum release of macOS in which your app runs. Use [`LSMinimumSystemVersion`](../BundleResources/information-property-list/lsminimumsystemversion.md) instead. (73890473)
 

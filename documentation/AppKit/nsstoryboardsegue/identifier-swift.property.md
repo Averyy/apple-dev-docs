@@ -19,7 +19,7 @@ var identifier: NSStoryboardSegue.Identifier? { get }
 @property (copy, readonly, nullable) NSStoryboardSegueIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 You use this property if you override the [`prepare(for:sender:)`](../nssegueperforming/prepare%28for,sender%29.md) method of the [`NSSeguePerforming`](../nssegueperforming.md) protocol.
 

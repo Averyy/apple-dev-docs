@@ -23,7 +23,7 @@ optional func voiceChatService(_ voiceChatService: GKVoiceChatService, sendRealT
 - (void) voiceChatService:(GKVoiceChatService *) voiceChatService sendRealTimeData:(NSData *) data toParticipantID:(NSString *) participantID;
 ```
 
-#### Discussion
+## Discussion
 
 An implementation of this method maps the `participantID` string to a known participant and transmits the data to them. Data transmitted by this method can be sent unreliably. When the client on the other end receives this data, it should forward it to the voice chat service by calling the service’s [`receivedRealTime(_:fromParticipantID:)`](../gkvoicechatservice/receivedrealtime%28_,fromparticipantid%29.md) method.
 

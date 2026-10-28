@@ -19,7 +19,7 @@ func range(of block: NSTextBlock, at location: Int) -> NSRange
 - (NSRange) rangeOfTextBlock:(NSTextBlock *) block atIndex:(NSUInteger) location;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the text block containing the location.
 

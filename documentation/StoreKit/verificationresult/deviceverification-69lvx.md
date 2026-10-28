@@ -23,7 +23,7 @@ var deviceVerification: Data { get }
 
 Available when `SignedType` is `Transaction`.
 
-#### Discussion
+## Discussion
 
 For more information about using the [`deviceVerification`](./deviceverification-69lvx.md) value, see [`deviceVerification`](../transaction/deviceverification.md).
 

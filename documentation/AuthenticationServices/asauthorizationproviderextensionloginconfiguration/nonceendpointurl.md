@@ -23,7 +23,7 @@ var nonceEndpointURL: URL { get set }
 
 - [Obtaining a server nonce](../obtaining-a-server-nonce.md)
 
-#### Discussion
+## Discussion
 
 The value of this property defaults to [`tokenEndpointURL`](./tokenendpointurl.md).
 

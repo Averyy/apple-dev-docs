@@ -19,7 +19,7 @@ class WKInterfaceDevice
 @interface WKInterfaceDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use the information from [`WKInterfaceDevice`](./wkinterfacedevice.md)  to make decisions about the content you display in your app. You can also use this object to play haptic feedback when your app is active.
 

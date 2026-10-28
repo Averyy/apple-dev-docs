@@ -24,7 +24,7 @@ class func empty() -> CIImage
 + (CIImage *) emptyImage;
 ```
 
-#### Return Value
+## Return Value
 
 An image object.
 

@@ -21,7 +21,7 @@ The TLS cipher suite the task negotiated with the endpoint for the connection.
 var negotiatedTLSCipherSuite: tls_ciphersuite_t? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is a 2-byte sequence in host byte order. See [`tls_ciphersuite_t`](../../Security/tls_ciphersuite_t.md) for possible values. If the task didn’t negotiate an encrypted connection, this value is `nil`.
 

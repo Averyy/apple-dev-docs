@@ -16,7 +16,7 @@ struct vnop_open_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 The mknod vnop is used to create character and block device files, named pipe (FIFO) files, and named sockets. The newly created file should be returned with an iocount which will be dropped by the caller. A VNOP_MKNOD() call can come down without a preceding VNOP_OPEN().
 

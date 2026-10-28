@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Compensate for weak type information to clarify a parameter’s role.
 
-#### Overview
+## Overview
 
 Especially when a parameter type is `NSObject`, `Any`, `AnyObject`, or a fundamental type such as `Int` or `String`, type information and context at the point of use may not fully convey intent. In this example, the declaration may be clear, but the use site is vague.
 

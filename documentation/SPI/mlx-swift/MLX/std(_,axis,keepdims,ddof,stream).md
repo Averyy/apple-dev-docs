@@ -17,7 +17,7 @@ Compute the standard deviation over the given axis.
 func std(_ array: MLXArray, axis: Int, keepDims: Bool = false, ddof: Int = 0, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`std(_:axes:keepDims:ddof:stream:)`](./std%28_,axes,keepdims,ddof,stream%29.md)

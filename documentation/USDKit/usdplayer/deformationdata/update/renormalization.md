@@ -20,7 +20,7 @@ Changed renormalization data.
 let renormalization: USDPlayer.DeformationData.RenormalizationData.Update?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

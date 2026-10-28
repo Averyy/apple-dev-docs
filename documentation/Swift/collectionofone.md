@@ -22,7 +22,7 @@ A collection containing a single element.
 struct CollectionOfOne<Element>
 ```
 
-#### Overview
+## Overview
 
 You can use a `CollectionOfOne` instance when you need to efficiently represent a single value as a collection. For example, you can add a single element to an array by using a `CollectionOfOne` instance with the concatenation operator (`+`):
 

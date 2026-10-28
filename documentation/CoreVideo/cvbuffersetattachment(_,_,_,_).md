@@ -25,7 +25,7 @@ func CVBufferSetAttachment(_ buffer: CVBuffer, _ key: CFString, _ value: CFTypeR
 extern void CVBufferSetAttachment(CVBufferRef buffer, CFStringRef key, CFTypeRef value, CVAttachmentMode attachmentMode);
 ```
 
-#### Discussion
+## Discussion
 
 You can attach any Core Foundation object to a Core Video buffer to store additional information.
 

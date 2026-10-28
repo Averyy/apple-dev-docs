@@ -23,7 +23,7 @@ extern NSPasteboardType const NSPasteboardTypeRTF;
 
 - [Supporting Writing Tools via the pasteboard](../../supporting-writing-tools-via-the-pasteboard.md)
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`rtf`](./rtf.md) instead.
 

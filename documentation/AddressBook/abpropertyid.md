@@ -21,7 +21,7 @@ typealias ABPropertyID = Int32
 typedef int32_t ABPropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 See properties listed in `Constants` and `Group Properties`
 

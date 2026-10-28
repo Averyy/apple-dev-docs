@@ -21,7 +21,7 @@ func isEqual(to aHost: Host) -> Bool
 - (BOOL) isEqualToHost:(NSHost *) aHost;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the receiver and `host` share at least one network address; [`false`](../../Swift/false.md) otherwise.
 

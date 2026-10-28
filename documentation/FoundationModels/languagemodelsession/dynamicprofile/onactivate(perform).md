@@ -24,7 +24,7 @@ func onActivate(perform action: sending @escaping @isolated(any) () async -> Voi
 
 - [Composing dynamic sessions with instructions and profiles](../../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Discussion
+## Discussion
 
 A profile becomes active when it is first included in the session’s resolved configuration, or when it is re-included after being absent. Use this to set up state tied to the profile’s lifecycle:
 

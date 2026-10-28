@@ -25,7 +25,7 @@ let CBAdvertisementDataServiceDataKey: String
 extern NSString * const CBAdvertisementDataServiceDataKey;
 ```
 
-#### Discussion
+## Discussion
 
 The keys ([`CBUUID`](./cbuuid.md) objects) represent CBService UUIDs, and the values ([`NSData`](../Foundation/nsdata.md) objects) represent service-specific data.
 

@@ -25,7 +25,7 @@ struct SparseOpaqueSymbolicFactorization
 typedef struct { ... } SparseOpaqueSymbolicFactorization;
 ```
 
-#### Overview
+## Overview
 
 Represents a symbolic matrix factorization (that is, the pattern of the factors without the values). A single symbolic factorization may be the basis for multiple numerical factorizations of matrices with the same pattern but different nonzero values.
 

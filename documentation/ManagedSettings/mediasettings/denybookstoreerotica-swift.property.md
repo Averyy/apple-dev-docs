@@ -17,7 +17,7 @@ A Boolean value that indicates whether to deny media categorized as erotica in t
 var denyBookstoreErotica: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyBookstoreErotica` to deny the user permission to access media with an *erotica* tag in the Books store. If your app doesn’t configure this setting, the value is `nil`.
 

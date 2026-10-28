@@ -16,11 +16,11 @@ Returns the null state property for the element.
 Boolean IOHIDElementHasNullState(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if null state or FALSE if no null state.
 
-#### Discussion
+## Discussion
 
 Indicates whether the element has a state in which it is not sending meaningful data.
 

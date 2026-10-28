@@ -25,7 +25,7 @@ static let scriptCode: NSLocale.Key
 extern NSLocaleKey const NSLocaleScriptCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"Hant"`.
 

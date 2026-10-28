@@ -25,7 +25,7 @@ var COMPRESSION_LZBITMAP: compression_algorithm { get }
 COMPRESSION_LZBITMAP
 ```
 
-#### Discussion
+## Discussion
 
 LZBITMAP is the Apple compression algorithm designed around the SIMD vector instruction set found on modern CPUs. Its encoding scheme arranges literal and match data so that both encoder and decoder hot loops can advance multiple symbols per vector operation, which delivers substantially higher throughput than scalar LZ-family codecs at comparable compression ratios.
 

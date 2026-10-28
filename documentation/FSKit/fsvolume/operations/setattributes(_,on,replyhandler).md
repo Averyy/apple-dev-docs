@@ -24,7 +24,7 @@ func setAttributes(_ newAttributes: FSItem.SetAttributesRequest, on item: FSItem
 - (void) setAttributes:(FSItemSetAttributesRequest *) newAttributes onItem:(FSItem *) item replyHandler:(void (^)(FSItemAttributes *attributes, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Several attributes are considered “read-only”, and an attempt to set these attributes results in an error with the code `EINVAL`.
 

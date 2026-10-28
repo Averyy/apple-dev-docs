@@ -13,7 +13,7 @@
 kSBCModePageCaching_IC_Mask = (1 << kSBCModePageCaching_IC_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with flags field.
 

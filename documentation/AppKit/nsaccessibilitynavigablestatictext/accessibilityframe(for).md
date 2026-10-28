@@ -20,11 +20,11 @@ func accessibilityFrame(for range: NSRange) -> NSRect
 - (NSRect) accessibilityFrameForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that encloses the specified characters.
 
-#### Discussion
+## Discussion
 
 If the range crosses a line boundary, the returned rectangle will fully enclose all the lines of characters.
 

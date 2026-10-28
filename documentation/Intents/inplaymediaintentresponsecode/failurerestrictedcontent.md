@@ -24,7 +24,7 @@ case failureRestrictedContent
 INPlayMediaIntentResponseCodeFailureRestrictedContent
 ```
 
-#### Discussion
+## Discussion
 
 Respond with this code when you cannot handle the request because of a geographic region restriction or similar constraint.
 

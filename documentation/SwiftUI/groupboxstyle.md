@@ -20,7 +20,7 @@ A type that specifies the appearance and interaction of all group boxes within a
 @preconcurrency protocol GroupBoxStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current `GroupBoxStyle` for a view hierarchy, use the [`groupBoxStyle(_:)`](./view/groupboxstyle%28_%29.md) modifier.
 

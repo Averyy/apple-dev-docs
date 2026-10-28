@@ -21,7 +21,7 @@ Creates a units format style using the given parameters.
 init(allowedUnits: Set<Duration.UnitsFormatStyle.Unit>, width: Duration.UnitsFormatStyle.UnitWidth, maximumUnitCount: Int? = nil, zeroValueUnits: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy = .hide, valueLength: Int? = nil, fractionalPart: Duration.UnitsFormatStyle.FractionalPartDisplayStrategy = .hide)
 ```
 
-#### Discussion
+## Discussion
 
 Use this convenience function in situations that expect a [`Duration.UnitsFormatStyle`](../unitsformatstyle.md), such as [`formatted(_:)`](../formatted%28_%29.md), as an alternative to using the full initializer.
 

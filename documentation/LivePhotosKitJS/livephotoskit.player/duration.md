@@ -15,7 +15,7 @@ The duration, in seconds, of the entire Live Photo.
 readonly attribute Number duration;
 ```
 
-#### Discussion
+## Discussion
 
 The duration of the entire Live Photo presentation’s playback in seconds. This depends on the presentation style and is not known until the video is decoded.
 

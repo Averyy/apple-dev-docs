@@ -24,7 +24,7 @@ var context: JSContext! { get }
 @property (strong, readonly) JSContext * context;
 ```
 
-#### Discussion
+## Discussion
 
 A value maintains a strong reference to its enclosing JavaScript environment (a [`JSContext`](../jscontext.md) object). As such, you should not store JavaScript values inside objects that are owned by the same [`JSContext`](../jscontext.md) object, as this action creates a retain cycle. To properly manage memory when storing [`JSValue`](../jsvalue.md) instances, use the [`JSManagedValue`](../jsmanagedvalue.md) class.
 

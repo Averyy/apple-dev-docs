@@ -20,7 +20,7 @@ A structure that identifies a local transform relative to an entity or entity’
 struct GeometricPin
 ```
 
-#### Overview
+## Overview
 
 A geometric pin has a base transform and allows an optional offset relative to the base transform. The base transform is only available when the pin attaches to an entity. When a geometric pin does not attach to any entity (i.e. `GeometricPin/entity` is `nil`), the pin is just a floating local transform relative to some space to be defined. The pin’s query function such as `GeometricPin/position` or `GeometricPin/orientation` returns the local offset in this case.
 

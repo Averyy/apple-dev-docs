@@ -20,7 +20,7 @@ A list of allowed generation styles to choose from in the playground.
 @preconcurrency var allowedGenerationStyles: [ImagePlaygroundStyle] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The `selectedGenerationStyle` is expected to be included in this list.
 

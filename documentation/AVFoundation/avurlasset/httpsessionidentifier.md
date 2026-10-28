@@ -25,7 +25,7 @@ var httpSessionIdentifier: UUID { get }
 @property (nonatomic, readonly) NSUUID * httpSessionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The asset uses this value to set as the `X-Playback-Session-Id` header of HTTP requests that it creates.
 

@@ -19,7 +19,7 @@ var architecture: cpu_type_t { get set }
 @property cpu_type_t architecture;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `CPU_TYPE_ANY`, which causes the system to launch the app’s preferred architecture. You may specify a different value to force the system to launch that architecture. For a list of possible types, see the `<mach/machine.h>` header file.
 

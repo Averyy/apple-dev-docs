@@ -20,7 +20,7 @@ class CVOpenGLESTextureCache
 typedef struct __CVOpenGLESTextureCache * CVOpenGLESTextureCacheRef;
 ```
 
-#### Overview
+## Overview
 
 CoreVideo OpenGLES Texture Cache
 

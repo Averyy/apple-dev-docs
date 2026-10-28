@@ -20,7 +20,7 @@ Options available to determine the kinds of animation effects.
 enum EmphasisMotionType
 ```
 
-#### Overview
+## Overview
 
 The [`EmphasizeAction`](../emphasizeaction.md) structure accepts this enumeration as an initializer argument.
 

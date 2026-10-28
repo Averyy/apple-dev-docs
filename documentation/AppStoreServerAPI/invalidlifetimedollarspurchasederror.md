@@ -19,7 +19,7 @@ object InvalidLifetimeDollarsPurchasedError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 For valid `lifetimeDollarsPurchased` values in a [`ConsumptionRequestV1`](./consumptionrequestv1.md), see [`lifetimeDollarsPurchased`](./lifetimedollarspurchased.md).
 

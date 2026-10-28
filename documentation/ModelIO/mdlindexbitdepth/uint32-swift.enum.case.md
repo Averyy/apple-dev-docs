@@ -24,7 +24,7 @@ case uInt32
 MDLIndexBitDepthUInt32
 ```
 
-#### Discussion
+## Discussion
 
 An index buffer with this data type can contain a maximum of 4,294,967,296 indices.
 

@@ -19,7 +19,7 @@ func frame(ofRow row: Int, inColumn column: Int) -> NSRect
 - (NSRect) frameOfRow:(NSInteger) row inColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The frame of the cell, in the [`NSBrowser`](../nsbrowser.md) coordinate space.
 

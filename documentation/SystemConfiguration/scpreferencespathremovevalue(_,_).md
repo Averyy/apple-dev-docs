@@ -19,7 +19,7 @@ func SCPreferencesPathRemoveValue(_ prefs: SCPreferences, _ path: CFString) -> B
 Boolean SCPreferencesPathRemoveValue(SCPreferencesRef prefs, CFStringRef path);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if successful; otherwise, `FALSE`.
 

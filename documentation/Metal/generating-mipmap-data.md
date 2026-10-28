@@ -5,7 +5,7 @@
 
 Create your mipmaps either when you author content or at runtime.
 
-#### Overview
+## Overview
 
 You create mipmaps for texture sampling by applying a filter to the original image. Different filter algorithms vary in processing time and output quality. You need to determine the right tradeoff for your content by considering file size, quality, and runtime performance.
 

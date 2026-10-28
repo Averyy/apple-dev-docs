@@ -17,11 +17,11 @@ Convert a flattened list of key/value tuples back into a `NestedItem` structure.
 static func unflattened(_ tree: some Collection<(String, Element)>) -> NestedItem<Key, Element> where Key == String
 ```
 
-#### Discussion
+## Discussion
 
 This is typically called via [`unflattened(_:)`](../nesteddictionary/unflattened%28_%29-4p8bn.md).
 
-##### See Also
+### See Also
 
 - [`flattened(prefix:)`](./flattened%28prefix%29.md)
 - [`flattened(prefix:)`](../nesteddictionary/flattened%28prefix%29.md)

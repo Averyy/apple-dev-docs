@@ -25,7 +25,7 @@ func CMRemoveAttachment(_ target: CMAttachmentBearer, key: CFString)
 extern void CMRemoveAttachment(CMAttachmentBearerRef target, CFStringRef key);
 ```
 
-#### Discussion
+## Discussion
 
 If the attachment exists, the function removes the attachment and decrements the retain count. Given a [`CVBuffer`](../CoreVideo/cvbuffer.md), `CMRemoveAttachment` is equivalent to `CVBufferRemoveAttachment`.
 

@@ -19,7 +19,7 @@ Provides a convenience initializer to create an instance of audio data output.
 + (instancetype) new;
 ```
 
-#### Return Value
+## Return Value
 
 An audio capture output instance.
 

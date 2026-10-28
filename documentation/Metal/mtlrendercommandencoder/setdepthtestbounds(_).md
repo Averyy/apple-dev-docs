@@ -20,7 +20,7 @@ Configures the range for depth bounds testing.
 func setDepthTestBounds(_ bounds: ClosedRange<Float>)
 ```
 
-#### Discussion
+## Discussion
 
 The render command encoder disables depth bounds testing by default. The render command encoder also disables depth bounds testing when the `bounds` property equals `0.0...1.0`. `bounds.lowerBound` needs to be greater than or equal to `0.0`. `bounds.upperBound` needs to be less than or equal to `1.0`.
 

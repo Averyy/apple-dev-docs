@@ -20,7 +20,7 @@ sequence <ApplePayContactField> requiredShippingContactFields;
 
 - [Apple Pay on the Web Version 6 Release Notes](../apple-pay-on-the-web-version-6-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use [`requiredShippingContactFields`](./requiredshippingcontactfields.md) to request the user’s address and other contact information that you require to fulfill the order.
 

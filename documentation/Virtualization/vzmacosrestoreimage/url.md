@@ -23,7 +23,7 @@ var url: URL { get }
 
 - [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
-#### Discussion
+## Discussion
 
 If the restore image loaded using [`image(from:)`](./image%28from%29.md), the value of this property is a file URL.
 

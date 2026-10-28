@@ -15,11 +15,11 @@ Creates a Reply XML document for a given WS ProtocolHandler and context dictiona
 CFDataRef WSProtocolHandlerCopyReplyDocument(WSProtocolHandlerRef ref, CFDictionaryRef methodContext, CFTypeRef resultValue);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFDataRef` containing the XML response.
 
-#### Discussion
+## Discussion
 
 This function creates a Reply XML document for a given `WSProtocolHandler` and context dictionary. Protocol specific addtions (for example, `kWSSOAPMessageHeaders`) may also be present in the dictionary.
 

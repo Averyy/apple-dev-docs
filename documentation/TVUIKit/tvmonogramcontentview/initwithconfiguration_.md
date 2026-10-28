@@ -15,7 +15,7 @@ Creates a monogram content view with the configuration you specify.
 - (instancetype) initWithConfiguration:(TVMonogramContentConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`TVMonogramContentView`](../tvmonogramcontentview.md) instance.
 

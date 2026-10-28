@@ -23,7 +23,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 After a receiver is invalidated, no additional messages are sent to its delegate.
 

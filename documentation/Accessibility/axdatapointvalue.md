@@ -25,7 +25,7 @@ class AXDataPointValue
 @interface AXDataPointValue : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`AXDataPointValue`](./axdatapointvalue.md) can be either numeric or categorical. Data points in a numeric axis use the [`number`](./axdatapointvalue/number.md) property, and data points in a categorical axis use the [`category`](./axdatapointvalue/category.md) property.
 

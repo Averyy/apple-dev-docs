@@ -20,7 +20,7 @@ The thumbnail size in pixels that the image reader makes the image.
 @property (nonatomic, assign, readwrite) CGSize preferredThumbnailSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CGSizeZero`](../../CoreGraphics/cgsizezero.md).
 

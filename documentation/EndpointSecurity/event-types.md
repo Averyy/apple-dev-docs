@@ -5,7 +5,7 @@
 
 Types used by messages to deliver details specific to different kinds of Endpoint Security events.
 
-#### Overview
+## Overview
 
 The types in this section contain details of each event that an Endpoint Security message can contain. While the [`es_message_t`](./es_message_t.md) type itself is generic, the members of its [`event`](./es_message_t/event.md) union contain specific event types.
 

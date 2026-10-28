@@ -24,7 +24,7 @@ var resourceOptions: MTLResourceOptions { get set }
 @property (nonatomic, readwrite) MTLResourceOptions resourceOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This property only has an effect when you are allocating a new texture. If you are creating a texture whose data comes from another [`MTLResource`](../mtlresource.md) object, this property value is ignored, and the value of the original resource is used instead.
 

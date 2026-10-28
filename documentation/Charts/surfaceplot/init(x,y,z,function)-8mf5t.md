@@ -20,7 +20,7 @@ nonisolated
 init(x: LocalizedStringResource, y: LocalizedStringResource, z: LocalizedStringResource, function: @escaping @Sendable (Double, Double) -> Double)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: For x and z value pairs where the function is undefined or is infinity, the function is expected to return `Double.nan`
 

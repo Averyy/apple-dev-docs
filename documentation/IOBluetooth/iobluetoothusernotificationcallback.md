@@ -19,11 +19,11 @@ typealias IOBluetoothUserNotificationCallback = (UnsafeMutableRawPointer?, IOBlu
 typedef void (*)(void *, struct OpaqueIOBluetoothObjectRef *, struct OpaqueIOBluetoothObjectRef *) IOBluetoothUserNotificationCallback;
 ```
 
-#### Return Value
+## Return Value
 
 None.
 
-#### Discussion
+## Discussion
 
 This callback will be invoked when the notification for which it was registered is sent.
 

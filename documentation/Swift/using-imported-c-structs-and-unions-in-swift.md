@@ -5,11 +5,11 @@
 
 Learn how Swift represents imported C structures and unions, including types with bitfields and unnamed fields.
 
-#### Overview
+## Overview
 
 Swift imports any C structure declared in a C header as a Swift structure. The imported Swift structure contains a stored property for each C structure field and an initializer whose parameters correspond to the stored properties.
 
-##### Structures with Default Values
+### Structures with Default Values
 
 If all imported members have default values, Swift also provides a default initializer that takes no arguments. For example, given the following C structure:
 
@@ -33,7 +33,7 @@ public struct Color {
 }
 ```
 
-##### Unions
+### Unions
 
 Swift imports C unions as Swift structures. Although Swift doesn’t support natively declared unions, a C union imported as a Swift structure still behaves like a C union. For example, consider a C union named `SchroedingersCat` that has an `isAlive` and an `isDead` field:
 
@@ -73,11 +73,11 @@ print(mittens.isDead)
 // Prints "true"
 ```
 
-##### Bit Fields
+### Bit Fields
 
 Swift imports bit fields that are declared in structures, like those found in Foundation’s `NSDecimal` type, as computed properties. When accessing a computed property corresponding to a bit field, Swift automatically converts the value to and from compatible Swift types.
 
-##### Unnamed Structure and Union Fields
+### Unnamed Structure and Union Fields
 
 C `struct` and `union` types can define fields that have no name or that are of an unnamed type. Unnamed fields consist of a nested `struct` or `union` type with named fields.
 

@@ -22,7 +22,7 @@ func enableUploadJobExtension(with options: PHAssetResourceUploadJobOptions?) th
 - (BOOL) enableUploadJobExtensionWithOptions:(PHAssetResourceUploadJobOptions *) options error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The configuration is created with `options` already set, as a single change — unlike calling [`setUploadJobExtensionOptions(_:)`](./setuploadjobextensionoptions%28_%29.md) afterward, as a separate change.
 

@@ -24,7 +24,7 @@ var isDetached: Bool { get }
 @property (nonatomic, readonly) BOOL isDetached;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if and only if the event is part of a repeating event and one or more of its attributes have been modified from the repeating event’s default attributes.
 

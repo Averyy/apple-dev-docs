@@ -9,7 +9,7 @@ Set the list of promoted articles for the specified section.
 **Availability**:
 - Apple News API 1.0+
 
-#### Discussion
+## Discussion
 
 A Promote Articles in a Section request sets the list of promoted articles for the specified section. You can promote up to six articles per section. Note that each article promoted in a section should have a thumbnail image. The system generates an error if an article in the list doesn’t include a thumbnail image. The list of articles given in the body of this request replaces any previous list of promoted articles. You can remove the list of promoted articles for the section by specifying an empty list. The promoted articles list is valid for a system-defined time period after it is set.
 
@@ -26,7 +26,7 @@ The request body must be in JSON, in the following format:
 }
 ```
 
-##### Example
+### Example
 
 **Request**:
 

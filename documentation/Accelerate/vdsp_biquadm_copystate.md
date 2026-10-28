@@ -21,7 +21,7 @@ Copies the filter state from one single-precision multichannel biquadratic IIR f
 extern void vDSP_biquadm_CopyState(vDSP_biquadm_Setup __dest, const struct vDSP_biquadm_SetupStruct *__src);
 ```
 
-#### Discussion
+## Discussion
 
 Both `src` and `dest` objects must be valid single-precision multichannel biquad setup objects created by previous calls to [`vDSP_biquadm_CreateSetup`](../kernel/api-1579945-vdsp_biquadm_createsetup.md), and both objects must have the same number of channels and sections.
 

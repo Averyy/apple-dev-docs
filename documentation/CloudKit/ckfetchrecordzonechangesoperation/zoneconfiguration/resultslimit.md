@@ -25,7 +25,7 @@ var resultsLimit: Int { get set }
 @property (assign) NSUInteger resultsLimit;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the number of results in situations where you expect a large number of records. The default value is 0, which causes the server to return an appropriate number of records using dynamic conditions.
 

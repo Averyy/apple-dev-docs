@@ -19,11 +19,11 @@ func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 - (BOOL) tryToPerform:(SEL) action with:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`false`](../../Swift/false.md) if no responder is found that responds to `action;` otherwise, [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 If the receiver responds to `action`, it invokes the method with `object` as the argument and returns [`true`](../../Swift/true.md). If the receiver doesn’t respond, it sends this message to its next responder with the same selector and object.
 

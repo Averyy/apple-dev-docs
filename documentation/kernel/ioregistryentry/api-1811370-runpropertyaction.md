@@ -17,11 +17,11 @@ virtual IOReturn runPropertyAction(
  void *arg3 = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the Action callout.
 
-#### Overview
+## Overview
 
 Client function that causes the given action to be called in a manner that syncrhonises with the registry iterators and serialisers. This functin can be used to synchronously manipulate the property table of this nub
 

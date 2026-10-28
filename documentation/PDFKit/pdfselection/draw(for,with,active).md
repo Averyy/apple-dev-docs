@@ -24,7 +24,7 @@ func draw(for page: PDFPage, with box: PDFDisplayBox, active: Bool)
 - (void) drawForPage:(PDFPage *) page withBox:(PDFDisplayBox) box active:(BOOL) active;
 ```
 
-#### Discussion
+## Discussion
 
 The selection is drawn using the current highlight color. If active is [`true`](../../Swift/true.md), drawing uses `selectedTextBackgroundColor`. If [`false`](../../Swift/false.md), it uses `secondarySelectedControlColor`. Refer to the [`PDFPage`](../pdfpage.md) class for the list of available box types.
 

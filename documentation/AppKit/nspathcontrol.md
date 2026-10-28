@@ -19,7 +19,7 @@ class NSPathControl
 @interface NSPathControl : NSControl
 ```
 
-#### Overview
+## Overview
 
 The [`NSPathControl`](./nspathcontrol.md) class uses [`NSPathCell`](./nspathcell.md) to implement its user interface. [`NSPathControl`](./nspathcontrol.md) provides cover methods for most [`NSPathCell`](./nspathcell.md) methods—the cover method simply invokes the corresponding cell method. See also [`NSPathComponentCell`](./nspathcomponentcell.md), which represents individual components of the path, and two associated protocols: [`NSPathCellDelegate`](./nspathcelldelegate.md) and [`NSPathControlDelegate`](./nspathcontroldelegate.md).
 

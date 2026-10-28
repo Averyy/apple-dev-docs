@@ -21,7 +21,7 @@ Sends a reply to the originator of the message.
 func reply<Message>(_ object: Message) where Message : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 When a listener receives an [`XPCReceivedMessage`](../xpcreceivedmessage.md), the message keeps track of the client that sent it. This function sends the specified reply message back to the originating client.
 

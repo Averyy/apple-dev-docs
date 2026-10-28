@@ -19,7 +19,7 @@ func removeCursorRect(_ rect: NSRect, cursor object: NSCursor)
 - (void) removeCursorRect:(NSRect) rect cursor:(NSCursor *) object;
 ```
 
-#### Discussion
+## Discussion
 
 You should rarely need to use this method. The [`resetCursorRects()`](./resetcursorrects%28%29.md) method, which is called when the cursor rectangles need to be rebuilt, should establish only the cursor rectangles needed. If you implement [`resetCursorRects()`](./resetcursorrects%28%29.md) in this way, you can then simply modify the state that [`resetCursorRects()`](./resetcursorrects%28%29.md) uses to build its cursor rectangles and then invoke the `NSWindow` method [`invalidateCursorRects(for:)`](../nswindow/invalidatecursorrects%28for%29.md).
 

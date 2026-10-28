@@ -23,7 +23,7 @@ case failureNoMatchingWorkout
 INPauseWorkoutIntentResponseCodeFailureNoMatchingWorkout
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the user specifies a workout name that your app doesn’t recognize.
 

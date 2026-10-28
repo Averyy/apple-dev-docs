@@ -19,7 +19,7 @@ func setState(_ value: Int)
 - (void) setState:(NSInteger) value;
 ```
 
-#### Discussion
+## Discussion
 
 A control’s state (for example, checked or unchecked) affects how it is drawn. Note that push buttons are always in the on state.
 

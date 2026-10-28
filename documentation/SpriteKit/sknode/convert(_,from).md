@@ -25,7 +25,7 @@ func convert(_ point: CGPoint, from node: SKNode) -> CGPoint
 - (CGPoint) convertPoint:(CGPoint) point fromNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 The same point converted to this node’s coordinate system.
 

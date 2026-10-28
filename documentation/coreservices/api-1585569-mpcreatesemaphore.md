@@ -15,11 +15,11 @@ Creates a semaphore.
 OSStatus MPCreateSemaphore(MPSemaphoreCount maximumValue, MPSemaphoreCount initialValue, MPSemaphoreID *semaphore);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 If you want to create a binary semaphore, you can call the macro `MPCreateBinarySemaphore (MPSemaphoreID *semaphore)` instead, which simply calls `MPCreateSemaphore` with both `maximumValue` and `initialValue` set to 1.
 

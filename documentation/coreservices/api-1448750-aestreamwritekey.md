@@ -19,11 +19,11 @@ func AEStreamWriteKey(_ ref: AEStreamRef!, _ key: AEKeyword) -> OSStatus
 OSStatus AEStreamWriteKey(AEStreamRef ref, AEKeyword key);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 You must follow this call with a sequence of “AEStream” calls to specify exactly one descriptor that goes with the keyword. The descriptor you create can be of type `AEDesc`, `AEDescList`, or `AERecord`.
 

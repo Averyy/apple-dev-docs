@@ -20,7 +20,7 @@ init(query: OCKEventQuery)
 
 Available when `Result` is `OCKAnyEvent` and `Query` is `OCKEventQuery`.
 
-#### Discussion
+## Discussion
 
 The result synchronizes with changes in the store.
 

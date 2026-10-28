@@ -15,7 +15,7 @@ The payload that configures the first wired, active Ethernet interface.
 WiFi.EAPClientConfiguration 8021XFirstActiveEthernet
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.firstactiveethernet.managed` as the payload type.
 
@@ -27,7 +27,7 @@ This payload’s contents contain these profile-specific keys:
 
 Payloads with `active` in their name apply to Ethernet interfaces that are working at the time of profile installation. If there’s no active Ethernet interface working, this payload configures the interface with the highest service-order priority.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ Payloads with `active` in their name apply to Ethernet interfaces that are worki
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

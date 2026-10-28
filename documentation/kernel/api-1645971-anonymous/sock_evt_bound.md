@@ -13,7 +13,7 @@
 sock_evt_bound = 10
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this socket has moved to the bound state (only for PF_INET/PF_INET6 domain).
 

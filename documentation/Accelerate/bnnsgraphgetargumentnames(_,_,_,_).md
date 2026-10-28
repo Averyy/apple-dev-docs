@@ -25,11 +25,11 @@ func BNNSGraphGetArgumentNames(_ graph: bnns_graph_t, _ function: UnsafePointer<
 int BNNSGraphGetArgumentNames(bnns_graph_t graph, const char *function, size_t argument_names_count, const char **argument_names);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 This function is the equivalent of the concatenation of [`BNNSGraphGetOutputNames(_:_:_:_:)`](./bnnsgraphgetoutputnames%28_,_,_,_%29.md) and [`BNNSGraphGetInputNames(_:_:_:_:)`](./bnnsgraphgetinputnames%28_,_,_,_%29.md).
 

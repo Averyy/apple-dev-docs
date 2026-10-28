@@ -19,11 +19,11 @@ func lastProcessedDate() -> Date?
 - (NSDate *) lastProcessedDate;
 ```
 
-#### Return Value
+## Return Value
 
 The date of the most recently calculated results, or `nil` if no results are available.
 
-#### Discussion
+## Discussion
 
 Because the manager processes results in batches, data may not be available immediately.  Use this method to determine the end date for the currently processed data. Additional data will continue to become available, until the manager processes everything up to the monitor expiration date.
 

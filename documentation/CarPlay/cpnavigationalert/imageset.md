@@ -22,7 +22,7 @@ var imageSet: CPImageSet? { get }
 @property (nonatomic, copy, readonly, nullable) CPImageSet * imageSet;
 ```
 
-#### Discussion
+## Discussion
 
 The navigation alert doesn’t support animated images. If [`imageSet`](./imageset.md) references an animated image, the alert displays the first image in the animation sequence.
 

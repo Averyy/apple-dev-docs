@@ -13,7 +13,7 @@ virtual void handleClose(
  IOOptionBitsoptions );
 ```
 
-#### Overview
+## Overview
 
 This method is called by IOService::close() to handle a close from a client with the arbitration lock held.
 

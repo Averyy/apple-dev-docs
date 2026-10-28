@@ -20,11 +20,11 @@ func CGDisplayPrimaryDisplay(_ display: CGDirectDisplayID) -> CGDirectDisplayID
 extern CGDirectDisplayID CGDisplayPrimaryDisplay(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The primary display in the mirror set. If `display` is not hardware-mirrored, this function simply returns `display`.
 
-#### Discussion
+## Discussion
 
 In hardware mirroring, the contents of a single framebuffer are rendered in two or more displays simultaneously. The mirrored displays are said to be in a *hardware mirroring set*.
 

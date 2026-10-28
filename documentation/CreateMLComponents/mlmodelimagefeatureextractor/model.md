@@ -20,7 +20,7 @@ The CoreML model with .mlmodel extension.
 let model: MLModel
 ```
 
-#### Discussion
+## Discussion
 
 This model should satisfy the following requirements:
 

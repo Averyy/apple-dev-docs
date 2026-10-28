@@ -24,11 +24,11 @@ func MusicPlayerGetHostTimeForBeats(_ inPlayer: MusicPlayer, _ inBeats: MusicTim
 extern OSStatus MusicPlayerGetHostTimeForBeats(MusicPlayer inPlayer, MusicTimeStamp inBeats, UInt64 *outHostTime);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. This function returns an error if the player is not playing.
 
-#### Discussion
+## Discussion
 
 This function is valid only if the music player is playing. For converting between beats and seconds, see [`MusicSequenceGetSecondsForBeats(_:_:_:)`](./musicsequencegetsecondsforbeats%28_,_,_%29.md) and [`MusicSequenceGetBeatsForSeconds(_:_:_:)`](./musicsequencegetbeatsforseconds%28_,_,_%29.md).
 

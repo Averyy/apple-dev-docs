@@ -40,7 +40,7 @@ var image: UIImage? { get }
 @property (atomic, retain, readonly, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is undefined until you load the image using the [`loadImage(completionHandler:)`](./loadimage%28completionhandler%29.md) method.
 

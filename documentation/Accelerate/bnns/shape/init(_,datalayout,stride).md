@@ -21,7 +21,7 @@ Returns a new shape with the specified size, data layout, and stride.
 init(_ size: [Int], dataLayout: BNNS.DataLayout? = nil, stride: [Int]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Pass `nil` to `dataLayout` to have `init(size:dataLayout:stride:)` return a shape with the default layout for the rank that’s equal to the count of `size`. The default layouts for each dimensionality are:
 

@@ -22,7 +22,7 @@ var complicationTemplate: CLKComplicationTemplate { get set }
 @property (nonatomic, copy) CLKComplicationTemplate * complicationTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a template that matches the style of complication for which you’re providing data. Different templates require different types of data. You must configure the template data before returning the timeline entry to ClockKit.
 

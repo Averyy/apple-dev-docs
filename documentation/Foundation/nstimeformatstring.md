@@ -17,7 +17,7 @@ Key for a format string that specifies how dates with times are printed.
 extern NSString * const NSTimeFormatString;
 ```
 
-#### Discussion
+## Discussion
 
 The default is to use a 12-hour clock.
 

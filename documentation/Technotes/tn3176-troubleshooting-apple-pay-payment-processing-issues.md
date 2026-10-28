@@ -5,11 +5,11 @@
 
 Diagnose errors that occur when processing Apple Pay payments, identify common causes, and explore potential solutions.
 
-#### Overview
+## Overview
 
 This technote covers debugging common Apple Pay payment processing issues. When an Apple Pay payment is requested by your app or website, Apple sends an encrypted payment token to you to verify its signature, decrypt its payment data, and validate the transaction. Often, these payment processing issues are caused by an invalid [payment processing certificate](https://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-payment-processing-certificate), or by mishandling payment data by you or your payment service provider (PSP).
 
-#### Possible reasons for payment service provider errors while handling the Apple Pay payment token
+## Possible reasons for payment service provider errors while handling the Apple Pay payment token
 
 Payment token validation that fail for your PSP are often due to an issue with your payment processing certificate or the format of your token. In either case, your PSP may be able to provide additional insight.
 
@@ -24,7 +24,7 @@ Please confirm the following with your PSP:
 
 For more information about configuring your merchant identifier (ID) and certificates required for Apple Pay, see [Configuring Your Environment](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment).
 
-#### Possible reasons for payment token decryption errors
+## Possible reasons for payment token decryption errors
 
 You validate a transaction by verifying the signature, decrypting the payment data, and verifying additional transaction details. A payment token’s payment data is encrypted using either elliptic curve cryptography (ECC) or RSA encryption. The encryption algorith used is based on the merchant capabilities of the initial payment request. The payment token can be decrypted by the merchant with the certificate private key or by the PSP on behalf of the merchant. For China mainland, decrypt via RSA; otherwise decrypt via ECC.
 
@@ -39,7 +39,7 @@ If you experience payment token-related decryption issues, please confirm the fo
 
 For more information, see [Payment token format reference](https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/apple_pay/payment_token_format_reference).
 
-#### Possible reasons for payment token processing errors
+## Possible reasons for payment token processing errors
 
 Once decrypted, the payment token is passed to the PSP for processing. If you experience payment token-related processing issues, please confirm the following:
 
@@ -48,7 +48,7 @@ Once decrypted, the payment token is passed to the PSP for processing. If you ex
 - Your certificate signing request (CSR) Apple uses to encrypt the payment token was generated for the correct environment (sandbox or production). and not mismatched.
 - You aren’t reusing a previously processed payment token. Cryptograms are single-use and cannot be used over multiple transactions.
 
-#### Revision History
+## Revision History
 
 - **2024-06-25** First published.
 

@@ -21,7 +21,7 @@ The sort descriptors used to order the results.
 final var sortBy: [SortDescriptor<Element>] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property updates the underlying [`fetchDescriptor`](./fetchdescriptor.md)‘s sort descriptors and immediately refetches on the calling actor. When sectioning is active, the section’s sort descriptor is automatically re-prepended if not already the first descriptor. A `SortDescriptor` by `persistentModelID` is appended automatically if not already present to ensure stable ordering for difference computation.
 

@@ -21,7 +21,7 @@ The default record zone’s name.
 extern NSString * const CKRecordZoneDefaultName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value when you need to refer to the default zone by name, such as when creating a zone ID. The default zone has no special capabilities.
 

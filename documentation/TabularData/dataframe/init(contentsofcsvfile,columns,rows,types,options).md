@@ -21,7 +21,7 @@ Creates a data frame from a CSV file.
 init(contentsOfCSVFile url: URL, columns: [String]? = nil, rows: Range<Int>? = nil, types: [String : CSVType] = [:], options: CSVReadingOptions = .init()) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: A `CSVReadingError` instance.
 

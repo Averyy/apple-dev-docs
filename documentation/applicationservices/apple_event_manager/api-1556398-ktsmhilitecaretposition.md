@@ -4,7 +4,7 @@
 
 Specify text highlighting information.
 
-#### Overview
+## Overview
 
 This enumeration is available starting in OS X v10.4. Use these constants in place of the constants defined in `kCaretPosition`.
 

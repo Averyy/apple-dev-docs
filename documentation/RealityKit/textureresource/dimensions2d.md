@@ -20,7 +20,7 @@ The dimensions of a 2D texture.
 struct Dimensions2D
 ```
 
-#### Overview
+## Overview
 
 This specifies the width and height of a 2D texture.
 

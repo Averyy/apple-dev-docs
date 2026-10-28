@@ -25,11 +25,11 @@ class func changeCharge(to v: Float, duration: TimeInterval) -> SKAction
 + (SKAction *) changeChargeTo:(float) v duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the physics body’s [`charge`](../skphysicsbody/charge.md) property animates from its current value to its new value.
 

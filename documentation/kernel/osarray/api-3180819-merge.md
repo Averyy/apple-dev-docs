@@ -24,11 +24,11 @@ bool merge(const OSArray *otherArray);
 virtual bool merge(const OSArray *otherArray);
 ```
 
-#### Return Value
+## Return Value
 
 true on success, which retains all the added objects, or false on failure which does not retain the objects.
 
-#### Discussion
+## Discussion
 
 Appends all members of an array to this array. The array capacity will be grown if necessary.
 

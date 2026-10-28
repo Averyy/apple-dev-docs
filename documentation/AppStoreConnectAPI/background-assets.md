@@ -5,7 +5,7 @@
 
 Assets for your app that you can upload and download separately from the Apple hosted app.
 
-#### Overview
+## Overview
 
 Use the Background Assets API to manage content that Apple hosts, so people can download that content outside your main app bundle on the App Store. You submit asset packs to app review; your app can have:
 

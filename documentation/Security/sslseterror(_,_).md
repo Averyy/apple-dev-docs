@@ -24,11 +24,11 @@ func SSLSetError(_ context: SSLContext, _ status: OSStatus) -> OSStatus
 OSStatus SSLSetError(SSLContextRef context, OSStatus status);
 ```
 
-#### Return Value
+## Return Value
 
 A result code that represents the outcome of this function call, not to be confused with the `status` parameter. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this function after handling the steps of an SSL handshake, such as server certificate validation.
 

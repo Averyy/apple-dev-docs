@@ -23,7 +23,7 @@ static var digit: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is equivalent to `\d` in regex syntax.
 

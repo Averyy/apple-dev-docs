@@ -25,7 +25,7 @@ var particleAngularVelocityVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleAngularVelocityVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleAngularVelocity`](./particleangularvelocity.md) property. SceneKit randomly adjusts the initial angular velocity of each particle by up to half the [`particleAngularVelocityVariation`](./particleangularvelocityvariation.md) value. For example, if the [`particleAngularVelocity`](./particleangularvelocity.md) value is `10.0` degrees per second and the [`particleAngularVelocityVariation`](./particleangularvelocityvariation.md) value is `5.0` degrees per second, newly spawned particles spin at random speeds between `7.5` and `12.5` degrees per second.
 

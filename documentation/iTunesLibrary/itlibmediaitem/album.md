@@ -20,7 +20,7 @@ var album: ITLibAlbum { get }
 @property (nonatomic, retain, readonly) ITLibAlbum * album;
 ```
 
-#### Discussion
+## Discussion
 
 If the media item isn’t an audio track, this property is `nil`.
 

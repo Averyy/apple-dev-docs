@@ -25,7 +25,7 @@ enum LanguageDirection
 enum NSLocaleLanguageDirection : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the methods [`lineDirection(forLanguage:)`](./linedirection%28forlanguage%29.md) and [`characterDirection(forLanguage:)`](./characterdirection%28forlanguage%29.md).
 

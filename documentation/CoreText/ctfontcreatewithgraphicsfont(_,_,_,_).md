@@ -25,7 +25,7 @@ func CTFontCreateWithGraphicsFont(_ graphicsFont: CGFont, _ size: CGFloat, _ mat
 extern CTFontRefCTFontCreateWithGraphicsFont(CGFontRef graphicsFont, CGFloat size, const CGAffineTransform *matrix, CTFontDescriptorRef attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A new font reference for an existing [`CGFont`](../CoreGraphics/cgfont.md) object with the specified size, matrix, and additional attributes.
 

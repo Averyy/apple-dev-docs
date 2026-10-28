@@ -24,7 +24,7 @@ virtual kern_return_t GetRegistryEntryID(uint64_t *registryEntryID);
 kern_return_t GetRegistryEntryID(uint64_t *registryEntryID, OSDispatchMethod supermethod);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md). 
 

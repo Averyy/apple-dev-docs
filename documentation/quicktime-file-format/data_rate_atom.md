@@ -6,7 +6,7 @@
 
 A data rate atom specifies the minimum data rate required to play a movie.
 
-#### Overview
+## Overview
 
 A data rate atom specifies the minimum data rate required to play a movie. This is normally compared to the connection speed setting in the user’s QuickTime Settings control panel. Applications should play the movie with the highest data rate less than or equal to the user’s connection speed. If the connection speed is slower than any movie’s data rate, applications should play the movie with the lowest data rate. The movie with the highest data rate is assumed to have the highest quality.
 

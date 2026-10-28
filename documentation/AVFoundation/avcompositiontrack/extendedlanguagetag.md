@@ -21,7 +21,7 @@ The language tag of the track.
 var extendedLanguageTag: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [BCP-47](https://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
 

@@ -17,11 +17,11 @@ Performs the full forward pass of the model.
 func callAsFunction(_ inputs: MLXArray, positionIds: MLXArray? = nil, tokenTypeIds: MLXArray? = nil, attentionMask: MLXArray? = nil) -> EmbeddingModelOutput
 ```
 
-#### Return Value
+## Return Value
 
 An `EmbeddingModelOutput` containing hidden states and optionally the pooled output.
 
-#### Discussion
+## Discussion
 
 This method handles:
 

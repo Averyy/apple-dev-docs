@@ -22,7 +22,7 @@ var pinchGestureRecognizer: UIPinchGestureRecognizer? { get }
 @property (nonatomic, readonly, nullable) UIPinchGestureRecognizer * pinchGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 Your application accesses this property when it wants to more precisely control which pinch gestures are recognized by the scroll view.
 

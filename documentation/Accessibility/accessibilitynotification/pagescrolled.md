@@ -21,7 +21,7 @@ A notification that an app posts when a scroll action completes.
 struct PageScrolled
 ```
 
-#### Overview
+## Overview
 
 Include an announcement value, such as [`String`](../../Swift/string.md) or [`AttributedString`](../../Foundation/attributedstring.md), for an assistive app to announce. When an assistive app repeatedly receives the same scroll position value, it indicates to the user that scrolling can’t continue due to a border or boundary.
 

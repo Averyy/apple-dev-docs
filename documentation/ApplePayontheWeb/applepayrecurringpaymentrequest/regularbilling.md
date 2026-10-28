@@ -16,7 +16,7 @@ The regular billing cycle for the recurring payment, including start and end dat
 required ApplePayLineItem regularBilling;
 ```
 
-#### Discussion
+## Discussion
 
 This line item applies to a regular billing cycle for a recurring payment.
 

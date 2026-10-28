@@ -20,7 +20,7 @@ Returns the image object for the specified resource.
 required convenience init(imageLiteralResourceName name: String)
 ```
 
-#### Return Value
+## Return Value
 
 The image object.
 

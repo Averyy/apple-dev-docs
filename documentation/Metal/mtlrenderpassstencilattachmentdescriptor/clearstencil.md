@@ -24,7 +24,7 @@ var clearStencil: UInt32 { get set }
 @property (nonatomic) uint32_t clearStencil;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`loadAction`](../mtlrenderpassattachmentdescriptor/loadaction.md) property of the attachment is set to [`MTLLoadAction.clear`](../mtlloadaction/clear.md), then at the start of a render pass, the GPU fills the contents of the attachment with the value stored in the [`clearStencil`](./clearstencil.md) property. Otherwise, the GPU ignores [`clearStencil`](./clearstencil.md).
 

@@ -15,7 +15,7 @@ A list of country codes that indicate the regions where your music-streaming app
 - **Name**: `SKExternalPurchaseLinkStreamingRegions`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link-streaming`](../entitlements/com.apple.developer.storekit.external-purchase-link-streaming.md) entitlement.
 

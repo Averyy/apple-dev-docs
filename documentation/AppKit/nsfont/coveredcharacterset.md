@@ -19,7 +19,7 @@ var coveredCharacterSet: CharacterSet { get }
 @property (strong, readonly) NSCharacterSet * coveredCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The nominal character set is all of the entries in the font’s `cmap` table.
 

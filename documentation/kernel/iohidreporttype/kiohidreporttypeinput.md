@@ -13,7 +13,7 @@
 kIOHIDReportTypeInput = 0
 ```
 
-#### Discussion
+## Discussion
 
 Input report.
 

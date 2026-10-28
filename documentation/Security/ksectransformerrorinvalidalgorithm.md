@@ -25,7 +25,7 @@ var kSecTransformErrorInvalidAlgorithm: CFIndex { get }
 kSecTransformErrorInvalidAlgorithm
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the sign and verify transforms.
 

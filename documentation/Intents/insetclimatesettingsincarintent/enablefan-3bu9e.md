@@ -28,7 +28,7 @@ A Boolean value indicating whether to turn on the cabin fan system.
 @property (atomic, copy, readonly, nullable) NSNumber * enableFan;
 ```
 
-#### Discussion
+## Discussion
 
 Enabling the fan typically disengages the automated climate control systems and causes the vehicle to enter a manual mode. Check the [`fanSpeedIndex`](./fanspeedindex-4c1rr.md), [`fanSpeedPercentage`](./fanspeedpercentage-ep0u.md), or [`relativeFanSpeedSetting`](./relativefanspeedsetting.md) properties to determine whether the user specified a speed for the fan.
 

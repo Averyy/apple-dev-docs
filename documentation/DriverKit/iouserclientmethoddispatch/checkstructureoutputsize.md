@@ -18,7 +18,7 @@ The expected size of the scalar outputs.
 uint32_t checkStructureOutputSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this field is [`kIOUserClientVariableStructureSize`](../kiouserclientvariablestructuresize.md), don’t validate the structure size. For all other values, the value in this property must equal the value in the [`structureOutputMaximumSize`](../iouserclientmethodarguments/structureoutputmaximumsize.md) field of the [`IOUserClientMethodArguments`](../iouserclientmethodarguments.md) structure.
 

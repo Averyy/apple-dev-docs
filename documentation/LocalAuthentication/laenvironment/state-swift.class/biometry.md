@@ -22,7 +22,7 @@ var biometry: LAEnvironment.MechanismBiometry? { get }
 @property (nonatomic, readonly, nullable) LAEnvironmentMechanismBiometry * biometry;
 ```
 
-#### Discussion
+## Discussion
 
 Information about biometric authentication (Touch ID, Face ID or Optic ID).
 

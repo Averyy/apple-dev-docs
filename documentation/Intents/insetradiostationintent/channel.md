@@ -32,7 +32,7 @@ var channel: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * channel;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the channel number (if any) you can use to locate the radio station. You use this property to identify satellite radio stations or any radio station with a unique integer identifier in your system.
 

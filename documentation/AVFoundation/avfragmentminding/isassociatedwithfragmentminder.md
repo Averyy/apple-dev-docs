@@ -26,7 +26,7 @@ var isAssociatedWithFragmentMinder: Bool { get }
 @property (nonatomic, readonly, getter=isAssociatedWithFragmentMinder) BOOL associatedWithFragmentMinder;
 ```
 
-#### Discussion
+## Discussion
 
 Only asset objects associated with a fragment minder post change notifications.
 

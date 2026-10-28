@@ -16,7 +16,7 @@ Returns the size, in bytes, of the value contained in this IOHIDValueRef.
 CFIndex IOHIDValueGetLength(IOHIDValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns length of the value.
 

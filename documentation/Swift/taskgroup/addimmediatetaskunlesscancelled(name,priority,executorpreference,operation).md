@@ -23,11 +23,11 @@ mutating func addImmediateTaskUnlessCancelled(name: String? = nil, priority: Tas
 
 Available when `ChildTaskResult` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 This function *starts* the created task on the calling context. The task will continue executing on the caller’s context until it suspends, and after suspension will resume on the adequate executor. For a nonisolated operation this means running on the global concurrent pool, and on an isolated operation it means the appropriate executor of that isolation context.
 

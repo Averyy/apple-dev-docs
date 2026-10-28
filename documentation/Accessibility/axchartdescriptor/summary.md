@@ -25,7 +25,7 @@ var summary: String? { get set }
 @property (nonatomic, copy, nullable) NSString * summary;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a string that includes a brief description of the main takeaways or insights that the chart offers, for example, *“The chart shows that fuel efficiency decreases as vehicle weight increases.”*
 

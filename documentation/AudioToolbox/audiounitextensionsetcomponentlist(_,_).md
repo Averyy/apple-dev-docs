@@ -23,11 +23,11 @@ func AudioUnitExtensionSetComponentList(_ extensionIdentifier: CFString, _ audio
 extern OSStatus AudioUnitExtensionSetComponentList(CFStringRef extensionIdentifier, CFArrayRef audioComponentInfo);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 The bundle identifier of the process that calls this function must prefix or match the extension identifier.
 

@@ -19,7 +19,7 @@ func hv_vcpu_config_get_feature_reg(_ config: hv_vcpu_config_t, _ feature_reg: h
 extern hv_return_t hv_vcpu_config_get_feature_reg(hv_vcpu_config_t config, hv_feature_reg_t feature_reg, uint64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 

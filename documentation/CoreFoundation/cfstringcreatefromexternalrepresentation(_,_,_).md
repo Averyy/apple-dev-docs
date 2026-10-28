@@ -25,11 +25,11 @@ func CFStringCreateFromExternalRepresentation(_ alloc: CFAllocator!, _ data: CFD
 extern CFStringRefCFStringCreateFromExternalRepresentation(CFAllocatorRef alloc, CFDataRef data, CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string containing the characters from `data`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 In the CFData object form, the string can be written to disk as a file or be sent out over a network. If the encoding of the characters in the data object is Unicode, the function reads any BOM (byte order marker) and properly resolves endianness.
 

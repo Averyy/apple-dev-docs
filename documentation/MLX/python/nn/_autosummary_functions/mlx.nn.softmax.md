@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.softmax
 
-**class softmax(*x*, *axis=-1*)**
-: Applies the Softmax function.
+```python
+class softmax(x, axis=-1)
+```
+
+Applies the Softmax function.
+
 Applies \(\frac{e^{x_i}}{\sum_j e^{x_j}}\) element wise.

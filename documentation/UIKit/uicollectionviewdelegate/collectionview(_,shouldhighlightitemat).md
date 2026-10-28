@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldHighlight
 - (BOOL) collectionView:(UICollectionView *) collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item should be highlighted or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 As touch events arrive, the collection view highlights items in anticipation of the user selecting them. As it processes those touch events, the collection view calls this method to ask your delegate if a given cell should be highlighted. It calls this method only in response to user interactions and does not call it if you programmatically set the highlighting on a cell.
 

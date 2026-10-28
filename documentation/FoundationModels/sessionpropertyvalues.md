@@ -24,7 +24,7 @@ final class SessionPropertyValues
 
 - [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Overview
+## Overview
 
 Use session property values across your session. To help manage the context window, access [`history`](./sessionpropertyvalues/history.md) to modify the transcript for the session:
 

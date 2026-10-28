@@ -21,7 +21,7 @@ A type that represents a column.
 protocol ColumnProtocol<Element> : BidirectionalCollection
 ```
 
-#### Overview
+## Overview
 
 `ColumnProtocol` defines the common functionality for typed column types. Its type-erased counterpart is [`AnyColumnProtocol`](./anycolumnprotocol.md).
 

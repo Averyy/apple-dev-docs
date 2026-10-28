@@ -20,7 +20,7 @@ typealias AERemoteProcessResolverRef = OpaquePointer
 typedef struct AERemoteProcessResolver *AERemoteProcessResolverRef;
 ```
 
-#### Discussion
+## Discussion
 
 You create an instance of `AERemoteProcessResolverRef` by calling [`AECreateRemoteProcessResolver(_:_:)`](./api-1445692-aecreateremoteprocessresolver.md), and you must disposed of it by calling [`AEDisposeRemoteProcessResolver(_:)`](./api-1442572-aedisposeremoteprocessresolver.md). An instance of this type is not a `CFType` (the base type used by all Core Foundation derived opaque types). 
 

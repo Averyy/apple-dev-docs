@@ -5,7 +5,7 @@
 
 Ensure that your small system family widget works well in StandBy and CarPlay.
 
-#### Overview
+## Overview
 
 People can choose your small system family widgets from the widget gallery in StandBy or CarPlay:
 
@@ -22,7 +22,7 @@ For more information about making a background removable and optimizing your wid
 
 If your widget isn’t a good fit for StandBy or CarPlay, consider marking the applicable context as a disfavored location as described in [Indicate that a widget might not fit a specific context](./preparing-widgets-for-additional-contexts-and-appearances.md#Indicate-that-a-widget-might-not-fit-a-specific-context). Doing so doesn’t exclude your widget from CarPlay or StandBy, but it communicates to people that these locations aren’t the best fit.
 
-##### Linking to your app in CarPlay and using buttons or toggles
+### Linking to your app in CarPlay and using buttons or toggles
 
 In CarPlay, the way your widget links to your app depends on the specific context of using your app in a vehicle:
 
@@ -44,7 +44,7 @@ Additionally, your widget’s buttons and toggles behave differently to match th
 
 > **Note**: CarPlay integration is only available to apps with specific functionality. For more information, see [CarPlay](../CarPlay/CarPlay.md).
 
-##### Test widgets in CarPlay
+### Test widgets in CarPlay
 
 To test widgets in CarPlay, preview your widget in Xcode to verify that your widget works in StandBy and the CarPlay Simulator. For more information, refer to [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md) and [Using the CarPlay Simulator](../CarPlay/using-the-carplay-simulator.md).
 

@@ -21,11 +21,11 @@ Returns a new option set of the elements contained in this set, in the given set
 func union(_ other: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new option set made up of the elements contained in this set, in `other`, or in both.
 
-#### Discussion
+## Discussion
 
 This example uses the `union(_:)` method to add two more shipping options to the default set.
 

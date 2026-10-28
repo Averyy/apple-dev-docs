@@ -21,7 +21,7 @@ func SecTransformSetTransformAction(_ ref: SecTransformImplementationRef, _ acti
 extern CFErrorRefSecTransformSetTransformAction(SecTransformImplementationRef ref, CFStringRef action, SecTransformActionBlock newAction);
 ```
 
-#### Return Value
+## Return Value
 
 An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the error’s memory when you are done with it.
 

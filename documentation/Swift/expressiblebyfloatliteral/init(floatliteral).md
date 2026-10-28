@@ -22,7 +22,7 @@ Creates an instance initialized to the specified floating-point value.
 init(floatLiteral value: Self.FloatLiteralType)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. Instead, initialize a variable or constant using a floating-point literal. For example:
 

@@ -15,7 +15,7 @@ Set the parameter names, types, and order for a method invocation.
 void WSMethodInvocationSetParameters(WSMethodInvocationRef invocation, CFDictionaryRef parameters, CFArrayRef parameterOrder);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the parameters for a method invocation. The parameters dictionary should contain the names and types of the parameters. The parameter order array should contain the names of the parameters in the order they should be passed. The `parameterOrder` may be `NULL`, in which case the order of the parameters is undefined.  If the parameters dictionary contains more or fewer parameters than are specified by the order, the behavior is undefined.
 

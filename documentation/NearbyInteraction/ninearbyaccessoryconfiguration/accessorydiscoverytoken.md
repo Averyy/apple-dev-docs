@@ -27,7 +27,7 @@ var accessoryDiscoveryToken: NIDiscoveryToken { get }
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The value of this property refers to a specific peer accessory. To match [`distance`](../ninearbyobject/distance-676dm.md) updates your app receives through a session with a peer using [`session(_:didUpdate:)`](../nisessiondelegate/session%28_,didupdate%29.md), compare the argument object’s discovery token with the value of this property.
 

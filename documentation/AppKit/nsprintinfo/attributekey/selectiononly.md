@@ -19,7 +19,7 @@ static let selectionOnly: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintSelectionOnly;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), only the current selection is printed.
 

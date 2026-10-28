@@ -18,7 +18,7 @@ Your app attempted to use functionality that isn’t supported in the specified 
 static var unsupported: SKANError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For information about supported features by version number, see [SKAdNetwork release notes](../skadnetwork-release-notes.md). For example, to provide view-through ads, use SKAdNetwork version 2.2 or later.
 

@@ -15,7 +15,7 @@ Returns the latest viewpoint properties.
 extern bool ar_stereo_properties_provider_get_viewpoint_properties(ar_stereo_properties_provider_t stereo_properties_provider, ar_viewpoint_properties_t viewpoint_properties);
 ```
 
-#### Return Value
+## Return Value
 
 `true`, if the viewpoint properties were updated.
 

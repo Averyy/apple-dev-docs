@@ -21,7 +21,7 @@ func CGDisplayIsCaptured(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsCaptured(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is captured; otherwise, `false`.
 

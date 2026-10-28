@@ -18,11 +18,11 @@ A member and extension macro that, when applied to a struct, class or enum decla
 ## Declaration
 
 ```swift
-@attached
-(extension, conformances: Animatable) @attached(member, names: named(animatableData)) macro Animatable()
+@attached(extension, conformances: Animatable)
+@attached(member, names: named(animatableData)) macro Animatable()
 ```
 
-#### Overview
+## Overview
 
 ```swift
 @Animatable

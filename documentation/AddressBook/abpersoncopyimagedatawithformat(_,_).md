@@ -23,7 +23,7 @@ func ABPersonCopyImageDataWithFormat(_ person: ABRecord!, _ format: ABPersonImag
 extern CFDataRefABPersonCopyImageDataWithFormat(ABRecordRef person, ABPersonImageFormat format);
 ```
 
-#### Return Value
+## Return Value
 
 The picture for `person`, or `NULL` if the person has no picture.
 

@@ -13,7 +13,7 @@
 kINQUIRY_Byte3_AERC_Mask = (1 << kINQUIRY_Byte3_AERC_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the AERC bit.
 

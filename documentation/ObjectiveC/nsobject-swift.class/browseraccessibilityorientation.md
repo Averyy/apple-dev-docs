@@ -22,7 +22,7 @@ var browserAccessibilityOrientation: BEAccessibilityOrientation { get set }
 @property (nonatomic, assign) BEAccessibilityOrientation browserAccessibilityOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 Represents the value of aria-orientation. default: BEAccessibilityOrientationUnknown
 

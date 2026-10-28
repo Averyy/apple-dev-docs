@@ -23,7 +23,7 @@ case long
 NSPersonNameComponentsFormatterStyleLong
 ```
 
-#### Discussion
+## Discussion
 
 The fully qualified form complete with all known components. See “[Long](../../personnamecomponentsformatter.md#Long)” for details about its specific behavior.
 

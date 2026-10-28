@@ -25,11 +25,11 @@ func unitString(fromJoules numberInJoules: Double, usedUnit unitp: UnsafeMutable
 - (NSString *) unitStringFromJoules:(double) numberInJoules usedUnit:(NSEnergyFormatterUnit *) unitp;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string representing the unit.
 
-#### Discussion
+## Discussion
 
 This method selects the correct unit based on the formatter’s locale, the magnitude of the value, and the [`isForFoodEnergyUse`](./isforfoodenergyuse.md) property.
 

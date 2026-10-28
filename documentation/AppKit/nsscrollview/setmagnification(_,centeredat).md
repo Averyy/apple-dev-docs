@@ -19,7 +19,7 @@ func setMagnification(_ magnification: CGFloat, centeredAt point: NSPoint)
 - (void) setMagnification:(CGFloat) magnification centeredAtPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method scales the content view such that the passed in point (in content view space) remains at the same screen location once the scaling is completed. The resulting magnification value is clipped to the [`minMagnification`](./minmagnification.md) and [`maxMagnification`](./maxmagnification.md) values. To animate the magnification, use the object’s animator.
 

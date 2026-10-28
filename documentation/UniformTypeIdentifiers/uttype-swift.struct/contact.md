@@ -21,7 +21,7 @@ A base type that represents contact information.
 static var contact: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.contact`.
 

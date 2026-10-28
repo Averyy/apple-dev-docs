@@ -20,7 +20,7 @@ enum Target
 enum cp_drawable_target : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to determine whether content should be drawn for certain targets.
 

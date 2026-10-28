@@ -24,7 +24,7 @@ case manual
 PHASEUpdateModeManual
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the framework waits for the app to call [`update()`](../update%28%29.md) before processing the app’s API calls and adjusting internal states.
 

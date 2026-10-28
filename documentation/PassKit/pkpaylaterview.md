@@ -23,7 +23,7 @@ class PKPayLaterView
 @interface PKPayLaterView : UIView
 ```
 
-#### Overview
+## Overview
 
 Use this view to display a widget that allows people to learn more about the Apple Pay Later feature.
 

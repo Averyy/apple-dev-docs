@@ -24,7 +24,7 @@ typealias AUAudioChannelCount = UInt32
 typedef uint32_t AUAudioChannelCount;
 ```
 
-#### Discussion
+## Discussion
 
 This alias is type `uint32_t` for impedance-matching with the pervasive use of `UInt32` in the Audio Toolbox framework and the C Audio Unit framework APIs, as well as the [`AVAudioChannelCount`](../AVFAudio/avaudiochannelcount.md) data type.
 

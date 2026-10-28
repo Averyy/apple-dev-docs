@@ -21,7 +21,7 @@ An effect that scales the symbol down as it disappears.
 + (instancetype) disappearDownEffect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the disappear effect options that makes the symbol scale down as it disappears.
 

@@ -33,7 +33,7 @@ optional func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, di
 
 - [Fetching website data into memory](../fetching-website-data-into-memory.md)
 
-#### Discussion
+## Discussion
 
 Implementing this method is optional unless you need to cancel the transfer or convert it to a download task when the response headers are first received. If you don’t provide this delegate method, the session always allows the task to continue.
 

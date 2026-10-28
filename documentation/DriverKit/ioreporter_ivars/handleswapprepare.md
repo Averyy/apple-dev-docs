@@ -16,11 +16,11 @@
 virtual IOReturn handleSwapPrepare(int newNChannels);
 ```
 
-#### Return Value
+## Return Value
 
 IOReturn code
 
-#### Discussion
+## Discussion
 
 Allocate memory in preparation for an instance variable swap
 

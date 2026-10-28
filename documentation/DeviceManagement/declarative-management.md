@@ -19,7 +19,7 @@ Sends declarative management requests to the server.
 
 - [Integrating declarative management](./integrating-declarative-management.md)
 
-#### Discussion
+## Discussion
 
 The `Data` field is optional, depending on the `Endpoint` value, as described below:
 
@@ -33,7 +33,7 @@ A successful response to this request is a `200 OK` HTTP status, with a response
 
 - `status`: The client uses the `status` endpoint to send a status report to the server. The `Data` field needs to be present and set to a Base64-encoded JSON object conforming to the [`StatusReport`](./statusreport.md) schema. A successful response to this request is a `200 OK` HTTP status, with an empty response body.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

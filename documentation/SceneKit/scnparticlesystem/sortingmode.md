@@ -25,7 +25,7 @@ var sortingMode: SCNParticleSortingMode { get set }
 @property (nonatomic) SCNParticleSortingMode sortingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Together with the [`blendMode`](./blendmode.md) property, sorting modes affect the appearance of overlapping particle images when rendered.
 

@@ -5,7 +5,7 @@
 
 Use the Apple Pay JS API to check whether Apple Pay is available, to check whether a device has a payment credential provisioned in Wallet, and to determine when to display an Apple Pay button.
 
-#### Overview
+## Overview
 
 Before displaying an Apple Pay button or creating an Apple Pay session, ensure that the Apple Pay JS API is available and enabled on the current device. To check whether the Apple Pay JS API is available in the browser, verify that the `window`.`ApplePaySession` class exists:
 
@@ -20,7 +20,7 @@ Next, check whether payments are possible. Call either the [`canMakePayments`](.
 - **[`canMakePayments`](./applepaysession/canmakepayments.md)**: This method verifies that the device is capable of making Apple Pay payments; it doesn’t verify that the person has a provisioned card for use with Apple Pay on the device. You can call this method at any time.
 - **[`applePayCapabilities`](./applepaysession/applepaycapabilities.md)**: This method verifies both that the device is capable of making Apple Pay payments, and that the person has at least one provisioned card. This method asynchronously contacts the Apple Pay servers as part of the verification process. You can only call this method if you want to default to Apple Pay during your checkout flow, or if you want to add an Apple Pay button to your product detail page.
 
-##### Verify whether the device supports Apple Pay
+### Verify whether the device supports Apple Pay
 
 According to the [Apple Pay on the Web Acceptable Use Guidelines](https://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/), if you invoke the [`applePayCapabilities`](./applepaysession/applepaycapabilities.md) API and determine that a person has an active card provisioned into Wallet, then Apple Pay should be the primary, but not necessarily sole payment option on any webpage that accepts payments, like the checkout page or product detail page. In all other situations, use [`canMakePayments`](./applepaysession/canmakepayments.md) instead.
 
@@ -56,7 +56,7 @@ The following code shows how to check that a payment method is available before 
   }
 ```
 
-##### Verify Apple Pay availability in China
+### Verify Apple Pay availability in China
 
 To provide Apple Pay on the web for customers in China, you must first verify compatibility by checking the browser’s `userAgent` string. This string provides information about the customer’s device and operating system.
 

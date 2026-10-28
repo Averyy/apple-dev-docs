@@ -17,7 +17,7 @@ The character shape attribute.
 static let characterShapeAttributeName: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 An integer value. The value is interpreted as Apple Type Services `kCharacterShapeType selector + 1`.
 

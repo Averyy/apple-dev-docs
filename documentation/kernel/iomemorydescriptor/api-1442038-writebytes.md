@@ -15,11 +15,11 @@ Copy data to the memory descriptor's buffer from the specified buffer.
 virtual IOByteCount writeBytes(IOByteCount offset, const void *bytes, IOByteCount withLength);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied, zero will be returned if the specified offset is beyond the length of the descriptor. Development/debug kernel builds will assert if the offset is beyond the length of the descriptor.
 
-#### Discussion
+## Discussion
 
 This method copies data to the memory descriptor's memory at the given offset, from the caller's buffer. The memory descriptor MUST have the kIODirectionIn direcction bit set and be prepared. kIODirectionIn means that this memory descriptor will be input from an external device, so writeBytes is used to write memory into the descriptor for PIO drivers.
 

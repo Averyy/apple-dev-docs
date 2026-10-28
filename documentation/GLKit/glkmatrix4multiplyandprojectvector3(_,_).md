@@ -22,11 +22,11 @@ func GLKMatrix4MultiplyAndProjectVector3(_ matrixLeft: GLKMatrix4, _ vectorRight
 static GLKVector3 GLKMatrix4MultiplyAndProjectVector3(GLKMatrix4 matrixLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector created by first multiplying the matrix by the vector and then performing perspective division on the result vector.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

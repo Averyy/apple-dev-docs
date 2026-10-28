@@ -25,7 +25,7 @@ typealias DirectionsHandler = (MKDirections.Response?, (any Error)?) -> Void
 typedef void (^)(MKDirectionsResponse *, NSError *) MKDirectionsHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation of your block needs to check for a value in the `error` parameter and, if that parameter is `nil`, incorporate the route information from the `response` parameter.
 

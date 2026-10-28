@@ -20,7 +20,7 @@ func elements(forName name: String) -> [XMLElement]
 - (NSArray<NSXMLElement *> *) elementsForName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An array of of `NSXMLElement` objects or an empty array if no matching children can be found.
 

@@ -20,7 +20,7 @@ A notification that posts after a mouse connects to the device.
 static let GCMouseDidConnect: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`GCMouse`](../../../GameController/gcmouse.md) object that represents the mouse.
 

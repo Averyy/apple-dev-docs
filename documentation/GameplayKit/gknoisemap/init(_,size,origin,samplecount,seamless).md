@@ -24,11 +24,11 @@ init(_ noise: GKNoise, size: vector_double2, origin: vector_double2, sampleCount
 - (instancetype) initWithNoise:(GKNoise *) noise size:(vector_double2) size origin:(vector_double2) origin sampleCount:(vector_int2) sampleCount seamless:(BOOL) seamless;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise map object.
 
-#### Discussion
+## Discussion
 
 [`GKNoiseSource`](../gknoisesource.md) and [`GKNoise`](../gknoise.md) objects are lightweight descriptions of noise generation and processing parameters. When you create a noise map from a noise object, GameplayKit performs the computation described by those objects to create a grid of noise sample values. You can then read those values (or interpolated values at non-integral positions on that grid) with the methods listed in Accessing Noise Values, or use the [`SKTexture`](../../SpriteKit/sktexture.md) or `SKTileMap` classes to generate texture images or tile maps from the generated noise.
 

@@ -5,13 +5,13 @@
 
 Obtain authorization to use location services and manage changes to your app’s authorization status.
 
-#### Overview
+## Overview
 
 Location data is sensitive information, and the use of location data has privacy implications for the people who use your app. To ensure that people maintain control over their own information, the system prevents apps from using location data until they obtain authorization to do so. This authorization process involves a one-time interruption, during which the system prompts the device owner to grant or deny your app’s request for location data. After the initial interruption, the system stores your app’s authorization status and doesn’t prompt again.
 
 To help people understand why you need location data, make authorization requests only when someone engages a part of your app that requires that data. Making the request immediately before it’s needed increases the likelihood of the person granting the request. If you make a request immediately at app launch, or in a part of your app that doesn’t clearly use location data, the person might misinterpret your intent and deny the request.
 
-##### Choose the access level you need
+### Choose the access level you need
 
 Before you place an authorization request, choose the level of access your app needs. Core Location supports two authorization levels:
 
@@ -37,7 +37,7 @@ Regardless of which access level you choose, you can start any location services
 
 For information about how to handle location updates in the background, see [Handling location updates in the background](./handling-location-updates-in-the-background.md).
 
-##### Provide descriptions of how you use location services
+### Provide descriptions of how you use location services
 
 The first time you make an authorization request, the system displays an alert asking the person to grant or deny the request. The alert includes a usage description string that explains why you want access to location data. You provide this string in your app’s Information Property List and use it to inform people about how your app uses location data.
 
@@ -51,7 +51,7 @@ Core Location supports different usage strings for each access level. You must i
 
 Add all usage description keys to your app’s Information Property List before you make any authorization requests. Authorization requests fail immediately if the required keys aren’t present.
 
-##### Make authorization requests and respond to status changes
+### Make authorization requests and respond to status changes
 
 Before you start any location services, check your app’s current authorization status and place an authorization request if needed. You can get your app’s current authorization from the [`authorizationStatus`](./cllocationmanager/authorizationstatus-swift.property.md) property of your location-manager object. However, a newly configured [`CLLocationManager`](./cllocationmanager.md) object also reports your app’s current authorization status to its delegate’s [`locationManagerDidChangeAuthorization(_:)`](./cllocationmanagerdelegate/locationmanagerdidchangeauthorization%28_%29.md) method automatically. You might use that method to place an authorization request when the current status is [`CLAuthorizationStatus.notDetermined`](./clauthorizationstatus/notdetermined.md). In the following example, the delegate method enables or disables location features when the status is known and requests authorization when the status is undetermined.
 

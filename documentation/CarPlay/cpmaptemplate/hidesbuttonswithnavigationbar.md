@@ -21,7 +21,7 @@ var hidesButtonsWithNavigationBar: Bool { get set }
 @property (nonatomic, assign) BOOL hidesButtonsWithNavigationBar;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md).
 

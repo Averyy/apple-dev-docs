@@ -25,7 +25,7 @@ var canProvidePersistableContentKey: Bool { get }
 @property (readonly) BOOL canProvidePersistableContentKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is automatically set to `YES` when the receiver is provided to the content key session’s delegate via the [`contentKeySession(_:didProvide:)`](../avcontentkeysessiondelegate/contentkeysession%28_,didprovide%29-2wdgz.md) method. When this property is set to `YES`, the [`persistableContentKey(fromKeyVendorResponse:options:)`](../avpersistablecontentkeyrequest/persistablecontentkey%28fromkeyvendorresponse,options%29.md) method can be used to create a persistable content key from the response.
 

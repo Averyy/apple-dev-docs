@@ -24,7 +24,7 @@ func setSelected(_ selected: Bool, animated: Bool)
 - (void) setSelected:(BOOL) selected animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Dont call this method directly. An [`MKMapView`](../mkmapview.md) object calls this method in response to user interactions with the annotation.
 

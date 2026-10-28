@@ -23,11 +23,11 @@ func separateSecondaryViewController(for splitViewController: UISplitViewControl
 - (UIViewController *) separateSecondaryViewControllerForSplitViewController:(UISplitViewController *) splitViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The designated secondary view controller for the split view controller.
 
-#### Discussion
+## Discussion
 
 This method provides default behavior when you do not overwrite the [`splitViewController(_:separateSecondaryFrom:)`](../uisplitviewcontrollerdelegate/splitviewcontroller%28_,separatesecondaryfrom%29.md) method. The previous secondary view controller is returned.
 

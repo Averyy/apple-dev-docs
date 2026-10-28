@@ -19,7 +19,7 @@ protocol MEMessageActionHandler : NSObjectProtocol
 @protocol MEMessageActionHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 As MailKit downloads messages, it invokes the [`decideAction(for:completionHandler:)`](./memessageactionhandler/decideaction%28for,completionhandler%29.md) method on your handler. You indicate the action to take for each message, such as marking it as read or unread, flagging it, or archiving it.
 

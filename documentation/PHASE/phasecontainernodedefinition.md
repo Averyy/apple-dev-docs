@@ -24,7 +24,7 @@ class PHASEContainerNodeDefinition
 @interface PHASEContainerNodeDefinition : PHASESoundEventNodeDefinition
 ```
 
-#### Overview
+## Overview
 
 This node adds structure to the sound event tree while performing no conditional logic or audio playback of its own. By passing invocation to all its children at once, this class invokes the child nodes’ actions simultaneously.
 

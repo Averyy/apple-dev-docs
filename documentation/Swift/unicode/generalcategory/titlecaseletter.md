@@ -21,7 +21,7 @@ A digraph character whose first part is uppercase.
 case titlecaseLetter
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Titlecase_Letter` (abbreviated `Lt`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

@@ -25,7 +25,7 @@ var bitsPerComponent: UInt32
 uint32_t bitsPerComponent;
 ```
 
-#### Discussion
+## Discussion
 
 For ARGB8888, this is 8. Expected values are 1, 2, 4, 5, 8, 10, 12, 16, or 32.
 

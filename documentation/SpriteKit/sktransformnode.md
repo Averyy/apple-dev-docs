@@ -25,7 +25,7 @@ class SKTransformNode
 @interface SKTransformNode : SKNode
 ```
 
-#### Overview
+## Overview
 
 `SKTranformNode` adds the ability to rotate nodes across the x and y axes. When combined with `SKNode`’s [`zRotation`](./sknode/zrotation.md) property, nodes added as children to a transform node have the ability to rotate in 3D.
 

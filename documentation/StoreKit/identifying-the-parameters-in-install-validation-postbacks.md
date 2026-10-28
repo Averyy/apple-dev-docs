@@ -5,7 +5,7 @@
 
 Learn about the postback parameters in all SKAdNetwork versions.
 
-#### Overview
+## Overview
 
 The following list describes all the possible parameters you may get in a postback, and their version availability. To verify that Apple signed the postback, see [Verifying an install-validation postback](./verifying-an-install-validation-postback.md).
 

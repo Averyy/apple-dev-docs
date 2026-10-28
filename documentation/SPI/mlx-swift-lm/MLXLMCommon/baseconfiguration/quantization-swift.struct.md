@@ -17,7 +17,7 @@ Configuration parameters for weight quantization.
 struct Quantization
 ```
 
-#### Overview
+## Overview
 
 MLX uses group-wise quantization to reduce memory footprint. This struct defines how weights are grouped and the precision (bits) used for each group.
 

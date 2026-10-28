@@ -19,7 +19,7 @@ case changeDiscardable
 NSChangeDiscardable
 ```
 
-#### Discussion
+## Discussion
 
 Discardable changes cause the document to be edited. In a locked document, for example, discardable changes may be thrown away instead of prompting the user to save them. Combine this value with the appropriate kind of change, [`NSDocument.ChangeType.changeDone`](./changedone.md), [`NSDocument.ChangeType.changeUndone`](./changeundone.md), or [`NSDocument.ChangeType.changeRedone`](./changeredone.md), using the C bitwise OR operator. For example, a discardable change is `NSChangeDone | NSChangeDiscardable`.
 

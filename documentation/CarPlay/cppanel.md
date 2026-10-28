@@ -21,7 +21,7 @@ class CPPanel
 @interface CPPanel : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CPPanel` type defines the default behaviors for panels you display in your app. You don’t create or present this type directly. Instead, instantiate one of the defined subclasses and present that type from your app’s interface. For example, create a [`CPMapPanel`](./cpmappanel.md) and configure it with navigation-related data, and present it from a [`CPMapTemplate`](./cpmaptemplate.md) to overlay that information on top of your custom map.
 

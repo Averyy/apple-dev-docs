@@ -6,7 +6,7 @@
 
 An array of data references.
 
-#### Overview
+## Overview
 
 Each data reference is formatted like an atom and contains the following data elements.
 

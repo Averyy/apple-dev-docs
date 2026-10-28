@@ -23,7 +23,7 @@ typealias sec_protocol_verify_complete_t = (Bool) -> Void
 typedef void (^)(_Bool) sec_protocol_verify_complete_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when verification is complete.
 

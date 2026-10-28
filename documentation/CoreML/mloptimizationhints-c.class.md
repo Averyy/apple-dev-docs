@@ -21,7 +21,7 @@ MLOptimizationHints
 @interface MLOptimizationHints : NSObject
 ```
 
-#### Overview
+## Overview
 
 An object to hold hints that CoreML could use for further optimization
 

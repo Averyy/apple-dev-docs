@@ -24,7 +24,7 @@ var isOutputEnabled: Bool { get set }
 @property (nonatomic, getter=isOutputEnabled) BOOL outputEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

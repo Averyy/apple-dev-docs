@@ -19,7 +19,7 @@ static let numberOfCharactersLeft: NSSpeechSynthesizer.SpeechPropertyKey.StatusK
 extern NSSpeechStatusKey const NSSpeechStatusNumberOfCharactersLeft;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this key is zero, you can destroy the input string.
 

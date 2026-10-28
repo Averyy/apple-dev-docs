@@ -25,11 +25,11 @@ func subtracting(_ measurement: Measurement<Unit>) -> Measurement<Unit>
 - (NSMeasurement<NSUnit *> *) measurementBySubtractingMeasurement:(NSMeasurement<NSUnit *> *) measurement;
 ```
 
-#### Return Value
+## Return Value
 
 A new measurement with a value equal to the receiver’s value minus the value of the specified measurement converted into the unit of the receiver.
 
-#### Discussion
+## Discussion
 
 This method raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if the receiver cannot be converted to unit.
 

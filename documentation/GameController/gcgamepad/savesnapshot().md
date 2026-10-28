@@ -24,7 +24,7 @@ func saveSnapshot() -> GCGamepadSnapshot
 - (GCGamepadSnapshot *) saveSnapshot;
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot object that contains the current controller state.
 

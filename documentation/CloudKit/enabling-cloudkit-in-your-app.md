@@ -5,11 +5,11 @@
 
 Configure your app to store data in iCloud using CloudKit.
 
-#### Overview
+## Overview
 
 Once you’ve determined that CloudKit is right for your app, you’re ready to set up your Xcode project to enable CloudKit development.
 
-##### Add the iCloud capability to your Xcode project
+### Add the iCloud capability to your Xcode project
 
 Adding the iCloud capability to your project sets up the initial project entitlements. Before you proceed, verify that your Apple Developer Program membership is active and has admin permissions.
 
@@ -23,7 +23,7 @@ To add the iCloud capability:
 
 ![Labeled screenshot of the Xcode window with the Signing & Capabilities page open. From left to right is the project navigator, the button you use to add a Capability, the Target menu, the Automatically manage signing checkbox, the Team menu, and the target’s Bundle Identifier.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699095@2x.png)
 
-##### Create your container
+### Create your container
 
 Next, add the CloudKit service to add the appropriate entitlements to your project and tell iCloud to create a container for your app data:
 
@@ -34,13 +34,13 @@ Next, add the CloudKit service to add the appropriate entitlements to your proje
 
 Multiple apps and users have access to iCloud, but each app’s data and schema, together, are typically in separate containers. Although an app can have multiple containers or share a container, each app has one default container. Once you’ve created a container, you can’t delete or rename it.
 
-##### Select or create an iCloud account for development
+### Select or create an iCloud account for development
 
 You need an iCloud account to save records to a container. In your app or the simulator on which you test your app during development, enter the credentials for this iCloud account. If you don’t have an iCloud account, create one for use during development. In macOS, launch System Preferences and click Sign In. Click Create Apple ID under the Apple ID text field and follow the instructions.
 
 Note that your iCloud account is distinct from your Apple Developer account; however, you can use the same email address for both. Doing so gives you access to your iCloud account’s private user data in CloudKit Dashboard, which can be helpful for debugging.
 
-##### Enter iCloud credentials before running your app
+### Enter iCloud credentials before running your app
 
 Enter your iCloud account credentials on a simulator or app-testing device. Entering the iCloud credentials enables reading from—and writing to—users’ own private and shared databases and, potentially, writing to the container’s public database.
 
@@ -57,7 +57,7 @@ Perform the same sign-in process for each iOS or iPadOS simulator you test your 
 
 To enter your credentials for macOS, go to System Preferences.
 
-##### View your container in CloudKit Console
+### View your container in CloudKit Console
 
 CloudKit Console is a web-based tool that lets you manage your app’s iCloud containers. It appears within the Apple Developer web portal, and you can use it to ensure that your container exists.
 

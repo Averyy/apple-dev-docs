@@ -21,7 +21,7 @@ The learning rate.
 var learningRate: Float
 ```
 
-#### Discussion
+## Discussion
 
 The learning rate controls how much the model changes when presented with new data. A high learning rate may overshoot when close to a solution, while a low learning rate my take too long to train a good model.
 

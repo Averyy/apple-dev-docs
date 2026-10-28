@@ -20,7 +20,7 @@ struct es_event_settime_t
 typedef struct { ... } es_event_settime_t;
 ```
 
-#### Overview
+## Overview
 
 The system doesn’t generate this event if the source app contains the entitlement `com.apple.private.settime`.
 

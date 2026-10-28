@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may interact with the built-in an
 - **Name**: `com.apple.security.device.camera` (Camera)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, first enable the App Sandbox or Hardened Runtime capability in Xcode, and then select Camera.
 

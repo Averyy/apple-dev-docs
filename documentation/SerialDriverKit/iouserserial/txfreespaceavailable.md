@@ -15,7 +15,7 @@ Notifies the system that the device is ready to accept more data.
 virtual void TxFreeSpaceAvailable();
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after freeing up space in the memory buffer you use to transmit data. When more data is available, the system responds by adding that data to the buffer and calling the [`TxDataAvailable`](./txdataavailable.md) method.
 

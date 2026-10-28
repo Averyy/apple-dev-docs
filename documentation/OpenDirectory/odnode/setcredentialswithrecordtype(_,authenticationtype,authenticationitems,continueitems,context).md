@@ -20,7 +20,7 @@ func setCredentialsWithRecordType(_ inRecordType: String!, authenticationType in
 - (BOOL) setCredentialsWithRecordType:(ODRecordType) inRecordType authenticationType:(ODAuthenticationType) inType authenticationItems:(NSArray *) inItems continueItems:(NSArray **) outItems context:(id*) outContext error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If this function fails, the previous credentials for the node are used.
 

@@ -19,7 +19,7 @@ class AAUSBAccessoryMatchingCriteria
 @interface AAUSBAccessoryMatchingCriteria : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 A class that conforms to the [`AAUSBAccessoryListener`](./aausbaccessorylistener.md) protocol can use [`AAUSBAccessoryMatchingCriteria`](./aausbaccessorymatchingcriteria.md) objects to register itself with [`AAUSBAccessoryManager`](./aausbaccessorymanager.md).
 

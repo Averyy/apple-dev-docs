@@ -25,7 +25,7 @@ class NSURLRequest
 @interface NSURLRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this type in Swift when you need reference semantics or other Foundation-specific behavior.
 
@@ -37,7 +37,7 @@ The mutable subclass of [`NSURLRequest`](./nsurlrequest.md) is [`NSMutableURLReq
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](./urlrequest.md) structure, which bridges to the [`NSURLRequest`](./nsurlrequest.md) class and its mutable subclass, [`NSMutableURLRequest`](./nsmutableurlrequest.md). For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
-##### Reserved HTTP headers
+### Reserved HTTP headers
 
 The URL Loading System handles various aspects of the HTTP protocol for you (HTTP/1.1 persistent connections, proxies, authentication, and so on). As part of this support, the URL Loading System takes responsibility for certain HTTP headers:
 
@@ -56,7 +56,7 @@ The URL Loading System sets the `Content-Length` header based on whether the req
 - If so, it uses the identity transfer encoding and sets the `Content-Length` header to that known length. You see this when you set the request body to a data object.
 - If not, it uses the chunked transfer encoding and omits the `Content-Length` header. You see this when you set the request body to a stream.
 
-##### Custom protocol properties
+### Custom protocol properties
 
 If you implement a custom URL protocol by subclassing [`URLProtocol`](./urlprotocol.md), and it needs protocol-specific properties, extend [`NSURLRequest`](./nsurlrequest.md) with accessor methods for those custom properties. In your accessor methods, call [`property(forKey:in:)`](./urlprotocol/property%28forkey,in%29.md) and [`setProperty(_:forKey:in:)`](./urlprotocol/setproperty%28_,forkey,in%29.md) to associate property values with the request.
 

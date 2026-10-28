@@ -21,7 +21,7 @@ Clears the authored value for `name`.
 func clearField(_ name: USDToken) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the field had been authored.
 

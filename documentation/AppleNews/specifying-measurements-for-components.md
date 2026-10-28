@@ -5,7 +5,7 @@
 
 Specify the units of measure to use for margins, minimum heights, and other dimensions.
 
-#### Overview
+## Overview
 
 In Apple News Format, you can use variable sizing for component margins, minimum component height, and other measurements. Sizes can be a percentage of the width or height of the viewport, the document margins and gutters, or the component’s height (the part of the document visible to the user).
 
@@ -27,11 +27,11 @@ This example also sets the margin to 10 points, because an integer is specified 
 }
 ```
 
-##### Set Component Measurements Based on the Viewport
+### Set Component Measurements Based on the Viewport
 
 You can set the size of a margin or the minimum height for a component based on a percentage of the width or height of the viewport. The viewport includes the portion of the screen that is sometimes covered by the toolbar.
 
-###### Set Measurements Based on Viewport Height
+#### Set Measurements Based on Viewport Height
 
 This example results in a component height of at least 50 percent of the viewport height (vh).
 
@@ -39,7 +39,7 @@ This example results in a component height of at least 50 percent of the viewpor
 "minimumHeight": "50vh"
 ```
 
-###### Set Measurements Based on Viewport Width
+#### Set Measurements Based on Viewport Width
 
 In this example, the component’s margin is set to 20 percent of the viewport width (vw).
 
@@ -49,7 +49,7 @@ In this example, the component’s margin is set to 20 percent of the viewport w
 }
 ```
 
-###### Set Measurements Based on the Viewport’s Shortest Side
+#### Set Measurements Based on the Viewport’s Shortest Side
 
 If you base a component’s minimum height on the shortest side of the viewport, remember that the minimum height varies depending on your device orientation. If your article is being viewed in portrait orientation, the calculation is based on the width of the viewport; in landscape, the calculation is based on the height of the viewport.
 
@@ -59,7 +59,7 @@ For example, if the viewport is narrow and tall (portrait), a value of `150vmin`
 "minimumHeight": "25vmin"
 ```
 
-###### Set Measurements Based on the Viewport’s Longest Side
+#### Set Measurements Based on the Viewport’s Longest Side
 
 If you base a component’s minimum height on the longest side of the viewport, remember that the minimum height varies depending on your device orientation. If your article is being viewed in portrait orientation, the calculation is based on the height of the viewport; in landscape, the calculation is based on the width of the viewport.
 
@@ -69,7 +69,7 @@ For example, if the viewport is narrow and tall (portrait), a value of `150vmax`
 "minimumHeight": "25vmax"
 ```
 
-##### Set Component Height Based on Component Width
+### Set Component Height Based on Component Width
 
 Use the component width (`cw`) unit to set a component’s height as a percentage of the component’s width, which guarantees a specific aspect ratio. This example calculates the value.
 
@@ -83,7 +83,7 @@ For example, for a landscape image with a 9:16 aspect ratio, you calculate `9 ÷
 "minimumHeight": "50cw"
 ```
 
-##### Set Component Width Based on Parent Component Width
+### Set Component Width Based on Parent Component Width
 
 Use the parent width (`pw`) unit to set `minimumWidth` or `maximumWidth` in relation to the width of the parent component. If you use the `pw` unit on a top-level component inside a document that doesn’t have a parent, Apple News Format uses the viewport width (`vw`).
 
@@ -91,7 +91,7 @@ Use the parent width (`pw`) unit to set `minimumWidth` or `maximumWidth` in rela
 "minimumWidth": "30pw", "maximumWidth": "50pw"
 ```
 
-##### Set Component Margins Based on Gutter Size
+### Set Component Margins Based on Gutter Size
 
 Use the `gut` unit to base a component’s margin on the column gutter size. This example sets the component’s margin to the full width of the gutter.
 
@@ -117,7 +117,7 @@ This example sets the component’s margin to half the width of the gutter.
 }
 ```
 
-##### Set Vertical Margins for a Component
+### Set Vertical Margins for a Component
 
 The `margin` property in the `layout` object provides the spacing for the outer left and right sides of the document and can change depending on the device size. To apply that same spacing vertically, use the `dm` unit in the `margin` property in the component layout object.
 

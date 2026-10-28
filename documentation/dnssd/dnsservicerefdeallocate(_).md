@@ -25,7 +25,7 @@ func DNSServiceRefDeallocate(_ sdRef: DNSServiceRef!)
 void DNSServiceRefDeallocate(DNSServiceRef sdRef);
 ```
 
-#### Discussion
+## Discussion
 
 Any services or records registered with this DNSServiceRef will be deregistered. Any Browse, Resolve, or Query operations called with this reference will be terminated.
 

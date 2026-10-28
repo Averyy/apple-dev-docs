@@ -24,7 +24,7 @@ class INAddMediaIntentResponse
 @interface INAddMediaIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INAddMediaIntentResponse`](./inaddmediaintentresponse.md) object to specify the results after the user attempts to add the specified media. After performing the add action using the criteria specified in the [`INAddMediaIntent`](./inaddmediaintent.md) object, create an instance of this class with the results of the action. Siri communicates the status from your response to the user at appropriate times.
 

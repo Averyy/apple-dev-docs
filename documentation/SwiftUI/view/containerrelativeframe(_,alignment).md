@@ -22,7 +22,7 @@ nonisolated
 func containerRelativeFrame(_ axes: Axis.Set, alignment: Alignment = .center) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to specify a size for a view’s width, height, or both that is dependent on the size of the nearest container. Different things can represent a “container” including:
 

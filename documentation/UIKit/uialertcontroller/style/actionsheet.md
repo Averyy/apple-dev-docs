@@ -23,7 +23,7 @@ case actionSheet
 UIAlertControllerStyleActionSheet
 ```
 
-#### Discussion
+## Discussion
 
 Use an action sheet to present the user with a set of alternatives for how to proceed with a given task. You can also use this style to prompt the user to confirm a potentially dangerous action. This alert style isn’t supported by tvOS; use [`UIAlertController.Style.alert`](./alert.md) instead.
 

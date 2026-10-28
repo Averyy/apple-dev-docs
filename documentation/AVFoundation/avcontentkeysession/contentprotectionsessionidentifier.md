@@ -25,7 +25,7 @@ var contentProtectionSessionIdentifier: Data? { get }
 @property (readonly, nullable) NSData * contentProtectionSessionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The content protection session identifier is a unique string the session generates.
 

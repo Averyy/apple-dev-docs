@@ -20,7 +20,7 @@ The dimensions of the 3D texture.
 struct Dimensions3D
 ```
 
-#### Overview
+## Overview
 
 This specifies the width, height, and depth of the 3D texture
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume supports making files immutabl
 var volumeSupportsImmutableFiles: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the volume supports making files immutable with the [`isUserImmutableKey`](../urlresourcekey/isuserimmutablekey.md) or [`isSystemImmutableKey`](../urlresourcekey/issystemimmutablekey.md) properties.
 

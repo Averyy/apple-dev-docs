@@ -19,7 +19,7 @@ func setMenu(_ menu: NSMenu?, forSegment segment: Int)
 - (void) setMenu:(NSMenu *) menu forSegment:(NSInteger) segment;
 ```
 
-#### Discussion
+## Discussion
 
 Adding a menu to a segment allows that segment to be used as a pop-up button.
 

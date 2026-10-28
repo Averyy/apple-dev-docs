@@ -19,7 +19,7 @@ func insertView(_ view: NSView, at index: Int, in gravity: NSStackView.Gravity)
 - (void) insertView:(NSView *) view atIndex:(NSUInteger) index inGravity:(NSStackViewGravity) gravity;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method updates the stack view’s layout, which can change the stack view size. As a result, views could detach or clip according to the clipping resistance of the stack view and the visibility priorities of its views.
 

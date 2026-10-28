@@ -23,7 +23,7 @@ Generates a 3D mesh for rendering static text.
 @preconcurrency static func generateText(_ string: String, extrusionDepth: Float = 0.25, font: MeshResource.Font = .systemFont(ofSize: defaultTextFontSize), containerFrame: CGRect = CGRect.zero, alignment: CTTextAlignment = .left, lineBreakMode: CTLineBreakMode = .byTruncatingTail) -> MeshResource
 ```
 
-#### Return Value
+## Return Value
 
 The text mesh.
 

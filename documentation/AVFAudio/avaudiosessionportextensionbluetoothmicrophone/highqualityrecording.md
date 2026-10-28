@@ -24,7 +24,7 @@ var highQualityRecording: AVAudioSessionCapability { get }
 @property (nonatomic, strong, readonly, nonnull) AVAudioSessionCapability * highQualityRecording;
 ```
 
-#### Discussion
+## Discussion
 
 Please see [`bluetoothHighQualityRecording`](../avaudiosession/categoryoptions-swift.struct/bluetoothhighqualityrecording.md) for details.
 

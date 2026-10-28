@@ -19,7 +19,7 @@ An object that defines the clearcoat normal map texture.
 struct ClearcoatNormal
 ```
 
-#### Overview
+## Overview
 
 An entity in RealityKit can display a clearcoat, which is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. Use this object to specify a clearcoat normal and vary the normal used to calculate the clearcoat. This can be used to add imperfections and waviness to the clearcoat layer.
 

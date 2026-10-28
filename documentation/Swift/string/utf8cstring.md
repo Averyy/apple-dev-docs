@@ -21,7 +21,7 @@ A contiguously stored null-terminated UTF-8 representation of the string.
 var utf8CString: ContiguousArray<CChar> { get }
 ```
 
-#### Discussion
+## Discussion
 
 To access the underlying memory, invoke `withUnsafeBufferPointer` on the array.
 

@@ -5,7 +5,7 @@
 
 Reserves space for an element.
 
-#### Overview
+## Overview
 
 The amount of space reserved is equal to the amount of space taken up by an indicated number of ‘0’ characters. Here’s an example that reserves a space equal to ‘000’ in length.
 
@@ -13,11 +13,11 @@ The amount of space reserved is equal to the amount of space taken up by an indi
 <ordinal minLength="3" >
 ```
 
-##### Values for minLength
+### Values for minLength
 
 - **Integer**: The amount of space reserved.
 
-##### Values that Use minLength
+### Values that Use minLength
 
 - [ordinal](./ordinal.md)
 

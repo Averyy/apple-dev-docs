@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSData *aDataObj) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two OSData objects are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 Two OSData objects are considered equal if they have same length and if their byte buffers hold the same contents.
 

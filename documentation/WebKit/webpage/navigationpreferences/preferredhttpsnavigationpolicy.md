@@ -19,7 +19,7 @@ Used when performing a top-level navigation to a webpage.
 var preferredHTTPSNavigationPolicy: WebPage.NavigationPreferences.UpgradeToHTTPSPolicy
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `.keepAsRequested`. The stated preference is ignored on subframe navigation, and it may be ignored based on system configuration. The `WebPage.Configuration.upgradeKnownHostsToHTTPS` property supersedes this property for known hosts.
 

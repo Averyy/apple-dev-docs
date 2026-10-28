@@ -17,7 +17,7 @@ An error occurred when reading the card.
 case cardReadFailed
 ```
 
-#### Discussion
+## Discussion
 
 The Tap to Pay on iPhone sheet displayed a message indicating that the read failed.
 

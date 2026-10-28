@@ -16,11 +16,11 @@
 virtual kern_return_t gatedGetCommand(IOCommand **command, bool blockForCommand);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnNoResources if no command is available and the client doesn’t wish to block until one does become available. kIOReturnSuccess if the vCommand argument is valid.
 
-#### Discussion
+## Discussion
 
 The gatedGetCommand method is used to serialize the extraction of a command from the pool synchronized with the pool’s queue.
 

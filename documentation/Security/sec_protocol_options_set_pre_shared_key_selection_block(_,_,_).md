@@ -23,7 +23,7 @@ func sec_protocol_options_set_pre_shared_key_selection_block(_ options: sec_prot
 void sec_protocol_options_set_pre_shared_key_selection_block(sec_protocol_options_t options, sec_protocol_pre_shared_key_selection_t psk_selection_block, dispatch_queue_t psk_selection_queue);
 ```
 
-#### Discussion
+## Discussion
 
 Set the PSK selection block.
 

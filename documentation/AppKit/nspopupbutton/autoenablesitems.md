@@ -19,7 +19,7 @@ var autoenablesItems: Bool { get set }
 @property BOOL autoenablesItems;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), user events cause the button to enable and disable its items automatically according to the NSMenuValidation protocol specification.
 

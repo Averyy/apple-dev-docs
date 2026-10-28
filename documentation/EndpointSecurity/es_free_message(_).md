@@ -21,7 +21,7 @@ func es_free_message(_ msg: UnsafeMutablePointer<es_message_t>)
 extern void es_free_message(es_message_t *msg);
 ```
 
-#### Discussion
+## Discussion
 
 Only free messages you explicitly copied with [`es_copy_message(_:)`](./es_copy_message%28_%29.md).
 

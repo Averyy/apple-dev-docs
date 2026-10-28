@@ -19,7 +19,7 @@ convenience init(item: Any, title: String?, image: NSImage?, icon: NSImage?)
 - (instancetype) initWithItem:(id) item title:(NSString *) title image:(NSImage *) image icon:(NSImage *) icon;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized item to share.
 

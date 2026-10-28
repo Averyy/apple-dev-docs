@@ -16,7 +16,7 @@ func generateLicenseResponse() throws -> [UInt8]
 
 - [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
-#### Return Value
+## Return Value
 
 License in byte array
 

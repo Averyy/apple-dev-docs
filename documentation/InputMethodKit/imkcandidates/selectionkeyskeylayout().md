@@ -19,7 +19,7 @@ func selectionKeysKeylayout() -> Unmanaged<TISInputSource>!
 - (TISInputSourceRef) selectionKeysKeylayout;
 ```
 
-#### Return Value
+## Return Value
 
 The key layout in use. By default this is the key layout whose source id is `com.apple.keylayout.US`.
 

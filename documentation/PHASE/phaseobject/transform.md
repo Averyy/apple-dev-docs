@@ -28,13 +28,13 @@ var transform: simd_float4x4 { get set }
 
 - [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Discussion
+## Discussion
 
 The value of this property requires orthogonal basis vectors and uniform scale.
 
 The framework interprets the transform’s position values in a right-handed coordinate system, where the *Y* axis extends upward and and the negative *Z* axis extends forward.
 
-##### Set an Object’s Position
+### Set an Object’s Position
 
 An object positions in the 3D scene by the transformʼs first 3 elements of the last column. The following code sets an object’s position to `(0,0,-6)`, which is 6 meters in front of the world origin `(0,0,0)`.
 

@@ -21,7 +21,7 @@ Error code indicating that the price you specified in App Store Connect is no lo
 static var invalidOfferPrice: SKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 An offer price can become invalid if you change the price of the base subscription such that it is lower than the offer price. Offers must always represent a discounted price.
 

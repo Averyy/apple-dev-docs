@@ -20,11 +20,11 @@ func vmnet_stop_interface(_ interface: interface_ref, _ queue: dispatch_queue_t,
 vmnet_return_t vmnet_stop_interface(interface_ref interface, dispatch_queue_t queue, vmnet_interface_completion_handler_t handler);
 ```
 
-#### Return Value
+## Return Value
 
 `VMNET_SUCCESS` if the framework scheduled the completion handler, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 Once an app calls this function, subsequent calls to read or write packets on this interface fail. If the app created the  interface through [`vmnet_interface_start_with_network(_:_:_:_:)`](./vmnet_interface_start_with_network%28_,_,_,_%29.md), this call releases the associated network object.
 

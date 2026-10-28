@@ -18,7 +18,7 @@ typedef enum IOHIDReportType : unsigned int {
 } IOHIDReportType;
 ```
 
-#### Overview
+## Overview
 
 Used by the IOHIDFamily to identify the type of report being processed.
 

@@ -5,11 +5,11 @@
 
 Load descriptive metadata for media assets and their tracks.
 
-#### Overview
+## Overview
 
 Media container formats provide metadata that describe their content. You can retrieve it to access information about the media such as the title, artwork, and creation date. AVFoundation models metadata values using the [`AVMetadataItem`](./avmetadataitem.md) class. A metadata item represents a single value like a movie’s description or poster image. This class provides a simple, consistent interface to work with metadata, regardless of the underlying container and metadata formats.
 
-##### Load an asset’s metadata
+### Load an asset’s metadata
 
 [`AVAsset`](./avasset.md) provides several ways to access its metadata. You can retrieve all of its metadata by loading the value of its [`metadata`](./avpartialasyncproperty/metadata-16qej.md) property. Alternatively, you can retrieve a subset of items that are common to all of the metadata formats it holds by loading the value of its [`commonMetadata`](./avpartialasyncproperty/commonmetadata-3j3n4.md) property.
 
@@ -25,7 +25,7 @@ for format in try await asset.load(.availableMetadataFormats) {
 }
 ```
 
-##### Filter a metadata collection
+### Filter a metadata collection
 
 After you load a collection of metadata, you can filter it to specific values using the class methods of [`AVMetadataItem`](./avmetadataitem.md). The example below shows how to use the [`metadataItems(from:filteredByIdentifier:)`](./avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) method to find items with an identifier of [`commonIdentifierTitle`](./avmetadataidentifier/commonidentifiertitle.md).
 
@@ -42,7 +42,7 @@ guard let item = titleItems.first else { return }
 
 A metadata item’s filtering methods return collections of items instead of a single instance. In many cases, the returned collection contains a single element, but if the media contains localized metadata, or if you’re retrieving data from the common key space and the same value exists in multiple key spaces, the item returns a distinct value for each.
 
-##### Find specific values
+### Find specific values
 
 Retrieve the data a metadata item holds by loading its [`value`](./avpartialasyncproperty/value.md) property, which is an object that adopts the [`NSCopying`](../Foundation/nscopying.md) and [`NSObjectProtocol`](../ObjectiveC/nsobjectprotocol.md) protocols. You can manually cast the value to an appropriate type, but it’s safer and more convenient to use the metadata item’s type conversion properties. Instead of loading the [`value`](./avpartialasyncproperty/value.md) property, load its [`stringValue`](./avpartialasyncproperty/stringvalue.md), [`numberValue`](./avpartialasyncproperty/numbervalue.md), [`dateValue`](./avpartialasyncproperty/datevalue.md), or [`dataValue`](./avpartialasyncproperty/datavalue.md) properties as appropriate to convert it to a specific type. For example, the code listing below shows how to retrieve the artwork associated with an iTunes music track as a data value:
 

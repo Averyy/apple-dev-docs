@@ -21,11 +21,11 @@ Raises `NSInvalidArgumentException`. Override this method in your concrete subcl
 - (NSMethodSignature *) methodSignatureForSelector:(SEL) sel;
 ```
 
-#### Return Value
+## Return Value
 
 Not applicable. The implementation provided by `NSProxy` raises an exception.
 
-#### Discussion
+## Discussion
 
 Be sure to avoid an infinite loop when necessary by checking that `sel` isn’t the selector for this method itself and by not sending any message that might invoke this method.
 

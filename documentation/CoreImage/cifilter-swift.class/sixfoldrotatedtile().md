@@ -24,11 +24,11 @@ class func sixfoldRotatedTile() -> any CIFilter & CISixfoldRotatedTile
 + (CIFilter<CISixfoldRotatedTile> *) sixfoldRotatedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the six-fold reflected tile filter to an image. The effect produces a tiled image by rotating the image in increments 60 degrees.
 

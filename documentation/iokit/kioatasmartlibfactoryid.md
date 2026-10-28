@@ -14,7 +14,7 @@
 #define kIOATASMARTLibFactoryID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for the IOATASMARTInterface Factory.
 

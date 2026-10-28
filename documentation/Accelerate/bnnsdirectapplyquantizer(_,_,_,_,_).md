@@ -27,7 +27,7 @@ func BNNSDirectApplyQuantizer(_ layer_params: UnsafePointer<BNNSLayerParametersQ
 int BNNSDirectApplyQuantizer(const BNNSLayerParametersQuantization *layer_params, const BNNSFilterParameters *filter_params, size_t batch_size, size_t input_stride, size_t output_stride);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function, in conjunction with a [`BNNSLayerParametersQuantization`](./bnnslayerparametersquantization.md), to convert tensors to different precisions. Pass the [`BNNSQuantizerFunctionQuantize`](./bnnsquantizerfunctionquantize.md) quantizer function to convert a higher-precsion tensor to a lower-precision tensor. Pass [`BNNSQuantizerFunctionDequantize`](./bnnsquantizerfunctiondequantize.md) to convert a lower-precsion tensor to a higher-precision tensor.
 

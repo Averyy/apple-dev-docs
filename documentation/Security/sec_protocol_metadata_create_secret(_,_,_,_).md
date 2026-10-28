@@ -23,11 +23,11 @@ func sec_protocol_metadata_create_secret(_ metadata: sec_protocol_metadata_t, _ 
 dispatch_data_tsec_protocol_metadata_create_secret(sec_protocol_metadata_t metadata, size_t label_len, const char *label, size_t exporter_length);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a dispatch_data_t object carrying the exported secret.
 
-#### Discussion
+## Discussion
 
 Export a secret, e.g., a cryptographic key, derived from the protocol metadata using a label string.
 

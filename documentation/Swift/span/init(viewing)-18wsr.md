@@ -23,7 +23,7 @@ init(viewing bytes: RawSpan) where Element : ConvertibleFromBytes
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 The `byteCount` of `bytes` must be a multiple of `Element`’s stride, and the starting address of `bytes` must be well-aligned for the type of `Element`. If either of these requirements is not met, this initializer will trap at runtime.
 

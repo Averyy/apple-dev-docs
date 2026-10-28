@@ -21,7 +21,7 @@ Returns the mean of magnitudes of a double-precision vector.
 static func meanMagnitude<U>(_ vector: U) -> Double where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the mean magnitude of a supplied vector.
 

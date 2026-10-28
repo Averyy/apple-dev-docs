@@ -5,11 +5,11 @@
 
 Display content in the browser’s UI that an extension renders.
 
-#### Overview
+## Overview
 
 Manage the appearance of visual content across your browser app’s main process and its extensions. Your app controls the visibility of views and layers, ensures responsive page rendering, and dynamically adjusts to changes in input device capabilities, which can affect how web content displays.
 
-#### Adjust user interface based on hover state
+## Adjust user interface based on hover state
 
 Add support for multiple input methods that a person might use with your browser app. For example, someone might connect or disconnect a mouse or trackpad: web pages use CSS media queries like `@media (hover: hover)` to adapt their interface based on hover support of the primary input device.
 

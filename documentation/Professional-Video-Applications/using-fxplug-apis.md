@@ -5,7 +5,7 @@
 
 Use various FxPlug APIs to communicate with host apps like Motion or Final Cut Pro.
 
-#### Overview
+## Overview
 
 When your plug-in needs to access a host’s capabilities, use the associated FxPlug API that corresponds to the capability you need to access.
 
@@ -23,11 +23,11 @@ FxPlug defines host protocols for common tasks, including:
 
 > **Note**:  Not all host applications support all of the host API protocols in FxPlug. Make sure your plug-in requests the host API object before invoking its methods.
 
-##### Get the most recent versions for host APIs
+### Get the most recent versions for host APIs
 
 In FxPlug, you may see similar APIs, differing by only a version number appended at the end. You should always use the latest version available for your plug-in. FxPlug 4 only supports the latest versions. FxPlug includes older versions of the host APIs so previous plug-ins continue to work, unless otherwise marked as deprecated. However, improved and expanded functionality is only available in the latest versions. For example, choose [`FxParameterCreationAPI_v5`](../professional_video_applications/fxparametercreationapi_v5.md), as earlier versions aren’t accessible in FxPlug 4.
 
-##### Use a host API
+### Use a host API
 
 In this example, you find a slider’s value at a particular render time. In the [`pluginState(_:at:quality:)`](../professional_video_applications/fxtileableeffect/pluginstate%28_,at,quality%29.md) method, you use the latest version of the parameter retrieval host API ([`FxParameterRetrievalAPI_v6`](../professional_video_applications/fxparameterretrievalapi_v6.md)) to retrieve a brightness value created in your plug-in’s [`addParameters()`](../professional_video_applications/fxtileableeffect/addparameters%28%29.md) method. Then add the value to pluginState NSData object for later retrieval.
 

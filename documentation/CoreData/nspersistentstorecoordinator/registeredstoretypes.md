@@ -25,7 +25,7 @@ class var registeredStoreTypes: [String : NSValue] { get }
 @property (class, strong, readonly) NSDictionary<NSString *,NSValue *> * registeredStoreTypes;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of the registered store types—the keys are the store type strings, and the values are the [`NSPersistentStore`](../nspersistentstore.md) subclasses.
 

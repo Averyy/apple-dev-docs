@@ -19,7 +19,7 @@ class let keyboardSelectionDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSTextInputContextKeyboardSelectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To observe this notification using Swift concurrency, use [`NSTextInputContext.KeyboardSelectionDidChangeMessage`](./keyboardselectiondidchangemessage.md).
 

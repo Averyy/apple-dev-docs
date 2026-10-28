@@ -19,7 +19,7 @@ static var NSScaleProportionally: NSImageScaling { get }
 NSScaleProportionally
 ```
 
-#### Discussion
+## Discussion
 
 Use [`NSImageScaling.scaleProportionallyDown`](./scaleproportionallydown.md).
 

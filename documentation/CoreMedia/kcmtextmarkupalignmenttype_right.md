@@ -25,7 +25,7 @@ let kCMTextMarkupAlignmentType_Right: CFString
 extern CFStringRef const kCMTextMarkupAlignmentType_Right;
 ```
 
-#### Discussion
+## Discussion
 
 For horizontally written text, the text alignment is always visually right-aligned (the system uniformly treats left-to-right and right-to-left). For vertical text, [`kCMTextMarkupAlignmentType_Right`](./kcmtextmarkupalignmenttype_right.md) is equivalent to [`kCMTextMarkupAlignmentType_End`](./kcmtextmarkupalignmenttype_end.md).
 

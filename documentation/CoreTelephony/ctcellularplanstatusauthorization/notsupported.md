@@ -21,7 +21,7 @@ case notSupported
 CTCellularPlanStatusAuthorizationNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 The framework returns this status when both of the following criteria are met:
 

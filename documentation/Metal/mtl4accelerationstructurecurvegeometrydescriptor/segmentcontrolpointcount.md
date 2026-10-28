@@ -24,7 +24,7 @@ var segmentControlPointCount: Int { get set }
 @property (nonatomic) NSUInteger segmentControlPointCount;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values for this property are `2`, `3`, or `4`.
 

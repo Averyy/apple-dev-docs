@@ -23,7 +23,7 @@ var searchResultsTableView: UITableView { get }
 @property (nonatomic, readonly) UITableView * searchResultsTableView;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates a new table view if one does not already exist.
 

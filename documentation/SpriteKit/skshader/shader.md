@@ -21,11 +21,11 @@ Creates a new empty shader object.
 + (instancetype) shader;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized shader object.
 
-#### Discussion
+## Discussion
 
 The shader is initialized without any source code or uniform data. You must assign source code to the shader before using it.
 

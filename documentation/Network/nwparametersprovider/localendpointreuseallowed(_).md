@@ -22,7 +22,7 @@ Allow local endpoint reuse.
 func localEndpointReuseAllowed(_ allowed: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Allow multiple connections to use the same local address and port (`SO_REUSEADDR` and `SO_REUSEPORT`).
 

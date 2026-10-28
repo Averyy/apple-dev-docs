@@ -16,7 +16,7 @@ An error that indicates an attempt was made to load an action that is not compil
 static var actionRuntimeMismatchError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the action may be compiled for 32-bit apps.
 

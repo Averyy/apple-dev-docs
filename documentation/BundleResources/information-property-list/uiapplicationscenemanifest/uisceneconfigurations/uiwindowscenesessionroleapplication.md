@@ -16,7 +16,7 @@ Configurations for scenes you use to display content on the device’s main scre
 - **Name**: `UIWindowSceneSessionRoleApplication` (Application Session Role)
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Use this key to specify scene configurations for a session role. Each scene configuration corresponds to one you use for content you display on the device. The first item in the array represents the default scene configuration for this role.
 

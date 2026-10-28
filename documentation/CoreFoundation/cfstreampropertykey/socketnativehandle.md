@@ -25,7 +25,7 @@ static let socketNativeHandle: CFStreamPropertyKey!
 extern CFStreamPropertyKey const kCFStreamPropertySocketNativeHandle;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available for socket streams. You cannot modify this value. You can read this value at any time.
 

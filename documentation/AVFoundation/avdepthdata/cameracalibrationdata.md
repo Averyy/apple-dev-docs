@@ -24,7 +24,7 @@ var cameraCalibrationData: AVCameraCalibrationData? { get }
 @property (readonly, nullable) AVCameraCalibrationData * cameraCalibrationData;
 ```
 
-#### Discussion
+## Discussion
 
 Using depth or disparity map data to render effects into a corresponding image or to perform computer vision tasks requires knowledge of the camera parameters that generated the depth data. Depth data captured by an [`AVCaptureDevice`](../avcapturedevice.md) object contains camera calibration data that includes such information.
 

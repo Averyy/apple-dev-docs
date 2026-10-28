@@ -26,7 +26,7 @@ optional func resolveRestaurant(for intent: INGetUserCurrentRestaurantReservatio
 - (void) resolveRestaurantForGetUserCurrentRestaurantReservationBookings:(INGetUserCurrentRestaurantReservationBookingsIntent *) intent withCompletion:(void (^)(INRestaurantResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the restaurant to search for.
 

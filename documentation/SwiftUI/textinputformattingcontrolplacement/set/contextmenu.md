@@ -19,7 +19,7 @@ Text formatting controls placed in the context menu, and the edit menu on iOS.
 static let contextMenu: TextInputFormattingControlPlacement.Set
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, the Font Panel is available only when the `contextMenu` placement is available.
 

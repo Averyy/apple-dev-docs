@@ -24,7 +24,7 @@ static var discontinuity: AudioFileStreamParseFlags { get }
 kAudioFileStreamParseFlag_Discontinuity
 ```
 
-#### Discussion
+## Discussion
 
 Any partial packet straddling a buffer boundary is discarded to avoid having the parser call your callback with a corrupt packet. After a discontinuity occurs, the [`AudioFileStreamSeek(_:_:_:_:)`](../audiofilestreamseek%28_,_,_,_%29.md) function might return approximate values for some data formats.
 

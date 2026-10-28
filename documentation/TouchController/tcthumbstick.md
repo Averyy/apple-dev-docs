@@ -21,7 +21,7 @@ class TCThumbstick
 @interface TCThumbstick : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is mirrored by a `GCControllerDirectionPad` on the associated `GCController` instance.
 

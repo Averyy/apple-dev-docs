@@ -23,7 +23,7 @@ func setDividerImage(_ dividerImage: UIImage?, forLeftSegmentState leftState: UI
 - (void) setDividerImage:(UIImage *) dividerImage forLeftSegmentState:(UIControlState) leftState rightSegmentState:(UIControlState) rightState barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 To customize the segmented control appearance, provide divider images for the following cases:
 

@@ -21,7 +21,7 @@ Returns an array that contains all of the compute devices that are accessible.
 static var allComputeDevices: [MLComputeDevice] { get }
 ```
 
-#### Discussion
+## Discussion
 
 If a compute device becomes inaccessible, this array won’t include it. For example, this array won’t contain the GPU device after it’s removed.
 

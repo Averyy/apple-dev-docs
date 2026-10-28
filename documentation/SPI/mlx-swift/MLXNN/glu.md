@@ -17,11 +17,11 @@ Applies the gated linear unit function.
 class GLU
 ```
 
-#### Overview
+## Overview
 
 This function splits the `axis` dimension of the input into two halves (`a` and `b`) and applies `a * sigmoid(b)`.
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`glu(_:axis:)`](./glu%28_,axis%29.md)

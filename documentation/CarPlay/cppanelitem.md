@@ -21,7 +21,7 @@ class CPPanelItem
 @interface CPPanelItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CPPanelItem` type defines the default behaviors for content you display in a panel. You don’t create this type directly or use it to configure the contents of your panel. Instead, instantiate one of the defined subclasses based on the type of panel you’re configuring. For example, create [`CPMapPanelItem`](./cpmappanelitem.md) objects when configuring the content for a [`CPMapPanel`](./cpmappanel.md) type.
 

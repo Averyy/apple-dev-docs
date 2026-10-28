@@ -20,7 +20,7 @@ Provide a preferred initial scene style for an immersive space scene.
 - `UIImmersionStyleMixed`
 - `UIImmersionStyleProgressive`
 
-#### Discussion
+## Discussion
 
 Use [`UISceneInitialImmersionStyle`](./uisceneinitialimmersionstyle.md) to configure the initial style for the system to use to create an immersive space scene for your app.
 

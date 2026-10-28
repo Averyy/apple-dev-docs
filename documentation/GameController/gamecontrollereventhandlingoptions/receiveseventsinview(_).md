@@ -18,7 +18,7 @@ A Boolean option that determines whether events are delivered exclusively throug
 static func receivesEventsInView(_ receivesEventsInView: Bool) -> GameControllerEventHandlingOptions
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, events are delivered both through the Game Controller framework and as SwiftUI events to your app’s views and gesture recognizers.
 

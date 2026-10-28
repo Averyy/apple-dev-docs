@@ -21,11 +21,11 @@ optional func tableView(_ tableView: NSTableView, writeRowsWith rowIndexes: Inde
 - (BOOL) tableView:(NSTableView *) tableView writeRowsWithIndexes:(NSIndexSet *) rowIndexes toPasteboard:(NSPasteboard *) pboard;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the drag operation is allowed, `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 Called by `aTableView` after it has been determined that a drag should begin, but before the drag has been started.
 

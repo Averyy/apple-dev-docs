@@ -5,83 +5,83 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1. Xcode 10.1 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 10.1 requires a Mac running macOS 10.13.6 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Support for arm64e (Preview)To try the developer preview of arm64e, select your iOS app target in the Project Editor, find its Architectures build setting, select the Other… option, and add arm64e to the list of architectures. For more information, see [Preparing your app to work with pointer authentication](../Security/preparing-your-app-to-work-with-pointer-authentication.md).
 
   The App Store and TestFlight don’t accept submissions containing arm64e. Xcode will remove arm64e content from your app when you distribute from the Organizer window. (42296212)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The navigation UI for Navigate > Open in… no longer displays individual tabs in a window as separate windows with one tab each. (31716375)
 - The `xed` tool now uses the Xcode currently specified by `xcode-select` or the `DEVELOPER_DIR` environment variable. (7711481)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Changes to libunwind in iOS 12.1 beta 2 resolved an issue with a small number of apps running on iPhone XS and iPhone XS Max. (44361223)
 
-##### Asset Catalog
+### Asset Catalog
 
-###### Known Issues
+#### Known Issues
 
 - Apps that contain asset catalogs built using Xcode 10 or later with a deployment target of iOS 9.0, 9.1 or 9.2 produce content incompatible with the runtimes of those iOS versions when you’re using app thinning as part of exporting an archive for local or enterprise distribution. (46893768)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue that affected app compatibility with iOS 9.0, 9.1, and 9.2 when distributing an app on the App Store. App asset catalogs built using Xcode 10 with a deployment target of iOS 9.0, 9.1 or 9.2 produce content incompatible with the runtimes of those iOS versions when distributed via the App Store. Rebuild and resubmit the app using Xcode 10.1 to resolve the issue. (44535967, 45723580, 45723189)
 - The 40mm and 44mm wells for complications specify the correct icon sizes. (43069075, 43401397)
 
-##### Build System
+### Build System
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The new build system supports On Demand Resources (ODR). (31508570)
 - Fixed an issue where individual localized `.xib` files or storyboards associated with the base file wouldn’t be compiled into the product when using base localization for a `.xib` file or storyboard. (44437269)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - The Breakpoint editor for Exception breakpoints now has an “ignore count” field. (21547530)
 
-##### Devices
+### Devices
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Devices running iOS 12 or later take screenshots requested from the Devices window. (42873539)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - Control-dragging in the canvas to add constraints now always includes all four directions, not just the ones closest to the direction of the drag. (43618031)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue with Auto Layout incorrectly reporting issues when constraining views to [`UIScrollView`](../UIKit/uiscrollview.md) subviews. (44457610)
 - Improved canvas performance when switching between iPhone XS, iPhone XS Max, and iPhone XR with the device bar. (44605631)
 - Fixed an issue that caused the layout of watch content in the Preview assistant editor to not match the Device Bar selection. (42563683)
 - `@IBDesignable` views now build using the new build system when it’s enabled. (31433718)
 
-##### Simulator
+### Simulator
 
-###### Known Issues
+#### Known Issues
 
 - If another process, such as `simctl`, shuts down a simulated device while Simulator is open, Simulator doesn’t reconnect to it properly when the device is next booted. If you have multiple versions of Xcode installed, you might experience this issue when running Simulator in those other versions. (44629720)
 
   **Workaround:** Quit and relaunch Simulator. To quit without shutting down all simulators, hold Option and choose Simulator > Quit Simulator…, then choose “Keep Running” in the dialog that appears.
 
-##### Swift Compiler
+### Swift Compiler
 
-###### Known Issues
+#### Known Issues
 
 - If you indirectly modify a property using a nonmutating setter that’s defined in a protocol or extension on a class instance, the Swift compiler might miscompile it by releasing the instance after the getter is invoked. This might cause the program to crash or have unpredictable behavior at runtime. (45274900)
 
@@ -113,7 +113,7 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
   someObject.someNonmutatingProperty = temp
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Playgrounds in Xcode no longer log messages about fields whose types fail to demangle at runtime. (44642942)
 - Compilation now consistently reports the errors responsible for any failures. For example, previously, a message like “Command CompileSwiftSources failed with a nonzero exit code” could occur without an accompanying failure reason. (43033749, 44362180)
@@ -151,27 +151,27 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
   f([NSObject.self, NSString.self])
   ```
 
-##### Swift Standard Library
+### Swift Standard Library
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The [`FixedWidthInteger`](../Swift/fixedwidthinteger.md) protocol’s `unsafeAdding(_:)`, `unsafeSubtracting(_:)`, `unsafeDivided(by:)`, and `unsafeMultiplied(by:)` methods are now deprecated and will be removed in a future release.These methods produce undefined behavior in overflow conditions. In the case of arithmetic operations, use a combination of an assert and either the [`addingReportingOverflow(_:)`](../Swift/fixedwidthinteger/addingreportingoverflow%28_%29.md) method or the `&+` operator, both of which have well-defined results in cases of overflow. (43688685)
 
-##### Source Control
+### Source Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Organizational repositories now show up alongside personal repositories when cloning from GitLab.com or GitLab self-hosted accounts.
 
-##### Testing
+### Testing
 
-###### Known Issues
+#### Known Issues
 
 - Profiling tests does not behave correctly when test parallelization is enabled. (44836817)
 
   **Workaround:** Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme… > Test > Info. Select the Options button next to your test target, and disable the “Execute in parallel” checkbox.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - UI tests in projects using the legacy build system now run on iPhone XS and iPhone XS Max. (44777186)
 - If a UI test target app crashes during testing in Simulator, it’s now correctly reported as a test failure instead of either being incorrectly considered a successful test or displaying a failure message about “Application state unknown”. (44765263)

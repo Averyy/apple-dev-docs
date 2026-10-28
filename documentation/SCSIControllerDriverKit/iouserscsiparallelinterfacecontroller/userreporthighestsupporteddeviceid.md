@@ -15,11 +15,11 @@ Gets the highest supported SCSI device identifier in response to a call from the
 virtual kern_return_t UserReportHighestSupportedDeviceID(uint64_t *id);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of getting the identifier. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The framework calls this method to determine the value of the highest SCSI device identifier that the HBA supports. The result of this call determines the last ID to process.
 

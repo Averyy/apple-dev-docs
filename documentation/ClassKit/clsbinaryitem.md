@@ -23,7 +23,7 @@ class CLSBinaryItem
 @interface CLSBinaryItem : CLSActivityItem
 ```
 
-#### Overview
+## Overview
 
 Use an activity item of this type to indicate a binary condition, such as whether a student passed a test or failed it. Set the [`valueType`](./clsbinaryitem/valuetype.md) property to specify how the binary condition should be reported to a teacher.
 

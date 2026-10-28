@@ -24,7 +24,7 @@ func show()
 - (void) show;
 ```
 
-#### Discussion
+## Discussion
 
 On iOS 3.1 or later, the peer picker is retained when it is shown, and autoreleased when it is dismissed.
 

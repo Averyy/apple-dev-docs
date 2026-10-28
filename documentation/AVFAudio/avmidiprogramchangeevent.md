@@ -24,7 +24,7 @@ class AVMIDIProgramChangeEvent
 @interface AVMIDIProgramChangeEvent : AVMIDIChannelEvent
 ```
 
-#### Overview
+## Overview
 
 The effect of this message depends on the [`AVMusicTrack`](./avmusictrack.md) destination audio unit.
 

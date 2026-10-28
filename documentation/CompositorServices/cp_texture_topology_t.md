@@ -16,7 +16,7 @@ A type that specifies the organization of one of the drawable’s textures.
 typedef struct cp_texture_topology * cp_texture_topology_t;
 ```
 
-#### Discussion
+## Discussion
 
 Metal supports multiple organizations for the textures you use for drawing. Use this type to identify one of the organizations available to use in your app.
 

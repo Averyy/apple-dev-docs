@@ -15,7 +15,7 @@ Specifies the output safety offset of the device.
 kern_return_t SetOutputSafetyOffset(uint32_t in_safety_offset);
 ```
 
-#### Discussion
+## Discussion
 
 A uint32_t whose value indicates the number for frames ahead the current hardware position that is safe to do IO.
 

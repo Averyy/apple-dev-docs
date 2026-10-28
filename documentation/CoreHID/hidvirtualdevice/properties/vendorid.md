@@ -19,7 +19,7 @@ let vendorID: UInt32
 
 - [Creating virtual devices](../../creatingvirtualdevices.md)
 
-#### Discussion
+## Discussion
 
 The vendor ID designates the vendor that produced the device. It can be combined with [`productID`](./productid.md) to determine the exact device.
 

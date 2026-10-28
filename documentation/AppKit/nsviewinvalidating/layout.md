@@ -18,7 +18,7 @@ static var layout: NSView.Invalidations.Layout { get }
 
 Available when `Self` is `NSView.Invalidations.Layout`.
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to set [`needsLayout`](../nsview/needslayout.md) so that a change in property value triggers the system to update the layout of the containing view’s subviews.
 

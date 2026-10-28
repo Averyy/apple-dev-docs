@@ -24,7 +24,7 @@ class func kernels(withMetalString source: String) throws -> [CIKernel]
 + (NSArray<CIKernel *> *) kernelsWithMetalString:(NSString *) source error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CIKernel`](../cikernel.md) objects.
 

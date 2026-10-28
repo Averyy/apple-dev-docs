@@ -21,7 +21,7 @@ init(participantUUID: String, streamDirection: SCVideoStreamAnalyzer.StreamDirec
 - (instancetype) initWithParticipantUUID:(NSString *) participantUUID streamDirection:(SCVideoStreamAnalyzerStreamDirection) streamDirection error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This class works only when the Communication Safety parental control in Screen Time is enabled, or when the Sensitive Content Warnings setting is on. This method throws an error if both settings are off, or if the device doesn’t support analysis for the specified stream direction.
 

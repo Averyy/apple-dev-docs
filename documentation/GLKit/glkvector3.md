@@ -22,7 +22,7 @@ typealias GLKVector3 = _GLKVector3
 typedef union _GLKVector3 GLKVector3;
 ```
 
-##### Fields
+### Fields
 
 | Name | Description |
 | --- | --- |

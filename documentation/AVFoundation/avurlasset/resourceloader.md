@@ -24,7 +24,7 @@ var resourceLoader: AVAssetResourceLoader { get }
 @property (nonatomic, readonly) AVAssetResourceLoader * resourceLoader;
 ```
 
-#### Discussion
+## Discussion
 
 During loading, the system may ask the resource loader to assist loading the resource. For example, a resource that requires decryption may require the resource loader to provide the appropriate decryption keys. You can assign a delegate object to the resource loader object and use your delegate to intercept these requests and provide appropriate responses.
 

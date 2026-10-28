@@ -20,7 +20,7 @@ An attempt to remove a bridged accessory.
 static var cannotRemoveNonBridgeAccessory: HMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can only remove standalone or bridge accessories.
 

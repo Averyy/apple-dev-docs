@@ -23,11 +23,11 @@ func section(for object: Any, collationStringSelector selector: Selector) -> Int
 - (NSInteger) sectionForObject:(id) object collationStringSelector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 An integer that identifies the section in which the model object belongs. The numbers returned indicate a sequential ordering.
 
-#### Discussion
+## Discussion
 
 The table-view controller should iterate through all model objects for the table view and call this method for each object. If the application provides a `Localizable.strings` file for the current language preference, the indexed-collation object localizes each string returned by the method identified by `selector`. It uses this localized name when collating titles. The controller should use the returned integer to identify a local “section” array in which it should insert `object`.
 

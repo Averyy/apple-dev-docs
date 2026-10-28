@@ -15,7 +15,7 @@ Sets the current stereo panning channels.
 kern_return_t SetPanningChannels(IOUserVideoObjectPropertyElement in_left_channel, IOUserVideoObjectPropertyElement in_right_channel);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the panning channels will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 

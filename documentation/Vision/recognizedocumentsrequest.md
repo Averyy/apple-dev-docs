@@ -20,7 +20,7 @@ An image-analysis request to scan an image of a document and provide information
 struct RecognizeDocumentsRequest
 ```
 
-#### Overview
+## Overview
 
 This request scans a document and extracts different groups of text and barcodes within the document image. Use this request to understand different types of structured texts like receipts, nutritional labels, textbook pages, forms, or other documents that you want to understand in further detail.
 

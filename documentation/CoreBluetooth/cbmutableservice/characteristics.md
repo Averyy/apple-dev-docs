@@ -25,7 +25,7 @@ var characteristics: [CBCharacteristic]? { get set }
 @property (retain, readwrite, nullable) NSArray<CBCharacteristic *> * characteristics;
 ```
 
-#### Discussion
+## Discussion
 
 An array containing [`CBCharacteristic`](../cbcharacteristic.md) objects that represent a service’s characteristics. Characteristics provide further details about a peripheral’s service. For example, a heart rate service may contain one characteristic that describes the intended body location of the device’s heart rate sensor, while another characteristic transmits heart rate measurement data.
 

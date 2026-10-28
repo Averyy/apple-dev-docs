@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_GET_TASK_INSPECT: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_GET_TASK_INSPECT
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`get_task_inspect`](./es_events_t/get_task_inspect.md), which has the type [`es_event_get_task_inspect_t`](./es_event_get_task_inspect_t.md).
 

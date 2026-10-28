@@ -21,7 +21,7 @@ Indicates that the code is signed by an Apple issued Developer ID certificate.
 static let developerID: ValidationCategory.Value
 ```
 
-#### Discussion
+## Discussion
 
 This category will only match process on macOS. This category could match code on disk on iOS/watchOS/tvOS/visionOS but that code cannot run.
 

@@ -21,7 +21,7 @@ The device verification value to use to verify whether the renewal information b
 let deviceVerification: Data
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`deviceVerificationID`](../../../appstore/deviceverificationid.md).
 

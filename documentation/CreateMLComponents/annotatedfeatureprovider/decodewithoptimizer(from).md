@@ -23,7 +23,7 @@ func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> Ann
 
 Available when `Base` conforms to `UpdatableSupervisedEstimator` and `Base.Transformer.Input` is `UnwrappedInput?`.
 
-#### Return Value
+## Return Value
 
 The decoded transformer.
 

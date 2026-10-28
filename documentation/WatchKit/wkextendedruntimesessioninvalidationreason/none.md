@@ -19,7 +19,7 @@ case none
 WKExtendedRuntimeSessionInvalidationReasonNone
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this reason when you stop a session by calling its [`invalidate()`](../wkextendedruntimesession/invalidate%28%29.md) method.
 

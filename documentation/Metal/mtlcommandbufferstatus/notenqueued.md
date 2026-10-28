@@ -24,7 +24,7 @@ case notEnqueued
 MTLCommandBufferStatusNotEnqueued
 ```
 
-#### Discussion
+## Discussion
 
 See the [`MTLCommandBuffer`](../mtlcommandbuffer.md) protocol’s [`status`](../mtlcommandbuffer/status.md) property for more information.
 

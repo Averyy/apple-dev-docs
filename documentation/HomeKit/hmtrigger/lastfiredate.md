@@ -26,7 +26,7 @@ var lastFireDate: Date? { get }
 @property (nonatomic, copy, readonly, nullable) NSDate * lastFireDate;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if the trigger has never fired.
 

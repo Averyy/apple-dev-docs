@@ -22,11 +22,11 @@ Returns a new color with an exposure adjustment applied.
 func exposureAdjust(_ stops: Double) -> Color
 ```
 
-#### Return Value
+## Return Value
 
 A new color with the exposure adjustment applied.
 
-#### Discussion
+## Discussion
 
 This function adjusts the exposure of a color by multipling its linear-light representation by `pow(2, stops)` and adjusting its HDR content headroom.
 

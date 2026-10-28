@@ -24,7 +24,7 @@ let kCFStreamPropertyFTPProxyPort: CFString
 extern CFStringRef const kCFStreamPropertyFTPProxyPort;
 ```
 
-#### Discussion
+## Discussion
 
 FTP Proxy Port stream property key or an FTP Proxy dictionary key for set and copy operations. The value of this property is a CFNumber of type `kCFNumberIntType` containing the port number of a proxy server. This property can be set and copied individually or via a CFDictionary. This property is the same as the `kSCPropNetProxiesFTPPort` property defined in `SCSchemaDefinitions.h`.
 

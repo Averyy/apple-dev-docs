@@ -21,7 +21,7 @@ An array containing all the valid numbering systems for the locale.
 var availableNumberingSystems: [Locale.NumberingSystem] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The following snippet creates a locale for Arabic as used in United Arab Emirites. For this locale, there are two numbering systems available: `latn` (Latin digits) and `arab` (Arabic-Indic digits).
 

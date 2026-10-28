@@ -17,7 +17,7 @@ The key for the content identifier of the help guide entry that a person opened.
 static let helpGuideContentId: String
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to distinguish entries when several help guide entries in your `metadata.json` file share one [`HomeAccessoryHelpGuide`](../../homeaccessoryhelpguide.md) identifier. The metadata omits this key if the entry has no `ContentId`.
 

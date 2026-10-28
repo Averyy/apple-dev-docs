@@ -24,7 +24,7 @@ class LayerHierarchyHostingTransactionCoordinator
 
 - [Hosting browser view layers in the rendering extension](./hosting-browser-view-layers-in-the-rendering-extension.md)
 
-#### Overview
+## Overview
 
 Updates to your app’s UI occur through Core Animation’s underlying transaction mechanism. This class works with Core Animation to synchronize transactions that occur across processes in your browser app. To do that:
 

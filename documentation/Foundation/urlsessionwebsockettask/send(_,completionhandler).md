@@ -22,7 +22,7 @@ Sends a WebSocket message, receiving the result in a completion handler.
 func send(_ message: URLSessionWebSocketTask.Message, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 If an error occurs while sending the message, any outstanding work also fails.
 

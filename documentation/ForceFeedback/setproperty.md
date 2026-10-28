@@ -5,7 +5,7 @@
 
 This function sets properties that define the device behavior.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *SetProperty)(
@@ -14,7 +14,7 @@ HRESULT ( *SetProperty)(
    void *pValue );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **property**: The following property values are defined for a FF device:
@@ -40,7 +40,7 @@ HRESULT ( *SetProperty)(
   Setting a gain value is useful when an application wants to scale down the strength of all force-feedback effects uniformly, based on user preferences.
 - **pValue**: Address of the location where the property value is to be read. This function will assume that the data is valid, and of the correct type.
 
-##### Return Value
+### Return Value
 
 If the method succeeds, the return value is FF_OK or FFERR_UNSUPPORTED. If the method fails, the return value can be one of the following error values:
 

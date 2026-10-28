@@ -20,7 +20,7 @@ Register a type that can handle push tokens changing for controls of this type.
 @preconcurrency func pushHandler(_ pushHandlerType: any ControlPushHandler.Type) -> some ControlWidgetConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this to opt your control into using push notifications.
 

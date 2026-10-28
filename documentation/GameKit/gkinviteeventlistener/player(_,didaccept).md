@@ -28,7 +28,7 @@ optional func player(_ player: GKPlayer, didAccept invite: GKInvite)
 
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
-#### Discussion
+## Discussion
 
 This method presents the matchmaker view controller in the invitation state so that the local player can see other players in the match accept their invitations.
 

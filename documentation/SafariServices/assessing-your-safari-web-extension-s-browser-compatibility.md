@@ -5,11 +5,11 @@
 
 Review your Safari web extension implementation plan, manifest keys, and JavaScript API usage for compatibility with other browsers.
 
-#### Overview
+## Overview
 
 Safari web extensions provide a number of features for compatibility with other browsers and a good developer experience, while ensuring the safety and privacy that users expect. Review your extension implementation or planned approach, `manifest.json` key usage, and selected JavaScript APIs for incompatibilities, and get suggestions and workarounds for potential issues.
 
-##### Review your implementation plan
+### Review your implementation plan
 
 Consider these factors when reviewing your implementation plan for your Safari web extension, and make adjustments as needed:
 
@@ -17,7 +17,7 @@ Consider these factors when reviewing your implementation plan for your Safari w
 - Safari web extensions support both the callback and `Promise` approaches for asynchronous APIs. Use the most suitable approach for your code quality and browser compatibility.
 - Safari ignores file URL schemes in manifest permissions. If you use them, adjust your implementation.
 
-##### Review your manifest
+### Review your manifest
 
 Generally, Safari web extensions ignore any unsupported manifest keys, but you may need to develop workarounds or alternative approaches for any incompatibilities. Check for these keys in your manifest and take action where needed:
 
@@ -30,7 +30,7 @@ Generally, Safari web extensions ignore any unsupported manifest keys, but you m
 
 Safari 15.4 and later supports manifest versions 2 and 3. To evaluate compatibility for manifest keys in your extension, see Mozilla’s compatibility table at  [Browser compatibility for manifest.json](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_compatibility_for_manifest.json).
 
-##### Review your web extension API usage
+### Review your web extension API usage
 
 Generally, Safari ignores any unsupported JavaScript APIs, but you may need to develop workarounds or alternative approaches for any incompatibilities. Check for these APIs in your Safari web extension and take action where needed:
 

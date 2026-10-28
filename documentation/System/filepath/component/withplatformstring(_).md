@@ -21,11 +21,11 @@ Calls the given closure with a pointer to the contents of the file path componen
 func withPlatformString<Result>(_ body: (UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 If this is not the last component of a path, an allocation will occur in order to add the null terminator.
 

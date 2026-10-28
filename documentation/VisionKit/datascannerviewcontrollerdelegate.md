@@ -22,7 +22,7 @@ protocol DataScannerViewControllerDelegate : AnyObject
 
 - [Scanning data with the camera](./scanning-data-with-the-camera.md)
 
-#### Overview
+## Overview
 
 Implement this protocol to handle when people tap recognized items and, optionally, provide additional feedback when the data scanner updates the recognized items.
 

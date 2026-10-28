@@ -25,7 +25,7 @@ func fill(with items: [TKTokenKeychainItem])
 - (void) fillWithItems:(NSArray<TKTokenKeychainItem *> *) items;
 ```
 
-#### Discussion
+## Discussion
 
 All existing items for the token are first removed from the keychain before filling the keychain with `items`.
 

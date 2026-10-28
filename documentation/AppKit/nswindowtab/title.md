@@ -19,7 +19,7 @@ var title: String! { get set }
 @property (copy, null_resettable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title displays within the window tab when the associated window is part of a tabbing group.
 

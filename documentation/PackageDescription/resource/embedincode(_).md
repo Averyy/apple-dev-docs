@@ -15,11 +15,11 @@ Applies the embed rule to a resource at the given path.
 static func embedInCode(_ path: String) -> Resource
 ```
 
-#### Return Value
+## Return Value
 
 A `Resource` instance.
 
-#### Discussion
+## Discussion
 
 Use the embed rule to embed the bytes that represent the contents of a resource into executable code. For example,  if you embed the file `identifier.txt` that has the contents:
 

@@ -14,15 +14,15 @@ Access the user’s contacts, and format and localize contact information.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 The Contacts framework provides Swift and Objective-C APIs to access the user’s contact information. Because most apps read contact information without making any changes, this framework is optimized for thread-safe, read-only usage.
 
-##### Working with the user’s contacts
+### Working with the user’s contacts
 
 The Contacts framework is available on all Apple platforms, and replaces the Address Book framework in iOS and macOS.
 
-###### Contact objects
+#### Contact objects
 
 The contact class ([`CNContact`](./cncontact.md)) is a thread-safe, immutable value object of contact properties, such as the contact’s name, image, and phone numbers.
 
@@ -78,7 +78,7 @@ do {
 }
 ```
 
-###### Formatting and localization
+#### Formatting and localization
 
 The Contacts framework helps you format and localize contact information. For example, you can correctly format a contact name (using [`CNContactFormatter`](./cncontactformatter.md)) or format an international postal address (using [`CNPostalAddressFormatter`](./cnpostaladdressformatter.md)).
 
@@ -110,7 +110,7 @@ print(displayLabel)
 // Prints "casa".
 ```
 
-###### Fetching contacts
+#### Fetching contacts
 
 You can fetch contacts using the contact store ([`CNContactStore`](./cncontactstore.md)), which represents the user’s Contacts database. The contact store encapsulates all I/O operations and is responsible for fetching and saving contacts and groups. Because the contact store methods are synchronous, it’s best practice to use them on background threads. If necessary, you can safely send immutable fetch results back to the main thread.
 
@@ -150,13 +150,13 @@ The Contacts framework can also perform operations on the fetched contacts, such
 let keysToFetch = [CNContactEmailAddressesKey as CNKeyDescriptor, CNContactFormatter.descriptorForRequiredKeys(for: .fullName)]
 ```
 
-###### Privacy
+#### Privacy
 
 Users can grant or deny access to contact data on a per-app basis. Any call to [`CNContactStore`](./cncontactstore.md) blocks the app while asking the user to grant or deny access. Note that the user receives a prompt only the first time an app requests access; all subsequent [`CNContactStore`](./cncontactstore.md) calls use the existing permissions. To avoid having your app’s UI main thread block for this access, you can use either the asynchronous method [`requestAccess(for:completionHandler:)`](./cncontactstore/requestaccess%28for,completionhandler%29.md) or dispatch your [`CNContactStore`](./cncontactstore.md) usage to a background thread.
 
 > ❗ **Important**: An iOS app linked on or after iOS 10 needs to include in its `Info.plist` file the usage description keys for the types of data it needs to access or it crashes. To access Contacts data specifically, it needs to include [NSContactsUsageDescription](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW14).
 
-###### Partial contacts
+#### Partial contacts
 
 A partial contact results when the system fetches only some of a contact object’s properties from a contact store. All fetched contact objects are partial contacts. If you try to access a property value that the system didn’t fetch, you get an exception. If you are unsure which keys the system fetched in the contact, check the availability of the property values before you access them. You can either use [`isKeyAvailable(_:)`](./cncontact/iskeyavailable%28_%29.md) to check the availability of a single contact key, or [`areKeysAvailable(_:)`](./cncontact/arekeysavailable%28_%29.md) to check multiple keys. If the desired keys aren’t available, refetch the contact with them.
 
@@ -178,7 +178,7 @@ if contact.isKeyAvailable(CNContactPhoneNumbersKey) {
 }
 ```
 
-###### Unified contacts
+#### Unified contacts
 
 You can automatically link contacts in different accounts that represent the same person. Linked contacts display in macOS and iOS apps as unified contacts. A unified contact is an in-memory, temporary view of the set of linked contacts that the system merges into one contact.
 
@@ -186,7 +186,7 @@ You can automatically link contacts in different accounts that represent the sam
 
 By default the Contacts framework returns unified contacts. Each fetched unified contact object ([`CNContact`](./cncontact.md)) has its own unique identifier that’s different from any individual contact’s identifier in the set of linked contacts. When refetching a unified contact, be sure to use its identifier.
 
-###### Saving contacts
+#### Saving contacts
 
 The contact store ([`CNContactStore`](./cncontactstore.md)) also saves changes to the Contacts framework objects. The [`CNSaveRequest`](./cnsaverequest.md) class enables save operations and allows batching of changes to multiple contacts and groups into a single operation. After adding all objects to the save request, it can execute with a contact store as the code example below shows. Don’t access the objects in the save request while the save is executing, because the objects may have modifications.
 
@@ -230,11 +230,11 @@ do {
 }
 ```
 
-###### Contacts changed notifications
+#### Contacts changed notifications
 
 After successfully executing a save, the contact store posts a [`CNContactStoreDidChange`](../Foundation/nsnotification/name-swift.struct/cncontactstoredidchange.md) notification to the default notification center. If you cache any Contacts framework objects, you need to refetch those objects, either by their identifiers, or with the predicates that you used to originally fetch them, and then release the cached objects. Note that cached objects are stale, but not invalid.
 
-###### Containers and groups
+#### Containers and groups
 
 A user may have contacts in their device’s local account or server accounts that they configure to sync contacts. Each account has at least one container of contacts. A contact can be in only one container.
 

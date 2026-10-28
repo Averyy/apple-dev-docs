@@ -18,7 +18,7 @@ The maximum number of instances the mesh supports when using per-instance vertex
 var instanceCapacity: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this to the maximum number of instances you intend to draw when any `Layout` in `vertexLayouts` uses a `stepFunction` of `.perInstance`. Defaults to `0`.
 

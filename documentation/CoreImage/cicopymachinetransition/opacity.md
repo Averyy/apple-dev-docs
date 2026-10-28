@@ -25,7 +25,7 @@ var opacity: Float { get set }
 @property (nonatomic) float opacity;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0.0 is transparent. A value of 1.0 is opaque.
 

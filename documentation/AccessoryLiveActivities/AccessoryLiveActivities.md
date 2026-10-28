@@ -11,7 +11,7 @@ Forward Live Activity alerts from iPhone to an accessory you develop.
 - iPadOS 26.5+
 - Mac Catalyst 26.5+
 
-#### Overview
+## Overview
 
 With the Accessory Live Activities framework, your accessory companion app can request Live Activity forwarding from people and receive Live Activity status updates and alerts from the system through an extension model. Your accessory can then display Live Activity status information and an alert that provides people with information about the updated Live Activity.
 

@@ -24,7 +24,7 @@ class MPSImageIntegralOfSquares
 @interface MPSImageIntegralOfSquares : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 The value at each position is the sum of all squared pixels in a source image rectangle, `sumRect.` The following listing shows the pseudocode used to calculate `sumRect`.
 

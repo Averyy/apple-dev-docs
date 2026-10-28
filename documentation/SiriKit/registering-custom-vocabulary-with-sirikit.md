@@ -4,7 +4,7 @@
 
 Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
 
-#### Overview
+## Overview
 
 Apps must register any vocabulary that’s used in a nonconventional way or that’s completely unique to your app. Siri uses your custom vocabulary to improve the speech recognition process and to ensure that your app has correct information.
 
@@ -12,7 +12,7 @@ You must provide one or more example phrases for engaging your app through Siri.
 
 The terms you define from your iOS app are automatically shared with your Intents extension on watchOS. You don’t need to register your user-specific or global vocabulary again from your Intents extension in watchOS.
 
-##### Register Example Phrases and Global Vocabulary
+### Register Example Phrases and Global Vocabulary
 
 Register your app’s example phrases and global vocabulary using the Info.plist file of your Intents app extension. All apps should provide at least a few phrases that teach users how to use Siri to trigger your intents. Siri displays your phrases in the Siri Guide and also uses custom vocabulary to improve the accuracy of its recognition process. To create a global vocabulary file:
 
@@ -35,7 +35,7 @@ You may specify custom vocabulary terms for *ride options* and *workout names*. 
 
 For information about how to fully specify example phrases and custom terms, see [Global Vocabulary Reference](./global-vocabulary-reference.md).
 
-##### Register User-Specific Vocabulary
+### Register User-Specific Vocabulary
 
 You register user-specific vocabulary terms at runtime by calling the [`setVocabularyStrings(_:of:)`](../Intents/invocabulary/setvocabularystrings%28_,of%29.md) method of an [`INVocabulary`](../Intents/invocabulary.md) object. Unlike the global terms, which you declare in your app bundle, you declare user-specific terms at runtime from your iOS app. The terms you declare must belong to one of the following categories:
 

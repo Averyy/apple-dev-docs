@@ -15,7 +15,7 @@ The amount, in milli-units, that the customer paid or was refunded, excluding ta
 int64 amountTaxExclusive
 ```
 
-#### Discussion
+## Discussion
 
 This value must equal [`amountTaxInclusive`](./amounttaxinclusive.md) minus [`taxAmount`](./taxamount.md). The `amountTaxExclusive` value is the amount in milli-units that the user paid, excluding taxes. For refunds, it is the amount in milli-units of the refund, excluding taxes.
 

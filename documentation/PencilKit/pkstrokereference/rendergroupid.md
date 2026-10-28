@@ -23,7 +23,7 @@ var renderGroupID: UUID? { get }
 @property (nonatomic, readonly, nullable) NSUUID * renderGroupID;
 ```
 
-#### Discussion
+## Discussion
 
 Set this to the same value for a run of strokes to render them as if drawn while the previous stroke with the same ink was still wet.
 

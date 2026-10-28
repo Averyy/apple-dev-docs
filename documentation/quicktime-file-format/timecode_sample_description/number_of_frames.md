@@ -6,7 +6,7 @@
 
 An 8-bit integer that contains the number of frames per second for the timecode format.
 
-#### Overview
+## Overview
 
 If the time is a counter, this is the number of frames for each counter tick.
 

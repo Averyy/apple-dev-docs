@@ -25,7 +25,7 @@ var isAtEnd: Bool { get }
 @property (readonly, getter=isAtEnd) BOOL atEnd;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has exhausted all significant characters in its string, otherwise [`false`](../../Swift/false.md).
 

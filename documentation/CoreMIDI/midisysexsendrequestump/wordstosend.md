@@ -25,7 +25,7 @@ var wordsToSend: UInt32
 UInt32 wordsToSend;
 ```
 
-#### Discussion
+## Discussion
 
 Initially, the number of words to send. [`MIDISendUMPSysex(_:)`](../midisendumpsysex%28_%29.md) decrements this counter as it sends the data.
 

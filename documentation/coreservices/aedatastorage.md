@@ -20,7 +20,7 @@ typealias AEDataStorage = UnsafeMutablePointer<AEDataStorageType?>
 typedef AEDataStorageType *AEDataStorage;
 ```
 
-#### Discussion
+## Discussion
 
 The Apple Event Manager defines the `AEDataStorage` data type to serve as a data storage field in the [`AEDesc`](./aedesc.md) structure. Your application doesn’t access the data pointed to by a data storage pointer directly. Rather, you work with the following functions:
 

@@ -15,11 +15,11 @@ Call down to a filesystem to synchronize a file with on-disk state.
 errno_t VNOP_FSYNC(vnode_t vp, int waitfor, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, else an error code.
 
-#### Discussion
+## Discussion
 
 VNOP_FSYNC is called whenever we need to make sure that a file's data has been pushed to backing store, for example when recycling; it is also the heart of the fsync() system call.
 

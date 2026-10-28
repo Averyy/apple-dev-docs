@@ -24,7 +24,7 @@ var isPaused: Bool { get set }
 @property (nonatomic, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`false`](../../Swift/false.md), the view periodically redraws the contents, at a frame rate set by the value of [`preferredFramesPerSecond`](./preferredframespersecond.md).
 

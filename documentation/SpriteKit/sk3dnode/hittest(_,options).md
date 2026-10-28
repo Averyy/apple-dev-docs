@@ -25,11 +25,11 @@ func hitTest(_ point: CGPoint, options: [String : Any]? = nil) -> [SCNHitTestRes
 - (NSArray<SCNHitTestResult *> *) hitTest:(CGPoint) point options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SCNHitTestResult`](../../SceneKit/scnhittestresult.md) objects representing search results.
 
-#### Discussion
+## Discussion
 
 A point in the SpriteKit node’s 2D viewport coordinate space can refer to any point along a line segment in the 3D SceneKit coordinate space. Hit-testing is the process of finding elements of a scene located along this line segment. For example, you can use this method to find the geometry corresponding to a touch event.
 

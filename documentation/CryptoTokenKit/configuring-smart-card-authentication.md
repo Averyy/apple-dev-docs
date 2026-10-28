@@ -5,11 +5,11 @@
 
 Set preferences for smart card authentication operations, including those on managed devices.
 
-#### Overview
+## Overview
 
 When you use the CryptoTokenKit framework to manage hardware tokens as two-factor authentication devices, as [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md) describes, the authentication process is subject to certain configuration options.
 
-##### Set Smart Card Preferences
+### Set Smart Card Preferences
 
 Configure smart card authentication preferences by setting values in the `com.apple.security.smartcard` preferences domain. For each setting, the framework first tries to read from mobile device management (MDM) settings. Next, it looks at systemwide preferences. Finally, it falls back on default values for any remaining unspecificed values.
 

@@ -26,7 +26,7 @@ func autosave() async -> Bool
 - (void) autosaveWithCompletionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 [`UIDocument`](../uidocument.md) periodically invokes this method to initiate a save operation if there are unsaved changes. You shouldn’t call this method directly. Subclasses can override it if they want to do special things with autosaving. The default implementation of this method invokes the [`hasUnsavedChanges`](./hasunsavedchanges.md) method and, if that returns [`true`](../../Swift/true.md), it invokes the [`save(to:for:completionHandler:)`](./save%28to,for,completionhandler%29.md) method.
 

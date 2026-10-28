@@ -28,11 +28,11 @@ class func colorMatrix() -> any CIFilter & CIColorMatrix
 
 - [Simulating Scratchy Analog Film](../simulating-scratchy-analog-film.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color matrix filter to an image. The effect calculates the color matrix by multiplying the vector properties with the color values from the input image.
 

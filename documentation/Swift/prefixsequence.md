@@ -22,7 +22,7 @@ A sequence that only consumes up to `n` elements from an underlying `Base` itera
 struct PrefixSequence<Base> where Base : Sequence
 ```
 
-#### Overview
+## Overview
 
 The underlying iterator’s sequence may be infinite.
 

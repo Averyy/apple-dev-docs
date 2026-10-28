@@ -15,7 +15,7 @@ A structure that defines the descriptor for a SuperSpeed USB hub.
 typedef struct IOUSBSuperSpeedHubDescriptor IOUSBSuperSpeedHubDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about this descriptor type, see USB 3.2, 10.15.2.1.
 

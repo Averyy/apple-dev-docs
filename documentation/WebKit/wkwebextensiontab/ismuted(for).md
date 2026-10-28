@@ -23,7 +23,7 @@ optional func isMuted(for context: WKWebExtensionContext) -> Bool
 - (BOOL) isMutedForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `NO` if not implemented.
 

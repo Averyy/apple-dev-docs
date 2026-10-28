@@ -15,11 +15,11 @@ Gets the current selections of the selector.
 size_t GetCurrentSelectedValues(IOUserAudioSelectorValue *out_values, size_t in_num_values);
 ```
 
-#### Return Value
+## Return Value
 
 The number of values populated in the `out_values` buffer.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

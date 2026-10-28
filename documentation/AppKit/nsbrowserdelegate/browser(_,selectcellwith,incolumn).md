@@ -20,11 +20,11 @@ optional func browser(_ sender: NSBrowser, selectCellWith title: String, inColum
 - (BOOL) browser:(NSBrowser *) sender selectCellWithString:(NSString *) title inColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the cell was successfully selected; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Invoked in response to the [`setPath(_:)`](../nsbrowser/setpath%28_%29.md) method of [`NSBrowser`](../nsbrowser.md) being received by `sender`.
 

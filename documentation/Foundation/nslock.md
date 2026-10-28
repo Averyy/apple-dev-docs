@@ -25,7 +25,7 @@ class NSLock
 @interface NSLock : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSLock`](./nslock.md) object can be used to mediate access to an application’s global data or to protect a critical section of code, allowing it to run atomically.
 

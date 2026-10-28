@@ -24,7 +24,7 @@ class MKClusterAnnotation
 @interface MKClusterAnnotation : NSObject
 ```
 
-#### Overview
+## Overview
 
 A cluster annotation object stands in for the group of annotations. Cluster views promote legibility of the underlying annotations by displaying a single annotation that takes it’s title from one annotation and includes a subtitle that indicates how many additional annotations belong to the group.
 

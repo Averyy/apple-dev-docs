@@ -10,13 +10,13 @@ Convert audio formats to efficiently manage data and quality.
 - macOS 12.0+
 - Xcode 13.3+
 
-#### Overview
+## Overview
 
 This sample shows how to encode and decode audio by using Audio Toolbox. If it’s encoding, the sample outputs the audio using the Advanced Audio Coding (AAC) audio format. AAC is a compressed, lossy audio format that maintains audio quality while using less storage space. When the sample decodes audio, the output audio format is represented as pulse code modulation (PCM). PCM is both an uncompressed and lossless audio format, resulting in a larger file format.
 
 The sample also explores how to set up data structures that describe audio formats, read and write packets to and from audio files, retrieve and set magic cookies, and loop through the input callback that signals the end of a buffer stream.
 
-##### Create input and output descriptions
+### Create input and output descriptions
 
 Whether it’s encoding or decoding audio, the sample uses the structure [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) to describe  the input and output audio data formats. When encoding audio, the sample checks whether the input audio is in PCM format. If the input is not PCM, the sample fails because a single audio converter instance can’t transcode (decode one non-PCM format and encode to another non-PCM format).
 
@@ -71,7 +71,7 @@ if (encode) {
 
 With the output specification, the sample creates the audio converter object that it uses for encoding or decoding the audio.
 
-##### Provide a magic cookie
+### Provide a magic cookie
 
 Some audio formats have a magic cookie that the converter requires to decompress audio data. A *magic cookie* refers to information in an audio file that describes its data format. An encoder produces the magic cookie, and it’s included in the same file or stream as the audio packets, in a header, or a container file format through a box.
 
@@ -104,7 +104,7 @@ if (magicCookieSize.has_value()) {
 
 When encoding an audio file, the sample adds the magic cookie back to the file — after converting the audio — because it could change during the encoding process. Get the magic cookie by using the property [`kAudioConverterCompressionMagicCookie`](./kaudioconvertercompressionmagiccookie.md) and then add it to the output file.
 
-##### Convert the audio
+### Convert the audio
 
 After the sample creates the output description, and sets the magic cookie if it’s decoding, it converts the audio by looping through the available data. The loop begins by trying to decode the available packets.
 

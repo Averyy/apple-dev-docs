@@ -19,7 +19,7 @@ Sets the action to perform on the specified dispatch queue when the control’s 
 - (void) setActionQueue:(dispatch_queue_t) actionQueue action:(void (^)(NSInteger selectedIndex)) action;
 ```
 
-#### Discussion
+## Discussion
 
 If the action modifies a property of the camera system, the specified dispatch queue must represent the camera system’s same exclusive execution context (see [`isSameExclusiveExecutionContext(other:)`](../../Swift/serialexecutor/issameexclusiveexecutioncontext%28other%29.md)).
 

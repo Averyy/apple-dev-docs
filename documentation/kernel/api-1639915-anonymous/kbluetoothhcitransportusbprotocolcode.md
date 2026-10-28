@@ -13,7 +13,7 @@
 kBluetoothHCITransportUSBProtocolCode = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Bluetooth Programming
 

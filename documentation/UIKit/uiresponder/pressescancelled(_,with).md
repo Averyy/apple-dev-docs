@@ -23,7 +23,7 @@ func pressesCancelled(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 - (void) pressesCancelled:(NSSet<UIPress *> *) presses withEvent:(UIPressesEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when it receives a system interruption requiring cancellation of the press sequence. An interruption is anything that causes the application to become inactive or causes the view handling the press events to be removed from its window. Your implementation of this method should clean up any state associated with handling the press sequence. Failure to handle cancellation is likely to lead to incorrect behavior or crashes.
 

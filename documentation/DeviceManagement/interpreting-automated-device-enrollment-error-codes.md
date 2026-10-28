@@ -5,7 +5,7 @@
 
 Interpret the error codes you might encounter or that can happen during authentication.
 
-#### Overview
+## Overview
 
 Authentication errors are either a `400`, `401`, or `403` error code.
 

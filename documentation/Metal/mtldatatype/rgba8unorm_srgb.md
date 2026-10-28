@@ -24,7 +24,7 @@ case rgba8Unorm_srgb
 MTLDataTypeRGBA8Unorm_sRGB
 ```
 
-#### Discussion
+## Discussion
 
 The color components are in RGBA order, which stands for red, green, blue, and alpha.
 

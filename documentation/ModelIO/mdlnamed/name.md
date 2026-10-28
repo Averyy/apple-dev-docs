@@ -25,7 +25,7 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Many types of Model I/O objects support this property. For objects loaded from a file using the [`MDLAsset`](../mdlasset.md) class, this property may reflect the name or label assigned by an artist using 3D authoring tools.
 

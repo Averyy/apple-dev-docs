@@ -21,11 +21,11 @@ Modifies the date format style to use the specified day format style.
 func day(_ format: Date.FormatStyle.Symbol.Day = .defaultDigits) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified day style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.FormatStyle.Symbol.Day`](./symbol/day.md) are [`defaultDigits`](./symbol/day/defaultdigits.md), [`ordinalOfDayInMonth`](./symbol/day/ordinalofdayinmonth.md), and [`twoDigits`](./symbol/day/twodigits.md).
 

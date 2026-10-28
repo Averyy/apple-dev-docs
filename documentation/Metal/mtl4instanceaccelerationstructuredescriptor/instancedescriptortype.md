@@ -24,7 +24,7 @@ var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType { get
 @property (nonatomic) MTLAccelerationStructureInstanceDescriptorType instanceDescriptorType;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines the layout Metal expects for the structs the instance descriptor buffer contains:
 

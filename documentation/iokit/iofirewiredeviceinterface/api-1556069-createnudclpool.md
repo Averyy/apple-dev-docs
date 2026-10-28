@@ -14,7 +14,7 @@
 IOFireWireLibNuDCLPoolRef (*CreateNuDCLPool)(IOFireWireLibDeviceRef self, UInt32 capacity, REFIID iid);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

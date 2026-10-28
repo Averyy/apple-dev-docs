@@ -16,7 +16,7 @@ Create a command object for sending Async Stream packets
 IOFireWireLibCommandRef (*CreateAsyncStreamCommand)(IOFireWireLibDeviceRef self, UInt32 channel, UInt32 sync, UInt32 tag, void *buf, UInt32 size, IOFireWireLibCommandCallback callback, Boolean failOnReset, UInt32 generation, void *inRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code
 

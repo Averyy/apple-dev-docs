@@ -19,7 +19,7 @@ A state that indicates the framework needs to reauthorize Automatic Sign-In.
 VSAutoSignInAuthorizationNotDetermined
 ```
 
-#### Discussion
+## Discussion
 
 This authorization state indicates that either a person hasn’t answered the prompt to opt in to Automatic Sign-In, or that the app (or server) deletes the token value.
 

@@ -25,7 +25,7 @@ func estimatedCost(of operation: MLModelStructure.Program.Operation) -> MLComput
 
 - [Analyzing a Core ML model’s performance in Xcode](../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
-#### Return Value
+## Return Value
 
 The estimated cost of executing the operation.
 

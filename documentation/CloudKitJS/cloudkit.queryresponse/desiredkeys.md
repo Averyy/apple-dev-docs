@@ -15,7 +15,7 @@ An array of strings containing record field names that limits the amount of data
 readonly attribute String[] desiredKeys;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `null`, which fetches all record fields.
 

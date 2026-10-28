@@ -23,7 +23,7 @@ func CTFontGetUIFontType(_ font: CTFont) -> CTFontUIFontType
 extern CTFontUIFontType CTFontGetUIFontType(CTFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 Get the CTFontUIFontType of UI font. Note that this value may differ from the uiType parameter originally passed to CTFontCreateUIFontForLanguage, as the system may use a different uiType value internally.
 

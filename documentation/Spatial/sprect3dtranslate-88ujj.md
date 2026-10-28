@@ -21,7 +21,7 @@ Returns a rectangle with an origin that’s offset by the specified vector.
 static SPRect3D SPRect3DTranslate(SPRect3D rect, SPVector3D offset);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle with an origin that’s offset by the specified vector.
 

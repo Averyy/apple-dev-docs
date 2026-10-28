@@ -4,11 +4,11 @@
 
 An action that displays or hides objects over a period of time.
 
-#### Overview
+## Overview
 
 Use this action to display or hide a prim with a transform animation. This action is distinct from `UsdGeomImageable` because the animation doesn’t alter the `visible` property.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "VisibilityAction"

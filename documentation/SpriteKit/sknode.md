@@ -60,7 +60,7 @@ class SKNode
 - [Searching the Node Tree](./searching-the-node-tree.md)
 - [Using Base Nodes to Lay Out SpriteKit Content](./using-base-nodes-to-lay-out-spritekit-content.md)
 
-#### Overview
+## Overview
 
 `SKNode` provides base properties for its subclasses and it can be used as a container or layout tool for other nodes. For example, you might add a collection of nodes as children to an `SKNode` that all move together within the scene; because nodes inherit the properties of their parent, changing the parent node’s [`position`](./sknode/position.md) propagates the change to its children as well.
 
@@ -287,6 +287,8 @@ class SKNode
 - [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
 - [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UICoordinateSpace](../UIKit/uicoordinatespace.md)
 - [UIFocusEnvironment](../UIKit/uifocusenvironment.md)

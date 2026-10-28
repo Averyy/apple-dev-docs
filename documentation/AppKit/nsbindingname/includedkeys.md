@@ -19,7 +19,7 @@ static let includedKeys: NSBindingName
 extern NSBindingName NSIncludedKeysBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

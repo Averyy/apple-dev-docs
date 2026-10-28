@@ -32,7 +32,7 @@ var birthday: DateComponents? { get }
 @property (atomic, copy, readonly, nullable) NSDateComponents * birthday;
 ```
 
-#### Discussion
+## Discussion
 
 Birthdays are represented by this property, whose values are the relevant properties of an [`NSDateComponents`](../../Foundation/nsdatecomponents.md) object. Day and month components are required for this property, and year is optional. The calendar component can be `nil` or [`gregorian`](../../Foundation/nscalendar/identifier/gregorian.md). All other date components are invalid and including them results in an [`NSError`](../../Foundation/nserror.md) object that includes the key paths of the invalid components and the error code [`CNError.Code.validationConfigurationError`](../cnerror/code/validationconfigurationerror.md).
 

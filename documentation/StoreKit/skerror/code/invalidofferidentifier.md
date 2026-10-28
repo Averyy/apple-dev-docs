@@ -25,7 +25,7 @@ case invalidOfferIdentifier
 SKErrorInvalidOfferIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 The offer [`identifier`](../../skpaymentdiscount/identifier.md) is not valid. For example, you have not set up an offer with that identifier in the App Store, or you have revoked the offer.
 

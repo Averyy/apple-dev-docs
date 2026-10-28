@@ -15,13 +15,13 @@ A bulk operation result item that includes the affected NegativeKeyword entity.
 object BulkItemResultNegativeKeyword
 ```
 
-#### Discussion
+## Discussion
 
 The `BulkItemResultNegativeKeyword` object extends [`BulkItemResult`](./bulkitemresult.md) with a typed `result` field containing the `NegativeKeyword` object the operation created or updated. Used by `NegativeKeywordCreateBulkResponse` and `NegativeKeywordUpdateBulkResponse`; bulk delete doesn’t return the entity (see [`NegativeKeywordDeleteBulkResponse`](./negativekeyworddeletebulkresponse.md)).
 
 On success, `result` contains the full `NegativeKeyword` entity as it exists after the operation. On failure, `success` is `false` and `error` carries per-item details.
 
-##### Example
+### Example
 
 ```json
 {

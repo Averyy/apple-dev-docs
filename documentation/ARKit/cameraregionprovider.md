@@ -15,7 +15,7 @@ A camera region provider.
 final class CameraRegionProvider
 ```
 
-#### Overview
+## Overview
 
 An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the [`Camera Region access`](../BundleResources/entitlements/com.apple.developer.arkit.camera-region.allow.md) entitlement.
 

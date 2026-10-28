@@ -9,11 +9,11 @@ Change the build that is attached to a specific App Store version.
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to associate a build with a version. The build you specify represents the build that’s installed when a customer purchases the app on the App Store.
 
-##### Attach a Build to a Version
+### Attach a Build to a Version
 
 **Request**:
 
@@ -43,7 +43,7 @@ PATCH https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b
 }
 ```
 
-##### Remove the Build from a Version
+### Remove the Build from a Version
 
 **Request**:
 

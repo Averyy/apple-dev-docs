@@ -19,7 +19,7 @@ var playbackControlsIncludeInfoViews: Bool { get set }
 @property (nonatomic) BOOL playbackControlsIncludeInfoViews;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether the player shows views for video metadata, navigation markers, and playback settings. Set this property value to `false`, and [`showsPlaybackControls`](./showsplaybackcontrols.md) to `true`, to selectively prevent the player from displaying its information and setting panels. Changing the value of this property doesn’t immediately change the visibility of the info views.
 

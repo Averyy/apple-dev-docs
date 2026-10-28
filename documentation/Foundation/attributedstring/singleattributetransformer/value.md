@@ -21,7 +21,7 @@ The value of the attribute.
 var value: T.Value? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to examine or alter the attribute value.
 

@@ -15,7 +15,7 @@ Returns a new version of `self` with the given `behavior`.
 func behavior(_ behavior: HoverEffectGroup.Behavior) -> HoverEffectGroup
 ```
 
-#### Return Value
+## Return Value
 
 A new HoverEffectGroup with the given `behavior`.
 

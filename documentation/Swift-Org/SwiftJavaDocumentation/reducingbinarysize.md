@@ -10,15 +10,15 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 When using the `jextract` tool to wrap your Swift APIs as a Java library, several compiler and linker options can substantially reduce the final binary size by stripping dead code that would otherwise be retained.
 
-#### Overview
+## Overview
 
 The compiler and linker options below trim the shipped library by stripping Swift symbols that JNI never calls, then dead-stripping the resulting unreachable code. Applied together, they can significantly reduce the final `.so`/`.dylib` size compared to a default release build.
 
-##### Requirements
+### Requirements
 
 Full binary-size optimization requires **Swift 6.3 or later**. Swift 6.3 introduced the `@used` attribute, which `JExtractSwiftPlugin` attaches to every generated JNI entry point so the compiler cannot eliminate them before the linker has a chance to see them.
 
-##### Generated Version Script
+### Generated Version Script
 
 When using the `jextract` tool in JNI mode, `JExtractSwiftPlugin` automatically generates a linker version script alongside the Swift thunks. The version script lists every JNI entry point as a `global:` export and hides everything else with `local: *`, giving the linker precise control over which symbols must be kept and allowing it to discard all internal Swift symbols.
 
@@ -28,7 +28,7 @@ The file is written to the plugin’s work directory:
 .build/plugins/outputs/<PackageName>/<TargetName>/JExtractSwiftPlugin/swift-java-jni-exports.map
 ```
 
-##### Optimization Flags
+### Optimization Flags
 
 The following flags, used together, produce the smallest possible binary:
 
@@ -39,7 +39,7 @@ The following flags, used together, produce the smallest possible binary:
 | `--experimental-lto-mode=full` | Full link-time optimization across all modules |
 | `-Xfrontend -internalize-at-link` | Internalize Swift symbols at link time, enabling the linker to eliminate more dead code |
 
-##### Package.swift
+### Package.swift
 
 Add the flags that don’t depend on a dynamic path directly to your `Package.swift`, conditioned on release builds for Android:
 

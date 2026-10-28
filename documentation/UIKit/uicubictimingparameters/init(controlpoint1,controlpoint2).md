@@ -23,11 +23,11 @@ init(controlPoint1 point1: CGPoint, controlPoint2 point2: CGPoint)
 - (instancetype) initWithControlPoint1:(CGPoint) point1 controlPoint2:(CGPoint) point2;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized timing parameter object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize the timing curve with a custom cubic Bézier curve. The curve consists of a line whose starting point is (0, 0), whose end point is (1, 1), and whose shape is defined by `point1` and `point2`.
 

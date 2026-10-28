@@ -21,7 +21,7 @@ Calculates the single-precision element-wise product of the sum of two vectors a
 static func multiply<T, U, V>(addition: (a: T, b: U), _ scalar: Float, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise sum of vectors `A` and `B`, multiplies the sum by scalar value `C`, and writes the result to vector `D`, as follows:
 

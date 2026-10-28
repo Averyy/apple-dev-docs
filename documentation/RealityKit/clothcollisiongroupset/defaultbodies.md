@@ -17,7 +17,7 @@ Default option reserved for cloth bodies.
 static let defaultBodies: ClothCollisionGroupSet
 ```
 
-#### Discussion
+## Discussion
 
 All particles of cloth bodies have their [`groups`](../clothcollisionfilter/groups.md) set to this value by default.
 

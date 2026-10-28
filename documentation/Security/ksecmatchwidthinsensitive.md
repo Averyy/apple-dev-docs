@@ -19,7 +19,7 @@ let kSecMatchWidthInsensitive: CFString
 extern CFStringRef const kSecMatchWidthInsensitive;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). If this value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), or if this attribute is not provided, then width-sensitive string matching is performed (for example, the ASCII character `a` does not match the UTF-8 full-width letter `a` (`U+FF41`).
 

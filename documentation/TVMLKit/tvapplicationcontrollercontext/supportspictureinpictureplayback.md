@@ -21,7 +21,7 @@ var supportsPictureInPicturePlayback: Bool { get set }
 @property (nonatomic, readwrite) BOOL supportsPictureInPicturePlayback;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the system allows the user to continue watching your app’s video content while using other apps. If you customize playback with [`AVPlayerViewController`](../../AVKit/avplayerviewcontroller.md), set the controller’s [`delegate`](../../AVKit/avplayerviewcontroller/delegate.md) property to an object that implements the [`AVPlayerViewControllerDelegate`](../../AVKit/avplayerviewcontrollerdelegate.md) protocol and the system will notify that object about picture-in-picture playback events.
 

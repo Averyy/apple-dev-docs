@@ -25,7 +25,7 @@ class MLFeatureDescription
 @interface MLFeatureDescription : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Core ML, a *feature* is a single input or output of a model. A model can have any number of *input features* or *output features*. Each feature has a name and a value type, which are defined in the feature’s `MLFeatureDescription`. Model authors use feature descriptions to help developers integrate their model properly. Each `MLFeatureDescription` instance has read-only properties that indicate the feature’s name, its type, and whether it’s optional.
 

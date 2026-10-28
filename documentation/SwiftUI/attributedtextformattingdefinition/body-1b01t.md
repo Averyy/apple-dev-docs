@@ -23,7 +23,7 @@ The constraints of the formatting definition.
 .DefinitionBuilder<Self.Scope> var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you implement a custom definition, you must implement a computed `body` property to provide the constraints of your definition. Return a definition that’s composed of built-in definitions that SwiftUI provides, such as [`AttributedTextFormattingDefinition.ValueConstraint`](./valueconstraint.md) and [`AttributedTextValueConstraint`](../attributedtextvalueconstraint.md)s, plus other composite [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md)s that you’ve already defined:
 

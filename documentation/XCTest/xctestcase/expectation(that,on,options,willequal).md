@@ -18,7 +18,7 @@ Creates an expectation using key-value observing the test fulfills when the valu
 func expectation<T, V>(that keyPath: KeyPath<T, V>, on observedObject: T, options: NSKeyValueObservingOptions = [.initial, .new, .old], willEqual expectedValue: V) -> XCTKeyPathExpectation<T, V> where T : NSObject, V : Equatable
 ```
 
-#### Return Value
+## Return Value
 
 Creates and returns an expectation for the test case.
 

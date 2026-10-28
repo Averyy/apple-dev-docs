@@ -25,7 +25,7 @@ let kCGImageMetadataShouldExcludeXMP: CFString
 extern CFStringRef const kCGImageMetadataShouldExcludeXMP;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which causes the destination to include XMP metadata. If you use this flag in conjunction with the [`kCGImageDestinationMetadata`](./kcgimagedestinationmetadata.md) flag, the image destination preserves EXIF and IPTC tags but doesn’t write XMP packets to the file.
 

@@ -21,7 +21,7 @@ The index of a single insertion point.
 case insertionPoint(AttributedString.Index)
 ```
 
-#### Discussion
+## Discussion
 
 The an insertion point at the `startIndex` of an attributed string is equivalent to a caret preceding the first character. An insertion point using `endIndex` is valid. It is equivalent to a caret located after the last character in the attributed string.
 

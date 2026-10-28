@@ -15,7 +15,7 @@ The version of the profile format.
 UInt32 profileVersion;
 ```
 
-#### Discussion
+## Discussion
 
  The first 8 bits indicate the major version number, followed by 8 bits indicating the minor version number. The following 2 bytes are reserved.
 

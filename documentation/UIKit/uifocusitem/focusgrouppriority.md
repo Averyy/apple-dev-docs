@@ -22,7 +22,7 @@ optional var focusGroupPriority: UIFocusGroupPriority { get }
 @property (nonatomic, readonly) UIFocusGroupPriority focusGroupPriority;
 ```
 
-#### Discussion
+## Discussion
 
 The system automatically assigns each focusable item in a focus group one of the predefined system priorities. The system assigns the [`currentlyFocused`](../uifocusgrouppriority/currentlyfocused.md) priority to the focused item, [`previouslyFocused`](../uifocusgrouppriority/previouslyfocused.md) to the group’s previous focused item, and [`ignored`](../uifocusgrouppriority/ignored.md) for all other items. The visible item with the highest priority is the group’s primary item.
 

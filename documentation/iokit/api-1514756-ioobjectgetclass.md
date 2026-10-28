@@ -23,11 +23,11 @@ func IOObjectGetClass(_ object: io_object_t, _ className: UnsafeMutablePointer<C
 kern_return_t IOObjectGetClass(io_object_t object, io_name_t className);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 This function uses the OSMetaClass system in the kernel to derive the name of the class the object is an instance of.
 

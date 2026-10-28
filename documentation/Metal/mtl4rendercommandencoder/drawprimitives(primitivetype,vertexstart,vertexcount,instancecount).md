@@ -25,7 +25,7 @@ func drawPrimitives(primitiveType: MTLPrimitiveType, vertexStart: Int, vertexCou
 - (void) drawPrimitives:(MTLPrimitiveType) primitiveType vertexStart:(NSUInteger) vertexStart vertexCount:(NSUInteger) vertexCount instanceCount:(NSUInteger) instanceCount;
 ```
 
-#### Discussion
+## Discussion
 
 The command assigns each vertex a unique `vertex_id` value within its drawing instance that increases from `vertexStart` through `(vertexStart + vertexCount - 1)`.
 

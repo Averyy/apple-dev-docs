@@ -27,7 +27,7 @@ optional func resolvePartySize(for intent: INRequestRideIntent) async -> INInteg
 - (void) resolvePartySizeForRequestRide:(INRequestRideIntent *) intent withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that the chosen vehicle type can accommodate the specified number of passengers. If the user’s party is too big to fit in the same vehicle, return a response indicating the number of passengers that you can accommodate.
 

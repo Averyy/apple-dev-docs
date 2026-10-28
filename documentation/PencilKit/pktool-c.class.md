@@ -19,7 +19,7 @@ An abstract base class for tools used by a canvas view.
 @interface PKTool : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`PKTool`](./pktool-c.class.md) object is an abstract base class for tool types associated with a [`PKCanvasView`](./pkcanvasview.md). Tools are user-facing, and the selected tool determines how the canvas interprets incoming gestures.
 

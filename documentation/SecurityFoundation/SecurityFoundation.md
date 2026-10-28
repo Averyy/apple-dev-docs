@@ -10,7 +10,7 @@ Restrict a user’s access to particular features in your Mac app or daemon.
 - Mac Catalyst 13.0+
 - macOS 10.3+
 
-#### Overview
+## Overview
 
 This document was previously titled *Authorization Services Objective-C Reference,* and it replaced the `SFAuthorization` chapter of the *Security Objective-C API* document. The other chapters of that document have been replaced by [Security Interface](../SecurityInterface/SecurityInterface.md).
 

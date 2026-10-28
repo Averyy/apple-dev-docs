@@ -19,7 +19,7 @@ var tintedImageProvider: CLKImageProvider? { get set }
 @property (nonatomic, retain, nullable) CLKImageProvider * tintedImageProvider;
 ```
 
-#### Discussion
+## Discussion
 
 By default, when the system displays a graphic complication using the tinted mode, it desaturates the full-color image stored in the [`image`](./image.md) property. To provide an alternative template image instead, create an image provider and assign it to the [`tintedImageProvider`](./tintedimageprovider.md) property.
 

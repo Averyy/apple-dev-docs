@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(position: Int) -> AnyRegexOutput.Element { get }
 ```
 
-#### Overview
+## Overview
 
 The following example accesses an element of an array through its subscript to print its value:
 

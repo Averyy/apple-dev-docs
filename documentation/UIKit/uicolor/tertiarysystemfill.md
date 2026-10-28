@@ -22,7 +22,7 @@ class var tertiarySystemFill: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * tertiarySystemFillColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use system fill colors for items situated on top of an existing background color. System fill colors incorporate transparency to allow the background color to show through.
 

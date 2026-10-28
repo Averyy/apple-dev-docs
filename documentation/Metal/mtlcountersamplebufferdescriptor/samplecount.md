@@ -28,7 +28,7 @@ var sampleCount: Int { get set }
 
 - [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
-#### Discussion
+## Discussion
 
 The counter sample buffer instances you create with the [`MTLCounterSampleBufferDescriptor`](../mtlcountersamplebufferdescriptor.md) can store [`sampleCount`](./samplecount.md) instances of a counter set.
 

@@ -23,7 +23,7 @@ static func * (lhs: Self.WrappedElement, rhs: Self) -> Column<Self.WrappedElemen
 
 Available when `WrappedElement` conforms to `Numeric`.
 
-#### Return Value
+## Return Value
 
 A new column.
 

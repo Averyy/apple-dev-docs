@@ -20,7 +20,7 @@ class CPPlaybackConfiguration
 @interface CPPlaybackConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**: The preferred presentation of playback may be used to prepare the system for playback of that content.
 

@@ -24,7 +24,7 @@ class MDLMesh
 @interface MDLMesh : MDLObject
 ```
 
-#### Overview
+## Overview
 
 A mesh contains one or more [`MDLSubmesh`](./mdlsubmesh.md) objects. Each submesh contains index buffer data that describes how the mesh’s vertices should be combined for drawing and references material information describing an intended surface appearance for the submesh. Typically, you obtain meshes by traversing the object hierarchy of a [`MDLAsset`](./mdlasset.md) object, but you can also create meshes from your own vertex data or create parametric meshes. The [`MDLMesh`](./mdlmesh.md) class also supports processing meshes to generate vertex attributes or to bake lighting information.
 

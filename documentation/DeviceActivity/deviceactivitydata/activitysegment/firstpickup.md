@@ -17,7 +17,7 @@ Access the first time the person picked up the device during the activity segmen
 var firstPickup: Date?
 ```
 
-#### Discussion
+## Discussion
 
 This value may be `nil` if the person never picked up the device during [`dateInterval`](./dateinterval.md).
 

@@ -22,7 +22,7 @@ var delegateQueue: dispatch_queue_t? { get set }
 @property (nonatomic, strong, nullable) dispatch_queue_t delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 By default, NI invokes delegate callbacks on [`main`](../../Dispatch/dispatchqueue/main.md).
 

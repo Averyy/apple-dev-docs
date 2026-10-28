@@ -23,7 +23,7 @@ var isMultiValued: Bool { get }
 @property (readonly, getter=isMultiValued) BOOL multiValued;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

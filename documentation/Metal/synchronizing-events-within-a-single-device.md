@@ -5,7 +5,7 @@
 
 Use nonshareable events to synchronize your app’s work within a single device.
 
-#### Overview
+## Overview
 
 The following figure and code show a nonshareable event that synchronizes graphics rendering on one command queue with compute processing on another.
 

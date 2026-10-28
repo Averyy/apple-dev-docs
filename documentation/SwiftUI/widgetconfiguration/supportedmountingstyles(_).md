@@ -19,11 +19,11 @@ Specifies the mounting style for this widget.
 @preconcurrency func supportedMountingStyles(_ styles: [WidgetMountingStyle]) -> some WidgetConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A widget configuration that supports the specified mounting styles.
 
-#### Discussion
+## Discussion
 
 The mounting style view modifier only has an effect to widgets in visionOS, including widgets of compatible widgets of compatible iOS or iPadOS apps.
 

@@ -19,7 +19,7 @@ func SCNetworkSetGetServiceOrder(_ set: SCNetworkSet) -> CFArray?
 CFArrayRefSCNetworkSetGetServiceOrder(SCNetworkSetRef set);
 ```
 
-#### Return Value
+## Return Value
 
 The ordered list of service identifiers associated with the set, or `NULL` if no service order has been specified or if an error occurred.
 

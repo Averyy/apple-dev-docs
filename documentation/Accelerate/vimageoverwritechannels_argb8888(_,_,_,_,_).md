@@ -29,11 +29,11 @@ vImage_Error vImageOverwriteChannels_ARGB8888(const vImage_Buffer *newSrc, const
 
 - [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code overwrites channel `0` of the source pixels in `pixelBuffer` with the corresponding source pixels from `newSource`:
 

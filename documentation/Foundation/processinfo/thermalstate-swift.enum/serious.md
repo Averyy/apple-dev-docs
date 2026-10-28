@@ -25,7 +25,7 @@ case serious
 NSProcessInfoThermalStateSerious
 ```
 
-#### Discussion
+## Discussion
 
 The system takes moderate steps to reduce thermal state, which reduces performance. Fans are running at maximum speed.
 

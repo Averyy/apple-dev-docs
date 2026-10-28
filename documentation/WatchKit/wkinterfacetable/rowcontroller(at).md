@@ -19,11 +19,11 @@ func rowController(at index: Int) -> Any?
 - (id) rowControllerAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The row controller object, or `nil` if there are no row controllers yet or `index` is out of bounds.
 
-#### Discussion
+## Discussion
 
 Call the [`setRowTypes(_:)`](./setrowtypes%28_%29.md) or [`setNumberOfRows(_:withRowType:)`](./setnumberofrows%28_,withrowtype%29.md) method before using this method to retrieve any row controllers. After you call one of those methods, the table creates row controllers for each row type and stores them internally in an array. Use this method to retrieve those row controllers.
 

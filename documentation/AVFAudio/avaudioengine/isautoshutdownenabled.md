@@ -24,7 +24,7 @@ var isAutoShutdownEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoShutdownEnabled) BOOL autoShutdownEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If autoshutdown is in an enabled state, the engine can start and stop the audio hardware dynamically to conserve power. In watchOS, autoshutdown is always in an enabled state. For other platforms, it’s in a disabled state by default.
 

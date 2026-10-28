@@ -23,7 +23,7 @@ let kCTFontVendorURLNameKey: CFString
 extern CFStringRef const kCTFontVendorURLNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the vendor URL name.
 

@@ -15,7 +15,7 @@ An annotation that represents someone’s location.
 class UserLocationAnnotation extends Annotation
 ```
 
-#### Discussion
+## Discussion
 
 The framework automatically adds a person’s location annotation to the map view when the map view’s [`showsUserLocation`](./map/showsuserlocation.md) property is set to `true`.
 

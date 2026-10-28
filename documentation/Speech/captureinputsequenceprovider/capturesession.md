@@ -20,7 +20,7 @@ The underlying capture session.
 final var captureSession: AVCaptureSession { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the new capture session created by [`providerWithSession(from:compatibleWith:priority:)`](./providerwithsession%28from,compatiblewith,priority%29.md) or the existing capture session passed to [`provider(from:in:compatibleWith:priority:)`](./provider%28from,in,compatiblewith,priority%29.md) or the initializer.
 

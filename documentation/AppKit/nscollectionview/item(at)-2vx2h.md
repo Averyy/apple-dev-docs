@@ -19,11 +19,11 @@ func item(at indexPath: IndexPath) -> NSCollectionViewItem?
 - (NSCollectionViewItem *) itemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The item for the specified index path or `nil` if no item is available.
 
-#### Discussion
+## Discussion
 
 For efficiency, the collection view does not create items until they are needed, and usually it creates them only when they need to be displayed onscreen. If the collection view does not currently have an item for the specified index path, because that item would be positioned offscreen, this method returns `nil`.
 

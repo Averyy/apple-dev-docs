@@ -16,11 +16,11 @@ Sets the direction for this IOHIDDeviceTransactionInterface instance.
 IOReturn (*setDirection)(void *self, IOHIDTransactionDirectionType direction, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 Direction constants are declared in IOHIDTransactionDirectionType. Changing directions is useful when dealing with elements of type kIOHIDElementTypeFeature as you use the transaction to both set and get element values.
 

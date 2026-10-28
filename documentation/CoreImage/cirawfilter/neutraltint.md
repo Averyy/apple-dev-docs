@@ -24,7 +24,7 @@ var neutralTint: Float { get set }
 @property (readwrite) float neutralTint;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value based on tint values in the range `-150...150`.
 

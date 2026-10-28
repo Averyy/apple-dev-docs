@@ -21,7 +21,7 @@ The default resolver specification that the App Intents framework uses.
 static var defaultResolverSpecification: some ResolverSpecification { get }
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this property directly. The App Intents framework uses it.
 

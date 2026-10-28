@@ -25,7 +25,7 @@ var boneWeights: SCNGeometrySource { get }
 @property (nonatomic, readonly) SCNGeometrySource * boneWeights;
 ```
 
-#### Discussion
+## Discussion
 
 This geometry source’s [`semantic`](../scngeometrysource/semantic-swift.property.md) property must be [`boneWeights`](../scngeometrysource/semantic-swift.struct/boneweights.md). Its data is an array of floating-point vectors, whose [`componentsPerVector`](../scngeometrysource/componentspervector.md) count is the number of bones influencing each vertex. Each vector corresponds to a vertex in the geometry’s [`vertex`](../scngeometrysource/semantic-swift.struct/vertex.md) geometry source, and each component in a vector specifies the influence of a bone on that vertex’s position. The [`boneIndices`](./boneindices.md) source determines which nodes in the bones array correspond to each component in the vector. A component value of `0.0` means that the bone has no influence on that vertex; positive or negative values scale the transformation of a bone node before SceneKit applies that transformation to the vertex.
 

@@ -18,7 +18,7 @@ Presents a continuation sheet that enables people to choose whether to open your
 static func open() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method in response to deliberate user interaction, for example, tapping a button. Call [`canOpen`](./canopen.md) to determine whether to display a button or other user-interface control. If [`canOpen`](./canopen.md) is `false`, this method always throws a [`StoreKitError`](../storekiterror.md) instance.
 

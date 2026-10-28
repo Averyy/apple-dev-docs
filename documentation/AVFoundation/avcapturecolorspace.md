@@ -23,7 +23,7 @@ enum AVCaptureColorSpace
 enum AVCaptureColorSpace : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 By default, a capture session automatically enables wide-gamut capture for supported devices and capture workflows.
 

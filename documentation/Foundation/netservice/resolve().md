@@ -25,7 +25,7 @@ func resolve()
 - (void) resolve;
 ```
 
-#### Discussion
+## Discussion
 
 Attempts to determine at least one address for the service. This method returns immediately, with success or failure indicated by the callbacks to the delegate.
 

@@ -12,7 +12,7 @@ virtual void detachAll(
  const IORegistryPlane *plane );
 ```
 
-#### Overview
+## Overview
 
 This method breaks the registry connections for a subtree. detachAbove is called in the entry, and all child entries and their children in the plane.
 

@@ -21,7 +21,7 @@ The order in which a menu presents its content.
 struct MenuOrder
 ```
 
-#### Overview
+## Overview
 
 You can configure the preferred menu order using the [`menuOrder(_:)`](./view/menuorder%28_%29.md) view modifier.
 

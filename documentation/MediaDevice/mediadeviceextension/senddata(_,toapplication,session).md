@@ -19,7 +19,7 @@ Called when an app sends data to a remote application.
 func sendData(_ data: Data, toApplication applicationIdentifier: String, session: MediaOutputSession)
 ```
 
-#### Discussion
+## Discussion
 
 In the case of media-app to remote media-application communication, the media-application’s specific application identifier will be used.
 

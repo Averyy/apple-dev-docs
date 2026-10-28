@@ -13,7 +13,7 @@
 kIOPMSystemCapabilityWillChange = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the system capability will change.
 

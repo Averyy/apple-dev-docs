@@ -24,7 +24,7 @@ struct GenerationOptions
 
 - [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
 
-#### Overview
+## Overview
 
 Generation options determine the decoding strategy the framework uses to adjust the way the model chooses output tokens. When you interact with the model, it converts your input to a token sequence, and uses it to generate the response.
 

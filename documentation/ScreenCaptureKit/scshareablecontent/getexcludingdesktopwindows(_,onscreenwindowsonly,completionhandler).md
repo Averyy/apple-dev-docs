@@ -24,7 +24,7 @@ class func excludingDesktopWindows(_ excludeDesktopWindows: Bool, onScreenWindow
 + (void) getShareableContentExcludingDesktopWindows:(BOOL) excludeDesktopWindows onScreenWindowsOnly:(BOOL) onScreenWindowsOnly completionHandler:(void (^)(SCShareableContent *shareableContent, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the onscreen content matching your filtering criteria. If the call is successful, the system passes an [`SCShareableContent`](../scshareablecontent.md) instance to the completion handler; otherwise, it returns an error that describes the failure.
 

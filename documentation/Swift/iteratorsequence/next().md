@@ -23,7 +23,7 @@ mutating func next() -> Base.Element?
 
 Available when `Base` conforms to `IteratorProtocol`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

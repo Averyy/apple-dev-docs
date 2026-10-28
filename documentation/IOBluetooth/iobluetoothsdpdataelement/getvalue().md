@@ -19,11 +19,11 @@ func getValue() -> NSObject!
 - (NSObject *) getValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the object value of the target data element.
 
-#### Discussion
+## Discussion
 
 The value returned may be an NSNumber, NSString, NSData, NSArray or IOBluetoothSDPDataElement depending on the type of the data element.
 

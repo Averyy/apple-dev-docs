@@ -24,7 +24,7 @@ typealias VTCompressionOutputHandler = @Sendable (OSStatus, VTEncodeInfoFlags, C
 typedef void (^)(int, enum VTEncodeInfoFlags, struct opaqueCMSampleBuffer *) VTCompressionOutputHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When you encode a frame, you pass in a callback block to be called for that compressed frame.  This block is called in decode order (which is not necessarily the same as display order).
 

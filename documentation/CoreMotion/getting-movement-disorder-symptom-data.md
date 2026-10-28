@@ -5,7 +5,7 @@
 
 Retrieve data from the Apple Watch’s movement disorder manager.
 
-#### Overview
+## Overview
 
 The [`CMMovementDisorderManager`](./cmmovementdisordermanager.md) class provides a power-efficient approach for you to continuously measure and record tremors and dyskinetic symptoms for Parkinson’s disease for your app.
 
@@ -31,7 +31,7 @@ To retrieve Parkinson’s tremors or dyskinetic symptoms data from a watchOS app
 4. Begin monitoring the user.
 5. Query for tremors or dyskinetic symptoms.
 
-##### Provide the motion usage description
+### Provide the motion usage description
 
 Your watchOS app must provide an [NSMotionUsageDescription](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSMotionUsageDescription) key with a `String` value in the WatchKit extension’s `Info.plist` file. The system displays the motion usage description whenever it asks a user for permission to record their data. The description string appears in the Motion and Fitness authorization prompt.
 
@@ -39,7 +39,7 @@ At a minimum, your description must contain the following text: “In addition, 
 
 You can include additional information explaining why the user should grant your app permission, and what your app intends to do with the data after this text.
 
-##### Monitor and query for results
+### Monitor and query for results
 
 The following example shows how to set up your movement disorder manager, and begin monitoring the user’s symptoms:
 
@@ -99,7 +99,7 @@ previousDate = endDate
 
 To extend the monitoring past the initial expiration date, call the [`monitorKinesias(forDuration:)`](./cmmovementdisordermanager/monitorkinesias%28forduration%29.md) method again.
 
-##### Understand the manager’s limitations
+### Understand the manager’s limitations
 
 [`CMMovementDisorderManager`](./cmmovementdisordermanager.md) measures resting tremors from Parkinson’s disease in the 3-7 Hz range. It returns metrics about the presence and relative severity of resting tremor as a [`CMTremorResult`](./cmtremorresult.md) object. The [`CMMovementDisorderManager`](./cmmovementdisordermanager.md) also computes metrics about choreiform dyskinetic symptoms, measuring the likely presence or absence of dyskinetic symptoms as observed at the wrist where the user wears their Apple Watch. It returns the results as [`CMDyskineticSymptomResult`](./cmdyskineticsymptomresult.md) objects.
 

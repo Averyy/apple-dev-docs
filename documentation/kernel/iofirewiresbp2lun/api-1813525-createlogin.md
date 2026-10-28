@@ -12,11 +12,11 @@ virtual IOFireWireSBP2Login *createLogin(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to a new IOFireWireSBP2Login.
 
-#### Overview
+## Overview
 
 Creates a new IOFireWireSBP2Login object for the LUN. Login objects supply most of the SBP2 APIs related to login maintenance and Normal Command ORB execution.
 

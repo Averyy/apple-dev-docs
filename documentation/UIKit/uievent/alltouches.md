@@ -23,11 +23,11 @@ var allTouches: Set<UITouch>? { get }
 @property (nonatomic, readonly, nullable) NSSet<UITouch *> * allTouches;
 ```
 
-#### Return Value
+## Return Value
 
 A set of [`UITouch`](../uitouch.md) objects representing all touches associated with the event.
 
-#### Discussion
+## Discussion
 
 If the touches of the event originate in different views and windows, the [`UITouch`](../uitouch.md) objects obtained from this method will be associated with different responder objects.
 

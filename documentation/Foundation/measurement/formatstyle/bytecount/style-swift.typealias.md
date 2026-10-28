@@ -21,7 +21,7 @@ The type used to represent the style of the formatted byte count.
 typealias Style = ByteCountFormatStyle.Style
 ```
 
-#### Discussion
+## Discussion
 
 This format style uses the [`ByteCountFormatStyle.Style`](../../../bytecountformatstyle/style-swift.enum.md) type to represent the byte-count style.
 

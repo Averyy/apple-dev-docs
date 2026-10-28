@@ -25,7 +25,7 @@ static let userActivityDictionary: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsUserActivityDictionaryKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSDictionary`](../../../Foundation/nsdictionary.md) object containing the key [`userActivityType`](./useractivitytype.md), whose value is an [`NSString`](../../../Foundation/nsstring.md) object identifying the activity type.
 

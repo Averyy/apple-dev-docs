@@ -21,11 +21,11 @@ Fetches the IDs of any long-lived operations that are running and returns them t
 func allLongLivedOperationIDs() async throws -> [CKOperation.ID]
 ```
 
-#### Return Value
+## Return Value
 
 The IDs of all of the long-lived operations that are running.
 
-#### Discussion
+## Discussion
 
 A long-lived operation is one that continues to run after the user closes your app. When a long-lived operation completes, or your app or the system cancels it, it’s no longer active and CloudKit doesn’t include its ID in the returned array. An operation is complete when the system calls its completion handler.
 

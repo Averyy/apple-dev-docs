@@ -23,7 +23,7 @@ init(partySizeRange: NSRange, sizeDescription: String, priceRange: INPriceRange?
 - (instancetype) initWithPartySizeRange:(NSRange) partySizeRange sizeDescription:(NSString *) sizeDescription priceRange:(INPriceRange *) priceRange;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized party size option object or `nil` if the object could not be created.
 

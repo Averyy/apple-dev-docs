@@ -20,11 +20,11 @@ Creates an extents object with the rank and values you provide.
 - (instancetype) initWithRank:(NSUInteger) rank values:(const NSInteger *) values;
 ```
 
-#### Return Value
+## Return Value
 
 A new extents instance, or `nil` if `rank` exceeds 0 and `values` is `nil`, or if `rank` exceeds [`MTL_TENSOR_MAX_RANK`](../mtl_tensor_max_rank.md).
 
-#### Discussion
+## Discussion
 
 Zero rank extents represent scalars. `values` can only be `nil` if `rank` is 0.
 

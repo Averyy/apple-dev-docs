@@ -25,7 +25,7 @@ var resultCount: Int { get }
 @property (readonly) NSUInteger resultCount;
 ```
 
-#### Discussion
+## Discussion
 
 For performance reasons, you should use this property rather than checking the `count` property on [`results`](./results.md).
 

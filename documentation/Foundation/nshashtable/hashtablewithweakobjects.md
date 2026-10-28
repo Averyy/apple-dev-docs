@@ -17,11 +17,11 @@ Returns a new hash table for storing weak references to its contents.
 + (id) hashTableWithWeakObjects;
 ```
 
-#### Return Value
+## Return Value
 
 A new has table that uses the options [`NSHashTableZeroingWeakMemory`](../nshashtablezeroingweakmemory.md) and [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) and has an initial capacity of `0`.
 
-#### Discussion
+## Discussion
 
 This method is not supported under Automatic Reference Counting (ARC).
 

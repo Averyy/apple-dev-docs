@@ -27,7 +27,7 @@ protocol INGetRideStatusIntentHandling : NSObjectProtocol
 
 - [Providing Live Status Updates](../SiriKit/providing-live-status-updates.md)
 
-#### Overview
+## Overview
 
 Use the methods of the [`INGetRideStatusIntentHandling`](./ingetridestatusintenthandling.md) protocol to confirm and handle requests to get the status of the user’s currently booked ride. Adopt this protocol in an object of your Intents extension that is capable of retrieving the ride details from your service.
 
@@ -35,7 +35,7 @@ SiriKit may deliver an [`INGetRideStatusIntent`](./ingetridestatusintent.md) obj
 
 Maps does not require you to confirm the contents of a get ride status intent before handling it. User interactions drive the selection of data in Maps, ensuring that the data Maps places into an intent object is already valid.
 
-##### Updating the Ride Status Periodically
+### Updating the Ride Status Periodically
 
 After returning your response, SiriKit may call the [`startSendingUpdates(for:to:)`](./ingetridestatusintenthandling/startsendingupdates%28for,to%29.md) method to ask for further updates as the ride status changes. Implement that method and use it to begin the delivery of regular updates. Continue providing updates until SiriKit calls the [`stopSendingUpdates(for:)`](./ingetridestatusintenthandling/stopsendingupdates%28for%29.md) method.
 

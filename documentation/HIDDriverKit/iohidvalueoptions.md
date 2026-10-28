@@ -16,7 +16,7 @@ A type for specifying value-related options.
 typedef uint32_t IOHIDValueOptions;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of relevant values, see [Value Options](./value-options-enum.md).
 

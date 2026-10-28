@@ -23,11 +23,11 @@ class func checkFocusability(for item: any UIFocusItem) -> any UIFocusDebuggerOu
 + (id<UIFocusDebuggerOutput>) checkFocusabilityForItem:(id<UIFocusItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 An object the focus debugger uses to store the results that it will format for display.
 
-#### Discussion
+## Discussion
 
 Call this method from the `lldb` debugger using the following command. In the example, `item` corresponds to an object that adopts the [`UIFocusItem`](../uifocusitem.md) protocol.
 

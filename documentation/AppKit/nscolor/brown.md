@@ -19,7 +19,7 @@ class var brown: NSColor { get }
 @property (class, strong, readonly) NSColor * brownColor;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColor` object.
 

@@ -21,7 +21,7 @@ The addressing preferences of the current user.
 @property (class, readonly) NSMorphology * userMorphology;
 ```
 
-#### Discussion
+## Discussion
 
 If the user hasn’t specified preferences, or chose not to share them with this app, the [`unspecified`](./unspecified.md) property is `true`.
 

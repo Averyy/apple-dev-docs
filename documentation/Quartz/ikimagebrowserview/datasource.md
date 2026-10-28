@@ -20,7 +20,7 @@ unowned(unsafe) var dataSource: AnyObject! { get set }
 @property (assign) id dataSource;
 ```
 
-#### Return Value
+## Return Value
 
 The data source (`IKImageBrowserDataSource`). The data source is not retained by the receiver.
 

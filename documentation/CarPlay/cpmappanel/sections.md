@@ -21,7 +21,7 @@ var sections: [CPMapPanelSection] { get set }
 @property (nonatomic, copy, readwrite) NSArray<CPMapPanelSection *> * sections;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this information initially when you create the panel, but can also update the list of sections by assigning a new value to this property. When assigning a new value to this property, the panel discards the previous data and stores a copy of the new sections you provide.
 

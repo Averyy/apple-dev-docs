@@ -16,11 +16,11 @@ Creates the current transaction.
 IOReturn (*create)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 This method will free any memory that has been allocated for this transaction.
 

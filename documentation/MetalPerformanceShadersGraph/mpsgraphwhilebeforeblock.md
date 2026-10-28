@@ -24,7 +24,7 @@ typealias MPSGraphWhileBeforeBlock = ([MPSGraphTensor], NSMutableArray) -> MPSGr
 typedef MPSGraphTensor *(^)(NSArray<MPSGraphTensor *> *, NSMutableArray<MPSGraphTensor *> *) MPSGraphWhileBeforeBlock;
 ```
 
-#### Return Value
+## Return Value
 
 Tensor MUST be set and have a single scalar value, used to decide between executing the body block or returning from the while loop.
 

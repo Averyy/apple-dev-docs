@@ -26,7 +26,7 @@ var contentIdentifier: String { get }
 @property (nonatomic, readonly) NSString * contentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Each piece of downloadable content associated with a product has its own unique identifier. The content identifier is specified in App Store Connect when you add the content.
 

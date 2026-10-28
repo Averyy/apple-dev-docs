@@ -19,7 +19,7 @@ The label system accessory.
 @interface UICellAccessoryLabel : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A label cell accessory appears on the trailing edge of the cell. Use this cell accessory to display a short string of text, like a small number showing the count for the associated item.
 

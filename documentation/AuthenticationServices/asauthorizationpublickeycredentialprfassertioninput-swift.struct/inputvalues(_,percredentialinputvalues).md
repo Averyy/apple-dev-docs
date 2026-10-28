@@ -19,7 +19,7 @@ The inputs for the PRF extension.
 static func inputValues(_ inputValues: ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues, perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]? = nil) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput
 ```
 
-#### Return Value
+## Return Value
 
 A configured instance of [`ASAuthorizationPublicKeyCredentialPRFAssertionInput`](../asauthorizationpublickeycredentialprfassertioninput-swift.struct.md).
 

@@ -21,7 +21,7 @@ File flags
 var flags: FileFlags { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_flags`.
 

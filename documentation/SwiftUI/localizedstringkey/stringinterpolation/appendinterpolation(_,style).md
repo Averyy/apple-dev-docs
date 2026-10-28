@@ -21,7 +21,7 @@ Appends a formatted date to a string interpolation.
 mutating func appendInterpolation(_ date: Date, style: Text.DateStyle)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 

@@ -24,11 +24,11 @@ func wrappingSubtract(_ operand: UInt128, ordering: AtomicUpdateOrdering) -> (ol
 
 Available when `Value` is `UInt128`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation silently wraps around on overflow, like the `&-` operator does on `UInt128` values.
 

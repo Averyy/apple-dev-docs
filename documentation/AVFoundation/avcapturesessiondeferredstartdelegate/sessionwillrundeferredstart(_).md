@@ -24,7 +24,7 @@ func sessionWillRunDeferredStart(_ session: AVCaptureSession)
 - (void) sessionWillRunDeferredStart:(AVCaptureSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates receive this message when the session has finished the deferred start. This message will be sent regardless of whether the session’s [`automaticallyRunsDeferredStart`](../avcapturesession/automaticallyrunsdeferredstart.md) property is set. See [`setDeferredStartDelegate(_:deferredStartDelegateCallbackQueue:)`](../avcapturesession/setdeferredstartdelegate%28_,deferredstartdelegatecallbackqueue%29.md) documentation for more information.
 

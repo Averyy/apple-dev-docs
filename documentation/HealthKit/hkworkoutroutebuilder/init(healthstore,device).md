@@ -24,11 +24,11 @@ init(healthStore: HKHealthStore, device: HKDevice?)
 - (instancetype) initWithHealthStore:(HKHealthStore *) healthStore device:(HKDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized workout route builder.
 
-##### Discussion
+### Discussion
 
 Use of this initializer is discouraged. Use [`seriesBuilder(for:)`](../hkworkoutbuilder/seriesbuilder%28for%29.md) instead.
 

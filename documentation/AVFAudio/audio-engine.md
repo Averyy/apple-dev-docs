@@ -5,7 +5,7 @@
 
 Perform advanced real-time and offline audio processing, implement 3D spatialization, and work with MIDI and samplers.
 
-#### Overview
+## Overview
 
 The audio engine provides a powerful, feature-rich API to simplify audio generation, processing, and input/output tasks. The engine contains a group of nodes that connect to form an audio signal processing chain. These nodes perform a variety of tasks on a signal before rendering to an output destination.
 

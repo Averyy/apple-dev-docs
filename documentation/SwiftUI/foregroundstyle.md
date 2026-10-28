@@ -22,7 +22,7 @@ The foreground style in the current context.
 struct ForegroundStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`foreground`](./shapestyle/foreground.md) to construct this style.
 

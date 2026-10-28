@@ -15,7 +15,7 @@ Event triggered when a group’s encryption state changes, which causes the grou
 struct GroupChatSubjectInvalidatedEvent
 ```
 
-#### Overview
+## Overview
 
 Your app should call [`changeGroupChatSubject(_:)`](./changegroupchatsubject%28_%29.md) to restore the group’s subject. Failing to do so will leave the group without a subject.
 

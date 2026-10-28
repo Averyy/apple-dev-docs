@@ -19,7 +19,7 @@ func cancelFindIndicator()
 - (void) cancelFindIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 There may be some circumstances where the find indicator should be immediately cancelled or hidden, such as when the view’s content or selection is changed without the knowledge of the text finder. This method will immediately cancel the current find indicator.
 

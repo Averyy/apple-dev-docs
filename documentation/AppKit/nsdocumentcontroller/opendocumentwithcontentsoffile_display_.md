@@ -17,7 +17,7 @@ Returns a document object created from the contents of a given file and optional
 - (id) openDocumentWithContentsOfFile:(NSString *) fileName display:(BOOL) display;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an `NSDocument` object created from the contents of the file `fileName` (an absolute path) and displays it if `flag` is [`true`](../../Swift/true.md). The returned object is not retained, but is added to the receiver’s list of managed documents. Returns `nil` if the object could not be created, typically because `fileName` does not point to a valid file or because there is no `NSDocument` subclass for the document type (as indicated by the file extension or HFS file type). Even if `flag` is [`true`](../../Swift/true.md), the document is not displayed if [`shouldCreateUI`](./shouldcreateui.md) returns [`false`](../../Swift/false.md). This method calls [`makeDocumentWithContentsOfFile:ofType:`](./makedocumentwithcontentsoffile_oftype_.md) to obtain the created NSDocument object. If you override this method, your implementation should be prepared to handle either [`true`](../../Swift/true.md) or [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ Reshape to the specified shape.
 func reshaped(to newShape: [Int]) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

@@ -21,7 +21,7 @@ Appends a straight line segment from the current point to the specified point.
 mutating func addLine(to end: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 After adding the line segment, the current point is set to the endpoint of the line segment.
 

@@ -15,7 +15,7 @@ virtual bool initWithSpecification(
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the inherited classes and this instance initialize successfully.
 

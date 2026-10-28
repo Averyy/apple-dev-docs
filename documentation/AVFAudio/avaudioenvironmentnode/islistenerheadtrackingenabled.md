@@ -23,7 +23,7 @@ var isListenerHeadTrackingEnabled: Bool { get set }
 @property (nonatomic, getter=isListenerHeadTrackingEnabled) BOOL listenerHeadTrackingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 To enable head tracking, your app must have the [`com.apple.developer.coremotion.head-pose`](../../BundleResources/entitlements/com.apple.developer.coremotion.head-pose.md) entitlement.
 

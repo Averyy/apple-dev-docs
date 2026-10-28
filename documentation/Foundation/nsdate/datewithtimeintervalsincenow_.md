@@ -21,7 +21,7 @@ Creates and returns a date object set to a given number of seconds from the curr
 + (instancetype) dateWithTimeIntervalSinceNow:(NSTimeInterval) secs;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object set to `secs` seconds from the current date and time.
 

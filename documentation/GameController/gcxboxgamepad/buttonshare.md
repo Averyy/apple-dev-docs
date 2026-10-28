@@ -24,7 +24,7 @@ var buttonShare: GCControllerButtonInput? { get }
 @property (nonatomic, readonly, nullable) GCControllerButtonInput * buttonShare;
 ```
 
-#### Discussion
+## Discussion
 
 The system reserves the Share button for screenshot and video recording gestures. If you want to disable these gestures in your app, set the button’s [`preferredSystemGestureState`](../gccontrollerelement/preferredsystemgesturestate.md) to [`GCControllerElement.SystemGestureState.disabled`](../gccontrollerelement/systemgesturestate/disabled.md).
 

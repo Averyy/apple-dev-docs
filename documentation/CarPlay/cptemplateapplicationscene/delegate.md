@@ -21,7 +21,7 @@ var delegate: (any CPTemplateApplicationSceneDelegate)? { get set }
 @property (nonatomic, strong, nullable) id<CPTemplateApplicationSceneDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the delegate object CarPlay creates from the class name you provide in the scene manifest of your app’s `Info.plist` file.
 

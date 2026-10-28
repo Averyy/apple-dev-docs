@@ -17,7 +17,7 @@ Standalone pairwise Givens rotation over the last axis of an activation tensor, 
 class PairwiseRotation
 ```
 
-#### Overview
+## Overview
 
 This is the rotation half of `RotateQuantizedLinear`, extracted as a composable `Module` for layers whose rotation is *shared* across several quantized projections instead of owned by one — the MoE `RotateSwitchGLU` composes two of these (`gate_up_rot`, `down_rot`) around stock `QuantizedSwitchLinear` experts.
 

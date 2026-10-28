@@ -25,7 +25,7 @@ static let announcementWasSuccessfulUserInfoKey: String
 extern NSString * const UIAccessibilityAnnouncementKeyWasSuccessful;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../Foundation/nsnumber.md) object that the system interprets as a Boolean value.
 

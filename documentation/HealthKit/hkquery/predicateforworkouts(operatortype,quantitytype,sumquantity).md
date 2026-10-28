@@ -24,7 +24,7 @@ class func predicateForWorkouts(operatorType: NSComparisonPredicate.Operator, qu
 + (NSPredicate *) predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType) operatorType quantityType:(HKQuantityType *) quantityType sumQuantity:(HKQuantity *) sumQuantity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches workouts with the specified total value. For more information on how HealthKit calculates statistics for [`HKWorkoutActivity`](../hkworkoutactivity.md) objects, see [`statistics(for:)`](../hkworkoutactivity/statistics%28for%29.md).
 

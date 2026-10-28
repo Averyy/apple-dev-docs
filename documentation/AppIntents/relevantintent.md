@@ -21,7 +21,7 @@ A type that stores an app intent and indicates its relevance to someone.
 struct RelevantIntent
 ```
 
-#### Overview
+## Overview
 
 Use a `RelevantIntent` structure to specify an action someone might want to take and the conditions when the system might want to suggest that action. For example, a sports app might create an action to start playback of a game shortly before that game starts. Specify the action using a [`WidgetConfigurationIntent`](./widgetconfigurationintent.md) structure, and register the relevant intent with the system using the [`RelevantIntentManager`](./relevantintentmanager.md) type.
 

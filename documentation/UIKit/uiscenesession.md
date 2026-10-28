@@ -24,7 +24,7 @@ class UISceneSession
 @interface UISceneSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`UISceneSession`](./uiscenesession.md) object manages a unique runtime instance of your scene. When the user adds a new scene to your app, or when you request one programmatically, the system creates a session object to track that scene. The session contains a unique identifier and the configuration details of the scene. UIKit maintains the session information for the lifetime of the scene itself, destroying the session in response to the user closing the scene in the app switcher.
 

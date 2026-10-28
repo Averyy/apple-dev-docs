@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 If no search operation is in progress, this method does nothing.
 

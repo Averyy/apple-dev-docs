@@ -6,7 +6,7 @@
 
 The matrix structure associated with this movie.
 
-#### Overview
+## Overview
 
 A matrix shows how to map points from one coordinate space into another. See [Matrices](../matrices.md) for a discussion of how display matrices are used in QuickTime.
 

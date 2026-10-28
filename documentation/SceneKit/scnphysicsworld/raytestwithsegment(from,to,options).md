@@ -25,11 +25,11 @@ func rayTestWithSegment(from origin: SCNVector3, to dest: SCNVector3, options: [
 - (NSArray<SCNHitTestResult *> *) rayTestWithSegmentFromPoint:(SCNVector3) origin toPoint:(SCNVector3) dest options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SCNHitTestResult`](../scnhittestresult.md) objects describing search results.
 
-#### Discussion
+## Discussion
 
 Use this method to implement concepts such as line of sight in your app. For example, in a game you might implement behavior for an enemy character by searching for physics bodies along a line between the enemy character’s position and the player character’s position, as illustrated below:
 

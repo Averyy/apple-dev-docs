@@ -21,7 +21,7 @@ case compact
 MSMessagesAppPresentationStyleCompact
 ```
 
-#### Discussion
+## Discussion
 
 When you use the compact presentation style, the extension’s user interface replaces the keyboard. Because the keyboard is not available, adding text fields or text views to your compact layout is not recommended.
 

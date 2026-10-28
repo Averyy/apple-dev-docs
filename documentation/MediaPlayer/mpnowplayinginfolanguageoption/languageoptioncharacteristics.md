@@ -25,7 +25,7 @@ var languageOptionCharacteristics: [String]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSString *> * languageOptionCharacteristics;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of characteristics that describes the language option. See [Language option characteristic constants](../language-option-characteristic-constants.md) for the most commonly used characteristics.
 

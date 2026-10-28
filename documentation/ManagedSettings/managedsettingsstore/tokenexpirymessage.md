@@ -17,7 +17,7 @@ A message that is posted in NotificationCenter when ManagedSettingsStore tokens 
 struct TokenExpiryMessage
 ```
 
-#### Overview
+## Overview
 
 Use these messages to refresh tokens in your database that are expired
 

@@ -24,7 +24,7 @@ var usage: MTLTensorUsage { get set }
 @property (nonatomic, readwrite) MTLTensorUsage usage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is a bitwise `OR` of:
 

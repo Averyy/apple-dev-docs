@@ -25,7 +25,7 @@ var languageOptions: [MPNowPlayingInfoLanguageOption] { get }
 @property (nonatomic, readonly) NSArray<MPNowPlayingInfoLanguageOption *> * languageOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of available language options for the group.
 

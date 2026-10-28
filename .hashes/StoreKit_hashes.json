@@ -70,7 +70,7 @@
     },
     "https://developer.apple.com/documentation/storekit/appstore": {
       "file_path": "documentation/StoreKit/appstore.md",
-      "hash": "07b12a081bd247a1627e3d355c65dded2a5a96c9d2eb32db630ed5a196023aa0"
+      "hash": "8267ad30afc2b4d09bab917d27699994fc6ba62af0761a2e1489c89021abdcc5"
     },
     "https://developer.apple.com/documentation/storekit/appstore/ageratingcode": {
       "file_path": "documentation/StoreKit/appstore/ageratingcode.md",
@@ -134,7 +134,7 @@
     },
     "https://developer.apple.com/documentation/storekit/appstore/presentoffercoderedeemsheet(from:)": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(from).md",
-      "hash": "b8eb06e6cf68ccb0656982b84854d7664de754b5c993e638dabd70861477ca52"
+      "hash": "1293eb502c4f2c4dcb549d424a339e5c52624ed7a48cf945fcd6ee65cbfaf456"
     },
     "https://developer.apple.com/documentation/storekit/appstore/presentoffercoderedeemsheet(from:options:)-89agc": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(from,options)-89agc.md",
@@ -146,7 +146,7 @@
     },
     "https://developer.apple.com/documentation/storekit/appstore/presentoffercoderedeemsheet(in:)": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(in).md",
-      "hash": "61fe4e53e072dc330d6bb2e51a2cb3f8e684e5f1f9728d198e9230be368db769"
+      "hash": "98cfccb23857ea24620673a294cf8cf348dd28957201641c3253f00e56d17390"
     },
     "https://developer.apple.com/documentation/storekit/appstore/requestreview(in:)-1q8qs": {
       "file_path": "documentation/StoreKit/appstore/requestreview(in)-1q8qs.md",
@@ -158,7 +158,7 @@
     },
     "https://developer.apple.com/documentation/storekit/appstore/showmanagesubscriptions(in:)": {
       "file_path": "documentation/StoreKit/appstore/showmanagesubscriptions(in).md",
-      "hash": "b86558905f34549325f59b88521b4ea8b1c2a36c1d6915dc1f705c346694cfa1"
+      "hash": "92cd6db696c4a3c4c5db7851d79b8543b138d95595ba0780040bd26179063883"
     },
     "https://developer.apple.com/documentation/storekit/appstore/showmanagesubscriptions(in:subscriptiongroupid:)": {
       "file_path": "documentation/StoreKit/appstore/showmanagesubscriptions(in,subscriptiongroupid).md",
@@ -730,7 +730,7 @@
     },
     "https://developer.apple.com/documentation/storekit/implementing-offer-codes-in-your-app": {
       "file_path": "documentation/StoreKit/implementing-offer-codes-in-your-app.md",
-      "hash": "969cd53960f12b7088f9f36c14642049dc602ee09a07da0deee36bf9af03fed7"
+      "hash": "5a933697f7b30488fbd13440e9f755158522506718b849f17c48c7f7166f9495"
     },
     "https://developer.apple.com/documentation/storekit/implementing-promotional-offers-in-your-app": {
       "file_path": "documentation/StoreKit/implementing-promotional-offers-in-your-app.md",
@@ -3330,7 +3330,7 @@
     },
     "https://developer.apple.com/documentation/storekit/skpaymentqueue/presentcoderedemptionsheet()": {
       "file_path": "documentation/StoreKit/skpaymentqueue/presentcoderedemptionsheet().md",
-      "hash": "73bdd938757068e82784233f448a994bb679be22c8a5d496eec082f2a47230bf"
+      "hash": "887c8ca0bfc63817ab9384d3da3353afc4b0b28a7c80500bff98f1c3daf82578"
     },
     "https://developer.apple.com/documentation/storekit/skpaymentqueue/remove(_:)": {
       "file_path": "documentation/StoreKit/skpaymentqueue/remove(_).md",
@@ -4042,7 +4042,7 @@
     },
     "https://developer.apple.com/documentation/storekit/storekit-views": {
       "file_path": "documentation/StoreKit/storekit-views.md",
-      "hash": "0a40e69b82fab1c3e02b0c6b320450386db686356717365bbadec14880788cb7"
+      "hash": "2058f7c17614dab07122564d619524b6d8ca896ff79a849e4378a6fa30277401"
     },
     "https://developer.apple.com/documentation/storekit/storekitbundle": {
       "file_path": "documentation/StoreKit/storekitbundle.md",
@@ -4822,7 +4822,7 @@
     },
     "https://developer.apple.com/documentation/storekit/supporting-subscription-offer-codes-in-your-app": {
       "file_path": "documentation/StoreKit/supporting-subscription-offer-codes-in-your-app.md",
-      "hash": "d1175496fc68f568346c70452bb8d40d955f3d37130633b3fea65b10f0dee767"
+      "hash": "b4d6dad478bc086d4e9d87f67d6499aeafa0ea0252ccaf914112855e437493e0"
     },
     "https://developer.apple.com/documentation/storekit/supporting-win-back-offers-in-your-app": {
       "file_path": "documentation/StoreKit/supporting-win-back-offers-in-your-app.md",
@@ -4874,7 +4874,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox": {
       "file_path": "documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md",
-      "hash": "63e104543efbfaa38026c2e8e492c8824ed00b690770709ff64ad38d3c6b31b2"
+      "hash": "a2105560e179fc4acd8c4fcdaac873a2ac422d91a86635c6d6115129f9bd4da0"
     },
     "https://developer.apple.com/documentation/storekit/testing-complete-transactions": {
       "file_path": "documentation/StoreKit/testing-complete-transactions.md",
@@ -4898,7 +4898,7 @@
     },
     "https://developer.apple.com/documentation/storekit/testing-in-app-purchases-in-xcode": {
       "file_path": "documentation/StoreKit/testing-in-app-purchases-in-xcode.md",
-      "hash": "535b0bf25e434281070f5fbfa984ae6619b772ef5e162ed491b1025eb625ef51"
+      "hash": "63d3286908643bb0728b46494659cdd0f02e3d2b9c1c448b08ec6fcdf05d3beb"
     },
     "https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox": {
       "file_path": "documentation/StoreKit/testing-in-app-purchases-with-sandbox.md",
@@ -5826,7 +5826,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore.json": {
       "file_path": "documentation/StoreKit/appstore.md",
-      "hash": "07b12a081bd247a1627e3d355c65dded2a5a96c9d2eb32db630ed5a196023aa0"
+      "hash": "8267ad30afc2b4d09bab917d27699994fc6ba62af0761a2e1489c89021abdcc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/ageratingcode.json": {
       "file_path": "documentation/StoreKit/appstore/ageratingcode.md",
@@ -5890,7 +5890,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentoffercoderedeemsheet(from:).json": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(from).md",
-      "hash": "b8eb06e6cf68ccb0656982b84854d7664de754b5c993e638dabd70861477ca52"
+      "hash": "1293eb502c4f2c4dcb549d424a339e5c52624ed7a48cf945fcd6ee65cbfaf456"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentoffercoderedeemsheet(from:options:)-89agc.json": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(from,options)-89agc.md",
@@ -5902,7 +5902,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/presentoffercoderedeemsheet(in:).json": {
       "file_path": "documentation/StoreKit/appstore/presentoffercoderedeemsheet(in).md",
-      "hash": "61fe4e53e072dc330d6bb2e51a2cb3f8e684e5f1f9728d198e9230be368db769"
+      "hash": "98cfccb23857ea24620673a294cf8cf348dd28957201641c3253f00e56d17390"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/requestreview(in:)-1q8qs.json": {
       "file_path": "documentation/StoreKit/appstore/requestreview(in)-1q8qs.md",
@@ -5914,7 +5914,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/showmanagesubscriptions(in:).json": {
       "file_path": "documentation/StoreKit/appstore/showmanagesubscriptions(in).md",
-      "hash": "b86558905f34549325f59b88521b4ea8b1c2a36c1d6915dc1f705c346694cfa1"
+      "hash": "92cd6db696c4a3c4c5db7851d79b8543b138d95595ba0780040bd26179063883"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/appstore/showmanagesubscriptions(in:subscriptiongroupid:).json": {
       "file_path": "documentation/StoreKit/appstore/showmanagesubscriptions(in,subscriptiongroupid).md",
@@ -6486,7 +6486,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/implementing-offer-codes-in-your-app.json": {
       "file_path": "documentation/StoreKit/implementing-offer-codes-in-your-app.md",
-      "hash": "969cd53960f12b7088f9f36c14642049dc602ee09a07da0deee36bf9af03fed7"
+      "hash": "5a933697f7b30488fbd13440e9f755158522506718b849f17c48c7f7166f9495"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/implementing-promotional-offers-in-your-app.json": {
       "file_path": "documentation/StoreKit/implementing-promotional-offers-in-your-app.md",
@@ -9086,7 +9086,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skpaymentqueue/presentcoderedemptionsheet().json": {
       "file_path": "documentation/StoreKit/skpaymentqueue/presentcoderedemptionsheet().md",
-      "hash": "73bdd938757068e82784233f448a994bb679be22c8a5d496eec082f2a47230bf"
+      "hash": "887c8ca0bfc63817ab9384d3da3353afc4b0b28a7c80500bff98f1c3daf82578"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/skpaymentqueue/remove(_:).json": {
       "file_path": "documentation/StoreKit/skpaymentqueue/remove(_).md",
@@ -9798,7 +9798,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/storekit-views.json": {
       "file_path": "documentation/StoreKit/storekit-views.md",
-      "hash": "0a40e69b82fab1c3e02b0c6b320450386db686356717365bbadec14880788cb7"
+      "hash": "2058f7c17614dab07122564d619524b6d8ca896ff79a849e4378a6fa30277401"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/storekitbundle.json": {
       "file_path": "documentation/StoreKit/storekitbundle.md",
@@ -10578,7 +10578,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/supporting-subscription-offer-codes-in-your-app.json": {
       "file_path": "documentation/StoreKit/supporting-subscription-offer-codes-in-your-app.md",
-      "hash": "d1175496fc68f568346c70452bb8d40d955f3d37130633b3fea65b10f0dee767"
+      "hash": "b4d6dad478bc086d4e9d87f67d6499aeafa0ea0252ccaf914112855e437493e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/supporting-win-back-offers-in-your-app.json": {
       "file_path": "documentation/StoreKit/supporting-win-back-offers-in-your-app.md",
@@ -10630,7 +10630,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.json": {
       "file_path": "documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md",
-      "hash": "63e104543efbfaa38026c2e8e492c8824ed00b690770709ff64ad38d3c6b31b2"
+      "hash": "a2105560e179fc4acd8c4fcdaac873a2ac422d91a86635c6d6115129f9bd4da0"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-complete-transactions.json": {
       "file_path": "documentation/StoreKit/testing-complete-transactions.md",
@@ -10654,7 +10654,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-in-app-purchases-in-xcode.json": {
       "file_path": "documentation/StoreKit/testing-in-app-purchases-in-xcode.md",
-      "hash": "535b0bf25e434281070f5fbfa984ae6619b772ef5e162ed491b1025eb625ef51"
+      "hash": "63d3286908643bb0728b46494659cdd0f02e3d2b9c1c448b08ec6fcdf05d3beb"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/testing-in-app-purchases-with-sandbox.json": {
       "file_path": "documentation/StoreKit/testing-in-app-purchases-with-sandbox.md",
@@ -11515,7 +11515,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 2878
   }

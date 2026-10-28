@@ -24,7 +24,7 @@ nonisolated
 func accessibility(identifier: String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for testing. It isn’t visible to the user.
 

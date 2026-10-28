@@ -25,7 +25,7 @@ var timeInterval: TimeInterval { get }
 @property (readonly) NSTimeInterval timeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If the timer is non-repeating, returns `0` even if a time interval was set.
 

@@ -25,7 +25,7 @@ let kCGImagePropertyHEICSFrameInfoArray: CFString
 extern CFStringRef const kCGImagePropertyHEICSFrameInfoArray;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFArray`](../CoreFoundation/cfarray.md). Each [`CFDictionary`](../CoreFoundation/cfdictionary.md) in the array contains timing information about an image in the sequence.
 

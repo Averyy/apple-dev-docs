@@ -16,11 +16,11 @@
 static kern_return_t Create(OSData *uuid, OSString *data_id, uint32_t max_len, uint32_t options, IOExtensiblePaniclog **out);
 ```
 
-#### Return Value
+## Return Value
 
 True in case of success. False in case of an error.
 
-#### Discussion
+## Discussion
 
 This function is to be called to create IOExtensiblePaniclog object.
 

@@ -23,7 +23,7 @@ static let streamingEarDidChangeNotification: NSNotification.Name
 extern NSNotificationName const AXMFiHearingDeviceStreamingEarDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when the value of [`streamingEar()`](./streamingear%28%29.md) changes.
 

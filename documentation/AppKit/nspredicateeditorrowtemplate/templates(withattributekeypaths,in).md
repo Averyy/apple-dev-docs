@@ -19,11 +19,11 @@ class func templates(withAttributeKeyPaths keyPaths: [String], in entityDescript
 + (NSArray<NSPredicateEditorRowTemplate *> *) templatesWithAttributeKeyPaths:(NSArray<NSString *> *) keyPaths inEntityDescription:(NSEntityDescription *) entityDescription;
 ```
 
-#### Return Value
+## Return Value
 
 An array of predicate templates for `keyPaths` originating at `entityDescription`.
 
-#### Discussion
+## Discussion
 
 This method determines which key paths in the entity description can use the same views (that is, share the same attribute type). For each of these groups, it instantiates individual templates via [`init(leftExpressions:rightExpressions:modifier:operators:options:)`](./init%28leftexpressions,rightexpressions,modifier,operators,options%29.md).
 

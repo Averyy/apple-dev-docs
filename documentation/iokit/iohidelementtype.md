@@ -18,7 +18,7 @@ typedef enum IOHIDElementType : unsigned int {
 } IOHIDElementType;
 ```
 
-#### Overview
+## Overview
 
 Used by the IOHIDFamily to identify the type of element processed. Represented by the key kIOHIDElementTypeKey in the dictionary describing the element.
 

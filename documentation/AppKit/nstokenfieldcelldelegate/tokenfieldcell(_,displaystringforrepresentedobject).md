@@ -20,7 +20,7 @@ optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, displayStringFo
 - (NSString *) tokenFieldCell:(NSTokenFieldCell *) tokenFieldCell displayStringForRepresentedObject:(id) representedObject;
 ```
 
-#### Return Value
+## Return Value
 
 The string to be used as a proxy for `representedObject`. If you return `nil` or do not implement this method, then `representedObject` is displayed as the string.
 

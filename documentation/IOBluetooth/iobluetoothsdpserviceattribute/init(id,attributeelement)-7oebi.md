@@ -19,7 +19,7 @@ init!(id newAttributeID: BluetoothSDPServiceAttributeID, attributeElement: IOBlu
 - (instancetype) initWithID:(BluetoothSDPServiceAttributeID) newAttributeID attributeElement:(IOBluetoothSDPDataElement *) attributeElement;
 ```
 
-#### Return Value
+## Return Value
 
 Returns self if successful. Returns nil if there was an error.
 

@@ -23,7 +23,7 @@ var maximumRiskScoreFullRange: Double { get }
 @property (nonatomic, assign, readonly) double maximumRiskScoreFullRange;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 

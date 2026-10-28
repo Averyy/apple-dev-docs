@@ -19,7 +19,7 @@ var datePickerStyle: NSDatePicker.Style { get set }
 @property NSDatePickerStyle datePickerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`NSDatePicker.Style`](../nsdatepicker/style.md).
 

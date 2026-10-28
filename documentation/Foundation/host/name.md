@@ -21,7 +21,7 @@ var name: String? { get }
 @property (copy, readonly, nullable) NSString * name;
 ```
 
-#### Return Value
+## Return Value
 
 One of the hostnames of the receiver. Can be either a simple hostname, such as `"sales"`, or a fully qualified domain name, such as `"sales.anycorp.com"`.
 

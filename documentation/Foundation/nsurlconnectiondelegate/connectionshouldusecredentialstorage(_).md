@@ -25,7 +25,7 @@ optional func connectionShouldUseCredentialStorage(_ connection: NSURLConnection
 - (BOOL) connectionShouldUseCredentialStorage:(NSURLConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called before any attempt to authenticate is made.
 

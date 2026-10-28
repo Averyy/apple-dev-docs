@@ -28,11 +28,11 @@ class func barsSwipeTransition() -> any CIFilter & CIBarsSwipeTransition
 
 - [Customizing Image Transitions](../customizing-image-transitions.md)
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the bar swipe transition filter to an image. The effect transitions from one image to another by a series of moving bars passing over the target image.
 

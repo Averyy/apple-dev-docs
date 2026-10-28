@@ -21,7 +21,7 @@ func deliver(_ notification: NSUserNotification)
 - (void) deliverNotification:(NSUserNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification will be presented to the user (subject to the user’s preferences). The [`isPresented`](../nsusernotification/ispresented.md) property of the [`NSUserNotification`](../nsusernotification.md) object will always be set to [`true`](../../Swift/true.md) if a notification is delivered using this method.
 

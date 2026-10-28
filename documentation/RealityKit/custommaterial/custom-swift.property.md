@@ -19,7 +19,7 @@ User-defined properties for the material’s shader functions.
 var custom: CustomMaterial.Custom { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`CustomMaterial.Custom`](./custom-swift.struct.md) object to send custom data to your shader functions. A custom object can hold a texture or a vector value, or both. Both the texture and vector value are available in your shader functions.
 

@@ -17,7 +17,7 @@ Element-wise not equal with a [`ScalarOrArray`](../scalarorarray.md) (scalar) ar
 static func .!= (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`.!=(_:_:)`](./dotnoteq%28_,_%29-mbw0.md)

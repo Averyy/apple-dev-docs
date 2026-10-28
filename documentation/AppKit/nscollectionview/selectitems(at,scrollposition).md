@@ -19,7 +19,7 @@ func selectItems(at indexPaths: Set<IndexPath>, scrollPosition: NSCollectionView
 - (void) selectItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths scrollPosition:(NSCollectionViewScrollPosition) scrollPosition;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to extend the current selection. If you want to animate the selection of the new items, call this method on the collection view’s [`animator()`](../nsanimatablepropertycontainer/animator%28%29.md) proxy object instead. This method does not call any methods of the delegate object when making the selection.
 

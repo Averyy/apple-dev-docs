@@ -21,7 +21,7 @@ Specifies that decoding assumes the top level of the JSON data is a dictionary, 
 var assumesTopLevelDictionary: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is an extension to JSON5 that’s not part of the specification. [`AttributedString`](../attributedstring.md) uses this option, along with [`allowsJSON5`](./allowsjson5.md), to support the use of JSON5 inside Markdown strings that use multiple custom attributes. Using [`assumesTopLevelDictionary`](./assumestopleveldictionary.md) allows for the following syntax inside the parentheses of the custom attribute markup:
 

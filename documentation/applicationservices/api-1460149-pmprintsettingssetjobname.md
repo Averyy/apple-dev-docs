@@ -19,11 +19,11 @@ func PMPrintSettingsSetJobName(_ printSettings: PMPrintSettings, _ name: CFStrin
 OSStatus PMPrintSettingsSetJobName(PMPrintSettings printSettings, CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 If you’re using the Print dialog, you should call this function before presenting the dialog. You are strongly encouraged to create a print job name that’s meaningful to the user and use this function to set the name; this produces the best user experience. If you do not specify the print job name, the printing system creates an appropriate job name for you.
 

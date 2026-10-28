@@ -24,7 +24,7 @@ case nameDoesNotStartWithValidCharacters
 HMErrorCodeNameDoesNotStartWithValidCharacters
 ```
 
-#### Discussion
+## Discussion
 
 Names must start with a letter, symbol, or number.
 

@@ -20,7 +20,7 @@ Sets values for a group of function constants within a specific index range.
 - (void) setConstantValues:(const void *) values type:(MTLDataType) type withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Declare multiple function constants in Metal Shading Language (MSL).
 

@@ -24,7 +24,7 @@ let CIDetectorReturnSubFeatures: String
 extern NSString * const CIDetectorReturnSubFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object with a Boolean value. Use this option with the [`CIDetectorTypeText`](./cidetectortypetext.md) detector type to choose whether to detect only regions likely to contain text (`false`, the default) or to also identify sub-regions likely to contain individual characters of text (`true`).
 

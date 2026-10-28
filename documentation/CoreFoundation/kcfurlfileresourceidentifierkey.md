@@ -25,7 +25,7 @@ let kCFURLFileResourceIdentifierKey: CFString!
 extern CFStringRef const kCFURLFileResourceIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier can be used to determine equality between file system resources with the [`CFEqual(_:_:)`](./cfequal%28_,_%29.md) function. Two resources are equal if they have the same file-system path or if their paths link to the same inode on the same file system.
 

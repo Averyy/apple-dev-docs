@@ -22,7 +22,7 @@ func VTDecompressionSessionDecodeFrame(_ session: VTDecompressionSession, sample
 extern OSStatus VTDecompressionSessionDecodeFrameWithOptions(VTDecompressionSessionRef session, CMSampleBufferRef sampleBuffer, VTDecodeFrameFlags decodeFlags, CFDictionaryRef frameOptions, void *sourceFrameRefCon, VTDecodeInfoFlags *infoFlagsOut);
 ```
 
-#### Discussion
+## Discussion
 
 Decompresses a video frame.
 

@@ -16,7 +16,7 @@ Bits are used in defining capabilityFlags, inputPowerRequirements, and outputPow
 typedef unsigned long IOPMPowerFlags;
 ```
 
-#### Discussion
+## Discussion
 
 These bits may be bitwise-OR'd together in the IOPMPowerState capabilityFlags field, the outputPowerCharacter field, and/or the inputPowerRequirement field.
 

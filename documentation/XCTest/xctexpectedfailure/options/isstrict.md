@@ -16,7 +16,7 @@ var isStrict: Bool { get set }
 @property (getter=isStrict) BOOL strict;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `true`. Set this property to `false` to prevent the test from recording the unfilled expected failure as an issue.
 

@@ -21,7 +21,7 @@ Returns a copy of this grid, updated with the argument destination positions.
 func replacingByDestinationPositions(positions destination: [SIMD2<Float>]) -> SKWarpGeometryGrid
 ```
 
-#### Return Value
+## Return Value
 
 A new warp geometry grid.
 

@@ -19,11 +19,11 @@ func SKDocumentGetSchemeName(_ inDocument: SKDocument!) -> Unmanaged<CFString>!
 CFStringRef SKDocumentGetSchemeName(SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFString`](../CoreFoundation/cfstring.md) object containing the document URL object’s scheme name, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 The scheme of a document URL object (of type [`SKDocument`](./skdocument.md)), which represents how it can be accessed, can be any character string but is typically “`file`” or “`http`”. The scheme is one of a Search Kit document URL object’s three properties—see [`SKDocument`](./skdocument.md) for details.
 

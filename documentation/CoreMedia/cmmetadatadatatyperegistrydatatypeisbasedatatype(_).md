@@ -25,11 +25,11 @@ func CMMetadataDataTypeRegistryDataTypeIsBaseDataType(_ dataType: CFString) -> B
 extern Boolean CMMetadataDataTypeRegistryDataTypeIsBaseDataType(CFStringRef dataType);
 ```
 
-#### Return Value
+## Return Value
 
 [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if first data type conforms to the second data type; [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This is simply a convenience method to test to see if a given data type identifier is in the array returned by [`CMMetadataDataTypeRegistryGetBaseDataTypes()`](./cmmetadatadatatyperegistrygetbasedatatypes%28%29.md).
 

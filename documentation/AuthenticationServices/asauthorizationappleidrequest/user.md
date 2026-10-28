@@ -25,7 +25,7 @@ var user: String? { get set }
 @property (nonatomic, copy, nullable) NSString * user;
 ```
 
-#### Discussion
+## Discussion
 
 Typically you leave this property set to `nil` the first time you authenticate a user. Otherwise, if you previously received an authorization containing an [`ASAuthorizationAppleIDCredential`](../asauthorizationappleidcredential.md) instance, set this property to the value from the credential’s [`user`](../asauthorizationappleidcredential/user.md) property.
 

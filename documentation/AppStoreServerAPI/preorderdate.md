@@ -15,7 +15,7 @@ The date a customer places an order for the app before it’s available in the A
 timestamp preorderDate
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`JWSAppTransactionDecodedPayload`](./jwsapptransactiondecodedpayload.md).
 

@@ -25,7 +25,7 @@ let kCGImageDestinationPreserveGainMap: CFString
 extern CFStringRef const kCGImageDestinationPreserveGainMap;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). If you scale the destination image using the [`kCGImageDestinationImageMaxPixelSize`](./kcgimagedestinationimagemaxpixelsize.md) key, the destination also scales the gain map.
 

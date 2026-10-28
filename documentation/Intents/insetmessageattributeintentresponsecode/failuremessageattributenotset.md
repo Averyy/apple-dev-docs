@@ -22,7 +22,7 @@ case failureMessageAttributeNotSet
 INSetMessageAttributeIntentResponseCodeFailureMessageAttributeNotSet
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you were unable to modify the attributes of one or more messages.
 

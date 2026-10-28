@@ -25,7 +25,7 @@ class func unregisterForLaunchOnQuickSwitchStateEvents() async throws
 + (void) unregisterForLaunchOnQuickSwitchStateEvents:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to de-register the current device so it no longer receives quick switch event notifications when your app isn’t running.
 

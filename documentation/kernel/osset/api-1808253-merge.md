@@ -12,11 +12,11 @@ virtual bool merge(
  const OSSet *set);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if any object from `set` are successfully added the receiver (or were already present), `false` otherwise.
 
-#### Overview
+## Overview
 
 This functions adds to the receiving set all objects from `set` that are not already in the receiving set. Objects added to the receiver are retained.
 

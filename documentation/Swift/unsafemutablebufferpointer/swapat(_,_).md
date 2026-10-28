@@ -21,7 +21,7 @@ Exchanges the values at the specified indices of the buffer.
 func swapAt(_ i: Int, _ j: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Both parameters must be valid indices of the buffer, and not equal to `endIndex`. Passing the same index as both `i` and `j` has no effect.
 

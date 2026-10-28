@@ -19,7 +19,7 @@ class func mouseEvent(with type: NSEvent.EventType, location: NSPoint, modifierF
 + (NSEvent *) mouseEventWithType:(NSEventType) type location:(NSPoint) location modifierFlags:(NSEventModifierFlags) flags timestamp:(NSTimeInterval) time windowNumber:(NSInteger) wNum context:(NSGraphicsContext *) unusedPassNil eventNumber:(NSInteger) eNum clickCount:(NSInteger) cNum pressure:(float) pressure;
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSEvent` instance or `nil` if the instance could not be created.
 

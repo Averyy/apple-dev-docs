@@ -14,7 +14,7 @@ Build a shared photo gallery by using SharePlay to synchronize images among part
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 SharePlay allows multiple people to collaborate and share content such as photos or files with each other.
 
@@ -32,7 +32,7 @@ SharePlay allows you to share different types of data among participants. Becaus
 
 For a SharePlay sample code project that uses `GroupSessionMessenger`, see [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md).
 
-#### Define a custom group activity
+## Define a custom group activity
 
 The app creates a [`GroupActivity`](./groupactivity.md) called `PhotoShareActivity` that defines the photo-sharing experience and allows you to start an activity-related SharePlay session. The activity provides metadata, like the title and type of the activity, which appears in the system UI when people share an experience.
 
@@ -51,7 +51,7 @@ struct PhotoShareActivity: GroupActivity, Transferable {
 
 For more information, see [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md).
 
-#### Start a SharePlay session
+## Start a SharePlay session
 
 The app’s toolbar includes a button to start a SharePlay session, but the implementation differs by platform.
 
@@ -92,7 +92,7 @@ ShareLink(item: PhotoShareActivity(), preview: SharePreview("Share Images"))
 
 For more information, see [Presenting SharePlay activities from your app’s UI](./promoting-shareplay-activities-from-your-apps-ui.md).
 
-#### Join and manage the activity
+## Join and manage the activity
 
 When someone starts a SharePlay session, the system creates a [`GroupSession`](./groupsession.md) for the custom activity to synchronize content between devices. To join an existing activity, the `observeGroupSessions` function continuously monitors for new `PhotoShareActivity` sessions. When one becomes available, the function starts observing the session state and creates a `SessionController` to manage the session. To ensure that locally uploaded images are shared when the activity begins, the function also uploads those images to the [`GroupSessionJournal`](./groupsessionjournal.md) object:
 
@@ -148,7 +148,7 @@ init(_ groupSession: GroupSession<PhotoShareActivity>, appModel: AppModel) async
 
 Because people probably won’t join the call at the same time, the app needs to handle bringing people up to date. `GroupSessionJournal` handles this for you to mitigate re-uploading large attachments. For more information on handling this if you’re syncing other data, see [Joining and managing a shared activity](./joining-and-managing-a-shared-activity.md). For an example, see [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md) or [Building a guessing game for visionOS](./building-a-guessing-game-for-visionos.md).
 
-#### Upload images
+## Upload images
 
 The app uses a [`PhotosPicker`](../PhotosUI/photospicker.md) to allow people to upload images from their photo library. For more information on using `PhotosPicker` in SwiftUI, see [Bringing Photos picker to your SwiftUI app](../PhotoKit/bringing-photos-picker-to-your-swiftui-app.md).
 
@@ -173,7 +173,7 @@ When someone chooses an image from the photo picker, the app loads a `Data` obje
 
 If the sample app has an existing SharePlay session, the method shares the local images with the other participants. If there isn’t an existing SharePlay session, the UI uses the image data in `localImagesByIdentifier` and initializes an [`Image`](../SwiftUI/image.md) using that data.
 
-#### Synchronize files between participants
+## Synchronize files between participants
 
 To synchronize the images between participants, the app creates a [`GroupSessionJournal`](./groupsessionjournal.md) object to add and removes images from the shared session. For an overview of `GroupSessionJournal`, watch the WWDC23 session [Share files with SharePlay](https://developer.apple.com/videos/play/wwdc2023/10241).
 

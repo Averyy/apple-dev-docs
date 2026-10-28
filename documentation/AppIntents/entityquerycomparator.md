@@ -21,7 +21,7 @@ The base class for all concrete entity query comparators.
 class EntityQueryComparator<Property, PropertyType, InputType, ComparatorMappingType> where Property : EntityProperty<PropertyType>, PropertyType : _IntentValue, PropertyType : Sendable, InputType : _IntentValue
 ```
 
-#### Overview
+## Overview
 
 An entity query comparator specifies a particular query comparison that can be made against a [`EntityQueryProperty`](./entityqueryproperty.md). For each query property comparator, `mappingTransform` maps the user-supplied `Value` at runtime into a `ComparatorMappingType` type of your choice.
 
@@ -44,7 +44,7 @@ Property(\.$firstName) {
 }
 ```
 
-#### Resolvers
+## Resolvers
 
 Additionally, you can supply a set of [`Resolver`](./resolver.md)s to fine-tune how the system will transform a user’s supplied value into into the target `Value` type.
 

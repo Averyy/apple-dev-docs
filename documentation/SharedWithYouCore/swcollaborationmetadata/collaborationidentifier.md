@@ -23,7 +23,7 @@ var collaborationIdentifier: SWCollaborationIdentifier { get }
 @property (nonatomic, copy, readonly) SWCollaborationIdentifier collaborationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is unique across platforms and sharing sessions.
 

@@ -22,7 +22,7 @@ var maximumContentHeight: CGFloat { get set }
 @property (nonatomic) CGFloat maximumContentHeight;
 ```
 
-#### Discussion
+## Discussion
 
 `UIPrintFormatter` uses this value to determine where the content rectangle begins on the first page. It compares the value of this property with the printing rectangle’s height minus the header and footer heights and the top inset value (of [`contentInsets`](./contentinsets.md)); it uses the lower of the two values. The default value of this property is the maximum float value.
 

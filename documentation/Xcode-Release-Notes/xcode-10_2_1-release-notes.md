@@ -5,37 +5,37 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 10.2.1 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2. Xcode 10.2.1 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 10.2.1 requires a Mac running macOS 10.14.3 or later.
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Simulator builds of watchOS projects that emit bitcode no longer fail with the error message: “GNU-style inline assembly is disabled.” (48903352)
 
-##### Build System
+### Build System
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue that would produce a spurious “ignoring build task” warning when building localized Siri Intents. (49649474)
 
-##### LLDB
+### LLDB
 
-###### Resolved Issues
+#### Resolved Issues
 
 - When importing Swift modules, LLDB now applies the `target.source-map` and the `DBGSourcePathRemapping` dictionary in the `.dSYM` bundle to the `-fmodule-map-file` option. This impacted alternative build systems that rely on path-remapping to access debug information. (49539481)
 
-##### Localization
+### Localization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that could occur when modernizing localized content. (49575302)
 
-##### Simulator
+### Simulator
 
-###### Known Issues
+#### Known Issues
 
 - Simulators for iOS 9.3 and earlier might fail to launch Swift apps with the message: “dyld: Library not loaded: /usr/lib/libauto.dylib”. (49326587)
 
@@ -45,9 +45,9 @@ Xcode 10.2.1 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12
   sudo mkdir '/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 9.3.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift'
   ```
 
-##### Swift Compiler
+### Swift Compiler
 
-###### Known Issues
+#### Known Issues
 
 - In some cases, compilation may fail without emitting a specific error. (49303574)
 
@@ -96,7 +96,7 @@ Xcode 10.2.1 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12
   class DerivedClass: BaseClass {}
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - A build time regression associated with Swift files that define a large number of types has been resolved. (49022293)
 - The Swift compiler now applies the `-fdebug-prefix-map` to path names in Clang module import debug information records. (49539327)
@@ -125,9 +125,9 @@ Xcode 10.2.1 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12
 
   The compiler now properly distinguishes between .`nonPayloadCase1` and `.nonPayloadCase2`.
 
-##### Swift Package Manager
+### Swift Package Manager
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The `swift package generate-xcodeproj` command now handles submodules in the top-level package. (49535554)
 

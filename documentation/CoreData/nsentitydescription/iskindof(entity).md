@@ -25,7 +25,7 @@ func isKindOf(entity: NSEntityDescription) -> Bool
 - (BOOL) isKindOfEntity:(NSEntityDescription *) entity;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is a sub-entity of `entity`, otherwise [`false`](../../Swift/false.md).
 

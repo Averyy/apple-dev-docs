@@ -23,7 +23,7 @@ protocol UIPickerViewDelegate : NSObjectProtocol
 @protocol UIPickerViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate of a [`UIPickerView`](./uipickerview.md) object must adopt this protocol and implement at least some of its methods to provide the picker view with the data it needs to construct itself.
 

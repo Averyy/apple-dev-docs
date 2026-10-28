@@ -19,7 +19,7 @@ var headerReferenceSize: NSSize { get set }
 @property NSSize headerReferenceSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement the [`collectionView(_:layout:referenceSizeForHeaderInSection:)`](../nscollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforheaderinsection%29.md) method, the flow layout object uses the value of this property as the header size.
 

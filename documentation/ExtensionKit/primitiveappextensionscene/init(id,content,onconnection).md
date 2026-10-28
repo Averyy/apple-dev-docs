@@ -22,7 +22,7 @@ Initializes the primitive app extension scene with the specified ID and closure 
 @preconcurrency init<Content>(id: String, @ViewBuilder content: @escaping () -> Content, onConnection: @escaping @Sendable (NSXPCConnection) -> Bool = { _ in false }) where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to initialize the type and provide the scene contents. The following example shows the typical code you use to create this type and specify its parameters. Replace the comments with the actual SwiftUI views and XPC connection code your app supports.
 

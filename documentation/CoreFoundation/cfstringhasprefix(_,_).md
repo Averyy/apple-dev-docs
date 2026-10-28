@@ -25,7 +25,7 @@ func CFStringHasPrefix(_ theString: CFString!, _ prefix: CFString!) -> Bool
 extern Boolean CFStringHasPrefix(CFStringRef theString, CFStringRef prefix);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `theString` begins with `prefix`, `false` if otherwise.
 

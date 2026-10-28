@@ -21,7 +21,7 @@ var canDraw: Bool { get }
 @property (readonly) BOOL canDraw;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when drawing produces expected results. A view object can draw onscreen if it is not hidden, it is attached to a view hierarchy in a window ([`NSWindow`](../nswindow.md)), and the window has a corresponding window device. A view object can also draw during printing if it is a descendant of the view being printed.
 

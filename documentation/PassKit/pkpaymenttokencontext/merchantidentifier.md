@@ -23,7 +23,7 @@ var merchantIdentifier: String { get set }
 @property (nonatomic, copy) NSString * merchantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The merchant identifier you provide when you make an Apple Pay payment request. If you request a payment token for another merchant, use their merchant identifier if available. Otherwise, use your own merchant identifier.
 

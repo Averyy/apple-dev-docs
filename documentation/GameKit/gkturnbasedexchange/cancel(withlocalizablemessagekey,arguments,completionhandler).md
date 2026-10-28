@@ -33,7 +33,7 @@ func cancel(withLocalizableMessageKey key: String, arguments: [String]) async th
 
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 You can cancel both an active and completed exchange request.
 

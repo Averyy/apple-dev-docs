@@ -19,11 +19,11 @@ func hv_gic_set_ich_reg(_ vcpu: hv_vcpu_t, _ reg: hv_gic_ich_reg_t, _ value: UIn
 extern hv_return_t hv_gic_set_ich_reg(hv_vcpu_t vcpu, hv_gic_ich_reg_t reg, uint64_t value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 ICH registers are only available when EL2 is an enabled state, otherwise the framework returns an error.
 

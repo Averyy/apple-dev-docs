@@ -25,7 +25,7 @@ var notificationType: CKNotification.NotificationType { get }
 @property (nonatomic, assign, readonly) CKNotificationType notificationType;
 ```
 
-#### Discussion
+## Discussion
 
 Different notification types correspond to different subclasses of [`CKNotification`](../cknotification.md), so you can use the value in this property to determine how to handle the notification data.
 

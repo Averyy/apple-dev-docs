@@ -21,7 +21,7 @@ var path: UIBezierPath? { get set }
 @property (nonatomic, strong, nullable) UIBezierPath * path;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to customize the image of an element. The framework only supports custom paths for button elements.
 

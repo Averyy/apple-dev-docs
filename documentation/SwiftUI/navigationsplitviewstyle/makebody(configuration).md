@@ -23,7 +23,7 @@ Creates a view that represents the body of a navigation split view.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method for each instance of [`NavigationSplitView`](../navigationsplitview.md), where this style is the current [`NavigationSplitViewStyle`](../navigationsplitviewstyle.md).
 

@@ -25,7 +25,7 @@ var selfIllumination: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * selfIllumination;
 ```
 
-#### Discussion
+## Discussion
 
 Self-illumination applies to all materials, but is especially useful for those using physically-based shading (see [`physicallyBased`](./lightingmodel-swift.struct/physicallybased.md)). Physically-based materials work best with environment-based lighting (see the [`SCNScene`](../scnscene.md) property [`lightingEnvironment`](../scnscene/lightingenvironment.md)), but for some materials it can be useful to let a surface itself define part of its lighting—for example, an object whose position obscures it from the “sky” that provides the main lighting environment. When you assign contents to this property, they override the environmental lighting contribution to diffuse shading, but environmental lighting still contributes to specular effects.
 

@@ -15,7 +15,7 @@ A unique identifier for score counters.
 struct Identifier
 ```
 
-#### Overview
+## Overview
 
 A score counter identifier needs to be unique across all instances of the same tabletop game.
 

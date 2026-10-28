@@ -21,7 +21,7 @@ class HMAccessorySetupRequest
 @interface HMAccessorySetupRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to provide steps for the user to add one or more accessories to a particular home, and follow up with additional setup.
 

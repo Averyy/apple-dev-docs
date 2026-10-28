@@ -21,11 +21,11 @@ Searches for known data types in a string or a substring.
 func dataDetectorMatches(_ types: DataDetector.MatchType = .all, options: DataDetector.Options = DataDetector.Options()) -> some AsyncSequence<DataDetector.Match, Never>
 ```
 
-#### Return Value
+## Return Value
 
 An [`AsyncSequence`](../asyncsequence.md) of `DataDetector/Match` objects that match the provided string.
 
-#### Discussion
+## Discussion
 
 DataDetection only searches for known data types in natural language text. There’s no guarantee that the framework can find a particular matching string in the  data, especially in ambiguous cases. The scanner expects an input string in a person’s language and region, if supported. However, the framework may consider some additional languages and regions. Don’t use this functionality to validate form inputs such as email addresses, postal addresses, URLs, and so on.
 

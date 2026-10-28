@@ -24,7 +24,7 @@ static func registerGestureConflictWithZoom()
 extern void UIAccessibilityRegisterGestureConflictWithZoom();
 ```
 
-#### Discussion
+## Discussion
 
 Use this function if your application uses multi-finger gestures that conflict with the gestures used by system Zoom (that is, three-finger gestures). When this is the case, the user is presented with the choice of turning off Zoom or continuing.
 

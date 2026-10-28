@@ -14,7 +14,7 @@ Remaps incoming values from one range to another.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Range (float)**:
 
@@ -192,7 +192,7 @@ Remaps incoming values from one range to another.
 | --- | --- |
 | `Out` | Vector2f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input value to remap.
 - **`In Low`**: The low-end value of the input range; the default is `0.0`.
@@ -202,7 +202,7 @@ Remaps incoming values from one range to another.
 - **`Out High`**: The high-end value of the output range. The default is `1.0`.
 - **`Do Clamp`**: The Boolean value that indicates if the output is clamped. If `true`, the output clamps to the range defined by the `Out Low` and `Out High` parameters. The default is `False`.
 
-#### Discussion
+## Discussion
 
 The `Range` node takes a range of incoming values and converts them to another range. The node also provides the option to apply a gamma correction, which occurs in the middle of the transformation process. The gamma value is the inverse exponent the node applies to the  incoming values. For example, a value of `2` raises the incoming values to the power of `1/2`, effectively calculating the square root. The node also provides the option to clamp the output, which means any values below the `Out Low` parameter are set to the value of `Out Low`, and any values above the `Out High` parameter are set to value of `Out High`.
 

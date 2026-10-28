@@ -24,7 +24,7 @@ var depthCompareFunction: MTLCompareFunction { get set }
 @property (nonatomic) MTLCompareFunction depthCompareFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLCompareFunction.always`](../mtlcomparefunction/always.md), which indicates that the depth test always passes and the fragment remains a candidate to replace the data at the specified location. For more information on possible values, see [`MTLCompareFunction`](../mtlcomparefunction.md).
 

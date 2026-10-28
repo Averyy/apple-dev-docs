@@ -5,13 +5,13 @@
 
 Verify that asynchronous code behaves as expected.
 
-#### Overview
+## Overview
 
 Asynchronous code doesn’t execute directly within the current flow of code. This might be because the code runs on a different thread or dispatch queue, in a delegate method, or in a callback, or because it’s a Swift function marked with `async`.
 
 `XCTest` provides two approaches for testing asynchronous code. For Swift code that uses `async` and `await` for concurrency, you mark your test methods `async` or `async` `throws` to test asynchronously. For any other types of asynchronous code, within your test you create one or more *expectations*, which are objects that XCTest uses to handle waiting. Then you *fulfill* those expectations when the asynchronous code finishes running to tell XCTest to stop waiting. Your test method waits until all expectations are fulfilled or a specified timeout expires.
 
-##### Build Asynchronous Tests with Swift Concurrency
+### Build Asynchronous Tests with Swift Concurrency
 
 To test Swift code that uses `async` and `await` for concurrency, mark your test method `async` or `async` `throws`. `XCTest` executes your test method asynchronously so that your test waits until `async` calls complete.
 
@@ -35,7 +35,7 @@ If your test encounters a thrown error, `XCTest` records a test failure.
 
 > ❗ **Important**:  If your test code needs to run on the Main actor, specify `@MainActor` for your test method or class. If you don’t specify an actor, the test method executes on an arbitrary actor.
 
-##### Build Asynchronous Tests with Expectations
+### Build Asynchronous Tests with Expectations
 
 When you can’t use Swift `async`, use expectations to test asynchronous code. For example, use expectations when there isn’t a Swift `async` alternative available or when your asynchronous code runs in:
 

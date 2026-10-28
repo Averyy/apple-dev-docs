@@ -19,7 +19,7 @@ object ARKit
 
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Augmented reality (AR) creates user experiences that add 2D or 3D elements to the live view from a device’s camera in a way that makes those elements appear to inhabit the real world. ARKit combines device motion tracking, camera scene capture, advanced scene processing, and display conveniences to simplify the task of building an AR experience. See [`ARKit`](./arkit.md).
 
@@ -27,7 +27,7 @@ Displaying ARKit content in Apple News requires an iOS or iPadOS device with an 
 
 > ❗ **Important**:  The ARKit feature can’t be previewed on iOS versions earlier than iOS 12. If you are using News Preview, ensure you have Xcode 9 or later installed.
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ var item: NSFileProviderItem? { get }
 @property (nonatomic, readonly, nullable) NSFileProviderItem item;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` for deletion events.
 

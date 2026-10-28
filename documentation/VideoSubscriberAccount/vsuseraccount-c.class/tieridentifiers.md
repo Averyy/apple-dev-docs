@@ -19,7 +19,7 @@ An array of strings that identify a subset of content from your catalog that the
 @property (nonatomic, copy, nullable) NSArray<NSString *> * tierIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Only provide values from your availability feed’s tier restrictions.
 

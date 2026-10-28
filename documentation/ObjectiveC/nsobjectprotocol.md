@@ -25,7 +25,7 @@ protocol NSObjectProtocol
 @protocol NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  This protocol is imported into Swift with the name `NSObjectProtocol`.
 

@@ -21,7 +21,7 @@ Specifies the maximum amount of time a tip is displayed before it is invalidated
 typealias MaxDisplayDuration = Tips.MaxDisplayDuration
 ```
 
-#### Overview
+## Overview
 
 Use this option to automatically invalidate a tip after it has been displayed for a specified time interval.
 

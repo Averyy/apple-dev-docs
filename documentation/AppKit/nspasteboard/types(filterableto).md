@@ -19,11 +19,11 @@ class func types(filterableTo type: NSPasteboard.PasteboardType) -> [NSPasteboar
 + (NSArray<NSString *> *) typesFilterableTo:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects containing the types that can be converted to the target data type.
 
-#### Discussion
+## Discussion
 
 The array also contains the original type.
 

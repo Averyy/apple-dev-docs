@@ -25,7 +25,7 @@ func register(_ listener: any GKLocalPlayerListener)
 - (void) registerListener:(id<GKLocalPlayerListener>) listener;
 ```
 
-#### Discussion
+## Discussion
 
 Only register a listener a single time. Registering a listener multiple times results in undefined behavior.
 

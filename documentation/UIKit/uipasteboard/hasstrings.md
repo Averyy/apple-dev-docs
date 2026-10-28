@@ -22,7 +22,7 @@ var hasStrings: Bool { get }
 @property (nonatomic, readonly) BOOL hasStrings;
 ```
 
-#### Discussion
+## Discussion
 
 Employ this property to determine if a pasteboard contains string data.
 

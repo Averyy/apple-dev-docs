@@ -24,7 +24,7 @@ var value: Any? { get }
 @property (nonatomic, copy, readonly, nullable) id value;
 ```
 
-#### Discussion
+## Discussion
 
 This is the last value that the system saw for the characteristic. Because multiple apps can access a given home, this value may change without your app changing it. To be sure you have the current value, call [`readValue(completionHandler:)`](./readvalue%28completionhandler%29.md) and wait for the response before checking the [`value`](./value.md) property.
 

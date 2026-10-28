@@ -19,7 +19,7 @@ func xpc_connection_get_asid(_ connection: xpc_connection_t) -> au_asid_t
 extern au_asid_t xpc_connection_get_asid(xpc_connection_t connection);
 ```
 
-#### Return Value
+## Return Value
 
 The audit session ID of the remote peer at the time the connection was made.
 

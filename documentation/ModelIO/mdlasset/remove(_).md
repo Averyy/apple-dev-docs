@@ -24,7 +24,7 @@ func remove(_ object: MDLObject)
 - (void) removeObject:(MDLObject *) object;
 ```
 
-#### Discussion
+## Discussion
 
 An asset contains one or more top-level objects (instances of the [`MDLObject`](../mdlobject.md) class or one of its subclasses, such as [`MDLMesh`](../mdlmesh.md)), each of which may contain a hierarchy of child objects.
 

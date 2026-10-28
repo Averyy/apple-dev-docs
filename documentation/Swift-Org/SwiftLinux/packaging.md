@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftLinux"
 
 Build a container that includes your Swift service with its resources and dependencies.
 
-#### Overview
+## Overview
 
 Running your service in the cloud requires configuration, dependencies, and resources. Containers provide a standard way to package your service along with everything it needs. You build a container image using tools such as [Docker](https://www.docker.com) or [Container](https://github.com/apple/container), then deploy that image to a virtual machine or cloud hosting infrastructure such as a Kubernetes cluster.
 
@@ -30,7 +30,7 @@ A container image is built from layers of filesystem changes, stacked on top of 
 
 At runtime, your deployment environment can mount additional filesystems into a container, such as configuration maps or secrets, to provide values that vary between environments.
 
-##### Swift container images
+### Swift container images
 
 The Swift project publishes container images on [Docker Hub](https://hub.docker.com/_/swift) that you can use to build and run your services. These images come in two forms:
 
@@ -43,7 +43,7 @@ You can also use a plain Linux distribution image, such as `ubuntu:noble`, as yo
 
 Your organization may provide vetted base images that reflect its security policies and operational best practices. If it does, build on those base images.
 
-##### Build a container image
+### Build a container image
 
 A single-stage build compiles and packages your service in one image. Create a file named `Dockerfile` at the root of your project:
 
@@ -73,7 +73,7 @@ Tags identify images locally and determine where images go when you push them to
 
 This approach works for a quick local build, but the image includes the full Swift compiler and development tools, which add hundreds of megabytes that your service never uses at runtime and expand the attack surface of the deployed container.
 
-##### Slim the image with a multi-stage build
+### Slim the image with a multi-stage build
 
 A [multi-stage build](https://docs.docker.com/build/building/multi-stage/) separates compilation from packaging. The first stage compiles your service using the full SDK image. The second stage copies only the compiled executable into a minimal runtime image, producing a final image that is a fraction of the size.
 
@@ -104,7 +104,7 @@ container build -t <my-app>:latest .
 
 > 💡 **Tip**: Create a `.dockerignore` file at the root of your project to exclude directories like `.build/` and `.git/` from the build context. Without it, `COPY . /workspace` sends everything to the build daemon, which slows builds and can bloat image layers.
 
-##### Include the backtracer in the runtime image
+### Include the backtracer in the runtime image
 
 When a Swift service crashes, the runtime invokes a helper binary, `swift-backtrace`, to capture a stack trace and write it to stderr. Slim runtime images don’t include this helper, so crashes terminate silently without a trace. The toolchain ships a statically linked backtracer in the builder image that you can copy into the runtime stage as is:
 
@@ -125,7 +125,7 @@ Current Swift toolchains preserve frame pointers in release builds on Linux serv
 
 For the full set of `SWIFT_BACKTRACE` options, see the [Swift backtracing reference](https://github.com/swiftlang/swift/blob/main/docs/Backtracing.rst#how-do-i-configure-backtracing). To debug your service using a captured trace, see [Debugging a service using a backtrace](./debugging-a-service-using-a-backtrace.md).
 
-##### Cache build artifacts to speed up rebuilds
+### Cache build artifacts to speed up rebuilds
 
 The Dockerfiles above copy all source files into the image and build from scratch every time. For a small project, this is fine, but as your service grows, rebuilding all dependencies on every change slows down the development cycle.
 
@@ -168,7 +168,7 @@ Because cache mounts aren’t part of the final image layer, the build step expl
 
 > **Note**: If your project includes a `Snippets/` directory or other non-source directories referenced by `Package.swift`, add additional bind mounts for those directories in the build step.
 
-##### Build for a different platform
+### Build for a different platform
 
 If your development machine and deployment target use different CPU architectures — for example, building on Apple silicon (arm64) and deploying to x86_64 cloud infrastructure — you need to specify the target platform when building the image.
 
@@ -194,7 +194,7 @@ container build --arch amd64 -t <my-app>:latest .
 
 > **Note**: Cross-platform builds use emulation, which is significantly slower than native builds. When possible, build on infrastructure that matches your deployment architecture, such as an x86_64 CI runner for x86_64 deployments.
 
-##### Push to a registry
+### Push to a registry
 
 A container registry stores and distributes images so that other systems can pull and run them. To push an image, tag it with the registry’s hostname and repository path, then push the tagged image.
 
@@ -218,7 +218,7 @@ container push ghcr.io/<github-username>/<my-app>:1.0
 
 > **Note**: Your organization or cloud hosting provider may operate its own container registry. Check with your team for the correct registry hostname and authentication method.
 
-##### Run locally to verify and debug
+### Run locally to verify and debug
 
 Run a container from your image to verify it starts correctly:
 

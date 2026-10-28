@@ -24,7 +24,7 @@ struct UIEdgeInsets
 typedef struct UIEdgeInsets { ... } UIEdgeInsets;
 ```
 
-#### Overview
+## Overview
 
 Edge inset values are applied to a rectangle to shrink or expand the area represented by that rectangle. Typically, edge insets are used during view layout to modify the view’s frame. Positive values cause the frame to be inset (or shrunk) by the specified amount. Negative values cause the frame to be outset (or expanded) by the specified amount.
 

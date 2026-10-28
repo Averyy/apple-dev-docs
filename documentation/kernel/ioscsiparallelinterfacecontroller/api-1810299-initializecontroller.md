@@ -12,11 +12,11 @@ virtual bool InitializeController (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 return true means that initialization was successful.
 
-#### Overview
+## Overview
 
 It is guaranteed that the InitializeController() will only be called once per instantiation. The InitializeController() methods allows the subclass driver to do all the necessary initialization required by the hardware before it is able to accept requests to execute. All necessary allocation of resources should be made during this method call. This is the first method that will be called in the subclass.
 

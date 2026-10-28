@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatMake(SPPoint3DFloat origin, SPVector3DFloat direction);
 ```
 
-#### Return Value
+## Return Value
 
 A new ray stucture.
 
-#### Discussion
+## Discussion
 
 Returns a ray at the specified origin.
 

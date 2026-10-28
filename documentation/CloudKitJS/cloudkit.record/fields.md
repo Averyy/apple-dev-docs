@@ -15,7 +15,7 @@ Names of the fields or field-value pairs.
 attribute Object<string, CloudKit.RecordField> fields;
 ```
 
-#### Discussion
+## Discussion
 
 For details see [CloudKit JS Data Types](../cloudkit-js-data-types.md).
 

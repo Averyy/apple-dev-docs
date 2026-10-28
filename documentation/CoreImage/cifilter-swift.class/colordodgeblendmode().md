@@ -24,11 +24,11 @@ class func colorDodgeBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) colorDodgeBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color-dodge blend mode filter to an image. The effect divides the background image color values by the inverted color values of the input image. The effect then decreases contrast between the input image and the background image.
 

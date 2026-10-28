@@ -22,7 +22,7 @@ var home: HMHome { get }
 @property (nonatomic, strong, readonly) HMHome * home;
 ```
 
-#### Discussion
+## Discussion
 
 Call this home’s [`addAndSetupAccessories(with:completionHandler:)`](../hmhome/addandsetupaccessories%28with,completionhandler%29.md) method to fulfill the request after constructing the setup payload.
 

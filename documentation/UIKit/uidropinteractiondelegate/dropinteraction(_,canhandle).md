@@ -26,11 +26,11 @@ optional func dropInteraction(_ interaction: UIDropInteraction, canHandle sessio
 
 - [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the interaction supports the drag items in the sessions; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Returning [`true`](../../Swift/true.md) doesn’t mean the interaction will accept the drop. Instead, it tells the system that the interaction has interest in, and can handle, the drop session.
 

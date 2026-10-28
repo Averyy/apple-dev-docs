@@ -24,7 +24,7 @@ var sender: Any? { get }
 @property (nonatomic, readonly, nullable) id sender;
 ```
 
-#### Discussion
+## Discussion
 
 The system populates this property during the execution of the menu element’s action (its handler or selector).
 

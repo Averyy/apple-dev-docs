@@ -19,7 +19,7 @@ func setSelectedFont(_ fontObj: NSFont, isMultiple flag: Bool)
 - (void) setSelectedFont:(NSFont *) fontObj isMultiple:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 An object that manipulates fonts should invoke this method whenever it becomes first responder and whenever its selection changes. It shouldn’t invoke this method in the process of handling a [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md) message, as this causes the font manager to lose the information necessary to effect the change. After all fonts have been converted, the font manager itself records the new selected font.
 

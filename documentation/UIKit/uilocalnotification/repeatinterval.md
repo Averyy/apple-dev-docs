@@ -24,7 +24,7 @@ var repeatInterval: NSCalendar.Unit { get set }
 @property (nonatomic) NSCalendarUnit repeatInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If you assign a calendar unit such as weekly ([`weekOfYear`](../../Foundation/nscalendar/unit/weekofyear.md)) or yearly ([`year`](../../Foundation/nscalendar/unit/year.md)), the system reschedules the notification for delivery at the specified interval. Note that intervals of less than one minute are not supported. The default value is 0, which means that the system fires the notification once and then discards it.
 

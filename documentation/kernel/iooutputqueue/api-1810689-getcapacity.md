@@ -11,11 +11,11 @@ Gets the number of packets that the queue can hold.
 virtual UInt32 getCapacity() const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current queue capacity.
 
-#### Overview
+## Overview
 
 The queue will begin to drop incoming packets when the size of queue reaches its capacity.
 

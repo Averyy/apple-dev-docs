@@ -20,11 +20,11 @@ Creates an empty, invalid column used to remove an existing column from a data t
 init()
 ```
 
-#### Return Value
+## Return Value
 
 An empty, invalid column.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an empty column that, when assigned to the name of an existing column within a data table, will remove that column from the table.
 

@@ -22,7 +22,7 @@ static let `default`: LevelOfDetail
 
 - [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
-#### Discussion
+## Discussion
 
 This suggests the app should lay out its content and show a default amount of information.
 

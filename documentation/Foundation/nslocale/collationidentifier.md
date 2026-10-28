@@ -25,7 +25,7 @@ var collationIdentifier: String? { get }
 @property (copy, readonly, nullable) NSString * collationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Example collation identifiers include `"phonebook"` and `"pinyin"`.
 

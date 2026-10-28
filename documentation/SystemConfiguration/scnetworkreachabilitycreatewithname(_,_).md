@@ -24,11 +24,11 @@ func SCNetworkReachabilityCreateWithName(_ allocator: CFAllocator?, _ nodename: 
 SCNetworkReachabilityRefSCNetworkReachabilityCreateWithName(CFAllocatorRef allocator, const char *nodename);
 ```
 
-#### Return Value
+## Return Value
 
 A new immutable reachability reference. You must release the returned value.
 
-#### Discussion
+## Discussion
 
 You can use the reachability reference returned by this function to monitor the reachability of the target host.
 

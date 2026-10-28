@@ -20,7 +20,7 @@ A component that controls localized physics simulations.
 struct PhysicsSimulationComponent
 ```
 
-#### Overview
+## Overview
 
 Simulate local physics by adding a [`PhysicsSimulationComponent`](./physicssimulationcomponent.md) to an entity. The component gives your app the ability to customize the physics simulation by configuring its properties, such as [`gravity`](./physicssimulationcomponent/gravity.md) and [`collisionOptions`](./physicssimulationcomponent/collisionoptions-swift.property.md).
 

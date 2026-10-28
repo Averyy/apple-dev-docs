@@ -22,11 +22,11 @@ Returns a new shape with filled regions from this shape that are not in the give
 nonisolated func subtracting<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A new shape.
 
-#### Discussion
+## Discussion
 
 The filled region of the resulting shape is the filled region of this shape with the filled region `other` removed from it.
 

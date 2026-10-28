@@ -24,7 +24,7 @@ var includeAllBurstAssets: Bool { get set }
 @property (nonatomic, assign) BOOL includeAllBurstAssets;
 ```
 
-#### Discussion
+## Discussion
 
 When the user takes a sequence of photos in burst mode with the Camera app (on supported devices), the Photos app user interface groups the resulting assets together and allows the user to select favorite members of the sequence. Photos also automatically marks members of the sequence as potential user favorites.
 

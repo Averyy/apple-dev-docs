@@ -16,7 +16,7 @@ Defines an opaque reference to a converter object.
 typedef struct OpaqueTECObjectRef *TECObjectRef;
 ```
 
-#### Discussion
+## Discussion
 
 When making a text conversion, the Text Encoding Converter requires a reference to a converter object that indicates how to accomplish the conversion. Functions, such as [`TECCreateConverter`](./api-1571815-teccreateconverter.md), that create a converter object return this reference, which you can then pass to other functions when converting text. A converter object reference is defined by the `TECObjectRef` data type. 
 

@@ -21,7 +21,7 @@ Fixed size collection of sample information.
 struct SamplePropertiesCollection
 ```
 
-#### Overview
+## Overview
 
 This collection contains one element for each sample in the sample buffer. The size of collection is fixed to the number of samples in a sample buffer. Convenience static methods are available on timings & sizes to create this collection by specifying just one value.
 

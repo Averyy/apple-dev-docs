@@ -22,7 +22,7 @@ func present(animated: Bool, completionHandler completion: UIPrintInteractionCon
 - (BOOL) presentAnimated:(BOOL) animated completionHandler:(UIPrintInteractionCompletionHandler) completion;
 ```
 
-#### Discussion
+## Discussion
 
 It is valid to call this method for applications on iPhone and iPod touch devices. Calling this method on an iPad with `animated` set to [`true`](../../Swift/true.md) causes the printing options view to animate from the window frame.
 

@@ -25,7 +25,7 @@ var speed: Float { get set }
 @property float speed;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if `speed` is 2.0 local time progresses twice as fast as parent time. Defaults to 1.0.
 

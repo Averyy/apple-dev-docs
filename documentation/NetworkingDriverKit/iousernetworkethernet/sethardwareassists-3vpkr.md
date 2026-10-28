@@ -13,11 +13,11 @@
 virtual IOReturn setHardwareAssists(uint32_t hardwareAssists, uint32_t hardwareAssistsMask);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error otherwise.
 
-#### Discussion
+## Discussion
 
 Set the stack requested hardware assists.
 

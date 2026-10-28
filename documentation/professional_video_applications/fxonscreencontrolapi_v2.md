@@ -19,7 +19,7 @@ protocol FxOnScreenControlAPI_v2 : FxOnScreenControlAPI
 @protocol FxOnScreenControlAPI_v2 <FxOnScreenControlAPI>
 ```
 
-#### Overview
+## Overview
 
 This protocol inherits from, and expands on, the `FxOnScreenControlAPI` protocol It can retrieve information about the canvas, such as its pixel aspect ratio or its zoom level so that a plug-in can draw its controls at the appropriate scale. As with the `FxOnScreenControlAPI` protocol, this aids in allowing the user to directly manipulate a plug-in’s parameters.
 

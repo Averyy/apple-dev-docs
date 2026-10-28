@@ -20,7 +20,7 @@ var activeCompressionOptions: NSUserInterfaceCompressionOptions { get }
 @property (copy, readonly) NSUserInterfaceCompressionOptions * activeCompressionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Only compression options that have been applied and are actively being respected are returned. For more information about managing button sizes when space is restriced, see [`NSUserInterfaceCompressionOptions`](../nsuserinterfacecompressionoptions.md).
 

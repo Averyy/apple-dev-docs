@@ -19,7 +19,7 @@ case raised
 NSBackgroundStyleRaised
 ```
 
-#### Discussion
+## Discussion
 
 You might need to inset the cell’s content to achieve this effect.
 

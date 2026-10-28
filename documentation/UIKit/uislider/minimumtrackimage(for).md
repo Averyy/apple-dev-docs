@@ -22,7 +22,7 @@ func minimumTrackImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) minimumTrackImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum track image associated with the specified state, or `nil` if no image has been set. This method might also return `nil` if you specify multiple control states in the `state` parameter. For a description of track images, see [Customize the slider’s appearance](../uislider.md#Customize-the-sliders-appearance).
 

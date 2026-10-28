@@ -25,7 +25,7 @@ func removeFromParentNode()
 - (void) removeFromParentNode;
 ```
 
-#### Discussion
+## Discussion
 
 Removing nodes from the node hierarchy serves two purposes. Nodes own their contents (child nodes or attached lights, geometries, and other objects), so deallocating unneeded nodes can reduce memory usage. Additionally, SceneKit does more work at rendering time with a large, complex node hierarchy, so removing nodes whose contents you don’t need to display can improve rendering performance.
 

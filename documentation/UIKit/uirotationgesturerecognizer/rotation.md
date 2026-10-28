@@ -26,7 +26,7 @@ var rotation: CGFloat { get set }
 
 - [Handling rotation gestures](../handling-rotation-gestures.md)
 
-#### Discussion
+## Discussion
 
 You may set the rotation value to an arbitrary value; however, setting the rotation resets the velocity.
 

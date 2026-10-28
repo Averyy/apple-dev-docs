@@ -25,7 +25,7 @@ let kSecTrustRevocationValidUntilDate: CFString
 extern CFStringRef const kSecTrustRevocationValidUntilDate;
 ```
 
-#### Discussion
+## Discussion
 
 This key is only present if the [`kSecTrustRevocationChecked`](./ksectrustrevocationchecked.md) key has a value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md). The value is a [`CFDate`](../CoreFoundation/cfdate.md) representing the earliest date at which the revocation information for one of the certificates in this chain might change.
 

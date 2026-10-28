@@ -16,11 +16,11 @@ Returns the age of the graph in seconds.
 float graph::age()
 ```
 
-#### Return Value
+## Return Value
 
 The age of the graph in seconds
 
-#### Discussion
+## Discussion
 
 The age represents the total elapsed time since the graph was created or reset. This value continuously increases and is useful for time-based animations and effects.
 

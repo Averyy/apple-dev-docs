@@ -20,7 +20,7 @@ func duplicate(_ sender: Any?)
 - (void) duplicateDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method merely invokes `[self duplicateDocumentWithDelegate:nil didDuplicateSelector:NULL contextInfo:NULL]`.
 

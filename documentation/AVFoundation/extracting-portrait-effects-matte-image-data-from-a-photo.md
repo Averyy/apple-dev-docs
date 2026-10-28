@@ -5,13 +5,13 @@
 
 Check for portrait effects matte metadata in existing images.
 
-#### Overview
+## Overview
 
 The portrait effects matte is stored in the image file alongside the depth data auxiliary image. You can load, view, and edit the portrait effects matte as a high-level object called an [`AVPortraitEffectsMatte`](./avportraiteffectsmatte.md), analogous to [`AVDepthData`](./avdepthdata.md). This mirrors traditional depth map access using [`AVDepthData`](./avdepthdata.md) in its technique to get the elementary auxiliary image bits out of the file.
 
 ![Juxtaposition of the depth map and portrait effects matte of a photo showing a girl holding a flower.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3030225@2x.png)
 
-##### Load and view a matting image from file
+### Load and view a matting image from file
 
 Load the portrait effects matte by using [Image I/O](../ImageIO/ImageIO.md) to extract an auxiliary image of type [`kCGImageAuxiliaryDataTypePortraitEffectsMatte`](../ImageIO/kcgimageauxiliarydatatypeportraiteffectsmatte.md). Convert this auxiliary image to an auxiliary information dictionary, which contains the matte as metadata of class [`CGImageMetadata`](../ImageIO/cgimagemetadata.md). Generate the portrait effects matte object, [`AVPortraitEffectsMatte`](./avportraiteffectsmatte.md), by passing the dictionary to [`init(fromDictionaryRepresentation:)`](./avportraiteffectsmatte/init%28fromdictionaryrepresentation%29.md). From this object, you can generate a [`CIImage`](../CoreImage/ciimage.md) object to bring the image into viewable forms, like [`UIImage`](../UIKit/uiimage.md).
 

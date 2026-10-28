@@ -19,7 +19,7 @@ class let fontSetChangedNotification: NSNotification.Name
 extern NSNotificationName NSFontSetChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To observe this notification using Swift concurrency, use [`NSFont.FontSetChangedMessage`](./fontsetchangedmessage.md).
 

@@ -17,11 +17,11 @@ Promise<CloudKit.RecordZoneChangesResponse, CloudKit.CKError> fetchRecordZoneCha
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.RecordZoneChangesResponse`](../cloudkit.recordzonechangesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use the [`fetchDatabaseChanges`](./fetchdatabasechanges.md) method to get the zones that contain changed records.
 

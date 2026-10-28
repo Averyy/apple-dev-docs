@@ -21,7 +21,7 @@ A Boolean value that indicates whether to write a header with the column names.
 var includesHeader: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `true`.
 

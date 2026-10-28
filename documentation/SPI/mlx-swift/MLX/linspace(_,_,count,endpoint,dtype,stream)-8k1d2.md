@@ -17,7 +17,7 @@ Generate `count` evenly spaced numbers over interval `[start, stop]`.
 func linspace<T>(_ start: T, _ stop: T, count: Int = 50, endpoint: Bool = true, dtype: DType? = nil, stream: StreamOrDevice = .default) -> MLXArray where T : HasDType, T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 The result dtype follows the bounds (`Float` -> `float32`, `Float16` -> `float16`) except that `Double` produces `float32`, matching [`MLXArray`](./mlxarray.md) and python’s `mx.linspace` – `float64` is not supported on the GPU.  Pass `dtype:` to be explicit.
 
@@ -26,7 +26,7 @@ The result dtype follows the bounds (`Float` -> `float32`, `Float16` -> `float16
 let r = MLXArray.linspace(0.0, 1.0)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 - [`linspace(_:_:count:endpoint:dtype:stream:)`](./linspace%28_,_,count,endpoint,dtype,stream%29-8k1d2.md)

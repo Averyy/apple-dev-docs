@@ -20,7 +20,7 @@ An operation that retrieves the value in the given column that’s in the same r
 case argmax(outputColumn: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use this operation to find a value in the given `outputColumn` that’s in the same row as the maximum value in the aggregator’s column. For example, take the following data table of drink ratings.
 

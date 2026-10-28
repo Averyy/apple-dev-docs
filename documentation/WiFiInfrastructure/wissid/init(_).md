@@ -17,11 +17,11 @@ Creates an SSID from raw binary data.
 init?(_ ssid: Data)
 ```
 
-#### Return Value
+## Return Value
 
 A new SSID, or `nil`if the data length is invalid.
 
-#### Discussion
+## Discussion
 
 Use this initializer when working with SSID data received from Wi-Fi enabled accessories. Valid SSIDs conform to Wi-Fi standard length requirements.
 

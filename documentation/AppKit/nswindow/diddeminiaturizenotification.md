@@ -19,7 +19,7 @@ class let didDeminiaturizeNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidDeminiaturizeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that’s no longer minimized. This notification doesn’t contain a `userInfo` dictionary.
 

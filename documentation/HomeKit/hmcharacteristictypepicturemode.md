@@ -24,7 +24,7 @@ let HMCharacteristicTypePictureMode: String
 extern NSString * const HMCharacteristicTypePictureMode;
 ```
 
-#### Overview
+## Overview
 
 The corresponding value is one of the constants in the [`HMCharacteristicValuePictureMode`](./hmcharacteristicvaluepicturemode.md) enumeration.
 

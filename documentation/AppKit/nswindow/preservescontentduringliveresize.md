@@ -19,7 +19,7 @@ var preservesContentDuringLiveResize: Bool { get set }
 @property BOOL preservesContentDuringLiveResize;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window tries to optimize live resize operations by preserving the content of views that have not moved; otherwise, [`false`](../../Swift/false.md). By default, live-resize optimization is turned on.
 

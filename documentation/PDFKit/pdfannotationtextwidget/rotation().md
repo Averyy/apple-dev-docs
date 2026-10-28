@@ -19,11 +19,11 @@ func rotation() -> Int
 - (NSInteger) rotation;
 ```
 
-#### Return Value
+## Return Value
 
 The rotation angle of the annotation text field in degrees.
 
-#### Discussion
+## Discussion
 
 Note that the rotation value is a positive multiple of 90, such as 0, 90, 180, or 270. The rotation of annotation text fields with negative rotation is converted to a corresponding positive rotation. For example, -90 is changed to 270.
 

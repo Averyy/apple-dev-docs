@@ -23,7 +23,7 @@ var kAudioSessionCategory_MediaPlayback: Int { get }
 kAudioSessionCategory_MediaPlayback
 ```
 
-#### Discussion
+## Discussion
 
 When using this category, your app audio continues with the Silent switch set to silent or when the screen locks. (The switch is called the *Ring/Silent switch* on iPhone.)
 

@@ -24,7 +24,7 @@ The string representation of the subscription offer period applied to the next b
 var offerPeriodStringRepresentation: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is present only for subscriptions that include an offer.
 

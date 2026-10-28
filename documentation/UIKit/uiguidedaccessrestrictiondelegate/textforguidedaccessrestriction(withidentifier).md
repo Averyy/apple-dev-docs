@@ -24,7 +24,7 @@ func textForGuidedAccessRestriction(withIdentifier restrictionIdentifier: String
 - (NSString *) textForGuidedAccessRestrictionWithIdentifier:(NSString *) restrictionIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A localized, human-readable string that succinctly describes the restriction for the provided identifier.
 

@@ -5,17 +5,17 @@
 
 Released September 14, 2026 — 27.0 (20625.1.29)
 
-#### Overview
+## Overview
 
 Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, and macOS Sequoia.
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Added support for the `ariaNotify` API, allowing web developers to programmatically make screen reader announcements. (166338108)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where calling `speechSynthesis.cancel()` removed utterances queued by subsequent `speechSynthesis.speak()` calls. (46151521)
 - Fixed an issue where SVG `<use>` elements referencing `<symbol>` elements inside an `<img>` were incorrectly included as unnamed images in VoiceOver’s Images rotor. (98999595)
@@ -50,21 +50,21 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed VoiceOver not announcing the selected state of the day-of-month button when configuring a monthly notification.  (180294912)
 - Fixed stale `aria-labelledby` when the referenced element dynamically changes its `aria-label`. (180319221)
 
-##### Animations
+### Animations
 
-###### New Features
+#### New Features
 
 - Added the `animation` property to `AnimationEvent` and `TransitionEvent` interfaces. (176527591)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `animation-fill-mode` did not correctly apply viewport-based units after the viewport was resized. (80075191)
 - Fixed an issue where `!important` declarations did not override CSS animation values when CSS transitions were also running on the same property. (174367827)
 - Fixed an issue where identity matrix decomposition generated invalid quaternions, resulting in incorrect transform animations. (174813328)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for `contain: style` applying to CSS quote counters, as specified in CSS Containment Level 2. (84758186)
 - Added support for the case-sensitive modifier `s` in CSS attribute selectors. (126331481)
@@ -82,7 +82,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Added support for forwarding missing color components when interpolating between analogous color spaces. (180239320)
 - Added support for the `no-clamp` option on the CSS `progress()` function. (180473472)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `-webkit-text-fill-color` incorrectly overrode `text-decoration-color`. (47010945)
 - Fixed `shape-outside` computing incorrect text wrapping in RTL writing modes. (56890238)
@@ -283,25 +283,25 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed navigating away from a render-blocked document before its first rendering opportunity incorrectly firing `pagereveal` and starting an outbound cross-document view transition. (181191512)
 - Fixed `anchor-center` in vertical writing modes not being scroll-adjusted along the block axis. (181413103)
 
-##### Canvas
+### Canvas
 
-###### New Features
+#### New Features
 
 - Made the radii argument of `CanvasPath.roundRect()` optional. (177944903)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where a 2D canvas element unnecessarily forced a compositing layer. (172864747)
 - Fixed canvas 2D context to set the `origin-clean` flag when reset. (177858398)
 - Fixed canvas `fillText` with `textAlign=center` misplacing complex-shaped text. (178682402)
 
-##### Editing
+### Editing
 
-###### New Features
+#### New Features
 
 - Added menu items to convert editable text between Simplified and Traditional Chinese characters in the “Transformations” submenu. (156354464)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where characters styled with `::first-letter` were not selectable. (5688237)
 - Fixed an issue where explicitly setting a font size that matched a legacy `<font>` size would be incorrectly substituted with the legacy size, causing inconsistent rendering across different default font size configurations. (15292320)
@@ -323,25 +323,25 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed vertical caret movement in editable content ignoring the requested editable-type parameter. (181000174)
 - Fixed the page scrolling on its own while adjusting a text selection inside a fixed-position element, such as a search field pinned to the top of the page. (182770935)
 
-##### Encoding
+### Encoding
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where CJK encoding state was not reset appropriately during text decoding. (174649963)
 
-##### Fonts
+### Fonts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where synthetic bold incorrectly added advance width to zero-advance glyphs. (179418570)
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added the customizable `<select>` element, allowing custom styling with `appearance: base-select` and custom content with the `<selectedcontent>` HTML element. (170328089)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where keyboard commands such as paste did not work in form fields that restrict input to numbers. (4360235)
 - Fixed an issue where keyboard tabbing position was lost when a focused button became disabled, causing focus to jump to the beginning of the page. (120676409)
@@ -365,16 +365,16 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed the concentric inner-button corner radius on horizontal text form controls incorrectly ignoring the bottom inset. (180869927)
 - Fixed a number of issues with the default styles for customizable `<select>` with `appearance: base-select`, including spacing, borders, `border-radius`, overflow, cursors, `optgroup` styling, picker dialog shadow, and increased contrast colors. (183345556)
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for the `auto` keyword in the `sizes` attribute on `<img>` elements, enabling automatic size calculation based on the rendered layout width. (172827205)
 - Added support for the `shadowrootslotassignment` attribute on declarative shadow roots. (173227340)
 - Added support for `tabindex`, `focus()`, `blur()`, and `autofocus` on MathML elements per the HTML Standard. (176258900)
 - Added support for SVG `<a>` as an argument to `Origin.from()`. (178426374)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where an HTML `map` element without a `name` attribute did not match its associated image using the `id` attribute. (12359382)
 - Fixed sequential focus navigation to skip elements that do not meet the specification’s focusability requirements. (103370883)
@@ -416,17 +416,17 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed an issue where `<link rel=preload as=json>` incorrectly triggered a preload. (179843455)
 - Fixed an issue where the deprecated `align="center"` attribute was not treated as identical to `align="middle"` per spec. (180128710)
 
-###### Deprecations
+#### Deprecations
 
 - Deprecated the `href` attribute on all MathML elements except `<a>`. (173996661)
 
-##### Images
+### Images
 
-###### New Features
+#### New Features
 
 - Added support for applying HDR gain maps to images decoded into accelerated backing stores in the GPU process. (157871315)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where inserting an image with a `srcset` attribute into a dynamically created iframe resulted in an invisible image. (66849050)
 - Fixed `naturalWidth` and `naturalHeight` returning incorrect values for SVG images without intrinsic dimensions. (141196049)
@@ -439,9 +439,9 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed a regression where RGB gain map images were decoded to 8 bits per channel, causing a color shift and incorrect brightness. (179152566)
 - Fixed handling of the gain-map target pixel format when decoding HDR images to fall back safely when the format cannot be parsed. (181180757)
 
-##### JavaScript
+### JavaScript
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed multiple top-level await correctness bugs with a rewrite of the ES module loader for standards compliance. (97370038)
 - Fixed regular expressions in Unicode mode to not count non-capturing groups and modifiers toward the number of available backreferences. (167746769)
@@ -477,15 +477,15 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed `Array.prototype.join` to include prototype elements added during element `toString` invocation. (178055452)
 - Fixed an issue where `Temporal.Instant` operations were not aligned with the spec’s abstract operations. (179844859)
 
-##### MathML
+### MathML
 
-###### New Features
+#### New Features
 
 - Added support for multiple-character operators in MathML. (170907545)
 - Added support for embellished operator detection through `mrow` for underover layout. (173192995)
 - Added support for operator dictionary entries for multi-character operators to align with the MathML Core specification. (176543727)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the MathML operator dictionary to correct the stretchy property for several operators, resolving Web Platform Test failures. (170901728)
 - Fixed an issue where symmetric non-stretchy large operators were not centered around the math axis. (170905663)
@@ -504,15 +504,15 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed MathML operators routed through `MathOperator` being invisible when their glyph only exists in a fallback font. (178096170)
 - Fixed MathML to use MathML Core fallback values for script layout constants. (179177178)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for setting `TextTrackCue.endTime` to `Infinity` to represent an unbounded cue duration. (71042767)
 - Added support for synchronized video playback on displays using genlock on macOS. ([311815@main](https://commits.webkit.org/311815@main), [312166@main](https://commits.webkit.org/312166@main))  (175197574)
 - Added support for overriding color space for hardware video decoders in WebCodecs. (178717498)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `<audio>` and `<video>` controls rendering incorrectly when rotated via CSS transform. (37516619)
 - Fixed an issue where decoding WebM audio files with more than two channels would fail. (82160691)
@@ -576,26 +576,26 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed being unable to enter Picture-in-Picture again after navigating to another video. (182971786)
 - Fixed video showing a black screen while audio continued to play after the video decoder was invalidated. (184041554)
 
-##### Model Element
+### Model Element
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed setting the `entityTransform` on a `<model>` element while the model is unloaded or hidden. (179114750)
 - Fixed `<model>` elements losing gesture interactivity after the model player is reloaded (for example, when the model scrolls out of and back into the viewport). (179249565)
 
-##### Navigation
+### Navigation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a `<meta http-equiv="refresh">` to a URL differing only in fragment identifier being incorrectly treated as a page reload. (176933795)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Added support for secure cookies on loopback hosts. (137604100)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed redirects to `data:` URLs to be blocked for subresources such as images and scripts, aligning with the Fetch specification. (74165956)
 - Fixed `XMLHttpRequest` incorrectly dropping the request body during redirects. (98459882)
@@ -615,41 +615,41 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed an issue where the HTTP cache did not store responses with explicit freshness for all status codes. (179871690)
 - Fixed URL path separators being encoded as `%2F` following a percent-encoded Armenian path segment. (180067095)
 
-##### PDF
+### PDF
 
-###### Known Issues
+#### Known Issues
 
 - Fixed PDF scrollbars to adapt to dark appearance. (174763396)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where panning a zoomed-in PDF on iOS would frequently rubber band back to the starting position. (156854435)
 - Fixed broken text underlines in PDFs created by `WKWebView`’s PDF export API. (180631575)
 - Fixed only one PDF HUD responding to mouse clicks on pages with multiple embedded PDFs. (183273642)
 
-##### Performance
+### Performance
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an extremely slow page load on iPhone caused by blur filters with large radii (172480480)
 
-##### Printing
+### Printing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where animations were ignored during print, causing missing content on animated pages. (36901701)
 - Fixed an issue where printing light text on a dark background with backgrounds disabled could result in invisible text. (170070133)
 - Fixed a regression where printing a WebView embedded in an enclosing `NSPrintOperation` dropped all text. (174756900)
 
-##### Rendering
+### Rendering
 
-###### New Features
+#### New Features
 
 - Added support for subpixel inline layout, enabling more precise text and inline element positioning. (171835370)
 - Added support for `anchor-valid` and `anchor-visible` as aliases of `anchors-valid` and `anchors-visible` in `position-visibility`. (174438361)
 - Added support for the Dutch IJ digraph in `text-transform: capitalize` and `::first-letter`, correctly titlecasing “ij” to “IJ” at word starts when the content language is Dutch. (175912959)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where table cells with `rowspan` values exceeding the actual number of rows were incorrectly computing heights. (3209126)
 - Fixed changes to a `filter: drop-shadow()` not repainting the area outside the element’s boundaries. (49387957)
@@ -743,14 +743,14 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed an issue where an `<img>` embedding an SVG with a near-integral intrinsic width rendered one device pixel narrower than expected. (180490343)
 - Fixed elements with `filter: drop-shadow()` not being fully repainted when a child is resized. (181284741)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added support for the `lang` and `xml:lang` attribute in SVG. (143751056)
 - Made SVG `<use>` work without specifying a fragment identifier. (148973201)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed SVG applying `text-decoration` to elements with `display: contents`. (85691104)
 - Fixed SVG `<text>` with `textLength` scaling each glyph separately when `x` or `y` is a list. (94161279)
@@ -819,20 +819,20 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed dynamic changes to `orient` and `markerUnits` on `<marker>` not repainting elements that reference it. (181106538)
 - Fixed SVG SMIL `number`, `integer-optional-integer`, `number-optional-number`, and `path` animations to not apply when their `from`, `to`, or `by` values fail to parse. (181308150)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the `SVGLocatable` and `SVGTransformable` interfaces to align with the SVG2 specification. (104668934)
 - Removed the non-standard `nearestViewportElement` and `farthestViewportElement` properties from `SVGGraphicsElement`, aligning with the SVG2 specification. (171262197)
 - Removed the `viewTarget` property from `SVGViewSpec` to align with the SVG2 specification. (172590438)
 - Removed support for the non-standard `glyph-orientation-horizontal` property. (176134352)
 
-##### Scrolling
+### Scrolling
 
-###### New Features
+#### New Features
 
 - Enabled scroll anchoring, which prevents visible jumps in scroll position when content is inserted or removed above the viewport. (171840378)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue on iOS where calling `scrollTo` during a momentum scroll incorrectly interrupted the scroll, ensuring that momentum scrolling continues as expected and smooth scrolling behaves properly. (41949531)
 - Fixed scrolling of the “Add Contacts” drop-down on outlook.live.com by  narrowing the scope of a quirk. (48008837)
@@ -865,9 +865,9 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed CSS scroll snap re-snap to prefer a snap area that contains the focused or fragment-targeted element. (180707984)
 - Fixed the scroll position jumping when a page changes `scroll-padding` while scroll anchoring is active. (183145868)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where Content Security Policy `'self'` did not match script sources in opaque-origin HTTP(S) documents. (178638597)
 - Fixed `<object>` elements that load images being incorrectly blocked by the `img-src` Content Security Policy directive. (178772677)
@@ -878,9 +878,9 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed Content Security Policy parsing to reject trailing characters after the closing quote on `nonce-source` and `hash-source` values. (180903857)
 - Fixed Content Security Policy `trusted-types` expressions to reject trailing characters after keywords and the wildcard. (180973793)
 
-##### Spatial Web
+### Spatial Web
 
-###### New Features
+#### New Features
 
 - Added support for the `<model>` element on iOS, iPadOS, and macOS.  (131735906)
 - Added support for the `<img> controls` attribute on spatial and panorama photos. (138146584)
@@ -889,7 +889,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Added support for tone mapping in the `<model>` element. (175889208)
 - Added support for texture array projection layers in WebXR Layers. (177337571)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed spatial and panoramic image controls to support RTL language layout and localization of type labels. (161690817)
 - Fixed `<model>` elements displaying at 100x the expected size for assets authored in tools that use centimeter units. (167805672)
@@ -900,43 +900,43 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed `XRProjectionLayer` to return correct values for `width`, `height`, and layer count. (178444052)
 - Fixed an issue where transforming the camera instead of the model in a `<model>` element led to undesirable lighting effects. (179522538)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the Spatial Backdrop developer preview in favor of the Immersive API. (160271766)
 
-##### Storage
+### Storage
 
-###### New Features
+#### New Features
 
 - Added support for setting `maxAge` in the Cookie Store API via `cookieStore.set()`. (166301541)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where IndexedDB could incorrectly return a version 0 database after an abort during the initial `onupgradeneeded` event. (176195526)
 - Fixed IndexedDB connections in workers to recover after a network process crash. (177219395)
 - Fixed an issue where IndexedDB transactions could be blocked for an extended period before starting when another page’s transaction was suspended in the background. (178769599)
 
-##### Tables
+### Tables
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue with a collapsed border color mismatch when the table cell has a different writing-mode. (173655092)
 
-##### Text
+### Text
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a line break appearing after a U+201D Right Double Quotation Mark. (177952069)
 
-##### UI Events
+### UI Events
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed boundary events not being dispatched when a hovered element is removed from the DOM, so the Full Screen button on bsky.app no longer remains stuck in a hover state. (176507648)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added `WKWebView` API to enable or disable sending the Global Privacy Control (GPC) HTTP header for outgoing requests. (80500366)
 - Added support for the service worker static routing API.  (157951894)
@@ -945,7 +945,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Added support for `ReadableStream.from()` to create a `ReadableStream` from an async iterable or iterable. (169605740)
 - Added support for transferring `ReadableStream` objects via `postMessage()`. (169950592)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the parent window’s `history.state` being set to `null` when `history.pushState` is called from a child iframe. (50019069)
 - Fixed the Async Clipboard API to request paste access asynchronously. (75969974)
@@ -1032,22 +1032,22 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed `FileReader.readAsText()` ignoring the `charset` parameter of the `Blob`’s MIME type. (180890703)
 - Fixed `DOMMatrix` and `IntersectionObserver` correctly enforcing absolute-length unit requirements when parsing values. (181453666)
 
-##### Web Audio
+### Web Audio
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Web Audio `PannerNode` orientation-only changes not updating the directional cone gain. (181413407)
 
-##### Web Extensions
+### Web Extensions
 
-###### New Features
+#### New Features
 
 - Added support for the `tabId` key in `chrome.windows.create()`.  (60095045)
 - Added support for `runtime.getDocumentId()` web extension API. (168060269)
 - Added reporting of uncaught JavaScript exceptions and unhandled promise rejections in Web Extension scripts. (174354070)
 - Added support for propagating user gestures through `sendMessage()`, `connect()`, `postMessage()`, and `executeScript()` APIs, enabling extensions to perform gesture-requiring actions like media playback. (175797617)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed cross-origin `XMLHttpRequest` from a Safari Web Extension to no longer trigger an additional permissions request. (154866064)
 - Fixed `browser.i18n.getMessage()` to correctly substitute named placeholders when they appear adjacent to non-space characters. (169146196)
@@ -1055,9 +1055,9 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed an issue where web extension service worker registration database files accumulated on each Safari launch, causing performance degradation. (175484888)
 - Fixed loading Web Extensions breaking Cloudflare bot challenge pages. (176618014)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added color contrast information within the Color Picker in Web Inspector. (113887185)
 - Added support to show each individual request when there are redirects in the Network tab. (152606018)
@@ -1068,7 +1068,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Added unique colors for style events such as “Style Invalidated” and “Style Recalculated” in the Timeline view to distinguish them from layout events. (176770197)
 - Added a separate column to show the node associated with layout and rendering events. (177618501)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed hovering over a node in a preview for a collection to highlight the node in the inspected page. (20341722)
 - Fixed showing ES2022 class private fields, methods, and accessors when inspecting object instances in the Console. (88527162)
@@ -1121,9 +1121,9 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed `Network.setExtraHTTPHeaders` to replace previously set headers instead of accumulating them. (181282814)
 - Fixed zero-width joiners and other hidden Unicode characters not being displayed in text nodes. (182968570)
 
-##### Web Views
+### Web Views
 
-###### New Features
+#### New Features
 
 - Added `WKSerializedNode` as a public API, enabling applications to clone DOM nodes including shadow roots between different `WKWebView` instances. (166552298)
 - Added `WKJSHandle` as a public API, enabling applications to create and manipulate JavaScript object references across content worlds. (166552556)
@@ -1135,45 +1135,45 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Added `getCookiesForURL:` to `WKHTTPCookieStore` as public API, allowing applications to efficiently retrieve cookies matching a specific URL instead of fetching the entire cookie store. (168165666)
 - Added the ability to clear a content world via `WKWebView`. (176381093)
 
-##### WebAssembly
+### WebAssembly
 
-###### New Features
+#### New Features
 
 - Added support for WebAssembly JavaScript Promise Integration (JSPI). (170260385)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `WebAssembly.Suspending` and `WebAssembly.SuspendError` to be data properties instead of getter functions, aligning with other WebAssembly attributes like `WebAssembly.Module`. (170155726)
 - Fixed incorrect `IntegerOverflow` exceptions thrown by `i32.rem_s`, `i64.rem_s`, `i32.div_u`, `i64.div_u`, `i32.rem_u`, and `i64.rem_u` when both operands are constants. (175122462)
 - Fixed a regression where `RegisterSet::normalizeWidths()` lost vector-width information, causing v128 argument corruption in WebAssembly SIMD thunks. (176035764)
 
-##### WebDriver
+### WebDriver
 
-###### New Features
+#### New Features
 
 - Added WebDriver support for the Digital Credentials API, including commands to simulate wallet payloads, indefinite waits, and user rejection. (168941907)
 - Allow your agent to connect to a Safari browser for development and debugging via the Safari MCP server.  (176038457)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the WebDriver full page screenshot was clipped to the viewport dimensions instead of the full page. (179840186)
 
-##### WebGL
+### WebGL
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a regression where a WebGL canvas was filled with opaque content that hid stacked canvases beneath it. (175352260)
 - Fixed `compressedTexImage` not validating whether the compressed texture format extension has been enabled. (175652171)
 - Fixed some `texImage` functions reporting errors with incorrect function names. (175652807)
 - Fixed some WebGL context state properties not being correctly reset on context loss. (176190808)
 
-##### WebGPU
+### WebGPU
 
-###### New Features
+#### New Features
 
 - Added support for the `clip_distances` builtin value in WGSL shaders. (129202606)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `GPUDevice.onuncapturederror` event handler attribute not working. (149577124)
 - Fixed: Restored `maxStorageBuffersInFragmentStage` and related WebGPU limits. (160800947)
@@ -1182,16 +1182,16 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed WGSL parser handling of identifiers per the latest specification. (177008615)
 - Fixed WGSL validation of binary expressions involving short-circuit and/or operators. (177012957)
 
-##### WebRTC
+### WebRTC
 
-###### New Features
+#### New Features
 
 - Added support for the `targetLatency` attribute in WebRTC. (168225793)
 - Added support for the `RTCRtpCodec` dictionary and related constructs. (172745579)
 - Added support for `RTCRtpReceiver.jitterBufferTarget`. (173676035)
 - Added support for video source `width` and `height` in RTC stats. (173677615)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where I420 BT709 `VideoFrame` was encoded in an incorrect color space when encoding to VP9. (169425608)
 - Fixed an issue where `RTCPeerConnection.addIceCandidate()` did not reject when the connection was already closed. (170470988)

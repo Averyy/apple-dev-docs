@@ -24,7 +24,7 @@ typealias AudioServicesSystemSoundCompletionProc = (SystemSoundID, UnsafeMutable
 typedef void (*)(unsigned int, void *) AudioServicesSystemSoundCompletionProc;
 ```
 
-#### Discussion
+## Discussion
 
 Because a system sound may play for up to 30 seconds, the [`AudioServicesPlaySystemSound(_:)`](./audioservicesplaysystemsound%28_%29.md) function executes asynchronously (that is, it returns immediately), and calls this function when the sound finishes playing. You can use this callback, for example, to help you avoid playing a second sound while a first sound is still playing.
 

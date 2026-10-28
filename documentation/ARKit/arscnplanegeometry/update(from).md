@@ -20,7 +20,7 @@ func update(from planeGeometry: ARPlaneGeometry)
 - (void) updateFromPlaneGeometry:(ARPlaneGeometry *) planeGeometry;
 ```
 
-#### Discussion
+## Discussion
 
 To update a SceneKit model of a plane actively tracked in an AR session, call this method in your [`ARSCNViewDelegate`](../arscnviewdelegate.md) object’s [`renderer(_:didUpdate:for:)`](../arscnviewdelegate/renderer%28_,didupdate,for%29.md) callback, passing the [`geometry`](../arplaneanchor/geometry.md) property from the [`ARPlaneAnchor`](../arplaneanchor.md) object that callback provides.
 

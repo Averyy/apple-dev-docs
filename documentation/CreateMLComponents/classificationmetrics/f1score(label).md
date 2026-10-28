@@ -23,11 +23,11 @@ func f1Score(label: Label) -> Double
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The F1 score for the given label.
 
-#### Discussion
+## Discussion
 
 The balanced F-score, or F1 score, is computed as the harmonic mean of the precision and recall.
 

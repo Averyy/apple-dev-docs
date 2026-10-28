@@ -24,7 +24,7 @@ nonisolated
 func mask<Mask>(_ mask: Mask) -> some View where Mask : View
 ```
 
-#### Discussion
+## Discussion
 
 Use `mask(_:)` when you want to apply the alpha (opacity) value of another view to the current view.
 

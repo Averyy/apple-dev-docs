@@ -23,7 +23,7 @@ var focusPointOfInterest: CGPoint { get set }
 @property (nonatomic) CGPoint focusPointOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a value for this property doesn’t initiate a focusing operation. To focus the camera on a point of interest, first set this property’s value, then set the [`focusMode`](./focusmode-swift.property.md) property to [`AVCaptureDevice.FocusMode.autoFocus`](./focusmode-swift.enum/autofocus.md) or [`AVCaptureDevice.FocusMode.continuousAutoFocus`](./focusmode-swift.enum/continuousautofocus.md).
 

@@ -23,11 +23,11 @@ func firstIndex(of member: Element) -> Set<Element>.Index?
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The index of `member` if it exists in the set; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

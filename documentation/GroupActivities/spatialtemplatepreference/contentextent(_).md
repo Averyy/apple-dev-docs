@@ -19,7 +19,7 @@ func contentExtent(_ contentExtent: CGFloat) -> SpatialTemplatePreference
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 Use this modifier to set the distance between your app’s content and the participants in a shared context. You might use this modifier if the intrinsic size of your content doesn’t represent an optimal viewing distance. Specify the new size in points.
 

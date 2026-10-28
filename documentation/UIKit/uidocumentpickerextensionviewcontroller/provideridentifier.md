@@ -24,7 +24,7 @@ var providerIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * providerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Both the Document Picker View Controller extension and the File Provider extension should pass this identifier to their file coordinator’s `setPurposeIdentifier:` method. This approach helps coordinate the read and write operations between the two extensions, preventing possible deadlocks.
 

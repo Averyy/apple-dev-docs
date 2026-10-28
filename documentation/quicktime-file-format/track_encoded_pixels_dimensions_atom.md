@@ -6,7 +6,7 @@
 
 An atom that carries the pixel dimensions of the track’s encoded pixels.
 
-#### Overview
+## Overview
 
 The type of the track encoded pixels dimensions atom is `‘enof’`.
 

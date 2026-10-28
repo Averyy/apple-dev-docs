@@ -19,7 +19,7 @@ func performClick(_ sender: Any?)
 - (void) performClick:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the [`performClick(_:)`](../nscell/performclick%28_%29.md) method of the receiver’s cell with the sender being the control itself. This method raises an exception if the action message cannot be successfully sent.
 

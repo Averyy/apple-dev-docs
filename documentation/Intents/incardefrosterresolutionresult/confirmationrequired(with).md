@@ -24,11 +24,11 @@ class func confirmationRequired(with carDefrosterToConfirm: INCarDefroster) -> S
 + (instancetype) confirmationRequiredWithCarDefrosterToConfirm:(INCarDefroster) carDefrosterToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarDefrosterResolutionResult`](../incardefrosterresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to an equivalent defroster and want the user to confirm the replacement value before proceeding.
 

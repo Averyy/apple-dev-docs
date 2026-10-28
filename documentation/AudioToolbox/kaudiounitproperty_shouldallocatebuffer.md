@@ -24,7 +24,7 @@ var kAudioUnitProperty_ShouldAllocateBuffer: AudioUnitPropertyID { get }
 kAudioUnitProperty_ShouldAllocateBuffer
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `true`, which means that the associated audio unit element creates a buffer for rendering into.
 

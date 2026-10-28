@@ -20,7 +20,7 @@ An object that manages a visual indicator that keeps your app in use in the back
 @interface CLBackgroundActivitySession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use `CLBackgroundActivitySession` to start a background activity session that allows a when-in-use authorized app to receive location updates or monitoring events.
 

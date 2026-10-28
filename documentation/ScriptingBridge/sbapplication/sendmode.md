@@ -20,7 +20,7 @@ var sendMode: AESendMode { get set }
 @property AESendMode sendMode;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Apple Event Manager](../../applicationservices/apple_event_manager.md).
 

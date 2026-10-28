@@ -25,7 +25,7 @@ var playoutLimit: CMTime { get set }
 @property (nonatomic, readonly) CMTime playoutLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be any positive numeric value, or [`invalid`](../../CoreMedia/cmtime/invalid.md) (the default) which indicates no limit.
 

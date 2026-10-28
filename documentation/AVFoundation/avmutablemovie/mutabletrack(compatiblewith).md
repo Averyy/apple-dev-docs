@@ -24,11 +24,11 @@ func mutableTrack(compatibleWith track: AVAssetTrack) -> AVMutableMovieTrack?
 - (AVMutableMovieTrack *) mutableTrackCompatibleWithTrack:(AVAssetTrack *) track;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVMutableMovieTrack`](../avmutablemovietrack.md) object that can accommodate the time range insertion. Returns nil when no track is available.
 
-#### Discussion
+## Discussion
 
 Keep the number of tracks in a movie to a minimum, corresponding to the number of tracks for which media data must be presented in parallel. If media data of the same type is presented serially, even from multiple assets, a single track of that media type should be used. This method can help the client to identify an existing target track for an insertion.
 

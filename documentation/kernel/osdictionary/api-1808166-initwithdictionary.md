@@ -13,11 +13,11 @@ virtual bool initWithDictionary(
  unsigned int capacity = 0);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success, `false` on failure.
 
-#### Overview
+## Overview
 
 Not for general use. Use the static instance creation method withDictionary instead.
 

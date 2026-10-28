@@ -13,7 +13,7 @@
 kIOVideoControlBaseClassIDFeature = 'ftct'
 ```
 
-#### Discussion
+## Discussion
 
 The class ID that identifies the feature control class which is a subclass of the base control class. Feature controls manipulate various features that might be present on a device, such as hue, saturation, zoom, etc.
 

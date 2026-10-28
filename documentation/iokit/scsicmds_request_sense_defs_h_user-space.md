@@ -5,9 +5,9 @@
 
 This file contains all definitions for the data returned from the REQUEST SENSE (0x03) command and from auto sense on protocols that support it.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <CoreFoundation/CoreFoundation.h>

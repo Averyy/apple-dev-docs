@@ -17,7 +17,7 @@ case terminateLater
 NSTerminateLater
 ```
 
-#### Discussion
+## Discussion
 
 It may be OK to proceed with termination later. Returning this value causes Cocoa to run the run loop in the [`NSModalPanelRunLoopMode`](../../nsmodalpanelrunloopmode.md) until your app subsequently calls [`reply(toApplicationShouldTerminate:)`](../reply%28toapplicationshouldterminate%29.md) with the value [`true`](../../../Swift/true.md) or [`false`](../../../Swift/false.md). This return value is for delegates that need to provide document modal alerts (sheets) in order to decide whether to quit.
 

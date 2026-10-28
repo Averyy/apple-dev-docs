@@ -19,11 +19,11 @@ func InvokeOSLGetMarkTokenUPP(_ dContainerToken: UnsafePointer<AEDesc>!, _ conta
 OSErr InvokeOSLGetMarkTokenUPP(const AEDesc *dContainerToken, DescType containerClass, AEDesc *result, OSLGetMarkTokenUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`OSLGetMarkTokenProcPtr`](./oslgetmarktokenprocptr.md) callback function. 
 

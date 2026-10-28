@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_IssuingDistributionPoints;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

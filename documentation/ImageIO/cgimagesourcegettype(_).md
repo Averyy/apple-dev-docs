@@ -25,11 +25,11 @@ func CGImageSourceGetType(_ isrc: CGImageSource) -> CFString?
 extern CFStringRefCGImageSourceGetType(CGImageSourceRef isrc);
 ```
 
-#### Return Value
+## Return Value
 
 The uniform type identifier of the image source container.
 
-#### Discussion
+## Discussion
 
 The uniform type identifier of the source container can be different from the type of the images in the container. For example, the `.icns` format supports embedded `JPEG2000`. The type of the source container is `"com.apple.icns"`, but type of the images is `JPEG2000`.
 

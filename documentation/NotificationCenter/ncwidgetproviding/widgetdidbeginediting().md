@@ -21,7 +21,7 @@ optional func widgetDidBeginEditing()
 - (void) widgetDidBeginEditing;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be called when [`widgetAllowsEditing`](./widgetallowsediting.md) is [`true`](../../Swift/true.md).
 

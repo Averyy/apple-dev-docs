@@ -18,7 +18,7 @@ A representation of the active tracking session state.
 struct TrackingState
 ```
 
-#### Overview
+## Overview
 
 The active tracking session emits this state 10 times per second.
 

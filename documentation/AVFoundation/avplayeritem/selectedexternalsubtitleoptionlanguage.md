@@ -13,7 +13,7 @@
 @property (nonatomic, copy) NSString * selectedExternalSubtitleOptionLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies BCP 47 language code of the external subtitle option language marked in the user interface.
 

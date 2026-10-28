@@ -18,7 +18,7 @@ The reorderable customization behavior.
 static var reorderable: TabCustomizationBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Items with this behavior can be moved by the user, but cannot be removed.
 

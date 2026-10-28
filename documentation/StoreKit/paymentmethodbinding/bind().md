@@ -18,7 +18,7 @@ Asks the user to confirm whether to add the payment method to their Apple paymen
 func bind() async throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method displays a system prompt that asks users to authenticate with their Apple Account. Call this method only after an explicit user action, like tapping or clicking a button.
 

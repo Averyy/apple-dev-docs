@@ -21,7 +21,7 @@ Populates a double-precision vector with zeros.
 extern void vDSP_vclrD(double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The [`vDSP_vclr`](./vdsp_vclr.md) and [`vDSP_vclrD`](./vdsp_vclrd.md) functions populate a vector with zeros.
 

@@ -15,7 +15,7 @@ An error that indicates the image that’s uploading is invalid.
 object InvalidImageError
 ```
 
-#### Overview
+## Overview
 
 For more information about image requirements, see [`Upload Image`](./upload-image.md).
 

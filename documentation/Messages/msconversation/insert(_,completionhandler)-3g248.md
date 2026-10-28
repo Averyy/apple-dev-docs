@@ -29,7 +29,7 @@ func insert(_ message: MSMessage) async throws
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

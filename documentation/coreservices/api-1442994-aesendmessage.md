@@ -19,17 +19,17 @@ func AESendMessage(_ event: UnsafePointer<AppleEvent>!, _ reply: UnsafeMutablePo
 OSStatus AESendMessage(const AppleEvent *event, AppleEvent *reply, AESendMode sendMode, long timeOutInTicks);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The `AESendMessage` function allows you to send Apple events without linking to the entire Carbon framework, as required by `AESend(_:_:_:_:_:_:_:)`. Linking with Carbon brings in the HIToolbox framework, which requires that your application have a connection to the window server. Daemons and other applications that have no interface but wish to send and receive Apple events can use the following functions for working with Apple events at a lower level: `AESendMessage`, [`AEGetRegisteredMachPort()`](./api-1449736-aegetregisteredmachport.md), [`AEDecodeMessage(_:_:_:)`](./api-1447827-aedecodemessage.md), and [`AEProcessMessage(_:)`](./api-1444387-aeprocessmessage.md). See the descriptions for those functions for more information on when you might use them.
 
 If the target of an event sent with `AESendMessage` is the current process (as specified by using `typeProcessSerialNumber` of `{ 0, kCurrentProcess }` in the Apple event being sent), the Apple event is dispatched directly to the appropriate event handler in your process and not serialized.
 
-##### Special Considerations
+### Special Considerations
 
 The `AESendMessage` function is both asynchronous and thread-safe, so you could, for example, set up a thread to send an Apple event and wait for a reply. If you use threads, you must add a `typeReplyPortAttr` attribute to your event that identifies the Mach port on which to receive the reply.
 

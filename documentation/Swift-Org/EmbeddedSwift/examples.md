@@ -9,7 +9,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Explore complete, step-by-step projects for popular embedded platforms.
 
-#### Overview
+## Overview
 
 These examples walk through complete projects for popular embedded boards, covering everything from basic LED blinking to UART communication, NeoPixel control, and display output. Each example includes the full Swift source code and build instructions, and includes wiring diagrams or schematics where applicable.
 

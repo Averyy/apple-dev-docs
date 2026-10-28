@@ -19,7 +19,7 @@ func indexOfItem(withRepresentedObject object: Any?) -> Int
 - (NSInteger) indexOfItemWithRepresentedObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 The integer index of the menu item or, if no such menu item is in the menu, –1.
 

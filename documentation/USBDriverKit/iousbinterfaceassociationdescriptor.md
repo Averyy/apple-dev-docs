@@ -15,7 +15,7 @@ The USB Interface Association Descriptor.
 struct IOUSBInterfaceAssociationDescriptor;
 ```
 
-#### Overview
+## Overview
 
 This type defines the ECN to the USB 2.0 Spec. See the USB Specification at [http://www.usb.org](http://www.usb.org). USB 3.0 9.6.4: Interface Association.
 

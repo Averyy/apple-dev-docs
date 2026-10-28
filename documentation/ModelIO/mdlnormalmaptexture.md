@@ -24,7 +24,7 @@ class MDLNormalMapTexture
 @interface MDLNormalMapTexture : MDLTexture
 ```
 
-#### Overview
+## Overview
 
 This class examines the shapes of contrasting areas in an input texture to generate a normal map that produces an embossed appearance when rendered with lighting. The figure below shows the normal map generated from an example texture and the effect of using this normal map with lighting in a typical renderer.
 

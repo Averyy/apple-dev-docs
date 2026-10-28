@@ -21,7 +21,7 @@ The closure to run if the app extension’s process exits unexpectedly.
 var onInterruption: () -> Void
 ```
 
-#### Discussion
+## Discussion
 
 Use your closure to respond to the loss of the app extension process. For example, use it to try and reestablish connection to the app extension or to remove the app extension from the list of active extensions.
 

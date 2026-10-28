@@ -21,7 +21,7 @@ Whether the path is in lexical-normal form, that is `.` and `..` components have
 var isLexicallyNormal: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Examples:
 

@@ -22,7 +22,7 @@ var naiRealmNames: [String] { get set }
 @property (copy) NSArray<NSString *> * naiRealmNames;
 ```
 
-#### Discussion
+## Discussion
 
 Each `naiRealmName` string must be a six-digit number.
 

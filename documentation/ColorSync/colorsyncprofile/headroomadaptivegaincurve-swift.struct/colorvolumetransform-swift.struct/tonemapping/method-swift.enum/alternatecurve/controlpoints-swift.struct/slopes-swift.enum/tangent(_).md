@@ -25,7 +25,7 @@ case tangent([Float])
 
 - [Authoring Headroom Adaptive Gain Curve metadata](../../../../../../../../authoring-headroom-adaptive-gain-curve-metadata.md)
 
-#### Discussion
+## Discussion
 
 To have slopes computed automatically, use [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes.interpolate`](./interpolate.md).
 

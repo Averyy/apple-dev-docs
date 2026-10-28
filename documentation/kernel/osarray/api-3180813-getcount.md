@@ -24,7 +24,7 @@ virtual uint32_t getCount(void);
 virtual unsigned int getCount(void);
 ```
 
-#### Return Value
+## Return Value
 
 Count of members in array.
 

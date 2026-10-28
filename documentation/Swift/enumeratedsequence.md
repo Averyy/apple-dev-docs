@@ -22,7 +22,7 @@ An enumeration of the elements of a sequence or collection.
 struct EnumeratedSequence<Base> where Base : Sequence
 ```
 
-#### Overview
+## Overview
 
 `EnumeratedSequence` is a sequence of pairs (*n*, *x*), where *n*s are consecutive `Int` values starting at zero, and *x*s are the elements of a base sequence.
 

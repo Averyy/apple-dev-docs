@@ -25,7 +25,7 @@ func flush()
 extern void CGContextFlush(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, Core Graphics immediately flushes the current drawing to the destination device (for example, a screen). Because the system software flushes a context automatically at the appropriate times, calling this function could have an adverse effect on performance. Under normal conditions, you do not need to call this function.
 

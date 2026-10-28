@@ -19,7 +19,7 @@ An object that defines the specular highlights of an entity.
 struct Specular
 ```
 
-#### Overview
+## Overview
 
 In physically based rendering (PBR), specular highlights primarily come from the object’s [`roughness`](../physicallybasedmaterial/roughness-swift.property.md) value. RealityKit renders materials that have a low roughness value with specular highlights based on the environment, lighting, and shape of the entity.
 

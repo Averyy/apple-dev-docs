@@ -22,7 +22,7 @@ func stopRelativeAltitudeUpdates()
 - (void) stopRelativeAltitudeUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method ends the delivery of relative altitude events and releases the references to the operation queue and block that you specified in the [`startRelativeAltitudeUpdates(to:withHandler:)`](./startrelativealtitudeupdates%28to,withhandler%29.md) method. If you haven’t started delivering data, or if you’ve already called [`stopRelativeAltitudeUpdates()`](./stoprelativealtitudeupdates%28%29.md), this method does nothing.
 

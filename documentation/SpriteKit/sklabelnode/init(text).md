@@ -25,11 +25,11 @@ convenience init(text: String?)
 + (instancetype) labelNodeWithText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized label object.
 
-#### Discussion
+## Discussion
 
 The label node’s font is set to Helvetica Neue Ultra Light, 32 point.
 

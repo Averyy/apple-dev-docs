@@ -44,7 +44,7 @@ var frameInScreenCoordinates: NSRect { get }
 
 - [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
-#### Discussion
+## Discussion
 
 This is an observable property.
 

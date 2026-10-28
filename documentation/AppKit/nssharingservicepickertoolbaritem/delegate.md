@@ -19,7 +19,7 @@ weak var delegate: (any NSSharingServicePickerToolbarItemDelegate)? { get set }
 @property (weak) id<NSSharingServicePickerToolbarItemDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use your delegate object to provide the set of items you want to share from your window. If this property is `nil`, AppKit disables the toolbar item.
 

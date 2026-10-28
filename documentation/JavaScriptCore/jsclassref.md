@@ -24,7 +24,7 @@ typealias JSClassRef = OpaquePointer
 typedef struct OpaqueJSClass * JSClassRef;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type with [`JSObjectMake(_:_:_:)`](./jsobjectmake%28_,_,_%29.md) to construct objects with custom behavior.
 

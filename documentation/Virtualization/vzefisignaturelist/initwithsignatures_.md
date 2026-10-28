@@ -15,11 +15,11 @@ Creates a signature list from the provided signatures.
 - (instancetype) initWithSignatures:(NSArray<VZEFISignature *> *) signatures;
 ```
 
-#### Return Value
+## Return Value
 
 A new signature list object containing the specified signatures.
 
-#### Discussion
+## Discussion
 
 - Parameter: signatures An array of EFI signatures. This array can contain a mix of X.509 certificates and cryptographic hashes (SHA-256).
 

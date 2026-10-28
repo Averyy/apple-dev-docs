@@ -23,7 +23,7 @@ var photoSettingsForSceneMonitoring: AVCapturePhotoSettings? { get set }
 @property (nonatomic, copy, nullable) AVCapturePhotoSettings * photoSettingsForSceneMonitoring;
 ```
 
-#### Discussion
+## Discussion
 
 Set the [`flashMode`](../avcapturephotosettings/flashmode.md) and [`isAutoStillImageStabilizationEnabled`](../avcapturephotosettings/isautostillimagestabilizationenabled.md) properties of this photo settings object to influence the values of the photo output’s scene monitoring properties ([`isFlashScene`](./isflashscene.md) and [`isStillImageStabilizationScene`](./isstillimagestabilizationscene.md)). For example, if you set the [`flashMode`](../avcapturephotosettings/flashmode.md) property of this photo settings object to [`AVCaptureDevice.FlashMode.off`](../avcapturedevice/flashmode-swift.enum/off.md), the photo output’s [`isFlashScene`](./isflashscene.md) property reports [`false`](../../Swift/false.md) regardless of lighting conditions in the visible scene. If you set this photo settings object’s [`flashMode`](../avcapturephotosettings/flashmode.md) property to [`AVCaptureDevice.FlashMode.auto`](../avcapturedevice/flashmode-swift.enum/auto.md) or [`AVCaptureDevice.FlashMode.on`](../avcapturedevice/flashmode-swift.enum/on.md), the photo output’s [`isFlashScene`](./isflashscene.md) property reverts to its default behavior of returning [`true`](../../Swift/true.md) or [`false`](../../Swift/false.md) based on the visible light level.
 

@@ -22,7 +22,7 @@ nonisolated
 func customizationID(_ id: String) -> some TabContent<Self.TabValue>
 ```
 
-#### Discussion
+## Discussion
 
 The identifier needs to be stable, including across app version updates.
 

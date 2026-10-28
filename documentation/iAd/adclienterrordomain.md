@@ -12,7 +12,7 @@ The error domain that passes to the completion handler.
 extern NSString * const ADClientErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 After [`ADClient`](./adclient.md), `NSErrors` from the `ADClientErrorDomain` are passed to the completion handler.
 

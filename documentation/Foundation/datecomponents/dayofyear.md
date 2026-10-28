@@ -21,7 +21,7 @@ A day of the year. For example, in the Gregorian calendar, can go from 1 to 365 
 var dayOfYear: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This value is interpreted in the context of the calendar in which it is used.
 

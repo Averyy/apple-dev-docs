@@ -19,7 +19,7 @@ let kSCPropNetPPPAuthPrompt: CFString
 extern CFStringRef const kSCPropNetPPPAuthPrompt;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

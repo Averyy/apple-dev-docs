@@ -29,7 +29,7 @@ kSecAccessControlApplicationPassword
 
 - [Restricting keychain item accessibility](../restricting-keychain-item-accessibility.md)
 
-#### Discussion
+## Discussion
 
 This may be specified in addition to any constraints.
 

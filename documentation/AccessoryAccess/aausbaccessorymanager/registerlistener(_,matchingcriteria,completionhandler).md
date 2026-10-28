@@ -23,7 +23,7 @@ func registerListener(_ listener: any AAUSBAccessoryListener, matchingCriteria: 
 - (void) registerListener:(id<AAUSBAccessoryListener>) listener withMatchingCriteria:(NSArray<AAUSBAccessoryMatchingCriteria *> *) matchingCriteria completionHandler:(void (^)(NSArray<AAUSBAccessory *> *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Register a  USB accessory listener that satisfies one of the given criteria. The listener is notified when a USB accessory, that satisfies the criteria, connects to or disconnects from the system.
 

@@ -20,7 +20,7 @@ var scene: SCNScene { get set }
 @property (nonatomic, strong) SCNScene * scene;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Unlike the parent [`SCNView`](../../SceneKit/scnview.md) class, an [`ARSCNView`](../arscnview.md) object requires a non-`nil` scene to display.
 

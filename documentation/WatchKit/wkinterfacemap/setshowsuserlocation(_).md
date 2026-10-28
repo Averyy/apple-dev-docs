@@ -19,7 +19,7 @@ func setShowsUserLocation(_ showsUserLocation: Bool)
 - (void) setShowsUserLocation:(BOOL) showsUserLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`true`](../../Swift/true.md) displays the users current location on the map. The default value is [`false`](../../Swift/false.md).
 

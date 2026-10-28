@@ -25,7 +25,7 @@ var userIdentityLookupInfos: [CKUserIdentity.LookupInfo]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CKUserIdentityLookupInfo *> * userIdentityLookupInfos;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to view or change the participants user data. If you intend to specify or change the value of this property, do so before you execute the operation or submit it to a queue.
 

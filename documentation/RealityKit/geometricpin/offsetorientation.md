@@ -20,7 +20,7 @@ Offset from the pin’s base orientation.
 var offsetOrientation: simd_quatf { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If a pin has a generic name, this offset is relative to the pin’s owning entity’s orientation. If a pin is on a skeletal joint, this offset is relative to the skeletal joint’s current orientation. By default this offset is the identity rotation.
 

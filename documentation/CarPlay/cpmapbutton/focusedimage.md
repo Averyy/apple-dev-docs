@@ -21,7 +21,7 @@ var focusedImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * focusedImage;
 ```
 
-#### Discussion
+## Discussion
 
 If `focusedImage` is nil, the button uses [`image`](./image.md) as the default, creating a focused image using the alpha values from the image.
 

@@ -16,11 +16,11 @@ Returns the full completion text for a particular item to use when the item is h
 func textField(_ textField: NSTextField, textCompletionFor item: Self.Item) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The full text to insert, including the matched partial word and its potential completion, or `nil` if no text completion should be used.
 
-#### Discussion
+## Discussion
 
 This function may be used by the control to display a preview of the text that would appear if the highlighted item is selected. Additionally, the default implementation of `textField(_:didSelect:)` uses this function to inform what changes are made to the control’s text.
 

@@ -16,11 +16,11 @@ A bulk request to delete multiple Keyword objects by their identifiers.
 object KeywordDeleteBulkRequest
 ```
 
-#### Discussion
+## Discussion
 
 `KeywordDeleteBulkRequest` allows deleting multiple keywords in a single API call.
 
-##### Example
+### Example
 
 ```json
 {

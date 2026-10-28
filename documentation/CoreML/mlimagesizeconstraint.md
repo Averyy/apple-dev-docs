@@ -25,7 +25,7 @@ class MLImageSizeConstraint
 @interface MLImageSizeConstraint : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use an `MLImageSizeConstraint` to express what image sizes of an image feature a model will accept as input or produce as output.
 

@@ -23,7 +23,7 @@ var angularResistance: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat angularResistance;
 ```
 
-#### Discussion
+## Discussion
 
 Valid range is `0` through [`CGFLOAT_MAX`](../../CoreFoundation/cgfloat_max.md). The greater the value, the greater the angular damping and the faster rotation slows to a stop.
 

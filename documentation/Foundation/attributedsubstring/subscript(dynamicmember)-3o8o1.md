@@ -22,7 +22,7 @@ Returns an attribute value that a key path indicates.
 subscript<K>(dynamicMember keyPath: KeyPath<AttributeDynamicLookup, K>) -> K.Value? where K : AttributedStringKey, K.Value : Sendable { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This subscript returns `nil` unless the specified attribute exists, and is present and identical for the entire attributed string or substring. To find portions of the string with consistent attributes, use the [`runs`](./runs.md) property.
 

@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatMakeLookAt(SPPoint3DFloat position, SPPoint3DFloat target, SPVector3DFloat up);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a pose at the specified position with the rotation towards the target.
 

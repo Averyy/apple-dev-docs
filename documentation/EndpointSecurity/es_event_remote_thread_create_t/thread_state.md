@@ -20,7 +20,7 @@ var thread_state: UnsafeMutablePointer<es_thread_state_t>?
 es_thread_state_t * thread_state;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a thread with `thread_create_running(_:_:_:_:_:)`, this value contains an [`es_thread_state_t`](../es_thread_state_t.md) value. When using `thread_create(_:_:)`, this value is `NULL`.
 

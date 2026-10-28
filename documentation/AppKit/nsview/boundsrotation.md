@@ -19,7 +19,7 @@ var boundsRotation: CGFloat { get set }
 @property CGFloat boundsRotation;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values indicate counterclockwise rotation. Negative values indicate clockwise rotation. Rotation is performed around the coordinate system origin, (0.0, 0.0), which need not coincide with that of the frame rectangle or the bounds rectangle. Changing the value of this property neither redisplays the view nor marks it as needing display. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 

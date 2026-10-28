@@ -25,7 +25,7 @@ case inProgress
 INRequestRideIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Avoid using this response code when possible. Use it for situations where you sent the ride information to your service but did not receive information back in a timely manner.
 

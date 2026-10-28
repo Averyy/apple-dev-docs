@@ -29,7 +29,7 @@ kSecAccessControlPrivateKeyUsage
 
 - [Protecting keys with the Secure Enclave](../protecting-keys-with-the-secure-enclave.md)
 
-#### Discussion
+## Discussion
 
 This option can be combined with any other access control flags.
 

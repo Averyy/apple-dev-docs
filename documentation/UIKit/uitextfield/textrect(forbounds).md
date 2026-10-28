@@ -23,11 +23,11 @@ func textRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) textRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the label’s text.
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to customize the drawing rectangle for the text, you can override this method and return a different rectangle.
 

@@ -24,7 +24,7 @@ var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]? { get }
 
 - [Accessing workout zone data](../accessing-workout-zone-data.md)
 
-#### Discussion
+## Discussion
 
 This property provides zone data specific to the activity’s time range within the workout.
 

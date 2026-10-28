@@ -20,7 +20,7 @@ let sourceBundleIcon: AccessoryLiveActivity.IconFile?
 
 - [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Help people recognize a Live Activity by including the originating app’s icon when you display the Live Activity on your accessory.
 

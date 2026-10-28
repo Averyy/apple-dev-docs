@@ -29,7 +29,7 @@ protocol AppIntent : PersistentlyIdentifiable, _SupportsAppDependencies, Sendabl
 - [Displaying static and interactive snippets](./displaying-static-and-interactive-snippets.md)
 - [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
 
-#### Overview
+## Overview
 
 The [`AppIntent`](./appintent.md) protocol defines the interface you use to make your app’s actions discoverable by Apple Intelligence and Siri, the Shortcuts app, and other system experiences. This protocol defines the common features that help the system identify your app’s actions and access basic information about them. Implement this protocol in all your app intents, and supplement it with other protocols as needed to support specific types of actions.
 

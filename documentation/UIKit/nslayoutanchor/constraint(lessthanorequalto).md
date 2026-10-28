@@ -23,11 +23,11 @@ func constraint(lessThanOrEqualTo anchor: NSLayoutAnchor<AnchorType>) -> NSLayou
 - (NSLayoutConstraint *) constraintLessThanOrEqualToAnchor:(NSLayoutAnchor<id> *) anchor;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as less than or equal to the attribute represented by the `anchor` parameter.
 
-#### Discussion
+## Discussion
 
 This method defines the relationship `first attribute <= second attribute`. Where `first attribute` is the layout attribute represented by the anchor receiving this method call, and `second attribute` is the layout attribute represented by the `anchor` parameter. All values are measured in points; however, these values can be interpreted in different ways, depending on the type of layout anchor.
 

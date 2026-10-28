@@ -25,11 +25,11 @@ func CVPixelBufferGetPixelFormatType(_ pixelBuffer: CVPixelBuffer) -> OSType
 extern OSType CVPixelBufferGetPixelFormatType(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A four-character code `OSType` identifier for the pixel format.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

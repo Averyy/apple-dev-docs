@@ -25,7 +25,7 @@ class DDMatchPostalAddress
 @interface DDMatchPostalAddress : DDMatch
 ```
 
-#### Overview
+## Overview
 
 The DataDetection framework returns a postal address match in a `DDMatchPostalAddress` object, which optionally contains the matching parts of a postal address: street, city, state, postal code, and country.
 

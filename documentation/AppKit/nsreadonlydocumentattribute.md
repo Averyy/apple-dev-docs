@@ -15,7 +15,7 @@ An indication of whether the document is read-only.
 extern NSAttributedStringDocumentAttributeKey NSReadOnlyDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object that contains an integer. A value of `1` indicates read-only. If the value is `0`, missing, or negative, the document doesn’t display as read-only.
 

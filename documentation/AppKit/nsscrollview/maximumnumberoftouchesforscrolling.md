@@ -19,7 +19,7 @@ var maximumNumberOfTouchesForScrolling: Int { get set }
 @property NSInteger maximumNumberOfTouchesForScrolling;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to 0 to require exactly `minimumNumberOfTouchesForScrolling` touches to recognize the gesture. Defaults to `NSIntegerMax`.
 

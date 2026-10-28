@@ -15,7 +15,7 @@ The system requests power reallocation as revocable.
 kUSBPowerDuringWakeRevocable = 6
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this extra power while it’s awake, but the [`kUSBPowerRequestWakeRelease`](./kusbpowerrequestwakerelease.md) message can take that power away and reallocate it to another device.
 

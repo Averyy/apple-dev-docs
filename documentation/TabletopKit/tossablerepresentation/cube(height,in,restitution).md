@@ -15,7 +15,7 @@ Creates a cube that the player tosses during gameplay.
 static func cube(height: Float, in unit: UnitLength = .meters, restitution: Float? = nil) -> TossableRepresentation
 ```
 
-#### Discussion
+## Discussion
 
 The vertices for the simulated cube are oriented with faces axis aligned. In this orientation, the height (h) is measured from face to opposing face, and the vertices have the following coordinates, which all lie on a circumscribed sphere of radius r = h/2 ⋅ sqrt(3): { ±1, ±1, ±1 } ⋅ h/2 = { ±sqrt(3)/3, ±sqrt(3)/3, ±sqrt(3)/3 } ⋅ r
 

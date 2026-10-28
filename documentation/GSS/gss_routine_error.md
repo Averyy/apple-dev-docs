@@ -19,7 +19,7 @@ A macro that masks out all but the routine error field from a major status code.
 #define GSS_ROUTINE_ERROR(x)
 ```
 
-#### Discussion
+## Discussion
 
 Apply this macro to a major status code, then compare the result with one of the routine error constants to determine which calling error occurred.
 

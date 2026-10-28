@@ -26,15 +26,15 @@ func directoryContents(atPath path: String) -> [Any]?
 - (NSArray *) directoryContentsAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../nsstring.md) objects identifying the directories and files (including symbolic links) contained in `path`. Returns an empty array if the directory exists but has no contents. Returns `nil` if the directory specified at `path` does not exist or there is some other error accessing it.
 
-#### Discussion
+## Discussion
 
 The search is shallow, and therefore does not return the contents of any subdirectories and does not traverse symbolic links in the specified directory. This returned array does not contain strings for the current directory (”`.`”), parent directory (”`..`”), or resource forks (begin with “._”).
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`contentsOfDirectory(atPath:)`](./contentsofdirectory%28atpath%29.md) instead.
 

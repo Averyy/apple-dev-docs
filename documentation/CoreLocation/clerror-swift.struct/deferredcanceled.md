@@ -21,7 +21,7 @@ A constant that indicates your app or the location manager canceled the request 
 static var deferredCanceled: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error is returned if you call the [`disallowDeferredLocationUpdates()`](../cllocationmanager/disallowdeferredlocationupdates%28%29.md) method or schedule a new deferred update before the previous deferred update request is processed. The location manager may also report this error too. For example, if the app is in the foreground when a new location is determined, the location manager cancels deferred updates and delivers the location data to your app.
 

@@ -24,7 +24,7 @@ static let bodyMassIndex: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBodyMassIndex;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use count units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

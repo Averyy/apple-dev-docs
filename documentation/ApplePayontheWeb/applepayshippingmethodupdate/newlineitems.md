@@ -16,7 +16,7 @@ An optional list of updated line items.
 sequence <ApplePayLineItem> newLineItems;
 ```
 
-#### Discussion
+## Discussion
 
 Supply an updated list of line items if the change in the shipping method caused any changes in the line items.
 

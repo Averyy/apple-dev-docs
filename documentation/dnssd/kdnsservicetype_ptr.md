@@ -23,7 +23,7 @@ var kDNSServiceType_PTR: Int { get }
 kDNSServiceType_PTR
 ```
 
-#### Discussion
+## Discussion
 
 Domain name pointer.
 

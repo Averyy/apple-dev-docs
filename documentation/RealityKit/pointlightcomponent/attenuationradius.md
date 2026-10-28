@@ -20,7 +20,7 @@ The distance from the light source where its intensity reaches zero.
 var attenuationRadius: Float
 ```
 
-#### Discussion
+## Discussion
 
 Any objects at or beyond this distance do not receive illumination. The default value is `10.0` meters.
 

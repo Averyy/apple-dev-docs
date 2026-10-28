@@ -25,7 +25,7 @@ func nw_privacy_context_flush_cache(_ privacy_context: nw_privacy_context_t)
 void nw_privacy_context_flush_cache(nw_privacy_context_t privacy_context);
 ```
 
-#### Discussion
+## Discussion
 
 Flushing the cache may be asynchronous, which means that it will take effect shortly after you invoke the function.
 

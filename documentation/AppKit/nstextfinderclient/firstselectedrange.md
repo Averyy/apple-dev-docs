@@ -19,7 +19,7 @@ optional var firstSelectedRange: NSRange { get }
 @property (readonly) NSRange firstSelectedRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property is required for the next match, previous match, replace, replace and find and set search string actions. The client should return its first selected range, or {index, 0} to indicate the location of the insertion point if there is no selection.
 

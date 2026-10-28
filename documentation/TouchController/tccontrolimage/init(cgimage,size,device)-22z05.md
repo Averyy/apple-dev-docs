@@ -21,7 +21,7 @@ convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)
 - (instancetype) initWithCGImage:(CGImageRef) cgImage size:(CGSize) size device:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCControlImage` instance, or `nil` if texture creation fails.
 

@@ -21,7 +21,7 @@ func requestAutoSignInAuthorization() async throws -> VSUserAccountManager.AutoS
 
 - [Signing people in to their media accounts automatically](../signing-people-in-to-media-apps-automatically.md)
 
-#### Discussion
+## Discussion
 
 Call this method after a successful sign in to your streaming service. You might also call this method through custom UI that your app implements to offer Automatic Sign-In.
 

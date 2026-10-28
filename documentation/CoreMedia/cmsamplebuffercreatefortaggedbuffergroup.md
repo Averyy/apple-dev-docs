@@ -21,7 +21,7 @@ Creates a new sample buffer from a tagged buffer group.
 extern OSStatus CMSampleBufferCreateForTaggedBufferGroup(CFAllocatorRef allocator, CMTaggedBufferGroupRef taggedBufferGroup, CMTime sbufPTS, CMTime sbufDuration, CMTaggedBufferGroupFormatDescriptionRef formatDescription, CMSampleBufferRef*sBufOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from [Sample Buffer Error Codes](./sample-buffer-errors.md) on failure.
 

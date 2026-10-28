@@ -16,7 +16,7 @@ A value that indicates the use of some resource.
 case resourceUse
 ```
 
-#### Discussion
+## Discussion
 
 For example, an expensive computation capability or online service.
 

@@ -10,7 +10,7 @@ virtual void unlockPhysicalExtents(
  IOService *client);
 ```
 
-#### Overview
+## Overview
 
 Unlock the contents of the storage object for relocation again. This call must balance a successful call to lockPhysicalExtents().
 

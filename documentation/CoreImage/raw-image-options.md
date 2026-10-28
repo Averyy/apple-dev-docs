@@ -5,7 +5,7 @@
 
 Options for creating a [`CIFilter`](./cifilter-swift.class.md) object from RAW image data.
 
-#### Overview
+## Overview
 
 You can also use the key [`kCIInputEVKey`](./kciinputevkey.md) for RAW images.
 

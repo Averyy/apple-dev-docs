@@ -21,7 +21,7 @@ static let foregroundBloodOxygen: SRPhotoplethysmogramSample.Usage
 extern SRPhotoplethysmogramSampleUsage const SRPhotoplethysmogramSampleUsageForegroundBloodOxygen;
 ```
 
-#### Discussion
+## Discussion
 
 An example is a sample of a reading from a person using the BloodOxygen app.
 

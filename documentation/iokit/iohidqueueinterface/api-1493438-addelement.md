@@ -16,11 +16,11 @@ Adds an element to the queue.
 IOReturn (*addElement)(void *self, IOHIDElementCookie elementCookie, uint32_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 If the element has already been added to queue, an error will be returned.
 

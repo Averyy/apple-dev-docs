@@ -15,11 +15,11 @@ Sets an exception handler for a task.
 OSStatus MPSetExceptionHandler(MPTaskID task, MPQueueID exceptionQ);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 When an exception handler is set and an exception occurs, the task is suspended and a message is sent to the message queue specified by `exceptionQ`. The message contains the following information:
 

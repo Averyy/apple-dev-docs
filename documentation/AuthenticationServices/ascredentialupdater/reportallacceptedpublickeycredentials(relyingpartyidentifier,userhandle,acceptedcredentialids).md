@@ -21,7 +21,7 @@ Provides credential managers with a snapshot of all credential identifiers accep
 final func reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier: String, userHandle: Data, acceptedCredentialIDs: [Data]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 If your app allows someone to revoke a passkey or create a new one, call this method to report all credentials still accepted after the change. Credential managers can act on this report by removing or hiding any credentials not present in `acceptedCredentialIDs`, which prevents display of invalid passkeys during later sign ins.
 

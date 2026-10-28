@@ -23,7 +23,7 @@ case unsyncedEdits
 NSFileProviderErrorUnsyncedEdits
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSFileProviderManager`](../../nsfileprovidermanager.md) throws this error when you attempt to evict an item that contains unsynced changes. The system sets the error’s [`NSURLErrorKey`](../../../Foundation/nsurlerrorkey.md) to the URL of the item that the error affects.
 

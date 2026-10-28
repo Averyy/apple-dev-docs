@@ -14,7 +14,7 @@
 virtual void free();
 ```
 
-#### Discussion
+## Discussion
 
 Frees the IOHIDInterface object.
 

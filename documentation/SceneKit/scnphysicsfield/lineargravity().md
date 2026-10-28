@@ -25,11 +25,11 @@ class func linearGravity() -> SCNPhysicsField
 + (SCNPhysicsField *) linearGravityField;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 Because the force of gravity on an object is proportional to the object’s mass, this force accelerates all objects in the field’s area of affect by the same amount. The field’s [`strength`](./strength.md) property measures this acceleration in meters per second per second.
 

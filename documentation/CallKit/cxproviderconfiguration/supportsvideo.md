@@ -24,7 +24,7 @@ var supportsVideo: Bool { get set }
 @property (nonatomic) BOOL supportsVideo;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to [`false`](../../Swift/false.md).
 

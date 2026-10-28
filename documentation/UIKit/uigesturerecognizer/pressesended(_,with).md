@@ -23,7 +23,7 @@ func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent)
 - (void) pressesEnded:(NSSet<UIPress *> *) presses withEvent:(UIPressesEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the same signature as the corresponding one declared by [`UIResponder`](../uiresponder.md). With this method, a gesture recognizer receives press objects (in their [`UIPress.Phase.ended`](../uipress/phase-swift.enum/ended.md) phase) before the view attached to the gesture recognizer receives them. `UIGestureRecognizer` objects are not in the responder chain, yet they observe presses hit-tested to their view and their view’s subviews.
 

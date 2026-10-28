@@ -28,7 +28,7 @@ extern OSStatus AudioUnitGetParameter(AudioUnit inUnit, AudioUnitParameterID inI
 
 - [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 

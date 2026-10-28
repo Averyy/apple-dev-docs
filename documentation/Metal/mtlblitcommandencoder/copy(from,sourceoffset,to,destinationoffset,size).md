@@ -29,7 +29,7 @@ func copy(from sourceBuffer: any MTLBuffer, sourceOffset: Int, to destinationBuf
 
 - [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 
-#### Discussion
+## Discussion
 
 You can pass the same buffer to the `sourceBuffer` and `destinationBuffer` parameters if `size` is less than the distance between `sourceOffset` and `destinationOffset`.
 

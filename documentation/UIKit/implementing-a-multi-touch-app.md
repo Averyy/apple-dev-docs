@@ -5,7 +5,7 @@
 
 Learn how to create a simple app that handles multitouch input.
 
-#### Overview
+## Overview
 
 Consider the app shown in the following image, where a single main view draws a gray circle at each touch location. When a touch ends, the circle disappears. When the user’s fingers move, the underlying circles move with them.
 
@@ -15,7 +15,7 @@ The creation of this app begins with the Single View app template in Xcode. This
 
 ![A screenshot of a storyboard in Interface Builder showing a single view controller, whose view is of the custom type TouchableView.](https://developer.apple.com/tutorials/images/com.apple.uikit/implementing-a-multi-touch-app-2@2x.png)
 
-##### Implement the TouchableView class
+### Implement the TouchableView class
 
 The `TouchableView` class overrides the inherited [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md), [`touchesMoved(_:with:)`](./uiresponder/touchesmoved%28_,with%29.md), [`touchesEnded(_:with:)`](./uiresponder/touchesended%28_,with%29.md), and [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) methods. These methods handle the creation and management of subviews that draw the gray circles at each touch location. Specifically, these methods do the following:
 
@@ -100,7 +100,7 @@ func removeViewForTouch (touch : UITouch ) {
 }
 ```
 
-##### Implement the TouchSpotView class
+### Implement the TouchSpotView class
 
 The `TouchSpotView` class (shown in the following code) represents the custom subviews that draw the gray circles onscreen. `TouchSpotView` maintains its circular shape by setting the [`cornerRadius`](../QuartzCore/calayer/cornerradius.md) property of the layer each time its [`bounds`](./uiview/bounds.md) property changes.
 

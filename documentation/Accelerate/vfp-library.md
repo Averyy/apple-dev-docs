@@ -5,7 +5,7 @@
 
 Perform floating-point arithmetic, transcendental, and trigonometric functions on 128-bit vectors.
 
-#### Overview
+## Overview
 
 vfp.h declares a set of floating-point arithmetic, transcendental and trigonometric functions, on 128-bit vectors, using the floating-point types from vecLibTypes.h.
 

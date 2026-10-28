@@ -21,7 +21,7 @@ Key used to specify the identifier and label associated with an entry of additio
 struct AccessibilityCustomContentKey
 ```
 
-#### Overview
+## Overview
 
 Use `AccessibilityCustomContentKey` and the associated modifiers taking this value as a parameter in order to simplify clearing or replacing entries of additional information that are manipulated from multiple places in your code.
 

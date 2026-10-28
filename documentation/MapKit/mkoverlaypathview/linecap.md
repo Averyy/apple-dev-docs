@@ -19,7 +19,7 @@ The line cap style to apply to the open ends of the path.
 @property CGLineCap lineCap;
 ```
 
-#### Discussion
+## Discussion
 
 The line cap style is applied to the start and end points of any open subpaths. This property does not affect closed subpaths. The default line cap style is [`CGLineCap.butt`](../../CoreGraphics/cglinecap/butt.md).
 

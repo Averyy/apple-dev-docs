@@ -19,7 +19,7 @@ var selectedCells: [NSCell]? { get }
 @property (copy, readonly, nullable) NSArray<NSCell *> * selectedCells;
 ```
 
-#### Discussion
+## Discussion
 
 When the array is empty, there is no selection.
 

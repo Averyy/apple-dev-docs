@@ -22,11 +22,11 @@ init!(rect: CGRect, in context: JSContext!)
 + (JSValue *) valueWithRect:(CGRect) rect inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A newly allocated JavaScript object containing properties named x, y, width, and height, with values from the CGRect.
 
-#### Discussion
+## Discussion
 
 Create a JSValue from a CGRect.
 

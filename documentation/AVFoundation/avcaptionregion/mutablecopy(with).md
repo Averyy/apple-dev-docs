@@ -22,11 +22,11 @@ func mutableCopy(with zone: NSZone? = nil) -> Any
 - (id) mutableCopyWithZone:(NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the region.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if the caption region contains an identifier.
 

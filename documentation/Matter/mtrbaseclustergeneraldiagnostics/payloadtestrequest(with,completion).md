@@ -29,7 +29,7 @@ func payloadTestRequest(with params: MTRGeneralDiagnosticsClusterPayloadTestRequ
 - (void) payloadTestRequestWithParams:(MTRGeneralDiagnosticsClusterPayloadTestRequestParams *) params completion:(void (^)(MTRGeneralDiagnosticsClusterPayloadTestResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command provides a means for certification tests or manufacturer’s internal tests to validate particular command handling and encoding constraints by generating a response of a given size.
 

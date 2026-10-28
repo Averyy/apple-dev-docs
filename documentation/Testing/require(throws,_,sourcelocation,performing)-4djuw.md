@@ -22,11 +22,11 @@
 @freestanding(expression) macro require<E, R>(throws error: E, _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, performing expression: () async throws -> R) -> E where E : Equatable, E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The instance of `E` that was thrown by `expression` and is equal to `error`.
 
-#### Overview
+## Overview
 
 > **Throws**: An instance of [`ExpectationFailedError`](./expectationfailederror.md) if `expression` does not throw a matching error. The error thrown by `expression` is not rethrown.
 

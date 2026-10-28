@@ -19,7 +19,7 @@ func removeAllItems()
 - (void) removeAllItems;
 ```
 
-#### Discussion
+## Discussion
 
 This method is more efficient than removing menu items individually.
 

@@ -5,7 +5,7 @@
 
 Integrate your app with the iOS hotspot network subsystem.
 
-#### Overview
+## Overview
 
 [`NEHotspotHelper`](./nehotspothelper.md) allows your app to participate in the process of authenticating with hotspot networks, that is, Wi-Fi networks where the user must interact with the network to gain access to the wider Internet. Hotspot helpers are only supported on iOS.
 

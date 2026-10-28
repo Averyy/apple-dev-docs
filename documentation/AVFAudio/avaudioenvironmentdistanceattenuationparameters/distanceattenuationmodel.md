@@ -25,7 +25,7 @@ var distanceAttenuationModel: AVAudioEnvironmentDistanceAttenuationModel { get s
 @property (nonatomic) AVAudioEnvironmentDistanceAttenuationModel distanceAttenuationModel;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the [`AVAudioEnvironmentDistanceAttenuationModel.inverse`](../avaudioenvironmentdistanceattenuationmodel/inverse.md) attenuation model.
 

@@ -24,7 +24,7 @@ var allowsRecalibrationForEstimates: Bool { get }
 @property (nonatomic, readonly) BOOL allowsRecalibrationForEstimates;
 ```
 
-#### Discussion
+## Discussion
 
 To recalibrate the data for this sample type, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`recalibrateEstimates(sampleType:date:completion:)`](../hkhealthstore/recalibrateestimates%28sampletype,date,completion%29.md) method.
 

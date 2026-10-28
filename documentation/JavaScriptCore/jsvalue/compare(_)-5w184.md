@@ -22,11 +22,11 @@ func compare(_ other: JSValue) -> JSRelationCondition
 - (JSRelationCondition) compareJSValue:(JSValue *) other;
 ```
 
-#### Return Value
+## Return Value
 
 A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if an exception is thrown.
 
-#### Discussion
+## Discussion
 
 Compare two JSValues.
 

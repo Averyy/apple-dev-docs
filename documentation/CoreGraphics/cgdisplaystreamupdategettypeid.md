@@ -10,11 +10,11 @@
 extern CFTypeID CGDisplayStreamUpdateGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The CFTypeID of the CGDisplayStreamUpdate class.
 
-#### Discussion
+## Discussion
 
 Returns the CF “class” ID for CGDisplayStreamUpdate
 

@@ -18,7 +18,7 @@ var FFERR_EFFECTPLAYING: Int { get }
 #define FFERR_EFFECTPLAYING
 ```
 
-#### Discussion
+## Discussion
 
 An attempt was made to modify parameters of an effect while it is playing. Not all hardware devices support altering the parameters of an effect while it is playing.
 

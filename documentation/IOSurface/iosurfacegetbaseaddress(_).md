@@ -24,7 +24,7 @@ func IOSurfaceGetBaseAddress(_ buffer: IOSurfaceRef) -> UnsafeMutableRawPointer
 void *IOSurfaceGetBaseAddress(IOSurfaceRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns NULL if buffer is invalid.
 

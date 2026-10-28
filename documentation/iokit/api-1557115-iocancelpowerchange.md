@@ -16,11 +16,11 @@ The caller denies an idle system sleep power state change.
 IOReturn IOCancelPowerChange(io_connect_t kernelPort, intptr_t notificationID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 
-#### Discussion
+## Discussion
 
 Should only called in response to kIOMessageCanSystemSleep messages from IOPMrootDomain. IOCancelPowerChange has no meaning for responding to kIOMessageSystemWillSleep (which is non-abortable) or any other messages.
 

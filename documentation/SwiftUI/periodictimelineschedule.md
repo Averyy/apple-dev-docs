@@ -21,7 +21,7 @@ A schedule for updating a timeline view at regular intervals.
 struct PeriodicTimelineSchedule
 ```
 
-#### Overview
+## Overview
 
 You can also use [`periodic(from:by:)`](./timelineschedule/periodic%28from,by%29.md) to construct this schedule.
 

@@ -24,7 +24,7 @@ class HMEventTrigger
 @interface HMEventTrigger : HMTrigger
 ```
 
-#### Overview
+## Overview
 
 Use an [`HMEventTrigger`](./hmeventtrigger.md) object to trigger the execution of a scene when a combination of characteristic or location events and conditions occur. To create an event trigger, first create one or more event objects that fire an event when the specified trigger values are met. For example, you might create an [`HMCharacteristicEvent`](./hmcharacteristicevent.md) that fires when the front door is open. Then, you can use [`HMEventTrigger`](./hmeventtrigger.md) convenience methods to create optional predicates that specify conditions that must be met before a scene is executed. For example, you might create a condition that ensures the scene is executed only after sunset.
 

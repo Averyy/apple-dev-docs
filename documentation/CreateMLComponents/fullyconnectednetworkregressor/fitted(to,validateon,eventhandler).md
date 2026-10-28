@@ -21,11 +21,11 @@ Fits a fully connected network regressor model to a sequence of examples.
 func fitted<Input, Validation>(to input: Input, validateOn validation: Validation, eventHandler: EventHandler? = nil) async throws -> FullyConnectedNetworkRegressorModel<Scalar> where Input : Sequence, Validation : Sequence, Input.Element == AnnotatedFeature<MLShapedArray<Scalar>, Float>, Validation.Element == AnnotatedFeature<MLShapedArray<Scalar>, Float>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted fully connected network regressor model.
 
-#### Discussion
+## Discussion
 
 The training process partitions the input into random batches according to the batch size configuration parameter. Training stops when the validation loss stops improving or when the maximum number of iterations is reached.
 

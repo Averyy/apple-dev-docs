@@ -22,11 +22,11 @@ Formats a value, using this style.
 func format(_ value: Self.FormatInput) -> Self.FormatOutput
 ```
 
-#### Return Value
+## Return Value
 
 A representation of `value`, in the [`FormatOutput`](./formatoutput.md) type, formatted according to the style’s configuration.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a single style instance, and then use it to format multiple values.
 

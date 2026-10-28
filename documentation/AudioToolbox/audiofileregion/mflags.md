@@ -24,7 +24,7 @@ var mFlags: AudioFileRegionFlags
 AudioFileRegionFlags mFlags;
 ```
 
-#### Discussion
+## Discussion
 
 For details, see [`AudioFileRegionFlags`](../audiofileregionflags.md).
 

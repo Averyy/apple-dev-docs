@@ -24,11 +24,11 @@ optional func action(for layer: CALayer, forKey event: String) -> (any CAAction)
 - (id<CAAction>) actionForLayer:(CALayer *) layer forKey:(NSString *) event;
 ```
 
-#### Return Value
+## Return Value
 
 An object implementing the [`CAAction`](../caaction.md) protocol or `nil` if the delegate does not specify a behavior for the specified `key`.
 
-#### Discussion
+## Discussion
 
 A layer’s delegate that implements this method returns an action for a specified key and stops any further searches (i.e. actions for the same key in the layer’s [`actions`](../calayer/actions.md) dictionary or specified by [`defaultAction(forKey:)`](../calayer/defaultaction%28forkey%29.md) are not returned).
 

@@ -20,11 +20,11 @@ Creates the intent object with the specified climate settings information.
 convenience init(enableFan: Bool? = nil, enableAirConditioner: Bool? = nil, enableClimateControl: Bool? = nil, enableAutoMode: Bool? = nil, airCirculationMode: INCarAirCirculationMode = .unknown, fanSpeedIndex: Int? = nil, fanSpeedPercentage: Double? = nil, relativeFanSpeedSetting: INRelativeSetting = .unknown, temperature: Measurement<UnitTemperature>? = nil, relativeTemperatureSetting: INRelativeSetting = .unknown, climateZone: INCarSeat = .unknown, carName: INSpeakableString? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to change the vehicle’s climate control settings. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths. Your test code should modify the settings for only one system at a time.
 

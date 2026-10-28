@@ -19,7 +19,7 @@ Reads an async sequence of video frames captured with a video camera.
 static func readCamera(configuration: VideoReader.CameraConfiguration) async throws -> VideoReader.CameraAsyncBuffers
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of camera video frames.
 

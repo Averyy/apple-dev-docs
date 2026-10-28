@@ -24,7 +24,7 @@ case ready
 INStartVideoCallIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Return this response code during the confirmation phase after you’ve verified that you’re able to start the video call. Don’t return this response code when handling the intent; doing so causes the system to display an error.
 

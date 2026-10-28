@@ -30,7 +30,7 @@ func commissioning(_ commissioning: MTRCommissioningOperation, completedDeviceAt
 - (void) commissioning:(MTRCommissioningOperation *) commissioning completedDeviceAttestation:(MTRDeviceAttestationDeviceInfo *) attestationDeviceInfo error:(NSError *) error completion:(dispatch_block_t) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Commissioning will pause, regardless of whether attestation succeeded or failed, until the completion is invoked (indicating that commissioning should proceed, even if attestation failed), or commissioning is stopped.
 

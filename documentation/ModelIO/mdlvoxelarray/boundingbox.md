@@ -24,7 +24,7 @@ var boundingBox: MDLAxisAlignedBoundingBox { get }
 @property (nonatomic, readonly) MDLAxisAlignedBoundingBox boundingBox;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate space for the bounding box is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](./init%28data,boundingbox,voxelextent%29.md) initializer, the bounding box specified at initialization.
 

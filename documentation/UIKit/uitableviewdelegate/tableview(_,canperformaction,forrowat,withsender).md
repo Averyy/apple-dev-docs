@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, canPerformAction action: Selec
 - (BOOL) tableView:(UITableView *) tableView canPerformAction:(SEL) action forRowAtIndexPath:(NSIndexPath *) indexPath withSender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the command corresponding to `action` should appear in the editing menu, otherwise [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is invoked after [`tableView(_:shouldShowMenuForRowAt:)`](./tableview%28_,shouldshowmenuforrowat%29.md). It gives the developer the opportunity to exclude one of the commands—Copy or Paste—from the editing menu. For example, the user might have copied some cell content from one row but wants to paste into another row that doesn’t take the copied content. In a case like this, return [`false`](../../Swift/false.md) from this method.
 

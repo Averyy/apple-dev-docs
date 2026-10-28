@@ -21,7 +21,7 @@ A view that describes the task represented by the progress view.
 var label: ProgressViewStyleConfiguration.Label?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, then the task is self-evident from the surrounding context, and the style does not need to provide any additional description.
 

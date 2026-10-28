@@ -24,7 +24,7 @@ case unadjusted
 PHImageRequestOptionsVersionUnadjusted
 ```
 
-#### Discussion
+## Discussion
 
 If the asset has been edited, the resulting image reflects the state of the asset before any edits were performed.
 

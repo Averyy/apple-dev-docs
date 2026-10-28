@@ -22,7 +22,7 @@ var minimumTrackTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * minimumTrackTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property resets the minimum track images back to the slider’s default images; the slider releases any custom images. Setting this property to `nil` resets the tint color to the default and removes any custom minimum track images.
 

@@ -21,7 +21,7 @@ var contentAlignment: TVElementContentAlignment { get }
 @property (nonatomic, readonly) TVElementContentAlignment contentAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This property aligns items inside of an element on the vertical axis. For possible values, see [`TVElementContentAlignment`](../tvelementcontentalignment.md).
 

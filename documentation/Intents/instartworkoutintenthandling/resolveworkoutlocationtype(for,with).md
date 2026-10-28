@@ -27,7 +27,7 @@ optional func resolveWorkoutLocationType(for intent: INStartWorkoutIntent) async
 - (void) resolveWorkoutLocationTypeForStartWorkout:(INStartWorkoutIntent *) intent withCompletion:(void (^)(INWorkoutLocationTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the user-supplied workout location. If you don’t implement this method, SiriKit assumes that you’re able to start the workout in the specified location.
 

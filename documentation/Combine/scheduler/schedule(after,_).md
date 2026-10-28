@@ -21,7 +21,7 @@ Performs the action at some time after the specified date, using the schedulerâ€
 func schedule(after date: Self.SchedulerTimeType, _ action: @escaping () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The immediate scheduler ignores `date` and performs the action immediately.
 

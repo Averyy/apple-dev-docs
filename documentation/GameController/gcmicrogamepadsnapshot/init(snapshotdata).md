@@ -26,11 +26,11 @@ init(snapshotData data: Data)
 - (instancetype) initWithSnapshotData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A new snapshot object.
 
-#### Discussion
+## Discussion
 
 The data format for a snapshot is private. Your snapshot object should only be created from flattened data previously obtained from a snapshot.
 

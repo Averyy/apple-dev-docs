@@ -19,7 +19,7 @@ func beginSheet(for aWindow: NSWindow!, withDelegate delegate: Any!, didEnd didE
 - (void) beginPictureTakerSheetForWindow:(NSWindow *) aWindow withDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `didEndSelector` method should have the following signature:
 

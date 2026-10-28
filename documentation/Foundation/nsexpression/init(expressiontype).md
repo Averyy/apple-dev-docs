@@ -25,11 +25,11 @@ init(expressionType type: NSExpression.ExpressionType)
 - (instancetype) initWithExpressionType:(NSExpressionType) type;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSExpression` object of the type `type`.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for `NSExpression`.
 

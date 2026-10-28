@@ -6,7 +6,7 @@
 
 A four-byte value that indicates a locale.
 
-#### Overview
+## Overview
 
 See [Locale indicator](../locale_indicator.md).
 

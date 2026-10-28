@@ -28,7 +28,7 @@ class PHObjectPlaceholder
 
 - [Requesting Changes to the Photo Library](../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Overview
+## Overview
 
 You obtain object placeholders when you use change requests to create assets, collections, or collection lists. After the change request completes, you can use the object placeholder to fetch the newly created object. You can also use an object placeholder to make additional change requests involving the object to create.
 

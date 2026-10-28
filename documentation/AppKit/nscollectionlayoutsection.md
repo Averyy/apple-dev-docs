@@ -20,7 +20,7 @@ class NSCollectionLayoutSection
 @interface NSCollectionLayoutSection : NSObject
 ```
 
-#### Overview
+## Overview
 
 A collection view layout has one or more sections. Sections provide a way to separate the layout into distinct pieces.
 

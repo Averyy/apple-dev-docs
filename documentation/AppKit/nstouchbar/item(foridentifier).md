@@ -22,11 +22,11 @@ func item(forIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem
 - (NSTouchBarItem *) itemForIdentifier:(NSTouchBarItemIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A Touch Bar item if one exists for the given identifier; otherwise, returns `nil`.
 
-#### Discussion
+## Discussion
 
 The system returns items (instances of the [`NSTouchBarItem`](../nstouchbaritem.md) class) as it finds them, according to the following search order, listed here from first-searched to last-searched:
 

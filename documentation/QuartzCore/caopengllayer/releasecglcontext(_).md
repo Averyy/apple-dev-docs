@@ -22,7 +22,7 @@ func releaseCGLContext(_ ctx: CGLContextObj)
 - (void) releaseCGLContext:(CGLContextObj) ctx;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the OpenGL context that was previously returned by [`copyCGLContext(forPixelFormat:)`](./copycglcontext%28forpixelformat%29.md) is no longer needed.
 

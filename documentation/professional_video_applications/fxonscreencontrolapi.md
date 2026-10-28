@@ -23,7 +23,7 @@ protocol FxOnScreenControlAPI
 
 - [Adding onscreen controls to plug-ins](../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
 
-#### Overview
+## Overview
 
 Plug-ins use protocol to direct manipulation of the object and is an intuitive means for users to interact with a plug-in.
 

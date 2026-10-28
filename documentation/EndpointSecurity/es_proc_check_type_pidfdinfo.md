@@ -20,7 +20,7 @@ var ES_PROC_CHECK_TYPE_PIDFDINFO: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_PIDFDINFO
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_pidfdinfo` function from `libproc.h`.
 

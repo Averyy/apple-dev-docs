@@ -16,7 +16,7 @@ The virtual machine view adaptor.
 @preconcurrency var adaptor: VZVirtualMachineViewAdaptor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to assign a [`VZVirtualMachineViewAdaptor`](../vzvirtualmachineviewadaptor.md), which is a sendable wrapper that connects a virtual machine view to a virtual machine.
 

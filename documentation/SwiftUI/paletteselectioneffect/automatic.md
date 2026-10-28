@@ -19,7 +19,7 @@ Applies the system’s default effect when selected.
 static let automatic: PaletteSelectionEffect
 ```
 
-#### Discussion
+## Discussion
 
 When using un-tinted SF Symbols or template images, the current tint color is applied to the selected items’ image. If the provided SF Symbols have custom tints, a stroke is drawn around selected items.
 

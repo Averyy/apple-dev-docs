@@ -20,7 +20,7 @@ let ITLibMediaItemPropertySortTitle: String
 extern NSString * const ITLibMediaItemPropertySortTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, use [`ITLibMediaItemPropertyTitle`](./itlibmediaitempropertytitle.md).
 

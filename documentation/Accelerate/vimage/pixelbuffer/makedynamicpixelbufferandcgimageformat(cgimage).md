@@ -23,11 +23,11 @@ static func makeDynamicPixelBufferAndCGImageFormat(cgImage: CGImage) throws -> (
 
 Available when `Format` is `vImage.DynamicPixelFormat`.
 
-#### Return Value
+## Return Value
 
 A new pixel buffer of type [`vImage.DynamicPixelFormat`](../dynamicpixelformat.md) and a [`vImage_CGImageFormat`](../../vimage_cgimageformat.md) that describes the ordering and number of the color channels, the size and type of the data in the color channels, and whether or not the data is premultiplied by alpha.
 
-#### Discussion
+## Discussion
 
 Use this function to create an image format and pixel buffer from a [`CGImage`](../../../CoreGraphics/cgimage.md) instance. The pixel buffer that this function returns has a pixel format that’s unknown at compile time.
 

@@ -17,7 +17,7 @@ Collection of functions for adding LoRA adapters to an LLM model, training, fusi
 enum LoRATrain
 ```
 
-#### Overview
+## Overview
 
 The typical flow for training is:
 

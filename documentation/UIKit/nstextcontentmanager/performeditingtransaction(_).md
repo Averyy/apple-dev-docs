@@ -23,7 +23,7 @@ func performEditingTransaction(_ transaction: () -> Void)
 - (void) performEditingTransactionUsingBlock:(void (^)()) transaction;
 ```
 
-#### Discussion
+## Discussion
 
 The primary [`NSTextLayoutManager`](../nstextlayoutmanager.md) controlling the active editing transaction invokes this method. It’s possible to nest multiple editing transactions. The outer most transaction toggles `hasEditingTransaction` and sends synchronization messages if enabled after invoking a transaction.
 

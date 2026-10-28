@@ -23,7 +23,7 @@ case failureUnableToHandOff
 INStartCallIntentResponseCodeFailureUnableToHandOff
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app can’t hand off the call.
 

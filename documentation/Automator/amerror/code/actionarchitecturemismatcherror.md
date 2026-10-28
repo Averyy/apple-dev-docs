@@ -20,7 +20,7 @@ case actionArchitectureMismatchError
 AMActionArchitectureMismatchError
 ```
 
-#### Discussion
+## Discussion
 
 Actions compiled for PowerPC, for example, would encounter this error on Intel systems.
 

@@ -19,7 +19,7 @@ class VZVirtioSharedMemoryRegion
 @interface VZVirtioSharedMemoryRegion : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate a `VZVirtioSharedMemoryRegion` directly.
 

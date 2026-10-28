@@ -25,7 +25,7 @@ var ringSegmentCount: Int { get set }
 @property (nonatomic) NSInteger ringSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 This segment count corresponds to the circle formed by the torus’ major radius or [`ringRadius`](./ringradius.md) property. A larger number of segments adds more vertex data to the geometry, creating a more smoothly curved surface at a cost to rendering performance.
 

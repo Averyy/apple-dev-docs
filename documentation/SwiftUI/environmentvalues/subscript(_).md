@@ -31,7 +31,7 @@ subscript<K>(key: K.Type) -> K.Value where K : UITraitBridgedEnvironmentKey { ge
 subscript<T>(objectType: T.Type) -> T? where T : AnyObject, T : Observable { get set }
 ```
 
-#### Overview
+## Overview
 
 Create a custom environment value by declaring a new property in an extension to the environment values structure and applying the [`Entry()`](../entry%28%29.md) macro to the variable declaration:
 

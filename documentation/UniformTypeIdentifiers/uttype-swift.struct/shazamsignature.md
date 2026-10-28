@@ -21,7 +21,7 @@ A type that represents a signature.
 static var shazamSignature: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.shazamsignature`.
 

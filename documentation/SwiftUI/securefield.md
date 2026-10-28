@@ -22,7 +22,7 @@ nonisolated
 struct SecureField<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Use a secure field when you want the behavior of a [`TextField`](./textfield.md), but you want to hide the field’s text. Typically, you use this for entering passwords and other sensitive information, as the second field in the following screenshot demonstrates:
 
@@ -41,7 +41,7 @@ The field:
 - Prevents anyone from cutting or copying the field’s contents.
 - Displays an indicator when Caps Lock is enabled.
 
-##### Bind to a string
+### Bind to a string
 
 A secure field binds to a string value and updates the string on every keystroke or other edit, so you can read its value at any time from elsewhere in your code. The following code shows how to create the above interface, with the secure field bound to a `password` string:
 
@@ -68,7 +68,7 @@ var body: some View {
 
 The field in the above example has an [`onSubmit(of:_:)`](./view/onsubmit%28of,_%29.md) modifier that sends the `username` and `password` strings to a custom `handleLogin(username:password:)` method if someone presses the Return key while the secure field has focus. You can alternatively provide another mechanism — like a button — to do the same thing.
 
-##### Guide people with a prompt
+### Guide people with a prompt
 
 In addition to the string or view that you provide as a label, you can also provide a [`Text`](./text.md) view prompt to help guide someone who uses the field, as the following [`Form`](./form.md) does:
 

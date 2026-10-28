@@ -22,11 +22,11 @@ Returns a new shape with filled regions in either this shape or the given shape.
 nonisolated func union<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A new shape.
 
-#### Discussion
+## Discussion
 
 The filled region of resulting shape is the combination of the filled region of both shapes added together.
 

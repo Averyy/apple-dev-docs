@@ -24,7 +24,7 @@ func replace(_ object: Any, with newObject: Any)
 - (void) replaceObject:(id) object withObject:(id) newObject;
 ```
 
-#### Discussion
+## Discussion
 
 Both `object` and `newObject` must be valid objects.
 

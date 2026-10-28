@@ -5,7 +5,7 @@
 
 Retrieve information from a QuickTime VR node with QuickTime atom container functions.
 
-#### Overview
+## Overview
 
 You can use standard QuickTime atom container functions to retrieve the information in a QuickTime VR node header atom. For example, the `MyGetNodeName` function defined in the following listing returns the name of a node, given its node ID.
 

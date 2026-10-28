@@ -24,7 +24,7 @@ A view controller for interactively creating and showing markup.
 
 - [Integrating PaperKit into your app](./getting-started-with-paperkit.md)
 
-#### Overview
+## Overview
 
 Properties are observable, so to save markup changes to disk, iterate over the changes to `markup`.
 

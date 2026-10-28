@@ -17,7 +17,7 @@ Applies the Softmin function.
 class Softmin
 ```
 
-#### Overview
+## Overview
 
 This operation is a numerically stable version of:
 
@@ -25,7 +25,7 @@ This operation is a numerically stable version of:
 exp(-a) / sum(exp(-a), axis, keepdims: true)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`softmin(_:axis:)`](./softmin%28_,axis%29.md)

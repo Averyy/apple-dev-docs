@@ -31,7 +31,7 @@ var carIdentifier: String { get }
 @property (atomic, copy, readonly) NSString * carIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is a unique value that your app provides that isn’t the vehicle’s VIN or equivalent identifier.
 

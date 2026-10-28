@@ -17,7 +17,7 @@ A message that tells people why your app requests access to a person’s focus s
 - **Name**: `NSFocusStatusUsageDescription` (Privacy - Focus Status Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Add this key before you use [`INFocusStatusCenter`](../../Intents/infocusstatuscenter.md) to discover a person’s focus status.
 

@@ -19,7 +19,7 @@ protocol NSTextViewportRenderingSurfaceKey : NSObjectProtocol
 @protocol NSTextViewportRenderingSurfaceKey <NSObject>
 ```
 
-#### Overview
+## Overview
 
 `NSString` and [`NSTextLayoutFragment`](./nstextlayoutfragment.md) conform to this protocol.
 

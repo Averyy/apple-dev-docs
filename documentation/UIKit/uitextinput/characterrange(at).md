@@ -24,7 +24,7 @@ func characterRange(at point: CGPoint) -> UITextRange?
 - (UITextRange *) characterRangeAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing a range that encloses a character (or characters) at `point`.
 

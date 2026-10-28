@@ -21,7 +21,7 @@ Creates a color volume transform.
 init(customHDRReferenceWhite: Float? = nil, adaptiveToneMapping: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.invalidHDRReferenceWhite(_:)`](../error/invalidhdrreferencewhite%28_%29.md) if `customHDRReferenceWhite` is less than or equal to `0`.
 

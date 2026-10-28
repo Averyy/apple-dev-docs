@@ -17,7 +17,7 @@ Sets the character of the receiver’s title to be used as a mnemonic character.
 - (void) setMnemonicLocation:(NSUInteger) location;
 ```
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

@@ -26,7 +26,7 @@ class UIHoverGestureRecognizer
 
 - [Optimizing your iPad app for Mac](./optimizing-your-ipad-app-for-mac.md)
 
-#### Overview
+## Overview
 
 On macOS and iPadOS devices, a person can move the pointer over user interface elements. For some UI designs, it’s important to know when the pointer moves over an element, with no other user interactions, such as clicking the mouse button. The text for a hyperlink, for instance, may change colors or appear with an underline as the pointer moves over the link. This creates a rollover effect.
 

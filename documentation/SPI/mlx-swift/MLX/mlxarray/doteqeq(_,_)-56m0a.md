@@ -21,7 +21,7 @@ static func .== (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Equality comparison on two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -36,7 +36,7 @@ if (a .== b).all().item() {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](../logical.md)
 - [`allClose(_:rtol:atol:equalNaN:stream:)`](./allclose%28_,rtol,atol,equalnan,stream%29.md)

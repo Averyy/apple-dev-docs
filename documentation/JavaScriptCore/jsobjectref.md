@@ -24,7 +24,7 @@ typealias JSObjectRef = OpaquePointer
 typedef struct OpaqueJSValue * JSObjectRef;
 ```
 
-#### Discussion
+## Discussion
 
 A [`JSObjectRef`](./jsobjectref.md) is a [`JSValueRef`](./jsvalueref.md).
 

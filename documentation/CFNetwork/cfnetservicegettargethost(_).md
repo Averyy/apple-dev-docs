@@ -26,11 +26,11 @@ func CFNetServiceGetTargetHost(_ theService: CFNetService) -> Unmanaged<CFString
 extern CFStringRefCFNetServiceGetTargetHost(CFNetServiceRef theService);
 ```
 
-#### Return Value
+## Return Value
 
 The target host name of the machine providing the service or `NULL` is of the service’s target host is not known. (The target host will not be known if it has not been resolved.)
 
-#### Discussion
+## Discussion
 
 This function is thread safe, but the target host name is not safe if the service is altered from another thread.
 

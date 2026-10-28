@@ -25,7 +25,7 @@ case promptDeclined
 kCLErrorPromptDeclined
 ```
 
-#### Discussion
+## Discussion
 
 If the prompt was shown to the user, who declined, or if an error prevented the prompt from being displayed, then `requestTemporaryPreciseLocationAuthorization(withPurposeKey:completion:)` throws this error.
 

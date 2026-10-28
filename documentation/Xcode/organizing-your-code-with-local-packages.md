@@ -5,7 +5,7 @@
 
 Simplify maintenance, promote modularity, and encourage reuse by organizing your app’s code into local Swift packages.
 
-#### Overview
+## Overview
 
 As you develop your app, organize its code in a modular way to keep it maintainable by creating Swift packages and using them as *local packages*.
 

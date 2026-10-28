@@ -20,7 +20,7 @@ class SecStaticCode
 typedef const struct __SecCode * SecStaticCodeRef;
 ```
 
-#### Discussion
+## Discussion
 
 Compare with [`SecCode`](./seccode.md).
 

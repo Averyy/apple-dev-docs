@@ -19,7 +19,7 @@ let kLSQuarantineTypeKey: CFString
 const CFStringRef kLSQuarantineTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

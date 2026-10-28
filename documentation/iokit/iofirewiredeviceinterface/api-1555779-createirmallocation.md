@@ -16,11 +16,11 @@ Attempt to create an IRM allocation that persists accross bus-resets.
 IOFireWireLibIRMAllocationRef (*CreateIRMAllocation)(IOFireWireLibDeviceRef self, Boolean releaseIRMResourcesOnFree, IOFireWireLibIRMAllocationLostNotificationProc callback, void *pLostNotificationProcRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the newly created IRM allocation object, if successful, NULL otherwise.
 
-#### Discussion
+## Discussion
 
 Create an IOFireWireIRMAllocation object, which can be used to allocate IRM resources, and will reallocate automatically after bus-resets (if possible).
 

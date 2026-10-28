@@ -26,7 +26,7 @@ var configuredTimeOffsetFromLive: CMTime { get set }
 @property CMTime configuredTimeOffsetFromLive;
 ```
 
-#### Discussion
+## Discussion
 
 For nonlive stream content, the value is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 

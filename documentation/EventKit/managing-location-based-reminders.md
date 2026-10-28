@@ -12,15 +12,15 @@ Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 With the Reminders app, people can create reminders with alarms based on time and location. When Location Services is turned on, people receive location-based reminders when entering or leaving a specified geographic area or geofence. This sample code demonstrates how to add, fetch, complete, remove, filter, and sort location-based reminders. You app must first request full access to reminders from the person using the app before it can access their reminder data. An app with full access can create, edit, save, delete, and fetch all reminders on all of the person’s calendars. For more information, see [Accessing the event store](./accessing-the-event-store.md). Next, register your app for [`EKEventStoreChanged`](./ekeventstorechangednotification.md) notifications at launch to listen for any changes to the person’s Calendar database. When your app receives this notification, consider your current reminder data are stale or invalid and refetch all your reminders. For more information, see [Updating with Notifications](./updating-with-notifications.md).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before running the sample code project in Xcode, select the sample target, then configure it to use your team for signing. For more information, see Assign the project to a team in [Preparing your app for distribution](../Xcode/preparing-your-app-for-distribution.md).
 
-##### Provide a map annotation
+### Provide a map annotation
 
 The sample app presents a map with custom annotations that someone can use to create location-based reminders within the app. It uses location-specific data saved in the `MapData.json` file to create annotations for the map. The sample defines a `MapAnnotation` data type to represent each annotation. `MapData.json` contains three `MapAnnotation` entries. To test reminders around other locations, duplicate and update a `MapAnnotation` entry in `MapData.json` with other data as needed.
 
@@ -28,13 +28,13 @@ The sample displays a settings button that allows the person to grant or deny th
 
 > ❗ **Important**: The app includes the [`NSLocationWhenInUseUsageDescription`](../BundleResources/information-property-list/nslocationwheninuseusagedescription.md) key in its `Info.plist`. This key is required for apps that access the person’s location services. For more information on using location services, see [Configuring your app to use location services](../CoreLocation/configuring-your-app-to-use-location-services.md).
 
-##### Provide a full-access usage description for reminders
+### Provide a full-access usage description for reminders
 
 The sample includes the [`NSRemindersFullAccessUsageDescription`](../BundleResources/information-property-list/nsremindersfullaccessusagedescription.md) key in its `Info.plist` file. The value of the key is a string that explains why the app needs access to a person’s reminders. The system displays the string when prompting the person for authorization.
 
 > ❗ **Important**: The `NSRemindersFullAccessUsageDescription` key is required for apps that access a person’s reminders. On iOS 17 or later, if your app doesn’t include `NSRemindersFullAccessUsageDescription` or the older [`NSRemindersUsageDescription`](../BundleResources/information-property-list/nsremindersusagedescription.md) key, iOS automatically denies any access request without a prompt. For more information, see [Accessing the event store](./accessing-the-event-store.md).
 
-##### Check your app authorization status
+### Check your app authorization status
 
 The sample app verifies its authorization status upon launching. The authorization status of the app is [`.notDetermined`](./ekauthorizationstatus/notdetermined.md) until the person authorizes or denies access. The person can grant or deny the app access to their reminder data, then change the authorization status later in the Settings app. To determine its status, the app calls the [`authorizationStatus(for:)`](./ekeventstore/authorizationstatus%28for%29.md) class method of [`EKEventStore`](./ekeventstore.md) with an entity type [`reminder`](./ekentitytype/reminder.md):
 
@@ -42,7 +42,7 @@ The sample app verifies its authorization status upon launching. The authorizati
 authorizationStatus = EKEventStore.authorizationStatus(for: .reminder)
 ```
 
-##### Request full access
+### Request full access
 
 If the authorization status is [`.notDetermined`](./ekauthorizationstatus/notdetermined.md), the sample app initializes a single instance of [`EKEventStore`](./ekeventstore.md), `eventStore`, then calls its [`requestFullAccessToReminders()`](./ekeventstore/requestfullaccesstoreminders%28completion%29.md) method to prompt the person for full access:
 
@@ -61,7 +61,7 @@ If the person approves the request, the app receives a [`.fullAccess`](./ekautho
 
 > ❗ **Important**: Set up your app to instantiate and use a single instance of [`EKEventStore`](./ekeventstore.md) that manages all reminder-related tasks. An `EKEventStore` object requires a significant amount of time to initialize and release.
 
-##### Check for a default list
+### Check for a default list
 
 Creating a reminder requires a list, which is a calendar for these items. The app calls [`defaultCalendarForNewReminders()`](./ekeventstore/defaultcalendarfornewreminders%28%29.md) on `eventStore` to check whether the person has specified a default list for reminders.
 
@@ -71,7 +71,7 @@ eventStore.defaultCalendarForNewReminders() != nil
 
 The app fetches and displays location reminders in all of the person’s calendars if `defaultCalendarForNewReminders()` returns a value, and shows a message prompting the person to create a list, otherwise.
 
-##### Create location-based reminders
+### Create location-based reminders
 
 A location-based reminder is a reminder created with a geofence-enabled alarm. A geofence-enabled alarm has a structured location and proximity configured. The structured location consists of a location object and radius. To use the default radius, set its value to 0. The sample uses the following steps to create a location-based reminder:
 
@@ -146,7 +146,7 @@ Finally, it saves the reminder to the person’s Calendar database:
 try eventStore.save(reminder, commit: true)
 ```
 
-##### Fetch location-based reminders
+### Fetch location-based reminders
 
 The [`fetchReminders(matching:completion:)`](./ekeventstore/fetchreminders%28matching,completion%29.md) method asynchronously fetches all reminders matching a given predicate. The app calls this method with [`predicateForReminders(in:)`](./ekeventstore/predicateforreminders%28in%29.md) to fetch complete and incomplete reminders. The predicate takes `nil` or an array of [`EKCalendar`](./ekcalendaritem/calendar.md) objects in its `calendars` parameters. Pass `nil` to fetch from all of the person’s calendars, and an array to fetch reminders from a subset of the person’s calendars. The app passes `nil` to `predicateForReminders(in:)`:
 
@@ -186,7 +186,7 @@ var isLocation: Bool {
 }
 ```
 
-##### Filter and sort reminders
+### Filter and sort reminders
 
 After fetching the location-based reminders, the app displays a segmented control that organizes the fetched reminders by priority: None, Low, Medium, and High. Fetching reminders from the Calendar database returns reminders sorted by creation date. The app offers a menu that lets people choose how to sort the reminders by creation date, due date, or title in ascending order. When someone selects a priority in the control, the sample inspects the fetch result. If the result contains location reminders with the priority the person selected, the app uses the person’s sorting preferences to sort the reminders, then it displays them. The sample uses key paths to sort the fetched location-based reminders.
 

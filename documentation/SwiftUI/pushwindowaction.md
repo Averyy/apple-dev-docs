@@ -16,7 +16,7 @@ An action that opens the requested window in place of the window the action is c
 struct PushWindowAction
 ```
 
-#### Overview
+## Overview
 
 The scene this action is called from will be backgrounded. The requested scene will be center-aligned with the backgrounded scene. The requested scene will have a default size that matches the size of the backgrounded scene. Closing the requested window will result in the backgrounded scene reappearing.
 

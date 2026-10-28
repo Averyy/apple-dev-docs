@@ -21,7 +21,7 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 - (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user interface item should be enabled, otherwise [`false`](../../Swift/false.md).
 

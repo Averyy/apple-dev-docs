@@ -26,15 +26,15 @@ func CFNetServiceGetName(_ theService: CFNetService) -> Unmanaged<CFString>
 extern CFStringRefCFNetServiceGetName(CFNetServiceRef theService);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object containing the name of the service represented by the CFNetService.
 
-#### Discussion
+## Discussion
 
 This function gets the name from a CFNetService.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe. The function gets the data in a thread-safe way, but the data is not safe if the service is altered from another thread.
 

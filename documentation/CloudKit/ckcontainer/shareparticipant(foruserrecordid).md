@@ -21,11 +21,11 @@ Fetches the share participant with the specified user record ID.
 func shareParticipant(forUserRecordID userRecordID: CKRecord.ID) async throws -> CKShare.Participant
 ```
 
-#### Return Value
+## Return Value
 
 The share participant for the user record ID.
 
-#### Discussion
+## Discussion
 
 This method searches for the share participant asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
 

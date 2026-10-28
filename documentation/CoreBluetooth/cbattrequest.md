@@ -25,7 +25,7 @@ class CBATTRequest
 @interface CBATTRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`CBATTRequest`](./cbattrequest.md) class represents Attribute Protocol (ATT) read and write requests from remote central devices (represented by [`CBCentral`](./cbcentral.md) objects). Remote centrals use these ATT requests to read and write characteristic values on local peripherals (represented by [`CBPeripheralManager`](./cbperipheralmanager.md) objects). Local peripherals, on the other hand, use the properties of [`CBATTRequest`](./cbattrequest.md) objects to respond to the read and write requests appropriately, using the [`respond(to:withResult:)`](./cbperipheralmanager/respond%28to,withresult%29.md) method of the [`CBPeripheralManager`](./cbperipheralmanager.md) class.
 

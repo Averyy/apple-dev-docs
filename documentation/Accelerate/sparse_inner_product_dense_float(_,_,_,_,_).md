@@ -25,11 +25,11 @@ func sparse_inner_product_dense_float(_ nz: sparse_dimension, _ x: UnsafePointer
 float sparse_inner_product_dense_float(sparse_dimension nz, const float * restrictx, const sparse_index * restrictindx, const float * restricty, sparse_stride incy);
 ```
 
-#### Return Value
+## Return Value
 
 The inner product of sparse vector *x* with dense vector *y*.  Returns zero if `nz` is less than or equal to zero.
 
-#### Discussion
+## Discussion
 
 Indices in `indx` are always assumed to be stored in ascending order. Additionally, indices are assumed to be unique.  The behavior of this function is undefined if either of these assumptions are not met.
 

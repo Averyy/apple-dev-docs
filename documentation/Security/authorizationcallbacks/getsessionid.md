@@ -21,11 +21,11 @@ Reads the session ID.
 int (*)(struct __OpaqueAuthorizationEngine *, void **) GetSessionId;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 The session ID is a unique value provided by the authorization engine for a given authorization session. Normally, all the mechanisms in your plug-in are called in turn for a given authorization session and there is no need to ask for the session ID. However, if you were to launch an authorization daemon (for example) that caches data from different authorization sessions and then uses that data later, you might need to keep track of which session a given data item came from. The session ID is available for your use if you wish to implement such a system.
 

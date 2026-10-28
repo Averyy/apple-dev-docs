@@ -22,7 +22,7 @@ optional func calendarChooserSelectionDidChange(_ calendarChooser: EKCalendarCho
 - (void) calendarChooserSelectionDidChange:(EKCalendarChooser *) calendarChooser;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`selectedCalendars`](../ekcalendarchooser/selectedcalendars.md) property to get the current selection.
 

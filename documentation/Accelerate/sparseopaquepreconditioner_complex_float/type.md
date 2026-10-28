@@ -25,7 +25,7 @@ var type: SparsePreconditioner_t
 SparsePreconditioner_t type;
 ```
 
-#### Discussion
+## Discussion
 
 - **`SparsePreconditionerNone`**: No preconditioner, used to flag an empty type as required.
 - **`SparsePreconditionerUser`**: User-defined preconditioner.

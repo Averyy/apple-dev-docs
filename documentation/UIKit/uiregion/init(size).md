@@ -23,11 +23,11 @@ init(size: CGSize)
 - (instancetype) initWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangular region of the specified size.
 
-#### Discussion
+## Discussion
 
 The center of the rectangle is the origin of the region’s coordinate system.
 

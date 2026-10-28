@@ -21,7 +21,7 @@ Copies references to objects contained in the array that fall within the specifi
 - (void) getObjects:(ObjectType[]) objects range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 The method copies into `aBuffer` references to objects in the array in the range specified by `aRange`; the size of the buffer must therefore be at least the length of the range multiplied by the size of an object reference, as shown in the following example (this is solely for illustration—you should typically not create a buffer simply to iterate over the contents of an array):
 

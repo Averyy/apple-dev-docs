@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionCreateSummary(allocator: CFAllocator?, formatDescri
 extern OSStatus CMAudioFormatDescriptionCreateSummary(CFAllocatorRef allocator, CFArrayRef formatDescriptionArray, uint32_t flags, CMAudioFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 To `kCFAllocatorDefault` or `NULL` to use the default allocator.
 

@@ -24,7 +24,7 @@ var indexBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange indexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You can set this property to `0`, the default, to avoid specifying an index buffer. All keyframes share the same index buffer.
 

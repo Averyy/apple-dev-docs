@@ -24,11 +24,11 @@ class func predicateForObjects(from sources: Set<HKSource>) -> NSPredicate
 + (NSPredicate *) predicateForObjectsFromSources:(NSSet<HKSource *> *) sources;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches all the objects created by any of the provided sources.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that finds all the objects from a specified set of apps or devices. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

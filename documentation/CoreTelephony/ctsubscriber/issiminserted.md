@@ -21,7 +21,7 @@ var isSIMInserted: Bool { get }
 @property (readonly, getter=isSIMInserted) BOOL SIMInserted;
 ```
 
-#### Discussion
+## Discussion
 
 This value property is `true` if the system finds a SIM matching the `Info.plist` carrier information (MCC / MNC / GID1 / GID2).
 

@@ -5,7 +5,7 @@
 
 Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets and Live Activities.
 
-#### Overview
+## Overview
 
 With Xcode previews, you can make changes to your app’s code and see the results quickly in the preview canvas. Using the `#Preview` macros for widgets, you can preview widgets and Live Activities. The macros allow you to provide timeline entries and content states and click through timeline updates and content changes. As a result, Xcode previews help you quickly and iteratively develop, review, and fine-tune functionality and animations.
 
@@ -13,7 +13,7 @@ For general information about Xcode previews, refer to [Adding previews to your 
 
 > **Note**: Xcode previews support for iOS and watchOS widgets, and Live Activities. Debug your macOS widgets as described in [Debugging widgets](./debugging-widgets.md).
 
-##### Provide timeline entries to widget previews
+### Provide timeline entries to widget previews
 
 With Xcode previews, you can preview each widget for context and appearance to adjust your widget layouts as needed and iteratively refine their appearance. For example, create a preview for you [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md) widget and view it on the preview canvas in light mode, dark mode, in StandBy, in NightMode, and on the iPad Lock Screen.
 
@@ -43,7 +43,7 @@ The following example shows a preview for the medium system family widget of the
 
 > 💡 **Tip**: You can click the pin button in the upper left of the canvas to keep the preview active even when navigating to another file. Then, press the preview’s play button in the timeline and the loop button. This process allows you to make code changes in one half of the editor — for example, fixing a transition in one file — while you view the updates live in the preview canvas on the second half of the editor without navigating back and forth from the preview canvas.
 
-##### Create previews for your Live Activities
+### Create previews for your Live Activities
 
 Previewing Live Activities with Xcode works similar to previewing widgets. The only notable difference is that ActivityKit doesn’t use timelines to update your Live Activities. As a result, the [`Preview(_:as:using:widget:contentStates:)`](./preview%28_,as,using,widget,contentstates%29.md) macro for Live Activities let you provide `contentStates` to preview content updates for your Live Activity previews.
 

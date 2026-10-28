@@ -25,11 +25,11 @@ func class_getSuperclass(_ cls: AnyClass?) -> AnyClass?
 extern Classclass_getSuperclass(Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 The superclass of the class, or `Nil` if `cls` is a root class, or `Nil` if `cls` is `Nil`.
 
-#### Discussion
+## Discussion
 
 You should usually use `NSObject`’s [`superclass()`](./nsobject-swift.class/superclass%28%29.md) method instead of this function.
 

@@ -16,11 +16,11 @@
 virtual const IOReportElementValues * getElementValues(int element_index);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the element values requested or NULL on failure
 
-#### Discussion
+## Discussion
 
 Internal method to directly access the values of an element
 

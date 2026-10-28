@@ -25,7 +25,7 @@ var relinquishFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Voi
 @property (nullable) void (*)(const void *, unsigned long (*)(const void *)) relinquishFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This specifies the function to use when an item is removed from a table or pointer array.
 

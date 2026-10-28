@@ -31,7 +31,7 @@ var maximumNumberOfResults: NSNumber? { get set }
 @property (atomic, copy, nullable) NSNumber * maximumNumberOfResults;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property to limit the total number of reservations you include in your response to this intent. If this property is `nil`, include all of the reservations you found.
 

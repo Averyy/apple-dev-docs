@@ -16,7 +16,7 @@ Checks whether code on disk satisfies a lightweight code requirement.
 func SecCodeCheckValidityWithOnDiskRequirement(code: SecCode, flags: SecCSFlags, requirement: OnDiskCodeRequirement) -> ValidationResult
 ```
 
-#### Discussion
+## Discussion
 
 Returns a validation result which indicates whether the code signature is valid, whether it matches the requirement, and if not one of those two, then why not.
 

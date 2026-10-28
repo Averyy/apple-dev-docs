@@ -20,11 +20,11 @@ class SBElementArray
 @interface SBElementArray : NSMutableArray
 ```
 
-#### Overview
+## Overview
 
 `SBElementArray` defines methods beyond those of [`NSArray`](../Foundation/nsarray.md) for obtaining individual objects. In addition to [`object(at:)`](../Foundation/nsarray/object%28at%29.md), `SBElementArray` also defines [`object(withName:)`](./sbelementarray/object%28withname%29.md), [`object(withID:)`](./sbelementarray/object%28withid%29.md), and [`object(atLocation:)`](./sbelementarray/object%28atlocation%29.md).
 
-#### Subclassing Notes
+## Subclassing Notes
 
 The `SBElementArray` class is not designed for subclassing.
 

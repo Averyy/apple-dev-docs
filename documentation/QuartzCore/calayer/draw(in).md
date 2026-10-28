@@ -24,7 +24,7 @@ func draw(in ctx: CGContext)
 - (void) drawInContext:(CGContextRef) ctx;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does not do any drawing itself. If the layer’s delegate implements the  [`draw(_:in:)`](../calayerdelegate/draw%28_,in%29.md) method, that method is called to do the actual drawing.
 

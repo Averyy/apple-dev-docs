@@ -10,7 +10,7 @@ An atom that indicates not to automatically select this track.
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 Some alternate tracks contain something other than a direct translation (or untranslated written form) of the primary content. Commentary tracks are one example. Don’t automatically select these tracks. The presence of the Track Exclude From Autoselection atom in a track indicates not to automatically select this track.
 

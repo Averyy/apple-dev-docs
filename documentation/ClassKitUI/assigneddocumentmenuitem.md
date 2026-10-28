@@ -16,7 +16,7 @@ A menu item that provides assigned document submission functionality.
 class AssignedDocumentMenuItem
 ```
 
-#### Overview
+## Overview
 
 `AssignedDocumentMenuItem` enables students to submit and withdraw assigned documents directly from AppKit menus. The menu element loads asynchronously, fetching document metadata from ClassKit and displaying the appropriate action based on the current submission status. The element shows an in-line spinner during both initial loading and submission processing.
 

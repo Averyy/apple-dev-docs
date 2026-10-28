@@ -19,7 +19,7 @@ Should be called by the app when a tab is moved to fire appropriate events with 
 - (void) didMoveTab:(id<WKWebExtensionTab>) movedTab fromIndex:(NSUInteger) index inWindow:(id<WKWebExtensionWindow>) oldWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the movement of a tab, ensuring consistent understanding across extensions.
 

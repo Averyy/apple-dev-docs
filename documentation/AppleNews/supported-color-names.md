@@ -5,7 +5,7 @@
 
 Learn the color names supported in Apple News Format.
 
-#### Overview
+## Overview
 
 One of the ways to specify a color is by its name. (For other strings that can represent a color, see [`Color`](../AppleNewsFormat/color.md).)
 

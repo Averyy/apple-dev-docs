@@ -17,7 +17,7 @@ A Boolean value that determines whether the devices are listening for an applica
 var isApplicationService: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `true` if a device is listening for an application service. The value is `false` otherwise.
 

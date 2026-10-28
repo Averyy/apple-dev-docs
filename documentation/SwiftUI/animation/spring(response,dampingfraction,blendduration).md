@@ -21,7 +21,7 @@ A persistent spring animation. When mixed with other `spring()` or `interactiveS
 static func spring(response: Double = 0.5, dampingFraction: Double = 0.825, blendDuration: TimeInterval = 0) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 A spring animation.
 

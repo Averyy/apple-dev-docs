@@ -23,11 +23,11 @@ convenience init(duration: TimeInterval, dampingRatio ratio: CGFloat, animations
 - (instancetype) initWithDuration:(NSTimeInterval) duration dampingRatio:(CGFloat) ratio animations:(void (^)()) animations;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized animator object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Spring-based animations cause the value of a property to accelerate initially toward its new value and then oscillate around that value until before finally coming to rest on the value. The initial amount of acceleration is proportional to the difference between the start and end values of the property. In other words, the greater the difference between the start and end values, the greater the initial acceleration. The `ratio` parameter determines the amount of damping applied to the initial acceleration. Lower damping values correspond to less resistance to the acceleration and more oscillation before coming to rest. Higher damping values correspond to more resistance and less oscillation.
 

@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioControl value attribute.
 #define kIOAudioControlValueKey
 ```
 
-#### Discussion
+## Discussion
 
 The value returned by this key is a 32-bit integer representing the current value of the IOAudioControl.
 

@@ -19,7 +19,7 @@ The primary decision that’s in effect at the specified time, unless it’s out
 final func primaryDecision(at time: CMTime) -> CNDecision?
 ```
 
-#### Return Value
+## Return Value
 
 A value representing the primary decision that’s in effect at the specified time, unless it’s outside the time range of the Cinematic script. The value also represents the decision being transitioned away from the given time is during a focus transition.
 

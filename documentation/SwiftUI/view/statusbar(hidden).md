@@ -21,7 +21,7 @@ nonisolated
 func statusBar(hidden: Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to show or hide the status bar.
 

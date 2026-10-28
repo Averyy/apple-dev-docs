@@ -23,7 +23,7 @@ var backgroundView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * backgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 [`UITableViewCell`](../uitableviewcell.md) adds the background view as a subview behind all other views and uses its current frame location.
 

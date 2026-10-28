@@ -16,7 +16,7 @@
 kINQUIRY_Byte6_ENCSERV_Bit
 ```
 
-#### Discussion
+## Discussion
 
 ENCSERV bit definition.
 

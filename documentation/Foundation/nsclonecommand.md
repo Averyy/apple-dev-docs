@@ -20,7 +20,7 @@ class NSCloneCommand
 @interface NSCloneCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSCloneCommand` clones the specified scriptable object or objects (such as words, paragraphs, images, and so on) and inserts them in the specified location, or the default location if no location is specified. The cloned scriptable objects typically correspond to objects in the application, but aren’t required to. This command corresponds to AppleScript’s `duplicate` command.
 

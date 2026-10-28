@@ -23,7 +23,7 @@ class var softSign: MLCActivationLayer { get }
 @property (class, nonatomic, readonly) MLCActivationLayer * softSignLayer;
 ```
 
-#### Discussion
+## Discussion
 
 This factory creates an activation descriptor using [`init(type:)`](../mlcactivationdescriptor/init%28type%29.md), where `type =` [`MLCActivationType.softSign`](../mlcactivationtype/softsign.md), and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

@@ -23,7 +23,7 @@ var inputGain: Float { get }
 @property (readonly) float inputGain;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a floating point value ranging from `0.0` to `1.0`, where `0.0` represents the lowest gain setting, and `1.0` represents the highest gain setting.
 

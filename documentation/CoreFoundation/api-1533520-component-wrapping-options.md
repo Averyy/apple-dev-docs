@@ -5,7 +5,7 @@
 
 The wrapping option specifies overflow behavior for calendar components in calendrical calculations
 
-#### Overview
+## Overview
 
 The wrapping option specifies overflow behavior for calendar components in calendrical calculations—see [`CFCalendarAddComponents`](./cfcalendaraddcomponents.md) and [`CFCalendarGetComponentDifference`](./cfcalendargetcomponentdifference.md).
 

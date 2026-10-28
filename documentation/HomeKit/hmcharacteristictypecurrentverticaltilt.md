@@ -24,7 +24,7 @@ let HMCharacteristicTypeCurrentVerticalTilt: String
 extern NSString * const HMCharacteristicTypeCurrentVerticalTilt;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value represents the angle in degrees, with a value between -90 and 90.
 

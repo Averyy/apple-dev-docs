@@ -25,7 +25,7 @@ struct Artwork
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 The following example shows how to attach artwork to a content value:
 

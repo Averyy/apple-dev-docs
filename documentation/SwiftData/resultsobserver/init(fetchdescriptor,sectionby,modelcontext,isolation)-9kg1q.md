@@ -23,7 +23,7 @@ convenience init(fetchDescriptor: FetchDescriptor<Element> = FetchDescriptor<Ele
 
 Available when `Element` conforms to `PersistentModel` and `SectionTitle` is `String`.
 
-#### Discussion
+## Discussion
 
 Use this initializer when the section key path points to an optional `String` property. Elements whose section value is `nil` are grouped into a section with an empty name.
 

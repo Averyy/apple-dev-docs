@@ -19,7 +19,7 @@ func performKeyEquivalent(with event: NSEvent) -> Bool
 - (BOOL) performKeyEquivalent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Override to handle key equivalents. If the character code or codes in `event` match the receiver’s key equivalent, the receiver should respond to the event and return [`true`](../../Swift/true.md). The default implementation does nothing and returns [`false`](../../Swift/false.md).
 

@@ -22,11 +22,11 @@ Accepts an incoming session request from a client using a closure to handle enco
 func accept<Message>(incomingMessageHandler: @escaping @Sendable (Message) -> (any Encodable)?, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) -> (XPCListener.IncomingSessionRequest.Decision, XPCSession) where Message : Decodable
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that indicates whether the listener accepts or rejects the incoming session, and includes the inactive session.
 
-#### Discussion
+## Discussion
 
 The difference between this method and [`accept(incomingMessageHandler:cancellationHandler:)`](./accept%28incomingmessagehandler,cancellationhandler%29-56fch.md) is to allow the listener to configure the session, if needed. If you don’t need to perform any session configuration, use [`accept(incomingMessageHandler:cancellationHandler:)`](./accept%28incomingmessagehandler,cancellationhandler%29-8rodk.md) instead.
 

@@ -11,7 +11,7 @@ Define and configure the appearance of shielding views.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 
-#### Overview
+## Overview
 
 Use Managed Settings UI to customize the appearance of shields that the system displays when someone applies access restrictions to apps or websites. Shields appear when someone exceeds app or website usage limits, such as their daily time allowance, or when access attempts occur during restricted hours.
 

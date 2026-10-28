@@ -18,7 +18,7 @@ The default grounding shadow behavior for the device’s platform.
 case `default`
 ```
 
-#### Discussion
+## Discussion
 
 In visionOS, the default case is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.fade`](./fade.md) when the the system can detect the entity represents a UI; otherwise,[`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](./constant.md).
 

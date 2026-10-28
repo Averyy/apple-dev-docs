@@ -21,7 +21,7 @@ Calls a closure with a mutable pointer to the backing `AudioChannelLayout`.
 mutating func withUnsafeMutablePointer<Result>(_ body: (UnsafeMutablePointer<AudioChannelLayout>) throws -> Result) rethrows -> Result
 ```
 
-#### Discussion
+## Discussion
 
 It is invalid to increase mNumberChannelDescriptions.
 

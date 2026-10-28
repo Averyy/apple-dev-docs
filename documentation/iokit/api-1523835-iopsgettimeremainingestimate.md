@@ -16,7 +16,7 @@ Returns the estimated minutes remaining until all power sources (battery and/or 
 CFTimeInterval IOPSGetTimeRemainingEstimate(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kIOPSTimeRemainingUnknown`](./kiopstimeremainingunknown.md) if the OS cannot determine the time remaining.
 
@@ -24,7 +24,7 @@ Returns [`kIOPSTimeRemainingUnlimited`](./kiopstimeremainingunlimited.md) if the
 
 Otherwise returns a positive number of type CFTimeInterval, indicating the time remaining in seconds until all power sources are depleted.
 
-#### Discussion
+## Discussion
 
 If attached to an "Unlimited" power source, like AC power or any external source, the return value is [`kIOPSTimeRemainingUnlimited`](./kiopstimeremainingunlimited.md)
 

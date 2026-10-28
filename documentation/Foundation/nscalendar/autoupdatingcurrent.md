@@ -25,11 +25,11 @@ class var autoupdatingCurrent: Calendar { get }
 @property (class, strong, readonly) NSCalendar * autoupdatingCurrentCalendar;
 ```
 
-#### Return Value
+## Return Value
 
 The current logical calendar for the current user.
 
-#### Discussion
+## Discussion
 
 Settings you get from this calendar do change as the user’s settings change (contrast with [`current`](./current.md)).
 

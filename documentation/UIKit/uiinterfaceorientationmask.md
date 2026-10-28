@@ -22,7 +22,7 @@ struct UIInterfaceOrientationMask
 enum UIInterfaceOrientationMask : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Starting in iOS 8, you should employ the [`UITraitCollection`](./uitraitcollection.md) and [`UITraitEnvironment`](./uitraitenvironment.md) APIs, and size class properties as used in those APIs, instead of using [`UIInterfaceOrientation`](./uiinterfaceorientation.md) constants or otherwise writing your app in terms of interface orientation.
 

@@ -16,7 +16,7 @@ The URI address of an image file that is shown when no video data is available.
 attribute USVString poster;
 ```
 
-#### Discussion
+## Discussion
 
 When a video element is paused and the current playback position is the first frame of video, the element represents either the frame of video corresponding to the current playback position or the poster frame, at the discretion of the user agent.
 

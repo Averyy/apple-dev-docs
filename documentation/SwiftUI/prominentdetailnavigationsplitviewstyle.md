@@ -22,7 +22,7 @@ A navigation split style that attempts to maintain the size of the detail conten
 @preconcurrency struct ProminentDetailNavigationSplitViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`prominentDetail`](./navigationsplitviewstyle/prominentdetail.md) to construct this style.
 

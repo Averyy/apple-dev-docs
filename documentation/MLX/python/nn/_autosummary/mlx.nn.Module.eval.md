@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.eval
 
-**Module.eval() → [Module](../module.md#mlx.nn.Module)**
-: Set the model to evaluation mode.
+```python
+Module.eval() → Module
+```
+
+Set the model to evaluation mode.
+
 See [train()](mlx.nn.Module.train.md#mlx.nn.Module.train).

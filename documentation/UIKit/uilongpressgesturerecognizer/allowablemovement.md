@@ -23,7 +23,7 @@ var allowableMovement: CGFloat { get set }
 @property (nonatomic) CGFloat allowableMovement;
 ```
 
-#### Discussion
+## Discussion
 
 The allowable distance, measured in points. The default distance is `10` points.
 

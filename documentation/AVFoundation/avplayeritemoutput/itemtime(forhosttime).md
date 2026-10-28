@@ -25,11 +25,11 @@ func itemTime(forHostTime hostTimeInSeconds: CFTimeInterval) -> CMTime
 - (CMTime) itemTimeForHostTime:(CFTimeInterval) hostTimeInSeconds;
 ```
 
-#### Return Value
+## Return Value
 
 The equivalent time in the item’s timebase.
 
-#### Discussion
+## Discussion
 
 The timestamp associated with a [`CADisplayLink`](../../QuartzCore/cadisplaylink.md) object represents the time of the most recent screen refresh, which is usually a time in the past. If you want to find the time associated with the next screen refresh, you need to increment the timestamp by the value in the display link’s `duration` property.
 

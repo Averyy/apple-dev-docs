@@ -14,7 +14,7 @@ A Boolean that indicates whether the app can handle callbacks to match authentic
 - **Name**: `CallbackURLMatchingIsSupported`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set the corresponding value to `YES` to indicate that your browser app supports using an [`ASWebAuthenticationSession.Callback`](../../../AuthenticationServices/aswebauthenticationsession/callback.md) to process authentication redirect URLs.
 

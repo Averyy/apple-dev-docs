@@ -21,7 +21,7 @@ protocol GLKViewDelegate : NSObjectProtocol
 @protocol GLKViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 An object that implements the [`GLKViewDelegate`](./glkviewdelegate.md) protocol can be set as a [`GLKView`](./glkview.md) object’s delegate. A delegate allows your application to provide a drawing method to a [`GLKView`](./glkview.md) object without subclassing the [`GLKView`](./glkview.md) class.
 

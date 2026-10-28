@@ -11,11 +11,11 @@ Pure Virtual member function used by IOWorkLoop for issueing a client calls.
 virtual bool checkForWork();
 ```
 
-#### Return Value
+## Return Value
 
 Return true if this function needs to be called again before all its outstanding events have been processed.
 
-#### Overview
+## Overview
 
 This function called when the work-loop is ready to check for any work to do and then to call out the owner/action.
 

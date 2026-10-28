@@ -21,7 +21,7 @@ Returns a privacy structure that determines whether to redact or show values acc
 static func auto(mask: OSLogPrivacy.Mask) -> OSLogPrivacy
 ```
 
-#### Return Value
+## Return Value
 
 A privacy object that applies the default redaction rules.
 

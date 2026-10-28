@@ -16,7 +16,7 @@ Called when a `TransportMessage` arrives from the accessory’s transport extens
 func handleAccessorySensorMessage(_ message: TransportMessage)
 ```
 
-#### Discussion
+## Discussion
 
 Use this to receive control-plane payloads from your `AccessoryTransportExtension` (e.g. configuration acknowledgements, vendor-specific messages). For raw IMU sample delivery, the extension should call `Session.sendDataToAudioExtension(_:)` directly.
 

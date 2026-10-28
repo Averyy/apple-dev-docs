@@ -23,11 +23,11 @@ func predictedTouches(for touch: UITouch) -> [UITouch]?
 - (NSArray<UITouch *> *) predictedTouchesForTouch:(UITouch *) touch;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UITouch`](../uitouch.md) objects representing the set of touches that the system predicts will occur next. The order of the objects in the array matches the order in which the touches are expected to be delivered to your app. This array does not include the original touch you specified in the *touch* parameter. The return value is `nil` if the object in the *touch* parameter is not associated with the current event.
 
-#### Discussion
+## Discussion
 
 Use this method to minimize the apparent latency between the user’s touch input and the rendering of your onscreen content. Processing touch input from the user and translating that information into drawing commands takes time, and turning those drawing commands into rendered content takes additional time. If the user’s finger or Apple Pencil is moving fast enough, these delays can result in a noticeable gap between the current touch location and the rendered content. To minimize the perceived lag, use the predicted touches of this method as additional, temporary input to your content.
 

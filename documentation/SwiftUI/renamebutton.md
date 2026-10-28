@@ -22,7 +22,7 @@ nonisolated
 struct RenameButton<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 A rename button receives its action from the environment. Use the [`renameAction(_:)`](./view/renameaction%28_%29.md) modifier to set the action. The system disables the button if you don’t define an action.
 

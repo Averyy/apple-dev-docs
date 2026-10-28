@@ -5,7 +5,7 @@
 
 Use navigation split view to enable two and three column navigation in your SwiftUI app while maintaining compatibility with earlier OS versions.
 
-#### Overview
+## Overview
 
 [NavigationSplitView](../SwiftUI/navigationsplitview.md) is a view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns. The Navigation split view API is available on iOS 16, macOS 13, tvOS 16, watchOS 9 and visionOS 1.
 
@@ -13,7 +13,7 @@ Transition from the deprecated [NavigationView](../SwiftUI/navigationview.md) AP
 
 This document describes how using a custom wrapper makes it easier to adopt `NavigationSplitView` and ensures your app remains compatible with the deprecated `NavigationView`, without increasing the app deployment target.
 
-#### Using API availability check to provide backward compatibility using a custom wrapper
+## Using API availability check to provide backward compatibility using a custom wrapper
 
 Use the `#available()` keyword to execute code conditionally based on required platform and version. This allows your app use `NavigationSplitView` if the specified OS versions are iOS 16, macOS 13, tvOS 16, watchOS 9 or visionOS 1 while supporting `NavigationView` for earlier OS versions.
 
@@ -65,7 +65,7 @@ struct NavigationSplitViewWrapper<Sidebar, Content, Detail>: View where Sidebar:
 
 > **Note**: Navigation split view collapses all of its columns into a stack and shows the last column that displays useful information for [compact size classes](https://developer.apple.com/design/human-interface-guidelines/layout), such as on iPhone or in iPad’s Slide Over mode. It also collapses all of its columns into a stack on Apple Watch and Apple TV, regardless of the size class.
 
-#### Revision History
+## Revision History
 
 - **2023-08-29** First published.
 

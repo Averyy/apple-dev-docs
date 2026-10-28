@@ -23,7 +23,7 @@ func applyGamma(_ gamma: vImage.Gamma, destination: vImage.PixelBuffer<Format>)
 
 Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` is `Float`.
 
-#### Discussion
+## Discussion
 
 For example, the following code applies a gamma of `2.0` to a one-pixel pixel buffer:
 

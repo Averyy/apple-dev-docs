@@ -18,15 +18,15 @@ Wait for the next child task to complete, and return a result containing either 
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) mutating func nextResult() async -> Result<ChildTaskResult, Failure>?
+nonisolated(nonsending)
+mutating func nextResult() async -> Result<ChildTaskResult, Failure>?
 ```
 
-#### Return Value
+## Return Value
 
 A `Result.success` value containing the value that the child task returned, or a `Result.failure` value containing the error that the child task threw.
 
-#### Discussion
+## Discussion
 
 The values returned by successive calls to this method appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group. For example:
 

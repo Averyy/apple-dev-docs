@@ -25,7 +25,7 @@ init(texture: SKTexture, size: CGSize)
 - (instancetype) initWithTexture:(SKTexture *) texture size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile definition.
 

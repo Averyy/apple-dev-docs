@@ -21,7 +21,7 @@ struct Settings<Content> where Content : View
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Declaring a custom view](./declaring-a-custom-view.md)
 
-#### Overview
+## Overview
 
 Use a settings scene to have SwiftUI manage views with controls for your app’s settings when you declare your app using the [`App`](./app.md) protocol. When you use an [`App`](./app.md) declaration for multiple platforms, compile the settings scene only in macOS:
 

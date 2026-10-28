@@ -17,7 +17,7 @@ The label of the optional secondary button.
 let secondaryButtonLabel: ShieldConfiguration.Label?
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the primary button, this button is borderless and has no background. If this is `nil`, then the shield doesn’t have a secondary button.
 

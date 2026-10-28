@@ -23,7 +23,7 @@ var kDNSServiceFlagsBackgroundTrafficClass: UInt32 { get }
 kDNSServiceFlagsBackgroundTrafficClass
 ```
 
-#### Discussion
+## Discussion
 
 This flag is meaningful in DNSServiceBrowse, DNSServiceGetAddrInfo, DNSServiceQueryRecord, and DNSServiceResolve. When set, it uses the background traffic class for packets that service the request.
 

@@ -25,11 +25,11 @@ func CGImageMetadataCopyTagMatchingImageProperty(_ metadata: CGImageMetadata, _ 
 extern CGImageMetadataTagRefCGImageMetadataCopyTagMatchingImageProperty(CGImageMetadataRef metadata, CFStringRef dictionaryName, CFStringRef propertyName);
 ```
 
-#### Return Value
+## Return Value
 
 The [`CGImageMetadataTag`](./cgimagemetadatatag.md) object that corresponds to the specified property, or `NULL` if the property wasn’t found.
 
-#### Discussion
+## Discussion
 
 Use this function to quickly search the different metadata dictionaries for a specific tag. The returned tag object contains appropriate values for all fields, including the namespace, prefix, and XMP type.
 

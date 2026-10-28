@@ -19,11 +19,11 @@ func OBEXHeadersToBytes(_ dictionaryOfHeaders: CFDictionary!) -> Unmanaged<CFMut
 CFMutableDataRefOBEXHeadersToBytes(CFDictionaryRef dictionaryOfHeaders);
 ```
 
-#### Return Value
+## Return Value
 
 Mutable data ref containing the bytes of all headers.
 
-#### Discussion
+## Discussion
 
 Returns a CFMutableDataRef containing all the header data found in the dictionary, formatted according to the OBEX/IrMC spec. YOU MUST RELEASE IT when you are finished with it (ie. when the OBEX request is complete). All OBEX-specification defined headers are supported and should be returned to the dictionary. Use the keys defined above to get headers from dictionary. Example usage:
 

@@ -21,7 +21,7 @@ Creates a trajectory expectation with ordered and unordered requirements, plus s
 init(ordered: [ToolExpectation] = [], unordered: [ToolExpectation] = [], disallowed: [ToolExpectation])
 ```
 
-#### Discussion
+## Discussion
 
 Using disallowed expectations always allows additional tool calls; the disallowed list targets specific tools while permitting everything else. To disallow *all* unexpected calls instead, use [`init(ordered:unordered:allowsAdditionalToolCalls:)`](./init%28ordered,unordered,allowsadditionaltoolcalls%29.md) with `allowsAdditionalToolCalls: false`.
 

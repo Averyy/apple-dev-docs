@@ -15,11 +15,11 @@ Creates a `WSProtocolHandlerRef` for use in translating an XML document.
 WSProtocolHandlerRef WSProtocolHandlerCreate(CFAllocatorRef allocator, CFStringRef protocol);
 ```
 
-#### Return Value
+## Return Value
 
 A `WSProtocolHandlerRef`; `NULL` if a parse error occurred.
 
-#### Discussion
+## Discussion
 
 This function creates a `WSProtocolHandlerRef` for use in translating an XML document. A protocol handler translates dictionaries into web services requests. It is created with a string specifying the protocol (XML-RPC or SOAP) and can be modified by setting various properties. It should be noted that the parser can be re-used for multiple parses.
 

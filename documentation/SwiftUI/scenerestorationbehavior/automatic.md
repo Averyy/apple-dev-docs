@@ -21,7 +21,7 @@ The automatic behavior. The scene’s windows will be restored as defined by the
 static let automatic: SceneRestorationBehavior
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, this behavior is governed by a system setting which can be toggled on and off by the user. On all other platforms, it is enabled by default.
 

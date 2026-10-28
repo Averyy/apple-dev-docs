@@ -22,7 +22,7 @@ class func predicateForMedicationDoseEvent(medicationConceptIdentifiers: Set<HKH
 + (NSPredicate *) predicateForMedicationDoseEventWithMedicationConceptIdentifiers:(NSSet<HKHealthConceptIdentifier *> *) medicationConceptIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a predicate for use with HKQuery subclasses.
 

@@ -22,7 +22,7 @@ typealias SecAFPServerSignature = (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UIn
 typedef UInt8[16] SecAFPServerSignature;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This type is deprecated. Use internet password items instead of AppleShare password items.
 

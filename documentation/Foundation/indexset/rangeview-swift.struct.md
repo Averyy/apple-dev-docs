@@ -21,7 +21,7 @@ A view of the contents of an IndexSet, organized by range.
 struct RangeView
 ```
 
-#### Overview
+## Overview
 
 For example, if an IndexSet is composed of: `[1..<5]` and `[7..<10]` and `[13]` then calling `next()` on this view’s iterator will produce 3 ranges before returning nil.
 

@@ -22,7 +22,7 @@ var uti: String? { get set }
 @property (nonatomic, copy, nullable) NSString * UTI;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is used to determine which apps are capable of opening the document. The default value is determined automatically whenever possible. However, if the document is a custom type that cannot be determined readily, the value of this property may be `nil`. If you know the type of the document, you can set the value of this property explicitly.
 

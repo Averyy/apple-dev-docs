@@ -15,7 +15,7 @@ The sender of the MMS message.
 var from: MMSHandle?
 ```
 
-#### Discussion
+## Discussion
 
 The system populates this property for received messages. Don’t populate it when sending a message.
 

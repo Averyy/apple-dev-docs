@@ -20,7 +20,7 @@ A container for audio resources that you can look up by user-defined names.
 struct AudioLibraryComponent
 ```
 
-#### Overview
+## Overview
 
 `AudioLibraryComponent` serves as a container for audio resources, so that you can store loaded audio resources and associate them with an entity for playback using user-defined names. You may use any [`AudioResource`](./audioresource.md) type, such as [`AudioFileResource`](./audiofileresource.md) or [`AudioFileGroupResource`](./audiofilegroupresource.md).
 

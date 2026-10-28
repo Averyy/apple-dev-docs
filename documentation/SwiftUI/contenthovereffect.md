@@ -15,7 +15,7 @@ A `CustomHoverEffect` that applies effects to a view on hover using a closure.
 struct ContentHoverEffect<Effect> where Effect : HoverEffectContent
 ```
 
-#### Overview
+## Overview
 
 Use the [`hoverEffect(in:isEnabled:body:)`](./customhovereffect/hovereffect%28in,isenabled,body%29-swift.type.method.md) method or the `CustomHoverEffect/hoverEffect(in:isEnabled:body:)` or [`hoverEffect(in:isEnabled:body:)`](./view/hovereffect%28in,isenabled,body%29.md) modifiers to create content effects.
 

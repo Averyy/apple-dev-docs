@@ -26,7 +26,7 @@ var debugOptions: SCNDebugOptions { get set }
 @property (nonatomic) SCNDebugOptions debugOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Use these options to display overlays that show otherwise-invisible scene content—such as node bounding boxes and the extents of physics fields—for use in debugging and profiling your app. For example:
 

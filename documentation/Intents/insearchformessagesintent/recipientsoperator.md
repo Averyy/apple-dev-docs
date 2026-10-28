@@ -31,7 +31,7 @@ var recipientsOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator recipientsOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the message must contain all, some, or none of the people listed in the [`recipients`](./recipients.md) property.
 

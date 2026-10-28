@@ -5,7 +5,7 @@
 
 Access CloudKit records created from Core Data managed objects.
 
-#### Overview
+## Overview
 
 Although your Core Data app interacts primarily with managed objects, you can access a managed object’s [`CKRecord`](../CloudKit/ckrecord.md) directly. This is useful if you’re leveraging CloudKit to add features like sharing. You can also use [CloudKit JS](../CloudKitJS/CloudKitJS.md) to access CloudKit records from your web app.
 
@@ -15,7 +15,7 @@ To work with records directly, you need to understand the mappings between entit
 
 > **Note**:  Core Data doesn’t use CloudKit’s native support for relationships, [`CKRecord.Reference`](../CloudKit/ckrecord/reference.md), because this field limits the number of references to 750, and cannot represent many-to-many relationships. Core Data stores the relationship in CloudKit according to its cardinality (one-to-one, one-to-many, or many-to-many), as described in this article.
 
-##### Read Entities from Record Types
+### Read Entities from Record Types
 
 CloudKit doesn’t typically support inheritance, so it provides only a single system field, [`recordType`](../CloudKit/ckrecord/recordtype-6v7au.md), to hold type information. Core Data stores the name of the *root entity* from the inheritance hierarchy in [`recordType`](../CloudKit/ckrecord/recordtype-6v7au.md).
 
@@ -49,7 +49,7 @@ Query against [`recordType`](../CloudKit/ckrecord/recordtype-9s09b.md) when sear
 
 For more information about CloudKit queries, see [`CKQuery`](../CloudKit/ckquery.md).
 
-##### Read Attributes from Fields
+### Read Attributes from Fields
 
 When you initialize a schema, Core Data creates fields for each of an entity’s attributes, mapping the attribute name to a field with a key in the form `CD_[attribute.name]`. The field’s type may vary between Core Data and CloudKit.
 
@@ -92,7 +92,7 @@ UUID=81800071-ECBD-46E1-B4F9-2F7168269497>";
 }, recordType=CD_Post
 ```
 
-##### Read One-to-One Relationships from Fields
+### Read One-to-One Relationships from Fields
 
 One-to-one relationships store foreign keys in both related records, mapping the relationship name to a field with a key in the form `CD_[relationship.name]`. This field stores the foreign key of the related object in the form `CKRecord.recordID.recordName`.
 
@@ -117,7 +117,7 @@ This one-to-one relationship between `ImageData` and `Attachment` would generate
 
 The `CD_imageData` field on the `CD_Attachment` contains the foreign key of the image, and the `CD_attachment` field on the `CD_ImageData` contains the foreign key of the attachment.
 
-##### Read One-to-Many Relationships from Fields
+### Read One-to-Many Relationships from Fields
 
 One-to-many relationships store a foreign key on each record on the many side of the relationship, mapping the relationship name to a field with a key in the form `CD_[relationship name]`. This field stores the foreign key of the related object in the form `CKRecord.recordID.recordName`.
 
@@ -135,7 +135,7 @@ For example, a one-to-many relationship between a single `Post` and multiple `At
 
 Generated `Post` records don’t contain a reference to their attachments.
 
-##### Read Many-to-Many Relationships from CDMR Records
+### Read Many-to-Many Relationships from CDMR Records
 
 Many-to-many relationships model the join table using a custom Core Data Mirrored Relationship (CDMR) record type.
 
@@ -196,7 +196,7 @@ The relationship between any two `Tag` and `Post` records exists in a third CDMR
 
 The structure of a CDMR record is carefully designed to occupy the minimum necessary footprint, and to require the least effort to decode and work with, making it usable outside the Core Data framework.
 
-##### Access CloudKit Objects
+### Access CloudKit Objects
 
 You can access a managed object’s [`CKRecord`](../CloudKit/ckrecord.md) directly through its associated context using `record(for:)` for a single record, or `records(for:)` for multiple records. To retrieve the record ID only, use `recordID(for:)`, or `recordIDs(for:)`.
 

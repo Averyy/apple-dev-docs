@@ -24,7 +24,7 @@ func accessibilityDataTableCellElement(forRow row: Int, column: Int) -> (any UIA
 - (id<UIAccessibilityContainerDataTableCell>) accessibilityDataTableCellElementForRow:(NSUInteger) row column:(NSUInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The accessibility element for the cell.
 

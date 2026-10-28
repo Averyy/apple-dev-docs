@@ -16,7 +16,7 @@ The default style of immersive spaces.
 struct AutomaticImmersionStyle
 ```
 
-#### Overview
+## Overview
 
 You don’t typically use this style explicitly, but if you need to, use [`automatic`](./immersionstyle/automatic.md) with the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md)modifier to specify this style.
 

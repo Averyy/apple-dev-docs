@@ -20,7 +20,7 @@ A notification the system posts when a fragmented movie minder observes that the
 static let AVFragmentedMovieWasDefragmented: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only for changes that occur after an asset’s [`canContainMovieFragments`](../../../AVFoundation/avmovie/cancontainmoviefragments.md) property reaches a [`AVKeyValueStatus.loaded`](../../../AVFoundation/avkeyvaluestatus/loaded.md) status.
 

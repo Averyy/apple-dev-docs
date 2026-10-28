@@ -25,11 +25,11 @@ init(request: URLRequest, cachedResponse: CachedURLResponse?, client: (any URLPr
 - (instancetype) initWithRequest:(NSURLRequest *) request cachedResponse:(NSCachedURLResponse *) cachedResponse client:(id<NSURLProtocolClient>) client;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized protocol object.
 
-#### Discussion
+## Discussion
 
 Subclasses should override this method to do any custom initialization. Don’t call this method explicitly. When you register your custom protocol class, the system will initialize instances of your protocol as needed.
 

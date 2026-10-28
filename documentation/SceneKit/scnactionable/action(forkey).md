@@ -26,11 +26,11 @@ func action(forKey key: String) -> SCNAction?
 - (SCNAction *) actionForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The action object matching the specified key, or `nil` if the node does not have an action identified by the key.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve actions you scheduled using the [`runAction(_:forKey:)`](./runaction%28_,forkey%29.md) or [`runAction(_:forKey:completionHandler:)`](./runaction%28_,forkey,completionhandler%29.md) method.
 

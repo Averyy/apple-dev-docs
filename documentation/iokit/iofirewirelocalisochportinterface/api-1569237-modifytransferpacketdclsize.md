@@ -16,11 +16,11 @@ Modify the transfer size of a transfer packet DCL (send or receive)
 IOReturn (*ModifyTransferPacketDCLSize)(IOFireWireLibLocalIsochPortRef self, DCLTransferPacket *inDCL, IOByteCount size);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success. Will return an error if 'size' is too large for this program.
 
-#### Discussion
+## Discussion
 
 Allows you to modify transfer packet DCLs after they have been compiled and while the DCL program is still running. The transfer size can be set to any size less than or equal to the size set when the DCL program was compiled (including 0).
 

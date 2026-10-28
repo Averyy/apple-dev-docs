@@ -24,7 +24,7 @@ func averageQuantity() -> HKQuantity?
 - (HKQuantity *) averageQuantity;
 ```
 
-#### Return Value
+## Return Value
 
 If the [`discreteAverage`](../hkstatisticsoptions/discreteaverage.md) option was set, this method returns a quantity object containing the average value of all samples matching the query; otherwise, it returns `nil`.
 

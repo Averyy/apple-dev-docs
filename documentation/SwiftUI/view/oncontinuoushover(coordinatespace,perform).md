@@ -28,11 +28,11 @@ nonisolated
 func onContinuousHover(coordinateSpace: CoordinateSpace = .local, perform action: @escaping (HoverPhase) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when the pointer enters, moves within, or exits the view’s bounds.
 
-#### Discussion
+## Discussion
 
 Use this modifier to define a region for detecting pointer movement with a view. The following example updates a small rectangle’s position and style by modifying `hoverLocation` and `isHovering` as the pointer moves within the larger, red rectangle:
 

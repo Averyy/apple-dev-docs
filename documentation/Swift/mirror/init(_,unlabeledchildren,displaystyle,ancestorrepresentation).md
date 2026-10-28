@@ -21,7 +21,7 @@ Creates a mirror representing the given subject with unlabeled children.
 init<Subject, C>(_ subject: Subject, unlabeledChildren: C, displayStyle: Mirror.DisplayStyle? = nil, ancestorRepresentation: Mirror.AncestorRepresentation = .generated) where C : Collection
 ```
 
-#### Discussion
+## Discussion
 
 You use this initializer from within your type’s `customMirror` implementation to create a customized mirror, particularly for custom types that are collections. The labels of the resulting mirror’s `children` collection are all `nil`.
 

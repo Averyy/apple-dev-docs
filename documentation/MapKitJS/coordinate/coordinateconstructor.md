@@ -15,7 +15,7 @@ Creates a coordinate object with the specified latitude and longitude.
 constructor(latitude?: number, longitude?: number);
 ```
 
-#### Discussion
+## Discussion
 
 Create a new `mapkit.Coordinate` like this:
 

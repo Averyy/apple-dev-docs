@@ -21,7 +21,7 @@ A placement for a subscription store control in a store view.
 struct SubscriptionStoreControlPlacementKey
 ```
 
-#### Overview
+## Overview
 
 This type represents all available control placements. You typically don’t interact with this type directly. Use it if you create a custom control style that conforms to the [`SubscriptionStoreControlStyle`](./subscriptionstorecontrolstyle.md) protocol to restrict the supported placements for your style. By default, a custom control style supports all placements. For more information, see [`SubscriptionStoreControlPlacement`](./subscriptionstorecontrolplacement.md).
 

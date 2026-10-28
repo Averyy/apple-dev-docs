@@ -24,15 +24,15 @@ class XMLElement
 
 - [setURI:](./nsxmlnode-seturi.md)
 
-#### Overview
+## Overview
 
 An [`XMLElement`](./xmlelement.md) object may have child nodes, specifically comment nodes, processing-instruction nodes, text nodes, and other [`XMLElement`](./xmlelement.md) nodes. It may also have attribute nodes and namespace nodes associated with it (however, namespace and attribute nodes are not considered children). Any attempt to add a [`XMLDocument`](./xmldocument.md) node, [`XMLDTD`](./xmldtd.md) node, namespace node, or attribute node as a child raises an exception. If you add a child node to an [`XMLElement`](./xmlelement.md) object and that child already has a parent, [`XMLElement`](./xmlelement.md) raises an exception; the child must be detached or copied first.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 You can subclass `NSXMLElement` if you want element nodes with more specialized attributes or behavior, for example, paragraph and font attributes that specify how the string value of the element should appear.
 
-###### Methods to Override
+#### Methods to Override
 
 To subclass `NSXMLElement` you need to override the primary initializer, [`init(name:uri:)`](./xmlelement/init%28name,uri%29-1r286.md), and the methods listed below. In most cases, you need only invoke the superclass implementation, adding any subclass-specific code before or after the invocation, as necessary.
 
@@ -46,7 +46,7 @@ To subclass `NSXMLElement` you need to override the primary initializer, [`init(
 
 `NSXMLElement` implements  [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) to perform a deep comparison: two [`XMLDocument`](./xmldocument.md) objects are not considered equal unless they have the same name, same child nodes, same attributes, and so on. If you want a different standard of comparison, override `isEqual:`.
 
-###### Special Considerations
+#### Special Considerations
 
 Because of the architecture and data model of NSXML, when it parses and processes a source of XML it cannot know about your subclass unless you override the class method [`replacementClass(for:)`](./xmldocument/replacementclass%28for%29.md) to return your custom class in place of an NSXML class. If your custom class has no direct NSXML counterpart—for example, it is a subclass of `NSXMLNode` that represents CDATA sections—then you can walk the tree after it has been created and insert the new node where appropriate.
 

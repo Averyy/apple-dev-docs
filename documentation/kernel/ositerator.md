@@ -15,7 +15,7 @@ The abstract superclass for Libkern iterators.
 class OSIterator : OSObject
 ```
 
-#### Overview
+## Overview
 
 OSIterator is the abstract superclass for all Libkern C++ object iterators. It defines the basic interface for iterating and resetting. See OSCollection and OSCollectionIterator for more information.
 

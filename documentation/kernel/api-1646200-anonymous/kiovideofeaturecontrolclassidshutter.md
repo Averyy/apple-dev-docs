@@ -13,7 +13,7 @@
 kIOVideoFeatureControlClassIDShutter = 'shtr'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls the integration time of the incoming light. The units for the control's absolute value are seconds (s).
 

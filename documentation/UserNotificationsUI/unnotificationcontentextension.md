@@ -27,7 +27,7 @@ protocol UNNotificationContentExtension : NSObjectProtocol
 
 - [Customizing the Appearance of Notifications](./customizing-the-appearance-of-notifications.md)
 
-#### Overview
+## Overview
 
 The `UNNotificationContentExtension` protocol provides the entry point for a notification content app extension, which displays a custom interface for your app’s notifications. You adopt this protocol in the custom [`UIViewController`](../UIKit/uiviewcontroller.md) subclass that you use to present your interface. You create this type of extension to improve the way your notifications are presented, possibly by adding custom colors and branding, or by incorporating media and other dynamic content into your notification interface.
 

@@ -5,7 +5,7 @@
 
 A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
 
-#### Overview
+## Overview
 
 The [NSKeyValueBindingCreation](./nskeyvaluebindingcreation.md) informal protocol also provides a means for a view subclass to advertise the bindings that it exposes. The protocol is implemented by [`NSObject`](./nsobject-swift.class.md) and its methods can be overridden by view and controller subclasses.
 

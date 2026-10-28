@@ -27,7 +27,7 @@ object StatusReport
 - [Leveraging the declarative management data model to scale devices](./leveraging-the-declarative-management-data-model-to-scale-devices.md)
 - [Processing status for managed apps](./processing-status-for-managed-apps.md)
 
-#### Discussion
+## Discussion
 
 The device sends a status report when a subscribed status item changes. The report contains just the status items that have changed. About once a day, the device also sends a full status report containing all the subscribed status items, and the `FullReport` key is set to `true` in the report. This allows servers to reset their status items in case they missed an incremental report.
 

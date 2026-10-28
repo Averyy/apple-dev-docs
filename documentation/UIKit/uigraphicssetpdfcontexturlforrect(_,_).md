@@ -24,7 +24,7 @@ func UIGraphicsSetPDFContextURLForRect(_ url: URL, _ rect: CGRect)
 extern void UIGraphicsSetPDFContextURLForRect(NSURL *url, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 You use this function to create external links within a PDF document. If the URL you specify is a type handled by a different application, tapping the rectangle opens that application.
 

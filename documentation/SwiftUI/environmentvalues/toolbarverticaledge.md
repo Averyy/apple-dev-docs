@@ -21,7 +21,7 @@ This value reflects the system’s preferred edge for the vertical bar in the cu
 var toolbarVerticalEdge: HorizontalEdge? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is read-only; the system determines the edge based on locale and device.
 

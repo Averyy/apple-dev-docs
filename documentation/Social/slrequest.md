@@ -22,7 +22,7 @@ class SLRequest
 @interface SLRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 The SLRequest object encapsulates the properties of an HTTP request, providing a convenient template for you to make requests. You send a request to a social networking service to perform some operation on behalf of the user or to retrieve user information.
 

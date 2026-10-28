@@ -16,7 +16,7 @@ Creates a new source descriptor structure.
 init(bcdUSB: UInt16, descriptor: IOUSBEndpointDescriptor, ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor, sspCompanionDescriptor: IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor)
 ```
 
-#### Discussion
+## Discussion
 
 The `ssCompanionDescriptor` and `sspCompanionDescriptor` descriptors may be necessary for `bcdUSB` versions `0x0300` and greater, depending on device operating speed and values set in the descriptors. See USB 3.2, 9.5 for more information.
 

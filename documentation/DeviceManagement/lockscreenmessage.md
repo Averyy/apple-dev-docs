@@ -17,13 +17,13 @@ The payload that configures a Lock Screen message.
 object LockScreenMessage
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.shareddeviceconfiguration` as the payload type.
 
 This payload allows administrators to specify optional text displayed in the Login Window and Lock Screen (for example, an “If Lost, Return To” message and asset tag information). There can only be one Lock Screen payload.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ This payload allows administrators to specify optional text displayed in the Log
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

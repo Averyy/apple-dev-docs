@@ -25,11 +25,11 @@ func maximumRange(of unit: NSCalendar.Unit) -> NSRange
 - (NSRange) maximumRangeOfUnit:(NSCalendarUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum range limits of the values that the unit specified by `unit` can take on in the receiver.
 
-#### Discussion
+## Discussion
 
 As an example, in the Gregorian calendar the maximum range of values for the Day unit is 1-31.
 

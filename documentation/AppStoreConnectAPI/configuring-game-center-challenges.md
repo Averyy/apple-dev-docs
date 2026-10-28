@@ -5,7 +5,7 @@
 
 Setup and configure social experiences around leaderboards for friendly competition.
 
-#### Overview
+## Overview
 
 Use the challenges API to create and configure ways to link players directly to your content in your game. Once you create a challenge, you can link it an activity, by relating the activity to the challenge’s leaderboard. To learn more about activities, see [Configuring Game center activities](./configuring-game-center-activities.md).
 
@@ -17,7 +17,7 @@ Before you begin creating your challenges, you need these items:
 - Game Center enabled in your binary
 - Game Center detail enabled
 
-##### Create the challenge
+### Create the challenge
 
 Begin creating the challenge by using the [`Create a Challenge`](./post-v1-gamecenterchallenges.md) endpoint. Provide these attributes in your payload: -`referenceName`: A 40 character or less alphanumeric string. -`vendorIdentifier`: A reverse url scheme label for this challenge. -`challengeType`: This value is always the string `leaderboard`. -`allowedDurations`: Use all 3 values for this attribute. If the related leaderboard is reoccurring, omit this attribute.
 
@@ -66,7 +66,7 @@ When you create a challenge you use a payload like this:
 
 In the response you get an `id` in the top-level data object. This `id` represents the Game Center challenge. You can find this `id` at anytime using [`Read the challenges for a game center detail`](./get-v1-gamecenterdetails-_id_-gamecenterchallenges.md).
 
-##### Create the challenge version
+### Create the challenge version
 
 Next, you need to create a version for your Game Center challenge. The version is the parent object for localizations and the challenge default image. Create the challenge version using [`Create a Challenge Version`](./post-v1-gamecenterchallengeversions.md).
 
@@ -88,7 +88,7 @@ Next, you need to create a version for your Game Center challenge. The version i
 
 > **Note**: The system uses the challenge version `id` in this response in the version localization, so this `id` is a possible relationship to the challenge image.
 
-##### Add a challenge version localization
+### Add a challenge version localization
 
 You next add a challenge version localization by using [`Add a Challenge Localization`](./post-v1-gamecenterchallengelocalizations.md). The `locale` and `name` attributes are required. The `name` represent the label shown for the activity inside the Games app. For a list of possible `locale` values, see [Managing metadata in your app by using locale shortcodes](./managing-metadata-in-your-app-by-using-locale-shortcodes.md). The `description` attribute is optional but can help a player better understand the challenge. The localization requires a relationship to its parent challenge version. At minimum, one challenge version localization is required for submission to review.
 
@@ -115,7 +115,7 @@ Use a payload like this:
 }
 ```
 
-##### Add the challenge version image
+### Add the challenge version image
 
 Adding a default challenge image is very similar to adding an App Store screenshot or app review image. You can associate the challenge version default image with a challenge version or a challenge localization. When you create a new challenge version the default image is inherited. At minimum, one challenge version image is required for submission to review.
 
@@ -159,7 +159,7 @@ After uploading, use [`Commit an Image for a Challenge`](./patch-v1-gamecenterch
 
 To learn more uploading images, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md).
 
-##### Submit your challenge version for review
+### Submit your challenge version for review
 
 > **Note**: One localization and a default image are required for submission.
 

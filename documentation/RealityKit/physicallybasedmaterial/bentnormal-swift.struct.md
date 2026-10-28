@@ -20,7 +20,7 @@ The bent normal map for the entity.
 struct BentNormal
 ```
 
-#### Overview
+## Overview
 
 *Bent normal mapping* describes the average direction of least occlusion at each surface point. This is used to modulate lighting intensity and direction of the material. Use with ambient occlusion to improve the accuracy of indirect diffuse lighting. You can generate bent normals maps from a 3D software package.
 

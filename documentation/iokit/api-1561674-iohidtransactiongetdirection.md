@@ -16,7 +16,7 @@ Obtain the direction of the transaction.
 IOHIDTransactionDirectionType IOHIDTransactionGetDirection(IOHIDTransactionRef transaction);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the transaction direction.
 

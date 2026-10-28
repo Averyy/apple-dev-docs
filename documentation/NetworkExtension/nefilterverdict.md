@@ -23,7 +23,7 @@ class NEFilterVerdict
 @interface NEFilterVerdict : NSObject
 ```
 
-#### Overview
+## Overview
 
 Filter providers use instances this class to inform the system about how to handle flows of network data.
 

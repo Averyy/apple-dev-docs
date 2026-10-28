@@ -21,7 +21,7 @@ Creates a structure that represents a white point according to the CIE 1931 colo
 init(white_x: Float, white_y: Float)
 ```
 
-#### Return Value
+## Return Value
 
 A new white point structure.
 

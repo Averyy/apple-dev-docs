@@ -19,7 +19,7 @@ class WKInterfacePaymentButton
 @interface WKInterfacePaymentButton : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Use a payment button to initiate an Apple Pay transaction on Apple Watch.
 

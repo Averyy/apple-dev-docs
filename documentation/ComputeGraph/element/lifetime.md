@@ -16,11 +16,11 @@ Returns the total lifetime of the element in seconds.
 float element::lifetime()
 ```
 
-#### Return Value
+## Return Value
 
 The lifetime duration in seconds
 
-#### Discussion
+## Discussion
 
 Use this function to get the duration the element will exist before being automatically removed from the system.
 

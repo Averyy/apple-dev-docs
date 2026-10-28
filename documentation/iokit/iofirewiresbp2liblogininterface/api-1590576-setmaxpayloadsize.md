@@ -16,7 +16,7 @@ Sets the maximum data transfer length for a normal command ORB.
 void (*setMaxPayloadSize)(void *self, UInt32 size);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the maximum data transfer length for a normal command ORB. This value is the maximum for all ORBs sent to this LUN. This can be trimmed further on an ORB by ORB basis, by a similar call in the IOFireWireSBP2ORB itself.
 

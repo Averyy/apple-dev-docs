@@ -5,7 +5,7 @@
 
 Understand how the Analytics Reports API provides complete data sets.
 
-#### Overview
+## Overview
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections. Each data batch has a start date, represented by the Date column, and a length of time, represented by `granularity` of the instance. `processingDate` is the date when Apple creates a new report instance.
 
@@ -39,17 +39,17 @@ Alternatively, you can choose to wait until data is finalized (see the Completen
 
 > **Note**: In rare cases of data corrections, you might receive new record sets for a date in the past, beyond the completeness threshold.
 
-#### Platforms
+## Platforms
 
 In reports with data from iPad, the Device column shows `iPad`, and the Platform version column shows `iOS` with the corresponding version number.
 
-#### Data completeness for daily, weekly, and monthly reports
+## Data completeness for daily, weekly, and monthly reports
 
 In this example the report has a completeness of two days. You can wait 2 days and download final complete daily set of records for Date of 2024-03-30 from the report instance with `processingDate` of 2024-04-01 and with daily `granularity`. The Daily, Weekly, and Monthly report tables below show what data you can expect in each `processingDate` and when you can expect to see complete data sets for a given date.
 
 > **Note**: These are not fields in reports, but descriptions of what you might read in your reports.
 
-##### Daily Reports
+### Daily Reports
 
 | Processing date in API | Date column in report | Completed partition | What you can expect |
 | --- | --- | --- | --- |
@@ -60,14 +60,14 @@ In this example the report has a completeness of two days. You can wait 2 days a
 | 2024-04-03 | 2024-04-01 | 2024-04-01 | Full, complete data for events that happened on 4/1. |
 | 2024-04-03 | 2024-04-02 | 2024-04-01 | Full, but not complete, data for events that happened on 4/2. |
 
-##### Weekly Reports
+### Weekly Reports
 
 | Processing date | Date column in report | Completed partition | What you can expect |
 | --- | --- | --- | --- |
 | 2024-04-05 | 2024-03-25 | 2024-03-25 | Full, complete data for events that happened in week 3/25–3/31. |
 | 2024-04-12 | 2024-04-01 | 2024-04-01 | Full, complete data for events that happened in week 4/1–4/7. |
 
-##### Monthly Reports
+### Monthly Reports
 
 | Processing date | Date column in report | Completed partition | What you can expect |
 | --- | --- | --- | --- |

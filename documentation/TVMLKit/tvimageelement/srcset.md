@@ -21,7 +21,7 @@ var srcset: [String : URL]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,NSURL *> * srcset;
 ```
 
-#### Discussion
+## Discussion
 
 Each dictionary entry contains a string and a URL for a specific image.
 

@@ -16,11 +16,11 @@ Synchronize the buffers for input.
 IOReturn (*LSIWorkaroundSyncBuffersForInput)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if sync was successful.
 
-#### Discussion
+## Discussion
 
 Since double buffering may be invovled in the workaround. The driver needs to indicate when these buffers should be syncronized with the original descriptor. For data that will be input LSIWorkaroundSyncBuffersForInput should be called after receiving completion status for the ORB.
 

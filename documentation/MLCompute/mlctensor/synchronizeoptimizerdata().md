@@ -23,11 +23,11 @@ func synchronizeOptimizerData() -> Bool
 - (BOOL) synchronizeOptimizerData;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if synchronization is successful; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This method synchronizes the [`optimizerData`](./optimizerdata.md) in host memory with latest contents in device memory.
 

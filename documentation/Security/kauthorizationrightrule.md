@@ -20,7 +20,7 @@ var kAuthorizationRightRule: String { get }
 #define kAuthorizationRightRule
 ```
 
-#### Discussion
+## Discussion
 
 Instead of specifying exact behavior, some rules are shipped with the system and may be used as delegate rules. Use this with any of the delegate rule definition constants.
 

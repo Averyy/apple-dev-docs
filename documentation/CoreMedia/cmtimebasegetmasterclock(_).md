@@ -26,7 +26,7 @@ func CMTimebaseGetMasterClock(_ timebase: CMTimebase) -> CMClock?
 extern CMClockRefCMTimebaseGetMasterClock(CMTimebaseRef timebase);
 ```
 
-#### Discussion
+## Discussion
 
 Returns `NULL` if the timebase actually has a host timebase instead of a host clock.
 

@@ -29,7 +29,7 @@ var lineWidth: CGFloat { get set }
 
 - [Getting Started with Shape Nodes](../getting-started-with-shape-nodes.md)
 
-#### Discussion
+## Discussion
 
 A line width larger than `2.0` may cause rendering artifacts in the final rendered image. The default value is `1.0`.
 

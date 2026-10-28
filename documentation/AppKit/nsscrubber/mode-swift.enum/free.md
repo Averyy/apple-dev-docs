@@ -19,7 +19,7 @@ case free
 NSScrubberModeFree
 ```
 
-#### Discussion
+## Discussion
 
 When a user swipes horizontally across the scrubber, the scrubber scrolls. To select an item, the user must tap or press it without moving their finger horizontally.
 

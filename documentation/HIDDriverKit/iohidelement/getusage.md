@@ -14,7 +14,7 @@
 virtual uint32_t getUsage();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s usage. Usages are defined in [HID Usage Tables](../hid-usage-tables.md).
 

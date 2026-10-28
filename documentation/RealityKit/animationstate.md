@@ -20,7 +20,7 @@ The concretely typed animation state structure.
 struct AnimationState<Value> where Value : AnimatableData
 ```
 
-#### Overview
+## Overview
 
 Access the animation state structure from the event structure returned to  the action’s `.updated` event handler. Define a valid bind target and matching animation type for the action animation to make the state structure available and non-nil.
 

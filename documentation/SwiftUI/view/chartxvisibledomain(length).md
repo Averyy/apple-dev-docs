@@ -22,7 +22,7 @@ nonisolated
 func chartXVisibleDomain<P>(length: P) -> some View where P : Plottable, P : Numeric
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to control how much of the chart is visible in a scrollable chart. The example below sets the visible portion of the chart to 10 units in the X axis.
 

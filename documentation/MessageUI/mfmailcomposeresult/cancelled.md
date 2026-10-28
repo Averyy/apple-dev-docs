@@ -22,7 +22,7 @@ case cancelled
 MFMailComposeResultCancelled
 ```
 
-#### Discussion
+## Discussion
 
 No email message was queued.
 

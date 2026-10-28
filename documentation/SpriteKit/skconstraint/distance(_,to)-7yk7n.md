@@ -25,11 +25,11 @@ class func distance(_ range: SKRange, to point: CGPoint) -> Self
 + (instancetype) distance:(SKRange *) range toPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A new constraint.
 
-#### Discussion
+## Discussion
 
 Each time when constraints are applied, a line is projected between the node’s position and the target point. The distance between the two points is calculated, and if it lies outside the specified range, the node is pushed or pulled along this line until it lies within the range.
 

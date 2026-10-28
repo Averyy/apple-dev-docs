@@ -16,7 +16,7 @@ Allows this model to resize itself to fit its container.
 @preconcurrency func resizable(_ isResizable: Bool = true) -> ResolvedModel3D
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: By default, `Model3D` sizes itself based on the intrinsic size of the underlying model file. Setting this will scale the model to fit its container instead. To preserve the intrinsic aspect ratio of the model, use https://developer.apple.com/documentation/SwiftUI/View/aspectRatio(_:contentMode:).
 

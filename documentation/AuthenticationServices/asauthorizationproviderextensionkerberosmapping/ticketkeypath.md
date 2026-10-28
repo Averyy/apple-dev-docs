@@ -19,7 +19,7 @@ var ticketKeyPath: String? { get set }
 @property (nonatomic, copy, nullable) NSString * ticketKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 If the response tokens from the login contain this keypath, the system uses this mapping to create a Kerberos ticket. The expected response is a JSON dictionary with the supplied key names containing Kerberos ticket values.
 

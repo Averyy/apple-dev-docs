@@ -21,7 +21,7 @@ Reads a Metal vertex buffer synchronously on the CPU.
 func withUnsafeBytes(bufferIndex: Int, _ callback: (UnsafeRawBufferPointer) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The buffer is only valid for the lifetime of the callback.
 

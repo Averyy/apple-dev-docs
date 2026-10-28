@@ -22,7 +22,7 @@ case mail
 UIApplicationShortcutIconTypeMail
 ```
 
-#### Discussion
+## Discussion
 
 ![Mail icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934525@2x.png)
 

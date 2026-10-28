@@ -25,11 +25,11 @@ func CMBlockBufferAppendMemoryBlock(_ theBuffer: CMBlockBuffer, memoryBlock: Uns
 extern OSStatus CMBlockBufferAppendMemoryBlock(CMBlockBufferRef theBuffer, void *memoryBlock, size_t blockLength, CFAllocatorRef blockAllocator, const CMBlockBufferCustomBlockSource *customBlockSource, size_t offsetToData, size_t dataLength, CMBlockBufferFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 
-#### Discussion
+## Discussion
 
 Adds a `memoryBlock` to an existing `CMBlockBuffer`. The memory block may be statically allocated, dynamically allocated using the given allocator or not yet allocated. The `CMBlockBuffer's` total data length will be increased by the specified `dataLength`. If the `kCMBlockBufferAssureMemoryNowFlag` is set in the flags parameter, the memory block is allocated immediately using the `blockAllocator` or `customBlockSource`. Note that append operations are not thread safe, so care must be taken when appending to block buffers that are used by multiple threads.
 

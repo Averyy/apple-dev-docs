@@ -23,7 +23,7 @@ var isHidden: Bool { get set }
 @property (nonatomic, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to [`true`](../../Swift/true.md) hides the receiver and setting it to [`false`](../../Swift/false.md) shows the receiver. The default value is [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ A navigation view style represented by a series of views in columns.
 struct ColumnNavigationViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`columns`](./navigationviewstyle/columns.md) to construct this style.
 

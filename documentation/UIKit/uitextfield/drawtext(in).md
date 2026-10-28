@@ -25,7 +25,7 @@ func drawText(in rect: CGRect)
 - (void) drawTextInRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to customize the drawing behavior for the text, you can override this method to do your drawing.
 

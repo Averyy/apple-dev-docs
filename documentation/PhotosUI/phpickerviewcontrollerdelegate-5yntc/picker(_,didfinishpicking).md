@@ -21,7 +21,7 @@ Called when the user completes a selection or dismisses `PHPickerViewController`
 @preconcurrency func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult])
 ```
 
-#### Discussion
+## Discussion
 
 The picker won’t be automatically dismissed when this method is called.
 

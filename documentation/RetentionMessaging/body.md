@@ -19,7 +19,7 @@ string body
 
 **Maximum Length**: `144`
 
-#### Discussion
+## Discussion
 
 Provide the `body` as a UTF-8-encoded string. The maximum string length is `144`.
 

@@ -15,7 +15,7 @@ The AirPort key `JoinMode`, whose value is of type `CFString`.
 extern CFStringRef const kSCPropNetAirPortJoinMode;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

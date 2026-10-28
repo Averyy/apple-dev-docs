@@ -23,11 +23,11 @@ func targetViewController(forAction action: Selector, sender: Any?) -> UIViewCon
 - (UIViewController *) targetViewControllerForAction:(SEL) action sender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller that handles the specified action or `nil` if no view controller handles the action.
 
-#### Discussion
+## Discussion
 
 This method returns the current view controller if that view controller overrides the method indicated by the `action` parameter. If the current view controller does not override that method, UIKit walks up the view hierarchy and returns the first view controller that does override it. If no view controller handles the action, this method returns `nil`.
 

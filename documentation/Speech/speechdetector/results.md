@@ -20,7 +20,7 @@ The asynchronous sequence of speech detection results.
 final var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This sequence may throw an error, but will otherwise remain empty.
 

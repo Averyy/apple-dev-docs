@@ -23,7 +23,7 @@ func insertRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnima
 - (void) insertRowsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths withRowAnimation:(UITableViewRowAnimation) animation;
 ```
 
-#### Discussion
+## Discussion
 
 `UITableView` calls the relevant delegate and data source methods immediately afterward to get the cells and other content for visible cells.
 

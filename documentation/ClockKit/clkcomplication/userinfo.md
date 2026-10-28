@@ -24,7 +24,7 @@ var userInfo: [AnyHashable : Any]? { get }
 - [Creating a timeline entry](../creating-a-timeline-entry.md)
 - [Sharing an Apple Watch face](../sharing-an-apple-watch-face.md)
 
-#### Discussion
+## Discussion
 
 Because the system can pass configurations as part of a shared watch face, only include data in the user info dictionary that any instance of the app can use. For example, avoid using identifiers that might change between users, like an index into the user’s favorites list. Instead, use items that remain constant across all copies of the app, like unique string identifiers.
 

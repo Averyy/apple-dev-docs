@@ -15,11 +15,11 @@ Determines if the driver extension class automatically performs autosense and pr
 virtual kern_return_t UserDoesHBAPerformAutoSense(bool *result);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of determining if the driver extension class performs autosense. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 If the HBA allocates space for autosense in its HBA-specific data region on a per-task basis, the HBA should respond `true`.
 

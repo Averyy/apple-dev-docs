@@ -24,7 +24,7 @@ Updates the stored value for the specified configuration key.
 func setValue(_ value: ConfigValue?, forKey key: AbsoluteConfigKey)
 ```
 
-#### Discussion
+## Discussion
 
 This method atomically updates the value and notifies all active watchers of the change. If the new value is the same as the existing value, no notification is sent.
 

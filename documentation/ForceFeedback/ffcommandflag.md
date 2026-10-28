@@ -18,7 +18,7 @@ typealias FFCommandFlag = UInt32
 typedef UInt32 FFCommandFlag;
 ```
 
-#### Discussion
+## Discussion
 
 Command flags for **FFDeviceSendForceFeedbackCommand()**.
 

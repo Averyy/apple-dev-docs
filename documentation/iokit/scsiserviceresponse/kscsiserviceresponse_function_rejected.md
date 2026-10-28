@@ -14,7 +14,7 @@
 kSCSIServiceResponse_FUNCTION_REJECTED = 5
 ```
 
-#### Discussion
+## Discussion
 
 The task management function was rejected.
 

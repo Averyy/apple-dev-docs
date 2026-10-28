@@ -21,7 +21,7 @@ File generation number
 var generationNumber: UInt64 { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The file generation number may be used to distinguish between different files that have used the same inode over time.
 

@@ -32,7 +32,7 @@ var scheduledPickupTime: INDateComponentsRange? { get set }
 @property (atomic, copy, readwrite, nullable) INDateComponentsRange * scheduledPickupTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the scheduled pickup time for the user. Use this property instead of the [`estimatedPickupDate`](./estimatedpickupdate.md) and [`estimatedPickupEndDate`](./estimatedpickupenddate.md) properties when you can guarantee the pickup time.
 

@@ -20,7 +20,7 @@ var userData: Int64 { get set }
 extern int64_t CGEventSourceGetUserData(CGEventSourceRef source);
 ```
 
-#### Discussion
+## Discussion
 
 Each input event includes 64 bits of user-specified data. This function gets the user-specified data for all events created by the specified event source. This data may also be obtained per event using the [`getIntegerValueField(_:)`](../cgevent/getintegervaluefield%28_%29.md) function.
 

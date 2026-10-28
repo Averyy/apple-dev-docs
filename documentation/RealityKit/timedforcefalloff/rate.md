@@ -20,7 +20,7 @@ The temporal falloff / attenuation rate.
 var rate: Double
 ```
 
-#### Discussion
+## Discussion
 
 An exponent that determines how the effect’s strength diminishes over time. Use a non-negative rate.
 

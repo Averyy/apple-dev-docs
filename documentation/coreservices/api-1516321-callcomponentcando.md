@@ -13,7 +13,7 @@
 ComponentResult CallComponentCanDo(ComponentInstance ci, SInt16 ftnNumber);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

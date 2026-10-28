@@ -25,7 +25,7 @@ var deviceCurrentTime: TimeInterval { get }
 @property (readonly) NSTimeInterval deviceCurrentTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property value to schedule audio recording using the [`record(atTime:)`](./record%28attime%29.md) and [`record(atTime:forDuration:)`](./record%28attime,forduration%29.md) methods.
 

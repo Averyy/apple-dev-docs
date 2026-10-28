@@ -23,7 +23,7 @@ var tintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7 and later, all subclasses of [`UIView`](../uiview.md) derive their behavior for [`tintColor`](../uiview/tintcolor.md) from the base class. Although [`UIBarButtonItem`](../uibarbuttonitem.md) isn’t a view, its [`tintColor`](./tintcolor.md) property behaves the same as that of [`UIView`](../uiview.md). See the discussion of [`tintColor`](../uiview/tintcolor.md) in [`UIView`](../uiview.md) for more information.
 

@@ -25,7 +25,7 @@ static let NSFileHandleDataAvailable: NSNotification.Name
 extern NSNotificationName const NSFileHandleDataAvailableNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The observers can then issue the appropriate messages to begin reading the data. To cause the posting of this notification, you must send either [`waitForDataInBackgroundAndNotify()`](../../filehandle/waitfordatainbackgroundandnotify%28%29.md) or [`waitForDataInBackgroundAndNotify(forModes:)`](../../filehandle/waitfordatainbackgroundandnotify%28formodes%29.md) to an appropriate `NSFileHandle` object.
 

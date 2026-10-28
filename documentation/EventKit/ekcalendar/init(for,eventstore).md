@@ -24,11 +24,11 @@ init(for entityType: EKEntityType, eventStore: EKEventStore)
 + (EKCalendar *) calendarForEntityType:(EKEntityType) entityType eventStore:(EKEventStore *) eventStore;
 ```
 
-#### Return Value
+## Return Value
 
 The created calendar.
 
-#### Discussion
+## Discussion
 
 You can only create calendars that accept either reminders or events. Some servers might allow mixing the two, although it is not common.
 

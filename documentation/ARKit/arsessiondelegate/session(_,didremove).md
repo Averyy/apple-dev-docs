@@ -20,7 +20,7 @@ optional func session(_ session: ARSession, didRemove anchors: [ARAnchor])
 - (void) session:(ARSession *) session didRemoveAnchors:(NSArray<__kindof ARAnchor *> *) anchors;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically remove anchors from a session.
 

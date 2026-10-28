@@ -15,7 +15,7 @@ A snapshot of the game state at a point in time.
 struct StateBookmark
 ```
 
-#### Overview
+## Overview
 
 Add bookmarks between turns so that you can jump to a prior turn and continue gameplay from there. When you jump to a bookmark, you reset the game state back to that point in time.
 

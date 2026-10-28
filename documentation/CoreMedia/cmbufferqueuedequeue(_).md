@@ -25,11 +25,11 @@ func CMBufferQueueDequeue(_ queue: CMBufferQueue) -> CMBuffer?
 extern CMBufferRefCMBufferQueueDequeueAndRetain(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The dequeued buffer.  Will be `NULL` if the queue is empty.
 
-#### Discussion
+## Discussion
 
 The buffer is released by the queue, but it is also retained for the client. Buffer ownership is thereby transferred from queue to client.  The client need not retain the buffer, but is responsible to release it when done with it.
 

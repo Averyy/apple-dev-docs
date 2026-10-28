@@ -6,7 +6,7 @@
 
 The maximum vertical field of view, in degrees.
 
-#### Overview
+## Overview
 
 For a high-resolution panorama, a typical value for this field is `85.0`. The value in this field is `0` for the default maximum field of view, which is `maxTilt – minTilt`.
 

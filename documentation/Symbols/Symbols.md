@@ -15,7 +15,7 @@ Apply universal animations to symbol-based images.
 - visionOS 1.0+
 - watchOS 10.0+
 
-#### Overview
+## Overview
 
 The Symbols framework provides access to symbol effects you can use to animate [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) in your AppKit, UIKit, and SwiftUI apps. These animations exhibit different behaviors:
 

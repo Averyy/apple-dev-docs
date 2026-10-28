@@ -22,7 +22,7 @@ var inputAccessoryView: UIView? { get set }
 @property (strong, readwrite, nullable) UIView * inputAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. Assigning a view to this property causes that view to be displayed above the standard system keyboard (or above the custom input view if one is provided) when the text view becomes the first responder. For example, you could use this property to attach a custom toolbar to the keyboard.
 

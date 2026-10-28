@@ -19,11 +19,11 @@ func AEStreamOpenList(_ ref: AEStreamRef!) -> OSStatus
 OSStatus AEStreamOpenList(AEStreamRef ref);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 This routine marks the beginning of a sequence of zero or more descriptor definitions that you use to build an `AEDescList` structure. After calling this routine, you can write any number of `AEDesc`, `AEDescList`, or `AERecord` structures to the stream as elements of the list. When you are done, you must call [`AEStreamCloseList(_:)`](./api-1448185-aestreamcloselist.md) to complete the `AEDescList` definition. 
 

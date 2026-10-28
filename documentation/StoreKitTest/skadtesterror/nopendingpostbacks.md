@@ -17,7 +17,7 @@ The test session doesn’t have any pending postbacks to send.
 static var noPendingPostbacks: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs if you call [`flushPostbacks(responses:)`](../skadtestsession/flushpostbacks%28responses%29.md) before adding a postback to the test session ([`SKAdTestSession`](../skadtestsession.md)). To avoid this error, call [`SKAdTestPostback`](../skadtestpostback.md) to create a test postback, and [`setPostbacks(_:)`](../skadtestsession/setpostbacks%28_%29.md) to add the test postback to the test session before calling [`flushPostbacks(responses:)`](../skadtestsession/flushpostbacks%28responses%29.md).
 

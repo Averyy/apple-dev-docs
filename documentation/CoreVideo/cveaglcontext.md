@@ -38,7 +38,7 @@ typedef EAGLContext * CVEAGLContext;
 typedef void * CVEAGLContext;
 ```
 
-#### Discussion
+## Discussion
 
 Core Video can be included in procedural C projects as well as Objective-C projects, so this type resolves to `void *` when using the former.
 

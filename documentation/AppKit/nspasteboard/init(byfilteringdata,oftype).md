@@ -19,11 +19,11 @@ init(byFilteringData data: Data, ofType type: NSPasteboard.PasteboardType)
 + (NSPasteboard *) pasteboardByFilteringData:(NSData *) data ofType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 The new pasteboard object.
 
-#### Discussion
+## Discussion
 
 The returned pasteboard also declares data of the supplied `type`.
 

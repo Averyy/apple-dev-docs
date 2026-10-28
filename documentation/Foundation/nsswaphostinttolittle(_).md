@@ -25,7 +25,7 @@ func NSSwapHostIntToLittle(_ x: UInt32) -> UInt32
 static unsigned int NSSwapHostIntToLittle(unsigned int x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the value in `x`, specified in the current endian format, to little-endian format and returns the resulting value. If it is necessary to swap the bytes, this function calls [`NSSwapInt(_:)`](./nsswapint%28_%29.md) to perform the swap.
 

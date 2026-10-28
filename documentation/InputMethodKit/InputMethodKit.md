@@ -9,7 +9,7 @@ Develop input methods and manage communication with client applications, candida
 **Availability**:
 - macOS 10.5+
 
-#### Overview
+## Overview
 
 The Input Method Kit, introduced in OS X v10.5, provides a streamlined programming interface that lets you develop input methods with far less code than older Mac programming interfaces. It is fully integrated with the Text Services Manager. The Input Method Kit allows 32-bit applications to work with 64-bit applications.
 

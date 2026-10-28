@@ -19,11 +19,11 @@ func cascadeTopLeft(from topLeftPoint: NSPoint) -> NSPoint
 - (NSPoint) cascadeTopLeftFromPoint:(NSPoint) topLeftPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The point shifted from top left of the window in screen coordinates.
 
-#### Discussion
+## Discussion
 
 The returned point can be passed to a subsequent invocation of [`cascadeTopLeft(from:)`](./cascadetopleft%28from%29.md) to position the next window so the title bars of both windows are fully visible.
 

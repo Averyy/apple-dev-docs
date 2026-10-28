@@ -24,7 +24,7 @@ class CATransformLayer
 @interface CATransformLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 Unlike normal layers, transform layers do not flatten their sublayers into the plane at `Z=0`. Due to this, they do not support many of the features of the `CALayer` class compositing model:
 
@@ -33,7 +33,7 @@ Unlike normal layers, transform layers do not flatten their sublayers into the p
 - The `opacity` property is applied to each sublayer individually, the transform layer does not form a compositing group.
 - The [`hitTest(_:)`](./calayer/hittest%28_%29.md) method should never be called on a transform layer as they do not have a 2D coordinate space into which the point can be mapped.
 
-##### Example: Displaying layers in 3D
+### Example: Displaying layers in 3D
 
 Because [`CATransformLayer`](./catransformlayer.md) creates true 3D layer hierarchies, you can display otherwise hidden layers when applying 3D transforms.
 

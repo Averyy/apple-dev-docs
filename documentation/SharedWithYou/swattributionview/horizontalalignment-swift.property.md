@@ -24,7 +24,7 @@ var horizontalAlignment: SWAttributionView.HorizontalAlignment { get set }
 @property (nonatomic, assign, readwrite) SWAttributionViewHorizontalAlignment horizontalAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This `horizontalAlignment` specifies the horizontal anchor for the view’s contents. This value only has an effect when the width of the contents are less than the available width. You should specify a value, in case the internal default ever changes.
 

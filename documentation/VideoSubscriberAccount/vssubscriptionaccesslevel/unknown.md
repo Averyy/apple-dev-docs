@@ -26,7 +26,7 @@ case unknown
 VSSubscriptionAccessLevelUnknown
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  An error occurs if you try to set a `VSSubscriptionAccessLevel` type to this value.
 

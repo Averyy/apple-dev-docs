@@ -27,7 +27,7 @@ var deviceMotionUpdateInterval: TimeInterval { get set }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 The system supplies device-motion updates to the block handler specified in [`startDeviceMotionUpdates(to:withHandler:)`](./startdevicemotionupdates%28to,withhandler%29.md) at regular intervals determined by the value of this property. The interval units are in seconds. The value of this property is capped to minimum and maximum values; the maximum value is determined by the maximum frequency supported by the hardware. If your app is sensitive to the intervals of device-motion data, it should always check the timestamps of the delivered [`CMDeviceMotion`](../cmdevicemotion.md) instances to determine the true update interval.
 

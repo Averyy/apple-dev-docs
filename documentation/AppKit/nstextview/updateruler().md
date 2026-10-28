@@ -19,7 +19,7 @@ func updateRuler()
 - (void) updateRuler;
 ```
 
-#### Discussion
+## Discussion
 
 Does nothing if the ruler isn’t visible or if the receiver doesn’t use the ruler. You should never need to invoke this method directly, but you can override this method if needed to handle additional ruler attributes.
 

@@ -24,7 +24,7 @@ func getData(for attachment: HKAttachment, completion: @escaping (Data?, (any Er
 - (NSProgress *) getDataForAttachment:(HKAttachment *) attachment completion:(void (^)(NSData *attachmentData, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to read the attachment’s contents directly from the attachment store.
 

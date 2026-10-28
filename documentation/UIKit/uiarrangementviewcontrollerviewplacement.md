@@ -19,7 +19,7 @@ A placement of a view controller within an arrangement view controller.
 enum UIArrangementViewControllerViewPlacement : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use a view placement to specify which position a view takes in an arrangement.
 

@@ -25,7 +25,7 @@ case minimumLineHeight
 kCTParagraphStyleSpecifierMinimumLineHeight
 ```
 
-#### Discussion
+## Discussion
 
 This value is always nonnegative. Type: [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md). Default value: `0.0`. Affects: [`CTFramesetter`](../ctframesetter.md).
 

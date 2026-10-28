@@ -16,7 +16,7 @@ A view that displays the connection status of a peripheral to the central manage
 class PlaygroundBluetoothConnectionView : UIView
 ```
 
-#### Overview
+## Overview
 
 The view can display peripheral names, icons, connection statuses, and battery levels.
 

@@ -4,7 +4,7 @@
 
 Specify the criteria that the system uses to match your driver to a device.
 
-#### Overview
+## Overview
 
 When the system detects a new device, it looks for drivers that match the device’s features and capabilities. You specify the features and capabilities that your driver supports using the `IOKitPersonalities` key of your driver’s `Info.plist` file. The `IOKitPersonalities` key contains the array of driver personality dictionaries, the keys of which correspond to device-specific attributes. For example, you might specify the HID usage types that your driver supports.
 

@@ -25,7 +25,7 @@ func willChangeValue(forKey key: String)
 - (void) willChangeValueForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when implementing key-value observer compliance manually to inform the observed object that the value at `key` is about to change.
 
@@ -33,7 +33,7 @@ The change type of this method is `NSKeyValueChangeSetting`.
 
 > ❗ **Important**:  After the values have been changed, a corresponding [`didChangeValue(forKey:)`](./didchangevalue%28forkey%29.md) must be invoked with the same parameter.
 
-##### Special Considerations
+### Special Considerations
 
 You rarely need to override this method in subclasses, but if you do, be sure to call `super`.
 

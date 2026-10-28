@@ -24,11 +24,11 @@ func participantID() -> String
 - (NSString *) participantID;
 ```
 
-#### Return Value
+## Return Value
 
 A string that can be used by other participants to connect to the local user.
 
-#### Discussion
+## Discussion
 
 The client decides the format and meaning of the participant identifier.
 

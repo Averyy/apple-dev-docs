@@ -25,11 +25,11 @@ func ekRecurrenceRule() -> EKRecurrenceRule?
 - (EKRecurrenceRule *) EKRecurrenceRule;
 ```
 
-#### Return Value
+## Return Value
 
 The recurrence rule that matches the recurring date range, or nil if the date components range does not specify a recurring time.
 
-#### Discussion
+## Discussion
 
 If you initialized the date components range with a recurrence rule, use this method to specify that rule in a format that is accepted by Event Kit classes.
 

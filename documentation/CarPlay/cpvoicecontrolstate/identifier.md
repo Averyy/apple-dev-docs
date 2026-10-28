@@ -21,7 +21,7 @@ var identifier: String { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`identifier`](./identifier.md) when calling the [`activateVoiceControlState(withIdentifier:)`](../cpvoicecontroltemplate/activatevoicecontrolstate%28withidentifier%29.md) method to activate the voice control state.
 

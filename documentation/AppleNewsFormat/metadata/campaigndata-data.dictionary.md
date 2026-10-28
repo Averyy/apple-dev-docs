@@ -15,11 +15,11 @@ Custom key-value pairs you can use in advertisement campaigns.
 object Metadata.campaignData
 ```
 
-#### Discussion
+## Discussion
 
 `Metadata.campaignData` is an object that contains custom key-value pairs, where the `key` is a string and the value is an array.
 
-##### Example
+### Example
 
 ```json
 {

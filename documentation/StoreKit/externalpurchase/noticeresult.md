@@ -21,7 +21,7 @@ The options available to people while viewing the external purchase notice sheet
 enum NoticeResult
 ```
 
-#### Overview
+## Overview
 
 These values return when your app calls [`presentNoticeSheet()`](./presentnoticesheet%28%29.md).
 

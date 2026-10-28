@@ -24,7 +24,7 @@ var outputVolume: Float { get }
 @property (readonly) float outputVolume;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a value in the range `0.0` to `1.0`, with `0.0` representing the minimum volume, and `1.0` representing the maximum volume.
 

@@ -19,7 +19,7 @@ The layout direction associated with the current environment.
 var layoutDirection: UITraitEnvironmentLayoutDirection { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to determine whether the underlying environment uses a left-to-right or right-to-left orientation.
 

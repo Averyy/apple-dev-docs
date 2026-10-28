@@ -20,7 +20,7 @@ A type that contains the details for a generation request.
 struct LanguageModelExecutorGenerationRequest
 ```
 
-#### Overview
+## Overview
 
 A generation request is the input payload that [`respond(to:model:streamingInto:)`](./languagemodelexecutor/respond%28to,model,streaminginto%29.md) handles. It bundles everything the executor needs to translate a framework call into a backend request, like the conversation so far, what tools are available, and so on.
 

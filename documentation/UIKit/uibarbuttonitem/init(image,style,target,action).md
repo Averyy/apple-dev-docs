@@ -23,7 +23,7 @@ convenience init(image: UIImage?, style: UIBarButtonItem.Style, target: Any?, ac
 - (instancetype) initWithImage:(UIImage *) image style:(UIBarButtonItemStyle) style target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

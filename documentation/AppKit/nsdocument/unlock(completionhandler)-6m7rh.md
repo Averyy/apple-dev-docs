@@ -23,7 +23,7 @@ func unlock() async throws
 - (void) unlockWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this method tries to clear the “user immutable” flag and, if necessary, add write permissions to the file itself.
 

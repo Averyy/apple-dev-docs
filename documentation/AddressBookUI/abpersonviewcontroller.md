@@ -23,11 +23,11 @@ class ABPersonViewController
 @interface ABPersonViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Person view controllers must be used with a navigation controller in order to function properly.
 
-##### Subclassing
+### Subclassing
 
 The `ABPersonViewController` class does not support subclassing.
 

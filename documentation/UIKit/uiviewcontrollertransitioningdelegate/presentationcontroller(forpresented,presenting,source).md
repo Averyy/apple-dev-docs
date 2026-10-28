@@ -23,11 +23,11 @@ optional func presentationController(forPresented presented: UIViewController, p
 - (UIPresentationController *) presentationControllerForPresentedViewController:(UIViewController *) presented presentingViewController:(UIViewController *) presenting sourceViewController:(UIViewController *) source;
 ```
 
-#### Return Value
+## Return Value
 
 The custom presentation controller for managing the modal presentation.
 
-#### Discussion
+## Discussion
 
 When you present a view controller using the [`UIModalPresentationStyle.custom`](../uimodalpresentationstyle/custom.md) presentation style, the system calls this method and asks for the presentation controller that manages your custom style. If you implement this method, use it to create and return the custom presentation controller object that you want to use to manage the presentation process.
 

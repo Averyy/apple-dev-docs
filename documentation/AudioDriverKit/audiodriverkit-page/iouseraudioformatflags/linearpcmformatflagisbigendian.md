@@ -15,7 +15,7 @@ A flag to indicate whether PCM samples use big-endian values.
 LinearPCMFormatFlagIsBigEndian
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym of [`FormatFlagIsBigEndian`](./formatflagisbigendian.md).
 

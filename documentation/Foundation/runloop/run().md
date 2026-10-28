@@ -25,7 +25,7 @@ func run()
 - (void) run;
 ```
 
-#### Discussion
+## Discussion
 
 If no input sources or timers are attached to the run loop, this method exits immediately; otherwise, it runs the receiver in the `NSDefaultRunLoopMode` by repeatedly invoking [`run(mode:before:)`](./run%28mode,before%29.md). In other words, this method effectively begins an infinite loop that processes data from the run loop’s input sources and timers.
 

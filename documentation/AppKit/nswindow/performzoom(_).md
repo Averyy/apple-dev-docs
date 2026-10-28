@@ -19,7 +19,7 @@ func performZoom(_ sender: Any?)
 - (void) performZoom:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the window doesn’t have a zoom box or can’t be zoomed for some reason, the computer beeps.
 

@@ -25,11 +25,11 @@ init(name: String, value: String?)
 - (instancetype) initWithName:(NSString *) name value:(NSString *) value;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized query item object.
 
-#### Discussion
+## Discussion
 
 To use the newly initialized query item in composing a URL, add it to the [`queryItems`](../nsurlcomponents/queryitems.md) array of an [`NSURLComponents`](../nsurlcomponents.md) instance. Because assigning an array of query items to an [`NSURLComponents`](../nsurlcomponents.md) instance automatically encodes the name and value properties, you should not percent-encode these strings.
 

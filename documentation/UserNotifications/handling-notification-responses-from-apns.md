@@ -5,13 +5,13 @@
 
 Respond to the status codes that the APNs servers return.
 
-#### Overview
+## Overview
 
 Apple Push Notification service (APNs) provides a response to each POST request your server transmits. Each response contains a header with fields indicating the status of the response. If the request was successful, the body of the response is empty. If an error occurred, the body contains a JSON dictionary with additional information about the error.
 
 If you find your device is having trouble receiving notifications, refer to [Troubleshooting push notifications](./troubleshooting-push-notifications.md).
 
-##### Interpret header responses
+### Interpret header responses
 
 The table below describes the meaning of the keys in the header response.
 
@@ -36,7 +36,7 @@ The table below lists the possible values in the `:status` header of the respons
 | `500` | Internal server error. |
 | `503` | The server is shutting down and unavailable. |
 
-##### Understand error codes
+### Understand error codes
 
 The table below lists the keys found in the JSON dictionary for unsuccessful requests. The JSON data might also be included in a `GOAWAY` frame when a connection terminates.
 

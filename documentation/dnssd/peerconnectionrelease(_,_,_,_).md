@@ -25,7 +25,7 @@ func PeerConnectionRelease(_ flags: DNSServiceFlags, _ name: UnsafePointer<CChar
 DNSServiceErrorType PeerConnectionRelease(DNSServiceFlags flags, const char *name, const char *regtype, const char *domain);
 ```
 
-#### Discussion
+## Discussion
 
 When a service is resolved over a P2P interface, a connection is brought up to the peer advertising the service instance. This call will free the resources associated with that connection. Note that the reference to the service instance will only be maintained by the mDNSResponder daemon while the browse for the service type is still running. Thus the sequence of calls to discover, resolve, and then terminate the connection associated with a given P2P service instance would be:
 

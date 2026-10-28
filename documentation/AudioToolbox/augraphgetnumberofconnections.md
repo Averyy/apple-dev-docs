@@ -15,7 +15,7 @@ Deprecated in OS X v10.5. Instead, use [`AUGraphGetNumberOfInteractions(_:_:)`](
 extern OSStatus AUGraphGetNumberOfConnections(AUGraph inGraph, UInt32 *outNumConnections);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

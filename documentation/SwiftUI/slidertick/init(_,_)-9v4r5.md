@@ -1,0 +1,38 @@
+# init(_:_:)
+
+**Framework**: SwiftUI  
+**Kind**: init  
+**Role**: Initializer
+
+Create a slider tick with a label from a localized string resource.
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```swift
+init(_ titleResource: LocalizedStringResource, _ value: V)
+```
+
+Available when `V` conforms to `BinaryFloatingPoint`.
+
+**Other overloads**:
+
+```swift
+init(_ titleKey: LocalizedStringKey, _ value: V)
+```
+
+```swift
+init<S>(_ title: S, _ value: V) where S : StringProtocol
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/slidertick/init(_:_:)-9v4r5)*

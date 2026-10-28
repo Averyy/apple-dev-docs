@@ -22,7 +22,7 @@ Allocates recursive pthread_mutex associated with ‘obj’ if needed.
 extern int objc_sync_enter(id obj);
 ```
 
-#### Return Value
+## Return Value
 
 OBJC_SYNC_SUCCESS once lock is acquired.
 

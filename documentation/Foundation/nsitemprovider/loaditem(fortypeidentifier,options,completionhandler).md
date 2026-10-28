@@ -31,7 +31,7 @@ func loadItem(forTypeIdentifier typeIdentifier: String, options: [AnyHashable : 
 - (void) loadItemForTypeIdentifier:(NSString *) typeIdentifier options:(NSDictionary *) options completionHandler:(NSItemProviderCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to retrieve the item provider’s data. If the item provider object is able to provide data in the requested type, it does so and asynchronously executes your `completionHandler` block with the results. The block may be executed on a background thread.
 

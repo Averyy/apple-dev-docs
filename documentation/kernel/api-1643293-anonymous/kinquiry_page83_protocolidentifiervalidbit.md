@@ -13,7 +13,7 @@
 kINQUIRY_Page83_ProtocolIdentifierValidBit = 7
 ```
 
-#### Discussion
+## Discussion
 
 PIV Bit definition.
 

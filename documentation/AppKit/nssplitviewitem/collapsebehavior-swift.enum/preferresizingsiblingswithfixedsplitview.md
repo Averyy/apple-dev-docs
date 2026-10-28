@@ -19,7 +19,7 @@ case preferResizingSiblingsWithFixedSplitView
 NSSplitViewItemCollapseBehaviorPreferResizingSiblingsWithFixedSplitView
 ```
 
-#### Discussion
+## Discussion
 
 The split view item breaks this preference if it can’t fully expand without causing the other split panes to resize below their minimum size threshold.
 

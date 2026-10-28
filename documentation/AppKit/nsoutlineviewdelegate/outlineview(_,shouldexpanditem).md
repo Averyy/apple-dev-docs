@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldExpandItem item: A
 - (BOOL) outlineView:(NSOutlineView *) outlineView shouldExpandItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to permit `outlineView` to expand `item`, [`false`](../../Swift/false.md) to deny permission.
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to disallow expanding of specific items.
 

@@ -21,7 +21,7 @@ All the keys the decoder has for this container.
 var allKeys: [KeyedDecodingContainer<K>.Key] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Different keyed containers from the same decoder may return different keys here, because it is possible to encode with multiple key types which are not convertible to one another. This should report all keys present which are convertible to the requested type.
 

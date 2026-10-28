@@ -25,11 +25,11 @@ func associatedMediaSelectionOption(in mediaSelectionGroup: AVMediaSelectionGrou
 - (AVMediaSelectionOption *) associatedMediaSelectionOptionInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A media selection option associated with the receiver in `mediaSelectionGroup`, or `nil` if none were found.
 
-#### Discussion
+## Discussion
 
 Audible media selection options often have associated legible media selection options; in particular, audible options are typically associated with forced-only subtitle options with the same locale. See [`containsOnlyForcedSubtitles`](../avmediacharacteristic/containsonlyforcedsubtitles.md) for a discussion of forced-only subtitles.
 

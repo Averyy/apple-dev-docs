@@ -23,7 +23,7 @@ class var hlg: CAEDRMetadata { get }
 @property (class, retain, readonly) CAEDRMetadata * HLGMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 Your content should be scene referred and encoded with the ITU-R BT.2100-2 Hybrid Log Gamma (HLG) opto-electrical transfer function (OETF). The system applies the opto-optical transfer function (OOTF) based on peak display brightness and ambient lighting. If you’re rendering to a [`CAMetalLayer`](../cametallayer.md) with a linear colorspace (for floating point EDR layers), you must apply the HLG inverse OETF without normalization, to provide a nominal range of `[0, 12]`.
 

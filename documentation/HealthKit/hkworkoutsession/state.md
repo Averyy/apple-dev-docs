@@ -24,7 +24,7 @@ var state: HKWorkoutSessionState { get }
 @property (readonly) HKWorkoutSessionState state;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible session states, see [`HKWorkoutSessionState`](../hkworkoutsessionstate.md).
 

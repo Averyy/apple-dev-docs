@@ -5,11 +5,11 @@
 
 Learn how you can affect the appearance or behavior of a webpage by using injected style sheets and scripts.
 
-#### Overview
+## Overview
 
 To add or override styles and behaviors in a webpage, you write style sheets and scripts that you then inject into your webpage to read and modify its content.
 
-##### Add injected style sheets
+### Add injected style sheets
 
 Injected style sheets function like user style sheets, as defined by the [W3C](https://www.w3.org). The system adds styles in the following order:
 
@@ -29,7 +29,7 @@ span.anElement {
 }
 ```
 
-##### Add injected scripts
+### Add injected scripts
 
 You can inject `.js` files (text files that contain JavaScript functions and commands) into a webpage. The scripts in these files have access to the DOM of the webpages you inject them into. They have the same access privileges as scripts that execute from a webpage’s host. Injected scripts load each time a webpage loads, so keep them lightweight.
 

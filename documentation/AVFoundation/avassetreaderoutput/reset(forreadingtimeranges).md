@@ -26,7 +26,7 @@ func reset(forReadingTimeRanges timeRanges: [NSValue])
 - (void) resetForReadingTimeRanges:(NSArray<NSValue *> *) timeRanges;
 ```
 
-#### Discussion
+## Discussion
 
 You may only call this method if the value of the [`supportsRandomAccess`](./supportsrandomaccess.md) property is [`true`](../../Swift/true.md). You can’t call it after invoking [`markConfigurationAsFinal()`](./markconfigurationasfinal%28%29.md).
 

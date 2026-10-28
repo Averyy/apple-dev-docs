@@ -25,7 +25,7 @@ func NSMapInsertKnownAbsent(_ table: NSMapTable<AnyObject, AnyObject>, _ key: Un
 extern void NSMapInsertKnownAbsent(NSMapTable *table, const void *key, const void *value);
 ```
 
-#### Discussion
+## Discussion
 
 Inserts `key` (which must not be `notAKeyMarker`) and `value` into `table`. Unlike `NSMapInsert`, this function raises `NSInvalidArgumentException` if `table` already includes a key that matches `key`.
 

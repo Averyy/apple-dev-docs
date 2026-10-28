@@ -16,7 +16,7 @@ Wrapper to return instances of the IOHIDQueueInterface.
 IOHIDQueueInterface **(*allocQueue)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the created IOHIDQueueInterface.
 

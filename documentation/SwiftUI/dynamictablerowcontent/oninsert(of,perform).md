@@ -19,7 +19,7 @@ Sets the insert action for the dynamic table rows.
 func onInsert(of supportedContentTypes: [UTType], perform action: @escaping (Int, [NSItemProvider]) -> Void) -> ModifiedContent<Self, OnInsertTableRowModifier>
 ```
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when inserting elements into the original view.
 

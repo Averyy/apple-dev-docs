@@ -25,7 +25,7 @@ func setMiterLimit(_ limit: CGFloat)
 extern void CGContextSetMiterLimit(CGContextRef c, CGFloat limit);
 ```
 
-#### Discussion
+## Discussion
 
 If the current line join style is set to [`CGLineJoin.miter`](../cglinejoin/miter.md), the miter limit determines whether the lines should be joined with a bevel instead of a miter. The length of the miter is divided by the line width. If the result is greater than the miter limit, the style is converted to a bevel.
 

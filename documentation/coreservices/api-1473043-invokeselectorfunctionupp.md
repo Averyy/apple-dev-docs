@@ -15,11 +15,11 @@ Invokes a selector callback function.
 OSErr InvokeSelectorFunctionUPP(OSType selector, SInt32 *response, SelectorFunctionUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Gestalt Manager](./carbon_core/gestalt_manager.md).
 
-#### Discussion
+## Discussion
 
 You should not need to call this function, as the operating system invokes your selector callback for you.
 

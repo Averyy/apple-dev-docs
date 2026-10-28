@@ -15,7 +15,7 @@ Enable players to interact with friends, compare leaderboard ranks, earn achieve
 - visionOS 1.0+
 - watchOS 3.0+
 
-#### Overview
+## Overview
 
 Use the GameKit framework to implement Game Center social-gaming network features. Game Center is an Apple service that provides a single account that identifies players across all their games and devices. After players sign in to Game Center on their device, they can access their friends and use Game Center features you implement.
 
@@ -25,7 +25,7 @@ Before you can use GameKit classes, you must enable Game Center in your project 
 
 If you have an existing Unity project, you can access the GameKit framework using the [Apple Unity Plug-ins](https://github.com/Apple/UnityPlugins).
 
-##### Implement Game Center features
+### Implement Game Center features
 
 After you’ve enabled Game Center, you can implement many useful features to enhance the gaming experience.
 

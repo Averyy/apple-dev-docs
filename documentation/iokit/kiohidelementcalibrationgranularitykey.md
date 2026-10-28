@@ -16,7 +16,7 @@ The scale or level of detail returned in a calibrated element value.
 #define kIOHIDElementCalibrationGranularityKey
 ```
 
-#### Discussion
+## Discussion
 
 Values are rounded off such that if granularity=0.1, values after calibration are 0, 0.1, 0.2, 0.3, etc.
 

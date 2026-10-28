@@ -18,7 +18,7 @@ A control that allows a user to become discoverable and advertise to local devic
 @preconcurrency struct DevicePairingView<Label, Fallback> where Label : View, Fallback : View
 ```
 
-#### Overview
+## Overview
 
 A `DevicePairingView` should be used to become discoverable to local devices from the user through a button interface.
 

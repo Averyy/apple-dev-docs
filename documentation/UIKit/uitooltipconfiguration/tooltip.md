@@ -22,7 +22,7 @@ var toolTip: String { get }
 @property (nonatomic, copy, readonly) NSString * toolTip;
 ```
 
-#### Discussion
+## Discussion
 
 To set the tooltip text, create a tooltip configuration object using either the [`init(toolTip:)`](./init%28tooltip%29.md) or [`init(toolTip:in:)`](./init%28tooltip,in%29.md) methods.
 

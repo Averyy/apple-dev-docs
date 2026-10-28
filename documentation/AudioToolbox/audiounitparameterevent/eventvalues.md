@@ -24,16 +24,16 @@ var eventValues: AudioUnitParameterEvent.__Unnamed_union_eventValues
 union { ... } eventValues;
 ```
 
-#### Discussion
+## Discussion
 
 If the parameter event type is [`AUParameterEventType.parameterEvent_Immediate`](../auparametereventtype/parameterevent_immediate.md), use the `immediate` struct of this union. If the parameter event type is [`AUParameterEventType.parameterEvent_Ramped`](../auparametereventtype/parameterevent_ramped.md), use the `ramp` struct of this union.
 
-###### immediate
+#### immediate
 
 - ****bufferOffset****: A `UInt32` value that indicates the sample time at which to change the parameter value.
 - ****value****: An [`AudioUnitParameterValue`](../audiounitparametervalue.md) that indicates the new parameter value.
 
-###### ramp
+#### ramp
 
 - ****startBufferOffset****: An `SInt32` value that indicates the sample time at which to begin the parameter value change.
 - ****durationInFrames****: A `UInt32` value that indicates the number of frames over which the parameter value should linearly change from  `startValue` to `endValue`.

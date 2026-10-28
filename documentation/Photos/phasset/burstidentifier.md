@@ -24,7 +24,7 @@ var burstIdentifier: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * burstIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When the user takes a sequence of photos in burst mode with the Camera app (on supported devices), the Photos app user interface groups the resulting assets together. The Photos framework identifies a burst sequence as a group of assets sharing the same burst identifier string.
 

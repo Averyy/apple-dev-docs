@@ -25,7 +25,7 @@ var isReadOnly: Bool { get set }
 @property (getter=isReadOnly) BOOL readOnly;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for setting the [`NSReadOnlyPersistentStoreOption`](../nsreadonlypersistentstoreoption.md) on the associated store.
 

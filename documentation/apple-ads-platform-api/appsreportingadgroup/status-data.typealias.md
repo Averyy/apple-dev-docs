@@ -20,11 +20,11 @@ string AppsReportingAdGroup.Status
 - `ENABLED`: The ad group is active and eligible to serve ads.
 - `PAUSED`: The ad group is paused and won’t serve ads.
 
-#### Discussion
+## Discussion
 
 This captures the advertiser-set status as of the report’s generation, separate from the system-evaluated [`AppsReportingAdGroup.SystemStatus`](./systemstatus-data.typealias.md) reported alongside it.
 
-##### Example
+### Example
 
 ```json
 {

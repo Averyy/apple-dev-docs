@@ -23,7 +23,7 @@ optional func shouldGrantPermissionsOnUserGesture(for context: WKWebExtensionCon
 - (BOOL) shouldGrantPermissionsOnUserGestureForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the app to control granting of permissions on a per-tab basis when triggered by a user gesture. Implementing this method enables the app to dynamically manage `activeTab` permissions based on the tab’s current state, the content being accessed, or other custom criteria.
 

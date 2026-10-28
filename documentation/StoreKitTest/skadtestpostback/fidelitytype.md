@@ -21,7 +21,7 @@ var fidelityType: Int { get set }
 @property (nonatomic, assign) NSInteger fidelityType;
 ```
 
-#### Discussion
+## Discussion
 
 SKAdNetwork versions 2.2 and later require a [`fidelityType`](./fidelitytype.md) parameter for ad validation signatures. For view-through ads, use a fidelity type value of `0`. For StoreKit-rendered ads, use the value `1`.
 

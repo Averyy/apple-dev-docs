@@ -25,7 +25,7 @@ case failure
 INSnoozeTasksIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that prevent you from snoozing the tasks in the task list.
 

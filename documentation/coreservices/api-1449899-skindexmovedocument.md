@@ -19,11 +19,11 @@ func SKIndexMoveDocument(_ inIndex: SKIndex!, _ inDocument: SKDocument!, _ inNew
 Boolean SKIndexMoveDocument(SKIndexRef inIndex, SKDocumentRef inDocument, SKDocumentRef inNewParent);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` for a successful move, or `false` on failure.
 
-#### Discussion
+## Discussion
 
 When your application moves a document, use this function to update the index to reflect the change.
 

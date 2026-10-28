@@ -25,7 +25,7 @@ enum QualityOfService
 enum NSQualityOfService : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Work with higher quality of service classes receive more resources than work with lower quality of service classes whenever there’s resource contention.
 

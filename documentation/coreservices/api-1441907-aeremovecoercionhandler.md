@@ -19,11 +19,11 @@ func AERemoveCoercionHandler(_ fromType: DescType, _ toType: DescType, _ handler
 OSErr AERemoveCoercionHandler(DescType fromType, DescType toType, AECoercionHandlerUPP handler, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Thread safe starting in OS X v10.2.
 

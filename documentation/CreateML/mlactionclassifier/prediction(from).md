@@ -15,7 +15,7 @@ Generates a prediction for each action the classifier recognizes in the video.
 func prediction(from video: URL) throws -> [MLActionClassifier.Prediction]
 ```
 
-#### Return Value
+## Return Value
 
 An array of predictions.
 

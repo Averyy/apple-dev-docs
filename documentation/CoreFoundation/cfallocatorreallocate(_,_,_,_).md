@@ -25,7 +25,7 @@ func CFAllocatorReallocate(_ allocator: CFAllocator!, _ ptr: UnsafeMutableRawPoi
 extern void *CFAllocatorReallocate(CFAllocatorRef allocator, void *ptr, CFIndex newsize, CFOptionFlags hint);
 ```
 
-#### Discussion
+## Discussion
 
 The `CFAllocatorReallocate` function’s primary purpose is to reallocate a block of memory to a new (and usually larger) size. However, based on the values passed in certain of the parameters, this function can also allocate memory afresh or deallocate a given block of memory. The following summarizes the semantic combinations:
 

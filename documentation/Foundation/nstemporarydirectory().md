@@ -25,11 +25,11 @@ func NSTemporaryDirectory() -> String
 extern NSString *NSTemporaryDirectory();
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the path of the temporary directory for the current user.
 
-#### Discussion
+## Discussion
 
 See the [`FileManager`](./filemanager.md) method [`url(for:in:appropriateFor:create:)`](./filemanager/url%28for,in,appropriatefor,create%29.md) for the preferred means of finding the correct temporary directory.
 

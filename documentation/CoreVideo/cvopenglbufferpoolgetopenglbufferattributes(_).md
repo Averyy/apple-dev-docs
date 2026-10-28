@@ -21,11 +21,11 @@ func CVOpenGLBufferPoolGetOpenGLBufferAttributes(_ pool: CVOpenGLBufferPool) -> 
 extern CFDictionaryRefCVOpenGLBufferPoolGetOpenGLBufferAttributes(CVOpenGLBufferPoolRef pool);
 ```
 
-#### Return Value
+## Return Value
 
 The OpenGL buffer attributes Core Foundation dictionary, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 You can use this function to obtain information about the OpenGL buffers that will be created from the buffer pool.
 

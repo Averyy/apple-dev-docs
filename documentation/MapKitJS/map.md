@@ -21,7 +21,7 @@ class Map extends EventTarget
 - [Adding interactivity to overlays](./adding-interactivity-to-overlays.md)
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Overview
+## Overview
 
 A map is a self-contained view object that you embed on a webpage. It’s possible to have multiple independent maps on a single webpage, although typically webpages only need one interactive map.
 

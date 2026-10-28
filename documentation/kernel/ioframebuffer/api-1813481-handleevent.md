@@ -13,11 +13,11 @@ IOReturn handleEvent(
  void *info = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code, safely ignored.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should call this IOFramebuffer method on certain power state changes.
 

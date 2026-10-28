@@ -15,11 +15,11 @@ Methods for customizing the behavior and appearance of an annotation callout.
 interface AnnotationCalloutDelegate
 ```
 
-#### Overview
+## Overview
 
 You can customize an annotation callout by replacing the callout element, or by providing custom content to display inside a standard callout bubble. The callout delegate contains methods you implement to customize the appearance and behavior of the callout. All the methods are optional, enabling you to override any or all of the behavior.
 
-##### Creating a Custom Callout
+### Creating a Custom Callout
 
 This example shows how to replace the standard callout with a custom callout for a [`MarkerAnnotation`](./markerannotation.md).
 
@@ -57,7 +57,7 @@ const annotation = new mapkit.MarkerAnnotation(
 );
 ```
 
-##### Customizing the Content in a Standard Callout
+### Customizing the Content in a Standard Callout
 
 You may want to provide your own content to display inside the callout bubble, without replacing the whole element as in the previous code listing. The following example is similar to the previous one, but uses the standard callout bubble to display custom content.
 

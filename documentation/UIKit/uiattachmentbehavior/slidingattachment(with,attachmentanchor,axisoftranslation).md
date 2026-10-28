@@ -23,11 +23,11 @@ class func slidingAttachment(with item: any UIDynamicItem, attachmentAnchor poin
 + (instancetype) slidingAttachmentWithItem:(id<UIDynamicItem>) item attachmentAnchor:(CGPoint) point axisOfTranslation:(CGVector) axis;
 ```
 
-#### Return Value
+## Return Value
 
 A new attachment object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 The behavior created by this method acts like a solid rod between `item` and the anchor point whose initial position you specify using the `point` parameter. As forces are applied to the item, the item’s anchor point slides along the specified `axis`, causing the item to move with it. The item does not rotate relative to the axis of translation or anchor point.
 

@@ -22,7 +22,7 @@ init(of valueType: Value.Type, columnCustomization: Binding<TableColumnCustomiza
 
 Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
 
-#### Discussion
+## Discussion
 
 Each column in the table that should participate in customization is required to have an identifier, specified with [`customizationID(_:)`](../tablecolumncontent/customizationid%28_%29.md).
 

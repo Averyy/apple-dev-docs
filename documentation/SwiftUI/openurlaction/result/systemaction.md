@@ -21,7 +21,7 @@ The handler asks the system to open the original URL.
 static let systemAction: OpenURLAction.Result
 ```
 
-#### Discussion
+## Discussion
 
 The action invokes its completion handler with a value that depends on the outcome of the system’s attempt to open the URL.
 

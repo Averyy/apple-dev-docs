@@ -25,7 +25,7 @@ var apply: (UnsafeMutableRawPointer, CBLAS_TRANSPOSE, DenseMatrix_Float, DenseMa
 void (*)(void *, enum CBLAS_TRANSPOSE, DenseMatrix_Float, DenseMatrix_Float) apply;
 ```
 
-#### Discussion
+## Discussion
 
 The function has some approximation to *A⁻¹*.
 

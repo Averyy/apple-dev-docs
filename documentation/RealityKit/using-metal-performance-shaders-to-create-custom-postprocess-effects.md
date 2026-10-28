@@ -5,7 +5,7 @@
 
 Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
 
-#### Overview
+## Overview
 
 In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects to a RealityKit scene after RealityKit renders it, but before RealityKit displays it. If you register a postprocess callback function, RealityKit passes that function the complete, rendered frame so you can modify it before the viewer sees it. You can use any image processing or drawing APIs on the rendered frame but, as a practical matter, only APIs that execute on the GPU are fast enough to use every frame and maintain a good framerate.
 
@@ -15,11 +15,11 @@ If the Metal Performance Shaders framework doesn’t provide an image filter tha
 
 If neither the Metal Performance Shaders framework nor Core Image provide the effect you need, you can also write custom compute functions to implement postprocess effects. For more information, see [Implementing postprocess effects using Metal compute functions](./implementing-postprocess-effects-using-metal-compute-functions.md).
 
-##### Check the output texture pixel format
+### Check the output texture pixel format
 
 Some device GPUs require that the output texture be in a specific pixel format. If the device your code is running on doesn’t support [`MTLGPUFamily.apple2`](../Metal/mtlgpufamily/apple2.md), convert the output texture to [`MTLPixelFormat.bgra8Unorm`](../Metal/mtlpixelformat/bgra8unorm.md) before using it. For more information, see [Checking the pixel format of a postprocess effect’s output texture](./checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-##### Create a callback function
+### Create a callback function
 
 To create postprocess effects using image filters from the Metal Performance Shaders framework, create a Swift function that takes a single [`ARView.PostProcessContext`](./arview/postprocesscontext.md) parameter. In that method, create and configure an instance of the filter that you want to apply using the [`device`](./arview/postprocesscontext/device.md) property from the context. Once you’ve created an instance of the shader, call its encode method, passing the command buffer, source color texture, and output texture from the context.
 
@@ -33,7 +33,7 @@ To create postprocess effects using image filters from the Metal Performance Sha
 
 > **Note**: The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](./arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [Checking the pixel format of a postprocess effect’s output texture](./checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-##### Register the callback function
+### Register the callback function
 
 To apply the effect, register the function as the [`postProcess`](./arview/rendercallbacks-swift.struct/postprocess.md) render callback for the [`ARView`](./arview.md).
 

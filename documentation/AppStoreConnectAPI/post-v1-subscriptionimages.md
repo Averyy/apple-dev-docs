@@ -15,7 +15,7 @@ Reserve an image asset to appear in the App Store, representing a subscription.
 
 - [Creating and configuring win-back offers](./creating-and-configuring-win-back-offers.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

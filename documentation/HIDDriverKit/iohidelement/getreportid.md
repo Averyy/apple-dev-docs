@@ -14,7 +14,7 @@
 virtual uint32_t getReportID();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s report ID.
 

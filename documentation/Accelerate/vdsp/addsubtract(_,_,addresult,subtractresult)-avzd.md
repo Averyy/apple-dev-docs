@@ -25,7 +25,7 @@ static func addSubtract<S, T, U, V>(_ vectorA: S, _ vectorB: T, addResult: inout
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the addition and subtraction of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

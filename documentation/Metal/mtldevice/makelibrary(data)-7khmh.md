@@ -20,11 +20,11 @@ Creates a Metal library instance that contains the functions in a precompiled Me
 func makeLibrary(data: DispatchData) throws -> any MTLLibrary
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLLibrary`](../mtllibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method if your application manages its own archiving system for libraries — for example, if your app uses a single file that contains several libraries.
 

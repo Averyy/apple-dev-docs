@@ -20,7 +20,7 @@ Dismisses the current window.
 @preconcurrency func callAsFunction()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`dismissWindow`](../environmentvalues/dismisswindow.md) action:
 

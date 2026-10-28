@@ -5,7 +5,7 @@
 
 Represent a project timeline.
 
-#### Overview
+## Overview
 
 A `project` element represents a timeline in a Final Cut Pro project.  A project sequence can also contain filters that apply effects to certain elements. For more information on how to apply effects to story elements, see Adjustment and Effects Elements.
 

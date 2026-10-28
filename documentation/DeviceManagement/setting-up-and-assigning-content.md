@@ -5,13 +5,13 @@
 
 Distribute purchased licenses to managed users through your device management service.
 
-#### Overview
+## Overview
 
 Distributing purchased licenses includes configuring a device management service, registering users, purchasing content through Apple School Manager or Apple Business, and assigning that content to users. Each step includes a `curl` example with the v2 API at `https://vpp.itunes.apple.com/mdm` and the corresponding response.
 
 The API uses bearer token authentication. All v2 endpoints require an `Authorization: Bearer {sToken}` header, where the `sToken` is a content token for an organizational unit that a content manager downloads from Apple School Manager or Apple Business. For details about how the token works, see [Getting started with the management API](./getting-started-with-the-management-api.md).
 
-#### Fetch the service configuration
+## Fetch the service configuration
 
 Start by retrieving the service configuration. Send a GET request to `/v2/service/config` to discover request limits, available URLs, and notification settings for the organizational unit you manage.
 
@@ -46,7 +46,7 @@ The server responds with the following:
 
 The `limits` object contains the maximum sizes for each request type. For example, `maxAssets` is the maximum number of unique assets in a single manage request, and `maxClientUserIds` is the maximum number of unique user identifiers per request. These limits are dynamic and change without notice, so sync them every 5 minutes.
 
-#### Configure your device management service
+## Configure your device management service
 
 After fetching the service configuration, register your device management service with the server. Send a POST request to `/v2/client/config` to set your device management identity and subscribe to notifications. The request body includes an `mdmInfo` object that identifies your device management service, along with a notification URL, authentication token, and the notification types you want to receive.
 
@@ -100,7 +100,7 @@ The response echoes your configuration along with organizational unit informatio
 
 > ❗ **Important**: The server sends a `TEST_NOTIFICATION` to your `notificationUrl` when you configure notifications. If delivery fails, the server rejects the configuration. Make sure your notification endpoint is reachable and returns an HTTP `2xx` response before sending this request.
 
-#### Register a user
+## Register a user
 
 With your device management service configured, register a user by sending a POST request to `/v2/users/create`. Include a `users` array in the request body with each user’s `clientUserId` and `managedAppleId`.
 
@@ -197,7 +197,7 @@ The server responds with the following:
 }
 ```
 
-#### Purchase content through your management portal
+## Purchase content through your management portal
 
 With a registered user in place, the next step is purchasing content. A content manager uses Apple School Manager or Apple Business to purchase licenses for the organization. In this example, the content manager purchases the following:
 
@@ -221,7 +221,7 @@ As each purchase completes, the server sends count notifications to the device m
 
 The `countDelta` field indicates how many licenses were added. For the subscription, the server sends a `SUBSCRIPTION_COUNT` notification with a `counts` object containing `available` and `total` breakdowns by renewing and expiring state. For the full notification format, see [Subscribing to notifications](./subscribing-to-notifications.md).
 
-#### Verify asset inventory
+## Verify asset inventory
 
 After the content manager completes the purchases, verify that your organization’s inventory reflects the new licenses.
 
@@ -303,7 +303,7 @@ The server responds with the following:
 
 The subscription response breaks down seat counts by renewal state. All 25 seats are available and set to renew at the end of each billing period. For more information about how renewal states affect seat allocation, see [Managing subscriptions](./managing-subscriptions.md).
 
-#### Assign the app to the user
+## Assign the app to the user
 
 With inventory confirmed, assign the app to your registered user. Send a POST request to `/v2/assets/associate` with the asset and user details.
 
@@ -403,7 +403,7 @@ The server responds with the following:
 }
 ```
 
-#### Assign the subscription to the user
+## Assign the subscription to the user
 
 Finally, assign the subscription to the user. Send a POST request to `/v2/subscriptions/associate` with the subscription Adam ID, the user’s identifier, and the `renewing` flag set to `true` so the seat auto-renews at the end of each billing period.
 

@@ -24,7 +24,7 @@ protocol UIViewImplicitlyAnimating : UIViewAnimating
 @protocol UIViewImplicitlyAnimating <UIViewAnimating>
 ```
 
-#### Overview
+## Overview
 
 Animator objects used in interruptible view controller transitions adopt the [`UIViewImplicitlyAnimating`](./uiviewimplicitlyanimating.md) protocol to modify in-flight transition animations. This protocol also conforms to the [`UIViewAnimating`](./uiviewanimating.md) protocol, which specifies methods for starting and stopping animations and for updating their state.
 

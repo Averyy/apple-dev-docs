@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatTranslate(SPProjectiveTransform3DFloat transform, SPVector3DFloat offset);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s offset by the @p width, @p height, and @p depth of the size.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform that’s constructed by concatenating an existing projective transform and a translation.
 

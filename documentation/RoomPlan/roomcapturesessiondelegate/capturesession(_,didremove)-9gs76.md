@@ -17,7 +17,7 @@ Provides a default, blank implementation for when the session removes surfaces a
 func captureSession(_ session: RoomCaptureSession, didRemove room: CapturedRoom)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureSession(_:didRemove:)`](./capturesession%28_,didremove%29.md).
 

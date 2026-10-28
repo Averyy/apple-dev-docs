@@ -24,7 +24,7 @@ var depthStencilTexture: (any MTLTexture)? { get }
 @property (nonatomic, readonly, nullable) id<MTLTexture> depthStencilTexture;
 ```
 
-#### Discussion
+## Discussion
 
 The value of [`depthStencilPixelFormat`](./depthstencilpixelformat.md) determines the format of this texture.
 

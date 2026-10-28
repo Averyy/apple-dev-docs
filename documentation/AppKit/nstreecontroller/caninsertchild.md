@@ -19,7 +19,7 @@ var canInsertChild: Bool { get }
 @property (readonly) BOOL canInsertChild;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if a child object can be inserted into the tree controller’s content. This property is observable using key-value observing.
 

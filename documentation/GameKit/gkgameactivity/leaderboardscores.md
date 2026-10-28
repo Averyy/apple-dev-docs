@@ -24,7 +24,7 @@ var leaderboardScores: Set<GKLeaderboardScore> { get }
 @property (nonatomic, copy, readonly) NSSet<GKLeaderboardScore *> * leaderboardScores;
 ```
 
-#### Discussion
+## Discussion
 
 Scores will be submitted to the leaderboards when the activity ends.
 

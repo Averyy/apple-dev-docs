@@ -25,11 +25,11 @@ func changeCurrentDirectoryPath(_ path: String) -> Bool
 - (BOOL) changeCurrentDirectoryPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 All relative pathnames refer implicitly to the current working directory.
 

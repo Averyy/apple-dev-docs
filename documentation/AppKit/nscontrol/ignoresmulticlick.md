@@ -19,7 +19,7 @@ var ignoresMultiClick: Bool { get set }
 @property BOOL ignoresMultiClick;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the receiver ignores multiple clicks; otherwise, [`false`](../../Swift/false.md).
 

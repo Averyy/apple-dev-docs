@@ -19,7 +19,7 @@ class NSDraggingItem
 @interface NSDraggingItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSDraggingItem`](./nsdraggingitem.md) objects have extremely limited lifetimes. Don’t retain these items because changing outside of the prescribed lifetimes has no impact on the drag.
 

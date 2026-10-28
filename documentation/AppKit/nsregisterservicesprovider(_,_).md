@@ -19,7 +19,7 @@ func NSRegisterServicesProvider(_ provider: Any?, _ name: NSServiceProviderName)
 extern void NSRegisterServicesProvider(id provider, NSServiceProviderName name);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to register custom services not directly related to your application.
 

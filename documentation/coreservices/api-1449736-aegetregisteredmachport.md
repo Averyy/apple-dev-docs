@@ -19,11 +19,11 @@ func AEGetRegisteredMachPort() -> mach_port_t
 mach_port_t AEGetRegisteredMachPort(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a Mach message port header.
 
-#### Discussion
+## Discussion
 
 Apple events in macOS are implemented in terms of Mach messages. If your application links with the Carbon umbrella framework, it includes the HIToolbox framework, which initializes a Mach port and registers it with the run loop for the application. That port is considered public, and is used for sending and receiving Apple events.
 

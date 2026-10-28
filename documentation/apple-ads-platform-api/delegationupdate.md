@@ -15,7 +15,7 @@ The request body for updating a delegation on an ad account.
 object DelegationUpdate
 ```
 
-#### Discussion
+## Discussion
 
 You only ever send `DelegationUpdate` entries as part of the `delegations` array on [`Update Ad Accounts`](./put-ad-accounts-_id_.md), which uses full-replacement semantics: the array you send becomes the account’s complete set of delegations. There is no separate add or remove operation. The system keeps entries you include and removes entries you omit.
 
@@ -55,7 +55,7 @@ PUT /v1/ad-accounts/{id}
 
 To remove all delegations, send an empty array.
 
-##### Example
+### Example
 
 ```json
 {

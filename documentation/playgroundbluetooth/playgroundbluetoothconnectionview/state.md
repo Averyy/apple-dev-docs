@@ -16,7 +16,7 @@ The states that tell users how to proceed when connecting to and switching betwe
 enum PlaygroundBluetoothConnectionView.State
 ```
 
-#### Overview
+## Overview
 
 The example below shows how to use the different states as part of adopting the [`PlaygroundBluetoothConnectionViewDelegate`](../playgroundbluetoothconnectionviewdelegate.md) protocol.
 

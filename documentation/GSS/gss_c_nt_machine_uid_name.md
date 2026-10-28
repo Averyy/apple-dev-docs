@@ -19,7 +19,7 @@ A name used to specify a user on the local system by way of a numeric identifier
 #define GSS_C_NT_MACHINE_UID_NAME
 ```
 
-#### Discussion
+## Discussion
 
 Use [`gss_import_name(_:_:_:_:)`](./gss_import_name%28_,_,_,_%29.md) to resolve this kind of name into a username.
 

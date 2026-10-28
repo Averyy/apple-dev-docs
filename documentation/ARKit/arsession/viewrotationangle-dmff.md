@@ -16,7 +16,7 @@ The angle, in degrees, to rotate a view by so the `ARFrame` it displays stays le
 @property (atomic, readonly) CGFloat viewRotationAngle;
 ```
 
-#### Discussion
+## Discussion
 
 Updates in step with the system UI rotation. The value is normalized to `[0, 360)` (`0` at LandscapeRight, `90` at Portrait, `180` at LandscapeLeft, `270` at PortraitUpsideDown), or `NaN` until the angle is available (`viewLayer` is set and on screen).
 

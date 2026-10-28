@@ -21,11 +21,11 @@ var numberOfVirtualScreens: GLint { get }
 @property (readonly) GLint numberOfVirtualScreens;
 ```
 
-#### Return Value
+## Return Value
 
 The number of virtual screens.
 
-#### Discussion
+## Discussion
 
 When the attributes are set, OpenGL searches for drivers matching the requested attributes. Each matching driver drives a set of displays. For example, a graphics card in a portable computer might drive the internal screen and an external display. This portable computer would have one virtual screen. A desktop computer might have two different graphics cards, each driving one or more displays. The pairing of an OpenGL driver with its set of associated displays corresponds to one virtual screen. In the above examples, the portable computer would have one virtual screen, while the desktop computer would have two. Another desktop computer with a video card driving two displays at once would have one virtual screen.
 

@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected = 0x20
 ```
 
-#### Discussion
+## Discussion
 
 Peripheral Device is supported, but not connected.
 

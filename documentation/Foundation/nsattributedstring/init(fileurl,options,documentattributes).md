@@ -24,11 +24,11 @@ init(fileURL url: URL, options: [AnyHashable : Any] = [:], documentAttributes di
 - (instancetype) initWithFileURL:(NSURL *) url options:(NSDictionary *) options documentAttributes:(NSDictionary **) dict error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized attributed string object, or `nil` if the data can’t be decoded.
 
-#### Discussion
+## Discussion
 
 The HTML importer should not be called from a background thread (that is, the `options` dictionary includes [`documentType`](./documentattributekey/documenttype.md) with a value of [`html`](./documenttype/html.md)). It will try to synchronize with the main thread, fail, and time out. Calling it from the main thread works (but can still time out if the HTML contains references to external resources, which should be avoided at all costs). The HTML import mechanism is meant for implementing something like markdown (that is, text styles, colors, and so on), not for general HTML import.
 

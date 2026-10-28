@@ -5,7 +5,7 @@
 
 See the full JSON code from this tutorial.
 
-#### Overview
+## Overview
 
 This page brings together everything from this tutorial as a template that you can use for your News articles. If you followed the steps throughout this tutorial, the following example code should match the code in your `article.json` file.
 
@@ -820,7 +820,7 @@ You can copy this template (which is also the `article.json` file in `Desktop/Ne
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating a Newsletter Sign-Up Element](./creating-a-newsletter-sign-up-element.md)
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one which is recommended to be 
 var isIDStart: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Applications that store identifiers in NFKC normalized form should instead use `isXIDStart` to check whether a scalar is a valid identifier character.
 

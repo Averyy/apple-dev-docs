@@ -24,7 +24,7 @@ static var defaultLow: MKFeatureDisplayPriority { get }
 static const MKFeatureDisplayPriority MKFeatureDisplayPriorityDefaultLow;
 ```
 
-#### Discussion
+## Discussion
 
 An annotation view with this priority is removed from the map when its bounds collide with the bounds of another view with a higher priority. If the priorities of the two views are equal, the view furthest from the center of the map’s visible region is hidden first.
 

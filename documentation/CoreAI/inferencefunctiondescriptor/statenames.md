@@ -19,7 +19,7 @@ The names of the function’s states.
 var stateNames: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 States are function arguments that the function both reads and writes during inference. You must provide a mutable view for every state when calling [`run(inputs:states:outputViews:)`](../inferencefunction/run%28inputs,states,outputviews%29-14emi.md).
 

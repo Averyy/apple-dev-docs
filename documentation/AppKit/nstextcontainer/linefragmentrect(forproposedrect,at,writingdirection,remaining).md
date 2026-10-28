@@ -19,7 +19,7 @@ func lineFragmentRect(forProposedRect proposedRect: CGRect, at characterIndex: I
 - (CGRect) lineFragmentRectForProposedRect:(CGRect) proposedRect atIndex:(NSUInteger) characterIndex writingDirection:(NSWritingDirection) baseWritingDirection remainingRect:(CGRect *) remainingRect;
 ```
 
-#### Discussion
+## Discussion
 
 The bounds of the line fragment rectangle are determined by the intersection of `proposedRect` and the text container’s bounding rectangle defined by its [`NSTextContainer`](../nstextcontainer.md) property. The regions defined by the [`NSTextContainer`](../nstextcontainer.md) property are excluded from the return value. It is possible that `proposedRect` can be divided into multiple line fragments due to exclusion paths. In that case, `remainingRect` returns the remainder that can be passed in as the proposed rectangle for the next iteration.
 

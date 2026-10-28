@@ -14,7 +14,7 @@ struct IOStorageCompletion {
 };
 ```
 
-#### Discussion
+## Discussion
 
 The IOStorageCompletion structure describes the C (or C++) completion routine that is called once an asynchronous storage operation completes. The values passed for the target and parameter fields will be passed to the routine when it is called.
 

@@ -20,7 +20,7 @@ class UITitlebar
 @interface UITitlebar : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each [`UIWindowScene`](./uiwindowscene.md) has a [`UITitlebar`](./uititlebar.md) object available in Mac apps built with Mac Catalyst. You use this object to configure the title bar and its toolbar.
 

@@ -19,7 +19,7 @@ Indexing using a range expression (e.g. `0 ..< 5`) with an axis (deprecated).
 subscript(range: some RangeExpression<Int>, axis axis: Int, stream stream: StreamOrDevice = .default) -> MLXArray { get set }
 ```
 
-#### Overview
+## Overview
 
 This method supports a range expression with an axis, for example this python code:
 
@@ -40,7 +40,7 @@ This particular subscript operator is deprecated in favor of that, but for compl
 array[0 ..< 3, axis: -1]
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](../indexing.md)
 

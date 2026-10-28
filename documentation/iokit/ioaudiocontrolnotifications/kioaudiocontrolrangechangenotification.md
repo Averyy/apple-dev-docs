@@ -14,7 +14,7 @@
 kIOAudioControlRangeChangeNotification = 1
 ```
 
-#### Discussion
+## Discussion
 
 Used to request range change notifications.
 

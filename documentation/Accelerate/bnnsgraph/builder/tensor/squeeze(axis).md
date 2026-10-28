@@ -23,7 +23,7 @@ func squeeze(axis: Int) -> BNNSGraph.Builder.Tensor<T>
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This operation deletes a dimension of size 1 at the given index.
 

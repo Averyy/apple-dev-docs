@@ -24,7 +24,7 @@ var mutableObjects: Bool { get set }
 @property (nonatomic) BOOL mutableObjects;
 ```
 
-#### Discussion
+## Discussion
 
 Specify [`true`](../../Swift/true.md) to receive mutable contacts and groups. Default is [`false`](../../Swift/false.md).
 

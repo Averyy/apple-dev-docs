@@ -23,7 +23,7 @@ class SFAuthenticationSession
 @interface SFAuthenticationSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Along with the login, this class manages sharing cookies and website data.
 

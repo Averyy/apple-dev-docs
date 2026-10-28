@@ -19,7 +19,7 @@ let kABRelatedNamesProperty: String
 extern NSString * const kABRelatedNamesProperty;
 ```
 
-#### Discussion
+## Discussion
 
 Type: [`kABMultiStringProperty`](./kabmultistringproperty.md).
 

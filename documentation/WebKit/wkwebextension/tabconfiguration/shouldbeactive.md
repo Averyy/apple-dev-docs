@@ -23,7 +23,7 @@ var shouldBeActive: Bool { get }
 @property (nonatomic, readonly) BOOL shouldBeActive;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `YES`, the tab should be made active in the window, ensuring it is the frontmost tab. Being active implies the tab is also selected. If this property is `NO`, the tab shouldn’t affect the currently active tab.
 

@@ -24,7 +24,7 @@ The sections computed from the current results, grouped by the `sectionBy` key p
 
 Available when `Element` conforms to `PersistentModel`.
 
-#### Discussion
+## Discussion
 
 Section names are `String`-typed. Both `KeyPath<Element, String>` and `KeyPath<Element, String?>` section keys produce `String` names — `nil` values map to the empty-string section.
 

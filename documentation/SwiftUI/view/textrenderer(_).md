@@ -22,7 +22,7 @@ Returns a new view such that any text views within it will use `renderer` to dra
 nonisolated func textRenderer<T>(_ renderer: T) -> some View where T : TextRenderer
 ```
 
-#### Return Value
+## Return Value
 
 A new view that will use `renderer` to draw its text views.
 

@@ -5,7 +5,7 @@
 
 Verify that connections to your server come from legitimate instances of your app.
 
-#### Overview
+## Overview
 
 Adopt App Attest to check whether clients connecting to your server are valid instances of your app. Your app uses the [`shared`](./dcappattestservice/shared.md) instance of the [`DCAppAttestService`](./dcappattestservice.md) to create a cryptographic key on a device, and then attest to the key’s validity. This produces an attestation object that your app passes to your server, along with the corresponding key identifier. Your server verifies the attestation object, and then extracts the embedded public key and other information. Later, your server uses the key to verify assertion objects that your app sends at critical points in the app’s life cycle, like when users try to download premium content.
 
@@ -13,13 +13,13 @@ Adopt App Attest to check whether clients connecting to your server are valid in
 
 This article describes how to integrate App Attest into your server logic. For more information about the activites you perform in your app to support App Attest, see [Establishing your app’s integrity](./establishing-your-app-s-integrity.md).
 
-##### Provide a challenge
+### Provide a challenge
 
 Every time your app needs to communicate attestation data to your server, the app first asks the server for a unique, one-time challenge. App Attest integrates this challenge into the objects that it provides, and that your app sends back to your server for validation. This makes it harder for an attacker to implement a replay attack.
 
 When the app asks for a challenge, provide a randomized data value, and remember the value for use when verifying the corresponding attestation or assertion objects the client sends. How you use the challenge data depends on the kind of object that you need to validate.
 
-##### Verify the attestation
+### Verify the attestation
 
 The App Attest service creates an attestation object that consists of authenticator data and an attestation statement according to the [Web Authentication](https://www.w3.org/TR/webauthn/#sec-authenticator-data) specification. The following authenticator fields are of particular interest for App Attest:
 
@@ -108,7 +108,7 @@ After successfully completing these steps, you can trust the attestation object.
 
 > **Note**: Follow the [Attestation Object Validation Guide](./attestation-object-validation-guide.md) to ensure your implementation for the steps above is correct.
 
-##### Store the public key and receipt
+### Store the public key and receipt
 
 Store the verified public key from `credCert` on your server and associate it with the user for the specific device. You use this key to check assertions later. As an added protection against replay attacks, make sure that the public key doesn’t already have an association with another user.
 
@@ -118,7 +118,7 @@ When attestation succeeds, independently verify and store the receipt immediatel
 
 > ❗ **Important**: Be prepared to store multiple (key, receipt) pairs for each user. Store one pair for each device the user uses to access your services. Also, keep development pairs separate from production pairs because you can’t use one set in the other’s environment.
 
-##### Verify the assertion
+### Verify the assertion
 
 After successful attestation, your server can require the associated client to accompany server requests with an assertion object. Each verified assertion reestablishes the legitimacy of the client. You typically require this for requests that access sensitive or premium content.
 

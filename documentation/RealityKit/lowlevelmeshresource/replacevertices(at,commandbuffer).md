@@ -18,11 +18,11 @@ Returns a Metal buffer you populate on the GPU with the new contents of the vert
 final func replaceVertices(at index: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer
 ```
 
-#### Return Value
+## Return Value
 
 A `MTLBuffer` ready for GPU write operations.
 
-#### Discussion
+## Discussion
 
 Upon return the buffer’s contents are undefined; the caller is responsible for populating it with valid data. The renderer waits for the provided command buffer to complete before using the buffer for rendering.
 

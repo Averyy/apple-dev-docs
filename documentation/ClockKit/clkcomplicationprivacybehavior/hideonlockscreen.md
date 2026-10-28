@@ -21,7 +21,7 @@ case hideOnLockScreen
 CLKComplicationPrivacyBehaviorHideOnLockScreen
 ```
 
-#### Discussion
+## Discussion
 
 For circular, modular small, and utilitarian small complications, ClockKit displays the complication icon provided by your WatchKit extension. For modular large, and utilitarian large templates, ClockKit displays your app name.
 

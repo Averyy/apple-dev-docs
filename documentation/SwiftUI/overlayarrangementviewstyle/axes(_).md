@@ -22,7 +22,7 @@ nonisolated
 func axes(_ axes: Axis.Set) -> OverlayArrangementViewStyle
 ```
 
-#### Overview
+## Overview
 
 For axes that you don’t include, the arrangement view only displays the primary view.
 

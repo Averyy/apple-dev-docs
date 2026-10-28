@@ -13,7 +13,7 @@ virtual void deallocate(
  IORangeScalarsize );
 ```
 
-#### Overview
+## Overview
 
 This method deallocates a range to the free list, given a the start offset and length passed in.
 

@@ -15,7 +15,7 @@ The notary service’s response to a request for the status of a submission.
 object SubmissionResponse
 ```
 
-#### Discussion
+## Discussion
 
 You receive a structure of this type in response to a call to the [`Get Submission Status`](./get-submission-status.md) endpoint.
 

@@ -17,7 +17,7 @@ Apply a typed cache strategy to every eligible cache layer.
 func applyKVCacheConfiguration(cache: inout [KVCache], configuration: KVCacheConfiguration) throws -> KVCacheApplicationResult
 ```
 
-#### Discussion
+## Discussion
 
 This is the single runtime dispatch point used by autoregressive, speculative, guided, and diagnostic generation paths.
 

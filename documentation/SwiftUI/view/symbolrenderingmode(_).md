@@ -22,7 +22,7 @@ nonisolated
 func symbolRenderingMode(_ mode: SymbolRenderingMode?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the rendering mode you supply.
 

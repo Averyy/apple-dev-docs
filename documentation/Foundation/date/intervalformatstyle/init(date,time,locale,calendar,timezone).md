@@ -21,7 +21,7 @@ Creates an instance using the provided date, time, locale, calendar, time zone, 
 init(date: Date.IntervalFormatStyle.DateStyle? = nil, time: Date.IntervalFormatStyle.TimeStyle? = nil, locale: Locale = .autoupdatingCurrent, calendar: Calendar = .autoupdatingCurrent, timeZone: TimeZone = .autoupdatingCurrent)
 ```
 
-#### Discussion
+## Discussion
 
 Customize the date interval string by providing a date style, time style, locale, calendar, time zone, and capitalization scheme.
 

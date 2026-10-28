@@ -25,7 +25,7 @@ func preflight() throws
 - (BOOL) preflightAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not actually load the bundle’s executable code. Instead, it performs several checks to see if the code could be loaded and with one exception returns the same errors that would occur during an actual load operation. The one exception is the `NSExecutableLinkError` error, which requires the actual loading of the code to verify link errors.
 

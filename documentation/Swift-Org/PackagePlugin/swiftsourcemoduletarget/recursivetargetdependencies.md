@@ -17,7 +17,7 @@ The transitive closure of all the targets on which the receiver depends.
 var recursiveTargetDependencies: [Target] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Package manager orders the results such that every dependency appears before any other target that depends on it.
 

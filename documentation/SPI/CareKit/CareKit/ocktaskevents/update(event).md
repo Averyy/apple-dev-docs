@@ -18,7 +18,7 @@ Update an event with a particular uniqueness definition. The event will be inser
 mutating func update(event: OCKAnyEvent) -> OCKAnyEvent?
 ```
 
-#### Return Value
+## Return Value
 
 The event that was updated. The return value will be nil if the event’s task has a nil stable identity.
 

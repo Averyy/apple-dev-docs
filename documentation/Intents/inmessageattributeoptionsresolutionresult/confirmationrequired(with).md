@@ -23,11 +23,11 @@ class func confirmationRequired(with messageAttributeOptionsToConfirm: INMessage
 + (instancetype) confirmationRequiredWithMessageAttributeOptionsToConfirm:(INMessageAttributeOptions) messageAttributeOptionsToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMessageAttributeOptionsResolutionResult`](../inmessageattributeoptionsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single value but want the user to confirm that value.
 

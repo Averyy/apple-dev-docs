@@ -29,7 +29,7 @@ func scheduleBuffer(_ buffer: AVAudioPCMBuffer, at when: AVAudioTime?, options: 
 - (void) scheduleBuffer:(AVAudioPCMBuffer *) buffer atTime:(AVAudioTime *) when options:(AVAudioPlayerNodeBufferOptions) options completionHandler:(AVAudioNodeCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

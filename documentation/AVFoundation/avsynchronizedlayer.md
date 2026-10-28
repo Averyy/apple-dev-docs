@@ -24,7 +24,7 @@ class AVSynchronizedLayer
 @interface AVSynchronizedLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 You can create an arbitrary number of synchronized layers from the same `AVPlayerItem` object.
 

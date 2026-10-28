@@ -23,7 +23,7 @@ func prepare()
 - (void) prepareLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Layout updates occur the first time the collection view presents its content and whenever the layout is invalidated explicitly or implicitly because of a change to the view. During each layout update, the collection view calls this method first to give your layout object a chance to prepare for the upcoming layout operation.
 

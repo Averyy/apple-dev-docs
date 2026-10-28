@@ -19,7 +19,7 @@ class var maximumAllowedCPUCount: Int { get }
 @property (class, readonly) NSUInteger maximumAllowedCPUCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value in the [`cpuCount`](./cpucount.md) property must be less than or equal to the value in this property.
 

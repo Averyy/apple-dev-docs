@@ -24,7 +24,7 @@ var remoteSecureElementPasses: [PKSecureElementPass] { get }
 @property (nonatomic, copy, readonly) NSArray<PKSecureElementPass *> * remoteSecureElementPasses;
 ```
 
-#### Discussion
+## Discussion
 
 This is an array that contains the Secure Element passes from all of the device’s remote paired devices, such as an Apple Watch.
 

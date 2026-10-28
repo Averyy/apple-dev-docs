@@ -20,7 +20,7 @@ A type whose value can represent a prompt.
 protocol PromptRepresentable
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Conformance to this protocol is provided automatically by the `@Generable` macro, you should **not** override its implementations. Overriding may negatively impact runtime performance and cause bugs.
 

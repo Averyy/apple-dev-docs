@@ -24,7 +24,7 @@ func VTCopyVideoEncoderList(_ options: CFDictionary?, _ listOfVideoEncodersOut: 
 extern OSStatus VTCopyVideoEncoderList(CFDictionaryRef options, CFArrayRef*listOfVideoEncodersOut);
 ```
 
-#### Discussion
+## Discussion
 
 The caller must release the returned list using [`CFRelease`](../CoreFoundation/cfrelease.md).
 

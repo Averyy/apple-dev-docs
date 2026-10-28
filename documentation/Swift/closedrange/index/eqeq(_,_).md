@@ -23,7 +23,7 @@ static func == (lhs: ClosedRange<Bound>.Index, rhs: ClosedRange<Bound>.Index) ->
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

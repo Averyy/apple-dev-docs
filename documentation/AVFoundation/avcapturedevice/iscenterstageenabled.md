@@ -23,7 +23,7 @@ class var isCenterStageEnabled: Bool { get set }
 @property (class, getter=isCenterStageEnabled) BOOL centerStageEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can only set this value when Center Stage is under app or cooperative control. Attempting to change the enabled state when the control mode is [`AVCaptureDevice.CenterStageControlMode.user`](./centerstagecontrolmode-swift.enum/user.md), results in the system throwing an exception.
 

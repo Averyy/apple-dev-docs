@@ -20,7 +20,7 @@ func AudioObjectShow(_ inObjectID: AudioObjectID)
 extern void AudioObjectShow(AudioObjectID inObjectID);
 ```
 
-#### Discussion
+## Discussion
 
 Prints to standard out a textural description of the AudioObject.
 

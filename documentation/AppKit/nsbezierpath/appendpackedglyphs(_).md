@@ -21,7 +21,7 @@ func appendPackedGlyphs(_ packedGlyphs: UnsafePointer<CChar>)
 - (void) appendBezierPathWithPackedGlyphs:(const char *) packedGlyphs;
 ```
 
-#### Discussion
+## Discussion
 
 You should avoid using this method directly. Instead, use the [`appendGlyph(_:in:)`](./appendglyph%28_,in%29.md) and [`appendGlyphs(_:count:in:)`](./appendglyphs%28_,count,in%29.md) methods to append glyphs to a path.
 

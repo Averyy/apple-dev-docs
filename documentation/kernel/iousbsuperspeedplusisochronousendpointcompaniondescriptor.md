@@ -15,7 +15,7 @@ The descriptor for a SuperSpeedPlus isochronous USB endpoint companion.
 typedef struct IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 See USB 3.2, 9.6.8 for more information.
 

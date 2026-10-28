@@ -21,7 +21,7 @@ Prefer the quality-of-service class associated with the block.
 static let enforceQoS: DispatchWorkItemFlags
 ```
 
-#### Discussion
+## Discussion
 
 This flag prioritizes the block’s quality-of-service class over the one associated with the current execution context, as long as doing so does not lower the quality of service.
 

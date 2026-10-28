@@ -24,7 +24,7 @@ var objectBeforeChanges: ObjectType { get }
 @property (atomic, strong, readonly) ObjectType objectBeforeChanges;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the same object you passed to the [`changeDetailsForObject:`](../phchange/changedetailsforobject_.md) to request change details.
 

@@ -22,7 +22,7 @@ var needsPeriodicRefresh: Bool { get }
 @property (nonatomic, readonly) BOOL needsPeriodicRefresh;
 ```
 
-#### Discussion
+## Discussion
 
 If your app isn’t progressing through the content, a single render at the current time is enough.
 

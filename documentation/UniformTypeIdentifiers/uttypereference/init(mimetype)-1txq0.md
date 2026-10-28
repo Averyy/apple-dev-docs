@@ -25,7 +25,7 @@ convenience init?(mimeType: String)
 + (instancetype) typeWithMIMEType:(NSString *) mimeType;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` if the system doesn’t know the MIME type.
 

@@ -25,7 +25,7 @@ var changePlaybackRateCommand: MPChangePlaybackRateCommand { get }
 @property (nonatomic, readonly) MPChangePlaybackRateCommand * changePlaybackRateCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for changing the playback rate of the current track. In your handler, change the playback rate to the new value. The current playback rate cannot be negative. You can disable the command if your app does not support it.
 

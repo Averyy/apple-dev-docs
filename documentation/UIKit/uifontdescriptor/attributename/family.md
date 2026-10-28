@@ -24,7 +24,7 @@ static let family: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorFamilyAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an optional [`NSString`](../../../Foundation/nsstring.md) object that specifies the font family.
 

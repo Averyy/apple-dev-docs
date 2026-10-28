@@ -10,7 +10,7 @@ Build a visionOS app that streams high-fidelity immersive content from a compute
 - visionOS 26.4+
 - Xcode 26.4+
 
-#### Overview
+## Overview
 
 This sample app demonstrates how to implement foveated streaming in a visionOS app, allowing you to connect to a local or remote device and receive streamed content with controls for pausing, resuming, and disconnecting the session.
 
@@ -26,7 +26,7 @@ Common use cases include:
 
 > **Note**: To test the end-to-end streaming flow, build a desktop application that manages authentication and streams content. For more information, see [Streaming a CloudXR application to Apple Vision Pro with foveation](./streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 This sample project requires use of the [`Foveated Streaming Session`](../BundleResources/entitlements/com.apple.developer.foveated-streaming-session.md) entitlement. Add the entitlement to the Xcode project in the Signing & Capabilities tab.
 
@@ -34,7 +34,7 @@ Because this sample app uses foveated streaming, you can’t run this sample in 
 
 - An Apple Vision Pro with visionOS 26.4 or later.
 
-#### Create a foveated streaming session
+## Create a foveated streaming session
 
 To stream foveated content from a computer or the cloud to Apple Vision Pro, first initialize a [`FoveatedStreamingSession`](./foveatedstreamingsession.md):
 
@@ -50,7 +50,7 @@ A [`FoveatedStreamingSession`](./foveatedstreamingsession.md) allows you to esta
 
 The sample initializes the foveated streaming session directly in the main app structure so it’s accessible to the [`ImmersiveSpace`](../SwiftUI/immersivespace.md).
 
-#### Define a foveated streaming space
+## Define a foveated streaming space
 
 Create an immersive space to display streamed content for the session by defining an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) in the app’s body:
 
@@ -76,7 +76,7 @@ The app allows the person to adjust the size of the streamed content relative to
 
 You can optionally add native [RealityKit](../RealityKit/RealityKit.md) content alongside the streamed content by placing it inside a [`RealityView`](../RealityKit/realityview.md) in your immersive space. For examples, see `ReopenMainWindowView` or `TransformStreamWidgetView` in the downloadable sample code project.
 
-#### Connect to a streaming session
+## Connect to a streaming session
 
 The [`FoveatedStreamingSession`](./foveatedstreamingsession.md) provides three ways to connect to a streaming endpoint:
 
@@ -144,7 +144,7 @@ After initiating a connection with the `.systemDiscovered` and `.local` connecti
 
 After authenticating, visionOS displays a modal asking the person whether they want to begin sharing information about the approximate region where they’re looking and start streaming or cancel the connection. If the person cancels the connection, the [`connect(endpoint:)`](./foveatedstreamingsession/connect%28endpoint%29.md) method throws a [`FoveatedStreamingSession.DisconnectReason`](./foveatedstreamingsession/disconnectreason.md) error.
 
-#### Allow people to cancel the connection
+## Allow people to cancel the connection
 
 The sample app allows the person to cancel the connection operation before it completes by cancelling the connection task.
 
@@ -190,7 +190,7 @@ struct StreamConnectionView: View {
 
 Alternatively, you can call [`disconnect()`](./foveatedstreamingsession/disconnect%28%29.md) to interrupt the connection. The [`pause()`](./foveatedstreamingsession/pause%28%29.md) and [`resume()`](./foveatedstreamingsession/resume%28%29.md) methods also support task cancellation.
 
-#### Preview interactions in the simulator
+## Preview interactions in the simulator
 
 The sample decouples views from their dependence on the Foveated Streaming framework by abstracting [`FoveatedStreamingSession`](./foveatedstreamingsession.md) methods with an environment variable. This allows you to create mock behaviors for those methods within SwiftUI previews, despite the framework not being available for simulator, improving UI development and iteration.
 
@@ -300,7 +300,7 @@ This decouples views from being dependent on [`FoveatedStreamingSession`](./fove
 }
 ```
 
-#### Display the streamed content
+## Display the streamed content
 
 To show the streamed content after the app establishes a connection to a streaming endpoint, open the `ImmersiveSpace`.
 
@@ -326,7 +326,7 @@ If your streaming application doesn’t have content ready to display immediatel
 
 > **Note**: To maintain user privacy, visionOS displays streamed content directly so that it isn’t accessible to your app process.
 
-#### Monitor the session status
+## Monitor the session status
 
 Observing the connection status is crucial for creating a responsive interface that adapts to the streaming session’s changing state. The [`status`](./foveatedstreamingsession/status-swift.property.md) property reports the current state of the streaming session.
 
@@ -362,7 +362,7 @@ struct ContentView: View {
 
 When the session isn’t connected, the sample displays a view that allows people to connect to the stream. When connected to the session, the sample displays a view that presents a person with controls for pausing, resuming, and disconnecting the stream.
 
-#### Handle connection errors
+## Handle connection errors
 
 Connection issues are inevitable in networked applications, so a robust error handling strategy is essential for providing a good experience.
 
@@ -400,7 +400,7 @@ struct ContentView: View {
 
 The sample app doesn’t display an error message when the `DisconnectReason` is [`appInitiatedDisconnect`](./foveatedstreamingsession/disconnectreason/appinitiateddisconnect.md), [`unauthorized`](./foveatedstreamingsession/disconnectreason/unauthorized.md), or [`endpointInitiatedDisconnect`](./foveatedstreamingsession/disconnectreason/endpointinitiateddisconnect.md) as these are caused intentionally by the person using the app. For design guidance on when to display alerts, see Human Interface Guidelines > [Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts).
 
-#### Manage streaming controls
+## Manage streaming controls
 
 After a [`FoveatedStreamingSession`](./foveatedstreamingsession.md) establishes a connection, you can pause, resume, and disconnect from the session at any time with the [`pause()`](./foveatedstreamingsession/pause%28%29.md), [`resume()`](./foveatedstreamingsession/resume%28%29.md), and [`disconnect()`](./foveatedstreamingsession/disconnect%28%29.md) methods.
 
@@ -505,7 +505,7 @@ After pressing the button in the center of the `StreamControlsView`, the view ex
 
 > **Note**: A person can pause and disconnect the stream at any time from Control Center or by returning to the home screen. You may choose to provide redundant controls within your experience for these actions or defer to the system provided controls.
 
-#### Allow people to reopen the main window
+## Allow people to reopen the main window
 
 In some cases, such as when a person closes the main window by accident, you can provide a way to reopen the app’s main window without having them return to the home screen and break their immersion from the immersive streaming space.
 
@@ -613,7 +613,7 @@ struct ReopenMainWindowView: View {
 }
 ```
 
-#### Adjust the origin of the streamed content
+## Adjust the origin of the streamed content
 
 The [`immersiveSpaceFromRemoteSceneTransform`](./foveatedstreamingsession/immersivespacefromremotescenetransform.md) defines the spatial relationship between the origin of the streamed content and the foveated streaming space. By default, the remote scene origin matches the immersive space origin, but you can adjust the `immersiveSpaceFromRemoteSceneTransform` to modify the position and orientation of the streamed content within your immserive space.
 
@@ -668,7 +668,7 @@ Use this transform to reposition and synchronize your streamed content with the 
 
 > **Note**: Since streamed content is positioned relative to the immersive space, recentering your view with the Digital Crown will move the streamed content in tandem with the immersive space.
 
-#### Send and receive data with message channels
+## Send and receive data with message channels
 
 The sample app initializes a `MessageChannelModel` on start up, which observes [`availableMessageChannels`](./foveatedstreamingsession/availablemessagechannels.md) to know when the streaming application creates new message channels:
 

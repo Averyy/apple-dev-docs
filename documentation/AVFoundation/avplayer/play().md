@@ -30,7 +30,7 @@ func play()
 
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 
-#### Discussion
+## Discussion
 
 Calling this method is the same as setting the [`rate`](./rate.md) to `1.0`.
 

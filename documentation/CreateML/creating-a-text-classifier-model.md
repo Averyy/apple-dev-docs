@@ -5,7 +5,7 @@
 
 Train a machine learning model to classify natural language text.
 
-#### Overview
+## Overview
 
 A text classifier is a machine learning model that’s been trained to recognize patterns in natural language text, like the sentiment expressed by a sentence.
 
@@ -15,7 +15,7 @@ You train a text classifier by showing it lots of examples of text you’ve alre
 
 ![Diagram showing how you train a text classifier with Create ML using training data.](https://developer.apple.com/tutorials/images/com.apple.createml/creating-a-text-classifer-model-2@2x.png)
 
-##### Import your data
+### Import your data
 
 Start by gathering textual data and importing it into an [`MLDataTable`](./mldatatable.md) instance. You can create a data table from JSON and CSV formats. Or, if your textual data is in a collection of files, you can sort them into folders, using the folder names as labels, similar to the image data source used in [Creating an Image Classifier Model](./creating-an-image-classifier-model.md).
 
@@ -47,7 +47,7 @@ let data = try DataFrame(contentsOfJSONFile: URL(fileURLWithPath: "<#/path/to/re
 
 The resulting data frame has two columns, named *text* and *label*, derived from the keys in the JSON file. The column names can be anything, as long as they are meaningful to you, because you’ll use them as parameters in other methods.
 
-##### Prepare your data for training and evaluation
+### Prepare your data for training and evaluation
 
 The data you use to train your model needs to be different from the data you use to evaluate your model. Use the [`stratifiedSplit(on:by:randomSeed:)`](../TabularData/dataframeprotocol/stratifiedsplit%28on,by,randomseed%29-9iauf.md) method to split your data into two data frames, one for training and the other for testing. The training data frame contains the majority of your data, and the testing data frame contains the remaining 20 percent.
 
@@ -55,7 +55,7 @@ The data you use to train your model needs to be different from the data you use
 let (trainingData, testingData) = data.stratifiedSplit(on: "text", by: 0.8)
 ```
 
-##### Choose model training parameters
+### Choose model training parameters
 
 You can use model training parameters to control the learning process. Choose a classifier algorithm type by specifying the [`MLTextClassifier.ModelAlgorithmType`](./mltextclassifier/modelalgorithmtype.md) parameter. The [`MLTextClassifier.ModelAlgorithmType.maxEnt(revision:)`](./mltextclassifier/modelalgorithmtype/maxent%28revision%29.md) algorithm trains quickly and performs well for a wide variety of data. It’s a good starting point algorithm while you’re exploring your data and models.
 
@@ -75,7 +75,7 @@ let parameters = MLTextClassifier.ModelParameters(
 )
 ```
 
-##### Create and train a text classifier
+### Create and train a text classifier
 
 Create an instance of [`MLTextClassifier`](./mltextclassifier.md) with your training data frame and the column names.
 
@@ -98,7 +98,7 @@ let trainingAccuracy = (1.0 - sentimentClassifier.trainingMetrics.classification
 let validationAccuracy = (1.0 - sentimentClassifier.validationMetrics.classificationError) * 100
 ```
 
-##### Evaluate a classifier’s accuracy
+### Evaluate a classifier’s accuracy
 
 Next, evaluate your trained model’s performance by testing it against sentences it’s never seen before. Pass your testing data frame to the [`evaluation(on:)`](./mltextclassifier/evaluation%28on%29-8ch4k.md) method, which returns an [`MLClassifierMetrics`](./mlclassifiermetrics.md) instance.
 
@@ -115,7 +115,7 @@ let evaluationAccuracy = (1.0 - evaluationMetrics.classificationError) * 100
 
 If the evaluation performance isn’t good enough, you may need to retrain with more data or make other adjustments. For information about improving model performance, see [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md).
 
-##### Save a Core ML model
+### Save a Core ML model
 
 When your model is performing well enough, you’re ready to save it so you can use it in your app. Use the [`write(to:metadata:)`](./mltextclassifier/write%28to,metadata%29.md) method to write the Core ML model file to disk. Provide any information about the model, like its author, version, or description in an [`MLModelMetadata`](./mlmodelmetadata.md) instance.
 
@@ -130,7 +130,7 @@ try sentimentClassifier.write(to: URL(fileURLWithPath: "<#/path/to/save/Sentimen
 
 Specify the file name using the `fileURLWithPath:` parameter, in the above code, `SentimentClassifier.mlmodel`.
 
-##### Add a Core ML model to your app
+### Add a Core ML model to your app
 
 With your app open in Xcode, drag the `SentimentClassifier.mlmodel` file into the navigation pane. Xcode compiles the model and generates a `SentimentClassifier` class for use in your app. Select the `SentimentClassifier.mlmodel` file in Xcode to view additional information about the model.
 

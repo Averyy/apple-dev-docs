@@ -23,7 +23,7 @@ protocol FxTimingAPI_v4
 
 - [Understanding time in FxPlug](../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Overview
+## Overview
 
 Using the FxTimingAPI, your plug-in can query the timing properties of its input image or images, image parameters, effect, timeline, and in or out points.
 

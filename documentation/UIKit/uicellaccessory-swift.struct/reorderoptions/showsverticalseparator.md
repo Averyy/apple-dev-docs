@@ -19,7 +19,7 @@ A Boolean value that determines whether a vertical separator displays before the
 var showsVerticalSeparator: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../../Swift/true.md).
 

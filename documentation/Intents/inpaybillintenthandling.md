@@ -25,7 +25,7 @@ protocol INPayBillIntentHandling : NSObjectProtocol
 @protocol INPayBillIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INPayBillIntentHandling`](./inpaybillintenthandling.md) protocol to resolve, confirm, and handle requests to pay bills. Adopt this protocol in an object of your Intents extension that’s capable of initiating the bill-payment process.
 

@@ -25,7 +25,7 @@ var expirationDate: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 The test environment sets the expiration date based on the subscription settings in your active StoreKit configuration file.
 

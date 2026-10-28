@@ -24,7 +24,7 @@ func VTSessionSetProperty(_ session: VTSession, key propertyKey: CFString, value
 extern OSStatus VTSessionSetProperty(VTSessionRef session, CFStringRef propertyKey, CFTypeRef propertyValue);
 ```
 
-#### Discussion
+## Discussion
 
 Setting a property value to `NULL` restores the default value.
 

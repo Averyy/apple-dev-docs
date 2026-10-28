@@ -28,7 +28,7 @@ class AVPlayerLayer
 
 - [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
 
-#### Overview
+## Overview
 
 A common way to use this object in iOS or tvOS is as the backing layer for a [`UIView`](../UIKit/uiview.md), as the following example shows:
 

@@ -25,13 +25,13 @@ var requesters: [CKShare.AccessRequester] { get }
 @property (copy, readonly) NSArray<CKShareAccessRequester *> * requesters;
 ```
 
-#### Discussion
+## Discussion
 
 When an originator or administrator allows share access requests, uninvited users can request to join the share. All pending access requests appear in this array. CloudKit returns each requester with name components and either an email or phone number.
 
 Either share owners or administrators can respond to these access requests.
 
-##### Responding to Access Requests:
+### Responding to Access Requests:
 
 - **Approve Requesters:**
 

@@ -10,15 +10,15 @@ framework: "mlx-swift/MLX"
 
 How to install and use.
 
-#### Overview
+## Overview
 
 [MLX](./MLX.md) is meant to be built and run from Xcode or SwiftPM.
 
-#### Xcode
+## Xcode
 
 In Xcode you can add `https://github.com/ml-explore/mlx-swift` as a package dependency and link `MLX`, `MLXNN` and `MLXRandom` as needed.
 
-#### SwiftPM
+## SwiftPM
 
 To use [MLX](./MLX.md) with SwiftPm you can add this to your `Package.swift`:
 
@@ -40,7 +40,7 @@ dependencies: [.product(name: "MLX", package: "mlx-swift"),
 
 > **Note**: Note that SwiftPM cannot build the metal shaders so the ultimate build has to be done via Xcode or `xcodebuild`.
 
-#### Command Line Tools
+## Command Line Tools
 
 See [Troubleshooting](./troubleshooting.md) (Running From Command Line) for information about running command line tools from the shell.
 

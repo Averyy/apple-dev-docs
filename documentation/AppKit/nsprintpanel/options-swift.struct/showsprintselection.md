@@ -19,7 +19,7 @@ static var showsPrintSelection: NSPrintPanel.Options { get }
 NSPrintPanelShowsPrintSelection
 ```
 
-#### Discussion
+## Discussion
 
 This control is separate from any accessory views.
 

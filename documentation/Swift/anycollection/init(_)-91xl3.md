@@ -21,7 +21,7 @@ Creates an `AnyCollection` having the same underlying collection as `other`.
 init(_ other: AnyRandomAccessCollection<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

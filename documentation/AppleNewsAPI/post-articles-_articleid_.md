@@ -13,7 +13,7 @@ Update an existing article in your channel.
 
 - [Apple News API Release Notes](../AppleNews/apple-news-api-release-notes.md)
 
-#### Discussion
+## Discussion
 
 The Update an Article endpoint accepts a MIME multipart request, in multipart/form-data format, instead of JSON (application/json). In contrast to the [`Create an Article`](./post-channels-_channelid_-articles.md) request, all parts of an Update an Article request are optional except for the metadata section. The Update an Article request may also include the article’s Apple News Format document or any of the resources referenced in the document with a `bundle://` `URL`, each with its own MIME part.
 
@@ -30,7 +30,7 @@ Here are the guidelines for updating an existing article:
 - Include `isPreview` in the metadata to allow an update call to change the article’s preview/published state. Additionally, on update, you can make a preview article public (change `true` to `false`), but you can’t set a currently public article back to a preview state (change `false` to `true`).
 - Use the `isHidden` property in the metadata  to hide and unhide an article in the Update an Article request.
 
-##### Example Code for Updating an Article Without Metadata
+### Example Code for Updating an Article Without Metadata
 
 **Request**:
 
@@ -195,7 +195,7 @@ Transfer-Encoding: chunked
 }       
 ```
 
-##### Example Code for Updating an Article with Metadata
+### Example Code for Updating an Article with Metadata
 
 **Request**:
 

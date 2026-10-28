@@ -21,7 +21,7 @@ Overridden by subclasses to forward messages to other objects.
 - (void) forwardInvocation:(NSInvocation *) anInvocation;
 ```
 
-#### Discussion
+## Discussion
 
 When an object is sent a message for which it has no corresponding method, the runtime system gives the receiver an opportunity to delegate the message to another receiver. It delegates the message by creating an `NSInvocation` object representing the message and sending the receiver a [`forwardInvocation:`](./forwardinvocation_.md) message containing this `NSInvocation` object as the argument. The receiver’s [`forwardInvocation:`](./forwardinvocation_.md) method can then choose to forward the message to another object. (If that object can’t respond to the message either, it too will be given a chance to forward it.)
 

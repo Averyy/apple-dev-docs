@@ -36,7 +36,7 @@ nonisolated
 func dismissalConfirmationDialog<S, A, M>(_ title: S, shouldPresent: Bool, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where S : StringProtocol, A : View, M : View
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, the dialog will be presented when attempting to dismiss the window for this view, either through a user-initiated dismissal or a programmatic dismiss action. On iOS, the dialog will only be presented for a user-initiated dismissal.
 

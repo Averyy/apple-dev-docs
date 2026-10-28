@@ -23,11 +23,11 @@ static func currency(code: String) -> Self
 
 Available when `Self` is `Decimal.FormatStyle.Currency`.
 
-#### Return Value
+## Return Value
 
 A decimal format style that uses the specified currency code.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this method when the call point allows the use of [`Decimal.FormatStyle`](../decimal/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../decimal/formatted%28_%29.md) method of [`Decimal`](../decimal.md).
 

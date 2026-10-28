@@ -24,7 +24,7 @@ func renameAccessory(_ accessory: ASAccessory, options renameOptions: ASAccessor
 - (void) renameAccessory:(ASAccessory *) accessory options:(ASAccessoryRenameOptions) renameOptions completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To rename a Wi-Fi SSID with this method, use the option [`ssid`](../asaccessory/renameoptions/ssid.md).
 

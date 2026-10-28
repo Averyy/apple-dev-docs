@@ -23,7 +23,7 @@ static let useOnlySuggestedEncodingsKey: StringEncodingDetectionOptionsKey
 extern NSStringEncodingDetectionOptionsKey const NSStringEncodingDetectionUseOnlySuggestedEncodingsKey;
 ```
 
-#### Discussion
+## Discussion
 
 Option specifying whether to only consider suggested string encodings. Use this only if you specify a value for `NSStringEncodingDetectionSuggestedEncodingsKey`. The corresponding value for this key is an `NSNumber` object containing a Boolean value. By default, this value is `@(NO)`.
 

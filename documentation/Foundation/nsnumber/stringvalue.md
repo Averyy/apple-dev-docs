@@ -25,7 +25,7 @@ var stringValue: String { get }
 @property (copy, readonly) NSString * stringValue;
 ```
 
-#### Discussion
+## Discussion
 
 The string is created by invoking [`description(withLocale:)`](./description%28withlocale%29.md) where locale is `nil`.
 

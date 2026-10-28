@@ -17,7 +17,7 @@ Describes whether a ticket represents active work or a long-lived reservation.
 enum WiredMemoryTicketKind
 ```
 
-#### Overview
+## Overview
 
 Reservation tickets participate in admission and limit calculation, but do not keep the wired limit elevated on their own. This allows modeling long-lived weights without wiring memory while the system is idle.
 

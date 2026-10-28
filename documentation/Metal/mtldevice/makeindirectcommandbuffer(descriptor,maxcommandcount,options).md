@@ -29,7 +29,7 @@ func makeIndirectCommandBuffer(descriptor: MTLIndirectCommandBufferDescriptor, m
 
 - [Creating an indirect command buffer](../creating-an-indirect-command-buffer.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance if the method completed successfully; otherwise `nil`.
 

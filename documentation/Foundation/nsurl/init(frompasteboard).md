@@ -23,7 +23,7 @@ init?(from pasteBoard: NSPasteboard)
 + (NSURL *) URLFromPasteboard:(NSPasteboard *) pasteBoard;
 ```
 
-#### Return Value
+## Return Value
 
 A `NSURL` object, or `nil` if the pasteboard does not contain `NSURLPboardType` data.
 

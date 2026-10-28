@@ -12,7 +12,7 @@ void RegisterSCSITaskCompletionRoutine (
  SCSITaskCompletioncompletion );
 ```
 
-#### Overview
+## Overview
 
 Used by IOSCSITargetDevice to register a completion routine. Internal use only.
 

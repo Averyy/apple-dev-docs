@@ -24,7 +24,7 @@ case inProgress
 INUpdateMediaAffinityIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 When handling the intent, return this code if it may take more than a few seconds to update the affinity for the media.
 

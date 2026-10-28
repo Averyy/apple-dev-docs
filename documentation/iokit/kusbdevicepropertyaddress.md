@@ -14,7 +14,7 @@
 #define kUSBDevicePropertyAddress
 ```
 
-#### Discussion
+## Discussion
 
 Useful property names in USB land.
 

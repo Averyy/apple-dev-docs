@@ -28,7 +28,7 @@ class PHASESoundEvent
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 A sound event represents a logic tree, or hierarchy, that defines what, when, and how the framework plays a sound at runtime. You configure the tree with conditions based on your app’s state. When you invoke a sound event’s root node at runtime, the framework navigates the tree by branching based on the logic, landing on a playable node that sends the right audio to the output device:
 
@@ -37,7 +37,7 @@ A sound event represents a logic tree, or hierarchy, that defines what, when, an
 
 For sound event nodes that play audio, the asset’s [`playbackMode`](./phasesamplernodedefinition/playbackmode.md) determines whether the audio loops. One-time sound events stop automatically at the end of the audio data. Looping sound events (those with [`playbackMode`](./phasesamplernodedefinition/playbackmode.md) `=` [`PHASEPlaybackMode.looping`](./phaseplaybackmode/looping.md)) require you to explicitly call [`stopAndInvalidate()`](./phasesoundevent/stopandinvalidate%28%29.md) to stop the audio.
 
-##### Playing a one-shot channel-based sound
+### Playing a one-shot channel-based sound
 
 Apps create a sound event by requesting one from a sound event node asset. To create a sound event node asset, combine a sound asset (the source audio data) with a mixer object (which combines sound layers for output) to create a node, and add the node to the asset registry. By creating a sound event from a sampler node ([`PHASESamplerNodeDefinition`](./phasesamplernodedefinition.md)), the following code plays an audio file once before discarding it.
 

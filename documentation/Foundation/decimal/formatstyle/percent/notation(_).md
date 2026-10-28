@@ -21,7 +21,7 @@ Modifies the format style to use the specified notation.
 func notation(_ notation: Decimal.FormatStyle.Percent.Configuration.Notation) -> Decimal.FormatStyle.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A decimal percent format style modified to use the specified notation.
 

@@ -17,7 +17,7 @@ Includes only new devices the user pairs via DeviceDiscoveryUI’s `DevicePairin
 static let userSpecifiedDevices: WAPublisherListener.Devices
 ```
 
-#### Discussion
+## Discussion
 
 Only applicable to use with the `DevicePairingView()` API. Will throw an error if used with a `NetworkListener`.
 

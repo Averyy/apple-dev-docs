@@ -24,7 +24,7 @@ case materialIndexOfRefraction
 MDLMaterialSemanticMaterialIndexOfRefraction
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the `n2` parameter in Schlick’s equation for approximating Fresnel reflection effects.
 

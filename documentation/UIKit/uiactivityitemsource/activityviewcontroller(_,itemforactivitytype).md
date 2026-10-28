@@ -24,11 +24,11 @@ func activityViewController(_ activityViewController: UIActivityViewController, 
 - (id) activityViewController:(UIActivityViewController *) activityViewController itemForActivityType:(UIActivityType) activityType;
 ```
 
-#### Return Value
+## Return Value
 
 The final data object to be acted on. May be `nil` if multiple items were registered for a single activity type, so long as one of the items returns an actual value.
 
-#### Discussion
+## Discussion
 
 This method returns the actual data object to be acted on by an activity object. Your implementation of this method should create or generate the data object and return it as quickly as possible.
 

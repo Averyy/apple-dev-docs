@@ -20,7 +20,7 @@ virtual void dispatchMultiAxisPointerEvent(
  IOOptionBits options = 0 );
 ```
 
-#### Overview
+## Overview
 
 This is meant to be used with joysticks or multi-axis pointer devices such as those with with 6 degrees of freedom. This function will generate related relative pointer and scroll event associated with movement.
 

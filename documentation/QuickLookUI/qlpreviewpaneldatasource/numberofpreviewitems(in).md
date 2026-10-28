@@ -20,7 +20,7 @@ func numberOfPreviewItems(in panel: QLPreviewPanel!) -> Int
 - (NSInteger) numberOfPreviewItemsInPreviewPanel:(QLPreviewPanel *) panel;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items the preview panel should display.
 

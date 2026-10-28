@@ -21,7 +21,7 @@ Creates multi-label classification metrics for classifications and ground truth 
 init(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws
 ```
 
-#### Discussion
+## Discussion
 
 The classifications and ground truth sequences are matched element by element in the order they are provided. Both sequences must have the same number of elements.
 

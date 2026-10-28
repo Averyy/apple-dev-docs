@@ -23,7 +23,7 @@ optional func layoutManagerDidInvalidateLayout(_ sender: NSLayoutManager)
 - (void) layoutManagerDidInvalidateLayout:(NSLayoutManager *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked only when layout was complete and then became invalidated for some reason. Delegates can use this information to show an indicator of background layout or to enable a button that forces immediate layout of text.
 

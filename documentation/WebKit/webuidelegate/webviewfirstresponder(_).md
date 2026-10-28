@@ -19,7 +19,7 @@ optional func webViewFirstResponder(_ sender: WebView!) -> NSResponder!
 - (NSResponder *) webViewFirstResponder:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The view or subview that currently has the input focus. It can return `nil` or the default first responder if the sender is not attached to a window or if another view (not in the window) has the focus.
 

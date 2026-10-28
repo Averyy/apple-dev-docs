@@ -21,7 +21,7 @@ Initializes an AudioFileResource asynchronously.
 @preconcurrency convenience init(named name: String, in bundle: Bundle? = nil, configuration: AudioFileResource.Configuration = .init()) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The name provided **must** be unique.
 

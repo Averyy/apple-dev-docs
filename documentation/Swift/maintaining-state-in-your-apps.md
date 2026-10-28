@@ -5,11 +5,11 @@
 
 Use enumerations to capture and track the state of your app.
 
-#### Overview
+## Overview
 
 Effectively managing state, the bits of data that keep track of how the app is being used at the moment, is an important part of a developing your app. Because enumerations define a finite number of states, and can bundle associated values with each individual state, you can use them to model the state of your app and its internal processes.
 
-##### Use an Enumeration to Capture State
+### Use an Enumeration to Capture State
 
 Consider an app that requires a user to log into an account. When the app is first opened, the user is unknown, so the state of the app could be called *unregistered*. After the user has registered or logged into an account, the state is *logged in*. After some time of inactivity, the user’s session may expire, leaving the app in a *session expired* state.
 
@@ -33,7 +33,7 @@ In this model, each state is represented by a case with a matching name. The `lo
 
 ![A diagram showing the states of the app: unregistered, logged in, and session expired.](https://developer.apple.com/tutorials/images/com.apple.Swift/maintaining-state-in-your-apps-1@2x.png)
 
-##### Don’t Spread State Across Multiple Variables
+### Don’t Spread State Across Multiple Variables
 
 It’s also possible to model an app’s state by using individual variables in combination to hold the state and the required data, which is not recommended.
 

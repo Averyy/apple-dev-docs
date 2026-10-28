@@ -20,7 +20,7 @@ An entry representing a custom type encoded as data.
 case data(Transcript.DataEntry)
 ```
 
-#### Discussion
+## Discussion
 
 The `contentType` allows you to identify which type the data can be decoded as.
 

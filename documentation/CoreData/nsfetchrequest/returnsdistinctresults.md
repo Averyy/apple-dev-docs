@@ -25,7 +25,7 @@ var returnsDistinctResults: Bool { get set }
 @property (nonatomic) BOOL returnsDistinctResults;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used only if a value has been set for [`propertiesToFetch`](./propertiestofetch.md).
 

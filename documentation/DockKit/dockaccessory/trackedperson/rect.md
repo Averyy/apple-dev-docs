@@ -18,7 +18,7 @@ The bounding box rectangle of the tracked person’s face in the frame.
 var rect: CGRect
 ```
 
-#### Discussion
+## Discussion
 
 This is a unit rectangle with coordinate values between `0` and `1` with the origin on the top left corner.
 

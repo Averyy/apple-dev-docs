@@ -19,7 +19,7 @@ var VMENTRY_DEACTIVATE_DUAL_MONITOR: UInt32 { get }
 VMENTRY_DEACTIVATE_DUAL_MONITOR
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

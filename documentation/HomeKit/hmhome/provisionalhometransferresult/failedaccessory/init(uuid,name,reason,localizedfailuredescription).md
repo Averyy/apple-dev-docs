@@ -16,7 +16,7 @@ Creates the structure that contains information about why a transfer failed.
 init(uuid: UUID, name: String, reason: HMHome.ProvisionalHomeTransferResult.FailedAccessory.Reason, localizedFailureDescription: String? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An accessory that wasn’t transferred to the home hub.
 

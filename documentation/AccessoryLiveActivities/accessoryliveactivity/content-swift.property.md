@@ -16,7 +16,7 @@ The updated content of the forwarded Live Activity.
 let content: AccessoryLiveActivity.Content?
 ```
 
-#### Overview
+## Overview
 
 If a Live Activity update only changes the activity’s [`state`](./state.md) and doesn’t contain updated data, the `content` property is `nil`. If the `content` property isn’t `nil`, check the [`alert`](./content-swift.struct/alert.md) to determine whether the update requires you to render a notification-style alert on your accessory.
 

@@ -19,7 +19,7 @@ class func `default`() -> Self
 + (instancetype) defaultController;
 ```
 
-#### Return Value
+## Return Value
 
 The default Finder Sync controller object for this extension.
 

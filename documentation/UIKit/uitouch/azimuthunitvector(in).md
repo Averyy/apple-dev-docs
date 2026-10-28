@@ -23,11 +23,11 @@ func azimuthUnitVector(in view: UIView?) -> CGVector
 - (CGVector) azimuthUnitVectorInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The unit vector that points in the direction of the azimuth of the stylus.
 
-#### Discussion
+## Discussion
 
 It is less expensive to get the azimuth unit vector than the azimuth angle. If you’re creating transform matrices, the unit vector can also be more useful.
 

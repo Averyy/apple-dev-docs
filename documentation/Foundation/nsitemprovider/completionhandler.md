@@ -25,7 +25,7 @@ typealias CompletionHandler = @Sendable ((any NSSecureCoding)?, (any Error)?) ->
 typedef void (^)(__kindof id<NSSecureCoding>, NSError *) NSItemProviderCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this block to receive data from a call to the [`loadItem(forTypeIdentifier:options:completionHandler:)`](./loaditem%28fortypeidentifier,options,completionhandler%29.md) method. This block takes the following parameters:
 

@@ -19,7 +19,7 @@ var printSettings: NSMutableDictionary { get }
 @property (strong, readonly) NSMutableDictionary<NSString *,id> * printSettings;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to get and set values from the system print settings. The keys in the dictionary represent the values returned by the Core Printing function [`PMPrintSettingsGetValue(_:_:_:)`](../../applicationservices/api-1460602-pmprintsettingsgetvalue.md). They correspond to the settings currently in the print panel and include everything from custom values set by your accessory panels to values provided by the printer driver’s print dialog extension.
 

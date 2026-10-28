@@ -24,11 +24,11 @@ func SSLGetBufferedReadSize(_ context: SSLContext, _ bufferSize: UnsafeMutablePo
 OSStatus SSLGetBufferedReadSize(SSLContextRef context, size_t *bufferSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function determines how much data you can be guaranteed to obtain in a call to the [`SSLRead(_:_:_:_:)`](./sslread%28_,_,_,_%29.md) function. This function does not block or cause any low-level read operations to occur.
 

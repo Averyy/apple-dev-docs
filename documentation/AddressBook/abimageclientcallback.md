@@ -19,7 +19,7 @@ typealias ABImageClientCallback = (CFData?, CFIndex, UnsafeMutableRawPointer?) -
 typedef void (*)(const struct __CFData *, long, void *) ABImageClientCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`ABBeginLoadingImageDataForClient(_:_:_:)`](./abbeginloadingimagedataforclient%28_,_,_%29.md) function to begin an asynchronous fetch, and the [`ABCancelLoadingImageDataForTag(_:)`](./abcancelloadingimagedatafortag%28_%29.md) function to cancel an asynchronous fetch.
 

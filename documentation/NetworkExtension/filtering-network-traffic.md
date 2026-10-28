@@ -10,11 +10,11 @@ Use the Network Extension framework to allow or deny network connections.
 - macOS 10.15+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [714: Network Extensions for Modern macOS](https://developer.apple.com/videos/play/wwdc19/714/)
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 This sample code project only runs on macOS.
 

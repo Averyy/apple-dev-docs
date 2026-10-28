@@ -18,7 +18,7 @@ nonisolated
 func defaultAdaptableTabBarPlacement(_ defaultPlacement: AdaptableTabBarPlacement = .automatic) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier is only effective on iPadOS in the [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) style. In any other configuration, the system ignores it.
 

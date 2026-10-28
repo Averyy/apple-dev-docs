@@ -16,11 +16,11 @@ Opens the IOHIDManager.
 IOReturn IOHIDManagerOpen(IOHIDManagerRef manager, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This will open both current and future devices that are enumerated. To establish an exclusive link use the kIOHIDOptionsTypeSeizeDevice option.
 

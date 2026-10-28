@@ -19,7 +19,7 @@ func makeStandardActivatePopoverGestureRecognizer() -> NSGestureRecognizer
 - (NSGestureRecognizer *) makeStandardActivatePopoverGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a gesture recognizer that you then attach to a custom [`collapsedRepresentation`](./collapsedrepresentation.md) view.
 

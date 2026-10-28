@@ -24,7 +24,7 @@ enum PKPaymentButtonType
 enum PKPaymentButtonType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The button type you use for payments made with Apple Pay can affect the purchasing experience. Choose a button type that best fits with the terminology and flow of your purchase or payment experience. For design guidance, see [Human Interface Guidelines > Apple Pay > Buttons and Marks](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

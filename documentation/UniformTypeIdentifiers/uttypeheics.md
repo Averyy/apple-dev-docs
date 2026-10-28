@@ -19,7 +19,7 @@
 extern UTType * const UTTypeHEICS;
 ```
 
-#### Discussion
+## Discussion
 
 A High Efficiency Image Coding Image Sequence.
 

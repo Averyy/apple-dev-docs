@@ -17,7 +17,7 @@ An LSTM recurrent layer.
 class LSTM
 ```
 
-#### Overview
+## Overview
 
 See [`init(inputSize:hiddenSize:bias:)`](./lstm/init%28inputsize,hiddensize,bias%29.md)
 

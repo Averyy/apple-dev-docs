@@ -23,7 +23,7 @@ var selectedRange: NSRange { get set }
 @property (nonatomic) NSRange selectedRange;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 2.2 and earlier, the length of the selection range is always 0, indicating that the selection is actually an insertion point. In iOS 3.0 and later, the length of the selection range may be non-zero.
 

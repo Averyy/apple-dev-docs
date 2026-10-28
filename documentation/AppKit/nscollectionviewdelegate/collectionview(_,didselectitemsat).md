@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, didSelectItemsA
 - (void) collectionView:(NSCollectionView *) collectionView didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 After the user successfully selects one or more items, the collection view calls this method to let you know that the selection has been made. Use this method to respond to the selection change and to make any necessary adjustments to your content or the collection view.
 

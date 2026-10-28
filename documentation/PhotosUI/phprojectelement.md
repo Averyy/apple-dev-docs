@@ -19,7 +19,7 @@ class PHProjectElement
 @interface PHProjectElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 You should never use this class directly; opt instead for one of its subclasses. It defines the shared properties of any element in an instance of [`PHProjectSectionContent`](./phprojectsectioncontent.md).
 

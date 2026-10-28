@@ -29,7 +29,7 @@ kSecAccessControlBiometryAny
 
 - [Protecting keys with the Secure Enclave](../protecting-keys-with-the-secure-enclave.md)
 
-#### Discussion
+## Discussion
 
 Touch ID must be available and enrolled with at least one finger, or Face ID must be available and enrolled. The item is still accessible by Touch ID if fingers are added or removed, or by Face ID if the user is re-enrolled.
 

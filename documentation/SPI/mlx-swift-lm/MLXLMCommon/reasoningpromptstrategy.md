@@ -17,7 +17,7 @@ How a model’s “thinking on / off” preference is expressed to its chat temp
 enum ReasoningPromptStrategy
 ```
 
-#### Overview
+## Overview
 
 `MLXLMCommon` deliberately does not depend on `FoundationModels`, so this takes a plain `Bool?` (think on / off / unspecified) rather than a `FoundationModels` reasoning level. The level → `Bool?` mapping lives in the `MLXFoundationModels` layer, mirroring how [`ToolCallFormat`](./toolcallformat.md) carries no `FoundationModels`-typed mirror.
 

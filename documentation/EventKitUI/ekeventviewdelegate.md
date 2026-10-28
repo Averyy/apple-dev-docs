@@ -22,7 +22,7 @@ protocol EKEventViewDelegate : NSObjectProtocol
 @protocol EKEventViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegates of an [`EKEventViewController`](./ekeventviewcontroller.md) object conform to this protocol. Notifies the event view controller’s delegate when closing the event view controller. It is your responsibility to close the event view controller and perform any additional tasks within this protocol’s method.
 

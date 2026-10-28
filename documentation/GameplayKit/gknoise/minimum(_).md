@@ -24,7 +24,7 @@ func minimum(_ noise: GKNoise)
 - (void) minimumWithNoise:(GKNoise *) noise;
 ```
 
-#### Discussion
+## Discussion
 
 In a grayscale texture, higher values are brighter and lower values are darker.
 

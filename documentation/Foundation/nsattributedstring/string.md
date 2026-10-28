@@ -25,7 +25,7 @@ var string: String { get }
 @property (copy, readonly) NSString * string;
 ```
 
-#### Discussion
+## Discussion
 
 Attachment characters are not removed from the value of this property.
 

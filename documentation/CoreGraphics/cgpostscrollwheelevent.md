@@ -16,17 +16,17 @@ Synthesizes a low-level scrolling event on the local machine.
 extern CGError CGPostScrollWheelEvent(CGWheelCount wheelCount, int32_t wheel1, ...);
 ```
 
-##### Parameters
+### Parameters
 
 - **wheelCount**: The number of scrolling devices, up to a maximum of 3.
 - **wheel1**: A value that reflects the movement of the primary scrolling device on the mouse.
 - **…**: Up to two values that reflect the movements of the other scrolling devices on the mouse (if any).
 
-##### Returns
+### Returns
 
 A result code. See the result codes described in [Quartz Display Services](./quartz-display-services.md).
 
-#### Discussion
+## Discussion
 
 Scrolling movement is generally represented by small signed integer values, typically in a range from -10 to +10.  Large values may have unexpected results, depending on the application that processes the event.
 

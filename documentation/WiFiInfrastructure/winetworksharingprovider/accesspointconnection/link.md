@@ -17,7 +17,7 @@ A data link to a Wi-Fi Access Point.
 struct Link
 ```
 
-#### Overview
+## Overview
 
 WiFi 7 (and later) clients and Access Points may have multiple concurrent data links between them.
 

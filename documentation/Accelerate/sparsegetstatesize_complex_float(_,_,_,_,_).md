@@ -25,7 +25,7 @@ func SparseGetStateSize_Complex_Float(_ method: SparseIterativeMethod, _ precond
 static size_t SparseGetStateSize_Complex_Float(SparseIterativeMethod method, bool preconditioner, int m, int n, int nrhs);
 ```
 
-#### Return Value
+## Return Value
 
 Size of state space required in bytes.
 

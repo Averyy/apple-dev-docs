@@ -5,7 +5,7 @@
 
 Used by CoreFoundation’s toll-free bridging.
 
-#### Overview
+## Overview
 
 Do not call this function yourself.
 

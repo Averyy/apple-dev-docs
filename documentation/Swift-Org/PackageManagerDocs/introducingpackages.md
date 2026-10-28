@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Learn to create and use a Swift package.
 
-#### Overview
+## Overview
 
 A package consists of a `Package.swift` manifest file along with source files, resources, and other assets. The manifest file, or package manifest, defines the package’s name and its contents using the [PackageDescription](https://developer.apple.com/documentation/packagedescription) module.
 
@@ -24,7 +24,7 @@ A package may declare [Dependencies](https://docs.swift.org/swiftpm/documentatio
 
 Each product is made up of one or more [Targets](https://docs.swift.org/swiftpm/documentation/packagedescription/target), the basic building block of a Swift package. Each target specifies an module, may declare one or more dependencies on other targets within the same package and on products vended by the package’s dependencies. A target may define a library, a test suite, an executable, an macro, a binary file, and so on.
 
-##### About Modules
+### About Modules
 
 A Swift package organizes code into *modules*, a unit of code distribution. A module specifies a namespace and enforces access controls on which parts of the code can be used outside of that module. Each target you define in a Swift package is a module.
 
@@ -36,7 +36,7 @@ Extracting code that solves a particular problem into a separate module allows f
 
 As a rule of thumb: more modules are probably better than fewer modules. The package manager is designed to make creating both packages and apps with multiple modules as easy as possible.
 
-##### About Dependencies
+### About Dependencies
 
 Modern development is accelerated by the use of external dependencies (for better and worse). This is great for allowing you to get more done in less time, but adding dependencies to a project has an associated coordination cost.
 

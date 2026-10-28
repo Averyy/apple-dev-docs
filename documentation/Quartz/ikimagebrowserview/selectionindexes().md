@@ -19,7 +19,7 @@ func selectionIndexes() -> IndexSet!
 - (NSIndexSet *) selectionIndexes;
 ```
 
-#### Return Value
+## Return Value
 
 The indexes of the selected cells.
 

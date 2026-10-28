@@ -25,11 +25,11 @@ func CMMetadataDataTypeRegistryGetBaseDataTypeForConformingDataType(_ dataType: 
 extern CFStringRefCMMetadataDataTypeRegistryGetBaseDataTypeForConformingDataType(CFStringRef dataType);
 ```
 
-#### Return Value
+## Return Value
 
 Identifier of the base data type to which the given data type conforms.
 
-#### Discussion
+## Discussion
 
 There are a set of base data types that seed the data type registry. All valid data types will have their conformance search end with a base data type.
 

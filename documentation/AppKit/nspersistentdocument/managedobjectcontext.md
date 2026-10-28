@@ -19,7 +19,7 @@ var managedObjectContext: NSManagedObjectContext? { get set }
 @property (strong, nullable) NSManagedObjectContext * managedObjectContext;
 ```
 
-#### Discussion
+## Discussion
 
 If a managed object context for the document does not exist, one is created automatically. If you want to customize the creation of the persistence stack, reimplement this property in your custom subclass and use your implementation to create the appropriate objects.
 

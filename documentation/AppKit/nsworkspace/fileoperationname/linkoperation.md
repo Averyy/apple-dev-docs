@@ -21,7 +21,7 @@ static let linkOperation: NSWorkspace.FileOperationName
 extern NSWorkspaceFileOperationName NSWorkspaceLinkOperation;
 ```
 
-#### Discussion
+## Discussion
 
 Behaves the same as [`linkItem(at:to:)`](../../../Foundation/filemanager/linkitem%28at,to%29.md).
 

@@ -24,7 +24,7 @@ var kAudioFormatProperty_ChannelLayoutForTag: AudioFormatPropertyID { get }
 kAudioFormatProperty_ChannelLayoutForTag
 ```
 
-#### Discussion
+## Discussion
 
 The channel descriptions for a standard channel layout. Set the `inSpecifier` parameter to an AudioChannelLayoutTag value (the `mChannelLayoutTag` field of the [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure) containing the layout constant. The value is an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure. In typical use, an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) can be valid with just a defined AudioChannelLayoutTag (that is, those layouts have predefined speaker locations and orderings). Returns an error if the tag is [`kAudioChannelLayoutTag_UseChannelBitmap`](../CoreAudioTypes/kaudiochannellayouttag_usechannelbitmap.md).
 

@@ -19,11 +19,11 @@ func rect(ofRow row: Int) -> NSRect
 - (NSRect) rectOfRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle containing the row at `rowIndex`. Returns `NSZeroRect` if `rowIndex` lies outside the range of valid row indexes for the table view.
 
-#### Discussion
+## Discussion
 
 You can use this method to update a single row more efficiently than sending the table view a [`reloadData()`](./reloaddata%28%29.md) message.
 

@@ -22,7 +22,7 @@ final func updateDevices(_ devices: [MediaOutputDevice])
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when [`MediaOutputDevice`](../mediaoutputdevice.md) instances have had their state updated. This may be called after an activate or deactivate call to reflect updated grouping information.
 

@@ -17,7 +17,7 @@ Subclasses must implement this to create a new `State` when needed.  This is cal
 override func newState(parameter: MLXArray) -> TupleState
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

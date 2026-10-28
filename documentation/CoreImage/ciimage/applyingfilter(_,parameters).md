@@ -24,11 +24,11 @@ func applyingFilter(_ filterName: String, parameters params: [String : Any]) -> 
 - (CIImage *) imageByApplyingFilter:(NSString *) filterName withInputParameters:(NSDictionary<NSString *,id> *) params;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of applying the filter.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to the following sequence of steps:
 

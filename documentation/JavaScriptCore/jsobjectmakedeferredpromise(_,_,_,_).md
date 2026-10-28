@@ -24,7 +24,7 @@ func JSObjectMakeDeferredPromise(_ ctx: JSContextRef!, _ resolve: UnsafeMutableP
 JSObjectRefJSObjectMakeDeferredPromise(JSContextRef ctx, JSObjectRef*resolve, JSObjectRef*reject, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that’s a promise, or `NULL` if an exception occurs.
 

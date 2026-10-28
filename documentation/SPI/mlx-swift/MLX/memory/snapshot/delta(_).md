@@ -17,7 +17,7 @@ Compute the difference between two snapshots:
 func delta(_ other: Memory.Snapshot) -> Memory.Snapshot
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let startMemory = Memory.snapshot()

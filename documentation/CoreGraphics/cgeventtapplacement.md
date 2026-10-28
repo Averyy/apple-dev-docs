@@ -20,7 +20,7 @@ enum CGEventTapPlacement
 enum CGEventTapPlacement : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Event taps may be inserted at a specified location at the head of pre-existing filters, or appended after any pre-existing filters.
 

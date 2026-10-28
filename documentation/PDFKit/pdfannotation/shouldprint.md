@@ -24,11 +24,11 @@ var shouldPrint: Bool { get set }
 @property (nonatomic) BOOL shouldPrint;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the annotation should appear when the PDF document is printed; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 `PDFPage` respects this flag when printing.
 

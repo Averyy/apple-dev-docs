@@ -5,7 +5,7 @@
 
 Block GPU stages in a pass, and all subsequent passes, from running until stages from earlier passes finish.
 
-#### Overview
+## Overview
 
 Consumer queue barriers are coarse synchronization primitives that resolve access conflicts between commands in different passes that you submit to the same command queue, including the passes from other command buffers you submit to the same queue. Consumer barriers are convenient for synchronizing passes that load from common resources that multiple, earlier passes modify in the same queue.
 
@@ -23,7 +23,7 @@ Start by identifying which memory operations from previous passes in the same qu
 
 > 💡 **Tip**:  As an alternative for Metal 4 queues, create a single producer queue barrier in the producing pass that’s the equivalent of multiple consumer queue barriers for applicable scenarios. For more information, see [Synchronizing passes with producer barriers](./synchronizing-passes-with-producer-barriers.md).
 
-##### Identify access conflicts on the same queue
+### Identify access conflicts on the same queue
 
 The following code example encodes three compute passes. The first pass runs a single copy command:
 
@@ -224,7 +224,7 @@ Without synchronization, the GPU can run all three passes and their stages in pa
 
 ![A diagram showing all three passes and their stages running in parallel without synchronization, potentially causing inconsistent results when accessing buffer B.](https://developer.apple.com/tutorials/images/com.apple.metal/synchronizing-passes-with-consumer-barriers-2@2x.png)
 
-##### Resolve access conflicts with a consumer barrier
+### Resolve access conflicts with a consumer barrier
 
 Resolve access conflicts between passes from the same command queue with a consumer barrier by calling the encoder’s [`barrier(afterQueueStages:beforeStages:visibilityOptions:)`](./mtl4commandencoder/barrier%28afterqueuestages,beforestages,visibilityoptions%29.md) method.
 

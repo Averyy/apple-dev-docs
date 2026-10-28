@@ -23,7 +23,7 @@ func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: Recogn
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to take some action, depending on the type of data that a person taps.
 

@@ -22,11 +22,11 @@ nonisolated
 func matchedGeometryEffect<ID>(id: ID, in namespace: Namespace.ID, properties: MatchedGeometryProperties = .frame, anchor: UnitPoint = .center, isSource: Bool = true) -> some View where ID : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 A new view that defines an entry in the global database of views synchronizing their geometry.
 
-#### Discussion
+## Discussion
 
 This method sets the geometry of each view in the group from the inserted view with `isSource = true` (known as the “source” view), updating the values marked by `properties`.
 

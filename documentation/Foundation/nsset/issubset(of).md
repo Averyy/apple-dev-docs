@@ -25,11 +25,11 @@ func isSubset(of otherSet: Set<AnyHashable>) -> Bool
 - (BOOL) isSubsetOfSet:(NSSet<id> *) otherSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if every object in the receiving set is also present in `otherSet`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Object equality is tested using isEqual:.
 

@@ -24,7 +24,7 @@ case tier1
 MTLTextureSparseTier1
 ```
 
-#### Discussion
+## Discussion
 
 Tier 1 sparse textures allow the following:
 

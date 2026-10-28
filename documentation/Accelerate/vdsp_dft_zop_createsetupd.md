@@ -21,19 +21,19 @@ Returns a setup structure that contains precalculated data for forward and inver
 vDSP_DFT_SetupDvDSP_DFT_zop_CreateSetupD(vDSP_DFT_SetupD __Previous, vDSP_Length __Length, vDSP_DFT_Direction __Direction);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`vDSP_DFT_SetupD`](./vdsp_dft_setupd.md) object, or `nil` if the function fails, either from insufficient memory or because `Length` doesn’t satisfy the requirements given above.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To prevent potential memory leaks, if the `Previous` parameter is not `nil`, the return value and the `Previous` value must be different variables.
 
-#### Discussion
+## Discussion
 
 This function shares memory between data structures where possible. If you have an existing setup object, you should pass that object as `Previous`. By doing so, the returned setup object can share underlying data storage with that object. Note that this function may allocate memory; you can free any allocated memory by calling  [`vDSP_DFT_DestroySetupD`](./vdsp_dft_destroysetupd.md).
 
-##### Using shared setup objects
+### Using shared setup objects
 
 If you’re using a shared setup object, the subsequent execute function requires that the input and output pointers are 64-byte aligned.
 

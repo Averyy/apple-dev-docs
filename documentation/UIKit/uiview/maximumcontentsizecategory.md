@@ -23,7 +23,7 @@ var maximumContentSizeCategory: UIContentSizeCategory? { get set }
 @property (nonatomic, copy, nullable) UIContentSizeCategory maximumContentSizeCategory;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit which content size categories your view hierarchy supports. The limit applies immediately after you set this value and when future content size category updates occur.
 

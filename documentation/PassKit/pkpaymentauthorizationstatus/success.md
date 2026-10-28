@@ -24,7 +24,7 @@ case success
 PKPaymentAuthorizationStatusSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this value when the transaction is successful and no errors exist on the payment sheet.
 

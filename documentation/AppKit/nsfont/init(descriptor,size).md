@@ -19,11 +19,11 @@ init?(descriptor fontDescriptor: NSFontDescriptor, size fontSize: CGFloat)
 + (NSFont *) fontWithDescriptor:(NSFontDescriptor *) fontDescriptor size:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object for the specified descriptor and size.
 
-#### Discussion
+## Discussion
 
 In most cases, you can simply use [`init(name:size:)`](./init%28name,size%29.md) to create standard scaled fonts.
 

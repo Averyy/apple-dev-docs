@@ -19,11 +19,11 @@ func InvokeOSLCompareUPP(_ oper: DescType, _ obj1: UnsafePointer<AEDesc>!, _ obj
 OSErr InvokeOSLCompareUPP(DescType oper, const AEDesc *obj1, const AEDesc *obj2, Boolean *result, OSLCompareUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`OSLCompareProcPtr`](./oslcompareprocptr.md) callback function. 
 

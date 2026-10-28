@@ -25,11 +25,11 @@ func mutableOrderedSetValue(forKey key: String) -> NSMutableOrderedSet
 - (NSMutableOrderedSet *) mutableOrderedSetValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable ordered set that provides read-write access to the uniquing to-many relationship specified by `key`.
 
-#### Discussion
+## Discussion
 
 Objects added to the mutable set proxy become related to the receiver, and objects removed from the mutable set become unrelated. The default implementation recognizes the same simple accessor methods and set accessor methods as [`value(forKey:)`](./value%28forkey%29.md), and follows the same direct instance variable access policies, but always returns a mutable collection proxy object instead of the immutable collection that [`value(forKey:)`](./value%28forkey%29.md) would return.
 

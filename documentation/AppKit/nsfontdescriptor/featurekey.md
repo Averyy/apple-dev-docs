@@ -19,7 +19,7 @@ struct FeatureKey
 typedef NSString * NSFontDescriptorFeatureKey;
 ```
 
-#### Discussion
+## Discussion
 
 These keys are used with [`featureSettings`](./attributename/featuresettings.md).
 

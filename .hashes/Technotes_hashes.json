@@ -666,8 +666,15 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/appstorereceipts/responsebody/latest_receipt_info",
+      "https://developer.apple.com/documentation/appstorereceipts/validating_receipts_with_the_app_store",
+      "https://developer.apple.com/documentation/appstorereceipts/verifyreceipt",
+      "https://developer.apple.com/documentation/contacts/cncontactstore/3294190-enumeratorforchangehistoryfetchr",
+      "https://developer.apple.com/documentation/xcode/running-your-app-in-the-simulator-or-on-a-device"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 166
   }

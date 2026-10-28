@@ -19,7 +19,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property converts the cell to an image-type cell, if it is not one already. The value of this property is `nil` if the cell is not an image-type cell.
 

@@ -23,7 +23,7 @@ var isPortraitEffectSupported: Bool { get }
 @property (nonatomic, readonly, getter=isPortraitEffectSupported) BOOL portraitEffectSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Enabling a Portrait Effect applies a shallow depth-of-field effect to objects in the background. See the [`isPortraitEffectEnabled`](../isportraiteffectenabled.md) property of [`AVCaptureDevice`](../../avcapturedevice.md) for more information.
 

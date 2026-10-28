@@ -29,7 +29,7 @@ extern CFStringRef const kSecImportItemKeyID;
 
 - [Importing an Identity](./importing-an-identity.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type `CFDataRef`. This unique ID is often the SHA-1 digest of the public encryption key.
 

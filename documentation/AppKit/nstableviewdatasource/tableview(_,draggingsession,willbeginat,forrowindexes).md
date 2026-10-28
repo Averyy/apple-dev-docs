@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, draggingSession session: NSDra
 - (void) tableView:(NSTableView *) tableView draggingSession:(NSDraggingSession *) session willBeginAtPoint:(NSPoint) screenPoint forRowIndexes:(NSIndexSet *) rowIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to know when the dragging session is about to begin and to potentially modify the dragging session.
 

@@ -21,7 +21,7 @@ Calculates the single-precision maximum value of a vector.
 extern void vDSP_maxv(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the maximum value of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 

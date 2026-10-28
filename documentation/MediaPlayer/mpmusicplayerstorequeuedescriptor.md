@@ -23,7 +23,7 @@ class MPMusicPlayerStoreQueueDescriptor
 @interface MPMusicPlayerStoreQueueDescriptor : MPMusicPlayerQueueDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use this class to modify the player queue created by a query before the queue begins to play. You can modify when individual items start and stop playing, along with setting the first item to play.
 

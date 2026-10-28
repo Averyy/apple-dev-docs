@@ -21,7 +21,7 @@ An option that indicates someone explicitly canceled the intent.
 static var userCancelled: IntentCancellationReason { get }
 ```
 
-#### Discussion
+## Discussion
 
 While an app intent’s task runs, system interfaces such as Siri, Live Activities, and Shortcuts can show UI with the current progress. These interfaces also include a way to cancel the task. This option reflects direct cancellation by a person using one of these interfaces.
 

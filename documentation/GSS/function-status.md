@@ -5,7 +5,7 @@
 
 Evaluate return values that most GSS-API functions use to indicate the outcome of an operation.
 
-#### Overview
+## Overview
 
 The functions of the GSS-API return two status codes. The major status code, delivered as the function’s return value, provides a mechanism-independent status output. A value of [`GSS_S_COMPLETE`](./gss_s_complete.md) typically indicates success, but the code is actually composed of several fields that enable communicating a more nuanced result.  Always check the major status code to determine if an operation succeeds.
 

@@ -21,7 +21,7 @@ struct SRAbsoluteTime
 typedef CFTimeInterval SRAbsoluteTime;
 ```
 
-#### Discussion
+## Discussion
 
 This value tracks monotonically increasing device-specific time, unlike [`mach_continuous_time`](../kernel/api-1646199-mach_continuous_time.md), which keeps tracking across reboots.
 

@@ -28,7 +28,7 @@ protocol UIGestureRecognizerDelegate : NSObjectProtocol
 
 - [Preferring one gesture over another](./preferring-one-gesture-over-another.md)
 
-#### Overview
+## Overview
 
 The delegates receive messages from a gesture recognizer, and their responses to these messages enable them to affect the operation of the gesture recognizer or to specify a relationship between it and another gesture recognizer, such as allowing simultaneous recognition or setting up a dynamic failure requirement.
 

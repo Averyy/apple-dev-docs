@@ -27,11 +27,11 @@ func typesettingLanguage(_ language: Locale.Language, isEnabled: Bool = true) ->
 func typesettingLanguage(_ language: TypesettingLanguage, isEnabled: Bool = true) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text with the typesetting language set to the value you supply.
 
-#### Discussion
+## Discussion
 
 In some cases `Text` may contain text of a particular language which doesn’t match the device UI language. In that case it’s useful to specify a language so line height, line breaking and spacing will respect the script used for that language. For example:
 

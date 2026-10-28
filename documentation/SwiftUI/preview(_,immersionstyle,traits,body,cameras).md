@@ -12,11 +12,11 @@ Creates a preview of a SwiftUI view in an immersive space with custom viewpoints
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<Style>(_ name: String? = nil, immersionStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera]) where Style : ImmersionStyle
+@freestanding(declaration)
+macro Preview<Style>(_ name: String? = nil, immersionStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera]) where Style : ImmersionStyle
 ```
 
-#### Overview
+## Overview
 
 This preview macro behaves like [`Preview(_:immersionStyle:traits:body:)`](./preview%28_,immersionstyle,traits,body%29.md) combined with [`Preview(_:traits:body:cameras:)`](./preview%28_,traits,body,cameras%29.md): it enables you to define an immersive space scene context for the view, and also to define custom, fixed viewpoints for the preview:
 

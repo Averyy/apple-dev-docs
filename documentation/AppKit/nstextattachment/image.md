@@ -19,7 +19,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 For details about using the [`UIImage`](../../UIKit/uiimage.md) class to create text attachments that automatically adjust to surrounding font and color attributes, see the [`init(image:)`](../../UIKit/nstextattachment/init%28image%29.md) initializer.
 

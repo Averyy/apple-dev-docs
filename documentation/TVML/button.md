@@ -4,7 +4,7 @@
 
 Displays a button icon the user can click to initiate an action.
 
-#### Overview
+## Overview
 
 Clicking a button or lockup is one of the most common ways for a user activate a selection. Here’s an example of a button with the text inside of it.
 
@@ -14,11 +14,11 @@ Clicking a button or lockup is one of the most common ways for a user activate a
 </button
 ```
 
-##### Subelements of button
+### Subelements of button
 
 - [text](./text.md)
 
-##### Elements that Use button
+### Elements that Use button
 
 - [alertTemplate](./alerttemplate.md)
 - [banner](./banner.md)

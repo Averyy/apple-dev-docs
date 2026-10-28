@@ -20,7 +20,7 @@ A handler that generates real-time audio.
 typealias GeneratorRenderHandler = AVAudioSourceNodeRenderBlock
 ```
 
-#### Discussion
+## Discussion
 
 The audio format is `Float32` with a sample rate of `48000`.
 

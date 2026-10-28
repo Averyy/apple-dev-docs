@@ -12,13 +12,13 @@ Provide a way for users of your app to set up an account and start using your se
 - Mac Catalyst 13.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 This sample app, Juice, uses the [AuthenticationServices](./AuthenticationServices.md) framework to provide users an interface to set up accounts and sign in with their Apple ID. The app presents a form in which the user can create and set up an account for the app, then authenticates the user’s Apple ID with Sign in with Apple, and displays the user’s account data.
 
 For more information about implementing Sign in with Apple on iOS 12 and earlier, see [Incorporating Sign in with Apple into Other Platforms](../SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To configure the sample code project, perform the following steps in Xcode:
 
@@ -28,7 +28,7 @@ To configure the sample code project, perform the following steps in Xcode:
 4. If necessary, click Register Device in the Signing & Capabilities pane to create the provisioning profile.
 5. In the toolbar, click Run, or choose Product > Run (⌘R).
 
-##### Add a Sign in with Apple Button
+### Add a Sign in with Apple Button
 
 In the sample app, `LoginViewController` displays a login form and a Sign in with Apple button ([`ASAuthorizationAppleIDButton`](./asauthorizationappleidbutton.md)) in its view hierarchy. The view controller also adds itself as the button’s target, and passes an action to be invoked when the button receives a touch-up event.
 
@@ -44,7 +44,7 @@ For more information about which Sign in with Apple buttons are available on dif
 
 > ❗ **Important**: When adding the Sign in with Apple button to your storyboard, you must also set the control’s class value to `ASAuthorizationAppleIDButton` in Xcode’s Identity Inspector.
 
-##### Request Authorization with Apple ID
+### Request Authorization with Apple ID
 
 When the user taps the Sign in with Apple button, the view controller invokes the `handleAuthorizationAppleIDButtonPress()` function, which starts the authentication flow by performing an authorization request for the users’s full name and email address. The system then checks whether the user is signed in with their Apple ID on the device. If the user is not signed in at the system-level, the app presents an alert directing the user to sign in with their Apple ID in Settings.
 
@@ -74,7 +74,7 @@ func presentationAnchor(for controller: ASAuthorizationController) -> ASPresenta
 
 If the user is signed in at the system-level with their Apple ID, the sheet appears describing the Sign in with Apple feature, followed by another sheet allowing the user to edit the information in their account. The user can edit their first and last name, choose another email address as their contact information, and hide their email address from the app. If the user chooses to hide their email address from the app, Apple generates a proxy email address to forward email to the user’s private email address. Lastly, the user enters the password for the Apple ID, then clicks Continue to create the account.
 
-##### Handle User Credentials
+### Handle User Credentials
 
 If the authentication succeeds, the authorization controller invokes the [`ASAuthorizationControllerDelegate.authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md) delegate function, which the app uses to store the user’s data in the keychain.
 
@@ -123,7 +123,7 @@ func authorizationController(controller: ASAuthorizationController, didCompleteW
 
 Once the system authenticates the user, the app displays the `ResultViewController` which shows the user information requested from the framework, including the user-provided full name and email address. The view controller also displays a Sign Out button and stores the user data in the keychain. When the user taps the Sign Out button, the app deletes the user information from the view controller and the keychain, and presents the `LoginViewController` to the user.
 
-##### Request Existing Credentials
+### Request Existing Credentials
 
 The `LoginViewController.performExistingAccountSetupFlows()` function checks if the user has an existing account by requesting both an Apple ID and an iCloud keychain password. Similar to `handleAuthorizationAppleIDButtonPress()`, the authorization controller sets its presentation content provider and delegate to the `LoginViewController` object.
 
@@ -143,7 +143,7 @@ func performExistingAccountSetupFlows() {
 
 The `authorizationController(controller:didCompleteWithAuthorization:)` delegate function checks whether the credential is an Apple ID ([`ASAuthorizationAppleIDCredential`](./asauthorizationappleidcredential.md)) or a password credential ([`ASPasswordCredential`](./aspasswordcredential.md)). If the credential is a password credential, the system displays an alert allowing the user to authenticate with the existing account.
 
-##### Check User Credentials at Launch
+### Check User Credentials at Launch
 
 The sample app only shows the Sign in with Apple user interface when necessary. The app delegate checks the status of the saved user credentials immediately after launch in the `AppDelegate.application(_:didFinishLaunchingWithOptions:)` function.
 

@@ -25,7 +25,7 @@ var isExportable: Bool { get }
 @property (nonatomic, readonly, getter=isExportable) BOOL exportable;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can export the asset using [`AVAssetExportSession`](../avassetexportsession.md).
 

@@ -22,7 +22,7 @@ class let touchBarPauseTemplateName: String
 extern NSImageName const NSImageNameTouchBarPauseTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for pause](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793535@2x.png)
 

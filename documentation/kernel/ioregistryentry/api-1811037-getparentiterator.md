@@ -12,7 +12,7 @@ virtual OSIterator * getParentIterator(
  const IORegistryPlane *plane ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an iterator over the parents of the registry entry, or zero if there is a resource failure. The iterator must be released when the iteration is finished. All objects returned by the iteration are retained while the iterator is valid, though they may no longer be attached during the iteration.
 

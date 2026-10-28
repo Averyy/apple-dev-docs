@@ -22,7 +22,7 @@ static let messageBody: UIActivityItemsConfigurationMetadataKey
 extern UIActivityItemsConfigurationMetadataKey const UIActivityItemsConfigurationMetadataKeyMessageBody;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../../Foundation/nsstring.md) or [`NSAttributedString`](../../Foundation/nsattributedstring.md) that contains the message body.
 

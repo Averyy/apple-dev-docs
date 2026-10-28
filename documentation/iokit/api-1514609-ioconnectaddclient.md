@@ -19,11 +19,11 @@ func IOConnectAddClient(_ connect: io_connect_t, _ client: io_connect_t) -> kern
 kern_return_t IOConnectAddClient(io_connect_t connect, io_connect_t client);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code returned by the family.
 
-#### Discussion
+## Discussion
 
 This is a generic method to inform a family connection of a second connection, and is rarely used.
 

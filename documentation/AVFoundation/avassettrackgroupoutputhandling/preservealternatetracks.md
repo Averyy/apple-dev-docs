@@ -24,7 +24,7 @@ static var preserveAlternateTracks: AVAssetTrackGroupOutputHandling { get }
 AVAssetTrackGroupOutputHandlingPreserveAlternateTracks
 ```
 
-#### Discussion
+## Discussion
 
 Setting this policy tells the session to export alternate tracks in a track group without reencoding them.
 

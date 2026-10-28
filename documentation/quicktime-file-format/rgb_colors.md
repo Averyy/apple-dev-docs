@@ -5,7 +5,7 @@
 
 Colors stored as three consecutive unsigned 16-bit integers in the following order: red, green, blue.
 
-#### Overview
+## Overview
 
 Many atoms in the QuickTime file format contain RGB color values. These are usually stored as three consecutive unsigned 16-bit integers in the following order: red, green, blue.
 

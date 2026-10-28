@@ -21,7 +21,7 @@ Sets each channel of the destination pixel as the darkest value for the correspo
 case darken
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows the result of compositing using the darken blend mode:
 

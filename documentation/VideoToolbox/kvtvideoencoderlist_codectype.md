@@ -24,7 +24,7 @@ let kVTVideoEncoderList_CodecType: CFString
 extern CFStringRef const kVTVideoEncoderList_CodecType;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md) for a four-character code such as `avc1` or `h263`.
 

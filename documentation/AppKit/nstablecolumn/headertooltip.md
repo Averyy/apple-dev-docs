@@ -19,7 +19,7 @@ var headerToolTip: String? { get set }
 @property (copy, nullable) NSString * headerToolTip;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, the table column header doesn’t display a help tag (also known as a tooltip). Otherwise, the string is displayed in a help tag when the pointer pauses over the header of the table column. The default value of this property is `nil`.
 

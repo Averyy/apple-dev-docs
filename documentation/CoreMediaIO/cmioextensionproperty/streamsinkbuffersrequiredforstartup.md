@@ -20,7 +20,7 @@ static let streamSinkBuffersRequiredForStartup: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyStreamSinkBuffersRequiredForStartup;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a number. The property value matches the value of the [`kCMIOStreamPropertyOutputBuffersRequiredForStartup`](../kcmiostreampropertyoutputbuffersrequiredforstartup.md) property.
 

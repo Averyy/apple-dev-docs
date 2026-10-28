@@ -24,7 +24,7 @@ func setObject(_ object: Any!, atIndexedSubscript index: Int)
 - (void) setObject:(id) object atIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`setValue(_:at:)`](./setvalue%28_,at%29.md) method, but provides Objective-C subscripting support.
 

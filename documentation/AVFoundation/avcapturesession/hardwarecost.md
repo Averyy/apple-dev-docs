@@ -22,7 +22,7 @@ var hardwareCost: Float { get }
 @property (nonatomic, readonly) float hardwareCost;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a floating-point value from `0.0` to `1.0` that indicates the percentage of a capture session’s hardware that it currently uses. When the value is greater than `1.0`, the capture session can’t run in its current configuration due to hardware constraints. Attempting to start the session while it’s in this state results in a runtime error.
 

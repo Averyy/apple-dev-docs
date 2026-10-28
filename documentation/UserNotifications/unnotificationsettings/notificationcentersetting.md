@@ -36,7 +36,7 @@ var notificationCenterSetting: UNNotificationSetting { get }
 
 - [Asking permission to use notifications](../asking-permission-to-use-notifications.md)
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UNNotificationSetting.enabled`](../unnotificationsetting/enabled.md).
 

@@ -18,7 +18,7 @@ The parental controls that are active on the device.
 var activeParentalControls: AgeRangeService.ParentalControls
 ```
 
-#### Discussion
+## Discussion
 
 It’s important to note that the minimum age of legal adulthood varies depending on the region associated with someone’s Apple account.  If [`activeParentalControls`](./activeparentalcontrols.md) is empty, either the device doesn’t have parental controls enabled as part of the response or a person’s age doesn’t fall into the reporting range for the specific region.
 

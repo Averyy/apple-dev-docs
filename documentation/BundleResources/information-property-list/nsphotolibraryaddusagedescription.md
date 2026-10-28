@@ -16,7 +16,7 @@ A message that tells people why the app is requesting add-only access to their p
 - **Name**: `NSPhotoLibraryAddUsageDescription` (Privacy - Photo Library Additions Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that have write access to the user’s photo library.
 

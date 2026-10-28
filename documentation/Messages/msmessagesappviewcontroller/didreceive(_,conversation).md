@@ -25,7 +25,7 @@ func didReceive(_ message: MSMessage, conversation: MSConversation)
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 Override this method to respond to messages that arrive while your extension is active.
 

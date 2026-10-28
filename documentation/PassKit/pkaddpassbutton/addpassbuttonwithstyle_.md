@@ -18,7 +18,7 @@ Returns a button that prompts the user to add a pass to Wallet.
 + (instancetype) addPassButtonWithStyle:(PKAddPassButtonStyle) addPassButtonStyle;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`PKAddPassButton`](../pkaddpassbutton.md) instance with the specified style.
 

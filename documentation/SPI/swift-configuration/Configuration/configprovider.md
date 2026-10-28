@@ -32,7 +32,7 @@ protocol ConfigProvider : Sendable
 - [Example use cases](./example-use-cases.md)
 - [Handling secrets correctly](./handling-secrets-correctly.md)
 
-#### Overview
+## Overview
 
 Configuration providers offer three access patterns for retrieving values:
 
@@ -42,7 +42,7 @@ Configuration providers offer three access patterns for retrieving values:
 
 For more details on the patterns, check out [Choosing the access pattern](./choosing-access-patterns.md).
 
-#### Individual value access
+## Individual value access
 
 Access specific configuration values using these methods:
 
@@ -50,14 +50,14 @@ Access specific configuration values using these methods:
 - [`fetchValue(forKey:type:)`](./configprovider/fetchvalue%28forkey,type%29.md) - Fetch the latest value asynchronously.
 - [`watchValue(forKey:type:updatesHandler:)`](./configprovider/watchvalue%28forkey,type,updateshandler%29.md) - Watch for value changes, receiving the current value first.
 
-#### Snapshot access
+## Snapshot access
 
 Access immutable snapshots of the provider’s state:
 
 - [`snapshot()`](./configprovider/snapshot%28%29.md) - Get the current snapshot.
 - [`watchSnapshot(updatesHandler:)`](./configprovider/watchsnapshot%28updateshandler%29.md) - Watch for snapshot changes, receiving the current snapshot first.
 
-#### Implementation guidance
+## Implementation guidance
 
 **Immutable providers**: Implement only the synchronous methods and use these convenience methods for the other access patterns:
 

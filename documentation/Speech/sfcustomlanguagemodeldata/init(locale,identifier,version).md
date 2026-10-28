@@ -20,7 +20,7 @@ Constructs an empty data container.
 init(locale: Locale, identifier: String, version: String)
 ```
 
-#### Discussion
+## Discussion
 
 The `SFCustomLanguageModelData` class accumulates language model training and custom vocabulary data, both associated with a specified locale. This initializer creates an object that initially holds no data.
 

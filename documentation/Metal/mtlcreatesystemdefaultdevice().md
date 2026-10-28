@@ -29,11 +29,11 @@ extern id<MTLDevice>MTLCreateSystemDefaultDevice();
 - [Developing Metal apps that run in Simulator](./developing-metal-apps-that-run-in-simulator.md)
 - [Getting the default GPU](./getting-the-default-gpu.md)
 
-#### Return Value
+## Return Value
 
 A device object.
 
-#### Discussion
+## Discussion
 
 In macOS, in order for the system to provide a default Metal device object, you need to link to the [Core Graphics](../CoreGraphics/CoreGraphics.md) framework. You usually need to do this explicitly if you’re writing apps that don’t use graphics by default, such as command line tools.
 

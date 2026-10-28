@@ -14,7 +14,7 @@
 #define kIOPropertyPortSpeedKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is associated with the current port speed. The port speed can be any valid speed for the interconnect.
 

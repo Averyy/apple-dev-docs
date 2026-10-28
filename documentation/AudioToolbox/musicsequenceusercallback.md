@@ -22,7 +22,7 @@ typealias MusicSequenceUserCallback = (UnsafeMutableRawPointer?, MusicSequence, 
 typedef void (*)(void *, struct OpaqueMusicSequence *, struct OpaqueMusicTrack *, double, const struct MusicEventUserData *, double, double) __attribute__((nonblocking)) MusicSequenceUserCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your callback `MyMusicSequenceUserCallback`, you would declare it like this:
 

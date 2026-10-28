@@ -23,7 +23,7 @@ func hasActiveUserGesture(in tab: any WKWebExtensionTab) -> Bool
 - (BOOL) hasActiveUserGestureInTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 An active user gesture may influence the availability of certain permissions, such as `activeTab`. User gestures can be triggered by various user interactions with the web extension, including clicking on extension menu items, executing extension commands, or interacting with extension actions. A tab as having an active user gesture enables the extension to access features that require user interaction.
 

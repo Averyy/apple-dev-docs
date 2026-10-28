@@ -5,7 +5,7 @@
 
 Use the FxPlug analysis API to analyze frames of source media before rendering them.
 
-#### Overview
+## Overview
 
 Frame-by-frame analysis of video clips is commonly required for rendering tasks that occur in an FxPlug plug-in. For example, tracking of objects and stabilization of video both require a pre-render analysis of video frames before rendering.
 
@@ -13,7 +13,7 @@ FxPlug 4.1 introduces [`FxAnalysisAPI`](../professional_video_applications/fxana
 
 The example plug-in `FxBrightnessAnalysis` demonstrates how to implement the analysis APIs for a filter that analyzes all frames and then adjusts the brightness of the frames to a consistent level.
 
-##### Set the desired analysis time range
+### Set the desired analysis time range
 
 Your plug-in can tell Motion and Final Cut Pro what time range to analyze. In the following example, using [`desiredAnalysisTimeRange(_:forInputWith:)`](../professional_video_applications/fxanalyzer/desiredanalysistimerange%28_,forinputwith%29.md), the `desiredRange` is set to whatever the host provides in `inputTimeRange`.
 
@@ -39,7 +39,7 @@ func desiredAnalysisTimeRange(_ desiredRange: inout CMTimeRange?, forInputWith i
 }
 ```
 
-##### Set up your plug-in for analysis
+### Set up your plug-in for analysis
 
 Set up data arrays or variables that will be used later for analysis in the [`setupAnalysis(for:frameDuration:)`](../professional_video_applications/fxanalyzer/setupanalysis%28for,frameduration%29.md) method for [`FxAnalyzer`](../professional_video_applications/fxanalyzer.md). You can also use other FxPlug APIs like [`FxParameterSettingAPI_v5`](../professional_video_applications/fxparametersettingapi_v5.md) within this method to set parameter states during analysis, as in the example below.
 
@@ -101,7 +101,7 @@ Set up data arrays or variables that will be used later for analysis in the [`se
 }
 ```
 
-##### Store data to persist between application launches
+### Store data to persist between application launches
 
 Your plug-in needs to store the analysis data in a parameter so that it can persist between application launches. You typically do this with a custom parameter added in [`addParameters()`](../professional_video_applications/fxtileableeffect/addparameters%28%29.md). You also supply the user with a button to start the analysis in [`addParameters()`](../professional_video_applications/fxtileableeffect/addparameters%28%29.md). When implementing custom parameters, implement the [`class(forCustomParameterID:)`](../professional_video_applications/fxtileableeffect/class%28forcustomparameterid%29.md) method so your custom parameters can be serialized and deserialized properly.
 
@@ -160,7 +160,7 @@ Your plug-in needs to store the analysis data in a parameter so that it can pers
 }
 ```
 
-##### Start the analysis
+### Start the analysis
 
 In the `FxBrightnessAnalysis` example plug-in, when the user clicks the Start Analysis push button parameter, the host app calls the plug-in’s `-startAnalysis:` function, which then initializes the [`FxAnalysisAPI`](../professional_video_applications/fxanalysisapi.md) and requests that the host start a forward analysis.
 
@@ -243,7 +243,7 @@ In the `FxBrightnessAnalysis` example plug-in, when the user clicks the Start An
 }
 ```
 
-##### Analyze the frames and store the results
+### Analyze the frames and store the results
 
 Use the [`analyzeFrame(_:at:)`](../professional_video_applications/fxanalyzer/analyzeframe%28_,at%29.md) method allows you to analyze each frame and store results. In the following example the plug-in samples all the pixels to determine the average luminance of each frame, and then stores the `averageLuminance` value for each frame (`frameTime`) in the `analyzedData` array.
 
@@ -462,7 +462,7 @@ The example above calls the `-saveAnalyzedData:` function shown below every 10 f
 
 > 💡 **Tip**:  To cancel analysis, return `NO` and set the error in the [`analyzeFrame(_:at:)`](../professional_video_applications/fxanalyzer/analyzeframe%28_,at%29.md) method.
 
-##### Clean up after analysis
+### Clean up after analysis
 
 Use the [`cleanupAnalysis()`](../professional_video_applications/fxanalyzer/cleanupanalysis%28%29.md) method to do any necessary cleanup after the analysis is complete. The following example is from the `FxBrightnessAnalysis` plug-in.
 
@@ -502,7 +502,7 @@ Use the [`cleanupAnalysis()`](../professional_video_applications/fxanalyzer/clea
 }
 ```
 
-##### Determine the Current Analysis State
+### Determine the Current Analysis State
 
 The `-analysisStateForEffect:` method returns the current analysis state as one of the following keys:
 
@@ -514,7 +514,7 @@ The `-analysisStateForEffect:` method returns the current analysis state as one 
 
 Although not necessary, you can use these states to provide UI feedback, and to determine when the analysis is complete or whether it was interrupted.
 
-##### Retrieve analysis data for use in rendering
+### Retrieve analysis data for use in rendering
 
 During rendering, retrieve the analyzed data for each frame from the custom parameter in your [`pluginState(_:at:quality:)`](../professional_video_applications/fxtileableeffect/pluginstate%28_,at,quality%29.md) method. Use [`getCustomParameterValue(_:fromParameter:at:)`](../professional_video_applications/fxparameterretrievalapi_v6/getcustomparametervalue%28_,fromparameter,at%29.md) to get the frame’s value, process a result that your renderer will need, then pack it into the plug-in state for that frame. This example shows how to retrieve the analysis data for use in rendering. The steps that follow take you through the example in more detail.
 

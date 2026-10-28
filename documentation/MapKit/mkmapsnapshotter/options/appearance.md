@@ -19,7 +19,7 @@ var appearance: NSAppearance? { get set }
 @property (nonatomic, strong, nullable) NSAppearance * appearance;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a light or dark appearance for the map in the resulting snapshot image. When the value of this property is `nil` (the default), the snapshotter derives the appropriate appearance based on the following logic:
 

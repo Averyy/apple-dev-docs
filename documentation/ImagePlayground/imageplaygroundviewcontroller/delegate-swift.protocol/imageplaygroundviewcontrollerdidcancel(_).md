@@ -20,7 +20,7 @@ Notifies the delegate that the person canceled the generation of the image.
 @objc optional func imagePlaygroundViewControllerDidCancel(_ imagePlaygroundViewController: ImagePlaygroundViewController)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to dismiss the specified [`ImagePlaygroundViewController`](../../imageplaygroundviewcontroller.md) from your app’s interface.
 

@@ -21,7 +21,7 @@ A list of weekdays in this calendar, localized to the Calendar’s `locale`.
 var weekdaySymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]`.
 

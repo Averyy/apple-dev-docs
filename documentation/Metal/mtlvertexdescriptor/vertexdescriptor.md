@@ -20,7 +20,7 @@ Creates and returns a new vertex descriptor.
 + (MTLVertexDescriptor *) vertexDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A default object with allocated arrays in the [`attributes`](./attributes.md) and [`layouts`](./layouts.md) properties.
 

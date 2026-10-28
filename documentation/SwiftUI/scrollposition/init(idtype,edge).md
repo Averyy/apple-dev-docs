@@ -21,7 +21,7 @@ Creates a new scroll position to be scrolled to the provided edge.
 init(idType: (some Hashable & Sendable).Type = Never.self, edge: Edge)
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a type to indicate the type of ID the scroll view should look for views with an ID of that type within its scroll target layout.
 

@@ -17,7 +17,7 @@ typedef union CMColor {
 } CMColor;
 ```
 
-#### Discussion
+## Discussion
 
 A color union can contain one of the above fields.
 

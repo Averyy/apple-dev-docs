@@ -13,7 +13,7 @@ Convert data into readable strings or Swift objects using formatters.
 - macOS 11.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10160: Formatters: Make Data Human-Friendly](https://developer.apple.com/videos/play/wwdc2020/10160/)
 

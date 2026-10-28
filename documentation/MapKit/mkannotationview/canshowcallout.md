@@ -24,7 +24,7 @@ var canShowCallout: Bool { get set }
 @property (nonatomic) BOOL canShowCallout;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the map view shows a standard callout  when the user taps a selected annotation view. The callout uses the title and subtitle text from the associated annotation object. If there’s no title text, the map view treats the annotation view as if its [`isEnabled`](./isenabled.md) property is [`false`](../../Swift/false.md). The callout also displays any custom callout views in the [`leftCalloutAccessoryView`](./leftcalloutaccessoryview.md) and [`rightCalloutAccessoryView`](./rightcalloutaccessoryview.md) properties.
 

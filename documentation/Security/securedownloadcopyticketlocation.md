@@ -15,7 +15,7 @@ Copies the ticket location from a secure download URL.
 OSStatus SecureDownloadCopyTicketLocation(CFURLRef url, CFURLRef*ticketLocation);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 

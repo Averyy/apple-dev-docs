@@ -22,7 +22,7 @@ func GLKMatrixStackGetMatrix4Inverse(_ stack: GLKMatrixStack) -> GLKMatrix4
 GLKMatrix4 GLKMatrixStackGetMatrix4Inverse(GLKMatrixStackRef stack);
 ```
 
-#### Return Value
+## Return Value
 
 The top matrix’s inverse.
 

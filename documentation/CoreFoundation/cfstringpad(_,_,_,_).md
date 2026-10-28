@@ -25,7 +25,7 @@ func CFStringPad(_ theString: CFMutableString!, _ padString: CFString!, _ length
 extern void CFStringPad(CFMutableStringRef theString, CFStringRef padString, CFIndex length, CFIndex indexIntoPad);
 ```
 
-#### Discussion
+## Discussion
 
 This function has two purposes. It either enlarges the character buffer of a CFMutableString object to a given length, padding the added length with a given character or characters, or it truncates the character buffer to a smaller size. The key parameter for this behavior is `length`; if it is greater than the current length of the represented string, padding takes place, and if it less than the current length, truncation occurs.
 

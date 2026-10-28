@@ -25,7 +25,7 @@ struct OpenIDOperation
 typedef NSString * ASAuthorizationOpenIDOperation;
 ```
 
-#### Discussion
+## Discussion
 
 Use one of these values as the [`requestedOperation`](../asauthorizationopenidrequest/requestedoperation.md) property in an OpenID request that you make with an instance of either [`ASAuthorizationAppleIDRequest`](../asauthorizationappleidrequest.md) or [`ASAuthorizationSingleSignOnRequest`](../asauthorizationsinglesignonrequest.md).
 

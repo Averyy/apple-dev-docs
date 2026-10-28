@@ -24,7 +24,7 @@ init(route workoutRoute: HKWorkoutRoute, dataHandler: @escaping @Sendable (HKWor
 - (instancetype) initWithRoute:(HKWorkoutRoute *) workoutRoute dataHandler:(void (^)(HKWorkoutRouteQuery *query, NSArray<CLLocation *> *routeData, BOOL done, NSError *error)) dataHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized route query.
 

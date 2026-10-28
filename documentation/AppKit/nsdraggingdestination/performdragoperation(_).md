@@ -20,11 +20,11 @@ optional func performDragOperation(_ sender: any NSDraggingInfo) -> Bool
 - (BOOL) performDragOperation:(id<NSDraggingInfo>) sender;
 ```
 
-#### Return Value
+## Return Value
 
 If the destination accepts the data, it returns [`true`](../../Swift/true.md); otherwise it returns [`false`](../../Swift/false.md). The default is to return [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 For this method to be invoked, the previous [`prepareForDragOperation(_:)`](./preparefordragoperation%28_%29.md) message must have returned [`true`](../../Swift/true.md). The destination should implement this method to do the real work of importing the pasteboard data represented by the image.
 

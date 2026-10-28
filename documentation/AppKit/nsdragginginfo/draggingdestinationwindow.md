@@ -21,7 +21,7 @@ var draggingDestinationWindow: NSWindow? { get }
 @property (readonly, nullable) NSWindow * draggingDestinationWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Either this window is the destination itself, or it contains the view object that is the destination.
 

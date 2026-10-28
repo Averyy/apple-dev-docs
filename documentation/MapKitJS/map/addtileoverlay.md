@@ -15,11 +15,11 @@ Adds a tile overlay to the map.
 addTileOverlay(tileOverlay: TileOverlay): TileOverlay;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the tile overlay.
 
-#### Discussion
+## Discussion
 
 MapKit JS adds this overlay to the end of the map’s [`tileOverlays`](./tileoverlays.md) array.
 

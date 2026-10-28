@@ -19,11 +19,11 @@ func remoteNameRequest(_ target: Any!, withPageTimeout pageTimeoutValue: Bluetoo
 - (IOReturn) remoteNameRequest:(id) target withPageTimeout:(BluetoothHCIPageTimeout) pageTimeoutValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the remote name request was successfully issued (and if synchronous, if the request completed successfully).
 
-#### Discussion
+## Discussion
 
 If a target is specified, the request is asynchronous and on completion of the REMOTE_NAME_REQUEST command, the method -remoteNameRequestComplete:status:name: will be called on the specified target. If no target is specified, the request is made synchronously and won’t return until the request is complete.
 

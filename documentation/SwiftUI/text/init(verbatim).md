@@ -21,7 +21,7 @@ Creates a text view that displays a string literal without localization.
 init(verbatim content: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a text view with a string literal without performing localization:
 

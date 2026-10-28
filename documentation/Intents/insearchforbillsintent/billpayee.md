@@ -34,7 +34,7 @@ var billPayee: INBillPayee? { get }
 @property (atomic, copy, readonly, nullable) INBillPayee * billPayee;
 ```
 
-#### Discussion
+## Discussion
 
 The payee is an entity that generates bills for the user and receives payment for those bills. The user must register all payees in advance with your app. Search results should contain only bills associated with the specified payee. If the [`INBillPayee`](../inbillpayee.md) object doesn’t contain enough information to identify a payee, don’t filter your search results based on the payee.
 

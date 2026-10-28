@@ -23,7 +23,7 @@ let kCTFontFullNameKey: CFString
 extern CFStringRef const kCTFontFullNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the full name.
 

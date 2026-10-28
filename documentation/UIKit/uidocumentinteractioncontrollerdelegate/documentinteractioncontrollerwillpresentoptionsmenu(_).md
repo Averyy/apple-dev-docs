@@ -22,7 +22,7 @@ optional func documentInteractionControllerWillPresentOptionsMenu(_ controller: 
 - (void) documentInteractionControllerWillPresentOptionsMenu:(UIDocumentInteractionController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 The options menu is used to present the user with options for previewing the document, opening it in an application, or copying its contents. You can use this method to update your user interface in response to displaying the menu.
 

@@ -29,7 +29,7 @@ var storageMode: MTLStorageMode { get set }
 - [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 - [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
-#### Discussion
+## Discussion
 
 To access a counter sample buffer with the CPU, set this property to [`MTLStorageMode.shared`](../mtlstoragemode/shared.md), otherwise [`MTLStorageMode.private`](../mtlstoragemode/private.md).
 

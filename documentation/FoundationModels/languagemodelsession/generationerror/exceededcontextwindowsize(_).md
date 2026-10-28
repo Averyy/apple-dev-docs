@@ -21,7 +21,7 @@ An error that signals the session reached its context window size limit.
 case exceededContextWindowSize(LanguageModelSession.GenerationError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you use the available tokens for the context window of 4,096 tokens. The token count includes instructions, prompts, and outputs for a session instance. A single token corresponds to approximately three to four characters in languages like English, Spanish, or German, and one token per character in languages like Japanese, Chinese, and Korean.
 

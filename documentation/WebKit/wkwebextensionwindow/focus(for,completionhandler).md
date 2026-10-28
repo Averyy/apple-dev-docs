@@ -27,7 +27,7 @@ optional func focus(for context: WKWebExtensionContext) async throws
 - (void) focusForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 No action is performed if not implemented.
 

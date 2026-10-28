@@ -22,11 +22,11 @@ func addAttachmentData(_ attachmentData: Data, typeIdentifier uti: String, filen
 - (BOOL) addAttachmentData:(NSData *) attachmentData typeIdentifier:(NSString *) uti filename:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the attachment data was successfully added to the message, or [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method is especially useful when the attachment you want to add to a message does not have a file system representation. This can be the case, for example, for programmatically composed audiovisual content.
 

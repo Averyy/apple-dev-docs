@@ -21,7 +21,7 @@ class CPSessionConfiguration
 @interface CPSessionConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use a session configuration to determine any user interface limits the vehicle imposes, such as keyboard display and list length, and the content style the vehicle selects according to the ambient light level.
 

@@ -24,11 +24,11 @@ optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, pr
 - (UITargetedPreview *) contextMenuInteraction:(UIContextMenuInteraction *) interaction previewForDismissingMenuWithConfiguration:(UIContextMenuConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An object containing the destination view and configuration parameters for the animation.
 
-#### Discussion
+## Discussion
 
 When the user dismisses the preview interface, UIKit animates that interface to the view you specify in the returned [`UITargetedPreview`](../uitargetedpreview.md) object.
 

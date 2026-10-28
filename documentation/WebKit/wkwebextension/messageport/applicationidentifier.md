@@ -23,7 +23,7 @@ var applicationIdentifier: String? { get }
 @property (nonatomic, readonly, nullable) NSString * applicationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is provided by the web extension and may or may not be used by the app. It’s up to the app to decide how to interpret this identifier.
 

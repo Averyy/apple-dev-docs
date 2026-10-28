@@ -22,7 +22,7 @@ nonisolated
 struct ArrangementView<Primary, Secondary> where Primary : View, Secondary : View
 ```
 
-#### Overview
+## Overview
 
 Use an arrangement view to lay out two related content views differently depending on the current size classes, orientation, and status of reserved regions such as the fold on iPhone Duo. The arrangement view helps you improve how your app handles a folded display in addition to a flat display.
 
@@ -38,7 +38,7 @@ Arrangement views offer two distinct styles: split and overlay. You specify the 
 
 For more information on designing your app to use an arrangement view, see [Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo).
 
-#### Configure an overlay arrangement view
+## Configure an overlay arrangement view
 
 An overlay arrangement view places a primary view and a secondary view in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a folded device in landscape orientation or above and below each other when someone is holding a folded device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
 
@@ -59,7 +59,7 @@ ArrangementView {
 
 For more information on configuring layout for a folded iPhone Duo in an overlay arrangement, see [Customize a folded layout](./overlayarrangementviewstyle.md#Customize-a-folded-layout).
 
-#### Configure a split arrangement view
+## Configure a split arrangement view
 
 Unlike an overlay arrangement, which typically layers its two views and only separates them when the device folds, a split arrangement view always keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
 
@@ -80,7 +80,7 @@ ArrangementView {
 
 For more information on adjusting view sizes in a split arrangement, see [Adjust layout sizing in a split arrangement](./splitarrangementviewstyle.md#Adjust-layout-sizing-in-a-split-arrangement).
 
-#### Limit an arrangement by orientation
+## Limit an arrangement by orientation
 
 You can limit which axes your split or overlay arrangement view supports by specifying the axes for the arrangement view style. The following example shows an arrangement that only splits vertically:
 

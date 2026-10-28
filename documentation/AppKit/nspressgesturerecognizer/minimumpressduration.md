@@ -19,7 +19,7 @@ var minimumPressDuration: TimeInterval { get set }
 @property NSTimeInterval minimumPressDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the same as the current double-click interval.
 

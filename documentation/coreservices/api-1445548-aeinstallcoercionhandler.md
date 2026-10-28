@@ -19,15 +19,15 @@ func AEInstallCoercionHandler(_ fromType: DescType, _ toType: DescType, _ handle
 OSErr AEInstallCoercionHandler(DescType fromType, DescType toType, AECoercionHandlerUPP handler, SRefCon handlerRefcon, Boolean fromTypeIsDesc, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Before using `AEInstallCoercionHandler` to install a handler for a particular descriptor type, you can use the [`AEGetCoercionHandler(_:_:_:_:_:_:)`](./api-1445348-aegetcoercionhandler.md) function to determine whether the table already contains a coercion handler for that type. 
 
-##### Version-Notes
+### Version-Notes
 
 See the Version Notes section for the [`AECoercePtr(_:_:_:_:_:)`](./api-1441846-aecoerceptr.md) function for information on when to use descriptor-based versus pointer-based coercion handlers starting in OS X version 10.2.
 

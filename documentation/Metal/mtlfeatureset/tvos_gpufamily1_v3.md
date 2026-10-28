@@ -19,7 +19,7 @@ case tvOS_GPUFamily1_v3
 MTLFeatureSet_tvOS_GPUFamily1_v3
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A8 devices running tvOS 11.
 

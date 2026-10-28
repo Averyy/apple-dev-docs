@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two bind targets are equal.
 static func == (lhs: BindTarget, rhs: BindTarget) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the bind targets are equal. Otherwise, returns `false`.
 

@@ -20,7 +20,7 @@ var rgdwAxes: LPDWORD!
 LPDWORD rgdwAxes;
 ```
 
-#### Discussion
+## Discussion
 
 The FFJOFS_* flags must be used to specify the values in the array.
 

@@ -19,7 +19,7 @@ class IOBluetoothSDPServiceRecord
 @interface IOBluetoothSDPServiceRecord : NSObject
 ```
 
-#### Overview
+## Overview
 
 As a service record, an instance of this class has an NSDictionary of service attributes. It also has a link to the IOBluetoothDevice that the service belongs to. The service dictionary is keyed off of the attribute ID of each attribute represented as an NSNumber.
 

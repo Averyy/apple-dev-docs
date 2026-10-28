@@ -21,7 +21,7 @@ Sets the receiver’s target, sends the receiver’s message (with arguments) to
 - (void) invokeWithTarget:(id) target;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the receiver’s selector and argument values before calling this method.
 

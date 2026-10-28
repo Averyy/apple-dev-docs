@@ -22,7 +22,7 @@ An array that contains status information for a subscription group, including re
 var subscriptionStatus: Product.SubscriptionInfo.Status? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the product in the transaction isn’t an auto-renewable subscription, specifically, if the [`productType`](./producttype.md) is anything other than [`autoRenewable`](../product/producttype/autorenewable.md).
 

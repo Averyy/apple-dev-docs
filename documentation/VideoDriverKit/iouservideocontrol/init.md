@@ -15,7 +15,7 @@ Initializes a video control.
 virtual bool init(IOUserVideoDriver *in_driver, bool in_is_settable, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope);
 ```
 
-#### Return Value
+## Return Value
 
 True on success.
 

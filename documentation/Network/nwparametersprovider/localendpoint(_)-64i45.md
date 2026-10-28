@@ -21,7 +21,7 @@ Specify a specific endpoint to use as the local endpoint.
 func localEndpoint(_ endpoint: NWEndpoint?) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 For connections, this will be used to initiate traffic; for listeners, this will be used for receiving incoming connections.
 

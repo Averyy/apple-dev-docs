@@ -25,7 +25,7 @@ class var `default`: TimeZone { get set }
 @property (class, copy) NSTimeZone * defaultTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If no [`default`](./default.md) time zone has been set, the current system time zone is used. If the current system time zone cannot be determined, the GMT time zone is used instead.
 

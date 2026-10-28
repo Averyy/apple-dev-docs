@@ -10,7 +10,7 @@ An atom that indicates the end of the sound description.
 
 - [Sound sample data](./sound_sample_data.md)
 
-#### Overview
+## Overview
 
 This atom is present to indicate the end of the sound description. It contains no data, and has a type field of zero (`0x00000000`) instead of a four-character code.
 

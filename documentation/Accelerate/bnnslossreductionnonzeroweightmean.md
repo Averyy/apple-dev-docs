@@ -25,7 +25,7 @@ var BNNSLossReductionNonZeroWeightMean: BNNSLossReductionFunction { get }
 BNNSLossReductionNonZeroWeightMean
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossReductionNonZeroWeightMean`](./bnnslossreductionnonzeroweightmean.md) sums the loss of all samples in the batch and divides by number of non-zero weights.
 

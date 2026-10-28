@@ -25,7 +25,7 @@ var pipeSegmentCount: Int { get set }
 @property (nonatomic) NSInteger pipeSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 This segment count corresponds to the circle formed by the torus’ minor radius or [`pipeRadius`](./piperadius.md) property. A larger number of segments adds more vertex data to the geometry, creating a more smoothly curved surface at a cost to rendering performance.
 

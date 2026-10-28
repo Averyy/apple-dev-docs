@@ -20,7 +20,7 @@ Configures an existing pair of entities as a portal and its target world.
 static func configure(world: Entity, portalEntity: Entity, surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle = .infinitePlane(), boundaryMode: PortalComponent.BoundaryMode = .none)
 ```
 
-#### Discussion
+## Discussion
 
 This method writes a coordinated set of components onto the two entities you provide. Use it when you already own both entities — for example, when the portal entity holds gestures or other components, or when the world entity is a child of an existing scene.
 

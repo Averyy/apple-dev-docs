@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveWri
 - (void) peripheralManager:(CBPeripheralManager *) peripheral didReceiveWriteRequests:(NSArray<CBATTRequest *> *) requests;
 ```
 
-#### Discussion
+## Discussion
 
 In the same way that you respond to a read request, each time you receive this callback, call the [`respond(to:withResult:)`](../cbperipheralmanager/respond%28to,withresult%29.md) method of the [`CBPeripheralManager`](../cbperipheralmanager.md) class exactly once. If the `requests` parameter contains multiple requests, treat them as you would a single request—if you can’t fulfill an individual request, you shouldn’t fulfill any of them. Instead, call the [`respond(to:withResult:)`](../cbperipheralmanager/respond%28to,withresult%29.md) method immediately, and provide a result that indicates the cause of the failure.
 

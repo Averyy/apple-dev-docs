@@ -24,7 +24,7 @@ enum MTLHazardTrackingMode
 enum MTLHazardTrackingMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Hazard tracking helps prevent race conditions by managing memory dependencies between commands. When you enable tracking for a resource, Metal automatically delays write operations until previous read operations finish, and prevents subsequent commands from running until write operations complete.
 
@@ -32,7 +32,7 @@ Metal applies hazard tracking to resources you create with [`MTLHazardTrackingMo
 
 Metal doesn’t apply hazard tracking to commands you submit to an [`MTL4CommandQueue`](./mtl4commandqueue.md), even when those commands use tracked resources.
 
-##### Enable hazard tracking for a resource
+### Enable hazard tracking for a resource
 
 You can create individual resources with tracking by calling the appropriate [`MTLDevice`](./mtldevice.md) factory method (see [Resource creation](./resource-creation.md)), or a factory method of an [`MTLHeap`](./mtlheap.md) instance that you create with hazard tracking. Enable hazard tracking for an individual resource or heap by adding [`MTLHazardTrackingMode.tracked`](./mtlhazardtrackingmode/tracked.md) to an [`MTLResourceOptions`](./mtlresourceoptions.md) instance.
 
@@ -41,7 +41,7 @@ Some factory methods have a parameter for resource options, such as [`makeBuffer
 1. Create an [`MTLTextureDescriptor`](./mtltexturedescriptor.md) instance.
 2. Add the [`MTLHazardTrackingMode.tracked`](./mtlhazardtrackingmode/tracked.md) option to that descriptor’s [`resourceOptions`](./mtltexturedescriptor/resourceoptions.md) property.
 
-##### Choose between automatic safety and manual optimization
+### Choose between automatic safety and manual optimization
 
 Hazard tracking provides automatic safety at the cost of some runtime overhead. You can improve the runtime performance of commands you send to an [`MTLCommandQueue`](./mtlcommandqueue.md) by creating resources with [`MTLHazardTrackingMode.untracked`](./mtlhazardtrackingmode/untracked.md) and synchronizing access to those resources yourself.
 

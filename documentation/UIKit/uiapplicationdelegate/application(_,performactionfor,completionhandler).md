@@ -28,7 +28,7 @@ optional func application(_ application: UIApplication, performActionFor shortcu
 - (void) application:(UIApplication *) application performActionForShortcutItem:(UIApplicationShortcutItem *) shortcutItem completionHandler:(void (^)(BOOL succeeded)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method is not called for scene-based apps. If you have a scene-based app, implement [`windowScene(_:performActionFor:completionHandler:)`](../uiwindowscenedelegate/windowscene%28_,performactionfor,completionhandler%29.md) in your scene delegate instead.
 

@@ -13,11 +13,11 @@
 void ifnet_free_multicast_list(ifmultiaddr_t *multicasts);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Frees a list of multicasts returned by ifnet_get_multicast_list. Decrements the refcount on each multicast address and frees the array.
 

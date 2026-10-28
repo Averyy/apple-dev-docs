@@ -15,7 +15,7 @@ The component for adding a Podcast show or episode.
 object Podcast
 ```
 
-#### Discussion
+## Discussion
 
 Use the `Podcast` component to embed information about a podcast and link to it. You can embed information about a podcast show or episode into an article, and link to that show or episode.
 
@@ -24,7 +24,7 @@ The `Podcast` component uses two optional properties to provide basic layout and
 - `orientation`. By default, the `Podcast` component automatically adjusts the layout of the subcomponents depending on the viewport width of the device. On viewports less than 600 points (iPhone), the layout is vertical with artwork stacked on top of the podcast information. On viewports greater than 600 points (iPad), the layout is horizontal with artwork and podcast information appearing side by side. The artwork is on the left and the podcast information is on the right. If you’d like to specify a horizontal layout regardless of the viewport width of the device, use the `horizontal` property.
 - `theme`. By default, the `Podcast` component automatically changes color styles depending on whether Dark Mode is turned on or off for the device the article appears on. If you’d like to specify a light or a dark appearance independent of the device setting, use the `theme` property.
 
-##### Example
+### Example
 
 ```json
 {

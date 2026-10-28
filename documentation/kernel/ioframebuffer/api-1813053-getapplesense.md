@@ -16,11 +16,11 @@ virtual IOReturn getAppleSense(
  UInt32 *displayType );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 Hardware that supports simple display sensing, or the classic 3 pin Apple sensing described in Designing Cards and Drivers, should implement this method to return sense information.
 

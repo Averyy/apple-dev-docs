@@ -15,11 +15,11 @@ Returns an element to use as a custom accessory on the right side of the callout
 calloutRightAccessoryForAnnotation?(annotation: Annotation): HTMLElement;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns a DOM element to display as the right accessory.
 
-#### Discussion
+## Discussion
 
 You can use this method to provide a custom accessory to the right side of the callout content area. It works similarly to [`calloutLeftAccessoryForAnnotation()`](./calloutleftaccessoryforannotation.md).
 

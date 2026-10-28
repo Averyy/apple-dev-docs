@@ -8,13 +8,13 @@ Create, retrieve, update, and delete ads using these endpoints.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 An [`Ad`](./ad.md) object connects a [`Creative`](./creative.md) to an ad group. The ad is the serving unit: It tells the system which ad creative to show when the ad group wins an auction. An ad group can contain multiple ads, but only one ad per ad group can be `ENABLED` at a time. Enabling a different ad requires pausing the one currently serving.
 
 Creating an ad requires a `name`, a `status`, the `adGroupId` of the target ad group, and a `creativeId` referencing an existing [`Creative`](./creative.md). Create the ad creative first, then reference its `id` here. The `campaignId`, `adAccountId`, and other system fields are read-only, and the system populates them automatically at creation.
 
-#### Use the Ads Endpoints
+## Use the Ads Endpoints
 
 Use these endpoints to create, retrieve, update, and delete ads:
 
@@ -26,7 +26,7 @@ Use these endpoints to create, retrieve, update, and delete ads:
 | `PUT` | `/v1/ads/{id}` | [`Update an Ad`](./put-ads-_id_.md) updates an existing ad. |
 | `DELETE` | `/v1/ads/{id}` | [`Delete an Ad`](./delete-ads-_id_.md) soft-deletes an ad by its ID. |
 
-##### Track Ad Status and System Status
+### Track Ad Status and System Status
 
 Ads have three status fields that together determine whether an ad is serving:
 
@@ -59,11 +59,11 @@ When `systemStatus` is `NOT_RUNNING`, the system populates the `systemStatusReas
 | `PRODUCT_PAGE_INSUFFICIENT_ASSETS` | **App Store-specific.** The product page doesn’t have enough assets to render the ad. |
 | `PRODUCT_PAGE_UNAVAILABLE` | **App Store-specific.** The product page is temporarily unavailable. |
 
-##### Interpret System Status Limiting Reasons
+### Interpret System Status Limiting Reasons
 
 When an ad is running but delivering at reduced capacity, the system populates the `systemStatusLimitingReasons` array. Unlike `systemStatusReasons`, these reasons don’t stop delivery. Instead, they constrain reach. There’s one possible value, `CREATIVE_POLICY_ISSUES`, which means the ad creative associated with the ad has policy conditions that limit but don’t fully stop delivery.
 
-##### Understand Apple Review Requirements
+### Understand Apple Review Requirements
 
 Apple must approve ads before they can serve. For App Store ads, the review covers the ad creative content and product page. For Apple Maps ads, the review covers the brand ad creative instead.
 

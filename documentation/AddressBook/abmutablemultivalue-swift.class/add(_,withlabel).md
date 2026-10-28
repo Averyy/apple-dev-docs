@@ -19,11 +19,11 @@ func add(_ value: Any!, withLabel label: String!) -> String!
 - (NSString *) addValue:(id) value withLabel:(NSString *) label;
 ```
 
-#### Return Value
+## Return Value
 
 The new identifier if `value` is added successfully; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 The `value` argument must be of the correct type. For example, if the receiver is the value for a property of type `kABMultiStringProperty`, then `value` needs to be an NSString object. See [Property Types](../property_types.md) for a list of supported types in a multivalue list (see descriptions of the `kABMulti...` constants). If either the `value` or the `label` argument is `nil`, this method raises an exception.
 

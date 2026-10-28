@@ -25,7 +25,7 @@ var shouldRefreshRefetchedObjects: Bool { get set }
 @property (nonatomic) BOOL shouldRefreshRefetchedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the property values of fetched objects will be updated with the current values in the persistent store; otherwise, it is [`false`](../../Swift/false.md).
 

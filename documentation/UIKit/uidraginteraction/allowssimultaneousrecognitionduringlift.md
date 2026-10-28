@@ -22,7 +22,7 @@ var allowsSimultaneousRecognitionDuringLift: Bool { get set }
 @property (nonatomic, assign) BOOL allowsSimultaneousRecognitionDuringLift;
 ```
 
-#### Discussion
+## Discussion
 
 If you set the [`allowsSimultaneousRecognitionDuringLift`](./allowssimultaneousrecognitionduringlift.md) property to [`true`](../../Swift/true.md), the interaction is canceled when another gesture is recognized. If you set this property to [`false`](../../Swift/false.md) (the default value), competing gesture recognizers fail.
 

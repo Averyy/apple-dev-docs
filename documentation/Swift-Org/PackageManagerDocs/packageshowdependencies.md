@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Print the resolved dependency graph.
 
-#### Overview
+## Overview
 
 ```
 package show-dependencies [--package-path=<package-path>]

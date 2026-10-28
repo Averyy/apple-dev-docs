@@ -21,7 +21,7 @@ var textSizeMultiplier: Float { get set }
 @property (nonatomic) float textSizeMultiplier;
 ```
 
-#### Discussion
+## Discussion
 
 Measured as a fractional percentage value where `1.0` denotes 100%.
 

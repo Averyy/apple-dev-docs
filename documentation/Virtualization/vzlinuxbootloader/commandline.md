@@ -19,7 +19,7 @@ var commandLine: String { get set }
 @property (copy) NSString * commandLine;
 ```
 
-#### Discussion
+## Discussion
 
 For information about the parameters you can pass to a Linux kernel, see “[The kernel’s command-line parameters](https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html)”.
 

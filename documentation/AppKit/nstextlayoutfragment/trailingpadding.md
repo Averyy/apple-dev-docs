@@ -19,7 +19,7 @@ var trailingPadding: CGFloat { get }
 @property (readonly) CGFloat trailingPadding;
 ```
 
-#### Discussion
+## Discussion
 
 This is with respect to the primary writing direction of the paragraph.
 

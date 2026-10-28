@@ -19,7 +19,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The image is drawn vertically centered on the left edge of the browser cell.
 

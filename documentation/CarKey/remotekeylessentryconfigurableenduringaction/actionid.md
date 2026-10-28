@@ -19,7 +19,7 @@ The vehicle-specific code that identifies what action to take on the targeted fe
 let actionID: ActionIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 You define the action identifiers for your vehicles and what actions they perform on the vehicle function.
 

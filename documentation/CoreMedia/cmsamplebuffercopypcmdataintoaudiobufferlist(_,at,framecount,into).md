@@ -25,7 +25,7 @@ func CMSampleBufferCopyPCMDataIntoAudioBufferList(_ sbuf: CMSampleBuffer, at fra
 extern OSStatus CMSampleBufferCopyPCMDataIntoAudioBufferList(CMSampleBufferRef sbuf, int32_t frameOffset, int32_t numFrames, AudioBufferList *bufferList);
 ```
 
-#### Discussion
+## Discussion
 
 The [`AudioBufferList`](../CoreAudioTypes/audiobufferlist.md) must contain the same number of channels and its data buffers must be sized to hold the specified number of frames.
 

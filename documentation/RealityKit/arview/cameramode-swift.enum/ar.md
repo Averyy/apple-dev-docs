@@ -17,7 +17,7 @@ A mode that uses the device’s camera to place virtual entities relative to the
 case ar
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode to display virtual content in the real world using [`ARView`](../../arview.md) This mode requires an iOS device with at least one front-facing camera, such as an iPhone or iPad.
 

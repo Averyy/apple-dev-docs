@@ -15,7 +15,7 @@ Sends a message to the data provider extension.
 func sendMessageToDataProvider(_ message: TransportMessage) throws(AccessoryTransportSession.Error)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to relay data from the accessory to your app’s [`AccessoryDataProvider`](../accessorydataprovider.md) extension. The system decrypts the message, if necessary, before delivering it to the data provider. Data providers receive the message through [`messageHandler(_:)`](../../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md).
 

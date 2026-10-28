@@ -24,7 +24,7 @@ weak var delegate: (any VSAccountManagerDelegate)? { get set }
 @property (nonatomic, weak) id<VSAccountManagerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The system notifies the delegate when the app needs to present or dismiss authentication views, or decide whether to authenticate the person with their chosen provider.
 

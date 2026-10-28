@@ -25,11 +25,11 @@ func path(forAuxiliaryExecutable executableName: String) -> String?
 - (NSString *) pathForAuxiliaryExecutable:(NSString *) executableName;
 ```
 
-#### Return Value
+## Return Value
 
 The full pathname of the executable `executableName` in the receiver’s bundle.
 
-#### Discussion
+## Discussion
 
 This method returns the appropriate path for modern application and framework bundles. This method may not return a path for non-standard bundle formats or for some older bundle formats.
 

@@ -21,7 +21,7 @@ A DNS-over-HTTPS resolver configuration.
 case https(URL, serverAddresses: [NWEndpoint])
 ```
 
-#### Discussion
+## Discussion
 
 The URL describes the location of the DNS server, such as “https://dnsserver.example.net/dns-query”. See [RFC 8484](https://tools.ietf.org/html/rfc8484) for more details. The associated server addresses you provide are hints for which well-known DNS server addresses to use.
 

@@ -21,7 +21,7 @@ func hasParameters() -> Bool
 - (BOOL) hasParameters;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the composition has any input parameters.
 

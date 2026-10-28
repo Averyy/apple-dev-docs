@@ -22,7 +22,7 @@ nonisolated
 init(ids productIDs: some Collection<String>, prefersPromotionalIcon: Bool = false, @ViewBuilder icon: @escaping (Product) -> Icon, @ViewBuilder placeholderIcon: () -> PlaceholderIcon)
 ```
 
-#### Discussion
+## Discussion
 
 The store view shows the custom placeholder icon until all products finish loading. After the view finishes loading the products, it uses the image you provide, by default. If you set `prefersPromotionalIcon` to `true`, any products that have an available promotional image use the promotional image instead.
 

@@ -26,13 +26,13 @@ string BillingEventType
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 When the `supplySources` value is `APPSTORE_SEARCH_RESULTS` or `APPSTORE_SEARCH_TAB`, the `billingEvent` must be `TAPS.`
 
 - **IMPRESSIONS**: The cost to the advertiser is per impression served.
 
-#### Discussion
+## Discussion
 
 See also [`Campaign`](./campaign.md) object.
 

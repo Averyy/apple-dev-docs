@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the `NSLayoutManager` class. Returns an initialized object.
 

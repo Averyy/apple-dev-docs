@@ -20,7 +20,7 @@ class ARFaceGeometry
 @interface ARFaceGeometry : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides a general model for the detailed topology of a face, in the form of a 3D mesh appropriate for use with various rendering technologies or for exporting 3D assets. (For a quick way to visualize a face geometry using SceneKit, see the [`ARSCNFaceGeometry`](./arscnfacegeometry.md) class.)
 

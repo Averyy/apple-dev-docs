@@ -23,7 +23,7 @@ convenience init?(reductionType: MLCReductionType, dimension: Int)
 + (instancetype) layerWithReductionType:(MLCReductionType) reductionType dimension:(NSUInteger) dimension;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MLCReductionLayer`](../mlcreductionlayer.md) instance.
 

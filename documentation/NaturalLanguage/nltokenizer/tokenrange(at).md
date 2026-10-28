@@ -22,7 +22,7 @@ Finds the range of the token at the given index.
 func tokenRange(at index: String.Index) -> Range<String.Index>
 ```
 
-#### Return Value
+## Return Value
 
 The range of the token at the given location.
 

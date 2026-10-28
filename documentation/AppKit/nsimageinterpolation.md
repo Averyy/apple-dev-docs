@@ -19,7 +19,7 @@ enum NSImageInterpolation
 enum NSImageInterpolation : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`imageInterpolation`](./nsgraphicscontext/imageinterpolation.md) property.
 

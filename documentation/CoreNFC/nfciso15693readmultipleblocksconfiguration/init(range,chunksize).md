@@ -19,7 +19,7 @@ init(range: NSRange, chunkSize: Int)
 - (instancetype) initWithRange:(NSRange) range chunkSize:(NSUInteger) chunkSize;
 ```
 
-#### Discussion
+## Discussion
 
 Initialize with default zero maximum retry and zero retry interval.
 

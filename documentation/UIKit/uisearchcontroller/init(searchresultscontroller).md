@@ -23,11 +23,11 @@ init(searchResultsController: UIViewController?)
 - (instancetype) initWithSearchResultsController:(UIViewController *) searchResultsController;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized search controller.
 
-#### Discussion
+## Discussion
 
 After creating the search controller, always assign an object to the [`searchResultsUpdater`](./searchresultsupdater.md) property. The search controller uses that object to update the search results.
 

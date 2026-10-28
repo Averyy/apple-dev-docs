@@ -6,7 +6,7 @@
 
 Add custom UI to the Home app, to configure and control accessories.
 
-#### Overview
+## Overview
 
 Use the Home Extensions framework to make accessories that you manufacture available in the Home app for people to set up, control, and configure. You can provide accessory settings, create custom SwiftUI views for configuration, and offer supporting content.
 

@@ -26,7 +26,7 @@ func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escapin
 - (void) requestMediaDataWhenReadyOnQueue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 When this method is called multiple times, only the last call is implemented. Pair each call to [`requestMediaDataWhenReady(on:using:)`](./requestmediadatawhenready%28on,using%29.md) with a corresponding call to [`stopRequestingMediaData()`](./stoprequestingmediadata%28%29.md). Releasing the `AVQueuedSampleBufferRendering` object without a call to `stopRequestingMediaData` results in undefined behavior.
 

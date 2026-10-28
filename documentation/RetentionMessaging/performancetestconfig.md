@@ -15,7 +15,7 @@ An object that enumerates the test configuration parameters.
 object PerformanceTestConfig
 ```
 
-#### Overview
+## Overview
 
 The [`Initiate Performance Test`](./initiate-performance-test.md) endpoint returns the `PerformanceTestConfig` object in the [`PerformanceTestResponse`](./performancetestresponse.md) response.
 

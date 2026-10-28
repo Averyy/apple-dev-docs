@@ -21,7 +21,7 @@ Decrements the retain count of a color.
 extern void CGColorRelease(CGColorRef color);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `color` parameter is `NULL`.
 

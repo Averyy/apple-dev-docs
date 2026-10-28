@@ -21,7 +21,7 @@ A releasing store synchronizes with acquiring operations that read the value it 
 static var releasing: AtomicStoreOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_release` in C++.
 

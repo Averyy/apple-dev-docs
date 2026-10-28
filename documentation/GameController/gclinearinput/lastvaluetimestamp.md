@@ -25,7 +25,7 @@ var lastValueTimestamp: TimeInterval { get }
 @property (readonly) NSTimeInterval lastValueTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t a specific date and time. To determine the time between value changes, subtract a previous time from the current time.
 

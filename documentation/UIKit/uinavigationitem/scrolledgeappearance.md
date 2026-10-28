@@ -24,7 +24,7 @@ var scrollEdgeAppearance: UINavigationBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UINavigationBarAppearance * scrollEdgeAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When the navigation bar displays the top navigation item, the appearance settings in this property override the settings provided by the [`scrollEdgeAppearance`](../uinavigationbar/scrolledgeappearance.md) property of [`UINavigationBar`](../uinavigationbar.md).
 

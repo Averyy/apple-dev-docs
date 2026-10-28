@@ -19,7 +19,7 @@ class VZUSBControllerConfiguration
 @interface VZUSBControllerConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create `VZUSBControllerConfiguration` objects directly. Use one of its subclasses, such as [`VZXHCIControllerConfiguration`](./vzxhcicontrollerconfiguration.md), instead.
 

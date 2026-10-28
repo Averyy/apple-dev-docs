@@ -21,7 +21,7 @@ Creates a new `KeyValuePairs` instance from the given dictionary literal.
 init(dictionaryLiteral elements: (Key, Value)...)
 ```
 
-#### Discussion
+## Discussion
 
 The order of the key-value pairs is kept intact in the resulting `KeyValuePairs` instance.
 

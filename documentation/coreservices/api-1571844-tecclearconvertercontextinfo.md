@@ -15,11 +15,11 @@ Resets a converter object to its initial state so youcan reuse it.
 OSStatus TECClearConverterContextInfo(TECObjectRef encodingConverter);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 It is more efficient to reuse an existing converter objectthan to create a new one that contains the same conversion information.This function clears the text string, but does not alter the sourceand destination encodings. 
 

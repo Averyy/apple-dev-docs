@@ -26,11 +26,11 @@ func track(withTrackID trackID: CMPersistentTrackID) -> AVAssetTrack?
 - (AVAssetTrack *) trackWithTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Return Value
+## Return Value
 
 An asset track, or `nil` if there is no track with the identifier.
 
-#### Discussion
+## Discussion
 
 You can call this method without blocking the current thread when the data in the [`tracks`](./tracks.md) property is already loaded.
 

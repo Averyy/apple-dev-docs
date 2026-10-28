@@ -20,7 +20,7 @@ final var localParticipantStates: SystemCoordinator.ParticipantStates { get }
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 - [Configure your visionOS app for sharing with people nearby](../configure-your-app-for-sharing-with-people-nearby.md)
 
-#### Discussion
+## Discussion
 
 Use this property to detect when the current person starts or stops displaying their spatial Persona. The following example shows how to set up a task to monitor the sequence and respond to changes:
 

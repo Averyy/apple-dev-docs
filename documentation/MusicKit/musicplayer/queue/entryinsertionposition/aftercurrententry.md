@@ -20,7 +20,7 @@ A position that allows prepending entries in the playback queue, similar to the 
 case afterCurrentEntry
 ```
 
-#### Discussion
+## Discussion
 
 Inserting entries after the current one merely enqueues them to play next, and lets the current entry finish playing to the end.
 

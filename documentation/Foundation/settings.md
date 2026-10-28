@@ -5,7 +5,7 @@
 
 Configure your app using data you store persistently on the local disk or in iCloud.
 
-#### Overview
+## Overview
 
 Settings are small pieces of data that you use to configure your app’s interface and behavior. Instead of recompiling your code every time you want to make a change, your code uses settings to alter your app’s configuration dynamically. Typically, you use this kind of data to reflect the personal preferences of the person using your app. For example, a drawing app might store whether someone prefers inches or centimeters for distance measurements. However, you can also use settings to manage internal behaviors, such as the amount of data your app logs during testing.
 

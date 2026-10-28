@@ -19,7 +19,7 @@ case changeReadOtherContents
 NSChangeReadOtherContents
 ```
 
-#### Discussion
+## Discussion
 
 For example, [`init(for:withContentsOf:ofType:)`](../init%28for,withcontentsof,oftype%29.md) passes this value when the two passed-in URLs are not equal to indicate that an autosaved document is being reopened.
 

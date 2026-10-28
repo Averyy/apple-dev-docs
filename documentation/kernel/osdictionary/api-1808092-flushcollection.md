@@ -11,7 +11,7 @@ Removes and releases all keys and objects within the dictionary.
 virtual void flushCollection();
 ```
 
-#### Overview
+## Overview
 
 The dictionary's capacity (and therefore direct memory consumption) is not reduced by this function.
 

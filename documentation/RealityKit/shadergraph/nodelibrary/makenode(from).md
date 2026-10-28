@@ -18,11 +18,11 @@ Creates a node instance of the given definition.
 final func makeNode(from definition: ShaderGraph.NodeDefinition) throws -> ShaderGraph.Node
 ```
 
-#### Return Value
+## Return Value
 
 A [`ShaderGraph.Node`](../node.md) that can be added to a [`ShaderGraph`](../../shadergraph.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the definition does not belong to this library.
 

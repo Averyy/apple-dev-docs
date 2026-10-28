@@ -24,7 +24,7 @@ var lumens: Float { get set }
 @property (nonatomic, readwrite) float lumens;
 ```
 
-#### Discussion
+## Discussion
 
 The default intensity is 1000 lumens.
 

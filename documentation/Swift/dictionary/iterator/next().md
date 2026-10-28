@@ -23,7 +23,7 @@ mutating func next() -> (key: Key, value: Value)?
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

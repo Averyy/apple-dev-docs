@@ -19,7 +19,7 @@ var canAddChild: Bool { get }
 @property (readonly) BOOL canAddChild;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if a child object can be added to the tree controller’s content. This property is observable using key-value observing.
 

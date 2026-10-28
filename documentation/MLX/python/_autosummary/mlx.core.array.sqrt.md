@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.sqrt
 
-**array.sqrt(*self*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: See [sqrt()](mlx.core.sqrt.md#mlx.core.sqrt).
+```python
+array.sqrt(self, *, stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None) → array
+```
+
+See [sqrt()](mlx.core.sqrt.md#mlx.core.sqrt).

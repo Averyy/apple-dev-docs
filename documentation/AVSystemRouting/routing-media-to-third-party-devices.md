@@ -5,11 +5,11 @@
 
 Respond to routing events and control playback on a TV, speaker, or other media device.
 
-#### Overview
+## Overview
 
 When people select a media device, your app receives a routing event. You respond by creating a session that delivers media to that device. This article describes the full workflow, from registering an observer to controlling remote playback.
 
-#### Register an observer
+## Register an observer
 
 People can switch media routes at any time by selecting a device. To respond, register an observer with the shared [`AVSystemRouteController`](./avsystemroutecontroller-18ns8.md).
 
@@ -37,7 +37,7 @@ let observer = RouteObserver()
 _ = AVSystemRouteController.shared.addObserver(observer)
 ```
 
-#### Start a URL-based playback session
+## Start a URL-based playback session
 
 When you receive an [`AVSystemRouteEvent`](./avsystemrouteevent-2elr5.md) with an [`AVSystemRouteEvent.Reason.activate`](./avsystemrouteevent-2elr5/reason-swift.enum/activate.md) reason, create an [`AVSystemRouteSession`](./avsystemroutesession-gp78.md) and start it on the route. Use [`AVSystemRoute.LaunchMode.player`](./avsystemroute-5s2um/launchmode/player.md) to launch the system media player on the remote device:
 
@@ -63,7 +63,7 @@ func startPlayback(on route: AVSystemRoute) async -> Bool {
 
 The [`start()`](./avsystemroutesession-gp78/start%28%29.md) method returns an [`AVSystemRouteMediaSession`](./avsystemroutemediasession-98ioq.md) that your app uses to control playback and communicate with the remote device.
 
-#### Control and observe remote playback
+## Control and observe remote playback
 
 Use the [`playbackControl`](./avsystemroutemediasession-98ioq/playbackcontrol.md) property to drive playback on the remote device and observe its state. The control conforms to `AVInterfaceControllable` and is available for both [`AVSystemRoute.LaunchMode.player`](./avsystemroute-5s2um/launchmode/player.md) and [`AVSystemRoute.LaunchMode.application`](./avsystemroute-5s2um/launchmode/application.md) sessions.
 
@@ -89,7 +89,7 @@ The `playbackControl` property supports [Observation](../Observation/Observation
 
 Report your playback metadata to `MPNowPlayingInfoCenter` so the system displays accurate now-playing information across the person’s devices.
 
-#### Start an application session
+## Start an application session
 
 Some streaming devices run dedicated apps on the remote device. Rather than playing a URL through the system media player, launch your companion app on the device and communicate with it directly. To enable bidirectional communication with the companion app through a data channel, use [`AVSystemRoute.LaunchMode.application`](./avsystemroute-5s2um/launchmode/application.md) when creating the session:
 

@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether Secure Boot is in an enabled stat
 - (BOOL) getSecureBootEnabled:(BOOL *) enabled error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the operation succeeded, `NO` if an error occurred.
 

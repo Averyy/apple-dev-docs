@@ -25,7 +25,7 @@ let kCGImagePropertyHEICSLoopCount: CFString
 extern CFStringRef const kCGImagePropertyHEICSLoopCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

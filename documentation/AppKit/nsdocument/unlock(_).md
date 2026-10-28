@@ -20,7 +20,7 @@ func unlock(_ sender: Any?)
 - (void) unlockDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This is the action of the Unlock menu item in a document-based app. This action method invokes the [`unlock(completionHandler:)`](./unlock%28completionhandler%29-8p8zd.md) method by default.
 

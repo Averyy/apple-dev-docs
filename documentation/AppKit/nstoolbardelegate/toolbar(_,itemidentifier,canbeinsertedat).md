@@ -23,11 +23,11 @@ optional func toolbar(_ toolbar: NSToolbar, itemIdentifier: NSToolbarItem.Identi
 - (BOOL) toolbar:(NSToolbar *) toolbar itemIdentifier:(NSToolbarItemIdentifier) itemIdentifier canBeInsertedAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the toolbar to place the item at the specified location, or [`false`](../../Swift/false.md) to prevent the toolbar from placing the item in that location.
 
-#### Discussion
+## Discussion
 
 Implement this method to control the placement of items in the toolbar. During a drag operation, the toolbar calls this method to determine if the specified index is an acceptable location for the item. Return a Boolean value that indicates whether the new posiition is acceptable.
 

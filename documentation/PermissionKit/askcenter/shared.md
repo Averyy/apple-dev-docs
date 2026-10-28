@@ -19,7 +19,7 @@ The shared instance you use to send permission requests and receive responses.
 static let shared: AskCenter
 ```
 
-#### Overview
+## Overview
 
 Use this singleton instance to access all [`AskCenter`](../askcenter.md) functionality. The system maintains this shared instance across your app’s lifecycle and ensures consistent handling of permission requests and responses.
 

@@ -24,7 +24,7 @@ var playerProperties: [GKPlayer : [String : Any]]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<GKPlayer *,NSDictionary<NSString *,id> *> * playerProperties;
 ```
 
-#### Discussion
+## Discussion
 
 This property is similar to the [`GKMatchRequest`](../gkmatchrequest.md).[`recipientProperties`](../gkmatchrequest/recipientproperties.md) property but with some additions that Game Center may add. For example, if you add team rules to your rule set, use the `gc` and `team` keys to get the name of the player’s team, similar to [`properties`](./properties.md).
 

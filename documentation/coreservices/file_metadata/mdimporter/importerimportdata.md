@@ -17,7 +17,7 @@ CFStringRef pathToFile
 )
 ```
 
-#### Return Value
+## Return Value
 
 Your callback functionshould return `true` if the metadatawas successfully returned, `false` ifthe metadata was not returned.
 

@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Performs the multiply operation *y += alpha * Ax* on a vector of double-precision, floating-point values.
+Performs the multiply operation *y += alpha \* Ax* on a vector of double-precision, floating-point values.
 
 **Availability**:
 - iOS 11.0+
@@ -25,7 +25,7 @@ func SparseMultiplyAdd(_ alpha: Double, _ A: SparseMatrix_Double, _ x: DenseVect
 static void SparseMultiplyAdd(double alpha, SparseMatrix_Double A, DenseVector_Double x, DenseVector_Double y);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to multiply a scalar by a sparse matrix, then by a dense vector, and accumulate the result. The following equation is an example of a matrix-vector multiplication where the matrix is sparse:
 
@@ -123,7 +123,7 @@ SparseCleanup(A);
 
 ## Parameters
 
-- `alpha`: The scalar value *alpha* in *y* *+= alpha * Ax*.
+- `alpha`: The scalar value *alpha* in *y* *+= alpha \* Ax*.
 - `A`: The sparse matrix *A* in *y* *+= Ax*.
 - `x`: The dense vector *x* in *y* *+= Ax*.
 - `y`: The dense vector *y* in *y* *+= Ax*.
@@ -136,7 +136,7 @@ SparseCleanup(A);
 - [func SparseMultiplyAdd(SparseMatrix_Float, DenseVector_Float, DenseVector_Float)](./sparsemultiplyadd%28_,_,_%29-ineu.md)
   Performs the multiply operation *y += Ax* on a vector of double-precision, floating-point values.
 - [func SparseMultiplyAdd(Float, SparseMatrix_Float, DenseVector_Float, DenseVector_Float)](./sparsemultiplyadd%28_,_,_,_%29-8n6xy.md)
-  Performs the multiply operation *y += alpha * Ax* on a vector of single-precision, floating-point values.
+  Performs the multiply operation *y += alpha \* Ax* on a vector of single-precision, floating-point values.
 
 
 ---

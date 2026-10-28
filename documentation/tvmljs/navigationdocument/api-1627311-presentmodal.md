@@ -17,7 +17,7 @@ void presentModal(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The passed document is presented on top of the current document. The current document is blurred and is used as the background for the modal document.
 

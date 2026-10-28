@@ -24,11 +24,11 @@ func dequeueReusableAnnotationView(withIdentifier identifier: String, for annota
 - (MKAnnotationView *) dequeueReusableAnnotationViewWithIdentifier:(NSString *) identifier forAnnotation:(id<MKAnnotation>) annotation;
 ```
 
-#### Return Value
+## Return Value
 
 An annotation view with the specified identifier.
 
-#### Discussion
+## Discussion
 
 For performance reasons, be sure to reuse [`MKAnnotationView`](../mkannotationview.md) objects in your map views. As annotation views move offscreen, the map view moves them to an internally managed reuse queue. As new annotations move onscreen, and the map view prompts your code to provide a corresponding annotation view, use this method to dequeue an existing view. Dequeueing saves time and memory during performance-critical operations, such as scrolling.
 

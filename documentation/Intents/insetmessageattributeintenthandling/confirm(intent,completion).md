@@ -26,7 +26,7 @@ optional func confirm(intent: INSetMessageAttributeIntent) async -> INSetMessage
 - (void) confirmSetMessageAttribute:(INSetMessageAttributeIntent *) intent completion:(void (^)(INSetMessageAttributeIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your messaging service is available and that modifying the specified messages is possible. At some point in your implementation, execute the provided completion block with an appropriate response object.
 

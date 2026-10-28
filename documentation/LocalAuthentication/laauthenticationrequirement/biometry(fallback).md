@@ -23,7 +23,7 @@ class func biometry(fallback: LABiometryFallbackRequirement) -> Self
 + (instancetype) biometryRequirementWithFallback:(LABiometryFallbackRequirement *) fallback;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a requirement that requires biometric authentication or a fallback requirement that you specify.
 

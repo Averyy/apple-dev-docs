@@ -23,7 +23,7 @@ optional func cancelAuthorization(with request: ASAuthorizationProviderExtension
 - (void) cancelAuthorizationWithRequest:(ASAuthorizationProviderExtensionAuthorizationRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method on the main thread.
 

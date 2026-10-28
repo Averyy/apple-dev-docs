@@ -20,11 +20,11 @@ func contentRulesJSON() -> Data
 - (NSData *) contentRulesJSON;
 ```
 
-#### Return Value
+## Return Value
 
 A data object that contains valid JSON content.
 
-#### Discussion
+## Discussion
 
 MailKit relies on WebKit to block content. Therefore, the JSON structure is the same that a content blocker extension for Safari uses. For details about the structure of the JSON to specify the content-blocking rules, see [Introduction to WebKit Content Blockers](https://webkit.org/blog/3476/content-blockers-first-look/).
 

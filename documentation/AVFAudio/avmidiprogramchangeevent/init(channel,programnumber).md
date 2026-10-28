@@ -24,7 +24,7 @@ init(channel: UInt32, programNumber: UInt32)
 - (instancetype) initWithChannel:(UInt32) channel programNumber:(UInt32) programNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The instrument this chooses depends on [`AVMIDIControlChangeEvent.MessageType.bankSelect`](../avmidicontrolchangeevent/messagetype-swift.enum/bankselect.md) events sent prior to this event.
 

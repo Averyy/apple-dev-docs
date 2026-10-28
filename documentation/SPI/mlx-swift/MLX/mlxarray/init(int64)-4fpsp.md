@@ -17,7 +17,7 @@ Initializer allowing creation of a multi dimensional `MLXArray` from a nested ar
 convenience init<N>(int64 value: [[N]]) where N : NestedArrayElement, N.Scalar == Int
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let a = MLXArray(int64: [[1, 2, 3], [4, 5, 6]])
@@ -25,7 +25,7 @@ let a = MLXArray(int64: [[1, 2, 3], [4, 5, 6]])
 
 Note [`init(_:)`](./init%28_%29-1ocp6.md) (producing an `int32` result) is preferred.
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`init(_:)`](./init%28_%29-1ocp6.md)

@@ -21,7 +21,7 @@ Creates a new array containing the specified number of a single, repeated value.
 init(repeating repeatedValue: Element, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(`count`)
 

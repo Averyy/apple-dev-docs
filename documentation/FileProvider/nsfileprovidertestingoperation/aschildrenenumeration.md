@@ -18,7 +18,7 @@ Returns the operation if it enumerates contained items.
 - (id<NSFileProviderTestingChildrenEnumeration>) asChildrenEnumeration;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingChildrenEnumeration`](../nsfileprovidertestingchildrenenumeration.md) protocol, this method returns `nil`.
 

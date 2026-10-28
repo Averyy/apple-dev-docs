@@ -24,7 +24,7 @@ class MPSMatrix
 @interface MPSMatrix : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`MPSMatrix`](./mpsmatrix.md) objects serve as inputs and outputs of [`MPSMatrixMultiplication`](./mpsmatrixmultiplication.md) objects. Matrix data is assumed to be stored in row-major order.
 

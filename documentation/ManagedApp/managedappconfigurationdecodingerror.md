@@ -22,7 +22,7 @@ protocol ManagedAppConfigurationDecodingError : Decodable, Encodable, Error
 
 - [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md)
 
-#### Overview
+## Overview
 
 For more information, see [`configurations(_:)`](./managedappconfigurationprovider/configurations%28_%29.md).
 

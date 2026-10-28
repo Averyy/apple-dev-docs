@@ -23,11 +23,11 @@ static func byteCount(style: Measurement<UnitInformationStorage>.FormatStyle.Byt
 
 Available when `Self` is `Measurement<UnitInformationStorage>.FormatStyle.ByteCount`.
 
-#### Return Value
+## Return Value
 
 A format style for formatting a measurement of data storage, customized with the provided behaviors.
 
-#### Discussion
+## Discussion
 
 Use this type method when the call point allows the use of [`Measurement.FormatStyle.ByteCount`](../measurement/formatstyle/bytecount.md). You typically do this when calling the [`formatted()`](../measurement/formatted%28%29.md) on a [`Measurement`](../measurement.md) whose unit type is [`UnitInformationStorage`](../unitinformationstorage.md), as seen in the following example.
 

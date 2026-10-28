@@ -22,7 +22,7 @@ func GLKMatrix3SetRow(_ matrix: GLKMatrix3, _ row: Int32, _ vector: GLKVector3) 
 static GLKMatrix3 GLKMatrix3SetRow(GLKMatrix3 matrix, int row, GLKVector3 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

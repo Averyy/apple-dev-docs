@@ -23,11 +23,11 @@ func dequeueReusableCell(withIdentifier identifier: String) -> UITableViewCell?
 - (UITableViewCell *) dequeueReusableCellWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UITableViewCell`](../uitableviewcell.md) object with the associated `identifier`, or `nil` if no such object exists in the reusable-cell queue.
 
-#### Discussion
+## Discussion
 
 For performance reasons, a table view’s data source should generally reuse [`UITableViewCell`](../uitableviewcell.md) objects when it assigns cells to rows in its [`tableView(_:cellForRowAt:)`](../uitableviewdatasource/tableview%28_,cellforrowat%29.md) method. A table view maintains a queue or list of [`UITableViewCell`](../uitableviewcell.md) objects that the data source has marked for reuse. Call this method from your data source object when asked to provide a new cell for the table view. This method dequeues an existing cell if one is available or creates a new one using the class or nib file you previously registered. If no cell is available for reuse and you didn’t register a class or nib file, this method returns `nil`.
 

@@ -28,7 +28,7 @@ HKCategoryValueMenopausalStatePerimenopause
 
 - [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
 
-#### Discussion
+## Discussion
 
 Perimenopause is the transitional period before menopause, when hormonal changes begin. This value records a point-in-time entry that perimenopause applies at the specified date.
 

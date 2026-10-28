@@ -25,7 +25,7 @@ func cancelCurrentEvent(withResumptionOffset resumptionOffset: CMTime)
 - (void) cancelCurrentEventWithResumptionOffset:(CMTime) resumptionOffset;
 ```
 
-#### Discussion
+## Discussion
 
 When you cancel interstitial events using this method, the resumption offset value that you specify overrides the events’s [`resumptionOffset`](../avplayerinterstitialevent/resumptionoffset.md) value.
 

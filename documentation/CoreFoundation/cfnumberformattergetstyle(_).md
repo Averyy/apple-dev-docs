@@ -25,7 +25,7 @@ func CFNumberFormatterGetStyle(_ formatter: CFNumberFormatter!) -> CFNumberForma
 extern CFNumberFormatterStyle CFNumberFormatterGetStyle(CFNumberFormatterRef formatter);
 ```
 
-#### Return Value
+## Return Value
 
 The number style used to create `formatter`.
 

@@ -24,7 +24,7 @@ func MKRoadWidthAtZoomScale(_ zoomScale: MKZoomScale) -> CGFloat
 extern CGFloat MKRoadWidthAtZoomScale(MKZoomScale zoomScale);
 ```
 
-#### Return Value
+## Return Value
 
 The width of roads, measured in screen points. You can use the returned value to set the width of lines in drawing code that traces the path of a road.
 

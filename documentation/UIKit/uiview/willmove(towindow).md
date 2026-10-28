@@ -23,7 +23,7 @@ func willMove(toWindow newWindow: UIWindow?)
 - (void) willMoveToWindow:(UIWindow *) newWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it to perform additional actions whenever the window changes.
 

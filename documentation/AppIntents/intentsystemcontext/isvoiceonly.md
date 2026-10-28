@@ -21,7 +21,7 @@ A Boolean value that indicates whether the system performs the app intent in a v
 var isVoiceOnly: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If [`isVoiceOnly`](./isvoiceonly.md) is `true`, adjust the intent’s result to include a more speakable summary, and make sure a person can understand responses and dialog without visuals such as tables, graphics, or other user-interface elements.
 

@@ -21,7 +21,7 @@ Releases a Core Video image format.
 void vImageCVImageFormat_Release(vImageCVImageFormatRef fmt);
 ```
 
-#### Discussion
+## Discussion
 
 This function decrements the Core Video image format’s reference count. When the reference count reaches `0`, the system calls the `userDataReleaseCallback` (see [`vImageCVImageFormat_SetUserData(_:_:_:)`](./vimagecvimageformat_setuserdata%28_,_,_%29.md)), and then destroys the object. The `userDataReleaseCallback` can access the [`vImageCVImageFormat`](./vimagecvimageformat.md) object, but can’t prevent its destruction.
 

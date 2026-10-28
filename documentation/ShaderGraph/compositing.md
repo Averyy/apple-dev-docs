@@ -6,7 +6,7 @@
 
 Generate a single output from the combination of multiple data values.
 
-#### Overview
+## Overview
 
 The compositing process takes multiple input values and combines them in varying proportions to create a single output. You can use Compositing nodes to combine textures and achieve a specific appearance. For example, you might show a background texture only in places where the foreground texture is transparent. Compositing nodes support the combination of colors, but also other data types, such as vectors and floating-point numbers.
 

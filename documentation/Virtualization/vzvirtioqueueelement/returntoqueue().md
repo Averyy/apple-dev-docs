@@ -19,7 +19,7 @@ func returnToQueue()
 - (void) returnToQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you are done processing this element and return it to the guest.
 

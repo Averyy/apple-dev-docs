@@ -20,7 +20,7 @@ case authenticationTypeItemAttr
 kSecAuthenticationTypeItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a value of type `SecAuthenticationType` that represents the Internet authentication scheme. For possible authentication values, see [`SecAuthenticationType`](../secauthenticationtype.md). This is unique to Internet password attributes.
 

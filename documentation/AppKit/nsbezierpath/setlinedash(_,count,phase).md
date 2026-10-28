@@ -19,7 +19,7 @@ func setLineDash(_ pattern: UnsafePointer<CGFloat>?, count: Int, phase: CGFloat)
 - (void) setLineDash:(const CGFloat *) pattern count:(NSInteger) count phase:(CGFloat) phase;
 ```
 
-#### Discussion
+## Discussion
 
 For example, to produce a supermarket coupon type of dashed line:
 

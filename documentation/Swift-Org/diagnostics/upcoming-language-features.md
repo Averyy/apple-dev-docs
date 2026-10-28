@@ -9,7 +9,7 @@ framework: "Swift-Org/diagnostics"
 
 Upcoming language features enable new (but potentially source breaking) functionality that be enabled by default in an upcoming language mode.
 
-#### Overview
+## Overview
 
 Upcoming language features allow the incremental adoption of language features that would otherwise only be available in a new language mode, without having to fully migrate to that mode. They can be enabled on the command line with `-enable-upcoming-feature <feature>`.
 

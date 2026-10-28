@@ -21,7 +21,7 @@ The default error handler for BLAS routines.
 void cblas_xerbla(__LAPACK_int p, char *rout, char *form, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Add any additional parameters required for the format string.
 

@@ -24,7 +24,7 @@ case probe
 MDLLightTypeProbe
 ```
 
-#### Discussion
+## Discussion
 
 This light type is exclusive to the [`MDLLightProbe`](../mdllightprobe.md) class.
 

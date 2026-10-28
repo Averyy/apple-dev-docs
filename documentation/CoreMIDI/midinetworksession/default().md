@@ -23,7 +23,7 @@ class func `default`() -> MIDINetworkSession
 + (MIDINetworkSession *) defaultSession;
 ```
 
-#### Return Value
+## Return Value
 
 The default session.
 

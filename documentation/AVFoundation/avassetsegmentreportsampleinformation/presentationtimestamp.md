@@ -24,7 +24,7 @@ var presentationTimeStamp: CMTime { get }
 @property (nonatomic, readonly) CMTime presentationTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 This timestamp may be different from the [`earliestPresentationTimeStamp`](../avassetsegmenttrackreport/earliestpresentationtimestamp.md) if the video’s author encodes it using frame reordering.
 

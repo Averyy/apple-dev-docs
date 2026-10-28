@@ -21,11 +21,11 @@ Creates a new proposal that replaces unspecified dimensions in this proposal wit
 func replacingUnspecifiedDimensions(by size: CGSize = CGSize(width: 10, height: 10)) -> CGSize
 ```
 
-#### Return Value
+## Return Value
 
 A new, fully specified size proposal.
 
-#### Discussion
+## Discussion
 
 Use the default value to prevent a flexible view from disappearing into a zero-sized frame, and ensure the unspecified value remains visible during debugging.
 

@@ -21,7 +21,7 @@ Performs an in-place sort of the indices into a double-precision vector.
 extern void vDSP_vsortiD(const double *__C, vDSP_Length *__I, vDSP_Length *__Temporary, vDSP_Length __N, int __Order);
 ```
 
-#### Discussion
+## Discussion
 
 The following code sorts the indices into an array in ascending order, followed by decending order:
 

@@ -19,7 +19,7 @@ case recordingFailed
 WatchKitRecordingFailedError
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it’s unable to record audio using the audio recording interface.
 

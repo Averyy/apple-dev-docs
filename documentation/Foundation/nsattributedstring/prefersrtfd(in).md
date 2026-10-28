@@ -25,11 +25,11 @@ func prefersRTFD(in range: NSRange) -> Bool
 - (BOOL) prefersRTFDInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the range of text prefers RTFD formatting, or [`false`](../../Swift/false.md) if you can use the RTF format instead.
 
-#### Discussion
+## Discussion
 
 When an attributed string contains attachments, you must save it using the RTFD file format to preserve the attached files.
 

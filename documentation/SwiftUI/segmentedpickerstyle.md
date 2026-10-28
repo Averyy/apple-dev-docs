@@ -20,7 +20,7 @@ A picker style that presents the options in a segmented control.
 struct SegmentedPickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`segmented`](./pickerstyle/segmented.md) to construct this style.
 

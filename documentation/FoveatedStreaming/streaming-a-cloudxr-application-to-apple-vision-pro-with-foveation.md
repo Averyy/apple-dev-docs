@@ -5,7 +5,7 @@
 
 Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
 
-#### Overview
+## Overview
 
 If you have an existing virtual reality game, experience, or application built for desktop computers or a cloud server, you can stream it to Apple Vision Pro with the Foveated Streaming framework.
 
@@ -17,13 +17,13 @@ To enable streaming, integrate the following three components:
 - **Session management connection protocol:** When streaming from a local device, implement a protocol to handle device discovery, authentication, and session state management between your streaming application and Apple Vision Pro.
 - **Apple Vision Pro client app:** Build a visionOS app that connects to your streaming application, displays the streamed content in an immersive space, and enables people to interact with both the streamed content and `RealityKit` elements.
 
-#### Add the CloudXR runtime to your application
+## Add the CloudXR runtime to your application
 
 Download the [CloudXR SDK](https://catalog.ngc.nvidia.com/orgs/nvidia/collections/cloudxr-sdk), then follow the steps in the [NVIDIA CloudXR SDK](https://docs.nvidia.com/cloudxr-sdk) documentation to integrate it into your app.
 
 For an example implementation, see the [StreamingSession-OpenXRSample](https://github.com/apple/StreamingSession/tree/main/StreamingSession-OpenXRSample/).
 
-#### Implement the session management connection protocol
+## Implement the session management connection protocol
 
 Make your streaming application discoverable to Apple Vision Pro by broadcasting a Bonjour service with the following name:
 
@@ -49,7 +49,7 @@ After discovering the streaming endpoint, Apple Vision Pro sends and expects rep
 
 For more information on the format and content of these messages, see [Establishing foveated streaming sessions with Apple Vision Pro](./establishing-foveated-streaming-sessions-with-apple-vision-pro.md). For an example implementation, see the [StreamingSession-WindowsApp](https://github.com/apple/StreamingSession/tree/main/StreamingSession-WindowsApp/).
 
-#### Create a visionOS app
+## Create a visionOS app
 
 Display streamed content by building a visionOS app with the Foveated Streaming framework that does the following:
 

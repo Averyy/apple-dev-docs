@@ -22,11 +22,11 @@ convenience init(forAccepting aClass: any NSItemProviderReading.Type)
 - (instancetype) initWithTypeIdentifiersForAcceptingClass:(Class<NSItemProviderReading> *) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 A paste configuration initialized with acceptable uniform type identifiers (UTIs) supported by the specified class.
 
-#### Discussion
+## Discussion
 
 When you use this initializer, the property [`readableTypeIdentifiersForItemProvider`](../../Foundation/nsitemproviderreading/readabletypeidentifiersforitemprovider.md), implemented on `aClass`, is used to determine the acceptable UTIs.
 

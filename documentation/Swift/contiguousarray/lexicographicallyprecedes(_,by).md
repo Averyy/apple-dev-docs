@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the sequence precedes another sequenc
 func lexicographicallyPrecedes<OtherSequence>(_ other: OtherSequence, by areInIncreasingOrder: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool where OtherSequence : Sequence, Self.Element == OtherSequence.Element
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this sequence precedes `other` in a dictionary ordering as ordered by `areInIncreasingOrder`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The predicate must be a *strict weak ordering* over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
 

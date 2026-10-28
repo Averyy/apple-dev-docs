@@ -15,7 +15,7 @@ An error that indicates the consumption percentage must be zero for the provided
 object UndeliveredConsumptionPercentageNonZeroError
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`consumptionPercentage`](./consumptionpercentage.md).
 

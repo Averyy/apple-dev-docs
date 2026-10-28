@@ -25,7 +25,7 @@ func CFTimeZoneResetSystem()
 extern void CFTimeZoneResetSystem();
 ```
 
-#### Discussion
+## Discussion
 
 If the default time zone is set to the same value as the system time zone or has not been explicitly set, this function clears it as well.
 

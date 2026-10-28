@@ -20,7 +20,7 @@ func continueAsynchronousWorkOnMainThread(_ block: @escaping () -> Void)
 - (void) continueAsynchronousWorkOnMainThreadUsingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 If the main thread is blocked by an invocation of [`performActivity(withSynchronousWaiting:using:)`](./performactivity%28withsynchronouswaiting,using%29.md) or [`performSynchronousFileAccess(_:)`](./performsynchronousfileaccess%28_%29.md), this method interrupts that blocking activity, performs the specified `block`, and then resumes the blocking activity after `block` returns. Invocations of this method always return before the passed-in block is invoked.
 

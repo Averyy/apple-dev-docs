@@ -25,7 +25,7 @@ func MIDIPacketListInit(_ pktlist: UnsafeMutablePointer<MIDIPacketList>) -> Unsa
 extern MIDIPacket *MIDIPacketListInit(MIDIPacketList *pktlist);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the first MIDIPacket in the packet list.
 

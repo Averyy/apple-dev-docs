@@ -25,7 +25,7 @@ var verticalAmount: HKQuantity { get }
 @property (nonatomic, copy, readonly) HKQuantity * verticalAmount;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter holds the vertical component of the prescriptions correction, measured in [`prismDiopter()`](../hkunit/prismdiopter%28%29.md) units.
 

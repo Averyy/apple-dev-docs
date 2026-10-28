@@ -19,11 +19,11 @@ func barRect(flipped: Bool) -> NSRect
 - (NSRect) barRectFlipped:(BOOL) flipped;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the bar is drawn, specified in the coordinate system of the `NSSlider` or `NSMatrix` with which the receiver is associated. The bar doesn’t include the slider’s bezel or knob.
 
-#### Discussion
+## Discussion
 
 You can override this method if custom bar artwork requires specific dimensions.
 

@@ -21,7 +21,7 @@ A notification that a container posts when the status of an iCloud account chang
 extern NSString * const CKAccountChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Create an instance of [`CKContainer`](./ckcontainer.md) to receive this notification. The container posts the notification using an arbitrary queue. Use the [`accountStatus(completionHandler:)`](./ckcontainer/accountstatus%28completionhandler%29.md) method to obtain the account’s status.
 

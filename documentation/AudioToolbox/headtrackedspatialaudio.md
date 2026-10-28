@@ -19,7 +19,7 @@ struct HeadTrackedSpatialAudio
 
 - [Anchoring sound to a window or volume](./spatializing-sound-from-a-uiscene.md)
 
-#### Overview
+## Overview
 
 Sounds with a head-tracked experience come from a distinct location in space as defined by their anchoring strategy.
 

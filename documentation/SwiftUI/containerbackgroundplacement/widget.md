@@ -20,7 +20,7 @@ The container background placement for a widget.
 static let widget: ContainerBackgroundPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Pass the container background placement to the [`containerBackground(_:for:)`](../view/containerbackground%28_,for%29.md) function to configure the background of your widgets.
 

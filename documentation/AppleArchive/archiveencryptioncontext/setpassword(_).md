@@ -21,7 +21,7 @@ Sets the password from the supplied string.
 func setPassword(_ password: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to encrypt or decrypt an archive with the [`scrypt`](./encryptionmode-swift.struct/scrypt.md) encryption mode.
 

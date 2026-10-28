@@ -15,13 +15,13 @@ Common response envelope fields shared by all change history response objects.
 object BaseAuditResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `BaseAuditResponse` defines the common envelope structure for all change history API responses. Both [`AuditSummaryResponse`](./auditsummaryresponse.md) and [`ChangeDetailsResponse`](./changedetailsresponse.md) extend this base with a `result` array containing the endpoint-specific payload.
 
 Check `error` before processing `result`. When `error` is non-null, `result` may be empty or absent.
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ var lengthInBeats: AVMusicTimeStamp { get set }
 @property (nonatomic) AVMusicTimeStamp lengthInBeats;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the beat of the last event in the track, plus any additional time that’s necessary to fade out the ending notes, or to round a loop point to a musical bar.
 

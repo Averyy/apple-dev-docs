@@ -24,7 +24,7 @@ var standardDeviation: Float { get set }
 @property (nonatomic, readwrite) float standardDeviation;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used for Normal and Truncated Normal disributions. For Truncated Normal distribution this defines the standard deviation parameter of the underlying Normal distribution, that is the width of the Gaussian, not the true standard deviation of the truncated distribution which typically differs from the standard deviation of the original Normal distribution. Defaults to 0 for uniform distributions and 1 for normal distributions.
 

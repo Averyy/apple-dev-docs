@@ -15,11 +15,11 @@ Perform I/O on a device to/from target memory described by a uio.
 int physio(void (*f_strategy)(buf_t), buf_t bp, dev_t dev, int flags, u_int (*f_minphys)(buf_t), struct uio *uio, int blocksize);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success; EFAULT for an invalid uio; errors from buf_biowait().
 
-#### Discussion
+## Discussion
 
 physio() allows I/O directly from a device to user-space memory. It waits for all I/O to complete before returning.
 

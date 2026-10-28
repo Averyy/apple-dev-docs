@@ -24,7 +24,7 @@ func add(_ rules: [GKRule])
 - (void) addRulesFromArray:(NSArray<GKRule *> *) rules;
 ```
 
-#### Discussion
+## Discussion
 
 Adding rules to the system also adds them to the [`agenda`](./agenda.md) list, in decreasing order of the rules’ [`salience`](../gkrule/salience.md) values. Rules with the same salience are added to the agenda in the order of the specified array.
 

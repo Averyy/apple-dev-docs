@@ -24,7 +24,7 @@ var characteristic: HMCharacteristic { get set }
 @property (nonatomic, strong, readwrite) HMCharacteristic * characteristic;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to change the event’s characteristic.
 

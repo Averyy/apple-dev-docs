@@ -21,7 +21,7 @@ Produces an optional widget for conditional statements in multi-statement closur
 static func buildOptional(_ widget: (any Widget & _LimitedAvailabilityWidgetMarker)?) -> some Widget
 ```
 
-#### Discussion
+## Discussion
 
 Conditional statements in a [`WidgetBundleBuilder`](../widgetbundlebuilder.md) can contain an `if` statement but not an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
 

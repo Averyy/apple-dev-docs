@@ -15,7 +15,7 @@ Rich Text Format (RTF) data.
 extern NSPasteboardType NSRTFPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`rtf`](./nspasteboard/pasteboardtype/rtf.md) instead.
 

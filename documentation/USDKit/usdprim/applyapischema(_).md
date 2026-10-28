@@ -20,7 +20,7 @@ Applies a single-apply API schema to this prim.
 func applyAPISchema(_ schemaIdentifier: USDToken) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the schema cannot be applied.
 

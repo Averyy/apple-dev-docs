@@ -20,11 +20,11 @@ WebKitCSSMatrix translate(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix that is the result of translating this matrix.
 
-#### Discussion
+## Discussion
 
 This matrix is not modified by this method.
 

@@ -22,7 +22,7 @@ func GLKVector4Negate(_ vector: GLKVector4) -> GLKVector4
 static GLKVector4 GLKVector4Negate(GLKVector4 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

@@ -21,7 +21,7 @@ A frame of reference within the layout system.
 protocol CoordinateSpaceProtocol
 ```
 
-#### Overview
+## Overview
 
 All geometric properties of a view, including size, position, and transform, are defined within the local coordinate space of the view’s parent. These values can be converted into other coordinate spaces by passing types conforming to this protocol into functions such as `GeometryProxy.frame(in:)`.
 

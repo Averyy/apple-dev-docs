@@ -22,7 +22,7 @@ nonisolated
 init(_ phases: some Sequence<Phase>, @ContentBuilder content: @escaping (Phase) -> Content, animation: @escaping (Phase) -> Animation? = { _ in .default })
 ```
 
-#### Discussion
+## Discussion
 
 When the phase animator first appears, this initializer renders the `content` closure using the first phase as input to the closure. The animator then begins immediately animating to the view produced by sending the second phase to the `content` closure using the animation returned from the `animation` closure. This procedure repeats for successive phases until reaching the last phase, after which the animator loops back to the first phase again.
 

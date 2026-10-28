@@ -21,7 +21,7 @@ A type that uniquely identifies a specific instance of an app entity.
 struct EntityIdentifier
 ```
 
-#### Overview
+## Overview
 
 The value used should be unique across all entities of the given type. Entities which are relevant across executions of the application should have stable identifiers that persist across executions.
 
@@ -35,7 +35,7 @@ struct Song: AppEntity {
 }
 ```
 
-#### Cross-Device Stable Identifiers
+## Cross-Device Stable Identifiers
 
 For entities that adopt [`SyncableEntity`](./syncableentity.md), the framework automatically extracts stable identifiers for cross-device session syncing:
 

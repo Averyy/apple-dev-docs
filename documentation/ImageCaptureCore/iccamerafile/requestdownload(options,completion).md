@@ -23,7 +23,7 @@ func requestDownload(options: [ICDownloadOption : Any]? = nil, completion: @esca
 - (NSProgress *) requestDownloadWithOptions:(NSDictionary<NSString *,id> *) options completion:(void (^)(NSString *filename, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The completion block executes on an any available queue; often this is not the main queue.
 

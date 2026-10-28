@@ -17,7 +17,7 @@ Log a message at the ‘critical’ log level.
 func critical(_ message: @autoclosure () -> Logger.Message, metadata: @autoclosure () -> Logger.Metadata? = nil, file: String = #fileID, function: String = #function, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 If [`Logger.Level.critical`](./level/critical.md) is at least as severe as this logger’s [`logLevel`](./loglevel.md) the system logs the message; otherwise nothing will happen.
 

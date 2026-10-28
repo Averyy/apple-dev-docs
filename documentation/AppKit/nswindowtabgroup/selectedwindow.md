@@ -19,7 +19,7 @@ weak var selectedWindow: NSWindow? { get set }
 @property (weak) NSWindow * selectedWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the currently selected window within the tabbed window group. Setting this property visually changes the selected tab.
 

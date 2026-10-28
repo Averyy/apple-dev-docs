@@ -23,7 +23,7 @@ func begin() async -> NSApplication.ModalResponse
 - (void) beginWithCompletionHandler:(void (^)(NSModalResponse result)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Configure all of the relevant properties of the panel before you call this method.
 

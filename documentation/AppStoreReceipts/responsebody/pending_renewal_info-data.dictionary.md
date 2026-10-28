@@ -15,7 +15,7 @@ An array of elements that refers to open or failed auto-renewable subscription r
 object responseBody.Pending_renewal_info
 ```
 
-#### Discussion
+## Discussion
 
 In the JSON file, `pending_renewal_info` is an array in which each element contains the pending renewal information for each auto-renewable subscription identified by the `product_id`. A pending renewal may refer to a renewal that the system scheduled in the future or a renewal that failed in the past for some reason.
 

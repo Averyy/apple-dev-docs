@@ -22,7 +22,7 @@ var isFlashEnabled: Bool { get }
 @property (readonly, getter=isFlashEnabled) BOOL flashEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) property [`flashMode`](../avcapturephotosettings/flashmode.md).
 

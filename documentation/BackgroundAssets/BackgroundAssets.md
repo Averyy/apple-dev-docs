@@ -14,7 +14,7 @@ Improve or eliminate the time people wait while your app downloads assets.
 - tvOS 18.4+
 - visionOS 2.4+
 
-#### Overview
+## Overview
 
 Let the system manage your asset downloads on people’s devices for you according to your preferences, and optionally, host your assets on Apple servers. For example, a game might specify that the system downloads tutorial assets before first launch and other assets on demand — such as level packs, 3D character models, and textures — as a player progresses during gameplay. The default implementation of Managed Background Assets handles downloads, updates, compression, and more for you. If you choose Apple-Hosted Background Assets, you upload your assets to App Store Connect and maintain them there, similar to app builds.
 

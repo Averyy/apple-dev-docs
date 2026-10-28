@@ -14,7 +14,7 @@
 kUnicodeMapLineFeedToReturnMask = 1L << kUnicodeMapLineFeedToReturnBit
 ```
 
-#### Discussion
+## Discussion
 
 Specifies mapping o the LF (LineFeed) character used in Unix to represent new lines to the CR (CarriageReturn) used in  Mac encodings. This option has an effect only when used with the constant `kUnicodeLooseMappingsMask`. You can pass both constants  as  `iControlFlags` parameters to the functions `ConvertFromUnicodeToText`, `ConvertFromUnicodeToTextRun`, and `ConvertFromUnicodeToScriptCodeRun`.
 

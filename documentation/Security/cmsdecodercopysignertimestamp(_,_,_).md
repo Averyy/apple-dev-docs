@@ -19,11 +19,11 @@ func CMSDecoderCopySignerTimestamp(_ cmsDecoder: CMSDecoder, _ signerIndex: Int,
 OSStatus CMSDecoderCopySignerTimestamp(CMSDecoderRef cmsDecoder, size_t signerIndex, CFAbsoluteTime *timestamp);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Typically, this function returns [`errSecParam`](./errsecparam.md) if the CMS message was not signed or if `signerIndex` is out of bounds.
 
-#### Discussion
+## Discussion
 
 This timestamp is an authenticated timestamp provided by a time stamping authority.
 

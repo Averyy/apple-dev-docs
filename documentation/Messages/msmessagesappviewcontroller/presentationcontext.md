@@ -25,7 +25,7 @@ var presentationContext: MSMessagesAppPresentationContext { get }
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 By default, the system only displays iMessage apps in the [`MSMessagesAppPresentationContext.messages`](../msmessagesapppresentationcontext/messages.md) context (the iMessage app only appears inside the Messages app). iMessage apps in the media context have additional limitations and design considerations.
 

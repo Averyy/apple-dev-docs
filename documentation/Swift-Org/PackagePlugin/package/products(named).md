@@ -17,7 +17,7 @@ The list of products matching the given names.
 func products(named productNames: [String]) throws -> [Product]
 ```
 
-#### Discussion
+## Discussion
 
 Throws an error if any of the products cannot be found.
 

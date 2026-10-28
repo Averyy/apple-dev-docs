@@ -23,7 +23,7 @@ var localizedDescription: String? { get set }
 @property (nonatomic, copy, nullable) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Apple reserves this property for future use, and hasn’t defined its value.
 

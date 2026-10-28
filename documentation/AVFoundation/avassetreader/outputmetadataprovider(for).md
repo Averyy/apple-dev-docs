@@ -20,7 +20,7 @@ Attaches the output to the reader and returns an output provider for reading tim
 func outputMetadataProvider(for output: AVAssetReaderTrackOutput) -> sending AVAssetReaderOutput.Provider<AVTimedMetadataGroup>
 ```
 
-#### Return Value
+## Return Value
 
 A reader output provider with an interface for reading timed metadata groups.
 

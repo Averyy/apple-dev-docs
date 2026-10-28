@@ -21,7 +21,7 @@ Creates an code-block intent with the provided information.
 + (NSPresentationIntent *) codeBlockIntentWithIdentity:(NSInteger) identity languageHint:(NSString *) languageHint nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindCodeBlock`](../nspresentationintentkind/nspresentationintentkindcodeblock.md).
 

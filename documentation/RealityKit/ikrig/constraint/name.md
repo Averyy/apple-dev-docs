@@ -20,7 +20,7 @@ The name of the constraint.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Each constraint needs a unique name within a rig.
 

@@ -19,7 +19,7 @@ func appendRect(_ rect: NSRect)
 - (void) appendBezierPathWithRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Before adding the rectangle, this method moves the current point to the origin of the rectangle, which implicitly closes the current subpath (if any). The path is constructed by starting at the origin of `aRect` and adding line segments in a counterclockwise direction. The final segment is added using a [`close()`](./close%28%29.md) message.
 

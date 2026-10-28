@@ -21,7 +21,7 @@ The initial velocity vector of the particle in world space units per second.
 var velocity: SIMD3<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This determines the particle’s initial direction and speed of movement. The magnitude of the vector represents the speed, while the direction represents the movement direction. A zero velocity means the particle starts stationary.
 

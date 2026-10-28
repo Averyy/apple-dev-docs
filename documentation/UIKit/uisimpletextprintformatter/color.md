@@ -22,7 +22,7 @@ var color: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil` (the default), UIKit uses a black color when printing.
 

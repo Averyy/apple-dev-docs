@@ -22,7 +22,7 @@ static var featurePoint: ARHitTestResult.ResultType { get }
 ARHitTestResultTypeFeaturePoint
 ```
 
-#### Discussion
+## Discussion
 
 During a world-tracking AR session, ARKit builds a coarse point cloud representing its rough understanding of the 3D world around the user (see [`rawFeaturePoints`](../../arframe/rawfeaturepoints.md)). Individual feature points represent parts of the camera image likely to be part of a real-world surface, but not necessarily a planar surface.
 

@@ -24,7 +24,7 @@ consuming func filter<E>(_ isIncluded: (Dictionary<Key, Value>.Element) throws(E
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A dictionary of the key-value pairs that `isIncluded` allows.
 

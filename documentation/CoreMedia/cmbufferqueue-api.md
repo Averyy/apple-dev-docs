@@ -5,7 +5,7 @@
 
 A queue of timed buffers.
 
-#### Overview
+## Overview
 
 Buffer queues are Core Foundation objects that implement a queue of timed buffers. The buffers can be of any Core Foundation-based type (`CFTypeRef`), but must have a concept of duration. When you create a buffer queue, you pass a set of callbacks, one of which is a required callback that returns the duration of the Core Foundation-based buffer object. The system invokes these callbacks synchronously on the thread that called the API.
 

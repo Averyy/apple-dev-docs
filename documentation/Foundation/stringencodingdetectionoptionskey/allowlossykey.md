@@ -23,7 +23,7 @@ static let allowLossyKey: StringEncodingDetectionOptionsKey
 extern NSStringEncodingDetectionOptionsKey const NSStringEncodingDetectionAllowLossyKey;
 ```
 
-#### Discussion
+## Discussion
 
 Option specifying whether to allow lossy string conversion. The corresponding value for this key is an `NSNumber` object containing a Boolean value. If `@(NO)`, the a lossy string encoding may not be chosen. By default, this value is `@(YES)`.
 

@@ -19,7 +19,7 @@ optional func webViewShow(_ sender: WebView!)
 - (void) webViewShow:(WebView *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is typically used after a call to [`webView(_:createWebViewWith:)`](./webview%28_,createwebviewwith%29.md), which creates a new window. The new window is not ordered to the front (or even shown) unless you implement this method.
 

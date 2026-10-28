@@ -23,7 +23,7 @@ func ABPersonGetSortOrdering() -> ABPersonSortOrdering
 extern ABPersonSortOrdering ABPersonGetSortOrdering();
 ```
 
-#### Return Value
+## Return Value
 
 The user’s sort ordering preference; see [Sort Order](./api-1619730-sort-order.md).
 

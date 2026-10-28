@@ -25,11 +25,11 @@ func effectiveMediaPresentationSettings(for mediaSelectionGroup: AVMediaSelectio
 - (NSDictionary<AVMediaPresentationSelector *,id> *) effectiveMediaPresentationSettingsForMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with AVMediaPresentationSelectors as keys and AVMediaPresentationSettings as values, unless the AVMediaSelectionOption currently selected in the group possesses none of the characteristics associated with the selector’s settings. In that case the dictionary value will be NSNull.
 
-#### Discussion
+## Discussion
 
 Effective media presentation settings can differ from the currently effective media presentation settings if no AVMediaSelectionOption of the specified AVMediaSelectionGroup with the currently selected media presentation language possesses all of the characteristics associated with the currently selected settings. A value of NSNull for an AVMediaPresentationSelector can occur if either the content is inappropriately authored for the use of the AVCustomMediaSelectionScheme or if the currently selected AVMediaSelectionOption has been selected by means other than through the use of AVMediaPresentationSettings.
 

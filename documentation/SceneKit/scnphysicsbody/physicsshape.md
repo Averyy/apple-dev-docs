@@ -25,7 +25,7 @@ var physicsShape: SCNPhysicsShape? { get set }
 @property (nonatomic, retain, nullable) SCNPhysicsShape * physicsShape;
 ```
 
-#### Discussion
+## Discussion
 
 The physics simulation does not use a node’s visible geometry for collision detection—the simulation can run faster when using simple shapes, and it can also be useful to design your app or game using invisible collision shapes for some elements. Typically, you set a body’s physics shape to a bounding box or primitive shape that roughly matches its node’s visible content, but you can use a more detailed shape for more precise collision detection at a cost to performance.
 

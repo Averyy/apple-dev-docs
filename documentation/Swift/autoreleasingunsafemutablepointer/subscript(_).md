@@ -21,7 +21,7 @@ Access the `i`th element of the raw array pointed to by `self`.
 subscript(i: Int) -> Pointee { get }
 ```
 
-#### Overview
+## Overview
 
 > **Precondition**: `self != nil`.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar requires special handling for oper
 var isLogicalOrderException: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to a small number of spacing vowel letters occurring in some Southeast Asian scripts like Thai and Lao, which use a visual order display model. Such letters are stored in text ahead of syllable-initial consonants.
 

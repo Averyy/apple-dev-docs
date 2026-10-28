@@ -23,7 +23,7 @@ static var skipWritingInputDataToDevice: MLCExecutionOptions { get }
 MLCExecutionOptionsSkipWritingInputDataToDevice
 ```
 
-#### Discussion
+## Discussion
 
 Include this option to prevent writing the input tensors to device memory associated with these tensors when the framework executes the graph.
 

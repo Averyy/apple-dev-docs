@@ -22,7 +22,7 @@ Closes the stream and releases associated resources.
 func close() throws
 ```
 
-#### Discussion
+## Discussion
 
 After calling [`close()`](./close%28%29.md), expect that subsequent function calls on the stream to trigger a runtime error.
 

@@ -5,7 +5,7 @@
 
 Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
 
-#### Overview
+## Overview
 
 Safari 27 and later includes a Model Context Protocol (MCP) server, which lets you connect an AI agent to a set of tools that inspect and interact with your pages. These tools can open tabs, load pages, read the Document Object Model (DOM), capture screenshots, monitor console and network activity, and simulate clicks, taps, and keystrokes in an active webpage.
 
@@ -16,7 +16,7 @@ After you connect your AI agent to the Safari MCP server, you can ask the agent 
 - Confirming your page’s accessibility support
 - Testing your page’s interactions
 
-#### Enable web developer features and remote automation
+## Enable web developer features and remote automation
 
 Before you connect your AI agent, enable web developer features and remote automation in Safari. First, follow the steps in [Enabling features for web developers](./enabling-developer-features.md) to enable the Develop menu and Developer settings tab.
 
@@ -26,7 +26,7 @@ Then, enable remote automation so that your AI agent can connect to the MCP serv
 2. Select the Developer tab.
 3. Check the “Allow remote automation and external agents” box.
 
-#### Configure an AI agent to use the Safari MCP server
+## Configure an AI agent to use the Safari MCP server
 
 After you enable remote automation and external agent access in Safari, you can configure your AI agent to connect to the Safari MCP server.
 
@@ -61,7 +61,7 @@ If your agent uses an `mcp.json` or `config.json` file, add the Safari MCP serve
     
 ```
 
-#### Navigate to a webpage with a prompt
+## Navigate to a webpage with a prompt
 
 Start by writing a prompt that specifies a URL and the action you want to perform; for example, “Open my site at example.com in Safari and tell me if it loaded correctly.” The agent uses the Safari MCP server to open a new window in Safari and load the site you request in that window, and then uses the MCP server’s tools to see if the webpage loaded correctly. Safari displays a banner below the top toolbar that indicates your AI agent controls the window.
 
@@ -75,7 +75,7 @@ I opened example.com in Safari. The page loaded successfully with a 200 response
 
 If you request actions in your first prompt before navigating to a webpage and opening the window that the agent controls, such as listing open tabs or opening a new tab, the Safari MCP server may return an error.
 
-#### Interact with webpages in Safari using the MCP server tools
+## Interact with webpages in Safari using the MCP server tools
 
 As you’re building and maintaining your webpages, you can ask your AI agent to interact with, test, and analyze your webpages in Safari. The MCP server provides tools that let your agent perform these types of actions:
 

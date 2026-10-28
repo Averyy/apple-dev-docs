@@ -23,7 +23,7 @@ func setDestinationWithName(_ name: String, for rect: CGRect)
 - (void) setDestinationWithName:(NSString *) name forRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in conjunction with the [`addDestination(withName:at:)`](./adddestination%28withname,at%29.md) method to create internal links within a PDF. This method represents the creation of the links that, when clicked, jump the user to a named destination, created using the [`addDestination(withName:at:)`](./adddestination%28withname,at%29.md) method.
 

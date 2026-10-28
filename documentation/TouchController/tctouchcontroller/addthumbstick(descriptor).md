@@ -21,7 +21,7 @@ func addThumbstick(descriptor: TCThumbstickDescriptor) -> TCThumbstick
 - (TCThumbstick *) addThumbstickWithDescriptor:(TCThumbstickDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCThumbstick` instance.
 

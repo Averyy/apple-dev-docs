@@ -15,7 +15,7 @@
 static const NSTickMarkPosition NSTickMarkBelow;
 ```
 
-#### Discussion
+## Discussion
 
 Tick marks below (for horizontal sliders); the default for horizontal sliders.
 

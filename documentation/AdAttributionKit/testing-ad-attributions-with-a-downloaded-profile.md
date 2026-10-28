@@ -5,7 +5,7 @@
 
 Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: You can only use the AdAttributionKit testing profile for devices running OS versions earlier than iOS 18. In iOS 18 and later, the testing profile no longer works in AdAttributionKit or SKAdNetwork, so you need to use the AdAttributionKit Developer Mode. For more information see, [Testing ad attributions with Developer Mode](./testing-adattributionkit-with-developer-mode.md).
 
@@ -21,7 +21,7 @@ This testing profile expires 2 weeks after you install it on the device. To cont
 
 > **Note**: To test ad attributions, you need to log in to the device with a production Apple ID. AdAttributionKit doesn’t support sandbox Apple IDs.
 
-#### Inspect postbacks using an HTTP proxy
+## Inspect postbacks using an HTTP proxy
 
 With this installed profile, the system can send AdAttributionKit postbacks through an HTTP proxy that you configure. By using an HTTP proxy, you can monitor the HTTP traffic between your device and the network, including AdAttributionKit postbacks. To configure the HTTP proxy, follow these steps on a testing device:
 

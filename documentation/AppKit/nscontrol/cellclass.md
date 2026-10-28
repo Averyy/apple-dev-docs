@@ -19,7 +19,7 @@ class var cellClass: AnyClass? { get set }
 @property (class, nullable) Class cellClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class of the cell used to manage the receiver’s contents, or `nil` if no cell class has been set for the receiver or its superclasses (up to NSControl).
 

@@ -20,7 +20,7 @@ The default track group output handling policy.
 AVAssetTrackGroupOutputHandlingDefaultPolicy
 ```
 
-#### Discussion
+## Discussion
 
 The default policy is equivalent to [`AVAssetTrackGroupOutputHandlingNone`](./avassettrackgroupoutputhandlingnone.md).
 

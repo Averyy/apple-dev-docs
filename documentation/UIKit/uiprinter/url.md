@@ -22,7 +22,7 @@ var url: URL { get }
 @property (copy, readonly) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the address of a printer on the network. You can also save the value in this property to disk and use it later to initialize a new printer object that points to the same printer.
 

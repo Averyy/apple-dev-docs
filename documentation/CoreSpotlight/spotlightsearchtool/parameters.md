@@ -19,7 +19,7 @@ The schema for the parameters this tool accepts.
 var parameters: GenerationSchema { get }
 ```
 
-#### Discussion
+## Discussion
 
 The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 

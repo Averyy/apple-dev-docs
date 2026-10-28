@@ -28,7 +28,7 @@ func enableCredentialSharingMode(forExtendedPANID extendedPANID: Data) async thr
 - (void) enableCredentialSharingModeForExtendedPANID:(NSData *) extendedPANID completion:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method scans for Thread credential sharing capable Apple Border Routers, selects an eligible device, and requests to generate an ephemeral 9-digit code and start credential sharing mode.
 

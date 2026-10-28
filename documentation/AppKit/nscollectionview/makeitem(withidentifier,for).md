@@ -19,11 +19,11 @@ func makeItem(withIdentifier identifier: NSUserInterfaceItemIdentifier, for inde
 - (NSCollectionViewItem *) makeItemWithIdentifier:(NSUserInterfaceItemIdentifier) identifier forIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`NSCollectionViewItem`](../nscollectionviewitem.md) object.
 
-#### Discussion
+## Discussion
 
 This method looks for a recycled item object of the specified type and returns it if one exists. If one does not exist, it creates it using one of the following techniques:
 

@@ -12,11 +12,11 @@ virtual IODeviceMemory * getApertureRange(
  IOPixelApertureaperture ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 an IODeviceMemory instance. A reference will be consumed by the caller for each call of this method - the implementatation should create a new instance of IODeviceMemory for each call, or return one instance with a retain for each call.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses must implement this method to describe the memory used by the framebuffer in the current mode. The OS will map this memory range into user space for client access - the range should only include vram memory not hardware registers.
 

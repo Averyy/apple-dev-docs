@@ -18,7 +18,7 @@ var FF_EFFECTRESTARTED: HRESULT { get }
 #define FF_EFFECTRESTARTED
 ```
 
-#### Discussion
+## Discussion
 
 The parameters of the effect were successfully updated by FFEffectSetParameters, but in order to change the parameters, the effect needed to be restarted.
 

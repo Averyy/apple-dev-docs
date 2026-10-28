@@ -23,11 +23,11 @@ func setFailureType<E>(to failureType: E.Type) -> Publishers.SetFailureType<Self
 
 Available when `Failure` is `Never`.
 
-#### Return Value
+## Return Value
 
 A publisher that appears to send the specified failure type.
 
-#### Discussion
+## Discussion
 
 Use [`setFailureType(to:)`](./setfailuretype%28to%29.md) when you need set the error type of a publisher that cannot fail.
 

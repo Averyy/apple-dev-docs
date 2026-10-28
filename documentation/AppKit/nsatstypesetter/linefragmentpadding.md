@@ -19,7 +19,7 @@ var lineFragmentPadding: CGFloat { get set }
 @property CGFloat lineFragmentPadding;
 ```
 
-#### Discussion
+## Discussion
 
 Text is inset within the line fragment rectangle by this amount.
 

@@ -21,7 +21,7 @@ Returns the ordered index of the section with the given title, or `nil` if not f
 func index(ofSectionTitled title: SectionTitle) -> Int?
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

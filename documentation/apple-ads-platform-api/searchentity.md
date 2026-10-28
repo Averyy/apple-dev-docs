@@ -15,7 +15,7 @@ A single geographic location result returned by the geo search endpoints.
 object SearchEntity
 ```
 
-#### Discussion
+## Discussion
 
 The `SearchEntity` object is a single geographic location result returned by the geo search endpoints. It provides multiple identifiers for the same location: `id` (numeric) for use as a targeting value in `AdGroupTargeting`, and `legacyId` (pipe-delimited) for human-readable reference. The `entity` field classifies the geographic granularity from `Country` down to `PostalCode`.
 
@@ -26,7 +26,7 @@ The `eligibility` field indicates whether you can use the location for ads on th
 - The API scopes eligibility to the single `supplySource` specified in the request.
 - The response includes only `blockedGroups` matching that supply source.
 
-##### Example
+### Example
 
 ```json
 {

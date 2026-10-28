@@ -19,7 +19,7 @@ A type that encapsulates input for large binary object extensions during registr
 struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput
 ```
 
-#### Overview
+## Overview
 
 Use this type during registration of a new passkey to indicate whether the app requires `largeBlob` support or just needs to know if it’s available. This can be different per passkey, depending on which passkey provider someone chooses to use, but can’t change after you create the passkey. This behavior mirrors the options available in the WebAuthn spec.
 

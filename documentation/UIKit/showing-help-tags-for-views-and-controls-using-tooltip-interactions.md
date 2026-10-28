@@ -12,20 +12,20 @@ Explain the purpose of interface elements by showing a tooltip when a person pos
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample shows how to display a tooltip (also known as a *help tag*) that explains the purpose of, or provides additional information about, an interface element such as a view or control without shifting a person’s focus away from the primary interface. A tooltip appears when a person positions the pointer over a view or control for a few seconds. The tooltip remains visible for a few seconds or until the pointer moves away from the interface element.
 
 For guidelines on designing the content of your tooltips, see the [Help](https://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/help/) section of the macOS Human Interface Guidelines.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Tooltips are available in the sample app when running in macOS 12 or later. To build and run the sample app:
 
 1. Choose Product > Destination > My Mac.
 2. Click Product > Run.
 
-##### Add a tooltip to a view
+### Add a tooltip to a view
 
 To show a tooltip when the pointer hovers over a view, the sample creates a [`UIToolTipInteraction`](./uitooltipinteraction.md) object and passes in the default tooltip text. Then the sample adds the interaction to a [`UIView`](./uiview.md) using the view’s [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md) method.
 
@@ -57,7 +57,7 @@ lazy var labelWithTooltip: UILabel = {
 }()
 ```
 
-##### Add a tooltip to a control
+### Add a tooltip to a control
 
 For interface elements that derive from [`UIControl`](./uicontrol.md), such as [`UIButton`](./uibutton.md), the sample uses the [`toolTip`](./uicontrol/tooltip.md) property to set the default text that appears in the tooltip instead of adding an interaction to the control.
 
@@ -78,7 +78,7 @@ lazy var buttonWithTooltip: UIButton = {
 }()
 ```
 
-##### Change the tooltip text of a view
+### Change the tooltip text of a view
 
 Setting the [`defaultToolTip`](./uitooltipinteraction/defaulttooltip.md) property of a tooltip interaction and setting the [`toolTip`](./uicontrol/tooltip.md) property of a control are convenient ways to show tooltip text that doesn’t change while the app runs. However, there may be times when an app needs to determine the contents of the tooltip based on the state of the app or logic specific to the app. For instance, the sample app looks up the name of a view’s background color and displays the name in a tooltip when the pointer hovers over that view.
 
@@ -118,7 +118,7 @@ class ViewWithBackgroundColorTooltip: UIView, UIToolTipInteractionDelegate {
 }
 ```
 
-##### Change the tooltip text of a control
+### Change the tooltip text of a control
 
 To change the tooltip text of a control like the sample’s shopping cart button, the sample provides a tooltip interaction delegate as it did with the custom view. But instead of creating a tooltip interaction, it sets the button’s [`toolTip`](./uicontrol/tooltip.md) property to the default text. This causes the control to create a [`UIToolTipInteraction`](./uitooltipinteraction.md) object and assign it to the [`toolTipInteraction`](./uicontrol/tooltipinteraction.md) property. The sample then uses the property to assign a delegate to the interaction.
 
@@ -159,7 +159,7 @@ func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt poi
 }
 ```
 
-##### Specify the hover region
+### Specify the hover region
 
 In addition to setting the tooltip text in a [`UIToolTipConfiguration`](./uitooltipconfiguration.md) object, a delegate can specify the region of an interface element where the pointer must hover to trigger the display of the tooltip. The sample app, for example, shows a view that displays a tooltip after positioning the pointer over the top or bottom regions of the view, but not when the pointer is over the middle area.
 

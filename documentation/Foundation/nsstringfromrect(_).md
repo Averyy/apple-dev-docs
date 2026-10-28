@@ -20,7 +20,7 @@ func NSStringFromRect(_ aRect: NSRect) -> String
 extern NSString *NSStringFromRect(NSRect aRect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a string of the form “{{a, b}, {c, d}}”, where a, b, c, and d are the x and y coordinates and the width and height, respectively, of `aRect`.
 

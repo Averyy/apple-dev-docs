@@ -27,7 +27,7 @@ class CMTremorResult
 
 - [Getting movement disorder symptom data](./getting-movement-disorder-symptom-data.md)
 
-#### Overview
+## Overview
 
 The following equation is always true: [`percentUnknown`](./cmtremorresult/percentunknown.md) `+` [`percentNone`](./cmtremorresult/percentnone.md) `+` [`percentSlight`](./cmtremorresult/percentslight.md) `+` [`percentMild`](./cmtremorresult/percentmild.md) `+` [`percentModerate`](./cmtremorresult/percentmoderate.md) `+` [`percentStrong`](./cmtremorresult/percentstrong.md) `= 1.0`.
 

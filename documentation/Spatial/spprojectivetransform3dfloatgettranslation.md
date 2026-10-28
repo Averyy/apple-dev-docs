@@ -19,11 +19,11 @@
 static SPVector3DFloat SPProjectiveTransform3DFloatGetTranslation(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A size structure that represents the transform’s translation.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform’s translation.
 

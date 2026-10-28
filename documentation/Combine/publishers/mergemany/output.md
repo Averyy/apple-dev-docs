@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = Upstream.Output
 ```
 
-#### Discussion
+## Discussion
 
 This publisher uses its upstream publishers’ common output type.
 

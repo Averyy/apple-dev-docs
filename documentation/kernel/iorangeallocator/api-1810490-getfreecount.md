@@ -12,11 +12,11 @@ virtual IORangeScalar getFreeCount(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the total of the free fragments sizes.
 
-#### Overview
+## Overview
 
 This method returns the total of the sizes of the fragments on the free list.
 

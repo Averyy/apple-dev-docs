@@ -24,7 +24,7 @@ uint8_t unsigned8BitValue(void);
 virtual unsigned char unsigned8BitValue(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the OSNumber as a uint8_t value.
 

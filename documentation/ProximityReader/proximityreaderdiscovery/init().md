@@ -17,7 +17,7 @@ Creates a new proximity reader discovery object.
 init()
 ```
 
-#### Return Value
+## Return Value
 
 A proximity reader discovery object you can use to present information to merchants.
 

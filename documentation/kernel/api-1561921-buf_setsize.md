@@ -15,11 +15,11 @@ Set size of data region allocated to a buffer.
 void buf_setsize(buf_t bp, uint32_t);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 May be larger than amount of valid data in buffer. Should be used by code which is manually providing storage for an iobuf, one allocated with buf_alloc().
 

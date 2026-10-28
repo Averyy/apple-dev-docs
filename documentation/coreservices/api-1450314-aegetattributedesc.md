@@ -19,15 +19,15 @@ func AEGetAttributeDesc(_ theAppleEvent: UnsafePointer<AppleEvent>!, _ theAEKeyw
 OSErr AEGetAttributeDesc(const AppleEvent *theAppleEvent, AEKeyword theAEKeyword, DescType desiredType, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 To get Apple event attribute data for your application to use directly, call [`AEGetAttributePtr(_:_:_:_:_:_:_:)`](./api-1445109-aegetattributeptr.md). To get a descriptor for an Apple event attribute to pass on to another Apple Event Manager routine, call `AEGetAttributeDesc`. 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

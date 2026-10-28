@@ -25,7 +25,7 @@ func fileCreationDate() -> Date?
 - (NSDate *) fileCreationDate;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`creationDate`](../fileattributekey/creationdate.md) file attributes key, or `nil` if the file attributes dictionary has no entry for the key.
 

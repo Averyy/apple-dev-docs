@@ -25,7 +25,7 @@ var forceWiFiScan: Bool { get set }
 @property (nonatomic, assign) BOOL forceWiFiScan;
 ```
 
-#### Discussion
+## Discussion
 
 Even if this value is NO a scan may still be performed.
 

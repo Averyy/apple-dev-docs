@@ -33,7 +33,7 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, willPerfor
 
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 This method is called *only* for tasks in default and ephemeral sessions. Tasks in background sessions automatically follow redirects.
 

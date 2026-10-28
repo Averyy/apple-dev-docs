@@ -26,7 +26,7 @@ func advanceToNextItem()
 - (void) advanceToNextItem;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method also removes the current item from the play queue.
 

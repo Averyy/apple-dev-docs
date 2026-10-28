@@ -5,11 +5,11 @@
 
 Detects the use of deallocated memory.
 
-#### Overview
+## Overview
 
 Use this check to detect when your code accesses deallocated memory, which can lead to unpredictable behavior. Available in Xcode 7 and later.
 
-##### Use of deallocated memory in Objective-C
+### Use of deallocated memory in Objective-C
 
 In the following example, the `unsafePointer` variable has `__unsafe_unretained` ownership. Because there are no other objects that have a strong reference to it, the autorelease pool deallocates the variable, causing it to point to invalid memory.
 
@@ -23,11 +23,11 @@ NSLog(@"%d", unsafePointer->instanceVariable);
 // Error: unsafePointer is deallocated in autorelease pool
 ```
 
-###### Solution
+#### Solution
 
 Use a `__strong` or `__weak` reference instead of `__unsafe_unretained`. Strong ownership ensures that you, or the system, can only deallocate an object when no strong references exist. Weak ownership has no effect on the life cycle of the object it refers to, but ensures that a variable is `nil` when you deallocate the object, or the system deallocates it.
 
-##### Use of deallocated pointer in Objective-C
+### Use of deallocated pointer in Objective-C
 
 This issue exists when using pointers to nonobject types, as well. In the following example, the pointer to the instance variable invalidates when deallocating the object:
 
@@ -41,7 +41,7 @@ NSLog(@"%d", *unsafePointer);
 // Error: unsafePointer is invalidated when object is deallocated in autorelease pool
 ```
 
-###### Solution
+#### Solution
 
 Use property accessors rather than direct access to instance variables and pointers whenever possible.
 

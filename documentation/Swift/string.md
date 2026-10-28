@@ -22,7 +22,7 @@ A Unicode string value that is a collection of characters.
 struct String
 ```
 
-#### Overview
+## Overview
 
 A string is a series of characters, such as `"Swift"`, that forms a collection. Strings in Swift are Unicode correct and locale insensitive, and are designed to be efficient. The `String` type bridges with the Objective-C class `NSString` and offers interoperability with C functions that work with strings.
 
@@ -65,7 +65,7 @@ let banner = """
         """
 ```
 
-### Modifying and Comparing Strings
+## Modifying and Comparing Strings
 
 Strings always have value semantics. Modifying a copy of a string leaves the original unaffected.
 
@@ -91,7 +91,7 @@ The Unicode scalar value `"\u{301}"` modifies the preceding character to include
 
 Basic string operations are not sensitive to locale settings, ensuring that string comparisons and other operations always have a single, stable result, allowing strings to be used as keys in `Dictionary` instances and for other purposes.
 
-### Accessing String Elements
+## Accessing String Elements
 
 A string is a collection of *extended grapheme clusters*, which approximate human-readable characters. Many individual characters, such as “é”, “김”, and “🇮🇳”, can be made up of multiple Unicode scalar values. These scalar values are combined by Unicode’s boundary algorithms into extended grapheme clusters, represented by the Swift `Character` type. Each element of a string is represented by a `Character` instance.
 
@@ -111,7 +111,7 @@ print("\(name)'s first name has \(firstName.count) letters.")
 // Prints "Marie Curie's first name has 5 letters."
 ```
 
-### Accessing a String’s Unicode Representation
+## Accessing a String’s Unicode Representation
 
 If you need to access the contents of a string as encoded in different Unicode encodings, use one of the string’s `unicodeScalars`, `utf16`, or `utf8` properties. Each property provides access to a view of the string as a series of code units, each encoded in a different Unicode encoding.
 
@@ -132,7 +132,7 @@ print(Array(cafe))
 // Prints "["C", "a", "f", "é", " ", "d", "u", " ", "🌍"]"
 ```
 
-#### Unicode Scalar View
+## Unicode Scalar View
 
 A string’s `unicodeScalars` property is a collection of Unicode scalar values, the 21-bit codes that are the basic unit of Unicode. Each scalar value is represented by a `Unicode.Scalar` instance and is equivalent to a UTF-32 code unit.
 
@@ -147,7 +147,7 @@ print(cafe.unicodeScalars.map { $0.value })
 
 The `unicodeScalars` view’s elements comprise each Unicode scalar value in the `cafe` string. In particular, because `cafe` was declared using the decomposed form of the `"é"` character, `unicodeScalars` contains the scalar values for both the letter `"e"` (101) and the accent character `"´"` (769).
 
-#### UTF-16 View
+## UTF-16 View
 
 A string’s `utf16` property is a collection of UTF-16 code units, the 16-bit encoding form of the string’s Unicode scalar values. Each code unit is stored as a `UInt16` instance.
 
@@ -168,7 +168,7 @@ print(nscafe.character(at: 3))
 // Prints "101"
 ```
 
-#### UTF-8 View
+## UTF-8 View
 
 A string’s `utf8` property is a collection of UTF-8 code units, the 8-bit encoding form of the string’s Unicode scalar values. Each code unit is stored as a `UInt8` instance.
 
@@ -187,7 +187,7 @@ print(cLength)
 // Prints "14"
 ```
 
-### Measuring the Length of a String
+## Measuring the Length of a String
 
 When you need to know the length of a string, you must first consider what you’ll use the length for. Are you measuring the number of characters that will be displayed on the screen, or are you measuring the amount of storage needed for the string in a particular encoding? A single string can have greatly differing lengths when measured by its different views.
 
@@ -221,7 +221,7 @@ print(flag.utf8.count)
 
 To check whether a string is empty, use its `isEmpty` property instead of comparing the length of one of the views to `0`. Unlike with `isEmpty`, calculating a view’s `count` property requires iterating through the elements of the string.
 
-### Accessing String View Elements
+## Accessing String View Elements
 
 To find individual elements of a string, use the appropriate view for your task. For example, to retrieve the first word of a longer string, you can search the string for a space and then create a new string from a prefix of the string up to that point.
 
@@ -267,13 +267,13 @@ if let exactIndex = secondCodeUnit.samePosition(in: flag) {
 // Prints "No exact match for this position."
 ```
 
-### Performance Optimizations
+## Performance Optimizations
 
 Although strings in Swift have value semantics, strings use a copy-on-write strategy to store their data in a buffer. This buffer can then be shared by different copies of a string. A string’s data is only copied lazily, upon mutation, when more than one string instance is using the same buffer. Therefore, the first in any sequence of mutating operations may cost O(*n*) time and space.
 
 When a string’s contiguous storage fills up, a new buffer must be allocated and data must be moved to the new storage. String buffers use an exponential growth strategy that makes appending to a string a constant time operation when averaged over many append operations.
 
-### Bridging Between String and NSString
+## Bridging Between String and NSString
 
 Any `String` instance can be bridged to `NSString` using the type-cast operator (`as`), and any `String` instance that originates in Objective-C may use an `NSString` instance as its storage. Because any arbitrary subclass of `NSString` can become a `String` instance, there are no guarantees about representation or efficiency when a `String` instance is backed by `NSString` storage. Because `NSString` is immutable, it is just as though the storage was shared by a copy. The first in any sequence of mutating operations causes elements to be copied into unique, contiguous storage which may cost O(*n*) time and space, where *n* is the length of the string’s encoded representation (or more, if the underlying `NSString` has unusual performance characteristics).
 

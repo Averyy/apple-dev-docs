@@ -24,7 +24,7 @@ let AVAudioSessionRouteChangePreviousRouteKey: String
 extern NSString * const AVAudioSessionRouteChangePreviousRouteKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`AVAudioSessionRouteDescription`](./avaudiosessionroutedescription.md) object that describes the audio route settings prior to the route change.
 

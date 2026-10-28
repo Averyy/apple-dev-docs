@@ -36,7 +36,7 @@ MTLStorageModeShared
 - [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 - [Synchronizing a managed resource in macOS](../synchronizing-a-managed-resource-in-macos.md)
 
-#### Discussion
+## Discussion
 
 This is the default storage mode for [`MTLBuffer`](../mtlbuffer.md) instances on integrated GPUs and both [`MTLBuffer`](../mtlbuffer.md) and [`MTLTexture`](../mtltexture.md) instances on Apple silicon GPUs. On non-Apple family GPUs, the shared storage mode isn’t available for [`MTLTexture`](../mtltexture.md) instances.
 

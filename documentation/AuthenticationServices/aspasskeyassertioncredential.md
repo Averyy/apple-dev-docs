@@ -23,7 +23,7 @@ class ASPasskeyAssertionCredential
 @interface ASPasskeyAssertionCredential : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a passkey assertion credential to provide a response to a passkey authentication challenge from your credential provider extension. Call [`completeAssertionRequest(using:completionHandler:)`](./ascredentialproviderextensioncontext/completeassertionrequest%28using,completionhandler%29.md), passing your passkey assertion credential.
 

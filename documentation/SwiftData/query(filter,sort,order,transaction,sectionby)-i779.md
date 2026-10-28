@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`_`)) macro Query<Value, Element>(filter: Predicate<Element>? = nil, sort keyPath: KeyPath<Element, Value>, order: SortOrder = .forward, transaction: Transaction? = nil, sectionBy sectionKeyPath: KeyPath<Element, String?>) where Value : Comparable, Element : PersistentModel
+@attached(accessor)
+@attached(peer, names: prefixed(`_`)) macro Query<Value, Element>(filter: Predicate<Element>? = nil, sort keyPath: KeyPath<Element, Value>, order: SortOrder = .forward, transaction: Transaction? = nil, sectionBy sectionKeyPath: KeyPath<Element, String?>) where Value : Comparable, Element : PersistentModel
 ```
 
 ## See Also

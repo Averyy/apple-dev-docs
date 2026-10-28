@@ -25,7 +25,7 @@ case roundTowardZero
 kCMTimeRoundingMethod_RoundTowardZero
 ```
 
-#### Discussion
+## Discussion
 
 This method rounds toward zero if the fraction isn’t equal to `0`.
 

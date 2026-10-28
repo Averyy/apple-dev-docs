@@ -19,7 +19,7 @@ An attributed variant of the secondary text.
 @property (nonatomic, copy, nullable) NSAttributedString * secondaryAttributedText;
 ```
 
-#### Discussion
+## Discussion
 
 This value supersedes the [`secondaryText`](./secondarytext.md) property.
 

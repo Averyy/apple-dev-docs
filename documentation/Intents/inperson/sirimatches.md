@@ -35,7 +35,7 @@ var siriMatches: [INPerson]? { get }
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 When attempting to resolve the recipient of a message, use this property to determine how to respond:
 

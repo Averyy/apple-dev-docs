@@ -9,9 +9,9 @@ Get details for a specific analytics report.
 **Availability**:
 - App Store Connect API 3.4+
 
-#### Discussion
+## Discussion
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

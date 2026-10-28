@@ -23,11 +23,11 @@ optional func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarI
 - (NSArray<NSString *> *) toolbarAllowedItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
-#### Return Value
+## Return Value
 
 An array of toolbar item identifiers, each of which represents an item that appears in the customization palette. Arrange the identifiers in the order you want them to appear in the palette, with the first item appearing on the palette’s leading edge.
 
-#### Discussion
+## Discussion
 
 Include all of your toolbar’s items, including standard ones defined by [`NSToolbar.Identifier`](../nstoolbar/identifier-swift.typealias.md). The array must include all of the default menu items in your toolbar.
 

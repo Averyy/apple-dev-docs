@@ -23,7 +23,7 @@ var thresholdAmount: NSDecimalNumber { get set }
 @property (nonatomic, strong) NSDecimalNumber * thresholdAmount;
 ```
 
-#### Discussion
+## Discussion
 
 You automatically apply the reload amount to the account when the account balance drops below the threshold amount.
 

@@ -24,7 +24,7 @@ class CMOdometerData
 @interface CMOdometerData : NSObject
 ```
 
-#### Overview
+## Overview
 
 To get the measurements, use the [`speed`](./cmodometerdata/speed.md) and [`slope`](./cmodometerdata/slope-96hlt.md) properties. To compute distances, use the [`deltaDistance`](./cmodometerdata/deltadistance.md) and [`deltaAltitude`](./cmodometerdata/deltaaltitude.md) properties.
 

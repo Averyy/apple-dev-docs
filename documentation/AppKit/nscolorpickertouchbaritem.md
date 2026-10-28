@@ -22,7 +22,7 @@ class NSColorPickerTouchBarItem
 @interface NSColorPickerTouchBarItem : NSTouchBarItem
 ```
 
-#### Overview
+## Overview
 
 For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/touch-bar/touch-bar-controls-and-views/#color-pickers).
 

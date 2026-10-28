@@ -5,11 +5,11 @@
 
 Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.
 
-#### Overview
+## Overview
 
 Hitches and hangs are two types of responsiveness issues that negatively impact an app’s user experience. The system monitors for hangs and hitches for running apps, and periodically collects reports on the issues from a statistical sample. Xcode Organizer uses this data to display information about the hitch rate, the hang rate, and individual hang reports for your apps. All of this data is also available in [MetricKit](../MetricKit/MetricKit.md), so you can gather and aggregate it in your own infrastructure. For more information about hangs and hitches, see [Understanding user interface responsiveness](./understanding-user-interface-responsiveness.md).
 
-##### View your app’s hitch rate
+### View your app’s hitch rate
 
 The Hitches pane of the Xcode Organizer window displays information about the hitch rate of your app over time. The hitch rate tracks animation interruptions across all animated interactions in your app, including scrolling, transitions, and other continuous motion. For more information about hitches, see [Understanding hitches in your app](./understanding-hitches-in-your-app.md).
 
@@ -19,7 +19,7 @@ Hitch-rate data is only available for iOS and iPadOS devices.
 
 > **Note**: The Hitches instrument and hitch-rate metrics aren’t available for visionOS. Use the RealityKit Trace template in Instruments to analyze rendering performance and dropped frames. For more information, see [Analyzing the performance of your visionOS app](../visionOS/analyzing-the-performance-of-your-visionos-app.md).
 
-##### View your app’s hang rate
+### View your app’s hang rate
 
 Xcode Organizer reports the hang rate as the number of seconds per hour that the app is unresponsive, while only counting periods of unresponsiveness of more than 250 ms. The Organizer window shows both the median hang rate of a typical user experience, and the extreme 90th percentile hang rate. [MetricKit](../MetricKit/MetricKit.md) provides the same hang rate metric as a histogram.
 
@@ -29,7 +29,7 @@ Apple operating systems support a broad variety of devices with different hardwa
 
 Hang rate data is available for iOS, macOS, and visionOS devices.
 
-##### Analyze hang reports to determine a course of action
+### Analyze hang reports to determine a course of action
 
 The hang rate provides general information about how responsive a specific app version is on average, while hang reports highlight individual causes of hangs. When the main thread is unresponsive for 1 s or longer, the system also samples the app to capture a backtrace profile, highlighting where the app is spending its time during the hang. The system sends anonymous diagnostic reports with hang stack traces to Apple for users who consent to share data with app developers. Xcode Organizer aggregates these individual hang reports and groups them by similar backtraces to identify common causes of hangs. Alternatively, you can create your own reports from logs that [MetricKit](../MetricKit/MetricKit.md) collects.
 
@@ -49,11 +49,11 @@ Identify the code that’s causing the hang by using the function calls for a sp
 
 Hang reports are only available for iOS and iPadOS devices.
 
-##### Get coding assistant recommendations for hang issues
+### Get coding assistant recommendations for hang issues
 
 After selecting a hang report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the call path and stack trace into the coding assistant to help you identify and address the root cause of the hang.
 
-##### Reproduce problems to analyze and fix them
+### Reproduce problems to analyze and fix them
 
 The metrics in Xcode Organizer allow you to detect when your shipping app has a problem, such as the hitch rate increasing with the most recent release, but not necessarily what the cause of the problem is. To determine the source of the problem, consider the following steps:
 

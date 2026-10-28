@@ -23,7 +23,7 @@ func setSessionWithNoConnection(_ session: AVCaptureSession)
 - (void) setSessionWithNoConnection:(AVCaptureSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Only use this method if you intend to manually create a connection between the layer and a particular [`AVCaptureInput.Port`](../avcaptureinput/port.md), and add it to the session using its [`addConnection(_:)`](../avcapturesession/addconnection%28_%29.md) method.
 

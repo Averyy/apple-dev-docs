@@ -25,7 +25,7 @@ var BNNSLossReductionNone: BNNSLossReductionFunction { get }
 BNNSLossReductionNone
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

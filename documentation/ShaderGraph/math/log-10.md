@@ -14,7 +14,7 @@ The log base 10 of the input.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Log 10 (half)**:
 

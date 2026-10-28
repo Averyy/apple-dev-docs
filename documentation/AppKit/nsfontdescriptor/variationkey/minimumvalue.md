@@ -19,7 +19,7 @@ static let minimumValue: NSFontDescriptor.VariationKey
 extern NSFontDescriptorVariationKey NSFontVariationAxisMinimumValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 

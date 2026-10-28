@@ -23,7 +23,7 @@ func matches<Output>(@RegexComponentBuilder of content: () -> some RegexComponen
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection of matches for the regex returned by `content`. If no matches are found, the returned collection is empty.
 

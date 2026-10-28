@@ -21,11 +21,11 @@ func finishSuspend() -> Data?
 - (NSData *) finishSuspend;
 ```
 
-#### Return Value
+## Return Value
 
 The suspend state data, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method may take an arbitrary amount of time as the device needs to complete any unfinished GPU work. After this call completes, you can’t perform any further operations on this device object and must release it.
 

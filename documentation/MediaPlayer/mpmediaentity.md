@@ -23,7 +23,7 @@ class MPMediaEntity
 @interface MPMediaEntity : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is the superclass for [`MPMediaItem`](./mpmediaitem.md) and [`MPMediaItemCollection`](./mpmediaitemcollection.md) instances, and in turn for [`MPMediaPlaylist`](./mpmediaplaylist.md) instances.
 

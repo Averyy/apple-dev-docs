@@ -22,7 +22,7 @@ nonisolated
 struct DefaultToolbarItem
 ```
 
-#### Overview
+## Overview
 
 Place this item in your toolbar to control where the system-provided item, like search, will be positioned.
 

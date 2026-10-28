@@ -19,7 +19,7 @@ case copy
 NSCompositingOperationCopy
 ```
 
-#### Discussion
+## Discussion
 
 The source image replaces the pixels of the destination with the formula `R = S`.
 

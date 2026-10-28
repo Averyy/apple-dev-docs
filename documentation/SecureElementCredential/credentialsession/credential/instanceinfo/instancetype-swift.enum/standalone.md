@@ -16,7 +16,7 @@ A type that indicates an instance doesn’t have any associative relationships w
 case standalone
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`instanceAID`](../instanceaid.md) of this credential instance with [`performTransactionInWiredMode(using:instanceAID:)`](../../../../credentialtransaction/performtransactioninwiredmode%28using,instanceaid%29.md).
 

@@ -18,7 +18,7 @@ geoJSONDidError?(
 ): void;
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method when the GeoJSON fails to load.
 

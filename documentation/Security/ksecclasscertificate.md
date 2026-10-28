@@ -30,7 +30,7 @@ extern CFStringRef const kSecClassCertificate;
 - [Storing a Certificate in the Keychain](./storing-a-certificate-in-the-keychain.md)
 - [Storing an Identity in the Keychain](./storing-an-identity-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The following keychain item attributes form the composite primary key of a certificate password item:
 

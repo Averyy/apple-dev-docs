@@ -18,7 +18,7 @@ Selects subjects to track with specific identifiers
 final func selectSubjects(_ ids: [UUID]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 `TrackingStates` provide a list of subjects with their unique identifiers in the video frame. Use this method to select a subset of subjects to track by passing a list of unique identifiers. If you pass an empty list, the system defaults to system tracking (if enabled).
 

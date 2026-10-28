@@ -24,7 +24,7 @@ var changedObjects: [ObjectType] { get }
 @property (atomic, strong, readonly) NSArray<PHObject *> * changedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`PHAsset`](../phasset.md), [`PHAssetCollection`](../phassetcollection.md), or [`PHCollectionList`](../phcollectionlist.md) objects.
 

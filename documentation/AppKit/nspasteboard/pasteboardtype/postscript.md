@@ -19,7 +19,7 @@ static let postScript: NSPasteboard.PasteboardType
 extern NSPasteboardType NSPostScriptPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use `@"com.adobe.encapsulated-postscript"` instead.
 

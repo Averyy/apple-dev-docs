@@ -23,7 +23,7 @@ typealias sec_protocol_challenge_complete_t = (sec_identity_t?) -> Void
 typedef void (^)(NSObject<OS_sec_identity> *) sec_protocol_challenge_complete_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when an identity (authentication) challenge is complete.
 

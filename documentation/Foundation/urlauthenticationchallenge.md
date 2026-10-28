@@ -25,7 +25,7 @@ class URLAuthenticationChallenge
 @interface NSURLAuthenticationChallenge : NSObject
 ```
 
-#### Overview
+## Overview
 
 Your app receives authentication challenges in various [`URLSession`](./urlsession.md), [`NSURLConnection`](./nsurlconnection.md), and [`NSURLDownload`](./nsurldownload.md) delegate methods, such as [`urlSession(_:task:didReceive:completionHandler:)`](./urlsessiontaskdelegate/urlsession%28_,task,didreceive,completionhandler%29.md). These objects provide the information you’ll need when deciding how to handle a server’s request for authentication.
 

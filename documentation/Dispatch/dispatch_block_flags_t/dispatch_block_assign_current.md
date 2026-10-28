@@ -21,7 +21,7 @@ Set the attributes of the work item to match the attributes of the current execu
 DISPATCH_BLOCK_ASSIGN_CURRENT
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that a dispatch block should be assigned the execution context attributes that are current at the time the block object is created. This applies to attributes such as QoS class, os_activity_t, and properties of the current IPC request, if any. If invoked directly, the block will apply these attributes to the calling thread for the duration of the block body. If the block is submitted to a queue, this flag replaces the default behavior of associating the submitted block instance with the execution context attributes that are current at the time of submission. If a specific QoS class is assigned with [`DISPATCH_BLOCK_NO_QOS_CLASS`](./dispatch_block_no_qos_class.md) or the [`dispatch_block_create_with_qos_class`](../dispatch_block_create_with_qos_class.md) function, that QoS class takes precedence over the QoS class assignment indicated by this flag.
 

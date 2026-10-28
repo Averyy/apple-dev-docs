@@ -25,7 +25,7 @@ class MXDiagnosticPayload
 @interface MXDiagnosticPayload : NSObject
 ```
 
-#### Overview
+## Overview
 
 The system delivers a diagnostic report as soon as it’s available.
 

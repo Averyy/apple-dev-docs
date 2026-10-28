@@ -27,11 +27,11 @@ class CXProvider
 
 - [Making and receiving VoIP calls](./making-and-receiving-voip-calls.md)
 
-#### Overview
+## Overview
 
 A [`CXProvider`](./cxprovider.md) object is responsible for reporting out-of-band notifications that occur to the system. A VoIP app should create only one instance of [`CXProvider`](./cxprovider.md) and store it for use globally. A [`CXProvider`](./cxprovider.md) object is initialized with a [`CXProviderConfiguration`](./cxproviderconfiguration.md) object to specify the behavior and capabilities of calls. Each provider can specify an object conforming to the [`CXProviderDelegate`](./cxproviderdelegate.md) protocol to respond to events, such as the call starting, the call being put on hold, or the provider’s audio session being activated.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 [`CXProvider`](./cxprovider.md) is not intended for subclassing.
 

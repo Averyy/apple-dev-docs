@@ -22,7 +22,7 @@ Dismisses the view if it is currently presented.
 @preconcurrency func callAsFunction()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it for you when you call the [`DismissAction`](../dismissaction.md) structure that you get from the [`Environment`](../environment.md):
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether the server returns multiple routes when t
 requestsAlternateRoutes?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `false`, the server returns a single route between the start and end points. When this property is `true`, the server may return additional routes for the user to follow. The server returns additional routes only if they’re available and represent a reasonable path that the user might take.
 

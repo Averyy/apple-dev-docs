@@ -22,7 +22,7 @@ var showsIndicator: Bool { get set }
 @property BOOL showsIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the menu toolbar item shows an indicator that additional functionality is available.
 

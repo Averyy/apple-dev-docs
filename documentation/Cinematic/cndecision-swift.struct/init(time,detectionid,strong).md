@@ -19,7 +19,7 @@ Makes a decision to focus on the best among those detections with the same detec
 init(time: CMTime, detectionID: CNDetectionID, strong isStrong: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 A strong decision keeps focus for as long as possible on the detected subject.
 

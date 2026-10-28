@@ -11,11 +11,11 @@ Launches a given program in the `Resources` directory of the installation packag
 run(programName, args...)
 ```
 
-#### Return Value
+## Return Value
 
 After the program is executed, its exit code. If the program is not executed (see discussion), `undefined`.
 
-#### Overview
+## Overview
 
 On subsequent invocations with the same arguments, the program is not launched and the exit code of the first execution is returned.
 

@@ -26,7 +26,7 @@ func extendedReadSingleBlock(requestFlags flags: NFCISO15693RequestFlag, blockNu
 - (void) extendedReadSingleBlockWithRequestFlags:(NFCISO15693RequestFlag) flags blockNumber:(NSInteger) blockNumber completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

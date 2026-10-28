@@ -24,7 +24,7 @@ var isEntireLengthAvailableOnDemand: Bool { get set }
 @property (nonatomic, getter=isEntireLengthAvailableOnDemand) BOOL entireLengthAvailableOnDemand;
 ```
 
-#### Discussion
+## Discussion
 
 Before you finish loading an [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md), if its [`contentInformationRequest`](../avassetresourceloadingrequest/contentinformationrequest.md) isn’t `nil`, set the value to [`true`](../../Swift/true.md) to indicate that all asset data is available. This may be [`true`](../../Swift/true.md) because the data is fully cached, or because the custom URL scheme ultimately refers to files on local storage, which allows for significant data flow optimizations.
 

@@ -16,7 +16,7 @@ The nonnegative cost associated with this shipping method.
 required DOMString amount;
 ```
 
-#### Discussion
+## Discussion
 
 The amount must be nonnegative to pass validation.
 

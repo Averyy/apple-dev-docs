@@ -15,7 +15,7 @@ The common base class for mass storage objects.
 class IOStorage : IOService
 ```
 
-#### Overview
+## Overview
 
 The IOStorage class is the common base class for mass storage objects. It is an abstract class that defines the open/close/read/write APIs that need to be implemented in a given subclass. Synchronous versions of the read/write APIs are provided here -- they are coded in such a way as to wrap the asynchronous versions implemented in the subclass.
 

@@ -37,7 +37,7 @@ class SKCloudServiceSetupViewController
 - [Offering Apple Music Subscription in Your App](./offering-apple-music-subscription-in-your-app.md)
 - [Determining a person’s Apple Music capabilities](./determining-a-person-s-apple-music-capabilities.md)
 
-#### Overview
+## Overview
 
 Use the view that this view controller presents to allow customers to set up cloud services that are associated with their iTunes Store account, like an Apple Music subscription.
 

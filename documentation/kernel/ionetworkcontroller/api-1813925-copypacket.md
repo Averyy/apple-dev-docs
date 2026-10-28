@@ -13,11 +13,11 @@ virtual mbuf_t copyPacket(
  UInt32 size = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new packet containing the same data as the source packet.
 
-#### Overview
+## Overview
 
 The source packet is not modified by this method.
 

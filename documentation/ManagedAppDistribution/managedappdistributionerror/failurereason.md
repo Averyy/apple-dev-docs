@@ -19,7 +19,7 @@ A detailed description of the error.
 var failureReason: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This appears in the body of an alert.
 

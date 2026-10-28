@@ -24,11 +24,11 @@ func AudioQueueStop(_ inAQ: AudioQueueRef, _ inImmediate: Bool) -> OSStatus
 extern OSStatus AudioQueueStop(AudioQueueRef inAQ, Boolean inImmediate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 This function resets an audio queue, stops the audio hardware associated with the queue if it is not in use by other audio services, and stops the audio queue. When recording, this function is typically invoked by a user. When playing back, a playback audio queue callback should call this function when there is no more audio to play.
 

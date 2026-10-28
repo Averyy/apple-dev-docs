@@ -15,11 +15,11 @@ Read from or write to a file.
 int vn_rdwr(enum uio_rw rw, struct vnode *vp, caddr_t base, int len, off_t offset, enum uio_seg segflg, int ioflg, kauth_cred_t cred, int *aresid, proc_t p);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success; errors from filesystem, and EIO if did not perform all requested I/O and the "aresid" parameter is NULL.
 
-#### Discussion
+## Discussion
 
 vn_rdwr() abstracts the details of constructing a uio and picking a vnode operation to allow simple in-kernel file I/O.
 

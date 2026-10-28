@@ -22,11 +22,11 @@ convenience init(view: UIView)
 - (instancetype) initWithView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A drag preview that is based on the specified view.
 
-#### Discussion
+## Discussion
 
 Use this method to display a drag item preview based on a view that you provide. The preview displays a snapshot of the provided view. Changes to the view don’t appear after the preview is shown, and the preview doesn’t change or move the view.
 

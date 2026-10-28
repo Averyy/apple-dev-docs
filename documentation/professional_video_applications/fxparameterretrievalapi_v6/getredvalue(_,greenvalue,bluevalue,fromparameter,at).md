@@ -20,11 +20,11 @@ func getRedValue(_ red: UnsafeMutablePointer<Double>, greenValue green: UnsafeMu
 - (BOOL) getRedValue:(double *) red greenValue:(double *) green blueValue:(double *) blue fromParameter:(UInt32) parameterID atTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the values are retrieved successfully; otherwise `NO`.
 
-#### Discussion
+## Discussion
 
 The returned color values are in the project working color space, unless the parameter has the [`kFxParameterFlag_DONT_REMAP_COLORS`](../kfxparameterflag_dont_remap_colors.md) flag set. If this flag is set, the color values are copied verbatim from the parameter with no conversion.
 

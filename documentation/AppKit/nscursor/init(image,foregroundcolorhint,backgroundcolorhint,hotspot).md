@@ -21,7 +21,7 @@ convenience init(image newImage: NSImage, foregroundColorHint fg: NSColor?, back
 - (instancetype) initWithImage:(NSImage *) newImage foregroundColorHint:(NSColor *) fg backgroundColorHint:(NSColor *) bg hotSpot:(NSPoint) hotSpot;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized cursor object.
 

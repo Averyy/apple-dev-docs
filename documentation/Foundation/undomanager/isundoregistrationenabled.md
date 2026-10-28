@@ -25,7 +25,7 @@ var isUndoRegistrationEnabled: Bool { get }
 @property (readonly, getter=isUndoRegistrationEnabled) BOOL undoRegistrationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if registration is enabled; otherwise, [`false`](../../Swift/false.md).
 

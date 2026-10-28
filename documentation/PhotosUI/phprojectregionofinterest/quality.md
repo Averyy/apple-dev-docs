@@ -19,7 +19,7 @@ var quality: Double { get }
 @property (nonatomic, readonly) double quality;
 ```
 
-#### Discussion
+## Discussion
 
 The `quality` score represents the quality of the region of interest in the individual asset, based on factors like sharpness, visibility, and prominence in the photo. Values range from `0` to `1`, with a default of `0.5`. Different regions of interest with the same identifier may have different quality values. If a project must choose between multiple assets containing the same region of interest, use the `quality` metric to choose the best representative.
 

@@ -19,11 +19,11 @@ var deviceSupportedSMSServices: UInt32 { get }
 @property (readonly) uint32_t deviceSupportedSMSServices;
 ```
 
-#### Return Value
+## Return Value
 
 The SMS services supported
 
-#### Discussion
+## Discussion
 
 Returns the device’s supported SMS services bitmap. The values are described in “IOBluetoothHandsFreeSMSSupport.”
 

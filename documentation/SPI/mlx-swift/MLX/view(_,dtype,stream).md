@@ -17,13 +17,13 @@ View the array as a different type.
 func view(_ array: MLXArray, dtype: DType, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The output array will change along the last axis if the input array’s type and the output array’s type do not have the same size.
 
 Note: the view op does not imply that the input and output arrays share their underlying data. The view only gaurantees that the binary representation of each element (or group of elements) is the same.
 
-##### See Also
+### See Also
 
 - [`view(dtype:stream:)`](./mlxarray/view%28dtype,stream%29.md)
 

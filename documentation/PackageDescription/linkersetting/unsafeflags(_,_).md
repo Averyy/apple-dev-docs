@@ -15,7 +15,7 @@ Sets unsafe flags to pass arbitrary command-line flags to the corresponding buil
 static func unsafeFlags(_ flags: [String], _ condition: BuildSettingCondition? = nil) -> LinkerSetting
 ```
 
-#### Discussion
+## Discussion
 
 As the usage of the word “unsafe” implies, Swift Package Manager can’t safely determine if the build flags have any negative side effect on the build since certain flags can change the behavior of how it performs a build.
 

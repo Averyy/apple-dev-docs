@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_AutomationDriveInterface = 0x12
 ```
 
-#### Discussion
+## Discussion
 
 Automation Drive Interface device.
 

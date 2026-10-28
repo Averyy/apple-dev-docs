@@ -25,7 +25,7 @@ let NSPersistentStoreUbiquitousContentNameKey: String
 extern NSString * const NSPersistentStoreUbiquitousContentNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 This option is required for ubiquitous content to function.
 

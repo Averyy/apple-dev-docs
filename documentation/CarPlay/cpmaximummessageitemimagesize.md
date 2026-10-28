@@ -21,7 +21,7 @@ let CPMaximumMessageItemImageSize: CGSize
 extern const CGSize CPMaximumMessageItemImageSize;
 ```
 
-#### Discussion
+## Discussion
 
 At runtime, use this value to determine the maximum size of an image that a message list item can display in its leading and trailing regions.
 

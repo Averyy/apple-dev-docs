@@ -22,7 +22,7 @@ class AEAssessmentApplication
 @interface AEAssessmentApplication : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an instance of this class when you want to make an app besides yours, like a calculator or a dictionary, available during an assessment. Create a representation of the app that you want to allow using the app’s bundle identifier and optionally the identifier of the team that distributes the app. You can get both identifiers for an app that you have installed using the `codesign` command line utility:
 

@@ -20,7 +20,7 @@ Creates a joint with the provided name, rest pose transform, and optional childr
 init(_ name: String, restPoseTransform: Transform = .identity, @SkeletonResource.JointBuilder children: () throws -> [SkeletonResource.Joint] = { [] }) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If any children share the same name.
 

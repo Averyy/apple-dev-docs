@@ -15,7 +15,7 @@ Releases the memory associated with a secure download object.
 OSStatus SecureDownloadRelease(SecureDownloadRef downloadRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 

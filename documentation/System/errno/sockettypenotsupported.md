@@ -25,7 +25,7 @@ static var socketTypeNotSupported: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 Support for the socket type hasn’t been configured into the system or no implementation for it exists.
 

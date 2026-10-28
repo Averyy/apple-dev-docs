@@ -36,7 +36,7 @@ var userInfo: [AnyHashable : Any] { get set }
 
 - [Declaring your actionable notification types](../declaring-your-actionable-notification-types.md)
 
-#### Discussion
+## Discussion
 
 Use this property to associate custom information with the notification. The contents of the dictionary aren’t seen by the user, but are accessible to your app or to any notification-related app extensions.
 

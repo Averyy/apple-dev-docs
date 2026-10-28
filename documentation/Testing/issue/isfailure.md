@@ -16,7 +16,7 @@ Whether or not this issue should cause the test it’s associated with to be con
 var isFailure: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` for issues which have a severity level of [`Issue.Severity.error`](./severity-swift.enum/error.md) or greater and are not known issues via [`withKnownIssue(_:isIntermittent:sourceLocation:_:when:matching:)`](../withknownissue%28_,isintermittent,sourcelocation,_,when,matching%29.md). Otherwise, the value of this property is `false.`
 

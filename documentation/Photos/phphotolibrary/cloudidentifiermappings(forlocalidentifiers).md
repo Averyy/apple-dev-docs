@@ -20,11 +20,11 @@ Retrieves the cloud identifier mappings for the list of local identifiers.
 func cloudIdentifierMappings(forLocalIdentifiers localIdentifiers: [String]) -> [String : Result<PHCloudIdentifier, any Error>]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains a map of local identifiers to their corresponding cloud mappings.
 
-#### Discussion
+## Discussion
 
 Retrieving cloud identifiers can be an expensive operation, so perform this lookup sparingly. Instead, work with local identifiers and perform mapping work at load and save points. Then store and share the cloud identifiers to make them available on other devices.
 

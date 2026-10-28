@@ -25,11 +25,11 @@ func CFBundleCopyResourceURL(_ bundle: CFBundle!, _ resourceName: CFString!, _ r
 extern CFURLRefCFBundleCopyResourceURL(CFBundleRef bundle, CFStringRef resourceName, CFStringRef resourceType, CFStringRef subDirName);
 ```
 
-#### Return Value
+## Return Value
 
 A CFURL object describing the location of the requested resource, or `NULL` if the resource cannot be found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 For example, if a bundle contains a subdirectory `WaterSounds` that includes a file `Water1.aiff`, you can retrieve the URL for the file using:
 

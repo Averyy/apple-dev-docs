@@ -21,7 +21,7 @@ A type representing the width of a day period in a format style.
 enum Width
 ```
 
-#### Overview
+## Overview
 
 The possible values of a width are `abbreviated`, `narrow`, and `wide`.
 

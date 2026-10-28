@@ -21,7 +21,7 @@ A guide that marks the bottom edge of the view.
 static let bottom: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`bottom`](../verticalalignment/bottom.md) vertical guide:
 

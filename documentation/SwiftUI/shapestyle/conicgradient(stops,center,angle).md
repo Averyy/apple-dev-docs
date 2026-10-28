@@ -24,7 +24,7 @@ static func conicGradient(stops: [Gradient.Stop], center: UnitPoint, angle: Angl
 
 Available when `Self` is `AngularGradient`.
 
-#### Discussion
+## Discussion
 
 For more information on how to use conic gradients, see [`conicGradient(_:center:angle:)`](./conicgradient%28_,center,angle%29.md).
 

@@ -17,7 +17,7 @@ typedef struct IOUSBHubPortReEnumerateParam {
 } IOUSBHubPortReEnumerateParam;
 ```
 
-#### Overview
+## Overview
 
 Use this structure to specify the port that needs reenumeration.
 

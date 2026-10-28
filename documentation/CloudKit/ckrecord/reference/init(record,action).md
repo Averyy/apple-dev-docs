@@ -25,11 +25,11 @@ convenience init(record: CKRecord, action: CKRecord.ReferenceAction)
 - (instancetype) initWithRecord:(CKRecord *) record action:(CKReferenceAction) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized reference object that points to the specified record.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a reference to a local record object. You can reference a local record that you create, or one that you fetch from the server.
 

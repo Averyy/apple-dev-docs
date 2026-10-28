@@ -15,7 +15,7 @@ Notifies your driver that buffer space is available for your device’s data.
 virtual void RxFreeSpaceAvailable();
 ```
 
-#### Discussion
+## Discussion
 
 Override this method and use it to read data asynchronously from the device’s serial port. When you finish reading the data, call the [`RxDataAvailable`](./rxdataavailable.md) method to let the system know the data is ready.
 

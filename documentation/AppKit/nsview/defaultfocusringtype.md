@@ -19,11 +19,11 @@ class var defaultFocusRingType: NSFocusRingType { get }
 @property (class, readonly) NSFocusRingType defaultFocusRingType;
 ```
 
-#### Return Value
+## Return Value
 
 The default type of focus ring for objects of the view’s class. Possible return values are listed in [`NSFocusRingType`](../nsfocusringtype.md).
 
-#### Discussion
+## Discussion
 
 If the value in the [`focusRingType`](./focusringtype.md) property is [`NSFocusRingType.default`](../nsfocusringtype/default.md), the view can call this class method to find out what type of focus ring is the default. The view is free to ignore the default setting.
 

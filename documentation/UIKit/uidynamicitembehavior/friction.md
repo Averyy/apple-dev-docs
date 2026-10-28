@@ -23,7 +23,7 @@ var friction: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat friction;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `0.0`, which corresponds to no friction. Use a value of `1.0` to apply strong friction. To apply an even stronger friction, you can use higher numbers.
 

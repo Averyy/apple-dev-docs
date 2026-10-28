@@ -21,11 +21,11 @@ Provides an array of timeline entries for the current time and, optionally, any 
 func timeline(for configuration: Self.Intent, in context: Self.Context) async -> Timeline<Self.Entry>
 ```
 
-#### Return Value
+## Return Value
 
 An array of timeline entries for the current time and, optionally, any future times to update a widget.
 
-#### Discussion
+## Discussion
 
 The `configuration` parameter provides user-customized values, as defined in your custom intent.
 

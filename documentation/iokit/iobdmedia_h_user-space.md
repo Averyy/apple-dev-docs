@@ -5,7 +5,7 @@
 
 This header contains the IOBDMedia class definition.
 
-#### Overview
+## Overview
 
 ## Topics
 

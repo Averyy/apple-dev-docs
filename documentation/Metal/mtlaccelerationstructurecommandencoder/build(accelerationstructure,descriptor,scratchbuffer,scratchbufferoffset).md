@@ -25,7 +25,7 @@ func build(accelerationStructure: any MTLAccelerationStructure, descriptor: MTLA
 - (void) buildAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure descriptor:(MTLAccelerationStructureDescriptor *) descriptor scratchBuffer:(id<MTLBuffer>) scratchBuffer scratchBufferOffset:(NSUInteger) scratchBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The destination acceleration structure and the scratch buffer needs enough space in memory to hold the acceleration structure data. Call the [`accelerationStructureSizes(descriptor:)`](../mtldevice/accelerationstructuresizes%28descriptor%29.md) method on the Metal device object to get the required space.
 

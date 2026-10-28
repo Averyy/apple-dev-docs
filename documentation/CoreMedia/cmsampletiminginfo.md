@@ -25,7 +25,7 @@ struct CMSampleTimingInfo
 typedef struct { ... } CMSampleTimingInfo;
 ```
 
-#### Overview
+## Overview
 
 A single `CMSampleTimingInfo` struct can describe every individual sample in a `CMSampleBuffer`, if the samples all have the same duration and are in presentation order with no gaps.
 

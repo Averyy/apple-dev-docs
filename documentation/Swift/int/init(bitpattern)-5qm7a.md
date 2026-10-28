@@ -21,7 +21,7 @@ Creates a new value with the bit pattern of the given pointer.
 init(bitPattern pointer: OpaquePointer?)
 ```
 
-#### Discussion
+## Discussion
 
 The new value represents the address of the pointer passed as `pointer`. If `pointer` is `nil`, the result is `0`.
 

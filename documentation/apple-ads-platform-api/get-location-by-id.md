@@ -9,7 +9,7 @@ Retrieve a single business location by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves the full details of a specific business location registered in Apple Ads. The response includes the location’s address, geographic coordinates, business categories, and current status.
 
@@ -32,9 +32,9 @@ Retrieving a location’s details is subject to brand ownership and status limit
 | Brand ownership | You can only retrieve locations belonging to brands accessible to your ad account. |
 | Open locations only | Only locations with `status: OPEN` can be added to location groups and targeted in campaigns. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves a single location by its unique identifier. The response includes the full location object with address, coordinates, and eligibility status.
 
@@ -42,7 +42,7 @@ Retrieves a single location by its unique identifier. The response includes the 
 GET /v1/locations/7205759403792794
 ```
 
-##### Response
+### Response
 
 ```json
 {

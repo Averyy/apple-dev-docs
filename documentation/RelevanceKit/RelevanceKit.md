@@ -14,7 +14,7 @@ Provide on-device intelligence with contextual clues that increase your widget�
 - visionOS 26.0+
 - watchOS 26.0+
 
-#### Overview
+## Overview
 
 On Apple Watch, widgets appear in the Smart Stack in an order that best fits a person’s context. To order the widgets that appear in the Smart Stack, watchOS attempts to determine a widget’s relevance based on several factors, including contextual clues your app provides to the system.
 

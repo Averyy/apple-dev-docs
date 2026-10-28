@@ -19,7 +19,7 @@ var numberOfClicksRequired: Int { get set }
 @property NSInteger numberOfClicksRequired;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property should always be a positive integer. Negative integers or `0` cause this object to never recognize its gesture. The default value of this property is `1`.
 

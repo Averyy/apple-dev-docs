@@ -24,7 +24,7 @@ init?(coder aDecoder: NSCoder, device: any MTLDevice)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to specify the location of your data; otherwise, the framework may guess incorrectly.
 

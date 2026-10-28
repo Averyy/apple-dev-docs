@@ -25,7 +25,7 @@ static let volumeIsJournalingKey: URLResourceKey
 extern NSURLResourceKey const NSURLVolumeIsJournalingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean `NSNumber` object.
 

@@ -21,7 +21,7 @@ Calls the given closure with a file stream created from the specified file descr
 static func withFileStream<E>(fd: FileDescriptor, automaticClose: Bool = true, _ body: (ArchiveByteStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 

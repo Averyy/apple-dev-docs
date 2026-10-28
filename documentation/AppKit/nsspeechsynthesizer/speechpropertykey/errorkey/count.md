@@ -19,7 +19,7 @@ static let count: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey
 extern NSSpeechErrorKey const NSSpeechErrorCount;
 ```
 
-#### Discussion
+## Discussion
 
 Using the [`oldestCode`](./oldestcode.md) keys and the [`newestCode`](./newestcode.md) keys, you can get information about the oldest and most recent errors that occurred since the last call to [`object(forProperty:)`](../../object%28forproperty%29.md), but you cannot get information about any intervening errors.
 

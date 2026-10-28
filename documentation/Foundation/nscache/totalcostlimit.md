@@ -25,7 +25,7 @@ var totalCostLimit: Int { get set }
 @property NSUInteger totalCostLimit;
 ```
 
-#### Discussion
+## Discussion
 
 If `0`, there is no total cost limit. The default value is `0`.
 

@@ -23,7 +23,7 @@ optional func removeDictationResultPlaceholder(_ placeholder: Any, willInsertRes
 - (void) removeDictationResultPlaceholder:(id) placeholder willInsertResult:(BOOL) willInsertResult;
 ```
 
-#### Discussion
+## Discussion
 
 If the value in the `willInsertResult` parameter is [`false`](../../Swift/false.md), the placeholder animation is not replaced by an actual dictation result. When this happens, the system still removes the placeholder animation and removes the strong reference to your placeholder object.
 

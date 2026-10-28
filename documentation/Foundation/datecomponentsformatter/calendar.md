@@ -25,7 +25,7 @@ var calendar: Calendar? { get set }
 @property (copy, nullable) NSCalendar * calendar;
 ```
 
-#### Discussion
+## Discussion
 
 The formatter uses the calendar in this property to format values that do not have an inherent calendar of their own. For example, the formatter uses this calendar when formatting an [`TimeInterval`](../timeinterval.md) value.
 

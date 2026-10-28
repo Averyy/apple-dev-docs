@@ -19,11 +19,11 @@ var userPreferredLanguages: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * userPreferredLanguages;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the user’s preferred languages for spell checking. The order is set in the system preferences.
 
-#### Discussion
+## Discussion
 
 If [`automaticallyIdentifiesLanguages`](./automaticallyidentifieslanguages.md) is [`true`](../../Swift/true.md), then text checking will automatically use this method as appropriate; otherwise, it will use the language set by [`setLanguage(_:)`](./setlanguage%28_%29.md).
 

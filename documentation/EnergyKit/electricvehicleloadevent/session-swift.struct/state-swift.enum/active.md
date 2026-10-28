@@ -21,7 +21,7 @@ case active
 
 - [Providing charging history for electric vehicles](../../../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 The events are relative to the begin state corresponding to the `begin` events session ID.
 

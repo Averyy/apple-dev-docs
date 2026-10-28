@@ -25,11 +25,11 @@ class func components(fromLocaleIdentifier string: String) -> [String : String]
 + (NSDictionary<NSString *,NSString *> *) componentsFromLocaleIdentifier:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that is the result of parsing `string` as a locale ID. The keys are the constant NSString constants corresponding to the locale ID components, and the values correspond to constants where available. For possible values, see [`NSLocale.Key`](./key.md).
 
-#### Discussion
+## Discussion
 
 For example, the locale identifier `"en_US@calendar=japanese"` yields a dictionary with three entries:
 

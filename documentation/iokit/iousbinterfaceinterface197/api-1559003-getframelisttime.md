@@ -16,11 +16,11 @@ Returns the number of microseconds in each USB Frame.
 IOReturn (*GetFrameListTime)(void *self, UInt32 *microsecondsInFrame);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 This function can be used to determine whether the device is functioning in full speed or a high speed. In the case of a full speed device, the returned value will be kUSBFullSpeedMicrosecondsInFrame. In the case of a high speed device, the return value will be kUSBHighSpeedMicrosecondsInFrame. (This API should really be called GetUSBFrameTime).
 

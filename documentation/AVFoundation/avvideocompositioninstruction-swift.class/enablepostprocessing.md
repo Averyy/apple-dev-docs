@@ -24,7 +24,7 @@ var enablePostProcessing: Bool { get }
 @property (nonatomic, readonly) BOOL enablePostProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 A value of [`false`](../../Swift/false.md) indicates that no post processing is required for the whole duration of the video composition instruction. The composition process is more efficient if the value is [`false`](../../Swift/false.md).
 

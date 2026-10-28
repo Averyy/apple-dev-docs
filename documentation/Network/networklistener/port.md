@@ -21,7 +21,7 @@ The port that the listener is listening on.
 final var port: NWEndpoint.Port? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Present once the listener becomes ready.
 

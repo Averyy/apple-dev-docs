@@ -15,11 +15,11 @@ CMError CMCopyProfileLocalizedStringDictionary (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This function allows you to get a CFDictionary which contains the language locale and string for multiple localizations from a given tag. 
 

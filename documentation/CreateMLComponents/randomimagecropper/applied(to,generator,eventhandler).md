@@ -20,7 +20,7 @@ Randomly crops an image at a random location of a given size.
 func applied(to image: CIImage, generator: inout some RandomNumberGenerator, eventHandler: EventHandler? = nil) async throws -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 The cropped image.
 

@@ -20,7 +20,7 @@ func accessibilityAttributedString(for range: NSRange) -> NSAttributedString?
 - (NSAttributedString *) accessibilityAttributedStringForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string representing the specified characters.
 

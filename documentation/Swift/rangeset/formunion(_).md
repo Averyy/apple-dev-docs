@@ -23,7 +23,7 @@ mutating func formUnion(_ other: RangeSet<Bound>)
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*m* + *n*), where *m* and *n* are the number of ranges in this and the other range set.
 

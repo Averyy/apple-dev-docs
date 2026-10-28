@@ -15,7 +15,7 @@ The base descriptor header.
 struct IOUSBDescriptorHeader;
 ```
 
-#### Overview
+## Overview
 
 For more information about descriptors, see section 9.5 of the USB 2.0 specification at [https://www.usb.org/](https://www.usb.org/).
 

@@ -23,7 +23,7 @@ var mixToTelephonyUplink: Bool { get set }
 @property (nonatomic, assign) BOOL mixToTelephonyUplink;
 ```
 
-#### Discussion
+## Discussion
 
 This property has no effect when there isn’t an active call.
 

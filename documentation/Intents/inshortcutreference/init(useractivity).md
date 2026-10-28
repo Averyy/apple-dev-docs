@@ -24,7 +24,7 @@ init(userActivity: NSUserActivity)
 - (instancetype) initWithUserActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 A new shortcut object initialized with the specified user activitiy.
 

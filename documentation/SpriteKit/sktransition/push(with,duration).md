@@ -25,7 +25,7 @@ class func push(with direction: SKTransitionDirection, duration sec: TimeInterva
 + (SKTransition *) pushWithDirection:(SKTransitionDirection) direction duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 

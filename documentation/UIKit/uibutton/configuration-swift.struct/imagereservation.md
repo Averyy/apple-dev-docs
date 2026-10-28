@@ -19,7 +19,7 @@ A value that reserves space for the image in the same axis as the edge against w
 var imageReservation: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `0`. The value reserves space in the axis that corresponds to [`imagePlacement`](../../uibuttonconfiguration/imageplacement.md). If the image is larger than the reservation value in that axis, the system ignores the reservation value. Otherwise, the system centers the image in the space that the reservation value provides.
 

@@ -6,7 +6,7 @@
 
 An optional name atom.
 
-#### Overview
+## Overview
 
 For more information, see [`Name atom`](../name_atom.md).
 

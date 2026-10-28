@@ -20,7 +20,7 @@ A reference to an external asset such as a texture, audio file, or USD layer.
 struct AssetPath
 ```
 
-#### Overview
+## Overview
 
 Stores both the authored path (the string as written in USD) and the resolved path (the location after asset resolution, which may be empty if resolution did not run or failed). The resolved path is not guaranteed to be a filesystem path — custom asset resolvers may return URLs, database identifiers, or opaque tokens.
 

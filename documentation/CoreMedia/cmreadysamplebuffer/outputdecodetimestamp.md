@@ -21,7 +21,7 @@ The output decode timestamp of the sample buffer.
 var outputDecodeTimeStamp: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 For consistency with [`outputPresentationTimeStamp`](./outputpresentationtimestamp.md), this is calculated as: `OutputPresentationTimeStamp + ((DecodeTimeStamp - PresentationTimeStamp) / SpeedMultiplier)`.
 

@@ -24,7 +24,7 @@ case ready
 INPlayMediaIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Respond with this code in your Intents app extension’s [`confirm(intent:completion:)`](../inplaymediaintenthandling/confirm%28intent,completion%29.md) method after verifying that your app can play the requested media.
 

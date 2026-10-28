@@ -24,11 +24,11 @@ func index(of anObject: ObjectType, in range: NSRange) -> Int
 - (NSUInteger) indexOfObject:(ObjectType) anObject inRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The lowest index within `range` whose corresponding object in the fetch result is equal to `anObject`, or `NSNotFound` if no such object is in the fetch result.
 
-#### Discussion
+## Discussion
 
 Starting at `range.location`, this method sends an `==` message to each object in the fetch result until it finds a match or reaches the end of the fetch result. This method passes the `anObject` parameter to each `==` message.
 

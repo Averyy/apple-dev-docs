@@ -20,7 +20,7 @@ Creates a MLUntypedColumn of type MLMultiArray from the specified MLUntypedColum
 init(multiArrays: MLUntypedColumn)
 ```
 
-#### Return Value
+## Return Value
 
 A MLUntypedColumn of type MultiArray from the specified MLUntypedColumn if the given MLUntypedColumn’s values are convertible to MLDataValue.MultiArrayType. Returns an invalid MLUntypedColumn if the elements in the given MLUntypedColumn are not convertible to MLDataValue.MultiArrayType.
 

@@ -23,11 +23,11 @@ func supportedPhotoCodecTypes(for fileType: AVFileType) -> [AVVideoCodecType]
 - (NSArray<NSString *> *) supportedPhotoCodecTypesForFileType:(AVFileType) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of video codec types supported for encoding in the specified file type.
 
-#### Discussion
+## Discussion
 
 When you issue a photo capture request, you can separately specify the format for capturing or encoding image data and the container format for producing output files containing that data. However, each file type supports only a specific set of image data types.
 

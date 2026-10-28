@@ -19,7 +19,7 @@ optional func deviceBrowserView(_ deviceBrowserView: IKDeviceBrowserView!, didEn
 - (void) deviceBrowserView:(IKDeviceBrowserView *) deviceBrowserView didEncounterError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The user should handle the error in some fashion, for example, presenting an error panel to the user.
 

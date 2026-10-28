@@ -16,7 +16,7 @@ The error code for this instance.
 attribute ApplePayErrorCode code;
 ```
 
-#### Discussion
+## Discussion
 
 For the possible values, see [`ApplePayErrorCode`](../applepayerrorcode.md).
 

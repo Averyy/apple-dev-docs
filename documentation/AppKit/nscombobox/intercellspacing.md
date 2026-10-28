@@ -19,7 +19,7 @@ var intercellSpacing: NSSize { get set }
 @property NSSize intercellSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 Spacing values are measured in points. The default spacing is (`3.0`, `2.0`).
 

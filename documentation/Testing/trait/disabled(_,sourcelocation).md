@@ -30,7 +30,7 @@ Available when `Self` is `ConditionTrait`.
 - [Enabling and disabling tests](../enablinganddisabling.md)
 - [Organizing test functions with suite types](../organizingtests.md)
 
-#### Return Value
+## Return Value
 
 An instance of [`ConditionTrait`](../conditiontrait.md) that always disables the test to which it is added.
 

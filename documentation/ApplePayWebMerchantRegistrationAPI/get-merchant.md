@@ -9,7 +9,7 @@ Retrieve information about a registered merchant’s current state by using the 
 **Availability**:
 - Apple Pay Web Merchant Registration API 1.0+
 
-#### Discussion
+## Discussion
 
 Get information about a merchant you previously registered. You provide the merchant’s unique identifier (`partnerInternalMerchantIdentifier`). A succesful response contains a [`MerchantDetails`](./merchantdetails.md) object in the response body.
 

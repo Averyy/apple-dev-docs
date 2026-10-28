@@ -25,11 +25,11 @@ func property_getAttributes(_ property: objc_property_t) -> UnsafePointer<CChar>
 extern const char *property_getAttributes(objc_property_t property);
 ```
 
-#### Return Value
+## Return Value
 
 A C string containing the property’s attributes.
 
-#### Discussion
+## Discussion
 
 The format of the attribute string is described in [Declared Properties](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtPropertyIntrospection.html#//apple_ref/doc/uid/TP40008048-CH101) in [Objective-C Runtime Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048).
 

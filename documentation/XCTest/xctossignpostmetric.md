@@ -24,7 +24,7 @@ class XCTOSSignpostMetric
 @interface XCTOSSignpostMetric : NSObject
 ```
 
-#### Overview
+## Overview
 
 This metric captures the time that elapses between the [`begin`](../os/ossignposttype/begin.md) and [`end`](../os/ossignposttype/end.md) events for a specific named [`os_signpost(_:dso:log:name:signpostID:)`](../os/os_signpost%28_,dso,log,name,signpostid%29-2oz8u.md) region. It doesn’t record any results when there isn’t a matching pair of `begin` and `end` events.
 

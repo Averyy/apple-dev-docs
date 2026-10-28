@@ -5,13 +5,13 @@
 
 Implement your Local Push Connectivity app to ensure delivery of notifications.
 
-#### Overview
+## Overview
 
 By implementing Local Push Connectivity, your app can perform many of the tasks provided by Apple Push Notification Service (APNs), even on restricted or isolated networks where APNs is unavailable. Create push notifications by delivering messages from a server to your client, which then uses a local notification or [CallKit](../CallKit/CallKit.md) to alert the user.
 
 When you adopt Local Push Connectivity, you’re responsible for establishing and maintaining a reliable connection between your server and your client. To keep the connection viable, use the following best practices to maintain your client’s life cycle and connect over the local network.
 
-##### Implement the Push Provider App Extension Life Cycle
+### Implement the Push Provider App Extension Life Cycle
 
 To implement Local Push Connectivity on a local network, create both a local server and an app that receives notifications from this server. Create an instance of [`NEAppPushManager`](./neapppushmanager.md) when your client app starts up, and set its [`matchSSIDs`](./neapppushmanager/matchssids.md) property to a set of known Wi-Fi network SSIDs
 
@@ -42,7 +42,7 @@ Ensure that the extension can launch when the system needs it and can continue r
 - When the device leaves the known Wi-Fi network, the system calls your push provider’s [`stop(with:completionHandler:)`](./neapppushprovider/stop%28with,completionhandler%29.md) method. Implement this method to disconnect from the server and release any previously allocated resources.
 - Confirm that your [`NEAppPushProvider`](./neapppushprovider.md) implementation doesn’t create a retain cycle with itself. After you call the `completionHandler` that the system passes to [`stop(with:completionHandler:)`](./neapppushprovider/stop%28with,completionhandler%29.md), the Network Extension framework releases your [`NEAppPushProvider`](./neapppushprovider.md) instance. This instance typically deallocates from memory when released, but if the instance has a retain cycle with itself, it fails to deallocate and wastes memory. Failure to deallocate can also cause the system to have two or more instances of your push provider, leading to inconsistent behavior. Use Instruments or add a logging statement to `deinit` to verify that your [`NEAppPushProvider`](./neapppushprovider.md) deinitializes when expected.
 
-##### Establish and Monitor the Network Connection
+### Establish and Monitor the Network Connection
 
 As shown in the previous section, your client extension creates its connection to your server in your implementation of the push provider’s [`start(completionHandler:)`](./neapppushprovider/start%28completionhandler%29.md) method. Use the [Network](../Network/Network.md) framework to create and maintain this connection. The Network framework is an ideal choice to implement Local Push Connectivity, because it provides features like path monitors, TLS negotiation, and support for custom protocol framers.
 
@@ -70,7 +70,7 @@ override func handleTimerEvent() {
 }
 ```
 
-##### Optimize the Network Architecture
+### Optimize the Network Architecture
 
 If the Wi-Fi network is under your control, configure the network to better support your app’s client-server connection. Start by ensuring limited radio frequency congestion. Measure this by determining channel utilzation, which ideally is 40% or less. One symptom of congestion is a high number of frame retransmissions; which ideally is as low as possible, typically not more than 15% of all traffic.
 

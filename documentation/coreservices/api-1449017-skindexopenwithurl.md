@@ -19,11 +19,11 @@ func SKIndexOpenWithURL(_ inURL: CFURL!, _ inIndexName: CFString!, _ inWriteAcce
 SKIndexRef SKIndexOpenWithURL(CFURLRef inURL, CFStringRef inIndexName, Boolean inWriteAccess);
 ```
 
-#### Return Value
+## Return Value
 
 The named index, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 If `inIndexName` is `NULL` and `inData` does not contain an index with the default name, this function returns `NULL`.
 
@@ -31,7 +31,7 @@ A call to `SKIndexOpenWithURL` retains the opened index. When your application n
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
-##### Special Considerations
+### Special Considerations
 
 You cannot use [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md) with [`SKIndex`](./skindex.md) objects.
 

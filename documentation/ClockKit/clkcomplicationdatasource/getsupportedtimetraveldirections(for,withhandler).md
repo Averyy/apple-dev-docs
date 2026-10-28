@@ -25,7 +25,7 @@ optional func getSupportedTimeTravelDirections(for complication: CLKComplication
 
 - [Loading future timeline events](../loading-future-timeline-events.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method to determine whether your app can provide future or past data entries for the specified complication type. Your implementation of this method must execute the block in the `handler` parameter and specify the supported directions.
 

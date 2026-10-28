@@ -17,7 +17,7 @@ optional var supportedDeviceEncryptionAlgorithms: [ASAuthorizationProviderExtens
 @property (readonly) NSArray<NSNumber *> * supportedDeviceEncryptionAlgorithms;
 ```
 
-#### Discussion
+## Discussion
 
 The supported device encryption algorithms.
 

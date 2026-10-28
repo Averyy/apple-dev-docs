@@ -19,7 +19,7 @@ enum Mode
 enum NSTextSelectionMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These modes determine how the text selection manager handles user interaction with text content.
 

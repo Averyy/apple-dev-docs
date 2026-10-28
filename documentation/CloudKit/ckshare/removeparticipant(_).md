@@ -25,7 +25,7 @@ func removeParticipant(_ participant: CKShare.Participant)
 - (void) removeParticipant:(CKShareParticipant *) participant;
 ```
 
-#### Discussion
+## Discussion
 
 To modify the list of participants, a share’s [`publicPermission`](./publicpermission.md) must be [`CKShare.ParticipantPermission.none`](./participantpermission/none.md). You can’t mix and match public and private users in the same share. You can only add certain participant types with this API. See [`CKShare.Participant`](./participant.md) for more information.
 

@@ -19,7 +19,7 @@ func setTextColor(_ color: UIColor?)
 - (void) setTextColor:(UIColor *) color;
 ```
 
-#### Discussion
+## Discussion
 
 This method defines the default color of the entire string. The text field uses this color unless you explicitly override it in an attributed string using the [`NSForegroundColorAttributeName`](../../UIKit/nsforegroundcolorattributename.md) attribute.
 

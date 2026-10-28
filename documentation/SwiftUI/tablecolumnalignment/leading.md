@@ -19,7 +19,7 @@ Leading column alignment.
 static var leading: TableColumnAlignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 With a `layoutDirection` of `leftToRight`, this is equivalent to left; and with a `layoutDirection` of `rightToLeft`, this is equivalent to right.
 

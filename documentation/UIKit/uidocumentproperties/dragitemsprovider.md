@@ -22,7 +22,7 @@ var dragItemsProvider: ((any UIDragSession) -> [UIDragItem])? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSArray<UIDragItem *> * (^dragItemsProvider)(id<UIDragSession>);
 ```
 
-#### Discussion
+## Discussion
 
 To support drag and drop, assign a closure that returns an array of drag items that represent the document contents. When you set this property, a person can drag and drop the document from the navigation item’s title menu.
 

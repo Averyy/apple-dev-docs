@@ -24,11 +24,11 @@ class func `default`() -> NEIPv4Route
 + (NEIPv4Route * const) defaultRoute;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NEIPv4Route`](../neipv4route.md) object containing the default IPv4 route.
 
-#### Discussion
+## Discussion
 
 Set this route in the `includedRoutes` array in the [`NEIPv4Settings`](../neipv4settings.md) object to specify that all IPv4 network traffic be routed to the TUN interface by default.
 

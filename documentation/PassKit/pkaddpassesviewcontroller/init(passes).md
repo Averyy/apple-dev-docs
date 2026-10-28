@@ -22,7 +22,7 @@ init?(passes: [PKPass])
 - (instancetype) initWithPasses:(NSArray<PKPass *> *) passes;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized add-passes view controller object or `nil` if there was a problem initializing the object.
 

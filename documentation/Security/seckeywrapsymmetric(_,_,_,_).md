@@ -21,7 +21,7 @@ func SecKeyWrapSymmetric(_ keyToWrap: SecKey, _ wrappingKey: SecKey, _ parameter
 CFDataRefSecKeyWrapSymmetric(SecKeyRef keyToWrap, SecKeyRef wrappingKey, CFDictionaryRef parameters, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The wrapped key, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the data’s memory when you are done with it.
 

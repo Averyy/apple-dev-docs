@@ -19,7 +19,7 @@ func enableWaterLock()
 - (void) enableWaterLock;
 ```
 
-#### Discussion
+## Discussion
 
 The following rules apply when using Water Lock:
 

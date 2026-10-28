@@ -21,7 +21,7 @@ Creates a tensor without data, with the shape and data type you specify.
 convenience init(shape: [Int], dataType: MLCDataType)
 ```
 
-#### Discussion
+## Discussion
 
 The tensor data type is [`MLCDataType.float32`](../mlcdatatype/float32.md).
 

@@ -21,7 +21,7 @@ Adds a time interval to a date.
 static func += (lhs: inout Date, rhs: TimeInterval)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This only adjusts an absolute value. If you wish to add calendrical concepts like hours, days, months then you must use a `Calendar`. This takes into account complexities like daylight saving time, months with different numbers of days, and more.
 

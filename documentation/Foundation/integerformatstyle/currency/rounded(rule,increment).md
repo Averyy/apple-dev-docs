@@ -21,7 +21,7 @@ Modifies the format style to use the specified rounding rule and increment.
 func rounded(rule: IntegerFormatStyle<Value>.Currency.Configuration.RoundingRule = .toNearestOrEven, increment: Int? = nil) -> IntegerFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 An integer currency format style modified to use the specified rounding rule and increment.
 

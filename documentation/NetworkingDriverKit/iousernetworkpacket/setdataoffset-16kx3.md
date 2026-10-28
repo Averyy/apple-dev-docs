@@ -15,7 +15,7 @@ Changes the offset to the beginning of the packet’s data to the specified valu
 virtual kern_return_t SetDataOffset(uint16_t offset);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

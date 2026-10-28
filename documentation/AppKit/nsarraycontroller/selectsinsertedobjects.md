@@ -19,7 +19,7 @@ var selectsInsertedObjects: Bool { get set }
 @property BOOL selectsInsertedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 

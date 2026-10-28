@@ -15,7 +15,7 @@ Creates a HID usage page from raw page and usage values.
 init(page: UInt16, usage: UInt16?)
 ```
 
-#### Discussion
+## Discussion
 
 Unsupported cases are returned as [`HIDUsage.generic(_:_:)`](./generic%28_,_%29.md).
 

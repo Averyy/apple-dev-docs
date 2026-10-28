@@ -19,7 +19,7 @@ var VMENTRY_LOAD_DBG_CONTROLS: UInt32 { get }
 VMENTRY_LOAD_DBG_CONTROLS
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

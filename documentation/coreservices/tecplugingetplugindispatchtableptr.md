@@ -16,11 +16,11 @@ Defines a pointer to a function that returnsa pointer to a plug-in dispatch tabl
 typedef TECPluginDispatchTable *(*TECPluginGetPluginDispatchTablePtr)(void);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the functiondispatch table for the plug-in. 
 
-#### Discussion
+## Discussion
 
 You need this callback only for OS X plug-ins. When youcreate a TEC plug-in in OS X you must export a function named `ConverterPluginGetPluginDispatchTable` withthe following prototype:
 

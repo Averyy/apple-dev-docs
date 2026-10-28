@@ -5,7 +5,7 @@
 
 Track energy consumption and provide people detailed insights into the charging of their electric vehicle.
 
-#### Overview
+## Overview
 
 You can use EnergyKit to optimize electric vehicle (EV) charging based on grid cleanliness and electricity rates, and provide people with insights into their charging sessions. Receive grid forecasts from the framework, make intelligent charging decisions, and submit energy usage data back to the framework.
 
@@ -25,7 +25,7 @@ Gathering this information allows your app to help people reduce their environme
 >
 > To use EnergyKit, the system requires your app to have the [`EnergyKit Entitlement`](../BundleResources/entitlements/com.apple.developer.energykit.md) entitlement with a value of `true`.
 
-#### Retrieve energy venues
+## Retrieve energy venues
 
 Energy venues represent physical locations where devices consume or generate electricity. Venues correspond to homes that a person configures in the Home app. Energy guidance, data submission, and insight provision require working with venues. You can retrieve the available venues by calling [`venues()`](./energyvenue/venues%28%29.md), and store each venue’s identifier for later use, as shown in the example below. You may run into errors when you query for venues; for information on how to address them, see [`EnergyKitError`](./energykiterror.md).
 
@@ -43,7 +43,7 @@ do {
 
 If your app supports multiple charging locations, allow people to manage them independently. For example, the sample code project [Optimizing home electricity usage](./optimizing-home-electricity-usage.md) demonstrates an option that toggles clean-energy charging per venue.
 
-#### Stream electricity guidance
+## Stream electricity guidance
 
 Electricity guidance provides forecasts that identify when cleaner electricity is available on the grid and when electricity rates are lower. Use the guidance to optimize how your managed devices consume electricity.
 
@@ -107,7 +107,7 @@ func selectCleanestChargingIntervals(
 
 This approach prioritizes the cleanest available electricity while ensuring the vehicle reaches its target state of charge before the person needs it.
 
-#### Generate electrical load events
+## Generate electrical load events
 
 Load events track energy consumption during charging sessions. They follow a session-based model; each session has a unique identifier, and progresses through three states that convey continuity: the beginning, active state, and ending.
 
@@ -223,7 +223,7 @@ let measurement = ElectricVehicleLoadEvent.ElectricalMeasurement(
 
 The range derives from the current state of charge and the vehicle’s efficiency. Temperature is important to charging performance because batteries charge more slowly at extreme temperatures.
 
-#### Generate status events
+## Generate status events
 
 Status events add to the information that load events provide by explaining the reasons behind specific charging behavior. While load events track energy consumption, status events answer questions such as why the car isn’t charging, and when charging can begin. The explanations appear in the Home app’s activity log when your app adopts the [`EnergyKit LoadEvents Entitlement`](../BundleResources/entitlements/com.apple.developer.energykit.loadevents-experience.md).
 
@@ -320,7 +320,7 @@ do {
 
 The framework throws [`EnergyKitError.rateLimitExceeded`](./energykiterror/ratelimitexceeded.md) if your app submits events too frequently. Implement appropriate retry logic with exponential backoff by doubling the wait time after each failed retry attempt.
 
-#### Request historical insights
+## Request historical insights
 
 After submitting load events, request insights to see how your device performs historically. Insights break down energy consumption by grid cleanliness and tariff periods, helping you verify that your charging algorithm optimizes for the cleanest and least expensive electricity.
 
@@ -392,7 +392,7 @@ for record in records {
 
 The framework provides insights only after you submit load events. Insights derive from historical data, so newly submitted events take time to reflect.
 
-#### Display energy data in the Home app
+## Display energy data in the Home app
 
 When you adopt the [`EnergyKit LoadEvents Entitlement`](../BundleResources/entitlements/com.apple.developer.energykit.loadevents-experience.md), the Home app displays your submitted events in a summarized layout. Add this entitlement to your app target in Xcode to enable Home app integration.
 

@@ -23,11 +23,11 @@ func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority
 - (CGSize) systemLayoutSizeFittingSize:(CGSize) targetSize withHorizontalFittingPriority:(UILayoutPriority) horizontalFittingPriority verticalFittingPriority:(UILayoutPriority) verticalFittingPriority;
 ```
 
-#### Return Value
+## Return Value
 
 The optimal size for the view based on the provided constraint priorities.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to prioritize the view’s constraints when determining the best possible size of the view.  This method does not actually change the size of the view.
 

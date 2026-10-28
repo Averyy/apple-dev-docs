@@ -12,13 +12,13 @@ Develop games where multiple players take turns and can exchange data while wait
 - Mac Catalyst 15.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample code project uses the GameKit framework to create a simple turn-based game where two players take turns incrementing a counter until a player stops playing or forfeits the match. The game uses the turn-based matchmaker interface for starting and managing multiple turn-based matches. This game also uses the GameKit exchanges feature for participants in a turn-based game to message and exchange data.
 
 To create your own turn-based game, replace the SwiftUI files with your gameplay interface, and modify the `TurnBasedGame` class to support your game.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, perform the following steps in Xcode:
 
@@ -30,7 +30,7 @@ To configure the sample code project, perform the following steps in Xcode:
 6. Build and run the sample on the two iOS devices.
 7. If the Welcome to Game Center sheet appears, sign in using a different Apple ID on each device.
 
-##### Initialize the player and register for turn-based events
+### Initialize the player and register for turn-based events
 
 Before using any GameKit APIs, the game needs to initialize the local player by presenting an interface for them to sign in to Game Center on their device. The `TurnBasedGame.authenticatePlayer()` method handles the initialization flow and, when complete, registers for turn-based game events.
 
@@ -39,7 +39,7 @@ Before using any GameKit APIs, the game needs to initialize the local player by 
 GKLocalPlayer.local.register(self)
 ```
 
-##### Start a turn-based match
+### Start a turn-based match
 
 To start or join an existing match, the player taps the Start Match button on the content view. Then the `TurnBasedGame.startMatch()` action method creates a match request and presents a [`GKTurnBasedMatchmakerViewController`](./gkturnbasedmatchmakerviewcontroller.md) interface where the player can invite friends or automatch to fill empty slots.
 
@@ -76,7 +76,7 @@ Instead of retaining the `GKTurnBasedMatch` object, which can change during the 
 currentMatchID = match.matchID
 ```
 
-##### Pass the turn to the next participant
+### Pass the turn to the next participant
 
 When the current participant taps the Take Turn button, the `TurnBasedGame.takeTurn()` action method increments the count and passes the turn to the opponent.
 
@@ -111,7 +111,7 @@ try await match.endTurn(withNextParticipants: nextParticipants, turnTimeout: GKT
 
 The first time the game passes the turn, GameKit sends invitations to all the participants.
 
-##### Accept turn-based match invitations
+### Accept turn-based match invitations
 
 When the opponent taps the Accept button in the dialog that GameKit displays on their device, GameKit invokes the `GKTurnBasedEventListener.`[`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) method.
 
@@ -135,7 +135,7 @@ if (participant != nil) && (participant?.status != .matching) && (participant?.p
 
 The match object also contains data, such as the current count, that this method encodes to update the game view interface. The `TurnBasedGame.encodeGameData()` and `TurnBasedGame.decodeGameData()` methods store just the game properties that you need to continue playing when GameKit sends turn-based events between participants.
 
-##### Forfeit a turn-based match
+### Forfeit a turn-based match
 
 If a participant taps the Forfeit button, the `TurnBasedGame.forfeitMatch()` action method quits the match whether it’s the participant’s turn or not. Because only the current participant can update the match data, GameKit provides two different methods to leave a match.
 
@@ -190,7 +190,7 @@ if nextParticipants.count < minPlayers {
 
 The `takeTurn()` action method also ends the match with a win if there aren’t enough participants to continue.
 
-##### Exchange data between participants
+### Exchange data between participants
 
 Participants can message other participants and exchange items while they’re waiting for the current participant to take their turn. When a participant taps the message bubble in the game view, the chat view sheet appears so the participant can send a text message to the opponent.
 
@@ -229,7 +229,7 @@ For expedience, this method immediately accepts the exchange request when the ex
 try await exchange.reply(withLocalizableMessageKey: "I accept the exchange request.", arguments: [], data: Data())
 ```
 
-##### Save completed exchanges
+### Save completed exchanges
 
 In the sample, each participant starts with 50 items next to their names. To exchange items, a participant clicks the Exchange Item button below the Send Reminder button. The same code that accepts the chat messages also automatically accepts the exchange item request.
 

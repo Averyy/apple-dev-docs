@@ -27,7 +27,7 @@ var verticalSizeClass: UIUserInterfaceSizeClass { get }
 
 - [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
 
-#### Discussion
+## Discussion
 
 The default vertical size class for a trait collection is [`UIUserInterfaceSizeClass.unspecified`](../uiuserinterfacesizeclass/unspecified.md).
 

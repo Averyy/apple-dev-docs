@@ -24,7 +24,7 @@ protocol GCDevice : NSObjectProtocol
 @protocol GCDevice <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol provides common properties for game controllers, and mouse and keyboard devices.
 

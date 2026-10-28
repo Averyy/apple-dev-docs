@@ -29,7 +29,7 @@ var counters: [any MTLCounter] { get }
 
 - [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
-#### Discussion
+## Discussion
 
 Check whether a GPU device supports a specific counter by comparing its common name (see [`MTLCommonCounter`](../mtlcommoncounter.md)) with each element in the property’s array.
 

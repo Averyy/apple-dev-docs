@@ -25,7 +25,7 @@ func CMTimeMake(value: Int64, timescale: Int32) -> CMTime
 extern CMTime CMTimeMake(int64_t value, int32_t timescale);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure.
 

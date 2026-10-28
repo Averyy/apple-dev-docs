@@ -5,11 +5,11 @@
 
 Test your implementation in a development environment and onboard users gradually.
 
-#### Overview
+## Overview
 
 The App Attest service records device metrics that you can’t reset. To avoid affecting the real metrics for devices that you use for development, you test your implementation in a sandbox environment. When you do start using App Attest in a production environment, use care not to overwhelm Apple’s servers with requests from too many devices at once.
 
-##### Test Your implementation
+### Test Your implementation
 
 During development, you use a sandbox environment to test your adoption of App Attest. The App Attest service tracks the keys that you generate in this mode separately from the keys generated in production mode. This allows you to generate and attest any number of keys on a given device without polluting that device’s production key count.
 
@@ -19,7 +19,7 @@ When sending a sandbox-generated attestation object to your server, the verifica
 
 > ❗ **Important**: You can’t use a key or receipt from the sandbox environment in the production environment, or vice versa.
 
-##### Onboard users gradually
+### Onboard users gradually
 
 If you have a large user base, consider enabling App Attest in stages. When your app calls [`attestKey(_:clientDataHash:completionHandler:)`](./dcappattestservice/attestkey%28_,clientdatahash,completionhandler%29.md) — which you typically do once per user per device — the DeviceCheck framework makes a call to an Apple server to perform the attestation. Apple servers might throttle attestation traffic from a particular app to avoid becoming overwhelmed if too many instances of your app make this call simultaneously. That could happen if you have a lot of users that simultaneously receive an app update enabling App Attest.
 

@@ -19,7 +19,7 @@ var previewImage: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * previewImage;
 ```
 
-#### Discussion
+## Discussion
 
 The preview image you provide should typically be a frame from the proposed video, not the poster artwork.
 

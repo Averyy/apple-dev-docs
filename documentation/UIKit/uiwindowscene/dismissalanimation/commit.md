@@ -23,7 +23,7 @@ case commit
 UIWindowSceneDismissalAnimationCommit
 ```
 
-#### Discussion
+## Discussion
 
 Use this type of animation when the scene contains changes that you want to save. For example, a mail app might use this animation when sending an email message displayed in a scene.
 

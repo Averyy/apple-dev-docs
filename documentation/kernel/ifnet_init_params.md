@@ -14,7 +14,7 @@ struct ifnet_init_params {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used to define various properties of the interface when calling ifnet_allocate. A copy of these values will be stored in the ifnet and cannot be modified while the interface is attached.
 

@@ -25,7 +25,7 @@ func scheduleParameterCurve(_ parameterCurve: CHHapticParameterCurve, atTime tim
 - (BOOL) scheduleParameterCurve:(CHHapticParameterCurve *) parameterCurve atTime:(NSTimeInterval) time error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Scheduling a parameter curve tells the haptic pattern player to vary a parameter gradually along the curve. For example, if the intensity of a haptic pattern is `0` at the time of application, then a curve created to set the haptic intensity to `1` will smoothly hit every single continuous value between `0` and `1` during the transition.
 

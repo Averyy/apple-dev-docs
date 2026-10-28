@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 10.15.4 SDK provides support to develop apps for Macs running macOS Catalina 10.15.5. The SDK comes bundled with Xcode 11.5. For information on the compatibility requirements for Xcode 11.5, see [Xcode 11.5 Release Notes](../Xcode-Release-Notes/xcode-11_5-release-notes.md).
 
-##### Finder
+### Finder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Large data transfers to RAID volumes no longer cause Finder to become unresponsive. (61307708)
 

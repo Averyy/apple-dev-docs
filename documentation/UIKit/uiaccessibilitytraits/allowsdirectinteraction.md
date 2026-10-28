@@ -25,7 +25,7 @@ static let allowsDirectInteraction: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitAllowsDirectInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that represents an object that users interact with directly, such as a view that represents a piano keyboard.
 

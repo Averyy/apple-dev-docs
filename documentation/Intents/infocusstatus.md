@@ -24,7 +24,7 @@ class INFocusStatus
 @interface INFocusStatus : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a user wants to focus, they can choose to prevent or delay notifications from most apps. Use this information to display that the user is in a focus to other people in your communication service.
 

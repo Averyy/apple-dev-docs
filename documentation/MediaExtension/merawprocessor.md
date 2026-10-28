@@ -19,7 +19,7 @@ protocol MERAWProcessor : NSObjectProtocol
 @protocol MERAWProcessor <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol provides an interface for [Video Toolbox](../VideoToolbox/VideoToolbox.md) to create and interact with MediaExtension RAW processors. [`MERAWProcessor`](./merawprocessor.md) objects are instantiated by Video Toolbox and are closely linked to a corresponding [`MEVideoDecoder`](./mevideodecoder.md) object that produces RAW video output.
 
@@ -33,15 +33,15 @@ Once a user installs and runs the host app, embedded RAW processor extensions be
 
 MediaExtension RAW processor’s operation and life cycle closely tie to [`VTRAWProcessingSession`](../VideoToolbox/vtrawprocessingsession.md).
 
-##### Creating a raw processor
+### Creating a raw processor
 
 An instance of the [`MERAWProcessorExtension`](./merawprocessorextension.md) factory object is created the first time the given processor is opened by Video Toolbox in a process. The [`makeProcessor(formatDescription:pixelBufferManager:)`](./merawprocessorextension/makeprocessor%28formatdescription,pixelbuffermanager%29.md) method on the [`MERAWProcessorExtension`](./merawprocessorextension.md) object will be called once for each processor instance needed. The processor can evaluate the provided [`CMVideoFormatDescription`](../CoreMedia/cmvideoformatdescription.md) at this point and confirm whether it is able to process the specified format. If the processor cannot process the format, the factory routine should return [`MEError.Code.unsupportedFeature`](./meerror-swift.struct/code/unsupportedfeature.md). This sequence of calls will happen inside of [`VTRAWProcessingSession`](../VideoToolbox/vtrawprocessingsession.md).
 
-##### Configuring pixel buffer requirements
+### Configuring pixel buffer requirements
 
 At any point after instantiation, the processor can call back into the provided [`MERAWProcessorPixelBufferManager`](./merawprocessorpixelbuffermanager.md) object to notify Video Toolbox of its output pixel buffer requirements. The processor extension may make multiple calls if output requirements change in response to properties being set or due to observed bitstream characteristics.
 
-##### Processing frames
+### Processing frames
 
 Calls to [`processFrame(fromImageBuffer:completionHandler:)`](./merawprocessor/processframe%28fromimagebuffer,completionhandler%29.md) are serialized. A new frame is not sent to the processor until the last [`processFrame(fromImageBuffer:completionHandler:)`](./merawprocessor/processframe%28fromimagebuffer,completionhandler%29.md) has returned, but may be submitted before the [`processFrame(fromImageBuffer:completionHandler:)`](./merawprocessor/processframe%28fromimagebuffer,completionhandler%29.md) completion handler is called if the processing is happening asynchronously. These calls correspond to [`VTRAWProcessingSessionProcessFrame`](../VideoToolbox/vtrawprocessingsessionprocessframe.md) calls on the parent `VTRAWProcessingSession`.
 

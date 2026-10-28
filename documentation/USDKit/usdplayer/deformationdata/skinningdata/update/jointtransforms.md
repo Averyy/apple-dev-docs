@@ -20,7 +20,7 @@ Changed joint transforms.
 let jointTransforms: [float4x4]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

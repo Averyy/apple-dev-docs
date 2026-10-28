@@ -21,7 +21,7 @@ A type that represents an alias file.
 static var aliasFile: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 This type conforms to both [`data`](./data.md) and [`resolvable`](./resolvable.md), and its identifier is `com.apple.alias-file`.
 

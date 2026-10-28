@@ -5,7 +5,7 @@
 
 Implement server-side code to receive and parse notification posts.
 
-#### Overview
+## Overview
 
 The App Store delivers JSON objects using an HTTP POST to your server for notable in-app purchase events and unreported external purchase tokens. Your server is responsible for parsing, interpreting, and responding to all server-to-server notification posts. For more information about responding, see [Responding to App Store Server Notifications](./responding-to-app-store-server-notifications.md).
 

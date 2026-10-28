@@ -20,11 +20,11 @@ Helper function that returns a minimally configured AVAssetWriterInput object fo
 func makeResumableWriterInput(for mediaType: AVMediaType, outputSettings: [String : any Sendable]? = nil, sourceFormatHint: CMFormatDescription? = nil) throws -> AVAssetWriterInput
 ```
 
-#### Return Value
+## Return Value
 
 A new writer input.
 
-#### Discussion
+## Discussion
 
 The final video encoder state from the previous segment will be restored before writing starts.
 

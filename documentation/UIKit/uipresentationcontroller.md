@@ -28,7 +28,7 @@ class UIPresentationController
 
 - [Choosing a specific interface style for your iOS app](./choosing-a-specific-interface-style-for-your-ios-app.md)
 
-#### Overview
+## Overview
 
 From the time a view controller is presented until the time it’s dismissed, UIKit uses a presentation controller to manage various aspects of the presentation process for that view controller. The presentation controller can add its own animations on top of those provided by animator objects, it can respond to size changes, and it can manage other aspects of how the view controller is presented onscreen.
 
@@ -36,7 +36,7 @@ When you present a view controller using the [`present(_:animated:completion:)`]
 
 You vend your custom presentation controller object through your view controller’s transitioning delegate. UIKit maintains a reference to your presentation controller object while the presented view controller is onscreen. For information about the transitioning delegate and the objects it provides, see [`UIViewControllerTransitioningDelegate`](./uiviewcontrollertransitioningdelegate.md).
 
-##### Understand the presentation process
+### Understand the presentation process
 
 The presentation process managed by a presentation controller is divided into three phases:
 
@@ -46,7 +46,7 @@ The presentation process managed by a presentation controller is divided into th
 
 The presentation controller’s role during all of these phases is to manage its own custom views and state information. During the presentation and dismissal phases, the presentation controller adds its custom views (if any) to the view hierarchy and creates any appropriate transition animations for those views. The animation of the view controller’s view onto the screen is still managed by an animator object — that is, an object that adopts the [`UIViewControllerAnimatedTransitioning`](./uiviewcontrolleranimatedtransitioning.md) protocol. UIKit calls separate presentation controller methods at the beginning and end of the presentation and dismissal phases so that the presentation controller can perform any needed cleanup.
 
-##### Add custom views to a presentation
+### Add custom views to a presentation
 
 The [`UIPresentationController`](./uipresentationcontroller.md) class defines specific entry points for manipulating the view hierarchy when presenting a view controller. When a view controller is about to be presented, UIKit calls the presentation controller’s [`presentationTransitionWillBegin()`](./uipresentationcontroller/presentationtransitionwillbegin%28%29.md) method. You can use that method to add views to the view hierarchy and set up any animations related to those views. At the end of the presentation phase, UIKit calls the [`presentationTransitionDidEnd(_:)`](./uipresentationcontroller/presentationtransitiondidend%28_%29.md) method to let you know that the transition finished.
 
@@ -80,7 +80,7 @@ The following code shows a sample implementation of the [`presentationTransition
 
 When dismissing the view controller, use the [`dismissalTransitionWillBegin()`](./uipresentationcontroller/dismissaltransitionwillbegin%28%29.md) method to configure any animations and use the [`dismissalTransitionDidEnd(_:)`](./uipresentationcontroller/dismissaltransitiondidend%28_%29.md) method to remove any custom views from the view hierarchy.
 
-##### Adapt to size class changes
+### Adapt to size class changes
 
 Size class changes signal large-scale changes to how your app should present its content. Presentation controllers manage size class changes by adjusting the presentation style (as needed) for their presented view controller. Adjustments are made only when the current presentation style doesn’t make sense in the new environment. For example, a popover becomes a full-screen presentation when the size class changes from horizontally regular to horizontally compact. For presentation styles that already make sense in the new environment, such as a full-screen presentation style, no adaptive change is made.
 
@@ -88,19 +88,19 @@ When the size class of the presented view controller changes from horizontally r
 
 When the presentation style changes, the presentation controller also gives you the opportunity to specify a new presented view controller. Before initiating the transition, the presentation controller calls the [`presentationController(_:viewControllerForAdaptivePresentationStyle:)`](./uiadaptivepresentationcontrollerdelegate/presentationcontroller%28_,viewcontrollerforadaptivepresentationstyle%29.md) method of its delegate object. If you implement that method, you can use it to make major or minor adjustments to the presented content. A major adjustment would be to replace the current view controller with an entirely new view controller that was designed specifically for the given size class. A minor adjustment would be to install the current view controller inside a navigation controller to facilitate navigation in the new size class.
 
-##### Respond to size changes
+### Respond to size changes
 
 Size changes represent small changes to the width or height of a view controller’s view. Typically, these changes happen when the device rotates between portrait and landscape orientations. When a size change occurs, UIKit calls the presentation controller’s [`viewWillTransition(to:with:)`](./uicontentcontainer/viewwilltransition%28to,with%29.md) method. In a custom presentation, use that method to modify your presentation controller’s custom views or make changes to the view hierarchy. For example, you might swap out custom decoration views with ones that fit the new size better.
 
 After notifying your presentation controller of an impending size change, UIKit begins the normal view layout process. Apps that use auto layout shouldn’t need to do anything because the auto layout mechanism resizes views as needed. But if a custom presentation controller needs to make layout-specific changes, it can do so in its [`containerViewWillLayoutSubviews()`](./uipresentationcontroller/containerviewwilllayoutsubviews%28%29.md) and [`containerViewDidLayoutSubviews()`](./uipresentationcontroller/containerviewdidlayoutsubviews%28%29.md) methods. These methods are equivalent to the [`viewWillLayoutSubviews()`](./uiviewcontroller/viewwilllayoutsubviews%28%29.md) and [`viewDidLayoutSubviews()`](./uiviewcontroller/viewdidlayoutsubviews%28%29.md) methods of the [`UIViewController`](./uiviewcontroller.md) class and used in the same way. UIKit calls them before and after it calls the [`layoutSubviews()`](./uiview/layoutsubviews%28%29.md) methods of the views in the view hierarchy.
 
-##### Subclassing notes
+### Subclassing notes
 
 For custom presentation styles, you should subclass [`UIPresentationController`](./uipresentationcontroller.md) and override at least some of its methods to implement your custom presentation behaviors. Use your custom presentation controller to customize the presentation process.
 
 For custom presentation controllers, you must call the [`init(presentedViewController:presenting:)`](./uipresentationcontroller/init%28presentedviewcontroller,presenting%29.md) method during initialization. That method is the designated initializer of the class. UIKit uses it to perform required initialization for all presentation controller objects.
 
-###### Methods to override
+#### Methods to override
 
 If your [`UIPresentationController`](./uipresentationcontroller.md) subclasses manages one or more custom views, you should consider overriding the following methods:
 

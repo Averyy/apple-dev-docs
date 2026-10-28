@@ -18,11 +18,11 @@ Preprocesses the asset by generating a disparity track, writing the result to th
 func preprocessAsset(configuration: CNAssetPreprocessConfiguration, subprogress: consuming Subprogress? = nil) async throws -> CNAssetInfo
 ```
 
-#### Return Value
+## Return Value
 
 A `CNAssetInfo` for the preprocessed asset at the destination URL.
 
-#### Discussion
+## Discussion
 
 Ensure `resourceStatus` is `.ready` before calling — download resources first if needed.
 

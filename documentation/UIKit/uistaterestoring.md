@@ -28,7 +28,7 @@ protocol UIStateRestoring : NSObjectProtocol
 
 - [About the UI preservation process](./about-the-ui-preservation-process.md)
 
-#### Overview
+## Overview
 
 You can add state restoring objects to an archive directly or by referencing them from another object that’s preserved, such as a view controller. The methods of the protocol let you save enough information about the object to find or recreate it during the next launch cycle.
 

@@ -21,7 +21,7 @@ Returns the elements of `self` that satisfy `isIncluded`.
 func filter(_ isIncluded: @escaping (Self.Elements.Element) -> Bool) -> LazyFilterSequence<Self.Elements>
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The elements of the result are computed on-demand, as the result is used. No buffering storage is allocated and each traversal step invokes `predicate` on one or more underlying elements.
 

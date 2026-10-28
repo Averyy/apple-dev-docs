@@ -5,7 +5,7 @@
 
 Add your entities to your app’s Spotlight index, and automate the indexing of your content.
 
-#### Overview
+## Overview
 
 Indexing your app’s content makes that content findable during searches, and also helps Siri and other system features locate app-specific data. If you create entities for your app’s data, index those entities as part of your content. When a search finds your content, the system can use the associated entity to open your app and navigate to that content.
 

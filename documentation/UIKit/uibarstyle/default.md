@@ -22,7 +22,7 @@ case `default`
 UIBarStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 For example, navigation bars typically use a white background with dark content.
 

@@ -21,7 +21,7 @@ The shape of a value stored in a compute graph’s state.
 enum StateType
 ```
 
-#### Overview
+## Overview
 
 `StateType` describes what kind of value a state holds. The shape determines the slot’s size, alignment, and how it is surfaced in generated Metal source and in graph serialization.
 

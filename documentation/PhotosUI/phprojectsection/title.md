@@ -19,7 +19,7 @@ var title: String { get }
 @property (nonatomic, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the title should relate to the content, like the Moment’s name or the geographical location where content was captured. The title can also be an empty string.
 

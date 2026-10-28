@@ -21,7 +21,7 @@ Returns the next daylight saving time transition after a given date.
 func nextDaylightSavingTimeTransition(after date: Date) -> Date?
 ```
 
-#### Return Value
+## Return Value
 
 The next daylight saving time transition after `date`. Depending on the time zone, this function may return a change of the time zone’s offset from GMT. Returns `nil` if the time zone of the receiver does not observe daylight savings time as of `date`.
 

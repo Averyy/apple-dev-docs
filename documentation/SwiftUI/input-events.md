@@ -5,7 +5,7 @@
 
 Respond to input from a hardware device, like a keyboard or a Touch Bar.
 
-#### Overview
+## Overview
 
 SwiftUI provides view modifiers that enable your app to listen for and react to various kinds of user input. For example, you can create keyboard shortcuts, respond to a form submission, or take input from the digital crown of an Apple Watch.
 

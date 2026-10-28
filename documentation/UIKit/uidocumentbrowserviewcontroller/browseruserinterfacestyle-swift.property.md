@@ -25,7 +25,7 @@ var browserUserInterfaceStyle: UIDocumentBrowserViewController.BrowserUserInterf
 
 - [Customizing the document browser](../customizing-the-browser.md)
 
-#### Discussion
+## Discussion
 
 For a list of possible styles, see [`UIDocumentBrowserViewController.BrowserUserInterfaceStyle`](./browseruserinterfacestyle-swift.enum.md).
 

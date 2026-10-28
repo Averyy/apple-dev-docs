@@ -24,7 +24,7 @@ struct DeviceType
 typedef NSString * AVCaptureDeviceType;
 ```
 
-#### Discussion
+## Discussion
 
 Use the device type constants to retrieve devices using an [`AVCaptureDevice.DiscoverySession`](./discoverysession.md) object, or when calling the [`default(_:for:position:)`](./default%28_,for,position%29.md) method.
 

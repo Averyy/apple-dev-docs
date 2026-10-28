@@ -19,7 +19,7 @@ func deleteSelection()
 - (void) deleteSelection;
 ```
 
-#### Discussion
+## Discussion
 
 No content is removed if the current selection is collapsed (a range is selected with the same nodes and offsets for the start and end) or if there is no current selection.
 

@@ -14,7 +14,7 @@
 kSENSE_KEY_DATA_PROTECT = 0x07
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a data protect condition.
 

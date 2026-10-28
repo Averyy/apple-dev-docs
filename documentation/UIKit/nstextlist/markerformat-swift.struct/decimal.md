@@ -24,7 +24,7 @@ static let decimal: NSTextList.MarkerFormat
 extern NSTextListMarkerFormat const NSTextListMarkerDecimal;
 ```
 
-#### Discussion
+## Discussion
 
 Decimal annotation markers follow the pattern 1.0, 1.1, 2.0, and so on.
 

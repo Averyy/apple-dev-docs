@@ -21,7 +21,7 @@ Removes the specified entities across all contexts.
 func removeEntities(_ entities: [any AppEntity]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the removal fails.
 

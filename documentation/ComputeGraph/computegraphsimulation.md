@@ -21,7 +21,7 @@ A simulation of particles, which use a single pipeline.
 final class ComputeGraphSimulation
 ```
 
-#### Overview
+## Overview
 
 This class is independent of the output, which makes for simpler testing.
 

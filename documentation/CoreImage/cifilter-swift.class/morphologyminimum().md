@@ -24,11 +24,11 @@ class func morphologyMinimum() -> any CIFilter & CIMorphologyMinimum
 + (CIFilter<CIMorphologyMinimum> *) morphologyMinimumFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the morphology minimum filter to an image. The effect targets a circular section of the image, calculating the median color values to find colors that make up more than half the working area. Using this calculation, the effect reduces the pixels with contrasting colors to take up less of the working area. The effect is then repeated throughout the image.
 

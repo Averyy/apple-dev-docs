@@ -19,7 +19,7 @@ var alternativeStrings: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * alternativeStrings;
 ```
 
-#### Discussion
+## Discussion
 
 The text system presents the alternative strings via a user interface similar to that used for spelling correction alternatives.
 

@@ -18,7 +18,7 @@ Send asynchronous arguments to a completion supplied by ExternalMethod().
 virtual void AsyncCompletion(OSAction *action, IOReturn status, const IOUserClientAsyncArgumentsArray asyncData, uint32_t asyncDataCount);
 ```
 
-#### Discussion
+## Discussion
 
 IOConnectAsyncMethod calls from the owner of the connection come will pass an OSAction instance. To deliver the asynchronous results the driver calls AsyncCompletion().
 

@@ -19,7 +19,7 @@ func resize(withOldSuperviewSize oldSize: NSSize)
 - (void) resizeWithOldSuperviewSize:(NSSize) oldSize;
 ```
 
-#### Discussion
+## Discussion
 
 This method is normally invoked automatically from [`resizeSubviews(withOldSize:)`](./resizesubviews%28witholdsize%29.md).
 

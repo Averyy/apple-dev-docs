@@ -24,7 +24,7 @@ var isInputEnabled: Bool { get set }
 @property (nonatomic, getter=isInputEnabled) BOOL inputEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

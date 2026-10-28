@@ -22,7 +22,7 @@ A collection whose elements are all identical.
 struct Repeated<Element>
 ```
 
-#### Overview
+## Overview
 
 You create an instance of the `Repeated` collection by calling the `repeatElement(_:count:)` function. The following example creates a collection containing the name “Humperdinck” repeated five times:
 

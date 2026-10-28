@@ -25,11 +25,11 @@ func data(using encoding: UInt, allowLossyConversion lossy: Bool) -> Data?
 - (NSData *) dataUsingEncoding:(NSStringEncoding) encoding allowLossyConversion:(BOOL) lossy;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` object containing a representation of the receiver encoded using `encoding`. Returns `nil` if `flag` is [`false`](../../Swift/false.md) and the receiver can’t be converted without losing some information (such as accents or case).
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md) and the receiver can’t be converted without losing some information, some characters may be removed or altered in conversion. For example, in converting a character from `NSUnicodeStringEncoding` to `NSASCIIStringEncoding`, the character ‘Á’ becomes ‘A’, losing the accent.
 

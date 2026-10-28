@@ -16,7 +16,7 @@ Starts IO for the given AudioDeviceIOProcID.
 func start(IOProcID: AudioDeviceIOProcID? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 IOProcIDs should be written in C to ensure realtime safety. IOProcIDs can be registered on the device with AudioDeviceCreateIOProcID or AudioDeviceCreateIOProcIDWithBlock from AudioHardware.h.
 

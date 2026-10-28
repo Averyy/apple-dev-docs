@@ -24,7 +24,7 @@ var stencilAttachmentPixelFormat: MTLPixelFormat { get set }
 @property (nonatomic) MTLPixelFormat stencilAttachmentPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the pixel format of the rendering pipeline state for each attachment is `MTLPixelFormatInvalid`.
 

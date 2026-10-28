@@ -25,7 +25,7 @@ static let center: VerticalAlignment
 
 - [Aligning views across stacks](../aligning-views-across-stacks.md)
 
-#### Discussion
+## Discussion
 
 Use this guide to align the centers of views:
 

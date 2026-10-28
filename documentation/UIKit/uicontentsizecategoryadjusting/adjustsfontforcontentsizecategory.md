@@ -28,7 +28,7 @@ var adjustsFontForContentSizeCategory: Bool { get set }
 
 - [Scaling fonts automatically](../scaling-fonts-automatically.md)
 
-#### Discussion
+## Discussion
 
 Set the value of this property to [`true`](../../Swift/true.md) to allow the element to update its font when the size category changes. Set the value to [`false`](../../Swift/false.md) to ignore the size category changes.
 

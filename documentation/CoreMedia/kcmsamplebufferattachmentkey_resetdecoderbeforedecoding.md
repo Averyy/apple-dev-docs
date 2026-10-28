@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_ResetDecoderBeforeDecoding: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_ResetDecoderBeforeDecoding;
 ```
 
-#### Discussion
+## Discussion
 
 This attachment is used at run time to indicate that a sample follows a break in decode sequence and that it is appropriate to reset the decoder before decoding this sample.
 

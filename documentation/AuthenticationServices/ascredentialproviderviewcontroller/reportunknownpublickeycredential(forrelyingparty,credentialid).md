@@ -23,7 +23,7 @@ func reportUnknownPublicKeyCredential(forRelyingParty relyingParty: String, cred
 - (void) reportUnknownPublicKeyCredentialForRelyingParty:(NSString *) relyingParty credentialID:(NSData *) credentialID;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a relying party reports an invalid passkey by calling [`reportUnknownPublicKeyCredential(relyingPartyIdentifier:credentialID:)`](../ascredentialupdater/reportunknownpublickeycredential%28relyingpartyidentifier,credentialid%29.md). Your manager can hide or remove the credential after it receives this report.
 

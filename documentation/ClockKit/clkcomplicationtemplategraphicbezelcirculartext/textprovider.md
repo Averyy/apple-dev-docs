@@ -22,7 +22,7 @@ var textProvider: CLKTextProvider? { get set }
 @property (nonatomic, copy, nullable) CLKTextProvider * textProvider;
 ```
 
-#### Discussion
+## Discussion
 
 The complication ignores the text provider’s tint color. It always displays the bezel text as white.
 

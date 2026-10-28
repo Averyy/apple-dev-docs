@@ -13,7 +13,7 @@
 MBUF_MCAST = 0x0200
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this packet will be sent or was received as a multicast.
 

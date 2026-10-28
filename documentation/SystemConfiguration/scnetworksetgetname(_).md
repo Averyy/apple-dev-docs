@@ -19,7 +19,7 @@ func SCNetworkSetGetName(_ set: SCNetworkSet) -> CFString?
 CFStringRefSCNetworkSetGetName(SCNetworkSetRef set);
 ```
 
-#### Return Value
+## Return Value
 
 The user-specified name associated with the set.
 

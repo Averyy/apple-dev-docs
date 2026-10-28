@@ -25,7 +25,7 @@ class Dimension
 @interface NSDimension : NSUnit
 ```
 
-#### Overview
+## Overview
 
 The Foundation framework provides concrete subclasses for many of the most common types of physical units.
 
@@ -60,11 +60,11 @@ Each instance of a [`Dimension`](./dimension.md) subclass has a [`converter`](./
 
 You typically use an `NSDimension` subclass in conjunction with the [`NSMeasurement`](./nsmeasurement.md) class to represent specific quantities of a particular unit.
 
-##### Working with Custom Units
+### Working with Custom Units
 
 In addition to the Apple-provided units, you can define custom units. You can initialize custom units from a symbol and converter of an existing type or implemented as a class method of an existing type for additional convenience. You can also define your own `NSDimension` subclass to represent an entirely new unit dimension.
 
-###### Initializing a Custom Unit with a Specified Symbol and Definition
+#### Initializing a Custom Unit with a Specified Symbol and Definition
 
 The simplest way to define a custom unit is to create a new instance of an existing `NSDimension` subclass using the [`init(symbol:converter:)`](./dimension/init%28symbol,converter%29.md) method.
 
@@ -83,7 +83,7 @@ NSUnitConverter *smootsToMeters = [[NSUnitConverterLinear alloc] initWithCoeffic
 NSUnitLength *smoots = [[NSUnitLength alloc] initWithSymbol:@"smoot" converter:smootsToMeters];
 ```
 
-###### Extending Existing Dimension Subclasses
+#### Extending Existing Dimension Subclasses
 
 Alternatively, if you use a custom unit extensively throughout an app, consider extending the corresponding [`Dimension`](./dimension.md) subclass and adding a static variable.
 
@@ -112,7 +112,7 @@ extension UnitSpeed {
 @end
 ```
 
-###### Creating a Custom Dimension Subclass
+#### Creating a Custom Dimension Subclass
 
 You can create a new subclass of [`Dimension`](./dimension.md) to describe a new unit dimension.
 
@@ -154,19 +154,19 @@ class CustomRadioactivityUnit: Dimension {
 @end
 ```
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The system provides [`Dimension`](./dimension.md) for subclassing. Although the subclasses listed in Table 1 above are suitable for most purposes, you may want to define a custom unit type. For instance, you may need a custom unit type to represent a derived unit, such as magnetic flux (measured as the product of electric potential difference and time).
 
 To represent dimensionless units, subclass [`Unit`](./unit.md) directly.
 
-###### Methods to Override
+#### Methods to Override
 
 All subclasses must fully implement the [`baseUnit()`](./dimension/baseunit%28%29.md) method designating the base unit, relative to which you define any additional units.
 
 You must also implement a class method named for the base unit itself, to use interchangeably. For example, the [`UnitIlluminance`](./unitilluminance.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) in terms of the lux (lx) and provides a corresponding [`lux`](./unitilluminance/lux.md) class method.
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 As described in [Working with Custom Units](./dimension.md#Working-with-Custom-Units), you need to create a custom subclass of [`Dimension`](./dimension.md) only if you or the system haven’t defined a unit of the desired dimension. You can define a custom unit for an existing [`Dimension`](./dimension.md) subclass by either calling the [`init(symbol:converter:)`](./dimension/init%28symbol,converter%29.md) method or extending the subclass and adding a corresponding class method.
 

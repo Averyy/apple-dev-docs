@@ -21,7 +21,7 @@ Returns a new common activation function parameters structure that uses the spec
 init(function: BNNSActivationFunction, alpha: Float, beta: Float, iscale: Int32, ioffset: Int32, ishift: Int32, iscale_per_channel: UnsafePointer<Int32>?, ioffset_per_channel: UnsafePointer<Int32>?, ishift_per_channel: UnsafePointer<Int32>?)
 ```
 
-#### Return Value
+## Return Value
 
 A new common activation function parameters structure.
 

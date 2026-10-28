@@ -24,7 +24,7 @@ class func devices(for mediaType: AVMediaType) -> [AVCaptureDevice]
 + (NSArray<AVCaptureDevice *> *) devicesWithMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of devices, or an empty array of none exist.
 

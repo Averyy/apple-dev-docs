@@ -22,7 +22,7 @@ case yearAndMonth
 UIDatePickerModeYearAndMonth
 ```
 
-#### Discussion
+## Discussion
 
 The exact order of these items depends on the locale setting. An example of this mode is “November | 2007”.
 

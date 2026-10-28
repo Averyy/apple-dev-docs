@@ -13,7 +13,7 @@ Build an iPadOS companion app to control your visionOS app.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 When demonstrating visionOS apps to others, someone wearing an Apple Vision Pro can’t easily show what they’re experiencing or request to have someone else control their experience. This sample uses the [Network](../Network/Network.md) framework to create a companion iPadOS app that remotely controls a visionOS experience, allowing a person to guide demonstrations while someone else wears the headset.
 
@@ -37,13 +37,13 @@ After connecting the devices, people using either app can customize the robot’
 
 > 💡 **Tip**: The sample runs the `Companion` target on an iPad, but it can also run on iPhone or in Simulator.
 
-##### Configure Bonjour and network capabilities
+### Configure Bonjour and network capabilities
 
 The sample connects the two devices over the local network using [`Bonjour`](../Network/bonjour.md), by adding the `Local Network` capability in the project’s Info pane in Xcode. The app defines a service type of `_example._udp` to uniquely identify the app and adds it to the Info pane with the [`NSBonjourServices`](../BundleResources/information-property-list/nsbonjourservices.md) key.
 
 For more information on local network and privacy, see [TN3179: Understanding local network privacy](../Technotes/tn3179-understanding-local-network-privacy.md). For instructions on adding support for local network privacy permissions, watch the WWDC20 presentation, [Support local network privacy in your app](https://developer.apple.com/videos/play/wwdc2020/10110).
 
-##### Create a connection
+### Create a connection
 
 The `PeerToPeerMessaging` package implements the functionality to start the client and server. The sample uses this functionality to create a peer-to-peer connection by starting a browser on the Apple Vision Pro (*client*) and a listener on the iPad (*server*).
 
@@ -85,7 +85,7 @@ struct ClientContentView: View {
             // ...
 ```
 
-##### Synchronize the app state
+### Synchronize the app state
 
 The package defines methods to send and receive custom messages that describe app-specific UI updates to synchronize views between the Apple Vision Pro and the iPad.
 
@@ -201,7 +201,7 @@ final class RobotViewModel {
     }
 ```
 
-##### Implement peer-to-peer networking
+### Implement peer-to-peer networking
 
 To establish a secure peer-to-peer connection, the package uses the [Network](../Network/Network.md) framework and implements several key components:
 
@@ -215,7 +215,7 @@ To establish a secure peer-to-peer connection, the package uses the [Network](..
 
 > **Note**: For an overview of changes to the Network framework APIs from WWDC25 and best practices, watch [Use structured concurrency with Network framework](https://developer.apple.com/videos/play/wwdc2025/250).
 
-##### Configure the networking stack
+### Configure the networking stack
 
 The package configures three aspects of peer-to-peer networking: data transmission, message formatting, and peer discovery.
 
@@ -252,7 +252,7 @@ includeTxtRecord: true)
 
 > **Note**: The package also adds the `Local Network` capability in Xcode to access the local network, as mentioned earlier. For more information on local network and privacy, see [TN3179: Understanding local network privacy](../Technotes/tn3179-understanding-local-network-privacy.md).
 
-##### Configure the server actor
+### Configure the server actor
 
 The `Server` actor creates a listener, waits for connections, and sends and receives messages.
 
@@ -351,7 +351,7 @@ for try await (message, metadata) in stream.messages {
 }
 ```
 
-##### Configure the client actor
+### Configure the client actor
 
 The `Client` actor creates a browser, discovers a server to connect to, establishes a connection, and sends and receives messages.
 
@@ -445,7 +445,7 @@ for try await (message, metadata) in stream.messages {
 }
 ```
 
-##### Bridge low-level networking and UI
+### Bridge low-level networking and UI
 
 The `Client` and `Server` actors handle networking operations in isolation, but SwiftUI views need to observe the connection state and react to messages on the main actor. To bridge the low-level networking layer implemented in the `Client` and `Server` actors with the app’s UI, the package creates an observable controller called `PeerMessagingController`.
 
@@ -503,7 +503,7 @@ private func broadcastMessages() async {
 
 This architecture keeps the networking logic isolated in actors while providing a clean, observable interface for SwiftUI views to monitor the connection state and react to incoming messages.
 
-##### Establish secure connections with self-signed certificates
+### Establish secure connections with self-signed certificates
 
 To make a secure handshake between connected devices over a local network, TLS uses [Public Key Infrastructure (PKI)](https://www.rfc-editor.org/rfc/rfc5280), a framework for managing digital certificates and public-key encryption. During this handshake, peers exchange certificates to verify each other’s identity. This requires each device to have a digital identity, which is a cryptographic asset containing a public certificate and a private key that encrypts the network traffic.
 
@@ -527,7 +527,7 @@ Storing the identity in the keychain ensures that it persists across app launche
 
 > **Note**: For more examples of storing keys in the keychain and best practices, see [Storing CryptoKit Keys in the Keychain](../CryptoKit/storing-cryptokit-keys-in-the-keychain.md).
 
-##### Validate peer certificates
+### Validate peer certificates
 
 When establishing a connection that uses TLS, both peers must validate each other’s certificates. Because this sample uses self-signed certificates, the `CertificateTrustManager` class implements a “trust on first use” pattern. The class trusts a peer the first time it sees the peer’s certificate, then stores a cryptographic hash of that certificate for future validation. The class rejects the certificate if the identity changes after it’s trusted.
 

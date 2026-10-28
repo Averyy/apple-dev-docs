@@ -23,7 +23,7 @@ static var systemTimeZoneDidChange: NotificationCenter.BaseMessageIdentifier<Tim
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<TimeZone.SystemTimeZoneDidChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`TimeZone.SystemTimeZoneDidChangeMessage`](../../timezone/systemtimezonedidchangemessage.md).
 

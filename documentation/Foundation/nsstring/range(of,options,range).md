@@ -25,11 +25,11 @@ func range(of searchString: String, options mask: NSString.CompareOptions = [], 
 - (NSRange) rangeOfString:(NSString *) searchString options:(NSStringCompareOptions) mask range:(NSRange) rangeOfReceiverToSearch;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSRange` structure giving the location and length in the receiver of
 
-#### Discussion
+## Discussion
 
 `searchString`
 
@@ -43,7 +43,7 @@ in the receiver, modulo the options in `mask`. The range returned is relative to
 
 is not found or is empty (`""`).
 
-#### Discussion
+## Discussion
 
 `NSString` objects are compared by checking the Unicode canonical equivalence of their code point sequences. T
 

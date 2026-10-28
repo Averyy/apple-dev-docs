@@ -21,7 +21,7 @@ A region of the interface that hosts its own toolbar content.
 struct ContentToolbarPlacement
 ```
 
-#### Overview
+## Overview
 
 Some containers draw a bar that belongs to the container as a whole rather than to the view currently on screen, such as the sidebar of a [`TabView`](./tabview.md) that uses the [`sidebarAdaptable`](./tabviewstyle/sidebaradaptable.md) style. Pass a value of this type to [`contentToolbar(for:content:)`](./view/contenttoolbar%28for,content%29.md) to put items in one of those bars.
 

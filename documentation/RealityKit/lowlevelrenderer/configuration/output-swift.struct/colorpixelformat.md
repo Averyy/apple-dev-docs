@@ -18,7 +18,7 @@ The pixel format of the color attachment, or `nil` for depth-only passes.
 var colorPixelFormat: MTLPixelFormat? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassColorAttachmentDescriptor.texture.pixelFormat`.
 

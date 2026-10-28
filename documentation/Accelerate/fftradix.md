@@ -25,7 +25,7 @@ typealias FFTRadix = Int32
 typedef int FFTRadix;
 ```
 
-#### Discussion
+## Discussion
 
 Pass an `FFTRadix` value as an argument to [`vDSP_create_fftsetup`](../kernel/api-1580009-vdsp_create_fftsetup.md) or [`vDSP_create_fftsetupD`](./vdsp_create_fftsetupd.md).
 

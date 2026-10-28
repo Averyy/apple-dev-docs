@@ -23,7 +23,7 @@ enum EventType
 enum DDEventType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 An event (`DDEvent`) `eventType` is of this type.
 

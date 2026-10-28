@@ -25,7 +25,7 @@ func receivedRealTime(_ audio: Data!, fromParticipantID participantID: String!)
 - (void) receivedRealTimeData:(NSData *) audio fromParticipantID:(NSString *) participantID;
 ```
 
-#### Discussion
+## Discussion
 
 The voice chat service uses a network connection provided by the client to exchange information between the participants. When the client receives information intended for the voice chat service, it should call this method to transfer it.
 

@@ -17,7 +17,7 @@ Errors that can occur during a captured structure export.
 typealias Error = CapturedRoom.Error
 ```
 
-#### Discussion
+## Discussion
 
 The captured structure ([`CapturedStructure`](../capturedstructure.md)) function [`export(to:metadataURL:modelProvider:exportOptions:)`](./export%28to,metadataurl,modelprovider,exportoptions%29.md) can throw an error of this type.
 

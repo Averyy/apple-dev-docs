@@ -21,7 +21,7 @@ The value that indicates a customer canceled the transaction for other reasons.
 static let other: Transaction.RevocationReason
 ```
 
-#### Discussion
+## Discussion
 
 Other reasons may include, for example, an accidental purchase.
 

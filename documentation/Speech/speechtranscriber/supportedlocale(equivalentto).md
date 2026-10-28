@@ -20,11 +20,11 @@ A locale from the module’s supported locales equivalent to the given locale.
 static func supportedLocale(equivalentTo locale: Locale) async -> Locale?
 ```
 
-#### Return Value
+## Return Value
 
 A locale in the supported locales list, or `nil` if there is no equivalent locale in that list.
 
-#### Discussion
+## Discussion
 
 Use this method to determine which of this module’s supported locales is equivalent to an arbitrary locale such as `Locale.current`.
 

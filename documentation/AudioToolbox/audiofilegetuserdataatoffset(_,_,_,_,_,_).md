@@ -24,11 +24,11 @@ func AudioFileGetUserDataAtOffset(_ inAudioFile: AudioFileID, _ inUserDataID: UI
 extern OSStatus AudioFileGetUserDataAtOffset(AudioFileID inAudioFile, UInt32 inUserDataID, UInt32 inIndex, SInt64 inOffset, UInt32 *ioUserDataSize, void *outUserData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code if there’s an error (see Result Codes) or `noErr` if the operation succeeds.
 
-#### Discussion
+## Discussion
 
 See [`AudioFileGetUserDataSize64(_:_:_:_:)`](./audiofilegetuserdatasize64%28_,_,_,_%29.md) for an example of using this function to parse the Audio Definition Model (ADM) of a BW64 file, which is 64-bit and based on WAVE.
 

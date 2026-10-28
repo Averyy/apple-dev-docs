@@ -24,7 +24,7 @@ typealias ArrayCallback = ([any MTLTexture], (any Error)?) -> Void
 typedef void (^)(NSArray<id<MTLTexture>> *, NSError *) MTKTextureLoaderArrayCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

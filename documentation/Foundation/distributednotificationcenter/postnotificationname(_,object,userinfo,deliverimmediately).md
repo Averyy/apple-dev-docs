@@ -20,7 +20,7 @@ func postNotificationName(_ name: NSNotification.Name, object: String?, userInfo
 - (void) postNotificationName:(NSNotificationName) name object:(NSString *) object userInfo:(NSDictionary *) userInfo deliverImmediately:(BOOL) deliverImmediately;
 ```
 
-#### Discussion
+## Discussion
 
 This is the preferred method for posting notifications.
 

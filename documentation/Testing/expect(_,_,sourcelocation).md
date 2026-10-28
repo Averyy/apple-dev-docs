@@ -20,8 +20,8 @@ Check that an expectation has passed after a condition has been evaluated.
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro expect(_ condition: Bool, _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation)
+@freestanding(expression)
+macro expect(_ condition: Bool, _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation)
 ```
 
 ## Mentions
@@ -30,7 +30,7 @@ Check that an expectation has passed after a condition has been evaluated.
 - [Describing and reflecting values](./describing-values.md)
 - [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md)
 
-#### Overview
+## Overview
 
 If `condition` evaluates to `false`, an [`Issue`](./issue.md) is recorded for the test that is running in the current task.
 

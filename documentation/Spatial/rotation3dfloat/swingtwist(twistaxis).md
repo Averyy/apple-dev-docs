@@ -21,11 +21,11 @@ Returns the rotation’s swing-twist decomposition for a given twist axis.
 func swingTwist(twistAxis: RotationAxis3DFloat) -> (swing: Rotation3DFloat, twist: Rotation3DFloat)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the swing rotation and the twist rotation.
 
-#### Discussion
+## Discussion
 
 - Parameter twistAxis The twist axis.
 

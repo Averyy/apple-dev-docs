@@ -33,7 +33,7 @@ var dateComponents: DateComponents { get }
 @property (atomic, copy, readonly) NSDateComponents * dateComponents;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to review the date components associated with this trigger.
 

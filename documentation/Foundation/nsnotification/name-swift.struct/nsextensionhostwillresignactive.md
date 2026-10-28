@@ -24,7 +24,7 @@ static let NSExtensionHostWillResignActive: NSNotification.Name
 extern NSString * const NSExtensionHostWillResignActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Extensions can use this notification to adjust their activity when they become inactive. For example, you might use this notification to save any unsaved data to prevent it from being lost. The `object` parameter contains the `NSExtensionContext` object. This notification does not contain a `userInfo` dictionary.
 

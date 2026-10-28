@@ -25,7 +25,7 @@ static let searchMode: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestOptionSearchMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing the raw integer value of an [`SCNHitTestSearchMode`](../scnhittestsearchmode.md) constant.
 

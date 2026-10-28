@@ -25,7 +25,7 @@ MSMessagesAppPresentationContextMedia
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 The media context supports only a subset of the Messages framework API. Specifically, the following limits apply:
 

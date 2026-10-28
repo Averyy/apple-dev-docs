@@ -25,7 +25,7 @@ func vDSP_DFT_Interleaved_ExecuteD(_ Setup: vDSP_DFT_Interleaved_SetupD, _ Iri: 
 void vDSP_DFT_Interleaved_ExecuteD(vDSP_DFT_Interleaved_SetupD const Setup, const DSPDoubleComplex *Iri, DSPDoubleComplex *Ori);
 ```
 
-#### Discussion
+## Discussion
 
 This function supports in-place operation where the output and input parameters are equal. The transform length must equal the transform length specified in the setup structure.
 

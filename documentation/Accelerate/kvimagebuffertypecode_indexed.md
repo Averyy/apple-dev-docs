@@ -25,7 +25,7 @@ var kvImageBufferTypeCode_Indexed: Int { get }
 kvImageBufferTypeCode_Indexed
 ```
 
-#### Discussion
+## Discussion
 
 This is a planar buffer that is used to index a lookup table of color values. The color values in the table may belong to more than one color component.  Typically the colorspace will have a color model of [`CGColorSpaceModel.indexed`](../CoreGraphics/cgcolorspacemodel/indexed.md) and you will need use [`baseColorSpace`](../CoreGraphics/cgcolorspace/basecolorspace.md) to find out what to what color model the lookup table maps.
 

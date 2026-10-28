@@ -20,7 +20,7 @@ An action that performs an animation to call attention to an entity.
 struct EmphasizeAction
 ```
 
-#### Overview
+## Overview
 
 This action plays a preexisting animation, dependent on the [`style`](./emphasizeaction/style.md) and [`motionType`](./emphasizeaction/motiontype.md) options.
 

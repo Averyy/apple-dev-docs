@@ -19,7 +19,7 @@ weak var delegate: (any WKCrownDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<WKCrownDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a delegate object to receive notifications about crown rotation events. For more information about receiving crown-related data, see [`WKCrownDelegate`](../wkcrowndelegate.md).
 

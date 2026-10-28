@@ -24,11 +24,11 @@ func toBool() -> Bool
 - (BOOL) toBool;
 ```
 
-#### Return Value
+## Return Value
 
 The native Boolean value.
 
-#### Discussion
+## Discussion
 
 This method uses JavaScript type coercion to convert the value to a JavaScript Boolean value, then returns the native representation of the result. Thus, this method can return [`true`](../../Swift/true.md) even when the [`isBoolean`](./isboolean.md) property does not.
 

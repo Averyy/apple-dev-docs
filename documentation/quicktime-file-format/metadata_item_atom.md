@@ -6,7 +6,7 @@
 
 An atom that holds a metadata value.
 
-#### Overview
+## Overview
 
 Each item in the metadata item list atom is identified by its key. The atom type for each metadata item atom should be set equal to the index of the key for the metadata within the item atom, taking this index from the metadata item keys atom. In addition, each metadata item atom contains a Value Atom, to hold the value of the metadata item.
 

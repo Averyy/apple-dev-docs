@@ -23,11 +23,11 @@ class func world(name: String) -> WKContentWorld
 + (WKContentWorld *) worldWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The content world with the specified name.
 
-#### Discussion
+## Discussion
 
 Use this method to create unique content worlds for your script code. For example, if you execute scripts from multiple JavaScript extensions, you might use this method to create a content world based on a unique string associated with that extension.
 

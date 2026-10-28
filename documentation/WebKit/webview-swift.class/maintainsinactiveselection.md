@@ -19,7 +19,7 @@ var maintainsInactiveSelection: Bool { get }
 @property (nonatomic, readonly) BOOL maintainsInactiveSelection;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the selection is maintained when focus is lost; otherwise, [`false`](../../Swift/false.md).
 

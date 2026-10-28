@@ -24,7 +24,7 @@ var feedback: Float { get set }
 @property (nonatomic) float feedback;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the feedback as a percentage. The default value is `50%`. The valid range of values is `-100%` to `100%`.
 

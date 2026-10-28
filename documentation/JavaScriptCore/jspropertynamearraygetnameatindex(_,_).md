@@ -24,7 +24,7 @@ func JSPropertyNameArrayGetNameAtIndex(_ array: JSPropertyNameArrayRef!, _ index
 JSStringRefJSPropertyNameArrayGetNameAtIndex(JSPropertyNameArrayRef array, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSStringRef`](./jsstringref.md) that contains the property name.
 

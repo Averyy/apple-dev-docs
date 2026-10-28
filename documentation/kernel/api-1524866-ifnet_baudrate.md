@@ -13,7 +13,7 @@
 u_int64_t ifnet_baudrate(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 The baudrate.
 

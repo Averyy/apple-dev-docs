@@ -24,7 +24,7 @@ class VTLowLatencySuperResolutionScalerParameters
 @interface VTLowLatencySuperResolutionScalerParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 

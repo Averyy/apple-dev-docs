@@ -5,7 +5,7 @@
 
 View power and performance metrics for apps you distribute through the App Store.
 
-#### Overview
+## Overview
 
 Use the Xcode Organizer to view anonymized performance data from your app’s users, including launch times, memory usage, UI responsiveness, and impact on the battery. Use the data to tune the next version of your app and catch regressions that make it into a specific version of your app.
 
@@ -13,7 +13,7 @@ In Xcode, choose Window > Organizer to open the Organizer window, and then selec
 
 When Xcode has enough information to determine a goal for a metric, the chart includes the goal value. Use this information to plan and prioritize performance engineering work.
 
-##### View key insights into your app
+### View key insights into your app
 
 When you open Xcode Organizer, the Insights overview provides a unified view of the most actionable performance information for your app. It surfaces performance regressions, top and trending signatures, and the metrics most likely to need your attention, so you spend less time navigating between individual metric and diagnostic report pages.
 
@@ -25,7 +25,7 @@ Select the Notifications button in the upper-right corner to opt in to power and
 
 The first time you open Organizer, it opens to the Insights overview. On subsequent launches, Organizer restores the last section you visited.
 
-##### Read data for a metric
+### Read data for a metric
 
 The Xcode Organizer shows a title, description, and graph for each type of metric. In the graph, each bar represents a version of your app. Use the pop-up menus to filter the metric data for different devices and the median or high value. If your app has an App Clip available, use the pop-up menu to filter by app type and switch between viewing metrics for the main app and the App Clip.
 
@@ -33,7 +33,7 @@ The Xcode Organizer shows a title, description, and graph for each type of metri
 
 Metrics that show *limited usage* in the detail section include an associated margin of error because the existing data is limited. Use this margin of error to determine the upper and lower bounds of the displayed value. The margin of error decreases as data increases. The release date information in this section provides the date when the selected app version is ready for sale.
 
-##### Compare performance with a previous app release
+### Compare performance with a previous app release
 
 To explore changes between versions for a metric, such as those for Hang Rate in the image below, click the vertical bar for your selected version.
 
@@ -41,7 +41,7 @@ The data for both the selected and latest versions appear to the right of the gr
 
 ![A screenshot of the comparison view in the Hang Rate metric pane of the Xcode Organizer. Key pieces are the highlighted selected version bar, data for the latest and selected app versions, and change information between those two versions.](https://developer.apple.com/tutorials/images/com.apple.Xcode/analyzing-the-performance-of-your-shipping-app-2@2x.png)
 
-##### Compare your app’s metrics with goal values
+### Compare your app’s metrics with goal values
 
 Xcode Organizer compares your app’s metrics against two types of goals: similar-app goals, which are based on metrics from apps with functional and technical similarities to yours, and historical performance goals, which are based on your app’s own historical data. If your app has sufficient metrics data available and the metric values for the current version of your app are greater than the goal values, Xcode displays a *goal* as a dashed line on the histogram in the Xcode Organizer.
 
@@ -51,7 +51,7 @@ Historical performance goals use your app’s own past metric values as a baseli
 
 ![A screenshot of the Launch Time metric pane in Xcode Organizer, showing previous app versions as blue bars and a dotted line indicating the similar-app performance goal.](https://developer.apple.com/tutorials/images/com.apple.Xcode/analyzing-the-performance-of-your-shipping-app-metric-goals@2x.png)
 
-##### Improve your app’s performance
+### Improve your app’s performance
 
 For more details about how to use the data in the Organizer panes to improve the performance of the next version of your app, see the topics below.
 

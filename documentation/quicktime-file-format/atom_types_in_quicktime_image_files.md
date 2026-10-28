@@ -5,7 +5,7 @@
 
 Build QuickTime image files with atoms.
 
-#### Overview
+## Overview
 
 There are two mandatory atom types: `'idsc'`, which contains an image description, and `'idat'`, which contains the image data. This is illustrated in the following figure. A QuickTime image file can also contain other atoms.
 

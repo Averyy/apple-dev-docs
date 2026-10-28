@@ -23,7 +23,7 @@ func MIDIPortConnectSource(_ port: MIDIPortRef, _ source: MIDIEndpointRef, _ con
 extern OSStatus MIDIPortConnectSource(MIDIPortRef port, MIDIEndpointRef source, void *connRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

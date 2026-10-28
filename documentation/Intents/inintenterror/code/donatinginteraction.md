@@ -25,7 +25,7 @@ case donatingInteraction
 INIntentErrorDonatingInteraction
 ```
 
-#### Discussion
+## Discussion
 
 To determine the low-level cause of the problem, check the value of [`NSUnderlyingErrorKey`](../../../Foundation/nsunderlyingerrorkey.md) in the error object’s [`userInfo`](../../../Foundation/nserror/userinfo.md) dictionary.
 

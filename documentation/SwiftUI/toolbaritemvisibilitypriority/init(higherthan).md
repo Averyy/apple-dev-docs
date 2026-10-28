@@ -18,7 +18,7 @@ Creates a priority higher than the specified value.
 init(higherThan other: ToolbarItemVisibilityPriority)
 ```
 
-#### Discussion
+## Discussion
 
 The priority is higher than `other` but doesn’t cross above the next higher system priority. For example, `ToolbarItemVisibilityPriority(higherThan: .high)` returns a value that is greater than `.high`.
 

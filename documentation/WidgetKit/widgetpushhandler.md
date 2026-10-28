@@ -24,7 +24,7 @@ protocol WidgetPushHandler
 
 - [Updating widgets with WidgetKit push notifications](./updating-widgets-with-widgetkit-push-notifications.md)
 
-#### Overview
+## Overview
 
 Register a type conforming to this protocol to receive push information using the [`pushHandler(_:)`](../SwiftUI/widgetconfiguration/pushhandler%28_%29.md) modifier on your widgets’ configurations.
 

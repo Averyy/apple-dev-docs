@@ -25,7 +25,7 @@ var compression: Float { get set }
 @property (nonatomic) float compression;
 ```
 
-#### Discussion
+## Discussion
 
 Holes in the center aren’t distorted as much as those at the edge of the image.
 

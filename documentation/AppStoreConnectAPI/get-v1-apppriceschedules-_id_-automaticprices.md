@@ -9,9 +9,9 @@ List the automatically calculated prices for an app generated from a base territ
 **Availability**:
 - App Store Connect API 2.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

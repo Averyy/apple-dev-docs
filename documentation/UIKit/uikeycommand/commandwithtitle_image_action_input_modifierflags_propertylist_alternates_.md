@@ -19,11 +19,11 @@ Creates a key command with alternatives that you can use as a menu element with 
 + (instancetype) commandWithTitle:(NSString *) title image:(UIImage *) image action:(SEL) action input:(NSString *) input modifierFlags:(UIKeyModifierFlags) modifierFlags propertyList:(id) propertyList alternates:(NSArray<UICommandAlternate *> *) alternates;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized key command object.
 
-#### Discussion
+## Discussion
 
 After creating a key command object, you can:
 

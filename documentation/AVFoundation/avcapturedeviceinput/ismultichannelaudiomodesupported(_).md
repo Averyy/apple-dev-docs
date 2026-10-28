@@ -23,11 +23,11 @@ func isMultichannelAudioModeSupported(_ multichannelAudioMode: AVCaptureMulticha
 - (BOOL) isMultichannelAudioModeSupported:(AVCaptureMultichannelAudioMode) multichannelAudioMode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the input supports the mode; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can only set the [`multichannelAudioMode`](./multichannelaudiomode.md) property if the input supports the value.
 

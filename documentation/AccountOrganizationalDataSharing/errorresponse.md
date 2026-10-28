@@ -15,7 +15,7 @@ The error object returned after an unsuccessful request.
 object ErrorResponse
 ```
 
-#### Overview
+## Overview
 
 The `error` property is one of the following values:
 

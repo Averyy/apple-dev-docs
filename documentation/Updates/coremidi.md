@@ -5,18 +5,18 @@
 
 Learn about important changes to Core MIDI.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Core MIDI](../CoreMIDI/CoreMIDI.md).
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Add support for v1.2 MIDI-CI Specification that supports new compatible hardware.
 - Add support for v1.1.1 UMP/MIDI 2.0 Protocol Specification that introduces new message types and features.
 
-##### MIDIDriverKit
+### MIDIDriverKit
 
 - Add support for DriverKit-based MIDI device drivers using the new [MIDIDriverKit](../MIDIDriverKit/MIDIDriverKit.md) framework.
 

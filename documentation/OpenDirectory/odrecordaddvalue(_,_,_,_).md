@@ -20,7 +20,7 @@ func ODRecordAddValue(_ record: ODRecordRef!, _ attribute: String!, _ value: CFT
 extern bool ODRecordAddValue(ODRecordRef record, ODAttributeType attribute, CFTypeRef value, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the value is successfully added; `false` otherwise.
 

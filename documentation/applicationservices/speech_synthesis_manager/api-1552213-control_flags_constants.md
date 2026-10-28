@@ -4,7 +4,7 @@
 
 Flags that indicate which synthesizer features are active.
 
-#### Overview
+## Overview
 
 These constants are used in the `controlFlags` parameterof the [`SpeakBuffer`](../api-1552252-speakbuffer.md) functionand in the `synthFlagsl` fieldof the [`SpeechVersionInfo`](../speechversioninfo.md) structure. 
 

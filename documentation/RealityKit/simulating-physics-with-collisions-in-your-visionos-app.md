@@ -10,7 +10,7 @@ Create entities that behave and react like physical objects in a RealityKit view
 - visionOS 1.1+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to simulate multiple physical objects that collide with each other by creating a volumetric window with sphere entities that each have a collision component and a physics body component.
 
@@ -18,7 +18,7 @@ This sample demonstrates how to simulate multiple physical objects that collide 
 
 The sample also adds a custom component and system that applies an attraction force between the spheres, and gesture support so that a person can move the spheres within the volume.
 
-##### Add a volumetric window to your app
+### Add a volumetric window to your app
 
 The app starts by creating a scene that includes a window group with a [`volumetric`](../SwiftUI/windowstyle/volumetric.md) style so that the spheres behave like physical objects in the environment.
 
@@ -65,7 +65,7 @@ Coordinate values in SwiftUI are typically in the hundreds of points, while coor
 
 The view also adds a [`DragGesture`](../SwiftUI/draggesture.md) instance so that a person can move a sphere around and make it collide with the other spheres in the volume.
 
-##### Create a model entity with a physics body
+### Create a model entity with a physics body
 
 The app creates each sphere as a [`ModelEntity`](./modelentity.md) instance with a spherical mesh.
 
@@ -135,7 +135,7 @@ sphereEntity.components.set(physics)
 
 The collision component includes the entity in the scene’s physics simulation. The physics body component defines the entity’s physical shape and mass. By default, entities with a physics body component react to gravity, but the app makes the spheres float in the scene by setting the component’s [`isAffectedByGravity`](./physicsbodycomponent/isaffectedbygravity.md) property to `false`.
 
-##### Add attraction forces between all the spheres by creating a custom system
+### Add attraction forces between all the spheres by creating a custom system
 
 The app simulates forces of attraction between the spheres by defining two types:
 
@@ -217,7 +217,7 @@ When the app runs, the spheres move towards each other and clump together within
 
 For more information about systems, see [Systems](./ecs-systems.md) and [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md).
 
-##### Keep the spheres in the volume by creating an invisible container with physics
+### Keep the spheres in the volume by creating an invisible container with physics
 
 The app prevents the spheres from moving out of the volume by creating a relatively thin box for each of the volume’s six boundaries.
 
@@ -314,7 +314,7 @@ The method configures each face to physically interact with the spheres in the s
 
 ![A screenshot of Xcode's debugging bar showing a toggle to enable Collision Shapes and Axes.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/PhysicsBodies-sample-article-3.png)
 
-##### Add human interaction by including a gesture
+### Add human interaction by including a gesture
 
 The app lets a person move the spheres within the volume by adding a `ForceDragGesture` instance to the main view.
 

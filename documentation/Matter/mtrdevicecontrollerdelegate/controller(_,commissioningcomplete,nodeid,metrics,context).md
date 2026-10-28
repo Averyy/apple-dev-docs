@@ -25,7 +25,7 @@ optional func controller(_ controller: MTRDeviceController, commissioningComplet
 - (void) controller:(MTRDeviceController *) controller commissioningComplete:(NSError *) error nodeID:(NSNumber *) nodeID metrics:(MTRMetrics *) metrics context:(NSDictionary<NSString *,id> *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Exactly one of error and nodeID will be nil.
 

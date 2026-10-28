@@ -17,7 +17,7 @@ Displays a JavaScript alert panel.
 - (void) webView:(WebView *) sender runJavaScriptAlertPanelWithMessage:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 This method is used to display a panel when JavaScript code calls `alert`. Delegates should visually indicate that this panel comes from JavaScript. The panel should have, for example, a single OK button. No action is taken if you do not implement this method.
 

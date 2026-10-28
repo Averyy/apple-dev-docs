@@ -21,7 +21,7 @@ The font weight to apply to text.
 var legibilityWeight: LegibilityWeight? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the value of the Bold Text display setting found in the Accessibility settings.
 

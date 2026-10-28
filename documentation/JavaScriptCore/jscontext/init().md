@@ -24,11 +24,11 @@ init!()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new JavaScript context.
 
-#### Discussion
+## Discussion
 
 This initializer creates a context along with a new, independent virtual machine (a [`JSVirtualMachine`](../jsvirtualmachine.md) object). You cannot pass JavaScript values ([`JSValue`](../jsvalue.md) objects) between contexts in different virtual machines. To create contexts that share a virtual machine, use the [`init(virtualMachine:)`](./init%28virtualmachine%29.md) initializer.
 

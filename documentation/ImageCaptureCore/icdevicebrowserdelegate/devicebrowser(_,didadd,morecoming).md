@@ -24,7 +24,7 @@ func deviceBrowser(_ browser: ICDeviceBrowser, didAdd device: ICDevice, moreComi
 - (void) deviceBrowser:(ICDeviceBrowser *) browser didAddDevice:(ICDevice *) device moreComing:(BOOL) moreComing;
 ```
 
-#### Discussion
+## Discussion
 
 If several devices are found during the initial search, then this message is sent once for each device with the value of `moreComing` set to `true` in each message except the last one.
 

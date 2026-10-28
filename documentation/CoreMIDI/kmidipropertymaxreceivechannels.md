@@ -23,7 +23,7 @@ let kMIDIPropertyMaxReceiveChannels: CFString
 extern CFStringRef const kMIDIPropertyMaxReceiveChannels;
 ```
 
-#### Discussion
+## Discussion
 
 The property value ranges from 0 to 16. Values for this property indicate:
 

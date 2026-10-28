@@ -19,11 +19,11 @@ func SKIndexCompact(_ inIndex: SKIndex!) -> Bool
 Boolean SKIndexCompact(SKIndexRef inIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` on success, or `false` on failure.
 
-#### Discussion
+## Discussion
 
 Over time, as document URL objects (of type [`SKDocument`](./skdocument.md)) and associated contents get added to and removed from an index, the index’s disk or memory footprint may grow due to fragmentation.
 

@@ -24,11 +24,11 @@ var hasRecurrenceRules: Bool { get }
 @property (nonatomic, readonly) BOOL hasRecurrenceRules;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the calendar item has recurrence rules; otherwise it does not.
 
-##### Special Considerations
+### Special Considerations
 
 The implementation only supports a single recurrence rule. Adding a recurrence rule replaces the single recurrence rule.
 

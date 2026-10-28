@@ -30,7 +30,7 @@ var preferredBookingDateComponents: DateComponents? { get set }
 @property (atomic, copy, nullable) NSDateComponents * preferredBookingDateComponents;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property as a guide for determining the list of time slots for reservations. If no reservations are available at the specified date, you may choose a different date, as long as it falls between the dates specified by the [`earliestBookingDateForResults`](./earliestbookingdateforresults.md) and [`latestBookingDateForResults`](./latestbookingdateforresults.md) properties.
 

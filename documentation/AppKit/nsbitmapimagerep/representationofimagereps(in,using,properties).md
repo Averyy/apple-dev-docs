@@ -19,7 +19,7 @@ class func representationOfImageReps(in imageReps: [NSImageRep], using storageTy
 + (NSData *) representationOfImageRepsInArray:(NSArray<NSImageRep *> *) imageReps usingType:(NSBitmapImageFileType) storageType properties:(NSDictionary<NSString *,id> *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the bitmap image data in the specified format. You can write this data to a file or use it to create a new [`NSBitmapImageRep`](../nsbitmapimagerep.md) object.
 

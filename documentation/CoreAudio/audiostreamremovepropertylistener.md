@@ -14,11 +14,11 @@
 extern OSStatus AudioStreamRemovePropertyListener(AudioStreamID inStream, UInt32 inChannel, AudioDevicePropertyID inPropertyID, AudioStreamPropertyListenerProc inProc);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Unregisters the given AudioStreamPropertyListenerProc from receiving notifications when the given property changes.
 

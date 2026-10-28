@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Protocol requirements and protocol extension members may be accessed via a conformance constraint on a generic parameter, an opaque result type, or via the protocol type itself:
 
-#### Overview
+## Overview
 
 ```swift
 // An appropriately constrained generic parameter.

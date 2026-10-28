@@ -20,7 +20,7 @@ An object that contains the response to a navigation request, and which you use 
 struct NavigationResponse
 ```
 
-#### Overview
+## Overview
 
 A `NavigationResponse` value is intended to be used to make policy decisions about whether to allow navigation within a web page via a `NavigationDeciding`.
 

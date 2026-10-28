@@ -24,7 +24,7 @@ var sourceSlice: Int
 NSUInteger sourceSlice;
 ```
 
-#### Discussion
+## Discussion
 
 Provide `0` in this member if the texture type is not an array.
 

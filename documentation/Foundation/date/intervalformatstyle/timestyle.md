@@ -21,7 +21,7 @@ The type that defines time styles that vary in length or in their included compo
 typealias TimeStyle = Date.FormatStyle.TimeStyle
 ```
 
-#### Discussion
+## Discussion
 
 The exact format depends on the locale. Possible time styles include: [`omitted`](../formatstyle/timestyle/omitted.md), [`shortened`](../formatstyle/timestyle/shortened.md), [`standard`](../formatstyle/timestyle/standard.md), and [`complete`](../formatstyle/timestyle/complete.md).
 

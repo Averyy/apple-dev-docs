@@ -21,7 +21,7 @@ struct LogProbabilityTokenLoopHandler<Base> where Base : TokenLoopHandler
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Overview
+## Overview
 
 Enable reporting with [`logProbabilities`](./generateparameters/logprobabilities.md) when constructing a [`TokenIterator`](./tokeniterator.md). Text chunks can span several tokens; probability events follow the token sequence, including tokens consumed by tool or reasoning parsers. This handler materializes the values, so only streams that use it copy them from the GPU.
 

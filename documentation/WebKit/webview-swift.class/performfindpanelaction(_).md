@@ -19,7 +19,7 @@ func performFindPanelAction(_ sender: Any?)
 - (void) performFindPanelAction:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves similar to the [`performFindPanelAction(_:)`](../../AppKit/nstextview/performfindpanelaction%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 

@@ -15,7 +15,7 @@
 SInt64 OSDecrementAtomic64(volatile SInt64 *address);
 ```
 
-#### Discussion
+## Discussion
 
 See OSDecrementAtomic.
 

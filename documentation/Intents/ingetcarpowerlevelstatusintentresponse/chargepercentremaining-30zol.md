@@ -27,7 +27,7 @@ The percentage of charge that remains for the electric vehicle.
 @property (atomic, copy, readwrite, nullable) NSNumber * chargePercentRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

@@ -21,7 +21,7 @@ func pasteboard(_ pasteboard: NSPasteboard?, item: NSPasteboardItem, provideData
 - (void) pasteboard:(NSPasteboard *) pasteboard item:(NSPasteboardItem *) item provideDataForType:(NSPasteboardType) type;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver was previously set as the provider using [`setDataProvider(_:forTypes:)`](../nspasteboarditem/setdataprovider%28_,fortypes%29.md).
 

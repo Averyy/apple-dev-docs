@@ -19,7 +19,7 @@ func frame(ofInsideOfColumn column: Int) -> NSRect
 - (NSRect) frameOfInsideOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle containing the column, not including the column borders.
 

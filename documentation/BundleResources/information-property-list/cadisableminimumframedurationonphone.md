@@ -19,7 +19,7 @@ A Boolean value that allows your app to access frame rates higher than the syste
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Devices with ProMotion displays allow apps to dynamically request a frame rate they prefer. If you set this key to `YES`, your app can request any frame rate the display supports. If you set this key to `NO`, frame rates higher than the system default are unavailable.
 

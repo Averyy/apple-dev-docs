@@ -22,7 +22,7 @@ class UICanvasFeedbackGenerator
 @interface UICanvasFeedbackGenerator : UIFeedbackGenerator
 ```
 
-#### Overview
+## Overview
 
 Use canvas feedback to indicate when a drawing event occurs, such as an object snapping to a guide or ruler. When using Apple Pencil Pro with a compatible iPad, this type of feedback can provide a tactile response.
 

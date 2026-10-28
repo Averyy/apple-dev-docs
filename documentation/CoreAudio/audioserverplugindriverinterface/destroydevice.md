@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, unsigned int) DestroyDevice;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Called to tell the plug-in about to destroy the given device.
 

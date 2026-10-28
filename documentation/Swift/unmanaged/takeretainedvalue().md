@@ -21,11 +21,11 @@ Gets the value of this unmanaged reference as a managed reference and consumes a
 func takeRetainedValue() -> Instance
 ```
 
-#### Return Value
+## Return Value
 
 The object referenced by this `Unmanaged` instance.
 
-#### Discussion
+## Discussion
 
 This is useful when a function returns an unmanaged reference and you know that you’re responsible for releasing the result.
 

@@ -25,7 +25,7 @@ class CKShare
 @interface CKShare : CKRecord
 ```
 
-#### Overview
+## Overview
 
 A share is a specialized record type that facilitates the sharing of one or more records with many participants. You store shareable records in a custom record zone in the user’s private database. As you create records in that zone, they become eligible for record zone sharing. If you want to share a specific hierarchy of related records, rather than the entire record zone, set each record’s [`parent`](./ckrecord/parent.md) property to define the relationship with its parent. CloudKit infers the shared hierarchy using only the [`parent`](./ckrecord/parent.md) property, and ignores any custom reference fields.
 

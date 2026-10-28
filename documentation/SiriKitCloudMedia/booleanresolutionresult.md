@@ -15,7 +15,7 @@ A Boolean value that matches an intent parameter, or information about why your 
 object BooleanResolutionResult
 ```
 
-#### Discussion
+## Discussion
 
 Only provide one of the optional properties. If a client receives a result with more than one outcome, such as `needsValue` and `success`, it arbitrarily chooses one and ignores the rest.
 

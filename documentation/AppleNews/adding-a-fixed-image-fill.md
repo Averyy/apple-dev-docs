@@ -5,7 +5,7 @@
 
 Add an image that remains stationary when the user scrolls.
 
-#### Overview
+## Overview
 
 The fixed image fill is one of the most captivating effects in Apple News Format. A fixed image fill stays still when the user scrolls. As long as any portion of the filled component is visible in the viewport, the image maintains one position, while the rest of the article seems to scroll independently of the image.
 
@@ -13,7 +13,7 @@ The fixed image fill is one of the most captivating effects in Apple News Format
 
 ![Screenshot of an Apple News article with a fixed image fill on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624928@2x.png)
 
-##### Create a ComponentLayout Object for the Fixed Image
+### Create a ComponentLayout Object for the Fixed Image
 
 Before you can make the image span the whole display area, you must create a new `ComponentLayout` object.
 
@@ -22,7 +22,7 @@ Before you can make the image span the whole display area, you must create a new
 
 Your code should look like the example code [fullScreenImageLayout: Result](./adding-a-fixed-image-fill.md#fullScreenImageLayout-Result).
 
-###### fullScreenImageLayout: Copy This Code
+#### fullScreenImageLayout: Copy This Code
 
 ```json
 ,
@@ -36,7 +36,7 @@ Your code should look like the example code [fullScreenImageLayout: Result](./ad
     }
 ```
 
-###### fullScreenImageLayout: Result
+#### fullScreenImageLayout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -58,7 +58,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Create a ComponentTextStyle Object for the Pull Quote
+### Create a ComponentTextStyle Object for the Pull Quote
 
 Create a new `ComponentTextStyle` object for a new color.
 
@@ -67,7 +67,7 @@ Create a new `ComponentTextStyle` object for a new color.
 
 Your code should look like the example code [pullquoteLight: Result](./adding-a-fixed-image-fill.md#pullquoteLight-Result).
 
-###### pullquoteLight: Copy This Code
+#### pullquoteLight: Copy This Code
 
 ```json
 ,
@@ -76,7 +76,7 @@ Your code should look like the example code [pullquoteLight: Result](./adding-a-
     }
 ```
 
-###### pullquoteLight: Result
+#### pullquoteLight: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -93,7 +93,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Add a New Container with a Fixed Image Fill
+### Add a New Container with a Fixed Image Fill
 
 In [Download the Article Bundle Examples](./setting-up-the-advanced-tutorials.md#Download-the-Article-Bundle-Examples), you downloaded a bundle called `News_Design_Tutorial_Advanced_Article_3` that contains a thumbnail image. Now, you’ll move that image into your working folder and use it as an image fill.
 
@@ -103,7 +103,7 @@ In [Download the Article Bundle Examples](./setting-up-the-advanced-tutorials.md
 
 Your code should look like the example code [Fixed Image Fill: Result](./adding-a-fixed-image-fill.md#Fixed-Image-Fill-Result).
 
-###### Fixed Image Fill: Copy This Code
+#### Fixed Image Fill: Copy This Code
 
 ```json
         {
@@ -133,7 +133,7 @@ Your code should look like the example code [Fixed Image Fill: Result](./adding-
         },
 ```
 
-###### Fixed Image Fill: Result
+#### Fixed Image Fill: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -181,11 +181,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating a Sidebar](./creating-a-sidebar.md)
 
-##### Next
+### Next
 
 [Creating a Newsletter Sign-Up Element](./creating-a-newsletter-sign-up-element.md)
 

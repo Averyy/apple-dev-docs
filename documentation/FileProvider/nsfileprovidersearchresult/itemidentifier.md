@@ -20,7 +20,7 @@ var itemIdentifier: NSFileProviderItemIdentifier { get }
 @property (nonatomic, copy, readonly) NSFileProviderItemIdentifier itemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Choose an identifier that’s usable with API calls from the [`NSFileProviderReplicatedExtension`](../nsfileproviderreplicatedextension.md) protocol.
 

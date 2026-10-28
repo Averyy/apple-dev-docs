@@ -24,7 +24,7 @@ var transform: CGAffineTransform { get set }
 @property (nonatomic) CGAffineTransform transform;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the input uses the [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md) transform.
 

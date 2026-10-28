@@ -19,7 +19,7 @@ Enables or disables high dynamic range rendering for virtual content.
 var dynamicRange: RealityViewDynamicRange
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit applies a high dynamic range effect, along with tone mapping, as a post-processing step in the GPU during the render. This effect is computationally inexpensive, but you can add the [`disableHDR`](../arview/renderoptions-swift.struct/disablehdr.md) option to the view’s [`renderOptions`](../arview/renderoptions-swift.property.md) set to turn the effect off, if needed.
 

@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, draggingImageForRowsWith rowIndexes:
 - (NSImage *) browser:(NSBrowser *) browser draggingImageForRowsWithIndexes:(NSIndexSet *) rowIndexes inColumn:(NSInteger) column withEvent:(NSEvent *) event offset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Return Value
+## Return Value
 
 An image representing the visible rows identified by `rowIndexes`.
 

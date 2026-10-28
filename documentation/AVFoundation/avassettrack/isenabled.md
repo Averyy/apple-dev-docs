@@ -27,7 +27,7 @@ var isEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 For file-based media, you can change its [`isEnabled`](../avplayeritemtrack/isenabled.md) presentation state using [`AVPlayerItemTrack`](../avplayeritemtrack.md).
 

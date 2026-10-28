@@ -21,7 +21,7 @@ An error that indicates the session failed to deserialize a valid generable type
 case decodingFailure(LanguageModelSession.GenerationError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 This can happen if generation was terminated early.
 

@@ -23,7 +23,7 @@ var requiredThreadsPerMeshThreadgroup: MTLSize { get }
 @property (readonly) MTLSize requiredThreadsPerMeshThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 The required size of every mesh shader threadgroup.
 

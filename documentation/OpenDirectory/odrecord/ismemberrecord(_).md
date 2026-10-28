@@ -20,7 +20,7 @@ func isMemberRecord(_ inRecord: ODRecord!) throws
 - (BOOL) isMemberRecord:(ODRecord *) inRecord error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If this record is not a group record, this method returns [`false`](../../Swift/false.md).
 

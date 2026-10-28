@@ -28,7 +28,7 @@ class func startWirelessControllerDiscovery() async
 + (void) startWirelessControllerDiscoveryWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the user chooses to discover wireless controllers from your interface. The framework searches asynchronously for discoverable wireless controllers. The framework posts the [`GCControllerDidConnect`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md) (Swift) or [`GCControllerDidConnectNotification`](../gccontrollerdidconnectnotification.md) (Objective-C) notification when it discovers new controllers. Implement the completion handler you pass to this method to handle when the framework finishes discovering controllers or when it times out.
 

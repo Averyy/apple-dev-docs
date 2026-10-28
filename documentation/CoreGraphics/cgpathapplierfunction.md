@@ -25,7 +25,7 @@ typealias CGPathApplierFunction = (UnsafeMutableRawPointer?, UnsafePointer<CGPat
 typedef void (*)(void *, const struct CGPathElement *) CGPathApplierFunction;
 ```
 
-#### Discussion
+## Discussion
 
 See also [`apply(info:function:)`](./cgpath/apply%28info,function%29.md).
 

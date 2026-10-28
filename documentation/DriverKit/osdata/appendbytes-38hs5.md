@@ -18,7 +18,7 @@ Appends a buffer of bytes to the OSData object’s internal data buffer.
 bool appendBytes(const OSData *aDataObj);
 ```
 
-#### Return Value
+## Return Value
 
 True on success or false on failure, due to allocation failure.
 

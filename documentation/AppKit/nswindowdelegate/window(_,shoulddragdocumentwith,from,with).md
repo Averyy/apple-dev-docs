@@ -20,11 +20,11 @@ optional func window(_ window: NSWindow, shouldDragDocumentWith event: NSEvent, 
 - (BOOL) window:(NSWindow *) window shouldDragDocumentWithEvent:(NSEvent *) event from:(NSPoint) dragImageLocation withPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the drag to proceed; [`false`](../../Swift/false.md) to prevent it. Before turning no the delegate can implement its own dragging behavior as described below.
 
-#### Discussion
+## Discussion
 
 Implementing this method enables an application to customize the process of dragging the window’s document icon. The delegate can prohibit the drag by returning [`false`](../../Swift/false.md). Before returning [`false`](../../Swift/false.md), the delegate can implement its own dragging behavior using  [`drag(_:at:offset:event:pasteboard:source:slideBack:)`](../nswindow/drag%28_,at,offset,event,pasteboard,source,slideback%29.md).
 

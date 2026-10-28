@@ -10,7 +10,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 Combines the latest values produced from two or more asynchronous sequences into an asynchronous sequence of tuples.
 
-#### Overview
+## Overview
 
 [[Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/Zip/AsyncZip2Sequence.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/Zip/AsyncZip3Sequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestZip.swift)]
 
@@ -32,7 +32,7 @@ Given some sample inputs the following zipped events can be expected.
 | 12:40 AM |  | 14218.34 |  |
 | 1:15 PM | 173.00 |  | AAPL: 173.00 NASDAQ: 14218.34 |
 
-#### Detailed Design
+## Detailed Design
 
 This function family and the associated family of return types are prime candidates for variadic generics. Until that proposal is accepted, these will be implemented in terms of two- and three-base sequence cases.
 
@@ -79,13 +79,13 @@ Each iteration of an `AsyncZipSequence` will await for all base iterators to pro
 
 The source of throwing of `AsyncZipSequence` is determined by its bases. That means that if any base can throw an error then the iteration of the `AsyncZipSequence` can throw. If no bases can throw, then the `AsyncZipSequence` does not throw.
 
-##### Naming
+### Naming
 
 The `zip(_:...)` function takes its name from the Swift standard library function of the same name. The `AsyncZipSequence` family of types take their name from the same family from the standard library for the type returned by `zip(_:_:)`. The one difference is that this asynchronous version allows for the affordance of recognizing the eventual variadic generic need of expanding a zip of more than just two sources.
 
 It is common in some libraries to have a `ZipMap` or some other combination of `zip` and `map`. This is a common usage pattern, but leaving a singular type for composition feels considerably more approachable.
 
-##### Comparison with other libraries
+### Comparison with other libraries
 
 **Swift** The swift standard library has an [API definition of zip](https://developer.apple.com/documentation/swift/1541125-zip) as a top level function for combining two sequences.
 

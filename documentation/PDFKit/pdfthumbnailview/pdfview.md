@@ -24,7 +24,7 @@ weak var pdfView: PDFView? { get set }
 @property (nonatomic, weak, nullable) PDFView * PDFView;
 ```
 
-#### Return Value
+## Return Value
 
 The PDF view object associated with the thumbnail view.
 

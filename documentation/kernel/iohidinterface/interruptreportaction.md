@@ -17,7 +17,7 @@ typedef void ( *InterruptReportAction)(
    void *refcon);
 ```
 
-#### Overview
+## Overview
 
 This callback is set when calling IOHIDInterface::open.
 

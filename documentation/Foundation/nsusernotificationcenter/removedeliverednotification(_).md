@@ -21,7 +21,7 @@ func removeDeliveredNotification(_ notification: NSUserNotification)
 - (void) removeDeliveredNotification:(NSUserNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 If the user notification is not in [`deliveredNotifications`](./deliverednotifications.md), nothing happens.
 

@@ -20,7 +20,7 @@ Channel swizzle to use when RealityKit reads or samples from the texture.
 var swizzle: MTLTextureSwizzleChannels
 ```
 
-#### Discussion
+## Discussion
 
 The default value performs no swizzle, sampling red from the texture’s red channel, green from the texture’s green channel, blue from the texture’s blue channel, and alpha from the texture’s alpha channel.
 

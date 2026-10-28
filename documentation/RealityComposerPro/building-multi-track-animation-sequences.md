@@ -5,7 +5,7 @@
 
 Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
 
-#### Overview
+## Overview
 
 A Sequence organizes animation over time using two building blocks: tracks and actions.
 
@@ -21,7 +21,7 @@ Motion Path deserves special attention because it’s a small system in itself: 
 
 If you haven’t created a Sequence yet, start there before returning to this article — this one assumes you already know how to open the Sequence Editor, assign a basic Root Entity, and drop a single clip on a track. See [Creating animation sequences](./creating-animation-sequences.md) to learn the basics.
 
-#### Add multiple tracks and sub-tracks to a Sequence
+## Add multiple tracks and sub-tracks to a Sequence
 
 Every main track targets one entity, and Reality Composer Pro asks you to pick that entity explicitly. Click the **+** button next to the track name to add a new main track, then click the entity you want in the Preview viewport and confirm the selection in the picker banner.
 
@@ -29,7 +29,7 @@ Sub-tracks skip the picker entirely. Click the **+** button on the right side of
 
 You can mute a track to disable it temporarily without deleting it, which is useful for isolating one action type while you tune the others.
 
-#### Trigger audio and entity visibility with actions
+## Trigger audio and entity visibility with actions
 
 Play Audio and Enable/Disable Entity are the two most common actions for scripting reactive scene behavior alongside an animation.
 
@@ -39,13 +39,13 @@ To reproduce this end to end, select the entity in the world hierarchy first and
 
 Enable/Disable Entity is simpler: it flips an entity’s active state at a specific timeline moment. Its properties are Track Entry Name, Delay, and an Is Enabled toggle. Use it for reveals, disappearing effects, or turning a particle system on right before a Motion Path starts moving through it — there’s no dependency on any other component, since visibility is a base entity property.
 
-#### Add camera-facing transitions with Billboard Blend In/Out
+## Add camera-facing transitions with Billboard Blend In/Out
 
 Billboard Blend In/Out fades a billboard effect in or out over the timeline rather than snapping it on or off. Its Inspector group has Track Entry Name, Delay, Duration, Transition In, and Transition Out — Transition In controls how long the blend takes to fully appear, and Transition Out controls how long it takes to fade away, both measured in seconds within the action’s overall Duration.
 
 Like Play Audio, this action depends on a component: the target entity needs a Billboard Component so there’s something to actually keep facing the camera. If it’s missing, the Inspector shows an inline Add Billboard Component button beneath the action’s own settings, and clicking it adds the component in place. Once present, the Billboard Component’s full properties display inline in the same panel, so you can tune the billboard’s own behavior — such as the blend factor that controls how far it rotates toward the camera — right next to the blend timing you just set.
 
-#### Extend the timeline with Custom Actions
+## Extend the timeline with Custom Actions
 
 Custom Actions let you define your own action types beyond the five built-ins, backed by Custom Action Definition assets. Before they show up in the Sequencer, point Reality Composer Pro at your plugin code: open Project Settings from the menu bar, go to Build Settings, and set the Plugin Directory field to the location containing your custom action plugins. Once the directory is configured and loaded, your Custom Actions appear in the Actions section of the Sequencer Assets panel, sorted after the built-in actions and marked with a wrench icon. Each one carries the display name defined in its Custom Action Definition, and Reality Composer Pro uses that name both as its label in the asset tree and as the group label in the Inspector.
 
@@ -53,7 +53,7 @@ Dragging a Custom Action onto a track behaves like any other action: the Inspect
 
 To try this yourself: set the Plugin Directory in Project Settings so your Custom Action Definition loads, then open your Sequence and drag the custom action from the Actions list onto a track. Select the placed action, and in Bind Targets click **+ Add Binding**, then choose a Component such as Opacity and an Entity from the track’s subtree — the action now drives that component’s value over its Delay-to-Duration window using whichever animated value the definition provides. A Sequence that includes Custom Actions still follows the same Root Entity and auto-play rules as any other Sequence described later in this article.
 
-#### Animate movement with a Motion Path
+## Animate movement with a Motion Path
 
 Motion Path drives an entity along a series of points in space rather than triggering a discrete event. Dragging a Motion Path action onto a track creates a default two-point straight-line path immediately, with diamond-shaped point markers rendered above the path in the viewport.
 
@@ -63,7 +63,7 @@ Each point carries its own Position, Rotation ZYX, Scale, and Time values, plus 
 
 To build a path manually from scratch, drag Motion Path from the Actions section onto a track, which creates the default two-point line. Select the Motion Path node on the timeline to bring up its properties in the Inspector, then use the viewport gizmos to move the existing points where you want them. Add more points by double-clicking along the path to divide it, or by selecting the last point and clicking further out in the viewport to extend the route. Once you’re happy with the shape, select the last point and then the first to close it into a loop if the motion should repeat seamlessly, and finally dial in each point’s Time and Ease Type in the Inspector so the motion speeds up and slows down where you want it.
 
-#### Shape a path with Orbit and Spin modes
+## Shape a path with Orbit and Spin modes
 
 Rather than placing every point by hand, the Shape dropdown in the Motion Path Inspector can generate a path for you. Custom is the default — the manual, point-by-point mode described above. Orbit generates a circular or elliptical path and exposes its own Orbit Parameters group: Radius sets the orbit’s size in scene units, Number of Points sets how many points make up the generated path (a minimum of four), Spins Per Orbit sets how many full 360-degree rotations the entity makes around its own axis during one full orbit, and Spin Axis defines which axis that per-orbit spin happens around. Spin generates a path where the entity rotates in place around a central point rather than traveling a loop.
 
@@ -71,7 +71,7 @@ A handful of other Motion Path toggles apply regardless of shape. Look Along Pat
 
 A generated shape still slots into a multi-track Sequence exactly like the manual path described above — pair it with an Enable/Disable Entity, Play Audio, or Billboard Blend track on a sub-track of the same entity to trigger those actions in sync with the motion. To build a Motion Path like this programmatically instead of through the Sequencer UI, see doc:automating-motion-path-creation-with-editor-scripting-commands.
 
-#### Manage overlapping clips with cross-fades
+## Manage overlapping clips with cross-fades
 
 There’s a hard ceiling on how much overlap the cross-fade system supports: 0.75 seconds. Push an overlap past that threshold and the indicator switches to a warning icon, and the Sequencer reports the cross-fade as “Disabled” because it exceeds the maximum supported duration. If you see that warning, shorten the overlap rather than assuming the transition is still blending — past 0.75 seconds it isn’t. Below that threshold, the Sequencer shows a darker rounded region across the overlap with an icon marking it as a cross-fade, giving you immediate visual feedback while you nudge clips into position.
 

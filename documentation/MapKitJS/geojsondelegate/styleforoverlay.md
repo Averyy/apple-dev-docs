@@ -18,11 +18,11 @@ styleForOverlay?(
 ): Style;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns a [`Style`](../style.md) object for the provided overlay.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method for each overlay, and after each call to [`itemForPoint()`](./itemforpoint.md) and [`itemForPolygon()`](./itemforpolygon.md).
 

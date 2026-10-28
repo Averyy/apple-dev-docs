@@ -24,7 +24,7 @@ struct ContextOptions
 
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 
-#### Overview
+## Overview
 
 Create a [`ContextOptions`](./contextoptions.md) structure when you need to bias the model’s behavior by adjusting how the model receives your prompt.
 

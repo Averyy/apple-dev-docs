@@ -30,7 +30,7 @@ extern CFStringRef const kSecAttrAccount;
 - [Searching for keychain items](./searching-for-keychain-items.md)
 - [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains an account name. Items of class [`kSecClassGenericPassword`](./ksecclassgenericpassword.md) and [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 

@@ -28,7 +28,7 @@ func beginNewActivity(configuration workoutConfiguration: HKWorkoutConfiguration
 
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 This method asynchronously creates a new workout activity. HealthKit calls the session delegate’s [`workoutSession(_:didBeginActivityWith:date:)`](../hkworkoutsessiondelegate/workoutsession%28_,didbeginactivitywith,date%29.md) method after the activity begins. If the workout already has a current activity, HealthKit also ends that activity.
 

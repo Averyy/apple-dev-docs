@@ -25,7 +25,7 @@ var region: MKCoordinateRegion { get set }
 @property (nonatomic, assign) MKCoordinateRegion region;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit search results to the specified geographic area. The default value of this property is a region that spans the entire world.
 

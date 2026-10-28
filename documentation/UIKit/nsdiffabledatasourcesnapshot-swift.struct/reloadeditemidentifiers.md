@@ -19,7 +19,7 @@ Identifies the items reloaded by the changes to the snapshot.
 var reloadedItemIdentifiers: [ItemIdentifierType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 After you make updates to the snapshot, this method returns an array of identifiers corresponding to the items that the view reloads when you apply the snapshot to your data source.
 

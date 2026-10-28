@@ -21,7 +21,7 @@ Construct a `Duration` by adding attoseconds to a seconds value.
 init(secondsComponent: Int64, attosecondsComponent: Int64)
 ```
 
-#### Discussion
+## Discussion
 
 This is useful for when an external decomposed components of a `Duration` has been stored and needs to be reconstituted. Since the values are added no precondition is expressed for the attoseconds being limited to 1e18.
 

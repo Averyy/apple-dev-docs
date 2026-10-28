@@ -24,11 +24,11 @@ func AudioQueueDispose(_ inAQ: AudioQueueRef, _ inImmediate: Bool) -> OSStatus
 extern OSStatus AudioQueueDispose(AudioQueueRef inAQ, Boolean inImmediate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Disposing of an audio queue also disposes of its resources, including its buffers. After you call this function, you can no longer interact with the audio queue. In addition, the audio queue no longer invokes any callbacks.
 

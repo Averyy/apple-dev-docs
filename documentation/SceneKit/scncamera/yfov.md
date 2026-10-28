@@ -27,7 +27,7 @@ var yFov: Double { get set }
 @property (nonatomic) double yFov;
 ```
 
-#### Discussion
+## Discussion
 
 Field of view is an angle that determines the extent of the scene visible to the camera, similar to that of a real-world camera lens. A small field of view angle provides a narrow view, and a large field of view provides a wide view. A very wide field of view results in distorted perspective.
 

@@ -25,7 +25,7 @@ optional func previewController(_ previewController: RPPreviewViewController, di
 - (void) previewController:(RPPreviewViewController *) previewController didFinishWithActivityTypes:(NSSet<NSString *> *) activityTypes;
 ```
 
-#### Discussion
+## Discussion
 
 When the user is finished making changes to a screen recording, your app is responsible for dismissing the view controller representing the user interface. Call [`dismiss(animated:completion:)`](../../UIKit/uiviewcontroller/dismiss%28animated,completion%29.md) after getting the message to dismiss the preview view controller.
 

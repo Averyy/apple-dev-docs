@@ -20,11 +20,11 @@ func ODRecordCopyDetails(_ record: ODRecordRef!, _ attributes: CFArray!, _ error
 extern CFDictionaryRefODRecordCopyDetails(ODRecordRef record, CFArrayRef attributes, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The attribute values of the record.
 
-#### Discussion
+## Discussion
 
 The returned values are of type `CFString` or `CFData`, depending on the type of attribute. If `inAttributes` is not `NULL` and a requested attribute has not been fetched before, it is fetched in order to return its value.
 

@@ -16,11 +16,11 @@ class func wait(for expectations: [XCTestExpectation], timeout seconds: TimeInte
 + (XCTWaiterResult) waitForExpectations:(NSArray<XCTestExpectation *> *) expectations timeout:(NSTimeInterval) seconds;
 ```
 
-#### Return Value
+## Return Value
 
 A value describing the outcome of waiting for `expectations`.
 
-#### Discussion
+## Discussion
 
 Expectations can only appear in the array once. The test discards the waiter when the wait completes.
 

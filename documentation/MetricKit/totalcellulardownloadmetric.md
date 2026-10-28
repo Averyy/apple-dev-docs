@@ -16,7 +16,7 @@ A metric that measures the total data downloaded over a cellular connection.
 struct TotalCellularDownloadMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.totalCellularDownload(_:)`](./metricresult/totalcellulardownload%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

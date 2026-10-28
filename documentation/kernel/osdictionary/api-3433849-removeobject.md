@@ -24,11 +24,11 @@ void removeObject(const char *aKey);
 virtual void removeObject(const char *aKey);
 ```
 
-#### Return Value
+## Return Value
 
 true on success, which retains the object, or false on failure which does not retain the object.
 
-#### Discussion
+## Discussion
 
 An object in the dictionary with the given key object is removed and released.
 

@@ -19,7 +19,7 @@ class var genericGray: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * genericGrayColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. The color space also includes an alpha component. This object corresponds to the Cocoa color space name `NSCalibratedWhiteColorSpace`.
 

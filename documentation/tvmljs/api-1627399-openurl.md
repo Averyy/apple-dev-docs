@@ -17,7 +17,7 @@ void openURL(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Invoking this method with a valid URL launches the handling application.
 

@@ -28,7 +28,7 @@ optional func resolveRelativeLevelSetting(for intent: INSetSeatSettingsInCarInte
 - (void) resolveRelativeLevelSettingForSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *) intent withCompletion:(void (^)(INRelativeSettingResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the relative qualifier for the setting. Use the intent object to identify the relative setting specified by the user.
 

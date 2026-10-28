@@ -15,11 +15,11 @@ Set vnode attributes.
 int vnode_setattr(vnode_t vp, struct vnode_attr *vap, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or an error code.
 
-#### Discussion
+## Discussion
 
 Attributes to set are marked with VATTR_SET_ACTIVE and VNODE_ATTR* macros. Attributes successfully set are determined after call with VATTR_IS_SUPPORTED.
 

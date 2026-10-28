@@ -32,7 +32,7 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, didComplet
 - [Fetching website data into memory](../fetching-website-data-into-memory.md)
 - [Pausing and resuming uploads](../pausing-and-resuming-uploads.md)
 
-#### Discussion
+## Discussion
 
 The only errors your delegate receives through the `error` parameter are client-side errors, such as being unable to resolve the hostname or connect to the host. To check for server-side errors, inspect the [`response`](../urlsessiontask/response.md) property of the `task` parameter received by this callback.
 

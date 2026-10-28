@@ -19,7 +19,7 @@ func drawBackground(for block: NSTextTableBlock, withFrame frameRect: NSRect, in
 - (void) drawBackgroundForBlock:(NSTextTableBlock *) block withFrame:(NSRect) frameRect inView:(NSView *) controlView characterRange:(NSRange) charRange layoutManager:(NSLayoutManager *) layoutManager;
 ```
 
-#### Discussion
+## Discussion
 
 This methods is called by the text table block `block` to draw any colors and other decorations before the text is drawn.
 

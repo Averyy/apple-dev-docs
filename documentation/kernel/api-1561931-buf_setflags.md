@@ -15,7 +15,7 @@ Set flags on a buffer. @discussion: buffer_flags |= flags
 void buf_setflags(buf_t bp, int32_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

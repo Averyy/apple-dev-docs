@@ -25,7 +25,7 @@ class CGColorConversionInfo
 typedef const struct CGColorConversionInfo * CGColorConversionInfoRef;
 ```
 
-#### Overview
+## Overview
 
 A [`CGColorConversionInfo`](./cgcolorconversioninfo.md) object specifies a conversion between two or more color spaces, including information about the intent of the conversion. You use color conversion objects to specify the work to be done by an [`MPSImageConversion`](../MetalPerformanceShaders/mpsimageconversion.md) filter, which can then perform GPU-accelerated image conversion.
 

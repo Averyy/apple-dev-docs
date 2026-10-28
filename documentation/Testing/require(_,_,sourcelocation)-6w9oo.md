@@ -20,19 +20,19 @@ Unwrap an optional value or, if it is `nil`, fail and throw an error.
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro require<T>(_ optionalValue: T?, _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation) -> T
+@freestanding(expression)
+macro require<T>(_ optionalValue: T?, _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation) -> T
 ```
 
 ## Mentions
 
 - [Migrating a test from XCTest](./migratingfromxctest.md)
 
-#### Return Value
+## Return Value
 
 The unwrapped value of `optionalValue`.
 
-#### Overview
+## Overview
 
 > **Throws**: An instance of [`ExpectationFailedError`](./expectationfailederror.md) if `optionalValue` is `nil`.
 

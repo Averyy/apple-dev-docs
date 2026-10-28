@@ -35,7 +35,7 @@ var phase: INRidePhase { get set }
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 Use this property to convey the current status of the ride. When doing the initial confirmation of details with the user, you typically set this property to [`INRidePhase.unknown`](../inridephase/unknown.md). When the user books the ride, set the phase to [`INRidePhase.received`](../inridephase/received.md) if you have received the request but not yet assigned a driver to handle the request. After assigning a driver, change the status to [`INRidePhase.confirmed`](../inridephase/confirmed.md) until the driver picks up the user, at which point you should change the phase to values indicating the pickup status.
 

@@ -21,7 +21,7 @@ A type that represents the style to use when formatting relative dates, such as 
 struct Presentation
 ```
 
-#### Overview
+## Overview
 
 Cases include `named` and `numeric`.
 

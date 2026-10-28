@@ -14,7 +14,7 @@
 #define kIOPropertyBaseFrequencyKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the current base frequency for the device.
 

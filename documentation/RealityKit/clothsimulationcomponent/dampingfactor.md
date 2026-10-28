@@ -17,7 +17,7 @@ The damping factor affecting all the cloth bodies in the simulation. The expecte
 var dampingFactor: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Damping reduces particle velocities each time step, simulating drag from the surrounding medium. A value of 0 does not damp the body at all, so the velocities of the particles are unaltered. A value of 1 damps all movement, such that the particle velocities remain at zero.
 

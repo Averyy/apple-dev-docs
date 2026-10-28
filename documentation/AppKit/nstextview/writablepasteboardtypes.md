@@ -19,7 +19,7 @@ var writablePasteboardTypes: [NSPasteboard.PasteboardType] { get }
 @property (copy, readonly) NSArray<NSString *> * writablePasteboardTypes;
 ```
 
-#### Discussion
+## Discussion
 
 An array of strings describing the types that can be written to the pasteboard immediately, or an array with no members if the text view has no text or no selection.
 

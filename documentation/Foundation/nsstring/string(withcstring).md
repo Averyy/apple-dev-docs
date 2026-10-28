@@ -26,7 +26,7 @@ class func string(withCString bytes: UnsafePointer<CChar>) -> Any?
 + (id) stringWithCString:(const char *) bytes;
 ```
 
-#### Discussion
+## Discussion
 
 `cString` should contain data in the default C string encoding. If the argument passed to [`string(withCString:)`](./string%28withcstring%29.md) is not a zero-terminated C-string, the results are undefined.
 

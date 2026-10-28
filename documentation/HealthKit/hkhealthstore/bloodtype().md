@@ -28,11 +28,11 @@ func bloodType() throws -> HKBloodTypeObject
 
 - [About the HealthKit framework](../about-the-healthkit-framework.md)
 
-#### Return Value
+## Return Value
 
 A blood type object that contains information about the user’s blood type.
 
-#### Discussion
+## Discussion
 
 If the user has not specified a blood type or if the user has denied your app permission to read the blood type, this method returns an [`HKBloodType.notSet`](../hkbloodtype/notset.md) value.
 

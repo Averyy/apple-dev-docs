@@ -25,7 +25,7 @@ var languageOption: MPNowPlayingInfoLanguageOption { get }
 @property (nonatomic, readonly) MPNowPlayingInfoLanguageOption * languageOption;
 ```
 
-#### Discussion
+## Discussion
 
 The supplied language option may be the Automatic Legible Language Option, which requests the best legible language based on the user’s preferences. See [`isAutomaticLegibleLanguageOption()`](../mpnowplayinginfolanguageoption/isautomaticlegiblelanguageoption%28%29.md).
 

@@ -22,11 +22,11 @@ nonisolated
 func scrollBounceBehavior(_ behavior: ScrollBounceBehavior, axes: Axis.Set = [.vertical]) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that’s configured with the specified scroll bounce behavior.
 
-#### Discussion
+## Discussion
 
 Use this modifier to indicate whether scrollable views bounce when people scroll to the end of the view’s content, taking into account the relative sizes of the view and its content. For example, the following [`ScrollView`](../scrollview.md) only enables bounce behavior if its content is large enough to require scrolling:
 

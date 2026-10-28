@@ -24,7 +24,7 @@ var pixelBuffer: CVPixelBuffer? { get }
 @property (nonatomic, readonly, nullable) CVPixelBufferRef pixelBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 If this image was create using the [`init(cvPixelBuffer:)`](./init%28cvpixelbuffer%29-3wng7.md) initializer, this property’s value is the [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md) object that provides the image’s underlying image data. Do not modify the contents of this pixel buffer; doing so will cause undefined rendering results.
 

@@ -24,7 +24,7 @@ class func setAnimationDelegate(_ delegate: Any?)
 + (void) setAnimationDelegate:(id) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You can specify an animation delegate in cases where you want to receive messages when the animation starts or stops. After calling this method, you should call the [`setAnimationWillStart(_:)`](./setanimationwillstart%28_%29.md) and [`setAnimationDidStop(_:)`](./setanimationdidstop%28_%29.md) methods as needed to register appropriate selectors. By default, the animation delegate is set to `nil`.
 

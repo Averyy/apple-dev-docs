@@ -23,7 +23,7 @@ var items: [UITabBarItem]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UITabBarItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`UITabBarItem`](../uitabbaritem.md) objects, each of which corresponds to a tab displayed by the tab bar. The order of the items in this property corresponds to the order of the items onscreen. You can use this property to access the items as needed.
 

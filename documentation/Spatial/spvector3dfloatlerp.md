@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatLerp(SPVector3DFloat from, SPVector3DFloat to, SPVector3DFloat t);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation. When @p t=0, the result is the @p from vector. When @p t=1.0, the result is the @p to vector. For any other value of @p t, the result is a linear linear interpolation between the two vectors.
 
-#### Discussion
+## Discussion
 
 Returns a Spatial vector that represents the linear interpolation at @p t between two vectors.
 

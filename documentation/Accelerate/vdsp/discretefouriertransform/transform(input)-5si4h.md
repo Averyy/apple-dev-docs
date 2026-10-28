@@ -23,7 +23,7 @@ func transform<U>(input: U) -> [DSPDoubleComplex] where U : AccelerateBuffer, U.
 
 Available when `T` is `DSPDoubleComplex`.
 
-#### Return Value
+## Return Value
 
 An array of [`DSPDoubleComplex`](../../dspdoublecomplex.md) structures.
 

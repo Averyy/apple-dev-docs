@@ -25,11 +25,11 @@ func vImageContrastStretch_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ dest: 
 vImage_Error vImageContrastStretch_Planar8(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Contrast stretching evenly distributes a histogram’s pixel values across the full range of available pixel values. This technique is ideal for enhancing the contrast of an image with pixel values concentrated in one area of the intensity spectrum.
 

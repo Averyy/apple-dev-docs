@@ -24,7 +24,7 @@ var isProvisioningAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isProvisioningAvailable) BOOL provisioningAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 This property is YES when the pass is in a pre-provisioned state and the issuer app can guide the user to complete provisioning. Check this property when passActivationState returns PKSecureElementPassActivationStateDeactivated to determine if provisioning is available.
 

@@ -15,7 +15,7 @@ The view zoom.
 extern NSAttributedStringDocumentAttributeKey NSViewZoomDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../Foundation/nsvalue.md) object containing a float. For example, a value of `100` indicates 100% zoom.
 

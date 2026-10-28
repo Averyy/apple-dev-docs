@@ -21,7 +21,7 @@ var bundleIdentifier: String? { get }
 @property (copy, readonly, nullable) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets a value for this property only if the bundle identifier corresponds to an Apple app.
 

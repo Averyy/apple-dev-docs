@@ -22,7 +22,7 @@ Loads a new instance of the music item that includes the specified properties.
 func with(_ properties: [PartialMusicAsyncProperty<Self>]) async throws -> Self
 ```
 
-#### Discussion
+## Discussion
 
 This asynchronous method fetches a more complete representation of the receiver from Apple Music API over the network.
 

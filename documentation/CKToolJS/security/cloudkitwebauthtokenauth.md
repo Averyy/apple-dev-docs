@@ -15,7 +15,7 @@ Your CloudKit Web Authentication token.
 attribute string? CloudKitWebAuthTokenAuth;
 ```
 
-#### Discussion
+## Discussion
 
 If you are accessing user data using a CloudKit Web Authentication token, you set this to the token value.
 

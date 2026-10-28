@@ -25,7 +25,7 @@ var extraAttributesToRead: [MTRAttributeRequestPath]? { get set }
 @property (nonatomic, copy, nullable) NSArray<MTRAttributeRequestPath *> * extraAttributesToRead;
 ```
 
-#### Discussion
+## Discussion
 
 The FeatureMap attribute of all Network Commissioning clusters on the commissionee will always be read and does not need to be included in this list.
 

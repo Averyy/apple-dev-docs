@@ -23,7 +23,7 @@ var type: UITouch.TouchType { get }
 @property (nonatomic, readonly) UITouchType type;
 ```
 
-#### Discussion
+## Discussion
 
 For a complete list of touch types, see [`maximumPossibleForce`](./maximumpossibleforce.md).
 

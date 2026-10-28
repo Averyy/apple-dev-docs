@@ -23,11 +23,11 @@ func location(in view: UIView?) -> CGPoint
 - (CGPoint) locationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the local coordinate system of `view` that identifies the location of the gesture. If `nil` is specified for `view`, the method returns the gesture location in the window’s base coordinate system.
 
-#### Discussion
+## Discussion
 
 The returned value is a generic single-point location for the gesture computed by the UIKit framework. It is usually the centroid of the touches involved in the gesture. For objects of the [`UISwipeGestureRecognizer`](../uiswipegesturerecognizer.md) and [`UITapGestureRecognizer`](../uitapgesturerecognizer.md) classes, the location returned by this method has a significance special to the gesture. This significance is documented in the reference for those classes.
 

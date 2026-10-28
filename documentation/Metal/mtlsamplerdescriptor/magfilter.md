@@ -28,7 +28,7 @@ var magFilter: MTLSamplerMinMagFilter { get set }
 
 - [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLSamplerMinMagFilter.nearest`](../mtlsamplerminmagfilter/nearest.md).
 

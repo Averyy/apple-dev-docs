@@ -29,7 +29,7 @@ extern BOOL AXAssistiveAccessEnabled();
 
 - [Optimizing your app for Assistive Access](../optimizing-your-app-for-assistive-access.md)
 
-#### Discussion
+## Discussion
 
 The value of this property doesn’t change during a process’s lifetime, so it isn’t necessary to observe changes.
 

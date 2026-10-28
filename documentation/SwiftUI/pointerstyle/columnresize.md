@@ -15,7 +15,7 @@ The pointer style for resizing a column, or vertical division, in either directi
 static let columnResize: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 

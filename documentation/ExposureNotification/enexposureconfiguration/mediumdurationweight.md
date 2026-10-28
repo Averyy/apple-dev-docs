@@ -23,7 +23,7 @@ var mediumDurationWeight: Double { get set }
 @property (nonatomic, assign, readwrite) double mediumDurationWeight;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 

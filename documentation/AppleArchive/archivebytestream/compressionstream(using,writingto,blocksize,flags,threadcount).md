@@ -21,11 +21,11 @@ Creates a compression sequential output stream.
 static func compressionStream(using compressionAlgorithm: ArchiveCompression, writingTo compressedStream: ArchiveByteStream, blockSize: Int = (1<<20), flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveByteStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 
-#### Discussion
+## Discussion
 
 The new stream writes compressed data to the supplied archive byte stream.
 

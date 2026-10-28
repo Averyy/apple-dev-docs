@@ -15,7 +15,7 @@ The execute key.
 static let execute: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

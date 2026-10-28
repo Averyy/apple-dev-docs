@@ -21,11 +21,11 @@ Computes an approximation to the definite integral of a function on a specified 
 extern double quadrature_integrate(const quadrature_integrate_function *__f, double __a, double __b, const quadrature_integrate_options *options, quadrature_status *status, double *abs_error, size_t workspace_size, void * restrictworkspace);
 ```
 
-#### Return Value
+## Return Value
 
 The function returns the result of the quadrature operation, of type `double`.
 
-#### Discussion
+## Discussion
 
 It also stores the status in the variable whose address was passed as the `status` parameter. The defined status constants are:
 
@@ -37,7 +37,7 @@ It also stores the status in the variable whose address was passed as the `statu
 - `QUADRATURE_INTEGRATE_MAX_EVAL_ERROR` = -101: The requested accuracy limit could not be reached with the allowed number of evals/subdivisions.
 - `QUADRATURE_INTEGRATE_BAD_BEHAVIOUR_ERROR` = -102: Extremely bad integrand behavior, or excessive roundoff error occurs at some points of the integration interval.
 
-#### Discussion
+## Discussion
 
 On success, the absolute difference between the result *S* and the mathematically exact definite integral is assumed to be less than max(abs_tolerance, rel_tolerance * abs(*S*)).
 

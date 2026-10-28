@@ -23,7 +23,7 @@ class PKPaymentOrderDetails
 @interface PKPaymentOrderDetails : NSObject
 ```
 
-#### Overview
+## Overview
 
 The device only retreives metadata if the status is `PKPaymentAuthorizationStatusSuccess`.
 

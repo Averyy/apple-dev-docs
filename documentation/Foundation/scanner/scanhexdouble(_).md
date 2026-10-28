@@ -25,11 +25,11 @@ func scanHexDouble(_ result: UnsafeMutablePointer<Double>?) -> Bool
 - (BOOL) scanHexDouble:(double *) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver finds a valid double-point representation, otherwise [`false`](../../Swift/false.md). Overflow or underflow are both considered valid floating-point representations.
 
-#### Discussion
+## Discussion
 
 This corresponds to `%a` or `%A` formatting. The hexadecimal double representation must be preceded by `0x` or `0X`.
 

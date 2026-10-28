@@ -20,7 +20,7 @@ class NSPositionalSpecifier
 @interface NSPositionalSpecifier : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances of `NSPositionalSpecifier` specify an insertion point in a container relative to another object in the container, for example, `before first word` or `after paragraph 4`. The container is specified by an instance of `NSScriptObjectSpecifier`. `NSPositionalSpecifier` objects commonly encapsulate object specifiers used as arguments to the `make` (`create`) and `move` commands and indicate where the created or moved object is to be inserted relative to the object represented by an object specifier.
 

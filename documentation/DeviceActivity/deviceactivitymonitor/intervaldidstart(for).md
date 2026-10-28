@@ -17,7 +17,7 @@ Indicates that the device activity interval started.
 func intervalDidStart(for activity: DeviceActivityName)
 ```
 
-#### Discussion
+## Discussion
 
 An activity starts when someone first uses the device within the activity’s scheduled time interval. In other words, the system only invokes this method when the device is in use.
 

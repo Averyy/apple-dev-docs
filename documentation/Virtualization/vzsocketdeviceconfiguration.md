@@ -19,7 +19,7 @@ class VZSocketDeviceConfiguration
 @interface VZSocketDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create a [`VZSocketDeviceConfiguration`](./vzsocketdeviceconfiguration.md) object directly. Instead, create a [`VZVirtioSocketDeviceConfiguration`](./vzvirtiosocketdeviceconfiguration.md) object and add it to your virtual machine’s configuration.
 

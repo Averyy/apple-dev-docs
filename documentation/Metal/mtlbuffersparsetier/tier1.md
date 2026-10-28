@@ -24,7 +24,7 @@ case tier1
 MTLBufferSparseTier1
 ```
 
-#### Discussion
+## Discussion
 
 Tier 1 sparse buffers allow the following:
 

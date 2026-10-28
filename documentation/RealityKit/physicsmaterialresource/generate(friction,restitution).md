@@ -21,7 +21,7 @@ Generates a new material with the given characteristics.
 @preconcurrency static func generate(friction: Float = 0.8, restitution: Float = 0.8) -> PhysicsMaterialResource
 ```
 
-#### Return Value
+## Return Value
 
 A physics material resource.
 

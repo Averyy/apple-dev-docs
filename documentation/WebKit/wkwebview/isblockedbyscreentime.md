@@ -20,7 +20,7 @@ var isBlockedByScreenTime: Bool { get }
 @property (nonatomic, readonly) BOOL isBlockedByScreenTime;
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean value indicating whether Screen Time blocking has occurred.
 

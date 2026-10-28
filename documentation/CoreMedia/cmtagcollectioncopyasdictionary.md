@@ -21,7 +21,7 @@ Creates a new Core Foundation dictionary from a tag collection.
 extern CFDictionaryRefCMTagCollectionCopyAsDictionary(CMTagCollectionRef tagCollection, CFAllocatorRef allocator);
 ```
 
-#### Discussion
+## Discussion
 
 Convert dictionaries created by this function back to tag collections with [`CMTagCollectionCreateFromDictionary`](./cmtagcollectioncreatefromdictionary.md).
 

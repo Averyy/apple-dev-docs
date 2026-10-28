@@ -22,7 +22,7 @@ The opacity of the color, in the range `0` to `1`.
 var opacity: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` means 100% transparency, while a value of `1` means 100% opacity.
 

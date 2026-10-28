@@ -21,7 +21,7 @@ Creates a custom format style portraying two digits that represent the hour.
 static func twoDigits(clock: Date.FormatStyle.Symbol.VerbatimHour.Clock, hourCycle: Date.FormatStyle.Symbol.VerbatimHour.HourCycle) -> Date.FormatStyle.Symbol.VerbatimHour
 ```
 
-#### Return Value
+## Return Value
 
 An hour format style customized according to the specified clock representation and the start of the clock representation.
 

@@ -18,7 +18,7 @@ nonisolated
 func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor = .rect(.bounds), arrowEdge: Edge = .top, replacementAction: ((String) -> Void)? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to show a system UI translation popover when the `translationVisible` Boolean variable is `true`. Attach this view modifier to the containing view holding the text to translate. Then set the `isPresented` Boolean binding to `true` when you want the popover to display. When you do, a system UI translation popover appears offering a translation.
 

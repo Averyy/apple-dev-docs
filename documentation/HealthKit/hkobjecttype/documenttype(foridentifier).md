@@ -24,11 +24,11 @@ class func documentType(forIdentifier identifier: HKDocumentTypeIdentifier) -> H
 + (HKDocumentType *) documentTypeForIdentifier:(HKDocumentTypeIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`HKDocumentType`](../hkdocumenttype.md) instance based on the provided identifier.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKQuantityType`](../hkquantitytype.md) concrete subclass. HealthKit uses document types to manage medical documents. Use document type instances to create document samples that you can save in the HealthKit store. For more information, see [`HKDocumentSample`](../hkdocumentsample.md).
 

@@ -15,7 +15,7 @@ A source of live data about lighting information in the environment.
 final class EnvironmentLightEstimationProvider
 ```
 
-#### Overview
+## Overview
 
 Use the anchor this provider returns to reflect lighting from a person’s surroundings on the surfaces of virtual objects.
 

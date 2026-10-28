@@ -24,7 +24,7 @@ let HKMetadataKeyWasUserEntered: String
 extern NSString * const HKMetadataKeyWasUserEntered;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key’s value to [`true`](../Swift/true.md) if the sample was entered by the user; otherwise, set it to [`false`](../Swift/false.md).
 

@@ -15,7 +15,7 @@ Get redundancy flags set on a buffer.
 uint32_t buf_redundancy_flags(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 flags.
 

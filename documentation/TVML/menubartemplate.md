@@ -4,7 +4,7 @@
 
 Creates a page with items along the top and related information below.
 
-#### Overview
+## Overview
 
 Use the `menuBarTemplate` to display a list of selectable items across the top of the screen. Users can move between menu bar items to change the information displayed below the menu bar. The following figure shows the basic layout for a `menuBarTemplate` page. The theme for the menu bar template defaults to the system preference.
 
@@ -12,7 +12,7 @@ Use the `menuBarTemplate` to display a list of selectable items across the top o
 
 > **Note**: You can display up to seven items in the menu bar.
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `menuBarTemplate` element in TVML format.
 
@@ -28,13 +28,13 @@ The following listing shows the main elements of the `menuBarTemplate` element i
 </document>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[menuBar](./menubar.md)**: Menu items associated with the menu bar.
 - **[menuItem](./menuitem.md)**: Information about a single menu item.
 - **[title](./title.md)**: The text that describes the menu item.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `menuBarTemplate` example. The example shows the menu bar along the top of the screen. Expand the controlling JavaScript file in order to show content for each item in the menu bar. For more information, see [TVMLKit JS](../tvmljs/tvmljs.md).
 

@@ -21,7 +21,7 @@ A type that can convert itself into and out of an external representation with t
 typealias CodableWithConfiguration = DecodableWithConfiguration & EncodableWithConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 [`CodableWithConfiguration`](./codablewithconfiguration.md) is a type alias for the [`EncodableWithConfiguration`](./encodablewithconfiguration.md) and [`DecodableWithConfiguration`](./decodablewithconfiguration.md) protocols. Use this protocol to support codability in a type that can’t conform to [`Codable`](../Swift/codable.md) by itself, but can do so with additional statically-defined configuration provided by a [`CodableConfiguration`](./codableconfiguration.md) instance.
 

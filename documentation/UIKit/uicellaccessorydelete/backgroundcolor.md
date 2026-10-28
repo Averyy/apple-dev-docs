@@ -19,7 +19,7 @@ The background color to apply to the accessory.
 @property (nonatomic, strong, nullable) UIColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which uses the system default.
 

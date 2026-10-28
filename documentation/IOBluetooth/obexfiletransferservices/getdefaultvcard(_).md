@@ -19,11 +19,11 @@ func getDefaultVCard(_ inLocalPathAndName: String!) -> OBEXError
 - (OBEXError) getDefaultVCard:(NSString *) inLocalPathAndName;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXBadArgumentError initially. Further results returned through the fileTransferServicesGetComplete: and fileTransferServicesGetProgress: delegate methods if initially successful.
 
-#### Discussion
+## Discussion
 
 Some devices such as cellphones and computers support default VCards
 

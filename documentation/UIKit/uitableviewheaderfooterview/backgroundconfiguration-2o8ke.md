@@ -19,7 +19,7 @@ The current background configuration of the view.
 @property (nonatomic, copy, nullable) UIBackgroundConfiguration * backgroundConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Using a background configuration, you can obtain system default background styling for a variety of different view states. Create a background configuration with one of the default system styles, customize the configuration to match your view’s style as necessary, and assign the configuration to this property.
 

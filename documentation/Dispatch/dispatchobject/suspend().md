@@ -25,7 +25,7 @@ func suspend()
 extern void dispatch_suspend(dispatch_object_t object);
 ```
 
-#### Discussion
+## Discussion
 
 By suspending a dispatch object, your application can temporarily prevent the execution of any blocks associated with that object. The suspension occurs after completion of any blocks running at the time of the call. Calling this function increments the suspension count of the object, and calling [`resume()`](./resume%28%29.md) decrements it. While the count is greater than zero, the object remains suspended, so you must balance each [`suspend()`](./suspend%28%29.md) call with a matching [`resume()`](./resume%28%29.md) call.
 

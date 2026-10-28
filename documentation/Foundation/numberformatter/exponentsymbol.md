@@ -25,7 +25,7 @@ var exponentSymbol: String! { get set }
 @property (copy, null_resettable) NSString * exponentSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the latin capital letter e (E).
 

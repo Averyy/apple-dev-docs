@@ -24,11 +24,11 @@ class func unsupported(forReason reason: INPlayMediaPlaybackSpeedUnsupportedReas
 + (instancetype) unsupportedForReason:(INPlayMediaPlaybackSpeedUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPlayMediaPlaybackSpeedResolutionResult`](../inplaymediaplaybackspeedresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support the intent parameter for the specified reason.
 

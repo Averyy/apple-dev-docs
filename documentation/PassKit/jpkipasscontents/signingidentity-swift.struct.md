@@ -16,7 +16,7 @@ The authentication for signing user identification.
 struct SigningIdentity
 ```
 
-#### Overview
+## Overview
 
 Use this structure to define valid signature identity authentication.
 

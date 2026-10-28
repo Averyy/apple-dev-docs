@@ -21,7 +21,7 @@ Indicates whether the index is valid for use with the provided attributed string
 func isValid(within text: some AttributedStringProtocol) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` when the index is valid for use with the provided attributed string; otherwise, false. An index is valid if it is both within the bounds of the attributed string and was produced from the provided string without any intermediate mutations.
 

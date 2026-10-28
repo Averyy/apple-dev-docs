@@ -17,11 +17,11 @@ Encode a representation of this image in a given image format.
 borrowing func withUnsafeBytes<R>(as imageFormat: AttachableImageFormat, _ body: (UnsafeRawBufferPointer) throws -> R) throws -> R
 ```
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
 

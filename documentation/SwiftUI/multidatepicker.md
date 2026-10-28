@@ -19,7 +19,7 @@ nonisolated
 struct MultiDatePicker<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Use a `MultiDatePicker` when you want to provide a view that allows the user to select multiple dates.
 

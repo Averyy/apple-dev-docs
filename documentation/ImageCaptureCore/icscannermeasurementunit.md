@@ -19,7 +19,7 @@ enum ICScannerMeasurementUnit
 enum ICScannerMeasurementUnit : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The values correspond to the `ICAP_UNITS` values as defined in the `TWAIN` Specification.
 

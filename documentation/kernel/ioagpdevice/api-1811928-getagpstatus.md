@@ -12,11 +12,11 @@ virtual IOOptionBits getAGPStatus(
  IOOptionBits which = which );
 ```
 
-#### Return Value
+## Return Value
 
 Returns mask of status bits for the AGP bus.
 
-#### Overview
+## Overview
 
 Returns state bits for the AGP bus. Only one type of status is currently defined.
 

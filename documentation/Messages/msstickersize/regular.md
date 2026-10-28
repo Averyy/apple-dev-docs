@@ -21,7 +21,7 @@ case regular
 MSStickerSizeRegular
 ```
 
-#### Discussion
+## Discussion
 
 Use 136 x 136 point images to create regular-sized stickers. Always provide @3x images for these stickers (408 x 408 pixels). The system generates the @2x and @1x versions by downscaling the @3x images at runtime.
 

@@ -25,7 +25,7 @@ optional func parser(_ parser: XMLParser, didEndMappingPrefix prefix: String)
 - (void) parser:(NSXMLParser *) parser didEndMappingPrefix:(NSString *) prefix;
 ```
 
-#### Discussion
+## Discussion
 
 The parser sends this message only when namespace-prefix reporting is turned on through the [`shouldReportNamespacePrefixes`](../xmlparser/shouldreportnamespaceprefixes.md) method.
 

@@ -25,7 +25,7 @@ func CFTreeGetChildAtIndex(_ tree: CFTree!, _ idx: CFIndex) -> CFTree!
 extern CFTreeRefCFTreeGetChildAtIndex(CFTreeRef tree, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 The child tree at `idx`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

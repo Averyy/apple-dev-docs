@@ -22,7 +22,7 @@ var discoveredAccessories: [HMAccessory] { get }
 @property (nonatomic, copy, readonly) NSArray<HMAccessory *> * discoveredAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 When you start a new search by calling the [`startSearchingForNewAccessories()`](./startsearchingfornewaccessories%28%29.md) method, HomeKit clears the [`discoveredAccessories`](./discoveredaccessories.md) array. It then modifies the array as it discovers new accessories until you end the search by calling the [`stopSearchingForNewAccessories()`](./stopsearchingfornewaccessories%28%29.md) method.
 

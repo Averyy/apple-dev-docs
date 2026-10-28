@@ -17,7 +17,7 @@ Completely deletes the store and all its files from disk.
 func delete() throws
 ```
 
-#### Discussion
+## Discussion
 
 You should not attempt to call any other methods an instance of `OCKStore` after it has been deleted.
 

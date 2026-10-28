@@ -25,11 +25,11 @@ func replacementObject(for archiver: NSKeyedArchiver) -> Any?
 - (id) replacementObjectForKeyedArchiver:(NSKeyedArchiver *) archiver;
 ```
 
-#### Return Value
+## Return Value
 
 The object encode instead of the receiver (if different).
 
-#### Discussion
+## Discussion
 
 This method is called only if no replacement mapping for the object has been set up in the encoder (for example, due to a previous call of [`replacementObject(for:)`](./replacementobject%28for%29-60vwc.md) to that object).
 

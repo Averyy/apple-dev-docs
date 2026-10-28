@@ -24,7 +24,7 @@ var angle: CGFloat { get }
 @property (nonatomic, assign, readonly) CGFloat angle;
 ```
 
-#### Discussion
+## Discussion
 
 Use the angle to orient the image in an upright position and make the detected horizon level.
 

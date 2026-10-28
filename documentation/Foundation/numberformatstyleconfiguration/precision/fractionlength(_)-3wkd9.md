@@ -21,7 +21,7 @@ Returns a precision that constrains formatted values to a given number of allowe
 static func fractionLength(_ length: Int) -> NumberFormatStyleConfiguration.Precision
 ```
 
-#### Return Value
+## Return Value
 
 A precision that constrains formatted values to a given number of allowed digits in the fraction part.
 

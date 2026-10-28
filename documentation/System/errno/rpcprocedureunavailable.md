@@ -25,7 +25,7 @@ static var rpcProcedureUnavailable: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A remote procedure call was attempted for a procedure that doesn’t exist in the remote program.
 

@@ -24,7 +24,7 @@ var indexBufferOffset: Int { get set }
 @property (nonatomic) NSUInteger indexBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset needs to be a multiple of the index data type size and aligned to the index data type’s alignment. Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 

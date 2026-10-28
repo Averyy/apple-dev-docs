@@ -24,7 +24,7 @@ init(x: LocalizedStringKey, yStart: LocalizedStringKey, yEnd: LocalizedStringKey
 
 Available when `Content` is `FunctionAreaPlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

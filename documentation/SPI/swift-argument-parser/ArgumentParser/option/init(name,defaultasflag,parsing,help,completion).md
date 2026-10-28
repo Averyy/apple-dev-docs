@@ -17,7 +17,7 @@ Creates an optional property that reads its value from a labeled option, with a 
 init<T>(name: NameSpecification = .long, defaultAsFlag: T, parsing parsingStrategy: DefaultAsFlagParsingStrategy = .scanningForValue, help: ArgumentHelp? = nil, completion: CompletionKind? = nil) where Value == T?, T : ExpressibleByArgument
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allows providing a `defaultAsFlag` value that is used when the flag is present but no value follows it:
 

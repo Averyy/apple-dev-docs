@@ -25,7 +25,7 @@ func allContactedBodies() -> [SKPhysicsBody]
 - (NSArray<SKPhysicsBody *> *) allContactedBodies;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SKPhysicsBody`](../skphysicsbody.md) objects that this body is in contact with.
 

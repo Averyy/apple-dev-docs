@@ -24,7 +24,7 @@ var action: Selector { get set }
 @property (nonatomic) SEL action;
 ```
 
-#### Discussion
+## Discussion
 
 The action selector cannot be `NULL`.
 

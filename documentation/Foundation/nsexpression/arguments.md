@@ -25,7 +25,7 @@ var arguments: [NSExpression]? { get }
 @property (copy, readonly, nullable) NSArray<NSExpression *> * arguments;
 ```
 
-#### Discussion
+## Discussion
 
 An expression’s arguments is the array of expressions that will be passed as parameters during invocation of the selector on the operand of a function expression.
 

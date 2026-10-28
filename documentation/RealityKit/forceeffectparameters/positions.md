@@ -20,7 +20,7 @@ The positions of all rigid bodies under the influence of the effect, or nil if p
 let positions: UnsafeForceEffectBuffer<SIMD3<Float>>?
 ```
 
-#### Discussion
+## Discussion
 
 The position is located at each body’s center of mass, relative to the origin of the effect.
 

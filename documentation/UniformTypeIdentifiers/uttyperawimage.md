@@ -21,7 +21,7 @@ A base type that represents a raw image format that you use in digital photograp
 extern UTType * const UTTypeRAWImage;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.camera-raw-image`.
 

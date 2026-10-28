@@ -25,11 +25,11 @@ string AdGroup.DisplayStatus
 - `PROCESSING`: The ad group is being processed and is not yet serving.
 - `RUNNING`: The ad group is active and eligible to serve ads.
 
-#### Discussion
+## Discussion
 
 Because it rolls up the full hierarchy, an ad group can show `CAMPAIGN_ON_HOLD` even when its own status and system conditions are otherwise fine.
 
-##### Example
+### Example
 
 ```json
 {

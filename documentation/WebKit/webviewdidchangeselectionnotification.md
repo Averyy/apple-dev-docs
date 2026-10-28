@@ -15,7 +15,7 @@ Posted when a web view changes its typing selection.
 extern NSString * const WebViewDidChangeSelectionNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebView that changed its typing selection. This notification does not contain a `userInfo` dictionary.
 

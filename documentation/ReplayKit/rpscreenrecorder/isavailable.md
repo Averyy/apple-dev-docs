@@ -26,7 +26,7 @@ var isAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isAvailable) BOOL available;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the screen recorder is available for recording. Screen recording can be unavailable due to unsupported hardware, the user’s device displaying information over Airplay or through a TVOut session, or another app using the recorder.
 

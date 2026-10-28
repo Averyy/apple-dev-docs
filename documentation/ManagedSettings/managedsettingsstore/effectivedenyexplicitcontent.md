@@ -19,7 +19,7 @@ The deny explicit content constraint that is active on this device.
 <Bool> var effectiveDenyExplicitContent: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 An authorized app can query whether or not explicit content is allowed on the device.
 

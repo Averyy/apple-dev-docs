@@ -23,7 +23,7 @@ var spineLocation: UIPageViewController.SpineLocation { get }
 @property (nonatomic, readonly) UIPageViewControllerSpineLocation spineLocation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set with the [`spineLocation`](./optionskey/spinelocation.md) key when the page view controller is initialized, and can be changed by returning the new value from the [`pageViewController(_:spineLocationFor:)`](../uipageviewcontrollerdelegate/pageviewcontroller%28_,spinelocationfor%29.md) method of the delegate.
 

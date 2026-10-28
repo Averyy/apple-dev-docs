@@ -20,7 +20,7 @@ enum Goal
 enum ARCoachingGoal : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This property contains the available options when you set a coaching overlay’s [`goal`](./goal-swift.property.md). The coaching overlay adjusts its messaging to the user based on the value.
 

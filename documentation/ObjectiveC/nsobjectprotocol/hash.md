@@ -26,11 +26,11 @@ var hash: Int { get }
 @property (readonly) NSUInteger hash;
 ```
 
-#### Return Value
+## Return Value
 
 An integer that can be used as a table address in a hash table structure.
 
-#### Discussion
+## Discussion
 
 If two objects are equal (as determined by the [`isEqual(_:)`](./isequal%28_%29.md) method), they must have the same hash value. This last point is particularly important if you define [`hash`](./hash.md) in a subclass and intend to put instances of that subclass into a collection.
 

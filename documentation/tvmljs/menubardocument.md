@@ -15,7 +15,7 @@ An object used for setting and retrieving documents associated with a menu item.
 interface MenuBarDocument
 ```
 
-#### Overview
+## Overview
 
 Use the `getFeature` function with the feature name `MenuBarDocument` to retrieve an instance of this class from the `menuBar` element; for example, `getFeature('MenuBarDocument')`.
 

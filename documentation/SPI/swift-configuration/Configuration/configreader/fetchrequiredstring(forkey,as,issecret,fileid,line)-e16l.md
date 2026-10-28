@@ -24,11 +24,11 @@ Asynchronously fetches a required config value for the given config key, convert
 func fetchRequiredString<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) async throws -> Value where Value : RawRepresentable, Value.RawValue == String
 ```
 
-#### Return Value
+## Return Value
 
 The config value converted to the expected type.
 
-#### Discussion
+## Discussion
 
 Use this method when a string-convertible configuration value is mandatory for your application to function and you’re working with async providers. The method throws an error if the value is missing or can’t be converted to the expected type.
 

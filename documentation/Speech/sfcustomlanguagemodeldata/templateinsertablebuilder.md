@@ -21,7 +21,7 @@ A custom parameter attribute that constructs custom language model data from clo
 struct TemplateInsertableBuilder
 ```
 
-#### Overview
+## Overview
 
 Phrase counts can be generated manually by providing an exact phrase and weight (e.g. “Play the Albin counter gambit”) or from templates (e.g. “Move my <piece> to <square>”). Templates themselves can be constructed manually, or using the result builder DSL. This type supports the latter.
 

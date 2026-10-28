@@ -19,7 +19,7 @@ class let didMountNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceDidMountNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared [`NSWorkspace`](../nsworkspace.md) instance.
 

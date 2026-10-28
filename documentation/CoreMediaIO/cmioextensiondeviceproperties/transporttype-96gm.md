@@ -18,7 +18,7 @@ The transport type of the device, such as USB or HDMI.
 var transportType: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The value is an IOKit framework transport type constant (`kIOAudioDeviceTransportType`).
 

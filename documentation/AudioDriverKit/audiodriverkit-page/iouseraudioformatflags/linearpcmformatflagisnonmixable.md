@@ -15,7 +15,7 @@ A flag to indicate whether the PCM format can’t mix.
 LinearPCMFormatFlagIsNonMixable
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym of [`FormatFlagIsNonMixable`](./formatflagisnonmixable.md).
 

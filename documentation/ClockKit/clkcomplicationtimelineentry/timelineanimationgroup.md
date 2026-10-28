@@ -21,7 +21,7 @@ var timelineAnimationGroup: String? { get set }
 @property (nonatomic, copy) NSString * timelineAnimationGroup;
 ```
 
-#### Discussion
+## Discussion
 
 Use animation groups to created animated transitions between some, but not all, timeline entries. During Time Travel, ClockKit creates transition animations between entries with different group identifiers. ClockKit also creates transitions between entries whose identifiers are both `nil`. When the group identifiers are the same, ClockKit doesn’t create transition animations.
 

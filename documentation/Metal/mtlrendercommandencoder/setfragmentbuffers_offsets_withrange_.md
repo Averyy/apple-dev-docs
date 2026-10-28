@@ -20,7 +20,7 @@ Assigns multiple buffers to a range of entries in the fragment shader argument t
 - (void) setFragmentBuffers:(id<MTLBuffer> const[]) buffers offsets:(const NSUInteger[]) offsets withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the buffer at each index is `nil`.
 

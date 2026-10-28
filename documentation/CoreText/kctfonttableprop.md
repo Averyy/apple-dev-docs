@@ -23,7 +23,7 @@ var kCTFontTableProp: Int { get }
 kCTFontTableProp
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for properties.
 

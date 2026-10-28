@@ -21,11 +21,11 @@ Modifies the ISO 8601 date format style to include the time zone in the formatte
 func timeZone(separator: Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 An ISO 8601 date format style modified to include the time zone.
 
-#### Discussion
+## Discussion
 
 The default [`Date.ISO8601FormatStyle`](../iso8601formatstyle.md) doesn’t include the time zone.
 

@@ -23,7 +23,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t create instances of this intent yourself. Instead, Maps creates the intent when it requires a list of the user’s electric vehicles, usually before or during route planning.
 

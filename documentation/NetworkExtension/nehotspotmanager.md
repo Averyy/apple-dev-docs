@@ -18,7 +18,7 @@ A class that you use to enable or disable the hotspot evaluation and authenticat
 final class NEHotspotManager
 ```
 
-#### Overview
+## Overview
 
 Use an `NEHotspotManager` to perform custom authentication of Wi-Fi hotspots in app extensions rather than in an app. Using sandboxed extensions is more performant and secure than performing hotspot authentication in an app.
 
@@ -27,13 +27,13 @@ The manager is responsible for two extensions:
 - An [`NEHotspotEvaluationProvider`](./nehotspotevaluationprovider.md) to evaluate detected Wi-Fi hotspots.
 - An [`NEHotspotAuthenticationProvider`](./nehotspotauthenticationprovider.md) to authenticate with evaluated hotspots.
 
-##### Implementing an evaluation provider
+### Implementing an evaluation provider
 
 The [`NEHotspotEvaluationProvider`](./nehotspotevaluationprovider.md) managed by this class can receive a [`NEHotspotHelperCommandType.filterScanList`](./nehotspothelpercommandtype/filterscanlist.md) command at any time. Respond to this by indicating which of the listed networks your provider can confidently handle.
 
 When the device initially joins a network, the hotspot helper enters the *evaluating* state. In this state, each [`NEHotspotEvaluationProvider`](./nehotspotevaluationprovider.md) instance receives a command of type [`NEHotspotHelperCommandType.evaluate`](./nehotspothelpercommandtype/evaluate.md). If one or more evaluation providers indicates it can handle the network, the hotspot helper chooses the one with the highest confidence level before entering the *authenticating* state. If no evaluation provider instance claims the network, the state machine enters the *authenticated* state.
 
-##### Using the state machine during authentication
+### Using the state machine during authentication
 
 In the authenticating state, your [`NEHotspotAuthenticationProvider`](./nehotspotauthenticationprovider.md) receives the [`NEHotspotHelperCommandType.authenticate`](./nehotspothelpercommandtype/authenticate.md) command. At this point, the provider performs any network processing needed to make the network available for general network traffic. If authentication is successful, your provider calls [`createResponse(_:)`](./nehotspothelpercommand/createresponse%28_%29.md) on the command to create a [`NEHotspotHelperResult.success`](./nehotspothelperresult/success.md) response and returns it.
 

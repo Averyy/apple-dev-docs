@@ -19,7 +19,7 @@ The variations that the training process can use to generate more training data 
 struct ImageAugmentationOptions
 ```
 
-#### Overview
+## Overview
 
 Augmentation generates new images from the training data you supply to increase the amount of training data available to the model.
 

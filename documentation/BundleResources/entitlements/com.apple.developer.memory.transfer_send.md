@@ -15,7 +15,7 @@ An entitlement that grants an alternative browser engine’s rendering extension
 - **Name**: `com.apple.developer.memory.transfer_send`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 To increase the memory allocation of your alternative browser engine’s rendering extension, add this entitlement to its code signature and set the value of this entitlement to your browser app’s bundle ID.
 

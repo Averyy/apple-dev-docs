@@ -16,7 +16,7 @@ Creates a preview of a SwiftUI view in a window with custom viewpoints.
 init(_ name: String? = nil, windowStyle: some WindowStyle, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera] = { return [] })
 ```
 
-#### Discussion
+## Discussion
 
 Preview macros expand into a declaration that calls this initializer. Don’t use this initializer directly. Instead use one of the macros, like [`Preview(_:windowStyle:traits:body:cameras:)`](../../SwiftUI/preview%28_,windowstyle,traits,body,cameras%29.md).
 

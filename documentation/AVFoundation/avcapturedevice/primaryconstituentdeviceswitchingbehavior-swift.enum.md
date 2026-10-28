@@ -23,7 +23,7 @@ enum PrimaryConstituentDeviceSwitchingBehavior
 enum AVCapturePrimaryConstituentDeviceSwitchingBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Virtual devices with multiple constituent video devices (such as the Dual Camera, Dual Wide Camera, or Triple Camera) consist of cameras that each have different properties like focal length, maximum light sensitivity, and minimum focus distance. The system selects one of the constituent video devices as the primary device.
 

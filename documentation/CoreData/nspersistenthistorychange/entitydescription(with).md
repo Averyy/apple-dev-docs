@@ -25,7 +25,7 @@ class func entityDescription(with context: NSManagedObjectContext) -> NSEntityDe
 + (NSEntityDescription *) entityDescriptionWithContext:(NSManagedObjectContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The entity description ([`NSEntityDescription`](../nsentitydescription.md)) of the persistent history transaction entity.
 

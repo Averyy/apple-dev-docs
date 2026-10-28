@@ -15,11 +15,11 @@ Returns the given number unchanged.
 static func + (x: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The given argument without any changes.
 
-#### Discussion
+## Discussion
 
 You can use the unary plus operator (`+`) to provide symmetry in your code for positive numbers when also using the unary minus operator.
 

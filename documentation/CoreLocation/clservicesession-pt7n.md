@@ -26,7 +26,7 @@ final class CLServiceSession
 - [Configuring your app to use location services](./configuring-your-app-to-use-location-services.md)
 - [Suspending authorization requests](./suspending-authorization-requests.md)
 
-#### Discussion
+## Discussion
 
 A `CLServiceSession` object represents your app’s current goal for location authorization (for example [`CLServiceSession.AuthorizationRequirement.always`](./clservicesession-pt7n/authorizationrequirement/always.md)), if any. Use a `CLServiceSession` object to declaratively tell Core Location what your app needs for authorization related to a specific workflow that your app provides.
 

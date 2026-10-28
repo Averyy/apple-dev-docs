@@ -24,11 +24,11 @@ init(doubleResolutionResult: INDoubleResolutionResult)
 - (instancetype) initWithDoubleResolutionResult:(INDoubleResolutionResult *) doubleResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPlayMediaPlaybackSpeedResolutionResult`](../inplaymediaplaybackspeedresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to change the playback speed of a media item.
 

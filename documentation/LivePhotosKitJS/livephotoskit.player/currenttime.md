@@ -15,7 +15,7 @@ The current time, in seconds, of the play head.
 readonly attribute Number currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property moves the play head synchronously to the specified time.
 

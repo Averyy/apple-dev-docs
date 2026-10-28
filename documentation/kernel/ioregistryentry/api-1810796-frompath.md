@@ -16,11 +16,11 @@ static IORegistryEntry * fromPath(
  IORegistryEntry *fromEntry = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 A retained registry entry is returned on success, or zero on failure. The caller should release the entry.
 
-#### Overview
+## Overview
 
 This function parses paths to lookup registry entries. The path may begin with the <plane name>: created by getPath, or the plane may be set by the caller. If there are characters remaining unparsed after an entry has been looked up, this may be considered an invalid lookup, or those characters may be passed back to the caller and the lookup successful.
 

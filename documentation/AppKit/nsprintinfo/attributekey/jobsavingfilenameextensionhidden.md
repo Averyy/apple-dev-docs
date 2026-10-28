@@ -19,7 +19,7 @@ static let jobSavingFileNameExtensionHidden: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintJobSavingFileNameExtensionHidden;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates whether the job’s file name extension should be hidden when the [`jobDisposition`](../jobdisposition-swift.property.md) is [`save`](../jobdisposition-swift.struct/save.md). The default is [`false`](../../../Swift/false.md).
 

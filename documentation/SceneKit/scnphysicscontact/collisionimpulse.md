@@ -25,7 +25,7 @@ var collisionImpulse: CGFloat { get }
 @property (nonatomic, readonly) CGFloat collisionImpulse;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value tells you how hard the bodies struck each other in a collision. For example, in a game you might allow a character to proceed unhindered after a minor collision, but take damage when struck with sufficient force.
 

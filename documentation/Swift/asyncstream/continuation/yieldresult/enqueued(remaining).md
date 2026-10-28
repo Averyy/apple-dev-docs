@@ -21,7 +21,7 @@ The stream successfully enqueued the element.
 case enqueued(remaining: Int)
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the successful enqueueing of an element, whether the stream buffers the element or delivers it immediately to a pending call to `next()`. The associated value `remaining` is a hint that indicates the number of remaining slots in the buffer at the time of the `yield` call.
 

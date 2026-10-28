@@ -24,7 +24,7 @@ class var lighterColor: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * lighterColor;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the lighter color blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926870@2x.png)
 

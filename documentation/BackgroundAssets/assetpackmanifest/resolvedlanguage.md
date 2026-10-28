@@ -24,7 +24,7 @@ var resolvedLanguage: Locale.Language? { get }
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Discussion
+## Discussion
 
 The preferred languages set in Settings or System Settings inform the choice of resolved language, respecting any language that your app sets manually by setting [`resolvedLanguage`](../assetpackmanager/resolvedlanguage.md). This property may be `nil` if no localized asset packs are available. If a person using the device recently changed their preferred language or if this manifest is outdated, then this property’s value may be out of sync with the set of asset packs that are available locally.
 

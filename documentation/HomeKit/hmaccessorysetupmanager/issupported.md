@@ -19,7 +19,7 @@ class var isSupported: Bool { get }
 @property (class, assign, readonly, getter=isSupported) BOOL supported;
 ```
 
-#### Discussion
+## Discussion
 
 A flag that indicates whether `HMAccessorySetupManager` usage is supported
 

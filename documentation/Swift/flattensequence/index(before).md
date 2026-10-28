@@ -23,7 +23,7 @@ func index(before i: FlattenSequence<Base>.Index) -> FlattenSequence<Base>.Index
 
 Available when `Base` conforms to `BidirectionalCollection` and `Base.Element` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

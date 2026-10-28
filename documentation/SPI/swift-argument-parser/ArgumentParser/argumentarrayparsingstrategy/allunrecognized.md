@@ -17,7 +17,7 @@ After parsing, capture all unrecognized inputs in this argument array.
 static var allUnrecognized: ArgumentArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use the `allUnrecognized` parsing strategy to suppress “unexpected argument” errors or to capture unrecognized inputs for further processing.
 

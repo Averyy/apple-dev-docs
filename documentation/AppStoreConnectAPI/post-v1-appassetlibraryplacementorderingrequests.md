@@ -14,9 +14,9 @@ Create an app asset library placement ordering request.
 - [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
 - [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

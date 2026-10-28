@@ -21,7 +21,7 @@ An enumeration of types of matches returned by the scanner.
 enum SemanticDetails
 ```
 
-#### Discussion
+## Discussion
 
 The framework associates each value with an object that contains semantic information about the match.
 

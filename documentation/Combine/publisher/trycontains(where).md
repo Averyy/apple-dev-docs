@@ -21,11 +21,11 @@ Publishes a Boolean value upon receiving an element that satisfies the throwing 
 func tryContains(where predicate: @escaping (Self.Output) throws -> Bool) -> Publishers.TryContainsWhere<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits the Boolean value `true` when the upstream publisher emits a matching value.
 
-#### Discussion
+## Discussion
 
 Use [`tryContains(where:)`](./trycontains%28where%29.md) to find the first element in an upstream that satisfies the error-throwing closure you provide.
 

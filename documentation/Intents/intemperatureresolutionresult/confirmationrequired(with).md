@@ -24,11 +24,11 @@ class func confirmationRequired(with temperatureToConfirm: Measurement<UnitTempe
 + (instancetype) confirmationRequiredWithTemperatureToConfirm:(NSMeasurement<NSUnitTemperature *> *) temperatureToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemperatureResolutionResult`](../intemperatureresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to an equivalent value and want the user to confirm the replacement value before proceeding.
 

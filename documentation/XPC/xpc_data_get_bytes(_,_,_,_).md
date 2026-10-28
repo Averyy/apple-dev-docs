@@ -25,7 +25,7 @@ func xpc_data_get_bytes(_ xdata: xpc_object_t, _ buffer: UnsafeMutableRawPointer
 extern size_t xpc_data_get_bytes(xpc_object_t xdata, void *buffer, size_t off, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes that were copied into the buffer.
 

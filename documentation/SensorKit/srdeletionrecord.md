@@ -21,7 +21,7 @@ class SRDeletionRecord
 @interface SRDeletionRecord : NSObject
 ```
 
-#### Overview
+## Overview
 
 When there are gaps in a recorded sensor’s data, deletion records account for the occasions when the framework deliberately removes the records. A deletion record specifies the time range when records are unavailable (see [`startTime`](./srdeletionrecord/starttime.md) and [`endTime`](./srdeletionrecord/endtime.md)), and the [`reason`](./srdeletionrecord/reason.md) for removal.
 

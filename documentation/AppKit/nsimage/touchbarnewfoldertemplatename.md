@@ -22,7 +22,7 @@ class let touchBarNewFolderTemplateName: String
 extern NSImageName const NSImageNameTouchBarNewFolderTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for new folder](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793478@2x.png)
 

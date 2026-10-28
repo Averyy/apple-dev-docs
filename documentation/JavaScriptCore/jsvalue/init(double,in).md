@@ -24,7 +24,7 @@ init!(double value: Double, in context: JSContext!)
 + (JSValue *) valueWithDouble:(double) value inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript numeric value.
 

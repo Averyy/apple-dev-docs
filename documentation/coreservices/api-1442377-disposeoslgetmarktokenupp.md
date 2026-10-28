@@ -19,7 +19,7 @@ func DisposeOSLGetMarkTokenUPP(_ userUPP: OSLGetMarkTokenUPP!)
 void DisposeOSLGetMarkTokenUPP(OSLGetMarkTokenUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLGetMarkTokenProcPtr`](./oslgetmarktokenprocptr.md) callback function. 
 

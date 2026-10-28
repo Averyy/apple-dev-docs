@@ -12,11 +12,11 @@ virtual SCSIServiceResponse HandleClearACA (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 HandleClearACA instructs the Protocol Services driver to clear an auto-contingent allegiance.
 

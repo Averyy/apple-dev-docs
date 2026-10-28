@@ -5,7 +5,7 @@
 
 Define terms in the glossary property list and reference them on playground pages.
 
-#### Overview
+## Overview
 
 You can create a glossary for your playground book if its material introduces vocabulary that might be new to your audience.
 
@@ -14,7 +14,7 @@ Glossary entries appear in two places:
 - The Tools (…) menu’s Glossary entry, which shows a list of all terms and descriptions.
 - Individual popovers for terms that you reference from within the prose of a playground page.
 
-##### Assemble Terms into a Glossary
+### Assemble Terms into a Glossary
 
 Add a glossary by placing a property list containing the terms and definitions at the following path inside your playground book:
 
@@ -28,7 +28,7 @@ The top-level key in a glossary’s property list is a dictionary named `Terms`.
 
 ![A screen shot showing several terms defined inside the property list editor in Xcode.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/adding-a-glossary-to-a-playground-book-1@2x.png)
 
-##### Add Detail Keys to a Term’s Definition
+### Add Detail Keys to a Term’s Definition
 
 The dictionary you use to define a term has three parts. Each part requires a specifically named key:
 
@@ -42,7 +42,7 @@ The following image shows the parts of a glossary as they appear in Swift Playgr
 
 ![A screenshot of the glossary in Swift Playgrounds. Three parts are highlighted: the term, the definition, and the first-use link.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/adding-a-glossary-to-a-playground-book-2@2x.png)
 
-##### Add Links to the Terms in Your Prose
+### Add Links to the Terms in Your Prose
 
 Link appropriately to your glossary terms throughout your playground book’s pages. Link to a term on its first use, as well as any subsequent uses on later pages where you think learners might need to check the definition again.
 

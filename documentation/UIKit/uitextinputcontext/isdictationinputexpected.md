@@ -23,7 +23,7 @@ var isDictationInputExpected: Bool { get set }
 @property (nonatomic, readwrite, getter=isDictationInputExpected) BOOL dictationInputExpected;
 ```
 
-#### Discussion
+## Discussion
 
 When dictation input is likely, adjust your UI or perform any actions you need to accommodate dictation input.
 

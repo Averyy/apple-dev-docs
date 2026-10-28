@@ -25,7 +25,7 @@ struct RadioContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type for radio stations, live streams, and other continuous audio broadcasts.
 

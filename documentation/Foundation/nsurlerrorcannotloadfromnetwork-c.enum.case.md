@@ -21,7 +21,7 @@ A specific request to load an item only from the cache couldn’t be satisfied.
 NSURLErrorCannotLoadFromNetwork
 ```
 
-#### Discussion
+## Discussion
 
 This error is sent when the task needs to load from the network, but is blocked from doing so by the “load only from cache” directive.
 

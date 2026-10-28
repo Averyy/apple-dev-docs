@@ -15,7 +15,7 @@ The playable `HTMLVideoElement` that the Player consumes to obtain video frame d
 attribute HTMLVideoElement video;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is not populated by a playable `HTMLVideoElement`, the Player cannot play, but can still render as a photo if `photo` is populated.
 

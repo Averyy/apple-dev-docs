@@ -15,11 +15,11 @@ Set a function to be called once when I/O on a buffer completes.
 errno_t buf_setcallback(buf_t bp, void (*callback)(buf_t, void *), void *transaction);
 ```
 
-#### Return Value
+## Return Value
 
 0; always succeeds.
 
-#### Discussion
+## Discussion
 
 A one-shot callout set with buf_setcallback() will be called from buf_biodone() when I/O completes. It will be passed the "transaction" argument as well as the buffer. buf_setcallback() also marks the buffer as B_ASYNC.
 

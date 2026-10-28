@@ -24,7 +24,7 @@ class BEExportOptions
 
 - [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md)
 
-#### Overview
+## Overview
 
 This class identifies the selected types of items to export, including bookmarks, page visit history, reading list items, and browser extensions. People make their selections in the framework-provided transfer sheet. When someone dismisses the sheet, the system returns an instance of this class. For more information, see [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md).
 

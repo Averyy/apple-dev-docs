@@ -15,10 +15,10 @@ Creates an array property that reads its values from zero or more labeled option
 
 ```swift
 @preconcurrency
-init<T>(wrappedValue: [T], name: NameSpecification = .long, parsing parsingStrategy: ArrayParsingStrategy = .singleValue, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @escaping @Sendable (String) throws -> T) where Value == [T]
+init<T>(wrappedValue: [T], name: NameSpecification = .long, parsing parsingStrategy: ArrayParsingStrategy = .singleValue, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @Sendable @escaping (String) throws -> T) where Value == [T]
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is used when you declare an `@Option`-attributed array property with a transform closure and a default value:
 
@@ -41,7 +41,7 @@ var chars: [Character] = []
 ### Array Options
 - [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./init%28name,parsing,help,completion%29-238hg.md)
   Creates a required array property that reads its values from zero or more labeled options.
-- [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./init%28name,parsing,help,completion,transform%29-74hnp.md)
+- [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./init%28name,parsing,help,completion,transform%29-74hnp.md)
   Creates a required array property that reads its values from zero or more labeled options, parsing each element with the given closure.
 - [init<T>(wrappedValue: [T], name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./init%28wrappedvalue,name,parsing,help,completion%29-1dtbf.md)
   Creates an array property that reads its values from zero or more labeled options.

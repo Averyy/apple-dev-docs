@@ -29,7 +29,7 @@ var opacity: CGFloat { get set }
 
 - [Animating SceneKit Content](../animating-scenekit-content.md)
 
-#### Discussion
+## Discussion
 
 Possible values are between `0.0` (fully transparent) and `1.0` (fully opaque). The default is `1.0`.
 

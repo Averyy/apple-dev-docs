@@ -19,7 +19,7 @@ var toolTip: String! { get set }
 @property (copy, null_resettable) NSString * toolTip;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the window tab’s tooltip displays its [`title`](./title.md) string. Once customized, setting the [`toolTip`](./tooltip.md) property to [`nil`](../../ObjectiveC/nil-227m0.md) causes it to follow the [`title`](./title.md) property again.
 

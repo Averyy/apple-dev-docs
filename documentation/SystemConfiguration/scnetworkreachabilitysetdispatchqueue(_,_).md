@@ -24,7 +24,7 @@ func SCNetworkReachabilitySetDispatchQueue(_ target: SCNetworkReachability, _ qu
 Boolean SCNetworkReachabilitySetDispatchQueue(SCNetworkReachabilityRef target, dispatch_queue_t queue);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the target is scheduled successfully; otherwise, `FALSE`.
 

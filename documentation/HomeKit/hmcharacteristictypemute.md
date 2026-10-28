@@ -24,7 +24,7 @@ let HMCharacteristicTypeMute: String
 extern NSString * const HMCharacteristicTypeMute;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding Boolean is `true` when the audio is muted.
 

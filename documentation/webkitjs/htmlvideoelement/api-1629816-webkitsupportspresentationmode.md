@@ -18,7 +18,7 @@ boolean webkitSupportsPresentationMode(
 );
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the device supports presentation mode; otherwise, `false`. This property is also `false` if the meta data is loaded or the `loadedmetadata` event has not fired, and if the files are audio-only.
 

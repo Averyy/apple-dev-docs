@@ -21,7 +21,7 @@ An option that causes the filter to invert the alpha of the shadow.
 static var invertsAlpha: GraphicsContext.ShadowOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can create an “inner shadow” effect by combining this option with [`shadowAbove`](./shadowabove.md) and using the [`sourceAtop`](../blendmode-swift.struct/sourceatop.md) blend mode.
 

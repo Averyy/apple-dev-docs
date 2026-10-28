@@ -17,11 +17,11 @@ Presents system UI asking people to share available networks with an accessory.
 func presentAskToShareUI(scanProvider: (@Sendable (ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)? = nil) async throws -> WINetworkSharingAskToShareState
 ```
 
-#### Return Value
+## Return Value
 
 The [`WINetworkSharingAskToShareState`](../winetworksharingasktosharestate.md), indicating a response from the person.
 
-#### Discussion
+## Discussion
 
 Call this method when your accessory needs additional networks or when the system indicates new shareable networks are available. The system checks for nearby known networks and prompts people to select networks to share with your accessory.
 

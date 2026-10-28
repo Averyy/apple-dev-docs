@@ -21,7 +21,7 @@ The transaction authors that the observer filters for when evaluating history tr
 final let authors: Set<String>
 ```
 
-#### Discussion
+## Discussion
 
 When non-empty, the observer only reports changes whose transactions were written by one of the specified authors. When empty, the observer treats transactions from any author as relevant.
 

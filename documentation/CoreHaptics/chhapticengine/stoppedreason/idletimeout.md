@@ -24,7 +24,7 @@ case idleTimeout
 CHHapticEngineStoppedReasonIdleTimeout
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a time-critical pattern to play, restart the engine. Otherwise, do nothing and the engine will automatically restart when the next pattern plays.
 

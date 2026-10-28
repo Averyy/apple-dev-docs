@@ -24,7 +24,7 @@ class MDLTextureFilter
 @interface MDLTextureFilter : NSObject
 ```
 
-#### Overview
+## Overview
 
 A texture filter, together with a [`MDLTexture`](./mdltexture.md) object and transform information, form a [`MDLTextureSampler`](./mdltexturesampler.md) object, which describes a texture and its rendering parameters for use in rendering one aspect of a [`MDLMaterial`](./mdlmaterial.md) object’s surface appearance.
 

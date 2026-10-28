@@ -29,7 +29,7 @@ optional func player(_ player: GKPlayer, receivedExchangeRequest exchange: GKTur
 
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 Reply to this exchange request using the `GKTurnBasedExchange` [`reply(withLocalizableMessageKey:arguments:data:completionHandler:)`](../gkturnbasedexchange/reply%28withlocalizablemessagekey,arguments,data,completionhandler%29.md) method.
 

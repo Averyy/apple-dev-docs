@@ -28,7 +28,7 @@ HKWorkoutEventTypeMotionResumed
 
 - [Receiving Downhill Skiing and Snowboarding Data](../receiving-downhill-skiing-and-snowboarding-data.md)
 
-#### Discussion
+## Discussion
 
 If the system has automatically paused a running workout session, it also generates a motion resumed event when the user starts moving again.
 

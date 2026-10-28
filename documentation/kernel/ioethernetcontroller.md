@@ -15,7 +15,7 @@ Abstract superclass for Ethernet controllers.
 class IOEthernetController : IONetworkController
 ```
 
-#### Overview
+## Overview
 
 Ethernet controller drivers should subclass IOEthernetController, and implement or override the hardware specific methods to create an Ethernet driver. An interface object (an IOEthernetInterface instance) must be instantiated by the driver, through attachInterface(), to connect the controller driver to the data link layer.
 

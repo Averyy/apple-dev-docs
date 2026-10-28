@@ -21,7 +21,7 @@ The feature print data.
 let data: Data
 ```
 
-#### Discussion
+## Discussion
 
 Vision divides the data into separate elements. Determine the type of element using `elementType`, and the number of elements using `elementCount`.
 

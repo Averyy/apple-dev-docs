@@ -15,7 +15,7 @@ A static property that allows you to access the Look Around ready state enumerat
 static BadgePositions: typeof LookAroundBadgePosition;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to access the [`LookAroundBadgePosition`](../lookaroundbadgeposition.md) enumeration with `mapkit.LookAroundPreview.BadgePositions`.
 

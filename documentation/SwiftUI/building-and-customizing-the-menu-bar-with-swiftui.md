@@ -5,7 +5,7 @@
 
 Provide a seamless, cross-platform user experience by building a native menu bar for iPadOS and macOS.
 
-#### Overview
+## Overview
 
 On iPadOS and macOS, the menu bar provides access to crucial system-provided actions, such as Cut, Copy, Paste, and window management. The system groups these actions by function into menus and submenus through the menu bar. Apps can add contextual actions, like showing and hiding a sidebar, and can also create custom menus and menu items to allow people to perform app-specific actions from the menu bar. You can also bind menu bar to keyboard shortcuts to make your app quicker and easier to use.
 
@@ -23,7 +23,7 @@ The order of system-provided menus and menu items is consistent across all apps,
 
 Think about how someone uses your app and which actions make sense to add to the menu bar and where to place them. For design guidance, see Human Interface Guidelines > [The menu bar](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar).
 
-#### Populate the menu bar
+## Populate the menu bar
 
 When your app launches, the menu bar populates with menus and menu items based on the implemented scenes and commands. Menu items for conditional or context-dependent commands are made active or inactive dynamically, using information from the active scene and its view hierarchy in focus.
 
@@ -98,7 +98,7 @@ struct MyApp: App {
 }
 ```
 
-#### Add contextual system-provided menu items
+## Add contextual system-provided menu items
 
 Some common menu items are optional, but are helpful if the app contains certain capabilities. For example, not every scene includes a navigation sidebar, but for those that do, people expect to find a menu item that controls the navigation sidebar’s visibility. If your scene includes a navigation sidebar, include this menu item using the [`commands(content:)`](./scene/commands%28content%29.md) modifier and implementing [`SidebarCommands`](./sidebarcommands.md):
 
@@ -118,7 +118,7 @@ struct MyApp: App {
 
 For more information on system-provided command groups, such as text formatting, toolbars, and inspectors, see [`Commands`](./commands.md).
 
-#### Create custom menus and menu items
+## Create custom menus and menu items
 
 Organize and group your app’s custom menu items in custom menus using [`CommandMenu`](./commandmenu.md). The system inserts custom menus into the menu bar after the View menu.
 
@@ -149,7 +149,7 @@ WindowGroup {
 
 ![The menu bar for MyApp on iPadOS. The Actions menu is open with menu items for Run and Stop. The Actions menu and menu items have been added using a CommandMenu that has two buttons inside.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/menu-bar-actions-menu-ipados@2x.png)
 
-#### Modify standard menus
+## Modify standard menus
 
 Modify system-provided menus using [`CommandGroup`](./commandgroup.md). These groups either extend menus with additional menu items or they replace existing menu items in the indicated command group. When you add menu items in this way, you can specify the location of the menu item based on system-provided menu items.
 
@@ -181,7 +181,7 @@ WindowGroup {
 
 ![The menu bar for MyApp on iPadOS. The File menu is open with menu items New from Clipboard and Close Window. The New from Clipboard menu item has been added using a CommandGroup.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/menu-bar-new-item-ipados@2x.png)
 
-#### Update menus and menu items dynamically
+## Update menus and menu items dynamically
 
 Many menu items update their appearance or action depending on whether the scene is active, if the scene has focus, or what is currently selected. For example, the system grays out the Close Window command in the File menu when the app’s last window closes. Similarly, the Cut and Copy menu items are only available in the active window if the person selects copyable data. This behavior also applies to custom menus and menu items your app provides.
 

@@ -19,7 +19,7 @@ var helpMenu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * helpMenu;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify your app’s Help menu. When this property contains a valid menu, the system installs its Spotlight-related menu items on that menu. When the value is `nil`, AppKit installs Spotlight menu items on the menu of its choosing. To suppress Spotlight help items altogether, specify a menu that doesn’t appear on the menu bar.
 

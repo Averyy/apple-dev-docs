@@ -25,7 +25,7 @@ func makeRenderPipelineState(tileDescriptor descriptor: MTLTileRenderPipelineDes
 - (id<MTLRenderPipelineState>) newRenderPipelineStateWithTileDescriptor:(MTLTileRenderPipelineDescriptor *) descriptor options:(MTLPipelineOption) options reflection:(MTLAutoreleasedRenderPipelineReflection*) reflection error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLRenderPipelineState`](../mtlrenderpipelinestate.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

@@ -25,7 +25,7 @@ var defaultOption: AVMediaSelectionOption? { get }
 @property (nonatomic, readonly, nullable) AVMediaSelectionOption * defaultOption;
 ```
 
-#### Discussion
+## Discussion
 
 The default option is intended for use in the absence of a specific end-user selection or preference. Can be `nil`, indicating that without a specific end-user selection or preference, no option in the group is intended to be selected.
 

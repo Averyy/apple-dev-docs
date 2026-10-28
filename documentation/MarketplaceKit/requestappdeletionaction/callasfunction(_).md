@@ -16,7 +16,7 @@ Requests deletion of the specified app with someone’s confirmation.
 func callAsFunction(_ app: AppLibrary.App) async throws
 ```
 
-#### Discussion
+## Discussion
 
 When you call this action, the system presents a confirmation UI. If the person confirms, the system deletes the app and its data.
 

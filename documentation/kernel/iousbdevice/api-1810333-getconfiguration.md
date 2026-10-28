@@ -10,7 +10,7 @@ virtual IOReturn GetConfiguration(
  UInt8 *configNum);
 ```
 
-#### Overview
+## Overview
 
 Gets the current configuration from the IOUSBDevice object. Note that this call will send a control request on the bus to get the current configuration from the physical device.
 

@@ -22,7 +22,7 @@ nonisolated
 init(size: Value, range: ClosedRange<Value>) where Value : BinaryFloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The bins.
 

@@ -25,7 +25,7 @@ case opportunistic
 AVSampleBufferRequestModeOpportunistic
 ```
 
-#### Discussion
+## Discussion
 
 In situations with multiple competing requests, a sample buffer generator may defer an opportunistic request in favor of another immediate request, or a scheduled requests with a presentation time close to the timebase time.
 

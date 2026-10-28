@@ -19,7 +19,7 @@ var thickness: CGFloat { get }
 @property (readonly) CGFloat thickness;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `20.0`. The status bar returned by the [`system`](./system.md) has a thickness of 22 pixels, which corresponds to the thickness of the menu bar.
 

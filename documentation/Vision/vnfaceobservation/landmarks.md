@@ -24,7 +24,7 @@ var landmarks: VNFaceLandmarks2D? { get }
 @property (nonatomic, strong, readonly, nullable) VNFaceLandmarks2D * landmarks;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` for face observations produced by a [`VNDetectFaceRectanglesRequest`](../vndetectfacerectanglesrequest.md) analysis. Use the [`VNDetectFaceLandmarksRequest`](../vndetectfacelandmarksrequest.md) class to find facial features.
 

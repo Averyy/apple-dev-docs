@@ -25,7 +25,7 @@ func goToFirstPage(_ sender: Any?)
 - (void) goToFirstPage:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 PDF Kit records the move in its page history.
 

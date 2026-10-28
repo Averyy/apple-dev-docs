@@ -21,7 +21,7 @@ Convenience method to load data using a URLRequest, creates and resumes a URLSes
 func data(for request: URLRequest) async throws -> (Data, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 Data and response.
 

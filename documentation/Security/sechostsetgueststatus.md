@@ -15,11 +15,11 @@ Updates the status and attributes of a particular guest.
 OSStatus SecHostSetGuestStatus(SecGuestRef guestRef, uint32_t status, CFDictionaryRef attributes, SecCSFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function must be called by a host acting in proxy mode every time the status of a guest changes so that Code Signing Services can update the information cache for that guest. The specified guest must have been created using the [`SecHostCreateGuest`](./sechostcreateguest.md) function.
 

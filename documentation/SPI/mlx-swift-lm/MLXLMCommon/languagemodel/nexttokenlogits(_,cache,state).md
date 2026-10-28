@@ -18,7 +18,7 @@ Evaluate all input positions when only the final position’s logits are needed.
 func nextTokenLogits(_ input: LMInput.Text, cache: [KVCache]?, state: LMOutput.State?) -> LMOutput
 ```
 
-#### Discussion
+## Discussion
 
 Implementations may omit earlier logit rows, but must preserve cache updates and output state. The default uses the regular forward. Scoring and speculative verification must use the regular forward when they need multiple positions.
 

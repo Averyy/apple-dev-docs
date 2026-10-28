@@ -17,7 +17,7 @@ func withBorrowedName<ReturnType>(body: (mach_port_name_t, mach_port_context_t) 
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 Take care when using this function; many operations consume rights.
 

@@ -19,7 +19,7 @@ var dataRepresentation: Data { get }
 @property (copy, readonly) NSData * dataRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this to recreate the same hardware model with [`init(dataRepresentation:)`](./init%28datarepresentation%29.md).
 

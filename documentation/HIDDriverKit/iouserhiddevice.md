@@ -16,13 +16,13 @@ A provider object for devices that support interactions with users.
 class IOUserHIDDevice;
 ```
 
-#### Overview
+## Overview
 
 An `IOUserHIDDevice` represents a low-level interface for managing your HID device’s hardware. Subclass `IOUserHIDDevice` when you need to initialize your hardware or set up its transport layer in a specific way. This class provides only basic information about the device, and you are responsible for managing most interactions.
 
 > **Note**:  Subclass [`IOUserUSBHostHIDDevice`](./iouserusbhosthiddevice.md), instead of this class, when you want to customize Apple’s default implementation for USB-based HID devices.
 
-##### Specify the Driver’s Personality Information
+### Specify the Driver’s Personality Information
 
 When you subclass `IOUserHIDDevice`, update the `IOKitPersonalities` key of your driver extension’s `Info.plist` file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table.
 

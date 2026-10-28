@@ -19,7 +19,7 @@ Split a PRNG key into sub keys.
 func split(key: MLXArray, into num: Int, stream: StreamOrDevice = .default) -> [MLXArray]
 ```
 
-##### See Also
+### See Also
 
 - [`split(key:stream:)`](./split%28key,stream%29.md)
 

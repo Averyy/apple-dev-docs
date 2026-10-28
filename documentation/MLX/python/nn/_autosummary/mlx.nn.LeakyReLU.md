@@ -6,11 +6,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 
 # mlx.nn.LeakyReLU
 
-**class LeakyReLU(*negative_slope=0.01*)**
-: Applies the Leaky Rectified Linear Unit.
+```python
+class LeakyReLU(negative_slope=0.01)
+```
+
+Applies the Leaky Rectified Linear Unit.
+
 Simply `mx.maximum(negative_slope * x, x)`.
 
-Parameters:
-**negative_slope** – Controls the angle of the negative slope. Default: `1e-2`
+**Parameters:**
+: **negative_slope** – Controls the angle of the negative slope. Default: `1e-2`
 
 Methods

@@ -22,7 +22,7 @@ A function builder for generating arrays of library items without requiring full
 struct LibraryContentBuilder
 ```
 
-#### Overview
+## Overview
 
 Use the library content function builder to simplify the implementation of protocol requirements from you which provide arrays of library items. For example, without the builder, you would have to explicitly put items in an array in a [`views`](./librarycontentprovider/views.md) implementation:
 

@@ -24,7 +24,7 @@ func MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics(_ domain: MA
 extern CFArrayRefMACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics(MACaptionAppearanceDomain domain);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the preferred media characteristics for captioning of music, sounds, and dialog. See [Captions](./captions.md).
 

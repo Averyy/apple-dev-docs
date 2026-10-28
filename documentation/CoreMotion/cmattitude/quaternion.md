@@ -24,7 +24,7 @@ var quaternion: CMQuaternion { get }
 @property (nonatomic, readonly) CMQuaternion quaternion;
 ```
 
-#### Discussion
+## Discussion
 
 See the discussion of the [`CMQuaternion`](../cmquaternion.md) type in “Constants” for further information.
 

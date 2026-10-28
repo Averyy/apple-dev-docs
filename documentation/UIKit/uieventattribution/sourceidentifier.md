@@ -22,7 +22,7 @@ var sourceIdentifier: UInt8 { get }
 @property (nonatomic, assign, readonly) uint8_t sourceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an integer, between 0 and 255, that identifies the source of the attribution. For example, for an ad, `sourceIdentifier` might contain a campaign identifier so the advertiser can measure the effectiveness of different advertising campaigns.
 

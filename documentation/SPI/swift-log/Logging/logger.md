@@ -20,9 +20,9 @@ struct Logger
 ## Mentions
 
 - [Understanding Loggers and Log Handlers](./understandingloggers.md)
-- [SLG-NNNN: Feature name](./slg-nnnn.md)
+- [SLG-NNNN: Feature name](https://swiftpackageindex.com/apple/swift-log/main/documentation/logging/slg-nnnn)
 
-#### Overview
+## Overview
 
 `Logger` is a value type with respect to the [`Logger.Level`](./logger/level.md) and the [`Logger.Metadata`](./logger/metadata.md) (as well as the immutable `label` and the selected [`LogHandler`](./loghandler.md)). Therefore, you can pass an instance of `Logger` between libraries to preserve metadata across libraries.
 

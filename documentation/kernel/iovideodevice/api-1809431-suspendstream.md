@@ -12,11 +12,11 @@ virtual IOReturn suspendStream(
  IOVideoStream *stream);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully suspended.
 
-#### Overview
+## Overview
 
 This must be implemented by a subclass.
 

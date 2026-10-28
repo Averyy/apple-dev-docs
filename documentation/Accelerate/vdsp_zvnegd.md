@@ -21,7 +21,7 @@ Calculates the negative value of each element in the supplied complex double-pre
 extern void vDSP_zvnegD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code calculates the negative values of the elements of an array:
 

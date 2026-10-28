@@ -23,7 +23,7 @@ var presentsPopup: Bool { get }
 @property (nonatomic, readonly) BOOL presentsPopup;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to check if the action has a pop-up before attempting to show any pop-up views.
 

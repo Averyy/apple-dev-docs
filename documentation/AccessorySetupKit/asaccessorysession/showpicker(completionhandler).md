@@ -24,7 +24,7 @@ func showPicker() async throws
 - (void) showPickerWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when your app includes a [DeviceDiscoveryExtension](../../DeviceDiscoveryExtension/DeviceDiscoveryExtension.md) for its supported accessories. If your app doesn’t use DDE, call [`showPicker(for:completionHandler:)`](./showpicker%28for,completionhandler%29.md) with an array of [`ASPickerDisplayItem`](../aspickerdisplayitem.md) instances instead.
 

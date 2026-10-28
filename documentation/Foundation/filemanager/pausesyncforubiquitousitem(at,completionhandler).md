@@ -27,7 +27,7 @@ func pauseSyncForUbiquitousItem(at url: URL) async throws
 - (void) pauseSyncForUbiquitousItemAtURL:(NSURL *) url completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this when opening an item to prevent sync from altering the contents of the URL. Once paused, the file provider will not upload local changes nor download remote changes.
 

@@ -25,11 +25,11 @@ func loadNibNamed(_ name: String, owner: Any?, options: [UINib.OptionsKey : Any]
 - (NSArray *) loadNibNamed:(NSString *) name owner:(id) owner options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the top-level objects in the nib file. The array does not contain references to the File’s Owner or any proxy objects; it contains only those objects that were instantiated when the nib file was unarchived. You should retain either the returned array or the objects it contains manually to prevent the nib file objects from being released prematurely.
 
-#### Discussion
+## Discussion
 
 You can use this method to load user interfaces and make the objects available to your code. During the loading process, this method unarchives each object, initializes it, sets its properties to their configured values, and reestablishes any connections to other objects. (To establish outlet connections, this method uses the `setValue:forKey:` method, which may cause the object in the outlet to be retained automatically.) For detailed information about the nib-loading process, see [Resource Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i).
 

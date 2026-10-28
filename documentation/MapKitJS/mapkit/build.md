@@ -15,7 +15,7 @@ The build string.
 get build(): string;
 ```
 
-#### Discussion
+## Discussion
 
 A build string that describes the MapKit JS version. It’s helpful to include this in bug reports.
 

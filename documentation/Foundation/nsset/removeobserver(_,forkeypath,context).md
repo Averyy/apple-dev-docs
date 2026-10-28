@@ -25,7 +25,7 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String, context: U
 - (void) removeObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 `NSSet` objects are not observable, so this method raises an exception when invoked on an `NSSet` object. Instead of observing a set, observe the unordered to-many relationship for which the set is the collection of related objects.
 

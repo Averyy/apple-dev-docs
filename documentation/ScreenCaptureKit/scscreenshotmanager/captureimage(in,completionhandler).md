@@ -22,7 +22,7 @@ class func captureImage(in rect: CGRect) async throws -> CGImage
 + (void) captureImageInRect:(CGRect) rect completionHandler:(void (^)(CGImageRef image, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 captureImageInRect:completionHandler:
 

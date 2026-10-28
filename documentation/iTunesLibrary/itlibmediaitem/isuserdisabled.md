@@ -20,7 +20,7 @@ var isUserDisabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isUserDisabled) BOOL userDisabled;
 ```
 
-#### Discussion
+## Discussion
 
 iTunes doesn’t play or sync disabled tracks.
 

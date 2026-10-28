@@ -20,7 +20,7 @@ The shape of a portal’s clipping and crossing boundary.
 struct BoundaryStyle
 ```
 
-#### Overview
+## Overview
 
 A portal has two related but separate concepts:
 

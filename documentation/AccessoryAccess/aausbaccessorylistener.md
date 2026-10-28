@@ -19,7 +19,7 @@ protocol AAUSBAccessoryListener : NSObjectProtocol, Sendable
 @protocol AAUSBAccessoryListener <NSObject>
 ```
 
-#### Discussion
+## Discussion
 
 This protocol provides methods that notify your app when a USB accessory connects to or disconnects from the system.  The framework invokes the methods for a listener on the internal serial queue of [`AAUSBAccessoryManager`](./aausbaccessorymanager.md).
 

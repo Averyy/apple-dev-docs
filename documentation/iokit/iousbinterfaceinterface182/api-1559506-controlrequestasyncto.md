@@ -16,7 +16,7 @@ Sends an asynchronous USB request on a control pipe.
 IOReturn (*ControlRequestAsyncTO)(void *self, UInt8 pipeRef, IOUSBDevRequestTO *req, IOAsyncCallback1 callback, void *refCon);
 ```
 
-#### Discussion
+## Discussion
 
 The IOUSBDevRequestTO structure allows the client to specify timeout values for this request. Use pipeRef=0 for the default device control pipe. If the request is a standard request which will change the state of the device, the device must be open, which means you should be using the IOUSBDeviceInterface for this command.
 

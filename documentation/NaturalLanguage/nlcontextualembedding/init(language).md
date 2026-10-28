@@ -25,7 +25,7 @@ init?(language: NLLanguage)
 + (NLContextualEmbedding *) contextualEmbeddingWithLanguage:(NLLanguage) language;
 ```
 
-#### Discussion
+## Discussion
 
 The language the framework uses to find the most recent embedding suitable for the value you specify.
 

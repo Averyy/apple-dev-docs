@@ -25,7 +25,7 @@ func nw_quic_get_max_udp_payload_size(_ options: nw_protocol_options_t) -> UInt1
 uint16_t nw_quic_get_max_udp_payload_size(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum length of a QUIC packet, in bytes.
 

@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeIEEE_EUI64 = 2
 ```
 
-#### Discussion
+## Discussion
 
 EUI-64 Identifier Type.
 

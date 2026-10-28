@@ -25,7 +25,7 @@ let kCGPDFContextAllowsCopying: CFString
 extern CFStringRef const kCGPDFContextAllowsCopying;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value of this key is [`true`](../Swift/true.md).
 

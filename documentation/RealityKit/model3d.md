@@ -19,7 +19,7 @@ struct Model3D<Content> where Content : View
 
 - [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
 
-#### Overview
+## Overview
 
 Use `Model3D` to embed a 3D model from a USD file or Reality file in your SwiftUI app.
 

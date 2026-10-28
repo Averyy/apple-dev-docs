@@ -5,7 +5,7 @@
 
 Share your documentation directly with Xcode users or host it on a web server.
 
-#### Overview
+## Overview
 
 As soon as you create a project in Xcode, DocC is ready to generate structured documentation for the symbols in your project. Whether you only have documentation comments in your source files, or you craft a full learning experience that includes articles and tutorials, Xcode provides a convenient way to share the documentation in your project with other developers.
 
@@ -19,7 +19,7 @@ Distributing your documentation involves the following steps:
 1. Export your documentation, either from Xcode’s documentation viewer, or by using the `xcodebuild` command-line tool.
 2. Share your documentation, either directly with Xcode users who open it in the documentation viewer, or by hosting it on a website.
 
-##### Generate a publishable archive of your documentation
+### Generate a publishable archive of your documentation
 
 To create a documentation archive, you export the documentation from the documentation viewer or use the `xcodebuild docbuild` command-line tool. Using `xcodebuild` allows you to integrate with a continuous integration (CI) workflow.
 
@@ -49,7 +49,7 @@ As part of the build process, `xcodebuild` produces many files in the derived da
 find ~/Desktop/SlothCreatorBuild -type d -name '*.doccarchive`
 ```
 
-##### Send a documentation archive directly to developers
+### Send a documentation archive directly to developers
 
 Because a documentation archive is a self-contained bundle, you can easily share it with other developers. For example, you can send it by email just like a regular document, include it with a binary distribution of your product, or make it downloadable from a website. When the recipient opens the documentation archive, Xcode adds it to the Imported Documentation section of the documentation viewer.
 
@@ -57,7 +57,7 @@ Because a documentation archive is a self-contained bundle, you can easily share
 
 To remove an imported documentation archive, hold the pointer over the item to display the More button, and then choose Remove.
 
-##### Host a documentation archive on your website
+### Host a documentation archive on your website
 
 When Xcode exports a documentation archive, it includes a single-page web app in the bundle. This web app renders the documentation content as HTML, letting you host the documentation archive on a web server.
 
@@ -67,11 +67,11 @@ For reference documentation and articles, the web app uses a URL path that begin
 https://www.example.com/documentation/SlothCreator/SlothGenerator
 ```
 
-###### Host a documentation archive with a file server
+#### Host a documentation archive with a file server
 
 You can host documentation archives you create with Xcode 14.3 and later using a regular file server. By default, the server hosts the documentation at the root of the website, like the SlothCreator example above. To host the documentation at a specific subpath, configure a custom [DocC Archive Hosting Base Path](./build-settings-reference.md#DocC-Archive-Hosting-Base-Path) before you build the documentation archive.
 
-###### Host a documentation archive using custom routing
+#### Host a documentation archive using custom routing
 
 A file server is the recommended solution to host your documentation. But, if you need more control over how the server hosts your content, you can configure the request routing of your web server so it responds to documentation requests with the data and assets within the documentation archive.
 

@@ -24,7 +24,7 @@ static var isAssistiveTouchRunning: Bool { get }
 extern BOOL UIAccessibilityIsAssistiveTouchRunning();
 ```
 
-#### Discussion
+## Discussion
 
 The user must enable Guided Access for the correct value to return.
 

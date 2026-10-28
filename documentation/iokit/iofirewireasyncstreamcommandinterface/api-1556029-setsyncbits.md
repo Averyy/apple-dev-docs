@@ -16,7 +16,7 @@ Set the sync bits for the AsynStream packets.
 void (*SetSyncBits)(IOFireWireLibAsyncStreamCommandRef self, UInt16 sync);
 ```
 
-#### Discussion
+## Discussion
 
 Available in v1 and newer.
 

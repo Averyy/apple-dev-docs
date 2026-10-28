@@ -21,11 +21,11 @@ convenience init(ecoScore value: Double)
 + (instancetype) routeDetailWithEcoScore:(double) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the eco-score
 
-#### Discussion
+## Discussion
 
 Use this method to display a normalized environmental efficiency score for the route. The score should be a value between 0.0 and 100.0, where higher values indicate more environmentally friendly routing options.
 

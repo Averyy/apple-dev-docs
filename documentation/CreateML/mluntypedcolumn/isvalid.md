@@ -20,7 +20,7 @@ A Boolean value that indicates whether the column is valid.
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check [`isValid`](./isvalid.md) after you create or mutate an untyped column to ensure it’s valid. If the value is [`false`](../../Swift/false.md), the untyped column encountered an error and you can’t use it for subsequent operations. For example, comparing two columns of different sizes creates an invalid column.
 

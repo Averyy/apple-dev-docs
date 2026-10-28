@@ -23,7 +23,7 @@ case ready
 INListCarsIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the confirmation phase of intent handling to affirm you’re ready and able to act on the intent. The system generates an error if you use this code during the handling phase.
 

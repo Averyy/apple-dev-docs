@@ -22,7 +22,7 @@ Encodes a nested container and returns an `Encoder` instance for encoding `super
 mutating func superEncoder() -> any Encoder
 ```
 
-#### Return Value
+## Return Value
 
 A new encoder to pass to `super.encode(to:)`.
 

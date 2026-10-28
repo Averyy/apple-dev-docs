@@ -16,7 +16,7 @@ Brings a view forward in Z by the provided distance in points.
 func offset(z: CGFloat) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that is extruded forward in Z by `z`.
 

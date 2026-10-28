@@ -23,7 +23,7 @@ var maxPhotoQualityPrioritization: AVCapturePhotoOutput.QualityPrioritization { 
 @property (nonatomic) AVCapturePhotoQualityPrioritization maxPhotoQualityPrioritization;
 ```
 
-#### Discussion
+## Discussion
 
 [`AVCapturePhotoOutput`](../avcapturephotooutput.md) can apply a variety of techniques to improve photo quality, such as reducing noise, preserving detail in low light, freezing motion, and so on. Some techniques improve image quality at the expense of the shot-to-shot time. Before starting your session, you may set this property to indicate the highest quality prioritization you intend to request when calling the [`capturePhoto(with:delegate:)`](./capturephoto%28with,delegate%29.md) method.
 

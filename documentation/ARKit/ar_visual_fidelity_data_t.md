@@ -15,7 +15,7 @@ Visual fidelity data object containing device fit and field of view validation r
 typedef NSObject<OS_ar_visual_fidelity_data> * ar_visual_fidelity_data_t;
 ```
 
-#### Discussion
+## Discussion
 
 Provides real-time information about user eye positioning and field of view verification for regulatory compliance in medical and therapeutic applications.
 

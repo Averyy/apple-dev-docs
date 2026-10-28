@@ -23,7 +23,7 @@ var preferredDisplayMode: UISplitViewController.DisplayMode { get set }
 @property (nonatomic) UISplitViewControllerDisplayMode preferredDisplayMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the display mode that you prefer to use. The split view controller makes every effort to adopt the interface you specify, but may use a different type of interface if there isn’t enough space to support your preferred choice. If changing the value of this property leads to an actual change in the current display mode, the split view controller updates [`displayMode`](./displaymode-swift.property.md). The resulting change is animated if you made the change in an animation block.
 

@@ -18,7 +18,7 @@ Build derived state after checkpoint or adapter topology updates and before the 
 func prepare() throws
 ```
 
-#### Discussion
+## Discussion
 
 Implementations may materialize arrays or replace storage-sharing module views. The library invokes this lifecycle hook while it has exclusive access to the model; inference calls must remain read-only.
 

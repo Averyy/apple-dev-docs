@@ -19,11 +19,11 @@
 static bool SPPoint3DAlmostEqualToPoint(SPPoint3D p1, SPPoint3D p2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two points are equal within the specified default absolute tolerance.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the two points are equal within the specified default absolute tolerance.
 

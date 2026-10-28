@@ -21,7 +21,7 @@ An image resolved to a particular environment.
 struct ResolvedImage
 ```
 
-#### Overview
+## Overview
 
 You resolve an [`Image`](../image.md) in preparation for drawing it into a context, either manually by calling [`resolve(_:)`](./resolve%28_%29-898z6.md), or automatically when calling [`draw(_:in:style:)`](./draw%28_,in,style%29-blhz.md) or [`draw(_:at:anchor:)`](./draw%28_,at,anchor%29-1z5wt.md). The resolved image takes into account environment values like the display resolution and current color scheme.
 

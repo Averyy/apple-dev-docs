@@ -19,7 +19,7 @@ var localizedDescription: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The localized description is optional. If you don’t provide one, it defaults to the unlocalized description.
 

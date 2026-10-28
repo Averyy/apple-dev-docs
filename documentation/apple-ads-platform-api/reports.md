@@ -5,11 +5,11 @@
 
 Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 
-#### Overview
+## Overview
 
 All report endpoints follow a shared `POST /query` pattern. You parameterize each request with `promotedObjectType`: either `apps` for App Store app campaigns or `business-brands` for Apple Maps campaigns. The request body, response objects, available groupBy dimensions, and supported options differ between the two promoted object types.
 
-#### Choose a Reporting Endpoint
+## Choose a Reporting Endpoint
 
 Query one of the following endpoints based on your promoted object type and the entity level you want to report on:
 
@@ -26,7 +26,7 @@ Query one of the following endpoints based on your promoted object type and the 
 | `POST` | `/v1/reports/business-brands/keywords/query` | [`Keywords Report (Brands)`](./get-brand-keyword-reports.md) retrieves Apple Maps keyword performance data. |
 | `POST` | `/v1/reports/business-brands/searchterms/query` | [`Search Terms Report (Brands)`](./get-brand-search-term-reports.md) retrieves Apple Maps search term performance data. |
 
-##### Build the Request
+### Build the Request
 
 Every report request uses either [`AppsReportingRequest`](./appsreportingrequest.md) or [`BrandsReportingRequest`](./brandsreportingrequest.md) as the request body. Both share the same top-level fields:
 
@@ -38,7 +38,7 @@ Every report request uses either [`AppsReportingRequest`](./appsreportingrequest
 - The `groupBy` field is an optional dimensional breakdown. Supported values differ between Apps and Brands, and additional restrictions apply at the keyword and search term entity levels. When you omit `groupBy`, the response returns one aggregate row per entity with no dimensional breakdown. We recommend providing at least one `groupBy` value to get meaningful segmented data in most reporting use cases.
 - The `options` field sets row inclusion flags via [`AppsOptions`](./appsoptions.md) or [`BrandsOptions`](./brandsoptions.md).
 
-##### Read the Response
+### Read the Response
 
 All report responses share the same envelope: a `result` object containing a `rows` array of report rows and a `summary.grandTotal` object, plus a `pagination` object and an `error` field. Each row contains:
 
@@ -48,7 +48,7 @@ All report responses share the same envelope: a `result` object containing a `ro
 
 When you include `GRAND_TOTAL` in `options.includeRows`, the response also includes a summary row with totals across all result rows.
 
-##### Apply Granularity Constraints
+### Apply Granularity Constraints
 
 Granularity is an optional time-series breakdown that applies to `granularMetrics`. The following constraints apply to all entities and both promoted object types unless noted:
 
@@ -61,7 +61,7 @@ Granularity is an optional time-series breakdown that applies to `granularMetric
 
 To request a single day of data, omit `granularity` entirely. For a single-day request, the response returns results in `totalMetrics` only, since there’s no `granularMetrics` breakdown to compute.
 
-##### Compare Apps and Brands Reporting
+### Compare Apps and Brands Reporting
 
 Apps and Brands campaigns measure different coverage: app installs and engagement versus brand visibility and map interactions. Their reporting reflects this distinction. The two promoted object types use separate request and response objects and differ in the following ways:
 
@@ -77,7 +77,7 @@ Apps and Brands campaigns measure different coverage: app installs and engagemen
 | Location-level report | Not available | Not available |
 | Search term timezone | `ORTZ` only | `ORTZ` only |
 
-##### Include Additional Rows
+### Include Additional Rows
 
 The `options.includeRows` field controls which additional rows appear in the response:
 

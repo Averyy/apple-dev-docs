@@ -17,7 +17,7 @@ The validation mode of the mobile document request.
 var validationMode: MobileDocumentDisplayRequest.Options.ValidationMode
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`check`](./validationmode-swift.struct/check.md).
 

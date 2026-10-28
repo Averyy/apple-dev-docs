@@ -24,7 +24,7 @@ var alphaBlendOperation: MTLBlendOperation { get set }
 @property (nonatomic) MTLBlendOperation alphaBlendOperation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLBlendOperation.add`](../mtlblendoperation/add.md).
 

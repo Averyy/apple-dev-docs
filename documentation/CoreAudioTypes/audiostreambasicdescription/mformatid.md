@@ -25,7 +25,7 @@ var mFormatID: AudioFormatID
 AudioFormatID mFormatID;
 ```
 
-#### Discussion
+## Discussion
 
 See [Audio Format Identifiers](../audio-format-identifiers.md). This value must be nonzero.
 

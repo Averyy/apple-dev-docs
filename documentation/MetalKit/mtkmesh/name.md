@@ -24,7 +24,7 @@ var name: String { get set }
 @property (nonatomic, copy, nonnull) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Your application can use this value to identify the mesh in a scene.
 

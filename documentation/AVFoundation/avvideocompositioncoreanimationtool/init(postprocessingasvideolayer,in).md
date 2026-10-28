@@ -26,11 +26,11 @@ convenience init(postProcessingAsVideoLayer videoLayer: CALayer, in animationLay
 + (instancetype) videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:(CALayer *) videoLayer inLayer:(CALayer *) animationLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A new animation tool for the composition.
 
-#### Discussion
+## Discussion
 
 Place composited video frames in `videoLayer` and render `animationLayer` to produce the final frame.
 

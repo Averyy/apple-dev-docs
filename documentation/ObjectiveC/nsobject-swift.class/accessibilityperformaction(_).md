@@ -21,7 +21,7 @@ func accessibilityPerformAction(_ action: NSAccessibility.Action)
 - (void) accessibilityPerformAction:(NSAccessibilityActionName) action;
 ```
 
-#### Discussion
+## Discussion
 
 User interface classes must implement this method to handle all the actions returned from [`accessibilityActionNames()`](./accessibilityactionnames%28%29.md). Subclasses should invoke the superclass’s implementation, if it exists, if `action` is not implemented in the subclass.
 

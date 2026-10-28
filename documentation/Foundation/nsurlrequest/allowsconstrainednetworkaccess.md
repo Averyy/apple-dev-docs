@@ -25,7 +25,7 @@ var allowsConstrainedNetworkAccess: Bool { get }
 @property (readonly) BOOL allowsConstrainedNetworkAccess;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 13 and later, users can set their device to use Low Data Mode as one of the Cellular Data Options in the Settings app. Users can turn on Low Data Mode to reduce your app’s network data usage. This property controls the request’s behavior when the user turns on Low Data Mode. If there are no nonconstrained network interfaces available and the request’s [`allowsConstrainedNetworkAccess`](./allowsconstrainednetworkaccess.md) property is [`false`](../../Swift/false.md), any connection created from the request fails. In this case, the error provided when the connection fails has a [`networkUnavailableReason`](../urlerror/networkunavailablereason-swift.property.md) property whose value is [`NSURLErrorNetworkUnavailableReasonConstrained`](../nsurlerrornetworkunavailablereason/nsurlerrornetworkunavailablereasonconstrained.md).
 

@@ -21,7 +21,7 @@ Replaces the specified range of elements by a given count of new items, using a 
 mutating func replaceSubrange<E>(_ subrange: Range<Int>, addingCount newItemCount: Int, initializingWith initializer: @_lifetime(0: copy 0) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 The number of new items need not match the number of elements being removed.
 

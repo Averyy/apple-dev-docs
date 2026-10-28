@@ -19,11 +19,11 @@
 static SPPoint3D SPPoint3DMakeWithPackedVector(simd_packed_double4 source);
 ```
 
-#### Return Value
+## Return Value
 
 A new point.
 
-#### Discussion
+## Discussion
 
 Creates a Spatial point from a packed simd vector.
 

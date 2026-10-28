@@ -25,11 +25,11 @@ class func customAction(withDuration duration: TimeInterval, actionBlock block: 
 + (SKAction *) customActionWithDuration:(NSTimeInterval) duration actionBlock:(void (^)(SKNode *node, CGFloat elapsedTime)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the block is called repeatedly until the action’s duration expires. The elapsed time is computed and passed to the block whenever the block is called.
 

@@ -15,11 +15,11 @@ Returns the current stream format, as an audio stream basic description.
 IOUserAudioStreamBasicDescription GetCurrentStreamFormat();
 ```
 
-#### Return Value
+## Return Value
 
 The current stream format, as an `IOUserAudioStreamBasicDescription`.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

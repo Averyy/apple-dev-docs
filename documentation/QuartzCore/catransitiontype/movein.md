@@ -24,7 +24,7 @@ static let moveIn: CATransitionType
 extern CATransitionType const kCATransitionMoveIn;
 ```
 
-#### Discussion
+## Discussion
 
 The [Common Transition Subtypes](../common-transition-subtypes.md) are used with this transition.
 

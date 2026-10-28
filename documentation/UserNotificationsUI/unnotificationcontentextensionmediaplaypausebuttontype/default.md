@@ -23,7 +23,7 @@ case `default`
 UNNotificationContentExtensionMediaPlayPauseButtonTypeDefault
 ```
 
-#### Discussion
+## Discussion
 
 This button is always visible. When tapped, its appearance changes between the play and pause icons and triggers the appropriate play and pause actions.
 

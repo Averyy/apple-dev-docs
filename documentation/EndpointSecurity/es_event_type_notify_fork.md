@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_FORK: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_FORK
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`fork`](./es_events_t/fork.md), which has the type [`es_event_fork_t`](./es_event_fork_t.md).
 

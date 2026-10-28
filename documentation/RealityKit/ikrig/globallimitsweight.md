@@ -20,7 +20,7 @@ The solver global weight for the joint rotation limits.
 var globalLimitsWeight: Float
 ```
 
-#### Discussion
+## Discussion
 
 This weight is a multiplier for each joint’s [`weight`](./joint/limitsdefinition/weight.md).
 

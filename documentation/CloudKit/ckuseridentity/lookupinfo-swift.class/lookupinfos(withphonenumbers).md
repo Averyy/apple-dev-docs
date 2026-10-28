@@ -25,7 +25,7 @@ class func lookupInfos(withPhoneNumbers phoneNumbers: [String]) -> [CKUserIdenti
 + (NSArray<CKUserIdentityLookupInfo *> *) lookupInfosWithPhoneNumbers:(NSArray<NSString *> *) phoneNumbers;
 ```
 
-#### Discussion
+## Discussion
 
 Use the values that this method returns in an [`CKDiscoverUserIdentitiesOperation`](../../ckdiscoveruseridentitiesoperation.md) operation or an  [`CKFetchShareParticipantsOperation`](../../ckfetchshareparticipantsoperation.md) operation to retrieve the corresponding user identities.
 

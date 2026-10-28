@@ -9,7 +9,7 @@ Retrieve application details for a specific Adam ID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves the full details of a specific app by its Adam identifier, including its name, genre, and supported device classes.
 
@@ -17,9 +17,9 @@ Obtain the app’s Adam ID from a search or from existing campaign targeting dat
 
 Use the returned `deviceClasses` and `availableStorefronts` values to confirm that an app’s supported devices and countries or regions align with a campaign’s targeting settings before creating an ad group.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves the full details of a specific app by its Adam identifier, including its name, genre, and supported device classes.
 
@@ -27,7 +27,7 @@ Retrieves the full details of a specific app by its Adam identifier, including i
 GET /v1/apps/324684580
 ```
 
-##### Response
+### Response
 
 ```json
 {

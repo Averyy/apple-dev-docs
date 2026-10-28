@@ -23,11 +23,11 @@ func subtracting(_ other: Set<Element>) -> Set<Element>
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A new set.
 
-#### Discussion
+## Discussion
 
 In the following example, the `nonNeighbors` set is made up of the elements of the `employees` set that are not elements of `neighbors`:
 

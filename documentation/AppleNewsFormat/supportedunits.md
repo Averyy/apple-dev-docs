@@ -15,7 +15,7 @@ The units of measurement Apple News Format supports.
 string SupportedUnits
 ```
 
-#### Discussion
+## Discussion
 
 You can define units for setting dimensions in Apple News Format. If you don’t define the units to use, Apple News Format interprets the dimensions in points (`pt`).
 

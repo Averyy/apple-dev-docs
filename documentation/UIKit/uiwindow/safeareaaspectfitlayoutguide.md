@@ -23,7 +23,7 @@ var safeAreaAspectFitLayoutGuide: any UILayoutGuide & UILayoutGuideAspectFitting
 @property (nonatomic, strong, readonly) UILayoutGuide<UILayoutGuideAspectFitting> * safeAreaAspectFitLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 This layout guide provides a centered region in the window where you can place media content of a particular aspect ratio (width over height) to avoid obscuring the content.
 

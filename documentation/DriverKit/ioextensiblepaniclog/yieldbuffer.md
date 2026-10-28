@@ -16,11 +16,11 @@
 virtual kern_return_t YieldBuffer(uint32_t used_len);
 ```
 
-#### Return Value
+## Return Value
 
 0 in case of success. Negative in case of an error.
 
-#### Discussion
+## Discussion
 
 This function is called to yield the buffer and set the used_len for the buffer
 

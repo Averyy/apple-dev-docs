@@ -25,11 +25,11 @@ class func unsupported(forReason reason: INDeleteTasksTaskListUnsupportedReason)
 + (instancetype) unsupportedForReason:(INDeleteTasksTaskListUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDeleteTasksTaskListResolutionResult`](../indeletetaskstasklistresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support the intent parameter for the specified reason.
 

@@ -12,11 +12,11 @@ virtual SCSIDeviceIdentifier ReportHighestSupportedDeviceID (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 returns highest SCSIDeviceIdentifier
 
-#### Overview
+## Overview
 
 This method will be called to determine the value of the highest SCSI Device Identifier supported by the HBA. This value will be used to determine the last ID to process.
 

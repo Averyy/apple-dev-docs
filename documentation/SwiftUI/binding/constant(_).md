@@ -21,7 +21,7 @@ Creates a binding with an immutable value.
 static func constant(_ value: Value) -> Binding<Value>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a binding to a value that cannot change. This can be useful when using a [`PreviewProvider`](../previewprovider.md) to see how a view represents different values.
 

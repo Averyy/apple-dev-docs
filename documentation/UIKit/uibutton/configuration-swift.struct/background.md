@@ -19,7 +19,7 @@ The configuration to customize the button background.
 var background: UIBackgroundConfiguration { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The button lays out foreground configuration elements such as title, subtitle, and image on top of background elements. Use this property for detailed control over the background.
 

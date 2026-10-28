@@ -22,7 +22,7 @@ func handleRulesChanged()
 - (void) handleRulesChanged;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the Filter Control Provider calls the `notifyRulesChanged` method or returns a [`NEFilterControlVerdict`](../nefiltercontrolverdict.md) with the [`updateRules()`](../nefiltercontrolverdict/updaterules%28%29.md) property set to YES.
 

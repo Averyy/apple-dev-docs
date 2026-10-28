@@ -19,7 +19,7 @@ var tabsToLinks: Bool { get set }
 @property (nonatomic) BOOL tabsToLinks;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the user should be able to navigate to links by pressing the tab key, [`false`](../../Swift/false.md) otherwise.
 

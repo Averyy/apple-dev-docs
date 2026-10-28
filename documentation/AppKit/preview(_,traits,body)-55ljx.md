@@ -12,8 +12,8 @@ Preview an NSViewController.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @PreviewMacroBodyBuilder<NSViewController> body: @escaping @MainActor () -> NSViewController)
+@freestanding(declaration)
+macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @PreviewMacroBodyBuilder<NSViewController> body: @escaping @MainActor () -> NSViewController)
 ```
 
 ## Parameters

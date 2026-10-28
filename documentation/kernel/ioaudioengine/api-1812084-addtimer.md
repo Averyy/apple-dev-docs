@@ -11,7 +11,7 @@ Enables the timer event for the audio engine.
 virtual void addTimer();
 ```
 
-#### Overview
+## Overview
 
 There is a timer event needed by the IOAudioEngine for processing the erase head and performing flushing operations. When the timer fires, the method timerFired() is ultimately called which in turn calls performErase() and performFlush(). This is called automatically to enable the timer event for this audio engine. It is called by setState() when the audio engine state is set to kIOAudioEngineRunning. When the timer is no longer needed, removeTimer() is called. There is no need to call this directly.
 

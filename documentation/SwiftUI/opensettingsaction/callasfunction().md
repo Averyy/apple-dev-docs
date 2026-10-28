@@ -16,7 +16,7 @@ Opens the window associated to the [`Settings`](../settings.md) scene defined by
 @preconcurrency func callAsFunction()
 ```
 
-#### Discussion
+## Discussion
 
 Calling this action when the window is already open will order it to the front.
 

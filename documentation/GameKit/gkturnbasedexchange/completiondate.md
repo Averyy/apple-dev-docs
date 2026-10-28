@@ -33,7 +33,7 @@ var completionDate: Date? { get }
 @property (atomic, readonly, nullable) NSDate * completionDate;
 ```
 
-#### Discussion
+## Discussion
 
 The date the exchange [`status`](./status.md) property becomes [`GKTurnBasedExchangeStatus.complete`](../gkturnbasedexchangestatus/complete.md).
 

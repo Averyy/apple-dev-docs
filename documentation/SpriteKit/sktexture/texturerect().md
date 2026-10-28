@@ -25,11 +25,11 @@ func textureRect() -> CGRect
 - (CGRect) textureRect;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the unit coordinate space.
 
-#### Discussion
+## Discussion
 
 The default value is a rectangle that covers the entire texture `(0,0)` - `(1,1)`. You cannot set this value directly; to use only a portion of a texture, use the [`init(rect:in:)`](./init%28rect,in%29.md) method to create a new texture.
 

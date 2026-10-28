@@ -20,7 +20,7 @@ func setStringParameterValue(_ string: String, toParameter parameterID: UInt32) 
 - (BOOL) setStringParameterValue:(NSString *) string toParameter:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the value is set successfully; `NO` otherwise.
 

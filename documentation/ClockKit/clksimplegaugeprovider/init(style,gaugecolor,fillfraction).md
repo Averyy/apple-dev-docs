@@ -21,7 +21,7 @@ convenience init(style: CLKGaugeProviderStyle, gaugeColor color: UIColor, fillFr
 + (instancetype) gaugeProviderWithStyle:(CLKGaugeProviderStyle) style gaugeColor:(UIColor *) color fillFraction:(float) fillFraction;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated solid-color gauge.
 

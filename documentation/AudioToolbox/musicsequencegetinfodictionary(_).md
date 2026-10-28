@@ -24,11 +24,11 @@ func MusicSequenceGetInfoDictionary(_ inSequence: MusicSequence) -> CFDictionary
 extern CFDictionaryRefMusicSequenceGetInfoDictionary(MusicSequence inSequence);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary object containing information about a music sequence.
 
-#### Discussion
+## Discussion
 
 The dictionary can contain one or more of the kAFInfoDictionary_* keys specified in `AudioToolbox/AudioFile.h`. The caller should release the returned dictionary. If the call fails it will return `NULL`
 

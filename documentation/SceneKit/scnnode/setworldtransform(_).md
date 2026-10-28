@@ -25,7 +25,7 @@ func setWorldTransform(_ worldTransform: SCNMatrix4)
 - (void) setWorldTransform:(SCNMatrix4) worldTransform;
 ```
 
-#### Discussion
+## Discussion
 
 A world transform is the node’s coordinate space transform relative to the scene’s coordinate space. This transform is the concatenation of the node’s [`transform`](./transform.md) property with that of its parent node, the parent’s parent, and so on up to the [`rootNode`](../scnscene/rootnode.md) object of the scene.
 

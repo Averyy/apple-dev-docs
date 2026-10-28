@@ -20,11 +20,11 @@ Creates and returns an image object by loading the image data from the file at t
 + (UIImage *) imageWithContentsOfFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object for the specified file, or `nil` if the method could not initialize the image from the specified file.
 
-#### Discussion
+## Discussion
 
 This method does not cache the image object.
 

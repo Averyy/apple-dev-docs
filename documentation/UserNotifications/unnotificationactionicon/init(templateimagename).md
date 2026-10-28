@@ -25,7 +25,7 @@ convenience init(templateImageName: String)
 + (instancetype) iconWithTemplateImageName:(NSString *) templateImageName;
 ```
 
-#### Return Value
+## Return Value
 
 An action icon initialized with the specified template image provided by your app.
 

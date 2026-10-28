@@ -20,7 +20,7 @@ The semantic for the fifth UV channel, also known as UV4.
 case uv4
 ```
 
-#### Discussion
+## Discussion
 
 A shader can access this generic data.
 

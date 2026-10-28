@@ -24,7 +24,7 @@ let kCFStreamSSLValidatesCertificateChain: CFString
 extern CFStringRef const kCFStreamSSLValidatesCertificateChain;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this key is `kCFBooleanTrue` (the certificate chain should be validated).
 

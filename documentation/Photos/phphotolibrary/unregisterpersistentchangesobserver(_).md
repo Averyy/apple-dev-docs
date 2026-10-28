@@ -24,7 +24,7 @@ func unregisterPersistentChangesObserver(_ observer: any PHPhotoLibraryPersisten
 - (void) unregisterPersistentChangesObserver:(id<PHPhotoLibraryPersistentChangesObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, the observer will no longer receive persistent changes callbacks.
 

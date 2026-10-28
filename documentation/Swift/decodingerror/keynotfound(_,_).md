@@ -21,7 +21,7 @@ An indication that a keyed decoding container was asked for an entry for the giv
 case keyNotFound(any CodingKey, DecodingError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 As associated values, this case contains the attempted key and context for debugging.
 

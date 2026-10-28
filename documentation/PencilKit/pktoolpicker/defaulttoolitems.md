@@ -22,7 +22,7 @@ class var defaultToolItems: [PKToolPickerItem] { get }
 @property (class, nonatomic, readonly, nonnull) NSArray<PKToolPickerItem *> * defaultToolItems;
 ```
 
-#### Discussion
+## Discussion
 
 These items are used when creating a new `PKToolPicker`.
 

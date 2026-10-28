@@ -19,7 +19,7 @@ Creates an object from a color or texture.
 init(scale: Float = 1.0, texture: CustomMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 In physically based rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object that passes a single scale value, a texture, or both to the material’s shader functions.
 

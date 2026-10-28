@@ -24,7 +24,7 @@ case instantMessageAddress
 INPersonSuggestionTypeInstantMessageAddress
 ```
 
-#### Discussion
+## Discussion
 
 When specified, interactions become populated with the person’s instant message address instead of their actual name.
 

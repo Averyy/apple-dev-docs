@@ -19,7 +19,7 @@ class NSImageRep
 @interface NSImageRep : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NSImageRep`](./nsimagerep.md) class is called “semiabstract” because it has some instance variables and implementation of its own, in addition to defining subclasses. Although an [`NSImageRep`](./nsimagerep.md) subclass can be used directly, it is typically accessed through an [`NSImage`](./nsimage.md) object, which manages a group of image representations, choosing the best one for the current output device.
 

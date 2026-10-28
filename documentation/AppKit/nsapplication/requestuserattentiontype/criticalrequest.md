@@ -19,7 +19,7 @@ case criticalRequest
 NSCriticalRequest
 ```
 
-#### Discussion
+## Discussion
 
 The dock icon will bounce until either the app becomes active or the request is canceled.
 

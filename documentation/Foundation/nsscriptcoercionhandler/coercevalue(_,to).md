@@ -20,7 +20,7 @@ func coerceValue(_ value: Any, to toClass: AnyClass) -> Any?
 - (id) coerceValue:(id) value toClass:(Class) toClass;
 ```
 
-#### Return Value
+## Return Value
 
 An object of the class `toClass` representing the value specified by `value`. Returns `nil` if an error occurs.
 

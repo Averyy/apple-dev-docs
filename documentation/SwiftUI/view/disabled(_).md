@@ -22,11 +22,11 @@ nonisolated
 func disabled(_ disabled: Bool) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that controls whether someone can interact with this view.
 
-#### Discussion
+## Discussion
 
 Add this modifier to a view to indicate whether it responds to interactions such as a tap, click, or gesture. The following example disables a [`Button`](../button.md) when the Boolean value `isLoading` is `true`:
 

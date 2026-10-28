@@ -19,11 +19,11 @@ func send(_ inData: Data!, type inType: String!, name inName: String!) -> OBEXEr
 - (OBEXError) sendData:(NSData *) inData type:(NSString *) inType name:(NSString *) inName;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXBadArgumentError initially. Further results returned through the fileTransferServicesSendComplete: and fileTransferServicesSendProgress: delegate methods if initially successful.
 
-#### Discussion
+## Discussion
 
 Use this method when you have data to send but no file to read from.
 

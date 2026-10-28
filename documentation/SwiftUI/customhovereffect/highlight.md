@@ -21,7 +21,7 @@ static var highlight: HighlightHoverEffect { get }
 
 Available when `Self` is `HighlightHoverEffect`.
 
-#### Discussion
+## Discussion
 
 For pointer input this effect morphs the pointer into a platter behind the view and shows a light source indicating position.
 

@@ -22,7 +22,7 @@ The `AppEntity`’s identifier value as a `String`.
 var entityIdentifierString: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: Due to system-imposed limitations, **the length of this value can not exceed 4096 characters**!
 

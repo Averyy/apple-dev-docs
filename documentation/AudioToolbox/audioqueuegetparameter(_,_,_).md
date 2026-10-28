@@ -24,11 +24,11 @@ func AudioQueueGetParameter(_ inAQ: AudioQueueRef, _ inParamID: AudioQueueParame
 extern OSStatus AudioQueueGetParameter(AudioQueueRef inAQ, AudioQueueParameterID inParamID, AudioQueueParameterValue *outValue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 You can access the current parameter values for an audio queue at any time with this function. An audio queue parameter value is the sum of settings applied at buffer granularity, using the [`AudioQueueEnqueueBufferWithParameters(_:_:_:_:_:_:_:_:_:_:)`](./audioqueueenqueuebufferwithparameters%28_,_,_,_,_,_,_,_,_,_%29.md) function, and settings applied to the audio queue per se, using the [`AudioQueueSetParameter(_:_:_:)`](./audioqueuesetparameter%28_,_,_%29.md) function.
 

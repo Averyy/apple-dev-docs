@@ -20,11 +20,11 @@ init(apiVersion requestedAPIVersion: String, options: ITLibInitOptions) throws
 - (instancetype) initWithAPIVersion:(NSString *) requestedAPIVersion options:(ITLibInitOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`ITLibrary`](../itlibrary.md) instance that can retrieve media entities, or `nil` if the method fails.
 
-#### Discussion
+## Discussion
 
 Unless you specify the [`ITLibInitOptions.lazyLoadData`](../itlibinitoptions/lazyloaddata.md) option, the system reads and parses the default iTunes database for the current user during initialization of the [`ITLibrary`](../itlibrary.md) class. All media entities cache in memory until deallocation of the object occurs.
 

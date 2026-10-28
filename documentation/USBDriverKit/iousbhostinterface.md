@@ -15,7 +15,7 @@ A provider object that manages interactions with an interface of the USB device.
 class IOUSBHostInterface;
 ```
 
-#### Overview
+## Overview
 
 An [`IOUSBHostInterface`](./iousbhostinterface.md) object represents one of the interfaces the USB device supports. When implementing a custom driver, use an [`IOUSBHostInterface`](./iousbhostinterface.md) object to get information about the specific interface and to communicate with the device using that interface.
 

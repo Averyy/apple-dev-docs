@@ -24,7 +24,7 @@ optional func mapViewWillStartLoadingMap(_ mapView: MKMapView)
 - (void) mapViewWillStartLoadingMap:(MKMapView *) mapView;
 ```
 
-#### Discussion
+## Discussion
 
 The map view calls this method whenever it needs to download a new group of map tiles from the server. This typically occurs whenever you expose portions of the map by panning or zooming the content. You can use this method to mark the time that it takes for the map view to load the data.
 

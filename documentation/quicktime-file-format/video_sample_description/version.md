@@ -6,7 +6,7 @@
 
 A 16-bit integer indicating the version number of the compressed data.
 
-#### Overview
+## Overview
 
 This is set to 0, unless a compressor has changed its data format.
 

@@ -30,11 +30,11 @@ Available when `Failure` is `Never`.
 - [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 - [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
-#### Return Value
+## Return Value
 
 A cancellable instance, which you use when you end assignment of the received value. Deallocation of the result will tear down the subscription stream.
 
-#### Discussion
+## Discussion
 
 Use [`sink(receiveValue:)`](./sink%28receivevalue%29.md) to observe values received by the publisher and print them to the console. This operator can only be used when the stream doesn’t fail, that is, when the publisher’s [`Failure`](./failure.md) type is [`Never`](../../Swift/never.md).
 

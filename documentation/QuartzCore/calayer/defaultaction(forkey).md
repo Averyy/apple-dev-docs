@@ -24,11 +24,11 @@ class func defaultAction(forKey event: String) -> (any CAAction)?
 + (id<CAAction>) defaultActionForKey:(NSString *) event;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a suitable action object for the given key or `nil` of no action object was associated with that key.
 
-#### Discussion
+## Discussion
 
 Classes that want to provide default actions can override this method and use it to return those actions.
 

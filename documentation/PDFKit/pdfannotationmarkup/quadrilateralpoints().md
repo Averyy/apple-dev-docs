@@ -19,7 +19,7 @@ func quadrilateralPoints() -> [Any]!
 - (NSArray *) quadrilateralPoints;
 ```
 
-#### Discussion
+## Discussion
 
 Each quadrilateral encompasses a word or a contiguous group of words. The quadrilateral points are ordered counterclockwise, with the first point closest to the origin in page space.
 

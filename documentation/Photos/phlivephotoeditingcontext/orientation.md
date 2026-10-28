@@ -24,7 +24,7 @@ var orientation: CGImagePropertyOrientation { get }
 @property (readonly) CGImagePropertyOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 This [`fullSizeImage`](./fullsizeimage.md) object does not reflect the Live Photo’s orientation metadata. Use this property when displaying that image to ensure that it appears to the user in the correct orientation.
 

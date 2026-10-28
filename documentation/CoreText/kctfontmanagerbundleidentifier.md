@@ -17,7 +17,7 @@ let kCTFontManagerBundleIdentifier: CFString
 extern CFStringRef const kCTFontManagerBundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The Font Manager bundle identifier to be used when getting or setting global auto-activation using [`CTFontManagerGetAutoActivationSetting(_:)`](./ctfontmanagergetautoactivationsetting%28_%29.md) or [`CTFontManagerSetAutoActivationSetting(_:_:)`](./ctfontmanagersetautoactivationsetting%28_,_%29.md).
 

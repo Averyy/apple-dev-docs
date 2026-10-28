@@ -25,11 +25,11 @@ var subentities: [NSEntityDescription] { get set }
 @property (strong) NSArray<NSEntityDescription *> * subentities;
 ```
 
-#### Discussion
+## Discussion
 
 The sub-entities are instances of `NSEntityDescription`.
 
-##### Special Considerations
+### Special Considerations
 
 Setting the sub-entities raises an exception if the receiver’s model has been used by an object graph manager.
 

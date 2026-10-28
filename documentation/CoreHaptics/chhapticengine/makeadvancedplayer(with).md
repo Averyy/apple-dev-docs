@@ -24,7 +24,7 @@ func makeAdvancedPlayer(with pattern: CHHapticPattern) throws -> any CHHapticAdv
 - (id<CHHapticAdvancedPatternPlayer>) createAdvancedPlayerWithPattern:(CHHapticPattern *) pattern error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new advanced pattern player instance.
 

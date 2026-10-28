@@ -21,7 +21,7 @@ var controlTint: NSControlTint { get set }
 @property NSControlTint controlTint;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSControlTint.defaultControlTint`](../nscontroltint/defaultcontroltint.md).
 

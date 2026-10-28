@@ -12,11 +12,11 @@ virtual SCSIServiceResponse AbortSCSICommand (
  SCSITaskIdentifier request );
 ```
 
-#### Return Value
+## Return Value
 
 See SCSITask.h for SCSIServiceResponse codes.
 
-#### Overview
+## Overview
 
 Currently not implemented in super class. This is a stub method for adding the abort command in the near future.
 

@@ -5,7 +5,7 @@
 
 Obtain metrics with impression share insights.
 
-#### Overview
+## Overview
 
 > **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 

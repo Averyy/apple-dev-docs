@@ -24,11 +24,11 @@ class UITextInputStringTokenizer
 @interface UITextInputStringTokenizer : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you want to take advantage of this base implementation of the [`UITextInputTokenizer`](./uitextinputtokenizer.md) protocol, you should subclass this class and handle application-specific directions and granularities affected by layout. When you instantiate a class you must supply the document class that’s adopting the [`UITextInput`](./uitextinput.md) protocol for your application.
 
-##### Subclassing notes
+### Subclassing notes
 
 When you subclass [`UITextInputStringTokenizer`](./uitextinputstringtokenizer.md), override all [`UITextInputTokenizer`](./uitextinputtokenizer.md) methods, calling the superclass implementation (`super`) when method parameters aren’t affected by layout. For example, the subclass needs a custom implementation of all methods for line granularity. For the left direction, it needs to decide whether left corresponds at a given position to forward or backward, and then call `super` passing in the storage direction ([`UITextStorageDirection`](./uitextstoragedirection.md)).
 

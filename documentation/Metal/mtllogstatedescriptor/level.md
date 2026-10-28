@@ -24,7 +24,7 @@ var level: MTLLogLevel { get set }
 @property (assign, readwrite) MTLLogLevel level;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLLogLevel.debug`](../mtlloglevel/debug.md).
 

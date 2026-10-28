@@ -23,7 +23,7 @@ class MPMovieErrorLog
 @interface MPMovieErrorLog : NSObject
 ```
 
-#### Overview
+## Overview
 
 All movie error log properties are read-only.
 

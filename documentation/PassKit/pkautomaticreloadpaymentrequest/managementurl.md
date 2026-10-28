@@ -23,7 +23,7 @@ var managementURL: URL { get set }
 @property (nonatomic, strong) NSURL * managementURL;
 ```
 
-#### Discussion
+## Discussion
 
 When users remove a payment method, the system deletes the associated Apple Pay merchant token.
 

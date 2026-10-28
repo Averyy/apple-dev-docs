@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerConvolution(_ layer_params: UnsafePointer<BNNSLayerPar
 BNNSFilterBNNSFilterCreateLayerConvolution(const BNNSLayerParametersConvolution *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use convolution to convolve an input image over all dimensions. For example, given the following inputs and weights:
 

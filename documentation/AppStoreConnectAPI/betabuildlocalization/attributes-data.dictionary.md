@@ -15,7 +15,7 @@ Attributes that describe a Beta Build Localizations resource.
 object BetaBuildLocalization.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 Table 1 lists allowed locale values.
 

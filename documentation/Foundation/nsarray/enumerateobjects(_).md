@@ -25,7 +25,7 @@ func enumerateObjects(_ block: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Voi
 - (void) enumerateObjectsUsingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes synchronously. Values allocated within the block are deallocated after the block is executed.
 

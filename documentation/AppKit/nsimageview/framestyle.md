@@ -19,7 +19,7 @@ enum FrameStyle
 enum NSImageFrameStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by [`imageFrameStyle`](../nsimagecell/imageframestyle.md). Note that some of these constants are stylistically obsolete and should be considered deprecated.
 

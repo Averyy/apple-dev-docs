@@ -24,7 +24,7 @@ class NEVPNManager
 @interface NEVPNManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NEVPNManager`](./nevpnmanager.md) API gives apps the ability to create and manage a Personal VPN configuration on iOS and macOS. Personal VPN configurations are typically used to provide a service to users that protects their Internet browsing activity on insecure networks such as public Wi-Fi networks.
 

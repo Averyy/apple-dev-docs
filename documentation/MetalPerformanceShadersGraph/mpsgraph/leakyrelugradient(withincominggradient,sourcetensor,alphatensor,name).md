@@ -24,11 +24,11 @@ func leakyReLUGradient(withIncomingGradient gradient: MPSGraphTensor, sourceTens
 - (MPSGraphTensor *) leakyReLUGradientWithIncomingGradient:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source alphaTensor:(MPSGraphTensor *) alphaTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 
-#### Discussion
+## Discussion
 
 This operation supports broadcasting with the alpha tensor.
 

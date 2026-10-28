@@ -23,7 +23,7 @@ func CVOpenGLESTextureCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: 
 extern CVReturn CVOpenGLESTextureCacheCreate(CFAllocatorRef allocator, CFDictionaryRef cacheAttributes, CVEAGLContext eaglContext, CFDictionaryRef textureAttributes, CVOpenGLESTextureCacheRef*cacheOut);
 ```
 
-#### Return Value
+## Return Value
 
 Upon successful creation of the texture cache, this function returns [`kCVReturnSuccess`](./kcvreturnsuccess.md).
 

@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the given element is contained within
 func contains(_ element: Bound) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `element` is contained in the range; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Because `Range` represents a half-open range, a `Range` instance does not contain its upper bound. `element` is contained in the range if it is greater than or equal to the lower bound and less than the upper bound.
 

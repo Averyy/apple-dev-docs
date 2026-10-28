@@ -21,7 +21,7 @@ A default set of effect options with a preferred repeat count.
 + (instancetype) optionsWithRepeatCount:(NSInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of effect options with the preferred repeat count.
 

@@ -20,7 +20,7 @@ A column of typed values in a data table.
 struct MLDataColumn<Element> where Element : MLDataValueConvertible
 ```
 
-#### Overview
+## Overview
 
 A column is a homogenous collection of data values, similar to an [`Array`](../Swift/array.md). Columns are the main components of an [`MLDataTable`](./mldatatable.md) and are designed to efficiently scale with large data sets.
 

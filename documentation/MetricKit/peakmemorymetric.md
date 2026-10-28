@@ -16,7 +16,7 @@ A metric that measures peak memory footprint.
 struct PeakMemoryMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.peakMemory(_:)`](./metricresult/peakmemory%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

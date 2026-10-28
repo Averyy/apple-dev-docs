@@ -19,7 +19,7 @@ static var removalAllowed: NSStatusItem.Behavior { get }
 NSStatusItemBehaviorRemovalAllowed
 ```
 
-#### Discussion
+## Discussion
 
 Status items with this behavior allow interactive removal from the menu bar. Upon removal, the item’s [`isVisible`](../isvisible.md) property changes to [`false`](../../../Swift/false.md). This change is observable using key-value observation.
 

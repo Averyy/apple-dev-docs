@@ -26,7 +26,7 @@ var domain: String { get }
 @property (copy, readonly) NSString * domain;
 ```
 
-#### Discussion
+## Discussion
 
 This can be an explicit domain name or it can contain the generic local domain name, `@"local."` (note the trailing period, which indicates an absolute name).
 

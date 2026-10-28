@@ -27,7 +27,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didCapturePhotoFor res
 
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 The photo output calls this method as soon as the first step of capture ends—that is, at the end of the photographic exposure time.
 

@@ -13,11 +13,11 @@
 errno_t sock_accept(socket_t so, struct sockaddr *from, int fromlen, int flags, sock_upcall callback, void *cookie, socket_t *new_so);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Accepts an incoming connection on a socket. See 'man 2 accept' for more information. Allocating a socket in this manner creates a socket with no associated file descriptor.
 

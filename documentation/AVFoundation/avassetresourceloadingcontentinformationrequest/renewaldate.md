@@ -24,7 +24,7 @@ var renewalDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * renewalDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the asset resource is prone to expiry set the value of this property to the date at which a renewal should be triggered. You must do this before you finish loading an [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md) object. This value must be set sufficiently early enough to allow an `AVAssetResourceRenewalRequest`, delivered to the delegate’s `resourceLoader:shouldWaitForRenewalOfRequestedResource:` method ß to finish before the actual expiry time, otherwise media playback may fail.
 

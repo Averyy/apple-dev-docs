@@ -19,7 +19,7 @@ case disclosure
 NSBezelStyleDisclosure
 ```
 
-#### Discussion
+## Discussion
 
 Use this style of button when you want to reveal more information. When you use this bezel style along with the [`NSButton.ButtonType.pushOnPushOff`](../buttontype/pushonpushoff.md) button type, the button points it’s disclosure triangle to the right representing a closed state. When someone clicks the button the triangle animates down representing an open state.
 

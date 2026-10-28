@@ -19,7 +19,7 @@ init(returnedOffset: off_t)
 - (instancetype) initWithReturnedOffset:(off_t) returnedOffset;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

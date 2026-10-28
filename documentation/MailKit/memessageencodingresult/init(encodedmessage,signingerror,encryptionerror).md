@@ -19,7 +19,7 @@ init(encodedMessage: MEEncodedOutgoingMessage?, signingError: (any Error)?, encr
 - (instancetype) initWithEncodedMessage:(MEEncodedOutgoingMessage *) encodedMessage signingError:(NSError *) signingError encryptionError:(NSError *) encryptionError;
 ```
 
-#### Discussion
+## Discussion
 
 If the message doesn’t require a digital signature or any encryption, specify `nil` for the message and errors.
 

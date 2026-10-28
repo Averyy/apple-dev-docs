@@ -18,7 +18,7 @@ A fixed-capacity collection of mesh instances submitted to the renderer.
 final class LowLevelMeshInstanceArray
 ```
 
-#### Overview
+## Overview
 
 Instances are placed by index via `setMeshInstance(_:index:)`. Create arrays using [`makeMeshInstanceArray(renderTargets:count:)`](./lowlevelrendercontext/makemeshinstancearray%28rendertargets,count%29.md) and assign them to the renderer with [`setMeshInstances(_:at:)`](./lowlevelrenderer/setmeshinstances%28_,at%29.md).
 

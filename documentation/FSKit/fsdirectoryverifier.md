@@ -19,7 +19,7 @@ struct FSDirectoryVerifier
 typedef uint64_t FSDirectoryVerifier;
 ```
 
-#### Overview
+## Overview
 
 Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](./fsvolume/operations/enumeratedirectory%28_,startingat,verifier,attributes,packer,replyhandler%29.md) defines the semantics of this value; it’s opaque to FSKit.
 

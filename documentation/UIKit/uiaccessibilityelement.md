@@ -28,7 +28,7 @@ class UIAccessibilityElement
 
 - [Supporting VoiceOver in your app](./supporting-voiceover-in-your-app.md)
 
-#### Overview
+## Overview
 
 You can use [`UIAccessibilityElement`](./uiaccessibilityelement.md) to provide information about an icon or text image that isn’t automatically accessible because it doesn’t inherit from [`UIView`](./uiview.md) (or [`UIControl`](./uicontrol.md)). A view that contains such nonview items creates an instance of [`UIAccessibilityElement`](./uiaccessibilityelement.md) to represent each item that needs to be accessible.
 

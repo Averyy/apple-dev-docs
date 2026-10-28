@@ -25,7 +25,7 @@ var sharedContainerIdentifier: String? { get set }
 @property (copy, nullable) NSString * sharedContainerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 To create a URL session for use by an app extension, set this property to a valid identifier for a container shared between the app extension and its containing app.
 

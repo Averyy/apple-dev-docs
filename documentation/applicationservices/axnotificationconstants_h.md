@@ -3,7 +3,7 @@
 **Framework**: Application Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 Assistive applications can register to be notified about certain events in a target application. For example, creation of a window or the destruction of a UIElement. To receive notifications you must first create an observer and specify a callback function; second, add the observer's run loop source to the run loop on which you want the callback executed; and third, register the observer for one or more notifications.
 

@@ -24,11 +24,11 @@ func convert(_ p: CGPoint, to l: CALayer?) -> CGPoint
 - (CGPoint) convertPoint:(CGPoint) p toLayer:(CALayer *) l;
 ```
 
-#### Return Value
+## Return Value
 
 The point converted to the coordinate system of `layer`.
 
-#### Discussion
+## Discussion
 
 If you specify `nil` for the `l` parameter, this method returns the original point added to the layer’s frame’s origin.
 

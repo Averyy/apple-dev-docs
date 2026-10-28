@@ -23,7 +23,7 @@ class var userPreferredCamera: AVCaptureDevice? { get set }
 @property (class, readwrite, nullable) AVCaptureDevice * userPreferredCamera;
 ```
 
-#### Discussion
+## Discussion
 
 In addition to being a [`systemPreferredCamera`](./systempreferredcamera.md), you can designate a device as a user-preferred camera. Setting a value for this property allows an app to persist its preference across app launches and system reboots. The system internally maintains a short history of devices, so if a user’s most recently preferred camera isn’t currently connected, it still reports the next best choice.
 

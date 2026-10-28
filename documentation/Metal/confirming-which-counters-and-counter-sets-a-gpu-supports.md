@@ -5,7 +5,7 @@
 
 Check whether a GPU produces the runtime performance data you want to sample.
 
-#### Overview
+## Overview
 
 You can check to see which counters a GPU device supports before attempting to programmatically sample data from them. A GPU *counter* is typically a hardware feature that tracks a specific performance metric, such as timestamps before and after an important rendering stage. Checking which counters a GPU supports at runtime avoids assumptions that may trigger an error or a crash on a person’s device.
 

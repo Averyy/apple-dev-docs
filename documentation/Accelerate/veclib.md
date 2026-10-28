@@ -4,7 +4,7 @@
 
 Perform computations on large vectors.
 
-#### Overview
+## Overview
 
 The vecLib framework contains nine C header files (not counting vecLib.h which merely includes the others). Two of them, `vDSP.h` and `vDSP_translate.h`, are covered in [vDSP Programming Guide](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/vDSP_Programming_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005147) and [`vDSP`](./vdsp.md).
 

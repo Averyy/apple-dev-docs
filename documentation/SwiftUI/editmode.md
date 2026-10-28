@@ -19,7 +19,7 @@ A mode that indicates whether the user can edit a view’s content.
 enum EditMode
 ```
 
-#### Overview
+## Overview
 
 You receive an optional binding to the edit mode state when you read the [`editMode`](./environmentvalues/editmode.md) environment value. The binding contains an `EditMode` value that indicates whether edit mode is active, and that you can use to change the mode. To learn how to read an environment value, see [`EnvironmentValues`](./environmentvalues.md).
 

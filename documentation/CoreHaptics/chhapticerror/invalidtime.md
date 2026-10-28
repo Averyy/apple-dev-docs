@@ -20,7 +20,7 @@ The time offset passed to the haptic engine is invalid.
 static var invalidTime: CHHapticError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you pass a negative or improperly formatted time value to the haptic engine.
 

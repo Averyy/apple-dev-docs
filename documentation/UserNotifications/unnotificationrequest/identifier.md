@@ -33,7 +33,7 @@ var identifier: String { get }
 @property (atomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to identify notifications in your app. For example, you can pass this string to the [`removePendingNotificationRequests(withIdentifiers:)`](../unusernotificationcenter/removependingnotificationrequests%28withidentifiers%29.md) method to cancel a previously scheduled notification.
 

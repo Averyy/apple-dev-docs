@@ -23,7 +23,7 @@ func cancel()
 - (void) cancelInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that calls through to the [`cancelInteractiveTransition()`](../uiviewcontrollercontexttransitioning/cancelinteractivetransition%28%29.md) method of the context object.
 

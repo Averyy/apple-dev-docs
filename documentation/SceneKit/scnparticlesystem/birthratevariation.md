@@ -25,7 +25,7 @@ var birthRateVariation: CGFloat { get set }
 @property (nonatomic) CGFloat birthRateVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`birthRate`](./birthrate.md) property. For each emission period, SceneKit randomly adjusts the birth rate by up to half the [`birthRateVariation`](./birthratevariation.md) value. For example, if the [`birthRate`](./birthrate.md) value is `100` particles and the [`birthRateVariation`](./birthratevariation.md) value is `50` particles, the system randomly emits between 75 and 125 particles during its [`emissionDuration`](./emissionduration.md) period.
 

@@ -25,7 +25,7 @@ optional func connection(_ connection: NSURLConnection, didReceive data: Data)
 - (void) connection:(NSURLConnection *) connection didReceiveData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides the only way for an asynchronous delegate to retrieve the loaded data. It is the responsibility of the delegate to retain or copy this data as it is delivered.
 

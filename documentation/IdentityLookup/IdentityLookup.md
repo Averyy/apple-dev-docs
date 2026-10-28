@@ -13,7 +13,7 @@ Create app extensions to manage and report unwanted SMS messages and spam calls.
 - macOS 10.15+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 SMS and Call Reporting provides app extensions to manage unwanted communication.
 

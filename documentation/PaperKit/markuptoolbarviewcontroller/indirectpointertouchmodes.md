@@ -17,7 +17,7 @@ The modes available for a user to select.
 @preconcurrency var indirectPointerTouchModes: [PaperMarkupViewController.TouchMode] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `[.selection, .drawing]`
 

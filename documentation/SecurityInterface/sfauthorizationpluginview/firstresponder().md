@@ -19,7 +19,7 @@ func firstResponder() -> NSResponder!
 - (NSResponder *) firstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 The default return value of this method is `nil`. When the authorization plug-in calls this method, your subclass should return the view that should get the focus for keyboard events.
 

@@ -12,7 +12,7 @@ virtual void HandleInterruptRequest (
  void ) = 0;
 ```
 
-#### Overview
+## Overview
 
 The HandleInterruptRequest is used to notify an HBA specific subclass that an interrupt request needs to be serviced. It is called on the workloop (it holds the gate) at secondary interrupt level.
 

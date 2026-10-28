@@ -19,7 +19,7 @@ var textContainerInset: NSSize { get set }
 @property NSSize textContainerInset;
 ```
 
-#### Discussion
+## Discussion
 
 It is possible to set the text container and view sizes and resizing behavior so that the inset cannot be maintained exactly, although the text system tries to maintain the inset wherever possible. In any case, the [`textContainerOrigin`](./textcontainerorigin.md) and size of the text container are authoritative as to the location of the text container within the view.
 

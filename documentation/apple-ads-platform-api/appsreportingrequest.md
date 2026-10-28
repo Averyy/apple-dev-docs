@@ -15,11 +15,11 @@ Request body for apps reporting queries.
 object AppsReportingRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsReportingRequest` object is the request body for all apps entity-level report endpoints (campaign, ad group, ad, keyword, search term).
 
-##### Example
+### Example
 
 ```json
 {

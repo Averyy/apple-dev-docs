@@ -25,7 +25,7 @@ var modelTransform: SCNMatrix4 { get }
 @property (nonatomic, readonly) SCNMatrix4 modelTransform;
 ```
 
-#### Discussion
+## Discussion
 
 Use this matrix to transform vectors from the local coordinate space of the node whose geometry is intersected by the search ray to the scene’s world coordinate system.
 

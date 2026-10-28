@@ -20,7 +20,7 @@ var discNumber: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger discNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If the album isn’t part of a multiple-disc set, this property is `0`.
 

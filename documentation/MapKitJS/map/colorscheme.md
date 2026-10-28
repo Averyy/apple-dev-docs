@@ -20,7 +20,7 @@ set colorScheme(colorScheme: ColorScheme);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 This property accepts a value from [`ColorScheme`](../colorscheme.md) to determine whether the map displays with a dark or light theme when [`Standard`](../maptype/standard.md) or [`MutedStandard`](../maptype/mutedstandard.md) are the configured [`mapType`](./maptype.md). The default is [`Light`](../colorscheme/light.md).
 

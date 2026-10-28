@@ -21,7 +21,7 @@ A nanosecond or count of nanoseconds.
 var nanosecond: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This value is interpreted in the context of the calendar in which it is used.
 

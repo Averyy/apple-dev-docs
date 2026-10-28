@@ -19,7 +19,7 @@ func draw(in rect: NSRect, relativeCenterPosition: NSPoint)
 - (void) drawInRect:(NSRect) rect relativeCenterPosition:(NSPoint) relativeCenterPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The center point of the starting circle is the same as the center point of `rect`. The radius of the starting circle is 0, resulting in the starting circle being just a point.
 

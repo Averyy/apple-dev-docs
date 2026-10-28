@@ -23,7 +23,7 @@ var minor: NSNumber? { get }
 @property (nonatomic, copy, readonly, nullable) NSNumber * minor;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a `minor` value for the beacon, the value of this property is `nil`. Operations that compare a beacon’s identity characteristics with the constraint’s characteristics ignore the `minor` value if this property is `nil`.
 

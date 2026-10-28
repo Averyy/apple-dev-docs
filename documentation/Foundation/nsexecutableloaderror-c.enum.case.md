@@ -21,7 +21,7 @@ Executable cannot be loaded for an otherwise-unspecified reason.
 NSExecutableLoadError
 ```
 
-#### Discussion
+## Discussion
 
 This error covers situations such as an error caused by a library the executable depends on.
 

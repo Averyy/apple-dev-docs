@@ -21,7 +21,7 @@ A value that the kernel assigns to identify a document.
 var documentIdentifier: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The kernel uses a document identifier, which can be either a file or a directory, to identify the document regardless of where it moves on a volume.
 

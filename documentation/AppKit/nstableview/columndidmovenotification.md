@@ -19,7 +19,7 @@ class let columnDidMoveNotification: NSNotification.Name
 extern NSNotificationName NSTableViewColumnDidMoveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the table view in which a column moved. The `userInfo` dictionary contains the following information:
 

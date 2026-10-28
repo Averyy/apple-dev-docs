@@ -21,7 +21,7 @@ Copies the contents of a split double-precision complex vector to an interleaved
 extern void vDSP_ztocD(const DSPDoubleSplitComplex *__Z, vDSP_Stride __IZ, DSPDoubleComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code converts the contents of a [`DSPDoubleSplitComplex`](./dspdoublesplitcomplex.md) structure to an array of [`DSPDoubleComplex`](./dspdoublecomplex.md) structures :
 

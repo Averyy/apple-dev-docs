@@ -15,11 +15,11 @@ Configure the setings for the device’s modem control register (MCR).
 virtual kern_return_t HwProgramMCR(bool dtr, bool rts);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method and use it to program your hardware with the specified information.
 

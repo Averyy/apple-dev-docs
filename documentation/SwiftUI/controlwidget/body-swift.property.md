@@ -21,7 +21,7 @@ The content and behavior of the control.
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any controls that you create, provide a computed `body` property that defines the control using some control widget configuration.
 

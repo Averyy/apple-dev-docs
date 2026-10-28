@@ -19,7 +19,7 @@ typealias Progress = Float
 typedef float NSAnimationProgress;
 ```
 
-#### Discussion
+## Discussion
 
 An animation progress value is returned in the `userInfo` dictionary of an [`progressMarkNotification`](./progressmarknotification.md) notification.
 

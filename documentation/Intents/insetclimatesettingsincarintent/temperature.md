@@ -32,7 +32,7 @@ var temperature: Measurement<UnitTemperature>? { get }
 @property (atomic, copy, readonly, nullable) NSMeasurement<NSUnitTemperature *> * temperature;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the precise temperature requested by the user. This property is `nil` when the user modified a different climate control setting.
 

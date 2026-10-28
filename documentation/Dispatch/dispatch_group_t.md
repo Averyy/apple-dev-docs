@@ -25,7 +25,7 @@ typealias dispatch_group_t = DispatchGroup
 typedef NSObject<OS_dispatch_group> * dispatch_group_t;
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch group is a mechanism for monitoring a set of blocks. Your application can monitor the blocks in the group synchronously or asynchronously depending on your needs. By extension, a group can be useful for synchronizing for code that depends on the completion of other tasks.
 

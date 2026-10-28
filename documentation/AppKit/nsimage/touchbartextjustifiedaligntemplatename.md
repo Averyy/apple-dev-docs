@@ -22,7 +22,7 @@ class let touchBarTextJustifiedAlignTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextJustifiedAlignTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for justify text](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825138@2x.png)
 

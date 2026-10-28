@@ -5,7 +5,7 @@
 
 A texture-based image buffer that supplies source image data to OpenGL.
 
-#### Overview
+## Overview
 
 Core Video OpenGL textures are texture-based image buffers used for supplying source image data to OpenGL.
 

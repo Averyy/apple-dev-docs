@@ -25,11 +25,11 @@ convenience init(timeInterval: TimeInterval, repeats: Bool)
 + (instancetype) triggerWithTimeInterval:(NSTimeInterval) timeInterval repeats:(BOOL) repeats;
 ```
 
-#### Return Value
+## Return Value
 
 A new time interval trigger based on the specified temporal information.
 
-#### Discussion
+## Discussion
 
 If you specify `true` for the `repeats` parameter, you must explicitly remove the notification request to stop the delivery of the associated notification. Use the methods of [`UNUserNotificationCenter`](../unusernotificationcenter.md) to remove notification requests that are no longer needed.
 

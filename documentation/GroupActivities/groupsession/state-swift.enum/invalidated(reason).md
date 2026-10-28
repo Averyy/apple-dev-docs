@@ -24,7 +24,7 @@ case invalidated(reason: any Error)
 
 - [Joining and managing a shared activity](../../joining-and-managing-a-shared-activity.md)
 
-#### Discussion
+## Discussion
 
 The session transitions to this state when an error occurs, when the FaceTime call ends, or when your app calls the [`leave()`](../leave%28%29.md) method. When a session is in this state, don’t attempt to join, leave, or end the session again. Instead, release resources related to the session, including the session object itself.
 

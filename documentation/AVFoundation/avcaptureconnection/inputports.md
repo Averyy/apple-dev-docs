@@ -24,7 +24,7 @@ var inputPorts: [AVCaptureInput.Port] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureInputPort *> * inputPorts;
 ```
 
-#### Discussion
+## Discussion
 
 Input ports are instances of [`AVCaptureInput.Port`](../avcaptureinput/port.md).
 

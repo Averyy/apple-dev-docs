@@ -22,7 +22,7 @@ string ConfigurationPlatform
 - `PLATFORM_TVOS`
 - `PLATFORM_VISIONOS`
 
-#### Possible Values
+## Possible Values
 
 - `PLATFORM_MACOS` - macOS
 - `PLATFORM_IOS` - iOS and iPadOS

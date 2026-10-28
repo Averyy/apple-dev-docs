@@ -5,7 +5,7 @@
 
 Monitor key events during capture to provide feedback in your camera UI.
 
-#### Overview
+## Overview
 
 Capturing a photo with an iOS device camera is a complex process involving physical camera mechanisms, image signal processing, the operating system, and your app. While it’s possible for your app to ignore many stages of this process and simply wait for a final result, you can create a more responsive camera interface by monitoring each step.
 
@@ -21,23 +21,23 @@ After you call [`capturePhoto(with:delegate:)`](./avcapturephotooutput/captureph
 
 The capture system provides an [`AVCaptureResolvedPhotoSettings`](./avcaptureresolvedphotosettings.md) object at each step in this process. Because multiple captures can be in progress at the same time, each resolved photo settings object has a [`uniqueID`](./avcaptureresolvedphotosettings/uniqueid.md) whose value matches the [`uniqueID`](./avcapturephotosettings/uniqueid.md) of the [`AVCapturePhotoSettings`](./avcapturephotosettings.md) you used to take the photo.
 
-##### Get resolved capture settings
+### Get resolved capture settings
 
 When you specify the settings for a photo, some of the settings you choose can be automatic, left for the capture system to decide at precisely the moment of capture. For example, you can choose [`AVCaptureDevice.FlashMode.auto`](./avcapturedevice/flashmode-swift.enum/auto.md) flash mode, allowing the camera itself to determine based on scene lighting whether to fire the flash when exposing the photo.
 
 Just before starting the exposure, the photo output calls your delegate’s [`photoOutput(_:willBeginCaptureFor:)`](./avcapturephotocapturedelegate/photooutput%28_,willbegincapturefor%29.md) method, whose `resolvedSettings` parameter tells you the actual settings for that capture. For example, if you chose [`AVCaptureDevice.FlashMode.auto`](./avcapturedevice/flashmode-swift.enum/auto.md) flash mode, the resolved settings object tells you whether the flash is in use for the current capture—you could use this information to show in your UI that the flash was used.
 
-##### Handle exposure start
+### Handle exposure start
 
 When the exposure time begins, the photo output calls your delegate’s [`photoOutput(_:willCapturePhotoFor:)`](./avcapturephotocapturedelegate/photooutput%28_,willcapturephotofor%29.md) method. In traditional photography, this moment is equivalent to the opening of the camera shutter. The system also automatically plays a shutter sound at this time.
 
 In your UI, you can respond to this method to display a shutter animation or some other indicator that the requested photo is being taken.
 
-##### Handle exposure end
+### Handle exposure end
 
 The photo output calls your delegate’s [`photoOutput(_:didCapturePhotoFor:)`](./avcapturephotocapturedelegate/photooutput%28_,didcapturephotofor%29.md) method as soon as the exposure time completes. The system still needs time to process camera data before providing an image to your app, but you can use this moment to display in your UI that the exposure is complete. For example, you can simulate a shutter effect by hiding the camera preview in the `willCapturePhoto` method and showing it again in the `didCapturePhoto` method.
 
-##### Handle photo results
+### Handle photo results
 
 When the photo output has image data available for your app, it calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method. Depending on your photo settings, the photo output may call this method multiple times:
 
@@ -48,7 +48,7 @@ For example, if you request RAW+HEIF capture in a three-exposure bracket, the ph
 
 > **Note**:  If you request Live Photo capture, additional delegate methods provide feedback on that process. See [Capturing and saving Live Photos](./capturing-and-saving-live-photos.md).
 
-##### Clean up when capture is complete
+### Clean up when capture is complete
 
 When all of the system’s work for a capture is complete, the photo output calls your delegate’s [`photoOutput(_:didFinishCaptureFor:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishcapturefor,error%29.md) method. You can use this moment to finish your app’s part of the capture process:
 

@@ -22,7 +22,7 @@ Whether views and styles in this environment should prefer an active appearance 
 var appearsActive: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, views in the focused window (also referred to as the “key” window) should appear active. Some contexts also appear active in other circumstances, such as the contents of a window toolbar appearing active when the window is not focused but is the main window.
 

@@ -25,7 +25,7 @@ var BNNSActivationFunctionSoftplus: BNNSActivationFunction { get }
 BNNSActivationFunctionSoftplus
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

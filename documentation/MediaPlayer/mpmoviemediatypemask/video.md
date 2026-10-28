@@ -21,7 +21,7 @@ static var video: MPMovieMediaTypeMask { get }
 MPMovieMediaTypeMaskVideo
 ```
 
-#### Discussion
+## Discussion
 
 The movie file contains video media.
 

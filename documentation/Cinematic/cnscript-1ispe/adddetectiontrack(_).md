@@ -19,7 +19,7 @@ Adds a user-created detection track.
 final func addDetectionTrack(_ detectionTrack: CNDetectionTrack) -> CNDetectionID
 ```
 
-#### Return Value
+## Return Value
 
 The unique detection ID assigned to the added track, which can be used for later lookup or decision creation.
 

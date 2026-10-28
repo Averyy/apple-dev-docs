@@ -20,7 +20,7 @@ typealias UCCollateOptions = UInt32
 typedef UInt32 UCCollateOptions;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of the `UCCollateOptions` values, see [Standard Options Mask](./carbon_core/unicode_utilities/api-1390444-standard_options_mask.md).
 

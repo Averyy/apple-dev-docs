@@ -25,7 +25,7 @@ var iosurface: IOSurfaceRef? { get }
 @property (readonly, nullable) IOSurfaceRef iosurface;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value is `nil` for textures that don’t come from an [`IOSurface`](../../IOSurface/iosurface-page.md) instance.
 

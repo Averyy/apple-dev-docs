@@ -25,7 +25,7 @@ func vImageConvert_444CrYpCb10ToARGB16Q12(_ src: UnsafePointer<vImage_Buffer>, _
 vImage_Error vImageConvert_444CrYpCb10ToARGB16Q12(const vImage_Buffer *src, const vImage_Buffer *dest, const vImage_YpCbCrToARGB *info, const uint8_t permuteMap[4], const Pixel_16Q12 alpha, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 

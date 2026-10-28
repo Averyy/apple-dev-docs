@@ -14,7 +14,7 @@ Computes X to the power of Y, where X is >= 0.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Power Positive (half)**:
 

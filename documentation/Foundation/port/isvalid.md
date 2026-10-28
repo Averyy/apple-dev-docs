@@ -25,7 +25,7 @@ var isValid: Bool { get }
 @property (readonly, getter=isValid) BOOL valid;
 ```
 
-#### Discussion
+## Discussion
 
 [`false`](../../Swift/false.md) if the receiver is known to be invalid, otherwise [`true`](../../Swift/true.md).
 

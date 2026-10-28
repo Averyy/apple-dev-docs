@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_TRUNCATE: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_TRUNCATE
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`truncate`](./es_events_t/truncate.md), which has the type [`es_event_truncate_t`](./es_event_truncate_t.md).
 

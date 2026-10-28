@@ -25,7 +25,7 @@ init(contentsOf url: URL, options readOptionsMask: NSData.ReadingOptions = []) t
 - (instancetype) initWithContentsOfURL:(NSURL *) url options:(NSDataReadingOptions) readOptionsMask error:(NSError **) errorPtr;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  As this method runs synchronously and blocks the calling thread until it finishes, don’t invoke it from the main thread. Use file coordination or one of the nonblocking file-related APIs instead.
 

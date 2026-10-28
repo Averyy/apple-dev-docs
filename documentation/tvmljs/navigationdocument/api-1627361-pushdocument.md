@@ -17,7 +17,7 @@ void pushDocument(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The document being pushed onto the stack must be a valid parsed DOM object.
 

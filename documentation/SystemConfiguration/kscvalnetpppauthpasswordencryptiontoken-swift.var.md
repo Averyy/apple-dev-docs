@@ -19,7 +19,7 @@ let kSCValNetPPPAuthPasswordEncryptionToken: CFString
 extern CFStringRef const kSCValNetPPPAuthPasswordEncryptionToken;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetPPPAuthPasswordEncryption`](./kscpropnetpppauthpasswordencryption-swift.var.md) key.
 

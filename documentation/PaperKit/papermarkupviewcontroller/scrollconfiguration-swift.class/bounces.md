@@ -19,7 +19,7 @@ The axes for which the scroll view bounces past the edge of content and back aga
 final var bounces: PaperMarkupViewController.ScrollConfiguration.Axis { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `[.vertical, .horizontal]`.
 

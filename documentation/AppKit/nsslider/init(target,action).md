@@ -19,7 +19,7 @@ convenience init(target: Any?, action: Selector?)
 + (instancetype) sliderWithTarget:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized slider control.
 

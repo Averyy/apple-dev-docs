@@ -17,7 +17,7 @@ Jina reranker v3 listwise model.
 final class JinaRerankerModel
 ```
 
-#### Overview
+## Overview
 
 The checkpoint declares `model_type: qwen3` but `architectures: ["JinaForRanking"]`. It uses Qwen3 hidden states at `<|embed_token|>` and `<|rerank_token|>` positions, projects them with `projector.safetensors`, then scores documents by cosine similarity.
 

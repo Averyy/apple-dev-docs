@@ -23,7 +23,7 @@ optional func deviceBrowser(_ browser: ICDeviceBrowser, deviceDidChangeName devi
 - (void) deviceBrowser:(ICDeviceBrowser *) browser deviceDidChangeName:(ICDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 A device’s name may change if a device module overrides the default name reported by the device’s transport layer, or if a user changes the name of the file system volume mounted by the device.
 

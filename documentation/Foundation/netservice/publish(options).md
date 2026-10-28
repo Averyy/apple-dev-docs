@@ -24,7 +24,7 @@ func publish(options: NetService.Options = [])
 - (void) publishWithOptions:(NSNetServiceOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately, with success or failure indicated by the callbacks to the delegate.
 

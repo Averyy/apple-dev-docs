@@ -17,7 +17,7 @@ An optimizer that delegates to several sub-optimizers, routing each parameter to
 class MultiOptimizer
 ```
 
-#### Overview
+## Overview
 
 This makes it easy to use different optimizers (or different hyperparameters) for different weights. The `filters` are predicates over a parameter’s flattened key path and its gradient and must be one fewer than `optimizers` – the last optimizer is the fallback and receives every parameter not matched by an earlier filter.
 
@@ -30,7 +30,7 @@ let optimizer = MultiOptimizer(
 
 This is a port of Python `mlx.optimizers.MultiOptimizer`.
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

@@ -16,7 +16,7 @@ A protocol that tells the test runner to run custom code before or after it runs
 protocol TestScoping : Sendable
 ```
 
-#### Overview
+## Overview
 
 Provide custom scope for tests by implementing the [`scopeProvider(for:testCase:)`](./trait/scopeprovider%28for,testcase%29.md) method, returning a type that conforms to this protocol. Create a custom scope to consolidate common set-up and tear-down logic for tests which have similar needs, which allows each test function to focus on the unique aspects of its test.
 

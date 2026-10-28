@@ -19,7 +19,7 @@ var buttons: [NSButton] { get }
 @property (copy, readonly) NSArray<NSButton *> * buttons;
 ```
 
-#### Discussion
+## Discussion
 
 The button displayed rightmost in the alert (for a left-to-right language) corresponds to the button at index `0` in this property’s array, and is considered the default button. A user can invoke this button by pressing the Return key.
 

@@ -23,7 +23,7 @@ let kCGPDFXDestinationOutputProfile: CFString
 extern CFStringRef const kCGPDFXDestinationOutputProfile;
 ```
 
-#### Discussion
+## Discussion
 
 An ICC profile stream defining the transformation from the PDF document’s source colors to output device colorants. This key is required if the value of [`kCGPDFXOutputConditionIdentifier`](./kcgpdfxoutputconditionidentifier.md) does not specify a standard production condition. It is optional otherwise. If present, the value of this key must be an ICC-based color space specified as a `CGColorSpace` object.
 

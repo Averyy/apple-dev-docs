@@ -21,7 +21,7 @@ A date that represents the date of the scanned string.
 var documentTimeZone: TimeZone?
 ```
 
-#### Discussion
+## Discussion
 
 This is the date that’s relevant to the subject of the string the system in scanning, such as a text message reception date. The default is “now.”
 

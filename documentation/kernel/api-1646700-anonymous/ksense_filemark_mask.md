@@ -13,7 +13,7 @@
 kSENSE_FILEMARK_Mask = 0x80
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use when checking the SENSE_KEY field for the FILEMARK bit.
 

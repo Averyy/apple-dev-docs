@@ -25,7 +25,7 @@ var isStopped: Bool { get }
 @property (readonly, getter=isStopped) BOOL stopped;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) when the receiver has stopped the query; otherwise, [`false`](../../Swift/false.md).
 

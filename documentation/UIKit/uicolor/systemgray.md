@@ -23,7 +23,7 @@ class var systemGray: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * systemGrayColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color represents the standard system gray. It adapts to the current environment.
 

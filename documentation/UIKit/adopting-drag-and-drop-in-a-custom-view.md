@@ -12,17 +12,17 @@ Demonstrates how to enable drag and drop for a `UIImageView` instance.
 - Mac Catalyst 11.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 This sample code project uses a [`UIImageView`](./uiimageview.md) instance to show how any instance or subclass of the [`UIView`](./uiview.md) class can act as a drag source or a drop destination.
 
 To enable drag and drop, you add one or more interaction objects to a view. To provide or consume data, you implement the protocol methods in the interaction delegates.
 
-##### Get started
+### Get started
 
 Deploy this sample code project on iPad, which supports drag and drop between apps. When you first launch this project’s built app, you see an image view containing an image. Use this app along with a second app that has images, such as Photos. For example, configure the iPad screen to Split View, with this app side by side with Photos. Then drag the image from this app into Photos, or drag an image from Photos into this app.
 
-##### Enable drag and drop interactions
+### Enable drag and drop interactions
 
 To enable dragging, dropping, or both, attach interactions to views. A convenient place for this code is in an app’s [`viewDidLoad()`](./uiviewcontroller/viewdidload%28%29.md) method.
 
@@ -46,7 +46,7 @@ Enabling drag and drop for an image view, which this project uses, requires an a
 imageView.isUserInteractionEnabled = true
 ```
 
-##### Provide data for a drag session
+### Provide data for a drag session
 
 The [`dragInteraction(_:itemsForBeginning:)`](./uidraginteractiondelegate/draginteraction%28_,itemsforbeginning%29.md) method is the one essential method for allowing dragging from a view.
 
@@ -70,7 +70,7 @@ The system calls this delegate method in response to the user gesture that initi
 
 For more about providing data for dragging, see [Making a view into a drag source](./making-a-view-into-a-drag-source.md).
 
-##### Consume data from a drop session
+### Consume data from a drop session
 
 To enable a view to consume data from a drop session, you implement three delegate methods.
 

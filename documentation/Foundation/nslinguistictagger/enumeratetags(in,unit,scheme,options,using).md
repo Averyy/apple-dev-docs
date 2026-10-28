@@ -31,7 +31,7 @@ func enumerateTags(in range: NSRange, unit: NSLinguisticTaggerUnit, scheme: NSLi
 
 - [Tokenizing Natural Language Text](../tokenizing-natural-language-text.md)
 
-#### Discussion
+## Discussion
 
 This method’s block is called for all tokens intersecting a given range, supplying tags and ranges. The tagger segments the string into sentences and tokens as necessary, and return those ranges along with a tag for any scheme in its array of tag schemes. For example, if the tag scheme is [`lexicalClass`](../nslinguistictagscheme/lexicalclass.md), the tags specify the part of speech (for word tokens) or the type of whitespace or punctuation (for whitespace or punctuation tokens).  If the tag scheme is [`lemma`](../nslinguistictagscheme/lemma.md), the tags specify the stem form of the word (if known) for each word token.
 

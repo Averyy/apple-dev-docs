@@ -16,11 +16,11 @@ Allocate a SkipCycle NuDCL and append it to the program.
 NuDCLSkipCycleRef (*AllocateSkipCycle)(IOFireWireLibNuDCLPoolRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NuDCLSkipCycleRef on success or 0 on failure.
 
-#### Discussion
+## Discussion
 
 The SkipCycle DCL causes the DCL program to "sends" an empty cycle.
 

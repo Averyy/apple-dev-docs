@@ -19,7 +19,7 @@ The attributes to fetch for each item and provide to the model.
 var fetchAttributes: [SearchableItemAttribute]
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to minimize the number of round trips between the Spotlight search tool and your content. When you index your app’s content, you create a [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md) for each item and fill it with metadata about that item. For example, retrieve the display name, author, and subject attributes by setting this property to `[.displayName, .authors, .subject]`. For each item, the tool retrieves the attributes you specify and delivers them to the model.
 

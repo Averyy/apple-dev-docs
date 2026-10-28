@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_PixelBufferPoolIsShared: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_PixelBufferPoolIsShared;
 ```
 
-#### Discussion
+## Discussion
 
 This value is false if separate pools are used because the pixel buffer attributes specified by the video decoder and the client are incompatible.
 

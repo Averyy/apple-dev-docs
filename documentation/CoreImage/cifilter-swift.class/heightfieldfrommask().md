@@ -24,11 +24,11 @@ class func heightFieldFromMask() -> any CIFilter & CIHeightFieldFromMask
 + (CIFilter<CIHeightFieldFromMask> *) heightFieldFromMaskFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the height-field from the mask filter to an image. The effect targets the white in the input image and creates realistic shading.
 

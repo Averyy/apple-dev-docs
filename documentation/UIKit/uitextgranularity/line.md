@@ -21,7 +21,7 @@ case line
 UITextGranularityLine
 ```
 
-#### Discussion
+## Discussion
 
 The unit of text is a line.
 

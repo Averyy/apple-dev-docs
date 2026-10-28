@@ -21,11 +21,11 @@ Creates a grouping of rows that the method selects by choosing unique units of t
 func grouped(by columnID: ColumnID<Date>, timeUnit: Calendar.Component) -> RowGrouping<Int>
 ```
 
-#### Return Value
+## Return Value
 
 A collection of groups.
 
-#### Discussion
+## Discussion
 
 After the method aggregates the groups, it creates a column with the same name as the original column plus the `timeUnit` name.
 

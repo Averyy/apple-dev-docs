@@ -29,7 +29,7 @@ var transactionAuthor: String? { get set }
 
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Discussion
+## Discussion
 
 Set a managed object context’s [`transactionAuthor`](./transactionauthor.md) before saving it to differentiate among multiple call sites that modify the same context. Doing this records an [`author`](../nspersistenthistorytransaction/author.md) in subsequent transactions.
 

@@ -27,7 +27,7 @@ func fileProviderServicesForItem(at url: URL) async throws -> [NSFileProviderSer
 - (void) getFileProviderServicesForItemAtURL:(NSURL *) url completionHandler:(void (^)(NSDictionary<NSString *,NSFileProviderService *> *services, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use the returned services to perform custom actions defined by the services’ protocol.
 

@@ -11,7 +11,7 @@ Cause the work loop to schedule the action.
 virtual void signalInterrupt();
 ```
 
-#### Overview
+## Overview
 
 Cause the work loop to schedule the interrupt action even if the filter routine returns 'false'. Note well the interrupting condition MUST be cleared from the hardware otherwise an infinite process interrupt loop will occur. Use this function when SoftDMA is desired. See $link IOFilterInterruptSource::Filter
 

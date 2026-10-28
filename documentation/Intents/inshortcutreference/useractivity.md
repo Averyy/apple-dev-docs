@@ -32,7 +32,7 @@ var userActivity: NSUserActivity? { get }
 @property (atomic, strong, readonly, nullable) NSUserActivity * userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when you create the shortcut with an [`INIntent`](../inintent.md) object.
 

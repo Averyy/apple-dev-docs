@@ -17,7 +17,7 @@ Returns the number of reads the framework performed using a Store and Forward se
 func fetchStoredPaymentCardReadResultCount() async throws -> Int
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This method throws a [`PaymentCardReaderStore.StoreError`](./storeerror.md) if the count cannot be fetched.
 

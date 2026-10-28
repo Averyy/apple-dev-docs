@@ -25,7 +25,7 @@ var nodeB: SCNNode { get }
 @property (nonatomic, readonly) SCNNode * nodeB;
 ```
 
-#### Discussion
+## Discussion
 
 Use the node’s [`physicsBody`](../scnnode/physicsbody.md) property to examine physics characteristics of the node.
 

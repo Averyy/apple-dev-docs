@@ -15,7 +15,7 @@ Creates a provider that reconstructs a person’s surroundings.
 init(modes: [SceneReconstructionProvider.Mode] = [])
 ```
 
-#### Discussion
+## Discussion
 
 You can pass additional modes, such as [`SceneReconstructionProvider.Mode.classification`](./mode/classification.md), if you need more than the default mesh data.
 

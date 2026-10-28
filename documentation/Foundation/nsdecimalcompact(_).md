@@ -25,7 +25,7 @@ func NSDecimalCompact(_ number: UnsafeMutablePointer<Decimal>)
 extern void NSDecimalCompact(NSDecimal *number);
 ```
 
-#### Discussion
+## Discussion
 
 Formats number so that calculations using it will take up as little memory as possible. All the `NSDecimal...` arithmetic functions expect compact [`Decimal`](./decimal.md) arguments.
 

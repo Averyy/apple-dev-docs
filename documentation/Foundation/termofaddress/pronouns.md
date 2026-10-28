@@ -21,7 +21,7 @@ The pronouns associated with a term of address.
 var pronouns: [Morphology.Pronoun] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is only set for terms of address created through the [`localized(language:pronouns:)`](./localized%28language,pronouns%29.md) function. Calling this property returns an empty array otherwise.
 

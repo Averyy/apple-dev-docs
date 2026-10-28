@@ -5,7 +5,7 @@
 
 Coordinate the activity of custom real-time audio threads with those of the system and other processes.
 
-#### Overview
+## Overview
 
 Real-time audio rendering often requires coordination between the threads of an app, the system, and the threads of any active Audio Unit plug-ins. Workgroups provide the mechanism to coordinate the efforts of these different processes, and ensure that they execute on the same schedule. In an Audio Unit, use a render context observer to retrieve the workgroup that the host app uses for real-time audio rendering. In an app, fetch the workgroup for a Core Audio device directly from the device or from your [`AUAudioUnit`](./auaudiounit.md) object.
 

@@ -21,7 +21,7 @@ An unknown number of frames were dropped.
 case discontinuity
 ```
 
-#### Discussion
+## Discussion
 
 When the module providing sample buffers has experienced a discontinuity, and an unknown number of frames have been lost. This condition is typically caused by the system being too busy.
 

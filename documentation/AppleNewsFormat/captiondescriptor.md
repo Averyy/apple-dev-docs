@@ -20,13 +20,13 @@ object CaptionDescriptor
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use a `CaptionDescriptor` object to provide a caption or attribution for an image that’s displayed full screen. You can use a caption descriptor with a [`Figure`](./figure.md), [`Portrait`](./portrait.md), or [`Photo`](./photo.md) component, and also with the individual items in a [`Gallery`](./gallery.md) or [`Mosaic`](./mosaic.md) component.
 
 You can use this object in [`Figure`](./figure.md), [`Portrait`](./portrait.md), [`Photo`](./photo.md), and [Gallery Item](https://developer.apple.com/library/archive/documentation/General/Conceptual/Apple_News_Format_Ref/GalleryItem.html#//apple_ref/doc/uid/TP40015408-CH63).
 
-##### Example
+### Example
 
 ```json
 {

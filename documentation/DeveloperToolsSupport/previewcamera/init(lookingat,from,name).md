@@ -15,7 +15,7 @@ Creates a camera that looks towards a specified point in the preview from a diff
 init(lookingAt position: Point3D, from: Point3D, name: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use one or more cameras with one of the preview macros that takes a `cameras` input — like [`Preview(_:traits:body:cameras:)`](../../SwiftUI/preview%28_,traits,body,cameras%29.md) — to create custom viewpoints for the preview. The canvas offers custom cameras in its camera picker along with a set of standard cameras.
 

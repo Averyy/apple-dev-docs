@@ -23,7 +23,7 @@ class CFWriteStream
 typedef struct __CFWriteStream * CFWriteStreamRef;
 ```
 
-#### Overview
+## Overview
 
 `CFWriteStream` provides an interface for writing a byte stream either synchronously or asynchronously. You can create streams that write bytes to a block of memory, a file, or a generic socket. All streams need to be opened, using [`CFWriteStreamOpen(_:)`](./cfwritestreamopen%28_%29.md), before writing.
 

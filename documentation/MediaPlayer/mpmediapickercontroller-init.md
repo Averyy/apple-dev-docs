@@ -5,11 +5,11 @@
 
 Initializes a media item picker for all media types.
 
-#### Return Value
+## Return Value
 
 A new media item picker.
 
-#### Overview
+## Overview
 
 The default media type for a media item picker is [`any`](./mpmediatype/any.md).
 

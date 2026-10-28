@@ -21,7 +21,7 @@ Modifies the format style to use the specified rounding rule and increment.
 func rounded(rule: Decimal.FormatStyle.Percent.Configuration.RoundingRule = .toNearestOrEven, increment: Int? = nil) -> Decimal.FormatStyle.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified rounding rule and increment.
 

@@ -17,7 +17,7 @@ Tells the delegate that the system is preparing for a transition.
 func experienceController(_ controller: AVExperienceController, prepareForTransitionUsing context: AVExperienceController.TransitionContext) async
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to prepare the app’s state for the [`toExperience`](../transitioncontext/toexperience.md). This may include showing or hiding view controllers, putting the player view controller in the view hierarchy, or any other asynchronous work required for the transition. This is the last chance to update [`configuration`](../configuration-swift.property.md) before the transition begins.
 

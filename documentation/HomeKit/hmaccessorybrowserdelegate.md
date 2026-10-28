@@ -22,7 +22,7 @@ protocol HMAccessoryBrowserDelegate : NSObjectProtocol
 @protocol HMAccessoryBrowserDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  To enable a consistent user experience across HomeKit enabled apps, use either the [`addAndSetupAccessories(completionHandler:)`](./hmhome/addandsetupaccessories%28completionhandler%29.md) or the [`addAndSetupAccessories(with:completionHandler:)`](./hmhome/addandsetupaccessories%28with,completionhandler%29.md) method of the [`HMHome`](./hmhome.md) class instead of an accessory browser. These calls manage all the details of the accessory search process for you.
 

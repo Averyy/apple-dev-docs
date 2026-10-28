@@ -23,7 +23,7 @@ class CFArray
 typedef const struct __CFArray * CFArrayRef;
 ```
 
-#### Overview
+## Overview
 
 CFArray and its derived mutable type, [`CFMutableArray`](./cfmutablearray.md), manage ordered collections of values called arrays. CFArray creates static arrays and CFMutableArray creates dynamic arrays.
 

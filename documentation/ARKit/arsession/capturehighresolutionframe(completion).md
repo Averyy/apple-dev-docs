@@ -24,7 +24,7 @@ func captureHighResolutionFrame() async throws -> ARFrame
 - (void) captureHighResolutionFrameWithCompletion:(void (^)(ARFrame *frame, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If the function succeeds, the completion handler’s frame contains a high quality, high resolution [`capturedImage`](../arframe/capturedimage.md).
 

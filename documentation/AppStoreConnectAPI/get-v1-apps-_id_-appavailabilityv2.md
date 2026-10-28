@@ -9,7 +9,7 @@ The data structure that represents a get-v1-apps-{id}-app availability v2 resour
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 Get a list of availabilities for a specific app.
 

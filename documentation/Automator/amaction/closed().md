@@ -20,7 +20,7 @@ func closed()
 - (void) closed;
 ```
 
-#### Discussion
+## Discussion
 
 This method is intended to be overridden, so that your action can perform its specific cleanup operations.
 

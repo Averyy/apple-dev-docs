@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> B
 - (BOOL) tableView:(NSTableView *) tableView shouldSelectRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to permit selection of the row, [`false`](../../Swift/false.md) to deny selection.
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to disallow selection of particular rows.
 

@@ -19,7 +19,7 @@ func SKIndexCopyDocumentRefsForDocumentIDs(_ inIndex: SKIndex!, _ inCount: CFInd
 void SKIndexCopyDocumentRefsForDocumentIDs(SKIndexRef inIndex, CFIndex inCount, SKDocumentID *inDocumentIDsArray, SKDocumentRef *outDocumentRefsArray);
 ```
 
-#### Discussion
+## Discussion
 
 The [`SKIndexCopyDocumentRefsForDocumentIDs(_:_:_:_:)`](./api-1445305-skindexcopydocumentrefsfordocume.md) function lets you get a batch of document URL objects (of type [`SKDocument`](./skdocument.md)) in one step, based on a list of document IDs.
 

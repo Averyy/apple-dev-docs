@@ -23,7 +23,7 @@ var commands: [WKWebExtension.Command] { get }
 @property (nonatomic, copy, readonly) NSArray<WKWebExtensionCommand *> * commands;
 ```
 
-#### Discussion
+## Discussion
 
 Provides all commands registered within the extension. Each command represents an action or behavior available for the web extension.
 

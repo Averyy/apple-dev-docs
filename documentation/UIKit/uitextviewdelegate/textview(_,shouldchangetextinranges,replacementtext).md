@@ -21,11 +21,11 @@ optional func textView(_ textView: UITextView, shouldChangeTextInRanges ranges: 
 - (BOOL) textView:(UITextView *) textView shouldChangeTextInRanges:(NSArray<NSValue *> *) ranges replacementText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the text at the `ranges` should be replaced.
 
-#### Discussion
+## Discussion
 
 Asks the delegate if the text at the specified `ranges` should be replaced with `text`.
 

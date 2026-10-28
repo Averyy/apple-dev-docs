@@ -24,11 +24,11 @@ class func shared() -> EAAccessoryManager
 + (EAAccessoryManager *) sharedAccessoryManager;
 ```
 
-#### Return Value
+## Return Value
 
 The shared accessory manager object.
 
-#### Discussion
+## Discussion
 
 You should always use this method to obtain the accessory manager object and should not try to create instances directly.
 

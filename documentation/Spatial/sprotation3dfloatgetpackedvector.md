@@ -19,11 +19,11 @@
 static simd_packed_float4 SPRotation3DFloatGetPackedVector(SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A new packed simd vector, where elements `0`, `1`, and `2` are the imaginary parts, and element `3` is the real part.
 
-#### Discussion
+## Discussion
 
 Creates a packed simd vector from a Spatial rotation structure.
 

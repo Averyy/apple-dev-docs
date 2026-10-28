@@ -22,7 +22,7 @@ struct StateReportingDomain
 
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `StateReportingDomain` is `RawRepresentable` and `ExpressibleByStringLiteral`, so create values using string literals. Use reverse DNS notation to avoid naming collisions:
 

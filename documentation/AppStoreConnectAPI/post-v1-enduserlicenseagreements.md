@@ -9,13 +9,13 @@ Add a custom end user license agreement (EULA) to an app and configure the terri
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to associate a custom license agreement with an app in the specified App Store territories. Any other territories will use the standard Apple-provided license agreement.
 
 In the following example the request contains a blank value for the `agreementText` attribute. Replace that attribute value with your actual agreement text.
 
-##### Create a Custom License Agreement for USA and China
+### Create a Custom License Agreement for USA and China
 
 **Request**:
 

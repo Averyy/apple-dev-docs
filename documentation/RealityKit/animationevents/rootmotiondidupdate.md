@@ -20,13 +20,13 @@ The event raised each frame when a new root motion delta is produced for an enti
 struct RootMotionDidUpdate
 ```
 
-#### Overview
+## Overview
 
 Root motion is locomotion that’s authored into an animation itself — for example, a run cycle whose root joint advances forward — rather than driven by code. Each frame’s contribution is reported as a [`rootMotionTransform`](./rootmotiondidupdate/rootmotiontransform.md) delta, which the system applies to the entity’s transform automatically. The event fires after animation evaluation but before the resulting skeletal pose is applied to the mesh.
 
 Subscribe to this event when you need to take over root motion application — for example, to project the delta onto a navigation surface or to reject motion on collision. By default, subscribing through `scene.subscribe(to:on:)` suppresses the automatic application; the subscriber is then fully responsible for applying or discarding the delta.
 
-##### Take over root motion application
+### Take over root motion application
 
 ```swift
 scene.subscribe(to: AnimationEvents.RootMotionDidUpdate.self, on: entity) { event in
@@ -34,7 +34,7 @@ scene.subscribe(to: AnimationEvents.RootMotionDidUpdate.self, on: entity) { even
 }
 ```
 
-##### Observe root motion without taking over
+### Observe root motion without taking over
 
 To observe the delta while leaving automatic application in place, set [`suppressesAutomaticApplication`](./rootmotiondidupdate/suppressesautomaticapplication.md) to `false` inside the handler:
 

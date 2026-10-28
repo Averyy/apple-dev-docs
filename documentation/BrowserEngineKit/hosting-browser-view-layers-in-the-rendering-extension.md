@@ -5,7 +5,7 @@
 
 Coordinate view-hierarchy and layer-hierarchy changes between processes.
 
-#### Overview
+## Overview
 
 When your browser app’s alternative browser engine is split between different extensions, you coordinate those extensions to prepare the browser’s UI. For example, your browser controls are rendered by the host app, and media is streamed in the rendering extension.
 
@@ -13,7 +13,7 @@ Create layer hierarchies to manage [`CALayer`](../QuartzCore/calayer.md) objects
 
 > **Note**:  If you create images or render content to an [`IOSurfaceRef`](../IOSurface/iosurfaceref.md) in your rendering extension, you can send that object to the host object over XPC and don’t need to render a hosted layer. If you render UI in a web content extension, use `IOSurfaceRef` in the rendering extension, or generate any UI in the rendering extension other than a `CALayer`, you need to create a visibility propagation interaction for the view in the host app. For more information, see [Propagating view visibility information to extension processes](./propagating-view-visibility-information-to-browser-extensions.md).
 
-##### Create a hosted layer hierarchy and a hosting view
+### Create a hosted layer hierarchy and a hosting view
 
 In the extension process that prepares the rendered content, create a [`LayerHierarchy`](./layerhierarchy.md) and set its layer to the root layer in the content’s layer hierarchy. Get the layer hierarchy’s [`LayerHierarchyHandle`](./layerhierarchyhandle.md), and send it over XPC to your browser app:
 
@@ -42,7 +42,7 @@ if let handle = try? LayerHierarchyHandle(xpcRepresentation: xpcHandle) {
 }
 ```
 
-##### Coordinate updates to the view and layer hierarchy
+### Coordinate updates to the view and layer hierarchy
 
 When you need to make changes to the view hierarchy that involve the `LayerHierarchyHostingView`, coordinate the changes between the host app and the extension that controls the hosted layers.
 
@@ -77,7 +77,7 @@ To initiate the update in the extension, create a [`LayerHierarchyHostingTransac
 
 Keep the lifetime of transaction coordinators — from initialization until you call [`commit()`](./layerhierarchyhostingtransactioncoordinator/commit%28%29.md) — as short as possible to avoid making your UI unresponsive. The system expects you to call `commit()` within a short interval, and stops coordinating transactions if you exceed this duration. A person using your browser app experiences this as glitches in your app’s user interface and inconsistent animations.
 
-##### Dispose of views with hosted layers
+### Dispose of views with hosted layers
 
 When the layer that’s rendered in a `LayerHierarchyHostingView` is no longer needed, call [`invalidate()`](./layerhierarchy/invalidate%28%29.md) on the layer hierarchy in the extension. Send an XPC message to notify the browser to remove the view from its superview. When you invalidate a `LayerHierarchy`, you can no longer use that hierarchy or its hosting view.
 

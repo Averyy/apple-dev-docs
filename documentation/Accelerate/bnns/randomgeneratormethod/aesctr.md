@@ -21,7 +21,7 @@ A constant that specifes an implementation that’s based on the Advanced Encryp
 case aesCtr
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t use this method for cryptographic applications.
 

@@ -14,7 +14,7 @@ Returns the sum of the absolute derivatives in X and Y using local differencing 
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Absolute Derivatives Sum (half)**:
 

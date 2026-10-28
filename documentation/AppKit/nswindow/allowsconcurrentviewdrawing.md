@@ -19,7 +19,7 @@ var allowsConcurrentViewDrawing: Bool { get set }
 @property BOOL allowsConcurrentViewDrawing;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window allows multithreaded view drawing; otherwise, [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 

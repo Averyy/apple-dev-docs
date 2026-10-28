@@ -21,7 +21,7 @@ case coverVertical
 UIModalTransitionStyleCoverVertical
 ```
 
-#### Discussion
+## Discussion
 
 When the view controller is presented, its view slides up from the bottom of the screen. On dismissal, the view slides back down. This is the default transition style.
 

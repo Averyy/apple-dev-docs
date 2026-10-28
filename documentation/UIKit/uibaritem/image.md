@@ -23,7 +23,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 This image can be used to create other images to represent this item on the bar—for example, a selected and unselected image may be derived from this image. You should set this property before adding the item to a bar. The default value is `nil`.
 

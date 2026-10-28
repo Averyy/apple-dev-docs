@@ -19,11 +19,11 @@ func AEProcessMessage(_ header: UnsafeMutablePointer<mach_msg_header_t>!) -> OSS
 OSStatus AEProcessMessage(mach_msg_header_t *header);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The Apple Event Manager provides the following functions (in macOS only) for working with Apple events at a lower level: [`AEGetRegisteredMachPort()`](./api-1449736-aegetregisteredmachport.md), [`AEDecodeMessage(_:_:_:)`](./api-1447827-aedecodemessage.md), [`AESendMessage(_:_:_:_:)`](./api-1442994-aesendmessage.md), and `AEProcessMessage`. See the descriptions for those functions for more information on when you might use them.
 

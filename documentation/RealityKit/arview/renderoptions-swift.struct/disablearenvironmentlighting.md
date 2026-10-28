@@ -17,7 +17,7 @@ Disable lighting from environment probes.
 static let disableAREnvironmentLighting: ARView.RenderOptions
 ```
 
-#### Discussion
+## Discussion
 
 By default, RealityKit automatically creates light probes to record the lighting conditions both globally, and at appropriate points in the scene. The framework adjusts the complexity of the light probe set to match the capabilities of the GPU. For example, it might use only a global probe on less capable devices. It then applies environment lighting to virtual objects based on the probes.
 

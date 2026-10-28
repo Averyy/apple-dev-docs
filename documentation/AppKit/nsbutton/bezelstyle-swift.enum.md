@@ -19,7 +19,7 @@ enum BezelStyle
 enum NSBezelStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For design guidance on buttons, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 

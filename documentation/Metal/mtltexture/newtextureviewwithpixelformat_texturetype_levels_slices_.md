@@ -20,11 +20,11 @@ Creates a new view of the texture, reinterpreting a subset of its data using a d
 - (id<MTLTexture>) newTextureViewWithPixelFormat:(MTLPixelFormat) pixelFormat textureType:(MTLTextureType) textureType levels:(NSRange) levelRange slices:(NSRange) sliceRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object that shares the same storage allocation of the calling texture object.
 
-#### Discussion
+## Discussion
 
 The texture type can be cast between the targets listed in the following table.
 

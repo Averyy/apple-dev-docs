@@ -34,7 +34,7 @@ var content: UNNotificationContent { get }
 @property (atomic, copy, readonly) UNNotificationContent * content;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the contents of the notification.
 

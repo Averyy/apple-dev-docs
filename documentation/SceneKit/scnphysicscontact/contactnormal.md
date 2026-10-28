@@ -25,7 +25,7 @@ var contactNormal: SCNVector3 { get }
 @property (nonatomic, readonly) SCNVector3 contactNormal;
 ```
 
-#### Discussion
+## Discussion
 
 This vector tells you which direction the bodies were moving relative to one another at the time of the collision. For example, in a game you can examine this vector to have enemy characters take damage when struck from above by the player character but damage the player character instead when they collide side-to-side.
 

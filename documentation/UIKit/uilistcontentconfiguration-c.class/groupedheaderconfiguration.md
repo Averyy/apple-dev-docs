@@ -19,11 +19,11 @@ Creates the default configuration you use to style a header in a grouped list.
 + (instancetype) groupedHeaderConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a header in a grouped list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a header in a table view or collection view list.
 

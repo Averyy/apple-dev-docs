@@ -24,11 +24,11 @@ static func shadow(_ style: ShadowStyle) -> some ShapeStyle
 
 Available when `Self` is `AnyShapeStyle`.
 
-#### Return Value
+## Return Value
 
 A new shape style based on the current style that uses the specified shadow style.
 
-#### Discussion
+## Discussion
 
 In most contexts the current style is the foreground, but not always. For example, when setting the value of the background style, that becomes the current implicit style.
 

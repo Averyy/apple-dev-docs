@@ -20,7 +20,7 @@ var int32Value: Int32 { get }
 @property (readonly) SInt32 int32Value;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the descriptor, as an integer value, or 0 if an error occurs.
 

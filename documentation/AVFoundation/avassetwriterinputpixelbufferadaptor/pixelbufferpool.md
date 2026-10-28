@@ -26,7 +26,7 @@ var pixelBufferPool: CVPixelBufferPool? { get }
 @property (nonatomic, readonly, nullable) CVPixelBufferPoolRef pixelBufferPool;
 ```
 
-#### Discussion
+## Discussion
 
 For maximum efficiency, you should create [CVPixelBuffer](../../CoreVideo/cvpixelbuffer-q2e.md) objects for [`append(_:withPresentationTime:)`](./append%28_,withpresentationtime%29.md) by using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](../../CoreVideo/cvpixelbufferpoolcreatepixelbuffer%28_,_,_%29.md) function.
 

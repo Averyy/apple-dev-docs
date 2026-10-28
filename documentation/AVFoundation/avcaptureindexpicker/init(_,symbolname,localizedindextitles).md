@@ -23,7 +23,7 @@ init(_ localizedTitle: String, symbolName: String, localizedIndexTitles: [String
 - (instancetype) initWithLocalizedTitle:(NSString *) localizedTitle symbolName:(NSString *) symbolName localizedIndexTitles:(NSArray<NSString *> *) localizedIndexTitles;
 ```
 
-#### Discussion
+## Discussion
 
 Create a picker with this initializer when you already have an array containing a title for each picked value.
 

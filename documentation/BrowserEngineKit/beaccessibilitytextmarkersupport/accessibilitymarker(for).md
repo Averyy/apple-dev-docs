@@ -25,7 +25,7 @@ func accessibilityMarker(for point: CGPoint) -> BEAccessibilityTextMarker?
 - (BEAccessibilityTextMarker *) accessibilityMarkerForPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The text marker for the text at `point`, or `nil` if there isn’t text at that point.
 

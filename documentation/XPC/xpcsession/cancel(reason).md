@@ -21,7 +21,7 @@ Cancels a session, discarding any unsent messages.
 func cancel(reason: String)
 ```
 
-#### Discussion
+## Discussion
 
 When you cancel a session, it discards any unsent messages and invalidates its connection. If there are messages awaiting replies, the session calls the reply handlers with an appropriate [`XPCRichError`](../xpcricherror.md).
 

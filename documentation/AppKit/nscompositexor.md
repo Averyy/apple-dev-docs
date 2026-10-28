@@ -17,7 +17,7 @@ Exclusive OR of source and destination images. (`R = S*(1 - Da) + D*(1 - Sa)`)
 static const NSCompositingOperation NSCompositeXOR;
 ```
 
-#### Discussion
+## Discussion
 
 Works only with black and white images and is not recommended for color contexts.
 

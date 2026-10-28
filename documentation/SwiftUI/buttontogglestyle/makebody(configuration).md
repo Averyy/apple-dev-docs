@@ -21,11 +21,11 @@ nonisolated
 func makeBody(configuration: ButtonToggleStyle.Configuration) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that acts as a button that controls a Boolean state.
 
-#### Discussion
+## Discussion
 
 SwiftUI implements this required method of the [`ToggleStyle`](../togglestyle.md) protocol to define the behavior and appearance of the [`button`](../togglestyle/button.md) toggle style. Don’t call this method directly; the system calls this method for each [`Toggle`](../toggle.md) instance in a view hierarchy that’s styled as a button.
 

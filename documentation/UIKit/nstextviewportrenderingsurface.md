@@ -24,13 +24,13 @@ protocol NSTextViewportRenderingSurface : NSObjectProtocol
 @protocol NSTextViewportRenderingSurface <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Conform a view or layer to `NSTextViewportRenderingSurface` to associate it with an [`NSTextLayoutFragment`](./nstextlayoutfragment.md) during viewport layout. TextKit uses this to track, configure, and reuse visual elements across layout passes.
 
 This protocol has no required methods. It gives TextKit a way to identify and manage the visual elements your delegate provides through [`NSTextViewportLayoutControllerDelegate`](./nstextviewportlayoutcontrollerdelegate.md).
 
-##### Implement a rendering surface
+### Implement a rendering surface
 
 You can conform any `UIView`, `NSView`, or `CALayer` subclass to this protocol:
 

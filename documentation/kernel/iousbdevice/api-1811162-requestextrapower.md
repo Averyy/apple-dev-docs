@@ -13,7 +13,7 @@ virtual UInt32 RequestExtraPower(
  UInt32requestedPower);
 ```
 
-#### Return Value
+## Return Value
 
 Amount of power actually reserved, in mA. It can be less than the requested or zero.
 

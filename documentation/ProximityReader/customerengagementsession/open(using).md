@@ -21,7 +21,7 @@ final func open(using token: CustomerEngagement.Token? = nil) async throws
 
 - [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the open request fails. This method can also throw `Foundation/URLError`.
 

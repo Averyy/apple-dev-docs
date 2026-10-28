@@ -5,7 +5,7 @@
 
 Work with the ICC profiles that describe device and working color spaces.
 
-#### Overview
+## Overview
 
 A [`ColorSyncProfile`](./colorsyncprofile.md) wraps an ICC profile, the description of a device or working color space that ColorSync uses to convert color accurately. Create profiles from a name, a file, or raw ICC data, and read a profile’s tags and header. To round trip a profile through raw ICC bytes, use [`ColorSyncProfileCopyData(_:_:)`](./colorsyncprofilecopydata%28_,_%29.md) to get the bytes you embed in an image or file, and [`ColorSyncProfileCreate(_:_:)`](./colorsyncprofilecreate%28_,_%29.md) to reconstruct a profile from bytes you extract. On macOS, you can also install a profile for the current user in `~/Library/ColorSync/Profiles`, or for everyone on the system in `/Library/ColorSync/Profiles`. To convert color between profiles, build a [`ColorSyncTransform`](./colorsynctransform.md). To bridge to Core Graphics, pass a profile to [`CGColorSpaceCreateWithColorSyncProfile(_:_:)`](../CoreGraphics/cgcolorspacecreatewithcolorsyncprofile%28_,_%29.md).
 

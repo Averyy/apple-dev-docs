@@ -19,7 +19,7 @@ func endEditing(for object: Any?)
 - (void) endEditingFor:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 If the field editor is the first responder, it’s made to resign that status even if its [`resignFirstResponder()`](../nsresponder/resignfirstresponder%28%29.md) method returns [`false`](../../Swift/false.md). This registration forces the field editor to send a [`textDidEndEditing(_:)`](../nstextdelegate/textdidendediting%28_%29.md) message to its delegate. The field editor is then removed from the view hierarchy, its delegate is set to `nil`, and it’s emptied of any text it may contain.
 

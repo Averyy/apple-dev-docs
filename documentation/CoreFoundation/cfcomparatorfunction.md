@@ -25,11 +25,11 @@ typealias CFComparatorFunction = (UnsafeRawPointer?, UnsafeRawPointer?, UnsafeMu
 typedef enum CFComparisonResult (*)(const void *, const void *, void *) CFComparatorFunction;
 ```
 
-#### Return Value
+## Return Value
 
 A `CFComparisonResult` value that indicates whether the `val1` is equal to, less than, or greater than `val2`. See [`CFComparisonResult`](./cfcomparisonresult.md) for a list of possible values.
 
-#### Discussion
+## Discussion
 
 If you need to sort the elements in a collection using special criteria, you can implement a comparator function with the signature defined by this prototype. You pass a pointer to this function in one of the “sort” functions, such as CFArray’s [`CFArraySortValues(_:_:_:_:)`](./cfarraysortvalues%28_,_,_,_%29.md).
 

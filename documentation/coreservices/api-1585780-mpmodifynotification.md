@@ -15,11 +15,11 @@ Adds a simple notification to a kernel notification.
 OSStatus MPModifyNotification(MPNotificationID notificationID, MPOpaqueID anID, void *notifyParam1, void *notifyParam2, void *notifyParam3);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 You specify the parameters for the simple notifications just as if you were calling the  [`MPSetTimerNotify`](./api-1585726-mpsettimernotify.md)  function.  
 

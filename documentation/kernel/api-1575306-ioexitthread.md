@@ -15,7 +15,7 @@ Deprecated function - use thread_terminate(). Terminate execution of current thr
 void IOExitThread(void);
 ```
 
-#### Discussion
+## Discussion
 
 This function destroys the currently running thread, and does not return.
 

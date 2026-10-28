@@ -29,7 +29,7 @@ class HKCorrelation
 - [About the HealthKit framework](./about-the-healthkit-framework.md)
 - [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
-#### Overview
+## Overview
 
 HealthKit uses correlations to represent both blood pressure and food.
 
@@ -40,7 +40,7 @@ In general, a food correlation should include at least a [`dietaryEnergyConsumed
 
 The [`HKCorrelation`](./hkcorrelation.md) class is a concrete subclass of the [`HKSample`](./hksample.md) class. Correlations are immutable: You set the correlation’s properties when the object is first created, and they cannot change.
 
-##### Extend Correlation Samples
+### Extend Correlation Samples
 
 As with many HealthKit classes, don’t subclass the [`HKCorrelation`](./hkcorrelation.md) class. You can extend the correlation class by adding metadata with custom keys as appropriate for your app.
 

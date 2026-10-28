@@ -15,7 +15,7 @@ An event that indicates a specific playback time in the media item has been cros
 attribute  timeBoundaryDidCross;
 ```
 
-#### Discussion
+## Discussion
 
 This event fires every time the specified playback time is crossed. This can happen multiple times if the user is moving the timing bar back and forth across the boundary. The listener is passed an event object with the following attributes:
 

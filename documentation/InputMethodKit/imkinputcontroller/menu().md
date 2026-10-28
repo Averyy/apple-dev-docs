@@ -19,11 +19,11 @@ func menu() -> NSMenu!
 - (NSMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 The menu object.
 
-#### Discussion
+## Discussion
 
 This method is called whenever the menu needs to be drawn so that an input method can update the menu to reflect the current state.
 

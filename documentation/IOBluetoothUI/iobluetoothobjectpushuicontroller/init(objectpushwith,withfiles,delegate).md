@@ -19,7 +19,7 @@ init!(objectPushWith inDevice: IOBluetoothDevice!, withFiles inFiles: [Any]!, de
 - (IOBluetoothObjectPushUIController *) initObjectPushWithBluetoothDevice:(IOBluetoothDevice *) inDevice withFiles:(NSArray *) inFiles delegate:(id) inDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The event delegate should implement a single delegate method:
 

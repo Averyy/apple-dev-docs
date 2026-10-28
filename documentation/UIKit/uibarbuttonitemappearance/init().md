@@ -23,7 +23,7 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new bar button item appearance object containing the default appearances for a plain button.
 

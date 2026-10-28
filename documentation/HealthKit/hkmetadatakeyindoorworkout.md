@@ -24,7 +24,7 @@ let HKMetadataKeyIndoorWorkout: String
 extern NSString * const HKMetadataKeyIndoorWorkout;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key’s value to [`true`](../Swift/true.md) if the workout was performed indoors; otherwise, set it to [`false`](../Swift/false.md).
 

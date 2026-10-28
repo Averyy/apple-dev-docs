@@ -17,11 +17,11 @@ virtual IOReturn setCommandBuffersAsRanges(
  UInt32 length = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns KIOReturnSuccess if the page table was written successfully.
 
-#### Overview
+## Overview
 
 Creates a page table with the given parameters. Any addresses mapped by this method must remain valid until setCommandBuffers is called again or releaseCommandBuffers is called. The SBP2 services do not release references to the command buffers just because the command has completed.
 

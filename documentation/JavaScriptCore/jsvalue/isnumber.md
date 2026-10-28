@@ -24,7 +24,7 @@ var isNumber: Bool { get }
 @property (readonly) BOOL isNumber;
 ```
 
-#### Discussion
+## Discussion
 
 In JavaScript, there is no differentiation between types of numbers. Semantically, all numbers behave as double-precision floating-point types, except in special cases like bit operations.
 

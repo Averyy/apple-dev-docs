@@ -14,7 +14,7 @@
 kIOHIDElementTypeOutput = 129
 ```
 
-#### Discussion
+## Discussion
 
 Used to represent an output data field in a report.
 

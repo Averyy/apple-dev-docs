@@ -24,7 +24,7 @@ class GCMotion
 @interface GCMotion : NSObject
 ```
 
-#### Overview
+## Overview
 
 The motion controller profile provides attitude and rotation data, as well as acceleration and sensor information. Use this profile to get motion input from a controller that measures acceleration and rotation rate. If the controller’s [`motion`](./gccontroller/motion.md) property is a `GCMotion` object, the controller supports motion.
 

@@ -19,7 +19,7 @@ func start()
 - (void) startAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 A strong reference to the animation is maintained until the end of the animation or until its [`stop()`](./stop%28%29.md) method is called. If the blocking mode is [`NSAnimation.BlockingMode.blocking`](./blockingmode/blocking.md), this method returns after the animation has completed or the delegate sends it [`stop()`](./stop%28%29.md). If the receiver has a progress of `1.0`, it starts again at `0.0`.
 

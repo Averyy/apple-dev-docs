@@ -23,7 +23,7 @@ func didTransition(from oldLayout: UICollectionViewLayout, to newLayout: UIColle
 - (void) didTransitionFromLayout:(UICollectionViewLayout *) oldLayout toLayout:(UICollectionViewLayout *) newLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override this method and use it to finalize any behaviors associated with the change in layouts.
 

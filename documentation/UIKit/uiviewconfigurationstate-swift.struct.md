@@ -19,7 +19,7 @@ A structure that encapsulates a view’s state.
 struct UIViewConfigurationState
 ```
 
-#### Overview
+## Overview
 
 A view configuration state encompasses a trait collection along with all of the common states that affect a view’s appearance — states like selected, focused, or disabled. A view configuration state encapsulates the inputs that configure a view for any possible state or combination of states. You use a view configuration state with background and content configurations to obtain the default appearance for a specific state.
 

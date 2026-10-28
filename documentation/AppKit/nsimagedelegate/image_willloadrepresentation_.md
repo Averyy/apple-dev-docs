@@ -15,7 +15,7 @@ Tells the delegate that the image object is about to access its underlying bitma
 - (void) image:(NSImage *) image willLoadRepresentation:(NSImageRep *) rep;
 ```
 
-#### Discussion
+## Discussion
 
 For incremental loading, this method is called when you first attempt to draw the image or otherwise access the bitmap data. Downloading of the image begins immediately after this method returns. This method is optional; incremental loading will continue if the delegate does not implement it.
 

@@ -23,7 +23,7 @@ var isIdentity: Bool { get }
 static bool SPRotation3DFloatIsIdentity(SPRotation3DFloat rotation);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the rotation’s angle is zero.
 

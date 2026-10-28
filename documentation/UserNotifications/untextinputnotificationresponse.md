@@ -24,7 +24,7 @@ class UNTextInputNotificationResponse
 @interface UNTextInputNotificationResponse : UNNotificationResponse
 ```
 
-#### Overview
+## Overview
 
 The system delivers a [`UNTextInputNotificationResponse`](./untextinputnotificationresponse.md) object to your app so that you can process user-provided text content. When defining your categories, you can specify an [`UNTextInputNotificationAction`](./untextinputnotificationaction.md) object instead of an [`UNNotificationAction`](./unnotificationaction.md) object for your action. If you do, the system creates an [`UNTextInputNotificationResponse`](./untextinputnotificationresponse.md) object when the user selects the accompanying action, and it fills the [`userText`](./untextinputnotificationresponse/usertext.md) property with any user-entered text.
 

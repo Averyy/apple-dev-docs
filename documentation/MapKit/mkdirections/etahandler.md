@@ -25,7 +25,7 @@ typealias ETAHandler = (MKDirections.ETAResponse?, (any Error)?) -> Void
 typedef void (^)(MKETAResponse *, NSError *) MKETAHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation of your block needs to check for a value in the `error` parameter and, if that parameter is `nil`, incorporate the travel-time information from the `response` parameter.
 

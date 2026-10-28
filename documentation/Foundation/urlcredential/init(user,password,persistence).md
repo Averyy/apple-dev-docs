@@ -25,11 +25,11 @@ init(user: String, password: String, persistence: URLCredential.Persistence)
 - (instancetype) initWithUser:(NSString *) user password:(NSString *) password persistence:(NSURLCredentialPersistence) persistence;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`URLCredential`](../urlcredential.md), initialized with user name `user`, password `password`, and using persistence setting `persistence`.
 
-#### Discussion
+## Discussion
 
 If `persistence` is [`URLCredential.Persistence.permanent`](./persistence-swift.enum/permanent.md), the credential is stored in the keychain. If `persistence` is [`URLCredential.Persistence.synchronizable`](./persistence-swift.enum/synchronizable.md), it is also stored to the user’s other devices.
 

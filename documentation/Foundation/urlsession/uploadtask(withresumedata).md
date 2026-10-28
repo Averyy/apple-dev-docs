@@ -29,7 +29,7 @@ func uploadTask(withResumeData resumeData: Data) -> URLSessionUploadTask
 
 - [Pausing and resuming uploads](../pausing-and-resuming-uploads.md)
 
-#### Return Value
+## Return Value
 
 A new session upload task, or nil if the resumeData is invalid.
 

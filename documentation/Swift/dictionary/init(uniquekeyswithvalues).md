@@ -21,11 +21,11 @@ Creates a new dictionary from the key-value pairs in the given sequence.
 init<S>(uniqueKeysWithValues keysAndValues: S) where S : Sequence, S.Element == (Key, Value)
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary initialized with the elements of `keysAndValues`.
 
-#### Discussion
+## Discussion
 
 You use this initializer to create a dictionary when you have a sequence of key-value tuples with unique keys. Passing a sequence with duplicate keys to this initializer results in a runtime error. If your sequence might have duplicate keys, use the `Dictionary(_:uniquingKeysWith:)` initializer instead.
 

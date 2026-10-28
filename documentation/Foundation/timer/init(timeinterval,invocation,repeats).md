@@ -25,11 +25,11 @@ init(timeInterval ti: TimeInterval, invocation: NSInvocation, repeats yesOrNo: B
 + (NSTimer *) timerWithTimeInterval:(NSTimeInterval) ti invocation:(NSInvocation *) invocation repeats:(BOOL) yesOrNo;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTimer` object, configured according to the specified parameters.
 
-#### Discussion
+## Discussion
 
 You must add the new timer to a run loop, using [`add(_:forMode:)`](../runloop/add%28_,formode%29-392ag.md). Then, after `ti` have elapsed, the timer fires, invoking `invocation`. (If the timer is configured to repeat, there is no need to subsequently re-add the timer to the run loop.)
 

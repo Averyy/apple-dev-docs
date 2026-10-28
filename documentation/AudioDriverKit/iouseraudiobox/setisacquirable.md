@@ -15,11 +15,11 @@ Set the box’s acquirability state.
 kern_return_t SetIsAcquirable(bool in_is_acquirable);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the acquirability state sends a notification to the host to update the object state.
 

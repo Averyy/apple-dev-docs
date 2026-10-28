@@ -24,7 +24,7 @@ subscript(index: Int) -> MTLVertexBufferLayoutDescriptor! { get set }
 - (MTLVertexBufferLayoutDescriptor *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor that contains vertex buffer layout state.
 

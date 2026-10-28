@@ -20,7 +20,7 @@ A message that posts after a mouse becomes the most recently used mouse.
 struct DidBecomeCurrentMessage
 ```
 
-#### Overview
+## Overview
 
 Use the `.didBecomeCurrent` identifier with `NotificationCenter` to listen for this message.
 

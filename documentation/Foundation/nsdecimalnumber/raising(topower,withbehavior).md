@@ -25,7 +25,7 @@ func raising(toPower power: Int, withBehavior behavior: (any NSDecimalNumberBeha
 - (NSDecimalNumber *) decimalNumberByRaisingToPower:(NSUInteger) power withBehavior:(id<NSDecimalNumberBehaviors>) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 `behavior` specifies the handling of calculation errors and rounding.
 

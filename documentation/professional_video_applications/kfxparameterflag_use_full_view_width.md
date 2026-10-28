@@ -19,7 +19,7 @@ var kFxParameterFlag_USE_FULL_VIEW_WIDTH: Int { get }
 kFxParameterFlag_USE_FULL_VIEW_WIDTH
 ```
 
-#### Discussion
+## Discussion
 
 This flag is only valid for parameters that also set [`kFxParameterFlag_CUSTOM_UI`](./kfxparameterflag_custom_ui.md). Of course, not all of the flags apply meaningfully to all of the parameter types. The only flags, for example, that apply to Group parameters are [`kFxParameterFlag_COLLAPSED`](./kfxparameterflag_collapsed.md), [`kFxParameterFlag_DONT_DISPLAY_IN_DASHBOARD`](./kfxparameterflag_dont_display_in_dashboard.md), `HIDDEN`, and `DISABLED`. You can’t give a group parameter a custom UI.
 

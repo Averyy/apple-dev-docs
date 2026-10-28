@@ -19,7 +19,7 @@ func selectedRow(inColumn column: Int) -> Int
 - (NSInteger) selectedRowInColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The row index of the selected cell in the specified column. Returns `-1` if there is no selection.
 

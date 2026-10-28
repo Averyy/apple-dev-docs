@@ -25,11 +25,11 @@ func isEqual(to other: NSHashTable<ObjectType>) -> Bool
 - (BOOL) isEqualToHashTable:(NSHashTable<id> *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the contents of `other` are equal to the contents of the receiving hash table, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two hash tables have equal contents if they each have the same number of members and if each member of one hash table is present in the other.
 

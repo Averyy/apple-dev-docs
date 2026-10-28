@@ -21,7 +21,7 @@ The range of indices that are valid for subscripting the array.
 var indices: Range<Int> { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

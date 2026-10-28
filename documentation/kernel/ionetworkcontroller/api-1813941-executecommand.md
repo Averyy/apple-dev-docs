@@ -18,11 +18,11 @@ virtual IOReturn executeCommand(
  void *param3 = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value returned by the action.
 
-#### Overview
+## Overview
 
 This method makes a call to a C function that will be synchronized with the workloop thread, and any other threads that are called with the workloop's gate closed.
 

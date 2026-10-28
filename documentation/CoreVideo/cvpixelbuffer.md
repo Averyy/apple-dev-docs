@@ -25,7 +25,7 @@ typealias CVPixelBuffer = CVImageBuffer
 typedef CVImageBufferRef CVPixelBufferRef;
 ```
 
-#### Discussion
+## Discussion
 
 The pixel buffer stores an image in main memory.
 

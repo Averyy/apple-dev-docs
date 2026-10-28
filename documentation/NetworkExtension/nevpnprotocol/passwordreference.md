@@ -24,7 +24,7 @@ var passwordReference: Data? { get set }
 @property (copy, nullable) NSData * passwordReference;
 ```
 
-#### Discussion
+## Discussion
 
 The keychain item must have the kSecClassGenericPassword class.
 

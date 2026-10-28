@@ -24,7 +24,7 @@ var url: URL? { get }
 @property (atomic, readonly, nullable) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 A URL is available only if the image object was created with a URL (such as with the [`init(contentsOf:)`](./init%28contentsof%29.md) method or related methods). Otherwise, this property’s value is `nil`.
 

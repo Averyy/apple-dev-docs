@@ -16,7 +16,7 @@ class XCTestSuiteRun
 @interface XCTestSuiteRun : XCTestRun
 ```
 
-#### Overview
+## Overview
 
 The test runner manages the creation and tracking of `XCTestSuiteRun` for an [`XCTestSuite`](./xctestsuite.md).
 

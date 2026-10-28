@@ -15,7 +15,7 @@ Set I/O attributes on a mountpoint based on device properties.
 int vfs_init_io_attributes(vnode_t devvp, mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, else an error code.
 

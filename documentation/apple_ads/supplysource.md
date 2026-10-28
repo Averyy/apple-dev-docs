@@ -44,7 +44,7 @@ string SupplySource
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use the following combination of campaign and ad group values for `supplySources`.
 
@@ -57,7 +57,7 @@ Use the following combination of campaign and ad group values for `supplySources
 
 For payload examples, see [`AdChannelType`](./adchanneltype.md), [`BillingEventType`](./billingeventtype.md), [`PricingModel`](./pricingmodel.md), and [`Campaign`](./campaign.md) object. For more information about campaigns and ad groups, see [`Create a Campaign`](./create-a-campaign.md) and [`Create an Ad Group`](./create-an-ad-group.md).
 
-##### Today tab compatibility
+### Today tab compatibility
 
 Campaigns with an `APPSTORE_TODAY_TAB` `SupplySource` reach users when they come to the App Store to discover apps. For an ad to display in the Today tab, your custom product page metadata — *app name* and *subtitle* — need to be localized in the `defaultLanguage` of all countries or regions where your ad is serving. For example, ads serving in the United States and Mexico require a product page with localized `en-US` and a product page with `es-MX` assets. See [`Get Supported Countries or Regions`](./get-supported-countries-or-regions.md).
 

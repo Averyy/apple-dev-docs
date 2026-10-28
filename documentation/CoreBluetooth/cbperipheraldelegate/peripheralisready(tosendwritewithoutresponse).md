@@ -25,7 +25,7 @@ optional func peripheralIsReady(toSendWriteWithoutResponse peripheral: CBPeriphe
 - (void) peripheralIsReadyToSendWriteWithoutResponse:(CBPeripheral *) peripheral;
 ```
 
-#### Discussion
+## Discussion
 
 The peripheral calls this delegate method after a failed call to [`writeValue(_:for:type:)`](../cbperipheral/writevalue%28_,for,type%29.md), once `peripheral` is ready to send characteristic value updates.
 

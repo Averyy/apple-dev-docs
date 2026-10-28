@@ -5,11 +5,11 @@
 
 Store streaming data in a streaming media track for QuickTime movies.
 
-#### Overview
+## Overview
 
 QuickTime movies store streaming data in a streaming media track. This media has a media type of `'strm'`.
 
-#### Streaming Media Sample Description
+## Streaming Media Sample Description
 
 The streaming media sample description contains information that defines how to interpret streaming media data. This sample description is based on the standard sample description header, as described in [`Sample table atom`](./sample_table_atom.md).
 

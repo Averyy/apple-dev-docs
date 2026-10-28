@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicRectangularStandardBody
 @interface CLKComplicationTemplateGraphicRectangularStandardBody : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family. [Figure 1](./clkcomplicationtemplategraphicrectangularstandardbody.md#3030705) shows the layout of the image and where the template might appear on the clock face.
 

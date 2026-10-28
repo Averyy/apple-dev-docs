@@ -25,7 +25,7 @@ typealias dispatch_io_t = DispatchIO
 typedef NSObject<OS_dispatch_io> * dispatch_io_t;
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch I/O channel represents a file descriptor and the asynchronous I/O policies applied to that file descriptor. A dispatch I/O channel is a standard type of dispatch object and may be retained, released, suspended, and resumed accordingly.
 

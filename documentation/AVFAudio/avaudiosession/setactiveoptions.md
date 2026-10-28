@@ -24,7 +24,7 @@ struct SetActiveOptions
 enum AVAudioSessionSetActiveOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use this option to request that the system notify an interrupted app that the interruption has ended and it may resume playback. This option is only valid on session deactivation.
 

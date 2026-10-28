@@ -5,7 +5,7 @@
 
 Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
 
-#### Overview
+## Overview
 
 tvOS 15 introduces an all-new playback experience that helps viewers stay in the moment by providing a more consistent, useful, and interactive user interface. The redesigned UI provides viewers with convenient access to relevant controls and information while always keeping the focus on the content.
 
@@ -15,7 +15,7 @@ It’s simple to provide this playback experience in your app by using [`AVPlaye
 
 > **Note**:  Existing apps that use [`AVPlayerViewController`](./avplayerviewcontroller.md) adopt the new styling and features of the redesigned player UI when they link against the tvOS 15 SDK.
 
-#### Display supporting metadata
+## Display supporting metadata
 
 The player user interface displays a title view above the transport bar when the current player item contains title and subtitle metadata. When playing live streaming content, the title view may also display a badge to indicate that content state to the viewer.
 
@@ -69,7 +69,7 @@ Only the title and subtitle values display in the title view. The player present
 
 > **Note**:  If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](./avplayerviewcontroller/transportbarincludestitleview.md) to `false`.
 
-#### Add custom transport bar items
+## Add custom transport bar items
 
 The redesigned transport bar displays controls along its trailing side, which provides viewers quick access to common actions. The system automatically displays controls to configure common playback settings, like selecting subtitles and enabling Picture in Picture, but apps can also add custom controls to the transport bar.
 
@@ -135,7 +135,7 @@ Setting the custom action and menu adds two new items to the transport bar.
 
 ![An image that shows a custom action to add a movie to or remove it from a user’s favorites list. It also shows a custom preferences menu that displays an action to enable looping playback and a list of options to control playback speed.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3820865@2x.png)
 
-#### Display content tabs
+## Display content tabs
 
 The tvOS player UI can display one or more content tabs below the transport bar to show supporting information or related content. By default, the player presents an Info tab when an asset contains embedded metadata or when you set external metadata on the player item, as the Display Supporting Metadata section above describes.
 
@@ -155,7 +155,7 @@ playerViewController.customInfoViewControllers = [
 
 For the player view controller to size your content appropriately, specify a [`preferredContentSize`](../UIKit/uiviewcontroller/preferredcontentsize.md) or define appropriate auto layout constraints. The system sizes all view controllers to the height of the tallest content tab, so size your custom view controllers consistently or verify that they lay out as you expect at their runtime height.
 
-#### Present actions in the Info tab
+## Present actions in the Info tab
 
 A player view controller presents an Info tab when playing an asset with embedded or external metadata. The tab’s view displays the metadata details, and it may show up to two [`UIAction`](../UIKit/uiaction.md) controls along its trailing edge, as shown below.
 
@@ -173,7 +173,7 @@ let watchLater = UIAction(title: "Watch Later", image: glasses) { action in
 playerViewController.infoViewActions.append(watchLater)
 ```
 
-#### Present actions contextually
+## Present actions contextually
 
 You can use the tvOS player UI to present controls contextually, which you display for a specific range of time in the content and then dismiss. A common use for this type of control is a Skip button that displays during the title sequence of a movie or TV show. Clicking the button allows viewers to bypass the introduction and quickly skip to the main content.
 

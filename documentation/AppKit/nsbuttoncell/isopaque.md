@@ -19,7 +19,7 @@ var isOpaque: Bool { get }
 @property (readonly, getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the button draws over every pixel in its frame. Note that a button cell is opaque only if it isn’t transparent and if it has a border. The default value of this property is [`true`](../../Swift/true.md).
 

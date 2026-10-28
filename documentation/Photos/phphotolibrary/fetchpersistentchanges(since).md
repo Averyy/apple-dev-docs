@@ -28,7 +28,7 @@ func fetchPersistentChanges(since token: PHPersistentChangeToken) throws -> PHPe
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 A fetch result that contains library change details; otherwise, an error that indicates why the fetch fails (for example, [`PHPhotosError.Code.persistentChangeTokenExpired`](../phphotoserror-swift.struct/code/persistentchangetokenexpired.md)).
 

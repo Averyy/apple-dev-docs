@@ -5,7 +5,7 @@
 
 Verify that your app activates its payment transaction observer by using breakpoints.
 
-#### Overview
+## Overview
 
 Review the transaction observer’s implementation of the [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) protocol. Verify that the [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) listens for transactions when:
 

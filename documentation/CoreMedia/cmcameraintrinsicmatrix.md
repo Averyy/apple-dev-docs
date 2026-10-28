@@ -21,7 +21,7 @@ A matrix that describes the camera’s intrinsic properties.
 struct CMCameraIntrinsicMatrix
 ```
 
-#### Overview
+## Overview
 
 This matrix has the following content
 

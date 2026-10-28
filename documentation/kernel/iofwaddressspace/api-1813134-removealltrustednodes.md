@@ -12,7 +12,7 @@ inline void removeAllTrustedNodes(
  void )
 ```
 
-#### Return Value
+## Return Value
 
 none
 

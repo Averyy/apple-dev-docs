@@ -25,7 +25,7 @@ class var mergeByPropertyObjectTrump: NSMergePolicy { get }
 @property (class, strong, readonly) NSMergePolicy * mergeByPropertyObjectTrumpMergePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 A policy that merges conflicts between the persistent store’s version of the object and the current in-memory version by individual property, with in-memory changes trumping external changes.
 

@@ -19,11 +19,11 @@ func AEStreamOptionalParam(_ ref: AEStreamRef!, _ key: AEKeyword) -> OSStatus
 OSStatus AEStreamOptionalParam(AEStreamRef ref, AEKeyword key);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Calls to this routine must be preceded by a call to either [`AEStreamCreateEvent(_:_:_:_:_:_:_:)`](./api-1446562-aestreamcreateevent.md) or [`AEStreamOpenEvent(_:)`](./api-1445366-aestreamopenevent.md). 
 

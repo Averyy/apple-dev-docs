@@ -25,7 +25,7 @@ enum ArgumentCategory
 enum OSLogMessageComponentArgumentCategory : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For example, `OSLogMessageComponent` can represent the number associated with a `%d` placeholder. This value can be undefined if the argument data cann’t be decoded, for example if it were redacted.
 

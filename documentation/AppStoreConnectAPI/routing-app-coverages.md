@@ -5,7 +5,7 @@
 
 Manage geographic coverage files for apps that use location to provide routing information.
 
-#### Overview
+## Overview
 
 Use `routingAppCoverages` to upload, replace, or delete a geographic coverage file for App Review. If your app uses location to provide routing information, you must supply a geographic coverage file before submitting your app to App Review. For more information see [Upload a geographic coverage file for a routing app (iOS, watchOS)](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/upload-a-geographic-coverage-file).
 

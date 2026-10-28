@@ -20,7 +20,7 @@ The event raised when an animation reaches the end of its duration.
 struct PlaybackCompleted
 ```
 
-#### Overview
+## Overview
 
 This event isn’t triggered if you call the [`stop()`](../animationplaybackcontroller/stop%28%29.md) method on a playback controller.
 

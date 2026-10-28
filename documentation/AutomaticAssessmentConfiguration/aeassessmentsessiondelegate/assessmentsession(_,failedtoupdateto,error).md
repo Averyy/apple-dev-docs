@@ -22,7 +22,7 @@ optional func assessmentSession(_ session: AEAssessmentSession, failedToUpdateTo
 - (void) assessmentSession:(AEAssessmentSession *) session failedToUpdateToConfiguration:(AEAssessmentConfiguration *) configuration error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 After you call a session’s [`update(to:)`](../aeassessmentsession/update%28to%29.md) method, the session calls this delegate method if the update fails. If the update succeeds, the session calls [`assessmentSessionDidUpdate(_:)`](./assessmentsessiondidupdate%28_%29.md) instead.
 

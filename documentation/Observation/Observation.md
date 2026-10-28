@@ -15,7 +15,7 @@ Make responsive apps that update the presentation when underlying data changes.
 - visionOS 1.0+
 - watchOS 10.0+
 
-#### Overview
+## Overview
 
 Observation provides a robust, type-safe, and performant implementation of the observer design pattern in Swift. This pattern allows an observable object to maintain a list of observers and notify them of specific or general state changes. This has the advantages of not directly coupling objects together and allowing implicit distribution of updates across potential multiple observers.
 

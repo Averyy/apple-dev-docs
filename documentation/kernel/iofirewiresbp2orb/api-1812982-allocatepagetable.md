@@ -12,7 +12,7 @@ virtual IOReturn allocatePageTable(
  UInt32entryCount );
 ```
 
-#### Overview
+## Overview
 
 Page table allocation is handle automatically by the ORB, except if the kFWSBP2CommandFixedSize flags is set. In this case we will fail to write a page table if we need more page table space than we have already. This method is exposed so these drivers can preallocate as much page table as they need. This is useful if your driver is part of the paging path and cannot allow allocations to occur.
 

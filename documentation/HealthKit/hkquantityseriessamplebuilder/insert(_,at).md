@@ -24,7 +24,7 @@ func insert(_ quantity: HKQuantity, at date: Date) throws
 - (BOOL) insertQuantity:(HKQuantity *) quantity date:(NSDate *) date error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls [`insert(_:for:)`](./insert%28_,for%29.md), passing a date interval with the provided start date, and a duration of `0`.
 

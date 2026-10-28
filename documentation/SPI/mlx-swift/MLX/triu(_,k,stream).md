@@ -21,7 +21,7 @@ func triu(_ array: MLXArray, k: Int = 0, stream: StreamOrDevice = .default) -> M
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [`tril(_:k:stream:)`](./tril%28_,k,stream%29.md)
 

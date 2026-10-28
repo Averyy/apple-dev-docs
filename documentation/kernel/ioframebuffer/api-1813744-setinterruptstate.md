@@ -13,11 +13,11 @@ virtual IOReturn setInterruptState(
  UInt32 state );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 Enable or disable a callback previously installed by registerForInterruptType().
 

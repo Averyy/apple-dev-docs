@@ -20,11 +20,11 @@ Scale the absorption data by a frequency-dependent scalar value between -1 and 1
 func scalingAbsorption(by frequencyDependentScalar: (Float) -> Float) -> Audio.Material
 ```
 
-#### Return Value
+## Return Value
 
 Audio material with absorption data scaled by the frequency-dependent scaling function.
 
-#### Discussion
+## Discussion
 
 - No adjustment is made to the coefficient when the scalar is 0.
 - The coefficient is set to 0 when the scalar is -1.

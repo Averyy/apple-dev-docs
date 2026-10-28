@@ -24,7 +24,7 @@ func startSession(atSourceTime startTime: CMTime)
 - (void) startSessionAtSourceTime:(CMTime) startTime;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method after you call [`startWriting()`](./startwriting%28%29.md), but before you append sample data to asset writer inputs.
 

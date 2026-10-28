@@ -14,7 +14,7 @@ A 2D Worley noise generator.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Worley Noise 2D (float)**:
 
@@ -49,12 +49,12 @@ A 2D Worley noise generator.
 | --- | --- |
 | `Out` | Vector2f |
 
-#### Parameter description
+## Parameter description
 
 - **`Texture Coordinates`**: The 2D coordinate at which the data is read for mapping a texture to a surface. The default uses the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
 - **`Jitter`**: The amount to *jitter* or shift the center of each cell experiences. The default value is `1.0`. A smaller value creates a more regular pattern, and `0` creates perfect squares.
 
-### Discussion
+## Discussion
 
 The `Worley Noise 2D` node procedurally generates nonuniform cellular regions. Creates a finite number of center points, and each region is a polygon that surrounds the points closest to each center point. Below is an example of a simple node graph that uses the `Worley Noise 2D` node to generate a black and white pattern procedurally:
 

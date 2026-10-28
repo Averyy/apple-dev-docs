@@ -21,11 +21,11 @@ Releases a Core Foundation object.
 extern void CFRelease(CFTypeRef cf);
 ```
 
-#### Discussion
+## Discussion
 
 If the retain count of `cf` becomes zero the memory allocated to the object is deallocated and the object is destroyed. If you create, copy, or explicitly retain (see the [`CFRetain`](./cfretain.md) function) a Core Foundation object, you are responsible for releasing it when you no longer need it (see [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i)).
 
-##### Special Considerations
+### Special Considerations
 
 If `cf` is `NULL`, this will cause a runtime error and your application will crash.
 

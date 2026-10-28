@@ -24,7 +24,7 @@ let AVURLAssetReferenceRestrictionsKey: String
 extern NSString * const AVURLAssetReferenceRestrictionsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../Foundation/nsnumber.md) that wraps an [`AVAssetReferenceRestrictions`](./avassetreferencerestrictions.md) enum value, or the logical combination of multiple enum values, that indicate the restrictions the asset uses when resolving references to external media data.
 

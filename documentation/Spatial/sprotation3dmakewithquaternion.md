@@ -19,11 +19,11 @@
 static SPRotation3D SPRotation3DMakeWithQuaternion(simd_quatd quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rotation from the specified quaternion.
 

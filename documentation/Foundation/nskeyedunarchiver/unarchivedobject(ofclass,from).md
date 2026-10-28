@@ -22,11 +22,11 @@ Decodes a previously-archived object graph, and returns the root object as the s
 static func unarchivedObject<DecodedObjectType>(ofClass cls: DecodedObjectType.Type, from data: Data) throws -> DecodedObjectType? where DecodedObjectType : NSObject, DecodedObjectType : NSCoding
 ```
 
-#### Return Value
+## Return Value
 
 The decoded root of the object graph, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method produces an error if `data` does not contain valid keyed data.
 

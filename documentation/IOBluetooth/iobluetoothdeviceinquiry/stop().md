@@ -19,7 +19,7 @@ func stop() -> IOReturn
 - (IOReturn) stop;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the inquiry is successfully stopped. Returns kIOReturnNotPermitted if the inquiry object is already stopped. May return other IOReturn values, as appropriate.
 

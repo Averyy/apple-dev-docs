@@ -21,7 +21,7 @@ An option to display the pointer bytes as a time value.
 case timeval
 ```
 
-#### Discussion
+## Discussion
 
 This option prints an easily readable `timeval` structure.
 

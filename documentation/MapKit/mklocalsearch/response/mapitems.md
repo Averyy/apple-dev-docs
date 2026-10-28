@@ -25,7 +25,7 @@ var mapItems: [MKMapItem] { get }
 @property (nonatomic, readonly) NSArray<MKMapItem *> * mapItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`MKMapItem`](../../mkmapitem.md) objects, each of which represents a returned search result. You can use these objects to retrieve information about the search result, such as the name of the point of interest, the address, the geographic location, and so on.
 

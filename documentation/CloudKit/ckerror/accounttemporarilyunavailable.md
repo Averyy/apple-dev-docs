@@ -21,7 +21,7 @@ An error that occurs when the user’s iCloud account is temporarily unavailable
 static var accountTemporarilyUnavailable: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error when the user’s iCloud account is available, but isn’t ready to support CloudKit operations. Don’t delete any cached data and don’t enqueue any additional CloudKit operations.
 

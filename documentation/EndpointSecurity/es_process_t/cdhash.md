@@ -20,7 +20,7 @@ var cdhash: es_cdhash_t
 es_cdhash_t cdhash;
 ```
 
-#### Discussion
+## Discussion
 
 The code directory hash identifies a specific version of a program. This allows the system to verify that the contents of a binary have not changed since being code-signed.
 

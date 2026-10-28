@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_ForceKeyFrame: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_ForceKeyFrame;
 ```
 
-#### Discussion
+## Discussion
 
 If this attachment is present and `kCFBooleanTrue` on a sample buffer with a video frame, that video frame will be forced to become a key frame.  If the sample buffer for which this is present and `kCFBooleanTrue` does not have a valid video frame, the next sample buffer processed that contains a valid video frame will be encoded as a key frame.
 

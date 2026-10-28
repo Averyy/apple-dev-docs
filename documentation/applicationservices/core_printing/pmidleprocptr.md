@@ -13,11 +13,11 @@ Defines a pointer to an idle function.
 typedef void (*PMIdleProcPtr) (void);
 ```
 
-#### Overview
+## Overview
 
 You would declare your idle function like this if you were to name it `MyPrintIdleCallback`:
 
-##### Discussion
+### Discussion
 
 If you install an idle function using the function `PMSessionSetIdleProc`, the printing system calls your idle function periodically during your print loop. Your idle function can display application status while printing, but it should not duplicate information displayed by the printing system or the printer driver. If you don’t install an idle function, you get the standard dialog for the current driver in Mac OS 8 and 9.
 
@@ -32,7 +32,7 @@ MyPrintIdleUPP = NewPMIdleUPP (&MyPrintIdleCallback);
 
 When your print job is completed, you should use the function `DisposePMIdleUPP` to dispose of the universal procedure pointer associated with your idle function. However, if you will use the same idle function in subsequent print jobs, you can reuse the same UPP, rather than dispose of it and later create a new UPP.
 
-##### Special Considerations
+### Special Considerations
 
 Your idle function is not called in macOS. It’s only called in Mac OS 8 and 9.
 

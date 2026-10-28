@@ -24,7 +24,7 @@ class UIBlurEffect
 @interface UIBlurEffect : UIVisualEffect
 ```
 
-#### Overview
+## Overview
 
 Views that you add to the [`contentView`](./uivisualeffectview/contentview.md) of a visual effect view aren’t affected by the blur effect.
 

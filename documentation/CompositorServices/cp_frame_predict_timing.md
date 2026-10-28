@@ -20,11 +20,11 @@ cp_frame_timing_tcp_frame_predict_timing(cp_frame_t frame);
 
 - [Drawing fully immersive content using Metal](./drawing-fully-immersive-content-using-metal.md)
 
-#### Return Value
+## Return Value
 
 The predicted timing information for the specified frame, or `nil` if the layer is in the [`LayerRenderer.State.paused`](./layerrenderer/state-swift.enum/paused.md) or [`LayerRenderer.State.invalidated`](./layerrenderer/state-swift.enum/invalidated.md) state.
 
-#### Discussion
+## Discussion
 
 The returned type contains the timing information for the specified frame. Use related functions to retrieve specific values. For example, use the [`cp_frame_timing_get_optimal_input_time`](./cp_frame_timing_get_optimal_input_time.md) function to determine when to start the submission phase of your frame update. This function updates the frame-specific timing information with the latest data from Compositor Services before it returns it.
 

@@ -19,7 +19,7 @@ Whether the current device supports resource storage within the WithMutableUnifo
 static var supportsMutableUniformsResources: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Ensure this is true before setting resources such as textures and buffers on `CustomMaterial.ResourceStorage`
 

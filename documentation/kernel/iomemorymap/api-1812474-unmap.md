@@ -11,11 +11,11 @@ Force the IOMemoryMap to unmap, without destroying the object.
 virtual IOReturn unmap();
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 IOMemoryMap instances will unmap themselves upon free, ie. when the last client with a reference calls release. This method forces the IOMemoryMap to destroy the mapping it represents, regardless of the number of clients. It is not generally used.
 

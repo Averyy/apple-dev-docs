@@ -25,11 +25,11 @@ static func reporter(for domain: String, stableMetadata stableMetadataType: Stab
 
 - [Getting started with StateReporting](../getting-started-with-statereporting.md)
 
-#### Return Value
+## Return Value
 
 The reporter instance for the specified domain.
 
-#### Discussion
+## Discussion
 
 This method is the only way to obtain a `StateReporter`. Calling it multiple times with the same domain string always returns the same object. Calling it with a domain string that was previously registered under different generic type arguments is a fatal error.
 

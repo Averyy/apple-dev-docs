@@ -20,7 +20,7 @@ The file URL of a generated profile file to provide code coverage.
 var codeCoverageDataFileURL: URL?
 ```
 
-#### Discussion
+## Discussion
 
 The `.profdata` file is suitable for processing using `llvm-cov`, if `enableCodeCoverage` was set in the test parameters.
 

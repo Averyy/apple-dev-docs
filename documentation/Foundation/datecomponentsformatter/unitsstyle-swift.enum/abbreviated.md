@@ -25,7 +25,7 @@ case abbreviated
 NSDateComponentsFormatterUnitsStyleAbbreviated
 ```
 
-#### Discussion
+## Discussion
 
 This style represents the shortest representation of units and quantities of time.
 

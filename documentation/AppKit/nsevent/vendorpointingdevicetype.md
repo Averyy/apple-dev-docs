@@ -19,7 +19,7 @@ var vendorPointingDeviceType: Int { get }
 @property (readonly) NSUInteger vendorPointingDeviceType;
 ```
 
-#### Discussion
+## Discussion
 
 See the vendor documentation for an interpretation of significant bits. This method is valid only for mouse events with subtype `NSTabletProximityEventSubtype` and for `NSTabletProximity` events.
 

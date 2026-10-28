@@ -21,7 +21,7 @@ Returns a new URL by appending multiple path components to the URL, with a hint 
 func appending<S>(components: S..., directoryHint: URL.DirectoryHint = .inferFromPath) -> URL where S : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A new URL that appends the specified components to the original URL.
 

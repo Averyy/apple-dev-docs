@@ -28,7 +28,7 @@ Asynchronously creates a cube texture resource from a 2D image of cube faces.
 @preconcurrency convenience init(cubeFromImage cgImage: CGImage, named resourceName: String? = nil, options: TextureResource.CreateOptions) throws
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit extracts the cube faces from the source 2D image using a convention based on its aspect ratio, which needs to be one of the following:
 

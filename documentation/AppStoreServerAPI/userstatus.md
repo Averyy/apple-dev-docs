@@ -23,7 +23,7 @@ int32 userStatus
 - `3`: The customer’s account is terminated.
 - `4`: The customer’s account has limited access.
 
-#### Discussion
+## Discussion
 
 This user status represents the standing of a customer account in your app.
 

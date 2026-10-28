@@ -21,7 +21,7 @@ Specifies the maximum number of times a tip displays before the system automatic
 struct MaxDisplayCount
 ```
 
-#### Overview
+## Overview
 
 Use this option to automatically invalidate a tip after it has appeared a specified number of times.
 

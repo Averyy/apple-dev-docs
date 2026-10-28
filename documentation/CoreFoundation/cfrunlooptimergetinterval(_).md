@@ -25,7 +25,7 @@ func CFRunLoopTimerGetInterval(_ timer: CFRunLoopTimer!) -> CFTimeInterval
 extern CFTimeInterval CFRunLoopTimerGetInterval(CFRunLoopTimerRef timer);
 ```
 
-#### Return Value
+## Return Value
 
 The firing interval of `timer`. Returns `0` if `timer` does not repeat.
 

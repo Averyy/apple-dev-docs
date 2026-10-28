@@ -13,11 +13,11 @@
 mbuf_traffic_class_t mbuf_get_traffic_class(mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The traffic class
 
-#### Discussion
+## Discussion
 
 Get the traffic class of an mbuf packet
 

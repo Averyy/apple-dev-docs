@@ -21,7 +21,7 @@ The LZMA compression algorithm, which is recommended for high-compression ratio.
 case lzma
 ```
 
-#### Discussion
+## Discussion
 
 The Compression library implements the LZMA encoder at level 6 only.  This is the default compression level for open source LZMA, and provides excellent compression.  The LZMA decoder supports decoding data compressed with any compression level.
 

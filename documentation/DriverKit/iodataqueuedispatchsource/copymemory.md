@@ -18,7 +18,7 @@ A private method that the dispatch source uses to copy memory.
 virtual kern_return_t CopyMemory(IOMemoryDescriptor **memory);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 

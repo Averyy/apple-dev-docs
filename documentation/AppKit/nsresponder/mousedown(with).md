@@ -23,7 +23,7 @@ func mouseDown(with event: NSEvent)
 
 - [Supporting Continuity Camera in Your Mac App](../supporting-continuity-camera-in-your-mac-app.md)
 
-#### Discussion
+## Discussion
 
 The default implementation simply passes this message to the next responder.
 

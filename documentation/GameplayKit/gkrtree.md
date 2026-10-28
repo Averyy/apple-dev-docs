@@ -24,7 +24,7 @@ class GKRTree<ElementType> where ElementType : NSObject
 @interface GKRTree : NSObject
 ```
 
-#### Overview
+## Overview
 
 An R-tree manages its structure to optimize for spatial searches—unlike a basic data structure such as an array or dictionary, an R-tree can find all elements occupying a specific position or region very quickly. Additionally, R-trees adapt their internal structure as you add and remove elements, increasing the amount of time required to perform those operations, but decreasing the time required to search for elements later.
 

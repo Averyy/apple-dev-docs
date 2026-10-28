@@ -24,7 +24,7 @@ A directive that specifies an accent color for a given documentation page.
 
 - [Customizing the Appearance of Your Documentation Pages](./customizing-the-appearance-of-your-documentation-pages.md)
 
-#### Overview
+## Overview
 
 Use the `PageColor` directive to provide a hint to the renderer as to how the page should be accented with color. The renderer may use this color, depending on the context, as a foundation for other colors used on the page. For example, Swift-DocC-Render uses this color as the primary background color of a page’s introduction section and adjusts other elements in the introduction section to account for the new background.
 

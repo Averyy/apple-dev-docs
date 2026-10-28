@@ -14,7 +14,7 @@
 kAEOpenDocuments = 'odoc'
 ```
 
-#### Discussion
+## Discussion
 
 Event that provides an application with a list of documents to open. Sent, for example, when a selects one or more documents for your application in the Finder and double-clicks them.
 

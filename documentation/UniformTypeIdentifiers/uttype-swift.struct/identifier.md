@@ -21,7 +21,7 @@ The string that represents the type.
 var identifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier uniquely identifies its type, represented by a reverse-DNS string, such as `public.jpeg` or `com.adobe.pdf`.
 

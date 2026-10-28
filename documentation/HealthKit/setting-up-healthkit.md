@@ -4,7 +4,7 @@
 
 Set up and configure your HealthKit store.
 
-#### Overview
+## Overview
 
 Before using HealthKit, you must perform the following steps:
 
@@ -15,7 +15,7 @@ Before using HealthKit, you must perform the following steps:
 
 The following sections describe the first three steps in detail. For more information on requesting authorization, see [Authorizing access to health data](./authorizing-access-to-health-data.md). For a practical example of how to set up and use HealthKit, see [Build a workout app for Apple Watch](./build-a-workout-app-for-apple-watch.md).
 
-##### Enable HealthKit
+### Enable HealthKit
 
 Before you can use HealthKit, you must enable the HealthKit capabilities for your app. In Xcode, select the project and add the HealthKit capability. Only select the Clinical Health Records checkbox if your app needs to access the user’s clinical records. App Review may reject apps that enable the Clinical Health Records capability if the app doesn’t actually use the health record data. For more information, see [Accessing Health Records](./accessing-health-records.md).
 
@@ -31,7 +31,7 @@ If HealthKit isn’t required for the correct operation of your app, delete the 
 
 For more information on required device capabilities, see the [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md).
 
-##### Ensure HealthKit’s availability
+### Ensure HealthKit’s availability
 
 Call the [`isHealthDataAvailable()`](./hkhealthstore/ishealthdataavailable%28%29.md) method to confirm that HealthKit is available on the user’s device.
 
@@ -43,7 +43,7 @@ if HKHealthStore.isHealthDataAvailable() {
 
 Call this method before calling any other HealthKit methods. If HealthKit isn’t available on the device (for example, on iPadOS 16 or earlier, or macOS), other HealthKit methods fail with an [`errorHealthDataUnavailable`](./hkerror/errorhealthdataunavailable.md) error. If HealthKit is restricted (for example, in an enterprise environment), the methods fail with an [`errorHealthDataRestricted`](./hkerror/errorhealthdatarestricted.md) error.
 
-##### Create the HealthKit store
+### Create the HealthKit store
 
 If HealthKit is both enabled and available, instantiate an [`HKHealthStore`](./hkhealthstore.md) object for your app as shown:
 

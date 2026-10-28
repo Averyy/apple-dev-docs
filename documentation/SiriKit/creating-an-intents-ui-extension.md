@@ -4,7 +4,7 @@
 
 Create an Intents UI app extension to customize the interfaces displayed by Siri and Maps.
 
-#### Overview
+## Overview
 
 For some intents, Siri and Maps display details of the response provided by your Intents app extension. When displaying this information, Siri and Maps place the data that you provided into a standard system interface. For example, the default ride-booking interface includes a map of the user’s location and information about the booked ride. You can customize this interface using an Intents UI app extension, which is a peer of the Intents app extension that you use to handle intents.
 

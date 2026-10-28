@@ -20,7 +20,7 @@ optional func renderer(_ renderer: any SCNSceneRenderer, didRemove node: SCNNode
 - (void) renderer:(id<SCNSceneRenderer>) renderer didRemoveNode:(SCNNode *) node forAnchor:(ARAnchor *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically remove anchors from a session. The view calls this method once for each removed anchor.
 

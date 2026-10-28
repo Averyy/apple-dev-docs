@@ -19,7 +19,7 @@ struct IODisplayScalerInformation {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used to define the limits for modes programmed as detailed timings by the OS. A data property with this structure under the key kIOFBScalerInfoKey in a framebuffer will allow the OS to program detailed timings that are scaled to a displays native resolution.
 

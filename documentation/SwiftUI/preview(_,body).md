@@ -18,11 +18,11 @@ Creates a preview of a SwiftUI view.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview(_ name: String? = nil, @ContentBuilder body: @escaping @MainActor () -> any View)
+@freestanding(declaration)
+macro Preview(_ name: String? = nil, @ContentBuilder body: @escaping @MainActor () -> any View)
 ```
 
-#### Overview
+## Overview
 
 Use this macro to display a SwiftUI preview in the canvas. You typically specify at least one preview macro for every [`View`](./view.md) that your app defines to help you develop, test, and debug the view:
 

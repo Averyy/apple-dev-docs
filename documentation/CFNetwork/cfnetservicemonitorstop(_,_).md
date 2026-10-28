@@ -26,13 +26,13 @@ func CFNetServiceMonitorStop(_ monitor: CFNetServiceMonitor, _ error: UnsafeMuta
 extern void CFNetServiceMonitorStop(CFNetServiceMonitorRef monitor, CFStreamError *error);
 ```
 
-#### Discussion
+## Discussion
 
 This function stops the specified monitor. Call [`CFNetServiceMonitorStart(_:_:_:)`](./cfnetservicemonitorstart%28_,_,_%29.md) if you want to start monitoring again.
 
 If you want to stop monitoring and no longer need to monitor record changes, call [`CFNetServiceMonitorInvalidate(_:)`](./cfnetservicemonitorinvalidate%28_%29.md) instead of this function.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

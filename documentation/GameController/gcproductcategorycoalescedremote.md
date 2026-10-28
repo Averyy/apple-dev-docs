@@ -24,7 +24,7 @@ let GCProductCategoryCoalescedRemote: String
 extern NSString * const GCProductCategoryCoalescedRemote;
 ```
 
-#### Discussion
+## Discussion
 
 Game Controller merges the physical Apple TV Remote with the virtual Apple TV Remote app into one [`GCDevice`](./gcdevice.md) object by default. To disable this behavior, or if you fully support the second-generation Siri Remote, set the [`GCSupportsMultipleMicroGamepads`](../BundleResources/information-property-list/gcsupportsmultiplemicrogamepads.md) key to `YES` in the information property list.
 

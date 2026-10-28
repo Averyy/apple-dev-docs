@@ -20,7 +20,7 @@ A representation of a geometry or a behavior that you apply to an entity.
 protocol Component
 ```
 
-#### Overview
+## Overview
 
 You assemble a particular combination of behavior and appearance for an entity by adding components to the [`components`](./entity/components.md) set of an [`Entity`](./entity.md) instance. Each component, represented by a type that conforms to the [`Component`](./component.md) protocol, defines a single aspect of the entity. For example, one might define a position in space, while another provides a visual appearance. You can add at most one component of a given type to an entity.
 

@@ -13,7 +13,7 @@
 IFNET_CSUM_UDPIPV6 = 0x00000040
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will calculate UDP IPv6 checksums.
 

@@ -5,23 +5,23 @@
 
 Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 
-#### Overview
+## Overview
 
 Use animation graphs to create custom animations in a visual, node-based, code-free workflow. Using the Animation Graph, you can create tags and conditions to control the flow between different animation states. For general Graph Editor navigation and features, see [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md).
 
 ![Screenshot of animation graph](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimationGraph@2x.png)
 
-#### Create an animation graph
+## Create an animation graph
 
 In the Project Browser, Control-click a folder and choose **New** > **Animation** > **Animation Graph**. Enter a name for the animation graph, then double-click it to open it in the Animation Graph Editor.
 
 In the Inspector, click **Skeleton Definition** to select the skeleton definition you want to use. For imported entities, Reality Composer Pro creates the skeleton definition when you import the entity — including all dependencies such as blend masks and inverse kinematic rigs. Then select a **Preview Entity** to control which entity appears in the preview window. Change this option to preview your animations for different entities that share the same skeleton definition. Note that this will populate automatically when you add the skeleton definition, and that you need to set a definition before changing the preview.
 
-#### Add Animation Graph inputs
+## Add Animation Graph inputs
 
 Inputs provide a variety of parameters that can control the animation that plays at runtime. For example, an Input parameter named Jump can trigger a jumping animation.
 
-#### Add an input
+## Add an input
 
 In the Inspector, under **Inputs**, click **[+]** to add an input. Choose an **Input Parameter** type:
 
@@ -37,7 +37,7 @@ Click the name field to update the parameter name if needed, then set the **Defa
 
 ![Screenshot of adding an input modal](https://developer.apple.com/tutorials/images/RealityComposerPro/AddInput@2x.png)
 
-#### Add and configure a State Machine node
+## Add and configure a State Machine node
 
 A State Machine node defines the states your animation can occupy and the conditions that trigger transitions between them.
 
@@ -56,29 +56,29 @@ To add a tag to the state, click **[+]** next to **Tags**, click the Tag field a
 
 > 💡 **Tip**: When editing a State Machine, click a State to view or change its associated tags and properties.
 
-#### Use animation graph tags
+## Use animation graph tags
 
 Attach tags to animation states using a State Machine node, then use those tags as conditions to trigger state transitions. For example, while an entity is in a state called `CarryingHeavyObject`, the state machine tags the current state with `HeavilyEncumbered`. When the `HeavilyEncumbered` tag is active, you can trigger a different animation state.
 
 Tags activate using the same options described in the State Machine section above: On Enter, On Exit, On Enter and Exit, and While Active.
 
-#### Add an animation graph tag
+## Add an animation graph tag
 
 In the Inspector panel, under **Tags**, click **[+]** to add a tag. Choose the **Type**: Internal, Play Audio, or Enable/Disable Entity. Click the name field to enter a name for the tag.
 
 ![Screenshot of the Inspector panel showing the Add Tag section with Internal, Play Audio, and Enable/Disable Entity tag type options](https://developer.apple.com/tutorials/images/RealityComposerPro/AddTag@2x.png)
 
-#### Edit or delete animation graph tags
+## Edit or delete animation graph tags
 
 To edit a tag, click it and then edit its properties in the Inspector. To delete a tag, click to select it and then click **[-]**.
 
-#### Connect conduits between states
+## Connect conduits between states
 
 A conduit is a transition state that lets you route multiple states through a shared condition, so you define the condition once rather than repeating it on each state-to-state transition. A conduit can also branch to multiple different destination states.
 
 Click the edge of a state and drag the arrow to another state.
 
-#### Add a condition to a conduit
+## Add a condition to a conduit
 
 Control-click anywhere in the empty space and choose **Add Conduit**, then drag an arrow from the edge of the conduit to a State.
 
@@ -92,7 +92,7 @@ In the Inspector, under **Conditions**, configure your condition. Click the oper
 
 > 💡 **Tip**: The editor displays different conditions in different colors — for example, trigger conditions appear as blue, while boolean conditions appear as green.
 
-#### Preview your animation
+## Preview your animation
 
 In the Animation Graph, at the top of the screen, click **Debug Graph** and then click **Play**.
 
@@ -100,13 +100,13 @@ Preview how your animations appear and watch the visual flow between nodes — i
 
 ![Screenshot activating the debug menu](https://developer.apple.com/tutorials/images/RealityComposerPro/DebugGraph@2x.png)
 
-#### Apply an animation graph to an entity
+## Apply an animation graph to an entity
 
 In the Scene Hierarchy, click an entity. In the Inspector, click **Add Component** and choose **Animation Graph**. Click the **Animation Graph** field and select the animation graph you want to apply from the pop-up menu.
 
 ![Screenshot of the animation graph component](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimGraphComponent@2x.png)
 
-#### Animation graph nodes
+## Animation graph nodes
 
 The Animation Graph Editor provides a range of nodes organized by category. Each node performs a specific operation on poses, skeletons, or animation data.
 

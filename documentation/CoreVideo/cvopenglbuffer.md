@@ -20,7 +20,7 @@ typealias CVOpenGLBuffer = CVImageBuffer
 typedef CVImageBufferRef CVOpenGLBufferRef;
 ```
 
-#### Discussion
+## Discussion
 
 The Core Video OpenGL buffer is a wrapper around the standard OpenGL pbuffer.
 

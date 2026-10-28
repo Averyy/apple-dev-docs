@@ -21,7 +21,7 @@ Converts a vector of double-precision floating-point values to unsigned 16-bit i
 extern void vDSP_vfixru16D(const double *__A, vDSP_Stride __IA, unsigned short *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vfixru16`](./vdsp_vfixru16.md), except for the type of vector `A`.
 

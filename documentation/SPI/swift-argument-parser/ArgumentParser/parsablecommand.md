@@ -22,7 +22,7 @@ protocol ParsableCommand : ParsableArguments
 - [Manual Parsing and Testing](./manualparsing.md)
 - [Providing Custom Validation](./validation.md)
 
-#### Overview
+## Overview
 
 `ParsableCommand` types are the basic building blocks for command-line tools built using `ArgumentParser`. To create a command, declare properties using the `@Argument`, `@Option`, and `@Flag` property wrappers, or include groups of options with `@OptionGroup`. Finally, implement your command’s functionality in the [`run()`](./parsablecommand/run%28%29.md) method.
 
@@ -64,7 +64,7 @@ struct Repeat: ParsableCommand {
 - [struct CommandConfiguration](./commandconfiguration.md)
   The configuration for a command.
 ### Generating Help Text
-- [static func helpMessage(for: any ParsableCommand.Type, includeHidden: Bool, columns: Int?) -> String](./parsablecommand/helpmessage%28for,includehidden,columns%29.md)
+- [static func helpMessage(for: ParsableCommand.Type, includeHidden: Bool, columns: Int?) -> String](./parsablecommand/helpmessage%28for,includehidden,columns%29.md)
   Returns the text of the help screen for the given subcommand of this command.
 ### Starting the Program
 - [static func main()](./parsablecommand/main%28%29.md)
@@ -72,12 +72,12 @@ struct Repeat: ParsableCommand {
 - [static func main([String]?)](./parsablecommand/main%28_%29.md)
   Executes this command, or one of its subcommands, with the given arguments.
 ### Manually Parsing Input
-- [static func parseAsRoot([String]?) throws -> any ParsableCommand](./parsablecommand/parseasroot%28_%29.md)
+- [static func parseAsRoot([String]?) throws -> ParsableCommand](./parsablecommand/parseasroot%28_%29.md)
   Parses an instance of this type, or one of its subcommands, from command-line arguments.
 ### Type Methods
-- [static func helpMessage(for: any ParsableCommand.Type, columns: Int?) -> String](./parsablecommand/helpmessage%28for,columns%29.md)
+- [static func helpMessage(for: ParsableCommand.Type, columns: Int?) -> String](./parsablecommand/helpmessage%28for,columns%29.md)
   Returns the text of the help screen for the given subcommand of this command.
-- [static func usageString(for: any ParsableCommand.Type, includeHidden: Bool) -> String](./parsablecommand/usagestring%28for,includehidden%29.md)
+- [static func usageString(for: ParsableCommand.Type, includeHidden: Bool) -> String](./parsablecommand/usagestring%28for,includehidden%29.md)
   Returns the usage text for the given subcommand of this command.
 
 ## Relationships
@@ -92,6 +92,8 @@ struct Repeat: ParsableCommand {
 ## See Also
 
 ### Essentials
+- [Using ArgumentParser Tools](./usingargumentparsertools.md)
+  Learn how to provide input to command-line tools built with `ArgumentParser`.
 - [Getting Started with ArgumentParser](./gettingstarted.md)
   Learn to set up and customize a simple command-line tool.
 - [protocol AsyncParsableCommand](./asyncparsablecommand.md)

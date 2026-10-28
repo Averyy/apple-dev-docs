@@ -12,7 +12,7 @@ virtual bool finalize (
  IOOptionBits options );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true.
 

@@ -5,7 +5,7 @@
 
 Perform computations on small vectors and matrices.
 
-#### Overview
+## Overview
 
 simd provides types and functions for small vector and matrix computations. The types include integer and floating-point vectors and matrices, and the functions provide basic arithmetic operations, element-wise mathematical operations, and geometric and linear algebra operations.
 

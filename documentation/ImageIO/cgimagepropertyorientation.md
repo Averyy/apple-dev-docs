@@ -26,7 +26,7 @@ enum CGImagePropertyOrientation
 enum CGImagePropertyOrientation : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Values of this type define the position of the pixel coordinate origin point (`0,0`) and the directions of the coordinate axes relative to the intended display orientation of the image. Orientation values are commonly found in image metadata, and specifying image orientation correctly can be important both for displaying the image and for certain image processing tasks such as face recognition.
 
@@ -34,7 +34,7 @@ For example, the pixel data for an image captured by an iOS device camera is enc
 
 ![To correct an image with right orientation for display, rotate it 90° clockwise.](https://developer.apple.com/tutorials/images/com.apple.imageio/media-2948298@2x.png)
 
-##### Compatibility with UIImageOrientation
+### Compatibility with UIImageOrientation
 
 The [`CGImagePropertyOrientation`](./cgimagepropertyorientation.md) type covers the same set of orientation names available in from the [`UIImage.Orientation`](../UIKit/uiimage/orientation.md) type, but the underlying numeric values of each type do not match. (For example, the “left mirrored” orientation has an underlying value of 5 in [`CGImagePropertyOrientation`](./cgimagepropertyorientation.md), but an underlying value of 7 in [`UIImage.Orientation`](../UIKit/uiimage/orientation.md).) If you have an orientation value in one type and need a semantically equivalent value in the other, use a function such as those below to produce the same-named value in the other type:
 
@@ -104,7 +104,7 @@ UIImageOrientation UIImageOrientationForCGImagePropertyOrientation(CGImageProper
 }
 ```
 
-##### Working with Raw TIFF/Exif Numeric Values
+### Working with Raw TIFF/Exif Numeric Values
 
 Some APIs describe image orientation with basic integer values, intended for interpretation according to the TIFF and Exif specifications. The [`CGImagePropertyOrientation`](./cgimagepropertyorientation.md) type simply defines symbolic names for those values, so you can convert to and from the raw numeric type with C type-cast syntax or the inherited [`init(rawValue:)`](../Swift/rawrepresentable/init%28rawvalue%29.md) initializer and [`rawValue`](../Swift/rawrepresentable/rawvalue-swift.property.md) property in Swift.
 

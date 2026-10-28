@@ -15,13 +15,13 @@ Search term metadata for brands report rows, extending the base reporting search
 object BrandsReportingSearchTerm
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsReportingSearchTerm` extends the base `ReportingSearchTerm` object with a `brands`-only `locationId` field. The base object provides the `searchTermText` and `searchTermSource`, along with `campaignId`, `adAccountId`, `adGroupId`, `adGroup`, `countryOrRegion`, and `deviceClass`, all inherited unchanged from [`ReportingSearchTerm`](./reportingsearchterm.md). The `keyword` field here is a `BrandsReportingKeyword` rather than the standard `ReportingKeyword`, capturing the `brands` keyword context that the search term matched against.
 
 Search term reports require the ORTZ timezone. The `brands` search term reports exclude the `supplyPlacement` and `locationId` dimensions from `groupBy`. Only `deviceClass` is available if dimensioned grouping is needed.
 
-##### Example
+### Example
 
 ```json
 {

@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 The `swift-java` command line tool offers multiple ways to interact with your Java interoperability enabled projects.
 
-#### Overview
+## Overview
 
 The `swift-java` command line tool offers multiple modes which you can use to prepare your Swift and Java code to interact with each other.
 
@@ -39,7 +39,7 @@ SUBCOMMANDS:
   See 'swift-java help <subcommand>' for detailed help.
 ```
 
-##### Expose Java classes to Swift: swift-java wrap-java
+### Expose Java classes to Swift: swift-java wrap-java
 
 `swift-java` uses Java’s runtime reflection facilities to translate the requested Java classes into their Swift projections. The output is a number of Swift source files, one per Java class. You can see its help with:
 
@@ -138,7 +138,7 @@ warning: Unable to translate 'java.util.jar.JarInputStream' method 'transferTo':
 
 Such warnings mean that some information won’t be statically available in Swift: the superclass won’t be known (so it is assumed to be `JavaObject`), or the affected constructors and methods won’t be translated. If you don’t need those APIs, the warnings can be safely ignored. The APIs can still be called dynamically via JNI.
 
-##### Scan a Jar file: swift-java configure –jar
+### Scan a Jar file: swift-java configure –jar
 
 `swift-java configure --jar` scans the given input Jar file for all public classes and writes a `swift-java.config` file mapping every Java class in the Jar to a Swift type. Use it to import an entire Java jar’s API surface, and then invoke `swift-java wrap-java` with the generated configuration file to produce the Swift wrappers.
 

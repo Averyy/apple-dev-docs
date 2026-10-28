@@ -25,7 +25,7 @@ func method_getTypeEncoding(_ m: Method) -> UnsafePointer<CChar>?
 extern const char *method_getTypeEncoding(Method m);
 ```
 
-#### Return Value
+## Return Value
 
 A C string. The string may be `NULL`.
 

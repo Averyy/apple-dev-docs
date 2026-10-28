@@ -22,7 +22,7 @@ nonisolated
 func storeProductsTask(for ids: some Collection<String> & Equatable & Sendable, priority: TaskPriority = .medium, action: @escaping (Product.CollectionTaskState) async -> ()) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Before a view modified with this method appears,  a task will start in the background to load the products from the App Store. While the view is presented, the task will call `action` whenever the products change or the task’s state changes.
 

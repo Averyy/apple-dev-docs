@@ -24,7 +24,7 @@ class MTLComputePipelineReflection
 @interface MTLComputePipelineReflection : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLComputePipelineReflection`](./mtlcomputepipelinereflection.md) object provides access to the arguments of the compute function used in an [`MTLComputePipelineState`](./mtlcomputepipelinestate.md) object. An [`MTLComputePipelineReflection`](./mtlcomputepipelinereflection.md) object can be created along with an [`MTLComputePipelineState`](./mtlcomputepipelinestate.md) object. Don’t create an [`MTLComputePipelineReflection`](./mtlcomputepipelinereflection.md) object directly. Instead, call either the [`makeComputePipelineState(function:options:reflection:)`](./mtldevice/makecomputepipelinestate%28function,options,reflection%29.md) or [`makeComputePipelineState(function:options:completionHandler:)`](./mtldevice/makecomputepipelinestate%28function,options,completionhandler%29.md) method of [`MTLDevice`](./mtldevice.md) to create both an [`MTLComputePipelineState`](./mtlcomputepipelinestate.md) object and an [`MTLComputePipelineReflection`](./mtlcomputepipelinereflection.md) object.
 

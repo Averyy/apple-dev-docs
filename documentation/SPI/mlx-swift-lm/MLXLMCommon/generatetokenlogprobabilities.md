@@ -17,7 +17,7 @@ Log-probability details for one generated token.
 struct GenerateTokenLogProbabilities
 ```
 
-#### Overview
+## Overview
 
 These values match Python MLX-LM’s `GenerationResponse.logprobs`: they normalize the post-processor logits before temperature or sampler filters are applied.
 

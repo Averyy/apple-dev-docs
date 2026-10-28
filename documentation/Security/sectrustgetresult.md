@@ -15,11 +15,11 @@ Retrieves details on the outcome of a call to the function `SecTrustEvaluate`.
 OSStatus SecTrustGetResult(SecTrustRef trustRef, SecTrustResultType *result, CFArrayRef*certChain, CSSM_TP_APPLE_EVIDENCE_INFO **statusChain);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 After calling the [`SecTrustEvaluate(_:_:)`](./sectrustevaluate%28_,_%29.md) function, you can call the [`SecTrustGetResult`](./sectrustgetresult.md) function or the [`SecTrustGetCssmResult`](./sectrustgetcssmresult.md) function to get detailed information about the results of the evaluation. Whereas the `SecTrustGetResult` function returns the information in a form that you can interpret without extensive knowledge of CSSM, the [`SecTrustGetCssmResult`](./sectrustgetcssmresult.md) function returns information in a form that can be passed directly to CSSM functions.
 
@@ -27,7 +27,7 @@ You can call the `SFCertificateTrustPanel` class in the [Security Interface](../
 
 It is safe to call this function concurrently on two or more threads as long as it is not used to get values from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the [`SecTrustSetVerifyDate(_:_:)`](./sectrustsetverifydate%28_,_%29.md) function for the same trust management object on another thread.
 
-##### Special Considerations
+### Special Considerations
 
 Use [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) for new development instead.
 

@@ -21,7 +21,7 @@ The position after this position in the underlying collection.
 let base: Base.Index
 ```
 
-#### Discussion
+## Discussion
 
 To find the position that corresponds with this index in the original, underlying collection, use that collection’s `index(before:)` method with the `base` property.
 

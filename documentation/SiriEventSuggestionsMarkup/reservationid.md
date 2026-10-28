@@ -19,7 +19,7 @@ string reservationId
 
 - [Checking Your Reservation Markup](./checking-your-reservation-markup.md)
 
-#### Discussion
+## Discussion
 
 Use a consistent, unique identifier for each reservation. If you also provide reservation information with [Siri Event Suggestions](../SiriKit/siri-event-suggestions.md) in your app, use a single, consistent value for that [`reservationNumber`](../Intents/inreservation/reservationnumber.md) and this `reservationId`.
 

@@ -9,13 +9,13 @@ See a list of available sections in your channel.
 **Availability**:
 - Apple News API 1.0+
 
-#### Discussion
+## Discussion
 
 A List All Sections request returns a list of all sections for a channel. A section is a grouping of articles on a particular topic; for example, Sports, Silicon Valley, or Politics.
 
 You create sections in News Publisher. Sections aren’t created via the API; they are set up separately in News Publisher. See [Add and manage sections](https://support.apple.com/guide/news-publisher/apdfc6a051aa) in News Publisher User Guide. Every channel has a default section, even if no other sections are defined. The default section URL is included in the [`Read Channel Information`](./get-channels-_channelid_.md) response.
 
-##### Example
+### Example
 
 **Request**:
 

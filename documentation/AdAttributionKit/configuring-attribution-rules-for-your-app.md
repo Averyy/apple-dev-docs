@@ -5,7 +5,7 @@
 
 Tune aspects of attribution flow, including the time available to register impressions and the minimum time your app is willing to accept conversions.
 
-#### Overview
+## Overview
 
 AdAttributionKit provides a mechanism to configure the attribution rules that you change in your app by adding and configuring keys in the information property list.
 
@@ -18,7 +18,7 @@ There are two main configuration sections:
 
 Inside each of these sections are additional keys that that tune the behavior of their respective controls and allow you defined what ad networks they pertain to, or if they’re global settings.
 
-#### Understand the AdAttributionKit configuration dictionary
+## Understand the AdAttributionKit configuration dictionary
 
 AdAttributionKit uses your app’s information property list to hold its configuration settings. To enable this configuration, add a new dictionary named `AdAttributionKitConfigurations` to the information property list.
 
@@ -37,7 +37,7 @@ To complete the configuration, add one or more of the following addition-control
 
 > **Note**: For clarity, these examples show XML renderings of the dictionaries and keys that control the AdAttributionKit attribution windows and cooldown periods. In practice, use Xcode’s’ information property list editor to create and edit these settings.
 
-#### Add an attribution windows dictionary
+## Add an attribution windows dictionary
 
 You can specify the time duration that impressions are valid in your app by using configurable attribution windows. By default, view impressions are valid for 1 day after someone has seen them, and click impressions are valid for 30 days. With configurable attribution windows, you can specify a duration from 1 to 7 days for view impressions, and 1 to 30 days for click impressions.
 
@@ -49,7 +49,7 @@ To create configurations for individual or global ad networks, `AdAttributionKit
 
 Your app can configure the attribution window globally, so that the framework applies it to all conversions, as well as on a per-ad network basis. This allows you to control the levels of granularity and define the attribution rules that make the most sense for your business. The system uses the following order of precedence for configurations: ad network > global > system default, where an ad network configuration always takes precedence over a global or system default configuration.
 
-#### Configure your app’s global attribution window
+## Configure your app’s global attribution window
 
 There are two types of global settings the attribution window settings support: *global settings* that apply to ad networks, and *per-ad network settings* that control specific parameters relating to conversions for the ad networks you specify.
 
@@ -76,7 +76,7 @@ To override the built-in, global attribution window settings, follow these steps
   </dict>
 ```
 
-#### Configure attribution windows per ad network
+## Configure attribution windows per ad network
 
 You can also overwrite attribution windows for your app on a per-ad network basis, giving you more granular control of your app’s attribution windows for each partner you work with. To configure an attribution window for an ad network, follow these steps:
 
@@ -132,7 +132,7 @@ The following code shows an XML rendering of an `AdAttributionKitConfigurations`
 
 > ❗ **Important**: You can only ignore an interaction type for ad network configurations. The system doesn’t recognize ignored interaction types in global configurations.
 
-#### Configure attribution cooldown
+## Configure attribution cooldown
 
 Configurable attribution cooldown allows your app to specify a duration after the last conversion in which the system won’t create any new conversions for your app. Consider the following scenario: someone installs your app from an ad, then within two hours taps another ad and re-engages back into your app. By default, the system creates a re-engagement conversion for the second tap, but your business model may consider the initial conversion as the more important signal. Configurable attribution cooldown allows you to specify a period in which the system ignores subsequent re-engagements.
 

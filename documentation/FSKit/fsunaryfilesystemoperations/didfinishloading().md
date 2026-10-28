@@ -19,7 +19,7 @@ optional func didFinishLoading()
 - (void) didFinishLoading;
 ```
 
-#### Discussion
+## Discussion
 
 The system performs this callback after the main run loop starts and before receiving the first message from the FSKit daemon.
 

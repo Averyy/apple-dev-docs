@@ -112982,8 +112982,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/foundation/date/formatstyle/3798884-datetime"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 28245
   }

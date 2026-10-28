@@ -19,7 +19,7 @@ let kSpeechPhonemeOptionsProperty: CFString
 const CFStringRef kSpeechPhonemeOptionsProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a pointer to an `CFNumber` object containing the flags (options) you would pass to [`soPhonemeOptions`](./sophonemeoptions.md). (See [Phoneme Generation Options](./speech_synthesis_manager/api-1552233-phoneme_generation_options.md) for a complete list of options.)
 

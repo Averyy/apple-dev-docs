@@ -24,7 +24,7 @@ class UITextRange
 @interface UITextRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 Classes that adopt the [`UITextInput`](./uitextinput.md) protocol must create custom [`UITextRange`](./uitextrange.md) objects for representing ranges within the text managed by the class. The starting and ending indexes of the range are represented by [`UITextPosition`](./uitextposition.md) objects. The text system uses both [`UITextRange`](./uitextrange.md) and [`UITextPosition`](./uitextposition.md) objects for communicating text-layout information. There are two reasons for using objects for text ranges rather than primitive types such as [`NSRange`](../Foundation/nsrange-c.struct.md):
 

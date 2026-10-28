@@ -23,7 +23,7 @@ func receive<Sending, Receiving, CoderType>() async throws -> ApplicationProtoco
 
 Available when `ApplicationProtocol` conforms to `NetworkProtocolOptions`.
 
-#### Discussion
+## Discussion
 
 The object will be decoded and returned. An error will be thrown if the object cannot be decoded.
 

@@ -19,7 +19,7 @@ var isDirectionInvertedFromDevice: Bool { get }
 @property (readonly, getter=isDirectionInvertedFromDevice) BOOL directionInvertedFromDevice;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`true`](../../Swift/true.md) if the direction is inverted; otherwise, [`false`](../../Swift/false.md).
 

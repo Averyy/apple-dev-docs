@@ -23,7 +23,7 @@ var hasAmbiguousLayout: Bool { get }
 @property (nonatomic, readonly) BOOL hasAmbiguousLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the view’s location is incompletely specified, [`false`](../../Swift/false.md) otherwise.
 

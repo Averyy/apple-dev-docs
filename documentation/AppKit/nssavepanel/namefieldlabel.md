@@ -19,7 +19,7 @@ var nameFieldLabel: String! { get set }
 @property (copy, null_resettable) NSString * nameFieldLabel;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is “Save As:”.
 

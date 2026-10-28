@@ -23,7 +23,7 @@ var progressViewStyle: UIProgressView.Style { get set }
 @property (nonatomic) UIProgressViewStyle progressViewStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a constant that specifies the style of the progress view. The default style is [`UIProgressView.Style.default`](./style/default.md). For more on these constants, see [`UIProgressView.Style`](./style.md).
 

@@ -21,7 +21,7 @@ Applies a top-k filter directly to an input.
 static func applyTopK(k: Int, input: BNNSNDArrayDescriptor, bestValues: BNNSNDArrayDescriptor, bestIndices: BNNSNDArrayDescriptor, axis: Int, batchSize: Int, filterParameters: BNNSFilterParameters? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The input data type and best values data type must be `float`, and the best indices data type must be `int32`.
 

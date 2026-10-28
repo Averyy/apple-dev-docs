@@ -24,11 +24,11 @@ func invokeMethod(_ method: String!, withArguments arguments: [Any]!) -> JSValue
 - (JSValue *) invokeMethod:(NSString *) method withArguments:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 The result of calling the value as a constructor, or `nil` if the value cannot be treated as a JavaScript constructor.
 
-#### Discussion
+## Discussion
 
 Calling this Objective-C method first uses the [`forProperty(_:)`](./forproperty%28_%29.md) method to look up the named field of the JavaScript value. Then, JavaScriptCore treats that field’s contents as a JavaScript function and sets the JavaScript `this` keyword to refer to this [`JSValue`](../jsvalue.md) instance.
 

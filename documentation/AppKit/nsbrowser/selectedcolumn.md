@@ -19,7 +19,7 @@ var selectedColumn: Int { get }
 @property (readonly) NSInteger selectedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `-1`, there is no column selected.
 

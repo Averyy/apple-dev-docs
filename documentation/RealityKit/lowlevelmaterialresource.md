@@ -18,7 +18,7 @@ A compiled material composed of three independently-replaceable shader functions
 final class LowLevelMaterialResource
 ```
 
-#### Overview
+## Overview
 
 A `LowLevelMaterialResource` combines a `GeometryModifier` shader function, a `SurfaceShader` function, and a `LightingFunction` (lighting evaluation). Each function can receive per-draw parameters through its own `LowLevelArgumentTable`, described by `LowLevelArgumentTable.Descriptor`.
 

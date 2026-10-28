@@ -28,7 +28,7 @@ var devices: [AVCaptureDevice] { get }
 
 - [Choosing a capture device](../../choosing-a-capture-device.md)
 
-#### Discussion
+## Discussion
 
 Querying this property provides an array devices currently available on the system. The system sorts the device list according to the order you specified when you created the discovery session. If you created the session with a position of [`AVCaptureDevice.Position.unspecified`](../position-swift.enum/unspecified.md), the system further sorts them by position in the [`AVCaptureDevice.Position`](../position-swift.enum.md) enumeration.
 

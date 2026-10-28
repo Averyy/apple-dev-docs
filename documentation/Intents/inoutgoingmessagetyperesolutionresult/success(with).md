@@ -24,11 +24,11 @@ class func success(with resolvedOutgoingMessageType: INOutgoingMessageType) -> S
 + (instancetype) successWithResolvedOutgoingMessageType:(INOutgoingMessageType) resolvedOutgoingMessageType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INOutgoingMessageTypeResolutionResult`](../inoutgoingmessagetyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can send a message in the format the intent specifies.
 

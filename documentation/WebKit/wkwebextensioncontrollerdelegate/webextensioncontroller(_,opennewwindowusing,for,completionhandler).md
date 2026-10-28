@@ -27,7 +27,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, ope
 - (void) webExtensionController:(WKWebExtensionController *) controller openNewWindowUsingConfiguration:(WKWebExtensionWindowConfiguration *) configuration forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(id<WKWebExtensionWindow>newWindow, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented by the app to handle requests to open new windows. The app can decide how to handle the process based on the provided configuration and existing windows. Once handled, the app should call the completion handler with the opened window or `nil` if the request was declined or failed. If not implemented, the extension will be unable to open new windows.
 

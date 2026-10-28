@@ -24,7 +24,7 @@ let kVTPixelTransferPropertyKey_ScalingMode: CFString
 extern CFStringRef const kVTPixelTransferPropertyKey_ScalingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the scaling mode, scaling may take into account:
 

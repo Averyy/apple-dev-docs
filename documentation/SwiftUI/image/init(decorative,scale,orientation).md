@@ -21,7 +21,7 @@ Creates an unlabeled, decorative image based on a Core Graphics image instance.
 init(decorative cgImage: CGImage, scale: CGFloat, orientation: Image.Orientation = .up)
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI ignores this image for accessibility purposes.
 

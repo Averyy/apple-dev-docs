@@ -9,7 +9,7 @@ Retrieve performance metrics for Apple Maps ads.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Brand ad reports return one row per ad. Each row contains a `metadata` object with ad identifiers (including `campaignId` and `adGroupId`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
@@ -17,7 +17,7 @@ For Apple Maps ads, the `metadata` object includes a nested `creative` object ([
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`BrandsReportingRequest`](./brandsreportingrequest.md).
 
@@ -48,13 +48,13 @@ The `EMPTY_METRICS` value isn’t supported for `business-brands` ads, `HOURLY` 
 | `HOURLY` granularity | Not available for ads. Use `DAILY` as the finest granularity. |
 | Timezone | Use `ORTZ` (reporting timezone) or `UTC`. |
 
-#### Payload Examples
+## Payload Examples
 
 **Brands, Daily by Placement**:
 
 Retrieve daily ad metrics for a specific ad group, grouped by supply placement.
 
-##### Request
+### Request
 
 Filters by `adGroupId` for an Apple Maps ad group, groups by `supplyPlacement`, and uses daily granularity over a 31-day window in the account’s reporting timezone.
 
@@ -85,7 +85,7 @@ POST /v1/reports/business-brands/ads/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -186,7 +186,7 @@ POST /v1/reports/business-brands/ads/query
 
 Retrieve daily ad metrics without dimensional grouping. The `granularMetrics` array returns one entry per day with aggregate figures across all locations and placements.
 
-##### Request
+### Request
 
 Filters by `campaignId` with no `groupBy` dimension, returning daily Apple Maps ad metrics aggregated across all locations and placements for a 7-day window.
 
@@ -214,7 +214,7 @@ POST /v1/reports/business-brands/ads/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

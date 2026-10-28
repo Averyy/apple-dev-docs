@@ -24,7 +24,7 @@ func VTDecompressionSessionDecodeFrame(_ session: VTDecompressionSession, sample
 extern OSStatus VTDecompressionSessionDecodeFrame(VTDecompressionSessionRef session, CMSampleBufferRef sampleBuffer, VTDecodeFrameFlags decodeFlags, void *sourceFrameRefCon, VTDecodeInfoFlags *infoFlagsOut);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` value that indicates the result of the operation.
 

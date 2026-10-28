@@ -19,7 +19,7 @@ class let willBecomeActiveNotification: NSNotification.Name
 extern NSNotificationName NSApplicationWillBecomeActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is `NSApp`. This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 

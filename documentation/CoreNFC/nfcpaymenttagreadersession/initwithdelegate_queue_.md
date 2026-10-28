@@ -17,11 +17,11 @@ Creates a new session instance for processing NFC payment tags.
 - (instancetype) initWithDelegate:(id<NFCTagReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NFCPaymentTagReaderSession`](../nfcpaymenttagreadersession.md) instance.
 
-#### Discussion
+## Discussion
 
 > **Note**: The superclass’ initializer [`initWithPollingOption:delegate:queue:`](../nfctagreadersession/initwithpollingoption_delegate_queue_.md) only accepts [`iso14443`](../nfctagreadersession/pollingoption/iso14443.md) and ignores all other options.
 

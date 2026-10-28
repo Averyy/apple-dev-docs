@@ -25,7 +25,7 @@ func nw_quic_get_initial_max_stream_data_bidirectional_local(_ options: nw_proto
 uint64_t nw_quic_get_initial_max_stream_data_bidirectional_local(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the `initial_max_stream_data_bidi_local` transport parameter.
 

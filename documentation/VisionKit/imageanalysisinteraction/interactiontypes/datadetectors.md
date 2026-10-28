@@ -18,7 +18,7 @@ An option that enables interaction with text of certain formats, such as URLs, e
 static let dataDetectors: ImageAnalysisInteraction.InteractionTypes
 ```
 
-#### Discussion
+## Discussion
 
 People interact with *data detectors*, or UI that highlights each instance of the recognized formats in text that’s on an image. The data detectors appear without a Live Text button, because people can’t interact with other text with this option.
 

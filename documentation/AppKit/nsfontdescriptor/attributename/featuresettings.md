@@ -19,7 +19,7 @@ static let featureSettings: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontFeatureSettingsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSArray`](../../../Foundation/nsarray.md) of [`NSDictionary`](../../../Foundation/nsdictionary.md) objects. Each dictionary contains [`typeIdentifier`](../featurekey/typeidentifier.md) and [`selectorIdentifier`](../featurekey/selectoridentifier.md).
 

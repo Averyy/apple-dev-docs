@@ -30,7 +30,7 @@ nonisolated
 func onTapGesture(count: Int = 1, coordinateSpace: some CoordinateSpaceProtocol = .local, perform action: @escaping (CGPoint) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform the specified `action` when the user clicks or taps on the modified view `count` times. The action closure receives the location of the interaction.
 

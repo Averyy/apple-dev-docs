@@ -20,11 +20,11 @@ A reverb that is simulated from a reverb mesh and materials.
 static func simulated(mesh: ReverbMeshResource, materials: [Audio.Material] = [.default]) -> Reverb
 ```
 
-#### Return Value
+## Return Value
 
 A reverb configured for runtime acoustic simulation.
 
-#### Discussion
+## Discussion
 
 Use this factory method to create a reverb that ray-traces acoustic geometry at runtime, simulating how sound reflects through the space defined by the mesh:
 

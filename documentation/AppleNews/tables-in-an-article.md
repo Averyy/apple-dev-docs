@@ -5,7 +5,7 @@
 
 Add a JSON or HTML data table, and understand  the options for changing the look of your table.
 
-#### Overview
+## Overview
 
 Apple News Format lets you add both JSON and HTML tables as components in your article.
 

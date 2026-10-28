@@ -5,7 +5,7 @@
 
 Control rendering of your app’s virtual content on top of a camera feed.
 
-#### Overview
+## Overview
 
 ARKit includes view classes for easily displaying AR experiences with SceneKit or SpriteKit. However, if instead you build your own rendering engine using [Metal](../Metal/Metal.md), ARKit also provides all the support necessary to display an AR experience with your custom view.
 
@@ -19,7 +19,7 @@ In any AR experience, the first step is to configure an [`ARSession`](./arsessio
 
 > **Note**:  This article covers code found in Xcode project templates. For complete example code, create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.
 
-##### Get Video Frames and Tracking Data from the Session
+### Get Video Frames and Tracking Data from the Session
 
 Create and maintain your own [`ARSession`](./arsession.md) instance, and run it with a session configuration appropriate for the kind of AR experience you want to support. The session captures video from the camera, tracks the device’s position and orientation in a modeled 3D space, and provides [`ARFrame`](./arframe.md) objects. Each such object contains both an individual video frame image and position tracking information from the moment that frame was captured.
 
@@ -48,7 +48,7 @@ Alternatively, if your app design favors a push pattern, implement the [`session
 
 Upon obtaining a frame, you’ll need to draw the camera image, and update and render any overlay content your AR experience includes.
 
-##### Draw the Camera Image
+### Draw the Camera Image
 
 Each [`ARFrame`](./arframe.md) object’s [`capturedImage`](./arframe/capturedimage.md) property contains a pixel buffer captured from the device camera. To draw this image as the backdrop for your custom view, you’ll need to create textures from the image content and submit GPU rendering commands that use those textures.
 
@@ -109,7 +109,7 @@ fragment float4 capturedImageFragmentShader(ImageColorInOut in [[stage_in]],
 
 > **Note**:  Use the `ARFrame/displayTransform(for:viewportSize:)` method to make sure the camera image covers the entire view. For example use of this method, as well as complete Metal pipeline setup code, see the full Xcode template. (Create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.)
 
-##### Track and Render Overlay Content
+### Track and Render Overlay Content
 
 AR experiences typically focus on rendering 3D overlay content so that the content appears to be part of the real world seen in the camera image. To achieve this illusion, use the [`ARAnchor`](./aranchor.md) class to model the position and orientation of your own 3D content relative to real-world space. Anchors provide transforms that you can reference during rendering.
 
@@ -161,7 +161,7 @@ func updateAnchors(frame: ARFrame) {
 
 > **Note**:  In a more complex AR experience, you can use hit testing or plane detection to find the positions of real-world surfaces. For details, see the [`planeDetection`](./arworldtrackingconfiguration/planedetection-swift.property.md) property and the [`hitTest(_:types:)`](./arframe/hittest%28_,types%29.md) method. In both cases, ARKit provides results as [`ARAnchor`](./aranchor.md) objects, so you still use anchor transforms to place visual content.
 
-##### Render with Realistic Lighting
+### Render with Realistic Lighting
 
 When you configure shaders for drawing 3D content in your scene, use the estimated lighting information in each [`ARFrame`](./arframe.md) object to produce more realistic shading. See the following code that an app’s custom renderer performs while updating its shared uniforms:
 

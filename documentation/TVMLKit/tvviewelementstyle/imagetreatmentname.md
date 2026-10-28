@@ -21,7 +21,7 @@ var imageTreatmentName: String? { get }
 @property (nonatomic, readonly, nullable) NSString * imageTreatmentName;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, Image Treatment Values.
 

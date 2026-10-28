@@ -13,7 +13,7 @@ Persist data in your app intuitively with the Swift native persistence framework
 - macOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample project is designed to help you understand how to adopt SwiftData in an existing Core Data app. The SampleTrips app fetches and displays all upcoming trips from the store, and allows people to create or remove trips, and to add, update, or remove information from the itinerary for each trip. There are three versions of this app:
 
@@ -21,14 +21,14 @@ This sample project is designed to help you understand how to adopt SwiftData in
 - A SwiftData version that shows the complete app conversion from Core Data to SwiftData.
 - A coexistence version, where the sample app uses Core Data, and adds a widget extension that uses SwiftData. This version covers a scenario where you might want to adopt SwiftData incrementally, or for certain portions of your app.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Open the sample code project in Xcode. Before building it, do the following:
 
 1. Set the developer team for all targets to your team so Xcode automatically manages the provisioning profile. For more information, see [Assign a project to a team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4).
 2. Replace the App Group container identifier — `group.com.example.apple-samplecode.SampleTrips` — with one specific to your team for the entire project. The identifier points to an App Group container that the app and widget use to share data. You can search for `group.com.example.apple-samplecode.SampleTrips` using the Find navigator in Xcode, and then change all of the occurrences. For more information, see [Configuring app groups](../Xcode/configuring-app-groups.md).
 
-##### Adopt SwiftData
+### Adopt SwiftData
 
 The SwiftData sample sets up the schema with Swift types that conform to the [`PersistentModel`](../SwiftData/persistentmodel.md) protocol, which captures information about the app’s types, including properties and relationships. Each model file corresponds to an individual entity, with identical entity names, properties, and relationships as its Core Data counterpart.
 
@@ -69,7 +69,7 @@ Setting up the `ModelContainer` also creates and sets a default [`ModelContext`]
 @Environment(\.modelContext) private var modelContext
 ```
 
-##### Create a persisted data object
+### Create a persisted data object
 
 This app creates a new instance of a trip and inserts it into the [`ModelContext`](../SwiftData/modelcontext.md) for persistence:
 
@@ -84,7 +84,7 @@ if newTripSegment == .personal {
 modelContext.insert(newTrip)
 ```
 
-##### Persist data
+### Persist data
 
 The app uses the SwiftData implicit save feature to persist data. This implicit save occurs on UI life cycle events and on a timer after the context changes. For more information about enabling autosave, see the [`autosaveEnabled`](../SwiftData/modelcontext/autosaveenabled.md) property.
 
@@ -94,7 +94,7 @@ The app calls [`delete(_:)`](../SwiftData/modelcontext/delete%28_%29.md) on the 
 modelContext.delete(trip)
 ```
 
-##### Fetch persisted data
+### Fetch persisted data
 
 This sample app fetches the complete list of upcoming trips by wrapping an array of trips in a [`Query`](../SwiftData/query.md) macro, which fetches `Trip` objects from the container.
 
@@ -114,7 +114,7 @@ descriptor.predicate = #Predicate { item in
 let filteredList = try? modelContext.fetch(descriptor)
 ```
 
-##### Extend the app with inheritance
+### Extend the app with inheritance
 
 The SwiftData-Inheritance version of the app extends the `Trip` class into two distinct kinds of Trips, `PersonalTrip` and `BusinessTrip`, building on the basic `Trip` model to include more specialized properties for different kinds of Trips.
 
@@ -131,11 +131,11 @@ init(name: String, destination: String, startDate: Date = .now, endDate: Date = 
 }
 ```
 
-##### Share a store between Core Data and SwiftData
+### Share a store between Core Data and SwiftData
 
 The coexistence version of the app has two persistence stacks: a Core Data persistence stack for the host app, and a SwiftData persistence stack for the widget extension. Both stacks write to the same store file.
 
-##### Avoid conflicts with namespaces
+### Avoid conflicts with namespaces
 
 The namespaces in the coexistence sample use the pre-existing [`NSManagedObject`](./nsmanagedobject.md)-based entity subclasses so that they don’t conflict with the SwiftData classes. Note that this refers to the class name, not the entity name.
 
@@ -149,7 +149,7 @@ The sample then refers to the entity as `CDTrip` when accessing it in the Core D
 let newTrip = CDTrip(context: viewContext)
 ```
 
-##### Share the same store file
+### Share the same store file
 
 This sample ensures that both the Core Data and SwiftData persistent stacks write to the same store file by setting the persistent store URL for the container description:
 
@@ -173,7 +173,7 @@ By default, SwiftData behaves in the following way when determining where it per
 
 In this sample, the main app and widget share the same store via an app group container, and the store is located in the default location in the app group container. To ensure SwiftData accesses the same store, the main app and widget both share the [`ModelContainer`](../SwiftData/modelcontainer.md).
 
-##### Detect relevant changes by consuming the SwiftData history
+### Detect relevant changes by consuming the SwiftData history
 
 In the SwiftData version, people can confirm the living accommodation for the current trip by tapping the Accommodation button in the widget. The widget then updates `LivingAccommodation.isConfirmed` in SwiftData, and the main app, when entering the foreground, detects the changes and annotates the trip with a blue dot to indicate that it has unread changes.
 

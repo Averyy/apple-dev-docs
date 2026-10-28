@@ -25,7 +25,7 @@ var indexes: [NSFetchIndexDescription] { get set }
 @property (copy) NSArray<NSFetchIndexDescription *> * indexes;
 ```
 
-#### Discussion
+## Discussion
 
 This value doesn’t form part of the entity’s version hash, and stores that don’t natively support indexing may ignore it.
 

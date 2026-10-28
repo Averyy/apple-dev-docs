@@ -19,11 +19,11 @@ class var extendedGenericGamma22Gray: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * extendedGenericGamma22GrayColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object.
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as Generic Gray 2.2, but component values below `0.0` and above `1.0` may be encoded in this color space. Negative values are encoded as the signed reflection of the original encoding function. `y(x) = sign(x)*f(abs(x))`
 

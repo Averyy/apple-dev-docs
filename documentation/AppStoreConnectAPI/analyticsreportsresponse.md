@@ -15,7 +15,7 @@ The response body for endpoints that list analytics reports for a report request
 object AnalyticsReportsResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read Reports for a Specific Request`](./get-v1-analyticsreportrequests-_id_-reports.md).
 

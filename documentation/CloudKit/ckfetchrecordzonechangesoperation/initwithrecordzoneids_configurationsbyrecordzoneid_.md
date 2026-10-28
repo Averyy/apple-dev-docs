@@ -21,7 +21,7 @@ Creates an operation for fetching record zone changes.
 - (instancetype) initWithRecordZoneIDs:(NSArray<CKRecordZoneID *> *) recordZoneIDs configurationsByRecordZoneID:(NSDictionary<CKRecordZoneID *,CKFetchRecordZoneChangesConfiguration *> *) configurationsByRecordZoneID;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit configures the operation for retrieving all of the record zones that you specify. If you want to reduce the amount of data that CloudKit returns, provide zone configurations for each record zone.
 

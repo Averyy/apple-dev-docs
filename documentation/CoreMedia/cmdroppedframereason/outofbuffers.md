@@ -21,7 +21,7 @@ The frame was dropped because the module providing frames is out of buffers.
 case outOfBuffers
 ```
 
-#### Discussion
+## Discussion
 
 When the module providing sample buffers has run out of source buffers. This condition is typically caused by the client holding onto buffers for too long and can be alleviated by returning buffers to the provider by releasing the buffers.
 

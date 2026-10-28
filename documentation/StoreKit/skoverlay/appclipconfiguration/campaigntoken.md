@@ -22,7 +22,7 @@ var campaignToken: String? { get set }
 @property (nonatomic, retain, nullable) NSString * campaignToken;
 ```
 
-#### Discussion
+## Discussion
 
 A campaign token is a 40-byte string that represents an ad campaign. By setting the `campaignToken`, you can measure the effectiveness of an Apple Services Performance Partners Program link or an App Store Connect Analytics campaign.
 

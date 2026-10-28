@@ -15,7 +15,7 @@ A video device.
 class IOUserVideoDevice;
 ```
 
-#### Overview
+## Overview
 
 The device has [`IOUserVideoStream`](./iouservideostream.md) objects.
 

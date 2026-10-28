@@ -19,11 +19,11 @@ func MDQueryGetCountOfResultsWithAttributeValue(_ query: MDQuery!, _ name: CFStr
 CFIndex MDQueryGetCountOfResultsWithAttributeValue(MDQueryRef query, CFStringRef name, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 The number of results containing that attribute and value.
 
-#### Discussion
+## Discussion
 
 This count may change over time if the query allows live-updates.
 

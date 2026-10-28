@@ -15,7 +15,7 @@ The linear PCM flags contain a 6-bit bitfield indicating that an integer format 
 LinearPCMFormatFlagsSampleFractionMask
 ```
 
-#### Discussion
+## Discussion
 
 This constant is the mask used to extract that bitfield from `mFormatFlags`:
 

@@ -5,7 +5,7 @@
 
 Identify the price increase status for auto-renewable subscriptions in your app and on your server.
 
-#### Overview
+## Overview
 
 If you increase the price of an auto-renewable subscription in App Store Connect, the [`priceIncreaseStatus`](./product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.property.md) in the [`renewalInfo`](./product/subscriptioninfo/status-swift.struct/renewalinfo.md) object indicates if the subscription is subject to the price increase. Auto-renewable subscriptions have two types of price increases: those that require customer consent, and those that don’t require customer consent.
 
@@ -25,7 +25,7 @@ For price increases that don’t require customer consent, look for the followin
 
 For more information about managing subscription prices in App Store Connect, see [Managing Prices](https://developer.apple.com/app-store/subscriptions/#managing-prices-for-existing-subscribers).
 
-##### Receive Notifications for Price Increase Status Events
+### Receive Notifications for Price Increase Status Events
 
 If you’ve enabled [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md), your server receives notifications for events related to auto-renewable subscription price increases.
 

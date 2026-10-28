@@ -21,7 +21,7 @@ Resets the position, orientation, and velocities of the simulated physics body.
 @preconcurrency func resetPhysicsTransform(recursive: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only for dynamic rigid bodies, with a [`mode`](../physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](../physicsbodymode/dynamic.md). This is the only kind of body that’s affected by physics simulations. For all others, modify the entity’s transform property directly.
 

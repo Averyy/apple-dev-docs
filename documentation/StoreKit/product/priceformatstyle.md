@@ -22,7 +22,7 @@ The format style for the numbers in the price of the product.
 var priceFormatStyle: Decimal.FormatStyle.Currency { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`priceFormatStyle`](./priceformatstyle.md) value is a localized number suitable for display. Use this value for localizing numbers derived from the [`price`](./price.md) property, such as to calculate the price of two products as `$(`price * 2`)`.
 

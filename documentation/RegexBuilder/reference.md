@@ -21,7 +21,7 @@ A reference to a captured portion of a regular expression.
 struct Reference<Capture>
 ```
 
-#### Overview
+## Overview
 
 You can use a `Reference` to access a regular expression, both during the matching process and after a capture has been successful.
 

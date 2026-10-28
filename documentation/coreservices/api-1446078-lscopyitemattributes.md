@@ -21,11 +21,11 @@ func LSCopyItemAttributes(_ inItem: UnsafePointer<FSRef>!, _ inRoles: LSRolesMas
 OSStatus LSCopyItemAttributes(const FSRef *inItem, LSRolesMask inRoles, CFArrayRef inAttributeNames, CFDictionaryRef *outValues);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 Thread-safe since OS X v10.4.
 

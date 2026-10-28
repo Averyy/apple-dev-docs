@@ -24,7 +24,7 @@ var supportedDecoderVersions: [CIRAWDecoderVersion] { get }
 @property (readonly) NSArray<NSString *> * supportedDecoderVersions;
 ```
 
-#### Discussion
+## Discussion
 
 This array is sorted in reverse chronological order. All entries represent a valid version identifier set to [`decoderVersion`](./decoderversion.md).
 

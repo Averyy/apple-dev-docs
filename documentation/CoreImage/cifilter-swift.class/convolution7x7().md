@@ -24,11 +24,11 @@ class func convolution7X7() -> any CIFilter & CIConvolution
 + (CIFilter<CIConvolution> *) convolution7X7Filter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the convolution 7 x 7 filter to an image. The effect uses a 7 x 7 area surrounding an input pixel, the pixel itself, and those within a distance of 3 pixels horizontally and vertically. The effect repeats this for every pixel within the image. The work area is then combined with the weight property vector to produce the processed image. This filter differs from the [`convolutionRGB7X7()`](./convolutionrgb7x7%28%29.md) filter, which only processes the RGB components.
 

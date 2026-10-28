@@ -23,7 +23,7 @@ A protocol describing a trait that you can add to a test suite.
 protocol SuiteTrait : Trait
 ```
 
-#### Overview
+## Overview
 
 The testing library defines a number of traits that you can add to test suites. You can also define your own traits by creating types that conform to this protocol, or to the [`TestTrait`](./testtrait.md) protocol.
 

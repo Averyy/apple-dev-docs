@@ -21,7 +21,7 @@ Releases a Core Video buffer.
 extern void CVBufferRelease(CVBufferRef buffer);
 ```
 
-#### Discussion
+## Discussion
 
 Like [`CFRelease`](../CoreFoundation/cfrelease.md), this function decrements the retain count of a Core Video buffer. However, unlike [`CFRelease`](../CoreFoundation/cfrelease.md), this function is `NULL` safe. If the retain count becomes zero, the system deallocates the object.
 

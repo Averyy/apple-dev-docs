@@ -23,7 +23,7 @@ var clearsContextBeforeDrawing: Bool { get set }
 @property (nonatomic) BOOL clearsContextBeforeDrawing;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the drawing buffer is automatically cleared to transparent black before the [`draw(_:)`](./draw%28_%29.md) method is called. This behavior ensures that there are no visual artifacts left over when the view’s contents are redrawn. If the view’s [`isOpaque`](./isopaque.md) property is also set to [`true`](../../Swift/true.md), the [`backgroundColor`](./backgroundcolor.md) property of the view must not be `nil` or drawing errors may occur. The default value of this property is [`true`](../../Swift/true.md).
 

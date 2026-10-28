@@ -18,7 +18,7 @@ The browser role.
 static var browser: ToolbarRole { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this role for content that can be navigated forwards and backwards. In iPadOS, this will leading align the navigation title and allow for toolbar items to occupy the center of the navigation bar.
 

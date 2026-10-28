@@ -19,7 +19,7 @@ A user interface element that represents a tip in UIKit applications.
 @objc @preconcurrency final class TipUIView
 ```
 
-#### Overview
+## Overview
 
 Use this view to create a tip you want to display and lay out as a [`UIView`](../UIKit/uiview.md). To configure the content and appearance of your view, use the [`init(_:arrowEdge:actionHandler:)`](./tipuiview/init%28_,arrowedge,actionhandler%29.md) function and provide a tip along with an optional arrow edge and optional action. Set the background color of your tip view using [`backgroundColor`](./tipuiview/backgroundcolor.md).
 

@@ -19,7 +19,7 @@ class func loadAllPlugIns()
 + (void) loadAllPlugIns;
 ```
 
-#### Discussion
+## Discussion
 
 This method scans the following directories:
 

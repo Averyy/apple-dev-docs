@@ -25,7 +25,7 @@ var zNear: Double { get set }
 @property (nonatomic) double zNear;
 ```
 
-#### Discussion
+## Discussion
 
 The near value determines the minimal distance between the camera and a visible surface. If a surface is closer to the camera than this  distance, the surface is clipped and does not appear. The near value must not be zero. The default near value is `1.0`.
 

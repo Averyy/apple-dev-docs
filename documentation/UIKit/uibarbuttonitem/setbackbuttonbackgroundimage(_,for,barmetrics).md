@@ -22,7 +22,7 @@ func setBackButtonBackgroundImage(_ backgroundImage: UIImage?, for state: UICont
 - (void) setBackButtonBackgroundImage:(UIImage *) backgroundImage forState:(UIControlState) state barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 This modifier applies only to navigation bar back buttons and is ignored by other buttons.
 

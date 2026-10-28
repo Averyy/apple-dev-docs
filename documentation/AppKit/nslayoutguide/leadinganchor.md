@@ -19,7 +19,7 @@ var leadingAnchor: NSLayoutXAxisAnchor { get }
 @property (strong, readonly) NSLayoutXAxisAnchor * leadingAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the layout guide’s leading edge. You can combine this anchor only with a subset of the [`NSLayoutXAxisAnchor`](../../UIKit/nslayoutxaxisanchor.md) anchors. You can combine a [`leadingAnchor`](./leadinganchor.md) with another `leadingAnchor`, a `trailingAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](../../UIKit/nslayoutanchor.md).
 

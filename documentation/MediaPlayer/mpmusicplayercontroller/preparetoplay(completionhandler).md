@@ -27,7 +27,7 @@ func prepareToPlay() async throws
 - (void) prepareToPlayWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to ensure that the system buffers the first item in the queue and it’s ready to play. The system executes the code in the completion handler after it buffers the first item in the queue.
 

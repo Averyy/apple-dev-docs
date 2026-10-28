@@ -21,7 +21,7 @@ A date style with some components abbreviated for space-constrained applications
 static let abbreviated: Date.FormatStyle.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 A shortened date style that presents an abbreviated month, day of month, and year components of a date. For example, `Oct 17, 2020`, for locale `en_US`.
 

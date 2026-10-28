@@ -22,7 +22,7 @@ protocol PKPaymentInformationRequestHandling
 @protocol PKPaymentInformationRequestHandling
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Before you can add a QR code purchase extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
 

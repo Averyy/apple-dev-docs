@@ -20,7 +20,7 @@ func removeParamDescriptor(withKeyword keyword: AEKeyword)
 - (void) removeParamDescriptorWithKeyword:(AEKeyword) keyword;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver must be an Apple event or Apple event record, both of which can contain parameters.
 

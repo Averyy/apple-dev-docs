@@ -21,11 +21,11 @@ Whether a given tag contains a value for a 64-bit floating point number.
 extern Boolean CMTagHasFloat64Value(CMTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the tag represents a floating point number.
 
-#### Discussion
+## Discussion
 
 Prefer using this method over directly comparing a tag’s data type to [`kCMTagDataType_Float64`](./cmtagdatatype/kcmtagdatatype_float64.md).
 

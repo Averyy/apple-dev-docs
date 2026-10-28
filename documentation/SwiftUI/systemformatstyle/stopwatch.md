@@ -21,7 +21,7 @@ A format style that displays elapsed time as a precision stopwatch counting up f
 struct Stopwatch
 ```
 
-#### Overview
+## Overview
 
 `Stopwatch` produces output in a time-pattern format that includes hundredths of a second by default, making it suitable for use cases such as athletic timing where sub-second precision matters.
 
@@ -31,7 +31,7 @@ Text(.currentDate, format: .stopwatch(startingAt: startDate))
 // Output: "00:05.23" (after 5.23 seconds)
 ```
 
-##### Output format progression
+### Output format progression
 
 The stopwatch automatically adds an hours field when the elapsed time reaches one hour:
 
@@ -42,7 +42,7 @@ The stopwatch automatically adds an hours field when the elapsed time reaches on
 | 1 hour or more | `01:00:00.00` |
 | Over 25 hours | `25:01:01.00` |
 
-##### Adjusting precision
+### Adjusting precision
 
 Control the displayed precision with the `maxPrecision` parameter:
 
@@ -60,7 +60,7 @@ Control the displayed precision with the `maxPrecision` parameter:
 // Output: "1 hour" or "23 minutes"
 ```
 
-##### Controlling field count
+### Controlling field count
 
 The `maxFieldCount` parameter limits how many fields appear:
 

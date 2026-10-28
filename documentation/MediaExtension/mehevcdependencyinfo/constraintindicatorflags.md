@@ -19,7 +19,7 @@ var constraintIndicatorFlags: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * constraintIndicatorFlags;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMHEVCTemporalLevelInfoKey_ConstraintIndicatorFlags`](../../CoreMedia/kcmhevctemporallevelinfokey_constraintindicatorflags.md) sample buffer attachment, and is `nil` if this information isn’t available.
 

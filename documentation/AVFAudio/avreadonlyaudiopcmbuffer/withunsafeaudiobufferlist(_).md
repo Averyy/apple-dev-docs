@@ -21,11 +21,11 @@ Provides scoped read-only access to the audio buffer list.
 func withUnsafeAudioBufferList<R>(_ body: (UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Although the `AudioBufferList` pointer is const, each `AudioBuffer` within the list exposes `mData` as `UnsafeMutableRawPointer`. You must not modify the buffer data through these pointers. Doing so results in undefined behavior and violates the read-only contract of this type.
 

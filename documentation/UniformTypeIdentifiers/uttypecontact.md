@@ -21,7 +21,7 @@ A base type that represents contact information.
 extern UTType * const UTTypeContact;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.contact`.
 

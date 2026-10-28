@@ -24,7 +24,7 @@ var triggerActivationState: HMEventTriggerActivationState { get }
 @property (nonatomic, assign, readonly) HMEventTriggerActivationState triggerActivationState;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies whether the trigger is currently active, or describes the problem.
 

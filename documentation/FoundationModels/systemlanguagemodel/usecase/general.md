@@ -23,7 +23,7 @@ static let general: SystemLanguageModel.UseCase
 
 - [Categorizing and organizing data with content tags](../../categorizing-and-organizing-data-with-content-tags.md)
 
-#### Discussion
+## Discussion
 
 This is the default use case for the base version of the model.
 

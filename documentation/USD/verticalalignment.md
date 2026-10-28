@@ -5,11 +5,11 @@
 
 An option that controls the text’s vertical placement within its bounding rectangle.
 
-#### Overview
+## Overview
 
 The runtime handles each option of this property differently depending on whether the text displays with line breaks. For more information, see [wrapMode](./wrapmode.md).
 
-##### Declaration
+### Declaration
 
 ```other
 token verticalAlignment = "center" (
@@ -17,7 +17,7 @@ token verticalAlignment = "center" (
 )
 ```
 
-##### Vertical Alignments for Single-Line Text
+### Vertical Alignments for Single-Line Text
 
 For a single line of text, the vertical alignment is relative to font features.
 
@@ -27,7 +27,7 @@ For a single line of text, the vertical alignment is relative to font features.
 - **`baseline`**: Aligns the line of text vertically with the baseline.
 - **`bottom`**: Aligns the line of text vertically with a descender.
 
-##### Vertical Alignments for Multiline Text
+### Vertical Alignments for Multiline Text
 
 For multiline text, each line of text bases its vertical alignment on the text’s bounding box.
 

@@ -22,7 +22,7 @@ A gesture containing two gestures that can happen at the same time with neither 
 nonisolated struct SimultaneousGesture<First, Second> where First : Gesture, Second : Gesture
 ```
 
-#### Overview
+## Overview
 
 A simultaneous gesture is a container-event handler that evaluates its two child gestures at the same time. Its value is a struct with two optional values, each representing the phases of one of the two gestures.
 

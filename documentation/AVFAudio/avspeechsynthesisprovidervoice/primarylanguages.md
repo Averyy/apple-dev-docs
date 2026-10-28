@@ -25,7 +25,7 @@ var primaryLanguages: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * primaryLanguages;
 ```
 
-#### Discussion
+## Discussion
 
 These languages are what a voice primarily supports. For example, if the primary language is `zh-CN —` with no additional [`supportedLanguages`](./supportedlanguages.md) — the system may switch voices to speak a phrase that contains other languages. Changing voices depends on user preferences and what accessibility feature is using the voice.
 

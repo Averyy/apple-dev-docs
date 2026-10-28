@@ -19,7 +19,7 @@ Array of available audio track options.
 var audioOptions: [AVPlaybackUserInterfaceMediaSelectionOption] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This includes all audio streams provided by the media source such as different languages, director’s commentary, and alternative audio mixes. Options are ordered by preference with the primary language or default audio track typically appearing first. May be empty for content without selectable audio options.
 

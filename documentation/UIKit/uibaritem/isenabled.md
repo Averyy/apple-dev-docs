@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md), the item is drawn partially dimmed to indicate it’s disabled. The default value is [`true`](../../Swift/true.md).
 

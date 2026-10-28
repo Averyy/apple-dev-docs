@@ -19,7 +19,7 @@ var kAXAutocorrectedTextAttribute: Unmanaged<CFString>
 CFStringRef kAXAutocorrectedTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

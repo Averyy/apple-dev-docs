@@ -21,7 +21,7 @@ case invalidRunnerUpPostback
 SKAdTestErrorCodeInvalidRunnerUpPostback
 ```
 
-#### Discussion
+## Discussion
 
 Check that all non-winning postback you create with [`init(version:adNetworkIdentifier:adCampaignIdentifier:appStoreItemIdentifier:sourceAppStoreItemIdentifier:conversionValue:fidelityType:isRedownload:didWin:postbackURL:)`](../../skadtestpostback/init%28version,adnetworkidentifier,adcampaignidentifier,appstoreitemidentifier,sourceappstoreitemidentifier,conversionvalue,fidelitytype,isredownload,didwin,postbackurl%29.md) in [`SKAdTestPostback`](../../skadtestpostback.md) specify version 3 ([`version3_0`](../../skadtestpostbackversion/version3_0.md)) or later. Non-winning postbacks are available starting in version 3. For more information about versions, see [SKAdNetwork release notes](../../../StoreKit/skadnetwork-release-notes.md).
 

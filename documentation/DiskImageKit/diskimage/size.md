@@ -15,7 +15,7 @@ The logical size of the disk image in bytes.
 var size: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`blockCount`](./blockcount.md) × [`blockSize`](./blocksize-swift.property.md).
 

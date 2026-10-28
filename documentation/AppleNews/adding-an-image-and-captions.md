@@ -5,7 +5,7 @@
 
 Create a photo that extends to both edges of the display, with captions that appear in the article layout and in full-screen view.
 
-#### Overview
+## Overview
 
 In [Adding a Divider](./adding-a-divider.md), you created a divider and used a `ComponentLayout` object to extend the divider to the right edge of the display. Here, you’ll do something similar—you’ll use a `ComponentLayout` object to position a photo against both edges of the display.
 
@@ -19,7 +19,7 @@ In [Adding a Divider](./adding-a-divider.md), you created a divider and used a `
 
 ![Screenshot of an Apple News article with a captioned photo on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624434@2x.png)
 
-##### Define Positions for the Photo and Caption
+### Define Positions for the Photo and Caption
 
 In [Positioning Text Components](./positioning-text-components.md), you created `ComponentLayout` objects and used them to adjust the positions of your text components. Here, you’ll do something similar, creating new `ComponentLayout` objects for photos and captions. To cause the photo to reach the far right and left edges of the display, you’ll use the `ignoreDocumentMargin` property with a value of `true`.
 
@@ -28,7 +28,7 @@ In [Positioning Text Components](./positioning-text-components.md), you created 
 
 Your code should look like the example code [fullBleedLayout and halfMarginBothLayout: Result](./adding-an-image-and-captions.md#fullBleedLayout-and-halfMarginBothLayout-Result).
 
-###### fullBleedLayout and halfMarginBothLayout: Copy This Code
+#### fullBleedLayout and halfMarginBothLayout: Copy This Code
 
 ```json
 ,
@@ -45,7 +45,7 @@ Your code should look like the example code [fullBleedLayout and halfMarginBothL
     }
 ```
 
-###### fullBleedLayout and halfMarginBothLayout: Result
+#### fullBleedLayout and halfMarginBothLayout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -70,7 +70,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Style for Caption Text
+### Define a Style for Caption Text
 
 In [Creating Your First Article](./creating-your-first-article.md), you created default text styles for component types. Here, you’ll do something similar—create a new default text style for `caption` components.
 
@@ -79,7 +79,7 @@ In [Creating Your First Article](./creating-your-first-article.md), you created 
 
 Your code should look like the example code [Caption Text Style: Result](./adding-an-image-and-captions.md#Caption-Text-Style-Result).
 
-###### Caption Text Style: Copy This Code
+#### Caption Text Style: Copy This Code
 
 ```json
 ,
@@ -93,7 +93,7 @@ Your code should look like the example code [Caption Text Style: Result](./addin
     }
 ```
 
-###### Caption Text Style: Result
+#### Caption Text Style: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -115,7 +115,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Add a Photo and Captions in Your Article
+### Add a Photo and Captions in Your Article
 
 A `photo` component in your JSON file represents a photo in your article. The `"caption"` property of the `photo` component represents some text that is seen when the image is in full screen, and a `caption` component represents some text that is visible in the article.
 
@@ -126,7 +126,7 @@ Your code should look like the example code [Photo and Captions: Result](./addin
 
 After you make this change in your `article.json` file, you can preview your working `article.json` file in News Preview to see the photo and captions.
 
-###### Photo and Captions: Copy This Code
+#### Photo and Captions: Copy This Code
 
 ```json
     {
@@ -150,7 +150,7 @@ After you make this change in your `article.json` file, you can preview your wor
     },
 ```
 
-###### Photo and Captions: Result
+#### Photo and Captions: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -184,7 +184,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Further Exploration
+### Further Exploration
 
 At any time, you can try changing property values in your `article.json` file and then use News Preview to see how these changes affect the look of your article.
 
@@ -197,11 +197,11 @@ For example, try changing the URL of your article’s `photo` component:
 
 The `photo` component now displays your image.
 
-##### Previous
+### Previous
 
 [Adding a Divider](./adding-a-divider.md)
 
-##### Next
+### Next
 
 [Adding a Pull Quote](./adding-a-pull-quote.md)
 

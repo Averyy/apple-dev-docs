@@ -22,7 +22,7 @@ var hostedViewMaximumAllowedSize: CGSize { get }
 @property (nonatomic, assign, readonly) CGSize hostedViewMaximumAllowedSize;
 ```
 
-#### Discussion
+## Discussion
 
 Apps can customize the Siri interface using an Intents UI extension. The extension vends a view controller whose view contains the custom content that you want Siri to display. The size of that view controller’s view must be no larger than the size value in this property.
 

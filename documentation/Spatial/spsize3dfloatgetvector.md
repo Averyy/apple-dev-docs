@@ -19,11 +19,11 @@
 static simd_float3 SPSize3DFloatGetVector(SPSize3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A vector that represents the size.
 
-#### Discussion
+## Discussion
 
 Returns the @p width, @p height, and @p depth components of the size expressed as a simd vector.
 

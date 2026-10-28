@@ -21,7 +21,7 @@ nonisolated
 struct AutomaticControlGroupStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./controlgroupstyle/automatic.md) to construct this style.
 

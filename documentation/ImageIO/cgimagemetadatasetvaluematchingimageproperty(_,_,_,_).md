@@ -25,11 +25,11 @@ func CGImageMetadataSetValueMatchingImageProperty(_ metadata: CGMutableImageMeta
 extern bool CGImageMetadataSetValueMatchingImageProperty(CGMutableImageMetadataRef metadata, CFStringRef dictionaryName, CFStringRef propertyName, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this function set the tag successfully, or `false` if a problem occurred.
 
-#### Discussion
+## Discussion
 
 Use this function to update the value of a property in the specified metadata collection. If you try to set the value of an EXIF or IPTC property, this function matches it to an appropriate XMP tag. For example, when you set the value of the [`kCGImagePropertyExifDateTimeOriginal`](./kcgimagepropertyexifdatetimeoriginal.md) property, this function sets the value of the `photoshop:DateTime` XMP tag.
 

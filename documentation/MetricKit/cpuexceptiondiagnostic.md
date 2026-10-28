@@ -19,7 +19,7 @@ A diagnostic for a fatal or nonfatal CPU exception.
 struct CPUExceptionDiagnostic
 ```
 
-#### Discussion
+## Discussion
 
 CPU exceptions occur when your app consumes an excessive amount of CPU time in a short period. The diagnostic includes a [`CallStackTree`](./callstacktree.md) to identify the responsible code path, along with `totalCPUTime` and `totalSampledTime` measurements.
 

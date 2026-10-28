@@ -22,7 +22,7 @@ class let touchBarGoForwardTemplateName: String
 extern NSImageName const NSImageNameTouchBarGoForwardTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for go forward](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793506@2x.png)
 

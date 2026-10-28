@@ -17,7 +17,7 @@ Mass of the body as a whole, in Kg.
 var mass: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The mass specified here is distributed equally among the particles forming the body for simulation purposes. A higher mass will resist acceleration changes from forces such as wind and external forces.
 

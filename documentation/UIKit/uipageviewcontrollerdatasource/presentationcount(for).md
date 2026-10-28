@@ -23,7 +23,7 @@ optional func presentationCount(for pageViewController: UIPageViewController) ->
 - (NSInteger) presentationCountForPageViewController:(UIPageViewController *) pageViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items to be reflected in the page indicator.
 

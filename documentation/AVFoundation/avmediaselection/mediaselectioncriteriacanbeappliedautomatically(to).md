@@ -25,11 +25,11 @@ func mediaSelectionCriteriaCanBeAppliedAutomatically(to mediaSelectionGroup: AVM
 - (BOOL) mediaSelectionCriteriaCanBeAppliedAutomaticallyToMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether the group is subject to automatic media selection.
 
-#### Discussion
+## Discussion
 
 The automatic application of media selection criteria is suspended in any group in which a specific selection has been made by calling [`select(_:in:)`](../avplayeritem/select%28_,in%29.md) on the current [`AVPlayerItem`](../avplayeritem.md).
 

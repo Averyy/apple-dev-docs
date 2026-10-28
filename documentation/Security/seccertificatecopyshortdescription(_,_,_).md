@@ -19,11 +19,11 @@ func SecCertificateCopyShortDescription(_ alloc: CFAllocator?, _ certificate: Se
 CFStringRefSecCertificateCopyShortDescription(CFAllocatorRef alloc, SecCertificateRef certificate, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A string object containing the short description, or `NULL` if an error occurred. In Objective-C, free this object with [`CFRelease`](../CoreFoundation/cfrelease.md) when you are done with it.
 
-#### Discussion
+## Discussion
 
 The format of this string is not guaranteed to be consistent across different operating systems or versions. Do not attempt to parse it programmatically.
 

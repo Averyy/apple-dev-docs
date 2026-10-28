@@ -19,7 +19,7 @@ Returns the text combine at the index position.
 func textCombine(at index: String.Index) -> (AVCaption.TextCombine, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the text combine color and range to which it applies.
 

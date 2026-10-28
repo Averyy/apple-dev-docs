@@ -24,11 +24,11 @@ init(contentViewController viewController: UIViewController)
 - (instancetype) initWithContentViewController:(UIViewController *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized popover controller object.
 
-#### Discussion
+## Discussion
 
 When initializing a popover controller, you must specify the view controller object whose content is to be displayed in the popover. You can change this view controller later by modifying the [`contentViewController`](./contentviewcontroller.md) property.
 

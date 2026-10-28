@@ -23,7 +23,7 @@ A unique identifier in this bug’s associated bug-tracking system, if available
 var id: String?
 ```
 
-#### Discussion
+## Discussion
 
 For more information on how the testing library interprets bug identifiers, see [Interpreting bug identifiers](../bugidentifiers.md).
 

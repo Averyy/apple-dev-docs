@@ -21,7 +21,7 @@ optional func widgetList(_ list: NCWidgetListViewController, didReorderRow row: 
 - (void) widgetList:(NCWidgetListViewController *) list didReorderRow:(NSUInteger) row toRow:(NSUInteger) newIndex;
 ```
 
-#### Discussion
+## Discussion
 
 List item reordering is not enabled unless the delegate implements this method and [`widgetList(_:shouldReorderRow:)`](./widgetlist%28_,shouldreorderrow%29.md). The item represented by `row` is moved to its new location in the list view controller’s [`contents`](../ncwidgetlistviewcontroller/contents.md) array before this method is called.
 

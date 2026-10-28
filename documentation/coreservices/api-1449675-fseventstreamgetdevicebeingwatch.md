@@ -18,11 +18,11 @@ func FSEventStreamGetDeviceBeingWatched(_ streamRef: ConstFSEventStreamRef) -> d
 dev_t FSEventStreamGetDeviceBeingWatched(ConstFSEventStreamRef streamRef);
 ```
 
-#### Return Value
+## Return Value
 
 The dev_t for a device-relative stream, otherwise 0.
 
-#### Discussion
+## Discussion
 
 Fetches the dev_t supplied when the stream was created via FSEventStreamCreateRelativeToDevice(), otherwise 0.
 

@@ -24,7 +24,7 @@ func VTFrameSiloCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRange: CMTi
 extern OSStatus VTFrameSiloCreate(CFAllocatorRef allocator, CFURLRef fileURL, CMTimeRange timeRange, CFDictionaryRef options, VTFrameSiloRef*frameSiloOut);
 ```
 
-#### Discussion
+## Discussion
 
 You can use the returned frame silo object to gather frames produced by multipass encoding.
 

@@ -23,7 +23,7 @@ var resumeOnDidBecomeActive: Bool { get set }
 @property (nonatomic) BOOL resumeOnDidBecomeActive;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If your application sets this to [`false`](../../Swift/false.md), it must explicitly set the [`isPaused`](./ispaused.md) property to [`false`](../../Swift/false.md) when the application becomes active.
 

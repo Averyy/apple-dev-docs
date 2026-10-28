@@ -25,7 +25,7 @@ optional func parser(_ parser: XMLParser, foundIgnorableWhitespace whitespaceStr
 - (void) parser:(NSXMLParser *) parser foundIgnorableWhitespace:(NSString *) whitespaceString;
 ```
 
-#### Discussion
+## Discussion
 
 All the whitespace characters of the element (including carriage returns, tabs, and new-line characters) may not be provided through an individual invocation of this method. The parser may send the delegate several [`parser(_:foundIgnorableWhitespace:)`](./parser%28_,foundignorablewhitespace%29.md) messages to report the whitespace characters of an element. You should append the characters in each invocation to the current accumulation of characters.
 

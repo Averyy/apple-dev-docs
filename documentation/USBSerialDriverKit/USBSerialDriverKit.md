@@ -9,7 +9,7 @@ Develop drivers for serial USB devices connected to your Mac.
 **Availability**:
 - DriverKit 19.0+
 
-#### Overview
+## Overview
 
 Use the USBSerialDriverKit framework to develop drivers that communicate with USB devices using serial protocols. This framework augments the behavior of the [SerialDriverKit](../SerialDriverKit/SerialDriverKit.md) framework by configuring the buffers and endpoints needed to transfer data to and from the device. You handle the initial configuration of your device, and the framework manages the transfer of data to and from that device.
 

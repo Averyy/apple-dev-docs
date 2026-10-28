@@ -19,7 +19,7 @@ Begins or continues an asynchronous image classifier training session.
 static func resume(_ session: MLTrainingSession<MLImageClassifier>) throws -> MLJob<MLImageClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the image classifier training session.
 

@@ -24,7 +24,7 @@ var radiusFormat: MTLAttributeFormat { get set }
 @property (nonatomic) MTLAttributeFormat radiusFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to  `MTLAttributeFormatFloat`. All keyframes share the same radius format.
 

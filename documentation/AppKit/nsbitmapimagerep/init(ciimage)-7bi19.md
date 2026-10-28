@@ -19,11 +19,11 @@ init(ciImage: CIImage)
 - (instancetype) initWithCIImage:(CIImage *) ciImage;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSBitmapImageRep`](../nsbitmapimagerep.md) object initialized from the contents of the Core Image ([`CIImage`](../../CoreImage/ciimage.md)) object.
 
-#### Discussion
+## Discussion
 
 The image in the `ciImage` parameter must be fully rendered before the receiver can be initialized. If you specify an object whose rendering was deferred (and thus does not have any pixels available now), this method forces the image to be rendered immediately. Rendering the image could result in a performance penalty if the image has a complex rendering chain or accelerated rendering hardware is not available. Rendering uses the current graphics context in the thread from which this method is called; to ensure consistent results across multiple threads, set the current context using the [`NSGraphicsContext`](../nsgraphicscontext.md) class before calling this method.
 

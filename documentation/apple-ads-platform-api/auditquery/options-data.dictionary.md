@@ -15,7 +15,7 @@ A flat key-value map of additional query controls.
 object AuditQuery.Options
 ```
 
-#### Discussion
+## Discussion
 
 The `options` field has three well-known keys (`needTotals`, `timeZone`, and `metadata`), each with a fixed set of accepted string values and a default. The API accepts any other key as a plain string (labeled `Any Key` on the reference page) and passes it through without affecting the query.
 

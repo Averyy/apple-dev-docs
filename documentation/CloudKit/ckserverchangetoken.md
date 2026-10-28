@@ -25,7 +25,7 @@ class CKServerChangeToken
 @interface CKServerChangeToken : NSObject
 ```
 
-#### Overview
+## Overview
 
 CloudKit uses server change tokens to record significant events in a database’s history, such as record creation, modification, and deletion. Using change tokens helps reduce the cost of a fetch operation — both the time to execute the fetch and the overall number of records it returns.
 

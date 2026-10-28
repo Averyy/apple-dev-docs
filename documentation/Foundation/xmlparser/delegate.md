@@ -25,7 +25,7 @@ unowned(unsafe) var delegate: (any XMLParserDelegate)? { get set }
 @property (assign, nullable) id<NSXMLParserDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 For methods to be implemented by the delegate, see [`XMLParserDelegate`](../xmlparserdelegate.md).
 

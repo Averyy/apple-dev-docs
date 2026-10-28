@@ -24,7 +24,7 @@ func images(for times: [CMTime]) -> sending AVAssetImageGenerator.Images
 
 - [Creating images from a video asset](../creating-images-from-a-video-asset.md)
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence of images.
 

@@ -12,11 +12,11 @@ virtual bool handleIsOpen(
  const IOService *forClient ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the specified client, or any client if none (0) is specified, presently has an open on this object.
 
-#### Overview
+## Overview
 
 This method is called by IOService::isOpen() with the arbitration lock held.
 

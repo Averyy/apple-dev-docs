@@ -19,7 +19,7 @@ Creates an item using the specified system item, primary action, and context men
 - (instancetype) initWithBarButtonSystemItem:(UIBarButtonSystemItem) systemItem primaryAction:(UIAction *) primaryAction menu:(UIMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

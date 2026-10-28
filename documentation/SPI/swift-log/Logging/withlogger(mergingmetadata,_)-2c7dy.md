@@ -25,11 +25,11 @@ Runs `operation` with a copy of [`current`](./logger/current.md) that has `metad
 func withLogger<Result, Failure>(mergingMetadata metadata: @autoclosure () -> Logger.Metadata, _ operation: (Logger) throws(Failure) -> Result) throws(Failure) -> Result where Failure : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `operation`.
 
-#### Discussion
+## Discussion
 
 Use this overload at request boundaries and any point where context should accumulate. Nested [`withLogger(mergingMetadata:_:)`](./withlogger%28mergingmetadata,_%29-2c7dy.md) scopes layer on top of each other.
 

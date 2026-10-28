@@ -18,15 +18,15 @@ Automatically generates `ReportableMetadata` conformance for a type.
 ## Declaration
 
 ```swift
-@attached
-(member, names: named(metadataDictionary)) @attached(extension, conformances: ReportableMetadata) macro ReportableMetadata()
+@attached(member, names: named(metadataDictionary))
+@attached(extension, conformances: ReportableMetadata) macro ReportableMetadata()
 ```
 
 ## Mentions
 
 - [Getting started with StateReporting](./getting-started-with-statereporting.md)
 
-#### Overview
+## Overview
 
 Apply `@ReportableMetadata` to a `struct` or `class` to enable generation of a `metadataDictionary` from its stored properties. Properties with supported types (`String`, `Int`, `Double`, `Date`, `Bool`) are included; properties with unsupported types are silently skipped. The macro generates a `metadataDictionary` that maps each included property name to the corresponding [`ReportableMetadataValue`](./reportablemetadatavalue.md) case.
 

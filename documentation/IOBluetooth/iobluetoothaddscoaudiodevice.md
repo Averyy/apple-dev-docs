@@ -15,11 +15,11 @@ Creates a persistent audio driver that will route audio data to/from the specifi
 extern IOReturn IOBluetoothAddSCOAudioDevice(IOBluetoothDeviceRef device, CFDictionaryRef configDict);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the audio driver was successfully created, error if hardware does not support SCO or device is not paired.
 
-#### Discussion
+## Discussion
 
 The Bluetooth device must be paired before it can be added. The Bluetooth hardware must also support SCO connections for devices to be added.
 

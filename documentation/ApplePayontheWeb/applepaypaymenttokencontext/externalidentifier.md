@@ -16,7 +16,7 @@ An external identifier for the merchant.
 required DOMString externalIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 An external identifier for the merchant that the developer provides. If you request a payment token for another merchant, always use the same external identifier for that merchant on your website.
 

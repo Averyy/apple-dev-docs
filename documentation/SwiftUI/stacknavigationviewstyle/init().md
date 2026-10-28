@@ -22,7 +22,7 @@ Creates a navigation view style represented by a view stack that only shows a si
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Use [`stack`](../navigationviewstyle/stack.md) to construct this style.
 

@@ -24,11 +24,11 @@ func reshape(_ tensor: MPSGraphTensor, shapeTensor: MPSGraphTensor, name: String
 - (MPSGraphTensor *) reshapeTensor:(MPSGraphTensor *) tensor withShapeTensor:(MPSGraphTensor *) shapeTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 This operation reshapes the input tensor to the target shape. The shape tensor must be compatible with the input tensor shape, specifically the volume of the input tensor has to match the volume defined by the shape tensor. The shape tensor is allowed to contain dynamic dimensions (-1) when the result type can be inferred unambiguously.
 

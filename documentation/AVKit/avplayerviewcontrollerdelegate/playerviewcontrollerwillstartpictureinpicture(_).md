@@ -27,7 +27,7 @@ optional func playerViewControllerWillStartPictureInPicture(_ playerViewControll
 
 - [Adopting Picture in Picture in a standard player](../adopting-picture-in-picture-in-a-standard-player.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to update your player user interface, such as hiding or disabling playback controls, prior to PiP starting.
 

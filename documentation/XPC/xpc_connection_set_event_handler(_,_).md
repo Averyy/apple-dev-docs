@@ -25,7 +25,7 @@ func xpc_connection_set_event_handler(_ connection: xpc_connection_t, _ handler:
 extern void xpc_connection_set_event_handler(xpc_connection_t connection, xpc_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 Setting the event handler is asynchronous and non-preemptive, and therefore this method will not interrupt the execution of an already-running event handler block. If the event handler is executing at the time of this call, it will finish, and then the connection’s event handler will be changed before the next invocation of the event handler. The XPC runtime guarantees this non-preemptiveness even for concurrent target queues.
 

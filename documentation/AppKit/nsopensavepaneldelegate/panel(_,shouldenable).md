@@ -20,11 +20,11 @@ optional func panel(_ sender: Any, shouldEnable url: URL) -> Bool
 - (BOOL) panel:(id) sender shouldEnableURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you want the panel to display the item at the specifed URL as enabled, or [`false`](../../Swift/false.md) to display it as disabled.
 
-#### Discussion
+## Discussion
 
 Save panels do not call this method; they always disable URLs. Implementations of this method should be fast to avoid stalling the user interface. Use [`panel(_:validate:)`](./panel%28_,validate%29.md) instead if processing will take a long time.
 

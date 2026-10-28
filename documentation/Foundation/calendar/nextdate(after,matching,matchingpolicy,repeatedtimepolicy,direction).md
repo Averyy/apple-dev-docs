@@ -21,11 +21,11 @@ Computes the next date which matches (or most closely matches) a given set of co
 func nextDate(after date: Date, matching components: DateComponents, matchingPolicy: Calendar.MatchingPolicy, repeatedTimePolicy: Calendar.RepeatedTimePolicy = .first, direction: Calendar.SearchDirection = .forward) -> Date?
 ```
 
-#### Return Value
+## Return Value
 
 A `Date` representing the result of the search, or `nil` if a result could not be found.
 
-#### Discussion
+## Discussion
 
 The general semantics follow those of the `enumerateDates` function. To compute a sequence of results, use the `enumerateDates` function, rather than looping and calling this method with the previous loop iteration’s result.
 

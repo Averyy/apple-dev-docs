@@ -21,7 +21,7 @@ var dataByGridCleanliness: ElectricityInsightRecord<Measure>.GridCleanliness?
 
 - [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 This property returns electricity usage data organized by how environmentally friendly the production of the energy is. The electricity usage data refers to either energy consumption or generation measurements, or amounts of time that an electrical device is operational and consuming energy. The type of the returned value depends on the insight record’s generic type parameter:
 

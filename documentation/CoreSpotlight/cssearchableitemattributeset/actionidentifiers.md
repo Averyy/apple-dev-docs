@@ -22,7 +22,7 @@ var actionIdentifiers: [String] { get set }
 @property (copy) NSArray<NSString *> * actionIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 The identifiers correspond to the [`CoreSpotlightActionIdentifier`](../../BundleResources/information-property-list/corespotlightactions/corespotlightactionidentifier.md) values you specify in the [`CoreSpotlightActions`](../../BundleResources/information-property-list/corespotlightactions.md) key of the app’s `Info.plist` file.
 

@@ -19,7 +19,7 @@ var storyboard: NSStoryboard? { get }
 @property (strong, readonly, nullable) NSStoryboard * storyboard;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the window controller was not loaded from a storyboard.
 

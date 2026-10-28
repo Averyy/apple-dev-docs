@@ -14,7 +14,7 @@ func simd_axis(_ q: simd_quath) -> simd_half3
 static simd_half3 simd_axis(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The normalized axis (a 3-element vector) around which the action of the quaternion `q` rotates.
 

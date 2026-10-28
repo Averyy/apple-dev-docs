@@ -19,7 +19,7 @@ func SKSummaryGetParagraphCount(_ summary: SKSummary!) -> CFIndex
 CFIndex SKSummaryGetParagraphCount(SKSummaryRef summary);
 ```
 
-#### Return Value
+## Return Value
 
 A CFIndex object containing the number of paragraphs in the summarization object.
 

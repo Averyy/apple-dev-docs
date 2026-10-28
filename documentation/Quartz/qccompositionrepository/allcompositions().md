@@ -21,7 +21,7 @@ func allCompositions() -> [Any]!
 - (NSArray *) allCompositions;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`QCComposition`](../qccomposition.md) objects.
 

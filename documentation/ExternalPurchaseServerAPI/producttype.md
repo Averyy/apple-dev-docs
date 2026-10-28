@@ -20,7 +20,7 @@ string productType
 - `ONE_TIME_BUY`
 - `SUBSCRIPTION`
 
-#### Discussion
+## Discussion
 
 Allowed values: `ONE_TIME_BUY`, `SUBSCRIPTION`
 

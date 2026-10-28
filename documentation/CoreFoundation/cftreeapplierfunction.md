@@ -25,7 +25,7 @@ typealias CFTreeApplierFunction = (UnsafeRawPointer?, UnsafeMutableRawPointer?) 
 typedef void (*)(const void *, void *) CFTreeApplierFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is used by the [`CFTreeApplyFunctionToChildren(_:_:_:)`](./cftreeapplyfunctiontochildren%28_,_,_%29.md) applier function.
 

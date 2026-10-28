@@ -12,7 +12,7 @@ UInt8 GetCommandDescriptorBlockSize (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns the size of the SCSI Command Descriptor Block in bytes.
 

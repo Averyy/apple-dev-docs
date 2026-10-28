@@ -24,7 +24,7 @@ var spin: Float { get set }
 @property float spin;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `1.0`.
 

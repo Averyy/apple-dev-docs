@@ -23,7 +23,7 @@ func segmentIndex(identifiedBy actionIdentifier: UIAction.Identifier) -> Int
 - (NSInteger) segmentIndexForActionIdentifier:(UIActionIdentifier) actionIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the segment with an action that has a matching identifier, or [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) if no matching action is found.
 

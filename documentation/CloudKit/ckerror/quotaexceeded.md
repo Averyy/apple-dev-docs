@@ -21,7 +21,7 @@ An error that occurs when saving a record exceeds the user’s storage quota.
 static var quotaExceeded: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 **In the public database**: Your app’s container doesn’t have enough storage. Individual users can’t do anything about this, but you can go to the CloudKit Dashboard to view and manage your container’s storage.
 

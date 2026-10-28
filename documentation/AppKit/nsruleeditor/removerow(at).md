@@ -19,7 +19,7 @@ func removeRow(at rowIndex: Int)
 - (void) removeRowAtIndex:(NSInteger) rowIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Any subrows of the deleted row are adopted by the parent of the deleted row, or are made root rows.
 

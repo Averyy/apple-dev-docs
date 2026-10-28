@@ -24,7 +24,7 @@ class CIDataMatrixCodeDescriptor
 @interface CIDataMatrixCodeDescriptor : CIBarcodeDescriptor
 ```
 
-#### Overview
+## Overview
 
 A Data Matrix code symbol is a 2D barcode format defined by the ISO/IEC 16022:2006(E) standard. It encodes data in square or rectangular symbol with solid lines on the left and bottom sides
 

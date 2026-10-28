@@ -27,7 +27,7 @@ func startUpdatingHeading()
 
 - [Getting heading and course information](../getting-heading-and-course-information.md)
 
-#### Discussion
+## Discussion
 
 This method returns immediately. Calling this method when the receiver is stopped causes it to obtain an initial heading and notify your delegate. After that, the receiver generates update events when the value in the [`headingFilter`](./headingfilter.md) property is exceeded.
 

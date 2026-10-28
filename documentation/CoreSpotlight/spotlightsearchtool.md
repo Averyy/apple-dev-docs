@@ -23,7 +23,7 @@ struct SpotlightSearchTool
 
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 The `SpotlightSearchTool` type implements the protocol that Foundation Models use to run custom tools when resolving prompts. If you implement intelligent features using the Foundation Models framework, you can use this tool to provide your app’s data to the model as additional contextual information. The model can use this additional data to answer questions specific to your app’s content. For example, a note-taking app that runs the prompt “Find my meeting notes from last Tuesday” can use this tool to make its notes available to the model.
 

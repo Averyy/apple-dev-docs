@@ -25,7 +25,7 @@ var length: Int { get }
 @property (readonly) NSUInteger length;
 ```
 
-#### Discussion
+## Discussion
 
 This number includes the individual characters of composed character sequences, so you cannot use this property to determine if a string will be visible when printed or how long it will appear.
 

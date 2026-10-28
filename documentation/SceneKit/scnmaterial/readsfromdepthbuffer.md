@@ -25,7 +25,7 @@ var readsFromDepthBuffer: Bool { get set }
 @property (nonatomic) BOOL readsFromDepthBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit’s rendering process uses a depth buffer to determine the ordering of rendered surfaces relative to the viewer. The default value of this property is [`true`](../../Swift/true.md), specifying that SceneKit compares the depth of each rendered pixel to the corresponding value in its depth buffer when rendering the material. If the pixel is at a greater depth than the corresponding point in the depth buffer, SceneKit does not render the pixel.
 

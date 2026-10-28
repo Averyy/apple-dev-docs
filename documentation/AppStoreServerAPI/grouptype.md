@@ -24,7 +24,7 @@ string groupType
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 Multiseat purchasing lets a customer buy your subscription in quantities greater than one. Each [`GroupEntry`](./groupentry.md) that the [`Get Customer Groups`](./get-customer-groups.md) endpoint returns includes a `groupType`, which identifies which form of multiseat purchase the customer’s access comes from:
 

@@ -23,7 +23,7 @@ var NSEC_PER_USEC: UInt64 { get }
 #define NSEC_PER_USEC
 ```
 
-#### Discussion
+## Discussion
 
 The number of nanoseconds in one microsecond.
 

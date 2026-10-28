@@ -17,7 +17,7 @@ case alignTop
 NSImageAlignTop
 ```
 
-#### Discussion
+## Discussion
 
 Position the image along the top edge of the cell.
 

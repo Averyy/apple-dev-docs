@@ -17,7 +17,7 @@ A localized display name for the category.
 let localizedDisplayName: String?
 ```
 
-#### Discussion
+## Discussion
 
 In an extension that provides shield configurations, this property provides the category’s name. When you access this property outside that extension, the value is `nil`. See `ShieldConfigurationDataSource` in the `ManagedSettingsUI` framework for more information.
 

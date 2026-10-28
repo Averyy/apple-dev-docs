@@ -15,11 +15,11 @@ The top-level response envelope for apps keyword-level reports.
 object AppsKeywordReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 Keyword reports support `groupBy` dimensions such as `countryOrRegion` and `deviceClass`, which adds those dimension values to each row’s metadata.
 
-##### Example
+### Example
 
 ```json
 {

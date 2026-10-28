@@ -19,7 +19,7 @@ An object that expresses an inclusive range of supported exposure bias values, i
 @interface AVExposureBiasRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`AVCaptureSystemExposureBiasSlider`](./avcapturesystemexposurebiasslider.md) defines its range using this type.
 

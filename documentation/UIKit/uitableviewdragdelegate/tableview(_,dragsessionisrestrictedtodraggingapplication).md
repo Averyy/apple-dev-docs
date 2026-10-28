@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, dragSessionIsRestrictedToDragg
 - (BOOL) tableView:(UITableView *) tableView dragSessionIsRestrictedToDraggingApplication:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the dragged content must be dropped in the same app that originated the drag, or [`false`](../../Swift/false.md) if the content may be dragged to other apps.
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to allow the user to drag content within your app, but prevent them from dragging that same content to other apps. If you don’t implement this method, the table view behaves as if the method returned [`false`](../../Swift/false.md).
 

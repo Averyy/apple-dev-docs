@@ -21,7 +21,7 @@ Calculates the double-precision element-wise product of a vector and the sum of 
 static func multiply<S, T, U, V>(addition: (a: S, b: T), _ vector: U, result: inout V) where S : AccelerateBuffer, T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, S.Element == Double, T.Element == Double, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sums of the first `N` elements of `A` and `B`, multiplies each sum by the corresponding value in `C`, and writes the result to `D`, as follows:
 

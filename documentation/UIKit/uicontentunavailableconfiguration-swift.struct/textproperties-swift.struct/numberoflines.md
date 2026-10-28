@@ -19,7 +19,7 @@ The maximum number of lines for the text.
 var numberOfLines: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0 indicates an unlimited number of lines.
 

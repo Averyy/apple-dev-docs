@@ -23,7 +23,7 @@ var daySummary: ENExposureSummaryItem { get }
 @property (nonatomic, strong, readonly) ENExposureSummaryItem * daySummary;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 

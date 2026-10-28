@@ -17,7 +17,7 @@ Register a cache type so [`loadPromptCacheSnapshot(url:)`](./loadpromptcachesnap
 func registerKVCacheType<T>(_ type: T.Type) throws where T : KVCache
 ```
 
-#### Discussion
+## Discussion
 
 [`savePromptCache(url:cache:metadata:state:)`](./savepromptcache%28url,cache,metadata,state%29.md) registers the types it writes, so a file saved and loaded in one process works without this call. Call it before loading in a new process. Registering the same type again has no effect.
 

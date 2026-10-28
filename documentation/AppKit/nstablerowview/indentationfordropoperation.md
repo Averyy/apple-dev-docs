@@ -19,7 +19,7 @@ var indentationForDropOperation: CGFloat { get set }
 @property CGFloat indentationForDropOperation;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `0`.
 

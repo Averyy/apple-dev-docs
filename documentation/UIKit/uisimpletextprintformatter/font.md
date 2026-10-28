@@ -22,7 +22,7 @@ var font: UIFont? { get set }
 @property (nonatomic, strong, nullable) UIFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil` (the default), UIKit uses the standard system font, 12 points.
 

@@ -21,7 +21,7 @@ Begins a new subpath at the specified point.
 func move(to point: CGPoint, transform: CGAffineTransform = .identity)
 ```
 
-#### Discussion
+## Discussion
 
 The specified point becomes the start point of a new subpath. The current point is set to this start point.
 

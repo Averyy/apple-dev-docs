@@ -14,7 +14,7 @@
 kIOHIDTransactionDirectionTypeOutput
 ```
 
-#### Discussion
+## Discussion
 
 Transaction direction used for dispatching element values to a device.
 

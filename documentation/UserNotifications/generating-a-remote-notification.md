@@ -5,7 +5,7 @@
 
 Send notifications to the user’s device with a JSON payload.
 
-#### Overview
+## Overview
 
 Remote notifications convey important information to the user in the form of a JSON payload. The payload specifies the types of user interactions (alert, sound, or badge) that you want performed, and includes any custom data your app needs to respond to the notification.
 
@@ -16,7 +16,7 @@ A basic remote notification payload includes Apple-defined keys and their custom
 - For Voice over Internet Protocol (VoIP) notifications, the maximum payload size is 5 KB (5120 bytes).
 - For all other remote notifications, the maximum payload size is 4 KB (4096 bytes).
 
-##### Create the JSON payload
+### Create the JSON payload
 
 Specify the payload for a remote notification using a JSON dictionary. Inside this dictionary, include an `aps` key whose value is a dictionary containing one or more additional Apple-defined keys, listed in Table 1. You can include keys instructing the system to display an alert, play a sound, or badge your app’s icon. You can also instruct the system to handle the notification silently in the background. For more information, see [Pushing background updates to your App](./pushing-background-updates-to-your-app.md).
 
@@ -60,7 +60,7 @@ For more information about creating sounds for your notifications, see [`UNNotif
 
 > ❗ **Important**:  Don’t include customer information or any sensitive data, like a credit card number, in a notification’s payload. If you must include customer information or sensitive data, encrypt it before adding it to the payload. You can use a notification service app extension to decrypt the data on the user’s device. For more information, see [Modifying content in newly delivered notifications](./modifying-content-in-newly-delivered-notifications.md).
 
-##### Localize your alert messages
+### Localize your alert messages
 
 There are two ways to localize the content of remote notifications:
 
@@ -86,7 +86,7 @@ Listing 3. A remote notification payload with localized content
 
 For more information about the keys you use for localized content, see Table 2.
 
-##### Payload key reference
+### Payload key reference
 
 Table 1 lists the keys that you may include in the `aps` dictionary. To interact with the user, include the `alert`, `badge`, or `sound` keys. Don’t add your own custom keys to the `aps` dictionary; APNs ignores custom keys. Instead, add your custom keys as peers of the `aps` dictionary, as shown in Listing 1.
 

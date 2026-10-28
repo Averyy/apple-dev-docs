@@ -19,7 +19,7 @@ func setHeader(_ headerText: String!)
 - (void) setHeader:(NSString *) headerText;
 ```
 
-#### Discussion
+## Discussion
 
 The description text should be localized for best user experience.
 

@@ -16,7 +16,7 @@ A structure that represents a state of immersion of your app.
 struct ImmersionChangeContext
 ```
 
-#### Overview
+## Overview
 
 You don’t use this structure directly. Instead, SwiftUI provides instances of this structure via the `onImmersionChange` modifier’s closure.
 

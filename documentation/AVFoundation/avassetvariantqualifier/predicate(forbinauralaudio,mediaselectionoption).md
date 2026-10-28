@@ -25,11 +25,11 @@ class func predicate(forBinauralAudio isBinauralAudio: Bool, mediaSelectionOptio
 + (NSPredicate *) predicateForBinauralAudio:(BOOL) isBinauralAudio mediaSelectionOption:(AVMediaSelectionOption *) mediaSelectionOption;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that you use to to create an [`AVAssetVariantQualifier`](../avassetvariantqualifier.md).
 
-#### Discussion
+## Discussion
 
 Use the returned value, along with other predicates, to express variant preferences.
 

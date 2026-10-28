@@ -19,7 +19,7 @@ class VZVirtioSocketConnection
 @interface VZVirtioSocketConnection : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`VZVirtioSocketConnection`](./vzvirtiosocketconnection.md) object contains the port information for the guest operating system and host computer. You don’t create connection objects directly. When the guest operating system initiates a connection, the virtual machine creates the connection object and passes it to the appropriate [`VZVirtioSocketListener`](./vzvirtiosocketlistener.md) object, which forwards the object to its delegate. When the virtual machine opens a connection to a guest port, the [`connect(toPort:)`](./vzvirtiosocketdevice/connect%28toport%29.md) method (Objective-C) or [`connect(toPort:completionHandler:)`](./vzvirtiosocketdevice/connect%28toport,completionhandler%29.md) method (Swift) pass the connection object to your completion handler.
 

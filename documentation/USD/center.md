@@ -5,13 +5,13 @@
 
 A prim around which the affected objects orbit.
 
-#### Overview
+## Overview
 
 Assign this property a prim not contained by [affectedObjects](./affectedobjects.md).
 
 To reside at an arbitrary location in its parent’s coordinate space, a prim needs the translation component of a transform. Therefore, assign this property an [Xformable](https://openusd.org/docs/api/class_usd_geom_xformable.html) prim.
 
-##### Declaration
+### Declaration
 
 ```other
 rel center

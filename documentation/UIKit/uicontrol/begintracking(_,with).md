@@ -23,11 +23,11 @@ func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool
 - (BOOL) beginTrackingWithTouch:(UITouch *) touch withEvent:(UIEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the control should continue tracking touch events or [`false`](../../Swift/false.md) if it should stop. This value is used to update the [`isTracking`](./istracking.md) property of the control.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method always returns [`true`](../../Swift/true.md). Subclasses can override this method and use it to respond to events. Use the provided event information to detect which part of your control was hit and to set up any initial state information. If you want to continue tracking the touch event, return [`true`](../../Swift/true.md). If you want to stop tracking the touch event, return [`false`](../../Swift/false.md).
 

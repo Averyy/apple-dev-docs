@@ -13,7 +13,7 @@ Configure and run a PIR server to support a URL filter using Apple’s open sour
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 As described in [Filtering traffic by URL](./filtering-traffic-by-url.md), a Network Extension URL filter uses a Private Information Retrieval (PIR) server as part of a complete URL filtering system. The on-device URL filter evaluates a URL request against a local Bloom prefilter for matches against a list of URLs, providing quick results when evaluating URLs that aren’t in the filter list. For URL requests that the Bloom filter can’t trivially exclude, the URL filter then consults a PIR server to make a final decision.
 
@@ -21,7 +21,7 @@ The sample code project `SimpleURLFilter` contains a PIR server for use with the
 
 > **Note**: This sample code project is associated with WWDC25 session 234: [Filter and tunnel network traffic with NetworkExtension](https://developer.apple.com/videos/play/wwdc25/234/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 The sample code zip file includes the server’s data and configuration files in the directory `PIR Server`. This directory is a sibling to the sample’s Xcode targets (`SimpleURLFilter`, `SwiftBloomFilter`, and `BloomFilterTool`) but isn’t part of the Xcode workspace because you don’t build it with Xcode. Instead, you can use the included `Dockerfile` with various platform-as-a-service systems. If you don’t already have one of these package-deployment systems, you can use Apple’s open source [container](https://github.com/apple/container) project.
 
@@ -50,7 +50,7 @@ Running the server in place uses the contents of the provided `data` directory, 
 
 To customize the database with your own list of filtered URLs, run the `BloomFilterTool` as described in [Using the Bloom filter tool to configure a URL filter](./using-the-bloom-filter-tool.md). You can take the `input.txtpb` database file created by that tool and use it to replace the default version in the `data` directory.
 
-##### Run the server
+### Run the server
 
 After you successfully build the server, you can run it in `container` with the following command:
 
@@ -62,7 +62,7 @@ This command runs the container image tagged `pir-server`, and names the instanc
 
 If you now build and run the `SimpleURLFilter` sample app in Xcode on macOS, you can configure its PIR server URL as `http://localhost:8080`, as described in [Filtering traffic by URL](./filtering-traffic-by-url.md). If you run the app on iOS instead, use your Mac’s IP address in the URL. For example, if your Mac has the address 192.168.1.2, enter `http://192.168.1.2:8080` when configuring the PIR server URL in the `SimpleURLFilter` app on your iOS device.
 
-##### View server log messages
+### View server log messages
 
 The command to run the server used the `-d` option to detach from the process, allowing control to return to the terminal immediately. However, this means that logging output doesn’t go to the terminal. Instead, follow `pir-server`’s output with the following command:
 
@@ -72,7 +72,7 @@ container logs --follow pir-server
 
 Following the log messages continues until the server stops, or you signal the `follow` command to stop by pressing Control-c.
 
-##### Stop the server
+### Stop the server
 
 To stop the server itself, use the following command:
 

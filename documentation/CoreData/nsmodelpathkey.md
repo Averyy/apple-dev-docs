@@ -21,7 +21,7 @@ let NSModelPathKey: String
 extern NSString * const NSModelPathKey;
 ```
 
-#### Discussion
+## Discussion
 
 This is resolved to the `model.mom` path contained in the external record file directory.
 

@@ -24,7 +24,7 @@ var interval: Int { get }
 @property (nonatomic, readonly) NSInteger interval;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a recurrence rule with a frequency type of [`EKRecurrenceFrequency.weekly`](../ekrecurrencefrequency/weekly.md) and an interval of `2` repeats every two weeks.
 

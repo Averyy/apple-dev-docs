@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INCreateTaskListIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t create the task list from your Intents extension but the user can create it in your app. Don’t use this code for general errors or to force the user to launch your app.
 

@@ -25,7 +25,7 @@ var label: String? { get set }
 @property (atomic, copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a capture scope’s label makes it easier to find in Xcode. See [Creating and using custom capture scopes](../../Xcode/creating-and-using-custom-capture-scopes.md) for more information.
 

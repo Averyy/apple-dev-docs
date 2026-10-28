@@ -25,7 +25,7 @@ optional func peripheralManagerIsReady(toUpdateSubscribers peripheral: CBPeriphe
 - (void) peripheralManagerIsReadyToUpdateSubscribers:(CBPeripheralManager *) peripheral;
 ```
 
-#### Discussion
+## Discussion
 
 When a call to the [`updateValue(_:for:onSubscribedCentrals:)`](../cbperipheralmanager/updatevalue%28_,for,onsubscribedcentrals%29.md) method fails because the underlying queue used to transmit the updated characteristic value is full, Core Bluetooth calls the [`peripheralManagerIsReady(toUpdateSubscribers:)`](./peripheralmanagerisready%28toupdatesubscribers%29.md) method when more space in the transmit queue becomes available. You can then implement this delegate method to resend the value.
 

@@ -21,7 +21,7 @@ Returns a copy of a profile with an HAGC tag synthesized from an info dictionary
 extern ColorSyncProfileRefColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveInfoDictionary(ColorSyncProfileRef profile, CFDictionaryRef info);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile that the caller must release with `CFRelease`, or `NULL` on failure.
 

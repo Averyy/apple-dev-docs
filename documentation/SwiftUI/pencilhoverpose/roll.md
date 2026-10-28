@@ -19,7 +19,7 @@ A value that represents the barrel roll angle of the hovering Apple Pencil.
 let roll: Angle
 ```
 
-#### Discussion
+## Discussion
 
 This value is `.zero` when the user starts using their Apple Pencil, and changes relative to that initial angle as the user rolls the Apple Pencil alongside its barrel. If the Apple Pencil doesn’t support detecting its barrel roll angle, this property is always `.zero`.
 

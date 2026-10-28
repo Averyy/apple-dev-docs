@@ -17,7 +17,7 @@ var kAXFocusedApplicationAttribute: String { get }
 #define kAXFocusedApplicationAttribute
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the application element that is currently accepting keyboard input. This attribute is supported by the system-wide accessibility object to help an assistive application quickly determine the application that is accepting keyboard input. After the assistive application gets the accessibility object representing this application, it can send a message to the application asking for its focused accessibility object.
 

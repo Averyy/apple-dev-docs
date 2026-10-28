@@ -10,7 +10,7 @@ void start_PM_idle_timer(
  void );
 ```
 
-#### Overview
+## Overview
 
 This call is handled internally by power management. It is not intended to be overridden or called by drivers.
 

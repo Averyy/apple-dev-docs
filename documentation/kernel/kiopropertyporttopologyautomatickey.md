@@ -14,7 +14,7 @@
 #define kIOPropertyPortTopologyAutomaticKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Automatic for the key kIOPropertyPortTopologyKey. If the topology of the port is automatically adjusted by the host/device and a definitive topology is not known, this key should be used.
 

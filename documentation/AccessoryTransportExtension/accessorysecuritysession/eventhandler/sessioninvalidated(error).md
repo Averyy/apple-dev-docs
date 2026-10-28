@@ -16,7 +16,7 @@ Handles session invalidation.
 func sessionInvalidated(error: AccessorySecuritySession.Error?)
 ```
 
-#### Discussion
+## Discussion
 
 Clean up any stored key material when the system calls this method.
 

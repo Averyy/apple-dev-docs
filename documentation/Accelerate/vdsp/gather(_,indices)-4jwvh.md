@@ -21,11 +21,11 @@ Returns a gathered copy of the specified single-precision vector using a vector 
 static func gather<T, U>(_ vector: T, indices: U) -> [Float] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Float, U.Element == UInt
 ```
 
-#### Return Value
+## Return Value
 
 The result of the gather operation.
 
-#### Discussion
+## Discussion
 
 The following code shows an example of gathering the values in `source` using the values in `indices`:
 

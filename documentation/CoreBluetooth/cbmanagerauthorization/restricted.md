@@ -25,7 +25,7 @@ case restricted
 CBManagerAuthorizationRestricted
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the user can’t change the Bluetooth authorization status, possibly due to active restrictions such as parental controls.
 

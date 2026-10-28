@@ -19,7 +19,7 @@ type GeoJSONImporterCallback = (
 ) => void;
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS invokes this callback with two arguments, `error` on failure and `result` on success, as follows:
 

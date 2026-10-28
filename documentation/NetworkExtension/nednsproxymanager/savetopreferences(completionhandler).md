@@ -27,7 +27,7 @@ func saveToPreferences() async throws
 - (void) saveToPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you alter the DNS proxy configuration that you load into the proxy manager’s properties using a call to the [`loadFromPreferences(completionHandler:)`](./loadfrompreferences%28completionhandler%29.md) method, you must then call the [`saveToPreferences(completionHandler:)`](./savetopreferences%28completionhandler%29.md) method to make the changes take effect. Saving also stores the modified configuration for the next time the proxy is started or the configuration loaded.
 

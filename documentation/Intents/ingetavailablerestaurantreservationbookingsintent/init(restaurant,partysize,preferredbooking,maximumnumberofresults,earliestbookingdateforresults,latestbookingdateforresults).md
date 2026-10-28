@@ -22,11 +22,11 @@ init(restaurant: INRestaurant, partySize: Int, preferredBooking preferredBooking
 - (instancetype) initWithRestaurant:(INRestaurant *) restaurant partySize:(NSUInteger) partySize preferredBookingDateComponents:(NSDateComponents *) preferredBookingDateComponents maximumNumberOfResults:(NSNumber *) maximumNumberOfResults earliestBookingDateForResults:(NSDate *) earliestBookingDateForResults latestBookingDateForResults:(NSDate *) latestBookingDateForResults;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, SiriKit creates instances when Maps asks you to provide the available reservations for the restaurant. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

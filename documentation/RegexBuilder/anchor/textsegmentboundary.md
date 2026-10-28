@@ -21,7 +21,7 @@ An anchor that matches at a grapheme cluster boundary.
 static var textSegmentBoundary: Anchor { get }
 ```
 
-#### Discussion
+## Discussion
 
 This anchor is equivalent to `\y` in regex syntax.
 

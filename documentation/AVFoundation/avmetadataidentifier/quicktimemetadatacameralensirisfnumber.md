@@ -25,7 +25,7 @@ static let quickTimeMetadataCameraLensIrisFNumber: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataCameraLensIrisFNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This is track-level metadata for video track that is associated with the camera.
 

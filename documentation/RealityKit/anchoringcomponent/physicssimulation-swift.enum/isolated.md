@@ -20,7 +20,7 @@ Simulates the entity and its descendants in the entity’s own physics space.
 case isolated
 ```
 
-#### Discussion
+## Discussion
 
 This behavior is similar to using a [`PhysicsSimulationComponent`](../../physicssimulationcomponent.md).
 

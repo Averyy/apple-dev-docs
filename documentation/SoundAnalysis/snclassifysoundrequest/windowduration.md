@@ -25,7 +25,7 @@ var windowDuration: CMTime { get set }
 @property (assign, readwrite) CMTime windowDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Configure the window duration with a value that satisfies the request’s [`windowDurationConstraint`](./windowdurationconstraint-5no60.md).
 

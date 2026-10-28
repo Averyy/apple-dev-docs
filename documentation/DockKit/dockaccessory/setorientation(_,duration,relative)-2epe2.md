@@ -24,11 +24,11 @@ final func setOrientation(_ rotation: Vector3D, duration: Duration = .seconds(0)
 
 - [Modify rotation and positioning programmatically](../modify-rotation-and-positioning-behavior-programmatically.md)
 
-#### Return Value
+## Return Value
 
 An object that reports progress during the animation sequence.
 
-#### Discussion
+## Discussion
 
 This method works only when you disable system tracking.
 

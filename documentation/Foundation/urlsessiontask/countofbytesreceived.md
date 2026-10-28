@@ -25,7 +25,7 @@ var countOfBytesReceived: Int64 { get }
 @property (readonly) int64_t countOfBytesReceived;
 ```
 
-#### Discussion
+## Discussion
 
 To be notified when this value changes, implement the [`urlSession(_:dataTask:didReceive:)`](../urlsessiondatadelegate/urlsession%28_,datatask,didreceive%29.md) delegate method (for data and upload tasks) or the [`urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)`](../urlsessiondownloaddelegate/urlsession%28_,downloadtask,didwritedata,totalbyteswritten,totalbytesexpectedtowrite%29.md) method (for download tasks).
 

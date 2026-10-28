@@ -6,7 +6,7 @@
 
 A packet entry.
 
-#### Overview
+## Overview
 
 The packet entry contains the data elements listed in the following table.
 

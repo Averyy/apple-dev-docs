@@ -15,7 +15,7 @@ A sequence of updates to planes a provider detects.
 final var anchorUpdates: AnchorUpdateSequence<PlaneAnchor> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system adds, updates, or removes plane anchors when this sequence provides updates.
 

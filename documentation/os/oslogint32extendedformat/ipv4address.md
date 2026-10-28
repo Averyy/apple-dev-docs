@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as an IPv4 address.
 case ipv4Address
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as an IPv4 address, such as `127.0.0.1`. The following example applies the `ipv4Address` formatter to the 32-bit integer value `0x0100007f`:
 

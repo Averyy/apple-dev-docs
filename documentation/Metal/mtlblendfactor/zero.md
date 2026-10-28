@@ -24,7 +24,7 @@ case zero
 MTLBlendFactorZero
 ```
 
-#### Discussion
+## Discussion
 
 `F(rgb) = 0`
 

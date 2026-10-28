@@ -24,7 +24,7 @@ case incorrect
 
 - [Inspecting session transcripts and reporting model feedback](../../../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
-#### Discussion
+## Discussion
 
 An incorrect issue might be where you asked how to make a pizza, and the model suggested using glue.
 

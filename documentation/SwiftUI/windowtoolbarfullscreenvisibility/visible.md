@@ -15,7 +15,7 @@ Prefer to show window toolbar when the window is in full screen mode.
 static let visible: WindowToolbarFullScreenVisibility
 ```
 
-#### Discussion
+## Discussion
 
 This has no effect if the toolbar is completely hidden, i.e. setting the visibility to `hidden` for `windowToolbar` placements using [`toolbarVisibility(_:for:)`](../view/toolbarvisibility%28_,for%29.md) will cause the toolbar to remain completely hidden, even in full screen.
 

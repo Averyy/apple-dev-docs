@@ -23,7 +23,7 @@ var usesProVideoStorage: Bool { get set }
 @property (nonatomic) BOOL usesProVideoStorage;
 ```
 
-#### Discussion
+## Discussion
 
 Default is `NO`. Raises an exception if set to `YES` while proVideoStorageSupported is `NO`.
 

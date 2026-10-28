@@ -24,7 +24,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The main public designation of a media item is its title. For example, for a music track the title would be the song title. If the media item is a podcast, the title would be the episode name of a particular podcast.
 

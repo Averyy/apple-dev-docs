@@ -15,7 +15,7 @@ Request a refund for a one-time charge or subscription transaction.
 - [Advanced Commerce API changelog](./changelog.md)
 - [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: To use the `Request Transaction Refund` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
 

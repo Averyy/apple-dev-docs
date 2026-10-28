@@ -19,7 +19,7 @@ var isFinishedLaunching: Bool { get }
 @property (readonly, getter=isFinishedLaunching) BOOL finishedLaunching;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property corresponds to the running application having received an [`didFinishLaunchingNotification`](../nsapplication/didfinishlaunchingnotification.md) notification internally. Some applications do not post this notification (applications that do not rely on [`NSApplication`](../nsapplication.md)) and so are never reported as finished launching.
 

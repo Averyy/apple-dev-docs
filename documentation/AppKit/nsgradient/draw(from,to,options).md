@@ -19,7 +19,7 @@ func draw(from startingPoint: NSPoint, to endingPoint: NSPoint, options: NSGradi
 - (void) drawFromPoint:(NSPoint) startingPoint toPoint:(NSPoint) endingPoint options:(NSGradientDrawingOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the gradient color changes along the line formed by the two points. The gradient fill extends perpendicularly outward from line until it reaches the edges of the current clipping region.
 

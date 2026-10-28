@@ -19,11 +19,11 @@ object ScaleFadeAnimation
 
 - [About Component Animations](../AppleNews/about-component-animations.md)
 
-#### Discussion
+## Discussion
 
 With this animation type the component appears by getting larger and fading from transparent to opaque. Initially, the component is scaled down and at least partially transparent, but, upon entering the user’s view, the component scales up to its actual size in the layout and fades in to be completely opaque as shown in [this video](https://developer.apple.com/apple-news/videos/scale-fade.mp4).
 
-##### Example
+### Example
 
 ```json
 {

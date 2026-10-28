@@ -21,7 +21,7 @@ A kind of transition that applies to the content within a single view, rather th
 struct ContentTransition
 ```
 
-#### Overview
+## Overview
 
 Set the behavior of content transitions within a view with the [`contentTransition(_:)`](./view/contenttransition%28_%29.md) modifier, passing in one of the defined transitions, such as [`opacity`](./contenttransition/opacity.md) or [`interpolate`](./contenttransition/interpolate.md) as the parameter.
 

@@ -21,7 +21,7 @@ Maximum tree depth.
 var maximumDepth: Int
 ```
 
-#### Discussion
+## Discussion
 
 For best results use a value between 4 and 8. Must be at least 1. Defaults to 6.
 

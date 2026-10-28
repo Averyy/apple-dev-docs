@@ -21,7 +21,7 @@ The default pulse effect, determined by the system.
 + (instancetype) effect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the pulse effect options.
 

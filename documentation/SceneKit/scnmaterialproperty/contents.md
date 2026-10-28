@@ -25,7 +25,7 @@ var contents: Any? { get set }
 @property (nonatomic, retain, nullable) id contents;
 ```
 
-#### Discussion
+## Discussion
 
 For details on each visual property and the ways their contents affect a material’s appearance, see [`SCNMaterial`](../scnmaterial.md).
 
@@ -43,7 +43,7 @@ You can set a value for this property using any of the following types:
 
 When you examine elements of a scene loaded from a file, this value is always either a color object (of the [`NSColor`](../../AppKit/nscolor.md) or [`UIColor`](../../UIKit/uicolor.md) class, according to platform) or an image object (of the [`NSImage`](../../AppKit/nsimage.md) or [`UIImage`](../../UIKit/uiimage.md) class, according to platform). You can therefore use type introspection (the [`isKind(of:)`](../../ObjectiveC/nsobjectprotocol/iskind%28of%29.md) method in Objective-C, or the `is` operator or `let`-`as` matching in Swift) to determine the type of the material property’s contents.
 
-##### Using Animated Content
+### Using Animated Content
 
 In iOS 11, you may use an [`AVCaptureDevice`](../../AVFoundation/avcapturedevice.md) object to preview live video from a capture device as a material property. In iOS 11, tvOS 11, and macOS 10.13, you may use an [`AVPlayer`](../../AVFoundation/avplayer.md) object as a material property for video playback.
 
@@ -53,7 +53,7 @@ You can use the SpriteKit framework to provide static or animated content for a 
 
 If the current content is a solid color, you can use explicit or implicit animations (see [Animating SceneKit Content](../animating-scenekit-content.md)) to change to another color, creating an effect that fades between the two colors. Using animations to change from or to other content types results in an instantaneous transition—for an animated transition between textured content types (or types that are themselves animated), create a shader modifier (see [`SCNShadable`](../scnshadable.md)).
 
-##### Using Cube Map Texures
+### Using Cube Map Texures
 
 SceneKit supports cube maps only for a material’s [`reflective`](../scnmaterial/reflective.md) property or for a scene’s [`background`](../scnscene/background.md) or [`lightingEnvironment`](../scnscene/lightingenvironment.md) property. You can provide a cube map in any of the ways described in Table 1. Of these formats, the vertical strip provides the best performance, because it matches the memory layout SceneKit uses for rendering cube textures.
 

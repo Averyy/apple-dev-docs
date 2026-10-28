@@ -25,7 +25,7 @@ static var query: MKLocalSearchCompleter.ResultType { get }
 MKLocalSearchCompleterResultTypeQuery
 ```
 
-#### Discussion
+## Discussion
 
 For example, the search string `cof` yields a completion for *coffee*.
 

@@ -21,7 +21,7 @@ Returns the corner points of the rectangle.
 var cornerPoints: [Point3DFloat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the vertices in a clockwise direction, starting from the origin:
 

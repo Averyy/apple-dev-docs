@@ -22,11 +22,11 @@ Returns the weather forecast for the requested location.
 final func weather<T1, T2>(for location: CLLocation, including dataSet1: WeatherQuery<T1>, _ dataSet2: WeatherQuery<T2>) async throws -> (T1, T2) where T1 : Sendable, T2 : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The requested weather data set.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Weather data error `WeatherError`
 

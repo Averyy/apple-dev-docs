@@ -22,7 +22,7 @@ let kAudioSession_InputSourceKey_Description: CFString!
 extern CFStringRef const kAudioSession_InputSourceKey_Description;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFString`](../CoreFoundation/cfstring.md) object, defined by the accessory, that describes an audio input source and that is suitable for displaying in a user interface.
 

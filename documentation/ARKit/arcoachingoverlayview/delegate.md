@@ -21,7 +21,7 @@ weak var delegate: (any ARCoachingOverlayViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<ARCoachingOverlayViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, you set the value of this property to your app’s view controller.
 

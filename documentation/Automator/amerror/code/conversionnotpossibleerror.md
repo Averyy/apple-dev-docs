@@ -20,7 +20,7 @@ case conversionNotPossibleError
 AMConversionNotPossibleError
 ```
 
-#### Discussion
+## Discussion
 
 This error isn’t displayed to the user.
 

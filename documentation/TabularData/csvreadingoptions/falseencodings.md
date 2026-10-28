@@ -21,7 +21,7 @@ The set of strings that stores acceptable spellings for false Boolean values.
 var falseEncodings: Set<String>
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `["0", "False", "FALSE", "false"]`.
 

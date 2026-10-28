@@ -19,11 +19,11 @@ func rtfd(from range: NSRange, documentAttributes dict: [NSAttributedString.Docu
 - (NSData *) RTFDFromRange:(NSRange) range documentAttributes:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the RTFD stream containing the characters and attributes.
 
-#### Discussion
+## Discussion
 
 Writes the document-level attributes in `docAttributes`, as explained in [RTF Files and Attributed Strings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextAttributes/RTFAndAttrStrings.html#//apple_ref/doc/uid/20000164).
 

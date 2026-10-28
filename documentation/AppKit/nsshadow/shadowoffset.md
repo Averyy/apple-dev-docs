@@ -19,7 +19,7 @@ var shadowOffset: CGSize { get set }
 @property CGSize shadowOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the horizontal and vertical offset values that you specify using the `width` and `height` fields of the `CGSize` or `NSSize` data type. These offsets use the default user coordinate space and are not affected by custom transformations. Positive offset values extend down and to the right from the user’s perspective.
 

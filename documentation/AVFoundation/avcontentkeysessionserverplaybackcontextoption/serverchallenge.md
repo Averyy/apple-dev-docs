@@ -25,7 +25,7 @@ static let serverChallenge: AVContentKeySessionServerPlaybackContextOption
 extern AVContentKeySessionServerPlaybackContextOption const AVContentKeySessionServerPlaybackContextOptionServerChallenge;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value as an 8-byte [`NSData`](../../Foundation/nsdata.md) object. If you don’t specify a value for this key, the system assumes a default server challenge of `0`.
 

@@ -26,7 +26,7 @@ Updates entities up to once every scene update.
 
 - [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
-#### Discussion
+## Discussion
 
 RealityKit calls this method on all registered systems, as often as the `updatingSystemWhen` parameter of [`entities(matching:updatingSystemWhen:)`](../sceneupdatecontext/entities%28matching,updatingsystemwhen%29.md) defines.
 

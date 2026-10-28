@@ -15,7 +15,7 @@
 OSErr FSGetCatalogInfoBulk(FSIterator iterator, ItemCount maximumObjects, ItemCount *actualObjects, Boolean *containerChanged, FSCatalogInfoBitmap whichInfo, FSCatalogInfo *catalogInfos, FSRef *refs, FSSpecPtr specs, HFSUniStr255 *names);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: [`FSGetCatalogInfoBulk`](./api-1566447-fsgetcataloginfobulk.md) returns directory entries in a different order on APFS and HFS+ volumes. Don't rely on any specific ordering of returned values; instead, explicitly sort directory entries as necessary.
 

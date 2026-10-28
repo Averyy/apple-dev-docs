@@ -21,7 +21,7 @@ A rounded corner style where the corner’s radius is the value you provide.
 static func fixed(_ radius: CGFloat) -> Edge.Corner.Style
 ```
 
-#### Discussion
+## Discussion
 
 Provide a value of zero for a square corner.
 

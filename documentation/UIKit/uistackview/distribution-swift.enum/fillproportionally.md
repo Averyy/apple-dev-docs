@@ -23,7 +23,7 @@ case fillProportionally
 UIStackViewDistributionFillProportionally
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Distribution.fillProportionally`](./fillproportionally.md) distribution.
 

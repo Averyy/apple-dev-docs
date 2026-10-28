@@ -25,11 +25,11 @@ func maxAvailableSize(alignment: Int) -> Int
 - (NSUInteger) maxAvailableSizeWithAlignment:(NSUInteger) alignment;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum size for the resource, in bytes.
 
-#### Discussion
+## Discussion
 
 This method measures fragmentation within the heap. You can use the [`heapBufferSizeAndAlign(length:options:)`](../mtldevice/heapbuffersizeandalign%28length,options%29.md) and [`heapTextureSizeAndAlign(descriptor:)`](../mtldevice/heaptexturesizeandalign%28descriptor%29.md) methods to help you determine the correct alignment for the resource.
 

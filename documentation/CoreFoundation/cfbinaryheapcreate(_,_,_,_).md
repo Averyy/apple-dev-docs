@@ -25,7 +25,7 @@ func CFBinaryHeapCreate(_ allocator: CFAllocator!, _ capacity: CFIndex, _ callBa
 extern CFBinaryHeapRefCFBinaryHeapCreate(CFAllocatorRef allocator, CFIndex capacity, const CFBinaryHeapCallBacks *callBacks, const CFBinaryHeapCompareContext *compareContext);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFBinaryHeap` object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

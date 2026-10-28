@@ -15,11 +15,11 @@ Exits a critical region.
 OSStatus MPExitCriticalRegion(MPCriticalRegionID criticalRegion);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If the task does not own the critical region specified by `criticalRegion`, `MPExitCriticalRegion` returns `kMPInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 This function decrements the use count of the critical region object. When the use count reaches zero, ownership of the critical region object is released (which allows another task to use the critical region).
 

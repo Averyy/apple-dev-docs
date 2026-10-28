@@ -24,7 +24,7 @@ case loopingItemsPrecedeExistingItems
 AVPlayerLooperItemOrderingLoopingItemsPrecedeExistingItems
 ```
 
-#### Discussion
+## Discussion
 
 This is the default behavior.
 

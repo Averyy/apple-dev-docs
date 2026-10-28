@@ -21,7 +21,7 @@ An array of the system’s supported languages.
 static var systemLanguages: [Locale.Language] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The returned array includes the languages of all product localizations for the current platform.
 

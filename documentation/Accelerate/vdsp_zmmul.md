@@ -21,7 +21,7 @@ Performs an out-of-place multiplication of two single-precision complex matrices
 extern void vDSP_zmmul(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __M, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 The following code multiplies the matrices `a` and `b`, and writes the result to matrix `c`:
 

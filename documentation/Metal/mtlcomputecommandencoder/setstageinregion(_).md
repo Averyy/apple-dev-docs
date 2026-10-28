@@ -25,7 +25,7 @@ func setStageInRegion(_ region: MTLRegion)
 - (void) setStageInRegion:(MTLRegion) region;
 ```
 
-#### Discussion
+## Discussion
 
 The region’s origin point, starting from `(0,0,0)` in the upper left of the bound data, determines the final index of `[[stage_in]]` data. Note that the total number of threads Metal launches may be larger than your stage-in data.
 

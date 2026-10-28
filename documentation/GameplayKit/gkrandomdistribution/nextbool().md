@@ -24,11 +24,11 @@ func nextBool() -> Bool
 - (BOOL) nextBool;
 ```
 
-#### Return Value
+## Return Value
 
 A random Boolean value.
 
-#### Discussion
+## Discussion
 
 When using the [`GKRandomDistribution`](../gkrandomdistribution.md) class directly, generated Boolean values are uniform—any call to this method has an equal chance of returning [`true`](../../Swift/true.md) or [`false`](../../Swift/false.md). Subclasses of [`GKRandomDistribution`](../gkrandomdistribution.md) can alter the relative probability of generating either value.
 

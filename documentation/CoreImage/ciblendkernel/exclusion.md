@@ -24,7 +24,7 @@ class var exclusion: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * exclusion;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the exclusion blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926865@2x.png)
 

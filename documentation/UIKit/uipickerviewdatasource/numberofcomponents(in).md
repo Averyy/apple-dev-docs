@@ -23,7 +23,7 @@ func numberOfComponents(in pickerView: UIPickerView) -> Int
 - (NSInteger) numberOfComponentsInPickerView:(UIPickerView *) pickerView;
 ```
 
-#### Return Value
+## Return Value
 
 The number of components (or “columns”) that the picker view should display.
 

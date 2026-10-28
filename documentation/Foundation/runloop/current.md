@@ -25,11 +25,11 @@ class var current: RunLoop { get }
 @property (class, strong, readonly) NSRunLoop * currentRunLoop;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSRunLoop` object for the current thread.
 
-#### Discussion
+## Discussion
 
 If a run loop does not yet exist for the thread, one is created and returned.
 

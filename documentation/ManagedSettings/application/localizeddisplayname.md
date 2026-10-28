@@ -17,7 +17,7 @@ A localized display name for the application.
 let localizedDisplayName: String?
 ```
 
-#### Discussion
+## Discussion
 
 In an extension that provides shield configurations, this property provides the app’s name. When you access this property outside that extension, the value is `nil`. See `ShieldConfigurationDataSource` in the Managed Settings UI framework for more information.
 

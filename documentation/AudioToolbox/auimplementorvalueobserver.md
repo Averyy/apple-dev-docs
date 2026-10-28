@@ -24,7 +24,7 @@ typealias AUImplementorValueObserver = (AUParameter, AUValue) -> Void
 typedef void (^)(AUParameter *, float) AUImplementorValueObserver;
 ```
 
-#### Discussion
+## Discussion
 
 This block is only of interest to audio unit subclasses.
 

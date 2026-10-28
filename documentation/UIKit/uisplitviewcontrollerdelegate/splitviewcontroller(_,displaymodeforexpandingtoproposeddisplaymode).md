@@ -23,11 +23,11 @@ optional func splitViewController(_ svc: UISplitViewController, displayModeForEx
 - (UISplitViewControllerDisplayMode) splitViewController:(UISplitViewController *) svc displayModeForExpandingToProposedDisplayMode:(UISplitViewControllerDisplayMode) proposedDisplayMode;
 ```
 
-#### Return Value
+## Return Value
 
 The display mode to expand the interface to. This value may be the same as `proposedDisplayMode`, or you may return a different value.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to column-style split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

@@ -25,7 +25,7 @@ var stringValues: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * stringValues;
 ```
 
-#### Discussion
+## Discussion
 
 Only use this property when the sequence’s [`type`](./type.md) is [`MLFeatureType.string`](../mlfeaturetype/string.md).
 

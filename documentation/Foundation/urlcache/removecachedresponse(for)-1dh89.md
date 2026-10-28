@@ -29,7 +29,7 @@ func removeCachedResponse(for request: URLRequest)
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 If you override this method, you should also override [`removeCachedResponse(for:)`](./removecachedresponse%28for%29-1zwp6.md).
 

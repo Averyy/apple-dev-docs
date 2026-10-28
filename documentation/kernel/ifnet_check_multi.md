@@ -13,11 +13,11 @@
 typedef errno_t (*ifnet_check_multi)(ifnet_t interface, const struct sockaddr *mcast);
 ```
 
-#### Return Value
+## Return Value
 
 Zero upon success, EADDRNOTAVAIL on invalid multicast, EOPNOTSUPP for addresses the interface does not understand.
 
-#### Discussion
+## Discussion
 
 ifnet_check_multi is called for each multicast address added to an interface. This gives the interface an opportunity to reject invalid multicast addresses before they are attached to the interface.
 

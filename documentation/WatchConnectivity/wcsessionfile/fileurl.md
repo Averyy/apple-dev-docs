@@ -23,7 +23,7 @@ var fileURL: URL { get }
 @property (nonatomic, readonly) NSURL * fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 The system places downloaded files inside a temporary directory. If you intend to keep the file, it is your responsibility to move the file to a more permanent location inside your extension’s container directory. You must move the file before your session delegate’s [`session(_:didReceive:)`](../wcsessiondelegate/session%28_,didreceive%29.md) method returns.
 

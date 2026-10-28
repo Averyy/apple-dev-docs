@@ -23,7 +23,7 @@ An activation function that returns the scaled hyperbolic tangent of its input.
 case scaledTanh(alpha: Float, beta: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

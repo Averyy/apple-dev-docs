@@ -22,7 +22,7 @@ class func genres() -> MPMediaQuery
 + (MPMediaQuery *) genresQuery;
 ```
 
-#### Return Value
+## Return Value
 
 A media query that matches all media items and that has a grouping type of [`MPMediaGrouping.genre`](../mpmediagrouping/genre.md).
 

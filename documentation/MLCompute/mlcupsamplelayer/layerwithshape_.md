@@ -19,7 +19,7 @@ Creates an upsample layer with the shape you specify.
 + (instancetype) layerWithShape:(NSArray<NSNumber *> *) shape;
 ```
 
-#### Return Value
+## Return Value
 
 An upsample layer.
 

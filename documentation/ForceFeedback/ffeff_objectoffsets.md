@@ -18,7 +18,7 @@ var FFEFF_OBJECTOFFSETS: UInt { get }
 #define FFEFF_OBJECTOFFSETS
 ```
 
-#### Discussion
+## Discussion
 
 OBJECT IDS cannot be used to identify trigger buttons in FFEFFECT.dwTriggerButton, and output axes in FFEFFECT.rgdwAxes[n]. Please use object offsets (FFJOFS_* constants), the only supported method.
 

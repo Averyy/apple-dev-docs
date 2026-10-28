@@ -24,7 +24,7 @@ func requestAuthorization(toShare typesToShare: Set<HKSampleType>?, read typesTo
 - (void) requestAuthorizationToShareTypes:(NSSet<HKSampleType *> *) typesToShare readTypes:(NSSet<HKObjectType *> *) typesToRead completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit performs these requests asynchronously. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the permission form, listing all the requested permissions. After the user has finished responding, this method calls its completion block on a background queue. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit calls the completion without prompting the user.
 

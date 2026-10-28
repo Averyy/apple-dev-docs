@@ -21,7 +21,7 @@ A gauge style that displays bar that fills from leading to trailing edges as the
 @preconcurrency struct AccessoryLinearCapacityGaugeStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`accessoryLinearCapacity`](./gaugestyle/accessorylinearcapacity.md) to construct this style.
 

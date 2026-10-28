@@ -19,7 +19,7 @@ var maximumExtendedDynamicRangeColorComponentValue: CGFloat { get }
 @property (readonly) CGFloat maximumExtendedDynamicRangeColorComponentValue;
 ```
 
-#### Discussion
+## Discussion
 
 If no content on screen provides extended dynamic range (EDR) values, the value of this property is `1.0`. If any content onscreen has requested EDR, the value may be greater than `1.0`, depending on the capabilities of the display hardware and other conditions. Only rendering contexts that support EDR can use values greater than `1.0`.
 

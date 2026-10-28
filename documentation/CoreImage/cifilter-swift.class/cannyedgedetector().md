@@ -24,11 +24,11 @@ class func cannyEdgeDetector() -> any CIFilter & CICannyEdgeDetector
 + (CIFilter<CICannyEdgeDetector> *) cannyEdgeDetectorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIImage`](../ciimage.md) with the detected edges.
 
-#### Discussion
+## Discussion
 
 This filter performs a Canny edge-detection on the input image, producing a black-and-white image with the detected edges. White pixels indicate an edge, and black pixels indicate no edge.
 

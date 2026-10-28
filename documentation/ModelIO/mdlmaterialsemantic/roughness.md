@@ -24,7 +24,7 @@ case roughness
 MDLMaterialSemanticRoughness
 ```
 
-#### Discussion
+## Discussion
 
 At lower values, the material appears shiny, with well-defined specular highlights. At higher values, a diffuse material becomes retroreflective, and specular highlights are very spread out.
 

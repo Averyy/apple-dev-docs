@@ -24,7 +24,7 @@ func setContentSize(_ size: CGSize, animated: Bool)
 - (void) setPopoverContentSize:(CGSize) size animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 When changing the size of the popover’s content, the width value you specify must be at least 320 points and no more than 600 points. There are no restrictions on the height value. However, both the width and height values you specify may be adjusted to ensure the popup fits on screen and is not covered by the keyboard.
 

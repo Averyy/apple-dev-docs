@@ -25,7 +25,7 @@ var path: String { get }
 @property (copy, readonly) NSString * path;
 ```
 
-#### Discussion
+## Discussion
 
 The cookie will be sent with requests for this path in the cookie’s domain, and all paths that have this prefix. A path of `"/"` means the cookie will be sent for all URLs in the domain.
 

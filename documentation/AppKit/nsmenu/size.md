@@ -19,7 +19,7 @@ var size: NSSize { get }
 @property (readonly) NSSize size;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a value of type `NSSize`, indicating the size of the menu in screen coordinates.
 

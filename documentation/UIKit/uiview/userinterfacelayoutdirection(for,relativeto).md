@@ -23,11 +23,11 @@ class func userInterfaceLayoutDirection(for semanticContentAttribute: UISemantic
 + (UIUserInterfaceLayoutDirection) userInterfaceLayoutDirectionForSemanticContentAttribute:(UISemanticContentAttribute) semanticContentAttribute relativeToLayoutDirection:(UIUserInterfaceLayoutDirection) layoutDirection;
 ```
 
-#### Return Value
+## Return Value
 
 The layout direction implied by the semantic content attribute and relative to the layout direction.
 
-#### Discussion
+## Discussion
 
 For example, when this method is passed a layout direction of [`UIUserInterfaceLayoutDirection.rightToLeft`](../uiuserinterfacelayoutdirection/righttoleft.md) and a semantic content attribute of [`UISemanticContentAttribute.playback`](../uisemanticcontentattribute/playback.md), it returns [`UIUserInterfaceLayoutDirection.leftToRight`](../uiuserinterfacelayoutdirection/lefttoright.md). Although layout and drawing code can use this method to determine how to arrange elements, it might be easier to query the container view’s [`effectiveUserInterfaceLayoutDirection`](./effectiveuserinterfacelayoutdirection.md) property instead.
 

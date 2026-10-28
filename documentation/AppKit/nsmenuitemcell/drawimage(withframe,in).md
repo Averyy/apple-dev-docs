@@ -19,7 +19,7 @@ func drawImage(withFrame cellFrame: NSRect, in controlView: NSView)
 - (void) drawImageWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the `NSCell` method [`imageRect(forBounds:)`](../nscell/imagerect%28forbounds%29.md), passing it `cellFrame`, to calculate the rectangle in which to draw the image. This method is invoked by the cell’s `drawWithFrame:` method. You should not need to invoke it directly. Subclasses may override this method to control the drawing of the image.
 

@@ -11,9 +11,9 @@ Update the endpoint URL and secret for alternative distribution package notifica
 
 > **Deprecated**: This endpoint is deprecated.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

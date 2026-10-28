@@ -21,7 +21,7 @@ var sharesBackground: Bool { get set }
 @property (nonatomic) BOOL sharesBackground;
 ```
 
-#### Discussion
+## Discussion
 
 When `NO`, This item will not be visually grouped with any other items.
 

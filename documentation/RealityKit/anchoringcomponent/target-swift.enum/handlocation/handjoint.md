@@ -15,7 +15,7 @@ Describes all the hand joints.
 struct HandJoint
 ```
 
-#### Overview
+## Overview
 
 For more information about the joints, refer https://developer.apple.com/documentation/arkit/handskeleton
 

@@ -32,7 +32,7 @@ class NSPersistentContainer
 - [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
 - [Using Core Data in the background](./using-core-data-in-the-background.md)
 
-#### Overview
+## Overview
 
 NSPersistentContainer simplifies the creation and management of the Core Data stack by handling the creation of the managed object model ([`NSManagedObjectModel`](./nsmanagedobjectmodel.md)), persistent store coordinator ([`NSPersistentStoreCoordinator`](./nspersistentstorecoordinator.md)), and the managed object context ([`NSManagedObjectContext`](./nsmanagedobjectcontext.md)).
 

@@ -19,7 +19,7 @@ The way that file dialogs present the file system.
 struct FileDialogBrowserOptions
 ```
 
-#### Overview
+## Overview
 
 Apply the options using the [`fileDialogBrowserOptions(_:)`](./view/filedialogbrowseroptions%28_%29.md) modifier.
 

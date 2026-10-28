@@ -24,7 +24,7 @@ enum HKFitzpatrickSkinType
 enum HKFitzpatrickSkinType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The Fitzpatrick scale is a numerical classification for skin color based on the skins response to sun exposure in terms of the degree of burning and tanning.
 

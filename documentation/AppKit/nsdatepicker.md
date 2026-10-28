@@ -19,7 +19,7 @@ class NSDatePicker
 @interface NSDatePicker : NSControl
 ```
 
-#### Overview
+## Overview
 
 `NSDatePicker` uses an [`NSDatePickerCell`](./nsdatepickercell.md) to implement much of the control’s functionality. `NSDatePicker` provides cover methods for most of `NSDatePickerCell` methods, which invoke the corresponding cell method.
 

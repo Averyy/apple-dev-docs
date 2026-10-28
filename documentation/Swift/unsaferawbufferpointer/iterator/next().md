@@ -21,11 +21,11 @@ Advances to the next byte and returns it, or `nil` if no next byte exists.
 mutating func next() -> UInt8?
 ```
 
-#### Return Value
+## Return Value
 
 The next sequential byte in the raw buffer if another byte exists; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

@@ -25,7 +25,7 @@ func CFBundleGetDevelopmentRegion(_ bundle: CFBundle!) -> CFString!
 extern CFStringRefCFBundleGetDevelopmentRegion(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object containing the name of the bundle’s development region. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

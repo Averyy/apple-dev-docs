@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume supports file cloning.
 var volumeSupportsFileCloning: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the volume supports the `clonefile(2)` system call.
 

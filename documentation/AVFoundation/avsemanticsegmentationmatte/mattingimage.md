@@ -25,7 +25,7 @@ var mattingImage: CVPixelBuffer { get }
 @property (readonly) CVPixelBufferRef mattingImage;
 ```
 
-#### Discussion
+## Discussion
 
 You can determine the pixel buffer’s format type using the [`pixelFormatType`](./pixelformattype.md) property.
 

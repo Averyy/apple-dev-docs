@@ -16,7 +16,7 @@ A style describing the appearance of the pointer (also called a cursor) when itâ
 struct PointerStyle
 ```
 
-#### Overview
+## Overview
 
 Use the [`pointerStyle(_:)`](./view/pointerstyle%28_%29.md) view modifier to set a viewâ€™s pointer style.
 

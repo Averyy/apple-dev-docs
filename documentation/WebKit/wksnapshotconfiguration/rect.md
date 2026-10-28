@@ -23,7 +23,7 @@ var rect: CGRect { get set }
 @property (nonatomic) CGRect rect;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`CGRectNull`](../../CoreGraphics/cgrectnull.md), which captures everything in the view’s bounds rectangle. If you specify a custom rectangle, it must lie within the bounds rectangle of the [`WKWebView`](../wkwebview.md) object.
 

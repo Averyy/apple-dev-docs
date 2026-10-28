@@ -20,7 +20,7 @@ var segmentationBuffer: CVPixelBuffer? { get }
 @property (nonatomic, readonly, nullable) CVPixelBufferRef segmentationBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit generates the contents of this buffer by processing the camera feed.
 

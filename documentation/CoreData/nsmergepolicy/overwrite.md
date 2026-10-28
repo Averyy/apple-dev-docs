@@ -25,7 +25,7 @@ class var overwrite: NSMergePolicy { get }
 @property (class, strong, readonly) NSMergePolicy * overwriteMergePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 This policy merges conflicts between the persistent store’s version of the object and the current in-memory version by saving the entire in-memory object to the persistent store.
 

@@ -27,7 +27,7 @@ func dismissKeyboard()
 
 - [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
-#### Discussion
+## Discussion
 
 Because a custom keyboard does not have access to the current text input object, you cannot send it a [`resignFirstResponder()`](../uiresponder/resignfirstresponder%28%29.md) message (as you would to dismiss the system keyboard when you are developing an app with text entry). To dismiss the custom keyboard, call [`dismissKeyboard()`](./dismisskeyboard%28%29.md) instead.
 

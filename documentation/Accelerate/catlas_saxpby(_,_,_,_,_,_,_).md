@@ -25,7 +25,7 @@ func catlas_saxpby(_ N: __LAPACK_int, _ ALPHA: Float, _ X: UnsafePointer<Float>?
 void catlas_saxpby(const __LAPACK_int N, const float ALPHA, const float *X, const __LAPACK_int INCX, const float BETA, float *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the contents of vector `Y` are replaced with the result.
 

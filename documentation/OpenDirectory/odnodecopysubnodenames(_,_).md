@@ -20,7 +20,7 @@ func ODNodeCopySubnodeNames(_ node: ODNodeRef!, _ error: UnsafeMutablePointer<Un
 extern CFArrayRefODNodeCopySubnodeNames(ODNodeRef node, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 An array of subnode names.
 

@@ -17,7 +17,7 @@ Called to cancel a load currently in progress.
 - (void) cancelLoadInBackground;
 ```
 
-#### Discussion
+## Discussion
 
 This method is provided mainly for subclasses that wish to take some action before a background load is canceled. This method should invoke `super`’s implementation before returning.
 

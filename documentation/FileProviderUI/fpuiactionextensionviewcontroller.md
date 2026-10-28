@@ -35,7 +35,7 @@ class FPUIActionExtensionViewController
 
 - [Adding Actions to the Context Menu](./adding-actions-to-the-context-menu.md)
 
-#### Overview
+## Overview
 
 Subclass this view controller to provide the user interface for your actions.
 

@@ -15,11 +15,11 @@ Creates a new packet buffer pool object and allocates space for the specified nu
 static kern_return_t Create(OSObject *poolOwner, const char name[1024], uint32_t packetCount, uint32_t bufferCount, uint32_t bufferSize, IOUserNetworkPacketBufferPool **pool);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if the method created the pool successfully.
 
-#### Discussion
+## Discussion
 
 Use this method to create a new packet buffer pool object for your driver, and use that pool when creating the submission and completion queues you use to manage packets. This method allocates a contiguous block of wired memory to store the specified number of packets.
 

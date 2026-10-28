@@ -23,7 +23,7 @@ var currentPage: Int { get set }
 @property (nonatomic, assign) NSInteger currentPage;
 ```
 
-#### Discussion
+## Discussion
 
 The property value is an integer specifying the current page shown minus one; thus a value of zero (the default) indicates the first page. A page control shows the current page as a white dot. Values outside the possible range are pinned to either 0 or [`numberOfPages`](./numberofpages.md) minus 1.
 

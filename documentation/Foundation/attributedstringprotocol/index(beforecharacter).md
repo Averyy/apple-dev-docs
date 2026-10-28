@@ -21,7 +21,7 @@ Returns the position of the character immediately before another charcter indica
 func index(beforeCharacter i: AttributedString.Index) -> AttributedString.Index
 ```
 
-#### Return Value
+## Return Value
 
 The position of the character immediately before the character at index `i`.
 

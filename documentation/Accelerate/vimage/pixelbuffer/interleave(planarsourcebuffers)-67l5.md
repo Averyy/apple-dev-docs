@@ -23,7 +23,7 @@ func interleave(planarSourceBuffers: [vImage.PixelBuffer<vImage.Planar8>])
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Discussion
+## Discussion
 
 Use this function to interleave a collection of planar buffers and overwrite an interleaved buffer with a copy of the source channels.
 

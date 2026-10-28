@@ -21,7 +21,7 @@ An image buffer that contains the media data.
 var imageBuffer: CVImageBuffer? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`nil`](../../ObjectiveC/nil-227m0.md) if the sample buffer doesn’t contain a [CVImageBuffer](../../CoreVideo/cvimagebuffer-q40.md), if the sample contains a [CMBlockBuffer](../cmblockbuffer-api.md), or if there’s an error.
 

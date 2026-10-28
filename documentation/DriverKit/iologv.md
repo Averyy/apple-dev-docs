@@ -16,7 +16,7 @@
 int IOLogv(const char *format, va_list ap);
 ```
 
-#### Discussion
+## Discussion
 
 Log a message to console in text mode, and os_log.
 

@@ -25,7 +25,7 @@ convenience init(vectorFloat2 value: vector_float2)
 + (instancetype) valueWithVectorFloat2:(vector_float2) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new attribute value object.
 

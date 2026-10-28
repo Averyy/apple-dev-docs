@@ -21,7 +21,7 @@ case accurate
 
 - [Scanning data with the camera](../../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 Use this quality level if you want to recognize smaller text and barcodes.
 

@@ -16,7 +16,7 @@ An error that indicates the configuration’s current layout value is invalid.
 case layoutNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 Specify a supported layout value using the [`layout`](../layerrenderer/configuration-swift.struct/layout.md) property. Get a list of supported layouts from the [`supportedLayouts(options:)`](../layerrenderer/capabilities/supportedlayouts%28options%29.md) function.
 

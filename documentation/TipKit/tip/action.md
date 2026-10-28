@@ -21,7 +21,7 @@ A type that describes a control associated with a tip.
 typealias Action = Tips.Action
 ```
 
-#### Overview
+## Overview
 
 Use actions to provide additional help and guidance for people looking to get started with your tip. Actions appear at the bottom of your [`TipView`](../tipview.md) in the form of buttons.
 

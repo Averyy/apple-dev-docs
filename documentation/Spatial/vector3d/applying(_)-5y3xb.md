@@ -21,7 +21,7 @@ Returns the vector that results from applying a projective transform to the vect
 func applying(_ transform: ProjectiveTransform3D) -> Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

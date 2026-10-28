@@ -25,7 +25,7 @@ class NLGazetteer
 @interface NLGazetteer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`NLGazetteer`](./nlgazetteer.md) to augment an [`NLTagger`](./nltagger.md) when you need to tag a specific set of terms (single words or short phrases) with a label. Typically, you add one gazetteer per language, or one language-independent gazetteer, to an [`NLTagger`](./nltagger.md) with its [`setGazetteers(_:for:)`](./nltagger/setgazetteers%28_,for%29.md) method. The tagger uses its gazetteers to look up each term it processes. If a gazetteer has a label for a term, the tagger uses that label to tag the term, instead of inferring a tag itself.
 

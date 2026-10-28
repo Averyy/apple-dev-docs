@@ -20,7 +20,7 @@ A component that defines the reverberation of spatial audio sources.
 struct ReverbComponent
 ```
 
-#### Overview
+## Overview
 
 Bring your spatial audio to life by setting a reverb appropriate for your immersive environment. In visionOS, an acoustic simulation of a person’s real environment reverberates the spatial audio sources by default. When presenting your content in [`progressive`](../SwiftUI/immersionstyle/progressive.md) and [`full`](../SwiftUI/immersionstyle/full.md) immersive spaces, consider setting a reverb component to make your spatial audio sound like it exists within the environment that your visuals represent.
 

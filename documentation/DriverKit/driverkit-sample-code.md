@@ -4,7 +4,7 @@
 
 Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 
-#### Overview
+## Overview
 
 The DriverKit SDK provide a stable, secure platform on which to build device drivers for macOS and iPadOS. It provides the interfaces you need to support many types of hardware, including USB devices, HID devices, networking devices, audio devices, and more. Package your custom code in a DriverKit extension, which runs in user space and communicates with the kernel through the framework APIs. To install your DriverKit extension on macOS, deliver it inside an app and install it using the [System Extensions](../SystemExtensions/SystemExtensions.md) framework. For projects that run on iPadOS, the system locates the driver in your app bundle and installs the driver for you.
 

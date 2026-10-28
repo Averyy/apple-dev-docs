@@ -25,7 +25,7 @@ func insert(_ object: NSManagedObject)
 - (void) insertObject:(NSManagedObject *) object;
 ```
 
-#### Discussion
+## Discussion
 
 The managed object (`object`) is registered in the receiver with a temporary global ID. It is assigned a permanent global ID when changes are committed. If the current transaction is rolled back (for example, if the receiver is sent a [`rollback()`](./rollback%28%29.md) message) before a save operation, the object is unregistered from the receiver.
 

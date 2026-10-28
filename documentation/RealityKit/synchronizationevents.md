@@ -20,7 +20,7 @@ Events associated with network synchronization of scene information.
 enum SynchronizationEvents
 ```
 
-#### Overview
+## Overview
 
 For more information on subscribing to scene events, see `RealityKit/Scene/Event`.
 

@@ -19,7 +19,7 @@ class TVLockupView
 @interface TVLockupView : UIControl
 ```
 
-#### Overview
+## Overview
 
 A `TVLockupView` object consists of three views that operate as a single view. The content view typically contains a media item image, like a movie poster, with additional information in the header and footer views. The `TVLockupView` object expands when it comes into focus, using [`focusSizeIncrease`](./tvlockupview/focussizeincrease.md) and [`contentSize`](./tvlockupview/contentsize.md) to calculate the size increase. Provide sufficient `focusSizeIncrease` values so that your custom content doesn’t overlap other objects when the content comes into focus.
 

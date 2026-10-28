@@ -20,7 +20,7 @@ An optional duration that overrides the calculated duration.
 var trimDuration: TimeInterval? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default, which indicates that the animation stops after one play that spans [`duration`](./duration.md).
 

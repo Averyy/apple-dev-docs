@@ -14,11 +14,11 @@ Divides two values.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Division of two matrices is the product of  and the inverse of 
 
-#### Parameter Types
+## Parameter Types
 
 **Divide (float)**:
 

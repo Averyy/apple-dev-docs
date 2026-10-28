@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didModifyServices invalidat
 - (void) peripheral:(CBPeripheral *) peripheral didModifyServices:(NSArray<CBService *> *) invalidatedServices;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method whenever one or more services of a peripheral change. A peripheral’s services have changed if:
 

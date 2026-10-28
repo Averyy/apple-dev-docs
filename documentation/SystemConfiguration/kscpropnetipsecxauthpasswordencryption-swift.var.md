@@ -19,7 +19,7 @@ let kSCPropNetIPSecXAuthPasswordEncryption: CFString
 extern CFStringRef const kSCPropNetIPSecXAuthPasswordEncryption;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md). This key can accept the following constants:
 

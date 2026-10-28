@@ -21,7 +21,7 @@ Initializes the memory referenced by this pointer with the values starting at th
 func initialize(from source: UnsafePointer<Pointee>, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The region of memory starting at this pointer and covering `count` instances of the pointer’s `Pointee` type must be uninitialized or `Pointee` must be a trivial type. After calling `initialize(from:count:)`, the region is initialized.
 

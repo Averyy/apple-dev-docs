@@ -24,13 +24,13 @@ class HKHeartbeatSeriesSample
 @interface HKHeartbeatSeriesSample : HKSeriesSample
 ```
 
-#### Overview
+## Overview
 
 Use a [`HKHeartbeatSeriesQuery`](./hkheartbeatseriesquery.md) to access the underlying heartbeat data.
 
 The [`HKHeartbeatSeriesSample`](./hkheartbeatseriessample.md) class is a subclass of the [`HKSeriesSample`](./hkseriessample.md) class. These samples are immutable; you set the sample’s properties when you build them, and they can’t change.
 
-##### Extend Heartbeat Samples
+### Extend Heartbeat Samples
 
 Like many HealthKit classes, you shouldn’t subclass the [`HKHeartbeatSeriesSample`](./hkheartbeatseriessample.md) class. You may extend this class by adding metadata with custom keys to save related data used by your app.
 

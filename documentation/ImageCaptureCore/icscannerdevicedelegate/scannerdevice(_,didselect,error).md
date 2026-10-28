@@ -19,7 +19,7 @@ optional func scannerDevice(_ scanner: ICScannerDevice, didSelect functionalUnit
 - (void) scannerDevice:(ICScannerDevice *) scanner didSelectFunctionalUnit:(ICScannerFunctionalUnit *) functionalUnit error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 A functional unit is selected immediately after the scanner instantiates and in response to calling [`requestSelect(_:)`](../icscannerdevice/requestselect%28_%29.md).
 

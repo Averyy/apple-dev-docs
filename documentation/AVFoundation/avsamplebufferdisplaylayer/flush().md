@@ -26,7 +26,7 @@ func flush()
 - (void) flush;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`flush()`](../avqueuedsamplebufferrendering/flush%28%29.md) on the [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

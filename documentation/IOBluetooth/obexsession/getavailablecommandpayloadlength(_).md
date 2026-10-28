@@ -19,11 +19,11 @@ func getAvailableCommandPayloadLength(_ inOpCode: OBEXOpCode) -> OBEXMaxPacketLe
 - (OBEXMaxPacketLength) getAvailableCommandPayloadLength:(OBEXOpCode) inOpCode;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum amount of data a particular packet can handle, after accounting for any command overhead.
 
-#### Discussion
+## Discussion
 
 Each OBEX Command has a certain amount of overhead. Since the negotiated max packet length does not indicate what the maximum data amount you can send in a particular command’s packet, you can use this function to determine how much data to provide in optional headers or body data headers.
 

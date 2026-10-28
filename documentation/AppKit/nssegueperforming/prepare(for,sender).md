@@ -20,7 +20,7 @@ optional func prepare(for segue: NSStoryboardSegue, sender: Any?)
 - (void) prepareForSegue:(NSStoryboardSegue *) segue sender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing; you can override it to pass relevant data to the new view controller or window controller, based on the context of the segue. The `segue` object describes the transition and includes references to both controllers involved in the segue.
 

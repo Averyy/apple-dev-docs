@@ -24,7 +24,7 @@ var pushStreamNodes: [String : PHASEPushStreamNode] { get }
 @property (copy, readonly) NSDictionary<NSString *,PHASEPushStreamNode *> * pushStreamNodes;
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary populates a push-stream node for sound events that PHASE generates for [`PHASEPushStreamNodeDefinition`](../phasepushstreamnodedefinition.md) in your event node tree. The dictionary key is the stream-node definition’s [`identifier`](../phasedefinition/identifier.md).
 

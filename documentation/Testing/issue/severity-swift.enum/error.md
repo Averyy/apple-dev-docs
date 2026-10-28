@@ -16,7 +16,7 @@ The severity level for an issue which represents an error in a test.
 case error
 ```
 
-#### Discussion
+## Discussion
 
 An issue with error severity causes the test it’s associated with to be marked as a failure.
 

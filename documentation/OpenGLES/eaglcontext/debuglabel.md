@@ -24,7 +24,7 @@ var debugLabel: String? { get set }
 @property (nonatomic, copy, nullable) NSString * debugLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide a meaningful name for a context. This label, which appears in the Xcode OpenGL ES Frame Debugger interface, makes it easy for you to more easily keep track of different contexts when debugging a multicontext app.
 

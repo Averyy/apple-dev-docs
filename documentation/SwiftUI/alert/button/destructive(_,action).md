@@ -23,7 +23,7 @@ Creates an alert button with a style that indicates a destructive action.
 static func destructive(_ label: Text, action: (() -> Void)? = {}) -> Alert.Button
 ```
 
-#### Return Value
+## Return Value
 
 An alert button that indicates a destructive action.
 

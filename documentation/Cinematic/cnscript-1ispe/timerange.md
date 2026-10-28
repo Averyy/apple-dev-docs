@@ -19,7 +19,7 @@ The time range of the selected track.
 final var timeRange: CMTimeRange { get }
 ```
 
-#### Discussion
+## Discussion
 
 All frames, decisions, and detections are within this time range.
 

@@ -25,7 +25,7 @@ func xpc_array_get_data(_ xarray: xpc_object_t, _ index: Int, _ length: UnsafeMu
 extern const void *xpc_array_get_data(xpc_object_t xarray, size_t index, size_t *length);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying bytes at the specified index. NULL if the value at the specified index is not a data value.
 

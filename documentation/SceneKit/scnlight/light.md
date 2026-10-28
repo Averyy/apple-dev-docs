@@ -21,7 +21,7 @@ Creates a new light object.
 + (instancetype) light;
 ```
 
-#### Return Value
+## Return Value
 
 A new light object.
 

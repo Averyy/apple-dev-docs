@@ -19,7 +19,7 @@ var colorSpaceModel: NSColorSpace.Model { get }
 @property (readonly) NSColorSpaceModel colorSpaceModel;
 ```
 
-#### Discussion
+## Discussion
 
 See `Color Space Models` for a list of valid NSColorSpaceModel constants.
 

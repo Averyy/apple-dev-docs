@@ -19,7 +19,7 @@ var fragmentsStatus: MEFileInfo.FragmentsStatus { get set }
 @property (nonatomic) MEFileInfoFragmentsStatus fragmentsStatus;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MEFileInfo.FragmentsStatus.couldNotContainFragments`](./fragmentsstatus-swift.enum/couldnotcontainfragments.md).
 

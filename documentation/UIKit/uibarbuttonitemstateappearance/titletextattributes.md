@@ -23,7 +23,7 @@ var titleTextAttributes: [NSAttributedString.Key : Any] { get set }
 @property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * titleTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify font or color attributes for the text, UIKit supplies appropriate default values. For a list of possible keys, see [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
 

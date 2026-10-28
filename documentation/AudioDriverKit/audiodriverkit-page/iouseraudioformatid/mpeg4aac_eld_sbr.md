@@ -15,7 +15,7 @@ The MPEG-4 AAC Enhanced Low Delay audio object with SBR extension layer format.
 MPEG4AAC_ELD_SBR
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

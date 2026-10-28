@@ -24,7 +24,7 @@ var highlight: SWHighlight? { get set }
 @property (nonatomic, strong, readwrite, nullable) SWHighlight * highlight;
 ```
 
-#### Discussion
+## Discussion
 
 When your app sets this property to a new `highlight`, the system reloads the contents of the view.
 

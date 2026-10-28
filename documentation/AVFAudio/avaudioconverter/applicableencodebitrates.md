@@ -25,7 +25,7 @@ var applicableEncodeBitRates: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * applicableEncodeBitRates;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `nil` if you’re not encoding.
 

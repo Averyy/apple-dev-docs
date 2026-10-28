@@ -23,7 +23,7 @@ var isPaused: Bool { get set }
 
 - [Configuring a WatchKit Scene in a Storyboard](../configuring-a-watchkit-scene-in-a-storyboard.md)
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed.
 

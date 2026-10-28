@@ -21,7 +21,7 @@ Updates the element with identifier matching the new value.
 mutating func set(_ newValue: IKComponent.JointCollection.Element) -> IKComponent.JointCollection.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The previous value if the identifier was found, nil otherwise.
 

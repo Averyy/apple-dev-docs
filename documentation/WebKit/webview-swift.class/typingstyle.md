@@ -19,7 +19,7 @@ var typingStyle: DOMCSSStyleDeclaration! { get set }
 @property (nonatomic, strong) DOMCSSStyleDeclaration * typingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The typing style is reset automatically when the receiver’s selection changes.
 

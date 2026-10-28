@@ -22,7 +22,7 @@ final func setAngularVelocity(_ angularVelocity: Vector3D) async throws
 
 - [Modify rotation and positioning programmatically](../modify-rotation-and-positioning-behavior-programmatically.md)
 
-#### Discussion
+## Discussion
 
 The angular velocity is expressed in radians per second for pitch, yaw, and roll. This method works only when you disable system tracking.
 

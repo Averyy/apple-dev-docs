@@ -5,13 +5,13 @@
 
 Sync edits between an app with its own OpenUSD runtime and a Spatial Preview session using a shared layer as the exchange mechanism.
 
-#### Overview
+## Overview
 
 Spatial Preview uses [USDKit](../USDKit/USDKit.md) to manage a [`USDStage`](../USDKit/usdstage.md) on the Mac. Apps that use USDKit to access USD data automatically sync their edits with Spatial Preview sessions. When your app has its own USD runtime, the two apps don’t share memory or a stage cache. Writing a USD file to disk doesn’t notify USDKit of changes, and edits made on the connected Apple Vision Pro aren’t automatically visible to your app.
 
 Bridge the two runtimes using a shared [`USDLayer`](../USDKit/usdlayer.md) as an exchange mechanism. For each direction, app to device and device to app, the pattern is the same: write overrides into a thin edit layer, export it to disk, and use [`copy(from:to:in:)`](../USDKit/usdlayer/copy%28from,to,in%29.md) to propagate the changes into USDKit’s stage. [`USDPreviewSession`](./usdpreviewsession.md) watches the [`USDStage`](../USDKit/usdstage.md) for mutations and syncs only the changed data to the device.
 
-##### Set up the layer stack
+### Set up the layer stack
 
 Your USD layer stack on the Mac side consists of three files:
 
@@ -21,7 +21,7 @@ Your USD layer stack on the Mac side consists of three files:
 
 Create a [`USDPreviewSession`](./usdpreviewsession.md) to coordinate incremental USD synchronization over that connection.
 
-##### Sync edits from your app to the device
+### Sync edits from your app to the device
 
 When your external runtime detects a change, write the affected [`USDPrim`](../USDKit/usdprim.md) overrides as over-prims into the app-side edit layer and export that layer to the chosen exchange path on disk. Then call your bridge function to pull those edits into the USDKit stage.
 
@@ -48,7 +48,7 @@ For each prim under the root in the source layer, ensure a spec exists in the de
 
 Mark the function with [`@MainActor`](../Swift/mainactor.md) because all USDKit edit operations must run on the main actor. Dispatch to the main actor from any background thread before calling this function.
 
-##### Sync device edits back to your app
+### Sync device edits back to your app
 
 When a user manipulates objects on Apple Vision Pro, Spatial Preview writes those edits to the USDKit edit layer. In your bridge, read from the updated wrapper stage on an app-specific polling interval or in response to a [`USDPreviewSession`](./usdpreviewsession.md) event. Your app reads the updated layer file and applies its prim overrides to the external USD runtime inside the app.
 

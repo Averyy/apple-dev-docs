@@ -23,7 +23,7 @@ var contactIdentifier: String? { get set }
 @property (copy, nullable) NSString * contactIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When you use the contact’s [`identifier`](../../Contacts/cncontact/identifier.md) value for the optional [`contactIdentifier`](./contactidentifier.md) property, it enables a direct way to look up the associated contact.
 

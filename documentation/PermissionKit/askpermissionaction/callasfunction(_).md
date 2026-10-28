@@ -20,7 +20,7 @@ Sends a permission question to a parent or guardian.
 func callAsFunction<Topic>(_ question: PermissionQuestion<Topic>) async throws where Topic : QuestionTopic
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to present the system permission request UI. The method throws an error if the system can’t send the permission question.
 

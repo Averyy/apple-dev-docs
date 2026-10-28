@@ -21,7 +21,7 @@ The customization behavior of customizable tab view content.
 struct TabCustomizationBehavior
 ```
 
-#### Overview
+## Overview
 
 Use this type in conjunction with the [`customizationBehavior(_:for:)`](./tabcontent/customizationbehavior%28_,for%29.md) modifier.
 

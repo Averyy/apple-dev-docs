@@ -17,7 +17,7 @@ MLXArray index operations.
 enum MLXArrayIndexOperation
 ```
 
-#### Overview
+## Overview
 
 Typically produced internally by normal index operations:
 
@@ -27,7 +27,7 @@ let a = MLXArray(...)
 print(a[1 ..< 3, .ellipsis, 3])
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](./indexing.md)
 

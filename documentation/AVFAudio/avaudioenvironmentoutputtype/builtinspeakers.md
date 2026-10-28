@@ -24,7 +24,7 @@ case builtInSpeakers
 AVAudioEnvironmentOutputTypeBuiltInSpeakers
 ```
 
-#### Discussion
+## Discussion
 
 The output isn’t suitable for playback on other hardware.
 

@@ -24,7 +24,7 @@ static let parameterValue: CHHapticPattern.Key
 extern CHHapticPatternKey CHHapticPatternKeyParameterValue;
 ```
 
-#### Discussion
+## Discussion
 
 The range of possible values varies with the parameter.
 

@@ -23,7 +23,7 @@ func setViewControllers(_ viewControllers: [UIViewController]?, direction: UIPag
 - (void) setViewControllers:(NSArray<UIViewController *> *) viewControllers direction:(UIPageViewControllerNavigationDirection) direction animated:(BOOL) animated completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The view controllers passed to this method are those that will be visible after the animation has completed. Use a data source to provide additional view controllers to which users navigate.
 

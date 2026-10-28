@@ -23,7 +23,7 @@ var leadingPadding: CGFloat { get }
 @property (readonly) CGFloat leadingPadding;
 ```
 
-#### Discussion
+## Discussion
 
 This is with respect to according to the primary writing direction of the paragraph and the start of the lines in the paragraph.
 

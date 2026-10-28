@@ -21,7 +21,7 @@ The queue inherits its autorelease frequency from its target queue.
 case inherit
 ```
 
-#### Discussion
+## Discussion
 
 This option is the default behavior for queues you create.
 

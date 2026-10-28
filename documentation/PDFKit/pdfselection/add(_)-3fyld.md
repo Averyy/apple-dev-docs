@@ -24,7 +24,7 @@ func add(_ selections: [PDFSelection])
 - (void) addSelections:(NSArray<PDFSelection *> *) selections;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides better performance than multiple calls to `addSelection` if you need to add several selections to an existing selection. This is because the normalization of the selection (the removal of any overlaps between selections) occurs only once, after all selections have been added.
 

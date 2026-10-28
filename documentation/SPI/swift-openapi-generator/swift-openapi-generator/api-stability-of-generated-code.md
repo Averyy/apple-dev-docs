@@ -10,13 +10,13 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Understand the impact of changes to the OpenAPI document on generated Swift code.
 
-#### Overview
+## Overview
 
 Swift OpenAPI Generator generates client and server Swift code from an OpenAPI document. The generated code may change if the OpenAPI document is changed or a different version of the generator is used.
 
 This document outlines the API stability goals for the generated code to help you avoid unintentional build errors when updating the OpenAPI document.
 
-##### Example changes
+### Example changes
 
 There are three API boundaries to consider:
 
@@ -48,7 +48,7 @@ The table above is not exhaustive, but it shows a pattern:
 - Adding a new schema or a new operation is an additive, non-breaking change (†).
 - Adding a new response or content type is considered a breaking change (‡)(§).
 
-##### Avoid including the generated code in your public API
+### Avoid including the generated code in your public API
 
 Due to the complicated rules above, we recommend that you don’t publish the generated code for others to rely on.
 
@@ -56,7 +56,7 @@ If you do expose the generated code as part of your package’s API, we recommen
 
 Maintaining Swift library package that uses the generated code as an implementation detail is supported (and recommended), as long as no generated symbols are exported in your public API.
 
-###### Create a curated client library package
+#### Create a curated client library package
 
 Let’s consider an example where you’re creating a Swift library that provides a curated API for making the following API call:
 

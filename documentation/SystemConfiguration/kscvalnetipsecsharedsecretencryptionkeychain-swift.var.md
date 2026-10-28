@@ -19,7 +19,7 @@ let kSCValNetIPSecSharedSecretEncryptionKeychain: CFString
 extern CFStringRef const kSCValNetIPSecSharedSecretEncryptionKeychain;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetIPSecSharedSecretEncryption`](./kscpropnetipsecsharedsecretencryption-swift.var.md) key.
 

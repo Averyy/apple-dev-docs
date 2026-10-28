@@ -15,7 +15,7 @@ The width of the docking region, in meters.
 var width: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The docking region maintains a cinematic `2.4:1` width/height ratio.
 

@@ -13,7 +13,7 @@
 kSBCModePageCaching_ABPF_Bit = 6
 ```
 
-#### Discussion
+## Discussion
 
 ABPF Bit definition.
 

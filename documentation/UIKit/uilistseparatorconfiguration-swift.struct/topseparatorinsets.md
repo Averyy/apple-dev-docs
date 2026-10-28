@@ -18,7 +18,7 @@ Insets to apply to the top separator of the item the configuration applies to.
 var topSeparatorInsets: NSDirectionalEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`automaticInsets`](./automaticinsets.md).
 

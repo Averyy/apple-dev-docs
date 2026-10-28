@@ -21,7 +21,7 @@ A notification the system posts when a fragmented asset minder observes a change
 static let AVAssetTrackSegmentsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only for changes that occur after an asset’s track’s [`segments`](../../../AVFoundation/avassettrack/segments.md) property reaches a [`AVKeyValueStatus.loaded`](../../../AVFoundation/avkeyvaluestatus/loaded.md) status.
 

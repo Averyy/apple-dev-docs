@@ -24,7 +24,7 @@ var type: PHAssetResourceType { get }
 @property (nonatomic, assign, readonly) PHAssetResourceType type;
 ```
 
-#### Discussion
+## Discussion
 
 An asset can contain multiple resources, and different resources contribute to the asset in different ways. For details and examples, see [`PHAssetResourceType`](../phassetresourcetype.md).
 

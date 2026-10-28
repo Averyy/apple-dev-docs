@@ -20,7 +20,7 @@ The app’s current asset locale reservations.
 static var reservedLocales: [Locale] { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Before you can subscribe to assets supporting a module, you must reserve those assets’ locales. Please note, the locales returned by this method may be variants of the locales provided to [`reserve(locale:)`](./reserve%28locale%29.md).
 

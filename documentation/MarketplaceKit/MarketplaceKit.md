@@ -18,7 +18,7 @@ Create an alternative app marketplace, distribute your app on an alternative app
 - [Creating an alternative app marketplace](./creating-an-alternative-app-marketplace.md)
 - [Reauthenticating a person to manage apps](./reauthenticating-a-person-to-manage-apps.md)
 
-#### Overview
+## Overview
 
 An *alternative app marketplace* is an app from which someone can install apps from other developers, as an alternative to the App Store. MarketplaceKit enables alternative app marketplaces to install the apps they distribute to peoples’ devices. The framework also supports features that compose a quality browsing and installation experience, such as Spotlight Search and App Thinning. With the framework, you can manage existing app installations, convey download progress, update app licensing, and customize app search behavior.
 

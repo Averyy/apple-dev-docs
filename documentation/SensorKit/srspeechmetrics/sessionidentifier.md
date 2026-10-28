@@ -21,7 +21,7 @@ var sessionIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * sessionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For example, this property is an identifier for a phone call or Siri utterance.
 

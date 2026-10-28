@@ -23,7 +23,7 @@ var videoFrameRateRangeForReactionEffectsInProgress: AVFrameRateRange? { get }
 @property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForReactionEffectsInProgress;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike other video effects, enabling reaction effects doesn’t limit the stream’s frame rate because most of the time the system isn’t rendering the effect. The frame rate only ramps down when the system renders a reaction on the stream.
 

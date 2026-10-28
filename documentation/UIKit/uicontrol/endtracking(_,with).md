@@ -23,7 +23,7 @@ func endTracking(_ touch: UITouch?, with event: UIEvent?)
 - (void) endTrackingWithTouch:(UITouch *) touch withEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called at the end of a sequence of touch events inside the control’s bounds. Subclasses can override this method and use it to perform any actions relevant to the completion of the touch sequence. You should also use it to perform any cleanup associated with tracking the event.
 

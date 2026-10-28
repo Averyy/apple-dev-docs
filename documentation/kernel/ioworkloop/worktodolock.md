@@ -9,7 +9,7 @@
 IOSimpleLock *workToDoLock;
 ```
 
-#### Overview
+## Overview
 
 The spin lock that is used to guard the 'workToDo' variable.
 

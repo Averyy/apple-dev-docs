@@ -19,11 +19,11 @@ func changeCurrentFolderBackward() -> OBEXError
 - (OBEXError) changeCurrentFolderBackward;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess or kOBEXSessionBusyError initially. Further results returned through the fileTransferServicesPathChangeComplete: delegate method if initially successful.
 
-#### Discussion
+## Discussion
 
 Equivalent to ‘cd ..’ only if remote path is not already at root.
 

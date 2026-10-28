@@ -20,7 +20,7 @@ var requiresManagedDevice: Bool { get set }
 @property (nonatomic, assign) BOOL requiresManagedDevice;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, the assessment session will only start if the device is enrolled in a Mobile Device Management (MDM) solution. Defaults to `false`.
 

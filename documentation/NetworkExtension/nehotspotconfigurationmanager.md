@@ -23,7 +23,7 @@ class NEHotspotConfigurationManager
 @interface NEHotspotConfigurationManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 When your app creates a new hotspot configuration using [`NEHotspotConfiguration`](./nehotspotconfiguration.md) and applies it to a Wi-Fi network or attempts to update a previously configured network, the device prompts the user for approval. Without explicit user consent, your app can’t make configuration changes.
 

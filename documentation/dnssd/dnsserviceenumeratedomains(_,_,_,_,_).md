@@ -25,11 +25,11 @@ func DNSServiceEnumerateDomains(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, 
 DNSServiceErrorType DNSServiceEnumerateDomains(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, DNSServiceDomainEnumReply callBack, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is not invoked and the DNSServiceRef is not initialized).
 
-#### Discussion
+## Discussion
 
 The enumeration MUST be cancelled via [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md) when no more domains are to be found.
 

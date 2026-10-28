@@ -21,7 +21,7 @@ class CTSubscriberInfo
 @interface CTSubscriberInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`CTSubscriber`](./ctsubscriber.md) instances provided by this class to identify individual subscribers by their [`carrierToken`](./ctsubscriber/carriertoken.md) or [`identifier`](./ctsubscriber/identifier.md) properties.
 

@@ -21,7 +21,7 @@ Affine transform information that an image-alignment request produces.
 struct ImageTranslationAlignmentObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from a [`TrackTranslationalImageRegistrationRequest`](./tracktranslationalimageregistrationrequest.md), informing the [`alignmentTransform`](./imagetranslationalignmentobservation/alignmenttransform.md) performed to align the input images.
 

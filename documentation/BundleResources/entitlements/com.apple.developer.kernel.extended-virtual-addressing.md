@@ -16,7 +16,7 @@ A Boolean value that indicates whether the app may access an extended address sp
 - **Name**: `com.apple.developer.kernel.extended-virtual-addressing` (Extended Virtual Addressing)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use this entitlement if your app has specific needs that require a larger addressable space. For example, games that memory map assets to stream to the GPU may benefit from a larger address space.
 

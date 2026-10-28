@@ -21,11 +21,11 @@ Returns a rectangle that results from applying the specified rotation.
 static SPRect3D SPRect3DRotate(SPRect3D rect, SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from applying the specified rotation.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling [`rotated(by:around:)`](./rect3d/rotated%28by,around%29-3ih62.md) with a zero vector for the pivot.
 

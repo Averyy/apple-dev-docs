@@ -26,11 +26,11 @@ func CFHostGetNames(_ theHost: CFHost, _ hasBeenResolved: UnsafeMutablePointer<D
 extern CFArrayRefCFHostGetNames(CFHostRef theHost, Boolean *hasBeenResolved);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the of names of `theHost`, or `NULL` if no names were available.
 
-#### Discussion
+## Discussion
 
 This function gets the names in a thread-safe way, but the resulting data is not thread-safe. The data is returned as a “get” as opposed to a copy, so the data is not safe if the CFHost is altered from another thread.
 

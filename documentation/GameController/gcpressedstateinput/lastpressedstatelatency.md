@@ -25,7 +25,7 @@ var lastPressedStateLatency: TimeInterval { get }
 @property (readonly) NSTimeInterval lastPressedStateLatency;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property as a minimum latency value that may not include latency that accrues on the device or when it transmits the event.
 

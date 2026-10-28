@@ -20,7 +20,7 @@ func setIntAttribute(_ attributeTag: Int, value val: Int, forGlyphAt glyphIndex:
 - (void) setIntAttribute:(NSInteger) attributeTag value:(NSInteger) val forGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Custom attributes are glyph attributes such as `NSGlyphInscription` or attributes defined by subclasses. Subclasses that define their own custom attributes must override this method and provide their own storage for the attribute values. Nonnegative tags are reserved; you can define your own attributes with negative tags and set values using this method.
 

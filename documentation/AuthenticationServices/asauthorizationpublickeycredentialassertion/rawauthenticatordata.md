@@ -25,7 +25,7 @@ var rawAuthenticatorData: Data! { get }
 @property (nonatomic, copy, readonly) NSData * rawAuthenticatorData;
 ```
 
-#### Discussion
+## Discussion
 
 This authenticator data object contains additional information about the credential. To learn more, see the [W3C Web Authentication specification](https://www.w3.org/TR/webauthn-2/#authenticator-data).
 

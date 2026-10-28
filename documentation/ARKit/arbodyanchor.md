@@ -20,7 +20,7 @@ class ARBodyAnchor
 @interface ARBodyAnchor : ARAnchor
 ```
 
-#### Overview
+## Overview
 
 This [`ARAnchor`](./aranchor.md) subclass tracks the movement of a single person. You enable body tracking by running your session using [`ARBodyTrackingConfiguration`](./arbodytrackingconfiguration.md).
 
@@ -28,7 +28,7 @@ When ARKit recognizes a person in the back camera feed, it calls your delegate�
 
 You can also check within the frame’s [`anchors`](./arframe/anchors.md) for a body that ARKit is tracking.
 
-##### Place a Skeleton on a Surface
+### Place a Skeleton on a Surface
 
 Because a body anchor’s origin maps to the hip joint, you calculate the current offset of the feet to the hip to place the body’s skeleton on a surface. By passing the foot joint index to [`jointModelTransforms`](./arskeleton3d/jointmodeltransforms-dno4.md), you get the foot’s offset from skeleton’s origin.
 

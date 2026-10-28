@@ -25,11 +25,11 @@ init?(path: String)
 - (instancetype) initWithPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSBundle` object initialized to correspond to `fullPath`. This method initializes and returns a new instance only if there is no existing bundle associated with `fullPath`, otherwise it deallocates `self` and returns the existing object. If `fullPath` doesn’t exist or the user doesn’t have access to it, returns `nil`.
 
-#### Discussion
+## Discussion
 
 It’s not necessary to allocate and initialize an instance for the main bundle; use the [`main`](./main.md) class method to get this instance. You can also use the [`bundleWithPath:`](../nsbundle/bundlewithpath_.md) class method to obtain a bundle identified by its directory path.
 

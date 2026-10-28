@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the specified code unit is a high-sur
 static func isLeadSurrogate(_ x: Unicode.UTF16.CodeUnit) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `x` is a high-surrogate code unit; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Here’s an example of checking whether each code unit in a string’s `utf16` view is a lead surrogate. The `apple` string contains a single emoji character made up of a surrogate pair when encoded in UTF-16.
 

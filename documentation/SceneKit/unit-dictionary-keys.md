@@ -5,7 +5,7 @@
 
 Metadata describing the unit of measurement used in a scene file, used with the [`SCNSceneSourceAssetUnitKey`](./scnscenesourceassetunitkey.md) key.
 
-#### Overview
+## Overview
 
 By default, units of measurement for SceneKit are entirely arbitrary. A geometry’s vertex data is defined in whatever unit system and coordinate space is convenient for its author. The nodes in a scene each define their own space as is convenient for organizing the scene’s contents, and the camera that views a scene and the renderer that draws it determine the correspondence between the scene’s world and the pixels on a display.
 

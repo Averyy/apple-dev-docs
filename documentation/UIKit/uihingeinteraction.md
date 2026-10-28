@@ -24,7 +24,7 @@ class UIHingeInteraction
 @interface UIHingeInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Add a `UIHingeInteraction` to a view to receive hinge state updates. The interaction’s handler is called when the hinge state changes, or when the interaction moves between hierarchies. When the interaction moves out of a hierarchy that provides hinge updates, the update’s `hinge` is nil.
 

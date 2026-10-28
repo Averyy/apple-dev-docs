@@ -18,7 +18,7 @@ A button style that doesn’t pad the content, and applies a Liquid Glass effect
 
 Available when `Self` is `CardButtonStyle`.
 
-#### Discussion
+## Discussion
 
 This button style applies a Liquid Glass effect when the button gains focus. This style doesn’t apply any intrinsic padding to its contents, so images, text, and other content display edge-to-edge.
 

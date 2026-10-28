@@ -18,7 +18,7 @@ Configures handshake and timeout settings.
 func setHandshake(count: UInt32, timeoutMs: UInt32)
 ```
 
-#### Discussion
+## Discussion
 
 When RealityKit begins syncing with a connected device, it sends that device a special message, called a *handshake packet*, over the network and waits for a response. Once it receives the correct response, it begins syncing the local RealityKit scene with the other connected app.
 

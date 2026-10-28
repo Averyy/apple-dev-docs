@@ -22,7 +22,7 @@ var mediaTypes: MPMediaType { get }
 @property (nonatomic, readonly) MPMediaType mediaTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MPMediaType`](../mpmediatype.md) enumeration in [`MPMediaItem`](../mpmediaitem.md) lists the media types.
 

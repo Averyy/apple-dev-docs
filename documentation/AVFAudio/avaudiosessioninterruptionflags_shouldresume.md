@@ -24,7 +24,7 @@ var AVAudioSessionInterruptionFlags_ShouldResume: Int { get }
 AVAudioSessionInterruptionFlags_ShouldResume
 ```
 
-#### Discussion
+## Discussion
 
 Your app can resume the interrupted audio operation. See [Handling audio interruptions](./handling-audio-interruptions.md) for more information.
 

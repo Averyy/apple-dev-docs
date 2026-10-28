@@ -20,7 +20,7 @@ Create a Core Image vector object with values provided in a string representatio
 + (instancetype) vectorWithString:(NSString *) representation;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIVector`](../civector.md) object.
 

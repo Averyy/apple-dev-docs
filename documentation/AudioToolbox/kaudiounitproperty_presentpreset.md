@@ -24,7 +24,7 @@ var kAudioUnitProperty_PresentPreset: AudioUnitPropertyID { get }
 kAudioUnitProperty_PresentPreset
 ```
 
-#### Discussion
+## Discussion
 
 A read/write [`AUPreset`](./aupreset.md) data structure valid on the audio unit global scope, The `presetName` field in the struct is of type [`CFString`](../CoreFoundation/cfstring.md) and follows Core Foundation memory semantics.
 

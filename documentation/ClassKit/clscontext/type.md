@@ -23,7 +23,7 @@ var type: CLSContextType { get }
 @property (nonatomic, assign, readonly) CLSContextType type;
 ```
 
-#### Discussion
+## Discussion
 
 The context type helps teachers to understand what kind of assignable content you offer. The type doesn’t affect the behavior of the context, but it does appear to teachers as they browse your app’s content. This helps teachers better understand your content and how they might use it as part of their own lesson plans.
 

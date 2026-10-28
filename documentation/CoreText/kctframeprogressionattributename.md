@@ -25,7 +25,7 @@ let kCTFrameProgressionAttributeName: CFString
 extern CFStringRef const kCTFrameProgressionAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFNumber`](../CoreFoundation/cfnumber.md) object containing a [`CTFrameProgression`](./ctframeprogression.md) constant. The default is `kCTFrameProgressionTopToBottom`.
 

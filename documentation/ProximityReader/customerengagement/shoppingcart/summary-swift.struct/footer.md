@@ -17,7 +17,7 @@ A multiline text at the bottom of the summary section.
 let footer: String?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for legal text or a short message to the customer.
 

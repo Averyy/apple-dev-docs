@@ -22,7 +22,7 @@ var view: UIView { get }
 @property (nonatomic, readonly) UIView * view;
 ```
 
-#### Discussion
+## Discussion
 
 The drag item preview uses the view to create a visual snapshot that’s displayed while the user drags the item across the screen. Changes you make to the view don’t appear in the preview after the snapshot is taken, and the preview doesn’t make changes or move the view. Any visual changes or movement made by the preview are applied to the snapshot only.
 

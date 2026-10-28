@@ -20,7 +20,7 @@ Attaches the input to the writer and returns a tuple with an input receiver for 
 func inputReceiverRequestingMultiPass(for input: AVAssetWriterInput) -> sending (AVAssetWriterInput.SampleBufferReceiver, AVAssetWriterInput.MultiPassController)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with an input receiver for writing sample buffers, and an associated multi pass controller.
 

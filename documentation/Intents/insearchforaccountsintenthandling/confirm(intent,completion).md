@@ -27,7 +27,7 @@ optional func confirm(intent: INSearchForAccountsIntent) async -> INSearchForAcc
 - (void) confirmSearchForAccounts:(INSearchForAccountsIntent *) intent completion:(void (^)(INSearchForAccountsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can perform the search using the given parameters, but do not perform the search yet. If the search involves contacting a remote server, you should also validate that the server is available. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to perform the search.
 

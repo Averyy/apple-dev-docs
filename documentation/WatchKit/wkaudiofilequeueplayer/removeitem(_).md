@@ -19,7 +19,7 @@ func removeItem(_ item: WKAudioFilePlayerItem)
 - (void) removeItem:(WKAudioFilePlayerItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 If `item` is currently playing, the queue stops playback of item before removing it. It then begins playing the next item in the queue.
 

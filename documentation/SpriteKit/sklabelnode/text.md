@@ -29,7 +29,7 @@ var text: String? { get set }
 
 - [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 This property is ignored if attributedText is defined.
 

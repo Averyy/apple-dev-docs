@@ -16,11 +16,11 @@ Send a command to the UPS.
 IOReturn (*sendCommand)(void *thisPointer, CFDictionaryRef command);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Command keys are defined in IOPSKeys.h and begin with kIOPSCommand. An error should be returned if your device does not know how to respond to a command.
 

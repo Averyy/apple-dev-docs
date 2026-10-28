@@ -16,11 +16,11 @@
 kern_return_t Disassociate();
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Disassociate the current thread from the eventlink. This is not real-time safe.
 

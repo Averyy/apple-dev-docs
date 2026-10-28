@@ -15,11 +15,11 @@ Returns an element representing a custom callout.
 calloutElementForAnnotation?(annotation: Annotation): HTMLElement;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns a DOM element to use as the callout element in place of the standard callout bubble. This callout element populates with the information to display, including the information from the annotation.
 
-#### Discussion
+## Discussion
 
 If you don’t prevent the callout from appearing, MapKit JS calls this method on the annotation’s callout delegate (if the delegate is an object and its [`calloutElementForAnnotation()`](./calloutelementforannotation.md) property is a function) with the annotation as a parameter.
 

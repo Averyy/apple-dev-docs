@@ -5,7 +5,7 @@
 
 Develop your app for alternative distribution according to the varying features that specific geographic regions support.
 
-#### Overview
+## Overview
 
 Participating in alternative distribution has different requirements depending on the geographic region, including entitlement requests, supported devices or features, and availability of specific API. Review the differences for the regions in which you expect to offer your app, and plan for them in development.
 
@@ -13,7 +13,7 @@ An alternative app marketplace can reference [`catalogRegion`](./applibrary/cata
 
 An app that installs from an alternative app marketplace can reference [`eligibilityRegion`](./appdistributor/eligibilityregion.md) to determine if it needs to report transactions for the Core Technology Commission.
 
-#### Develop for alternative distribution in Japan and Brazil
+## Develop for alternative distribution in Japan and Brazil
 
 In Japan and Brazil, you can distribute your app on an alternative app marketplace—or create one—according to the following region-specific criteria.
 
@@ -25,7 +25,7 @@ Only alternative app marketplaces install from a website. When you receive appro
 
 In iOS 26.2 and later for Japan, and iOS 26.5 and later for Brazil, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](../BundleResources/entitlements/com.apple.developer.web-browser.md)) can test the installation of app marketplaces.
 
-#### Develop for alternative distribution in the European Union
+## Develop for alternative distribution in the European Union
 
 In the European Union, you can distribute your app on an alternative app marketplace, create a marketplace, or distribute an app from your website according to the following region-specific criteria.
 

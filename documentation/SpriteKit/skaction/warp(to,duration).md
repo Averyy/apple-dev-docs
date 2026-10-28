@@ -29,11 +29,11 @@ class func warp(to warp: SKWarpGeometry, duration: TimeInterval) -> SKAction?
 
 - [Animate the Warping of a Sprite](../animate-the-warping-of-a-sprite.md)
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 The [`numberOfColumns`](../skwarpgeometrygrid/numberofcolumns.md) and [`numberOfRows`](../skwarpgeometrygrid/numberofrows.md) in the node’s current geometry should match those of the specified geometry.
 

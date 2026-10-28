@@ -22,11 +22,11 @@ convenience init(rawPixelFormatType: OSType, processedFormat: [String : Any]?, b
 + (instancetype) photoBracketSettingsWithRawPixelFormatType:(OSType) rawPixelFormatType processedFormat:(NSDictionary<NSString *,id> *) processedFormat bracketedSettings:(NSArray<__kindof AVCaptureBracketedStillImageSettings *> *) bracketedSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new photo settings object.
 
-#### Discussion
+## Discussion
 
 To request bracketed image capture, create an array of [`AVCaptureBracketedStillImageSettings`](../avcapturebracketedstillimagesettings.md) objects, each of which describes a variation in capture settings to use for one exposure in the bracket, and pass that array for the `bracketedSettings` parameter. The number of bracketed settings objects in that array determines the number of exposures in the capture bracket.
 

@@ -24,11 +24,11 @@ class func hatchedScreen() -> any CIFilter & CIHatchedScreen
 + (CIFilter<CIHatchedScreen> *) hatchedScreenFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a hatched screen filter to an image. The effect generates a monochrome image containing a series of lines in hatched pattern to create detail. The halftone effect is a set of lines, dots, or circles that contain detail. When viewing the image from a distance, the markings blend together, creating the illusion of continuous lines and shapes. The effect is often used in print media for more efficient printing.
 

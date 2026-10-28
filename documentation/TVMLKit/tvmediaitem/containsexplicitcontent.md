@@ -21,7 +21,7 @@ var containsExplicitContent: Bool { get }
 @property (nonatomic, readonly) BOOL containsExplicitContent;
 ```
 
-#### Discussion
+## Discussion
 
 This property is ignored when the [`type`](./type.md) is `video`.
 

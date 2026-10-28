@@ -19,7 +19,7 @@ func hv_gic_get_spi_interrupt_range(_ spi_intid_base: UnsafeMutablePointer<UInt3
 extern hv_return_t hv_gic_get_spi_interrupt_range(uint32_t *spi_intid_base, uint32_t *spi_intid_count);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

@@ -19,7 +19,7 @@ Returns a mutable, raw view of this array’s storage.
 mutating func mutableRawView() -> NDArray.MutableRawView
 ```
 
-#### Return Value
+## Return Value
 
 A mutable raw view of the array’s underlying bytes.
 

@@ -5,11 +5,11 @@
 
 Add particle effects to your app by creating repeatable particles in Xcode’s editor, or in code.
 
-#### Overview
+## Overview
 
 Add special effects to your app, such as glittering or realistic fire with smoke, using particle effects. You create and configure particle effects using Xcode’s SpriteKit Particle Editor, or in code. A benefit of using the editor is that you can repeat the particles in different places across your app without duplicating the code.
 
-##### Create Emitters with the Particle Editor
+### Create Emitters with the Particle Editor
 
 In most cases, you never need to configure an emitter node directly in your game. Instead, you use Xcode to configure an emitter node’s properties. As you change the behavior of the emitter node, Xcode immediately provides you an updated visual effect. When complete, Xcode archives the configured emitter. Then, at runtime, your game uses this archive to instantiate a new emitter node.
 
@@ -42,7 +42,7 @@ func newSmokeEmitter() -> SKEmitterNode? {
 }
 ```
 
-##### Configure Particles in Code
+### Configure Particles in Code
 
 The [`SKEmitterNode`](./skemitternode.md) class provides many properties for configuring an emitter node’s behavior. The Xcode emitter editor sets the same property values. You can also create and configure your own emitter, or you can take an emitter node created in the Particle Emitter Editor, load it, and change its property values.
 

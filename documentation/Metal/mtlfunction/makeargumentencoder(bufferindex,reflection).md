@@ -27,7 +27,7 @@ func makeArgumentEncoder(bufferIndex: Int, reflection: AutoreleasingUnsafeMutabl
 - (id<MTLArgumentEncoder>) newArgumentEncoderWithBufferIndex:(NSUInteger) bufferIndex reflection:(MTLAutoreleasedArgument*) reflection;
 ```
 
-#### Discussion
+## Discussion
 
 Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](../mtlargumentencoder.md) object need to match the structure of the argument buffer located at the function’s specified buffer index.
 

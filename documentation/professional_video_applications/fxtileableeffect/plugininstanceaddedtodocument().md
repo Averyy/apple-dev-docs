@@ -19,7 +19,7 @@ optional func pluginInstanceAddedToDocument()
 - (void) pluginInstanceAddedToDocument;
 ```
 
-#### Discussion
+## Discussion
 
 Called when a new plug-in instance is created or a document is loaded and an existing instance is deserialized. When the host calls this method, the plug-in is a part of the document and the various API objects work as expected.
 

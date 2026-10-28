@@ -6,7 +6,7 @@
 
 An atom that defines the portions of the media that are to be used to build up a track for a movie.
 
-#### Overview
+## Overview
 
 See [`Edit atom`](../edit_atom.md).
 

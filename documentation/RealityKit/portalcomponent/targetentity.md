@@ -20,7 +20,7 @@ The root entity for the portal’s target world.
 var targetEntity: Entity? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the target entity is valid and has a [`WorldComponent`](../worldcomponent.md), the portal renders with the target entity and its hierarchy tree.
 

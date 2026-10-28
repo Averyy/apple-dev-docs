@@ -21,7 +21,7 @@ The names of fields to include in the push notification’s payload.
 @property (copy, nullable) NSArray<NSString *> * desiredKeys;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of strings, each of which corresponds to the name of a field in the record that triggers the notification. When the system receives a notification, it includes the keys, and their corresponding values. You can request a maximum of three keys.
 

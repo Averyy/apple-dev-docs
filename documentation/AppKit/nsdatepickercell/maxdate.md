@@ -19,7 +19,7 @@ var maxDate: Date? { get set }
 @property (copy, nullable) NSDate * maxDate;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `nil` if you want to allow any value for the maximum date.
 

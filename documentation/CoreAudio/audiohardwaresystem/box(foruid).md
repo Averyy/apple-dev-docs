@@ -14,7 +14,7 @@
 func box(forUID UID: String) throws -> AudioHardwareBox?
 ```
 
-#### Return Value
+## Return Value
 
 The AudioHardwareBox that corresponds with the given UID, or nil if the UID does not correspond with any box object.
 

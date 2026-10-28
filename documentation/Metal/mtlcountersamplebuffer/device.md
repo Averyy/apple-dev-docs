@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 You can store a GPU device’s counter set data only with a counter sample buffer that you create from the same device.
 

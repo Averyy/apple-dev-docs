@@ -25,7 +25,7 @@ var avAudioNode: AVAudioNode? { get set }
 @property (nonatomic, retain, nullable) AVAudioNode * avAudioNode;
 ```
 
-#### Discussion
+## Discussion
 
 The AV audio node must refer to an [`AVAudioEngine`](../../AVFAudio/avaudioengine.md) sound graph from a single sound source or URL.
 

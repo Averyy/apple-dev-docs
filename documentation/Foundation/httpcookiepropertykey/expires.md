@@ -25,7 +25,7 @@ static let expires: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieExpires;
 ```
 
-#### Discussion
+## Discussion
 
 This cookie attribute is only used for Version 0 cookies. This cookie attribute is optional.
 

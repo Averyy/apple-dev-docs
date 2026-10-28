@@ -19,7 +19,7 @@ func presentError(_ error: any Error) -> Bool
 - (BOOL) presentError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The alert displays information found in the [`NSError`](../../Foundation/nserror.md) object `error`; this information can include error description, recovery suggestion, failure reason, and button titles (all localized). The method returns [`true`](../../Swift/true.md) if error recovery succeeded and [`false`](../../Swift/false.md) otherwise. For error recovery to be attempted, an recovery-attempter object (that is, an object conforming to the `NSErrorRecoveryAttempting` informal protocol) must be associated with `error`.
 

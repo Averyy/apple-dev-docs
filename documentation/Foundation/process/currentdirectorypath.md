@@ -21,7 +21,7 @@ var currentDirectoryPath: String { get set }
 @property (copy) NSString * currentDirectoryPath;
 ```
 
-#### Discussion
+## Discussion
 
 If this method isn’t used, the current directory is inherited from the process that created the receiver. This method raises an `NSInvalidArgumentException` if the receiver has already been launched.
 

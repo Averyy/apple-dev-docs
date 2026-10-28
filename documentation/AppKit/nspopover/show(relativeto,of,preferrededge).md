@@ -19,7 +19,7 @@ func show(relativeTo positioningRect: NSRect, of positioningView: NSView, prefer
 - (void) showRelativeToRect:(NSRect) positioningRect ofView:(NSView *) positioningView preferredEdge:(NSRectEdge) preferredEdge;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md) if [`contentViewController`](./contentviewcontroller.md) or the view controller’s view is `nil`. If the popover is already being shown, this method updates the anchored view, rectangle, and preferred edge. If the positioning view is not visible, this method does nothing.
 

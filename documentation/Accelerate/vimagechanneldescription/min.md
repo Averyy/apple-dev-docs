@@ -25,7 +25,7 @@ var min: CGFloat
 CGFloat min;
 ```
 
-#### Discussion
+## Discussion
 
 The vImage library clamps values less than the minimum to the minimum.
 

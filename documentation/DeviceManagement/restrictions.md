@@ -21,13 +21,13 @@ The payload that configures restrictions on a device.
 object Restrictions
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.applicationaccess` as the payload type.
 
 > ❗ **Important**:  The system allows multiple Restrictions payloads. However, don’t attempt to manage the same restriction in different payloads. Doing so results in unexpected behavior.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ Specify `com.apple.applicationaccess` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

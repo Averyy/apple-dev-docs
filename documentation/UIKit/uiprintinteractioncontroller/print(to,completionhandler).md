@@ -22,11 +22,11 @@ func print(to printer: UIPrinter, completionHandler completion: UIPrintInteracti
 - (BOOL) printToPrinter:(UIPrinter *) printer completionHandler:(UIPrintInteractionCompletionHandler) completion;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if printing was successful or [`false`](../../Swift/false.md) if there was a problem.
 
-#### Discussion
+## Discussion
 
 This method starts the print job and displays the printing progress indicator to the user. This method associates the current printing information (available in the [`printInfo`](./printinfo.md) property) with the job but disables duplex printing. Upon completion of the print job, the print interaction controller executes the block in the `completion` parameter.
 

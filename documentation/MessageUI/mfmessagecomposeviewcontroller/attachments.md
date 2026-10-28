@@ -22,7 +22,7 @@ var attachments: [[AnyHashable : Any]]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSDictionary *> * attachments;
 ```
 
-#### Discussion
+## Discussion
 
 Each attachment is described by an [`NSDictionary`](../../Foundation/nsdictionary.md) object in the `attachments` array. To retrieve the alternate file name for an attachment from its dictionary, use the [`MFMessageComposeViewControllerAttachmentAlternateFilename`](../mfmessagecomposeviewcontrollerattachmentalternatefilename.md) key.
 

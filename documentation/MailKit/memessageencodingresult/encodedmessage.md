@@ -28,7 +28,7 @@ var encodedMessage: MEEncodedOutgoingMessage? { get }
 @property (atomic, copy, readonly, nullable) MEEncodedOutgoingMessage * encodedMessage;
 ```
 
-#### Discussion
+## Discussion
 
 If the message security handler doesn’t need to apply security measures to the outgoing message, the value of this property is `nil`.
 

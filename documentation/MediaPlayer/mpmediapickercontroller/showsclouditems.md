@@ -21,7 +21,7 @@ var showsCloudItems: Bool { get set }
 @property (nonatomic) BOOL showsCloudItems;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the picker shows available iCloud Music Library items, including purchased items, imported content, and Apple Music subscription content. When set to [`false`](../../Swift/false.md), the picker only shows content downloaded to the device. The default value is [`true`](../../Swift/true.md).
 

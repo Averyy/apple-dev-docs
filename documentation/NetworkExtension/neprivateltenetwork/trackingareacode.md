@@ -22,7 +22,7 @@ var trackingAreaCode: String? { get set }
 @property (copy, nullable) NSString * trackingAreaCode;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only applicable for band 48 private LTE networks.
 

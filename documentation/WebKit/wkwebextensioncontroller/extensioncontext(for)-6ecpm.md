@@ -23,7 +23,7 @@ func extensionContext(for extension: WKWebExtension) -> WKWebExtensionContext?
 - (WKWebExtensionContext *) extensionContextForExtension:(WKWebExtension *) extension;
 ```
 
-#### Return Value
+## Return Value
 
 An extension context or `nil` if no match was found.
 

@@ -12,11 +12,11 @@ Registers the audio accessory with the system and activates its configured capab
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) static func register(_ accessory: ASAccessory, _ configuration: AccessoryControlDevice.Configuration) async throws
+nonisolated(nonsending)
+static func register(_ accessory: ASAccessory, _ configuration: AccessoryControlDevice.Configuration) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Call this method only from your container app.
 

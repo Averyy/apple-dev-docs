@@ -24,7 +24,7 @@ let HMCharacteristicTypeSulphurDioxideDensity: String
 extern NSString * const HMCharacteristicTypeSulphurDioxideDensity;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a number in units of micrograms per cubic meter.
 

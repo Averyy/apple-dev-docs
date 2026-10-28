@@ -24,7 +24,7 @@ class NEVPNConnection
 @interface NEVPNConnection : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NEVPNConnection`](./nevpnconnection.md) objects are not instantiated directly. Instead, each `NEVPNManager` object has an associated [`NEVPNConnection`](./nevpnconnection.md) object as a read-only property.
 

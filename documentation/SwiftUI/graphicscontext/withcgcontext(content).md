@@ -21,7 +21,7 @@ Provides a Core Graphics context that you can use as a proxy to draw into this c
 func withCGContext(content: (CGContext) throws -> Void) rethrows
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to use existing drawing code that relies on Core Graphics primitives.
 

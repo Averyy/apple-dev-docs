@@ -22,7 +22,7 @@ class let touchBarAudioOutputMuteTemplateName: String
 extern NSImageName const NSImageNameTouchBarAudioOutputMuteTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for audio output mute](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825104@2x.png)
 

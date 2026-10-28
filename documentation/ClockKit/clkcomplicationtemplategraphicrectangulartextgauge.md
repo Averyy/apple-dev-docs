@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicRectangularTextGauge
 @interface CLKComplicationTemplateGraphicRectangularTextGauge : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family. [Figure 1](./clkcomplicationtemplategraphicrectangulartextgauge.md#3030706) shows the layout of the image and where the template might appear on the clock face.
 

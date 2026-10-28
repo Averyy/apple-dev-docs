@@ -20,7 +20,7 @@ Resolves this split strategy for a specific element count.
 func resolve(count: Int) -> (ratio: Double, seed: Int)
 ```
 
-#### Return Value
+## Return Value
 
 The split fraction and the random seed to use.
 

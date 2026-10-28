@@ -19,7 +19,7 @@ A root directory of labeled directories for your data set.
 case labeledDirectories(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Labeled directories can be used to organize textual inputs. Just like the data source used with the image classifier, place the collected text inputs of the same kind in a directory. Name that directory with the label appropriate for the textual inputs.
 

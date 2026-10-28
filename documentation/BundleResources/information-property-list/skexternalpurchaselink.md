@@ -20,7 +20,7 @@ A dictionary that contains URLs to websites where people using your app can make
 - **Name**: `SKExternalPurchaseLink`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](../entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement.
 

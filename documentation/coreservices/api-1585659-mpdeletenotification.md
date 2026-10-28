@@ -15,11 +15,11 @@ Removes a kernel notification.
 OSStatus MPDeleteNotification(MPNotificationID notificationID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 Also see the function  [`MPCreateNotification`](./api-1585723-mpcreatenotification.md). 
 

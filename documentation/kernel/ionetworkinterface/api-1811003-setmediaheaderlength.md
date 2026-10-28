@@ -12,11 +12,11 @@ virtual bool setMediaHeaderLength(
  UInt8length );
 ```
 
-#### Return Value
+## Return Value
 
 Always returns true.
 
-#### Overview
+## Overview
 
 Calls `ifnet_set_hdrlen` if interface is attached to the network stack, and updates the `kIOMediaHeaderLength` property using the provided value.
 

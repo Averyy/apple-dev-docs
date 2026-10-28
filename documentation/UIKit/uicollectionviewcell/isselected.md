@@ -23,7 +23,7 @@ var isSelected: Bool { get set }
 @property (nonatomic, getter=isSelected) BOOL selected;
 ```
 
-#### Discussion
+## Discussion
 
 This property manages the selection state of the cell only. The default value of this property is [`false`](../../Swift/false.md), which indicates an unselected state.
 

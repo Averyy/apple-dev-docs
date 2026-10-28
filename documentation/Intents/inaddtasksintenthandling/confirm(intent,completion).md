@@ -29,7 +29,7 @@ optional func confirm(intent: INAddTasksIntent) async -> INAddTasksIntentRespons
 - (void) confirmAddTasks:(INAddTasksIntent *) intent completion:(void (^)(INAddTasksIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can add the tasks to the specified task list, but do not do so yet. If adding the tasks involves contacting a remote server, validate that your server is available and ready to handle requests. In your implementation, execute the provided completion block with a response object indicating your app’s readiness to add the tasks to the task list.
 

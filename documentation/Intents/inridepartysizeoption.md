@@ -27,7 +27,7 @@ class INRidePartySizeOption
 
 - [Generating a List of Ride Options](../SiriKit/generating-a-list-of-ride-options.md)
 
-#### Overview
+## Overview
 
 An [`INRidePartySizeOption`](./inridepartysizeoption.md) object describes many passengers and the special pricing that applies to a party of that size. When configuring a [`INRideOption`](./inrideoption.md) object, you create one or more instances of this class to specify pricing for the user’s party. Present this information to the user along with the other ride option information.
 

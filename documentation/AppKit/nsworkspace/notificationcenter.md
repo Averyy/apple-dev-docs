@@ -19,11 +19,11 @@ var notificationCenter: NotificationCenter { get }
 @property (strong, readonly) NSNotificationCenter * notificationCenter;
 ```
 
-#### Return Value
+## Return Value
 
 The notification center object associated with the workspace
 
-#### Discussion
+## Discussion
 
 This notification center object delivers the workspace-related notifications described in Responding to Environment Notifications.
 

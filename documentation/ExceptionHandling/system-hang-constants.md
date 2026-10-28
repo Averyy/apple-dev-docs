@@ -5,7 +5,7 @@
 
 Use one or more of the following constants in the parameter of [`setExceptionHangingMask(_:)`](./nsexceptionhandler/setexceptionhangingmask%28_%29.md) to specify the types of exceptions that cause the exception to halt execution so a debugger can be attached.
 
-#### Overview
+## Overview
 
 When exception-handling domains are nested, [`NSHangOnTopLevelExceptionMask`](./nshangontoplevelexceptionmask.md) deals with exceptions that would make it to the top two levels of exception handlers. In the main thread of a Cocoa application, the top-level handler is the global [`NSApplication`](../AppKit/nsapplication.md) instance.
 

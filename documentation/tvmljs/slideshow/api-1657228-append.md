@@ -17,7 +17,7 @@ void append(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The `imageRequests` parameter contains an array of image request objects that can have the following formatting:
 

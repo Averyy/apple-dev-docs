@@ -16,7 +16,7 @@ Get bus and cycle time.
 IOReturn (*GetBusCycleTime)(IOFireWireLibDeviceRef self, UInt32 *outBusTime, UInt32 *outCycleTime);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 

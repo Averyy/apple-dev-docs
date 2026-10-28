@@ -25,7 +25,7 @@ func xpc_type_get_name(_ type: xpc_type_t) -> UnsafePointer<CChar>
 extern const char *xpc_type_get_name(xpc_type_t type);
 ```
 
-#### Return Value
+## Return Value
 
 A string describing the type of an object, like `"string"` or `"int64"`. This string should not be freed or modified.
 

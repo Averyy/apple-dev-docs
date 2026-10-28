@@ -21,7 +21,7 @@ File requires an entitlement for reading and writing.
 static var dataVault: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `UF_DATAVAULT`.
 

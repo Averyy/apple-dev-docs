@@ -22,7 +22,7 @@ actor CLMonitor
 
 - [Handling location updates in the background](./handling-location-updates-in-the-background.md)
 
-#### Overview
+## Overview
 
 Use `CLMonitor` to monitor for and observe events such as the entry to a specific geographic area or proximity to a beacon with characteristics that you specify.
 

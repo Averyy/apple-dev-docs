@@ -5,7 +5,7 @@
 
 Manage channels that your application uses for broadcast push notifications.
 
-#### Overview
+## Overview
 
 Broadcast push notifications use channels to reach a large number of people with Live Activities. To send updates with a Live Activity for an event such a sports game using broadcast push notifications, associate your event with a channel, identified by creating a unique channel ID. Store the association for each Live Activity event with a unique channel ID, and then share the channel ID with the devices. Devices use this channel identifier to subscribe to push notifications for each Live Activity event. Devices on iOS 18 and iPadOS 18 can subscribe to receive updates on channels using [ActivityKit](../ActivityKit/ActivityKit.md). For more information on using ActivityKit to subscribe for updates on a channel, refer to [Starting and updating Live Activities with ActivityKit push notifications](../ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications.md).
 
@@ -15,7 +15,7 @@ The figure below describes how your server communicates with Apple Push Notifica
 
 The lifecycles of the channel ID and Live Activity on device are independent. Specifically, a channel ID exists even if there are no active subscribers, or all subscribers remove the Live Activity. In order to support several simultaneous events, you can maintain up to 10,000 channels for your app in the development and production environment, respectively. Once the Live Activity event is complete, and you no longer plan to use the channel for any subsequent updates, delete the channel to avoid going over the allocated channel limit.
 
-##### Establish a connection to APNs
+### Establish a connection to APNs
 
 Use HTTP/2 and TLS 1.2 or later to establish a connection between your provider server and one of the following servers.
 
@@ -24,7 +24,7 @@ Use HTTP/2 and TLS 1.2 or later to establish a connection between your provider 
 
 For more details on establishing a connection to the APNs server to send requests, refer to [Establishing a connection to Apple Push Notification service (APNs)](./establishing-a-connection-to-apns.md).
 
-##### Create a channel
+### Create a channel
 
 To create a new channel, create and send a POST request to APNs with the appropriate configuration. Channel IDs generate randomly when you create them, and you can’t request a channel with a specific ID.
 
@@ -82,7 +82,7 @@ The table below describes the HTTP/2 response fields:
 
 > **Note**: Channels can’t be shared across environments: a channel created in the development environment can’t be used in the production environment. Also, don’t make assumptions on the channel ID size.
 
-##### Read a channel
+### Read a channel
 
 To read the configuration for a channel, construct and send a request over the connection you created using HTTP/2 and TLS. The table below describes the HTTP/2 request header fields:
 
@@ -134,7 +134,7 @@ The table below describes the HTTP/2 response body:
 | `message-storage-policy` | The storage policy configured at channel creation. Indicates if APNs stores deferred messages for offline devices. Value `0` indicates No Message Stored. Value `1` indicates Most Recent Message Stored. |
 | `push-type` | The push type configured for the channel. Allowed value is `LiveActivity`. |
 
-##### Delete a channel
+### Delete a channel
 
 To delete an existing channel, construct and send a request that includes the channel ID over the connection with APNs. Deleting a channel doesn’t discard pending messages immediately. APNs may still deliver stored messages after you delete the channel. Deleting a channel is an irreversible action. Once you delete the channel, it’s no longer valid; don’t send any pushes to the channel. As channel IDs are randomly generated for channel creation requests, the same channel ID can’t be created again. The table below describes the HTTP/2 request header fields:
 
@@ -179,7 +179,7 @@ The table below describes the HTTP/2 response fields:
 | `:status` | The HTTP status code for a successul request is 204. For a failed request and a list of all possible status codes, refer to [Handling error responses from Apple Push Notification service](./handling-error-responses-from-apns.md). |
 | `apns-request-id` | The request identifier the corresponding request specifies. If the request doesn’t specify an identifier, the server generates one. |
 
-##### Read all channel IDs for a bundle ID
+### Read all channel IDs for a bundle ID
 
 To get the list all the current active channels for your app, you can send a GET request over the connection with APNs. The table below describes the HTTP/2 request fields:
 

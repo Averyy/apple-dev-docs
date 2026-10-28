@@ -22,7 +22,7 @@ unowned(unsafe) var delegate: (any UINavigationControllerDelegate & UIVideoEdito
 @property (nonatomic, assign, nullable) id<UINavigationControllerDelegate,UIVideoEditorControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives a notification when the system has finished saving an edited movie or when the user cancels the video editor. The delegate also decides when to dismiss the editor interface, so you must provide a delegate to use a video editor. If this property is `nil`, the editor is dismissed immediately if you try to show it. The delegate protocol is described in [`UIVideoEditorControllerDelegate`](../uivideoeditorcontrollerdelegate.md).
 

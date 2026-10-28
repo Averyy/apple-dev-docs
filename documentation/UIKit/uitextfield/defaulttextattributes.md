@@ -23,7 +23,7 @@ var defaultTextAttributes: [NSAttributedString.Key : Any] { get set }
 @property (nonatomic, copy) NSDictionary<NSString *,id> * defaultTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property returns a dictionary of text attributes with default values.
 

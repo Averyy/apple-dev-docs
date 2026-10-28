@@ -27,7 +27,7 @@ INRidePhaseCompleted
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 The ride is now complete.
 

@@ -30,7 +30,7 @@ Presents a music picker to select items from the Apple Music catalog and the use
 @preconcurrency func musicPicker<Selection>(isPresented: Binding<Bool>, title: Text? = nil, selection: Binding<[Selection]>) -> some View where Selection : PickableMusicItem
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

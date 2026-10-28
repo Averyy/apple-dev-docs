@@ -25,7 +25,7 @@ struct DataRepresentation<Item> where Item : Transferable
 
 - [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
-#### Overview
+## Overview
 
 Use this transfer representation if your model is stored in memory. For example, a drawing app might have a notion of a *layer* that can be converted to and from a custom binary data format and also converted to the PNG image type:
 

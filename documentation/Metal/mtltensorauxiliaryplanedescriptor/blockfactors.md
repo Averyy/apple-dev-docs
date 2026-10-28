@@ -25,7 +25,7 @@ var blockFactors: MTLTensorExtents { get set }
 @property (nonatomic, copy, readwrite) MTLTensorExtents * blockFactors;
 ```
 
-#### Discussion
+## Discussion
 
 The number of dimensions in the extents needs to match the number of the tensor’s dimensions.
 

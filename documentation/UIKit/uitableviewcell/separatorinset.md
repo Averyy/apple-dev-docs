@@ -22,7 +22,7 @@ var separatorInset: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets separatorInset;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to indent the left and right edges of the separator line drawn beneath the cell. Positive inset values move the separator inward and away from edges of the cell. Negative values are treated as if the inset is set to 0.
 

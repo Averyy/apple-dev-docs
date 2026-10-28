@@ -23,7 +23,7 @@ var accountDisplayName: String? { get set }
 
 - [Configuring authentication with the identity provider (IdP)](../configuring-authentication-with-the-identity-provider-idp.md)
 
-#### Discussion
+## Discussion
 
 The system uses this value for notifications and login prompts.
 

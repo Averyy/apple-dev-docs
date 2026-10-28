@@ -21,7 +21,7 @@ func addDirectionPad(descriptor: TCDirectionPadDescriptor) -> TCDirectionPad
 - (TCDirectionPad *) addDirectionPadWithDescriptor:(TCDirectionPadDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCDirectionPad` instance.
 

@@ -5,7 +5,7 @@
 
 Apply high-performance filters to, and extract statistical and histogram data from images.
 
-#### Overview
+## Overview
 
 The [`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) and [`MPSBinaryImageKernel`](./mpsbinaryimagekernel.md) base classes define several properties common to all image kernels:
 
@@ -14,7 +14,7 @@ The [`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) and [`MPSBinaryImageKernel
 | [`offset`](./mpsunaryimagekernel/offset.md), [`primaryOffset`](./mpsbinaryimagekernel/primaryoffset.md), and [`secondaryOffset`](./mpsbinaryimagekernel/secondaryoffset.md) | An offset is available to all image kernels that use a source texture from which pixel data is read. It describes the positioning of the source image relative to the result texture. An offset of `{0, 0, 0}` indicates that the top left pixel of the source texture is the center pixel used to create the top left corner of the destination texture clip rectangle (as a further example, an offset of `{1, 2, 0}` positions the top left corner of the clip rectangle at position `x=1`, `y=2`, and `z=0` of the source image). The offset is the position of the top left corner of the clip rectangle in the source coordinate frame. It can be used for tiling and for translating an image up, down, left, or right by pixel increments. If there is no clip rectangle, then the offset is the top left corner of the region read by the filter. If there are multiple source textures, then the primary offset describes the top left corner of the region read in the primary source texture and the secondary offset describes the top left corner of the region read in the secondary source texture. |
 | [`edgeMode`](./mpsunaryimagekernel/edgemode.md), [`primaryEdgeMode`](./mpsbinaryimagekernel/primaryedgemode.md), and [`secondaryEdgeMode`](./mpsbinaryimagekernel/secondaryedgemode.md) | An edge mode describes the behavior of texture reads that stray off the edge of the source image. This can happen if the offset is negative, meaning a read off the top or left edge of the image. This can also happen if the sum of the clip rectangle size and the offset is larger than the source image, meaning a read off the bottom or right edge of the image. Furthermore, it is also possible for image filters to have a kernel window that stretches to examine neighboring pixels beyond the image bounds (such as convolution, morphology, and resampling filters). If there are multiple source textures, then the primary edge mode describes the mode to use with the primary source texture and the secondary edge mode  describes the mode to use with the secondary source texture. |
 
-##### In-Place Operation
+### In-Place Operation
 
 Some kernels can operate in place. This means that the same texture is used to hold both the input image and the result image. Operating in place is a great way to save memory, time, and energy. You can perform an in-place operation by using the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md) method.
 
@@ -57,7 +57,7 @@ MPSCopyAllocator myAllocator = ^id <MTLTexture>(MPSKernel * __nonnull filter, __
 };
 ```
 
-##### Supported Pixel Formats for Image Kernels
+### Supported Pixel Formats for Image Kernels
 
 All Metal Performance Shaders image kernels support source and destination textures with the following ordinary and packed pixel formats:
 
@@ -94,7 +94,7 @@ The ordinary signed and unsigned integer pixel formats supported by these image 
 
 For more information on pixel formats, see [`MTLPixelFormat`](../Metal/mtlpixelformat.md) and [Pixel Format Capabilities](https://developer.apple.com/metal/capabilities/).
 
-##### Sample Code
+### Sample Code
 
 Listing 2. Metal Performance Shaders Sample Code
 

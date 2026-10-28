@@ -25,7 +25,7 @@ let kSecMatchTrustedOnly: CFString
 extern CFStringRef const kSecMatchTrustedOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). If this attribute is provided with a value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), only certificates that can be verified back to a trusted anchor are returned. If this value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) or the attribute is not provided, then both trusted and untrusted certificates may be returned.
 

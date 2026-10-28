@@ -27,7 +27,7 @@ class UITextLoupeSession
 
 - [Adopting system selection UI in custom text views](./adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Overview
+## Overview
 
 A [`UITextLoupeSession`](./uitextloupesession.md) object programmatically displays the system loupe in your view. You might display this view to allow someone to magnify your view’s content. Typically, you display the loupe from a [`UIPanGestureRecognizer`](./uipangesturerecognizer.md) when someone interacts with your view. As the location in the gesture recognizer changes, use the loupe session object to update the position of the loupe.
 

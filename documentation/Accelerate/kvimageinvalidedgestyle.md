@@ -25,7 +25,7 @@ var kvImageInvalidEdgeStyle: Int { get }
 kvImageInvalidEdgeStyle
 ```
 
-#### Discussion
+## Discussion
 
 The edge style specified is invalid. This usually means that a particular function requires you to set at least one edge option flag (`kvImageCopyInPlace`, `kvImageBackgroundColorFill`, or `kvImageEdgeExtend`), but you did not specify one. See [Processing Flags](./api-1578976-processing-flags.md) for more information about these flags.
 

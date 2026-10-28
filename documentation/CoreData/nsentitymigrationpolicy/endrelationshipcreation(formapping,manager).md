@@ -25,7 +25,7 @@ func endRelationshipCreation(forMapping mapping: NSEntityMapping, manager: NSMig
 - (BOOL) endRelationshipCreationForEntityMapping:(NSEntityMapping *) mapping manager:(NSMigrationManager *) manager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked after [`createRelationships(forDestination:in:manager:)`](./createrelationships%28fordestination,in,manager%29.md); you can override it to clean up state from the creation of relationships, or prepare state for custom validation in [`performCustomValidation(forMapping:manager:)`](./performcustomvalidation%28formapping,manager%29.md).
 

@@ -23,7 +23,7 @@ static func .> (a: SIMD16<Scalar>, b: SIMD16<Scalar>) -> SIMDMask<SIMD16<Scalar>
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is greater than the corresponding lane of b, and false otherwise.
 

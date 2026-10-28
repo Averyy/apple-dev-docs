@@ -24,7 +24,7 @@ static var flag_CFNameRelease: AudioUnitParameterOptions { get }
 kAudioUnitParameterFlag_CFNameRelease
 ```
 
-#### Discussion
+## Discussion
 
 Audio unit hosting applications should check for this flag being set. If it is, the host should release the audio unit parameter name when it is done using it.
 

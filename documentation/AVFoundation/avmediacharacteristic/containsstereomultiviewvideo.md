@@ -24,7 +24,7 @@ static let containsStereoMultiviewVideo: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicContainsStereoMultiviewVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Stereoscopic video contains two views with one view for the left eye and one view for the right eye. Multiview video contains more than one view (not necessarily stereoscopic) in the same compressed video sample. The combination of stereoscopic and multiview indicates that multiview carriage is used to carry at least two stereoscopic views. It does not imply that there might not be more than two views. Access to the two stereo views may require opt-in to retrieve both views. Accessing only one of the left or right stereoscopic views as a fallback for playback or compositing where stereoscopic rendering is not supported may itself not be supported.
 

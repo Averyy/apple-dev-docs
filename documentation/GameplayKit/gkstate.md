@@ -24,7 +24,7 @@ class GKState
 @interface GKState : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`GKState`](./gkstate.md) abstract class defines the features of state classes to be used with a state machine (a [`GKStateMachine`](./gkstatemachine.md) object). You build a state machine by defining a separate [`GKState`](./gkstate.md) subclass for each state of the machine. In each state class, you use the [`isValidNextState(_:)`](./gkstate/isvalidnextstate%28_%29.md) method to define which other states are valid for a machine to transition into. State classes provide a place to put state-dependent game logic, such as actions that should happen when entering or exiting a specific state, or per-frame update code that is valid only when in a specific state.
 

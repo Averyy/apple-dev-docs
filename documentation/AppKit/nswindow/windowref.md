@@ -21,7 +21,7 @@ var windowRef: UnsafeMutableRawPointer { get }
 @property (readonly) void * windowRef;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to create a `WindowRef` for a window containing a Carbon control. Subsequent accesses to this property get the existing `WindowRef`. You use a `WindowRef` to create a Carbon window reference for a Cocoa window; this assists the integration of Carbon and Cocoa code and objects.
 

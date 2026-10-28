@@ -25,7 +25,7 @@ var height: CGFloat { get set }
 @property (nonatomic) CGFloat height;
 ```
 
-#### Discussion
+## Discussion
 
 The tube is centered in its local coordinate system. For example, if a tube has a height of `10.0`, its base lies in the plane whose y-coordinate is `-5.0` and its top is in the plane whose y-coordinate is `5.0`. The default height is `1.0`. A height of zero or less creates an empty geometry.
 

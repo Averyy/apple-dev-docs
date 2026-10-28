@@ -27,7 +27,7 @@ var downloadContentLengths: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * downloadContentLengths;
 ```
 
-#### Discussion
+## Discussion
 
 The array holds [`NSNumber`](../../Foundation/nsnumber.md) objects, each of which holds a `long long` value that is the size of one of the downloadable files (in bytes).
 

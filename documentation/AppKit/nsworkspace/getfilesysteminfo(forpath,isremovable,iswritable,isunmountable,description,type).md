@@ -19,11 +19,11 @@ func getFileSystemInfo(forPath fullPath: String, isRemovable removableFlag: Unsa
 - (BOOL) getFileSystemInfoForPath:(NSString *) fullPath isRemovable:(BOOL *) removableFlag isWritable:(BOOL *) writableFlag isUnmountable:(BOOL *) unmountableFlag description:(NSString **) description type:(NSString **) fileSystemType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the information was returned; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

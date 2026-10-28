@@ -20,11 +20,11 @@ func CGDisplayIDToOpenGLDisplayMask(_ display: CGDirectDisplayID) -> CGOpenGLDis
 extern CGOpenGLDisplayMask CGDisplayIDToOpenGLDisplayMask(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The OpenGL display mask that corresponds to the specified display.
 
-#### Discussion
+## Discussion
 
 OpenGL sometimes identifies a display using a bitmask with one bit set. This function maps a display ID to the corresponding OpenGL display mask.
 

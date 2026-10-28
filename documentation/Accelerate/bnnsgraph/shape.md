@@ -21,7 +21,7 @@ The specification of the shape of an argument.
 struct Shape
 ```
 
-#### Overview
+## Overview
 
 The [`setDynamicShapes(_:forFunction:)`](./context/setdynamicshapes%28_,forfunction%29.md) function uses arrays of [`BNNSGraph.Shape`](./shape.md) structures as its input and output. This structure wraps the C API [`bnns_graph_shape_t`](../bnns_graph_shape_t.md) type and derives its rank from the number of elements in the [`dimensions`](./shape/dimensions.md) array.
 

@@ -16,7 +16,7 @@ struct vnop_pathconf_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_RECLAIM() is called as part of the process of recycling a vnode. During a reclaim routine, a filesystem should remove a vnode from its hash and deallocate any resources allocated to that vnode. VFS guarantees that when VNOP_RECLAIM() is called, there are no more iocount references on a vnode (though there may still be usecount references--these are invalidated by the reclaim) and that no more will be granted. This means in practice that there will be no filesystem calls on the vnode being reclaimed until the reclaim has finished and the vnode has been reused.
 

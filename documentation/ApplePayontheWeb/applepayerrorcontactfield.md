@@ -16,7 +16,7 @@ Names of the fields in the shipping or billing contact information, used to loca
 enum ApplePayErrorContactField
 ```
 
-#### Overview
+## Overview
 
 When shipping or billing contact information has an error, you use the error [`code`](./applepayerror/code.md) values of either `"shippingContactInvalid"` or `"billingContactInvalid"` to indicate which one has the error. You use the contact field to indicate the exact field with the error. The corresponding field in the shipping or billing section of the payment sheet is highlighted.
 

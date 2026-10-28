@@ -24,7 +24,7 @@ class INCallGroup
 @interface INCallGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `INCallGroup` object stores details that the user contributed to your app about a group call. Use call group objects to communicate general information about group calls to SiriKit. An `INCallGroup` identifies the calls group name and unique group ID.
 

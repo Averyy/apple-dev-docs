@@ -19,11 +19,11 @@ func AEDisposeRemoteProcessResolver(_ ref: AERemoteProcessResolverRef!)
 void AEDisposeRemoteProcessResolver(AERemoteProcessResolverRef ref);
 ```
 
-#### Discussion
+## Discussion
 
 If this resolver is currently scheduled on a run loop, it is unscheduled, and the asynchronous callback is not executed.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.3.
 

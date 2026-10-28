@@ -21,7 +21,7 @@ Returns a vector that results from uniformly scaling with the specified double-p
 static SPVector3D SPVector3DScaleUniform(SPVector3D vector, double scale);
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from uniformly scaling with the specified double-precision value.
 

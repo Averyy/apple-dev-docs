@@ -19,7 +19,7 @@ case resourceDamaged
 FSErrorResourceDamaged
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates the resource needs a repair operation, or that a repair operation failed.
 

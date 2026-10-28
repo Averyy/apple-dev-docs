@@ -10,7 +10,7 @@ Display content options with document view controllers and fetch and populate co
 - tvOS 13.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 This hybrid app consists of a server built with TVMLKit JS and a client built with TVMLKit. The app uses native TVMLKit Swift code to take content from the server and build the user interface on screen, and uses TVMLKit JS to provide the requested data.
 
@@ -18,7 +18,7 @@ Traditionally, hybrid tvOS apps depend on TVMLKit JS to initialize view controll
 
 Because the TV content resides in JavaScript in the server, the app uses `TVDocumentViewController` objects to allow TVMLKit to communicate with TVMLKit JS. TVMLKit JS is responsible for fetching data and populating the native UI. Building your app with the stateless model is useful if you want to use the functionalities provided by Swift or if you are more familiar with native development.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 The sample relies on a running server containing JavaScript files, image assets, and templates that specify the app’s content. The app takes the content from the server and builds the user interface on screen. Before running the app, start the server as follows:
 
@@ -28,7 +28,7 @@ The sample relies on a running server containing JavaScript files, image assets,
 4. In Terminal, enter `ruby -run -ehttpd . -p9001` to start the server.
 5. Build and run the app.
 
-##### Create and Display a Document View Controller
+### Create and Display a Document View Controller
 
 XML files provide the structure of a TVMLKit app. The files contain TVML elements such as [buttons](../TVML/button.md) and [lockups](../TVML/lockup.md), and lay out the elements on screen. In this app, the templates folder in the server directory contains two XML files: Index.xml, and ProductSingle.xml. These files contain the structure of the two primary views used in this app. Index.xml is responsible for providing the structure of the initial page, which consists of a grid of items to select. When the user selects an item from the main page, the ProductSingle.xml file displays the content for the selected item.
 
@@ -50,7 +50,7 @@ func appController(_ appController: TVApplicationController, didFinishLaunching 
 
 For more information about how to build the structure of your app, see [TVML](../TVML/TVML.md).
 
-##### Fetch and Populate TV Content
+### Fetch and Populate TV Content
 
 The structure of the interface is empty until the TVMLKit JS provides the data for the TV content. When you create a `TVDocumentViewController` object in  `appController(_:didFinishLaunching:)`, TVMLKit determines that it needs data, which causes TVMLKit JS to trigger the `onDocumentRequest` event in `application.js`. This event creates a new `DocumentLoader` object, which grabs data from a `documentProcessor` based on the URL of the request. The URL of the request used is the context used to construct the `TVDocumentViewController` object (templates/Index.xml).
 
@@ -118,7 +118,7 @@ For example, the processor passes its movies into the section’s binding attrib
 </section>
 ```
 
-##### Handle Selection Events
+### Handle Selection Events
 
 The app triggers a selection event when the user selects a lockup. Because this app follows the stateless JavaScript model, you handle that selection event natively in the `documentViewController(_:handleEvent:with:)` method.
 

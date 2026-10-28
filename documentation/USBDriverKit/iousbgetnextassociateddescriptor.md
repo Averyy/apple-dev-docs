@@ -15,11 +15,11 @@ Gets the next descriptor in the specified configuration descriptor that belongs 
 const IOUSBDescriptorHeader *IOUSBGetNextAssociatedDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *parentDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor pointer, or `NULL` if no descriptor can be returned.
 
-#### Discussion
+## Discussion
 
 This method uses `getNextDescriptor`, but returns `NULL` if it finds another descriptor whose descriptor type field matches the value used for the parent descriptor’s type. Using `NULL` for the current descriptor returns the first descriptor after the parent descriptor.
 

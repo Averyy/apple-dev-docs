@@ -22,7 +22,7 @@ Fetches all modified records from a specific record zone and delivers them to a 
 func fetchRecordZoneChanges(inZoneWith zoneID: CKRecordZone.ID, since changeToken: CKServerChangeToken?, desiredKeys: [CKRecord.FieldKey]? = nil, resultsLimit: Int? = nil, completionHandler: @escaping @Sendable (Result<(modificationResultsByID: [CKRecord.ID : Result<CKDatabase.RecordZoneChange.Modification, any Error>], deletions: [CKDatabase.RecordZoneChange.Deletion], changeToken: CKServerChangeToken, moreComing: Bool), any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes a single [`Result`](../../Swift/result.md) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
 

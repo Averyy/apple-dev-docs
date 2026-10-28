@@ -15,11 +15,11 @@ Maps any host bus adapter (HBA)-specific task data in response to a call from th
 virtual kern_return_t UserMapHBAData(uint32_t *uniqueTaskID);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of memory-mapping the data. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The framework calls this method for every `SCSIParallelTask` immediately after creating the task in the kernel. The driver extension class should override this function to memory-map and prepare any host bus adapter (HBA)-specific task data for direct memory access (DMA), and set a unique task ID. The framework uses this ID to uniquely identify the corresponding `SCSIParallelTask` in the kernel.
 

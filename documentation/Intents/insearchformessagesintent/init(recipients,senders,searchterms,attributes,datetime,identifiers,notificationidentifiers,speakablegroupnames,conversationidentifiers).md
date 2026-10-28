@@ -23,11 +23,11 @@ init(recipients: [INPerson]?, senders: [INPerson]?, searchTerms: [String]?, attr
 - (instancetype) initWithRecipients:(NSArray<INPerson *> *) recipients senders:(NSArray<INPerson *> *) senders searchTerms:(NSArray<NSString *> *) searchTerms attributes:(INMessageAttributeOptions) attributes dateTimeRange:(INDateComponentsRange *) dateTimeRange identifiers:(NSArray<NSString *> *) identifiers notificationIdentifiers:(NSArray<NSString *> *) notificationIdentifiers speakableGroupNames:(NSArray<INSpeakableString *> *) speakableGroupNames conversationIdentifiers:(NSArray<NSString *> *) conversationIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create instances of this class yourself. Siri creates instances when the user asks to search their messages. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths. Specify `nil` for any parameters that you do not want used during the search.
 

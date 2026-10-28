@@ -24,7 +24,7 @@ var normalizedCoordinates: Bool { get set }
 @property (nonatomic) BOOL normalizedCoordinates;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), texture coordinates are from `0.0` to `1.0`. If [`false`](../../Swift/false.md), texture coordinates are from `0` to `width` for horizontal coordinates and `0` to `height` for vertical coordinates. The default value is [`true`](../../Swift/true.md).
 

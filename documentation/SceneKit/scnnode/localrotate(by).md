@@ -25,7 +25,7 @@ func localRotate(by rotation: SCNQuaternion)
 - (void) localRotateBy:(SCNQuaternion) rotation;
 ```
 
-#### Discussion
+## Discussion
 
 This method rotates the node according to its [`pivot`](./pivot.md) transform.
 

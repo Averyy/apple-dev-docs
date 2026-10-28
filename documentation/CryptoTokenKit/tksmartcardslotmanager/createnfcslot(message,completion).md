@@ -25,7 +25,7 @@ func createNFCSlot(message: String?) async throws -> TKSmartCardSlotNFCSession
 - (void) createNFCSlotWithMessage:(NSString *) message completion:(void (^)(TKSmartCardSlotNFCSession *session, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 To finish the NFC session and dismiss the system-presented UI use `TKSmartCardSlotNFCSession.endSession`.
 

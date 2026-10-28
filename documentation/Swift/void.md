@@ -21,7 +21,7 @@ The return type of functions that don’t explicitly specify a return type, that
 typealias Void = ()
 ```
 
-#### Discussion
+## Discussion
 
 When declaring a function or method, you don’t need to specify a return type if no value will be returned. However, the type of a function, method, or closure always includes a return type, which is `Void` if otherwise unspecified.
 

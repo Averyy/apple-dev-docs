@@ -27,11 +27,11 @@ func keyValueObservingExpectation(for objectToObserve: Any, keyPath: String, exp
 - (XCTestExpectation *) keyValueObservingExpectationForObject:(id) objectToObserve keyPath:(NSString *) keyPath expectedValue:(id) expectedValue;
 ```
 
-#### Return Value
+## Return Value
 
 Creates and returns an expectation associated with the test case.
 
-#### Discussion
+## Discussion
 
 Creates an [`XCTestExpectation`](../xctestexpectation.md) that uses Key Value Observing to observe changes on the provided object until the value specified by `keyPath` matches the expected value using `isEqual:`.
 

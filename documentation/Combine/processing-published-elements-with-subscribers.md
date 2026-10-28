@@ -5,7 +5,7 @@
 
 Apply back pressure to precisely control when publishers produce elements.
 
-#### Overview
+## Overview
 
 In Combine, a [`Publisher`](./publisher.md) produces elements, and a [`Subscriber`](./subscriber.md) acts on the elements it receives. However, a publisher can’t send elements until the subscriber attaches and asks for them. The subscriber also controls the rate at which the publisher delivers elements, by using the [`Subscribers.Demand`](./subscribers/demand.md) type to indicate how many elements it can receive. A subscriber can indicate demand in either of two ways:
 
@@ -16,7 +16,7 @@ Demand is additive: If a subscriber has demanded two elements, and then requests
 
 Many apps just use the operators [`sink(receiveValue:)`](./publisher/sink%28receivevalue%29.md) and [`assign(to:on:)`](./publisher/assign%28to,on%29.md) to create the convenience subscriber types [`Subscribers.Sink`](./subscribers/sink.md) and [`Subscribers.Assign`](./subscribers/assign.md), respectively. These two subscribers issue a demand for [`unlimited`](./subscribers/demand/unlimited.md) when they first attach to the publisher. Once a publisher has unlimited demand, there can be no further negotiation of demand between subscriber and publisher.
 
-##### Consume Elements as the Publisher Produces Them
+### Consume Elements as the Publisher Produces Them
 
 When a publisher has high or unlimited demand, it could send elements faster than a subscriber can process them. This scenario could lead to elements being dropped, or rapidly increasing memory pressure as elements fill a buffer while they await processing.
 
@@ -28,7 +28,7 @@ This scenario can occur if you use the convenience subscribers, because they dem
 
 Fortunately, many commonly used publishers, such as publishers associated with user-interface elements, publish at a manageable rate. Other common publishers only produce a single element, like the URL Loading System’s [`URLSession.DataTaskPublisher`](../Foundation/urlsession/datataskpublisher.md). It’s perfectly safe to use sink and assign subscribers with these publishers.
 
-##### Apply Back Pressure with a Custom Subscriber
+### Apply Back Pressure with a Custom Subscriber
 
 To control the rate at which the publisher sends elements to your subscriber, create a custom implementation of the [`Subscriber`](./subscriber.md) protocol. Use your implementation to specify demands that you know your subscriber can keep up with. As the subscriber receives elements, it can request more by returning a new demand value to [`receive(_:)`](./subscriber/receive%28_%29.md), or by calling [`request(_:)`](./subscription/request%28_%29.md) on the subscription. With either, your subscriber can then fine-tune the number of elements the publisher can send it at any given time.
 
@@ -84,7 +84,7 @@ published                             received
 
 This example only requests three elements, issuing the demand after the five-second delay expires. As a result, the publisher sends no further elements after the third, but also doesn’t complete publishing by sending a [`Subscribers.Completion.finished`](./subscribers/completion/finished.md) value either, because the publisher is just waiting for more demand. To continue to receive elements, the subscriber could store the subscription and periodically request more elements. It could also indicate new demand as the return value from its [`receive(_:)`](./subscriber/receive%28_%29.md) implementation.
 
-##### Manage Unlimited Demand by Using Back-Pressure Operators
+### Manage Unlimited Demand by Using Back-Pressure Operators
 
 Even without writing a custom [`Subscriber`](./subscriber.md), you can still apply back pressure by using one of Combine’s buffering or timing operators:
 

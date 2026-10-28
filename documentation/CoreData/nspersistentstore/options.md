@@ -25,7 +25,7 @@ var options: [AnyHashable : Any]? { get }
 @property (strong, readonly, nullable) NSDictionary * options;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md) for a list of key names for options in this dictionary.
 

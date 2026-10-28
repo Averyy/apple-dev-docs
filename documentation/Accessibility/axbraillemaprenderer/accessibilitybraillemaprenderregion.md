@@ -25,7 +25,7 @@ optional var accessibilityBrailleMapRenderRegion: CGRect { get set }
 @property (nonatomic, assign) CGRect accessibilityBrailleMapRenderRegion;
 ```
 
-#### Discussion
+## Discussion
 
 When the accessibility element that implements this property has focus, the system uses this value to update the braille display automatically.
 

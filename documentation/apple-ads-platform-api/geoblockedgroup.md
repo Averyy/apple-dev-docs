@@ -15,14 +15,14 @@ A blocking rule that names the supply source(s) and reason code(s) restricting a
 object GeoBlockedGroup
 ```
 
-#### Discussion
+## Discussion
 
 The `GeoEligibility` responses embed `GeoBlockedGroup`. It describes why a geographic location is blocked for the given supply source. The `reasons` array mixes two categories of codes with different behavior:
 
 - The API always filters hard-block reasons (`NO_MUID`, `NOT_SUPPORTED`, `SOURCE_REMOVED`, `COUNTRY_NOT_SUPPORTED`, `COUNTRY_NOT_SEARCHABLE`, `MAPS_SOURCE_NOT_MATCHED`) out of search results, regardless of request parameters.
 - The API includes soft-block reasons (`LOCALITY_LOW_SEARCH_VOLUME`, `POSTAL_CODE_SPARSE`) in search results by default so clients can decide how to handle them. Pass `eligible=true` to the GET endpoint to exclude these geos from results entirely as well.
 
-##### Example
+### Example
 
 ```json
 {
@@ -36,7 +36,7 @@ The `GeoEligibility` responses embed `GeoBlockedGroup`. It describes why a geogr
 }
 ```
 
-###### `reasons` accepted values
+#### `reasons` accepted values
 
 Hard-block (always filtered from results):
 

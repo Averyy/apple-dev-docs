@@ -20,7 +20,7 @@ An action that plays an animation on the given target entity with a range of pla
 struct PlayAnimationAction
 ```
 
-#### Overview
+## Overview
 
 Use this action to initiate the playback of animations in a data-driven way. For example, this action can play an animation group which contains a nested action, which plays another animation with specific playback properties.
 

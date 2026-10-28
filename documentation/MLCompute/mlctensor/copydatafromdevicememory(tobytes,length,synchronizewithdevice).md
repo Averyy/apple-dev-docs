@@ -23,11 +23,11 @@ func copyDataFromDeviceMemory(toBytes bytes: UnsafeMutableRawPointer, length: In
 - (BOOL) copyDataFromDeviceMemoryToBytes:(void *) bytes length:(NSUInteger) length synchronizeWithDevice:(BOOL) synchronizeWithDevice;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if successful; otherwise, `false` if the framework failed to copy or synchronize.
 
-#### Discussion
+## Discussion
 
 When the device is a GPU, you may need to synchronize the device memory, that is, set `synchronizeWithDevice` to `true`. The framework ignores `synchronizeWithDevice` when the device is the CPU.
 

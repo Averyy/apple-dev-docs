@@ -15,7 +15,7 @@ Sets the current decibel level value.
 kern_return_t SetDecibelValue(float in_decibel_value);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the decibel level value will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 

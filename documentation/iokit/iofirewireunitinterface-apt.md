@@ -5,7 +5,7 @@
 
 IOFireWireDeviceInterface is your primary gateway to the functionality contained in IOFireWireLib.
 
-#### Overview
+## Overview
 
 You can use IOFireWireDeviceInterface to:
 

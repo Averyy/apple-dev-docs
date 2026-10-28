@@ -24,7 +24,7 @@ var subtitle: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The system ignores this property if [`subtitleLocalizationKey`](./subtitlelocalizationkey.md) has a value.
 

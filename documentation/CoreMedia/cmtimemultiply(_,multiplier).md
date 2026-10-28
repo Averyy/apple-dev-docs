@@ -25,11 +25,11 @@ func CMTimeMultiply(_ time: CMTime, multiplier: Int32) -> CMTime
 extern CMTime CMTimeMultiply(CMTime time, int32_t multiplier);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure that represents the product of the multiplied time.
 
-#### Discussion
+## Discussion
 
 The result has the same timescale as the time argument. If the result overflows, the system repeatedly halves the result until no overflow occurs. The system applies the default rounding method when converting the result to this timescale. If the result’s value still overflows when its timescale is `1`, then the result is positive or negative infinity, depending on the direction of the overflow. If rounding occurs for any reason, the system sets the result’s [`hasBeenRounded`](./cmtimeflags/hasbeenrounded.md) flag. It also sets this flag if the time argument has [`hasBeenRounded`](./cmtimeflags/hasbeenrounded.md) set. If the `time` operand is invalid, the result is invalid. If the time operand is valid but infinite, the result is infinite and of an appropriate sign, based on the signs of both operands. If the time operand is valid, but indefinite, the result is indefinite.
 

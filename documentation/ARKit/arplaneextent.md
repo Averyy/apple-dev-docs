@@ -20,7 +20,7 @@ class ARPlaneExtent
 @interface ARPlaneExtent : NSObject
 ```
 
-#### Overview
+## Overview
 
 A plane anchor ([`ARPlaneAnchor`](./arplaneanchor.md)) describes its size and orientation on the y-axis using the [`planeExtent`](./arplaneanchor/planeextent.md) property of this type.
 
@@ -30,7 +30,7 @@ Similarly, as the session runs, the framework may update the plane’s y-rotatio
 
 > ❗ **Important**:  Apps that run on iOS 16 with a deployment target less than iOS 16 preserve the prior y-axis rotation behavior.
 
-##### Size and Rotate an Entity to a Plane’s Extent
+### Size and Rotate an Entity to a Plane’s Extent
 
 The following code defines a RealityKit entity sized to the plane extent’s width and height. The helper function also applies the extent’s suggested y-axis rotation by setting its transform `yaw` value to [`rotationOnYAxis`](./arplaneextent/rotationonyaxis.md).
 

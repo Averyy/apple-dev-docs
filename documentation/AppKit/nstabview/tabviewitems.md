@@ -19,7 +19,7 @@ var tabViewItems: [NSTabViewItem] { get set }
 @property (copy) NSArray<__kindof NSTabViewItem *> * tabViewItems;
 ```
 
-#### Discussion
+## Discussion
 
 A tab view keeps an array containing one tab view item for each tab in the view. The default value of this property is an empty array.
 

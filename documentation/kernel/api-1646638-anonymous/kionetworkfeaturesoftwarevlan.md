@@ -13,7 +13,7 @@
 kIONetworkFeatureSoftwareVlan = 0x004
 ```
 
-#### Discussion
+## Discussion
 
 Set this bit in the value returned by getFeatures() to indicate that the controller can support software based vlan by transmitting and receiving packets 4 bytes longer that normal.
 

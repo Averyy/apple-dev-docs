@@ -21,7 +21,7 @@ Fits a logistic regression classifier model to a sequence of examples while vali
 func fitted<Input>(to input: Input, eventHandler: EventHandler? = nil) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer where Input : Sequence, Input.Element == AnnotatedFeature<MLShapedArray<Scalar>, Label>
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

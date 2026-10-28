@@ -19,7 +19,7 @@ func addMarker(_ marker: NSRulerMarker)
 - (void) addMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if the receiver has no client view.
 

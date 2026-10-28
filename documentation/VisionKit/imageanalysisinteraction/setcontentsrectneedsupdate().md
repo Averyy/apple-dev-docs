@@ -23,7 +23,7 @@ final func setContentsRectNeedsUpdate()
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 The framework ignores calls to this method when your app adds the interaction to a [`UIImageView`](../../UIKit/uiimageview.md), which calculates the [`contentsRect`](./contentsrect.md) based on the image view’s [`UIView.ContentMode`](../../UIKit/uiview/contentmode-swift.enum.md).
 

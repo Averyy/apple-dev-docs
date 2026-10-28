@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume format preserves the case of f
 var volumeSupportsCasePreservedNames: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The volume may change the case of some characters, typically making them all upper or all lower case.
 

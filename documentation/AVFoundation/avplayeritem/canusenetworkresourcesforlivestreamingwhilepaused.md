@@ -26,7 +26,7 @@ var canUseNetworkResourcesForLiveStreamingWhilePaused: Bool { get set }
 @property (assign) BOOL canUseNetworkResourcesForLiveStreamingWhilePaused;
 ```
 
-#### Discussion
+## Discussion
 
 For live streaming content, the player item may need to use extra networking and power resources to keep playback state up to date when paused.  For example, when this property is set to true, the [`seekableTimeRanges`](./seekabletimeranges.md) property will be periodically updated to reflect the current state of the live stream.
 

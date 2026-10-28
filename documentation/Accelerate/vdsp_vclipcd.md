@@ -21,7 +21,7 @@ Calculates and counts the elements of a double-precision vector clipped to the s
 extern void vDSP_vclipcD(const double *__A, vDSP_Stride __IA, const double *__B, const double *__C, double *__D, vDSP_Stride __ID, vDSP_Length __N, vDSP_Length *__NLow, vDSP_Length *__NHigh);
 ```
 
-#### Discussion
+## Discussion
 
 This function performs the operation below:
 

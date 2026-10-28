@@ -20,7 +20,7 @@ func rootElement() -> XMLElement?
 - (NSXMLElement *) rootElement;
 ```
 
-#### Return Value
+## Return Value
 
 The root element of the receiver.
 

@@ -24,7 +24,7 @@ var pages: [PDFPage] { get }
 @property (nonatomic, readonly) NSArray<PDFPage *> * pages;
 ```
 
-#### Discussion
+## Discussion
 
 Pages are sorted by index number.
 

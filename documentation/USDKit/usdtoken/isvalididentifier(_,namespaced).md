@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether the given string is a valid USD i
 static func isValidIdentifier(_ name: String, namespaced: Bool = false) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `name` is a valid identifier; otherwise, `false`.
 

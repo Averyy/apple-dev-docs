@@ -21,7 +21,7 @@ var relativeStartTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval relativeStartTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to order and determine the time between app instances in the same report. The first instance of this property in the report interval is `0`.
 

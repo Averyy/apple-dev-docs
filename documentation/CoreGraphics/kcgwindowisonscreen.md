@@ -18,7 +18,7 @@ let kCGWindowIsOnscreen: CFString
 extern CFStringRef const kCGWindowIsOnscreen;
 ```
 
-#### Discussion
+## Discussion
 
 The key that identifies whether the window is currently onscreen. The value for this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md) type.
 

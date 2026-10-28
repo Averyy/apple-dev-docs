@@ -25,7 +25,7 @@ func CFBundleGetDataPointerForName(_ bundle: CFBundle!, _ symbolName: CFString!)
 extern void *CFBundleGetDataPointerForName(CFBundleRef bundle, CFStringRef symbolName);
 ```
 
-#### Return Value
+## Return Value
 
 A data pointer to a symbol named `symbolName` in `bundle`, or `NULL` if `symbolName` cannot be found. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

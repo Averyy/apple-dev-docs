@@ -19,7 +19,7 @@ static let progressive: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageProgressive;
 ```
 
-#### Discussion
+## Discussion
 
 Used only for JPEG files. It’s set when reading in and used when writing out.
 

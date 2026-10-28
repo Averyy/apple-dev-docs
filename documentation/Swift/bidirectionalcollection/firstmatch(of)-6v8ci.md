@@ -23,7 +23,7 @@ func firstMatch<Output>(@RegexComponentBuilder of content: () -> some RegexCompo
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 The first match for the regex created by `content` in this collection, or `nil` if no match is found.
 

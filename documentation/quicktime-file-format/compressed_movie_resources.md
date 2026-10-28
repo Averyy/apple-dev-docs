@@ -5,17 +5,17 @@
 
 Reduce file size and startup latency by compressing movie resources.
 
-#### Overview
+## Overview
 
 Most QuickTime movies have metadata in addition to their media data. Media data can be compressed using a variety of video and sound compression algorithms. Beginning with QuickTime 3, it also became possible to compress the metadata—more commonly known as the movie resource. However, the movie resource cannot be compressed by means of a lossy compression algorithm because it contains critical information, such as the video and audio compression types used, individual frame offsets, and timing information. To compress the movie resource, therefore, lossless data compression algorithms must be used.
 
 Compressing movie resources using data compression typically reduces the size of the movie resource by 50% or more. For QuickTime movies that are streamed over the Internet, this can substantially reduce the startup latency of the movie, and therefore has a number of distinct advantages.
 
-#### Allowing QuickTime to Compress the Movie Resource
+## Allowing QuickTime to Compress the Movie Resource
 
 Most application developers won’t need to know the details of how movie resources are compressed. The Movie Toolbox `FlattenMovie` and `FlattenMovieData` functions compress the movie resource if so requested by the application. To accomplish this, applications only need to set the `flattenCompressMovieResource` flag when calling either function. The QuickTime movie export component also provides users with the option of compressing the movie resource when exporting or creating a new movie through export.
 
-#### Structure of a Compressed Movie Resource
+## Structure of a Compressed Movie Resource
 
 A compressed movie resource, similar to an uncompressed movie resource, is made up of a group of QuickTime atoms arranged in a hierarchy.
 

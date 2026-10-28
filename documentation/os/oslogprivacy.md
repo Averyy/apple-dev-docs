@@ -22,7 +22,7 @@ The privacy options that determine when to redact or display values in log messa
 struct OSLogPrivacy
 ```
 
-#### Overview
+## Overview
 
 The [`OSLogPrivacy`](./oslogprivacy.md) structure determines the visibility of interpolated values in log messages. Because people have access to log messages that your app generates, use the privacy options to hide potentially sensitive information. For example, you might use it to hide account information or personal data.
 

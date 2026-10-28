@@ -24,7 +24,7 @@ func endSeeking()
 - (void) endSeeking;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method to end a seeking operation begun by calling either the [`beginSeekingBackward()`](./beginseekingbackward%28%29.md) or [`beginSeekingForward()`](./beginseekingforward%28%29.md) method. After calling this method, the player returns to the same state it was in prior to seeking. In other words, if the item was playing before seeking began, it continues playing from the new playhead position after calling this method.
 

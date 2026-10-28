@@ -8,7 +8,7 @@ Create, modify, and delete promotion images for your In-App Purchases.
 **Availability**:
 - App Store Connect API 2.0+ - Deprecated in 4.4.1
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This is deprecated. Use [In-App Purchase images](./in-app-purchase-images.md) instead.
 

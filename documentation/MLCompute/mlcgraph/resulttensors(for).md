@@ -23,7 +23,7 @@ func resultTensors(for layer: MLCLayer) -> [MLCTensor]
 - (NSArray<MLCTensor *> *) resultTensorsForLayer:(MLCLayer *) layer;
 ```
 
-#### Return Value
+## Return Value
 
 A list of result tensors.
 

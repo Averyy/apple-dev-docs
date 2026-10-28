@@ -24,11 +24,11 @@ func dequantize(_ tensor: MPSGraphTensor, scaleTensor: MPSGraphTensor, dataType:
 - (MPSGraphTensor *) dequantizeTensor:(MPSGraphTensor *) tensor scaleTensor:(MPSGraphTensor *) scaleTensor dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) array of datatype `dataType`.
 
-#### Discussion
+## Discussion
 
 Converts the quantized `tensor` to a float tensor by applying a scale transform (symmetric — zero point is implicitly 0):
 

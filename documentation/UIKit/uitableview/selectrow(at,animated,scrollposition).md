@@ -27,11 +27,11 @@ func selectRow(at indexPath: IndexPath?, animated: Bool, scrollPosition: UITable
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 Calling this method doesn’t cause the delegate to receive a [`tableView(_:willSelectRowAt:)`](../uitableviewdelegate/tableview%28_,willselectrowat%29.md) or [`tableView(_:didSelectRowAt:)`](../uitableviewdelegate/tableview%28_,didselectrowat%29.md) message, nor does it send [`selectionDidChangeNotification`](./selectiondidchangenotification.md) notifications to observers.
 
-##### Special considerations
+### Special considerations
 
 Passing [`UITableView.ScrollPosition.none`](./scrollposition/none.md) results in no scrolling, rather than the minimum scrolling described for that constant. To scroll to the newly selected row with minimum scrolling, select the row using this method with [`UITableView.ScrollPosition.none`](./scrollposition/none.md), then call [`scrollToRow(at:at:animated:)`](./scrolltorow%28at,at,animated%29.md) with [`UITableView.ScrollPosition.none`](./scrollposition/none.md).
 

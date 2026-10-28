@@ -22,7 +22,7 @@ case invitation
 UIApplicationShortcutIconTypeInvitation
 ```
 
-#### Discussion
+## Discussion
 
 ![Invitation quick action icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934523@2x.png)
 

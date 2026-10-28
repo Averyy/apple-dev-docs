@@ -25,7 +25,7 @@ enum CGBlendMode
 enum CGBlendMode : int32_t;
 ```
 
-#### Overview
+## Overview
 
 These blend mode constants represent the Porter-Duff blend modes. The symbols in the equations for these blend modes are:
 

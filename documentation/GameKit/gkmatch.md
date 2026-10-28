@@ -30,7 +30,7 @@ class GKMatch
 - [Assigning players to teams using rules](./assigning-players-to-teams-using-rules.md)
 - [Creating activities for your game](./creating-activities-for-your-game.md)
 
-#### Overview
+## Overview
 
 Matches provide a mechanism for a player to send both game and voice data to other players.
 

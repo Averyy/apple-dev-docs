@@ -40,7 +40,7 @@ extern bool ABPersonSetImageData(ABRecordRef person, CFDataRef imageData, CFErro
 extern bool ABPersonSetImageData(ABPersonRef person, CFDataRef imageData);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if successful, `false` otherwise.
 

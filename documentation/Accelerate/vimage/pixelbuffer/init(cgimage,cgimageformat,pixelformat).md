@@ -28,7 +28,7 @@ Available when `Format` conforms to `InitializableFromCGImage` and `StaticPixelF
 - [Converting bitmap data between Core Graphics images and vImage buffers](../../converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
 - [Optimizing image-processing performance](../../optimizing-image-processing-performance.md)
 
-#### Discussion
+## Discussion
 
 For example, the following code creates a single-channel, 8-bit per pixel buffer from a [`CGImage`](../../../CoreGraphics/cgimage.md) of unknown bit depth.
 

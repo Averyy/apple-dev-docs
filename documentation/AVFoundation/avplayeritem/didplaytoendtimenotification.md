@@ -25,7 +25,7 @@ class let didPlayToEndTimeNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerItemDidPlayToEndTimeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s object is the item that finished playing.
 

@@ -24,7 +24,7 @@ var fontSize: CGFloat { get set }
 @property CGFloat fontSize;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 36.0.
 

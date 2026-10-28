@@ -19,7 +19,7 @@ An array of asset identifiers to preselect in the picker.
 var preselectedAssetIdentifiers: [String] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Preselection works only when initializing a [`PHPickerConfiguration`](../phpickerconfiguration-swift.struct.md) object with a photo library. Otherwise, the system returns an error.
 

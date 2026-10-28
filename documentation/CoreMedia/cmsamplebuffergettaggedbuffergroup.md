@@ -21,7 +21,7 @@ Gets the tagged buffer group of a sample buffer.
 extern CMTaggedBufferGroupRefCMSampleBufferGetTaggedBufferGroup(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The sample buffer’s tagged buffer group, or `NULL` if the sample buffer doesn’t belong to a tagged buffer group.
 

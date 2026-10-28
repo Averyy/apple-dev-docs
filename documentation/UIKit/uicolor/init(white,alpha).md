@@ -24,11 +24,11 @@ init(white: CGFloat, alpha: CGFloat)
 - (UIColor *) initWithWhite:(CGFloat) white alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized color object. The color information represented by this object is in the device gray colorspace.
 
-#### Discussion
+## Discussion
 
 On applications linked on iOS 10 or later, the input parameters are not clamped. On earlier versions of iOS, values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0.
 

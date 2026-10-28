@@ -15,7 +15,7 @@ Gets the class identifier of the object.
 virtual IOUserVideoClassID GetClassID();
 ```
 
-#### Return Value
+## Return Value
 
 A video class identifier.
 

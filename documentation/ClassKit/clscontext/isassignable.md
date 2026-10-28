@@ -23,7 +23,7 @@ var isAssignable: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isAssignable) BOOL assignable;
 ```
 
-#### Discussion
+## Discussion
 
 Set this Boolean to [`false`](../../Swift/false.md) for a context that doesn’t represent an assignable task, like when you use a context solely as a container for other contexts. For example, if you add all of your app’s quiz contexts as the children of a single quiz collection context, you can mark the collection as “not assignable”:
 

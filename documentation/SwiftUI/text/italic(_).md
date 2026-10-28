@@ -22,7 +22,7 @@ nonisolated
 func italic(_ isActive: Bool) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Italic text.
 

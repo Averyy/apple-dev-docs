@@ -19,7 +19,7 @@
 typedef AudioServerPlugInDriverInterface ** AudioServerPlugInDriverRef;
 ```
 
-#### Discussion
+## Discussion
 
 A reference to an AudioServerPlugInDriverInterface.
 

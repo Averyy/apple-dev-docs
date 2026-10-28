@@ -25,11 +25,11 @@ func CTFontCreateWithFontDescriptorAndOptions(_ descriptor: CTFontDescriptor, _ 
 extern CTFontRefCTFontCreateWithFontDescriptorAndOptions(CTFontDescriptorRef descriptor, CGFloat size, const CGAffineTransform *matrix, CTFontOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 A `CTFontRef` that best matches the attributes provided with the font descriptor.
 
-#### Discussion
+## Discussion
 
 The size and matrix parameters override any specified in the font descriptor, unless they are unspecified (`0.0` for `size` and `NULL` for `matrix` and `options`). A best match font is always returned, and default values are used for any unspecified.
 

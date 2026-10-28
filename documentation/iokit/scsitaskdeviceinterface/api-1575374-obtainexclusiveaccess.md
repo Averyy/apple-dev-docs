@@ -16,11 +16,11 @@ Method to obtain exclusive access to the device so that SCSITasks can be sent to
 IOReturn (*ObtainExclusiveAccess)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if exclusive access was granted, else if media is still mounted it returns kIOReturnBusy. If another client already has exclusive access, kIOReturnExclusiveAccess is returned.
 
-#### Discussion
+## Discussion
 
 Once a SCSITaskDeviceInterface is opened, the client may request exclusive access to the device. Once the client has successfully gained exclusive access, it becomes the Logical Unit Driver and all in-kernel Logical Unit Drivers are quiesced.
 

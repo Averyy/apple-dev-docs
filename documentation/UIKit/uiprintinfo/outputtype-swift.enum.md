@@ -22,7 +22,7 @@ enum OutputType
 enum UIPrintInfoOutputType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants when setting the value of the [`outputType`](./outputtype-swift.property.md) property of a `UIPrintInfo` object.
 

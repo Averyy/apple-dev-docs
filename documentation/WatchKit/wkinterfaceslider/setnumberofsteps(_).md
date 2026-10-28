@@ -19,7 +19,7 @@ func setNumberOfSteps(_ numberOfSteps: Int)
 - (void) setNumberOfSteps:(NSInteger) numberOfSteps;
 ```
 
-#### Discussion
+## Discussion
 
 Each tap on the slider’s increment or decrement areas changes the slider value by one step. The value of each step is equal to the difference between the minimum and maximum values divided by the number of steps. For example, if the minimum value is `0`, the maximum value is `1`, and the number of steps is `10`, each step increments or decrements the value by `0.1`.
 

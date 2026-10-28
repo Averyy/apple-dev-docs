@@ -15,11 +15,11 @@ The Get Asset and Upload Asset endpoints return this response object.
 object AssetResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Asset`](./get-asset-by-id.md) and [`Upload Asset`](./upload-asset.md) return `AssetResponse` as the top-level envelope. On success, `result` contains the [`Asset`](./asset.md) object. On failure, `result` is absent and `error` describes the problem.
 
-##### Example
+### Example
 
 ```json
 {

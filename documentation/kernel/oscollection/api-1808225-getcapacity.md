@@ -11,11 +11,11 @@ Returns the number of objects the collection can store without reallocating.
 virtual unsigned int getCapacity() const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 The number objects the collection can store without reallocating.
 
-#### Overview
+## Overview
 
 Subclasses must implement this pure virtual member function.
 

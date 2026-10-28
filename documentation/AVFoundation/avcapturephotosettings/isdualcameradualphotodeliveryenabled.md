@@ -21,7 +21,7 @@ var isDualCameraDualPhotoDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isDualCameraDualPhotoDeliveryEnabled) BOOL dualCameraDualPhotoDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`false`](../../Swift/false.md) (the default), and the photo output is configured with a capture device of the [`builtInDualCamera`](../avcapturedevice/devicetype-swift.struct/builtindualcamera.md) type, the photo output delivers a single main photo image for each capture. (The device determines how to produce that image from one or both cameras).
 

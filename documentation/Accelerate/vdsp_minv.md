@@ -21,7 +21,7 @@ Calculates the single-precision minimum value of a vector.
 extern void vDSP_minv(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the minimum value of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 

@@ -26,7 +26,7 @@ class func calorie() -> Self
 + (instancetype) calorieUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring energy in calories.
 

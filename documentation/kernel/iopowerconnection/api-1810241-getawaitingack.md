@@ -12,7 +12,7 @@ bool getAwaitingAck (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called by the parent.
 

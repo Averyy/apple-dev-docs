@@ -18,7 +18,7 @@ Adds a text range to the set of matches.
 - (void) foundRange:(UITextRange *) range forSearchString:(NSString *) string inDocument:(UITextSearchDocumentIdentifier) document;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to add a text range found in your document to the set of matches.
 

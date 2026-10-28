@@ -16,7 +16,7 @@ The current experience.
 final var experience: AVExperienceController.Experience { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system updates this value only after the [`status`](./transitioncontext/status-swift.property.md) changes to [`AVExperienceController.TransitionContext.Status.finished(result:)`](./transitioncontext/status-swift.enum/finished%28result%29.md).
 

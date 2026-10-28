@@ -24,7 +24,7 @@ case subsurface
 MDLMaterialSemanticSubsurface
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `subsurface` attribute when importing from the MTL file format (for assets in the OBJ file format).
 

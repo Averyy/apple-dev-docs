@@ -20,11 +20,11 @@ func CGConfigureDisplayStereoOperation(_ config: CGDisplayConfigRef?, _ display:
 extern CGError CGConfigureDisplayStereoOperation(CGDisplayConfigRef config, CGDirectDisplayID display, boolean_t stereo, boolean_t forceBlueLine);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 The system normally detects the presence of a stereo window and automatically switches a display containing a stereo window to stereo operation. This function provides a mechanism to force a display to stereo operation, and to set options (blue line sync signal) when in stereo operation.
 

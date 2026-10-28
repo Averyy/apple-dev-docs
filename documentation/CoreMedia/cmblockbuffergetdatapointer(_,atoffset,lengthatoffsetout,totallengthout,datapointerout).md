@@ -25,11 +25,11 @@ func CMBlockBufferGetDataPointer(_ theBuffer: CMBlockBuffer, atOffset offset: In
 extern OSStatus CMBlockBufferGetDataPointer(CMBlockBufferRef theBuffer, size_t offset, size_t *lengthAtOffsetOut, size_t *totalLengthOut, char **dataPointerOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if data was accessible at the specified offset within the given `CMBlockBuffer`. Returns an error otherwise.
 
-#### Discussion
+## Discussion
 
 Gains access to the data represented by a [`CMBlockBuffer`](./cmblockbuffer.md). A pointer into a memory block is returned which corresponds to the offset within the `CMBlockBuffer`.  If `lengthAtOffset` is non `NULL`, the number of bytes addressable at the pointer is returned. This length-at-offset may be smaller than the number of bytes actually available starting at the offset if the `dataLength` of the `CMBlockBuffer` is covered by multiple memory blocks (a noncontiguous `CMBlockBuffer`). The caller can compare (`offset`+`lengthAtOffset`) with `totalLength` to determine whether the entire `CMBlockBuffer` has been referenced and whether it is possible to access the `CMBlockBuffer`’s data with a contiguous reference. The data pointer returned will remain valid as long as the original `CMBlockBuffer` is referenced - once the `CMBlockBuffer` is released for the last time, any pointers                into it will be invalid.
 

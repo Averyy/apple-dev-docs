@@ -26,7 +26,7 @@ var alertLocalizationArgs: [String]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * alertLocalizationArgs;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of field names that CloudKit uses to extract the corresponding values from the record that triggers the push notification. The values are strings, numbers, or dates. CloudKit may truncate strings with a length greater than 100 characters when it adds them to a notification’s payload.
 

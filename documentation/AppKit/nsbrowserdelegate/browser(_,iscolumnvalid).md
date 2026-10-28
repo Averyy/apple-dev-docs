@@ -20,11 +20,11 @@ optional func browser(_ sender: NSBrowser, isColumnValid column: Int) -> Bool
 - (BOOL) browser:(NSBrowser *) sender isColumnValid:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the column’s contents are valid; otherwise, [`false`](../../Swift/false.md). If [`false`](../../Swift/false.md) is returned, `sender` reloads the column.
 
-#### Discussion
+## Discussion
 
 This method is invoked in response to the [`validateVisibleColumns()`](../nsbrowser/validatevisiblecolumns%28%29.md)method of [`NSBrowser`](../nsbrowser.md) being sent to `sender`.
 

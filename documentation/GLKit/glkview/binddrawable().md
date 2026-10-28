@@ -23,7 +23,7 @@ func bindDrawable()
 - (void) bindDrawable;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling your drawing method, the view binds the underlying framebuffer object to the context so that rendering commands are automatically drawn into it. However, some rendering strategies require you to change the target of your rendering commands to another framebuffer object, such as when you need to render to a texture first. If your application changed the framebuffer object bound to OpenGL ES, it calls this method to rebind the view’s framebuffer object to OpenGL ES.
 

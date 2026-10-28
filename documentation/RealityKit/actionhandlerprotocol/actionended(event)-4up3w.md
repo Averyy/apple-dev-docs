@@ -20,7 +20,7 @@ The function used to respond to action ended events.
 mutating func actionEnded(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 Action ended is raised after a ‘started’ event has taken place, and the animation time exits the event interval, or when the animation is terminated before completion.
 

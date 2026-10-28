@@ -19,7 +19,7 @@ var fileSystemTypeName: String { get }
 @property (copy, readonly) NSString * fileSystemTypeName;
 ```
 
-#### Discussion
+## Discussion
 
 Match this value to the `FSShortName` attribute within the `EXAppExtensionAttributes` dictionary of the module’s `Info.plist`. The maximum allowed length is `MFSTYPENAMELEN`, including the terminating `NUL` character.
 

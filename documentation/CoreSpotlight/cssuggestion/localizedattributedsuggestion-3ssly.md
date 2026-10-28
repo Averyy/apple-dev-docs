@@ -19,7 +19,7 @@ An attributed string for the localized suggestion.
 var localizedAttributedSuggestion: AttributedString { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `localizedAttributedString` provides the suggestion text that the system uses to replace the text in the search bar. The system uses the attributed string to highlight the range of the suggestion string that matches the user query string.
 

@@ -19,7 +19,7 @@ class func setUser(_ font: NSFont?)
 + (void) setUserFont:(NSFont *) font;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying `aFont` as `nil` causes the default to be removed from the application domain.
 

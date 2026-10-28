@@ -15,7 +15,7 @@ The system key.
 static let system: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

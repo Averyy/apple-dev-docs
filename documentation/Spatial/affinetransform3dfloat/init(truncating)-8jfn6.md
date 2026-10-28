@@ -23,11 +23,11 @@ init(truncating matrix: simd_float4x4)
 static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeWithTruncated4x4Matrix(simd_float4x4 matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new affine transform structure from the specified 4 x 4 matrix truncated to a  4 x 3 matrix.
 

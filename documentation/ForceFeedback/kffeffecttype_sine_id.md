@@ -14,7 +14,7 @@
 #define kFFEffectType_Sine_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a sine wave effect type
 

@@ -22,7 +22,7 @@ static var editingDisabled: UIDocument.State { get }
 UIDocumentStateEditingDisabled
 ```
 
-#### Discussion
+## Discussion
 
 This state is set just before [`UIDocument`](../../uidocument.md) calls the [`disableEditing()`](../disableediting%28%29.md) method. It calls [`enableEditing()`](../enableediting%28%29.md) when it becomes safe to edit again. [`UIDocument`](../../uidocument.md) also sets this state when an error prevents the reverting of a document.
 

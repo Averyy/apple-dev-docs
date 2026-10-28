@@ -21,7 +21,7 @@ A set of Unicode character values for use in search operations.
 struct CharacterSet
 ```
 
-#### Overview
+## Overview
 
 A `CharacterSet` represents a set of Unicode-compliant characters. Foundation types use `CharacterSet` to group characters together for searching operations, so that they can find any of a particular set of characters during a search.
 

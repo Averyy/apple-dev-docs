@@ -21,7 +21,7 @@ optional func keyWillRotate(for keyType: ASAuthorizationProviderExtensionKeyType
 - (void) keyWillRotateForKeyType:(ASAuthorizationProviderExtensionKeyType) keyType newKey:(SecKeyRef) newKey loginManager:(ASAuthorizationProviderExtensionLoginManager *) loginManager completion:(void (^)(BOOL success)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The specified keyType will rotate to a new key. The rotation is complete when the completion handler is called.  This is only called by the system for automatic key rotation.
 

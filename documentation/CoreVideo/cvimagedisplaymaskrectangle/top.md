@@ -21,7 +21,7 @@ The vertical pixel offset of the rectangle from the top of the bounding raster.
 var top: UInt16
 ```
 
-#### Discussion
+## Discussion
 
 This value is always less than [`referenceRasterHeight`](./referencerasterheight.md).
 

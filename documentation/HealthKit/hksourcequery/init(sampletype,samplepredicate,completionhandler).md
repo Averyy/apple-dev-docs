@@ -28,11 +28,11 @@ init(sampleType: HKSampleType, samplePredicate objectPredicate: NSPredicate?, co
 
 - [Executing Source Queries](../executing-source-queries.md)
 
-#### Return Value
+## Return Value
 
 A newly initialized sample query object.
 
-#### Discussion
+## Discussion
 
 After instantiating the query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method to run this query. Queries run on an anonymous background queue. As soon as the query is complete, the results handler is executed on the same background queue (but not necessarily on the same thread).
 

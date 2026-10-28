@@ -21,7 +21,7 @@ The name of the resource in the bundle.
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 The [`name`](./name.md) property specifies both the resource name and its file extension.
 

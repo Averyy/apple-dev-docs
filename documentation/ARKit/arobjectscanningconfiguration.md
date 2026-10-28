@@ -20,7 +20,7 @@ class ARObjectScanningConfiguration
 @interface ARObjectScanningConfiguration : ARConfiguration
 ```
 
-#### Overview
+## Overview
 
 To create an app that recognizes objects in the physical environment, first you scan them during development using `ARObjectScanningConfiguration`. After you’ve scanned an object, call [`createReferenceObject(transform:center:extent:completionHandler:)`](./arsession/createreferenceobject%28transform,center,extent,completionhandler%29.md) to turn it into an [`ARReferenceObject`](./arreferenceobject.md) that you can use to detect it again at run-time. When users run your app, you ask ARKit to look for your scanned obects by running a world tracking configuration and assigning reference objects to its [`detectionObjects`](./arworldtrackingconfiguration/detectionobjects.md) property.
 

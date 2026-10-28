@@ -15,7 +15,7 @@ Writes file system metadata from a buffer to a cache, prior to flushing it to th
 func delayedMetadataWrite(from buffer: UnsafeRawBufferPointer, startingAt offset: off_t, length: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method provides access to the Kernel Buffer Cache, which is the primary system cache for file system metadata. Unlike equivalent kernel APIs, this method doesn’t hold any kernel-level claim to the underlying buffers.
 

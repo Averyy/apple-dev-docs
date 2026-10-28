@@ -24,7 +24,7 @@ class ACAccount
 @interface ACAccount : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`ACAccount`](./acaccount.md) object encapsulates information about a user account stored in the Accounts database. You can create and retrieve accounts using an [`ACAccountStore`](./acaccountstore.md) object. The [`ACAccountStore`](./acaccountstore.md) object provides an interface to the persistent Accounts database. For each user, all account objects belong to a single [`ACAccountStore`](./acaccountstore.md) object.
 

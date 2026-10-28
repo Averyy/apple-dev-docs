@@ -19,11 +19,11 @@ optional func accessibilityDisclosureLevel() -> Int
 - (NSInteger) accessibilityDisclosureLevel;
 ```
 
-#### Return Value
+## Return Value
 
 The disclosure level for the row.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityDisclosureLevel`](../nsaccessibility-c.protocol/accessibilitydisclosurelevel.md) property.
 

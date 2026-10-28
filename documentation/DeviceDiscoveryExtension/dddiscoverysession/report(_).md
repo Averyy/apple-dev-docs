@@ -23,7 +23,7 @@ func report(_ inEvent: DDDeviceEvent)
 - (void) reportEvent:(DDDeviceEvent *) inEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The extension updates the system with the discovery status of the device of interest by passing event objects (`DDEvent`) through this function.
 

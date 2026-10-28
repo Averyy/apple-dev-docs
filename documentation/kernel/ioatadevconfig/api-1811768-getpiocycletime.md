@@ -10,7 +10,7 @@ UInt16 getPIOCycleTime(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 reported PIO CycleTime in nanoseconds.
 

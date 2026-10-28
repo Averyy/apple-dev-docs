@@ -19,7 +19,7 @@ func toggleAutomaticTextReplacement(_ sender: Any?)
 - (void) toggleAutomaticTextReplacement:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Turning on automatic text replacement enables automatic substitution of a variety of static text items based on user preferences.
 

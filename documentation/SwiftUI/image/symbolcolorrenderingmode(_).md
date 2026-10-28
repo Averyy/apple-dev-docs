@@ -21,7 +21,7 @@ Sets the color rendering mode of the image.
 func symbolColorRenderingMode(_ mode: SymbolColorRenderingMode?) -> Image
 ```
 
-#### Return Value
+## Return Value
 
 A view that specifies how to fill symbol images.
 

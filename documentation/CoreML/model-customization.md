@@ -5,7 +5,7 @@
 
 Expand and modify your model with new layers.
 
-#### Overview
+## Overview
 
 Customize your Core ML model to make it work better for your specific app. For instance, create one or more custom layers to improve accuracy by increasing the model’s capacity to capture information. You can also reduce the model’s size to optimize the contents of your app bundle.
 

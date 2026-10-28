@@ -27,7 +27,7 @@ optional func program(_ program: SCNProgram, unbindValueForSymbol symbol: String
 - (void) program:(SCNProgram *) program unbindValueForSymbol:(NSString *) symbol atLocation:(unsigned int) location programID:(unsigned int) programID renderer:(SCNRenderer *) renderer;
 ```
 
-#### Discussion
+## Discussion
 
 If you use the [`handleUnbinding(ofSymbol:handler:)`](../scnshadable/handleunbinding%28ofsymbol,handler%29.md) method to associate a handler block with a SceneKit object for a symbol, SceneKit will not call the delegate’s [`program(_:unbindValueForSymbol:atLocation:programID:renderer:)`](./program%28_,unbindvalueforsymbol,atlocation,programid,renderer%29.md) method for that symbol when rendering that object.
 

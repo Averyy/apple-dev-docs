@@ -23,7 +23,7 @@ struct LaunchOptionsKey
 typedef NSString * UIApplicationLaunchOptionsKey;
 ```
 
-#### Overview
+## Overview
 
 These keys are passed to the options dictionary that’s passed to the [`application(_:willFinishLaunchingWithOptions:)`](../uiapplicationdelegate/application%28_,willfinishlaunchingwithoptions%29.md) and [`application(_:didFinishLaunchingWithOptions:)`](../uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) methods of the app delegate.
 

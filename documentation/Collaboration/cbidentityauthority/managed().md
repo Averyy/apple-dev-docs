@@ -19,11 +19,11 @@ class func managed() -> CBIdentityAuthority
 + (CBIdentityAuthority *) managedIdentityAuthority;
 ```
 
-#### Return Value
+## Return Value
 
 The identity authorities in bound network directory servers.
 
-#### Discussion
+## Discussion
 
 If you are bound to a network directory server (such as an LDAP server) that has an identity authority, use this method to search those authorities.
 

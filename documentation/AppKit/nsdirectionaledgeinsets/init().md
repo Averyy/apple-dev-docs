@@ -15,11 +15,11 @@ Creates a directional edge insets structure that contains default values.
 init()
 ```
 
-#### Return Value
+## Return Value
 
 An initialized inset structure.
 
-#### Discussion
+## Discussion
 
 This method sets all inset margins to `0.0`.
 

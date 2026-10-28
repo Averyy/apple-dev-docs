@@ -15,7 +15,7 @@ An overlay consisting of one or more points that forms a closed shape.
 class PolygonOverlay extends Overlay
 ```
 
-#### Overview
+## Overview
 
 A *polygon* is a shape that consists of points connected end-to-end. Unlike polylines, polygons are closed shapes with an inside and an outside. The first and last points connect to each other to form a closed shape.
 

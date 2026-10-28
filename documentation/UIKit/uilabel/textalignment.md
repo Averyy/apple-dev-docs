@@ -23,7 +23,7 @@ var textAlignment: NSTextAlignment { get set }
 @property (nonatomic) NSTextAlignment textAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re using styled text, assigning a new value to this property applies the text alignment to the entirety of the string in the [`attributedText`](./attributedtext.md) property. If you want to apply the alignment to only a portion of the text, create a new attributed string with the desired style information and associate it with the label. If you aren’t using styled text, this property applies to the entire text string in the [`text`](./text.md) property.
 

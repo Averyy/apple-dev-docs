@@ -20,7 +20,7 @@ let vmnet_nat66_prefix_key: UnsafePointer<CChar>
 extern const char * const vmnet_nat66_prefix_key;
 ```
 
-#### Discussion
+## Discussion
 
 Use this with the `VMNET_SHARED_MODE`; the prefix must be a Unique Local Addresses (ULA) and start with one of the ULA prefixes such as `fd00::/8`. For more information on ULAs, see [RFC-4193](https://datatracker.ietf.org/doc/html/rfc4193).
 

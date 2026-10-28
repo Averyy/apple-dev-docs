@@ -24,7 +24,7 @@ class VZVirtualMachine
 - [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
-#### Overview
+## Overview
 
 A [`VZVirtualMachine`](./vzvirtualmachine.md) object emulates a complete hardware machine of the same architecture as the underlying Mac computer. Use the VM to execute a guest operating system and any other apps you install. The VM manages the resources that the guest operating system uses, providing access to some hardware resources while emulating others.
 

@@ -19,7 +19,7 @@ Draws the hover effect with an opacity that’s equal to the product of the enti
 case blend
 ```
 
-#### Discussion
+## Discussion
 
 In this example a rounded black rectangle continuously transitions between transparent and fully opaque. Applying a green highlight hover effect with a blend opacity function to the rectangle causes the hover effect to smoothly transition between transparent and fully opaque.
 

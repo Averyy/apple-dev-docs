@@ -29,7 +29,7 @@ func start(with queue: dispatch_queue_t) async throws -> MKMapSnapshotter.Snapsh
 - (void) startWithQueue:(dispatch_queue_t) queue completionHandler:(MKMapSnapshotCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to begin generating a snapshot image based on the specified parameters. This method executes the request asynchronously. When rendering is complete, the snapshotter delivers the results to your block on the dispatch queue in the `queue` parameter.
 

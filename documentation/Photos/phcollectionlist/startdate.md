@@ -24,7 +24,7 @@ var startDate: Date? { get }
 @property (nonatomic, strong, readonly, nullable) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only to collection lists whose type is [`PHCollectionListType.momentList`](../phcollectionlisttype/momentlist.md). For other collection list types, this property’s value is `nil`.
 

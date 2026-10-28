@@ -25,7 +25,7 @@ static let systemSize: FileAttributeKey
 extern NSFileAttributeKey const NSFileSystemSize;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object that specifies the size of the file system in bytes. The value is determined by `statfs()`.
 

@@ -33,7 +33,7 @@ var mediaSearch: INMediaSearch? { get }
 @property (atomic, copy, readonly, nullable) INMediaSearch * mediaSearch;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the user’s request, you may need to search for a particular media item. For example, adding a specific song would set `mediaSearch` to [`mediaName`](../inmediasearch/medianame.md) to “name” and [`mediaType`](../inmediasearch/mediatype.md) to [`INMediaItemType.song`](../inmediaitemtype/song.md).
 

@@ -19,7 +19,7 @@ class NSCustomImageRep
 @interface NSCustomImageRep : NSImageRep
 ```
 
-#### Overview
+## Overview
 
 When called upon to produce an image, an [`NSCustomImageRep`](./nscustomimagerep.md) sends a message to its delegate to do the actual drawing. You can use this class to support custom image formats without going to the trouble of subclassing [`NSImageRep`](./nsimagerep.md) directly.
 

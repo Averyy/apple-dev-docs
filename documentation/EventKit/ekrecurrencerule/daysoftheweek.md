@@ -24,7 +24,7 @@ var daysOfTheWeek: [EKRecurrenceDayOfWeek]? { get }
 @property (nonatomic, readonly, nullable) NSArray<EKRecurrenceDayOfWeek *> * daysOfTheWeek;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is valid only for recurrence rules that were initialized with specific days of the week and a frequency type of [`EKRecurrenceFrequency.weekly`](../ekrecurrencefrequency/weekly.md), [`EKRecurrenceFrequency.monthly`](../ekrecurrencefrequency/monthly.md), or [`EKRecurrenceFrequency.yearly`](../ekrecurrencefrequency/yearly.md).
 

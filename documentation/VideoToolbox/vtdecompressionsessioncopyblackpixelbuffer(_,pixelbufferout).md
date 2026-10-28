@@ -24,11 +24,11 @@ func VTDecompressionSessionCopyBlackPixelBuffer(_ session: VTDecompressionSessio
 extern OSStatus VTDecompressionSessionCopyBlackPixelBuffer(VTDecompressionSessionRef session, CVPixelBufferRef*pixelBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` value that indicates the result of the operation.
 
-#### Discussion
+## Discussion
 
 The pixel buffer is in the same format as the decompression session.
 

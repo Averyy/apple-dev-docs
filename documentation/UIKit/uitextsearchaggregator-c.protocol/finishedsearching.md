@@ -18,7 +18,7 @@ Finishes the search for text ranges.
 - (void) finishedSearching;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after searching all documents.
 

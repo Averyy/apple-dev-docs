@@ -21,7 +21,7 @@ A mode that clears any pixels that the source image overwrites.
 static var clear: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 With this mode, you can use the source image like an eraser.
 

@@ -31,7 +31,7 @@ var priceRange: INPriceRange? { get }
 @property (atomic, readonly, nullable) INPriceRange * priceRange;
 ```
 
-#### Discussion
+## Discussion
 
 When presenting pricing information for this party size, SiriKit displays a formatted version of this value.
 

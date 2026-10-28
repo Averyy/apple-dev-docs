@@ -24,7 +24,7 @@ func UIGraphicsPushContext(_ context: CGContext)
 extern void UIGraphicsPushContext(CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 You can use this function to save the previous graphics state and make the specified context the current context. You must balance calls to this function with matching calls to the [`UIGraphicsPopContext()`](./uigraphicspopcontext%28%29.md) function.
 

@@ -18,7 +18,7 @@ Allocates an OSDictionary object with preallocated capacity.
 static OSDictionaryPtr withCapacity(uint32_t capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSDictionary with reference count 1 to be released by the caller.
 

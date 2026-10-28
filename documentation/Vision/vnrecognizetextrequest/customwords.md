@@ -28,7 +28,7 @@ var customWords: [String] { get set }
 
 - [Recognizing Text in Images](../recognizing-text-in-images.md)
 
-#### Discussion
+## Discussion
 
 Custom words take precedence over the standard lexicon. The request ignores this value if [`usesLanguageCorrection`](./useslanguagecorrection.md) is [`false`](../../Swift/false.md).
 

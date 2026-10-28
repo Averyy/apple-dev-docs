@@ -25,7 +25,7 @@ class var epochs: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * epochs;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`epochs`](./epochs.md) key is an [`Int64`](../../Swift/int64.md).
 

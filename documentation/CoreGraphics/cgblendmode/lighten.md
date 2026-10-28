@@ -23,7 +23,7 @@ case lighten
 kCGBlendModeLighten
 ```
 
-#### Discussion
+## Discussion
 
 Creates the composite image samples by choosing the lighter samples (either from the source image or the background). The result is that the background image samples are replaced by any source image samples that are lighter. Otherwise, the background image samples are left unchanged.
 

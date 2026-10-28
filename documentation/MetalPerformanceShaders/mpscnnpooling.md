@@ -24,7 +24,7 @@ class MPSCNNPooling
 @interface MPSCNNPooling : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 Pooling is a form of non-linear sub-sampling. Pooling partitions the input image into a set of rectangles (overlapping or non-overlapping) and, for each such sub-region, outputs a value. The pooling operation is used in computer vision to reduce the dimensionality of intermediate representations.
 

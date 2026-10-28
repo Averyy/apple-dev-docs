@@ -20,11 +20,11 @@ Creates a portal entity and a world entity, and configures them.
 static func makePortal(surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle = .infinitePlane(), boundaryMode: PortalComponent.BoundaryMode = .none) -> PortalComponent.Portal
 ```
 
-#### Return Value
+## Return Value
 
 A [`PortalComponent.Portal`](./portal.md) containing the new portal entity and world entity.
 
-#### Discussion
+## Discussion
 
 This is the simplest way to set up a portal. The returned [`PortalComponent.Portal`](./portal.md) value contains a fresh portal entity and a fresh world entity that you add to your scene. To add portal world content, parent it under the returned `worldEntity`.
 

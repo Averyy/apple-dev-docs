@@ -21,11 +21,11 @@ func ABPersonCopyCompositeNameDelimiterForRecord(_ record: ABRecord!) -> Unmanag
 extern CFStringRefABPersonCopyCompositeNameDelimiterForRecord(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The delimiter to use between name components.
 
-#### Discussion
+## Discussion
 
 If the record is `NULL`, or if it has no first name, middle name, or last name, then the default delimiter is returned.
 

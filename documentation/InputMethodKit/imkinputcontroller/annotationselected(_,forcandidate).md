@@ -19,7 +19,7 @@ func annotationSelected(_ annotationString: NSAttributedString!, forCandidate ca
 - (void) annotationSelected:(NSAttributedString *) annotationString forCandidate:(NSAttributedString *) candidateString;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the user moves to a candidate.
 

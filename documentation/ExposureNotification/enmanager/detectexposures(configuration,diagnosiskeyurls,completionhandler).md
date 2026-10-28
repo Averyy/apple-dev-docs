@@ -23,11 +23,11 @@ func detectExposures(configuration: ENExposureConfiguration, diagnosisKeyURLs: [
 - (NSProgress *) detectExposuresWithConfiguration:(ENExposureConfiguration *) configuration diagnosisKeyURLs:(NSArray<NSURL *> *) diagnosisKeyURLs completionHandler:(ENDetectExposuresHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The progress of the method.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
@@ -45,7 +45,7 @@ On iOS 13.7 and later, exposure keys that you submit to this method are automati
 >
 > On iOS 13.5, you can only submit 15 uncached key files per 24-hour period, regardless of the number of API calls you make.
 
-##### Log Exposures
+### Log Exposures
 
 ExposureNotification provides transparency for users at several points. For example, a user can choose Settings > Exposure Notifications to show the status of COVID-19 Exposure Logging, along with the currently active app, and its activity. This activity view shows the number of diagnostic key checks in the past 14 days, and the hash of the checked sets of keys.
 

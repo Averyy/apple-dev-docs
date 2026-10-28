@@ -24,11 +24,11 @@ init!(newPromiseRejectedWithReason reason: Any!, in context: JSContext!)
 + (JSValue *) valueWithNewPromiseRejectedWithReason:(id) reason inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValue`](../jsvalue.md) that represents a new promise JavaScript object.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to calling the following:
 

@@ -5,13 +5,13 @@
 
 Use Terminal to remove your app’s authorization access to protected resources during testing.
 
-#### Overview
+## Overview
 
 The first time your app attempts to access a protected resource such as Reminders or the microphone, the system prompts the person for permission. After the person grants or denies your app’s request for access, the system remembers their choice. For more information, see [Requesting access to protected resources](../UIKit/requesting-access-to-protected-resources.md).
 
 During development, you might need the system to prompt the person for permission again — to test your app’s onboarding experience, verify that your purpose strings appear correctly in every language you support, or reproduce a bug that only occurs before the person grants access. To make the system prompt the person again, use the `tccutil reset` command in Terminal. The `tccutil reset` command requires a service, each protected resource has a service name. By default, the command affects only your current user account. To reset access for all user accounts on your Mac, run the command with `sudo`. To learn more about `tccutil`, enter `man tccutil` in Terminal.
 
-#### Reset access
+## Reset access
 
 To reset access to a specific protected resource for every app, enter `tccutil reset` with the service name:
 
@@ -47,7 +47,7 @@ To reset access to all resources for a single app, add the app’s bundle ID:
 % tccutil reset All com.example.company
 ```
 
-#### Look up a service name
+## Look up a service name
 
 The `<service>` argument accepts the following values. When applicable, each entry includes the privacy usage description key to add to your app’s `Info.plist`.
 

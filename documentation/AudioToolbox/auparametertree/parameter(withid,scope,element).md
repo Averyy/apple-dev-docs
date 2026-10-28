@@ -24,11 +24,11 @@ func parameter(withID paramID: AudioUnitParameterID, scope: AudioUnitScope, elem
 - (AUParameter *) parameterWithID:(AudioUnitParameterID) paramID scope:(AudioUnitScope) scope element:(AudioUnitElement) element;
 ```
 
-#### Return Value
+## Return Value
 
 The parameter corresponding to the supplied ID, scope, and element. Returns `nil` if the parameter is nonexistent or if it is not associated with a version 2 audio unit.
 
-#### Discussion
+## Discussion
 
 Version 2 audio units publish parameters identified by a parameter ID, scope, and element. A host that knows that it is dealing with a version 2 audio unit can locate parameters using this method—for example, for the Apple-supplied system audio units.
 

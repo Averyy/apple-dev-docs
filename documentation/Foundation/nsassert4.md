@@ -21,7 +21,7 @@ Generates an assertion if a given condition is false.
 #define NSAssert4(condition, desc, arg1, arg2, arg3, arg4)
 ```
 
-#### Discussion
+## Discussion
 
 The `NSAssert4` macro evaluates the condition and serves as a front end to the assertion handler.
 

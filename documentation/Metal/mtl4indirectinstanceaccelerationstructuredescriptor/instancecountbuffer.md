@@ -24,7 +24,7 @@ var instanceCountBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange instanceCountBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring that the final number of instances at build time, which you provide indirectly via this buffer reference , is less than or equal to the value of property [`maxInstanceCount`](./maxinstancecount.md).
 

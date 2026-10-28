@@ -26,7 +26,7 @@ func readLength(_ length: Int, completionHandler completion: @escaping (Data?, (
 - (void) readLength:(NSUInteger) length completionHandler:(void (^)(NSData *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Read `length` number of bytes. See `readMinimumLength:maximumLength:completionHandler:` for a complete discussion of the callback behavior.
 

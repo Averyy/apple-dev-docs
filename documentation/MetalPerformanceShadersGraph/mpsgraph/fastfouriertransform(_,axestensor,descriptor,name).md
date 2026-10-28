@@ -24,11 +24,11 @@ func fastFourierTransform(_ tensor: MPSGraphTensor, axesTensor: MPSGraphTensor, 
 - (MPSGraphTensor *) fastFourierTransformWithTensor:(MPSGraphTensor *) tensor axesTensor:(MPSGraphTensor *) axesTensor descriptor:(MPSGraphFFTDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid complex-valued MPSGraphTensor of the same shape as `tensor`.
 
-#### Discussion
+## Discussion
 
 This operation computes the fast Fourier transform of the input tensor according to the following formulae.
 

@@ -17,7 +17,7 @@ Load a model from a local directory, producing a [`ModelContext`](../modelcontex
 func load(from directory: URL, using tokenizerLoader: any TokenizerLoader) async throws -> sending ContextType
 ```
 
-#### Discussion
+## Discussion
 
 No downloader is needed — the model and tokenizer are loaded from the given directory.
 

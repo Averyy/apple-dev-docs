@@ -19,7 +19,7 @@ func beginSearchInteraction()
 - (void) beginSearchInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 If the system displays a compressed search field, starting the search interaction expands the field to the width stored in the [`preferredWidthForSearchField`](./preferredwidthforsearchfield.md) property and moves the keyboard focus into the search field. Use [`beginSearchInteraction()`](./beginsearchinteraction%28%29.md) and [`endSearchInteraction()`](./endsearchinteraction%28%29.md) to programmatically control a search.
 

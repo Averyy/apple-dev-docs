@@ -20,7 +20,7 @@ nonisolated
 struct InsetTableStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`inset`](./tablestyle/inset.md) to construct this style.
 

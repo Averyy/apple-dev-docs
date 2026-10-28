@@ -21,7 +21,7 @@ The attributed runs of the attributed string, as a view into the underlying stri
 var runs: AttributedString.Runs { get }
 ```
 
-#### Discussion
+## Discussion
 
 Runs begin and end when the attributes for the characters change. Use this property to iterate over the runs with `for`-`in` syntax.
 

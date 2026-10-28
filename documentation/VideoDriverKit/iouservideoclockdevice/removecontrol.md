@@ -15,11 +15,11 @@ Removes a user video control from the video clock device.
 kern_return_t RemoveControl(IOUserVideoControl *in_control);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if control was successfully removed.
 
-#### Discussion
+## Discussion
 
 The control’s reference count will be decremented if it was successfully removed from the clock device.
 

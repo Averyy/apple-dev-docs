@@ -22,7 +22,7 @@ func GLKQuaternionMakeWithVector3(_ vector: GLKVector3, _ scalar: Float) -> GLKQ
 static GLKQuaternion GLKQuaternionMakeWithVector3(GLKVector3 vector, float scalar);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion.
 

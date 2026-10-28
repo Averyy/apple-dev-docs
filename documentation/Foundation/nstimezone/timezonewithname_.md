@@ -21,7 +21,7 @@ Returns the time zone object identified by a given identifier.
 + (instancetype) timeZoneWithName:(NSString *) tzName;
 ```
 
-#### Return Value
+## Return Value
 
 The time zone in the information directory with a name matching `tzName`. Returns `nil` if there is no match for the name.
 

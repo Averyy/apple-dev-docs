@@ -22,7 +22,7 @@ Whether the system preference for Show Borders is enabled.
 var accessibilityShowBorders: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 On macOS 27 and later, the system provides a dedicated Show Borders setting in System Settings. On earlier versions of macOS, this value is true when Increased Contrast is enabled.
 

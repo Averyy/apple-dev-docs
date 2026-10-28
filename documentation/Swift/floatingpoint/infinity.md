@@ -22,7 +22,7 @@ Positive infinity.
 static var infinity: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 Infinity compares greater than all finite numbers and equal to other infinite values.
 

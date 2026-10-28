@@ -28,7 +28,7 @@ optional func resolveMediaItems(for intent: INPlayMediaIntent) async -> [INPlayM
 - (void) resolveMediaItemsForPlayMedia:(INPlayMediaIntent *) intent withCompletion:(void (^)(NSArray<INPlayMediaMediaItemResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You must implement this resolve method. The other resolve methods in this protocol are optional.
 

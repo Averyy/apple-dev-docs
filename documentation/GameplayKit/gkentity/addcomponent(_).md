@@ -24,7 +24,7 @@ func addComponent(_ component: GKComponent)
 - (void) addComponent:(GKComponent *) component;
 ```
 
-#### Discussion
+## Discussion
 
 You create components by subclassing [`GKEntity`](../gkentity.md) to implement reusable behavior. Then, use this method to incorporate the behavior of a component class into that entity.
 

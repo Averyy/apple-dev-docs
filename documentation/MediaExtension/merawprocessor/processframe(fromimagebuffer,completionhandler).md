@@ -24,7 +24,7 @@ func processFrame(fromImageBuffer inputFrame: CVPixelBuffer) async throws -> CVP
 - (void) processFrameFromImageBuffer:(CVPixelBufferRef) inputFrame completionHandler:(void (^)(CVPixelBufferRef imageBuffer, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completionHandler block must be called for every [`processFrame(fromImageBuffer:completionHandler:)`](./processframe%28fromimagebuffer,completionhandler%29.md) call when processing is complete. The completion handler block should return either a processed pixel buffer or an error.
 

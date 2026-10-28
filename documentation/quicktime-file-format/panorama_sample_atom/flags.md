@@ -6,7 +6,7 @@
 
 A set of panorama flags.
 
-#### Overview
+## Overview
 
 `kQTVRPanoFlagHorizontal` has been superseded by the `panoType` field. It is used only when the `panoType` field is `nil` to indicate a horizontally-oriented cylindrical panorama. `kQTVRPanoFlagAlwaysWrap` is set if the panorama should wrap horizontally, regardless of whether or not the pan range is 360 degrees. Note that these flags are currently supported only under OS X.
 

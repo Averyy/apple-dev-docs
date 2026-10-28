@@ -25,7 +25,7 @@ func setScissorRect(_ rect: MTLScissorRect)
 - (void) setScissorRect:(MTLScissorRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The rendering pipeline discards any fragments that lie outside the scissor rectangle.
 

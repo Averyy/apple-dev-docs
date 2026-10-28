@@ -19,7 +19,7 @@ Hides or shows the status bar, optionally animating the transition.
 - (void) setStatusBarHidden:(BOOL) hidden animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The animation fades the status bar out or in at the top of the interface, depending on the value of `hidden`.
 

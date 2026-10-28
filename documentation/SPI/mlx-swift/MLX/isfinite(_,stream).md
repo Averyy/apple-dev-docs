@@ -17,11 +17,11 @@ Return a boolean array indicating which elements are finite.
 func isFinite(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The boolean array indicating which elements are infinity.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

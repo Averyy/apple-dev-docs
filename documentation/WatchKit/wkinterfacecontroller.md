@@ -20,13 +20,13 @@ class WKInterfaceController
 @interface WKInterfaceController : NSObject
 ```
 
-#### Overview
+## Overview
 
 An interface controller serves the same purpose as a [`UIViewController`](../UIKit/uiviewcontroller.md) object in a UIKit app, except that it doesn’t manage any actual views. It runs in your WatchKit extension and remotely manages the behavior associated with an interface controller in your Watch app’s storyboard file. You subclass [`WKInterfaceController`](./wkinterfacecontroller.md) and use its methods to configure the elements of your storyboard scene and to respond to interactions with those elements.
 
 Your interface controller code runs locally on the user’s Apple Watch but is separate from the interface that it manages. When you change the value of an interface object in your code, the system forwards the needed information to your Watch app, which makes the corresponding changes onscreen.
 
-##### Initialize your interface controllers
+### Initialize your interface controllers
 
 When the user interacts with your app content, the system launches your extension and creates the appropriate interface controller objects automatically. Apps use different interface controllers to manage their notification and app interfaces; WatchKit uses the information in your app’s main storyboard file to determine which interface controller to load. Notification scenes are configured specially so that the system can identify them. For your app, WatchKit loads your app’s main interface controller initially, but you may change the initial interface controller at launch time.
 
@@ -42,7 +42,7 @@ The [`willActivate()`](./wkinterfacecontroller/willactivate%28%29.md) method may
 
 In iOS Simulator, WatchKit calls the [`didDeactivate()`](./wkinterfacecontroller/diddeactivate%28%29.md) method for the current interface controller when you lock the simulator by selecting Hardware > Lock. When you subsequently unlock the simulator, WatchKit calls that interface controller’s [`willActivate()`](./wkinterfacecontroller/willactivate%28%29.md) method again. You can use this capability to debug your activation and deactivation code.
 
-##### Interface Builder configuration options
+### Interface Builder configuration options
 
 Xcode lets you configure information about your interface controller in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 
@@ -62,7 +62,7 @@ Xcode lets you configure information about your interface controller in your sto
 | Insets | The amount of space (in points) to insert between the edges of the interface controller and its content. Select Custom to specify different values for the top, bottom, left, and right edges. |
 | Spacing | Additional spacing (in points) to include between items in the interface controller. |
 
-##### Subclassing notes
+### Subclassing notes
 
 Subclass `WKInterfaceController` when you have a storyboard scene that requires configuration at runtime or that handles user interactions. Typically, you define a custom subclass for each unique storyboard scene that your app manages. In your subclass, define outlets for any interface objects you need to configure and define action methods for responding to interactions with the elements of your storyboard scene.
 

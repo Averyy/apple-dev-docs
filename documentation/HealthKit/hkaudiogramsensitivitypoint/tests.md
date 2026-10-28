@@ -22,7 +22,7 @@ var tests: [HKAudiogramSensitivityTest] { get }
 @property (nonatomic, copy, readonly) NSArray<HKAudiogramSensitivityTest *> * tests;
 ```
 
-#### Discussion
+## Discussion
 
 The tests conducted at this frequency
 

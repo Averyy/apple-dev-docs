@@ -23,11 +23,11 @@ func IONotificationPortGetMachPort(_ notify: IONotificationPortRef!) -> mach_por
 mach_port_t IONotificationPortGetMachPort(IONotificationPortRef notify);
 ```
 
-#### Return Value
+## Return Value
 
 A mach_port for the notification object.
 
-#### Discussion
+## Discussion
 
 A notification object may deliver notifications to a mach messaging client if they listen for messages on the port obtained from this function. Callbacks associated with the notifications may be delivered by calling IODispatchCalloutFromMessage with messages received.
 

@@ -21,7 +21,7 @@ Writes the textual representations of the given items most suitable for debuggin
 func debugPrint(_ items: Any..., separator: String = " ", terminator: String = "\n")
 ```
 
-#### Discussion
+## Discussion
 
 You can pass zero or more items to the `debugPrint(_:separator:terminator:)` function. The textual representation for each item is the same as that obtained by calling `String(reflecting: item)`. The following example prints the debugging representation of a string, a closed range of integers, and a group of floating-point values to standard output:
 

@@ -25,7 +25,7 @@ func results(for healthStore: HKHealthStore) -> Self.Sequence
 
 - [Running Queries with Swift Concurrency](../running-queries-with-swift-concurrency.md)
 
-#### Discussion
+## Discussion
 
 The adopting type’s [`Sequence`](./sequence.md) associated type specifies the type of [`AsyncSequence`](../../Swift/asyncsequence.md) that this method returns. For example, the [`HKAnchoredObjectQueryDescriptor`](../hkanchoredobjectquerydescriptor.md) returns a sequence of [`HKAnchoredObjectQueryDescriptor.Result`](../hkanchoredobjectquerydescriptor/result.md) instances.
 

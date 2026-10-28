@@ -19,11 +19,11 @@ convenience init?(contentsOfFile fileName: String)
 - (instancetype) initWithContentsOfFile:(NSString *) fileName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object or `nil` if the method cannot create an image representation from the contents of the specified file.
 
-#### Discussion
+## Discussion
 
 Unlike [`init(byReferencingFile:)`](./init%28byreferencingfile%29.md), which initializes an `NSImage` object lazily, this method immediately opens the specified file and creates one or more image representations from its data.
 

@@ -25,11 +25,11 @@ func scanHexFloat(_ result: UnsafeMutablePointer<Float>?) -> Bool
 - (BOOL) scanHexFloat:(float *) result;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver finds a valid float-point representation, otherwise [`false`](../../Swift/false.md). Overflow or underflow are both considered valid floating-point representations.
 
-#### Discussion
+## Discussion
 
 This corresponds to `%a` or `%A` formatting. The hexadecimal float representation must be preceded by `0x` or `0X`.
 

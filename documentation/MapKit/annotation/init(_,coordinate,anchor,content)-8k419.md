@@ -22,7 +22,7 @@ Creates an annotation that displays a view at a coordinate on the map.
 @preconcurrency init(_ titleResource: LocalizedStringResource, coordinate: CLLocationCoordinate2D, anchor: UnitPoint = .center, @ViewBuilder content: () -> Content) where Label == Text
 ```
 
-#### Discussion
+## Discussion
 
 Uses `.center` for `accessoryAnchor`. For greater control of selection accessory positioning, please use an initializer with an `accessoryAnchor` parameter.
 

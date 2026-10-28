@@ -17,7 +17,7 @@ Initializer allowing creation of a multi dimensional `MLXArray` from a nested ar
 convenience init<N>(converting value: [[N]]) where N : NestedArrayElement, N.Scalar == Double
 ```
 
-#### Discussion
+## Discussion
 
 Note: this converts the values to `Float`, matching [`init(converting:_:)`](./init%28converting,_%29.md).  Unlike the one dimensional case, [`init(_:)`](./init%28_%29-1ocp6.md) also accepts `[[Double]]` and produces a [`DType.float64`](../dtype/float64.md) result.
 
@@ -25,7 +25,7 @@ Note: this converts the values to `Float`, matching [`init(converting:_:)`](./in
 let a = MLXArray(converting: [[0.5, 0.9], [1.5, 1.9]])
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`init(_:)`](./init%28_%29-1ocp6.md)

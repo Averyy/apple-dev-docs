@@ -24,11 +24,11 @@ class PHASECardioidDirectivityModelParameters
 @interface PHASECardioidDirectivityModelParameters : PHASEDirectivityModelParameters
 ```
 
-#### Overview
+## Overview
 
 This class configures a particular frequency range in the audio spectrum that emits sound in an area defined by a mathematical cardioid. PHASE refers to each frequency segment along the audio spectrum as a *subband*. This class contains an array of `subbands` that each can direct sound in a unique cardioid shape. The framework outputs a blend of a frequency’s adjacent subbands for all frequencies that lie outside of those specified in the `subbands` array.
 
-##### Emit Sound in the Shape of a Cardioid
+### Emit Sound in the Shape of a Cardioid
 
 The following code defines a two-band cardioid model. The first subband resembles a heart-shaped cardioid and the second resembles a hypercardioid.
 

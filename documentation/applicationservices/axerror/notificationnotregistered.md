@@ -13,7 +13,7 @@
 case notificationNotRegistered = -25210
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that a notification is not registered yet.
 

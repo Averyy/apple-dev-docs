@@ -24,7 +24,7 @@ class ASDiscoveredDisplayItem
 
 - [Discovering and configuring accessories](./discovering-and-configuring-accessories.md)
 
-#### Overview
+## Overview
 
 Use this type when your app’s picker uses the [`filterDiscoveryResults`](./aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option. With this option enabled, your discovery session receives [`ASAccessoryEventType.accessoryDiscovered`](./asaccessoryeventtype/accessorydiscovered.md) events with discovered accessories. To include a discovered accessory in the picker, create an instance of this class, optionally using the Bluetooth properties of the event’s [`ASDiscoveredAccessory`](./asdiscoveredaccessory.md) to provide a more specific name or product image. Then send the `ASDiscoveredDisplayItem` to the picker with the session’s [`updatePicker(showing:completionHandler:)`](./asaccessorysession/updatepicker%28showing,completionhandler%29.md) method.
 

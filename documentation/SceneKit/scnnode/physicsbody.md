@@ -25,7 +25,7 @@ var physicsBody: SCNPhysicsBody? { get set }
 @property (nonatomic, retain, nullable) SCNPhysicsBody * physicsBody;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, specifying that the node does not participate in the physics simulation at all. If you provide a physics body, SceneKit updates the node’s position and orientation each time it processes a step of its physics simulation. For more information on SceneKit’s physics system, see [`SCNPhysicsWorld`](../scnphysicsworld.md).
 

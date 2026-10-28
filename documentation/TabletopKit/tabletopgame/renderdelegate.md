@@ -15,7 +15,7 @@ A protocol for the object that renders your entire game.
 protocol RenderDelegate : AnyObject
 ```
 
-#### Overview
+## Overview
 
 To provide a renderer, set the [`TabletopGame`](../tabletopgame.md) object render delegate to an object that conforms to this protocol using the [`addRenderDelegate(_:)`](./addrenderdelegate%28_%29.md) method. Then implement the [`onUpdate(timeInterval:snapshot:visualState:)`](./renderdelegate/onupdate%28timeinterval,snapshot,visualstate%29.md) protocol method to render the current state of the game.
 

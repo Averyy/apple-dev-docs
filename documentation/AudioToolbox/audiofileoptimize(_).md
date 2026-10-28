@@ -24,11 +24,11 @@ func AudioFileOptimize(_ inAudioFile: AudioFileID) -> OSStatus
 extern OSStatus AudioFileOptimize(AudioFileID inAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 This function optimizes the file so additional audio information can be appended to the existing data. Typically, this function consolidates the file’s audio data at the end of the file. This improves performance, such as when writing additional data to the file.
 

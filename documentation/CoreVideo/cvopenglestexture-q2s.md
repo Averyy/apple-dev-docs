@@ -5,7 +5,7 @@
 
 A texture-based image buffer that supplies source image data to OpenGL ES.
 
-#### Overview
+## Overview
 
 Core Video OpenGL ES textures are texture-based image buffers the system uses to supply source image data to OpenGL.
 

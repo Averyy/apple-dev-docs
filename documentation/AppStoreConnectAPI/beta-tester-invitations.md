@@ -5,7 +5,7 @@
 
 Requests to send or resend an email inviting a beta tester to test an app.
 
-#### Overview
+## Overview
 
 A `betaTesterInvitations` resource has a single purpose: to resend an email inviting an existing beta tester to test an app. When the app is ready to test, TestFlight sends invitations to users when you add them to builds or beta groups. You can use the `betaTesterInvitations` resource to resend an invitation, or, if you disable automatic notifications, to send the invitation for the first time.
 

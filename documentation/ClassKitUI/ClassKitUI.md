@@ -6,7 +6,7 @@
 
 Display views that enable students to submit and withdraw assigned documents in your app.
 
-#### Overview
+## Overview
 
 ClassKit UI helps students manage their assigned documents within your app. When teachers assign activities, students use these views to perform actions such as submit their work, withdraw submissions, and track their progress within your app.
 

@@ -23,7 +23,7 @@ optional func endFloatingCursor()
 - (void) endFloatingCursor;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method at the end of the two-finger pan gesture used to pick up the cursor. You can use this method to clean up the visual state of your text view.
 

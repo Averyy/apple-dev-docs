@@ -24,7 +24,7 @@ var voicing: SFAcousticFeature { get }
 @property (nonatomic, copy, readonly) SFAcousticFeature * voicing;
 ```
 
-#### Discussion
+## Discussion
 
 The `voicing` value is expressed as a probability in the range `[0.0, 1.0]`.
 

@@ -19,11 +19,11 @@ func url(withAttributeString string: String!) -> URL!
 - (NSURL *) URLWithAttributeString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSURL` object containing an absolute URL derived from the specified attribute string.
 
-#### Discussion
+## Discussion
 
 This method constructs a URL given the string value of an element attribute. Examples include the `href` attribute of a `DOMHTMLAnchorElement` object, or the `src` attribute of a `DOMHTMLImageElement` object. This method only applies to attributes that refer to URLs.
 

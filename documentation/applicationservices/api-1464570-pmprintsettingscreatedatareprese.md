@@ -19,11 +19,11 @@ func PMPrintSettingsCreateDataRepresentation(_ printSettings: PMPrintSettings, _
 OSStatus PMPrintSettingsCreateDataRepresentation(PMPrintSettings printSettings, CFDataRef  _Nullable *data, PMDataFormat format);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function is typically used to convert a print settings object into a data representation suitable for storage in a user document. For information about using a Core Foundation data object, see `CFData`.
 

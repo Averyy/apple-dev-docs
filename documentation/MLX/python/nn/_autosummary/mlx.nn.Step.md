@@ -6,8 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 
 # mlx.nn.Step
 
-**class Step(*threshold: float = 0.0*)**
-: Applies the Step Activation Function.
+```python
+class Step(threshold: float = 0.0)
+```
+
+Applies the Step Activation Function.
+
 This function implements a binary step activation, where the output is set
 to 1 if the input is greater than or equal to a specified threshold, and 0
 otherwise.
@@ -17,7 +21,7 @@ otherwise.
 1 & \text{if } x \geq \text{threshold}
 \end{cases}\end{split}\]
 
-Parameters:
-**threshold** – The value to threshold at. Default: `0.0`.
+**Parameters:**
+: **threshold** – The value to threshold at. Default: `0.0`.
 
 Methods

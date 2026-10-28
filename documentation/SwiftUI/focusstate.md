@@ -22,7 +22,7 @@ A property wrapper type that can read and write a value that SwiftUI updates as 
 @propertyWrapper struct FocusState<Value> where Value : Hashable
 ```
 
-#### Overview
+## Overview
 
 Use this property wrapper in conjunction with [`focused(_:equals:)`](./view/focused%28_,equals%29.md) and [`focused(_:)`](./view/focused%28_%29.md) to describe views whose appearance and contents relate to the location of focus in the scene. When focus enters the modified view, the wrapped value of this property updates to match a given prototype value. Similarly, when focus leaves, the wrapped value of this property resets to `nil` or `false`. Setting the property’s value programmatically has the reverse effect, causing focus to move to the view associated with the updated value.
 
@@ -63,7 +63,7 @@ struct LoginForm: View {
 
 To allow for cases where focus is completely absent from a view tree, the wrapped value must be either an optional or a Boolean. Set the focus binding to `false` or `nil` as appropriate to remove focus from all bound fields. You can also use this to remove focus from a [`TextField`](./textfield.md) and thereby dismiss the keyboard.
 
-##### Avoid ambiguous focus bindings
+### Avoid ambiguous focus bindings
 
 The same view can have multiple focus bindings. In the following example, setting `focusedField` to either `name` or `fullName` causes the field to receive focus:
 
@@ -104,7 +104,7 @@ struct ContentView: View {
 
 If the user moves focus to either field, the `focusedField` binding updates to `name`. However, if the app programmatically sets the value to `name`, SwiftUI chooses the first candidate, which in this case is the “Name” field. SwiftUI also emits a runtime warning in this case, since the repeated binding is likely a programmer error.
 
-##### Nest focusable views
+### Nest focusable views
 
 It is important to consider the difference between [`focused(_:equals:)`](./view/focused%28_,equals%29.md) and [`focused(_:)`](./view/focused%28_%29.md) with nested focusable views.
 

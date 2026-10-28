@@ -25,7 +25,7 @@ func resourceStateCommandEncoder(with resourceStatePassDescriptor: MTLResourceSt
 - (id<MTLResourceStateCommandEncoder>) resourceStateCommandEncoderWithDescriptor:(MTLResourceStatePassDescriptor *) resourceStatePassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`MTLResourceStateCommandEncoder`](../mtlresourcestatecommandencoder.md) instance’s methods to create a pass that updates the state of one or more sparse textures.
 

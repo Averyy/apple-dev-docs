@@ -19,7 +19,7 @@ A transient component that provides camera viewpoint information to the particle
 struct ComputeGraphViewpointComponent
 ```
 
-#### Overview
+## Overview
 
 Attach this component to an entity to supply the simulation with an observer’s position and direction. The simulation uses these values for view-dependent effects such as billboard orientation or camera-facing particles.
 

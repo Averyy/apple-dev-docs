@@ -21,11 +21,11 @@ Modifies the format style to use the specified precision.
 func precision(_ p: IntegerFormatStyle<Value>.Currency.Configuration.Precision) -> IntegerFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 An integer currency format style modified to use the specified precision.
 
-#### Discussion
+## Discussion
 
 The [`NumberFormatStyleConfiguration.Precision`](../../numberformatstyleconfiguration/precision.md) type lets you specify a fixed number of digits to show for a number’s integer and fractional part, although [`IntegerFormatStyle.Currency`](../currency.md) only uses the former. You can also set a fixed number of significant digits.
 

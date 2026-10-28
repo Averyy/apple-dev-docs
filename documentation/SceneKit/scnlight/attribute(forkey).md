@@ -27,11 +27,11 @@ func attribute(forKey key: String) -> Any?
 - (id) attributeForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the lighting attribute, or `nil` if no such attribute exists.
 
-#### Discussion
+## Discussion
 
 A light’s [`type`](./type.md) property determines its set of available attributes.
 

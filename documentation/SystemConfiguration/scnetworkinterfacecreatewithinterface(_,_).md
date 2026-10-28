@@ -19,11 +19,11 @@ func SCNetworkInterfaceCreateWithInterface(_ interface: SCNetworkInterface, _ in
 SCNetworkInterfaceRefSCNetworkInterfaceCreateWithInterface(SCNetworkInterfaceRef interface, CFStringRef interfaceType);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the new network interface. You must release the returned value.
 
-#### Discussion
+## Discussion
 
 You can use this function to create a “PPP” interface on top of a “modem.”
 

@@ -17,7 +17,7 @@ A state that represents the start of the session.
 case begin
 ```
 
-#### Discussion
+## Discussion
 
 The electricity measurement stage must be 0
 

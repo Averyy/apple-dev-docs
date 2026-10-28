@@ -25,11 +25,11 @@ class func scale(to size: CGSize, duration: TimeInterval) -> SKAction
 + (SKAction *) scaleToSize:(CGSize) size duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`xScale`](../sknode/xscale.md) and [`yScale`](../sknode/yscale.md) properties are animated to achieve the specified size in its parent’s coordinate space.
 

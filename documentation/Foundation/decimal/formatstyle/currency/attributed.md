@@ -21,7 +21,7 @@ An attributed format style based on the decimal currency format style.
 var attributed: Decimal.FormatStyle.Attributed { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to create a [`Decimal.FormatStyle.Attributed`](../attributed-swift.struct.md) instance, which formats values as [`AttributedString`](../../../attributedstring.md) instances. These attributed strings contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](../../../attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
 

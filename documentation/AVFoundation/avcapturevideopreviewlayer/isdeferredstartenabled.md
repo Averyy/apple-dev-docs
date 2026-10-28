@@ -23,7 +23,7 @@ var isDeferredStartEnabled: Bool { get set }
 @property (nonatomic, getter=isDeferredStartEnabled) BOOL deferredStartEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, the session does not prepare the output’s resources until some time after [`startRunning()`](../avcapturesession/startrunning%28%29.md) returns. You can start the visual parts of your user interface (e.g. preview) prior to other parts (e.g. photo/movie capture, metadata output, etc..) to improve startup performance. Set this value to `false` if your app needs video preview immediately for startup, and `true` if it does not.
 

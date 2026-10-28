@@ -20,11 +20,11 @@ Returns detailed change information for the specified asset or collection.
 - (PHObjectChangeDetails *) changeDetailsForObject:(PHObject *) object;
 ```
 
-#### Return Value
+## Return Value
 
 A change details object, or `nil` if there have been no changes to the specified asset or collection.
 
-#### Discussion
+## Discussion
 
 When Photos calls your change observer’s [`photoLibraryDidChange(_:)`](../phphotolibrarychangeobserver/photolibrarydidchange%28_%29.md) method, get detailed change information about an asset or collection you’ve previously fetched by calling the `changeDetailsForObject` methods:
 

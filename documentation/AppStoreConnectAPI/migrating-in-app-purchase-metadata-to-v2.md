@@ -5,13 +5,13 @@
 
 Update an existing integration from the pre-4.4.1 metadata workflow to the version-based v2 workflow.
 
-#### Overview
+## Overview
 
 Before 4.4.1, localizations and review images attached directly to an In-App Purchase, subscription, or subscription group. In 4.4.1, they attach to a *version* — a draft container that groups the metadata and images that go through App Review together. The pre-4.4.1 endpoints remain available for existing integrations, but new work uses the version-based path.
 
 The version model separates a product’s stable properties (product ID, type, pricing) from its reviewable metadata (localized names, descriptions, review images). Each review cycle produces one version. When you need to change any localization or image, you create a new version rather than editing the live product.
 
-##### Endpoint mapping
+### Endpoint mapping
 
 Each deprecated v1 endpoint has a v2 equivalent that targets a version. The v1 endpoint keeps working; use it only for existing integrations that haven’t moved yet.
 
@@ -57,7 +57,7 @@ Read localizations and images through the version instead:
 - `GET /v1/subscriptionVersions/{id}/localizations` and `.../images`
 - `GET /v1/subscriptionGroupVersions/{id}/localizations`
 
-##### Migrate an In-App Purchase integration
+### Migrate an In-App Purchase integration
 
 The pre-4.4.1 flow posts a localization directly against the In-App Purchase:
 
@@ -117,7 +117,7 @@ POST /v2/inAppPurchaseLocalizations
 
 The relationship key changes from `inAppPurchaseV2` (targeting the parent product) to `version` (targeting the draft version). The same shape applies to `POST /v2/inAppPurchaseImages`.
 
-##### Migrate a submission
+### Migrate a submission
 
 The pre-4.4.1 flow submits an In-App Purchase directly:
 
@@ -180,11 +180,11 @@ PATCH /v1/reviewSubmissions/{id}
 
 The subscription and subscription group submission paths follow the same three-step pattern, with `subscriptionVersion` or `subscriptionGroupVersion` as the review submission item.
 
-##### Update your polling code
+### Update your polling code
 
 Before 4.4.1, integrations tracked submission status by reading the parent product’s state. Now, track the version’s `state` field on `InAppPurchaseVersion`, `SubscriptionVersion`, or `SubscriptionGroupVersion`. The transitions are `PREPARE_FOR_SUBMISSION` → `READY_FOR_REVIEW` → `WAITING_FOR_REVIEW` → `IN_REVIEW` → `APPROVED` or `REJECTED`. Poll the version with `GET /v1/inAppPurchaseVersions/{id}` (or the equivalent for subscriptions and groups).
 
-##### What doesn’t change
+### What doesn’t change
 
 These pieces of the workflow are unchanged in 4.4.1:
 

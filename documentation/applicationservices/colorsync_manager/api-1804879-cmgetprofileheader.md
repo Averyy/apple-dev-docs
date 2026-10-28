@@ -14,11 +14,11 @@ CMError CMGetProfileHeader (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMGetProfileHeader` function returns the header for a ColorSync 2.x or ColorSync 1.0 profile. To return the header, the function uses a union of type [`CMAppleProfileHeader`](../api-1560290-cmappleprofileheader.md), with variants for version 1.0 and 2.x headers. 
 

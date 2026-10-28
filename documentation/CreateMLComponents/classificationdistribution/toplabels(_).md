@@ -21,7 +21,7 @@ Computes the most likely labels in the classification set.
 func topLabels(_ amount: Int) -> [Label]
 ```
 
-#### Return Value
+## Return Value
 
 The labels with the highest probabilities.
 

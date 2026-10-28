@@ -15,7 +15,7 @@ A boolean value that indicates whether the Player downloads bytes before the use
 attribute Boolean proactivelyLoadsVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Whether or not the Player downloads bytes at the provided [`videoSrc`](./videosrc.md) before the user begins playback.
 

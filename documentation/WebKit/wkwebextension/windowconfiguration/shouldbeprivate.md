@@ -23,7 +23,7 @@ var shouldBePrivate: Bool { get }
 @property (nonatomic, readonly) BOOL shouldBePrivate;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: To ensure proper isolation between private and non-private data, web views associated with private data must use a different [`WKUserContentController`](../../wkusercontentcontroller.md). Likewise, to be identified as a private web view and to ensure that cookies and other website data is not shared, private web views must be configured to use a non-persistent [`WKWebsiteDataStore`](../../wkwebsitedatastore.md).
 

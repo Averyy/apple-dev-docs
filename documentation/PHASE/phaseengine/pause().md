@@ -24,7 +24,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 To resume paused playback, call [`start()`](./start%28%29.md).
 

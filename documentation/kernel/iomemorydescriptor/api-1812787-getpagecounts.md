@@ -13,11 +13,11 @@ IOReturn getPageCounts(
  IOByteCount *dirtyPageCount);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 This method returns the number of resident and/or dirty pages encompassed by an IOMemoryDescriptor.
 

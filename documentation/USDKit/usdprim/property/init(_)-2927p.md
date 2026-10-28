@@ -20,7 +20,7 @@ Casts an object handle to a property handle.
 init?(_ object: USDStage.Object)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the object is not an attribute or a relationship.
 

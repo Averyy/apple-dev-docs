@@ -21,7 +21,7 @@ Sets the model context in this view’s environment.
 @preconcurrency func modelContext(_ modelContext: ModelContext) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In this example, the `RecipesList` view sets a model context to use for all of its content:
 

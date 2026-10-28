@@ -19,7 +19,7 @@ func MDSchemaCopyMetaAttributesForAttribute(_ name: CFString!) -> CFDictionary!
 CFDictionaryRef MDSchemaCopyMetaAttributesForAttribute(CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary describingthe schema of the metadata attribute key.
 

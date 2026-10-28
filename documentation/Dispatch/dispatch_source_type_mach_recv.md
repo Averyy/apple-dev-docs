@@ -21,7 +21,7 @@ A type of dispatch source for monitoring a mach receive port.
 #define DISPATCH_SOURCE_TYPE_MACH_RECV
 ```
 
-#### Discussion
+## Discussion
 
 A dispatch source that monitors a Mach port for pending messages. The handle is a Mach port with a receive right (`mach_port_t`). The mask is unused (pass zero for now).
 

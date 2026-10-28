@@ -21,7 +21,7 @@ An interface for defining the criteria to use when searching your app’s conten
 protocol SearchCriteria : _IntentValue, Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 The system uses this protocol to define the search criteria it supports. Use only the system-defined types that adopt this protocol, and don’t adopt this protocol in your own types.
 

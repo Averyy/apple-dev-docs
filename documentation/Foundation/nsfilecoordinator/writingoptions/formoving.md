@@ -23,7 +23,7 @@ static var forMoving: NSFileCoordinator.WritingOptions { get }
 NSFileCoordinatorWritingForMoving
 ```
 
-#### Discussion
+## Discussion
 
 When specified for a directory item, the file coordinator waits for already running read and write operations of the directory’s contents, which were themselves initiated through a file coordinator, to finish before moving the directory. Queued, but not executing, read and write operations on the directory’s contents wait until the move operation finishes.
 

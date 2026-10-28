@@ -24,7 +24,7 @@ func didUpdate(getRideStatus response: INGetRideStatusIntentResponse)
 - (void) getRideStatusResponseDidUpdate:(INGetRideStatusIntentResponse *) response;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to deliver updated status information back to SiriKit. When asked to deliver updates, you should do so frequently, calling this method no less than once every 20 seconds. The response object you create should contain the latest information about the user’s ride.
 

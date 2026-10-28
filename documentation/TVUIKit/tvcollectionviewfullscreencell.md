@@ -19,7 +19,7 @@ class TVCollectionViewFullScreenCell
 @interface TVCollectionViewFullScreenCell : UICollectionViewCell
 ```
 
-#### Overview
+## Overview
 
 Use `TVCollectionViewFullScreenCell` to populate the full-screen collection view with content.
 

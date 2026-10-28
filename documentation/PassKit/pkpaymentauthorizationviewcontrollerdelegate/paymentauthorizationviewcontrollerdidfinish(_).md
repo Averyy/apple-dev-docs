@@ -24,7 +24,7 @@ func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthoriz
 - (void) paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method is called every time a payment finishes. A payment may finish because authorization was completed in [`paymentAuthorizationViewController(_:didAuthorizePayment:handler:)`](./paymentauthorizationviewcontroller%28_,didauthorizepayment,handler%29.md), because authorization timed out, or because the user canceled the payment.
 

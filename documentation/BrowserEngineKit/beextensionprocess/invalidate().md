@@ -22,7 +22,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to signal to the system your app no longer needs the extension process. If this is the last connection from the system to the extension, the system ends the extension process.
 

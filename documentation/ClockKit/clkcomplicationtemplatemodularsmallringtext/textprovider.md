@@ -22,7 +22,7 @@ var textProvider: CLKTextProvider { get set }
 @property (nonatomic, copy) CLKTextProvider * textProvider;
 ```
 
-#### Discussion
+## Discussion
 
 Space for text is limited in this particular template so keep strings as short as possible.
 

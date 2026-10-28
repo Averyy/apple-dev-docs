@@ -21,7 +21,7 @@ A syntax value that parses all Markdown text, but interprets only attributes tha
 case inlineOnlyPreservingWhitespace
 ```
 
-#### Discussion
+## Discussion
 
 This value behaves like [`AttributedString.MarkdownParsingOptions.InterpretedSyntax.inlineOnly`](./inlineonly.md), but doesn’t interpret multiple consecutive instances of white space as a single separator space. All whitespace characters appear in the result as the source specifies.
 

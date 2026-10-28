@@ -20,7 +20,7 @@ optional func popoverWillShow(_ notification: Notification)
 - (void) popoverWillShow:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked on the delegate when the [`willShowNotification`](../nspopover/willshownotification.md) notification is sent.
 

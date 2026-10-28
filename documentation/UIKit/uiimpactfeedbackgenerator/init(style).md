@@ -23,11 +23,11 @@ init(style: UIImpactFeedbackGenerator.FeedbackStyle)
 - (instancetype) initWithStyle:(UIImpactFeedbackStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized feedback generator.
 
-#### Discussion
+## Discussion
 
 For more information on using feedback generators, see `Using feedback generators`.
 

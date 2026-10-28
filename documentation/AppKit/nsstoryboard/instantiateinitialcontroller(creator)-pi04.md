@@ -15,11 +15,11 @@ Creates the initial view controller from the storyboard and initializes it using
 func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)? = nil) -> Controller? where Controller : NSViewController
 ```
 
-#### Return Value
+## Return Value
 
 The initial view controller in the storyboard.
 
-#### Discussion
+## Discussion
 
 Every storyboard file has an initial controller object that represents the default interface to create. Use this method to construct that object using a custom code that you provide. Use this method when the constructor for your object takes parameters in addition to the specified `coder` object.
 

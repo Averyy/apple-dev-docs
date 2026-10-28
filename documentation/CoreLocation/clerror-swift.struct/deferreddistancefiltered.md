@@ -21,7 +21,7 @@ A constant that indicates deferred mode doesn’t support distance filters.
 static var deferredDistanceFiltered: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Set the distance filter to [`kCLDistanceFilterNone`](../kcldistancefilternone.md).
 

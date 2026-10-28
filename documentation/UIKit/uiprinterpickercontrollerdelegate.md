@@ -23,7 +23,7 @@ protocol UIPrinterPickerControllerDelegate : NSObjectProtocol
 @protocol UIPrinterPickerControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You also use the methods of this protocol to influence the content displayed in the picker and to respond when the user selects a printer. Implement the methods of this protocol in your own custom object and assign that object to the delegate property of your [`UIPrinterPickerController`](./uiprinterpickercontroller.md) object before presenting it. When you present the picker, it calls the methods of your delegate at appropriate times to ask for information or provide you with information about the state of the picker interface. For more information about presenting a printer picker interface, see [`UIPrinterPickerController`](./uiprinterpickercontroller.md).
 

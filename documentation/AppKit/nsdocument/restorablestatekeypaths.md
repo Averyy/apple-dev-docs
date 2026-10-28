@@ -19,11 +19,11 @@ class var restorableStateKeyPaths: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * restorableStateKeyPaths;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains a key path to one of the document’s attributes.
 
-#### Discussion
+## Discussion
 
 You can use this method instead of, or in addition to, the [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) and [`restoreState(with:)`](./restorestate%28with%29.md) methods to save and restore the state of your document. The key paths must refer to attributes that are [Key-value coding](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) and [Key-value observing](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16) compliant.
 

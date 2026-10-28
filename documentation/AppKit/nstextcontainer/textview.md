@@ -19,7 +19,7 @@ weak var textView: NSTextView? { get set }
 @property (weak, nullable) NSTextView * textView;
 ```
 
-#### Discussion
+## Discussion
 
 A text container doesn’t need a text view to calculate line fragment rectangles, but must have one to display text.
 

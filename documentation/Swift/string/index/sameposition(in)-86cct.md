@@ -21,11 +21,11 @@ Returns the position in the given UTF-16 view that corresponds exactly to this i
 func samePosition(in utf16: String.UTF16View) -> String.UTF16View.Index?
 ```
 
-#### Return Value
+## Return Value
 
 The position in `utf16` that corresponds exactly to this index. If this index does not have an exact corresponding position in `utf16`, this method returns `nil`. For example, an attempt to convert the position of a UTF-8 continuation byte returns `nil`.
 
-#### Discussion
+## Discussion
 
 The index must be a valid index of `String(utf16)`.
 

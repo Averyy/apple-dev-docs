@@ -5,7 +5,7 @@
 
 Display multiple rows of content in the large, central complication on the Modular watch face.
 
-#### Overview
+## Overview
 
 Modular large templates offer a large canvas for displaying up to three rows of content on the Modular watch face.
 

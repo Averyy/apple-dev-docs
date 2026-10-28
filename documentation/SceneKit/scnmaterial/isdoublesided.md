@@ -25,7 +25,7 @@ var isDoubleSided: Bool { get set }
 @property (nonatomic, getter=isDoubleSided) BOOL doubleSided;
 ```
 
-#### Discussion
+## Discussion
 
 Polygons in a SceneKit mesh are, by default, single-sided. Each one contain a *normal vector*, which identifies the side of the polygon that’s the visible side. SceneKit uses that normal vector to determine which polygons are *front faces* that point toward the camera, and which are *back faces* that point away from it. When `doubleSided` is [`false`](../../Swift/false.md) (the default value), SceneKit only renders front faces to improve performance.
 

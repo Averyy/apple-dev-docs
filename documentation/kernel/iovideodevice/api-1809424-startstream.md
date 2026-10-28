@@ -12,11 +12,11 @@ virtual IOReturn startStream(
  IOVideoStream *stream);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully started.
 
-#### Overview
+## Overview
 
 This must be implemented by a subclass.
 

@@ -5,13 +5,13 @@
 
 Define the complications that your app supports.
 
-#### Overview
+## Overview
 
 In watchOS 7 and later, use your data source’s [`getComplicationDescriptors(handler:)`](./clkcomplicationdatasource/getcomplicationdescriptors%28handler%29.md) method to define the complications your app supports. In your implementation, create an array of [`CLKComplicationDescriptor`](./clkcomplicationdescriptor.md) objects, and pass this array to the method’s handler. You can update the complications by calling the [`reloadComplicationDescriptors()`](./clkcomplicationserver/reloadcomplicationdescriptors%28%29.md) method at any time.
 
 A complication descriptor contains a type identifier and one or more supported families. Each descriptor represents a separate complication that the user can select.
 
-##### Specify the Complication Identifiers
+### Specify the Complication Identifiers
 
 Your app can support multiple types of complications. For example, a weather app may support complications for `Condition`, `Temperature`, and `Precipitation`.
 
@@ -25,13 +25,13 @@ let complicationPrecipitationIdentifier = "PrecipitationChance"
 
 Your app uses these identifiers when creating the complication descriptors for your app, and when creating timeline entries for your complications.
 
-##### Specify the Supported Families
+### Specify the Supported Families
 
 Each complication descriptor specifies an array of families that it supports. The descriptors don’t all need to support the same families. Each descriptor can support a different subset of families, and these subsets can overlap. However, you should make sure that at least one descriptor supports each family—even if the resulting complication only acts as a launcher for your app.
 
 To get the complete list of families, call the [`CLKAllComplicationFamilies`](./clkallcomplicationfamilies.md) function.
 
-##### Create and Return the Descriptors
+### Create and Return the Descriptors
 
 After creating the type identifiers and supported families, create the descriptors for your app.
 
@@ -66,7 +66,7 @@ handler([conditionDescriptor,
          precipitationDescriptor])
 ```
 
-##### Add Information to the Descriptors
+### Add Information to the Descriptors
 
 The [`CLKComplicationDescriptor`](./clkcomplicationdescriptor.md) class provides two additional initializers: [`init(identifier:displayName:supportedFamilies:userActivity:)`](./clkcomplicationdescriptor/init%28identifier,displayname,supportedfamilies,useractivity%29.md) and [`init(identifier:displayName:supportedFamilies:userInfo:)`](./clkcomplicationdescriptor/init%28identifier,displayname,supportedfamilies,userinfo%29.md).
 
@@ -78,7 +78,7 @@ Use [`init(identifier:displayName:supportedFamilies:userInfo:)`](./clkcomplicati
 
 When the user taps your complication, ClockKit includes the content of the `userInfo` parameter in the dictionary that passes to the extension delegate’s [`handleUserActivity(_:)`](../WatchKit/wkextensiondelegate/handleuseractivity%28_%29.md) method. You can also use this data to navigate to a particular part of your app.
 
-##### Dynamically Define Descriptors
+### Dynamically Define Descriptors
 
 The previously examples created a static set of descriptors—the app always presents the same set of complications to its users. However, you can also customize the complications for each particular user. For example, the weather app could provide `Condition`, `Temperature`, and `Precipitation` complications for each city in the user’s favorite city list.
 
@@ -124,7 +124,7 @@ descriptors.append(CLKComplicationDescriptor(
 
 This example also uses the descriptor’s `userInfo` property to contain a `myCityIDKey` and a `myTypeIdentifierKey` for each city. This lets you look up the city and weather data type without having to parse the complication’s `identifier` string. For an example of using the `myCityIDKey` to create a complication template, see [Use Complication Data](./creating-a-timeline-entry.md#Use-Complication-Data). When the user adds or removes a favorite city, you need to reload the complication descriptors according to their new favorites list.
 
-##### Reload the Descriptors
+### Reload the Descriptors
 
 Your app can reload the descriptors at any point by calling the complication server’s [`reloadComplicationDescriptors()`](./clkcomplicationserver/reloadcomplicationdescriptors%28%29.md) method. For example, the weather app needs to reload its descriptors when the user adds or removes cities from their favorite cities.
 
@@ -140,7 +140,7 @@ ClockKit then calls your [`getComplicationDescriptors(handler:)`](./clkcomplicat
 
 > **Note**:  If your data source removes a complication that’s already present on a watch face, ClockKit continues to display and request new timeline entries for that complication. However, the user won’t be able to add the complication to new watch faces.
 
-##### Run on Earlier Versions of watchOS
+### Run on Earlier Versions of watchOS
 
 In watchOS 6 and earlier, you statically define the supported complication families in the WatchKit extension’s General tab under the Complication and Configuration settings.
 

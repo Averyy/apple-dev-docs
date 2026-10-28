@@ -22,7 +22,7 @@ Fetches share metadatas for the specified share URLs.
 func fetchShareMetadatas(for urls: [URL], completionHandler: @escaping @Sendable (Result<[URL : Result<CKShare.Metadata, any Error>], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

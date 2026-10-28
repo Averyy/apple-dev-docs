@@ -24,11 +24,11 @@ optional func playbackCoordinator(_ coordinator: AVPlayerPlaybackCoordinator, id
 - (NSString *) playbackCoordinator:(AVPlayerPlaybackCoordinator *) coordinator identifierForPlayerItem:(AVPlayerItem *) playerItem;
 ```
 
-#### Return Value
+## Return Value
 
 An identifier string.
 
-#### Discussion
+## Discussion
 
 A coordinator calls this method to identify the items that its player object plays.
 

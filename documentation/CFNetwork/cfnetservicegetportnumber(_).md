@@ -26,7 +26,7 @@ func CFNetServiceGetPortNumber(_ theService: CFNetService) -> Int32
 extern SInt32 CFNetServiceGetPortNumber(CFNetServiceRef theService);
 ```
 
-#### Return Value
+## Return Value
 
 The port number of the service.
 

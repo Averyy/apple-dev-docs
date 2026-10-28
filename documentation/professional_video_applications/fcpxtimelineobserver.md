@@ -23,7 +23,7 @@ protocol FCPXTimelineObserver : NSObjectProtocol
 
 - [Interacting with the Final Cut Pro Timeline](../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Overview
+## Overview
 
 Observers of [`FCPXTimeline`](./fcpxtimeline.md) objects implement methods of this protocol to get notified of changes in the Final Cut Pro timeline. Based on the methods implemented in this protocol, Final Cut Pro invokes an observer for changes in an active sequence, playhead time, or sequence time range.
 

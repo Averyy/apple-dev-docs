@@ -11,7 +11,7 @@ Removes and releases all objects within the array.
 virtual void flushCollection();
 ```
 
-#### Overview
+## Overview
 
 The array's capacity (and therefore direct memory consumption) is not reduced by this function.
 

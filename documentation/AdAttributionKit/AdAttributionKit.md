@@ -11,7 +11,7 @@ Present, process, and register postbacks for in-app ads in the App Store and alt
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
 
-#### Overview
+## Overview
 
 AdAttributionKit helps advertisers measure the success of ad campaigns while helping maintain user privacy.
 
@@ -42,7 +42,7 @@ The following diagram shows the path of ad impressions that qualify for, but don
 
 For more information about receiving ad attributions, including time-window details, information about install and reengagement conversions, and other constraints, see [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md). The information in the postback that Apple cryptographically signs doesn’t include user- or device-specific data. It can include values from the ad network and the advertised app if providing those values meets the privacy threshold that Apple sets. For more information about postback values and postback data tiers, see  [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md). For more information about the contents of postbacks, see [Verifying a postback](./verifying-a-postback.md).
 
-##### Present ads, update conversion values, and receive attribution
+### Present ads, update conversion values, and receive attribution
 
 Each participant has specific responsibilities when using the APIs to present ads and receive attribution.
 

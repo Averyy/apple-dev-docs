@@ -20,7 +20,7 @@ var sdrImage: CGImage? { get set }
 @property (nonatomic, strong, nullable) CGImageRef sdrImage;
 ```
 
-#### Discussion
+## Discussion
 
 The output [`CGImage`](../../CoreGraphics/cgimage.md) uses the same color space as the content capture display.
 

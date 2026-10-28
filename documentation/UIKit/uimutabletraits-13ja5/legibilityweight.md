@@ -19,7 +19,7 @@ The font weight to apply to text.
 var legibilityWeight: UILegibilityWeight { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The legibility weight reflects the value of the Bold Text display setting.
 

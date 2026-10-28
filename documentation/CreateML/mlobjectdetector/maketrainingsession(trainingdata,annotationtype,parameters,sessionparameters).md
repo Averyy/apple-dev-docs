@@ -15,11 +15,11 @@ Creates an asynchronous object-detector training session.
 static func makeTrainingSession(trainingData: MLObjectDetector.DataSource, annotationType: MLObjectDetector.AnnotationType, parameters: MLObjectDetector.ModelParameters = ModelParameters(), sessionParameters: MLTrainingSessionParameters = __Defaults.sessionParameters) throws -> MLTrainingSession<MLObjectDetector>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLTrainingSession`](../mltrainingsession.md) that represents the object-detector training session.
 
-#### Discussion
+## Discussion
 
 Use [`resume(_:)`](./resume%28_%29.md) to start the [`MLTrainingSession`](../mltrainingsession.md) instance you get from this method.
 

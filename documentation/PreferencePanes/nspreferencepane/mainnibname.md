@@ -20,7 +20,7 @@ var mainNibName: String { get }
 @property (strong, readonly, nonnull) NSString * mainNibName;
 ```
 
-#### Discussion
+## Discussion
 
 The name should not include the `.nib` extension.
 

@@ -21,7 +21,7 @@ Get or set a value in this array as an XPCArray.
 subscript(index: Int) -> XPCArray? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 A XPCArray value or `nil` if no such value was found.
 

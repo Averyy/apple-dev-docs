@@ -19,7 +19,7 @@ var portal: AVPortalViewport? { get set }
 @property (nonatomic, strong, nullable) AVPortalViewport * portal;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to customize how content appears within a portal frame. When this property is `nil`, the system uses default portal settings.
 

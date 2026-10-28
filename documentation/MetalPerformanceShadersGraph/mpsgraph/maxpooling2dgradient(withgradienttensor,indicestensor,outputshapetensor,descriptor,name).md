@@ -24,11 +24,11 @@ func maxPooling2DGradient(withGradientTensor gradient: MPSGraphTensor, indicesTe
 - (MPSGraphTensor *) maxPooling2DGradientWithGradientTensor:(MPSGraphTensor *) gradient indicesTensor:(MPSGraphTensor *) indices outputShapeTensor:(MPSGraphTensor *) outputShape descriptor:(MPSGraphPooling2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 Destination gradient tensor.
 
-#### Discussion
+## Discussion
 
 With this API MPSGraph computes the max-pooling gradient efficiently by reusing the indices from the forward API instead of recomputing them. The descriptor must set `returnIndicesMode` and `returnIndicesDataType` to the same value as that set by the forward pass.
 

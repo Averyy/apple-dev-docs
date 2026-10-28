@@ -24,11 +24,11 @@ func SSLSetPeerID(_ context: SSLContext, _ peerID: UnsafeRawPointer?, _ peerIDLe
 OSStatus SSLSetPeerID(SSLContextRef context, const void *peerID, size_t peerIDLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Secure Transport uses the peer ID to match the peer of an SSL session with the peer of a previous session in order to resume an interrupted session. If the peer IDs match, Secure Transport attempts to resume the session with the same parameters as used in the previous session with the same peer.
 

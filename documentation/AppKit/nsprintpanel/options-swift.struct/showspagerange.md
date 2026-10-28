@@ -19,7 +19,7 @@ static var showsPageRange: NSPrintPanel.Options { get }
 NSPrintPanelShowsPageRange
 ```
 
-#### Discussion
+## Discussion
 
 These fields are separate from any accessory views.
 

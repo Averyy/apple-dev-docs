@@ -22,7 +22,7 @@ var intersectionFunctionStride: UInt64
 uint64_t intersectionFunctionStride;
 ```
 
-#### Discussion
+## Discussion
 
 The stride between intersection function entries in intersectionFunctionBuffer. The stride needs to be either 0 or aligned to 8 bytes. Note that only the first 12 bits of this value are used by Metal.
 

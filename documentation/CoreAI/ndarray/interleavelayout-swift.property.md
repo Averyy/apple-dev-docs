@@ -19,7 +19,7 @@ Returns the interleaved layout of this ndArray, or `nil` if there is no interlea
 var interleaveLayout: NDArray.InterleaveLayout? { get }
 ```
 
-#### Discussion
+## Discussion
 
 See [`NDArray.InterleaveLayout`](./interleavelayout-swift.struct.md) for full documentation.
 

@@ -15,11 +15,11 @@ Mark a vnode as no longer being stored in a filesystem hash.
 int vnode_removefsref(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Always 0.
 
-#### Discussion
+## Discussion
 
 Should only be called once on a vnode (during a reclaim), and only after the vnode has either been created with VNFS_ADDFSREF or marked by vnode_addfsref().
 

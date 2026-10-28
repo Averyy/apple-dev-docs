@@ -25,7 +25,7 @@ static let ignoreChildNodes: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestIgnoreChildNodesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`false`](../../Swift/false.md), specifying that hit-testing may return objects from any portion of the node hierarchy. Specify [`true`](../../Swift/true.md) to search only the node specified by the [`rootNode`](./rootnode.md) key.
 

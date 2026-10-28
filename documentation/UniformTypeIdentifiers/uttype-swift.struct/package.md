@@ -21,7 +21,7 @@ A base type that represents a packaged directory.
 static var package: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Bundles differ from packages in that a bundle has an internal file hierarchy that [`CFBundle`](../../CoreFoundation/cfbundle.md) can read, while packages display to the user as if they were regular files. A single file system object can be a package and a bundle.
 

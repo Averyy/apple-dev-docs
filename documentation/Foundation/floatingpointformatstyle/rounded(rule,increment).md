@@ -21,11 +21,11 @@ Modifies the format style to use the specified rounding rule and increment.
 func rounded(rule: FloatingPointFormatStyle<Value>.Configuration.RoundingRule = .toNearestOrEven, increment: Double? = nil) -> FloatingPointFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified rounding rule and increment.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and modifies its rounding behavior. It uses the [`FloatingPointRoundingRule.up`](../../Swift/floatingpointroundingrule/up.md) rounding rule, and an increment of `0.25`. It then applies this style to an array of floating-point values, rounding them to the next greater increment of 0.25.
 

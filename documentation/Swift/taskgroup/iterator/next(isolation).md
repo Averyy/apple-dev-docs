@@ -21,11 +21,11 @@ Advances to and returns the result of the next child task.
 mutating func next(isolation actor: isolated (any Actor)?) async -> TaskGroup<ChildTaskResult>.Iterator.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the next child task that completes, or `nil` if there are no remaining child tasks,
 
-#### Discussion
+## Discussion
 
 The elements returned from this method appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group. After this method returns `nil`, this iterator is guaranteed to never produce more values.
 

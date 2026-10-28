@@ -25,7 +25,7 @@ var rawClientDataJSON: Data { get }
 @property (nonatomic, copy, readonly) NSData * rawClientDataJSON;
 ```
 
-#### Discussion
+## Discussion
 
 This object acts as an input to the signing algorithm. It needs to be in JSON form for the relying party to verify the provided signature. The developer should ignore this value.
 

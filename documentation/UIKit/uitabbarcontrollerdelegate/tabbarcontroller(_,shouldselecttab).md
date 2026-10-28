@@ -23,7 +23,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, shouldSel
 - (BOOL) tabBarController:(UITabBarController *) tabBarController shouldSelectTab:(UITab *) tab;
 ```
 
-#### Discussion
+## Discussion
 
 Return @c YES if the specified @c tab can be selected by the user. Otherwise, return @c NO
 

@@ -20,7 +20,7 @@ The character range.
 extern NSTextLayoutSectionKey const NSTextLayoutSectionRange;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSValue`](../Foundation/nsvalue.md) object containing an [`NSRange`](../Foundation/nsrange-c.struct.md) representing a character range. The default value is a range covering the entire string.
 

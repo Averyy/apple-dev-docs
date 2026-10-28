@@ -22,7 +22,7 @@ func stopValidating()
 - (void) stopValidating;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method at any time, even within the validator’s callback to its handler.
 

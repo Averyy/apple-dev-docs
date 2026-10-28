@@ -25,7 +25,7 @@ var maxSampleCount: Int { get set }
 @property (nonatomic, assign) NSInteger maxSampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the value isn’t `0`, indicates the maximum number of samples to load.
 

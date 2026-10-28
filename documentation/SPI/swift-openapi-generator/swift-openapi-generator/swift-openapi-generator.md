@@ -9,7 +9,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Generate Swift client and server code from an OpenAPI document.
 
-#### Overview
+## Overview
 
 [OpenAPI](https://openapis.org) is a specification for documenting HTTP services. An OpenAPI document is written in either YAML or JSON, and can be read by tools to help automate workflows, such as generating the necessary code to send and receive HTTP requests.
 
@@ -17,7 +17,7 @@ Swift OpenAPI Generator is a Swift package plugin that can generate the ceremony
 
 The code is generated at build-time, so it’s always in sync with the OpenAPI document and doesn’t need to be committed to your source repository.
 
-##### Features
+### Features
 
 - Works with OpenAPI Specification versions 3.0 and 3.1 and has preliminary support for version 3.2.
 - Streaming request and response bodies enabling use cases such as JSON event streams, and large payloads without buffering.
@@ -26,13 +26,13 @@ The code is generated at build-time, so it’s always in sync with the OpenAPI d
 
 To see these features in action, see [Checking out an example project](./checking-out-an-example-project.md).
 
-##### Usage
+### Usage
 
 Swift OpenAPI Generator can be used to generate API clients and server stubs.
 
 Below you can see some example code, or you can follow one of the [Working with Swift OpenAPI Generator](https://swiftpackageindex.com/apple/swift-openapi-generator/main/tutorials/swift-openapi-generator) tutorials.
 
-###### Using a generated API client
+#### Using a generated API client
 
 The generated `Client` type provides a method for each HTTP operation defined in the [OpenAPI document](./swift-openapi-generator.md#Example-OpenAPI-document) and can be used with any HTTP library that provides an implementation of `ClientTransport`.
 
@@ -48,7 +48,7 @@ let response = try await client.getGreeting()
 print(try response.ok.body.json.message)
 ```
 
-###### Using generated API server stubs
+#### Using generated API server stubs
 
 To implement a server, define a type that conforms to the generated `APIProtocol`, providing a method for each HTTP operation defined in the [OpenAPI document](./swift-openapi-generator.md#Example-OpenAPI-document).
 
@@ -77,7 +77,7 @@ struct Handler: APIProtocol {
 }
 ```
 
-###### Package ecosystem
+#### Package ecosystem
 
 The Swift OpenAPI Generator project is split across multiple repositories to enable extensibility and minimize dependencies in your project.
 
@@ -93,7 +93,7 @@ The Swift OpenAPI Generator project is split across multiple repositories to ena
 | [hummingbird-project/swift-openapi-hummingbird](https://github.com/hummingbird-project/swift-openapi-hummingbird) | `ServerTransport` using [Hummingbird](https://github.com/hummingbird-project/hummingbird) |
 | [awslabs/swift-openapi-lambda](https://github.com/awslabs/swift-openapi-lambda) | `ServerTransport` using [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) |
 
-###### Requirements and supported features
+#### Requirements and supported features
 
 | Generator versions | Supported OpenAPI versions |
 | --- | --- |
@@ -101,7 +101,7 @@ The Swift OpenAPI Generator project is split across multiple repositories to ena
 
 See also [Supported OpenAPI features](./supported-openapi-features.md).
 
-###### Supported platforms and minimum versions
+#### Supported platforms and minimum versions
 
 The generator is used during development and is supported on macOS and Linux.
 
@@ -114,7 +114,7 @@ The generated code, runtime library, and transports are supported on more platfo
 
 > **Note**: When using Visual Studio Code or other editors that rely on [SourceKit-LSP](https://github.com/swiftlang/sourcekit-lsp), the editor may not correctly recognize generated code within the same module. As a workaround, consider creating a separate target for code generation and then importing it into your main module. For more details, see the discussion in [swiftlang/sourcekit-lsp#665](https://github.com/swiftlang/sourcekit-lsp/issues/665#issuecomment-2093169169).
 
-###### Documentation and example projects
+#### Documentation and example projects
 
 To get started, check out the topics below, or one of the [Working with Swift OpenAPI Generator](https://swiftpackageindex.com/apple/swift-openapi-generator/main/tutorials/swift-openapi-generator) tutorials.
 
@@ -122,7 +122,7 @@ You can also experiment with one of the examples in [Checking out an example pro
 
 Or if you prefer to watch a video, check out [Meet Swift OpenAPI Generator](https://developer.apple.com/wwdc23/10171) from WWDC23.
 
-###### Example OpenAPI document
+#### Example OpenAPI document
 
 ```yaml
 openapi: '3.1.0'
@@ -163,7 +163,7 @@ components:
         - message
 ```
 
-###### Example configuration file
+#### Example configuration file
 
 The build plugin also requires a configuration file called `openapi-generator-config.yaml` in the same target directory as the OpenAPI document. The following configuration generates the types and client code used in the [client example](./swift-openapi-generator.md#Using-a-generated-API-client):
 

@@ -21,7 +21,7 @@ Describes when people chose to cancel and not view external purchases.
 case cancelled
 ```
 
-#### Discussion
+## Discussion
 
 If your app’s call to [`presentNoticeSheet()`](../presentnoticesheet%28%29.md) results in this value, you must not show external purchases.
 

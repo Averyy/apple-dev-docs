@@ -13,7 +13,7 @@
 typedef UInt32 SCSIProtocolPowerState;
 ```
 
-#### Discussion
+## Discussion
 
 Typedef for SCSIProtocolPowerState, a 32-bit quantity.
 

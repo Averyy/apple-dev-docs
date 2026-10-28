@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(i: InlineArray<count, Element>.Index) -> Element { get set }
 ```
 
-#### Overview
+## Overview
 
 > **Complexity**: O(1)
 

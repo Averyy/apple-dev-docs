@@ -27,11 +27,11 @@ func createNewActivity() -> CLSActivity
 
 - [Recording student progress](../recording-student-progress.md)
 
-#### Return Value
+## Return Value
 
 A new activity.
 
-#### Discussion
+## Discussion
 
 Use this method to create a new activity for a context every time a person makes a new attempt at a task. Afterward, use the returned value, or retrieve it by accessing the context’s [`currentActivity`](./currentactivity.md) property. However, don’t store a reference to the activity as a class property because the underlying object may change from time to time as the framework performs network synchronization.
 

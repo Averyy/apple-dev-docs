@@ -24,7 +24,7 @@ case streamed
 PHASEAssetTypeStreamed
 ```
 
-#### Discussion
+## Discussion
 
 If the asset is on disk, the framework streams the asset’s data from disk into memory and prepares the asset during playback. If the asset is in memory, the framework streams from memory and prepares the asset during playback.
 

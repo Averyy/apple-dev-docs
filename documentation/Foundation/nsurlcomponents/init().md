@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the initialized URL components object, or `nil` if an error occurs.
 

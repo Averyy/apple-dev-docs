@@ -25,7 +25,7 @@ case deferred
 SCNShadowModeDeferred
 ```
 
-#### Discussion
+## Discussion
 
 In the mode, SceneKit blends shadows into the final image after the main rendering pass, so shadows can be of any color.
 

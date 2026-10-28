@@ -19,7 +19,7 @@ func collapseItem(_ item: Any?)
 - (void) collapseItem:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 If `item` is not expanded or not expandable, does nothing
 

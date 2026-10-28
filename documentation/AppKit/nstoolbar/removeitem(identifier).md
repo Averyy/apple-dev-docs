@@ -22,7 +22,7 @@ func removeItem(identifier itemIdentifier: NSToolbarItem.Identifier)
 - (void) removeItemWithItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Any change made will be propagated immediately to all other toolbars with the same identifier.
 

@@ -21,7 +21,7 @@ final func currentAgeExceptionRequests() async throws -> [AppLibrary.ExceptionRe
 
 - [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 When a person attempts to install an app with an age rating that exceeds the maximum allowed for the device, the framework presents a sheet that enables the person to request an exception from a parent or guardian. When the person proceeds with the request, the framework adds an instance of [`AppLibrary.ExceptionRequest`](./exceptionrequest.md) for the app to this list.
 

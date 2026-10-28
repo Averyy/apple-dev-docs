@@ -24,7 +24,7 @@ var isRasterizationEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isRasterizationEnabled) BOOL rasterizationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value is [`true`](../../Swift/true.md), specifying that this pipeline rasterizes primitives. Set this property to [`false`](../../Swift/false.md) when you don’t provide a fragment shader function via function [`fragmentFunctionDescriptor`](./fragmentfunctiondescriptor.md).
 

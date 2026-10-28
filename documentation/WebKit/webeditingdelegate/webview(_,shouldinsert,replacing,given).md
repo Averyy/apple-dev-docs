@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, shouldInsert node: DOMNode!, replacin
 - (BOOL) webView:(WebView *) webView shouldInsertNode:(DOMNode *) node replacingDOMRange:(DOMRange *) range givenAction:(WebViewInsertAction) action;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user should be allowed to insert `node` in `webView`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method may perform an alternate action—for example, insert a different node—and return [`false`](../../Swift/false.md).
 

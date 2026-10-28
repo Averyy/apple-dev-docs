@@ -19,11 +19,11 @@
 static SPRect3D SPRect3DApplyProjectiveTransform(SPRect3D rect, SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s transformed by the specified projective transform.
 

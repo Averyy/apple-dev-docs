@@ -19,11 +19,11 @@ class func canInit(with data: Data) -> Bool
 + (BOOL) canInitWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver understands the format of the specified data and can use it to initialize itself; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method should be overridden by subclasses. Note that this method does not need to do a comprehensive check of the image data; it should return [`false`](../../Swift/false.md) only if it knows it cannot initialize itself from the data.
 

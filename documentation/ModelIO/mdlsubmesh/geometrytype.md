@@ -24,7 +24,7 @@ var geometryType: MDLGeometryType { get }
 @property (nonatomic, readonly) MDLGeometryType geometryType;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how the sequence of indices in the submesh’s index buffer should be interpreted for rendering. For example, if the geometry type is [`MDLGeometryType.triangles`](../mdlgeometrytype/triangles.md), each triangle to be rendered comes from an independent set of three indices, but if the geometry type is [`MDLGeometryType.triangleStrips`](../mdlgeometrytype/trianglestrips.md), triangles to be rendered can come from overlapping sets of indices in the sequence. If the geometry type is [`MDLGeometryType.variableTopology`](../mdlgeometrytype/variabletopology.md), the [`topology`](./topology.md) property describes the non-uniform layout of the index buffer.
 

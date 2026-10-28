@@ -17,7 +17,7 @@ A text document with an application-defined identifier and metadata.
 struct RerankDocument
 ```
 
-#### Overview
+## Overview
 
 The reranker evaluates only [`text`](./rerankdocument/text.md). The identifier and metadata are carried through unchanged so callers can reconnect results to their retrieval records without copying model-specific data into the scoring layer.
 

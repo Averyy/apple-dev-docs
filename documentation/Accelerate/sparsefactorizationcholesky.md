@@ -25,7 +25,7 @@ var SparseFactorizationCholesky: SparseFactorization_t { get }
 SparseFactorizationCholesky
 ```
 
-#### Discussion
+## Discussion
 
 [`SparseFactorizationCholesky`](./sparsefactorizationcholesky.md) provides a sparse counterpart to the dense Cholesky routines `spotrf()` and `dpotrf()` from LAPACK.
 

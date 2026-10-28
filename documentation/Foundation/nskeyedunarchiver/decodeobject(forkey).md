@@ -25,7 +25,7 @@ func decodeObject(forKey key: String) -> Any?
 - (id) decodeObjectForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The object associated with the key `key`. Returns `nil` if `key` does not exist, or if the value for `key` is `nil`.
 

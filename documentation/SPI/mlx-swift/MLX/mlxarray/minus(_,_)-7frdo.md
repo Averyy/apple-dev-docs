@@ -17,7 +17,7 @@ Element-wise subtraction.
 static func - (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Subtract two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -30,7 +30,7 @@ let b = MLXArray([4, 5, 6])
 let r = a - b - 7
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`subtract(_:_:stream:)`](../subtract%28_,_,stream%29.md)

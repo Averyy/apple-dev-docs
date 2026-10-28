@@ -24,7 +24,7 @@ case selected
 UIPreviewActionStyleSelected
 ```
 
-#### Discussion
+## Discussion
 
 Use this style for the initially-selected item within a disclosed peek quick action group.
 

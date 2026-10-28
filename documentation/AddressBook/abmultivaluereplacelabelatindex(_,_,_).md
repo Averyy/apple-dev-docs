@@ -23,11 +23,11 @@ func ABMultiValueReplaceLabelAtIndex(_ multiValue: ABMutableMultiValue!, _ label
 extern bool ABMultiValueReplaceLabelAtIndex(ABMutableMultiValueRef multiValue, CFStringRef label, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when successful, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This function takes an index. If you have an identifier, use the [`ABMultiValueGetIndexForIdentifier(_:_:)`](./abmultivaluegetindexforidentifier%28_,_%29.md) function to get the corresponding index.
 

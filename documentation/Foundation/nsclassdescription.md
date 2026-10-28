@@ -20,7 +20,7 @@ class NSClassDescription
 @interface NSClassDescription : NSObject
 ```
 
-#### Overview
+## Overview
 
 Concrete subclasses of `NSClassDescription` provide the available attributes of objects of a particular class and the relationships between that class and other classes. Defining these relationships between classes allows for more intelligent and flexible manipulation of objects with key-value coding.
 

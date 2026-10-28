@@ -22,7 +22,7 @@ var mirrored: UIScreen? { get }
 @property (nonatomic, strong, readonly, nullable) UIScreen * mirroredScreen;
 ```
 
-#### Discussion
+## Discussion
 
 When a screen supports mirroring and mirroring is active, this property contains the screen object associated with the device’s main screen. This represents the screen the attached display mirrors from. The value of this property is `nil` when mirroring is disabled, not supported, or no screen is connected to the device.
 

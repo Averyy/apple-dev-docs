@@ -21,7 +21,7 @@ var graphicsPort: UnsafeMutableRawPointer { get }
 @property (readonly) void * graphicsPort;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, this is the Core Graphics context, a [`CGContext`](../../CoreGraphics/cgcontext.md) object (opaque type).
 

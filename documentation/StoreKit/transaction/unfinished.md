@@ -26,7 +26,7 @@ static var unfinished: Transaction.Transactions { get }
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 - [Getting started with Apple In-App Purchase using StoreKit views](../getting-started-with-in-app-purchases-using-storekit-views.md)
 
-#### Discussion
+## Discussion
 
 A transaction is unfinished until you call [`finish()`](./finish%28%29.md). Use the [`unfinished`](./unfinished.md) sequence to find the transactions your app needs to process to deliver purchased content or enable service.
 

@@ -20,7 +20,7 @@ Constants for the text layout sections document attribute key.
 typedef NSString * NSTextLayoutSectionKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use these constants as values for the [`NSTextLayoutSectionsAttribute`](./nstextlayoutsectionsattribute.md) key in the document attributes dictionary.
 

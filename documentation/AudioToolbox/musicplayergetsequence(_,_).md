@@ -24,7 +24,7 @@ func MusicPlayerGetSequence(_ inPlayer: MusicPlayer, _ outSequence: UnsafeMutabl
 extern OSStatus MusicPlayerGetSequence(MusicPlayer inPlayer, MusicSequence*outSequence);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the music player does not have a sequence set, this function returns `kAudioToolboxErr_NoSequence`.
 

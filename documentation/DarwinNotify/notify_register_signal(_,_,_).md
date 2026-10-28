@@ -23,11 +23,11 @@ func notify_register_signal(_ name: UnsafePointer<CChar>!, _ sig: Int32, _ out_t
 extern uint32_t notify_register_signal(const char *name, int sig, int *out_token);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Request notification delivery by UNIX signal.
 

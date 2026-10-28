@@ -19,11 +19,11 @@ func SCDynamicStoreCopyProxies(_ store: SCDynamicStore?) -> CFDictionary?
 CFDictionaryRefSCDynamicStoreCopyProxies(SCDynamicStoreRef store);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of key-value pairs that represent the current internet proxy settings, or `NULL` if no proxy settings have been defined or if an error occurred. You must release the returned value.
 
-#### Discussion
+## Discussion
 
 The returned proxy settings dictionary can include the following key-value pairs:
 

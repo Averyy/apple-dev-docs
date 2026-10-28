@@ -24,7 +24,7 @@ Initializes a new [`MultiProducerSingleConsumerAsyncChannel`](../multiproducersi
 static func makeChannel(of elementType: Element.Type = Element.self, throwing failureType: Failure.Type = Never.self, backpressureStrategy: MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.BackpressureStrategy) -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>.ChannelAndStream
 ```
 
-#### Return Value
+## Return Value
 
 A struct containing the channel and its source. The source should be passed to the producer while the channel should be passed to the consumer.
 

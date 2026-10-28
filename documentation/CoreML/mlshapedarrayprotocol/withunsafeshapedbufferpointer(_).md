@@ -22,7 +22,7 @@ Provides read-only access of the shaped array’s underlying memory to a closure
 func withUnsafeShapedBufferPointer<R>(_ body: (UnsafeBufferPointer<Self.Scalar>, [Int], [Int]) throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 The method returns the value your closure returns, if applicable.
 

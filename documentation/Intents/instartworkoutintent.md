@@ -27,13 +27,13 @@ class INStartWorkoutIntent
 
 - [Confirming the Details of an Intent](../SiriKit/confirming-the-details-of-an-intent.md)
 
-#### Overview
+## Overview
 
 SiriKit creates an [`INStartWorkoutIntent`](./instartworkoutintent.md) object when the user asks to start a workout using your app. A start workout intent identifies the user-selected workout type and goals.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INStartWorkoutIntentHandling`](./instartworkoutintenthandling.md) protocol. Your handler should confirm the request and create an [`INStartWorkoutIntentResponse`](./instartworkoutintentresponse.md) object that indicates it’s possible to start the workout. For the successful handling of the intent, SiriKit launches your app and passes it an [`NSUserActivity`](../Foundation/nsuseractivity.md) object your app must then use to start the workout.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

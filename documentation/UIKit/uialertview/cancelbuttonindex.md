@@ -23,7 +23,7 @@ var cancelButtonIndex: Int { get set }
 @property (nonatomic) NSInteger cancelButtonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The button indices start at `0`. If `-1`, then the index is not set.
 

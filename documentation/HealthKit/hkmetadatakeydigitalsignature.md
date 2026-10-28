@@ -28,7 +28,7 @@ extern NSString * const HKMetadataKeyDigitalSignature;
 
 - [Adding Digital Signatures](./adding-digital-signatures.md)
 
-#### Discussion
+## Discussion
 
 The digital signature is intended to provide data integrity for sample data produced by trusted (tamper resistant) measuring devices. Use the Cryptographic Message Syntax (CMS) to sign data returned by your device (such as timestamps, values, and so forth) using ASN.1 encoding with Distinguished Encoding Rules (DER). The entire signature should be further encoded using base64. Recommended digest is SHA256, and recommended cipher is FIPS PUB 186-4 Digital Signature Standard Elliptic Curve P-256. CMS is specified in IETF RFC 5652. For more information, see Adding Digital Signatures in `HealthKit`.
 

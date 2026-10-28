@@ -20,7 +20,7 @@ func saveTo(_ sender: Any?)
 - (void) saveDocumentTo:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation is identical to [`saveAs(_:)`](./saveas%28_%29.md) except that this method doesn’t clear the document’s edited status and doesn’t reset file location and document type if the document is a native type.
 

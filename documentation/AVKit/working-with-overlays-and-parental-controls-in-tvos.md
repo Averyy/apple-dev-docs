@@ -10,11 +10,11 @@ Add interactive overlays, parental controls, and livestream channel flipping usi
 - tvOS 13.0+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [503: Delivering Intuitive Media Playback with AVKit](https://developer.apple.com/videos/play/wwdc19/503/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Only navigation from live streaming supports channel flipping, so you need to replace the assets in this sample with your live content to demonstrate this behavior.
 

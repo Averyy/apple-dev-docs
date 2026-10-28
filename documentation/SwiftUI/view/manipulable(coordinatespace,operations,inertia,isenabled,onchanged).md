@@ -16,11 +16,11 @@ Allows this view to be manipulated using common hand gestures.
 nonisolated func manipulable(coordinateSpace: some CoordinateSpaceProtocol = .local, operations: Manipulable.Operation.Set = .all, inertia: Manipulable.Inertia = .medium, isEnabled: Bool = true, onChanged: ((Manipulable.Event) -> Void)? = nil) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can be manipulated using common hand gestures.
 
-#### Discussion
+## Discussion
 
 When a person ends the manipulation gesture, the view will return to its initial transform from before the gesture began.
 

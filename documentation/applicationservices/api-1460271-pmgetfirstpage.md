@@ -19,11 +19,11 @@ func PMGetFirstPage(_ printSettings: PMPrintSettings, _ first: UnsafeMutablePoin
 OSStatus PMGetFirstPage(PMPrintSettings printSettings, UInt32 *first);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You can use this function to obtain the page number entered by the user in the From field of the Print dialog. If the user selects the All button, the function returns a value of 1. If the user did not enter a value, the function returns the value of the previous call to `PMSetFirstPage`, if any, or the default value of 1.
 

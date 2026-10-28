@@ -24,11 +24,11 @@ class func animatedResizableImageNamed(_ name: String, capInsets: UIEdgeInsets, 
 + (UIImage *) animatedResizableImageNamed:(NSString *) name capInsets:(UIEdgeInsets) capInsets resizingMode:(UIImageResizingMode) resizingMode duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new animated image object with the specified cap insets and resizing mode.
 
-#### Discussion
+## Discussion
 
 This method is exactly the same as its counterpart [`animatedResizableImageNamed(_:capInsets:duration:)`](./animatedresizableimagenamed%28_,capinsets,duration%29.md) except that the resizing mode of the new image object can be explicitly declared. Since the resizing mode of an image is [`UIImage.ResizingMode.tile`](./resizingmode-swift.enum/tile.md) by default, this method should only be used in place of its counterpart to create an animated image that needs to be resized with the [`UIImage.ResizingMode.stretch`](./resizingmode-swift.enum/stretch.md) resizing mode.
 

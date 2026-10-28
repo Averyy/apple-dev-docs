@@ -20,7 +20,7 @@ class ITLibMediaItem
 @interface ITLibMediaItem : ITLibMediaEntity
 ```
 
-#### Overview
+## Overview
 
 Like all media entities, each media item has a unique identifier and a set of properties.
 

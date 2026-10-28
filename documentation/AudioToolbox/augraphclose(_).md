@@ -26,9 +26,9 @@ func AUGraphClose(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus AUGraphClose(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 All AudioUnits are closed - leaving only its nodal representation.
 

@@ -17,11 +17,11 @@ Gets the type identifier for Search Kit search results.
 CFTypeID SKSearchResultsGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A CFTypeID object containing the type identifier for the SKSearchResults opaque type.
 
-#### Discussion
+## Discussion
 
 Search Kit represents search results with search results objects ([`SKSearchResultsRef`](./sksearchresultsref.md) opaque types). If your code needs to determine whether a particular data type is a search result, you can use this function along with the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function and perform a comparison.
 

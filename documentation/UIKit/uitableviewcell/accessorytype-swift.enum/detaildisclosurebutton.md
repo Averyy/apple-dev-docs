@@ -22,7 +22,7 @@ case detailDisclosureButton
 UITableViewCellAccessoryDetailDisclosureButton
 ```
 
-#### Discussion
+## Discussion
 
 Choose this type when you want both an information button and a disclosure control. Connect the disclosure control to a push segue to display new content. Use the delegate’s [`tableView(_:accessoryButtonTappedForRowWith:)`](../../uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md)method to respond to touch events in the detail button.
 

@@ -21,7 +21,7 @@ The number of media samples the buffer contains.
 var numSamples: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `0` if an error occurs.
 

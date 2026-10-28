@@ -23,7 +23,7 @@ func gss_canonicalize_name(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ in
 OM_uint32 gss_canonicalize_name(OM_uint32 *minor_status, gss_name_t const input_name, gss_OID const mech_type, gss_name_t*output_name);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

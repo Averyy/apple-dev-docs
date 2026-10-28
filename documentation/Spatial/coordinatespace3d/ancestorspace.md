@@ -22,7 +22,7 @@ An ancestor coordinate space.
 var ancestorSpace: Self.AncestorCoordinateSpace? { get }
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` ancestor indicates this space is a root.
 

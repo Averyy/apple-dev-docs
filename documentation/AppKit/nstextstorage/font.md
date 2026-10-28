@@ -19,7 +19,7 @@ var font: NSFont? { get set }
 @property (strong, nullable) NSFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 Unless you’re dealing with scriptability, you shouldn’t use or modify this property directly.
 

@@ -25,7 +25,7 @@ var dither: Bool { get set }
 @property (nonatomic) BOOL dither;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to `false`. When `true`, the framework determines whether dithering makes sense for the formats and settings.
 

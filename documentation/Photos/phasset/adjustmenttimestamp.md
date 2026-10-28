@@ -24,7 +24,7 @@ var adjustmentTimestamp: Date? { get }
 @property (nonatomic, strong, readonly, nullable) NSDate * adjustmentTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 If the asset has never been edited, then this property is nil. If the asset was edited and later reverted, such that hasAdjustments is false, then `adjustmentTimestamp` is the timestamp of the revert operation.
 

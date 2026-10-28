@@ -19,7 +19,7 @@ func rearrangeObjects()
 - (void) rearrangeObjects;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes [`arrange(_:)`](./arrange%28_%29.md).
 

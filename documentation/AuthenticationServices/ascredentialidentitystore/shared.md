@@ -23,7 +23,7 @@ class var shared: ASCredentialIdentityStore { get }
 @property (class, nonatomic, readonly) ASCredentialIdentityStore * sharedStore;
 ```
 
-#### Discussion
+## Discussion
 
 Use the shared identity store to tell Password AutoFill about the identities for which your extension can supply credentials.
 

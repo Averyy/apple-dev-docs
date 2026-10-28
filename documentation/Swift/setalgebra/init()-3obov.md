@@ -23,7 +23,7 @@ init()
 
 Available when `RawValue` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 This initializer creates an option set with a raw value of zero.
 

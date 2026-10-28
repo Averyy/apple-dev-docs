@@ -15,7 +15,7 @@ Returns the IOBluetoothDevice to which the target L2CAP channel is open.
 - (IOBluetoothDevice *) getDevice;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothDevice to which the target L2CAP channel is open.
 

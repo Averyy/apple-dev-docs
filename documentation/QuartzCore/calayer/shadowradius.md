@@ -24,7 +24,7 @@ var shadowRadius: CGFloat { get set }
 @property CGFloat shadowRadius;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the radius The default value of this property is 3.0.
 

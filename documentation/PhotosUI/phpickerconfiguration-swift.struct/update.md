@@ -19,7 +19,7 @@ An object that defines the aspects of a photo picker’s appearance that can cha
 struct Update
 ```
 
-#### Overview
+## Overview
 
 While a photos picker is visible, you can use an instance of this structure to change its [`edgesWithoutContentMargins`](./edgeswithoutcontentmargins.md) or [`selectionLimit`](./selectionlimit.md) properties. To do that, create and configure an instance of this object and pass it to the [`PHPickerViewController`](../phpickerviewcontroller.md) method [`updatePicker(using:)`](../phpickerviewcontroller/updatepicker%28using%29.md).
 

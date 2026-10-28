@@ -24,7 +24,7 @@ var inputGroups: [AVAssetWriterInputGroup] { get }
 @property (nonatomic, readonly) NSArray<AVAssetWriterInputGroup *> * inputGroups;
 ```
 
-#### Discussion
+## Discussion
 
 Add input groups to the asset writer using its [`add(_:)`](./add%28_%29-3san4.md) method.
 

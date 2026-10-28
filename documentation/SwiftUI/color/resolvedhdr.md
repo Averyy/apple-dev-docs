@@ -22,7 +22,7 @@ A concrete color value, including HDR headroom information.
 struct ResolvedHDR
 ```
 
-#### Overview
+## Overview
 
 `Color.ResolvedHDR` is a set of RGBA values that represent a color that can be shown. The color components are stored in the extended sRGB color space and may contain a “headroom” value describing how the color is rendered for displays with different dynamic ranges. This is a low-level type, most colors are represented by the `Color` type.
 

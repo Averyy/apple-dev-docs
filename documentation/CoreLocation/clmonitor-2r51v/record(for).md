@@ -18,7 +18,7 @@ A record that contains a condition and the most recent event your app receives.
 func record(for identifier: String) -> CLMonitor.Record?
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`CLMonitor.Record`](./record.md), or `nil` if the system can’t find the identifier.
 

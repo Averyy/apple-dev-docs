@@ -25,7 +25,7 @@ func completeRequest(returningItems items: [Any]?, completionHandler: (@Sendable
 - (void) completeRequestReturningItems:(NSArray *) items completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method eventually dismisses the app extension’s view controller.
 

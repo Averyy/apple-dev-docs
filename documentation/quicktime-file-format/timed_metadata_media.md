@@ -4,7 +4,7 @@
 
 Store timed metadata in QuickTime movies with a track structure.
 
-#### Overview
+## Overview
 
 A track structure is used to store timed metadata in QuickTime movies. This section provides an overview of the timed metadata track structure, and describes the timed metadata sample descriptions and the storage format of timed metadata media samples. The timed metadata track structure has a media type of `‘meta’`.
 

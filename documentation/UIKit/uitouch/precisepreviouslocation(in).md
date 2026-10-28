@@ -23,11 +23,11 @@ func precisePreviousLocation(in view: UIView?) -> CGPoint
 - (CGPoint) precisePreviousLocationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A precise previous location for the touch.
 
-#### Discussion
+## Discussion
 
 Use this method to get additional precision for a touch’s previous location (when available). Do not use the returned point for hit testing. In some cases, hit testing can indicate that the touch is within a view, but hit testing against the more precise location may indicate that the touch is outside of the view.
 

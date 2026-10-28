@@ -19,7 +19,7 @@ optional func scrollRangeToVisible(_ range: NSRange)
 - (void) scrollRangeToVisible:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method is used by all actions, but is not strictly required by any.
 

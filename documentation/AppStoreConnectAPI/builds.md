@@ -5,7 +5,7 @@
 
 Manage builds for testers and submit builds for review.
 
-#### Overview
+## Overview
 
 A `builds` resource represents a single build of an app. You must upload builds using Xcode, Transporter, or the [Build uploads](./build-uploads.md) resource. Once App Store Connect processes the build, it appears as a build resource.
 

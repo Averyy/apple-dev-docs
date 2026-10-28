@@ -21,7 +21,7 @@ Creates a set of capabilities for a record zone.
 init(rawValue: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Capabilities on record zones that you create locally aren’t valid until you save the record zone. Capabilities on record zones that you fetch from the server are always valid.
 

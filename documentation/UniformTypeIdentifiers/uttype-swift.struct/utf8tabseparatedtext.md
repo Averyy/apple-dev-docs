@@ -21,7 +21,7 @@ A type that represents UTF-8–encoded text containing tab-separated values.
 static var utf8TabSeparatedText: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.utf8-tab-separated-values-text`.
 

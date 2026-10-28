@@ -5,7 +5,7 @@
 
 Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
 
-#### Overview
+## Overview
 
 People who interact with apps to change data typically expect the app to provide a way to revert changes that they no longer wish to make. To provide this *undo* support, apps can use [`UndoManager`](../Foundation/undomanager.md), which can:
 
@@ -15,7 +15,7 @@ People who interact with apps to change data typically expect the app to provide
 
 If your app uses SwiftData, it can automatically register data changes with the undo manager. No need for you to add more code to your app that records those changes. Instead, just enable undo in SwiftData.
 
-##### Enable undo in SwiftData
+### Enable undo in SwiftData
 
 Using SwiftData to store data, you can enable undo support for data changes by setting the `isUndoEnabled` parameter to `true` when applying the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](../SwiftUI/view/modelcontainer%28for,inmemory,isautosaveenabled,isundoenabled,onsetup%29-18hhy.md) modifier to a scene or view in your SwiftUI app:
 

@@ -25,7 +25,7 @@ var ambientOcclusion: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * ambientOcclusion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to assign an ambient occlusion texture map to a surface. This property has no effect if there is no ambient light in the scene. If this property is not `nil`, SceneKit ignores the [`ambient`](./ambient.md) property.
 

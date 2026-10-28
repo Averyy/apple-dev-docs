@@ -23,7 +23,7 @@ var isHighlighted: Bool { get set }
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property causes the label to redraw with the appropriate highlight state. A subclass implementing a text button might set this property to [`true`](../../Swift/true.md) when the user presses the button and set it to [`false`](../../Swift/false.md) at other times. In order for the label to draw the highlight, the [`highlightedTextColor`](./highlightedtextcolor.md) property must contain a non-`nil` value.
 

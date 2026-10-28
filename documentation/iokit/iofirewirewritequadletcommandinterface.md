@@ -18,7 +18,7 @@ typedef struct IOFireWireWriteQuadletCommandInterface_t {
 } IOFireWireWriteQuadletCommandInterface;
 ```
 
-#### Overview
+## Overview
 
 Obsolete; do not use. Use IOFireWireWriteCommandInterface v2 or newer and its function SetMaxPacket()
 

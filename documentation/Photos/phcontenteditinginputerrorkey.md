@@ -24,7 +24,7 @@ let PHContentEditingInputErrorKey: String
 extern NSString * const PHContentEditingInputErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 Photos provides an error object for this key if it cannot provide asset data for your handler block’s `contentEditingInput` parameter. Examine the error object for information about the cause of the error.
 

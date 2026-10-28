@@ -19,7 +19,7 @@ object RestatementNotAllowedCreationDateError
 
 - [External Purchase Server API changelog](./changelog.md)
 
-#### Discussion
+## Discussion
 
 For one year after the [`creationDate`](./creationdate.md) of a line item, you can restate the line item.
 

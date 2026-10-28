@@ -16,11 +16,11 @@ Sets a property for an IOHIDManager.
 Boolean IOHIDManagerSetProperty(IOHIDManagerRef manager, CFStringRef key, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if successful.
 
-#### Discussion
+## Discussion
 
 Property keys are prefixed by kIOHIDDevice and kIOHIDManager and declared in <IOKit/hid/IOHIDKeys.h>. This method will propagate any relevent properties to current and future devices that are enumerated.
 

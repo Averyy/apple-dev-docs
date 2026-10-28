@@ -28,11 +28,11 @@ class func fetchAssets(with options: PHFetchOptions?) -> PHFetchResult<PHAsset>
 
 - [Observing Changes in the Photo Library](../../PhotoKit/observing-changes-in-the-photo-library.md)
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAsset`](../phasset.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 By default, fetch results do not include photos synced to the device through iTunes or stored in iCloud Shared Albums. To change this behavior, use the [`includeAssetSourceTypes`](../phfetchoptions/includeassetsourcetypes.md) property in the `options` parameter.
 

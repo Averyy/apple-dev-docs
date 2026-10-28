@@ -19,11 +19,11 @@ func PMSessionSetDestination(_ printSession: PMPrintSession, _ printSettings: PM
 OSStatus PMSessionSetDestination(PMPrintSession printSession, PMPrintSettings printSettings, PMDestinationType destType, CFStringRef destFormat, CFURLRef destLocation);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You can use the function `PMSessionSetDestination` when you want to send print output to a file without requiring user interaction. You must call this function between the creation and release of a printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md).
 

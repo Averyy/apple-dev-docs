@@ -19,7 +19,7 @@ static let presentationType: NSView.DefinitionOptionKey
 extern NSDefinitionOptionKey const NSDefinitionPresentationTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is one of the constants in [`NSView.DefinitionPresentationType`](../definitionpresentationtype.md).
 

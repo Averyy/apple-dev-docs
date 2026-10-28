@@ -21,11 +21,11 @@ func CVOpenGLTextureGetName(_ image: CVOpenGLTexture) -> GLuint
 extern GLuint CVOpenGLTextureGetName(CVOpenGLTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 The target name of the texture.
 
-#### Discussion
+## Discussion
 
 See the [OpenGL specification](http://www.opengl.org/documentation/) for more information about texture targets.
 

@@ -25,7 +25,7 @@ func cblas_chemm(_ ORDER: CBLAS_ORDER, _ SIDE: CBLAS_SIDE, _ UPLO: CBLAS_UPLO, _
 void cblas_chemm(const enum CBLAS_ORDER ORDER, const enum CBLAS_SIDE SIDE, const enum CBLAS_UPLO UPLO, const __LAPACK_int M, const __LAPACK_int N, const __LAPACK_float_complex *ALPHA, const __LAPACK_float_complex *A, const __LAPACK_int LDA, const __LAPACK_float_complex *B, const __LAPACK_int LDB, const __LAPACK_float_complex *BETA, __LAPACK_float_complex *C, const __LAPACK_int LDC);
 ```
 
-#### Discussion
+## Discussion
 
 This function multiplies `A * B` or `B * A` (depending on the value of `Side`) and multiplies the resulting matrix by `alpha`. It then multiplies matrix `C` by `beta`. It stores the sum of these two products in matrix `C`.
 

@@ -23,7 +23,7 @@ let EAAccessorySelectedKey: String
 extern NSString * const EAAccessorySelectedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value assigned to this key is the [`EAAccessory`](./eaaccessory.md) object that the user selected. This key is included in the info dictionary when the user pairs a Bluetooth accessory with the device using the Bluetooth picker.
 

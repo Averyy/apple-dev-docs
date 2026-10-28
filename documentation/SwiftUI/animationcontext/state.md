@@ -21,7 +21,7 @@ The current state of a custom animation.
 var state: AnimationState<Value>
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`CustomAnimation`](../customanimation.md) uses this property to read and write state values as the animation runs.
 

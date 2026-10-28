@@ -15,7 +15,7 @@ An activity classifier data source that uses a directory that contains sensor da
 case directoryWithDataAndAnnotation(at: URL, annotationFileName: String, timeStampColumn: String, labelStartTimeColumn: String, labelEndTimeColumn: String)
 ```
 
-#### Discussion
+## Discussion
 
 Create a data source by gathering all activity data files, and one annotation file, into a directory. Pass that directory’s [`URL`](../../../Foundation/url.md) and the relevant column names of the annotation file to [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](./directorywithdataandannotation%28at,annotationfilename,timestampcolumn,labelstarttimecolumn,labelendtimecolumn%29.md).
 

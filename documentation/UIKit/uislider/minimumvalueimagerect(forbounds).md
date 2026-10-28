@@ -22,11 +22,11 @@ func minimumValueImageRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) minimumValueImageRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the image.
 
-#### Discussion
+## Discussion
 
 You do not call this method directly. Instead, you override it when you want to customize the rectangle in which the minimum value image is drawn, returning a different rectangle. If you make x-axis adjustments, be sure to take into account the automatic flipping of [`minimumValueImage`](./minimumvalueimage.md) in a right-to-left user interface; the minimum image is always shown at the leading end of the slider’s track. See the [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i) for further information about supporting right-to-left languages.
 

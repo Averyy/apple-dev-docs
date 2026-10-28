@@ -24,11 +24,11 @@ init(name: String, scatteringFunction: MDLScatteringFunction)
 - (instancetype) initWithName:(NSString *) name scatteringFunction:(MDLScatteringFunction *) scatteringFunction;
 ```
 
-#### Return Value
+## Return Value
 
 A new material object.
 
-#### Discussion
+## Discussion
 
 To use the newly created material with a 3D object, assign it to the the [`material`](../mdlsubmesh/material.md) property of a [`MDLSubmesh`](../mdlsubmesh.md) instance.
 

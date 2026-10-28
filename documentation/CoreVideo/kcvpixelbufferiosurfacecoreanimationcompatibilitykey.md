@@ -24,7 +24,7 @@ let kCVPixelBufferIOSurfaceCoreAnimationCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferIOSurfaceCoreAnimationCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). You can use this key instead of explicit pixel format keys. When you use this key with other media frameworks, [Video Toolbox](../VideoToolbox/VideoToolbox.md) chooses the best pixel format for Core Animation to use.
 

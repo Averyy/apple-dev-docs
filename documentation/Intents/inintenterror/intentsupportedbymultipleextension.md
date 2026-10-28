@@ -21,7 +21,7 @@ An intent was supported by more than one Intents extension in the same app.
 static var intentSupportedByMultipleExtension: INIntentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 An app may have multiple Intents extensions, but each one must support a unique set of intents.
 

@@ -15,7 +15,7 @@ Gets the memory descriptor used for video IO that was initialized with or set on
 IOStreamBufferQueue * GetOutputQueue();
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the output buffer queue for the stream, or `NULL` if the stream is not open and the queue has not been created yet.
 

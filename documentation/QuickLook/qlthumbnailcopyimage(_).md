@@ -21,11 +21,11 @@ func QLThumbnailCopyImage(_ thumbnail: QLThumbnail!) -> Unmanaged<CGImage>!
 extern CGImageRefQLThumbnailCopyImage(QLThumbnailRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 A thumbnail image, or `NULL` if the Quick Look framework can’t create a thumbnail.
 
-#### Discussion
+## Discussion
 
 If you call this function directly without using [`QLThumbnailDispatchAsync(_:_:_:)`](./qlthumbnaildispatchasync%28_,_,_%29.md), this function blocks the calling thread until it finishes computing the thumbnail.
 

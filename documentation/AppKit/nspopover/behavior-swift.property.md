@@ -19,7 +19,7 @@ var behavior: NSPopover.Behavior { get set }
 @property NSPopoverBehavior behavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NSPopover.Behavior.applicationDefined`](./behavior-swift.enum/applicationdefined.md). See [`NSPopover.Behavior`](./behavior-swift.enum.md) for possible value.
 

@@ -22,7 +22,7 @@ var isVirtualDevice: Bool { get }
 @property (nonatomic, readonly, getter=isVirtualDevice) BOOL virtualDevice;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of virtual devices are:
 

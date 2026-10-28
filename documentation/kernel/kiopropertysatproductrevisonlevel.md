@@ -13,7 +13,7 @@
 #define kIOPropertySATProductRevisonLevel
 ```
 
-#### Discussion
+## Discussion
 
 Product Revision Level of the SATL.
 

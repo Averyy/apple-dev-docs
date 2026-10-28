@@ -25,7 +25,7 @@ var numberStyle: NumberFormatter.Style { get set }
 @property NSNumberFormatterStyle numberStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Styles are essentially predetermined sets of values for certain properties. Examples of number-formatter styles are those used for decimal values, percentage values, and currency.
 

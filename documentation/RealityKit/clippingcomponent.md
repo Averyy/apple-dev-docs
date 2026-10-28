@@ -20,7 +20,7 @@ A component that clips entities and their children to a customizable bounding bo
 struct ClippingComponent
 ```
 
-#### Overview
+## Overview
 
 The `ClippingComponent` provides a powerful and performant way to clip content in RealityKit. It’s particularly useful for:
 

@@ -23,7 +23,7 @@ var payloadData: Data { get }
 
 Available when `SignedType` is `Product.SubscriptionInfo.RenewalInfo`.
 
-#### Discussion
+## Discussion
 
 This value is the same as the [`jsonRepresentation`](../transaction/jsonrepresentation.md) in [`Product.SubscriptionInfo.RenewalInfo`](../product/subscriptioninfo/renewalinfo.md).
 

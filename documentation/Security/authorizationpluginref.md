@@ -21,7 +21,7 @@ A handle passed by the plug-in to the authorization engine when the plug-in is i
 typedef void * AuthorizationPluginRef;
 ```
 
-#### Discussion
+## Discussion
 
 Your [`AuthorizationPluginCreate`](./authorizationplugincreate.md) function assigns this value and returns it to the authorization engine. The authorization engine passes this reference back to you in any subsequent calls to your [`MechanismCreate`](./authorizationplugininterface/mechanismcreate.md) and [`PluginDestroy`](./authorizationplugininterface/plugindestroy.md) functions.
 

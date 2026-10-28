@@ -19,11 +19,11 @@ func PMCreatePrintSettings(_ printSettings: UnsafeMutablePointer<PMPrintSettings
 OSStatus PMCreatePrintSettings(PMPrintSettings  _Nullable *printSettings);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function allocates memory for a new print settings object in your application’s memory space and sets its reference count to 1. The new print settings object is empty and unusable until you call [`PMSessionDefaultPrintSettings(_:_:)`](./api-1460138-pmsessiondefaultprintsettings.md) or [`PMCopyPrintSettings(_:_:)`](./api-1462491-pmcopyprintsettings.md).
 

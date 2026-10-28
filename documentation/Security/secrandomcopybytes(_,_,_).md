@@ -25,11 +25,11 @@ func SecRandomCopyBytes(_ rnd: SecRandomRef?, _ count: Int, _ bytes: UnsafeMutab
 int SecRandomCopyBytes(SecRandomRef rnd, size_t count, void *bytes);
 ```
 
-#### Return Value
+## Return Value
 
 A result code set to [`errSecSuccess`](./errsecsuccess.md) or some other value on failure.
 
-#### Discussion
+## Discussion
 
 Always test the returned status to make sure that the array has been updated with new, random data before trying to use the values. For example, to create 10 random bytes:
 

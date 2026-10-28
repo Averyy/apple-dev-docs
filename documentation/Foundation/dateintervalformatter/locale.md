@@ -25,7 +25,7 @@ var locale: Locale! { get set }
 @property (copy, null_resettable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the current user’s locale, which is accessible from the [`current`](../nslocale/current.md) method of [`NSLocale`](../nslocale.md). You can change this value to a different locale to generate strings based on that locale.
 

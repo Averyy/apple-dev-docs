@@ -19,7 +19,7 @@ struct CFXMLParserOptions
 enum CFXMLParserOptions : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 These are the various options you use to configure the parser. An option flag of 0 ([`kCFXMLParserNoOptions`](./cfxmlparseroptions/kcfxmlparsernooptions.md)) leaves the XML as “intact” as possible (reports all structures; performs no replacements). Hence, to make the parser do the most work, returning only the pure element tree, set the option flag to [`allOptions`](./cfxmlparseroptions/alloptions.md).
 

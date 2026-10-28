@@ -21,7 +21,7 @@ A sign display strategy to use accounting principles, with a configurable behavi
 static func accountingAlways(showZero: Bool = false) -> CurrencyFormatStyleConfiguration.SignDisplayStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A strategy that uses accounting principles, and the specified handling of zero values.
 

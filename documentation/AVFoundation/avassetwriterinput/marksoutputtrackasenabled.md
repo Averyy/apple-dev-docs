@@ -24,7 +24,7 @@ var marksOutputTrackAsEnabled: Bool { get set }
 @property (nonatomic) BOOL marksOutputTrackAsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If the format you’re writing supports disabling tracks, you can disable a track by setting this value to [`false`](../../Swift/false.md).
 

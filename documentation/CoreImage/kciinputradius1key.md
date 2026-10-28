@@ -24,7 +24,7 @@ let kCIInputRadius1Key: String
 extern NSString * const kCIInputRadius1Key;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be an `NSNumber` instance.
 

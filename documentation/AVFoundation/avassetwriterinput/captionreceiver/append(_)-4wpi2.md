@@ -15,11 +15,11 @@ Suspends until the input is ready for more media data, then appends the caption.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func append(_ caption: AVCaption) async throws
+nonisolated(nonsending)
+func append(_ caption: AVCaption) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

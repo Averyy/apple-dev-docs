@@ -27,7 +27,7 @@ class UIPinchGestureRecognizer
 
 - [Handling pinch gestures](./handling-pinch-gestures.md)
 
-#### Overview
+## Overview
 
 [`UIPinchGestureRecognizer`](./uipinchgesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md).
 

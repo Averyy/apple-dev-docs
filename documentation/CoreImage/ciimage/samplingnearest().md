@@ -24,7 +24,7 @@ func samplingNearest() -> CIImage
 - (CIImage *) imageBySamplingNearest;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md) instance with a nearest sampling.
 

@@ -18,7 +18,7 @@ func PGCreateDeviceWithDescriptor(_ descriptor: PGDeviceDescriptor) -> (any PGDe
 extern id<PGDevice>PGCreateDeviceWithDescriptor(PGDeviceDescriptor *descriptor);
 ```
 
-#### Discussion
+## Discussion
 
 Create a new PGDevice implementation object based on the provided descriptor.
 

@@ -13,7 +13,7 @@
 kINQUIRY_MaximumDataSize = 255
 ```
 
-#### Discussion
+## Discussion
 
 Maximum size for INQUIRY data.
 

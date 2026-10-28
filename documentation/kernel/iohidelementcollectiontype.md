@@ -15,7 +15,7 @@ Describes different types of HID collections.
 typedef enum IOHIDElementCollectionType IOHIDElementCollectionType;
 ```
 
-#### Discussion
+## Discussion
 
 Collections identify a relationship between two or more elements.
 

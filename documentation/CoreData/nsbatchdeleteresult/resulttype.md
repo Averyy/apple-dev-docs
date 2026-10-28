@@ -25,7 +25,7 @@ var resultType: NSBatchDeleteRequestResultType { get }
 @property (readonly) NSBatchDeleteRequestResultType resultType;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is set to the request’s [`resultType`](../nsbatchdeleterequest/resulttype.md) property.
 

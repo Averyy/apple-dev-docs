@@ -24,7 +24,7 @@ var edgeAntialiasingMask: CAEdgeAntialiasingMask { get set }
 @property CAEdgeAntialiasingMask edgeAntialiasingMask;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies which edges of the layer are antialiased and is a combination of the constants defined in [`CAEdgeAntialiasingMask`](../caedgeantialiasingmask.md). You can enable or disable antialiasing for each edge (top, left, bottom, right) separately. By default antialiasing is enabled for all edges.
 

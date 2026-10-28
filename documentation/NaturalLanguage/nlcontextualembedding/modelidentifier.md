@@ -25,7 +25,7 @@ var modelIdentifier: String { get }
 @property (copy, readonly) NSString * modelIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use the same model identifier that you developed and tested your app with to maintain consistent results.
 

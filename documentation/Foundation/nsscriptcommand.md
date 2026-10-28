@@ -20,7 +20,7 @@ class NSScriptCommand
 @interface NSScriptCommand : NSObject
 ```
 
-#### Overview
+## Overview
 
 An instance of [`NSScriptCommand`](./nsscriptcommand.md) represents a scripting statement, such as `set word 5 of the front document to word 1 of the second document`, and contains the information needed to perform the operation specified by the statement.
 

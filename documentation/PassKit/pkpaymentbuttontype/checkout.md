@@ -24,7 +24,7 @@ case checkout
 PKPaymentButtonTypeCheckout
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

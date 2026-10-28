@@ -15,7 +15,7 @@ The size, in meters, of a reference image in the real world.
 var physicalSize: CGSize { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, set the [`physicalSize`](./physicalsize.md) of a reference image of a yard stick to `0.9144` meters.
 

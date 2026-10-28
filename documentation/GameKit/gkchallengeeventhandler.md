@@ -25,7 +25,7 @@ class GKChallengeEventHandler
 @interface GKChallengeEventHandler : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Your game must initialize a local player before you can use any Game Center classes. If there is no initialized player, your game receives a [`GKError.Code.notAuthenticated`](./gkerror/code/notauthenticated.md) error. For more information, see [Authenticating a player](./authenticating-a-player.md).
 

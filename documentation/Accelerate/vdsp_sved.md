@@ -21,7 +21,7 @@ Calculates the sum of values in a double-precision vector.
 extern void vDSP_sveD(const double *__A, vDSP_Stride __I, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sum of the first `N` elements of `A` and writes the result to `C`:
 

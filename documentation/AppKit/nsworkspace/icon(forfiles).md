@@ -19,11 +19,11 @@ func icon(forFiles fullPaths: [String]) -> NSImage?
 - (NSImage *) iconForFiles:(NSArray<NSString *> *) fullPaths;
 ```
 
-#### Return Value
+## Return Value
 
 The icon associated with the group of files.
 
-#### Discussion
+## Discussion
 
 If `fullPaths` specifies one file, that file’s icon is returned. If `fullPaths` specifies more than one file, an icon representing the multiple selection is returned.
 

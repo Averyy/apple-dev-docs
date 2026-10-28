@@ -24,7 +24,7 @@ var attributedText: NSAttributedString! { get set }
 @property (copy, null_resettable) NSAttributedString * attributedText;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new value to this property also replaces the value of the [`text`](./text.md) property with the same string data, albeit without any formatting information. In addition, the [`font`](./font.md), [`textColor`](./textcolor.md), and [`textAlignment`](./textalignment.md) properties are updated to reflect the typing attributes of the text view.
 

@@ -20,7 +20,7 @@ An object detection annotation.
 struct ObjectDetectionAnnotation<Label> where Label : Comparable, Label : Decodable, Label : Encodable, Label : Hashable
 ```
 
-#### Overview
+## Overview
 
 The annotation consists of a list of bounding boxes and object labels for each image.
 

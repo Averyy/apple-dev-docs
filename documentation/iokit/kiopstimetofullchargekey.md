@@ -16,7 +16,7 @@ CFDictionary key for the current power source's time remaining until empty.
 #define kIOPSTimeToFullChargeKey
 ```
 
-#### Discussion
+## Discussion
 
 Only valid if the value of [`kIOPSIsChargingKey`](./kiopsischargingkey.md) is kCFBooleanTrue.
 

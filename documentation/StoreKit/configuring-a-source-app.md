@@ -5,7 +5,7 @@
 
 Set up a source app to participate in ad campaigns.
 
-#### Overview
+## Overview
 
 A *source app* is an app that participates in ad campaigns by displaying ads that an ad network signs. To participate in install validation, the source app needs to include ad network IDs in its `Info.plist` file. Ad networks are responsible for publishing or providing their ad network IDs to developers.
 

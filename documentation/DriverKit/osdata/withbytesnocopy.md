@@ -18,11 +18,11 @@ Allocates an OSData object with a copy of bytes.
 static OSDataPtr withBytesNoCopy(void *bytes, size_t numBytes);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSData with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSData object with a copy of bytes. A synonym for OSData::withBytes() for compatibility with kernel code.
 

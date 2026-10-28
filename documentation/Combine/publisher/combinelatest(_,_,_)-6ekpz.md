@@ -21,11 +21,11 @@ Subscribes to two additional publishers and invokes a closure upon receiving out
 func combineLatest<P, Q, T>(_ publisher1: P, _ publisher2: Q, _ transform: @escaping (Self.Output, P.Output, Q.Output) -> T) -> Publishers.Map<Publishers.CombineLatest3<Self, P, Q>, T> where P : Publisher, Q : Publisher, Self.Failure == P.Failure, P.Failure == Q.Failure
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that receives and combines elements from this publisher and two other publishers.
 
-#### Discussion
+## Discussion
 
 Use `combineLatest<P, Q>(_:,_:)` to combine the current and two additional publishers and transform them using a closure you specify to publish a new value to the downstream.
 

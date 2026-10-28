@@ -19,11 +19,11 @@ Creates a detection track with fixed focus at the disparity of an existing detec
 - (instancetype) initWithOriginalDetection:(CNDetection *) originalDetection;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing a detection track with fixed focus at the disparity of an existing detection.
 
-#### Discussion
+## Discussion
 
 This is the way to determine the time and bounds from which the fixed focus originated. This detection isn’t part of the detection track and has a different detection ID or none.
 

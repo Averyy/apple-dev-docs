@@ -23,7 +23,7 @@ var recordTypes: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * recordTypes;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of the most common record types, see [`HKVerifiableClinicalRecordCredentialType`](../hkverifiableclinicalrecordcredentialtype.md).
 

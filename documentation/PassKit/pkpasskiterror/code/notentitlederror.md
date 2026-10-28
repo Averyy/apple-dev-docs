@@ -24,7 +24,7 @@ case notEntitledError
 PKNotEntitledError
 ```
 
-#### Discussion
+## Discussion
 
 Apps require appropriate entitlements to read, update or delete passes. To add these entitlements, enable the Wallet capabilities in Xcode.
 

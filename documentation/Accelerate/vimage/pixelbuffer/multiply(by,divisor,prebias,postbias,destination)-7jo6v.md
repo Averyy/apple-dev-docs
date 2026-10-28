@@ -23,7 +23,7 @@ func multiply(by factor: Int, divisor: Int, preBias: Int, postBias: Int, destina
 
 Available when `Format` is `vImage.Planar8`.
 
-#### Discussion
+## Discussion
 
 This function applies the following operation to each pixel:
 

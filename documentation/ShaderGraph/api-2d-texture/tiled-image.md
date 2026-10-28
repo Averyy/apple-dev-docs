@@ -14,7 +14,7 @@ Samples data from an image with provisions for offsetting and tiling in UV space
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Tiled Image (float)**:
 
@@ -135,7 +135,7 @@ Samples data from an image with provisions for offsetting and tiling in UV space
 | --- | --- |
 | `Out` | Half |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`Default`**: A default value to use if the ​file​ reference fails to resolve.
@@ -146,7 +146,7 @@ Samples data from an image with provisions for offsetting and tiling in UV space
 - **`Real World Tile Size`**: The real-world size of a single square `0-1` UV tile.
 - **`Filter Type`**: The type of texture filtering to use.
 
-#### Discussion
+## Discussion
 
 The `Tiled Image` material node maps a texture onto a surface with a repeating tiled pattern. It allows you to specify a texture image and control its tiling and real-world size properties.
 

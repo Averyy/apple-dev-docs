@@ -24,7 +24,7 @@ var tessellationFactorStepFunction: MTLTessellationFactorStepFunction { get set 
 @property (nonatomic, readwrite) MTLTessellationFactorStepFunction tessellationFactorStepFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLTessellationFactorStepFunction.constant`](../mtltessellationfactorstepfunction/constant.md).
 

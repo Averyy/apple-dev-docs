@@ -13,7 +13,7 @@ typedef void ( *CompletionAction)(
    UInt32 bufferSizeRemaining);
 ```
 
-#### Overview
+## Overview
 
 Function called when HID I/O completes.
 

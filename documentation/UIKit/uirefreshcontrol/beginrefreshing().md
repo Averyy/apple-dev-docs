@@ -22,7 +22,7 @@ func beginRefreshing()
 - (void) beginRefreshing;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when an external event source triggers a programmatic refresh of your scrolling view. In a table view, for example, if you use an instance of [`Timer`](../../Foundation/timer.md) to refresh the contents of the table view periodically, you would call this method as part of your timer handler. This method updates the state of the refresh control to reflect the in-progress refresh operation. When the refresh operation ends, be sure to call the [`endRefreshing()`](./endrefreshing%28%29.md) method to return the control to its default state.
 

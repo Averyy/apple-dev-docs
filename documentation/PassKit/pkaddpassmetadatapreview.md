@@ -23,7 +23,7 @@ class PKAddPassMetadataPreview
 @interface PKAddPassMetadataPreview : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to preview an object with all of the information you need to present a pass during provision.
 

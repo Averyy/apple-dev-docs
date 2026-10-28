@@ -19,7 +19,7 @@ func resignFocus()
 - (void) resignFocus;
 ```
 
-#### Discussion
+## Discussion
 
 When no picker has focus, input from the Digital Crown is once again used to scroll the contents of the screen.
 

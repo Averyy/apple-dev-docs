@@ -23,7 +23,7 @@ let SCNSceneSourceAssetCreatedDateKey: String
 extern NSString * const SCNSceneSourceAssetCreatedDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 The date when the file was created. The corresponding value is an `NSDate` instance.
 

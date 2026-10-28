@@ -18,7 +18,7 @@ var identity: es_string_token_t
 es_string_token_t identity;
 ```
 
-#### Discussion
+## Discussion
 
 Structure for handling strings
 

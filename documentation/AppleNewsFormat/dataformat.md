@@ -15,7 +15,7 @@ Properties shared by all data format obejct types.
 object DataFormat
 ```
 
-#### Discussion
+## Discussion
 
 This object can be used in [`DataDescriptor`](./datadescriptor.md).
 

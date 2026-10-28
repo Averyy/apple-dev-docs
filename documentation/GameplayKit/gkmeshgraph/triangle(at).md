@@ -24,11 +24,11 @@ func triangle(at index: Int) -> GKTriangle
 - (GKTriangle) triangleAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A structure describing the specified triangle.
 
-#### Discussion
+## Discussion
 
 This method provides valid results only after calling the [`triangulate()`](./triangulate%28%29.md) to create a mesh around the current configuration of obstacles. The information this method provides can be useful for drawing your own overlay UI to debug the graphs you create.
 

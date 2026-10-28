@@ -19,7 +19,7 @@ class let touchBarPlayheadTemplateName: String
 extern NSImageName const NSImageNameTouchBarPlayheadTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for a playhead.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2931423@2x.png)
 

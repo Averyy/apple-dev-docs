@@ -14,7 +14,7 @@ A MaterialX version of USD Preview Surface.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -34,7 +34,7 @@ A MaterialX version of USD Preview Surface.
 | --- | --- |
 | `Out` | Token |
 
-#### Parameter description
+## Parameter description
 
 - **`Diffuse Color`**: The base display color of the surface. The color of an object under pure white light.
 - **`Roughness`**: The level of roughness of the surface. This value ranges between `0` and `1.0`, with `0` outputting a perfectly specular surface and `1.0` indicating maximum roughness. The default is `0.5`.
@@ -48,7 +48,7 @@ A MaterialX version of USD Preview Surface.
 - **`Ambient Occlusion`**: The degree of ambient lighting that the surface receives. This value simulates soft shadows and subtle shading. A value of `0.0` indicates a fully occluded area, while a value of `1.0` indicates an unoccluded area. The default is `1.0`.
 - **`Opacity Threshold`**: The threshold for whether the node renders a portion of the surface based on its opacity level. A value of `0.0` means that no additional masking occurs. If the value is greater than `0.0`, the node renders only areas of the surface with an `Opacity` value greater than the value of this parameter. The default is `0.0`.
 
-#### Discussion
+## Discussion
 
 The `Preview Surface` node produces a custom surface based on its input parameters. Connect the output of the `Preview Surface` node to the `Custom Surface` output of your material. Below is an example material that uses only the `Preview Surface` node to produce a gold-like texture and apply it to a sphere:
 

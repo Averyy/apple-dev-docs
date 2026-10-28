@@ -19,7 +19,7 @@ func registerCloudKitShare(preparationHandler: @escaping (@escaping (CKShare?, C
 - (void) registerCloudKitShareWithPreparationHandler:(void (^)(void (^preparationCompletionHandler)(CKShare *, CKContainer *, NSError *))) preparationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to share a hierarchy of CloudKit records with other iCloud users. When the service invokes the handler, create an instance of [`CKShare`](../../CloudKit/ckshare.md) with a root record. Save the share to the server using [`CKModifyRecordsOperation`](../../CloudKit/ckmodifyrecordsoperation.md). The root record (and its hierarchy) must already exist on the server or be part of the same save operation. After the share saves, call `preparationCompletionHandler` with the saved share and its container. If the save fails, pass the error to the completion handler instead. Invoking the sharing service with a share you register using this method prompts the user to begin sharing.
 

@@ -25,7 +25,7 @@ var timeoutInterval: TimeInterval { get }
 @property (readonly) NSTimeInterval timeoutInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If during a connection attempt the request remains idle for longer than the timeout interval, the request is considered to have timed out.
 

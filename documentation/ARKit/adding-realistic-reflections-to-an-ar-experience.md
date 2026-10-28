@@ -11,7 +11,7 @@ Use ARKit to generate environment probe textures from camera imagery and render 
 - iPadOS 12.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This app provides a simple AR experience demonstrating the environment texturing features in ARKit 2 and SceneKit. After you build and run the app, explore your surroundings in the camera view. Then, tap a nearby horizontal surface to place a virtual object: a mirror-finish sphere. After you place the object, you can drag it around or tap to move it to another location. You can also pinch to make the object bigger or smaller.
 
@@ -21,7 +21,7 @@ Notice the surface of the virtual sphere shows a generally realistic (if not per
 
 ARKit generates environment textures by collecting camera imagery during the AR session. Because ARKit cannot see the scene in all directions, it uses machine learning to extrapolate a realistic environment from available imagery.
 
-#### Getting started
+## Getting started
 
 Before you can run the sample code project, you’ll need:
 
@@ -29,7 +29,7 @@ Before you can run the sample code project, you’ll need:
 - iOS 12 or later.
 - An iOS device with an A9 processor or later.
 
-#### Set up environment texturing
+## Set up environment texturing
 
 As with any AR experience, you run a session with a world tracking configuration and whatever other options you want to enable. (For example, this app allows you to place virtual objects on flat surfaces, so it enables horizontal plane detection.) To generate environment textures, also set the configuration’s [`ARWorldTrackingConfiguration.EnvironmentTexturing.automatic`](./arworldtrackingconfiguration/environmenttexturing-swift.enum/automatic.md) property:
 
@@ -42,7 +42,7 @@ sceneView.session.run(configuration)
 
 With [`ARWorldTrackingConfiguration.EnvironmentTexturing.automatic`](./arworldtrackingconfiguration/environmenttexturing-swift.enum/automatic.md) environment texturing (the default for this app) ARKit automatically chooses when and where to generate textures.
 
-#### Render virtual objects with reflection
+## Render virtual objects with reflection
 
 Because this app also uses [`ARSCNView`](./arscnview.md) to display AR content, SceneKit automatically uses the appropriate environment texture to render each virtual object in the scene. In SceneKit, any asset using [`SCNMaterial.LightingModel`](../SceneKit/scnmaterial/lightingmodel-swift.struct.md) materials automatically uses *environmental lighting*. With environmental lighting, the shading for each point on a surface depends on nearby light probe textures or the global lighting environment in the direction that point faces.
 
@@ -52,7 +52,7 @@ The visual effect of environment texturing depends on how you configure the prop
 
 > **Note**: If your AR experience uses a rendering technology other than SceneKit, you’ll need to retrieve the generated textures yourself and determine how to use them appropriately in your shading engine. First, implement the [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-9v2kw.md) delegate method to be notified when ARKit generates environment probe textures. In that method, use the [`environmentTexture`](./arenvironmentprobeanchor/environmenttexture.md) property of each [`AREnvironmentProbeAnchor`](./arenvironmentprobeanchor.md) object to get the texture.
 
-#### Place environment probes manually for enhanced results
+## Place environment probes manually for enhanced results
 
 Automatic environment texturing is all you need for basic environmental lighting or reflection effects. To render reflections more realistically, however, each reflective object needs an environment probe texture that accurately captures the area close to that object. For example, in the images above, the virtual sphere reflects the real cup when the cup is close to the sphere’s real-world position.
 
@@ -82,7 +82,7 @@ This code applies the rules below to optimally capture the area around each virt
 
 ![Diagram indicating the recommended extent for an environment probe anchor around a virtual object: double the object's height and three times its width and depth, centered at the top of the object.](https://developer.apple.com/tutorials/images/com.apple.arkit/ProbeExtent.png)
 
-#### Use environment texturing wisely
+## Use environment texturing wisely
 
 Follow these tips to keep your app’s use of environment texturing realistic and efficient:
 

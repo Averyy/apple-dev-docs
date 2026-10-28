@@ -34,7 +34,7 @@ var badge: NSNumber? { get set }
 @property (atomic, copy, readwrite, nullable) NSNumber * badge;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the number to apply to the app’s icon when the notification arrives. If your app isn’t authorized to display badge-based notifications, the system ignores this property.
 

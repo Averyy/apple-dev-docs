@@ -23,7 +23,7 @@ optional func isReaderModeAvailable(for context: WKWebExtensionContext) -> Bool
 - (BOOL) isReaderModeAvailableForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `NO` if not implemented.
 

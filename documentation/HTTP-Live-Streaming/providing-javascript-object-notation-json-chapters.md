@@ -5,13 +5,13 @@
 
 Prepare JSON chapters for HTTP Live Streaming.
 
-#### Overview
+## Overview
 
 Content providers supply chapter markers and other per-chapter meta data using the `EXT-X-SESSION-DATA` tag in the HTTP Live Streaming (HLS) Multivariant Playlist. Apple’s iOS, tvOS, and macOS platforms receive this metadata as JSON, a format that uses human-readable text to define data objects described in [RFC 7159](https://tools.ietf.org/html/rfc7159).
 
 > ❗ **Important**: This article is for informational purposes only. Apple may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this document. The furnishing of this article doesn’t give you a license to any patents, trademarks, copyrights, or other intellectual property.
 
-##### Organize chapter metadata
+### Organize chapter metadata
 
 Chapter data is information that describes a chapter using four different types: timing, titles, images, and general metadata. Keep the following in mind when designing your chapter data:
 
@@ -112,11 +112,11 @@ Here’s the general layout of the JSON chapter data format. The JavaScript comm
 ]
 ```
 
-##### Add titles
+### Add titles
 
 Chapter entries may contain a `titles` JSON array. Each element of a `titles` array is a JSON object that must contain both a `language` BCP 47 string and a `title` string with the title for that chapter, written in the language specified by the `language` string. All strings must be encoded using UTF-8. Set the language to `“und”` if the title strings are language-neutral, such as a numeric string.
 
-##### Add images
+### Add images
 
 Chapter entries may contain an `images` JSON array. Each element of an `images` array is a JSON object containing information about images for each chapter. For example, an `images` array may contain an element for a thumbnail image and an element for an HD image.
 
@@ -128,11 +128,11 @@ The `url` string must be an absolute or relative URL to the image data associate
 
 The `images` files themselves may be in a variety of image formats. For example, JPEG, PNG, and TIFF are all supported.
 
-##### Add metadata
+### Add metadata
 
 Chapter entries may also contain a metadata JSON array. Each element of a `metadata` array is a JSON object containing metadata for that chapter. Each metadata array element contains a mandatory `key` and `value`, along with an optional `language` BCP-47 string. The key element must be a string. The value element can be a string, number, array, or object. If any `value` is a URI, it’s passed as-is. The system has no way to interpret a relative URI in that context.
 
-##### Specify a main playlist
+### Specify a main playlist
 
 JSON-formatted chapter data must be specified in a main playlist using the `EXT-X-SESSION-DATA` tag for use in HTTP Live Streaming.
 
@@ -140,7 +140,7 @@ The DATA-ID attribute of the `EXT-X-SESSION-DATA` must be `com.apple.hls.chapter
 
 `#EXT-X-SESSION-DATA:DATA-ID="com.apple.hls.chapters",URI="http://meta.example.com/movie403/chapters.json"`
 
-##### Perform validation
+### Perform validation
 
 Use the following JSON schema to validate your chapter data.
 
@@ -249,7 +249,7 @@ Use the following JSON schema to validate your chapter data.
 }
 ```
 
-##### Test and access chapter data
+### Test and access chapter data
 
 Use QuickTime Player to quickly test your HLS streams with chapter data. QuickTime Player will display a chapter pop-up control (with images, if you have them). In QuickTime Player, use File > Open Location or ⌘L to open a URL. QuickTime Player displays your chapters in the order they appear in the JSON file, without sorting or rearranging them.
 

@@ -22,7 +22,7 @@ var url: URL { get set }
 @property (copy, readwrite) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 This property locates the IP address and resource path for the printer.
 

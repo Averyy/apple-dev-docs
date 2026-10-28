@@ -13,7 +13,7 @@
 kSCSICDBSize_10Byte = 10
 ```
 
-#### Discussion
+## Discussion
 
 Use this for a 10-byte CDB.
 

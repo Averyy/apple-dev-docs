@@ -22,7 +22,7 @@ nonisolated
 func backgroundStyle<S>(_ style: S) -> some View where S : ShapeStyle
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses this modifier to set the [`backgroundStyle`](../environmentvalues/backgroundstyle.md) environment value to a [`blue`](../shapestyle/blue.md) color that includes a subtle [`gradient`](../color/gradient.md). SwiftUI fills the [`Circle`](../circle.md) shape that acts as a background element with this style:
 

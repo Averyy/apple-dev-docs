@@ -5,7 +5,7 @@
 
 Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: For devices running OS versions earlier than iOS 18, use the AdAttributionKit testing profile on your test device. For more information, see [Testing ad attributions with a downloaded profile](./testing-ad-attributions-with-a-downloaded-profile.md).
 
@@ -19,7 +19,7 @@ After enabling Developer Mode, access the developer settings in Settings on your
 
 To test ad attributions, you need to log in to the device with a production Apple ID. AdAttributionKit doesn’t support sandbox Apple IDs.
 
-#### Create development impressions and postbacks
+## Create development impressions and postbacks
 
 In iOS 18 and later, you sign development impressions to receive development postbacks. Development impressions allow you to test your integration with reduced time-windows using Developer Mode. After a conversion event occurs using a development impression, the system creates development postbacks. Development postbacks aren’t subject to the rate limits that reengagement in AdAttributionKit imposes, and they generate postbacks with the highest data tier that Crowd Anonymity allows.
 
@@ -35,19 +35,19 @@ You can test development postbacks using the production time-windows, or reduce 
 
 > **Note**: The system prioritizes production impressions over development impressions for any conversion event. If production and development impressions are present during a conversion, the system ignores development impressions.
 
-##### Verify development postbacks
+### Verify development postbacks
 
 The system signs development postbacks with a different private key from production postbacks to help distinguish them. The system uses the `apple-development-identifier/0` `kid` to identify signed development postbacks in end-to-end flows.
 
 The steps for verifying development postback signatures are identical to the steps for production postbacks, with the exception of the key you use. For more information on the public key for development postbacks and verifying a postback’s JWS signature, see [Verifying a postback](./verifying-a-postback.md).
 
-#### Reduce time-windows using Developer Mode
+## Reduce time-windows using Developer Mode
 
 Enabling Developer Mode reduces the time-window for receiving development postbacks from the device. Developer Mode only affects the time-windows of development postbacks. Postbacks that the system generates from production impressions use the full time-windows.
 
 When you enable Developer Mode, the framework reduces each development postback’s conversion window to 3 minutes instead of the full duration to allow for faster testing. The conversion window begins when the installed app first updates the conversion value. The first window spans 0 to 3 minutes, the second window spans 3 to 6 minutes, and the third window spans 6 to 9 minutes. Developer Mode reduces the postback delay from 24 to 48 hours to 5 to 10 minutes.
 
-#### Inspect postbacks using an HTTP proxy
+## Inspect postbacks using an HTTP proxy
 
 When you enable Developer Mode, the system can send AdAttributionKit postbacks through an HTTP proxy that you configure. By using an HTTP proxy, you can monitor the HTTP traffic between your device and the network, including AdAttributionKit postbacks. To configure the HTTP proxy, follow these steps on a testing device:
 

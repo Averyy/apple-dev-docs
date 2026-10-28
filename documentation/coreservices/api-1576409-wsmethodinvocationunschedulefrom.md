@@ -15,7 +15,7 @@ Unschedules a method invocation from a run loop.
 void WSMethodInvocationUnscheduleFromRunLoop(WSMethodInvocationRef invocation, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Unschedules the invocation from a given run loop and mode.  If the invocation has not yet completed, its callback will not be called.
 

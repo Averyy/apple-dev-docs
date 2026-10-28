@@ -15,11 +15,11 @@ Creates and configures the buffers that store the data moving to and from the de
 virtual kern_return_t ConnectQueues(IOBufferMemoryDescriptor **ifmd, IOMemoryDescriptor **rxqmd, IOMemoryDescriptor **txqmd, IOMemoryDescriptor *in_rxqmd, IOMemoryDescriptor *in_txqmd, uint32_t in_rxqoffset, uint32_t in_txqoffset, uint8_t in_rxqlogsz, uint8_t in_txqlogsz);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 You do not need to call this method directly. At activation time, an `IOUserUSBSerial` object automatically creates memory buffers for managing data moving to and from the USB device. Calling this method after activation replaces the default queues with the new ones you provide.
 

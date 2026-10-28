@@ -25,7 +25,7 @@ func awake(fromSnapshotEvents flags: NSSnapshotEventType)
 - (void) awakeFromSnapshotEvents:(NSSnapshotEventType) flags;
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this method to compute derived values or to recreate transient relationships from the receiver’s persistent properties.
 

@@ -23,7 +23,7 @@ var format: UIGraphicsRendererFormat { get }
 @property (nonatomic, readonly) UIGraphicsRendererFormat * format;
 ```
 
-#### Discussion
+## Discussion
 
 If you specified a format object when you initialized the current renderer ([`UIGraphicsRenderer`](../uigraphicsrenderer.md)) object, then this property provides access to that object. Otherwise, a default format object was created for you using the renderer initialization parameters, tuned to the current device.
 

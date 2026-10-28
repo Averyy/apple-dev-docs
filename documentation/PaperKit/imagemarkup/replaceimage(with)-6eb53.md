@@ -19,7 +19,7 @@ Replaces the contents of this image markup with a `CGImage`.
 mutating func replaceImage(with image: CGImage)
 ```
 
-#### Discussion
+## Discussion
 
 Image content is shown scaled to fill.
 

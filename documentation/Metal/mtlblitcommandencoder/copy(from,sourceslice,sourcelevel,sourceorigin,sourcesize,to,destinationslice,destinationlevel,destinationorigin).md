@@ -29,7 +29,7 @@ func copy(from sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int
 
 - [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 
-#### Discussion
+## Discussion
 
 For textures that use a PVRTC pixel format, you can use this method to copy the entire texture, but not a subregion of the texture.
 

@@ -23,7 +23,7 @@ var kDNSServiceType_SPF: Int { get }
 kDNSServiceType_SPF
 ```
 
-#### Discussion
+## Discussion
 
 Sender Policy Framework for E-Mail
 

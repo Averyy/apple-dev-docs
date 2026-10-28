@@ -20,7 +20,7 @@ Creates a skeleton from an array of joints.
 init(id: String, joints: [MeshResource.Skeleton.Joint])
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The order of joints in this array is significant; parents need to precede their children.
 

@@ -24,7 +24,7 @@ class UIActivityIndicatorView
 @interface UIActivityIndicatorView : UIView
 ```
 
-#### Overview
+## Overview
 
 You control when an activity indicator animates by calling the [`startAnimating()`](./uiactivityindicatorview/startanimating%28%29.md) and [`stopAnimating()`](./uiactivityindicatorview/stopanimating%28%29.md) methods. To automatically hide the activity indicator when animation stops, set the [`hidesWhenStopped`](./uiactivityindicatorview/hideswhenstopped.md) property to [`true`](../Swift/true.md).
 

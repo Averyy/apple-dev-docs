@@ -21,7 +21,7 @@ Returns a new numeric factor options structure with the specified properties.
 init(control: SparseControl_t, scalingMethod: SparseScaling_t, scaling: UnsafeMutableRawPointer?, pivotTolerance: Double, zeroTolerance: Double)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Only the symmetric factorization algorithms use the [`pivotTolerance`](./pivottolerance.md) and [`zeroTolerance`](./zerotolerance.md) parameters. [`SparseFactorizationQR`](../sparsefactorizationqr.md) ignores the pivot and zero tolerance values.
 

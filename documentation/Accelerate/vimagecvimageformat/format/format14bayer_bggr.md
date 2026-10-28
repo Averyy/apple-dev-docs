@@ -21,7 +21,7 @@ A little-endian 14-bit Bayer pixel format with even rows ordered blue-green and 
 case format14Bayer_BGGR
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

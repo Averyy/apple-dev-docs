@@ -25,11 +25,11 @@ func CFArrayGetTypeID() -> CFTypeID
 extern CFTypeID CFArrayGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFArray opaque type.
 
-#### Discussion
+## Discussion
 
 CFMutableArray objects have the same type identifier as CFArray objects.
 

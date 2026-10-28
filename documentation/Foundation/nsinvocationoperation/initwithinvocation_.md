@@ -21,11 +21,11 @@ Returns an `NSInvocationOperation` object initialized with the specified invocat
 - (instancetype) initWithInvocation:(NSInvocation *) inv;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSInvocationOperation` object or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer. The receiver tells the invocation object to retain its arguments.
 

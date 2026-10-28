@@ -23,7 +23,7 @@ var tag: Int { get set }
 @property (nonatomic) NSInteger tag;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`.
 

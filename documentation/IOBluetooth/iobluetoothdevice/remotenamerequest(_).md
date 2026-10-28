@@ -19,11 +19,11 @@ func remoteNameRequest(_ target: Any!) -> IOReturn
 - (IOReturn) remoteNameRequest:(id) target;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the remote name request was successfully issued (and if synchronous, if the request completed successfully).
 
-#### Discussion
+## Discussion
 
 If a target is specified, the request is asynchronous and on completion of the request, the method
 

@@ -19,7 +19,7 @@ func choices() -> [Any]!
 - (NSArray *) choices;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings that represent the items in the list or pop-up menu choice widget annotation.
 

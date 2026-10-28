@@ -19,7 +19,7 @@ The service’s response to a request to process a play media intent.
 
 **Allowed Types**: `PlayMediaIntentHandlingResolveMediaItemsInvocationResponse`, `PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse`, `PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse`, `PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse`, `PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse`, `PlayMediaIntentHandlingHandleInvocationResponse`, `ProtocolExceptionInvocationResponse`
 
-#### Discussion
+## Discussion
 
 Allowed types: [`PlayMediaIntentHandlingResolveMediaItemsInvocationResponse`](./playmediaintenthandlingresolvemediaitemsinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse`](./playmediaintenthandlingresolveplayshuffledinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse`](./playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse`](./playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.md), [`PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse`](./playmediaintenthandlingresolveresumeplaybackinvocationresponse.md), [`PlayMediaIntentHandlingHandleInvocationResponse`](./playmediaintenthandlinghandleinvocationresponse.md), [`ProtocolExceptionInvocationResponse`](./protocolexceptioninvocationresponse.md)
 

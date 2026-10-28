@@ -15,7 +15,7 @@ An event that indicates the state of the transport bar has changed.
 attribute  transportBarVisibilityDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 The listener is passed an event object with the following attributes:
 

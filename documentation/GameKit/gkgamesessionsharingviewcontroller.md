@@ -21,7 +21,7 @@ class GKGameSessionSharingViewController
 @interface GKGameSessionSharingViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 The sharing view controller on tvOS presents a user’s Game Center friend list, along with other people with whom the user has recently played the game. Users can select a person from the list and send them an invite using the Send button.
 

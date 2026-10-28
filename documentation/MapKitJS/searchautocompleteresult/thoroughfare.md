@@ -15,7 +15,7 @@ The street name at the place.
 thoroughfare: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`thoroughfare`](./thoroughfare.md) for the Golden Gate Park is `"John F Kennedy Dr"`.
 

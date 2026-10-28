@@ -23,7 +23,7 @@ case success
 INListRideOptionsIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you are successfully able to provide the ride option information.
 

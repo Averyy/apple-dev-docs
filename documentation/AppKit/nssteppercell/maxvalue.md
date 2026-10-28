@@ -19,7 +19,7 @@ var maxValue: Double { get set }
 @property double maxValue;
 ```
 
-#### Discussion
+## Discussion
 
 The default is 59.
 

@@ -28,7 +28,7 @@ struct LazyHStack<Content> where Content : View
 - [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 
-#### Overview
+## Overview
 
 The stack is “lazy,” in that the stack view doesn’t create items until it needs to render them onscreen.
 

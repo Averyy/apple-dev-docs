@@ -19,7 +19,7 @@ func sendAction() -> Bool
 - (BOOL) sendAction;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the font manager’s action message is [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md). The value of this property is [`true`](../../Swift/true.md) if some responder object handled the [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md) message or [`false`](../../Swift/false.md) if the message went unheard.
 

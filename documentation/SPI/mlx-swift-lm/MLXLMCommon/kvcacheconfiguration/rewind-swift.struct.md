@@ -17,7 +17,7 @@ Extra historical rows retained by rotating caches for exact prefix rewinds.
 struct Rewind
 ```
 
-#### Overview
+## Overview
 
 This adds storage beyond each attention window without widening attention. Rewinds beyond the available history still require rebuilding the cache.
 

@@ -12,7 +12,7 @@ IOReturn checkMemoryInRange(
  IOMemoryDescriptor *memory );
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess on success
 

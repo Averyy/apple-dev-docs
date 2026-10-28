@@ -24,7 +24,7 @@ var mass: CGFloat { get set }
 @property CGFloat mass;
 ```
 
-#### Discussion
+## Discussion
 
 The default mass is `1`. Increasing this value will increase the spring effect: the attached object will be subject to more oscillations and greater overshoot, resulting in an increased [`settlingDuration`](./settlingduration.md). Decreasing the mass will reduce the spring effect: there will be fewer oscillations and a reduced overshoot, resulting in a decreased [`settlingDuration`](./settlingduration.md).
 

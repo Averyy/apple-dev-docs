@@ -20,11 +20,11 @@ var labelFont: NSFont? { get set }
 @property (nonatomic, copy, nullable) NSFont * labelFont;
 ```
 
-#### Return Value
+## Return Value
 
 The font used in the thumbnail labels.
 
-#### Discussion
+## Discussion
 
 Typically, the label of a thumbnail is the page number of the page it represents.
 

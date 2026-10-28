@@ -19,7 +19,7 @@ The app’s preference for whether it wants to use external graphics processors.
 - `avoidRemovable`: Metal tries to avoid creating contexts on external GPUs. For legacy OpenGL apps, OpenGL also avoids creating contexts using external GPUs. Set this option only if your app doesn’t support external GPU event handling.
 - `preferRemovable`: If external GPUs are visible to the system, Metal prefers them over other GPUs. Similarly, for legacy OpenGL apps, OpenGL also prefers to create contexts on the external GPU.
 
-#### Discussion
+## Discussion
 
 This key is optional.
 

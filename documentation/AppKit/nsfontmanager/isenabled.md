@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the font conversion system’s user interface items (the Font panel and Font menu items) are enabled; when the value is [`false`](../../Swift/false.md), these items are not enabled.
 

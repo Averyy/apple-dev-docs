@@ -21,7 +21,7 @@ Generates a new random UUID.
 static func random(using generator: inout some RandomNumberGenerator) -> UUID
 ```
 
-#### Return Value
+## Return Value
 
 A random UUID.
 

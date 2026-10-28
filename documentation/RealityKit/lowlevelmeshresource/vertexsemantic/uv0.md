@@ -18,7 +18,7 @@ The semantic for the first UV channel (UV0).
 case uv0
 ```
 
-#### Discussion
+## Discussion
 
 Standard materials interpret `uv0` as a texture coordinate.
 

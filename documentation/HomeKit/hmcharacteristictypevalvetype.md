@@ -24,7 +24,7 @@ let HMCharacteristicTypeValveType: String
 extern NSString * const HMCharacteristicTypeValveType;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueValveType`](./hmcharacteristicvaluevalvetype.md) enumeration.
 

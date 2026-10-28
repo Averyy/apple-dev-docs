@@ -20,7 +20,7 @@ An object that holds a set of scattering data.
 struct Scattering
 ```
 
-#### Overview
+## Overview
 
 The scattering coefficient is a value between zero and one that describes the proportion of incident sound energy that is diffused or redirected by a surface, rather than absorbed.
 

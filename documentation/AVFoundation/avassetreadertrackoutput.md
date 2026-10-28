@@ -24,7 +24,7 @@ class AVAssetReaderTrackOutput
 @interface AVAssetReaderTrackOutput : AVAssetReaderOutput
 ```
 
-#### Overview
+## Overview
 
 Read the media data of an asset track by adding a track output to an asset reader. You can read the media samples in their stored format, or you can convert them to an alternative format.
 

@@ -19,7 +19,7 @@ func beginPage(in rect: NSRect, atPlacement location: NSPoint)
 - (void) beginPageInRect:(NSRect) rect atPlacement:(NSPoint) location;
 ```
 
-#### Discussion
+## Discussion
 
 If you override this method, be sure to call the superclass implementation.
 

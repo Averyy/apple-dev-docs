@@ -15,11 +15,11 @@ Paginated response object for the supported app languages query.
 object AppSupportedLanguagesQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `AppSupportedLanguagesQueryResponse` object is the top-level envelope returned by [`Query Supported App Languages`](./query-supported-app-languages.md).
 
-##### Example
+### Example
 
 ```json
 {

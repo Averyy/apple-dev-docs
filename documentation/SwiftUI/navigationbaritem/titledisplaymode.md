@@ -20,7 +20,7 @@ A style for displaying the title of a navigation bar.
 enum TitleDisplayMode
 ```
 
-#### Overview
+## Overview
 
 Use one of these values with the [`navigationBarTitleDisplayMode(_:)`](../view/navigationbartitledisplaymode%28_%29.md) view modifier to configure the title of a navigation bar.
 

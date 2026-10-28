@@ -20,7 +20,7 @@ Anchors the entity to the target on the first frame the target is found.
 static let once: AnchoringComponent.TrackingMode
 ```
 
-#### Discussion
+## Discussion
 
 `once` means the `Entity` transform is evaluated only once when the target anchor presents and the `Entity` is anchored.
 

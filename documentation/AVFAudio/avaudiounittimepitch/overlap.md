@@ -24,7 +24,7 @@ var overlap: Float { get set }
 @property (nonatomic) float overlap;
 ```
 
-#### Discussion
+## Discussion
 
 A higher value results in fewer artifacts in the output signal. The default value is `8.0`. The range of values is `3.0` to `32.0`.
 

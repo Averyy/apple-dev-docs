@@ -21,11 +21,11 @@ func NSReadPixel(_ passedPoint: NSPoint) -> NSColor?
 extern NSColor *NSReadPixel(NSPoint passedPoint);
 ```
 
-#### Return Value
+## Return Value
 
 The color of the pixel at the specified location.
 
-#### Discussion
+## Discussion
 
 Because the `passedPoint` parameter is relative to the current coordinate system, if you wish to read a pixel from a specific view, you must convert points in the view’s coordinate system to the current coordinate system before calling this function. Alternatively, you can lock focus on the view and then specify the pixel coordinate in the view’s coordinate system.
 

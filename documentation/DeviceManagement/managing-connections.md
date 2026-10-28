@@ -5,13 +5,13 @@
 
 Establish or remove a connection between a device and your device management service.
 
-#### Overview
+## Overview
 
 Device management begins when you set up a service and distribute your device management (MDM) enrollment profile to devices to initiate connecting them. Then, you can send commands to managed devices to get detailed information about the device, install apps and books, and more.
 
 After a device installs a device management (MDM) enrollment profile and connects to the service, it can receive commands from the service. When you remove the device management (MDM) enrollment profile from a device, that terminates the device management relationship with the device management service.
 
-#### Create a new device management connection
+## Create a new device management connection
 
 A connection between your device management service and a device enables you to send commands to the device that it executes and reports back the results. A device management service and a device complete the following steps to establish a connection:
 
@@ -26,7 +26,7 @@ The device presents its identity certificate to the device management service fo
 
 > **Note**:  Although device management uses `UDID`s, they’re deprecated in iOS. A `UDID` may contain special characters, such as dashes, and its length isn’t guaranteed.
 
-#### Handle device restores
+## Handle device restores
 
 A user can restore their connected device from a backup. If the backup contains a device management (MDM) enrollment profile, the system restores management of the device, and the device schedules delivery of a [`TokenUpdateRequest`](./tokenupdaterequest.md) check-in message to the device management service. However, if the user restores the backup to a different device, the system won’t restore device management.
 
@@ -34,7 +34,7 @@ Your device management service can either accept the device by replying with a `
 
 > 💡 **Tip**:  Configure your service to respond with a `401` HTTP status code to any device that it isn’t actively managing.
 
-#### Terminate management of a device
+## Terminate management of a device
 
 Terminate a management relationship with a device by performing one of these actions:
 

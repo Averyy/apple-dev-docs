@@ -22,7 +22,7 @@ case iconAndLabel
 UIPasteControlDisplayModeIconAndLabel
 ```
 
-#### Discussion
+## Discussion
 
 The icon looks like a sheet of paper above a clipboard, and the label’s text reads “Paste”.
 

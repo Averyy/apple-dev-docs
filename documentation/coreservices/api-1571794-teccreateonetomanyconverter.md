@@ -15,11 +15,11 @@ Determines a conversion path for the source encoding anddestinations encodings y
 OSStatus TECCreateOneToManyConverter(TECObjectRef *newEncodingConverter, TextEncoding inputEncoding, ItemCount numOutputEncodings, const TextEncoding outputEncodings[]);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You use this converter object reference with conversion functionssuch as  [`TECConvertTextToMultipleEncodings`](./api-1571849-tecconverttexttomultipleencoding.md).The converter object describes the source, destination, and intermediateencodings; state information; and references to required plug-ins.
 

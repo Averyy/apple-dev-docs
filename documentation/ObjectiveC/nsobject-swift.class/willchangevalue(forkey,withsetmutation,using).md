@@ -25,13 +25,13 @@ func willChangeValue(forKey key: String, withSetMutation mutationKind: NSKeyValu
 - (void) willChangeValueForKey:(NSString *) key withSetMutation:(NSKeyValueSetMutationKind) mutationKind usingObjects:(NSSet *) objects;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when implementing key-value observer compliance manually.
 
 > ❗ **Important**:  After the values have been changed, a corresponding [`didChangeValue(forKey:withSetMutation:using:)`](./didchangevalue%28forkey,withsetmutation,using%29.md) must be invoked with the same parameters.
 
-##### Special Considerations
+### Special Considerations
 
 You rarely need to override this method in subclasses, but if you do, be sure to call `super`.
 

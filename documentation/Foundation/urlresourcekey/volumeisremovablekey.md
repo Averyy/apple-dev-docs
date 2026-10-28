@@ -25,7 +25,7 @@ static let volumeIsRemovableKey: URLResourceKey
 extern NSURLResourceKey const NSURLVolumeIsRemovableKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean `NSNumber` object.
 

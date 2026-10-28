@@ -23,7 +23,7 @@ let kCFCoreFoundationVersionNumber: Double
 extern const double kCFCoreFoundationVersionNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The current version of the Core Foundation framework. Compare this value to the values in [Framework Version Numbers](./framework-version-numbers.md).Although this variable was added to the CFBase.h header file in OS X v10.1, it was available and can be used in OS X v10.0.
 

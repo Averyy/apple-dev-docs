@@ -25,7 +25,7 @@ class let assetListResponseStatusDidChangeEventKey: String
 extern NSString * const AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeEventKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to retrieve the [`AVPlayerInterstitialEvent`](../avplayerinterstitialevent.md) object that has an updates asset list response.
 

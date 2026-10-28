@@ -5,7 +5,7 @@
 
 Access classes and other declarations from your Objective-C code in Swift.
 
-#### Overview
+## Overview
 
 You can use Objective-C and Swift files together in a single project, no matter which language the project used originally. This makes creating mixed-language app and framework targets as straightforward as creating an app or framework target written in a single language.
 
@@ -13,7 +13,7 @@ You can use Objective-C and Swift files together in a single project, no matter 
 
 The process for using your Objective-C declarations from your Swift code within mixed-language targets differs slightly depending on whether you’re writing an app or a framework. Both processes are described below.
 
-##### Import Code Within an App Target
+### Import Code Within an App Target
 
 To import a set of Objective-C files into Swift code within the same app target, you rely on an Objective-C bridging header file to expose those files to Swift. Xcode offers to create this header when you add a Swift file to an existing Objective-C app, or an Objective-C file to an existing Swift app.
 
@@ -28,7 +28,7 @@ Edit the bridging header to expose your Objective-C code to your Swift code:
 
 Any public Objective-C headers listed in the bridging header are visible to Swift. The Objective-C declarations are automatically available from any Swift file within that target, with no import statements. Use classes and other declarations from your custom Objective-C code with the same Swift syntax you use for system classes.
 
-##### Import Code Within a Framework Target
+### Import Code Within a Framework Target
 
 To use the Objective-C declarations in files in the same framework target as your Swift code, configure an umbrella header as follows:
 

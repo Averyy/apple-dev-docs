@@ -21,7 +21,7 @@ The output duration of the sample buffer.
 var outputDuration: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the duration of decoded, trimmed and stretched samples. It is calculated as: `(Duration - TrimDurationAtStart - TrimDurationAtEnd) / SpeedMultiplier`.
 

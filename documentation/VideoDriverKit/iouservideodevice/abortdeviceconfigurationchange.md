@@ -15,7 +15,7 @@ The host calls this method to tell the driver not to perform a configuration cha
 virtual kern_return_t AbortDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t value indicating success or failure.
 

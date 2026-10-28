@@ -17,7 +17,7 @@ Intializes an NFC tag reader session.
 - (instancetype) initWithPollingOption:(NFCPollingOption) pollingOption delegate:(id<NFCTagReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized NFC tag reader session.
 

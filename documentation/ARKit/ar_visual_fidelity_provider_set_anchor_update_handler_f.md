@@ -15,7 +15,7 @@ Set the function for receiving field of view anchor updates.
 extern void ar_visual_fidelity_provider_set_anchor_update_handler_f(ar_visual_fidelity_provider_t visual_fidelity_data_provider, dispatch_queue_t anchor_updates_queue, void *context, ar_field_of_view_anchor_update_handler_function_t anchor_update_handler_function);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Setting this function will override the handler set using `ar_visual_fidelity_provider_set_anchor_update_handler`.
 

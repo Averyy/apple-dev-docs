@@ -19,11 +19,11 @@ init?(name: String, authority: CBIdentityAuthority)
 + (CBIdentity *) identityWithName:(NSString *) name authority:(CBIdentityAuthority *) authority;
 ```
 
-#### Return Value
+## Return Value
 
 The identity object, or `nil` if no identity is found with the specified name.
 
-#### Discussion
+## Discussion
 
 The name is compared against all valid identity names, including full names, short names, email addresses, and aliases.
 

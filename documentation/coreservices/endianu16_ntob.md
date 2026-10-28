@@ -16,7 +16,7 @@ Converts an unsigned 16-bit value in the computer’snative format to the equiva
 #define EndianU16_NtoB(value)
 ```
 
-#### Return Value
+## Return Value
 
 The equivalent big-endianvalue.
 

@@ -19,7 +19,7 @@ var transferMode: IKScannerDeviceViewTransferMode { get set }
 @property IKScannerDeviceViewTransferMode transferMode;
 ```
 
-#### Discussion
+## Discussion
 
 The supported constants are defined in [`IKScannerDeviceViewTransferMode`](../ikscannerdeviceviewtransfermode.md).
 

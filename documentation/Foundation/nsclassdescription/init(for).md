@@ -20,11 +20,11 @@ init?(for aClass: AnyClass)
 + (NSClassDescription *) classDescriptionForClass:(Class) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class description for `aClass`, or `nil` if a class description cannot be found.
 
-#### Discussion
+## Discussion
 
 If a class description for `aClass` is not found, the method posts an NSClassDescriptionNeededForClassNotification on behalf of `aClass`, allowing an observer to register a class description. The method then checks for a class description again. Returns `nil` if a class description is still not found.
 

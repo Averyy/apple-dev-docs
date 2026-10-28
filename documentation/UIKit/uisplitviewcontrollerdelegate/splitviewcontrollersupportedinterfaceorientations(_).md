@@ -22,11 +22,11 @@ optional func splitViewControllerSupportedInterfaceOrientations(_ splitViewContr
 - (UIInterfaceOrientationMask) splitViewControllerSupportedInterfaceOrientations:(UISplitViewController *) splitViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The orientations that you want the specified split view controller to support. The value you return can be one or more of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants.
 
-#### Discussion
+## Discussion
 
 The split view controller calls this method to obtain the orientations that it supports. You can use this method to alter the set of orientations typically supported by a split view controller. If you don’t implement this method, the split view controller supports all orientations on iPad and all but the [`allButUpsideDown`](../uiinterfaceorientationmask/allbutupsidedown.md) orientation on iPhone devices.
 

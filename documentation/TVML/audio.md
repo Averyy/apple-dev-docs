@@ -4,7 +4,7 @@
 
 Plays background audio for a full-page template when the template is the top-most document in the navigation stack.
 
-#### Overview
+## Overview
 
 Each document page that plays audio in the background must have its own `audio` element. If the same URL is used between pages, audio will continue to play when the new page is displayed. The `audio` element only supports unencrypted audio.
 
@@ -14,11 +14,11 @@ Each document page that plays audio in the background must have its own `audio` 
 </audio>
 ```
 
-##### Subelements of audio
+### Subelements of audio
 
 - [asset](./asset.md)
 
-##### Elements that Use audio
+### Elements that Use audio
 
 - [background](./background.md)
 

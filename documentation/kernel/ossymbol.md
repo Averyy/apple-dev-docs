@@ -15,7 +15,7 @@ OSSymbol wraps a C string in a unique C++ object for use as keys in Libkern coll
 class OSSymbol : OSString
 ```
 
-#### Overview
+## Overview
 
 OSSymbol is a container class for managing uniqued strings, for example, those used as dictionary keys. Its static instance-creation functions check for an existing instance of OSSymbol with the requested C string value before creating a new object. If an instance already exists in the pool of unique symbols, its reference count is incremented and the existing instance is returned.
 

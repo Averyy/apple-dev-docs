@@ -5,7 +5,7 @@
 
 Submit versions of your app to App Review.
 
-#### Overview
+## Overview
 
 An `appStoreVersionSubmissions` resource enables you to submit a version of your app to App Review. This resource is the equivalent of clicking the Submit for Review button in the App Store Connect UI.
 

@@ -22,7 +22,7 @@ Loads a new instance of the music item that includes the specified properties.
 func with(_ properties: PartialMusicAsyncProperty<Self>..., preferredSource: MusicPropertySource) async throws -> Self
 ```
 
-#### Discussion
+## Discussion
 
 This asynchronous method fetches a more complete representation of the receiver, loading the contents for each property you request from either the Apple Music catalog or the user’s library, depending on the preferred source as well the availability of the content in those respective data sources.
 

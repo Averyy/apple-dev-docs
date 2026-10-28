@@ -30,7 +30,7 @@ class UISlider
 - [Attaching gesture recognizers to UIKit controls](./attaching-gesture-recognizers-to-uikit-controls.md)
 - [Responding to control-based events using target-action](./responding-to-control-based-events-using-target-action.md)
 
-#### Overview
+## Overview
 
 As you move the *thumb* of a slider, it passes its updated value to any actions attached to it. The appearance of sliders is configurable; you can tint the track and the thumb, and provide images to appear at the ends of the slider. You can add sliders to your interface programmatically or by using Interface Builder.
 
@@ -45,7 +45,7 @@ To add a slider to your interface:
 - Connect one or more action methods to the slider.
 - Set up Auto Layout rules to govern the size and position of the slider in your interface.
 
-##### Respond to user interaction
+### Respond to user interaction
 
 Sliders use the target-action design pattern to notify your app when the user moves the slider. To be notified when the slider’s value changes, register your action method with the [`valueChanged`](./uicontrol/event/valuechanged.md) event. At runtime, the slider calls your method in response to the user changing the slider’s value.
 
@@ -69,7 +69,7 @@ You connect a slider to your action method by using the [`addTarget(_:action:for
 - (IBAction)doSomething:(id)sender forEvent:(UIEvent*)event;
 ```
 
-##### Debug sliders
+### Debug sliders
 
 When debugging issues with sliders, follow these tips to avoid common pitfalls:
 
@@ -77,7 +77,7 @@ When debugging issues with sliders, follow these tips to avoid common pitfalls:
 - **The current value must be between the minimum and maximum values.** If you try to programmatically set a slider’s current value to be below the minimum or above the maximum, it’s set to the minimum or maximum instead. However, if you set the value beyond the range of the minimum or maximum in Interface Builder, the minimum or minimum values are updated instead.
 - **Set custom images for all control states.** If you use custom track and thumb images for your slider, remember to set an image for every possible [`UIControl.State`](./uicontrol/state-swift.struct.md). Any control state that doesn’t have a corresponding custom image assigned to it displays the standard image instead. If you set one custom image, be sure to set them all.
 
-##### Configure slider attributes in Interface Builder
+### Configure slider attributes in Interface Builder
 
 The following table lists the core attributes that you configure for sliders in Interface Builder.
 
@@ -104,7 +104,7 @@ The following table lists the attributes that configure the events associated wi
 
 For information about the sliders’s inherited Interface Builder attributes, see [`UIControl`](./uicontrol.md) and [`UIView`](./uiview.md).
 
-##### Customize the slider’s appearance
+### Customize the slider’s appearance
 
 Use Auto Layout to specify the position and width of a slider. The intrinsic height is determined by the intrinsic heights of the minimum and maximum images, if present. The width of the track automatically adjusts to accommodate the minimum and maximum images.
 
@@ -124,7 +124,7 @@ To completely change the appearance of the slider, you can specify images for th
 
 ![Image of a slider with custom track and thumb images.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2555497@2x.png)
 
-##### Provide localized strings
+### Provide localized strings
 
 Sliders have no special properties related to internationalization. However, if you use a slider with a label, make sure you provide localized strings for the label.
 
@@ -132,7 +132,7 @@ Sliders automatically adjust to the appropriate interface direction, ensuring th
 
 For more information, see [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i).
 
-##### Make sliders accessible
+### Make sliders accessible
 
 Sliders are accessible by default. The default accessibility traits for a slider are User Interaction Enabled and Adjustable.
 

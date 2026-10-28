@@ -19,7 +19,7 @@ var currentFontAction: NSFontAction { get }
 @property (readonly) NSFontAction currentFontAction;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents the current font action used by the [`convert(_:)`](./convert%28_%29.md) method. This property is intended to be used to query the font conversion action while the action message (usually [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md)) is being invoked.
 

@@ -20,11 +20,11 @@ func nodeDetails(forKeys inKeys: [Any]!) throws -> [AnyHashable : Any]
 - (NSDictionary *) nodeDetailsForKeys:(NSArray *) inKeys error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing details about the node corresponding to keys specified by `inKeys`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

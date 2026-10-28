@@ -19,7 +19,7 @@ final func accept<Handler>(_ sessionRequestHandler: () -> Handler) -> AccessoryS
 
 - [Receiving iOS notifications on an accessory](../../receiving-ios-notifications-on-an-accessory.md)
 
-#### Discussion
+## Discussion
 
 The system invokes the handler with security events throughout the key exchange process.
 

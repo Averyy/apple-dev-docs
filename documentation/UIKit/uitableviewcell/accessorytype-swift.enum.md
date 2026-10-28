@@ -27,7 +27,7 @@ enum UITableViewCellAccessoryType : NSInteger;
 
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
-#### Overview
+## Overview
 
 Use these constants to set the value of the [`accessoryType`](./accessorytype-swift.property.md) property.
 

@@ -15,7 +15,7 @@ A set of modifications to apply to the default set of available playback control
 object PlayMediaControlCommandSet
 ```
 
-#### Discussion
+## Discussion
 
 Provide `true` to enable a control that isn’t available by default in the current [`PlayMediaControlScheme`](./playmediacontrolscheme.md), and `false` to disable a control that’s available by default in the `PlayMediaControlScheme`. Omit entries for any controls that need to respect the default behavior of the current scheme.
 

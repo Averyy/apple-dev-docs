@@ -16,7 +16,7 @@ A key that specifies the primary usage page of the device.
 #define kIOHIDPrimaryUsagePageKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is the number for a HID usage page.
 

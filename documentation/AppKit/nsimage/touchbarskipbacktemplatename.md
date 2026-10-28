@@ -22,7 +22,7 @@ class let touchBarSkipBackTemplateName: String
 extern NSImageName const NSImageNameTouchBarSkipBackTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for skip back](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793516@2x.png)
 

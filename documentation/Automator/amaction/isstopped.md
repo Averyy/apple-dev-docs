@@ -20,7 +20,7 @@ var isStopped: Bool { get }
 @property (nonatomic, readonly, getter=isStopped) BOOL stopped;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the user clicked the stop button, or [`false`](../../Swift/false.md) if the workflow is still running. This property should be referenced during lengthy action processes, such as a loop, in order to determine whether to exit the operation and stop the action.
 

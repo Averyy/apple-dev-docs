@@ -23,7 +23,7 @@ enum NSFileManagerResumeSyncBehavior
 enum NSFileManagerResumeSyncBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use this type when calling [`resumeSyncForUbiquitousItem(at:with:completionHandler:)`](./filemanager/resumesyncforubiquitousitem%28at,with,completionhandler%29.md) to resume synchronizing. In most situations, the [`NSFileManagerResumeSyncBehavior.preserveLocalChanges`](./nsfilemanagerresumesyncbehavior/preservelocalchanges.md) behavior is the best choice to avoid risk of data loss.
 

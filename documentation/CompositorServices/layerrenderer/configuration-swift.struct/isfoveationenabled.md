@@ -20,7 +20,7 @@ var isFoveationEnabled: Bool { get set }
 
 - [Defining layer renderer quality](../../defining-layer-renderer-quality.md)
 
-#### Discussion
+## Discussion
 
 Foveation support lets you reduce the amount of high-resolution drawing you do. With foveation, the system renders content someone looks at directly using a higher resolution than content in the person’s peripheral vision. This behavior lets you render less content without diminishing the quality of what the person sees.
 

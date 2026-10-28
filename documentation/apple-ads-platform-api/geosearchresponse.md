@@ -15,7 +15,7 @@ Response envelope for the geo location search endpoints.
 object GeoSearchResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `GeoSearchResponse` object is the response envelope for both `GET /v1/search/geo` ([`Search Geo Locations`](./searches-for-a-list-of-geo-locations.md)) and `POST /v1/search/geo` ([`Query Geo Locations`](./gets-a-list-of-geo-locations.md)). The `result` array contains [`SearchEntity`](./searchentity.md) objects sorted alphabetically by `displayName`. To determine how many pages of results are available and iterate using `offset`, use the `pagination.totalCount` value.
 
@@ -23,7 +23,7 @@ Each `SearchEntity` in the array includes `id` (numeric string, use as targeting
 
 If the request is invalid, for example an unknown supply source or a query string shorter than two characters, the API returns an HTTP error status with a structured error body rather than this response.
 
-##### Example
+### Example
 
 ```json
 {

@@ -28,7 +28,7 @@ func requestImport(for metadata: BEImportMetadata) async throws -> BEImportOptio
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 Call this method when someone interacts with your browser app’s UI to import browsing data from another browser app.
 

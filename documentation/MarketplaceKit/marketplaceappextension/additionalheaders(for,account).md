@@ -22,7 +22,7 @@ func additionalHeaders(for request: URLRequest, account: String) async -> [Strin
 - [Reauthenticating a person to manage apps](../reauthenticating-a-person-to-manage-apps.md)
 - [Installing apps from an alternative marketplace](../installing-apps-from-an-alternative-marketplace.md)
 
-#### Discussion
+## Discussion
 
 The operating system invokes your implementation of this callback before sending a request to your marketplace endpoints. In this method, use [`addValue(_:forHTTPHeaderField:)`](../../Foundation/urlrequest/addvalue%28_,forhttpheaderfield%29.md) to add to the header. The additions detail information that your marketplace server needs to authorize the request.
 

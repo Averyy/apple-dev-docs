@@ -19,7 +19,7 @@ func mouseDown(with event: NSEvent)
 - (void) mouseDown:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 A mouse-down event in a text cell initiates editing mode. A double click in any cell type except a text cell sends the double-click action of the receiver (if there is one) in addition to the single-click action.
 

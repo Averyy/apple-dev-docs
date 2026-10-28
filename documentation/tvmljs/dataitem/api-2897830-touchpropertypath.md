@@ -17,7 +17,7 @@ void touchPropertyPath(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The property path is explicitly updated, and all bound objects are notified.
 

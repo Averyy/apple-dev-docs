@@ -5,7 +5,7 @@
 
 Adopt the single-target configuration to simplify your project and avoid ambiguity about where to store resources and apply entitlements.
 
-#### Overview
+## Overview
 
 A watchOS app has one of the following project configurations:
 
@@ -18,7 +18,7 @@ Single-target apps have a simpler project configuration and avoid ambiguity abou
 
 When the minimum deployment target is watchOS 9.2 or later, building a dual-target app with Xcode produces an error, and prompts you to migrate to a single-target app using the built-in migrator. Building a single-target app that still uses the  [WKExtension](../WatchKit/wkextension.md) APIs produces warnings that guide you to replace the APIs with the [WKApplication](../WatchKit/wkapplication.md) counterparts. If you have a dual-target watchOS app, migrate it to a single-target app.
 
-#### Convert a dual-target app to a single-target app
+## Convert a dual-target app to a single-target app
 
 Follow these steps to convert your app:
 
@@ -32,7 +32,7 @@ Follow these steps to convert your app:
 
 The second step removes the WatchKit extension target and moves its source code and resources to the watchOS app target. At the code level, it replaces [`WKExtension`](../WatchKit/wkextension.md) and [WKExtensionDelegate](../WatchKit/wkextensiondelegate.md) with [`WKApplication`](../WatchKit/wkapplication.md) and [WKApplicationDelegate](../WatchKit/wkapplicationdelegate.md).
 
-It also updates the watchOS app target’s information property list as needed. For example, if your watchOS app has a complication, it moves the complication controller class, which is specified with [CLKComplicationPrincipalClass](../BundleResources/information_property_list/clkcomplicationprincipalclass.md), to the watchOS app target, and adds the `CLKComplicationPrincipalClass` and [CLKComplicationSupportedFamilies](../BundleResources/information_property_list/clkcomplicationsupportedfamilies.md) entries to the watchOS app’s information property list.
+It also updates the watchOS app target’s information property list as needed. For example, if your watchOS app has a complication, it moves the complication controller class, which is specified with [CLKComplicationPrincipalClass](../BundleResources/information-property-list/clkcomplicationprincipalclass.md), to the watchOS app target, and adds the `CLKComplicationPrincipalClass` and [CLKComplicationSupportedFamilies](../BundleResources/information-property-list/clkcomplicationsupportedfamilies.md) entries to the watchOS app’s information property list.
 
 ## See Also
 

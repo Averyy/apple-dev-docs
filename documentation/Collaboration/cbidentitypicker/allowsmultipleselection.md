@@ -19,7 +19,7 @@ var allowsMultipleSelection: Bool { get set }
 @property (nonatomic, readwrite) BOOL allowsMultipleSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the user can select multiple records; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 

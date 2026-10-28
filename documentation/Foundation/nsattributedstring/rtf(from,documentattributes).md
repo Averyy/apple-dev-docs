@@ -19,11 +19,11 @@ func rtf(from range: NSRange, documentAttributes dict: [NSAttributedString.Docum
 - (NSData *) RTFFromRange:(NSRange) range documentAttributes:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing an RTF stream for the attributed string.
 
-#### Discussion
+## Discussion
 
 Writes the document-level attributes in `docAttributes`, as explained in [RTF Files and Attributed Strings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextAttributes/RTFAndAttrStrings.html#//apple_ref/doc/uid/20000164).
 

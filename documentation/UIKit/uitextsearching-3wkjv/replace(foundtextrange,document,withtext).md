@@ -19,7 +19,7 @@ Informs the searchable object to replace the text range for the highlighted sear
 func replace(foundTextRange: UITextRange, document: Self.DocumentIdentifier?, withText: String)
 ```
 
-#### Discussion
+## Discussion
 
 When [`supportsTextReplacement`](./supportstextreplacement.md) returns `YES,` the system calls this method during a find session to request a text range to replace.
 

@@ -5,7 +5,7 @@
 
 Update your app to receive scene-based life-cycle events and manage your user interface using scene objects and methods.
 
-#### Overview
+## Overview
 
 A scene represents an instance of your app’s user interface. In a document-based app, such as a text editor, each open document can be displayed in its own scene, enabling users to work on multiple documents side by side.
 
@@ -27,14 +27,14 @@ In the next major release following iOS 26, UIScene lifecycle will be required w
 
 This guide will help you add scene support to your app so you can receive scene-specific life-cycle events from UIKit and manage your user interface using scene objects and methods. For more information about how to configure scene support, see [Specifying the scenes your app supports](../UIKit/specifying-the-scenes-your-app-supports.md).
 
-#### Determine if your app should migrate
+## Determine if your app should migrate
 
 Migrate to the scene-based life-cycle if your app meets either of the following conditions:
 
 - The [`UIApplicationSceneManifest`](../BundleResources/information-property-list/uiapplicationscenemanifest.md) key is missing from your [`Info.plist`](../BundleResources/information-property-list.md) or it has no specified configurations.
 - You haven’t implemented the [`application(_:configurationForConnecting:options:)`](../UIKit/uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) method in your app delegate.
 
-#### Understand the scene-based life-cycle
+## Understand the scene-based life-cycle
 
 A scene contains the windows and view controllers for presenting one instance of your UI. UIKit manages each instance of your app’s UI using a [`UIWindowScene`](../UIKit/uiwindowscene.md) object.
 
@@ -55,13 +55,13 @@ Unlike the `UIApplicationDelegate` object, which manages a single app-wide life-
 - The application life cycle, such as when your app process launches.
 - The life cycle of when an app has UI visible on screen, embodied by a scene.
 
-#### Adopt the scene-based life cycle
+## Adopt the scene-based life cycle
 
 The simplest way to configure your app’s scenes is to add a `UIApplicationSceneManifest` key with a scene configuration in the `Info.plist` file.
 
 Apps that require dynamic scene configurations, such as supporting multiple scenes, customizing scenes based on user activities, or handling different scene roles can implement the `application(_:configurationForConnecting:options:)` method in the app delegate.
 
-##### Configure the Info.plist for scene support
+### Configure the Info.plist for scene support
 
 To configure your `Info.plist` for scene support, you should add a `UIApplicationSceneManifest` key with a scene configuration:
 
@@ -99,7 +99,7 @@ For example:
 
 To support multiple scenes, include the [`UIApplicationSupportsMultipleScenes`](../BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md) key with its `Boolean` value set to `true`, which indicates that the app supports two or more scenes simultaneously. Each `UISceneConfiguration` should have a unique configuration name when supporting multiple scenes.
 
-##### Provide scene configurations from your app delegate for dynamic configuration
+### Provide scene configurations from your app delegate for dynamic configuration
 
 Implement the `application(_:configurationForConnecting:options:)` method in your app delegate if you don’t include scene-configuration data in your app’s `Info.plist` file or if your app requires dynamic scene configuration—such as, loading different scenes based on user activity or session specific data.
 
@@ -166,7 +166,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 This example uses a [`UIResponder`](../UIKit/uiresponder.md) subclass conforming to the `UIWindowSceneDelegate` protocol called `SceneDelegate` to create the app’s primary window scene. For more information about how to prepare your app at launch time, see [Responding to the launch of your app](../UIKit/responding-to-the-launch-of-your-app.md).
 
-#### Support external display scenes
+## Support external display scenes
 
 When an [external display](https://support.apple.com/guide/ipad/move-an-app-to-an-external-display-ipad8baf19a7/26/ipados/26) is connected and your app is running on the embedded display, the system may offer your app a scene with the [`windowExternalDisplayNonInteractive`](../UIKit/uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role.
 
@@ -241,7 +241,7 @@ If your app needs to override the system’s screen mirroring or present custom 
 
 For more information about presenting content on connected displays, see [Presenting content on a connected display](../UIKit/presenting-content-on-a-connected-display.md).
 
-#### Migrate app life-cycle logic
+## Migrate app life-cycle logic
 
 Move your app’s existing life-cycle methods from `UIApplicationDelegate` to `UISceneDelegate`:
 
@@ -256,7 +256,7 @@ Migrating to a scene-based life-cycle modernizes your app and helps it to take f
 
 To learn how to respond to state transitions within your app, see [Managing your app’s life cycle](../UIKit/managing-your-app-s-life-cycle.md).
 
-#### Revision History
+## Revision History
 
 - **2026-03-16** Added information about supporting external display scenes.
 - **2025-06-23** Added information about the requirements in the major release following iOS 26.

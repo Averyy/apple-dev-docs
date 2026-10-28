@@ -15,7 +15,7 @@ In `MH_OBJECT` files, an offset from the start of the section to the item contai
 int32_t r_address;
 ```
 
-#### Discussion
+## Discussion
 
 In images used by the dynamic linker, this is an offset from the virtual memory address of the data of the first [`segment_command`](../segment_command.md) that appears in the file (not necessarily the one with the lowest address). For images with the `MH_SPLIT_SEGS` flag set, this is an offset from the virtual memory address of data of the first read/write [`segment_command`](../segment_command.md).
 

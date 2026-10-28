@@ -24,11 +24,11 @@ class func divideBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) divideBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the divide-blend mode filter to an image. The effect divides the background image color values by the color values of the input image, resulting in the output image.
 

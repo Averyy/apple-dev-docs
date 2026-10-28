@@ -10,7 +10,7 @@
 @property (nonatomic, readonly) unsigned long numberOfDroppedVideoFrames;
 ```
 
-#### Discussion
+## Discussion
 
 [SPI] The total number of frames dropped prior to decoding or dropped because a frame missed its display deadline. Same as numberOfDroppedFrames.
 

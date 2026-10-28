@@ -27,7 +27,7 @@ var numberOfTapsRequired: Int { get set }
 
 - [Handling tap gestures](../handling-tap-gestures.md)
 
-#### Discussion
+## Discussion
 
 The default value is 1.
 

@@ -25,7 +25,7 @@ var shouldStream: Bool { get set }
 @property (nonatomic) BOOL shouldStream;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md), audio players using this source do not preload audio buffer data, instead reading directly from the source file while playing audio. If this value is [`false`](../../Swift/false.md), SceneKit loads audio buffer data upon playing audio from the source.
 

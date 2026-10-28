@@ -25,7 +25,7 @@ func la_remove_attributes(_ object: la_object_t, _ attributes: la_attribute_t)
 extern void la_remove_attributes(la_object_t object, la_attribute_t attributes);
 ```
 
-#### Discussion
+## Discussion
 
 Remove attributes from an la_object_t object.
 

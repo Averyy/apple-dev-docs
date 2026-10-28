@@ -40,7 +40,7 @@ func selectionForWord(at point: NSPoint) -> PDFSelection?
 - (PDFSelection *) selectionForWordAtPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `NULL` if no word contains `point`.
 

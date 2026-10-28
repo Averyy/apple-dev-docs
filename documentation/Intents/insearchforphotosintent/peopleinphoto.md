@@ -33,7 +33,7 @@ var peopleInPhoto: [INPerson]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INPerson *> * peopleInPhoto;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`INPerson`](../inperson.md) objects, your search should return only photos that contain the specified people. Use the operator in the [`peopleInPhotoOperator`](./peopleinphotooperator.md) property to determine whether to search for photos containing all, some, or none of the specified people.
 

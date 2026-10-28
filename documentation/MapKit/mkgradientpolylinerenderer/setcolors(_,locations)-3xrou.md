@@ -19,7 +19,7 @@ Sets the iOS colors and corresponding unit distance values to create gradients.
 func setColors(_ colors: [UIColor], locations: [CGFloat])
 ```
 
-#### Discussion
+## Discussion
 
 The unit distance value of `0` represents the start of the polyline, and `1` represents the end of the polyline. A gradient may have any number of steps along the length of the polyline.
 

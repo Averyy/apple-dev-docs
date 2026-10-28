@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether the print panel is to be displaye
 - (BOOL) showPanels;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the print panel is to be displayed; otherwise, [`false`](../../Swift/false.md).
 

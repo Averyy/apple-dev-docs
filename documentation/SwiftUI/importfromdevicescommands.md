@@ -16,7 +16,7 @@ nonisolated
 struct ImportFromDevicesCommands
 ```
 
-#### Overview
+## Overview
 
 This set of commands adds items based on nearby devices and capabilities, like taking photos or scanning documents. Views can receive imported content from these menu items by using the [`importsItemProviders(_:onImport:)`](./view/importsitemproviders%28_,onimport%29.md) modifier.
 

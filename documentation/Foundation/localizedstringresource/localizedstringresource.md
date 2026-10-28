@@ -21,7 +21,7 @@ A resource that helps provide a description of the instance.
 var localizedStringResource: LocalizedStringResource { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property implements the [`CustomLocalizedStringResourceConvertible`](../customlocalizedstringresourceconvertible.md) protocol, which allows conforming types to provide a [`LocalizedStringResource`](../localizedstringresource.md) that describes the instance.
 

@@ -33,7 +33,7 @@ var value: Int64 { get set }
 @property (atomic, assign) int64_t value;
 ```
 
-#### Discussion
+## Discussion
 
 You can use any algorithm you want to calculate scores in your game. Your game must set the `value` property before reporting a score, otherwise an error is returned.
 

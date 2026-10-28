@@ -19,11 +19,11 @@ func InvokeOSLGetErrDescUPP(_ appDescPtr: UnsafeMutablePointer<UnsafeMutablePoin
 OSErr InvokeOSLGetErrDescUPP(AEDesc **appDescPtr, OSLGetErrDescUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`OSLGetErrDescProcPtr`](./oslgeterrdescprocptr.md) callback function. 
 

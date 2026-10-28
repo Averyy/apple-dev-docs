@@ -5,7 +5,7 @@
 
 Display graphical data in a compact circle.
 
-#### Overview
+## Overview
 
 The graphic circular templates display a compact version of the app’s data.
 

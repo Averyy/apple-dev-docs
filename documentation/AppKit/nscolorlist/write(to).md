@@ -19,7 +19,7 @@ func write(to url: URL?) throws
 - (BOOL) writeToURL:(NSURL *) url error:(NSError **) errPtr;
 ```
 
-#### Discussion
+## Discussion
 
 If `url` represents a directory, this method saves the color list in that directory in a file with the name **`.clr`, where ** is the value of the [`name`](./name-swift.property.md) property. If `url` represents a file, this method saves the color list using the name you provided.
 

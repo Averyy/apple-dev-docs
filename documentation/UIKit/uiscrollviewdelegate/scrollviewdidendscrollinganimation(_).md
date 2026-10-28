@@ -23,7 +23,7 @@ optional func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView)
 - (void) scrollViewDidEndScrollingAnimation:(UIScrollView *) scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view calls this method at the end of its implementations of the [`setContentOffset(_:animated:)`](../uiscrollview/setcontentoffset%28_,animated%29.md) and [`scrollRectToVisible(_:animated:)`](../uiscrollview/scrollrecttovisible%28_,animated%29.md) methods, but only if animations are requested.
 

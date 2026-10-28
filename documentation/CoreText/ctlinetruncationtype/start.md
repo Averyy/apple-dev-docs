@@ -23,7 +23,7 @@ case start
 kCTLineTruncationStart
 ```
 
-#### Discussion
+## Discussion
 
 Truncate the beginning of the line, leaving the end portion visible.
 

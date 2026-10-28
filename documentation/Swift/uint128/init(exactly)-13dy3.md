@@ -21,7 +21,7 @@ Creates an integer from the given floating-point value, if it can be represented
 init?<T>(exactly source: T) where T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 If the value passed as `source` is not representable exactly, the result is `nil`. In the following example, the constant `x` is successfully created from a value of `21.0`, while the attempt to initialize the constant `y` from `21.5` fails:
 

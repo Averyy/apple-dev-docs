@@ -21,11 +21,11 @@ func SSLGetDiffieHellmanParams(_ context: SSLContext, _ dhParams: UnsafeMutableP
 OSStatus SSLGetDiffieHellmanParams(SSLContextRef context, const void **dhParams, size_t *dhParamsLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function returns the parameter block specified in an earlier call to the [`SSLSetDiffieHellmanParams(_:_:_:)`](./sslsetdiffiehellmanparams%28_,_,_%29.md) function. If that function was never called, the `dhParams` parameter returns `NULL` and the `dhParamsLen` parameter returns `0`.
 

@@ -4,13 +4,13 @@
 
 References a media representation, that is either the original or a proxy media managed by Final Cut Pro.
 
-#### Overview
+## Overview
 
 A media that Final Cut Pro manages in its library can have a proxy media representation, in addition to the original media representation. Use the `media-rep` element to describe a media representation, as a child element of the `asset` element.
 
 > **Note**:  The `media-rep` element is new in FCPXML 1.9. Use the `asset` element with the `src` attribute to specify the original media file for FCPXML 1.8 or earlier.
 
-##### Media-Rep Element Attributes
+### Media-Rep Element Attributes
 
 | Attribute | Description |
 | --- | --- |
@@ -19,7 +19,7 @@ A media that Final Cut Pro manages in its library can have a proxy media represe
 | `sig` | The unique identifier of a media representation, assigned by Final Cut Pro. |
 | `suggestedFilename` | The filename string to use when Final Cut Pro manages the media representation file. ![](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/spacer.png) Under specific circumstances, the URL for a media file may not contain the filename to use when Final Cut Pro manages the media file. Use the `suggestedFilename` attribute to specify the filename to use when Final Cut Pro manages the file.  ![](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/spacer.png) The expected value of this attribute is the basename of the file without the file extension. Even when the value contains a dot, Final Cut Pro interprets the substring after the dot as part of the file’s basename and not as a file extension. Final cut pro uses the extension derived from the source URL for the filename extension. An exception to that is when the substring after the dot exactly matches the extension derived from the source URL, where Final Cut Pro uses the attribute value as the file basename and the extension. |
 
-##### Location of Media Files
+### Location of Media Files
 
 Describe the location of media files by using a URL as the value of the `src` attribute. The URL can be one of the following:
 

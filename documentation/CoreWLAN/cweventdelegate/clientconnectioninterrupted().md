@@ -20,7 +20,7 @@ optional func clientConnectionInterrupted()
 - (void) clientConnectionInterrupted;
 ```
 
-#### Discussion
+## Discussion
 
 All event notifications for which the Wi-Fi client is registered are automatically re-registered when the connection resumes.
 

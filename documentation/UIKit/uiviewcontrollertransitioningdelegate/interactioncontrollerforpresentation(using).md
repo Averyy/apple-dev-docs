@@ -23,11 +23,11 @@ optional func interactionControllerForPresentation(using animator: any UIViewCon
 - (id<UIViewControllerInteractiveTransitioning>) interactionControllerForPresentation:(id<UIViewControllerAnimatedTransitioning>) animator;
 ```
 
-#### Return Value
+## Return Value
 
 The interactive animator object to use to manage the timing of the transition or `nil` if you do not want to support interactive transitions.
 
-#### Discussion
+## Discussion
 
 Use this method to create and return an object that implements the methods of the [`UIViewControllerInteractiveTransitioning`](../uiviewcontrollerinteractivetransitioning.md) protocol. The implementation of that protocol should configure the event-handling code required to manage the appearance of the target view controller. You may return `nil` from this method if you do not want to the animations to be interactive.
 

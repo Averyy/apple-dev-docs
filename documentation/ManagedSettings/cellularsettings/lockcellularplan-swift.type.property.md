@@ -17,7 +17,7 @@ The metadata associated with the constraint that locks the user’s cellular pla
 static let lockCellularPlan: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

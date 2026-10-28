@@ -15,7 +15,7 @@ Initializes an accessory from a GCDevice.
 init(device: any GCDevice) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `AccessoryTrackingProvider.Error`
 

@@ -20,11 +20,11 @@ Returns a UIKit edge insets structure based on the data in the specified string.
 extern UIEdgeInsets UIEdgeInsetsFromString(NSString *string);
 ```
 
-#### Return Value
+## Return Value
 
 An edge insets data structure. If the string is not well-formed, the function returns [`zero`](./uiedgeinsets/zero.md).
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`NSStringFromUIEdgeInsets`](./nsstringfromuiedgeinsets.md) function.
 

@@ -5,7 +5,7 @@
 
 QuickTime files use graphics modes to describe how one video or graphics layer should be combined with the layers beneath it.
 
-#### Overview
+## Overview
 
 Graphics modes are also known as transfer modes. Some graphics modes require a color to be specified for certain operations, such as blending to determine the blend level. QuickTime uses the graphics modes defined by Apple’s QuickDraw.
 

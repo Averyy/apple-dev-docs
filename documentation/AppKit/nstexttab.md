@@ -19,7 +19,7 @@ class NSTextTab
 @interface NSTextTab : NSObject
 ```
 
-#### Overview
+## Overview
 
 A text tab represents a tab in an [`NSParagraphStyle`](./nsparagraphstyle.md) object, storing an alignment type and location. [`NSTextTab`](./nstexttab.md) objects are most frequently used with the TextKit system and with [`NSRulerView`](./nsrulerview.md) and [`NSRulerMarker`](./nsrulermarker.md) objects.
 

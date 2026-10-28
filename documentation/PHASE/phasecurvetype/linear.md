@@ -24,7 +24,7 @@ case linear
 PHASECurveTypeLinear
 ```
 
-#### Discussion
+## Discussion
 
 The function `y` `=` `x` shapes this curve.
 

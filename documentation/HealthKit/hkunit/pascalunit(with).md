@@ -24,7 +24,7 @@ class func pascalUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) pascalUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring pressure based on pascals and the provided prefix.
 

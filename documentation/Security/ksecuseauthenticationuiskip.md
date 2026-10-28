@@ -25,7 +25,7 @@ let kSecUseAuthenticationUISkip: CFString
 extern CFStringRef const kSecUseAuthenticationUISkip;
 ```
 
-#### Discussion
+## Discussion
 
 Silently skip any items that require user authentication. Only use this value with the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function.
 

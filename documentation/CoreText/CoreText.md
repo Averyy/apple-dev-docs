@@ -15,7 +15,7 @@ Create text layouts, optimize font handling, and access font metrics and glyph d
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 Core Text provides a low-level programming interface for laying out text and handling fonts. The Core Text layout engine is designed for high performance, ease of use, and close integration with [Core Foundation](../CoreFoundation/CoreFoundation.md). The text layout API provides high-quality typesetting, including character-to-glyph conversion, with ligatures, kerning, and so on. The complementary Core Text font technology provides automatic font substitution (cascading), font descriptors and collections, easy access to font metrics and glyph data, and many other features.
 

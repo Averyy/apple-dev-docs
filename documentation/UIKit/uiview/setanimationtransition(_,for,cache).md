@@ -24,7 +24,7 @@ class func setAnimationTransition(_ transition: UIView.AnimationTransition, for 
 + (void) setAnimationTransition:(UIViewAnimationTransition) transition forView:(UIView *) view cache:(BOOL) cache;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to change the appearance of a view during a transition—for example, flip from one view to another—then use a container view, an instance of [`UIView`](../uiview.md), as follows:
 

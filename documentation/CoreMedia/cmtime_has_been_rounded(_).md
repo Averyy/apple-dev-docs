@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the system rounded the time value
 func CMTIME_HAS_BEEN_ROUNDED(_ time: CMTime) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time represents a rounded value; otherwise, [`false`](../Swift/false.md).
 

@@ -14,7 +14,7 @@
 virtual IOHIDElementType getType();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element type. Types are defined by the IOHIDElementType enumerator in [`IOHIDElementType`](../iohidelementtype.md).
 

@@ -17,7 +17,7 @@ A refund transaction.
 case refund
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to return money to the person’s card.
 

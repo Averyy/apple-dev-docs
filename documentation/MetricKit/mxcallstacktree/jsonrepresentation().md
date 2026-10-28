@@ -25,11 +25,11 @@ func jsonRepresentation() -> Data
 - (NSData *) JSONRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A `Data` object containing the JSON representation of the stack tree.
 
-#### Discussion
+## Discussion
 
 The stack tree is returned as a JSON dictionary. The top level contains one key:
 

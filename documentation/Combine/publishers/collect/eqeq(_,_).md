@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Collect<Upstream>, rhs: Publishers.Collect<Upstr
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the corresponding `upstream` properties of each publisher are equal; otherwise `false`.
 

@@ -21,7 +21,7 @@ func flush()
 - (void) flushWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Does nothing for other display devices, such as a printer. This method is automatically invoked by the `NSWindow`  [`display()`](./display%28%29.md) and [`displayIfNeeded()`](./displayifneeded%28%29.md) methods and the corresponding [`NSView`](../nsview.md) [`display()`](../nsview/display%28%29.md) and [`displayIfNeeded()`](../nsview/displayifneeded%28%29.md) methods.
 

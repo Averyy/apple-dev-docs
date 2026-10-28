@@ -20,7 +20,7 @@ var kColorSyncProfileComputerDomain: Unmanaged<CFString>!
 extern CFStringRef kColorSyncProfileComputerDomain;
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, these profiles are in the `/Library/ColorSync/Profiles` folder.
 

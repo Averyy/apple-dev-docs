@@ -26,7 +26,7 @@ class CLKComplication
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 - [Sharing an Apple Watch face](./sharing-an-apple-watch-face.md)
 
-#### Overview
+## Overview
 
 ClockKit defines each complication by its [`family`](./clkcomplication/family.md) and [`identifier`](./clkcomplication/identifier.md) properties. Each pair represents a unique complication that the user can select when configuring a watch face. When creating timeline entries, check both properties before creating and filling the complication’s template.
 

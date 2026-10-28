@@ -17,7 +17,7 @@ Representation of a heterogenous type in a JSON configuration file.
 enum StringOrNumber
 ```
 
-#### Overview
+## Overview
 
 This can be: a string, a numeric value or an array of numeric values. There are methods to do unwrapping, see e.g. [`asFloat()`](./stringornumber/asfloat%28%29.md) and [`asFloats()`](./stringornumber/asfloats%28%29.md) or callers can switch on the enum.
 

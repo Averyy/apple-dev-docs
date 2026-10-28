@@ -20,7 +20,7 @@ var standardOutput: Any? { get set }
 @property (retain, nullable) id standardOutput;
 ```
 
-#### Discussion
+## Discussion
 
 If `file` is an `NSPipe` object, launching the receiver automatically closes the write end of the pipe in the current task. Don’t create a handle for the pipe and pass that as the argument, or the write end of the pipe won’t be closed automatically.
 

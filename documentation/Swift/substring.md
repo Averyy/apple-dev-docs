@@ -22,7 +22,7 @@ A slice of a string.
 struct Substring
 ```
 
-#### Overview
+## Overview
 
 When you create a slice of a string, a `Substring` instance is the result. Operating on substrings is fast and efficient because a substring shares its storage with the original string. The `Substring` type presents the same interface as `String`, so you can avoid or defer any copying of the string’s contents.
 
@@ -45,7 +45,7 @@ let shoutingSentence = firstSentence.uppercased()
 // shoutingSentence == "HI THERE!"
 ```
 
-### Converting a Substring to a String
+## Converting a Substring to a String
 
 This example defines a `rawData` string with some unstructured data, and then uses the string’s `prefix(while:)` method to create a substring of the numeric prefix:
 

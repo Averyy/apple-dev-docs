@@ -5,7 +5,7 @@
 
 Store any number of object and panoramic nodes in a multinode QuickTime VR movie.
 
-#### Overview
+## Overview
 
 A multinode QuickTime VR movie can contain any number of object and panoramic nodes.
 

@@ -21,7 +21,7 @@ A type that represents a mutable buffer.
 protocol AccelerateMutableBuffer<Element> : AccelerateBuffer
 ```
 
-#### Overview
+## Overview
 
 If you implement your own type that conforms to [`AccelerateMutableBuffer`](./acceleratemutablebuffer.md) and uses the default implementation of [`withUnsafeMutableBufferPointer(_:)`](./acceleratemutablebuffer/withunsafemutablebufferpointer%28_%29.md), your type needs to return a nonnil result from [`withContiguousMutableStorageIfAvailable(_:)`](../Swift/contiguousarray/withcontiguousmutablestorageifavailable%28_%29.md).
 

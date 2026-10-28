@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, willChangeStatusBarOrien
 - (void) application:(UIApplication *) application willChangeStatusBarOrientation:(UIInterfaceOrientation) newStatusBarOrientation duration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate typically implements this method to prepare its windows and views for the new orientation. The delegate can get the current device orientation from the shared [`UIDevice`](../uidevice.md) object.
 

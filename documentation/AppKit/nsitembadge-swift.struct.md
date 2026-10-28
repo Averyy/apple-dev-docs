@@ -16,7 +16,7 @@
 struct NSItemBadge
 ```
 
-#### Overview
+## Overview
 
 This badge provides a way to display small visual indicators, such as counts and text labels, within a toolbar item. Badges can be used to highlight important information, such as unread notifications or status indicators.
 

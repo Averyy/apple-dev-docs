@@ -23,7 +23,7 @@ var accessibilityTextInputResponderBlock: AXUITextInputReturnBlock? { get set }
 @property (nonatomic, copy, nullable) AXUITextInputReturnBlock accessibilityTextInputResponderBlock;
 ```
 
-#### Discussion
+## Discussion
 
 If your accessibility element represents a view that supports text operations using the [`UITextInput`](../../UIKit/uitextinput.md) protocol, use this property to forward `UITextInput` calls to your backing view.
 

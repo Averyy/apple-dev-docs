@@ -19,7 +19,7 @@ func updateComposition()
 - (void) updateComposition;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the protocol method composedString: to obtain the current composition. The current composition is sent to the client by a call to the method `setMarkedText(_:selectionRange:replacementRange:)`.
 

@@ -19,7 +19,7 @@ A human-readable description of the model.
 var description: String { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty string if the model has no description.
 

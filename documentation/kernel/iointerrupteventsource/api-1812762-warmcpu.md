@@ -12,7 +12,7 @@ IOReturn warmCPU(
  uint64_tabstime);
 ```
 
-#### Overview
+## Overview
 
 Warms up a CPU in advance of an interrupt so that the interrupt may be serviced with predictable latency. The warm-up is not periodic; callers should call warmCPU once in advance of each interrupt. It is recommended that requests be issues in serial (i.e. each after the target for the previous call has elapsed), as there is a systemwide cap on the number of outstanding requests. This routine may be disruptive to the system if used with very small intervals between requests; it should be used only in cases where interrupt latency is absolutely critical, and tens or hundreds of milliseconds between targets is the expected time scale. NOTE: it is not safe to call this method with interrupts disabled.
 

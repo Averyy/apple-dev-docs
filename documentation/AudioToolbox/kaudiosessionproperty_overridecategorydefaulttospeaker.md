@@ -23,7 +23,7 @@ var kAudioSessionProperty_OverrideCategoryDefaultToSpeaker: Int { get }
 kAudioSessionProperty_OverrideCategoryDefaultToSpeaker
 ```
 
-#### Discussion
+## Discussion
 
 A read/write `UInt32` value. By default, the value of this property is `FALSE` (`0`).
 

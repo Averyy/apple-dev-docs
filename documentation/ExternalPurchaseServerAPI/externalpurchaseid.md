@@ -19,7 +19,7 @@ string externalPurchaseId
 
 - [Reporting unrecognized and transactionless tokens](./reportwithouttransactions.md)
 
-#### Discussion
+## Discussion
 
 Decode an external purchase token to get its [`externalPurchaseId`](./externalpurchaseid.md). For more information, see [Receiving and decoding external purchase tokens](../StoreKit/receiving-and-decoding-external-purchase-tokens.md).
 

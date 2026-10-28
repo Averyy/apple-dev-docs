@@ -20,7 +20,7 @@ var trackingObjects: Set<ARReferenceObject> { get set }
 @property (nonatomic, copy) NSSet<ARReferenceObject *> * trackingObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The system tracks the object at the full frame rate of the selected `videoFormat`. When an object is tracked, an `ARObjectAnchor` is added to the session.
 

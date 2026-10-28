@@ -19,7 +19,7 @@ weak var delegate: (any NSAlertDelegate)? { get set }
 @property (weak, nullable) id<NSAlertDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 To set a delegate for the alert, provide an object conforming to the [`NSAlertDelegate`](../nsalertdelegate.md)protocol to this property. To remove the delegate, set this property’s value to `nil`.
 

@@ -26,7 +26,7 @@ static func object(withItemProviderData data: Data, typeIdentifier: String) thro
 + (instancetype) objectWithItemProviderData:(NSData *) data typeIdentifier:(NSString *) typeIdentifier error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An object created from the given data.
 

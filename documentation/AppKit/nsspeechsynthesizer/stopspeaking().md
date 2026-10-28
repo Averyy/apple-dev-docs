@@ -21,7 +21,7 @@ func stopSpeaking()
 - (void) stopSpeaking;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is currently generating speech, synthesis is halted, and the message [`speechSynthesizer(_:didFinishSpeaking:)`](../nsspeechsynthesizerdelegate/speechsynthesizer%28_,didfinishspeaking%29.md) is sent to the delegate.
 

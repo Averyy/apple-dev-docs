@@ -4,7 +4,7 @@
 
 Write expressions that query the match requests in a queue to find the best players for a match.
 
-#### Overview
+## Overview
 
 An *expression* is a [JMESPath](https://jmespath.org/) formatted string with additional matchmaking rule functions. Game Center uses the expression to query a collection of match requests represented as JSON. The expression needs to evaluate to either a Boolean or number value according to the rule type.
 

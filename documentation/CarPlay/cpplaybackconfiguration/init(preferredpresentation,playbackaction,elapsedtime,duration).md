@@ -21,7 +21,7 @@ init(preferredPresentation: CPPlaybackConfiguration.Presentation, playbackAction
 - (instancetype) initWithPreferredPresentation:(CPPlaybackPresentation) preferredPresentation playbackAction:(CPPlaybackAction) playbackAction elapsedTime:(CMTime) elapsedTime duration:(CMTime) duration;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Video presentation may be unsupported for this session  (see `-[CPSessionConfiguration videoPlaybackSupported]`) or may be unavailable due to playback policy.
 

@@ -16,7 +16,7 @@ Plays the system beep.
 static func beep()
 ```
 
-#### Discussion
+## Discussion
 
 Users can select a sound to be played as the system beep in the Sound pane of System Preferences.
 

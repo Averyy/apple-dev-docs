@@ -19,7 +19,7 @@ func enumerateTextSegments(in textRange: NSTextRange, type: NSTextLayoutManager.
 - (void) enumerateTextSegmentsInRange:(NSTextRange *) textRange type:(NSTextLayoutManagerSegmentType) type options:(NSTextLayoutManagerSegmentOptions) options usingBlock:(BOOL (^)(NSTextRange *textSegmentRange, CGRect textSegmentFrame, CGFloat baselinePosition, NSTextContainer *textContainer)) block;
 ```
 
-#### Discussion
+## Discussion
 
 A text segment is a logically and visually contiguous portion of the text content inside a line fragment that you specify with a single text range. The framework enumerates the segments visually from left to right. Returning `false` breaks out of the enumeration.
 

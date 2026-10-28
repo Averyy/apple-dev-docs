@@ -25,11 +25,11 @@ init(forSubquery expression: NSExpression, usingIteratorVariable variable: Strin
 + (NSExpression *) expressionForSubquery:(NSExpression *) expression usingIteratorVariable:(NSString *) variable predicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An expression that filters a collection by storing elements in the collection in the variable variable and keeping the elements for which qualifier returns true
 
-#### Discussion
+## Discussion
 
 This method creates a sub-expression, evaluation of which returns a subset of a collection of objects. It allows you to create sophisticated queries across relationships, such as a search for multiple correlated values on the destination object of a relationship.
 

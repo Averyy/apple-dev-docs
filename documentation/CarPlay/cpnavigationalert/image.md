@@ -22,7 +22,7 @@ var image: UIImage? { get }
 @property (nonatomic, copy, readonly, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The navigation alert doesn’t support animated images. If `image` references an animated image, the alert displays first image in the animation sequence.
 

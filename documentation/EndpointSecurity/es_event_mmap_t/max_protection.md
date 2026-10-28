@@ -20,7 +20,7 @@ var max_protection: Int32
 int32_t max_protection;
 ```
 
-#### Discussion
+## Discussion
 
 This value uses the protection flags defined by `mmap(2)`, such as `PROT_READ` and `PROT_WRITE`. You can use the definitions for these flags found in `sys/mman.h` in the macOS SDK inside of the Xcode app bundle.
 

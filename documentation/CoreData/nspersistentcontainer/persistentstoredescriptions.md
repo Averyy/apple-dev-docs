@@ -25,7 +25,7 @@ var persistentStoreDescriptions: [NSPersistentStoreDescription] { get set }
 @property (copy) NSArray<NSPersistentStoreDescription *> * persistentStoreDescriptions;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to override the type (or types) of persistent store(s) used by the persistent container, you can set this property with an array of [`NSPersistentStoreDescription`](../nspersistentstoredescription.md) objects.
 

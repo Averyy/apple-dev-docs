@@ -24,7 +24,7 @@ var type: PKPaymentSummaryItemType { get set }
 @property (nonatomic, assign) PKPaymentSummaryItemType type;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to a [`PKPaymentSummaryItemType.final`](../pkpaymentsummaryitemtype/final.md) type. See [`PKPaymentSummaryItemType`](../pkpaymentsummaryitemtype.md) for other values.
 

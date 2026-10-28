@@ -19,7 +19,7 @@ var toolbarStyle: NSWindow.ToolbarStyle { get set }
 @property NSWindowToolbarStyle toolbarStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NSWindow.ToolbarStyle.automatic`](./toolbarstyle-swift.enum/automatic.md).
 

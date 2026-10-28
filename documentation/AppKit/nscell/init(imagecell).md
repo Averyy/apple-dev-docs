@@ -19,11 +19,11 @@ init(imageCell image: NSImage?)
 - (instancetype) initImageCell:(NSImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSCell` object, or `nil` if the cell could not be initialized.
 
-#### Discussion
+## Discussion
 
 This is one of four designated initializers you must implement when subclassing. See [Designated Initializers](../nscell.md#Designated-Initializers) for the complete list.
 

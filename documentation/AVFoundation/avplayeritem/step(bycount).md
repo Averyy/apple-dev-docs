@@ -26,7 +26,7 @@ func step(byCount stepCount: Int)
 - (void) stepByCount:(NSInteger) stepCount;
 ```
 
-#### Discussion
+## Discussion
 
 The size of each step depends on the receiver’s enabled `AVPlayerItemTrack` objects (see [`tracks`](./tracks.md)).
 

@@ -25,7 +25,7 @@ optional func presentedSubitem(at url: URL, didResolve version: NSFileVersion)
 - (void) presentedSubitemAtURL:(NSURL *) url didResolveConflictVersion:(NSFileVersion *) version;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate can use this method to respond to the resolution of a version conflict by a different file presenter. This might occur if a version of your application running on another device resolves the conflict first. You might then use this method to update your user interface to indicate that there is no longer a conflict.
 

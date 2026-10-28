@@ -19,7 +19,7 @@ func setAccessibilityTraits(_ accessibilityTraits: UIAccessibilityTraits)
 - (void) setAccessibilityTraits:(UIAccessibilityTraits) accessibilityTraits;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change the accessibility traits associated with your interface objects.
 

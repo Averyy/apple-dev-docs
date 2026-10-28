@@ -20,7 +20,7 @@ Returns the source tagged dynamic buffers for the given track ID. Returns nil if
 func sourceTaggedDynamicBuffers(byTrackID trackID: CMPersistentTrackID) -> [CMTaggedDynamicBuffer]?
 ```
 
-#### Return Value
+## Return Value
 
 The source CMTaggedBuffer array for the given track ID.
 

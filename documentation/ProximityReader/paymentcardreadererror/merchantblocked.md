@@ -17,7 +17,7 @@ An error that indicates the merchant is blocked.
 case merchantBlocked
 ```
 
-#### Discussion
+## Discussion
 
 This merchant has been restricted from using Tap to Pay on iPhone.
 

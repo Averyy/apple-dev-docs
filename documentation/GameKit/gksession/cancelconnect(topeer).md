@@ -24,7 +24,7 @@ func cancelConnect(toPeer peerID: String!)
 - (void) cancelConnectToPeer:(NSString *) peerID;
 ```
 
-#### Discussion
+## Discussion
 
 Your application previously called [`connect(toPeer:withTimeout:)`](./connect%28topeer,withtimeout%29.md) to create a connection to another iOS device. When your application cancels the connection attempt, both delegates’ [`session(_:connectionWithPeerFailed:withError:)`](../gksessiondelegate/session%28_,connectionwithpeerfailed,witherror%29.md) methods are called.
 

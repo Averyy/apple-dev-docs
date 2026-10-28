@@ -21,11 +21,11 @@ optional func scribbleInteractionShouldDelayFocus(_ interaction: UIScribbleInter
 - (BOOL) scribbleInteractionShouldDelayFocus:(UIScribbleInteraction *) interaction;
 ```
 
-#### Return Value
+## Return Value
 
 Return `true` to delay focusing the text input, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Normally, Scribble focuses the target input as soon as the user starts writing. If you return `true` from this callback, Scribble waits until the user pauses briefly while writing. This is useful in cases where the view shifts or transforms when becoming first responder, which can be disruptive to a user trying to write in the field.
 

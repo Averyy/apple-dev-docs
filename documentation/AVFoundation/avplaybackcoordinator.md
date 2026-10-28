@@ -24,7 +24,7 @@ class AVPlaybackCoordinator
 @interface AVPlaybackCoordinator : NSObject
 ```
 
-#### Overview
+## Overview
 
 The framework provides two playback coordinator subclasses that manage different types of player objects:
 

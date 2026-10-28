@@ -24,11 +24,11 @@ class func code128BarcodeGenerator() -> any CIFilter & CICode128BarcodeGenerator
 + (CIFilter<CICode128BarcodeGenerator> *) code128BarcodeGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a Code 128 barcode as an image. Code 128 is a high-density linear barcode defined in the ISO/IEC 15417:2007 standard. Use this filter to generate alphanumeric or numeric-only barcodes. The barcode can contain any of the 128 ASCII characters.
 

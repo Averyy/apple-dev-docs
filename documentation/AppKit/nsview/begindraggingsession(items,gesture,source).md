@@ -19,11 +19,11 @@ func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer,
 - (NSDraggingSession *) beginDraggingSessionWithItems:(NSArray<NSDraggingItem *> *) items gesture:(NSGestureRecognizer *) gesture source:(id<NSDraggingSource>) source;
 ```
 
-#### Return Value
+## Return Value
 
 The dragging session for the drag, or `nil` if the method can’t start the session.
 
-#### Discussion
+## Discussion
 
 Like [`beginDraggingSession(with:event:source:)`](./begindraggingsession%28with,event,source%29.md), this method starts an internal tracking loop. If the gesture is mouse-based, the system cancels the gesture at the end of the drag-and-drop operation. If the gesture is touch-based, the system cancels the gesture at the start of the drag-and-drop operation.
 

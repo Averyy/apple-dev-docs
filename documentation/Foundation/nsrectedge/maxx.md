@@ -20,7 +20,7 @@ case maxX
 NSRectEdgeMaxX
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`CGRectEdge.maxXEdge`](../../CoreFoundation/cgrectedge/maxxedge.md).
 

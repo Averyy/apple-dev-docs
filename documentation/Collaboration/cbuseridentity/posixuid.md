@@ -19,11 +19,11 @@ var posixUID: uid_t { get }
 @property (nonatomic, readonly) uid_t posixUID;
 ```
 
-#### Return Value
+## Return Value
 
 The POSIX UID of the identity.
 
-#### Discussion
+## Discussion
 
 The POSIX UID is a integer that can identify a user within an identity authority. UIDs are not guaranteed to be unique within an identity authority.
 

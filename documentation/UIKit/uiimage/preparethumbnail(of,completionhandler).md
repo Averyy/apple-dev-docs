@@ -27,7 +27,7 @@ func byPreparingThumbnail(ofSize size: CGSize) async -> UIImage?
 - (void) prepareThumbnailOfSize:(CGSize) size completionHandler:(void (^)(UIImage *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When displaying an image in a [`UIImageView`](../uiimageview.md), you can use the view’s [`contentMode`](../uiview/contentmode-swift.property.md) property to clip or scale the image automatically. But when the native image size is much larger than the bounds of the view, decoding the full size image creates unnecessary memory overhead. By creating a thumbnail image at a specified size with this method, you avoid the overhead of decoding the image at its full size.
 

@@ -24,7 +24,7 @@ class MPSImageConvolution
 @interface MPSImageConvolution : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 Filter width and height can be either 3, 5, 7 or 9. If there are multiple channels in the source image, each channel is processed independently.
 

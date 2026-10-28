@@ -24,7 +24,7 @@ static OSDataPtr withData(const OSData *inData);
 static OSPtr<OSData> withData(const OSData *inData);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSData with reference count 1 to be released by the caller.
 

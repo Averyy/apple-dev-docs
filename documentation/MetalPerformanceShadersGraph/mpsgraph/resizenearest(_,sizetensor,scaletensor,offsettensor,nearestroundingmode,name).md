@@ -24,11 +24,11 @@ func resizeNearest(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTens
 - (MPSGraphTensor *) resizeNearestWithTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleTensor:(MPSGraphTensor *) scale offsetTensor:(MPSGraphTensor *) offset nearestRoundingMode:(MPSGraphResizeNearestRoundingMode) nearestRoundingMode name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Resamples input images to given size using the provided scale and offset and nearest neighbor sampling. Destination indices are computed using
 

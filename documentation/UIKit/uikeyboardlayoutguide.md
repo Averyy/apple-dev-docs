@@ -23,7 +23,7 @@ class UIKeyboardLayoutGuide
 @interface UIKeyboardLayoutGuide : UITrackingLayoutGuide
 ```
 
-#### Overview
+## Overview
 
 Configure the keyboard layout guide, and activate or deactivate constraints so your app’s layout adjusts to the keyboard in different situations. See [Adjusting your layout with keyboard layout guide](./adjusting-your-layout-with-keyboard-layout-guide.md) for an example of how to dynamically respond to keyboard presentation, dismissal, and movement.
 

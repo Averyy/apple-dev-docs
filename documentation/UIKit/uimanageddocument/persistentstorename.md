@@ -22,11 +22,11 @@ class var persistentStoreName: String { get }
 @property (class, nonatomic, readonly) NSString * persistentStoreName;
 ```
 
-#### Return Value
+## Return Value
 
 The name for the persistent store file inside the document’s file package.
 
-#### Discussion
+## Discussion
 
 This path component is appended to the document URL provided by [`UIDocument`](../uidocument.md). The default name is `persistentStore`.
 

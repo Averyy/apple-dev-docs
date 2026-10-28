@@ -21,11 +21,11 @@ Returns a new `.dataCorrupted` error using a constructed coding path and the giv
 static func dataCorruptedError<C>(forKey key: C.Key, in container: C, debugDescription: String) -> DecodingError where C : KeyedDecodingContainerProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A new `.dataCorrupted` error with the given information.
 
-#### Discussion
+## Discussion
 
 The coding path for the returned error is constructed by appending the given key to the given container’s coding path.
 

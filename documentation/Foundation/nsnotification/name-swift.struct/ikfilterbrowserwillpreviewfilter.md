@@ -15,7 +15,7 @@ Posted before showing a filter preview, allowing an application to set the param
 static let IKFilterBrowserWillPreviewFilter: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The selected filter is sent as the object in the notification.
 

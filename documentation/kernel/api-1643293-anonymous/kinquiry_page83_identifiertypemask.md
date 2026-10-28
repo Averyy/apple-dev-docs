@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeMask = 0xF
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to determine association.
 

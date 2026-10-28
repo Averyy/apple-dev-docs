@@ -17,7 +17,7 @@ Returns a Boolean value that indicates whether two metadata values are equal.
 static func == (lhs: Logger.Metadata.Value, rhs: Logger.Metadata.Value) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the metadata values are equivalent; otherwise `false`.
 

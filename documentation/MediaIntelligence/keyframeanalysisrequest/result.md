@@ -20,7 +20,7 @@ The output of a key frame analysis.
 struct Result
 ```
 
-#### Overview
+## Overview
 
 [`KeyFrameAnalysisRequest.Result`](./result.md) contains the timestamp of the frame the framework selects as the best representative of the video. Use this [`CMTime`](../../CoreMedia/cmtime.md) value to seek a player to that position or to extract a thumbnail.
 

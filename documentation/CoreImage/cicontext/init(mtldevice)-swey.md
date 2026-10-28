@@ -24,11 +24,11 @@ init(mtlDevice device: any MTLDevice)
 + (CIContext *) contextWithMTLDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 A Core Image context.
 
-#### Discussion
+## Discussion
 
 Use this method to choose a specific Metal device for rendering when a system contains multiple Metal devices. To create a Metal-based context using the system’s default Metal device, use the [`contextWithOptions:`](./contextwithoptions_.md) method.
 

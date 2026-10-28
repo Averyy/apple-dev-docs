@@ -23,7 +23,7 @@ static var systemClockDidChange: NotificationCenter.BaseMessageIdentifier<Date.S
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Date.SystemClockDidChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Date.SystemClockDidChangeMessage`](../../date/systemclockdidchangemessage.md).
 

@@ -23,7 +23,7 @@ func nw_parameters_set_allow_ultra_constrained(_ parameters: nw_parameters_t, _ 
 void nw_parameters_set_allow_ultra_constrained(nw_parameters_t parameters, bool allow_ultra_constrained);
 ```
 
-#### Discussion
+## Discussion
 
 Explicitly allow connectivity over ultra-constrained interfaces. Without this being set, connections are not allowed to use these interfaces.
 

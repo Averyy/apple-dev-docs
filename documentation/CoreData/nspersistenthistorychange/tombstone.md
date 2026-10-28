@@ -29,7 +29,7 @@ var tombstone: [AnyHashable : Any]? { get }
 
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Discussion
+## Discussion
 
 This value is expected on changes of type [`NSPersistentHistoryChangeType.delete`](../nspersistenthistorychangetype/delete.md).
 

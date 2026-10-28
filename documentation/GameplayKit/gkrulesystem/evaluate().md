@@ -24,7 +24,7 @@ func evaluate()
 - (void) evaluate;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the system considers each rule in the [`agenda`](./agenda.md) list in order. The agenda contains rules in the order of their [`salience`](../gkrule/salience.md) values, or for rules with the same salience, the order in which they were added to the system.
 

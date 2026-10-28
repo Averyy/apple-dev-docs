@@ -30,7 +30,7 @@ class MTLSamplerDescriptor
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 - [Restricting access to specific mipmaps](./restricting-access-to-specific-mipmaps.md)
 
-#### Overview
+## Overview
 
 To make a sampler, create and configure an [`MTLSamplerDescriptor`](./mtlsamplerdescriptor.md) instance and then call an [`MTLDevice`](./mtldevice.md) instance’s [`makeSamplerState(descriptor:)`](./mtldevice/makesamplerstate%28descriptor%29.md) method. After you create the sampler, you can release the descriptor or reconfigure its properties to create other samplers.
 

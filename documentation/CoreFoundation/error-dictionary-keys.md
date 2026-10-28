@@ -5,7 +5,7 @@
 
 The keys used in an error dictionary returned by some functions to provide more information about XML parse errors.
 
-#### Overview
+## Overview
 
 These keys are used in the error dictionary returned by the [`CFXMLTreeCreateFromDataWithError`](./cfxmltreecreatefromdatawitherror.md) function.
 

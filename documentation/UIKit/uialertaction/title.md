@@ -23,7 +23,7 @@ var title: String? { get }
 @property (nonatomic, readonly, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to the value you specified in the [`init(title:style:handler:)`](./init%28title,style,handler%29.md) method.
 

@@ -21,7 +21,7 @@ Creates a string with a detailed representation of the given value, suitable for
 init<Subject>(reflecting subject: Subject)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to convert an instance of any type to its custom debugging representation. The initializer creates the string representation of `instance` in one of the following ways, depending on its protocol conformance:
 

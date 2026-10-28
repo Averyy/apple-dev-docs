@@ -13,7 +13,7 @@
 MBUF_TC_VO = 3
 ```
 
-#### Discussion
+## Discussion
 
 Interactive voice, constant bit rate, lowest latency.
 

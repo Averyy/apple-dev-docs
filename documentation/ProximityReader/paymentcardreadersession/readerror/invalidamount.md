@@ -17,7 +17,7 @@ The request contained an invalid amount.
 case invalidAmount
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you specify a negative amount. All amounts must be positive and contain less than 10 digits.
 

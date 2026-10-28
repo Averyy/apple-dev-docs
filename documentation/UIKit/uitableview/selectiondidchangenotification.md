@@ -28,7 +28,7 @@ extern NSNotificationName const UITableViewSelectionDidChangeNotification;
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 There’s no `userInfo` dictionary associated with this notification.
 

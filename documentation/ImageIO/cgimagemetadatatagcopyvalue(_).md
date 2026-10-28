@@ -25,11 +25,11 @@ func CGImageMetadataTagCopyValue(_ tag: CGImageMetadataTag) -> CFTypeRef?
 extern CFTypeRefCGImageMetadataTagCopyValue(CGImageMetadataTagRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the tag’s value. Possible return types are [`CFString`](../CoreFoundation/cfstring.md), [`CFNumber`](../CoreFoundation/cfnumber.md), [`CFBoolean`](../CoreFoundation/cfboolean.md), [`CFArray`](../CoreFoundation/cfarray.md), and [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 
-#### Discussion
+## Discussion
 
 Use this method to obtain the value when you want to use or display that value elsewhere. Any changes you make to the returned value don’t change the contents of the metadata tag. To change the value, call [`CGImageMetadataSetValueWithPath(_:_:_:_:)`](./cgimagemetadatasetvaluewithpath%28_,_,_,_%29.md) or [`CGImageMetadataSetTagWithPath(_:_:_:_:)`](./cgimagemetadatasettagwithpath%28_,_,_,_%29.md) instead.
 

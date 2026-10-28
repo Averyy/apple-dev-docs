@@ -15,7 +15,7 @@ kIOBuiltin is a property of IONetworkInterface objects. It has an OSBoolean valu
 #define kIOBuiltin
 ```
 
-#### Discussion
+## Discussion
 
 The kIOBuiltin property describes whether the interface is built-in.
 

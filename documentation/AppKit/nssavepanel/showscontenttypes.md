@@ -19,7 +19,7 @@ var showsContentTypes: Bool { get set }
 @property BOOL showsContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The popup list shows the localized description for the types in `allowedContentTypes`. To display a different description, implement the delegate method `-panel:displayNameForType:`. The default value is `NO`, do not show the content types.
 

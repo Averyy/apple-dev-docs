@@ -34,7 +34,7 @@ var temporalEventTrigger: INTemporalEventTrigger? { get }
 @property (atomic, copy, readonly, nullable) INTemporalEventTrigger * temporalEventTrigger;
 ```
 
-#### Discussion
+## Discussion
 
 If no trigger information is available in this property, do not attempt to change the temporal trigger of the task.
 

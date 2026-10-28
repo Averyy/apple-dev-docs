@@ -15,7 +15,7 @@ A fixed location in a person’s surroundings.
 struct WorldAnchor
 ```
 
-#### Overview
+## Overview
 
 ARKit persists world anchor UUIDs and transforms across multiple runs of your app. For more information, see [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md).
 

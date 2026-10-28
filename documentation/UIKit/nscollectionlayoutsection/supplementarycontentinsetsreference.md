@@ -23,7 +23,7 @@ var supplementaryContentInsetsReference: UIContentInsetsReference { get set }
 @property (nonatomic) UIContentInsetsReference supplementaryContentInsetsReference;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the reference boundary to use when defining [`contentInsets`](../nscollectionlayoutitem/contentinsets.md) on [`NSCollectionLayoutBoundarySupplementaryItem`](../nscollectionlayoutboundarysupplementaryitem.md) objects.
 

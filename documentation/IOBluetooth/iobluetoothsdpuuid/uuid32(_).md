@@ -19,7 +19,7 @@ class func uuid32(_ uuid32: BluetoothSDPUUID32) -> Self!
 + (instancetype) uuid32:(BluetoothSDPUUID32) uuid32;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new IOBluetoothSDPUUID object.
 

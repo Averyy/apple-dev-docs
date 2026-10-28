@@ -24,7 +24,7 @@ var rightVergence: Float { get set }
 @property (nonatomic, assign) float rightVergence;
 ```
 
-#### Discussion
+## Discussion
 
 A stereoscopic camera simulates binocular vision by looking toward a central point in a scene from two slightly different viewpoints. Vergence measures the difference between the camera’s forward axis and the angle from each viewpoint toward that central point, called the *vergence point*. There are two common ways to model a stereoscopic camera:
 

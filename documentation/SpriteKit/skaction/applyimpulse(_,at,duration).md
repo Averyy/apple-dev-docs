@@ -25,11 +25,11 @@ class func applyImpulse(_ impulse: CGVector, at point: CGPoint, duration: TimeIn
 + (SKAction *) applyImpulse:(CGVector) impulse atPoint:(CGPoint) point duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, applies a constant force to the physics body for the duration of the action. The force is calculated by dividing the impulse strength by the duration of the action. For example, if an impulse of `1` Newton-second is applied to the physics body, and the the duration is `10` seconds, then a force of `0.1` Newtons is applied to the physics body. Because the force is applied to a specific point on the body, it may impart both linear acceleration and angular acceleration.
 

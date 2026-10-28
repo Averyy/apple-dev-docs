@@ -23,7 +23,7 @@ var activeColorSpace: AVCaptureColorSpace { get set }
 @property (nonatomic) AVCaptureColorSpace activeColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 All devices and formats support capture in the sRGB color space. Some devices and formats can also capture in the P3 color space, which includes a much wider gamut of colors than the sRGB color space. By default, a capture session automatically enables wide-gamut capture for supported devices and capture workflows—for details, see the [`automaticallyConfiguresCaptureDeviceForWideColor`](../avcapturesession/automaticallyconfigurescapturedeviceforwidecolor.md) of your capture session. To instead set the color space manually, disable that [`AVCaptureSession`](../avcapturesession.md) property before setting the active color space.
 

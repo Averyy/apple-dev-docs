@@ -28,7 +28,7 @@ Available when `Root` inherits `AVAsset`.
 - [Loading media data asynchronously](../loading-media-data-asynchronously.md)
 - [Retrieving media metadata](../retrieving-media-metadata.md)
 
-#### Discussion
+## Discussion
 
 Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 

@@ -5,13 +5,13 @@
 
 Learn about important changes to AVFAudio.
 
-#### Overview
+## Overview
 
 Browse notable changes in [AVFAudio](../AVFAudio/AVFAudio.md).
 
-#### June 2024
+## June 2024
 
-##### Spatial audio with AVAudioEngine
+### Spatial audio with AVAudioEngine
 
 - Adjust the [`AVAudioEnvironmentNode`](../AVFAudio/avaudioenvironmentnode.md) orientation to match someone’s head pose via compatible AirPods by setting the new [`isListenerHeadTrackingEnabled`](../AVFAudio/avaudioenvironmentnode/islistenerheadtrackingenabled.md) property to `true`. The system requires your app to have the [`com.apple.developer.coremotion.head-pose`](../BundleResources/entitlements/com.apple.developer.coremotion.head-pose.md) entitlement to observe this property.
 - Tailor [`AVAudioEnvironmentNode`](../AVFAudio/avaudioenvironmentnode.md) output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](../BundleResources/entitlements/com.apple.developer.spatial-audio.profile-access.md) entitlement to your app.

@@ -23,7 +23,7 @@ struct FormatStyle
 
 Available when `UnitType` inherits `Dimension`.
 
-#### Overview
+## Overview
 
 A measurement format style creates human-readable text from a [`Measurement`](../measurement.md). You can customize the formatting behavior of the format style using the [`width`](./formatstyle/width.md), `numberFormat`, [`usage`](./formatstyle/usage.md), and [`locale`](./formatstyle/locale.md) properties. The system automatically caches unique configurations of [`Measurement.FormatStyle`](./formatstyle.md) to enhance performance.
 

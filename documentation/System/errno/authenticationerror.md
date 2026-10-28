@@ -25,7 +25,7 @@ static var authenticationError: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The authentication ticket used to mount an NFS file system was invalid.
 

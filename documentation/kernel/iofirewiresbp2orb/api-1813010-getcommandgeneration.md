@@ -12,11 +12,11 @@ virtual UInt32 getCommandGeneration(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the bus generation for command execution.
 
-#### Overview
+## Overview
 
 This gets the bus generation this ORB should be appended in.
 

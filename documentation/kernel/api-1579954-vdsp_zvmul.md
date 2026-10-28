@@ -15,7 +15,7 @@ Multiplies two complex vectors, optionally conjugating one of them; single preci
 void vDSP_zvmul(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N, int __Conjugate);
 ```
 
-#### Discussion
+## Discussion
 
 If `Conjugate` = 1, this function multiplies the first `N` complex elements of `A` by corresponding complex elements of `B`. If `Conjugate` = -1, it multiplies the complex conjugates of the first `N` complex elements of `A` by corresponding complex elements of `B`. In either case, the complex results are left in `C`:
 

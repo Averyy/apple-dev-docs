@@ -19,7 +19,7 @@ var canProvideSubtypes: Bool { get }
 @property (nonatomic, readonly) BOOL canProvideSubtypes;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `true` if [`subtypeDescriptions`](./subtypedescriptions.md) is not empty.
 

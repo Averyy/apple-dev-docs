@@ -19,7 +19,7 @@ func ignoredWords(inSpellDocumentWithTag tag: Int) -> [String]?
 - (NSArray<NSString *> *) ignoredWordsInSpellDocumentWithTag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 Invoke this method before [`closeSpellDocument(withTag:)`](./closespelldocument%28withtag%29.md) if you want to store the ignored words.
 

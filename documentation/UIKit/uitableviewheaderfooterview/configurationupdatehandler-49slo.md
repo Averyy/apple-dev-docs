@@ -20,7 +20,7 @@ A block for handling updates to the view’s configuration using the current sta
 @preconcurrency var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A configuration update handler provides an alternative approach to overriding [`updateConfiguration(using:)`](../uicollectionviewcell/updateconfiguration%28using%29.md) in a subclass. Set a configuration update handler to update the header footer view’s configuration using the new state in response to a configuration state change.
 

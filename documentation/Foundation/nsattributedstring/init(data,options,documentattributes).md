@@ -25,11 +25,11 @@ init(data: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any] = 
 - (instancetype) initWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options documentAttributes:(NSDictionary<NSString *,id> **) dict error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized attributed string object, or `nil` if the method can’t decode the data.
 
-#### Discussion
+## Discussion
 
 Don’t call this method from a background thread if the `options` dictionary includes the [`documentType`](./documentattributekey/documenttype.md) attribute with a value of [`html`](./documenttype/html.md). If you do, the method tries to synchronize with the main thread, fails, and times out. Calling it from the main thread works, but can still time out if the HTML contains references to external resources. The HTML import mechanism is meant for implementing something like markdown (that is, text styles, colors, and so on), not for general HTML import.
 

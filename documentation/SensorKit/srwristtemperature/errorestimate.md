@@ -21,7 +21,7 @@ var errorEstimate: Measurement<UnitTemperature> { get }
 @property (nonatomic, strong, readonly) NSMeasurement<NSUnitTemperature *> * errorEstimate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a delta value that can be positive or negative.
 

@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatUnapplyAffineTransform(SPRay3DFloat ray, SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed ray.
 
-#### Discussion
+## Discussion
 
 Returns a ray that’s transformed by the inverse of the specified affine transform.
 

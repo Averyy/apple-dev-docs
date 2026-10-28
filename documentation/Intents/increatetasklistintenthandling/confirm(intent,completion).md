@@ -29,7 +29,7 @@ optional func confirm(intent: INCreateTaskListIntent) async -> INCreateTaskListI
 - (void) confirmCreateTaskList:(INCreateTaskListIntent *) intent completion:(void (^)(INCreateTaskListIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can create the task list, but don’t create it yet. If creating the task list involves contacting a remote server, validate that your server is available and ready to handle requests. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to create the task list.
 

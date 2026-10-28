@@ -5,7 +5,7 @@
 
 Update your code to ensure everyone can access your app’s content in visionOS.
 
-#### Overview
+## Overview
 
 visionOS is an immersive platform that supports people of all abilities. Even though experiences incorporate stunning visual content and hand- and eye-tracking technologies, people can engage with content in other ways. In fact, the platform supports people in many different situations, including those who are blind, have low vision, have limited mobility, or have limb differences. With the help of assistive technologies, people can interact with all of your app’s content.
 
@@ -19,7 +19,7 @@ During development, enable VoiceOver and other assistive features and test your 
 
 For general information about supporting accessibility, see [Accessibility](../Accessibility/Accessibility.md). For design guidance, see [Human Interface Guidelines > Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility).
 
-##### Add accessibility traits to RealityKit entities
+### Add accessibility traits to RealityKit entities
 
 VoiceOver and other assistive technologies rely on the accessibility information that your app’s views and content provide. SwiftUI and UIKit provide default information for the standard system views, but RealityKit doesn’t provide default information for the entities in your scenes.
 
@@ -48,7 +48,7 @@ activationSubscription = content.subscribe(to: AccessibilityEvents.Activate.self
 }
 ```
 
-##### Add support for Direct Gesture mode
+### Add support for Direct Gesture mode
 
 When VoiceOver is active in visionOS, people use hand gestures to navigate your app’s interface and inspect elements. To prevent your app’s code from interfering with VoiceOver interactions, the system doesn’t deliver hand input to your app during this time. However, a person can perform a special VoiceOver gesture to enable Direct Gesture mode, which leaves VoiceOver enabled but restores hand input to your app.
 
@@ -58,13 +58,13 @@ Add VoiceOver announcements to your code to communicate the results of meaningfu
 AccessibilityNotification.Announcement("Game piece hit").post()
 ```
 
-##### Provide alternatives to input that involves physical movement
+### Provide alternatives to input that involves physical movement
 
 Reduced mobility can affect a person’s ability to interact with your app’s content. When designing your app’s input model, avoid experiences that require specific body movements or positions. For example, if your app supports custom hand gestures, add menu commands for each gesture so someone can enter them using a keyboard or assistive device.
 
 Some assistive technologies let people interact with your app using only their eyes. Using these technologies they can select, scroll, long press, or drag items in your interface. Even if you support other types of interactions, give people a way to access all of your app’s behavior using only these interactions.
 
-##### Avoid head-anchored content
+### Avoid head-anchored content
 
 Some assistive technologies allow people to navigate or view your app’s interface using head movements. As the person’s head moves, the assistive technology focuses on the item directly in front of them. Content that follows the movements of the person’s head interferes with the behavior of these assistive technologies.
 
@@ -72,7 +72,7 @@ When designing your interface, place content in windows or anchor it to location
 
 To determine when to change the anchoring approach for your content, check the [`accessibilityPrefersHeadAnchorAlternative`](../SwiftUI/environmentvalues/accessibilityprefersheadanchoralternative.md) environment variable in SwiftUI, or get the [`prefersHeadAnchorAlternative`](../Accessibility/accessibilitysettings/prefersheadanchoralternative.md) property. This environment variable is `true` when an assistive technology is in use that conflicts with head-anchored content. Adapt your content to use alternate anchoring mechanisms at that time.
 
-##### Limit motion effects in your content
+### Limit motion effects in your content
 
 Motion effects on any immersive device can be jarring, even for people who aren’t sensitive to motion. Limit the use of motion effects that incorporate rapid movement, bouncing or wave-like movement, zooming animations, multi-axis movement, spinning, or rotations. When the person wearing the device is sensitive to motion effects, eliminate the use of these effects altogether.
 
@@ -80,7 +80,7 @@ The Reduce Motion system setting lets you know when to provide alternatives for 
 
 For more information, see [Human Interface Guidelines > Motion](https://developer.apple.com/design/human-interface-guidelines/motion).
 
-##### Include captions for audio content
+### Include captions for audio content
 
 For people who are deaf or hard of hearing, provide high-quality captions for your app’s content. Captions are a necessity to some, but are practical for everyone in certain situations. For example, captions are useful to someone watching a video in a noisy environment. Remember to include captions not just for text and dialogue, but also for music and sound effects in your content. For Spatial Audio content, include information in your captions that indicates the direction of various sounds.
 

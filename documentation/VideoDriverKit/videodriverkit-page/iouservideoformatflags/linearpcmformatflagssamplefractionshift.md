@@ -15,7 +15,7 @@ The linear PCM flags contain a 6-bit bitfield indicating that an integer format 
 LinearPCMFormatFlagsSampleFractionShift
 ```
 
-#### Discussion
+## Discussion
 
 The value indicates the number of bits are used to represent the fractional portion of each sample value. This constant indicates the bit position (counting from the right) of the bitfield in `mFormatFlags`.
 

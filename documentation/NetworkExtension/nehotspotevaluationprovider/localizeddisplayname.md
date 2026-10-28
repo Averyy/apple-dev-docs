@@ -19,7 +19,7 @@ A localized string that the system UI uses for annotation of the Wi-Fi network.
 var localizedDisplayName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework uses this property only if the evaluation provider responds to the [`NEHotspotHelperCommandType.filterScanList`](../nehotspothelpercommandtype/filterscanlist.md) command with a [`NEHotspotHelperResult.success`](../nehotspothelperresult/success.md) result, and the network list contains the Wi-Fi network.
 

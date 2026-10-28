@@ -20,7 +20,7 @@ Report the closest hit.
 case nearest
 ```
 
-#### Discussion
+## Discussion
 
 If you only want to test if a hit occurs and don’t care about which hit out of multiple possible hits is returned, use [`CollisionCastQueryType.any`](./any.md) instead because it typically executes faster.
 

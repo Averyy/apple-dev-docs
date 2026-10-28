@@ -25,7 +25,7 @@ var playerId: Int { get }
 @property (nonatomic, readonly) NSInteger playerId;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 

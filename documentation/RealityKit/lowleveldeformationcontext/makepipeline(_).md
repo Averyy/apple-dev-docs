@@ -21,11 +21,11 @@ final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) t
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) async throws -> LowLevelDeformation.Pipeline
+nonisolated(nonsending)
+final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) async throws -> LowLevelDeformation.Pipeline
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the descriptor is invalid.
 

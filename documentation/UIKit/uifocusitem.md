@@ -24,7 +24,7 @@ protocol UIFocusItem : UIFocusEnvironment
 @protocol UIFocusItem <UIFocusEnvironment>
 ```
 
-#### Overview
+## Overview
 
 An object that conforms to the [`UIFocusItem`](./uifocusitem.md) protocol is capable of participating in the focus system; further, only [`UIFocusItem`](./uifocusitem.md) objects can be focused.
 

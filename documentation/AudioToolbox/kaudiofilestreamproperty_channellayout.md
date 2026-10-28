@@ -24,7 +24,7 @@ var kAudioFileStreamProperty_ChannelLayout: AudioFileStreamPropertyID { get }
 kAudioFileStreamProperty_ChannelLayout
 ```
 
-#### Discussion
+## Discussion
 
 An `AudioChannelLayout` structure. For details, see [Core Audio Data Types](../CoreAudio/core-audio-data-types.md).
 

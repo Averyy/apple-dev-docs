@@ -24,7 +24,7 @@ var storageMode: MTLStorageMode { get set }
 @property (nonatomic, readwrite) MTLStorageMode storageMode;
 ```
 
-#### Discussion
+## Discussion
 
 For devices with Apple silicon, you can create a heap with either the [`MTLStorageMode.private`](../mtlstoragemode/private.md) or the [`MTLStorageMode.shared`](../mtlstoragemode/shared.md) storage mode. However, you can only create heaps with private storage on macOS devices without Apple silicon.
 

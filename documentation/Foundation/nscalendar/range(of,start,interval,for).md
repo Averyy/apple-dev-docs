@@ -25,7 +25,7 @@ func range(of unit: NSCalendar.Unit, start datep: AutoreleasingUnsafeMutablePoin
 - (BOOL) rangeOfUnit:(NSCalendarUnit) unit startDate:(NSDate **) datep interval:(NSTimeInterval *) tip forDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the starting time and duration of a unit could be calculated, otherwise [`false`](../../Swift/false.md).
 

@@ -34,7 +34,7 @@ var billPayee: INBillPayee? { get }
 @property (atomic, copy, readonly, nullable) INBillPayee * billPayee;
 ```
 
-#### Discussion
+## Discussion
 
 Use the information in this property to identify the recipient of the payment. You must configure your app to process payments for the specified payee before handling the request.
 

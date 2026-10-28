@@ -24,11 +24,11 @@ func MusicEventIteratorSetEventTime(_ inIterator: MusicEventIterator, _ inTimeSt
 extern OSStatus MusicEventIteratorSetEventTime(MusicEventIterator inIterator, MusicTimeStamp inTimeStamp);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 After calling this function, the music event iterator remains positioned at the same event. However, because the event has been moved to a new location on the iterator’s music track, the iterator may no longer have a next or previous event. You can test this by calling [`MusicEventIteratorHasPreviousEvent(_:_:)`](./musiceventiteratorhaspreviousevent%28_,_%29.md) and [`MusicEventIteratorHasNextEvent(_:_:)`](./musiceventiteratorhasnextevent%28_,_%29.md).
 

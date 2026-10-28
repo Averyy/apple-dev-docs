@@ -21,7 +21,7 @@ var previous: XMLNode? { get }
 @property (copy, readonly, nullable) NSXMLNode * previousNode;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to “walk” backward through the tree structure representing an XML document or document section. (Use [`next`](./next.md) to traverse the tree in the opposite direction.) Document order is the natural order that XML constructs appear in markup text. If you send this message to the first node in the tree (that is, the root element), `nil` is returned. `NSXMLNode` bypasses namespace and attribute nodes when it traverses a tree in document order.
 

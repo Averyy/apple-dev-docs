@@ -17,7 +17,7 @@ Too many postbacks submitted to the test session.
 static var excessivePostbacks: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of postbacks allowed in the `postbacks` array in [`setPostbacks(_:)`](../skadtestsession/setpostbacks%28_%29.md) is six.
 

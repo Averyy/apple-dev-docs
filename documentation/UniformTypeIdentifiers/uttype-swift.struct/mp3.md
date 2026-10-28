@@ -21,7 +21,7 @@ A type that represents MP3 audio.
 static var mp3: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mp3`.
 

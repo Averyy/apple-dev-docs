@@ -23,7 +23,7 @@ var indexPathsForVisibleRows: [IndexPath]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSIndexPath *> * indexPathsForVisibleRows;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects each representing a row index and section index that together identify a visible row in the table view. If no rows are visible, the value is `nil`.
 

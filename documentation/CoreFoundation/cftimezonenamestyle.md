@@ -25,7 +25,7 @@ enum CFTimeZoneNameStyle
 enum CFTimeZoneNameStyle : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 For values, see [Time Zone Name Styles](./time_zone_name_styles.md)
 

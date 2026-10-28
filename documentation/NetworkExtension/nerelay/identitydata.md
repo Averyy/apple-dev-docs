@@ -24,7 +24,7 @@ var identityData: Data? { get set }
 @property (copy, nullable) NSData * identityData;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`NSData`](../../Foundation/nsdata.md) object in PKCS12 format.
 

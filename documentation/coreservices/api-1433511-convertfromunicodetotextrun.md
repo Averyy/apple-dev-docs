@@ -15,11 +15,11 @@ Converts a string from Unicode to one or more encodings.
 OSStatus ConvertFromUnicodeToTextRun(UnicodeToTextRunInfo iUnicodeToTextInfo, ByteCount iUnicodeLen, const UniChar iUnicodeStr[], OptionBits iControlFlags, ItemCount iOffsetCount, const ByteOffset iOffsetArray[], ItemCount *oOffsetCount, ByteOffset oOffsetArray[], ByteCount iOutputBufLen, ByteCount *oInputRead, ByteCount *oOutputLen, LogicalAddress oOutputStr, ItemCount iEncodingRunBufLen, ItemCount *oEncodingRunOutLen, TextEncodingRun oEncodingRuns[]);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 To use the `ConvertFromUnicodeToTextRun` function,you must first set up an array of structures of type  [`UnicodeMapping`](./unicodemapping.md)  containing,in order of precedence, the mapping information for the conversion.To create a Unicode converter object, you call the `CreateUnicodeToTextRunInfo` functionpassing it the Unicode mapping array, or you can the `CreateUnicodeToTextRunInfoByEncoding` or `CreateUnicodeToTextRunInfoByScriptCode` functions,which take arrays of text encodings or script codes instead of anarray of Unicode mappings. You pass the returned Unicode converterobject as the `iUnicodeToTextInfo` parameterwhen you call the `ConvertFromUnicodeToTextRun` function.
 

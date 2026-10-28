@@ -13,13 +13,13 @@ Transfer data between a watchOS app and its companion iOS app.
 - watchOS 10.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Some watchOS apps rely on their companion iOS app to perform complicated tasks, and need to exchange data with the companion app even when there’s no internet connection. The [Watch Connectivity](./WatchConnectivity.md) framework provides APIs for this purpose. This sample demonstrates how to use the APIs, and how to handle Watch Connectivity background tasks.
 
 > ❗ **Important**: Use a physical iPhone and Apple Watch to test this sample code project.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before building the sample app, perform the following steps in Xcode:
 
@@ -28,7 +28,7 @@ Before building the sample app, perform the following steps in Xcode:
 3. In the Info tab of the `SimpleWatchConnectivity Watch App` target, change the value of the `WKCompanionAppBundleIdentifier` key to the iOS app target’s bundle identifier.
 4. Replace the App Group container identifier `group.com.example.apple-samplecode.SimpleWatchConnectivity` with one specific to your team. The identifier occurs in the entitlements for the watchOS app and the widget, and in `WidgetSupport.swift`. See [Configuring App Groups](../Xcode/configuring-app-groups.md) for more details.
 
-##### Transfer data with Watch Connectivity
+### Transfer data with Watch Connectivity
 
 The Watch Connectivity framework provides APIs that accomplish the following tasks:
 
@@ -42,7 +42,7 @@ All APIs transfer a dictionary between the companion apps, with notable differen
 
 An app can provide a reply handler to receive a response from its companion app. The reply handler runs asynchronously on a background thread, and returns quickly to avoid timeout. Sending a message from a watchOS app wakes up its companion iOS app, if the companion is reachable.
 
-##### Update an active complication from the companion iOS  app
+### Update an active complication from the companion iOS  app
 
 This sample provides a WidgetKit complication that shows a timestamp. To activate the complication:
 
@@ -79,7 +79,7 @@ When the system requests the timeline, the widget retrieves the data from the sh
 func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
 ```
 
-##### Handle Watch Connectivity background tasks
+### Handle Watch Connectivity background tasks
 
 When using Watch Connectivity, apps must complete every background task ([`WKWatchConnectivityRefreshBackgroundTask`](../WatchKit/wkwatchconnectivityrefreshbackgroundtask.md)). An uncompleted task consumes the background-task time budget that watchOS allocates to the app, which results in a crash when the budget runs out.
 

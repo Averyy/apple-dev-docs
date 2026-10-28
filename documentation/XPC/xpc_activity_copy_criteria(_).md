@@ -19,7 +19,7 @@ func xpc_activity_copy_criteria(_ activity: xpc_activity_t) -> xpc_object_t?
 extern xpc_object_txpc_activity_copy_criteria(xpc_activity_t activity);
 ```
 
-#### Discussion
+## Discussion
 
 Returns `NULL` in cases where the activity has already completed, for example, when checking in to an event that finished and wasn’t rescheduled.
 

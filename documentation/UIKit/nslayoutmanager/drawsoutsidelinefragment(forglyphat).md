@@ -23,11 +23,11 @@ func drawsOutsideLineFragment(forGlyphAt glyphIndex: Int) -> Bool
 - (BOOL) drawsOutsideLineFragmentForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the glyph at `glyphIndex` exceeds the bounds of the line fragment where it’s laid out, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Exceeding bounds can happen when text is set at a fixed line height. For example, if the user specifies a fixed line height of 12 points and sets the font size to 24 points, the glyphs will exceed their layout rectangles.
 

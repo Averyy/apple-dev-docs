@@ -5,7 +5,7 @@
 
 Use container components to create the component hierarchies you need for special article designs.
 
-#### Overview
+## Overview
 
 A *nested* component is a child of the parent component that contains it. The child component is positioned and rendered relative to that parent. The size of the child components determines the minimum size of a container component.
 

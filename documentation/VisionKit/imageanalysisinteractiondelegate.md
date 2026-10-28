@@ -23,7 +23,7 @@ protocol ImageAnalysisInteractionDelegate : AnyObject
 
 - [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
 
-#### Overview
+## Overview
 
 The delegate of an [`ImageAnalysisInteraction`](./imageanalysisinteraction.md) object implements this protocol to provide interface details and to customize the response for a person’s interaction.
 

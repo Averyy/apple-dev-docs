@@ -25,7 +25,7 @@ static var execFormatError: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A request was made to execute a file that, although it has the appropriate permissions, isn’t in the format required for an executable file.
 

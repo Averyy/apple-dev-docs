@@ -16,7 +16,7 @@ The person, parent, or guardian approved the request for authorization with acce
 case approvedWithDataAccess
 ```
 
-#### Discussion
+## Discussion
 
 This status grants everything that [`AuthorizationStatus.approved`](./approved.md) allows, and additionally lets your app use [`FamilyActivityData`](../familyactivitydata.md) to fetch the actual bundle identifiers of installed applications, domain names of visited websites, and display names of activity categories instead of the opaque, tokenized representations returned under [`AuthorizationStatus.approved`](./approved.md). It also grants access to [`activityData(filteredBy:using:)`](../../DeviceActivity/deviceactivitydata/activitydata%28filteredby,using%29.md).
 

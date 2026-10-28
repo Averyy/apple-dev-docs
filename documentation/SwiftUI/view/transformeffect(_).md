@@ -22,7 +22,7 @@ nonisolated
 func transformEffect(_ transform: CGAffineTransform) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md).
 

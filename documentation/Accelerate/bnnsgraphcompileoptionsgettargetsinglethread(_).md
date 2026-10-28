@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsGetTargetSingleThread(_ options: bnns_graph_compile_
 bool BNNSGraphCompileOptionsGetTargetSingleThread(const bnns_graph_compile_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the options specify single-threaded execution; otherwise, `false`.
 

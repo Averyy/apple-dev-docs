@@ -14,7 +14,7 @@
 #define kUSB1284DeviceID
 ```
 
-#### Discussion
+## Discussion
 
 IORegistry key for the 1284 Device ID of a printer
 

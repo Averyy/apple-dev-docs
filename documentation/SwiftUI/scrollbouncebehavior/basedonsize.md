@@ -21,7 +21,7 @@ The scrollable view bounces when its content is large enough to require scrollin
 static var basedOnSize: ScrollBounceBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 The scrollable view bounces along the specified axis if the size of the content exceeeds the size of the scrollable view in that axis.
 

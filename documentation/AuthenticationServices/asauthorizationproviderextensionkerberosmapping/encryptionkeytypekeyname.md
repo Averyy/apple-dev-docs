@@ -19,7 +19,7 @@ var encryptionKeyTypeKeyName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * encryptionKeyTypeKeyName;
 ```
 
-#### Discussion
+## Discussion
 
 Ensure the value for this key is the correct encryption type for the session key. See section 7 of [RFC 3962](https://datatracker.ietf.org/doc/html/rfc3962) for more information.
 

@@ -6,7 +6,7 @@
 
 An atom that contains a number of other atoms that define specific characteristics of the video media data.
 
-#### Overview
+## Overview
 
 Video media information atoms are the highest-level atoms in video media. These atoms contain a number of other atoms that define specific characteristics of the video media data.
 

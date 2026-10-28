@@ -16,7 +16,7 @@ Adds a constant force vector to the current element.
 void force::add(float3 force)
 ```
 
-#### Discussion
+## Discussion
 
 This function applies a specified force to the element by adding it to the force accumulator. Multiple forces can be combined by calling this function (or other force functions) multiple times during simulation.
 

@@ -23,11 +23,11 @@ func sec_trust_copy_ref(_ trust: sec_trust_t) -> Unmanaged<SecTrust>
 SecTrustRefsec_trust_copy_ref(sec_trust_t trust);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `SecTrustRef` instance.
 
-#### Discussion
+## Discussion
 
 Copy a retained reference to the underlying `SecTrustRef` instance.
 

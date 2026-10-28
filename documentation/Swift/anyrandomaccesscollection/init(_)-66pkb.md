@@ -21,7 +21,7 @@ Creates an `AnyRandomAccessCollection` having the same underlying collection as 
 init?(_ other: AnyCollection<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 If the underlying collection stored by `other` does not satisfy `RandomAccessCollection`, the result is `nil`.
 

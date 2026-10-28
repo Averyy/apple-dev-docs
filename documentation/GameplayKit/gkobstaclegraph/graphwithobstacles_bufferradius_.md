@@ -20,11 +20,11 @@ Creates a graph with the specified list of obstacles.
 + (instancetype) graphWithObstacles:(NSArray<GKPolygonObstacle *> *) obstacles bufferRadius:(float) bufferRadius;
 ```
 
-#### Return Value
+## Return Value
 
 A new obstacle graph.
 
-#### Discussion
+## Discussion
 
 This method generates a graph that can be traversed in all directions, except into the areas occupied by obstacles.
 

@@ -25,7 +25,7 @@ class func canInit(with task: URLSessionTask) -> Bool
 + (BOOL) canInitWithTask:(NSURLSessionTask *) task;
 ```
 
-#### Discussion
+## Discussion
 
 A subclass should inspect the task’s request and determine whether or not the implementation can perform a load with that task.
 

@@ -21,11 +21,11 @@ Returns a new common filter parameters structure.
 init(flags: UInt32, n_threads: Int, alloc_memory: BNNSAlloc?, free_memory: BNNSFree?)
 ```
 
-#### Return Value
+## Return Value
 
 A new common filter parameters structure.
 
-#### Discussion
+## Discussion
 
 If `alloc_memory` is null, BNNS uses `posix_memalign(_:_:_:)` for memory allocation. If free_memory is null, BNNS uses `free()` for memory deallocation.
 

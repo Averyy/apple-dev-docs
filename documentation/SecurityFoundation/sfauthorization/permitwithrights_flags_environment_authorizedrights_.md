@@ -17,7 +17,7 @@ Authorizes and preauthorizes rights to access a privileged operation and returns
 - (OSStatus) permitWithRights:(const AuthorizationRights *) rights flags:(AuthorizationFlags) flags environment:(const AuthorizationEnvironment *) environment authorizedRights:(AuthorizationRights *) authorizedRights;
 ```
 
-#### Discussion
+## Discussion
 
 There are three main reasons to use this method. The first reason is to preauthorize rights by specifying the [`preAuthorize`](../../Security/authorizationflags/preauthorize.md), [`interactionAllowed`](../../Security/authorizationflags/interactionallowed.md), and [`extendRights`](../../Security/authorizationflags/extendrights.md) masks as authorization options. Preauthorization is most useful when a right has a zero timeout. For example, you can preauthorize in the application and if it succeeds, call the helper tool and request authorization. This eliminates calling the helper tool if the Security framework cannot later authorize the specified rights.
 
@@ -31,7 +31,7 @@ If you do not specify the [`interactionAllowed`](../../Security/authorizationfla
 
 If you specify the [`interactionAllowed`](../../Security/authorizationflags/interactionallowed.md) mask and the user cancels the authentication process, then the status of this method on return is [`errAuthorizationCanceled`](../../Security/errauthorizationcanceled.md).
 
-##### Special considerations
+### Special considerations
 
 The `authorizedRights` parameter is not supported in OS X v10.3; use the Authorization Services function `AuthorizationCopyRights` instead. In OS X v10.3 there is an error in the signature in the header file for this parameter. If you pass this argument as (AuthorizationRights **)`authorizedRights`, as shown in this document, it works as described.
 

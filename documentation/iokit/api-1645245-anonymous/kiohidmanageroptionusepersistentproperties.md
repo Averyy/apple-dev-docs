@@ -14,7 +14,7 @@
 kIOHIDManagerOptionUsePersistentProperties = 0x1
 ```
 
-#### Discussion
+## Discussion
 
 This constant can be supplied to [`IOHIDManagerCreate`](../api-1438383-iohidmanagercreate.md) to create and/or use a persistent properties store.
 

@@ -20,7 +20,7 @@ func CGDisplayCopyAllDisplayModes(_ display: CGDirectDisplayID, _ options: CFDic
 extern CFArrayRefCGDisplayCopyAllDisplayModes(CGDirectDisplayID display, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An array of display modes that the display supports, or `NULL` if the display is invalid. The caller is responsible for releasing the array. For more information on accessing the properties of a display mode, see [Getting Information About a Display Mode](./quartz-display-services.md#Getting-Information-About-a-Display-Mode).
 

@@ -19,7 +19,7 @@ var kFxError_ThirdPartyDeveloperStart: Int { get }
 kFxError_ThirdPartyDeveloperStart
 ```
 
-#### Discussion
+## Discussion
 
 All third-party error values should be `>= 100000` if none of the above error enumeration values are sufficient.
 

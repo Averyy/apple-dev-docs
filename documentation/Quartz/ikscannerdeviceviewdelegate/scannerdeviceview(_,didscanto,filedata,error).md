@@ -19,7 +19,7 @@ optional func scannerDeviceView(_ scannerDeviceView: IKScannerDeviceView!, didSc
 - (void) scannerDeviceView:(IKScannerDeviceView *) scannerDeviceView didScanToURL:(NSURL *) url fileData:(NSData *) data error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the scan has completed..
 

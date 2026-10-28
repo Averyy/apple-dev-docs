@@ -22,7 +22,7 @@ init(value: Any?, forProperty property: String, comparisonType: MPMediaPredicate
 + (MPMediaPropertyPredicate *) predicateWithValue:(id) value forProperty:(NSString *) property comparisonType:(MPMediaPredicateComparison) comparisonType;
 ```
 
-#### Return Value
+## Return Value
 
 A media property predicate.
 

@@ -6,31 +6,34 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.kr
 
 # mlx.core.kron
 
-**kron(*a: array*, *b: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Compute the Kronecker product of two arrays `a` and `b`.
+```python
+kron(a: array, b: array, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Compute the Kronecker product of two arrays `a` and `b`.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – The first input array.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – The second input array.
-**stream** (*StreamOrDevice**, **optional*) – Optional stream or
+**Parameters:**
+
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – The first input array.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – The second input array.
+- **stream** (*StreamOrDevice*, *optional*) – Optional stream or
 device for execution. Default: `None`.
 
-Returns:
-The Kronecker product of `a` and `b`.
+**Returns:**
+: The Kronecker product of `a` and `b`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)
 
 Examples
 
-  ```
-  >>> a = mx.array([[1, 2], [3, 4]])
-  >>> b = mx.array([[0, 5], [6, 7]])
-  >>> result = mx.kron(a, b)
-  >>> print(result)
-  array([[0, 5, 0, 10],
-         [6, 7, 12, 14],
-         [0, 15, 0, 20],
-         [18, 21, 24, 28]], dtype=int32)
-  ```
+```
+>>> a = mx.array([[1, 2], [3, 4]])
+>>> b = mx.array([[0, 5], [6, 7]])
+>>> result = mx.kron(a, b)
+>>> print(result)
+array([[0, 5, 0, 10],
+       [6, 7, 12, 14],
+       [0, 15, 0, 20],
+       [18, 21, 24, 28]], dtype=int32)
+```

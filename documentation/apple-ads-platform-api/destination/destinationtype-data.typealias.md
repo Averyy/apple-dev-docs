@@ -20,11 +20,11 @@ string Destination.DestinationType
 - `APP_STORE_PRODUCT_PAGE`: Directs users to the app’s product page in the App Store. Used with `DEFAULT_PRODUCT_PAGE` and `CUSTOM_PRODUCT_PAGE` creative types.
 - `LOCAL_ADS_PLACECARD`: Directs users to the brand’s Maps place card. The only supported destination for Apple Maps ad creatives.
 
-#### Discussion
+## Discussion
 
 This mirrors the destination type set when the ad creative was created, tying App Store ad creatives to `APP_STORE_PRODUCT_PAGE` and Apple Maps ad creatives to `LOCAL_ADS_PLACECARD`.
 
-##### Example
+### Example
 
 ```json
 {

@@ -21,7 +21,7 @@ func SecKeychainSetSettings(_ keychain: SecKeychain?, _ newSettings: UnsafePoint
 OSStatus SecKeychainSetSettings(SecKeychainRef keychain, const SecKeychainSettings *newSettings);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

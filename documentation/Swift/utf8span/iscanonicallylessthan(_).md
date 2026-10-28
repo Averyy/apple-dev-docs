@@ -21,7 +21,7 @@ Whether `self` orders less than `other` under Unicode Canonical Equivalence usin
 func isCanonicallyLessThan(_ other: UTF8Span) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(n)
 

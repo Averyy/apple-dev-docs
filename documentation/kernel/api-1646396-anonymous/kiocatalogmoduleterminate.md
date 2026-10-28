@@ -13,7 +13,7 @@
 kIOCatalogModuleTerminate
 ```
 
-#### Discussion
+## Discussion
 
 Terminates all services which depend on a particular module but does not unload the module.
 

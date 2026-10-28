@@ -23,11 +23,11 @@ func update<Element>(fromContentsOf source: some Collection) -> Slice<Base>.Inde
 
 Available when `Base` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 An index one past the index of the last element updated.
 
-#### Discussion
+## Discussion
 
 Prior to calling the `update(fromContentsOf:)` method on a buffer slice, the first `source.count` elements of the referenced memory must be initialized, or the `Element` type must be a trivial type. The buffer slice must reference enough initialized memory to accommodate `source.count` elements.
 

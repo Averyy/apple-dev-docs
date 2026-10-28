@@ -4,7 +4,7 @@
 
 A set of methods that provide options to recover from an error.
 
-#### Overview
+## Overview
 
 The `NSErrorRecoveryAttempting` informal protocol provides methods that allow your application to attempt to recover from an error. These methods are invoked when an `NSError` object is returned that specifies the implementing object as the error `recoveryAttempter` and the user has selected one of the error’s localized recovery options. The method invoked depends on how the error is presented to the user. If the error is presented in a document-modal sheet, [`attemptRecovery(fromError:optionIndex:delegate:didRecoverSelector:contextInfo:)`](../ObjectiveC/nsobject-swift.class/attemptrecovery%28fromerror,optionindex,delegate,didrecoverselector,contextinfo%29.md) is invoked. If the error is presented in an application-modal dialog, [`attemptRecovery(fromError:optionIndex:)`](../ObjectiveC/nsobject-swift.class/attemptrecovery%28fromerror,optionindex%29.md) is invoked.
 

@@ -25,7 +25,7 @@ var kColorSyncAlternateGainCurveInfo: Unmanaged<CFString>
 extern CFStringRef kColorSyncAlternateGainCurveInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Count equals [`kColorSyncAlternateCurveCount`](./kcolorsyncalternatecurvecount.md). Only present when the alternate curve count is greater than 0. See the alternate curve keys below.
 

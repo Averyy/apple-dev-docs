@@ -28,7 +28,7 @@ var enforceRoutes: Bool { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md) when the [`includeAllNetworks`](./includeallnetworks.md) property is [`false`](../../Swift/false.md), the system scopes the included routes to the VPN and the excluded routes to the current primary network interface. This property supersedes the system routing table and scoping operations by apps.
 

@@ -12,7 +12,7 @@ Provide a continuous user experience by capturing information from your app and 
 - Mac Catalyst 14.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample app shows a list of pizza restaurants, near your current location, in a table view. Select a restaurant from the table view to donate its location information to the system as a user activity object. The system then displays the registered location information proactively as suggestions, such as in Search, used with Siri Shortcuts.
 
@@ -20,7 +20,7 @@ When a user interacts with a proactive suggestion, the system continues the acti
 
 When donating location information, this sample app also verifies whether the previously captured information appears, as QuickType keyboard suggestions, within other apps installed on a device.
 
-##### Declare a User Activity Type
+### Declare a User Activity Type
 
 You implement proactive suggestions by determining specific activities that a user can perform in your app, and whose state you can recreate at a later time. The sample app has one user activity, `view-location`, which represents the user viewing details of a specific restaurant location.
 
@@ -33,7 +33,7 @@ In the sample app, the target includes the `view-location` activity in its [`Inf
 </array>
 ```
 
-##### Manage a User Activity
+### Manage a User Activity
 
 At runtime, you represent a user activity with the [`NSUserActivity`](./nsuseractivity.md) object. You initialize a user activity object with a string identifier, the same one declared earlier in the `Info.plist` file.
 
@@ -63,7 +63,7 @@ if let phoneNumber = mapItem.phoneNumber {
 activity.addUserInfoEntries(from: userInfo)
 ```
 
-##### Provide Support for Improved Search Results
+### Provide Support for Improved Search Results
 
 If your user activity objects contain information that the user might want to search for later, you can have Search index those objects and consider them during subsequent on-device searches.
 
@@ -88,7 +88,7 @@ activity.contentAttributeSet?.thumbnailData = #imageLiteral(resourceName: "pizza
 
 To learn more about Search, see [App Search Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch).
 
-##### Provide Support for Shortcuts
+### Provide Support for Shortcuts
 
 Siri learns about the shortcuts available to your app through donations that your app makes to Siri. You can make donations from a user activity when the action involves a view within your app, such as the sample app, which displays a list of nearby restaurants.
 
@@ -104,7 +104,7 @@ During development, the system provides developer settings to modify the display
 
 For more information, see [Donating Shortcuts](../SiriKit/donating-shortcuts.md).
 
-##### Provide Support for Sharing
+### Provide Support for Sharing
 
 If your user-activity object contains information about a webpage, your users can share that webpage with others through Siri. For example, the user can share the pizza restaurant they’re viewing by asking Siri to “share this”, to send a message that contains the webpage URL to another user. Siri uses the URL stored by the app in the [`webpageURL`](./nsuseractivity/webpageurl.md) on the user activity.
 
@@ -113,7 +113,7 @@ If your user-activity object contains information about a webpage, your users ca
 activity.webpageURL = mapItem?.url
 ```
 
-##### Handle Activities
+### Handle Activities
 
 When a user interacts with a proactive suggestion for your app, such as through Siri Shortcuts, the system restores your app to the foreground, receives data associated with its user activity, and calls [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md).
 
@@ -169,7 +169,7 @@ override func restoreUserActivityState(_ activity: NSUserActivity) {
 }
 ```
 
-##### Verify QuickType Keyboard Integration
+### Verify QuickType Keyboard Integration
 
 Text fields describe the intended purpose of input data, like a region’s name or postal code, via the [`textContentType`](../UIKit/uitextinputtraits/textcontenttype.md) property. If any app on the device recently donated information matching the expected text content type, that information is suggested in the QuickType keyboard as the user types in the text field.
 

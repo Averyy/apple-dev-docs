@@ -23,7 +23,7 @@ static var backwards: CFDataSearchFlags { get }
 kCFDataSearchBackwards
 ```
 
-#### Discussion
+## Discussion
 
 Performs searching from the end of the range toward the beginning.
 

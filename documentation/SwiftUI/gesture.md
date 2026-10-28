@@ -22,7 +22,7 @@ An instance that matches a sequence of events to a gesture, and returns a stream
 @preconcurrency protocol Gesture<Value>
 ```
 
-#### Overview
+## Overview
 
 Create custom gestures by declaring types that conform to the `Gesture` protocol.
 

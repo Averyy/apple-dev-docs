@@ -9,7 +9,7 @@ List the blocked player IDs for a Game Center detail.
 **Availability**:
 - App Store Connect API 4.5+
 
-#### Overview
+## Overview
 
 The response contains the blocked players’ resource identifiers in a [`GameCenterDetailBlockedPlayersLinkagesResponse`](./gamecenterdetailblockedplayerslinkagesresponse.md).
 

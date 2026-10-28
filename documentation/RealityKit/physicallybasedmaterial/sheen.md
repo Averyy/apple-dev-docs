@@ -24,7 +24,7 @@ var sheen: PhysicallyBasedMaterial.SheenColor? { get set }
 
 - [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
-#### Discussion
+## Discussion
 
 For a [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md), object, you can use `sheen` to add soft specular highlights that simulate subtle reflections like the ones that occur with some materials, primarily fabrics. You can specify `sheen` using a single color, or you can provide a UV-mapped image.
 

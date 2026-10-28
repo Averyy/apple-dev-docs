@@ -16,7 +16,7 @@ Tells an AudioObject to change the value of the given property using the  provid
 func setPropertyData(address: AudioObjectPropertyAddress, qualifier: Data? = nil, data: inout Data) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The async variation of setPropertyValue does not return until the property has been set.
 

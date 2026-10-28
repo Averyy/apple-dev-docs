@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatRotateByQuaternion(SPVector3DFloat vector, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A vector that’s rotated by the specified quaternion.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s rotated by the specified quaternion around the origin.
 

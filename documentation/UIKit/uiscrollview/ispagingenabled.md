@@ -22,7 +22,7 @@ var isPagingEnabled: Bool { get set }
 @property (nonatomic, getter=isPagingEnabled) BOOL pagingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the scroll view stops on multiples of the scroll view’s bounds when the user scrolls. The default value is [`false`](../../Swift/false.md).
 

@@ -41,7 +41,7 @@ var lightColor: NSColor { get set }
 @property (nonatomic) NSColor * lightColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is white.
 

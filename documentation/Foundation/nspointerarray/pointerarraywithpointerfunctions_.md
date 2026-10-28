@@ -21,7 +21,7 @@ A new pointer array initialized to use the given functions.
 + (NSPointerArray *) pointerArrayWithPointerFunctions:(NSPointerFunctions *) functions;
 ```
 
-#### Return Value
+## Return Value
 
 A new pointer array initialized to use the given pointer functions.
 

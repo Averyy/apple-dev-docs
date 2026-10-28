@@ -19,7 +19,7 @@ init(regionID: UInt8, size: UInt64)
 - (instancetype) initWithRegionID:(uint8_t) regionID size:(uint64_t) size;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`VZVirtioSharedMemoryRegionConfiguration`](../vzvirtiosharedmemoryregionconfiguration.md).
 

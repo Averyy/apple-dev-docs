@@ -19,7 +19,7 @@ Select strokes/elements on a canvas.
 case selection
 ```
 
-#### Discussion
+## Discussion
 
 `.indirectPointer` touches can marquee select multiple elements when dragging on the canvas.
 

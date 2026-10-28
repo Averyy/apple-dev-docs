@@ -24,7 +24,7 @@ var originator: AVCoordinatedPlaybackParticipant? { get }
 @property (nonatomic, readonly, nullable) AVCoordinatedPlaybackParticipant * originator;
 ```
 
-#### Discussion
+## Discussion
 
 Only commands that the system issues on behalf of another participant contain an originator. Local commands to coordinate rate change, or those that originate from a call to [`reapplyCurrentItemStateToPlaybackControlDelegate()`](../avdelegatingplaybackcoordinator/reapplycurrentitemstatetoplaybackcontroldelegate%28%29.md), don’t.
 

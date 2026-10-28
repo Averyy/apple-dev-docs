@@ -20,7 +20,7 @@ A definition of joint rotation limits.
 struct LimitsDefinition
 ```
 
-#### Overview
+## Overview
 
 Limit angles are defined as relative to the rest pose.
 

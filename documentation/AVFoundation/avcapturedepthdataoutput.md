@@ -22,7 +22,7 @@ class AVCaptureDepthDataOutput
 @interface AVCaptureDepthDataOutput : AVCaptureOutput
 ```
 
-#### Overview
+## Overview
 
 This output type captures [`AVDepthData`](./avdepthdata.md) objects containing per-pixel depth or disparity information, following a streaming delivery model similar to that used by [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md). Alternatively, you can capture depth data alongside photos using [`AVCapturePhotoOutput`](./avcapturephotooutput.md) (see the [`AVCapturePhotoSettings`](./avcapturephotosettings.md) [`isDepthDataDeliveryEnabled`](./avcapturephotosettings/isdepthdatadeliveryenabled.md) property).
 

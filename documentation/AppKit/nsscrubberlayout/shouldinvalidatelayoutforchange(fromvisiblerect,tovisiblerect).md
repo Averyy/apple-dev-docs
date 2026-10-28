@@ -19,7 +19,7 @@ func shouldInvalidateLayoutForChange(fromVisibleRect: NSRect, toVisibleRect: NSR
 - (BOOL) shouldInvalidateLayoutForChangeFromVisibleRect:(NSRect) fromVisibleRect toVisibleRect:(NSRect) toVisibleRect;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the scrubber invalidates its layout in response to a change of the visible region, in response to a user scroll action, or to the scrubber being resized. Subclasses that rely on the size or origin of the visible region should return [`true`](../../Swift/true.md).
 

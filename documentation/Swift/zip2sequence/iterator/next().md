@@ -23,7 +23,7 @@ mutating func next() -> Zip2Sequence<Sequence1, Sequence2>.Iterator.Element?
 
 Available when `Sequence1` conforms to `Sequence` and `Sequence2` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

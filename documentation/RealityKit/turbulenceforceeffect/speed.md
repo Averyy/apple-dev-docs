@@ -20,7 +20,7 @@ The effect’s variation over time.
 let speed: Float
 ```
 
-#### Discussion
+## Discussion
 
 Specify `0.0` for a static force field.
 

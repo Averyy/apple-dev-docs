@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatMake(SPRay3D ray);
 ```
 
-#### Return Value
+## Return Value
 
 A new ray.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision ray from a double-precision ray.
 

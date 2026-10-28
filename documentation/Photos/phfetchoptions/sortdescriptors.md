@@ -24,7 +24,7 @@ var sortDescriptors: [NSSortDescriptor]? { get set }
 @property (nonatomic, strong, nullable) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 Construct sort descriptors with the properties of the objects that you want to fetch, listed in the [`PHFetchOptions`](../phfetchoptions.md) table. For example, the following code sorts by creation date to find the oldest asset in the photo library.
 

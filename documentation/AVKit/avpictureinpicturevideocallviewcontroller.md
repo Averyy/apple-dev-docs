@@ -26,7 +26,7 @@ class AVPictureInPictureVideoCallViewController
 
 - [Adopting Picture in Picture for video calls](./adopting-picture-in-picture-for-video-calls.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  In iOS 16 and later, you can use the camera in Picture in Picture mode by enabling a capture session’s [`isMultitaskingCameraAccessEnabled`](../AVFoundation/avcapturesession/ismultitaskingcameraaccessenabled.md) property. Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](../BundleResources/entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md) entitlement to use the camera in PiP mode.
 

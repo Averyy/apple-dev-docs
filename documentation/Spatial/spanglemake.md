@@ -19,11 +19,11 @@
 static SPAngle SPAngleMake(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 A new angle structure.
 
-#### Discussion
+## Discussion
 
 Returns a double-precision angle from a single-precision angle.
 

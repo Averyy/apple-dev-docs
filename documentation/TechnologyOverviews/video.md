@@ -6,13 +6,13 @@ Build video playback, capture, and editing apps that support advanced system fea
 
 To build a video playback app, a custom video camera, or a full-featured editing suite, use [AVFoundation](../AVFoundation/AVFoundation.md), Apple’s powerful framework for working with time-based media. It provides the foundation for most video experiences in iOS, macOS, tvOS, and visionOS—handling everything from high-performance playback, capture, export, and more. Combined with support for system features like AirPlay, Picture in Picture, and background playback, it enables you to create feature-rich apps that are intuitive and integrate seamlessly with the operating system.
 
-#### Prepare video assets for playback
+## Prepare video assets for playback
 
 The video that your app plays can come in different formats, encodings, and locations. So that you can focus on delivering the functionality you want without without concern for these details, AVFoundation provides the [`AVAsset`](../AVFoundation/avasset.md) class. You create an asset object by passing it a URL that represents the media you want to play, which can be a file-based content that exists on the local device, resides on a remote server, or is streamed over the internet. In all cases, the framework does the work to efficiently retrieve, load, and prepare the asset leaving you with a simple, uniform interface to inspect and play it.
 
 Although Apple platforms provide support for several video formats, most video playback involves video encoded using H.264 (AVC) or H.265 (HEVC). This content can reside in container formats like QuickTime movies (`.mov`) and MPEG-4 files (`.mp4`, `.m4v`), or be delivered using HTTP Live Streaming (`.ts`, and `.fMP4`). Apple devices provide hardware-accelerated decoding of either format, but HEVC is the recommended choice for efficiently delivering and playing 4K, high-dynamic-range (HDR) video.
 
-#### Play video content
+## Play video content
 
 Playing video is a great way to enhance your app’s user experience by delivering engaging content that captures people’s attention, communicates information effectively, and adds emotional impact. Whether you’re streaming full-length media, providing interactive tutorials, or incorporating visual elements into your user interface, video plays a crucial role in bringing your app to life. Using Apple’s powerful video frameworks like AVKit and AVFoundation makes it straightforward to add these features to your app.
 
@@ -27,7 +27,7 @@ Your app can also present video outside of a typical player experience. For exam
 
 > **Note**: In addition to the powerful playback capabilities that AVFoundation and AVKit provide across all platforms, they offer enhanced capabilities when playing video on Apple Vision Pro by supporting deeply [immersive playback](./immersive-media.md) experiences.
 
-#### Capture video content
+## Capture video content
 
 If you’re interested in building a camera app, AVFoundation provides a rich set of features to capture video using built-in and external cameras. Camera apps are built around the framework’s [`AVCaptureSession`](../AVFoundation/avcapturesession.md) class. You use a capture session to connect inputs from cameras and microphones, attach them to outputs like movie files and streams, and start and stop the capture pipeline. On all supported platforms, the framework provides a wide variety of capabilities that enable you to perform high-performance capture, provide realtime preview, and support precise control of camera hardware. On iPhone devices, AVFoundation supports additional features including capturing [Cinematic](../Cinematic/Cinematic.md) video, that enables advanced cinematography effects, and [Spatial video](./immersive-media.md) for playback on Apple Vision Pro.
 
@@ -44,7 +44,7 @@ If you would instead like to capture video from a device screen, Apple also offe
 
 Whether your app captures video from cameras or the screen, a great companion framework is [PhotoKit](../PhotoKit/PhotoKit.md). It provides the interface to save and interact with a person’s Photo Library, which serves as the central repository for all photos and videos on Apple devices. By adopting PhotoKit, you ensure that people can store captured videos in the same place they expect to find all their memories.
 
-#### Edit video content
+## Edit video content
 
 AVFoundation provides a versatile set of APIs for editing time-based media, allowing you to build anything from simple trimming tools to professional-grade, nonlinear video editors. The editing features of AVFoundation are built around the `AVComposition` and `AVMovie` classes. While these classes provide some similar functionality, they’re intended to support different use cases:
 
@@ -53,7 +53,7 @@ AVFoundation provides a versatile set of APIs for editing time-based media, allo
 
 If you’re interested in building an app to integrate with Final Cut Pro, Motion, or Compressor, or extend their features, use the [Professional Video Applications](../professional_video_applications/professional_video_applications.md) framework. This is a macOS framework that you use to exchange data with Final Cut Pro, create effects plug-ins for Final Cut Pro and Motion, and support custom output formats in Compressor.
 
-#### Perform advanced video processing
+## Perform advanced video processing
 
 In addition to the higher-level functionality that AVFoundation provides for working with timed media, it also provides lower-level [`AVAssetReader`](../AVFoundation/avassetreader.md) and [`AVAssetWriter`](../AVFoundation/avassetwriter.md) classes when you need to work directly with media samples. You can use these interfaces, along with the frameworks on which AVFoundation is built, to create advanced processing pipelines that support any video use case. These supporting frameworks include the following:
 

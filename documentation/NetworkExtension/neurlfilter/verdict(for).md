@@ -18,11 +18,11 @@ Determines if accessing the specified URL is allowed or denied.
 class func verdict(for url: URL) async -> NEURLFilter.Verdict
 ```
 
-#### Return Value
+## Return Value
 
 A [`NEURLFilter.Verdict`](./verdict.md) that indicates whether the filter allows or denies connecting to the URL. If the verdict is deny, the caller should fail the URL request.
 
-#### Discussion
+## Discussion
 
 Callers should honor the return verdict to prevent communication with restricted or malicious sites.
 

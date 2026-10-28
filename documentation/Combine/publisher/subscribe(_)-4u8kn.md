@@ -21,7 +21,7 @@ Attaches the specified subscriber to this publisher.
 func subscribe<S>(_ subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input
 ```
 
-#### Discussion
+## Discussion
 
 Always call this function instead of [`receive(subscriber:)`](./receive%28subscriber%29.md). Adopters of [`Publisher`](../publisher.md) must implement [`receive(subscriber:)`](./receive%28subscriber%29.md). The implementation of [`subscribe(_:)`](./subscribe%28_%29-4u8kn.md) provided by [`Publisher`](../publisher.md) calls through to [`receive(subscriber:)`](./receive%28subscriber%29.md).
 

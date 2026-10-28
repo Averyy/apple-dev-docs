@@ -29,11 +29,11 @@ Available when `Failure` is `Never`.
 - [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 - [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
-#### Return Value
+## Return Value
 
 An [`AnyCancellable`](../anycancellable.md) instance. Call [`cancel()`](../cancellable/cancel%28%29.md) on this instance when you no longer want the publisher to automatically assign the property. Deinitializing this instance will also cancel automatic assignment.
 
-#### Discussion
+## Discussion
 
 Use the [`assign(to:on:)`](./assign%28to,on%29.md) subscriber when you want to set a given property each time a publisher produces a value.
 

@@ -27,11 +27,11 @@ func la_vector_from_matrix_diagonal(_ matrix: la_object_t, _ matrix_diagonal: la
 extern la_object_tla_vector_from_matrix_diagonal(la_object_t matrix, la_index_t matrix_diagonal);
 ```
 
-#### Return Value
+## Return Value
 
 The resulting vector is a length x 1 vector where length is `min(rows(matrix),cols(matrix)-abs(matrix_diagonal)`
 
-#### Discussion
+## Discussion
 
 Creates a vector from the specified diagonal of the matrix.  If the value for `matrix_diagonal` is less than zero and `abs(matrix_diagonal) > rows(matrix)-1`, or if `matrix_diagonal` is greater than zero and `matrix_diagonal >  cols(matrix)-1`, `LA_INVALID_PARAMETER_ERROR` is returned.
 

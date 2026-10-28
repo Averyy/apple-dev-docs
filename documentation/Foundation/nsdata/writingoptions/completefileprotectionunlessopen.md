@@ -25,7 +25,7 @@ static var completeFileProtectionUnlessOpen: NSData.WritingOptions { get }
 NSDataWritingFileProtectionCompleteUnlessOpen
 ```
 
-#### Discussion
+## Discussion
 
 In this case, your app cannot open the file to read it or write to it when the device is locked, but your app can create new files with this class. If one of these files is open when the device is locked, your app can read and write to the opened file.
 

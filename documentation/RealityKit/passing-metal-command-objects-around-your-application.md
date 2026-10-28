@@ -5,13 +5,13 @@
 
 Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
 
-#### Overview
+## Overview
 
-To dispatch a Metal compute shader function, you need a command queue, a command buffer, and a compute command encoder. Creating these command objects comes at a cost, so avoid making them on demand whenever you need to dispatch a compute shader function (see [Setting Up a Command Structure](../Metal/gpu_devices_and_work_submission/setting_up_a_command_structure.md)). Instead, for single-threaded apps, employ a single command queue for the entirety of the application, as well as a single command buffer and compute command encoder for all compute commands that you dispatch in every frame.
+To dispatch a Metal compute shader function, you need a command queue, a command buffer, and a compute command encoder. Creating these command objects comes at a cost, so avoid making them on demand whenever you need to dispatch a compute shader function (see [Setting Up a Command Structure](../Metal/setting-up-a-command-structure.md)). Instead, for single-threaded apps, employ a single command queue for the entirety of the application, as well as a single command buffer and compute command encoder for all compute commands that you dispatch in every frame.
 
 The [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md) sample demonstrates one possible approach to managing the life cycle and injection of these command objects throughout an application. Leverage RealityKit’s [Entity Component System](./system.md) (ECS) to pass an [MTLCommandBuffer](../Metal/mtlcommandbuffer.md) and an [MTLComputeCommandEncoder](../Metal/mtlcomputecommandencoder.md) to each entity dispatching compute shaders in every frame, while maintaining a single global [MTLCommandQueue](../Metal/mtlcommandqueue.md) for the entire application.
 
-#### Define a compute system protocol
+## Define a compute system protocol
 
 Start by creating a structure that contains the context necessary to dispatch compute shader functions in every frame:
 
@@ -39,7 +39,7 @@ protocol ComputeSystem {
 }
 ```
 
-#### Dispatch compute systems with RealityKit’s ECS
+## Dispatch compute systems with RealityKit’s ECS
 
 Create a component that holds a `ComputeSystem`:
 
@@ -112,7 +112,7 @@ func makeCommandQueue(labeled label: String) -> MTLCommandQueue? {
 }
 ```
 
-#### Create a custom compute system
+## Create a custom compute system
 
 You can dispatch your compute shader functions in every frame by creating a custom `ComputeSystem` and implementing its `update` method:
 

@@ -18,7 +18,7 @@ An option that enables all interaction types except image subjects and Visual Lo
 static let automaticTextOnly: ImageAnalysisInteraction.InteractionTypes
 ```
 
-#### Discussion
+## Discussion
 
 This option represents the [`automatic`](./automatic.md) type, but excludes the [`imageSubject`](./imagesubject.md) and [`visualLookUp`](./visuallookup.md) types.
 

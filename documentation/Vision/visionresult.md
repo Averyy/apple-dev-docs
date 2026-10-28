@@ -21,7 +21,7 @@ The result the framework produces by performing a request.
 enum VisionResult
 ```
 
-#### Overview
+## Overview
 
 Each result contains the original [`VisionRequest`](./visionrequest.md), along with any observations produced.
 

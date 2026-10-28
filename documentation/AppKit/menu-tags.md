@@ -5,7 +5,7 @@
 
 Constants for identifying special menu items in the search-menu template.
 
-#### Overview
+## Overview
 
 When an `NSSearchFieldCell` object dynamically constructs the actual search menu from this template, it shows or hides the tagged items as directed.
 

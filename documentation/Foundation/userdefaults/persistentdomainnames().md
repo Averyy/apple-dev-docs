@@ -26,11 +26,11 @@ func persistentDomainNames() -> [Any]
 - (NSArray *) persistentDomainNames;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects containing the domain names.
 
-#### Discussion
+## Discussion
 
 You can get the keys and values for each domain by passing the returned domain names to the  [`persistentDomain(forName:)`](./persistentdomain%28forname%29.md) method.
 

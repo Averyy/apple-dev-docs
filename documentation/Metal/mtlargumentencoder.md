@@ -28,7 +28,7 @@ protocol MTLArgumentEncoder : NSObjectProtocol
 
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Overview
+## Overview
 
 An [`MTLArgumentEncoder`](./mtlargumentencoder.md) instance encodes buffers, textures, samplers, and inlined constant data into an argument buffer. An [`MTLBuffer`](./mtlbuffer.md) instance represents the argument buffer that you set as the encoding destination by calling the [`setArgumentBuffer(_:offset:)`](./mtlargumentencoder/setargumentbuffer%28_,offset%29.md) method.
 

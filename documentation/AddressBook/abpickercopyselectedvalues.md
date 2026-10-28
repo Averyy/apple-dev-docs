@@ -15,7 +15,7 @@ Returns the selected values in a multi-value property or an empty array if no va
 extern CFArrayRefABPickerCopySelectedValues(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 An array of the values selected.
 

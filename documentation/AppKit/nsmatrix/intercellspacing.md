@@ -19,7 +19,7 @@ var intercellSpacing: NSSize { get set }
 @property NSSize intercellSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 By default, both values are `1.0` in the matrix’s coordinate system.
 

@@ -5,19 +5,19 @@
 
 Enhance the debugging of your Metal app using labels and grouping.
 
-#### Overview
+## Overview
 
 Resource labels and command debug groups are useful when debugging and profiling your app using Metal tools. Assigning meaningful resource labels helps you find your specific resources more quickly. Logically grouping commands lets you easily navigate the workload after capturing it.
 
 > **Note**: The properties and methods described here don’t affect the graphics-rendering or compute-processing behavior of your app.
 
-##### Annotate resources
+### Annotate resources
 
 Many Metal objects provide a [`label`](../Metal/mtlresource/label.md) property where you can assign a meaningful string. These labels appear in each Metal tool, allowing you to easily identify specific objects.
 
 In addition, for [`MTLBuffer`](../Metal/mtlbuffer.md), the [`addDebugMarker(_:range:)`](../Metal/mtlbuffer/adddebugmarker%28_,range%29.md) method allows you to mark and identify specific data ranges. You can call the [`removeAllDebugMarkers()`](../Metal/mtlbuffer/removealldebugmarkers%28%29.md) method to clear the existing markers.
 
-##### Annotate commands
+### Annotate commands
 
 Command buffers and command encoders provide the following methods for you to easily identify specific groups of Metal commands in your app:
 

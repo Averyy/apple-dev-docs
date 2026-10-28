@@ -25,7 +25,7 @@ case failure
 INAppendToNoteIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that prevented you from updating the note.
 

@@ -30,7 +30,7 @@ var reservationIdentifier: String? { get set }
 @property (atomic, copy, nullable) NSString * reservationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When the system wants to display a specific reservation, this property contains the identifier for that reservation. Use this identifier to fetch only the specified reservation. When this property is `nil`, return all of the user’s current reservations, or those specific to the restaurant listed in the [`restaurant`](./restaurant.md) property.
 

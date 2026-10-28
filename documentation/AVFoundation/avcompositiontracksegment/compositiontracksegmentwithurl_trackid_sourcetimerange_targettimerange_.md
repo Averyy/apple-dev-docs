@@ -21,7 +21,7 @@ Returns a new an object that presents a segment of a media file that the specifi
 + (instancetype) compositionTrackSegmentWithURL:(NSURL *) URL trackID:(CMPersistentTrackID) trackID sourceTimeRange:(CMTimeRange) sourceTimeRange targetTimeRange:(CMTimeRange) targetTimeRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new composition track segment.
 

@@ -9,9 +9,9 @@ Get the status of the content caches on a device.
 **Availability**:
 - macOS 10.15.4+
 
-#### Discussion
+## Discussion
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |

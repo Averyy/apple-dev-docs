@@ -14,7 +14,7 @@ Hover State to define custom hover effects.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Output | Type |
 | --- | --- |

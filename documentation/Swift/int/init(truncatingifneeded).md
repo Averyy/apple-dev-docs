@@ -21,7 +21,7 @@ Creates a new instance from the bit pattern of the given instance by sign-extend
 init<T>(truncatingIfNeeded source: T) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 When the bit width of `T` (the type of `source`) is equal to or greater than this type’s bit width, the result is the truncated least-significant bits of `source`. For example, when converting a 16-bit value to an 8-bit type, only the lower 8 bits of `source` are used.
 

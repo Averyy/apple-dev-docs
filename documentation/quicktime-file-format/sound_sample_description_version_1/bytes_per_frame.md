@@ -6,7 +6,7 @@
 
 The number of bytes in a frame.
 
-#### Overview
+## Overview
 
 For uncompressed audio, the number of bytes in an uncompressed frame; for compressed audio, the number of bytes in a compressed frame. This can be calculated by multiplying the bytes per packet field by the number of channels.
 

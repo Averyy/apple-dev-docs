@@ -17,7 +17,7 @@ A compression behavior that prefers keeping the tab bar visible.
 static let prefersTabBar: ToolbarVerticalCompressionBehavior
 ```
 
-#### Discussion
+## Discussion
 
 Toolbar items will compress before tab bar items when space is constrained.
 

@@ -24,11 +24,11 @@ class func convolution3X3() -> any CIFilter & CIConvolution
 + (CIFilter<CIConvolution> *) convolution3X3Filter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a 3 x 3 convolution to the `RGBA` components of an image. The effect uses a 3 x 3 area surrounding an input pixel, the pixel itself, and those within a distance of 1 pixel horizontally and vertically. The effect repeats this for every pixel within the image. The work area is then combined with the weight property vector to produce the processed image. This filter differs from the [`convolutionRGB3X3()`](./convolutionrgb3x3%28%29.md), which only processes the `RGB` color components.
 

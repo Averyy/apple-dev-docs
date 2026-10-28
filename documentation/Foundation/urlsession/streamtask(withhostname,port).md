@@ -25,11 +25,11 @@ func streamTask(withHostName hostname: String, port: Int) -> URLSessionStreamTas
 - (NSURLSessionStreamTask *) streamTaskWithHostName:(NSString *) hostname port:(NSInteger) port;
 ```
 
-#### Return Value
+## Return Value
 
 The new session stream task.
 
-#### Discussion
+## Discussion
 
 After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method.
 

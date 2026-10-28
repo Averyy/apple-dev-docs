@@ -27,7 +27,7 @@ optional func setParentTab(_ parentTab: (any WKWebExtensionTab)?, for context: W
 - (void) setParentTab:(id<WKWebExtensionTab>) parentTab forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 No action is performed if not implemented.
 

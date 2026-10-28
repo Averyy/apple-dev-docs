@@ -25,7 +25,7 @@ func CFTreeInsertSibling(_ tree: CFTree!, _ newSibling: CFTree!)
 extern void CFTreeInsertSibling(CFTreeRef tree, CFTreeRef newSibling);
 ```
 
-#### Discussion
+## Discussion
 
 When a child tree is added to another tree, the child tree is retained by its new parent.
 

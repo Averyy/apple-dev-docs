@@ -19,7 +19,7 @@ static let orderedByRow: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityOrderedByRowAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an `NSNumber` as `boolValue`. A value of [`true`](../../../Swift/true.md) indicates row major order, and [`false`](../../../Swift/false.md) indicates column major order.
 

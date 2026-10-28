@@ -24,7 +24,7 @@ var isPatchData: Bool { get }
 @property (readonly, getter=isPatchData) BOOL patchData;
 ```
 
-#### Discussion
+## Discussion
 
 This value is always [`false`](../../Swift/false.md) if the vertex function is not a post-tessellation vertex function.
 

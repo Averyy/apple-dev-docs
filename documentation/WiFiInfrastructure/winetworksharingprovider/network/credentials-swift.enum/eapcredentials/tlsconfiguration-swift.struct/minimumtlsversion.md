@@ -17,7 +17,7 @@ The oldest version of Transport Layer Security (TLS) that this configuration acc
 let minimumTLSVersion: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion?
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the configuration doesn’t specify a minimum TLS version.
 

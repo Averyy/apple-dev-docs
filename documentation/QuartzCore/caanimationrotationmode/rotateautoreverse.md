@@ -22,7 +22,7 @@ static let rotateAutoReverse: CAAnimationRotationMode
 extern CAAnimationRotationMode const kCAAnimationRotateAutoReverse;
 ```
 
-#### Discussion
+## Discussion
 
 The objects travel at a 180 degree tangent to the path.
 

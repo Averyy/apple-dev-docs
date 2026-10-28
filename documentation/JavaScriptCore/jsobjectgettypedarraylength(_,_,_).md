@@ -24,7 +24,7 @@ func JSObjectGetTypedArrayLength(_ ctx: JSContextRef!, _ object: JSObjectRef!, _
 size_t JSObjectGetTypedArrayLength(JSContextRef ctx, JSObjectRef object, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The length of the typed array object, or `0` if the object isn’t a typed array object.
 

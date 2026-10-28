@@ -22,7 +22,7 @@ let kCATransactionAnimationTimingFunction: String
 extern NSString * const kCATransactionAnimationTimingFunction;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`CAMediaTimingFunction`](./camediatimingfunction.md) that overrides the timing function for all animations triggered within the transaction group.
 

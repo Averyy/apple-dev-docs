@@ -24,11 +24,11 @@ init(colorTemperatureGradientFrom colorTemperature1: Float, toColorTemperature c
 - (instancetype) initWithColorTemperatureGradientFrom:(float) colorTemperature1 toColorTemperature:(float) colorTemperature2 name:(NSString *) name textureDimensions:(vector_int2) textureDimensions;
 ```
 
-#### Return Value
+## Return Value
 
 A new color swatch texture object.
 
-#### Discussion
+## Discussion
 
 Real-world light sources often measure color of illumination based on a black-body temperature scale. For example, the colors and characterizations of typical home and office light fixtures correspond to the following temperatures:
 

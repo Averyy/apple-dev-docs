@@ -19,7 +19,7 @@ var flatness: CGFloat { get set }
 @property CGFloat flatness;
 ```
 
-#### Discussion
+## Discussion
 
 The flatness value specifies the accuracy (or smoothness) with which curves are rendered. It is also the maximum error tolerance (measured in pixels) for rendering curves, where smaller numbers give smoother curves at the expense of more computation. The exact interpretation may vary slightly on different rendering devices.
 

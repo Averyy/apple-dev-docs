@@ -22,7 +22,7 @@ func prepareInterface(for savePasswordRequest: ASSavePasswordRequest)
 - (void) prepareInterfaceForSavePasswordRequest:(ASSavePasswordRequest *) savePasswordRequest;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method to tell your extension’s view controller to prepare to present a prompt to save a password credential. After calling this method, the system presents the view controller to the user.
 

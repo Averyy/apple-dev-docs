@@ -25,7 +25,7 @@ var cumulativeBadAccessExitCount: Int { get }
 @property (readonly) NSUInteger cumulativeBadAccessExitCount;
 ```
 
-#### Discussion
+## Discussion
 
 The most common reasons for this kind of termination are an attempt to access a nonexistent or reserved memory location, or to access memory in a way that’s inconsistent with the protection level, such as writing to read-only memory.
 

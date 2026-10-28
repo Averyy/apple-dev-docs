@@ -19,7 +19,7 @@ var propertiesToUpdate: NSMenu.Properties { get }
 @property (readonly) NSMenuProperties propertiesToUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a bitwise-C `OR` set of [`NSMenu.Properties`](./properties.md) values that are applicable to the menu.
 

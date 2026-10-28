@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 10.14.1 SDK provides support for developing apps for Macs running macOS Mojave 10.14.2. The SDK comes bundled with Xcode 10.1. For information on the compatibility requirements for Xcode 10.1, see [Xcode Release Notes](../Xcode-Release-Notes/Xcode-Release-Notes.md).
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - macOS 10.14.2 requires that publicly-trusted Transport Layer Security (TLS) server authentication certificates issued after October 15, 2018 meet the [Certificate Transparency policy](https://support.apple.com/kb/HT205280) to be evaluated as trusted on Apple platforms. (41175212)
 

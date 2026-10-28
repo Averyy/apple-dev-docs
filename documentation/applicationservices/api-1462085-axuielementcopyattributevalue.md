@@ -19,7 +19,7 @@ func AXUIElementCopyAttributeValue(_ element: AXUIElement, _ attribute: CFString
 AXError AXUIElementCopyAttributeValue(AXUIElementRef element, CFStringRef attribute, CFTypeRef  _Nullable *value);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyAttributeValue` may return one of the following error codes, among others:
 

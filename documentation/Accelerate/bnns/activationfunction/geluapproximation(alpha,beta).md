@@ -23,7 +23,7 @@ An activation function that evaluates the Gaussian error linear units (GELU) app
 case geluApproximation(alpha: Float, beta: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

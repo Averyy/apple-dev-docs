@@ -21,7 +21,7 @@ An effect that doesn’t reverse each time it repeats.
 - (instancetype) effectWithNonReversing;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the symbol effect options that doesn’t reverse each time it repeats.
 

@@ -21,7 +21,7 @@ init(handler: ((CPMapButton) -> Void)? = nil)
 - (instancetype) initWithHandler:(void (^)(CPMapButton *mapButton)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized map button.
 

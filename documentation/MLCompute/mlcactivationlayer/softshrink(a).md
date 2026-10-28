@@ -23,11 +23,11 @@ class func softShrink(a: Float) -> Self
 + (instancetype) softShrinkLayerWithA:(float) a;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCActivationLayer` instance.
 
-#### Discussion
+## Discussion
 
 The [`softShrink(a:)`](./softshrink%28a%29.md) factory type method creates an activation descriptor using [`init(type:a:)`](../mlcactivationdescriptor/init%28type,a%29.md), where `type =` [`MLCActivationType.softShrink`](../mlcactivationtype/softshrink.md) and `a = lambda`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

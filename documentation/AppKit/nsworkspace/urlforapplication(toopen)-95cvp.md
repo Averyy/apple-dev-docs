@@ -19,7 +19,7 @@ func urlForApplication(toOpen contentType: UTType) -> URL?
 - (NSURL *) URLForApplicationToOpenContentType:(UTType *) contentType;
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the default app that opens the specified `contentType`. Returns `nil` if no app can open the content type.
 

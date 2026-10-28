@@ -17,7 +17,7 @@ The additional data you can include in your attributes.
 var metadata: Metadata?
 ```
 
-#### Discussion
+## Discussion
 
 The additional data can be information that describes extra UI features you want to include in your countdown UI.
 

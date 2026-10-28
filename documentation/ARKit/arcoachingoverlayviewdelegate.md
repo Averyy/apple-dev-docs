@@ -23,7 +23,7 @@ protocol ARCoachingOverlayViewDelegate : NSObjectProtocol
 @protocol ARCoachingOverlayViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement a delegate to coordinate your app’s actions with coaching overlay. For example, when the coaching overlay determines the user needs guidance, you hide your app’s UI to allow the user to focus on the coaching experience. When the coaching overlay determines the [`goal`](./arcoachingoverlayview/goal-swift.property.md) is met, you show your app’s UI and begin your app’s AR experience.
 

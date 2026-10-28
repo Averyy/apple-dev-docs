@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionColor_Red: CFString
 extern CFStringRef const kCMTextFormatDescriptionColor_Red;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be `SInt8` for 3G or `SInt16` for QuickTime.
 

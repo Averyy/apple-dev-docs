@@ -5,7 +5,7 @@
 
 Learn the possible GPU and display configurations for a Mac and their limitations.
 
-#### Overview
+## Overview
 
 An Intel-based Mac can have multiple GPUs, and each GPU may connect to zero, one, or multiple displays. Prepare your app for various combinations of GPUs and display configurations by testing as many as possible, starting with the more common ones described below.
 
@@ -15,7 +15,7 @@ In general, each GPU in the system has its advantages and tradeoffs, depending o
 
 > 💡 **Tip**:  As an alternative to implementing a policy that selects a GPU and a display for a task, your app can suggest configurations to a person and let them decide.
 
-##### Consider various GPU and display configurations
+### Consider various GPU and display configurations
 
 For a Mac with one built-in GPU — either integrated or discrete — that GPU always drives the built-in display.
 

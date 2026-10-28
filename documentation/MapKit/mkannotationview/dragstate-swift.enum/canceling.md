@@ -23,7 +23,7 @@ case canceling
 MKAnnotationViewDragStateCanceling
 ```
 
-#### Discussion
+## Discussion
 
 A user action causes the view to cancel the drag operation. You can put an annotation view into this state to abort the operation.
 

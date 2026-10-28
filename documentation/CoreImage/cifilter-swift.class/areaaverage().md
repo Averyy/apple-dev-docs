@@ -24,11 +24,11 @@ class func areaAverage() -> any CIFilter & CIAreaAverage
 + (CIFilter<CIAreaAverage> *) areaAverageFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 1 x 1 pixel image containing the average color for the region of interest.
 
-#### Discussion
+## Discussion
 
 This filter calculates the average color of the area defined by `extent` and creates a 1 x 1 pixel image with the result. The filter processes each color component (red, green, blue, alpha) of the input image independently.
 

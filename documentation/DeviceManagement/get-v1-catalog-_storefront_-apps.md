@@ -9,9 +9,9 @@ Fetch metadata for apps from the catalog by using their identifiers.
 **Availability**:
 - VPP License Management 2.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

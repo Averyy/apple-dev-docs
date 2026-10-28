@@ -20,7 +20,7 @@ optional func application(_ application: NSApplication, didFailToRegisterForRemo
 - (void) application:(NSApplication *) application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives this message after the [`registerForRemoteNotifications(matching:)`](../nsapplication/registerforremotenotifications%28matching%29.md) method of [`NSApplication`](../nsapplication.md) is invoked and there is an error in the registration process.
 

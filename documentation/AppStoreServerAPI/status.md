@@ -23,7 +23,7 @@ int32 status
 - `4`: The auto-renewable subscription is in a Billing Grace Period.
 - `5`: The auto-renewable subscription is revoked. The App Store refunded the transaction or revoked it from Family Sharing.
 
-#### Discussion
+## Discussion
 
 For more information about the Billing Grace Period, see [Enable Billing Grace Period for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev58bda3212).
 

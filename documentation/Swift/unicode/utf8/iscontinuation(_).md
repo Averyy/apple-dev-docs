@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the specified code unit is a UTF-8 co
 static func isContinuation(_ byte: Unicode.UTF8.CodeUnit) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `byte` is a continuation byte; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Continuation bytes take the form `0b10xxxxxx`. For example, a lowercase “e” with an acute accent above it (`"é"`) uses 2 bytes for its UTF-8 representation: `0b11000011` (195) and `0b10101001` (169). The second byte is a continuation byte.
 

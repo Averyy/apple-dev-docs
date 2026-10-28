@@ -22,7 +22,7 @@ class let currentLensPosition: Float
 extern const float AVCaptureLensPositionCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this value to the [`setFocusModeLocked(lensPosition:completionHandler:)`](./setfocusmodelocked%28lensposition,completionhandler%29.md) method to lock focus without changing the current lens position.
 

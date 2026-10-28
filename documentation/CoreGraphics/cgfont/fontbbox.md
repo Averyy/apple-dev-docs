@@ -25,7 +25,7 @@ var fontBBox: CGRect { get }
 extern CGRect CGFontGetFontBBox(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 The font bounding box is the union of all of the bounding boxes for all the glyphs in a font. The value is specified in glyph space units.
 

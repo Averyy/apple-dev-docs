@@ -5,7 +5,7 @@
 
 Download the tutorial files, and learn about what you’ll create in the introductory tutorial.
 
-#### Overview
+## Overview
 
 With Apple News Format, you can create signature visual designs for your articles in News. Use Apple News Format to bring your articles to life with beautiful typography, rich photo galleries, and compelling multimedia content. This introductory tutorial will help you create the basic design and layout of an Apple News Format article.
 
@@ -17,7 +17,7 @@ The images below show what your Apple News Format article should look like once 
 
 ![Screenshot of an Apple News article with a map on a Mac, iPad, and iPhone.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624429@2x.png)
 
-##### Choose an Option for Completing the Introductory Tutorial
+### Choose an Option for Completing the Introductory Tutorial
 
 Choose one of these options.
 
@@ -25,7 +25,7 @@ Choose one of these options.
 
 **Option 2: Preview completed files.** Follow along by looking at downloadable examples that represent the completion of each stage of this tutorial. Preview the completed articles in the [News Preview](https://developer.apple.com/news-preview/) tool.
 
-##### Download the Article Bundle Examples
+### Download the Article Bundle Examples
 
 An *article bundle* is a folder that contains the JSON that represents your article along with the article’s image files. You’ll need to download Apple News Format article bundles before beginning the introductory tutorial.
 
@@ -33,7 +33,7 @@ An *article bundle* is a folder that contains the JSON that represents your arti
 2. Download and unzip files according to the option you chose in [Choose an Option for Completing the Introductory Tutorial](./setting-up-the-introductory-tutorial.md#Choose-an-Option-for-Completing-the-Introductory-Tutorial).
 3. Move the folders that you downloaded and unzipped in the previous step into your `Desktop/News_Design_Tutorial` folder.
 
-###### Files to Download for Option 1
+#### Files to Download for Option 1
 
 If you chose option 1 in [Choose an Option for Completing the Introductory Tutorial](./setting-up-the-introductory-tutorial.md#Choose-an-Option-for-Completing-the-Introductory-Tutorial), download and unzip the following two files:
 
@@ -42,7 +42,7 @@ If you chose option 1 in [Choose an Option for Completing the Introductory Tutor
 
 > **Note**:  You can’t preview this article yet, because it doesn’t contain sufficient content. You’ll add this missing content as you work through the tutorial.
 
-###### Files to Download for Option 2
+#### Files to Download for Option 2
 
 If you chose option 2 in [Choose an Option for Completing the Introductory Tutorial](./setting-up-the-introductory-tutorial.md#Choose-an-Option-for-Completing-the-Introductory-Tutorial), download and unzip the following five files. These example files contain the code and images for the article at the completion of each stage of this tutorial.
 
@@ -52,7 +52,7 @@ If you chose option 2 in [Choose an Option for Completing the Introductory Tutor
 - [News_Design_Tutorial_5_Galleries.zip](https://developer.apple.com/apple-news/download/News_Design_Tutorial_5_Galleries.zip). This ZIP file includes an article with image collections, including a gallery and mosaic.
 - [News_Design_Tutorial_6_Embeds.zip](https://developer.apple.com/apple-news/download/News_Design_Tutorial_6_Embeds.zip). This ZIP file includes an article with embeds, including a tweet and a podcast.
 
-##### Preview the Article Bundle Examples
+### Preview the Article Bundle Examples
 
 Use [News Preview](https://developer.apple.com/news-preview/) to preview articles.
 
@@ -64,7 +64,7 @@ Use [News Preview](https://developer.apple.com/news-preview/) to preview article
 
 The simulated device automatically opens Apple News and displays the article. The preview may take a minute to load. To see the article, you don’t need to open the News app, click Next on the News welcome screen, or do anything else on the simulated device.  For more information about viewing and controlling the simulated device in News Preview, see [Simulator Help](https://help.apple.com/simulator/mac).
 
-##### Update Your Article Preview
+### Update Your Article Preview
 
 Your article preview will automatically update whenever you save changes to the `article.json` file.
 
@@ -77,7 +77,7 @@ For example:
 
 The preview updates. This may take a minute. The byline of the article now includes your name. A check mark in the News Preview window indicates that the update is complete. You don’t need to drag and drop the file again.
 
-##### Troubleshoot Your Article Preview
+### Troubleshoot Your Article Preview
 
 If the article preview doesn’t automatically update when you save changes to the `article.json` file, there may be an error in your JSON code.
 
@@ -85,7 +85,7 @@ To view any errors, in News Preview, choose Window > Console.
 
 If an error in your JSON was found, the console shows information that can help you fix the error. This information sometimes includes the line number in your code where the error was found.
 
-##### Choose a Text Editor
+### Choose a Text Editor
 
 It’s recommended that you choose a text editor designed for editing code. Although you can use any text editing software to edit your JSON files, software specifically intended for code has some important advantages:
 

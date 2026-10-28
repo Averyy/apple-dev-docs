@@ -14,7 +14,7 @@ The bundle ID of the watchOS app.
 - **Name**: `WKAppBundleIdentifier`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is automatically included in your WatchKit extension’s information property list when you create a watchOS project from a template.
 

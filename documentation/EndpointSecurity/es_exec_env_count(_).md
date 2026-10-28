@@ -19,7 +19,7 @@ func es_exec_env_count(_ event: UnsafePointer<es_event_exec_t>) -> UInt32
 extern uint32_t es_exec_env_count(const es_event_exec_t *event);
 ```
 
-#### Return Value
+## Return Value
 
 The number of environment variables.
 

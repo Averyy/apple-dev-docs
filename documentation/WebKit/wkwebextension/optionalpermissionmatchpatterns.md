@@ -23,7 +23,7 @@ var optionalPermissionMatchPatterns: Set<WKWebExtension.MatchPattern> { get }
 @property (nonatomic, copy, readonly) NSSet<WKWebExtensionMatchPattern *> * optionalPermissionMatchPatterns;
 ```
 
-#### Discussion
+## Discussion
 
 These match patterns can be requested by the extension at a later time.
 

@@ -15,7 +15,7 @@ Truncate or extend the disk image to a new size.
 func truncate(blockCount: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 This changes the size of the disk image itself, but not its contents, such as file systems, partition map, and so on. Shrinking the disk image may cause data loss if the file system inside it exceeds the new size. The image must not be a cache image. For a stacked disk image, the top layer is truncated, as the stack size equals to its top layer’s size.
 

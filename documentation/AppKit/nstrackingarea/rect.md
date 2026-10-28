@@ -19,7 +19,7 @@ var rect: NSRect { get }
 @property (readonly) NSRect rect;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle is specified in the local coordinate system of the associated view. If the [`inVisibleRect`](./options-swift.struct/invisiblerect.md) option is specified, the receiver is automatically synchronized with changes in the view’s visible area ([`visibleRect`](../nsview/visiblerect.md)) and the value of this property is ignored.
 

@@ -19,11 +19,11 @@ func hv_vcpu_get_exec_time(_ vcpu: hv_vcpu_t, _ time: UnsafeMutablePointer<UInt6
 extern hv_return_t hv_vcpu_get_exec_time(hv_vcpu_t vcpu, uint64_t *time);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function must be called by the owning thread.
 

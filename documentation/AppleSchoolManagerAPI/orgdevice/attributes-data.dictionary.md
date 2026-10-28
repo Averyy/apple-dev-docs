@@ -15,7 +15,7 @@ Attributes that describe an organization device resource.
 object OrgDevice.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: When additional attributes are added by Apple, they appear automatically, without requiring a newer version of the API.
 

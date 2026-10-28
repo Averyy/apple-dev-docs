@@ -24,7 +24,7 @@ func VTPixelRotationSessionRotateImage(_ session: VTPixelRotationSession, _ sour
 extern OSStatus VTPixelRotationSessionRotateImage(VTPixelRotationSessionRef session, CVPixelBufferRef sourceBuffer, CVPixelBufferRef destinationBuffer);
 ```
 
-#### Discussion
+## Discussion
 
 For 90 and 270 degree rotations, the width and height of destination must be the inverse of the source buffer.
 

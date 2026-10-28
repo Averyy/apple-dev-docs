@@ -20,7 +20,7 @@ A disclosure group style that resolves its appearance automatically based on the
 @preconcurrency struct AutomaticDisclosureGroupStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`automatic`](./disclosuregroupstyle/automatic.md) to construct this style.
 

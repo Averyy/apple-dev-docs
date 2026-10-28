@@ -11,11 +11,11 @@ Stops the audio I/O engine.
 virtual IOReturn stopAudioEngine();
 ```
 
-#### Return Value
+## Return Value
 
 Must return kIOReturnSuccess on a successful stop of the engine.
 
-#### Overview
+## Overview
 
 This method is called automatically when the last client disconnects from this audio engine. It must be overridden by the subclass. No call to the superclass's implementation is necessary. The subclass's implementation must stop the audio I/O engine. The audio engine (if it exists) should be stopped and any interrupts disabled. Upon successfully stopping the engine, the subclass must call setState(kAudioEngineStopped). If it has also checked the state using getState() earlier in the implementation, the stateLock must be acquired for the entire initialization process (using IORecursiveLockLock(stateLock) and IORecursiveLockUnlock(stateLock)) to ensure that the state remains consistent.
 

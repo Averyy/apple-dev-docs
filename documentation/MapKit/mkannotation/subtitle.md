@@ -25,7 +25,7 @@ optional var subtitle: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 This is the string the annotation displays in the callout for the annotation view.
 

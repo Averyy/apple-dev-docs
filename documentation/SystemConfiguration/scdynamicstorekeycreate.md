@@ -15,7 +15,7 @@ Creates a dynamic store key using the specified format.
 CFStringRefSCDynamicStoreKeyCreate(CFAllocatorRef allocator, CFStringRef fmt, ...);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the formatted key.
 

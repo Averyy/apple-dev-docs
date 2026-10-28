@@ -13,7 +13,7 @@
 kSCSIProtocolIdentifier_RDMA = 4
 ```
 
-#### Discussion
+## Discussion
 
 RDMA Protocol Identifier.
 

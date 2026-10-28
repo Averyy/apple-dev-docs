@@ -25,11 +25,11 @@ func vImageCVImageFormat_SetUserData(_ format: vImageCVImageFormat, _ userData: 
 vImage_Error vImageCVImageFormat_SetUserData(vImageCVImageFormatRef format, void *userData, void (*)(struct vImageCVImageFormat *, void *)userDataReleaseCallback);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

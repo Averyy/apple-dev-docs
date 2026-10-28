@@ -16,15 +16,15 @@ OSErr AESizeOfKeyDesc (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../apple_event_manager.md#1656145).
 
-#### Overview
+## Overview
 
 This function is declared as a macro that invokes [`AESizeOfParam`](../../coreservices/api-1449998-aesizeofparam.md), which can operate on an Apple event or an Apple event record. See the Discussion for that function for more information.
 
-##### Version-Notes
+### Version-Notes
 
 See [`AESizeOfParam`](../../coreservices/api-1449998-aesizeofparam.md).
 

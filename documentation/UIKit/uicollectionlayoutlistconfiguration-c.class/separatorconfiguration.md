@@ -18,7 +18,7 @@ The section’s preferred configuration for list separators.
 @property (nonatomic, copy) UIListSeparatorConfiguration * separatorConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 This configuration only takes effect if [`showsSeparators`](./showsseparators.md) is [`true`](../../Swift/true.md).
 

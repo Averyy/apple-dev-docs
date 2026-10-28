@@ -19,7 +19,7 @@ var showsFrameSteppingButtons: Bool { get set }
 @property BOOL showsFrameSteppingButtons;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property value to `true` results in the player view replacing its fast-forward and rewind controls with frame stepping buttons. This property is currently supported only with a [`controlsStyle`](./controlsstyle.md) of [`AVPlayerViewControlsStyle.floating`](../avplayerviewcontrolsstyle/floating.md).
 

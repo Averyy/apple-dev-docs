@@ -5,22 +5,22 @@
 
 Learn about important changes to ScreenCaptureKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [ScreenCaptureKit](../ScreenCaptureKit/ScreenCaptureKit.md).
 
-#### June 2024
+## June 2024
 
-##### AppKit
+### AppKit
 
 - Share an app window with a remote viewer on demand with `requestSharingOfWindow(_ window: NSWindow, completionHandler: @escaping ((any Error)?)`. This method enables an app to share a window in response to a specific action, such as when a person clicks play in a document window, and streamlines a previously multistep window-sharing process.
 - Share a preview of a window with a remote viewer on demand with `requestSharingOfWindow(usingPreview image: NSImage, title: String, completionHandler: @escaping ((any Error)?)`, which causes the framework to call a delegate method to provide the window if there’s a valid sharing session and a person confirms the offer to share.
 
-##### SwiftUI
+### SwiftUI
 
 - Create new, sharable windows using the async function `openWindow(id: String, sharingBehavior: SharingBehavior)`. This method gives presenting apps a way to share just the window they want recipients to see, even if that window takes over the entire screen and doesn’t allow access to the window picker, streamlining a previously multistep window-sharing process.
 
-##### ScreenCaptureKit
+### ScreenCaptureKit
 
 - Capture screenshots across multiple displays.
 - Capture HDR content by adopting the `captureDynamicRange` property in `SCStreamConfiguration`, which allows clients to choose between ` SCCaptureModeSDR`, `SCCaptureModeHDRLocalDisplay`, and `SCCaptureModeHDRCanonicalDisplay` modes. Or use `SCStreamConfigurationPreset` to simplify the selection of properties needed for capture HDR.
@@ -29,7 +29,7 @@ Browse notable changes in [ScreenCaptureKit](../ScreenCaptureKit/ScreenCaptureKi
 - Start and stop recordings with two new methods on `SCStream` using `addRecordingOutput` and `removeRecordingOutput`.
 - Respond to events occur during the process of recording to a file with `SCRecordingOutputDelegate`.
 
-#### June 2023
+## June 2023
 
 - Use the new sharing picker: [`SCContentSharingPicker`](../ScreenCaptureKit/sccontentsharingpicker.md).
 - Access new properties of [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md) for status on effects relevant to screen capture.

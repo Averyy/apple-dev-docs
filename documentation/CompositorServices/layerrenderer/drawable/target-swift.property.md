@@ -20,7 +20,7 @@ var target: LayerRenderer.Drawable.Target { get }
 cp_drawable_target cp_drawable_get_target(cp_drawable_t drawable);
 ```
 
-#### Discussion
+## Discussion
 
 When drawing for the drawable this can be used to alter what is rendered for different targets. Renderer should always prioritize [`LayerRenderer.Drawable.Target.builtIn`](./target-swift.enum/builtin.md) target type.
 

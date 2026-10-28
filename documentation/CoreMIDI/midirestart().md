@@ -23,11 +23,11 @@ func MIDIRestart() -> OSStatus
 extern OSStatus MIDIRestart();
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Call this function to force Core MIDI to ask its drivers to rescan for hardware.
 

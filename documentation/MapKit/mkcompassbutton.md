@@ -31,7 +31,7 @@ class MKCompassButton
 @interface MKCompassButton : NSView
 ```
 
-#### Overview
+## Overview
 
 Use this class when you want to incorporate a standard compass button into your own view hierarchy. A compass button reflects the current orientation of its associated map view. Tapping the compass button reorients the map so that due north is at the top of the map view.
 

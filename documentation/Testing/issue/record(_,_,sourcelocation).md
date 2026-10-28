@@ -24,11 +24,11 @@ Record a new issue when a running test unexpectedly catches an error.
 static func record(_ error: any Error, _ comment: Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation) -> Issue
 ```
 
-#### Return Value
+## Return Value
 
 The issue that was recorded.
 
-#### Discussion
+## Discussion
 
 This function can be used if an unexpected error is caught while running a test and it should be treated as a test failure. If an error is thrown from a test function, it is automatically recorded as an issue and this function does not need to be used.
 

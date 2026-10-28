@@ -25,7 +25,7 @@ static let NSHTTPCookieManagerCookiesChanged: NSNotification.Name
 extern NSNotificationName const NSHTTPCookieManagerCookiesChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../../notification/object.md) is the [`HTTPCookieStorage`](../../httpcookiestorage.md) instance. This notification does not contain a [`userInfo`](../../notification/userinfo.md) dictionary.
 

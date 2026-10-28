@@ -22,11 +22,11 @@ optional func printInteractionController(_ printInteractionController: UIPrintIn
 - (UIPrinterCutterBehavior) printInteractionController:(UIPrintInteractionController *) printInteractionController chooseCutterBehavior:(NSArray *) availableBehaviors;
 ```
 
-#### Return Value
+## Return Value
 
 The cutter behavior to use for the print job. The value must correspond to one of the constants in the `availableBehaviors` parameter.
 
-#### Discussion
+## Discussion
 
 Some roll-fed printers support different options for cutting the paper. If you implement this method in your delegate, then it may be called during a print job. Your delegate method should determine when to make cuts and return the appropriate value.
 

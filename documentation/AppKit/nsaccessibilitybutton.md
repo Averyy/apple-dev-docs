@@ -19,7 +19,7 @@ protocol NSAccessibilityButton : NSAccessibilityElementProtocol
 @protocol NSAccessibilityButton <NSAccessibilityElement>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a button—a control that triggers an action when the user clicks it—in the accessibility hierarchy.
 

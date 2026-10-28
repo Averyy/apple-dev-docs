@@ -15,7 +15,7 @@ The object for applying styles to table columns that meet certain conditions.
 object ConditionalTableColumnStyle
 ```
 
-#### Discussion
+## Discussion
 
 Table columns can have conditional styles — styles applied to columns that meet certain conditions. You can use any table column style as a conditional style.
 
@@ -23,7 +23,7 @@ For example, you might define a conditional table column style that changes the 
 
 You can use this object in [`TableColumnStyle`](./tablecolumnstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

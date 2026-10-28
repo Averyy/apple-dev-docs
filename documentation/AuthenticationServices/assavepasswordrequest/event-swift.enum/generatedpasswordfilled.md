@@ -22,7 +22,7 @@ case generatedPasswordFilled
 ASSavePasswordRequestEventGeneratedPasswordFilled
 ```
 
-#### Discussion
+## Discussion
 
 The recommended behavior is to save “new” credentials as pending accounts. This event will generally be followed by a userInitiated or formDidDisappear event.
 

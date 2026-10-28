@@ -19,7 +19,7 @@ var font: NSFont! { get set }
 @property (strong, null_resettable) NSFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a font object of the menu and its submenus that don’t specify fonts of their own.
 

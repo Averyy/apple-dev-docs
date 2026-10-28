@@ -17,7 +17,7 @@ struct bm12Cursor {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure stores 16 pixel x 16 pixel cursors to be used with 1-bit color depth. This structure is only defined if IOFB_ARBITRARY_SIZE_CURSOR is not defined.
 

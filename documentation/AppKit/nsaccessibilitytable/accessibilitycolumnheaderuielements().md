@@ -19,11 +19,11 @@ optional func accessibilityColumnHeaderUIElements() -> [Any]?
 - (NSArray *) accessibilityColumnHeaderUIElements;
 ```
 
-#### Return Value
+## Return Value
 
 The column header element.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityColumnHeaderUIElements`](../nsaccessibility-c.protocol/accessibilitycolumnheaderuielements.md) property.
 

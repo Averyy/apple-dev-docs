@@ -33,7 +33,7 @@ class func loadAchievementDescriptions() async throws -> [GKAchievementDescripti
 
 - [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
-#### Discussion
+## Discussion
 
 To load the artwork for an achievement, use the [`loadImage(completionHandler:)`](./loadimage%28completionhandler%29.md) method after using this method.
 

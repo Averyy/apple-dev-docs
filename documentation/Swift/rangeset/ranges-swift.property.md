@@ -21,7 +21,7 @@ A collection of the ranges that make up the range set.
 var ranges: RangeSet<Bound>.Ranges { get }
 ```
 
-#### Discussion
+## Discussion
 
 The ranges that you access by using `ranges` never overlap, are never empty, and are always in increasing order.
 

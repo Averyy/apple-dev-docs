@@ -5,7 +5,7 @@
 
 Use macros to generate repetitive code at compile time.
 
-#### Overview
+## Overview
 
 Swift macros help you avoid writing repetitive code in Swift by generating that part of your source code at compile time. Calling a macro is always additive: The macro adds new code alongside the code that you wrote, but never modifies or deletes code that’s already part of your project.
 
@@ -15,7 +15,7 @@ Because macros generate Swift code, you use the same tools for development and d
 
 ![A diagram showing an overview of macro expansion. On the left, a stylized representation of Swift code. On the right, the same code with several lines added by the macro.](https://developer.apple.com/tutorials/images/com.apple.Swift/macro-expansion@2x.png)
 
-##### Call a Macro
+### Call a Macro
 
 The syntax you use to call a macro varies slightly, depending on whether you attach the macro to a declaration.
 
@@ -44,7 +44,7 @@ A macro that isn’t attached to a declaration generates code and adds that code
 
 For more information, see [Macros](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros) in [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language).
 
-##### Inspect an Expanded Macro
+### Inspect an Expanded Macro
 
 When you build your project, Swift reads your code and finds the places where you call a macro. Swift then calls the implementation of each macro, to expand the code. Finally, Swift builds your project as usual, including the generated code.
 

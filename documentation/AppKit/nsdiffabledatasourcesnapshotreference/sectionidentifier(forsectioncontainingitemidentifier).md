@@ -19,7 +19,7 @@ func sectionIdentifier(forSectionContainingItemIdentifier itemIdentifier: Any) -
 - (SectionIdentifierType) sectionIdentifierForSectionContainingItemIdentifier:(ItemIdentifierType) itemIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the section containing the specified item, or `nil` if the specified item doesn’t exist in any section of the snapshot.
 

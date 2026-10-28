@@ -24,7 +24,7 @@ var biologicalSex: HKBiologicalSex { get }
 @property (readonly) HKBiologicalSex biologicalSex;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible biological sex values, see [`HKBiologicalSex`](../hkbiologicalsex.md).
 

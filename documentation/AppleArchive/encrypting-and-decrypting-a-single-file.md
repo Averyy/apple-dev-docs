@@ -10,15 +10,15 @@ Encrypt a single file and save the result to the file system, then decrypt and r
 - macOS 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a single file using a [`SymmetricKey`](../CryptoKit/symmetrickey.md). The sample saves the encrypted file to the user’s temporary directory and then calls a second function that decrypts the contents of the archive and recreates the original file.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before running the sample code project in Xcode, ensure you have a file in your temporary directory (see: [`NSTemporaryDirectory()`](../Foundation/nstemporarydirectory%28%29.md)) named `file.txt`.
 
-##### Define File Paths
+### Define File Paths
 
 The sample code project defines [`FilePath`](../System/filepath.md) structures that represent the locations of the source file, the encrypted version of the source file, and the recreated, unencrypted version of the source file.
 
@@ -37,7 +37,7 @@ let encryptedFilePath = FilePath(NSTemporaryDirectory() + "file.encrypted")
 let decryptedFilePath = FilePath(NSTemporaryDirectory() + "file.decrypted.txt")
 ```
 
-##### Generate a Symmetric Key
+### Generate a Symmetric Key
 
 The sample imports the [Apple CryptoKit](../CryptoKit/CryptoKit.md) framework to generate the symmetric cryptographic key.
 
@@ -47,7 +47,7 @@ let key = SymmetricKey(size: SymmetricKeySize.bits256)
 
 The sample uses the same key for encryption and decryption.
 
-##### Create a Context for Encryption
+### Create a Context for Encryption
 
 An `ArchiveEncryptionContext` object contains the parameters, keys, and other data that the Apple Encrypted Archive library requires to open an encrypted archive for encryption and decryption streams. The sample initializes the context with a profile and compression algorithm, and its symmetric key set for encryption.
 
@@ -57,7 +57,7 @@ let context = ArchiveEncryptionContext(profile: .hkdf_sha256_aesctr_hmac__symmet
 try context.setSymmetricKey(key)
 ```
 
-##### Open Source and Destination File Streams
+### Open Source and Destination File Streams
 
 The sample creates a [`readOnly`](../System/filedescriptor/accessmode/readonly.md) file stream to read the source file, and a [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md) file stream to write the encrypted file to the file system.
 
@@ -76,7 +76,7 @@ guard let sourceFileStream = ArchiveByteStream.fileStream(
 }
 ```
 
-##### Create the Encryption Stream
+### Create the Encryption Stream
 
 The encryption stream uses the encryption context and the destination file stream to write the encrypted string to the file system.
 
@@ -88,7 +88,7 @@ guard let encryptionStream = ArchiveByteStream.encryptionStream(
 }
 ```
 
-##### Encrypt the File
+### Encrypt the File
 
 The [`process(readingFrom:writingTo:)`](./archivebytestream/process%28readingfrom,writingto%29.md) function sends the output of the file-reading stream to the encryption stream. In turn, the compression stream sends its output to the file-writing stream and writes the encrypted file to the file system.
 
@@ -97,7 +97,7 @@ _ = try ArchiveByteStream.process(readingFrom: sourceFileStream,
                                   writingTo: encryptionStream)
 ```
 
-##### Open the Source File Stream
+### Open the Source File Stream
 
 The sample creates a source file stream to open the encrypted file.
 
@@ -111,7 +111,7 @@ guard let sourceFileStream = ArchiveByteStream.fileStream(
 }
 ```
 
-##### Create a Context for Decryption
+### Create a Context for Decryption
 
 The  `ArchiveEncryptionContext` object for decryption derives its parameters, keys, and other data from the encrypted source file, and the sample sets the decryption context with the same symmetric key that was used for encryption.
 
@@ -124,7 +124,7 @@ guard let decryptionContext = ArchiveEncryptionContext(from: sourceFileStream) e
 try decryptionContext.setSymmetricKey(key)
 ```
 
-##### Create the Decryption Stream
+### Create the Decryption Stream
 
 The decryption stream uses the encryption context and the source file stream to read the encrypted string from the file system.
 
@@ -136,7 +136,7 @@ guard let decryptionStream = ArchiveByteStream.decryptionStream(
 }
 ```
 
-##### Open the Destination File Stream
+### Open the Destination File Stream
 
 The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md).  The options specify that the stream creates the file if it doesn’t exist, and that if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
 
@@ -150,7 +150,7 @@ guard let decryptedFileStream = ArchiveByteStream.fileStream(
 }
 ```
 
-##### Decrypt the Source Archive
+### Decrypt the Source Archive
 
 The [`process(readingFrom:writingTo:)`](./archivebytestream/process%28readingfrom,writingto%29.md) method writes the output of the decryption stream to the file-writing stream.
 

@@ -18,7 +18,7 @@ Returns the argument table buffer slot index for the named buffer parameter, or 
 func bufferLocation(named name: String) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The buffer slot index, or `nil` if no buffer parameter with that name exists.
 

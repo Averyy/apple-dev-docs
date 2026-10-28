@@ -20,7 +20,7 @@ var kind: XMLNode.Kind { get }
 @property (readonly) NSXMLNodeKind kind;
 ```
 
-#### Discussion
+## Discussion
 
 `NSXMLNode` objects can represent documents, elements, attributes, namespaces, text, processing instructions, comments, document type declarations, and specific declarations within DTDs. See Constants for a list of valid NSXMLNodeKind constants
 

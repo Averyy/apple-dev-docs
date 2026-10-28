@@ -23,7 +23,7 @@ class MLCActivationLayer
 @interface MLCActivationLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 To construct an activation layer, create an activation descriptor and then pass it to the initializer.
 

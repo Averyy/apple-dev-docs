@@ -24,7 +24,7 @@ class VNDetectFaceRectanglesRequest
 @interface VNDetectFaceRectanglesRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 This request returns faces as rectangular bounding boxes with origin and size.
 

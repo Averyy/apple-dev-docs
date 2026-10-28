@@ -6,7 +6,7 @@
 
 A time value that indicates the time scale for this movie.
 
-#### Overview
+## Overview
 
 The time value represents the number of time units that pass per second in its time coordinate system. A time coordinate system that measures time in sixtieths of a second, for example, has a time scale of 60.
 

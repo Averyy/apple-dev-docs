@@ -23,11 +23,11 @@ init(leftTangent: Float, rightTangent: Float, topTangent: Float, bottomTangent: 
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeFromTangents(float leftTangent, float rightTangent, float topTangent, float bottomTangent, float nearZ, float farZ, bool reverseZ);
 ```
 
-#### Return Value
+## Return Value
 
 A projective transform from tangents for each side of its frustum.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform from tangents for each side of its frustum.
 

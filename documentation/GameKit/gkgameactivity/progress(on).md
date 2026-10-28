@@ -24,7 +24,7 @@ func progress(on achievement: GKAchievement) -> Double
 - (double) getProgressOnAchievement:(GKAchievement *) achievement;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `0` if the achievement hasn’t been set in the current activity.
 

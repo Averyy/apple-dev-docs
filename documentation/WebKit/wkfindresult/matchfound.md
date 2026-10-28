@@ -23,7 +23,7 @@ var matchFound: Bool { get }
 @property (nonatomic, readonly) BOOL matchFound;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the web view found a match, or [`false`](../../Swift/false.md) if it didn’t.
 

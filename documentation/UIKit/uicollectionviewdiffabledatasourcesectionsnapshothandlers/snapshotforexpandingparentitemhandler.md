@@ -19,7 +19,7 @@ The handler that provides the section snapshot for expanding the parent item.
 @property (nonatomic, copy, nullable) NSDiffableDataSourceSectionSnapshot<id> * (^snapshotForExpandingParentItemHandler)(ItemType , NSDiffableDataSourceSectionSnapshot<id> *);
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`snapshotForExpandingParentItemHandler`](./snapshotforexpandingparentitemhandler.md) handler to customize the snapshot that returns when a particular parent item is expanded.
 

@@ -20,7 +20,7 @@ var messageTintColor: UIColor? { get }
 @property (nonatomic, readonly, nullable) UIColor * messageTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 Override to provide a message tint color, e.g. to match the content of the message, or your app’s brand color.
 

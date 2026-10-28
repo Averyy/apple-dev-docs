@@ -21,7 +21,7 @@ Configures a new session in an inactive state.
 XPC_SESSION_CREATE_INACTIVE
 ```
 
-#### Discussion
+## Discussion
 
 After creating the session, you must call [`xpc_session_activate`](../xpc_session_activate.md) to activate it before sending messages.
 

@@ -22,7 +22,7 @@ Creates an action that opens a URL.
 @preconcurrency init(handler: @escaping (URL) -> OpenURLAction.Result)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a custom action for opening URLs. Provide a handler that takes a URL and returns an [`OpenURLAction.Result`](./result.md). Place your handler in the environment using the [`environment(_:_:)`](../view/environment%28_,_%29.md) view modifier:
 

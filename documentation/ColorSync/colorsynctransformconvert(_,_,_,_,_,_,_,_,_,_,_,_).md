@@ -25,11 +25,11 @@ func ColorSyncTransformConvert(_ transform: ColorSyncTransform!, _ width: Int, _
 extern bool ColorSyncTransformConvert(ColorSyncTransformRef transform, size_t width, size_t height, void *dst, ColorSyncDataDepth dstDepth, ColorSyncDataLayout dstLayout, size_t dstBytesPerRow, const void *src, ColorSyncDataDepth srcDepth, ColorSyncDataLayout srcLayout, size_t srcBytesPerRow, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the conversion succeeds, or `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Use this function with care for performance reasons. Color conversions are computationally intensive and the recommended way to perform these is by using the vImage converter with a ColorSync code fragment. vImage employs vectorized code which is not only faster but also more battery efficient. Please visit the following link to see a sample application of vImage used in conjunction with ColorSync: [https://developer.apple.com/library/prerelease/content/samplecode/convertImage/Listings/convertImage_main_c.html](https://developer.apple.com/library/prerelease/content/samplecode/convertImage/Listings/convertImage_main_c.html) More details regarding ColorSync code fragments are included below, as well.
 

@@ -24,7 +24,7 @@ case untracked
 MTLHazardTrackingModeUntracked
 ```
 
-#### Discussion
+## Discussion
 
 Create resources with this option when you’re managing resource synchronization. Metal doesn’t track memory dependencies for untracked resources, which means you’re responsible for ensuring that commands access those resources safely with barriers, fences, or events.
 

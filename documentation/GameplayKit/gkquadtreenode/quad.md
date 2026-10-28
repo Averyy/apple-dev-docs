@@ -24,7 +24,7 @@ var quad: GKQuad { get }
 @property (nonatomic, readonly) GKQuad quad;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this rectangle to find elements in the tree with the [`elements(in:)`](../gkquadtree/elements%28in%29.md) method.
 

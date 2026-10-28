@@ -25,11 +25,11 @@ func getDrawingTransform(_ box: CGPDFBox, rect: CGRect, rotate: Int32, preserveA
 extern CGAffineTransform CGPDFPageGetDrawingTransform(CGPDFPageRef page, CGPDFBox box, CGRect rect, int rotate, bool preserveAspectRatio);
 ```
 
-#### Return Value
+## Return Value
 
 An affine transform that maps the box specified by the `box` parameter to the rectangle specified by the `rect` parameter.
 
-#### Discussion
+## Discussion
 
 Quartz constructs the affine transform as follows:
 

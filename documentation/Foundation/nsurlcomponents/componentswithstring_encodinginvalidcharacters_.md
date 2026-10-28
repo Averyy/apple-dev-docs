@@ -21,11 +21,11 @@ Returns a URL components instance from the provided string, optionally IDNA- and
 + (instancetype) componentsWithString:(NSString *) URLString encodingInvalidCharacters:(BOOL) encodingInvalidCharacters;
 ```
 
-#### Return Value
+## Return Value
 
 A URL components instance from the provided string, optionally with invalid characters percent-encoded.
 
-#### Discussion
+## Discussion
 
 If `encodingInvalidCharacters` is `true`, this initializer tries to encode the string to create a valid URL. If the URL string is still invalid after encoding, the method returns `nil`.
 

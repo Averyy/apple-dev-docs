@@ -32,7 +32,7 @@ var placemark: CLPlacemark { get }
 @property (atomic, copy, readonly) CLPlacemark * placemark;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set automatically at initialization time and can’t be changed later.
 

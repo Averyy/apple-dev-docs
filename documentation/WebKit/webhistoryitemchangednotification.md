@@ -15,7 +15,7 @@ Posted by a WebHistoryItem object when the value of the history item’s title, 
 extern NSString * WebHistoryItemChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification does not contain a `userInfo` dictionary.
 

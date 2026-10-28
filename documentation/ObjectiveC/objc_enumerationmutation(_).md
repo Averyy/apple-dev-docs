@@ -25,7 +25,7 @@ func objc_enumerationMutation(_ obj: Any)
 extern void objc_enumerationMutation(id obj);
 ```
 
-#### Discussion
+## Discussion
 
 The compiler inserts this function when it detects that an object is mutated during a foreach iteration. The function is called when a mutation occurs, and the enumeration mutation handler is enacted if it is set up (via the [`objc_setEnumerationMutationHandler(_:)`](./objc_setenumerationmutationhandler%28_%29.md) function). If the handler is not set up, a fatal error occurs.
 

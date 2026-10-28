@@ -17,9 +17,9 @@
 protocol SRDataSensor : Hashable, Sendable
 ```
 
-#### Protocol Requirements
+## Protocol Requirements
 
-#### Usage Example
+## Usage Example
 
 ```swift
 // Using a specific sensor type

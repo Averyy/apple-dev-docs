@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 This file contains all the definitions for types and constants that are used by the command set classes for building CDBs. The field type definitions are used for the parameters passed to a method that builds and sends any SCSI defined command to clearly identify the type of value expected for a parameter.
 
@@ -11,7 +11,7 @@ The command methods will then use the appropriate mask to verify that the value 
 
 Currently only types and masks are defined for 8 bytes and smaller fields. If a command is defined that uses a larger field, these should be expanded to include those sizes.
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <CoreFoundation/CoreFoundation.h>

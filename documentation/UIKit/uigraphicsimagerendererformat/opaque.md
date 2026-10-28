@@ -23,7 +23,7 @@ var opaque: Bool { get set }
 @property (nonatomic) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to [`false`](../../Swift/false.md) specifies that the underlying Core Graphics context has an alpha channel, whereas [`true`](../../Swift/true.md) indicates it does not. The default value is [`false`](../../Swift/false.md).
 

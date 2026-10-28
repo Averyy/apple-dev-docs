@@ -20,7 +20,7 @@ var kMEVideoDecoderCodecTypeKey: String { get }
 #define kMEVideoDecoderCodecTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 This string should be exactly four characters long and use ASCII character set encoding.
 

@@ -24,7 +24,7 @@ var prepare: MTAudioProcessingTapPrepareCallback?
 MTAudioProcessingTapPrepareCallback prepare;
 ```
 
-#### Discussion
+## Discussion
 
 Apps can use this callback to allocate memory buffers or perform other preparation. This field an be `NULL`.
 

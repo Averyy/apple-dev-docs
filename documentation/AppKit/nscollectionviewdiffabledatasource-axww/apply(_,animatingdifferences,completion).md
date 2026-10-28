@@ -15,7 +15,7 @@ Updates the UI to reflect the state of the data in the specified snapshot, optio
 func apply(_ snapshot: NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool = true, completion: (() -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 It’s safe to call this method from a background queue, but you must do so consistently in your app. Always call this method exclusively from the main queue or from a background queue.
 

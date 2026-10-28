@@ -24,7 +24,7 @@ class VNPixelBufferObservation
 @interface VNPixelBufferObservation : VNObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from performing a [`VNCoreMLRequest`](./vncoremlrequest.md) image analysis with a Core ML model that has an image-to-image processing role. For example, this observation might result from a model that analyzes the style of one image and then transfers that style to a different image.
 

@@ -21,7 +21,7 @@ class func thumbstickStickBackgroundContents(size: CGSize, controller: TCTouchCo
 + (TCControlContents *) thumbstickBackgroundContentsOfSize:(CGSize) size controller:(TCTouchController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The `TCControlContents` for the thumbstick background.
 

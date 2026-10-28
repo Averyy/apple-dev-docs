@@ -5,7 +5,7 @@
 
 Use these keys from the information dictionary when you retrieve information from a code signature.
 
-#### Overview
+## Overview
 
 Use these keys when examining the dictionary returned by the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to obtain information about the signed code.
 

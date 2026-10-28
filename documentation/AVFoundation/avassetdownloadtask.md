@@ -24,7 +24,7 @@ class AVAssetDownloadTask
 @interface AVAssetDownloadTask : NSURLSessionTask
 ```
 
-#### Overview
+## Overview
 
 You create instances of this class by calling [`makeAssetDownloadTask(downloadConfiguration:)`](./avassetdownloadurlsession/makeassetdownloadtask%28downloadconfiguration%29.md) on the download session.
 
@@ -36,7 +36,7 @@ Adopt the [`AVAssetDownloadDelegate`](./avassetdownloaddelegate.md) protocol to 
 
 To augment an existing download, initialize a new task with an [`AVURLAsset`](./avurlasset.md) whose URL references the downloaded asset on disk. For example, you can add media selections that you didn’t include in the original download.
 
-##### Live Activity
+### Live Activity
 
 To control how the system schedules downloads, set the [`isDiscretionary`](../Foundation/urlsessionconfiguration/isdiscretionary.md) property on the [`URLSessionConfiguration`](../Foundation/urlsessionconfiguration.md) you pass when creating the [`AVAssetDownloadURLSession`](./avassetdownloadurlsession.md). Non-discretionary downloads start as soon as possible. The system defers discretionary downloads until conditions like network and battery state are favorable, and runs them silently in the background.
 

@@ -25,11 +25,11 @@ class func confirmationRequired(with noteToConfirm: INNote?) -> Self
 + (instancetype) confirmationRequiredWithNoteToConfirm:(INNote *) noteToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteResolutionResult`](../innoteresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you locate a single note but cannot determine with enough certainty that it is the one intended by the user. For example, you might ask for confirmation when the note text does not match precisely. Provide an [`INNote`](../innote.md) object with as much information about the note as you have available.
 

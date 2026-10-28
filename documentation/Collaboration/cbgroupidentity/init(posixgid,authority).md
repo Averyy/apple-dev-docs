@@ -19,7 +19,7 @@ init?(posixGID gid: gid_t, authority: CBIdentityAuthority)
 + (CBGroupIdentity *) groupIdentityWithPosixGID:(gid_t) gid authority:(CBIdentityAuthority *) authority;
 ```
 
-#### Return Value
+## Return Value
 
 The group identity object with the given GID in the specified identity authority, or `nil` if no identity exists with the specified GID.
 

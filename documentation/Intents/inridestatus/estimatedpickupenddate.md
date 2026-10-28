@@ -31,7 +31,7 @@ var estimatedPickupEndDate: Date? { get set }
 @property (atomic, copy, readwrite, nullable) NSDate * estimatedPickupEndDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the user is not at the pickup location when the driver arrives, the driver usually waits for a short period of time to give the user time to arrive. This property species the time at which the driver may opt to cancel the ride altogether if the user does not show up.
 

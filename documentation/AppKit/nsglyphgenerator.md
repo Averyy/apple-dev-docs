@@ -19,7 +19,7 @@ class NSGlyphGenerator
 @interface NSGlyphGenerator : NSObject
 ```
 
-#### Overview
+## Overview
 
 The nominal glyph generation pass essentially generates one glyph per character; the typesetter may later make substitutions in the glyph stream, for example, changing an acute accent glyph followed by an “e” glyph into a single acute-accented “é” glyph.
 

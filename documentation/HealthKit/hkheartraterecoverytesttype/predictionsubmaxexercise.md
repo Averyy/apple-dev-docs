@@ -24,7 +24,7 @@ case predictionSubMaxExercise
 HKHeartRateRecoveryTestTypePredictionSubMaxExercise
 ```
 
-#### Discussion
+## Discussion
 
 In this test, a person performs lower-intensity exercise, staying below their physical limit. The test then estimates their actual heart rate recovery based on the difference between their exercising heart rate, and the rate of recovery after the exercise ends.
 

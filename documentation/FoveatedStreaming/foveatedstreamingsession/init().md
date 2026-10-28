@@ -16,7 +16,7 @@ Initializes the FoveatedStreamingSession.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 To attempt a connection, call [`connect(endpoint:)`](./connect%28endpoint%29.md).
 

@@ -19,11 +19,11 @@
 static bool SPVector3DIsFinite(SPVector3D vector);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether all of the coordinates of the point are finite.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether all of the elements of the vector are finite.
 

@@ -13,11 +13,11 @@ virtual IOReturn complete(
  bool synchronize = true);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnNotReady if not prepared, kIOReturnSuccess otherwise.
 
-#### Overview
+## Overview
 
 This method should not be called unless a prepare was previously issued; the prepare() and complete() must occur in pairs, before and after an I/O transfer
 

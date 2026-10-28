@@ -23,7 +23,7 @@ optional func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement
 - (void) manager:(CMWaterSubmersionManager *) manager didUpdateTemperature:(CMWaterTemperature *) measurement;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to receive water temperature updates. The system sends temperature updates three times a second while submerged. When on the surface, the system provides updates at a slower rate, and may stop providing updates if the device isn’t moving.
 

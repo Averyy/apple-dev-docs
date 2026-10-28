@@ -23,7 +23,7 @@ func escalatePriority(to newPriority: TaskPriority)
 
 Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This API should rarely be used, and instead you can rely on structured concurrency and implicit priority escalation which happens when a higher priority task awaits on a result of a lower priority task.
 >

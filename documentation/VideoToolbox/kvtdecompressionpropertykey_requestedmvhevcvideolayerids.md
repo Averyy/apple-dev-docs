@@ -23,7 +23,7 @@ let kVTDecompressionPropertyKey_RequestedMVHEVCVideoLayerIDs: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_RequestedMVHEVCVideoLayerIDs;
 ```
 
-#### Discussion
+## Discussion
 
 This property is specific to MV-HEVC. The use of it requires you to use the [`VTDecompressionSessionSetMultiImageCallback`](./vtdecompressionsessionsetmultiimagecallback.md) function to install a callback capable of receiving [`CMTaggedBufferGroupRef`](../CoreMedia/cmtaggedbuffergroupref.md) objects in response to multi-image frame decode requests.
 

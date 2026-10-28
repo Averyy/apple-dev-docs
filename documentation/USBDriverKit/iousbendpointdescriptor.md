@@ -15,7 +15,7 @@ The structure for storing an endpoint descriptor.
 struct IOUSBEndpointDescriptor;
 ```
 
-#### Overview
+## Overview
 
 For more information about this descriptor type, see section 9.6.6 of the USB 2.0 specification at [http://www.usb.org](http://www.usb.org).
 

@@ -20,7 +20,7 @@ typealias CGEventTapInformation = __CGEventTapInformation
 typedef struct __CGEventTapInformation CGEventTapInformation;
 ```
 
-#### Discussion
+## Discussion
 
 To learn how to obtain information about event taps, see the function [`CGGetEventTapList(_:_:_:)`](./cggeteventtaplist%28_,_,_%29.md).
 

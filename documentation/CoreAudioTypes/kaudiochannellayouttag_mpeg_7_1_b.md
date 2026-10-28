@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_MPEG_7_1_B: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_MPEG_7_1_B
 ```
 
-#### Discussion
+## Discussion
 
 See ISO/IEC 13818-7 MPEG2-AAC, Table 3.1 for more information. Your channels must be laid out in the following order:
 

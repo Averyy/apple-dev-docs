@@ -15,7 +15,7 @@ The object for applying styles to cells in a table.
 object TableCellStyle
 ```
 
-#### Discussion
+## Discussion
 
 You can apply styles that affect the look of the cells in your tables, including the background color, the horizontal alignment of cell contents, and the cell height, width, and padding.
 
@@ -23,7 +23,7 @@ You can also specify conditional styles for cells — styles applied to cells th
 
 You can use this object in [`TableStyle`](./tablestyle.md).
 
-##### Example
+### Example
 
 ```json
 {

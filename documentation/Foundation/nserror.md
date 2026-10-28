@@ -25,7 +25,7 @@ class NSError
 @interface NSError : NSObject
 ```
 
-#### Overview
+## Overview
 
 Objective-C methods can signal an error condition by returning an [`NSError`](./nserror.md) object by reference, which provides additional information about the kind of error and any underlying cause, if one can be determined. An [`NSError`](./nserror.md) object may also provide localized error descriptions suitable for display to the user in its user info dictionary. See [Error Handling Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/ErrorHandling/ErrorHandling.html#//apple_ref/doc/uid/TP40001806) for more information.
 
@@ -33,7 +33,7 @@ Methods in Foundation and other Cocoa frameworks most often produce errors in th
 
 [`NSError`](./nserror.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFError`](../CoreFoundation/cferror.md). See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Applications may choose to create subclasses of `NSError`, for example, to provide better localized error strings by overriding [`localizedDescription`](./nserror/localizeddescription.md).
 

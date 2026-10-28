@@ -21,11 +21,11 @@ Replaces any errors in the stream with the provided element.
 func replaceError(with output: Self.Output) -> Publishers.ReplaceError<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that replaces an error from the upstream publisher with the provided output element.
 
-#### Discussion
+## Discussion
 
 If the upstream publisher fails with an error, this publisher emits the provided element, then finishes normally.
 

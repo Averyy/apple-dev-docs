@@ -25,7 +25,7 @@ static var descendRecursively: CFURLEnumeratorOptions { get }
 kCFURLEnumeratorDescendRecursively
 ```
 
-#### Discussion
+## Discussion
 
 This option applies only to directory enumerators.
 

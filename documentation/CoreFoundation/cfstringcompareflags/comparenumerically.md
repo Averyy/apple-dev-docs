@@ -25,7 +25,7 @@ static var compareNumerically: CFStringCompareFlags { get }
 kCFCompareNumerically
 ```
 
-#### Discussion
+## Discussion
 
 For example, “version 2” is less than “version 10”.
 

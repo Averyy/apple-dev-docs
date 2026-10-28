@@ -24,7 +24,7 @@ class MDLVoxelArray
 @interface MDLVoxelArray : MDLObject
 ```
 
-#### Overview
+## Overview
 
 Unlike a mesh, which models only surface topology, a voxel array models the solid volume of a 3D object. Voxels are useful for modeling volumetric phenomena (such as clouds and fire), performing solid geometry operations (such as intersection and union), and preparing a 3D design for real-world physical production.
 

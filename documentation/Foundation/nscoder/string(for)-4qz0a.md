@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a rectangle.
 class func string(for rect: CGRect) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `rect`. See [`cgRect(for:)`](./cgrect%28for%29.md) for a discussion of the string format.
 

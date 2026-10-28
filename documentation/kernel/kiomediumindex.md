@@ -15,7 +15,7 @@ A property of IONetworkMedium objects.
 #define kIOMediumIndex
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediumIndex property is an OSNumber object that describes an index assigned by the owner of the medium object. Its interpretation is driver specific.
 

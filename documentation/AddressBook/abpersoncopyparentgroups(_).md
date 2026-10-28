@@ -19,7 +19,7 @@ func ABPersonCopyParentGroups(_ person: ABPersonRef!) -> Unmanaged<CFArray>!
 extern CFArrayRefABPersonCopyParentGroups(ABPersonRef person);
 ```
 
-#### Return Value
+## Return Value
 
 An array of ABGroup objects which `person` belongs to. You are responsible for releasing this object.
 

@@ -19,11 +19,11 @@ func hv_vm_remove_pio_notifier(_ addr: UInt16, _ size: Int, _ value: UInt32, _ m
 extern hv_return_t hv_vm_remove_pio_notifier(uint16_t addr, size_t size, uint32_t value, mach_port_t mach_port, hv_ion_flags_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, or an [`hv_return_t`](./hv_return_t.md) error code.
 
-#### Discussion
+## Discussion
 
 The arguments you provide must match those previously used to add the notifier.
 

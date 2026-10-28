@@ -19,7 +19,7 @@ class let didResignMainNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidResignMainNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that resigned its main window status. This notification doesn’t contain a `userInfo` dictionary.
 

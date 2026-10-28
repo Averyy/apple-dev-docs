@@ -22,7 +22,7 @@ mutating func copyElements(from sequence: some Sequence<Element>)
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 The number of elements in `sequence` must be less than or equal to `layout.scalarCount`.
 

@@ -15,7 +15,7 @@ Clears a block of memory.
 void MPBlockClear(LogicalAddress address, ByteCount size);
 ```
 
-#### Discussion
+## Discussion
 
 As with all shared memory, your application must synchronize access to the memory blocks to avoid data corruption. `MPBlockClear` ensures the clearing stays within the bounds of the area specified by `size`, but the calling task can be preempted during the copying process. 
 

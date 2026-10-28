@@ -25,7 +25,7 @@ var hazardTrackingMode: MTLHazardTrackingMode { get }
 @property (readonly) MTLHazardTrackingMode hazardTrackingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Any resources you allocate on the heap have this hazard tracking mode.
 

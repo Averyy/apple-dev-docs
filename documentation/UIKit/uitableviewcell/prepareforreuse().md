@@ -27,7 +27,7 @@ func prepareForReuse()
 
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
-#### Discussion
+## Discussion
 
 If a [`UITableViewCell`](../uitableviewcell.md) object has a reuse identifier, the table view invokes this method just before returning the object from the `UITableView` method [`dequeueReusableCell(withIdentifier:)`](../uitableview/dequeuereusablecell%28withidentifier%29.md). To avoid potential performance issues, you should only reset attributes of the cell that are not related to content, for example, alpha, editing, and selection state. The table view’s delegate in [`tableView(_:cellForRowAt:)`](../uitableviewdatasource/tableview%28_,cellforrowat%29.md) should *always* reset all content when reusing a cell.
 

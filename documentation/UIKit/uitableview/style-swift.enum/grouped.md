@@ -23,7 +23,7 @@ case grouped
 UITableViewStyleGrouped
 ```
 
-#### Discussion
+## Discussion
 
 Section headers and footers don’t float when the table view scrolls.
 

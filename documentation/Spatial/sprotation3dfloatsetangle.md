@@ -19,7 +19,7 @@
 static void SPRotation3DFloatSetAngle(SPRotation3DFloat *rotation, SPAngleFloat angle);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the angle on the specified rotation structure.
 

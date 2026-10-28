@@ -20,11 +20,11 @@ Activates or deactivates your app’s audio session.
 - (BOOL) setActive:(BOOL) active error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the system successfully changed the active state; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Your app may activate a session with category [`playback`](./category-swift.struct/playback.md) when another app is hosting a call, for example to start a `SharePlay` activity. However, your app isn’t permitted to capture the microphone of the active call.
 

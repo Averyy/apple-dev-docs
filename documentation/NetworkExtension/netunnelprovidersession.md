@@ -24,7 +24,7 @@ class NETunnelProviderSession
 @interface NETunnelProviderSession : NEVPNConnection
 ```
 
-#### Overview
+## Overview
 
 `NETunnelProviderSession` objects control network tunnel connections provided by Tunnel Provider extensions.
 

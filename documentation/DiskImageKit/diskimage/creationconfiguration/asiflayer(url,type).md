@@ -17,11 +17,11 @@ static func asifLayer(url: URL, type: DiskImage.LayerType) -> Self
 
 Available when `Self` is `ASIFLayerCreationConfiguration`.
 
-#### Return Value
+## Return Value
 
 An [`ASIFLayerCreationConfiguration`](../../asiflayercreationconfiguration.md) instance for stacking use.
 
-#### Discussion
+## Discussion
 
 The following example demonstrates how to append a new cache layer to a base image:
 

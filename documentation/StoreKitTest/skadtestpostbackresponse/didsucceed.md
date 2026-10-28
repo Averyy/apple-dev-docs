@@ -21,7 +21,7 @@ var didSucceed: Bool { get set }
 @property (nonatomic, assign) BOOL didSucceed;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `true` if the system successfully delivered the test postback and received an HTTP 200 response.
 

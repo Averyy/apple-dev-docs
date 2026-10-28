@@ -18,7 +18,7 @@ The behavior for determining the adjusted content inset.
 final var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `.automatic`.
 

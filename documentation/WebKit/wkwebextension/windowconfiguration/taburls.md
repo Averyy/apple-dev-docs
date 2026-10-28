@@ -23,7 +23,7 @@ var tabURLs: [URL] { get }
 @property (nonatomic, copy, readonly) NSArray<NSURL *> * tabURLs;
 ```
 
-#### Discussion
+## Discussion
 
 If [`tabURLs`](./taburls.md) and [`tabs`](./tabs.md) are both empty, the app’s default start page should appear in a tab.
 

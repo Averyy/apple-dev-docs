@@ -5,7 +5,7 @@
 
 Test your app on devices that you register in your developer account.
 
-#### Overview
+## Overview
 
 Before collecting feedback from beta testers using TestFlight, you can distribute builds to a limited set of testers on known devices without having to go through beta app review.
 
@@ -13,7 +13,7 @@ First, use either Xcode or your [developer account](https://developer.apple.com/
 
 Alternatively, distribute your app to testers using TestFlight. For more information, see [Distributing your app for beta testing and releases](./distributing-your-app-for-beta-testing-and-releases.md).
 
-#### Register devices automatically in Xcode
+## Register devices automatically in Xcode
 
 Xcode can manage the certificates, identifiers, and profiles for you.
 
@@ -23,7 +23,7 @@ In the Signing & Capabilities pane under Signing, toggle “Automatically manage
 
 For more information on running apps through Xcode, see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md).
 
-#### Register devices in your developer account
+## Register devices in your developer account
 
 First, collect the unique device identifiers for your iPhone, iPad, Apple TV, Apple Vision Pro, or Apple Watch devices using either Device Hub or Finder. To get the device identifiers for Mac computers, use System Information. For more information, see [Locating device identifiers](./locating-device-identifiers.md).
 
@@ -31,13 +31,13 @@ Then upload a file containing the device names and identifiers to your developer
 
 For more information on managing your devices, including disabling devices you no longer use, see [Devices overview](https://developer.apple.com/help/account/devices/devices-overview) in Developer Account Help.
 
-#### Create an app archive
+## Create an app archive
 
 In the project window, choose a target and a run destination from the Scheme toolbar menu. Choose Product > Archive to build the target. Xcode then displays the archive in the Archives organizer. If you select a simulator for your run destination, Xcode builds an archive matching the build-only device type for that simulator.
 
 > **Note**: For an app built with Mac Catalyst, create separate archives for the iPad and Mac Catalyst builds. When creating the archive for the Mac Catalyst build, choose the run destination that includes Mac Catalyst in its name. For an app built with Designed for iPad, create a single archive using iPad as the run destination or any run destination that includes Designed for iPad in its name. These run destinations produce the same archive.
 
-#### Export the app archive
+## Export the app archive
 
 In the Archives organizer, export a version of the app to distribute to testers:
 
@@ -48,13 +48,13 @@ In the Archives organizer, export a version of the app to distribute to testers:
 
 Xcode creates a folder that contains a few files. For iOS, iPadOS, tvOS, visionOS, or watchOS apps, the folder contains the iOS Package Archive file (with an `.ipa` extension). For macOS apps, it contains the app bundle.
 
-#### Install the app on registered devices
+## Install the app on registered devices
 
 Next, give the exported files to testers so they can install the app on their registered devices using Device Hub or Apple Configurator. For more information, see [Install apps on devices](./managing-apps-on-devices.md#Install-apps-on-devices). For macOS apps, drag the app bundle to the `/Applications` folder or another folder of your choice on the Mac.
 
 > ❗ **Important**: To run your iOS, iPadOS, visionOS, or watchOS app that you install from an iOS Package Archive, enable Developer Mode on that device. For more information, see [Enabling Developer Mode on a device](./enabling-developer-mode-on-a-device.md).
 
-#### Test your app on specific devices
+## Test your app on specific devices
 
 For iOS, iPadOS, tvOS, visionOS, and watchOS apps, you can have finer control over the test devices using an ad hoc provisioning profile for distribution that you create in your developer account.
 

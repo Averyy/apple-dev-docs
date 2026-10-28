@@ -15,11 +15,11 @@ Allocates wired memory in the kernel map, with an alignment restriction.
 void * IOMallocAligned(vm_size_t size, vm_offset_t alignment);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated memory, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This is a utility to allocate memory in the kernel, with an alignment restriction which is specified as a byte count. This function may block and so should not be called from interrupt level or while a simple lock is held.
 

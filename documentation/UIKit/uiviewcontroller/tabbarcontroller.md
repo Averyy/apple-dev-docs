@@ -23,7 +23,7 @@ var tabBarController: UITabBarController? { get }
 @property (nonatomic, strong, readonly, nullable) UITabBarController * tabBarController;
 ```
 
-#### Discussion
+## Discussion
 
 If the view controller or one of its ancestors is a child of a tab bar controller, this property contains the owning tab bar controller. This property is `nil` if the view controller is not embedded inside a tab bar controller.
 

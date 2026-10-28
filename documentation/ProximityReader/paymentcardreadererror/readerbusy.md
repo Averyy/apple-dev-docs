@@ -17,7 +17,7 @@ An error that indicates the card reader is busy.
 case readerBusy
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when the system is unable to prepare the card reader because the device is already being configured. Try to prepare the card reader again by calling the [`prepare(using:)`](../paymentcardreader/prepare%28using%29.md) method.
 

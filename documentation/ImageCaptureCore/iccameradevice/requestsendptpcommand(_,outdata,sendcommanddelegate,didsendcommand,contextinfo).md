@@ -23,7 +23,7 @@ func requestSendPTPCommand(_ command: Data, outData data: Data?, sendCommandDele
 - (void) requestSendPTPCommand:(NSData *) command outData:(NSData *) data sendCommandDelegate:(id) sendCommandDelegate didSendCommandSelector:(SEL) selector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only if the [`capabilities`](../icdevice/capabilities.md) property contains [`cameraDeviceCanAcceptPTPCommands`](../icdevicecapability/cameradevicecanacceptptpcommands.md). All PTP cameras have this capability.
 

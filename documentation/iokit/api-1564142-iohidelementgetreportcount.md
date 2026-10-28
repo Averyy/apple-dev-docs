@@ -16,7 +16,7 @@ Returns the report count for the element.
 uint32_t IOHIDElementGetReportCount(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the report count.
 

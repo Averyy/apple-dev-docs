@@ -29,11 +29,11 @@ class func fadeOut(withDuration duration: TimeInterval) -> SKAction
 
 - [Getting Started with Actions](../getting-started-with-actions.md)
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`alpha`](../sknode/alpha.md) property animates from its current value to `0.0`. This causes the node to disappear.
 

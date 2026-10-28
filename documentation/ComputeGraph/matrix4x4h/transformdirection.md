@@ -16,11 +16,11 @@ Transforms a half-precision direction vector by a 4x4 matrix, ignoring translati
 half3 matrix4x4h::transformDirection(half4x4 matrix, half3 vector)
 ```
 
-#### Return Value
+## Return Value
 
 The transformed 3D direction vector.
 
-#### Discussion
+## Discussion
 
 Multiplies the vector by the matrix with a `w` component of `0.0`, so only rotation and scale are applied. This is appropriate for normals, tangents, and other direction vectors that should not be affected by the matrix’s translational component.
 

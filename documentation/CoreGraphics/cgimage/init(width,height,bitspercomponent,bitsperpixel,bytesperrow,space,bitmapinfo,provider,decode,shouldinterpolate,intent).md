@@ -25,11 +25,11 @@ init?(width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPe
 extern CGImageRefCGImageCreate(size_t width, size_t height, size_t bitsPerComponent, size_t bitsPerPixel, size_t bytesPerRow, CGColorSpaceRef space, CGBitmapInfo bitmapInfo, CGDataProviderRef provider, const CGFloat *decode, bool shouldInterpolate, CGColorRenderingIntent intent);
 ```
 
-#### Return Value
+## Return Value
 
 A new bitmap image. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](../cgimagerelease.md).
 
-#### Discussion
+## Discussion
 
 The data provider should provide raw data that matches the format specified by the other input parameters. To use encoded data (for example, from a file specified by a URL-based data provider), see [`init(jpegDataProviderSource:decode:shouldInterpolate:intent:)`](./init%28jpegdataprovidersource,decode,shouldinterpolate,intent%29.md) and [`init(pngDataProviderSource:decode:shouldInterpolate:intent:)`](./init%28pngdataprovidersource,decode,shouldinterpolate,intent%29.md).
 

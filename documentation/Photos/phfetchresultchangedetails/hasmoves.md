@@ -24,7 +24,7 @@ var hasMoves: Bool { get }
 @property (atomic, assign, readonly) BOOL hasMoves;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, use the [`enumerateMoves(_:)`](./enumeratemoves%28_%29.md) method to find out which elements have been moved and what their new indexes are.
 

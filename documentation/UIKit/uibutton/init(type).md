@@ -23,11 +23,11 @@ convenience init(type buttonType: UIButton.ButtonType)
 + (instancetype) buttonWithType:(UIButtonType) buttonType;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created button.
 
-#### Discussion
+## Discussion
 
 This method is a convenience constructor for creating button objects with specific configurations.
 

@@ -22,7 +22,7 @@ var location: MTLDeviceLocation { get }
 @property (readonly) MTLDeviceLocation location;
 ```
 
-#### Discussion
+## Discussion
 
 The value indicates whether the GPU connects to the system through a built-in connection, an internal card slot, or an external connection.
 

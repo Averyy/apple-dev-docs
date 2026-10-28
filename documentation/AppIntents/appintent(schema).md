@@ -18,8 +18,8 @@ A Swift macro you use to make sure your app intent conforms to an schema.
 ## Declaration
 
 ```swift
-@attached
-(memberAttribute) @attached(extension, conformances: AppIntent, AssistantSchemaIntent, ShowInAppSearchResultsIntent, OpenIntent, DeleteIntent, AudioPlaybackIntent, AudioRecordingIntent, LiveActivityIntent, URLRepresentableIntent, names: named(__appSchemaIntent)) macro AppIntent<T>(schema: T) where T : AppSchemaIntent
+@attached(memberAttribute)
+@attached(extension, conformances: AppIntent, AssistantSchemaIntent, ShowInAppSearchResultsIntent, OpenIntent, DeleteIntent, AudioPlaybackIntent, AudioRecordingIntent, LiveActivityIntent, URLRepresentableIntent, names: named(__appSchemaIntent)) macro AppIntent<T>(schema: T) where T : AppSchemaIntent
 ```
 
 ## Mentions

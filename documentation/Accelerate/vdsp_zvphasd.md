@@ -21,7 +21,7 @@ Calculates the double-precision element-wise phase values, in radians, of the su
 extern void vDSP_zvphasD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_zvphas`](./vdsp_zvphas.md), except for the types of vectors `A` and `C`.
 

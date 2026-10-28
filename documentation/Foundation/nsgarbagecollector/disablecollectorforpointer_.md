@@ -15,7 +15,7 @@ Specifies that a given pointer will not be collected.
 - (void) disableCollectorForPointer:(const void *) ptr;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to ensure that memory at a given address will not be collected. You can use this, for example, to create new root objects:
 

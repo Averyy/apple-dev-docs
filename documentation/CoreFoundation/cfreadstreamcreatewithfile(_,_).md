@@ -25,11 +25,11 @@ func CFReadStreamCreateWithFile(_ alloc: CFAllocator!, _ fileURL: CFURL!) -> CFR
 extern CFReadStreamRefCFReadStreamCreateWithFile(CFAllocatorRef alloc, CFURLRef fileURL);
 ```
 
-#### Return Value
+## Return Value
 
 The new readable stream object, or `NULL` on failure. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 You must open the stream, using [`CFReadStreamOpen(_:)`](./cfreadstreamopen%28_%29.md), before reading from it.
 

@@ -23,7 +23,7 @@ optional func select(_ sender: Any?)
 - (void) select:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Select command from an editing menu. The command is used for the targeted selection of content in a view. For example, a text view uses this to select one or more words in the view and to display the selection interface.
 

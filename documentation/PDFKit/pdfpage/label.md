@@ -24,7 +24,7 @@ var label: String? { get }
 @property (nonatomic, readonly, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, the label is “1” for the first page, “2” for the second page, and so on, but nonnumerical labels are also possible (such as “xxi”, “4-1” and so on).
 

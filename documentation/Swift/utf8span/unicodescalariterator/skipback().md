@@ -21,7 +21,7 @@ Move `currentCodeUnitOffset` to the start of the previous scalar, without decodi
 mutating func skipBack() -> Int
 ```
 
-#### Discussion
+## Discussion
 
 Returns the number of `Unicode.Scalar`s skipped over, which can be 0 if at the start of the UTF8Span.
 

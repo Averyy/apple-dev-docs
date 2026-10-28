@@ -25,7 +25,7 @@ case serverResponseLost
 CKErrorServerResponseLost
 ```
 
-#### Discussion
+## Discussion
 
 You can retry operations that are idempotent. For non-idempotent operations, you should consult server state to determine if the operation succeeded.
 

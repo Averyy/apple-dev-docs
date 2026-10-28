@@ -24,7 +24,7 @@ init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight strideInPixelsX:(NSUInteger) strideInPixelsX strideInPixelsY:(NSUInteger) strideInPixelsY;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSCNNPooling`](../mpscnnpooling.md) object or `nil`, if failure.
 

@@ -25,7 +25,7 @@ class MPChangePlaybackRateCommand
 @interface MPChangePlaybackRateCommand : MPRemoteCommand
 ```
 
-#### Overview
+## Overview
 
 Apps can change the current playback rate of a media item to one of the supported rates defined by the [`supportedPlaybackRates`](./mpchangeplaybackratecommand/supportedplaybackrates.md) property.
 

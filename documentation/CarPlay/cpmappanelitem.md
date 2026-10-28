@@ -21,7 +21,7 @@ class CPMapPanelItem
 @interface CPMapPanelItem : CPPanelItem
 ```
 
-#### Overview
+## Overview
 
 A `CPMapPanelItem` object stores navigation-related information and manages interactions with that information. When creating a [`CPMapPanel`](./cpmappanel.md) to display over your custom map, configure it with one or more items with the information you want to display. Use items to display information about:
 

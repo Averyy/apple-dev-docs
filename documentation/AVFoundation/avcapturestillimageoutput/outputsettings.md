@@ -24,7 +24,7 @@ var outputSettings: [String : Any] { get set }
 @property (nonatomic, copy) NSDictionary<NSString *,id> * outputSettings;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`availableImageDataCVPixelFormatTypes`](./availableimagedatacvpixelformattypes.md) and [`availableImageDataCodecTypes`](./availableimagedatacodectypes.md) to determine what codec keys and pixel formats are supported.
 

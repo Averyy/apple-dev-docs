@@ -20,7 +20,7 @@ The app hasn’t yet asked the user for the authorization required to complete t
 static var errorAuthorizationNotDetermined: HKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when your app doesn’t request proper authorization before calling any other HealthKit methods. For more information on setting up HealthKit, see `HealthKit`.
 

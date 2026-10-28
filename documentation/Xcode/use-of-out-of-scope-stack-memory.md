@@ -5,11 +5,11 @@
 
 Detects access to variables outside of their declared scope.
 
-#### Overview
+## Overview
 
 Use this check to detect when you access a variable outside of its scope. Attempting to access out-of-scope memory can result in unpredictable behavior. Available in Xcode 9 and later.
 
-##### Use of out-of-scope stack memory in C
+### Use of out-of-scope stack memory in C
 
 In the following example, the code conditionally assigns the `pointer` variable to the return value of the `integer_returning_function` function, which it then accesses out of its declaration scope:
 
@@ -22,7 +22,7 @@ if (bool_returning_function()) {
 *pointer = 42; // Error: invalid access of stack memory out of declaration scope
 ```
 
-###### Solution
+#### Solution
 
 Ensure you don’t access variables outside of their declared scope, or allocate memory using the `malloc` function.
 

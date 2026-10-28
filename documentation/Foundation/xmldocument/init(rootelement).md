@@ -20,7 +20,7 @@ init(rootElement element: XMLElement?)
 - (instancetype) initWithRootElement:(NSXMLElement *) element;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLDocument` object, or  `nil` if initialization fails for any reason.
 

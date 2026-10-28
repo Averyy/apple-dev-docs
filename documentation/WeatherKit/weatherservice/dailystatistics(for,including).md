@@ -21,11 +21,11 @@ Returns daily weather statistics for the requested location, for each day betwee
 final func dailyStatistics<each T>(for location: CLLocation, including dataSets: repeat DailyWeatherStatisticsQuery<each T>) async throws -> (repeat DailyWeatherStatistics<each T>) where repeat each T : Decodable, repeat each T : Encodable, repeat each T : Equatable, repeat each T : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The requested daily weather statistics.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Weather data error `WeatherError`
 

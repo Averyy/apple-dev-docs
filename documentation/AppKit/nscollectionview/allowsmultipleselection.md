@@ -19,7 +19,7 @@ var allowsMultipleSelection: Bool { get set }
 @property BOOL allowsMultipleSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the collection view supports the selection of more than one item at a time. The default value of this property is [`false`](../../Swift/false.md). Changing the value from [`true`](../../Swift/true.md) to [`false`](../../Swift/false.md) reduces the current selection to the first item in the selected group.
 

@@ -22,7 +22,7 @@ var items: [MPMediaItem]? { get }
 @property (nonatomic, readonly, nullable) NSArray<MPMediaItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 If no items match the predicate, this method returns an empty array. On error, returns `nil`.
 

@@ -5,7 +5,7 @@
 
 Fill connected displays with additional content from your app.
 
-#### Overview
+## Overview
 
 The user can connect additional displays to an iOS device at any time using AirPlay or a physical cable. When an external display connects, the system mirrors your app’s primary display, or, on compatible iPad models with extended display enabled, presents your app’s interactive windows on the external display.
 
@@ -16,7 +16,7 @@ UIKit defines different [`UISceneSession.Role`](./uiscenesession/role-swift.stru
 - Scenes with the [`windowApplication`](./uiscenesession/role-swift.struct/windowapplication.md) role present interactive windows. The windows render on the built-in display or a connected display for some iPad models. Windows for more than one scene may present concurrently and may not take up the full screen.
 - Scenes with the [`windowExternalDisplayNonInteractive`](./uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role present noninteractive windows on connected displays. When an app presents content for this scene, it spans the full screen.
 
-##### Configure your project for scenes
+### Configure your project for scenes
 
 You provide the system with scene configurations to specify the information it uses to create scenes for your app and indicate the types of scenes your app supports.
 
@@ -28,7 +28,7 @@ Register a scene accessory to present noninteractive content on the connected di
 
 For more information, see [Specifying the scenes your app supports](./specifying-the-scenes-your-app-supports.md).
 
-##### Register a scene accessory for noninteractive content
+### Register a scene accessory for noninteractive content
 
 A *scene accessory* declares supplementary content that the system presents on your app’s behalf when associated functionality becomes available, such as an external display connected by cable or AirPlay. Your app declares what content to provide, and the system decides when and where to present it. Because the content appears only when a display is available, design your app to remain fully functional without the external display.
 
@@ -74,7 +74,7 @@ if let displayRegistration {
 
 To pass additional context to the scene delegate when the scene connects, create the accessory with [`externalNonInteractive(sceneConfiguration:userInfo:)`](./uisceneaccessory/externalnoninteractive%28sceneconfiguration,userinfo%29.md) and read the value from [`sceneAccessoryUserInfo`](./uiscene/connectionoptions/sceneaccessoryuserinfo.md) in [`scene(_:willConnectTo:options:)`](./uiscenedelegate/scene%28_,willconnectto,options%29.md).
 
-##### Attach a window to a scene
+### Attach a window to a scene
 
 Your scene delegate receives the connecting scene through its [`scene(_:willConnectTo:options:)`](./uiscenedelegate/scene%28_,willconnectto,options%29.md) method. Use the method and the session object it provides to configure and attach a window to the scene. The system displays the window you provide on the window scene’s current screen.
 
@@ -95,13 +95,13 @@ When using a storyboard, the system initializes and attaches a window to the sce
 
 In addition to calling this method, UIKit also posts the [`willConnectNotification`](./uiscene/willconnectnotification.md) notification.
 
-##### Handle disconnection
+### Handle disconnection
 
 When the system disconnects a scene from your app, which may occur if a user disconnects the display, your app receives a call through the [`sceneDidDisconnect(_:)`](./uiscenedelegate/scenediddisconnect%28_%29.md) method on the scene’s delegate. Use this method to perform any final cleanup and update the content other scenes present, when necessary.
 
 UIKit also posts the [`didDisconnectNotification`](./uiscene/diddisconnectnotification.md) notification in addition to calling this method.
 
-##### Handle transitions to and from connected displays
+### Handle transitions to and from connected displays
 
 Scenes may appear on different displays during their lifetime. If you use information from a [`UIScreen`](./uiscreen.md) object, obtain it contextually using a windows scene’s [`screen`](./uiwindowscene/screen.md) property.
 
@@ -146,7 +146,7 @@ class ExternalDisplaySceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-##### Change the screen mode of an external display
+### Change the screen mode of an external display
 
 Many displays support multiple resolutions, some of which use different pixel aspect ratios. Screen objects use the most common screen mode by default, but they support changing that mode when they display content for a scene with the [`windowExternalDisplayNonInteractive`](./uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role. For example, if you’re implementing a game using textures for a 640 x 480 pixel screen, you might change the screen mode for screens with higher default resolutions. Don’t attempt to change the mode of a screen for a scene with the [`windowApplication`](./uiscenesession/role-swift.struct/windowapplication.md) role.
 

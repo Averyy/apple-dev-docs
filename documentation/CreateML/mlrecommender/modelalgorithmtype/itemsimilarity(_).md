@@ -15,7 +15,7 @@ An algorithm that compares the similarity from item to item.
 case itemSimilarity(MLRecommender.SimilarityType)
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MLRecommender.SimilarityType.jaccard`](../similaritytype/jaccard.md).
 

@@ -21,7 +21,7 @@ func allocateGState()
 - (void) allocateGState;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not invoke [`allocateGState()`](./allocategstate%28%29.md), a graphics state object is constructed from scratch each time the NSView is focused.
 

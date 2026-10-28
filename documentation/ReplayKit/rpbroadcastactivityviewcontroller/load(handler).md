@@ -25,7 +25,7 @@ class func load(handler: @escaping (RPBroadcastActivityViewController?, (any Err
 + (void) loadBroadcastActivityViewControllerWithHandler:(void (^)(RPBroadcastActivityViewController *broadcastActivityViewController, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Present the view controller using [`present(_:animated:completion:)`](../../UIKit/uiviewcontroller/present%28_,animated,completion%29.md). Dismiss the view controller when the delegate’s [`broadcastActivityViewController(_:didFinishWith:error:)`](../rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller%28_,didfinishwith,error%29.md) method is called.
 

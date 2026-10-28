@@ -17,7 +17,7 @@ A network interface name associated with the slice.
 let networkInterfaceName: String
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the system name of the network interface that handles traffic for this network slice, such as “pdp_ip0”.
 

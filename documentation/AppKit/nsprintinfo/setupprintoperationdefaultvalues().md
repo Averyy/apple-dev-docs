@@ -19,7 +19,7 @@ func setUpPrintOperationDefaultValues()
 - (void) setUpPrintOperationDefaultValues;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked when the print operation is about to start. Subclasses may override this method to set default values for any attributes that are not set.
 

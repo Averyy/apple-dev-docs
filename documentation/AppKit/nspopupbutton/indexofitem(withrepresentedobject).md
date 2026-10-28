@@ -19,11 +19,11 @@ func indexOfItem(withRepresentedObject obj: Any?) -> Int
 - (NSInteger) indexOfItemWithRepresentedObject:(id) obj;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the menu item that owns the specified object, or `-1` if no such menu item was found.
 
-#### Discussion
+## Discussion
 
 Represented objects bear some direct relation to the title or image of a menu item; for example, an item entitled “100” might have an `NSNumber` object encapsulating that value as its represented object. This method invokes the method of the same name of its `NSPopUpButtonCell` object.
 

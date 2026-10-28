@@ -25,7 +25,7 @@ var taskDescription: String? { get set }
 @property (copy, nullable) NSString * taskDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t interpret this value; use it for whatever purpose you see fit. For example, you could store a description of the task for debugging purposes, or a key to track the task in your own data structures.
 

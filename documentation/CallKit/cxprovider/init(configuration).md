@@ -23,7 +23,7 @@ init(configuration: CXProviderConfiguration)
 - (instancetype) initWithConfiguration:(CXProviderConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A new provider initialized with the specified configuration.
 

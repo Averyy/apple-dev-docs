@@ -15,7 +15,7 @@ The session has disconnected or failed to connect to a streaming endpoint.
 case disconnected(FoveatedStreamingSession.DisconnectReason)
 ```
 
-#### Discussion
+## Discussion
 
 The [`FoveatedStreamingSession`](../../foveatedstreamingsession.md) enters this state after you call [`disconnect()`](../disconnect%28%29.md) or because the connection has been interrupted.
 

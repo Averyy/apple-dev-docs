@@ -24,11 +24,11 @@ func removeTrack(_ track: AVMusicTrack) -> Bool
 - (BOOL) removeTrack:(AVMusicTrack *) track;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the call succeeds.
 
-#### Discussion
+## Discussion
 
 This method doesn’t destroy the method track since you can reuse it.
 

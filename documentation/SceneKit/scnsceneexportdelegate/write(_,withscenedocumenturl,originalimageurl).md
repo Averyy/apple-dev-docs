@@ -41,11 +41,11 @@ optional func write(_ image: NSImage, withSceneDocumentURL documentURL: URL, ori
 - (NSURL *) writeImage:(NSImage *) image withSceneDocumentURL:(NSURL *) documentURL originalImageURL:(NSURL *) originalImageURL;
 ```
 
-#### Return Value
+## Return Value
 
 The URL your app exported the image to, or `nil` if your app did not write the image to a URL.
 
-#### Discussion
+## Discussion
 
 If you implement this method, Scene Kit calls it for each image (for example, a texture) attached to the scene. Your app can then save the image data in a location and format of your choice, returning a URL for the exported image file.
 

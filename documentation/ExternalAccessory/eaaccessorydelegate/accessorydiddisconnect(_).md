@@ -24,7 +24,7 @@ optional func accessoryDidDisconnect(_ accessory: EAAccessory)
 - (void) accessoryDidDisconnect:(EAAccessory *) accessory;
 ```
 
-#### Discussion
+## Discussion
 
 The accessory manager calls this method as a convenience whenever it receives an [`EAAccessoryDidDisconnectNotification`](../eaaccessorydiddisconnectnotification.md) notification. You can use this method to remove any references to the specified accessory object and to stop any services currently using the accessory.
 

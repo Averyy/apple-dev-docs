@@ -27,7 +27,7 @@ weak var textInput: (any UITextInput)? { get }
 
 - [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 Use this property to refer to the text input view that manages the text selection. You specify this view when you create the [`UITextSelectionDisplayInteraction`](../uitextselectiondisplayinteraction.md) object.
 

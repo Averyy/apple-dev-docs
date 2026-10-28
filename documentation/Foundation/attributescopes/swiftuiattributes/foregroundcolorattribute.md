@@ -22,7 +22,7 @@ A key for the color that draws a run of attributed text.
 enum ForegroundColorAttribute
 ```
 
-#### Overview
+## Overview
 
 Set this key to tint part of a string without splitting it into several `Text` views:
 

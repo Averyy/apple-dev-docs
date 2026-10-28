@@ -22,7 +22,7 @@ The image associated with the tip.
 var image: Image? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to display an icon to the left of the `title` and `message` of your tip. This property is `Optional` and defaults to a value of `nil`.
 

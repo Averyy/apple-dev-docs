@@ -25,7 +25,7 @@ class var biases: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * biases;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`biases`](./biases.md) key is an [`MLMultiArray`](../mlmultiarray.md). You must scope this key with the name of the specific neural network layer whose biases you’d like to access. See [`scoped(to:)`](./scoped%28to%29.md).
 

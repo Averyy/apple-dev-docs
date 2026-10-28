@@ -9,7 +9,7 @@ Get a list of devices that are managed by the server.
 **Availability**:
 - Device Assignment Services 5.0+
 
-#### Discussion
+## Discussion
 
 This request fetches a list of all devices that are assigned to this MDM server at the time of the request. This service should be used for loading an initial list of devices into the MDM server’s data store. Once the list of devices is loaded, [`Sync the List of Devices`](./sync-devices.md) to update the list.
 

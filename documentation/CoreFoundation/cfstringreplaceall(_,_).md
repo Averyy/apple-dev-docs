@@ -25,7 +25,7 @@ func CFStringReplaceAll(_ theString: CFMutableString!, _ replacement: CFString!)
 extern void CFStringReplaceAll(CFMutableStringRef theString, CFStringRef replacement);
 ```
 
-#### Discussion
+## Discussion
 
 The character buffer of `theString` is resized according to the length of the new characters.
 

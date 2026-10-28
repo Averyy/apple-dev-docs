@@ -19,7 +19,7 @@ func reflectScrolledClipView(_ clipView: NSClipView)
 - (void) reflectScrolledClipView:(NSClipView *) clipView;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSScrollView`](../nsscrollview.md) implements this method to update its [`NSScroller`](../nsscroller.md) objects.
 

@@ -24,7 +24,7 @@ var showsMicrophoneButton: Bool { get set }
 @property (nonatomic, assign) BOOL showsMicrophoneButton;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

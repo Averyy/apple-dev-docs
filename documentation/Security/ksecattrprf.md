@@ -19,7 +19,7 @@ let kSecAttrPRF: CFString
 extern CFStringRef const kSecAttrPRF;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and indicates the pseudorandom function associated with this cryptographic key. See [Pseudorandom Function Values](./item-attribute-keys-and-values.md#Pseudorandom-Function-Values) for a list of valid values.
 

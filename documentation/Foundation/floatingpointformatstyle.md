@@ -21,7 +21,7 @@ A structure that converts between floating-point values and their textual repres
 struct FloatingPointFormatStyle<Value> where Value : BinaryFloatingPoint
 ```
 
-#### Overview
+## Overview
 
 Instances of [`FloatingPointFormatStyle`](./floatingpointformatstyle.md) create localized, human-readable text from [`BinaryFloatingPoint`](../Swift/binaryfloatingpoint.md) numbers and parse string representations of numbers into instances of [`BinaryFloatingPoint`](../Swift/binaryfloatingpoint.md) types. All of the Swift standard library’s floating-point types, such as [`Double`](../Swift/double.md), [`Float`](../Swift/float.md), and [`Float80`](../Swift/float80.md), conform to [`BinaryFloatingPoint`](../Swift/binaryfloatingpoint.md), and therefore work with this format style.
 
@@ -29,7 +29,7 @@ Instances of [`FloatingPointFormatStyle`](./floatingpointformatstyle.md) create 
 
 > **Note**:  Foundation provides another format style type, [`IntegerFormatStyle`](./integerformatstyle.md), for working with numbers that conform to [`BinaryInteger`](../Swift/binaryinteger.md). For Foundation’s [`Decimal`](./decimal.md) type, use [`Decimal.FormatStyle`](./decimal/formatstyle.md).
 
-##### Formatting floating-point values
+### Formatting floating-point values
 
 Use the [`formatted()`](../Swift/binaryfloatingpoint/formatted%28%29.md) method to create a string representation of a floating-point value using the default [`FloatingPointFormatStyle`](./floatingpointformatstyle.md) configuration.
 
@@ -70,7 +70,7 @@ let customFormatting = exampleNumber.formatted(
 // customFormatting is "+123456.78"
 ```
 
-##### Creating a floating-point format style instance
+### Creating a floating-point format style instance
 
 The previous examples use static factory methods like [`number`](./formatstyle/number-8c8rj.md) to create format styles within the call to the [`formatted(_:)`](../Swift/binaryfloatingpoint/formatted%28_%29-4ksqj.md) method. You can also create a [`FloatingPointFormatStyle`](./floatingpointformatstyle.md) instance and use it to repeatedly format different values, with the [`format(_:)`](./floatingpointformatstyle/format%28_%29.md) method:
 
@@ -83,7 +83,7 @@ percentFormatStyle.format(1.0) // "100%"
 
 ```
 
-##### Parsing floating-point values
+### Parsing floating-point values
 
 You can use [`FloatingPointFormatStyle`](./floatingpointformatstyle.md) to parse strings into floating-point values. You can define the format style within the type’s initializer or pass in a format style created outside the function, as shown here:
 
@@ -96,7 +96,7 @@ let salePrice = try? Double("$731.67",
                              format: priceFormatStyle) // 731.67
 ```
 
-##### Matching regular expressions
+### Matching regular expressions
 
 Along with parsing numeric values in strings, you can use theSwift regular expression domain-specific language to match and capture numeric substrings. The following example defines a percentage format style to match a percentage value using `en_US` numeric conventions. The rest of the regular expression ignores any characters prior to a `": "` sequence that precedes the percentage substring.
 

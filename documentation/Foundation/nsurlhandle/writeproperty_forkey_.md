@@ -17,11 +17,11 @@ Sets the property of the receiver’s resource for a specified key to the specif
 - (BOOL) writeProperty:(id) propertyValue forKey:(NSString *) propertyKey;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the modification was successful, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Must be overridden by subclasses.
 

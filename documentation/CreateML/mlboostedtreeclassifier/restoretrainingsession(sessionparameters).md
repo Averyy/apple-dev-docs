@@ -20,11 +20,11 @@ Restores an existing training session.
 static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLBoostedTreeClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 A `MLTrainingSession` that can be used to resume training.
 
-#### Discussion
+## Discussion
 
 The method requires the a valid [`sessionDirectory`](../mltrainingsessionparameters/sessiondirectory.md) parameter.
 

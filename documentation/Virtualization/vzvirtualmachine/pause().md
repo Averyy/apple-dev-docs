@@ -19,7 +19,7 @@ func pause() async throws
 - (void) pauseWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to pause a VM that’s in the [`VZVirtualMachine.State.running`](./state-swift.enum/running.md) state. To determine if a VM is in a state that allows you to pause it, check the VM’s [`canPause`](./canpause.md) property.
 

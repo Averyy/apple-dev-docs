@@ -25,7 +25,7 @@ func nextDaylightSavingTimeTransition(after aDate: Date) -> Date?
 - (NSDate *) nextDaylightSavingTimeTransitionAfterDate:(NSDate *) aDate;
 ```
 
-#### Return Value
+## Return Value
 
 The next daylight saving time transition after `aDate`. Depending on the time zone of the receiver, this method may return a change of the time zone’s offset from GMT. Returns `nil` if the time zone of the receiver does not observe daylight savings time as of `aDate`.
 

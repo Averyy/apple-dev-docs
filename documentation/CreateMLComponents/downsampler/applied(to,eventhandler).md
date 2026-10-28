@@ -21,7 +21,7 @@ Down samples the input sequence
 func applied<S>(to input: S, eventHandler: EventHandler?) throws -> Downsampler<Input>.DownStreamSequence where Input == S.Feature, S : TemporalSequence
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of down sampled outputs.
 

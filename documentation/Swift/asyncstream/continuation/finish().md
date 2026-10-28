@@ -21,7 +21,7 @@ Resume the task awaiting the next iteration point by having it return nil, which
 func finish()
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function more than once has no effect. After calling finish, the stream enters a terminal state and doesn’t produce any additional elements.
 

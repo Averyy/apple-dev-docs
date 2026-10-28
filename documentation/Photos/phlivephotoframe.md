@@ -24,7 +24,7 @@ protocol PHLivePhotoFrame
 @protocol PHLivePhotoFrame
 ```
 
-#### Overview
+## Overview
 
 You don’t create classes that implement this protocol. Instead, you provide a [`frameProcessor`](./phlivephotoeditingcontext/frameprocessor.md) block when editing a Live Photo with the [`PHLivePhotoEditingContext`](./phlivephotoeditingcontext.md) class. When you process your edits for output or display, Photos calls your block repeatedly to process each frame of the Live Photo’s video and still photo content. On each call, Photos provides the frame’s image content and associated information in an object that adopts this protocol. In that block, you use that object’s [`image`](./phlivephotoframe/image.md) property to access the image to be edited, then perform your edits and return another [`CIImage`](../CoreImage/ciimage.md) object representing the result of processing the input image.
 

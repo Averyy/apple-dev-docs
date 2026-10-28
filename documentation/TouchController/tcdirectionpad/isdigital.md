@@ -21,7 +21,7 @@ var isDigital: Bool { get set }
 @property (nonatomic, assign, getter=isDigital) BOOL digital;
 ```
 
-#### Discussion
+## Discussion
 
 If `YES`, dpad buttons will report 1 or 0. Ignored if radial is set, as button presses will always be digital.
 

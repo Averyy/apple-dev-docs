@@ -23,7 +23,7 @@ var hasRequestedOptionalAccessToAllHosts: Bool { get set }
 @property (nonatomic) BOOL hasRequestedOptionalAccessToAllHosts;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `YES`, the extension has asked for access to all hosts in a call to `browser.runtime.permissions.request()`, and future permission checks will present discrete hosts for approval as being implicitly requested. This value should be saved and restored as needed by the app.
 

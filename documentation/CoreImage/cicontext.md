@@ -28,7 +28,7 @@ class CIContext
 
 - [Processing an Image Using Built-in Filters](./processing-an-image-using-built-in-filters.md)
 
-#### Overview
+## Overview
 
 You use a `CIContext` instance to render a [`CIImage`](./ciimage.md) instance which represents a graph of image processing operations which are built using other Core Image classes, such as [`CIFilter`](./cifilter-swift.class.md), [`CIKernel`](./cikernel.md), [`CIColor`](./cicolor.md) and [`CIImage`](./ciimage.md). You can also use a `CIContext` with the [`CIDetector`](./cidetector.md) class to analyze images — for example, to detect faces or barcodes.
 

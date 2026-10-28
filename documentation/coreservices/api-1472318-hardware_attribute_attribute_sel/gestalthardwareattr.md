@@ -14,7 +14,7 @@
 gestaltHardwareAttr = 'hdwr'
 ```
 
-#### Discussion
+## Discussion
 
 The selector you pass to the Gestalt function to determine low-level hardware configuration attributes.
 

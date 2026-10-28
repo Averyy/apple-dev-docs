@@ -18,11 +18,11 @@ Produces the complete path to the file in which the macro appears.
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro filePath<T>() -> T where T : ExpressibleByStringLiteral
+@freestanding(expression)
+macro filePath<T>() -> T where T : ExpressibleByStringLiteral
 ```
 
-#### Overview
+## Overview
 
 Because `#fileID` doesn’t embed the full path to the source file, unlike `#filePath`, it gives you better privacy and reduces the size of the compiled binary. Avoid using `#filePath` outside of tests, build scripts, or other code that doesn’t become part of the shipping program.
 

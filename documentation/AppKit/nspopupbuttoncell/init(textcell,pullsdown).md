@@ -19,11 +19,11 @@ init(textCell stringValue: String, pullsDown pullDown: Bool)
 - (instancetype) initTextCell:(NSString *) stringValue pullsDown:(BOOL) pullDown;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSPopUpButtonCell` object, or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 This menu item is assigned the default pop-up button action that displays the menu. To set the action and target, use the setAction: and setTarget: methods of the item’s corresponding [`NSMenuItem`](../nsmenuitem.md) object.
 

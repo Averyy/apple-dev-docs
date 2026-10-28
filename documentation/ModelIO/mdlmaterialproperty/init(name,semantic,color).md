@@ -24,11 +24,11 @@ convenience init(name: String, semantic: MDLMaterialSemantic, color: CGColor)
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic color:(CGColorRef) color;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.color`](../mdlmaterialpropertytype/color.md).
 
-#### Discussion
+## Discussion
 
 A material property with a color value uses a uniform color for all pixels rendered using the material. This option is useful for base colors of solid-color objects, and also for material semantics where variation across the surface of the material is unnecessary. To vary colors across a surface, use a texture image instead.
 

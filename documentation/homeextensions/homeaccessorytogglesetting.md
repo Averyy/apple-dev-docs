@@ -18,7 +18,7 @@ A setting that offers a binary choice, such as on or off.
 final class HomeAccessoryToggleSetting
 ```
 
-#### Overview
+## Overview
 
 The Home app displays this setting as a toggle.
 

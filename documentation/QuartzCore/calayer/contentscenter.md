@@ -24,7 +24,7 @@ var contentsCenter: CGRect { get set }
 @property CGRect contentsCenter;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to subdivide the layer’s content into a 3x3 grid. The value in this property specifies the location and size of the center rectangle in that grid. If the layer’s [`contentsGravity`](./contentsgravity.md) property is set to one of the resizing modes, resizing the layer causes scaling to occur differently in each rectangle of the grid. The center rectangle is stretched in both dimensions, the top-center and bottom-center rectangles are stretched only horizontally, the left-center and right-center rectangles are stretched only vertically, and the four corner rectangles are not stretched at all. Therefore, you can use this technique to implement stretchable backgrounds or images using a three-part or nine-part image.
 

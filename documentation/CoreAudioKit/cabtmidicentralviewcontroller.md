@@ -22,7 +22,7 @@ class CABTMIDICentralViewController
 @interface CABTMIDICentralViewController : UITableViewController
 ```
 
-#### Overview
+## Overview
 
 To let the user search for nearby MIDI peripherals, create a new [`CABTMIDICentralViewController`](./cabtmidicentralviewcontroller.md) object and then either present it modally or push it onto a [`UINavigationController`](../UIKit/uinavigationcontroller.md) view controller. No other configuration of the object is necessary. Once the user interface is visible, the iOS device finds nearby peripherals and displays them to the user. If the user selects a peripheral, it’s automatically paired with this iOS device. The [`CABTMIDICentralViewController`](./cabtmidicentralviewcontroller.md) object manages its own user interface and is dismissed automatically.
 

@@ -12,7 +12,7 @@ virtual IOReturn GetDeviceInformation(
  UInt32 *requestedPower);
 ```
 
-#### Return Value
+## Return Value
 
 Actual power that was reserved
 

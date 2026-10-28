@@ -19,7 +19,7 @@ func SCNetworkInterfaceCopyMediaOptions(_ interface: SCNetworkInterface, _ curre
 Boolean SCNetworkInterfaceCopyMediaOptions(SCNetworkInterfaceRef interface, CFDictionaryRef*current, CFDictionaryRef*active, CFArrayRef*available, Boolean filter);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if requested information has been returned.
 

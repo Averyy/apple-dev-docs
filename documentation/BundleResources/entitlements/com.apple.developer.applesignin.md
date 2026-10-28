@@ -23,7 +23,7 @@ An entitlement that lets your app use Sign in with Apple.
 
 - `Default`: The value used for normal operation.
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app with the correct associated value, enable the Sign in with Apple capability in Xcode. For information about letting users log into your apps and services with their Apple ID, see [`ASAuthorizationAppleIDProvider`](../../AuthenticationServices/asauthorizationappleidprovider.md).
 

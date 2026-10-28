@@ -20,7 +20,7 @@ Constants that specify the type of highlight to apply to text.
 typedef NSString * NSTextHighlightStyle;
 ```
 
-#### Overview
+## Overview
 
 Use an [`NSTextHighlightStyle`](./nstexthighlightstyle.md) structure as the value of the [`NSTextHighlightStyleAttributeName`](./nstexthighlightstyleattributename.md) attribute. That attribute applies a highlight to the text to emphasize it. The highlight contributes a background color and a contrasting foreground color to the text.
 

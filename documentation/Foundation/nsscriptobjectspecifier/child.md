@@ -20,7 +20,7 @@ unowned(unsafe) var child: NSScriptObjectSpecifier? { get set }
 @property (assign, nullable) NSScriptObjectSpecifier * childSpecifier;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly; it is automatically invoked by [`container`](./container.md).
 

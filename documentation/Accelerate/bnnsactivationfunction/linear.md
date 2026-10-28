@@ -23,7 +23,7 @@ An activation function that returns its input multiplied by a specified value.
 static var linear: BNNSActivationFunction { get }
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

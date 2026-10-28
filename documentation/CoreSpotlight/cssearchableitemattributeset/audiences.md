@@ -23,7 +23,7 @@ var audiences: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * audiences;
 ```
 
-#### Discussion
+## Discussion
 
 A class of entity may be determined by the creator or the publisher of the item or by a third party.
 

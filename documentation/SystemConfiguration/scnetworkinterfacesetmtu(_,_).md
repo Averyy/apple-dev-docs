@@ -19,7 +19,7 @@ func SCNetworkInterfaceSetMTU(_ interface: SCNetworkInterface, _ mtu: Int32) -> 
 Boolean SCNetworkInterfaceSetMTU(SCNetworkInterfaceRef interface, int mtu);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was updated; `FALSE` if an error occurred.
 

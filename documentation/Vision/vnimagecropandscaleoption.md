@@ -16,7 +16,7 @@ enum VNImageCropAndScaleOption
 enum VNImageCropAndScaleOption : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Scaling an image ensures that it fits within the algorithm’s input image dimensions, which may require a change in aspect ratio. The figure below shows how each crop-and-scale option transforms the input image:
 

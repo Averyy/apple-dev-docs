@@ -19,7 +19,7 @@ func SCNetworkSetRemove(_ set: SCNetworkSet) -> Bool
 Boolean SCNetworkSetRemove(SCNetworkSetRef set);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the set was removed; `FALSE` if an error occurred.
 

@@ -5,7 +5,7 @@
 
 Enable players to voice chat with all, or groups of, players in a multiplayer game.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  The [`GKVoiceChat`](./gkvoicechat.md) class is deprecated. Use SharePlay instead. See [Enable the local player to choose other players](./finding-multiple-players-for-a-game.md#Enable-the-local-player-to-choose-other-players) and [`startGroupActivity(playerHandler:)`](./gkmatchmaker/startgroupactivity%28playerhandler%29.md).
 
@@ -15,7 +15,7 @@ To learn about audio channels, see the [AVFAudio](../AVFAudio/AVFAudio.md) frame
 
 > **Note**:  A player can only participate in voice chat when their device has a microphone and it’s connected to a Wi-Fi network. But, your game can configure and start voice chat when the device isn’t currently capable of using voice chat. If conditions change to allow voice chat — for example, the device connects to Wi-Fi — the voice chat object automatically connects to the associated channel.
 
-##### Configure voice chat
+### Configure voice chat
 
 To configure voice chat, add the [`NSMicrophoneUsageDescription`](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) key to the Information Property List in your project. Set it to a string that GameKit presents to the player when your game attempts to access the microphone. The string needs to state the reason your game needs access to the microphone. If the user doesn’t allow access, when you attempt to start voice chat, it fails with an error.
 
@@ -33,7 +33,7 @@ catch {
 }
 ```
 
-##### Create separate voice channels
+### Create separate voice channels
 
 You can use one or more separate audio channels for voice chat. For example, use one channel for communicating with all the players and another channel for communicating between team members.
 
@@ -43,7 +43,7 @@ Create a [`GKVoiceChat`](./gkvoicechat.md) object that specifies a unique name f
 voiceChat = singlesMatch?.voiceChat(withName: "PickupTennisChannel")
 ```
 
-##### Start voice chat
+### Start voice chat
 
 To start voice chat on a channel, set the voice chat properties, such as the volume level, and invoke the [`start()`](./gkvoicechat/start%28%29.md) method.
 
@@ -56,7 +56,7 @@ The first time your game accesses the microphone on the player’s device, the s
 
 If the player grants permission, the voice chat object connects to the channel and GameKit notifies other players connected to the channel that the player joined the chat. When the player is connected, GameKit automatically plays voice data from other players.
 
-##### Activate and switch the microphone between channels
+### Activate and switch the microphone between channels
 
 After you start voice chat on a channel, the player can hear the other players speak but you need to activate the microphone so GameKit can begin transmitting the player’s voice to the channel.
 
@@ -68,7 +68,7 @@ voiceChat?.isActive = true
 
 If the match has multiple channels, only one channel can use the microphone at a time. When you activate a channel, GameKit deactivates the other channels in the match. So, you need to provide a control in the interface for the player to choose the channel before speaking.
 
-##### Add controls and feedback to your interface
+### Add controls and feedback to your interface
 
 You need to implement an interface that displays the status of players, shows when players connect and speak, mutes other players, and changes the volume of individual channels.
 
@@ -96,7 +96,7 @@ voiceChat?.playerVoiceChatStateDidChangeHandler = { player, state in
 
 Then, you can add a control that allows the player to mute other players including themselves using the [`setPlayer(_:muted:)`](./gkvoicechat/setplayer%28_,muted%29.md) method. Finally, add another control for the player to adjust the volume of individual channels using the [`volume`](./gkvoicechat/volume.md) property.
 
-##### Stop voice chat
+### Stop voice chat
 
 To stop transmitting data over the channel, use the [`stop()`](./gkvoicechat/stop%28%29.md) method, and deactivate the audio session. If you mute all the players, GameKit still sends the data to the local player, so instead use the [`stop()`](./gkvoicechat/stop%28%29.md) method.
 

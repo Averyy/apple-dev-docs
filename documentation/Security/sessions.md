@@ -5,7 +5,7 @@
 
 Manage login, authorization, and security sessions in macOS.
 
-#### Overview
+## Overview
 
 Use the `Security.AuthSession` API to work with session management and inquiry functions.
 

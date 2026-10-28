@@ -22,7 +22,7 @@ optional func speechSynthesizer(_ sender: NSSpeechSynthesizer, willSpeakWord cha
 - (void) speechSynthesizer:(NSSpeechSynthesizer *) sender willSpeakWord:(NSRange) characterRange ofString:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 One use of this method might be to visually highlight the word being spoken.
 

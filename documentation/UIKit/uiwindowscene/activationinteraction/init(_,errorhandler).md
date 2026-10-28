@@ -22,7 +22,7 @@ init(_ configurationProvider: @escaping UIWindowScene.ActivationInteraction.Conf
 - (instancetype) initWithConfigurationProvider:(UIWindowSceneActivationInteractionConfigurationProvider) configurationProvider errorHandler:(void (^)(NSError *)) errorHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized activation interaction object.
 

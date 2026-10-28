@@ -18,7 +18,7 @@ static var enforceRevocationChecks: SecCSFlags { get }
 kSecCSEnforceRevocationChecks
 ```
 
-#### Discussion
+## Discussion
 
 Forces checking of certificates against revocation lists or OCSP (online certificate status protocol) regardless of preference settings.
 

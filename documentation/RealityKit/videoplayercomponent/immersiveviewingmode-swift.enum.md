@@ -15,7 +15,7 @@ Options for viewing the video during immersive-media playback.
 enum ImmersiveViewingMode
 ```
 
-#### Overview
+## Overview
 
 This applies only to immersive media types.
 

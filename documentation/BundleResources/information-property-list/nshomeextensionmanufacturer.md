@@ -13,7 +13,7 @@
 - **Name**: `NSHomeExtensionManufacturer`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Include this key in the information property list of a Home app extension. This key is optional.
 

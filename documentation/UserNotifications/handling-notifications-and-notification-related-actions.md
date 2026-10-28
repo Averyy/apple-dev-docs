@@ -5,7 +5,7 @@
 
 Respond to user interactions with the system’s notification interfaces, including handling your app’s custom actions.
 
-#### Overview
+## Overview
 
 Notifications are primarily a way of putting information in front of the user, but your app can also respond to them. For example, you might want to respond to:
 
@@ -14,7 +14,7 @@ Notifications are primarily a way of putting information in front of the user, b
 - A silent notification (see [Pushing background updates to your App](./pushing-background-updates-to-your-app.md)).
 - A notification associated with the [PushKit](../PushKit/PushKit.md) framework, such as VoIP or complication-related notifications.
 
-##### Handle user-selected actions
+### Handle user-selected actions
 
 Actionable notifications let the user respond to a notification directly from the notification interface. In addition to the notification’s content, an actionable notification displays one or more buttons representing the actions that the user can take. Tapping one of the buttons forwards the selected action to your app, without bringing the app to the foreground. If your app supports actionable notification types, you must handle the associated actions.
 
@@ -74,7 +74,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 }
 ```
 
-##### Handle notifications while your app runs in the foreground
+### Handle notifications while your app runs in the foreground
 
 If a notification arrives when your app is running in the foreground, the system delivers that notification directly to your app. Upon receiving a notification, you can use the notification’s payload to do whatever you want. For example, you can update your app’s interface to reflect new information contained in the notification. You can then suppress any scheduled alerts or modify those alerts.
 

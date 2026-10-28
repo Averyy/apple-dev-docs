@@ -21,11 +21,11 @@ func LSCopyApplicationForMIMEType(_ inMIMEType: CFString!, _ inRoleMask: LSRoles
 OSStatus LSCopyApplicationForMIMEType(CFStringRef inMIMEType, LSRolesMask inRoleMask, CFURLRef *outAppURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359). If no application suitable for opening items with the specified MIME type is found in the Launch Services database, the function will return the result code `kLSApplicationNotFoundErr`.
 
-#### Discussion
+## Discussion
 
 Thread-safe since Mac OS version 10.2.
 

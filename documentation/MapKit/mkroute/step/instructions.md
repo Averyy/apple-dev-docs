@@ -25,7 +25,7 @@ var instructions: String { get }
 @property (nonatomic, readonly) NSString * instructions;
 ```
 
-#### Discussion
+## Discussion
 
 The framework localizes the string in this property according to the user’s language preferences. You can present this string to the user from your app’s interface.
 

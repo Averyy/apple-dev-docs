@@ -25,7 +25,7 @@ enum ResponseDisposition
 enum NSURLSessionResponseDisposition : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When a data or upload task first receives a response, it calls the  [`urlSession(_:dataTask:didReceive:completionHandler:)`](../urlsessiondatadelegate/urlsession%28_,datatask,didreceive,completionhandler%29.md) method of [`URLSessionDataDelegate`](../urlsessiondatadelegate.md). Implement this method to inspect the received [`URLResponse`](../urlresponse.md) and then call the provided completion handler. The first parameter to the completion handler is of this type, a disposition that tells the task how to proceed.
 

@@ -33,7 +33,7 @@ var player: GKPlayer { get }
 @property (atomic, retain, readonly, nullable) GKPlayer * player;
 ```
 
-#### Discussion
+## Discussion
 
 When you initialize a new score object, the [`player`](./player.md) property is the local player. If the score object was returned to your game by loading scores from Game Center, the [`player`](./player.md) property is the player who earned that score.
 

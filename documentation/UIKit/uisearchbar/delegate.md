@@ -23,7 +23,7 @@ weak var delegate: (any UISearchBarDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UISearchBarDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should conform to the [`UISearchBarDelegate`](../uisearchbardelegate.md) protocol. Set this property to further modify the behavior. The default value is `nil`.
 

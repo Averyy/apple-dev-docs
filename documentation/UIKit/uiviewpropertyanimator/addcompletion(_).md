@@ -27,7 +27,7 @@ func addCompletion() async -> UIViewAnimatingPosition
 - (void) addCompletion:(void (^)(UIViewAnimatingPosition finalPosition)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Completion blocks are executed after the animations finish normally. If you call the [`stopAnimation(_:)`](../uiviewanimating/stopanimation%28_%29.md) method, the completion blocks are not called if you specify [`true`](../../Swift/true.md) for the method’s parameter. If you specify [`false`](../../Swift/false.md) for the parameter, the animator executes the completion blocks normally after you call its [`finishAnimation(at:)`](../uiviewanimating/finishanimation%28at%29.md) method.
 

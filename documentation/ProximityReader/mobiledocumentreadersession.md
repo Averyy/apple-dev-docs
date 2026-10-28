@@ -22,7 +22,7 @@ final class MobileDocumentReaderSession
 - [Adopting the Verifier API in your iPhone app](./adopting-the-verifier-api-in-your-iphone-app.md)
 - [Generating reader tokens for the Verifier API](./generating-reader-tokens-for-the-verifier-api.md)
 
-#### Overview
+## Overview
 
 Use a `MobileDocumentReaderSession` object to read mobile documents from a properly configured device. Don’t create this object directly. Instead, obtain one by calling the [`prepare(using:)`](./mobiledocumentreader/prepare%28using%29.md) method of your [`MobileDocumentReader`](./mobiledocumentreader.md) object. This returns a session after the successful configuration of the device.
 

@@ -21,7 +21,7 @@ var isUserAuthenticationEnabled: Bool { get }
 @property (readonly, getter=isUserAuthenticationEnabled) BOOL userAuthenticationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the system requires device owner authentication challenges to reveal the content of the scene associated with this manager, `false` otherwise.
 

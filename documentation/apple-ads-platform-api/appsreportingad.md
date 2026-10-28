@@ -15,13 +15,13 @@ Ad metadata for apps report rows.
 object AppsReportingAd
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsReportingAd` object is the ad metadata embedded in apps ad report rows. It captures the configuration and status of the ad at report time, providing the full organizational context (`adAccountId`, `campaignId`, `adGroupId`) alongside the ad’s operational state (`status`, `systemStatus`, `displayStatus`).
 
 The `creative` field embeds an `AppsReportingCreative` summary capturing the creative type and system status, without needing a separate lookup.
 
-##### Example
+### Example
 
 ```json
 {

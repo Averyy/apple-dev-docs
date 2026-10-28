@@ -19,7 +19,7 @@ var kAXNaturalLanguageTextAttribute: Unmanaged<CFString>
 CFStringRef kAXNaturalLanguageTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

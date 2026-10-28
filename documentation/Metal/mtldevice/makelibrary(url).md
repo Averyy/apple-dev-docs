@@ -29,7 +29,7 @@ func makeLibrary(URL url: URL) throws -> any MTLLibrary
 
 - [Building a shader library by precompiling source files](../building-a-shader-library-by-precompiling-source-files.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLLibrary`](../mtllibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

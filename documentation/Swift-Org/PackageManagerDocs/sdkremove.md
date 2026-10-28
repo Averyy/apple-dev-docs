@@ -13,7 +13,7 @@ Removes a previously installed Swift SDK bundle from the filesystem.
 **Availability**:
 - Swift 6.1+
 
-#### Overview
+## Overview
 
 ```
 sdk remove [--package-path=<package-path>]

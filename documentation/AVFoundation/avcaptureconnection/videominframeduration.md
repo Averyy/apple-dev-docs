@@ -22,7 +22,7 @@ var videoMinFrameDuration: CMTime { get set }
 @property (nonatomic) CMTime videoMinFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 When [`isVideoMinFrameDurationSupported`](./isvideominframedurationsupported.md) is [`true`](../../Swift/true.md), the value of the property configures the lower bound for the amount of time a video connection separates consecutive frames. The value is equivalent to the reciprocal of the minimum frame rate.
 

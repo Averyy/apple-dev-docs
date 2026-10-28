@@ -15,7 +15,7 @@ Gets a string that identifies the product in response to a call from the framewo
 virtual kern_return_t GetProductString(struct DeviceString *product);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the get-product-string result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 

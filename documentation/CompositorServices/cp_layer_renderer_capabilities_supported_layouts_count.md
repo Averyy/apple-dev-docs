@@ -16,11 +16,11 @@ Returns the number of layouts the layer supports.
 size_t cp_layer_renderer_capabilities_supported_layouts_count(cp_layer_renderer_capabilities_t layer_capabilities, cp_supported_layouts_options options);
 ```
 
-#### Return Value
+## Return Value
 
 The number of supported layout options for the layer’s textures.
 
-#### Discussion
+## Discussion
 
 This function returns only the number of layouts that support the specified `options`. To iterate over the available layouts, use the [`cp_layer_renderer_capabilities_supported_layout`](./cp_layer_renderer_capabilities_supported_layout.md) function.
 

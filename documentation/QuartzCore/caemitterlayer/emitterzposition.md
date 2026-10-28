@@ -24,7 +24,7 @@ var emitterZPosition: CGFloat { get set }
 @property CGFloat emitterZPosition;
 ```
 
-#### Discussion
+## Discussion
 
 See [Emitter Shape](../emitter-shape.md) for details of how the emitterZPosition relates to the possible emitter shapes.
 

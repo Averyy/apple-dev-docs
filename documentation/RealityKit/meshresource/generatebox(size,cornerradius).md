@@ -28,7 +28,7 @@ Creates a box mesh from a length for the box’s width, height, and depth, and a
 @preconcurrency static func generateBox(size: SIMD3<Float>, cornerRadius: Float = 0) -> MeshResource
 ```
 
-#### Discussion
+## Discussion
 
 The method centers the box at the entity’s origin and aligns the box’s faces with the coordinate system’s axes.
 

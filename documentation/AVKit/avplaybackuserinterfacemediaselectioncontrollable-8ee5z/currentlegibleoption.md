@@ -19,7 +19,7 @@ The currently selected subtitle or caption track.
 var currentLegibleOption: AVPlaybackUserInterfaceMediaSelectionOption? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Should be one of the options in [`legibleOptions`](./legibleoptions.md).
 

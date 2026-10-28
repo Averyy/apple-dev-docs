@@ -20,7 +20,7 @@ The time code to render at.
 var timeCode: USDStage.TimeCode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In automatic mode, the system reads this value to determine what time to render at. Updating this value triggers a re-render. In manual mode, this value is unused. Pass the time code directly to [`render(_:to:at:)`](./render%28_,to,at%29.md) instead.
 

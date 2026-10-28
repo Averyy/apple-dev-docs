@@ -19,11 +19,11 @@ func targetedURL() -> URL?
 - (NSURL *) targetedURL;
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the Finder’s current target.
 
-#### Discussion
+## Discussion
 
 Use this method when creating a custom shortcut menu for the Finder. This returns the URL of the item that the user Control-clicked, letting you customize the menu for that item.
 

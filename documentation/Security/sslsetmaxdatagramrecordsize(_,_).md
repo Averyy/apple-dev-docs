@@ -24,11 +24,11 @@ func SSLSetMaxDatagramRecordSize(_ dtlsContext: SSLContext, _ maxSize: Int) -> O
 OSStatus SSLSetMaxDatagramRecordSize(SSLContextRef dtlsContext, size_t maxSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The size you indicate includes all Datagram Transport Layer Security (DTLS) headers.
 

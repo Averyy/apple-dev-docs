@@ -19,7 +19,7 @@ func isReadOnly() -> Bool
 - (BOOL) isReadOnly;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the record is read-only; otherwise, [`false`](../../Swift/false.md).
 

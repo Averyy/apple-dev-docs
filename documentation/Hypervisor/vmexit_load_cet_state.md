@@ -19,7 +19,7 @@ var VMEXIT_LOAD_CET_STATE: UInt32 { get }
 VMEXIT_LOAD_CET_STATE
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

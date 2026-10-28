@@ -24,7 +24,7 @@ init(achievementID: String)
 - (instancetype) initWithAchievementID:(NSString *) achievementID;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized view controller.
 

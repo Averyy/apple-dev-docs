@@ -23,7 +23,7 @@ var videoFrameRateRangeForCenterStage: AVFrameRateRange? { get }
 @property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForCenterStage;
 ```
 
-#### Discussion
+## Discussion
 
 Devices may support a limited frame rate range when Center Stage is active. The value is `nil` if the device doesn’t support Center Stage.
 

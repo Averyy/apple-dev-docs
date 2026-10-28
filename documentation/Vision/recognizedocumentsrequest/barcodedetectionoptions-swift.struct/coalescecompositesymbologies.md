@@ -20,7 +20,7 @@ A Boolean value that indicates whether the request combines multiple codes.
 var coalesceCompositeSymbologies: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is `false`.
 

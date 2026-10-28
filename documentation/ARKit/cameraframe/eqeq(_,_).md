@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two camera frames are equal.
 static func == (lhs: CameraFrame, rhs: CameraFrame) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two camera frames are equal; otherwise, `false`.
 

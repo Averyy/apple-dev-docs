@@ -23,7 +23,7 @@ var imageAsset: UIImageAsset? { get }
 @property (nonatomic, readonly, nullable) UIImageAsset * imageAsset;
 ```
 
-#### Discussion
+## Discussion
 
 For images loaded from an image assets, this property contains an image asset object that you can use to fetch the other variants of the image. If you did not create the image object using an image asset, the value of this property is `nil`. This property is always `nil` for images created using a [`ciImage`](./ciimage.md) object.
 

@@ -20,7 +20,7 @@ class NSPrintPanel
 @interface NSPrintPanel : NSObject
 ```
 
-#### Overview
+## Overview
 
 A Print panel may let the user select the range of pages to print and the number of copies before executing the Print command. Print panels can display a simplified interface when printing certain types of data. For example, the panel can display a list of print-setting presets, which lets the user enable print settings in groups as opposed to individually. Assigning an appropriate string to the [`jobStyleHint`](./nsprintpanel/jobstylehint-swift.property.md) property activates the simplified interface and identifies which presets to display.
 

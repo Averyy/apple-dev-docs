@@ -24,7 +24,7 @@ var transform: CATransform3D { get set }
 @property CATransform3D transform;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to the identity transform by default. Any transformations you apply to the layer occur relative to the layer’s anchor point.
 

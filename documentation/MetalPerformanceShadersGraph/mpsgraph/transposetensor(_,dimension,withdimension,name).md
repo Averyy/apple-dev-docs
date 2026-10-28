@@ -24,11 +24,11 @@ func transposeTensor(_ tensor: MPSGraphTensor, dimension dimensionIndex: Int, wi
 - (MPSGraphTensor *) transposeTensor:(MPSGraphTensor *) tensor dimension:(NSUInteger) dimensionIndex withDimension:(NSUInteger) dimensionIndex2 name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Transposes the dimensions `dimensionIndex` and `dimensionIndex2` of the input tensor.
 

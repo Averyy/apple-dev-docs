@@ -21,7 +21,7 @@ A Boolean value that indicates whether the user is stationary.
 var isStationary: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Updates may stop flowing temporarily for several reasons including if the app is no longer authorized to receive location updates or if its location becomes unknown. If Core Location stops delivering updates because the device is stationary, then it sets `isStationary` to [`true`](../../Swift/true.md); otherwise, it’s [`false`](../../Swift/false.md).
 

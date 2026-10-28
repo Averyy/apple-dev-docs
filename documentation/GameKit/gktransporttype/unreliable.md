@@ -25,7 +25,7 @@ case unreliable
 GKTransportTypeUnreliable
 ```
 
-#### Discussion
+## Discussion
 
 Use this for small packets of data that must arrive quickly to be useful to the recipient.
 

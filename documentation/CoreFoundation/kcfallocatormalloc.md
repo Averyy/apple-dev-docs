@@ -25,7 +25,7 @@ let kCFAllocatorMalloc: CFAllocator!
 extern CFAllocatorRef const kCFAllocatorMalloc;
 ```
 
-#### Discussion
+## Discussion
 
 Typically you should not use this allocator, use `kCFAllocatorDefault` instead. This allocator is useful as the `bytesDeallocator` in CFData or `contentsDeallocator` in CFString where the memory was obtained as a result  of `malloc` type functions.
 

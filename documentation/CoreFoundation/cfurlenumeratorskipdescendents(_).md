@@ -25,7 +25,7 @@ func CFURLEnumeratorSkipDescendents(_ enumerator: CFURLEnumerator!)
 extern void CFURLEnumeratorSkipDescendents(CFURLEnumeratorRef enumerator);
 ```
 
-#### Discussion
+## Discussion
 
 A call to this function is ignored in the following cases:
 

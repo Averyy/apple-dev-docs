@@ -26,7 +26,7 @@ func removeHome(_ home: HMHome) async throws
 - (void) removeHome:(HMHome *) home completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns an error if the specified home is not managed by the home manager.
 

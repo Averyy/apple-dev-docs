@@ -19,7 +19,7 @@ func drawCellInside(_ cell: NSCell)
 - (void) drawCellInside:(NSCell *) cell;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is transparent, the method causes the superview to draw itself. This method invokes the  [`drawInterior(withFrame:in:)`](../nscell/drawinterior%28withframe,in%29.md) method of NSCell. This method has no effect on controls (such as `NSMatrix` and `NSForm`) that have multiple cells.
 

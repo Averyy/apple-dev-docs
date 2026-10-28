@@ -22,7 +22,7 @@ Builds an extension scene by combining ten scenes.
 @preconcurrency static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9>(_ c0: C0, _ c1: C1, _ c2: C2, _ c3: C3, _ c4: C4, _ c5: C5, _ c6: C6, _ c7: C7, _ c8: C8, _ c9: C9) -> some AppExtensionScene where C0 : AppExtensionScene, C1 : AppExtensionScene, C2 : AppExtensionScene, C3 : AppExtensionScene, C4 : AppExtensionScene, C5 : AppExtensionScene, C6 : AppExtensionScene, C7 : AppExtensionScene, C8 : AppExtensionScene, C9 : AppExtensionScene
 ```
 
-#### Return Value
+## Return Value
 
 The composed scene.
 

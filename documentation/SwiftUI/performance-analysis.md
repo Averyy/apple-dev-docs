@@ -4,7 +4,7 @@
 
 Measure and improve your app’s responsiveness.
 
-#### Overview
+## Overview
 
 Use Instruments to detect hangs and hitches in your app, and to analyze long view body updates and frequently occurring SwiftUI updates that can contribute to hangs and hitches.
 

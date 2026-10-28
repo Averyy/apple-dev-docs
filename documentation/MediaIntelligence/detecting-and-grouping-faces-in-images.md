@@ -5,13 +5,13 @@
 
 Organize photos by person using on-device face detection.
 
-#### Overview
+## Overview
 
 Apps that work with photo collections often need to identify who appears in each image and group photos by person. To simplify this task, [`FaceGroupAnalyzer`](./facegroupanalyzer.md) provides on-device face detection along with automatic grouping by person. Because all processing happens on device, face data remains private and no network connection is required.
 
 The analyzer stores all face data in a working directory you provide. The framework exclusively manages the contents of this directory, so your app interacts with the stored data only through the [`FaceGroupAnalyzer`](./facegroupanalyzer.md) API. This data persists between app launches, so the analyzer resumes where it left off. The typical workflow has three phases: add images to detect faces, group the detected faces by person, and retrieve the results.
 
-#### Create a face group analyzer
+## Create a face group analyzer
 
 To set up the analyzer, create a writable directory that the analyzer uses to store its face data and metadata, then pass it to [`init(workingDirectory:)`](./facegroupanalyzer/init%28workingdirectory%29.md):
 
@@ -30,7 +30,7 @@ let analyzer = try FaceGroupAnalyzer(workingDirectory: workingDirectory)
 
 After initializing the analyzer, it’s ready to accept images. If the directory already contains data from a previous session, the analyzer loads it automatically.
 
-#### Add image assets
+## Add image assets
 
 Create [`MediaIntelligenceImageAsset`](./mediaintelligenceimageasset.md) values to identify each image you want the analyzer to process. Each asset takes a unique identifier you assign and a [`MediaIntelligenceImageAsset.Kind`](./mediaintelligenceimageasset/kind-swift.enum.md) value that tells the framework how to access the image data. Use the same identifier consistently for each image, because the framework uses it to match new submissions against existing data.
 
@@ -54,7 +54,7 @@ for try await (assetID, faces) in results {
 
 Each detected face provides valid values for its [`id`](./facegroupanalyzer/face/id-swift.property.md), [`bounds`](./facegroupanalyzer/face/bounds.md), and [`assetID`](./facegroupanalyzer/face/assetid.md) properties, but its [`entityID`](./facegroupanalyzer/face/entityid.md) property is `nil`. The analyzer assigns this value when you group faces by person in the next step.
 
-#### Group faces by person
+## Group faces by person
 
 The [`update(subprogress:)`](./facegroupanalyzer/update%28subprogress%29.md) method groups detected faces by person. Check the analyzer’s [`state`](./facegroupanalyzer/state-swift.property.md) property to determine whether you need to run grouping. The property returns one of three values:
 
@@ -74,7 +74,7 @@ if await analyzer.state == .stale {
 
 After the call to [`update(subprogress:)`](./facegroupanalyzer/update%28subprogress%29.md) completes, every detected face receives an [`entityID`](./facegroupanalyzer/face/entityid.md) that groups it with other faces of the same person. The analyzer’s state returns to [`FaceGroupAnalyzer.State.ready`](./facegroupanalyzer/state-swift.enum/ready.md).
 
-#### Retrieve face and entity data
+## Retrieve face and entity data
 
 After grouping completes, iterate all faces grouped by person using [`allFacesByEntityID`](./facegroupanalyzer/allfacesbyentityid.md). Each element pairs an entity identifier that represents a unique person with an array of every face the analyzer detected for that person across all images:
 
@@ -86,7 +86,7 @@ for try await (entityID, faces) in analyzer.allFacesByEntityID {
 
 To narrow your query, call [`fetchFaces(for:)`](./facegroupanalyzer/fetchfaces%28for%29.md) or [`fetchAssetIDs(for:)`](./facegroupanalyzer/fetchassetids%28for%29.md) with specific entity identifiers. These methods return synchronously from the local store, so they don’t require `await`.
 
-#### Identify faces without storing data
+## Identify faces without storing data
 
 To recognize people in new images without adding them to the analyzer’s persistent store, use the [`identifyFaces(in:)`](./facegroupanalyzer/identifyfaces%28in%29.md) method. It detects faces in the provided images and matches them against the existing stored data. Returned faces include an [`entityID`](./facegroupanalyzer/face/entityid.md) when they match a known person, letting you recognize people in newly captured photos or tag previews before saving to the persistent store.
 
@@ -107,7 +107,7 @@ for try await (assetID, faces) in results {
 }
 ```
 
-#### Manage stored data
+## Manage stored data
 
 The analyzer provides several options for removing stored data, from deleting individual assets to purging the entire working directory:
 

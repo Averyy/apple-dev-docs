@@ -22,13 +22,13 @@ class INGetRestaurantGuestIntent
 @interface INGetRestaurantGuestIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 An [`INGetRestaurantGuestIntent`](./ingetrestaurantguestintent.md) object is a request for information about the person whose name should appear on reservations. Maps sends this intent to your Intents extension when it wants information about the person making reservations. Your response contains the identity of the person making the reservation. The response can also contain information about whether your service allows the user to modify the identity of the guest. For example, you can specify whether your service allows one user to book reservations on behalf of another user.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INGetRestaurantGuestIntentHandling`](./ingetrestaurantguestintenthandling.md) protocol. Your handler should create an [`INGetRestaurantGuestIntentResponse`](./ingetrestaurantguestintentresponse.md) object with information about the guest and your app’s preferences for modifying that guest’s identity.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

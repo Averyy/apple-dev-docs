@@ -12,11 +12,11 @@ virtual IOReturn setValue(
  OSObject *newValue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the value is successfully set.
 
-#### Overview
+## Overview
 
 When the control's value is changed, a call is made to performValueChange(). If that call succeeds, the value is set and sendValueChangeNotification() is called to send a notification to the user clients. This function must be called on the IOWorkLoop.
 

@@ -26,7 +26,7 @@ protocol Evaluation : Sendable
 - [Designing effective evaluations](./designing-effective-evaluations.md)
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 
-#### Overview
+## Overview
 
 Implement this protocol to create custom evaluations. The evaluation runs your system under test against a dataset and applies evaluators to measure performance.
 

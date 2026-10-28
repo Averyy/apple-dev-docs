@@ -19,11 +19,11 @@ func cellState() -> IKImageBrowserCellState
 - (IKImageBrowserCellState) cellState;
 ```
 
-#### Return Value
+## Return Value
 
 The current state of the cell. See [`IKImageBrowserCellState`](../ikimagebrowsercellstate.md) for possible values.
 
-#### Discussion
+## Discussion
 
 The [`IKImageBrowserView`](../ikimagebrowserview.md) creates thumbnails asynchronously. This method returns the current state.
 

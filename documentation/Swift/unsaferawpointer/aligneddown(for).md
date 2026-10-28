@@ -21,11 +21,11 @@ Obtain the preceding pointer properly aligned to store a value of type `T`.
 func alignedDown<T>(for type: T.Type) -> UnsafeRawPointer where T : ~Copyable, T : ~Escapable
 ```
 
-#### Return Value
+## Return Value
 
 A pointer properly aligned to store a value of type `T`.
 
-#### Discussion
+## Discussion
 
 If `self` is properly aligned for accessing `T`, this function returns `self`.
 

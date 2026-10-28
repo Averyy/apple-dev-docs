@@ -18,9 +18,9 @@ Download sales and trends reports filtered by your specified criteria.
 - [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
-##### Allowed values based on sales report type
+### Allowed values based on sales report type
 
 Each sales report type has specific valid values for `reportType`, `reportSubType`, `frequency`, and `version`. If you use other types, it results in an error. For more details on each report type, see [Download and view reports](https://developer.apple.com/help/app-store-connect/view-sales-and-trends/download-and-view-reports).
 

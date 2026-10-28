@@ -24,7 +24,7 @@ struct TimelineEntryRelevance
 
 - [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md)
 
-#### Overview
+## Overview
 
 When users put widgets into a Smart Stack, WidgetKit uses the [`relevance`](./timelineentry/relevance.md) property of the entries your timeline provider generates to determine how relevant they are to the user. For each timeline entry that your provider creates, you may assign relevance that contains a [`score`](./timelineentryrelevance/score.md) and a [`duration`](./timelineentryrelevance/duration.md). The score is a value you choose that indicates the relevance of the widget, relative to entries across timelines that the provider creates. When the date of an entry arrives, and for the duration you specify, WidgetKit may rotate your widget to the top of the stack so it becomes visible.
 

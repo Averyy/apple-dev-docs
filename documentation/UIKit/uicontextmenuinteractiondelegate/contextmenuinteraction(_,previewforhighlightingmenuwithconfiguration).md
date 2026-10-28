@@ -24,11 +24,11 @@ optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, pr
 - (UITargetedPreview *) contextMenuInteraction:(UIContextMenuInteraction *) interaction previewForHighlightingMenuWithConfiguration:(UIContextMenuConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An object containing the source view and configuration parameters for the animation.
 
-#### Discussion
+## Discussion
 
 UIKit calls this method before an interaction begins, to give you an opportunity to supply a custom source view for the presentation animations. If you didn’t provide a preview handler block in the `configuration` data, UIKit displays the specified view in the preview interface.
 

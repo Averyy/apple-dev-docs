@@ -25,7 +25,7 @@ let kCTBaselineOffsetAttributeName: CFString
 extern CFStringRef const kCTBaselineOffsetAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute must be a [`CFNumber`](../CoreFoundation/cfnumber.md) float. The default is standard positioning, following the baselines of the fonts used.
 

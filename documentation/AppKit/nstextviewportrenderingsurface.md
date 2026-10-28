@@ -19,7 +19,7 @@ protocol NSTextViewportRenderingSurface : NSObjectProtocol
 @protocol NSTextViewportRenderingSurface <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Typically an `NSView`, `UIView`, or `CALayer`.
 

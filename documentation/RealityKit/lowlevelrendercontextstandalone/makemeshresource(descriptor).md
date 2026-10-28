@@ -18,11 +18,11 @@ Creates a mesh resource from the given descriptor.
 final func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws -> LowLevelMeshResource
 ```
 
-#### Return Value
+## Return Value
 
 A newly created [`LowLevelMeshResource`](../lowlevelmeshresource.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
 

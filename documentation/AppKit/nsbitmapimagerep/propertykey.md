@@ -19,7 +19,7 @@ struct PropertyKey
 typedef NSString * NSBitmapImageRepPropertyKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use these constants with [`representationOfImageReps(in:using:properties:)`](./representationofimagereps%28in,using,properties%29.md), [`representation(using:properties:)`](./representation%28using,properties%29.md), [`setPixel(_:atX:y:)`](./setpixel%28_,atx,y%29.md), and [`value(forProperty:)`](./value%28forproperty%29.md).
 

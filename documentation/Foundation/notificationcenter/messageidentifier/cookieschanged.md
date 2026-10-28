@@ -23,7 +23,7 @@ static var cookiesChanged: NotificationCenter.BaseMessageIdentifier<HTTPCookieSt
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<HTTPCookieStorage.CookiesChangedMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`HTTPCookieStorage.CookiesChangedMessage`](../../httpcookiestorage/cookieschangedmessage.md).
 

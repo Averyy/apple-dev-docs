@@ -21,7 +21,7 @@ Calculates the single-precision element-wise sum of a vector and a scalar value.
 static func add<U, V>(_ scalar: Double, _ vector: U, result: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise sum of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

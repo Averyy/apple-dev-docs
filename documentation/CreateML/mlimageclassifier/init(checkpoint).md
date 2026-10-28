@@ -19,7 +19,7 @@ Creates an image classifier from a training session checkpoint.
 init(checkpoint: MLCheckpoint) throws
 ```
 
-#### Discussion
+## Discussion
 
 You can only use a checkpoint from an image classifier’s training session if its [`phase`](../mlcheckpoint/phase.md) property is [`MLPhase.training`](../mlphase/training.md).
 

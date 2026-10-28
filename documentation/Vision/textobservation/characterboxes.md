@@ -21,7 +21,7 @@ An array of detected individual character bounding boxes.
 let characterBoxes: [RectangleObservation]?
 ```
 
-#### Discussion
+## Discussion
 
 If the associated [`DetectTextRectanglesRequest`](../detecttextrectanglesrequest.md) indicates interest in character boxes by setting the option [`reportCharacterBoxes`](../detecttextrectanglesrequest/reportcharacterboxes.md) to `true`, this property is non-`nil`. If no characters are found, it remains empty.
 

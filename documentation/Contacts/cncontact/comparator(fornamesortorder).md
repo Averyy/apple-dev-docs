@@ -24,7 +24,7 @@ class func comparator(forNameSortOrder sortOrder: CNContactSortOrder) -> Compara
 + (NSComparator) comparatorForNameSortOrder:(CNContactSortOrder) sortOrder;
 ```
 
-#### Return Value
+## Return Value
 
 A comparator to order contacts.
 

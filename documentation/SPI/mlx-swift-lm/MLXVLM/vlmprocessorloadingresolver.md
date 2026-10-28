@@ -17,7 +17,7 @@ Supplies model-specific processor loading policy that is not present in a checkp
 protocol VLMProcessorLoadingResolver : Sendable
 ```
 
-#### Overview
+## Overview
 
 Both hooks are optional. A fallback is consulted only when neither `preprocessor_config.json` nor `processor_config.json` exists. Processor type resolvers are consulted after a configuration has been selected, so they can supply missing metadata or correct metadata shipped by a checkpoint.
 

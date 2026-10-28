@@ -10,11 +10,11 @@ framework: "Swift-Org/WasmGuide"
 
 While Swift Concurrency is available in Swift for WebAssembly out of the box, it is single-threaded by default. Read this article for special considerations relevant to multi-threading.
 
-#### Using threads in WebAssembly
+## Using threads in WebAssembly
 
 While the WebAssembly spec defines [atomic operations](https://github.com/WebAssembly/threads), it does not define a way to create threads. This means that WebAssembly modules can’t create threads themselves, and the host environment must provide a way to create threads and run WebAssembly modules on them.
 
-##### `wasi-threads` proposal
+### `wasi-threads` proposal
 
 The `wasi-threads` feature is only available in the `wasm32-unknown-wasip1-threads` target triple, which is explicitly distinct from the `wasm32-unknown-wasip1` target triple.
 
@@ -30,7 +30,7 @@ $ swift sdk install https://github.com/swiftwasm/swift/releases/download/swift-w
 $ swift run --swift-sdk "$(swiftc -print-target-info | jq -r '.swiftCompilerTag')_wasm-threads"
 ```
 
-##### `WebWorkerTaskExecutor` - multi-threading in the browser
+### `WebWorkerTaskExecutor` - multi-threading in the browser
 
 For browser use cases JavaScriptKit provides `WebWorkerTaskExecutor`, a [TaskExecutor](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0417-task-executor-preference.md) implementation that runs tasks in a Web Worker. This allows you to run Swift code concurrently in a Web Worker sharing the same memory space.
 

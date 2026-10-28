@@ -21,7 +21,7 @@ class func shared() -> QCCompositionRepository!
 + (QCCompositionRepository *) sharedCompositionRepository;
 ```
 
-#### Return Value
+## Return Value
 
 The shared instance of `QCCompositionRepository`.
 

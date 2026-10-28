@@ -20,7 +20,7 @@ The entity that defines the listener position and orientation for spatial audio.
 @preconcurrency var audioListener: Entity? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set the [`audioListener`](./audiolistener.md) to the entity in the scene from whose point of view RealityKit should render spatial audio.
 

@@ -24,7 +24,7 @@ func AudioQueueRemovePropertyListener(_ inAQ: AudioQueueRef, _ inID: AudioQueueP
 extern OSStatus AudioQueueRemovePropertyListener(AudioQueueRef inAQ, AudioQueuePropertyID inID, AudioQueuePropertyListenerProc inProc, void *inUserData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

@@ -19,7 +19,7 @@ func removeContextHelp(for object: Any)
 - (void) removeContextHelpForObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 If `object` does not have context-sensitive help associated with it, this method does nothing.
 

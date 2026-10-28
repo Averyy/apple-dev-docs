@@ -25,7 +25,7 @@ class var isMainThread: Bool { get }
 @property (class, readonly) BOOL isMainThread;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current thread is the main thread, otherwise [`false`](../../Swift/false.md).
 

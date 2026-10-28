@@ -24,7 +24,7 @@ var shutterOpenInterval: TimeInterval { get set }
 @property (nonatomic, assign) NSTimeInterval shutterOpenInterval;
 ```
 
-#### Discussion
+## Discussion
 
 In a real-world camera, the shutter speed determines both the amount of light reaching the imaging surface (film or sensor) and the severity of effects such as motion blur. Shutter time is not the same as frame rate—for example, in a cinema camera running at 24 frames per second, the shutter is open for half of each frame’s duration, so the corresponding shutter time is 1/48 second.
 

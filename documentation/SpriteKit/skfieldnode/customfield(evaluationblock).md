@@ -25,11 +25,11 @@ class func customField(evaluationBlock block: @escaping SKFieldForceEvaluator) -
 + (SKFieldNode *) customFieldWithEvaluationBlock:(SKFieldForceEvaluator) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new custom field node.
 
-#### Discussion
+## Discussion
 
 The value returned by the custom block is a vector for an impulse force which is applied to the physics body being evaluated for that frame. Only the `x` and `y` components of the return value are used by SpriteKit, the `z` component is ignored.
 

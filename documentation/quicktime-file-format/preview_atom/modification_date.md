@@ -6,7 +6,7 @@
 
 A 32-bit unsigned integer containing a date that indicates when the preview was last updated.
 
-#### Overview
+## Overview
 
 The data is in standard Macintosh format.
 

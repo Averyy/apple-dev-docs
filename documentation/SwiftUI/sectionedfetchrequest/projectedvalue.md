@@ -22,7 +22,7 @@ A binding to the request’s mutable configuration properties.
 @preconcurrency var projectedValue: Binding<SectionedFetchRequest<SectionIdentifier, Result>.Configuration> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property behaves like the [`projectedValue`](../fetchrequest/projectedvalue.md) of a [`FetchRequest`](../fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](../sectionedfetchrequest.md) as a property wrapper on a [`SectionedFetchResults`](../sectionedfetchresults.md) instance and then access the results with a dollar sign (`$`) prefix. The value that SwiftUI returns is a [`Binding`](../binding.md) to the request’s [`SectionedFetchRequest.Configuration`](./configuration.md) structure, which dynamically configures the request.
 

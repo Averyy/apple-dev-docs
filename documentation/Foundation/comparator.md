@@ -25,7 +25,7 @@ typealias Comparator = (Any, Any) -> ComparisonResult
 typedef enum NSComparisonResult (^)(id, id) NSComparator;
 ```
 
-#### Discussion
+## Discussion
 
 The arguments to the [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) are two objects to compare. The block returns an [`ComparisonResult`](./comparisonresult.md) value to denote the ordering of the two objects.
 

@@ -19,7 +19,7 @@ class WKInterfaceSeparator
 @interface WKInterfaceSeparator : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Use [`WKInterfaceSeparator`](./wkinterfaceseparator.md) to manipulate a separator at runtime, such as changing its color. You can also use the inherited methods to show or hide it and configure other attributes.
 
@@ -39,7 +39,7 @@ Do not subclass or create instances of this class yourself. Instead, define outl
 
 During the initialization of your interface controller, WatchKit creates any needed separator objects and assigns them to their connected outlets. At that point, you can use those objects to make changes to the onscreen text.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your separator interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

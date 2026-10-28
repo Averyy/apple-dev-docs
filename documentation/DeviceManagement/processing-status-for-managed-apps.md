@@ -5,11 +5,11 @@
 
 Process the status that declarative management reports for managed apps.
 
-#### Overview
+## Overview
 
 Devices report the status of each declarative managed app in the [`StatusAppManagedList`](./statusappmanagedlist.md) status item, which device management services can subscribe to. Devices report incremental updates to the [`StatusAppManagedList`](./statusappmanagedlist.md) status item elements when the managed app status changes.
 
-#### Process the status item
+## Process the status item
 
 The [`StatusAppManagedList`](./statusappmanagedlist.md) status item type is `app.managed.list`, which contains the device’s declarative managed apps.
 
@@ -21,7 +21,7 @@ The `state` key indicates the app’s management state, for example, `queued`, `
 
 If a configuration provisions declarative app configurations for an app or its extensions, the app or extension reports the state back to the device management service using the `config-state` key. The device management service should communicate errors back to the administrator for corrective actions.
 
-#### Use managed app status in a predicate
+## Use managed app status in a predicate
 
 Include managed app status in declarative device management activation predicates to test the status values and initiate activations based on them. To use properties of a specific app in a predicate term, use the `SUBQUERY` operator. The following example shows a predicate that evaluates to true when an app’s management state is set to `managed`:
 

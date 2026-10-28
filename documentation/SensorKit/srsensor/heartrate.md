@@ -21,7 +21,7 @@ static let heartRate: SRSensor
 extern SRSensor const SRSensorHeartRate;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`CMHighFrequencyHeartRateData`](../../CoreMotion/cmhighfrequencyheartratedata.md).
 

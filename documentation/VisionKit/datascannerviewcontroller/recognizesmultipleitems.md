@@ -18,7 +18,7 @@ A Boolean value that indicates whether the scanner should identify all items in 
 final let recognizesMultipleItems: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the scanner finds all items in the live video. If `false`, the scanner finds only the item closest to a person’s point of interest. The point of interest is the middle of the view by default or where a person taps in the live video. The default value is `false`.
 

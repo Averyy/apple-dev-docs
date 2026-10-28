@@ -17,7 +17,7 @@ case cwInvalidPMKErr
 kCWInvalidPMKErr
 ```
 
-#### Discussion
+## Discussion
 
 PMK rejected by the access point.
 

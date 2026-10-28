@@ -15,7 +15,7 @@ A callback function that is automatically called when the app has been exited.
 attribute function onExit;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `onExit` attribute to complete any actions that need to be cleaned up (for example, releasing any system resources) when the app has been exited. This attribute must be set to a function that accepts an `options` argument; for example `App.onExit = function (options) {}`. The options argument can contain the following keys:
 

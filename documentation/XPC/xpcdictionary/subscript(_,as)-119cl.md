@@ -21,7 +21,7 @@ Reads and writes the value associated with the given key as an integer value.
 subscript<T>(key: String, as type: T.Type = T.self) -> T? where T : BinaryInteger { get }
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with key in the dictionary; otherwise, [`nil`](../../ObjectiveC/nil-227m0.md).
 

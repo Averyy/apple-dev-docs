@@ -23,7 +23,7 @@ func stopRecording()
 - (void) stopRecording;
 ```
 
-#### Discussion
+## Discussion
 
 This function requests that the framework stop recording for this reader’s sensor. The framework records on this device and any paired devices. Call [`fetchDevices()`](./fetchdevices%28%29.md) to get acquire the full list of devices on which the framework records.
 

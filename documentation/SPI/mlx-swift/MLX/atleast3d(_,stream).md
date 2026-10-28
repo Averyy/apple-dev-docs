@@ -17,7 +17,7 @@ Convert array to have at least 3 dimensions.
 func atLeast3D(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

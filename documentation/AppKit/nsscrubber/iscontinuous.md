@@ -19,7 +19,7 @@ var isContinuous: Bool { get set }
 @property (getter=isContinuous) BOOL continuous;
 ```
 
-#### Discussion
+## Discussion
 
 For details on how to choose the right [`isContinuous`](./iscontinuous.md) value for your app, see [Choose a scrubber touch-interaction model](../nsscrubber.md#Choose-a-scrubber-touch-interaction-model).
 

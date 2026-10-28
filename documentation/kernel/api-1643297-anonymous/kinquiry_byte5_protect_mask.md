@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_PROTECT_Mask = (1 << kINQUIRY_Byte5_PROTECT_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the PROTECT bit.
 

@@ -21,7 +21,7 @@ A type that represents a floating-point literal.
 typealias FloatLiteralType = Float
 ```
 
-#### Discussion
+## Discussion
 
 Valid types for `FloatLiteralType` are `Float`, `Double`, and `Float80` where available.
 

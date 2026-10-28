@@ -24,7 +24,7 @@ case success
 INPlayMediaIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Respond with this code after your app starts playing the media content in the [`application(_:handle:completionHandler:)`](../../UIKit/uiapplicationdelegate/application%28_,handle,completionhandler%29.md) method.
 

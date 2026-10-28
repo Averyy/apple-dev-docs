@@ -23,7 +23,7 @@ mutating func unapply(_ transform: Self.ProjectiveTransform)
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 > **Note**: When unapplying transforms on rectangle structures, the transform must be rectilinear, otherwise this function has no effect.
 

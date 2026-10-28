@@ -23,7 +23,7 @@ var titleVisibility: UITitlebarTitleVisibility { get set }
 
 - [Removing the title bar in your Mac app built with Mac Catalyst](../removing-the-title-bar-in-your-mac-app-built-with-mac-catalyst.md)
 
-#### Discussion
+## Discussion
 
 Setting the title visibility to [`UITitlebarTitleVisibility.hidden`](../uititlebartitlevisibility/hidden.md) hides only the title displayed in the title bar, not the title bar itself. To remove the title bar from the window, set [`titleVisibility`](./titlevisibility.md) to [`UITitlebarTitleVisibility.hidden`](../uititlebartitlevisibility/hidden.md) and [`toolbar`](./toolbar.md) to `nil`.
 

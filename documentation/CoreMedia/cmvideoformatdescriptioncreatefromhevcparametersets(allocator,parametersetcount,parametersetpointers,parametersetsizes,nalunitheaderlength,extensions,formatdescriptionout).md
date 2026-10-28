@@ -25,7 +25,7 @@ func CMVideoFormatDescriptionCreateFromHEVCParameterSets(allocator: CFAllocator?
 extern OSStatus CMVideoFormatDescriptionCreateFromHEVCParameterSets(CFAllocatorRef allocator, size_t parameterSetCount, const uint8_t * const*parameterSetPointers, const size_t *parameterSetSizes, int NALUnitHeaderLength, CFDictionaryRef extensions, CMFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Discussion
+## Discussion
 
 This method parses the dimensions from the parameter sets and creates a format description suitable for an HEVC (H.265) stream. The parameter sets’ data can come from raw NAL units and needs to include emulation prevention bytes as necessary.
 

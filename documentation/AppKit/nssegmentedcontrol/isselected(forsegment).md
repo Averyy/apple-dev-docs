@@ -19,7 +19,7 @@ func isSelected(forSegment segment: Int) -> Bool
 - (BOOL) isSelectedForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the segment is selected; otherwise, [`false`](../../Swift/false.md).
 

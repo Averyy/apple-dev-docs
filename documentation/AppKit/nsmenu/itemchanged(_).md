@@ -19,7 +19,7 @@ func itemChanged(_ item: NSMenuItem)
 - (void) itemChanged:(NSMenuItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 This method is not called for changes involving the menu item’s action, target, represented object, or tag. Posts an [`didChangeItemNotification`](./didchangeitemnotification.md).
 

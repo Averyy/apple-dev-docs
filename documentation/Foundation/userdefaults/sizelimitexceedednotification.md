@@ -24,7 +24,7 @@ class let sizeLimitExceededNotification: NSNotification.Name
 extern NSNotificationName const NSUserDefaultsSizeLimitExceededNotification;
 ```
 
-#### Discussion
+## Discussion
 
 In tvOS, the system posts this notification as a warning when the size of your app’s defaults database reaches 512 kilobytes. If your app continues to write to the defaults database, the system terminates your app when the database reaches or exceeds 1 megabyte in size. The system doesn’t post size exceeded notifications for other platforms.
 

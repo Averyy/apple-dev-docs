@@ -25,7 +25,7 @@ func setGameModel(_ gameModel: any GKGameModel)
 - (void) setGameModel:(id<GKGameModel>) gameModel;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should efficiently copy the internal state of the specified object into the current game model.
 

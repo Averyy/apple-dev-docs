@@ -39,7 +39,7 @@ func menuItems(for tab: any WKWebExtensionTab) -> [NSMenuItem]
 - (NSArray<NSMenuItem *> *) menuItemsForTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 Returns menu items provided by the extension, allowing the user to perform extension-defined actions on the tab.
 

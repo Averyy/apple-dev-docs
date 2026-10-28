@@ -20,7 +20,7 @@ case extending
 ARWorldMappingStatusExtending
 ```
 
-#### Discussion
+## Discussion
 
 When the [`worldMappingStatus`](../worldmappingstatus-swift.property.md) of the session’s [`currentFrame`](../../arsession/currentframe.md) is [`ARFrame.WorldMappingStatus.extending`](./extending.md), the session has produced a high-fidelity internal map of the real-world spaces the device has recently passed thorugh, but is still collecting data to map the area around the device’s current position and the scene visible to the camera.
 

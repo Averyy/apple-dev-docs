@@ -8,7 +8,7 @@ An atom contains the name of the scene and the default node ID to be used when t
 
 > **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-#### Overview
+## Overview
 
 The VR world header atom is a leaf atom. Its atom type is `kQTVRWorldHeaderAtomType` (`'vrsc'`). It contains the name of the scene and the default node ID to be used when the file is first opened as well as fields reserved for future use.
 

@@ -15,7 +15,7 @@ A [`CloudKit.QueryResponse`](./cloudkit.queryresponse.md) object encapsulates th
 interface CloudKit.QueryResponse
 ```
 
-#### Overview
+## Overview
 
 The [`performQuery`](./cloudkit.database/performquery.md) method in the [`CloudKit.Database`](./cloudkit.database.md) class returns a `Promise` object that resolves to a [`CloudKit.QueryResponse`](./cloudkit.queryresponse.md) object. You should not create instances of this class directly.
 

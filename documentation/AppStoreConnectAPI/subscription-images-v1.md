@@ -8,7 +8,7 @@ Create, modify, and delete promotion images for your auto-renewable subscription
 **Availability**:
 - App Store Connect API 3.6+ - Deprecated in 4.4.1
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This is deprecated. Use [Subscription images](./subscription-images.md) instead.
 

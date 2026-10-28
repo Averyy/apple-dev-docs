@@ -19,7 +19,7 @@ typealias PMPaperMargins = PMRect
 typedef PMRect PMPaperMargins;
 ```
 
-#### Discussion
+## Discussion
 
 Your application specifies paper margins when calling the function [`PMPaperCreateCustom(_:_:_:_:_:_:_:)`](./api-1459322-pmpapercreatecustom.md) to create a custom paper type. You can obtain a paper’s margins with the function [`PMPaperGetMargins(_:_:)`](./api-1461994-pmpapergetmargins.md).
 

@@ -23,7 +23,7 @@ var text: String? { get set }
 @property (nonatomic, copy, nullable) NSString * text;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

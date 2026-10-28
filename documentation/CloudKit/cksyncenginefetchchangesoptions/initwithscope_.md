@@ -21,7 +21,7 @@ Initializes a set of options with the specific scope.
 - (instancetype) initWithScope:(CKSyncEngineFetchChangesScope *) scope;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a `nil` scope, the default scope is used. The default scope includes everything.
 

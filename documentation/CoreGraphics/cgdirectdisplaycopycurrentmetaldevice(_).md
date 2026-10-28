@@ -20,11 +20,11 @@ func CGDirectDisplayCopyCurrentMetalDevice(_ display: CGDirectDisplayID) -> (any
 extern id<MTLDevice>CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A device that supports Metal framework commands.
 
-#### Discussion
+## Discussion
 
 > **Note**:  This function can change its return value at any time for the built-in display when the system has automatic graphics switching enabled.
 

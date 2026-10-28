@@ -21,7 +21,7 @@ Returns the data value at the given angle, or `nil` if the angle does not corres
 func value<P>(atAngle angle: Angle, as: P.Type = P.self) -> P? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The data value at the given position.
 

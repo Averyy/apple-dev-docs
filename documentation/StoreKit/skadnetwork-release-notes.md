@@ -4,7 +4,7 @@
 
 Learn about the features in each SKAdNetwork version.
 
-#### Overview
+## Overview
 
 Use the most recent version of SKAdNetwork available.
 

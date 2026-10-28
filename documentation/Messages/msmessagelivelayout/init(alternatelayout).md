@@ -21,7 +21,7 @@ init(alternateLayout: MSMessageTemplateLayout)
 - (instancetype) initWithAlternateLayout:(MSMessageTemplateLayout *) alternateLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The alternate layout is required to represent your message on devices that don’t have your iMessage app installed, or on devices that aren’t running iOS 11 or later.
 

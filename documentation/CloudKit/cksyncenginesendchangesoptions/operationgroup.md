@@ -21,7 +21,7 @@ The operation group to use for the underlying CloudKit operations.
 @property (strong) CKOperationGroup * operationGroup;
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**: Providing a specific operation group helps you to identify and analyze the telemetry of send operations in CloudKit Console.
 

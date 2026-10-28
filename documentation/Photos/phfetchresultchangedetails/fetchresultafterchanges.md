@@ -24,7 +24,7 @@ var fetchResultAfterChanges: PHFetchResult<ObjectType> { get }
 @property (atomic, strong, readonly) PHFetchResult<PHObject *> * fetchResultAfterChanges;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this object to inspect the current state of the fetched objects even if the [`hasIncrementalChanges`](./hasincrementalchanges.md) property’s value is `false`. Using this fetch result is equivalent to performing once more the same fetch that returned the original fetch result.
 

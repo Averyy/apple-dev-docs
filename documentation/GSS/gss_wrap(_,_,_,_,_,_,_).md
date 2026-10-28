@@ -23,7 +23,7 @@ func gss_wrap(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ context_handle:
 OM_uint32 gss_wrap(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, int conf_req_flag, gss_qop_t qop_req, gss_buffer_t const input_message_buffer, int *conf_state, gss_buffer_t output_message_buffer);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

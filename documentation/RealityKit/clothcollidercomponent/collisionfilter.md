@@ -17,7 +17,7 @@ Defines the collision groups that the collider belongs to, and the mask used to 
 var collisionFilter: ClothCollisionFilter
 ```
 
-#### Discussion
+## Discussion
 
 By default, the collision groups are set to `.defaultColliders`, and the mask is set to `.all`.
 

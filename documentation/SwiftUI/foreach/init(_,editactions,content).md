@@ -23,7 +23,7 @@ init<C, R>(_ data: Binding<C>, editActions: EditActions<C>, @ContentBuilder cont
 
 Available when `Data` conforms to `RandomAccessCollection` and `ID` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 It’s important that the `id` of a data element doesn’t change unless you replace the data element with a new data element that has a new identity. If the `id` of a data element changes, the content view generated from that data element loses any current state and animations.
 

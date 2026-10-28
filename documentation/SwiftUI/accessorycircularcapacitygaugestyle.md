@@ -21,7 +21,7 @@ A gauge style that displays a closed ring that’s partially filled in to indica
 @preconcurrency struct AccessoryCircularCapacityGaugeStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`accessoryCircularCapacity`](./gaugestyle/accessorycircularcapacity.md) to construct this style.
 

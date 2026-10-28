@@ -21,7 +21,7 @@ Returns `true` if the transform is uniform over the specified dimensions.
 func isUniform(overDimensions: Dimension3DSet) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If you specify `overDimensions` as `Dimension3DFloatSet.all`, the function returns the same result as `Transform3DFloat.getter:isUniform`. If you specify as `overDimensions` with zero or one dimension, the function returns the same result as `Transform3DFloat.getter:isRectilinear`.
 

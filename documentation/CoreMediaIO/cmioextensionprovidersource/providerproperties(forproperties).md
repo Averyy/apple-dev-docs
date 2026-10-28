@@ -21,7 +21,7 @@ func providerProperties(forProperties properties: Set<CMIOExtensionProperty>) th
 - (CMIOExtensionProviderProperties *) providerPropertiesForProperties:(NSSet<NSString *> *) properties error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A provider properties object that contains the state of the requested properties.
 

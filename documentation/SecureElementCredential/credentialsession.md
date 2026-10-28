@@ -20,7 +20,7 @@ actor CredentialSession
 
 - [Accessing and using secure element credentials](./accessing-and-using-secure-element-credentials.md)
 
-#### Overview
+## Overview
 
 Create a credential session with the [`startSession()`](./credentialsession/startsession%28%29.md) method. After you start a session, the session has three states:
 
@@ -34,7 +34,7 @@ You can read the current state at any time from the [`state`](./credentialsessio
 
 An app can have only one active session at a time. When your app no longer needs the credential session, call [`invalidate()`](./credentialsession/invalidate%28%29.md). If your app goes into the background, the system automatically invalidates your session after a short delay. In wired mode, the system invalidates the session if it goes 15 seconds without performing a [`transceive(_:)`](./credentialsession/transceive%28_%29.md) call.
 
-##### Use a session in an app extension
+### Use a session in an app extension
 
 Certain methods in [`CredentialSession`](./credentialsession.md) are only appropriate for use in apps. If you’re writing an app extension, such as for an identity service provider, use only the following methods:
 

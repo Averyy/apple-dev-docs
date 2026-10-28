@@ -11,7 +11,7 @@ Gets the C function that was registered to handle access notifications sent from
 virtual Action getNotificationAction() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to a C function, or 0 if notification is disabled.
 

@@ -24,7 +24,7 @@ var children: any MDLObjectContainerComponent { get set }
 @property (nonatomic, retain) id<MDLObjectContainerComponent> children;
 ```
 
-#### Discussion
+## Discussion
 
 Many asset formats describe a hierarchy of transforms that model the spatial relationships between meshes, lights, and cameras in the asset. In such formats, hierarchic transforms are [`MDLObject`](../mdlobject.md) instances whose [`children`](./children.md) property references the objects affected by the transform, and those objects can be other [`MDLObject`](../mdlobject.md) instances with children of their own.
 

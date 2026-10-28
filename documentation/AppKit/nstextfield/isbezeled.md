@@ -19,7 +19,7 @@ var isBezeled: Bool { get set }
 @property (getter=isBezeled) BOOL bezeled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the text field draws a bezel and sets [`drawsBackground`](./drawsbackground.md) to [`false`](../../Swift/false.md); if [`false`](../../Swift/false.md), it doesn’t draw a bezeled background.
 

@@ -14,7 +14,7 @@
 #define kCGWindowIDCFNumberType
 ```
 
-#### Discussion
+## Discussion
 
 The encoding type for window IDs inside a [`CFNumber`](../CoreFoundation/cfnumber.md) opaque type.
 

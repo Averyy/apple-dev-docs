@@ -19,7 +19,7 @@ func SKIndexClose(_ inIndex: SKIndex!)
 void SKIndexClose(SKIndexRef inIndex);
 ```
 
-#### Discussion
+## Discussion
 
 When your application no longer needs an index that it has opened or created, call [`SKIndexClose(_:)`](./api-1442401-skindexclose.md). Calling this function is equivalent to calling [`CFRelease`](../CoreFoundation/cfrelease.md) on an index.
 

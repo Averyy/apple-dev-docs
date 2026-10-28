@@ -23,7 +23,7 @@ WKExtendedRuntimeSessionErrorExceededResourceLimits
 
 - [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
-#### Discussion
+## Discussion
 
 During an extended runtime session, the system limits your app’s amortized CPU usage over time. If your app exceeds the limits during a 60-second window, the system cancels the session. Monitoring usage-per-minute allows your app to experience brief spikes of CPU usage, as long as the average remains low.
 

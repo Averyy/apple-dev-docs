@@ -24,7 +24,7 @@ var disableRedirect: Bool { get set }
 @property BOOL disableRedirect;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

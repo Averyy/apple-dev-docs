@@ -16,7 +16,7 @@ Informs the view that the user has pressed a key.
 @preconcurrency override dynamic func keyDown(with event: NSEvent)
 ```
 
-#### Discussion
+## Discussion
 
 The view handles the event instead of passing it to the next responder. See [`NSResponder`](../../AppKit/nsresponder.md) for more information about the responder chain.
 

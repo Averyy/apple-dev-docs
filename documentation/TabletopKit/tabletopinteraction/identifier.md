@@ -15,7 +15,7 @@ A unique identifier for interactions.
 struct Identifier
 ```
 
-#### Overview
+## Overview
 
 An interaction identifier is unique across all instances of the same tabletop game.
 

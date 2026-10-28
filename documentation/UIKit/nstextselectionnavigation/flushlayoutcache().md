@@ -23,7 +23,7 @@ func flushLayoutCache()
 - (void) flushLayoutCache;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method whenever the contents of the document change.
 

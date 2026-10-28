@@ -23,7 +23,7 @@ var leftBarButtonItems: [UIBarButtonItem]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSArray<UIBarButtonItem *> * leftBarButtonItems;
 ```
 
-#### Discussion
+## Discussion
 
 This array can contain 0 or more bar items to display on the left (or leading) side of the navigation bar. Items can include fixed-width and flexible-width spaces. If the [`leftItemsSupplementBackButton`](./leftitemssupplementbackbutton.md) property is [`true`](../../Swift/true.md), the items are displayed to the right (or trailing side) of the Back button, otherwise the items replace the Back button and start at the left (or leading) edge of the bar. Items are displayed left-to-right in the same order as they appear in the array. In a right-to-left user interface, the items are automatically flipped.
 

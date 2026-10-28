@@ -25,7 +25,7 @@ var dampingFactor: CGFloat { get set }
 @property (nonatomic) CGFloat dampingFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to simulate effects such as fluid friction or air resistance on particles. A value of `0.0` (the default) specifies no slowing—that is, each particle maintains a constant speed (unless affected by gravity, acceleration, physics fields, or other influences). A value of `1.0` prevents particles from moving.
 

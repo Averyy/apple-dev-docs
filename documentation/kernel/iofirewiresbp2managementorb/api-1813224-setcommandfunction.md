@@ -12,11 +12,11 @@ virtual IOReturn setCommandFunction(
  UInt32function );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if function was a legal function.
 
-#### Overview
+## Overview
 
 Sets the the function of the management ORB. Legal values are kFWSBP2QueryLogins, kFWSBP2AbortTask, kFWSBP2AbortTaskSet, kFWSBP2LogicalUnitReset, and kFWSBP2TargetReset.
 

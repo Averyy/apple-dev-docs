@@ -22,7 +22,7 @@ Set a closure to be called when the listener has added or removed a registered s
 final func onServiceRegistrationUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The closure may be called multiple times until the listener is cancelled.
 

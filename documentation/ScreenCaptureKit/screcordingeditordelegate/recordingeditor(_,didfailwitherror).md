@@ -22,7 +22,7 @@ optional func recordingEditor(_ editor: SCRecordingEditor, didFailWithError erro
 - (void) recordingEditor:(SCRecordingEditor *) editor didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 recordingEditor:didFailWithError:
 

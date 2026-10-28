@@ -23,7 +23,7 @@ case empty
 TKSmartCardSlotStateEmpty
 ```
 
-#### Discussion
+## Discussion
 
 The Smart Card reader slot is empty; no card is inserted.
 

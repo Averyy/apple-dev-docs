@@ -24,7 +24,7 @@ struct MTL4UpdateSparseTextureMappingOperation
 typedef struct { ... } MTL4UpdateSparseTextureMappingOperation;
 ```
 
-#### Overview
+## Overview
 
 When performing a sparse mapping update, you are responsible for issuing a barrier against stage `MTLStageResourceState`.
 

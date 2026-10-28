@@ -19,11 +19,11 @@ func runModal(for window: NSWindow) -> NSApplication.ModalResponse
 - (NSModalResponse) runModalForWindow:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 An integer indicating the reason that this method returned. See [`NSApplication.ModalResponse`](./modalresponse.md) possible return values.
 
-#### Discussion
+## Discussion
 
 This method runs a modal event loop for the specified window synchronously. It displays the specified window, makes it key, starts the run loop, and processes events for that window. (You do not need to show the window yourself.) While the app is in that loop, it does not respond to any other events (including mouse, keyboard, or window-close events) unless they are associated with the window. It also does not perform any tasks (such as firing timers) that are not associated with the modal run loop. In other words, this method consumes only enough CPU time to process events and dispatch them to the action methods associated with the modal window.
 

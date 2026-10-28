@@ -21,7 +21,7 @@ An animation that replaces the opacity of variable layers in a symbol-based imag
 + (instancetype) effect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the variable color effect options.
 

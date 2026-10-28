@@ -18,11 +18,11 @@ Iterates the dictionary calling a callback block for each member.
 bool iterateObjects(OSDictionaryIterateObjectsBlock block) const;
 ```
 
-#### Return Value
+## Return Value
 
 False if the callback block returned false, otherwise true (including if the dictionary is empty).
 
-#### Discussion
+## Discussion
 
 Calls the block with each value in the dictionary. The block must not modify the dictionary during iteration. If the block returns true the iteration continues for all members, returning false halts the iteration early.
 

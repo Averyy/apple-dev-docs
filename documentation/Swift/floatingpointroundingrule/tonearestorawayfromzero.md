@@ -21,7 +21,7 @@ Round to the closest allowed value; if two values are equally close, the one wit
 case toNearestOrAwayFromZero
 ```
 
-#### Discussion
+## Discussion
 
 This rounding rule is also known as “schoolbook rounding.” The following example shows the results of rounding numbers using this rule:
 

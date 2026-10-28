@@ -22,11 +22,11 @@ func presentPreview(animated: Bool) -> Bool
 - (BOOL) presentPreviewAnimated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this method was able to display the document preview or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 To use this method, you must first provide a delegate object that implements the [`documentInteractionControllerViewControllerForPreview(_:)`](../uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewcontrollerforpreview%28_%29.md) method. The view controller returned by that method is used to present the document preview modally.
 

@@ -15,7 +15,7 @@ Sets the object used by the receiver to track the hierarchy of views with locked
 - (void) setFocusStack:(id) stack;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to get or modify the focus stack information. The use of focus stacks may be deprecated in a future release.
 

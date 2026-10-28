@@ -23,7 +23,7 @@ class Configuration
 @interface UIPasteControlConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 The paste button ([`UIPasteControl`](../uipastecontrol.md)) property [`configuration`](./configuration-swift.property.md) is of this type.
 

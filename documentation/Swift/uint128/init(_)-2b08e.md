@@ -21,7 +21,7 @@ Creates an integer from the given floating-point value, rounding toward zero.
 init<T>(_ source: T) where T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 Any fractional part of the value passed as `source` is removed, rounding the value toward zero.
 

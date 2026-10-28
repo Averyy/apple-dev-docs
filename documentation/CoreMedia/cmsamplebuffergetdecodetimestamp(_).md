@@ -25,11 +25,11 @@ func CMSampleBufferGetDecodeTimeStamp(_ sbuf: CMSampleBuffer) -> CMTime
 extern CMTime CMSampleBufferGetDecodeTimeStamp(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The numerically earliest sample decode timestamp in the `CMSampleBuffer` or `kCMTimeInvalid` if there is an error.
 
-#### Discussion
+## Discussion
 
 The returned decode timestamp is always the decode timestamp of the first sample in the buffer, because even out-of-presentation-order samples are expected to be in decode order in the buffer.
 

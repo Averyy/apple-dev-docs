@@ -24,7 +24,7 @@ func attributes(_ desiredAttributes: FSItem.GetAttributesRequest, of item: FSIte
 - (void) getAttributes:(FSItemGetAttributesRequest *) desiredAttributes ofItem:(FSItem *) item replyHandler:(void (^)(FSItemAttributes *attributes, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 For file systems that don’t support hard links, set [`linkCount`](../../fsitem/attributes/linkcount.md) to `1` for regular files and symbolic links.
 

@@ -24,7 +24,7 @@ func constant(_ scalar: Double, dataType: MPSDataType) -> MPSGraphTensor
 - (MPSGraphTensor *) constantWithScalar:(double) scalar dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

@@ -29,7 +29,7 @@ class func `default`() -> CKContainer
 
 - [Designing and Creating a CloudKit Database](../designing-and-creating-a-cloudkit-database.md)
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve your app’s default container. This is the one you typically use to store your app’s data. If you want the container for a different app, create a container using the [`init(identifier:)`](./init%28identifier%29.md) method.
 

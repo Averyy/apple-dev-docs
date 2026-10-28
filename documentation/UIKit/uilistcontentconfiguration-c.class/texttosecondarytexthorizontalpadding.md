@@ -19,7 +19,7 @@ The minimum horizontal padding between the text and secondary text.
 @property (nonatomic) CGFloat textToSecondaryTextHorizontalPadding;
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies when there’s both text and secondary text, and they’re in a side-by-side layout that [`prefersSideBySideTextAndSecondaryText`](../uilistcontentconfiguration-swift.struct/preferssidebysidetextandsecondarytext.md) specifies.
 

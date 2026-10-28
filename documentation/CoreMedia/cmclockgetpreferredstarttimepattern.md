@@ -21,11 +21,11 @@ Retrieves a description of the pattern of preferred start times, such as for syn
 extern OSStatus CMClockGetPreferredStartTimePattern(CMClockRef clock, CMTime *outClockStartTime, CMTime *outHostClockStartTime, CMTime *outDeltaBetweenPreferredStartTimes);
 ```
 
-#### Return Value
+## Return Value
 
 `noErr` on success, `kCMClockError_UnsupportedOperation` if the clock does not support this function, or `kCMClockError_PreferredStartTimeNotAvailable` if the system is not disciplined to a present signal.
 
-#### Discussion
+## Discussion
 
 When the system is disciplined to a sync signal, this function returns a matched time pair in the near future and the delta between successive times.
 

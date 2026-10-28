@@ -23,7 +23,7 @@ init(updateHandler: @escaping (UIHingeInteraction, UIHingeInteraction.Update) ->
 - (instancetype) initWithUpdateHandler:(void (^)(UIHingeInteraction *, UIHingeInteractionUpdate *)) updateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The handler is invoked with the initial hinge state, and again whenever there is an update. An update can occur due to the hinge changing, or when the interaction moves between hierarchies. The handler is stored and escapes, so take care to avoid retain cycles.
 

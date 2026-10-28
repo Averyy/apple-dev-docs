@@ -22,11 +22,11 @@ Creates a snapshot that represents the current state of the document.
 func snapshot(contentType: UTType) throws -> Self.Snapshot
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot of the document content that the system provides to the [`fileWrapper(snapshot:configuration:)`](./filewrapper%28snapshot,configuration%29.md) method for serialization.
 
-#### Discussion
+## Discussion
 
 To store a document — for example, in response to a Save command — SwiftUI begins by calling this method. Return a copy of the document’s content from your implementation of the method. For example, you might define an initializer for your document’s model object that copies the contents of the document’s instance, and return that:
 

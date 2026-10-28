@@ -19,7 +19,7 @@ A message that tells people why the app needs access to Bluetooth.
 - **Name**: `NSBluetoothAlwaysUsageDescription` (Privacy - Bluetooth Always Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is required if your app uses the device’s Bluetooth interface.
 

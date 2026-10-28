@@ -22,7 +22,7 @@ case system
 UITextDropProgressModeSystem
 ```
 
-#### Discussion
+## Discussion
 
 Use this progress mode to have the system show a modal progress indicator while the dropped items are being loaded.
 

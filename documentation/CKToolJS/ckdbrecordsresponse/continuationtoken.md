@@ -15,7 +15,7 @@ A string that indicates there are more records to fetch.
 attribute string? continuationToken;
 ```
 
-#### Discussion
+## Discussion
 
 To fetch the other records, pass the value of the `continuationToken` key as the value of the `continuationToken` key in the next request.
 

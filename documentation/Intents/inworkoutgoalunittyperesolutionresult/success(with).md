@@ -23,11 +23,11 @@ class func success(with resolvedWorkoutGoalUnitType: INWorkoutGoalUnitType) -> S
 + (instancetype) successWithResolvedWorkoutGoalUnitType:(INWorkoutGoalUnitType) resolvedWorkoutGoalUnitType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INWorkoutGoalUnitTypeResolutionResult`](../inworkoutgoalunittyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the goal type and can use it to track the user’s progress.
 

@@ -23,7 +23,7 @@ var allowsLinkPreview: Bool { get set }
 @property (nonatomic) BOOL allowsLinkPreview;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this property is available on devices that support 3D Touch. In iOS 10 and later, the default value is [`true`](../../Swift/true.md); in previous versions of iOS, the default value is [`false`](../../Swift/false.md).
 

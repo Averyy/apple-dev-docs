@@ -21,7 +21,7 @@ var actualDeliveryDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * actualDeliveryDate;
 ```
 
-#### Discussion
+## Discussion
 
 The notification center will set this value if a notification is put in the scheduled list and the delivery time arrives.
 

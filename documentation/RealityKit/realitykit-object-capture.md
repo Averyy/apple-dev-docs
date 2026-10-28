@@ -5,7 +5,7 @@
 
 Create 3D objects from a series of photographs using photogrammetry.
 
-#### Overview
+## Overview
 
 In iOS 17 and macOS 12 and later, you can create 3D objects from photographs using a process called photogrammetry. You provide RealityKit Object Capture with a series of well-lit photographs taken from many different angles. It analyzes the overlap area between different images to match up landmarks and produces a 3D model of the photographed object.
 

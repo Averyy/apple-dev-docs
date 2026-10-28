@@ -21,7 +21,7 @@ Stops playback for all audio on this entity.
 @preconcurrency func stopAllAudio()
 ```
 
-#### Discussion
+## Discussion
 
 You can stop a specific [`AudioPlaybackController`](../audioplaybackcontroller.md) instance from playing a particular resource by calling the controller’s [`stop()`](../audioplaybackcontroller/stop%28%29.md) method.
 

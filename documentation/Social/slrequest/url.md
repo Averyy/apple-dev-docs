@@ -22,7 +22,7 @@ var url: URL! { get }
 @property (nonatomic, readonly) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to look up the URL of the HTTP request that was set in [`init(forServiceType:requestMethod:url:parameters:)`](./init%28forservicetype,requestmethod,url,parameters%29-2cnf1.md). Possible values are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](../slrequest.md).
 

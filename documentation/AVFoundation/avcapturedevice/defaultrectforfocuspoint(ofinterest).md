@@ -23,7 +23,7 @@ func defaultRectForFocusPoint(ofInterest pointOfInterest: CGPoint) -> CGRect
 - (CGRect) defaultRectForFocusPointOfInterest:(CGPoint) pointOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 For example, pass `(0.5, 0.5)` to get the focus rectangle of interest used for the default focus point of interest at `(0.5, 0.5)`.
 

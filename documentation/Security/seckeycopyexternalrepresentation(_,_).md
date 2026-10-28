@@ -29,11 +29,11 @@ CFDataRefSecKeyCopyExternalRepresentation(SecKeyRef key, CFErrorRef*error);
 
 - [Storing Keys as Data](./storing-keys-as-data.md)
 
-#### Return Value
+## Return Value
 
 A data object representing the key in a format suitable for the key type or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the key’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 The operation fails if the key is not exportable, for example if it is bound to a smart card or to the Secure Enclave. It also fails in macOS if the key has the attribute [`kSecKeyExtractable`](./kseckeyextractable.md) set to [`false`](../Swift/false.md).
 

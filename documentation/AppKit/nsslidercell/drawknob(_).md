@@ -23,7 +23,7 @@ func drawKnob(_ knobRect: NSRect)
 
 - [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
-#### Discussion
+## Discussion
 
 Before this message is sent, a [`lockFocus()`](../nsview/lockfocus%28%29.md) message must be sent to the cell’s control view.
 

@@ -21,7 +21,7 @@ var isTracked: Bool { get }
 @property (nonatomic, readonly) BOOL isTracked;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md), the object’s transform currently matches the position and orientation of the real-world object it represents.
 

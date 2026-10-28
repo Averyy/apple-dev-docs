@@ -34,7 +34,7 @@ string QueueActivityReportEvent
 - `local.command.bookmark`: The user bookmarks the content.
 - `local.stopped.content_failure`
 
-#### Discussion
+## Discussion
 
 Events represent a user controlling playback or a natural transition at the end of a piece of content. The client handles playback controls, such as pausing and resuming, then sends these event reports to your service.
 

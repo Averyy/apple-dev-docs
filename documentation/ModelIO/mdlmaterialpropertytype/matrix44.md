@@ -24,7 +24,7 @@ case matrix44
 MDLMaterialPropertyTypeMatrix44
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`matrix4x4`](../mdlmaterialproperty/matrix4x4.md) property to access the material property’s value.
 

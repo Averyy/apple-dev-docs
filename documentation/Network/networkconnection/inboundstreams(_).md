@@ -23,7 +23,7 @@ final func inboundStreams(_ handler: @escaping @isolated(any) @Sendable (QUIC.St
 
 Available when `ApplicationProtocol` is `QUIC`.
 
-#### Discussion
+## Discussion
 
 If the `NetworkConnection<QUIC>` is not started at the time that `inboundStreams` is invoked, it will be started.
 

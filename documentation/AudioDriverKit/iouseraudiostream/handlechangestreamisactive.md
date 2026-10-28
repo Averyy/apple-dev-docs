@@ -15,11 +15,11 @@ Tells the stream the activity state is changing.
 virtual kern_return_t HandleChangeStreamIsActive(bool in_is_active);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The default implementation calls [`SetStreamIsActive`](./setstreamisactive.md) and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle changes to the stream format and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 

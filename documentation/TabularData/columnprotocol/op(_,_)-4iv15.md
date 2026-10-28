@@ -23,7 +23,7 @@ static func / (lhs: Self.Element, rhs: Self) -> Column<Self.Element>
 
 Available when `Element` conforms to `FloatingPoint`.
 
-#### Return Value
+## Return Value
 
 A new column.
 

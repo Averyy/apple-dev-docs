@@ -20,7 +20,7 @@ True if the prim has a def specifier.
 static var hasDefSpecifier: USDPrim.Predicate { get }
 ```
 
-#### Discussion
+## Discussion
 
 This flag is set if the prim’s [`specifier`](../specifier-swift.property.md) is [`USDPrim.Specifier.def`](../specifier-swift.enum/def.md).
 

@@ -15,7 +15,7 @@ Creates and returns a text provider with the text strings and an accessible stri
 - (instancetype) initWithText:(NSString *) text shortText:(NSString *) shortText accessibilityLabel:(NSString *) accessibilityLabel;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified content.
 

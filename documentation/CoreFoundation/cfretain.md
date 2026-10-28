@@ -21,15 +21,15 @@ Retains a Core Foundation object.
 extern CFTypeRefCFRetain(CFTypeRef cf);
 ```
 
-#### Return Value
+## Return Value
 
 The input value, `cf`.
 
-#### Discussion
+## Discussion
 
 You should retain a Core Foundation object when you receive it from elsewhere (that is, you did not create or copy it) and you want it to persist. If you retain a Core Foundation object you are responsible for releasing it (see [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i)).
 
-##### Special Considerations
+### Special Considerations
 
 If `cf` is `NULL`, this will cause a runtime error and your application will crash.
 

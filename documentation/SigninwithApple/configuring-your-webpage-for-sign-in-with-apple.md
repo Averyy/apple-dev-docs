@@ -5,11 +5,11 @@
 
 Prepare your webpage to authorize users through Sign in with Apple.
 
-#### Overview
+## Overview
 
 You can use HTML and JavaScript to add Sign in with Apple to your webpage. Configure an authorization object and add a button that allows users to sign in to your webpage with their Apple Account.
 
-##### Embed Sign in with Apple JS
+### Embed Sign in with Apple JS
 
 Include the script tag and link to Apple’s hosted version of the Sign in with Apple JS framework in your web page:
 
@@ -19,7 +19,7 @@ Include the script tag and link to Apple’s hosted version of the Sign in with 
 
 Embedding the framework gives you access to the Sign in with Apple authorization features.
 
-##### Configure the Authorization Object
+### Configure the Authorization Object
 
 To get started quickly, configure Sign in with Apple JS with a default markup setup. Alternatively, use JavaScript to configure the authorization object, or use a combination of the two.
 
@@ -71,7 +71,7 @@ Additionally, you can combine the two configuration options: you can set the met
 
 > **Note**:  Use space separation when requesting multiple scopes; for example, `"scope=name email"`.
 
-##### Handle the Authorization Response
+### Handle the Authorization Response
 
 After the user clicks the Sign in with Apple button, the framework sends the authorization information to Apple. Apple processes the authorization request, and sends an HTTP POST request containing the results of the authorization to the URL provided in [`redirectURI`](../SigninwithAppleJS/clientconfigi/redirecturi.md). The HTTP body contains the result parameters with a content-type of `application/x-www-form-urlencoded`. A successful response contains the following parameters:
 

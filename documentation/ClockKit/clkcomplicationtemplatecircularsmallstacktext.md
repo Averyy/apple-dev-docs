@@ -21,7 +21,7 @@ class CLKComplicationTemplateCircularSmallStackText
 @interface CLKComplicationTemplateCircularSmallStackText : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.circularSmall`](./clkcomplicationfamily/circularsmall.md) family.
 

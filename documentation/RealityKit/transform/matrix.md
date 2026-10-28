@@ -20,7 +20,7 @@ The transform represented as a 4x4 matrix.
 var matrix: float4x4 { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The [`Transform`](../transform.md) component can’t represent all transforms that a general 4x4 matrix can represent. Using a 4x4 matrix to set the transform is therefore a lossy event that might result in certain transformations, like shear, being dropped.
 

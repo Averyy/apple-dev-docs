@@ -21,7 +21,7 @@ The port subcomponent.
 var port: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The getter for this property removes any percent encoding this component may have (if the component allows percent encoding). Setting this property assumes the subcomponent or component string is not percent encoded and will add percent encoding (if the component allows percent encoding). Attempting to set a negative port number will cause a fatal error.
 

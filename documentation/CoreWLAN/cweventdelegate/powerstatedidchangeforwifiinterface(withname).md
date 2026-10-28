@@ -20,7 +20,7 @@ optional func powerStateDidChangeForWiFiInterface(withName interfaceName: String
 - (void) powerStateDidChangeForWiFiInterfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Discussion
+## Discussion
 
 Register for power state change notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.powerDidChange`](../cweventtype/powerdidchange.md) event type.
 

@@ -21,7 +21,7 @@ A button that sets the pitch of the associated map.
 @preconcurrency struct MapPitchToggle
 ```
 
-#### Overview
+## Overview
 
 The `MapPitchToggle` control sets the pitch of the associated map to a pleasing angle if flat, or returns the map to flat if pitched.
 

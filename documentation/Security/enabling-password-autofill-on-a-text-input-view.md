@@ -5,7 +5,7 @@
 
 Make sure a text input view displays the correct AutoFill suggestions.
 
-#### Overview
+## Overview
 
 To ensure your text input view displays the right AutoFill suggestions, set the [`textContentType`](../UIKit/uitextinputtraits/textcontenttype.md) property on any relevant input views.
 

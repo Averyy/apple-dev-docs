@@ -25,7 +25,7 @@ class AVCaptureDeviceDescriptor
 
 - [Choosing a camera by the direction it faces](./choosing-a-camera-by-the-direction-it-faces.md)
 
-#### Overview
+## Overview
 
 A descriptor is a [`Sendable`](../Swift/sendable.md) representation of a capture device. An [`AVCaptureDeviceDirectionCoordinator`](./avcapturedevicedirectioncoordinator.md) object reports descriptors on the main actor, where the capture APIs in AVFoundation shouldn’t run. Pass a descriptor to a background actor and create the [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md) there. Read its properties on the main actor to update your interface.
 

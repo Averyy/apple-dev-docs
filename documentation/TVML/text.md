@@ -4,7 +4,7 @@
 
 Displays text on the screen.
 
-#### Overview
+## Overview
 
 This element displays a small amount of text. Here’s an example that labels a button:
 
@@ -14,7 +14,7 @@ This element displays a small amount of text. Here’s an example that labels a 
 </button>
 ```
 
-##### Contained In
+### Contained In
 
 - [button](./button.md)
 - [monogram](./monogram.md)

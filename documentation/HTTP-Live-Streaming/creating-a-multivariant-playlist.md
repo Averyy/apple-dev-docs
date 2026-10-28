@@ -5,7 +5,7 @@
 
 Offer multiple playlist files to provide different encodings of the same content.
 
-#### Overview
+## Overview
 
 The Multivariant Playlist describes all of the available variants for your content. Each variant is a version of the stream at a particular bit rate and is contained in a separate playlist. The client switches to the most appropriate variant based on the measured network bit rate. The client’s player is tuned to minimize stalling of playback, to give the user the best possible streaming experience.
 
@@ -13,7 +13,7 @@ The Multivariant Playlist describes all of the available variants for your conte
 
 A Multivariant Playlist isn’t re-read. Once the client has read the playlist, it assumes the set of variations isn’t changing. The stream ends as soon as the client sees the `EXT-X-ENDLIST` tag on one of the individual variant playlists.
 
-##### Define variants
+### Define variants
 
 The following example shows a Multivariant Playlist that defines five different variants.
 

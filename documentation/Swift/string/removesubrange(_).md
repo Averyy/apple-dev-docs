@@ -21,7 +21,7 @@ Removes the characters in the given range.
 mutating func removeSubrange(_ bounds: Range<String.Index>)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates any existing indices for use with this string.
 

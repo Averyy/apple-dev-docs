@@ -15,11 +15,11 @@ Fetches details of an API caller.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 This endpoint returns the `userId` and `parentOrgId` of an API caller. See the [`MeDetail`](./medetail.md) object.
 
-##### Get Me Details Example
+### Get Me Details Example
 
 **Request**:
 

@@ -25,11 +25,11 @@ class var abbreviationDictionary: [String : String] { get set }
 @property (class, copy) NSDictionary<NSString *,NSString *> * abbreviationDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary holding the mappings of time zone abbreviations to time zone names.
 
-#### Discussion
+## Discussion
 
 Note that more than one time zone may have the same abbreviation—for example, US/Pacific and Canada/Pacific both use the abbreviation “PST.” In these cases, [`abbreviationDictionary`](./abbreviationdictionary.md) chooses a single name to map the abbreviation to.
 

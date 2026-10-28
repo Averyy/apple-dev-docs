@@ -18,7 +18,7 @@ An error describing a translation session that you’ve cancelled before, which 
 static let alreadyCancelled: TranslationError
 ```
 
-#### Discussion
+## Discussion
 
 A [`TranslationSession`](../translationsession.md) instance throws this error when you call one of its translate methods after calling its [`cancel()`](../translationsession/cancel%28%29.md) method.
 

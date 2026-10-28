@@ -23,7 +23,7 @@ static func .| (a: SIMDMask<Storage>, b: SIMDMask<Storage>) -> SIMDMask<Storage>
 
 Available when `Storage` is `SIMD3<Int32>`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

@@ -18,7 +18,7 @@ A continuous stream of care plans that exist in the store. The stream yields a n
 func fetchAnyCarePlans(query: OCKCarePlanQuery, callbackQueue: DispatchQueue, completion: @escaping OCKResultClosure<[OCKAnyCarePlan]>)
 ```
 
-#### Discussion
+## Discussion
 
 Supply a query that’ll be used to match care plans in the store. If the query doesn’t contain a date interval, the result contains every version of a care plan. Multiple versions of the same care plan have the same [`id`](../ockanycareplan/id.md) but a different UUID. If the query does contain a date interval, the result contains the newest version of a care plan that exists in the interval.
 

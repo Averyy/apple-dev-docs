@@ -21,7 +21,7 @@ The line where the text ends in the Markdown source.
 @property (readonly) NSInteger endLine;
 ```
 
-#### Discussion
+## Discussion
 
 This property uses `1`-based counting.
 

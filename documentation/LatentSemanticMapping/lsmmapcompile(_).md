@@ -20,7 +20,7 @@ func LSMMapCompile(_ mapref: LSMMap) -> OSStatus
 OSStatus LSMMapCompile(LSMMapRef mapref);
 ```
 
-#### Discussion
+## Discussion
 
 This function is computationally expensive.
 

@@ -20,7 +20,7 @@ An asynchronous sequence of download-status updates for all asset packs.
 final let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
 ```
 
-#### Discussion
+## Discussion
 
 The sequence never finishes.
 

@@ -25,11 +25,11 @@ func method(for aSelector: Selector!) -> IMP!
 - (IMP) methodForSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 The address of the receiver’s implementation of the `aSelector`.
 
-#### Discussion
+## Discussion
 
 If the receiver is an instance, `aSelector` should refer to an instance method; if the receiver is a class, it should refer to a class method.
 

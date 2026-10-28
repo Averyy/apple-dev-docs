@@ -25,7 +25,7 @@ static let totalFileSizeKey: URLResourceKey
 extern NSURLResourceKey const NSURLTotalFileSizeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as an [`NSNumber`](../nsnumber.md) object. The values includes the size of any file metadata.
 

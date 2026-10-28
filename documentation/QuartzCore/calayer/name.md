@@ -24,7 +24,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The layer name is used by some layout managers to identify a layer. The default value of this property is `nil`.
 

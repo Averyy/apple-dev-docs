@@ -21,11 +21,11 @@ Creates a serialized representation of the public key.
 func hpkeRepresentation(kem: HPKE.KEM) throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The serialized representation of the public key.
 
-#### Discussion
+## Discussion
 
 - kem: The Key Encapsulation Mechanism to use with the public key.
 

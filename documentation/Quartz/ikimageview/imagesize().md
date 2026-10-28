@@ -19,11 +19,11 @@ func imageSize() -> NSSize
 - (NSSize) imageSize;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the image.
 
-#### Discussion
+## Discussion
 
 The image size changes whenever an image is rotates or cropped.
 

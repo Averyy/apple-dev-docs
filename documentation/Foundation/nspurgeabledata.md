@@ -25,7 +25,7 @@ class NSPurgeableData
 @interface NSPurgeableData : NSMutableData
 ```
 
-#### Overview
+## Overview
 
 [`NSPurgeableData`](./nspurgeabledata.md) objects inherit their creation methods from their superclass, [`NSMutableData`](./nsmutabledata.md) while providing a default implementation of the [`NSDiscardableContent`](./nsdiscardablecontent.md) protocol.
 

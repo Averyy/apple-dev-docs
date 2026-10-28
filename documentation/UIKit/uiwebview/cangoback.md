@@ -23,7 +23,7 @@ var canGoBack: Bool { get }
 @property (nonatomic, readonly, getter=canGoBack) BOOL canGoBack;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), able to move backward; otherwise, [`false`](../../Swift/false.md).
 

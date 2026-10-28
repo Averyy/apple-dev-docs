@@ -15,7 +15,7 @@ Set I/O attributes associated with a mounpoint.
 void vfs_setioattr(mount_t mp, struct vfsioattr *ioattrp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

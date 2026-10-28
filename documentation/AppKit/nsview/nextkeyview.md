@@ -19,7 +19,7 @@ unowned(unsafe) var nextKeyView: NSView? { get set }
 @property (assign, nullable) NSView * nextKeyView;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is `nil` if there is no next view in the key view loop. You can assign a view to this property to make that view the next view in the loop. The view in this property should, if possible, be made first responder when the user navigates forward from the view using keyboard interface control.
 

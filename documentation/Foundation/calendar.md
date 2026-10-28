@@ -21,7 +21,7 @@ A definition of the relationships between calendar units and absolute points in 
 struct Calendar
 ```
 
-#### Overview
+## Overview
 
 `Calendar` encapsulates information about systems of reckoning time in which the beginning, length, and divisions of a year are defined. It provides information about the calendar and support for calendrical computations such as determining the range of a given calendrical unit and adding units to a given absolute time.
 

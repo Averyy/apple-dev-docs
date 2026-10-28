@@ -16,7 +16,7 @@ A floating-point number that controls the vertical offset of shadows from the el
 attribute unrestricted float shadowOffsetY;
 ```
 
-#### Discussion
+## Discussion
 
 Shadows are cast `shadowOffsetY` pixels down, regardless of the canvas rotation, scale, or transformation. If `shadowOffsetY` is negative, shadows are cast up.
 

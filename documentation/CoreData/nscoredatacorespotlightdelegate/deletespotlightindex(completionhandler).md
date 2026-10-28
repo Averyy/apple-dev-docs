@@ -27,7 +27,7 @@ func deleteSpotlightIndex() async throws
 - (void) deleteSpotlightIndexWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes only a single parameter, which is an error object that contains information about issues preventing the deletion of searchable items, or `nil` if Core Spotlight successfully deletes all searchable items.
 

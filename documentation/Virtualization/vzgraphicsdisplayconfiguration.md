@@ -19,7 +19,7 @@ class VZGraphicsDisplayConfiguration
 @interface VZGraphicsDisplayConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate `VZGraphicsDisplayConfiguration` directly. Use one of its subclasses instead.
 

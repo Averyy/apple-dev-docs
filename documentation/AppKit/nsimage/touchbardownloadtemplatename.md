@@ -22,7 +22,7 @@ class let touchBarDownloadTemplateName: String
 extern NSImageName const NSImageNameTouchBarDownloadTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for download](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793508@2x.png)
 

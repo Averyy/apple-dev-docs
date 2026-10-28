@@ -5,28 +5,28 @@
 
 Learn about important changes to EnergyKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [EnergyKit](../EnergyKit/EnergyKit.md).
 
-#### June 2026
+## June 2026
 
-##### Electric vehicle charging behavior
+### Electric vehicle charging behavior
 
 - Track and explain electric vehicle charging behavior with [`ElectricVehicleStatusEvent`](../EnergyKit/electricvehiclestatusevent.md), which provides discrete snapshots that capture why a vehicle isn’t charging when connected, when charging will begin, and why charging started or stopped.
 - Use `ElectricVehicleChargingReason` to explain charging state transitions. The framework provides `ActiveReason` for reasons why charging starts or resumes, and `IdleReason` for reasons why the vehicle remains idle when connected to a charger.
 - Define charging targets with [`ElectricVehicleStatusEvent.ChargingTarget`](../EnergyKit/electricvehiclestatusevent/chargingtarget-swift.struct.md) to show when charging begins and when it will complete, including the target charge, scheduled start time, and estimated completion time.
 
-##### Device identification
+### Device identification
 
 - Identify electrical load devices with type safety using [`ElectricalLoadDevice`](../EnergyKit/electricalloaddevice.md).
 - Access device names through the [`deviceName`](../EnergyKit/electricvehicleloadevent/devicename.md) property for electric vehicles, and the [`deviceName`](../EnergyKit/electrichvacloadevent/devicename.md) property for HVAC devices.
 
-##### Performance metrics
+### Performance metrics
 
 - Estimate driving range and battery temperature to give more context about a charging session using [`ElectricVehicleLoadEvent.ElectricalMeasurement.PerformanceMetrics`](../EnergyKit/electricvehicleloadevent/electricalmeasurement/performancemetrics-swift.struct.md).
 
-##### Home app integration
+### Home app integration
 
 - Display your app’s energy data in the Home app by adopting the [`EnergyKit LoadEvents Entitlement`](../BundleResources/entitlements/com.apple.developer.energykit.loadevents-experience.md). The Home app automatically shows activity logs, historical charts, trend notifications, and whole-home energy usage based on your submitted events.
 

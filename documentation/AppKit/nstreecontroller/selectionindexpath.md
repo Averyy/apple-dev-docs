@@ -19,7 +19,7 @@ var selectionIndexPath: IndexPath? { get }
 @property (copy, readonly, nullable) NSIndexPath * selectionIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if there is no selection. This property is observable using key-value observing.
 

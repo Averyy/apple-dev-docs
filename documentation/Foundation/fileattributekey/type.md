@@ -25,7 +25,7 @@ static let type: FileAttributeKey
 extern NSFileAttributeKey const NSFileType;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSString`](../nsstring.md) object (see `NSFileType Attribute Values` for possible values).
 

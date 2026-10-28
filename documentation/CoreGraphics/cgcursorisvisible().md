@@ -21,11 +21,11 @@ func CGCursorIsVisible() -> boolean_t
 extern boolean_t CGCursorIsVisible();
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the cursor is visible on any display; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 To hide or show the cursor, you can use the functions [`CGDisplayHideCursor(_:)`](./cgdisplayhidecursor%28_%29.md) and [`CGDisplayShowCursor(_:)`](./cgdisplayshowcursor%28_%29.md).
 

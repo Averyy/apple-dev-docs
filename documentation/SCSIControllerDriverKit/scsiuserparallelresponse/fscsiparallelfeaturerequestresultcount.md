@@ -15,7 +15,7 @@ The number of negotiated features.
 uint64_t fSCSIParallelFeatureRequestResultCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the number of items in the [`fSCSIParallelFeatureResult`](./fscsiparallelfeatureresult.md) array.
 

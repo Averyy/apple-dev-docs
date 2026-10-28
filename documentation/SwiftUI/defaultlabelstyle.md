@@ -22,7 +22,7 @@ nonisolated
 struct DefaultLabelStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./labelstyle/automatic.md) to construct this style.
 

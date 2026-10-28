@@ -24,7 +24,7 @@ var rotationRate: CMRotationRate { get }
 @property (nonatomic, readonly) CMRotationRate rotationRate;
 ```
 
-#### Discussion
+## Discussion
 
 This property yields a measurement of the device’s rate of rotation around three axes. Whereas this property gives the raw data from the gyroscope, the identically named property of [`CMDeviceMotion`](../cmdevicemotion.md) gives a [`CMRotationRate`](../cmrotationrate.md) structure measuring gyroscope data whose bias has been removed by Core Motion algorithms.
 

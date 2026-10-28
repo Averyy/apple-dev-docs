@@ -19,7 +19,7 @@ var isSeparatorItem: Bool { get }
 @property (readonly, getter=isSeparatorItem) BOOL separatorItem;
 ```
 
-#### Discussion
+## Discussion
 
 This menu item is disabled. The default separator item is blank space.
 

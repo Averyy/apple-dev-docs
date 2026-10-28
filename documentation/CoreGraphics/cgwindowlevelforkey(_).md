@@ -20,11 +20,11 @@ func CGWindowLevelForKey(_ key: CGWindowLevelKey) -> CGWindowLevel
 extern CGWindowLevel CGWindowLevelForKey(CGWindowLevelKey key);
 ```
 
-#### Return Value
+## Return Value
 
 The window level that corresponds to the specified key.
 
-#### Discussion
+## Discussion
 
 This function is not recommended for use in applications. (This function is provided for application frameworks that create and manage windows, like Cocoa.)
 

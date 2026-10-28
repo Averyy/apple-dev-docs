@@ -19,7 +19,7 @@ case pageUp
 UIPressTypePageUp
 ```
 
-#### Discussion
+## Discussion
 
 Add gesture recognizers for [`UIPress.PressType.pageDown`](./pagedown.md) and [`UIPress.PressType.pageUp`](./pageup.md) to navigate content in your app.
 

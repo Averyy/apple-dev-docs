@@ -25,7 +25,7 @@ func CFRunLoopTimerGetContext(_ timer: CFRunLoopTimer!, _ context: UnsafeMutable
 extern void CFRunLoopTimerGetContext(CFRunLoopTimerRef timer, CFRunLoopTimerContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 The context version number for run loop timers is currently 0. Before calling this function, you need to initialize the `version` member of `context` to `0`.
 

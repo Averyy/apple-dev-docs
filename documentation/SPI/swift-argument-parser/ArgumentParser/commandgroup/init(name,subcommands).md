@@ -14,7 +14,7 @@ Create a command group.
 ## Declaration
 
 ```swift
-init(name: String, subcommands: [any ParsableCommand.Type])
+init(name: String, subcommands: [ParsableCommand.Type])
 ```
 
 

@@ -19,7 +19,7 @@ var isContinuous: Bool { get set }
 @property (getter=isContinuous) BOOL continuous;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is YES, the cell’s action message is sent continuously during mouse tracking. In practice, the continuous delivery of action messages has meaning only for [`NSActionCell`](../nsactioncell.md) and its subclasses, which implement the target/action mechanism. Some [`NSControl`](../nscontrol.md) subclasses, notably [`NSMatrix`](../nsmatrix.md), send a default action to a default target when a cell doesn’t provide a target or action.
 

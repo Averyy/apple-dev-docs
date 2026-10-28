@@ -17,7 +17,7 @@ Attaches a new store. The new store must be capable of reading patients.
 func attachReadOnly(patientStore: OCKAnyReadOnlyPatientStore)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The order is which stores are attached is important.
 

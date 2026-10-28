@@ -25,7 +25,7 @@ enum SCNWrapMode
 enum SCNWrapMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Wrapping modes determine texture mapping behavior for cases where a material’s texture coordinates extend outside the range from `0.0` to `1.0`. For example, if you use the [`contentsTransform`](./scnmaterialproperty/contentstransform.md) property to shrink a texture relative to the surface of a geometry, you use the wrap mode properties to determine whether the texture repeats across the surface. The figure below shows the effect of each wrapping mode on an otherwise identical material.
 

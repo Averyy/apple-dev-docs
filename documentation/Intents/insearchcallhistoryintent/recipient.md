@@ -34,7 +34,7 @@ var recipient: INPerson? { get }
 @property (atomic, copy, readonly, nullable) INPerson * recipient;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the person with whom the call occurred. Use this property to limit your search only to records containing the specified person.
 

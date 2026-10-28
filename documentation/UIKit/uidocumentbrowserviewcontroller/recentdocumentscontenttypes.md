@@ -24,7 +24,7 @@ var recentDocumentsContentTypes: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * recentDocumentsContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The default list is the same as the list of content types provided to the initializer, or the types defined in [`CFBundleDocumentTypes`](../../BundleResources/information-property-list/cfbundledocumenttypes.md) in the app’s `Info.plist` file.
 

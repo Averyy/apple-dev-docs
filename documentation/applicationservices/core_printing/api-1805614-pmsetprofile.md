@@ -17,17 +17,17 @@ OSStatus PMSetProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You can use the function `PMSetProfile` to tag QuickDraw drawing with a custom ColorSync profile. The function `PMSetProfile` is useful only if the graphics context is QuickDraw and the current port is the printing port. 
 
 You should call this function each time you want to change the profile used to draw page elements. The printing system resets the profile to the default at the beginning of each page. If you call the function `PMSetProfile` a second time, the old profile is ignored. 
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated because QuickDraw is deprecated. When drawing with Quartz, the current stroke and fill color space and the color space associated with an image are used to characterize color. Quartz provides ways to use ColorSync profiles to create color spaces, so you can characterize color using ColorSync simply by drawing with Quartz.
 

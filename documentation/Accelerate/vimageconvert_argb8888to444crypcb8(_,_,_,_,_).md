@@ -25,7 +25,7 @@ func vImageConvert_ARGB8888To444CrYpCb8(_ src: UnsafePointer<vImage_Buffer>, _ d
 vImage_Error vImageConvert_ARGB8888To444CrYpCb8(const vImage_Buffer *src, const vImage_Buffer *dest, const vImage_ARGBToYpCbCr *info, const uint8_t permuteMap[4], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 

@@ -22,7 +22,7 @@ var activeToolPicker: PKToolPicker? { get set }
 @property (nonatomic, strong, nullable) PKToolPicker * activeToolPicker;
 ```
 
-#### Discussion
+## Discussion
 
 Control tool picker visibility with the `toolPickerVisibility` property.
 

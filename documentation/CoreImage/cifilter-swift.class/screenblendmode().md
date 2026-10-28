@@ -24,11 +24,11 @@ class func screenBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) screenBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the screen-blend mode filter to an image. The effect calculates the colors in the output image by multiplying the inverse color values for the input and background images, resulting in a brighter image.
 

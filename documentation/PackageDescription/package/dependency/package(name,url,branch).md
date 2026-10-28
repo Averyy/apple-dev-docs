@@ -17,11 +17,11 @@ Adds a remote package dependency with a branch requirement you provide.
 static func package(name: String, url: String, branch: String) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Package.Dependency` instance.
 
-#### Discussion
+## Discussion
 
 ```swift
 .package(url: "https://example.com/example-package.git", branch: "main"),

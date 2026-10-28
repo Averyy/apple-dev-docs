@@ -21,7 +21,7 @@ Gets the identified child view as a resolved symbol, if the view exists.
 func resolveSymbol<ID>(id: ID) -> GraphicsContext.ResolvedSymbol? where ID : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 The resolved symbol, or `nil` if SwiftUI can’t find a child view with the given `id`.
 

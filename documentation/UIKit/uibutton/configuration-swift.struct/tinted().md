@@ -19,7 +19,7 @@ Creates a configuration for a button with a tinted background color.
 static func tinted() -> UIButton.Configuration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 

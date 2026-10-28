@@ -21,7 +21,7 @@ Provides data-backed content from an existing file with the specified parameters
 convenience init(contentsOf fileURL: URL, contentType: UTType?, openInPlace: Bool = false, coordinated: Bool = false, visibility: NSItemProviderRepresentationVisibility = .all)
 ```
 
-#### Discussion
+## Discussion
 
 If [`openInPlace`](../nsitemproviderfileoptions/openinplace.md) is set to `false`, the system copies the file provided before the load handler returns.
 

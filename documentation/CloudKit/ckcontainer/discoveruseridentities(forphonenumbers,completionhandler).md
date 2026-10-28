@@ -24,7 +24,7 @@ Fetches the user identities for the specified phone numbers.
 func discoverUserIdentities(forPhoneNumbers phoneNumbers: [String], completionHandler: @escaping @Sendable (Result<[String : CKUserIdentity], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This closure doesn’t return a value and takes the following parameters:
 

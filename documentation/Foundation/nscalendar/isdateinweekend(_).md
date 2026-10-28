@@ -25,11 +25,11 @@ func isDateInWeekend(_ date: Date) -> Bool
 - (BOOL) isDateInWeekend:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given date is within a weekend period, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the date does fall within a weekend, you can use the [`range(ofWeekendStart:interval:containing:)`](./range%28ofweekendstart,interval,containing%29.md) method to determine the start date of that weekend period. Otherwise, you can use the [`nextWeekendStart(_:interval:options:after:)`](./nextweekendstart%28_,interval,options,after%29.md) method to determine the start date of the next or previous weekend.
 

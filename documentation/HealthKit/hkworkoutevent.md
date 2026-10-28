@@ -24,7 +24,7 @@ class HKWorkoutEvent
 @interface HKWorkoutEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use workout events to toggle a workout between an active and an inactive state, or to mark points of interest during a workout.
 

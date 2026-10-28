@@ -23,7 +23,7 @@ static var withColonSeparatorInTimeZone: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithColonSeparatorInTimeZone
 ```
 
-#### Discussion
+## Discussion
 
 The date representation uses the colon separator (`:`) in the time zone.
 

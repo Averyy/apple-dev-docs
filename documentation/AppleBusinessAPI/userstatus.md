@@ -24,7 +24,7 @@ string UserStatus
 - `LOCKED`
 - `LOCKED_FOR_SHARED_IPAD`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

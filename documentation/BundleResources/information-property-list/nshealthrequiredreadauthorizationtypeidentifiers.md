@@ -16,7 +16,7 @@ The clinical record data types that your app must get permission to read.
 - **Name**: `NSHealthRequiredReadAuthorizationTypeIdentifiers`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Use this key to indicate that your app requires access to specific clinical record data types to function properly. Set the value to an array of strings containing the type identifiers for your required types. For a list of type identifiers, see [`HKClinicalTypeIdentifier`](../../HealthKit/hkclinicaltypeidentifier.md).
 

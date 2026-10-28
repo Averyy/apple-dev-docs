@@ -23,11 +23,11 @@ optional func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: U
 - (BOOL) navigationBar:(UINavigationBar *) navigationBar shouldPushItem:(UINavigationItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item should be pushed; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Sent to the delegate before pushing an item onto the navigation bar.
 

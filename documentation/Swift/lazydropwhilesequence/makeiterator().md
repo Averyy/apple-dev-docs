@@ -23,7 +23,7 @@ func makeIterator() -> LazyDropWhileSequence<Base>.Iterator
 
 Available when `Base` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

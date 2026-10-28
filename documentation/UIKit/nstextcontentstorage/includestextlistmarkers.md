@@ -23,7 +23,7 @@ var includesTextListMarkers: Bool { get set }
 @property BOOL includesTextListMarkers;
 ```
 
-#### Overview
+## Overview
 
 When [`true`](../../Swift/true.md), [`NSTextContentStorage`](../nstextcontentstorage.md) assumes that a paragraph with an [`NSTextList`](../nstextlist.md) includes the text list marker string.
 

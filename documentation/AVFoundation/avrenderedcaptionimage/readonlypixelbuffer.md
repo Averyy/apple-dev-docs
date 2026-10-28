@@ -18,7 +18,7 @@ A CVReadOnlyPixelBuffer that contains pixel data for the rendered caption
 var readOnlyPixelBuffer: CVReadOnlyPixelBuffer { get }
 ```
 
-#### Discussion
+## Discussion
 
 The pixel format is fixed to `kCVPixelFormatType_32BGRA` defined in <CoreVideo/CVPixelBuffer.h>
 

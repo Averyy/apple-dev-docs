@@ -23,7 +23,7 @@ weak var buttonGroup: UIBarButtonItemGroup? { get }
 @property (nonatomic, weak, readonly, nullable) UIBarButtonItemGroup * buttonGroup;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the group to which the item belongs. This property is configured automatically when you add the bar button item to a [`UIBarButtonItemGroup`](../uibarbuttonitemgroup.md) object. If the item isn’t associated with a bar button item group, this property is `nil`.
 

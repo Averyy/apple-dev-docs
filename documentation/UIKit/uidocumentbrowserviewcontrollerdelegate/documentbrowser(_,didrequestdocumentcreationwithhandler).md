@@ -27,7 +27,7 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, did
 - [Customizing the document browser](../customizing-the-browser.md)
 - [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to create new documents for the user:
 

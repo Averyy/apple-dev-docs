@@ -25,7 +25,7 @@ case io
 MLModelErrorIO
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when the file system encounters an error.
 

@@ -20,7 +20,7 @@ Metal couldn’t support the requested action.
 static var unsupported: MTLLibraryError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the requested library file has improper formatting, or the requested library isn’t accessible.
 

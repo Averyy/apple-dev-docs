@@ -3,32 +3,32 @@
 **Framework**: QuickTime File Format  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - **Containing profile atom**: Track (video), movie
 - **`part-ID`**: `0x20202020` (universal feature)
 - **`feature-code`**: ’`m4vp'`
 - **`feature-value`**: Unsigned `int(32)` where least significant 8 bits hold the `profile_and_level_indication` from the `visual_object_sequence`, as defined in specification ISO/IEC 14496-2, retrieved from the video parameters for the MPEG-4 video codec description. The top 24 bits must be set to `0`.
 
-#### Feature Values
+## Feature Values
 
 The least significant 8 bits hold the value. The most significant 24 bits of the feature value should be set to `0`.
 
-#### Writer Responsibilities
+## Writer Responsibilities
 
 A writer of the MPEG-4 video profile feature should record the 8 bits corresponding to the `profile_and_level_indication` from the `visual_object_sequence`, as defined in specification ISO/IEC 14496-2, found in the video parameters encoded in the esds of the MPEG-4 video codec sample description (with QuickTime codec type `'mp4v'`).
 
 > **Note**: A writer that records the MPEG-4 video profile feature is encouraged also to write the QuickTime Video Codec Type feature.
 
-#### Feature Value Algorithm
+## Feature Value Algorithm
 
 The feature value is the `profile_and_level_indication` from the `visual_object_sequence`, as defined in specification ISO/IEC 14496-2, retrieved from the video parameters for the MPEG-4 video codec description.
 
-#### Reader Responsibilities
+## Reader Responsibilities
 
 A reader of this feature code should compare the recorded value with the set of profiles and levels supported by the reader.
 
-#### Comments
+## Comments
 
 This feature may be present only if MPEG-4 video is used. Normally, the video codec type profile entry will also record that MPEG-4 video is present, unless no codec types are present (when, for example, an exhaustive list cannot be formed).
 

@@ -19,7 +19,7 @@ All user decisions in the given time range.
 final func userDecisions(in timeRange: CMTimeRange) -> [CNDecision]
 ```
 
-#### Return Value
+## Return Value
 
 An array of user decisions in the given time range. These include user decisions made during recording or added to the script.
 

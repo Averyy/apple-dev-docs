@@ -19,7 +19,7 @@ class NSFontPanel
 @interface NSFontPanel : NSPanel
 ```
 
-#### Overview
+## Overview
 
 Actual changes to the font panel are made through conversion messages sent to the shared [`NSFontManager`](./nsfontmanager.md) instance. There’s only one Font panel for each app.
 

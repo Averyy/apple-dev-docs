@@ -18,7 +18,7 @@ var FF_TRUNCATED: HRESULT { get }
 #define FF_TRUNCATED
 ```
 
-#### Discussion
+## Discussion
 
 The parameters of the effect were successfully updated by FFEffectSetParameters, but some of them were beyond the capabilities of the device and were truncated.
 

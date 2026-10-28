@@ -25,11 +25,11 @@ static func linearInterpolate<T, U>(values: T, atIndices indices: U) -> [Double]
 
 - [Using linear interpolation to construct new data points](../using-linear-interpolation-to-construct-new-data-points.md)
 
-#### Return Value
+## Return Value
 
 A vector that contains the linearly interpolated values.
 
-#### Discussion
+## Discussion
 
 The following code creates a five-element vector from two values using linear interpolation. The last index in `indices` determines the length of the operation result:
 

@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_DVD_17: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_DVD_17
 ```
 
-#### Discussion
+## Discussion
 
 This tag is equivalent to [`kAudioChannelLayoutTag_DVD_12`](./kaudiochannellayouttag_dvd_12.md). Your channels must be laid out in the following order:
 

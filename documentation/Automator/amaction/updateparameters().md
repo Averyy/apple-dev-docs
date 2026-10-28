@@ -20,7 +20,7 @@ func updateParameters()
 - (void) updateParameters;
 ```
 
-#### Discussion
+## Discussion
 
 This message sends just before an action is saved, copied, or run. Preferably, an action’s settings should not solely reside in the controls of its view, but if they do, the action can fetch and save them in this method.
 

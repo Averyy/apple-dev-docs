@@ -19,11 +19,11 @@ func AEUnflattenDesc(_ buffer: UnsafeRawPointer!, _ result: UnsafeMutablePointer
 OSStatus AEUnflattenDesc(const void *buffer, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `paramErr` if the flattened data in `buffer` is found to be invalid. See [Result Codes](../applicationservices/apple_event_manager.md#1656145) for other possible values.
 
-#### Discussion
+## Discussion
 
 This function assumes the passed buffer contains valid flattened data, produced by a previous call to [`AEFlattenDesc(_:_:_:_:)`](./api-1441808-aeflattendesc.md). See that function for a description of when you might want to flatten and unflatten descriptors, and of possible limitations.
 
@@ -31,7 +31,7 @@ Flattening and unflattening works across OS versions, including between Mac OS 9
 
 Flattening is endian-neutral. That is, you can save flattened data on a machine that is either big-endian or little-endian, then retrieve and unflatten the data on either type of machine, without any special steps by your application.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

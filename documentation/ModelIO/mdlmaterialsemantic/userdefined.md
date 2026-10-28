@@ -24,7 +24,7 @@ case userDefined
 MDLMaterialSemanticUserDefined
 ```
 
-#### Discussion
+## Discussion
 
 A renderer (or other software component processing the material) may use this material property to produce custom effects. If an asset contains more than one user-defined material property, Model I/O  gives each a unique integer value, starting with this constant’s value (`0x8001`).
 

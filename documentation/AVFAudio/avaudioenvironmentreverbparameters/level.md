@@ -25,7 +25,7 @@ var level: Float { get set }
 @property (nonatomic) float level;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`. The values must be within the range of `-40` to `40` dB.
 

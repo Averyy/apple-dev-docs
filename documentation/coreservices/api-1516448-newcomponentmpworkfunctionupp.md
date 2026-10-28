@@ -13,7 +13,7 @@
 ComponentMPWorkFunctionUPP NewComponentMPWorkFunctionUPP(ComponentMPWorkFunctionProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentMPWorkFunctionUPP` data type.
 

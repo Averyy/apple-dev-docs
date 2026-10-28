@@ -22,7 +22,7 @@ nonisolated
 func windowToolbarFullScreenVisibility(_ visibility: WindowToolbarFullScreenVisibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, the window toolbar will show at the top of the display, above the window’s contents.
 

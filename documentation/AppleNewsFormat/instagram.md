@@ -15,11 +15,11 @@ The component for adding an Instagram post.
 object Instagram
 ```
 
-#### Discussion
+## Discussion
 
 Use the `instagram` object to include an Instagram post by specifying a `URL` for the post.
 
-##### Example
+### Example
 
 ```json
 {

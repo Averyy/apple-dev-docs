@@ -23,7 +23,7 @@ unowned(unsafe) var delegate: (any UIApplicationDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<UIApplicationDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Every app must have an app delegate object to respond to app-related messages. For example, the app notifies its delegate when the app finishes launching and when its foreground or background execution status changes. Similarly, app-related messages coming from the system are often routed to the app delegate for handling. Xcode provides an initial app delegate for every app and you should not need to change this delegate later.
 

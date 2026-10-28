@@ -5,7 +5,7 @@
 
 An arithmetic problem terminated the process, often because of division by zero or a floating-point error.
 
-#### Overview
+## Overview
 
 Depending on the language and CPU architecture, division by zero and floating-point errors can also produce other exceptions. For example, the Swift standard library’s numeric types detect division by zero and produce a fatal error (`SIGTRAP` or `SIGILL`). Because division by zero in C is undefined behavior, it might produce an incorrect result instead of an error.
 

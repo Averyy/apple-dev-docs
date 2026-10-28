@@ -15,7 +15,7 @@ The list of elements that the accessibility element is a title for.
 @property (copy, nullable) NSArray * accessibilityServesAsTitleForUIElements;
 ```
 
-#### Discussion
+## Discussion
 
 Use on a static text label to associate that label with one or more user interface elements.
 

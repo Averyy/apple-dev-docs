@@ -23,7 +23,7 @@ var phase: UIPress.Phase { get }
 @property (nonatomic, readonly) UIPressPhase phase;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of all possible press phases, see the [`UIPress.Phase`](./phase-swift.enum.md) enumeration.
 

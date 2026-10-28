@@ -24,7 +24,7 @@ func MusicEventIteratorHasPreviousEvent(_ inIterator: MusicEventIterator, _ outH
 extern OSStatus MusicEventIteratorHasPreviousEvent(MusicEventIterator inIterator, Boolean *outHasPrevEvent);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

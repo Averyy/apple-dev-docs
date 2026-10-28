@@ -21,7 +21,7 @@ Returns a boolean value indicating whether this UTF8 view is trivially identical
 func isTriviallyIdentical(to other: Substring.UTF8View) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

@@ -15,7 +15,7 @@ Minimal campaign information included in nested report objects.
 object ReportingCampaignMin
 ```
 
-#### Discussion
+## Discussion
 
 The `ReportingCampaignMin` object is a lightweight campaign summary embedded in report row objects. It provides enough context to identify the parent campaign without duplicating the full [`Campaign`](./campaign.md) structure. Currently this object carries no additional fields beyond what is available on the parent row.
 

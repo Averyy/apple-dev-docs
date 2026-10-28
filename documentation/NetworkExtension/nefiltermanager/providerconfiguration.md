@@ -23,7 +23,7 @@ var providerConfiguration: NEFilterProviderConfiguration? { get set }
 @property (strong, nullable) NEFilterProviderConfiguration * providerConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is nil after calling `loadFromPreferencesWithCompletionHandler:`, then the filter configuration does not exist in the Network Extension preferences.
 

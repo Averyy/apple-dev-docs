@@ -24,7 +24,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The cluster annotation object automatically sets this string to the title of one of the annotations in its group.
 

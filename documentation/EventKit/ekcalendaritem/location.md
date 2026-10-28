@@ -24,7 +24,7 @@ var location: String? { get set }
 @property (nonatomic, copy, nullable) NSString * location;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the calendar item has no location.
 

@@ -21,7 +21,7 @@ A description of the grammatical properties of a string.
 @interface NSMorphology : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a morphology with an [`NSInflectionRule`](./nsinflectionrule.md) to specify how to interpret a specific word when inflecting an [`NSAttributedString`](./nsattributedstring.md). This affects grammatical agreement with traits like number and gender, as well as declaring the word’s part of speech.
 

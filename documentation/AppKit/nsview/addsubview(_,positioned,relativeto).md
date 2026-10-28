@@ -19,7 +19,7 @@ func addSubview(_ view: NSView, positioned place: NSWindow.OrderingMode, relativ
 - (void) addSubview:(NSView *) view positioned:(NSWindowOrderingMode) place relativeTo:(NSView *) otherView;
 ```
 
-#### Discussion
+## Discussion
 
 This method also sets the view as the next responder of `aView`.
 

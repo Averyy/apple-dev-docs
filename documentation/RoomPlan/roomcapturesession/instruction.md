@@ -21,7 +21,7 @@ enum Instruction
 
 - [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
-#### Overview
+## Overview
 
 Your app receives instructions through the [`captureSession(_:didProvide:)`](../roomcapturesessiondelegate/capturesession%28_,didprovide%29.md) callback that the framework suggests you display to the user, such as by presenting the recommendation in a textual label.
 

@@ -21,7 +21,7 @@ var nodeSnapshotCreationEnabled: Bool { get set }
 @property (nonatomic, getter=isNodeSnapshotCreationEnabled) BOOL nodeSnapshotCreationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating whether or not `window.webkit.createNodeSnapshot` is available.
 

@@ -21,7 +21,7 @@ The rating of the content that potentially plays while playing a resource.
 enum ContentRating
 ```
 
-#### Overview
+## Overview
 
 A nil value means no rating is available for this resource.
 

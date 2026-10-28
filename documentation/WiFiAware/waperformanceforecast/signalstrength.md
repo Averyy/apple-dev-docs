@@ -17,7 +17,7 @@ The estimated signal strength of the remote device.
 let signalStrength: Double?
 ```
 
-#### Discussion
+## Discussion
 
 The resulting value can be between `0.0` (weakest) and `1.0` (strongest), or it can be `nil` if the system can’t measure the value.
 

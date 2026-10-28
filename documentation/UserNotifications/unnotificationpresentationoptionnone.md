@@ -21,7 +21,7 @@ No alert.
 static const UNNotificationPresentationOptions UNNotificationPresentationOptionNone;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this constant when you want to silence any user interactions for a notification.
 

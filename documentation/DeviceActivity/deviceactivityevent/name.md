@@ -17,7 +17,7 @@ The unique name of an event.
 struct Name
 ```
 
-#### Overview
+## Overview
 
 `DeviceActivityEvent.Name` allows applications to associate an event with some of their own data.
 

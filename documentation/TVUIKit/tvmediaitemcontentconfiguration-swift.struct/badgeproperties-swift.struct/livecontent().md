@@ -15,7 +15,7 @@ Creates the default configuration for a badge representing live content.
 static func liveContent() -> TVMediaItemContentConfiguration.BadgeProperties
 ```
 
-#### Return Value
+## Return Value
 
 A new [`TVMediaItemContentConfiguration.BadgeProperties`](../badgeproperties-swift.struct.md) instance.
 

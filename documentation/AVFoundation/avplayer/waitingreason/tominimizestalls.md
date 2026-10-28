@@ -25,7 +25,7 @@ static let toMinimizeStalls: AVPlayer.WaitingReason
 extern AVPlayerWaitingReason const AVPlayerWaitingToMinimizeStallsReason;
 ```
 
-#### Discussion
+## Discussion
 
 Playback continues at the specified rate when conditions allow playback to begin without stalling. Playback also continues if the player item’s playback buffer is full and no further buffering of media data is possible.
 

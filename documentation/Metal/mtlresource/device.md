@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 A resource can only be used with the [`MTLDevice`](../mtldevice.md) that created it.
 

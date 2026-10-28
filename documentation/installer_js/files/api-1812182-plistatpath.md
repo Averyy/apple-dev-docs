@@ -11,7 +11,7 @@ Provides the contents of a given plist file.
 plistAtPath(filePath)
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary (associative array) with the contents of the identified plist file.
 

@@ -34,7 +34,7 @@ var groupName: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * groupName;
 ```
 
-#### Discussion
+## Discussion
 
 Use groups to organize task lists within your app. A group might correspond to a folder that contains related task lists. For example, the Reminders app uses groups to manage the task lists for different services. The group name should correspond to the user-visible name of the group in your app.
 

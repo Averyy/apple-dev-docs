@@ -25,11 +25,11 @@ init(code: INCreateTaskListIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INCreateTaskListIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the task list details into the [`createdTaskList`](./createdtasklist.md) property of the object.
 

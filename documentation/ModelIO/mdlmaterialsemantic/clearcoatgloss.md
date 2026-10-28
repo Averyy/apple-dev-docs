@@ -24,7 +24,7 @@ case clearcoatGloss
 MDLMaterialSemanticClearcoatGloss
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `clearCoatGloss` and `map_clearCoatGloss` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

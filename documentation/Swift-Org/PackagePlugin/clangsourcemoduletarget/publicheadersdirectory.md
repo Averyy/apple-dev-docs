@@ -20,7 +20,7 @@ The directory containing public C headers, if applicable.
 let publicHeadersDirectory: Path?
 ```
 
-#### Discussion
+## Discussion
 
 This will only be set for targets that have a directory of a public headers.
 

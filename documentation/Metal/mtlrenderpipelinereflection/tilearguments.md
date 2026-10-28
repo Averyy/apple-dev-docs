@@ -26,7 +26,7 @@ var tileArguments: [MTLArgument]? { get }
 @property (readonly, nullable) NSArray<MTLArgument *> * tileArguments;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLArgument`](../mtlargument.md) elements in the array are in the same order as the tile shader’s declaration signature.
 

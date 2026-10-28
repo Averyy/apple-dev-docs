@@ -13,11 +13,11 @@ virtual bool IsProtocolServiceSupported (
  void *serviceValue );
 ```
 
-#### Return Value
+## Return Value
 
 Will return true if the specified feature is supported by the protocol layer.
 
-#### Overview
+## Overview
 
 If the service has a value that must be returned, it will be returned in the serviceValue output parameter. See IOSCSIProtocolServices.h for more details regarding IsProtocolServiceSupported.
 

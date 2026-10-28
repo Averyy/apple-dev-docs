@@ -17,7 +17,7 @@ The visibility states for product promotion information.
 enum Visibility
 ```
 
-#### Overview
+## Overview
 
 Use the visibility states to set the [`visibility`](./visibility-swift.property.md) of a promoted in-app purchase. Call [`update()`](./update%28%29.md) to save your changes.
 

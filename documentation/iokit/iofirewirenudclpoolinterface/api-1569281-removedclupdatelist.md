@@ -14,7 +14,7 @@
 IOReturn (*RemoveDCLUpdateList)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

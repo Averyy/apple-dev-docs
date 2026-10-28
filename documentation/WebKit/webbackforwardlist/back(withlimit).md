@@ -19,7 +19,7 @@ func back(withLimit limit: Int32) -> [Any]!
 - (NSArray *) backListWithLimit:(int) limit;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing (at most) the specified number of items, or `nil` if no items precede the current item.
 

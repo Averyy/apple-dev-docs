@@ -24,7 +24,7 @@ func add(to runloop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) addToRunLoop:(NSRunLoop *) runloop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You can associate the display link with any of the [`RunLoop`](../../Foundation/runloop.md) modes, multiple input modes, or a custom mode. When the run loop is in `mode`, the display link notifies its delegate when the system prepares the next frame.
 

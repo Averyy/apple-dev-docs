@@ -21,7 +21,7 @@ The string the CSV file generator uses to represent nil values.
 var nilEncoding: String
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to an empty string.
 

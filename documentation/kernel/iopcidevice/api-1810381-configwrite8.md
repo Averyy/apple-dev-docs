@@ -13,7 +13,7 @@ void configWrite8(
  UInt8data )
 ```
 
-#### Overview
+## Overview
 
 This method write a 8-bit value to a configuration space register on the device.
 

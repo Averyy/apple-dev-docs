@@ -25,7 +25,7 @@ typealias AVMusicTimeStamp = Double
 typedef double AVMusicTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for all sequencer timeline-related methods. The tempo of the sequence determines the relationship between this value and time (in seconds).
 

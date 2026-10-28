@@ -25,7 +25,7 @@ class func supportedRevisions(for type: NLModel.ModelType) -> IndexSet
 + (NSIndexSet *) supportedRevisionsForType:(NLModelType) type;
 ```
 
-#### Return Value
+## Return Value
 
 An index set of version numbers.
 

@@ -23,7 +23,7 @@ func removeItem(_ item: any UIDynamicItem)
 - (void) removeItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 If the gravity behavior has an associated dynamic animator, this method notifies the dynamic animator of the removal of the item so that it can stop any associated animations.
 

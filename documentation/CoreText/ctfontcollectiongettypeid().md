@@ -25,7 +25,7 @@ func CTFontCollectionGetTypeID() -> CFTypeID
 extern CFTypeID CTFontCollectionGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The identifier for the opaque type CTFontCollection.
 

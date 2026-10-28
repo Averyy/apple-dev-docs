@@ -15,7 +15,7 @@ An object that represents the arrangement of seats, equipment, and counters arou
 struct TableSetup
 ```
 
-#### Overview
+## Overview
 
 To create a `TableSetup` object, pass an object that conforms to the [`Tabletop`](./tabletop.md) or [`EntityTabletop`](./entitytabletop.md) protocol to the [`init(tabletop:)`](./tablesetup/init%28tabletop%29-4cfut.md) initializer. For example, implement a `Table` structure that conforms to the `EntityTabletop` protocol and pass an instance of it to the initializer.
 

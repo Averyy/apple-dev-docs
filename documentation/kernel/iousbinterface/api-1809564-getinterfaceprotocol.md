@@ -9,11 +9,11 @@
 virtual UInt8 GetInterfaceProtocol();
 ```
 
-#### Return Value
+## Return Value
 
 the interface index
 
-#### Overview
+## Overview
 
 returns the protocol code (assigned by the USB).
 

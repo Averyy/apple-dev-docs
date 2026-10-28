@@ -16,7 +16,7 @@ kIOBDMediaTypeKey is a property of IOBDMedia objects. It has an OSString value.
 #define kIOBDMediaTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOBDMediaTypeKey property identifies the BD media type (BD-ROM, BD-R, BD-RE, etc). See the kIOBDMediaType contants for possible values.
 

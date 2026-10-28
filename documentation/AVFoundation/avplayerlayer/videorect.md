@@ -24,7 +24,7 @@ var videoRect: CGRect { get }
 @property (nonatomic, readonly) CGRect videoRect;
 ```
 
-#### Discussion
+## Discussion
 
 The size and position of a rectangle depends on the aspect ratio of the media (16:9 or 4:3), the layer’s [`bounds`](../../QuartzCore/calayer/bounds.md), and the value of its [`videoGravity`](./videogravity.md) property.
 

@@ -23,7 +23,7 @@ var kDNSServiceProtocol_TCP: Int { get }
 kDNSServiceProtocol_TCP
 ```
 
-#### Discussion
+## Discussion
 
 TCP protocol.
 

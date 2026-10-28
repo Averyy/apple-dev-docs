@@ -27,11 +27,11 @@ Available when `Failure` is `Never`.
 
 - [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 
-#### Return Value
+## Return Value
 
 A [`ConnectablePublisher`](../connectablepublisher.md) wrapping this publisher.
 
-#### Discussion
+## Discussion
 
 In the following example, [`makeConnectable()`](./makeconnectable%28%29.md) wraps its upstream publisher (an instance of [`Publishers.Share`](../publishers/share.md)) with a [`ConnectablePublisher`](../connectablepublisher.md). Without this, the first sink subscriber would receive all the elements from the sequence publisher and cause it to complete before the second subscriber attaches. By making the publisher connectable, the publisher doesn’t produce any elements until after the [`connect()`](../connectablepublisher/connect%28%29.md) call.
 

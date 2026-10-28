@@ -22,11 +22,11 @@ func handleRemediation(for flow: NEFilterFlow) -> NEFilterRemediationVerdict
 - (NEFilterRemediationVerdict *) handleRemediationForFlow:(NEFilterFlow *) flow;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NEFilterRemediationVerdict`](../nefilterremediationverdict.md) object indicating how the system should handle the flow of network content.
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user taps or clicks on the remediation link in the “block” web page in a WebKit browser object and the target of the remediation link is not set to a web page.
 

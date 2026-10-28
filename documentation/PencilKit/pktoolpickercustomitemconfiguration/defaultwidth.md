@@ -18,7 +18,7 @@ The default width for the tool.
 @property (nonatomic, assign) CGFloat defaultWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default width is `0`.
 

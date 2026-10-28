@@ -15,11 +15,11 @@ Creates a reference to a method invocation, containing the URL of the service, t
 WSMethodInvocationRef WSMethodInvocationCreate(CFURLRef url, CFStringRef methodName, CFStringRef protocol);
 ```
 
-#### Return Value
+## Return Value
 
 A `WSMethodInvocationRef` object that can be passed to `WSMethodInvocationInvoke` or scheduled with a run loop.
 
-#### Discussion
+## Discussion
 
 Creates a web services method invocation object. This is the fundamental object used when passing method parameters or settings, callbacks, or custom serializers or deserializers. This object may be executed synchronously using `WSMethodInvocationInvoke` or scheduled on a run loop for asynchronous execution using `WSMethodInvocationScheduleWithRunLoop`.
 

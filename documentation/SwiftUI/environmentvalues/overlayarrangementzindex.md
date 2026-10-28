@@ -21,7 +21,7 @@ The z-index for a view within an overlay arrangement view.
 var overlayArrangementZIndex: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to read the z-ordering of a view when it is placed in an overlay arrangement. Views with a higher z-index are rendered on top of views with a lower z-index.
 

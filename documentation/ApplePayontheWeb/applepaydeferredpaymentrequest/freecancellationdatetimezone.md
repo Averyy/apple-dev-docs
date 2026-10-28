@@ -16,7 +16,7 @@ The time zone at the destination location of the payment.
 DOMString freeCancellationDateTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 For a hotel booking, for example, this refers to the local time zone of the hotel. On the payment sheet, this is the time zone the framework uses to format the cancellation date. If you set the `freeCancellationDateTimeZone` date, you need to set [`freeCancellationDate`](./freecancellationdate.md) as well.
 

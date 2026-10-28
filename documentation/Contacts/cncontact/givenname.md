@@ -32,7 +32,7 @@ var givenName: String { get }
 @property (atomic, copy, readonly) NSString * givenName;
 ```
 
-#### Discussion
+## Discussion
 
 The given name is often known as the first name of the contact.
 

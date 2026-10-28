@@ -19,7 +19,7 @@ func setOn(_ on: Bool)
 - (void) setOn:(BOOL) on;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to set the value of a switch. If you want to know the value of a switch, use a local variable to track that information.
 

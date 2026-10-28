@@ -19,11 +19,11 @@ func unmountAndEjectDevice(atPath path: String) -> Bool
 - (BOOL) unmountAndEjectDeviceAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the system unmounted the device; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When this method begins, it posts an [`willUnmountNotification`](./willunmountnotification.md) to the `NSWorkspace` object’s notification center. When it is finished, it posts an [`didUnmountNotification`](./didunmountnotification.md).
 

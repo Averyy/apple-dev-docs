@@ -23,7 +23,7 @@ case storeBusy
 ASCredentialIdentityStoreErrorCodeStoreBusy
 ```
 
-#### Discussion
+## Discussion
 
 Attempt the operation again at a later time.
 

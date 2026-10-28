@@ -21,7 +21,7 @@ class var defaultCaptureSoundDisabled: Bool { get set }
 @property (class, nonatomic, readwrite) BOOL defaultCaptureSoundDisabled;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, you must handle sound playback for capture events manually using the [`play(_:)`](../avcaptureevent/play%28_%29.md) method.
 

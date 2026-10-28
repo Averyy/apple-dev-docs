@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 SwiftPM 5.4 includes several improvements, all of which are opt-in based on specifying a tools version of 5.4.
 
-##### Executable targets
+### Executable targets
 
 Swift packages that specify a 5.4 tools version can now explicitly declare targets as executable, which allows the use of the `@main` keyword in package code.
 
@@ -18,11 +18,11 @@ This is done by declaring the target using `executableTarget()` in the package m
 
 The compiler still applies its usual rules when compiling an executable module, so a single target cannot, for example, have a file named `main.swift` and another file that uses `@main`.
 
-##### Automatic test discovery
+### Automatic test discovery
 
 Automatic test discovery is now the default on all platforms, removing the need in `LinuxMain.swift`, which has been deprecated. This file is still honored if it is present.
 
-##### More flexible tools version formatting
+### More flexible tools version formatting
 
 `Package` manifests can now have any combination of leading whitespace characters before the tools version comment. This allows more flexibility in formatting manifests.
 
@@ -30,7 +30,7 @@ Specifically, the Swift tools version specification in each manifest file now ac
 
 All [Unicode line terminators](https://www.unicode.org/reports/tr14/) are now recognised in `Package` manifests. This ensures correctness in parsing manifests that are edited and/or built on many non-Unix-like platforms that use ASCII or Unicode encodings.
 
-##### Package dependency caching
+### Package dependency caching
 
 Swift Package Manager now caches package dependency repositories on a per-user basis, which reduces the amount of network traffic and increases performance of dependency resolution for subsequent uses of the same package.
 

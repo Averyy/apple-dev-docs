@@ -22,7 +22,7 @@ optional func colorPickerViewController(_ viewController: UIColorPickerViewContr
 - (void) colorPickerViewController:(UIColorPickerViewController *) viewController didSelectColor:(UIColor *) color continuously:(BOOL) continuously;
 ```
 
-#### Discussion
+## Discussion
 
 A continuous selection is always followed by a noncontinuous one when the user finishes the gesture. Apps that support undoing should update their UI for all color changes but only undo to noncontinuous color changes.
 

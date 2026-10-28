@@ -19,7 +19,7 @@ var isEnvironmentalSoundMeasurementsEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isEnvironmentalSoundMeasurementsEnabled) BOOL environmentalSoundMeasurementsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Environmental Sound Measurements
 

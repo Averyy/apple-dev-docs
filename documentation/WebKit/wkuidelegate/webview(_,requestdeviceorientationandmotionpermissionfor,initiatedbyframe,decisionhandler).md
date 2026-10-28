@@ -22,7 +22,7 @@ optional func webView(_ webView: WKWebView, requestDeviceOrientationAndMotionPer
 - (void) webView:(WKWebView *) webView requestDeviceOrientationAndMotionPermissionForOrigin:(WKSecurityOrigin *) origin initiatedByFrame:(WKFrameInfo *) frame decisionHandler:(void (^)(enum WKPermissionDecision)) decisionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method in your delegate, the system returns [`WKPermissionDecision.prompt`](../wkpermissiondecision/prompt.md).
 

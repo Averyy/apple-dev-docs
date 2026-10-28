@@ -20,9 +20,9 @@ The status item that reports the device’s software update device ID.
 object StatusSoftwareUpdateDeviceID
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ object StatusSoftwareUpdateDeviceID
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

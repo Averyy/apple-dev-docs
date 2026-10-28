@@ -21,11 +21,11 @@ Returns the position in the given UTF-8 view that corresponds exactly to this in
 func samePosition(in utf8: String.UTF8View) -> String.UTF8View.Index?
 ```
 
-#### Return Value
+## Return Value
 
 The position in `utf8` that corresponds exactly to this index. If this index does not have an exact corresponding position in `utf8`, this method returns `nil`. For example, an attempt to convert the position of a UTF-16 trailing surrogate returns `nil`.
 
-#### Discussion
+## Discussion
 
 This example first finds the position of the character `"é"`, and then uses this method find the same position in the string’s `utf8` view.
 

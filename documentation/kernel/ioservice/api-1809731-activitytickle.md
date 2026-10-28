@@ -13,11 +13,11 @@ virtual bool activityTickle(
  unsigned long stateNumber = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 When `type` is `kIOPMSuperclassPolicy1`, the superclass returns `true` if the device is currently in the state specified by `stateNumber`. If the device is in a lower state and must be powered up, the superclass returns `false`; in this case the superclass will initiate a power change to power the device up.
 
-#### Overview
+## Overview
 
 The `activityTickle` method is provided for objects in the system (or for the driver itself) to tell a driver that its device is being used. The IOService superclass can manage idleness determination with a simple idle timer mechanism and this `activityTickle` call. To start this up, the driver calls its superclass's `setIdleTimerPeriod`. This starts a timer for the time interval specified in the call. When the timer expires, the superclass checks to see if there has been any activity since the last timer expiration. (It checks to see if `activityTickle` has been called). If there has been activity, it restarts the timer, and this process continues. When the timer expires, and there has been no device activity, the superclass lowers the device power state to the next lower state. This can continue until the device is in state zero. After the device has been powered down by at least one power state, a subsequent call to `activityTickle` causes the device to be switched to a higher state required for the activity. If the driver is managing the idleness determination totally on its own, the value of the `type` parameter should be `kIOPMSubclassPolicy`, and the driver should override the `activityTickle` method. The superclass IOService implementation of `activityTickle` does nothing with the `kIOPMSubclassPolicy` argument.
 

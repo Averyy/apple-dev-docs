@@ -24,7 +24,7 @@ func startTimeOfInput(toFilter startTime: UnsafeMutablePointer<CMTime>!)
 
 - [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Discussion
+## Discussion
 
 In Motion, this value represents the start time of the clip to which the user applies the effect, relative to the timeline time. This start time accounts for any trimming or retiming. It is the start time on the timeline of the first visible frame of the object.
 

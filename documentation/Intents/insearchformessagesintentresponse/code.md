@@ -31,7 +31,7 @@ var code: INSearchForMessagesIntentResponseCode { get }
 @property (atomic, readonly) INSearchForMessagesIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 This propertyue’s val is set at initialization and it can’t be changed later.
 

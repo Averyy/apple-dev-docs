@@ -20,7 +20,7 @@ var ES_PROC_CHECK_TYPE_PIDFILEPORTINFO: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_PIDFILEPORTINFO
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_pidfileportinfo` function from `libproc.h`.
 

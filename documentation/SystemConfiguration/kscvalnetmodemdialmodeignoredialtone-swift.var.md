@@ -19,7 +19,7 @@ let kSCValNetModemDialModeIgnoreDialTone: CFString
 extern CFStringRef const kSCValNetModemDialModeIgnoreDialTone;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetModemDialMode`](./kscpropnetmodemdialmode-swift.var.md) key.
 

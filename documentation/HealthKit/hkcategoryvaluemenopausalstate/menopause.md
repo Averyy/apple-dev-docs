@@ -28,7 +28,7 @@ HKCategoryValueMenopausalStateMenopause
 
 - [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
 
-#### Discussion
+## Discussion
 
 Menopause is clinically defined as occurring 12 consecutive months after the last menstrual period. This value records a point-in-time entry that menopause applies at the specified date.
 

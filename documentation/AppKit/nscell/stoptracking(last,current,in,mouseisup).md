@@ -19,7 +19,7 @@ func stopTracking(last lastPoint: NSPoint, current stopPoint: NSPoint, in contro
 - (void) stopTracking:(NSPoint) lastPoint at:(NSPoint) stopPoint inView:(NSView *) controlView mouseIsUp:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The default `NSCell` implementation of [`trackMouse(with:in:of:untilMouseUp:)`](./trackmouse%28with,in,of,untilmouseup%29.md) invokes this method when the cursor has left the bounds of the receiver or the mouse button goes up. The default `NSCell` implementation of this method does nothing. Subclasses often override this method to provide customized tracking behavior. The following example increments the state of a tristate cell when the mouse button is clicked:
 

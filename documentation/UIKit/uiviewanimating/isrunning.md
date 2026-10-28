@@ -24,7 +24,7 @@ var isRunning: Bool { get }
 @property (nonatomic, readonly, getter=isRunning) BOOL running;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects whether the animation is running either in the forward or reverse direction. The value of this property is [`true`](../../Swift/true.md) only after a call to the [`startAnimation()`](./startanimation%28%29.md) method. The value is [`false`](../../Swift/false.md) when the animator is paused or stopped.
 

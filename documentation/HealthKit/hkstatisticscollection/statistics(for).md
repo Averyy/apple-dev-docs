@@ -24,7 +24,7 @@ func statistics(for date: Date) -> HKStatistics?
 - (HKStatistics *) statisticsForDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 A statistics object for the time interval containing the provided date. If there are no samples for the selected time interval, the statistics object has a `nil`-valued quantity.
 

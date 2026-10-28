@@ -24,7 +24,7 @@ let AVVideoExpectedSourceFrameRateKey: String
 extern NSString * const AVVideoExpectedSourceFrameRateKey;
 ```
 
-#### Discussion
+## Discussion
 
 This is not used to control the frame rate; it is provided as a hint to the video encoder so that it can set up internal configuration before compression begins. The actual frame rate  depends on frame duration and may vary. This should be set if an auto level [`AVVideoProfileLevelKey`](./avvideoprofilelevelkey.md) is used, or if the source content has a high frame rate higher than 30 fps. The encoder might have to drop frames to satisfy bit stream requirements if this key is not specified.
 

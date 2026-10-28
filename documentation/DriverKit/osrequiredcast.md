@@ -18,11 +18,11 @@ Casts the object to the specified type, stopping the process if the object isnâ€
 #define OSRequiredCast(type, inst)
 ```
 
-#### Return Value
+## Return Value
 
 The object cast to the specified type.
 
-#### Discussion
+## Discussion
 
 Use this macro when you require the object to be the specified type, and you are sure that itâ€™s the specified type. The following example shows how to cast some object to the [`OSString`](./osstring.md) class. If the object cannot be cast to a string, the macro terminates the process.
 

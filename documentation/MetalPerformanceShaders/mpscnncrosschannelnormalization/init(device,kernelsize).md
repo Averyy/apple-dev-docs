@@ -24,7 +24,7 @@ init(device: any MTLDevice, kernelSize: Int)
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelSize:(NSUInteger) kernelSize;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSCNNCrossChannelNormalization`](../mpscnncrosschannelnormalization.md) object or `nil`, if failure.
 

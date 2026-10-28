@@ -19,13 +19,13 @@ func VTRegisterProfessionalVideoWorkflowVideoDecoders()
 extern void VTRegisterProfessionalVideoWorkflowVideoDecoders();
 ```
 
-#### Discussion
+## Discussion
 
 This function loads the video decoders within the client’s `/Library/Video/Professional Video Workflow Plug-Ins/` directory, if any are present. Additionally, calling this function indicates to Video Toolbox that your app supports [MediaExtension](../MediaExtension/MediaExtension.md) video decoders. Any associated video RAW Processors will also be supported as well.
 
 > **Note**: This functionality is only intended for apps that support professional video workflows. It isn’t recommended for network-facing applications such as web browsers, messaging clients, mail clients, and so on.
 
-##### Apple Afterburner Acceleration
+### Apple Afterburner Acceleration
 
 Apple Afterburner is an accelerator card for the Mac Pro (2019), created to enhance Apple ProRes and ProRes RAW workflows for film and video professionals. Afterburner accelerates decoding and playback of multiple streams of ProRes and Pro Res RAW video files.
 

@@ -23,7 +23,7 @@ var optionalPermissions: Set<WKWebExtension.Permission> { get }
 @property (nonatomic, copy, readonly) NSSet<NSString *> * optionalPermissions;
 ```
 
-#### Discussion
+## Discussion
 
 These permissions can be requested by the extension at a later time.
 

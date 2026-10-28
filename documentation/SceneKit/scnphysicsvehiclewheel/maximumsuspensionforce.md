@@ -25,7 +25,7 @@ var maximumSuspensionForce: CGFloat { get set }
 @property CGFloat maximumSuspensionForce;
 ```
 
-#### Discussion
+## Discussion
 
 The physics simulation applies a force of no greater than this magnitude when contact with the ground causes the wheel to move relative to the vehicle. The default maximum suspension force is `6000.0`.
 

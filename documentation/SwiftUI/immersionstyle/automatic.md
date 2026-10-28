@@ -19,7 +19,7 @@ static var automatic: AutomaticImmersionStyle { get }
 
 Available when `Self` is `AutomaticImmersionStyle`.
 
-#### Discussion
+## Discussion
 
 The system uses this style for an [`ImmersiveSpace`](../immersivespace.md) if you don’t provide an [`immersionStyle(selection:in:)`](../scene/immersionstyle%28selection,in%29.md) scene modifier. You don’t typically specify the `automatic` style explicitly.
 

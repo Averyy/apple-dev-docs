@@ -21,7 +21,7 @@ optional func legibleMenuController(_ menuController: AVLegibleMediaOptionsMenuC
 - (void) legibleMenuController:(AVLegibleMediaOptionsMenuController *) menuController didRequestCaptionPreviewForProfileID:(NSString *) profileID;
 ```
 
-#### Discussion
+## Discussion
 
 Called when a caption preview should be displayed
 

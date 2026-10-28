@@ -19,7 +19,7 @@ nonisolated
 struct ToolbarOverflowMenu<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 An overflow menu represents actions that are always placed in the toolbar’s overflow menu, regardless of the toolbar mode, platform, or customizability.
 

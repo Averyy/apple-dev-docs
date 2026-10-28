@@ -25,11 +25,11 @@ func CFRunLoopGetCurrent() -> CFRunLoop!
 extern CFRunLoopRefCFRunLoopGetCurrent();
 ```
 
-#### Return Value
+## Return Value
 
 Current thread’s run loop. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 Each thread has exactly one run loop associated with it.
 

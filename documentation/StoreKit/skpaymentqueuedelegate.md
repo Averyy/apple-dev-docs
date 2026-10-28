@@ -27,7 +27,7 @@ protocol SKPaymentQueueDelegate : NSObjectProtocol
 @protocol SKPaymentQueueDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol includes a method that lets your app determine whether to continue a transaction if the customer’s App Store storefront changes.
 

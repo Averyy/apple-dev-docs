@@ -22,11 +22,11 @@ nonisolated
 func overlayPreferenceValue<K, V>(_ key: K.Type, alignment: Alignment = .center, @ContentBuilder _ transform: @escaping (K.Value) -> V) -> some View where K : PreferenceKey, V : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that layers a second view in front of the view.
 
-#### Discussion
+## Discussion
 
 The values of the preference key from both views are combined and made visible to the parent view.
 

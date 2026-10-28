@@ -20,11 +20,11 @@ static boolean supportsVersion();
 
 - [Apple Pay on the Web Version 4 Release Notes](../apple-pay-on-the-web-version-4-release-notes.md)
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the web browser (Safari) supports a particular Apple Pay version. Returns `false` if the web browser does not support the specified version.
 
-#### Discussion
+## Discussion
 
 Apple increments the Apple Pay version number when adding new functionality that is not backward compatible with previous versions of Safari. The same Apple Pay version number applies to both Apple Pay JS and Payment Request APIs.
 

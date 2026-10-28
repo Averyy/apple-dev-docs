@@ -13,7 +13,7 @@
 IFNET_FAMILY_DISC = 8
 ```
 
-#### Discussion
+## Discussion
 
 A DISC interface.
 

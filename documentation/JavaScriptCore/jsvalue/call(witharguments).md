@@ -24,11 +24,11 @@ func call(withArguments arguments: [Any]!) -> JSValue!
 - (JSValue *) callWithArguments:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 The result of calling the value as a function, or `nil` if the value cannot be treated as a JavaScript function.
 
-#### Discussion
+## Discussion
 
 In JavaScript, if a function does not explicitly return a value, it implicitly returns the value `undefined`—use the [`isUndefined`](./isundefined.md) property to test for this result.
 

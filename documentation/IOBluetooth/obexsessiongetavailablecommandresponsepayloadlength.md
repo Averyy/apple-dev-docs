@@ -15,11 +15,11 @@ Gets space available for your data for a particular command response you are try
 OBEXError OBEXSessionGetAvailableCommandResponsePayloadLength(OBEXSessionRef inSessionRef, OBEXOpCode inOpCode, OBEXMaxPacketLength *outLength);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 The OBEXSession takes care of packaging OBEX opcodes and other information into the proper packet format, allowing you to focus on sending the proper OBEX headers in your commands and command responses. This formatting and datas requires a small bit of information that varies depending on what command or response you are sending. Thus, you should call this function to find out how much space will be left for your headers before you send the command, allowing you to properly chop up your headers before sending them. This will guarantee that (a) you use up all the available space in a packet and (b) that you do not get an error trying to send too much information at once.
 

@@ -20,7 +20,7 @@ var isSelected: Bool { get }
 @property (readonly, getter=isSelected) BOOL selected;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if preference pane is currently selected by user, [`false`](../../Swift/false.md) otherwise.
 

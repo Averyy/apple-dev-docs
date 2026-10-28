@@ -14,7 +14,7 @@ IOReturn ( *CreateStreamInterface)(
    IOStreamRef *streamRef);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the stream was successfully stopped from the run loop.
 

@@ -20,11 +20,11 @@ optional func control(_ control: NSControl, textView: NSTextView, doCommandBy co
 - (BOOL) control:(NSControl *) control textView:(NSTextView *) textView doCommandBySelector:(SEL) commandSelector;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the delegate object handles the key binding; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 These bindings are usually implemented as methods (`command`) defined in the `NSResponder` class; examples of such key bindings are arrow keys (for directional movement) and the Escape key (for name completion). By implementing this method, the delegate can override the default implementation of `command` and supply its own behavior.
 

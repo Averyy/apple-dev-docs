@@ -17,7 +17,7 @@ An error that indicates the current OS version isn’t supported.
 case osVersionNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 Your app needs to ask the user to update to the latest version of iOS.
 

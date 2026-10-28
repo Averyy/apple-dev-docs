@@ -20,7 +20,7 @@ var triangleCount: Int { get }
 @property (nonatomic, readonly) NSUInteger triangleCount;
 ```
 
-#### Discussion
+## Discussion
 
 Each set of three indices forms a triangle, so the number of indices in the [`triangleIndices`](./triangleindices-1azi3.md) buffer is three times the [`triangleCount`](./trianglecount.md) value.
 

@@ -17,7 +17,7 @@ The system status bar.
 static var statusBar: ToolbarPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use with [`toolbarVisibility(_:for:)`](../view/toolbarvisibility%28_,for%29.md) to hide the status bar, or with [`toolbarColorScheme(_:for:)`](../view/toolbarcolorscheme%28_,for%29.md) to specify the preferred status bar style.
 

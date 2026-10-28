@@ -19,7 +19,7 @@ An entitlement that enables an app to vend other apps as an alternative app mark
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 The system requires that your app have this entitlement to implement an app marketplace and install other apps using [MarketplaceKit](../../MarketplaceKit/MarketplaceKit.md). Apple approves your use of this entitlement based on a set of criteria. To request the entitlement, see [Participating in alternative distribution for specific regions](../../MarketplaceKit/participating-in-alternative-distribution-for-specific-regions.md). For more information, see [Creating an alternative app marketplace](../../MarketplaceKit/creating-an-alternative-app-marketplace.md).
 

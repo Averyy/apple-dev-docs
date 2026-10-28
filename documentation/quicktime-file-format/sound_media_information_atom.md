@@ -6,7 +6,7 @@
 
 An atom that contains a number of other atoms that define specific characteristics of the sound media data.
 
-#### Overview
+## Overview
 
 Sound media information atoms are the highest-level atoms in sound media. These atoms contain a number of other atoms that define specific characteristics of the sound media data.
 

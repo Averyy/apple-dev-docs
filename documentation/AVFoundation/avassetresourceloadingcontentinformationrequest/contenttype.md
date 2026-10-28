@@ -24,7 +24,7 @@ var contentType: String? { get set }
 @property (nonatomic, copy, nullable) NSString * contentType;
 ```
 
-#### Discussion
+## Discussion
 
 Before finishing loading an [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md) instance, if its [`contentInformationRequest`](../avassetresourceloadingrequest/contentinformationrequest.md) property is  not `nil`, set the value of this property to a UTI indicating the type of data contained by the requested resource.
 

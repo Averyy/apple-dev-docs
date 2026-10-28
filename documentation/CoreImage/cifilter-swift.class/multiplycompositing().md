@@ -28,11 +28,11 @@ class func multiplyCompositing() -> any CIFilter & CICompositeOperation
 
 - [Simulating Scratchy Analog Film](../simulating-scratchy-analog-film.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the multiply compositing filter to an image. The effect calculates the color value of the output image by multiplying the color values from the input image and the background image.
 

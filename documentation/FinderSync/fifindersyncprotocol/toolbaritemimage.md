@@ -20,7 +20,7 @@ optional var toolbarItemImage: NSImage { get }
 @property (copy, readonly) NSImage * toolbarItemImage;
 ```
 
-#### Discussion
+## Discussion
 
 To add a toolbar item to the Finder, override the getter method for the toolbar image, name, and tooltip properties.
 

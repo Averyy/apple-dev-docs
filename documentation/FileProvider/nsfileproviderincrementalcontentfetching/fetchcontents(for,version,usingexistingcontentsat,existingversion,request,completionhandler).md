@@ -24,11 +24,11 @@ func fetchContents(for itemIdentifier: NSFileProviderItemIdentifier, version req
 - (NSProgress *) fetchContentsForItemWithIdentifier:(NSFileProviderItemIdentifier) itemIdentifier version:(NSFileProviderItemVersion *) requestedVersion usingExistingContentsAtURL:(NSURL *) existingContents existingVersion:(NSFileProviderItemVersion *) existingVersion request:(NSFileProviderRequest *) request completionHandler:(void (^)(NSURL *fileContents, NSFileProviderItem item, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An item that tracks the extension’s progress.
 
-#### Discussion
+## Discussion
 
 Implement this method to optimize downloading changes. Rather than downloading an entire new copy of the item, you can download just the changes from your remote storage.
 

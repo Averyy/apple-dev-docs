@@ -23,7 +23,7 @@ An activation function that returns its input multiplied by a scale and added to
 case linearWithBias(alpha: Float, beta: Float)
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

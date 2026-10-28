@@ -24,7 +24,7 @@ var dataLayout: MPSGraphTensorNamedDataLayout { get set }
 @property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout dataLayout;
 ```
 
-#### Discussion
+## Discussion
 
 It defines the order of named dimensions (Batch, Channel, Height, Width). The convolution operation uses this to interpret data in the source tensor. For example, if `dataLayout` is `MPSGraphTensorNamedDataLayoutNCHW`, frameork interprets data in source tensor as `batch x channels x height x width` with `width` as fastest moving dimension.
 

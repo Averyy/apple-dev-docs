@@ -19,7 +19,7 @@ case clear
 NSCompositingOperationClear
 ```
 
-#### Discussion
+## Discussion
 
 The formula `R = 0` is applied.
 

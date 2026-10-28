@@ -20,7 +20,7 @@ Finishes analysis once input for a given time is consumed.
 final func finish(after: CMTime) async throws
 ```
 
-#### Discussion
+## Discussion
 
 In most cases, you can call [`finalizeAndFinish(through:)`](./finalizeandfinish%28through%29.md) or [`cancelAndFinishNow()`](./cancelandfinishnow%28%29.md) instead. Those methods also finish analysis.
 

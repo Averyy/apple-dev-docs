@@ -24,11 +24,11 @@ func CFHTTPMessageCopyAllHeaderFields(_ message: CFHTTPMessage) -> Unmanaged<CFD
 extern CFDictionaryRefCFHTTPMessageCopyAllHeaderFields(CFHTTPMessageRef message);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFDictionaryRef` object containing keys and values that are `CFStringRef` objects, where the key is the header fieldname and the dictionary value is the header field’s value. Returns `NULL` if the header fields could not be copied. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 HTTP headers are case insensitive. To simplify your code, certain header field names are canonicalized into their standard form. For example, if the server sends a `content-length` header, it is automatically adjusted to be `Content-Length`.
 

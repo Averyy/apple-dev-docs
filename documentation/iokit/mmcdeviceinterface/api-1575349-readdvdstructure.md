@@ -16,11 +16,11 @@ Issues a READ_DVD_STRUCTURE command to the device as defined in MMC-2.
 IOReturn (*ReadDVDStructure)(void *self, SCSICmdField4Byte ADDRESS, SCSICmdField1Byte LAYER_NUMBER, SCSICmdField1Byte FORMAT, void *buffer, SCSICmdField2Byte bufferSize, SCSITaskStatus *taskStatus, SCSI_Sense_Data *senseDataBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNoMemory if a SCSITask couldn't be created, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened the client may send this command to read information about DVD specific structures on the disc.
 

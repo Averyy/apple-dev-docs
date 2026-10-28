@@ -21,7 +21,7 @@ static let unsupportedFileSystem: AVExternalStorageDevice.ReasonNotRecommendedFo
 extern AVExternalStorageDeviceReasonNotRecommendedForCaptureUse AVExternalStorageDeviceReasonNotRecommendedForCaptureUseUnsupportedFileSystem;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the storage device is not recommended for capture as it is not a supported file system.
 

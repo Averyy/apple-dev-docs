@@ -18,7 +18,7 @@ case floatingWindow
 kCGFloatingWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for floating windows.
 

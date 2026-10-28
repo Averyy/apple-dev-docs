@@ -24,7 +24,7 @@ var start: GLfloat { get set }
 @property (nonatomic, assign) GLfloat start;
 ```
 
-#### Discussion
+## Discussion
 
 This property is ignored when the [`mode`](./mode.md) property is set to [`GLKFogMode.exp`](../glkfogmode/exp.md) or [`GLKFogMode.exp2`](../glkfogmode/exp2.md).
 

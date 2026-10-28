@@ -18,7 +18,7 @@ Gets the dispatch queue with the specified name from the current service.
 virtual kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispatchQueue **queue);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 

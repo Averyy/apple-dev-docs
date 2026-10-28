@@ -20,7 +20,7 @@ Returns the asynchronous sequence of messages that contain a generic data object
 final func messages(of type: Data.Type) -> GroupSessionMessenger.Messages<Data>
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to receive the messages that other participants send to the group. This method returns a [`GroupSessionMessenger.Messages`](./messages.md) structure, which conforms to the `AsyncSequence` protocol. This sequence contains all, some, or none of the messages sent over time. You retrieve messages by iterating over them using an asynchronous `for`-`in` loop, as shown in the following example:
 

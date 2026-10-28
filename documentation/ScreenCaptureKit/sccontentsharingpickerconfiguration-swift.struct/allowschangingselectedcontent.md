@@ -16,7 +16,7 @@ A Boolean value that indicates if the present stream can change to a different s
 var allowsChangingSelectedContent: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

@@ -8,7 +8,7 @@ An atom that expresses profiles or feature codes for features that occur in the 
 
 > **Deprecated**: Profile atoms are deprecated in the QuickTime file format. The information that follows documents existing content containing profile atoms and should not be used for new development.
 
-#### Overview
+## Overview
 
 - **Atom type**: `'prfl'`
 - **Container**: Movie atom (`'moov'`) or track atom (`'trak'`)
@@ -46,7 +46,7 @@ The following table shows the layout of the profile atom.
 | [`Number of feature entries`](./profile_atom/number_of_feature_entries.md) | 4 |
 | [`Feature entries`](./profile_atom/feature_entries.md) | `n` x 32 |
 
-#### Syntax
+## Syntax
 
 ```c
 aligned(8) class ProfileAtom
@@ -61,7 +61,7 @@ aligned(8) class ProfileAtom
 }
 ```
 
-#### Semantics
+## Semantics
 
 The profile atom is a full atom, so it has an 8-bit version and 24 bits of flags. For this specification, the version is `0` and the flags have the value `0`. A reader compliant with this specification should treat any profile atom with a nonzero version value as if it did not exist.
 

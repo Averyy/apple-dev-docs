@@ -25,11 +25,11 @@ func CFReadStreamSetClient(_ stream: CFReadStream!, _ streamEvents: CFOptionFlag
 extern Boolean CFReadStreamSetClient(CFReadStreamRef stream, CFOptionFlags streamEvents, CFReadStreamClientCallBack clientCB, CFStreamClientContext *clientContext);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the stream supports asynchronous notification, otherwise `FALSE`.
 
-#### Discussion
+## Discussion
 
 To avoid polling and blocking, you can register a client to hear about interesting events that occur on a stream. Only one client per stream is allowed; registering a new client replaces the previous one.
 

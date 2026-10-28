@@ -21,11 +21,11 @@ A reference to arbitrary data with a specific media type.
 object AssetData
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asset.data` as the declaration type.
 
-##### Asset example
+### Asset example
 
 ```json
 {

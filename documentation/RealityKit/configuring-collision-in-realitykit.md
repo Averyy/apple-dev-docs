@@ -12,7 +12,7 @@ Use collision groups and collision filters to control which objects collide.
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 By default, in RealityKit physics simulations, all physics objects collide with all other physics objects. Often, this is the desired behavior, but sometimes, you need to specify that certain objects won’t collide with certain other objects. In RealityKit, that’s accomplished using [`CollisionGroup`](./collisiongroup.md) in combination with [`CollisionFilter`](./collisionfilter.md).
 
@@ -51,7 +51,7 @@ After creating a collision filter, assign it to all the entities that should use
     cube3.collision?.filter = cubeFilter
 ```
 
-#### Getting Started
+## Getting Started
 
 Requires Xcode 16.2, iOS 18, and an iOS device with an A9 or later processor. ARKit is not supported in iOS Simulator.
 

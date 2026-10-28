@@ -21,7 +21,7 @@ Creates a new instance from the given value, if it can be represented exactly.
 init?<Source>(exactly value: Source) where Source : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 If the given floating-point value cannot be represented exactly, the result is `nil`.
 

@@ -10,7 +10,7 @@ Use Model I/O and vImage to composite a photograph over a computer-generated sky
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 The [Model I/O](../ModelIO/ModelIO.md) framework provides the [`MDLTexture`](../ModelIO/mdltexture.md) class and its subclasses to generate procedural textures such as noise, normal maps, and realistic sky boxes.  This sample code project uses an [`MDLSkyCubeTexture`](../ModelIO/mdlskycubetexture.md) instance to generate a physically realistic simulation of a sunlit sky. The code uses the generated sky image as the background and a photograph of a building as the foreground.
 
@@ -20,7 +20,7 @@ The image below shows the final composition:
 
 Using the UI, someone can define the parameters that control the sky simulation such as upper atmosphere scattering and sun elevation. Before exploring the code, try building and running the app to get familiar with the effect of the different parameters on the image.
 
-##### Create the sky texture generator
+### Create the sky texture generator
 
 The `ImageProvider` class declares constants for the source image’s dimensions and the [`MDLSkyCubeTexture`](../ModelIO/mdlskycubetexture.md) instance named `skyGenerator`:
 
@@ -47,7 +47,7 @@ skyGenerator = MDLSkyCubeTexture(name: nil,
                                  groundAlbedo: 0)
 ```
 
-##### Update the sky texture generator parameters
+### Update the sky texture generator parameters
 
 With each change to the SwiftUI [`Picker`](../SwiftUI/picker.md) controls that define the sky generator parameters, the app calls the `renderSky()` function. The function sets the sky generator parameters and calls [`update()`](../ModelIO/mdlskycubetexture/update%28%29.md) to generate new texel data:
 
@@ -60,7 +60,7 @@ skyGenerator.groundAlbedo = groundAlbedo
 skyGenerator.update()
 ```
 
-##### Create the composite image
+### Create the composite image
 
 The [`texelDataWithTopLeftOrigin()`](../ModelIO/mdltexture/texeldatawithtopleftorigin%28%29.md) method returns the sky generator’s image data organized such that its first pixel represents the top-left corner of the image. This layout matches the [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) layout. The code passes the texel data to the [`withUnsafeBytes(_:)`](../Foundation/data/withunsafebytes%28_%29.md) function to work with the underlying bytes of the data’s contiguous storage.
 

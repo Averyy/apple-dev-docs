@@ -15,7 +15,7 @@ The creative spec fields that can be updated after creation.
 object CreativeUpdate.CreativeSpec
 ```
 
-#### Discussion
+## Discussion
 
 See [`CreativeCreate.CreativeSpec`](../creativecreate/creativespec-data.dictionary.md) for the full field reference.
 

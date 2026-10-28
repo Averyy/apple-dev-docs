@@ -17,7 +17,7 @@ Modally present UI which allows the user to select which contacts your app has a
 @preconcurrency func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: @escaping ([String]) -> Void = { _ in }) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This API should only be used when your app has “Limited” authorization.  See `CNAuthorizationStatus` and `CNContactStore/authorizationStatus(for:)`.  The completion handler will be invoked with an empty result if your app doesn’t have the correct authorization status.
 

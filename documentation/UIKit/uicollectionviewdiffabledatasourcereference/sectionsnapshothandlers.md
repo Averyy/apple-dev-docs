@@ -24,7 +24,7 @@ var sectionSnapshotHandlers: __UICollectionViewDiffableDataSourceSectionSnapshot
 @property (nonatomic, copy) UICollectionViewDiffableDataSourceSectionSnapshotHandlers<id> * sectionSnapshotHandlers;
 ```
 
-#### Discussion
+## Discussion
 
 Provide section snapshot handlers to support the expanding or collapsing of items in your collection view.
 

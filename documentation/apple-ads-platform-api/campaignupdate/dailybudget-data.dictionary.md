@@ -15,7 +15,7 @@ Request wrapper for updating a campaign’s daily budget amount.
 object CampaignUpdate.DailyBudget
 ```
 
-#### Discussion
+## Discussion
 
 To change a campaign’s daily spend cap, use this object. Submitting a new value replaces the current daily budget outright and doesn’t affect `sharedBudgets`, which are managed independently.
 

@@ -19,7 +19,7 @@ static UInt32 simpleReader(
  IOFWRequestRefConreqrefcon);
 ```
 
-#### Return Value
+## Return Value
 
 UIn32 returns kFWResponseComplete on success
 

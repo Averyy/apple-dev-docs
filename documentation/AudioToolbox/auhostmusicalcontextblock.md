@@ -24,7 +24,7 @@ typealias AUHostMusicalContextBlock = (UnsafeMutablePointer<Double>?, UnsafeMuta
 typedef _Bool (^)(double *, double *, long *, double *, long *, double *) __attribute__((nonblocking)) AUHostMusicalContextBlock;
 ```
 
-#### Discussion
+## Discussion
 
 If the host app provides this block to an audio unit, via the [`musicalContextBlock`](./auaudiounit/musicalcontextblock.md) property, then the block may be called at the beginning of each render cycle to obtain information about the current render cycle’s musical context. Any of the provided parameters may be null to indicate that the audio unit is not interested in that particular piece of information.
 

@@ -20,7 +20,7 @@ var referenceObject: ARReferenceObject { get }
 @property (nonatomic, strong, readonly) ARReferenceObject * referenceObject;
 ```
 
-#### Discussion
+## Discussion
 
 This object is always one of the [`ARReferenceObject`](../arreferenceobject.md) objects you provided in the [`detectionObjects`](../arworldtrackingconfiguration/detectionobjects.md) array when configuring the session.
 

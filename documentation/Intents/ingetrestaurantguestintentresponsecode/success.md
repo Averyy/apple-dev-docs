@@ -16,7 +16,7 @@ case success
 INGetRestaurantGuestIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you are able to return the guest information successfully. After creating the response object, configure values for the [`guest`](../ingetrestaurantguestintentresponse/guest.md) and [`guestDisplayPreferences`](../ingetrestaurantguestintentresponse/guestdisplaypreferences.md) properties before returning your response.
 

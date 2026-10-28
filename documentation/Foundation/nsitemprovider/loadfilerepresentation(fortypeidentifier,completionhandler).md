@@ -25,7 +25,7 @@ func loadFileRepresentation(forTypeIdentifier typeIdentifier: String, completion
 - (NSProgress *) loadFileRepresentationForTypeIdentifier:(NSString *) typeIdentifier completionHandler:(void (^)(NSURL *url, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method writes a copy of the file’s data to a temporary file, which the system deletes when the completion handler returns.
 

@@ -19,11 +19,11 @@ class var displayP3: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * displayP3ColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color-additive color space has red, green, blue, and alpha components.
 
-#### Discussion
+## Discussion
 
 The Display P3 color space, created by Apple Inc. This color space uses the DCI P3 primaries, a D65 white point, and the same gamma curve as the sRGB color space.
 

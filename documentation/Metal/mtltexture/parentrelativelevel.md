@@ -25,7 +25,7 @@ var parentRelativeLevel: Int { get }
 @property (readonly) NSUInteger parentRelativeLevel;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only valid for textures created from a [`parent`](./parent.md) texture. The default value is `0`.
 

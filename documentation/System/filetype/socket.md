@@ -21,7 +21,7 @@ Socket
 static var socket: FileType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `S_IFSOCK`.
 

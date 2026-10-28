@@ -21,11 +21,11 @@ Creates a new tag collection from an existing collection, copying all tags which
 extern OSStatus CMTagCollectionCopyTagsOfCategories(CFAllocatorRef allocator, CMTagCollectionRef tagCollection, const CMTagCategory *categories, CMItemCount categoriesCount, CMTagCollectionRef*collectionWithTagsOfCategories);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Using a value of `categoriesCount` greater than the number of elements in the array starting from `categories` causes undefined behavior.
 

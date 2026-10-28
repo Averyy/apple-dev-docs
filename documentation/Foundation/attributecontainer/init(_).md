@@ -21,7 +21,7 @@ Creates an attribute container from a dictionary, using default attribute scopes
 init(_ dictionary: [NSAttributedString.Key : Any])
 ```
 
-#### Discussion
+## Discussion
 
 This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](../attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](../attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](../attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](./init%28_,including%29-2mw0o.md) and [`init(_:including:)`](./init%28_,including%29-28n0g.md).
 

@@ -17,7 +17,7 @@ Tells the delegate that a new peripheral was discovered and can be displayed in 
 func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, itemForPeripheral peripheral: CBPeripheral, withAdvertisementData advertisementData: [String : Any]?) -> PlaygroundBluetoothConnectionView.Item
 ```
 
-#### Return Value
+## Return Value
 
 A [`PlaygroundBluetoothConnectionView.Item`](../playgroundbluetoothconnectionview/item.md) instance that's displayed within a [`PlaygroundBluetoothConnectionView`](../playgroundbluetoothconnectionview.md).
 

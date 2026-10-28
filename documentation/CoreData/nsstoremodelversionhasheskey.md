@@ -25,7 +25,7 @@ let NSStoreModelVersionHashesKey: String
 extern NSString * const NSStoreModelVersionHashesKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is used in the metadata for a persistent store.
 

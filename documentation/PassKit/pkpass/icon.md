@@ -23,7 +23,7 @@ var icon: UIImage { get }
 @property (nonatomic, copy, readonly) UIImage * icon;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to display a pass’s icon as part of a UI element that represents the pass, such as a cell in a table view.
 

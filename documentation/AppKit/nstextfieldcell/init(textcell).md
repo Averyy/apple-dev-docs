@@ -19,7 +19,7 @@ init(textCell string: String)
 - (instancetype) initTextCell:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A text field cell that displays a string.
 

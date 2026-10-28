@@ -22,7 +22,7 @@ var stateHash: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * stateHash;
 ```
 
-#### Discussion
+## Discussion
 
 Hash of the current companion pairing as returned by @c LAContext.domainState.companion.stateHash(for:)
 

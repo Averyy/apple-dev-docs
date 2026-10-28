@@ -13,11 +13,11 @@
 ifnet_t mbuf_pkthdr_rcvif(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface.
 
-#### Discussion
+## Discussion
 
 Returns the interface the packet was received on. This funciton does not modify the reference count of the interface. The interface is only valid for as long as the mbuf is not freed and the rcvif for the mbuf is not changed. Take a reference on the interface that you will release later before doing any of the following: free the mbuf, change the rcvif, pass the mbuf to any function that may free the mbuf or change the rcvif.
 

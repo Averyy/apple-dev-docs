@@ -23,7 +23,7 @@ typealias ENErrorHandler = ((any Error)?) -> Void
 typedef void (^)(NSError *) ENErrorHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.5 and later.
 

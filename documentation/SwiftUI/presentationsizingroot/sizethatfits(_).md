@@ -21,7 +21,7 @@ Asks the subview for its size.
 func sizeThatFits(_ proposal: ProposedViewSize) -> CGSize
 ```
 
-#### Return Value
+## Return Value
 
 The size of the presentation’s content view given `proposal`
 

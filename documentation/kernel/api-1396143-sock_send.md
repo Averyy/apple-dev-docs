@@ -13,11 +13,11 @@
 errno_t sock_send(socket_t so, const struct msghdr *msg, int flags, size_t *sentlen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, EWOULDBLOCK if non-blocking and operation would cause the thread to block, otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Send data on a socket. Similar to sendmsg. See 'man 2 sendmsg' for more information about sending data.
 

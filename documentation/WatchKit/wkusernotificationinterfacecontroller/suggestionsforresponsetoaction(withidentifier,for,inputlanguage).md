@@ -19,11 +19,11 @@ func suggestionsForResponseToAction(withIdentifier identifier: String, for notif
 - (NSArray<NSString *> *) suggestionsForResponseToActionWithIdentifier:(NSString *) identifier forNotification:(UNNotification *) notification inputLanguage:(NSString *) inputLanguage;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings representing the text suggestions.
 
-#### Discussion
+## Discussion
 
 When the user taps an action button that accepts text input, WatchKit calls this method to retrieve the text suggestions for that action. Use this method to supply any text phrases that might be appropriate for the given action. Use the `inputLanguage` parameter to fetch localized versions of the suggestions.
 

@@ -5,7 +5,7 @@
 
 Check whether a display supports EDR.
 
-#### Overview
+## Overview
 
 Discover whether a display supports EDR values by reading the [`maximumPotentialExtendedDynamicRangeColorComponentValue`](../AppKit/nsscreen/maximumpotentialextendeddynamicrangecolorcomponentvalue.md) property on an [`NSScreen`](../AppKit/nsscreen.md) instance for that display. A value greater than `1.0` indicates that the display supports EDR values; otherwise, the display supports only SDR values.
 

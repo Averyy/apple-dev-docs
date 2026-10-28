@@ -20,7 +20,7 @@ func removeEventHandler(forEventClass eventClass: AEEventClass, andEventID event
 - (void) removeEventHandlerForEventClass:(AEEventClass) eventClass andEventID:(AEEventID) eventID;
 ```
 
-#### Discussion
+## Discussion
 
 Otherwise does nothing.
 

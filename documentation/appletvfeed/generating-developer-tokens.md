@@ -5,7 +5,7 @@
 
 Create a JSON Web Token to authorize your requests to the Apple Media Feed API.
 
-#### Overview
+## Overview
 
 The header of each Apple Media Feed API request requires authorization in the form of a developer token. A developer token is a signed token that authenticates you as a trusted developer and member of the Apple Developer Program.
 
@@ -13,7 +13,7 @@ The Apple Media Feed API supports the JSON Web Token (JWT) specification, so you
 
 The Apple Media Feed API limits the number of requests you can make using a developer token within a specific period of time. If you exceed this limit, you temporarily receive `429 Too Many Requests` error responses for requests that use the token. This error resolves itself shortly after the request rate decreases.
 
-#### Create your developer token
+## Create your developer token
 
 Use the following information supplied by Apple through the [Performance Partner Portal](https://partners.marketingtools.apple.com) to create a signed JWT:
 
@@ -54,7 +54,7 @@ After you create the token, sign it with your private key using the ES256 algori
 
 > **Note**: ES256 is the [JSON Web Algorithms (JWA)](https://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
-#### Authorize requests
+## Authorize requests
 
 If you manage request authorization directly, in all requests, pass the `Authorization: Bearer` header set to the developer token.
 

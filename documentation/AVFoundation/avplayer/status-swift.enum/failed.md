@@ -25,7 +25,7 @@ case failed
 AVPlayerStatusFailed
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the value of the player’s [`error`](../error.md) property to determine the details of the failure.
 

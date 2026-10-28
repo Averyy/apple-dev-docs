@@ -6,7 +6,7 @@
 
 A series of unsigned 32-bit integers listing compatible file formats.
 
-#### Overview
+## Overview
 
 The major brand must appear in the list of compatible brands. One or more “placeholder” entries with value zero are permitted; such entries should be ignored.
 

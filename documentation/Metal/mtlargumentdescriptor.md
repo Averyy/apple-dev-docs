@@ -24,7 +24,7 @@ class MTLArgumentDescriptor
 @interface MTLArgumentDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 This descriptor can represent arguments within flat structures only. It can represent arrays of allowed argument buffer data types, but it cannot represent arguments within nested structures. Argument buffers with simple, flat structures can be represented by an array of [`MTLArgumentDescriptor`](./mtlargumentdescriptor.md) instances. You can then use this array to create an [`MTLArgumentEncoder`](./mtlargumentencoder.md) instance by calling the [`makeArgumentEncoder(arguments:)`](./mtldevice/makeargumentencoder%28arguments%29.md) method. Argument buffers with complex, nested structures need to define their structure in Metal shading language code, which can then be directly assigned to a specific buffer index of a function. You can then use this buffer index to call the [`makeArgumentEncoder(bufferIndex:)`](./mtlfunction/makeargumentencoder%28bufferindex%29.md) method and create an [`MTLArgumentEncoder`](./mtlargumentencoder.md) instance.
 

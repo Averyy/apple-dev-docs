@@ -23,7 +23,7 @@ var zoomFactorsOutsideOfVideoZoomRangesForDepthDeliverySupported: Bool { get }
 @property (nonatomic, readonly) BOOL zoomFactorsOutsideOfVideoZoomRangesForDepthDeliverySupported;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a zoom factor outside the range defined by the [`supportedVideoZoomFactorsForDepthDataDelivery`](./supportedvideozoomfactorsfordepthdatadelivery.md) property results in the system suspending depth data delivery. It resumes delivery when you set the zoom factor back to a supported value.
 

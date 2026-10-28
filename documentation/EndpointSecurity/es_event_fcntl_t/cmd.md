@@ -20,7 +20,7 @@ var cmd: Int32
 int32_t cmd;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the `cmd` argument given to `fcntl(2)`.
 

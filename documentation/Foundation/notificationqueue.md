@@ -25,7 +25,7 @@ class NotificationQueue
 @interface NSNotificationQueue : NSObject
 ```
 
-#### Overview
+## Overview
 
 Whereas a notification center distributes notifications when posted, notifications placed into the queue can be delayed until the end of the current pass through the run loop or until the run loop is idle. Duplicate notifications can be coalesced so that only one notification is sent although multiple notifications are posted.
 

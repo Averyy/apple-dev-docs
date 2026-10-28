@@ -25,11 +25,11 @@ Runs `operation` with `logger` bound to the task-local context.
 func withLogger<Result, Failure>(_ logger: Logger, _ operation: (Logger) throws(Failure) -> Result) throws(Failure) -> Result where Failure : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `operation`.
 
-#### Discussion
+## Discussion
 
 Code called within `operation` can read the logger via [`current`](./logger/current.md) without an explicit parameter. Binding a different logger with this overload **replaces** the current task-local logger; any metadata accumulated by an outer [`withLogger(mergingMetadata:_:)`](./withlogger%28mergingmetadata,_%29-2c7dy.md) or [`withLogger(logLevel:handler:metadata:_:)`](./withlogger%28loglevel,handler,metadata,_%29-2pd9p.md) scope is not carried over. Use the modifying overloads to layer or replace aspects of the current logger instead.
 

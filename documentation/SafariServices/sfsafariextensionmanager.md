@@ -23,7 +23,7 @@ class SFSafariExtensionManager
 @interface SFSafariExtensionManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 In macOS, use this class to find out the current state of either a Safari app extension or Safari web extension. In iOS and visionOS, use this class to find out the current state of a Safari web extension.
 

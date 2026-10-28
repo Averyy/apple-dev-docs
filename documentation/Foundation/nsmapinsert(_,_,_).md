@@ -25,7 +25,7 @@ func NSMapInsert(_ table: NSMapTable<AnyObject, AnyObject>, _ key: UnsafeRawPoin
 extern void NSMapInsert(NSMapTable *table, const void *key, const void *value);
 ```
 
-#### Discussion
+## Discussion
 
 Inserts `key` and `value` into `table`. If `key` matches a key already in `table`, `value` is retained and the previous value is released, using the `retain` and `release` callback functions that were specified when the table was created. Raises `NSInvalidArgumentException` if `key` is equal to the `notAKeyMarker` field of the table’s [`NSMapTableKeyCallBacks`](./nsmaptablekeycallbacks.md) structure.
 

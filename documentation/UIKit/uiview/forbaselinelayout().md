@@ -23,11 +23,11 @@ func forBaselineLayout() -> UIView
 - (UIView *) viewForBaselineLayout;
 ```
 
-#### Return Value
+## Return Value
 
 The view the constraint system should use to satisfy baseline constraints
 
-#### Discussion
+## Discussion
 
 When you make a constraint to a view’s [`NSLayoutAttributeBaseline`](../nslayoutattribute/nslayoutattributebaseline.md) attribute, Auto Layout uses the baseline of the view returned by this method. If that view does not have a baseline, Auto Layout uses the view’s bottom edge.
 

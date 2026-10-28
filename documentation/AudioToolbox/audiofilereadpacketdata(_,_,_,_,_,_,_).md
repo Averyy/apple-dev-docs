@@ -24,11 +24,11 @@ func AudioFileReadPacketData(_ inAudioFile: AudioFileID, _ inUseCache: Bool, _ i
 extern OSStatus AudioFileReadPacketData(AudioFileID inAudioFile, Boolean inUseCache, UInt32 *ioNumBytes, AudioStreamPacketDescription *outPacketDescriptions, SInt64 inStartingPacket, UInt32 *ioNumPackets, void *outBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Using this function is memory efficient when reading variable bit-rate (VBR) audio data, whose packet sizes can vary for a given duration of sound.
 

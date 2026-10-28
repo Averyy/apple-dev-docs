@@ -17,11 +17,11 @@ Adds a session to the active route.
 - (BOOL) addSession:(AVSystemRouteSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the route successfully adds the session; `false` if the route cannot add it (for example, if the session is already associated with another route or if the route is in an invalid state).
 
-#### Discussion
+## Discussion
 
 Call this method to register a new [`AVSystemRouteSession`](../avsystemroutesession-5i6j6.md) with the route before starting playback or communication. The session must be added to the route before calling its [`startWithCompletionHandler:`](../avsystemroutesession-5i6j6/startwithcompletionhandler_.md) method.
 

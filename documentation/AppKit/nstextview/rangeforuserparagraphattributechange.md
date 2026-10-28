@@ -19,7 +19,7 @@ var rangeForUserParagraphAttributeChange: NSRange { get }
 @property (readonly) NSRange rangeForUserParagraphAttributeChange;
 ```
 
-#### Discussion
+## Discussion
 
 The range of characters affected by an action method that changes paragraph (not character) attributes, such as the NSText action method [`alignLeft(_:)`](../nstext/alignleft%28_%29.md). For rich text this range is typically calculated by extending the range of the selection to paragraph boundaries. For plain text this range is the entire contents of the receiver. If the receiver isn’t editable or doesn’t use the Font panel, the range has a location of `NSNotFound`.
 

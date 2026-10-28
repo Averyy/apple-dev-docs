@@ -25,7 +25,7 @@ var outputVolume: Float { get set }
 @property (nonatomic) float outputVolume;
 ```
 
-#### Discussion
+## Discussion
 
 The range of valid values is `0.0` to `1.0`.
 

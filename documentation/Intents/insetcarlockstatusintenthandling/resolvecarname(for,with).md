@@ -27,7 +27,7 @@ optional func resolveCarName(for intent: INSetCarLockStatusIntent) async -> INSp
 - (void) resolveCarNameForSetCarLockStatus:(INSetCarLockStatusIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the name of the car. If the app has access to more than one car, use the intent’s [`carName`](../insetcarlockstatusintent/carname.md) property to identify the correct car. If the app has access to only a single car, you can call the completion block with a `notRequired()` resolution for Swift and `resolutionResultNotRequired` for Objective-C, to indicate that the car name is not necessary.
 

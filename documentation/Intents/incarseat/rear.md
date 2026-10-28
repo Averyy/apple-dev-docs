@@ -24,7 +24,7 @@ case rear
 INCarSeatRear
 ```
 
-#### Discussion
+## Discussion
 
 In cars with three rows of seating, rear seats are the second row.
 

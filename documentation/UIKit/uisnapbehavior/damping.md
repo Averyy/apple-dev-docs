@@ -23,7 +23,7 @@ var damping: CGFloat { get set }
 @property (nonatomic, assign) CGFloat damping;
 ```
 
-#### Discussion
+## Discussion
 
 The valid range for damping extends from `0.0`, for maximum oscillation, through `1.0`, for minimum oscillation. The default value is `0.5`.
 

@@ -12,11 +12,11 @@ virtual IOReturn submitFetchAgentReset(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the reset started successfully.
 
-#### Overview
+## Overview
 
 The fetch agent state machine on the device can be reset by a write to a specific register. This reset can be intiated by a call to this method. Notification of the completion of this write can be had by registering a callback with the setFetchAgentResetCompletion method.
 

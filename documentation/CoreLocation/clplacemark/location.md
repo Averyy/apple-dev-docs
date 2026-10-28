@@ -28,7 +28,7 @@ var location: CLLocation? { get }
 @property (nonatomic, copy, readonly, nullable) CLLocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to initialize the placemark object.
 

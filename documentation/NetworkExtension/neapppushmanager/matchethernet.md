@@ -21,7 +21,7 @@ var matchEthernet: Bool { get set }
 @property BOOL matchEthernet;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true` (Swift) or `YES` (Objective-C), the system starts the [`NEAppPushProvider`](../neapppushprovider.md) when the following criteria are true:
 

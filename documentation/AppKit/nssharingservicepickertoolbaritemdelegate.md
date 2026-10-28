@@ -19,7 +19,7 @@ protocol NSSharingServicePickerToolbarItemDelegate : NSSharingServicePickerDeleg
 @protocol NSSharingServicePickerToolbarItemDelegate <NSSharingServicePickerDelegate>
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`NSSharingServicePickerToolbarItemDelegate`](./nssharingservicepickertoolbaritemdelegate.md) protocol in one of your app’s custom types and use it to provide shareable content. Assign your delegate object to an [`NSSharingServicePickerToolbarItem`](./nssharingservicepickertoolbaritem.md) object you add to your window’s toolbar.
 

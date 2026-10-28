@@ -25,11 +25,11 @@ func CGRectGetHeight(_ rect: CGRect) -> CGFloat
 extern CGFloat CGRectGetHeight(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The height of the specified rectangle.
 
-#### Discussion
+## Discussion
 
 Regardless of whether the height is stored in the [`CGRect`](../CoreFoundation/cgrect.md) data structure as a positive or negative number, this function returns the height as if the rectangle were standardized. That is, the result is never a negative number.
 

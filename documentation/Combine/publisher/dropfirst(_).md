@@ -21,11 +21,11 @@ Omits the specified number of elements before republishing subsequent elements.
 func dropFirst(_ count: Int = 1) -> Publishers.Drop<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that doesn’t republish the first `count` elements.
 
-#### Discussion
+## Discussion
 
 Use [`dropFirst(_:)`](./dropfirst%28_%29.md) when you want to drop the first `n` elements from the upstream publisher, and republish the remaining elements.
 

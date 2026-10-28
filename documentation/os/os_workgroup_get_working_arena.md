@@ -21,11 +21,11 @@ Retrieves the workgroup’s shared data, and the thread-specific index into that
 extern void *os_workgroup_get_working_arena(os_workgroup_t wg, os_workgroup_index *index_out);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the workgroup’s shared data, or `NULL` if the workgroup has no shared data.
 
-#### Discussion
+## Discussion
 
 Use this function to retrieve the workgroup’s shared data. The first time you call this function on a thread and request an index, the workgroup assigns an index to the thread and returns it. On subsequent calls from the same thread, the workgroup returns the same index value.
 

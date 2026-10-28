@@ -20,11 +20,11 @@ func getPathID(_ pathID: UnsafeMutablePointer<FxPathID?>, fromParameter paramete
 - (BOOL) getPathID:(void * *) pathID fromParameter:(UInt32) parameterID atTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the pathID is retrieved successfully; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md).
 

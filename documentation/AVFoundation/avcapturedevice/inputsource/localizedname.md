@@ -19,7 +19,7 @@ var localizedName: String { get }
 @property (nonatomic, readonly) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to display the name of the capture device input source in a user interface.
 

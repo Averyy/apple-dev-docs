@@ -20,11 +20,11 @@ func fulfill(using configuration: UIContextMenuConfiguration?) -> Bool
 - (BOOL) fulfillUsingConfiguration:(UIContextMenuConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if you fulfill the configuration within the system’s time window; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 When the system calls your delegate’s [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](../../UIKit/uicontextmenuinteractiondelegate/contextmenuinteraction%28_,configurationformenuatlocation%29.md) method to request a menu configuration, return a [`BEContextMenuConfiguration`](../becontextmenuconfiguration.md) instance, then call this method as soon as you can to provide the actual configuration. The system times out the request after a short delay to keep the UI responsive.
 

@@ -19,7 +19,7 @@ If a given time is during a focus transition, the system transitions toward a se
 - (CNDecision *) secondaryDecisionAtTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 The secondary decision the system is transitioning toward for the given time.
 

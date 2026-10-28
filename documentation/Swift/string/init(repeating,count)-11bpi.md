@@ -21,7 +21,7 @@ Creates a string representing the given character repeated the specified number 
 init(repeating repeatedValue: Character, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 For example, use this initializer to create a string with ten `"0"` characters in a row.
 

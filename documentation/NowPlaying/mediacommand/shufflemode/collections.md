@@ -21,7 +21,7 @@ The player shuffles collections during playback (for example, albums).
 case collections
 ```
 
-#### Discussion
+## Discussion
 
 When you use this mode, the player shuffles albums or other collection types while maintaining the original order within each collection.
 

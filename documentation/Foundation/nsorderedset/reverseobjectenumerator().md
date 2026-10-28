@@ -25,11 +25,11 @@ func reverseObjectEnumerator() -> NSEnumerator
 - (NSEnumerator<id> *) reverseObjectEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each object in the ordered set, in order, from the element at the highest index downwards.
 
-#### Discussion
+## Discussion
 
 When you use this method with mutable subclasses of `NSOrderedSet`, you must not modify the ordered set during enumeration.
 

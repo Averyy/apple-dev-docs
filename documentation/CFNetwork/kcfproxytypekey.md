@@ -22,7 +22,7 @@ let kCFProxyTypeKey: CFString
 extern CFStringRef const kCFProxyTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the type of proxy. The value can be any of the values listed in [Proxy Types](./proxy-types.md).
 

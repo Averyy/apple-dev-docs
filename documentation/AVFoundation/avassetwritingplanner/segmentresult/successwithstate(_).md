@@ -20,7 +20,7 @@ Finish the segment successfully with custom client state.
 case successWithState(Data)
 ```
 
-#### Discussion
+## Discussion
 
 Use this case to save custom state data that will be restored if the export session is interrupted and later resumed. The client state is available via [`clientStateToRestore`](../../avplannedsegmentwritingrequest/clientstatetorestore.md) when the segment is resumed. Only the last successful state data is persisted. Any previous state data will be overwritten.
 

@@ -25,7 +25,7 @@ var containsFragments: Bool { get }
 @property (nonatomic, readonly) BOOL containsFragments;
 ```
 
-#### Discussion
+## Discussion
 
 For QuickTime movie files and MPEG-4 files, the value is [`true`](../../Swift/true.md) if [`canContainFragments`](./cancontainfragments.md) is [`true`](../../Swift/true.md) and at least one `moof` box is present after the `moov` box.
 

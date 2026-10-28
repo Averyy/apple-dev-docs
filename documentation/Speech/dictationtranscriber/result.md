@@ -19,7 +19,7 @@ A phrase or passage of transcribed speech. The phrases are sent in order.
 struct Result
 ```
 
-#### Overview
+## Overview
 
 If the transcriber is configured to send volatile results, each phrase is sent one or more times as the interpretation gets better and better until it is finalized.
 

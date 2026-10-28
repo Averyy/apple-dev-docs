@@ -20,7 +20,7 @@ Returns a new path with the target component replaced.
 func replacing(target newTarget: USDLayer.Path) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path with the target component replaced.
 

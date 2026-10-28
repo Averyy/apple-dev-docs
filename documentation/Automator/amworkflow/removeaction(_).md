@@ -20,7 +20,7 @@ func removeAction(_ action: AMAction)
 - (void) removeAction:(AMAction *) action;
 ```
 
-#### Discussion
+## Discussion
 
 The action receives an `AMAction closed` message before being released.
 

@@ -10,11 +10,11 @@ Transfer browser data to another browser or check a device’s eligibility to us
 - iOS 18.4+
 - iPadOS 18.4+
 
-#### Overview
+## Overview
 
 Use the BrowserKit framework to transfer data such as browsing history, bookmarks, and browser extensions from one browser to another, and to test whether a device is eligible to implement an alternative browser engine.
 
-#### Test eligibility to use alternative browser engines
+## Test eligibility to use alternative browser engines
 
 To test if a device supports alternative browser engines, call [`isEligible(for:completionHandler:)`](./beavailability/iseligible%28for,completionhandler%29.md) in a browser app that you develop with WebKit:
 

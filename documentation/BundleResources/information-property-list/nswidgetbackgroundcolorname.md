@@ -16,7 +16,7 @@ The name of a color in an asset catalog to use for a widget’s configuration in
 - **Name**: `NSWidgetBackgroundColorName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This `Info.plist` value controls the background color shown in the widget configuration interface while editing a widget.
 

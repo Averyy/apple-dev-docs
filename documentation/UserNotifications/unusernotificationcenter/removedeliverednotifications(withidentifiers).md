@@ -24,7 +24,7 @@ func removeDeliveredNotifications(withIdentifiers identifiers: [String])
 - (void) removeDeliveredNotificationsWithIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to selectively remove notifications that you no longer want displayed in Notification Center. The method executes asynchronously, returning immediately and removing the specified notifications on a background thread.
 

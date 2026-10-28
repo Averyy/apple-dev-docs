@@ -15,7 +15,7 @@ The notary service’s response to a software submission.
 object NewSubmissionResponse
 ```
 
-#### Discussion
+## Discussion
 
 You receive a structure of this type in response to a call to the [`Submit Software`](./submit-software.md) endpoint. Use the temporary security credentials this response contains to make a call to Amazon S3 to upload your software.
 

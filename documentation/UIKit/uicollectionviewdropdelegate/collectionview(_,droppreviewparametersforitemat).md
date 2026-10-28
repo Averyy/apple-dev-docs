@@ -22,11 +22,11 @@ optional func collectionView(_ collectionView: UICollectionView, dropPreviewPara
 - (UIDragPreviewParameters *) collectionView:(UICollectionView *) collectionView dropPreviewParametersForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 Drop parameters that indicate how to display the item during the drop.
 
-#### Discussion
+## Discussion
 
 Use this method to customize the appearance of the item during drops. If you don’t implement this method or if you implement it and return `nil`, the collection view uses the cell’s visible bounds to create the preview.
 

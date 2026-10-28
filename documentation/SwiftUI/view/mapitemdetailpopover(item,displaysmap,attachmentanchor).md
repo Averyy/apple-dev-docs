@@ -20,7 +20,7 @@ Presents a map item detail popover.
 @preconcurrency func mapItemDetailPopover(item: Binding<MKMapItem?>, displaysMap: Bool = true, attachmentAnchor: PopoverAttachmentAnchor = .rect(.bounds)) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier if you want the system to choose the best orientation of the popover’s arrow. If you want to specify a particular edge for the arrow, use [`mapItemDetailPopover(item:displaysMap:attachmentAnchor:arrowEdge:)`](./mapitemdetailpopover%28item,displaysmap,attachmentanchor,arrowedge%29.md).
 

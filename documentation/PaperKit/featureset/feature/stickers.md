@@ -19,7 +19,7 @@ Supports inserting stickers.
 case stickers
 ```
 
-#### Discussion
+## Discussion
 
 Once inserted stickers are images, a data model can’t contain stickers. If you disable images, you can’t insert stickers.
 

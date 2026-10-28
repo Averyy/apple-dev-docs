@@ -31,7 +31,7 @@ func resolveConflictingSavedGames(_ conflictingSavedGames: [GKSavedGame], with d
 
 - [Saving the player’s game data to an iCloud account](../saving-the-player-s-game-data-to-an-icloud-account.md)
 
-#### Discussion
+## Discussion
 
 Implement the [`player(_:hasConflictingSavedGames:)`](../gksavedgamelistener/player%28_,hasconflictingsavedgames%29.md) protocol method to choose the correct game data when there’s a conflict. Then call this method separately for each set of saved games that contain file conflicts. For example, if multiple saved games use the `savedgame1` and `savedgame2` filenames, call this method once for the saved games that use the `savedgame1` filename, and once for the saved games that use the `savedgame2` filename.
 

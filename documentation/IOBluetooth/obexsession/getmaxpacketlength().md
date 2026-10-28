@@ -19,11 +19,11 @@ func getMaxPacketLength() -> OBEXMaxPacketLength
 - (OBEXMaxPacketLength) getMaxPacketLength;
 ```
 
-#### Return Value
+## Return Value
 
 Max packet length.
 
-#### Discussion
+## Discussion
 
 This value *could* change before and after a connect command has been sent or a connect command response has been received, since the recipient could negotiate a lower max packet size.
 

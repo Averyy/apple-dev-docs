@@ -4,7 +4,7 @@
 
 Contains information displayed at the bottom of an element.
 
-#### Overview
+## Overview
 
 The `header` element displays additional information that describes its containing element. Here’s an example that displays a title and a short description.
 
@@ -15,14 +15,14 @@ The `header` element displays additional information that describes its containi
 </header>
 ```
 
-##### Subelements of header
+### Subelements of header
 
 - [badge](./badge.md)
 - [description](./description.md)
 - [text](./text.md)
 - [title](./title.md)
 
-##### Elements that Use header
+### Elements that Use header
 
 - [grid](./grid.md)
 - [info](./info.md)

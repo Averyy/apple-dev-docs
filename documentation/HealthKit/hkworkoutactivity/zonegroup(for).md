@@ -20,7 +20,7 @@ Returns a zone group for the specified quantity type.
 func zoneGroup(for quantityType: HKQuantityType) -> HKWorkoutZoneGroup?
 ```
 
-#### Return Value
+## Return Value
 
 The zone group for the quantity type, or `nil` if no zone information exists for the given type.
 

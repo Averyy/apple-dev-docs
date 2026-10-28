@@ -16,11 +16,11 @@ Creates a new element value using byte data.
 IOHIDValueRef IOHIDValueCreateWithBytes(CFAllocatorRef allocator, IOHIDElementRef element, uint64_t timeStamp, const uint8_t *bytes, CFIndex length);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a reference to a new IOHIDValueRef.
 
-#### Discussion
+## Discussion
 
 IOHIDValueGetTimeStamp should represent OS AbsoluteTime, not CFAbsoluteTime. To obtain the OS AbsoluteTime, please reference the APIs declared in <mach/mach_time.h>
 

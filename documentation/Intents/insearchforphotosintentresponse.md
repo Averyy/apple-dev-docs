@@ -25,7 +25,7 @@ class INSearchForPhotosIntentResponse
 @interface INSearchForPhotosIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INSearchForPhotosIntentResponse`](./insearchforphotosintentresponse.md) object to specify the results of searching the user’s photos. After performing a search using the criteria specified in the [`INSearchForPhotosIntent`](./insearchforphotosintent.md) object, create an instance of this class with the results of that search. Siri communicates the status from your response to the user at appropriate times.
 

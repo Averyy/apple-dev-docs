@@ -25,7 +25,7 @@ let kSecAttrPath: CFString
 extern CFStringRef const kSecAttrPath;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and represents a path, typically the path component of the URL. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 

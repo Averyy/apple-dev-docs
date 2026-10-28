@@ -24,7 +24,7 @@ class ASAccessoryEvent
 
 - [Discovering and configuring accessories](./discovering-and-configuring-accessories.md)
 
-#### Overview
+## Overview
 
 The event handler you register with the session’s [`activate(on:eventHandler:)`](./asaccessorysession/activate%28on,eventhandler%29.md) method receives objects of this type from the session. Each event identifies the type of event and which accessory (if any) is involved.
 

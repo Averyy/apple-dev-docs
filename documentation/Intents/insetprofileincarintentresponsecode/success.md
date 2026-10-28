@@ -24,7 +24,7 @@ case success
 INSetProfileInCarIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully restored the settings from the designated profile.
 

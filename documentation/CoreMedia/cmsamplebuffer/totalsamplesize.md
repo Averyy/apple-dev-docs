@@ -21,7 +21,7 @@ The total size in bytes of sample data in the buffer.
 var totalSampleSize: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If a sample buffer doesn’t contain same sizes, the value of this property is `0`.
 

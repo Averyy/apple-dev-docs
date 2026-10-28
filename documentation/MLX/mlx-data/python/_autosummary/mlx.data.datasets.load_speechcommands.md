@@ -6,17 +6,21 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.datasets.load_speechcommands
 
-**mlx.data.datasets.load_speechcommands(*root=None*, *split='train'*, *quiet=False*, *validate_download=True*)**
-: Load the Speech Commands (v0.0.2) [1] dataset directly from the TAR archive.
+```python
+mlx.data.datasets.load_speechcommands(root=None, split='train', quiet=False, validate_download=True)
+```
 
-Parameters:
+Load the Speech Commands (v0.0.2) [1] dataset directly from the TAR archive.
 
-**root** (*Path** or *[str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – The The directory to load/save the data. If
+**Parameters:**
+
+- **root** (*Path* *or* [str](https://docs.python.org/3/library/stdtypes.html#str), *optional*) – The The directory to load/save the data. If
 none is given the `~/.cache/mlx.data/speechcommands` is used.
-**split** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The split to use. It should be one of train,
+- **split** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The split to use. It should be one of train,
 validation or test
-**quiet** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If true do not show download (and possibly decompression)
+- **quiet** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If true do not show download (and possibly decompression)
 progress.
 
 References
+
 [1] Warden, Pete. “Speech commands: A dataset for limited-vocabulary speech recognition.” arXiv preprint arXiv:1804.03209 (2018).

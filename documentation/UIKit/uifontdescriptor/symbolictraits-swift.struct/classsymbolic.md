@@ -24,7 +24,7 @@ static var classSymbolic: UIFontDescriptor.SymbolicTraits { get }
 UIFontDescriptorClassSymbolic
 ```
 
-#### Discussion
+## Discussion
 
 This trait is suitable for special characters like icons, dingbats, technical symbols, and others that work equally well with any font.
 

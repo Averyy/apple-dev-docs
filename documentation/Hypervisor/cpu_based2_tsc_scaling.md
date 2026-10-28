@@ -19,7 +19,7 @@ var CPU_BASED2_TSC_SCALING: UInt32 { get }
 CPU_BASED2_TSC_SCALING
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`hv_vmx_read_capability(_:_:)`](./hv_vmx_read_capability%28_,_%29.md) API to determine the correct setting for this value at run time.
 

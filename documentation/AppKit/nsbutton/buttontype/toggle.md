@@ -19,7 +19,7 @@ case toggle
 NSButtonTypeToggle
 ```
 
-#### Discussion
+## Discussion
 
 When the value of [`state`](../state.md) is [`off`](../../nscontrol/statevalue/off.md), the button displays its normal content, such as its [`image`](../image.md) or [`title`](../title.md). When [`state`](../state.md) has any other value, the button displays its alternate content, such as its [`alternateImage`](../../nsbuttoncell/alternateimage.md) or [`alternateTitle`](../alternatetitle.md) instead. If the button has no alternate content to display, it may instead draw its normal content using an illuminated effect.
 

@@ -26,7 +26,7 @@ var requiredShippingAddressFields: PKAddressField { get set }
 @property (nonatomic, assign) PKAddressField requiredShippingAddressFields;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`PKPaymentRequest`](../pkpaymentrequest.md). For possible values, see [`PKPaymentRequest`](../pkpaymentrequest.md).
 

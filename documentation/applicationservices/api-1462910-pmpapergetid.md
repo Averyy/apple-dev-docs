@@ -19,7 +19,7 @@ func PMPaperGetID(_ paper: PMPaper, _ paperID: UnsafeMutablePointer<Unmanaged<CF
 OSStatus PMPaperGetID(PMPaper paper, CFStringRef  _Nullable *paperID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

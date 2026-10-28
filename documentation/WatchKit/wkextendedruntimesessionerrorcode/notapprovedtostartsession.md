@@ -19,7 +19,7 @@ case notApprovedToStartSession
 WKExtendedRuntimeSessionErrorNotApprovedToStartSession
 ```
 
-#### Discussion
+## Discussion
 
 To use extended runtime sessions, your app must enable the Background Mode capability and select a session type.
 

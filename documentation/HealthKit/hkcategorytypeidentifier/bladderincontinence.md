@@ -24,7 +24,7 @@ static let bladderIncontinence: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierBladderIncontinence;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 

@@ -25,11 +25,11 @@ func CFURLGetFileSystemRepresentation(_ url: CFURL!, _ resolveAgainstBase: Bool,
 extern Boolean CFURLGetFileSystemRepresentation(CFURLRef url, Boolean resolveAgainstBase, UInt8 *buffer, CFIndex maxBufLen);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if successful, `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 No more than `maxBufLen` bytes are written to `buffer`. If `url` requires more than `maxBufLen` bytes to represent itself, including the terminating null byte, this function returns `false`. To avoid this possible failure, you should pass a buffer with size of at least the maximum path length for the file system in question.
 

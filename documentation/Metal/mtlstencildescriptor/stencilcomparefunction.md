@@ -24,7 +24,7 @@ var stencilCompareFunction: MTLCompareFunction { get set }
 @property (nonatomic) MTLCompareFunction stencilCompareFunction;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if `stencilCompareFunction` is [`MTLCompareFunction.less`](../mtlcomparefunction/less.md), then the stencil test passes if the masked reference value is less than the masked stored stencil value. The default value is [`MTLCompareFunction.always`](../mtlcomparefunction/always.md), which indicates that the stencil test always passes.
 

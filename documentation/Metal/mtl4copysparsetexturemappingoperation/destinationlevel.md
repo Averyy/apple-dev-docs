@@ -24,7 +24,7 @@ var destinationLevel: Int
 NSUInteger destinationLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a value between `0` and the destination texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md).
 

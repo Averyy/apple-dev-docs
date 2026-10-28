@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is considered to be either lowerca
 var isCased: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Though similar in name, this property is *not* equivalent to `changesWhenCaseMapped`. The set of scalars for which `isCased` is `true` is a superset of those for which `changesWhenCaseMapped` is `true`. For example, the Latin small capitals that are used by the International Phonetic Alphabet have a case, but do not change when they are mapped to any of the other cases.
 

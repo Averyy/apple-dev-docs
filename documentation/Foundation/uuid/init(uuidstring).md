@@ -21,7 +21,7 @@ Creates a UUID from a string representation.
 init?(uuidString string: String)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the string isn’t a valid UUID representation.
 

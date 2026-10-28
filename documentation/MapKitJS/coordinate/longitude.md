@@ -15,7 +15,7 @@ The longitude, in degrees.
 longitude: number;
 ```
 
-#### Discussion
+## Discussion
 
 Measurements are relative to the zero meridian, with positive values extending east of the meridian and negative values extending west of the meridian.
 

@@ -16,7 +16,7 @@ The local objects that have been sent over the connection and still have proxies
 @property (copy, readonly) NSArray * localObjects;
 ```
 
-#### Discussion
+## Discussion
 
 When an object’s remote proxy is deallocated, a message is sent back to the receiver to notify it that the local object is no longer shared over the connection.
 

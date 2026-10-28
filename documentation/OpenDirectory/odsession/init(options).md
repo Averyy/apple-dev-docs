@@ -20,11 +20,11 @@ init(options inOptions: [AnyHashable : Any]! = [:]) throws
 - (instancetype) initWithOptions:(NSDictionary *) inOptions error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The created session object.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

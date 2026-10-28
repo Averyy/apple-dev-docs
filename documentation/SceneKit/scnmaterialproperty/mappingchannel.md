@@ -25,7 +25,7 @@ var mappingChannel: Int { get set }
 @property (nonatomic) NSInteger mappingChannel;
 ```
 
-#### Discussion
+## Discussion
 
 A geometry can have multiple independent sources of texture coordinates, each of which defines a unique mapping channel number. You can use these channels to map different visual properties of a material in different ways. For example, a geometry representing a picture frame might use one set of texture coordinates for mapping the materials of the frame itself, and another set of texture coordinates for placing a picture into the frame.
 

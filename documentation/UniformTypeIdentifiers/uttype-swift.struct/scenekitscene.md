@@ -21,7 +21,7 @@ A type that represents a SceneKit serialized scene.
 static var sceneKitScene: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.scenekit.scene`.
 

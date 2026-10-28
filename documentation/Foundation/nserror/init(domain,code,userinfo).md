@@ -25,11 +25,11 @@ init(domain: String, code: Int, userInfo dict: [String : Any]? = nil)
 - (instancetype) initWithDomain:(NSErrorDomain) domain code:(NSInteger) code userInfo:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSError` object initialized for `domain` with the specified error `code` and the dictionary of arbitrary data `userInfo`.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for `NSError`.
 

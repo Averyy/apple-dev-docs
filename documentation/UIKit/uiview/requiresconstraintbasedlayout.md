@@ -23,11 +23,11 @@ class var requiresConstraintBasedLayout: Bool { get }
 @property (class, nonatomic, readonly) BOOL requiresConstraintBasedLayout;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view must be in a window using constraint-based layout to function properly, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Custom views should override this to return [`true`](../../Swift/true.md) if they cannot layout correctly using autoresizing.
 

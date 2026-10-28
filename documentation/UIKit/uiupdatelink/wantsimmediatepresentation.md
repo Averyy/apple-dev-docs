@@ -23,7 +23,7 @@ var wantsImmediatePresentation: Bool { get set }
 @property (nonatomic) BOOL wantsImmediatePresentation;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`false`](../../Swift/false.md).
 

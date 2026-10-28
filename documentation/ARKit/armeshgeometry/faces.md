@@ -20,7 +20,7 @@ var faces: ARGeometryElement { get }
 @property (nonatomic, strong, readonly) ARGeometryElement * faces;
 ```
 
-#### Discussion
+## Discussion
 
 Each element of the buffer-based array is a three-index combination that forms a unique triangle, or *face*. The index refers to that vertex’s position in the [`vertices`](./vertices.md) array. The [`count`](../argeometryelement/count.md) of this property represents the number of faces.
 

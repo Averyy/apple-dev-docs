@@ -20,7 +20,7 @@ var callback: ASWebAuthenticationSession.Callback? { get }
 @property (nonatomic, readonly, nullable) ASWebAuthenticationSessionCallback * callback;
 ```
 
-#### Discussion
+## Discussion
 
 You create a callback with the type methods [`customScheme(_:)`](../aswebauthenticationsession/callback/customscheme%28_%29.md) or [`https(host:path:)`](../aswebauthenticationsession/callback/https%28host,path%29.md).
 

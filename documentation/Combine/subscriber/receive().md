@@ -23,11 +23,11 @@ func receive() -> Subscribers.Demand
 
 Available when `Input` is `()`.
 
-#### Return Value
+## Return Value
 
 A [`Subscribers.Demand`](../subscribers/demand.md) instance indicating how many more elements the subscriber expects to receive.
 
-#### Discussion
+## Discussion
 
 Use `Void` inputs and outputs when you want to signal that an event has occurred, but don’t need to send the event itself.
 

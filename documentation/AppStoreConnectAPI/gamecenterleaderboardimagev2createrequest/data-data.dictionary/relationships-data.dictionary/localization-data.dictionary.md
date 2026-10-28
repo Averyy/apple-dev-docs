@@ -15,7 +15,7 @@ The data that describes the localization of the Game Center leaderboard image.
 object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships.Localization
 ```
 
-#### Overview
+## Overview
 
 - data:
 

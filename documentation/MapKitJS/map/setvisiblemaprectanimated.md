@@ -15,11 +15,11 @@ Changes the map’s visible map rectangle to the specified map rectangle.
 setVisibleMapRectAnimated(mapRect: MapRectData, animated?: boolean): Map;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the map object.
 
-#### Discussion
+## Discussion
 
 By default, MapKit JS animates the change.
 

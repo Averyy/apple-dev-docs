@@ -14,7 +14,7 @@ struct ifnet_attach_proto_param {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used to attach a protocol to an interface. This structure provides the various functions for handling operations related to the protocol on the interface as well as information for how to demux packets for this protocol.
 

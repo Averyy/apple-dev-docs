@@ -19,7 +19,7 @@ class var current: NSPrintOperation? { get set }
 @property (class, strong, nullable) NSPrintOperation * currentOperation;
 ```
 
-#### Return Value
+## Return Value
 
 The print operation object, or `nil` if there is no current operation.
 

@@ -25,11 +25,11 @@ typealias CMBufferGetTimeCallback = (CMBuffer, UnsafeMutableRawPointer?) -> CMTi
 typedef CMTime (*)(const void *, void *) CMBufferGetTimeCallback;
 ```
 
-#### Discussion
+## Discussion
 
 There are three callbacks of this type that can be provided to `Creating Buffer Queues`: getDuration (required), getDecodeTimeStamp (optional), and getPresentationTimeStamp (optional).
 
-##### Callback Parameters
+### Callback Parameters
 
 - **buf**: The buffer being interrogated.
 - **refcon**: The contextual data from the client (which may be `NULL`).

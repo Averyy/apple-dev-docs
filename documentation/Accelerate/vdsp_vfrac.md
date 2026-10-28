@@ -21,7 +21,7 @@ Truncates the elements of a single-precision vector to fractions.
 extern void vDSP_vfrac(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Performs the following operation:
 

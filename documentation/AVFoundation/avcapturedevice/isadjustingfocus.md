@@ -23,7 +23,7 @@ var isAdjustingFocus: Bool { get }
 @property (nonatomic, readonly, getter=isAdjustingFocus) BOOL adjustingFocus;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

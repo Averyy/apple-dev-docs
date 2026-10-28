@@ -23,7 +23,7 @@ var isEmpty: Bool { get }
 static bool SPRect3DFloatIsEmpty(SPRect3DFloat rect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates if two or three of the dimensions are zero.
 

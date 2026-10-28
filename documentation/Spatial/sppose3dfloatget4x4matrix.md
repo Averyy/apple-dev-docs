@@ -19,11 +19,11 @@
 static simd_float4x4 SPPose3DFloatGet4x4Matrix(SPPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a 4 x 4 matrix that represents the pose’s translation and rotation.
 

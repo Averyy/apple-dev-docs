@@ -16,7 +16,7 @@ Set the user refCon value. This is the user defined value that will be passed in
 void (*SetRefCon)(IOFireWireLibCommandRef self, void *refCon);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

@@ -5,7 +5,7 @@
 
 Add WebVTT subtitle and caption tracks to your HTTP Live Streaming (HLS) streams, and declare their absence when a stream doesn’t carry captions.
 
-#### Overview
+## Overview
 
 WebVTT (Web Video Text Tracks) is the standard format for delivering captions and subtitles in HLS streams. Apple devices running iOS, iPadOS, macOS, and tvOS play WebVTT tracks and support multiple languages.
 
@@ -17,7 +17,7 @@ The following sample stream variant declares that no closed captions are availab
 #EXT-X-STREAM-INF:BANDWIDTH=2500000,RESOLUTION=1920x1080,CODECS="avc1.4d401f,mp4a.40.2",CLOSED-CAPTIONS=NONE
 ```
 
-#### Configure subtitle tracks in the multivariant playlist
+## Configure subtitle tracks in the multivariant playlist
 
 The following attributes apply to `EXT-X-MEDIA` tags with `TYPE=SUBTITLES` in your multivariant playlist:
 
@@ -32,7 +32,7 @@ The following attributes apply to `EXT-X-MEDIA` tags with `TYPE=SUBTITLES` in yo
 | 7 | `AUTOSELECT` | Auto-selects based on device language | No, but recommended | `YES`/`NO` |
 | 8 | `FORCED` | Indicates forced subtitles | If applicable | `YES`/`NO` |
 
-#### Synchronize subtitle timing with video segments
+## Synchronize subtitle timing with video segments
 
 Follow these guidelines to keep subtitle cues aligned with the audio and video timeline:
 
@@ -40,7 +40,7 @@ Follow these guidelines to keep subtitle cues aligned with the audio and video t
 - **Overlap handling**: Avoid overlapping cue times.
 - **Precision**: Align cue start and end times to the actual audio boundaries; WebVTT timestamps use millisecond precision (HH:MM:SS.mmm).
 
-#### Format caption text for readability
+## Format caption text for readability
 
 Follow these general accessibility guidelines when you author caption text, as targets rather than hard HLS requirements:
 

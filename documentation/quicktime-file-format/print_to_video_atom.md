@@ -6,7 +6,7 @@
 
 An atom you use to play the movie in full-screen mode, with no window and no visible controller.
 
-#### Overview
+## Overview
 
 A movie atom’s user data atom may contain a print to video atom (`'ptv '`). Note that the fourth character is an ASCII blank (`0x20`). If a print to video atom is present, QuickTime plays the movie in full-screen mode, with no window and no visible controller. Any portion of the screen not occupied by the movie is cleared to black. The user must press the Esc (Escape) key to exit full-screen mode.
 

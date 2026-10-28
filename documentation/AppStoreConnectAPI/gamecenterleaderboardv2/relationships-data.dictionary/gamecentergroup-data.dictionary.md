@@ -15,7 +15,7 @@ The data that describes the Game Center group of the Game Center leaderboard v2.
 object GameCenterLeaderboardV2.Relationships.GameCenterGroup
 ```
 
-#### Overview
+## Overview
 
 - data:
 

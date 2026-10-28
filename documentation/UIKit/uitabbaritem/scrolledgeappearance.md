@@ -24,7 +24,7 @@ var scrollEdgeAppearance: UITabBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UITabBarAppearance * scrollEdgeAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When a tab bar displays the selected item, the appearance setting in this property overrides the settings in the [`scrollEdgeAppearance`](../uitoolbar/scrolledgeappearance.md) property of [`UIToolbar`](../uitoolbar.md).
 

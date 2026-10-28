@@ -21,11 +21,11 @@ Creates and returns a new predicate formed by creating a new string with a speci
 + (NSPredicate *) predicateWithFormat:(NSString *) predicateFormat;
 ```
 
-#### Return Value
+## Return Value
 
 A new predicate formed by creating a new string with `format` and parsing the result.
 
-#### Discussion
+## Discussion
 
 Pass a comma-separated list of trailing variadic arguments to substitute into `format`.
 

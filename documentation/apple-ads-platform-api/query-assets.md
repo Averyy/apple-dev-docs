@@ -9,7 +9,7 @@ Retrieve a paginated list of creative assets using filters and sorting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries assets using a standard `QueryRequest` body. Filter by `promotedObjectId` to retrieve all assets for a specific brand. An empty request body returns all assets with default pagination.
 
@@ -17,7 +17,7 @@ After uploading an asset, use this endpoint to check `eligibility` status in bul
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Request Body
+## Request Body
 
 See [`QueryRequest`](./queryrequest.md).
 
@@ -47,13 +47,13 @@ Querying assets carries a couple of caveats around scope and variants:
 | Always filter by `promotedObjectId` | Omitting this returns assets across all brands, which may be a large result set. |
 | Asset crops not included in query results | Variant assets (crops) are omitted from query responses. To retrieve a specific variant, use Get Asset by ID. |
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Brand**:
 
 Retrieve all assets for a specific brand.
 
-##### Request
+### Request
 
 ```http
 POST /v1/assets/query
@@ -79,7 +79,7 @@ POST /v1/assets/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -122,7 +122,7 @@ POST /v1/assets/query
 
 Retrieve assets for a specific App Store app by its Adam ID.
 
-##### Request
+### Request
 
 ```http
 POST /v1/assets/query
@@ -148,7 +148,7 @@ POST /v1/assets/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

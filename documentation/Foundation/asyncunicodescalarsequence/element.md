@@ -21,7 +21,7 @@ The type of elements produced by this asynchronous sequence.
 typealias Element = UnicodeScalar
 ```
 
-#### Discussion
+## Discussion
 
 [`AsyncUnicodeScalarSequence`](../asyncunicodescalarsequence.md) produces elements of type [`UnicodeScalar`](../../Swift/unicodescalar.md).
 

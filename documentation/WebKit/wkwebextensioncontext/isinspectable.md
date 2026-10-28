@@ -23,7 +23,7 @@ var isInspectable: Bool { get set }
 @property (nonatomic, getter=isInspectable) BOOL inspectable;
 ```
 
-#### Discussion
+## Discussion
 
 A context can control multiple [`WKWebView`](../wkwebview.md) instances, from the background content, to the popover.
 

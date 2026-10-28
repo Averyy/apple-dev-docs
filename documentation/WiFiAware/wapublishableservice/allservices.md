@@ -21,7 +21,7 @@ static var allServices: [WAPublishableService.ID : WAPublishableService] { get }
 
 - [Adopting Wi-Fi Aware](../adopting-wi-fi-aware.md)
 
-#### Discussion
+## Discussion
 
 The system populates the contents of this property from the values under the `Info.plist` key “`WiFiAwareServices`”,  with all entries that specify the `Publishable` configuration included.
 

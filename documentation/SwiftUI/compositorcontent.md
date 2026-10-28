@@ -17,7 +17,7 @@ A type that describes content a scene renders directly with Metal, rather than c
 protocol CompositorContent
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol when you draw an immersive scene with your own Metal renderer. Implement [`body`](./compositorcontent/body-swift.property.md) to describe the content, then pass the type to an [`ImmersiveSpace`](./immersivespace.md) in place of a view. The `CompositorLayer` type in CompositorServices gives you the render loop to draw into.
 

@@ -19,7 +19,7 @@ Construct a `CustomMaterial.ClearcoatNormal` object from a texture.
 init(texture: CustomMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 if let textureResource = try? TextureResource.load(named: "entity_cc_normalMap") {

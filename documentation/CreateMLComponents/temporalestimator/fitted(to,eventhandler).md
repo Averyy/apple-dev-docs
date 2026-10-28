@@ -21,7 +21,7 @@ Fits a transformer to a sequence of examples.
 func fitted<InputSequence>(to input: InputSequence, eventHandler: EventHandler?) async throws -> Self.Transformer where InputSequence : Sequence, InputSequence.Element : TemporalSequence, Self.Transformer.Input == InputSequence.Element.Feature
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

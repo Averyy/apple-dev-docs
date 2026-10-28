@@ -21,7 +21,7 @@ The calendar used by the locale.
 var calendar: Calendar.Identifier?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to override the locale’s default calendar. To request the default calendar used by the locale, use the [`Locale`](../../locale.md) property [`calendar`](../calendar.md).
 

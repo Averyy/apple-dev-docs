@@ -15,7 +15,7 @@ Check if a vnode is set to not have data speculatively read in in hopes of futur
 int vnode_isnoreadahead(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if readahead is disabled, 0 otherwise.
 

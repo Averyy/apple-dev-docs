@@ -15,7 +15,7 @@ The maximum size of a text chat message that a person can enter in a 1-to-1 chat
 var maximumTextMessageSize: Measurement<UnitInformationStorage>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is represented as a Foundation [`Measurement`](../../../Foundation/measurement.md) that uses the [`UnitInformationStorage`](../../../Foundation/unitinformationstorage.md) unit type. If the messaging service is disabled, the value is `nil`.
 

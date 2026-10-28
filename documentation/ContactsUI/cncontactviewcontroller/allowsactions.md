@@ -22,7 +22,7 @@ var allowsActions: Bool { get set }
 @property (nonatomic, assign) BOOL allowsActions;
 ```
 
-#### Discussion
+## Discussion
 
 By default the value of this property is [`true`](../../Swift/true.md).
 

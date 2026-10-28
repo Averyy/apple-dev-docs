@@ -21,7 +21,7 @@ The width reserved for icons in labels.
 var labelReservedIconWidth: CGFloat? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value that should be used for the reserved icon width in labels. To set a different value for labels, use the `labelReservedIconWidth` modifier.
 

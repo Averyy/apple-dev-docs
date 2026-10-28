@@ -5,7 +5,7 @@
 
 Detect nearby accessories and facilitate their setup.
 
-#### Overview
+## Overview
 
 Use the AccessorySetupKit framework to simplify discovery and configuration of Bluetooth or Wi-Fi accessories. This allows the person using your app to use these devices without granting overly-broad Bluetooth or Wi-Fi access.
 
@@ -16,7 +16,7 @@ To discover accessories and present them in your app:
 3. Provide information about your supported accessories to display a picker. This lets the person using your app discover and select nearby accessories to configure.
 4. When the picker sends an accessory added event, use information about the selected device to create a Bluetooth or Wi-Fi connection.
 
-##### Declare your app’s accessories
+### Declare your app’s accessories
 
 To prepare your app to discover accessories, add the `NSAccessorySetupKitSupports` key to its information property list. Set its value to an array of strings that contains one or more of the following values:
 
@@ -31,7 +31,7 @@ If you add `Bluetooth` to the list of supported protocols, you also need to add 
 
 > ❗ **Important**:  If your app tries to discover Bluetooth accessories during setup without supplying these keys and values, or uses identifiers, names, or services that it doesn’t include in its information property list, the app crashes. This only affects use of AccessorySetupKit discovery and selection; you can use other services and properties on the accessory after the person using the app selects it.
 
-##### Activate a discovery session
+### Activate a discovery session
 
 The [`ASAccessorySession`](./asaccessorysession.md) is how your app uses the AccessorySetupKit framework. In your app, you create an instance of [`ASAccessorySession`](./asaccessorysession.md) and activate it to receive callbacks with events as the session processes events. The [`activate(on:eventHandler:)`](./asaccessorysession/activate%28on,eventhandler%29.md) method takes a [`DispatchQueue`](../Dispatch/dispatchqueue.md) and an event-handling block or closure. The callbacks occur on the provided queue, which defaults to [`main`](../Dispatch/dispatchqueue/main.md).
 
@@ -71,7 +71,7 @@ override func viewDidLoad() {
 }
 ```
 
-##### Display an accessory picker
+### Display an accessory picker
 
 When the session activates, its [`accessories`](./asaccessorysession/accessories.md) array contains any accessories previously authorized for the app, which you can inspect. To discover new devices, your app needs to show an accessory picker. The person using the app uses this picker to choose the accessory to configure.
 
@@ -124,7 +124,7 @@ The following figure shows a single accessory selected in the picker.
 
 ![The accessory picker sheet, covering the bottom part of the screen. The top of sheet shows the title ‘Finding Accessories’ and a close button. Below this is the image of a six-sided die and the caption ‘Bluetooth Die’, followed by a serial number. The bottom of the sheet shows two buttons, a defautl ‘Set Up’ button, followed by a ‘Learn More’ button.](https://developer.apple.com/tutorials/images/com.apple.AccessorySetupKit/discovering-and-configuring-accessories-01@2x.png)
 
-##### Use the picker when migrating to AccessorySetupKit
+### Use the picker when migrating to AccessorySetupKit
 
 You can also perform a one-time migration of previously-configured accessories, which adds them to the AccessorySetupKit framework’s list of known accessories. To do this, create instances of [`ASMigrationDisplayItem`](./asmigrationdisplayitem.md) and include them in the array of items you send to [`showPicker(for:completionHandler:)`](./asaccessorysession/showpicker%28for,completionhandler%29.md).
 
@@ -135,7 +135,7 @@ For items you want to migrate, set one or both of the following:
 
 > ❗ **Important**: Don’t initialize a [`CBCentralManager`](../CoreBluetooth/cbcentralmanager.md) before migration is complete. If you do, your callback handler receives an error and the picker fails to appear.
 
-##### Perform custom filtering
+### Perform custom filtering
 
 Some apps need to obtain over-the-air (OTA) data from discovered accessories and perform additional filtering before showing them in the picker. The filtering includes tasks like validating the authenticity of an accessory, testing whether it’s in pairing mode, and other checks. If your app needs do this, set the picker’s display settings to use the [`filterDiscoveryResults`](./aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option. If you need unlimited time to perform filtering and perform additional actions like downloading product artwork, set the [`discoveryTimeout`](./aspickerdisplaysettings/discoverytimeout-swift.property.md) to [`unbounded`](./aspickerdisplaysettings/discoverytimeout-swift.struct/unbounded.md).
 
@@ -176,7 +176,7 @@ If your custom filtering process requires the app to finish the accessory discov
 
 > 💡 **Tip**: AccessorySetupKit limits the number of accessories it exposes for discovery. If you don’t discover the accessory you expect, manually cause a picker timeout by calling [`finishPickerDiscovery(completionHandler:)`](./asaccessorysession/finishpickerdiscovery%28completionhandler%29.md). If you want to retry, wait for the [`ASAccessoryEventType.pickerDidDismiss`](./asaccessoryeventtype/pickerdiddismiss.md) and call [`showPicker(for:completionHandler:)`](./asaccessorysession/showpicker%28for,completionhandler%29.md) again. In this scenario, you may want to suggest the person using the app verify that the accessory is powered up and nearby.
 
-##### Connect and configure the selected device
+### Connect and configure the selected device
 
 When the person picks an accessory, the picker sends an event of type [`ASAccessoryEventType.accessoryAdded`](./asaccessoryeventtype/accessoryadded.md), followed by an [`ASAccessoryEventType.pickerDidDismiss`](./asaccessoryeventtype/pickerdiddismiss.md) event when they dismiss the picker. If your app presents its own UI to configure the accessory, wait for the picker to dismiss, then use the accessory from the first event. You can handle this scenario by rewriting your event handler closure from before as follows, storing the accessory on the first event and retrieving it on the second.
 

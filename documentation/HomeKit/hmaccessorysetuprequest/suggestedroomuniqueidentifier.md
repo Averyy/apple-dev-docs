@@ -21,7 +21,7 @@ var suggestedRoomUniqueIdentifier: UUID? { get set }
 @property (copy, nullable) NSUUID * suggestedRoomUniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, then any room may be suggested. See [`uniqueIdentifier`](../hmhome/uniqueidentifier.md) for more information.
 

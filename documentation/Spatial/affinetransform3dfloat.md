@@ -23,7 +23,7 @@ struct AffineTransform3DFloat
 typedef struct { ... } SPAffineTransform3DFloat;
 ```
 
-#### Overview
+## Overview
 
 A single-precision 3D affine transformation matrix.
 

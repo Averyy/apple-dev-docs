@@ -20,11 +20,11 @@ Returns the sessions for this activity as an asynchronous sequence.
 static func sessions() -> Self.Sessions
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncSequence` type that contains the [`GroupSession`](../groupsession.md) objects for this activity.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve new sessions for the current activity. The method returns a sequence that may contain some or none of its values when you access it. The system adds an element to the sequence when the participant joins a new activity. It doesn’t update the sequence when properties of an active session change. For example, it doesn’t update the sequence when the state of the session changes.
 

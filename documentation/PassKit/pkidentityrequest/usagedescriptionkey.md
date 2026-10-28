@@ -26,7 +26,7 @@ var usageDescriptionKey: String? { get set }
 
 - [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
-#### Discussion
+## Discussion
 
 Use this key in the dictionary for [`NSIdentityUsageDescriptionDictionary`](../../BundleResources/information-property-list/nsidentityusagedescriptiondictionary.md) if you have multiple use cases for requesting identity information. Each key in the dictionary maps to a string that describes why your app requests identity information. If you have one use case for requesting identity information, use [`NSIdentityUsageDescription`](../../BundleResources/information-property-list/nsidentityusagedescription.md).
 

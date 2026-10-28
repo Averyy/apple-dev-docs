@@ -21,7 +21,7 @@ Options for constructing an attributed string from data you read from disk.
 struct DocumentReadingOptionKey
 ```
 
-#### Overview
+## Overview
 
 The [`NSAttributedString.DocumentReadingOptionKey`](./documentreadingoptionkey.md) type defines attributes to use when creating an attributed string from data in a file. Use these strings with methods such as [`init(data:options:documentAttributes:)`](./init%28data,options,documentattributes%29.md), [`init(HTML:options:documentAttributes:)`](./init%28html,options,documentattributes%29.md), [`init(URL:options:documentAttributes:)`](./init%28url,options,documentattributes%29.md), [`read(from:options:documentAttributes:)`](../nsmutableattributedstring/read%28from,options,documentattributes%29-5mbcx.md), and [`read(from:options:documentAttributes:)`](../nsmutableattributedstring/read%28from,options,documentattributes%29-54wth.md) to specify expected details. For example, specify the [`documentType`](./documentreadingoptionkey/documenttype.md) attribute to interpret the file data as a specific file format.
 

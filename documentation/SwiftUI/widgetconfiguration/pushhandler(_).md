@@ -21,7 +21,7 @@ Register a type that can handle push tokens changing for widgets.
 @preconcurrency func pushHandler(_ pushHandlerType: any WidgetPushHandler.Type) -> some WidgetConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this to opt this widget into supporting updates via push notifications.
 

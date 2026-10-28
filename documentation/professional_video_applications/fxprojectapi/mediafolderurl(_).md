@@ -20,7 +20,7 @@ func mediaFolderURL(_ mediaURL: AutoreleasingUnsafeMutablePointer<NSURL?>!) thro
 - (BOOL) mediaFolderURL:(NSURL * *) mediaURL error:(NSError * *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get the URL for a plug-in-specific directory within the media folder of a Motion project. The `mediaURL` will be `nil` if the user has not saved the project or the user did not select the “Collect Media” feature when saving. A sandboxed plug-in needs to add the appropriate entitlements to use security-scoped bookmarks to use this URL.
 

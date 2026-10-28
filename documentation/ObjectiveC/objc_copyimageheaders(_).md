@@ -33,7 +33,7 @@ func objc_copyImageHeaders(_ outCount: UnsafeMutablePointer<UInt32>?) -> UnsafeM
 extern const struct mach_header **objc_copyImageHeaders(unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of @c mach_header pointers. The array contains @c *outCount pointers followed by a @c NULL terminator. You must free the array with
 

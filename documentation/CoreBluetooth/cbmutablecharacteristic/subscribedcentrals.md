@@ -25,7 +25,7 @@ var subscribedCentrals: [CBCentral]? { get }
 @property (retain, readonly, nullable) NSArray<CBCentral *> * subscribedCentrals;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`CBCentral`](../cbcentral.md) objects that currently subscribe to the characteristic’s value. The array is empty if the characteristic isn’t configured to support notifications or indications. Even if the characteristic’s configuration supports notifications or indications, the array is empty if centrals aren’t subscribing to the characteristic’s value.
 

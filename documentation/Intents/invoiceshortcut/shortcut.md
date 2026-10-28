@@ -32,7 +32,7 @@ var shortcut: INShortcut { get }
 @property (atomic, copy, readonly) INShortcut * shortcut;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`shortcut`](./shortcut.md) property to access the [`intent`](../inshortcutreference/intent.md) or [`userActivity`](../inshortcutreference/useractivity.md) used to create the [`INShortcutReference`](../inshortcutreference.md) object.
 

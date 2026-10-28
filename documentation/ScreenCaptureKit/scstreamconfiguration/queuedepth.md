@@ -20,7 +20,7 @@ var queueDepth: Int { get set }
 @property (nonatomic, assign) NSInteger queueDepth;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system sets the queue depth to its minimum value of three frames. Specifying more frames uses more memory, but may allow you to process frame data without stalling the display stream.
 

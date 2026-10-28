@@ -21,7 +21,7 @@ Creates a SHA3-384 hash function.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Initialize a new hash function by calling this method if you want to hash data iteratively, such as when you don’t have a buffer large enough to hold all the data at once. Provide data blocks to the hash function using the `update(data:)` or [`update(bufferPointer:)`](./update%28bufferpointer%29.md) method. After providing all the data, call [`finalize()`](./finalize%28%29.md) to get the digest.
 

@@ -24,7 +24,7 @@ static var propertyIsCached: AudioFileStreamPropertyFlags { get }
 kAudioFileStreamPropertyFlag_PropertyIsCached
 ```
 
-#### Discussion
+## Discussion
 
 If this flag is not set,  get the value of the property from within this callback or set the [`cacheProperty`](./cacheproperty.md) flag to instruct the parser to begin caching the property data. Otherwise, the value will not be available after the callback returns.
 

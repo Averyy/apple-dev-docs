@@ -23,7 +23,7 @@ case deviceChanged
 DDEventTypeDeviceChanged
 ```
 
-#### Discussion
+## Discussion
 
 Report an event of this type to notify the system when information about a discovered device changes, for example, when:
 

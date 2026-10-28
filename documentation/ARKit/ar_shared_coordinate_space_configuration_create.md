@@ -15,11 +15,11 @@ Create a shared coordinate space configuration.
 extern ar_shared_coordinate_space_configuration_tar_shared_coordinate_space_configuration_create();
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_shared_coordinate_space_configuration_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

@@ -20,7 +20,7 @@ Status values that an action can report back to the animation system.
 enum ActionResult
 ```
 
-#### Overview
+## Overview
 
 Use these values within action event handlers to communicate the state of your action logic back to the animation system.
 

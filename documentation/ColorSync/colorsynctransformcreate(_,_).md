@@ -25,11 +25,11 @@ func ColorSyncTransformCreate(_ profileSequence: CFArray?, _ options: CFDictiona
 extern ColorSyncTransformRefColorSyncTransformCreate(CFArrayRef profileSequence, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`ColorSyncTransform`](./colorsynctransform.md), or `NULL` in case of failure.
 
-#### Discussion
+## Discussion
 
 Each dictionary in `profileSequence` contains a profile object and information on the usage of the profile in the transform.
 

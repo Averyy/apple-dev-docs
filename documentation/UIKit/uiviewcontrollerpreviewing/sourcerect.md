@@ -25,7 +25,7 @@ var sourceRect: CGRect { get set }
 @property (nonatomic) CGRect sourceRect;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if you want to specify a preview indication area that is different than the bounds of the view in the [`sourceView`](./sourceview.md) property. Set this property’s value in your object’s [`previewingContext(_:viewControllerForLocation:)`](../uiviewcontrollerpreviewingdelegate/previewingcontext%28_,viewcontrollerforlocation%29.md) method.
 

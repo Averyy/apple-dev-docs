@@ -24,7 +24,7 @@ func prepareRender(_ image: CIImage, from fromRect: CGRect, to destination: CIRe
 - (BOOL) prepareRender:(CIImage *) image fromRect:(CGRect) fromRect toDestination:(CIRenderDestination *) destination atPoint:(CGPoint) atPoint error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 By making this call, the Core Image framework ensures that any needed kernels are compiled, and any intermediate buffers are allocated and marked volatile up front.
 

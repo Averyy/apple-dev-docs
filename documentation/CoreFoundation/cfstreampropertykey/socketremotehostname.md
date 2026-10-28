@@ -25,7 +25,7 @@ static let socketRemoteHostName: CFStreamPropertyKey!
 extern CFStreamPropertyKey const kCFStreamPropertySocketRemoteHostName;
 ```
 
-#### Discussion
+## Discussion
 
 You cannot modify this value. You can read this value at any time.]
 

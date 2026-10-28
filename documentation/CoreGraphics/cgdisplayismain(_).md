@@ -20,11 +20,11 @@ func CGDisplayIsMain(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsMain(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is currently the main display; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 For information about the characteristics of a main display, see [`CGMainDisplayID()`](./cgmaindisplayid%28%29.md).
 

@@ -5,11 +5,11 @@
 
 Movie media is used to encapsulate embedded movies within QuickTime movies.
 
-#### Overview
+## Overview
 
 This feature is available in QuickTime 4.1.
 
-##### Movie sample description
+### Movie sample description
 
 Movie media doesn’t have a unique sample description. It uses the minimum sample description, which is `SampleDescriptionRecord`.
 

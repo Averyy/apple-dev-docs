@@ -15,11 +15,11 @@ Blocks the calling task until a specified time.
 OSStatus MPDelayUntil(AbsoluteTime *expirationTime);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 You cannot call this function from a cooperative task.  
 

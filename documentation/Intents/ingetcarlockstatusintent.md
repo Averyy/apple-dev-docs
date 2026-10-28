@@ -23,13 +23,13 @@ class INGetCarLockStatusIntent
 @interface INGetCarLockStatusIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 When the user asks for the car’s lock status, Siri creates an `INGetCarLockStatusIntent` object . This intent object can contain the name of the user’s car. Use this object to provide information about the car’s current lock status.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INGetCarLockStatusIntentHandling`](./ingetcarlockstatusintenthandling.md) protocol. Your handler should confirm the request and create an [`INGetCarLockStatusIntentResponse`](./ingetcarlockstatusintentresponse.md) object with the results.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -38,7 +38,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents, Siri Suggestions |
 | Always requires unlocked device? | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri their car’s locked status in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive, and Siri may recognize many other phrases.
 

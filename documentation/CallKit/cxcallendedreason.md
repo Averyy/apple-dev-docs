@@ -23,7 +23,7 @@ enum CXCallEndedReason
 enum CXCallEndedReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Pass these values to the [`reportCall(with:endedAt:reason:)`](./cxprovider/reportcall%28with,endedat,reason%29.md) method.
 

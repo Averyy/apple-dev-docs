@@ -27,7 +27,7 @@ UIKeyboardTypePhonePad
 
 - [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
-#### Discussion
+## Discussion
 
 This keyboard type prominently features the numbers `0` through `9` and the “`*`” and “`#`” characters. This keyboard type does not support auto-capitalization.
 

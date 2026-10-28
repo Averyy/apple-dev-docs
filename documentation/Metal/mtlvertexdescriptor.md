@@ -24,7 +24,7 @@ class MTLVertexDescriptor
 @interface MTLVertexDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLVertexDescriptor`](./mtlvertexdescriptor.md) instance is used to configure how vertex data stored in memory is mapped to attributes in a vertex shader.
 

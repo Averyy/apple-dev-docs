@@ -6,7 +6,7 @@
 
 A set of 32-bit flags that encode information about the animation settings of the object.
 
-#### Overview
+## Overview
 
 The `animationSettings` field of the object sample atom is a long integer that specifies a set of animation settings for an object node. Animation settings specify characteristics of the movie while it is playing. Use these constants to specify animation settings:
 

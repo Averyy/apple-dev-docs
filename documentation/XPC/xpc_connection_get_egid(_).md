@@ -25,7 +25,7 @@ func xpc_connection_get_egid(_ connection: xpc_connection_t) -> gid_t
 extern gid_t xpc_connection_get_egid(xpc_connection_t connection);
 ```
 
-#### Return Value
+## Return Value
 
 The EGID of the remote peer at the time the connection was made.
 

@@ -10,7 +10,7 @@ Display a 3D model that generates procedural textures in a reality view.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to create and display a 3D torus model that dynamically regenerates a [Metal](../Metal/Metal.md) texture at each render frame within a visionOS app.
 
@@ -21,7 +21,7 @@ At launch, the app starts a window group that contains:
 
 [Video: A video of a visionOS app displaying a translucent window with a 3D torus model on the left and a button on the right.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-drawable-1-main-view.mp4)
 
-##### Generate the texture of the model
+### Generate the texture of the model
 
 The sample constructs the `ProceduralTextureGenerator` structure, which contains the `generate()` method to generate and return a [`TextureResource`](../RealityKit/textureresource.md) to apply to the torus model. The app uses  [`GKARC4RandomSource`](../GameplayKit/gkarc4randomsource.md) to generate a number using the ARC4 algorithm, and assigns the `seed` to the generator to determine the random source’s behavior:
 
@@ -92,7 +92,7 @@ struct ProceduralTextureGenerator {
 
 The app attempts to create and return a [`TextureResource`](../RealityKit/textureresource.md) with the generated `image`.
 
-##### Update the texture in real time
+### Update the texture in real time
 
 The sample defines the custom system `DrawableQueueSystem` to update the model’s texture in real time:
 
@@ -231,7 +231,7 @@ struct DrawableQueueComponent: Component {
 
 The method sets up the encoder, then commits to the command buffer to submit the command buffer to run on the GPU. Lastly, it presents the updated texture to the renderer with the `present()` method.
 
-##### Set up the torus model
+### Set up the torus model
 
 The `EntityView` attempts to create the torus model by calling the `makeEntity()` method:
 
@@ -327,7 +327,7 @@ func updateEntity(_ entity: ModelEntity) throws {
 
 The method applies the material to the model of the entity, and attempts to set the `DrawableQueueComponent` to initalize the texture.
 
-##### Set up the parent window
+### Set up the parent window
 
 The `DrawableView` creates a [`State`](../SwiftUI/state.md) `seed` property to control the randomization of the texture generator:
 

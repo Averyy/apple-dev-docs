@@ -20,11 +20,11 @@ Returns a Core Graphics affine transform structure corresponding to the data in 
 class func cgAffineTransform(for string: String) -> CGAffineTransform
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics affine transform structure. If the string is not well-formed, the function returns the identity transform.
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`string(for:)`](./string%28for%29-6yx6n.md) function.
 

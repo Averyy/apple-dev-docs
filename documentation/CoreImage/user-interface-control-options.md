@@ -5,7 +5,7 @@
 
 Sets of controls for various user scenarios.
 
-#### Overview
+## Overview
 
 You can use these constants to specify the controls that you want associated with each user scenario. For example, for a filter that has many input parameters you can choose a small set of input parameters that the typical consumer can control and set the other input parameters to default values. For the same filter, however, you can choose to allow professional customers to control all the input parameters.
 

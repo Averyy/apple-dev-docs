@@ -17,7 +17,7 @@ A representation of an application on the user’s device.
 struct Application
 ```
 
-#### Overview
+## Overview
 
 Managed Settings represents apps with tokens to preserve user privacy and control.
 

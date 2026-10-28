@@ -26,7 +26,7 @@ class AVCaptureAutoExposureBracketedStillImageSettings
 
 - [Capturing a bracketed photo sequence](./capturing-a-bracketed-photo-sequence.md)
 
-#### Overview
+## Overview
 
 An [`AVCaptureAutoExposureBracketedStillImageSettings`](./avcaptureautoexposurebracketedstillimagesettings.md) instance defines the exposure target bias setting that should be applied to one image in a bracket. An array of `AVCaptureAutoExposureBracketedStillImageSettings` objects is passed to `captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler:` to specify the bracketing.
 

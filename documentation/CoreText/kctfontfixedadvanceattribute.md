@@ -25,7 +25,7 @@ let kCTFontFixedAdvanceAttribute: CFString
 extern CFStringRef const kCTFontFixedAdvanceAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 If present and specified, this attribute is used to specify a constant advance to override any font values. The value associated with this key is a float represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

@@ -20,7 +20,7 @@ A path component to animate a transform.
 case transform
 ```
 
-#### Discussion
+## Discussion
 
 This path component terminates an array of paths, and at the same time specifies a transform that animates.
 

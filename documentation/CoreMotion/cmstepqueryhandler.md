@@ -23,7 +23,7 @@ typealias CMStepQueryHandler = (Int, (any Error)?) -> Void
 typedef void (^)(long, NSError *) CMStepQueryHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This block takes two parameters:
 

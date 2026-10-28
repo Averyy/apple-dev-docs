@@ -15,11 +15,11 @@ Sets the modem status to the specified values.
 virtual kern_return_t SetModemStatus(bool cts, bool dsr, bool ri, bool dcd);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this method to report the state of the device to the system.
 

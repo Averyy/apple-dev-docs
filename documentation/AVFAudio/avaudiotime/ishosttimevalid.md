@@ -25,7 +25,7 @@ var isHostTimeValid: Bool { get }
 @property (nonatomic, readonly, getter=isHostTimeValid) BOOL hostTimeValid;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns [`true`](../../Swift/true.md) if the [`hostTime`](./hosttime.md) property is valid; otherwise, it returns [`false`](../../Swift/false.md).
 

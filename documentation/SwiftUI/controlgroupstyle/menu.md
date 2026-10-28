@@ -23,7 +23,7 @@ nonisolated static var menu: MenuControlGroupStyle { get }
 
 Available when `Self` is `MenuControlGroupStyle`.
 
-#### Discussion
+## Discussion
 
 To apply this style to a control group, or to a view that contains control groups, use the [`controlGroupStyle(_:)`](../view/controlgroupstyle%28_%29.md) modifier.
 

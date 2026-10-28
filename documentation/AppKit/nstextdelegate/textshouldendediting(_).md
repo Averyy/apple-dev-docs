@@ -20,7 +20,7 @@ optional func textShouldEndEditing(_ textObject: NSText) -> Bool
 - (BOOL) textShouldEndEditing:(NSText *) textObject;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate returns [`true`](../../Swift/true.md), the text object proceeds to finish editing and resign first responder status. If the delegate returns [`false`](../../Swift/false.md), the text object selects all of its text and remains the first responder.
 

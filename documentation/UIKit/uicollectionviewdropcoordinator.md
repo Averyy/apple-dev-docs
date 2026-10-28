@@ -27,7 +27,7 @@ protocol UICollectionViewDropCoordinator : NSObjectProtocol
 
 - [Supporting Drag and Drop in Collection Views](./supporting-drag-and-drop-in-collection-views.md)
 
-#### Overview
+## Overview
 
 You don’t create instances of this class yourself. When a drop occurs in the collection view, UIKit creates an instance of this class and passes it to your [`collectionView(_:performDropWith:)`](./uicollectionviewdropdelegate/collectionview%28_,performdropwith%29.md) method. Use the object to let the collection view know how you want to animate the dropped items into position.
 

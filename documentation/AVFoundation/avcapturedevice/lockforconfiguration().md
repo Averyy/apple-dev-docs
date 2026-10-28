@@ -24,7 +24,7 @@ func lockForConfiguration() throws
 - (BOOL) lockForConfiguration:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 To set hardware properties on a capture device, such as the [`focusMode`](./focusmode-swift.property.md) and [`exposureMode`](./exposuremode-swift.property.md), your app must first acquire a lock on the device. Only hold the device lock if your app requires settable device properties to remain unchanged. Holding the device lock unnecessarily may degrade capture quality in other apps sharing the device.
 

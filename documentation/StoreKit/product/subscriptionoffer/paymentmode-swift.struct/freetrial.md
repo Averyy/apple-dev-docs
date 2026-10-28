@@ -21,7 +21,7 @@ A payment mode of a product discount that indicates a free trial offer.
 static let freeTrial: Product.SubscriptionOffer.PaymentMode
 ```
 
-#### Discussion
+## Discussion
 
 With a Free trial payment mode, customers pay nothing during the discount period.
 

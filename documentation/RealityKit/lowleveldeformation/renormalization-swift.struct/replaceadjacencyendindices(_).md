@@ -18,11 +18,11 @@ Fills the per-vertex adjacency end-indices buffer using the given closure.
 func replaceAdjacencyEndIndices<R>(_ body: @_lifetime(0: copy 0) (inout MutableRawSpan) -> R) throws -> R where R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `body`.
 
-#### Discussion
+## Discussion
 
 After the closure returns, the framework validates every entry against the adjacency count. An out-of-range entry causes a throw.
 

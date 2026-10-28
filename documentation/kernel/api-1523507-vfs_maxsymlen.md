@@ -15,7 +15,7 @@ Get the maximum length of a symbolic link on a filesystem.
 uint32_t vfs_maxsymlen(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Max symlink length.
 

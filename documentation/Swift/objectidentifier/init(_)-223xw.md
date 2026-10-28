@@ -21,7 +21,7 @@ Creates an instance that uniquely identifies the given class instance.
 init(_ x: AnyObject)
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates an example class `IntegerRef` and compares instances of the class using their object identifiers and the identical-to operator (`===`):
 

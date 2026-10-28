@@ -20,11 +20,11 @@ string AdGroupUpdate.Status
 - `ENABLED`: The ad group is active and eligible to serve ads.
 - `PAUSED`: The ad group is paused and will not serve ads.
 
-#### Discussion
+## Discussion
 
 Send `status: PAUSED` to stop an existing ad group from competing for delivery, or `ENABLED` to resume it.
 
-##### Example
+### Example
 
 ```json
 {

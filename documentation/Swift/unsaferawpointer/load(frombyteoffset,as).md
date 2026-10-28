@@ -21,11 +21,11 @@ Returns a new instance of the given type, constructed from the raw memory at the
 func load<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T where T : ~Escapable
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of type `T`, read from the raw bytes at `offset`. The returned instance is memory-managed and unassociated with the value in the memory referenced by this pointer.
 
-#### Discussion
+## Discussion
 
 The memory at this pointer plus `offset` must be properly aligned for accessing `T` and initialized to `T` or another type that is layout compatible with `T`.
 

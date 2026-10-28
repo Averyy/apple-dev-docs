@@ -24,7 +24,7 @@ protocol GCDevicePhysicalInputStateDiff : NSObjectProtocol
 @protocol GCDevicePhysicalInputStateDiff <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the `GCDevicePhysicalInput` [`nextInputState()`](./gcdevicephysicalinput/nextinputstate%28%29.md) method to get an input state object conforming to this protocol.
 

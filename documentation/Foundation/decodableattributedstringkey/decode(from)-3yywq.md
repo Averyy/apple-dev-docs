@@ -23,11 +23,11 @@ static func decode(from decoder: any Decoder) throws -> Self.Value
 
 Available when `Value` inherits `NSObject` and `Value` conforms to `NSSecureCoding`.
 
-#### Return Value
+## Return Value
 
 The decoded object.
 
-#### Discussion
+## Discussion
 
 The default implementation decodes the object as a [`Data`](../data.md) instance, then uses an [`NSKeyedUnarchiver`](../nskeyedunarchiver.md) to unarchive the object.
 

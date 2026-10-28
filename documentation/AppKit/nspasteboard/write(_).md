@@ -19,11 +19,11 @@ func write(_ wrapper: FileWrapper) -> Bool
 - (BOOL) writeFileWrapper:(NSFileWrapper *) wrapper;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was successfully written, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Writes the serialized contents of the file wrapper `wrapper` to the receiver and declares the data to be of type `NSFileContentsPboardType` and also of a type appropriate for the file’s extension (as returned by the `NSCreateFileContentsPboardType` function when passed the files extension), if it has one. If `wrapper` does not have a preferred filename, this method raises an exception.
 

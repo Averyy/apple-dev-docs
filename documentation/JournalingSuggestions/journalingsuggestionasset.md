@@ -19,7 +19,7 @@ protocol JournalingSuggestionAsset
 
 - [Presenting the suggestions picker and processing a selection](./presenting-the-suggestions-picker-and-processing-a-selection.md)
 
-#### Overview
+## Overview
 
 When a person makes a selection in a [`JournalingSuggestionsPicker`](./journalingsuggestionspicker.md), the system invokes the picker’s `onCompletion` closure, and passes in the selected suggestion ([`JournalingSuggestion`](./journalingsuggestion.md)). Each item in the suggestion’s [`items`](./journalingsuggestion/items.md) array conforms to this protocol.
 

@@ -19,11 +19,11 @@
 static simd_float3 SPPoint3DFloatGetVector(SPPoint3DFloat point);
 ```
 
-#### Return Value
+## Return Value
 
 A vector that represents the point.
 
-#### Discussion
+## Discussion
 
 Returns the @p x, @p y, and @p z components of the point expressed as a simd vector.
 

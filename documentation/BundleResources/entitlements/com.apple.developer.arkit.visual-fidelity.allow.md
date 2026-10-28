@@ -18,7 +18,7 @@ A Boolean value that indicates whether your app can monitor visual fidelity.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Visual fidelity monitoring is part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers.
 

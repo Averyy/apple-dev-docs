@@ -20,7 +20,7 @@ Defines one or more triangles and quadrilaterals with two separate arrays of ind
 case polygons([UInt8], [UInt32])
 ```
 
-#### Discussion
+## Discussion
 
 Each element in the first array represents a polygon and the element’s value indicates how many vertices in that polygon. The elements in the second array are the vertex indices for the polygons.
 

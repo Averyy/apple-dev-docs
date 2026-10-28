@@ -21,7 +21,7 @@ init?(uuidString uuid: String, authority: CBIdentityAuthority)
 + (CBIdentity *) identityWithUUIDString:(NSString *) uuid authority:(CBIdentityAuthority *) authority;
 ```
 
-#### Return Value
+## Return Value
 
 The identity object, or `nil` if no identity is found with the matching criteria.
 

@@ -32,7 +32,7 @@ class SKPaymentDiscount
 - [Implementing promotional offers in your app](./implementing-promotional-offers-in-your-app.md)
 - [Generating a signature for promotional offers](./generating-a-signature-for-promotional-offers.md)
 
-#### Overview
+## Overview
 
 The [`SKPaymentDiscount`](./skpaymentdiscount.md) contains the details of a promotional offer discount that you want to apply to a [`SKMutablePayment`](./skmutablepayment.md).
 

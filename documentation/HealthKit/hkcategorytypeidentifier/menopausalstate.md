@@ -28,7 +28,7 @@ extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMenopausalState;
 
 - [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
 
-#### Discussion
+## Discussion
 
 Use this category type to record which menopausal state applies at a specific point in time. Each sample is a point-in-time entry where the start date equals the end date, and the value is one of the [`HKCategoryValueMenopausalState`](../hkcategoryvaluemenopausalstate.md) cases: [`HKCategoryValueMenopausalState.menopause`](../hkcategoryvaluemenopausalstate/menopause.md), [`HKCategoryValueMenopausalState.perimenopause`](../hkcategoryvaluemenopausalstate/perimenopause.md), or [`HKCategoryValueMenopausalState.none`](../hkcategoryvaluemenopausalstate/none.md).
 

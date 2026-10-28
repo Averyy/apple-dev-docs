@@ -24,7 +24,7 @@ var maximumCircleOfConfusion: Float { get set }
 @property (nonatomic, assign) float maximumCircleOfConfusion;
 ```
 
-#### Discussion
+## Discussion
 
 In a physically based camera simulation, the size of out-of-focus highlights that appear in images seen by the camera—commonly called *bokeh*—is a function of other camera properties, such as focal length, pupil aperture, sensor size, and distance to the subject. However, it can be useful for aesthetic reasons to limit the size of such highlights.
 

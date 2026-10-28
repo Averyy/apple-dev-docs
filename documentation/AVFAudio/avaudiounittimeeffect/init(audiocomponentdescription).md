@@ -24,11 +24,11 @@ init(audioComponentDescription: AudioComponentDescription)
 - (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) audioComponentDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioUnitTimeEffect` instance.
 
-#### Discussion
+## Discussion
 
 The `componentType` field of the description structure must be `kAudioUnitType_FormatConverter` (”`aufc`”); otherwise, the method raises an exception.
 

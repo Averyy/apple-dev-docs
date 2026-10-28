@@ -19,7 +19,7 @@ init?(name: String)
 + (NSPrinter *) printerWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSPrinter` object, or `nil` if the specified printer was not available.
 

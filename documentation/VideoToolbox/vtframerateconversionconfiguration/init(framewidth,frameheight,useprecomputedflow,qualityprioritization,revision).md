@@ -22,7 +22,7 @@ init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPriori
 - (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight usePrecomputedFlow:(BOOL) usePrecomputedFlow qualityPrioritization:(VTFrameRateConversionConfigurationQualityPrioritization) qualityPrioritization revision:(VTFrameRateConversionConfigurationRevision) revision;
 ```
 
-#### Discussion
+## Discussion
 
 Initialization fails if the dimensions are out of range or if the revision is unsupported.
 

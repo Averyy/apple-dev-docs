@@ -21,7 +21,7 @@ Calculates the single-precision element-wise product of a vector and a scalar va
 static func multiply<U, V>(_ scalar: Float, _ vector: U, result: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

@@ -17,7 +17,7 @@ Tells the delegate that the session detected NFC tags.
 - (void) tagReaderSession:(NFCTagReaderSession *) session didDetectTags:(NSArray<__kindof id<NFCTag>> *) tags;
 ```
 
-#### Discussion
+## Discussion
 
 The polling options specified when creating an [`NFCTagReaderSession`](../nfctagreadersession.md) object determine the types of tags that the session can detect.
 

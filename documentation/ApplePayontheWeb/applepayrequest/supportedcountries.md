@@ -16,7 +16,7 @@ A list of two-letter country codes for limiting payment to cards from specific c
 sequence <DOMString> supportedCountries;
 ```
 
-#### Discussion
+## Discussion
 
 Use the list of supported countries or regions to limit payment cards to those issued in specific countries or regions. Indicate the supported countries or regions by using ISO 3166 country codes.
 

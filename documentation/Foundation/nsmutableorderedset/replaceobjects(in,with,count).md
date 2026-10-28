@@ -25,7 +25,7 @@ func replaceObjects(in range: NSRange, with objects: UnsafePointer<AnyObject>?, 
 - (void) replaceObjectsInRange:(NSRange) range withObjects:(ObjectType const[]) objects count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 Elements are added to the new array in the same order they appear in objects, up to but not including index count.
 

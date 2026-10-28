@@ -23,7 +23,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataPresentationImmersiveMedia: CFString
 extern CFStringRef const kCMMetadataIdentifier_QuickTimeMetadataPresentationImmersiveMedia;
 ```
 
-#### Discussion
+## Discussion
 
 Presentation data associated with Apple Immersive Video’s video frames. Data is a JSON-encoding of ImmersiveMediaSupport framework’s PresentationDescriptor object. Expected data type is kCMMetadataBaseDataType_RawData.
 

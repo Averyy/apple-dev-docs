@@ -25,7 +25,7 @@ class MKAddress
 @interface MKAddress : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 MapKit capabilities, such as Search and Reverse geocoding, populate the [`MKAddress`](./mkaddress.md) of a [`MKMapItem`](./mkmapitem.md) with a full address, and a short address, if the framework has one.
 

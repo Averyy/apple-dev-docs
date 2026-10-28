@@ -25,11 +25,11 @@ func CGPDFScannerCreate(_ cs: CGPDFContentStreamRef, _ table: CGPDFOperatorTable
 extern CGPDFScannerRefCGPDFScannerCreate(CGPDFContentStreamRef cs, CGPDFOperatorTableRef table, void *info);
 ```
 
-#### Return Value
+## Return Value
 
 A PDF scanner object. In Objective-C, you’re responsible for releasing this object by calling the function [`CGPDFScannerRelease(_:)`](./cgpdfscannerrelease%28_%29.md).
 
-#### Discussion
+## Discussion
 
 When you want to parse the contents of the PDF stream, call the function [`CGPDFScannerScan(_:)`](./cgpdfscannerscan%28_%29.md).
 

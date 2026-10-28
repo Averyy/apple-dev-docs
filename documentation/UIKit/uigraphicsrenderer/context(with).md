@@ -23,11 +23,11 @@ class func context(with format: UIGraphicsRendererFormat) -> CGContext?
 + (CGContextRef) contextWithFormat:(UIGraphicsRendererFormat *) format;
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics context configured to represent the attributes in the format object.
 
-#### Discussion
+## Discussion
 
 Each time the graphics renderer needs to create a new Core Graphics context, it calls this method, providing the format object supplied at initialization time.
 

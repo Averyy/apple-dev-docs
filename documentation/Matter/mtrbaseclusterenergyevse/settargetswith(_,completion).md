@@ -29,7 +29,7 @@ func setTargetsWith(_ params: MTREnergyEVSEClusterSetTargetsParams) async throws
 - (void) setTargetsWithParams:(MTREnergyEVSEClusterSetTargetsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to set the user specified charging targets.
 

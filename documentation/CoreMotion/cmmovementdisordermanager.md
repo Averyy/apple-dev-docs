@@ -23,7 +23,7 @@ class CMMovementDisorderManager
 
 - [Getting movement disorder symptom data](./getting-movement-disorder-symptom-data.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Only collect data from patients clinically diagnosed with a movement disorder. This API is not designed to collect data from users who have not been diagnosed with a movement disorder. All medical decisions should be made through the guidance of a licensed clinician. For more information, see [Adhering to the movement disorder data collection requirements](./adhering-to-the-movement-disorder-data-collection-requirements.md).
 

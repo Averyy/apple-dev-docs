@@ -22,11 +22,11 @@ func userInfo() -> NSMutableDictionary!
 - (NSMutableDictionary *) userInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable dictionary.
 
-#### Discussion
+## Discussion
 
 When you add information to the dictionary, make sure that you use unique keys, such as `com.myCompany.foo`. You can use this dictionary to cache data that you want to share.
 

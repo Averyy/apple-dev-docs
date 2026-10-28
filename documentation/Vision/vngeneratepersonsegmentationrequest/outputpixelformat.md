@@ -24,7 +24,7 @@ var outputPixelFormat: OSType { get set }
 @property (nonatomic, readwrite) OSType outputPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The property supports the following values:
 

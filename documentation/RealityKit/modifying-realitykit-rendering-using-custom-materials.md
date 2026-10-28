@@ -5,7 +5,7 @@
 
 Write Metal shader functions to implement custom rendering effects.
 
-#### Overview
+## Overview
 
 RealityKit provides several types of materials that render entities using different techniques. Two examples are [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md), which renders entities in highly realistic fashion, and [`UnlitMaterial`](./unlitmaterial.md), which renders without any shadow or lighting effects. On iOS 15 and later, [`CustomMaterial`](./custommaterial.md) allows you to write shader functions in Metal to modify how RealityKit renders an entity, while still leveraging RealityKit’s built-in shader pipeline.
 
@@ -19,7 +19,7 @@ The other type of Metal shader that RealityKit uses is the *vertex shader*. Vert
 
 For more information on writing Metal shaders, see [Debugging the shaders within a draw command or compute dispatch](../Xcode/debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md).
 
-##### Write a surface shader
+### Write a surface shader
 
 To use a custom material, first write a surface shader in Metal. Start by adding a new file to your Xcode project using the Metal File template. You can use any function name you want for your surface shader, but you must prefix your function with the `[[visible]]` keyword. Your function must have no return value and take a single parameter of type `realitykit::surface_parameters`.
 
@@ -86,7 +86,7 @@ void mySurfaceShader(realitykit::surface_parameters params)
 }
 ```
 
-##### Write a geometry modifier
+### Write a geometry modifier
 
 If you need to modify the vertex positions or other vertex values for your entity, write a geometry modifier function. Otherwise, you can create your custom material with only a surface shader. To write a geometry modifier, create a new Metal file in your Xcode project, or add a new function to the same file that contains your surface shader.
 
@@ -124,7 +124,7 @@ void simpleGeometryModifier(realitykit::geometry_parameters params)
 
 > ❗ **Important**: If your geometry modifier moves any vertices outside of the entity’s bounding box, assign a value to [`boundsMargin`](./modelcomponent/boundsmargin.md) to enlarge the bounding box and prevent RealityKit from incorrectly culling the entity.
 
-##### Load the custom shaders
+### Load the custom shaders
 
 To create a custom material for an entity, first load the Metal library that contains your shader functions, then load the functions by name, as the following sample code demonstrates:
 
@@ -146,7 +146,7 @@ let surfaceShader = CustomMaterial.SurfaceShader(named: "mySurfaceShader",
                                                  in: library)
 ```
 
-##### Choose a lighting model
+### Choose a lighting model
 
 Every custom material needs a *lighting model*, which determines the basic approach RealityKit uses to render an entity with a custom material. The lighting model affects how the entity looks and which output functions your surface shader can use. There are three options:
 
@@ -156,7 +156,7 @@ Every custom material needs a *lighting model*, which determines the basic appro
 | `.clearcoat` | Uses PBR techniques, including clearcoat. | All |
 | `.unlit` | Renders without any shading or lighting calculations. The result is similar to using an [`UnlitMaterial`](./unlitmaterial.md). | Uses `set_emissive_color()` only |
 
-##### Create and use the custom material
+### Create and use the custom material
 
 In your Swift code, create a custom material using your loaded shader functions and selected lighting model. To create a custom material from scratch, use [`init(surfaceShader:geometryModifier:lightingModel:)`](./custommaterial/init%28surfaceshader,geometrymodifier,lightingmodel%29.md), as the following code demonstrates:
 

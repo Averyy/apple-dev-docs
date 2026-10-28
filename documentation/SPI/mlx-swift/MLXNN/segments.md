@@ -17,7 +17,7 @@ Describes how an unsharded weight is composed.
 enum Segments
 ```
 
-#### Overview
+## Overview
 
 A fused QKV matrix, for example, is three segments stacked together and each has to be sharded separately.
 

@@ -19,7 +19,7 @@ Returns the font weight and range at the index position.
 func fontWeight(at index: String.Index) -> (AVCaption.FontWeight, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the font weight and range to which it applies.
 

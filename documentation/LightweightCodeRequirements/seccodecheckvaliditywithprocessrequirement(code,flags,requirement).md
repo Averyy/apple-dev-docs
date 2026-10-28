@@ -16,7 +16,7 @@ Checks whether the code associated with a running process satisfies a lightweigh
 func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult
 ```
 
-#### Discussion
+## Discussion
 
 Returns a validation result which indicates whether the code signature is valid, whether it matches the requirement, and if not one of those two, then why not.
 

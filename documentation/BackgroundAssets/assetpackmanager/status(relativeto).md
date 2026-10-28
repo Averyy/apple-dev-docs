@@ -20,11 +20,11 @@ Checks the current status relative to a particular asset pack.
 func status(relativeTo assetPack: AssetPack) async throws -> AssetPack.Status
 ```
 
-#### Return Value
+## Return Value
 
 The current status relative to the asset pack.
 
-#### Discussion
+## Discussion
 
 This method checks whether any version of the specified asset pack is currently downloaded. If one is, then it determines the version relationship between the downloaded asset pack and the specified asset pack. If they have different version numbers, then the returned status value will contain [`outOfDate`](../assetpack/status/outofdate.md). The returned status value will contain [`updateAvailable`](../assetpack/status/updateavailable.md) only if the relevant asset pack on the server hasn’t been further updated since the initialization of the provided [`AssetPack`](../assetpack.md) instance.
 

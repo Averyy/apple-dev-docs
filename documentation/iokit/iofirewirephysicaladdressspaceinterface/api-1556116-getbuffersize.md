@@ -16,7 +16,7 @@ Get the size in bytes of this address space.
 const UInt32 (*GetBufferSize)(IOFireWireLibPhysicalAddressSpaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Size of the pseudo address space in bytes.
 

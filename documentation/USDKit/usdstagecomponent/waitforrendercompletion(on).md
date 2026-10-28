@@ -21,11 +21,11 @@ Waits for automatic rendering to complete.
 static func waitForRenderCompletion(on entity: Entity) async -> USDStageComponent.RenderResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the render operation.
 
-#### Discussion
+## Discussion
 
 If the entity does not have a `USDStageComponent` attached, or if the attached component is in manual mode, the result is `.failed`.
 

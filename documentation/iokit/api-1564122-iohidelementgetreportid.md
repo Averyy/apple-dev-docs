@@ -16,11 +16,11 @@ Returns the report ID for the element.
 uint32_t IOHIDElementGetReportID(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the report ID.
 
-#### Discussion
+## Discussion
 
 The report ID represents what report this particular element belongs to.
 

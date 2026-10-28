@@ -33,7 +33,7 @@ func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?)
 - [Responding to changing display modes on Apple TV](../responding-to-changing-display-modes-on-apple-tv.md)
 - [Scaling fonts automatically](../scaling-fonts-automatically.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when the iOS interface environment changes. Implement this method in view controllers and views, according to your app’s needs, to respond to such changes. For example, you might adjust the layout of the subviews of a view controller when someone rotates from portrait to landscape orientation. The default implementation of this method is empty.
 

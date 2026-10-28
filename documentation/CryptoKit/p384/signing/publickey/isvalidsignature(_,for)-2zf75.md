@@ -21,7 +21,7 @@ Verifies an elliptic curve digital signature algorithm (ECDSA) signature on a bl
 func isValidSignature<D>(_ signature: P384.Signing.ECDSASignature, for data: D) -> Bool where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the signature is valid for the given data; otherwise, `false`.
 

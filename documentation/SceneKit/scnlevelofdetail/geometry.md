@@ -25,7 +25,7 @@ var geometry: SCNGeometry? { get }
 @property (readonly, nullable) SCNGeometry * geometry;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit renders this geometry instead of the original geometry when the level of detail is appropriate. Generally, levels of detail with larger [`worldSpaceDistance`](./worldspacedistance.md) values or smaller [`screenSpaceRadius`](./screenspaceradius.md) values should contain less complex geometries.
 

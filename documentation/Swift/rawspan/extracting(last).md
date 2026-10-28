@@ -21,11 +21,11 @@ Returns a span containing the trailing bytes of the span, up to the given maximu
 func extracting(last maxLength: Int) -> RawSpan
 ```
 
-#### Return Value
+## Return Value
 
 A span with at most `maxLength` bytes.
 
-#### Discussion
+## Discussion
 
 If the maximum length exceeds the length of this span, the result contains all the bytes.
 

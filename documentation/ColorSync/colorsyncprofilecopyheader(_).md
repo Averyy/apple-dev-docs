@@ -25,7 +25,7 @@ func ColorSyncProfileCopyHeader(_ prof: ColorSyncProfile!) -> Unmanaged<CFData>!
 extern CFDataRefColorSyncProfileCopyHeader(ColorSyncProfileRef prof);
 ```
 
-#### Return Value
+## Return Value
 
 The profile header (in host endianness), or `NULL` in case of failure.
 

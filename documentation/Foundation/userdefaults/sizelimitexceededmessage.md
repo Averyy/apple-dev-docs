@@ -21,7 +21,7 @@ A message the system sends when the size of the data in the defaults database ex
 struct SizeLimitExceededMessage
 ```
 
-#### Overview
+## Overview
 
 In tvOS, the system posts this message as a warning when the size of your app’s defaults database reaches 512 kilobytes. If your app continues to write to the defaults database, the system terminates your app when the database reaches or exceeds 1 megabyte in size.
 

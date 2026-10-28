@@ -24,11 +24,11 @@ var maximumAllowedDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval maximumAllowedDuration;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum time interval between the sample’s [`startDate`](../hksample/startdate.md) and [`endDate`](../hksample/enddate.md) properties.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if [`isMaximumDurationRestricted`](./ismaximumdurationrestricted.md) is [`false`](../../Swift/false.md).
 

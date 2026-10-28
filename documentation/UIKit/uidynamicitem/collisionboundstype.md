@@ -23,7 +23,7 @@ optional var collisionBoundsType: UIDynamicItemCollisionBoundsType { get }
 @property (nonatomic, readonly) UIDynamicItemCollisionBoundsType collisionBoundsType;
 ```
 
-#### Discussion
+## Discussion
 
 The dynamics system uses this property to determine how to evaluate collisions with the dynamic item. Rectangular and elliptical bounds are defined by the [`bounds`](./bounds.md) property of the item. For custom collision bounds, the shape of the bounds are in the [`collisionBoundingPath`](./collisionboundingpath.md) property.
 

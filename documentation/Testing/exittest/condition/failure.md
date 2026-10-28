@@ -20,7 +20,7 @@ static var failure: ExitTest.Condition { get }
 
 - [Exit testing](../../exit-testing.md)
 
-#### Discussion
+## Discussion
 
 This condition matches any exit code other than `EXIT_SUCCESS` or any signal that causes the process to exit.
 

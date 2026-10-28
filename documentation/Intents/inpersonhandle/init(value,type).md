@@ -24,7 +24,7 @@ convenience init(value: String?, type: INPersonHandleType)
 - (instancetype) initWithValue:(NSString *) value type:(INPersonHandleType) type;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized person handle object.
 

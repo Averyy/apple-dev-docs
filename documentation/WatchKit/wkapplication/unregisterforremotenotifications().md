@@ -19,7 +19,7 @@ func unregisterForRemoteNotifications()
 - (void) unregisterForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to unregister from all remote notifications; for example, unregister to stop receiving notifications when the user logs out of their account.
 

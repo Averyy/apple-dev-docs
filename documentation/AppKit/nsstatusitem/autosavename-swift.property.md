@@ -19,7 +19,7 @@ var autosaveName: NSStatusItem.AutosaveName! { get set }
 @property (copy, null_resettable) NSStatusItemAutosaveName autosaveName;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not provide an autosave name for a status item, the system automatically chooses a unique name. Setting this property to [`nil`](../../ObjectiveC/nil-227m0.md) resets it to the automatically chosen name.
 

@@ -25,7 +25,7 @@ func setColorStoreAction(_ storeAction: MTLStoreAction, index colorAttachmentInd
 - (void) setColorStoreAction:(MTLStoreAction) storeAction atIndex:(NSUInteger) colorAttachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the render command encoder’s store action for a color attachment. You can assign the default store action for a color attachment by configuring the [`storeAction`](../mtlrenderpassattachmentdescriptor/storeaction.md) property of its [`MTLRenderPassColorAttachmentDescriptor`](../mtlrenderpasscolorattachmentdescriptor.md) (see [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) and its [`colorAttachments`](../mtlrenderpassdescriptor/colorattachments.md) property).
 

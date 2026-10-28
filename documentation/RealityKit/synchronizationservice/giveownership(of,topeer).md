@@ -22,7 +22,7 @@ Transfers ownership of the given entity to the named network device.
 @MainActor @preconcurrency func giveOwnership(of entity: Entity, toPeer: any SynchronizationPeerID) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that’s `true` if the ownership transfer succeeds.
 

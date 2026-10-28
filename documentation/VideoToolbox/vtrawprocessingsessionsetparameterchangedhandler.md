@@ -13,7 +13,7 @@
 extern OSStatus VTRAWProcessingSessionSetParameterChangedHandler(VTRAWProcessingSessionRef session, VTRAWProcessingParameterChangeHandler parameterChangeHandler);
 ```
 
-#### Discussion
+## Discussion
 
 Provides a block which will be called when the VTRAWProcessingPlugin changes the set of processing parameters..
 

@@ -5,7 +5,7 @@
 
 Request an encrypted embedded assertion for login types that require password encryption.
 
-#### Overview
+## Overview
 
 During authentication, if the SSO extension requests password encryption by setting the [`loginRequestEncryptionPublicKey`](./asauthorizationproviderextensionloginconfiguration/loginrequestencryptionpublickey.md) in the login configuration, the system doesn’t send the password in the login request. Instead, it creates an encrypted embedded assertion instead, that contains the password. The assertion is a JSON Web Encryption (JWE) object that’s encrypted according to RFC 7516 Section 5.1 with JWE Compact Serialization. The supported key agreement algorithm is `ECDH-ES` per RFC 7518 Section 4.6. This algorithm is `ECIES`, a proven-secure algorithm with the public keys included. See the Configure concatenation key derivation function (Concat KDF) section below for input values. Key agreement uses the public key for the [`loginRequestEncryptionPublicKey`](./asauthorizationproviderextensionloginconfiguration/loginrequestencryptionpublickey.md) that’s supplied during registration. The supported encryption algorithm is `A256GCM` per RFC 7518 Section 5.3.
 
@@ -37,7 +37,7 @@ The following table specifies the body parameters that the system uses to create
 | [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or `request_nonce` | The value returned from the nonce request | Required: The key name is either the [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
 | `loginConfiguration.customAssertionRequestBodyClaims` merged with `userLoginConfiguration.customAssertionRequestBodyClaims` |  | Optional: If present, adds the key value pairs to the assertion. |
 
-##### Configure concatenation key derivation function (Concat KDF)
+### Configure concatenation key derivation function (Concat KDF)
 
 Configuration of Concat KDF for Platform SSO is per RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2. See the input definitions in the table below. The system concatenates these values per NIST.800-56A sections 5.8.1 and then it computes a SHA-256 hash to create the key. Then, it sends the `PartyUInfo` and `PartyVInfo` values to the server in the header.
 

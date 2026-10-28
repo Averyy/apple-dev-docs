@@ -23,7 +23,7 @@ An array of strings that represent the types of mobile documents (mdoc) that an 
 - `org.iso.23220.1.jp.mnc`: The category for a Japan MyNumber card.
 - `org.iso.18013.5.1.mDL`: The category for a mobile driver’s license.
 
-#### Discussion
+## Discussion
 
 Use this entitlement to define the types of mobile documents that the app provides.
 

@@ -21,7 +21,7 @@ The indices that are valid for subscripting the array, in ascending order.
 var indices: Range<InlineArray<count, Element>.Index> { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

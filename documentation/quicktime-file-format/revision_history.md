@@ -5,42 +5,42 @@
 
 Changes to the QuickTime File Format.
 
-#### Overview
+## Overview
 
-##### 2016-09-13
+### 2016-09-13
 
-###### Updated
+#### Updated
 
 - Updated the color atom (`'colr'`) to include information on new color standards, including DCI P3, P3 D65, and ITU-R BT.2020.
 
-##### 2015-02-14
+### 2015-02-14
 
-###### Added
+#### Added
 
 - A new facility for timed metadata tracks has been incorporated, see [Timed metadata media](./timed_metadata_media.md). Introduce `'cdsc'` track reference type, see [`Track reference type atom`](./track_reference_type_atom.md). Added more well-known metadata data types, see [Type indicator](./type_indicator.md).
 
-##### 2014-02-11
+### 2014-02-11
 
-###### Updated
+#### Updated
 
 - Updated the section on closed caption tracks.
 
-##### 2012-08-14
+### 2012-08-14
 
-###### Updated
+#### Updated
 
 - Corrected the values for `kQTSampleDependency_OtherSamplesDependOnThisSample` and `kQTSampleDependency_-NoOtherSampleDependsOnThisSample`.
 
-##### 2012-08-01
+### 2012-08-01
 
-###### Added
+#### Added
 
 - Added [`Track exclude from autoselection atom`](./track_exclude_from_autoselection_atom.md).
 - Added `clcp`, `fall`, `folw`, and `forc` to [`Track reference type atom`](./track_reference_type_atom.md).
 - Added [`Text media information atom`](./text_media_information_atom.md), [Closed captioning media](./closed_captioning_media.md), and [Subtitle media](./subtitle_media.md).
 - Added [Preparing sound and subtitle alternate groups for use with Apple devices](./preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md).
 
-###### Updated
+#### Updated
 
 - In [User data atoms](./user_data_atoms.md), expanded the description of `'tnam'` and added `'tagc'` with related section Media Characteristic Tags.
 - Explained alternate groups in [`Alternate group`](./track_header_atom/alternate_group.md).
@@ -49,38 +49,38 @@ Changes to the QuickTime File Format.
 - [`Timecode media information atom`](./timecode_media_information_atom.md) now documents the reserved integer after the text size.
 - “Audio track” changed to “sound track” for consistency.
 
-###### Deprecated
+#### Deprecated
 
 - Deprecated `‘rsrc’` data reference.
 
-##### 2011-07-13
+### 2011-07-13
 
-###### Added
+#### Added
 
 - The sound sample description v2 format along with the definition of two new sound sample description extensions, see [`Sound sample description version 2`](./sound_sample_description_version_2.md).
 - New atoms for the display of track aperture in different modes, see [`Track aperture mode dimensions atom`](./track_aperture_mode_dimensions_atom.md).
 - New sample atoms for handling out-of-order movie samples, see [Sample atoms](./sample_atoms.md).
 - [Audio priming-handling encoder delay in AAC](./appendix_g_audio_priming_handling_encoder_delay_in_aac.md), which treats how to handle temporal positioning of AAC audio data explicitly.
 
-###### Updated
+#### Updated
 
 - The Macintosh language codes table has been updated with current language names, see [Language code values](./language_code_values.md) and the related [`Extended language tag atom`](./extended_language_tag_atom.md) defined.
 
-##### 2010-08-03
+### 2010-08-03
 
-###### Updated
+#### Updated
 
 - Corrected the order of fields described in the [`Metadata handler atom`](./metadata_handler_atom.md) structure.
 
-##### 2010-05-03
+### 2010-05-03
 
-###### Added
+#### Added
 
 - Added description of clip-based metadata and specific key/value pairs for location metadata.
 
-##### 2007-09-04
+### 2007-09-04
 
-###### Added
+#### Added
 
 - First public release of complete, updated *QuickTime File Format Specification* with information about atoms and atom types.
 - Added licensing information and disclaimer for developers.
@@ -92,7 +92,7 @@ Changes to the QuickTime File Format.
 - Video sample descriptions may now a clean aperture atom. See [`Clean aperture`](./clean_aperture.md) (`'clap'`).
 - MPEG-4 video and audio sample descriptions may now contain elementary stream descriptor atoms. See [`MPEG-4 elementary stream descriptor atom`](./mpeg-4_elementary_stream_descriptor_atom.md) (`'esds'`) and [`MPEG-4 elementary stream descriptor atom  ('esds')`](./mpeg-4_elementary_sound_stream_descriptor_atom.md) (`'esds'`).
 
-###### Updated
+#### Updated
 
 - Modified introductory sections and atom descriptions; updated artwork and edited for technical accuracy.
 - The sound description record has been expanded to represent variable bit-rate compression more accurately. See [Sound sample descriptions](./sound_sample_descriptions.md).

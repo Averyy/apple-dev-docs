@@ -5,13 +5,13 @@
 
 Record an AR session in Reality Composer and replay it in your ARKit app.
 
-#### Overview
+## Overview
 
 [ARKit](./ARKit.md) apps use video feeds and sensor data from an iOS device to understand the world around the device. This reliance on real-world input makes the testing of an AR experience challenging because real-world input is never the same across two AR sessions. Differences in lighting conditions, device motion, and the location of nearby objects all change how RealityKit understands and renders the scene each time.
 
 To provide consistent data to your AR app, you can record a session using [Reality Composer](https://apps.apple.com/us/app/reality-composer/id1462358802), then use the recorded camera and sensor data to drive your app when running from Xcode.
 
-##### Record an AR Session in Reality Composer
+### Record an AR Session in Reality Composer
 
 On an iOS device, create a Reality Composer scene with the same anchor type as the app you’re recording the session for, then follow these steps to create the recording.
 
@@ -23,7 +23,7 @@ On an iOS device, create a Reality Composer scene with the same anchor type as t
 
 Move your device around until it anchors the Reality Composer scene, then continue moving it around until you’ve captured the desired input. When done, tap the stop button to end recording. Rename the recording by providing a custom name in the Capture Complete window, then tap Done to save the recording to Reality Composer’s library.
 
-##### Replay an AR Session in Reality Composer
+### Replay an AR Session in Reality Composer
 
 To replay a session capture right after recording it, tap the Replay button in the Capture Complete window.
 
@@ -37,7 +37,7 @@ To replay a session later, follow these steps:
 
 If the recorded session meets your needs, you can export it to a Quicktime movie file by hitting the Share button from either the Recording Complete window or the Playback Complete window. If your Mac is on and unlocked, you can Airdrop the file directly to your computer.
 
-##### Use a Recorded Session in an App
+### Use a Recorded Session in an App
 
 In Xcode, you can specify an exported recording to use when launching your app. To select a recording, edit your project’s scheme and choose the Run phase from the left pane. Select the Options tab, then look for a row labeled ARKit with a “Replay data” checkbox next to it. Check that box, then choose Add Replay Data to Project from the popup button next to it to select the recording.
 

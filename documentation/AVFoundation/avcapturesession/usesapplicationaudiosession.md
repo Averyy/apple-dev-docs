@@ -22,7 +22,7 @@ var usesApplicationAudioSession: Bool { get set }
 @property (nonatomic) BOOL usesApplicationAudioSession;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If you set the value to [`false`](../../Swift/false.md), the capture session uses a private [`AVAudioSession`](../../AVFAudio/avaudiosession.md) instance for audio recording, which may cause interruptions if your app uses its own audio session for playback.
 

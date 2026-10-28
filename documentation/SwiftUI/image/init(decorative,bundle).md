@@ -21,7 +21,7 @@ Creates an unlabeled, decorative image.
 init(decorative name: String, bundle: Bundle? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI ignores this image for accessibility purposes.
 

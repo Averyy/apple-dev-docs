@@ -18,7 +18,7 @@ The in-app binding identifier.
 let id: String
 ```
 
-#### Discussion
+## Discussion
 
 This identifier is the in-app binding identifier that your server receives from the Apple server when your server initiates payment method binding.
 

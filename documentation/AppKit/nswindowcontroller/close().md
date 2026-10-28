@@ -19,7 +19,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 Because this method closes the window without asking the user for confirmation, you usually do not invoke it when the Close menu command is chosen. Instead invoke NSWindow’s [`performClose(_:)`](../nswindow/performclose%28_%29.md) on the receiver’s window.
 

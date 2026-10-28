@@ -25,7 +25,7 @@ func cblas_sspr2(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ N: __LAPACK_int, _ 
 void cblas_sspr2(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const __LAPACK_int N, const float ALPHA, const float *X, const __LAPACK_int INCX, const float *Y, const __LAPACK_int INCY, float *A);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates `A + alpha*x*y`.
 

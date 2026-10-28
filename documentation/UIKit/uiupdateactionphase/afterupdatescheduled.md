@@ -23,7 +23,7 @@ class var afterUpdateScheduled: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * afterUpdateScheduled;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs after timing information for the UI update is available. Use this phase to perform tasks that rely on UI update timing information, but don’t need user input events, such as time-driven animations or noninteractive simulations.
 

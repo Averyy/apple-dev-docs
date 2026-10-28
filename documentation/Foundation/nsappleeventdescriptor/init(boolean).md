@@ -20,7 +20,7 @@ init(boolean: Bool)
 + (NSAppleEventDescriptor *) descriptorWithBoolean:(Boolean) boolean;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor with the specified Boolean value, or `nil` if an error occurs.
 

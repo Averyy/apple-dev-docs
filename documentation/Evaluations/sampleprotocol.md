@@ -21,7 +21,7 @@ A type that defines evaluation samples.
 protocol SampleProtocol : Decodable, Encodable, Sendable
 ```
 
-#### Overview
+## Overview
 
 ```swift
 struct MySample: SampleProtocol {

@@ -16,11 +16,11 @@ Unproject a 2D point from the viewport onto a plane in 3D world coordinates.
 - (simd_float3) unprojectPoint:(CGPoint) point ontoPlaneWithTransform:(simd_float4x4) planeTransform viewRotationAngle:(CGFloat) viewRotationAngle viewportSize:(CGSize) viewportSize;
 ```
 
-#### Return Value
+## Return Value
 
 3D position in world coordinates or `NAN` values if unprojection is not possible.
 
-#### Discussion
+## Discussion
 
 A 2D point in the viewport coordinate space can refer to any point along a line segment in the 3D coordinate space. Unprojecting calculates the 3D position of the point along this line segment that intersects the provided plane.
 

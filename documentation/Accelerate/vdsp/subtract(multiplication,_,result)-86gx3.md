@@ -21,7 +21,7 @@ Calculates the single-precision element-wise difference of the product of a vect
 static func subtract<T, U, V>(multiplication: (a: U, b: Float), _ vector: T, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, subtracts vector `C` from the product, and writes the result to vector `D`, as follows:
 

@@ -13,11 +13,11 @@
 errno_t ifnet_attach_protocol(ifnet_t interface, protocol_family_t protocol_family, const struct ifnet_attach_proto_param *proto_details);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Attaches a protocol to an interface.
 

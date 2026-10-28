@@ -28,7 +28,7 @@ func deallocateRenderResources()
 
 - [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Discussion
+## Discussion
 
 Hosts should call this after finishing rendering. Subclasses should call the superclass implementation.
 

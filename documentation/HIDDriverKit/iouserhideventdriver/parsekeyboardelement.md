@@ -16,11 +16,11 @@ Parses an element to see if it contains keyboard-related information.
 virtual bool parseKeyboardElement(IOHIDElement *element);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the element contains relevant keyboard information, or `false` if it doesn’t.
 
-#### Discussion
+## Discussion
 
 This method checks the element to determine if it contains keyboard data suitable for dispatching in an event. If it does, the method stores a reference to the element for later use. When the driver object receives subsequent reports from the device, it uses the information in the stored keyboard elements to dispatch keyboard-specific events.
 

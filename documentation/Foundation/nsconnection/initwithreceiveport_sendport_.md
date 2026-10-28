@@ -16,11 +16,11 @@ Returns an `NSConnection` object initialized with given send and receive ports.
 - (instancetype) initWithReceivePort:(NSPort *) receivePort sendPort:(NSPort *) sendPort;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSConnection` object initialized with `receivePort` and `sendPort`. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 The new `NSConnection` object adds `receivePort` to the current `NSRunLoop` object with `NSDefaultRunLoopMode` as the mode. If the application doesn’t use an `NSApplication` object to handle events, it needs to run the `NSRunLoop` object with one of its various `run...` messages.
 

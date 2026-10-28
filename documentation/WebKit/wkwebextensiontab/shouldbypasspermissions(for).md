@@ -23,7 +23,7 @@ optional func shouldBypassPermissions(for context: WKWebExtensionContext) -> Boo
 - (BOOL) shouldBypassPermissionsForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the app to dynamically control whether a tab can bypass standard host permission checks.
 

@@ -21,7 +21,7 @@ The current hovering state and value of the pointer.
 enum HoverPhase
 ```
 
-#### Overview
+## Overview
 
 When you use the [`onContinuousHover(coordinateSpace:perform:)`](./view/oncontinuoushover%28coordinatespace,perform%29.md) modifier, you can handle the hovering state using the `action` closure. SwiftUI calls the closure with a phase value to indicate the current hovering state. The following example updates `hoverLocation` and `isHovering` based on the phase provided to the closure:
 

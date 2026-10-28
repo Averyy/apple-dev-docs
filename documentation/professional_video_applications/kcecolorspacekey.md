@@ -19,7 +19,7 @@ var kCEColorSpaceKey: String { get }
 #define kCEColorSpaceKey
 ```
 
-#### Discussion
+## Discussion
 
 The value can be one of the integers representing a color space from [`eCEColorSpace`](./ececolorspace.md). If you don’t provide this key, the output file uses the same color space as the source file.
 

@@ -19,7 +19,7 @@ func setForegroundLayer(_ aLayer: CALayer!)
 - (void) setForegroundLayer:(CALayer *) aLayer;
 ```
 
-#### Discussion
+## Discussion
 
 The foreground overlay layer can have sublayers. Additionally, the layers can also contain animations.
 

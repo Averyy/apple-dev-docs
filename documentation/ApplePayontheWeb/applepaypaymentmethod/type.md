@@ -16,7 +16,7 @@ A string value representing the card’s type of payment.
 ApplePayPaymentMethodType type;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ApplePayPaymentMethodType`](../applepaypaymentmethodtype.md) for the list of types.
 

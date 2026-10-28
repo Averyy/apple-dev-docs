@@ -17,7 +17,7 @@ The tokens a scripted model emits on each assistant turn, and how it finds the t
 struct TurnScripts
 ```
 
-#### Overview
+## Overview
 
 A turn starts after each occurrence of [`turnMarker`](./turnscripts/turnmarker.md) (the template’s generation prompt, such as `<|assistant|>`). Within a turn the script is indexed by position, not content: the token after position `start + k` is `script[k + 1]`, whatever the input. So a wrong speculative draft does not move the cursor, and a model with a different script (a draft model) keeps following its own.
 

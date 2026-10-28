@@ -21,11 +21,11 @@ func SecKeychainSetDomainDefault(_ domain: SecPreferencesDomain, _ keychain: Sec
 OSStatus SecKeychainSetDomainDefault(SecPreferencesDomain domain, SecKeychainRef keychain);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 A preference domain is a set of security-related preferences, such as the default keychain and the current keychain search list. Use this function if you want to set the default keychain for a specific preference domain. Use the [`SecKeychainSetDefault(_:)`](./seckeychainsetdefault%28_%29.md) function if you want to set the default keychain for the current preference domain. See the [`SecKeychainSetPreferenceDomain(_:)`](./seckeychainsetpreferencedomain%28_%29.md) function for a discussion of current and default preference domains.
 

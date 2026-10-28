@@ -17,7 +17,7 @@ Creates a room builder using the specified options.
 init(options: RoomBuilder.ConfigurationOptions)
 ```
 
-#### Discussion
+## Discussion
 
 Pass the [`beautifyObjects`](./configurationoptions/beautifyobjects.md) option to enhance the look of the output for the captured room, or  (`[]`) to omit capture post-processing.
 

@@ -19,7 +19,7 @@ weak var tableView: NSTableView? { get set }
 @property (weak, nullable) NSTableView * tableView;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to set this property; it’s assigned automatically when you set the header view for an `NSTableView`.
 

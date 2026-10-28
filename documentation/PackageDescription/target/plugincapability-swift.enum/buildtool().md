@@ -15,11 +15,11 @@ The plug-in is a build tool.
 static func buildTool() -> Target.PluginCapability
 ```
 
-#### Return Value
+## Return Value
 
 A plug-in capability that defines a build tool.
 
-#### Discussion
+## Discussion
 
 The plug-in to apply to each target that uses it, and creates commands that run before or during the build of the target.
 

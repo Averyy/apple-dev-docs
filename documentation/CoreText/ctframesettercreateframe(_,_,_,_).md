@@ -25,15 +25,15 @@ func CTFramesetterCreateFrame(_ framesetter: CTFramesetter, _ stringRange: CFRan
 extern CTFrameRefCTFramesetterCreateFrame(CTFramesetterRef framesetter, CFRange stringRange, CGPathRef path, CFDictionaryRef frameAttributes);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a new CTFrame object if the call was successful; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 This call creates a frame full of glyphs in the shape of the path provided by the `path` parameter. The framesetter continues to fill the frame until it either runs out of text or it finds that text no longer fits.
 
-##### Special Considerations
+### Special Considerations
 
 In versions of macOS prior to 10.7 and versions of iOS prior to 4.2, this function returns `NULL` if the CGPath specified by the `path` parameter is not rectangular.
 

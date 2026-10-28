@@ -21,7 +21,7 @@ The kinds of interaction available to views behind a presentation.
 struct PresentationBackgroundInteraction
 ```
 
-#### Overview
+## Overview
 
 Use values of this type with the [`presentationBackgroundInteraction(_:)`](./view/presentationbackgroundinteraction%28_%29.md) modifier.
 

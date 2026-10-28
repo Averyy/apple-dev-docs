@@ -25,7 +25,7 @@ case inProgress
 INListRideOptionsIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Do not use this response code.
 

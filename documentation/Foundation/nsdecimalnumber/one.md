@@ -26,7 +26,7 @@ class var one: NSDecimalNumber { get }
 @property (class, copy, readonly) NSDecimalNumber * one;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDecimalNumber` object equivalent to the number 1.0.
 

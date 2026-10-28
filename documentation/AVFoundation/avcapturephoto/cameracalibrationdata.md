@@ -22,7 +22,7 @@ var cameraCalibrationData: AVCameraCalibrationData? { get }
 @property (readonly, nullable) AVCameraCalibrationData * cameraCalibrationData;
 ```
 
-#### Discussion
+## Discussion
 
 Camera calibration data is present only if you specified the [`isCameraCalibrationDataDeliveryEnabled`](../avcapturephotosettings/iscameracalibrationdatadeliveryenabled.md) and [`isDualCameraDualPhotoDeliveryEnabled`](../avcapturephotosettings/isdualcameradualphotodeliveryenabled.md) settings when requesting capture. For camera calibration data in a capture that includes depth data, see the [`AVDepthData`](../avdepthdata.md) [`cameraCalibrationData`](../avdepthdata/cameracalibrationdata.md) property.
 

@@ -17,7 +17,7 @@ Looks up and returns the path of a named command line executable.
 func tool(named name: String) throws -> Tool
 ```
 
-#### Discussion
+## Discussion
 
 The executable must be provided by an executable target or binary target on which the package plugin target depends. This function throws an error if the tool cannot be found. The lookup is case sensitive.
 

@@ -22,7 +22,7 @@ var automaticallyAdjustsFaceDrivenAutoExposureEnabled: Bool { get set }
 @property (nonatomic) BOOL automaticallyAdjustsFaceDrivenAutoExposureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property defaults to [`true`](../../Swift/true.md) for devices that support autoexposure. If your app requires explicitly setting the state of [`isFaceDrivenAutoExposureEnabled`](./isfacedrivenautoexposureenabled.md), set this value to [`false`](../../Swift/false.md).
 

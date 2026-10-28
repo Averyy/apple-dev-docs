@@ -15,7 +15,7 @@ Headers to include with requests to the update activity endpoint.
 object ExtensionConfig.Media.Queues.UpdateActivity.Hdr
 ```
 
-#### Discussion
+## Discussion
 
 This is a dictionary of header names and values.
 

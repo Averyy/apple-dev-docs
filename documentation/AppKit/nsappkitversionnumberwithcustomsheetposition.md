@@ -15,7 +15,7 @@ The specific version of the AppKit framework that introduced custom sheet positi
 static const NSAppKitVersion NSAppKitVersionNumberWithCustomSheetPosition;
 ```
 
-#### Discussion
+## Discussion
 
 Developers should not need to use this constant unless they are writing applications for macOS 10.2 and earlier.
 

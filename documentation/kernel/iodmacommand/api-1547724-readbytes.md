@@ -15,11 +15,11 @@ Copy data from the IODMACommand's buffer to the specified buffer.
 UInt64 readBytes(UInt64 offset, void *bytes, UInt64 length);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied, zero will be returned if the specified offset is beyond the prepared length of the IODMACommand.
 
-#### Discussion
+## Discussion
 
 This method copies data from the IODMACommand's memory at the given offset, to the caller's buffer. The IODMACommand must be prepared, and the offset is relative to the prepared offset.
 

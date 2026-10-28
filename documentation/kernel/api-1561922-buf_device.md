@@ -15,11 +15,11 @@ Get the device ID associated with a buffer.
 dev_t buf_device(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Device id.
 
-#### Discussion
+## Discussion
 
 In traditional buffer use, this value is NODEV until buf_strategy() is called unless buf_getblk() was passed a device vnode. It is set on an iobuf if buf_alloc() is passed a device vnode or if buf_setdevice() is called.
 

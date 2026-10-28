@@ -16,7 +16,7 @@ get lineWidth(): number;
 set lineWidth(lineWidth: number);
 ```
 
-#### Discussion
+## Discussion
 
 The default line width is `1`.
 

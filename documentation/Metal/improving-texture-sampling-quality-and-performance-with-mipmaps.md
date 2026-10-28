@@ -5,7 +5,7 @@
 
 Avoid texture-rendering artifacts and reduce the GPU’s workload by creating smaller versions of a texture.
 
-#### Overview
+## Overview
 
 *Mipmaps* are progressively smaller versions of the same texture image, each of which provides a different level of detail (LOD) for the texture. A texture’s *mipmap chain* is its complete set of mipmaps. Textures with mipmaps can help your app eliminate common visual problems, such as aliasing and moire patterns, while reducing the GPU’s memory bandwidth.
 

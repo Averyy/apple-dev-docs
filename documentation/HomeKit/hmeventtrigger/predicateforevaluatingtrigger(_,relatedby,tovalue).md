@@ -24,7 +24,7 @@ class func predicateForEvaluatingTrigger(_ characteristic: HMCharacteristic, rel
 + (NSPredicate *) predicateForEvaluatingTriggerWithCharacteristic:(HMCharacteristic *) characteristic relatedBy:(NSPredicateOperatorType) operatorType toValue:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that represents a condition to evaluate before executing the scene.
 

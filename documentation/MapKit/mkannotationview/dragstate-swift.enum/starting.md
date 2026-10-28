@@ -23,7 +23,7 @@ case starting
 MKAnnotationViewDragStateStarting
 ```
 
-#### Discussion
+## Discussion
 
 A user action causes the view to begin the drag operation. The map view automatically moves annotation views to this state in response to appropriate user actions.
 

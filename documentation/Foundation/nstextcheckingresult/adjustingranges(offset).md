@@ -25,7 +25,7 @@ func adjustingRanges(offset: Int) -> NSTextCheckingResult
 - (NSTextCheckingResult *) resultByAdjustingRangesWithOffset:(NSInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTextCheckingResult` instance with the adjusted range or ranges.
 

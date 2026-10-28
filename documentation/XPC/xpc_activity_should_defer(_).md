@@ -19,11 +19,11 @@ func xpc_activity_should_defer(_ activity: xpc_activity_t) -> Bool
 extern bool xpc_activity_should_defer(xpc_activity_t activity);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the activity should be deferred.
 
-#### Discussion
+## Discussion
 
 Use this function to test whether the criteria of a long-running activity are still satisfied. If not, the system indicates that the application should defer the activity. The application may acknowledge the deferral by calling [`xpc_activity_set_state(_:_:)`](./xpc_activity_set_state%28_,_%29.md) with [`XPC_ACTIVITY_STATE_DEFER`](./xpc_activity_state_defer.md). Once deferred, the system places the activity back into the WAIT state and invokes the handler block again at the earliest opportunity when the criteria are once again satisfied.
 

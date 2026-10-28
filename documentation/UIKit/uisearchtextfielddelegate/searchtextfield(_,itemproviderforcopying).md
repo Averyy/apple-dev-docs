@@ -22,11 +22,11 @@ optional func searchTextField(_ searchTextField: UISearchTextField, itemProvider
 - (NSItemProvider *) searchTextField:(UISearchTextField *) searchTextField itemProviderForCopyingToken:(UISearchToken *) token;
 ```
 
-#### Return Value
+## Return Value
 
 An item provider that provides a token if the user pastes or drops the token.
 
-#### Discussion
+## Discussion
 
 To support drag and drop and the Cut and Copy commands, your delegate must implement this method and return an [`NSItemProvider`](../../Foundation/nsitemprovider.md) for the requested token. Your delegate can provide a plain text representation for pasting in other contexts, but should register a custom type identifier so it can recognize and reconstruct the token when pasted into the same field.
 

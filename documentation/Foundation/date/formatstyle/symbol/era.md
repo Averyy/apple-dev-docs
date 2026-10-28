@@ -21,7 +21,7 @@ A type that specifies a format for the era in a date format style.
 struct Era
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Era`](./era.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Era`](./era.md) objects.
 

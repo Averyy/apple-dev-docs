@@ -10,7 +10,7 @@ Add Writing Tools support to your custom text engine to enhance the text editing
 - macOS 15.4+
 - Xcode 16.4+
 
-#### Overview
+## Overview
 
 The systems provide easy-to-use and highly capable APIs for text editing, such as [`NSTextView`](./nstextview.md), [`UITextView`](../UIKit/uitextview.md), and SwiftUI [`TextEditor`](../SwiftUI/texteditor.md). These APIs handle text rendering, text input, and user interactions, support multiple languages, and provide many features like spell checking and Writing Tools. Apps generally use these APIs to implement text editing.
 
@@ -18,7 +18,7 @@ In some cases, apps may desire to build a custom text editing experience by impl
 
 > **Note**: This sample code project is associated with WWDC25 session 265: [Dive deeper into Writing Tools](https://developer.apple.com/wwdc25/265/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, do the following in Xcode:
 

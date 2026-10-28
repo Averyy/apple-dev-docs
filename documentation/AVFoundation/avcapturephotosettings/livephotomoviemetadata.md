@@ -22,7 +22,7 @@ var livePhotoMovieMetadata: [AVMetadataItem]! { get set }
 @property (nonatomic, copy, null_resettable) NSArray<AVMetadataItem *> * livePhotoMovieMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 Live Photos capture both a still image and a short movie, which the system presents together in user interfaces such as the Photos app. A Live Photo movie always contains a `AVMetadataQuickTimeMetadataKeyContentIdentifier` key, associating the movie with a similar identifier in the [`kCGImagePropertyExifMakerNote`](../../ImageIO/kcgimagepropertyexifmakernote.md) property of the corresponding still image. The photo capture output automatically generates a unique content identifier for you if you don’t specify one of your own. You can also use this property to specify additional movie metadata.
 

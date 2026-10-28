@@ -19,7 +19,7 @@ func removeAllItems()
 - (void) removeAllItems;
 ```
 
-#### Discussion
+## Discussion
 
 After removing the items, this method uses the [`synchronizeTitleAndSelectedItem()`](./synchronizetitleandselecteditem%28%29.md) method to refresh the menu.
 

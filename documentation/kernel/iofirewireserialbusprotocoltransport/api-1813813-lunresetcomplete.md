@@ -13,7 +13,7 @@ virtual void LunResetComplete (
  IOFireWireSBP2ManagementORB *orb );
 ```
 
-#### Overview
+## Overview
 
 See IOFireWireSBP2Lib.h for details regarding the submitFetchAgentReset method.
 

@@ -6,7 +6,7 @@
 
 A four-character code indicating the data format of the hint track samples.
 
-#### Overview
+## Overview
 
 Only `'rtp '` is currently defined. Note that the fourth character in `'rtp '` is an ASCII blank space (`0x20`). Do not attempt to packetize data whose format you do not recognize.
 

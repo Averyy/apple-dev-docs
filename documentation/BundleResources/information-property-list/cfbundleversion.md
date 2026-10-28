@@ -19,7 +19,7 @@ The version of the build that identifies an iteration of the bundle.
 - **Name**: `CFBundleVersion` (Bundle version)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is a machine-readable string composed of one to three period-separated integers, such as 10.14.1. The string can only contain numeric characters (0-9) and periods.
 

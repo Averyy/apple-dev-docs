@@ -21,7 +21,7 @@ let kQLPreviewPropertyMIMETypeKey: CFString!
 extern CFStringRef const kQLPreviewPropertyMIMETypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFString`](../CoreFoundation/cfstring.md) object. Use this key to retrievie the web content’s or attachment’s mime type. For the main data, the default type is `text/html`.
 

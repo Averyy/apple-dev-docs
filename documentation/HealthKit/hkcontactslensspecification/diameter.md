@@ -25,7 +25,7 @@ var diameter: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * diameter;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s range is 9 to 15 mm.
 

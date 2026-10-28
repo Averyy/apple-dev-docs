@@ -23,11 +23,11 @@ func adjustedRange(from textRange: NSTextRange, forEditingTextSelection: Bool) -
 - (NSTextRange *) adjustedRangeFromRange:(NSTextRange *) textRange forEditingTextSelection:(BOOL) forEditingTextSelection;
 ```
 
-#### Return Value
+## Return Value
 
 The  adjusted `TextRange` for the editing session, or `nil` of no adjustment was necessary
 
-#### Discussion
+## Discussion
 
 When `textRange` is intersecting or following the current edited range, the method returns an adjusted range for the modification in the editing session.
 

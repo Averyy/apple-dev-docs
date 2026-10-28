@@ -24,7 +24,7 @@ optional func sphericalHarmonicsCoefficients(atPosition position: vector_float3)
 - (NSData *) sphericalHarmonicsCoefficientsAtPosition:(vector_float3) position;
 ```
 
-#### Discussion
+## Discussion
 
 When you call the [`MDLAsset`](../mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`](../mdlasset/placelightprobes%28withdensity,heuristic,using%29.md) method to automatically distribute light probes in a scene, Model I/O repeatedly calls this method to evaluate the lighting conditions at various points in the scene (as determined by the `density` and `heuristic` parameters), then uses the resulting information to choose where to place light probes.
 

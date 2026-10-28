@@ -15,7 +15,7 @@ A public key used to authorize an alternative marketplace or web distribution to
 object AlternativeDistributionKey
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the response that includes this alternative distribution key object, see [`AlternativeDistributionKeyResponse`](./alternativedistributionkeyresponse.md).
 

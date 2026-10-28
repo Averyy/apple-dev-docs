@@ -22,11 +22,11 @@ func present(from rect: CGRect, in view: UIView, animated: Bool, completionHandl
 - (BOOL) presentFromRect:(CGRect) rect inView:(UIView *) view animated:(BOOL) animated completionHandler:(UIPrinterPickerCompletionHandler) completion;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the picker was displayed or [`false`](../../Swift/false.md) if the picker was already visible.
 
-#### Discussion
+## Discussion
 
 This method presents the picker from a popover or from the view controller you specify using your delegate object. If you provide a delegate object and that object implements the [`printerPickerControllerParentViewController(_:)`](../uiprinterpickercontrollerdelegate/printerpickercontrollerparentviewcontroller%28_%29.md) method, UIKit presents the picker using the view controller you specify. If you do not provide a delegate, or your delegate object does not implement the [`printerPickerControllerParentViewController(_:)`](../uiprinterpickercontrollerdelegate/printerpickercontrollerparentviewcontroller%28_%29.md) method, UIKit presents the picker using a popover attached the view you specified.
 

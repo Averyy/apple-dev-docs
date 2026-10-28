@@ -25,11 +25,11 @@ func string(from ti: TimeInterval) -> String?
 - (NSString *) stringFromTimeInterval:(NSTimeInterval) ti;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representing the specified time interval.
 
-#### Discussion
+## Discussion
 
 This method formats the specified number of seconds into the appropriate units. For example, if the formatter allows the display of minutes and seconds, creating an abbreviated string for the value 70 seconds results in the string “1m 10s”.
 

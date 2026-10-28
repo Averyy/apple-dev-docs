@@ -23,7 +23,7 @@ func remove(_ event: EKEvent, span: EKSpan) throws
 - (BOOL) removeEvent:(EKEvent *) event span:(EKSpan) span error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if the event belongs to another event store.
 

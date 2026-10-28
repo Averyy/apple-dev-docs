@@ -24,11 +24,11 @@ func resize(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTensor, sca
 - (MPSGraphTensor *) resizeTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleTensor:(MPSGraphTensor *) scale offsetTensor:(MPSGraphTensor *) offset mode:(MPSGraphResizeMode) mode name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Resamples input images to given size using the provided scale and offset. Destination indices are computed using
 

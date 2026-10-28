@@ -14,7 +14,7 @@ Exponential Base 2 of X.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Exponential 2 (half)**:
 

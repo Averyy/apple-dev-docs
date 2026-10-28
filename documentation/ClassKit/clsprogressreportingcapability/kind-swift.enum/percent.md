@@ -23,7 +23,7 @@ case percent
 CLSProgressReportingCapabilityKindPercent
 ```
 
-#### Discussion
+## Discussion
 
 Add this capability to indicate that a context reports a task’s percentage completion on a periodic basis by setting the associated activity’s [`progress`](../../clsactivity/progress.md) property, or by calling the activity’s [`addProgressRange(fromStart:toEnd:)`](../../clsactivity/addprogressrange%28fromstart,toend%29.md) method.
 

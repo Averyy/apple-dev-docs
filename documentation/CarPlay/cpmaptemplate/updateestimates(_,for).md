@@ -21,7 +21,7 @@ func updateEstimates(_ estimates: CPTravelEstimates, for trip: CPTrip)
 - (void) updateTravelEstimates:(CPTravelEstimates *) estimates forTrip:(CPTrip *) trip;
 ```
 
-#### Discussion
+## Discussion
 
 The updated trip uses the default time-remaining color. To change the color, use the [`update(_:for:with:)`](./update%28_,for,with%29.md) method instead of calling this method.
 

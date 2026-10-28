@@ -19,7 +19,7 @@ protocol QLPreviewingController : NSObjectProtocol
 @protocol QLPreviewingController <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A controller that implements the `QLPreviewingController` protocol must at least implement [`preparePreviewOfSearchableItem(identifier:queryString:completionHandler:)`](./qlpreviewingcontroller/preparepreviewofsearchableitem%28identifier,querystring,completionhandler%29.md) or [`preparePreviewOfFile(at:completionHandler:)`](./qlpreviewingcontroller/preparepreviewoffile%28at,completionhandler%29.md).
 

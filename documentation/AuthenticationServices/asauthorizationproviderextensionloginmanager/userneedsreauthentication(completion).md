@@ -23,7 +23,7 @@ func userNeedsReauthentication() async throws
 - (void) userNeedsReauthenticationWithCompletion:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to request reauthentication, such as when revoking or expiring tokens.
 

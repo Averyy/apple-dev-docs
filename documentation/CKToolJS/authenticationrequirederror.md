@@ -23,7 +23,7 @@ dictionary AuthenticationRequiredError {
 };
 ```
 
-#### Overview
+## Overview
 
 Some database operations require that users sign in with their Apple ID. The server returns `AuthenticationRequiredError` when the user isn’t signed in or their session has expired.
 

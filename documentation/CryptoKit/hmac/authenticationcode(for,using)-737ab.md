@@ -21,7 +21,7 @@ Computes a message authentication code for the given data.
 static func authenticationCode<D>(for data: D, using key: SymmetricKey) -> HMAC<H>.MAC where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The message authentication code.
 

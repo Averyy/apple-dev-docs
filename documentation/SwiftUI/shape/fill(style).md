@@ -22,7 +22,7 @@ nonisolated
 func fill(style: FillStyle = FillStyle()) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A shape filled with the foreground color.
 

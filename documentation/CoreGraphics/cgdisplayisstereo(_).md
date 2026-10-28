@@ -20,7 +20,7 @@ func CGDisplayIsStereo(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsStereo(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is running in a stereo graphics mode; otherwise, `false`.
 

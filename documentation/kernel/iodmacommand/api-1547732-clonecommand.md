@@ -15,11 +15,11 @@ Creates a new command based on the specification of the current one.
 virtual OSPtr<IODMACommand> cloneCommand(void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new memory cursor if successfully created and initialised, 0 otherwise.
 
-#### Discussion
+## Discussion
 
 Factory function to create and initialise an IODMACommand in one operation. The current command's specification will be duplicated in the new object, but however none of its state will be duplicated. This means that it is safe to clone a command even if it is currently active and running, however you must be certain that the command to be duplicated does have a valid reference for the duration.
 

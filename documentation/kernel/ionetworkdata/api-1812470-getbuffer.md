@@ -11,7 +11,7 @@ Gets a pointer to the data buffer.
 virtual const void * getBuffer() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the data buffer. Returns 0 if the buffer type is kIONetworkDataBufferTypeNone.
 

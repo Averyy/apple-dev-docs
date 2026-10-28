@@ -19,7 +19,7 @@ static let operatorType: NSRuleEditor.PredicatePartKey
 extern NSRuleEditorPredicatePartKey const NSRuleEditorPredicateOperatorType;
 ```
 
-#### Discussion
+## Discussion
 
 This value is required for a non-`nil` comparison predicate.
 

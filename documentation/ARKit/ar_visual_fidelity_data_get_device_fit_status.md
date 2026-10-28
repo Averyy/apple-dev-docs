@@ -15,7 +15,7 @@ Get the device fit validation status.
 extern ar_device_fit_status_t ar_visual_fidelity_data_get_device_fit_status(ar_visual_fidelity_data_t fidelity_data);
 ```
 
-#### Return Value
+## Return Value
 
 The device fit validation status. Returns ar_device_fit_status_unknown when device fit monitoring was not requested or when the algorithm has no signal to report. Returns ar_device_fit_status_valid when the user is positioned correctly.
 

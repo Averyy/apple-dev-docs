@@ -20,7 +20,7 @@ func namespace(forPrefix name: String) -> XMLNode?
 - (NSXMLNode *) namespaceForPrefix:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An [`XMLNode`](../xmlnode.md) object of kind [`XMLNode.Kind.namespace`](../xmlnode/kind-swift.enum/namespace.md) or `nil` if there is no namespace node with that prefix.
 

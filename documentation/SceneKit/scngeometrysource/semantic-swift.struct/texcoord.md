@@ -25,7 +25,7 @@ static let texcoord: SCNGeometrySource.Semantic
 extern SCNGeometrySourceSemantic const SCNGeometrySourceSemanticTexcoord;
 ```
 
-#### Discussion
+## Discussion
 
 For a geometry source, this semantic identifies data containing texture mapping coordinates for each vertex in the geometry. Unlike other semantics, a geometry may contain multiple sources for texture coordinates—each corresponds to a separate [`mappingChannel`](../../scnmaterialproperty/mappingchannel.md) number that you can use when associating textured materials.
 

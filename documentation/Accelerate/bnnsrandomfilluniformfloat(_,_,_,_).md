@@ -25,7 +25,7 @@ func BNNSRandomFillUniformFloat(_ generator: BNNSRandomGenerator?, _ desc: Unsaf
 int BNNSRandomFillUniformFloat(BNNSRandomGenerator generator, BNNSNDArrayDescriptor *desc, float a, float b);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to fill an array descriptor with uniformly distributed random values.
 

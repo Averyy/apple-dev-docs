@@ -23,11 +23,11 @@ convenience init?(tag: String, tagClass: String, conformingTo supertype: UTType?
 + (instancetype) typeWithTag:(NSString *) tag tagClass:(NSString *) tagClass conformingToType:(UTType *) supertype;
 ```
 
-#### Return Value
+## Return Value
 
 A type. If no types are known to the system with the specified tag but the inputs were otherwise valid, a dynamic type may be provided. If the inputs were not valid, returns \c nil.
 
-#### Discussion
+## Discussion
 
 Create a type given a type tag.
 

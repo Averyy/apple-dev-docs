@@ -21,7 +21,7 @@ Creates a new [`MKCoordinateSpan`](./mkcoordinatespan.md) from the specified val
 static MKCoordinateSpan MKCoordinateSpanMake(CLLocationDegrees latitudeDelta, CLLocationDegrees longitudeDelta);
 ```
 
-#### Return Value
+## Return Value
 
 A span with the specified delta values.
 

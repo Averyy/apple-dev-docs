@@ -20,7 +20,7 @@ var destinationRect: CGRect { get set }
 @property (nonatomic, assign) CGRect destinationRect;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a destination rectangle, the system uses the full dimensions of the output surface.
 

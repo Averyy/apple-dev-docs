@@ -19,7 +19,7 @@ Creates a plain-style item using the specified primary action and context menu.
 - (instancetype) initWithPrimaryAction:(UIAction *) primaryAction menu:(UIMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

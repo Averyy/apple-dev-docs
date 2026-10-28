@@ -24,7 +24,7 @@ subscript(layerIndex: Int) -> MTLRasterizationRateLayerDescriptor? { get set }
 - (MTLRasterizationRateLayerDescriptor *) objectAtIndexedSubscript:(NSUInteger) layerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSNumber`](../../Foundation/nsnumber.md) instance describing the value of the sample at the specified index, or `0` if the index is out of range.
 

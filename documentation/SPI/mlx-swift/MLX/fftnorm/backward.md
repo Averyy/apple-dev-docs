@@ -17,7 +17,7 @@ No normalization on the forward transform; the inverse transform is scaled by `1
 case backward
 ```
 
-#### Discussion
+## Discussion
 
 This is the default and matches the behavior of prior versions.
 

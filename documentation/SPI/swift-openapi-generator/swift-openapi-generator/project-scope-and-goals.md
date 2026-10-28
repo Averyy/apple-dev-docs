@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Learn about what is in and out of scope of Swift OpenAPI Generator.
 
-#### Overview
+## Overview
 
 Swift OpenAPI Generator aims to cover the most commonly used OpenAPI features to simplify your workflow and streamline your codebase. The main goal is to reduce ceremony by generating the repetitive, verbose, and error-prone code associated with encoding API inputs, making HTTP requests, parsing HTTP responses, and decoding the outputs.
 
@@ -18,9 +18,9 @@ Swift OpenAPI Generator aims to cover the most commonly used OpenAPI features to
 
 The goal of the project is to compose with the wider OpenAPI tooling ecosystem so functionality beyond reducing ceremony using code generation is, by default, considered out of scope. When in doubt, file an issue to discuss whether your idea should be a feature of Swift OpenAPI Generator, or fits better as a separate project.
 
-##### Guiding principles
+### Guiding principles
 
-###### Principle: Faithfully represent the OpenAPI document
+#### Principle: Faithfully represent the OpenAPI document
 
 The OpenAPI document is considered as the source of truth. The generator aims to produce code that reflects the document where possible. This includes the specification structure, and the identifiers used by the authors of the OpenAPI document.
 
@@ -32,7 +32,7 @@ For larger documents, you may want to do this programmatically and, if you are d
 
 > ⚠️ **Warning**: Understand which identifiers can be changed without impacting the wire protocol for the API before attempting to preprocess the OpenAPI document.
 
-###### Principle: Generate code that evolves with the OpenAPI document
+#### Principle: Generate code that evolves with the OpenAPI document
 
 As features are added to a service, the OpenAPI document for that service will evolve. The generator aims to produce code that evolves ergonomically as the OpenAPI document evolves.
 
@@ -42,7 +42,7 @@ A concrete example of this is the use of enum types when there is only one docum
 
 Another example is the generation of empty structs within the input or output types. For example, the input type will contain a nested struct for the header fields, even if the API operation has no documented header fields.
 
-###### Principle: Reduce complexity of the generator implementation
+#### Principle: Reduce complexity of the generator implementation
 
 Some generators offer lots of options that affect the code generation process. In order to keep the project streamlined and maintainable, Swift OpenAPI Generator offers very few options.
 

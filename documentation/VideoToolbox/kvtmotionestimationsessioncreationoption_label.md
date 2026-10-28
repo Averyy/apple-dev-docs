@@ -24,7 +24,7 @@ let kVTMotionEstimationSessionCreationOption_Label: CFString!
 extern CFStringRef const kVTMotionEstimationSessionCreationOption_Label;
 ```
 
-#### Discussion
+## Discussion
 
 [`VTMotionEstimationSessionCreate`](./vtmotionestimationsessioncreate.md) takes a dictionary of creation options, `motionVectorProcessorSelectionOptions`. You can supply [`kVTMotionEstimationSessionCreationOption_Label`](./kvtmotionestimationsessioncreationoption_label.md) with `CFString` to specify a label used in logging and resource tracking.
 

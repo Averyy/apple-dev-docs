@@ -28,7 +28,7 @@ var isHosted: Bool { get set }
 
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
-#### Discussion
+## Discussion
 
 The value of this property determines which delegate methods GameKit calls when players are found.
 

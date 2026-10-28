@@ -23,7 +23,7 @@ optional func cameraDevice(_ camera: ICCameraDevice, didReceiveThumbnailFor item
 - (void) cameraDevice:(ICCameraDevice *) camera didReceiveThumbnailForItem:(ICCameraItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 This method is deprecated. Use [`cameraDevice(_:didReceiveThumbnail:for:error:)`](./cameradevice%28_,didreceivethumbnail,for,error%29.md) instead.
 

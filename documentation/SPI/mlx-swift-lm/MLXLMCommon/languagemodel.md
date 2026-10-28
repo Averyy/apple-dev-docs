@@ -17,7 +17,7 @@ Interface for all Language Models (e.g. LLM, VLM).
 protocol LanguageModel : BaseLanguageModel, ChatConventionsProviding
 ```
 
-#### Overview
+## Overview
 
 The language model is typically called by the [`TokenIterator`](./tokeniterator.md) and it:
 

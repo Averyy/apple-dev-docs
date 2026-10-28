@@ -21,7 +21,7 @@ var tintColor: UIColor { get set }
 @property (nonatomic, retain) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 On clock faces that support custom colors, this color is applied to the text in your text provider.
 

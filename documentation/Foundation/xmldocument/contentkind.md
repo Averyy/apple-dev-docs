@@ -20,7 +20,7 @@ enum ContentKind
 enum NSXMLDocumentContentKind : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For possible values, see doc:xmldocument/document_content_types.
 

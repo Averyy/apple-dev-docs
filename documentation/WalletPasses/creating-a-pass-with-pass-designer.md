@@ -5,7 +5,7 @@
 
 Construct and customize a variety of pass styles with this easy-to-use tool.
 
-#### Overview
+## Overview
 
 With Pass Designer, you can easily visualize and design effective passes for Apple Wallet using a simple macOS app.  Start with one of the templates provided for inspiration or use your own template to design passes that reflect your business or brand personality.
 
@@ -18,7 +18,7 @@ To use the Pass Designer app on Mac:
 - [Download](https://developer.apple.com/download/all/?q=pass%20designer) the app.
 - Make sure you have macOS 27.0 or later installed.
 
-#### Choose a pass type
+## Choose a pass type
 
 There are six primary types of passes you can create using the Pass Designer app, detailed below. You can easily visualize the appearance of each pass in each version of the software, so you can design a pass that looks great no matter what system a person is viewing it in. You can even create a blank pass or create one completely from scratch.
 
@@ -62,7 +62,7 @@ When you first open the app and create a new document, Pass Designer presents yo
 
 ![An image of the Template Picker with the Boarding Pass option selected.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-template-picker@2x.png)
 
-#### Set up your workspace
+## Set up your workspace
 
 The left-hand sidebar contains all the components for a specific pass. Click on a component to open an editor panel from which you can customize each section of your pass. The right-hand side of the app shows you previews of your pass designs.
 
@@ -72,13 +72,13 @@ To select the background color for your canvas, use the canvas background settin
 
 ![A screenshot of the background color selection section of the Pass Designer tool.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-canvas-color-picker@2x.png)
 
-#### Customize your pass components
+## Customize your pass components
 
 Each pass is composed of a number of components, each of which is responsible for helping define a different aspect of your pass design. The components section of the Pass Designer tool is where you can customize all of your components to tailor your pass to your target audience.
 
 ![A screenshot of the component section of the Pass Designer tool, highlighting the Identity & Signing section.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-components-overview@2x.png)
 
-#### Configure the identity and signing
+## Configure the identity and signing
 
 In the Identity & Signing section, you can add information about your business or company. This metadata becomes available to people in the pass information.
 
@@ -86,7 +86,7 @@ If you’ve already created a Pass Type ID certificate, you can easily import al
 
 ![A screenshot of the Identity & Signing component.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-identity-and-signing-overview@2x.png)
 
-#### Select the pass style
+## Select the pass style
 
 In the Style section, you can select the type of pass you want to create. For boarding passes, you can also select other categories like Transit Type, where you can choose between Air, Train, Boat, Bus, or Generic as the travel mode.
 
@@ -102,7 +102,7 @@ The graphic below shows which section of the pass each color field refers to:
 
 ![An illustration of a pass with the color fields called out. component.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-color-layout@2x.png)
 
-#### Add images to your pass
+## Add images to your pass
 
 Each style of Wallet pass has different types of images you can use to help create a dynamic pass, ranging from small iconography to large background images.
 
@@ -124,7 +124,7 @@ To learn more about which images are available for each pass type and how to con
 | `Background artwork` | NA | NA | iOS 27+ | NA | NA | iOS 27+ |
 | `Footer image` | NA | NA | NA | NA | NA | NA |
 
-#### Add an icon
+## Add an icon
 
 An icon needs to be a square 38-by-38-pixel image, appears on every type of pass style, and typically represents your brand or app.
 
@@ -136,7 +136,7 @@ Your icon also appears in Lock Screen banners, in Mail, and on passes in the Wal
 
 ![An illustration showing an example of an icon in Wallet.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-images-icon-wallet@2x.png)
 
-#### Add a logo
+## Add a logo
 
 The logo appears in the top left of your pass design and can be anything from a symbol representing your brand to text representing your brand identity.
 
@@ -148,7 +148,7 @@ The logo appears on the following pass styles: boarding passes (before iOS 26), 
 
 The logo needs to be 50 pixels tall and can be anywhere from 50 to 160 pixels wide at the maximum. For design guidance on creating your logo see [Pass styles](https://developer.apple.com/design/human-interface-guidelines/wallet#Pass-styles) in the Human Interface Guidelines.
 
-#### Add a primary logo
+## Add a primary logo
 
 The primary logo appears in the top left of your pass design and can be anything from a symbol representing your brand to text representing your brand identity.
 
@@ -162,7 +162,7 @@ The primary logo needs to be 30 pixels tall and can be any width from 30 to 126 
 
 The primary logo appears on the following pass styles: boarding passes (iOS 26 and later) and event passes (iOS 18 and later). Even though you may design your pass for the latest OS, remember that not every person views the pass on the same software. Be sure to include a logo as well for instances when the pass displays on previous software versions.
 
-#### Add a secondary logo
+## Add a secondary logo
 
 The secondary logo is a mark that appears in the bottom right of an event pass beginning in iOS 18.
 
@@ -174,7 +174,7 @@ You can use the secondary logo to represent information like the event venue, th
 
 The secondary logo can range from a square 12-by-12-pixel icon up to a rectangular 12-by-135-pixel icon. Choose what shape and size suits your logo best.
 
-#### Add a strip image
+## Add a strip image
 
 Strip images appear as a narrow band on coupons and store cards, providing space where you can include imagery to help tie in your brand or offer.
 
@@ -186,7 +186,7 @@ The strip image needs to be 375 by 144 pixels. Be mindful that you can place tex
 
 The primary field and strip image are in the same place on the pass. If you add any text in a primary field, it automatically appears over the strip image. For design guidance on creating the most effective strip image, refer to the Human Interface Guidelines section on [Wallet coupons](https://developer.apple.com/design/human-interface-guidelines/wallet#Coupons).
 
-#### Add a thumbnail image
+## Add a thumbnail image
 
 Thumbnails are small images that appear on generic passes and nonposter event tickets.
 
@@ -196,7 +196,7 @@ They can be used for anything from helping to identify the type of event in an e
 
 ![An example of a thumbnail for a gym membership.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-images-thumbnail-anatomy@2x.png)
 
-#### Add a background image and background artwork
+## Add a background image and background artwork
 
 Background images offer an effective way to make your pass design feel unique and immersive. Backgrounds appear blurred with nonposter event tickets and unblurred on poster event tickets and poster generic passes.
 
@@ -210,11 +210,11 @@ If your background has important elements, be mindful that they don’t get cove
 
 ![An illustration of an event pass with background artwork.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-images-background-artwork-unblurred@2x.png)
 
-#### Add a footer image
+## Add a footer image
 
 The footer image is available for airline boarding passes starting in iOS 26 and later. This thin image appears at the bottom of a pass, and you can use it for ancillary information.
 
-#### Configure the barcodes and NFC
+## Configure the barcodes and NFC
 
 Barcodes are an essential part of designing a useful Wallet pass, from letting people easily scan their boarding pass at an airport to using a coupon code at checkout. With Pass Designer, you can fully customize the type of barcode included on your pass as well as how it’s displayed.
 
@@ -256,7 +256,7 @@ The types of barcodes available are QR, PDF417, Aztec, Code128, Code 39, Codabar
 
 ![An image of an airline boarding pass with a Interleaved 2 of 5 barcode.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-designer-barcode-types-interleaved@2x.png)
 
-#### Add semantic tags
+## Add semantic tags
 
 Semantic tags are information fields that you provide and that Pass Designer automatically lays out on your pass design. Simply provide the information and the app prioritizes where to put each piece of information. Semantic tags are available for Boarding Passes (in iOS 27 and later) and Event Passes (in iOS 18 and later).
 
@@ -268,7 +268,7 @@ Semantic tags can also display additional pass actions that the system displays 
 
 For more guidance on using semantic tags, see [Add semantic tags](./defining-the-metadata-of-your-wallet-pass.md#Add-semantic-tags).
 
-#### Text fields
+## Text fields
 
 Text fields allow you to enter information in the fields of your pass. Text fields have fixed sections where field types appear. For more information on the layout of pass fields, see [Defining the metadata of your Wallet Pass](./defining-the-metadata-of-your-wallet-pass.md).
 
@@ -278,7 +278,7 @@ When designing a semantic pass, be sure to also provide text fields to ensure ba
 
 Semantic boarding passes and event passes are backward-compatible and fall back to using text fields. For more information, see [Ensure backward compatibility](./creating-an-airline-boarding-pass-using-semantic-tags.md#Ensure-backward-compatibility) and [Provide content for your pass fields](./defining-the-metadata-of-your-wallet-pass.md#Provide-content-for-your-pass-fields).
 
-#### Upload your pass bundle to Pass Builder
+## Upload your pass bundle to Pass Builder
 
 After you finish designing your pass, save the pass. Pass Designer creates a `.pkpasstemplate` bundle that you use to build, sign, and distribute your pass.
 

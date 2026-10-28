@@ -18,17 +18,17 @@ Copies the directory or file specified in a given path to a different location i
 - (BOOL) copyPath:(NSString *) src toPath:(NSString *) dest handler:(id) handler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the copy operation is successful. If the operation is not successful, but the callback handler of [`fileManager(_:shouldProceedAfterError:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,shouldproceedaftererror%29.md) returns [`true`](../../Swift/true.md), [`copyPath:toPath:handler:`](./copypath_topath_handler_.md) also returns [`true`](../../Swift/true.md). Otherwise this method returns [`false`](../../Swift/false.md). The method also attempts to make the attributes of the directory or file at `destination` identical to `source`, but ignores any failure at this attempt.
 
-#### Discussion
+## Discussion
 
 If `source` is a file, the method creates a file at `destination` that holds the exact contents of the original file (this includes BSD special files). If `source` is a directory, the method creates a new directory at `destination` and recursively populates it with duplicates of the files and directories contained in `source`, preserving all links. The file specified in `source` must exist, while `destination` must not exist prior to the operation. When a file is being copied, the destination path must end in a filename—there is no implicit adoption of the source filename. Symbolic links are not traversed but are themselves copied. File or directory attributes—that is, metadata such as owner and group numbers, file permissions, and modification date—are also copied.
 
 The handler callback mechanism is similar to delegation. `NSFileManager` sends [`fileManager(_:willProcessPath:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,willprocesspath%29.md) when it begins a copy, move, remove, or link operation. It sends [`fileManager(_:shouldProceedAfterError:)`](../../ObjectiveC/nsobject-swift.class/filemanager%28_,shouldproceedaftererror%29.md) when it encounters any error in processing.
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`copyItem(at:to:)`](../filemanager/copyitem%28at,to%29.md) instead.
 

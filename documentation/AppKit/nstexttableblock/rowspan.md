@@ -19,7 +19,7 @@ var rowSpan: Int { get }
 @property (readonly) NSInteger rowSpan;
 ```
 
-#### Return Value
+## Return Value
 
 The number of table rows spanned by this text table block.
 

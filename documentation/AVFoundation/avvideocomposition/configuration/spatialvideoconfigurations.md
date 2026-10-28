@@ -20,7 +20,7 @@ Indicates the spatial configurations that are available to associate with the ou
 var spatialVideoConfigurations: [AVSpatialVideoConfiguration] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A custom compositor can output spatial video by specifying one of these spatial configurations. A spatial configuration with all nil values indicates the video is not spatial. A nil spatial configuration also indicates the video is not spatial. The value can be nil, which indicates the output will not be spatial. NOTE: If this property is not empty, then the client must attach one of the spatial configurations in this array to all of the pixel buffers, otherwise an exception will be thrown.
 

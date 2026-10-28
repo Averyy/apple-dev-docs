@@ -25,7 +25,7 @@ class NSView
 - [Supporting Writing Tools via the pasteboard](./supporting-writing-tools-via-the-pasteboard.md)
 - [Adding Writing Tools support to a custom AppKit view](./adding-writing-tools-support-to-a-custom-nsview.md)
 
-#### Overview
+## Overview
 
 You typically don’t use [`NSView`](./nsview.md) objects directly. Instead, you use objects that descend from [`NSView`](./nsview.md) or you subclass [`NSView`](./nsview.md) yourself and override its methods to implement the behavior you need. An instance of the [`NSView`](./nsview.md) class (or one of its subclasses) is commonly known as a view object, or simply as a view.
 
@@ -41,11 +41,11 @@ AppKit handles most of your app’s [`NSView`](./nsview.md) management. Unless y
 
 For more information on how `NSView` instances handle event and action messages, see [Event Handling](./event-handling.md). For more information on displaying tooltips and contextual menus, see [Displaying Contextual Menus](./nsmenu.md#Displaying-Contextual-Menus) and [Managing Tooltips](./nswindow.md#Managing-Tooltips).
 
-##### Subclassing notes
+### Subclassing notes
 
 `NSView` is perhaps the most important class in AppKit when it comes to subclassing and inheritance. Most user-interface objects you see in a Cocoa application are objects that inherit from `NSView`. If you want to create an object that draws itself in a special way, or that responds to mouse clicks in a special way, you would create a custom subclass of `NSView` (or of a class that inherits from `NSView`).
 
-###### Handling events in your subclass
+#### Handling events in your subclass
 
 If you subclass [`NSView`](./nsview.md) directly and handle specific types of events, don’t call `super` in the implementations of your event-related methods. Views inherit their event-handling capabilities from their [`NSResponder`](./nsresponder.md) parent class. The default behavior for responders is to pass events up the responder chain, which isn’t the behavior you typically want for a custom view. Therefore, don’t call `super` if your view implements any of the following methods and handles the event:
 
@@ -195,6 +195,8 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSUserActivityRestoring](./nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

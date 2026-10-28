@@ -13,7 +13,7 @@
 kREPORT_LUNS_ADDRESS_METHOD_OFFSET = 14
 ```
 
-#### Discussion
+## Discussion
 
 Offset to the address method data.
 

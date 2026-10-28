@@ -24,7 +24,7 @@ convenience init(x: CGFloat)
 - (instancetype) initWithX:(CGFloat) x;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIVector`](../civector.md) object of length 1.
 

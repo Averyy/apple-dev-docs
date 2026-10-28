@@ -27,7 +27,7 @@ optional func resolveWorkoutName(for intent: INCancelWorkoutIntent) async -> INS
 - (void) resolveWorkoutNameForCancelWorkout:(INCancelWorkoutIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates the workout name supplied by the user. If you do not implement this method, SiriKit assumes that you are able to start the requested workout.
 

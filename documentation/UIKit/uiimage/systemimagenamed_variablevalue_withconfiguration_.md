@@ -20,11 +20,11 @@ Creates an image object that contains a system symbol image with the configurati
 + (UIImage *) systemImageNamed:(NSString *) name variableValue:(double) value withConfiguration:(UIImageConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 The object containing the image variant that matches the specified configuration data, or `nil` if no suitable image was found.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve system-defined symbol images. To retrieve a custom symbol image you store in an asset catalog, use the [`init(named:in:variableValue:configuration:)`](./init%28named,in,variablevalue,configuration%29.md) method instead.
 

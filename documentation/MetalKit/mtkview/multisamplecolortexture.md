@@ -24,7 +24,7 @@ var multisampleColorTexture: (any MTLTexture)? { get }
 @property (nonatomic, readonly, nullable) id<MTLTexture> multisampleColorTexture;
 ```
 
-#### Discussion
+## Discussion
 
 The format of this texture is determined by the value of the [`colorPixelFormat`](./colorpixelformat.md) and [`sampleCount`](./samplecount.md) properties.
 

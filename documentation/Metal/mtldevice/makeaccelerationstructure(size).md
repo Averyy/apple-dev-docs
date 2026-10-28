@@ -25,7 +25,7 @@ func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?
 - (id<MTLAccelerationStructure>) newAccelerationStructureWithSize:(NSUInteger) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLAccelerationStructure`](../mtlaccelerationstructure.md) instance if the method completed successfully; otherwise `nil`.
 

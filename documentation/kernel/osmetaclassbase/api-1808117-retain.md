@@ -11,7 +11,7 @@ Abstract declaration of retain().
 virtual void retain() const = 0;
 ```
 
-#### Overview
+## Overview
 
 See OSObject::retain().
 

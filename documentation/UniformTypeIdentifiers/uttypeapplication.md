@@ -21,7 +21,7 @@ A base type that represents a macOS, iOS, iPadOS, watchOS, and tvOS app.
 extern UTType * const UTTypeApplication;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.application`.
 

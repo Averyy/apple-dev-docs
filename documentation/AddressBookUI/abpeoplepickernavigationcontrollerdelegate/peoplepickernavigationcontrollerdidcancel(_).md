@@ -21,11 +21,11 @@ optional func peoplePickerNavigationControllerDidCancel(_ peoplePicker: ABPeople
 - (void) peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *) peoplePicker;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement this method, the people picker will dismiss itself when the user taps cancel.
 
-##### Special Considerations
+### Special Considerations
 
 Prior to iOS 8, the delegate was responsible for dismissing the people picker and this method was required.
 

@@ -20,7 +20,7 @@ This method is called when a download has finished but there is no `BADownloadMa
 func backgroundDownload(_ finishedDownload: BADownload, finishedWithFileURL fileURL: URL)
 ```
 
-#### Discussion
+## Discussion
 
 When a download succeeds, this method will be invoked; however it is only invoked if there is no other client using `BADownloadManager` with a hooked in `delegate`. The file located at `fileURL` must be moved before this method exits scope, or it will be deleted. It is strongly advised to move the file to its permanent destination rather than copy it.
 

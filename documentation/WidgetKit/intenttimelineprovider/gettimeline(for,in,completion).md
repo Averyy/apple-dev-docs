@@ -22,7 +22,7 @@ Provides an array of timeline entries for the current time and, optionally, any 
 func getTimeline(for configuration: Self.Intent, in context: Self.Context, completion: @escaping @Sendable (Timeline<Self.Entry>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The `configuration` parameter provides user-customized values, as defined in your custom intent definition.
 

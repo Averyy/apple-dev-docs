@@ -24,7 +24,7 @@ var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel { get }
 @property (readonly) CIQRCodeErrorCorrectionLevel errorCorrectionLevel;
 ```
 
-#### Discussion
+## Discussion
 
 QR Codes support four levels of Reed-Solomon error correction.
 

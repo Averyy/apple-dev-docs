@@ -22,7 +22,7 @@ func GLKMathProject(_ object: GLKVector3, _ model: GLKMatrix4, _ projection: GLK
 GLKVector3 GLKMathProject(GLKVector3 object, GLKMatrix4 model, GLKMatrix4 projection, int *viewport);
 ```
 
-#### Return Value
+## Return Value
 
 The projected point in window coordinates.
 

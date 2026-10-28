@@ -15,7 +15,7 @@ Creates a customizable Touch Bar view container with a globally unique identifie
 init(id: String, @ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 Be sure that each view in `content` has an explicit `touchBarItemPresence` value with customization identifier.
 

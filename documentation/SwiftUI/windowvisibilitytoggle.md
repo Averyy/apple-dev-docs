@@ -16,7 +16,7 @@ nonisolated
 struct WindowVisibilityToggle<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 This is most commonly used in the main menu, where it can toggle the visibility of `Window` and `UtilityWindow` windows. The default label uses the title of the window in the format of “Show ” and “Hide ” depending on the current visibility of the window.
 

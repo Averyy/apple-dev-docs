@@ -25,7 +25,7 @@ func label(for string: String) -> String?
 - (NSString *) labelForString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A string if the term is in the vocabulary; otherwise `nil`.
 

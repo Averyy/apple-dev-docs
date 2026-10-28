@@ -19,7 +19,7 @@ A detection track representing all detections selected by a given decision.
 - (CNDetectionTrack *) detectionTrackForDecision:(CNDecision *) decision;
 ```
 
-#### Return Value
+## Return Value
 
 A detection track representing all detections selected by a given decision
 

@@ -21,7 +21,7 @@ The custom format style that conveys the minimum number of digits that represent
 static var defaultDigits: Date.FormatStyle.Symbol.Second { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style represents the seconds field like `1` or `18`.
 

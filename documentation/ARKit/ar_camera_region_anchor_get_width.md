@@ -15,11 +15,11 @@ Get the width of a given anchor.
 extern float ar_camera_region_anchor_get_width(ar_camera_region_anchor_t camera_region_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The width of the anchor.
 
-#### Discussion
+## Discussion
 
 > **Note**: The width of the anchor is the length along the X-axis, in meters. This is [-width/2, width/2] from the center.
 

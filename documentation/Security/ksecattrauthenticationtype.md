@@ -25,7 +25,7 @@ let kSecAttrAuthenticationType: CFString
 extern CFStringRef const kSecAttrAuthenticationType;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and denotes the authentication scheme for this item (see [Authentication Type Values](./item-attribute-keys-and-values.md#Authentication-Type-Values)).
 

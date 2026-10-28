@@ -21,7 +21,7 @@ Gets or sets custom unsigned integer properties.
 final subscript<P>(dynamicMember key: KeyPath<ProgressManager.Properties, P.Type>) -> UInt64 where P : ProgressManager.Property, P.Summary == [UInt64], P.Value == UInt64 { get }
 ```
 
-#### Overview
+## Overview
 
 This subscript provides read-write access to custom progress properties where the value type is `UInt64` and the summary type is `[UInt64]`. If the property has not been set, the getter returns the property’s default value.
 

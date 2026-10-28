@@ -19,7 +19,7 @@ var items: [NSMenuItem] { get set }
 @property (copy) NSArray<NSMenuItem *> * itemArray;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of menu items in the menu.
 

@@ -17,7 +17,7 @@ The Gemma 4 MTP drafter — a 4-layer Q-only assistant that cross-attends to the
 final class Gemma4AssistantDraftModel
 ```
 
-#### Overview
+## Overview
 
 Mirrors mlx-vlm’s `Gemma4AssistantDraftModel` at `mlx_vlm/speculative/drafters/gemma4_assistant/gemma4_assistant.py` (SHA d49d428). Conforms to `MTPDrafterModel`; consumed by `MTPSpeculativeTokenIterator` (Phase B).
 

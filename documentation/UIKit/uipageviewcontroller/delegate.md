@@ -23,7 +23,7 @@ weak var delegate: (any UIPageViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIPageViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Methods of the delegate are called in response to gesture-based navigation and orientation changes.
 

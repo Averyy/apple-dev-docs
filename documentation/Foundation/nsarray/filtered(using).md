@@ -25,13 +25,13 @@ func filtered(using predicate: NSPredicate) -> [Any]
 - (NSArray<id> *) filteredArrayUsingPredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 A new array containing the objects in the receiving array for which `predicate` returns [`true`](../../Swift/true.md).
 
 Objects in the resulting array appear in the same order as they do in the receiver.
 
-#### Discussion
+## Discussion
 
 For more details, see [Predicate Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
 

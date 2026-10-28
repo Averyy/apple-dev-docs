@@ -22,11 +22,11 @@ Calculates a default value for the corresponding guide in the specified context.
 static func defaultValue(in context: ViewDimensions) -> CGFloat
 ```
 
-#### Return Value
+## Return Value
 
 The offset of the guide from the origin in the view’s coordinate space.
 
-#### Discussion
+## Discussion
 
 Implement this method when you create a type that conforms to the [`AlignmentID`](../alignmentid.md) protocol. Use the method to calculate the default offset of the corresponding alignment guide. SwiftUI interprets the value that you return as an offset in the coordinate space of the view that’s being laid out. For example, you can use the context to return a value that’s one-third of the height of the view:
 

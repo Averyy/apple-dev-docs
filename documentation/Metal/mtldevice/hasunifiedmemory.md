@@ -25,7 +25,7 @@ var hasUnifiedMemory: Bool { get }
 @property (readonly) BOOL hasUnifiedMemory;
 ```
 
-#### Discussion
+## Discussion
 
 A GPU with unified memory ([`true`](../../Swift/true.md)) is typically an integrated GPU. A GPU with dedicated memory ([`false`](../../Swift/false.md)) may take additional time to synchronize managed resources or copy data into private GPU resources.
 

@@ -21,7 +21,7 @@ Retrieves the identifier for a given activity object.
 extern os_activity_id_t os_activity_get_identifier(os_activity_t activity, os_activity_id_t *parent_id);
 ```
 
-#### Return Value
+## Return Value
 
 The current activity identifier.
 

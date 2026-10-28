@@ -21,11 +21,11 @@ Returns true if the container values contain a tag matching a given value.
 func hasTag<V>(_ tag: V) -> Bool where V : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 If the container values has a tag matching the given value.
 
-#### Discussion
+## Discussion
 
 Tag values are set using the `View/tag` modifier.
 

@@ -15,7 +15,7 @@ Implemented by an owner object to provide promised data.
 - (void) pasteboard:(NSPasteboard *) sender provideDataForType:(NSPasteboardType) type;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver should have been previously declared in a [`declareTypes(_:owner:)`](../../AppKit/nspasteboard/declaretypes%28_,owner%29.md) message.
 

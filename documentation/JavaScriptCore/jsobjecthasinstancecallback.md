@@ -24,11 +24,11 @@ typealias JSObjectHasInstanceCallback = (JSContextRef?, JSObjectRef?, JSValueRef
 typedef _Bool (*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, const struct OpaqueJSValue *, const struct OpaqueJSValue **) JSObjectHasInstanceCallback;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `possibleInstance` is an instance of `constructor` according to the JavaScript `instanceof` expression; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you name your function `HasInstance`, you declare it like this:
 

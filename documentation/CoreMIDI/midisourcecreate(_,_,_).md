@@ -25,11 +25,11 @@ func MIDISourceCreate(_ client: MIDIClientRef, _ name: CFString, _ outSrc: Unsaf
 extern OSStatus MIDISourceCreate(MIDIClientRef client, CFStringRef name, MIDIEndpointRef *outSrc);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 Drivers need not call this; when they create devices and entities, sources and destinations are created at that time.
 

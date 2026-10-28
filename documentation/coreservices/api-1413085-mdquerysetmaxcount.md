@@ -19,7 +19,7 @@ func MDQuerySetMaxCount(_ query: MDQuery!, _ size: CFIndex)
 void MDQuerySetMaxCount(MDQueryRef query, CFIndex size);
 ```
 
-#### Discussion
+## Discussion
 
 This must be called before the query is executed.
 

@@ -27,7 +27,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer directly. Instead, create tasks from a [`URLSession`](../urlsession.md).
 

@@ -22,7 +22,7 @@ init(operation: UIDropOperation)
 - (instancetype) initWithDropOperation:(UIDropOperation) operation;
 ```
 
-#### Return Value
+## Return Value
 
 A drop proposal that has a drop operation.
 

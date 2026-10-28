@@ -24,7 +24,7 @@ func keyUp(atPositionX mousePositionX: Double, positionY mousePositionY: Double,
 
 - [Adding onscreen controls to plug-ins](../../Professional-Video-Applications/adding-onscreen-controls-to-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 Depending on the host application, the time value may be relative to the start of the timeline or to the start of the clip. See the header file `FxPlug/FxHostCapabilities.h`.
 

@@ -15,7 +15,7 @@ Gets the audio class identifier of the object.
 IOUserAudioClassID GetClassID();
 ```
 
-#### Return Value
+## Return Value
 
 The audio class identifier of the object.
 

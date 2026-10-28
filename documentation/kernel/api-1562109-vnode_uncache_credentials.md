@@ -15,11 +15,11 @@ Clear out cached credentials on a vnode.
 void vnode_uncache_credentials(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 When we authorize an action on a vnode, we cache the credential that was authorized and the actions it was authorized for in case a similar request follows. This function destroys that caching.
 

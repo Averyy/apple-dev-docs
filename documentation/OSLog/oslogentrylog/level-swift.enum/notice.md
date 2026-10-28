@@ -25,7 +25,7 @@ case notice
 OSLogEntryLogLevelNotice
 ```
 
-#### Discussion
+## Discussion
 
 This log level captures normal `os_log` entries used to generate notifications on system errors.
 

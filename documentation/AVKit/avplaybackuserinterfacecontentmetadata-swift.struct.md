@@ -17,7 +17,7 @@ A Swift-friendly structure representing media metadata.
 struct AVPlaybackUserInterfaceContentMetadata
 ```
 
-#### Overview
+## Overview
 
 This structure provides metadata information about media content including title, artwork, and content type. Use this to provide rich information for playback interfaces and system integrations.
 

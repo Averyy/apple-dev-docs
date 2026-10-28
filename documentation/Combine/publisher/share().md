@@ -21,11 +21,11 @@ Shares the output of an upstream publisher with multiple subscribers.
 func share() -> Publishers.Share<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A class instance that shares elements received from its upstream to multiple subscribers.
 
-#### Discussion
+## Discussion
 
 The publisher returned by this operator supports multiple subscribers, all of whom receive unchanged elements and completion states from the upstream publisher.
 

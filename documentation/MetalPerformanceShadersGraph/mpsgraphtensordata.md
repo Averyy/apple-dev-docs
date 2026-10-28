@@ -24,7 +24,7 @@ class MPSGraphTensorData
 @interface MPSGraphTensorData : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Pass data to a graph using a tensor data, a reference will be taken to your data and used just in time when the graph is run.
 

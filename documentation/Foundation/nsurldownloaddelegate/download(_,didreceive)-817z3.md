@@ -19,7 +19,7 @@ optional func download(_ download: NSURLDownload, didReceive response: URLRespon
 - (void) download:(NSURLDownload *) download didReceiveResponse:(NSURLResponse *) response;
 ```
 
-#### Discussion
+## Discussion
 
 In some rare cases, multiple responses may be received for a single download. In this case, the client should assume that each new response resets the download progress to 0 and should check the new response for the expected content length.
 

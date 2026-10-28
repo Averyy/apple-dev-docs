@@ -14,7 +14,7 @@
 var kUCCollateWidthInsensitiveMask: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the corresponding bit is set, then fullwidth and halfwidth compatibility forms are treated as equivalent to the corresponding non-compatibility characters. This option is among those set by the `kUCCollateStandardOptions` constant, as described in [Standard Options Mask](./carbon_core/unicode_utilities/api-1390444-standard_options_mask.md).
 

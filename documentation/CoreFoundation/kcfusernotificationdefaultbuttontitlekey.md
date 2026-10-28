@@ -19,7 +19,7 @@ let kCFUserNotificationDefaultButtonTitleKey: CFString!
 extern CFStringRef const kCFUserNotificationDefaultButtonTitleKey;
 ```
 
-#### Discussion
+## Discussion
 
 If absent and the dialog is not being created with the [`kCFUserNotificationNoDefaultButtonFlag`](./kcfusernotificationnodefaultbuttonflag.md) flag, a default button title of `OK` is used.
 

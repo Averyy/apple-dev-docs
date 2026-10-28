@@ -21,7 +21,7 @@ Creates an empty map content block that contains no statements.
 static func buildBlock() -> EmptyMapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`EmptyMapContent`](../emptymapcontent.md).
 

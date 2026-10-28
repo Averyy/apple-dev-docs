@@ -27,7 +27,7 @@ func screenshot() -> XCUIScreenshot
 - (XCUIScreenshot *) screenshot;
 ```
 
-#### Discussion
+## Discussion
 
 The output of this method is equivalent to capturing a screenshot manually on a device. For example, if you take a screenshot of a window on macOS that is covered by another window, the covering window is visible in the screenshot.
 

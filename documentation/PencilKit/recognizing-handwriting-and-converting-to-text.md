@@ -5,7 +5,7 @@
 
 Analyze handwritten strokes in a PencilKit canvas using on-device recognition, and convert them to text that your app can display, copy, or index.
 
-#### Overview
+## Overview
 
 [`PKStrokeRecognizer`](./pkstrokerecognizer.md) uses an on-device engine to recognize handwriting directly from a [`PKDrawing`](./pkdrawing-swift.struct.md), so recognition works offline and no handwriting data leaves the device. With this API, you can build features like copy-as-text, where people select handwritten strokes and paste them as typed text, search for a word or phrase across an entire drawing, and index handwritten notes so they appear in Spotlight results.
 
@@ -13,7 +13,7 @@ The recognizer works across a range of languages. You configure it with your pre
 
 > ❗ **Important**: Recognition works best when handwriting is scaled in points, as if drawn on standard US Letter or A4 paper. If your app lets people zoom in and write very large, or write very small, accuracy may decrease.
 
-#### Create and configure the recognizer
+## Create and configure the recognizer
 
 [`PKStrokeRecognizer`](./pkstrokerecognizer.md) is the object that handles all recognition work in your app. It processes the strokes in a drawing and uses an on-device engine to interpret the writing. Create one recognizer per drawing and store it as a property on your view controller or document object so it stays alive as long as the drawing is open.
 
@@ -32,7 +32,7 @@ let available = PKStrokeRecognizer.supportedLanguages
 let supportsJapanese = available.contains(Locale.Language(identifier: "ja"))
 ```
 
-#### Provide the drawing
+## Provide the drawing
 
 You need to push the drawing to the recognizer explicitly because it doesn’t automatically observe your canvas. This push gives you control over when recognition processing happens, which is useful if you want to defer it until after a person finishes a stroke or pauses writing; this reduces power usage by avoiding unnecessary work.
 
@@ -44,7 +44,7 @@ await recognizer.updateDrawing(canvasView.drawing)
 
 Call [`updateDrawing(_:)`](./pkstrokerecognizer/updatedrawing%28_%29.md) before requesting results. The recognizer works from the last drawing you provided, so if the drawing has changed since then, it returns stale results.
 
-#### Convert strokes to text
+## Convert strokes to text
 
 Each stroke in a [`PKDrawing`](./pkdrawing-swift.struct.md) has a unique identifier. You can pass a specific set of identifiers to the recognizer to convert only those strokes rather than the entire drawing. This is useful for features like copy-as-text, where you only want to convert the strokes a person has selected. Read [`selection`](./pkcanvasview/selection.md) to get the identifiers of the currently selected strokes.
 
@@ -59,7 +59,7 @@ if let text = await recognizer.recognizedText(strokeIDs: selectedIDs) {
 
 The method returns the single most likely interpretation of the handwriting. It returns `nil` when it can’t produce a result, for example, when the strokes don’t contain recognizable handwriting.
 
-#### Search for text within a drawing
+## Search for text within a drawing
 
 Searching lets you find where a specific word or phrase appears in a drawing. It returns the matching strokes and their bounds, which you can use to scroll to or highlight results on screen.
 
@@ -74,7 +74,7 @@ for result in results {
 
 Set `fullWordsOnly` to `true` to match the word exactly, for example, to find “note” without also matching “notebook” or “notepad”. Set `caseMatchingOnly` to `true` for case-sensitive matching.
 
-#### Index drawing content for Spotlight
+## Index drawing content for Spotlight
 
 When you index a drawing, people can find their handwritten notes from Spotlight without opening your app. Use the [`indexableContent`](./pkstrokerecognizer/indexablecontent.md) property to get a string to pass to the CoreSpotlight indexing API. This string is different from what [`recognizedText(strokeIDs:)`](./pkstrokerecognizer/recognizedtext%28strokeids%29.md) returns; rather than picking one interpretation of the handwriting, it includes multiple possible readings concatenated together. For example, if a word might be read as either “1” or “l”, both appear in the string. These concatenated possibilities improve the chances that a Spotlight search matches the content.
 
@@ -94,7 +94,7 @@ if let content = await recognizer.indexableContent {
 }
 ```
 
-#### Persist recognized text
+## Persist recognized text
 
 Recognition results may change across OS releases. If you store recognized text, save [`recognitionVersion`](./pkstrokerecognizer/recognitionversion.md) alongside it and regenerate stored results at a later time.
 

@@ -19,7 +19,7 @@ Notifies the view controller that its view is about to be removed from a view hi
 @preconcurrency override dynamic func viewDidDisappear(_ animated: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 The view controller uses this method to remove its interface configurations.
 

@@ -15,7 +15,7 @@ Determines whether this device supports the accessory tracking provider.
 extern bool ar_accessory_tracking_provider_is_supported();
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the accessory tracking provider is supported on this device, `false` otherwise.
 

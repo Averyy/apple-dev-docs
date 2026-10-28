@@ -32,7 +32,7 @@ var recipients: [GKPlayer]? { get set }
 - [Finding players with similar skill levels](../finding-players-with-similar-skill-levels.md)
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 If this property is non-`nil`, GameKit invites the specified players. GameKit doesn’t use automatch to fill player slots, and ignores the [`maxPlayers`](./maxplayers.md) and [`minPlayers`](./minplayers.md) properties. The default value is `nil`.
 

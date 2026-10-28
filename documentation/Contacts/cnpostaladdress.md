@@ -24,7 +24,7 @@ class CNPostalAddress
 @interface CNPostalAddress : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CNPostalAddress` is a thread-safe class.
 

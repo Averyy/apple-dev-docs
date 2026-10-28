@@ -24,7 +24,7 @@ class func registerName(_ name: String, constructor anObject: any CIFilterConstr
 + (void) registerFilterName:(NSString *) name constructor:(id<CIFilterConstructor>) anObject classAttributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Discussion
+## Discussion
 
 In most cases you don’t need to use this method because the preferred way to register a custom filter that you write is to package it as an image unit. You do not need to use this method for a filter packaged as an image unit because you  register your filter using the `CIPlugInRegistration` protocol. (See [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185) for additional details.)
 

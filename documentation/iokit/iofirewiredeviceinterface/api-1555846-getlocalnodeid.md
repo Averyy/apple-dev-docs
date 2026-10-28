@@ -16,11 +16,11 @@
 IOReturn (*GetLocalNodeID)(IOFireWireLibDeviceRef self, UInt16 *outLocalNodeID);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Obsolete -- Please use GetBusGeneration() and GetLocalNodeIDWithGeneration() in interface v4.
 

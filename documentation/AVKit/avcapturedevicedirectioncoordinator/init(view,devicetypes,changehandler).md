@@ -21,7 +21,7 @@ init(view: UIView, deviceTypes: [AVCaptureDevice.DeviceType], changeHandler: ((A
 - (instancetype) initWithView:(UIView *) view deviceTypes:(NSArray<NSString *> *) deviceTypes changeHandler:(void (^)(AVCaptureDeviceDirectionMap *deviceDirections)) changeHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Initialize the coordinator only on the main actor.
 

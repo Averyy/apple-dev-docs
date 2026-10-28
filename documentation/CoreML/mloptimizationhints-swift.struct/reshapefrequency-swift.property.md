@@ -21,7 +21,7 @@ The anticipated reshape frequency
 var reshapeFrequency: MLOptimizationHints.ReshapeFrequency
 ```
 
-#### Discussion
+## Discussion
 
 CoreML framework needs to reshape the model with new shapes for models with flexible input. Specify the anticipated reshape frequency (frequent or infrequent), so that the framework can optimize for fast shape switching or fast prediction on seen shapes.
 

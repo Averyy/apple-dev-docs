@@ -30,11 +30,11 @@ func dateOfBirth() throws -> Date
 
 - [About the HealthKit framework](../about-the-healthkit-framework.md)
 
-#### Return Value
+## Return Value
 
 An [`NSDate`](../../Foundation/nsdate.md) object representing the user’s birthdate, or `nil`.
 
-#### Discussion
+## Discussion
 
 If the user has not yet specified a birth date, or if the user has denied your app permission to read the birth date, this method returns `nil`.
 

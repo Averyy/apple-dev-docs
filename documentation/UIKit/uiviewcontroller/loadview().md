@@ -23,7 +23,7 @@ func loadView()
 - (void) loadView;
 ```
 
-#### Discussion
+## Discussion
 
 You should never call this method directly. The view controller calls this method when its [`view`](./view.md) property is requested but is currently `nil`. This method loads or creates a view and assigns it to the [`view`](./view.md) property.
 

@@ -56,7 +56,7 @@ func loadPhoto(for size: GKPlayer.PhotoSize) async throws -> NSImage
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 The size of the image that returns to your game is dependent on both the size parameter and the user interface idiom of the device your game is running on.
 

@@ -15,7 +15,7 @@ Converts signed 24-bit integer values to single-precision floating-point values.
 void vDSP_vflt24(const vDSP_int24 *vDSP_input1, ptrdiff_t vDSP_stride1, float *vDSP_input2, ptrdiff_t vDSP_stride2, size_t vDSP_size);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the signed 24-bit integer values in the input vector `A` to single precision floating-point values and places the results in the output vector `C`.
 

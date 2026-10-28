@@ -20,7 +20,7 @@ var allowsAccessibilityKeyboard: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityKeyboard;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable the Accessibility Keyboard in the Settings app (Accessibility > Keyboard > Accessibility Keyboard) to access an on-screen keyboard. An assessment session **does not** disable the Accessibility Keyboard by default, but you can disable it by setting [`allowsAccessibilityKeyboard`](./allowsaccessibilitykeyboard.md) to `NO` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

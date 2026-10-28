@@ -24,7 +24,7 @@ class INPaymentMethod
 @interface INPaymentMethod : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INPaymentMethod`](./inpaymentmethod.md) object describes a way in which a user can pay for services. A payment method object stores information that you can display to the user when choosing payment options. Specifically, the object stores information about the type of payment, the name of the payment service, and an icon for any related brand information. Typical payment methods include credit cards and bank accounts. For example, you would use a payment method object to specify information about a brand of credit card that you support.
 

@@ -6,7 +6,7 @@
 
 The maximum tilt angle, in degrees.
 
-#### Overview
+## Overview
 
 The default value is `–90.0`. The value of this field must be greater than the value of the `minTilt` field.
 

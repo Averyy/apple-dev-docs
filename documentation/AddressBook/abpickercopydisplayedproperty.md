@@ -15,7 +15,7 @@ Returns the name of the property currently displayed in the record list.
 extern CFStringRefABPickerCopyDisplayedProperty(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the propertydisplayed.
 

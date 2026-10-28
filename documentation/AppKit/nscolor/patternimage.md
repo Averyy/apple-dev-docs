@@ -20,7 +20,7 @@ var patternImage: NSImage { get }
 @property (copy, readonly) NSImage * patternImage;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the image (instead of the solid color) to use during drawing. Pattern images are tiled as needed to fill the rendered area.
 

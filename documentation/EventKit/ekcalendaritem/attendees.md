@@ -24,7 +24,7 @@ var attendees: [EKParticipant]? { get }
 @property (nonatomic, readonly, nullable) NSArray<__kindof EKParticipant *> * attendees;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only; it is not possible to add attendees with Event Kit. This property is `nil` if the calendar item has no attendees.
 

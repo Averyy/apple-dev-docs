@@ -21,7 +21,7 @@ Creates a new channel ID tag from an integer.
 static func channelID(_ value: Int64) -> CMTypedTag<Int64>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing a channel ID of `value`.
 

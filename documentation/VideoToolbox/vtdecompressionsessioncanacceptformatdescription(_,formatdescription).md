@@ -24,11 +24,11 @@ func VTDecompressionSessionCanAcceptFormatDescription(_ session: VTDecompression
 extern Boolean VTDecompressionSessionCanAcceptFormatDescription(VTDecompressionSessionRef session, CMFormatDescriptionRef newFormatDesc);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the decompression session accepts the format description; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Some video decoders can accommodate minor changes in format without needing to be completely reset in a new session.  Use this function to test whether a format change is sufficiently minor.
 

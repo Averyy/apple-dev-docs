@@ -25,7 +25,7 @@ func persistentStore(for URL: URL) -> NSPersistentStore?
 - (NSPersistentStore *) persistentStoreForURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 The persistent store at the location specified by `URL`.
 

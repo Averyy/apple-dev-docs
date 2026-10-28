@@ -16,7 +16,7 @@ Tells the migration extension to begin exporting its resources.
 final func exportResources(request: MigrationRequest? = nil, progress: Progress? = nil) async throws -> AppMigrationTester.ResourcesExportResult
 ```
 
-#### Return Value
+## Return Value
 
 The results of the export.
 

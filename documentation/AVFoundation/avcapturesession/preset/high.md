@@ -23,7 +23,7 @@ static let high: AVCaptureSession.Preset
 extern AVCaptureSessionPreset const AVCaptureSessionPresetHigh;
 ```
 
-#### Discussion
+## Discussion
 
 This is the default preset.
 

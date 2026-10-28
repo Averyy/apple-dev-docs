@@ -21,11 +21,11 @@ Returns the position in the given view of Unicode scalars that corresponds exact
 func samePosition(in unicodeScalars: String.UnicodeScalarView) -> String.UnicodeScalarIndex?
 ```
 
-#### Return Value
+## Return Value
 
 The position in `unicodeScalars` that corresponds exactly to this index. If this index does not have an exact corresponding position in `unicodeScalars`, this method returns `nil`. For example, an attempt to convert the position of a UTF-16 trailing surrogate returns `nil`.
 
-#### Discussion
+## Discussion
 
 This index must be a valid index of `String(unicodeScalars).utf16`.
 

@@ -25,7 +25,7 @@ var entity: NSEntityDescription? { get set }
 @property (nonatomic, strong, nullable) NSEntityDescription * entity;
 ```
 
-#### Discussion
+## Discussion
 
 When an [`NSFetchRequest`](../nsfetchrequest.md) instance is created with `init()`, it is expected that the [`entity`](../nspropertydescription/entity.md) property will be set.  If this property is not set, the fetch request fails upon execution.
 

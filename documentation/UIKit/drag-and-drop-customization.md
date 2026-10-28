@@ -5,7 +5,7 @@
 
 Extend the standard drag and drop support for text views to include custom types of content.
 
-#### Overview
+## Overview
 
 The [`UITextField`](./uitextfield.md) and [`UITextView`](./uitextview.md) classes provide built-in support for dragging and dropping text and images. You can extend this support to your own custom data types by adding a text drag delegate or text drop delegate to your views. Your text drag delegate adopts the [`UITextDragDelegate`](./uitextdragdelegate.md) protocol and is responsible for providing the items to be dragged. Your text drop delegate adopts the [`UITextDropDelegate`](./uitextdropdelegate.md) protocol and handles drops containing items with your custom data types.
 

@@ -25,7 +25,7 @@ func cblas_daxpy(_ N: __LAPACK_int, _ ALPHA: Double, _ X: UnsafePointer<Double>?
 void cblas_daxpy(const __LAPACK_int N, const double ALPHA, const double *X, const __LAPACK_int INCX, double *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the contents of vector Y are replaced with the result. The value computed is `(alpha * X[i]) + Y[i]`.
 

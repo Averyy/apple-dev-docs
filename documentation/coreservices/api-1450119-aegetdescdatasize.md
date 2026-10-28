@@ -19,15 +19,15 @@ func AEGetDescDataSize(_ theAEDesc: UnsafePointer<AEDesc>!) -> Size
 Size AEGetDescDataSize(const AEDesc *theAEDesc);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size, in bytes, of the data in the specified descriptor.
 
-#### Discussion
+## Discussion
 
 This function works only with value descriptors created by [`AECreateDesc(_:_:_:_:)`](./api-1448535-aecreatedesc.md). You cannot get the data size of an [`AERecord`](./aerecord.md) or [`AEDescList`](./aedesclist.md), for example.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

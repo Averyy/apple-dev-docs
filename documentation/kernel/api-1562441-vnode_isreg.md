@@ -15,7 +15,7 @@ Determine if a vnode is a regular file.
 int vnode_isreg(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is of type VREG, 0 otherwise.
 

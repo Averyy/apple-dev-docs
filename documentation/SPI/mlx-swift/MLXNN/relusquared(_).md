@@ -17,7 +17,7 @@ Applies the squared Rectified Linear Unit.
 func reluSquared(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 

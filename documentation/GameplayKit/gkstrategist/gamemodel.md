@@ -25,7 +25,7 @@ var gameModel: (any GKGameModel)? { get set }
 @property (nonatomic, retain, nullable) id<GKGameModel> gameModel;
 ```
 
-#### Discussion
+## Discussion
 
 A game model—an instance of one of your custom classes implementing the [`GKGameModel`](../gkgamemodel.md) protocol—contains all the information necessary to describe a distinct state of your game. For example, the game model class for a Tic-Tac-Toe game would encode the locations of X and O marks currently on the board and which player’s turn is next. The strategist works from the current game model when planning moves.
 

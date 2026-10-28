@@ -5,7 +5,7 @@
 
 Ask the user’s permission to perform speech recognition using Apple’s servers.
 
-#### Overview
+## Overview
 
 The speech recognition process involves capturing audio of the user’s voice and sending that data to Apple’s servers for processing. The audio you capture constitutes sensitive user data, and you must make every effort to protect it. You must also obtain the user’s permission before sending that data across the network to Apple’s servers. You request authorization using the APIs of the Speech framework.
 
@@ -13,7 +13,7 @@ The speech recognition process involves capturing audio of the user’s voice an
 
 ![When an app requests authorization to use speech recognition, the system prompts the user to grant or deny access to the feature.](https://developer.apple.com/tutorials/images/com.apple.speech/media-3038127@2x.png)
 
-##### Add the Privacy Key to Your Info.plist File
+### Add the Privacy Key to Your Info.plist File
 
 In Xcode, add the `“Privacy - Speech Recognition Usage Description”` key to your app’s `Info.plist` file. The raw name of this key is [`NSSpeechRecognitionUsageDescription`](../BundleResources/information-property-list/nsspeechrecognitionusagedescription.md). Set the value of this key to a string that explains how you plan to use any recognized speech. When your app request authorization later, the system displays the value of this key to the user as part of the system prompt.
 
@@ -25,7 +25,7 @@ Take the opportunity to build trust with the user through your usage description
 
 > ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](../BundleResources/information-property-list/nsspeechrecognitionusagedescription.md) key in your app’s `Info.plist` file. This applies regardless of whether you set [`requiresOnDeviceRecognition`](./sfspeechrecognitionrequest/requiresondevicerecognition.md) to `true` or `false`. If this key is not present, your app will crash when it calls [`requestAuthorization(_:)`](./sfspeechrecognizer/requestauthorization%28_%29.md).
 
-##### Request Authorization at First Use
+### Request Authorization at First Use
 
 Before using the APIs of the Speech framework, you must call [`requestAuthorization(_:)`](./sfspeechrecognizer/requestauthorization%28_%29.md) on the [`SFSpeechRecognizer`](./sfspeechrecognizer.md) object. The method executes asynchronously and delivers the results to a block you provide. Use that block to determine whether the user granted or rejected your request.
 

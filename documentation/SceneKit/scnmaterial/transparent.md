@@ -25,7 +25,7 @@ var transparent: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * transparent;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to selectively make parts of a material appear transparent. You can uniformly adjust the opacity of a material using its [`transparency`](./transparency.md) property, or of all the content attached to a node using the node’s [`opacity`](../scnnode/opacity.md) property.
 

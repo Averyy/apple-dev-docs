@@ -21,7 +21,7 @@ func willTransition(to presentationStyle: MSMessagesAppPresentationStyle)
 - (void) willTransitionToPresentationStyle:(MSMessagesAppPresentationStyle) presentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to update your extension’s layout while the extension is transitioning between the [`MSMessagesAppPresentationStyle.compact`](../msmessagesapppresentationstyle/compact.md) and [`MSMessagesAppPresentationStyle.expanded`](../msmessagesapppresentationstyle/expanded.md) styles. The user can switch between styles by tapping the collapse and expand buttons in the Messages app.  You can also programmatically trigger a transition by calling [`requestPresentationStyle(_:)`](./requestpresentationstyle%28_%29.md).
 

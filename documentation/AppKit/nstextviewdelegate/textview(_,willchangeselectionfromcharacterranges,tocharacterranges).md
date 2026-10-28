@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, willChangeSelectionFromCharacterR
 - (NSArray<NSValue *> *) textView:(NSTextView *) textView willChangeSelectionFromCharacterRanges:(NSArray<NSValue *> *) oldSelectedCharRanges toCharacterRanges:(NSArray<NSValue *> *) newSelectedCharRanges;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the actual character ranges for the new selection.
 
-#### Discussion
+## Discussion
 
 Invoked before an `NSTextView` object finishes changing the selection—that is, when the last argument to a [`setSelectedRange(_:affinity:stillSelecting:)`](../nstextview/setselectedrange%28_,affinity,stillselecting%29.md) or [`setSelectedRanges(_:affinity:stillSelecting:)`](../nstextview/setselectedranges%28_,affinity,stillselecting%29.md) message is [`false`](../../Swift/false.md).
 

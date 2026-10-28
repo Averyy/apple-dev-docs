@@ -27,7 +27,7 @@ class INDailyRoutineRelevanceProvider
 
 - [Defining Relevant Shortcuts for the Siri Watch Face](../SiriKit/defining-relevant-shortcuts-for-the-siri-watch-face.md)
 
-#### Overview
+## Overview
 
 Ask the user for permission to use their location before providing shortcuts to [`INRelevantShortcutStore`](./inrelevantshortcutstore.md) that include a daily routine relevance provider. If the user gives your app permission to access their location Always, shortcuts your app provides can influence widget stacks.
 

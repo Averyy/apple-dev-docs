@@ -24,7 +24,7 @@ var clearDepth: Double { get set }
 @property (nonatomic) double clearDepth;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`loadAction`](../mtlrenderpassattachmentdescriptor/loadaction.md) property of the attachment is set to [`MTLLoadAction.clear`](../mtlloadaction/clear.md), then at the start of a render pass, the GPU fills the contents of the attachment with the value stored in the [`clearDepth`](./cleardepth.md) property. Otherwise, the GPU ignores [`clearDepth`](./cleardepth.md).
 

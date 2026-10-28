@@ -25,7 +25,7 @@ func xpc_data_get_bytes_ptr(_ xdata: xpc_object_t) -> UnsafeRawPointer?
 extern const void *xpc_data_get_bytes_ptr(xpc_object_t xdata);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the underlying boxed data.
 

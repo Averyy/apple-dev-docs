@@ -16,7 +16,7 @@ Applies a smooth grow-in animation to the rendered output.
 void output::growIn()
 ```
 
-#### Discussion
+## Discussion
 
 This function scales the output size from 25% to 100% over the first 0.5 seconds of the element’s lifetime using a smooth interpolation. This creates a natural appearance effect where particles start small and grow to full size.
 

@@ -25,7 +25,7 @@ var lastObject: Any? { get }
 @property (nonatomic, readonly, nullable) ObjectType lastObject;
 ```
 
-#### Discussion
+## Discussion
 
 If the array is empty, returns `nil`.
 

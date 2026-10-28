@@ -16,11 +16,11 @@ Sets the command to be managed by the management ORB.
 IOReturn (*setManageeLogin)(void *self, void *command);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on a success.
 
-#### Discussion
+## Discussion
 
 All management functions except kFWSBP2QueryLogins require a reference to an ORB of some sort. kFWSBP2AbortTaskSet, kFWSBP2LogicalUnitReset, and kFWSBP2TargetReset require a reference to the login ORB. This method allows you to set the login ORB to be managed.
 

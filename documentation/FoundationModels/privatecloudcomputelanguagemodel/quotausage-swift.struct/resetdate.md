@@ -24,7 +24,7 @@ var resetDate: Date?
 
 - [Adding server-side intelligence with Private Cloud Compute](../../adding-server-side-intelligence-with-private-cloud-compute.md)
 
-#### Discussion
+## Discussion
 
 A `nil` value indicates that the model provider has not reported a reset time. This may be because the provider’s limit does not refresh on a fixed schedule, or because the provider does not expose this information.
 

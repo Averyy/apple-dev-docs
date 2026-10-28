@@ -21,7 +21,7 @@ Hypertext markup language (HTML) document.
 static let html: NSAttributedString.DocumentType
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Apple discourages using this document type with the synchronous `initWithHTML:` initializers, which parse HTML in-process. Use the WebKit-based [`loadFromHTML(request:options:completionHandler:)`](../loadfromhtml%28request,options,completionhandler%29.md) family of methods instead, which parse HTML out-of-process for improved security, stability, and code isolation.
 

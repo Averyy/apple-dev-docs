@@ -25,7 +25,7 @@ init(url URL: URL, callback: ASWebAuthenticationSession.Callback, completionHand
 - (instancetype) initWithURL:(NSURL *) URL callback:(ASWebAuthenticationSessionCallback *) callback completionHandler:(ASWebAuthenticationSessionCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a session that requires a callback with a custom URL scheme, using the [`customScheme(_:)`](./callback/customscheme%28_%29.md) type method to create the `callback` parameter:
 

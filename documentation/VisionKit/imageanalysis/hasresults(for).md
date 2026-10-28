@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether the analysis finds the specified 
 final func hasResults(for analysisTypes: ImageAnalyzer.AnalysisTypes) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the image analysis has results for the specified types; otherwise, `false`.
 

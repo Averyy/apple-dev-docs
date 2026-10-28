@@ -25,11 +25,11 @@ init?(_ provider: CGDataProvider)
 extern CGPDFDocumentRefCGPDFDocumentCreateWithProvider(CGDataProviderRef provider);
 ```
 
-#### Return Value
+## Return Value
 
 A new Core Graphics PDF document, or `NULL` if a document can not be created. In Objective-C, you’re responsible for releasing the object using [`CGPDFDocumentRelease`](../cgpdfdocumentrelease.md).
 
-#### Discussion
+## Discussion
 
 Distributing individual pages of a PDF document to separate threads is not supported. If you want to use threads, consider creating a separate document for each thread and operating on a block of pages per thread.
 

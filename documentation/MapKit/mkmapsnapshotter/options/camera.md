@@ -26,7 +26,7 @@ var camera: MKMapCamera { get set }
 @property (nonatomic, copy) MKMapCamera * camera;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a camera object if you want to change the pitch, altitude, or heading information applied to the map.
 

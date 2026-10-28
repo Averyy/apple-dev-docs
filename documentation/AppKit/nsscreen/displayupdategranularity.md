@@ -19,7 +19,7 @@ var displayUpdateGranularity: TimeInterval { get }
 @property (readonly) NSTimeInterval displayUpdateGranularity;
 ```
 
-#### Discussion
+## Discussion
 
 All screen refresh rates fall between the values in the [`minimumRefreshInterval`](./minimumrefreshinterval.md) and [`maximumRefreshInterval`](./maximumrefreshinterval.md) properties. For screens that support fixed update rates, this property contains the amount of time between two successive rates. For example, if a screen supports update rates between 30Hz and 120Hz with an update granularity of 5ms, the screen supports additional refresh rates of approximately 35Hz, 43Hz, 55Hz, and 75Hz.
 

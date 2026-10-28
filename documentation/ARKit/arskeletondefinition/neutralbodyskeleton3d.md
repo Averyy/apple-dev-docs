@@ -20,7 +20,7 @@ var neutralBodySkeleton3D: ARSkeleton3D? { get }
 @property (nonatomic, readonly, nullable) ARSkeleton3D * neutralBodySkeleton3D;
 ```
 
-#### Discussion
+## Discussion
 
 The neutral skeleton height is 1.66 meters and is posed in the shape of a T. This skeleton is provided to you for reference to all other possible skeleton poses.
 

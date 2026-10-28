@@ -19,7 +19,7 @@ func performAction(for person: ABPerson!, identifier: String!)
 - (void) performActionForPerson:(ABPerson *) person identifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the property returned by [`actionProperty()`](./actionproperty%28%29.md) is a multivalue property, `identifier` contains the unique identifier of the value selected. The person being displayed in the Address Book application’s card view when the rollover menu is accesses is passed as `person`.
 

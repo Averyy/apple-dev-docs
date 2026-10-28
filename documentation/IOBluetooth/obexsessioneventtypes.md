@@ -19,7 +19,7 @@ struct OBEXSessionEventTypes
 enum OBEXSessionEventTypes : unsigned int;
 ```
 
-#### Overview
+## Overview
 
 When a new session event occurs, your selector (or C callback) will be given an OBEXSessionEvent pointer, and in it will be a ‘type’ field with one of the following types in it. Based on that type, you can then read the corresponding field in the union to get out interesting data for that event type. For example, if the type of an event is a ‘kOBEXSessionEventTypeConnectCommandResponseReceived’, you should look in the ‘OBEXConnectCommandResponseData’ part of the structure’s union to find more information pased to you in the event. Note that some you will never see, depending on the type of session you are using - a client or server. If you are a client (most likely case), you will never see the “Command” events, but instead you will only receive the “CommandResponse” events since you will be the issuer oft he commands, not the receiver of them. Both types of sessions will receive error type events.
 

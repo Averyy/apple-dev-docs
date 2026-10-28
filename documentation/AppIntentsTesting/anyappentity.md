@@ -26,7 +26,7 @@ struct AnyAppEntity
 
 - [Testing your App Intents code](./testing-your-app-intents-code.md)
 
-#### Overview
+## Overview
 
 The `AnyAppEntity` structure resolves to your actual entity type and gives you access to its properties, enabling you to test your app entity code:
 

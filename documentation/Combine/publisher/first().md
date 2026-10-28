@@ -21,11 +21,11 @@ Publishes the first element of a stream, then finishes.
 func first() -> Publishers.First<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that only publishes the first element of a stream.
 
-#### Discussion
+## Discussion
 
 Use [`first()`](./first%28%29.md) to publish just the first element from an upstream publisher, then finish normally. The [`first()`](./first%28%29.md) operator requests [`unlimited`](../subscribers/demand/unlimited.md) from its upstream as soon as downstream requests at least one element. If the upstream completes before [`first()`](./first%28%29.md) receives any elements, it completes without emitting any values.
 

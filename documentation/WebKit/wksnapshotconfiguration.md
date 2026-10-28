@@ -24,7 +24,7 @@ class WKSnapshotConfiguration
 @interface WKSnapshotConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`WKSnapshotConfiguration`](./wksnapshotconfiguration.md) object when you want to generate an image based on your web view’s content. Use this object to specify the portion of the web view to capture and the capture behavior. To generate the snapshot, pass the configuration object to the [`takeSnapshot(with:completionHandler:)`](./wkwebview/takesnapshot%28with,completionhandler%29.md) method of [`WKWebView`](./wkwebview.md), which returns a platform-native image for you to use.
 

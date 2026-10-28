@@ -16,11 +16,11 @@ Returns the number of color and depth textures available in the drawable.
 size_t cp_drawable_get_texture_count(cp_drawable_t drawable);
 ```
 
-#### Return Value
+## Return Value
 
 The number of textures available for drawing. For example, a return value of `2` indicates there are two color textures and two depth textures available.
 
-#### Discussion
+## Discussion
 
 Use the returned value as the maximum number of textures to retrieve from the [`cp_drawable_get_color_texture`](./cp_drawable_get_color_texture.md) or [`cp_drawable_get_depth_texture`](./cp_drawable_get_depth_texture.md) functions.
 

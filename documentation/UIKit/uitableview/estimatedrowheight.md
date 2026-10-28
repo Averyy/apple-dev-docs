@@ -27,7 +27,7 @@ var estimatedRowHeight: CGFloat { get set }
 
 - [Estimating the height of a table’s scrolling area](../estimating-the-height-of-a-table-s-scrolling-area.md)
 
-#### Discussion
+## Discussion
 
 Providing a nonnegative estimate of the height of rows can improve the performance of loading the table view. If the table contains variable height rows, it might be expensive to calculate all their heights when the table loads. Estimation allows you to defer some of the cost of geometry calculation from load time to scrolling time.
 

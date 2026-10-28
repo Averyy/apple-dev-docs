@@ -13,7 +13,7 @@
 #define kIOPropertySATVendorIdentification
 ```
 
-#### Discussion
+## Discussion
 
 Vendor Identification of the SATL.
 

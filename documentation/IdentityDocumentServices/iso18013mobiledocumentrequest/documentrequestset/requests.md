@@ -18,7 +18,7 @@ An array of document requests required to complete the document set.
 var requests: [ISO18013MobileDocumentRequest.DocumentRequest]
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Your app must respond to every document request to complete the document request set.
 

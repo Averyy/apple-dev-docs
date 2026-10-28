@@ -25,11 +25,11 @@ func CGImageMetadataCreateFromXMPData(_ data: CFData) -> CGImageMetadata?
 extern CGImageMetadataRefCGImageMetadataCreateFromXMPData(CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGImageMetadata`](./cgimagemetadata.md) object that contains the parsed metadata information, or `NULL` if an error occurs. You are responsible for releasing the returned object.
 
-#### Discussion
+## Discussion
 
 Use this function to parse the raw XMP data from an image and build a parseable set of metadata tags. Use the returned object to enumerate the tags or search for individual tags within the collection.
 

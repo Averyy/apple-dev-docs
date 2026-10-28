@@ -23,7 +23,7 @@ static var continuous: ContinuousClock { get }
 
 Available when `Self` is `ContinuousClock`.
 
-#### Discussion
+## Discussion
 
 ```swift
   try await Task.sleep(until: .now + .seconds(3), clock: .continuous)

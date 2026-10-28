@@ -19,7 +19,7 @@ init(updateMode: PHASEEngine.UpdateMode, renderingMode: PHASEEngine.RenderingMod
 - (instancetype) initWithUpdateMode:(PHASEUpdateMode) updateMode renderingMode:(PHASERenderingMode) renderingMode;
 ```
 
-#### Discussion
+## Discussion
 
 In this initializer, the `updateMode` argument behaves the same as it does for [`init(updateMode:)`](./init%28updatemode%29.md). The `renderingMode` parameter value you choose determines where the system renders audio.
 

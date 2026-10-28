@@ -21,7 +21,7 @@ An indication of how to style a shape.
 static var role: ShapeRole { get }
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI looks at a shape’s role when deciding how to apply a [`ShapeStyle`](../shapestyle.md) at render time. The [`Shape`](../shape.md) protocol provides a default implementation with a value of [`ShapeRole.fill`](../shaperole/fill.md). If you create a composite shape, you can provide an override of this property to return another value, if appropriate.
 

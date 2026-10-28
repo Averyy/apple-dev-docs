@@ -25,7 +25,7 @@ func synchronize() throws
 - (BOOL) synchronizeAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Programs that require the file to always be in a known state should call this method. An invocation of this method doesn’t return until memory is flushed.
 

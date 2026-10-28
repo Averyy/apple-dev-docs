@@ -6,22 +6,26 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.distributed.all_gather
 
-**all_gather(*x: array*, ***, *group: Group | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Gather arrays from all processes.
+```python
+all_gather(x: array, *, group: Group | None = None, stream: StreamOrDevice = None) → array
+```
+
+Gather arrays from all processes.
+
 Gather the `x` arrays from all processes in the group and concatenate
 them along the first axis. The arrays should all have the same shape.
 
-Parameters:
+**Parameters:**
 
-**x** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**group** ([Group](mlx.core.distributed.Group.md#mlx.core.distributed.Group)) – The group of processes that will participate in the
+- **x** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **group** ([Group](mlx.core.distributed.Group.md#mlx.core.distributed.Group)) – The group of processes that will participate in the
 gather. If set to `None` the global group is used. Default:
 `None`.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
-Returns:
-The concatenation of all `x` arrays.
+**Returns:**
+: The concatenation of all `x` arrays.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

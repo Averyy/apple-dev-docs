@@ -15,7 +15,7 @@ The list of anchor-able locations for this accessory.
 var accessoryLocations: [AnchoringComponent.AccessoryLocation] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The returned array is device-specific; its contents are defined by the accessory’s manufacturer, and may or may not include [`origin`](../accessorylocation/origin.md). [`origin`](../accessorylocation/origin.md) is supported by every accessory and is always available via the static property, regardless of whether it appears in this array.
 

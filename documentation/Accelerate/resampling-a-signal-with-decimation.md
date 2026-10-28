@@ -5,7 +5,7 @@
 
 Reduce the sample rate of a signal by specifying a decimation factor and applying a custom antialiasing filter.
 
-#### Overview
+## Overview
 
 vDSP provides functions for decimating a signal. A decimated signal has a lower sample rate compared to its original. Decimation can be advantageous when, for example, you are transmitting a signal, creating a visual representation of a large dataset, or reducing the memory overhead when processing data.
 
@@ -13,7 +13,7 @@ In the following pair of images, the original signal on the left contains 1024 s
 
 ![Diagram showing two signals. The original signal is on the left. The decimated signal, on the right, has the same shape, but is half the width.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3123032@2x.png)
 
-##### Create the input signal
+### Create the input signal
 
 The following code creates an array and populates it with a composite sine wave:
 
@@ -31,7 +31,7 @@ The following image shows a visualization of the values in `inputSignal`:
 
 vDSP provides the single-precision function [`downsample(_:decimationFactor:filter:)`](./vdsp/downsample%28_,decimationfactor,filter%29-40d8o.md) and the double-precision function [`downsample(_:decimationFactor:filter:)`](./vdsp/downsample%28_,decimationfactor,filter%29-1o8it.md) to decimate the elements in an array. These function wrap [`vDSP_desamp`](./vdsp_desamp.md) and [`vDSP_desampD`](./vdsp_desampd.md), respectively.
 
-##### Define the antialiasing filter
+### Define the antialiasing filter
 
 The vDSP decimation functions accept a filter that controls how adjacent samples combine. Each decimated value is the sum of the combined original values multiplied by the corresponding filter value.
 
@@ -64,7 +64,7 @@ However, a filter with two values, `[0.5, 0.5]` considers all values in the orig
 
 ![Diagram showing nine points that are joined by lines. The lines form two fully-formed peaks.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122894@2x.png)
 
-##### Perform the Decimation
+### Perform the Decimation
 
 The [`downsample(_:decimationFactor:filter:)`](./vdsp/downsample%28_,decimationfactor,filter%29-40d8o.md) function performs the decimation.
 

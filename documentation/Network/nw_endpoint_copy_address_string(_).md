@@ -25,7 +25,7 @@ func nw_endpoint_copy_address_string(_ endpoint: nw_endpoint_t) -> UnsafeMutable
 char *nw_endpoint_copy_address_string(nw_endpoint_t endpoint);
 ```
 
-#### Discussion
+## Discussion
 
 This function allocates a new string. You should free the returned buffer when done using the string.
 

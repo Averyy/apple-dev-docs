@@ -19,11 +19,11 @@ func popUp(positioning item: NSMenuItem?, at location: NSPoint, in view: NSView?
 - (BOOL) popUpMenuPositioningItem:(NSMenuItem *) item atLocation:(NSPoint) location inView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if menu tracking ended because an item was selected, and [`false`](../../Swift/false.md) if menu tracking was cancelled for any reason.
 
-#### Discussion
+## Discussion
 
 Displays the menu as a pop-up menu. The top left corner of the specified item (if specified, `item` must be present in the menu) is positioned at the specified location in the specified view, interpreted in the view’s own coordinate system.
 

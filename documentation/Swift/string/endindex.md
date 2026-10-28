@@ -21,7 +21,7 @@ A string’s “past the end” position—that is, the position one greater tha
 var endIndex: String.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In an empty string, `endIndex` is equal to `startIndex`.
 

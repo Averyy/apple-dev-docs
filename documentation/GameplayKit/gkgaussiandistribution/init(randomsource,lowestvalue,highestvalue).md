@@ -24,11 +24,11 @@ init(randomSource source: any GKRandom, lowestValue lowestInclusive: Int, highes
 - (instancetype) initWithRandomSource:(id<GKRandom>) source lowestValue:(NSInteger) lowestInclusive highestValue:(NSInteger) highestInclusive;
 ```
 
-#### Return Value
+## Return Value
 
 A new random distribution.
 
-#### Discussion
+## Discussion
 
 Using this initializer creates a Gaussian distribution centered within the specified range. The [`mean`](./mean.md) property is set to the midpoint between the `lowestInclusive` and `highestInclusive` parameters (`mean = (highest + lowest) / 2`), and the [`deviation`](./deviation.md) property is set such that the highest and lowest values are each three deviations away from the mean (`deviation = (highest - lowest) / 6`). The [`mean`](./mean.md) and [`deviation`](./deviation.md) properties can thus be floating-point values even if you use the distribution only to produce integers.
 

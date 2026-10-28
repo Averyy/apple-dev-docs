@@ -21,7 +21,7 @@ init(image: UIImage, handler: ((CPNowPlayingButton) -> Void)? = nil)
 - (instancetype) initWithImage:(UIImage *) image handler:(void (^)(CPNowPlayingButton *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen—see your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property—and make sure it is no larger than [`CPNowPlayingButtonMaximumImageSize`](../cpnowplayingbuttonmaximumimagesize.md).
 

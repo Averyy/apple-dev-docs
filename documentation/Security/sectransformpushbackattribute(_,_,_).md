@@ -21,11 +21,11 @@ func SecTransformPushbackAttribute(_ ref: SecTransformImplementationRef, _ attri
 extern CFTypeRefSecTransformPushbackAttribute(SecTransformImplementationRef ref, SecTransformStringOrAttributeRef attribute, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the error’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 Calling this function stops the flow of data into the specified attribute until any attribute is changed for the transform instance bound to the `ref` parameter.
 

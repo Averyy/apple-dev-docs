@@ -19,7 +19,7 @@ var slider: NSSlider { get set }
 @property (strong) NSSlider * slider;
 ```
 
-#### Discussion
+## Discussion
 
 The slider is automatically created by the item, but you can provide a custom subclass to this property to customize behavior.
 

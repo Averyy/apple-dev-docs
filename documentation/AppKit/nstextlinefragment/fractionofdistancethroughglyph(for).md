@@ -19,7 +19,7 @@ func fractionOfDistanceThroughGlyph(for point: CGPoint) -> CGFloat
 - (CGFloat) fractionOfDistanceThroughGlyphForPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The fraction of distance from the upstream edge.
 

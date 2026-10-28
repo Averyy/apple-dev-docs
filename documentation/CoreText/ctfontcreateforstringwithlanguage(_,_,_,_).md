@@ -25,11 +25,11 @@ func CTFontCreateForStringWithLanguage(_ currentFont: CTFont, _ string: CFString
 extern CTFontRefCTFontCreateForStringWithLanguage(CTFontRef currentFont, CFStringRef string, CFRange range, CFStringRef language);
 ```
 
-#### Return Value
+## Return Value
 
 The best substitute font that can encode the specified string range.
 
-#### Discussion
+## Discussion
 
 The current font itself can be returned if it covers the string provided. If the caller does not specify the language parameter, the function uses the current system language. The format of the language identifier should conform to [UTS #35](http://unicode.org/reports/tr35/).
 

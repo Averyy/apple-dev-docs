@@ -24,7 +24,7 @@ static let traits: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorTraitsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSDictionary`](../../../Foundation/nsdictionary.md) instance that fully describes the font traits. The font supplies the default value.
 

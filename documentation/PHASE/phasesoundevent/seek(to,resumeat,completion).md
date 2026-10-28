@@ -26,7 +26,7 @@ func seek(to time: Double, resumeAt engineTime: AVAudioTime) async -> PHASESound
 - (void) seekToTime:(double) time resumeAtEngineTime:(AVAudioTime *) engineTime completion:(void (^)(PHASESoundEventSeekHandlerReason reason)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Seeks all leaf nodes in a PHASESoundEvent to the specified time, and automatically resumes playback at the specified engine time.
 

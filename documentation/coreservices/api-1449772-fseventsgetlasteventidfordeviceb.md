@@ -18,11 +18,11 @@ func FSEventsGetLastEventIdForDeviceBeforeTime(_ dev: dev_t, _ time: CFAbsoluteT
 FSEventStreamEventId FSEventsGetLastEventIdForDeviceBeforeTime(dev_t dev, CFAbsoluteTime time);
 ```
 
-#### Return Value
+## Return Value
 
 The last event ID for the given device that was returned before the given time.
 
-#### Discussion
+## Discussion
 
 Gets the last event ID for the given device that was returned before the given time. This is conservative in the sense that if you then use the returned event ID as the sinceWhen parameter of FSEventStreamCreateRelativeToDevice() that you will not miss any events that happened since that time. On the other hand, you might receive some (harmless) extra events.
 

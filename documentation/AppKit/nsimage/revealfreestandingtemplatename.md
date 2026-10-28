@@ -19,7 +19,7 @@ class let revealFreestandingTemplateName: String
 extern NSImageName const NSImageNameRevealFreestandingTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this image to implement a borderless button.
 

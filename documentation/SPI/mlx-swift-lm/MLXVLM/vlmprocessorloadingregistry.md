@@ -17,7 +17,7 @@ Ordered registry of processor-loading resolvers used by [`VLMModelFactory`](./vl
 final class VLMProcessorLoadingRegistry
 ```
 
-#### Overview
+## Overview
 
 Most recently registered wins for each hook independently. This lets a downstream package choose one value while deferring the other to an earlier resolver.
 

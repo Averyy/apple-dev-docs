@@ -25,7 +25,7 @@ func encode(_ value: Int64, forKey key: String)
 - (void) encodeInt64:(int64_t) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

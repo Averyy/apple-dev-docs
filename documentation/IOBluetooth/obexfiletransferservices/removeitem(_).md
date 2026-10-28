@@ -19,11 +19,11 @@ func removeItem(_ inItemName: String!) -> OBEXError
 - (OBEXError) removeItem:(NSString *) inItemName;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXBadArgumentError initially. Further results returned through the fileTransferServicesRemoveItemComplete: delegate method if initially successful.
 
-#### Discussion
+## Discussion
 
 Not supported for use on Apple computer targets
 

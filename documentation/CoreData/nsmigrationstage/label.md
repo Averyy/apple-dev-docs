@@ -25,7 +25,7 @@ var label: String! { get set }
 @property (nonatomic, copy, null_resettable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Persistent history tracking, if enabled, records the label for later use. The default value is an empty string.
 

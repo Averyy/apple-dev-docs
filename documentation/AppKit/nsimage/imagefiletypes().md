@@ -21,11 +21,11 @@ class func imageFileTypes() -> [String]
 + (NSArray<NSString *> *) imageFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which identifies a single supported file type. The array can include encoded HFS file types as well as filename extensions.
 
-#### Discussion
+## Discussion
 
 This list includes all file types supported by registered subclasses of [`NSImageRep`](../nsimagerep.md) plus those that can be converted to a supported type by a user-installed filter service. You can pass the array returned by this method directly to the [`runModalForTypes:`](../nsopenpanel/runmodalfortypes_.md) method of `NSOpenPanel`.
 

@@ -20,7 +20,7 @@ let vmnet_shared_interface_name_key: UnsafePointer<CChar>
 extern const char * const vmnet_shared_interface_name_key;
 ```
 
-#### Discussion
+## Discussion
 
 The property is specified in the `interface_desc` dictionary.
 

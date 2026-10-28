@@ -18,7 +18,7 @@ Determines if accessing the specified URL is allowed or denied.
 + (void) verdictForURL:(NSURL *) url completionHandler:(void (^)(NEURLFilterVerdict result)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Callers should honor the return verdict to prevent communication with restricted or malicious sites.
 

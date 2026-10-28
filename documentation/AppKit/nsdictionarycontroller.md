@@ -19,7 +19,7 @@ class NSDictionaryController
 @interface NSDictionaryController : NSArrayController
 ```
 
-#### Overview
+## Overview
 
 [`NSDictionaryController`](./nsdictionarycontroller.md) transforms the contents of a dictionary into an array of key-value pairs that can be bound to user interface items such as the columns of an [`NSTableView`](./nstableview.md).
 

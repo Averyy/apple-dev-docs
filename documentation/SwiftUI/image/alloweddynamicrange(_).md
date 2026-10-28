@@ -20,11 +20,11 @@ Returns a new image configured with the specified allowed dynamic range.
 func allowedDynamicRange(_ range: Image.DynamicRange?) -> Image
 ```
 
-#### Return Value
+## Return Value
 
 A new image.
 
-#### Discussion
+## Discussion
 
 The following example enables HDR rendering for a specific image view, assuming that the image has an HDR (ITU-R 2100) color space and the output device supports it:
 

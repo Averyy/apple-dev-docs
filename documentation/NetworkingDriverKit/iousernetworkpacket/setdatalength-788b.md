@@ -15,7 +15,7 @@ Changes the number of bytes of data in the packet to the specified value.
 virtual kern_return_t SetDataLength(uint32_t length);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

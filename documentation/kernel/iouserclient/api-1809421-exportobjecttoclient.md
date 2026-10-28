@@ -12,7 +12,7 @@ virtual IOReturn exportObjectToClient(
  io_object_t *clientObj);
 ```
 
-#### Overview
+## Overview
 
 Make an arbitrary OSObject available to the client task.
 

@@ -25,7 +25,7 @@ func publishL2CAPChannel(withEncryption encryptionRequired: Bool)
 - (void) publishL2CAPChannelWithEncryption:(BOOL) encryptionRequired;
 ```
 
-#### Discussion
+## Discussion
 
 The system determines an unused Protocol and Service Multiplexer (PSM) at the time of publishing, and provides it to your app with [`peripheralManager(_:didPublishL2CAPChannel:error:)`](../cbperipheralmanagerdelegate/peripheralmanager%28_,didpublishl2capchannel,error%29.md). L2CAP channels aren’t discoverable by themselves, so it’s the app’s responsibility to handle PSM discovery on the client.
 

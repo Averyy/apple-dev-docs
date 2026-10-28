@@ -16,11 +16,11 @@ Clients can use this API to reserve extra power for use by this device while the
 IOReturn (*RequestExtraPower)(void *self, UInt32 type, UInt32 requestedPower, UInt32 *powerAvailable);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnUnsupported is the bus doesn't support this function.
 
-#### Discussion
+## Discussion
 
 The device has to be open to use this function.
 

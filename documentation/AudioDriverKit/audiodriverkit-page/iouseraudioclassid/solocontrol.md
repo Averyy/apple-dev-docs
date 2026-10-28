@@ -15,7 +15,7 @@ The identifier for the audio solo control class.
 SoloControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class where a `true` value means that only this element is audible and the other elements are inaudible.
 

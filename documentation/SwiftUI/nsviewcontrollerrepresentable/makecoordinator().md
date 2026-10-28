@@ -17,7 +17,7 @@ Creates the custom object that you use to communicate changes from your view con
 @preconcurrency func makeCoordinator() -> Self.Coordinator
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if changes to your view controller might affect other parts of your app. In your implementation, create a custom Swift instance that can communicate with other parts of your interface. For example, you might provide an instance that binds its variables to SwiftUI properties, causing the two to remain synchronized. If your view controller doesn’t interact with other parts of your app, providing a coordinator is unnecessary.
 

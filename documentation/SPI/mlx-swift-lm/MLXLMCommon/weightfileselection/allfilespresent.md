@@ -17,7 +17,7 @@ Load every safetensors file in the model directory.
 case allFilesPresent
 ```
 
-#### Discussion
+## Discussion
 
 This is an escape hatch for a checkpoint whose index is known to be wrong in a way [`WeightFileSelection.automatic`](./automatic.md) cannot detect – an index that names files that all exist but omits weights the model needs. It loads files that may not belong to this model, and a stray tensor whose name collides with one the model’s `sanitize(weights:)` rewrites is loaded silently rather than reported, so prefer a model that declares its own extra files (see [`AdditionalWeightFilesProviding`](../additionalweightfilesproviding.md)) where that is possible.
 

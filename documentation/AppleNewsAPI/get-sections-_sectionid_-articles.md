@@ -9,11 +9,11 @@ See a list of all articles in a section that match the specified search criteria
 **Availability**:
 - Apple News API 1.0+
 
-#### Discussion
+## Discussion
 
 A Search Articles request returns a list of all articles in a section that were created between `fromDate` and `toDate`. The results of this call are paginated, with a maximum page size of 100. Each response contains a link to the next page of results.
 
-##### Example
+### Example
 
 **Request**:
 

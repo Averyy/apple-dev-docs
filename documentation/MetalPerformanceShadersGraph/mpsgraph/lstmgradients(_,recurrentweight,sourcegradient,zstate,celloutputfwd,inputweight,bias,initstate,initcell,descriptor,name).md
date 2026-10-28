@@ -24,11 +24,11 @@ func LSTMGradients(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, so
 - (NSArray<MPSGraphTensor *> *) LSTMGradientsWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight sourceGradient:(MPSGraphTensor *) sourceGradient zState:(MPSGraphTensor *) zState cellOutputFwd:(MPSGraphTensor *) cellOutputFwd inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias initState:(MPSGraphTensor *) initState initCell:(MPSGraphTensor *) initCell descriptor:(MPSGraphLSTMDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` array containing gradients for each input tensor, except for `sourceGradient` and `mask`. In case an input is nil, no gradient will be returned for it. The order of the gradients will be: for `source`, for `recurrentWeight`, for `inputWeight`, for `bias`, for `initState` and for `initCell`.
 
-#### Discussion
+## Discussion
 
 For details of this operation and parameters, refer to documentation of [`LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:mask:peephole:descriptor:name:)`](./lstm%28_,recurrentweight,inputweight,bias,initstate,initcell,mask,peephole,descriptor,name%29.md).
 

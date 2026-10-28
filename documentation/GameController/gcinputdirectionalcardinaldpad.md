@@ -24,7 +24,7 @@ let GCInputDirectionalCardinalDpad: String
 extern NSString * const GCInputDirectionalCardinalDpad;
 ```
 
-#### Discussion
+## Discussion
 
 This input element is an eight-way digital directional pad with physical up, down, left, and right buttons. For the second-generation Siri Remote and later, this represents the outer ring of the touch surface.
 

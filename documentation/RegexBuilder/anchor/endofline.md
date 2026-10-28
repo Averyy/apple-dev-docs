@@ -21,7 +21,7 @@ An anchor that matches at the end of a line, including at the end of the input s
 static var endOfLine: Anchor { get }
 ```
 
-#### Discussion
+## Discussion
 
 This anchor is equivalent to `$` in regex syntax when the `m` option has been enabled or `anchorsMatchLineEndings(true)` has been called.
 

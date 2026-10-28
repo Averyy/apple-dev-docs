@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, itemsForAddingTo session: any 
 - (NSArray<UIDragItem *> *) tableView:(UITableView *) tableView itemsForAddingToDragSession:(id<UIDragSession>) session atIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UIDragItem`](../uidragitem.md) objects representing the contents of the specified row. Return an empty array if you do not want the user to add the row to the drag session.
 
-#### Discussion
+## Discussion
 
 Implement this method to allow the user to add items to an active drag session. When a drag session is active and the user taps a row, the table view calls this method. Your implementation should return the drag items to add to the drag operation. If you don’t implement this method, additional touches in the table view are handled as normal table view interactions. For example, additional taps cause rows to be selected or deselected.
 

@@ -24,11 +24,11 @@ func rect(for mapRect: MKMapRect) -> CGRect
 - (CGRect) rectForMapRect:(MKMapRect) mapRect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in the overlay’s drawing area that corresponds to the map rectangle.
 
-#### Discussion
+## Discussion
 
 You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](./draw%28_,zoomscale,in%29.md) method.
 

@@ -21,7 +21,7 @@ A type that represents Rich Text Format Directory documents.
 static var rtfd: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 RTFD is RTF with content embedded in its on-disk format.
 

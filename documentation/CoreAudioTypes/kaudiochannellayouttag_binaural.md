@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Binaural: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Binaural
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

@@ -24,7 +24,7 @@ var isMenuVisible: Bool { get set }
 @property (nonatomic, getter=isMenuVisible) BOOL menuVisible;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property displays or hides the menu immediately, without animation. For animating the showing or hiding of the menu, use the [`setMenuVisible(_:animated:)`](./setmenuvisible%28_,animated%29.md) method. Before showing the menu, be sure to position it relative to the selection.
 

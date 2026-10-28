@@ -16,7 +16,7 @@ Loads the specified interface controllers and rebuilds the app’s page-based in
 @preconcurrency class func reloadRootControllers(withNamesAndContexts namesAndContexts: [(name: String, context: AnyObject)])
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to reload the pages in your app’s page-based interface:
 

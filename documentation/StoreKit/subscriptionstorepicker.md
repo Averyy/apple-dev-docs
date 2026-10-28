@@ -21,7 +21,7 @@ A composite control with a picker for selecting a subscription option and a butt
 @preconcurrency struct SubscriptionStorePicker<PickerContent, ConfirmationContent> where PickerContent : View, ConfirmationContent : View
 ```
 
-#### Overview
+## Overview
 
 When implementing custom subscription store control styles conforming to [`SubscriptionStoreControlStyle`](./subscriptionstorecontrolstyle.md), you can use this view to utilize the standard subscription picker as a component of the view you provide from [`makeBody(configuration:)`](./subscriptionstorecontrolstyle/makebody%28configuration%29.md). The subscription picker is a composite control: it contains both a picker for choosing an option, and a button to subscribe to the selected option.
 

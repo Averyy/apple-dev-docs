@@ -25,11 +25,11 @@ func mutableArrayValue(forKeyPath keyPath: String) -> NSMutableArray
 - (NSMutableArray *) mutableArrayValueForKeyPath:(NSString *) keyPath;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable array that provides read-write access to the ordered to-many relationship specified by `keyPath`.
 
-#### Discussion
+## Discussion
 
 See [`mutableArrayValue(forKey:)`](./mutablearrayvalue%28forkey%29.md) for additional details.
 

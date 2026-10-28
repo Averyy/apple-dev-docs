@@ -24,7 +24,7 @@ class UIViewPropertyAnimator
 @interface UIViewPropertyAnimator : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md) object lets you animate changes to views and dynamically modify your animations before they finish. With a property animator, you can run your animations from start to finish normally or you can turn them into interactive animations and control the timing yourself. The animator operates on animatable properties of views, such as the [`frame`](./uiview/frame.md), [`center`](./uiview/center.md), [`alpha`](./uiview/alpha.md), and [`transform`](./uiview/transform.md) properties, creating the needed animations from the blocks you provide.
 
@@ -43,7 +43,7 @@ If you create your animator using one of the standard initialization methods, yo
 
 This class adopts the [`UIViewAnimating`](./uiviewanimating.md) and [`UIViewImplicitlyAnimating`](./uiviewimplicitlyanimating.md) protocols, which define the methods for starting, stopping, and modifying your animations. For more information about the methods of those protocols, see [`UIViewAnimating`](./uiviewanimating.md) and [`UIViewImplicitlyAnimating`](./uiviewimplicitlyanimating.md).
 
-##### Modify animations dynamically
+### Modify animations dynamically
 
 A property animator gives you programmatic control over the timing and execution of the animations. Specifically, you can:
 

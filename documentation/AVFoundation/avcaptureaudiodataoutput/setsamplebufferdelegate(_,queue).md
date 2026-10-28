@@ -23,7 +23,7 @@ func setSampleBufferDelegate(_ sampleBufferDelegate: (any AVCaptureAudioDataOutp
 - (void) setSampleBufferDelegate:(id<AVCaptureAudioDataOutputSampleBufferDelegate>) sampleBufferDelegate queue:(dispatch_queue_t) sampleBufferCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 When a new audio sample buffer is captured it is vended to the sample buffer delegate using the [`captureOutput(_:didOutput:from:)`](../avcaptureaudiodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md) delegate method. All delegate methods are called on the specified dispatch queue.
 
@@ -31,7 +31,7 @@ If the queue is blocked when new samples are captured, those samples will be aut
 
 If you need to minimize the chances of samples being dropped, you should specify a queue on which a sufficiently small amount of processing is being done outside of receiving sample buffers. When migrating extra processing to another queue, you are responsible for ensuring that memory usage does not grow without bound from samples that have not been processed.
 
-##### Special considerations
+### Special considerations
 
 This method uses [`dispatch_retain`](../../Dispatch/dispatch_retain.md) and [`dispatch_release`](../../Dispatch/dispatch_release.md) to manage the queue.
 

@@ -15,11 +15,11 @@ Get filesystem-private mount data.
 void * vfs_fsprivate(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Private data.
 
-#### Discussion
+## Discussion
 
 A filesystem generally has an internal mount structure which it attaches to the VFS-level mount structure as part of the mounting process.
 

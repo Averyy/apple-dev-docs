@@ -21,7 +21,7 @@ func ABPersonGetTypeOfProperty(_ property: ABPropertyID) -> ABPropertyType
 extern ABPropertyType ABPersonGetTypeOfProperty(ABPropertyID property);
 ```
 
-#### Return Value
+## Return Value
 
 The type of `property`.
 

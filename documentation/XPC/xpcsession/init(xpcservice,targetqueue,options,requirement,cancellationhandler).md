@@ -17,7 +17,7 @@ Creates a new session object representing a connection to the named service, and
 convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, requirement: XPCPeerRequirement, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 - requirement: The requirement the peer must have
 

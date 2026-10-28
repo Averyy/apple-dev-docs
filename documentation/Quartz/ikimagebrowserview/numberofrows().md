@@ -19,7 +19,7 @@ func numberOfRows() -> Int
 - (NSUInteger) numberOfRows;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows.
 

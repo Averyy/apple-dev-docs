@@ -21,7 +21,7 @@ Creates a data frame from a Turi Create scalable data frame.
 init(contentsOfSFrameDirectory url: URL, columns: [String]? = nil, rows: Range<Int>? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An `SFrameReadingError` instance.
 

@@ -29,7 +29,7 @@ typedef struct { ... } SparseMatrix_Double;
 
 - [Creating sparse matrices](./creating-sparse-matrices.md)
 
-#### Overview
+## Overview
 
 You typically use sparse matrices to represent the sparse coefficient matrix in the matrix equation *Ax = b.* A [`SparseMatrix_Double`](./sparsematrix_double.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
 

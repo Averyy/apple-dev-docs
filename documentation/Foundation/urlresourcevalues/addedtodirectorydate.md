@@ -21,7 +21,7 @@ The date the resource was created, or renamed into or within its parent director
 var addedToDirectoryDate: Date? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Inconsistent behavior may be observed when this attribute is requested on hard-linked items. This property is not supported by all volumes.
 

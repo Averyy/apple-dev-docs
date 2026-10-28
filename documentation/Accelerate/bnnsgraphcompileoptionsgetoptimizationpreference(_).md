@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsGetOptimizationPreference(_ options: bnns_graph_comp
 BNNSGraphOptimizationPreference BNNSGraphCompileOptionsGetOptimizationPreference(bnns_graph_compile_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The optimization preference for the specified compilation options object.
 

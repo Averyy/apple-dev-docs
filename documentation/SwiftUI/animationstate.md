@@ -21,7 +21,7 @@ A container that stores the state for a custom animation.
 struct AnimationState<Value> where Value : VectorArithmetic
 ```
 
-#### Overview
+## Overview
 
 An [`AnimationContext`](./animationcontext.md) uses this type to store state for a [`CustomAnimation`](./customanimation.md). To retrieve the stored state of a context, you can use the [`state`](./animationcontext/state.md) property. However, a more convenient way to access the animation state is to define an [`AnimationStateKey`](./animationstatekey.md) and extend [`AnimationContext`](./animationcontext.md) with a computed property that gets and sets the animation state, as shown in the following code:
 
@@ -72,7 +72,7 @@ struct PausableAnimation: CustomAnimation {
 }
 ```
 
-##### Storing state for secondary animations
+### Storing state for secondary animations
 
 A custom animation can also use `AnimationState` to store the state of a secondary animation. For example, the following code creates an [`AnimationStateKey`](./animationstatekey.md) that includes the property `secondaryState`, which a custom animation can use to store other state:
 

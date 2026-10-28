@@ -23,7 +23,7 @@ static func value(for object: Self.ObjectiveCValue) throws -> Self.Value
 
 Available when `ObjectiveCValue` is `NSNumber`, `Value` conforms to `RawRepresentable`, and `Value.RawValue` is `Int`.
 
-#### Return Value
+## Return Value
 
 `object`, expressed as this key’s type.
 

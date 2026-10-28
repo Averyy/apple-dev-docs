@@ -14,7 +14,7 @@
 kIOHIDElementCollectionTypeUsageSwitch
 ```
 
-#### Discussion
+## Discussion
 
 Modifies the meaning of the usage it contains.
 

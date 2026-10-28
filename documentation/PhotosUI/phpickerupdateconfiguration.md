@@ -19,7 +19,7 @@ An object that defines the aspects of a photo picker’s appearance that can cha
 @interface PHPickerUpdateConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 While a photos picker is visible, you can use an instance of this object to change its [`edgesWithoutContentMargins`](./phpickerconfiguration-c.class/edgeswithoutcontentmargins.md) or [`selectionLimit`](./phpickerconfiguration-swift.struct/selectionlimit.md) properties. To do that, create and configure an instance of this object and pass it to the [`PHPickerViewController`](./phpickerviewcontroller.md) method [`updatePickerUsingConfiguration:`](./phpickerviewcontroller/updatepickerusingconfiguration_.md).
 

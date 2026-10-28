@@ -23,7 +23,7 @@ var direction: CGVector { get set }
 @property (nonatomic, assign) CGVector direction;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the direction of motion for velocity and linear gravity fields. For nondirectional fields, the default value of this property is a zero vector.
 

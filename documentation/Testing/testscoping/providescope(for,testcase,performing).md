@@ -17,7 +17,7 @@ Provide custom execution scope for a function call which is related to the speci
 func provideScope(for test: Test, testCase: Test.Case?, performing function: @Sendable () async throws -> Void) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: Any error that `function` throws, or an error that prevents this type from providing a custom scope correctly. The testing library records an error thrown from this method as an issue associated with `test`. If an error is thrown before this method calls `function`, the corresponding test doesn’t run.
 

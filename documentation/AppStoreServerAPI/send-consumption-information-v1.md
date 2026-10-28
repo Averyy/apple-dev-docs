@@ -14,11 +14,11 @@ Send consumption information about a consumable In-App Purchase or auto-renewabl
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  For App Store In-App Purchases that don’t use the Advanced Commerce API, use [`Send Consumption Information`](./send-consumption-information.md) instead.
 
-#### Discussion
+## Discussion
 
 The App Store uses a variety of factors to determine if a refund request is approved or denied. To help inform and improve the refund process, you can send information about a customer’s consumption of the In-App Purchase to the App Store when the customer requests a refund. The App Store uses the consumption information you provide to inform its refund decisions.
 
@@ -28,7 +28,7 @@ Respond within 12 hours of receiving the `CONSUMPTION_REQUEST` notification.
 
 For information about configuring your server to receive App Store server notifications, see [Enabling App Store Server Notifications](../AppStoreServerNotifications/enabling-app-store-server-notifications.md). For information about initiating refund requests in an app, see any of the refund request methods, including [`beginRefundRequest(in:)`](../StoreKit/transaction/beginrefundrequest%28in%29-9k0pj.md), [`beginRefundRequest(for:in:)`](../StoreKit/transaction/beginrefundrequest%28for,in%29-65tph.md), [`beginRefundRequest(in:)`](../StoreKit/transaction/beginrefundrequest%28in%29-63bvd.md), and [`beginRefundRequest(for:in:)`](../StoreKit/transaction/beginrefundrequest%28for,in%29-9mscy.md).
 
-##### Obtain valid consent
+### Obtain valid consent
 
 You must obtain valid consent from the customer before sharing their personal data with Apple in the [`Send Consumption Information V1`](./send-consumption-information-v1.md) API. You, the developer, are solely responsible for obtaining valid consent because you’re sharing with Apple the data that you collected from the customer.
 
@@ -45,13 +45,13 @@ Here are some general guidelines to keep in mind for obtaining valid consent:
 
 The data you share with Apple through the [`Send Consumption Information V1`](./send-consumption-information-v1.md) API isn’t used for tracking. You must separately obtain consent from customers when sharing data with Apple using the [`Send Consumption Information V1`](./send-consumption-information-v1.md) API.
 
-##### Disclose data usage
+### Disclose data usage
 
 If you adopt the [`Send Consumption Information V1`](./send-consumption-information-v1.md) API, answer the app privacy questions to disclose in your labels any data you collect from your customers and what you’re using it for. For more information about app privacy labels, see [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/).
 
 Apple uses and protects the data you share through the [`Send Consumption Information V1`](./send-consumption-information-v1.md) API in accordance with [Apple’s Privacy Policy](https://www.apple.com/legal/privacy/en-ww/). For additional information about how Apple protects data, see [Apple Platform Security Guide](https://support.apple.com/guide/security/welcome/web). Apple retains the data you provide through the [`Send Consumption Information V1`](./send-consumption-information-v1.md) API for the period necessary to fulfill the purpose for which the data was collected, which is to improve the refund process by obtaining data that assists with reviewing the customer’s refund request. Apple may share the data you provide through the [`Send Consumption Information V1`](./send-consumption-information-v1.md) API with service providers who act on our behalf, our partners, or others at your direction. Apple will not share the data with third parties for their own marketing purposes. For more information, see [App Store & Privacy](https://www.apple.com/legal/privacy/data/en/app-store/).
 
-##### Handle requests to access or delete consumption data
+### Handle requests to access or delete consumption data
 
 If your customers request access to or deletion of their personal data related to consumption information, inform them that they may submit requests directly to Apple by visiting [privacy.apple.com](https://privacy.apple.com). If your app stores data in CloudKit on behalf of your customers, see [Responding to Requests to Delete Data](../CloudKit/responding-to-requests-to-delete-data.md), [Providing User Access to CloudKit Data](../CloudKit/providing-user-access-to-cloudkit-data.md), and [Changing Access Controls on User Data](../CloudKit/changing-access-controls-on-user-data.md) for more information.
 

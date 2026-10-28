@@ -28,7 +28,7 @@ var rolloffFactor: Double { get set }
 
 - [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Discussion
+## Discussion
 
 The framework clamps a value to the range `[0.0,` [`greatestFiniteMagnitude`](../../Swift/double/greatestfinitemagnitude.md)].
 

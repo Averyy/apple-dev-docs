@@ -21,7 +21,7 @@ Fetches all participants that match the specified critieria.
 - (void) fetchParticipantsMatchingLookupInfos:(NSArray<CKUserIdentityLookupInfo *> *) lookupInfos intoPersistentStore:(NSPersistentStore *) persistentStore completion:(void (^)(NSArray<CKShareParticipant *> *fetchedParticipants, NSError *fetchError)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The `completion` handler returns no value and takes the following parameters:
 

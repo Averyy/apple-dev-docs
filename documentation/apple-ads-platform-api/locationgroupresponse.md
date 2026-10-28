@@ -15,11 +15,11 @@ The response object returned by the Get Location Group endpoint.
 object LocationGroupResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `LocationGroupResponse` object is the top-level envelope returned by [`Get Location Group`](./get-location-group-by-id.md). On success, `result` contains a single [`LocationGroup`](./locationgroup.md). On failure (for example, 404 Not Found), the response contains only the `error` object. The response omits the `result` key entirely rather than setting it to `null`.
 
-##### Example
+### Example
 
 ```json
 {

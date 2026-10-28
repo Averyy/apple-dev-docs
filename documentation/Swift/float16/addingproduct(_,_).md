@@ -21,11 +21,11 @@ Returns the result of adding the product of the two given values to this value, 
 func addingProduct(_ lhs: Self, _ rhs: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The product of `lhs` and `rhs`, added to this value.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the C `fma` function and implements the `fusedMultiplyAdd` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 

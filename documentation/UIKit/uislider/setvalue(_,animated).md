@@ -22,7 +22,7 @@ func setValue(_ value: Float, animated: Bool)
 - (void) setValue:(float) value animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a value that is beyond the minimum or maximum values, the slider limits the value to the minimum or maximum. For example, if the minimum value is 0.0 and you specify -1.0, the slider sets the [`value`](./value.md) property to 0.0.
 

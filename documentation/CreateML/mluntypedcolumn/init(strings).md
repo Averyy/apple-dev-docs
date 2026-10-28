@@ -20,11 +20,11 @@ Creates a new column of strings by converting the elements of another column.
 init(strings: MLUntypedColumn)
 ```
 
-#### Return Value
+## Return Value
 
 A new untyped column of doubles; otherwise an invalid column if any element of the given column cannot be converted to [`String`](../../Swift/string.md).
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of strings from another column. As an example, to create a column with this initializer, first start with a column that is convertible to strings.
 

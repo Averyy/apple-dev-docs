@@ -15,7 +15,7 @@ The panel is created as a transparent panel (sometimes called a “heads-up disp
 static const NSWindowStyleMask NSHUDWindowMask;
 ```
 
-#### Discussion
+## Discussion
 
 Valid only for an instance of `NSPanel` or its subclasses; not valid for a window.
 

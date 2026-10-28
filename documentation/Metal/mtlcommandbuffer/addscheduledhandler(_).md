@@ -29,7 +29,7 @@ func addScheduledHandler(_ block: @escaping MTLCommandBufferHandler)
 
 - [Setting up a command structure](../setting-up-a-command-structure.md)
 
-#### Discussion
+## Discussion
 
 You can register one or more scheduling completion handlers for the same command buffer. The GPU device’s driver (on the CPU) calls the completion handlers after it finishes scheduling the command buffer to run on the GPU.
 

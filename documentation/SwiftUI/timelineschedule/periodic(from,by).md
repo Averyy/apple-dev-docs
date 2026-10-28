@@ -24,7 +24,7 @@ static func periodic(from startDate: Date, by interval: TimeInterval) -> Periodi
 
 Available when `Self` is `PeriodicTimelineSchedule`.
 
-#### Discussion
+## Discussion
 
 Initialize a [`TimelineView`](../timelineview.md) with a periodic timeline schedule when you want to schedule timeline view updates periodically with a custom interval:
 

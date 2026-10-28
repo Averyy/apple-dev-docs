@@ -23,7 +23,7 @@ var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringSt
 @property (nonatomic, readonly) NSSet<NSString *> * cinematicVideoCaptureSceneMonitoringStatuses;
 ```
 
-#### Discussion
+## Discussion
 
 Monitor this property via key-value observation to present a UI informing the user that they should reframe their scene for a better Cinematic Video experience (“scene is too dark”).
 

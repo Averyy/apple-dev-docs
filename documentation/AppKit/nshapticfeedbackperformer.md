@@ -19,7 +19,7 @@ protocol NSHapticFeedbackPerformer : NSObjectProtocol
 @protocol NSHapticFeedbackPerformer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To retrieve a haptic feedback performer object based on the current input device, accessibility settings, and user preferences, call the [`defaultPerformer`](./nshapticfeedbackmanager/defaultperformer.md) method of the [`NSHapticFeedbackManager`](./nshapticfeedbackmanager.md) class.
 

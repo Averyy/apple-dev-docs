@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_APPLE_EXTENSION_APPLEID_SHARING;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

@@ -25,7 +25,7 @@ func cblas_srotmg(_ D1: UnsafeMutablePointer<Float>, _ D2: UnsafeMutablePointer<
 void cblas_srotmg(float *D1, float *D2, float *B1, const float B2, float *P);
 ```
 
-#### Discussion
+## Discussion
 
 The resulting matrix zeroes the second component of the vector `(sqrt(D1)*B1, sqrt(SD2)*B2)`.
 

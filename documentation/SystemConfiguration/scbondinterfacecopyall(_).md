@@ -19,7 +19,7 @@ func SCBondInterfaceCopyAll(_ prefs: SCPreferences) -> CFArray
 CFArrayRefSCBondInterfaceCopyAll(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The list of Ethernet bond interfaces on the system. You must release the returned value.
 

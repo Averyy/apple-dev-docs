@@ -21,7 +21,7 @@ Subtracts an integer from a demand, and assigns the result to the demand.
 static func -= (lhs: inout Subscribers.Demand, rhs: Int)
 ```
 
-#### Discussion
+## Discussion
 
 When subtracting any value from `.unlimited`, the result is still `.unlimited`. A negative demand is impossible; when an operation would result in a negative value, Combine adjusts the value to `.max(0)`.
 

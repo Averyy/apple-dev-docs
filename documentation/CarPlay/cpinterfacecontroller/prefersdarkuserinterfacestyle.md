@@ -21,7 +21,7 @@ var prefersDarkUserInterfaceStyle: Bool { get set }
 @property (nonatomic, assign) BOOL prefersDarkUserInterfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 To adopt the dark user interface style, set this value to [`true`](../../Swift/true.md) before you provide the root template or push any templates. The default value is [`false`](../../Swift/false.md), which allows templates to change between light and dark styles.
 

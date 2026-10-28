@@ -26,7 +26,7 @@ var error: (any Error)? { get }
 @property (nonatomic, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an `NSError` that describes what caused the display layer to no longer be able to enqueue sample buffers. If the status is not [`AVQueuedSampleBufferRenderingStatus.failed`](../avqueuedsamplebufferrenderingstatus/failed.md), the value of this property is `nil`.
 

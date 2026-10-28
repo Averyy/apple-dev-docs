@@ -24,7 +24,7 @@ A subscription store control style that resolves its appearance automatically, b
 
 Available when `Self` is `AutomaticSubscriptionStoreControlStyle`.
 
-#### Discussion
+## Discussion
 
 You can also use [`subscriptionStoreControlStyle(_:)`](../../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) with [`automatic`](./automatic.md) as the parameter to construct this style.
 

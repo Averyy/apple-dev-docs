@@ -23,7 +23,7 @@ class let keyboardAnimationDurationUserInfoKey: String
 extern NSString * const UIKeyboardAnimationDurationUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a `double` that represents the duration of the keyboard animation in seconds. You can use this value to match the animation of the keyboard in your own animations.
 

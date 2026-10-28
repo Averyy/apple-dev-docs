@@ -23,7 +23,7 @@ static var bottom: UICollectionView.ScrollPosition { get }
 UICollectionViewScrollPositionBottom
 ```
 
-#### Discussion
+## Discussion
 
 This option is mutually exclusive with the [`top`](./top.md) and [`centeredVertically`](./centeredvertically.md) options.
 

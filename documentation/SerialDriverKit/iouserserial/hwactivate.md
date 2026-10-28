@@ -15,11 +15,11 @@ Opens the communication channel to the device.
 virtual kern_return_t HwActivate();
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method and use your implementation to prepare the device’s hardware for serial communication. Always call the `super` version of the method at the beginning of your implementation.
 

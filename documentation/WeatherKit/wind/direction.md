@@ -21,7 +21,7 @@ The direction the wind is coming from in degrees.
 var direction: Measurement<UnitAngle>
 ```
 
-#### Discussion
+## Discussion
 
 True north is at `0` degrees and progresses clockwise from north.
 

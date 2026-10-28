@@ -23,7 +23,7 @@ var view: UIView? { get }
 @property (nonatomic, readonly, nullable) UIView * view;
 ```
 
-#### Discussion
+## Discussion
 
 You attach (or add) a gesture recognizer to a `UIView` object using the [`addGestureRecognizer(_:)`](../uiview/addgesturerecognizer%28_%29.md) method.
 

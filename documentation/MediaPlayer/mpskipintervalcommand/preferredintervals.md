@@ -25,7 +25,7 @@ var preferredIntervals: [NSNumber] { get set }
 @property (nonatomic, copy) NSArray<NSNumber *> * preferredIntervals;
 ```
 
-#### Discussion
+## Discussion
 
 The `preferredIntervals` property holds an array of [`TimeInterval`](../../Foundation/timeinterval.md) objects that designate different skip intervals for a media item. The skip intervals are defined in seconds.
 

@@ -24,7 +24,7 @@ init(device: any MTLDevice, convolutionDescriptor: MPSCNNConvolutionDescriptor, 
 - (instancetype) initWithDevice:(id<MTLDevice>) device convolutionDescriptor:(const MPSCNNConvolutionDescriptor *) convolutionDescriptor kernelWeights:(const float *) kernelWeights biasTerms:(const float *) biasTerms flags:(MPSCNNConvolutionFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSCNNConvolution`](../mpscnnconvolution.md) object or `nil`, if failure.
 

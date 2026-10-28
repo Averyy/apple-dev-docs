@@ -17,7 +17,7 @@ The tag type.
 @property (nonatomic, assign, readonly) NFCTagType type;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`NFCTagType`](../nfctagtype.md).
 

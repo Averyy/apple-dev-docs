@@ -24,7 +24,7 @@ func JSStringGetCharactersPtr(_ string: JSStringRef!) -> UnsafePointer<JSChar>!
 const JSChar *JSStringGetCharactersPtr(JSStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the Unicode character buffer that serves as the backing store of `string`, which the system deallocates when it deallocates `string`.
 

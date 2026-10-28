@@ -21,7 +21,7 @@ Compares two ordered sets to create a difference object that represents the chan
 - (NSOrderedCollectionDifference<id> *) differenceFromOrderedSet:(NSOrderedSet<id> *) other;
 ```
 
-#### Discussion
+## Discussion
 
 The difference method creates the difference object by comparing objects within the ordered sets with the `isEqual:` method.
 

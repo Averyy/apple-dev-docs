@@ -25,7 +25,7 @@ var pivotTolerance: Double
 double pivotTolerance;
 ```
 
-#### Discussion
+## Discussion
 
 The system clamps this to range `[0,0.5]`.
 

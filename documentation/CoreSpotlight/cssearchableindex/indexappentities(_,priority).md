@@ -19,7 +19,7 @@ Indexes one or more app entities and assigns an optional priority to them.
 func indexAppEntities(_ appEntities: [some IndexedEntity], priority: Int = 0) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to index the [`AppEntity`](../../AppIntents/appentity.md) instances you create for your app’s content. For each object in `appEntities`, Spotlight identifies the indexable content and adds it to your app’s index. However, the indexing process isn’t recursive, and this method doesn’t index any child entities contained inside your entity objects. To index both parent and child entities, you must add each object separately to the `appEntities` parameter.
 

@@ -21,7 +21,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You can share a single instance of this class with multiple test cases.
 

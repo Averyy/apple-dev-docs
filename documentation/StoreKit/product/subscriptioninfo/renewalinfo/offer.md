@@ -21,7 +21,7 @@ A subscription offer that applies to the transaction at the next renewal period.
 let offer: Transaction.Offer?
 ```
 
-#### Discussion
+## Discussion
 
 This value is populated if a customer redeems a subscription offer that applies to more than one subscription period.
 

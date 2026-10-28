@@ -25,9 +25,9 @@ func vvremainder(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: U
 void vvremainder(double *, const double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The numerators input array, *y*.

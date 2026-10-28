@@ -13,11 +13,11 @@ static bool checkTypeInst(
  const OSMetaClassBase *typeinst);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the object is derived from the class of `typeinst` or a subclass of that class, otherwise `false`.
 
-#### Overview
+## Overview
 
 It is far more convenient to use OSCheckTypeInst.
 

@@ -19,7 +19,7 @@ class VZKeyboardConfiguration
 @interface VZKeyboardConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 `VZKeyboardConfiguration` defines the abstract interface that defines a virtual keyboard that you connect to a guest operating system. Don’t instantiate `VZKeyboardConfiguration` directly, use one of its subclasses such as [`VZUSBKeyboardConfiguration`](./vzusbkeyboardconfiguration.md) instead.
 

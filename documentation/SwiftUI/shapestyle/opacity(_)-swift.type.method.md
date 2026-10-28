@@ -24,7 +24,7 @@ static func opacity(_ opacity: Double) -> some ShapeStyle
 
 Available when `Self` is `AnyShapeStyle`.
 
-#### Discussion
+## Discussion
 
 In most contexts the current style is the foreground but e.g. when setting the value of the background style, that becomes the current implicit style.
 

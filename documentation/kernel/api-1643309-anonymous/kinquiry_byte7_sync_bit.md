@@ -13,7 +13,7 @@
 kINQUIRY_Byte7_SYNC_Bit = 4
 ```
 
-#### Discussion
+## Discussion
 
 SYNC bit definition.
 

@@ -20,11 +20,11 @@ func be_kevent(_ kq: Int32, _ changelist: UnsafePointer<kevent>!, _ nchanges: In
 extern int be_kevent(int kq, const struct kevent *changelist, int nchanges, struct kevent *eventlist, int nevents, unsigned int be_flags);
 ```
 
-#### Return Value
+## Return Value
 
 The number of events or errors that the function places in `eventlist`, up to `nevents`. If an error occurs and there isn’t space in `eventlist` to write the error, `be_kevent` returns `-1` and sets `errno` to indicate the error.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: To use 64-bit data types, call `be_kevent64`.
 

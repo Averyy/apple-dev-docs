@@ -21,7 +21,7 @@ The delta between successive preferred start times.
 var deltaBetweenPreferredStartTimes: CMTime
 ```
 
-#### Discussion
+## Discussion
 
 Add integer multiples of this delta to `clockStartTime` and `hostClockStartTime` to calculate near-future preferred start times.
 

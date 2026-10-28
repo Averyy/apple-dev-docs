@@ -27,7 +27,7 @@ static func conicGradient(_ gradient: AnyGradient, center: CGPoint, angle: Angle
 static func conicGradient(_ gradient: Gradient, center: CGPoint, angle: Angle = Angle(), options: GraphicsContext.GradientOptions = GradientOptions()) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance filled with a conic gradient.
 

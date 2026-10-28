@@ -26,11 +26,11 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, app
 
 - [Adding custom actions and activities](../adding-custom-actions-and-activities.md)
 
-#### Return Value
+## Return Value
 
 An array of custom [`UIActivity`](../uiactivity.md) objects.
 
-#### Discussion
+## Discussion
 
 The document browser displays an activity view when the user shares a document (for example, when the user long presses a document and then chooses Share from the Edit Menu).
 

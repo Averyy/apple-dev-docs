@@ -20,7 +20,7 @@ var automaticImageScaleEstimationEnabled: Bool { get set }
 @property (nonatomic, assign) BOOL automaticImageScaleEstimationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`true`](../../Swift/true.md), ARKit uses its knowledge of the world to set an image anchor’s [`estimatedScaleFactor`](../arimageanchor/estimatedscalefactor.md) property, which corrects the image anchor’s position in the physical environment.
 

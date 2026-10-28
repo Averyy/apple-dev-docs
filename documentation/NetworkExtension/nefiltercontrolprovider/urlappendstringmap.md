@@ -22,7 +22,7 @@ var urlAppendStringMap: [String : String]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,NSString *> * URLAppendStringMap;
 ```
 
-#### Discussion
+## Discussion
 
 When the Filter Data Provider determines that a string should be appended to the request URL for a new flow, it creates a [`NEFilterNewFlowVerdict`](../nefilternewflowverdict.md) object using the `URLAppendStringVerdictWithMapKey:` class method. The system uses the `URLAppendStringVerdictWithMapKey:` method to look up the corresponding string in this dictionary. The system then appends the string to the flow’s request URL.
 

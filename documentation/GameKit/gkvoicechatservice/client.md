@@ -25,7 +25,7 @@ unowned(unsafe) var client: (any GKVoiceChatClient)! { get set }
 @property (assign) id<GKVoiceChatClient> client;
 ```
 
-#### Discussion
+## Discussion
 
 The client’s chief responsibility is to provide a network connection that the voice chat service can use to connect to another participant.
 

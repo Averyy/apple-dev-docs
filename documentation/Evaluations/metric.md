@@ -27,7 +27,7 @@ struct Metric
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 - [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
-#### Overview
+## Overview
 
 Use `Metric` to define a named measurement. The factory methods (`passing`, `failing`, `scoring`, `ignore`) return a new `Metric` with the result stored inside.
 

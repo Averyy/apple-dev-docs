@@ -15,7 +15,7 @@ Treat as an error.
 case error
 ```
 
-#### Discussion
+## Discussion
 
 Warnings will be elevated to errors, causing the build to fail if any such warnings occur.
 

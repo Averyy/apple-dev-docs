@@ -21,7 +21,7 @@ A Boolean that enables TCP Fast Open on a connection.
 var enableFastOpen: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If TCP Fast Open is enabled and TLS is running on top of TCP, the TLS handshake will automatically be used as the TCP early data. If there is no protocol running on top of TCP, you should also enable fast open on the connection parameters and send idempotent data.
 

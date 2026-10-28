@@ -23,7 +23,7 @@ var sectionFootersPinToVisibleBounds: Bool { get set }
 @property (nonatomic) BOOL sectionFootersPinToVisibleBounds;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), section footer views scroll with content until they reach the bottom of the screen, at which point they are pinned to the lower bounds of the collection view. Each new footer view that scrolls to the bottom of the screen pushes the previously pinned footer view offscreen.
 

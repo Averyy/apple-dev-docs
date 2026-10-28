@@ -20,13 +20,13 @@ func add(_ sender: Any?)
 - (void) add:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The `sender` is typically the object that invoked this method.
 
 If the receiver is in object mode, [`newObject()`](../nsobjectcontroller/newobject%28%29.md) is called and the returned object is added to the collection. If the receiver is in entity mode a new object is created that is appropriate as specified by the entity, and [`newObject()`](../nsobjectcontroller/newobject%28%29.md) is not used. The object is added after the current selection at the same depth. If there is no selection, the object is appended to the child nodes of the tree controller’s sorted content objects, which are represented by the value of [`arrangedObjects`](./arrangedobjects.md).
 
-##### Special Considerations
+### Special Considerations
 
 The result of this method is deferred until the next iteration of the run loop so that the error presentation mechanism can provide feedback as a sheet.
 

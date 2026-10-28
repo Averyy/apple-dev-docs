@@ -24,11 +24,11 @@ class func fetchAssetCollections(with type: PHAssetCollectionType, subtype: PHAs
 + (PHFetchResult<PHAssetCollection *> *) fetchAssetCollectionsWithType:(PHAssetCollectionType) type subtype:(PHAssetCollectionSubtype) subtype options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAssetCollection`](../phassetcollection.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 By default, the returned [`PHFetchResult`](../phfetchresult.md) object contains all asset collections with the specified type and subtype. To retrieve a more specific set of asset collections, provide a [`PHFetchOptions`](../phfetchoptions.md) object containing a filter predicate.
 

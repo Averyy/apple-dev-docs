@@ -22,11 +22,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldShowMenuF
 - (BOOL) collectionView:(UICollectionView *) collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the editing menu should be shown positioned near the item and pointing to it or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 If the user tap-holds a certain item in the collection view, this method (if implemented) is invoked first. Return [`true`](../../Swift/true.md) if you want to permit the editing menu to be displayed. Return [`false`](../../Swift/false.md) if the editing menu shouldn’t be shown—for example, you might return [`false`](../../Swift/false.md) if the corresponding item contains data that should not be copied or pasted over.
 

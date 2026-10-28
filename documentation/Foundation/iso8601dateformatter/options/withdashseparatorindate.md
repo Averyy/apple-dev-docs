@@ -23,7 +23,7 @@ static var withDashSeparatorInDate: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithDashSeparatorInDate
 ```
 
-#### Discussion
+## Discussion
 
 The date representation uses the dash separator (`-`) in the date.
 

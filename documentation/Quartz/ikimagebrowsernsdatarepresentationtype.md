@@ -19,7 +19,7 @@ let IKImageBrowserNSDataRepresentationType: String
 extern NSString * const IKImageBrowserNSDataRepresentationType;
 ```
 
-#### Discussion
+## Discussion
 
 An  [`NSData`](../Foundation/nsdata.md)  object.
 

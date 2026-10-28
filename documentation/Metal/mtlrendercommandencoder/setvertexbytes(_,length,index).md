@@ -25,7 +25,7 @@ func setVertexBytes(_ bytes: UnsafeRawPointer, length: Int, index: Int)
 - (void) setVertexBytes:(const void *) bytes length:(NSUInteger) length atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The method is equivalent to creating an [`MTLBuffer`](../mtlbuffer.md) instance that contains the same data as `bytes` and calling the [`setVertexBuffer(_:offset:index:)`](./setvertexbuffer%28_,offset,index%29.md) method. However, this method avoids the overhead of creating a buffer to store your data; instead, Metal manages the data.
 

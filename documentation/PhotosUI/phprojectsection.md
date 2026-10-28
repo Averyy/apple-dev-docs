@@ -19,7 +19,7 @@ class PHProjectSection
 @interface PHProjectSection : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each project section contains at least one [`PHProjectSectionContent`](./phprojectsectioncontent.md) object, which represents a suggested curation of the content. The number of sections included in [`PHProjectInfo`](./phprojectinfo.md) varies depending on the source used to initialize the project:
 

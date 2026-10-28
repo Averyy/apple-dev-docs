@@ -24,7 +24,7 @@ class PDFActionNamed
 @interface PDFActionNamed : PDFAction
 ```
 
-#### Overview
+## Overview
 
 A `PDFActionNamed` object represents an action with a defined name, such as “Go back” or “Zoom in.”
 

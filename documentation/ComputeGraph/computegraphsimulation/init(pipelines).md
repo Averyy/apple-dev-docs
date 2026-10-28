@@ -21,7 +21,7 @@ Initialize a ComputeGraphSimulation for the given pipelines, or a default pipeli
 convenience init(pipelines: ComputeNodeGraph.Pipelines?)
 ```
 
-#### Discussion
+## Discussion
 
 The simulation will use the ComputeGraphFramework’s default queue for operations such as [`fastForward()`](./fastforward%28%29.md) and resetting after setting the pipeline.
 

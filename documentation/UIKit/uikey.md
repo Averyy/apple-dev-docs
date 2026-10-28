@@ -24,7 +24,7 @@ class UIKey
 @interface UIKey : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`UIKey`](./uikey.md) provides relevant information about the current state of a key on a keyboard as a user presses and releases the key. To learn more, see [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md).
 

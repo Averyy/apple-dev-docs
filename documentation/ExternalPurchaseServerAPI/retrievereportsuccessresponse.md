@@ -15,7 +15,7 @@ A response that indicates success and includes your external purchase report dat
 object RetrieveReportSuccessResponse
 ```
 
-#### Discussion
+## Discussion
 
 This successful response contains the external purchase report data that you request when you call [`Retrieve External Purchase Report`](./retrieve-external-purchase-report.md).
 

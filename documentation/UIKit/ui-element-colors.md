@@ -5,7 +5,7 @@
 
 Choose colors for UI elements such as labels, text, backgrounds, and links.
 
-#### Overview
+## Overview
 
 UIKit provides color objects for the foreground and background colors of your app’s UI elements. The names of these color objects reflect their intended use, rather than specific color values.
 

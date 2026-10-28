@@ -19,7 +19,7 @@ func setTitle(_ windowTitle: String!)
 - (void) setTitle:(NSString *) windowTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The panel title should be localized for best user experience.
 

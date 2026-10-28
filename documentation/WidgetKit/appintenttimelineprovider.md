@@ -26,7 +26,7 @@ protocol AppIntentTimelineProvider
 - [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 - [Making a configurable widget](./making-a-configurable-widget.md)
 
-#### Overview
+## Overview
 
 An App Intent timeline provider performs the same function as [`TimelineProvider`](./timelineprovider.md), but it also incorporates user-configured details into timeline entries.
 

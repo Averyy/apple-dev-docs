@@ -15,7 +15,7 @@ The company or organization name associated with the document.
 static let company: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing company or organization name.
 

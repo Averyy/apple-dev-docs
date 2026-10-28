@@ -23,7 +23,7 @@ class UITextDragPreviewRenderer
 @interface UITextDragPreviewRenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to provide custom previews of dragged text that follows user interface guidelines and handles right-to-left text. You provide the layout manager and the range to render the preview.
 

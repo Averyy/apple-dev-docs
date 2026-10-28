@@ -23,11 +23,11 @@ static func - (lhs: Measurement<UnitType>, rhs: Measurement<UnitType>) -> Measur
 
 Available when `UnitType` inherits `Unit`.
 
-#### Return Value
+## Return Value
 
 A measurement of value `lhs.value - rhs.value` and unit `lhs.unit`.
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The `unit` of `lhs` and `rhs` must be `isEqual`.
 

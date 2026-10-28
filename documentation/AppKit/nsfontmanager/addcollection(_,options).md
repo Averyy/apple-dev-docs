@@ -21,7 +21,7 @@ func addCollection(_ collectionName: String, options collectionOptions: NSFontCo
 - (BOOL) addCollection:(NSString *) collectionName options:(NSFontCollectionOptions) collectionOptions;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the font collection was successfully added; otherwise, [`false`](../../Swift/false.md).
 

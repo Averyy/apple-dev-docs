@@ -23,7 +23,7 @@ var value: String { get }
 @property (nonatomic, copy, readonly) NSString * value;
 ```
 
-#### Discussion
+## Discussion
 
 A handle’s value corresponds to its type. For example, a handle with [`type`](./type.md) equal to [`CXHandle.HandleType.phoneNumber`](./handletype/phonenumber.md) should have a [`value`](./value.md) consisting of a sequence of digits.
 

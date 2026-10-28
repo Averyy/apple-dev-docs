@@ -20,7 +20,7 @@ let kSecCodeInfoUnique: CFString
 extern CFStringRef const kSecCodeInfoUnique;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFData`](../CoreFoundation/cfdata.md) object. This identifier can be used to recognize this specific code in the future. This identifier is tied to the current version of the code, unlike the [`kSecCodeInfoIdentifier`](./kseccodeinfoidentifier.md) identifier, which remains stable across developer-approved updates. The algorithm used for the [`kSecCodeInfoUnique`](./kseccodeinfounique.md) identifier may change over time. However, the identifier remains stable for existing, signed code.
 

@@ -23,11 +23,11 @@ func IORegistryEntryGetChildEntry(_ entry: io_registry_entry_t, _ plane: UnsafeP
 kern_return_t IORegistryEntryGetChildEntry(io_registry_entry_t entry, const io_name_t plane, io_registry_entry_t *child);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 This function will return the child which first attached to a registry entry in a plane.
 

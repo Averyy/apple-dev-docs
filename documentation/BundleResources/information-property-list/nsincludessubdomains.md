@@ -21,7 +21,7 @@ A Boolean value that indicates whether to extend the configuration to subdomains
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 You can include this key in any of the domain-specific dictionaries that you add to the [`NSExceptionDomains`](./nsapptransportsecurity/nsexceptiondomains.md) and [`NSPinnedDomains`](./nsapptransportsecurity/nspinneddomains.md) dictionaries. Adding the [`NSIncludesSubdomains`](./nsincludessubdomains.md) key affects the applicability of the other configuration in the same domain-specific dictionary. The key is optional, with a default value of `NO`.
 

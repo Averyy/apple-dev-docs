@@ -19,7 +19,7 @@ var contentView: NSView? { get set }
 @property (strong, nullable) NSView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 The glass effect container view does the following:
 

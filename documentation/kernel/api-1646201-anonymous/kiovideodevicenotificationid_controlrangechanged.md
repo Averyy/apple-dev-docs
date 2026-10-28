@@ -13,7 +13,7 @@
 kIOVideoDeviceNotificationID_ControlRangeChanged = 'crng'
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the range of the control with the given ID has changed.
 

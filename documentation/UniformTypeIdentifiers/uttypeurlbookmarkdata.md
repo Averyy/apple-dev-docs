@@ -21,7 +21,7 @@ A type that represents a URL bookmark.
 extern UTType * const UTTypeURLBookmarkData;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.bookmark`.
 

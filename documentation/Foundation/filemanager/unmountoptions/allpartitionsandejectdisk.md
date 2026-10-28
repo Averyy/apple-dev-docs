@@ -19,7 +19,7 @@ static var allPartitionsAndEjectDisk: FileManager.UnmountOptions { get }
 NSFileManagerUnmountAllPartitionsAndEjectDisk
 ```
 
-#### Discussion
+## Discussion
 
 If the volume is on a partitioned disk, this option unmounts all volumes on that disk. Then, then the disk is ejected (if it is ejectable).
 

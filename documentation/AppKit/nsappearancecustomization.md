@@ -19,7 +19,7 @@ protocol NSAppearanceCustomization : NSObjectProtocol
 @protocol NSAppearanceCustomization <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When an object adopts this protocol, assigning a value to the [`appearance`](./nsappearancecustomization/appearance.md) property causes that object to use the appearance attributes you specified instead of any inherited attributes. You can access the current attributes for the object from the [`effectiveAppearance`](./nsappearancecustomization/effectiveappearance.md) property, which reflects any inherited attributes.
 

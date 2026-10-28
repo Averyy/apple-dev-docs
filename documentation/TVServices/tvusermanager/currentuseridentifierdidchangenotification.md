@@ -21,7 +21,7 @@ class let currentUserIdentifierDidChangeNotification: NSNotification.Name
 extern NSNotificationName const TVUserManagerCurrentUserIdentifierDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is `nil`. The notification doesn’t add any keys to the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary.
 

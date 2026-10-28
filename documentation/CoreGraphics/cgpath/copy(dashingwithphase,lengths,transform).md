@@ -21,11 +21,11 @@ Returns a new path equivalent to the results of drawing the path with a dashed s
 func copy(dashingWithPhase phase: CGFloat, lengths: [CGFloat], transform: CGAffineTransform = .identity) -> CGPath
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The new path is created so that filling the new path draws the same pixels as stroking the original path with the specified dash parameters.
 

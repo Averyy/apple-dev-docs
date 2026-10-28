@@ -24,7 +24,7 @@ func selection(for range: NSRange) -> PDFSelection?
 - (PDFSelection *) selectionForRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if the range length is `0` or if either end of the range is outside the range of characters on the page.
 

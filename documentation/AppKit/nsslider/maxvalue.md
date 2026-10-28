@@ -19,7 +19,7 @@ var maxValue: Double { get set }
 @property double maxValue;
 ```
 
-#### Discussion
+## Discussion
 
 The slider’s maximum value. A horizontal slider sends the maximum value when the knob is all the way to the trailing end of the bar. A vertical slider sends the maximum value when the knob is at the top.
 

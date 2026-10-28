@@ -23,7 +23,7 @@ func addMember(_ contact: CNContact, to group: CNGroup)
 - (void) addMember:(CNContact *) contact toGroup:(CNGroup *) group;
 ```
 
-#### Discussion
+## Discussion
 
 This method overrides any previously made remove membership request on the contact from the group.
 

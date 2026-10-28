@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_EnclosureServicesSESDevice = 0x0D
 ```
 
-#### Discussion
+## Discussion
 
 SES Device.
 

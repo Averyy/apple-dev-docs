@@ -24,7 +24,7 @@ var clearStencil: UInt32 { get set }
 @property (nonatomic) uint32_t clearStencil;
 ```
 
-#### Discussion
+## Discussion
 
 If you specified that you want a stencil texture, the view configures any render passes to use the stencil texture, with a load action of [`MTLLoadAction.clear`](../../Metal/mtlloadaction/clear.md) and the value of this property as the value to clear it to. The default value is `0`.
 

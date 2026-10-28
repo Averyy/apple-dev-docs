@@ -19,7 +19,7 @@ func selectRowIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool)
 - (void) selectRowIndexes:(NSIndexSet *) indexes byExtendingSelection:(BOOL) extend;
 ```
 
-#### Discussion
+## Discussion
 
 Replaces the deprecated [`selectRow:byExtendingSelection:`](./selectrow_byextendingselection_.md) method.
 

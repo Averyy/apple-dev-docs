@@ -25,7 +25,7 @@ var inputProperty: SCNParticleSystem.ParticleProperty? { get set }
 @property (nonatomic, copy, nullable) SCNParticleProperty inputProperty;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only when the controller’s [`inputMode`](./inputmode.md) value is [`SCNParticleInputMode.overOtherProperty`](../scnparticleinputmode/overotherproperty.md).
 

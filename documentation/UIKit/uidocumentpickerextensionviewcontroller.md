@@ -25,7 +25,7 @@ class UIDocumentPickerExtensionViewController
 @interface UIDocumentPickerExtensionViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 The Document Picker View Controller extension can perform *import* and *export* operations on its own. If you want to support *open* and *move* operations, you must pair it with a File Provider extension.
 

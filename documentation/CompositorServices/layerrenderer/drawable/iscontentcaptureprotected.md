@@ -19,7 +19,7 @@ var isContentCaptureProtected: Bool { get }
 bool cp_drawable_is_content_capture_protected(cp_drawable_t drawable);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to ensure that drawing that is only meant for eyes in the device is not drawn when false. Only adopt if app has adopted SwiftUI `activatesContentCaptureProtected` scene modifier and drawing will have content that is not desired to meant to be captured. For `cp_drawable_target_capture` this will always return false as it is upto the renderer to handle drawing content that will be captured beyond the built-in displays.
 

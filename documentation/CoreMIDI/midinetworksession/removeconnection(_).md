@@ -23,7 +23,7 @@ func removeConnection(_ connection: MIDINetworkConnection) -> Bool
 - (BOOL) removeConnection:(MIDINetworkConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the session successfully removed the connection, otherwise [`false`](../../Swift/false.md).
 

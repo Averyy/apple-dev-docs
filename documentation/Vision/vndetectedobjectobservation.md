@@ -24,7 +24,7 @@ class VNDetectedObjectObservation
 @interface VNDetectedObjectObservation : VNObservation
 ```
 
-#### Overview
+## Overview
 
 This class is the observation type that [`VNTrackObjectRequest`](./vntrackobjectrequest.md) generates. It represents an object that the Vision request detects and tracks.
 

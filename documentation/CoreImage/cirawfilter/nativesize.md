@@ -24,7 +24,7 @@ var nativeSize: CGSize { get }
 @property (readonly) CGSize nativeSize;
 ```
 
-#### Discussion
+## Discussion
 
 This value isn’t affected by orientation changes.
 

@@ -14,7 +14,7 @@ A message that tells people why the app needs access to files on a removable vol
 - **Name**: `NSRemovableVolumesUsageDescription` (Privacy - Removable Volumes Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The user implicitly grants your app access to a file on a removable volume—like a USB thumb drive—when selecting the file in an Open or Save panel, dragging it onto your app, or opening it in Finder. Your app can access that file right away and any time in the future. In addition, if your app creates a new file on a removable volume, the app can access that file without user consent.
 

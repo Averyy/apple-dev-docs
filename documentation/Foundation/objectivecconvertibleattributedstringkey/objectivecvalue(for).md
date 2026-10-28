@@ -22,7 +22,7 @@ Returns an Objective-C typed value for a given value of this key’s type.
 static func objectiveCValue(for value: Self.Value) throws -> Self.ObjectiveCValue
 ```
 
-#### Return Value
+## Return Value
 
 `value`, expressed as the Objective-C type defined by [`ObjectiveCValue`](./objectivecvalue.md).
 

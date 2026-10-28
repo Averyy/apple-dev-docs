@@ -17,7 +17,7 @@ An ISO 7816 card emulation session.
 class CardSession
 ```
 
-#### Overview
+## Overview
 
 Use an instance of [`CardSession`](./cardsession.md) to perform [ISO 7816-4](https://www.iso.org/standard/84943.html) protocol communication with an NFC reader, receiving and responding to Application Protocol Data Units (APDUs) in your app.
 
@@ -107,11 +107,11 @@ func CardSessionSample() {
 }
 ```
 
-##### Handling emulation duration
+### Handling emulation duration
 
 Card emulation is valid for up to 60 seconds from the [`startEmulation()`](./cardsession/startemulation%28%29.md) call. Once the session timeout occurs, the [`eventStream`](./cardsession/eventstream-swift.property.md) posts the event [`CardSession.Event.sessionInvalidated(reason:)`](./cardsession/event/sessioninvalidated%28reason%29.md) with a `reason` of [`CardSession.Error.maxSessionDurationReached`](./cardsession/error/maxsessiondurationreached.md). At this point, the session becomes invalidated.
 
-##### Using entitlements
+### Using entitlements
 
 Your app must have the following entitlements to use [`CardSession`](./cardsession.md):
 
@@ -126,7 +126,7 @@ For more information and to apply for these entitlements, visit [HCE-based conta
 
 > ❗ **Important**:  Use of this entitlement is managed by Apple. It is subject to the terms and conditions agreed to as part of the application process.
 
-##### Testing requirements
+### Testing requirements
 
 To test HCE-based contactless transactions, you’ll need to test with an iPhone and NFC hardware. [`CardSession`](./cardsession.md) requires the presence of an NFC reader, which isn’t supported in Simulator, to perform an ISO 7816 card emulation session.
 

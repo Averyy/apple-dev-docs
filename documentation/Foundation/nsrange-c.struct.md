@@ -21,7 +21,7 @@ A structure used to describe a portion of a series, such as characters in a stri
 typedef struct _NSRange { ... } NSRange;
 ```
 
-#### Discussion
+## Discussion
 
 Foundation functions that operate on ranges include the following:
 

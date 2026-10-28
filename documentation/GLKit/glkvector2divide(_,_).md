@@ -22,7 +22,7 @@ func GLKVector2Divide(_ vectorLeft: GLKVector2, _ vectorRight: GLKVector2) -> GL
 static GLKVector2 GLKVector2Divide(GLKVector2 vectorLeft, GLKVector2 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector whose components are each calculated by dividing the component found in same position of the first vector by the component found in the same position of the second vector.
 

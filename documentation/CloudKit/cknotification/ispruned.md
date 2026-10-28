@@ -25,7 +25,7 @@ var isPruned: Bool { get }
 @property (nonatomic, assign, readonly) BOOL isPruned;
 ```
 
-#### Discussion
+## Discussion
 
 The server may truncate the payload data of a push notification if the size of that data exceeds the allowed maximum. For notifications you create using a payload dictionary, the value of this property is [`true`](../../Swift/true.md) if the payload data doesn’t contain all information regarding the change. The value is [`false`](../../Swift/false.md) if the payload data is complete.
 

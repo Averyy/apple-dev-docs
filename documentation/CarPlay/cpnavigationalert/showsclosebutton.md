@@ -21,7 +21,7 @@ var showsCloseButton: Bool { get set }
 @property (nonatomic, assign) BOOL showsCloseButton;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to @c NO to hide the close button.
 

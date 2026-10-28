@@ -24,21 +24,21 @@ class GKNSPredicateRule
 @interface GKNSPredicateRule : GKRule
 ```
 
-#### Overview
+## Overview
 
 The [`GKNSPredicateRule`](./gknspredicaterule.md) class is a specialized subclass of the [`GKRule`](./gkrule.md) class (which represents rules to be used by [`GKRuleSystem`](./gkrulesystem.md) objects). Custom subclasses of [`GKNSPredicateRule`](./gknspredicaterule.md) use an [`NSPredicate`](../Foundation/nspredicate.md) object to evaluate a rule, rather than requiring custom logic for evaluation as is the case with custom [`GKRule`](./gkrule.md) subclasses.
 
 For more information about rules and rule systems, read [Rule Systems](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/RuleSystems.html#//apple_ref/doc/uid/TP40015172-CH10) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 GameplayKit evaluates rules in the context of a [`GKRuleSystem`](./gkrulesystem.md) object, so custom rule classes should be *functional*—that is, they generally should not carry independent state that affects their predicate or action.
 
-###### Methods to Override
+#### Methods to Override
 
 Override the [`performAction(in:)`](./gkrule/performaction%28in%29.md) method to perform whatever actions should result when your rule is satisfied (that is, when its [`predicate`](./gknspredicaterule/predicate.md) property evaluates to true in the context of the provided rule system).
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 - Use the [`GKRule`](./gkrule.md) method [`init(predicate:assertingFact:grade:)`](./gkrule/init%28predicate,assertingfact,grade%29.md) or [`init(predicate:retractingFact:grade:)`](./gkrule/init%28predicate,retractingfact,grade%29.md) to create a rule that uses an [`NSPredicate`](../Foundation/nspredicate.md) object for evaluation and whose action asserts or retracts a fact in the containing rule system.
 - Use the [`GKRule`](./gkrule.md) method [`init(blockPredicate:action:)`](./gkrule/init%28blockpredicate,action%29.md) method to quickly create a rule whose custom logic is contained in block objects.

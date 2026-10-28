@@ -19,11 +19,11 @@ func AEStreamSetRecordType(_ ref: AEStreamRef!, _ newType: DescType) -> OSStatus
 OSStatus AEStreamSetRecordType(AEStreamRef ref, DescType newType);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Use this routine to change the type of a record after it has been opened. You must call this routine between calls to [`AEStreamOpenRecord(_:_:)`](./api-1447141-aestreamopenrecord.md) and [`AEStreamCloseRecord(_:)`](./api-1449522-aestreamcloserecord.md). The type you specify in the `newType` parameter replaces the previous type specified by [`AEStreamOpenRecord(_:_:)`](./api-1447141-aestreamopenrecord.md). 
 

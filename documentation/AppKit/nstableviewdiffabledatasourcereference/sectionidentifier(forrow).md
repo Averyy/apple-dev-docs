@@ -19,7 +19,7 @@ func sectionIdentifier(forRow row: Int) -> SectionIdentifierType?
 - (SectionIdentifierType) sectionIdentifierForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The section’s identifier, or `nil` if the method doesn’t find an item with the provided item identifier.
 

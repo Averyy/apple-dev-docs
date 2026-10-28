@@ -24,7 +24,7 @@ var history: Transcript.HistoryView { get set }
 
 - [Inspecting session transcripts and reporting model feedback](../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
-#### Discussion
+## Discussion
 
 Use `history` to access just the conversational entries — prompts, responses, tool calls, and tool outputs — without the initial instructions that were used to configure the session.
 

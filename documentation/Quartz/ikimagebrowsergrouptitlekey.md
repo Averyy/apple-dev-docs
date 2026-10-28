@@ -19,7 +19,7 @@ let IKImageBrowserGroupTitleKey: String
 extern NSString * const IKImageBrowserGroupTitleKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSString`](../Foundation/nsstring.md) object. This string is used for the disclosure style only.
 

@@ -25,7 +25,7 @@ var keyPath: String { get }
 @property (copy, readonly) NSString * keyPath;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property raises an exception if it is not applicable to the expression.
 

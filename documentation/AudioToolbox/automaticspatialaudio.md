@@ -15,7 +15,7 @@ A spatial audio experience determined by the system.
 struct AutomaticSpatialAudio
 ```
 
-#### Overview
+## Overview
 
 Sounds with an automatic spatial audio experience that belong to an [`AVAudioSession`](../AVFAudio/avaudiosession.md) inherit its [`intendedSpatialExperience`](../AVFAudio/avaudiosession/intendedspatialexperience-qlty.md).
 

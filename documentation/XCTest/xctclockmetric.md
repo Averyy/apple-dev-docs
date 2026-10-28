@@ -24,7 +24,7 @@ class XCTClockMetric
 @interface XCTClockMetric : NSObject
 ```
 
-#### Overview
+## Overview
 
 `XCTClockMetric` measures the total elapsed time during execution of the block argument to [`measure(metrics:block:)`](./xctestcase/measure%28metrics,block%29.md). The metric records time monotonically, regardless of changes to the system clock. Its result includes time spent executing code under test, and time when the CPU is idle or running other code.
 

@@ -21,7 +21,7 @@ Calculates the maximum value and corresponding index in a double-precision vecto
 extern void vDSP_maxviD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Length *__I, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the maximum value and its corresponding index of the first `N` elements of the input vector and writes the results to the output scalar parameters, `C` and `I`, respectively.
 

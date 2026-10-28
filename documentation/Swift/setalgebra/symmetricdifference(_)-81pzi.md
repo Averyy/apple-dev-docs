@@ -21,7 +21,7 @@ Returns a new option set with the elements contained in this set or in the given
 func symmetricDifference(_ other: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new option set with only the elements contained in either this set or `other`, but not in both.
 

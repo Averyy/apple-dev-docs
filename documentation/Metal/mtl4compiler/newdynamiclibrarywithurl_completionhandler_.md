@@ -20,7 +20,7 @@ Creates a new dynamic library from the contents of a file at an URL location syn
 - (id<MTL4CompilerTask>) newDynamicLibraryWithURL:(NSURL *) url completionHandler:(MTLNewDynamicLibraryCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A compiler task representing the asynchronous compilation task.
 

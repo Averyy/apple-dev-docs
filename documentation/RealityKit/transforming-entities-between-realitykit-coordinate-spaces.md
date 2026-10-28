@@ -10,7 +10,7 @@ Move an entity between a volumetric window and an immersive space using coordina
 - visionOS 2.0+
 - Xcode 16.2+
 
-#### Overview
+## Overview
 
 visionOS has three scene types: Windows, Volumes, and Immersive Spaces.
 
@@ -33,7 +33,7 @@ The sample code seamlessly moves an entity from a volumetric window to an immers
 
 The sample code creates a cube in a volumetric window and moves the cube to an immersive space and back.
 
-#### Create the volumetric and immersive views
+## Create the volumetric and immersive views
 
 Create the volumetric reality view `VolumetricView` in the `WindowGroup` and the immersive reality view `ImmersiveView` in an `ImmersiveSpace`:
 
@@ -59,7 +59,7 @@ var body: some Scene {
 
 The width, height and depth of the volumetric window is set to 1 meter. When the immersive space is open, the surroundings become dark so that the virtual content is in focus and when it is hidden, the surroundings gradually become brighter again.
 
-#### Create a cube in the volumetric window
+## Create a cube in the volumetric window
 
 Create an entity with a cube mesh in the volumetric window and set the material to the `volumetricMaterial` which is blue in color. The blue color indicates that it is part of the volumetric window. Make the cube a subentity of the `volumeRootEntity` which is an entity at the root of the volumetric window.
 
@@ -82,7 +82,7 @@ private func createCube() {
 }
 ```
 
-#### Create a cube representing the bounds of the volumetric window
+## Create a cube representing the bounds of the volumetric window
 
 Create an entity with a cube mesh with the size of 1 meter to represent the bounds of the volumetric window. Set the material to the `volumetricWindowCubematerial` which is set to a transparent green color.
 
@@ -107,7 +107,7 @@ The `faceCulling` property of the material is set to `front` so that the bounds 
 
 [Video: A screen recording that shows a large green rounded square that represents a volumetric window overlayed in a room. In the center of the green window is a blue cube. The room has art on the left wall, and a bookshelf against the right wall. In front of the camera is a sofa with an end table with a lit lamp to its left. Against the far wall is a console table with a television on top, and lit lamps in both back corners of the room. The pointer moves over the volumetric window, grabs the blue cube, and drags it left and right. When the cube is dragged, it's clipped by the bounds of the volumetric window indicating that it's in the volumetric window and can't be moved into the immersive space of the room.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/create-cube-volumetric-window.mp4)
 
-#### Move the cube from the volumetric window to the immersive space
+## Move the cube from the volumetric window to the immersive space
 
 Get the transform matrix of the entity relative to the open immersive space calling the [`transformMatrix(relativeTo:)`](./hastransform/transformmatrix%28relativeto%29.md) method.
 
@@ -151,7 +151,7 @@ The method records the cube’s transform for use when the cube moves from the i
 
 [Video: A screen recording that shows a large green rounded square that represents a volumetric window overlayed in a room. In the center of the green window is a blue cube. The room has art on the left wall, and a bookshelf against the right wall. In front of the camera is a sofa with an end table with a lit lamp to its left. Against the far wall is a console table with a television on top, and lit lamps in both back corners of the room. The pointer moves over the volumetric window and clicks the Show Immersive Space button, after which the blue cube changes color from blue to red to indicate that it can move to the immersive space. The pointer grabs the red cube and moves it to the right of the volumetric window near the bookcase, and then grabs the volumetric window and moves it over to the left.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/move-cube-to-immersive-space.mp4)
 
-#### Move the cube back to the volumetric window
+## Move the cube back to the volumetric window
 
 To move the entity back to the volumetric window, set the transform of the cube to the previously recorded value before it moved to the immersive space.
 
@@ -182,7 +182,7 @@ func moveCubeFromImmersiveSpaceToVolumetricWindow() {
 
 The above code uses the [`transformMatrix(relativeTo:)`](./entity/transformmatrix%28relativeto%29.md) method to get the transformation matrix of the previously recorded value relative to the immersive space. The transformation matrix creates a [`Transform`](./transform.md) for specifying the target transform in the [`move(to:relativeTo:duration:timingFunction:)`](./hastransform/move%28to,relativeto,duration,timingfunction%29.md) method.
 
-#### Make the cube a subentity of the volumetric window’s root
+## Make the cube a subentity of the volumetric window’s root
 
 When the move animation finishes, make the cube a subentity of the volumetric window’s root entity and set the transform to the previously recorded value:
 

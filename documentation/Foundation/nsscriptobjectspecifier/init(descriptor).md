@@ -19,11 +19,11 @@ init?(descriptor: NSAppleEventDescriptor)
 + (NSScriptObjectSpecifier *) objectSpecifierWithDescriptor:(NSAppleEventDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An object specifier, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 If `objectSpecifierWithDescriptor:` is invoked and fails during the execution of a script command, information about the error that caused the failure is recorded in `[NSScriptCommand currentCommand]`.
 

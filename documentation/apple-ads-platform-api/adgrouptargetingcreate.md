@@ -15,7 +15,7 @@ The targeting configuration for creating a new ad group, specifying audience dim
 object AdGroupTargetingCreate
 ```
 
-#### Overview
+## Overview
 
 For valid location identifier values and geographic lookup, see [Geo Targeting Endpoints](./geo-targeting-endpoints.md).
 

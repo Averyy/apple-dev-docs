@@ -25,11 +25,11 @@ func committedValues(forKeys keys: [String]?) -> [String : Any]
 - (NSDictionary<NSString *,id> *) committedValuesForKeys:(NSArray<NSString *> *) keys;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the last fetched or saved values of the receiver for the properties specified by `keys`.
 
-#### Discussion
+## Discussion
 
 `nil` values are represented by an instance of [`NSNull`](../../Foundation/nsnull.md).
 

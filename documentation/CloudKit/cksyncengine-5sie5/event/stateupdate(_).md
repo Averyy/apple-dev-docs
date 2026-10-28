@@ -21,7 +21,7 @@ The sync engine updated its state.
 case stateUpdate(CKSyncEngine.Event.StateUpdate)
 ```
 
-#### Discussion
+## Discussion
 
 You should persist it locally.
 

@@ -22,7 +22,7 @@ var activitySummary: HKActivitySummary? { get set }
 @property (nonatomic, strong, nullable) HKActivitySummary * activitySummary;
 ```
 
-#### Discussion
+## Discussion
 
 Any changes made directly to this property are not animated. To animate changes, use # [`setActivitySummary(_:animated:)`](./setactivitysummary%28_,animated%29.md) instead.
 

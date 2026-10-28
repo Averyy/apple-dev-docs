@@ -20,7 +20,7 @@ class func secondsSinceLastEventType(_ stateID: CGEventSourceStateID, eventType:
 extern CFTimeInterval CGEventSourceSecondsSinceLastEventType(CGEventSourceStateID stateID, CGEventType eventType);
 ```
 
-#### Return Value
+## Return Value
 
 The time in seconds since the previous input event of the specified type.
 

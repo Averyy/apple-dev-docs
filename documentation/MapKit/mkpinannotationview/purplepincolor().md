@@ -40,11 +40,11 @@ class func purplePinColor() -> NSColor
 + (NSColor *) purplePinColor;
 ```
 
-#### Return Value
+## Return Value
 
 The purple pin color.
 
-#### Discussion
+## Discussion
 
 The system uses purple pins to indicate user-specified points on the map.
 

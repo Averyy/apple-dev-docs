@@ -22,7 +22,7 @@ protocol NSTouchBarDelegate : NSObjectProtocol
 @protocol NSTouchBarDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use a bar delegate, according to the needs of your app, to dynamically create items ([`NSTouchBarItem`](./nstouchbaritem.md) instances). For more information, see [Item objects](./nstouchbar.md#Item-objects).
 

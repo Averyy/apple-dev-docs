@@ -25,7 +25,7 @@ typealias CGFontIndex = UInt16
 typedef unsigned short CGFontIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This integer type provides an additional way to specify a glyph identifier. [`CGFontIndex`](./cgfontindex.md) is equivalent to [`CGGlyph`](./cgglyph.md), and you can use constants of either type interchangeably.
 

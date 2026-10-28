@@ -20,7 +20,7 @@ var radius: Float { get }
 @property (nonatomic, assign, readonly) float radius;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit estimates the value of this property at runtime. As the user views an App Clip Code from different angles, ARKit refines its estimate of the true radius of the App Clip Code.
 

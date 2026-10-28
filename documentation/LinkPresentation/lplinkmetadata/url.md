@@ -25,7 +25,7 @@ var url: URL? { get set }
 @property (nonatomic, retain, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 The URL that returns the metadata may differ from the [`originalURL`](./originalurl.md) to which you sent the metadata request. This can happen if the server redirects the request, for example, when a resource has moved, or when the original URL is a domain alias.
 

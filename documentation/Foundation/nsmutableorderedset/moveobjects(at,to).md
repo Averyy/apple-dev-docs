@@ -25,7 +25,7 @@ func moveObjects(at indexes: IndexSet, to idx: Int)
 - (void) moveObjectsAtIndexes:(NSIndexSet *) indexes toIndex:(NSUInteger) idx;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code results in the contents of `mySet` being equal to `["a", "c", "b", "d", "e"]:`
 

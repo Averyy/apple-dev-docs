@@ -23,7 +23,7 @@ init(mutableBytes: consuming MutableRawSpan)
 
 Available when `Element` conforms to `ConvertibleFromBytes` and `ConvertibleToBytes`.
 
-#### Discussion
+## Discussion
 
 The `byteCount` of `mutableBytes` must be a multiple of `Element`’s stride, and the starting address of `mutableBytes` must be well-aligned for the type of `Element`. If either of these requirements is not met, this initializer will trap at runtime.
 

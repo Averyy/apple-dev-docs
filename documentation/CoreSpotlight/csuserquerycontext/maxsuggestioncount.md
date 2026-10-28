@@ -23,7 +23,7 @@ var maxSuggestionCount: Int { get set }
 @property (nonatomic, assign) NSInteger maxSuggestionCount;
 ```
 
-#### Discussion
+## Discussion
 
 You might specify different limits to account for the amount of available space.
 

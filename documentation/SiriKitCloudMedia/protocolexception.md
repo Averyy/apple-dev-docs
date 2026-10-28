@@ -15,7 +15,7 @@ An exception response from a media service.
 object ProtocolException
 ```
 
-#### Discussion
+## Discussion
 
 You can define a mapping of exception `code` values that’s meaningful for your service. The client logs these exception codes.
 

@@ -21,7 +21,7 @@ Creates a new buffer with the specified size that references existing data.
 init(data: UnsafeMutableRawPointer!, height: vImagePixelCount, width: vImagePixelCount, rowBytes: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If you provide your own buffer storage, call [`preferredAlignmentAndRowBytes(width:height:bitsPerPixel:)`](./preferredalignmentandrowbytes%28width,height,bitsperpixel%29.md) to get the row stride that ensures your buffer achieves the best performance.
 

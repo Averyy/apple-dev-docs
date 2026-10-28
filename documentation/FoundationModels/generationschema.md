@@ -24,7 +24,7 @@ struct GenerationSchema
 
 - [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md)
 
-#### Overview
+## Overview
 
 Generation schemas guide the output of a language model to deterministically ensure the output is in the desired format.
 

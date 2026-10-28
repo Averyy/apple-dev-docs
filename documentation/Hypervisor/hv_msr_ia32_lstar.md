@@ -19,7 +19,7 @@ var HV_MSR_IA32_LSTAR: UInt32 { get }
 HV_MSR_IA32_LSTAR
 ```
 
-#### Discussion
+## Discussion
 
 This address is the target Instruction Pointer Register (RIP) address for the procedure SYSCALL executes in 64-bit mode.
 

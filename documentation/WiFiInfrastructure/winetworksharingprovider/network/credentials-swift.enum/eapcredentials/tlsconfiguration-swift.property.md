@@ -17,7 +17,7 @@ The configuration to use for Transport Layer Security (TLS).
 let tlsConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration?
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `nil` if TLS this network doesn’t use TLS.
 

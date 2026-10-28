@@ -22,7 +22,7 @@ var event: EKEvent? { get set }
 @property (nonatomic, retain, nullable) EKEvent * event;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, creates and adds a new event to the default calendar’s event store. To avoid throwing an exception, ensure that the event is in the specified event store.
 

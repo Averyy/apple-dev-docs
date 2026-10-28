@@ -27,11 +27,11 @@ func SecTrustEvaluate(_ trust: SecTrust, _ result: UnsafeMutablePointer<SecTrust
 OSStatus SecTrustEvaluate(SecTrustRef trust, SecTrustResultType *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Certificate, Key, and Trust Services](./certificate-key-and-trust-services.md).
 
-#### Discussion
+## Discussion
 
 This function evaluates a certificate’s validity to establish trust for a particular use—for example, in creating a digital signature or to establish a Secure Sockets Layer connection.
 
@@ -90,7 +90,7 @@ If the trust failure was caused by an untrusted root certificate and your app as
 - [`SecTrustResultType.fatalTrustFailure`](./sectrustresulttype/fataltrustfailure.md)—Evaluation failed because a certificate in the chain is defective. This usually represents a fundamental defect in the certificate data, such as an invalid encoding for a critical `subjectAltName` extension, an unsupported critical extension, or some other critical portion of the certificate that could not be successfully interpreted. Changing parameter values and calling `SecTrustEvaluate` again is unlikely to result in a successful reevaluation unless you provide different certificates.
 - [`SecTrustResultType.otherError`](./sectrustresulttype/othererror.md)—Evaluation failed for some other reason. This can be caused by either a revoked certificate or by OS-level errors that are unrelated to the certificates themselves.
 
-##### Special Considerations
+### Special Considerations
 
 It is not safe to call this function concurrently with any other function that uses the same trust management object, or to re-enter this function for the same trust management object.
 

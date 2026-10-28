@@ -19,7 +19,7 @@ func rect(for partCode: NSScroller.Part) -> NSRect
 - (NSRect) rectForPart:(NSScrollerPart) partCode;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSScroller.Part`](./part.md) for a list of possible values for `aPart`.
 

@@ -22,7 +22,7 @@ optional func storeOverlayDidFailToLoad(_ overlay: SKOverlay, error: any Error)
 - (void) storeOverlay:(SKOverlay *) overlay didFailToLoadWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Common cases for a failure when loading an overlay are:
 

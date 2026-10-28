@@ -23,11 +23,11 @@ Removes and returns the first element of the collection.
 mutating func removeFirst() -> Self.Element
 ```
 
-#### Return Value
+## Return Value
 
 The removed element.
 
-#### Discussion
+## Discussion
 
 The collection must not be empty.
 

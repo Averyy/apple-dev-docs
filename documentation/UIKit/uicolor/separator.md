@@ -23,7 +23,7 @@ class var separator: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * separatorColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color may be partially transparent to allow the underlying content to show through. It adapts to the underlying trait environment.
 

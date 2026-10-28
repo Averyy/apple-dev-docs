@@ -24,7 +24,7 @@ class VNTrackingRequest
 @interface VNTrackingRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 Instantiate a tracking request subclass to perform object tracking across multiple frames of an image. After initialization, configure the degree of accuracy by setting [`trackingLevel`](./vntrackingrequest/trackinglevel.md), and provide observations you’d like to track by setting the [`inputObservation`](./vntrackingrequest/inputobservation.md) initial bounding box.
 

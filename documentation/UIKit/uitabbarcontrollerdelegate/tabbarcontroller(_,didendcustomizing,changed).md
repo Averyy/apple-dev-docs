@@ -22,7 +22,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, didEndCus
 - (void) tabBarController:(UITabBarController *) tabBarController didEndCustomizingViewControllers:(NSArray<__kindof UIViewController *> *) viewControllers changed:(BOOL) changed;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to respond to changes to the order of tabs in the tab bar.
 

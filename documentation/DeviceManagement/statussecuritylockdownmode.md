@@ -19,9 +19,9 @@ The status item that reports the device’s Lockdown Mode state.
 object StatusSecurityLockdownMode
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ object StatusSecurityLockdownMode
 | Allowed in system scope | iOS, macOS, watchOS |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

@@ -24,7 +24,7 @@ init?(payload errorCorrectedPayload: Data, rowCount: Int, columnCount: Int, eccV
 - (instancetype) initWithPayload:(NSData *) errorCorrectedPayload rowCount:(NSInteger) rowCount columnCount:(NSInteger) columnCount eccVersion:(CIDataMatrixCodeECCVersion) eccVersion;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 

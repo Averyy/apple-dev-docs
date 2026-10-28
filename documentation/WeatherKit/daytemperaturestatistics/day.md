@@ -21,7 +21,7 @@ The day of the year, in UTC.
 var day: Int
 ```
 
-#### Discussion
+## Discussion
 
 The day ranges from 1 to 366.
 

@@ -24,7 +24,7 @@ static let underwaterDepth: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierUnderwaterDepth;
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch Ultra automatically records these samples during dive sessions.
 

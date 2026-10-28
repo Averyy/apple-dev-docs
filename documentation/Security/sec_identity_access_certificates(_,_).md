@@ -23,11 +23,11 @@ func sec_identity_access_certificates(_ identity: sec_identity_t, _ handler: @es
 bool sec_identity_access_certificates(sec_identity_t identity, void (^handler)(sec_certificate_t certificate));
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the peer certificates were accessible, false otherwise.
 
-#### Discussion
+## Discussion
 
 Access the certificates associated with the `sec_identity_t` instance.
 

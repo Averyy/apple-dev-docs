@@ -20,7 +20,7 @@ Dismisses the window that’s associated with the specified identifier.
 @preconcurrency func callAsFunction(id: String)
 ```
 
-#### Discussion
+## Discussion
 
 When the specified identifier represents a [`WindowGroup`](../windowgroup.md), all of the open windows in that group will be dismissed. For dismissing a single window associated to a `WindowGroup` scene, use `dismissWindow(value:)` or `dismissWindow(id:value:)`.
 

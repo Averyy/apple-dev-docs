@@ -21,11 +21,11 @@ optional func tableView(_ tableView: NSTableView, namesOfPromisedFilesDroppedAtD
 - (NSArray<NSString *> *) tableView:(NSTableView *) tableView namesOfPromisedFilesDroppedAtDestination:(NSURL *) dropDestination forDraggedRowsWithIndexes:(NSIndexSet *) indexSet;
 ```
 
-#### Return Value
+## Return Value
 
 An array of filenames (not full paths) for the created files that the receiver promises to create.
 
-#### Discussion
+## Discussion
 
 This method is called when a destination has accepted a promise drag.
 

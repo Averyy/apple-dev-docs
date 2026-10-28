@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_LISTEXTATTR: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_LISTEXTATTR
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`listextattr`](./es_events_t/listextattr.md), which has the type [`es_event_listextattr_t`](./es_event_listextattr_t.md).
 

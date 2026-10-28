@@ -20,7 +20,7 @@ func write(to url: URL, ofType typeName: String, for saveOperation: NSDocument.S
 - (BOOL) writeToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation originalContentsURL:(NSURL *) absoluteOriginalContentsURL error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method merely invokes `[self writeToURL:absoluteURL ofType:typeName error:outError]`. You can override this method instead of one of the three simple writing methods ([`write(to:ofType:)`](./write%28to,oftype%29.md),[`fileWrapper(ofType:)`](./filewrapper%28oftype%29.md), and [`data(ofType:)`](./data%28oftype%29.md)) if your document writing machinery needs access to the on-disk representation of the document revision that is about to be overwritten. The value of `absoluteURL` is often not the same as `[self fileURL]`. Other times it is not the same as the URL for the final save destination. Likewise, `absoluteOriginalContentsURL` is often not the same value as `[self fileURL]`. If `absoluteOriginalContentsURL` is `nil`, either the document has never been saved or the user deleted the document file since it was opened.
 

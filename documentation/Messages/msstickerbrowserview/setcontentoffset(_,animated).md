@@ -21,7 +21,7 @@ func setContentOffset(_ contentOffset: CGPoint, animated: Bool)
 - (void) setContentOffset:(CGPoint) contentOffset animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Increasing the offset’s `x` value shifts the content to the left. Increasing the offset’s `y` value shifts the content upward.
 

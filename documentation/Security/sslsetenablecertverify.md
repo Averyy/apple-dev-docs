@@ -17,11 +17,11 @@ Enables or disables peer certificate chain validation.
 OSStatus SSLSetEnableCertVerify(SSLContextRef context, Boolean enableVerify);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 By default, Secure Transport attempts to verify the certificate chain during an exchange of peer certificates. If you disable peer certificate chain validation, it is your responsibility to call [`SSLCopyPeerCertificates`](./sslcopypeercertificates.md) upon successful completion of the handshake and then to validate the peer certificate chain before transferring the data.
 

@@ -15,7 +15,7 @@ Mutates an affine transformation matrix to apply a rotation.
 mutating func rotate(byDegrees angle: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 The matrix takes the following form:
 

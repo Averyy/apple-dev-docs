@@ -5,11 +5,11 @@
 
 Set up the classes and capabilities that sync your store to CloudKit.
 
-#### Overview
+## Overview
 
 To sync your Core Data store to CloudKit, you enable the CloudKit capability for your app. You also set up the Core Data stack with a persistent container that is capable of managing one or more local persistent stores that are backed by a CloudKit private database.
 
-##### Configure a new Xcode project
+### Configure a new Xcode project
 
 When you create a new project, you specify whether you want to add support for Core Data with CloudKit directly from the project setup interface. The resulting project contains an [`NSPersistentCloudKitContainer`](./nspersistentcloudkitcontainer.md). Once you enable CloudKit in your project, you use this container to manage one or more local stores that are backed with a CloudKit database.
 
@@ -24,7 +24,7 @@ When you create a new project, you specify whether you want to add support for C
 
 Not all project templates support Core Data. If the template you want to use doesn’t currently support Core Data, add Core Data to the project as described in [Setting up a Core Data stack](./setting-up-a-core-data-stack.md). Then add Core Data with CloudKit as described in [Update an existing Xcode project](./setting-up-core-data-with-cloudkit.md#Update-an-existing-Xcode-project).
 
-##### Enable iCloud
+### Enable iCloud
 
 Core Data with CloudKit requires specific entitlements for your app to communicate with the server. If you have created a new template following the steps above, this will be done for you. For an existing app, begin by adding the iCloud capability to your Xcode project.
 
@@ -37,7 +37,7 @@ Core Data with CloudKit requires specific entitlements for your app to communica
 
 An iCloud section appears on your app’s Signing & Capabilities page.
 
-##### Enable CloudKit and push notifications
+### Enable CloudKit and push notifications
 
 Core Data with CloudKit uses the CloudKit service to access your team’s containers. To enable CloudKit, configure the iCloud capability.
 
@@ -49,7 +49,7 @@ Core Data with CloudKit uses the CloudKit service to access your team’s contai
 
 Xcode checks that your development team supports the Push Notification and iCloud capabilities, then registers your app’s bundle identifier and manages provisioning profiles.
 
-##### Enable Remote notifications in the background
+### Enable Remote notifications in the background
 
 For CloudKit to silently notify your app when new content is available, without presenting a user notification such as an alert, sound, or badge, you need to enable the Remote notifications Background Mode.
 
@@ -61,7 +61,7 @@ For CloudKit to silently notify your app when new content is available, without 
 
 For more information about silent notifications, see [Pushing background updates to your App](../UserNotifications/pushing-background-updates-to-your-app.md).
 
-##### Update an existing Xcode project
+### Update an existing Xcode project
 
 If you want to add Core Data with CloudKit to an app that already uses Core Data, you need to modify both your project’s configuration and some of its code.
 
@@ -90,7 +90,7 @@ init(inMemory: Bool = false) {
     let container = NSPersistentCloudKitContainer(name: "Earthquakes")
 ```
 
-##### Manage multiple stores
+### Manage multiple stores
 
 You might need to mirror a subset of your data using CloudKit, while keeping other data completely local. You can add configurations to your model to organize your data in separate stores, then choose which stores to sync to CloudKit.
 

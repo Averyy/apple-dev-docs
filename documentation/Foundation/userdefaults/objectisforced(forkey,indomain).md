@@ -25,11 +25,11 @@ func objectIsForced(forKey key: String, inDomain domain: String) -> Bool
 - (BOOL) objectIsForcedForKey:(NSString *) key inDomain:(NSString *) domain;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if an administrator provides a value for the key, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Apps can’t change the value of managed keys, so use this method to determine if you can make changes to a key in a specific domain. For example, you might use this method to check for overrides of settings belonging to a shared app group. If a key is managed, disable any app-specific UI you use to change the value of that key.
 

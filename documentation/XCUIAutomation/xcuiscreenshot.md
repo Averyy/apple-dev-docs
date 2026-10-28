@@ -27,7 +27,7 @@ class XCUIScreenshot
 @interface XCUIScreenshot : NSObject
 ```
 
-#### Overview
+## Overview
 
 Screenshots capture the current UI state of classes that conform to the [`XCUIScreenshotProviding`](./xcuiscreenshotproviding.md) protocol, such as [`XCUIScreen`](./xcuiscreen.md) and [`XCUIElement`](./xcuielement.md). Each screenshot contains an image representation of the captured UI at the point the screenshot was taken.
 

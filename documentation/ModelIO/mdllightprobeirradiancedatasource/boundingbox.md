@@ -25,7 +25,7 @@ var boundingBox: MDLAxisAlignedBoundingBox { get set }
 @property MDLAxisAlignedBoundingBox boundingBox;
 ```
 
-#### Discussion
+## Discussion
 
 When you call the [`MDLAsset`](../mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`](../mdlasset/placelightprobes%28withdensity,heuristic,using%29.md) method to automatically distribute light probes in a scene, Model I/O reads this property to ask your code which regions should be evaluated for light probe placement.
 

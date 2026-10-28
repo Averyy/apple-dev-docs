@@ -14,11 +14,11 @@ Import, export, and manipulate 3D models using a common infrastructure that inte
 - tvOS 9.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The Model I/O framework provides a system-level understanding of 3D model assets and related resources. You can use this framework to import and export assets from and to a variety of industry standard file formats supported by popular authoring tools and game engines. You can also use Model I/O to generate or process model and texture data—for example, to create subdivision surfaces, to bake ambient occlusion textures, or to generate light probes. Model I/O can share data buffers with the MetalKit, GLKit, and SceneKit frameworks to help you load, process, and render 3D assets efficiently.
 
-##### Model I/O Features
+### Model I/O Features
 
 - Importing and exporting 3D assets. A [`MDLAsset`](./mdlasset.md) object represents a collection of objects that describe elements of a 3D scene—[`MDLMesh`](./mdlmesh.md), [`MDLLight`](./mdllight.md), and [`MDLCamera`](./mdlcamera.md) objects. Use the [`MDLAsset`](./mdlasset.md) class to load these objects from a file or to create a collection of 3D objects for export to a file.
 - Working with 3D model data. Use the [`MDLVertexDescriptor`](./mdlvertexdescriptor.md) class to inspect or rearrange a mesh’s vertex and index data format. Use classes that adopt the [`MDLMeshBuffer`](./mdlmeshbuffer.md) and [`MDLMeshBufferAllocator`](./mdlmeshbufferallocator.md) protocols to minimize the number of times a mesh’s vertex and index data is copied and translated between loading, processing, and rendering on a GPU. The MetalKit and GLKit frameworks provide such classes—see [MetalKit](../MetalKit/MetalKit.md) and [GLKit](../GLKit/GLKit.md).

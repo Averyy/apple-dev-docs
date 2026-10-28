@@ -21,7 +21,7 @@ An image-analysis request that tracks movement of a previously identified rectan
 final class TrackRectangleRequest
 ```
 
-#### Overview
+## Overview
 
 Use this type of request to track the bounding boxes of rectangles throughout a sequence of images. Vision returns locations for rectangles found in all orientations and sizes. The request returns the resulting rectangle data in an instance of [`RectangleObservation`](./rectangleobservation.md).
 

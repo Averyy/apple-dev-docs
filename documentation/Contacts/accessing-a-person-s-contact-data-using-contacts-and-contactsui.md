@@ -12,11 +12,11 @@ Allow people to grant your app access to contact data by adding the Contact acce
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10121: [Meet the Contact Access Button](https://developer.apple.com/wwdc24/10121/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before running the sample code project in Xcode, select the sample target, then configure it to use your Developer team for signing.
 

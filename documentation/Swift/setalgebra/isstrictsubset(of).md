@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether this set is a strict subset of th
 func isStrictSubset(of other: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the set is a strict subset of `other`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a strict subset of another set *B* if every member of *A* is also a member of *B* and *B* contains at least one element that is not a member of *A*.
 

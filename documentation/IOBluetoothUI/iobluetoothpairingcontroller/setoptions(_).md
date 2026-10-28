@@ -19,7 +19,7 @@ func setOptions(_ options: IOBluetoothServiceBrowserControllerOptions)
 - (void) setOptions:(IOBluetoothServiceBrowserControllerOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 The pairing controller options control the behavior of the panel. Currently kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry is the only supported option. In the future more options will be added to control things like whether the connection to the device is closed when the controller is finished or if multiple selection is allowed.
 

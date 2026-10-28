@@ -21,7 +21,7 @@ Creates a boosted tree regressor.
 init(annotationColumnName: String, featureColumnNames: [String], configuration: BoostedTreeConfiguration = BoostedTreeConfiguration())
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

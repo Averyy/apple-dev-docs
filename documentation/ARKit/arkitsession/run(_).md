@@ -16,7 +16,7 @@ Runs a session with the data providers you supply.
 final func run(_ dataProviders: [any DataProvider]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 If you call this method without previously calling the [`requestAuthorization(for:)`](./requestauthorization%28for%29.md) method, and if any of the data providers you supply require authorization, the system prompts the user for authorization when you call [`run(_:)`](./run%28_%29.md). If you call this method on an already-running session, ARKit stops the previous providers unless they’re also in the new array of providers.
 

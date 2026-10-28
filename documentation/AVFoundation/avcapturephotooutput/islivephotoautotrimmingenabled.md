@@ -22,7 +22,7 @@ var isLivePhotoAutoTrimmingEnabled: Bool { get set }
 @property (nonatomic, getter=isLivePhotoAutoTrimmingEnabled) BOOL livePhotoAutoTrimmingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to [`true`](../../Swift/true.md) when [`isLivePhotoCaptureSupported`](./islivephotocapturesupported.md) is [`true`](../../Swift/true.md).
 

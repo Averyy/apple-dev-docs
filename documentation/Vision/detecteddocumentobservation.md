@@ -21,7 +21,7 @@ The heat map that’s a pixel buffer in a one-component floating-point pixel for
 struct DetectedDocumentObservation
 ```
 
-#### Overview
+## Overview
 
 The observation includes the four corner points of a document’s quadrilateral and saliency masks.
 

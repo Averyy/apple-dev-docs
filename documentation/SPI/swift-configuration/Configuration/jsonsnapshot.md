@@ -29,11 +29,11 @@ struct JSONSnapshot
 - [Example use cases](./example-use-cases.md)
 - [Using reloading providers](./using-reloading-providers.md)
 
-#### Overview
+## Overview
 
 This structure represents a point-in-time view of configuration values. It handles the conversion from JSON types to configuration value types.
 
-#### Usage
+## Usage
 
 Use with [`FileProvider`](./fileprovider.md) or [`ReloadingFileProvider`](./reloadingfileprovider.md):
 

@@ -19,7 +19,7 @@ unowned(unsafe) var previousValidKeyView: NSView? { get }
 @property (assign, readonly, nullable) NSView * previousValidKeyView;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is `nil` if there is no view that precedes the current view and accepts the first responder status. AppKit ignores hidden views when it determines the previous valid key view.
 

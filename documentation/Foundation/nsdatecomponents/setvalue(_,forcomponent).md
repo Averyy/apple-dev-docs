@@ -25,7 +25,7 @@ func setValue(_ value: Int, forComponent unit: NSCalendar.Unit)
 - (void) setValue:(NSInteger) value forComponent:(NSCalendarUnit) unit;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows for component values to be set for an [`NSCalendar.Unit`](../nscalendar/unit.md) value.
 

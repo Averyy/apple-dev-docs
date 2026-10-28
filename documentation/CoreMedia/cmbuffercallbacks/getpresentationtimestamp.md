@@ -25,7 +25,7 @@ var getPresentationTimeStamp: CMBufferGetTimeCallback?
 CMBufferGetTimeCallback getPresentationTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is called from once [`CMBufferQueueGetFirstPresentationTimeStamp(_:)`](../cmbufferqueuegetfirstpresentationtimestamp%28_%29.md) and multiple times from [`CMBufferQueueGetMinPresentationTimeStamp(_:)`](../cmbufferqueuegetminpresentationtimestamp%28_%29.md).
 

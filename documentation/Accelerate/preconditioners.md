@@ -5,7 +5,7 @@
 
 Create preconditioners for iterative solves.
 
-#### Overview
+## Overview
 
 In many cases, applying a preconditioner to the coefficient matrix reduces the number of iterations necessary to solve the system. The Sparse Solvers library provides Jacobi and diagonal scaling preconditioners, and the functionality to create user-defined preconditioners.
 

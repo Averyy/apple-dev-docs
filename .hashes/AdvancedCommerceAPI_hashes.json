@@ -1634,8 +1634,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/advancedcommerceapi/com.apple.documentation/documentation/advancedcommerceapi"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 408
   }

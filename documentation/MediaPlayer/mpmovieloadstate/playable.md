@@ -21,7 +21,7 @@ static var playable: MPMovieLoadState { get }
 MPMovieLoadStatePlayable
 ```
 
-#### Discussion
+## Discussion
 
 The buffer has enough data that playback can begin, but it may run out of data before playback finishes.
 

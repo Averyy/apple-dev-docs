@@ -14,7 +14,7 @@
 kUSBLowLatencyWriteBuffer = 0
 ```
 
-#### Discussion
+## Discussion
 
 The buffer will be used to write data out to a device.
 

@@ -23,7 +23,7 @@ init(device: AVCaptureDevice)
 - (instancetype) initWithDevice:(AVCaptureDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 You can only create a zoom slider with a device that support’s setting its [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) property value.
 

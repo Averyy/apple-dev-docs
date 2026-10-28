@@ -23,7 +23,7 @@ func beginSheetModal(for window: NSWindow) async -> NSApplication.ModalResponse
 - (void) beginSheetModalForWindow:(NSWindow *) window completionHandler:(void (^)(NSModalResponse result)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Configure all the relevant properties of the panel before you call this method. The completion handler block runs after the user dismisses the panel, but while the panel may still be onscreen. If you need to dismiss the panel from the screen—for example, if the completion block displays an alert—close the panel by calling its [`orderOut(_:)`](../nswindow/orderout%28_%29.md) method with the value `nil`.
 

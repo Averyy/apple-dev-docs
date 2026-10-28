@@ -15,7 +15,7 @@ Get or set options for the generation of phonetic output. See [Phoneme Generatio
 soPhonemeOptions = 'popt'
 ```
 
-#### Discussion
+## Discussion
 
 The `speechInfo` parameter is a pointer to a long value that represents the phoneme generation value.
 

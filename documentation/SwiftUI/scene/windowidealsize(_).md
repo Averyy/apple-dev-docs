@@ -16,7 +16,7 @@ nonisolated
 func windowIdealSize(_ idealSize: WindowIdealSize) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 The default behavior will size the window to its maximum size, or the bounds of the display, whichever is smaller. By overriding this behavior, you can provide a size that is appropriate for the contents of your window.
 

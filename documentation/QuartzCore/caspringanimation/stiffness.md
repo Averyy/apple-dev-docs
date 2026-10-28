@@ -24,7 +24,7 @@ var stiffness: CGFloat { get set }
 @property CGFloat stiffness;
 ```
 
-#### Discussion
+## Discussion
 
 The default stiffness coefficient is `100`. Increasing the [`stiffness`](./stiffness.md) reduces the number of oscillations and will reduce the settling duration. Decreasing the [`stiffness`](./stiffness.md) increases the the number of oscillations and will increase the settling duration.
 

@@ -24,11 +24,11 @@ nonisolated
 func previewInterfaceOrientation(_ value: InterfaceOrientation) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A preview that uses the given orientation.
 
-#### Discussion
+## Discussion
 
 By default, device previews appear right side up, using orientation [`portrait`](../interfaceorientation/portrait.md). You can change the orientation of a preview using one of the values in the [`InterfaceOrientation`](../interfaceorientation.md) structure:
 

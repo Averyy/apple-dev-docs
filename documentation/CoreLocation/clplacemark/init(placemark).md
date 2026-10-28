@@ -27,11 +27,11 @@ init(placemark: CLPlacemark)
 - (instancetype) initWithPlacemark:(CLPlacemark *) placemark;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized placemark object.
 
-#### Discussion
+## Discussion
 
 You can use this method to transfer information from one placemark object to another placemark object.
 

@@ -21,7 +21,7 @@ An error indicating that the model refused to answer.
 case refusal(LanguageModelSession.GenerationError.Refusal, LanguageModelSession.GenerationError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 This error can happen for prompts that do not violate any guardrail policy, but the model isn’t able to provide the kind of response you requested. You can choose to handle this error by showing a predetermined message of your choice, or you can use the `Refusal` to generate an explanation from the model itself.
 

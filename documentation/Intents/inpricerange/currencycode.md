@@ -31,7 +31,7 @@ var currencyCode: String { get }
 @property (atomic, readonly) NSString * currencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve the list of available currency codes, call the [`isoCurrencyCodes`](../../Foundation/nslocale/isocurrencycodes.md) method of the [`NSLocale`](../../Foundation/nslocale.md) class.
 

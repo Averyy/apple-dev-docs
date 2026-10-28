@@ -25,7 +25,7 @@ var scaleType: AXNumericDataAxisDescriptor.ScaleType { get set }
 @property (nonatomic, assign) AXNumericDataAxisDescriptorScale scaleType;
 ```
 
-#### Discussion
+## Discussion
 
 Match the value of this property to the visual representation in the chart.
 

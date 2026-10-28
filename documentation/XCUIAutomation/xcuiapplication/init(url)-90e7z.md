@@ -20,7 +20,7 @@ init(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is only available on macOS.
 

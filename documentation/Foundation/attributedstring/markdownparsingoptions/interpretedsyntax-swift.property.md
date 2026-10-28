@@ -21,7 +21,7 @@ The syntax for interpreting a Markdown string.
 var interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax
 ```
 
-#### Discussion
+## Discussion
 
 If your Markdown data uses syntax that this setting excludes, the parser still parses it and includes its text in the final result. However, the relevant text won’t have attributes.
 

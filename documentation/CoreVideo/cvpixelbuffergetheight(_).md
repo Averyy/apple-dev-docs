@@ -25,7 +25,7 @@ func CVPixelBufferGetHeight(_ pixelBuffer: CVPixelBuffer) -> Int
 extern size_t CVPixelBufferGetHeight(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 The buffer height, in pixels.
 

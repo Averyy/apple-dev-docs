@@ -24,11 +24,11 @@ func decodeCGRect(forKey key: String) -> CGRect
 - (CGRect) decodeCGRectForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The `CGRect` structure.
 
-#### Discussion
+## Discussion
 
 Use this method to decode a rectangle that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-10qhm.md) method.
 

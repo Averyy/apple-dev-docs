@@ -19,11 +19,11 @@ The declaration to configure Network Relay settings.
 object NetworkRelay
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.network.relay` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.network.relay` as the declaration type.
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration examples
+### Configuration examples
 
 **Single relay**:
 

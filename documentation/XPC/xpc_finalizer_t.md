@@ -25,7 +25,7 @@ typealias xpc_finalizer_t = (UnsafeMutableRawPointer?) -> Void
 typedef void (*)(void *) xpc_finalizer_t;
 ```
 
-#### Discussion
+## Discussion
 
 It is not safe to reference the connection from within this function.
 

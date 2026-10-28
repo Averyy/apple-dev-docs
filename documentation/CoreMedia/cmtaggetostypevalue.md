@@ -21,7 +21,7 @@ Retrieves a tag’s value for use by the operating system.
 extern OSType CMTagGetOSTypeValue(CMTag tag);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Before retrieving a tag’s value with this function, call [`CMTagHasOSTypeValue`](./cmtaghasostypevalue.md) to ensure it has the correct type.
 

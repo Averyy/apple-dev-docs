@@ -21,7 +21,7 @@ Indicates that all subsequent input and output operations on the pipe’s file d
 static var nonBlocking: FileDescriptor.PipeOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `O_NONBLOCK`.
 

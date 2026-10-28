@@ -22,7 +22,7 @@ nonisolated
 init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, stacking: MarkStackingMethod = .standard) where X : Plottable, Y : Plottable
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to create a basic area chart:
 

@@ -23,7 +23,7 @@ var kDNSServiceType_ATMA: Int { get }
 kDNSServiceType_ATMA
 ```
 
-#### Discussion
+## Discussion
 
 ATM Address
 

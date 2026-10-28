@@ -20,11 +20,11 @@ Creates a managed value with the specified JavaScript value.
 + (JSManagedValue *) managedValueWithValue:(JSValue *) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new managed value.
 
-#### Discussion
+## Discussion
 
 To ensure that the underlying JavaScript value is retained as long as the managed value remains in use in the Objective-C or Swift runtime, report the managed value’s owner to the JavaScriptCore virtual machine using the [`addManagedReference(_:withOwner:)`](../jsvirtualmachine/addmanagedreference%28_,withowner%29.md) method.
 

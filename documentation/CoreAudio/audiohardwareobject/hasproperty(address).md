@@ -16,7 +16,7 @@ Queries an AudioHardwareObject about whether or not it has the given property.
 func hasProperty(address: AudioObjectPropertyAddress) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Bool indicating whether or not the AudioHardwareObject has the given property.
 

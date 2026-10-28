@@ -15,7 +15,7 @@ kIOCDMediaTypeKey is a property of IOCDMedia objects. It has an OSString value.
 #define kIOCDMediaTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOCDMediaTypeKey property identifies the CD media type (CD-ROM, CD-R, CD-RW, etc). See the kIOCDMediaType contants for possible values.
 

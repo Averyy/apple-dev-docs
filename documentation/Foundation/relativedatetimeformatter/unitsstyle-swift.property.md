@@ -25,7 +25,7 @@ var unitsStyle: RelativeDateTimeFormatter.UnitsStyle { get set }
 @property NSRelativeDateTimeFormatterUnitsStyle unitsStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `full`.
 

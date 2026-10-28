@@ -21,11 +21,11 @@ Creates a batch of records to modify using the provided record zone changes.
 init?(pendingChanges: [CKSyncEngine.PendingRecordZoneChange], recordProvider: @Sendable (CKRecord.ID) async -> CKRecord?) async
 ```
 
-#### Return Value
+## Return Value
 
 The batch of records to modify, or `nil` if there are no pending changes.
 
-#### Discussion
+## Discussion
 
 This method iterates over `pendingChanges` and adds the necessary information to the new batch, until there are no more changes or the size of the batch reaches the maximum limit. If the type of change is a record save, the method asks the specified `recordProvider` closure for that record. If the closure returns `nil`, the method skips that change.
 

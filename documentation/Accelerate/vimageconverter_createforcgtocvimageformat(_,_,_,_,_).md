@@ -25,11 +25,11 @@ func vImageConverter_CreateForCGToCVImageFormat(_ srcFormat: UnsafePointer<vImag
 vImageConverterRefvImageConverter_CreateForCGToCVImageFormat(const vImage_CGImageFormat *srcFormat, vImageCVImageFormatRef destFormat, const CGFloat *backgroundColor, vImage_Flags flags, vImage_Error *error);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
-#### Discussion
+## Discussion
 
 This function creates a [`vImageConverter`](./vimageconverter.md) instance that’s used with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](./vimageconvert_anytoany%28_,_,_,_,_%29.md) to convert a Core Graphics formatted image, described by [`vImage_CGImageFormat`](./vimage_cgimageformat.md), to Core Video image data, described by [`vImageCVImageFormat`](./vimagecvimageformat.md).
 

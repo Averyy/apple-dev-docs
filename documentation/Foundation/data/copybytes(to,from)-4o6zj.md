@@ -21,11 +21,11 @@ Copies the bytes in a range from the data into a buffer.
 func copyBytes<DestinationType>(to buffer: UnsafeMutableBufferPointer<DestinationType>, from range: Range<Data.Index>? = nil) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 Number of bytes copied into the destination buffer.
 
-#### Discussion
+## Discussion
 
 If the count of the range is greater than `MemoryLayout<DestinationType>.stride * buffer.count` then only the first `N` bytes will be copied into the buffer.Precondition: The range must be within the bounds of the data. Otherwise `fatalError` is called.
 

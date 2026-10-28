@@ -22,7 +22,7 @@ var datePickerStyle: UIDatePickerStyle { get }
 @property (nonatomic, assign, readonly) UIDatePickerStyle datePickerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property always returns a concrete style, never [`UIDatePickerStyle.automatic`](../uidatepickerstyle/automatic.md).
 

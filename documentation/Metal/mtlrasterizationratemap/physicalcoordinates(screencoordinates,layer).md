@@ -25,11 +25,11 @@ func physicalCoordinates(screenCoordinates: MTLCoordinate2D, layer layerIndex: I
 - (MTLCoordinate2D) mapScreenToPhysicalCoordinates:(MTLCoordinate2D) screenCoordinates forLayer:(NSUInteger) layerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the layer’s physical coordinate system corresponding to the source point.
 
-#### Discussion
+## Discussion
 
 The returned coordinates are always less than or equal to the input coordinates because the rasterization rate never exceeds 1:1 in any region.
 

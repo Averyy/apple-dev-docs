@@ -17,7 +17,7 @@ A protocol that enforces conformance to a care plan store.
 protocol OCKAnyCarePlanStore : OCKAnyReadOnlyCarePlanStore
 ```
 
-#### Overview
+## Overview
 
 Any store that can write to one more types conforming to `OCKAnyCarePlan` is considered an `OCKAnyCarePlanStore`.
 

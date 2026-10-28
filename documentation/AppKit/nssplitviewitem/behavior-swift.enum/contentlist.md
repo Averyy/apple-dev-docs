@@ -19,7 +19,7 @@ case contentList
 NSSplitViewItemBehaviorContentList
 ```
 
-#### Discussion
+## Discussion
 
 This behavior corresponds to split view items that you create using [`init(contentListWithViewController:)`](../init%28contentlistwithviewcontroller%29.md).
 

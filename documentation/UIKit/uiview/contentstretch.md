@@ -19,7 +19,7 @@ The rectangle that defines the stretchable and nonstretchable regions of a view.
 @property (nonatomic) CGRect contentStretch;
 ```
 
-#### Discussion
+## Discussion
 
 You use this property to control how a view’s content is stretched to fill its bounds when the view is resized. Content stretching is often used to animate the resizing of a view. For example, buttons and other controls use stretching to maintain crisp borders while allowing the middle portions of the control to stretch and fill the available space.
 

@@ -24,7 +24,7 @@ var turbidity: Float { get set }
 @property (nonatomic, assign) float turbidity;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` simulates a clear sky—that is, the sun has little effect on the color of the sky around it. Values closer to `1.0` simulate increasing amounts of dust and moisture in the sky, causing the sun’s color to spread across the atmosphere.
 

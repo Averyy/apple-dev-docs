@@ -23,7 +23,7 @@ var isInTemporaryStore: Bool { get }
 @property (nonatomic, readonly, getter=isInTemporaryStore) BOOL inTemporaryStore;
 ```
 
-#### Discussion
+## Discussion
 
 A device may use a temporary store when it captures images while tethered to a computer.
 

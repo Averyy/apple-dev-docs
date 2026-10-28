@@ -24,11 +24,11 @@ func mapRectThatFits(_ mapRect: MKMapRect) -> MKMapRect
 - (MKMapRect) mapRectThatFits:(MKMapRect) mapRect;
 ```
 
-#### Return Value
+## Return Value
 
 MapKit centers the map rectangle on the same point of the map, and adjusts the width and height to fit in the map view’s frame.
 
-#### Discussion
+## Discussion
 
 Returns a map rectangle with the same aspect ratio as the map view’s frame, centered at the same location as the specified map rectangle.
 

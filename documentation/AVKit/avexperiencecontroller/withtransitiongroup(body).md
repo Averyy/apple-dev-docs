@@ -16,11 +16,11 @@ Coordinates multiple experience transitions to perform together as a single visu
 nonisolated(nonsending) static func withTransitionGroup<ChildTransitionResult>(body: @_lifetime(0: copy 0) (inout AVExperienceController.TransitionGroup<ChildTransitionResult>) async -> Void) async -> [ChildTransitionResult] where ChildTransitionResult : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 An array of transition results in the order transitions were added.
 
-#### Discussion
+## Discussion
 
 Use this method when you need to transition multiple [`AVExperienceController`](../avexperiencecontroller.md) instances simultaneously, creating a smooth, coordinated animation.
 

@@ -19,7 +19,7 @@ The name of your ecosystem.
 var ecosystemName: String
 ```
 
-#### Discussion
+## Discussion
 
 This is a localized string that appears during device setup.
 

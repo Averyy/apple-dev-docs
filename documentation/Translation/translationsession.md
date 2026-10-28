@@ -18,7 +18,7 @@ A class that performs translations between a pair of languages.
 class TranslationSession
 ```
 
-#### Overview
+## Overview
 
 This class provides a flexible way for you to translate one or more lines of text at a time. There are two ways in which you can initialize a `TranslationSession`. One way you can obtain an instance of this class is by adding a `.translationTask()` to a SwiftUI view within your app. You can either add a [`translationTask(_:action:)`](../SwiftUI/view/translationtask%28_,action%29.md) or a [`translationTask(source:target:action:)`](../SwiftUI/view/translationtask%28source,target,action%29.md) function to the SwiftUI view containing the content you want to translate, like a [`Text`](../SwiftUI/text.md) view. After adding the task, the function passes you an instance of a translation session in its `action` closure. With this instance, you can use one or more of the translate functions to translate a single string or multiple strings of text.
 

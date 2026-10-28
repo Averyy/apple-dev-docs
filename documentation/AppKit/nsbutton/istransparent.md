@@ -19,7 +19,7 @@ var isTransparent: Bool { get set }
 @property (getter=isTransparent) BOOL transparent;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the button is transparent, [`false`](../../Swift/false.md) otherwise. A transparent button never draws itself, but it receives mouse events, sends its action, and tracks the mouse properly. A transparent button can be useful for sensitizing an area on the screen so that an action gets sent to a target when the area receives a mouse click. Setting this property causes the button to redraw if necessary.
 

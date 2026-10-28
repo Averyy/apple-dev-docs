@@ -15,7 +15,7 @@ An option to display a date for all-day events.
 case allDayDate(Date)
 ```
 
-#### Discussion
+## Discussion
 
 Display this date with information about the day (for example, “Sunday” or “July 1st”).
 

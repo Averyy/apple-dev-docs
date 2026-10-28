@@ -17,11 +17,11 @@ Element-wise bitwise or.
 static func | (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Take the bitwise or of two arrays with numpy-style broadcasting semantics. Either or both input arrays can also be scalars.
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`bitwiseOr(_:_:stream:)`](../bitwiseor%28_,_,stream%29.md)

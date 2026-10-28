@@ -20,7 +20,7 @@ func LSMMapAddText(_ mapref: LSMMap, _ textref: LSMText, _ category: LSMCategory
 OSStatus LSMMapAddText(LSMMapRef mapref, LSMTextRef textref, LSMCategory category);
 ```
 
-#### Discussion
+## Discussion
 
 The `textref` is no longer needed after this call.
 

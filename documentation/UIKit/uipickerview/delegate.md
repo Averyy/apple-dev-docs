@@ -22,7 +22,7 @@ weak var delegate: (any UIPickerViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIPickerViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`UIPickerViewDelegate`](../uipickerviewdelegate.md) protocol and implement the required methods to return the drawing rectangle for rows in each component. It also provides the content for each component’s row, either as a string or a view, and it typically responds to new selections or deselections.
 

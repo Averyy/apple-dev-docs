@@ -21,7 +21,7 @@ The name used to refer to the structure type.
 var typeName: String
 ```
 
-#### Discussion
+## Discussion
 
 This is the identifier that appears in generated Metal source and in graph serialization, for example `"Particle"` or `"EmitterUniforms"`.
 

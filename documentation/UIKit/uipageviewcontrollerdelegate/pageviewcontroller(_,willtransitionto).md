@@ -23,7 +23,7 @@ optional func pageViewController(_ pageViewController: UIPageViewController, wil
 - (void) pageViewController:(UIPageViewController *) pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *) pendingViewControllers;
 ```
 
-#### Discussion
+## Discussion
 
 If the user aborts the navigation gesture, the transition doesn’t complete and the view controllers stay the same.
 

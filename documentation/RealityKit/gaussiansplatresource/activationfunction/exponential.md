@@ -19,7 +19,7 @@ Applies an exponential function to each value.
 case exponential
 ```
 
-#### Discussion
+## Discussion
 
 Choose this when your values are stored in log space, as scale parameters often are. The framework computes *f(x) = e^x*.
 

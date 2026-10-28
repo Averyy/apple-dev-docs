@@ -6,7 +6,7 @@
 
 An audio channel layout structure.
 
-#### Overview
+## Overview
 
 A big-endian `AudioChannelLayout` structure as defined in CoreAudioTypes.h. See the OS X Developer Library for CoreAudio framework details.
 

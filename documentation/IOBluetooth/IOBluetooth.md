@@ -9,7 +9,7 @@ Gain user-space access to Bluetooth devices.
 **Availability**:
 - macOS 10.2+
 
-#### Overview
+## Overview
 
 The Bluetooth framework supports user-space access to Bluetooth devices, including both C and Objective-C APIs.
 

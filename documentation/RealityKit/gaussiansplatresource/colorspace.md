@@ -19,7 +19,7 @@ The color space the framework uses to interpret splat colors.
 final var colorSpace: CGColorSpace
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the sRGB color space.
 

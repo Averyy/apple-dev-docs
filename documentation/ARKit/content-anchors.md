@@ -5,7 +5,7 @@
 
 Identify items in the physical environment, including planar surfaces, images, physical objects, body positions, and faces.
 
-#### Overview
+## Overview
 
 Anchors identify the position of items in your augmented reality session. Use anchors to obtain information about the item itself, or about the thing it represents. For example, use an [`ARPlaneAnchor`](./arplaneanchor.md) to determine the location of a planar surface.
 

@@ -29,7 +29,7 @@ func performBackgroundTask(_ block: @escaping @Sendable (NSManagedObjectContext)
 
 - [Using Core Data in the background](../using-core-data-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 Each time this method is invoked, the persistent container creates a new [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) with the [`concurrencyType`](../nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](../nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). The persistent container then executes the passed in block against that newly created context on the context’s private queue.
 

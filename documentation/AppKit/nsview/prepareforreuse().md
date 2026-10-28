@@ -19,7 +19,7 @@ func prepareForReuse()
 - (void) prepareForReuse;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method sets the view’s alpha to `1.0` and its hidden state to [`false`](../../Swift/false.md). Subclasses can override this method and use it to return the view to its initial state. Subclasses should call `super` at some point in their implementation.
 

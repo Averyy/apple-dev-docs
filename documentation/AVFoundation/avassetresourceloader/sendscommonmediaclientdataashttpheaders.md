@@ -24,7 +24,7 @@ var sendsCommonMediaClientDataAsHTTPHeaders: Bool { get set }
 @property (nonatomic) BOOL sendsCommonMediaClientDataAsHTTPHeaders;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

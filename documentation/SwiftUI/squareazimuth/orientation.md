@@ -15,7 +15,7 @@ A 3D rotation that is snapped to the center of one of the four sides.
 var orientation: Rotation3D { get }
 ```
 
-#### Discussion
+## Discussion
 
 The angle will be equal to `0°`, `90°`, `180°`, or `270°`.
 

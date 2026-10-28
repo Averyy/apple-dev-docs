@@ -16,7 +16,7 @@ A Boolean value that indicates whether an app may create an assessment session.
 - **Name**: `com.apple.developer.automatic-assessment-configuration`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use an [`AEAssessmentSession`](../../AutomaticAssessmentConfiguration/aeassessmentsession.md) instance to put a device into a state that prevents users from accessing certain system features during high-stakes assessment activities, such as administering an exam. Your app needs the [`com.apple.developer.automatic-assessment-configuration`](./com.apple.developer.automatic-assessment-configuration.md) entitlement to create an assessment session.
 

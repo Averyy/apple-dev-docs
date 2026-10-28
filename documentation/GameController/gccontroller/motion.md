@@ -24,7 +24,7 @@ var motion: GCMotion? { get }
 @property (nonatomic, strong, readonly, nullable) GCMotion * motion;
 ```
 
-#### Discussion
+## Discussion
 
 If the controller supports the motion profile, this property is a [`GCMotion`](../gcmotion.md) object that you use to access the controller’s motion data. If the controller doesn’t support the motion input profile, this property is `nil`.
 

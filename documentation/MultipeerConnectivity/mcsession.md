@@ -26,7 +26,7 @@ class MCSession
 @interface MCSession : NSObject
 ```
 
-##### Initiating a Session
+### Initiating a Session
 
 To set up a session:
 
@@ -39,7 +39,7 @@ If you use one of the framework’s browser objects for peer discovery, when a p
 
 If instead you write your own peer discovery code, you are responsible for managing the connection manually. See the [Managing Peers Manually](./mcsession.md#Managing-Peers-Manually) section for more information.
 
-##### Communicating with Peers
+### Communicating with Peers
 
 Once you have set up the session, your app can send data to other peers by calling one of the following methods, found in Sending Data and Resources:
 
@@ -59,7 +59,7 @@ Once you have set up the session, your app can send data to other peers by calli
 
 > ❗ **Important**:  Delegate calls occur on a private operation queue. If your app needs to perform an action on a particular run loop or operation queue, its delegate method should explicitly dispatch or schedule that work.
 
-##### Managing Peers Manually
+### Managing Peers Manually
 
 If instead of using the framework’s browser and advertiser objects to perform peer discovery, you decide to write your own peer discovery code (with `NSNetService` or the Bonjour C API, for example), you can manually connect nearby peers into a session. To do this:
 
@@ -81,7 +81,7 @@ When the completion handler block is called, send the resulting connection data 
 
 You can also cancel an outstanding connection attempt by calling [`cancelConnectPeer(_:)`](./mcsession/cancelconnectpeer%28_%29.md). These methods are described in the Managing Peers Manually group.
 
-##### Disconnecting
+### Disconnecting
 
 To leave a session, your app must call [`disconnect()`](./mcsession/disconnect%28%29.md). For more details, see Leaving a Session.
 

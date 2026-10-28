@@ -25,7 +25,7 @@ protocol SCNTechniqueSupport : NSObjectProtocol
 @protocol SCNTechniqueSupport <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Techniques let you specify approaches to rendering a scene that involves multiple drawing passes. For example, you might create a technique that uses a shader program to postprocess a rendered scene on the GPU, creating special effects such as color grading, screen-space ambient occlusion, or motion blur. Different SceneKit objects support techniques in different ways, summarized in Table 1.
 

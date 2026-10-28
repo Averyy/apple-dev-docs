@@ -26,7 +26,7 @@ var addresses: [Data]? { get }
 @property (copy, readonly, nullable) NSArray<NSData *> * addresses;
 ```
 
-#### Discussion
+## Discussion
 
 An array containing `NSData` objects, each of which contains a socket address for the service. Each `NSData` object in the returned array contains an appropriate `sockaddr` structure that you can use to connect to the socket. The exact type of this structure depends on the service to which you are connecting. If no addresses were resolved for the service, the returned array contains zero elements.
 

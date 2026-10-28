@@ -19,11 +19,11 @@
 static bool SPRect3DFloatIsNaN(SPRect3DFloat rect);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether any of the coordinates and dimensions of the rectangle are NaN.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether any of the coordinates and dimensions of the rectangle are NaN.
 

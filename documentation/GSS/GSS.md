@@ -13,7 +13,7 @@ Conduct secure, authenticated network transactions.
 - macOS 10.14+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 The open source Generic Security Service Application Programming Interface (GSS-API) defines a standardized interface through which the operating system vends secure data transport operations. The GSS framework provides an implementation of the interface and the underlying libraries.
 

@@ -5,7 +5,7 @@
 
 Create an account sign-up and sign-in strategy for your app.
 
-#### Overview
+## Overview
 
 Users can launch an independent watchOS app as soon as it downloads, even if they don’t have their iPhone. As a result, users must be able to set up the application directly on Apple Watch. If your app requires an account, users must be able to create it and sign in on the watch.
 
@@ -17,7 +17,7 @@ You have the following options for syncing or saving user data:
 
 If you choose to create custom forms, watchOS 6 provides tools designed to fit the small screen size and to streamline data entry on Apple Watch.
 
-##### Simplify account creation and sign-in
+### Simplify account creation and sign-in
 
 Create your sign-in and sign-up forms using text fields. In SwiftUI, use the [`TextField`](../SwiftUI/textfield.md) and [`SecureField`](../SwiftUI/securefield.md) structures. In the storyboard, use the [`WKInterfaceTextField`](../WatchKit/wkinterfacetextfield.md) class.
 
@@ -27,7 +27,7 @@ To streamline data entry, perform the following steps:
 2. Provide a placeholder that describes the text field’s expected content. Effective placeholders help you get the most out of Apple Watch’s smaller screen. For SwiftUI, when instantiating the text field, the `title` property sets the placeholder. For the storyboard, set the placeholder using the Attributes inspector. Note that the system truncates placeholders if the text is too long, so keep your placeholders short.
 3. Set up your app’s associated domains. If you have a website where users can sign in with the same username and password, associate the website’s domain with your app. An associated domain tells the Apple Continuity Keyboard to provide autofill suggestions for usernames and passwords from that domain. To learn how to set up your app’s associated domains, see [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 
-##### Support password autofill
+### Support password autofill
 
 To support password autofill on Apple Watch, set the following [`WKTextContentType`](../WatchKit/wktextcontenttype.md) values.
 

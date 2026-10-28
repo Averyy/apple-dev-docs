@@ -19,7 +19,7 @@ var CPU_BASED2_PT_CONCEAL_VMX: UInt32 { get }
 CPU_BASED2_PT_CONCEAL_VMX
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

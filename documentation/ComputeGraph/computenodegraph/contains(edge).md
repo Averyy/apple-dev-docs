@@ -21,7 +21,7 @@ Returns whether the graph contains the given edge.
 func contains(edge: ComputeNodeGraph.Edge) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the graph contains the edge; otherwise, `false`.
 

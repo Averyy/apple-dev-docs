@@ -21,7 +21,7 @@ An array of subscription options for the subscription store view to merchandise.
 var options: [SubscriptionStoreControlStyleConfiguration.Option] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`options`](./options.md) property is an array that contains the main content of your subscription store control style, including the auto-renewable subscription products. Use the properties of each [`options`](./options.md) value to declare your control style. Provide a control that enables the customer to subscribe to each option in the array. Call the [`subscribe()`](./option/subscribe%28%29.md) method when the customer activates a control to subscribe.
 

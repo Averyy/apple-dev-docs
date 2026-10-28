@@ -23,7 +23,7 @@ func becomeKey()
 - (void) becomeKeyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Never call this method directly. The system calls this method and posts [`didBecomeKeyNotification`](./didbecomekeynotification.md) to let the window know that it’s the key window. The default implementation of this method does nothing, but subclasses can override it and use it to perform tasks related to becoming the key window.
 

@@ -17,7 +17,7 @@ Pad an array with a constant value.
 func padded(_ array: MLXArray, widths: some Collection<IntOrPair>, mode: PadMode = .constant, value: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`padded(_:width:mode:value:stream:)`](./padded%28_,width,mode,value,stream%29.md)

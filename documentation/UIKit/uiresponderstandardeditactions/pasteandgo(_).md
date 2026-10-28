@@ -23,7 +23,7 @@ optional func pasteAndGo(_ sender: Any?)
 - (void) pasteAndGo:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Paste and Go command from an editing menu. Your implementation should read the data from the pasteboard, add the resulting content to your interface, and begin navigating to the entity the content references.
 

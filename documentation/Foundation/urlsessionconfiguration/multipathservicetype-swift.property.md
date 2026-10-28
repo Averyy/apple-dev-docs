@@ -26,7 +26,7 @@ var multipathServiceType: URLSessionConfiguration.MultipathServiceType { get set
 
 - [Improving network reliability using Multipath TCP](../improving-network-reliability-using-multipath-tcp.md)
 
-#### Discussion
+## Discussion
 
 Multipath TCP, defined by the IETF in [RFC 6824](https://tools.ietf.org/html/rfc6824), is an extension to TCP that permits multiple interfaces to transmit a single data stream. This capability allows a seamless handover from Wi-Fi to cellular, aimed at making both interfaces more efficient and improving the user experience.
 

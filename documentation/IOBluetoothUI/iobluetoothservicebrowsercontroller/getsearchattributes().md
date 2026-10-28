@@ -19,11 +19,11 @@ func getSearchAttributes() -> UnsafePointer<IOBluetoothDeviceSearchAttributes>!
 - (const IOBluetoothDeviceSearchAttributes *) getSearchAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the search attributes set by setSearchAttributes:
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.2.4 (Bluetooth v1.1) or later.
 

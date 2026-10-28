@@ -27,7 +27,7 @@ init?(contentsOfMappedFile path: String)
 - (id) initWithContentsOfMappedFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A data object initialized by reading into it the mapped file specified by `path`.
 

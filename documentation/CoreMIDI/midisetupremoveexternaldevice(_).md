@@ -23,7 +23,7 @@ func MIDISetupRemoveExternalDevice(_ device: MIDIDeviceRef) -> OSStatus
 extern OSStatus MIDISetupRemoveExternalDevice(MIDIDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

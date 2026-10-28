@@ -5,11 +5,11 @@
 
 Change the system’s interpretation of a color value for display by selecting a color space.
 
-#### Overview
+## Overview
 
 A [`UIColor`](./uicolor.md) object typically stores its color value as a Core Graphics color ([`CGColor`](../CoreGraphics/cgcolor.md)) in a Core Graphics color space ([`CGColorSpace`](../CoreGraphics/cgcolorspace.md)). When creating a custom color, the underlying color space and the range of values for each color component vary based on the iOS version.
 
-##### Create colors with color spaces
+### Create colors with color spaces
 
 For apps running on iOS 9 and earlier, colors use one of two color spaces:
 
@@ -18,7 +18,7 @@ For apps running on iOS 9 and earlier, colors use one of two color spaces:
 
 These device color spaces correspond closely to the display characteristics of the sRGB color space. Component values within these color spaces are in the range `0.0` to `1.0`. When you create a color, the color object clamps values to ensure they fit within this range.
 
-##### Use extended color spaces
+### Use extended color spaces
 
 For apps running on iOS 10 or later, colors use the following extended color spaces:
 

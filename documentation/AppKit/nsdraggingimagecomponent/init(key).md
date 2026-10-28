@@ -19,11 +19,11 @@ init(key: NSDraggingItem.ImageComponentKey)
 - (instancetype) initWithKey:(NSDraggingImageComponentKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized dragging image component with the specified key.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer.
 

@@ -24,7 +24,7 @@ func setParticipantLimit(_ participantLimit: Int, forWaitingOutSuspensionsWithRe
 - (void) setParticipantLimit:(NSInteger) participantLimit forWaitingOutSuspensionsWithReason:(AVCoordinatedPlaybackSuspensionReason) reason;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides additional configuration of the values your app sets for the [`suspensionReasonsThatTriggerWaiting`](./suspensionreasonsthattriggerwaiting.md) property. When a coordinator decides whether one participant’s suspensions cause others to wait, it also considers any participant limits that you set on the group.
 

@@ -22,7 +22,7 @@ nonisolated
 init(_ content: GeneratedContent) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the content doesn’t match a known matcher type.
 

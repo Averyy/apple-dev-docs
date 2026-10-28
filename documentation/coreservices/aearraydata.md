@@ -16,7 +16,7 @@ Stores array information to be put into a descriptor listwith the `AEPutArray` f
 struct AEArrayData
 ```
 
-#### Overview
+## Overview
 
 When your application calls the [`AEPutArray(_:_:_:_:_:_:)`](./api-1442535-aeputarray.md) function to put informationinto a descriptor list or the [`AEGetArray(_:_:_:_:_:_:_:)`](./api-1445720-aegetarray.md) functionto get information from a descriptor list, it uses an to store theinformation. The type of array depends on the data for the array,as specified by one of the constants described in [Data Array Constants](./apple_events/api-1542848-data_array_constants.md).
 

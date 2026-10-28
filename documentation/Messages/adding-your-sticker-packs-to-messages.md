@@ -5,7 +5,7 @@
 
 Drag and drop your sticker pack into the Stickers asset catalog to let people access your stickers from Messages.
 
-#### Overview
+## Overview
 
 Sticker packs provide static sets of *stickers*, images that users can send inline as messages or peel off and attach to message bubbles in the transcript. Sticker packs don’t require any code. You add stickers by dragging image files into the Sticker Pack folder inside the Stickers asset catalog. People can use your stickers across the system outside of messages.
 
@@ -25,7 +25,7 @@ Messages supports three sticker sizes, which the system displays in a grid-based
 
 For optimal quality and performance, provide sticker images of the size you choose. For more information on creating animated stickers, see [Creating Stickers with Motion](https://developer.apple.com/support/stickers/motion/). For more information on submitting Sticker packs to the App Store, see [Preparing Sticker Submissions](https://developer.apple.com/app-store/sticker-submissions/).
 
-##### Specify sticker availability
+### Specify sticker availability
 
 You can either restrict your sticker pack to just Messages, or make it available throughout the system. To specify which apps your sticker pack is available in, update your `Info.plist` file. Add the `NSStickerSharingLevel` key inside your Messages extension’s `Info.plist` file. The value for this key is the string `{OS}`. Messages checks for the presence of the `Info.plist` key when your app launches outside of Messages. If you add this key to your app, your sticker pack doesn’t appear in the list.
 

@@ -23,7 +23,7 @@ var kAudioSessionProperty_Mode: Int { get }
 kAudioSessionProperty_Mode
 ```
 
-#### Discussion
+## Discussion
 
 An audio session mode is a key that identifies a set of device audio configuration details, such as whether or not the device performs automatic gain adjustment on incoming audio. A mode refines the configuration provided by a category ([`kAudioSessionProperty_AudioCategory`](./kaudiosessionproperty_audiocategory.md)).
 

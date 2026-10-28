@@ -20,7 +20,7 @@ class ARPointCloud
 @interface ARPointCloud : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`ARFrame`](./arframe.md) [`rawFeaturePoints`](./arframe/rawfeaturepoints.md) property to obtain a point cloud representing intermediate results of the scene analysis ARKit uses to perform world tracking.
 

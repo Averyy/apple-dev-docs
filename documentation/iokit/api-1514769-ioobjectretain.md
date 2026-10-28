@@ -23,11 +23,11 @@ func IOObjectRetain(_ object: io_object_t) -> kern_return_t
 kern_return_t IOObjectRetain(io_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 Gives the caller an additional reference to an existing object handle previously returned by IOKitLib.
 

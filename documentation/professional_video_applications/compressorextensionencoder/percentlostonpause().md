@@ -20,7 +20,7 @@ func percentLostOnPause() -> Double
 - (double) percentLostOnPause;
 ```
 
-#### Discussion
+## Discussion
 
 When a user requests to pause an encoding job, the Compressor app displays a value between 0 and 100 to indicate the percentage of the encoding job lost on pausing.
 

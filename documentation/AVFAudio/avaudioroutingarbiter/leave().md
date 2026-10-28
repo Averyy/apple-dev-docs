@@ -19,7 +19,7 @@ func leave()
 - (void) leaveArbitration;
 ```
 
-#### Discussion
+## Discussion
 
 Configure your app to notify the system when the app stops using audio for an undetermined duration. For example, for a Voice over IP (VoIP) app, call this method when the VoIP call ends. Calling this method allows the system to make an informed decision when multiple Apple devices are trying to take ownership of a Bluetooth audio route.
 

@@ -27,11 +27,11 @@ func seekToEndOfFile() -> UInt64
 - (unsigned long long) seekToEndOfFile;
 ```
 
-#### Return Value
+## Return Value
 
 The file offset with the file pointer at the end of the file. This is therefore equal to the size of the file.
 
-#### Discussion
+## Discussion
 
 Raises [`fileHandleOperationException`](../nsexceptionname/filehandleoperationexception.md) if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs while seeking.
 

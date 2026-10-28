@@ -22,7 +22,7 @@ func GLKVector2DivideScalar(_ vector: GLKVector2, _ value: Float) -> GLKVector2
 static GLKVector2 GLKVector2DivideScalar(GLKVector2 vector, float value);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

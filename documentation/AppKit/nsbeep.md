@@ -15,7 +15,7 @@ Plays the system beep.
 extern void NSBeep();
 ```
 
-#### Discussion
+## Discussion
 
 Plays the system beep. Users can select a sound to be played as the system beep. On a Macintosh computer, for example, you can change sounds with the Sound pane of System Preferences.
 

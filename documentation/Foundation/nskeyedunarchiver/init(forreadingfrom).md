@@ -25,7 +25,7 @@ init(forReadingFrom data: Data) throws
 - (instancetype) initForReadingFromData:(NSData *) data error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer enables [`requiresSecureCoding`](./requiressecurecoding.md) by default, and sets the [`decodingFailurePolicy`](./decodingfailurepolicy.md) to [`NSCoder.DecodingFailurePolicy.setErrorAndReturn`](../nscoder/decodingfailurepolicy-swift.enum/seterrorandreturn.md).
 

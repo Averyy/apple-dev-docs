@@ -19,7 +19,7 @@ func setupPanelDeviceSelectionChanged(_ aNotification: Notification!)
 - (void) setupPanelDeviceSelectionChanged:(NSNotification *) aNotification;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the `DRSetupPanel` object in question by sending `NSNotification` object to `aNotification`. The userInfo dictionary contains the single key DRSetupPanelSelectedDeviceKey whose value is the `DRDevice` object that is currently selected.
 

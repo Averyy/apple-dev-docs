@@ -20,7 +20,7 @@ Creates a low-level instance data object with an instance count.
 convenience init(instanceCount: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer also applies the instance count to [`instanceCapacity`](./instancecapacity.md).
 

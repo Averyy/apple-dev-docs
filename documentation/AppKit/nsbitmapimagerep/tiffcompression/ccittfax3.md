@@ -19,7 +19,7 @@ case ccittfax3
 NSTIFFCompressionCCITTFAX3
 ```
 
-#### Discussion
+## Discussion
 
 Used for 1-bit fax images sent over telephone lines.
 

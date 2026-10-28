@@ -22,11 +22,11 @@ nonisolated
 func hidden() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A hidden view.
 
-#### Discussion
+## Discussion
 
 Hidden views are invisible and can’t receive or respond to interactions. However, they do remain in the view hierarchy and affect layout. Use this modifier if you want to include a view for layout purposes, but don’t want it to display.
 

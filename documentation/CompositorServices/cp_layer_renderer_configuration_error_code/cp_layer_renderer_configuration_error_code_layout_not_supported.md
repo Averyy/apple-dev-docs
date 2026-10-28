@@ -16,7 +16,7 @@ An error that indicates the configuration’s current layout value is invalid.
 cp_layer_renderer_configuration_error_code_layout_not_supported
 ```
 
-#### Discussion
+## Discussion
 
 Specify a supported layout value using the [`cp_layer_renderer_configuration_set_layout`](../cp_layer_renderer_configuration_set_layout.md) function. Get a list of supported layouts from the [`cp_layer_renderer_capabilities_supported_layout`](../cp_layer_renderer_capabilities_supported_layout.md) function.
 

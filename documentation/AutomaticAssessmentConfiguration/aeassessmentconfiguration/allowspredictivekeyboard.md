@@ -22,7 +22,7 @@ var allowsPredictiveKeyboard: Bool { get set }
 @property (nonatomic, assign) BOOL allowsPredictiveKeyboard;
 ```
 
-#### Discussion
+## Discussion
 
 Users can turn on the Predictive Keyboard feature in the Settings app (General > Keyboard). An assessment session disables this feature by default, but you can allow it by setting [`allowsPredictiveKeyboard`](./allowspredictivekeyboard.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

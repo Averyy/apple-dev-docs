@@ -25,11 +25,11 @@ optional func archiver(_ archiver: NSKeyedArchiver, willEncode object: Any) -> A
 - (id) archiver:(NSKeyedArchiver *) archiver willEncodeObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 Either `object` or a different object to be encoded in its stead. The delegate can also modify the coder state. If the delegate returns `nil`, `nil` is encoded.
 
-#### Discussion
+## Discussion
 
 This method is called after the original object may have replaced itself with [`replacementObject(for:)`](../../ObjectiveC/nsobject-swift.class/replacementobject%28for%29-60vwc.md):.
 

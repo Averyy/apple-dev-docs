@@ -17,7 +17,7 @@ A constant that indicates the mobile driver’s license holder’s sex was categ
 case notSpecified
 ```
 
-#### Discussion
+## Discussion
 
 This category is defined in the American Association of Motor Vehicle Administrators (AAMVA) implementation guidelines.
 

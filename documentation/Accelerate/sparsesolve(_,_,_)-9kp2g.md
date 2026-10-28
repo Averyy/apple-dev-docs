@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Solves the equation *Subfactor * X = B* in place for the matrix of single-precision values *X*, without any internal memory allocations.
+Solves the equation *Subfactor \* X = B* in place for the matrix of single-precision values *X*, without any internal memory allocations.
 
 **Availability**:
 - iOS 11.0+
@@ -27,7 +27,7 @@ static void SparseSolve(SparseOpaqueSubfactor_Float Subfactor, DenseMatrix_Float
 
 ## Parameters
 
-- `Subfactor`: The *Subfactor* in *Subfactor* ** X = B* that [`SparseCreateSubfactor(_:_:)`](./sparsecreatesubfactor%28_,_%29-4renf.md) returns.
+- `Subfactor`: The *Subfactor* in *Subfactor* *\* X = B* that [`SparseCreateSubfactor(_:_:)`](./sparsecreatesubfactor%28_,_%29-4renf.md) returns.
 - `XB`: On input, the matrix *B*. On return, the matrix *X* overwrites it.
 - `workspace`: A workspace of size `workspaceRequiredStatic` `+ nrhs *` `workspaceRequiredPerRHS` where `nrhs` is the number of right-hand-side vectors.
 
@@ -35,11 +35,11 @@ static void SparseSolve(SparseOpaqueSubfactor_Float Subfactor, DenseMatrix_Float
 
 ### Matrix-solving functions with user-defined workspace
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_%29-8k0w9.md)
-  Solves the equation *Subfactor * X = B* in place for the matrix of double-precision values *X*, without any internal memory allocations.
+  Solves the equation *Subfactor \* X = B* in place for the matrix of double-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_,_%29-90z8f.md)
-  Solves the equation *Subfactor * X = B* for the matrix of double-precision values *X*, without any internal memory allocations.
+  Solves the equation *Subfactor \* X = B* for the matrix of double-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_,_%29-1hhdi.md)
-  Solves the equation *Subfactor * X = B* for the matrix of single-precision values *X*, without any internal memory allocations.
+  Solves the equation *Subfactor \* X = B* for the matrix of single-precision values *X*, without any internal memory allocations.
 
 
 ---

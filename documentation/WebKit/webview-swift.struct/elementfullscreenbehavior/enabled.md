@@ -19,7 +19,7 @@ Element full screen is enabled.
 static let enabled: WebView.ElementFullscreenBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view allows content to be displayed in full screen.
 

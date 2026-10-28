@@ -22,11 +22,11 @@ Combines the specified views into a single composite view using the layout algor
 func callAsFunction<V>(@ContentBuilder _ content: () -> V) -> some View where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A composite view that combines all the input views.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you instantiate a custom layout that conforms to the [`Layout`](../layout.md) protocol:
 

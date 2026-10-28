@@ -24,7 +24,7 @@ case invalidTime
 CHHapticErrorCodeInvalidTime
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you pass a negative or improperly formatted time value to the haptic engine.
 

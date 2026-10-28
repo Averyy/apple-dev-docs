@@ -19,11 +19,11 @@ func menu(for event: NSEvent, in cellFrame: NSRect, of view: NSView) -> NSMenu?
 - (NSMenu *) menuForEvent:(NSEvent *) event inRect:(NSRect) cellFrame ofView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The menu associated with the cell and event parameters, or `nil` if no menu is set.
 
-#### Discussion
+## Discussion
 
 This method is usually invoked by the [`NSControl`](../nscontrol.md) object (`aView`) managing the receiver. The default implementation gets the value of the [`menu`](./menu.md) property and returns `nil` if no menu has been set. Subclasses can override to customize the returned menu according to the event received and the area in which the mouse event occurs.
 

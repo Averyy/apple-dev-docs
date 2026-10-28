@@ -21,7 +21,7 @@ The properties a `Transition` can have.
 struct TransitionProperties
 ```
 
-#### Overview
+## Overview
 
 A transition can have properties that specify high level information about it. This can determine how a transition interacts with other features like Accessibility settings.
 

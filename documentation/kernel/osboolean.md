@@ -15,7 +15,7 @@ OSBoolean wraps a boolean value in a C++ object for use in Libkern collections.
 class OSBoolean : OSObject
 ```
 
-#### Overview
+## Overview
 
 OSBoolean represents a boolean `true`/`false` value as a Libkern C++ object. There are only two instances of OSBoolean, [`kOSBooleanTrue`](./kosbooleantrue.md) and [`kOSBooleanFalse`](./kosbooleanfalse.md). These are shared globally and returned by the instance-creation function withBoolean. Thus, you can use pointer comparison to test whether two OSBoolean objects are equal.
 

@@ -24,7 +24,7 @@ func JSValueCreateJSONString(_ ctx: JSContextRef!, _ value: JSValueRef!, _ inden
 JSStringRefJSValueCreateJSONString(JSContextRef ctx, JSValueRef value, unsigned int indent, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSStringRef`](./jsstringref.md) with the result of serialization, or `NULL` if the system throws an exception.
 

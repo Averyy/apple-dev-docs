@@ -24,7 +24,7 @@ var submeshes: [MTKSubmesh] { get }
 @property (nonatomic, readonly, nonnull) NSArray<MTKSubmesh *> * submeshes;
 ```
 
-#### Discussion
+## Discussion
 
 Submeshes may also contain texture materials to apply when rendering the mesh object.
 

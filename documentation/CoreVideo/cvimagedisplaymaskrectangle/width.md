@@ -21,7 +21,7 @@ The width of the rectangle starting at rectangle’s left offset toward the rect
 var width: UInt16
 ```
 
-#### Discussion
+## Discussion
 
 This value is always less than [`referenceRasterWidth`](./referencerasterwidth.md).
 

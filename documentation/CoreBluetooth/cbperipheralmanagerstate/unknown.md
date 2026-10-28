@@ -27,7 +27,7 @@ case unknown
 CBPeripheralManagerStateUnknown
 ```
 
-#### Discussion
+## Discussion
 
 When the manager is in this state, an update is imminent.
 

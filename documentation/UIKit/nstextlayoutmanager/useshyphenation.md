@@ -23,7 +23,7 @@ var usesHyphenation: Bool { get set }
 @property BOOL usesHyphenation;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `true`.
 

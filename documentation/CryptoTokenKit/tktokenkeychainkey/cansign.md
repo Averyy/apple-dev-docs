@@ -25,7 +25,7 @@ var canSign: Bool { get set }
 @property BOOL canSign;
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to the `kSecAttrCanSign` type attribute.
 

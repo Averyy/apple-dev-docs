@@ -5,7 +5,7 @@
 
 Include a property list dictionary to describe a RAW processor.
 
-#### Overview
+## Overview
 
 A MediaExtension RAW processor needs to include an `EXAppExtensionAttributes` dictionary in its `Info.plist` file that contains the following keys and values:
 

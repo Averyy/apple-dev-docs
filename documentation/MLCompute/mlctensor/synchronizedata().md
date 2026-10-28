@@ -23,11 +23,11 @@ func synchronizeData() -> Bool
 - (BOOL) synchronizeData;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if synchronization is successful; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This method synchronizes the tensor’s [`data`](./data.md) in host memory with the latest contents in device memory.
 

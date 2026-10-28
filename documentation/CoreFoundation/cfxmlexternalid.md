@@ -19,7 +19,7 @@ struct CFXMLExternalID
 typedef struct { ... } CFXMLExternalID;
 ```
 
-#### Overview
+## Overview
 
 This structure is part of the definition of the [`CFXMLDocumentTypeInfo`](./cfxmldocumenttypeinfo.md), [`CFXMLNotationInfo`](./cfxmlnotationinfo.md), and [`CFXMLEntityInfo`](./cfxmlentityinfo.md) structures.
 

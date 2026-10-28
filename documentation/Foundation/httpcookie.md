@@ -25,7 +25,7 @@ class HTTPCookie
 @interface NSHTTPCookie : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HTTPCookie`](./httpcookie.md) object is immutable, initialized from a dictionary that contains the attributes of the cookie. This class supports two different cookie versions:
 

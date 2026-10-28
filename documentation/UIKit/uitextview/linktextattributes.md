@@ -23,7 +23,7 @@ var linkTextAttributes: [NSAttributedString.Key : Any]! { get set }
 @property (nonatomic, copy, null_resettable) NSDictionary<NSString *,id> * linkTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The default attributes specify blue text with a single underline and the pointing hand cursor.
 

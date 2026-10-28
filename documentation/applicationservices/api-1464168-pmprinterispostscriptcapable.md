@@ -19,11 +19,11 @@ func PMPrinterIsPostScriptCapable(_ printer: PMPrinter) -> Bool
 Boolean PMPrinterIsPostScriptCapable(PMPrinter printer);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified printer is a PostScript capable printer; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 A printer that is PostScript capable is not necessarily a PostScript printer. The macOS printing system can render PostScript content on non-PostScript printers.
 

@@ -18,7 +18,7 @@ Determines whether pasteboard items match the specified patterns, without notify
 - (void) detectPatternsForPatterns:(NSSet<NSString *> *) patterns inItemSet:(NSIndexSet *) itemSet completionHandler:(void (^)(NSArray<NSSet<NSString *> *> *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Because this method only detects for the presence of patterns and does not read the contents of the pasteboard, the system doesn’t notify the user about reading the contents of the pasteboard.
 

@@ -23,7 +23,7 @@ func autosave(withImplicitCancellability autosavingIsImplicitlyCancellable: Bool
 - (void) autosaveWithImplicitCancellability:(BOOL) autosavingIsImplicitlyCancellable completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does the following:
 

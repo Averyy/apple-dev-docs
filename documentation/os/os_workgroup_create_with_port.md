@@ -15,11 +15,11 @@ Creates a new workgroup that is bound to the workgroup with the specified Mach p
 extern os_workgroup_tos_workgroup_create_with_port(const char *name, mach_port_t mach_port);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable workgroup object that refers to the workgroup with the specified port.
 
-#### Discussion
+## Discussion
 
 Use this function to join threads of your app to a workgroup in a different process. A process may export its workgroup’s Mach port to coordinate any work it’s doing with similar work happening in other processes. For example, the system’s audio APIs export workgroups that allow other processes to provide audio data on the same schedule as the system. Use this function to construct a local workgroup from the provided port information.
 

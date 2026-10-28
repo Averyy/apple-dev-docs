@@ -16,11 +16,11 @@ The response from a bulk Keyword deletion request.
 object KeywordDeleteBulkResponse
 ```
 
-#### Discussion
+## Discussion
 
 `KeywordDeleteBulkResponse` is the response envelope returned by the bulk keyword deletion endpoint. It doesn’t return the deleted `Keyword`, only whether each item succeeded. The response populates `error` only when the system rejects the overall request before processing any items.
 
-##### Example
+### Example
 
 ```json
 {

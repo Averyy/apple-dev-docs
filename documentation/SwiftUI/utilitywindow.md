@@ -16,7 +16,7 @@ nonisolated
 struct UtilityWindow<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Utility windows are typically used to display controls, settings, or information associated the main content of an application, sometimes referred to as tool palettes or inspector windows. Because of this role, they have specialized behavior compared to all other windows:
 

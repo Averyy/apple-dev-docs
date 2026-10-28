@@ -16,7 +16,7 @@ nonisolated
 static func ornament<Content>(attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .center, @ContentBuilder ornament: () -> Content) -> OrnamentHoverEffect<Content> where Self == OrnamentHoverEffect<Content>, Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to show an ornament at the specified position when the view is hovered. The ornament will be shown with the default fade animation.
 

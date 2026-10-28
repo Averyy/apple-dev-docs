@@ -19,7 +19,7 @@ The supported ink types.
 var inks: Set<PKInkingTool.InkType>
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to all inks.
 

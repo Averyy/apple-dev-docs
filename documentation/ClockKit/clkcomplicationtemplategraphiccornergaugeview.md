@@ -17,7 +17,7 @@ A template for displaying a SwiftUI view and a gauge in the clock face’s corne
 final class CLKComplicationTemplateGraphicCornerGaugeView<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCorner`](./clkcomplicationfamily/graphiccorner.md) family. [Figure 1](./clkcomplicationtemplategraphiccornergaugeview.md#3667261) shows the layout of the view and where the template might appear on the clock face.
 

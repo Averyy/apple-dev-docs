@@ -25,11 +25,11 @@ func editingString(for obj: Any) -> String?
 - (NSString *) editingStringForObjectValue:(id) obj;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object that is used for editing the textual representation of `anObject`.
 
-#### Discussion
+## Discussion
 
 When implementing a subclass, override this method only when the string that users see and the string that they edit are different. In your implementation, return an `NSString` object that is used for editing, following the logic recommended for implementing [`string(for:)`](./string%28for%29.md). As an example, you would implement this method if you want the dollar signs in displayed strings removed for editing.
 

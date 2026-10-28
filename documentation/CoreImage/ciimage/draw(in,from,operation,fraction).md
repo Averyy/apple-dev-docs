@@ -19,7 +19,7 @@ func draw(in rect: NSRect, from fromRect: NSRect, operation op: NSCompositingOpe
 - (void) drawInRect:(NSRect) rect fromRect:(NSRect) fromRect operation:(NSCompositingOperation) op fraction:(CGFloat) delta;
 ```
 
-#### Discussion
+## Discussion
 
 If the `srcRect` and `dstRect` rectangles have different sizes, the source portion of the image is scaled to fit the specified destination rectangle. The image is otherwise positioned and oriented using the current coordinate system.
 

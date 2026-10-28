@@ -32,7 +32,7 @@ init(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.M
 init(trainingData: [String : [URL]], parameters: MLImageClassifier.ModelParameters = ModelParameters(validationData: nil)) throws
 ```
 
-#### Discussion
+## Discussion
 
 When you create an [`MLImageClassifier`](../mlimageclassifier.md) instance, initialize it with an [`MLImageClassifier.ModelParameters`](./modelparameters-swift.struct.md) structure. This allows you to configure the image classifier training process. For example, you can explicitly define the validation dataset instead of allowing the model to choose a random selection of your training data. Alternatively, as shown in the following example, set `validationData` to `nil` to allow the classifier to choose the validation data for you from among your training data. This lets you set other parameters—like maximum iterations and augmentation options—to values other than the default.
 

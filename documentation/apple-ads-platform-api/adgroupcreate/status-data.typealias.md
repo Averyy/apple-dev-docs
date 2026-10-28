@@ -20,11 +20,11 @@ string AdGroupCreate.Status
 - `ENABLED`: The ad group is active and eligible to serve ads.
 - `PAUSED`: The ad group is paused and will not serve ads.
 
-#### Discussion
+## Discussion
 
 Include `status` in the create request to determine whether the new ad group begins competing for delivery immediately or starts paused.
 
-##### Example
+### Example
 
 ```json
 {

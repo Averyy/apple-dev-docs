@@ -21,7 +21,7 @@ var calendarUnits: NSCalendar.Unit { get set }
 @property (nonatomic) NSCalendarUnit calendarUnits;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of supported units, see [Date Format Options](../clkrelativedatetextprovider.md#Date-Format-Options).
 

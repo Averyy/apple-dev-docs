@@ -19,7 +19,7 @@ var supportsAlpha: Bool { get set }
 @property BOOL supportsAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`false`](../../Swift/false.md), people can select only fully opaque colors from the color picker. A value of [`false`](../../Swift/false.md) also hides the alpha slider. Setting this property to [`true`](../../Swift/true.md) enables partial color opacity, and also makes the alpha slider visible.
 

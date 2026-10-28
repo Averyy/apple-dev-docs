@@ -19,7 +19,7 @@ typealias hv_exception_syndrome_t = UInt64
 typedef uint64_t hv_exception_syndrome_t;
 ```
 
-#### Discussion
+## Discussion
 
 This corresponds to Exception Syndrome Register  EL2 (ESR_EL2).
 

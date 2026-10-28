@@ -24,7 +24,7 @@ var offsetTime: AVMusicTimeStamp { get set }
 @property (nonatomic) AVMusicTimeStamp offsetTime;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value is `0`.
 

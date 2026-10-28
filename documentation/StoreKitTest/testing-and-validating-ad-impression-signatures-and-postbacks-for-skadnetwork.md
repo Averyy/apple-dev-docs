@@ -12,7 +12,7 @@ Validate your ad impressions and test your postbacks by creating unit tests usin
 - Mac Catalyst 16.4+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 This sample code project provides examples of how to use the StoreKit Test framework to test individual units of an [SKAdNetwork](../StoreKit/skadnetwork.md) implementation. The sample code runs each type of test that [`SKAdTestSession`](./skadtestsession.md) makes possible.
 
@@ -22,24 +22,24 @@ Next, the sample code creates a test postback and updates the conversion value. 
 
 Finally, the sample code sends and receives the test postbacks. In a typical ad attribution flow, the system sends a postback after a timer expires. In the unit test, you control when to send the postback so that you can test that your server receives the postback.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the unit tests in your environment with your settings, you’ll need the following:
 
-- Your ad network identifier. Configure the value in your `Info.plist` as described in [Configuring a Source App](../StoreKit/skadnetwork/configuring_a_source_app.md). In the sample code, use the same value everywhere that the ad network identifier is required.
+- Your ad network identifier. Configure the value in your `Info.plist` as described in [Configuring a Source App](../StoreKit/configuring-a-source-app.md). In the sample code, use the same value everywhere that the ad network identifier is required.
 - A source app identifier. In the testing environment, this value is always `0`.
 - A cryptographic key pair, consisting of a public key and a private key, created with the Elliptic Curve Digital Signature Algorithm (ECDSA) with a `prime256v1` curve. In the sample code, use the private key when you generate a signature, and use the public key when you call `validateImpression`.
 
   - Set the `publicKey` variable in the sample code project to your public key.
-  - For more information on generating a private and public key pair for signing ads, visit [Registering an ad network](../StoreKit/skadnetwork/registering_an_ad_network.md).
+  - For more information on generating a private and public key pair for signing ads, visit [Registering an ad network](../StoreKit/registering-an-ad-network.md).
 - A local or remote server to listen for postbacks. Specify your server’s URL when you create test postbacks as shown in the sample code’s `testAddingPostbacks()` method.
 - A device running iOS 16.4 or later. iOS Simulator doesn’t support [SKAdNetwork](./skadnetwork_linkid.md).
 
-##### Create and validate the ad impression
+### Create and validate the ad impression
 
 In the `testImpressionValidity()` method, the unit test creates an instance of [SKAdImpression](../StoreKit/skadimpression.md) to represent a view-through ad.
 
-All of the properties are required. In the testing environment, the [sourceAppStoreItemIdentifier](../StoreKit/skadimpression/api-3727300-sourceappstoreitemidentifier.md) is always `0`.
+All of the properties are required. In the testing environment, the [sourceAppStoreItemIdentifier](../StoreKit/skadimpression/sourceappstoreitemidentifier.md) is always `0`.
 
 ```swift
 // Form the SKAdImpression instance and configure it.
@@ -58,15 +58,15 @@ The unit test then calls the `validateImpression` method on [`SKAdTestSession`](
 
 If `validateImpression` returns an error, the unit test fails, and the error contains further information. If `validateImpression` doesn’t return an error, the unit test succeeds.
 
-In the `testImpressionParametersValidity` method, the unit test creates a dictionary containing the parameters for a StoreKit-rendered ad and validates it using the `validateImpressionWithParameters` method. For more information about StoreKit-rendered ads, visit [Signing and providing ads](../StoreKit/skadnetwork/signing_and_providing_ads.md#3732910). The `testWebAdImpressionPayloadValidity` method creates and validates a web ad impression payload. For more information on web ads, visit [Get a Signed Web Ad Impression Payload](../SKAdNetworkforWebAds/get_a_signed_web_ad_impression_payload.md).
+In the `testImpressionParametersValidity` method, the unit test creates a dictionary containing the parameters for a StoreKit-rendered ad and validates it using the `validateImpressionWithParameters` method. For more information about StoreKit-rendered ads, visit [Signing and providing ads](../StoreKit/signing-and-providing-ads.md#3732910). The `testWebAdImpressionPayloadValidity` method creates and validates a web ad impression payload. For more information on web ads, visit [Get a Signed Web Ad Impression Payload](../SKAdNetworkforWebAds/get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md).
 
 > **Note**: For signature verification to succeed, provide the validate impression methods with the public key of the key pair used to generate the cryptographic signature for the ad impression.
 
-##### Create the test postbacks
+### Create the test postbacks
 
 The unit test creates three winning postbacks in the `testAddingPostbacks` method using the [`SKAdTestPostback`](./skadtestpostback.md) class. The fields of a postback are specific to each version of the [`SKAdNetwork`](../StoreKit/skadnetwork.md) API. This class provides an initializer that specifies the postback fields and the `SKAdNetwork` API version.
 
-For ad postbacks using `SKAdNetwork` version 4.0 or later, test multiple conversion windows by creating an array of three postbacks corresponding to the three conversion windows using the `winningPostbacks` static method on `SKAdTestPostback`. Create a single winning or nonwinning postback using the initializer with the `sourceIdentifier` parameter. For more information on multiple conversion windows, visit [Receiving postbacks in multiple conversion windows](../StoreKit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows.md).
+For ad postbacks using `SKAdNetwork` version 4.0 or later, test multiple conversion windows by creating an array of three postbacks corresponding to the three conversion windows using the `winningPostbacks` static method on `SKAdTestPostback`. Create a single winning or nonwinning postback using the initializer with the `sourceIdentifier` parameter. For more information on multiple conversion windows, visit [Receiving postbacks in multiple conversion windows](../StoreKit/receiving-postbacks-in-multiple-conversion-windows.md).
 
 ```swift
 guard let testPostbacks = SKAdTestPostback.winningPostbacks(withVersion: .version4_0,
@@ -89,9 +89,9 @@ After creating the `SKAdTestPostback` instances, the unit test calls the `setPos
 try testSession.setPostbacks(testPostbacks)
 ```
 
-##### Test updating the conversion value
+### Test updating the conversion value
 
-A postback isn’t ready to send to the server until it has a conversion value. The unit test updates the conversion value of the first test postback by calling the [updatePostbackConversionValue](../StoreKit/skadnetwork/api-4090669-updatepostbackconversionvalue.md) method on [`SKAdNetwork`](../StoreKit/skadnetwork.md). To confirm the conversion value after updating it, the unit test retrieves the postbacks using the `postbacks` property on `SKAdTestSession` and then checks the conversion value.
+A postback isn’t ready to send to the server until it has a conversion value. The unit test updates the conversion value of the first test postback by calling the [updatePostbackConversionValue](../StoreKit/skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,completionhandler%29.md) method on [`SKAdNetwork`](../StoreKit/skadnetwork.md). To confirm the conversion value after updating it, the unit test retrieves the postbacks using the `postbacks` property on `SKAdTestSession` and then checks the conversion value.
 
 ```swift
 let fetchedPostbacks = testSession.postbacks
@@ -105,7 +105,7 @@ let firstPostback = fetchedPostbacks[0]
 XCTAssertEqual(firstPostback.fineConversionValue, 42)
 ```
 
-##### Send and receive the test postback
+### Send and receive the test postback
 
 The unit test sends the postbacks with updated conversion values to the network server by calling the `flushPostbacks` method on `SKAdTestSession` The server URL is specified in the `testAddingPostbacks` method, where the test postbacks are created.
 

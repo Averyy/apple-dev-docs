@@ -24,15 +24,15 @@ func CFHTTPAuthenticationIsValid(_ auth: CFHTTPAuthentication, _ error: UnsafeMu
 extern Boolean CFHTTPAuthenticationIsValid(CFHTTPAuthenticationRef auth, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if `auth` contains enough information to be applied to a request.
 
-#### Discussion
+## Discussion
 
 If this function returns `FALSE`, the CFHTTPAuthentication object may still contain useful information, such as the name of an unsupported authentication method.
 
-#### Discussion
+## Discussion
 
 If this function returns `TRUE` for `auth`, the object is good for use with functions such as [`CFHTTPMessageApplyCredentials(_:_:_:_:_:)`](./cfhttpmessageapplycredentials%28_,_,_,_,_%29.md) and [`CFHTTPMessageApplyCredentialDictionary(_:_:_:_:)`](./cfhttpmessageapplycredentialdictionary%28_,_,_,_%29.md). If this function returns `FALSE`, `auth` is invalid, and authentications using it will not succeed.
 

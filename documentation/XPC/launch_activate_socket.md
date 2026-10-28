@@ -16,11 +16,11 @@ Retrieves the file descriptors for sockets in the process’s `launchd` property
 extern int launch_activate_socket(const char *name, int **fds, size_t *cnt);
 ```
 
-#### Return Value
+## Return Value
 
 On success, `0` is returned. Otherwise, an appropriate POSIX-domain is returned.
 
-#### Discussion
+## Discussion
 
 The possible error codes are:
 

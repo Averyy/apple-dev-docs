@@ -21,7 +21,7 @@ Removes all dimensions of size 1 from the shape of the tensor.
 func squeezingShape() -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

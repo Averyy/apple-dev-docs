@@ -25,7 +25,7 @@ func SCNVector4ToGLKVector4(_ vector: SCNVector4) -> GLKVector4
 static GLKVector4 SCNVector4ToGLKVector4(SCNVector4 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A four-element GLKit vector structure representing the same vector as the input parameter.
 

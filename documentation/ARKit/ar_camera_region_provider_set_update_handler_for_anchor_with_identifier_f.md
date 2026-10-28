@@ -15,7 +15,7 @@ Set the function for receiving camera region updates for a specific anchor ident
 extern void ar_camera_region_provider_set_update_handler_for_anchor_with_identifier_f(ar_camera_region_provider_t camera_region_provider, uuid_t camera_region_anchor_identifier, dispatch_queue_t camera_region_anchor_updates_queue, void *context, ar_camera_region_anchor_update_handler_function_t camera_region_anchor_update_handler_function);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Setting this function will override the handler set using `ar_camera_region_provider_set_update_handler_for_anchor_with_identifier`.
 

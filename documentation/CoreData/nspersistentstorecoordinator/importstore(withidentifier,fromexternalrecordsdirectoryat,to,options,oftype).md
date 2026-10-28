@@ -21,7 +21,7 @@ func importStore(withIdentifier storeIdentifier: String?, fromExternalRecordsDir
 - (NSPersistentStore *) importStoreWithIdentifier:(NSString *) storeIdentifier fromExternalRecordsDirectory:(NSURL *) externalRecordsURL toURL:(NSURL *) destinationURL options:(NSDictionary *) options withType:(NSString *) storeType error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the newly-created store.
 

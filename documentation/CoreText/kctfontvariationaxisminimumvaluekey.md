@@ -25,7 +25,7 @@ let kCTFontVariationAxisMinimumValueKey: CFString
 extern CFStringRef const kCTFontVariationAxisMinimumValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to get the variation axis minimum value as a reference to a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

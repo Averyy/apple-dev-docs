@@ -17,7 +17,7 @@ Processor that applies multiple [`LogitProcessor`](./logitprocessor.md) instance
 struct ChainedLogitProcessor
 ```
 
-#### Overview
+## Overview
 
 [`logitProcessor(parameters:)`](./generationcomponents/logitprocessor%28parameters%29.md) uses this to compose the built-in [`PenaltyProcessor`](./penaltyprocessor.md) with a processor from [`logitProcessorFactory`](./generationcomponents/logitprocessorfactory.md). It can also be used directly to combine several custom processors into one.
 

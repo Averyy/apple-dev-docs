@@ -18,11 +18,11 @@ Stops the queue from dequeueing any further tasks, and notifies the specified ha
 kern_return_t Cancel(IODispatchQueueCancelHandler handler);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method asynchronously tells the dispatch queue to stop the execution of queued tasks, and returns immediately. If a task is already executing, that task runs to completion. After all tasks finish, the dispatch queue executes the block in the `handler` parameter.
 

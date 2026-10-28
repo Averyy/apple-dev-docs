@@ -24,7 +24,7 @@ class MTLBufferLayoutDescriptorArray
 @interface MTLBufferLayoutDescriptorArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLBufferLayoutDescriptorArray`](./mtlbufferlayoutdescriptorarray.md) defines the data layout and loading for compute data, using [`MTLBufferLayoutDescriptor`](./mtlbufferlayoutdescriptor.md) instances.
 

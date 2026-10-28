@@ -24,11 +24,11 @@ class func gaborGradients() -> any CIFilter & CIGaborGradients
 + (CIFilter<CIGaborGradients> *) gaborGradientsFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the Gabor gradients filter to an image. The effect targets the texture of objects within the frame, and is frequently used to find detail in photographs of fingerprints.
 

@@ -21,7 +21,7 @@ A list of database changes that the sync engine has yet to send to the iCloud se
 final var pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This array contains any pending database changes to send to the iCloud servers. After the sync engine sends those changes, your app’s sync delegate receives an event of type [`CKSyncEngine.Event.SentDatabaseChanges`](../event/sentdatabasechanges.md).
 

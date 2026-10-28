@@ -5,9 +5,9 @@
 
 ATASMARTLib implements non-kernel task access to ATA SMART data.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOReturn.h>
 - <IOKit/IOTypes.h>

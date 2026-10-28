@@ -21,7 +21,7 @@ Creates a rectangle with a corner style set on the leading two corners uniformly
 init(uniformLeadingCorners: Edge.Corner.Style = .concentric, topTrailingCorner: Edge.Corner.Style = .concentric, bottomTrailingCorner: Edge.Corner.Style = .concentric)
 ```
 
-#### Discussion
+## Discussion
 
 For the two leading corners, the system calculates the radius for each corner first. Then, it selects the largest radius and applies it to each leading corner to achieve the symmetric look.
 

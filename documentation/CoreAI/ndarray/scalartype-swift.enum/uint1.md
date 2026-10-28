@@ -19,7 +19,7 @@ A 1-bit unsigned integer.
 case uint1
 ```
 
-#### Discussion
+## Discussion
 
 One-bit unsigned integers can represent values in the range [0, 1]. This type is used for quantization and in lookup tables.
 

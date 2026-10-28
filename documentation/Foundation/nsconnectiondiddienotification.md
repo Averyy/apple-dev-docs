@@ -16,7 +16,7 @@ Posted when an `NSConnection` object is deallocated or when it’s notified that
 extern NSString * const NSConnectionDidDieNotification;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSConnection` object attached to a remote `NSSocketPort` object cannot detect when the remote port becomes invalid, even if the remote port is on the same machine. Therefore, it cannot post this notification when the connection is lost. Instead, you must detect the timeout error when the next message is sent.
 

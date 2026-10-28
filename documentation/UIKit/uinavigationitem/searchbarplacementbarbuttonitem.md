@@ -21,7 +21,7 @@ var searchBarPlacementBarButtonItem: UIBarButtonItem { get }
 @property (nonatomic, strong, readonly) UIBarButtonItem * searchBarPlacementBarButtonItem;
 ```
 
-#### Overview
+## Overview
 
 When [`searchBarPlacement`](./searchbarplacement-swift.property.md) is `.integrated` or `.integratedButton` and a search controller is present, use this bar button item in the view controller’s [`toolbarItems`](../uiviewcontroller/toolbaritems.md) to control the placement of the search bar among them when the search bar is appearing in the [`UIToolbar`](../uitoolbar.md) on iPhone. Without this bar button item, the positioning for the search bar defaults to trailingmost for the [`UIToolbar`](../uitoolbar.md) case.
 

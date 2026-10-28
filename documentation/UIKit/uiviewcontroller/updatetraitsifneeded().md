@@ -23,7 +23,7 @@ func updateTraitsIfNeeded()
 - (void) updateTraitsIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends trait change callbacks synchronously.
 

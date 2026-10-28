@@ -20,7 +20,7 @@ func commandDescriptions(inSuite suiteName: String) -> [String : NSScriptCommand
 - (NSDictionary<NSString *,NSScriptCommandDescription *> *) commandDescriptionsInSuite:(NSString *) suiteName;
 ```
 
-#### Discussion
+## Discussion
 
 Each command description (instance of [`NSScriptCommandDescription`](../nsscriptcommanddescription.md)) in the returned dictionary is identified by command name.
 

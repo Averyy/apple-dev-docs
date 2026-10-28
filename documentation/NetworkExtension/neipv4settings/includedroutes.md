@@ -28,7 +28,7 @@ var includedRoutes: [NEIPv4Route]? { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 If you include the default route (`0.0.0.0/0` or `::/0`) in this property, the system routes traffic that doesn’t match a specific rule in the system routing table through the VPN.
 

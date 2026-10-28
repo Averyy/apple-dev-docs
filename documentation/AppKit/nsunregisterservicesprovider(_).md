@@ -19,7 +19,7 @@ func NSUnregisterServicesProvider(_ name: NSServiceProviderName)
 extern void NSUnregisterServicesProvider(NSServiceProviderName name);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to unregister custom services not directly related to your application.
 

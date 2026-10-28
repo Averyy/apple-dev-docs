@@ -20,7 +20,7 @@ An entitlement that indicates whether you own the alternative browser engine tha
 - `first-party`: A value that indicates you own the embedded alternative browser engine.
 - `third-party`: A value that indicates another third-party owns the embedded alternative browser engine.
 
-#### Discussion
+## Discussion
 
 If your app that’s not a web browser embeds an alternative browser engine for in-app browsing, include this entitlement to specify whether you own the embedded alternative browser engine. Also add the [Embedded Browser Engine Entitlement](./com.apple.developer.embedded-web-browser-engine.md).
 

@@ -21,7 +21,7 @@ A constraint that tests whether a code file or running process targets a given p
 struct PlatformType
 ```
 
-#### Overview
+## Overview
 
 For [`ProcessCodeRequirement`](./processcoderequirement.md) and [`LaunchCodeRequirement`](./launchcoderequirement.md) this constraint matches the platform type of the process  as known to the kernel. For [`OnDiskCodeRequirement`](./ondiskcoderequirement.md) this constraint matches the platforms supported in Mach-O load commands. The [`OnDiskCodeRequirement`](./ondiskcoderequirement.md) will be matched against a SecStaticCodeRef. For this constraint to match, the SecStaticCodeRef must reference a Mach-O. If the SecStaticCodeRef references a specific architecture of a Mach-O then this constraint will be matched against the first LC_BUILD_VERSION or LC_VERSION_MIN_*OS load command in the Mach-O. If the SecStaticCodeRef references a file, then this constraint will match against the load commands in the architecture that is most likely to run on the platform the code is running on.
 

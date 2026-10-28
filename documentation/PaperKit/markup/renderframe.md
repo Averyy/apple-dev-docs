@@ -20,7 +20,7 @@ The unrotated frame that tightly fits the rendered contents of the element.
 var renderFrame: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This frame includes padding around `frame` to ensure it includes all the rendered aspects of the content. For example, this frame will include the strokes, and shadows of any contents.
 

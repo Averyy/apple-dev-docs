@@ -24,7 +24,7 @@ func didFinish()
 - (void) didFinish;
 ```
 
-#### Discussion
+## Discussion
 
 This method signals to WebKit that it has all of the resource’s data and the task is now complete. Call this method after sending a response and the resource data to WebKit using the [`didReceive(_:)`](./didreceive%28_%29-2u23r.md) and [`didReceive(_:)`](./didreceive%28_%29-8t5f8.md) methods.
 

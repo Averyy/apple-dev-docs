@@ -16,11 +16,11 @@ Returns the array of elements that the interface uses to store  parsed report da
 virtual OSArray * getElements();
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`IOHIDElement`](../iohidelement.md) objects containing the parsed data from the report.
 
-#### Discussion
+## Discussion
 
 This method returns the array of [`IOHIDElement`](../iohidelement.md) objects associated with the interface. Each element contains data for a single aspect of the device’s state. For example, a report from a stylus contains separate elements for the horizontal and vertical position of the stylus, the pressure values, and so on. Use the [`getUsagePage`](../iohidelement/getusagepage.md) and [`getUsage`](../iohidelement/getusage.md) methods of the element to determine the type of information in each element.
 

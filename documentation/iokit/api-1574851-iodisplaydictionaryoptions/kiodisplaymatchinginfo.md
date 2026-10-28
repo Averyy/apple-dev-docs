@@ -14,7 +14,7 @@
 kIODisplayMatchingInfo = 0x00000100
 ```
 
-#### Discussion
+## Discussion
 
 Include only the keys necessary to match two displays with IODisplayMatchDictionaries().
 

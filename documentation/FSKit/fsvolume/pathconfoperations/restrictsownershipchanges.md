@@ -20,7 +20,7 @@ var restrictsOwnershipChanges: Bool { get }
 @property (readonly) BOOL restrictsOwnershipChanges;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is true, the volume rejects a `chown(2)` from anyone other than the superuser.
 

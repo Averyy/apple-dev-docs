@@ -20,11 +20,11 @@ func vmnet_network_configuration_set_ipv6_prefix(_ config: vmnet_network_configu
 vmnet_return_t vmnet_network_configuration_set_ipv6_prefix(vmnet_network_configuration_ref config, const struct in6_addr *prefix, uint8_t len);
 ```
 
-#### Return Value
+## Return Value
 
 VMNET_SUCCESS on success, error otherwise.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

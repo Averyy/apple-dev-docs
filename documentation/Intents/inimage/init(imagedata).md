@@ -25,7 +25,7 @@ convenience init(imageData: Data)
 + (instancetype) imageWithImageData:(NSData *) imageData;
 ```
 
-#### Return Value
+## Return Value
 
 An image object that contains the specified image data, or `nil` if that image data is invalid.
 

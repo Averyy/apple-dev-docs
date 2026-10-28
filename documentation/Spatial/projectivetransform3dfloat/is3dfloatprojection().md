@@ -23,11 +23,11 @@ func is3DFloatProjection() -> Bool
 static bool SPProjectiveTransform3DFloatIs3DFloatProjection(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform is a 3DFloat projection.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform is a 3DFloat projection.
 

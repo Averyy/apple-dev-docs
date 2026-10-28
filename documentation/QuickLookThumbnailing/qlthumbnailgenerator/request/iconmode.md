@@ -23,7 +23,7 @@ var iconMode: Bool { get set }
 @property (nonatomic, assign) BOOL iconMode;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../../Swift/true.md) to generate a thumbnail that’s appropriate to use as a file icon. Depending on the platform, the thumbnail may be embedded in a frame, show a curled corner, or display a background or drop shadow. If this property’s value is [`false`](../../../Swift/false.md), [`QLThumbnailGenerator`](../../qlthumbnailgenerator.md) generates a raw, undecorated thumbnail.
 

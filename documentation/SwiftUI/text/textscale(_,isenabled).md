@@ -21,7 +21,7 @@ Applies a text scale to the text.
 func textScale(_ scale: Text.Scale, isEnabled: Bool = true) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text with the specified scale applied.
 

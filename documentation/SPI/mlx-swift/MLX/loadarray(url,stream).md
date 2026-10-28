@@ -21,7 +21,7 @@ func loadArray(url: URL, stream: StreamOrDevice = .cpu) throws -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [`loadArrays(url:stream:)`](./loadarrays%28url,stream%29.md)
 - [`save(array:url:stream:)`](./save%28array,url,stream%29.md)

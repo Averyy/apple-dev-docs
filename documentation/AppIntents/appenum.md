@@ -28,7 +28,7 @@ protocol AppEnum : AppValue, StaticDisplayRepresentable, RawRepresentable where 
 - [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 - [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
 
-#### Overview
+## Overview
 
 When you want an app intent parameter or app entity property to have a fixed set of values, set the type of the underlying property to one that adopts the `AppEnum` protocol. In custom code, you use enumerations to limit the number of values available to a property of that type. For example, a fitness app might specify the available workout types using an enumeration instead of a string, because the enumeration requires someone to choose only known values. The `AppEnum` protocol adds metadata that Siri and other system features require to interact with your enumeration or custom type.
 

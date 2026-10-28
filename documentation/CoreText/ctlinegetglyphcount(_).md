@@ -25,11 +25,11 @@ func CTLineGetGlyphCount(_ line: CTLine) -> CFIndex
 extern CFIndex CTLineGetGlyphCount(CTLineRef line);
 ```
 
-#### Return Value
+## Return Value
 
 The total glyph count for the line passed in.
 
-#### Discussion
+## Discussion
 
 The total glyph count is equal to the sum of all of the glyphs in the glyph runs forming the line.
 

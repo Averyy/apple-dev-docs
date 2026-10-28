@@ -5,27 +5,27 @@
 
 Miscellaneous icons that don’t fall into a specific category.
 
-#### Overview
+## Overview
 
-##### Closed Captioning
+### Closed Captioning
 
 The resource name for the closed captioning icon is cc. Place a closed captioning icon to indicate that the media item is able to display text on the screen. Place a closed captioning icon using `<img src="resource://cc" />`.
 
 ![The letters C C, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/miscellaneous-icons-1@2x.png)
 
-##### High Definition
+### High Definition
 
 The resource name for the high definition icon is hd. Place a high definition icon next to media items that provide high definition video streams. Place a high definition icon using `<img src="resource://hd />`.
 
 ![The letters H D, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/miscellaneous-icons-2@2x.png)
 
-##### List Chevron
+### List Chevron
 
 The resource name for a list chevron icon is list-chevron. Place a list chevron icon to indicate that the item next to the chevron is playing or selectable. Place a list chevron icon using `<img src="resource://list-chevron" />`.
 
 ![A black chevron pointing to the right.](https://developer.apple.com/tutorials/images/com.apple.TVML/miscellaneous-icons-3@2x.png)
 
-##### Overlay Checkmark
+### Overlay Checkmark
 
 The resource name for the overlay checkmark icon is overlay-checkmark. Place an overlay checkmark on top of other images to indicate that the user has selected the item. Place an overlay checkmark icon using `<img src="resource://overlay-checkmark" />`.
 

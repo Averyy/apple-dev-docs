@@ -21,7 +21,7 @@ case typeIFrame1280x720
 UIImagePickerControllerQualityTypeIFrame1280x720
 ```
 
-#### Discussion
+## Discussion
 
 The Apple iFrame format supports video editing by keeping content in its native recorded format while editing.
 

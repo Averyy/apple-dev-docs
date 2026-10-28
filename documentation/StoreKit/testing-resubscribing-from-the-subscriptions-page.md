@@ -5,17 +5,17 @@
 
 Verify that your app can reactivate an expired subscription by receiving a transaction callback or inspecting an updated receipt.
 
-#### Overview
+## Overview
 
 Customers can manage their active subscriptions, as well as their expired subscriptions for up to a year after expiry, on the Subscriptions page in iOS, tvOS, iPadOS, and macOS. From this page, customers can upgrade, downgrade, cancel, or change the type of their subscriptions.
 
 In this test scenario, the customer resubscribes to an expired subscription from the Subscriptions page in the App Store.
 
-##### Set up testing
+### Set up testing
 
 This test case requires one or more subscriptions configured in App Store Connect and an expired subscription for your Sandbox Apple Account. If you don’t already have an expired subscription, purchase an auto-renewable subscription and let it expire.
 
-##### Begin testing
+### Begin testing
 
 To test resubscribing from the Subscriptions page:
 
@@ -31,7 +31,7 @@ To test resubscribing from the Subscriptions page:
 10. Check that your app makes the Apple In-App Purchase available and updates the subscriber’s status.
 11. In Xcode, check that your app calls [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md). For more information, see [Finishing a transaction](./finishing-a-transaction.md).
 
-##### Conclude testing
+### Conclude testing
 
 This test case requires no cleanup. For auto-renewable subscriptions, you can perform the test again when the subscription expires.
 

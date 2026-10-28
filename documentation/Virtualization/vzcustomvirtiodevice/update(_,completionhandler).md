@@ -23,7 +23,7 @@ func update(_ newConfiguration: VZVirtioDeviceSpecificConfiguration) async throw
 - (void) updateDeviceSpecificConfiguration:(VZVirtioDeviceSpecificConfiguration *) newConfiguration completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The size of the underlying data for the new configuration must be the same as the previous configuration. The framework raises an exception if this condition isn’t met.
 

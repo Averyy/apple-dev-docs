@@ -25,7 +25,7 @@ var proxyType: String? { get }
 @property (copy, readonly, nullable) NSString * proxyType;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the receiver does not represent a proxy protection space. The supported proxy types are listed in [NSURLProtectionSpace proxy types](../nsurlprotectionspace-proxy-types.md).
 

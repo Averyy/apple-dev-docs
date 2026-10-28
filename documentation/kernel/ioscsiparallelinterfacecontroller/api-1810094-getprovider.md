@@ -12,11 +12,11 @@ IOService * GetProvider (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to IOService.
 
-#### Overview
+## Overview
 
 Accessor method to get the IOService which is the controller's provider.
 

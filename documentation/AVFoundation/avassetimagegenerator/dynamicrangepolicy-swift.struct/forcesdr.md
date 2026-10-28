@@ -24,7 +24,7 @@ static let forceSDR: AVAssetImageGenerator.DynamicRangePolicy
 extern AVAssetImageGeneratorDynamicRangePolicy const AVAssetImageGeneratorDynamicRangePolicyForceSDR;
 ```
 
-#### Discussion
+## Discussion
 
 This policy converts PQ or HLG transfer functions to 709, while maintaining color primaries and matrix.
 

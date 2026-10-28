@@ -24,7 +24,7 @@ var sampleCount: MTLSize { get set }
 @property (nonatomic, readonly) MTLSize sampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sampleCount`](./samplecount.md) property splits the logical viewport coordinate space into a 2D grid of equal-sized cells. Its [`depth`](../mtlsize/depth.md) value is always `0`.
 

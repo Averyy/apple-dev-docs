@@ -27,7 +27,7 @@ func method_getDescription(_ m: Method) -> UnsafeMutablePointer<objc_method_desc
 extern struct objc_method_description *method_getDescription(Method m);
 ```
 
-#### Return Value
+## Return Value
 
 An `objc_method_description` structure that describes the method specified by `m`.
 

@@ -25,7 +25,7 @@ func applyEngineForce(_ value: CGFloat, forWheelAt index: Int)
 - (void) applyEngineForce:(CGFloat) value forWheelAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Applying a positive force turns the wheel in a direction that would move the vehicle forward; applying a negative force moves the vehicle in reverse.
 

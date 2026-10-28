@@ -19,11 +19,11 @@ func isLeafItem(_ item: Any?) -> Bool
 - (BOOL) isLeafItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item is a leaf item; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method may return [`false`](../../Swift/false.md) if the item has never been displayed in the browser or accessed via [`item(at:)`](./item%28at%29.md). Overriding this method has no effect. It may be used only if the browser’s delegate implements the item data source methods.
 

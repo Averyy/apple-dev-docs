@@ -21,7 +21,7 @@ Sets the clipping path to the intersection of the current clipping path with the
 func clip(to rects: [CGRect])
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the clipping path to the intersection of the current clipping path and the region within the specified rectangles.
 

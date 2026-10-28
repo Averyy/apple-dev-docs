@@ -25,7 +25,7 @@ func NSSwapLittleFloatToHost(_ x: NSSwappedFloat) -> Float
 static float NSSwapLittleFloatToHost(NSSwappedFloat x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the little-endian formatted value in `x` to the current endian format and returns the resulting value. If it is necessary to swap the bytes of `x`, this function calls [`NSSwapFloat(_:)`](./nsswapfloat%28_%29.md) to perform the swap.
 

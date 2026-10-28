@@ -19,7 +19,7 @@ A Boolean value indicating whether the view should underlap the status bar.
 @property (nonatomic, assign) BOOL wantsFullScreenLayout;
 ```
 
-#### Discussion
+## Discussion
 
 When a view controller presents its view, it normally shrinks that view so that its frame does not overlap the device’s status bar. Setting this property to [`true`](../../Swift/true.md) causes the view controller to size its view so that it fills the entire screen, including the area under the status bar. (Of course, for this to happen, the window hosting the view controller must itself be sized to fill the entire screen, including the area underneath the status bar.) You would typically set this property to [`true`](../../Swift/true.md) in cases where you have a translucent status bar and want your view’s content to be visible behind that view.
 

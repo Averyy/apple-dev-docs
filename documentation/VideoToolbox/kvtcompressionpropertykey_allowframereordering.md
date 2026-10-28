@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_AllowFrameReordering: CFString
 extern CFStringRef const kVTCompressionPropertyKey_AllowFrameReordering;
 ```
 
-#### Discussion
+## Discussion
 
 In order to encode B frames, a video encoder must reorder frames, which means that the order in which the frames are emitted and stored (the decode order) is different from the order in which they were presented to the video encoder (the display order).  The default value is `true`.  Set this value to `false` to prevent frame reordering.
 

@@ -21,7 +21,7 @@ An array of proxy configuration objects containing information about the proxies
 @property (copy) NSArray<NSObject<OS_nw_proxy_config> *> * proxyConfigurations;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls which proxy tasks to use within sessions based on this configuration when connecting to remote hosts.
 

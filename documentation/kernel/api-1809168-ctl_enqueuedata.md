@@ -13,11 +13,11 @@
 errno_t ctl_enqueuedata(kern_ctl_ref kctlref, u_int32_t unit, void *data, size_t len, u_int32_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 0 - Data was enqueued to be read by the client. EINVAL - Invalid parameters. EMSGSIZE - The buffer is too large. ENOBUFS - The queue is full or there are no free mbufs.
 
-#### Discussion
+## Discussion
 
 Send data from the kernel control to the client.
 

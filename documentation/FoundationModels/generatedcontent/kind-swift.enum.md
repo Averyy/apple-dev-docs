@@ -20,7 +20,7 @@ A representation of the different types of content that can be stored in generat
 enum Kind
 ```
 
-#### Overview
+## Overview
 
 `Kind` represents the various types of JSON-compatible data that can be held within a [`GeneratedContent`](../generatedcontent.md) instance, including primitive types, arrays, and structured objects.
 

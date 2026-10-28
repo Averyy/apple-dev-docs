@@ -27,7 +27,7 @@ func fitted(to input: AnnotatedBatch<Scalar>, validateOn validation: AnnotatedBa
 func fitted(to input: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn validation: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler? = nil) async throws -> MultivariateLinearRegressor<Scalar>.Model
 ```
 
-#### Return Value
+## Return Value
 
 The fitted model.
 

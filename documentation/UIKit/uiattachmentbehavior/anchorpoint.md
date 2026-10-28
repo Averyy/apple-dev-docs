@@ -23,7 +23,7 @@ var anchorPoint: CGPoint { get set }
 @property (nonatomic, readwrite) CGPoint anchorPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The anchor point is relative to the coordinate system for the behavior’s associated dynamic animator. For attachment types without an anchor point, the value in this property is [`CGPointZero`](../../CoreGraphics/cgpointzero.md). For more information about the coordinate system of the reference view, see [`UIDynamicAnimator`](../uidynamicanimator.md).
 

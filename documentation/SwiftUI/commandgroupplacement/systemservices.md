@@ -19,7 +19,7 @@ Placement for commands that expose services other apps provide.
 static let systemServices: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following command in macOS:
 

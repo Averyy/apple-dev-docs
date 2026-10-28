@@ -17,7 +17,7 @@ Network-slicing app categories available to your app.
 final var availableSliceAppCategories: [CTSlicingManager.AppCategory] { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an array of [`CTSlicingManager.AppCategory`](./appcategory.md) values that meet all of the following requirements:
 

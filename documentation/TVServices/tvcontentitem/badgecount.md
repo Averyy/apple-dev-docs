@@ -22,7 +22,7 @@ var badgeCount: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * badgeCount;
 ```
 
-#### Discussion
+## Discussion
 
 The display-badge number is interpreted as a positive integer. Not all UI elements that use content items display badges.
 

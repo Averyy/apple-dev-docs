@@ -15,11 +15,11 @@ Returns a Boolean value that indicates if this device can be the system’s defa
 uint32_t CanBeDefaultSystemOutputDevice();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the system can use this device as the default output device.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

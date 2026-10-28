@@ -5,7 +5,7 @@
 
 Understand the Apple Haptic and Audio Pattern (AHAP) file format.
 
-#### Overview
+## Overview
 
 AHAP is a JSON-like file format that specifies a haptic pattern through key-value pairs, analogous to a dictionary literal, except in a text file. You add an AHAP file to your Xcode project bundle like any other file resource, such as an audio file or an image.
 
@@ -15,14 +15,14 @@ An AHAP file doesn’t need an entry for every key. When Core Haptics loads an A
 
 This document lists the various keys and describes their effect on the resulting haptic pattern. Where applicable, this document also lists the default value for each parameter. The subsections cover keys at different levels of nesting, from top to bottom.
 
-##### Define patterns at the top level
+### Define patterns at the top level
 
 The only top-level keys are `Pattern` and `Version`. The value for `Pattern` is an array of subdictionaries. Each AHAP file can contain a single pattern. `Version` indicates the lowest version of Core Haptics that can support loading and playing the file. Later versions, indicated by a higher version number, may contain keys that aren’t supported in older versions of the framework.
 
 - **`Pattern`**: Array of `Event` dictionaries representing a segment of the haptic to play.
 - **`Version`**: The Core Haptics version that supports the file.
 
-##### Build a pattern from events
+### Build a pattern from events
 
 Each pattern contains one or more events, defined by the `Event` key at the top level of the pattern dictionary. An event is a segment of the pattern with some duration and a set of properties, such as intensity or sharpness. Each event starts at its own time and can overlap other events.
 
@@ -35,7 +35,7 @@ You can define two other keys in the pattern dictionary:
 
 See [Add dynamic parameters to change the pattern during playback](./representing-haptic-patterns-in-ahap-files.md#Add-dynamic-parameters-to-change-the-pattern-during-playback) for more information on dynamic parameters, and [Define parameter curves to automate dynamic parameter changes](./representing-haptic-patterns-in-ahap-files.md#Define-parameter-curves-to-automate-dynamic-parameter-changes) for more information on parameter curves.
 
-##### Define events by their type, start time, and parameters
+### Define events by their type, start time, and parameters
 
 Each pattern can have several events, which can overlap. For example, an AHAP file could describe a series of transient haptics that build in intensity, with each transient represented as an event. Likewise, an AHAP file that describes audio playing alongside the haptic could consist of an event of type `AudioCustom` along with an event of type `HapticContinuous`. Each event starts at a specific time, with its own specific parameters, like haptic intensity and sharpness for haptic events, or audio volume and pitch for audio events.
 
@@ -49,14 +49,14 @@ Each pattern can have several events, which can overlap. For example, an AHAP fi
 
 ![A diagram showing the structure of an audio event in an AHAP file.](https://developer.apple.com/tutorials/images/com.apple.corehaptics/media-3558816@2x.png)
 
-##### Define an event parameter
+### Define an event parameter
 
 The `EventParameters` key leads to an array of parameter subdictionaries. Each parameter describes one property of the event, like its haptic intensity or haptic sharpness. All parameters are optional. If you don’t include a parameter, the Core Haptics engine assumes its default value for that event.
 
 - **`ParameterID`**: A [`CHHapticEvent.ParameterID`](./chhapticevent/parameterid.md) string constant that indicates the type of parameter being defined.
 - **`ParameterValue`**: The numeric value of the associated parameter. These values are normalized to a range between 0 and 1 to represent the minimum and maximum the system supports.
 
-##### Specify the parameter by ID
+### Specify the parameter by ID
 
 Each parameter has a `ParameterID` string and an associated value. The range of possible values may vary from parameter to parameter.
 
@@ -73,7 +73,7 @@ Each parameter has a `ParameterID` string and an associated value. The range of 
 
 > **Note**:  A value of 0 doesn’t mean that the parameter has no effect, or that the absolute value of the parameter is zero. It’s a normalized value that maps to the minimum value the system supports. Likewise, a value of 1 doesn’t indicate 1 second; rather, it maps to the maximum supported value.
 
-##### Add dynamic parameters to change the pattern during playback
+### Add dynamic parameters to change the pattern during playback
 
 Like event parameters, each dynamic parameter has a `ParameterID` string and an associated value. Unlike event parameters, dynamic parameters affect the entire pattern, across all events. You indicate a dynamic parameter in the AHAP file with an entry labeled `Parameter` at the same level as `Event`.
 
@@ -90,7 +90,7 @@ Like event parameters, each dynamic parameter has a `ParameterID` string and an 
 - **`AudioDecayTimeControl`**: The amount by which to increase or decrease the decay time of the audio pattern’s event. The value is between -1 and 1 and is applied additively.
 - **`AudioReleaseTimeControl`**: The amount by which to increase or decrease the release time of the audio pattern’s event. The value is between -1 and 1 and is applied additively.
 
-##### Define parameter curves to automate dynamic parameter changes
+### Define parameter curves to automate dynamic parameter changes
 
 Like dynamic parameters, parameter curves change the parameter values of the haptic pattern during its playback. Unlike with dynamic parameters, the changes are scheduled over time, and each value transitions to the next one linearly. You indicate a parameter curve in the AHAP file with an entry labeled `ParameterCurve` at the same level as `Event`. Parameter curves modify the same parameters as dynamic parameters modify, and they share all of the same `ParameterID` strings.
 

@@ -23,7 +23,7 @@ optional func copyPublicKey() -> SecKey
 - (SecKeyRef) copyPublicKey;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a copy of the public key for the keypair.
 

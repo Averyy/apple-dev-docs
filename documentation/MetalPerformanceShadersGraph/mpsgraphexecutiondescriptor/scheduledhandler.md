@@ -24,7 +24,7 @@ var scheduledHandler: MPSGraphScheduledHandler { get set }
 @property (atomic, readwrite) MPSGraphScheduledHandler scheduledHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is nil.
 

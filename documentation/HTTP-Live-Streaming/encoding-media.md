@@ -5,11 +5,11 @@
 
 Encode audio and video for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
 
-#### Overview
+## Overview
 
 Apple Podcasts plays HLS video on many devices and across a range of network conditions. Use these encoder settings for best results.
 
-#### Apply HLS video encoding best practices
+## Apply HLS video encoding best practices
 
 Use adaptive bitrate streaming, efficient codecs, and proper segmentation when you encode video for HLS delivery to Apple Podcasts:
 
@@ -17,7 +17,7 @@ Use adaptive bitrate streaming, efficient codecs, and proper segmentation when y
 - Use H.264 (AVC) for broad device compatibility and H.265 (HEVC) for better compression efficiency.
 - Use appropriate segment durations for smooth playback.
 
-#### Configure encoding settings
+## Configure encoding settings
 
 Use these settings when preparing video for HLS delivery:
 

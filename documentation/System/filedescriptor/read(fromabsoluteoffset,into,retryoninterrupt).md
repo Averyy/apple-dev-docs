@@ -25,11 +25,11 @@ func read(fromAbsoluteOffset offset: Int64, into buffer: UnsafeMutableRawBufferP
 
 - [Adopting Swift File Operations](../adopting-file-operations.md)
 
-#### Return Value
+## Return Value
 
 The number of bytes that were read.
 
-#### Discussion
+## Discussion
 
 The [`count`](../../Swift/unsafemutablerawbufferpointer/count.md) property of `buffer` determines the maximum number of bytes that are read into that buffer.
 

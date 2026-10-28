@@ -23,11 +23,11 @@ func dequantized(to type: MLCDataType, scale: MLCTensor, zeroPoint bias: MLCTens
 - (MLCTensor *) tensorByDequantizingToType:(MLCDataType) type scale:(MLCTensor *) scale bias:(MLCTensor *) bias;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor the system dequantizes.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The tensor type must be [`MLCDataType.float32`](../mlcdatatype/float32.md).
 

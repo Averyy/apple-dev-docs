@@ -19,7 +19,7 @@ func viewWillDisappear()
 - (void) viewWillDisappear;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to perform tasks that are to precede the disappearance of the view controller’s view, such as stopping a continuous animation that you started in response to the [`viewDidAppear()`](./viewdidappear%28%29.md) method call. This method is called when:
 

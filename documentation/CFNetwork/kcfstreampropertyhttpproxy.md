@@ -24,7 +24,7 @@ let kCFStreamPropertyHTTPProxy: CFString
 extern CFStringRef const kCFStreamPropertyHTTPProxy;
 ```
 
-#### Discussion
+## Discussion
 
 HTTP Proxy property. To cause an HTTP CFStream to use an HTTP proxy, set the value of this property to a CFDictionary that includes at least one host/port pair described in “CFStream SOCKS Proxy Key Constants” in [CFStream](../CoreFoundation/cfstream.md). SystemConfiguration returns a CFDictionary that is usable without modification.
 

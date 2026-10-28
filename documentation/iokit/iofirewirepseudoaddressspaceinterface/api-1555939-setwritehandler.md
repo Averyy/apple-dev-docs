@@ -16,7 +16,7 @@ Set the callback that should be called to handle write accesses to the correspon
 const IOFireWirePseudoAddressSpaceWriteHandler (*SetWriteHandler)(IOFireWireLibPseudoAddressSpaceRef self, IOFireWirePseudoAddressSpaceWriteHandler inWriter);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the callback that was previously set or nil for none.
 

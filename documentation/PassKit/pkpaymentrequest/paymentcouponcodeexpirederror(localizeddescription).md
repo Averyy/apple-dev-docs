@@ -19,11 +19,11 @@ Returns an error object that indicates an expired coupon.
 static func paymentCouponCodeExpiredError(localizedDescription: String? = nil) -> any Error
 ```
 
-#### Return Value
+## Return Value
 
 A new expired coupon error.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a payment error object instead of creating an [`NSError`](../../Foundation/nserror.md) object yourself. This method indicates that the coupon code received from the Apple Pay sheet has expired.
 

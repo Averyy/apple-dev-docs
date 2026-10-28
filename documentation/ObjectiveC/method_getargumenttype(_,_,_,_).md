@@ -25,7 +25,7 @@ func method_getArgumentType(_ m: Method, _ index: UInt32, _ dst: UnsafeMutablePo
 extern void method_getArgumentType(Method m, unsigned int index, char *dst, size_t dst_len);
 ```
 
-#### Discussion
+## Discussion
 
 The parameter type string is copied to `dst`. `dst` is filled as if `strncpy(dst, parameter_type, dst_len)` were called. If the method contains no parameter with that index, `dst` is filled as if `strncpy(dst, "", dst_len)` were called.
 

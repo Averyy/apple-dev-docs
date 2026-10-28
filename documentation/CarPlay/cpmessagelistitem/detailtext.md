@@ -21,7 +21,7 @@ var detailText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * detailText;
 ```
 
-#### Discussion
+## Discussion
 
 The list item displays any secondary text below its primary text.
 

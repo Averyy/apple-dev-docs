@@ -19,7 +19,7 @@ var globalTintColor: UIColor { get }
 @property (nonatomic, readonly) UIColor * globalTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides access to the global tint color so that you can match the color elsewhere in your user interface. You specify the global tint color in the app’s storyboard, or in the asset catalog. If you don’t set a global tint color, this property returns the system default tint color.
 

@@ -23,7 +23,7 @@ func gatherAlongAxis(indices: some BNNSGraph.Builder.OperationParameter<Int32>, 
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 Register a gather along axis op, which shuffles the input along one axis. In particular, output `y` such that `y[L…, i, T…] = x[L…, indices[L…, i, T…], T…].
 

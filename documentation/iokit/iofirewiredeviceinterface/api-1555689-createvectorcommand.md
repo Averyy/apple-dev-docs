@@ -16,7 +16,7 @@ Create a vector command object.
 IOFireWireLibVectorCommandRef (*CreateVectorCommand)(IOFireWireLibDeviceRef self, IOFireWireLibCommandCallback callback, void *inRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibVectorCommandRef interface
 

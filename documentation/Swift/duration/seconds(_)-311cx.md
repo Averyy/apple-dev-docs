@@ -21,11 +21,11 @@ Construct a `Duration` given a number of seconds represented as a `BinaryInteger
 static func seconds<T>(_ seconds: T) -> Duration where T : BinaryInteger
 ```
 
-#### Return Value
+## Return Value
 
 A `Duration` representing a given number of seconds.
 
-#### Discussion
+## Discussion
 
 ```swift
   let d: Duration = .seconds(77)

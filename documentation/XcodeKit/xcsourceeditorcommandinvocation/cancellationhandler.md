@@ -19,7 +19,7 @@ var cancellationHandler: () -> Void { get set }
 @property (copy) void (^cancellationHandler)();
 ```
 
-#### Discussion
+## Discussion
 
 There are no guarantees about the thread or queue on which the cancellation handler is invoked. After receiving a cancellation, the command’s `completionHandler` is invoked and no changes are applied.
 

@@ -17,7 +17,7 @@ Policy governing bounded cross-dialect tool-call recovery.
 enum ToolCallRecoveryPolicy
 ```
 
-#### Overview
+## Overview
 
 The selected `ToolCallFormat` parser is always authoritative. Recovery is a secondary pass that may promote a call written in a *different* common dialect when the model drifts from the selected one. Because recovery turns response text into executable actions, it is deliberately conservative: a missed recovery is preferable to a false execution.
 

@@ -22,7 +22,7 @@ optional func navigationControllerSupportedInterfaceOrientations(_ navigationCon
 - (UIInterfaceOrientationMask) navigationControllerSupportedInterfaceOrientations:(UINavigationController *) navigationController;
 ```
 
-#### Return Value
+## Return Value
 
 One of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants that represents the set of interface orientations supported by the navigation controller.
 

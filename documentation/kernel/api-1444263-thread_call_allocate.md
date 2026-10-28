@@ -15,11 +15,11 @@ Allocate a thread call to execute with default (high) priority.
 thread_call_t thread_call_allocate(thread_call_func_t func, thread_call_param_t param0);
 ```
 
-#### Return Value
+## Return Value
 
 Thread call which can be passed to thread_call_enter variants.
 
-#### Discussion
+## Discussion
 
 Allocates a thread call that will run with properties of THREAD_CALL_PRIORITY_HIGH, binding the first parameter to the callback.
 

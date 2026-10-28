@@ -19,11 +19,11 @@ func record(forUniqueId uniqueId: String!) -> ABRecord!
 - (ABRecord *) recordForUniqueId:(NSString *) uniqueId;
 ```
 
-#### Return Value
+## Return Value
 
 The person or group record that matches the given unique ID.
 
-#### Discussion
+## Discussion
 
 If no record has the given ID, this method returns `nil`.
 

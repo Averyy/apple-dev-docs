@@ -20,7 +20,7 @@ A Boolean value that indicates whether the asset contains protected content.
 var hasProtectedContent: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Assets that contain protected content may not be playable without successful authorization, even if the value of its [`isPlayable`](../avasset/isplayable.md) property is [`true`](../../Swift/true.md).
 

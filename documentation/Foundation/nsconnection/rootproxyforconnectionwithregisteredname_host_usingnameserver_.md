@@ -16,11 +16,11 @@ Returns a proxy for the root object of the `NSConnection` object registered with
 + (NSDistantObject *) rootProxyForConnectionWithRegisteredName:(NSString *) name host:(NSString *) hostName usingNameServer:(NSPortNameServer *) server;
 ```
 
-#### Return Value
+## Return Value
 
 A proxy for the root object of the `NSConnection` object registered with `server` under `name` on the host named `hostName`, or `nil` if that `NSConnection` object has no root object set.
 
-#### Discussion
+## Discussion
 
 See [`rootProxyForConnectionWithRegisteredName:host:`](./rootproxyforconnectionwithregisteredname_host_.md) for more information.
 

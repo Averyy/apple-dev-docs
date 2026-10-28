@@ -6,7 +6,7 @@
 
 A 32-bit unsigned integer that specifies the number of sample numbers in the array that follows.
 
-#### Overview
+## Overview
 
 Following the entry count is a composition-offset table. The layout of the composition-offset table is as follows.
 

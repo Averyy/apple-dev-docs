@@ -23,11 +23,11 @@ func MIDIReceivedEventList(_ src: MIDIEndpointRef, _ evtlist: UnsafePointer<MIDI
 extern OSStatus MIDIReceivedEventList(MIDIEndpointRef src, const MIDIEventList *evtlist);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Drivers can call this function when receiving MIDI events from a source.
 

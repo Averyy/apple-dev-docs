@@ -20,7 +20,7 @@ nonisolated
 func roughness(_ ratio: Double) -> some Chart3DContent
 ```
 
-#### Discussion
+## Discussion
 
 Zero represents a smooth surface. One represents a completely rough surface.
 

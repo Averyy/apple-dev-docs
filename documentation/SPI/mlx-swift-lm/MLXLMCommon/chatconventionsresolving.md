@@ -17,7 +17,7 @@ Resolves a model’s chat conventions from identity signals the model instance c
 protocol ChatConventionsResolving : Sendable
 ```
 
-#### Overview
+## Overview
 
 [`ChatConventionsProviding`](./chatconventionsproviding.md) covers everything a model knows about itself. Some conventions are not model-intrinsic: DeepSeek-R1-Distill checkpoints report their *base* `model_type` (`qwen2` or `llama`) and are indistinguishable from plain Qwen2.5/Llama by the model alone, so they can only be recognized by repo id.
 

@@ -19,11 +19,11 @@ func SpeechManagerVersion() -> NumVersion
 NumVersion SpeechManagerVersion(void);
 ```
 
-#### Return Value
+## Return Value
 
 The version of theSpeech Synthesis Manager installed in the system, in the formatof the first 4 bytes of a `'vers'` resource. 
 
-#### Discussion
+## Discussion
 
 Use this call to determine whether your program can accessfeatures of the Speech Synthesis Manager that are included in someSpeech Synthesis Manager releases but not in earlier ones.
 

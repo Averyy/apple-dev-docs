@@ -20,7 +20,7 @@ Returns the value of `name`, or `nil` if the field is unauthored.
 func field(_ name: USDToken) -> USDValue?
 ```
 
-#### Return Value
+## Return Value
 
 The field’s value, or `nil` if unauthored.
 

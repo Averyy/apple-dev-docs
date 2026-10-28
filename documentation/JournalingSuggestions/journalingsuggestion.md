@@ -19,7 +19,7 @@ struct JournalingSuggestion
 
 - [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
 
-#### Overview
+## Overview
 
 When a person chooses a particular suggestion in the [`JournalingSuggestionsPicker`](./journalingsuggestionspicker.md), the system provides your app with more information about the event by passing an instance of this structure to your picker’s `onCompletion` handler.
 

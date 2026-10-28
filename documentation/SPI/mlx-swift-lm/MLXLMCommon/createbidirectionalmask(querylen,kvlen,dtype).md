@@ -17,11 +17,11 @@ Bidirectional attention mask: every query position attends to every kv position 
 func createBidirectionalMask(queryLen: Int, kvLen: Int, dtype: DType) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 `[queryLen, kvLen]` array of zeros.
 
-#### Discussion
+## Discussion
 
 Used by the MTP drafter, whose queries sit at a single constant position outside the target’s KV cache and need full visibility into the target’s shared K/V pool. Returned as an additive mask (`0` for attend, `-inf` for mask) compatible with `MLXFast.ScaledDotProductAttentionMaskMode.array`.
 

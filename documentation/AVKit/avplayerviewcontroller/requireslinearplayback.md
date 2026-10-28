@@ -28,7 +28,7 @@ var requiresLinearPlayback: Bool { get set }
 - [Adopting Picture in Picture in a standard player](../adopting-picture-in-picture-in-a-standard-player.md)
 - [Working with interstitial content](../working-with-interstitial-content.md)
 
-#### Discussion
+## Discussion
 
 If this value is `false` (the default), the controller’s user interface allows a user to fast-forward, scrub, or skip ahead to content later in the player’s presentation. To prevent the user from skipping content—for example, while presenting a legal notice or other mandatory interstitial content—set this property’s value to `true`.
 

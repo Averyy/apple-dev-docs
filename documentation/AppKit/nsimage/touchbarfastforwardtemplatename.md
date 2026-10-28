@@ -22,7 +22,7 @@ class let touchBarFastForwardTemplateName: String
 extern NSImageName const NSImageNameTouchBarFastForwardTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for fast forward](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825113@2x.png)
 

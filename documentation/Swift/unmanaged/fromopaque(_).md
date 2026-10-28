@@ -21,11 +21,11 @@ Unsafely turns an opaque C pointer into an unmanaged class reference.
 static func fromOpaque(_ value: UnsafeRawPointer) -> Unmanaged<Instance>
 ```
 
-#### Return Value
+## Return Value
 
 An unmanaged class reference to `value`.
 
-#### Discussion
+## Discussion
 
 This operation does not change reference counts.
 

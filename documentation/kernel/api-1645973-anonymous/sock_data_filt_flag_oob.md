@@ -13,7 +13,7 @@
 sock_data_filt_flag_oob = 1
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this data is out-of-band data.
 

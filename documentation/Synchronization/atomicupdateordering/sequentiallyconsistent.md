@@ -21,7 +21,7 @@ A sequentially consistent update performs an acquiring-and-releasing update and 
 static var sequentiallyConsistent: AtomicUpdateOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_seq_cst` in C++.
 

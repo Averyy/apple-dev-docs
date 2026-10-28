@@ -22,7 +22,7 @@ A conditional result from a result builder.
 struct BuilderConditional<TrueContent, FalseContent>
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. The result builders defined by the framework, like [`ChartContentBuilder`](./chartcontentbuilder.md) and [`AxisContentBuilder`](./axiscontentbuilder.md), use it as part of the building process.
 

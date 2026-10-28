@@ -19,7 +19,7 @@ nonisolated
 func translationTask(source: Locale.Language? = nil, target: Locale.Language? = nil, preferredStrategy: TranslationSession.Strategy, action: @escaping (TranslationSession) async -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This task provides an instance of [`TranslationSession`](../../Translation/translationsession.md) to use to perform translations.
 

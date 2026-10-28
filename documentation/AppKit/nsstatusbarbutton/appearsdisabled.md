@@ -19,7 +19,7 @@ var appearsDisabled: Bool { get set }
 @property BOOL appearsDisabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

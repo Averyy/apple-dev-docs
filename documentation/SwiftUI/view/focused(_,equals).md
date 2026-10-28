@@ -22,11 +22,11 @@ nonisolated
 func focused<Value>(_ binding: FocusState<Value>.Binding, equals value: Value) -> some View where Value : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 The modified view.
 
-#### Discussion
+## Discussion
 
 Use this modifier to cause the view to receive focus whenever the `binding` equals the `value`. Typically, you create an enumeration of fields that may receive focus, bind an instance of this enumeration, and assign its cases to focusable views.
 

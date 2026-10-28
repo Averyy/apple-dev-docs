@@ -25,7 +25,7 @@ var groupingSeparator: String { get }
 @property (copy, readonly) NSString * groupingSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 Example grouping separators include `","` and `" "`.
 

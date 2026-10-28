@@ -24,7 +24,7 @@ var connection: NEVPNConnection { get }
 @property (readonly) NEVPNConnection * connection;
 ```
 
-#### Discussion
+## Discussion
 
 The connection object is used to manually start and stop the VPN tunnel, and introspect the current status of the VPN tunnel. If the VPN configuration does not exist in the Network Extension preferences then the connection’s status is set to `NEVPNStatusInvalid`.
 

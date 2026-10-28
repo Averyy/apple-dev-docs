@@ -23,7 +23,7 @@ static let referenceURL: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerReferenceURL;
 ```
 
-#### Discussion
+## Discussion
 
 After the user edits a picked item—such as by cropping an image or trimming a movie—the URL continues to point to the original version of the picked item.
 

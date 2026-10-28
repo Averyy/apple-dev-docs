@@ -22,7 +22,7 @@ Returns the entity with coordinates clamped to the specified rectangle.
 func clamped(to rect: Self.Rect) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns An entity that’s clamped to the specified rectangle.
 

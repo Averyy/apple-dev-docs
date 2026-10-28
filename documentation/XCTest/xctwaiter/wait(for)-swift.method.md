@@ -16,11 +16,11 @@ func wait(for expectations: [XCTestExpectation]) -> XCTWaiter.Result
 - (XCTWaiterResult) waitForExpectations:(NSArray<XCTestExpectation *> *) expectations;
 ```
 
-#### Return Value
+## Return Value
 
 A value describing the outcome of waiting for `expectations`.
 
-#### Discussion
+## Discussion
 
 The following example demonstrates how to wait on exceptions:
 

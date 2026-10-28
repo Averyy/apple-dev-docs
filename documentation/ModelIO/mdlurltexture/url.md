@@ -24,7 +24,7 @@ var url: URL { get set }
 @property (nonatomic, copy) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Changing a texture’s URL loads data from the new URL, replacing the existing data.
 

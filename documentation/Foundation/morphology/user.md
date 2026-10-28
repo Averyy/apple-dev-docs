@@ -21,7 +21,7 @@ The addressing preferences of the current user.
 static let user: Morphology
 ```
 
-#### Discussion
+## Discussion
 
 If the user hasn’t specified preferences, or chose not to share them with this app, the [`isUnspecified`](./isunspecified.md) property is `true`.
 

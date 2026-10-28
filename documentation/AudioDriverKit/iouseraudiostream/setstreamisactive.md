@@ -15,11 +15,11 @@ Sets a Boolean value that indicates whether the stream is active and doing I/O.
 kern_return_t SetStreamIsActive(bool in_is_active);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the stream’s activity state sends a notification to the host to update the object state.
 

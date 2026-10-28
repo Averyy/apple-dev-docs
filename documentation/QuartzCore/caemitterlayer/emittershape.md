@@ -24,7 +24,7 @@ var emitterShape: CAEmitterLayerEmitterShape { get set }
 @property (copy) CAEmitterLayerEmitterShape emitterShape;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for emitterMode are shown in [Emitter Shape](../emitter-shape.md). The default value is [`point`](../caemitterlayeremittershape/point.md).
 

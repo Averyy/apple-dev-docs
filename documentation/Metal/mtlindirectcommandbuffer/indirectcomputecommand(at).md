@@ -19,7 +19,7 @@ Gets the compute command at the given index.
 func indirectComputeCommand(at Index: Int) -> any MTLIndirectComputeCommand
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only if the indirect command buffer contains compute commands.
 

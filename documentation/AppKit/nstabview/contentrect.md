@@ -19,7 +19,7 @@ var contentRect: NSRect { get }
 @property (readonly) NSRect contentRect;
 ```
 
-#### Discussion
+## Discussion
 
 This area does not include the space required for the tab view’s tabs or borders (if any).
 

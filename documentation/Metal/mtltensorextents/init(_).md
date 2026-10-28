@@ -20,7 +20,7 @@ Creates a tensor with extents from an array of dimension values.
 convenience init?(_ values: [Int])
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the array contains at most `MTL_TENSOR_MAX_RANK` (`16`) elements.
 

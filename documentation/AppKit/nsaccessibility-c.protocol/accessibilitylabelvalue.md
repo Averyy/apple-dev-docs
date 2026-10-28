@@ -15,7 +15,7 @@ The value of the label accessibility element.
 @property float accessibilityLabelValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a slider element’s labels.
 

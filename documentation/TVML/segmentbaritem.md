@@ -4,7 +4,7 @@
 
 Provides titles inside of a segment bar.
 
-#### Overview
+## Overview
 
 The `segmentBarItem` element is used to create groups inside of a `segmentBarHeader`. Users can move between `segmentBarItem` elements to display related information. Here’s an example that has a title and subtitle above a segment bar that contains one item.
 
@@ -20,11 +20,11 @@ The `segmentBarItem` element is used to create groups inside of a `segmentBarHea
 </segmentBarHeader>
 ```
 
-##### Subelements of segmentBarItem
+### Subelements of segmentBarItem
 
 - [title](./title.md)
 
-##### Elements that Use segmentBarItem
+### Elements that Use segmentBarItem
 
 - [segmentBarHeader](./segmentbarheader.md)
 

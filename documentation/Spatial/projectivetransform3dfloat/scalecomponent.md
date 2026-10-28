@@ -21,7 +21,7 @@ The projective transform’s scale component.
 var scaleComponent: Size3DFloat { get }
 ```
 
-#### Discussion
+## Discussion
 
 This function computes the scale from the first three rows of the transform matrix and ignores the fourth row.
 

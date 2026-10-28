@@ -19,11 +19,11 @@ func es_mute_process(_ client: OpaquePointer, _ audit_token: UnsafePointer<audit
 extern es_return_t es_mute_process(es_client_t *client, const audit_token_t *audit_token);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the mute request succeeded or failed with an error.
 
-#### Discussion
+## Discussion
 
 To mute a subset of events from a process, use [`es_mute_process_events(_:_:_:_:)`](./es_mute_process_events%28_,_,_,_%29.md).
 

@@ -20,7 +20,7 @@ static func exitCode(_ exitCode: CInt) -> ExitTest.Condition
 
 - [Exit testing](../../exit-testing.md)
 
-#### Discussion
+## Discussion
 
 The C programming language defines two standard exit codes, `EXIT_SUCCESS` and `EXIT_FAILURE`. Platforms may additionally define their own non-standard exit codes:
 

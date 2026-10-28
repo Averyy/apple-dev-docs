@@ -37,7 +37,7 @@ var currentParticipant: GKTurnBasedParticipant? { get }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 You can only update the match data when the current participant is the local player.
 

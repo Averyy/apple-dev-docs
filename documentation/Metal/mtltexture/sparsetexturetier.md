@@ -23,7 +23,7 @@ var sparseTextureTier: MTLTextureSparseTier { get }
 @property (readonly) MTLTextureSparseTier sparseTextureTier;
 ```
 
-#### Discussion
+## Discussion
 
 Query support tier for sparse textures.
 

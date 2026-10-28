@@ -19,7 +19,7 @@ var showsOnlyWhenAncestorFocused: Bool { get set }
 @property (nonatomic, assign) BOOL showsOnlyWhenAncestorFocused;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `FALSE` to display header and footer information while the lockup view is not in focus. Header and footer information is always shown when a lockup view is in focus, regardless of this property’s value.
 

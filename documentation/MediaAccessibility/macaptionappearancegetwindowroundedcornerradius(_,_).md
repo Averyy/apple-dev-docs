@@ -24,11 +24,11 @@ func MACaptionAppearanceGetWindowRoundedCornerRadius(_ domain: MACaptionAppearan
 extern CGFloat MACaptionAppearanceGetWindowRoundedCornerRadius(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 The system setting for the caption window’s corner radius.
 
-#### Discussion
+## Discussion
 
 The rounded corners of the caption window are not customizable within the Accessibility preferences and do not change based on text size.
 

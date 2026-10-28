@@ -17,7 +17,7 @@ The outcome for this event.
 let outcome: OCKAnyOutcome?
 ```
 
-#### Discussion
+## Discussion
 
 If the outcome is empty, no actions were recorded.
 

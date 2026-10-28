@@ -23,7 +23,7 @@ convenience init(title: String?, image: UIImage?, selectedImage: UIImage?)
 - (instancetype) initWithTitle:(NSString *) title image:(UIImage *) image selectedImage:(UIImage *) selectedImage;
 ```
 
-#### Discussion
+## Discussion
 
 Use `nil` for `title` or `image` if you don’t want to display that element.
 

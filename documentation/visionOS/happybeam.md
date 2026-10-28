@@ -10,7 +10,7 @@ Leverage a Full Space to create a fun game using ARKit.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 In visionOS, you can create fun, dynamic games and apps using several different frameworks to create new kinds of spatial experiences: RealityKit, ARKit, SwiftUI, and Group Activities. This sample introduces Happy Beam, a game where you and your friends can hop on a FaceTime call and play together.
 
@@ -18,7 +18,7 @@ You’ll learn the mechanics of the game where grumpy clouds float around in the
 
 [Video: A video that shows the Happy Beam app. Someone navigates the interface and plays the 3D game by making a heart gesture with their hands to project a beam that cheers up grumpy clouds that appear in the room. Upbeat music plays throughout and the clouds make a cheerful sound when they make contact with the beam.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/Happy-Beam-overview.mp4)
 
-#### Design the game interface in SwiftUI
+## Design the game interface in SwiftUI
 
 Most apps in visionOS launch as a window that opens different scene types depending on the needs of the app.
 
@@ -122,7 +122,7 @@ if gameModel.countDown == 0 {
 }
 ```
 
-#### Detect a heart gesture with ARKit
+## Detect a heart gesture with ARKit
 
 The Happy Beam app recognizes the central *heart-shaped hands* gesture using ARKit’s support for 3D hand tracking in visionOS. Using hand tracking requires a running session and authorization from the wearer. It uses the `NSHandsTrackingUsageDescription` user info key to explain to players why the app requests permission for hand tracking.
 
@@ -197,7 +197,7 @@ let heartMidpointWorldTransform = simd_matrix(
 return heartMidpointWorldTransform
 ```
 
-#### Support several kinds of input
+## Support several kinds of input
 
 To support accessibility features and general user preferences, include multiple kinds of input in an app that uses hand tracking as one form of input.
 
@@ -211,7 +211,7 @@ Happy Beam supports several kinds of input:
 
 ![A screenshot showing someone using a game controller to play Happy Beam.](https://developer.apple.com/tutorials/images/com.apple.visionOS/HB-controller@2x.png)
 
-#### Display 3D content with RealityKit
+## Display 3D content with RealityKit
 
 The 3D content in the app comes in the form of assets that you can export from Reality Composer Pro. You place each asset in the `RealityView` that represents your immersive space.
 
@@ -247,7 +247,7 @@ func placeCloud(start: Point3D, end: Point3D, speed: Double) async throws -> Ent
 }
 ```
 
-#### Add SharePlay support for multiplayer gaming experiences
+## Add SharePlay support for multiplayer gaming experiences
 
 You use the Group Activities framework in visionOS to support SharePlay during a FaceTime call. Happy Beam uses Group Activities to sync the score, active players list, and the position of each player’s projected beam.
 
@@ -293,9 +293,9 @@ func sendBeamPositionUpdate(_ pose: Pose3D) {
 }
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Incorporating real-world surroundings in an immersive experience](./incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
@@ -306,7 +306,7 @@ func sendBeamPositionUpdate(_ pose: Pose3D) {
 - [Diorama](./diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 
-###### Related articles
+#### Related articles
 
 - [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
@@ -317,7 +317,7 @@ func sendBeamPositionUpdate(_ pose: Pose3D) {
 - [Tracking preregistered images in 3D space](./tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
 
-###### Related videos
+#### Related videos
 
 - [Meet ARKit for spatial computing](https://developer.apple.com/videos/play/wwdc2023/10082)
   Discover how you can use ARKit’s tracking and scene understanding features to develop a whole new universe of immersive apps and games. Learn how visionOS and ARKit work together to help you create apps that understand a person’s surroundings — all while preserving privacy. Explore the latest updates to the ARKit API and follow along as we demonstrate how to take advantage of hand tracking and scene geometry in your apps.

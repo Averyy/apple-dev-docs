@@ -24,7 +24,7 @@ func calendars(for entityType: EKEntityType) -> Set<EKCalendar>
 - (NSSet<EKCalendar *> *) calendarsForEntityType:(EKEntityType) entityType;
 ```
 
-#### Return Value
+## Return Value
 
 The calendars belonging to this source that support the entity type.
 

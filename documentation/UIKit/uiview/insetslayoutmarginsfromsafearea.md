@@ -27,7 +27,7 @@ var insetsLayoutMarginsFromSafeArea: Bool { get set }
 
 - [Positioning content within layout margins](../positioning-content-within-layout-margins.md)
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), any margins that are outside the safe area are automatically modified to fall within the safe area boundary. The default value of this property is [`true`](../../Swift/true.md). Changing the value to [`false`](../../Swift/false.md) allows your margins to remain at their original locations, even when they are outside the safe area.
 

@@ -24,7 +24,7 @@ var visibleRect: CGRect { get }
 @property (readonly) CGRect visibleRect;
 ```
 
-#### Discussion
+## Discussion
 
 The visible region is the area not clipped by the containing scroll layer.
 

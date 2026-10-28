@@ -22,7 +22,7 @@ case unspecified
 INCancelRideIntentResponseCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Specifying this code during the confirmation or handling phases results in an error.
 

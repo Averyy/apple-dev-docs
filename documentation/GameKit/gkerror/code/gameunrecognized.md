@@ -25,7 +25,7 @@ case gameUnrecognized
 GKErrorGameUnrecognized
 ```
 
-#### Discussion
+## Discussion
 
 Ensure the app’s `bundleID` is correct.
 

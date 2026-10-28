@@ -20,7 +20,7 @@ Creates a color object using the specified opacity and grayscale values.
 + (UIColor *) colorWithWhite:(CGFloat) white alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object. The color information represented by this object is in the device gray colorspace.
 

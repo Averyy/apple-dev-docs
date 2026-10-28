@@ -26,7 +26,7 @@ let HMUserFailedAccessoriesKey: String
 extern NSString * const HMUserFailedAccessoriesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSArray`](../Foundation/nsarray.md) of [`NSDictionary`](../Foundation/nsdictionary.md) objects. Each dictionary contains the [`NSUUID`](../Foundation/nsuuid.md) of the accessory that failed to be added/removed and the value corresponding to the dictionary key is an [`NSError`](../Foundation/nserror.md) that provides more details on the underlying error for that accessory.
 

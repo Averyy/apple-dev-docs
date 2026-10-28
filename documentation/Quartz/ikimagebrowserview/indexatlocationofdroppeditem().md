@@ -19,11 +19,11 @@ func indexAtLocationOfDroppedItem() -> Int
 - (NSUInteger) indexAtLocationOfDroppedItem;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the cell where the drop operation occurred.
 
-#### Discussion
+## Discussion
 
 The returned index is valid until the next drop occurs.
 

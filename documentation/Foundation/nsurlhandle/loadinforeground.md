@@ -17,11 +17,11 @@ Loads the receiver’s data synchronously.
 - (NSData *) loadInForeground;
 ```
 
-#### Return Value
+## Return Value
 
 The loaded data.
 
-#### Discussion
+## Discussion
 
 Called by [`resourceData`](./resourcedata.md). Subclasses of NSURLHandle must override this method.
 

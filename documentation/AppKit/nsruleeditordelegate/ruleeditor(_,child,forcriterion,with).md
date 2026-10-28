@@ -21,11 +21,11 @@ func ruleEditor(_ editor: NSRuleEditor, child index: Int, forCriterion criterion
 - (id) ruleEditor:(NSRuleEditor *) editor child:(NSInteger) index forCriterion:(id) criterion withRowType:(NSRuleEditorRowType) rowType;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the requested child (or root) criterion. This object is used by the delegate to represent that position in the tree, and is passed as a parameter in subsequent calls to the delegate.
 
-#### Discussion
+## Discussion
 
 The delegate must implement this method.
 

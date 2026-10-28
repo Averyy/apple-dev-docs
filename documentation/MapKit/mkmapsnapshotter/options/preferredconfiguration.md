@@ -26,7 +26,7 @@ var preferredConfiguration: MKMapConfiguration { get set }
 @property (nonatomic, copy) MKMapConfiguration * preferredConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to one of the [`MKMapConfiguration`](../../mkmapconfiguration.md) subclasses to configure the map style to use when making map snapshots.
 

@@ -25,7 +25,7 @@ func CFSocketDisableCallBacks(_ s: CFSocket!, _ callBackTypes: CFOptionFlags)
 extern void CFSocketDisableCallBacks(CFSocketRef s, CFOptionFlags callBackTypes);
 ```
 
-#### Discussion
+## Discussion
 
 If you no longer want certain types of callbacks that you requested when creating `s`, you can use this function to temporarily disable the callback. Use [`CFSocketEnableCallBacks(_:_:)`](./cfsocketenablecallbacks%28_,_%29.md) to reenable a callback type.
 

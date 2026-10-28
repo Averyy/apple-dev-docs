@@ -20,7 +20,7 @@ protocol SBApplicationDelegate
 @protocol SBApplicationDelegate
 ```
 
-#### Overview
+## Overview
 
 You must set a delegate for the [`SBApplication`](./sbapplication.md) object using the [`delegate`](./sbapplication/delegate.md) method. If you do not set a delegate and have the delegate handle the error in some way, [`SBApplication`](./sbapplication.md) raises an exception.
 

@@ -5,7 +5,7 @@
 
 Design your app for alternative distribution from an alternative app marketplace.
 
-#### Overview
+## Overview
 
 To distribute your app from an alternative app marketplace, review and sign the necessary agreements. For your app to reside on an alternative app marketplace, it needs to run on one or more of the platforms that the target region supports. For information on the region-based agreements and platorms, see [Participating in alternative distribution for specific regions](./participating-in-alternative-distribution-for-specific-regions.md).
 
@@ -13,13 +13,13 @@ App Store Connect ignores apps for platforms that the region doesn’t support. 
 
 Apps on an alternative marketplace aren’t required to use MarketplaceKit, but you need to build your app with Xcode 14.1 or later and set the deployment target to greater than or equal to the earliest version of the OS that Xcode 14.1 supports. If your app does call MarketplaceKit methods, build your app with Xcode 15.3 or later.
 
-#### Add the required target property
+## Add the required target property
 
 If your app offers the purchase of digital goods or services, add the [`MKSellsDigitalGoods`](../BundleResources/information-property-list/mksellsdigitalgoods.md) property to your app’s target configuration in Xcode with a value of `YES`. Also, report each offered purchase to Apple using the [`TransactionReporting`](./transactionreporting.md) API. For more information, see [Reporting transactions for the Core Technology Commission](./reporting-transactions-for-core-technology-commission.md).
 
 If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](../BundleResources/information-property-list/mksellsdigitalgoods.md) property to your app’s target configuration with a value of `NO`.
 
-#### Customize your app depending on the installation source
+## Customize your app depending on the installation source
 
 If your app installs from more than one source, you can implement conditional code to do something different, such as displaying a different graphic, depending on the source from which a person installs your app. Use MarketplaceKit’s app distributor’s static [`current`](./appdistributor/current.md) property to determine the installation source:
 
@@ -42,7 +42,7 @@ API availability varies depending on the source, so your app needs to check the 
 
 In addition, for apps that aren’t marketplaces, use [`eligibilityRegion`](./appdistributor/eligibilityregion.md) to determine if an Apple Account is signed in that has a region eligible for transaction reporting.
 
-#### Enable your app to run on other platforms
+## Enable your app to run on other platforms
 
 Apps can run on platforms that MarketplaceKit doesn’t support, including macOS using Mac Catalyst or as-is on Apple silicon, and visionOS. To check the platform, use `#if canImport(MarketplaceKit)`, which returns `false` for Mac apps built with Mac Catalyst and visionOS. Avoid importing MarketplaceKit on unsupported platforms, as follows:
 
@@ -90,7 +90,7 @@ if ProcessInfo.processInfo.isiOSAppOnMac {
 }
 ```
 
-#### Establish a marketplace relationship and enable notifications
+## Establish a marketplace relationship and enable notifications
 
 To distribute your app on a particular alternative app marketplace, contact the marketplace directly and it provides you with a unique ID that you upload to App Store Connect. Apple verifies the ID with the marketplace’s public key to confirm your agreement, or relationship. For more information, see [Manage distribution on an alternative app marketplace](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/manage-distribution-on-an-alternative-app-marketplace).
 
@@ -98,7 +98,7 @@ When you’re ready to submit your app for review, choose the App Store review t
 
 When your app completes App Review or Notarization, your app becomes available for the marketplace to distribute. For distribution on an alternative app marketplace, App Store Connect provides your app in the form of an alternative distribution package after you’ve set up your marketplace relationship. The package contains instructions that the alternative app marketplace follows to assemble an installable version of your app. You can download the alternative distribution package and provide it to the marketplace manually or enable notifications in App Store Connect, which sends the package to the marketplace automatically. When notifications are on, App Store Connect keeps the marketplace up-to-date on the alternative distribution packages for all your latest app versions.
 
-#### Test your app during development
+## Test your app during development
 
 Your app can install from an alternative marketplace app only after passing [Notarization](https://developer.apple.com/support/dma-and-apps-in-the-eu/#notarization-for-ios-apps). To test your app beforehand, set the installation source for development builds. Setting the installation source enables you to simulate an installation from a marketplace in production.
 

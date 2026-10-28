@@ -16,7 +16,7 @@ Tells the system to present a sheet with controls for resuming or ending the fov
 @preconcurrency func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Add this view modifier to inform the system that it should display UI for resuming the foveated streaming session when the person pauses the session. Otherwise, build your own UI that allows the person to resume the session by calling the `FoveatedStreamingSession/resume()` function.
 

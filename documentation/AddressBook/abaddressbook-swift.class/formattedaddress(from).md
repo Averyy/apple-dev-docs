@@ -19,11 +19,11 @@ func formattedAddress(from address: [AnyHashable : Any]!) -> NSAttributedString!
 - (NSAttributedString *) formattedAddressFromDictionary:(NSDictionary *) address;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string containing the formatted address.
 
-#### Discussion
+## Discussion
 
 The string’s attributes match address dictionary keys, such as `kABAddressStreetKey`. Each attribute value contains the localized description of the key. (For example, the value of a Canadian `kABAddressZIPKey` field would be “Postal Code”, while the value of a French one would be “Code Postal”.)
 

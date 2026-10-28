@@ -23,7 +23,7 @@ var kDNSServiceType_NSEC: Int { get }
 kDNSServiceType_NSEC
 ```
 
-#### Discussion
+## Discussion
 
 Denial of Existence
 

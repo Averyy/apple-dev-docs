@@ -5,13 +5,13 @@
 
 Connect to out-of-process audio units using the Xcode debugger.
 
-#### Overview
+## Overview
 
 Beginning with macOS 11, the system loads audio units into a separate process that depends on the architecture or host preference. This increases stability and security by isolating audio units from their host app, and allows loading x86 audio units into an Apple silicon host app.
 
 Attaching to system processes requires disabling system integrity protection in macOS before debugging. For more information, see [Disabling and Enabling System Integrity Protection](../Security/disabling-and-enabling-system-integrity-protection.md).
 
-##### Attach to the Hosting Service
+### Attach to the Hosting Service
 
 After disabling system integrity protection, follow these steps to debug an out-of-process audio unit in Xcode:
 
@@ -25,7 +25,7 @@ The process name to use depends on the host, as well as the architectures of the
 
 > ⚠️ **Warning**:  Leaving system integrity protection in a disabled state makes your computer vulnerable to malicious code, so enable it when you finish debugging your audio units.
 
-##### Troubleshoot Common Issues for Audio Units
+### Troubleshoot Common Issues for Audio Units
 
 Debugging is generally a seamless process, but if you encounter issues, consider the following:
 

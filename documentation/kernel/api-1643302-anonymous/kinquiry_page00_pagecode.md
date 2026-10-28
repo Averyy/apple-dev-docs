@@ -13,7 +13,7 @@
 kINQUIRY_Page00_PageCode = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Page Code 00h.
 

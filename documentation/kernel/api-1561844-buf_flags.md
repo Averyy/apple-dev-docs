@@ -15,11 +15,11 @@ Get flags set on a buffer.
 int32_t buf_flags(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 flags.
 
-#### Discussion
+## Discussion
 
 Valid flags are B_LOCKED/B_NOCACHE/B_ASYNC/B_READ/B_WRITE/B_PAGEIO/B_FUA.
 

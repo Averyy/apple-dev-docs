@@ -23,7 +23,7 @@ optional func increaseSize(_ sender: Any?)
 - (void) increaseSize:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to increase the size of the selected text or other content. You are responsible for defining the magnitude of the change.
 

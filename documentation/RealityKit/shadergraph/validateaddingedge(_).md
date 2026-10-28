@@ -18,7 +18,7 @@ Validates that an edge can be added to the graph without adding it, throwing a d
 final func validateAddingEdge(_ edge: ShaderGraph.Edge) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use [`canAddEdge(_:)`](./canaddedge%28_%29.md) instead when only a yes/no answer is needed.
 

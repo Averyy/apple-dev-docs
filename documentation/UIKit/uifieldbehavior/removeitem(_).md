@@ -23,7 +23,7 @@ func removeItem(_ item: any UIDynamicItem)
 - (void) removeItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove a field from a dynamic item in your interface. This method removes the specified dynamic item from the field behavior’s list of dynamic item.
 

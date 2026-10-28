@@ -24,7 +24,7 @@ var motionStartTime: Float
 float motionStartTime;
 ```
 
-#### Discussion
+## Discussion
 
 The [`motionTransformsStartIndex`](./motiontransformsstartindex.md) and [`motionTransformsCount`](./motiontransformscount.md) properties represent the key-frame motion data.
 

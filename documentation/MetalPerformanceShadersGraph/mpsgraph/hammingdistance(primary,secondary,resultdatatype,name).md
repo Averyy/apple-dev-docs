@@ -24,11 +24,11 @@ func HammingDistance(primary primaryTensor: MPSGraphTensor, secondary secondaryT
 - (MPSGraphTensor *) HammingDistanceWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor resultDataType:(MPSDataType) resultDataType name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid tensor containing the hamming distance between the input tensors.
 
-#### Discussion
+## Discussion
 
 The hamming distance is computed between 2 sets of vectors and the last dimension(s) of each input tensor is considered a vector.
 

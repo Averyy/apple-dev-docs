@@ -23,11 +23,11 @@ init(rootViewController: UIViewController)
 - (instancetype) initWithRootViewController:(UIViewController *) rootViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized navigation controller object or `nil` if there was a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for initializing the receiver and pushing a root view controller onto the navigation stack. Every navigation stack must have at least one view controller to act as the root.
 

@@ -25,7 +25,7 @@ static let boneIndices: SCNGeometrySource.Semantic
 extern SCNGeometrySourceSemantic const SCNGeometrySourceSemanticBoneIndices;
 ```
 
-#### Discussion
+## Discussion
 
 For a geometry source, this semantic identifies data containing skeletal animation data for each vertex in the geometry. SceneKit uses this information to determine which bone nodes in the skeleton affect the behavior of each vertex.
 

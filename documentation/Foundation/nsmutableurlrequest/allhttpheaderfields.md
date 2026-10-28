@@ -25,7 +25,7 @@ var allHTTPHeaderFields: [String : String]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,NSString *> * allHTTPHeaderFields;
 ```
 
-#### Discussion
+## Discussion
 
 Certain header fields are reserved (see [Reserved HTTP headers](../nsurlrequest.md#Reserved-HTTP-headers)). Do not use this property to set such headers.
 

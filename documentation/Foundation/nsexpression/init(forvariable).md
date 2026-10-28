@@ -25,7 +25,7 @@ init(forVariable string: String)
 + (NSExpression *) expressionForVariable:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A new expression that extracts from the variable bindings dictionary the value for the key `string`.
 

@@ -25,7 +25,7 @@ static let play: SCNSceneSource.AnimationImportPolicy
 extern SCNSceneSourceAnimationImportPolicy const SCNSceneSourceAnimationImportPolicyPlay;
 ```
 
-#### Discussion
+## Discussion
 
 Using this policy is equivalent to manually loading each animation, setting its [`repeatCount`](../../../QuartzCore/camediatiming/repeatcount.md) property to `1`, and adding it to the appropriate element of the scene.
 

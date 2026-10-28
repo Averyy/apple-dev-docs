@@ -19,7 +19,7 @@ enum PaginationMode
 enum NSPrintingPaginationMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by [`horizontalPagination`](./horizontalpagination.md) and [`verticalPagination`](./verticalpagination.md).
 

@@ -26,11 +26,11 @@ func AUGraphCountNodeInteractions(_ inGraph: AUGraph, _ inNode: AUNode, _ outNum
 extern OSStatus AUGraphCountNodeInteractions(AUGraph inGraph, AUNode inNode, UInt32 *outNumInteractions);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The number of node interactions currently being managed by the graph for the specified node.
 

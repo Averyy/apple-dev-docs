@@ -32,7 +32,7 @@ class MKMapView
 @interface MKMapView : NSView
 ```
 
-#### Overview
+## Overview
 
 Use this class as-is to display map information and to manipulate the map contents from your app. The map view supports several display styles, including the [`MKStandardMapConfiguration`](./mkstandardmapconfiguration.md) that provides rich 2D and 3D presentations, an [`MKHybridMapConfiguration`](./mkhybridmapconfiguration.md) that provides a hybrid satellite map presentation, and [`MKImageryMapConfiguration`](./mkimagerymapconfiguration.md) that provides an imagery-based map presentation. Each of these map configurations support customization properties that refine specific elements of the map’s presentation.
 
@@ -46,7 +46,7 @@ Don’t subclass the `MKMapView` class itself. You can get information about the
 
 In macOS 10.14 and later, you can apply a light or dark appearance to your maps by modifying the [`appearance`](../AppKit/nsappearancecustomization/appearance.md) property of your map view (or one of its ancestor views). Even if you specify a custom appearance, users can use the Maps app to force all maps to adopt a light appearance. Use the map view’s [`effectiveAppearance`](../AppKit/nsappearancecustomization/effectiveappearance.md) property to determine the actual appearance of your map. For information about how to set view appearances, see [Choosing a Specific Appearance for Your macOS App](../AppKit/choosing-a-specific-appearance-for-your-macos-app.md).
 
-##### Annotating the map
+### Annotating the map
 
 The `MKMapView` class supports the ability to annotate the map with custom information. Because a map may have large numbers of annotations, map views differentiate between the annotation objects MapKit uses to manage the annotation data and the view objects for presenting that data on the map.
 
@@ -58,7 +58,7 @@ Because the map view needs annotation views only when they’re onscreen, the `M
 
 When configuring your map interface, be sure to add all of your annotation objects right away. The map view uses the coordinate data in each annotation object to determine when the corresponding annotation view needs to appear onscreen. When an annotation moves onscreen, the map view asks its delegate to create a corresponding annotation view. If your app has different types of annotations, it can define different annotation view classes to represent each type.
 
-##### Adding overlays to the map
+### Adding overlays to the map
 
 You can use overlays to layer content over a wide portion of the map. An *overlay* object is any object that conforms to the [`MKOverlay`](./mkoverlay.md) protocol. An overlay object is a data object that contains the points that specify the shape and size of the overlay and its location on the map. Overlays can represent shapes like circles, rectangles, multisegment lines, and simple or complex polygons. You can also define your own custom overlays to represent other shapes.
 
@@ -66,7 +66,7 @@ You can use overlays to layer content over a wide portion of the map. An *overla
 
 When configuring your map interface, you can add overlay objects at any time. The map view uses the data in each overlay object to determine when the corresponding overlay view needs to appear onscreen. When an overlay moves onscreen, the map view asks its delegate to create a corresponding overlay renderer.
 
-##### Adding points of interest to the map
+### Adding points of interest to the map
 
 In iOS16 and macOS 13, and later, you can configure the map view to allow people to interact with a wide variety of points of interest (POIs) the map displays. These are instances of the [`MKMapFeatureAnnotation`](./mkmapfeatureannotation.md) class, and cover a wide variety of elements visible on the map, including:
 
@@ -78,7 +78,7 @@ You can control which features a person can interact with by configuring one of 
 
 When a person interacts with a specific POI, the framework calls your delegate object with one of the [`MKMapViewDelegate`](./mkmapviewdelegate.md) protocol methods, depending on whether the person selects or deselects a specific POI. These methods give your app a chance to respond to the selection or deselection of an element. Depending on the kind of element, you can decide whether you want to customize the display characteristics in the case of a POI, or in the case of territories or geographic map features, you can create custom interactions to display information.
 
-##### Adding Look Around views to the map
+### Adding Look Around views to the map
 
 iOS16 and macOS 13, and later, support the inclusion of a Look Around view within the map view. Look Around allows people to explore the environment at street level. You request a Look Around view by creating an [`MKLookAroundSceneRequest`](./mklookaroundscenerequest.md) with either an [`MKMapItem`](./mkmapitem.md) or a [`CLLocationCoordinate2D`](../CoreLocation/cllocationcoordinate2d.md), and if there’s Look Around imagery available for the specified location, the framework returns an [`MKLookAroundScene`](./mklookaroundscene.md) for you to display using an [`MKLookAroundViewController`](./mklookaroundviewcontroller.md).
 

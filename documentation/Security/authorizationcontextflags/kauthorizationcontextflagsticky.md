@@ -21,7 +21,7 @@ This data persists through an interrupted or failed evaluation.
 kAuthorizationContextFlagSticky
 ```
 
-#### Discussion
+## Discussion
 
 This flag can be used to propagate an error condition from a downstream plug-in to an upstream one. It is not remembered in the authorization reference (see [Authorization Services](../authorization-services.md)).
 

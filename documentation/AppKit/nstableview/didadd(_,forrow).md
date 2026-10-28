@@ -19,7 +19,7 @@ func didAdd(_ rowView: NSTableRowView, forRow row: Int)
 - (void) didAddRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 The subclass can implement this method to be alerted when `rowView` has been added to the table. At this point, the subclass can choose to add in extra views, or modify any properties of `rowView`. Subclasses must be sure to call super.
 

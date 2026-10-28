@@ -19,7 +19,7 @@ var numberOfRows: Int { get }
 @property (readonly) NSInteger numberOfRows;
 ```
 
-#### Discussion
+## Discussion
 
 Typically you should not ask the table view how many rows it has; instead, interrogate the table view’s data source.
 

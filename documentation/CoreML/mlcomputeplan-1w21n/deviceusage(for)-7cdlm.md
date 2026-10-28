@@ -27,7 +27,7 @@ func deviceUsage(for operation: MLModelStructure.Program.Operation) -> MLCompute
 func deviceUsage(for layer: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?
 ```
 
-#### Return Value
+## Return Value
 
 The anticipated compute devices that would be used for executing the layer or `nil` if the usage couldn’t be determined.
 

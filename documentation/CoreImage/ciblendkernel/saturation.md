@@ -24,7 +24,7 @@ class var saturation: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * saturation;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the saturation blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926876@2x.png)
 

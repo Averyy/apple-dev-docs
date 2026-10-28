@@ -15,7 +15,7 @@ Allows your application to determine if the list of registered components has ch
 SInt32 GetComponentListModSeed(void);
 ```
 
-#### Return Value
+## Return Value
 
 The component registration seed number. Each time the Component Manager registers or unregisters a component it generates a new, unique seed number. By comparing the return value to values previously returned by this function, you can determine whether the list has changed. Your application may use this information to rebuild its internal component lists or to trigger other activity that is necessary whenever new components are available. 
 

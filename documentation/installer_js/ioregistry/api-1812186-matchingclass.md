@@ -11,7 +11,7 @@ Returns the IOKit objects of a given class.
 matchingClass(className, [servicePlane])
 ```
 
-#### Return Value
+## Return Value
 
 An array of IOKit object dictionaries.
 

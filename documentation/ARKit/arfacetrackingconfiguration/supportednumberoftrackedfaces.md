@@ -20,7 +20,7 @@ class var supportedNumberOfTrackedFaces: Int { get }
 @property (class, nonatomic, readonly) NSInteger supportedNumberOfTrackedFaces;
 ```
 
-#### Discussion
+## Discussion
 
 Do not exceed this value when you set [`maximumNumberOfTrackedFaces`](./maximumnumberoftrackedfaces.md).
 

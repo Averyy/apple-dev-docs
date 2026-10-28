@@ -19,7 +19,7 @@ var minValue: Double { get set }
 @property double minValue;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a determinate progress indicator goes from `0.0` to `100.0`, so the default value of this property is `0.0`.
 

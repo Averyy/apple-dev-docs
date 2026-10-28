@@ -24,7 +24,7 @@ var groups: [String : [MTL4FunctionDescriptor]]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSDictionary<NSString *,NSArray<MTL4FunctionDescriptor *> *> * groups;
 ```
 
-#### Discussion
+## Discussion
 
 Function groups help the compiler reduce the number of candidate functions it needs to evaluate for shader function calls, potentially increasing runtime performance.
 

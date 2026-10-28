@@ -25,7 +25,7 @@ func CFSetGetCount(_ theSet: CFSet!) -> CFIndex
 extern CFIndex CFSetGetCount(CFSetRef theSet);
 ```
 
-#### Return Value
+## Return Value
 
 The number of values in `theSet`.
 

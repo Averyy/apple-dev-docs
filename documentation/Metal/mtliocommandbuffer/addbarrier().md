@@ -25,7 +25,7 @@ func addBarrier()
 - (void) addBarrier;
 ```
 
-#### Discussion
+## Discussion
 
 The method encodes a barrier that starts any subsequent commands only after all the previously encoded commands have completed.
 

@@ -20,7 +20,7 @@ A blend tree node that’s internal only or sources from an invalid definition.
 struct BlendTreeInvalidNode
 ```
 
-#### Overview
+## Overview
 
 This structure adopts [`BlendTreeNode`](./blendtreenode.md) and adds the ability to detect a node that contains neither an animation nor any branches in the blend tree.
 

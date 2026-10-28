@@ -23,11 +23,11 @@ func MIDIGetNumberOfExternalDevices() -> Int
 extern ItemCount MIDIGetNumberOfExternalDevices();
 ```
 
-#### Return Value
+## Return Value
 
 The number of external devices in the system, or 0 if an error occurred.
 
-#### Discussion
+## Discussion
 
 External MIDI devices connect to driver endpoints using a standard MIDI cable. Their presence is optional only when a UI (such as Audio MIDI Setup) adds them.
 

@@ -19,11 +19,11 @@ func PMPrinterCopyPresets(_ printer: PMPrinter, _ presetList: UnsafeMutablePoint
 OSStatus PMPrinterCopyPresets(PMPrinter printer, CFArrayRef  _Nullable *presetList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 A printer may have associated with it a list of preset settings. Each setting is optimized for a particular printing situation. This function returns all of the presets for a given printer. To obtain more information about a particular preset, you can use the function [`PMPresetGetAttributes(_:_:)`](./api-1459042-pmpresetgetattributes.md). To create a print settings object that contains the settings of a preset, call [`PMPresetCreatePrintSettings(_:_:_:)`](./api-1463414-pmpresetcreateprintsettings.md).
 

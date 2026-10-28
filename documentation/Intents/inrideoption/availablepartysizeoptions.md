@@ -35,7 +35,7 @@ var availablePartySizeOptions: [INRidePartySizeOption]? { get set }
 
 - [Generating a List of Ride Options](../../SiriKit/generating-a-list-of-ride-options.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the carrying capacities for vehicles of this type and any capacity-based pricing information.
 

@@ -19,7 +19,7 @@ var matchRemotePrefix: Int { get }
 @property (readonly) NSUInteger matchRemotePrefix;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) for rules where [`matchRemoteEndpoint`](./matchremoteendpoint.md) doesn’t contain an IP address.
 

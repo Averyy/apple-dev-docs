@@ -24,7 +24,7 @@ case internalError
 MTLBinaryArchiveErrorInternalError
 ```
 
-#### Discussion
+## Discussion
 
 You can report the scenario that generated this error code with [Feedback Assistant](https://feedbackassistant.apple.com).
 

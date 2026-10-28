@@ -21,7 +21,7 @@ var transactionIdentifier: String { get }
 @property (nonatomic, strong, readonly) NSString * transactionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system generates this value when you call [`setPostbacks(_:)`](../skadtestsession/setpostbacks%28_%29.md). This value is an empty string otherwise.
 

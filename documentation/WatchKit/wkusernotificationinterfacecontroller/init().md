@@ -19,11 +19,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized interface controller.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize your notification interface controller and prepare it for display. You must call the `super` implementation of this method first. That method creates the interface objects for the outlets declared in your class and referencing items in your storyboard.
 

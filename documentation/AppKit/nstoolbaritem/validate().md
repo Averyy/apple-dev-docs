@@ -22,7 +22,7 @@ func validate()
 - (void) validate;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you don’t call this method directly. When automatic validation is enabled, the toolbar calls this method to validate the item. For standard toolbar items — that is, items without a custom view — the validation process checks whether the item can perform its associated action successfully and enables or disables the item accordingly. The process also validates the associated menu item. When someone switches to another app or window, the automatic validation process disables the item automatically.
 

@@ -22,7 +22,7 @@ Creates a new instance from the given integer, if it can be represented exactly.
 init?<T>(exactly source: T) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 If the value passed as `source` is not representable exactly, the result is `nil`. In the following example, the constant `x` is successfully created from a value of `100`, while the attempt to initialize the constant `y` from `1_000` fails because the `Int8` type can represent `127` at maximum:
 

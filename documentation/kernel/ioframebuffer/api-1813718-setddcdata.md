@@ -13,7 +13,7 @@ virtual void setDDCData(
  UInt32value );
 ```
 
-#### Overview
+## Overview
 
 Framebuffers making use of the IOFramebuffer::doI2CRequest() software implementation of I2C should implement this method to set the state of the I2C data line on the given bus. Otherwise may be unimplemented.
 

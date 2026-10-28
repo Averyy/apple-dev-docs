@@ -14,7 +14,7 @@
 #define kIOPropertySCSIParallelSignalingTypeLVDKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Low Voltage Differential for the key kIOPropertySCSIParallelSignalingTypeKey. If the signaling type of the port is Low Voltage Differential, this key should be used.
 

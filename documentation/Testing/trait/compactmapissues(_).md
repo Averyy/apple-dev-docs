@@ -18,11 +18,11 @@ static func compactMapIssues(_ transform: @escaping @Sendable (Issue) -> Issue?)
 
 Available when `Self` is `IssueHandlingTrait`.
 
-#### Return Value
+## Return Value
 
 An instance of [`IssueHandlingTrait`](../issuehandlingtrait.md) that transforms issues.
 
-#### Discussion
+## Discussion
 
 The `transform` closure is called synchronously each time an issue is recorded by the test this trait is applied to. The closure is passed the recorded issue, and if it returns a non-`nil` value, that will be recorded instead of the original. Otherwise, if the closure returns `nil`, the issue is suppressed and will not be included in the results.
 

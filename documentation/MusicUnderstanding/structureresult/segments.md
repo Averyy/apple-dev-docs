@@ -21,7 +21,7 @@ The time range of each segment in the song.
 let segments: [CMTimeRange]
 ```
 
-#### Discussion
+## Discussion
 
 A segment is a collection of phrases that form a distinct part of a song.
 

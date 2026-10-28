@@ -25,7 +25,7 @@ var localizedName: String? { get }
 @property (copy, readonly, nullable) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 When displaying different versions of a file to the user, you should present this string to the user instead of the version’s URL.
 

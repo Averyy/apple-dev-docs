@@ -19,7 +19,7 @@ case replaceFile
 NSWorkspaceAuthorizationTypeReplaceFile
 ```
 
-#### Discussion
+## Discussion
 
 Signifies that the user has granted authorization for [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](../../../Foundation/filemanager/replaceitem%28at,withitemat,backupitemname,options,resultingitemurl%29.md). When you use a [`FileManager`](../../../Foundation/filemanager.md) with this authorization, the file manager ignores the `backupItemName` and `options` parameters.
 

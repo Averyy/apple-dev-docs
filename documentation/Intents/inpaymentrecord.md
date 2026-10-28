@@ -23,7 +23,7 @@ class INPaymentRecord
 @interface INPaymentRecord : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INPaymentRecord`](./inpaymentrecord.md) object contains the details of a financial transaction that your app is facilitating. You create instances of this class when handling payment-related intents. The payment record contains the users involved in the transaction, the amount of money to transfer, and the current state of the transaction. Siri conveys this detailed information to the user at appropriate times.
 

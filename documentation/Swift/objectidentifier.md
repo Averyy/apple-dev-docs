@@ -22,7 +22,7 @@ A unique identifier for a class instance, actor instance, or metatype.
 struct ObjectIdentifier
 ```
 
-#### Overview
+## Overview
 
 This unique identifier is valid for comparisons only during the lifetime of the instance.
 

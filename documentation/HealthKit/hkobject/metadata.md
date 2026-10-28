@@ -24,7 +24,7 @@ var metadata: [String : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 The metadata dictionary contains extra information describing this object. The dictionary’s keys are all [`NSString`](../../Foundation/nsstring.md) objects. The values can be [`NSString`](../../Foundation/nsstring.md) objects, [`NSNumber`](../../Foundation/nsnumber.md) objects or [`NSDate`](../../Foundation/nsdate.md) objects. For a complete list of predefined metadata keys, see [Metadata Keys](../metadata-keys.md).
 

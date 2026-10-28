@@ -21,7 +21,7 @@ An array of proprietary or non-uniform representations of the place, such as rep
 let supportingRepresentations: [PlaceDescriptor.SupportingPlaceRepresentation]
 ```
 
-#### Discussion
+## Discussion
 
 This is an array of possible mapping service providers you can use in place of, or in addition to MapKit’s representations.
 

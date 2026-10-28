@@ -23,7 +23,7 @@ optional func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didHypothes
 - (void) speechRecognitionTask:(SFSpeechRecognitionTask *) task didHypothesizeTranscription:(SFTranscription *) transcription;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called for all recognitions, including partial recognitions.
 

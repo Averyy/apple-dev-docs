@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar has an emoji presentation, whether
 var isEmoji: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is true for scalars that are rendered as emoji by default and also for scalars that have a non-default emoji rendering when followed by U+FE0F VARIATION SELECTOR-16. This includes some scalars that are not typically considered to be emoji:
 

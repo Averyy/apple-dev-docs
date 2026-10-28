@@ -23,11 +23,11 @@ var remainingCapacity: Int { get }
 @property (nonatomic, readonly) NSInteger remainingCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 0 if Pro Video Storage is not configured or -1 if there was a failure while extracting information from it.
 
-#### Discussion
+## Discussion
 
 The remaining capacity decreases as recordings are captured.
 

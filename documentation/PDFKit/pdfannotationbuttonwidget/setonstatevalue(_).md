@@ -19,7 +19,7 @@ func setOnStateValue(_ name: String!)
 - (void) setOnStateValue:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 Required for controls of types [`PDFAnnotationButtonWidget`](../pdfannotationbuttonwidget.md) and [`PDFAnnotationButtonWidget`](../pdfannotationbuttonwidget.md), the value of `name` describes the on state of the control (the off state is always labeled “Off”). Although “On” is an acceptable string for the on state of a single checkbox, a group of two or more radio buttons should have a unique string associated with each control.
 

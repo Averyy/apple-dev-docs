@@ -25,7 +25,7 @@ let MPMediaItemPropertyPodcastTitle: String
 extern NSString * const MPMediaItemPropertyPodcastTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The property contains the title of a podcast, such as “This Martian Drudgery”, as opposed to the title of an individual episode of a podcast such as “Episode 12: Another Cold Day At The Pole” (which you specify using the [`MPMediaItemPropertyTitle`](./mpmediaitempropertytitle.md) property). Value is an `NSString` object.
 

@@ -20,7 +20,7 @@ var currentParagraphStyle: NSParagraphStyle? { get }
 @property (copy, readonly, nullable) NSParagraphStyle * currentParagraphStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The paragraph style object for the text being typeset. This value is valid only while the typesetter is performing layout.
 

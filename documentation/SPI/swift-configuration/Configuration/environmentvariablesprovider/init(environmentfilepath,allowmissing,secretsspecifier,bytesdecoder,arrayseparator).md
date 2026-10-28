@@ -24,7 +24,7 @@ Creates a new provider that reads from an environment file.
 init(environmentFilePath: FilePath, allowMissing: Bool = false, secretsSpecifier: SecretsSpecifier<String, String> = .none, bytesDecoder: some ConfigBytesFromStringDecoder = .base64, arraySeparator: Character = ",") async throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer loads environment variables from an `.env` file at the specified path. The file should contain key-value pairs in the format `KEY=value`, one per line. Comments (lines starting with `#`) and empty lines are ignored.
 

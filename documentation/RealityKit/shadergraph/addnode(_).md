@@ -19,11 +19,11 @@ Adds a node to the graph and returns its name.
 final func addNode(_ node: ShaderGraph.Node) throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 The name used to reference this node in subsequent calls.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the node is invalid for this graph.
 

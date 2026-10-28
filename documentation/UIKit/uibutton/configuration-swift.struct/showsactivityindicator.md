@@ -19,7 +19,7 @@ A Boolean value that determines whether the button displays an activity indicato
 var showsActivityIndicator: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The button respects the [`imagePlacement`](./imageplacement.md) property when positioning the activity indicator.
 

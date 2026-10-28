@@ -12,11 +12,11 @@ static OSSet * withCapacity(
  unsigned intcapacity);
 ```
 
-#### Return Value
+## Return Value
 
 An empty instance of OSSet with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `capacity` must be nonzero. The new OSSet will grow as needed to accommodate more key/object pairs (*unlike*[CFMutableSet](../../CoreFoundation/cfmutableset.md), for which the initial capacity is a hard limit).
 

@@ -25,11 +25,11 @@ func CFStringTokenizerAdvanceToNextToken(_ tokenizer: CFStringTokenizer!) -> CFS
 extern CFStringTokenizerTokenType CFStringTokenizerAdvanceToNextToken(CFStringTokenizerRef tokenizer);
 ```
 
-#### Return Value
+## Return Value
 
 The type of the token if the tokenizer succeeded in finding a token and setting it as current token. Returns `kCFStringTokenizerTokenNone` if the tokenizer failed to find a token. For possible values, see [`CFStringTokenizerTokenType`](./cfstringtokenizertokentype.md).
 
-#### Discussion
+## Discussion
 
 If there is no preceding call to [`CFStringTokenizerGoToTokenAtIndex(_:_:)`](./cfstringtokenizergototokenatindex%28_,_%29.md) or [`CFStringTokenizerAdvanceToNextToken(_:)`](./cfstringtokenizeradvancetonexttoken%28_%29.md), the function finds the first token in the range specified by the [`CFStringTokenizerCreate(_:_:_:_:_:)`](./cfstringtokenizercreate%28_,_,_,_,_%29.md). If there is a preceding, successful, call to [`CFStringTokenizerGoToTokenAtIndex(_:_:)`](./cfstringtokenizergototokenatindex%28_,_%29.md) or [`CFStringTokenizerAdvanceToNextToken(_:)`](./cfstringtokenizeradvancetonexttoken%28_%29.md) and there is a current token, proceeds to the next token. If a token is found, it is set as the current token and the function returns `true`; otherwise the current token is invalidated and the function returns `false`.
 

@@ -19,7 +19,7 @@ var magnification: CGFloat { get set }
 @property CGFloat magnification;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the current magnification in effect for the gesture. Add the value of this property to `1.0` to get the scale factor to apply to your content.
 

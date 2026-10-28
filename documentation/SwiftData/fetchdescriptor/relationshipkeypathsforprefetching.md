@@ -22,7 +22,7 @@ The key paths that identify any related models to include as part of the fetch.
 var relationshipKeyPathsForPrefetching: [PartialKeyPath<T>]
 ```
 
-#### Discussion
+## Discussion
 
 Prefetching enables SwiftData to obtain any related models in a single fetch, instead of incurring subsequent access to the persistent storage as you access each related model.
 

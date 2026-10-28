@@ -25,7 +25,7 @@ func NSLogv(_ format: String, _ args: CVaListPointer)
 extern void NSLogv(NSString *format, va_list args);
 ```
 
-#### Discussion
+## Discussion
 
 Logs an error message to the Apple System Log facility (see `man 3 asl`). If the `STDERR_FILENO` file descriptor has been redirected away from the default or is going to a tty, it will also be written there. If you want to direct output elsewhere, you need to use a custom logging facility.
 

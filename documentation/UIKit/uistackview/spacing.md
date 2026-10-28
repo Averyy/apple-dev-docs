@@ -23,7 +23,7 @@ var spacing: CGFloat { get set }
 @property (nonatomic) CGFloat spacing;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines a strict spacing between arranged views for the [`UIStackView.Distribution.fillProportionally`](./distribution-swift.enum/fillproportionally.md) distributions. It represents the minimum spacing for the [`UIStackView.Distribution.equalSpacing`](./distribution-swift.enum/equalspacing.md) and [`UIStackView.Distribution.equalCentering`](./distribution-swift.enum/equalcentering.md) distributions. Use negative values to allow overlap. The default value is `0.0`.
 

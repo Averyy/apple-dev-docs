@@ -20,7 +20,7 @@ Recommended pixel buffer attributes for optimal performance when using CMSampleB
 var recommendedPixelBufferAttributes: CVPixelBufferAttributes { get }
 ```
 
-#### Discussion
+## Discussion
 
 The returned attributes are not sufficient for pixel buffer creation. Use `CVPixelBufferAttributes/init?(merging:)` to merge these with other required attributes.
 

@@ -1,0 +1,21 @@
+# children
+
+**Framework**: TVMLKit JS  
+**Kind**: instp  
+**Role**: Instance Property
+
+**Availability**:
+- tvOS 13.0+
+- Safari Desktop 10.0+
+- Safari Mobile 10.0+
+
+## Declaration
+
+```
+readonly attribute HTMLCollection children;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tvmljs/parentnode/1629998-children)*

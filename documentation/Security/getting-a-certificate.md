@@ -5,7 +5,7 @@
 
 Obtain a certificate from an identity, from DER-encoded data, or from the keychain.
 
-#### Overview
+## Overview
 
 You use functions of the certificate, key, and trust services API to manage and manipulate certificates. The API defines the [`SecCertificate`](./seccertificate.md) opaque type to hold certificate objects. You typically use such an object to indicate the certificate to use for a particular cryptographic operation, such as evaluating trust. How you get a certificate reference depends on where the certificate is stored or how it’s provided to you. For example, it might come from any of the following:
 

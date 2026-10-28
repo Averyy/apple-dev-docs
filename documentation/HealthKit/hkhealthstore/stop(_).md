@@ -29,7 +29,7 @@ func stop(_ query: HKQuery)
 - [Executing Observer Queries](../executing-observer-queries.md)
 - [Reading route data](../reading-route-data.md)
 
-#### Discussion
+## Discussion
 
 Use this method on long-running queries only. Most queries automatically stop after they have gathered the requested data. Long-running queries continue to operate on a background thread, watching the HealthKit store for updates. You can cancel these queries by using this method.
 

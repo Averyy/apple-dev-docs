@@ -17,7 +17,7 @@ A component that grabs and drags particles of cloth bodies using either a ray or
 struct ClothGrabComponent
 ```
 
-#### Overview
+## Overview
 
 When `isGrabbing` is first set to true, a selection is made using the ray/volume. While `isGrabbing` remains true, the selected particles will be dragged to the position determined by the ray/volume. When `isGrabbing` is set to false, any selected particles are released and will once again be controlled by the simulation.
 

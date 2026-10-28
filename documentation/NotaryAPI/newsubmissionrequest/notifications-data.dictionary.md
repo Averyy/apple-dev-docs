@@ -19,7 +19,7 @@ object NewSubmissionRequest.Notifications
 
 - [Submitting software for notarization over the web](../submitting-software-for-notarization-over-the-web.md)
 
-#### Discussion
+## Discussion
 
 If you want a notification when notarization completes, include a data structure of this type in the `notifications` array that’s part of the body when you post to the [`Submit Software`](../submit-software.md) endpoint. Set the value for the `channel` key to `webhook`, and provide a URL as the value for the `target` key. The service indicates when notarization finishes by posting a body to the URL like this:
 

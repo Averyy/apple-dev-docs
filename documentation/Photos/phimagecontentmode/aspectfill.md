@@ -24,7 +24,7 @@ case aspectFill
 PHImageContentModeAspectFill
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when you want the image to completely fill an area, such as when presenting it in a view with the [`UIView.ContentMode.scaleAspectFill`](../../UIKit/uiview/contentmode-swift.enum/scaleaspectfill.md) content mode.
 

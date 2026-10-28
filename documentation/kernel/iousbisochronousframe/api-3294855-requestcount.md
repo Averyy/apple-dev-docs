@@ -15,7 +15,7 @@ The number of bytes to transfer for this frame.
 uint32_t requestCount;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this field before making an isochronous request.
 

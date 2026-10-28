@@ -13,7 +13,7 @@
 typedef void (*net_init_func_ptr)(void);
 ```
 
-#### Discussion
+## Discussion
 
 net_init_func_ptr will be called once the networking stack initialized and before network operations occur.
 

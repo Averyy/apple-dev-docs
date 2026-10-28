@@ -23,7 +23,7 @@ weak var prefetchDataSource: (any UITableViewDataSourcePrefetching)? { get set }
 @property (nonatomic, weak, nullable) id<UITableViewDataSourcePrefetching> prefetchDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an object that conforms to the [`UITableViewDataSourcePrefetching`](../uitableviewdatasourceprefetching.md) protocol to facilitate prefetching of data for cells to be displayed in the near future. To disable prefetching behavior, set this property to `nil`. This object isn’t retained.
 

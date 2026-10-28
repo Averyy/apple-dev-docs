@@ -21,7 +21,7 @@ Listen for incoming network connections.
 final class NetworkListener<ApplicationProtocol> where ApplicationProtocol : NetworkProtocolOptions
 ```
 
-#### Overview
+## Overview
 
 A listener receives incoming connections by binding to a local endpoint. It accepts connections based on the protocols defined in its protocol stack. Accepted connections will represent new local and remote address and port tuples.
 

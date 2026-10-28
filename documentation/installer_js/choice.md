@@ -5,7 +5,7 @@
 
 A single installation choice. 
 
-#### Overview
+## Overview
 
 Choice objects are properties of the `choices` global variable and represent the installation choices defined in a distribution package.
 

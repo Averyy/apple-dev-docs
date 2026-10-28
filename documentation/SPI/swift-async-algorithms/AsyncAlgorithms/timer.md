@@ -8,17 +8,17 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [Philippe Hausler](https://github.com/phausler)
 
 [ [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncTimerSequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestTimer.swift) ]
 
-#### Introduction
+## Introduction
 
 Producing elements at regular intervals can be useful for composing with other algorithms. These can range from invoking code at specific times to using those regular intervals as a delimiter of events. There are other cases this exists in APIs however those do not currently interact with Swift concurrency. These existing APIs are ones like `Timer` or `DispatchTimer` but are bound to internal clocks that are not extensible.
 
-#### Proposed Solution
+## Proposed Solution
 
 We propose to add a new type; `AsyncTimerSequence` which utilizes the new `Clock`, `Instant` and `Duration` types. This allows the interaction of the timer to custom implementations of types adopting `Clock`.
 
@@ -51,7 +51,7 @@ extension AsyncTimerSequence.Iterator: Sendable { }
 
 Since all the types comprising `AsyncTimerSequence` are `Sendable` these types are also `Sendable`.
 
-#### Credits/Inspiration
+## Credits/Inspiration
 
 https://developer.apple.com/documentation/foundation/timer
 

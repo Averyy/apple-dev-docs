@@ -20,7 +20,7 @@ func NSMidX(_ aRect: NSRect) -> Double
 static CGFloat NSMidX(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the x coordinate of the center of `aRect`.
 

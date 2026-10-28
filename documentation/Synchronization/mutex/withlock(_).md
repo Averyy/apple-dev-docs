@@ -21,11 +21,11 @@ Calls the given closure after acquiring the lock and then releases ownership.
 borrowing func withLock<Result, E>(_ body: (inout sending Value) throws(E) -> sending Result) throws(E) -> sending Result where E : Error, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the following sequence of code:
 

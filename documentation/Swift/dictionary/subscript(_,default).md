@@ -23,11 +23,11 @@ subscript(key: Key, default defaultValue: @autoclosure () -> Value) -> Value { g
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The value associated with `key` in the dictionary; otherwise, `defaultValue`.
 
-#### Overview
+## Overview
 
 Use this subscript when you want either the value for a particular key or, when that key is not present in the dictionary, a default value. This example uses the subscript with a message to use in case an HTTP response code isn’t recognized:
 

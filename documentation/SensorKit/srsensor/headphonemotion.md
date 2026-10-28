@@ -19,7 +19,7 @@ static let headphoneMotion: SRSensor
 extern SRSensor const SRSensorHeadphoneMotion;
 ```
 
-#### Discussion
+## Discussion
 
 Sensor stream for headphone motion collection
 

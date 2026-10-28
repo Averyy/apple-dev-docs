@@ -25,7 +25,7 @@ case deferredFailed
 kCLErrorDeferredFailed
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if GPS is unavailable, not active, or is temporarily interrupted. If you get this error on a device that has GPS hardware, the solution is to try again.
 

@@ -21,7 +21,7 @@ The type to use for floating-point numeric values.
 var floatingPointType: CSVType
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`CSVType.double`](../csvtype/double.md).
 

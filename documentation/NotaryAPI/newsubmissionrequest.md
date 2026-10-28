@@ -15,7 +15,7 @@ Data that you provide when starting a submission to the notary service.
 object NewSubmissionRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use a structure of this type as the HTTP body when you post to the [`Submit Software`](./submit-software.md) endpoint.
 

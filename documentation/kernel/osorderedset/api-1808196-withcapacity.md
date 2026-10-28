@@ -14,11 +14,11 @@ static OSOrderedSet * withCapacity(
  void *orderingContext = 0);
 ```
 
-#### Return Value
+## Return Value
 
 An empty instance of OSOrderedSet with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `capacity` must be nonzero. The new OSOrderedSet will grow as needed to accommodate more key/object pairs (*unlike* Core Foundation collections, for which the initial capacity is a hard limit).
 

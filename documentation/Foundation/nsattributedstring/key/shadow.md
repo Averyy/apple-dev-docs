@@ -21,7 +21,7 @@ The shadow of the text.
 static let shadow: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSShadow`](../../../AppKit/nsshadow.md) object. The default value of this property is `nil`.
 

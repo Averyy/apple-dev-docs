@@ -21,11 +21,11 @@ Returns a rectangle that results from rotating with the specified quaternion.
 static SPRect3D SPRect3DRotateByQuaternion(SPRect3D rect, simd_quatd quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from rotating with the specified quaternion.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling [`rotated(by:around:)`](./rect3d/rotated%28by,around%29-8g1c9.md) with a zero vector for the pivot.
 

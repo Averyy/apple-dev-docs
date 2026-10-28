@@ -24,7 +24,7 @@ func loadTextures(using resolver: any MDLAssetResolver)
 - (void) loadTexturesUsingResolver:(id<MDLAssetResolver>) resolver;
 ```
 
-#### Discussion
+## Discussion
 
 Iterates all material properties. If there are string values or NSURL values, and you can resolve the values as textures, then [`MDLTextureSampler`](../mdltexturesampler.md) values replaces the string and NSURL values.
 

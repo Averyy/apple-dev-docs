@@ -19,7 +19,7 @@ class VZFileSerialPortAttachment
 @interface VZFileSerialPortAttachment : VZSerialPortAttachment
 ```
 
-#### Overview
+## Overview
 
 Use a [`VZFileSerialPortAttachment`](./vzfileserialportattachment.md) object to configure a one-way serial port from the guest operating system to the virtual machine. When the guest sends data to the serial port, the virtual machine writes that data to the specified file. You can’t use this serial port to send data back to the guest.
 

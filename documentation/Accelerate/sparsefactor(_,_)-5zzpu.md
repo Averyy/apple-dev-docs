@@ -25,11 +25,11 @@ func SparseFactor(_ SymbolicFactor: SparseOpaqueSymbolicFactorization, _ Matrix:
 static SparseOpaqueFactorization_Complex_Double SparseFactor(SparseOpaqueSymbolicFactorization SymbolicFactor, SparseMatrix_Complex_Double Matrix);
 ```
 
-#### Return Value
+## Return Value
 
 Factorization of Matrix.
 
-#### Discussion
+## Discussion
 
 - Parameter SymbolicFactor A symbolic factorization, as returned by a call of the form `SymbolicFactor = SparseFactor(Matrix.structure)`.
 - Parameter Matrix The matrix to factorize.

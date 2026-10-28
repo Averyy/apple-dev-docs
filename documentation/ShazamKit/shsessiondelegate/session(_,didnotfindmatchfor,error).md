@@ -29,7 +29,7 @@ optional func session(_ session: SHSession, didNotFindMatchFor signature: SHSign
 
 - [Matching audio using the built-in microphone](../matching-audio-using-the-built-in-microphone.md)
 
-#### Discussion
+## Discussion
 
 You can retry the match if the error indicates an issue in communicating with the catalog server, such as [`SHError.Code.matchAttemptFailed`](../sherror/code/matchattemptfailed.md).
 

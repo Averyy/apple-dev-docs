@@ -16,11 +16,11 @@ Gets a handle to the SCSITaskDeviceInterface without closing the user client con
 SCSITaskDeviceInterface **(*GetSCSITaskDeviceInterface)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a handle to a SCSITaskDeviceInterface if successful, otherwise NULL.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened the client may use this function to get a handle to the interface used to create and send SCSITasks directly to the device.
 

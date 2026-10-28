@@ -15,11 +15,11 @@ Initializes an empty object.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates the result of initialization: `true` if initialization succeeded, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This no-arg initializer always returns `false`.
 

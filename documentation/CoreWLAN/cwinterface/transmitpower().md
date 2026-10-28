@@ -19,7 +19,7 @@ func transmitPower() -> Int
 - (NSInteger) transmitPower;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current transmit power. Returns 0 in the case of an error.
 

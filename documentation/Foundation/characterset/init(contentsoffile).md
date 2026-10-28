@@ -21,7 +21,7 @@ Initialize with the contents of a file.
 init?(contentsOfFile file: String)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there was an error reading the file.
 

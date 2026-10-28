@@ -16,7 +16,7 @@ Defines a data type for a text encoding value.
 typedef UInt32 TextEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 A `TextEncoding` value is specified by a text encoding base, a text encoding variant, and a text encoding format. You can  obtain a `TextEncoding` value by calling the function [`CreateTextEncoding`](./api-1399639-createtextencoding.md). When you call this function,  you can provide the `TextEncodingBase`, `TextEncodingVariant`, and `TextEncodingFormat` data types.
 

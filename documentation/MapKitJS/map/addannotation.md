@@ -15,7 +15,7 @@ Adds an annotation to the map.
 addAnnotation(annotation: Annotation): Annotation | null;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the annotation.
 

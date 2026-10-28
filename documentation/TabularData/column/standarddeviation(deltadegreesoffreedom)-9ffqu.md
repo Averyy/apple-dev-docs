@@ -23,7 +23,7 @@ func standardDeviation(deltaDegreesOfFreedom: Int = 1) -> Double?
 
 Available when `WrappedElement` conforms to `BinaryInteger`.
 
-#### Return Value
+## Return Value
 
 The standard deviation; otherwise, `nil` if there are fewer than `deltaDegreesOfFreedom + 1` non-`nil` items in the column.
 

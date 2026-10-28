@@ -31,7 +31,7 @@ func preroll(atRate rate: Float) async -> Bool
 - (void) prerollAtRate:(float) rate completionHandler:(void (^)(BOOL finished)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method loads data starting at the item’s current playback time. The current rate for the playback item should always be 0 prior to calling this method. After the method calls the completion handler, you can change the item’s playback rate to begin playback.
 

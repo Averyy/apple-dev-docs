@@ -18,7 +18,7 @@ A regular expression used for advanced URL parsing.
 var urlParsingRegularExpression: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only. To set a regular expression for use in parsing, call [`setURLParsingRegularExpression(_:)`](./seturlparsingregularexpression%28_%29.md), which validates the pattern.
 

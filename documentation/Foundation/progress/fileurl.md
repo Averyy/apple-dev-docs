@@ -25,7 +25,7 @@ var fileURL: URL? { get set }
 @property (copy, nullable) NSURL * fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value for a progress that you [`publish()`](./publish%28%29.md) to subscribers that register for updates using [`addSubscriber(forFileURL:withPublishingHandler:)`](./addsubscriber%28forfileurl,withpublishinghandler%29.md).
 

@@ -21,7 +21,7 @@ Configure the IP hop limit.
 func hopLimit(_ limit: UInt8) -> IP
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to `IP_TTL` for IPv4 and `IPV6_HOPLIMIT` for IPv6.
 

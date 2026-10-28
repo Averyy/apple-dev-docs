@@ -19,7 +19,7 @@ The behavior for how windows will dismiss programmatically when used in conjunct
 var dismissBehavior: DismissBehavior { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `.interactive`.
 

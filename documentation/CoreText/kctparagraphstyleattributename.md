@@ -25,7 +25,7 @@ let kCTParagraphStyleAttributeName: CFString
 extern CFStringRef const kCTParagraphStyleAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 A paragraph style object is used to specify things like line alignment, tab rulers, writing direction, and so on. Value must be a [`CTParagraphStyle`](./ctparagraphstyle.md) object. Default is an empty [`CTParagraphStyle`](./ctparagraphstyle.md) object.
 

@@ -21,7 +21,7 @@ func asinh(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`sinh(_:stream:)`](./sinh%28_,stream%29.md)

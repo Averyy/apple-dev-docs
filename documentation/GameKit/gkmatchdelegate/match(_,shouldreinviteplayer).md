@@ -23,11 +23,11 @@ optional func match(_ match: GKMatch, shouldReinvitePlayer playerID: String) -> 
 - (BOOL) match:(GKMatch *) match shouldReinvitePlayer:(NSString *) playerID;
 ```
 
-#### Return Value
+## Return Value
 
 Your game should return [`true`](../../Swift/true.md) if it wants GameKit to attempt to reconnect the player, [`false`](../../Swift/false.md) if it wants to terminate the match.
 
-#### Discussion
+## Discussion
 
 Occasionally, players may get disconnected from a match. If your game implements this method in the match delegate and the match only contains two players, GameKit calls this method after a player gets disconnected. If your delegate allows GameKit to reconnect to the other player, it reconnects the other player. Your [`match(_:player:didChange:)`](./match%28_,player,didchange%29-4eo7p.md) method is called when the other player is reconnected.
 

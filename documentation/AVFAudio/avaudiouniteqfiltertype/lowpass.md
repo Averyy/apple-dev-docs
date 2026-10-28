@@ -25,7 +25,7 @@ case lowPass
 AVAudioUnitEQFilterTypeLowPass
 ```
 
-#### Discussion
+## Discussion
 
 The necessary parameter for this type is [`frequency`](../avaudiouniteqfilterparameters/frequency.md) (`-3 dB` cutoff at specified frequency).
 

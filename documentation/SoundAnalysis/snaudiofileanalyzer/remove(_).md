@@ -25,7 +25,7 @@ func remove(_ request: any SNRequest)
 - (void) removeRequest:(id<SNRequest>) request;
 ```
 
-#### Discussion
+## Discussion
 
 You can remove a request while the analyzer is processing it. The analyzer stops sending results to the observer after the method removes the request.
 

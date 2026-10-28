@@ -24,11 +24,11 @@ let kIOSurfacePixelFormat: CFString
 extern CFStringRef const kIOSurfacePixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 This value is stored as a [`CFNumber`](../CoreFoundation/cfnumber.md).
 
-#### Discussion
+## Discussion
 
 ## See Also
 

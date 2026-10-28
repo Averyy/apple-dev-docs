@@ -25,11 +25,11 @@ func CFURLEnumeratorCreateForMountedVolumes(_ alloc: CFAllocator!, _ option: CFU
 extern CFURLEnumeratorRefCFURLEnumeratorCreateForMountedVolumes(CFAllocatorRef alloc, CFURLEnumeratorOptions option, CFArrayRef propertyKeys);
 ```
 
-#### Return Value
+## Return Value
 
 The created volume enumerator.
 
-#### Discussion
+## Discussion
 
 Volume enumerators generate file path URLs by default. To generate file reference URLs instead, include the [`generateFileReferenceURLs`](./cfurlenumeratoroptions/generatefilereferenceurls.md) option in `options`.
 

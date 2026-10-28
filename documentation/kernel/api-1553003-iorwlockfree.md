@@ -24,7 +24,7 @@ void IORWLockFree(struct IORWLock *lock);
 void IORWLockFree(IORWLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Frees a lock allocated with IORWLockAlloc. Lock should be unlocked with no waiters.
 

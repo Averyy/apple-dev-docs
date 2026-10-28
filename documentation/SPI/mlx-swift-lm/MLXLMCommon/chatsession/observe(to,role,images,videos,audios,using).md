@@ -17,7 +17,7 @@ Stream details through a fresh composed handler for each generation pass.
 func observe<T>(to prompt: String, role: Chat.Message.Role = .user, images: consuming [UserInput.Image] = [], videos: consuming [UserInput.Video] = [], audios: consuming [UserInput.Audio] = [], using transformer: T) -> AsyncThrowingStream<T.Handler.Output, Error> where T : GenerationTransformer
 ```
 
-#### Discussion
+## Discussion
 
 The transformer configures a copy of the session’s parameters for this request, including automatic tool restarts. Its output must forward all base generation events so the session can maintain its transcript and cache. Log-probability reporting with active speculative decoding throws [`ChatSession.ObservationError.unsupportedSpeculativeDecoding`](./observationerror/unsupportedspeculativedecoding.md).
 

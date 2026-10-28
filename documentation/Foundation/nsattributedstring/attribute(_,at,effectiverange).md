@@ -25,11 +25,11 @@ func attribute(_ attrName: NSAttributedString.Key, at location: Int, effectiveRa
 - (id) attribute:(NSAttributedStringKey) attrName atIndex:(NSUInteger) location effectiveRange:(NSRangePointer) range;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the attribute named `attrName` of the character at `location`, or `nil` if there is no such attribute.
 
-#### Discussion
+## Discussion
 
 For a list of possible attributes, see [`NSAttributedString.Key`](./key.md).
 

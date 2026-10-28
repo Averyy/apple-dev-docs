@@ -15,7 +15,7 @@ An event that indicates an error has occurred during playback.
 attribute  playbackError;
 ```
 
-#### Discussion
+## Discussion
 
 The listener is passed an event object with the following attributes:
 

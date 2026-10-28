@@ -25,7 +25,7 @@ struct AVMediaCharacteristic
 typedef NSString * AVMediaCharacteristic;
 ```
 
-#### Discussion
+## Discussion
 
 QuickTime Movie and MPEG-4 video files may contain tracks that provide tagged media characteristics to indicate a purpose, trait, or feature of the track’s media. For example, an audio track that mixes original program content with additional narrative descriptions of visual action may have the media characteristic `public.accessibility.describes-video` to distinguish it from other audio tracks stored in the same file that don’t contain additional narrative.
 

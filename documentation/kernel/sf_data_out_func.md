@@ -13,11 +13,11 @@
 typedef errno_t (*sf_data_out_func)(void *cookie, socket_t so, const struct sockaddr *to, mbuf_t *data, mbuf_t *control, sflt_data_flag_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 Return: 0 - The caller will continue with normal processing of the data. EJUSTRETURN - The caller will stop processing the data, the data will not be freed. Anything Else - The caller will free the data and stop processing.
 
-#### Discussion
+## Discussion
 
 sf_data_out_func is called to filter outbound data. If your filter intercepts data for later reinjection, it must queue all outbound data to preserve the order of the data when reinjecting. Use sock_inject_data_out to later reinject this data.
 

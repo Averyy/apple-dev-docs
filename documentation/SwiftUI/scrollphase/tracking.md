@@ -21,7 +21,7 @@ The tracking phase where the scroll view is tracking a potential scroll by the u
 case tracking
 ```
 
-#### Discussion
+## Discussion
 
 For example, on iOS, the user may start touching content inside of the scroll view. Until the user moves their finger the scroll view would be tracking the finger. Not all platforms or kinds of scroll may trigger this phase.
 

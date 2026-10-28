@@ -22,7 +22,7 @@ A view that displays content from a player and a native user interface to contro
 @preconcurrency struct VideoPlayer<VideoOverlay> where VideoOverlay : View
 ```
 
-#### Overview
+## Overview
 
 ```swift
 import SwiftUI

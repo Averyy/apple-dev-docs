@@ -22,7 +22,7 @@ var name: UIPasteboard.Name { get }
 @property (nonatomic, readonly) UIPasteboardName name;
 ```
 
-#### Discussion
+## Discussion
 
 Names of app pasteboard objects should be unique across installed apps. If the object is a system pasteboard, this property returns one of the constants described in [Pasteboard Names](../pasteboard-names.md).
 

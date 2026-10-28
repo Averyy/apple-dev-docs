@@ -15,7 +15,7 @@ A Boolean value that indicates whether the overlay is in a selected state.
 selected?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

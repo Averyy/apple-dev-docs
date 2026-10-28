@@ -19,7 +19,7 @@ A Boolean value that indicates whether to perform keyword-based text matching on
 var textMatch: Bool?
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property is `true` to give the model the option to perform lexical matching on text content. If you don’t specify a value for this property, the default value is `false`.
 

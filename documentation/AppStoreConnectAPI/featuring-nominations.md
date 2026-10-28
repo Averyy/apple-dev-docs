@@ -5,7 +5,7 @@
 
 Tell Apple about a noteworthy app or update to an existing one for consideration for featuring opportunities.
 
-#### Overview
+## Overview
 
 When you launch a noteworthy app or make an important update to an existing one, you can nominate it for featuring by telling Apple about your plans in App Store Connect. To learn more, see [Getting featured on the App Store](https://developer.apple.com/app-store/getting-featured) and [Nominate your app for featuring](https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring).
 

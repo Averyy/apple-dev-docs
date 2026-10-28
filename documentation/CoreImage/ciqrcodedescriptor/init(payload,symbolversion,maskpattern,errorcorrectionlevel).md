@@ -24,7 +24,7 @@ init?(payload errorCorrectedPayload: Data, symbolVersion: Int, maskPattern: UInt
 - (instancetype) initWithPayload:(NSData *) errorCorrectedPayload symbolVersion:(NSInteger) symbolVersion maskPattern:(uint8_t) maskPattern errorCorrectionLevel:(CIQRCodeErrorCorrectionLevel) errorCorrectionLevel;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 

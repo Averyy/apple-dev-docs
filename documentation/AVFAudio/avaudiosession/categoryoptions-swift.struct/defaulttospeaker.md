@@ -22,7 +22,7 @@ static var defaultToSpeaker: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionDefaultToSpeaker
 ```
 
-#### Discussion
+## Discussion
 
 You can set this option only when using the [`playAndRecord`](../category-swift.struct/playandrecord.md) category. Use it to modify the category’s routing behavior so audio is always routed to the speaker rather than the receiver, even when other accessories, such as headphones and wireless Bluetooth headphones, are in use.
 

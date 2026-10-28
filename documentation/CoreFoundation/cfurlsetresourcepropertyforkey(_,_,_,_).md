@@ -25,11 +25,11 @@ func CFURLSetResourcePropertyForKey(_ url: CFURL!, _ key: CFString!, _ propertyV
 extern Boolean CFURLSetResourcePropertyForKey(CFURLRef url, CFStringRef key, CFTypeRef propertyValue, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true`  if the resource property named `key` is successfully set to `value`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This function synchronously writes the new resource value out to disk. Attempts to set a read-only resource property or to set a resource property that is not supported by the resource are ignored and are not considered errors.
 

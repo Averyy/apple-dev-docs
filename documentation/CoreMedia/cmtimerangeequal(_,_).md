@@ -25,7 +25,7 @@ func CMTimeRangeEqual(_ range1: CMTimeRange, _ range2: CMTimeRange) -> Bool
 extern Boolean CMTimeRangeEqual(CMTimeRange range1, CMTimeRange range2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two time ranges are equal; otherwise, [`false`](../Swift/false.md).
 

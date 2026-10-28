@@ -15,7 +15,7 @@ Font and character information.
 extern NSPasteboardType NSFontPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`font`](./nspasteboard/pasteboardtype/font.md) instead.
 

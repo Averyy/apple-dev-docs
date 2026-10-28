@@ -21,7 +21,7 @@ case userExited
 MPMovieFinishReasonUserExited
 ```
 
-#### Discussion
+## Discussion
 
 The user stopped playback.
 

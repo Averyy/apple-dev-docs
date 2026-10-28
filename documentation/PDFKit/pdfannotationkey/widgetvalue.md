@@ -24,7 +24,7 @@ static let widgetValue: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyWidgetValue;
 ```
 
-#### Discussion
+## Discussion
 
 For radio button or checkbox widgets, the value for this key is typically `Off` if the button isn’t in a selected state; otherwise, [`buttonWidgetStateString`](../pdfannotation/buttonwidgetstatestring.md).
 

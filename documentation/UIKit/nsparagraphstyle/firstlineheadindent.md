@@ -24,7 +24,7 @@ var firstLineHeadIndent: CGFloat { get }
 @property (nonatomic, readonly) CGFloat firstLineHeadIndent;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the distance (in points) from the leading margin of a text container to the beginning of the paragraph’s first line. This value is always nonnegative.
 

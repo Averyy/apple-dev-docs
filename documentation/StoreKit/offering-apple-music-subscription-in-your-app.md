@@ -5,7 +5,7 @@
 
 Allow eligible customers to subscribe to Apple Music.
 
-#### Overview
+## Overview
 
 With an Apple Music membership, customers can play songs from the entire Apple Music catalog or access their iCloud music library across all their devices. You can offer users the option to sign up for an Apple Music subscription directly from your app by following these steps:
 
@@ -13,7 +13,7 @@ With an Apple Music membership, customers can play songs from the entire Apple M
 2. Determine if the customer is eligible for an Apple Music subscription.
 3. Present the sign-up subscription offer if the customer is eligible.
 
-##### Request Apple Music Library Access
+### Request Apple Music Library Access
 
 The user must grant permission before your app can access Apple Music library. See [Requesting Access to Apple Music Library](./requesting-access-to-apple-music-library.md) for details. Use [`authorizationStatus()`](./skcloudservicecontroller/authorizationstatus%28%29.md) to determine your app’s authorization status. If the authorization status is [`SKCloudServiceAuthorizationStatus.authorized`](./skcloudserviceauthorizationstatus/authorized.md), your app can check if the user is eligible for an Apple Music subscription offer.
 
@@ -31,7 +31,7 @@ SKCloudServiceAuthorizationStatus status = ([SKCloudServiceController authorizat
 
 > ❗ **Important**:  When the Music app is absent on the user’s device, [`load(options:completionHandler:)`](./skcloudservicesetupviewcontroller/load%28options,completionhandler%29.md) fails to load.
 
-##### Determine if the User is Eligible for an Apple Music Subscription
+### Determine if the User is Eligible for an Apple Music Subscription
 
 After getting Apple Music access from the user, call [`requestCapabilities(completionHandler:)`](./skcloudservicecontroller/requestcapabilities%28completionhandler%29.md) on an instance of [`SKCloudServiceController`](./skcloudservicecontroller.md) to query the user’s capabilities. Then, inspect the `capabilities` parameter of this method to determine eligibility. See [Determining a person’s Apple Music capabilities](./determining-a-person-s-apple-music-capabilities.md) for details. A user has an active subscription to Apple Music when `capabilities` contains [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md). A user is eligible for the offer when `capabilities` doesn’t include [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md) but contains [`musicCatalogSubscriptionEligible`](./skcloudservicecapability/musiccatalogsubscriptioneligible.md).
 
@@ -62,7 +62,7 @@ SKCloudServiceController *controller = [[SKCloudServiceController alloc] init];
 }];
 ```
 
-##### Present the Offer to Subscribe for Apple Music
+### Present the Offer to Subscribe for Apple Music
 
 For users who are eligible for an Apple Music subscription, use the following steps to allow users to sign up for it.
 

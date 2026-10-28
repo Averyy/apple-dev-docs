@@ -24,7 +24,7 @@ case clearcoat
 MDLMaterialSemanticClearcoat
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `clearCoat` and `map_clearCoat` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

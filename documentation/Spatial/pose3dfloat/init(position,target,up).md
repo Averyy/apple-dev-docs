@@ -21,7 +21,7 @@ Creates a pose at the specified position that’s oriented towards a look at tar
 init(position: Point3DFloat = .zero, target: Point3DFloat, up: Vector3DFloat = Vector3DFloat(x: 0, y: 1, z: 0))
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function creates a pose where `+z` is forward.
 

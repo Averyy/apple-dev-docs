@@ -20,7 +20,7 @@ var contentImage: WKImage? { get set }
 @property (nonatomic, copy, nullable) WKImage * contentImage;
 ```
 
-#### Discussion
+## Discussion
 
 This image contains the item’s content and is displayed when the item is selected. The content image supported for all picker styles.
 

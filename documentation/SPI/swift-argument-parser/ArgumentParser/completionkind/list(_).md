@@ -17,7 +17,7 @@ The completion candidates are the strings in the given array.
 static func list(_ words: [String]) -> CompletionKind
 ```
 
-#### Discussion
+## Discussion
 
 Completion candidates are interpreted by the requesting shell as literals. They must be neither escaped nor quoted; Swift Argument Parser escapes or quotes them as necessary for the requesting shell.
 

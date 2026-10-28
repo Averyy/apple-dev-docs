@@ -27,7 +27,7 @@ var timeoutIntervalForResource: TimeInterval { get set }
 @property (nonatomic, assign) NSTimeInterval timeoutIntervalForResource;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the resource timeout interval for this operation, which controls how long, in seconds, to wait for the entire operation to complete before stopping. The resource timer starts when the operation executes and counts until either the operation completes or this timeout interval occurs, whichever comes first.
 

@@ -17,7 +17,7 @@ Creates a new virtual controller using the configuration you specify.
 + (GCVirtualController *) virtualControllerWithConfiguration:(GCVirtualControllerConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized virtual controller.
 

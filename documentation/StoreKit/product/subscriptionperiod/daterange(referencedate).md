@@ -22,11 +22,11 @@ The calculated date range of a subscription period, starting at the reference da
 func dateRange(referenceDate: Date = .now) -> Range<Date>
 ```
 
-#### Return Value
+## Return Value
 
 The subscription period represented by two dates that are the lower bound and upper bound of the subscription period of the [`Product.SubscriptionPeriod`](../subscriptionperiod.md) instance.
 
-#### Discussion
+## Discussion
 
 The date range calculates a single subscription period starting from the date you provide in `referenceDate`.
 

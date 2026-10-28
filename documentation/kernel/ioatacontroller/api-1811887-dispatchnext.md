@@ -12,7 +12,7 @@ virtual IOReturn dispatchNext(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 noErr indicates successful dispatch.
 

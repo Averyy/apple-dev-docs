@@ -23,7 +23,7 @@ func removeCalendar(_ calendar: EKCalendar, commit: Bool) throws
 - (BOOL) removeCalendar:(EKCalendar *) calendar commit:(BOOL) commit error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if `calendar` belongs to another event store.
 

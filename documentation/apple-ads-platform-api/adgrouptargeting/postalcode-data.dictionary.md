@@ -15,7 +15,7 @@ Postal code geographic targeting.
 object AdGroupTargeting.PostalCode
 ```
 
-#### Discussion
+## Discussion
 
 Postal code IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md). Used with Apple Maps campaigns. Uses the [`TargetingData`](../targetingdata.md) `include`/`exclude` shape.
 

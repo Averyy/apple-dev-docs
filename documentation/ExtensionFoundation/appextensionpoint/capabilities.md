@@ -21,7 +21,7 @@ The capabilities that an your extension implements
 struct Capabilities
 ```
 
-#### Overview
+## Overview
 
 When creating a binding in your app extension, use this type to specify the capabilities implemented by the app extension.
 

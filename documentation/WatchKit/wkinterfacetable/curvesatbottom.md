@@ -19,7 +19,7 @@ var curvesAtBottom: Bool { get set }
 @property (nonatomic, assign) BOOL curvesAtBottom;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), table rows near the bottom of the screen shrink so that the curved corners don’t clip them. This property has no effect on Apple Watch Series 3 or earlier.
 

@@ -25,7 +25,7 @@ func isAutomaticAudibleLanguageOption() -> Bool
 - (BOOL) isAutomaticAudibleLanguageOption;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the framework uses the system preferences to determine the best audible language option; otherwise [`false`](../../Swift/false.md).
 

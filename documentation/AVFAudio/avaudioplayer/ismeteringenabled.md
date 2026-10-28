@@ -25,7 +25,7 @@ var isMeteringEnabled: Bool { get set }
 @property (getter=isMeteringEnabled) BOOL meteringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the player doesn’t generate audio-level metering data. Because metering uses computing resources, enable it only if you intend to use it.
 

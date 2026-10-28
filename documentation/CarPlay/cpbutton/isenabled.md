@@ -21,7 +21,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 When [`false`](../../Swift/false.md), CarPlay doesn’t call the button’s handler, and it changes the button’s appearance to reflect its disabled state.
 

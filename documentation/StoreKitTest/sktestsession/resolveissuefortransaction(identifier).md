@@ -25,7 +25,7 @@ func resolveIssueForTransaction(identifier: Int) throws
 - (BOOL) resolveIssueForTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to simulate a user resolving an issue that prevents a purchase, such as an interrupted purchase or a billing issue. You enable the testing environment to simulate the issues by setting the [`interruptedPurchasesEnabled`](./interruptedpurchasesenabled.md) and [`billingGracePeriodIsEnabled`](./billinggraceperiodisenabled.md) properties, respectively.
 

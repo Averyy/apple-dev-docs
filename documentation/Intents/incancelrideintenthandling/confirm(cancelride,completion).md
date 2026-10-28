@@ -26,7 +26,7 @@ optional func confirm(cancelRide intent: INCancelRideIntent) async -> INCancelRi
 - (void) confirmCancelRide:(INCancelRideIntent *) intent completion:(void (^)(INCancelRideIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to create a response object with information about whether you can cancel the ride. If your service charges fees for canceling a ride, include the fee information in your response object. Siri or Maps then presents the details of your response to the user.
 

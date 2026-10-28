@@ -24,7 +24,7 @@ Returns the non-`nil` results of mapping the given transformation over this sequ
 func flatMap<ElementOfResult>(_ transform: @escaping (Self.Elements.Element) -> ElementOfResult?) -> LazyMapSequence<LazyFilterSequence<LazyMapSequence<Self.Elements, ElementOfResult?>>, ElementOfResult>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to receive a sequence of non-optional values when your transformation produces an optional value.
 

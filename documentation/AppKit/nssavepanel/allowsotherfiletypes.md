@@ -19,7 +19,7 @@ var allowsOtherFileTypes: Bool { get set }
 @property BOOL allowsOtherFileTypes;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the panel allows the user to save files with an extension that’s not in the list of allowed types. The default value is [`false`](../../Swift/false.md).
 

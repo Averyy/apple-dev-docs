@@ -24,7 +24,7 @@ var calculationMode: CAAnimationCalculationMode { get set }
 @property (copy) CAAnimationCalculationMode calculationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are described in [Value calculation modes](../value-calculation-modes.md). The default value of this property is [`linear`](../caanimationcalculationmode/linear.md).
 

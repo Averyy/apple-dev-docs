@@ -5,11 +5,11 @@
 
 Create and run statistical queries.
 
-#### Overview
+## Overview
 
 Statistical queries calculate common statistics  over a matching set of samples, for example by returning the minimum value, the maximum value, or the sum of all the values.
 
-##### Create the Object Type and Predicate
+### Create the Object Type and Predicate
 
 Start by creating the type object for the desired samples. The following example creates a type object for energy consumed.
 
@@ -40,7 +40,7 @@ let today = HKQuery.predicateForSamples(withStart: startDate, end: endDate, opti
 
 You use these values to create the query.
 
-##### Create the Query
+### Create the Query
 
 To create the statistical query, call the [`init(quantityType:quantitySamplePredicate:options:completionHandler:)`](./hkstatisticsquery/init%28quantitytype,quantitysamplepredicate,options,completionhandler%29.md) initializer. The following code creates a statistical query that calculates the total energy consumed during the specified time period.
 
@@ -68,7 +68,7 @@ let query = HKStatisticsQuery(quantityType: energyConsumed, quantitySamplePredic
 
 The query returns a statistics object that contains the values calculated by the query. The callback handler should check for errors before accessing the statistics. It should also dispatch updates to the user interface back to the main thread.
 
-##### Run the Query
+### Run the Query
 
 After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method on the HealthKit store.
 

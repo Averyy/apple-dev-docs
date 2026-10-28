@@ -23,7 +23,7 @@ class UIPointerInteraction
 @interface UIPointerInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you use a [`UIButton`](./uibutton.md) as an interface object, use the button’s [`isPointerInteractionEnabled`](./uibutton/ispointerinteractionenabled.md) and [`pointerStyleProvider`](./uibutton/pointerstyleprovider-1d4d2.md) to customize the proposed effect before constructing your own custom pointer effect using a [`UIPointerInteraction`](./uipointerinteraction.md).
 

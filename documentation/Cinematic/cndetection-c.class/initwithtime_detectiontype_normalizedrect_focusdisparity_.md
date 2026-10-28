@@ -19,7 +19,7 @@ Creates a Cinematic detection of a subject.
 - (instancetype) initWithTime:(CMTime) time detectionType:(CNDetectionType) detectionType normalizedRect:(CGRect) normalizedRect focusDisparity:(float) focusDisparity;
 ```
 
-#### Return Value
+## Return Value
 
 A structure representing the Cinematic detection of a subject.
 

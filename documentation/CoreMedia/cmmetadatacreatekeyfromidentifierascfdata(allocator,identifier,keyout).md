@@ -25,11 +25,11 @@ func CMMetadataCreateKeyFromIdentifierAsCFData(allocator: CFAllocator?, identifi
 extern OSStatus CMMetadataCreateKeyFromIdentifierAsCFData(CFAllocatorRef allocator, CFStringRef identifier, CFDataRef*keyOut);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, a nonzero result code. See [Metadata Identifier Error Codes](./metadata-identifier-errors.md).
 
-#### Discussion
+## Discussion
 
 The bytes in the `CFData` correspond to how they are serialized in the file.
 

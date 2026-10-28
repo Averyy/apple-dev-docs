@@ -20,7 +20,7 @@ struct FFRAMPFORCE
 struct FFRAMPFORCE;
 ```
 
-#### Overview
+## Overview
 
 A pointer to a single FFRAMPFORCE structure for an effect is passed in the **lpvTypeSpecificParams** member of the FFEFFECT structure.
 

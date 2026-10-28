@@ -21,7 +21,7 @@ Creates and returns a repeat behavior with a preferred play count and delay usin
 + (instancetype) behaviorPeriodicWithCount:(NSInteger) count delay:(double) delay;
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior with the preferred play count and delay using periodic animations.
 

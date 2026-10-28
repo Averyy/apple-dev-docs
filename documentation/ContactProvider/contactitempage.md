@@ -16,7 +16,7 @@ A fixed offset into enumerating all contact items.
 struct ContactItemPage
 ```
 
-#### Overview
+## Overview
 
 You can break an enumeration of all contact items into multiple pages to reduce the memory constraints on the system. During the enumeration, the [`generationMarker`](./contactitempage/generationmarker.md) must not change. Update the [`offset`](./contactitempage/offset.md) to reflect progress so you can resume the enumeration.
 

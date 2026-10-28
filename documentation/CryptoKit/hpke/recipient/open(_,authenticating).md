@@ -21,11 +21,11 @@ Decrypts a message, if the ciphertext is valid, verifying the integrity of addit
 mutating func open<C, AD>(_ ciphertext: C, authenticating aad: AD) throws -> Data where C : DataProtocol, AD : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The resulting cleartext message if the message is authentic.
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to decrypt a series of messages. When using this method, the recipient of the ciphertext messages needs to decrypt them in the same order that the sender encrypts them. The system doesn’t decrypt the additional authentication data in the `aad` parameter that the recipient uses to verify the message integrity.
 

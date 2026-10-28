@@ -22,7 +22,7 @@ func descriptorFor1DTexture1() -> MTLTextureDescriptor?
 - (MTLTextureDescriptor *) descriptorFor1DTexture1;
 ```
 
-#### Discussion
+## Discussion
 
 A descriptor for mhdr_conversion_data_t.tex1d_1
 

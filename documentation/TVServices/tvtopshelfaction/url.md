@@ -19,7 +19,7 @@ var url: URL { get }
 @property (nonatomic, copy, readonly) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 URLs should specify the location of either the media item that you want to play or a page in your app.
 

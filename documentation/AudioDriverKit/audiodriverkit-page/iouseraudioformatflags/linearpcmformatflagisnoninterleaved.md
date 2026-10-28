@@ -15,7 +15,7 @@ A flag to indicate whether PCM channels interleave their samples in the data.
 LinearPCMFormatFlagIsNonInterleaved
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym of [`FormatFlagIsNonInterleaved`](./formatflagisnoninterleaved.md).
 

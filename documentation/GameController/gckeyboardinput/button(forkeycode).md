@@ -24,11 +24,11 @@ func button(forKeyCode code: GCKeyCode) -> GCControllerButtonInput?
 - (GCControllerButtonInput *) buttonForKeyCode:(GCKeyCode) code;
 ```
 
-#### Return Value
+## Return Value
 
 The keyboard button element that this profile defines for the specified key code.
 
-#### Discussion
+## Discussion
 
 Alternatively, you can get a button element for a key using the [`subscript(_:)`](../gcphysicalinputprofile/subscript%28_%29.md) notation that you inherit from [`GCPhysicalInputProfile`](../gcphysicalinputprofile.md), as in `keyboard[GCKeyUpArrow]`.
 

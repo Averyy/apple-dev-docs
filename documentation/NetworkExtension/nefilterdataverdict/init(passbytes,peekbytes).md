@@ -23,7 +23,7 @@ init(passBytes: Int, peekBytes: Int)
 + (NEFilterDataVerdict *) dataVerdictWithPassBytes:(NSUInteger) passBytes peekBytes:(NSUInteger) peekBytes;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterDataVerdict` object.
 

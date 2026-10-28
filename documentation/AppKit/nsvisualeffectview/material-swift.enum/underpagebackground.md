@@ -19,7 +19,7 @@ case underPageBackground
 NSVisualEffectMaterialUnderPageBackground
 ```
 
-#### Discussion
+## Discussion
 
 This material supports Desktop Tinting in Dark Mode. With Desktop Tinting, the system modifies the material’s color dynamically by incorporating some of the color from the underlying desktop image.
 

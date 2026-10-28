@@ -17,7 +17,7 @@ The type of volume control supported by this device.
 let volumeControl: MediaOutputDevice.VolumeControl
 ```
 
-#### Discussion
+## Discussion
 
 Specifies how volume can be adjusted on this device, which determines the available volume control methods and how volume controls should be presented in the user interface.
 

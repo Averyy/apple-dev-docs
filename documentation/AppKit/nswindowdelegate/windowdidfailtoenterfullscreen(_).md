@@ -20,7 +20,7 @@ optional func windowDidFailToEnterFullScreen(_ window: NSWindow)
 - (void) windowDidFailToEnterFullScreen:(NSWindow *) window;
 ```
 
-#### Discussion
+## Discussion
 
 In some cases, the transition to enter full-screen mode can fail, due to being in the midst of handling some other animation or user gesture. This method indicates that there was an error, and you should clean up any work you may have done to prepare to enter full-screen mode.
 

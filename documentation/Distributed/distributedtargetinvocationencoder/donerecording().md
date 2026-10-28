@@ -22,7 +22,7 @@ Invoked to signal to the encoder that no further `record...` calls will be made 
 mutating func doneRecording() throws
 ```
 
-#### Discussion
+## Discussion
 
 Useful if the encoder needs to perform some “final” task before the underlying message is considered complete, e.g. computing a checksum, or some additional message signing or finalization step.
 

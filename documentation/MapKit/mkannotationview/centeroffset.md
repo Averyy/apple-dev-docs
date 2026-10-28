@@ -24,7 +24,7 @@ var centerOffset: CGPoint { get set }
 @property (nonatomic) CGPoint centerOffset;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the map view places the center point of an annotation view at the coordinate point of the associated annotation. You can use this property to reposition the annotation view as necessary. MapKit measures the x- and y-offset values in points. Positive offset values move the annotation view down and to the right, and negative values move it up and to the left.
 

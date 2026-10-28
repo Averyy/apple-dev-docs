@@ -22,7 +22,7 @@ static var allValueStrings: [String] { get }
 
 - [Customizing Help](../customizinghelp.md)
 
-#### Discussion
+## Discussion
 
 The default implementation of this property returns an empty array. If the conforming type is also `CaseIterable`, the default implementation returns an array with a value for each case.
 
@@ -30,11 +30,8 @@ The default implementation of this property returns an empty array. If the confo
 
 ### ExpressibleByArgument Implementations
 - [static var allValueStrings: [String]](./allvaluestrings-4tymu.md)
-  An array of all possible strings that can convert to a value of this type, for display in the help screen.
 - [static var allValueStrings: [String]](./allvaluestrings-5keru.md)
-  An array of all possible strings that can convert to a value of this type, for display in the help screen.
 - [static var allValueStrings: [String]](./allvaluestrings-6ptln.md)
-  An array of all possible strings that can convert to a value of this type, for display in the help screen.
 
 
 ---

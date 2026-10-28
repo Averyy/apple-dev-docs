@@ -19,7 +19,7 @@ class let didChangeTypingAttributesNotification: NSNotification.Name
 extern NSNotificationName NSTextViewDidChangeTypingAttributesNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is posted, via the [`textViewDidChangeTypingAttributes(_:)`](../nstextviewdelegate/textviewdidchangetypingattributes%28_%29.md) delegate method, whether or not text has changed as a result of the attribute change.
 

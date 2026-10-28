@@ -21,7 +21,7 @@ An effect that scales the symbol down.
 + (instancetype) scaleDownEffect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the scale effect options that scales down the symbol.
 

@@ -10,7 +10,7 @@ Play media items in a client-server app using the built-in media player for TVML
 - tvOS 12.0+
 - Xcode 11.2+
 
-#### Overview
+## Overview
 
 The TVML frameworks provide several built-in ways to play media items. After loading the initial page, the app automatically plays music in the background. The user navigates between two images and the app loads and plays a video or audio media item after the user selects an image. Both of these media items play using the built-in TVMLJKit JS media player.
 

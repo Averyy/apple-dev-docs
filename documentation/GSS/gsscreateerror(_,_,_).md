@@ -23,7 +23,7 @@ func GSSCreateError(_ mech: gss_const_OID, _ major_status: OM_uint32, _ minor_st
 CFErrorRefGSSCreateError(gss_const_OID mech, OM_uint32 major_status, OM_uint32 minor_status);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFError`](../CoreFoundation/cferror.md) instance that corresponds to the failure described by the inputs. Release the error with [`CFRelease`](../CoreFoundation/cfrelease.md) when you are done with it.
 

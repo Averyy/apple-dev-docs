@@ -20,11 +20,11 @@ Creates a state object with the specified list of valid next states.
 + (instancetype) state;
 ```
 
-#### Return Value
+## Return Value
 
 A state object.
 
-#### Discussion
+## Discussion
 
 Call this method to conveniently create instances of your custom state classes. To perform custom initialization in those classes, override the [`init()`](./init%28%29.md) initializer.
 

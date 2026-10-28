@@ -25,7 +25,7 @@ func resume()
 - (void) resume;
 ```
 
-#### Discussion
+## Discussion
 
 A resume following any number of suspend calls will resume the controller; there does not need to be a resume call to match every suspend call.
 

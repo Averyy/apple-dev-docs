@@ -25,11 +25,11 @@ class func scheduledTimer(timeInterval ti: TimeInterval, target aTarget: Any, se
 + (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval) ti target:(id) aTarget selector:(SEL) aSelector userInfo:(id) userInfo repeats:(BOOL) yesOrNo;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSTimer` object, configured according to the specified parameters.
 
-#### Discussion
+## Discussion
 
 After `ti` seconds have elapsed, the timer fires, sending the message `aSelector` to `target`.
 

@@ -21,7 +21,7 @@ var sourceDomain: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * sourceDomain;
 ```
 
-#### Discussion
+## Discussion
 
 This postback value indicates the `source_domain` of the corresponding [`AdImpressionRequest`](../../SKAdNetworkforWebAds/adimpressionrequest.md).
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the animation stopped.
 @preconcurrency var isStopped: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This function returns `true` for stopped animations.
 

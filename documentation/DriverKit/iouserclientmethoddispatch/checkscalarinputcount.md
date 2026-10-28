@@ -18,7 +18,7 @@ The expected number of scalar inputs.
 uint32_t checkScalarInputCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this field is [`kIOUserClientVariableStructureSize`](../kiouserclientvariablestructuresize.md), ignore the value of the [`scalarInputCount`](../iouserclientmethodarguments/scalarinputcount.md) field. For all other values, the value in this property must equal the value in the [`scalarInputCount`](../iouserclientmethodarguments/scalarinputcount.md) field of the [`IOUserClientMethodArguments`](../iouserclientmethodarguments.md) structure.
 

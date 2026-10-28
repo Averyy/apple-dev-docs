@@ -23,7 +23,7 @@ func gss_wrap_size_limit(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ cont
 OM_uint32 gss_wrap_size_limit(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, int conf_req_flag, gss_qop_t qop_req, OM_uint32 req_output_size, OM_uint32 *max_input_size);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

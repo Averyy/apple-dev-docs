@@ -21,11 +21,11 @@ func openGLContext() -> NSOpenGLContext!
 - (NSOpenGLContext *) openGLContext;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSOpenGLContext` object.
 
-#### Discussion
+## Discussion
 
 This context as a read-only object . Do not attempt to change any of its settings. If you subclass `QCView` so that you can perform custom OpenGL drawing, you’ll need to use this method to retrieve the view’s OpenGL context.
 

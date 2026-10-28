@@ -19,7 +19,7 @@ func contains(_ item: WebHistoryItem!) -> Bool
 - (BOOL) containsItem:(WebHistoryItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified item is in the back-forward list; otherwise, [`false`](../../Swift/false.md).
 

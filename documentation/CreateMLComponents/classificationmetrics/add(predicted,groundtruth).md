@@ -21,7 +21,7 @@ Updates the metrics with more predicted and ground truth labels.
 mutating func add(predicted: some Sequence<Label>, groundTruth: some Sequence<Label>)
 ```
 
-#### Discussion
+## Discussion
 
 The predicted and ground truth sequences are matched element by element in the order they are provided. Both sequences must have the same number of elements.
 

@@ -21,7 +21,7 @@ A constant that represents a type-II discrete cosine transform.
 case II
 ```
 
-#### Discussion
+## Discussion
 
 The type-II DCT uses the following operation for a discrete cosine transform:
 

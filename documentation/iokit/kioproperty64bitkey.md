@@ -14,7 +14,7 @@
 #define kIOProperty64BitKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines wether the device supports 64-bit.
 

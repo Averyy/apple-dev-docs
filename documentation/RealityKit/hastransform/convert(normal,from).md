@@ -21,7 +21,7 @@ Converts a normal vector from the local space of a reference entity to the local
 @preconcurrency func convert(normal: SIMD3<Float>, from referenceEntity: Entity?) -> SIMD3<Float>
 ```
 
-#### Return Value
+## Return Value
 
 The normal vector given in the local space of the entity.
 

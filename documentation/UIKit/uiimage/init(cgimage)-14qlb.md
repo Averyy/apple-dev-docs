@@ -24,7 +24,7 @@ init(cgImage: CGImage)
 - (instancetype) initWithCGImage:(CGImageRef) cgImage;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `UIImage` object, or `nil` if the method could not initialize the image from the specified data.
 

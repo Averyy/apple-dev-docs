@@ -21,11 +21,11 @@ Appends a publisher’s output with the specified sequence.
 func append<S>(_ elements: S) -> Publishers.Concatenate<Self, Publishers.Sequence<S, Self.Failure>> where S : Sequence, Self.Output == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that appends the sequence of elements after this publisher’s elements.
 
-#### Discussion
+## Discussion
 
 Use [`append(_:)`](./append%28_%29-69sdn.md) to append a sequence to the end of a publisher’s output.
 

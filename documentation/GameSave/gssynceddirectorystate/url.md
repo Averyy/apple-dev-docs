@@ -23,7 +23,7 @@ var url: URL? { get }
 @property (readonly, nullable) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is `nil` unless the state is `GSSyncStateReady`, `GSSyncStateOffline`, or `GSSyncStateLocal`.
 

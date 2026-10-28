@@ -15,11 +15,11 @@ OSStatus PMDefaultPageFormat (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid after calling `PMBegin` and creating a page format object.
 

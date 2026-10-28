@@ -18,7 +18,7 @@ A list of alternate icons for the Home screen and Settings app.
 - **Name**: `CFBundleAlternateIcons`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The value of this key is different in iOS and tvOS.
 

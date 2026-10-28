@@ -24,11 +24,11 @@ class func newSubdividedMesh(_ mesh: MDLMesh, submeshIndex: Int, subdivisionLeve
 + (instancetype) newSubdividedMesh:(MDLMesh *) mesh submeshIndex:(NSUInteger) submeshIndex subdivisionLevels:(NSUInteger) subdivisionLevels;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object, or `nil` if subdivision fails.
 
-#### Discussion
+## Discussion
 
 Surface subdivision creates a smooth mesh from a coarse mesh by splitting each primitive (triangle or quad) in the original mesh into multiple smaller primitives and projecting the newly created vertices along surface normal vectors. The `subdivisionLevels` parameter controls the level of detail (and resulting performance cost) of the subdivision process. For example, in a triangle mesh, a subdivision level of 1 replaces each triangle with a set of four smaller triangles; a subdivision level of 2 replaces each of those four triangles with four even smaller triangles (for a total of 16 created from the triangle in the original mesh.
 

@@ -19,7 +19,7 @@ func goBack()
 - (void) goBack;
 ```
 
-#### Discussion
+## Discussion
 
 This method works by changing the current item to the item that precedes it. This method raises an [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md) exception if no item precedes the current item.
 

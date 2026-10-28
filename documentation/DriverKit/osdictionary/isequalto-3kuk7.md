@@ -18,11 +18,11 @@ Compares the dictionary with an OSObject
 virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 True iff the object is of class OSDictionary and isEqualTo(const OSDictionary * anArray) returns true.
 
-#### Discussion
+## Discussion
 
 If the object is of class OSDictionary, the result of isEqualTo(const OSDictionary * anArray) is returned. Otherwise false is returned.
 

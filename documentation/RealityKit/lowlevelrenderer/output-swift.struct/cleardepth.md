@@ -18,7 +18,7 @@ The depth value to use when clearing the depth attachment at the start of a rend
 var clearDepth: Double { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDepthAttachmentDescriptor.clearDepth`.
 

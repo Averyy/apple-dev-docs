@@ -24,7 +24,7 @@ struct MTLIntersectionFunctionSignature
 enum MTLIntersectionFunctionSignature : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information on declaring intersection functions in MSL, see [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 

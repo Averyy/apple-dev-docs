@@ -19,7 +19,7 @@ func SCNetworkProtocolSetConfiguration(_ protocol: SCNetworkProtocol, _ config: 
 Boolean SCNetworkProtocolSetConfiguration(SCNetworkProtocolRef protocol, CFDictionaryRef config);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

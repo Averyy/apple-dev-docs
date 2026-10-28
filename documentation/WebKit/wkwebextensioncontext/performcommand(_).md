@@ -23,7 +23,7 @@ func performCommand(_ command: WKWebExtension.Command)
 - (void) performCommand:(WKWebExtensionCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs the given command as if it was triggered by a user gesture within the context of the focused window and active tab.
 

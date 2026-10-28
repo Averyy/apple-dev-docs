@@ -23,11 +23,11 @@ func IOBSDNameMatching(_ mainPort: mach_port_t, _ options: UInt32, _ bsdName: Un
 CFMutableDictionaryRef IOBSDNameMatching(mach_port_t mainPort, uint32_t options, const char *bsdName);
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, is returned on success, or zero on failure. The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification which will consume a reference, otherwise it should be released with CFRelease by the caller.
 
-#### Discussion
+## Discussion
 
 IOServices that represent BSD devices have an associated BSD name. This function creates a matching dictionary that will match IOService's with a given BSD name.
 

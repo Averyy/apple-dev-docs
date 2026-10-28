@@ -21,7 +21,7 @@ Creates a batch-update request for a named managed entity.
 + (instancetype) batchUpdateRequestWithEntityName:(NSString *) entityName;
 ```
 
-#### Return Value
+## Return Value
 
 A batch-update request.
 

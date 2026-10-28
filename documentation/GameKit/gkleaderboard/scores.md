@@ -35,7 +35,7 @@ var scores: [GKScore]? { get }
 @property (atomic, strong, readonly, nullable) NSArray<GKScore *> * scores;
 ```
 
-#### Discussion
+## Discussion
 
 This property is invalid until a call to [`loadScores(completionHandler:)`](./loadscores%28completionhandler%29.md) is complete. Afterward, it contains the same score objects that GameKit returns to the completion handler.
 

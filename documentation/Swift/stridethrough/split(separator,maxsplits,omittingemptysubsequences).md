@@ -23,11 +23,11 @@ func split(separator: Self.Element, maxSplits: Int = Int.max, omittingEmptySubse
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 An array of subsequences, split from this sequence’s elements.
 
-#### Discussion
+## Discussion
 
 The resulting array consists of at most `maxSplits + 1` subsequences. Elements that are used to split the sequence are not returned as part of any subsequence.
 

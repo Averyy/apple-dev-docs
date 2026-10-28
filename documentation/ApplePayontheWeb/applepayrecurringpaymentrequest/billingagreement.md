@@ -16,7 +16,7 @@ A localized billing agreement that the payment sheet displays to the user before
 DOMString billingAgreement;
 ```
 
-#### Discussion
+## Discussion
 
 The merchant may provide an optional, localized [`billingAgreement`](./billingagreement.md) string. The maximum length of the [`billingAgreement`](./billingagreement.md) string is 500 characters.
 

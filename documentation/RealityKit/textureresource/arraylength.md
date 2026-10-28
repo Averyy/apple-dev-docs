@@ -21,7 +21,7 @@ The number of slices in the texture array.
 @preconcurrency var arrayLength: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `0` if it isn’t a texture array.
 

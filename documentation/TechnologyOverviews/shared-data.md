@@ -8,7 +8,7 @@ Share data to help people access what they need wherever they are, and to make s
 
 ---
 
-#### Make your app’s content available on multiple devices
+## Make your app’s content available on multiple devices
 
 iCloud lets people store their data securely, access it wherever they go, and keep it up to date on all their devices. The power and simplicity of iCloud means you can focus on delivering a great experience, and let iCloud handle the details of scaling, consistency, and security.
 
@@ -29,7 +29,7 @@ When developing apps, choose the iCloud technology that works best for the data 
 
 ---
 
-#### Share content on the same device
+## Share content on the same device
 
 To protect apps from nefarious code, Apple places them in *sandboxes* on nearly all devices. Each sandbox includes a container directory, which only the owning app can access. To share files between two apps you create, or between your app and an app extension, configure an [app group](../Xcode/configuring-app-groups.md) for both processes. A process with the [proper entitlements](../BundleResources/entitlements/com.apple.security.application-groups.md) can [request the URL](../Foundation/filemanager/containerurl%28forsecurityapplicationgroupidentifier%29.md) of the app group directory, and access files in that directory.
 
@@ -39,7 +39,7 @@ The creation of an app group creates a shared space on disk for multiple process
 
 ---
 
-#### Deploy your own shared remote file server
+## Deploy your own shared remote file server
 
 If you manage your own server-side storage, create a File Provider extension to access that remote storage. A File Provider extension monitors and manages the local copy of documents someone places on your remote server. When someone changes a local file, the extension uploads the modified file to your server. Similarly, when the file changes on the server, the extension downloads the file and updates the local storage.
 
@@ -47,7 +47,7 @@ Create your extension using the [File Provider](../FileProvider/FileProvider.md)
 
 ---
 
-#### Coordinate access to shared files
+## Coordinate access to shared files
 
 File coordination is essential if you read and write files in iCloud, in an app group, or in any shared space. File coordinators prevent multiple processes from accessing a file in a conflicting way. For example, file coordinators prevent two processes from writing to the same file simultaneously. You adopt file coordinators in one of the following ways:
 
@@ -57,7 +57,7 @@ File coordination is essential if you read and write files in iCloud, in an app 
 
 ---
 
-#### Design custom document formats for sharing
+## Design custom document formats for sharing
 
 If your app uses a custom file format for documents, [design those file formats](https://developer.apple.com/design/human-interface-guidelines/icloud) to operate well on all platforms. iCloud document storage lets someone open files on iPhone, iPad, Mac, and other devices.
 

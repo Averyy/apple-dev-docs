@@ -24,7 +24,7 @@ init(parameterID: UInt32, scope: UInt32, element: UInt32, value: Float)
 - (instancetype) initWithParameterID:(UInt32) parameterID scope:(UInt32) scope element:(UInt32) element value:(float) value;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the parameters, see [`AudioUnitParameterID`](../../AudioToolbox/audiounitparameterid.md), [`AudioUnitScope`](../../AudioToolbox/audiounitscope.md), and [`AudioUnitElement`](../../AudioToolbox/audiounitelement.md). The valid range of values depend on the parameter you set.
 

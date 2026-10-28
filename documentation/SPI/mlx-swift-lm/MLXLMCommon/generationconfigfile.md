@@ -17,7 +17,7 @@ JSON wrapper for `generation_config.json` file.
 struct GenerationConfigFile
 ```
 
-#### Overview
+## Overview
 
 This file can override values from `config.json`, particularly `eos_token_id`. Following mlx-lm Python behavior, if `generation_config.json` exists and contains `eos_token_id`, it takes precedence over the value in `config.json`.
 

@@ -27,7 +27,7 @@ struct BNNSLayerParametersLSTM
 typedef struct { ... } BNNSLayerParametersLSTM;
 ```
 
-#### Overview
+## Overview
 
 Use a [`BNNSLayerParametersLSTM`](./bnnslayerparameterslstm.md) structure to define the parameters of a long short-term memory (LSTM) operation.
 

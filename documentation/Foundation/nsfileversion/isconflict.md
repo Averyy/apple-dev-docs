@@ -25,7 +25,7 @@ var isConflict: Bool { get }
 @property (readonly, getter=isConflict) BOOL conflict;
 ```
 
-#### Discussion
+## Discussion
 
 When two or more versions of a file are written at the same time, perhaps because the file is saved in the cloud and one or more of the writers were offline when they were writing, the system attempts to resolve the conflict automatically. It does this by picking one of the file versions to be the current file and setting this property to [`true`](../../Swift/true.md) for the other file versions that are in conflict.
 

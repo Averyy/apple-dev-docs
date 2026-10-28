@@ -23,7 +23,7 @@ var kCTFontTableFeat: Int { get }
 kCTFontTableFeat
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for layout feature.
 

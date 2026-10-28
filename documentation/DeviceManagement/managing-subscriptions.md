@@ -5,7 +5,7 @@
 
 Administer auto-renewable subscription seats for your organization.
 
-#### Overview
+## Overview
 
 The Asset Management API provides dedicated endpoints for managing auto-renewable subscriptions separately from standard app and book assets. Unlike traditional assets that have a single pool of assigned and available seats, subscriptions maintain seat counts broken down by renewal state. Each seat is either *renewing*, meaning it automatically renews at the end of its current billing period, or *expiring*, meaning it doesn’t renew and becomes inactive when the current billing period ends.
 
@@ -15,7 +15,7 @@ Subscriptions are identified by two values: a `parentAdamId` that refers to the 
 
 > ❗ **Important**:  Before content managers can purchase subscriptions into your managed organizational unit, your device management service must declare that it supports subscription management. Send a POST request to `/v2/subscriptions/enable` for each token you manage. Until you do, subscriptions aren’t available for purchase into the organizational unit that the token represents. You can disable subscription management later, but only while the organizational unit has no subscriptions.
 
-#### Declare subscription management support
+## Declare subscription management support
 
 Subscription management support is a declaration you make per token, and it applies to the organizational unit that the token represents. Use these two endpoints to state explicitly whether your device management service supports subscriptions for an organizational unit. Neither request takes a body, and both report the resulting state in `subscriptionManagement`.
 
@@ -61,7 +61,7 @@ Disabling is a positive declaration that the organizational unit doesn’t suppo
 
 The `subscriptionManagement` field reports the state that the server recorded for the token. Confirm that it matches the state you intended before you rely on the other subscription endpoints.
 
-#### Retrieve subscription seat counts
+## Retrieve subscription seat counts
 
 Send a GET request to `/v2/subscriptions` to retrieve the subscriptions your organization manages. Filter results by `parentAdamId` or `adamId`, or omit both to retrieve all subscriptions. The response breaks down seat counts by renewal state for both assigned and available seats.
 
@@ -123,7 +123,7 @@ This endpoint uses cursor-based pagination. Pass the `nextCursor` value as the `
 
 The response can include subscriptions that previously had seats but no longer do. These entries appear with all counts set to zero. Your device management service should handle zero-count subscriptions gracefully rather than treating them as errors.
 
-#### Query individual subscription assignments
+## Query individual subscription assignments
 
 Send a GET request to `/v2/subscriptions/assignments` to retrieve per-user assignment details. Filter results by `parentAdamId`, `adamId`, or `clientUserId`. Each assignment record includes a `renewing` Boolean value that reflects the renewal state of the assignment.
 
@@ -159,7 +159,7 @@ This endpoint uses cursor-based pagination. Pass the `nextCursor` value as the `
 
 A `renewing` value of `true` means the user’s assignment auto-renews at the end of the current billing period. A value of `false` means the assignment expires at the end of its current billing period. Use this information to identify which assignments need attention before they lapse.
 
-#### Plan seat allocation based on renewal state
+## Plan seat allocation based on renewal state
 
 The renewal state of a seat determines what happens to it when a subscription period ends or when your device management service removes an assignment.
 
@@ -187,7 +187,7 @@ Compare this to a scenario where the organization has marked seats for expiratio
 
 Expose the *available* `expiring` counts in your device management service so administrators can monitor capacity that they’ll lose at the end of the billing period. Administrators can then choose to create expiring assignments from those seats before the period ends, or purchase additional seats to compensate.
 
-#### Check request size limits
+## Check request size limits
 
 The size limits for a [`ManageSubscriptionsRequest`](./managesubscriptionsrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](./serviceconfigresponse/limits-data.dictionary.md).
 
@@ -198,7 +198,7 @@ The following keys are specific to [`ManageSubscriptionsRequest`](./managesubscr
 
 A request that exceeds either limit fails with error `9816` (`This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit.`). For more information, see [Handling error responses](./handling-error-responses.md).
 
-#### Associate subscriptions with users
+## Associate subscriptions with users
 
 To create assignments for subscription seats, send a POST request to `/v2/subscriptions/associate` with the subscription Adam IDs, client user IDs, and the desired renewal state. Set the `renewing` field to `true` to assign renewing seats to the specified users.
 
@@ -215,7 +215,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/subscription
 
 The server processes this request asynchronously and returns an `eventId`. Use the Events Status endpoint at `GET /v2/status` with that `eventId` to track the operation’s progress.
 
-##### Assign seats in an expiring state
+### Assign seats in an expiring state
 
 Set the `renewing` field to `false` to create assignments using expiring seats. The user receives access to the subscription for the current billing period, but the seat expires at the end of that period without renewal. This is useful when you want to provide temporary access or when you plan to reassign a seat after the current period ends.
 
@@ -229,7 +229,7 @@ Set the `renewing` field to `false` to create assignments using expiring seats. 
 
 An expiring seat with an assignment still counts toward your organization’s assigned seat total until the period ends. You can check the balance between renewing and expiring seats at any time through the Get Subscriptions endpoint, where the `counts` object breaks down both `assigned` and `available` totals by renewal state.
 
-#### Disassociate subscriptions from users
+## Disassociate subscriptions from users
 
 To remove assignments, send a POST request to `/v2/subscriptions/disassociate`. The request supports a `deferred` field that controls when the disassociation takes effect. When `deferred` is `true`, the assignment remains active for the user until the end of the current billing period rather than being removed immediately.
 
@@ -246,7 +246,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/subscription
 
 When `deferred` is `false` or omitted, the disassociation takes effect as soon as the server processes the request. Use deferred disassociation to avoid disrupting users in the middle of a billing period. The server processes this request asynchronously and returns an `eventId`. Check the operation’s status at `GET /v2/status` using that `eventId`.
 
-#### Retrieve subscription administrators
+## Retrieve subscription administrators
 
 The subscription administrator endpoints let your device management service control which users have administrative access to specific subscriptions. This may be required for some developers’ intended app experiences.
 
@@ -280,7 +280,7 @@ The code above results in a response like the following:
 
 This endpoint uses cursor-based pagination. Pass the `nextCursor` value as the `cursor` query parameter in subsequent requests until `nextCursor` is absent.
 
-#### Add subscription administrators
+## Add subscription administrators
 
 Send a POST request to `/v2/subscriptions/admins/add` to designate users as administrators for specific subscriptions. The request body requires an `adamIds` array of subscription identifiers and a `clientUserIds` array of user identifiers.
 
@@ -304,7 +304,7 @@ The server processes this request synchronously and returns a confirmation respo
 }
 ```
 
-#### Remove subscription administrators
+## Remove subscription administrators
 
 Send a POST request to `/v2/subscriptions/admins/remove` to revoke administrator access from users for specific subscriptions. The request body requires an `adamIds` array of subscription identifiers and a `clientUserIds` array of user identifiers.
 

@@ -23,7 +23,7 @@ func updateApplicationContext(_ applicationContext: [String : Any]) throws
 - (BOOL) updateApplicationContext:(NSDictionary<NSString *,id> *) applicationContext error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to transfer a dictionary of data items to the counterpart app. The system sends context data when the opportunity arises, with the goal of having the data ready to use by the time the counterpart wakes up. The counterpart’s session delivers the data to the [`session(_:didReceiveApplicationContext:)`](../wcsessiondelegate/session%28_,didreceiveapplicationcontext%29.md) method of its delegate. A counterpart can also retrieve the data from the [`receivedApplicationContext`](./receivedapplicationcontext.md) property of its session.
 

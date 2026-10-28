@@ -24,7 +24,7 @@ case depthResolvedSample
 MTLMultisampleStencilResolveFilterDepthResolvedSample
 ```
 
-#### Discussion
+## Discussion
 
 The resolve filter selects the stencil sample corresponding to the sample that the depth resolve filter would have selected.
 

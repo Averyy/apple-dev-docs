@@ -25,11 +25,11 @@ func vImageFlatten_ARGB8888(_ argbSrc: UnsafePointer<vImage_Buffer>, _ argbDst: 
 vImage_Error vImageFlatten_ARGB8888(const vImage_Buffer *argbSrc, const vImage_Buffer *argbDst, const Pixel_8888 argbBackgroundColorPtr, bool isImagePremultiplied, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to flatten the source image:
 

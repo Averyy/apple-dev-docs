@@ -17,7 +17,7 @@ Initialize a `TokenIterator` with the given input.
 init(input: LMInput, model: any LanguageModel, cache: [KVCache]? = nil, state: LMOutput.State? = nil, parameters: GenerateParameters, components: GenerationComponents = .init()) throws
 ```
 
-#### Discussion
+## Discussion
 
 If more control is needed over the generation, [`init(input:model:cache:state:processor:sampler:prefill:maxTokens:)`](./init%28input,model,cache,state,processor,sampler,prefill,maxtokens%29.md) allows a caller to specify [`LogitProcessor`](../logitprocessor.md) and [`LogitSampler`](../logitsampler.md) directly.
 

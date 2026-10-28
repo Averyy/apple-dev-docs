@@ -24,11 +24,11 @@ func createBranch(weight: Int, attribute: any NSObjectProtocol) -> Self
 - (instancetype) createBranchWithWeight:(NSInteger) weight attribute:(id<NSObject>) attribute;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created child node.
 
-#### Discussion
+## Discussion
 
 Use this method to specify a possible result of testing this node’s attribute (that is, an answer for this node’s question). The `attribute` parameter an have either of two kinds of values: if this test produces the decision tree’s final result (or action), the value identifies that action; if the next step in the decision tree is to be another question, the value identifies the next attribute to test (or question to ask).
 

@@ -19,7 +19,7 @@ func invalidateUserActivity()
 - (void) invalidateUserActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to invalidate an activity that should no longer be performed.
 

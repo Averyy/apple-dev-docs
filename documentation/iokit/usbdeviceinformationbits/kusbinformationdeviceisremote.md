@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsRemote = 11
 ```
 
-#### Discussion
+## Discussion
 
 This device is "attached" to the controller through a remote connection
 

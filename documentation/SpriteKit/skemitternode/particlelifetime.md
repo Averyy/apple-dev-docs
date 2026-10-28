@@ -25,7 +25,7 @@ var particleLifetime: CGFloat { get set }
 @property (nonatomic) CGFloat particleLifetime;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

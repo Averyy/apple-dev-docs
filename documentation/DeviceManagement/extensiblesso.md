@@ -24,11 +24,11 @@ object ExtensibleSSO
 - [Configuring Platform Single Sign-on](./configuring-platform-single-sign-on.md)
 - [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.extensible-sso` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +40,7 @@ Specify `com.apple.configuration.extensible-sso` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration examples
+### Configuration examples
 
 **Credential**:
 

@@ -19,7 +19,7 @@ An error that indicates an enduring operation wasn’t running.
 case RequestNotInProgress
 ```
 
-#### Discussion
+## Discussion
 
 You cannot stop an enduring action that didn’t start successfully. Check the results of the initial request you sent. For more information, see [`RemoteKeylessEntryEnduringAction`](../remotekeylessentryenduringaction.md).
 

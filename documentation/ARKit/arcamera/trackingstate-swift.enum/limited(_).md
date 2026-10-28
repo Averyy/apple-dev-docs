@@ -20,7 +20,7 @@ case limited(ARCamera.TrackingState.Reason)
 
 - [Managing Session Life Cycle and Tracking Quality](../../managing-session-life-cycle-and-tracking-quality.md)
 
-#### Discussion
+## Discussion
 
 In this state, the positions and transforms of anchors in the scene (especially detected planes) may not be accurate or consistent from one captured frame to the next.
 

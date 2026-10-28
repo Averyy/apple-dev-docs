@@ -21,9 +21,9 @@ Keys common to all declarations used with the Remote Management protocol.
 object DeclarationBase
 ```
 
-#### Discussion
+## Discussion
 
-##### Reason Codes
+### Reason Codes
 
 - `Error.ActivationFailed`: A configuration or asset cannot be activated due to an activation that failed.
 

@@ -24,7 +24,7 @@ func JSValueIsString(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 bool JSValueIsString(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the type of `value` is the string type; otherwise, [`false`](../Swift/false.md).
 

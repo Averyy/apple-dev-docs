@@ -24,11 +24,11 @@ func accessibilityActivate() -> Bool
 - (BOOL) accessibilityActivate;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the element was activated or [`NO`](../no.md) if it was not.
 
-#### Discussion
+## Discussion
 
 You can use this method to make complex controls more readily accessible to users. The accessibility system calls this method when a VoiceOver user double taps the selected element. Your implementation of this method should activate the element and perform whatever other tasks it deems appropriate. For example, you might use the method to activate a control that requires a complex gesture and would be difficult for VoiceOver users to perform, possibly because the gesture has a different meaning when VoiceOver is running.
 

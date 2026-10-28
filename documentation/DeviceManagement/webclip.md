@@ -18,7 +18,7 @@ The profile that configures web clips on the device.
 object WebClip
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.webClip.managed` as the payload type.
 
@@ -30,7 +30,7 @@ A full-screen web clip on iOS devices opens the URL as a web app without a brows
 
 For Shared iPad devices, the system supports this payload on the user channel only.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -42,7 +42,7 @@ For Shared iPad devices, the system supports this payload on the user channel on
 | Allowed in user enrollment | iOS, macOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

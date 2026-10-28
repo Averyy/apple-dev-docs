@@ -21,7 +21,7 @@ Creates an artwork whose image data loads on demand at the requested size.
 init(id: String, artworkProvider: @escaping @Sendable (CGSize) async throws -> ArtworkRepresentation)
 ```
 
-#### Discussion
+## Discussion
 
 The provider returns artwork that matches the requested size when possible. One dimension may differ if the artwork’s aspect ratio differs from the requested size. If the requested size exceeds the artwork’s maximum available size, the provider returns the artwork at its maximum size without enlarging the image.
 

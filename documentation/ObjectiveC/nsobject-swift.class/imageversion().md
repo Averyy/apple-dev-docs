@@ -19,11 +19,11 @@ func imageVersion() -> Int
 - (NSUInteger) imageVersion;
 ```
 
-#### Return Value
+## Return Value
 
 The version of the item.
 
-#### Discussion
+## Discussion
 
 This method is optional. The receiver can return a new version to let the image browser know that it should not use its cache for the item.
 

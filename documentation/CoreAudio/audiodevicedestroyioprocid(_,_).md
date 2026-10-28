@@ -20,11 +20,11 @@ func AudioDeviceDestroyIOProcID(_ inDevice: AudioObjectID, _ inIOProcID: AudioDe
 extern OSStatus AudioDeviceDestroyIOProcID(AudioObjectID inDevice, AudioDeviceIOProcID inIOProcID);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Destroys an AudioDeviceIOProcID.
 

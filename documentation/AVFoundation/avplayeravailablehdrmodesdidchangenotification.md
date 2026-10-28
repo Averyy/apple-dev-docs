@@ -19,7 +19,7 @@ A notification that fires whenever availableHDRModes changes.
 extern NSNotificationName const AVPlayerAvailableHDRModesDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification fires when a value is added or removed from the list of availableHDRModes. This can be caused by display connection/disconnection or resource changes.
 

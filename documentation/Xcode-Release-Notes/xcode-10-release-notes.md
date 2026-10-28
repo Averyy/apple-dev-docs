@@ -4,13 +4,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 10 is available in the Mac App Store and includes SDKs for iOS 12, watchOS 5, macOS 10.14, and tvOS 12. Xcode 10 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 10 requires a Mac running macOS 10.13.6 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Added an export option to the Quick Look popover for data types such as [`NSData`](../Foundation/nsdata.md). (41370369)
 - Newly created schemes now default to being shared by all users of an Xcode project. To create a personal scheme, uncheck the “Shared” checkbox in the “Manage Schemes” sheet. (40223696)
@@ -21,11 +21,11 @@ Xcode 10 is available in the Mac App Store and includes SDKs for iOS 12, watchOS
   The library can be opened via a new toolbar button, the View > Libraries menu, or the ⇧⌘L keyboard shortcut. Content dynamically matches the active editor, so the same UI provides access to code snippets, Interface Builder, SpriteKit, or SceneKit items. The media library is available via a long press on the toolbar button, the View > Libraries menu, or the ⇧⌘M keyboard shortcut. (37318979, 39885726)
 - The Capabilities tab in the Project Editor provides a new Hardened Runtime capability for macOS apps and app extensions. Enabling this capability will opt your app into new security protections provided by macOS 10.14 and will be required for your app to be notarized. (39674498)
 
-###### Known Issues
+#### Known Issues
 
 - Opening Xcode projects and workspaces stored in iCloud Drive, or changing source control branches for an open workspace or project stored in iCloud Drive, might cause Xcode to hang. (34086758)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The New File template for Objective-C header (`.h`) files includes the `NS_ASSUME_NONNULL_BEGIN` and `NS_ASSUME_NONNULL_END` macros. (22753521)
 - Fixed an issue where the text range of a find result wouldn’t be highlighted when selecting from the Find Navigator. (37820835)
@@ -34,19 +34,19 @@ Xcode 10 is available in the Mac App Store and includes SDKs for iOS 12, watchOS
 - Double Click Navigation now defaults to Same as Click. This can be changed in the Navigation pane of Preferences. (37294346)
 - Fixed a crash when pressing the tab key in the code snippet editor. (41296805)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - Xcode 10 adds support for the C++17 headers `<any>`, `<optional>`, and `<variant>`. (39271859)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Clang now correctly handles invalid Objective-C properties that could affect code completion support. (33761186)
 
-##### Asset Catalog
+### Asset Catalog
 
-###### New Features
+#### New Features
 
 - Named colors can now symbolically reference system colors. (39196638)
 - Support for ARKit 3D [`ARReferenceObject`](../ARKit/arreferenceobject.md) assets. (38086640)
@@ -54,18 +54,18 @@ Xcode 10 is available in the Mac App Store and includes SDKs for iOS 12, watchOS
 - Support for varying image and color assets by Light, Dark, and High Contrast appearances on macOS 10.14 and above. (38735965)
 - The background of the asset catalog and view debugger can be set explicitly to light or dark so foreground elements display with sufficient contrast. (39073926)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Auto scaling is no longer turned on by default in asset catalogs for watchOS PDF assets, regardless of selection. (35788204)
 - Fixed a hang that could happen when opening an asset catalog that’s part of an external project reference. (14235592)
 
-##### Build System
+### Build System
 
 See [Build System Release Notes for Xcode 10](./build-system-release-notes-for-xcode-10.md).
 
-##### Command Line Tools
+### Command Line Tools
 
-###### New Features
+#### New Features
 
 - The Command Line Tools package installs the macOS system headers inside the macOS SDK. Software that compiles with the installed tools will search for headers within the macOS SDK provided by either Xcode at:
 
@@ -83,24 +83,24 @@ See [Build System Release Notes for Xcode 10](./build-system-release-notes-for-x
 
   To make sure that you’re using the intended version of the command line tools, run `xcode-select -s` ** or `xcode select -s /Library/Developer/CommandLineTools` after installing.
 
-##### Create ML
+### Create ML
 
-###### New Features
+#### New Features
 
 - [`MLDataTable`](../CreateML/mldatatable.md), [`MLDataColumn`](../CreateML/mldatacolumn.md), and [`MLUntypedColumn`](../CreateML/mluntypedcolumn.md) support math operations, range-based slicing, multiple column sub-selection, type conversion and additional data preprocessing methods. (38199042)
 - Augmentation supports the ability to crop images. (42077294)
 
-###### Known Issues
+#### Known Issues
 
 - Create ML isn’t supported for use in Command Line Tools. (40637430)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Changing the name of a model saves correctly when clicking off the field. (40437531)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - You can change the appearance of your macOS app at runtime by using the Debug > View Debugging > Appearance menu, the Override Appearance menu in the debug bar, or the touch bar. (39448599)
 - Xcode’s view debugger adds an option to choose between light and dark canvas background color. (39159102)
@@ -114,16 +114,16 @@ See [Build System Release Notes for Xcode 10](./build-system-release-notes-for-x
 
   Selecting command encoder items in Debug Navigator will bring up a graph showing how encoders depend on each other through resource usage. Zoom in to get more information about attachments and encoders.Every draw call has new “Geometry” item where you can see 3D visualization of your post transform vertex data alongside with your vertex inputs and outputs.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The Memory Gauge Report now reports the physical footprint consistently across all the platforms. (20472364)
 - The performance of the first Swift expression evaluation has been optimized when a large number of static Swift modules are present. (40905971)
 - Xcode waits for a simulator to be available before attempting to run an app on that simulator. (39116182)
 - Options in the Debug > View Debugging menu, like Show View Frames, now continue the target application as expected. (26649378)
 
-##### Deprecation Notices
+### Deprecation Notices
 
-###### Deprecations
+#### Deprecations
 
 - Building with libstdc++ was deprecated with Xcode 8 and is not supported in Xcode 10 when targeting iOS. C++ projects must now migrate to libc++ and are recommended to set a deployment target of macOS 10.9 or later, or iOS 7 or later. Besides changing the C++ Standard Library build setting, developers should audit hard-coded linker flags and target dependencies to remove references to libstdc++ (including -lstdc++, -lstdc++.6.0.9, libstdc++.6.0.9.tbd, and libstdc++.6.0.9.dylib). Project dependencies such as static archives that were built against libstdc++ will also need to be rebuilt against libc++. (40885260)
 - Libgcc is obsoleted. Xcode 10 can no longer build apps with deployment targets of macOS 10.4 and 10.5. (42818150, 38035243)
@@ -132,9 +132,9 @@ See [Build System Release Notes for Xcode 10](./build-system-release-notes-for-x
 - Xcode 10 is the last release that will support Swift 3. Migrate your projects from Swift 3 code to Swift 4.2 syntax by opening the project and choosing Edit > Convert > To Current Swift Syntax… (43101816)
 - The macOS 10.14 SDK no longer contains support for compiling 32-bit applications. If developers need to compile for i386, Xcode 9.4 or earlier is required. (39858111)
 
-##### Devices
+### Devices
 
-###### Known Issues
+#### Known Issues
 
 - Devices running iOS 12 may fail to take screenshots requested from Xcode’s Devices window. (42873539)
 
@@ -143,22 +143,22 @@ See [Build System Release Notes for Xcode 10](./build-system-release-notes-for-x
 
   **Workaround:** Clean the build folder and run the app again.
 
-##### Documentation Viewer
+### Documentation Viewer
 
-###### New Features
+#### New Features
 
 - Quick Help uses a single column layout, making better use of the available space that it’s presented in. (39518057)
 - Code listings in the documentation viewer and Quick Help match the user’s currently selected theme colors. (39435799)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - There is a new graph mode available for threads when using System Trace instrumentation in Instruments 10 – Thread States – which shows only the thread state lane. The previous OS Fundamentals graph style (system calls, VM faults, and thread state lanes) is still available as well. (37727022)
 - The support for system trace instrumentation prior to Instruments 8 has been removed. Some trace files containing data from these instruments will no longer open in Instruments. A version of Xcode prior to Xcode 10 can be downloaded from developer.apple.com in order to view these older files. (38506479)
 - You can now build and distribute your own custom instruments. (37987666)
 
-###### Known Issues
+#### Known Issues
 
 - Instruments may fail to launch if Xcode has not finished preparing any attached devices for development. (43066159)
 
@@ -168,45 +168,45 @@ See [Build System Release Notes for Xcode 10](./build-system-release-notes-for-x
 
   **Workaround:** Launch Console on your Mac, select the target device, and leave Console running. This connection between Console and the target will be enough keep Instruments from hanging at the end of a recording.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Most templates failed when profiling on iOS versions prior to iOS 11.3. (39759266)
 
-##### Interface Builder
+### Interface Builder
 
 See [Interface Builder Release Notes for Xcode 10](./interface-builder-release-notes-for-xcode-10.md).
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - Xcode 10 supports a new Xcode Localization Catalog (`.xcloc`) export and import format for localization data that can contain both an XLIFF file and other localizable content such as image files. (28662326)
 - Xcode offers to enable Base Internationalization for projects that don’t yet use it but support multiple localizations. (13178091)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - In an XLIFF produced by the Export For Localization command, content from a file outside the project directory will be referenced via a path relative to the project directory rather than an absolute path. (38680116)
 - Xcode now extracts the appropriate values of the following `Info.plist` keys for localization: `UTExportedTypeDeclarations`, `UTImportedTypeDeclarations`, `UIApplicationShortcutItems`, `INAlternativeAppNames`. (40853982)
 
-##### Metal
+### Metal
 
-###### New Features
+#### New Features
 
 - When calling the metal compiler directly you must use the `-c` flag when building a `.metal` file. Not adding the option will result in an error when the resulting `.air` file is consumed by `metallib`. Calling the Metal compiler using Xcode’s build system will add the flag automatically. (40655432)
 
-##### Playgrounds
+### Playgrounds
 
-###### New Features
+#### New Features
 
 - Playgrounds in Xcode now execute code incrementally, compiling new lines of code when you type Shift-Return or press the Run button next to the new line of code. This is especially useful for long tasks that you don’t want to run repeatedly, like training a machine learning model or setting up your live view’s state, and allows you to progressively iterate on your ideas without restarting the playground. (34313149)
 
-###### Known Issues
+#### Known Issues
 
 - Switching to a non-default toolchain while in a playground may cause Xcode to crash. (43659135)
 
   **Workaround:** Switch back to the default toolchain and then open the playground.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where playgrounds would fail to run, presenting a “couldn’t lookup symbols” error message. (38505726)
 - Fixed a crash that occurred in playgrounds with inline results. (38281379)
@@ -214,35 +214,35 @@ See [Interface Builder Release Notes for Xcode 10](./interface-builder-release-n
 - Fixed an issue that prevented the iOS Game playground template from working correctly. (38828600)
 - Code completion is now supported in auxiliary source files in playgrounds. (34363732)
 
-##### Refactoring
+### Refactoring
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the editing field of Refactor > Rename would not get keyboard focus if the “Reduce motion” Accessibility option was turned on. (40719848)
 
-##### Server
+### Server
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Certain Xcode Server logs, such as trigger logs, are now visible in the integration Logs report. (40462372)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### New Features
+#### New Features
 
 - Support for uploading apps to Apple via the command line. The `xcodebuild -exportArchive` command will perform an upload if the provided `ExportOptions.plist` contains a key named “destination” with value “upload”. In addition, an Apple ID account with the necessary App Store Connect role and provider membership must be added in Xcode’s Accounts preference pane. The “app-store”, “developer-id”, and “validation” distribution methods are supported for use from `xcodebuild`. (28555930)
 - The Developer ID distribution option in Xcode’s Organizer now provides support for uploading apps to Apple to be notarized. After building an archive, this option can be selected in the Organizer by clicking the Distribute App button and then selecting the Developer ID method and the Upload destination. In order to upload an app to be notarized, you must enter an Apple ID in Xcode’s Accounts preferences pane with the necessary App Store Connect role and provider membership. In addition, apps uploaded to be notarized must be signed with a Developer ID certificate. The distribution workflow can create this certificate if necessary, but requires an Apple ID account with the Agent role in order to do so.
 
   After uploading an app to be notarized, you can view your app’s status in the Organizer window by selecting your archive and clicking the Show Status Log button. When you receive notification that your app has been notarized, you can export it from the Organizer window by selecting your archive and clicking the Export App button. The exported app contains a stapled ticket and is ready for distribution. (36409604)
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - The Copy and Paste items in Simulator’s Edit menu are no longer used for synchronization with a simulator devices’s pasteboard. The Edit menu now has explicit menu items to handle these actions. (38225290)
 - When running tests from xcodebuild or Xcode Server with iOS Simulator destinations, test failures will result in the collection of log archives embedded in the test action result bundle. (42172805)
 
-###### Known Issues
+#### Known Issues
 
 - Video output might stop playing on external displays if using keyboard commands for fast forward and rewind. (41917187)
 
@@ -253,9 +253,9 @@ See [Interface Builder Release Notes for Xcode 10](./interface-builder-release-n
 
   Your application must still be granted Microphone permission inside the simulator as well. macOS applies its permission policy to Simulator application as a whole, across all simulator runtime versions and all applications inside a simulator. Each simulator applies permission policies to individual applications just like devices. (40113388)
 
-##### Source Control
+### Source Control
 
-###### New Features
+#### New Features
 
 - Improved source control authentication workflows provide more information and greater control to perform an authenticated operation. (33726987)
 - Integration with Bitbucket Cloud and Bitbucket Server source control. (31156776)
@@ -265,23 +265,23 @@ See [Interface Builder Release Notes for Xcode 10](./interface-builder-release-n
 - SSH keys can be easily managed using the new create, validate and upload workflows with GitHub, Bitbucket, and GitLab. (31798220)
 - Rebase support when pulling source control changes. (8937399)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode doesn’t support ed25519 encrypted SSH keypairs. (40912136)
 
   **Workaround:** Use an SSH key pair that uses a different form of encryption.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The source control authors editor submode performance is improved to load and scroll faster. (40179372)
 
-##### Source Editor
+### Source Editor
 
 See [Source Editor Release Notes for Xcode 10](./source-editor-release-notes-for-xcode-10.md).
 
-##### Static Analyzer
+### Static Analyzer
 
-###### New Features
+#### New Features
 
 - The static analyzer checks for a common performance anti-pattern when using Grand Central Dispatch, which involves waiting on a callback using a semaphore:
 
@@ -307,13 +307,13 @@ See [Source Editor Release Notes for Xcode 10](./source-editor-release-notes-for
   Such a pattern can degrade performance and cause hangs in your application. The check is currently disabled by default, but can be enabled using the build setting “Performance Anti-Patterns with Grand Central Dispatch”. (37312818)
 - The static analyzer is more efficient and will report additional issues on most programs. (36672459)
 
-##### Swift
+### Swift
 
 See [Swift 4.2 Release Notes for Xcode 10](./swift-4_2-release-notes-for-xcode-10.md).
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - Schemes can now be configured to only run a fixed subset of tests in a test bundles and not automatically include new tests that are added to the bundle. This can be configured in the Test pane of the scheme editor as an option for each test bundle. (35050431)
 - XCTest UI tests now capture the standard output and error streams from launched target apps to a file in the result bundle. (30929875)
@@ -371,7 +371,7 @@ See [Swift 4.2 Release Notes for Xcode 10](./swift-4_2-release-notes-for-xcode-1
 - The General pane in Preferences now includes UI for controlling the degree of parallelism that Xcode should attempt while running tests in parallel. The “Mac Test Parallelization” slider can be used to adjust the number of runners to spawn when running macOS unit tests in parallel. The “Simulator Test Parallelization” slider can be used to adjust the number of simulator clones to spawn when running iOS or tvOS app/UI tests in parallel. Setting either of these sliders to “Auto” (the default) instructs Xcode to pick a default number. Note that when testing from `xcodebuild`, the `-parallel-testing-worker-count` and `-maximum-parallel-testing-workers` command line options take precedence over these values. (41779908)
 - XCTest has added new API on [`XCUIElement`](../XCUIAutomation/xcuielement.md) for capturing the entire state of the UI, either for exporting to external systems or for inspecting locally. It includes a type representing a snapshot of the UI and API for exporting that snapshot to a dictionary of standard value types (strings and numbers). (35168151)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Errors that may lead to missing or no coverage data are now displayed in the test log. If you notice any such errors, please file a bug using [Apple Byg Reporter](https://bugreport.apple.com), and attach a zipped archive of your project’s folder in `DerivedData`. (39930570)
 - Xcode no longer crashes during UI test recording when interacting with content inside of [`WKWebView`](../WebKit/wkwebview.md) and [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md). (33593609)

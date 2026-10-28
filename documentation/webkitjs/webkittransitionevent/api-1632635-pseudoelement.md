@@ -16,7 +16,7 @@ An abstract element representing the portion of the CSS render tree on which the
 readonly attribute DOMString pseudoElement;
 ```
 
-#### Discussion
+## Discussion
 
 This element is an empty string if the transition occurs on a non-abstract element.
 

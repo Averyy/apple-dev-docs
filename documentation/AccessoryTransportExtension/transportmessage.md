@@ -15,11 +15,11 @@ A structure that represents a message for transmission between the system and an
 struct TransportMessage
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryTransportSession.EventHandler`](./accessorytransportsession/eventhandler.md) protocol’s [`messageReceived(_:completion:)`](./accessorytransportsession/eventhandler/messagereceived%28_,completion%29.md) method receives messages of this type from the system. Use the [`sendMessageToDataProvider(_:)`](./accessorytransportsession/sendmessagetodataprovider%28_%29.md) method to send messages from your accessory back to the data provider extension.
 
-#### Correlate messages with capabilities
+## Correlate messages with capabilities
 
 The [`sessionID`](./transportmessage/sessionid.md) property identifies the capability session to which the message belongs. The system generates this identifier at feature enrollment time, and the value is fixed while the accessory remains paired through AccessorySetupKit.
 

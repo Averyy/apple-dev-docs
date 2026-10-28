@@ -24,7 +24,7 @@ var sharpnessAmount: Float { get set }
 @property (readwrite) float sharpnessAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no sharpness, and a value of `1` indicates maximum sharpness.
 

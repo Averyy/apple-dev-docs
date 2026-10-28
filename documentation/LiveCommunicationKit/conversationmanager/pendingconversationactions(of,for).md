@@ -19,7 +19,7 @@ Queries a conversation for pending actions of a specified type.
 final func pendingConversationActions(of conversationActionClass: ConversationAction.Type, for conversation: Conversation) -> [ConversationAction]
 ```
 
-#### Return Value
+## Return Value
 
 An array of a conversation’s pending conversation actions of the specified type.
 

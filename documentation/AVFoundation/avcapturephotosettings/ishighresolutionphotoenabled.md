@@ -24,7 +24,7 @@ var isHighResolutionPhotoEnabled: Bool { get set }
 @property (nonatomic, getter=isHighResolutionPhotoEnabled) BOOL highResolutionPhotoEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this setting is [`false`](../../Swift/false.md) (the default), a photo capture output delivers images with the dimensions specified by the [`formatDescription`](../avcapturedevice/format/formatdescription.md) property of the source [`AVCaptureDevice`](../avcapturedevice.md) object’s active capture format. However, some devices and capture formats allow for still image capture at resolutions higher than their video capture (and streaming photo preview) resolution. To capture the highest possible resolution for still photos (described by the capture format’s [`highResolutionStillImageDimensions`](../avcapturedevice/format/highresolutionstillimagedimensions.md) property), change this setting to [`true`](../../Swift/true.md).
 

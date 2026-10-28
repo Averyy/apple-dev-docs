@@ -24,7 +24,7 @@ func insertTimeRange(_ timeRange: CMTimeRange, of asset: AVAsset, at startTime: 
 - (BOOL) insertTimeRange:(CMTimeRange) timeRange ofAsset:(AVAsset *) asset atTime:(CMTime) startTime copySampleData:(BOOL) copySampleData error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method may add new tracks to the target movie to ensure that all tracks of the asset are represented in the inserted time range.
 

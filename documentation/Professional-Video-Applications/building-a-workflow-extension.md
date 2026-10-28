@@ -5,17 +5,17 @@
 
 Create a workflow extension in Xcode by using the Final Cut Pro Workflow Extension template.
 
-#### Overview
+## Overview
 
 When you are ready to develop a workflow extension, build it using the Xcode template that comes with the Workflow Extension SDK. The Xcode template packages the extension code in a specific manner (`.appex`) and embeds it in an app bundle. When a user installs the app containing your extension, macOS registers the workflow extension, and Final Cut Pro makes the extension available in its interface.
 
-##### Install the Workflow Extension SDK
+### Install the Workflow Extension SDK
 
 Download and install the Workflow Extension SDK from [Apple’s developer website](https://developer.apple.com/download/all/?q=WorkflowExtensions).
 
 Run the installer that comes with the Workflow Extension SDK. It installs the relevant frameworks and the Xcode template in the appropriate locations on your computer.
 
-##### Add a Workflow Extension Target to Your Project
+### Add a Workflow Extension Target to Your Project
 
 You create and configure the workflow extension as a separate target alongside your app. Start by launching Xcode and opening your existing macOS app project. Then choose File > New > Target, select the Final Cut Pro Workflow Extension template from the Workflow Extension section of the macOS platform, and click Next, as shown in the following image.
 
@@ -25,7 +25,7 @@ Enter a product name for your extension and set other options, like your organiz
 
 The Xcode template sets up relevant build options and creates an initial set of project files for the workflow extension. A workflow extension template includes an `Info.plist` file, a view controller class, and a default user interface. With this initial set of files, you can build and run the project even before you customize the workflow extension code. During the build process, Xcode inserts the extension in the proper place in your app bundle, and you get a workflow extension bundle (ending in `.appex`) that runs in its own process.
 
-##### Add Keys to the Info Property List Template
+### Add Keys to the Info Property List Template
 
 The default `Info.plist` file identifies your workflow extension and may specify some details about your extension under the `NSExtension` key.
 
@@ -55,7 +55,7 @@ For example, to limit the minimum size of the floating window to 100 x 100 pixel
 
 For more information, see [Set a Minimum Floating Window Size](./designing-workflow-extensions.md#Set-a-Minimum-Floating-Window-Size).
 
-##### Modify the Workflow Extension Principal Class
+### Modify the Workflow Extension Principal Class
 
 A workflow extension is essentially a view controller class for the view hosted in the Final Cut Pro interface. The Xcode template provides a subclass of `NSViewController`, which is the principal class that serves as the primary view controller of the workflow extension. When Final Cut Pro  (the host app) invokes your extension, an operating system service instantiates this class.
 
@@ -63,7 +63,7 @@ The principal class has stubs for methods you can modify to customize the workfl
 
 When a user closes an extension’s floating window, the view controller invokes the [`viewWillDisappear()`](../AppKit/nsviewcontroller/viewwilldisappear%28%29.md) method of your extension’s principal class, and the view disappears from the window. Override the `viewWillDisappear` method to remove references to objects that you no longer need or anything you need to do when the view disappears. For example, you may use this method to stop an audio session or to manage any custom objects in your extension.
 
-##### Enable and Verify Your Workflow Extension
+### Enable and Verify Your Workflow Extension
 
 To test your workflow extension before submitting it to the app store, you must enable it by installing the containing app in your `/Application` folder and launching the app once from there. This step makes Final Cut Pro recognize and display your extension in its interface.
 
@@ -71,7 +71,7 @@ To verify that your extension is available in Final Cut Pro, check the extension
 
 > **Note**:  Final Cut Pro displays an extension menu in its toolbar only if it has available workflow extensions.
 
-##### Debug Your Workflow Extension
+### Debug Your Workflow Extension
 
 Debugging your workflow extension in Xcode is similar to debugging any other process in an Xcode debugger. You can connect the Xcode debugger to a workflow extension process before or after launching a workflow extension.
 

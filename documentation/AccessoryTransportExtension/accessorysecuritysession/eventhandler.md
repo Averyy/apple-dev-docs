@@ -19,7 +19,7 @@ protocol EventHandler
 
 - [Receiving iOS notifications on an accessory](../receiving-ios-notifications-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Implement this protocol to respond to key exchange messages and session invalidation during the cryptographic key exchange process.
 

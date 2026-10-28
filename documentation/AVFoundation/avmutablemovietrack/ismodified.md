@@ -24,7 +24,7 @@ var isModified: Bool { get set }
 @property (nonatomic, getter=isModified) BOOL modified;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `YES` when the `AVMutableMovieTrack` object has been modified since it was created, was last written, or had its modified state cleared.
 

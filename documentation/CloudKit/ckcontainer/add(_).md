@@ -25,7 +25,7 @@ func add(_ operation: CKOperation)
 - (void) addOperation:(CKOperation *) operation;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds the operation to a queue that the container manages. The queue’s operations execute on background threads concurrently, and with default priorities. When you add an operation to the queue, its container becomes the current container.
 

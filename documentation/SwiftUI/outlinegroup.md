@@ -23,7 +23,7 @@ struct OutlineGroup<Data, ID, Parent, Leaf, Subgroup> where Data : RandomAccessC
 
 - [Displaying data in lists](./displaying-data-in-lists.md)
 
-#### Overview
+## Overview
 
 Use an outline group when you need a view that can represent a hierarchy of data by using disclosure views. This allows the user to navigate the tree structure by using the disclosure views to expand and collapse branches.
 
@@ -64,7 +64,7 @@ OutlineGroup(data, children: \.children) { item in
 }
 ```
 
-##### Type parameters
+### Type parameters
 
 Five generic type constraints define a specific `OutlineGroup` instance:
 

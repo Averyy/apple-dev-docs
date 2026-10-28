@@ -15,7 +15,7 @@ Find information about a specific audio recording when a segment of it’s part 
 - visionOS 1.0+
 - watchOS 8.0+
 
-#### Overview
+## Overview
 
 ShazamKit uses the unique acoustic *signature* of an audio recording to find a match. This signature captures the time-frequency distribution of the audio signal energy, and is much smaller than the original audio. It’s also a one-way conversion, so it’s not possible to convert the signature back to the recording.
 

@@ -15,11 +15,11 @@ Configures the minimum deployment target version for custom platforms.
 static func custom(_ platformName: String, versionString: String) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 5.6
 

@@ -25,7 +25,7 @@ let NSURLErrorFailingURLErrorKey: String
 extern NSString * const NSURLErrorFailingURLErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSURL`](./nsurl.md) instance.
 

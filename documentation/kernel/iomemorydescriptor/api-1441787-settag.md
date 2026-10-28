@@ -15,7 +15,7 @@ Set the tag for the memory descriptor.
 virtual void setTag(IOOptionBits tag);
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the tag for the memory descriptor. Tag bits are not interpreted by IOMemoryDescriptor.
 

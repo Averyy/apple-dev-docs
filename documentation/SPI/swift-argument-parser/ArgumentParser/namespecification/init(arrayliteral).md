@@ -14,7 +14,7 @@ Inherited from `ExpressibleByArrayLiteral.init(arrayLiteral:)`.
 ## Declaration
 
 ```swift
-init(arrayLiteral elements: NameSpecification.Element...)
+init(arrayLiteral elements: Element...)
 ```
 
 

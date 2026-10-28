@@ -23,11 +23,11 @@ class func slidingAttachment(with item1: any UIDynamicItem, attachedTo item2: an
 + (instancetype) slidingAttachmentWithItem:(id<UIDynamicItem>) item1 attachedToItem:(id<UIDynamicItem>) item2 attachmentAnchor:(CGPoint) point axisOfTranslation:(CGVector) axis;
 ```
 
-#### Return Value
+## Return Value
 
 A new attachment object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 For this behavior, each item acts like it is at the end of a solid rod attached to its anchor point. Both items start with the same anchor point, but as animations progress, each item’s anchor point is allowed to slide along the specified axis of translation independently. So if one item moves, it pushes the translation axis and the other item with it. The items do not rotate relative to the axis of translation or to each other, but the proximity of the items to one another varies depending on the movement of each item’s anchor point along the translation axis.
 

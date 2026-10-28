@@ -22,11 +22,11 @@ optional func browser(_ browser: NSBrowser, writeRowsWith rowIndexes: IndexSet, 
 - (BOOL) browser:(NSBrowser *) browser writeRowsWithIndexes:(NSIndexSet *) rowIndexes inColumn:(NSInteger) column toPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the dragging operation to proceed (see discussion for further details); [`false`](../../Swift/false.md) to disallow it.
 
-#### Discussion
+## Discussion
 
 This method is called after a drag operation has been allowed to start ([`browser(_:canDragRowsWith:inColumn:with:)`](./browser%28_,candragrowswith,incolumn,with%29.md) returns [`true`](../../Swift/true.md)), but before it actually begins.
 

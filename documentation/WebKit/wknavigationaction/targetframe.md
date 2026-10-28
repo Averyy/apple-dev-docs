@@ -24,7 +24,7 @@ var targetFrame: WKFrameInfo? { get }
 @property (nonatomic, copy, readonly, nullable) WKFrameInfo * targetFrame;
 ```
 
-#### Discussion
+## Discussion
 
 If the target of the navigation is a new window, this property is `nil`.
 

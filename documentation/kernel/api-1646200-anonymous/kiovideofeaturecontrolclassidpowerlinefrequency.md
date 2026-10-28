@@ -13,7 +13,7 @@
 kIOVideoFeatureControlClassIDPowerLineFrequency = 'pwfq'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl to specify the power line frequency to properly implement anti-flicker processing. The units for the contorl's absolute value are hertz (Hz).
 

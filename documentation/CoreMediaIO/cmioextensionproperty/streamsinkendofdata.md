@@ -20,7 +20,7 @@ static let streamSinkEndOfData: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyStreamSinkEndOfData;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a number that represents a Boolean value: `1` indicates the stream is at its end, and `0` indicates that more data exists.
 

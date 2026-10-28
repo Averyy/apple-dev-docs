@@ -20,7 +20,7 @@ class var supportsWorldTracking: Bool { get }
 @property (class, nonatomic, readonly) BOOL supportsWorldTracking;
 ```
 
-#### Discussion
+## Discussion
 
 Call this function before attempting to enable world tracking in a face tracking configuration using [`isWorldTrackingEnabled`](./isworldtrackingenabled.md).
 

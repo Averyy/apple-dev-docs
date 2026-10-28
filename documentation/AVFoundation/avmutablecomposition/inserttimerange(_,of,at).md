@@ -27,7 +27,7 @@ func insertTimeRange(_ timeRange: CMTimeRange, of asset: AVAsset, at startTime: 
 - (BOOL) insertTimeRange:(CMTimeRange) timeRange ofAsset:(AVAsset *) asset atTime:(CMTime) startTime error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method may add new tracks to ensure that all tracks of the asset are represented in the inserted time range.
 

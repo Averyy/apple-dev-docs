@@ -25,7 +25,7 @@ func invert()
 - (void) invert;
 ```
 
-#### Discussion
+## Discussion
 
 Inverting a mutable character set, whether by [`invert()`](./invert%28%29.md) or by [`inverted`](../nscharacterset/inverted.md), is much less efficient than inverting an immutable character set with [`inverted`](../nscharacterset/inverted.md).
 

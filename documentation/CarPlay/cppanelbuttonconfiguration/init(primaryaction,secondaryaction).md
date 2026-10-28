@@ -21,7 +21,7 @@ init(primaryAction: CPTextButton, secondaryAction: CPTextButton?)
 - (instancetype) initWithPrimaryAction:(CPTextButton *) primaryAction secondaryAction:(CPTextButton *) secondaryAction;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized panel button configuration object.
 

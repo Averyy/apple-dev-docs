@@ -16,7 +16,7 @@ Resets the extension domain.
 func reset() async throws
 ```
 
-#### Discussion
+## Discussion
 
 You typically call this when you need to delete all previously-provided contacts for the domain. The next invocation of the app extension restarts content enumeration for the domain.
 

@@ -4,7 +4,7 @@
 
 Prepare your app to be suspended.
 
-#### Overview
+## Overview
 
 Apps move to the background state for many reasons. When the user exits a foreground app, that app moves to the background state briefly before UIKit suspends it. The system may also launch an app directly into the background state, or move a suspended app into the background, and give it time to perform important tasks.
 
@@ -17,7 +17,7 @@ All state transitions result in UIKit sending notifications to the appropriate d
 
 You can support both types of delegate objects, but UIKit always uses scene delegate objects when they’re available. UIKit notifies only the scene delegate associated with the specific scene that’s entering the background.
 
-##### Quiet your app upon deactivation
+### Quiet your app upon deactivation
 
 The system deactivates apps for several reasons. When the user exits the foreground app, the system deactivates that app immediately before moving it to the background. The system also deactivates apps when it needs to interrupt them temporarily — for example, to display system alerts. In the case of a system panel, the system reactivates the app when the user dismisses the panel.
 
@@ -36,7 +36,7 @@ Use deactivation to preserve the user’s data and put your app in a quiet state
 - Don’t commit any new Metal work to be processed.
 - Don’t commit any new OpenGL commands.
 
-##### Release resources upon entering the background
+### Release resources upon entering the background
 
 When your app transitions to the background, release memory and free up any shared resources your app is holding. For an app transitioning from the foreground to the background, freeing up memory is especially important. The foreground has priority over memory and other system resources, and the system terminates background apps as needed to make those resources available. Even if your app wasn’t in the foreground, perform checks to ensure that it consumes as few resources as possible.
 
@@ -61,7 +61,7 @@ You don’t need to discard named images that you loaded from your app’s asset
 
 Make sure your app isn’t holding any shared system resources when it transitions to the background. If it continues accessing resources like the camera or a shared system database after transitioning to the background, the system terminates your app to free up that resource. If you use a system framework to access a resource, check the framework’s documentation for guidelines about what to do.
 
-##### Prepare your UI for the app snapshot
+### Prepare your UI for the app snapshot
 
 After your app enters the background and your delegate method returns, UIKit takes a snapshot of your app’s current user interface. The system displays the resulting image in the app switcher. It also displays the image temporarily when bringing your app back to the foreground.
 
@@ -69,7 +69,7 @@ Your app’s UI must not contain any sensitive user information, such as passwor
 
 > **Note**:  For apps that support state preservation and restoration, the system begins the preservation process shortly after your delegate method returns. Removing sensitive data also prevents that information from being saved in your app’s preservation archive. For more information, see [Preserving your app’s UI across launches](./preserving-your-app-s-ui-across-launches.md).
 
-##### Respond to important events in the background
+### Respond to important events in the background
 
 Apps don’t normally receive any extra execution time after they enter the background. However, UIKit does grant execution time to apps that support any of the following time-sensitive capabilities:
 

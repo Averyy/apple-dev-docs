@@ -21,7 +21,7 @@ Returns a new data buffer created by removing the given number of bytes from the
 func advanced(by amount: Int) -> Data
 ```
 
-#### Return Value
+## Return Value
 
 A newly created data buffer that is shorter by the given amount than the original.
 

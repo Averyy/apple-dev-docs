@@ -25,11 +25,11 @@ convenience init?(contentsOf fileURL: URL!)
 - (instancetype) initWithContentsOfURL:(NSURL *) fileURL;
 ```
 
-#### Return Value
+## Return Value
 
 An item provider for the specified file, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 The system uses the URL’s filename extension to select an appropriate universal type identifier. If the system can’t determine a specific universal type identifier based on the filename extension, it assigns the `public.data` universal type identifier for the file.
 

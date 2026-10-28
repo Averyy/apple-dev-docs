@@ -22,7 +22,7 @@ object ExternalPurchaseReport
 - [External Purchase Server API changelog](./changelog.md)
 - [Reporting corrections](./reportcorrections.md)
 
-#### Discussion
+## Discussion
 
 This object is the request body for the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint. Populate this object with data about a single external purchase token that you’re reporting, including its transactions. The [`Retrieve External Purchase Report`](./retrieve-external-purchase-report.md) endpoint also returns this object when you request a report you previously successfully submitted.
 

@@ -15,7 +15,7 @@ Causes other effects in the match group to become active.
 static let activatesGroup: HoverEffectGroup.Behavior
 ```
 
-#### Discussion
+## Discussion
 
 Use this behavior when an effect should activate other effects in the group.
 

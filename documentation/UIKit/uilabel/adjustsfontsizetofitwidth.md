@@ -23,7 +23,7 @@ var adjustsFontSizeToFitWidth: Bool { get set }
 @property (nonatomic) BOOL adjustsFontSizeToFitWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the label draws the text with the font you specify in the [`font`](./font.md) property. If this property is [`true`](../../Swift/true.md), and the text in the [`text`](./text.md) property exceeds the label’s bounding rectangle, the label reduces the font size until the text fits or it has scaled the font down to the minimum font size. The default value for this property is [`false`](../../Swift/false.md). If you change it to [`true`](../../Swift/true.md), be sure that you also set an appropriate minimum font scale by modifying the [`minimumScaleFactor`](./minimumscalefactor.md) property. This autoshrinking behavior is only intended for use with a single-line label.
 

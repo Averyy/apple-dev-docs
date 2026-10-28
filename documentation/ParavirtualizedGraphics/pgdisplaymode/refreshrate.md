@@ -20,7 +20,7 @@ var refreshRate: Double { get }
 @property (nonatomic, readonly) double refreshRate;
 ```
 
-#### Discussion
+## Discussion
 
 Consider supplying only modes that have a refresh rate equal to that of the host environment’s physical display.
 

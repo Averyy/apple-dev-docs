@@ -20,7 +20,7 @@ Gets a position relative to the camera for the body joint you specify.
 - (BOOL) getCameraRelativePosition:(simd_float4x4 *) modelPositionOut forJointName:(VNHumanBodyPose3DObservationJointName) jointName error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates the success of determining the position.
 

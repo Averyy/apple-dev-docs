@@ -25,11 +25,11 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool) -> Bool
 - (BOOL) writeToFile:(NSString *) path atomically:(BOOL) useAuxiliaryFile;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation succeeds, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method may not be appropriate when writing to publicly accessible files. To securely write data to a public location, use [`FileHandle`](../filehandle.md) instead. For more information, see [Securing File Operations](https://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Articles/RaceConditions.html#//apple_ref/doc/uid/TP40002585-SW9) in [Secure Coding Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415).
 

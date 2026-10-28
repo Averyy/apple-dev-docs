@@ -21,7 +21,7 @@ Creates the published instance with an initial value.
 init(initialValue: Value)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initializer directly. Instead, create a property with the `@Published` attribute, as shown here:
 

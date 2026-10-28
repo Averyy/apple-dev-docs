@@ -21,7 +21,7 @@ func isNFCSupported() -> Bool
 - (BOOL) isNFCSupported;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if NFC is supported and available for use, NO otherwise.
 

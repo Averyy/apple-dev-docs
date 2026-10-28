@@ -21,7 +21,7 @@ var tripEstimateStyle: CPTripEstimateStyle { get set }
 @property (nonatomic, assign) CPTripEstimateStyle tripEstimateStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CPTripEstimateStyle.dark`](../cptripestimatestyle/dark.md).
 

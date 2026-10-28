@@ -22,7 +22,7 @@ case missingEntitlement
 OSSystemExtensionErrorMissingEntitlement
 ```
 
-#### Discussion
+## Discussion
 
 The app must have the [`System Extension Entitlement`](../../../BundleResources/entitlements/com.apple.developer.system-extension.install.md) to activate or deactivate system extensions.
 

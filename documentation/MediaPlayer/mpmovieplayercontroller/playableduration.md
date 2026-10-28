@@ -23,7 +23,7 @@ var playableDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval playableDuration;
 ```
 
-#### Discussion
+## Discussion
 
 For progressively downloaded network content, this property reflects the amount of content that can be played now.
 

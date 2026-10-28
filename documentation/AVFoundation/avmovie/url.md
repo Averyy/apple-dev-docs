@@ -24,7 +24,7 @@ var url: URL? { get }
 @property (nonatomic, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if you didn’t initialize the movie with a URL.
 

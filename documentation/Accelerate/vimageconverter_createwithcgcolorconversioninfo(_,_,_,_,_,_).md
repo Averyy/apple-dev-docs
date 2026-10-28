@@ -25,11 +25,11 @@ func vImageConverter_CreateWithCGColorConversionInfo(_ colorConversionInfoRef: C
 vImageConverterRefvImageConverter_CreateWithCGColorConversionInfo(CGColorConversionInfoRef colorConversionInfoRef, const vImage_CGImageFormat *sFormat, const vImage_CGImageFormat *dFormat, const CGFloat *bg, vImage_Flags flags, vImage_Error *error);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`vImageConverter_CreateWithCGColorConversionInfo(_:_:_:_:_:_:)`](./vimageconverter_createwithcgcolorconversioninfo%28_,_,_,_,_,_%29.md) to create a converter suitable for use with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](./vimageconvert_anytoany%28_,_,_,_,_%29.md), which uses [`CGColorConversionInfo`](../CoreGraphics/cgcolorconversioninfo.md) for color conversion. [`CGColorConversionInfo`](../CoreGraphics/cgcolorconversioninfo.md) provides greater control on the color-space conversion than, for example, using a converter returned by [`vImageConverter_CreateWithCGImageFormat(_:_:_:_:_:)`](./vimageconverter_createwithcgimageformat%28_,_,_,_,_%29.md).
 
-##### Convert Linear Color Space to sRGB
+### Convert Linear Color Space to sRGB
 
 You can use [`vImageConverter_CreateWithCGColorConversionInfo(_:_:_:_:_:_:)`](./vimageconverter_createwithcgcolorconversioninfo%28_,_,_,_,_,_%29.md) to convert an image with a linear response curve to sRGB. Many vImage operations provide optimal results when working on images with a linear response curve, this approach is ideal for converting between linear and sRGB.
 

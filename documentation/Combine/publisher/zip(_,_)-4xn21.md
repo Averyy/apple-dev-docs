@@ -21,11 +21,11 @@ Combines elements from another publisher and delivers a transformed output.
 func zip<P, T>(_ other: P, _ transform: @escaping (Self.Output, P.Output) -> T) -> Publishers.Map<Publishers.Zip<Self, P>, T> where P : Publisher, Self.Failure == P.Failure
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that uses the `transform` closure to emit new elements, produced by combining the most recent value from two upstream publishers.
 
-#### Discussion
+## Discussion
 
 Use [`zip(_:_:)`](./zip%28_,_%29-4xn21.md) to return a new publisher that combines the elements from two publishers using a transformation you specify to publish a new value to the downstream.  The returned publisher waits until both publishers have emitted an event, then delivers the oldest unconsumed event from each publisher together that the operator uses in the transformation.
 

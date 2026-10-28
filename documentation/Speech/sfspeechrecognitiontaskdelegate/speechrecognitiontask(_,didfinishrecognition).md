@@ -23,7 +23,7 @@ optional func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didFinishRe
 - (void) speechRecognitionTask:(SFSpeechRecognitionTask *) task didFinishRecognition:(SFSpeechRecognitionResult *) recognitionResult;
 ```
 
-#### Discussion
+## Discussion
 
 When this method is called, the delegate should expect no further information about the utterance to be reported.
 

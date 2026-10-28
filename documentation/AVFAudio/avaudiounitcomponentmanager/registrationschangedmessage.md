@@ -20,7 +20,7 @@ Type-safe notification message for audio unit component registration changes.
 struct RegistrationsChangedMessage
 ```
 
-#### Overview
+## Overview
 
 This notification is posted when the system’s audio component registrations have changed, such as when audio units are installed or removed. The notification object is the shared `AVAudioUnitComponentManager` instance.
 

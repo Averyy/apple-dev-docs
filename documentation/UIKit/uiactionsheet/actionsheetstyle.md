@@ -23,7 +23,7 @@ var actionSheetStyle: UIActionSheetStyle { get set }
 @property (nonatomic) UIActionSheetStyle actionSheetStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how the action sheet looks when it is presented. For a list of possible values, see the [`UIActionSheetStyle`](../uiactionsheetstyle.md) constants.
 

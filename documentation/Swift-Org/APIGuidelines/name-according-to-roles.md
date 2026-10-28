@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Name variables, parameters, and associated types according to their roles, rather than their type constraints.
 
-#### Overview
+## Overview
 
 ⛔ Repurposing a type name fails to optimize clarity and expressivity:
 

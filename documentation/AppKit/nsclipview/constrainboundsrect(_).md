@@ -19,11 +19,11 @@ func constrainBoundsRect(_ proposedBounds: NSRect) -> NSRect
 - (NSRect) constrainBoundsRect:(NSRect) proposedBounds;
 ```
 
-#### Return Value
+## Return Value
 
 A bounds rectangle.
 
-#### Discussion
+## Discussion
 
 Note that you can move an implementation of the deprecated [`constrainScroll(_:)`](./constrainscroll%28_%29.md) to this method by adjusting the origin of `proposedBounds` (instead of using the `newOrigin` parameter in `-constrainScrollPoint:`). To preserve compatibility, if a subclass overrides `-constrainScrollPoint:`, the default behavior of [`constrainBoundsRect(_:)`](./constrainboundsrect%28_%29.md) will be to use that `-constrainScrollPoint:` to adjust the origin of `proposedBounds`, and to not change the size.
 

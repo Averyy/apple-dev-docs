@@ -24,7 +24,7 @@ class AVAudioUnitSampler
 @interface AVAudioUnitSampler : AVAudioUnitMIDIInstrument
 ```
 
-#### Overview
+## Overview
 
 An `AVAudioUnitSampler` is an [`AVAudioUnit`](./avaudiounit.md) for Apple’s Sampler audio unit.
 

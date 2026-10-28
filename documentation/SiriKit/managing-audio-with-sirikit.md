@@ -12,11 +12,11 @@ Control audio playback and handle requests to add media using SiriKit Media Inte
 - Mac Catalyst 14.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2020 session [Expand Your SiriKit Media Intents to More Platforms](https://developer.apple.com/videos/play/wwdc2020/10061/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 

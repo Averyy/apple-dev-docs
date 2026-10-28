@@ -25,11 +25,11 @@ func subarray(with range: NSRange) -> [Any]
 - (NSArray<id> *) subarrayWithRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A new array containing the receiving array’s elements that fall within the limits specified by `range`.
 
-#### Discussion
+## Discussion
 
 If `range` isn’t within the receiving array’s range of elements, an `NSRangeException` is raised.
 

@@ -18,7 +18,7 @@ Constants that describe how an adult, parent, or guardian set the age range.
 enum AgeRangeDeclaration
 ```
 
-#### Overview
+## Overview
 
 The system provides this information to help you understand the reliability and source of the age range data. Different declaration types may be appropriate for different types of content experiences in your app.
 

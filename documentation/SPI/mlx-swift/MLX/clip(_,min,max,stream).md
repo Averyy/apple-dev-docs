@@ -21,7 +21,7 @@ func clip(_ array: MLXArray, min: some ScalarOrArray, max: some ScalarOrArray, s
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`clip(_:max:stream:)`](./clip%28_,max,stream%29.md)

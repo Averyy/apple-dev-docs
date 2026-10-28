@@ -19,7 +19,7 @@ func restoreState(with coder: NSCoder)
 - (void) restoreStateWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 This method is part of the window restoration system and is called at launch time to restore the visual state of your responder object. The default implementation does nothing but specific subclasses (such as [`NSView`](../nsview.md) and [`NSWindow`](../nswindow.md)) override it and save important state information. Therefore, if you override this method, you should always call `super` at some point in your implementation.
 

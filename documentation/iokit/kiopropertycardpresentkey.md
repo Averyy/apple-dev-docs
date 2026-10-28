@@ -14,7 +14,7 @@
 #define kIOPropertyCardPresentKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines wether a MMC or SD card is physically present.
 

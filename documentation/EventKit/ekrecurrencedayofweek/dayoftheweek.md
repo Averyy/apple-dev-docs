@@ -24,7 +24,7 @@ var dayOfTheWeek: EKWeekday { get }
 @property (nonatomic, readonly) EKWeekday dayOfTheWeek;
 ```
 
-#### Discussion
+## Discussion
 
 Values are from `1` to `7`, with Sunday being `1`.
 

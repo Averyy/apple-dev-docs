@@ -21,7 +21,7 @@ An abstract base class for effects that you can apply to a symbol-based image.
 @interface NSSymbolEffect : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t use this class directly. Instead, use a class that inherits from this one, such as [`NSSymbolBounceEffect`](./nssymbolbounceeffect.md).
 

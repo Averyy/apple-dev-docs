@@ -22,7 +22,7 @@ int32 extendReasonCode
 - `2`: The renewal-date extension is for other reasons.
 - `3`: The renewal-date extension is due to a service issue or outage.
 
-#### Discussion
+## Discussion
 
 For more information about requesting subscription-renewal-date extensions, see [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md).
 

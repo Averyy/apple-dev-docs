@@ -23,7 +23,7 @@ case unsupported
 AVCapturePrimaryConstituentDeviceSwitchingBehaviorUnsupported
 ```
 
-#### Discussion
+## Discussion
 
 Switching cameras isn’t supported on devices that don’t have more than one constituent device.
 

@@ -20,11 +20,11 @@ optional func rootItem(for browser: NSBrowser) -> Any?
 - (id) rootItemForBrowser:(NSBrowser *) browser;
 ```
 
-#### Return Value
+## Return Value
 
 The browser’s root item.
 
-#### Discussion
+## Discussion
 
 By default, `nil` identifies the root item. This method can specify a different root item. To reload the previously set root item, call [`loadColumnZero()`](../nsbrowser/loadcolumnzero%28%29.md), and [`rootItem(for:)`](./rootitem%28for%29.md) will be called again.
 

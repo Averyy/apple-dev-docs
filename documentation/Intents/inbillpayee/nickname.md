@@ -34,7 +34,7 @@ var nickname: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * nickname;
 ```
 
-#### Discussion
+## Discussion
 
 You should allow your users to assign custom nicknames to the payees they configure in your app. Nicknames let the user speak more naturally when talking to Siri. For example, the user might assign the nickname “cable” to an account associated with their cable television provider. When the user identifies a bill payee by its nickname, use this value to locate the corresponding account in your app.
 

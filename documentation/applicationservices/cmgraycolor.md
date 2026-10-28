@@ -17,7 +17,7 @@ typedef struct CMGrayColor {
 } CMGrayColor;
 ```
 
-#### Overview
+## Overview
 
 A color value expressed in the Gray color space is composed of a single component, `gray`, represented as a numeric value within the range of 0 to 65535 inclusive. 
 

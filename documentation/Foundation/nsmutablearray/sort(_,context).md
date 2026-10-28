@@ -25,7 +25,7 @@ func sort(_ compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: Unsaf
 - (void) sortUsingFunction:(long (*)(id, id, void *)) compare context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This approach allows the comparison to be based on some outside parameter, such as whether character sorting is case sensitive or case insensitive.
 

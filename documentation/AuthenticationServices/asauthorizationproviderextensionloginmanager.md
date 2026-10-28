@@ -23,7 +23,7 @@ class ASAuthorizationProviderExtensionLoginManager
 
 - [Configuring authentication with the identity provider (IdP)](./configuring-authentication-with-the-identity-provider-idp.md)
 
-#### Overview
+## Overview
 
 Use this class to perform registration and authentication tasks, and to repair registrations.
 

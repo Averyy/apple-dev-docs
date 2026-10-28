@@ -24,7 +24,7 @@ class MLModelCollection
 @interface MLModelCollection : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a model collection to access the models from a Core ML Model Deployment. For example, you can use a model collection to replace one or more of your app’s built-in models with a newer version.
 

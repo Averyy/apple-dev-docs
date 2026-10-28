@@ -17,11 +17,11 @@ Gets the size of an alias record referenced by a pointer.
 Size GetAliasSizeFromPtr(const AliasRecord *alias);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the alias record.
 
-#### Discussion
+## Discussion
 
 This routine is thread safe. 
 

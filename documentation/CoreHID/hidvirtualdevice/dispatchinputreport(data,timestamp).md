@@ -15,7 +15,7 @@ Dispatch an input report to the system.
 func dispatchInputReport(data: Data, timestamp: SuspendingClock.Instant) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This dispatches an input report to the system, as if a person is interacting with a physical control. For example, if the virtual device represents a keyboard, a keyboard report can be dispatched here to simulate a person pressing a key on the keyboard. The system receives the report and any [`HIDDeviceClient`](../hiddeviceclient.md) devices monitoring for such activity. [`activate(delegate:)`](./activate%28delegate%29.md) must run successfully before this function runs.
 

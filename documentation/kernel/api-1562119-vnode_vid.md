@@ -15,7 +15,7 @@ Return a vnode's vid (generation number), which is constant from creation until 
 uint32_t vnode_vid(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 The vnode's vid.
 

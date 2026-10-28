@@ -25,7 +25,7 @@ typealias CVPixelBufferReleasePlanarBytesCallback = (UnsafeMutableRawPointer?, U
 typedef void (*)(void *, const void *, unsigned long, unsigned long, const void **) CVPixelBufferReleasePlanarBytesCallback;
 ```
 
-#### Discussion
+## Discussion
 
 You use this callback to release the pixel data and perform any other cleanup when the system releases the pixel buffer.
 

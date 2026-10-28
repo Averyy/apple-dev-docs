@@ -21,11 +21,11 @@ func accessibilityActionNames() -> [NSAccessibility.Action]
 - (NSArray<NSString *> *) accessibilityActionNames;
 ```
 
-#### Return Value
+## Return Value
 
 An array of action names.
 
-#### Discussion
+## Discussion
 
 User interface classes must implement this method. Subclasses should invoke the superclass’s implementation, if it exists, and append additional action names or remove unsupported actions. See Constants for some common action names.
 

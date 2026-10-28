@@ -22,7 +22,7 @@ class let touchBarTextUnderlineTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextUnderlineTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for underline text](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825134@2x.png)
 

@@ -22,11 +22,11 @@ init!(point: CGPoint, in context: JSContext!)
 + (JSValue *) valueWithPoint:(CGPoint) point inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A newly allocated JavaScript object containing properties named x and y, with values from the CGPoint.
 
-#### Discussion
+## Discussion
 
 Create a JSValue from a CGPoint.
 

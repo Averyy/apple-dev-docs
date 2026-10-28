@@ -20,7 +20,7 @@ The asynchronous sequence of transcription results.
 final var results: some Sendable & AsyncSequence<SpeechTranscriber.Result, any Error> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property does not create a new sequence.
 

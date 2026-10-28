@@ -25,7 +25,7 @@ func NSFullUserName() -> String
 extern NSString *NSFullUserName();
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the full name of the current user.
 

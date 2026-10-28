@@ -5,7 +5,7 @@
 
 Analyze how much memory your process induces the Apple Neural Engine to wire down on your process’s behalf.
 
-#### Overview
+## Overview
 
 This report contains data that indicates how much Apple Neural Engine memory your application uses, sampled randomly across the fleet.
 
@@ -22,7 +22,7 @@ This report contains data that indicates how much Apple Neural Engine memory you
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -38,7 +38,7 @@ This report contains data that indicates how much Apple Neural Engine memory you
 | App Jetsam Priority | The current jetsam priority for the process | `integer` |
 | App Neural Footprint KB | The current Apple Neural Engine memory footprint for the process | `integer` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

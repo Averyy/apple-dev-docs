@@ -29,7 +29,7 @@ func replaceCredentialIdentities(with newCredentialIdentities: [ASPasswordCreden
 - (void) replaceCredentialIdentitiesWithIdentities:(NSArray<ASPasswordCredentialIdentity *> *) newCredentialIdentities completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method deletes existing credential identities that are persisted in the store and saves the newly provided credential identity objects. If the operation fails, an error with domain [`ASCredentialIdentityStoreErrorDomain`](../ascredentialidentitystoreerrordomain.md) is provided and none of the new credential identities are saved.
 

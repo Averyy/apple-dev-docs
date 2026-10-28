@@ -22,7 +22,7 @@ class let willAddItemNotification: NSNotification.Name
 extern NSNotificationName NSToolbarWillAddItemNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification item is the `NSToolbar` object that’s about to add the item. The `userInfo` dictionary contains the following information:
 

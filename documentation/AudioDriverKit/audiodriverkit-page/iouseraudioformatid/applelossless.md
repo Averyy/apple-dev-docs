@@ -15,7 +15,7 @@ The Apple Lossless format.
 AppleLossless
 ```
 
-#### Discussion
+## Discussion
 
 The flags indicate the bit depth of the source material.
 

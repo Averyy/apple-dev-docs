@@ -24,7 +24,7 @@ func update()
 - (void) updateTexture;
 ```
 
-#### Discussion
+## Discussion
 
 After you first create a sky cube texture, Model I/O does not generate texture data until you use one of the [`MDLTexture`](../mdltexture.md) methods listed inAccessing Texture Data. If you then change the sky simulation or rendering parameters, call this method to generate new texture data.
 

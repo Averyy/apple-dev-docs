@@ -19,7 +19,7 @@ func tabletProximity(with event: NSEvent)
 - (void) tabletProximity:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Tablet events are represented by `NSEvent` objects of type [`NSTabletProximity`](../nstabletproximity.md). Tablet devices generate proximity events when the transducer (pointing device) nears a tablet and when it moves away from a tablet. From an event object of this type you can extract information about the kind of device and its capabilities, as well as the relation of this tablet-proximity event to various tablet-point events; see the [`NSEvent`](../nsevent.md) reference for details. The default implementation passes the message to the next responder.
 

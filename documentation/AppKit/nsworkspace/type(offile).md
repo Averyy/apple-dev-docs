@@ -21,11 +21,11 @@ func type(ofFile absoluteFilePath: String) throws -> String
 - (NSString *) typeOfFile:(NSString *) absoluteFilePath error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` containing the uniform type identifier of the file at `absoluteFilePath`. If no UTI can be determined the return value is `nil`.
 
-#### Discussion
+## Discussion
 
 If the file at the specified path is a symbolic link, the type of the symbolic link is returned.
 

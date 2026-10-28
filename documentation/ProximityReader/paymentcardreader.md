@@ -21,7 +21,7 @@ class PaymentCardReader
 
 - [Adding support for Tap to Pay on iPhone to your app](./adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Overview
+## Overview
 
 A `PaymentCardReader` object coordinates the reading of payment and loyalty cards using existing iPhone hardware. Use it to read cards that might otherwise require specialized hardware. For example, use it to collect contactless payment information from another iPhone or from NFC-enabled hardware, such as NFC-enabled plastic cards.
 

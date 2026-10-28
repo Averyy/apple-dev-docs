@@ -21,7 +21,7 @@ Represents a selection of text.
 struct TextSelection
 ```
 
-#### Overview
+## Overview
 
 A selection is either an insertion point (e.g. a cursor in the text), a selection over a range of text or on macOS, multiple selections.
 

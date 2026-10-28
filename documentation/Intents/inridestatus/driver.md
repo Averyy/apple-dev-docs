@@ -32,7 +32,7 @@ var driver: INRideDriver? { get set }
 @property (atomic, copy, readwrite, nullable) INRideDriver * driver;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify information about the driver of the vehicle that is picking up the user. Siri displays the driver’s picture and telephone number to the user, who can use that identify and contact the driver.
 

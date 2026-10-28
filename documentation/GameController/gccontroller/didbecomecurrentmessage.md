@@ -20,7 +20,7 @@ A message that posts after a game controller becomes the most recently used cont
 struct DidBecomeCurrentMessage
 ```
 
-#### Overview
+## Overview
 
 This is a good time to swap out UI to match the new current controller, and unregister any handlers with the old current controller.
 

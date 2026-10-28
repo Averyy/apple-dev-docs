@@ -21,11 +21,11 @@ Provides a timeline entry representing the current time and state of a widget.
 func snapshot(for configuration: Self.Intent, in context: Self.Context) async -> Self.Entry
 ```
 
-#### Return Value
+## Return Value
 
 A timeline entry representing the current time and state of a widget
 
-#### Discussion
+## Discussion
 
 WidgetKit calls `snapshot(for:in:)` when the widget appears in transient situations. If context.isPreview is true, the widget appears in the widget gallery. In that case, return the `Entry` as quickly as possible, perhaps supplying sample data if it could take more than a few seconds to fetch or calculate the widget’s current state.
 

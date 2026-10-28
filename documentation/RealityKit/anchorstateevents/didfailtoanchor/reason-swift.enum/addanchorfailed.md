@@ -20,7 +20,7 @@ anchor fails to be added, due to anchor tracking provider error
 case addAnchorFailed
 ```
 
-#### Discussion
+## Discussion
 
 See [`WorldTrackingProvider.Error`](../../../../ARKit/worldtrackingprovider/error.md)
 

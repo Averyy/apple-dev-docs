@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = Int
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces integer elements.
 

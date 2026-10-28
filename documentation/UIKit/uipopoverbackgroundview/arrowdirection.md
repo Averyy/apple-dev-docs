@@ -23,7 +23,7 @@ var arrowDirection: UIPopoverArrowDirection { get set }
 @property (nonatomic, readwrite) UIPopoverArrowDirection arrowDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method raises an exception. You must override it and implement the appropriate setter and getter methods yourself. Your methods must not call `super`.
 

@@ -12,7 +12,7 @@ Creates an attachment containing the provided data payload, optionally with a cu
 + (instancetype) attachmentWithUniformTypeIdentifier:(NSString *) identifier name:(NSString *) name payload:(NSData *) payload userInfo:(NSDictionary *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.data"` if the `identifier` parameter is `nil`.
 

@@ -19,11 +19,11 @@ func getRow(_ row: UnsafeMutablePointer<Int>?, column: UnsafeMutablePointer<Int>
 - (BOOL) getRow:(NSInteger *) row column:(NSInteger *) column forPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a cell exists at the specified point; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If a row does not exist at `point`, then `-1` is set for the row. If a column does not exist at `point`, then `-1` is set for the column.
 

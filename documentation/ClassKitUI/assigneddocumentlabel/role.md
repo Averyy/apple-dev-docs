@@ -19,7 +19,7 @@ The type of assignment information to display.
 struct Role
 ```
 
-#### Overview
+## Overview
 
 For example, use `.status` to show submission status or `.date` to show relevant dates.
 

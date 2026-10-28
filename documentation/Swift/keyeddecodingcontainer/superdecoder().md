@@ -21,7 +21,7 @@ Returns a `Decoder` instance for decoding `super` from the container associated 
 func superDecoder() throws -> any Decoder
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to calling `superDecoder(forKey:)` with `Key(stringValue: "super", intValue: 0)`.
 

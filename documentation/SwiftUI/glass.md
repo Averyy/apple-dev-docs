@@ -24,7 +24,7 @@ struct Glass
 
 - [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
-#### Overview
+## Overview
 
 You provide instances of a variant of Liquid Glass to the [`glassEffect(_:in:)`](./view/glasseffect%28_,in%29.md) view modifier:
 

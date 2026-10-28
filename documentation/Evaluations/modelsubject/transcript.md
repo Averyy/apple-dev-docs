@@ -21,7 +21,7 @@ The structured transcript from the model session.
 var transcript: StructuredTranscript?
 ```
 
-#### Discussion
+## Discussion
 
 This transcript is required when using [`ToolCallEvaluator`](../toolcallevaluator.md). If `nil`, [`ToolCallEvaluator`](../toolcallevaluator.md) throws [`EvaluationError.missingTranscript(evaluatorType:)`](../evaluationerror/missingtranscript%28evaluatortype%29.md).
 

@@ -20,11 +20,11 @@ optional func application(_ sender: NSApplication, openTempFile filename: String
 - (BOOL) application:(NSApplication *) sender openTempFile:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 Sent directly by `theApplication` to the delegate. The method should attempt to open the file `filename`, returning [`true`](../../Swift/true.md) if the file is successfully opened, and [`false`](../../Swift/false.md) otherwise.
 

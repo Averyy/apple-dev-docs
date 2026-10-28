@@ -17,7 +17,7 @@ Returns a Boolean value indicating whether two sets have equal elements.
 static func == (lhs: DataScannerViewController.RecognizedDataType, rhs: DataScannerViewController.RecognizedDataType) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the values are equal; otherwise, `false`.
 

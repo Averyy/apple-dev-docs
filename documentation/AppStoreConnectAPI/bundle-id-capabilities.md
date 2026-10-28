@@ -5,7 +5,7 @@
 
 Manage the app capabilities for a bundle ID.
 
-#### Overview
+## Overview
 
 The `bundleIdCapabilities` resource represents capabilities that you can enable or disable for a bundle ID. To learn about capabilities, see [Advanced App Capabilities](https://developer.apple.com/support/app-capabilities/).
 

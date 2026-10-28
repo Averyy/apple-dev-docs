@@ -4,7 +4,7 @@
 
 Help users discover your App Clip by using an NFC-integrated or scan-only App Clip Code.
 
-#### Overview
+## Overview
 
 An App Clip Code is immediately recognizable to users and lets them know an App Clip is available. The App Clip Code offers a fast and secure launch experience for your App Clip that users trust.
 
@@ -27,7 +27,7 @@ Creating an App Clip Code requires the following tasks:
 
 For more information, see [Encoding a URL in an App Clip Code](./encoding-a-url-in-an-app-clip-code.md).
 
-##### Pick a tool to create App Clip Codes
+### Pick a tool to create App Clip Codes
 
 App Clip Codes always use the design Apple provides to ensure users instantly recognize them. You can create an App Clip Code by selecting an advanced App Clip experience in [App Store Connect](https://appstoreconnect.apple.com/login) or by installing the [App Clip Code Generator](https://developer.apple.com/app-clips/resources/) command-line tool. Both have similar features and it’s up to you to pick the tool that best fits your needs.
 

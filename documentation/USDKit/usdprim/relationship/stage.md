@@ -20,7 +20,7 @@ The stage that owns this relationship.
 var stage: USDStage { get }
 ```
 
-#### Discussion
+## Discussion
 
 A relationship’s state and validity is connected to its stage. A relationship becomes invalid when the lifetime of its stage ends. It can also become invalid when the stage is modified.
 

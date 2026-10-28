@@ -19,11 +19,11 @@ init?(cgEvent: CGEvent)
 + (NSEvent *) eventWithCGEvent:(CGEventRef) cgEvent;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased `NSEvent` object that is equivalent to `cgEvent`.
 
-#### Discussion
+## Discussion
 
 The returned object retains the `CGEventRef` object (`cgEvent`) until it (the Objective-C object) is freed—it then releases the `CGEventRef` object.  If no Cocoa event corresponds to the `CGEventRef` object, this method returns `nil`.
 

@@ -12,7 +12,7 @@ virtual void cleanUp (
  void );
 ```
 
-#### Overview
+## Overview
 
 cleanUp is called when we receive a kIOFWMessageServiceIsRequestingClose message or if we fail our initialization.
 

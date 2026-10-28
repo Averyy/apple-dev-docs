@@ -20,7 +20,7 @@ func ODNodeCopyDetails(_ node: ODNodeRef!, _ keys: CFArray!, _ error: UnsafeMuta
 extern CFDictionaryRefODNodeCopyDetails(ODNodeRef node, CFArrayRef keys, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing details about `inNode` corresponding to keys specified by `inKeys`.
 

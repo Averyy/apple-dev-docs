@@ -20,7 +20,7 @@ func searchEnumerator(for request: NSFileProviderStringSearchRequest) -> any NSF
 - (id<NSFileProviderSearchEnumerator>) searchEnumeratorForStringSearchRequest:(NSFileProviderStringSearchRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSFileProviderSearchEnumerator`](../nsfileprovidersearchenumerator.md) that you implement to provide search results to the system.
 

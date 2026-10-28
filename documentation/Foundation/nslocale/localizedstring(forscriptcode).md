@@ -25,11 +25,11 @@ func localizedString(forScriptCode scriptCode: String) -> String?
 - (NSString *) localizedStringForScriptCode:(NSString *) scriptCode;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the script.
 
-#### Discussion
+## Discussion
 
 For example, calling this method on an American English (`en_US`) locale, passing `"Hant"` for `scriptCode`, produces the string `"Traditional Han"`.
 

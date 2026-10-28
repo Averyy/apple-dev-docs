@@ -24,7 +24,7 @@ protocol MTLIOScratchBuffer : NSObjectProtocol
 @protocol MTLIOScratchBuffer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Your app can reintegrate an [`MTLIOScratchBuffer`](./mtlioscratchbuffer.md) instance’s underlying memory back into a memory pool by overriding your type’s [`dealloc`](../ObjectiveC/nsobject-swift.class/dealloc.md) method. The system calls the method when an input/output command queue no longer needs a scratch buffer.
 

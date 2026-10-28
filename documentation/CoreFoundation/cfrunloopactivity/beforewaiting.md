@@ -23,7 +23,7 @@ static var beforeWaiting: CFRunLoopActivity { get }
 kCFRunLoopBeforeWaiting
 ```
 
-#### Discussion
+## Discussion
 
 Inside the event processing loop before the run loop sleeps, waiting for a source or timer to fire. This activity does not occur if [`CFRunLoopRunInMode(_:_:_:)`](../cfrunloopruninmode%28_,_,_%29.md) is called with a timeout of 0 seconds. It also does not occur in a particular iteration of the event processing loop if a version 0 source fires.
 

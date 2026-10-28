@@ -16,7 +16,7 @@ nonisolated
 init<Content>(isPresented: Binding<Bool>, configuration: PresentationComponent.Configuration, content: Content) where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this component when you want to present a modal that is anchored to an entity.
 

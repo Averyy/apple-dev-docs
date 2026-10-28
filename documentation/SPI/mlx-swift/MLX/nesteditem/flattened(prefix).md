@@ -17,11 +17,11 @@ Return a flattened representation of the structured contents as an array of key/
 func flattened(prefix: String? = nil) -> [(String, Element)]
 ```
 
-#### Discussion
+## Discussion
 
 This is typically called via [`flattened(prefix:)`](../nesteddictionary/flattened%28prefix%29.md).
 
-##### See Also
+### See Also
 
 - [`flattenedValues()`](./flattenedvalues%28%29.md)
 - [`unflattened(_:)`](./unflattened%28_%29.md)

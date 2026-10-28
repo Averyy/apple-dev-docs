@@ -19,7 +19,7 @@ func prepareForTransition(from oldLayout: NSCollectionViewLayout)
 - (void) prepareForTransitionFromLayout:(NSCollectionViewLayout *) oldLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to transitioning to a new layout object, the collection view calls this method on the new layout object to give it time to perform any initial calculations.
 

@@ -21,7 +21,7 @@ A view that provides child views that you can use in the drawing callback.
 var symbols: Symbols
 ```
 
-#### Discussion
+## Discussion
 
 Uniquely tag each child view using the `View/tag(_:)` modifier, so that you can find them from within your renderer using the [`resolveSymbol(id:)`](../graphicscontext/resolvesymbol%28id%29.md) method.
 

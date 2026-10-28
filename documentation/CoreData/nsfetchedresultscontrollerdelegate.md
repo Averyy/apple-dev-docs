@@ -25,13 +25,13 @@ protocol NSFetchedResultsControllerDelegate : NSObjectProtocol
 @protocol NSFetchedResultsControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Consider whether to update the table view for each change. For a large number of simultaneous modifications simultaneously, such as if your app reads data on a background thread, it may be computationally expensive to animate all the changes. Rather than respond to changes individually (as illustrated in [Typical use](./nsfetchedresultscontrollerdelegate.md#Typical-use)), implement [`controllerDidChangeContent(_:)`](./nsfetchedresultscontrollerdelegate/controllerdidchangecontent%28_%29.md) to reload the table view after the system processes all pending changes.
 
 > **Note**:  The fetched results controller reports changes to its section before changes to the fetched objects themselves.
 
-##### Typical use
+### Typical use
 
 When a fetched results controller provides the content to a table view, you can use [`controllerWillChangeContent(_:)`](./nsfetchedresultscontrollerdelegate/controllerwillchangecontent%28_%29.md) and [`controllerDidChangeContent(_:)`](./nsfetchedresultscontrollerdelegate/controllerdidchangecontent%28_%29.md) to bracket updates to the table view, as shown in the following example:
 
@@ -99,7 +99,7 @@ func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>,
 }
 ```
 
-##### User-driven updates
+### User-driven updates
 
 In general, [`NSFetchedResultsControllerDelegate`](./nsfetchedresultscontrollerdelegate.md) responds to changes at the model layer. If you allow a user to reorder table rows, then your implementation of the delegate methods needs to take this into account.
 

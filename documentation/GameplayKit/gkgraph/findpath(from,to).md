@@ -24,11 +24,11 @@ func findPath(from startNode: GKGraphNode, to endNode: GKGraphNode) -> [GKGraphN
 - (NSArray<__kindof GKGraphNode *> *) findPathFromNode:(GKGraphNode *) startNode toNode:(GKGraphNode *) endNode;
 ```
 
-#### Return Value
+## Return Value
 
 An array of nodes representing a path through the graph in start to end order, or an empty array if no path exists between the specified nodes.
 
-#### Discussion
+## Discussion
 
 The returned array contains the list of nodes one must traverse in order to follow the selected route, starting with the requested `startNode` object, proceeding along the connections between nodes, and ending with the requested `endNode` object. For graphs whose nodes contain geometry information ([`GKGraphNode2D`](../gkgraphnode2d.md) or [`GKGridGraphNode`](../gkgridgraphnode.md) objects), you can use the information from each node in the array to move a game object along the path (or otherwise present the path to the user). Or, to make an agent (a [`GKAgent`](../gkagent.md) object) automatically follow the returned path, create a [`GKPath`](../gkpath.md) object with the [`init(graphNodes:radius:)`](../gkpath/init%28graphnodes,radius%29.md) initializer.
 

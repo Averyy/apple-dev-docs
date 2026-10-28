@@ -5,7 +5,7 @@
 
 Debug App Clip invocations, test the launch experience, and verify the configuration of your released App Clip.
 
-#### Overview
+## Overview
 
 A fast launch experience is crucial to the experience your App Clip provides. As a result, you’ll spend a significant amount of time choosing invocation URLs, configuring App Clip experiences in App Store Connect, and writing code to handle the invocation URL.
 
@@ -16,7 +16,7 @@ To ensure your App Clip offers a smooth launch experience and that you properly 
 - When you’re ready to share a beta version with others, create an App Clip experience for testers in [TestFlight](https://developer.apple.com/testflight/).
 - When you’ve published your App Clip on the App Store, verify your App Clip configuration by using the App Clip diagnostics on iPhone.
 
-##### Debug your App Clip
+### Debug your App Clip
 
 The invocation URL plays a key role to offering a fast and instant launch experience for your App Clip because you can use it to update the user interface of your App Clip to match the user’s context. Testing this code is especially important. In Xcode, provide an invocation URL for debugging. Then, make sure your code handles your invocation URLs — including unexpected invocation URLs — and updates the user interface of your App Clip to match the user’s context.
 
@@ -35,7 +35,7 @@ The following screenshot shows the sheet to configure an App Clip target’s Run
 
 When you debug your App Clip with Xcode, the App Clip launches right away with the value you set for the `_XCAppClipURL` variable. Note that the App Clip card doesn’t appear. To see the App Clip card on invocation when testing and test your entire launch experience, register a local experience on your test device.
 
-##### Test App Clip invocations with a local experience
+### Test App Clip invocations with a local experience
 
 Leveraging the `_XCAppClipURL` environment variable is helpful when you debug the code that handles the invocation URL. However, you need to ensure your App Clip provides a fast and reliable launch experience from various invocations. In addition, exploring imagery, text, and a call-to-action verb for the App Clip card is especially important because the App Clip card is the user’s first interaction when they launch your App Clip.
 
@@ -69,13 +69,13 @@ The following screenshot shows the interface you use to configure a local experi
 
 When you configure a local experience on a device, the local experience takes precedence over App Clip experiences you configure in [App Store Connect](https://appstoreconnect.apple.com/login). However, local experiences only launch an App Clip that’s signed for Development, Ad Hoc, or TestFlight distribution. They don’t launch an App Clip or full app that’s published on the App Store. Remember to remove the local experience before testing App Clip experiences you configure in App Store Connect.
 
-##### Test the launch experience of the full app during development
+### Test the launch experience of the full app during development
 
 Local App Clip invocations help you test the launch experience of your App Clip while you develop it in Xcode. However, local invocations don’t allow you to test the launch experience of the full app from an App Clip invocation. The best way to verify that your full app can handle App Clip invocations as you would expect is to use universal links and the invocation URL of your App Clip as the link’s URL. Both App Clips and universal links make the launch URL available as part of the user activity object. If a Universal Link opens your app to the App Clip experience you expect, you can be sure that the launch experience from the App Clip card to your full app works correctly.
 
 For more information about debugging and testing universal links, refer to [TN3155: Debugging universal links](../Technotes/tn3155-debugging-universal-links.md). For general information about universal links, refer to [Supporting universal links in your app](../Xcode/supporting-universal-links-in-your-app.md).
 
-##### Create App Clip experiences for testers in TestFlight
+### Create App Clip experiences for testers in TestFlight
 
 A reliable user experience is crucial to App Clips and requires spending time to test all user flows and supported invocations. To help make sure your App Clip works as expected, you can make your App Clip available to testers in [TestFlight](https://developer.apple.com/testflight/). First, upload an app with an App Clip to [App Store Connect](https://appstoreconnect.apple.com/login). Then, in App Store Connect, navigate to the uploaded build. In the App Clip section, you can configure up to three different App Clip experiences for testing. Note that the App Clip card doesn’t appear for App Clip experiences you create in TestFlight.
 
@@ -87,11 +87,11 @@ For more information on configuring experiences for testing in App Store Connect
 
 Testers can also configure a local experience to launch the App Clip you distribute with TestFlight. However, you must still associate your App Clip with your website so testers can launch it from the TestFlight app. In addition, testers must launch the App Clip from an App Clip experience you configure for testing in App Store Connect at least once to ensure that the App Clip is cached on the device.
 
-##### Remove cached advanced App Clip experiences
+### Remove cached advanced App Clip experiences
 
 When you create a new advanced App Clip experience in App Store Connect, the new experience may not work right away because iOS caches App Clip experiences. To make sure an invocation launches a new App Clip experience, open the Settings app, navigate to the Developer section, and choose Clear Experience Cache.
 
-##### Verify the configuration of your released App Clip
+### Verify the configuration of your released App Clip
 
 When you’ve uploaded your app version with an App Clip, it has passed App Store review, and you’ve released the version in the App Store, verify the configuration of your App Clip experiences to be sure that your website displays the Smart App Banner and that the App Clip appears on users’ devices:
 

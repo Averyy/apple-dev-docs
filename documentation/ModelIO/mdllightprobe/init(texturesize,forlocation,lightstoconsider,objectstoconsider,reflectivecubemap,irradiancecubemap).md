@@ -24,11 +24,11 @@ init?(textureSize: Int, forLocation transform: MDLTransform, lightsToConsider: [
 + (MDLLightProbe *) lightProbeWithTextureSize:(NSInteger) textureSize forLocation:(MDLTransform *) transform lightsToConsider:(NSArray<MDLLight *> *) lightsToConsider objectsToConsider:(NSArray<MDLObject *> *) objectsToConsider reflectiveCubemap:(MDLTexture *) reflectiveCubemap irradianceCubemap:(MDLTexture *) irradianceCubemap;
 ```
 
-#### Return Value
+## Return Value
 
 A new light probe object.
 
-#### Discussion
+## Discussion
 
 The behavior of this method changes depending on whether you specify textures for the `reflectiveCubemap` and `irradianceCubemap` parameters.
 

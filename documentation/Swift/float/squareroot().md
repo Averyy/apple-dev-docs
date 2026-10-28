@@ -21,11 +21,11 @@ Returns the square root of the value, rounded to a representable value.
 func squareRoot() -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The square root of the value.
 
-#### Discussion
+## Discussion
 
 The following example declares a function that calculates the length of the hypotenuse of a right triangle given its two perpendicular sides.
 

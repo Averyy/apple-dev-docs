@@ -24,7 +24,7 @@ case outgoing
 INCallRecordTypeOutgoing
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant for calls that your app initiates.
 

@@ -16,7 +16,7 @@ A view type that has a label at the top and three content views masked with a ci
 @preconcurrency struct AccessoryWidgetGroup<Label, Content> where Label : View, Content : View
 ```
 
-#### Overview
+## Overview
 
 You can use this view on `.accessoryRectangular` family widgets on watchOS to lay out three content views horizontally inside of a rectangular widget.
 

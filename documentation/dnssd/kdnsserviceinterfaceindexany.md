@@ -23,7 +23,7 @@ var kDNSServiceInterfaceIndexAny: Int32 { get }
 #define kDNSServiceInterfaceIndexAny
 ```
 
-#### Discussion
+## Discussion
 
 Specific interface indexes are identified via a 32-bit unsigned integer returned by the if_nametoindex() family of calls.
 

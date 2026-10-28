@@ -17,7 +17,7 @@ Default: classify the caches that [`newCache(parameters:)`](./newcache%28paramet
 func cacheStatus(parameters: GenerateParameters?) throws -> KVCacheStatus
 ```
 
-#### Discussion
+## Discussion
 
 Empty caches allocate negligible state (no tensors until the first update), so this is always consistent with the runtime path. Prefer a declarative override only when construction itself is expensive.
 

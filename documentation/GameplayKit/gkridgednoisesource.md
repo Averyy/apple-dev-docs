@@ -24,7 +24,7 @@ class GKRidgedNoiseSource
 @interface GKRidgedNoiseSource : GKCoherentNoiseSource
 ```
 
-#### Overview
+## Overview
 
 Ridged noise is similar to Perlin noise (see the [`GKPerlinNoiseSource`](./gkperlinnoisesource.md) class), but with thinner features resembling natural phenomena such as forked lightning and mountain peaks.
 

@@ -19,7 +19,7 @@ case invalidate
 FSKernelCacheCoherencyActionInvalidate
 ```
 
-#### Discussion
+## Discussion
 
 For a directory, this also purges the kernel name cache for the directory’s entries. With the name cache purged, any later lookup re-populates the cache.
 

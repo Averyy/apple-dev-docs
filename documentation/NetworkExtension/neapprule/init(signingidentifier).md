@@ -22,7 +22,7 @@ init(signingIdentifier: String)
 - (instancetype) initWithSigningIdentifier:(NSString *) signingIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized `NEAppRule` object.
 

@@ -12,11 +12,11 @@ virtual OSOrderedSet * iterateAll(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A set of entries returned by the iteration. The caller should release the set when it has finished with it. Zero is returned on a resource failure.
 
-#### Overview
+## Overview
 
 This method will reset, then iterate all entries in the iteration (with getNextObject) until successful (ie. the iterator is valid at the end of the iteration).
 

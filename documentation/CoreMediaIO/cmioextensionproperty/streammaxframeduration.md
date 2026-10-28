@@ -20,7 +20,7 @@ static let streamMaxFrameDuration: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyStreamMaxFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a dictionary representation of a [`CMTime`](../../CoreMedia/cmtime.md) structure.
 

@@ -19,7 +19,7 @@ var accessoryView: NSView? { get set }
 @property (strong, nullable) NSView * accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 You can customize the panel by adding a custom view. The custom object you add appears just above the OK and Cancel buttons at the bottom of the panel. The `NSSavePanel` object automatically resizes itself to accommodate `accessoryView`. Use this property to change the accessory view as needed. If `accessoryView` is `nil`, the Save panel removes the current accessory view.
 

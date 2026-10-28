@@ -17,7 +17,7 @@ An event that represents a single occasion that a task was scheduled to occur.
 struct OCKEvent<Task, Outcome> where Task : OCKAnyTask, Task : Equatable, Outcome : OCKAnyOutcome, Outcome : Equatable
 ```
 
-#### Overview
+## Overview
 
 The event contains a copy of the task itself, the schedule event, and an outcome that’s non-`nil` if progress is made on the task.
 

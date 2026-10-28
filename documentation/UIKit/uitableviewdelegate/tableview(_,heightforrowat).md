@@ -27,11 +27,11 @@ optional func tableView(_ tableView: UITableView, heightForRowAt indexPath: Inde
 
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 
-#### Return Value
+## Return Value
 
 A nonnegative floating-point value that specifies the height (in points) that `row` should be.
 
-#### Discussion
+## Discussion
 
 Override this method when the rows of your table are not all the same height. If your rows are the same height, do not override this method; assign a value to the [`rowHeight`](../uitableview/rowheight.md) property of [`UITableView`](../uitableview.md) instead. The value returned by this method takes precedence over the value in the [`rowHeight`](../uitableview/rowheight.md) property.
 

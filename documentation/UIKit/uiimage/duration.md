@@ -24,7 +24,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 For a non-animated image, the value of this property is `0.0`.
 

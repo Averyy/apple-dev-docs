@@ -21,7 +21,7 @@ Character special device
 static var characterSpecial: FileType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `S_IFCHR`.
 

@@ -24,7 +24,7 @@ cp_frame_timing_tcp_drawable_get_frame_timing(cp_drawable_t drawable);
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 This retrieves a frame’s timing information from a drawable instance that represents that frame. For Swift, it’s an alternative to calling a frame’s [`predictTiming()`](../frame/predicttiming%28%29.md) method. For ObjectiveC, it’s an alternative to calling the [`cp_frame_predict_timing`](../../cp_frame_predict_timing.md) function.
 

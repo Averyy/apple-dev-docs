@@ -25,7 +25,7 @@ func applyTorque(_ torque: CGFloat)
 - (void) applyTorque:(CGFloat) torque;
 ```
 
-#### Discussion
+## Discussion
 
 This method generates an angular acceleration on the body without causing any linear acceleration. The force is applied for a single simulation step (one frame).
 

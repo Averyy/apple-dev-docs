@@ -23,11 +23,11 @@ func withUnsafePointerToVImageBuffer<R>(_ body: (UnsafePointer<vImage_Buffer>) t
 
 Available when `Format` conforms to `SinglePlanePixelFormat`.
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the body closure parameter.
 
-#### Discussion
+## Discussion
 
 Use this function to incorporate pixel buffer based image processing code with existing vImage code. For example, the following code passes a pixel buffer to the C API [`vImageBufferFill_ARGB8888(_:_:_:)`](../../vimagebufferfill_argb8888%28_,_,_%29.md) routine:
 

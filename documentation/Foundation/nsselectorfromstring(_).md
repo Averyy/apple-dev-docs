@@ -25,11 +25,11 @@ func NSSelectorFromString(_ aSelectorName: String) -> Selector
 extern SELNSSelectorFromString(NSString *aSelectorName);
 ```
 
-#### Return Value
+## Return Value
 
 The selector named by `aSelectorName`. If `aSelectorName` is `nil`, or cannot be converted to UTF-8 (this should be only due to insufficient memory), returns `(SEL)0`.
 
-#### Discussion
+## Discussion
 
 To make a selector, [`NSSelectorFromString(_:)`](./nsselectorfromstring%28_%29.md) passes a UTF-8 encoded character representation of `aSelectorName` to [`sel_registerName(_:)`](../ObjectiveC/sel_registername%28_%29.md) and returns the value returned by that function. Note, therefore, that if the selector does not exist it is registered and the newly-registered selector is returned.
 

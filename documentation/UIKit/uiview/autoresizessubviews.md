@@ -23,7 +23,7 @@ var autoresizesSubviews: Bool { get set }
 @property (nonatomic) BOOL autoresizesSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the receiver adjusts the size of its subviews when its bounds change. The default value is [`true`](../../Swift/true.md).
 

@@ -20,7 +20,7 @@ class NSResponder
 @interface NSResponder : NSObject
 ```
 
-#### Overview
+## Overview
 
 The core classes—[`NSApplication`](./nsapplication.md), [`NSWindow`](./nswindow.md), and [`NSView`](./nsview.md)—inherit from [`NSResponder`](./nsresponder.md), as must any class that handles events. The responder model uses three components: event messages, action messages, and the responder chain.
 

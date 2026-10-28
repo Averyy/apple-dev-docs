@@ -21,7 +21,7 @@ An error that indicates a problem occurred while performing an app intent.
 struct AppIntentError
 ```
 
-#### Overview
+## Overview
 
 When your app intent encounters an error during execution, throw an `AppIntentError` to communicate structured failure information to the system. Apple Intelligence, Siri, and Shortcuts use this information to determine the appropriate response — such as prompting a person, retrying the operation, or reporting the failure.
 

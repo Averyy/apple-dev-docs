@@ -6,7 +6,7 @@
 
 A 32-bit integer indicating the format of the stored data.
 
-#### Overview
+## Overview
 
 The value of this field is copied from the data-format field of the sound sample description.
 

@@ -19,7 +19,7 @@ func name() -> NSImage.Name?
 - (NSImageName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The name associated with the image, or `nil` if it has no associated name.
 

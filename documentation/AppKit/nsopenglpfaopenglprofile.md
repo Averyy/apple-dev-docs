@@ -21,7 +21,7 @@ var NSOpenGLPFAOpenGLProfile: Int { get }
 NSOpenGLPFAOpenGLProfile
 ```
 
-#### Discussion
+## Discussion
 
 The associated value can be any of the constants defined in [OpenGL Profiles](./opengl-profiles.md). If it is present in the attribute arrays, only renderers capable of supporting an OpenGL context that provides the functionality promised by the profile are considered.
 

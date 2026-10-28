@@ -22,7 +22,7 @@ nonisolated
 func strikethrough(_ isActive: Bool = true, pattern: Text.LineStyle.Pattern, color: Color? = nil) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text with a line through its center.
 

@@ -6,7 +6,7 @@
 
 An atom that contains information that defines how to interpret video media data.
 
-#### Overview
+## Overview
 
 The video sample description contains information that defines how to interpret video media data. A video sample description begins with the four fields described in the ‘General structure of a sample description’ section of [`Sample description atom`](./sample_description_atom.md).
 

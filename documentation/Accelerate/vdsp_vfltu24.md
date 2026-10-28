@@ -21,7 +21,7 @@ Converts a vector of unsigned 24-bit integers to single-precision floating-point
 extern void vDSP_vfltu24(const vDSP_uint24 *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The input and output values must point to different, non-overlapping regions of memory; it doesn’t work in-place.
 

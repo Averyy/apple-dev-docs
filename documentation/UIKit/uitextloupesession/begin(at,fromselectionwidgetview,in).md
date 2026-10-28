@@ -26,11 +26,11 @@ class func begin(at point: CGPoint, fromSelectionWidgetView selectionWidget: UIV
 
 - [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Return Value
+## Return Value
 
 A new loupe session for the specified view. The method returns `nil` if showing the loupe is inappropriate in the current context.
 
-#### Discussion
+## Discussion
 
 Call this method to animate the appearance of the loupe at the specified `point` in `interactionView`.  Store a strong reference to this returned session and use it to update the position of the loupe. To hide the loupe again, call [`invalidate()`](./invalidate%28%29.md) and then remove your reference to the session.
 

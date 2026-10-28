@@ -13,7 +13,7 @@
 errno_t ifnet_lladdr_copy_bytes(ifnet_t interface, void *lladdr, size_t length);
 ```
 
-#### Discussion
+## Discussion
 
 Copies the bytes of the link-layer address into the specified buffer.
 

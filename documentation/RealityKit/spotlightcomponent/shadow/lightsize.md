@@ -20,7 +20,7 @@ The radius of the spotlight’s emitting surface, in meters.
 var lightSize: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Larger values widen the penumbra and lengthen the transition between fully-shadowed and fully-lit regions, approximating the way an area light of that radius would shade a scene. The default value is `0.1`.
 

@@ -15,7 +15,7 @@ Registers to receive push notifications.
 void registerForNotifications();
 ```
 
-#### Discussion
+## Discussion
 
 To subscribe to changes and register for push notifications, see `saveSubscription` in the [`CloudKit.Database`](../cloudkit.database.md) class.
 

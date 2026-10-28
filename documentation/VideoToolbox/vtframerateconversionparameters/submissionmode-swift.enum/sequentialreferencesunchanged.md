@@ -22,7 +22,7 @@ case sequentialReferencesUnchanged
 VTFrameRateConversionParametersSubmissionModeSequentialReferencesUnchanged
 ```
 
-#### Discussion
+## Discussion
 
 This processing request uses the same source and next reference frames as the previous submission.
 

@@ -17,11 +17,11 @@ Adds an observer to receive notifications about system routing events.
 final func addObserver(_ observer: any AVSystemRouteControllerObserver) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the observer was successfully added; `false` if the observer was already registered, if registration failed, or if a previous registration for the same observer was cleaned up due to the observer being deallocated.
 
-#### Discussion
+## Discussion
 
 Use this function to register an observer that receives callbacks when people interact with system routes in the route picker. The observer must conform to the [`AVSystemRouteControllerObserver`](../avsystemroutecontrollerobserver-5syvg.md) protocol and implement the required protocol function to handle routing events such as route activation and deactivation.
 

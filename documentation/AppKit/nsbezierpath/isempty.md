@@ -19,7 +19,7 @@ var isEmpty: Bool { get }
 @property (readonly, getter=isEmpty) BOOL empty;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the path contains no elements, or [`false`](../../Swift/false.md) if it contains at least one element.
 

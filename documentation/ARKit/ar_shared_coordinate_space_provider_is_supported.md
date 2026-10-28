@@ -15,7 +15,7 @@ Determines whether this device supports the shared coordinate space provider.
 extern bool ar_shared_coordinate_space_provider_is_supported();
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if provider is supported on this device, `false` otherwise.
 

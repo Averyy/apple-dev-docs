@@ -21,7 +21,7 @@ The numeric value this character represents, if it is a hexadecimal digit.
 var hexDigitValue: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Hexadecimal digits include 0-9, Latin letters a-f and A-F, and their fullwidth compatibility forms. If the character does not represent a hexadecimal digit, the value of this property is `nil`.
 

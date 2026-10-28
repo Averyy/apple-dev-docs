@@ -15,11 +15,11 @@ Determine if a vnode is a block device on which a filesystem has been mounted.
 int vnode_ismountedon(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is a block device on which an filesystem is mounted, 0 otherwise.
 
-#### Discussion
+## Discussion
 
 A block device marked as being mounted on cannot be opened.
 

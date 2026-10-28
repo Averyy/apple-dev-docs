@@ -19,15 +19,15 @@ func AEDuplicateDesc(_ theAEDesc: UnsafePointer<AEDesc>!, _ result: UnsafeMutabl
 OSErr AEDuplicateDesc(const AEDesc *theAEDesc, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 It is common for applications to send Apple events that have one or more attributes or parameters in common. For example, if you send a series of Apple events to the same application, the address attribute is the same. In these cases, the most efficient way to create the necessary Apple events is to make a template Apple event that you can then copy—by calling the `AEDuplicateDesc` function—as needed. You then fill in or change the remaining parameters and attributes of the copy, send the copy by calling the `AESend(_:_:_:_:_:_:_:)` function and, after `AESend` returns a result code, dispose of the copy by calling [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md). You can use this approach to prepare structures of type [`AEDesc`](./aedesc.md), [`AEDescList`](./aedesclist.md), [`AERecord`](./aerecord.md), and [`AppleEvent`](./appleevent.md). 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

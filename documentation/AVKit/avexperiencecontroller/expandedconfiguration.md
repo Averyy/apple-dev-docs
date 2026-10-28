@@ -15,7 +15,7 @@ A structure that specifies options for an expanded experience.
 struct ExpandedConfiguration
 ```
 
-#### Overview
+## Overview
 
 It’s valid to transition to this experience even when the original container isn’t in a view hierarchy. In this case, you must specify a [`fallbackPlacement`](./expandedconfiguration/fallbackplacement.md) or the transition result is [`AVExperienceController.TransitionContext.TransitionResult.reversed(reason:)`](./transitioncontext/transitionresult/reversed%28reason%29.md).
 

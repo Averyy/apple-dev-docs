@@ -24,7 +24,7 @@ static let remoteNotification: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsRemoteNotificationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSDictionary`](../../../Foundation/nsdictionary.md) containing the payload of the remote notification. See the description of [`application(_:didReceiveRemoteNotification:)`](../../uiapplicationdelegate/application%28_,didreceiveremotenotification%29.md) for further information about handling remote notifications.
 

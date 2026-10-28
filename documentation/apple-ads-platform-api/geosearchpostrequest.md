@@ -15,7 +15,7 @@ Request body for querying geo locations.
 object GeoSearchPostRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `GeoSearchPostRequest` object is the request body for the `POST /v1/search/geo` ([`Query Geo Locations`](./gets-a-list-of-geo-locations.md)) endpoint. It accepts an array of [`GeoRequest`](./georequest.md) objects, each specifying a geo entity, and returns eligibility data for all of them in a single call scoped to the specified `supplySource`. Use this for batch-validating a list of location IDs before setting them as ad group targeting values.
 
@@ -28,7 +28,7 @@ Available results and entity restrictions differ by `supplySource`, as shown bel
 | `APPSTORE` | Returns results for App Store campaigns. `PostalCode` entities are excluded. |
 | `MAPS` | Returns results for Apple Maps campaigns. Restricted to US and CA. `Country` entity type excluded. `PostalCode` entities are available. |
 
-##### Example
+### Example
 
 ```json
 {

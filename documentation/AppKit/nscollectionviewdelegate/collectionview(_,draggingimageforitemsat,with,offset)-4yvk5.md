@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, draggingImageFo
 - (NSImage *) collectionView:(NSCollectionView *) collectionView draggingImageForItemsAtIndexes:(NSIndexSet *) indexes withEvent:(NSEvent *) event offset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use for the dragged items.
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement this method, the collection view uses the image returned by [`draggingImageForItems(at:with:offset:)`](../nscollectionview/draggingimageforitems%28at,with,offset%29-951w7.md).
 

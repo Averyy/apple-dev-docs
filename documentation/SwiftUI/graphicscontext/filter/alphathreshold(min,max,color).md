@@ -21,7 +21,7 @@ Returns a filter that replaces each pixel with alpha components within a range b
 static func alphaThreshold(min: Double, max: Double = 1, color: Color = Color.black) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a threshold to alpha values.
 

@@ -22,7 +22,7 @@ weak var delegate: (any QLPreviewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<QLPreviewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate determines whether to open URLs that the user taps in a preview. See [`QLPreviewControllerDelegate`](../qlpreviewcontrollerdelegate.md) to learn more.
 

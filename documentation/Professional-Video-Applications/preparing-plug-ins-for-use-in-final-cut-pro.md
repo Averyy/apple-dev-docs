@@ -5,7 +5,7 @@
 
 Add a plug-in to a Motion effect template to use in Final Cut Pro.
 
-#### Overview
+## Overview
 
 To make FxPlug plug-ins work in Final Cut Pro, you need to create a Final Cut Effect within Motion that rigs and/or publishes your FxPlug parameters. For more information, see [Rigging overview](https://support.apple.com/kb/PH16018) in Motion Help and [Final Cut Pro Templates Overview](https://support.apple.com/kb/PH16033).
 
@@ -17,7 +17,7 @@ Effects in Final Cut Pro include Generators, Transitions, and Filters. These Fin
 
 To prepare your plug-in you use Motion to create a Final Cut Effect, Generator, Transition, or Title. To do that, you’ll need to create a Motion Effect, apply your filter or generator, and publish its parameters in a rig. A rig consolidates your plug-in’s parameters, which you can then publish in your effect. This makes it easier for Final Cut Pro users to apply the effects of your plug-in to their projects. (For information about creating rigs for your plug-in, see [Rigging overview](https://support.apple.com/kb/PH16018) in Motion Help).
 
-##### Create a basic Final Cut Pro effect
+### Create a basic Final Cut Pro effect
 
 The following steps outline the workflow for creating a basic Final Cut Pro Effect in Motion. For details about any step or about using Motion, see [Motion Help](https://help.apple.com/motion/mac/5.4.2/#/motn8d17a294).
 
@@ -31,7 +31,7 @@ The following steps outline the workflow for creating a basic Final Cut Pro Effe
 
 When you apply this plug-in in Final Cut Pro, users of the effect see a single slider (called Glowiness) which they can use to control both the Radius and Opacity parameters.
 
-##### Publish the parameters for your plug-in
+### Publish the parameters for your plug-in
 
 If you want to give your users direct access so they can control every aspect of a parameter in your plug-in, publish each parameter in Motion directly, without a rig. Unlike rigging a parameter, publishing a parameter gives users individual control over a single parameter.
 
@@ -43,11 +43,11 @@ To create the Threshold parameter for direct manipulation:
 
 Your effect is immediately available in Final Cut Pro.
 
-##### Set temporal effects and project loop markers
+### Set temporal effects and project loop markers
 
 If your Motion Template doesn’t create a temporal effect (a timing effect such as retiming, temporal blur, or echo/feedback), set the Project Loop End marker in the template. If you don’t include such a marker, your effects will rerender after a blade, trim, or edit in Final Cut Pro. For more about Project Loop End markers, see [What are template markers?](https://support.apple.com/kb/PH16059)
 
-##### Deprecate a Motion template
+### Deprecate a Motion template
 
 When you update an existing plug-in, you may also need to deprecate the older version of the Motion template. A deprecated template is considered obsolete and does not appear in the effects browser in Motion, but it will still be applied in projects that previously used it.
 

@@ -22,7 +22,7 @@ Performs the request on an image URL and produces observations.
 func perform(on url: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result
 ```
 
-#### Return Value
+## Return Value
 
 The observation — or list of observations — the request produces.
 

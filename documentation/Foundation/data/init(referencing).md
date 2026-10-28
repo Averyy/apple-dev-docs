@@ -21,7 +21,7 @@ Initialize a `Data` by adopting a reference type.
 init(referencing reference: NSData)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to create a `struct Data` that wraps a `class NSData`. `struct Data` will use the `class NSData` for all operations. Other initializers (including casting using `as Data`) may choose to hold a reference or not, based on a what is the most efficient representation.
 

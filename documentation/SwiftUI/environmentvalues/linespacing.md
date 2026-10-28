@@ -21,7 +21,7 @@ The distance in points between the bottom of one line fragment and the top of th
 var lineSpacing: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is always nonnegative.
 

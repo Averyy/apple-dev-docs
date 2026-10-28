@@ -21,7 +21,7 @@ func variance(axes: some Collection<Int>, keepDims: Bool = false, ddof: Int = 0,
 
 - [Converting From Python](../converting-python.md)
 
-##### See Also
+### See Also
 
 - [Reduction Functions](../reduction.md)
 - [`variance(axis:keepDims:ddof:stream:)`](./variance%28axis,keepdims,ddof,stream%29.md)

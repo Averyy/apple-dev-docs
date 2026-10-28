@@ -16,7 +16,7 @@ nonisolated
 struct BorderedTableStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`bordered`](./tablestyle/bordered.md) to construct this style.
 

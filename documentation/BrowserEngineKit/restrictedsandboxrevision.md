@@ -17,7 +17,7 @@ Revisions to the restricted sandbox rules.
 enum RestrictedSandboxRevision
 ```
 
-#### Overview
+## Overview
 
 Design your browser to support the latest revision to the restricted sandbox in all extensions, and opt in to new revisions as they become available.
 

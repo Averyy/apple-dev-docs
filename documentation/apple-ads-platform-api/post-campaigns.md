@@ -9,7 +9,7 @@ Create a new advertising campaign with a promoted object, budget, targeting, and
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates a new campaign with a promoted object, budget, targeting, and bid strategy configuration. Every campaign identifies what it promotes through two immutable fields set at creation, `promotedObjectType` and `promotedObjectId`. You can’t change these fields after you create the campaign. To advertise a different app or brand, create a new campaign. For a full comparison of App Store and Apple Maps campaigns, including supported placements, supply sources, and creative sources, see the [Campaigns Endpoints](./campaigns-endpoints.md) overview.
 
@@ -27,7 +27,7 @@ Within `bidStrategy`, `bidStrategyType` and `bidStrategyGoal` are both required 
 
 For Apple Maps campaigns, decide the placement targeting at create time. Targeting both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` requires omitting `supplyPlacement` from `targeting` entirely, and this choice can’t be widened later through an update. A campaign created with a single Maps placement stays limited to that placement. See [`CampaignTargetingCreate.SupplyPlacement`](./campaigntargetingcreate/supplyplacement-data.dictionary.md) for details.
 
-#### Payload Examples
+## Payload Examples
 
 **App Store Search**:
 
@@ -35,7 +35,7 @@ An app campaign targeting App Store Search Results. The `promotedObjectType` fie
 
 > **Note**: Uses `bidStrategyType: MANUAL_CPT` with `bidStrategyGoal: TAP`.
 
-##### Request
+### Request
 
 Creates an App Store Search campaign for an app identified by its `adamId`, targeting the `APPSTORE_SEARCH_RESULTS` placement in the US with a $100 daily budget and tap-based billing.
 
@@ -76,7 +76,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -131,7 +131,7 @@ An app campaign targeting the App Store Today tab placement. Set `supplyPlacemen
 
 > **Note**: Uses `bidStrategyType: MANUAL_CPT` with `bidStrategyGoal: TAP`.
 
-##### Request
+### Request
 
 Creates a Today tab campaign for an app identified by its `adamId`, targeting the `APPSTORE_TODAY_TAB` placement in the US with a $200 daily budget and tap-based billing.
 
@@ -172,7 +172,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -227,7 +227,7 @@ An app campaign using the automated `MAX_CONVERSIONS` bid strategy, which optimi
 
 > **Note**: Uses `bidStrategyType: MAX_CONVERSIONS` with `bidStrategyGoal: INSTALL`.
 
-##### Request
+### Request
 
 Creates an App Store Search campaign for an app identified by its `adamId`, using `bidStrategyType: MAX_CONVERSIONS` with the required `INSTALL` goal. The `billingEvent` field remains `TAPS`, so Apple Ads still charges per tap, but it automates bidding toward installs.
 
@@ -268,7 +268,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -323,7 +323,7 @@ An advanced Apple Maps campaign targeting the Maps Search results placement. Sup
 
 > **Note**: Uses `bidStrategyType: MAX_ENGAGEMENTS` with `bidStrategyGoal: TAP`.
 
-##### Request
+### Request
 
 Creates an advanced Apple Maps campaign explicitly targeting the `MAPS_SEARCH_RESULTS` placement, which enables radius targeting at the ad group level.
 
@@ -364,7 +364,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -419,7 +419,7 @@ An advanced Apple Maps campaign targeting the Maps Search home placement. This p
 
 > **Note**: Uses `bidStrategyType: MAX_ENGAGEMENTS` with `bidStrategyGoal: TAP`.
 
-##### Request
+### Request
 
 Creates an advanced Apple Maps campaign targeting the `MAPS_SEARCH_HOME` placement. This placement doesn’t support radius targeting, so don’t configure it at the ad group level.
 
@@ -460,7 +460,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -515,7 +515,7 @@ An Apple Maps campaign targeting both the Maps Search results and Maps Search ho
 
 > **Note**: Listing both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` together in `supplyPlacement.include` is rejected. To target both placements, omit `supplyPlacement` from `targeting` entirely; `supplySource: MAPS` alone targets every placement under that supply source.
 
-##### Request
+### Request
 
 Creates an Apple Maps campaign that targets both placements by omitting `supplyPlacement` from `targeting`.
 
@@ -551,7 +551,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -601,7 +601,7 @@ An Apple Maps campaign using manual cost-per-tap bidding. Requires an explicit s
 
 > **Note**: Uses `bidStrategyType: MANUAL_CPT` with `bidStrategyGoal: TAP`.
 
-##### Request
+### Request
 
 Creates an Apple Maps campaign with manual cost-per-tap bidding, explicitly setting `bidStrategyType` to `MANUAL_CPT` and targeting `MAPS_SEARCH_RESULTS`. You configure the tap bid amount at the ad group level.
 
@@ -642,7 +642,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -697,7 +697,7 @@ An Apple Maps campaign using manual cost-per-thousand-impressions bidding. The `
 
 > **Note**: Uses `bidStrategyType: MANUAL_CPM` with `bidStrategyGoal: IMPRESSION`.
 
-##### Request
+### Request
 
 Creates an Apple Maps campaign with manual cost-per-thousand-impressions bidding, setting `billingEvent` to `IMPRESSIONS` and `bidStrategyGoal` to `IMPRESSION` as required by `MANUAL_CPM`.
 
@@ -738,7 +738,7 @@ POST /v1/campaigns
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

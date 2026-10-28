@@ -14,7 +14,7 @@ void SetValidAutoSenseData (
  SCSI_Sense_Data *targetData );
 ```
 
-#### Overview
+## Overview
 
 SetValidAutoSenseData is called to qualify sense data that is copied to the client via the SetAutoSenseData method. See IOSCSIProtocolServices.h for more details regarding SetAutoSenseData.
 

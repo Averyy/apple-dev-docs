@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatTranslate(SPPose3DFloat pose, SPVector3DFloat offset);
 ```
 
-#### Return Value
+## Return Value
 
 A pose that’s offset by the @p x, @p y, and @p z of the vector.
 
-#### Discussion
+## Discussion
 
 Returns a pose with a position that is offset from that of the source pose.
 

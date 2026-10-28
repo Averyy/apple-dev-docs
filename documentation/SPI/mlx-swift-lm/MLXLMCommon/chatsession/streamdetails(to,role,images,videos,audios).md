@@ -17,11 +17,11 @@ Produces a streaming response to a prompt as `Generation`.
 func streamDetails(to prompt: String, role: Chat.Message.Role = .user, images: consuming [UserInput.Image] = [], videos: consuming [UserInput.Video] = [], audios: consuming [UserInput.Audio] = []) -> AsyncThrowingStream<Generation, Error>
 ```
 
-#### Return Value
+## Return Value
 
 A stream of `Generation` from the model
 
-#### Discussion
+## Discussion
 
 Rejected calls are emitted as [`Generation.rejectedToolCall(_:)`](../generation/rejectedtoolcall%28_%29.md). When automatic tool dispatch is configured, the stream instead throws [`RejectedToolCallError`](../rejectedtoolcallerror.md) before dispatching any call from that turn.
 

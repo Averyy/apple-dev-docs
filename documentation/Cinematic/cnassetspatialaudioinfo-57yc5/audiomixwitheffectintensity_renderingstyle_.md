@@ -17,7 +17,7 @@
 - (AVAudioMix *) audioMixWithEffectIntensity:(float) effectIntensity renderingStyle:(CNSpatialAudioRenderingStyle) renderingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an instance of `AVAudioMix` encapsulating all spatial audio related data with specified effect intensity and rendering style.
 

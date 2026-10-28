@@ -24,7 +24,7 @@ class func inch() -> Self
 + (instancetype) inchUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring length in inches.
 

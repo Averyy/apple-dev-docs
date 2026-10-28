@@ -24,7 +24,7 @@ var disconnectTimeout: TimeInterval { get set }
 @property (assign) NSTimeInterval disconnectTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 The timeout is the waiting period before disconnecting a peer from the session. If a peer is disconnected, the delegate’s [`session(_:peer:didChange:)`](../gksessiondelegate/session%28_,peer,didchange%29.md) method is called.
 

@@ -25,7 +25,7 @@ static let calendarName: CFDateFormatterKey!
 extern CFDateFormatterKey const kCFDateFormatterCalendarName;
 ```
 
-#### Discussion
+## Discussion
 
 With OS X version 10.3, [`gregorianCalendar`](../cfcalendaridentifier/gregoriancalendar.md) is the only possible value. With OS X version 10.4, `kCFGregorianCalendar` and other calendar names are specified by CFLocale.
 

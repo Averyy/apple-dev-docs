@@ -15,11 +15,11 @@ Sets a Boolean value that indicates if the box requires authentication before us
 kern_return_t SetIsProtected(bool in_is_protected);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the protection state sends a notification to the host to update the object state.
 

@@ -25,7 +25,7 @@ final var liveView: (any PlaygroundLiveViewable)? { get set }
 var liveView: PlaygroundLiveViewable? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Display a live view by setting [`liveView`](./api-1964506-liveview.md) to an object that conforms to the [`PlaygroundLiveViewable`](../playgroundliveviewable.md) protocol. Dismiss any open live view by setting [`liveView`](./api-1964506-liveview.md) to `nil`.
 

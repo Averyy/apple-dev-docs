@@ -25,7 +25,7 @@ func resetSimulation()
 - (void) resetSimulation;
 ```
 
-#### Discussion
+## Discussion
 
 Resetting the simulation clears the internal state of the simulation.
 

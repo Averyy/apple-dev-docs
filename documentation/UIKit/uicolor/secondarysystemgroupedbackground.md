@@ -22,7 +22,7 @@ class var secondarySystemGroupedBackground: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * secondarySystemGroupedBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color for grouped content, including table views and platter-based designs.
 

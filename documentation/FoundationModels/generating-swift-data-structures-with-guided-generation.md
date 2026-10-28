@@ -5,7 +5,7 @@
 
 Create robust apps by describing output you want programmatically.
 
-#### Overview
+## Overview
 
 When you perform a request, the model returns a raw string in its natural language format. Raw strings require you to manually parse the details you want. Instead of working with raw strings, the framework provides guided generation, which gives strong guarantees that the response is in a format you expect.
 
@@ -13,7 +13,7 @@ To use guided generation, describe the output you want as a new Swift type. When
 
 For more information about creating a session and prompting the model, see [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md).
 
-#### Conform your data type to Generable
+## Conform your data type to Generable
 
 To conform your type to [`Generable`](./generable.md), describe the type and the parameters to guide the response of the model. The framework supports generating content with basic Swift types like `Bool`, `Int`, `Float`, `Double`, `Decimal`, and `Array`. For example, if you only want the model to return a numeric result, call [`respond(to:generating:includeSchemaInPrompt:options:)`](./languagemodelsession/respond%28to,generating,includeschemainprompt,options%29-13kji.md) using the type `Float`:
 
@@ -47,7 +47,7 @@ struct CatProfile {
 
 You can nest custom `Generable` types inside other `Generable` types, and mark enumerations with associated values as `Generable`. The `Generable` macro ensures that all associated and nested values are themselves generable. This allows for advanced use cases like creating complex data types or dynamically generating views at runtime.
 
-#### Make a request with your custom data type
+## Make a request with your custom data type
 
 After creating your type, use it along with a [`LanguageModelSession`](./languagemodelsession.md) to prompt the model. When you use a `Generable` type it prevents the model from producing malformed output and prevents the need for any manual string parsing.
 
@@ -59,7 +59,7 @@ let response = try await session.respond(
 )
 ```
 
-#### Define a dynamic schema at runtime
+## Define a dynamic schema at runtime
 
 If you don’t know what you want the model to produce at compile time use [`DynamicGenerationSchema`](./dynamicgenerationschema.md) to define what you need. For example, when you’re working on a restaurant app and want to restrict the model to pick from menu options that a restaurant provides. Because each restaurant provides a different menu, the schema won’t be known in its entirety until runtime.
 

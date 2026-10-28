@@ -19,11 +19,11 @@
 static bool SPProjectiveTransform3DFloatIsRectilinear(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform is affine and rectilinear.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform is affine and rectilinear.
 

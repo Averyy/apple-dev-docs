@@ -4,7 +4,7 @@
 
 Combines elements and acts as a single element.
 
-#### Overview
+## Overview
 
 The `section` element groups elements together so they can be treated as a single element for layout purposes. Here’s an example that uses a section to hold two movie `lockup` elements and places them in a `shelf` element.
 
@@ -26,14 +26,14 @@ The `section` element groups elements together so they can be treated as a singl
 </shelf>
 ```
 
-##### Subelements of section
+### Subelements of section
 
 - [header](./header.md)
 - [listItemLockup](./listitemlockup.md)
 - [lockup](./lockup.md)
 - [menuItem](./menuitem.md)
 
-##### Elements that Use section
+### Elements that Use section
 
 - [carousel](./carousel.md)
 - [grid](./grid.md)

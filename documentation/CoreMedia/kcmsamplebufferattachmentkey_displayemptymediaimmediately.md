@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_DisplayEmptyMediaImmediately: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_DisplayEmptyMediaImmediately;
 ```
 
-#### Discussion
+## Discussion
 
 Marker sample buffers with this attachment in addition to [`kCMSampleBufferAttachmentKey_EmptyMedia`](./kcmsamplebufferattachmentkey_emptymedia.md)        are used to tell that the empty sample buffer should be dequeued immediately regardless of its timestamp.        This attachment should only be used with sample buffers with the [`kCMSampleBufferAttachmentKey_EmptyMedia`](./kcmsamplebufferattachmentkey_emptymedia.md)        attachment.
 

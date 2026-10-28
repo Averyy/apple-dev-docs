@@ -25,7 +25,7 @@ func CFTimeZoneSetDefault(_ tz: CFTimeZone!)
 extern void CFTimeZoneSetDefault(CFTimeZoneRef tz);
 ```
 
-#### Discussion
+## Discussion
 
 There can be only one default time zone, so by setting a new default time zone, you lose the previous one.
 

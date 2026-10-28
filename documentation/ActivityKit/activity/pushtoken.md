@@ -20,7 +20,7 @@ var pushToken: Data? { get }
 
 - [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
-#### Discussion
+## Discussion
 
 The push token for a Live Activity may change over time. Use the [`pushTokenUpdates`](./pushtokenupdates-swift.property.md) asynchronous sequence to receive the updated push token. When you receive an updated push token, make sure to send it to your server and invalidate the outdated token.
 

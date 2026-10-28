@@ -20,7 +20,7 @@ A schema that represents a null value.
 static var null: DynamicGenerationSchema { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use null schemas as a way to express types that cannot be absent, but may have an empty value.
 

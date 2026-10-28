@@ -5,7 +5,7 @@
 
 Create an illusion of multiple flat layers by causing the article body to overlap the header as the user scrolls.
 
-#### Overview
+## Overview
 
 **On this page, you’ll learn how to add parallax behavior to your article.**
 
@@ -15,7 +15,7 @@ You’ll first divide the article’s components into two sections. This require
 
 ![Side-by-side screenshots of an Apple News article on iPhone. The left image shows the article before scrolling, and the right image shows the effect of scrolling with parallax behavior.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624570@2x.png)
 
-##### Divide the Article Content into Sections
+### Divide the Article Content into Sections
 
 Add sections to the article’s top-level `components` array and move all existing components into the new sections. This requires moving a large amount of code.
 
@@ -33,7 +33,7 @@ Your code should look like the example code [Section Components: Result (Collaps
 
 After you make these changes in your code, you can successfully preview your working `article.json` file in News Preview, but it won’t look any different until you add parallax behavior in [Add Parallax Behavior in the First Section](./adding-parallax-behavior.md#Add-Parallax-Behavior-in-the-First-Section).
 
-###### Section Components: Copy This Code
+#### Section Components: Copy This Code
 
 ```json
     {
@@ -52,7 +52,7 @@ After you make these changes in your code, you can successfully preview your wor
     }
 ```
 
-###### Section Components: Result (Collapsed)
+#### Section Components: Result (Collapsed)
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -79,7 +79,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-###### Section Components: Result (Expanded)
+#### Section Components: Result (Expanded)
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -146,7 +146,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Add Parallax Behavior in the First Section
+### Add Parallax Behavior in the First Section
 
 Your article currently has two sections. You’ll use the first section’s `behavior` property to assign a parallax factor lower than 1, causing the first section to scroll more slowly than the default scroll speed.
 
@@ -157,7 +157,7 @@ Your code should look like the example code [Behavior: Result](./adding-parallax
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see the changes in scroll speed. You might notice text becoming illegible as it covers the image. You’ll fix this in [Use the Opaque Background with the Lower Section](./adding-parallax-behavior.md#Use-the-Opaque-Background-with-the-Lower-Section) by adding a background color to the lower section.
 
-###### Behavior: Copy This Code
+#### Behavior: Copy This Code
 
 ```json
       "behavior": {
@@ -166,7 +166,7 @@ After you make this change in your code, you can preview your working `article.j
       },
 ```
 
-###### Behavior: Result
+#### Behavior: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -206,7 +206,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a ComponentStyle Object for Background Color
+### Define a ComponentStyle Object for Background Color
 
 To finish the parallax behavior, you need to add a background color to the lower section. Before you can do that, you must define a `ComponentStyle` object.
 
@@ -215,7 +215,7 @@ To finish the parallax behavior, you need to add a background color to the lower
 
 Your code should look like the example code [bodyBackgroundStyle: Result](./adding-parallax-behavior.md#bodyBackgroundStyle-Result).
 
-###### bodyBackgroundStyle: Copy This Code
+#### bodyBackgroundStyle: Copy This Code
 
 ```json
 ,
@@ -224,7 +224,7 @@ Your code should look like the example code [bodyBackgroundStyle: Result](./addi
     }
 ```
 
-###### bodyBackgroundStyle: Result
+#### bodyBackgroundStyle: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -241,7 +241,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Use the Opaque Background with the Lower Section
+### Use the Opaque Background with the Lower Section
 
 As a final step, you need to add a reference to the `ComponentStyle` object you just defined.
 
@@ -251,7 +251,7 @@ Your code should look like the example code [Opaque Background: Result](./adding
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see that the lower section remains legible as it scrolls past the upper section.
 
-###### Opaque Background: Result
+#### Opaque Background: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -283,11 +283,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating a Layered Header](./creating-a-layered-header.md)
 
-##### Next
+### Next
 
 [Viewing the Finished Article for Advanced Design Tutorial 1](./viewing-the-finished-article-for-advanced-design-tutorial-1.md)
 

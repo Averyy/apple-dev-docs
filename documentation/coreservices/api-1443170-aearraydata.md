@@ -18,7 +18,7 @@ typedef union AEArrayData {
 } AEArrayData;
 ```
 
-#### Discussion
+## Discussion
 
 When your application calls the [`AEPutArray`](./api-1442535-aeputarray.md) function to put informationinto a descriptor list or the [`AEGetArray`](./api-1445720-aegetarray.md) functionto get information from a descriptor list, it uses an to store theinformation. The type of array depends on the data for the array,as specified by one of the constants described in [Data Array Constants](./api-1542848-data_array_constants.md).
 

@@ -21,7 +21,7 @@ var popoverLayoutMargins: UIEdgeInsets { get set }
 @property (nonatomic, readwrite) UIEdgeInsets popoverLayoutMargins;
 ```
 
-#### Discussion
+## Discussion
 
 The edge inset values are measured in points from the edges of the screen, relative to the current device orientation. Thus, the top-edge inset always reflects the top edge of the device from the user’s perspective, which changes depending on whether the user is holding the device in a portrait or landscape orientation. Remember that the device orientation is not always the same as the interface orientation—that is, the orientation of your window and views. Window orientations are typically fixed and view orientations are controlled by the owning view controller. In addition, if the rotation lock option is engaged, the interface does not change orientation at all, even when the device orientation changes.
 

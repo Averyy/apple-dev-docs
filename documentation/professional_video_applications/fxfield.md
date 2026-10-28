@@ -19,7 +19,7 @@ typealias FxField = Int
 typedef NSUInteger FxField;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to FxPlug 1.2, this type was used to identify field order. As of FxPlug 1.2, it is used to identify the field of an image.
 

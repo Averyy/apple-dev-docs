@@ -21,7 +21,7 @@ The transform from the system’s local space to world space.
 var localToWorld: simd_float4x4
 ```
 
-#### Discussion
+## Discussion
 
 How this matrix is applied depends on the graph’s coordinateSpace.
 

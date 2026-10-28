@@ -18,7 +18,7 @@ Returns the operation if it looks up an item.
 - (id<NSFileProviderTestingLookup>) asLookup;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingLookup`](../nsfileprovidertestinglookup.md) protocol, this method returns `nil`.
 

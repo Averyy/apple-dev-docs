@@ -19,7 +19,7 @@ object GalleryItem
 
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use an array of `GalleryItem` objects to define the individual items used in a gallery or mosaic component. When the user taps an image in a gallery or mosaic to see it full-screen (as shown in the following figure), the caption from the caption descriptor property is shown. Note that this is different from the [`Caption`](./caption.md) component.
 
@@ -27,7 +27,7 @@ Use an array of `GalleryItem` objects to define the individual items used in a g
 
 This object can be used in [`Gallery`](./gallery.md) and [`Mosaic`](./mosaic.md).
 
-##### Example
+### Example
 
 ```json
 {

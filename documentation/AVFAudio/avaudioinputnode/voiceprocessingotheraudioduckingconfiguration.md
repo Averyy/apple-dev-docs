@@ -23,7 +23,7 @@ var voiceProcessingOtherAudioDuckingConfiguration: AVAudioVoiceProcessingOtherAu
 @property (nonatomic) AVAudioVoiceProcessingOtherAudioDuckingConfiguration voiceProcessingOtherAudioDuckingConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configures the ducking of nonvoice audio, including advanced enablement and ducking level. Typically, when playing other audio during voice chat, applying a higher level of ducking can increase the intelligibility of the voice chat.
 

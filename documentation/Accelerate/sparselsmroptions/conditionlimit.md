@@ -25,7 +25,7 @@ var conditionLimit: Double
 double conditionLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The operation terminates iterations if a computed estimate of `cond(Abar)` exceeds this value. This is to prevent certain small or zero singular values of *A* or *Abar* from coming into effect and causing unwanted growth in the computed solution.
 

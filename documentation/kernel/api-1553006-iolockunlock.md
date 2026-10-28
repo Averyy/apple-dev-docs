@@ -24,7 +24,7 @@ void IOLockUnlock(struct IOLock *lock);
 void IOLockUnlock(IOLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Unlock the mutex and wake any blocked waiters. Results are undefined if the caller has not locked the mutex. This function may block and so should not be called from interrupt level or while a spin lock is held.
 

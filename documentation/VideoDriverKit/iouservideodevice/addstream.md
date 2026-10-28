@@ -15,11 +15,11 @@ Adds an video stream to the device.
 kern_return_t AddStream(IOUserVideoStream *in_stream);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if stream was successfully added.
 
-#### Discussion
+## Discussion
 
 The stream’s reference count will be incremented if it was successfully added.
 

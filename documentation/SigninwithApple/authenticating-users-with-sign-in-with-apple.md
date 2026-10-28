@@ -5,7 +5,7 @@
 
 Securely authenticate users and create accounts for them in your app.
 
-#### Overview
+## Overview
 
 Sign in with Apple lets users log in to your app across all of your platforms using their two-factor authentication Apple Account. After the user chooses to use Sign in with Apple to log in, your app receives tokens and user information that you can verify from a server.
 
@@ -15,7 +15,7 @@ When the user attempts to sign in using Sign in with Apple, the sequence in the 
 
 You may group apps in your developer account for Sign in with Apple so an app only requests information the first time the user logs in. A simple confirmation to continue appears even if the app bundle IDs are different across systems, such as iOS, macOS, and the web.
 
-##### Authenticate the user and request information
+### Authenticate the user and request information
 
 Initialize an authentication session with your app server and associate a client session with an ID token using the `nonce` value. You can request to receive the user’s information, such as name and email address. If the user approves accessing this information, your authorization request includes the requested information.
 
@@ -41,7 +41,7 @@ When someone uses your app and Sign in with Apple for the first time, the identi
 
 After the user logs in to your app using Sign in with Apple on one of their devices, they can sign in on all of their devices. Deleting your app from a device doesn’t affect this capability. If the user reinstalls your app, they can continue to use Sign in with Apple on any of their devices to sign in with their existing account.
 
-##### Send information to app servers and verify tokens
+### Send information to app servers and verify tokens
 
 After successfully authenticating the user, the server returns an identity JSON Web Token (JWT), single-use authorization grant code, the state contained in the authorization request, and user identifier to your app. Use the authorization grant code to verify the token claims with Apple servers, and exchange them for refresh tokens. For more information, see [Receiving a User’s Identity Token](./receiving-a-users-identity-token.md).
 
@@ -51,7 +51,7 @@ Although Apple provides the user’s email address in the identity token on all 
 
 Your app servers verify the validity of the token credentials with Apple Account servers. For more information, see [Verifying a user](./verifying-a-user.md).
 
-##### Prevent duplicate accounts
+### Prevent duplicate accounts
 
 A user may already have an account in your system, but may attempt to use Sign in with Apple to log in to that account. Sharing the real email address that’s associated with the user’s Apple Account may not help because it may not be the same email the user uses to create the account with your system. There are a couple of ways you can mitigate this issue:
 

@@ -22,7 +22,7 @@ var isBatteryMonitoringEnabled: Bool { get set }
 @property (nonatomic, getter=isBatteryMonitoringEnabled) BOOL batteryMonitoringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Enable battery monitoring if your app needs to be notified of changes to the battery state, or if you want to check the battery charge level.
 

@@ -19,7 +19,7 @@ var contentText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * contentText;
 ```
 
-#### Discussion
+## Discussion
 
 The content text is displayed in the caption button and indicates the purpose of the caption button. The last instance of [`contentImage`](./contentimage.md) or [`contentText`](./contenttext.md) that was set in your app is displayed by the caption button view.
 

@@ -21,7 +21,7 @@ The numeric value this character represents, if it represents a whole number.
 var wholeNumberValue: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this character does not represent a whole number, or the value is too large to represent as an `Int`, the value of this property is `nil`.
 

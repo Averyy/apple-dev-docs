@@ -24,7 +24,7 @@ class ARFrame
 
 - [Displaying an AR Experience with Metal](./displaying-an-ar-experience-with-metal.md)
 
-#### Overview
+## Overview
 
 A running session continuously captures video frames from the device’s camera while ARKit analyzes the captures to determine the user’s position in the world. ARKit can provide this information to you in the form of an [`ARFrame`](./arframe.md) in two ways:
 

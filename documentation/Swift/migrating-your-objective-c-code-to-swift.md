@@ -5,15 +5,15 @@
 
 Learn the recommended steps to migrate your code.
 
-#### Overview
+## Overview
 
 You can improve the architecture, logic, and performance of one of your Objective-C apps by replacing pieces of it in Swift.  Interoperability makes it possible to integrate features migrated to Swift into Objective-C code with no hassle. You don’t need to rewrite your entire app in Swift at once.
 
-##### Clean Up Your Code
+### Clean Up Your Code
 
 Make sure that your Objective-C code and Swift code have optimal compatibility by tidying up and modernizing your existing Objective-C codebase. For example, if there are parts of your codebase to which you haven’t added nullability annotations, now’s the time to add them. Make sure your code follows modern coding practices so that it interacts more effectively with Swift.
 
-##### Migrate Your Code
+### Migrate Your Code
 
 The most effective approach for migrating code to Swift is on a per-file basis—that is, one class at a time. Because you can’t subclass Swift classes in Objective-C, it’s best to choose a class in your app that doesn’t have any subclasses. You’ll replace the `.m` and `.h` files for that class with a single `.swift` file. Everything from your implementation and interface goes directly into this single Swift file. You won’t create a header file; Xcode generates a header automatically in case you need to reference it.
 
@@ -22,7 +22,7 @@ The most effective approach for migrating code to Swift is on a per-file basis�
 3. Fill out an Objective-C bridging header if you need to access Objective-C code from the same app target in your Swift file.
 4. To make your Swift class accessible and usable back in Objective-C, make it a descendant of an Objective-C class. To specify a particular name for the class to use in Objective-C, mark it with `@objc(`*name*`)`, where name is the name that your Objective-C code uses to reference the Swift class.
 
-###### As You Work
+#### As You Work
 
 1. You can set up your Swift class to integrate Objective-C behavior by subclassing Objective-C classes, adopting Objective-C protocols, and more.
 2. As you work with Objective-C APIs, you’ll need to know how Swift translates certain Objective-C language features. For more information, see [Objective-C and C Code Customization](./objective-c-and-c-code-customization.md).
@@ -30,13 +30,13 @@ The most effective approach for migrating code to Swift is on a per-file basis�
 4. Denote instance (`-`) and class (`+`) methods with `func` and `class func`, respectively.
 5. Declare simple macros as global constants, and translate complex macros into functions.
 
-###### After You Finish
+#### After You Finish
 
 1. Update import statements in your Objective-C code (to `#import "ProductModuleName-Swift.h"`) to refer to your new Swift code.
 2. Remove the original Objective-C `.m` file from the target by deselecting the target membership checkbox. Don’t delete the `.m` and `.h` files immediately; use them to troubleshoot.
 3. Update your code to use the Swift class name instead of the Objective-C name if you gave the Swift class a different name.
 
-##### Troubleshooting Tips and Reminders
+### Troubleshooting Tips and Reminders
 
 Migration experiences differ depending on your existing codebase, but here are some general steps and tools to help you troubleshoot the process:
 

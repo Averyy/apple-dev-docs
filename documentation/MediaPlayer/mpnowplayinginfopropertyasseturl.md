@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyAssetURL: String
 extern NSString * const MPNowPlayingInfoPropertyAssetURL;
 ```
 
-#### Discussion
+## Discussion
 
 The system UI uses this constant when video thumbnails or audio waveform visualizations are applicable.
 

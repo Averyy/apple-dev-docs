@@ -21,11 +21,11 @@ optional func collectionViewCellClass(for element: TVViewElement) -> AnyClass?
 - (Class) collectionViewCellClassForElement:(TVViewElement *) element;
 ```
 
-#### Return Value
+## Return Value
 
 The new collection view cell associated with the given element name.
 
-#### Discussion
+## Discussion
 
 The collection view cell must be in a list, shelf, or grid. This method is called once per unique element name as a common cell class is used for all elements that share the same name in a collection. Return `nil` for default handling.
 

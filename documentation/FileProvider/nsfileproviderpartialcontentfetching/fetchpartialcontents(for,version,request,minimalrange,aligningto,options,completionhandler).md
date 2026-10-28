@@ -20,11 +20,11 @@ func fetchPartialContents(for itemIdentifier: NSFileProviderItemIdentifier, vers
 - (NSProgress *) fetchPartialContentsForItemWithIdentifier:(NSFileProviderItemIdentifier) itemIdentifier version:(NSFileProviderItemVersion *) requestedVersion request:(NSFileProviderRequest *) request minimalRange:(NSRange) requestedRange aligningTo:(NSUInteger) alignment options:(NSFileProviderFetchContentsOptions) options completionHandler:(void (^)(NSURL *fileContents, NSFileProviderItem item, NSRange retrievedRange, NSFileProviderMaterializationFlags flags, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An item that tracks the extension’s progress.
 
-#### Discussion
+## Discussion
 
 Implement this method to download a range of the specified file and pass it to the completion handler. If your file provider extension doesn’t implement this method, the system defaults to [`fetchContents(for:version:request:completionHandler:)`](../nsfileproviderreplicatedextension/fetchcontents%28for,version,request,completionhandler%29.md).
 
@@ -42,7 +42,7 @@ If this is the first time the system has requested the file’s content, it sets
 
 However, when updating existing files, the system sets the `options` parameter to [`strictVersioning`](../nsfileproviderfetchcontentsoptions/strictversioning.md). This prevents the system from accidentally writing mismatched pieces from different versions to the same file. If you can’t provide the requested version, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](../nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
 
-##### Concurrently Downloading Files
+### Concurrently Downloading Files
 
 By default, the system calls the [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](./fetchpartialcontents%28for,version,request,minimalrange,aligningto,options,completionhandler%29.md) method concurrently when there are multiple outstanding requests. This can include making multiple concurrent requests for different parts of the file.
 
@@ -50,13 +50,13 @@ You can control concurrent requests by setting the [`NSExtensionFileProviderDown
 
 > **Note**:  You must set the [`NSExtensionFileProviderDownloadPipelineDepth`](../../BundleResources/information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth.md) key for each domain. The setting affects all requests for files in the specified domain.
 
-##### Managing File Ownership
+### Managing File Ownership
 
 After receiving the `fileContents`, the system clones and deletes the file. Don’t mutate the corresponding file after calling the completion handler. If your extension needs to keep a copy of the content, create a clone of the content and pass the URL of the clone as the completion handler’s `fileContents` parameter.
 
 If the extension or system crashes after you call the completion handler but before the system deletes the file, your temporary file may remain where you saved it. In this case, your extension must delete the file.
 
-##### Disallowing Downloads
+### Disallowing Downloads
 
 You can control which processes can request files. By default, the system automatically manages files based on its POSIX access control lists.
 
@@ -65,7 +65,7 @@ To prevent a process from accessing content from the extension’s domain, save 
 - In macOS 11.0 and later, the system checks this list when a process reads a file using POSIX filesystem calls.
 - In macOS 11.4 and later, the system also checks this list when a process reads a file using file coordination.
 
-##### Handing Errors
+### Handing Errors
 
 If the system requests an item that your file provider extension doesn’t know about, pass the [`NSFileProviderError.Code.noSuchItem`](../nsfileprovidererror/code/nosuchitem.md) error to the completion handler. The system then treats the item as if someone had removed the item from the domain, and it attempts to delete the file. If it can’t delete the item (for example, because the item has local changes) it recreates the item by calling your extension’s [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md) method.
 
@@ -79,7 +79,7 @@ If your extension provides content that doesn’t match the requested version, t
 
 The system considers all other errors as transient, and attempts to request the content again.
 
-##### Canceling Downloads
+### Canceling Downloads
 
 Your implementation of this method must return a [`Progress`](../../Foundation/progress.md) item that tracks your app’s progress while downloading the requested range. The system uses this item to show the progress to the user.
 

@@ -23,7 +23,7 @@ var previouslyFocusedIndexPath: IndexPath? { get }
 @property (nonatomic, strong, readonly, nullable) NSIndexPath * previouslyFocusedIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an index path only when the view receiving focus belongs to a cell of the collection view. If focus was previously in a view outside of the collection view and its cells, this property is `nil`. This property is also `nil` when the collection view receives focus for the first time.
 

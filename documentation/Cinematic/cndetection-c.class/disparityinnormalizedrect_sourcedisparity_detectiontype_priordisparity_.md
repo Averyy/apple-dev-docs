@@ -19,7 +19,7 @@ Determines the disparity to use to focus on the object in the rectangle.
 + (float) disparityInNormalizedRect:(CGRect) normalizedRect sourceDisparity:(CVPixelBufferRef) sourceDisparity detectionType:(CNDetectionType) detectionType priorDisparity:(float) priorDisparity;
 ```
 
-#### Return Value
+## Return Value
 
 A float representing the disparity to use to focus on the object in the rectangle.
 

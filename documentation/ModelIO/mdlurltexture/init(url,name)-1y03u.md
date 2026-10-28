@@ -24,11 +24,11 @@ init(url URL: URL, name: String?)
 - (instancetype) initWithURL:(NSURL *) URL name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL-backed texture.
 
-#### Discussion
+## Discussion
 
 This initializer does not load texel data from the URL; the [`MDLURLTexture`](../mdlurltexture.md) class automatically loads data and caches it for reuse when you use one of the [`MDLTexture`](../mdltexture.md) methods listed in Accessing Texture Data.
 

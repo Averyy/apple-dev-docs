@@ -23,11 +23,11 @@ func locale(_ locale: Locale) -> FloatingPointFormatStyle<Value>
 
 Available when `Value` conforms to `BinaryFloatingPoint`.
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the provided locale.
 
-#### Discussion
+## Discussion
 
 Use this modifier to change the locale that an existing format style uses. To instead determine the locale this format style uses, use the [`locale`](./locale.md) property.
 

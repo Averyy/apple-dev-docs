@@ -22,7 +22,7 @@ func bufferColorSpace() -> Unmanaged<CGColorSpace>!
 - (CGColorSpaceRef) bufferColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The color space of the image buffer.
 

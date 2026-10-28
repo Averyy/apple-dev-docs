@@ -25,7 +25,7 @@ var condition: Int { get }
 @property (readonly) NSInteger condition;
 ```
 
-#### Discussion
+## Discussion
 
 If no condition has been set, returns 0.
 

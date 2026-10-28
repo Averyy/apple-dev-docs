@@ -26,7 +26,7 @@ class func mayStore(days: Int) -> Self
 
 - [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
-#### Return Value
+## Return Value
 
 A new instance of [`PKIdentityIntentToStore`](../pkidentityintenttostore.md).
 

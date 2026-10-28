@@ -19,7 +19,7 @@ func GetSpeechRate(_ chan: SpeechChannel, _ rate: UnsafeMutablePointer<Fixed>) -
 OSErr GetSpeechRate(SpeechChannel chan, Fixed *rate);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 

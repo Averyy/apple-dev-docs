@@ -19,7 +19,7 @@ optional func setAccessibilityFrame(_ frame: NSRect)
 - (void) setAccessibilityFrame:(NSRect) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the setter method for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityFrame`](../nsaccessibility-c.protocol/accessibilityframe.md) property. By implementing this method, you allow accessibility clients to modify this element’s frame.
 

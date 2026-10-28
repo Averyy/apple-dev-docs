@@ -17,7 +17,7 @@ An estimated timeseries of ambient noise intrusion.
 @property (nonatomic, strong, readonly, nullable) NSNumber * backgroundNoise;
 ```
 
-#### Discussion
+## Discussion
 
 The sensor’s estimate of ambient noise intrusion in the [`normalizedReflectance`](./normalizedreflectance-9aidm.md) signal (Normalized Units).
 

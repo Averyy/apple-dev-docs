@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagIsFloat: AudioFormatFlags { get }
 kLinearPCMFormatFlagIsFloat
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagIsFloat`](./kaudioformatflagisfloat.md).
 

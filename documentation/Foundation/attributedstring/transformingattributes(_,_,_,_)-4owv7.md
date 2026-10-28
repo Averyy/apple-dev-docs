@@ -22,7 +22,7 @@ Returns an attributed string by calling a closure that transforms three attribut
 func transformingAttributes<K1, K2, K3>(_ k: K1.Type, _ k2: K2.Type, _ k3: K3.Type, _ c: (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>) -> Void) -> AttributedString where K1 : AttributedStringKey, K2 : AttributedStringKey, K3 : AttributedStringKey, K1.Value : Sendable, K2.Value : Sendable, K3.Value : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string with the applied transformations to the specified attributes.
 

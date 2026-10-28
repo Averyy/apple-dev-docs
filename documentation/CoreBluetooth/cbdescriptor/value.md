@@ -25,7 +25,7 @@ var value: Any? { get }
 @property (retain, readonly, nullable) id value;
 ```
 
-#### Discussion
+## Discussion
 
 The documentation for [`CBUUID`](../cbuuid.md) details the value types for the various descriptor types.
 

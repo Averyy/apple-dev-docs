@@ -24,7 +24,7 @@ var alphaSpeed: Float { get set }
 @property float alphaSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The speed change is defined as the rate of change per second.
 

@@ -23,7 +23,7 @@ protocol PKToolPickerObserver : NSObjectProtocol
 @protocol PKToolPickerObserver <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement the methods of [`PKToolPickerObserver`](./pktoolpickerobserver.md) to detect when the user changes the configuration of a [`PKToolPicker`](./pktoolpicker.md) view. Each time the user changes the selected tool or other drawing characteristics, the tool picker notifies any registered observers. You use these notifications to update the configuration of the underlying canvas.
 

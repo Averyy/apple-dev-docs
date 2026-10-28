@@ -20,11 +20,11 @@ func AudioHardwareCreateAggregateDevice(_ inDescription: CFDictionary, _ outDevi
 extern OSStatus AudioHardwareCreateAggregateDevice(CFDictionaryRef inDescription, AudioObjectID *outDeviceID);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This routine creates a new AudioAggregateDevice using the provided description.
 

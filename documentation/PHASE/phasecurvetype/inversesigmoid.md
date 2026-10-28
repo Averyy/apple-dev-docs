@@ -24,7 +24,7 @@ case inverseSigmoid
 PHASECurveTypeInverseSigmoid
 ```
 
-#### Discussion
+## Discussion
 
 Also known as an *inverse s-curve*, the inverse sigmoid curve’s path movement is quick at either end and slow in the middle.
 

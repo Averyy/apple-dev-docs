@@ -23,11 +23,11 @@ Converts a posted main actor message into a notification for any observers.
 static func makeNotification(_ message: Self) -> Notification
 ```
 
-#### Return Value
+## Return Value
 
 The converted [`Notification`](../../notification.md).
 
-#### Discussion
+## Discussion
 
 To implement this method in your own `MainActorMessage` conformance, use the properties defined by the message to populate the [`Notification`](../../notification.md)’s [`userInfo`](../../notification/userinfo.md).
 

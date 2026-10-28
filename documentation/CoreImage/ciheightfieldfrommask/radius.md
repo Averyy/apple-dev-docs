@@ -25,7 +25,7 @@ var radius: Float { get set }
 @property (nonatomic) float radius;
 ```
 
-#### Discussion
+## Discussion
 
 Larger values make the transition smoother and more pronounced. Smaller values make the transition approximate a fillet radius.
 

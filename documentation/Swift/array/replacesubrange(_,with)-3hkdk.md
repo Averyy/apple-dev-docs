@@ -21,7 +21,7 @@ Replaces the specified subrange of elements with the given collection.
 mutating func replaceSubrange<C>(_ subrange: Range<Self.Index>, with newElements: C) where C : Collection, Self.Element == C.Element
 ```
 
-#### Discussion
+## Discussion
 
 This method has the effect of removing the specified range of elements from the collection and inserting the new elements at the same location. The number of new elements need not match the number of elements being removed.
 

@@ -5,7 +5,7 @@
 
 Properties that apply to an individual image in an image source.
 
-#### Overview
+## Overview
 
 Access these properties using the [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](./cgimagesourcecopypropertiesatindex%28_,_,_%29.md) or [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](./cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md) function.
 

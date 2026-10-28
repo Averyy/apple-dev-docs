@@ -28,7 +28,7 @@ class UITableViewHeaderFooterView
 
 - [Adding headers and footers to table sections](./adding-headers-and-footers-to-table-sections.md)
 
-#### Overview
+## Overview
 
 Use [`UITableViewHeaderFooterView`](./uitableviewheaderfooterview.md) objects to manage the header and footer content of your table’s sections efficiently. A header-footer view is a reusable view that you can subclass or use as is. To configure the content and appearance of a header-footer view, you can set its [`contentConfiguration`](./uitableviewheaderfooterview/contentconfiguration-6b4eg.md) and [`backgroundConfiguration`](./uitableviewheaderfooterview/backgroundconfiguration-52wng.md).
 

@@ -15,11 +15,11 @@ Creates and returns a text provider with the specified dates and time zone infor
 - (instancetype) initWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate timeZone:(NSTimeZone *) timeZone;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified date and time zone values.
 
-#### Discussion
+## Discussion
 
 The returned text provider uses the default calendar information for the current user and uses the time zone in the `timeZone` parameter. Date and time values are formatted according to the user’s current locale information.
 

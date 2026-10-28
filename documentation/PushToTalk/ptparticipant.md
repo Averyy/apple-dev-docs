@@ -21,7 +21,7 @@ class PTParticipant
 @interface PTParticipant : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`PTParticipant`](./ptparticipant.md) object with [`setActiveRemoteParticipant(_:channelUUID:completionHandler:)`](./ptchannelmanager/setactiveremoteparticipant%28_,channeluuid,completionhandler%29.md) to update the [`name`](./ptparticipant/name.md) and `imageFileURL` the system displays in the user interface.
 

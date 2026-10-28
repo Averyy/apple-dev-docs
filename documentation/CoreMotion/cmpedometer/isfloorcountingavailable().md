@@ -23,11 +23,11 @@ class func isFloorCountingAvailable() -> Bool
 + (BOOL) isFloorCountingAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if floor counting is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Floor counting indicates the ability to count the number of floors the user walks up or down using stairs. This capability is not supported on all devices.
 

@@ -26,7 +26,7 @@ func move(to point: CGPoint, withCaretRect caretRect: CGRect, trackingCaret trac
 
 - [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 Call this method repeatedly from a gesture recognizer when the touch location changes.
 

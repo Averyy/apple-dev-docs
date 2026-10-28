@@ -19,11 +19,11 @@ func makeSelectionView() -> NSScrubberSelectionView?
 - (NSScrubberSelectionView *) makeSelectionView;
 ```
 
-#### Return Value
+## Return Value
 
 A correctly configured scrubber selection view that represents the appearance of your custom selection style.
 
-#### Discussion
+## Discussion
 
 In an [`NSScrubberSelectionStyle`](../nsscrubberselectionstyle.md) subclass that you create, override this method to create a custom selection style.
 

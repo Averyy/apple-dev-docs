@@ -15,7 +15,7 @@ An event object that the map object dispatches when someone selects or deselects
 class MapAnnotationSelectionEvent extends Event
 ```
 
-#### Discussion
+## Discussion
 
 The [`Map`](./map.md) dispatches a [`MapAnnotationSelectionEvent`](./mapannotationselectionevent.md) when someone selects or deselects an annotation. The event type can be `select` or `deselect`.
 

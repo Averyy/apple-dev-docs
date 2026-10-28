@@ -25,7 +25,7 @@ unowned(unsafe) var underlyingQueue: dispatch_queue_t? { get set }
 @property (assign, nullable) dispatch_queue_t underlyingQueue;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. You can set the value of this property to an existing dispatch queue to have enqueued operations interspersed with blocks submitted to that dispatch queue.
 

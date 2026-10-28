@@ -19,7 +19,7 @@ var verticalScrollElasticity: NSScrollView.Elasticity { get set }
 @property NSScrollElasticity verticalScrollElasticity;
 ```
 
-#### Discussion
+## Discussion
 
 A scroll view can scroll its contents past its bounds to achieve an elastic effect.
 

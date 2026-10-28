@@ -19,11 +19,11 @@
 static float SPAngleFloatGetDegrees(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The angle in degrees.
 
-#### Discussion
+## Discussion
 
 Returns the angle in degrees.
 

@@ -24,7 +24,7 @@ protocol INPlayMediaIntentHandling : NSObjectProtocol
 @protocol INPlayMediaIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INPlayMediaIntentHandling`](./inplaymediaintenthandling.md) protocol to confirm and handle requests for media playback in your app. Adopt this protocol in an object of your Intents app extension capable of verifying that the media is playable in your app. When handling the playback request, send the request to your app and let your app perform the playback, rather than playing the media in the extension. The lifespan of extensions is too short for media playback.
 

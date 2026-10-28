@@ -21,11 +21,11 @@ A span over the single element stored in this box.
 var span: Span<Value> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `Span` over the element stored in this box.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

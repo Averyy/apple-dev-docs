@@ -24,7 +24,7 @@ class MTLInstanceAccelerationStructureDescriptor
 @interface MTLInstanceAccelerationStructureDescriptor : MTLAccelerationStructureDescriptor
 ```
 
-#### Overview
+## Overview
 
 Metal provides acceleration structures with a two-level hierarchy. The bottom layer consists of primitive acceleration structures, which instance acceleration structures in the top level reference.
 

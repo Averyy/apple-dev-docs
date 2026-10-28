@@ -21,7 +21,7 @@ Creates a sender in authentication mode.
 init<SK>(recipientKey: SK.PublicKey, ciphersuite: HPKE.Ciphersuite, info: Data, authenticatedBy authenticationKey: SK) throws where SK : HPKEDiffieHellmanPrivateKey
 ```
 
-#### Discussion
+## Discussion
 
 The `Sender` encrypts messages in authentication mode with a symmetric encryption key. Messages also include authentication data so that the recipient can verify the authenticity of the sender’s private key.
 

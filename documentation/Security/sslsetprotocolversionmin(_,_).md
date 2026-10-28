@@ -24,7 +24,7 @@ func SSLSetProtocolVersionMin(_ context: SSLContext, _ minVersion: SSLProtocol) 
 OSStatus SSLSetProtocolVersionMin(SSLContextRef context, SSLProtocol minVersion);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

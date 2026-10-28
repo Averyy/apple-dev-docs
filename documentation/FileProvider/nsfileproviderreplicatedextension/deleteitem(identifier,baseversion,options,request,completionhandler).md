@@ -24,11 +24,11 @@ func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion version: N
 - (NSProgress *) deleteItemWithIdentifier:(NSFileProviderItemIdentifier) identifier baseVersion:(NSFileProviderItemVersion *) version options:(NSFileProviderDeleteItemOptions) options request:(NSFileProviderRequest *) request completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An item that tracks your extension’s progress.
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user deletes an item that was already in the trash. Users can only delete items that have the [`allowsDeleting`](../nsfileprovideritemcapabilities/allowsdeleting.md) capability.
 

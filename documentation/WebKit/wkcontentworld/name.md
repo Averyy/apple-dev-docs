@@ -23,7 +23,7 @@ var name: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a valid string only for content worlds you retrieve using the [`world(name:)`](./world%28name%29.md) function. The value of this property is `nil` for the content worlds in the [`defaultClient`](./defaultclient.md) and [`page`](./page.md) properties.
 

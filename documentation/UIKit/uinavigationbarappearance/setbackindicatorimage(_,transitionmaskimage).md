@@ -23,7 +23,7 @@ func setBackIndicatorImage(_ backIndicatorImage: UIImage?, transitionMaskImage b
 - (void) setBackIndicatorImage:(UIImage *) backIndicatorImage transitionMaskImage:(UIImage *) backIndicatorTransitionMaskImage;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify `nil` for either [`backIndicatorImage`](./backindicatorimage.md) or [`backIndicatorTransitionMaskImage`](./backindicatortransitionmaskimage.md), this method resets both images to their default values.
 

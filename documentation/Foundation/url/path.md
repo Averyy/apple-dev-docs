@@ -23,11 +23,11 @@ The path component of the URL if the URL conforms to RFC 3986; otherwise, an emp
 var path: String { get }
 ```
 
-#### Return Value
+## Return Value
 
 The path, or an empty string if the URL has an empty path.
 
-#### Discussion
+## Discussion
 
 > **Note**:  This function resolves against the base `URL`.
 

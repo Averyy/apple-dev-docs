@@ -23,7 +23,7 @@ var DISPATCH_IO_RANDOM: Int32 { get }
 #define DISPATCH_IO_RANDOM
 ```
 
-#### Discussion
+## Discussion
 
 The channel represents a random access file. Read and write operations may be performed concurrently with a channel of this type. Offsets are interpreted relative to the file pointer position that is current at the time the channel is created. After channel creation, the file pointer position of the file descriptor is indeterminate until channel relinquishes control of the file descriptor, at which time the position is reset to its initial value.
 

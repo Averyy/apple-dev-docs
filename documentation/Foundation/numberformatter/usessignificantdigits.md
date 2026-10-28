@@ -25,7 +25,7 @@ var usesSignificantDigits: Bool { get set }
 @property BOOL usesSignificantDigits;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NumberFormatter`](../numberformatter.md) class has two ways of determining how many digits to represent:_ _using integer and fraction digits and using significant digits.
 

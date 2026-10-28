@@ -5,11 +5,11 @@
 
 A Boolean value that determines the clip playback direction.
 
-#### Overview
+## Overview
 
 The default value is `false`, which doesn’t reverse the animation. Set this property to `true` to play the animation from the end to the beginning.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform bool reversed = false

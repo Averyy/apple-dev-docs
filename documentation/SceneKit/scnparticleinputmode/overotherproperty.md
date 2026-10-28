@@ -25,7 +25,7 @@ case overOtherProperty
 SCNParticleInputModeOverOtherProperty
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`inputProperty`](../scnparticlepropertycontroller/inputproperty.md) property to specify the input property, and the [`inputBias`](../scnparticlepropertycontroller/inputbias.md) and [`inputScale`](../scnparticlepropertycontroller/inputscale.md) properties to refine the relationship between a range of property values into a range of input values for the controller’s animation.
 

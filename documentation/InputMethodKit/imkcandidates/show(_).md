@@ -19,7 +19,7 @@ func show(_ locationHint: IMKCandidatesLocationHint)
 - (void) show:(IMKCandidatesLocationHint) locationHint;
 ```
 
-#### Discussion
+## Discussion
 
 Your input method  calls this method when it is appropriate during text conversion to display a list of candidates.
 

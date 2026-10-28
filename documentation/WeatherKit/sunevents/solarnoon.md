@@ -21,7 +21,7 @@ Represents solar noon, the time when the sun reaches its highest point in the sk
 var solarNoon: Date?
 ```
 
-#### Discussion
+## Discussion
 
 It may or may not be above the horizon at this time due to variations of solar events at extreme latitudes. If the highest point isn’t above the horizon, this property is `nil`.
 

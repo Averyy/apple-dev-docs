@@ -15,7 +15,7 @@ A custom property to associate with audio objects.
 class IOUserAudioCustomProperty;
 ```
 
-#### Overview
+## Overview
 
 Along with the property value, you can provide a qualifier value to further refine get and set operations. For example, if a given property exists on multiple devices, use a device identifier as the qualifier to indicate which device to set the value on.
 

@@ -21,11 +21,11 @@ Retains a Core Video buffer.
 extern CVBufferRefCVBufferRetain(CVBufferRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 For convenience, the same Core Video buffer you wanted to retain.
 
-#### Discussion
+## Discussion
 
 Like [`CFRetain`](../CoreFoundation/cfretain.md), this function increments the retain count of a Core Video buffer. However, unlike [`CFRetain`](../CoreFoundation/cfretain.md), this function is `NULL` safe.
 

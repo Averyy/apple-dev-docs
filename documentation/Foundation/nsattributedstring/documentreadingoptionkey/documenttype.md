@@ -21,7 +21,7 @@ The document type.
 static let documentType: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 One of the document types described in [`NSAttributedString.DocumentType`](../documenttype.md), indicating a document type to be forced when loading the document. The previous string constant was `@"DocumentType"`.
 

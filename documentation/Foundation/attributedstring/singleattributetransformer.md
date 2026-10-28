@@ -22,7 +22,7 @@ A type that transforms an attribute by altering its range or value, or by replac
 struct SingleAttributeTransformer<T> where T : AttributedStringKey, T.Value : Sendable
 ```
 
-#### Overview
+## Overview
 
 For simple transformations, the closure you provide to the `transformingAttributes(…)` methods of [`AttributedString`](../attributedstring.md) can use this instance to change the attribute’s value. You can also use this instance to change the range of the string that the attribute applies to. To completely replace the attribute with an attribute of a different type, use [`replace(with:value:)`](./singleattributetransformer/replace%28with,value%29-6bn0e.md).
 

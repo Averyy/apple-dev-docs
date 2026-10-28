@@ -17,7 +17,7 @@ Port of the Python Gemma4ImageProcessor’s aspect-ratio preserving resize: the 
 func aspectPreservingTargetSize(for imageSize: CGSize, budget: Int? = nil) -> CGSize
 ```
 
-#### Discussion
+## Discussion
 
 Note the config’s `size` entry is deliberately ignored, as in the Python reference — models ship a vestigial 224x224 there.
 

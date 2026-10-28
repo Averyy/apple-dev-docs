@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetHumidifierDehumidifierState: String
 extern NSString * const HMCharacteristicTypeTargetHumidifierDehumidifierState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueTargetHumidifierDehumidifierState`](./hmcharacteristicvaluetargethumidifierdehumidifierstate.md) enumeration.
 

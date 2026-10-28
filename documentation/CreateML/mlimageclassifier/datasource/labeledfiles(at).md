@@ -19,7 +19,7 @@ An image classifier data source that uses file names to label images.
 case labeledFiles(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Use this case to create a data source based on a files on disk that contain your training images. The associated value is a URL that represents a directory containing files with names based on each image’s associated label. The image’s label is taken as the part of the file name up to the first period.
 

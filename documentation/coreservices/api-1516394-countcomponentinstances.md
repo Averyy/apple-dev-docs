@@ -15,11 +15,11 @@ Determines the number of open connections being managed by a specified component
 long CountComponentInstances(Component aComponent);
 ```
 
-#### Return Value
+## Return Value
 
 The number of open connections for the specified component. 
 
-#### Discussion
+## Discussion
 
 This function can be useful if you want to restrict the number of connections for your component or if your component needs to perform special processing based on the number of open connections. 
 

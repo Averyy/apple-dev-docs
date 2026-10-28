@@ -13,7 +13,7 @@ Configure an image to blur and extend under a sidebar or inspector panel.
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way.
 
@@ -33,7 +33,7 @@ To apply the background extension effect, the sample:
 2. Applies the [`backgroundExtensionEffect()`](./view/backgroundextensioneffect%28%29.md) modifier to the view.
 3. Configures only the image in the background extension, and avoids applying the effect to the title and button in the overlay.
 
-##### Align the view to the leading and trailing edges
+### Align the view to the leading and trailing edges
 
 To apply the [`backgroundExtensionEffect()`](./view/backgroundextensioneffect%28%29.md) to a view, align the leading edge of the view next to the sidebar, and align the trailing edge of the view to the trailing edge of the containing view.
 
@@ -51,7 +51,7 @@ ScrollView(showsIndicators: false) {
 
 In `LandmarkDetailView`, the [`ScrollView`](./scrollview.md) and [`VStack`](./vstack.md) that contain the main image also don’t have any padding. This allows the main image to align against the leading edge of the containing view.
 
-##### Apply the background extension effect to the image
+### Apply the background extension effect to the image
 
 In `LandmarkDetailView`, the sample applies the background extension effect to the main image by adding the [`backgroundExtensionEffect()`](./view/backgroundextensioneffect%28%29.md) modifier:
 
@@ -73,7 +73,7 @@ When the inspector is open, the system extends the image in the trailing directi
 - The system flips that portion of the image horizontally toward the trailing edge and applies a blur to the flipped section.
 - The system places the modified section of the image under the inspector, immediately after the trailing edge of the image.
 
-##### Configure only the image
+### Configure only the image
 
 In `LandmarksView`, the `LandmarkFeaturedItemView` has an image from the featured landmark, and includes a title for the landmark and a button you can click or tap to learn more about that location.
 

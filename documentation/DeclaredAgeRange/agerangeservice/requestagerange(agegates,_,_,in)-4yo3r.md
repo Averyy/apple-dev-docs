@@ -15,11 +15,11 @@ Requests an age range for the person logged onto iCloud on the device.
 func requestAgeRange(ageGates threshold1: Int, _ threshold2: Int? = nil, _ threshold3: Int? = nil, in window: NSWindow) async throws -> AgeRangeService.Response
 ```
 
-#### Return Value
+## Return Value
 
 An [`AgeRangeService.Response`](./response.md) value indicating whether the person shared their age range.
 
-#### Discussion
+## Discussion
 
 This method presents a system-provided interface that allows people to share their age information with your app. The interface explains what information will be shared and gives people control over whether to provide this information.
 

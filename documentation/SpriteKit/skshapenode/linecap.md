@@ -25,7 +25,7 @@ var lineCap: CGLineCap { get set }
 @property (nonatomic) CGLineCap lineCap;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CGLineCap.butt`](../../CoreGraphics/cglinecap/butt.md). See [`CGLineCap`](../../CoreGraphics/cglinecap.md).
 

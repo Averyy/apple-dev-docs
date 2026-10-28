@@ -21,7 +21,7 @@ Returns a path constructed by applying the transform to all points of the path.
 func applying(_ transform: CGAffineTransform) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new copy of the path with the transform applied to all points.
 

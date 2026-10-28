@@ -15,7 +15,7 @@ The specific version of the AppKit framework that introduced support for deferre
 static const NSAppKitVersion NSAppKitVersionNumberWithDeferredWindowDisplaySupport;
 ```
 
-#### Discussion
+## Discussion
 
 Developers should not need to use this constant unless they are writing applications for OS X v10.5 and earlier.
 

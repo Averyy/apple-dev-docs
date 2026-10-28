@@ -5,11 +5,11 @@
 
 Request permission from a parent or guardian to modify a child’s communication rules.
 
-#### Overview
+## Overview
 
 You can enable children to seek permission from a parent or guardian before sending a message to a friend on your app. Communication experiences between children and a parent or guardian using the `PermissionKit` framework are only available through iMessage.
 
-##### Manage permission responses
+### Manage permission responses
 
 Check a person’s age using [DeclaredAgeRange](../DeclaredAgeRange/DeclaredAgeRange.md) or your own account systems, then obtain an `AsyncSequence` to manage communication permission responses promptly after someone launches your app. Use [`updates`](./communicationlimits/updates.md) to enable your app to run in the background and receive responses. The following code snippet describes how you can set up your app to listen for communication responses.
 
@@ -28,7 +28,7 @@ let knownHandles = CommunicationLimits.current.knownHandles(in:
 kind: .custom), .init(value: "progamer67", kind: .custom)])
 ```
 
-##### Create a permission question
+### Create a permission question
 
 To enable the request and response exchange, your app listens for responses to questions with the [`CommunicationTopic`](./communicationtopic.md) topic type. When a child performs a communication-oriented action in your app that’s gated by parental permission, create a permission question that the child sends to their parent.
 
@@ -37,7 +37,7 @@ let question = PermissionQuestion<CommunicationTopic>
 (handle: .init(value: "dragonslayer42", kind: .custom))
 ```
 
-##### Set permission choices
+### Set permission choices
 
 Each [`PermissionQuestion`](./permissionquestion.md) has a set of possible answer choices, and each answer choice corresponds to a globally unique identifier.
 
@@ -65,7 +65,7 @@ Provide a default answer choice that reflects the experience expected when a chi
 question.defaultChoice = approveIndefinitely
 ```
 
-##### Send a permission question
+### Send a permission question
 
 To send a permission question, make an explicit request. When you call the [`ask(_:in:)`](./askcenter/ask%28_,in%29-39vi7.md) method, the system validates the question, the sender, and the intended recipients. Depending on the specific scenario, the system displays the appropriate prompts, such as the new composed Message screen. You receive a [`PermissionResponse`](./permissionresponse.md) as an `AsyncSequence` that you obtained earlier.
 

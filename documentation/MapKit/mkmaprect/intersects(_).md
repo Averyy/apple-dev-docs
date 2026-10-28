@@ -25,11 +25,11 @@ func intersects(_ rect2: MKMapRect) -> Bool
 extern BOOL MKMapRectIntersectsRect(MKMapRect rect1, MKMapRect rect2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `rect1` and `rect2` intersect each other, or [`false`](../../Swift/false.md) if they don’t intersect or either rectangle is `null`.
 
-#### Discussion
+## Discussion
 
 The rectangles aren’t intersecting if the only intersection occurs along an edge. For a true intersection, the rectangles both need to enclose a single rectangular area with a width and height that are both greater than `0`.
 

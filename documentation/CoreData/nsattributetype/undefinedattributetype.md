@@ -25,7 +25,7 @@ case undefinedAttributeType
 NSUndefinedAttributeType
 ```
 
-#### Discussion
+## Discussion
 
 Use this attribute type with transient attributues only. Core Data manages the attribute’s value and registers the necessary undo and redo actions.
 

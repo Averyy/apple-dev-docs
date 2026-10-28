@@ -29,7 +29,7 @@ func boost(with params: MTRWaterHeaterManagementClusterBoostParams) async throws
 - (void) boostWithParams:(MTRWaterHeaterManagementClusterBoostParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to request that the water heater is put into a Boost state.
 

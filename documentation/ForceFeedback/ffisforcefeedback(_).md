@@ -20,11 +20,11 @@ func FFIsForceFeedback(_ hidDevice: io_service_t) -> HRESULT
 extern HRESULT FFIsForceFeedback(io_service_t hidDevice);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, and the device supports FF, the return value is FF_OK. If the method succeeds, and the device does not support FF, the return value is FFERR_NOINTERFACE. If the method fails, the return value is FFERR_INVALIDPARAM
 
-#### Discussion
+## Discussion
 
 When you are finished with the device, FFReleaseDevice must be called on the reference received in this function to dispose of the API device object.
 

@@ -20,7 +20,7 @@ Extrudes the shape with a linear extrusion in Z by the desired depth.
 case linear(depth: Float)
 ```
 
-#### Discussion
+## Discussion
 
 For example an extrusion that has a linear depth of 0.6 meters:
 

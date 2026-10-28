@@ -29,7 +29,7 @@ optional func resolveGroupName(for intent: INCreateTaskListIntent) async -> INSp
 - (void) resolveGroupNameForCreateTaskList:(INCreateTaskListIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the intended group for a task list. Use the intent object to obtain the group information, if any, specified by the user. Groups are a way for you to organize the task lists of your app. For example, the Reminders app automatically provides a group for each unique service, such as iCloud, that manages task lists and tasks.
 

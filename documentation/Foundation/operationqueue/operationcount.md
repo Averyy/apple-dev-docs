@@ -27,7 +27,7 @@ var operationCount: Int { get }
 @property (readonly) NSUInteger operationCount;
 ```
 
-#### Discussion
+## Discussion
 
 Because the number of operations in the queue changes as those operations finish executing, the value returned by this property reflects the instantaneous number of operations at the time the property was accessed. By the time you use the value, the actual number of operations may be different. As a result, do not use this value for object enumerations or other precise calculations.
 

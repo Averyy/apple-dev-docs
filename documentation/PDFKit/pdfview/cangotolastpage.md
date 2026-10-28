@@ -24,7 +24,7 @@ var canGoToLastPage: Bool { get }
 @property (nonatomic, readonly) BOOL canGoToLastPage;
 ```
 
-#### Discussion
+## Discussion
 
 The return value will be [`true`](../../Swift/true.md) unless the view is already displaying the last page.
 

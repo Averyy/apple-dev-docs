@@ -21,7 +21,7 @@ var date: Date { get set }
 @property (nonatomic, retain) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 You set the value of this property at creation time but may change it later.
 

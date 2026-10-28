@@ -15,7 +15,7 @@ void InvokePMIdleUPP (
 );
 ```
 
-#### Overview
+## Overview
 
 You do not need this function in macOS. Instead, use the standard idle proc. See the [PMIdleProcPtr](./pmidleprocptr.md) callback function.
 

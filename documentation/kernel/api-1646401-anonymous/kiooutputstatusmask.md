@@ -13,7 +13,7 @@
 kIOOutputStatusMask = 0x00ff
 ```
 
-#### Discussion
+## Discussion
 
 Define the status field in the return code.
 

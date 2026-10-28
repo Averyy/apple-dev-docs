@@ -22,7 +22,7 @@ var line1ImageProvider: CLKFullColorImageProvider { get set }
 @property (nonatomic, copy) CLKFullColorImageProvider * line1ImageProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This image provider produces a full-color image, masked to a circle.
 

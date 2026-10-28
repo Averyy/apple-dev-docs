@@ -13,11 +13,11 @@
 errno_t ifnet_input(ifnet_t interface, mbuf_t first_packet, const struct ifnet_stat_increment_param *stats);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Inputs packets from the interface. The interface's demux will be called to determine the protocol. Once the protocol is determined, the interface filters and protocol filters will be called. From there, the packet will be passed to the registered protocol. If there is an error, the mbuf chain will be freed.
 

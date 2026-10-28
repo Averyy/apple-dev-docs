@@ -25,11 +25,11 @@ func CTFontCopyVariation(_ font: CTFont) -> CFDictionary?
 extern CFDictionaryRefCTFontCopyVariation(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The current variation instance as a dictionary.
 
-#### Discussion
+## Discussion
 
 The keys for each variation correspond to the variation identifier obtained via [`kCTFontVariationAxisIdentifierKey`](./kctfontvariationaxisidentifierkey.md), which represents the four-character axis code as a CFNumber object.
 

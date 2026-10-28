@@ -21,11 +21,11 @@ func QLThumbnailRequestCopyContentUTI(_ thumbnail: QLThumbnailRequest!) -> Unman
 extern CFStringRefQLThumbnailRequestCopyContentUTI(QLThumbnailRequestRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 The UTI identifying the content type of the document for which the thumbnail is requested; returns `NULL` if the UTI cannot be located. You should explicitly release this string object when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

@@ -15,7 +15,7 @@ A callback function that is called when the request begins.
 attribute function onloadstart;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function; for example, `XMLHttpRequest.onloadstart = function () {}`.
 

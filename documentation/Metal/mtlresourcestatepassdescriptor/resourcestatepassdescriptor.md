@@ -20,7 +20,7 @@ Creates a new resource state pass descriptor.
 + (MTLResourceStatePassDescriptor *) resourceStatePassDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new resource state pass descriptor.
 

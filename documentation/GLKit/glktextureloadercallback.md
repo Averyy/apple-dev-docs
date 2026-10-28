@@ -22,7 +22,7 @@ typealias GLKTextureLoaderCallback = (GLKTextureInfo?, (any Error)?) -> Void
 typedef void (^)(GLKTextureInfo *, NSError *) GLKTextureLoaderCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

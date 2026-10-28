@@ -24,7 +24,7 @@ func NSStringFromGCPoint2(_ point: GCPoint2) -> String
 extern NSString *NSStringFromGCPoint2(GCPoint2 point);
 ```
 
-#### Return Value
+## Return Value
 
 A string of the form `{a, b}`, where `a` and `b` are the x and y coordinates of `point`.
 

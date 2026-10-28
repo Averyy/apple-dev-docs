@@ -19,11 +19,11 @@ func isIncoming() -> Bool
 - (BOOL) isIncoming;
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the channel is an incoming channel.
 
-#### Discussion
+## Discussion
 
 An incoming channel is one that was initiated by a remote device.
 

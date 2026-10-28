@@ -24,7 +24,7 @@ static let rowingSpeed: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierRowingSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use distance per time units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During outdoor rowing workouts, the system automatically records rowing speed samples on Apple Watch.
 

@@ -21,7 +21,7 @@ Manage the given `buffer`.
 init(unsafeBufferObject buffer: AnyObject)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `buffer` is an instance of a non-`@objc` class whose `deinit` destroys its stored `Header` and any constructed `Element`s.
 

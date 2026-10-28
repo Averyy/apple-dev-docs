@@ -16,11 +16,11 @@ Returns a blob of Power Source information in an opaque CFTypeRef.
 CFTypeRef IOPSCopyPowerSourcesInfo(void);
 ```
 
-#### Return Value
+## Return Value
 
 NULL if errors were encountered, a CFTypeRef otherwise. Caller must CFRelease() the return value when done accessing it.
 
-#### Discussion
+## Discussion
 
 Clients should not directly access data in the returned CFTypeRef - they should use the accessor functions IOPSCopyPowerSourcesList and IOPSGetPowerSourceDescription, instead.
 

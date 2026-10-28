@@ -20,7 +20,7 @@ Creates a new dynamic library from the contents of a file at an URL location syn
 func makeDynamicLibrary(url: URL) async throws -> any MTLDynamicLibrary
 ```
 
-#### Return Value
+## Return Value
 
 A dynamic metal library upon success, otherwise this function throws.
 

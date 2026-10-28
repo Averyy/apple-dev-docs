@@ -19,7 +19,7 @@ Seed the global PRNG.
 func seed(_ seed: UInt64)
 ```
 
-##### See Also
+### See Also
 
 - [`key(_:)`](./key%28_%29.md)
 

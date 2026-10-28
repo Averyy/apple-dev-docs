@@ -20,7 +20,7 @@ case protocolItemAttr
 kSecProtocolItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a value of type `SecProtocolType` that represents the Internet protocol. For possible protocol type values, see [`SecProtocolType`](../secprotocoltype.md). This is unique to AppleShare and Internet password attributes.
 

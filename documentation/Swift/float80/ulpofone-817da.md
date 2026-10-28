@@ -15,7 +15,7 @@ The unit in the last place of 1.0.
 static var ulpOfOne: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 The positive difference between 1.0 and the next greater representable number. `ulpOfOne` corresponds to the value represented by the C macros `FLT_EPSILON`, `DBL_EPSILON`, etc, and is sometimes called *epsilon* or *machine epsilon*. Swift deliberately avoids using the term “epsilon” because:
 

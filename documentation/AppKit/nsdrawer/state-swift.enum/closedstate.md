@@ -19,7 +19,7 @@ case closedState
 NSDrawerClosedState
 ```
 
-#### Discussion
+## Discussion
 
 The drawer is closed (not visible onscreen).
 

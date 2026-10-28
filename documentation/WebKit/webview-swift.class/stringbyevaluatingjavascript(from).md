@@ -21,7 +21,7 @@ func stringByEvaluatingJavaScript(from script: String!) -> String!
 - (NSString *) stringByEvaluatingJavaScriptFromString:(NSString *) script;
 ```
 
-#### Return Value
+## Return Value
 
 The result of running a JavaScript specified by `script`, or an empty string if the script failed.
 

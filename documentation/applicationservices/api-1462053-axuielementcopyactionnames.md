@@ -19,7 +19,7 @@ func AXUIElementCopyActionNames(_ element: AXUIElement, _ names: UnsafeMutablePo
 AXError AXUIElementCopyActionNames(AXUIElementRef element, CFArrayRef  _Nullable *names);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyActionNames` may return one of the following error codes, among others:
 

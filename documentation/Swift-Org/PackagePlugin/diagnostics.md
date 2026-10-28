@@ -17,7 +17,7 @@ Emits errors, warnings, and remarks to show as a result of running the plugin.
 struct Diagnostics
 ```
 
-#### Overview
+## Overview
 
 After emitting one or more errors, a plugin should return a non-zero exit code.
 

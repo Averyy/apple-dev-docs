@@ -12,11 +12,11 @@ IOMemoryDescriptor * GetHBADataDescriptor (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to an IOMemoryDescriptor that wraps the HBA specific data buffer, NULL if none found or GetHBADataSize() returns zero.
 
-#### Overview
+## Overview
 
 Method to retrieve the IOMemoryDescriptor associated with the HBA Data.
 

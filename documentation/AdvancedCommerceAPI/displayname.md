@@ -23,7 +23,7 @@ string displayName
 
 **Maximum Length**: `30`
 
-#### Discussion
+## Discussion
 
 You provide a display name for every SKU you offer in your app. For subscriptions, provide clear, distinguishable subscription options. Use short, self-explanatory names that differentiate subscription options from one another.
 

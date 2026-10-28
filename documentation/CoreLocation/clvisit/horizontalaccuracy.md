@@ -22,7 +22,7 @@ var horizontalAccuracy: CLLocationAccuracy { get }
 @property (nonatomic, readonly) CLLocationAccuracy horizontalAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 The latitude and longitude specified by the [`coordinate`](./coordinate.md) property identify the center of the circle, and this value indicates the radius of that circle.
 

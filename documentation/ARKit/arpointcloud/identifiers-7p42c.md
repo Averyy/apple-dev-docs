@@ -16,7 +16,7 @@ A list of unique identifiers corresponding to detected feature points.
 @property (nonatomic, readonly) const uint64_t * identifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Each identifier in this list corresponds to the point vector at the same index in the [`points`](./points-7mppp.md) array.
 

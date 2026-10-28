@@ -20,7 +20,7 @@ A change that invalidates a view’s constraints.
 struct Constraints
 ```
 
-#### Overview
+## Overview
 
 Use [`constraints`](../../uiviewinvalidating/constraints.md) to create an instance of this type.
 

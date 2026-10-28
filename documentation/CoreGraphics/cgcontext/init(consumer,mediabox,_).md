@@ -25,11 +25,11 @@ init?(consumer: CGDataConsumer, mediaBox: UnsafePointer<CGRect>?, _ auxiliaryInf
 extern CGContextRefCGPDFContextCreate(CGDataConsumerRef consumer, const CGRect *mediaBox, CFDictionaryRef auxiliaryInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A new PDF context, or `NULL` if the context cannot be created. In Objective-C, you’re responsible for releasing this object using [`CGContextRelease`](../cgcontextrelease.md).
 
-#### Discussion
+## Discussion
 
 This function creates a PDF drawing environment to your specifications. When you draw into the new context, Core Graphics renders your drawing as a sequence of PDF drawing commands that are passed to the data consumer object.
 

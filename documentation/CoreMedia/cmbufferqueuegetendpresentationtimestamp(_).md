@@ -25,11 +25,11 @@ func CMBufferQueueGetEndPresentationTimeStamp(_ queue: CMBufferQueue) -> CMTime
 extern CMTime CMBufferQueueGetEndPresentationTimeStamp(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the sum of `PresentationTimeStamp` and the individual buffer durations.
 
-#### Discussion
+## Discussion
 
 This is the maximum end time (PTS + duration) of buffers in the queue.                If the `getPresentationTimeStamp` callback is `NULL`, `kCMTimeInvalid` will                be returned.
 

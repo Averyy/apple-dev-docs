@@ -24,7 +24,7 @@ let kCIInputColor0Key: String
 extern NSString * const kCIInputColor0Key;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be a [`CIColor`](./cicolor.md) instance.
 

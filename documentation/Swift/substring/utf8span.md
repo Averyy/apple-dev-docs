@@ -21,11 +21,11 @@ A UTF-8 span over the code units that make up this substring.
 var utf8Span: UTF8Span { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `UTF8Span` over the code units of this `Substring`.
 
-#### Discussion
+## Discussion
 
 > **Note**: On Apple platforms, this property must transcode the code units of bridged UTF-16 `String` instances on every access.
 >

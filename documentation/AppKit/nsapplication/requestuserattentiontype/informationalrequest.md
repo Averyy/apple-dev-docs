@@ -19,7 +19,7 @@ case informationalRequest
 NSInformationalRequest
 ```
 
-#### Discussion
+## Discussion
 
 The dock icon will bounce for one second. The request, though, remains active until either the app becomes active or the request is canceled.
 

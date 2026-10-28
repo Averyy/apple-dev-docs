@@ -18,11 +18,11 @@ Casts an object safely to the specified type, if possible.
 #define OSDynamicCast(type, inst)
 ```
 
-#### Return Value
+## Return Value
 
 The object cast to the specified type, or `NULL` if the cast could not be performed safely.
 
-#### Discussion
+## Discussion
 
 Use this macro instead of the standard C++ RTTI type-casting operator to cast objects to specific types. The following example shows how to cast some object to the [`OSString`](./osstring.md) class. If the object cannot be cast to a string, the macro sets the `string` variable to `NULL`.
 

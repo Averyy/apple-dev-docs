@@ -25,7 +25,7 @@ class func deleteHistory(before date: Date) -> Self
 + (instancetype) deleteHistoryBeforeDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 A delete history change request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) using an end date boundary.
 

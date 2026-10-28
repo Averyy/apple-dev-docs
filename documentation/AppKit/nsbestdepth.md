@@ -15,7 +15,7 @@ Attempts to return a window depth adequate for the specified parameters.
 extern NSWindowDepth NSBestDepth(NSColorSpaceName colorSpace, NSInteger bps, NSInteger bpp, BOOL planar, BOOL *exactMatch);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a window depth deep enough for the given number of colors in `colorSpace`, bits per sample specified by `bps`, bits per pixel specified by `bpp`, and whether planar as specified by `planar`. Upon return, the variable pointed to by `exactMatch` is [`true`](../Swift/true.md) if the window depth can accommodate all of the values specified by the parameters, [`false`](../Swift/false.md) if it can’t.
 

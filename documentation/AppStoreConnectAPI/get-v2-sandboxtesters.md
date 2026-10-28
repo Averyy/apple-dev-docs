@@ -9,9 +9,9 @@ Get a list of Sandbox Testers for your team.
 **Availability**:
 - App Store Connect API 2.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

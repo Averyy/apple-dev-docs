@@ -4,7 +4,7 @@
 
 A collection of default comparison methods useful for performing specifier tests.
 
-#### Overview
+## Overview
 
 If you have scriptable objects that need to perform comparisons for scripting purposes, you may need to implement some of the methods declared in NSScriptingComparisonMethods. The default implementation provided for many of these methods by `NSObject` is appropriate for objects that implement a single comparison method whose selector, signature, and description match the following:
 

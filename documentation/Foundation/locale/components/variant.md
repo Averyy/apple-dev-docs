@@ -21,7 +21,7 @@ An optional variant used by the locale.
 var variant: Locale.Variant?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to override the variant of the locale.
 

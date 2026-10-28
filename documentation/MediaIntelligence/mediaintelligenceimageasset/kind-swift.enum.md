@@ -24,7 +24,7 @@ enum Kind
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Overview
+## Overview
 
 [`MediaIntelligenceImageAsset.Kind`](./kind-swift.enum.md) describes how the framework reads an image.
 

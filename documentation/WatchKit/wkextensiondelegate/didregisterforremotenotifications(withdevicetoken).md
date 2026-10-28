@@ -19,7 +19,7 @@ optional func didRegisterForRemoteNotifications(withDeviceToken deviceToken: Dat
 - (void) didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) deviceToken;
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method after it successfully registers your app with APNs. In your implementation, send the contents of the `deviceToken` parameter to the server you use to generate remote notifications. Never cache the device token locally on the user’s device. Device tokens can change periodically, so caching the value risks sending an invalid token to your server.
 

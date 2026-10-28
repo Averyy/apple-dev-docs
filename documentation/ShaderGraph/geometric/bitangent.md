@@ -14,7 +14,7 @@ The geometric bitangent vector of the currently-processed data in a given coordi
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -25,12 +25,12 @@ The geometric bitangent vector of the currently-processed data in a given coordi
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Space`**: The space in which the shader defines the bitangent vector. Defaults to `object`.
 - **`Index`**: The index of the texture coordinates that the node computes the tangent against. Default is `0`.
 
-#### Discussion
+## Discussion
 
 Valid values for the `Space` parameter include:
 

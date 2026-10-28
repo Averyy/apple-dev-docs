@@ -22,7 +22,7 @@ A circular geographic condition that a center point and radius define.
 
 - [Monitoring the user’s proximity to geographic regions](./monitoring-the-user-s-proximity-to-geographic-regions.md)
 
-#### Overview
+## Overview
 
 Use `CLCircularGeographicCondition` to monitor events that occur in a circular geographic condition that you describe.
 

@@ -21,7 +21,7 @@ File permissions for the given mode
 var permissions: FilePermissions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This property is equivalent to `mode.permissions`. Modifying this property will update the underlying `st_mode` accordingly.
 

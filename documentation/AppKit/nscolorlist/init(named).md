@@ -19,7 +19,7 @@ init?(named name: NSColorList.Name)
 + (NSColorList *) colorListNamed:(NSColorListName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The color list with the specified name or `nil` if no such color list exists.
 

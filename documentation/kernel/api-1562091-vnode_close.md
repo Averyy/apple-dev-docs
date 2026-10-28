@@ -15,11 +15,11 @@ Close a file as opened with vnode_open().
 errno_t vnode_close(vnode_t vp, int flags, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or an error from the filesystem.
 
-#### Discussion
+## Discussion
 
 vnode_close() drops the refcount (persistent reference) picked up in vnode_open() and calls down to the filesystem with VNOP_CLOSE. It should be called with both an iocount and a refcount on the vnode and will drop both.
 

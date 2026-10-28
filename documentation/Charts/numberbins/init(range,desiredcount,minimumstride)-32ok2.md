@@ -22,7 +22,7 @@ nonisolated
 init(range: ClosedRange<Value>, desiredCount: Int = 10, minimumStride: Value = 0) where Value : BinaryFloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The inferred bins.
 

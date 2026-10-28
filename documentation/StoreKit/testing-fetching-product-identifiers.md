@@ -5,7 +5,7 @@
 
 Verify that your app receives the correct product identifiers by inspecting or replicating your app’s process for retrieving the identifiers.
 
-#### Overview
+## Overview
 
 If you embed your product identifiers in your app, set a breakpoint in your code after the code loads the identifiers. Verify that the instance of [`NSArray`](../Foundation/nsarray.md) contains your expected list of product identifiers.
 

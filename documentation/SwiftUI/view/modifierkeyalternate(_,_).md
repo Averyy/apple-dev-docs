@@ -16,11 +16,11 @@ nonisolated
 func modifierKeyAlternate<V>(_ modifiers: EventModifiers, @ContentBuilder _ alternate: () -> V) -> some View where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A modified view with an alternate view to use while specific modifier keys are held down.
 
-#### Discussion
+## Discussion
 
 ```swift
 Button("Go Forward", ...)

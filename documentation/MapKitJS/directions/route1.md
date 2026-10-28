@@ -23,11 +23,11 @@ route(
 ): Promise<DirectionsResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`DirectionsResponse`](../directionsresponse.md) on success.
 
-#### Discussion
+## Discussion
 
 Call the [`route()`](./route1.md) method to get directions.
 

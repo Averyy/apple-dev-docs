@@ -12,7 +12,7 @@ virtual void HandlePowerChange (
  void );
 ```
 
-#### Overview
+## Overview
 
 This method is called to handle a power change. It is called from a clean thread context (i.e. new thread, no locks held) and can make synchronous or asynchronous calls.
 

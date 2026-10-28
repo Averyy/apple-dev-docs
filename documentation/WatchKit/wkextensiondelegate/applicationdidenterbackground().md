@@ -24,7 +24,7 @@ optional func applicationDidEnterBackground()
 - [Handling Common State Transitions](../handling-common-state-transitions.md)
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 Override this method to release shared resources, invalidate timers, and store enough app state information to restore your app to its current state if it’s purged from memory. You have only a few seconds to complete these actions and return.
 

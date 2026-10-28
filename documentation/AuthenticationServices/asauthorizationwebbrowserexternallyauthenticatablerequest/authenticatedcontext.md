@@ -20,7 +20,7 @@ var authenticatedContext: LAContext? { get set }
 @property (nonatomic, nullable) LAContext * authenticatedContext;
 ```
 
-#### Discussion
+## Discussion
 
 Ensure the person authenticates, for example using FaceID, before accessing their credentials.
 

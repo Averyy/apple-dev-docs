@@ -24,7 +24,7 @@ func transform(by m: CGAffineTransform, interior flag: Bool) -> CIFilterShape
 - (CIFilterShape *) transformBy:(CGAffineTransform) m interior:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 The transformed filter shape object.
 

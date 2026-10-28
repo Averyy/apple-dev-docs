@@ -23,7 +23,7 @@ var title: String! { get set }
 @property (nonatomic, copy, null_resettable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this string in the app switcher to make it easier for the user to differentiate among your app’s scenes. Set this property to an empty string if you don’t want the app switcher to display anything for the scene.
 

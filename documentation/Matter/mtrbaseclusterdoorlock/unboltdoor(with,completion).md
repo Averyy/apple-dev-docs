@@ -29,7 +29,7 @@ func unboltDoor(with params: MTRDoorLockClusterUnboltDoorParams?) async throws
 - (void) unboltDoorWithParams:(MTRDoorLockClusterUnboltDoorParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command causes the lock device to unlock the door without pulling the latch.
 

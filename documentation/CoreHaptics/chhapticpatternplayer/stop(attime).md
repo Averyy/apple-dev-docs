@@ -25,7 +25,7 @@ func stop(atTime time: TimeInterval) throws
 - (BOOL) stopAtTime:(NSTimeInterval) time error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If `time` is `0` or any value less than the haptic engine’s [`currentTime`](../chhapticengine/currenttime.md), the pattern stops playing immediately.
 

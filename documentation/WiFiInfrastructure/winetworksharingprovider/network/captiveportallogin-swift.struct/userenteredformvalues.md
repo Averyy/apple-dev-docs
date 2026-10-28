@@ -17,7 +17,7 @@ The user-entered form values to complete captive portal login.
 let userEnteredFormValues: [String : String]
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary content depends on the available data:
 

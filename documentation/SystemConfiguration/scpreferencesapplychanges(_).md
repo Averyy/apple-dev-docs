@@ -19,7 +19,7 @@ func SCPreferencesApplyChanges(_ prefs: SCPreferences) -> Bool
 Boolean SCPreferencesApplyChanges(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the lock was obtained; `FALSE` if an error occurred.
 

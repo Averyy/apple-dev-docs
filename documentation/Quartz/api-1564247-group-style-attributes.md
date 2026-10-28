@@ -5,7 +5,7 @@
 
 Attributes for the group style. Used by the
 
-#### Overview
+## Overview
 
 These constants affect the appearance of a group.
 

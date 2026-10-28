@@ -23,7 +23,7 @@ init()
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 This is equivalent to initializing with an empty array literal. For example:
 

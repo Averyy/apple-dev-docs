@@ -14,7 +14,7 @@ Boolean operation in1 && in2.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -25,7 +25,7 @@ Boolean operation in1 && in2.
 | --- | --- |
 | `Out` | Bool |
 
-#### Discussion
+## Discussion
 
 This node mimics the logical `And` operator. The table below shows the node’s output:
 

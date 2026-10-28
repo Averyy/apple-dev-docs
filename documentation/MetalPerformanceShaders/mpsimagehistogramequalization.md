@@ -24,7 +24,7 @@ class MPSImageHistogramEqualization
 @interface MPSImageHistogramEqualization : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 The process is divided into three steps:
 

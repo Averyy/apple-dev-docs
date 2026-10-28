@@ -21,7 +21,7 @@ Returns an empty string.
 + (instancetype) string;
 ```
 
-#### Return Value
+## Return Value
 
 An empty string.
 

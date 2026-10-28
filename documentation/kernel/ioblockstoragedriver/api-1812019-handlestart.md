@@ -10,11 +10,11 @@ virtual bool handleStart(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise.
 
-#### Overview
+## Overview
 
 Prepare the block storage driver for operation.
 

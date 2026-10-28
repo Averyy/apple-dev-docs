@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 This documentation describes the details of the programming interface for accessing USB devices and USB interfaces from code running in user space. This documentation assumes that you have a basic understanding of the material contained in [Introduction to Accessing Hardware From Applications](https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/AccessingHardware/AH_Intro/AH_Intro.html#//apple_ref/doc/uid/TP40002714).
 
@@ -11,7 +11,7 @@ This documentation also assumes you have read [Working With USB Device Interface
 
 All of the information described in this document is contained in the header file `IOUSBLib.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/usb/IOUSBLib.h`.
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/usb/USB.h>
 - <IOKit/IOKitLib.h>

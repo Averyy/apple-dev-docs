@@ -19,7 +19,7 @@ let WatchKitErrorDomain: String
 extern NSString * const WatchKitErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this value in the [`NSError`](../Foundation/nserror.md) class.
 

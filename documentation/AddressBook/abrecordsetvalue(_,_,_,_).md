@@ -40,7 +40,7 @@ extern bool ABRecordSetValue(ABRecordRef record, ABPropertyID property, CFTypeRe
 extern bool ABRecordSetValue(ABRecordRef record, CFStringRef property, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 If `property` isa multi-value list property, this method checks to see if the valuesin the multi-value list are the same type. If the multi-value list containsmixed types, this method returns `false`.Returns `true` if successful, `false` otherwise.
 

@@ -25,7 +25,7 @@ let kCVImageBufferTransferFunction_ITU_R_709_2: CFString
 extern CFStringRef const kCVImageBufferTransferFunction_ITU_R_709_2;
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  Most apps should use this constant.
 

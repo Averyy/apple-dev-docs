@@ -22,17 +22,17 @@ Invoked by the Swift runtime when making a remote call.
 func remoteCall<Act, Err, Res>(on actor: Act, target: RemoteCallTarget, invocation: inout Self.InvocationEncoder, throwing: Err.Type, returning: Res.Type) async throws -> Res where Act : DistributedActor, Err : Error, Self.ActorID == Act.ID
 ```
 
-#### Discussion
+## Discussion
 
 The `arguments` are the arguments container that was previously created by `makeInvocationEncoder` and has been populated with all arguments.
 
 This method should perform the actual remote function call, and await for its response.
 
-#### Serialization Requirement
+## Serialization Requirement
 
 Implementations of this method must ensure that the `Argument` type parameter conforms to the types’ `SerializationRequirement`.
 
-#### Errors
+## Errors
 
 This method is allowed to throw because of underlying transport or serialization errors, as well as by re-throwing the error received from the remote callee (if able to).
 

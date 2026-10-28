@@ -19,11 +19,11 @@ func registerBooks(in bundle: Bundle) -> Bool
 - (BOOL) registerBooksInBundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if registration is successful, [`false`](../../Swift/false.md) if the bundle doesn’t contain any help books or if registration fails.
 
-#### Discussion
+## Discussion
 
 You use `registerBooksInBundle:` to register help books in, for example, a plug-in bundle. The `Info.plist` in the bundle should contain a help book directory path, which specifies one or more folders containing help books.
 

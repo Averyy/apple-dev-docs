@@ -19,7 +19,7 @@ var title: String? { get }
 @property (nonatomic, readonly, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 You set a marker group’s title with the [`AVNavigationMarkersGroup`](../avnavigationmarkersgroup.md) initializer. Each marker group in the [`navigationMarkerGroups`](../../AVFoundation/avplayeritem/navigationmarkergroups.md) array of an [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) object must have a unique title. To use the marker group as a chapter list, set its title to `nil`.
 

@@ -5,11 +5,11 @@
 
 Use bridged Foundation types in your Swift codebase to work with dates, times, and other values.
 
-#### Overview
+## Overview
 
 When importing the Foundation framework, the Swift overlay provides value types for many bridged reference types. Many other types are renamed or nested to clarify relationships.
 
-##### Prefer Swift Value Types to Bridged Objective-C Reference Types
+### Prefer Swift Value Types to Bridged Objective-C Reference Types
 
 The value types in the table below have the same functionality as their corresponding reference types. Class clusters that include immutable and mutable subclasses, like `NSArray` and `NSMutableArray`, are bridged to a single value type.
 
@@ -50,7 +50,7 @@ let dataValue = Data(base64Encoded: myString)
 let dataReference = dataValue as NSData?
 ```
 
-##### Note Renamed Reference Types
+### Note Renamed Reference Types
 
 For Foundation types that *aren’t* bridged to value types, the Swift overlay renames classes and protocols, as well as related enumerations and constants. These types and protocols drop their `NS` prefix, with the following exceptions:
 

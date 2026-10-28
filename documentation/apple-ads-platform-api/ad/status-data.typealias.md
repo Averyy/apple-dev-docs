@@ -20,11 +20,11 @@ string Ad.Status
 - `ENABLED`: The advertiser has set the ad to run, so it can participate in auctions.
 - `PAUSED`: The advertiser has paused the ad, so it does not participate in auctions.
 
-#### Discussion
+## Discussion
 
 The `Status` field controls auction eligibility directly, while the system-computed [`Ad.SystemStatus`](./systemstatus-data.typealias.md) reflects whether the ad is actually delivering.
 
-##### Example
+### Example
 
 ```json
 {

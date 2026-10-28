@@ -19,7 +19,7 @@ Creates a descriptor for an L2 norm pooling function with the kernel sizes, stri
 + (instancetype) l2NormPoolingDescriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes strides:(NSArray<NSNumber *> *) strides dilationRates:(NSArray<NSNumber *> *) dilationRates paddingPolicy:(MLCPaddingPolicy) paddingPolicy paddingSizes:(NSArray<NSNumber *> *) paddingSizes;
 ```
 
-#### Return Value
+## Return Value
 
 A pooling descriptor.
 

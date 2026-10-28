@@ -21,7 +21,7 @@ func vSscal(_ n: Int32, _ alpha: Float, _ x: UnsafeMutablePointer<vFloat>)
 extern void vSscal(int32_t n, float alpha, vFloat *x);
 ```
 
-#### Discussion
+## Discussion
 
 Each element of vector `x` is multiplied in place by `alpha`.
 

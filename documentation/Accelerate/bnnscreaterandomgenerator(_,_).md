@@ -25,7 +25,7 @@ func BNNSCreateRandomGenerator(_ method: BNNSRandomGeneratorMethod, _ filter_par
 BNNSRandomGeneratorBNNSCreateRandomGenerator(BNNSRandomGeneratorMethod method, const BNNSFilterParameters *filter_params);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the random generator.
 

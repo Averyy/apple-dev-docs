@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Customize the look and feel of your documentation webpages.
 
-#### Overview
+## Overview
 
 By default, rendered documentation webpages produced by DocC come with a default visual styling. If you wish, you may make adjustments to this styling by adding an optional `theme-settings.json` file to the root of your documentation catalog with some configuration. This file is used to customize various things like colors and fonts. You can even make changes to the way that specific elements appear, like buttons, code listings, and asides. Additionally, some metadata for the website can be configured in this file, and it can also be used to opt in or opt out of certain default rendering behavior.
 
@@ -18,7 +18,7 @@ If you’re curious about the full capabilities of the `theme-settings.json` fil
 
 Let’s walk through some basic examples of customizing the appearance of documentation now.
 
-##### Colors
+### Colors
 
 DocC utilizes [CSS custom properties](https://drafts.csswg.org/css-variables/) (CSS variables) to define the various colors that are used throughout the HTML elements of rendered documentation. Any key/value in the `theme.color` object of `theme-settings.json` will either update an existing color property used in the renderer or add a new one that could be referenced by existing ones.
 
@@ -69,7 +69,7 @@ As a general rule, the default color properties provided by DocC assumes a namin
 
 > 💡 **Tip**:  For a more complete example of a fully customized documentation website, you can check out [this fork](https://mportiz08.github.io/swift-docc/documentation/docc) of the DocC documentation that is using this [theme-settings.json file](https://mportiz08.github.io/swift-docc/theme-settings.json).
 
-##### Fonts
+### Fonts
 
 By default, there are two main fonts used by DocC: one for monospaced text in code voice and another for all other text content. With `theme-settings.json`, you can customize the CSS `font-family` lists for these however you choose.
 
@@ -88,7 +88,7 @@ By default, there are two main fonts used by DocC: one for monospaced text in co
 
 ![A screenshot of a documentation page with custom fonts](https://docs.swift.org/latest/images/org.swift.docc/theme-screenshot-04.png)
 
-##### Borders
+### Borders
 
 Another aspect of the renderer that you may wish to modify is the way that it applies border to certain elements. With `theme-settings.json`, you can change the default border radius for all elements and also individually update the border styles for asides, buttons, code listings, and tutorial steps.
 
@@ -126,7 +126,7 @@ Another aspect of the renderer that you may wish to modify is the way that it ap
 
 ![A screenshot of a documentation page with custom code listing and aside border](https://docs.swift.org/latest/images/org.swift.docc/theme-screenshot-07.png)
 
-##### Icons
+### Icons
 
 It is also possible to use `theme-settings.json` to specify custom icons to use in place of the default ones provided by DocC. There are a few basic steps to follow in order to override an icon:
 
@@ -164,7 +164,7 @@ As a simple example, here is how you could update the icon used for articles in 
 
 ![A screenshot of the sidebar using a custom icon for](https://docs.swift.org/latest/images/org.swift.docc/theme-screenshot-08@2x.png)
 
-##### Metadata
+### Metadata
 
 You can specify some text that will be used in the HTML `<title>` element for all webpages in `theme-settings.json` in place of the default “Documentation” text.
 
@@ -180,7 +180,7 @@ You can specify some text that will be used in the HTML `<title>` element for al
 
 With that configuration, the title of this page would change from “Customizing Your Documentation Appearance | Documentation” to “Customizing Your Documentation Appearance | **Custom Title**”.
 
-##### Feature Flags
+### Feature Flags
 
 From time to time, there may be instances of various experimental UI features that can be enabled or disabled using `theme-settings.json`.
 
@@ -205,7 +205,7 @@ Note that some of these flags may be dropped in the future and new ones may be a
 }
 ```
 
-##### Customizing the appearance of specific pages
+### Customizing the appearance of specific pages
 
 Aside from the customizations available via `theme-settings.json`, Swift DocC provides several [`Metadata`](./metadata.md) directives that allow you to customize just one specific Article page.
 

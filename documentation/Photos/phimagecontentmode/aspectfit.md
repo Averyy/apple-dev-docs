@@ -24,7 +24,7 @@ case aspectFit
 PHImageContentModeAspectFit
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when you want the entire image to be visible, such as when presenting it in a view with the [`UIView.ContentMode.scaleAspectFit`](../../UIKit/uiview/contentmode-swift.enum/scaleaspectfit.md) content mode.
 

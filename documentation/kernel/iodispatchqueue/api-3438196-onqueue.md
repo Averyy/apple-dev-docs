@@ -16,11 +16,11 @@ Returns a Boolean value that indicates whether the current thread matches the di
 bool OnQueue(void);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the current thread is the same thread that the dispatch queue is using to execute its task. 
 
-#### Discussion
+## Discussion
 
 Use this method to determine if your code is running on the same thread as the current dispatch queue.
 

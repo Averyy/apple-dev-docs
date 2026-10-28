@@ -19,11 +19,11 @@ func path() -> String
 - (NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The path representing the current selection. The components of this path are separated with the string returned by [`pathSeparator`](./pathseparator.md).
 
-#### Discussion
+## Discussion
 
 Invoking this method is equivalent to invoking [`path(toColumn:)`](./path%28tocolumn%29.md) for all columns.
 

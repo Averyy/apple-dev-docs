@@ -28,7 +28,7 @@ class INPlacemarkResolutionResult
 
 - [Resolving the Parameters of an Intent](../SiriKit/resolving-the-parameters-of-an-intent.md)
 
-#### Overview
+## Overview
 
 An [`INPlacemarkResolutionResult`](./inplacemarkresolutionresult.md) object is what you return when resolving parameters containing an [`CLPlacemark`](../CoreLocation/clplacemark.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

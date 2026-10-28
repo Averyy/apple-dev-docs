@@ -25,7 +25,7 @@ static var defaultPolicy: AVAssetReferenceRestrictions { get }
 AVAssetReferenceRestrictionDefaultPolicy
 ```
 
-#### Discussion
+## Discussion
 
 The default policy is [`forbidLocalReferenceToRemote`](./forbidlocalreferencetoremote.md).
 

@@ -25,7 +25,7 @@ typealias nw_txt_record_access_bytes_t = (UnsafePointer<UInt8>, Int) -> Bool
 typedef _Bool (^)(const unsigned char *, unsigned long) nw_txt_record_access_bytes_t;
 ```
 
-#### Return Value
+## Return Value
 
 The return value is passed back to the caller of [`nw_txt_record_access_bytes(_:_:)`](./nw_txt_record_access_bytes%28_,_%29.md).
 

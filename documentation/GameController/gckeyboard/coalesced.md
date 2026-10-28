@@ -24,7 +24,7 @@ class var coalesced: GCKeyboard? { get }
 @property (class, atomic, strong, readonly, nullable) GCKeyboard * coalescedKeyboard;
 ```
 
-#### Discussion
+## Discussion
 
 Get the keyboard input values from the keyboard’s [`keyboardInput`](./keyboardinput.md) controller profile. If the user connects more than one keyboard, the framework represents the combined keyboards with one coalesced keyboard object.
 

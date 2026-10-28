@@ -24,7 +24,7 @@ case sampleFrames
 kAudioUnitParameterUnit_SampleFrames
 ```
 
-#### Discussion
+## Discussion
 
 The duration of a sample frame, for fixed frame-rate audio formats, is equal to 1.0/`kAudioUnitProperty_SampleRate` seconds.
 

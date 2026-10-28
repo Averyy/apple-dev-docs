@@ -21,7 +21,7 @@ A gauge style that displays an open ring with a marker that appears at a point a
 @preconcurrency struct AccessoryCircularGaugeStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`accessoryCircular`](./gaugestyle/accessorycircular.md) to construct this style.
 

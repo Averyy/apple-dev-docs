@@ -19,7 +19,7 @@ object JWSDecodedHeader
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The types [`JWSTransaction`](./jwstransaction.md) and [`JWSRenewalInfo`](./jwsrenewalinfo.md) contain headers that are [`JWSDecodedHeader`](./jwsdecodedheader.md) objects when decoded. Use the information in the [`JWSDecodedHeader`](../AppStoreServerNotifications/jwsdecodedheader.md) to validate the JWS signature. For more information about validating signatures, see the JSON Web Signature (JWS) [IETF RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515) specification.
 

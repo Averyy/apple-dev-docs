@@ -19,7 +19,7 @@ func setEventCallback(_ inEventCallback: OBEXSessionEventCallback!)
 - (void) setEventCallback:(OBEXSessionEventCallback) inEventCallback;
 ```
 
-#### Discussion
+## Discussion
 
 This is really not intended for client sessions. Only subclasses would really be interested in using this. They should set these when their subclass object is created, because otherwise they will have no way of receiving the initial command data packet. This is a partner to setEventRefCon, described below.
 

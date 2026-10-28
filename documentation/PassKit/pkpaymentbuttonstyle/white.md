@@ -24,7 +24,7 @@ case white
 PKPaymentButtonStyleWhite
 ```
 
-#### Discussion
+## Discussion
 
 Use the white button on backgrounds with colors that provide sufficient contrast. For white or light backgrounds, use either the white button with an outline or the black button.
 

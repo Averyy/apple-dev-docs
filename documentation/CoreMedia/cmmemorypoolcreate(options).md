@@ -25,7 +25,7 @@ func CMMemoryPoolCreate(options: CFDictionary?) -> CMMemoryPool
 extern CMMemoryPoolRefCMMemoryPoolCreate(CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A new memory pool.
 

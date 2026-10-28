@@ -9,13 +9,13 @@ Fetch a user’s rating for an album by using the user’s identifier.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 A rating indicates whether a user likes `(1)` or dislikes `(-1)` the album. These are the only two ratings supported.
 
-##### Example
+### Example
 
 **Request**:
 

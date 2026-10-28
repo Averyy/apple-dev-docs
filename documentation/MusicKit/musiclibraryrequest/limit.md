@@ -21,7 +21,7 @@ A limit for the number of items to return in the library response.
 var limit: Int
 ```
 
-#### Discussion
+## Discussion
 
 A limit of 0 length means no limit.
 

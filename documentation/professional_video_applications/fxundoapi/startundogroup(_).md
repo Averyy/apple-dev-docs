@@ -20,11 +20,11 @@ func startUndoGroup(_ name: String!) -> Bool
 - (BOOL) startUndoGroup:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the undo group was successfully started; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A plug-in can use this method to collapse multiple operations into one undo operation. Subsequent undo operations will be coalesced into this group until [`endUndoGroup()`](./endundogroup%28%29.md) is called. Each call to [`startUndoGroup(_:)`](./startundogroup%28_%29.md) must be balanced with a call to [`endUndoGroup()`](./endundogroup%28%29.md).
 

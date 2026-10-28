@@ -16,7 +16,7 @@ No classification is available for the plane anchor.
 case none(ARPlaneAnchor.Classification.Status)
 ```
 
-#### Discussion
+## Discussion
 
 Plane classification can take longer than plane detection, and ARKit reports classifications only for planes where it has a high confidence in the result. See the associated [`ARPlaneAnchor.Classification.Status`](./status.md) value for the reason a plane anchor reports no classification.
 

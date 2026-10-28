@@ -24,7 +24,7 @@ class CNPhoneNumber
 @interface CNPhoneNumber : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CNPhoneNumber` objects are thread-safe, and you may access their properties from any thread of your app.
 

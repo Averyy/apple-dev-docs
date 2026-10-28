@@ -17,7 +17,7 @@ case separator
 NSBoxSeparator
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the box is a separator.
 

@@ -21,7 +21,7 @@ Provides read/write access to the entire uniforms buffer for CPU access.
 final func modifyUniforms<E, R>(_ body: (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 ComputeGraph will upload the changes to the GPU before the next simulation.
 

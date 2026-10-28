@@ -20,7 +20,7 @@ typealias SKDocumentID = CFIndex
 typedef CFIndex SKDocumentID;
 ```
 
-#### Discussion
+## Discussion
 
 Use document IDs rather than document URL objects (SKDocumentRefs) whenever possible. Using document IDs results in faster searching.
 

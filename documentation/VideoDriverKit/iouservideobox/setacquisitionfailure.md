@@ -15,7 +15,7 @@ Sets the error for the box’s acquisition failure.
 kern_return_t SetAcquisitionFailure(kern_return_t in_failure_code);
 ```
 
-#### Discussion
+## Discussion
 
 The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 

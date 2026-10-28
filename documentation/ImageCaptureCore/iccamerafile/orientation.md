@@ -23,7 +23,7 @@ var orientation: ICEXIFOrientationType { get set }
 @property (nonatomic, readwrite) ICEXIFOrientationType orientation;
 ```
 
-#### Discussion
+## Discussion
 
 This property is initially set to [`ICEXIFOrientationType.orientation1`](../icexiforientationtype/orientation1.md) If the format of the file supports the `EXIF` orientation tag, then this property updates to match the value of that tag on receipt of the thumbnail or metadata for this file.
 

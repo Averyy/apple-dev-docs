@@ -16,7 +16,7 @@ Options that indicate whether the installation of multiple apps proceeds when a 
 enum BatchInstallConfirmationResult
 ```
 
-#### Overview
+## Overview
 
 The [`BatchInstallConfiguration`](./batchinstallconfiguration.md) initializer [`init(installs:confirmInstall:)`](./batchinstallconfiguration/init%28installs,confirminstall%29.md)  takes a closure as a parameter that returns a case of this enumeration.
 

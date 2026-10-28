@@ -24,7 +24,7 @@ class AVVideoCompositionInstruction
 @interface AVVideoCompositionInstruction : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`AVVideoComposition`](./avvideocomposition.md) object maintains an array of [`instructions`](./avvideocomposition/instructions.md) to perform its composition.
 

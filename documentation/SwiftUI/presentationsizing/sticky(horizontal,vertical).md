@@ -21,11 +21,11 @@ Modifies self to be sticky in the specified dimensions — growing, but not shr
 func sticky(horizontal: Bool = false, vertical: Bool = false) -> some PresentationSizing
 ```
 
-#### Return Value
+## Return Value
 
 A modified version of self sticking to dimensions specified
 
-#### Discussion
+## Discussion
 
 If `sticky` is `.vertical`, the presentation can grow in the vertical and horizontal dimensions when its content size grows, but will not shrink in the vertical dimension when content size shrinks.
 

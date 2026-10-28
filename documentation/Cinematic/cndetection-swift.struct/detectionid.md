@@ -19,7 +19,7 @@ An unique identifier assigned by the Cinematic script to all detections of the s
 var detectionID: CNDetectionID? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you build a custom detection tract and add it to the script, the system assigns the detection ID.
 

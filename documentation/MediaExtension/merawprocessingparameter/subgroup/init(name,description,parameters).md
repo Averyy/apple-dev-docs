@@ -19,7 +19,7 @@ init(name: String, description: String, parameters: [MERAWProcessingParameter])
 - (instancetype) initWithName:(NSString *) name description:(NSString *) description parameters:(NSArray<MERAWProcessingParameter *> *) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`MERAWProcessingParameter.SubGroup`](../subgroup.md).
 

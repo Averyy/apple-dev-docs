@@ -20,7 +20,7 @@ A Boolean value that indicates whether your app supports activity continuation o
 var supportsContinuationOnTV: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`. Set it to `true` to allow participants to continue the activity on Apple TV.
 

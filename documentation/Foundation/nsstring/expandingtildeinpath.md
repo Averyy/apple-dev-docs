@@ -25,7 +25,7 @@ var expandingTildeInPath: String { get }
 @property (copy, readonly) NSString * stringByExpandingTildeInPath;
 ```
 
-#### Discussion
+## Discussion
 
 A new string made by expanding the initial component of the receiver, if it begins with “`~`” or “`~user`”, to its full path value. Returns a new string matching the receiver if the receiver’s initial component can’t be expanded.
 

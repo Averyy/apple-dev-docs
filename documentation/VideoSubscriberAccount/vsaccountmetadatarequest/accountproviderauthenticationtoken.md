@@ -24,7 +24,7 @@ var accountProviderAuthenticationToken: String? { get set }
 @property (nonatomic, copy, nullable) NSString * accountProviderAuthenticationToken;
 ```
 
-#### Discussion
+## Discussion
 
 Only TV provider apps use this property.
 

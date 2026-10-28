@@ -24,7 +24,7 @@ init(preparationHandler: @escaping (UICloudSharingController, @escaping (CKShare
 - (instancetype) initWithPreparationHandler:(void (^)(UICloudSharingController *controller, void (^preparationCompletionHandler)(CKShare *, CKContainer *, NSError *))) preparationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`init(preparationHandler:)`](./init%28preparationhandler%29.md) initializer method to create a new [`UICloudSharingController`](../uicloudsharingcontroller.md) instance when the user who owns a [`CKRecord`](../../CloudKit/ckrecord.md) wants to share the record with other people. To determine if the record is shared, check its [`share`](../../CloudKit/ckrecord/share.md) property. If the property value is `nil`, the record is not shared, and this method is the one to use.
 

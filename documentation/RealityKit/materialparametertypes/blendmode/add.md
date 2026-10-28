@@ -20,7 +20,7 @@ Blend by adding the material’s color to the background color, ignoring alpha.
 case add
 ```
 
-#### Discussion
+## Discussion
 
 This method is also known as additive blending or linear dodge.
 

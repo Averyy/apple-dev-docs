@@ -25,7 +25,7 @@ struct NotificationCoalescing
 enum NSNotificationCoalescing : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`enqueue(_:postingStyle:coalesceMask:forModes:)`](./enqueue%28_,postingstyle,coalescemask,formodes%29.md) method.
 

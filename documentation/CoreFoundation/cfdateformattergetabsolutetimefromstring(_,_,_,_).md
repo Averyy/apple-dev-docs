@@ -25,7 +25,7 @@ func CFDateFormatterGetAbsoluteTimeFromString(_ formatter: CFDateFormatter!, _ s
 extern Boolean CFDateFormatterGetAbsoluteTimeFromString(CFDateFormatterRef formatter, CFStringRef string, CFRange *rangep, CFAbsoluteTime *atp);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the string was parsed successfully, otherwise `false`.
 

@@ -25,7 +25,7 @@ case accessoryCircular
 - [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
-#### Discussion
+## Discussion
 
 The accessory circular widget can appear as a complication in watchOS, or on the Lock Screen in iOS and iPadOS.
 

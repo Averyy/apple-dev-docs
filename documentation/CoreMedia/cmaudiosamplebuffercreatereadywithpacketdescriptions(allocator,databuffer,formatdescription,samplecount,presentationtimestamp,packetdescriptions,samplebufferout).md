@@ -25,7 +25,7 @@ func CMAudioSampleBufferCreateReadyWithPacketDescriptions(allocator: CFAllocator
 extern OSStatus CMAudioSampleBufferCreateReadyWithPacketDescriptions(CFAllocatorRef allocator, CMBlockBufferRef dataBuffer, CMFormatDescriptionRef formatDescription, CMItemCount numSamples, CMTime presentationTimeStamp, const AudioStreamPacketDescription *packetDescriptions, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 Provides an optimization over [`CMSampleBufferCreate(allocator:dataBuffer:dataReady:makeDataReadyCallback:refcon:formatDescription:sampleCount:sampleTimingEntryCount:sampleTimingArray:sampleSizeEntryCount:sampleSizeArray:sampleBufferOut:)`](./cmsamplebuffercreate%28allocator,databuffer,dataready,makedatareadycallback,refcon,formatdescription,samplecount,sampletimingentrycount,sampletimingarray,samplesizeentrycount,samplesizearray,samplebufferout%29.md) when the caller already has `packetDescriptions` for the audio data. This routine will use the `packetDescriptions` to create the sizing and timing arrays required to make the sample buffer if necessary.
 

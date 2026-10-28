@@ -15,11 +15,11 @@ Converts text in the source encoding to runs of text inmultiple destination enco
 OSStatus TECConvertTextToMultipleEncodings(TECObjectRef encodingConverter, ConstTextPtr inputBuffer, ByteCount inputBufferLength, ByteCount *actualInputLength, TextPtr outputBuffer, ByteCount outputBufferLength, ByteCount *actualOutputLength, TextEncodingRun outEncodingsBuffer[], ItemCount maxOutEncodingRuns, ItemCount *actualOutEncodingRuns);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). If there is not enough memoryavailable to convert the text when allocating internal buffers,the function returns the appropriate Memory Manager result code.
 
-#### Discussion
+## Discussion
 
 For the function to return successfully, the output bufferyou allocate must be large enough to accommodate the converted text.If the output buffer is too small to accommodate any converted text,the function will fail. For best results, you should follow theseguidelines when you allocate an output buffer:
 

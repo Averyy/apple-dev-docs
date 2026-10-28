@@ -18,7 +18,7 @@ The name of the monitor instance.
 @property (readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 `name` can contain only alphanumeric characters and can’t start with an underscore (_).
 

@@ -23,7 +23,7 @@ class UISearchToken
 @interface UISearchToken : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use search tokens to help users understand and edit complex search queries in a [`UISearchTextField`](./uisearchtextfield.md). A token acts like a single character in standard text interactions such as deleting, selecting, or dragging. A search token should always have text and may also have an icon.
 

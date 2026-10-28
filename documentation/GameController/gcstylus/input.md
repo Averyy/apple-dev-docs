@@ -23,7 +23,7 @@ var input: (any GCDevicePhysicalInput)? { get }
 
 - [Discovering and tracking spatial game controllers and styli](../discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
-#### Discussion
+## Discussion
 
 The input profile is represented as an object conforming to the `GCDevicePhysicalInput` protocol.  Use this object to discover available inputs on the stylus, including buttons and pressure sensors, and get notified when the state of those inputs change.
 

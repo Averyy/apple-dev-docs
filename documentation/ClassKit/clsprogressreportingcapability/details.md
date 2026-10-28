@@ -23,7 +23,7 @@ var details: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * details;
 ```
 
-#### Discussion
+## Discussion
 
 Localize the string that you assign to this property. Schoolwork presents the string to teachers to help them understand how your app uses this capability.
 

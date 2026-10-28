@@ -15,11 +15,11 @@ Determines whether a task is preemptively scheduled.
 Boolean MPTaskIsPreemptive(MPTaskID taskID);
 ```
 
-#### Return Value
+## Return Value
 
 If true, the task is preemptively scheduled. If false, the task is cooperatively scheduled. 
 
-#### Discussion
+## Discussion
 
 If you have code that may be called from either cooperative or preemptive tasks, that code can call `MPTaskIsPreemptive` if its actions should differ depending on its execution environment.  
 

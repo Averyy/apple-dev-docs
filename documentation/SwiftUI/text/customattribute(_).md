@@ -21,11 +21,11 @@ Adds a custom attribute to the text view.
 func customAttribute<T>(_ value: T) -> Text where T : TextAttribute
 ```
 
-#### Return Value
+## Return Value
 
 A version of the text view with `value` attached.
 
-#### Discussion
+## Discussion
 
 Only one attribute of each type may be attached to each text view, with inner attributes taking precedence.
 

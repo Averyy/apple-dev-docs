@@ -19,7 +19,7 @@ func performSegue(forRow row: Int)
 - (void) performSegueForRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 This method lets you programmatically transition to a new interface controller. It triggers the segue defined in your storyboard file for the specified row controller.
 

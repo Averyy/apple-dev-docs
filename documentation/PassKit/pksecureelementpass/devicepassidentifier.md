@@ -24,7 +24,7 @@ var devicePassIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * devicePassIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property’s value is unique for each issuer. This property is available only to developers who work with Apple to enable this functionality.
 

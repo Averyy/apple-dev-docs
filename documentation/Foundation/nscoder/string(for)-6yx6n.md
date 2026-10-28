@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from an affine transform.
 class func string(for transform: CGAffineTransform) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `transform`. See [`cgAffineTransform(for:)`](./cgaffinetransform%28for%29.md) for a discussion of the string format.
 

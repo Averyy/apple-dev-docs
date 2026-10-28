@@ -19,7 +19,7 @@ A set of conditions that determine when the system purges specialized assets.
 struct PurgeConditions
 ```
 
-#### Overview
+## Overview
 
 > **Note**: The system always purges assets on OS update regardless of these conditions.
 

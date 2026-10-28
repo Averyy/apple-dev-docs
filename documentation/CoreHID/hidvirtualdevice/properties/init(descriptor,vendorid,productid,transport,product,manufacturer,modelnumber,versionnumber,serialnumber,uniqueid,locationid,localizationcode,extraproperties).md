@@ -19,7 +19,7 @@ init(descriptor: Data, vendorID: UInt32, productID: UInt32? = nil, transport: HI
 
 - [Creating virtual devices](../../creatingvirtualdevices.md)
 
-#### Discussion
+## Discussion
 
 Properties must be specified during the creation of a virtual device using [`init(properties:)`](../init%28properties%29.md).
 

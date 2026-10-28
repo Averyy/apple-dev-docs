@@ -23,7 +23,7 @@ var currentCadence: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * currentCadence;
 ```
 
-#### Discussion
+## Discussion
 
 During regular updates, this property is set to the user’s cadence. The value in this property is `nil` when you are performing a query for historical pedometer data or when cadence information is not yet available for the user. This property is also `nil` for devices that do not support the gathering of cadence data.
 

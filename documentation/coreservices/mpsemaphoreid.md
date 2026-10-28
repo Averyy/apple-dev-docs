@@ -16,7 +16,7 @@ Represents a semaphore ID, which Multiprocessing Services uses to manipulate sem
 typedef struct OpaqueMPSemaphoreID *MPSemaphoreID;
 ```
 
-#### Discussion
+## Discussion
 
 You obtain a semaphore ID by calling the function [`MPCreateSemaphore`](./api-1585569-mpcreatesemaphore.md). 
 

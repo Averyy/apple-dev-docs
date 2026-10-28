@@ -19,7 +19,7 @@ var detachedViews: [NSView] { get }
 @property (copy, readonly) NSArray<__kindof NSView *> * detachedViews;
 ```
 
-#### Discussion
+## Discussion
 
 A view in a detached state is not present in the stack view’s view hierarchy, but it still consumes memory.
 

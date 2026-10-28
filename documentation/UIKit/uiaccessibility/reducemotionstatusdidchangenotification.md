@@ -24,7 +24,7 @@ static let reduceMotionStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityReduceMotionStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

@@ -21,11 +21,11 @@ Returns the distance from this value to the given value, expressed as a stride.
 func distance(to other: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The distance from this value to `other`.
 
-#### Discussion
+## Discussion
 
 For two values `x` and `y`, and a distance `n = x.distance(to: y)`, `x.advanced(by: n) == y`.
 

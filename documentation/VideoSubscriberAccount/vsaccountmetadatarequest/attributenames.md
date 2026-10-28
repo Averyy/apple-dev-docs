@@ -24,7 +24,7 @@ var attributeNames: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * attributeNames;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to add an array of SAML attribute names to a SAML attribute query request.
 

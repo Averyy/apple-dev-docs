@@ -15,7 +15,7 @@ A Boolean value that indicates whether the app may, with the person’s permissi
 - **Name**: `com.apple.developer.family-controls.app-and-website-usage` (Family Controls App & Website Usage)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 You must add this entitlement to your app before you access app and website usage information through the [Family Controls](../../FamilyControls/FamilyControls.md) and [Device Activity](../../DeviceActivity/DeviceActivity.md) frameworks. This includes obtaining the [`AuthorizationStatus.approvedWithDataAccess`](../../FamilyControls/authorizationstatus/approvedwithdataaccess.md) authorization status, which lets your app use [`FamilyActivityData`](../../FamilyControls/familyactivitydata.md) to retrieve the actual bundle identifiers of installed applications, domain names of visited websites, and display names of activity categories. Your app requires explicit authorization from the person before it can access any of this data.
 

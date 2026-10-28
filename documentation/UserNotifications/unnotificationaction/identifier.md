@@ -32,7 +32,7 @@ var identifier: String { get }
 @property (atomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects an action, the system reports the value of this string to your app. Because your app handles all actions by using a single delegate method, the identifier strings for all of your app’s actions must be unique.
 

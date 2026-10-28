@@ -25,7 +25,7 @@ var offset: Int { get }
 @property (nonatomic, readonly) NSUInteger offset;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value of this property to ensure that the ATT request is attempting to read or write within the proper bounds of the characteristic’s value. For an example of how to take a request’s offset property into account when responding to a read or write request, see [Responding to Read and Write Requests from a Central](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/PerformingCommonPeripheralRoleTasks/PerformingCommonPeripheralRoleTasks.html#//apple_ref/doc/uid/TP40013257-CH4-SW6).
 

@@ -25,11 +25,11 @@ convenience init(texture: SKTexture?, size: CGSize)
 + (instancetype) spriteNodeWithTexture:(SKTexture *) texture size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 
-#### Discussion
+## Discussion
 
 The sprite is initialized using the texture, but the texture’s dimensions are not used. Instead, the size passed into the constructor method is used.
 

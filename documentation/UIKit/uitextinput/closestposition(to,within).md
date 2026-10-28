@@ -24,7 +24,7 @@ func closestPosition(to point: CGPoint, within range: UITextRange) -> UITextPosi
 - (UITextPosition *) closestPositionToPoint:(CGPoint) point withinRange:(UITextRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the character position in `range` that is closest to `point`.
 

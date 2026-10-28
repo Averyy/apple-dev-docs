@@ -21,7 +21,7 @@ Returns `true` if `self` holds the only strong reference to its buffer; otherwis
 mutating func isUniqueReference() -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 See `isKnownUniquelyReferenced` for details.
 

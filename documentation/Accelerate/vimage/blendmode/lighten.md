@@ -21,7 +21,7 @@ Sets each channel of the destination pixel as the lightest value for the corresp
 case lighten
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows the result of compositing using the lighten blend mode:
 

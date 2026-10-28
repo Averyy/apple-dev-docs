@@ -27,7 +27,7 @@ Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentTyp
 
 - [Applying flood fills to an image](../../applying-flood-fills-to-an-image.md)
 
-#### Discussion
+## Discussion
 
 This function generates an image with source values that are less than `threshold` set to `0`, and source values that are greater than `threshold` set to `1`.
 

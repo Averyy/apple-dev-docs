@@ -26,11 +26,11 @@ func containing(_ predicate: NSPredicate) -> XCUIElementQuery
 - (XCUIElementQuery *) containingPredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 A new query that defines a search that extends the search criteria of the receiver. The new search finds elements that match the original search and contain elements that meet the logical conditions of the provided predicate.
 
-#### Discussion
+## Discussion
 
 The predicate evaluates against objects that conform to the [`XCUIElementAttributes`](../xcuielementattributes.md) protocol.
 

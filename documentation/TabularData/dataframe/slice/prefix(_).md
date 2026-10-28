@@ -21,7 +21,7 @@ Returns a new slice that contains the initial elements of the original slice.
 func prefix(_ length: Int) -> DataFrame.Slice
 ```
 
-#### Return Value
+## Return Value
 
 A new slice of the underlying data frame.
 

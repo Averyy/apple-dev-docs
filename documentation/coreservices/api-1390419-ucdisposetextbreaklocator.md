@@ -17,11 +17,11 @@ Disposes a text-break locator object.
 OSStatus UCDisposeTextBreakLocator(TextBreakLocatorRef *breakRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.  This function can return `paramErr`, for example, if the `breakRef` parameter is `NULL`.
 
-#### Discussion
+## Discussion
 
 To find boundaries in Unicode text, you must supply locale and text-break specifications to the function  [`UCFindTextBreak`](./api-1390429-ucfindtextbreak.md). You provide this information by means of a text-break locator object, created via the function  [`UCCreateTextBreakLocator`](./api-1390362-uccreatetextbreaklocator.md). When finished with the text-break locator object, you should dispose of it using the function `UCDisposeTextBreakLocator`. 
 

@@ -25,7 +25,7 @@ func CFURLCopyHostName(_ anURL: CFURL!) -> CFString!
 extern CFStringRefCFURLCopyHostName(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 The host name of `anURL`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

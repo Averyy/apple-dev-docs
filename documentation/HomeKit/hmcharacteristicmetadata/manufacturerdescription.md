@@ -24,7 +24,7 @@ var manufacturerDescription: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * manufacturerDescription;
 ```
 
-#### Discussion
+## Discussion
 
 You can present this string to the user to help the user identify the purpose of the characteristic.
 

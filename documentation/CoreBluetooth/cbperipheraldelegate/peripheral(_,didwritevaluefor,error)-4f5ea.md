@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteri
 - (void) peripheral:(CBPeripheral *) peripheral didWriteValueForCharacteristic:(CBCharacteristic *) characteristic error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method only when your app calls the [`writeValue(_:for:type:)`](../cbperipheral/writevalue%28_,for,type%29.md) method with the [`CBCharacteristicWriteType.withResponse`](../cbcharacteristicwritetype/withresponse.md) constant specified as the write type. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

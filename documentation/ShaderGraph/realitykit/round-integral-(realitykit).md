@@ -14,7 +14,7 @@ Rounds X to integral value using round ties to even rounding mode in floating-po
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Round Integral (half)**:
 

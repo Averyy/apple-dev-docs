@@ -19,11 +19,11 @@ func performKeyEquivalent(with event: NSEvent) -> Bool
 - (BOOL) performKeyEquivalent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a cell in the receiver responds to the key equivalent in `theEvent`, [`false`](../../Swift/false.md) if no cell responds.
 
-#### Discussion
+## Discussion
 
 If there’s a cell in the receiver that has a key equivalent equal to the character in [`theEvent```NSEvent/charactersIgnoringModifiers``] (taking into account any key modifier flags) and that cell is enabled, that cell is made to react as if the user had clicked it: by highlighting, changing its state as appropriate, sending its action if it has one, and then unhighlighting.
 

@@ -22,7 +22,7 @@ case anticipate
 UIWritingToolsCoordinatorTextAnimationAnticipate
 ```
 
-#### Discussion
+## Discussion
 
 This type of animation applies a visual effect to the text that Writing Tools is evaluating. When preparing for this animation, hide the text that Writing Tools is about to evaluate. In the same space where that text appears, Writing Tools displays a preview image that you provide and animates changes to that image.
 

@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, didRemove rowView: NSTableRowV
 - (void) tableView:(NSTableView *) tableView didRemoveRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 If `row` equals `-1`, the row is being deleted from the table and is no longer a valid row; otherwise `row` is a valid row that is being removed by being moved off screen.
 

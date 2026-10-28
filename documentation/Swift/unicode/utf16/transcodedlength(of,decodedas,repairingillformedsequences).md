@@ -21,11 +21,11 @@ Returns the number of UTF-16 code units required for the given code unit sequenc
 static func transcodedLength<Input, Encoding>(of input: Input, decodedAs sourceEncoding: Encoding.Type, repairingIllFormedSequences: Bool) -> (count: Int, isASCII: Bool)? where Input : IteratorProtocol, Encoding : _UnicodeEncoding, Input.Element == Encoding.CodeUnit
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the number of UTF-16 code units required to encode `input` and a Boolean value that indicates whether the `input` contained only ASCII characters. If `repairingIllFormedSequences` is `false` and an ill-formed sequence is detected, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 The following example finds the length of the UTF-16 encoding of the string `"Fermata 𝄐"`, starting with its UTF-8 representation.
 

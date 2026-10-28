@@ -5,7 +5,7 @@
 
 Expose a custom component to the Reality Composer Pro editor and RealityKit Scripting.
 
-#### Overview
+## Overview
 
 Reality Composer Pro’s built-in components cover common behavior, but your project’s own data — game state, gameplay parameters, or simulation values — doesn’t always map onto an existing component. You extend Reality Composer Pro by defining a custom component and registering it with Reality Composer Pro. The component then behaves like a built-in component in the editor and in the Inspector, and it becomes available to tools such as Script Graph’s Get Component, Set Component, and Has Component nodes.
 
@@ -13,7 +13,7 @@ This article walks through defining a custom `RotationComponent` (the same compo
 
 ![A diagram showing the overall process of registering a custom component with Reality Composer Pro.](https://developer.apple.com/tutorials/images/RealityComposerPro/ScriptGraphCustomComponentRegistrationWorkflow@2x.png)
 
-#### Review the Reality Composer Pro plugin interface
+## Review the Reality Composer Pro plugin interface
 
 The `RealityComposerPro` Swift package defines the plugin protocol Reality Composer Pro loads at runtime:
 
@@ -29,7 +29,7 @@ The `RealityComposerPro` Swift package defines the plugin protocol Reality Compo
 
 `registerComponent` requires [`Component`](../RealityKit/component.md) and `Codable` — Reality Composer Pro needs to serialize your component into `.usda`/scene files, which `Inspectable` (RealityKit Scripting’s requirement) doesn’t provide by itself. A component destined for both worlds needs to conform to both.
 
-#### Define the custom rotation component
+## Define the custom rotation component
 
 This mirrors the component from `ExampleApp/ContentView.swift`, with `Codable` added so you can also register it with Reality Composer Pro:
 
@@ -91,7 +91,7 @@ public struct RotationComponent: Component, Codable {
 }
 ```
 
-#### Register the custom component with the plugin
+## Register the custom component with the plugin
 
 Implement `RealityComposerProPlugin` and register the component twice in `setup(context:)`: once with the Reality Composer Pro `context` (editor support), and once with `ScriptingRuntime` (RealityKit Scripting, for scripting support). In the following example, `RotationComponent.schema` refers to the manually-defined schema. If you use `@Scriptable` (shown in the previous section), substitute `RotationComponent.SchemaProvider.schema`.
 
@@ -127,7 +127,7 @@ public func createRealityComposerProPlugin() -> UnsafeMutableRawPointer {
 
 `ScriptingRuntime.addConfiguration` initializes `ScriptingRuntime` if needed and reloads immediately, so the schema is available as soon as the plugin loads — no separate startup step required.
 
-#### Compare what each registration provides
+## Compare what each registration provides
 
 The two registration calls serve different audiences and run at different times. See the following comparison.
 

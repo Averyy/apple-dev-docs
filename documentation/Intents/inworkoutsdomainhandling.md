@@ -25,7 +25,7 @@ protocol INWorkoutsDomainHandling : INCancelWorkoutIntentHandling, INEndWorkoutI
 @protocol INWorkoutsDomainHandling <INStartWorkoutIntentHandling, INPauseWorkoutIntentHandling, INEndWorkoutIntentHandling, INCancelWorkoutIntentHandling, INResumeWorkoutIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The [`INWorkoutsDomainHandling`](./inworkoutsdomainhandling.md) protocol is a convenience protocol that adopts all of the protocols used to handle workout-related intents. When your app adopts all of the protocols associated with workouts, you can adopt this one protocol instead of adopting the [`INStartWorkoutIntentHandling`](./instartworkoutintenthandling.md), [`INPauseWorkoutIntentHandling`](./inpauseworkoutintenthandling.md), [`INResumeWorkoutIntentHandling`](./inresumeworkoutintenthandling.md), [`INCancelWorkoutIntentHandling`](./incancelworkoutintenthandling.md), and [`INEndWorkoutIntentHandling`](./inendworkoutintenthandling.md) protocols separately.
 

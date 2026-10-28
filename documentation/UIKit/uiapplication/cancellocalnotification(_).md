@@ -23,7 +23,7 @@ func cancelLocalNotification(_ notification: UILocalNotification)
 - (void) cancelLocalNotification:(UILocalNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method also programmatically dismisses the notification if it is currently displaying an alert.
 

@@ -15,7 +15,7 @@ Releases an OpenGL buffer pool.
 extern void CVOpenGLBufferPoolRelease(CVOpenGLBufferPoolRef openGLBufferPool);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRelease`, but is `NULL` safe.
 

@@ -25,11 +25,11 @@ func NSStringFromMapTable(_ table: NSMapTable<AnyObject, AnyObject>) -> String
 extern NSString *NSStringFromMapTable(NSMapTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 A string describing the map table’s contents.
 
-#### Discussion
+## Discussion
 
 The function iterates over the key-value pairs of `table` and for each one appends the string “a = b;\n”, where a and b are the key and value strings returned by the corresponding `describe` callback functions. If `NULL` was specified for the callback function, a and b are the key and value pointers, expressed as hexadecimal numbers.
 

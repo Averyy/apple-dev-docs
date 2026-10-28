@@ -24,7 +24,7 @@ class MPSRNNImageInferenceLayer
 @interface MPSRNNImageInferenceLayer : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The [`MPSRNNImageInferenceLayer`](./mpsrnnimageinferencelayer.md) specifies a recurrent neural network layer for inference on [`MPSImage`](./mpsimage.md) objects. Two types of recurrent layers are supported:
 

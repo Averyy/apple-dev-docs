@@ -24,11 +24,11 @@ func AudioQueueCreateTimeline(_ inAQ: AudioQueueRef, _ outTimeline: UnsafeMutabl
 extern OSStatus AudioQueueCreateTimeline(AudioQueueRef inAQ, AudioQueueTimelineRef*outTimeline);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Create a timeline object if you want to get timeline discontinuity information from an audio queue using the [`AudioQueueGetCurrentTime(_:_:_:_:)`](./audioqueuegetcurrenttime%28_,_,_,_%29.md) function.
 

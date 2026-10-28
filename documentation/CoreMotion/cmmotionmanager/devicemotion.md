@@ -27,7 +27,7 @@ var deviceMotion: CMDeviceMotion? { get }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 If no device-motion data is available, the value of this property is `nil`. An app that is receiving device-motion data after calling [`startDeviceMotionUpdates()`](./startdevicemotionupdates%28%29.md) periodically checks the value of this property and processes the device-motion data.
 

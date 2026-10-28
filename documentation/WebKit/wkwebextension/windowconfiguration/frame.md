@@ -23,7 +23,7 @@ var frame: CGRect { get }
 @property (nonatomic, readonly) CGRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 This frame should override the app’s default window position and size.
 

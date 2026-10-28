@@ -24,7 +24,7 @@ var animationEvents: [SCNAnimationEvent]? { get set }
 @property (nonatomic, copy, nullable) NSArray<SCNAnimationEvent *> * animationEvents;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`SCNAnimationEvent`](../../SceneKit/scnanimationevent.md) objects, each of which adds a timed action to the animation.
 

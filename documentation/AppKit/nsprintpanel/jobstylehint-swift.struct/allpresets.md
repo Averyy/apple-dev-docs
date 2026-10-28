@@ -19,7 +19,7 @@ static let allPresets: NSPrintPanel.JobStyleHint
 extern NSPrintPanelJobStyleHint const NSPrintAllPresetsJobStyleHint;
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to Core Printing’s `kPMPresetGraphicsTypeAll`.
 

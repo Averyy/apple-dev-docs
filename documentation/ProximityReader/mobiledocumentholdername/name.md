@@ -17,7 +17,7 @@ A string representation of the name.
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 If available, this string will be taken directly from the underlying document. If not, then it will be synthesized by formatting the available name components from the underlying document.
 

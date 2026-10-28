@@ -19,7 +19,7 @@ string AssetType
 
 - `IMAGE`
 
-#### Discussion
+## Discussion
 
 Currently `assetType` supports a single value:
 

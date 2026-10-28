@@ -21,7 +21,7 @@ The total displayable size of the file, in bytes.
 var totalFileSize: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The allocated size in bytes may include space used by metadata. The property returns `nil` if the information isn’t available.
 

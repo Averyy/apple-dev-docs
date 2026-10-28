@@ -5,11 +5,11 @@
 
 Add Picture in Picture (PiP) playback to your app using a player view controller.
 
-#### Overview
+## Overview
 
 The [`AVPlayerViewController`](./avplayerviewcontroller.md) provides the standard video playback experience across iOS, iPadOS, and tvOS. In tvOS, it supports a wide variety of remotes, skipping, scanning, scrubbing, Siri commands, interstitial support, and more. After you configure your audio session and set the project capabilities as described in [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md), your player automatically supports PiP playback. When your app runs on a supported device, the user can manage PiP in the standard player.
 
-#### Familiarize yourself with the PiP controls
+## Familiarize yourself with the PiP controls
 
 PiP playback starts when the user selects the PiP button in the player interface. In iOS and iPadOS, PiP playback starts automatically if your video is playing in full-screen mode and the user exits the app. When a video isn’t filling the entire screen in width, use [`canStartPictureInPictureAutomaticallyFromInline`](./avplayerviewcontroller/canstartpictureinpictureautomaticallyfrominline.md) to indicate a video is the primary focus. In either case, the player window minimizes to a movable, floating window. In general, the system automatically pauses the video upon scene backgrounding, so you don’t need to pause video based on activation state.
 
@@ -19,7 +19,7 @@ Selecting the stop button in the PiP interface terminates PiP and restores video
 
 Starting in iOS 14, the PiP user interface provides controls that allow users to skip forward and backward within a video. The system enables these controls by default for apps linked in iOS 14 or later. If you need to restrict skipping content for legal disclaimers or advertisements, use [`requiresLinearPlayback`](./avplayerviewcontroller/requireslinearplayback.md) during the required section of your video. Set this property back to `false` once you can allow seeking again.
 
-#### Restore your video playback interface
+## Restore your video playback interface
 
 To handle the restore process, your code must adopt the [`AVPlayerViewControllerDelegate`](./avplayerviewcontrollerdelegate.md) protocol and implement the [`playerViewController(_:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:)`](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,restoreuserinterfaceforpictureinpicturestopwithcompletionhandler%29.md) method. The framework calls this method when control returns to your app, giving you the opportunity to determine how to properly restore your video player’s interface. If you originally presented your video player using the [`present(_:animated:completion:)`](../UIKit/uiviewcontroller/present%28_,animated,completion%29.md) method of [`UIViewController`](../UIKit/uiviewcontroller.md), restore your player interface in the same way in the delegate callback method.
 
@@ -36,7 +36,7 @@ Avoid adding animations during the swap so you can ensure quick restoration for 
 
 > ❗ **Important**:  To allow the system to finish restoring your user interface, call the completion handler with a value of `true`.
 
-#### Swap PiP content in tvOS
+## Swap PiP content in tvOS
 
 In tvOS, users can play videos in PiP alongside a full-screen video. Video playback can move between PiP and full screen, so your app needs to be ready to handle the swap to provide a seamless PiP experience. When you swap your content with another app, consider your content that’s going into PiP and your content leaving PiP to go full screen. The illustration below shows the life cycle of your full-screen content swapping with another app’s PiP.
 

@@ -17,7 +17,7 @@ A resolved dependency of a package.
 struct PackageDependency
 ```
 
-#### Overview
+## Overview
 
 This is a separate entity in order to make it easier for future versions of the API to add information about the dependency itself.
 

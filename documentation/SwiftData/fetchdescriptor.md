@@ -26,7 +26,7 @@ struct FetchDescriptor<T> where T : PersistentModel
 
 - [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
-#### Overview
+## Overview
 
 Use a fetch descriptor to capture the criteria necessary to select, and optionally sort, a specific collection of models from your app’s persistent storage. A fetch descriptor retrieves only a single type of persistent model, and relies on type inference to determine the appropriate type. However, you can configure a fetch descriptor to prefetch related models of different types using the [`relationshipKeyPathsForPrefetching`](./fetchdescriptor/relationshipkeypathsforprefetching.md) property.
 

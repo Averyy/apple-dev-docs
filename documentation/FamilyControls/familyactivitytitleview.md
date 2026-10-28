@@ -17,7 +17,7 @@ A type-erased view representing the title of the family activity.
 @preconcurrency struct FamilyActivityTitleView
 ```
 
-#### Overview
+## Overview
 
 Family Controls uses this type as a generic constraint for the `Title` of the [`Label`](../SwiftUI/label.md) instances it creates.
 

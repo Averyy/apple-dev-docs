@@ -19,11 +19,11 @@ func object(forProperty property: NSSpeechSynthesizer.SpeechPropertyKey) throws 
 - (id) objectForProperty:(NSSpeechPropertyKey) property error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The value of `speechProperty`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -26,7 +26,7 @@ struct AutoreleasingUnsafeMutablePointer<Pointee>
 
 - [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
-#### Overview
+## Overview
 
 `Pointee` must be a class type or `Optional<C>` where `C` is a class.
 

@@ -20,11 +20,11 @@ optional func spellServer(_ sender: NSSpellServer, findMisspelledWordIn stringTo
 - (NSRange) spellServer:(NSSpellServer *) sender findMisspelledWordInString:(NSString *) stringToCheck language:(NSString *) language wordCount:(NSInteger *) wordCount countOnly:(BOOL) countOnly;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the misspelled word within the given string.
 
-#### Discussion
+## Discussion
 
 Send [`isWord(inUserDictionaries:caseSensitive:)`](../nsspellserver/isword%28inuserdictionaries,casesensitive%29.md) to the spelling server to determine if the word exists in the user’s language dictionaries.
 

@@ -24,7 +24,7 @@ func MACaptionAppearanceCopyForegroundColor(_ domain: MACaptionAppearanceDomain,
 extern CGColorRefMACaptionAppearanceCopyForegroundColor(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 The preferred color for caption text.
 

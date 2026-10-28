@@ -25,11 +25,11 @@ func CFGetTypeID(_ cf: CFTypeRef!) -> CFTypeID
 extern CFTypeID CFGetTypeID(CFTypeRef cf);
 ```
 
-#### Return Value
+## Return Value
 
 A value of type [`CFTypeID`](./cftypeid.md) that identifies the opaque type of `cf`.
 
-#### Discussion
+## Discussion
 
 This function returns a value that uniquely identifies the opaque type of any Core Foundation object. You can compare this value with the known [`CFTypeID`](./cftypeid.md) identifier obtained with a “GetTypeID” function specific to a type, for example [`CFDateGetTypeID()`](./cfdategettypeid%28%29.md). These values might change from release to release or platform to platform.
 

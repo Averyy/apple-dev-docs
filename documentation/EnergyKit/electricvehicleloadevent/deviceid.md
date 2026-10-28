@@ -17,7 +17,7 @@ The device’s unique stable identifier.
 let deviceID: String
 ```
 
-#### Discussion
+## Discussion
 
 The max length is `64 UTF-8` bytes. UUID strings are permitted. The following are enforced as preconditions:
 

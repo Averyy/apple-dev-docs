@@ -17,7 +17,7 @@ Sets the type of content that the print job is printing.
 - (void) setJobStyleHint:(NSString *) hint;
 ```
 
-#### Discussion
+## Discussion
 
 This controls the set of items that appear in the Presets menu of the simplified Print panel interface presented by this operation, if it presents one.
 

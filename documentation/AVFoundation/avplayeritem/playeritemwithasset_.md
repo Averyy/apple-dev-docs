@@ -21,11 +21,11 @@ Returns a new player item for a specified asset.
 + (instancetype) playerItemWithAsset:(AVAsset *) asset;
 ```
 
-#### Return Value
+## Return Value
 
 A new player item, initialized to play `asset`.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to invoking [`playerItemWithAsset:automaticallyLoadedAssetKeys:`](./playeritemwithasset_automaticallyloadedassetkeys_.md), passing `["duration"]` as the value of `automaticallyLoadedAssetKeys`.
 

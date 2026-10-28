@@ -19,7 +19,7 @@ This environment variable is for SwiftUI clients of the credential exchange API.
 var credentialExportManager: ASCredentialExportManager { get }
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 struct CredentialExchangeManagerExample: View {

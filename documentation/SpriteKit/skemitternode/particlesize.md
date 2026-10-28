@@ -25,7 +25,7 @@ var particleSize: CGSize { get set }
 @property (nonatomic) CGSize particleSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CGSizeZero`](../../CoreGraphics/cgsizezero.md). If set to the default, the size of the texture stored in the [`particleTexture`](./particletexture.md) property is used to determine the size of a particle. If a texture has not been assigned, you must set this property to a non-empty size.
 

@@ -22,7 +22,7 @@ A type-erasing subscriber.
 struct AnySubscriber<Input, Failure> where Failure : Error
 ```
 
-#### Overview
+## Overview
 
 Use an [`AnySubscriber`](./anysubscriber.md) to wrap an existing subscriber whose details you don’t want to expose. You can also use [`AnySubscriber`](./anysubscriber.md) to create a custom subscriber by providing closures for the methods defined in [`Subscriber`](./subscriber.md), rather than implementing [`Subscriber`](./subscriber.md) directly.
 

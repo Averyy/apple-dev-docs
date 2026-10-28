@@ -21,7 +21,7 @@ Decodes the \c NSDictionary object for the given \c key, which should be an \c N
 - (NSDictionary *) decodeDictionaryWithKeysOfClass:(Class) keyCls objectsOfClass:(Class) objectCls forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Requires \c NSSecureCoding otherwise an exception is thrown and sets the \c decodingFailurePolicy to \c NSDecodingFailurePolicySetErrorAndReturn.
 

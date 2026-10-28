@@ -24,7 +24,7 @@ var metallic: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * metallic;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero.
 

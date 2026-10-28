@@ -22,7 +22,7 @@
 struct RawSpan
 ```
 
-#### Overview
+## Overview
 
 A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `RawSpan` is created, it inherits the lifetime of the container owning the contiguous memory, ensuring temporal safety and avoiding use-after-free errors. Operations on `RawSpan` are bounds-checked, ensuring spatial safety and avoiding buffer overflow errors.
 

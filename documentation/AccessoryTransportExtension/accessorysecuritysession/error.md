@@ -15,7 +15,7 @@ An error that occurs during accessory security-session operations.
 enum Error
 ```
 
-#### Overview
+## Overview
 
 The framework throws errors of this type when security-session operations fail. Use the error cases to determine the specific cause and handle it appropriately in your accessory transport-security extension.
 

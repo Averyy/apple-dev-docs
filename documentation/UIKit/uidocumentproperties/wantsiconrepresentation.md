@@ -22,7 +22,7 @@ var wantsIconRepresentation: Bool { get set }
 @property (nonatomic) BOOL wantsIconRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), an icon representation of the document appears on the leading edge of the document’s title in the navigation bar.
 

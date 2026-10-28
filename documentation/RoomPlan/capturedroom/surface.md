@@ -17,7 +17,7 @@ A 2D area in a room that the framework identifies as a surface.
 struct Surface
 ```
 
-#### Overview
+## Overview
 
 A captured room ([`CapturedRoom`](../capturedroom.md)) contains an arrays of surfaces that it identifies in a scan, such as its [`doors`](./doors.md), [`openings`](./openings.md), [`walls`](./walls.md), and [`windows`](./windows.md).
 

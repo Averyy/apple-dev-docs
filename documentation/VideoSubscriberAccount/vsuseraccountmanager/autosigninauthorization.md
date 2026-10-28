@@ -19,7 +19,7 @@ The possible states the framework sets for Automatic Sign-In.
 enum AutoSignInAuthorization
 ```
 
-#### Overview
+## Overview
 
 The framework sets the [`authorization`](./autosignintoken-swift.struct/authorization.md) property to one of these values depending on how a person responds to the Automatic Sign-In opt-in prompt.
 

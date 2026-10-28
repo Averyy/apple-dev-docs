@@ -20,7 +20,7 @@ var version: UInt32
 UInt32 version;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`SEC_KEYCHAIN_SETTINGS_VERS1`](../sec_keychain_settings_vers1.md).
 

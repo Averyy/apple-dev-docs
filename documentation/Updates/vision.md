@@ -5,16 +5,16 @@
 
 Learn about important changes in Vision.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Vision](../Vision/Vision.md).
 
-#### June 2025
+## June 2025
 
 - Use [`DetectLensSmudgeRequest`](../Vision/detectlenssmudgerequest.md) and [`SmudgeObservation`](../Vision/smudgeobservation.md) to detect a smudge with a confidence level in an image or video frame capture.
 - Use [`RecognizeDocumentsRequest`](../Vision/recognizedocumentsrequest.md) and  [`DocumentObservation`](../Vision/documentobservation.md) to scan a document and recieve detailed information about its structure and content.
 
-#### June 2024
+## June 2024
 
 - Use the new Swift-only API that follows best design practices in Swift and leverages modern language features like Swift concurrency for optimal performance.
 - Analyze an image for aesthetically pleasing attributes by using [`CalculateImageAestheticsScoresRequest`](../Vision/calculateimageaestheticsscoresrequest.md) and provides a score through [`ImageAestheticsScoresObservation`](../Vision/imageaestheticsscoresobservation.md). The score indicates whether an image contains memorable or exciting content.

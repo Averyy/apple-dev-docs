@@ -19,7 +19,7 @@ init?(cgGlyph glyph: CGGlyph, for font: NSFont, baseString string: String)
 + (NSGlyphInfo *) glyphInfoWithCGGlyph:(CGGlyph) glyph forFont:(NSFont *) font baseString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A glyph info object for the specified glyph or `nil` if the glyph information is not available.
 

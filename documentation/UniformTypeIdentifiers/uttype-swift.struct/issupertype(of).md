@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a type is lower in a hierarchy th
 func isSupertype(of type: UTType) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `type` directly or indirectly conforms to the type, but returns [`false`](../../Swift/false.md) if it’s equal to the type.
 

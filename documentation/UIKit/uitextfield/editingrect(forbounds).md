@@ -23,11 +23,11 @@ func editingRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) editingRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The computed editing rectangle for the text.
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to provide a different editing rectangle for the text, you can override this method and return that rectangle. By default, this method returns a region in the text field that is not occupied by any overlay views.
 

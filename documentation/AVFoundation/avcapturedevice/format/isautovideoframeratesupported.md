@@ -23,7 +23,7 @@ var isAutoVideoFrameRateSupported: Bool { get }
 @property (nonatomic, readonly, getter=isAutoVideoFrameRateSupported) BOOL autoVideoFrameRateSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether you can enable a capture device’s [`isAutoVideoFrameRateEnabled`](../isautovideoframerateenabled.md) property.
 

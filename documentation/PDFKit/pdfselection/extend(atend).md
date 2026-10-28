@@ -24,7 +24,7 @@ func extend(atEnd succeed: Int)
 - (void) extendSelectionAtEnd:(NSInteger) succeed;
 ```
 
-#### Discussion
+## Discussion
 
 The selection may be extended by any amount, up to and including the end of the document.
 

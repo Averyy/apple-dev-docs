@@ -27,7 +27,7 @@ func useResource(_ resource: any MTLResource, usage: MTLResourceUsage)
 - (void) useResource:(id<MTLResource>) resource usage:(MTLResourceUsage) usage;
 ```
 
-#### Discussion
+## Discussion
 
 You can make a resource *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access `resource` through an argument buffer. The method ensures the resource is in a format that’s compatible with the shaders that depend on it.
 

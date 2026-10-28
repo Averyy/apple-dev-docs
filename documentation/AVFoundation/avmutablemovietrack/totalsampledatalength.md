@@ -20,7 +20,7 @@ The total number of bytes of sample data the track requires.
 var totalSampleDataLength: Int64 { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value may be `0` if the framework can’t determine the total sample data length.
 

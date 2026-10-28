@@ -5,7 +5,7 @@
 
 Make your phone app’s actions available to Apple Intelligence and Siri by adopting schemas for calling actions.
 
-#### Overview
+## Overview
 
 The `.phone` domain defines app schemas that provide a structured representation for common calling actions and content. Apply schemas in the `.phone` domain to make your app’s phone functionality available to Apple Intelligence and Siri.
 

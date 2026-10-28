@@ -25,11 +25,11 @@ func CFStringGetNameOfEncoding(_ encoding: CFStringEncoding) -> CFString!
 extern CFStringRefCFStringGetNameOfEncoding(CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 Name of `encoding`; non-localized. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 This function returns the “canonical” name of the string encoding because the return value has to be the same no matter what localization is chosen. In other words, it can’t change based on the International Preferences language panel setting. The canonical name is usually expressed in English.
 

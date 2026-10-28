@@ -19,11 +19,11 @@ var runningApplications: [NSRunningApplication] { get }
 @property (copy, readonly) NSArray<NSRunningApplication *> * runningApplications;
 ```
 
-#### Return Value
+## Return Value
 
 An array of  [`NSRunningApplication`](../nsrunningapplication.md) instances. This value is key-value observing compliant.
 
-#### Discussion
+## Discussion
 
 The order of the array is unspecified, but it is stable, meaning that the relative order of particular apps will not change across multiple calls to `runningApplications`. See [`NSRunningApplication`](../nsrunningapplication.md) for more information on `NSRunningApplication`.
 

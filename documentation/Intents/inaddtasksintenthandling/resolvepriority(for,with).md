@@ -27,7 +27,7 @@ optional func resolvePriority(for intent: INAddTasksIntent) async -> INTaskPrior
 - (void) resolvePriorityForAddTasks:(INAddTasksIntent *) intent withCompletion:(void (^)(INTaskPriorityResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves any priorities associated with the new tasks. Use the intent object to obtain the priority information, if any, suggested by the user. If the intent does not contain any priority information, and you don’t require any, return a resolution indicating that you don’t require a value.
 

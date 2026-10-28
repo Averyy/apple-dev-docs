@@ -21,7 +21,7 @@ Indicates that the prepared to play status of the media player has changed.
 extern NSString * const MPMediaPlaybackIsPreparedToPlayDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Posted upon change in the prepared-to-play state of an object conforming to the [`MPMediaPlayback`](./mpmediaplayback.md) protocol. The object whose state has changed is available as the object associated with the notification.
 

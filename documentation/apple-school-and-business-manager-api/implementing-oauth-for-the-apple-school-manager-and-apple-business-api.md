@@ -5,7 +5,7 @@
 
 Manage secure access to Apple School Manager and Apple Business API accounts.
 
-##### Overview
+### Overview
 
 The Apple School Manager and Apple Business APIs support OAuth 2. With OAuth 2, apps authenticate with a set of credentials in exchange for an access token to make authenticated requests to the API.
 
@@ -19,7 +19,7 @@ To make API calls, you attach the access token as a bearer token in the authoriz
 - Create a client assertion.
 - Request an access token.
 
-##### Create a client assertion
+### Create a client assertion
 
 A client assertion is a JSON web token ([JWT](https://tools.ietf.org/html/rfc7519)) that an app creates and signs using a private key. The client assertion obtains an access token by calling the authorization server.
 
@@ -124,7 +124,7 @@ a0k8cVVtnq- _93fYJIt9Z64CTvlH3uOeh7uaEv3nIxpXhvhkTySpUmY8e04TO09oTyZijiloByv3KFQ
 2OOJ8L 5N5_CeEc5p9LWjT1pcX8ATamOycZz2Q
 ```
 
-##### Request an access token
+### Request an access token
 
 To receive an access token, make a POST request to the authorization server using the client assertion above. When an access token expires, use the same process to obtain a new one.
 

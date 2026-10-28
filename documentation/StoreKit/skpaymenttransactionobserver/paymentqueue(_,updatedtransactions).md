@@ -37,7 +37,7 @@ func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SK
 - [Testing a successful transaction](../testing-a-successful-transaction.md)
 - [Testing resubscribing from the subscriptions page](../testing-resubscribing-from-the-subscriptions-page.md)
 
-#### Discussion
+## Discussion
 
 The application should process each transaction by examining the transaction’s [`transactionState`](../skpaymenttransaction/transactionstate.md) property. If [`transactionState`](../skpaymenttransaction/transactionstate.md) is [`SKPaymentTransactionState.purchased`](../skpaymenttransactionstate/purchased.md), payment was successfully received for the desired functionality. The application should make the functionality available to the user. If [`transactionState`](../skpaymenttransaction/transactionstate.md) is [`SKPaymentTransactionState.failed`](../skpaymenttransactionstate/failed.md), the application can read the transaction’s error property to return a meaningful error to the user.
 

@@ -19,7 +19,7 @@ var glyphGenerator: NSGlyphGenerator { get set }
 @property (strong) NSGlyphGenerator * glyphGenerator;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the glyph generator invalidates all glyphs and layout in the layout manager.
 

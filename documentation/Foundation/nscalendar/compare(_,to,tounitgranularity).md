@@ -25,7 +25,7 @@ func compare(_ date1: Date, to date2: Date, toUnitGranularity unit: NSCalendar.U
 - (NSComparisonResult) compareDate:(NSDate *) date1 toDate:(NSDate *) date2 toUnitGranularity:(NSCalendarUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 `NSOrderedSame` if the dates are the same down to the given granularity, otherwise `NSOrderedAscending` or `NSOrderedDescending`.
 

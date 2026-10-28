@@ -24,7 +24,7 @@ class NEIPv6Settings
 @interface NEIPv6Settings : NSObject
 ```
 
-#### Overview
+## Overview
 
 To specify the IPv6 settings of a packet tunnel, set its [`NEPacketTunnelNetworkSettings`](./nepackettunnelnetworksettings.md).[`ipv6Settings`](./nepackettunnelnetworksettings/ipv6settings.md) property to an instance of this class.
 

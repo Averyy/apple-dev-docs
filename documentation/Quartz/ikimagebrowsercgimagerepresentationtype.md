@@ -19,7 +19,7 @@ let IKImageBrowserCGImageRepresentationType: String
 extern NSString * const IKImageBrowserCGImageRepresentationType;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CGImage`](../CoreGraphics/cgimage.md)  object.
 

@@ -20,18 +20,18 @@ A configuration for retargeting skeletal animations between different skeletons.
 class RetargetingConfiguration
 ```
 
-#### Overview
+## Overview
 
 [`RetargetingConfiguration`](./retargetingconfiguration.md) enables the transfer of animations from one skeleton to another, automatically mapping joints and adapting poses to accommodate different skeletal structures. This is particularly useful for applying animations across different character models or creatures.
 
-#### Usage
+## Usage
 
 Create configurations using the static factory methods for common skeleton types:
 
 - [`automatchBiped(_:to:jointOffsets:)`](./retargetingconfiguration/automatchbiped%28_,to,jointoffsets%29.md) for humanoid/bipedal characters
 - [`automatchQuadruped(_:sourceTransform:to:targetTransform:jointOffsets:)`](./retargetingconfiguration/automatchquadruped%28_,sourcetransform,to,targettransform,jointoffsets%29.md) for four-legged creatures
 
-#### Example
+## Example
 
 ```swift
 do {
@@ -56,7 +56,7 @@ do {
 }
 ```
 
-#### Performance Considerations
+## Performance Considerations
 
 - Configuration creation is computationally expensive and should be cached when possible.
 - The automatic matching algorithm analyzes skeleton hierarchies to establish joint correspondences.

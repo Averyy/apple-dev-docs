@@ -25,11 +25,11 @@ func CFPreferencesCopyValue(_ key: CFString, _ applicationID: CFString, _ userNa
 extern CFPropertyListRefCFPreferencesCopyValue(CFStringRef key, CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
 ```
 
-#### Return Value
+## Return Value
 
 The preference data for the specified domain. If the no value was located, returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function is the primitive get mechanism for the higher level preference function [`CFPreferencesCopyAppValue(_:_:)`](./cfpreferencescopyappvalue%28_,_%29.md) Unlike the high-level function, [`CFPreferencesCopyValue(_:_:_:_:)`](./cfpreferencescopyvalue%28_,_,_,_%29.md) searches only the exact domain specified. Do not use this function directly unless you have a need. All arguments must be non-`NULL`. Do not use arbitrary user and host names, instead pass the pre-defined domain qualifier constants.
 

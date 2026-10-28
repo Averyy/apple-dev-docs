@@ -20,7 +20,7 @@ class ARSkeleton2D
 @interface ARSkeleton2D : ARSkeleton
 ```
 
-#### Overview
+## Overview
 
 [`ARSkeleton2D`](./arskeleton2d.md) provides you with a 2D body’s joints in a flat hierarchy so you can access them efficiently. The joint locations are normalized within the range [0..1] in the coordinate space of the current frame’s camera image, where 0 is the upper left, and 1 is the bottom right.
 

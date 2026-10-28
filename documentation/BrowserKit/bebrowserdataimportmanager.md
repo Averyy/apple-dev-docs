@@ -24,7 +24,7 @@ class BEBrowserDataImportManager
 
 - [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md)
 
-#### Overview
+## Overview
 
 This class coordinates the transfer of browsing data by presenting the framework-provided import sheet when a person wants to import data through your app’s UI (see [`requestImport(for:completionHandler:)`](./bebrowserdataimportmanager/requestimport%28for,completionhandler%29.md)). Call this class’s [`requestImport(for:completionHandler:)`](./bebrowserdataimportmanager/requestimport%28for,completionhandler%29.md) to stream browsing data from the system, as received through another browser. For more information, see [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md).
 

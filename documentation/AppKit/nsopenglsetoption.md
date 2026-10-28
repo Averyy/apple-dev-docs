@@ -17,7 +17,7 @@ Sets global OpenGL options.
 extern void NSOpenGLSetOption(NSOpenGLGlobalOption pname, GLint param);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the value of the global OpenGL parameter `pname` to `param`. The available options are enumerated by the [`NSOpenGLGlobalOption`](./nsopenglglobaloption.md) type.
 

@@ -23,7 +23,7 @@ init(style: UITabBarItemAppearance.Style)
 - (instancetype) initWithStyle:(UITabBarItemAppearanceStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 A new appearance object containing appropriate default values for the specified layout style.
 

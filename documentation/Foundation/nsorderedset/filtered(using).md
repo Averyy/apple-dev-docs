@@ -25,11 +25,11 @@ func filtered(using p: NSPredicate) -> NSOrderedSet
 - (NSOrderedSet<id> *) filteredOrderedSetUsingPredicate:(NSPredicate *) p;
 ```
 
-#### Return Value
+## Return Value
 
 A new ordered set containing the objects in the receiving ordered set for which `p` returns true.
 
-#### Discussion
+## Discussion
 
 For more details, see [Predicate Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
 

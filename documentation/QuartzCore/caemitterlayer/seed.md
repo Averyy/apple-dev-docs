@@ -24,7 +24,7 @@ var seed: UInt32 { get set }
 @property unsigned int seed;
 ```
 
-#### Discussion
+## Discussion
 
 Each layer has its own random number generator state. Emitter cell properties that are defined as a mean and a range, such as a cell’s `speed`, the value of the properties are uniformly distributed in the interval [M - R/2, M + R/2].
 

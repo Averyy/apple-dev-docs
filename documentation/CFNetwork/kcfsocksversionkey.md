@@ -22,7 +22,7 @@ let kCFSOCKSVersionKey: CFString
 extern CFStringRef const kCFSOCKSVersionKey;
 ```
 
-#### Discussion
+## Discussion
 
 If an error of type `kCFSOCKSErrorUnsupportedServerVersion` is returned, querying this key returns the SOCKS version in use by the current connection.
 

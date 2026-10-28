@@ -25,7 +25,7 @@ let kCLLocationAccuracyReduced: CLLocationAccuracy
 extern const CLLocationAccuracy kCLLocationAccuracyReduced;
 ```
 
-#### Discussion
+## Discussion
 
 The accuracy of location data is reduced in both space and time using approaches like selecting a nearby point of interest and updating the location at most a few times per hour. The approximate location preserves the user’s country or region, typically preserves the city, and is usually within 1–20 kilometers of the actual location.
 

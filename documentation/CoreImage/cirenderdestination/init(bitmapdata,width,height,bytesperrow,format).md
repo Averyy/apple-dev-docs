@@ -24,11 +24,11 @@ init(bitmapData data: UnsafeMutableRawPointer, width: Int, height: Int, bytesPer
 - (instancetype) initWithBitmapData:(void *) data width:(NSUInteger) width height:(NSUInteger) height bytesPerRow:(NSUInteger) bytesPerRow format:(CIFormat) format;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a client-managed buffer.
 
-#### Discussion
+## Discussion
 
 The destination’s [`colorSpace`](../ciimage/colorspace.md) property will default to a [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) created with [`sRGB`](../../CoreGraphics/cgcolorspace/srgb.md), [`extendedSRGB`](../../CoreGraphics/cgcolorspace/extendedsrgb.md), or [`genericGrayGamma2_2`](../../CoreGraphics/cgcolorspace/genericgraygamma2_2.md).
 

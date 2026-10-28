@@ -21,7 +21,7 @@ A person’s location, if available.
 @property (nonatomic, readonly) CLLocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 If the location isn’t available, the value is `nil`.
 

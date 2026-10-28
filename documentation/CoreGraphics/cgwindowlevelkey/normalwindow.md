@@ -18,7 +18,7 @@ case normalWindow
 kCGNormalWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for normal windows.
 

@@ -13,11 +13,11 @@
 errno_t sock_sendmbuf(socket_t so, const struct msghdr *msg, mbuf_t data, int flags, size_t *sentlen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, EWOULDBLOCK if non-blocking and operation would cause the thread to block, otherwise the errno error. Regardless of return value, the mbuf chain 'data' will be freed.
 
-#### Discussion
+## Discussion
 
 Send data in an mbuf on a socket. Similar to sock_send only the data to be sent is taken from the mbuf chain.
 

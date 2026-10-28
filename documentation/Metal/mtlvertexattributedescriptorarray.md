@@ -24,7 +24,7 @@ class MTLVertexAttributeDescriptorArray
 @interface MTLVertexAttributeDescriptorArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLVertexAttributeDescriptorArray`](./mtlvertexattributedescriptorarray.md) instance is an array of instances that defines how vertex attribute data is formatted and assigned to an index in the attribute argument table. The methods of [`MTLVertexAttributeDescriptorArray`](./mtlvertexattributedescriptorarray.md) set or retrieve the attribute formatting information from the array.
 

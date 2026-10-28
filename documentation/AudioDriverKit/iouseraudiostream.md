@@ -15,7 +15,7 @@ An audio object that performs I/O for an audio device.
 class IOUserAudioStream;
 ```
 
-#### Overview
+## Overview
 
 [`IOUserAudioStream`](./iouseraudiostream.md) allocates memory descriptors that the host uses for running I/O. An [`IOUserAudioDevice`](./iouseraudiodevice.md) uses an [`IOUserAudioStream`](./iouseraudiostream.md) instance to perform I/O. Changes to the device that owns a stream may update formats on the underlying stream, which you handle by overriding [`HandleChangeCurrentStreamFormat`](./iouseraudiostream/handlechangecurrentstreamformat.md) and [`HandleChangeStreamIsActive`](./iouseraudiostream/handlechangestreamisactive.md).
 

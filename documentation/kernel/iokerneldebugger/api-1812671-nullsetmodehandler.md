@@ -13,11 +13,11 @@ static bool nullSetModeHandler(
  bool active);
 ```
 
-#### Return Value
+## Return Value
 
 This function will always return true.
 
-#### Overview
+## Overview
 
 This function is registered as the set mode handler when an IOKernelDebugger object surrenders its status as the active debugger nub. Until another IOKernelDebugger object gets promoted, this function will handle set mode requests from KDP.
 

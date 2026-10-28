@@ -25,11 +25,11 @@ class func scale(by scale: CGFloat, duration: TimeInterval) -> SKAction
 + (SKAction *) scaleBy:(CGFloat) scale duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`xScale`](../sknode/xscale.md) and [`yScale`](../sknode/yscale.md) properties are animated to the new value.
 

@@ -6,19 +6,22 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.count_nonzero
 
-**count_nonzero(*a: array*, */*, ***, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Count the number of non-zero elements along the given axis.
+```python
+count_nonzero(a: array, /, *, axis: None | int | Sequence[int] = None, keepdims: bool = False, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Count the number of non-zero elements along the given axis.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Axis or axes to count over.
+**Parameters:**
+
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **axis** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int)), *optional*) – Axis or axes to count over.
 Defaults to `None` in which case the whole array is counted.
-**keepdims** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Keep the reduced axes as size one.
+- **keepdims** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – Keep the reduced axes as size one.
 Default: `False`.
 
-Returns:
-The counts as an `int32` array.
+**Returns:**
+: The counts as an `int32` array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

@@ -25,7 +25,7 @@ func dispatchNetwork(intermediatesHeap heap: any MTLHeap)
 - (void) dispatchNetworkWithIntermediatesHeap:(id<MTLHeap>) heap;
 ```
 
-#### Discussion
+## Discussion
 
 This method takes a parameter consisting of a `MTLHeap` that Metal can use to allocate intermediate tensors. You can query the minimum size Metal requires for this heap by calling [`intermediatesHeapSize`](../mtl4machinelearningpipelinestate/intermediatesheapsize.md).
 

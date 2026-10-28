@@ -22,7 +22,7 @@ Reads the next entry header.
 func readHeader() throws -> ArchiveHeader?
 ```
 
-#### Return Value
+## Return Value
 
 A new header instance, or `nil` if the operation reaches the end of the archive stream.
 

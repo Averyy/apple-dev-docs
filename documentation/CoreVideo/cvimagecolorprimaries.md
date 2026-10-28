@@ -21,7 +21,7 @@ Color primaries describe the gamut used for the rendering intent of an image.
 enum CVImageColorPrimaries
 ```
 
-#### Overview
+## Overview
 
 This value is primarily used in color matching operations, along with a transfer function specified as [`CVImageTransferFunction`](./cvimagetransferfunction.md).
 

@@ -5,7 +5,7 @@
 
 Define document types.
 
-#### Overview
+## Overview
 
 You specify one of the NSXMLDocumentContentKind constants in [`documentContentKind`](./xmldocument/documentcontentkind.md) to indicate the kind of content required for document output.
 

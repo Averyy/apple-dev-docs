@@ -5,11 +5,11 @@
 
 Use program tokens to manage beta program enrollment.
 
-#### Overview
+## Overview
 
 To enroll a device in the Apple Beta Software Program or AppleSeed for IT, a device management service retrieves a token from Apple, then provides the token to devices during Automated Device Enrollment or by using the [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration. For more information, see [Request a specific minimum software version during enrollment](./deploying-software-updates-using-declarative-management.md#Request-a-specific-minimum-software-version-during-enrollment).
 
-#### Retrieve beta tokens
+## Retrieve beta tokens
 
 Follow these steps to retrieve beta tokens from the AppleSeed for IT program using your device management service:
 
@@ -47,7 +47,7 @@ The service endpoint returns a JSON object with the following structure:
 
 The `token` is unique for each organization and you can’t reuse it across different Apple School Manager and Apple Business organizations. The `token` is also specific to a certain operating system upgrade seeding period. The `title` is a human-readable description of the beta release. The `os` field can contain the following values: `iOS` (includes iPadOS), `macOS`, `tvOS`, `watchOS`, or `visionOS`.
 
-#### Enroll devices in a beta program
+## Enroll devices in a beta program
 
 After a device enrolls in device management, a device management service can offer, enroll, or unenroll supervised iPad, iPhone, and Mac devices from beta programs using the `Beta` dictionary in the [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration. On unsupervised devices, you can only use the `OfferPrograms` array to let users manually enroll in beta programs that the organization subscribes to.
 
@@ -62,7 +62,7 @@ The dictionaries used in the `OfferPrograms` and `RequireProgram` keys must cont
 
 The `OfferPrograms` key is an array that can have multiple `Program` entries of the structure above. The `RequireProgram` dictionary contains only a single program definition.
 
-#### Allow users to enroll devices in a beta program
+## Allow users to enroll devices in a beta program
 
 When you set the `ProgramEnrollment` key to `Allowed`, users can enroll in any program available to their Apple Account or Managed Apple Account and in any beta program that the `OfferPrograms` array lists.
 
@@ -84,7 +84,7 @@ The following example uses the described keys:
 
 To allow users to participate without signing in, set the `ProgramEnrollment` key to `AlwaysOn`. In this case, the device offers users all programs listed in the `OfferPrograms` array.
 
-#### Automatically enroll devices in a beta program
+## Automatically enroll devices in a beta program
 
 You can also automatically enroll devices in a beta program by setting `ProgramEnrollment` to `AlwaysOn` and defining the program in the `RequireProgram` dictionary.
 
@@ -109,7 +109,7 @@ The following example uses the described keys:
 }
 ```
 
-#### Restrict users from enrolling devices in a beta program
+## Restrict users from enrolling devices in a beta program
 
 To prevent users from enrolling, set the `ProgramEnrollment` key to `AlwaysOff`. This setting also unenrolls the device from any beta program that a user or the device management service previously enrolled it in.
 

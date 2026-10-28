@@ -19,7 +19,7 @@ The maximum number of previous messages that contribute to generating suggested 
 static var previousMessagesLimit: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you pass an array of [`SuggestedActionsMessage`](../suggestedactionsmessage.md) values to the `previousMessages` parameter of [`init(message:previousMessages:)`](../suggestedactionsview/init%28message,previousmessages%29.md) or [`generate(message:previousMessages:)`](../suggestedactionsview/generate%28message,previousmessages%29.md), the framework only considers a limited number of provided previous messages. `previousMessagesLimit` represents this limit. The framework ignores any older messages that exceed it.
 

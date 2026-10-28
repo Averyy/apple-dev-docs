@@ -14,7 +14,7 @@
 #define kIOPropertySCSITaskAuthoringDevice
 ```
 
-#### Discussion
+## Discussion
 
 IORegistry property for the SCSI Task User Client. This property identifies an SCSITask enabled device capable of authoring.
 

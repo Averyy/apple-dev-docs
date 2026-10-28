@@ -5,7 +5,7 @@
 
 Return a value that changes in regular steps as a function of the age of the requests.
 
-#### Overview
+## Overview
 
 Use the `agedAsSteppedValue()` function in the expression of a matchmaking rule to get a value that depends on the age of a request. You can use this function in combination with others to create a criteria that loosen over time.
 
@@ -39,17 +39,17 @@ diff(requests[].properties.skill) <= agedValues(avg(requests[].secondsInQueue), 
 
 To compute the average age of the requests in the queue, pass `requests[].secondsInQueue` to the `avg()` function. Alternatively, you can get the minimum or maximum age of the requests using the JMESPath `min()` and `max()` functions.
 
-##### Declaration
+### Declaration
 
 ```other
 number agedAsSteppedValue(number $ageSeconds, number $initialValue, number $finalLimit, number ageIntervalSeconds, number $intervalChange)
 ```
 
-##### Parameters
+### Parameters
 
 -`ageSeconds`: The average, maximum, or minimum age of match requests in the queue. -`initialValue`: The initial or starting value that ranges from `0` to `ageIntervalSeconds-1`. -`finalLimit`: The maximum or minimum value that this function returns depending on whether `intervalChange` is positive or negative. -`ageIntervalSeconds`: The amount between age intervals in seconds. -`intervalChange`: The amount to increment or decrement the value per age interval.
 
-##### Return value
+### Return value
 
 A linear-stepped value that increments or decrements by the given amount based on the ageSeconds parameter. If ageSeconds is less than intervalChange, returns initialValue. Otherwise, returns the result of this equation that maps ageSeconds to a range of values:
 

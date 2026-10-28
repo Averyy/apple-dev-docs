@@ -24,7 +24,7 @@ convenience init?(minCenterCoordinateDistance minDistance: CLLocationDistance)
 - (instancetype) initWithMinCenterCoordinateDistance:(CLLocationDistance) minDistance;
 ```
 
-#### Discussion
+## Discussion
 
 To specify MapKit’s default minimum distance from the center coordinate, use the [`MKMapCameraZoomDefault`](../../mkmapcamerazoomdefault.md) constant, that allows the user to zoom to any level that MapKit supports.
 

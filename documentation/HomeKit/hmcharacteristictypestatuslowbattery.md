@@ -24,7 +24,7 @@ let HMCharacteristicTypeStatusLowBattery: String
 extern NSString * const HMCharacteristicTypeStatusLowBattery;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueBatteryStatus`](./hmcharacteristicvaluebatterystatus.md) enumeration.
 

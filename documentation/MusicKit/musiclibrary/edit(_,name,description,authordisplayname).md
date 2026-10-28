@@ -20,11 +20,11 @@ Edits a playlist that your app has created.
 func edit(_ playlist: Playlist, name: String? = nil, description: String? = nil, authorDisplayName: String? = nil) async throws -> Playlist
 ```
 
-#### Return Value
+## Return Value
 
 The edited playlist.
 
-#### Discussion
+## Discussion
 
 This function will throw an error if your app attempts to edit a playlist that another app created.
 

@@ -16,7 +16,7 @@ Deallocate previously allocated resources
 IOReturn (*deallocateIsochResources)(IOFireWireLibIRMAllocationRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if deallocation success
 

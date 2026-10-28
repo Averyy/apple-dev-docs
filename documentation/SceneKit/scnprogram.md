@@ -25,7 +25,7 @@ class SCNProgram
 @interface SCNProgram : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use an [`SCNProgram`](./scnprogram.md) object to perform custom rendering using shader programs written in the Metal shading language or the OpenGL Shading Language (GLSL). A program object contains a vertex shader and a fragment shader. To use a program object for rendering, assign it to the [`program`](./scnshadable/program.md) property of a geometry or material.
 
@@ -42,11 +42,11 @@ Finally, assign your program object to the geometries or materials you want rend
 
 Rendering with Metal shaders requires that the [`renderingAPI`](./scnscenerenderer/renderingapi.md) property of your [`SCNView`](./scnview.md) object (or other renderer) be set to [`SCNRenderingAPI.metal`](./scnrenderingapi/metal.md), which in turn requires that your app be running on Metal-capable hardware. If you provide both Metal and OpenGL shaders in the same [`SCNProgram`](./scnprogram.md) object, SceneKit automatically selects the appropriate shaders to use when rendering, falling back to OpenGL or OpenGL ES shaders when Metal is not supported on the current hardware.
 
-##### Providing Input to a Metal Shader
+### Providing Input to a Metal Shader
 
 Metal shaders for use with SceneKit require an `#include <SceneKit/scn_metal>` directive to gain access to SceneKit-specific symbols. Use these symbols to access the kinds of data listed below.
 
-###### Vertex Attributes
+#### Vertex Attributes
 
 To use vertex attributes provided by [`SCNGeometry`](./scngeometry.md) objects in your shader program, declare those attributes in your Metal shader source code using attribute qualifiers (see [Attribute Qualifiers to Locate Per-Vertex Inputs](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/func-var-qual/func-var-qual.html#//apple_ref/doc/uid/TP40014364-CH4-SW11) in [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)) and the constants listed in Table 1. For example, the partial shader below declares an input structure using the vertex position and normal attributes.
 
@@ -73,7 +73,7 @@ typedef struct {
 | SCNVertexSemanticTexcoord2 | Texture coordinates, provided by the third geometry source for the [`texcoord`](./scngeometrysource/semantic-swift.struct/texcoord.md) semantic. |
 | SCNVertexSemanticTexcoord3 | Texture coordinates, provided by the fourth geometry source for the [`texcoord`](./scngeometrysource/semantic-swift.struct/texcoord.md) semantic. |
 
-###### Frame-Constant Data
+#### Frame-Constant Data
 
 To use information from SceneKit that is constant for all invocations of your shader when rendering a single frame—such as view and projection matrices, fog parameters, and scene time—declare a parameter to your shader function whose type is `SCNSceneBuffer`, with an attribute qualifier binding it to buffer zero. For example, the shader function declaration below uses scene data in its second parameter.
 
@@ -102,7 +102,7 @@ struct SCNSceneBuffer {
 };
 ```
 
-###### Per-Node Data
+#### Per-Node Data
 
 To use information from SceneKit that varies for each object being rendered with a shader—such as model and normal matrices—declare a parameter to your shader function with an attribute qualifier binding it to buffer one. For the type of this parameter, declare your own struct type containing any of the fields in Listing 4.
 
@@ -133,7 +133,7 @@ vertex MyVertexOutput myVertex(MyVertexInput in [[ stage_in ]],
                                 constant MyNodeBuffer& scn_node [[buffer(1)]])
 ```
 
-###### Custom Variables
+#### Custom Variables
 
 To use custom input variables in a Metal shader, first declare those variables as input parameters to your Metal shader functions, using an attribute qualifier to bind to buffer 2 (or higher). Because these variables pass to your Metal shader in a buffer, you typically also define a data structure for your variables, as seen in the partial shader below.
 
@@ -157,7 +157,7 @@ In either case, you can alternatively provide a value for a specific member of a
 
 - To update custom variable data at render time, call the [`handleBinding(ofBufferNamed:frequency:handler:)`](./scnprogram/handlebinding%28ofbuffernamed,frequency,handler%29.md) method to register a block that SceneKit calls before rendering using your shader program. In the block, SceneKit provides an [`SCNBufferStream`](./scnbufferstream.md) object, whose [`writeBytes(_:count:)`](./scnbufferstream/writebytes%28_,count%29.md) you can call to provide a new value for your data structure.
 
-##### Providing Input to an OpenGL Shader
+### Providing Input to an OpenGL Shader
 
 Vertex attributes. To use vertex attributes provided by [`SCNGeometry`](./scngeometry.md) objects in your shader program, map SceneKit semantics to the input vertex attribute names declared in the shader. Use the [`setSemantic(_:forSymbol:options:)`](./scnprogram/setsemantic%28_,forsymbol,options%29.md) method and the constants listed in Geometry Semantic Identifiers.
 

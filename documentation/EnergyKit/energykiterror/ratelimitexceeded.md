@@ -21,7 +21,7 @@ case rateLimitExceeded
 
 - [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 The framework throws this error if the app calls the EnergyKit API (such as submitting load events) too frequently.
 

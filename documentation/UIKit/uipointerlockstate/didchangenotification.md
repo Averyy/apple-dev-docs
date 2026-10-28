@@ -23,7 +23,7 @@ class let didChangeNotification: NSNotification.Name
 extern NSNotificationName const UIPointerLockStateDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is sent when the value in the [`isLocked`](./islocked.md) property changes. The `userInfo` dictionary of the notification contains the [`sceneUserInfoKey`](./sceneuserinfokey.md) key, which reflects the new value of the [`isLocked`](./islocked.md) property.
 

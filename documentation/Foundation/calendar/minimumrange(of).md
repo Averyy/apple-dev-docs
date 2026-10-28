@@ -21,11 +21,11 @@ Returns the minimum range limits of the values that a given component can take o
 func minimumRange(of component: Calendar.Component) -> Range<Int>?
 ```
 
-#### Return Value
+## Return Value
 
 The range, or nil if it could not be calculated.
 
-#### Discussion
+## Discussion
 
 As an example, in the Gregorian calendar the minimum range of values for the Day component is 1-28.
 

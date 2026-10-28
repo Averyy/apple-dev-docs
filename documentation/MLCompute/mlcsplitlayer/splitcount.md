@@ -23,7 +23,7 @@ var splitCount: Int { get }
 @property (nonatomic, readonly) NSUInteger splitCount;
 ```
 
-#### Discussion
+## Discussion
 
 The layer splits the tensor into equally sized chunks, however the last chunk may be smaller in size.
 

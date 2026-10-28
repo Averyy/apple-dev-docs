@@ -19,11 +19,11 @@
 static bool SPVector3DFloatIsNaN(SPVector3DFloat vector);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the point contains any NaN values.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the vector contains any NaN values.
 

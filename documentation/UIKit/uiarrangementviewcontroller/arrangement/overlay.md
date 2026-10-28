@@ -21,7 +21,7 @@ static var overlay: UIOverlayArrangement { get }
 
 Available when `Self` is `UIOverlayArrangement`.
 
-#### Discussion
+## Discussion
 
 For more information about an overlay arrangement, see [`UIOverlayArrangement`](../../uioverlayarrangement-swift.struct.md).
 

@@ -5,7 +5,7 @@
 
 Secure your app’s local storage data from unauthorized access and modification.
 
-#### Overview
+## Overview
 
 [App Sandbox](../Security/app-sandbox.md) provides automatic protection for your app’s data. App data containers that the system creates for apps that have the App Sandbox capability offer [System Integrity Protection](https://support.apple.com/en-us/102149), which helps prevent potentially malicious software from modifying protected files and folders.
 
@@ -13,13 +13,13 @@ In macOS 15 and later, app group containers also offer System Integrity Protecti
 
 > ❗ **Important**: Use an app group container as the primary local storage location for any app that doesn’t have the App Sandbox capability, to help protect private data. These apps include: main executables packaged in a bundle structure, app extensions, App Clips, system extensions, and XPC services.
 
-#### Add app group membership to your app
+## Add app group membership to your app
 
 Follow the steps in [Configuring app groups](./configuring-app-groups.md) to add the [`App Groups Entitlement`](../BundleResources/entitlements/com.apple.security.application-groups.md) to your app’s target. Multiple apps and supporting processes signed by the same developer team may share the same app group.
 
 See [Diagnosing Issues with Entitlements](../BundleResources/diagnosing-issues-with-entitlements.md) for information on diagnosing any issues you encounter when you add the app groups entitlement.
 
-#### Access an app group container
+## Access an app group container
 
 When your app becomes a member of an app group, there are a number of APIs you can use to read and write data to that group’s shared container. See  [Access an app group’s shared container](./configuring-app-groups.md#Access-an-app-groups-shared-container) for more details.
 

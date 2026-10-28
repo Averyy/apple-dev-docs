@@ -19,7 +19,7 @@ class MERAWProcessingParameter
 @interface MERAWProcessingParameter : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 This protocol provides an interface for Video Toolbox to query descriptions of the different parameters that can be used to influence RAW processor operation.  A distinct [`MERAWProcessingParameter`](./merawprocessingparameter.md) is created for each parameter supported by the RAW processor, and the set of supported parameters is returned by the [`processingParameters`](./merawprocessor/processingparameters.md) interface.
 

@@ -22,11 +22,11 @@ class func isRelativeAltitudeAvailable() -> Bool
 + (BOOL) isRelativeAltitudeAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports relative altitude changes or [`false`](../../Swift/false.md) if it does not.
 
-#### Discussion
+## Discussion
 
 Use this method to determine if altitude updates are available before calling the [`startRelativeAltitudeUpdates(to:withHandler:)`](./startrelativealtitudeupdates%28to,withhandler%29.md) method.
 

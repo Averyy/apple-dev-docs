@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, willDisplay ite
 - (void) collectionView:(NSCollectionView *) collectionView willDisplayItem:(NSCollectionViewItem *) item forRepresentedObjectAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method before adding new items to its content. You can use this method to track the addition of items and perform related tasks.
 

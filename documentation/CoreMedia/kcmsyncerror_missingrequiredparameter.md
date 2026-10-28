@@ -25,7 +25,7 @@ var kCMSyncError_MissingRequiredParameter: OSStatus { get }
 kCMSyncError_MissingRequiredParameter
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that a required parameter is missing.
 

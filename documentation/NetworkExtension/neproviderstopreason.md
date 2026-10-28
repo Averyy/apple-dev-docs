@@ -24,7 +24,7 @@ enum NEProviderStopReason
 enum NEProviderStopReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 `NEProviderStopReasonUserLogout` and `NEProviderStopReasonUserSwitch` are available only in macOS.
 

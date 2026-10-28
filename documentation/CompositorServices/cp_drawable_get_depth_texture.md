@@ -16,11 +16,11 @@ Returns the depth texture at the specified index in the drawable.
 id<MTLTexture>cp_drawable_get_depth_texture(cp_drawable_t drawable, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The Metal depth texture at the specified index.
 
-#### Discussion
+## Discussion
 
 Use the returned texture in your render pipeline as the depth texture for your content. The layer’s texture topology determines the layout and content for each texture. The drawable’s views contain information about how those views map to the textures.
 

@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 9.1 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 9.3. The SDK comes bundled with Xcode 14.2. For information on the compatibility requirements for Xcode 14.2, see [Xcode 14.2 Release Notes](../Xcode-Release-Notes/xcode-14_2-release-notes.md).
 
-##### Movement Disorder API
+### Movement Disorder API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The verification of the query parameters in `queryDyskineticSymptomFromDate` was improved such that if the specified end time is beyond the current time, the `queryDyskineticSymptomFromDate` will return once it reaches the current time. The updated version number of the API is 1.0.1. (102915648)
 

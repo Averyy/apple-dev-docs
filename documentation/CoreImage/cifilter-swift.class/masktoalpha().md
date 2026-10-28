@@ -24,11 +24,11 @@ class func maskToAlpha() -> any CIFilter & CIMaskToAlpha
 + (CIFilter<CIMaskToAlpha> *) maskToAlphaFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the mask-to-alpha filter to an image. The value of the alpha component is determined by the grayscale value of the input image. Black pixels become completely transparent, white pixels are completely solid.
 

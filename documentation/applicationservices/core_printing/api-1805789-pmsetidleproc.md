@@ -15,15 +15,15 @@ OSStatus PMSetIdleProc (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid after calling `PMBegin`. The printing system calls your idle function periodically during your print loop.
 
-##### Special Considerations
+### Special Considerations
 
 Your idle function is not called in macOS. It’s only called in Mac OS 8 and 9.
 

@@ -19,7 +19,7 @@ class func show(_ collection: NSFontCollection, withName name: NSFontCollection.
 + (BOOL) showFontCollection:(NSFontCollection *) collection withName:(NSFontCollectionName) name visibility:(NSFontCollectionVisibility) visibility error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Named collections are shown by user interfaces such as the Font panel. When you change the collection, you must show it again to see the changes reflected on disk or in the Font panel.
 

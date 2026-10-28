@@ -20,7 +20,7 @@ optional func view(_ view: ARSKView, didAdd node: SKNode, for anchor: ARAnchor)
 - (void) view:(ARSKView *) view didAddNode:(SKNode *) node forAnchor:(ARAnchor *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically add anchors to a session. The view calls this method once for each new anchor. ARKit also calls this method to provide visual content for any [`ARAnchor`](../aranchor.md) objects you manually add using the session’s [`add(anchor:)`](../arsession/add%28anchor%29.md) method.
 

@@ -15,17 +15,17 @@ CMError CMSearchGetIndProfileFileSpec (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Before your application can call the `CMSearchGetIndProfileFileSpec` function, it must call the function [CMNewProfileSearch](./api-1805344-cmnewprofilesearch.md) to perform a profile search and produce a search result list. The search result list is a private data structure maintained by ColorSync. 
 
 The `CMSearchGetIndProfileFileSpec` function obtains the Macintosh file system file specification for a profile at a specific index in the search result list. 
 
-##### Version-Notes
+### Version-Notes
 
 This function is not recommended for use in ColorSync 2.5.
 

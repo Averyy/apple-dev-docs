@@ -15,7 +15,7 @@ The device capability descriptor header.
 typedef struct IOUSBDeviceCapabilityDescriptorHeader IOUSBDeviceCapabilityDescriptorHeader;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about this descriptor type, see USB 3.2, 9.6.2.
 

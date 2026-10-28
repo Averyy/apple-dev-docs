@@ -24,11 +24,11 @@ class func areaLogarithmicHistogram() -> any CIFilter & CIAreaLogarithmicHistogr
 + (CIFilter<CIAreaLogarithmicHistogram> *) areaLogarithmicHistogramFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 1-pixel-high image containing the calculated histogram`.`
 
-#### Discussion
+## Discussion
 
 This filter calculates histograms of the `red,``green,``blue,` and `alpha` colors for the specified area of an image. A base two-logarithm function is applied to the values before binning. The `count` property controls the number of bins (or width) of the histogram. The histogram is scaled so that all the values sum to `scale`.
 

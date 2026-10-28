@@ -19,7 +19,7 @@ func updateValue(_ value: CGFloat, forAnimatedKey key: NSCollectionViewTransitio
 - (void) updateValue:(CGFloat) value forAnimatedKey:(NSCollectionViewTransitionLayoutAnimatedKey) key;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update the value of a specific key that you use in your custom transition layout.
 

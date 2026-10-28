@@ -25,11 +25,11 @@ func objc_allocateClassPair(_ superclass: AnyClass?, _ name: UnsafePointer<CChar
 extern Classobjc_allocateClassPair(Class superclass, const char *name, size_t extraBytes);
 ```
 
-#### Return Value
+## Return Value
 
 The new class, or `Nil` if the class could not be created (for example, the desired name is already in use).
 
-#### Discussion
+## Discussion
 
 You can get a pointer to the new metaclass by calling `object_getClass(newClass)`.
 

@@ -19,7 +19,7 @@ An error response that indicates a well-known service discovery request failed.
 object ErrorWellKnownFailed
 ```
 
-#### Discussion
+## Discussion
 
 The schema for a JSON or property list XML document that an MDM server’s 403 response body contains. The response headers need to include a “Content-Type” header that indicates whether the response returns JSON or XML.
 

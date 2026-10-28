@@ -12,7 +12,7 @@ virtual void HandleTimeout (
  SCSIParallelTaskIdentifierparallelRequest );
 ```
 
-#### Overview
+## Overview
 
 Method to handle command timeouts. This should be overridden by the child class in order to clean up HBA specific structures after a timeout has occurred. This method is called on the workloop (it holds the gate).
 

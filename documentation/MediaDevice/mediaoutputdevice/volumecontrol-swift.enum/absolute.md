@@ -21,7 +21,7 @@ case absolute
 
 - [Creating a media device extension](../../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 The device supports absolute volume control, allowing direct setting of volume to specific levels (such as 0-100%). This provides the most precise volume control and enables features like volume sliders in the user interface.
 

@@ -17,7 +17,7 @@ Communication operations for running MLX across multiple processes.
 enum MLXDistributed
 ```
 
-#### Overview
+## Overview
 
 This mirrors `mlx.core.distributed` in the Python API.
 

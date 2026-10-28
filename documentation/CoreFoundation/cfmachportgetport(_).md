@@ -25,7 +25,7 @@ func CFMachPortGetPort(_ port: CFMachPort!) -> mach_port_t
 extern mach_port_t CFMachPortGetPort(CFMachPortRef port);
 ```
 
-#### Return Value
+## Return Value
 
 The native Mach port represented by `port`.
 

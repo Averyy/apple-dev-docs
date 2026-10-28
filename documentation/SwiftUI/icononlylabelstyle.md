@@ -22,7 +22,7 @@ nonisolated
 struct IconOnlyLabelStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`iconOnly`](./labelstyle/icononly.md) to construct this style.
 

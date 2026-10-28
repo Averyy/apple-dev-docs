@@ -16,11 +16,11 @@ Obtains the current value for an element.
 IOReturn (*getValue)(void *self, IOHIDElementRef element, IOHIDValueRef *pValue, uint32_t timeout, IOHIDValueCallback callback, void *context, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 If an element of type kIOHIDElementTypeFeature is passed, this method will issue a request to the IOHIDDevice. Otherwise, this will return the last value reported by the IOHIDDevice. If requesting multiple feature element values, please consider using an IOHIDDeviceTransactionInterface with the kIOHIDTransactionDirectionTypeInput direction.
 

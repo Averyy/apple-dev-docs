@@ -20,7 +20,7 @@ The broadcast frequency of the radio station.
 final var frequency: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a floating-point number indicating the frequency for AM or FM stations. For example, the value might be 88.5 for an FM station or 660.0 for an AM station.
 

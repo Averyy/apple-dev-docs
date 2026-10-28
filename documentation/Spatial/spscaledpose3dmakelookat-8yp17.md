@@ -19,11 +19,11 @@
 static SPScaledPose3D SPScaledPose3DMakeLookAt(SPPoint3D target, double scale, SPVector3D up);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose at the origin with the rotation towards the target.
 

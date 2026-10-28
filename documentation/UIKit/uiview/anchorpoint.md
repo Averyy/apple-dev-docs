@@ -23,7 +23,7 @@ var anchorPoint: CGPoint { get set }
 @property (nonatomic) CGPoint anchorPoint;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the value for this property using the unit coordinate space, where (`0`, `0`) is the bottom-left corner of the view’s [`bounds`](../../QuartzCore/calayer/bounds.md) rectangle, and (`1`, `1`) is the top-right corner. The default value of this property is (`0.5`, `0.5`), which represents the center of the view’s [`bounds`](../../QuartzCore/calayer/bounds.md) rectangle.
 

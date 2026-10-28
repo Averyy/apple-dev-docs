@@ -23,7 +23,7 @@ func MIDIEndpointGetRefCons(_ endpt: MIDIEndpointRef, _ ref1: UnsafeMutablePoint
 extern OSStatus MIDIEndpointGetRefCons(MIDIEndpointRef endpt, void **ref1, void **ref2);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 

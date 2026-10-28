@@ -21,7 +21,7 @@ init(contentsOfFileURL fileURL: URL, localizedDescription: String) throws
 - (instancetype) initWithContentsOfFileURL:(NSURL *) fileURL localizedDescription:(NSString *) localizedDescription error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sticker object, or `nil` if an error occurs.
 

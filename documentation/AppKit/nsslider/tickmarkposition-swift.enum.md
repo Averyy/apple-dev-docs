@@ -19,7 +19,7 @@ enum TickMarkPosition
 enum NSTickMarkPosition : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants for setting [`tickMarkPosition`](../nsslidercell/tickmarkposition.md).
 

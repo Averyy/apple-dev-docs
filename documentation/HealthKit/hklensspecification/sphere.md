@@ -25,7 +25,7 @@ var sphere: HKQuantity { get }
 @property (nonatomic, copy, readonly) HKQuantity * sphere;
 ```
 
-#### Discussion
+## Discussion
 
 This quantity uses [`diopter()`](../hkunit/diopter%28%29.md) units. The range is -10.5 to +6.5.
 

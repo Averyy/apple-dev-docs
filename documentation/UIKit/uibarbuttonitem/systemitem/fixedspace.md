@@ -23,7 +23,7 @@ case fixedSpace
 UIBarButtonSystemItemFixedSpace
 ```
 
-#### Discussion
+## Discussion
 
 Only the [`width`](../width.md) property is used when this value is set.
 

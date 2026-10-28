@@ -4,7 +4,7 @@
 
 Use gesture recognizers to simplify touch handling and create a consistent user experience.
 
-#### Overview
+## Overview
 
 Gesture recognizers are the simplest way to handle touch or press events in your views. You can attach one or more gesture recognizers to any view. Gesture recognizers encapsulate all of the logic needed to process and interpret incoming events for that view and match them to a known pattern. When a match is detected, the gesture recognizer notifies its assigned target object, which can be a view controller, the view itself, or any other object in your app.
 
@@ -16,7 +16,7 @@ Gesture recognizers come in two types: discrete and continuous. A *discrete gest
 
 Interface Builder includes objects for each of the standard UIKit gesture recognizers. It also includes a custom gesture recognizer object that you can use to represent your custom [`UIGestureRecognizer`](./uigesturerecognizer.md) subclasses.
 
-##### Configuring a gesture recognizer
+### Configuring a gesture recognizer
 
 To configure a gesture recognizer:
 
@@ -40,7 +40,7 @@ The following code shows the generic format for the action method of a gesture r
 - (IBAction)myActionMethod:(UIGestureRecognizer*)sender
 ```
 
-##### Responding to gestures
+### Responding to gestures
 
 The action method associated with a gesture recognizer provides your app’s response to that gesture. For discrete gestures, your action method is similar to the action method for a button. Once the action method is called, you perform whatever task is appropriate for that gesture. For continuous gestures, your action method can respond to the recognition of the gesture, but it can also track events before the gesture is recognized. Tracking events lets you create a more interactive experience. For example, you might use the updates from a [`UIPanGestureRecognizer`](./uipangesturerecognizer.md) object to reposition content in your app.
 

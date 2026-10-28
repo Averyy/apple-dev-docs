@@ -25,11 +25,11 @@ Finds multiple possible tags for a given linguistic unit, for a single scheme, a
 
 - [Identifying people, places, and organizations](../identifying-people-places-and-organizations.md)
 
-#### Return Value
+## Return Value
 
 A tuple containing a dictionary and a range.
 
-#### Discussion
+## Discussion
 
 Each dictionary entry is a predicted tag with its associated probability score. These tags are the top candidates proposed as possible tags for the token. The dictionary contains up to `maximumCount` entries.
 

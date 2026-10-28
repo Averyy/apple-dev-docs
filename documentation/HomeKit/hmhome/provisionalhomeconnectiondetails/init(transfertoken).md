@@ -16,7 +16,7 @@ Creates a structure that contains the token you need to transfer a temporary hom
 init(transferToken: Data)
 ```
 
-#### Return Value
+## Return Value
 
 The structure that contains the token you need to transfer a temporary home to a person’s home hub.
 

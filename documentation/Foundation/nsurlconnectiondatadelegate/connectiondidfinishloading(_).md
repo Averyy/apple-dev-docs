@@ -25,7 +25,7 @@ optional func connectionDidFinishLoading(_ connection: NSURLConnection)
 - (void) connectionDidFinishLoading:(NSURLConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate will receive no further messages for `connection`.
 

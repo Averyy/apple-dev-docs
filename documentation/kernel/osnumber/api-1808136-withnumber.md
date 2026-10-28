@@ -13,11 +13,11 @@ static OSNumber * withNumber(
  unsigned intnumberOfBits);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSNumber with a reference count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 This function does not work in I/O Kit versions prior to 8.0 (OS X 10.4). In I/O Kit version 8.0 and later, it works but is limited to parsing unsigned 32 bit quantities. The format of the C string may be decimal, hexadecimal ("0x" prefix), binary ("0b" prefix), or octal ("0" prefix).
 

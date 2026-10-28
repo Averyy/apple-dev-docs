@@ -24,7 +24,7 @@ static let `default`: SceneAssociationBehavior
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 With this option, the system uses the string in the [`activityIdentifier`](../groupactivity/activityidentifier.md) property of your [`GroupActivity`](../groupactivity.md) object to locate an appropriate scene. Choose this option if your app has only one scene, or if you always use the same scene to display the intended activity.
 

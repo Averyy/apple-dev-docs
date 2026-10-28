@@ -21,7 +21,7 @@ Sets the model container and associated model context in this scene’s environm
 @preconcurrency func modelContainer(_ container: ModelContainer) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 In this example, `RecipesApp` sets a shared model container to use for all of its windows:
 

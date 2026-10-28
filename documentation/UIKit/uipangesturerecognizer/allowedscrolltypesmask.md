@@ -22,7 +22,7 @@ var allowedScrollTypesMask: UIScrollTypeMask { get set }
 @property (nonatomic) UIScrollTypeMask allowedScrollTypesMask;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this mask enables the pan gesture to recognize scroll events, like a mouse scroll movement or a two-finger scroll on a track pad. See [`UIScrollType`](../uiscrolltype.md).
 

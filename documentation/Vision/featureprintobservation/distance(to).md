@@ -21,7 +21,7 @@ Computes the distance between two feature print observations.
 func distance(to featurePrint: FeaturePrintObservation) throws -> Double
 ```
 
-#### Return Value
+## Return Value
 
 The distance between two observations. Shorter distances indicate greater similarity between feature prints.
 

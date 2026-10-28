@@ -19,7 +19,7 @@ func disableAutomaticTermination(_ reason: String)
 - (void) disableAutomaticTermination:(NSString *) reason;
 ```
 
-#### Discussion
+## Discussion
 
 This method increments the automatic termination counter. When the counter is greater than `0`, the application is considered active and ineligible for automatic termination. For example, you could disable automatic termination when the user of an instant messaging application signs on, because the application requires a background connection to be maintained even if the application is otherwise inactive.
 

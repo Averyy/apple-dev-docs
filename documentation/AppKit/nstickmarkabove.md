@@ -15,7 +15,7 @@
 static const NSTickMarkPosition NSTickMarkAbove;
 ```
 
-#### Discussion
+## Discussion
 
 Tick marks above (for horizontal sliders).
 

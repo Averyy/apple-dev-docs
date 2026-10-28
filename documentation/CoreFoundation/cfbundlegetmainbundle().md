@@ -25,11 +25,11 @@ func CFBundleGetMainBundle() -> CFBundle!
 extern CFBundleRefCFBundleGetMainBundle();
 ```
 
-#### Return Value
+## Return Value
 
 A CFBundle object representing the application’s main bundle, or `NULL` if it is not possible to create a bundle. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 CFBundle creates a main bundle whenever it possibly can, even for unbundled apps. There are a few situations in which it is not possible, so you should check the return value against `NULL`, but this happens only in exceptional circumstances.
 

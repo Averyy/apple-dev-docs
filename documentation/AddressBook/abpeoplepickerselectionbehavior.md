@@ -19,7 +19,7 @@ struct ABPeoplePickerSelectionBehavior
 typedef enum { ... } ABPeoplePickerSelectionBehavior;
 ```
 
-#### Overview
+## Overview
 
 These constants are of the type [`ABPeoplePickerSelectionBehavior`](./abpeoplepickerselectionbehavior.md) and are used by [`valueSelectionBehavior`](./abpeoplepickerview/valueselectionbehavior.md).
 

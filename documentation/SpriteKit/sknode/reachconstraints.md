@@ -26,7 +26,7 @@ var reachConstraints: SKReachConstraints? { get set }
 @property (nonatomic, copy, nullable) SKReachConstraints * reachConstraints;
 ```
 
-#### Discussion
+## Discussion
 
 To use inverse kinematics, create a new [`SKReachConstraints`](../skreachconstraints.md) object and assign it to this property. When a reach action calculates the new positions of this node, the possible values for this node are restricted to the constraints defined by this object. For more information on the inverse kinematic actions, see [`SKAction`](../skaction.md).
 

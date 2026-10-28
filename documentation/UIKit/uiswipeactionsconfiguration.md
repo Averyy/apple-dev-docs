@@ -23,7 +23,7 @@ class UISwipeActionsConfiguration
 @interface UISwipeActionsConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UISwipeActionsConfiguration`](./uiswipeactionsconfiguration.md) object to associate custom swipe actions with a row of your table view. Users swipe horizontally left or right in a table view to reveal the actions associated with a row. Each swipe-actions object contains the set of actions to display for each type of swipe.
 

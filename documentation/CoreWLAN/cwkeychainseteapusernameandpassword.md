@@ -15,7 +15,7 @@ Sets the keychain item containing the 802.1X username and password for the speci
 OSStatus CWKeychainSetEAPUsernameAndPassword(CFDataRef ssidData, CFStringRef username, CFStringRef password);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus error code which will indicate whether or not a failure occurred during execution. *errSecSuccess* indicates no error occurred.
 

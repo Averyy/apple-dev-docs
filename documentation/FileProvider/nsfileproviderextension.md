@@ -22,7 +22,7 @@ class NSFileProviderExtension
 @interface NSFileProviderExtension : NSObject
 ```
 
-#### Overview
+## Overview
 
 To create a nonreplicated File Provider extension, start by creating a subclass of the [`NSFileProviderExtension`](./nsfileproviderextension.md) class. When implementing your [`NSFileProviderExtension`](./nsfileproviderextension.md) subclass, remember:
 

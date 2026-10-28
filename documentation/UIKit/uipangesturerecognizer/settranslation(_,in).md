@@ -23,7 +23,7 @@ func setTranslation(_ translation: CGPoint, in view: UIView?)
 - (void) setTranslation:(CGPoint) translation inView:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 Changing the translation value resets the velocity of the pan.
 

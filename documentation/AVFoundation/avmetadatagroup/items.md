@@ -25,7 +25,7 @@ var items: [AVMetadataItem] { get }
 @property (nonatomic, copy, readonly) NSArray<AVMetadataItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 The `items` array may be empty if no metadata items are associated with this group.
 

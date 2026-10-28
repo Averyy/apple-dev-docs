@@ -19,7 +19,7 @@ Offset into binary text segment
 let offsetIntoBinaryTextSegment: UInt64?
 ```
 
-#### Discussion
+## Discussion
 
 This may be nil if the offset information is unavailable.
 

@@ -24,7 +24,7 @@ var startProgress: Float { get set }
 @property float startProgress;
 ```
 
-#### Discussion
+## Discussion
 
 Legal values are numbers between 0.0 and 1.0. For example, to start the transition half way through its progress set `startProgress` to 0.5. The default value is 0.
 

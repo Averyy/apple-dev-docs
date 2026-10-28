@@ -17,7 +17,7 @@ nonisolated
 struct ExternalNonInteractiveAccessory<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 The scene accessory may be presented when an external display is connected to the device, or when the device is connected to an external display via AirPlay.
 

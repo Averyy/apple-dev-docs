@@ -14,7 +14,7 @@
 gestaltKeyboardType = 'kbd '
 ```
 
-#### Discussion
+## Discussion
 
 The selector you pass to the `Gestalt` function to determine the type of the keyboard.
 

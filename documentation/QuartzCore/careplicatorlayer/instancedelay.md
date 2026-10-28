@@ -24,7 +24,7 @@ var instanceDelay: CFTimeInterval { get set }
 @property CFTimeInterval instanceDelay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`, meaning that any animations added to replicated copies will be synchronized.
 

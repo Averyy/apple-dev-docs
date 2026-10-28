@@ -21,7 +21,7 @@ A request that recognizes animals in an image.
 struct RecognizeAnimalsRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates a collection of [`RecognizedObjectObservation`](./recognizedobjectobservation.md) objects that describe the animals the request detects.
 

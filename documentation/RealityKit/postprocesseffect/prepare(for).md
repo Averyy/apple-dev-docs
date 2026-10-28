@@ -21,7 +21,7 @@ nonisolated
 mutating func prepare(for device: any MTLDevice)
 ```
 
-#### Discussion
+## Discussion
 
 When you set or update the [`customPostProcessing`](../realityviewrenderingeffects/custompostprocessing.md) property, RealityKit calls this method once, after it does its setup work, but before rendering the next frame.
 

@@ -15,11 +15,11 @@
 extern OSStatus AudioFileCreate(const struct FSRef *inParentRef, CFStringRef inFileName, AudioFileTypeID inFileType, const AudioStreamBasicDescription *inFormat, AudioFileFlags inFlags, struct FSRef *outNewFileRef, AudioFileID*outAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 This deprecated function uses an `FSRef` type rather than the `CFURLRef` type used by the [`AudioFileCreateWithURL(_:_:_:_:_:)`](./audiofilecreatewithurl%28_,_,_,_,_%29.md) function.
 

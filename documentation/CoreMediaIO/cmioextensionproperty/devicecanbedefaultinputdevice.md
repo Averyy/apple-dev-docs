@@ -20,7 +20,7 @@ static let deviceCanBeDefaultInputDevice: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyDeviceCanBeDefaultInputDevice;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a number that represents a Boolean value.
 

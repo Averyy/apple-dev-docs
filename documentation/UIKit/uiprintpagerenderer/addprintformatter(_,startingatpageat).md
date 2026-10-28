@@ -22,7 +22,7 @@ func addPrintFormatter(_ formatter: UIPrintFormatter, startingAtPageAt pageIndex
 - (void) addPrintFormatter:(UIPrintFormatter *) formatter startingAtPageAtIndex:(NSInteger) pageIndex;
 ```
 
-#### Discussion
+## Discussion
 
 You can dissociate a print formatter from its page renderer by calling the [`removeFromPrintPageRenderer()`](../uiprintformatter/removefromprintpagerenderer%28%29.md) method on the print formatter.
 

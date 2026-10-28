@@ -25,7 +25,7 @@ var shouldMigrateStoreAutomatically: Bool { get set }
 @property BOOL shouldMigrateStoreAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 If this is set to [`false`](../../Swift/false.md) and the store is out of sync, attempting to load the store produces an error. If this is set to [`true`](../../Swift/true.md) and the store is out of sync, attempting to load the store causes Core Data to attempt a migration. This flag is set to [`true`](../../Swift/true.md) by default.
 

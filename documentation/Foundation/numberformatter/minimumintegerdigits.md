@@ -25,7 +25,7 @@ var minimumIntegerDigits: Int { get set }
 @property NSUInteger minimumIntegerDigits;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to `0`.
 

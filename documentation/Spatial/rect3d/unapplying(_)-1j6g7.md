@@ -21,7 +21,7 @@ Returns a rectangle that results from unapplying the specified projective transf
 func unapplying(_ transform: ProjectiveTransform3D) -> Rect3D
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from unapplying the specified projective transform.
 

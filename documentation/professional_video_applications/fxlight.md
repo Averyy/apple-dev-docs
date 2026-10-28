@@ -19,7 +19,7 @@ struct FxLight
 typedef struct FxLight { ... } FxLight;
 ```
 
-#### Overview
+## Overview
 
 Note that the FxLight structure uses [`CMTime`](../CoreMedia/cmtime.md) in FxPlug 4, and replaces `FxLightInfo` from `FxLightingAPI` and `FxLightInfo_V1` from `FxLightingAPI_v2`.
 

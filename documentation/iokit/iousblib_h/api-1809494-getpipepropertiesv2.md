@@ -21,11 +21,11 @@ IOReturn ( *GetPipePropertiesV2)(
    UInt16 *bytesPerInterval);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNotOpen if the interface is not open for exclusive access.
 
-#### Overview
+## Overview
 
 Once an interface is opened, all of the pipes in that interface get created by the kernel. The number of pipes can be retrieved by GetNumEndpoints. The client can then get the properties of any pipe using an index of 1 to GetNumEndpoints. Pipe 0 is the default control pipe in the device.
 

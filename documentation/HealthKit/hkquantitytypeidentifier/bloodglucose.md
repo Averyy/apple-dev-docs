@@ -24,7 +24,7 @@ static let bloodGlucose: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBloodGlucose;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use mass/volume units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

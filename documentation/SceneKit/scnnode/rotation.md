@@ -25,7 +25,7 @@ var rotation: SCNVector4 { get set }
 @property (nonatomic) SCNVector4 rotation;
 ```
 
-#### Discussion
+## Discussion
 
 The four-component rotation vector specifies the direction of the rotation axis in the first three components and the angle of rotation (in radians) in the fourth. The default rotation is the zero vector, specifying no rotation. Rotation is applied relative to the node’s [`pivot`](./pivot.md) property.
 

@@ -25,7 +25,7 @@ var CbCrRangeMax: Int32
 int32_t CbCrRangeMax;
 ```
 
-#### Discussion
+## Discussion
 
 This is usually near the high end of the encodable range (e.g. `0xf0`), if not the maximum encodable value (e.g. `0xff`).
 

@@ -23,7 +23,7 @@ var currentTitleShadowColor: UIColor? { get }
 @property (nonatomic, strong, readonly, nullable) UIColor * currentTitleShadowColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `white`.
 

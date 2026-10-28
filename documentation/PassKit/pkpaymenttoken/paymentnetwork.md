@@ -25,7 +25,7 @@ var paymentNetwork: String { get }
 @property (nonatomic, copy, readonly) NSString * paymentNetwork;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is one of the constants listed in [`PKPaymentRequest`](../pkpaymentrequest.md).
 

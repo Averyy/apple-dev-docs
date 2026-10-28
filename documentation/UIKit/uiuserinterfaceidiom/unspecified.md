@@ -23,7 +23,7 @@ case unspecified
 UIUserInterfaceIdiomUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Used when an object has a trait collection, but it isn’t in an environment yet. For example, a view that’s created, but not put into a view hierarchy.
 

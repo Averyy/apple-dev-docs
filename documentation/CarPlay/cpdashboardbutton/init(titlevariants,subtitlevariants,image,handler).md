@@ -21,11 +21,11 @@ init(titleVariants: [String], subtitleVariants: [String], image: UIImage, handle
 - (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants subtitleVariants:(NSArray<NSString *> *) subtitleVariants image:(UIImage *) image handler:(void (^)(CPDashboardButton *barButton)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A button that displays the provided title, subtitle, and image.
 
-#### Discussion
+## Discussion
 
 You must provide at least one, nonzero length title variant, and an image for the button to display. CarPlay displays the first variant that fits into the available screen space, so arrange your title and subtitle variant arrays from most- to least-preferred. Provide the variant strings as localized, displayable content.
 

@@ -17,7 +17,7 @@ An array of metadata values.
 case array([Metadata.Value])
 ```
 
-#### Discussion
+## Discussion
 
 Because `MetadataValue` implements `ExpressibleByArrayLiteral`, you don’t need to type `.array([.string("foo"), .string("bar \(buz)")])`, instead use the more natural `["foo", "bar \(buz)"]`.
 

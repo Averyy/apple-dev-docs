@@ -24,7 +24,7 @@ func barrier(afterEncoderStages: MTLStages, beforeEncoderStages: MTLStages, visi
 
 - [Synchronizing stages within a pass](../synchronizing-stages-within-a-pass.md)
 
-#### Discussion
+## Discussion
 
 Encode a barrier that guarantees that any subsequent work you encode in the *current command encoder*, corresponding to `beforeEncoderStages`, doesn’t begin until all prior commands in this command encoder, corresponding to `afterEncoderStages`, completes.
 

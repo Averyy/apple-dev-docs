@@ -13,7 +13,7 @@
 kIONetworkDataBufferTypeExternal
 ```
 
-#### Discussion
+## Discussion
 
 An external (persistent) data buffer.
 

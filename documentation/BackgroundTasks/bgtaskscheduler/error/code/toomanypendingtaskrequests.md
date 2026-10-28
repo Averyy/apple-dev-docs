@@ -23,7 +23,7 @@ case tooManyPendingTaskRequests
 BGTaskSchedulerErrorCodeTooManyPendingTaskRequests
 ```
 
-#### Discussion
+## Discussion
 
 Try canceling some existing task requests and then resubmit the request that failed.
 

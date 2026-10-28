@@ -24,7 +24,7 @@ var applicationData: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * applicationData;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for additional data as may be appropriate for your app—for example, a shopping cart identifier or an order number.
 

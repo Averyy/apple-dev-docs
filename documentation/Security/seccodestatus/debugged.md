@@ -20,7 +20,7 @@ static var debugged: SecCodeStatus { get }
 kSecCodeStatusDebugged
 ```
 
-#### Discussion
+## Discussion
 
 The debugger sets this flag when it attaches.
 

@@ -25,7 +25,7 @@ var SparseSubfactorSc: SparseSubfactor_t { get }
 SparseSubfactorSc
 ```
 
-#### Discussion
+## Discussion
 
 - **`SparseSubfactorInvalid`**: Invalid subfactor (requested type not compatible with supplied factorization or already destroyed).
 - **`SparseSubfactorP`**: Permutation subfactor, valid for all factorization types. (this is the row permutation for LU factorization)

@@ -22,7 +22,7 @@ final class TelephonyConversationManager
 - [Preparing your app to be the default dialer app](./preparing-your-app-to-be-the-default-dialer-app.md)
 - [Initiating VoIP conversations with LiveCommunicationKit](./initiating-voip-conversations-with-livecommunicationkit.md)
 
-#### Overview
+## Overview
 
 Use `TelephonyConversationManager` to initiate a cellular conversation and let the system route the conversation to the default calling app. For more information, see [Preparing your app to be the default dialer app](./preparing-your-app-to-be-the-default-dialer-app.md).
 

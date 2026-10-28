@@ -13,7 +13,7 @@ virtual IOReturn getInterruptType(
  int *interruptType);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code (`kIOReturnNoInterrupt` is returned if the source is not valid).
 

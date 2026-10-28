@@ -19,7 +19,7 @@ protocol NSFileProviderUserInteractionSuppressing : NSObjectProtocol
 @protocol NSFileProviderUserInteractionSuppressing <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to give users the option to suppress certain user-interaction alerts.
 

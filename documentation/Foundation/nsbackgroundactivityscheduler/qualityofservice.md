@@ -19,7 +19,7 @@ var qualityOfService: QualityOfService { get set }
 @property NSQualityOfService qualityOfService;
 ```
 
-#### Discussion
+## Discussion
 
 Options include:
 

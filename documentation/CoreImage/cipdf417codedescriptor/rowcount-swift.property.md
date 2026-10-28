@@ -24,7 +24,7 @@ var rowCount: Int { get }
 @property (readonly) NSInteger rowCount;
 ```
 
-#### Discussion
+## Discussion
 
 Valid row count values are from 3 to 90.
 

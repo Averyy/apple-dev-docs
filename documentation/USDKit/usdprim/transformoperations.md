@@ -20,7 +20,7 @@ The transform operations on this prim, in evaluation order.
 var transformOperations: [USDTransformOperation] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty array if no transform operations are authored on the prim or if the prim does not conform to the Xformable schema.
 

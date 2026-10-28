@@ -21,7 +21,7 @@ var includePlatformSSOAuthorizationScopes: Bool { get set }
 
 - [Interpreting Platform Single Sign-on authorization scopes](../interpreting-platform-single-sign-on-authorization-scopes.md)
 
-#### Discussion
+## Discussion
 
 If true, the Platform SSO authorization scopes will be included in all requests.
 

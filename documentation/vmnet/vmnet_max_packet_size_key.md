@@ -20,7 +20,7 @@ let vmnet_max_packet_size_key: UnsafePointer<CChar>
 extern const char * const vmnet_max_packet_size_key;
 ```
 
-#### Discussion
+## Discussion
 
 This also defines the minimum size of the packet an app needs to be pass to the `vmnet` function for a successful read.
 

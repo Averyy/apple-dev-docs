@@ -27,11 +27,11 @@ var isIndexed: Bool { get set }
 @property (getter=isIndexed) BOOL indexed;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver should be indexed for searching, otherwise [`false`](../../Swift/false.md). Object stores can optionally use this information upon store creation for operations such as defining indexes.
 
-##### Special Considerations
+### Special Considerations
 
 Setting this property raises an exception if the receiver’s model has been used by an object graph manager.
 

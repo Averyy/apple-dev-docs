@@ -21,11 +21,11 @@ Creates a new context from another one with a state that you provide.
 func withState<T>(_ state: AnimationState<T>) -> AnimationContext<T> where T : VectorArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 A new context that contains the specified state.
 
-#### Discussion
+## Discussion
 
 Use this method to create a new context that contains the state that you provide and view environment values from the original context.
 

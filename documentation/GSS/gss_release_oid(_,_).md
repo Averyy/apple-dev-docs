@@ -28,7 +28,7 @@ OM_uint32 gss_release_oid(OM_uint32 *minor_status, gss_OID*oid);
 
 - [Allocating and Releasing Objects](./allocating-and-releasing-objects.md)
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

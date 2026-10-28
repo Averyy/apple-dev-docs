@@ -5,7 +5,7 @@
 
 Use Metal or other frameworks to render images with your FxPlug plug-in.
 
-#### Overview
+## Overview
 
 [`FxImageTile`](../professional_video_applications/fximagetile.md) is a new class for FxPlug 4 that combines and improves the frame information previously found in `FxRenderInfo` and `FxImage`, including bounds, pixel transforms, field and field order, and the image’s origin. Incoming images are now presented as an [IOSurface](../IOSurface/IOSurface.md), which is one of the biggest changes to FxPlug 4.
 

@@ -16,7 +16,7 @@ An object with information about whether a person allowed your app to start Live
 final class ActivityAuthorizationInfo
 ```
 
-#### Overview
+## Overview
 
 By default, your app can start, update, and end a Live Activity if you use ActivityKit to offer Live Activities. However, a person can deactivate Live Activities for an app in Settings. To check if your app can start, update, or end a Live Activity, use the synchronous [`areActivitiesEnabled`](./activityauthorizationinfo/areactivitiesenabled.md) property or the asynchronous [`activityEnablementUpdates`](./activityauthorizationinfo/activityenablementupdates-swift.property.md) sequence.
 

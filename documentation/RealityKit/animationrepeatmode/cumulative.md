@@ -20,7 +20,7 @@ A mode that repeats indefinitely and begins each repetition by setting the anima
 case cumulative
 ```
 
-#### Discussion
+## Discussion
 
 A [`FromToByAnimation`](../fromtobyanimation.md) with a [`fromValue`](../fromtobyanimation/fromvalue-umpp.md) of `1.0` and an [`toValue`](../fromtobyanimation/tovalue-4m4pm.md) of `2.0` and [`repeatMode`](../fromtobyanimation/repeatmode.md) set to this property repeats as, `1.0`, `2.0`, 3`.0`, 4`.0`, `5.0`, and so on.
 

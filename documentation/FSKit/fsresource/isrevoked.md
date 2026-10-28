@@ -19,7 +19,7 @@ var isRevoked: Bool { get }
 @property (nonatomic, readonly, getter=isRevoked) BOOL revoked;
 ```
 
-#### Discussion
+## Discussion
 
 If this is a proxy resource, the value of this property is always `true` (Swift) or `YES` (Objective-C).
 

@@ -21,7 +21,7 @@ An array of MusicKit song objects that represent the media item.
 func songs() async throws -> [Song]
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the MusicKit song object, see [`Song`](../../MusicKit/song.md).
 

@@ -18,7 +18,7 @@ let kCGWindowBounds: CFString
 extern CFStringRef const kCGWindowBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) type that must be decoded to a [`CGRect`](../CoreFoundation/cgrect.md) type using the [`CGRectMakeWithDictionaryRepresentation(_:_:)`](./cgrectmakewithdictionaryrepresentation%28_,_%29.md) function. The coordinates of the rectangle are specified in screen space, where the origin is in the upper-left corner of the main display.
 

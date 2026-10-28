@@ -19,7 +19,7 @@ case unknown
 WatchKitUnknownError
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it can’t determine the precise reason for the failure.
 

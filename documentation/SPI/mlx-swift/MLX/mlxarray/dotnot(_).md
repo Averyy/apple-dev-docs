@@ -17,7 +17,7 @@ Unary element-wise logical not.
 static func .! (lhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 
@@ -27,7 +27,7 @@ let b = a + 1
 let r = .!(a == b)
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](../logical.md)
 - [`logicalNot(_:stream:)`](../logicalnot%28_,stream%29.md)

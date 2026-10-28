@@ -23,7 +23,7 @@ protocol PKPaymentAuthorizationViewControllerDelegate : NSObjectProtocol
 @protocol PKPaymentAuthorizationViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`PKPaymentAuthorizationViewControllerDelegate`](./pkpaymentauthorizationviewcontrollerdelegate.md) protocol is implemented by the payment authorization view controller’s delegate. You implement this protocol to respond to user interaction with that view controller.
 

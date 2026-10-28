@@ -25,11 +25,11 @@ func sparse_extract_sparse_column_float(_ A: sparse_matrix_float!, _ column: spa
 sparse_status sparse_extract_sparse_column_float(sparse_matrix_float A, sparse_index column, sparse_index row_start, sparse_index *row_end, sparse_dimension nz, float * restrictval, sparse_index * restrictindx);
 ```
 
-#### Return Value
+## Return Value
 
 On success `val` and `jndx` have been updated with the nonzero values of the `column`’th row, `row_end` holds the row index of the next nonzero value, and the number of nonzero values written are returned.  If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `val` and `jndx` are unchanged.
 
-#### Discussion
+## Discussion
 
 Extract the first `nz` values of the column beginning at `A[column,row_start]` for the sparse matrix `A`.  The number of nonzero values extracted is limited by `nz`, and the number of nonzero’s written to `indx` and `val` are returned. Additionally, the row index of the next nonzero value is returned in `row_end`.  For example if `nz` is returned, not all nonzero values have been extracted, and a second extract can start from `row_end`.
 

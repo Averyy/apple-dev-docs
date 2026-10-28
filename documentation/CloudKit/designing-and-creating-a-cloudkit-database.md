@@ -5,11 +5,11 @@
 
 Create a schema to store your app’s objects as records in iCloud using CloudKit.
 
-#### Overview
+## Overview
 
 After you enable CloudKit in your app, you create a *schema* for your container that describes how to store your objects. A schema defines *record types* and the possible relationships between them. A record type is a template for the allowed keys and values of a record. This relationship is analogous to how a class (record type) defines the properties an instance (record) can have.
 
-##### Design your objects as records
+### Design your objects as records
 
 CloudKit allows you to store your data as [`CKRecord`](./ckrecord.md) objects, and relationships between those objects as [`CKRecord.Reference`](./ckrecord/reference.md) associations. Separate your data into record types by grouping objects of the same type together. If you’ve already separated your model data into classes, these classes might have the same record type in iCloud. Choose which objects and which of their properties and relationships you want to persist to iCloud.
 
@@ -25,7 +25,7 @@ For example, a “to-do item” might have the following record type:
 
 For information on additional supported value types, see [`CKRecord`](./ckrecord.md).
 
-##### Create records programmatically
+### Create records programmatically
 
 Create a [`CKRecord`](./ckrecord.md) object with a string representing the type of record you want to store, using [`initWithRecordType:`](./ckrecord/initwithrecordtype_.md). Every record type must have a unique string name.
 
@@ -47,7 +47,7 @@ record.setValuesForKeys([
 ])
 ```
 
-##### Save initial records to iCloud
+### Save initial records to iCloud
 
 You can create a schema using CloudKit Dashboard, or you can create a *just-in-time schema* by writing records programmatically.
 
@@ -78,7 +78,7 @@ If saving the record to iCloud succeeds, `error` is `nil`. (If `error` is non-`n
 
 > ❗ **Important**:  During development, you can change your schema as much as you want, but once it’s deployed to production, you can’t delete any part of it. You can only make additive changes, such as adding a new field to a record type, or adding new record types.
 
-##### Handle or prevent errors gracefully
+### Handle or prevent errors gracefully
 
 When designing your app, consider how to handle or prevent error conditions. For example, an error occurs if your app attempts to save a record to a user’s private database and the user hasn’t yet signed in to iCloud. You might handle this scenario by checking whether the user has signed in before the app saves the record. If the user hasn’t signed in, present an alert. If they’re signed in, save the record.
 
@@ -108,7 +108,7 @@ CKContainer.default().accountStatus { accountStatus, error in
 }
 ```
 
-##### Run your app
+### Run your app
 
 In Xcode, run your app to execute the code that saves records and creates the schema in the database. To verify success, see [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md).
 

@@ -19,7 +19,7 @@ Returns a read-only, raw view of this array’s storage.
 func rawView() -> NDArray.RawView
 ```
 
-#### Return Value
+## Return Value
 
 A raw view of the array’s underlying bytes.
 

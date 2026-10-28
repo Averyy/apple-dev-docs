@@ -24,7 +24,7 @@ class UIBarButtonItemStateAppearance
 @interface UIBarButtonItemStateAppearance : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UIBarButtonItemStateAppearance`](./uibarbuttonitemstateappearance.md) object to customize the title and background image of your bar button items. Don’t create [`UIBarButtonItemStateAppearance`](./uibarbuttonitemstateappearance.md) objects yourself. Instead, create a [`UIBarButtonItemAppearance`](./uibarbuttonitemappearance.md) object and use its properties to fetch the appearance attributes for the button in a particular state. For example, to set the button’s attributes when it’s in the normal state, configure the object in the [`normal`](./uibarbuttonitemappearance/normal.md) property.
 

@@ -18,7 +18,7 @@ An area of interest in an image that the framework identifies as a primary focal
 struct Subject
 ```
 
-#### Overview
+## Overview
 
 A *subject* is a foreground object in an image. A single image can have multiple subjects. For example, in an image of three different coffee mugs, the framework may classify all three mugs as separate subjects. In cases where the framework can’t separate overlapping objects in a photo as individual subjects, a subject may consist of two or more objects.
 

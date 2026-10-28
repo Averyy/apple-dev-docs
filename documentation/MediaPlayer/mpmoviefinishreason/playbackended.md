@@ -21,7 +21,7 @@ case playbackEnded
 MPMovieFinishReasonPlaybackEnded
 ```
 
-#### Discussion
+## Discussion
 
 The end of the movie was reached.
 

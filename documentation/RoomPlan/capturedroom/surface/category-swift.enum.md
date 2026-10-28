@@ -17,7 +17,7 @@ Classifications of a surface in a captured room.
 enum Category
 ```
 
-#### Overview
+## Overview
 
 Each [`CapturedRoom.Surface`](../surface.md) instance in a captured room’s surface arrays ([`doors`](../doors.md), [`openings`](../openings.md), [`walls`](../walls.md), and [`windows`](../windows.md)) reflects a classification ([`category`](./category-swift.property.md)) of this type.
 

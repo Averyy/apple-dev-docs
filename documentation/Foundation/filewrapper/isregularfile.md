@@ -25,7 +25,7 @@ var isRegularFile: Bool { get }
 @property (readonly, getter=isRegularFile) BOOL regularFile;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) when the file wrapper object is a regular-file wrapper, otherwise it contains [`false`](../../Swift/false.md). Invocations of [`read(from:options:)`](./read%28from,options%29.md) may change the value of this property if the type of the file on disk has changed.
 

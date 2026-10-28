@@ -24,11 +24,11 @@ func preferredWorkoutZoneConfiguration(for quantityType: HKQuantityType) async t
 
 - [Accessing workout zone data](../accessing-workout-zone-data.md)
 
-#### Return Value
+## Return Value
 
 The preferred zone configuration, or `nil` if the person hasn’t configured zones for the quantity type.
 
-#### Discussion
+## Discussion
 
 The system returns the person’s manually configured zones from Health Settings, or the system-generated zones if the person hasn’t set custom values. System-generated zones update periodically as the person’s health metrics change, however, the system preserves zones that the person configures. Use this method to display zone information that aligns with the person’s preferences across their workouts.
 

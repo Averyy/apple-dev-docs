@@ -21,7 +21,7 @@ Creates an operation for fetching the specified subscriptions.
 - (instancetype) initWithSubscriptionIDs:(NSArray<NSString *> *) subscriptionIDs;
 ```
 
-#### Discussion
+## Discussion
 
 After creating the operation, assign a block to the [`fetchSubscriptionCompletionBlock`](./fetchsubscriptioncompletionblock-207ep.md) property to process the results.
 

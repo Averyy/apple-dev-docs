@@ -22,7 +22,7 @@ class ASAuthorizationSecurityKeyPublicKeyCredentialAssertion
 @interface ASAuthorizationSecurityKeyPublicKeyCredentialAssertion : NSObject
 ```
 
-#### Overview
+## Overview
 
 The security key creates an assertion when signing in with an existing credential. Use this class to verify the security key credential assertion when the authorization controller calls [`authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md).
 

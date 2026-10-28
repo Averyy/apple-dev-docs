@@ -20,7 +20,7 @@ The top text candidate as a string.
 var transcript: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Please call `topCandidates` to see alternate text candidates.
 

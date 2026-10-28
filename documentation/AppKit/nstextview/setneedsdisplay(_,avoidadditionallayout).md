@@ -19,7 +19,7 @@ func setNeedsDisplay(_ rect: NSRect, avoidAdditionalLayout flag: Bool)
 - (void) setNeedsDisplayInRect:(NSRect) rect avoidAdditionalLayout:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 `NSTextView` overrides the `NSView` [`setNeedsDisplay(_:)`](../nsview/setneedsdisplay%28_%29.md) method to invoke this method with a `flag` argument of [`false`](../../Swift/false.md).
 

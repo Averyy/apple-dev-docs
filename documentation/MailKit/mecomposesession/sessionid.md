@@ -19,7 +19,7 @@ var sessionID: UUID { get }
 @property (nonatomic, strong, readonly) NSUUID * sessionID;
 ```
 
-#### Discussion
+## Discussion
 
 A compose session’s identifier is only valid for the duration that Mail shows a compose window. If the user opens a compose window, saves it as a draft, and later reopens it, the compose session may have a different [`sessionID`](./sessionid.md).
 

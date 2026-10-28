@@ -21,12 +21,12 @@ class GSSyncedDirectoryVersion
 @interface GSSyncedDirectoryVersion : NSObject
 ```
 
-##### Accessing saved game state
+### Accessing saved game state
 
 - [`url`](./gssynceddirectoryversion/url.md)
 - [`isLocal`](./gssynceddirectoryversion/islocal.md)
 
-##### Comparing versions
+### Comparing versions
 
 - [`localizedNameOfSavingComputer`](./gssynceddirectoryversion/localizednameofsavingcomputer.md)
 - [`modifiedDate`](./gssynceddirectoryversion/modifieddate.md)

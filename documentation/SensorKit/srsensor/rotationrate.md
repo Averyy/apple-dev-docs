@@ -21,7 +21,7 @@ static let rotationRate: SRSensor
 extern SRSensor const SRSensorRotationRate;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [[`CMRecordedRotationRateData`](../../CoreMotion/cmrecordedrotationratedata.md)].
 

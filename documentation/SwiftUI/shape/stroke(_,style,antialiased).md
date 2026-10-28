@@ -22,11 +22,11 @@ Traces the outline of this shape with a color or gradient.
 nonisolated func stroke<S>(_ content: S, style: StrokeStyle, antialiased: Bool = true) -> StrokeShapeView<Self, S, EmptyView> where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A stroked shape.
 
-#### Discussion
+## Discussion
 
 The following example adds a dashed purple stroke to a `Capsule`:
 

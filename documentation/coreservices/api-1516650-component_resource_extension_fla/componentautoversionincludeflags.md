@@ -14,7 +14,7 @@
 componentAutoVersionIncludeFlags = (1 << 2)
 ```
 
-#### Discussion
+## Discussion
 
 Specify this flag if you want the Component Manager to include the `componentFlags` field of the component description structure when it searches for identical components in the process of performing automatic version control for your component. If you do not specify this flag, the Component Manager searches only the `componentType`, `componentSubType`, and `componentManufacturer` fields.
 

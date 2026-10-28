@@ -20,7 +20,7 @@ optional func window(_ window: NSWindow, didDecodeRestorableState state: NSCoder
 - (void) window:(NSWindow *) window didDecodeRestorableState:(NSCoder *) state;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called during the window’s [`restoreState(with:)`](../nsresponder/restorestate%28with%29.md) method.
 

@@ -28,7 +28,7 @@ enum PHASEMaterialPreset : NSInteger;
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 This enumeration defines the types of surface texture that you choose for your scene’s objects. To assign a preset to a material, define the `preset` argument for the material’s [`init(engine:preset:)`](./phasematerial/init%28engine,preset%29.md) initializer.
 

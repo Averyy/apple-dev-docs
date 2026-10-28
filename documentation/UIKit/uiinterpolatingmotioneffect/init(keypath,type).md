@@ -23,7 +23,7 @@ init(keyPath: String, type: UIInterpolatingMotionEffect.EffectType)
 - (instancetype) initWithKeyPath:(NSString *) keyPath type:(UIInterpolatingMotionEffectType) type;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized interpolating motion effect object.
 

@@ -20,7 +20,7 @@ The configuration of an open document that stores its file URL, last modificatio
 final class URLDocumentConfiguration
 ```
 
-#### Overview
+## Overview
 
 SwiftUI passes a `URLDocumentConfiguration` to the `makeDocument` closure of [`DocumentGroup`](./documentgroup.md). This class is `@Observable` — views and other observers can track changes to [`fileURL`](./urldocumentconfiguration/fileurl.md) and other properties.
 

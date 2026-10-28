@@ -21,7 +21,7 @@ func close(_ sender: Any?)
 - (void) close:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is an action method and likely would not be invoked programatically. Rather, it is an action that is commonly connected in Interface Builder.
 

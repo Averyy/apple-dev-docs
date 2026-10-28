@@ -20,7 +20,7 @@ The intensity level of a workout session.
 struct WorkoutIntensityLevel
 ```
 
-#### Overview
+## Overview
 
 Use this type to specify a workout intensity level when donating entities for workout contexts. You can also initialize it with an `HKWorkoutActivityType` to donate entities for a specific workout type.
 

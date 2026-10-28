@@ -21,7 +21,7 @@ Appends an interpolated double with the specified attributes.
 mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Double, format: OSLogFloatFormatting = .fixed, align: OSLogStringAlignment = .none, privacy: OSLogPrivacy = .auto, attributes: String)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated double to a log message.
 

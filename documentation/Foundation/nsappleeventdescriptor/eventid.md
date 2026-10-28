@@ -20,7 +20,7 @@ var eventID: AEEventID { get }
 @property (readonly) AEEventID eventID;
 ```
 
-#### Discussion
+## Discussion
 
 The event ID (a four-character code) for the receiver, or 0 if an error occurs.
 

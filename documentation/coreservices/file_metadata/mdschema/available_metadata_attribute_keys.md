@@ -5,7 +5,7 @@
 
 Specify the available metadata attribute keys for a contenttype.
 
-#### Overview
+## Overview
 
 These keys are in the dictionary returned by the function `MDSchemaCopyAttributesForContentType`.
 

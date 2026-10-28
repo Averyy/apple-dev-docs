@@ -19,7 +19,7 @@ func getBitmapDataPlanes(_ data: UnsafeMutablePointer<UnsafeMutablePointer<UInt8
 - (void) getBitmapDataPlanes:(unsigned char **) data;
 ```
 
-#### Discussion
+## Discussion
 
 Color components in planar configuration are arranged in the expected order—for example, red before green before blue for RGB color. All color planes precede the coverage plane. For bitmaps whose [`bitmapFormat`](./bitmapformat.md) mask does not include [`alphaNonpremultiplied`](./format/alphanonpremultiplied.md), if a coverage plane exists, the bitmap’s color components are premultiplied with it. In this case, if you modify the contents of the bitmap, you are responsible for premultiplying the data.
 

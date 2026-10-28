@@ -19,7 +19,7 @@ class NSTabViewItem
 @interface NSTabViewItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSTabViewItem`](./nstabviewitem.md) is a convenient way for presenting information in multiple pages. A tab view is usually distinguished by a row of tabs that give the visual appearance of folder tabs. When the user clicks a tab, the tab view displays a view page provided by your application. A tab view keeps a zero-based array of tab view items, one for each tab in the view.
 

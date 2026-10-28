@@ -21,7 +21,7 @@ typedef struct LSApplicationParameters {
 } LSApplicationParameters;
 ```
 
-#### Overview
+## Overview
 
 This structure is passed as a parameter to [`LSOpenApplication(_:_:)`](./api-1447930-lsopenapplication.md), [`LSOpenItemsWithRole(_:_:_:_:_:_:_:)`](./api-1449783-lsopenitemswithrole.md), and [`LSOpenURLsWithRole(_:_:_:_:_:_:)`](./api-1448184-lsopenurlswithrole.md).
 

@@ -25,11 +25,11 @@ func record(forDuration duration: TimeInterval) -> Bool
 - (BOOL) recordForDuration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The recorder stops recording when it reaches the indicated duration.
 

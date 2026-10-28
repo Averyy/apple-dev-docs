@@ -24,7 +24,7 @@ var objects: Set<HKSample> { get }
 @property (copy, readonly) NSSet<__kindof HKSample *> * objects;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the quantity and category samples that are grouped into this correlation. Blood pressure correlations always include two quantity samples that represent the systolic and diastolic values. In contrast, food correlations can contain a wide range of dietary information about the food, including information about the fat, protein, carbohydrates, energy, and vitamins consumed.
 

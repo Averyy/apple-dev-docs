@@ -20,11 +20,11 @@ nonisolated
 func imagePlaygroundOptions(_ options: ImagePlaygroundOptions = ImagePlaygroundOptions()) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 An image playground sheet that generates images using the specified `options`.
 
-#### Discussion
+## Discussion
 
 If you don’t provide any custom options, the sheet applies the default options to image generation.
 

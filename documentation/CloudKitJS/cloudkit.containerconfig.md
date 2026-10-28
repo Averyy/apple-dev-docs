@@ -21,7 +21,7 @@ dictionary CloudKit.ContainerConfig {
 };
 ```
 
-#### Overview
+## Overview
 
 This table describes `apiTokenAuth` properties.
 

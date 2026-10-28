@@ -23,7 +23,7 @@ weak var previewLayer: CALayer? { get }
 @property (nonatomic, weak, readonly, nullable) CALayer * previewLayer;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the `CALayer` instance that you provided when instantiating the configurator. You may specify either an [`AVCaptureVideoPreviewLayer`](../avcapturevideopreviewlayer.md) or another `CALayer` instance that displays a camera’s video preview. [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md)holds a weak reference to the layer. If the layer is released, this property returns `nil`.
 

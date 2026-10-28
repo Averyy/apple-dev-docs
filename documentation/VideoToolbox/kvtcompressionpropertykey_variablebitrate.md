@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_VariableBitRate: CFString
 extern CFStringRef const kVTCompressionPropertyKey_VariableBitRate;
 ```
 
-#### Discussion
+## Discussion
 
 Requires that the encoder use a variable bitrate (VBR) rate control algorithm and specifies the desired variable bitrate in bits per second.
 

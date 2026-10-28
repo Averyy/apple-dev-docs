@@ -24,7 +24,7 @@ var members: [MTLStructMember] { get }
 @property (readonly) NSArray<MTLStructMember *> * members;
 ```
 
-#### Discussion
+## Discussion
 
 Each array element in [`members`](./members.md) is an [`MTLStructMember`](../mtlstructmember.md) instance that corresponds to one of the fields in the struct.
 

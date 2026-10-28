@@ -21,11 +21,11 @@ Computes the mean absolute percentage error between predicted and ground truth v
 func meanAbsolutePercentageError<T>(_ annotatedPredictions: [AnnotatedPrediction<T, T>]) -> T where T : FloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The mean absolute percentage error as a decimal value.
 
-#### Discussion
+## Discussion
 
 If an empty `AnnotatedPrediction` is supplied, the result will be NaN.
 

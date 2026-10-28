@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two arguments match by value equality
 func ~= <T>(a: T, b: T) -> Bool where T : Equatable
 ```
 
-#### Discussion
+## Discussion
 
 The pattern-matching operator (`~=`) is used internally in `case` statements for pattern matching. When you match against an `Equatable` value in a `case` statement, this operator is called behind the scenes.
 

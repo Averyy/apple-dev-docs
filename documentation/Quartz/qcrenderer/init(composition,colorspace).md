@@ -21,11 +21,11 @@ init!(composition: QCComposition!, colorSpace: CGColorSpace!)
 - (id) initWithComposition:(QCComposition *) composition colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `QCRenderer` object or `nil` if initialization is not successful.
 
-#### Discussion
+## Discussion
 
 Note that [`snapshotImage()`](./snapshotimage%28%29.md) and [`createSnapshotImage(ofType:)`](./createsnapshotimage%28oftype%29.md) always returns `nil` on such `QCRenderer` instances.
 

@@ -24,7 +24,7 @@ struct Iterator
 
 Available when `Base` conforms to `Sequence`.
 
-#### Overview
+## Overview
 
 This is the associated iterator for the `LazyDropWhileSequence`, `LazyDropWhileCollection`, and `LazyDropWhileBidirectionalCollection` types.
 

@@ -24,7 +24,7 @@ func setScore(on leaderboard: GKLeaderboard, to score: Int)
 - (void) setScoreOnLeaderboard:(GKLeaderboard *) leaderboard toScore:(NSInteger) score;
 ```
 
-#### Discussion
+## Discussion
 
 The framewowrk submits the score to the leaderboard when the activity ends.
 

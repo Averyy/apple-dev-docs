@@ -15,11 +15,11 @@ void NCMDrawMatchedPicture (
 );
 ```
 
-#### Return Value
+## Return Value
 
 This function does not return an error value. Instead, after calling `NCMDrawMatchedPicture` you call the `QDError` routine to determine if an error has occurred. 
 
-#### Overview
+## Overview
 
 The `NCMDrawMatchedPicture` function operates in the context of the current color graphics port. This function sets up and takes down a color-matching session. It automatically matches all colors in a picture to the destination profile for a destination device as the picture is drawn. It uses the ColorSync system profile as the initial source profile and any embedded profiles as they are encountered thereafter. (Because color-matching picture comments embedded in the picture to be matched are recognized, embedded profiles are used.)
 
@@ -29,7 +29,7 @@ The picture is drawn with matched colors to all screen graphics devices. If the 
 
 If the current port is not a color graphics port, then calling this function is equivalent to calling `DrawPicture`, in which case no color matching occurs. 
 
-##### Version-Notes
+### Version-Notes
 
 The parameter description for `dst` describes changes in how this function is used starting with ColorSync version 2.5.
 

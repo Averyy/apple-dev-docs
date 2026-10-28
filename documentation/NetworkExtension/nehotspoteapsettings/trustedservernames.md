@@ -22,7 +22,7 @@ var trustedServerNames: [String] { get set }
 @property (copy) NSArray<NSString *> * trustedServerNames;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t configure trusted EAP server certificates using the [`setTrustedServerCertificates(_:)`](./settrustedservercertificates%28_%29.md) method, then you use this property to allow the EAP peer to match the Common Name in the server’s certificate with the strings configured in this property.
 

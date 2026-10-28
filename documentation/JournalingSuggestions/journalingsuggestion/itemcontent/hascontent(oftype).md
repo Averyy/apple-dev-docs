@@ -15,11 +15,11 @@ Checks if the suggestion contains information for the given type.
 func hasContent<Content>(ofType content: Content.Type) -> Bool where Content : JournalingSuggestionAsset
 ```
 
-#### Return Value
+## Return Value
 
 `true`, if the suggestion contains information for the given type; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](../../journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
 

@@ -27,7 +27,7 @@ extern NSNotificationName const UIScreenModeDidChangeNotification;
 
 - [Processing queued notifications](../processing-queued-notifications.md)
 
-#### Discussion
+## Discussion
 
 Clients can use this notification to detect changes in the screen resolution.
 

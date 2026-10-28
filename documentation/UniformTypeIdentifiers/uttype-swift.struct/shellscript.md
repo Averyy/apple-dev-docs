@@ -21,7 +21,7 @@ A base type that represents a shell script.
 static var shellScript: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.shell-script`.
 

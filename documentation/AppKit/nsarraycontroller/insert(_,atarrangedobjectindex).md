@@ -19,7 +19,7 @@ func insert(_ object: Any, atArrangedObjectIndex index: Int)
 - (void) insertObject:(id) object atArrangedObjectIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to provide customized arranged objects support. An error is returned if the given index is outside of the [`arrangedObjects`](./arrangedobjects.md) range, or if the given object would not appear in the arrangedObjects. Set the [`clearsFilterPredicateOnInsertion`](./clearsfilterpredicateoninsertion.md) to [`true`](../../Swift/true.md) to allow insertion.
 

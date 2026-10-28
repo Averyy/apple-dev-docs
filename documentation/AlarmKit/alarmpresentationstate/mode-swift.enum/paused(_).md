@@ -17,7 +17,7 @@ A mode indicating the alarm isn’t active.
 case paused(AlarmPresentationState.Mode.Paused)
 ```
 
-#### Discussion
+## Discussion
 
 An alarm can only be in one of these states at a time.
 

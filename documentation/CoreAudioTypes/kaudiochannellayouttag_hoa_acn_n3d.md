@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_HOA_ACN_N3D: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_HOA_ACN_N3D
 ```
 
-#### Discussion
+## Discussion
 
 This tag needs to be `ORed` with the number of HOA components, not the HOA order.
 

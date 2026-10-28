@@ -24,7 +24,7 @@ case ready
 
 - [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
-#### Discussion
+## Discussion
 
 The analyzer’s data is up to date.
 

@@ -25,7 +25,7 @@ func CGPDFStreamCopyData(_ stream: CGPDFStreamRef, _ format: UnsafeMutablePointe
 extern CFDataRefCGPDFStreamCopyData(CGPDFStreamRef stream, CGPDFDataFormat *format);
 ```
 
-#### Return Value
+## Return Value
 
 A CFData object that contains a copy of the stream data. You are responsible for releasing this object.
 

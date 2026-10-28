@@ -14,7 +14,7 @@
 #define kFFEffectType_Damper_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a damper effect type
 

@@ -19,7 +19,7 @@ Deletes all app entities of the specified type from the current index.
 func deleteAppEntities<Entity>(ofType entityType: Entity.Type) async throws where Entity : IndexedEntity
 ```
 
-#### Discussion
+## Discussion
 
 This method removes all entities of the specified type from the app’s indexes. You might call this method as a precursor to indexing a new set of entity objects.
 

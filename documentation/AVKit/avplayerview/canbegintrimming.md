@@ -23,7 +23,7 @@ var canBeginTrimming: Bool { get }
 
 - [Implementing trimming in a macOS player](../implementing-trimming-in-a-macos-player.md)
 
-#### Discussion
+## Discussion
 
 Before calling [`beginTrimming(completionHandler:)`](./begintrimming%28completionhandler%29.md), check the value of this property to determine whether the player view and current media support trimming. This property value is `false` if the current controls style doesn’t support trimming, the media is content protected, or when playing HTTP Live Streaming media.
 

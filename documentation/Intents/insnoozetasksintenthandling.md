@@ -25,7 +25,7 @@ protocol INSnoozeTasksIntentHandling : NSObjectProtocol
 @protocol INSnoozeTasksIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSnoozeTasksIntentHandling`](./insnoozetasksintenthandling.md) protocol to resolve, confirm, and handle requests to snooze tasks in a task list. Adopt this protocol in an object of your Intents extension capable of handling the request directly or forwarding the request to your app or task management service.
 

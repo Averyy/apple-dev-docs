@@ -16,7 +16,7 @@ Effects that the system can apply to passthrough video.
 struct SurroundingsEffect
 ```
 
-#### Overview
+## Overview
 
 Use one of these values with the [`preferredSurroundingsEffect(_:)`](./view/preferredsurroundingseffect%28_%29.md) view modifier to indicate what effect to apply to passthrough video when the modified view is displayed.
 

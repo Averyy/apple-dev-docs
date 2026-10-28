@@ -20,7 +20,7 @@ Another app started a workout session.
 static var errorAnotherWorkoutSessionStarted: HKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs whenever a second workout session is started. Apple Watch only runs one workout session at a time. If the user begins a second workout session in a different app, the original session receives this error message and then ends. The second session then starts.
 

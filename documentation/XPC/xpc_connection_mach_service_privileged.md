@@ -25,7 +25,7 @@ var XPC_CONNECTION_MACH_SERVICE_PRIVILEGED: Int32 { get }
 #define XPC_CONNECTION_MACH_SERVICE_PRIVILEGED
 ```
 
-#### Discussion
+## Discussion
 
 Pass this to [`xpc_connection_create_mach_service(_:_:_:)`](./xpc_connection_create_mach_service%28_,_,_%29.md). This flag indicates that the job advertising the service name in its `launchd.plist` needs to be in the privileged Mach bootstrap. Do this by placing your `launchd.plist` in `/Library/LaunchDaemons`.
 

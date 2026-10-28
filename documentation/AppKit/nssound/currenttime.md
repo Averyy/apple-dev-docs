@@ -19,7 +19,7 @@ var currentTime: TimeInterval { get set }
 @property NSTimeInterval currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 Sounds start with `currentTime == 0` and end with `currentTime == ([<sound> duration] - 1)`.
 

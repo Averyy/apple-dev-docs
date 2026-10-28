@@ -29,7 +29,7 @@ var allowsCloudEncryption: Bool { get set }
 
 - [Configuring Attributes](../configuring-attributes.md)
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to store the attribute’s value in an encrypted form in iCloud. Only use this property with new attributes. Core Data doesn’t support encrypting attributes that already exist in your CloudKit schema, or attributes that represent relationships between entities.
 

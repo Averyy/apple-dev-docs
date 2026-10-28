@@ -24,11 +24,11 @@ convenience init(componentNoises noises: [GKNoise], selectionNoise: GKNoise)
 + (instancetype) noiseWithComponentNoises:(NSArray<GKNoise *> *) noises selectionNoise:(GKNoise *) selectionNoise;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise object.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`init(componentNoises:selectionNoise:componentBoundaries:boundaryBlendDistances:)`](./init%28componentnoises,selectionnoise,componentboundaries,boundaryblenddistances%29.md) method, but automatically determines uniformly spaced boundaries based on the number of noise objects in the `noises` array, and using a blend distance of zero for each boundary. Together with these boundaries, the `selectionNoise` parameter determines which of the input noise objects appears in which region of generated noise.
 

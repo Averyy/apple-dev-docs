@@ -21,7 +21,7 @@ var trailingText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * trailingText;
 ```
 
-#### Discussion
+## Discussion
 
 The list item displays any supplementaty text in its trailing region.
 

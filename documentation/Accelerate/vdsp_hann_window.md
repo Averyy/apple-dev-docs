@@ -21,7 +21,7 @@ Creates a single-precision Hann window.
 extern void vDSP_hann_window(float *__C, vDSP_Length __N, int __Flag);
 ```
 
-#### Discussion
+## Discussion
 
 The [`vDSP_hann_window`](./vdsp_hann_window.md) and [`vDSP_hann_windowD`](./vdsp_hann_windowd.md) functions create a Hann window vector using the following operation:
 

@@ -15,7 +15,7 @@ The structure for the SuperSpeed USB device capability.
 typedef struct IOUSBDeviceCapabilitySuperSpeedUSB IOUSBDeviceCapabilitySuperSpeedUSB;
 ```
 
-#### Discussion
+## Discussion
 
 See USB 3.2, 9.6.2.2 for more information.
 

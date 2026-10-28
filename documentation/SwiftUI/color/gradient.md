@@ -21,7 +21,7 @@ Returns the standard gradient for the color `self`.
 var gradient: AnyGradient { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, filling a rectangle with a gradient derived from the standard blue color:
 

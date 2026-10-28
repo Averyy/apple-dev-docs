@@ -23,7 +23,7 @@ case plain
 UIBarButtonItemStylePlain
 ```
 
-#### Discussion
+## Discussion
 
 This item style is the default.
 

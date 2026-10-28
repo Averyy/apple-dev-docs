@@ -20,11 +20,11 @@ Converts animation to additive format by subtracting the first frame.
 static func convertToAdditiveUsingFirstSample() -> SampledAnimation<Value>.SkeletalAnimationOperation
 ```
 
-#### Return Value
+## Return Value
 
 A [`SampledAnimation.SkeletalAnimationOperation`](../skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
 
-#### Discussion
+## Discussion
 
 Creates a delta animation that represents the difference between each frame and the animation’s first frame. Useful for creating relative motion from absolute animation.
 

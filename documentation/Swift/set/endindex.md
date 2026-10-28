@@ -23,7 +23,7 @@ var endIndex: Set<Element>.Index { get }
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 If the set is empty, `endIndex` is equal to `startIndex`.
 

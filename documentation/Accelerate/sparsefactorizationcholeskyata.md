@@ -25,7 +25,7 @@ var SparseFactorizationCholeskyAtA: SparseFactorization_t { get }
 SparseFactorizationCholeskyAtA
 ```
 
-#### Discussion
+## Discussion
 
 [`SparseFactorizationCholeskyAtA`](./sparsefactorizationcholeskyata.md) provides an equivalent to *AᵀA = RᵀR.*
 

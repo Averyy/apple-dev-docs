@@ -17,7 +17,7 @@ Sent when the user clicks a cell.
 - (void) textView:(NSTextView *) textView clickedOnCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) cellFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This message is only sent if textView:clickedOnCell:inRect:atIndex: is not implemented. Implement this method in order to track the mouse after a mouse click on a cell.
 

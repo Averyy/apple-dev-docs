@@ -31,7 +31,7 @@ optional func paymentQueue(_ queue: SKPaymentQueue, removedTransactions transact
 
 - [Processing a transaction](../processing-a-transaction.md)
 
-#### Discussion
+## Discussion
 
 Your application does not typically need to implement this method but might implement it to update its own user interface to reflect that a transaction has been completed.
 

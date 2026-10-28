@@ -3,7 +3,7 @@
 **Framework**: SpriteKit  
 **Role**: Article
 
-#### Overview
+## Overview
 
 The [`pausesIncomingScene`](./sktransition/pausesincomingscene.md) and [`pausesOutgoingScene`](./sktransition/pausesoutgoingscene.md) properties on the transition object define which animations are played during the transition. By default, both scenes are paused during the transition. However, you might want to enable animation on either scene during the transition.
 

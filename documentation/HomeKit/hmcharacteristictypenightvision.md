@@ -24,7 +24,7 @@ let HMCharacteristicTypeNightVision: String
 extern NSString * const HMCharacteristicTypeNightVision;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean. Set the value to `true` to enable night vision. Set it to `false` to disable night vision.
 

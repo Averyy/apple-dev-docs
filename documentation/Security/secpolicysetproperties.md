@@ -15,7 +15,7 @@ Sets properties for a policy.
 OSStatus SecPolicySetProperties(SecPolicyRef policyRef, CFDictionaryRef properties);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

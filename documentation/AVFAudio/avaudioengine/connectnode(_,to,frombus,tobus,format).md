@@ -23,7 +23,7 @@ func connectNode(_ node1: AVAudioNode, to node2: AVAudioNode, fromBus bus1: AVAu
 - (BOOL) connect:(AVAudioNode *) node1 to:(AVAudioNode *) node2 fromBus:(AVAudioNodeBus) bus1 toBus:(AVAudioNodeBus) bus2 format:(AVAudioFormat *) format error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Establish a connection between two nodes.
 

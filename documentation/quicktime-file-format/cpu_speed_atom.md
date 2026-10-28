@@ -6,7 +6,7 @@
 
 A CPU speed atom specifies the minimum computing power needed to display a movie.
 
-#### Overview
+## Overview
 
 A CPU speed atom specifies the minimum computing power needed to display a movie. QuickTime performs an internal test to determine the speed of the user’s computer.
 

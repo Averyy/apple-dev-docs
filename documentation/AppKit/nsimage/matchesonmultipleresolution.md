@@ -19,7 +19,7 @@ var matchesOnMultipleResolution: Bool { get set }
 @property BOOL matchesOnMultipleResolution;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`false`](../../Swift/false.md), only image representations whose resolution is exactly the same as the device resolution are matches. If the property is set to [`true`](../../Swift/true.md) and multiple image representations fit this criteria, the one whose resolution is closest to the device resolution is chosen.
 

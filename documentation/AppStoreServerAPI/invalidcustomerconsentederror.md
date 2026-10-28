@@ -19,7 +19,7 @@ object InvalidCustomerConsentedError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 If the `customerConsented` field in [`ConsumptionRequest`](./consumptionrequest.md) or [`ConsumptionRequestV1`](./consumptionrequestv1.md) is any value other than `true`, the App Store server rejects the request. For more information, see [`customerConsented`](./customerconsented.md).
 

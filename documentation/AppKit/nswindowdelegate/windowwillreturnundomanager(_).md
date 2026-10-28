@@ -20,11 +20,11 @@ optional func windowWillReturnUndoManager(_ window: NSWindow) -> UndoManager?
 - (NSUndoManager *) windowWillReturnUndoManager:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 The appropriate undo manager for the specified window.
 
-#### Discussion
+## Discussion
 
 If this method is not implemented by the delegate, the window creates an[`UndoManager`](../../Foundation/undomanager.md) for `window`. Further, after a window creates its own undo manager, this method is never again called on the delegate.
 

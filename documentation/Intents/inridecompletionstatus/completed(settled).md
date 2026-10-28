@@ -23,11 +23,11 @@ class func completed(settled settledPaymentAmount: INCurrencyAmount) -> Self
 + (instancetype) completedWithSettledPaymentAmount:(INCurrencyAmount *) settledPaymentAmount;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INRideCompletionStatus`](../inridecompletionstatus.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when the ride completed successfully and you want to include the final cost of the ride in your response. This method sets the [`isCompleted`](./iscompleted.md) property of the returned object to [`true`](../../Swift/true.md), and it sets the [`isCanceled`](./iscanceled.md), [`isMissedPickup`](./ismissedpickup.md), and [`isOutstanding`](./isoutstanding.md) properties to [`false`](../../Swift/false.md). It also sets the [`paymentAmount`](./paymentamount.md) property to the value in the `settledPaymentAmount` parameter.
 

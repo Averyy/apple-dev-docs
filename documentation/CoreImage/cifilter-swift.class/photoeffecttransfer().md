@@ -24,11 +24,11 @@ class func photoEffectTransfer() -> any CIFilter & CIPhotoEffect
 + (CIFilter<CIPhotoEffect> *) photoEffectTransferFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that imitate vintage photography film and emphasize warm colors.
 

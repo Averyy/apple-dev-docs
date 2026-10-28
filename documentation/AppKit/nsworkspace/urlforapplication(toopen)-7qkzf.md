@@ -19,11 +19,11 @@ func urlForApplication(toOpen url: URL) -> URL?
 - (NSURL *) URLForApplicationToOpenURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the default app that would open the specified `url`. Returns `nil` if no app can open the URL, or if the file URL does not exist.
 
-#### Discussion
+## Discussion
 
 This method is the programmatic equivalent of double-clicking a document in the Finder.
 

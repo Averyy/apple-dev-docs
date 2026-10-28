@@ -21,7 +21,7 @@ var readyForDisplay: Bool { get }
 @property (nonatomic, readonly) BOOL readyForDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). This property returns [`true`](../../Swift/true.md) if the first video frame is ready to be displayed and returns [`false`](../../Swift/false.md) if there are no video tracks associated. When the value of this property changes to [`true`](../../Swift/true.md), a [`MPMoviePlayerReadyForDisplayDidChangeNotification`](../mpmovieplayerreadyfordisplaydidchangenotification.md) is sent.
 

@@ -23,7 +23,7 @@ protocol GKSavedGameListener : NSObjectProtocol
 @protocol GKSavedGameListener <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement the methods in the this protocol to manage conflicts or track changes when saving game data.
 

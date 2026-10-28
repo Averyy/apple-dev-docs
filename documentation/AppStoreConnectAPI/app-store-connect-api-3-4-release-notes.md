@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 3.4 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - You can now use the [Analytics](./analytics.md) reports API to download and analyze your app’s usage, and performance, and find opportunities for improvement. To learn more about interpreting the data using the glossary of report fields and definitions, see [Analytics Reports](../analytics-reports/analytics-reports.md).
 - Added `FIRST_ANNUAL` report type to [`Download sales and trends reports`](./get-v1-salesreports.md).

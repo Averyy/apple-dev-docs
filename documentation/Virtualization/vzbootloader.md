@@ -19,7 +19,7 @@ class VZBootLoader
 @interface VZBootLoader : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`VZBootLoader`](./vzbootloader.md) abstract class defines the common behaviors for booting a guest operating system into a VM. Don’t create instances of this class directly. Instead, instantiate the subclass that corresponds to the type of operating system you plan to load. For example, to create a boot loader object for a Linux kernel, create a [`VZLinuxBootLoader`](./vzlinuxbootloader.md) object; to create a boot loader object for installation using an ISO image create a [`VZEFIBootLoader`](./vzefibootloader.md). For a macOS system create [`VZMacOSBootLoader`](./vzmacosbootloader.md).
 

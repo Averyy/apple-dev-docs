@@ -21,7 +21,7 @@ Information passed to a timeline view’s content callback.
 struct Context
 ```
 
-#### Overview
+## Overview
 
 The context includes both the [`date`](./context/date.md) from the schedule that triggered the callback, and a [`cadence`](./context/cadence-swift.property.md) that you can use to customize the appearance of your view. For example, you might choose to display the second hand of an analog clock only when the cadence is [`TimelineView.Context.Cadence.seconds`](./context/cadence-swift.enum/seconds.md) or faster.
 

@@ -23,7 +23,7 @@ func removeAllContentRuleLists()
 - (void) removeAllContentRuleLists;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the rule lists only from the user content controller object. You can still access rule lists from the [`WKContentRuleListStore`](../wkcontentruleliststore.md) objects you used to create them.
 

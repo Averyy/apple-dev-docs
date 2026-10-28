@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 @property (getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the user can select and edit text. If [`false`](../../Swift/false.md), the user can’t edit text, and the ability to select the text field’s content is dependent on the value of [`isSelectable`](./isselectable.md).
 

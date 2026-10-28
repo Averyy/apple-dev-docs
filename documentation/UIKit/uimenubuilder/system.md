@@ -24,7 +24,7 @@ var system: UIMenuSystem { get }
 @property (nonatomic, readonly) UIMenuSystem * system;
 ```
 
-#### Discussion
+## Discussion
 
 Always check the [`system`](./system.md) property to determine which menu system the builder is modifying before you add and remove menus. For example, when you want to modify the main menu bar, check [`system`](./system.md) for [`main`](../uimenusystem/main.md).
 

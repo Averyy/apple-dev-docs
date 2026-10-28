@@ -5,7 +5,7 @@
 
 Specifies where to position a non-360 clip in a 360 project’s sphere.
 
-#### Overview
+## Overview
 
 Attributes of `adjust-360-transform` element:
 

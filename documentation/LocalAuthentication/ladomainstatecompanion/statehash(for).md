@@ -22,7 +22,7 @@ func stateHash(for companionType: LACompanionType) -> Data?
 - (NSData *) stateHashForCompanionType:(LACompanionType) companionType;
 ```
 
-#### Discussion
+## Discussion
 
 If database of paired devices of the given type was modified state hash data will change. Nature of such database changes cannot be determined but comparing data of state hash after different policy evaluation will reveal the fact database was changed between calls.
 

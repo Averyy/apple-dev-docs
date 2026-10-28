@@ -24,11 +24,11 @@ func MTKMetalVertexDescriptorFromModelIO(_ modelIODescriptor: MDLVertexDescripto
 extern MTLVertexDescriptor *MTKMetalVertexDescriptorFromModelIO(MDLVertexDescriptor *modelIODescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A Metal vertex descriptor object.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to the [`MTKMetalVertexDescriptorFromModelIOWithError`](./mtkmetalvertexdescriptorfrommodeliowitherror.md) function, but does not report errors.
 

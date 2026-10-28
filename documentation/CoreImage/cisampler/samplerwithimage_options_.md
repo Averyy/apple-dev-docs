@@ -20,7 +20,7 @@ Creates and returns a sampler that references an image using options specified i
 + (instancetype) samplerWithImage:(CIImage *) im options:(NSDictionary *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 A sampler that references the image specified by the `im` argument and uses the options specified in the dictionary.
 

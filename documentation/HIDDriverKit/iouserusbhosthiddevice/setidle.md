@@ -16,11 +16,11 @@ Sets the device’s idle time.
 virtual kern_return_t setIdle(uint16_t idleTimeMs);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The idle rate determines how often a device resends data that hasn’t changed since the last report. Use this method to limit the reporting frequency of an interrupt `IN` endpoint.
 

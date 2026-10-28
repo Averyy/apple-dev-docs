@@ -25,7 +25,7 @@ var centerOfMassOffset: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 centerOfMassOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The results of physics interactions with a body depend on its center of mass. For example, a collision close to or in line with the center of mass tends to move the whole body (that is, it adds linear velocity), but a collision not aligned with the center of mass tends to cause the body to rotate or topple (that is, it adds angular velocity).
 

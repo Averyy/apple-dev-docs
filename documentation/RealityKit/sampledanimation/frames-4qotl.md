@@ -22,7 +22,7 @@ var frames: [Transform] { get set }
 
 Available when `Value` is `Transform`.
 
-#### Discussion
+## Discussion
 
 This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of tranforms.
 

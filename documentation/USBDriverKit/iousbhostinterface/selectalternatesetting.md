@@ -15,11 +15,11 @@ Selects an alternative setting for this interface.
 virtual kern_return_t SelectAlternateSetting(uint8_t bAlternateSetting);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to select an alternative setting for the interface. The system aborts all pending I/O on the interface’s pipes, and closes any open pipes. The system selects the new alternative setting using the `SET_INTERFACE` control request (USB 2.0, section 9.4.10).
 

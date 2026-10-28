@@ -21,7 +21,7 @@ A Core Graphics representation of the color, if available.
 var cgColor: CGColor? { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can get a [`CGColor`](../../CoreGraphics/cgcolor.md) instance from a constant SwiftUI color. This includes colors you create from a Core Graphics color, from RGB or HSB components, or from constant UIKit and AppKit colors.
 

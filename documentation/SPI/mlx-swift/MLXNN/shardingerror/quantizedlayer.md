@@ -17,7 +17,7 @@ A [`QuantizedLinear`](../quantizedlinear.md) was given to a float sharded layer.
 case quantizedLayer
 ```
 
-#### Discussion
+## Discussion
 
 [`shardLinear(_:sharding:segments:group:)`](../shardlinear%28_,sharding,segments,group%29.md) returns the quantized flavor.
 

@@ -19,7 +19,7 @@ var tagNames: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * tagNames;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of [`showsTagField`](./showstagfield.md) is [`true`](../../Swift/true.md), use this property to provide an array of strings that represent the initial tag names to display in the panel. If you set the property to `nil` or an empty array, the panel displays no initial tag names.
 

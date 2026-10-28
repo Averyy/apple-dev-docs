@@ -17,7 +17,7 @@ GPT-OSS full Harmony response protocol.
 case gptOSS
 ```
 
-#### Discussion
+## Discussion
 
 Not a tool-call JSON dialect: selects the Harmony frame parser + router (channels, recipients, terminators). Tool calls appear only as `commentary to=functions.<name>` frames within that protocol. Example: `<|channel|>commentary to=functions.get_weather<|message|>{"location": "Tokyo"}<|call|>`
 

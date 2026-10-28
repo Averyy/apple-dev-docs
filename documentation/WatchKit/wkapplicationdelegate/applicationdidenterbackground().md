@@ -19,7 +19,7 @@ optional func applicationDidEnterBackground()
 - (void) applicationDidEnterBackground;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to release shared resources, invalidate timers, and store enough app state information to restore your app to its current state if it’s purged from memory. You have only a few seconds to complete these actions and return.
 

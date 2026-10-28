@@ -19,7 +19,7 @@ A collection of items and subcollections for use in import and export.
 struct ASImportableCollection
 ```
 
-#### Overview
+## Overview
 
 A collection represents a group of items such as a vault or folder.
 

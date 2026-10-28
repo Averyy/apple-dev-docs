@@ -23,7 +23,7 @@ var stableID: String? { get }
 @property (readonly, nullable) NSString * stableID;
 ```
 
-#### Discussion
+## Discussion
 
 Provides ID corresponding to the rendition. This is equivalent to the STABLE-RENDITION-ID in the HLS playlist. If not available, value is nil.
 

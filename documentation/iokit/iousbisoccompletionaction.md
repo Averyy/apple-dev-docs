@@ -14,7 +14,7 @@
 typedef void (*IOUSBIsocCompletionAction)(void *target, void *parameter, IOReturn status, IOUSBIsocFrame *pFrames);
 ```
 
-#### Discussion
+## Discussion
 
 Function called when Isochronous USB I/O completes.
 

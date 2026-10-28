@@ -25,7 +25,7 @@ func willTurnIntoFault()
 - (void) willTurnIntoFault;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the companion of the [`didTurnIntoFault()`](./didturnintofault%28%29.md) method. You can use it to (re)set state which requires access to property values (for example, observers across key paths). The default implementation does nothing.
 

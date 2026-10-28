@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_MMAP: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_MMAP
 ```
 
-#### Discussion
+## Discussion
 
 This identifier
 

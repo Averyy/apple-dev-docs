@@ -25,7 +25,7 @@ init(tag: TKTLVTag, records: [TKTLVRecord])
 - (instancetype) initWithTag:(TKTLVTag) tag records:(NSArray<TKTLVRecord *> *) records;
 ```
 
-#### Return Value
+## Return Value
 
 A new TLV record containing the specified tag field and subrecords.
 

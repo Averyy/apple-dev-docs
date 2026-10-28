@@ -19,7 +19,7 @@ var allowsVibrancy: Bool { get }
 @property (readonly) BOOL allowsVibrancy;
 ```
 
-#### Discussion
+## Discussion
 
 AppKit checks this property when the view is incorporated into a view hierarchy that uses vibrancy. If the property is [`true`](../../Swift/true.md), the view takes appropriate measures to ensure its content is vibrant on top of any underlying material. The default value of this property is [`false`](../../Swift/false.md). However, some of AppKit’s view subclasses change the value of this property based on the artwork they draw.
 

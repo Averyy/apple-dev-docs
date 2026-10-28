@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether the vocabulary contains the given str
 func contains(_ text: String) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the string was found in the vocabulary; otherwise, false.
 

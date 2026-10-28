@@ -23,7 +23,7 @@ init(layoutDirection: UITraitEnvironmentLayoutDirection)
 + (UITraitCollection *) traitCollectionWithLayoutDirection:(UITraitEnvironmentLayoutDirection) layoutDirection;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only the layout direction trait.
 

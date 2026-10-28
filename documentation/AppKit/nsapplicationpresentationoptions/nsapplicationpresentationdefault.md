@@ -15,7 +15,7 @@ This is the default presentation mode.
 NSApplicationPresentationDefault
 ```
 
-#### Discussion
+## Discussion
 
 In the default presentation mode, the dock icon and menu bar are displayed, process switching, force quit, session termination, and the “Hide” menu option are all enabled, and the menu bar transparency is normal.
 

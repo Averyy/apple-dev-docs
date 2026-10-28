@@ -25,7 +25,7 @@ func streamingContentKeyRequestData(forApp appIdentifier: Data, contentIdentifie
 - (NSData *) streamingContentKeyRequestDataForApp:(NSData *) appIdentifier contentIdentifier:(NSData *) contentIdentifier options:(NSDictionary<NSString *,id> *) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The key request data that must be transmitted to the key vendor to obtain the content key.
 

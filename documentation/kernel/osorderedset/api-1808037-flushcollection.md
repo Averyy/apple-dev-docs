@@ -11,7 +11,7 @@ Removes and releases all objects within the ordered set.
 virtual void flushCollection();
 ```
 
-#### Overview
+## Overview
 
 The ordered set's capacity (and therefore direct memory consumption) is not reduced by this function.
 

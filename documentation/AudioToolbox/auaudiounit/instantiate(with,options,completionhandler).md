@@ -28,7 +28,7 @@ class func instantiate(with componentDescription: AudioComponentDescription, opt
 + (void) instantiateWithComponentDescription:(AudioComponentDescription) componentDescription options:(AudioComponentInstantiationOptions) options completionHandler:(void (^)(AUAudioUnit *audioUnit, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Certain types of audio units must be instantiated asynchronously, such as version 3 units with a view.
 

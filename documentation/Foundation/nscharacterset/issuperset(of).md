@@ -25,7 +25,7 @@ func isSuperset(of theOtherSet: CharacterSet) -> Bool
 - (BOOL) isSupersetOfSet:(NSCharacterSet *) theOtherSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is a superset of `theOtherSet`, otherwise [`false`](../../Swift/false.md).
 

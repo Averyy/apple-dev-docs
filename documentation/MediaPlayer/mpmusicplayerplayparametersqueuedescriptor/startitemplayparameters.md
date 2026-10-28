@@ -23,7 +23,7 @@ var startItemPlayParameters: MPMusicPlayerPlayParameters? { get set }
 @property (nonatomic, strong, nullable) MPMusicPlayerPlayParameters * startItemPlayParameters;
 ```
 
-#### Discussion
+## Discussion
 
 When this property isn’t set, the value is [`nil`](../../ObjectiveC/nil-227m0.md) and the first item in the queue is the first item to play.
 

@@ -18,11 +18,11 @@ Handles the basic initialization of the dispatch source.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Call [`Create`](./create.md) when you want to create a new interrupt dispatch source.
 

@@ -19,7 +19,7 @@ static let argument: NSBindingName
 extern NSBindingName NSArgumentBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

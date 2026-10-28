@@ -21,7 +21,7 @@ var prefersScrollingExpandsWhenScrolledToEdge: Bool { get set }
 @property (nonatomic) BOOL prefersScrollingExpandsWhenScrolledToEdge;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), which means if the sheet can expand to a larger detent than [`selectedDetentIdentifier`](./selecteddetentidentifier.md), scrolling up in the sheet increases its detent instead of scrolling the sheet’s content. After the sheet reaches its largest detent, scrolling begins.
 

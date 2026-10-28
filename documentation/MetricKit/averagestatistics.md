@@ -22,7 +22,7 @@ struct AverageStatistics<DimensionType> where DimensionType : Dimension
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `AverageStatistics` provides the average value alongside a sample count and standard deviation. When statistical data is unavailable, `count` is `0` and `standardDeviation` is `nil`.
 

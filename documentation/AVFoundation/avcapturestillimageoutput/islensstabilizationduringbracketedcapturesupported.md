@@ -23,7 +23,7 @@ var isLensStabilizationDuringBracketedCaptureSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLensStabilizationDuringBracketedCaptureSupported) BOOL lensStabilizationDuringBracketedCaptureSupported;
 ```
 
-#### Discussion
+## Discussion
 
 You may set the [`isLensStabilizationDuringBracketedCaptureEnabled`](./islensstabilizationduringbracketedcaptureenabled.md) property only if this property’s value is [`true`](../../Swift/true.md). This value may change as the session’s [`sessionPreset`](../avcapturesession/sessionpreset.md) property or the input device’s [`activeFormat`](../avcapturedevice/activeformat.md) property changes.
 

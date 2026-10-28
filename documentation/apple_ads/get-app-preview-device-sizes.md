@@ -15,11 +15,11 @@ Fetches supported app preview device-size mappings.
 
 - [Creative Sets](./creative-sets.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to return a complete list of supported app preview device-size mappings.
 
-##### Payload example: Get app preview device sizes
+### Payload example: Get app preview device sizes
 
 **Request**:
 

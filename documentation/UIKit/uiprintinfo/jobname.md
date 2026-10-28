@@ -22,7 +22,7 @@ var jobName: String { get set }
 @property (nonatomic, copy) NSString * jobName;
 ```
 
-#### Discussion
+## Discussion
 
 The name of the print job appears in the Print Center when the job is printing. An app should set this property to a name appropriate to the content that’s printing. The default job name is the app name.
 

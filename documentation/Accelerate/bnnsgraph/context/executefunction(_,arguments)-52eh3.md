@@ -21,7 +21,7 @@ Synchronously executes the specified function with the provided context.
 func executeFunction(_ function: String? = nil, arguments: inout [BNNSTensor]) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the underlying model contains dynamic shaped inputs or outputs, these must be set prior to calling this routine through a call to either `setDynamicShapes(_:forFunction:)` or `setBatchSize(_:forFunction:)`. Don’t modify the shapes again until this routine has returned.
 

@@ -15,13 +15,13 @@ The paginated response object for an app eligibility query.
 object EligibilityQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The eligibility query endpoint returns `EligibilityQueryResponse` as the paginated response.
 
 To iterate through large result sets, use the `totalCount` and `offset` fields on the embedded `QueryPaginationResult` object.
 
-##### Example
+### Example
 
 ```json
 {

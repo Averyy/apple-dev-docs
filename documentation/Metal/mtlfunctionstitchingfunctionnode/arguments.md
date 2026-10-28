@@ -24,7 +24,7 @@ var arguments: [any MTLFunctionStitchingNode] { get set }
 @property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLFunctionStitchingNode>> * arguments;
 ```
 
-#### Discussion
+## Discussion
 
 Each node’s output data types needs to match the input data type of the matching argument.
 

@@ -22,11 +22,11 @@ func CVMetalBufferCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: CFDi
 extern CVReturn CVMetalBufferCacheCreate(CFAllocatorRef allocator, CFDictionaryRef cacheAttributes, id<MTLDevice>metalDevice, CVMetalBufferCacheRef*cacheOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kCVReturnSuccess on success
 
-#### Discussion
+## Discussion
 
 Creates a new Buffer Cache.
 

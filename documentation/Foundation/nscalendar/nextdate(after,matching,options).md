@@ -25,11 +25,11 @@ func nextDate(after date: Date, matching comps: DateComponents, options: NSCalen
 - (NSDate *) nextDateAfterDate:(NSDate *) date matchingComponents:(NSDateComponents *) comps options:(NSCalendarOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object.
 
-#### Discussion
+## Discussion
 
 To compute a sequence of dates, use the [`enumerateDates(startingAfter:matching:options:using:)`](./enumeratedates%28startingafter,matching,options,using%29.md) method instead of calling this method in a loop with the previous loop iteration’s result.
 

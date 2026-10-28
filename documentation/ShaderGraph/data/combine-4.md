@@ -14,7 +14,7 @@ Combines the channels from four streams into four channels of a single output st
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Combine 4 (color4f)**:
 

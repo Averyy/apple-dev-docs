@@ -19,7 +19,7 @@ func addColumn(with views: [NSView]) -> NSGridColumn
 - (NSGridColumn *) addColumnWithViews:(NSArray<NSView *> *) views;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created grid column.
 

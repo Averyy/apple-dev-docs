@@ -22,7 +22,7 @@ var availableDateRange: DateInterval { get set }
 @property (nonatomic, copy, nonnull) NSDateInterval * availableDateRange;
 ```
 
-#### Discussion
+## Discussion
 
 Set `availableDateRange` to restrict the earliest or latest dates that the calendar view displays. The default date range starts with [`distantPast`](../../Foundation/date/distantpast.md) (Swift) or [`distantPast`](../../Foundation/nsdate/distantpast.md) (Objective-C), and ends with [`distantFuture`](../../Foundation/date/distantfuture.md) (Swift) or [`distantFuture`](../../Foundation/nsdate/distantfuture.md) (Objective-C).
 

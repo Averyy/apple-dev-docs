@@ -21,7 +21,7 @@ Generates a column by multiplying each element in a column type by the correspon
 func * <L, R>(lhs: L, rhs: R) -> Column<L.Element> where L : ColumnProtocol, R : OptionalColumnProtocol, L.Element : Numeric, L.Element == R.WrappedElement
 ```
 
-#### Return Value
+## Return Value
 
 A new column with the same type as the left column.
 

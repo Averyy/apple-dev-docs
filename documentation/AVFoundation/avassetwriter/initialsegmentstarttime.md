@@ -24,7 +24,7 @@ var initialSegmentStartTime: CMTime { get set }
 @property (nonatomic) CMTime initialSegmentStartTime;
 ```
 
-#### Discussion
+## Discussion
 
 This value is relevant only when the [`preferredOutputSegmentInterval`](./preferredoutputsegmentinterval.md) property value is positive numeric, in which case you must set a numeric time.
 

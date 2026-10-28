@@ -17,7 +17,7 @@ Start capturing a metal trace into the given file.
 static func startCapture(url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: There are several requirements for this to be used.
 

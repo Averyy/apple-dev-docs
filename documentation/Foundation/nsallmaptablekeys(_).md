@@ -25,7 +25,7 @@ func NSAllMapTableKeys(_ table: NSMapTable<AnyObject, AnyObject>) -> [Any]
 extern NSArray *NSAllMapTableKeys(NSMapTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 An array object containing all the keys in `table`. This function should be called only when `table` keys are objects, not when they’re any other type of pointer.
 

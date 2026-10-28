@@ -15,7 +15,7 @@ Use the delegate method [`application(_:printFiles:withSettings:showPrintPanels:
 - (void) application:(NSApplication *) sender printFiles:(NSArray<NSString *> *) filenames;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to [`application(_:printFile:)`](../nsapplicationdelegate/application%28_,printfile%29.md) except that the receiver prints multiple files corresponding to the file names in the `filenames` array.
 

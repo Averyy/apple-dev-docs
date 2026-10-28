@@ -17,7 +17,7 @@ A visibility value that makes a promoted Apple In-App Purchase visible on the Ap
 case visible
 ```
 
-#### Discussion
+## Discussion
 
 A promoted Apple In-App Purchase with this visibility setting is visible on the App Store on a user’s device.
 

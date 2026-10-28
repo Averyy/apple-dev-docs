@@ -16,7 +16,7 @@ Sets the allowed menu item titles for the given language identifier.
 - (void) setAllowedMenuItems:(NSSet<NSString *> *) menuItems forLanguageIdentifier:(NSString *) languageIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Titles must match the participant application’s localized menu item strings for the corresponding language. If multiple language identifiers resolve to the same application localization, the system combines their sets of allowed menu items.
 

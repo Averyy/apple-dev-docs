@@ -27,11 +27,11 @@ func CFPropertyListCreateXMLData(_ allocator: CFAllocator!, _ propertyList: CFPr
 extern CFDataRefCFPropertyListCreateXMLData(CFAllocatorRef allocator, CFPropertyListRef propertyList);
 ```
 
-#### Return Value
+## Return Value
 
 A CFData object containing the XML data. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateData(_:_:_:_:_:)`](./cfpropertylistcreatedata%28_,_,_,_,_%29.md) instead.
 

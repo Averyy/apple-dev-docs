@@ -23,7 +23,7 @@ class func log(reductionType: MLCReductionType, epsilon: Float, weights: MLCTens
 + (instancetype) logLossWithReductionType:(MLCReductionType) reductionType epsilon:(float) epsilon weights:(MLCTensor *) weights;
 ```
 
-#### Return Value
+## Return Value
 
 A log loss layer.
 

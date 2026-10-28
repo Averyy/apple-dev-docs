@@ -29,7 +29,7 @@ optional func resolveTitle(for intent: INCreateNoteIntent) async -> INSpeakableS
 - (void) resolveTitleForCreateNote:(INCreateNoteIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the title for a note. Use the intent object to obtain the title, if any, suggested by the user. The title represents the initial text that users see for the note.
 

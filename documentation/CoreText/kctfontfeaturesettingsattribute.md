@@ -25,7 +25,7 @@ let kCTFontFeatureSettingsAttribute: CFString
 extern CFStringRef const kCTFontFeatureSettingsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a [`CFArray`](../CoreFoundation/cfarray.md) object containing font feature-setting dictionaries. A feature-setting dictionary contains a tuple of a [`kCTFontFeatureTypeIdentifierKey`](./kctfontfeaturetypeidentifierkey.md) key-value pair and a [`kCTFontFeatureSelectorIdentifierKey`](./kctfontfeatureselectoridentifierkey.md) key-value pair. Each setting dictionary indicates which setting should be turned on.
 

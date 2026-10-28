@@ -24,7 +24,7 @@ class AVContentProposalViewController
 
 - [Presenting content proposals in tvOS](./presenting-content-proposals-in-tvos.md)
 
-#### Overview
+## Overview
 
 Subclass this class to define the user interface for your content proposal.
 

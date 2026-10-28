@@ -13,7 +13,7 @@
 kIOVideoControlBaseClassIDSelector = 'slct'
 ```
 
-#### Discussion
+## Discussion
 
 The class ID that identifies the selector control class which is a subclass of the base control class. Selector controls manipulate controls that have multiple, but discreet values.
 

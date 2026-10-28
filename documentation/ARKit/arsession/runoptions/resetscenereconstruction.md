@@ -20,7 +20,7 @@ static var resetSceneReconstruction: ARSession.RunOptions { get }
 ARSessionRunOptionResetSceneReconstruction
 ```
 
-#### Discussion
+## Discussion
 
 When you reset scene reconstruction, ARKit removes any existing mesh anchors ([`ARMeshAnchor`](../../armeshanchor.md)) from the session.
 

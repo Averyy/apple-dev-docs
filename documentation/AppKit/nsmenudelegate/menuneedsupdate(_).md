@@ -20,7 +20,7 @@ optional func menuNeedsUpdate(_ menu: NSMenu)
 - (void) menuNeedsUpdate:(NSMenu *) menu;
 ```
 
-#### Discussion
+## Discussion
 
 Using this method, the delegate can change the menu by adding, removing, or modifying menu items. If populating the menu will take a long time, implement [`numberOfItems(in:)`](./numberofitems%28in%29.md) and [`menu(_:update:at:shouldCancel:)`](./menu%28_,update,at,shouldcancel%29.md) instead.
 

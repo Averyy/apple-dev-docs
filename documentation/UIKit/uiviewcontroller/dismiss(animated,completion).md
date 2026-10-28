@@ -23,7 +23,7 @@ func dismiss(animated flag: Bool, completion: (() -> Void)? = nil)
 - (void) dismissViewControllerAnimated:(BOOL) flag completion:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The presenting view controller is responsible for dismissing the view controller it presented. If you call this method on the presented view controller itself, UIKit asks the presenting view controller to handle the dismissal.
 

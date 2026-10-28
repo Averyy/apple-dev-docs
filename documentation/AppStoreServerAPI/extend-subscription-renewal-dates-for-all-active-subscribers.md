@@ -15,7 +15,7 @@ Uses a subscription’s product identifier to extend the renewal date for all of
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to compensate your customers for temporary service outages, canceled events, or interruptions to live streamed events by extending the renewal date of their paid, active subscription. This endpoint acts on all active subscriptions for the product identifier you specify, and is limited to the storefronts you optionally specify.
 

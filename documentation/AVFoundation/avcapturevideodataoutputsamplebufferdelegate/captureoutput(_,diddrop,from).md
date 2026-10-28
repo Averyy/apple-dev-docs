@@ -24,7 +24,7 @@ optional func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMS
 - (void) captureOutput:(AVCaptureOutput *) output didDropSampleBuffer:(CMSampleBufferRef) sampleBuffer fromConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates receive this message whenever a late video frame is dropped. This method is called once for each dropped frame. It is called on the dispatch queue specified by the output’s [`sampleBufferCallbackQueue`](../avcapturevideodataoutput/samplebuffercallbackqueue.md) property.
 

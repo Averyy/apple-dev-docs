@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatUnapplyPose(SPRect3DFloat rect, SPPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s transformed by the inverse of the specified pose.
 

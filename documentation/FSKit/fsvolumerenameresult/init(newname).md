@@ -19,7 +19,7 @@ init?(newName: FSFileName)
 - (instancetype) initWithNewName:(FSFileName *) newName;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

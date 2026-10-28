@@ -17,7 +17,7 @@ struct hv_tlbi_op_t
 typedef enum { ... } hv_tlbi_op_t;
 ```
 
-#### Overview
+## Overview
 
 TLB invalidation operations for hv_vcpu_invalidate_tlb().
 

@@ -15,11 +15,11 @@ Create a reference object configuration.
 extern ar_reference_object_configuration_tar_reference_object_configuration_create();
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_reference_object_configuration_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: Default values are set as follows: - `is_high_frame_rate_tracking_enabled`: `false`
 

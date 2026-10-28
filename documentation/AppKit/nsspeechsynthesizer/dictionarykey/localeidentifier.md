@@ -19,7 +19,7 @@ static let localeIdentifier: NSSpeechSynthesizer.DictionaryKey
 extern NSSpeechDictionaryKey const NSSpeechDictionaryLocaleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 A locale is generally composed of three pieces of ordered information: a language code, a region code, and a variant code. For more information, see [`NSLocale`](../../../Foundation/nslocale.md).
 

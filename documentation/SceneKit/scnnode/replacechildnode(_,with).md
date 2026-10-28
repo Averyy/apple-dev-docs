@@ -25,7 +25,7 @@ func replaceChildNode(_ oldChild: SCNNode, with newChild: SCNNode)
 - (void) replaceChildNode:(SCNNode *) oldChild with:(SCNNode *) newChild;
 ```
 
-#### Discussion
+## Discussion
 
 If both the `oldChild` and `newChild` nodes are children of the node, calling this method swaps their positions in the array. Note that removing a node from the node hierarchy may result in it being deallocated.
 

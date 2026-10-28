@@ -19,7 +19,7 @@ class func webScriptName(forKey name: UnsafePointer<CChar>!) -> String!
 + (NSString *) webScriptNameForKey:(const char *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The name used to represent the attribute in the scripting environment.
 

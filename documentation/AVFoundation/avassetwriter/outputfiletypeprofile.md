@@ -24,7 +24,7 @@ var outputFileTypeProfile: AVFileTypeProfile? { get set }
 @property (nonatomic, copy, nullable) AVFileTypeProfile outputFileTypeProfile;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates that the writer chooses an appropriate default profile for the output file type. If your app requires segment data that’s suitable for streaming, set the value to [`mpeg4AppleHLS`](../avfiletypeprofile/mpeg4applehls.md) or [`mpeg4CMAFCompliant`](../avfiletypeprofile/mpeg4cmafcompliant.md) to output CMAF-compliant [`mp4`](../avfiletype/mp4.md) data.
 

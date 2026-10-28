@@ -24,7 +24,7 @@ class func visionPrescriptionType() -> HKPrescriptionType
 + (HKPrescriptionType *) visionPrescriptionType;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKPrescriptionType`](../hkprescriptiontype.md) concrete subclass. Use a prescription type to request permission to read or write prescriptions from the HealthKit store., and to create samples that store prescription information. In HealthKit, all prescriptions use the same [`HKPrescriptionType`](../hkprescriptiontype.md) instance.
 

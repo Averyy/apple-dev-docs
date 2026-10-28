@@ -11,7 +11,7 @@ Integrate CarPlay in apps related to audio, communication, navigation, parking, 
 - iPadOS 12.0+
 - Mac Catalyst 14.0+
 
-#### Overview
+## Overview
 
 Use the CarPlay framework to create an in-car experience for your app. The framework provides templates for building a version of your app’s interface suitable for presentation on a vehicle’s displays. Add the templates you want to your app and customize them to suit your content. You control the content of the templates, but the framework controls certain aspects of the template interface elements, such as the touch target size, font size, font color, and highlights.
 

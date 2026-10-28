@@ -19,11 +19,11 @@ func hv_vcpu_get_sme_za_reg(_ vcpu: hv_vcpu_t, _ value: UnsafeMutablePointer<UIn
 extern hv_return_t hv_vcpu_get_sme_za_reg(hv_vcpu_t vcpu, uint8_t *value, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 `HV_SUCCESS` on success, an error code otherwise
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You need to call this on the owning thread
 

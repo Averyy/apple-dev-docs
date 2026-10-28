@@ -46,7 +46,7 @@ struct IOI2CRequest {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used to request an I2C transaction consisting of a send (write) to and reply (read) from a device, either of which is optional, to be carried out atomically on an I2C bus.
 

@@ -25,7 +25,7 @@ var particleSystems: [SCNParticleSystem]? { get }
 @property (readonly, nullable) NSArray<SCNParticleSystem *> * particleSystems;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`SCNParticleSystem`](../scnparticlesystem.md) objects directly attached to the node. This array does not include particle systems attached to the node’s child nodes.
 

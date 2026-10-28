@@ -23,7 +23,7 @@ static var tracks: AVAsyncProperty<Root, [AVFragmentedAssetTrack]> { get }
 
 Available when `Root` inherits `AVFragmentedAsset`.
 
-#### Discussion
+## Discussion
 
 Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 

@@ -23,7 +23,7 @@ case abbreviated
 NSPersonNameComponentsFormatterStyleAbbreviated
 ```
 
-#### Discussion
+## Discussion
 
 The maximally abbreviated form of a name. See “[Abbreviated](../../personnamecomponentsformatter.md#Abbreviated)” for details about its specific behavior.
 

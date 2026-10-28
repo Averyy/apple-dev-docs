@@ -29,7 +29,7 @@ extern CFStringRef const kSecClassKey;
 
 - [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The following keychain item attributes form the composite primary key of a cryptographic key item:
 

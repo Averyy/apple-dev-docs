@@ -25,11 +25,11 @@ object WiFi
 
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.wifi.managed` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ Specify `com.apple.wifi.managed` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

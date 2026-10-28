@@ -21,11 +21,11 @@ Returns the localized GMT format representation of a timezone.
 static func localizedGMT(_ width: Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone
 ```
 
-#### Return Value
+## Return Value
 
 A timezone format style appropriate for the locale and specified width.
 
-#### Discussion
+## Discussion
 
 For example, `GMT-7` ([`Date.FormatStyle.Symbol.TimeZone.Width.short`](./width/short.md)) or `GMT-07:00` ([`Date.FormatStyle.Symbol.TimeZone.Width.long`](./width/long.md)).
 

@@ -20,7 +20,7 @@ class NSCollectionLayoutItem
 @interface NSCollectionLayoutItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 An item is a blueprint for how to size, space, and arrange an individual piece of content in your collection view. An item represents a single view that’s rendered onscreen. Generally, an item is a cell, but items can be supplementary views like headers, footers, and other decorations.
 

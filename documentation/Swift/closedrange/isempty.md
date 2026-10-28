@@ -23,7 +23,7 @@ var isEmpty: Bool { get }
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 Because a closed range cannot represent an empty range, this property is always `false`.
 

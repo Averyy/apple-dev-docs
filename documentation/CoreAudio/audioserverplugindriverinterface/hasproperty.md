@@ -19,11 +19,11 @@
 unsigned char (*)(struct AudioServerPlugInDriverInterface **, unsigned int, int, const struct AudioObjectPropertyAddress *) HasProperty;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether or not the object has the given property.
 
-#### Discussion
+## Discussion
 
 Queries an object about whether or not it has the given property.
 

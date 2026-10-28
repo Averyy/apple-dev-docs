@@ -25,7 +25,7 @@ case setErrorAndReturn
 NSDecodingFailurePolicySetErrorAndReturn
 ```
 
-#### Discussion
+## Discussion
 
 On decode failure, the [`NSCoder`](../../nscoder.md) will capture the failure as an [`NSError`](../../nserror.md), and prevent further decodes (by returning `0` / `nil` equivalent as appropriate).
 

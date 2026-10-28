@@ -24,7 +24,7 @@ class INStringResolutionResult
 @interface INStringResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INStringResolutionResult`](./instringresolutionresult.md) object is what you return when resolving parameters containing an [`NSString`](../Foundation/nsstring.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

@@ -21,7 +21,7 @@ The model to base the image analysis request on.
 let modelContainer: CoreMLModelContainer
 ```
 
-#### Discussion
+## Discussion
 
 This object wraps a [Core ML](../../CoreML/CoreML.md) model.
 

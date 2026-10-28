@@ -20,7 +20,7 @@ nonisolated
 struct NavigationControlGroupStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`navigation`](./controlgroupstyle/navigation.md) to construct this style.
 

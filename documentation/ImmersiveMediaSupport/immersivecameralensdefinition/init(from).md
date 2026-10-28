@@ -19,7 +19,7 @@ Creates an `ImmersiveCameraLensDefinition` object from a ILPD data blob, basical
 init(from data: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws an appropriate error when the data is not well formatted of there are unexpected errors in the JSON.
 

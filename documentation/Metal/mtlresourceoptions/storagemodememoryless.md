@@ -24,7 +24,7 @@ static var storageModeMemoryless: MTLResourceOptions { get }
 MTLResourceStorageModeMemoryless
 ```
 
-#### Discussion
+## Discussion
 
 The memoryless storage mode uses tile memory, and is only available on Apple family GPUs. Memoryless resources are temporary targets used in a pass and you can’t access their contents with [`MTLLoadAction.load`](../mtlloadaction/load.md) or [`MTLStoreAction.store`](../mtlstoreaction/store.md).
 

@@ -24,7 +24,7 @@ class NEVPNIKEv2PPKConfiguration
 @interface NEVPNIKEv2PPKConfiguration : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Instances of this class are thread safe. The class conforms to RFC 8784.
 

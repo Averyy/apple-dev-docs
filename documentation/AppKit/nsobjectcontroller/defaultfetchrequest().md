@@ -19,7 +19,7 @@ func defaultFetchRequest() -> NSFetchRequest<any NSFetchRequestResult>
 - (NSFetchRequest *) defaultFetchRequest;
 ```
 
-#### Return Value
+## Return Value
 
 The default NSFetchResult used by the receiver.
 

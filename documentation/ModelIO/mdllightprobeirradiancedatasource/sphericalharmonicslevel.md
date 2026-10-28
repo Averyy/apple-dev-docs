@@ -24,7 +24,7 @@ optional var sphericalHarmonicsLevel: Int { get set }
 @property NSUInteger sphericalHarmonicsLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Each level of spherical harmonics contains more coefficients, and thus affects the layout of the data containing those coefficients. For details, see the [`sphericalHarmonicsCoefficients(atPosition:)`](./sphericalharmonicscoefficients%28atposition%29.md) method.
 

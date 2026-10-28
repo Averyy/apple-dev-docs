@@ -21,7 +21,7 @@ init(frame: CGRect)
 - (instancetype) initWithFrame:(CGRect) frame;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sticker browser view.
 

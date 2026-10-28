@@ -24,7 +24,7 @@ class HMAccessoryCategory
 @interface HMAccessoryCategory : NSObject
 ```
 
-#### Overview
+## Overview
 
 A category represents a class of devices, like light bulbs or outlets. You can use a category to help users identify the types of accessories they’re browsing. For example, when adding a lamp and a fan to a home, users might not be able to distinguish these accessories if you display only the manufacturer name and model number for each accessory. To improve the user experience, you can use the category information associated with each accessory to help the user understand which accessory is the lamp and which is the fan.
 

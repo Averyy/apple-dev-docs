@@ -21,7 +21,7 @@ Determine the behavior automatically based on the surrounding context.
 static let automatic: TabBarMinimizeBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The depends on the platform:
 

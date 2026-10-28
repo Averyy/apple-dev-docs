@@ -25,7 +25,7 @@ var forceInput: (any GCLinearInput)? { get }
 @property (readonly, nullable) id<GCLinearInput> forceInput;
 ```
 
-#### Discussion
+## Discussion
 
 Some buttons feature load cells (also known as button force transducers) capable of measuring applied mechanical force.
 

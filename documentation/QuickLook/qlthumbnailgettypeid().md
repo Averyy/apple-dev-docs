@@ -21,7 +21,7 @@ func QLThumbnailGetTypeID() -> CFTypeID
 extern CFTypeID QLThumbnailGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the thumbnail’s opaque type.
 

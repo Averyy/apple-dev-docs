@@ -19,11 +19,11 @@ func selectionKeys() -> [Any]!
 - (NSArray *) selectionKeys;
 ```
 
-#### Return Value
+## Return Value
 
 The array of `NSNumber` objects.
 
-#### Discussion
+## Discussion
 
 Selection keys  are keys that can be used to select one of the candidates. They are displayed next to the candidate that will be selected when the user types that key.
 

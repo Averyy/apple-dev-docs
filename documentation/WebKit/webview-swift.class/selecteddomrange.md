@@ -19,7 +19,7 @@ var selectedDOMRange: DOMRange! { get }
 @property (nonatomic, strong, readonly) DOMRange * selectedDOMRange;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if nothing is selected.
 

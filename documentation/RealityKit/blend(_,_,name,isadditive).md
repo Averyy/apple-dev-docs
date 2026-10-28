@@ -20,7 +20,7 @@ Combines the animations that result from two blend-tree nodes into a single blen
 func blend(_ x: any BlendTreeNode, _ y: any BlendTreeNode, name: String = "", isAdditive: Bool = false) -> any BlendTreeNode
 ```
 
-#### Return Value
+## Return Value
 
 A blend-tree node that combines the given animations.
 

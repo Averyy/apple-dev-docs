@@ -23,7 +23,7 @@ enum UITextGranularity
 enum UITextGranularity : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Constants of this type are used as parameters in all methods of the `UITextInputTokenizer` protocol.
 

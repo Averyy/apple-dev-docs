@@ -12,7 +12,7 @@ Initializes a new metadata object by copying values from a metadata template.
 - (instancetype) initWithTemplate:(AVInterfaceMetadataTemplate *) metadataTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an immutable `AVInterfaceMetadata` instance from a mutable `AVInterfaceMetadataTemplate`, providing a convenient way to convert configured template data into stable metadata for playback interfaces.
 

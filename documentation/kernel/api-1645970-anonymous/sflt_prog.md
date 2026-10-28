@@ -13,7 +13,7 @@
 SFLT_PROG = 0x02
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this socket filter should be attached only when request by the application using the SO_NKE socket option.
 

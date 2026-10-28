@@ -24,7 +24,7 @@ static let highHeartRateEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHighHeartRateEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The system creates [`highHeartRateEvent`](./highheartrateevent.md) samples whenever Apple Watch produces a high heart rate notification. For more information, see [Heart rate notifications on your Apple Watch](https://support.apple.com/en-us/HT208931).
 

@@ -24,7 +24,7 @@ init?(flags: PHASESpatialPipeline.Flags)
 - (instancetype) initWithFlags:(PHASESpatialPipelineFlags) flags;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` for a `nil` `flags` argument.
 

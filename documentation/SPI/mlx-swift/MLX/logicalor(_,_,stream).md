@@ -17,7 +17,7 @@ Element-wise logical or.
 func logicalOr(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Logical or on two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -32,7 +32,7 @@ let r = (a .< b) .|| ((a + 1) .> b)
 let r2 = logicalOr((a .< b), ((a + 1) .> b))
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [Logical Operators](./logical.md)

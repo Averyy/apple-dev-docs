@@ -21,11 +21,11 @@ Creates and returns a mutable array containing the contents of the file specifie
 + (NSMutableArray<id> *) arrayWithContentsOfFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable array containing the contents of the file specified `aPath`. Returns `nil` if the file can’t be opened or if the contents of the file can’t be parsed into a mutable array.
 
-#### Discussion
+## Discussion
 
 The mutable array representation in the file identified by `aPath` must contain only property list objects (`NSString`, `NSData`, `NSDate`, `NSNumber`, `NSArray`, or `NSDictionary` objects). For more details, see [Property List Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i). The objects contained by this array are immutable even if the array is mutable.
 

@@ -13,11 +13,11 @@ Replace your app’s deprecated OpenGL code with Metal.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [611: Bringing OpenGL Apps to Metal](https://developer.apple.com/videos/play/wwdc2019/611/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the app:
 

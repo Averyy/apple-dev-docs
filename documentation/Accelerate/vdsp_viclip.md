@@ -21,7 +21,7 @@ Calculates the elements of a single-precision vector inverted-clipped to the spe
 extern void vDSP_viclip(const float *__A, vDSP_Stride __IA, const float *__B, const float *__C, float *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Performs the following operation:
 

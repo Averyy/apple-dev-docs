@@ -25,7 +25,7 @@ var variationAxes: CFArray? { get }
 extern CFArrayRefCGFontCopyVariationAxes(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 A variation axis is a range included in a font by the font designer that allows a font to produce different type styles. Each variation axis dictionary contains key-value pairs that specify the variation axis name and the minimum, maximum, and default values for that variation axis.
 

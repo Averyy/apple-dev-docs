@@ -21,7 +21,7 @@ Adds an observer to a center for messages delivered asynchronously with a given 
 func addObserver<Message>(of subject: Message.Subject? = nil, for messageType: Message.Type, using observer: @escaping @Sendable (Message) async -> Void) -> NotificationCenter.ObservationToken where Message : NotificationCenter.AsyncMessage, Message.Subject : AnyObject
 ```
 
-#### Return Value
+## Return Value
 
 A token representing the observation registration with the given notification center.  Retain this token for as long as you need to receive messages.
 

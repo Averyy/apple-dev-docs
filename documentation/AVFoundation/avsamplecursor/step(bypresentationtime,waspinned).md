@@ -25,7 +25,7 @@ func step(byPresentationTime deltaPresentationTime: CMTime, wasPinned outWasPinn
 - (CMTime) stepByPresentationTime:(CMTime) deltaPresentationTime wasPinned:(BOOL *) outWasPinned;
 ```
 
-#### Return Value
+## Return Value
 
 The amount of time the cursor was moved along the presentation timeline. Because sample cursors snap to sample boundaries when stepped, this value may not be equal to the specified time delta even if the cursor was not pinned.
 

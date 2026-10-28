@@ -25,7 +25,7 @@ case inProgress
 INAddTasksIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if you began adding tasks to the task list but didn’t confirm that the process was complete. You might use this code when a server handles the creation and you’ve not yet received a confirmation from that server.
 

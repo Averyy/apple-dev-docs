@@ -25,11 +25,11 @@ func xpc_connection_set_peer_team_identity_requirement(_ connection: xpc_connect
 extern int xpc_connection_set_peer_team_identity_requirement(xpc_connection_t connection, const char *signing_identifier);
 ```
 
-#### Return Value
+## Return Value
 
 On success, `0`. Otherwise, a value from [Errors](./xpc-connections.md#Errors).
 
-#### Discussion
+## Discussion
 
 When you set this requirement on a connection, the operating system checks that peer process satisfies the requirement every time it sends a message to your process.
 

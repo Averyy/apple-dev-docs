@@ -29,7 +29,7 @@ func makeDataReady() async throws
 - (void) makeDataReadyWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method more than once on a batch generates an exception.
 

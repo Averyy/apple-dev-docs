@@ -23,7 +23,7 @@ optional func widgetConfiguration(from complicationDescriptor: CLKComplicationDe
 - (void) getWidgetConfigurationFrom:(CLKComplicationDescriptor *) complicationDescriptor completionHandler:(void (^)(CLKComplicationWidgetMigrationConfiguration *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to provide the best WidgetKit configuration for the given complication descriptor. Your implementation examines the complication descriptor, then creates a configuration object and passes it to the completion handler.
 

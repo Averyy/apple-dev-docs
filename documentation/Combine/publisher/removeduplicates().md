@@ -23,11 +23,11 @@ func removeDuplicates() -> Publishers.RemoveDuplicates<Self>
 
 Available when `Output` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A publisher that consumes — rather than publishes — duplicate elements.
 
-#### Discussion
+## Discussion
 
 Use [`removeDuplicates()`](./removeduplicates%28%29.md) to remove repeating elements from an upstream publisher. This operator has a two-element memory: the operator uses the current and previously published elements as the basis for its comparison.
 

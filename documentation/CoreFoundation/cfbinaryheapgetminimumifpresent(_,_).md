@@ -25,7 +25,7 @@ func CFBinaryHeapGetMinimumIfPresent(_ heap: CFBinaryHeap!, _ value: UnsafeMutab
 extern Boolean CFBinaryHeapGetMinimumIfPresent(CFBinaryHeapRef heap, const void **value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a minimum value exists in `heap`, `false` otherwise. `false` is returned only if `heap` is empty.
 

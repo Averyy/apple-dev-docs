@@ -21,7 +21,7 @@ A descriptor for a group you use to join an IP multicast group on a local networ
 class NWMulticastGroup
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  In order to use multicast on iOS, your app will need to have the `com.apple.developer.networking.multicast` entitlement.
 

@@ -15,7 +15,7 @@ A generated analytics report containing App Store performance data produced from
 object AnalyticsReport
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about the response that includes this analytics report request object, see [`AnalyticsReportResponse`](./analyticsreportresponse.md).
 

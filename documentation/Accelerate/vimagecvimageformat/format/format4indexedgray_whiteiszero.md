@@ -21,7 +21,7 @@ A 4-bit indexed pixel format with white equal to zero.
 case format4IndexedGray_WhiteIsZero
 ```
 
-#### Discussion
+## Discussion
 
 This pixel format supports color spaces that are [`CGColorSpaceModel.indexed`](../../../CoreGraphics/cgcolorspacemodel/indexed.md).
 

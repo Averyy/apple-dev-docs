@@ -25,11 +25,11 @@ func member(_ object: Any) -> Any?
 - (ObjectType) member:(ObjectType) object;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an object equal to `object` if it’s present in the set, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Each element of the set is checked for equality with `object` until a match is found or the end of the set is reached.  Objects are considered equal if [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) returns [`true`](../../Swift/true.md).
 

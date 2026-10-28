@@ -25,7 +25,7 @@ func CFSetCreateMutable(_ allocator: CFAllocator!, _ capacity: CFIndex, _ callBa
 extern CFMutableSetRefCFSetCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFSetCallBacks *callBacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable set, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

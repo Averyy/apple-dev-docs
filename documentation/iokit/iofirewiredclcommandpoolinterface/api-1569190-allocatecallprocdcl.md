@@ -14,7 +14,7 @@
 DCLCommand *(*AllocateCallProcDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, DCLCallCommandProc *inProc, DCLCallProcDataType inProcData);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

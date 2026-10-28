@@ -23,7 +23,7 @@ func collapseSecondaryViewController(_ secondaryViewController: UIViewController
 - (void) collapseSecondaryViewController:(UIViewController *) secondaryViewController forSplitViewController:(UISplitViewController *) splitViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides default behavior when you do not overwrite the [`splitViewController(_:collapseSecondary:onto:)`](../uisplitviewcontrollerdelegate/splitviewcontroller%28_,collapsesecondary,onto%29.md) method. The primary view controller associated with the split view controller is displayed.
 

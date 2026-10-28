@@ -24,7 +24,7 @@ var delegateQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t delegateQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Resource requests are processed synchronously on the specified dispatch queue.
 

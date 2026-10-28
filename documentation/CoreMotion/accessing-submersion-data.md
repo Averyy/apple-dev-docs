@@ -5,7 +5,7 @@
 
 Use a water-submersion manager to receive water pressure, temperature, and depth data on Apple Watch Ultra.
 
-#### Overview
+## Overview
 
 Apple Watch Ultra can collect water pressure, depth, and temperature data while submerged; however, before your app can access this data, you need to perform the following setup steps:
 
@@ -16,7 +16,7 @@ Apple Watch Ultra can collect water pressure, depth, and temperature data while 
 
 To start monitoring submersion data, instantiate a [`CMWaterSubmersionManager`](./cmwatersubmersionmanager.md) and assign a delegate to the submersion manager. The system begins sending updates to your delegate. You can then start an extended runtime session when the watch first submerges, and transition your app to a touchless user interface for the duration of the dive.
 
-##### Add the required entitlement
+### Add the required entitlement
 
 Before you can instantiate the [`CMWaterSubmersionManager`](./cmwatersubmersionmanager.md) class, your app needs to include a Submerged Depth and Pressure entitlement to access submersion data.
 
@@ -26,7 +26,7 @@ To enable a maximum depth of 40 meters, you need to apply for the full Submersio
 
 If you instantiate the manager without an entitlement, the system calls your delegate’s [`manager(_:errorOccurred:)`](./cmwatersubmersionmanagerdelegate/manager%28_,erroroccurred%29.md) method, passing a [`CMErrorNotEntitled`](./cmerrornotentitled.md) error, and your delegate doesn’t receive any additional data.
 
-##### Authorize access to motion data
+### Authorize access to motion data
 
 The system automatically asks the wearer for authorization to access motion data when you first instantiate a [`CMWaterSubmersionManager`](./cmwatersubmersionmanager.md); however, before you can instantiate the manager, you need to include the [`NSMotionUsageDescription`](../BundleResources/information-property-list/nsmotionusagedescription.md) key in your app target’s information property list and provide a usage description string.
 
@@ -34,7 +34,7 @@ The system automatically asks the wearer for authorization to access motion data
 
 The system displays this usage description when it prompts the wearer for authorization to access motion data. If you don’t include a usage description string, your app crashes when you try to instantiate a [`CMWaterSubmersionManager`](./cmwatersubmersionmanager.md) object.
 
-##### Add support for the underwater depth extended runtime session
+### Add support for the underwater depth extended runtime session
 
 To make sure your app continues to run, and remains visible, you need to add the `underwater-depth` Background Mode to your app’s `Info.plist` file. This background mode lets your app run as the frontmost app during a dive session.
 
@@ -67,7 +67,7 @@ Unlike most extended runtime sessions, your app doesn’t need to start an exten
 
 If you don’t explicitly start an extended runtime session, the system automatically starts a runtime session when the wearer dives below 1 meter, and your app transitions to the [`CMWaterSubmersionMeasurement.DepthState.submergedDeep`](./cmwatersubmersionmeasurement/depthstate/submergeddeep.md) state.
 
-##### Verify that the submersion data is available on the current device.
+### Verify that the submersion data is available on the current device.
 
 Before creating a submersion manager, verify that the data is available on the current device.
 
@@ -79,7 +79,7 @@ guard CMWaterSubmersionManager.waterSubmersionAvailable else {
 
 On Apple Watch Ultra, the system sets [`waterSubmersionAvailable`](./cmwatersubmersionmanager/watersubmersionavailable.md) to [`true`](../Swift/true.md). On all other devices and in Simulator, the system sets it to [`false`](../Swift/false.md).
 
-##### Start monitoring submersion data
+### Start monitoring submersion data
 
 To begin receiving submersion data, instantiate a [`CMWaterSubmersionManager`](./cmwatersubmersionmanager.md) object and assign a [`CMWaterSubmersionManagerDelegate`](./cmwatersubmersionmanagerdelegate.md).
 
@@ -213,7 +213,7 @@ nonisolated func manager(_ manager: CMWaterSubmersionManager, didUpdate measurem
 
 The water temperature readings can take some time to converge on the correct value. The system estimates how long it takes to converge to the correct results, and calculates an uncertainty value based on the expected convergence.
 
-##### Start a dive session
+### Start a dive session
 
 You can start an extended runtime session as the wearer begins their dive.
 
@@ -243,7 +243,7 @@ This session continues to run until:
 
 For more information, see [Using extended runtime sessions](../WatchKit/using-extended-runtime-sessions.md).
 
-##### Transition to a touchless user interface
+### Transition to a touchless user interface
 
 Starting an extended runtime session automatically enables Water Lock on the watch. As a result, the system disables the watch’s touchscreen for the duration of the dive. If you want the wearer to interact with your app during the dive, you need to enable interaction using either the Digital Crown or the Action button.
 
@@ -321,7 +321,7 @@ struct MyBeginDescent: AppIntent {
 
 For more information, see [Responding to the Action button on Apple Watch Ultra](../AppIntents/actionbuttonarticle.md).
 
-##### Handle automatic dive sessions
+### Handle automatic dive sessions
 
 If you don’t explicitly start an extended runtime session, the system automatically starts a session when the wearer descends below 1 meter. It then passes the session to your app delegate’s [`handle(_:)`](../WatchKit/wkapplicationdelegate/handle%28_%29-7kiwx.md) method. To use this session, add a delegate and save it to a variable that remains in scope for the entire dive’s duration.
 
@@ -340,7 +340,7 @@ func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
 }
 ```
 
-##### Respond to autolaunch
+### Respond to autolaunch
 
 On Apple Watch Ultra, the wearer can tell the system to launch an app when the watch becomes submerged. To enable this feature, they choose Settings > General > Auto-Launch and select the Auto-Launch App setting from the When Submerged group. They can also select which app the system launches.
 
@@ -348,7 +348,7 @@ The system adds your app to the list of autolaunchable apps as soon as you add t
 
 For example, you can set up your app’s [`CMWaterSubmersionManager`](./cmwatersubmersionmanager.md) when your app launches. This ensures that your app is always ready to receive submersion data. Then, when the wearer descends below 1 meter, you can use your [`handle(_:)`](../WatchKit/wkapplicationdelegate/handle%28_%29-7kiwx.md) method to grab the automatically generated extended runtime session. Alternatively, if you prefer to explicitly start your own extended runtime session, you can start the session when your app receives a [`CMWaterSubmersionEvent.State.submerged`](./cmwatersubmersionevent/state-swift.enum/submerged.md) event.
 
-##### Test submersion data
+### Test submersion data
 
 Always test submersion data on Apple Watch Ultra. You can’t instantiate the submersion manager in Simulator. To trigger a submersion event, you need to submerge Apple Watch Ultra in a tank of water at least 1 foot deep. When testing in a pressurized container, make sure the watch is completely submerged in water.
 

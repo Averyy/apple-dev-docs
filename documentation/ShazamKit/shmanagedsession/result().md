@@ -21,7 +21,7 @@ Performs an asynchronous match with a single signature.
 final func result() async -> SHSession.Result
 ```
 
-#### Return Value
+## Return Value
 
 A [`SHSession.Result`](../shsession/result.md) enumeration that indicates the result.
 

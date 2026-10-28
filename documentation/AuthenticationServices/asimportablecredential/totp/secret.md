@@ -19,7 +19,7 @@ The secret associated with this generator.
 var secret: Data
 ```
 
-#### Discussion
+## Discussion
 
 This value must be Base32-encoded when encoded to JSON.
 

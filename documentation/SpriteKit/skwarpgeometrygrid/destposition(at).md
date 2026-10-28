@@ -25,11 +25,11 @@ func destPosition(at index: Int) -> vector_float2
 - (vector_float2) destPositionAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The normalized position of the specified vertex in `destPositions`.
 
-#### Discussion
+## Discussion
 
 The specified index must be between 0 and the warp geometry grid’s [`vertexCount`](./vertexcount.md) `- 1`.
 

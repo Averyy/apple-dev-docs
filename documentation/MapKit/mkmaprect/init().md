@@ -21,7 +21,7 @@ Creates the rectangle with an empty region.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the origin point to `(0, 0)` and the size to `(0, 0)`.
 

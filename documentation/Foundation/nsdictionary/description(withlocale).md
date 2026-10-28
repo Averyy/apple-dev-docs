@@ -25,7 +25,7 @@ func description(withLocale locale: Any?) -> String
 - (NSString *) descriptionWithLocale:(id) locale;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of how `locale` is applied to each element in the dictionary, see [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md).
 

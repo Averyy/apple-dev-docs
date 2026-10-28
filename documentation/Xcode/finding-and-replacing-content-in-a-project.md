@@ -5,7 +5,7 @@
 
 Search some or all of your project for text strings or symbol names, and perform advanced searches using regular expressions.
 
-#### Overview
+## Overview
 
 Xcode offers sophisticated search and replace capabilities in the Find navigator, which you access from the navigator area of your project. Use the Find navigator to search for text and symbols across your entire project. To perform advanced searches, use regular expressions or use the navigator’s controls to narrow the scope of the search operations.
 
@@ -13,7 +13,7 @@ To display the Find navigator, click the magnifying glass icon in the navigator 
 
 ![Perform advanced searches using the Find navigator.](https://developer.apple.com/tutorials/images/com.apple.Xcode/find-navigator-overview@2x.png)
 
-##### Find text strings
+### Find text strings
 
 To search for text in your project:
 
@@ -27,7 +27,7 @@ Xcode displays the results of the search. When you select a result, Xcode displa
 
 > 💡 **Tip**: To quickly populate the search field, select some text in the editor and choose Find > Find in Project. Xcode copies the selected text to the search field.
 
-##### Find symbol references and definitions
+### Find symbol references and definitions
 
 Xcode offers two ways to search for symbols:
 
@@ -36,7 +36,7 @@ Xcode offers two ways to search for symbols:
 
 When you execute the search, the search results contain only places where your code refers to the symbol. The results don’t include references to the symbol in code comments or other project files. To refine your results, change the matching behavior and case sensitivity options of your search.
 
-##### Replace instances of found text
+### Replace instances of found text
 
 To search for text and replace it with another string:
 
@@ -49,11 +49,11 @@ To search for text and replace it with another string:
 
 Xcode displays the results of the search, but it doesn’t automatically replace the text. To replace the text for a single result, select it and click the Replace button. To replace the text for all results, click Replace All.
 
-##### Filter the list of search results
+### Filter the list of search results
 
 After any search, you can narrow the search results further by entering a secondary string into the filter bar. The Find navigator temporarily removes results that don’t also contain the string you type into the filter bar. To restore the original results, clear the text from the filter bar.
 
-##### Limit the scope of a find or replace operation
+### Limit the scope of a find or replace operation
 
 When you execute a search, Xcode searches all files in your project by default. To search only a subset of files, click Scope and choose from the options that appear.
 
@@ -62,7 +62,7 @@ When you execute a search, Xcode searches all files in your project by default. 
 
 ![Create a custom scope in the Find navigator to limit where Xcode searches.](https://developer.apple.com/tutorials/images/com.apple.Xcode/find-scope-search@2x.png)
 
-##### Refine searches to match predefined pattern strings
+### Refine searches to match predefined pattern strings
 
 Pattern tokens help you match strings that contain variable content. For example, you might use a pattern token to represent an email address in a string.
 
@@ -74,7 +74,7 @@ Select the pattern you want from the pop-up menu to add it to your search field.
 
 ![Select search patterns from the pop-up menu to add them to the search field of the Find navigator.](https://developer.apple.com/tutorials/images/com.apple.Xcode/find-pattern-menu@2x.png)
 
-##### Find or replace using a regular expression
+### Find or replace using a regular expression
 
 Regular expressions let you define your own custom pattern strings to use during matches. The [`NSRegularExpression`](../Foundation/nsregularexpression.md) class in the Foundation framework defines the syntax that you use for Xcode regular expressions.
 

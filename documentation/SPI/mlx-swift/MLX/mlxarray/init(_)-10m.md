@@ -17,13 +17,13 @@ Initializer allowing creation of scalar (0-dimension) `MLXArray` from a `HasDTyp
 convenience init<T>(_ value: T) where T : HasDType
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let a = MLXArray(UInt64(7))
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

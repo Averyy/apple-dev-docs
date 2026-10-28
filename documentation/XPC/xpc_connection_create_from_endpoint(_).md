@@ -25,11 +25,11 @@ func xpc_connection_create_from_endpoint(_ endpoint: xpc_endpoint_t) -> xpc_conn
 extern xpc_connection_txpc_connection_create_from_endpoint(xpc_endpoint_t endpoint);
 ```
 
-#### Return Value
+## Return Value
 
 A new peer connection to the listener represented by the given endpoint.
 
-#### Discussion
+## Discussion
 
 The same responsibilities of setting an event handler and resuming the connection after calling [`xpc_connection_create(_:_:)`](./xpc_connection_create%28_,_%29.md) apply to the connection returned by this API. Since the connection yielded by this API is not associated with a name (and therefore is not rediscoverable), this connection will receive [`XPC_ERROR_CONNECTION_INVALID`](./xpc_error_connection_invalid-swift.var.md) if the listening side crashes, exits or cancels the listener connection.
 

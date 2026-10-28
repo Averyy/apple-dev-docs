@@ -11,7 +11,7 @@ Called by IOAudioEngine when it is starting up
 virtual void audioEngineStarting();
 ```
 
-#### Overview
+## Overview
 
 This should only be called while on the IOWorkLoop. It is not intended to be called directly. It is called when an IOAudioEngine is starting up to allow the IOAudioDevice to keep track of running audio engines and change the power state from kIOAudioDeviceIdle to kIOAudioDeviceActive when the first audio engine starts up. If the state change is done asynchronously, it waits for the state change to complete. This is to ensure that the system doesn't start playing audio until the IOAudioDevice has completed its transition to kIOAudioDeviceActive.
 

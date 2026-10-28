@@ -5,7 +5,7 @@
 
 Confirm that your app can make a successful transaction in the sandbox environment by inspecting the transaction.
 
-#### Overview
+## Overview
 
 Set a breakpoint in your implementation of the transaction queue observer’s [`paymentQueue(_:updatedTransactions:)`](./skpaymenttransactionobserver/paymentqueue%28_,updatedtransactions%29.md) method. Then sign in to the App Store with a Sandbox Apple Account, and make a purchase in your app. Inspect the transaction to verify that its status is [`SKPaymentTransactionState.purchased`](./skpaymenttransactionstate/purchased.md).
 

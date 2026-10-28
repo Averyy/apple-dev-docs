@@ -15,7 +15,7 @@ A Boolean value that indicates whether to log memory-tagging faults as a simulat
 - **Name**: `com.apple.security.hardened-process.checked-allocations.soft-mode` (Hardened Process - Enable Soft Mode for Memory Tagging)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Xcode adds this entitlement to your app or extension by default when you add the Enable Hardware Memory Tagging entitlement. To enable this entitlement for your app or extension in Xcode, first add the Enhanced Security capability. Then, under Memory Safety, select Enable Soft Mode for Memory Tagging.
 

@@ -19,7 +19,7 @@ protocol NSViewToolTipOwner : NSObjectProtocol
 @protocol NSViewToolTipOwner <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Tool tips are hints displayed to the user when the mouse hovers over a view. Adopt this protocol in views for which you want to provide tool tips. If the view does not implement this protocol, the system uses the [`description`](../ObjectiveC/nsobjectprotocol/description.md) method instead.
 

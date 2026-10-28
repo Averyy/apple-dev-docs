@@ -18,7 +18,7 @@ The style to use for a selectable cell with nested children.
 UICellAccessoryOutlineDisclosureStyleCell
 ```
 
-#### Discussion
+## Discussion
 
 When using this style, a tap on the outline disclosure accessory toggles the expansion state of the item. A tap on the cell selects the item itself.
 

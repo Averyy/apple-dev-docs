@@ -24,7 +24,7 @@ var snapshotWidth: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * snapshotWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to scale the generated image to the specified width. The web view maintains the aspect ratio of the captured content, but scales it to match the width you specify.
 

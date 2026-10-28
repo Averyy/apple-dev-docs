@@ -21,7 +21,7 @@ var latestTimeTravelDate: Date { get }
 @property (nonatomic, readonly) NSDate * latestTimeTravelDate;
 ```
 
-#### Discussion
+## Discussion
 
 When constructing your timeline, don’t create any entries after this date. Doing so is a waste of time because those entries won’t be displayed right away.
 

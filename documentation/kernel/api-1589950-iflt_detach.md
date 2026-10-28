@@ -13,7 +13,7 @@
 void iflt_detach(interface_filter_t filter_ref);
 ```
 
-#### Discussion
+## Discussion
 
 Detaches an interface filter from an interface.
 

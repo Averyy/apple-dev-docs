@@ -19,7 +19,7 @@ func invalidateDisplay(forCharacterRange charRange: NSRange)
 - (void) invalidateDisplayForCharacterRange:(NSRange) charRange;
 ```
 
-#### Discussion
+## Discussion
 
 Parts of the range that are not laid out are remembered and redisplayed later when the layout is available. Does not actually cause layout.
 

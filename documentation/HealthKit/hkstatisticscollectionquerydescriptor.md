@@ -25,7 +25,7 @@ struct HKStatisticsCollectionQueryDescriptor
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 - [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
 
-#### Overview
+## Overview
 
 Use [`HKStatisticsCollectionQueryDescriptor`](./hkstatisticscollectionquerydescriptor.md) to run a query that calculates statistics grouped into time intervals. To get a snapshot of the current data in the store, create a descriptor and call its [`result(for:)`](./hkstatisticscollectionquerydescriptor/result%28for%29.md) method.
 

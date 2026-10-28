@@ -17,7 +17,7 @@ An error the testing environment returns for SKAdNetwork testing errors.
 struct SKAdTestError
 ```
 
-#### Overview
+## Overview
 
 Unit tests that call [`setPostbacks(_:)`](./skadtestsession/setpostbacks%28_%29.md), [`flushPostbacks(responses:)`](./skadtestsession/flushpostbacks%28responses%29.md), [`validateImpression(parameters:publicKey:)`](./skadtestsession/validateimpression%28parameters,publickey%29.md), and [`validate(_:publicKey:)`](./skadtestsession/validate%28_,publickey%29.md), can throw [`SKAdTestError`](./skadtesterror.md) errors.
 

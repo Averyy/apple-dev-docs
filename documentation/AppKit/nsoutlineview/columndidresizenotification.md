@@ -19,7 +19,7 @@ class let columnDidResizeNotification: NSNotification.Name
 extern NSNotificationName NSOutlineViewColumnDidResizeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSOutlineView` object in which a column was resized. The `userInfo` dictionary contains the following information:
 

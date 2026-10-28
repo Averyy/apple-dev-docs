@@ -5,11 +5,11 @@
 
 Minimize typing-related errors using code completion, and let Xcode fix common mistakes for you.
 
-#### Overview
+## Overview
 
 Xcode includes a number of features that help reduce typical coding mistakes, such as when you misspell a symbol name or forget to add a closing delimiter. By leveraging these features, you can focus more time on adding value to your app and less time fixing easily avoidable issues. With your explicit consent, Xcode can help you locate the correct symbol, fix common errors, and automatically match braces, parentheses, and brackets, by directly changing your code.
 
-##### Avoid syntax errors by using code completion
+### Avoid syntax errors by using code completion
 
 When you begin typing the name of a symbol in the source editor, Xcode displays a list of suggestions for completing the name. You can dismiss this list by pressing Escape or clicking elsewhere in the source editor. If the possible completions share a common string, Xcode highlights that string. If there isn’t a common string, Xcode highlights the matching parts of the string instead.
 
@@ -31,7 +31,7 @@ To prevent Xcode from suggesting completions as you type:
 
 Alternatively, invoke code completion as needed by choosing On Demand and pressing Control-Space or Escape while typing. You can change the shortcut for code completion in Xcode > Settings > Shortcuts.
 
-##### Match braces, parentheses, and brackets automatically
+### Match braces, parentheses, and brackets automatically
 
 Xcode helps you identify and balance opening and closing delimiters — braces, parentheses, and brackets — within your code. You can take advantage of this functionality by doing one or more of the following:
 
@@ -46,7 +46,7 @@ To prevent Xcode from automatically inserting delimiters:
 1. Choose Xcode > Settings, then select Editing in the sidebar.
 2. Toggle the “Automatically insert closing braces” and “Enclose selection in matching delimiters” settings off.
 
-##### Apply fixes to your code
+### Apply fixes to your code
 
 As you enter code in the source editor, Xcode checks the syntax and offers fixes when you pause typing.
 

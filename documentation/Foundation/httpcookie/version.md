@@ -25,7 +25,7 @@ var version: Int { get }
 @property (readonly) NSUInteger version;
 ```
 
-#### Discussion
+## Discussion
 
 Version 0 maps to “old-style” Netscape cookies. Version 1 maps to [RFC 6265](https://tools.ietf.org/html/rfc6265) cookies.
 

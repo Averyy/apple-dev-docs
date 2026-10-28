@@ -17,7 +17,7 @@ typedef struct CMBitmap {
 } CMBitmap;
 ```
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines a bitmap structure of type `CMBitmap` to describe color bitmap images. When your application calls the function [CWMatchColors](./colorsync_manager/api-1805108-cwmatchcolors.md) , you pass a pointer to a source bitmap of type `CMBitmap` containing the image whose colors are to be matched to the color gamut of the device specified by the destination profile of the given color world. If you do not want the image color matched in place, you can also pass a pointer to a resulting bitmap of type `CMBitmap` to define and hold the color-matched image. 
 

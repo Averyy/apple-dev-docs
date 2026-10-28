@@ -29,7 +29,7 @@ func transmit(_ request: Data) async throws -> Data
 - (void) transmitRequest:(NSData *) request reply:(void (^)(NSData *response, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 You should only call this method after a session to the Smart Card has been established using the [`beginSession(reply:)`](./beginsession%28reply%29.md) method, and before the session is terminated using the [`endSession()`](./endsession%28%29.md) method.
 

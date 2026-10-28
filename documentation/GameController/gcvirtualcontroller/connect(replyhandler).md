@@ -29,7 +29,7 @@ func connect() async throws
 
 - [Adding virtual controls to games that support game controllers in iOS](../adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
-#### Discussion
+## Discussion
 
 After you invoke this method, the framework calls any input handlers you set for the elements, or you can poll the elements for their values.
 

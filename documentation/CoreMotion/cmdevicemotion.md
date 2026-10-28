@@ -24,7 +24,7 @@ class CMDeviceMotion
 @interface CMDeviceMotion : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 An application receives or samples `CMDeviceMotion` objects at regular intervals after calling the [`startDeviceMotionUpdates(using:to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28using,to,withhandler%29.md) method, the [`startDeviceMotionUpdates(to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28to,withhandler%29.md) method, the [`startDeviceMotionUpdates(using:)`](./cmmotionmanager/startdevicemotionupdates%28using%29.md) method, or the [`startDeviceMotionUpdates()`](./cmmotionmanager/startdevicemotionupdates%28%29.md) method of the [`CMMotionManager`](./cmmotionmanager.md) class.
 

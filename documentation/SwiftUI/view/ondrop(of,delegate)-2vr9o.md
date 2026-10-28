@@ -29,7 +29,7 @@ nonisolated
 func onDrop(of supportedContentTypes: [UTType], delegate: any DropDelegate) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that provides a drop destination for a drag operation of the specified types.
 

@@ -22,7 +22,7 @@ var isLockedOut: Bool { get }
 @property (nonatomic, readonly) BOOL isLockedOut;
 ```
 
-#### Discussion
+## Discussion
 
 Whether biometry is locked out.
 

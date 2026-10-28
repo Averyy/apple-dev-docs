@@ -5,17 +5,17 @@
 
 Examine the steps between the user, client, device management service, and Apple services in the simple authentication flow.
 
-#### Overview
+## Overview
 
 To implement account-driven enrollment, you need to support a series of interactions between the user’s device and your device management service. The following diagrams illustrate the interactions, and the sections below detail each of the interaction steps.
 
 ![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for simple authentication.](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/implementing-the-simple-authentication-account-driven-enrollment-flow01@2x.png)
 
-#### Sign in (Step 1)
+## Sign in (Step 1)
 
 A person enters a user account identifier to start the enrollment flow. The identifier needs to conform to a *user@domain* format, where *user* is a user identifier, and *domain* is a fully qualified domain name (FQDN) corresponding to a domain that advertises the device management service for the person’s organization. The client splits the supplied identifier at the last occurrence of the `@ character. If the resulting components are invalid (for example, empty or not an FQDN), an error occurs, and the person can reenter a valid identifier to proceed or cancel the enrollment.
 
-#### Send the well-known request (Step 2)
+## Send the well-known request (Step 2)
 
 The client sends an `HTTPS GET` request for the URL
 
@@ -39,7 +39,7 @@ The service registered with that URL uses these values to help determine whether
 
 The service can send an HTTP redirect response for this request, and the client follows the redirect. However, the client doesn’t add the original query parameters to the redirect URL, so it’s the responsibility of the service to include all appropriate query parameters. This redirect behavior is useful in cases where it’s hard to set up the well-known service on the web server that the system uses for the top-level organization domain (as extracted from the user identifier). In that case, you can configure the top-level web server with a simple static redirect rule for the well-known URL that points to a different server (typically the device management service) that actually handles the request.
 
-#### Redirect the well-known request
+## Redirect the well-known request
 
 It’s sometimes difficult for an organization to host the well-known service discovery endpoint at the web server that serves the top-level organization domain. To avoid the need for that, Apple provides a fallback discovery service that can redirect the device to a well-known resource that another server (typically the device management service) hosts at the organization. This approach works only when the service discovery user identifier matches a Managed Apple Account associated with the organization.
 
@@ -49,7 +49,7 @@ Your device management service needs to instruct Apple School Manager or Apple B
 
 Support for this is available in iOS 18.2, iPadOS 18.2, macOS 15.2, and visionOS 2.2, and later.
 
-#### Process the JSON document (Step 3)
+## Process the JSON document (Step 3)
 
 The web service returns a JSON document that conforms to the schema defined below. The client extracts the `BaseURL` property in the first JSON array object and uses it in subsequent requests. If the response is malformed, or is an HTTP error response, the system signals an error to the user and cancels enrollment. A successful response from the service needs to be a JSON object with the following key:
 
@@ -71,7 +71,7 @@ The `Version` key indicates the type of enrollment the device needs to perform, 
 | `mdm-byod` | Indicates a user enrollment. |
 | `mdm-adde` | Indicates a device enrollment. |
 
-#### Attempt the first enrollment (Step 4)
+## Attempt the first enrollment (Step 4)
 
 The client sends an HTTP `POST` request to the URL that the service specifies in the `BaseURL` property the client extracts from the well-known response JSON document. The request body is a cryptographically signed property list with the following keys:
 
@@ -111,7 +111,7 @@ Content-Length: 0
 WWW-Authenticate: Bearer method="apple-as-web", url="https://mdmserver.example.com/authenticate"
 ```
 
-#### Return the 401 response (Step 5)
+## Return the 401 response (Step 5)
 
 You return an HTTP 401 response status to the client and include a `WWW-Authenticate` response header. This response header needs to use the `Bearer` scheme and include the following parameters:
 
@@ -131,7 +131,7 @@ WWW-Authenticate: Bearer method="apple-as-web",
 
 If the client’s enrollment request is invalid, you return a standard HTTP error response code (for example, 400 or 403) to halt the enrollment flow on the device. If the service’s response is invalid (for example, missing the `WWW-Authenticate` response header), the system cancels the enrollment.
 
-#### Implement the authentication flow (Steps 6-10)
+## Implement the authentication flow (Steps 6-10)
 
 The client adds a query item to the web-auth URL with the name `user-identifier`, and sets the value to the user account identifier that the person enters. The client creates an [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) using the web-auth URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
 
@@ -161,7 +161,7 @@ Content-Length: 17643
 </html>
 ```
 
-#### Return the authentication result (Step 11)
+## Return the authentication result (Step 11)
 
 The [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) web flow completes when the service returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to a URL with a scheme of `apple-remotemanagement-user-login` (the authentication session callback URL scheme). The URL needs to have a network location component of `authentication-results`. The URL needs to include an `access-token` query item with a value that is the access token. The client securely stores the access token for use when authorizing subsequent requests to the service. The service can define the format of the access token — the client treats it as an opaque token. This may be a token that the service itself generates, or one that the IdP generates.
 
@@ -189,7 +189,7 @@ Location: apple-remotemanagement-user-login://authentication-results?access-toke
 
 If authentication fails, the service returns an appropriate HTTP error response code that terminates the enrollment on the device.
 
-#### Attempt the second enrollment (Step 12)
+## Attempt the second enrollment (Step 12)
 
 The client repeats the HTTP `POST` request it made in the first enrollment attempt, using the same request body. However, this time it also includes an `Authorization HTTP` request header. This header uses the `Bearer` scheme and includes the access token that the client retrieved from the authentication session flow.
 
@@ -255,7 +255,7 @@ Content-Length: 6785
 
 > **Note**:  Ensure that the `AccessRights` key isn’t present in the `com.apple.mdm` payload.
 
-#### Validate the enrollment profile (Step 13)
+## Validate the enrollment profile (Step 13)
 
 The [`MDM`](./mdm.md) profile that the service delivers in the second enrollment attempt needs to include the following keys:
 
@@ -270,13 +270,13 @@ The `AssignedManagedAppleID` key in the enrollment profile provides the Managed 
 
 If `EnrollmentMode` is `BYOD` in the enrollment profile, the `AccessRights` key can’t be present. Device management services can’t declare access rights when using the simple enrollment mode because user enrollments have a fixed set of access rights rules for MDM commands and profile payloads. If the key is present, the client cancels the enrollment.
 
-#### Sign in to the Managed Apple Account (Steps 14-18)
+## Sign in to the Managed Apple Account (Steps 14-18)
 
 After a device receives a valid enrollment profile, but before enrollment into device management actually takes place, the client creates a data-separated volume to store device management-related managed data. The device then prompts the user to sign in to their Managed Apple Account.
 
 If the sign-in fails, the client cancels the enrollment flow. If the sign-in succeeds, the device creates the iCloud and iTunes accounts associated with the Managed Apple Account, and then the client continues with the enrollment.
 
-#### Finish the enrollment (Step 19)
+## Finish the enrollment (Step 19)
 
 When all management setup steps are complete, the device proceeds with the actual enrollment into device management. It installs the device management (MDM) enrollment profile, performing any certificate enrollment steps, and then starting the MDM protocol flow by issuing an [`Authenticate`](./authenticate.md) request. All requests to the device management service include an `Authorization` HTTP request header with the access token as described in the “Attempt the second enrollment” section above.
 

@@ -24,7 +24,7 @@ func IOSurfaceGetAllocSize(_ buffer: IOSurfaceRef) -> Int
 size_t IOSurfaceGetAllocSize(IOSurfaceRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if buffer is invalid.
 

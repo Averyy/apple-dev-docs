@@ -21,7 +21,7 @@ A categorical summary of a collection’s elements.
 struct CategoricalSummary<Element> where Element : Hashable
 ```
 
-#### Overview
+## Overview
 
 Each categorical summary has 5 statistics about a collection:
 

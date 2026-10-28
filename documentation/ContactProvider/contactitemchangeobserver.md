@@ -16,7 +16,7 @@ A protocol that defines a system observer that receives a resumable enumeration 
 protocol ContactItemChangeObserver
 ```
 
-#### Overview
+## Overview
 
 Your implementation of [`enumerateChanges(startingAt:for:)`](./contactitemenumerator/enumeratechanges%28startingat,for%29.md) receives an observer that conforms to this type. As you enumerate over your contacts, you provide them to the observer with the [`didUpdate(_:)`](./contactitemchangeobserver/didupdate%28_%29.md) and [`didDelete(_:)`](./contactitemchangeobserver/diddelete%28_%29.md) methods.
 

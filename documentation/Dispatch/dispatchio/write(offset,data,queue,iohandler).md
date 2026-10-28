@@ -21,7 +21,7 @@ Schedules an asynchronous write operation for the specified channel.
 func write(offset: off_t, data: DispatchData, queue: DispatchQueue, ioHandler: @escaping (Bool, DispatchData?, Int32) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This function writes the specified data and submits the `io_handler` block to the `queue` to report on the progress of the operation. If the `done` parameter of the handler is set to [`false`](../../Swift/false.md), it means that only part of the data was written. If the `done` parameter is set to [`true`](../../Swift/true.md), it means the write operation is complete and the handler is not submitted again. If the operation was successful, the handler’s `error` parameter is set to `0`. However, if an unrecoverable error occurs on the channel’s file descriptor, the `done` parameter is set to [`true`](../../Swift/true.md) and an appropriate error value is reported in the handler’s `error` parameter.
 

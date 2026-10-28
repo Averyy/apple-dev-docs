@@ -19,7 +19,7 @@ weak var scrubber: NSScrubber? { get }
 @property (weak, readonly, nullable) NSScrubber * scrubber;
 ```
 
-#### Discussion
+## Discussion
 
 If this layout is not currently assigned to a scrubber control, the value of this property is `nil`.
 

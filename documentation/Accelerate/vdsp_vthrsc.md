@@ -21,7 +21,7 @@ Calculates single-precision vector threshold with signed constant to the specifi
 extern void vDSP_vthrsc(const float *__A, vDSP_Stride __IA, const float *__B, const float *__C, float *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Performs the following operation:
 

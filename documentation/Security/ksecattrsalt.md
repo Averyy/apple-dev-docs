@@ -19,7 +19,7 @@ let kSecAttrSalt: CFString
 extern CFStringRef const kSecAttrSalt;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) that indicates the salt to use with this cryptographic key.
 

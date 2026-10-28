@@ -23,7 +23,7 @@ var scene: SKScene? { get }
 
 - [Configuring a WatchKit Scene in a Storyboard](../configuring-a-watchkit-scene-in-a-storyboard.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

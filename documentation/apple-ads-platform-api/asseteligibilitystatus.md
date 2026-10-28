@@ -23,7 +23,7 @@ string AssetEligibilityStatus
 - `PENDING`: The asset requires review before it can be used.
 - `UNDEFINED`: Eligibility has not yet been determined.
 
-#### Discussion
+## Discussion
 
 The `status` field on [`AssetEligibility`](./asseteligibility.md) is always one of these values. Treat it as the first check before inspecting `blockedGroups` or `allowedGroups`.
 

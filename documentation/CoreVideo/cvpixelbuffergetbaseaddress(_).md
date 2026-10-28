@@ -25,11 +25,11 @@ func CVPixelBufferGetBaseAddress(_ pixelBuffer: CVPixelBuffer) -> UnsafeMutableR
 extern void *CVPixelBufferGetBaseAddress(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 The base address of the pixel buffer.
 
-#### Discussion
+## Discussion
 
 The pointer returned by this function depends on the type of buffer and the conditions under which it was created.
 

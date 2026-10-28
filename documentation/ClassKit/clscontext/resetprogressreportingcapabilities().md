@@ -23,7 +23,7 @@ func resetProgressReportingCapabilities()
 - (void) resetProgressReportingCapabilities;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove all the capabilities that you previously added with the [`addProgressReportingCapabilities(_:)`](./addprogressreportingcapabilities%28_%29.md) method. After calling the reset method, the context reverts to having only the default [`CLSProgressReportingCapability.Kind.duration`](../clsprogressreportingcapability/kind-swift.enum/duration.md) capability that it had after initialization.
 

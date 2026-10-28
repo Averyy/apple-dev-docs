@@ -19,11 +19,11 @@ Creates a scene session activation request object with a scene session that you 
 + (instancetype) requestWithSession:(UISceneSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 A scene session activation request object.
 
-#### Discussion
+## Discussion
 
 Create an activation request with this method when you want the system to activate an existing scene session that you provide.
 

@@ -19,7 +19,7 @@ A type that represents the value of a semantic content descriptor.
 typealias ValueType = SemanticContentDescriptor
 ```
 
-#### Discussion
+## Discussion
 
 This type defines the value type that the system uses when working with a [`SemanticContentDescriptor`](../semanticcontentdescriptor.md) instance. It’s part of the internal type system in App Intents for handling visual intelligence data.
 

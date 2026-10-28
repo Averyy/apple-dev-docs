@@ -24,11 +24,11 @@ class func perspectiveTile() -> any CIFilter & CIPerspectiveTile
 + (CIFilter<CIPerspectiveTile> *) perspectiveTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the perspective tile filter to an image. The effect adjusts the perspective of the image and then tiles the result.
 

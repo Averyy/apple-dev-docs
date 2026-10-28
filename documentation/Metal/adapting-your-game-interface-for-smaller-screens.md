@@ -5,7 +5,7 @@
 
 Make text legible on all devices the player chooses to run your game on.
 
-#### Overview
+## Overview
 
 Great games create engaging, immersive experiences through thoughtful design. Develop a game that’s responsive and easy to use by considering all aspects of design, including display sizes, device orientation, and text legibility. It’s crucial to plan this phase as early as possible and allocate sufficient resources and time within your team to ensure effective adaptation. For platform-specific design guidance, see [Human Interface Guidelines > Platforms](https://developer.apple.com/design/human-interface-guidelines/platforms).
 
@@ -20,7 +20,7 @@ Consider the best practices below to ensure that your in-game menus and UI compo
 
 In addition to menus and labels, take advantage of high-resolution displays, Apple silicon, external game controllers, headphones, and speakers. To learn more about creating games for Apple platforms, see [Games Pathway](https://developer.apple.com/games/pathway/).
 
-##### Render adaptable menus and labels
+### Render adaptable menus and labels
 
 Apple devices have a variety of screen characteristics, such as sizes, resolutions, and aspect ratios. When people download your game from the App Store, they expect to enjoy it on all their devices, whether they use iPhone SE or iPad Pro. Making the menus and labels in your game look and work great on every screen is important.
 
@@ -71,7 +71,7 @@ func sizeOfFontInDrawablePixels(with layer: CAMetalLayer, fontSizeInPoints: CGFl
 }
 ```
 
-##### Handle multiple interaction methods
+### Handle multiple interaction methods
 
 Consider how your game handles interactions with different input methods, like mouse, keyboard, game controllers, touch, and spatial user interactions. Take advantage of the [Game Controller](../GameController/GameController.md) framework to create a unified approach to handling these interactions for your players. To learn more about receiving controller input by either polling or callbacks, see [Handling input events](../GameController/handling-input-events.md).
 
@@ -82,7 +82,7 @@ Below are considerations for smaller devices:
 
 Take advantage of built-in accessibility features like Multi-Touch, VoiceOver, Switch Control, Guided Access, Text to Speech, closed-captioned or audio-described video, and more. See [Accessibility](https://developer.apple.com/accessibility/) for more information about building accessible games on Apple platforms.
 
-##### Test on all supported devices
+### Test on all supported devices
 
 Use a physical device to test the behavior and user experience for your game’s menus on every supported device. Otherwise, use Simulator or an approximated environment on Mac, with proper display resolution, scale, and interaction methods. For more guidance on testing your game in Simulator, see the resources below:
 

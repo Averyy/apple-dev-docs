@@ -25,11 +25,11 @@ convenience init(handle: String, displayName: String?, contactIdentifier: String
 - (instancetype) initWithHandle:(NSString *) handle displayName:(NSString *) displayName contactIdentifier:(NSString *) contactIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized person object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method as a convenient way to create person objects that do not require an image.
 

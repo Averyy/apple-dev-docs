@@ -19,7 +19,7 @@ var title: String! { get set }
 @property (copy, null_resettable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 If the button doesn’t display a title, the value of this property is the empty string. This title is always displayed if the button doesn’t use its alternate contents for highlighting or displaying the alternate state. By default, a button’s title is “Button.” Setting this property may redraw the button if necessary.
 

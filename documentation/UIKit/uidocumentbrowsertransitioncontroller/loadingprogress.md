@@ -22,7 +22,7 @@ var loadingProgress: Progress? { get set }
 @property (nonatomic, strong, nullable) NSProgress * loadingProgress;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to `nil`. If this property is set, the document browser modifies the document’s thumbnail to show the loading progress.
 

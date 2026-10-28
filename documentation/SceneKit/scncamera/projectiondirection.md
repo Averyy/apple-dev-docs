@@ -25,7 +25,7 @@ var projectionDirection: SCNCameraProjectionDirection { get set }
 @property (nonatomic) SCNCameraProjectionDirection projectionDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The [`fieldOfView`](./fieldofview.md) property measures view angle in a single primary direction, determined by this [`projectionDirection`](./projectiondirection.md) property. For the other direction, SceneKit automatically adjusts field of view depending on the aspect ratio of the view presenting the scene.
 

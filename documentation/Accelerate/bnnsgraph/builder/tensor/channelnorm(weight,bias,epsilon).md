@@ -23,7 +23,7 @@ func channelNorm(weight: some BNNSGraph.Builder.OperationParameter<T>, bias: som
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function performs channel normalization of `self` with an affine transform using `weight` and `bias`. `weight` and `bias` must be one-dimensional and have size `self.shape[1]`. `self` must be at least three-dimensional.
 

@@ -17,11 +17,11 @@ Determines whether peer certificate chain validation is currently enabled.
 OSStatus SSLGetEnableCertVerify(SSLContextRef context, Boolean *enableVerify);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use the [`SSLSetEnableCertVerify`](./sslsetenablecertverify.md) function to set the value of the `enableVerify` flag.
 

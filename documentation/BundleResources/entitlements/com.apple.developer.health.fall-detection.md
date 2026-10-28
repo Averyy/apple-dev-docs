@@ -16,7 +16,7 @@ An entitlement that permits an app to receive fall-detection notifications from 
 - **Name**: `com.apple.developer.health.fall-detection`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use the data you receive from [`CMFallDetectionManager`](../../CoreMotion/cmfalldetectionmanager.md) to provide assistance, or initiate communication with emergency services, in the event that someone falls.
 

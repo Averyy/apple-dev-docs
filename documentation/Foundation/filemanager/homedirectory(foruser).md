@@ -19,7 +19,7 @@ func homeDirectory(forUser userName: String) -> URL?
 - (NSURL *) homeDirectoryForUser:(NSString *) userName;
 ```
 
-#### Return Value
+## Return Value
 
 A URL object containing the location of the specified user’s home directory, or `nil` if no such user exists or the user’s home directory is not available.
 

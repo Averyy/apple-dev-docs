@@ -24,7 +24,7 @@ class HMRoom
 @interface HMRoom : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HMRoom`](./hmroom.md) instance is a part of a home representing an individual room in the home. Rooms don’t have any physical characteristics like size or location. Instead, they’re names that are meaningful to the user, like “living room” or “kitchen”. Meaningful room names enable voice commands like “Siri, turn on the kitchen lights.”
 

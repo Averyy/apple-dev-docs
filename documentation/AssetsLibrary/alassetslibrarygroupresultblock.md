@@ -12,7 +12,7 @@ Signature for the block executed if the user grants access to the caller to acce
 typedef void (^)(ALAssetsGroup *) ALAssetsLibraryGroupResultBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameter is defined as follows:
 

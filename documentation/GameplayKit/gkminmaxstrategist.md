@@ -24,17 +24,17 @@ class GKMinmaxStrategist
 @interface GKMinmaxStrategist : NSObject
 ```
 
-#### Overview
+## Overview
 
 To use this strategy, you provide scores that rate possible states of your game model for their desirability to a player, and the strategist exhaustively searches all possible game model states in order to make choices that maximize the rating for its own moves and minimize the rating for an opponent’s moves. You provide information about your game model to the strategist by implementing the [`GKGameModel`](./gkgamemodel.md), [`GKGameModelPlayer`](./gkgamemodelplayer.md), and [`GKGameModelUpdate`](./gkgamemodelupdate.md) protocols in your custom classes, and then use the strategist’s methods to find optimal moves.
 
-##### Choosing a Strategist
+### Choosing a Strategist
 
 GameplayKit provides multiple strategist classes. The advantage of the [`GKMinmaxStrategist`](./gkminmaxstrategist.md) class is its deterministic, exhaustive strategy: If allowed, the minmax strategist searches the entire space of possible moves and the game states they lead to, so it can find the best possible move at any time. The cost of this strategy is performance: searching every possible game state takes time, especially for complex games where many moves are possible at any given time. Additionally, this strategy requires that your game model implement the [`score(for:)`](./gkgamemodel/score%28for%29.md) method to rate the desirability of each game state.
 
 See the [`GKStrategist`](./gkstrategist.md) protocol for alternate strategies, as well as the methods and properties supported by all strategist classes.
 
-##### Using a Minmax Strategist
+### Using a Minmax Strategist
 
 Using the minmax strategist in a game requires the following steps:
 

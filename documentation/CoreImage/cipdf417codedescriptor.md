@@ -24,7 +24,7 @@ class CIPDF417CodeDescriptor
 @interface CIPDF417CodeDescriptor : CIBarcodeDescriptor
 ```
 
-#### Overview
+## Overview
 
 PDF417 is a stacked linear barcode symbol format used predominantly in transport, ID cards, and inventory management. Each pattern in the code comprises 4 bars and spaces, 17 units long.
 

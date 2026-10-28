@@ -21,7 +21,7 @@ Returns a copy of a given object.
 extern idobject_copy(id obj, size_t size);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `obj`.
 

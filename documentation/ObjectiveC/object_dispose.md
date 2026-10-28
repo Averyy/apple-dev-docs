@@ -21,7 +21,7 @@ Frees the memory occupied by a given object.
 extern idobject_dispose(id obj);
 ```
 
-#### Return Value
+## Return Value
 
 `nil`.
 

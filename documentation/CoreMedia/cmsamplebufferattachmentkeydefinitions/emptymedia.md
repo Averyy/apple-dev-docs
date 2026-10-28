@@ -21,7 +21,7 @@ Marks an intentionally empty interval in the sequence of samples.
 static let emptyMedia: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Bool>
 ```
 
-#### Discussion
+## Discussion
 
 The sample buffer’s output presentation timestamp indicates when the empty interval begins. Marker sample buffers with this attachment are used to announce the arrival of empty edits. The getter returns the default value of false if this attachment is not present.
 

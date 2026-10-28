@@ -21,7 +21,7 @@ var snapsToBaseValue: Bool { get set }
 @property (nonatomic, assign) BOOL snapsToBaseValue;
 ```
 
-#### Discussion
+## Discussion
 
 If `YES`, the control’s value will revert to its base value when no longer pressed.
 

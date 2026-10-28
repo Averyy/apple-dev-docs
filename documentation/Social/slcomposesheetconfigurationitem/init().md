@@ -21,7 +21,7 @@ init!()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized configuration item or `nil` if an error occurred.
 

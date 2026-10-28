@@ -23,7 +23,7 @@ var transcriptions: [SFTranscription] { get }
 @property (nonatomic, copy, readonly) NSArray<SFTranscription *> * transcriptions;
 ```
 
-#### Discussion
+## Discussion
 
 All transcriptions correspond to the same utterance, which can be a partial or final result of the overall request. The first transcription in the array has the highest confidence rating, followed by transcriptions with decreasing confidence ratings.
 

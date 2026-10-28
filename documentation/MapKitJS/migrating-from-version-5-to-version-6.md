@@ -5,9 +5,9 @@
 
 Adopt modern web platform conventions introduced in MapKit JS version 6.
 
-#### Breaking Changes
+## Breaking Changes
 
-##### Native EventTarget Replaces MapKitEventTarget
+### Native EventTarget Replaces MapKitEventTarget
 
 MapKit JS version 6 removes the custom event system in favor of standard DOM APIs. All MapKit JS classes that previously extended [`MapKitEventTarget`](./mapkiteventtarget.md) (such as [`Map`](./map.md), [`Annotation`](./annotation.md), [`TileOverlay`](./tileoverlay.md), and the [`mapkit`](./mapkit.md) namespace object) now extend `EventTarget`.
 
@@ -24,7 +24,7 @@ map.addEventListener("region-change-end", (event) => this.handleRegionChange(eve
 map.addEventListener("region-change-end", handleRegionChange, { once: true });
 ```
 
-##### Null Replaces Undefined for Absent Values
+### Null Replaces Undefined for Absent Values
 
 MapKit JS version 6 returns `null` instead of `undefined` for optional properties and return values. This affects getters, method return values, callback parameters, event properties, and data class properties such as [`Place`](./place.md).
 
@@ -43,17 +43,17 @@ JavaScript code using truthy/falsy checks or nullish coalescing (`??`) isn’t a
 
 **TypeScript:** Getter return types change from `T | undefined` to `T | null`. Code using strict equality checks against `undefined` produces type errors.
 
-##### CORS Required for Images
+### CORS Required for Images
 
 MapKit JS version 6 requires CORS for all images, including tile images and annotation images. When you use [`ImageSource`](./imagesource.md) objects such as `HTMLCanvasElement` or `HTMLImageElement`, make sure they contain only CORS-clean pixel data.
 
-##### TileOverlay Behavioral Changes
+### TileOverlay Behavioral Changes
 
 In version 6, MapKit JS no longer turns off map rotation when tile overlays are present, and zoom no longer snaps to integer levels. Tile images also require CORS, as described in [CORS Required for Images](./migrating-from-version-5-to-version-6.md#CORS-Required-for-Images).
 
-#### Deprecations
+## Deprecations
 
-##### Callback Parameters and Cancellation in Async Service APIs
+### Callback Parameters and Cancellation in Async Service APIs
 
 All asynchronous service methods now return `Promise` instead of `number` (request ID). You can use async/await syntax. Callbacks still work at runtime but the framework considers them deprecated. The framework also deprecates [`cancel()`](./service/cancel.md) method accepting a numeric request ID — use `AbortController`/`AbortSignal` instead.
 
@@ -88,26 +88,26 @@ When you abort a request, the Promise rejects with a `DOMException` where `name 
 
 **TypeScript:** The return type changes from `number` to `Promise<T>`, and `cancel()` now accepts `Promise<unknown>` instead of `number`.
 
-##### MapFeatureAnnotation.fetchPlace()
+### MapFeatureAnnotation.fetchPlace()
 
 Use [`getPlace()`](./placelookup/getplace.md) instead. It returns a Promise and supports AbortSignal cancellation.
 
-##### ImageDelegate.getImageUrl()
+### ImageDelegate.getImageUrl()
 
 Use [`getImage()`](./imagedelegate/getimage.md) instead. It returns a Promise that resolves to an [`ImageSource`](./imagesource.md) or URL string.
 
-##### CoordinateRegion.toMapRect()
+### CoordinateRegion.toMapRect()
 
 [`toMapRect()`](./coordinateregion/tomaprect.md) is mathematically imprecise and MapKit JS deprecates it in this release. Use [`MapRect`](./maprect.md) directly when precision matters, particularly at low zoom levels.
 
 - Prefer [`visibleMapRect`](./map/visiblemaprect.md) over [`region`](./map/region.md) for setting the map’s visible area.
 - Pass [`MapRect`](./maprect.md) to [`cameraBoundary`](./map/cameraboundary.md) instead of [`CoordinateRegion`](./coordinateregion.md).
 
-##### TileOverlay.urlTemplate Renamed to imageForTile
+### TileOverlay.urlTemplate Renamed to imageForTile
 
 This release renames the `urlTemplate` property to [`imageForTile`](./tileoverlay/imagefortile.md). The old name continues to work as a deprecated alias.
 
-##### Enumeration Accessors Moved to Top Level
+### Enumeration Accessors Moved to Top Level
 
 Enumeration accessors previously nested on class objects are now available directly on the [`mapkit`](./mapkit.md) namespace with singular naming. The old accessors still work but log a deprecation warning.
 
@@ -122,13 +122,13 @@ Enumeration accessors previously nested on class objects are now available direc
 | `mapkit.Directions.`​[`Transport`](./directions/transport.md) | `mapkit.`​[`TransportType`](./mapkit/transporttype.md) |
 | `mapkit.Search.`​[`RegionPriority`](./search/regionpriority-data.var.md) | `mapkit.`​[`RegionPriority`](./mapkit/regionpriority.md) |
 
-#### New Features
+## New Features
 
-##### Wheel Events Zoom and Pan Without Holding Shift
+### Wheel Events Zoom and Pan Without Holding Shift
 
 The map now zooms and pans with wheel events without requiring you to hold the Shift key.
 
-##### mapkit.load() Returns Promise
+### mapkit.load() Returns Promise
 
 [`load()`](./mapkit/load.md) now returns `Promise<MapKit>`:
 
@@ -145,7 +145,7 @@ const { Map } = await mapkit.load(["map"]);
 
 The `data-callback` function now also fires when libraries fail to load, so your application can handle errors instead of waiting indefinitely.
 
-##### Object Literals Accepted as Data Types
+### Object Literals Accepted as Data Types
 
 You can now pass plain object literals wherever data type class instances were previously required. New interfaces define the expected shape: [`CoordinateData`](./coordinatedata.md), [`CoordinateRegionData`](./coordinateregiondata.md), [`CoordinateSpanData`](./coordinatespandata.md), [`CameraZoomRangeData`](./camerazoomrangedata.md), [`MapPointData`](./mappointdata.md), [`MapRectData`](./maprectdata.md), [`MapSizeData`](./mapsizedata.md), and [`PaddingData`](./paddingdata.md).
 
@@ -165,15 +165,15 @@ map.region = {
 
 Existing code using class instances continues to work because each class implements its corresponding data interface.
 
-##### ImageSource Support for Annotations
+### ImageSource Support for Annotations
 
 [`ImageAnnotation`](./imageannotation.md) and [`MarkerAnnotation`](./markerannotation.md) now accept [`ImageSource`](./imagesource.md) objects directly, in addition to [`ImageHashObject`](./imagehashobject.md) and [`ImageDelegate`](./imagedelegate.md). You can also pass `Promise<ImageSource>` for async image loading.
 
-##### ImageSource Support for TileOverlay
+### ImageSource Support for TileOverlay
 
 [`imageForTile`](./tileoverlay/imagefortile.md) now accepts a callback that returns [`ImageSource`](./imagesource.md), `Promise<ImageSource>`, or `null` for client-side tile rendering.
 
-##### PlaceLookup.getPlace(annotation) Overload
+### PlaceLookup.getPlace(annotation) Overload
 
 A new overload of [`getPlace()`](./placelookup/getplace.md) accepts a [`MapFeatureAnnotation`](./mapfeatureannotation.md) directly.
 

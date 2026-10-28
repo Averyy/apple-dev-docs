@@ -25,7 +25,7 @@ case equirectangular
 kCMProjectionType_Equirectangular
 ```
 
-#### Discussion
+## Discussion
 
 The video frames map onto the interior of a 3D sphere projection.
 

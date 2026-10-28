@@ -22,7 +22,7 @@ var currentMaximumTrackImage: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * currentMaximumTrackImage;
 ```
 
-#### Discussion
+## Discussion
 
 Sliders can have different track images for different control states. The active control state determines which maximum track image is stored in this property. To get the maximum track image for a different control state, use the [`maximumTrackImage(for:)`](./maximumtrackimage%28for%29.md) method.
 

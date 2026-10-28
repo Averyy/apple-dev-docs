@@ -23,7 +23,7 @@ Requests user confirmation before performing the app intent.
 func requestConfirmation<Result>(result: Result, confirmationActionName: ConfirmationActionName = .`continue`, showPrompt: Bool = true) async throws where Result : IntentResult
 ```
 
-#### Discussion
+## Discussion
 
 Use [`requestConfirmation(conditions:actionName:dialog:)`](./requestconfirmation%28conditions,actionname,dialog%29.md) or [`requestConfirmation(conditions:actionName:dialog:showDialogAsPrompt:content:)`](./requestconfirmation%28conditions,actionname,dialog,showdialogasprompt,content%29.md) instead.
 

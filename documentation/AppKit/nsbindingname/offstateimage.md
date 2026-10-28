@@ -19,7 +19,7 @@ static let offStateImage: NSBindingName
 extern NSBindingName NSOffStateImageBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

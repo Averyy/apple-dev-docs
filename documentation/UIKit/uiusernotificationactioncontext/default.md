@@ -23,7 +23,7 @@ case `default`
 UIUserNotificationActionContextDefault
 ```
 
-#### Discussion
+## Discussion
 
 In this context, the full UI is displayed for the notification’s alert. You may specify up to four custom actions in this context.
 

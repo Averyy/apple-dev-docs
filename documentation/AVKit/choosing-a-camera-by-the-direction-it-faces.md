@@ -5,7 +5,7 @@
 
 Find out which way each camera faces, and follow the change as someone opens and closes the device.
 
-#### Overview
+## Overview
 
 On an iPhone with one display, each camera faces a single direction. The front camera faces the same way as the display, the rear cameras face the opposite way, and their direction is a fixed property of the device. iPhone Duo has a display on each side and a camera above each one, so which way a camera faces depends on the display your app appears on. Opening or closing the device moves your app to the other display, and a camera that faced the same way as your interface now faces the opposite way.
 
@@ -27,7 +27,7 @@ Use [`AVCaptureDeviceDirectionCoordinator`](./avcapturedevicedirectioncoordinato
 
 The [`position`](../AVFoundation/avcapturedevice/position-swift.property.md) property describes where a camera sits in relation to the device’s display. On an iPhone with one display, that location also tells you which way the camera points. On iPhone Duo, position still reports where a camera sits, and the coordinator reports which way it faces.
 
-#### Start from the virtual front camera
+## Start from the virtual front camera
 
 Continue to discover cameras the way your app already does, with an [`AVCaptureDevice.DiscoverySession`](../AVFoundation/avcapturedevice/discoverysession.md) that specifies your device types and the front position. On iPhone Duo, the [`builtInWideAngleCamera`](../AVFoundation/avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md) and [`builtInUltraWideCamera`](../AVFoundation/avcapturedevice/devicetype-swift.struct/builtinultrawidecamera.md) types return the virtual front camera. It streams from the camera above the display your app appears on, and it follows your app as someone opens and closes the device.
 
@@ -61,7 +61,7 @@ The virtual front camera provides a good starting point for an existing app. It 
 
 Capture from the two physical cameras when capture is your app’s main job. The [`builtInOuterUltraWideCamera`](../AVFoundation/avcapturedevice/devicetype-swift.struct/builtinouterultrawidecamera.md) and [`builtInInnerUltraWideCamera`](../AVFoundation/avcapturedevice/devicetype-swift.struct/builtininnerultrawidecamera.md) types provide everything each camera can do. Following the direction they face becomes your app’s work, and a coordinator reports it.
 
-#### Create a direction coordinator for your preview
+## Create a direction coordinator for your preview
 
 Create an [`AVCaptureDeviceDirectionCoordinator`](./avcapturedevicedirectioncoordinator.md) object to monitor the direction your cameras face. Pass it the view that shows your preview, the device types your app captures from, and a change handler that responds as the direction changes. The view is the coordinator’s frame of reference rather than something it draws into.
 
@@ -103,7 +103,7 @@ final class DirectionObserver {
 
 Hold a strong reference to the coordinator for as long as its view stays onscreen. A coordinator reports directions in relation to one view, so an app that shows a preview on both displays creates a coordinator for each one. The same rear camera then comes back as forward facing from one coordinator and backward facing from the other.
 
-#### Respond to a change in camera direction
+## Respond to a change in camera direction
 
 The coordinator calls your change handler on the main actor, soon after you create it and again on every change. The first call passes the directions in effect at that moment, so your app reads the starting configuration without a separate step. Until that call arrives, [`deviceDirections`](./avcapturedevicedirectioncoordinator/devicedirections.md) returns an empty map.
 
@@ -135,7 +135,7 @@ extension DirectionObserver {
 
 Reconfigure a single video input rather than connecting both cameras in a multicamera session. Reconfiguring one input costs less, and it covers what most apps need.
 
-#### Create a capture device from a descriptor
+## Create a capture device from a descriptor
 
 The coordinator reports each camera as an [`AVCaptureDeviceDescriptor`](./avcapturedevicedescriptor.md), which provides the identifying properties of a capture device. A descriptor provides the camera’s `deviceType`, `mediaTypes`, `position`, `uniqueID`, and `localizedName`, so your app can get the defining characteristics of a camera without touching the capture system.
 
@@ -180,7 +180,7 @@ actor CaptureService {
 
 A descriptor identifies a camera, and it doesn’t reserve one. The set of cameras changes while your app dispatches to its session actor, so handle a resolution that produces no device rather than force-unwrapping the result.
 
-#### Update your interface for the new camera
+## Update your interface for the new camera
 
 A device change takes time, and frames from the outgoing camera reach the screen while the new camera starts. Mask the preview when your handler fires, and restore it after the new device delivers frames.
 
@@ -212,13 +212,13 @@ private func applyVideoMirroring(from directionMap: AVCaptureDeviceDirectionMap)
 
 Call this method each time the coordinator reports a new map, and again after you connect a new device, because removing and adding an input creates a preview connection that doesn’t carry your override.
 
-#### Keep the preview and your captured media upright
+## Keep the preview and your captured media upright
 
 An [`AVCaptureDevice.RotationCoordinator`](../AVFoundation/avcapturedevice/rotationcoordinator.md) reports how much to rotate a camera’s preview and its captured output to keep both horizon-level relative to gravity. Create one with the device you capture from and the layer that shows its preview, then read the angles it reports as someone turns the device.
 
 Your app needs this whether or not it changes cameras, and on iPhone Duo the angle also changes as your app moves between the two displays. A rotation coordinator reports angles for the device you create it with. Create a new one each time you switch cameras. For more information, see [Supporting device rotation in your camera app](../AVFoundation/supporting-device-rotation-in-your-camera-app.md).
 
-#### Write one code path for every iPhone
+## Write one code path for every iPhone
 
 Your app runs the same code on every iPhone. On a device with a single display, a coordinator reports the cameras your app already expects. Front cameras arrive in the forward-facing array, back cameras arrive in the backward-facing array, and cameras with an unspecified position arrive in neither. Those cameras never change direction, so your handler receives one call and no more.
 

@@ -14,7 +14,7 @@ struct ifnet_stats_param {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used get and set the interface statistics.
 

@@ -5,7 +5,7 @@
 
 Train a machine learning model to recognize a person’s body movements.
 
-#### Overview
+## Overview
 
 An *action classifier* is a machine learning model that identifies a person’s body movements in a video. For example, an action classifier you train to classify exercise movements can predict “jumping jacks” when you provide it with a video of a person doing jumping jacks.
 
@@ -30,7 +30,7 @@ Training an action classifier with the Create ML developer tool follows the same
 
 > **Note**: Session 10043: [Build an Action Classifier with Create ML](https://developer.apple.com/videos/play/wwdc2020/10043/)
 
-##### Choose a Frame Rate
+### Choose a Frame Rate
 
 Before you create an action classifier, decide what *frame rate —* the number of video frames, per second — the destination app uses from a camera or file.
 
@@ -38,7 +38,7 @@ Before you create an action classifier, decide what *frame rate —* the number 
 
 Plan to match your action classifier’s frame rate to the destination app’s frame rate. For example, if your app acquires video from a camera at 30 frames per second (fps), plan to configure your action classifier to 30 fps.
 
-##### Collect Example Action Videos
+### Collect Example Action Videos
 
 Once you’ve determined your action classifier’s frame rate, collect training videos. Unlike the classifier and destination app frame rates that need to match, the frame rates of these videos can be greater than or equal to the classifier’s frame rate. For example, you can use videos at 30, 50, or 60 frames per second to train an action classifier you configure to 30 fps.
 
@@ -48,7 +48,7 @@ Additionally, collect example videos for a *negative class*, which is a group of
 
 See [Gathering Training Videos for an Action Classifier](./gathering-training-videos-for-an-action-classifier.md) for more details on collecting high-quality training videos and creating negative classes.
 
-##### Organize the Example Videos
+### Organize the Example Videos
 
 The Create ML developer tool supports several types of data sources, each with its own arrangement of files within a parent folder. For example, two common data-source types are:
 
@@ -59,7 +59,7 @@ The Create ML developer tool supports several types of data sources, each with i
 
 See [Building an Action Classifier Data Source](./building-an-action-classifier-data-source.md) for detailed instructions on organizing your video files into one of these arrangements.
 
-##### Configure an Action Classification Project
+### Configure an Action Classification Project
 
 Open the developer tool by choosing Xcode > Open Developer Tool > Create ML, and create a new Action Classification project.
 
@@ -81,7 +81,7 @@ Create ML calculates the model’s prediction window size — the number of fra
 
 If all the actions are equally valid from the camera’s left or right, you can effectively double your training data by enabling the Horizontal Flip augmentation. When you enable Horizontal Flip, Create ML makes a horizontally mirrored copy of the landmark position outputs for each video frame [Vision](../Vision/Vision.md) analyzes.
 
-##### Train the Action Classifier
+### Train the Action Classifier
 
 To begin the training session, click Train. Create ML starts with the feature-extraction phase, using a [`VNDetectHumanBodyPoseRequest`](../Vision/vndetecthumanbodyposerequest.md) to find the person’s body landmarks in each frame.
 
@@ -93,7 +93,7 @@ If you need to temporarily suspend the training session for any reason, such as 
 
 If you want to try a preliminary version of the model before it’s finished training, click Snapshot. You can create a Core ML model file from a snapshot by selecting the snapshot and then exporting it in the Output tab. See [Export the Action Classifier](./creating-an-action-classifier-model.md#Export-the-Action-Classifier) section below for more details about the Output tab.
 
-##### Assess the Action Classifier
+### Assess the Action Classifier
 
 Evaluate the model’s prediction accuracy by inspecting its Recall and Precision metrics for the training, validation, or testing phases in the Evaluation tab.
 
@@ -110,7 +110,7 @@ If an action classifier misidentifies a nonaction as an action, create or augmen
 
 Once you’ve configured the new model source, click Train to create a new action classifier with that configuration. Repeat the process of evaluating, adjusting, and training action classifiers until you’re satisfied with the performance of one of them.
 
-##### Preview the Action Classifier
+### Preview the Action Classifier
 
 Use the Preview tab to quickly test your action classifier before you add it to an Xcode project. Get a visual sense of how the model works by dragging in a video and clicking the Play button to see the model’s predictions.
 
@@ -120,7 +120,7 @@ When you drag in a video file, Create ML uses the action classifier to analyze t
 
 > 💡 **Tip**: Quickly test an action classifier’s ability to recognize all of its action classes by previewing an action montage video.
 
-##### Export the Action Classifier
+### Export the Action Classifier
 
 To save an action classifier as a Core ML file, select the Output tab and click the Get, Xcode, or Share button. You can export a model from any model source that’s finished training or from any snapshot you created while training the model.
 

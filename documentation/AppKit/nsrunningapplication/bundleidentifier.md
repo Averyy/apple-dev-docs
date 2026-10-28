@@ -19,7 +19,7 @@ var bundleIdentifier: String? { get }
 @property (copy, readonly, nullable) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property will be `nil` if the application does not have an Info.plist.
 

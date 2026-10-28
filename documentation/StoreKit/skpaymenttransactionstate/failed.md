@@ -34,7 +34,7 @@ SKPaymentTransactionStateFailed
 - [Testing an interrupted purchase](../testing-an-interrupted-purchase.md)
 - [Testing Apple In-App Purchases in Xcode](../testing-in-app-purchases-in-xcode.md)
 
-#### Discussion
+## Discussion
 
 Check the [`error`](../skpaymenttransaction/error.md) property to determine what happened.
 

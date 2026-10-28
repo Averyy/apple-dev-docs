@@ -21,7 +21,7 @@ An image analysis request that tracks the movement of a previously identified ob
 final class TrackObjectRequest
 ```
 
-#### Overview
+## Overview
 
 Use this type of request to track the bounding boxes around objects previously identified in an image. Vision attempts to locate the same object from the input observation throughout the sequence. Each time the request runs, it produces a [`DetectedObjectObservation`](./detectedobjectobservation.md) that holds the tracked object’s updated bounding box.
 

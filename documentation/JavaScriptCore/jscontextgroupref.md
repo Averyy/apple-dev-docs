@@ -24,7 +24,7 @@ typealias JSContextGroupRef = OpaquePointer
 typedef const struct OpaqueJSContextGroup * JSContextGroupRef;
 ```
 
-#### Discussion
+## Discussion
 
 Contexts in the same group may share and exchange JavaScript objects.
 

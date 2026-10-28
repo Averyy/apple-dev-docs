@@ -20,7 +20,7 @@ static var nodeLoadExternalEntitiesNever: XMLNode.Options { get }
 NSXMLNodeLoadExternalEntitiesNever
 ```
 
-#### Discussion
+## Discussion
 
 You may choose only one of [`nodeLoadExternalEntitiesAlways`](./nodeloadexternalentitiesalways.md), [`nodeLoadExternalEntitiesSameOriginOnly`](./nodeloadexternalentitiessameoriginonly.md), or [`nodeLoadExternalEntitiesNever`](./nodeloadexternalentitiesnever.md) or none.
 

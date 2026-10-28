@@ -23,7 +23,7 @@ var statusBarFrame: CGRect { get }
 @property (nonatomic, readonly) CGRect statusBarFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `CGRectZero` if the status bar is hidden.
 

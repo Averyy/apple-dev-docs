@@ -21,7 +21,7 @@ Posted after a private queue context merges changes from another context, contai
 struct DidMergeChangesAsyncMessage
 ```
 
-#### Overview
+## Overview
 
 Only use this message type for contexts with `NSPrivateQueueConcurrencyType`. For main queue contexts, use [`NSManagedObjectContext.DidMergeChangesMessage`](./didmergechangesmessage.md).
 

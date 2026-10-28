@@ -15,11 +15,11 @@ Asynchronously writes data from from a buffer to the resource.
 func write(from buffer: UnsafeRawBufferPointer, startingAt offset: off_t, length: Int) async throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written.
 
-#### Discussion
+## Discussion
 
 For the write to succeed, requests must conform to any transfer requirements of the underlying resource. Disk drives typically require sector (`physicalBlockSize`) addressed operations of one or more sector-aligned offsets.
 

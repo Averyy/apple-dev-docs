@@ -20,7 +20,7 @@ The error code for an unknown error.
 static var unknownError: PKPaymentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if an unknown but non-fatal error occurred during payment processing.  The user can attempt authorization again.
 

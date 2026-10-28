@@ -20,7 +20,7 @@ let kSecCFErrorInfoPlist: CFString
 extern CFStringRef const kSecCFErrorInfoPlist;
 ```
 
-#### Discussion
+## Discussion
 
 This key is present when the `Info.plist` dictionary or other component has been found to be invalid.
 

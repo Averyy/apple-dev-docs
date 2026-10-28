@@ -20,11 +20,11 @@ func CGDisplayIsInMirrorSet(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsInMirrorSet(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is a member of a software or hardware mirroring set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 For more information about display mirroring, see [`CGConfigureDisplayMirrorOfDisplay(_:_:_:)`](./cgconfiguredisplaymirrorofdisplay%28_,_,_%29.md).
 

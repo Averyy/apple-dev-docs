@@ -21,7 +21,7 @@ Destroys a double-precision biquadratic filter setup object.
 extern void vDSP_biquad_DestroySetupD(vDSP_biquad_SetupD __setup);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_biquadm_DestroySetup`](../kernel/api-1579970-vdsp_biquadm_destroysetup.md), except for the type of the `setup` parameter.
 

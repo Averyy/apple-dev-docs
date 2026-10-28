@@ -24,7 +24,7 @@ unowned(unsafe) var delegate: (any EAAccessoryDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<EAAccessoryDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives notifications about changes to the status of the accessory object. The delegate must adopt the [`EAAccessoryDelegate`](../eaaccessorydelegate.md) protocol.
 

@@ -23,7 +23,7 @@ case type30Drop
 kSMPTETimeType30Drop
 ```
 
-#### Discussion
+## Discussion
 
 30 video frames per second, with video-frame numbers adjusted to ensure that the timecode matches elapsed clock time.
 

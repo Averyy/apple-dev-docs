@@ -5,7 +5,7 @@
 
 Minimize how frequently the system stops your app by addressing common termination reasons.
 
-#### Overview
+## Overview
 
 Terminations are part of the app lifecycle, when the system stops your process. You can significantly reduce terminations by fixing bugs and lowering your app’s resource consumption; however, terminations are expected and you cannot fully eliminate them. The system uses terminations to prioritize resources needed to keep the foreground user experience fluid.
 
@@ -17,7 +17,7 @@ View Termination data using the [Xcode Organizer](https://developer.apple.com/vi
 
 For more information about debugging your terminations, see the following WWDC session video: [developer.apple.com/videos/play/wwdc2020/10078](https://developer.apple.com/videos/play/wwdc2020/10078/).
 
-##### Understand termination reasons
+### Understand termination reasons
 
 The system stops your app when it encounters any of the following issues.
 
@@ -30,11 +30,11 @@ The system stops your app when it encounters any of the following issues.
 
 To resolve terminations that are crashes, view the stack trace for the crash in the Crashes Organizer in Xcode. For more information about diagnosing and resolving a crash, see [Diagnosing Issues Using Crash Reports and Device Logs ](./diagnosing-issues-using-crash-reports-and-device-logs.md).
 
-##### Background termination reasons
+### Background termination reasons
 
 Some termination reasons only apply while your app is in the background:
 
-- Task Timeout. The system allows your app to continue executing in the background, after the user has placed the app in the background, through the use of the [beginBackgroundTask API](../UIKit/uiapplication/api-1623051-beginbackgroundtask.md). If your app does not finish its work in the allotted time, the system will terminate it with the Task Timeout reason.
+- Task Timeout. The system allows your app to continue executing in the background, after the user has placed the app in the background, through the use of the [beginBackgroundTask API](../UIKit/uiapplication/beginbackgroundtask%28withname,expirationhandler%29.md). If your app does not finish its work in the allotted time, the system will terminate it with the Task Timeout reason.
 - File Lock. A File Lock termination happens when your app continues to hold a lock on a shared file held in your AppGroup when the user put your app in the background. The system performs this termination to avoid blocking on a lock that your app may never release.
 
 ## See Also

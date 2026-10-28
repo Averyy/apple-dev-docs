@@ -12,7 +12,7 @@ The paths to source and resource files that you don’t want to include in the t
 final var exclude: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Excluded paths are relative to the target path. This property has precedence over the `sources` and `resources` properties.
 

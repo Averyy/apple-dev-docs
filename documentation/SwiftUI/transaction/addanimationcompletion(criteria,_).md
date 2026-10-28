@@ -21,7 +21,7 @@ Adds a completion to run when the animations created with this transaction are a
 mutating func addAnimationCompletion(criteria: AnimationCompletionCriteria = .logicallyComplete, _ completion: @escaping () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion callback will always be fired exactly one time. If no animations are created by the changes in `body`, then the callback will be called immediately after `body`.
 

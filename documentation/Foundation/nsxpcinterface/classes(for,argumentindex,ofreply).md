@@ -25,7 +25,7 @@ func classes(for sel: Selector, argumentIndex arg: Int, ofReply: Bool) -> Set<An
 - (NSSet<Class> *) classesForSelector:(SEL) sel argumentIndex:(NSUInteger) arg ofReply:(BOOL) ofReply;
 ```
 
-#### Discussion
+## Discussion
 
 See [`setClasses(_:for:argumentIndex:ofReply:)`](./setclasses%28_,for,argumentindex,ofreply%29.md) for more explanation.
 

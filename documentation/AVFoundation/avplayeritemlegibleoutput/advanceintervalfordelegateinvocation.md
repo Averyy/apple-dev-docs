@@ -24,7 +24,7 @@ var advanceIntervalForDelegateInvocation: TimeInterval { get set }
 @property (nonatomic, readwrite) NSTimeInterval advanceIntervalForDelegateInvocation;
 ```
 
-#### Discussion
+## Discussion
 
 If possible, an `AVPlayerItemLegibleOutput` instance messages its delegate `advanceIntervalForDelegateInvocation` seconds earlier than it otherwise would.
 

@@ -12,7 +12,7 @@ virtual void serviceThread(
  void *param);
 ```
 
-#### Overview
+## Overview
 
 Must be implemented by a subclass that calls scheduleServiceThread(). The default implementation does nothing.
 

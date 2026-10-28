@@ -21,7 +21,7 @@ Performs regression on a shaped array.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> FullyConnectedNetworkRegressorModel<Scalar>.Target
 ```
 
-#### Return Value
+## Return Value
 
 A regression.
 

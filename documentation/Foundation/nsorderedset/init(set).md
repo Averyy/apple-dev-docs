@@ -25,7 +25,7 @@ convenience init(set: Set<AnyHashable>)
 - (instancetype) initWithSet:(NSSet<id> *) set;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ordered set containing the objects in the set.
 

@@ -19,7 +19,7 @@ static let criticalValue: NSBindingName
 extern NSBindingName NSCriticalValueBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

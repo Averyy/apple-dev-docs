@@ -10,7 +10,7 @@ Adopt the system playback interface to provide an immersive video watching exper
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 296: [Support immersive video playback in visionOS apps](https://developer.apple.com/videos/play/wwdc2025/296).
 

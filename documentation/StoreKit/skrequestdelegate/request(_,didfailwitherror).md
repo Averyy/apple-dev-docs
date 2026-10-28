@@ -31,7 +31,7 @@ optional func request(_ request: SKRequest, didFailWithError error: any Error)
 
 - [Handling errors](../handling-errors.md)
 
-#### Discussion
+## Discussion
 
 When the request fails, your application should release the request. The [`requestDidFinish(_:)`](./requestdidfinish%28_%29.md) method is not called after this method is called.
 

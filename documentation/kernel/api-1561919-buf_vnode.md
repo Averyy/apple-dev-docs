@@ -15,11 +15,11 @@ Get the vnode associated with a buffer.
 vnode_t buf_vnode(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Buffer's vnode.
 
-#### Discussion
+## Discussion
 
 Every buffer is associated with a file. Because there is an I/O in flight, there is an iocount on this vnode; it is returned WITHOUT an extra iocount, and vnode_put() need NOT be called.
 

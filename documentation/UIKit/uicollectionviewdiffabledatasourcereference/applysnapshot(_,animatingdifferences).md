@@ -23,7 +23,7 @@ func applySnapshot(_ snapshot: NSDiffableDataSourceSnapshotReference, animatingD
 - (void) applySnapshot:(NSDiffableDataSourceSnapshot<id,id> *) snapshot animatingDifferences:(BOOL) animatingDifferences;
 ```
 
-#### Discussion
+## Discussion
 
 The diffable data source computes the difference between the collection view’s current state and the new state in the applied snapshot, which is an O(*n*) operation, where *n* is the number of items in the snapshot.
 

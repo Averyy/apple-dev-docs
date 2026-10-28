@@ -19,7 +19,7 @@ var attachment: VZSerialPortAttachment? { get set }
 @property (strong, nullable) VZSerialPortAttachment * attachment;
 ```
 
-#### Discussion
+## Discussion
 
 This property may change at any time while the VM is running.
 

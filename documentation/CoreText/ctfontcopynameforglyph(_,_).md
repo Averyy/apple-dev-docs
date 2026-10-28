@@ -25,7 +25,7 @@ func CTFontCopyNameForGlyph(_ font: CTFont, _ glyph: CGGlyph) -> CFString?
 extern CFStringRefCTFontCopyNameForGlyph(CTFontRef font, CGGlyph glyph);
 ```
 
-#### Return Value
+## Return Value
 
 The glyph name as a [`CFString`](../CoreFoundation/cfstring.md), or `NULL` if the glyph is invalid.
 

@@ -21,7 +21,7 @@ Specifies the height in pixels of the 2D coordinate system to define the rectang
 var referenceRasterHeight: UInt16
 ```
 
-#### Discussion
+## Discussion
 
 Usually matches the height of the video or the output device.
 

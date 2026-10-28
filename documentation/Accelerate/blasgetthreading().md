@@ -25,7 +25,7 @@ func BLASGetThreading() -> BLAS_THREADING
 enum BLAS_THREADING BLASGetThreading();
 ```
 
-#### Return Value
+## Return Value
 
 A constant that represents the current BLAS and LAPACK threading model.
 

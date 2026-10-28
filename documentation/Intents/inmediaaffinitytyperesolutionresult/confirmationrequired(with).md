@@ -24,11 +24,11 @@ class func confirmationRequired(with mediaAffinityTypeToConfirm: INMediaAffinity
 + (instancetype) confirmationRequiredWithMediaAffinityTypeToConfirm:(INMediaAffinityType) mediaAffinityTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaAffinityTypeResolutionResult`](../inmediaaffinitytyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to an affinity that’s similar, but not equal to, the one specified in the intent. Don’t use this method to resolve affinities your app doesn’t support.
 

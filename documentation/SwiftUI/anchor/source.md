@@ -22,7 +22,7 @@ A type-erased geometry value that produces an anchored value of a given type.
 struct Source
 ```
 
-#### Overview
+## Overview
 
 SwiftUI passes anchored geometry values around the view tree via preference keys. It then converts them back into the local coordinate space using a [`GeometryProxy`](../geometryproxy.md) value.
 

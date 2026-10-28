@@ -19,7 +19,7 @@ func SpeechBusy() -> Int16
 SInt16 SpeechBusy(void);
 ```
 
-#### Return Value
+## Return Value
 
 The number of speechchannels that are currently synthesizing speech in the application.This is useful when you want to ensure that an earlier speech requesthas been completed before having the system speak again. Pausedspeech channels are counted among those that are synthesizing speech.
 

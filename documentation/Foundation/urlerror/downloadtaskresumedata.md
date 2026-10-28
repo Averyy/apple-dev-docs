@@ -21,7 +21,7 @@ An opaque data object used to resume a failed download task.
 var downloadTaskResumeData: Data? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Pass this object to [`downloadTask(withResumeData:)`](../urlsession/downloadtask%28withresumedata%29.md) or [`downloadTask(withResumeData:completionHandler:)`](../urlsession/downloadtask%28withresumedata,completionhandler%29.md) to create a new download task that can attempt to resume the failed download.
 

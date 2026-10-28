@@ -21,7 +21,7 @@ A publisher that shares the output of an upstream publisher with multiple subscr
 final class Share<Upstream> where Upstream : Publisher
 ```
 
-#### Overview
+## Overview
 
 This publisher type supports multiple subscribers, all of whom receive unchanged elements and completion states from the upstream publisher.
 

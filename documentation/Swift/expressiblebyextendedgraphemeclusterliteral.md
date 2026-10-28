@@ -21,7 +21,7 @@ A type that can be initialized with a string literal containing a single extende
 protocol ExpressibleByExtendedGraphemeClusterLiteral : ExpressibleByUnicodeScalarLiteral
 ```
 
-#### Overview
+## Overview
 
 An *extended grapheme cluster* is a group of one or more Unicode scalar values that approximates a single user-perceived character.  Many individual characters, such as “é”, “김”, and “🇮🇳”, can be made up of multiple Unicode scalar values. These code points are combined by Unicode’s boundary algorithms into extended grapheme clusters.
 
@@ -33,7 +33,7 @@ print(snowflake)
 // Prints "❄︎"
 ```
 
-### Conforming to ExpressibleByExtendedGraphemeClusterLiteral
+## Conforming to ExpressibleByExtendedGraphemeClusterLiteral
 
 To add `ExpressibleByExtendedGraphemeClusterLiteral` conformance to your custom type, implement the required initializer.
 

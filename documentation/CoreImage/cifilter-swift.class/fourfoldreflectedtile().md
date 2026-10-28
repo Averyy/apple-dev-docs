@@ -24,11 +24,11 @@ class func fourfoldReflectedTile() -> any CIFilter & CIFourfoldReflectedTile
 + (CIFilter<CIFourfoldReflectedTile> *) fourfoldReflectedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the four-fold reflected tile filter to an image. The effect produces a four-way reflected tile image.
 

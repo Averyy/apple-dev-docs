@@ -25,7 +25,7 @@ var NSURLErrorCancelledReasonInsufficientSystemResources: Int { get }
 NSURLErrorCancelledReasonInsufficientSystemResources
 ```
 
-#### Discussion
+## Discussion
 
 This error results from factors including (but not limited to) battery capacity, thermal condition, network connectivity, and cellular data plan.
 

@@ -9,7 +9,7 @@ framework: "Swift-Org/SwiftLinux"
 
 Build, package, and deploy Swift applications for Linux servers and cloud infrastructure.
 
-#### Tutorials
+## Tutorials
 
 - [Get Started with Swift Server](https://www.swift.org/getting-started/vapor-web-server/) — Explore Swift on the server by building a Vapor app.
 

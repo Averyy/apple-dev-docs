@@ -21,7 +21,7 @@ The minimum size of the rectangle detected as a proportion of the smallest dimen
 var minimumSize: Float
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value defaults to `0.2`, but you can set it to any value in the range `[0.0, 1.0]`. Any smaller rectangles that Vision may detect aren’t returned.
 

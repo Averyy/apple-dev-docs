@@ -5,7 +5,7 @@
 
 Aligns an element vertically inside its parent element.
 
-#### Overview
+## Overview
 
 Use the `tv-content-align` style to specify how an element should be vertically aligned in its parent element.
 
@@ -17,13 +17,13 @@ Here’s an example that aligns an image to the top of its parent banner:
 </banner>
 ```
 
-##### Values
+### Values
 
 - **`top`**: The element aligns along the top edge of the parent element.
 - **`center`**: The element aligns with the center of the parent element.
 - **`bottom`**: The element aligns along the bottom edge of the parent element.
 
-##### Elements that Use text-align
+### Elements that Use text-align
 
 - [shelf](./shelf.md)
 - [grid](./grid.md)

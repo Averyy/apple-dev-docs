@@ -20,7 +20,7 @@ class NSCloseCommand
 @interface NSCloseCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSCloseCommand` closes the specified scriptable object or objects—typically a document or window (and its associated document, if any). The command may optionally specify a location to save in and how to handle modified documents (by automatically saving changes, not saving them, or asking the user).
 

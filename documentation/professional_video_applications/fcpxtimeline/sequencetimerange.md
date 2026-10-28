@@ -19,7 +19,7 @@ var sequenceTimeRange: CMTimeRange { get }
 @property (nonatomic, readonly) CMTimeRange sequenceTimeRange;
 ```
 
-#### Discussion
+## Discussion
 
 The `sequenceTimeRange` property has a time range that includes a start time and the duration of a sequence.
 

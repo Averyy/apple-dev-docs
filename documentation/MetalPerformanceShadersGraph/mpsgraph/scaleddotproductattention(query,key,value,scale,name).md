@@ -24,7 +24,7 @@ func scaledDotProductAttention(query queryTensor: MPSGraphTensor, key keyTensor:
 - (MPSGraphTensor *) scaledDotProductAttentionWithQueryTensor:(MPSGraphTensor *) queryTensor keyTensor:(MPSGraphTensor *) keyTensor valueTensor:(MPSGraphTensor *) valueTensor scale:(float) scale name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

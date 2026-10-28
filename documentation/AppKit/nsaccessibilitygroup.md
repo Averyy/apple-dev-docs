@@ -19,7 +19,7 @@ protocol NSAccessibilityGroup : NSAccessibilityElementProtocol
 @protocol NSAccessibilityGroup <NSAccessibilityElement>
 ```
 
-#### Overview
+## Overview
 
 Visual users often know that sets of controls go together due to their proximity on the screen. However, you must explicitly define these relationships before assistive apps can use them as well. Use this protocol when you want to logically group a collection of accessibility elements. A view that adopts this protocol indicates that an assistive app should treat its content as a group of controls.
 

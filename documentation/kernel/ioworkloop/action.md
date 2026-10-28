@@ -14,7 +14,7 @@ typedef IOReturn ( *Action)(
    void *arg3);
 ```
 
-#### Overview
+## Overview
 
 Type and arguments of callout C function that is used when a runCommand is executed by a client. Cast to this type when you want a C++ member function to be used. Note the arg1 - arg3 parameters are passed straight pass through to the action callout.
 

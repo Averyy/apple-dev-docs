@@ -22,11 +22,11 @@ setCameraZoomRangeAnimated(
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Return Value
+## Return Value
 
 Returns the containing map instance object.
 
-#### Discussion
+## Discussion
 
 By default, the change of zoom range animates.
 

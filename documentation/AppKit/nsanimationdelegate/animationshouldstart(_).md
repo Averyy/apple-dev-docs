@@ -20,11 +20,11 @@ optional func animationShouldStart(_ animation: NSAnimation) -> Bool
 - (BOOL) animationShouldStart:(NSAnimation *) animation;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) to cancel the animation, [`true`](../../Swift/true.md) to have the animation proceed.
 
-#### Discussion
+## Discussion
 
 The delegate is sent this message just after `animation` receives a [`start()`](../nsanimation/start%28%29.md) message. The delegate can use this method to prepare objects and resources for the effect.
 

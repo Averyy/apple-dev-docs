@@ -24,7 +24,7 @@ var urlTemplate: String? { get }
 @property (atomic, readonly, nullable) NSString * URLTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this string at initialization time.
 

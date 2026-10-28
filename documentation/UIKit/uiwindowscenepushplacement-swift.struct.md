@@ -15,7 +15,7 @@ A placement that indicates the system needs to present the window by pushing it 
 struct UIWindowScenePushPlacement
 ```
 
-#### Overview
+## Overview
 
 Use this type of placement to push a new scene in place of an existing scene. The new scene appears in the same position as the original scene, hiding it. Closing the new scene makes the original scene reappear.
 

@@ -24,7 +24,7 @@ var instanceBlueOffset: Float { get set }
 @property float instanceBlueOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The `instanceBlueOffset` is added to the blue color component of instance `k-1` to produce the modulation color of instance k.
 

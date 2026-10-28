@@ -25,11 +25,11 @@ init(type: NSCompoundPredicate.LogicalType, subpredicates: [NSPredicate])
 - (instancetype) initWithType:(NSCompoundPredicateType) type subpredicates:(NSArray<NSPredicate *> *) subpredicates;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver initialized with its type set to type and subpredicates array to `subpredicates`.
 
-#### Discussion
+## Discussion
 
 For applications linked on macOS 10.5 or later, the `subpredicates` array is copied. For applications linked on OS X v10.4, the `subpredicates` array is retained (for binary compatibility).
 

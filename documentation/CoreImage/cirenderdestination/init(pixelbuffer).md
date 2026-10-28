@@ -24,11 +24,11 @@ init(pixelBuffer: CVPixelBuffer)
 - (instancetype) initWithPixelBuffer:(CVPixelBufferRef) pixelBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md).
 
-#### Discussion
+## Discussion
 
 The destination’s [`colorSpace`](./colorspace.md) property will default to a [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) created by querying the [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md) object’s attributes.
 

@@ -25,11 +25,11 @@ init(contentsOfFile path: String, options readOptionsMask: NSData.ReadingOptions
 - (instancetype) initWithContentsOfFile:(NSString *) path options:(NSDataReadingOptions) readOptionsMask error:(NSError **) errorPtr;
 ```
 
-#### Return Value
+## Return Value
 
 A data object initialized by reading into it the data from the file specified by `path`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -24,7 +24,7 @@ typealias VTMotionEstimationOutputHandler = (OSStatus, __VTMotionEstimationInfoF
 typedef void (^)(int, enum VTMotionEstimationInfoFlags, const struct __CFDictionary *, struct __CVBuffer *) VTMotionEstimationOutputHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When the client requests a motion-estimation, the client passes in a callback block that the system invokes for the result of that request. If the `VTMotionEstimationSessionCreateMotionEstimation` call returns an error, the system does not invoke this block.
 

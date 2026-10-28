@@ -19,7 +19,7 @@ object TransactionIdIsNotOriginalTransactionIdError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Overview
+## Overview
 
 Not all transaction identifiers are original transaction identifiers. For more information, see [`originalTransactionId`](./originaltransactionid.md).
 

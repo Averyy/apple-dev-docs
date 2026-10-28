@@ -25,7 +25,7 @@ case inProgress
 INTransferMoneyIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you received the transaction details, but haven’tt yet scheduled it. You might use this code when scheduling the transaction requires communicating with your server and you’ve not yet received a confirmation from that server.
 

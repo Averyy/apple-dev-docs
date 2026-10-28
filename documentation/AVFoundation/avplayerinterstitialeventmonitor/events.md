@@ -25,7 +25,7 @@ var events: [AVPlayerInterstitialEvent] { get }
 @property (copy, readonly) NSArray<AVPlayerInterstitialEvent *> * events;
 ```
 
-#### Discussion
+## Discussion
 
 When the primary player’s content specifies the schedule of interstitial events intrinsically, this property value typically changes whenever primary player’s [`currentItem`](../avplayer/currentitem.md) changes. For HLS content that specifies interstitials using of `DATERANGE` tags, the value of this property may also change whenever the set of `DATERANGE` tags in the current item’s media playlist changes.
 

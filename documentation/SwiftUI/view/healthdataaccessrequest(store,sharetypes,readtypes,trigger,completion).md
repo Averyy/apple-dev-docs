@@ -20,7 +20,7 @@ Requests permission to save and read the specified HealthKit data types.
 nonisolated func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>? = nil, trigger: some Equatable, completion: @escaping @Sendable (Result<Bool, any Error>) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit performs these requests asynchronously when you modify the trigger’s value. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the authorization sheet when you modify the trigger’s value. The authorization sheet lists all the requested permissions. After the user finishes responding, HealthKit calls the completion block on a background queue. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit calls the completion when you modify the trigger without prompting the user.
 

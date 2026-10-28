@@ -24,7 +24,7 @@ func constant(_ data: Data, shape: [NSNumber], dataType: MPSDataType) -> MPSGrap
 - (MPSGraphTensor *) constantWithData:(NSData *) data shape:(MPSShape *) shape dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

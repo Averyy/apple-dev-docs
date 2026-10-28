@@ -13,7 +13,7 @@
 kSCSIProtocolFeature_ProtocolSpecificPolling = 3
 ```
 
-#### Discussion
+## Discussion
 
 Used to determine if the SCSI Protocol Services Driver supports protocol specific polling for media. This is used for low-power polling specifically for ATAPI devices on ATA buses
 

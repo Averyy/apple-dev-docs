@@ -23,7 +23,7 @@ var preferredCurrentPageIndicatorImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * preferredCurrentPageIndicatorImage;
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the page control uses [`preferredIndicatorImage`](./preferredindicatorimage.md) as its current page indicator.
 

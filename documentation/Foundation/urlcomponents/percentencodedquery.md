@@ -21,7 +21,7 @@ The query subcomponent, percent-encoded.
 var percentEncodedQuery: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The getter for this property retains any percent encoding this component may have. Setting this properties assumes the component string is already correctly percent encoded. Attempting to set an incorrectly percent encoded string will cause a `fatalError`. Although ‘;’ is a legal path character, it is recommended that it be percent-encoded for best compatibility with `URL` (`String.addingPercentEncoding(withAllowedCharacters:)` will percent-encode any ‘;’ characters if you pass `CharacterSet.urlQueryAllowed`).
 

@@ -15,7 +15,7 @@ Indicates that the dext completed an asynchronous read-write call.
 virtual void CompleteIO(uint32_t requestID, uint64_t bytesTransferred, kern_return_t IOStatus);
 ```
 
-#### Discussion
+## Discussion
 
 The dext calls this method to indicate completion of an asynchronous read-write call. Use the `requestID` parameter to determine which [`DoAsyncReadWrite`](./doasyncreadwrite.md) call resulted in this callback.
 

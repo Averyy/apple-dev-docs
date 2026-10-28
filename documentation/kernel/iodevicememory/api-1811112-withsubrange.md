@@ -14,11 +14,11 @@ static IODeviceMemory * withSubRange(
  IOPhysicalLengthlength );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the created IODeviceMemory on success, to be released by the caller, or zero on failure.
 
-#### Overview
+## Overview
 
 This method creates an IODeviceMemory instance for a subset of an existing IODeviceMemory range, passed as a physical address offset and length. It just calls IOMemoryDescriptor::withSubRange.
 

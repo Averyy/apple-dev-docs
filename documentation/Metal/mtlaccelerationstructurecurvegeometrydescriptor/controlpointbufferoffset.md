@@ -24,7 +24,7 @@ var controlPointBufferOffset: Int { get set }
 @property (nonatomic) NSUInteger controlPointBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset needs to be a multiple of the format element size you configure with the [`controlPointFormat`](./controlpointformat.md) property. You also need to align the offset to the platform’s buffer alignment requirement.
 

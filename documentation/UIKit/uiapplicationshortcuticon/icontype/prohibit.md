@@ -22,7 +22,7 @@ case prohibit
 UIApplicationShortcutIconTypeProhibit
 ```
 
-#### Discussion
+## Discussion
 
 ![Prohibit symbol](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934516@2x.png)
 

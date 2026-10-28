@@ -21,7 +21,7 @@ The metadata and classification of a person’s audio search that the system pro
 enum Criteria
 ```
 
-#### Overview
+## Overview
 
 The `Criteria` enum describes the nature of a person’s audio search and playback request. A person might speak a natural-language query, provide a direct URL to content, or make a vague request without specifying anything; for example, they might say “Play something”. Inspect the `criteria` to determine how to resolve the person’s request.
 

@@ -21,11 +21,11 @@ Disable default content margins.
 @preconcurrency func contentMarginsDisabled() -> some WidgetConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A modified widget configuration that doesn’t use default content margins.
 
-#### Discussion
+## Discussion
 
 When you disable content margins for a widget, the system doesn’t automatically add margins around the widget’s content, and you are responsible for specifying margins and padding around your widget content for each context. To specify custom margins, use [`widgetContentMargins`](../environmentvalues/widgetcontentmargins.md) in combination with [`padding(_:)`](../view/padding%28_%29.md) to selectively or partially apply the default content margins.
 

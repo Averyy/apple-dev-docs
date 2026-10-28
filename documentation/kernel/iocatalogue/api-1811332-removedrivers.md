@@ -13,7 +13,7 @@ bool removeDrivers(
  bool doNubMatching = true );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if personality was removed successfully. Failure is due to a memory allocation failure.
 

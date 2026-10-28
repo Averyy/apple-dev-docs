@@ -21,7 +21,7 @@ A limit for the number of items to return in the library search response.
 var limit: Int
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this limit is 50.
 

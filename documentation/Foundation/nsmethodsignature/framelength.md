@@ -21,7 +21,7 @@ The number of bytes that the arguments, taken together, occupy on the stack.
 @property (readonly) NSUInteger frameLength;
 ```
 
-#### Discussion
+## Discussion
 
 This number varies with the hardware architecture the application runs on.
 

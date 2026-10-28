@@ -20,7 +20,7 @@ Initializes the connection handler with a closure that accepts a Foundation XPC 
 @preconcurrency init(onConnection connectionHandler: @escaping @Sendable (NSXPCConnection) -> Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer if your app extension communicates with the host app using [Foundation XPC types](../../Foundation/xpc.md).
 

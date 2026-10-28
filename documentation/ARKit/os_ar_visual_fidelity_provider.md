@@ -19,7 +19,7 @@ protocol OS_ar_visual_fidelity_provider : OS_ar_data_provider
 @protocol OS_ar_visual_fidelity_provider <OS_ar_data_provider>
 ```
 
-#### Overview
+## Overview
 
 Monitors user eye positioning within the optimal device fit range and verifies field of view against a configured specification. Delivers periodic updates via the fidelity data stream.
 

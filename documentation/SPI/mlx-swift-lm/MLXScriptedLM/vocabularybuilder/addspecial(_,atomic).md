@@ -17,7 +17,7 @@ Registers a marker such as `<|end|>` or `<think>`.
 mutating func addSpecial(_ token: String, atomic: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Atomic markers become single special tokens: never split, and dropped by `decode(skipSpecialTokens: true)`. Non-atomic markers are ordinary text that must encode to two or more tokens, like multi-token markers in some real model families.
 

@@ -16,7 +16,7 @@ Decrements the point-to-point connection count of a unit input plug.
 IOReturn (*breakP2PInputConnection)(void *self, UInt32 inputPlug);
 ```
 
-#### Discussion
+## Discussion
 
 This function is only available if the interface version is > 3.
 

@@ -15,7 +15,7 @@
 kSENSE_NOT_DATA_VALID = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Sense data is not valid.
 

@@ -14,7 +14,7 @@ Make your app’s media more accessible by supporting people’s systemwide pref
 - tvOS 17.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 People can specify a variety of preferences about media content such as videos, songs, and images in Accessibility system settings. For example, people can customize the appearance of captions that appear when they watch videos. The Media Accessibility framework provides information about these accessibility settings for media content so you can adapt your app’s UI to people’s preferences.
 

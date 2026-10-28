@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatGetInverse(SPScaledPose3DFloat scaledPose);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a new scaled pose with the inverse matrix of the specified scaled pose.
 

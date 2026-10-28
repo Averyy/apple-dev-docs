@@ -19,7 +19,7 @@ var data: Data! { get }
 @property (nonatomic, copy, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 The format of the data is dependent on the data source’s MIME type (obtained from the response).
 

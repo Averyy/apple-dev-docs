@@ -24,11 +24,11 @@ func canAddOutput(_ output: AVCaptureOutput) -> Bool
 - (BOOL) canAddOutput:(AVCaptureOutput *) output;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you can add the output; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 In iOS and Mac Catalyst, the system imposes the following limitations on the combinations of outputs a capture session may contain:
 

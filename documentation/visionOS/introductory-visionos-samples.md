@@ -8,7 +8,7 @@ Learn the fundamentals of building apps for visionOS with beginner-friendly samp
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 The samples on this page are a starting point for developers new to visionOS. Each focuses on a specific feature, providing a solid foundation to build apps for the Apple Vision Pro.
 

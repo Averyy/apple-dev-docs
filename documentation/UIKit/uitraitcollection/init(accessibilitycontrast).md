@@ -23,7 +23,7 @@ init(accessibilityContrast: UIAccessibilityContrast)
 + (UITraitCollection *) traitCollectionWithAccessibilityContrast:(UIAccessibilityContrast) accessibilityContrast;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only the accessibility contrast trait.
 

@@ -25,7 +25,7 @@ func decodeInt64(forKey key: String) -> Int64
 - (int64_t) decodeInt64ForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

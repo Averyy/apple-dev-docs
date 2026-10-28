@@ -21,7 +21,7 @@ class lifecycle
 @interface CTCellularPlanLifecycleProperties : NSObject
 ```
 
-#### Overview
+## Overview
 
 This type contains lifecycle details for a time-limited cellular plan, including information such as when the plan expires. The expiration date determines the installation experience and when the system deactivates the plan.
 

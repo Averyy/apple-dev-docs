@@ -23,7 +23,7 @@ case equalCentering
 UIStackViewDistributionEqualCentering
 ```
 
-#### Discussion
+## Discussion
 
 If the arranged views don’t fit within the stack view, it shrinks the spacing until it reaches the minimum spacing defined by its [`spacing`](../spacing.md) property. If the views still don’t fit, the stack view shrinks the arranged views according to their compression resistance priority. If there’s any ambiguity, the stack view shrinks the views based on their index in the [`arrangedSubviews`](../arrangedsubviews.md) array.
 

@@ -25,7 +25,7 @@ var isCellular: Bool { get }
 @property (readonly, getter=isCellular) BOOL cellular;
 ```
 
-#### Discussion
+## Discussion
 
 You permit or deny use of cellular interfaces with the [`allowsCellularAccess`](../urlsessionconfiguration/allowscellularaccess.md) property on [`URLSessionConfiguration`](../urlsessionconfiguration.md) or [`allowsCellularAccess`](../urlrequest/allowscellularaccess.md) on [`URLRequest`](../urlrequest.md).
 

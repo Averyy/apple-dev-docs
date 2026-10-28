@@ -13,11 +13,11 @@
 errno_t mbuf_get_tso_requested(mbuf_t mbuf, mbuf_tso_request_flags_t *request, u_int32_t *mss);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This function is used by the driver to determine which checksum operations should be performed in hardware.
 

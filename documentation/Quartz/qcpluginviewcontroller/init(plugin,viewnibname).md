@@ -21,7 +21,7 @@ init!(plugIn: QCPlugIn!, viewNibName name: String!)
 - (id) initWithPlugIn:(QCPlugIn *) plugIn viewNibName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A `QCPlugInViewController` object.
 

@@ -15,7 +15,7 @@ Customize handling of asynchronous events by combining event-processing operator
 - visionOS 1.0+
 - watchOS 6.0+
 
-#### Overview
+## Overview
 
 The Combine framework provides a declarative Swift API for processing values over time. These values can represent many kinds of asynchronous events. Combine declares *publishers* to expose values that can change over time, and *subscribers* to receive those values from the publishers.
 

@@ -25,7 +25,7 @@ class NSMutableCharacterSet
 @interface NSMutableCharacterSet : NSCharacterSet
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`CharacterSet`](./characterset.md); use [`NSMutableCharacterSet`](./nsmutablecharacterset.md) when you need reference semantics or other Foundation-specific behavior.
 

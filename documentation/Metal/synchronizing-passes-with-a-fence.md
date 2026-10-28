@@ -5,7 +5,7 @@
 
 Block GPU stages in a pass until another pass unblocks it by signaling a fence.
 
-#### Overview
+## Overview
 
 A fence resolves access conflicts between commands in different passes that you submit to the same command queue, including the passes you commit in other command buffers.
 
@@ -30,7 +30,7 @@ Start by identifying which memory operations from different passes introduce a c
 
 > **Note**:  Create an [`MTLFence`](./mtlfence.md) by calling the [`makeFence()`](./mtldevice/makefence%28%29.md) method of an [`MTLDevice`](./mtldevice.md) instance.
 
-##### Identify access conflicts between two or more passes
+### Identify access conflicts between two or more passes
 
 The following code example encodes two compute passes. The first encoder creates a pass with a copy command and a dispatch command:
 
@@ -199,7 +199,7 @@ Without synchronization, the GPU can run both passes and their stages in paralle
 
 ![A diagram showing both passes and their stages running in parallel without synchronization, potentially causing inconsistent results.](https://developer.apple.com/tutorials/images/com.apple.metal/synchronizing-passes-with-a-fence-2@2x.png)
 
-##### Resolve an access conflict between passes with a fence
+### Resolve an access conflict between passes with a fence
 
 Resolve access conflicts between passes from the same command queue with an [`MTLFence`](./mtlfence.md) instance by:
 

@@ -21,7 +21,7 @@ The transcript representation of this content.
 var transcriptRepresentation: Transcript.DataAttachment { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this to render the attachment into a session transcript.
 

@@ -19,7 +19,7 @@ static let announcement: NSAccessibility.NotificationUserInfoKey
 extern NSAccessibilityNotificationUserInfoKey const NSAccessibilityAnnouncementKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is required for [`NSAccessibilityProtocol`](../../nsaccessibilityprotocol.md) and should be used in conjunction with [`priority`](./priority.md) to help assistive apps determine the importance of the announcement.
 

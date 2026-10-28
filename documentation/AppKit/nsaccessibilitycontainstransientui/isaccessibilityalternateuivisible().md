@@ -20,7 +20,7 @@ func isAccessibilityAlternateUIVisible() -> Bool
 - (BOOL) isAccessibilityAlternateUIVisible;
 ```
 
-#### Return Value
+## Return Value
 
 Use this property for elements that present an alternate UI—for example, when the pointer hovers over an interface element for a few seconds.
 

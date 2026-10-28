@@ -21,11 +21,11 @@ class NSUserNotification
 @interface NSUserNotification : NSObject
 ```
 
-#### Overview
+## Overview
 
 When the system delivers a notification, information about when the notification was actually presented to the user (if at all) and other details are provided in the notification object. User applications can create [`NSUserNotification`](./nsusernotification.md) objects and register them with the [`NSUserNotificationCenter`](./nsusernotificationcenter.md) object to notify the user when an application requires attention.
 
-##### Threading Information
+### Threading Information
 
 The [`NSUserNotificationCenter`](./nsusernotificationcenter.md) class and the `NSUserNotification` class are both thread safe.
 

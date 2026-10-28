@@ -24,7 +24,7 @@ struct TextFormattingCommands
 
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Overview
+## Overview
 
 These commands are optional and can be explicitly requested by passing a value of this type to the `Scene.commands(_:)` modifier.
 

@@ -19,7 +19,7 @@ class NSImageView
 @interface NSImageView : NSControl
 ```
 
-#### Overview
+## Overview
 
 Image views can be static or editable. A static image view only displays the image that you specify. An editable image view object lets the user change the displayed image. You can also configure an image view to allow copying, pasting, deleting, and dragging of the image.
 

@@ -19,7 +19,7 @@ static let outputBusy: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey
 extern NSSpeechStatusKey const NSSpeechStatusOutputBusy;
 ```
 
-#### Discussion
+## Discussion
 
 A synthesizer is considered to be producing speech even at some times when no audio data is being produced through the computer’s speaker. This occurs, for example, when the synthesizer is processing input, but has not yet initiated speech or when speech output is paused.
 

@@ -19,7 +19,7 @@ var hasTemporalSubLayerAccess: Bool { get set }
 @property (nonatomic, getter=hasTemporalSubLayerAccess) BOOL temporalSubLayerAccess;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess`](../../CoreMedia/kcmsampleattachmentkey_hevctemporalsublayeraccess.md) sample buffer attachment.
 

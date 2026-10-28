@@ -22,7 +22,7 @@ class AVCustomRoutingController
 @interface AVCustomRoutingController : NSObject
 ```
 
-#### Overview
+## Overview
 
 A routing controller also informs its [`delegate`](./avcustomroutingcontroller/delegate.md) object about which routes the user previously authorized, so it can reconnect, if appropriate.
 

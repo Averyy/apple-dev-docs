@@ -28,7 +28,7 @@ class EKRecurrenceEnd
 
 - [Creating a recurring event](./creating-a-recurring-event.md)
 
-#### Overview
+## Overview
 
 The `EKRecurrenceEnd` class defines the end of a recurrence rule defined by an [`EKRecurrenceRule`](./ekrecurrencerule.md) object. The recurrence end can be specified by a date (date-based) or by a maximum count of occurrences (count-based). An event that is intended to continue indefinitely should have its `EKRecurrenceEnd` set to `nil`.
 

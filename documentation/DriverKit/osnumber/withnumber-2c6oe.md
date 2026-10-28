@@ -18,11 +18,11 @@ Allocates an OSNumber object with value from a c-string and size.
 static OSNumberPtr withNumber(const char *valueString, size_t numberOfBits);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSNumber with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSNumber object with value from a c-string and size.
 

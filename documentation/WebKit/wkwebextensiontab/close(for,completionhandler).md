@@ -27,7 +27,7 @@ optional func close(for context: WKWebExtensionContext) async throws
 - (void) closeForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 No action is performed if not implemented.
 

@@ -27,7 +27,7 @@ var country: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * country;
 ```
 
-#### Discussion
+## Discussion
 
 If the placemark location is Apple’s headquarters, for example, the value for this property would be the string “United States”.
 

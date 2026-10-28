@@ -22,7 +22,7 @@ func imageOfPage(at index: Int) -> UIImage
 - (UIImage *) imageOfPageAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The image of the page at the specified index. If `index` is out of bounds, the framework throws an exception.
 

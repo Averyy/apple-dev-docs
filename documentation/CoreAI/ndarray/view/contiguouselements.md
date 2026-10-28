@@ -21,7 +21,7 @@ var contiguousElements: Span<Element>? { get }
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 > **Note**: `contiguous` here refers to elements in row-major order with zero padding.
 

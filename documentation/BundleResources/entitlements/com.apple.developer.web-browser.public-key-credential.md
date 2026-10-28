@@ -15,11 +15,11 @@ An entitlement that lets your app make registration and assertion requests for p
 - **Name**: `com.apple.developer.web-browser.public-key-credential`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Only add this entitlement if your app can act as a user’s web browser.
 
-##### Web browser requirements
+### Web browser requirements
 
 To request this entitlement, you must hold the Account Holder role for an organization’s Apple Developer account and complete the request form at [macOS Browsers Passkeys](https://developer.apple.com/contact/request/macos-browsers-passkeys/). Apple reviews each application using predefined criteria. If your request meets the criteria, Apple adds the entitlement to your developer account using managed capabilities. For more information, see [Provisioning with managed capabilities](https://help.apple.com/developer-account/#/dev38c81d4cd).
 

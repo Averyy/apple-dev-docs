@@ -24,11 +24,11 @@ class func unsupported(forReason reason: INUpdateMediaAffinityMediaItemUnsupport
 + (instancetype) unsupportedForReason:(INUpdateMediaAffinityMediaItemUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INUpdateMediaAffinityMediaItemResolutionResult`](../inupdatemediaaffinitymediaitemresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support the intent parameter for the specified reason.
 

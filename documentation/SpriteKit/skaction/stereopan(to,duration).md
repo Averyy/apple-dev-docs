@@ -25,11 +25,11 @@ class func stereoPan(to v: Float, duration: TimeInterval) -> SKAction
 + (SKAction *) stereoPanTo:(float) v duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the audio node’s stereo panning animates from its current value to its new value. For more information, see [`AVAudio3DMixing`](../../AVFAudio/avaudio3dmixing.md).
 

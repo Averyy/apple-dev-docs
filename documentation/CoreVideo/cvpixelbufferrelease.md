@@ -21,7 +21,7 @@ Releases a pixel buffer.
 extern void CVPixelBufferRelease(CVPixelBufferRef texture);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRelease`, but is `NULL` safe.
 

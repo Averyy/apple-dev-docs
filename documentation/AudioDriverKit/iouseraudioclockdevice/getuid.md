@@ -15,11 +15,11 @@ Gets the unique identifier of the clock device.
 OSSharedPtr<OSString> GetUID();
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an [`OSString`](../../DriverKit/osstring.md) containing the UID.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

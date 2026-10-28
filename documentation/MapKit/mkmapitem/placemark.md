@@ -27,7 +27,7 @@ var placemark: MKPlacemark { get }
 @property (nonatomic, readonly) MKPlacemark * placemark;
 ```
 
-#### Discussion
+## Discussion
 
 If you create the map item using the [`forCurrentLocation()`](./forcurrentlocation%28%29.md) method, the value of this property is `nil` and the [`isCurrentLocation`](./iscurrentlocation.md) property is [`true`](../../Swift/true.md).
 

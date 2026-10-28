@@ -24,7 +24,7 @@ var tessellationControlPointIndexType: MTLTessellationControlPointIndexType { ge
 @property (nonatomic, readwrite) MTLTessellationControlPointIndexType tessellationControlPointIndexType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLTessellationControlPointIndexType.none`](../mtltessellationcontrolpointindextype/none.md); use this value when drawing patches without a control point index buffer. This value needs to be either [`MTLTessellationControlPointIndexType.uint16`](../mtltessellationcontrolpointindextype/uint16.md) or [`MTLTessellationControlPointIndexType.uint32`](../mtltessellationcontrolpointindextype/uint32.md) when drawing patches with indexed control points.
 

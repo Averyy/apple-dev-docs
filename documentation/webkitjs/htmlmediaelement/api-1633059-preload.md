@@ -16,7 +16,7 @@ A DOMString value that gives a hint to the browser how much of the media should 
 attribute DOMString preload;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are `auto`, `metadata`, and `none`. The attribute defaults to `auto`, suggesting to the browser the server is able to provide the media for immediate and agressive downloading. The `metadata` value suggests minimal server interaction to retrieve only metadata and the first frames of the media resource, while `none` suggests no server interaction is needed. These `preload` values can be changed dynamically. There is no guarantee that you get the behavior that you request.
 

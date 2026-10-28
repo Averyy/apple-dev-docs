@@ -21,11 +21,11 @@ enum Memory
 
 - [Running on iOS](./running-on-ios.md)
 
-#### Overview
+## Overview
 
 [`activeMemory`](./memory/activememory.md) + [`cacheMemory`](./memory/cachememory.md) is the total memory allocated by MLX. [`activeMemory`](./memory/activememory.md) is in currently active [`MLXArray`](./mlxarray.md) and [`cacheMemory`](./memory/cachememory.md) is recently used memory that can be recycled.
 
-#### Memory Management and Buffer Recycling
+## Memory Management and Buffer Recycling
 
 MLX uses a buffer recycling system to optimize performance. When MLXArrays are no longer needed (such as intermediate computation results), their buffers are not immediately deallocated. Instead, they are placed in a buffer pool where they can be reused by later computations of similar size.
 
@@ -41,7 +41,7 @@ This memory is observable in various system tools as *footprint* or *RSIZE*, but
 
 The buffer pool policy is based on Metal’s `recommendedMaxWorkingSetSize`, which scales with available physical memory. Systems with more RAM will cache more buffers.
 
-#### Cache Size Optimization
+## Cache Size Optimization
 
 The optimal cache size varies significantly by workload. While unconstrained cache can grow to several GB, developers often find that relatively small cache sizes (e.g., 2MB) perform just as well for their specific use cases. The best approach is to experiment with different cache limits and measure performance for your particular workload.
 
@@ -53,7 +53,7 @@ Examine memory use over time with [`snapshot()`](./memory/snapshot%28%29.md) and
 
 **Note**: The cache limit will go into effect on the next deallocation. Because of that you may observe the cache size temporarily exceeding the requested limit. To immediately clear the cache, use [`clearCache()`](./memory/clearcache%28%29.md).
 
-##### See Also
+### See Also
 
 - [Running on iOS](./running-on-ios.md)
 - [`cacheLimit`](./memory/cachelimit.md)

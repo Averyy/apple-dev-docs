@@ -18,7 +18,7 @@ A Boolean value that indicates whether the app receives accuracy-limited locatio
 @property (nonatomic, readonly) BOOL accuracyLimited;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), then the app receives accuracy-limited location updates.
 

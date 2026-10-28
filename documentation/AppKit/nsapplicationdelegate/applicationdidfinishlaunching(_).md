@@ -20,7 +20,7 @@ optional func applicationDidFinishLaunching(_ notification: Notification)
 - (void) applicationDidFinishLaunching:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates can implement this method to perform further initialization. This method is called after the application’s main run loop has been started but before it has processed any events. If the application was launched by the user opening a file, the delegate’s  [`application(_:openFile:)`](./application%28_,openfile%29.md) method is called before this method. If you want to perform initialization before any files are opened, implement the [`applicationWillFinishLaunching(_:)`](./applicationwillfinishlaunching%28_%29.md) method in your delegate, which is called before [`application(_:openFile:)`](./application%28_,openfile%29.md).)
 

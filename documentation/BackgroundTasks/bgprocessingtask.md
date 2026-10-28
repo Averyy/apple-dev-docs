@@ -27,7 +27,7 @@ class BGProcessingTask
 
 - [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
 
-#### Overview
+## Overview
 
 Use processing tasks for long data updates, processing data, and app maintenance. Although processing tasks can run for minutes, the system can interrupt the process. Add an expiration handler by setting [`expirationHandler`](./bgtask/expirationhandler.md) for any required cleanup.
 

@@ -17,7 +17,7 @@ An object that represents a single curve of a surface.
 struct Curve
 ```
 
-#### Overview
+## Overview
 
 Each [`CapturedRoom.Surface`](../surface.md) instance in a captured room’s surface arrays ([`doors`](../doors.md), [`openings`](../openings.md), [`walls`](../walls.md), and [`windows`](../windows.md)) that models a curved real-world surface contains an optional property ([`curve`](./curve-swift.property.md)) of this type.
 

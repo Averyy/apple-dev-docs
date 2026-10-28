@@ -28,7 +28,7 @@ var showExistingMatches: Bool { get set }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the view controller shows matches that are in progress or complete. If the value of this property is [`false`](../../Swift/false.md), the view controller only offers the ability to create new matches. The default value is [`true`](../../Swift/true.md).
 

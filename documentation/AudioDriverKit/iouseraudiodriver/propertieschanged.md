@@ -15,11 +15,11 @@ Informs the host when the state of an object in the driver changes.
 kern_return_t PropertiesChanged(IOUserAudioObjectID in_object_id, IOUserAudioObjectPropertySelector *in_properties, uint32_t in_num_properties);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 For device objects, only use this method for state changes that don’t affect IO or the structure of the device.
 

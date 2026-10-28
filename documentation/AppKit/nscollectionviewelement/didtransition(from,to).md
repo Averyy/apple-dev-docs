@@ -20,11 +20,11 @@ optional func didTransition(from oldLayout: NSCollectionViewLayout, to newLayout
 - (void) didTransitionFromLayout:(NSCollectionViewLayout *) oldLayout toLayout:(NSCollectionViewLayout *) newLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it and use it to finalize any behaviors associated with the change in layouts.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X 10.11, this method is never called.
 

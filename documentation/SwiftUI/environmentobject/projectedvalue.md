@@ -22,7 +22,7 @@ A projection of the environment object that creates bindings to its properties u
 @preconcurrency var projectedValue: EnvironmentObject<ObjectType>.Wrapper { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the projected value to pass an environment object down a view hierarchy.
 

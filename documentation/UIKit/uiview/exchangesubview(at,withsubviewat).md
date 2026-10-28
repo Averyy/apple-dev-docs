@@ -23,7 +23,7 @@ func exchangeSubview(at index1: Int, withSubviewAt index2: Int)
 - (void) exchangeSubviewAtIndex:(NSInteger) index1 withSubviewAtIndex:(NSInteger) index2;
 ```
 
-#### Discussion
+## Discussion
 
 Each index represents the position of the corresponding view in the array in the [`subviews`](./subviews.md) property. Subview indices start at `0` and cannot be greater than the number of subviews. This method does not change the superview of either view but simply swaps their positions in the [`subviews`](./subviews.md) array.
 

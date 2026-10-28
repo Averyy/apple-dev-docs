@@ -17,7 +17,7 @@ Clips the global norm of the gradients.
 func clipGradNorm(gradients: some Collection<MLXArray>, maxNorm: Float) -> ([MLXArray], MLXArray)
 ```
 
-#### Discussion
+## Discussion
 
 This function ensures that the global norm of the gradients does not exceed `max_norm`. It scales down the gradients proportionally if their norm is greater than `max_norm`.
 

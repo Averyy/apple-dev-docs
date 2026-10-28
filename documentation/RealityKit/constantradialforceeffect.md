@@ -20,7 +20,7 @@ A force effect that pulls objects toward its center with a constant strength.
 struct ConstantRadialForceEffect
 ```
 
-#### Overview
+## Overview
 
 This force’s magnitude is constant and does not depend on objects’ distances to the effect origin.
 

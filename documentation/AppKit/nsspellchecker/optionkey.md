@@ -19,7 +19,7 @@ struct OptionKey
 typedef NSString * NSTextCheckingOptionKey;
 ```
 
-#### Overview
+## Overview
 
 The constants are optional keys that can be used in the options dictionary parameter of the [`check(_:range:types:options:inSpellDocumentWithTag:orthography:wordCount:)`](./check%28_,range,types,options,inspelldocumentwithtag,orthography,wordcount%29.md), [`requestChecking(of:range:types:options:inSpellDocumentWithTag:completionHandler:)`](./requestchecking%28of,range,types,options,inspelldocumentwithtag,completionhandler%29.md), and [`menu(for:string:options:atLocation:in:)`](./menu%28for,string,options,atlocation,in%29.md) methods.
 

@@ -19,7 +19,7 @@ class WKInterfaceSKScene
 @interface WKInterfaceSKScene : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Present a scene by calling the interface’s [`presentScene(_:)`](./wkinterfaceskscene/presentscene%28_%29.md) or [`presentScene(_:transition:)`](./wkinterfaceskscene/presentscene%28_,transition%29.md) method and passing in a [`SKScene`](../SpriteKit/skscene.md) object. When a scene is presented, it alternates between running its simulation (which animates the content) and rendering the content for display. You can pause the scene by setting the interface’s [`isPaused`](./wkinterfaceskscene/ispaused.md) property to [`true`](../Swift/true.md).
 

@@ -15,7 +15,7 @@ The reason your service can’t add the media item to the user’s library or to
 object AddMediaMediaItemResolutionResult.Unsupported
 ```
 
-#### Discussion
+## Discussion
 
 If you can’t find the media item the user specifies, don’t provide a reason. When the client receives an [`AddMediaMediaItemResolutionResult.Unsupported`](./unsupported-data.dictionary.md) object without a reason, the client provides a generic failure message to the user.
 

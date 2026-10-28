@@ -21,7 +21,7 @@ Get a value in this array as an XPCArray.
 subscript(index: Int, as type: XPCArray.Type = XPCArray.self) -> XPCArray? { get }
 ```
 
-#### Return Value
+## Return Value
 
 An XPCArray value or `nil` if no such value was found.
 

@@ -22,7 +22,7 @@ var visibleItems: [NSToolbarItem]? { get }
 @property (copy, readonly, nullable) NSArray<__kindof NSToolbarItem *> * visibleItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t contain items in the overflow menu because those items aren’t visible.
 

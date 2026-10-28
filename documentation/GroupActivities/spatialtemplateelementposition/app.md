@@ -15,7 +15,7 @@ The position of the app’s content in the shared coordinate space.
 static var app: SpatialTemplateElementPosition { get }
 ```
 
-#### Discussion
+## Discussion
 
 The app’s content appears at the origin of coordinate space.
 

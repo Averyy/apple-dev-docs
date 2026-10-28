@@ -19,7 +19,7 @@ A Boolean value that indicates whether to use Lockdown Mode in the web page.
 var isLockdownModeEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By default, this reflects whether the user has enabled Lockdown Mode on the device. Update this preference to override the device setting when you implement a per-website or similar setting.
 

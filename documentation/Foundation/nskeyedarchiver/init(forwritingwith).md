@@ -27,7 +27,7 @@ init(forWritingWith data: NSMutableData)
 - (instancetype) initForWritingWithMutableData:(NSMutableData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 When you finish encoding data, you must invoke [`finishEncoding()`](./finishencoding%28%29.md) at which point `data` is filled. The format of the receiver is `NSPropertyListBinaryFormat_v1_0`.
 

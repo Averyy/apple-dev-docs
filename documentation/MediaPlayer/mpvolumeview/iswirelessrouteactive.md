@@ -24,7 +24,7 @@ var isWirelessRouteActive: Bool { get }
 @property (nonatomic, readonly, getter=isWirelessRouteActive) BOOL wirelessRouteActive;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the wireless route is active.
 

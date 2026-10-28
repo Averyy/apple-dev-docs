@@ -21,11 +21,11 @@ Reads the arguments for this authorization mechanism from the authorization poli
 int (*)(struct __OpaqueAuthorizationEngine *, const struct AuthorizationValueVector **) GetArguments;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Possible results are [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error).
 
-#### Discussion
+## Discussion
 
 The authorization policy database might contain arguments for each authentication mechanism. You can use this function to retrieve these arguments.
 

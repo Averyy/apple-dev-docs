@@ -25,7 +25,7 @@ func SparseRetain(_ NumericFactor: SparseOpaqueFactorization_Double) -> SparseOp
 static SparseOpaqueFactorization_Double SparseRetain(SparseOpaqueFactorization_Double NumericFactor);
 ```
 
-#### Return Value
+## Return Value
 
 The supplied numeric factorization object.
 

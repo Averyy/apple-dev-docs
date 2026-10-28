@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionStyle_StartChar: CFString
 extern CFStringRef const kCMTextFormatDescriptionStyle_StartChar;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be `SInt16` for 3G or `SInt32` for QuickTime.
 

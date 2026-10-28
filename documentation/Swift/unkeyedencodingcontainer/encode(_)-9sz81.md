@@ -22,7 +22,7 @@ Encodes the given value.
 mutating func encode(_ value: UInt64) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 

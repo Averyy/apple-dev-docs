@@ -19,17 +19,17 @@ func AEManagerInfo(_ keyWord: AEKeyword, _ result: UnsafeMutablePointer<Int>!) -
 OSErr AEManagerInfo(AEKeyword keyWord, long *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 For recordable applications, the information provided by `AEManagerInfo` may be useful when the application is responding to Apple events that it sends to itself.
 
 For information on determining whether the Apple Event Manager is available, see the Apple Event Manager Gestalt Selector, described in *Inside macOS: Gestalt Manager Reference*. 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

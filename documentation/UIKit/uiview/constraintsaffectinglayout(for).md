@@ -23,11 +23,11 @@ func constraintsAffectingLayout(for axis: NSLayoutConstraint.Axis) -> [NSLayoutC
 - (NSArray<__kindof NSLayoutConstraint *> *) constraintsAffectingLayoutForAxis:(UILayoutConstraintAxis) axis;
 ```
 
-#### Return Value
+## Return Value
 
 The constraints impacting the layout of the view for the specified axis.
 
-#### Discussion
+## Discussion
 
 The returned set of constraints may not all include the view explicitly. Constraints that impact the location of the view implicitly may also be included. While this provides a good starting point for debugging, there is no guarantee that the returned set of constraints will include all of the constraints that have an impact on the view’s layout in the given orientation.
 

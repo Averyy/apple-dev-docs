@@ -21,11 +21,11 @@ Returns a URL by appending the specified path component to the URL, with a hint 
 func appending<S>(component: S, directoryHint: URL.DirectoryHint = .inferFromPath) -> URL where S : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A new URL that appends the specified path to the original URL.
 
-#### Discussion
+## Discussion
 
 For non-file URLs, this method percent-encodes any path separators (`/`) in the path component before appending.
 

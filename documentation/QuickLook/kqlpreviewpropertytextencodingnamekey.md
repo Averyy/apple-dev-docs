@@ -19,7 +19,7 @@ let kQLPreviewPropertyTextEncodingNameKey: CFString!
 extern CFStringRef const kQLPreviewPropertyTextEncodingNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFString`](../CoreFoundation/cfstring.md) object. Use IANA encodings like `UTF-8` for the associated value.
 

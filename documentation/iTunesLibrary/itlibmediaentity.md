@@ -20,7 +20,7 @@ class ITLibMediaEntity
 @interface ITLibMediaEntity : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  Entity properties are specific to each type of entity, and each specific entity class provides individual accessors for its properties.
 

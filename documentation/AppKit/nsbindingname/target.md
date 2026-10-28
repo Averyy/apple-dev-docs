@@ -19,7 +19,7 @@ static let target: NSBindingName
 extern NSBindingName NSTargetBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

@@ -17,11 +17,11 @@ Provides a URL to a 3D model based on the given object’s attributes or categor
 func modelFileURL(for object: CapturedRoom.Object) throws -> URL?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D model that the app associates to the given object’s attributes via [`setModelFileURL(_:for:)`](./setmodelfileurl%28_,for%29-8xio.md) or its category via [`setModelFileURL(_:for:)`](./setmodelfileurl%28_,for%29-4law9.md); or, `nil` if no 3D model URL associates to the given object’s category or combination of attributes.
 
-#### Discussion
+## Discussion
 
 In error conditions, this function throws:
 

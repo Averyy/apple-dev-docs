@@ -25,7 +25,7 @@ func stroke(_ rect: CGRect, width: CGFloat)
 extern void CGContextStrokeRectWithWidth(CGContextRef c, CGRect rect, CGFloat width);
 ```
 
-#### Discussion
+## Discussion
 
 Aside from the line width value, Core Graphics uses the current attributes of the graphics state (such as stroke color) to paint the line. The line straddles the path, with half of the total width on either side.
 

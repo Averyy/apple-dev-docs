@@ -22,7 +22,7 @@ convenience init(activationHandler handler: @escaping (UISpringLoadedInteraction
 - (instancetype) initWithActivationHandler:(void (^)(UISpringLoadedInteraction *interaction, id<UISpringLoadedInteractionContext>context)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A spring-loaded interaction that has a specific activation handler block and a default behavior and visual effect.
 

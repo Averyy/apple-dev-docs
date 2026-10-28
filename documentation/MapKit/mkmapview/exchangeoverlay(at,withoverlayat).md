@@ -24,7 +24,7 @@ func exchangeOverlay(at index1: Int, withOverlayAt index2: Int)
 - (void) exchangeOverlayAtIndex:(NSUInteger) index1 withOverlayAtIndex:(NSUInteger) index2;
 ```
 
-#### Discussion
+## Discussion
 
 If you need to exchange overlays in other map levels, use the [`exchangeOverlay(_:with:)`](./exchangeoverlay%28_,with%29.md) method.
 

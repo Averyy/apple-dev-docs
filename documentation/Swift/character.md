@@ -22,7 +22,7 @@ A single extended grapheme cluster that approximates a user-perceived character.
 struct Character
 ```
 
-#### Overview
+## Overview
 
 The `Character` type represents a character made up of one or more Unicode scalar values, grouped by a Unicode boundary algorithm. Generally, a `Character` instance matches what the reader of a string will perceive as a single character. Strings are collections of `Character` instances, so the number of visible characters is generally the most natural way to count the length of a string.
 

@@ -12,11 +12,11 @@ Display lesson content that’s synchronized to a learning video by matching the
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10045: Create Custom Audio Experiences with ShazamKit](https://developer.apple.com/wwdc21/10045/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
 

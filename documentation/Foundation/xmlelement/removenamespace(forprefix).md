@@ -20,7 +20,7 @@ func removeNamespace(forPrefix name: String)
 - (void) removeNamespaceForPrefix:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 The removed XML node object is removed.
 

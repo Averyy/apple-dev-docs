@@ -17,11 +17,11 @@ Sets the SSL protocol version.
 OSStatus SSLSetProtocolVersion(SSLContextRef context, SSLProtocol version);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function cannot be called when a session is active.
 

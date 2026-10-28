@@ -23,7 +23,7 @@ class WCSessionFile
 @interface WCSessionFile : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class directly. When you initiate a file transfer using the [`transferFile(_:metadata:)`](./wcsession/transferfile%28_,metadata%29.md)  method of your app’s [`WCSession`](./wcsession.md) object, the session creates an instance when it queues the file for transfer. You can get a list of in-progress transfers initiated by your app from the session’s [`outstandingFileTransfers`](./wcsession/outstandingfiletransfers.md) property. When a file is received by your app, the corresponding file object is delivered directly to your session’s delegate.
 

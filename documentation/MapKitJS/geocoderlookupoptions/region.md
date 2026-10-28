@@ -15,7 +15,7 @@ A region for constraining lookup results.
 region?: CoordinateRegionData;
 ```
 
-#### Discussion
+## Discussion
 
 Tell the geocoder to return results in this region. For example, constrain the geocoder to return results in the region currently displayed by the map with `{ region: map.region }`.
 

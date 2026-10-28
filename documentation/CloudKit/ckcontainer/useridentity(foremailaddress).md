@@ -23,11 +23,11 @@ Fetches the user identity for the specified email address.
 func userIdentity(forEmailAddress email: String) async throws -> CKUserIdentity?
 ```
 
-#### Return Value
+## Return Value
 
 The user identity for the email address.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the identity of a user who the current user knows. The user you’re searching for must meet the following criteria:
 

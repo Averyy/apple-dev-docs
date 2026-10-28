@@ -21,7 +21,7 @@ The alignment to use when placing each view.
 var alignment: Alignment?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to anchor the view’s relative position to the same relative position in the view’s assigned grid space.
 

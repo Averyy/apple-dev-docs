@@ -25,7 +25,7 @@ func CFSocketCopyRegisteredValue(_ nameServerSignature: UnsafePointer<CFSocketSi
 extern CFSocketError CFSocketCopyRegisteredValue(const CFSocketSignature *nameServerSignature, CFTimeInterval timeout, CFStringRef name, CFPropertyListRef*value, CFDataRef*nameServerAddress);
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success or failure.
 

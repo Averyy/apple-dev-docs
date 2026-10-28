@@ -25,7 +25,7 @@ func CGImageDestinationCreateWithData(_ data: CFMutableData, _ type: CFString, _
 extern CGImageDestinationRefCGImageDestinationCreateWithData(CFMutableDataRef data, CFStringRef type, size_t count, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](../CoreFoundation/cfrelease.md).
 

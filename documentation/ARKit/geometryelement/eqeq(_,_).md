@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two geometry elements are equal.
 static func == (lhs: GeometryElement, rhs: GeometryElement) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two geometry elements are equal; otherwise, `false`.
 

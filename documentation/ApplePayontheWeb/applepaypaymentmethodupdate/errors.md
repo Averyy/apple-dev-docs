@@ -16,7 +16,7 @@ A list of customized errors you provide that results from the user’s change to
 sequence <ApplePayError> errors;
 ```
 
-#### Discussion
+## Discussion
 
 List the errors in order of importance.
 

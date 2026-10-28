@@ -36,7 +36,7 @@ var image: INImage? { get set }
 
 - [Displaying Shortcut Information in a Siri Watch Face Card](../../SiriKit/displaying-shortcut-information-in-a-siri-watch-face-card.md)
 
-#### Discussion
+## Discussion
 
 The image should be a square image. [`INDefaultCardTemplate`](../indefaultcardtemplate.md) automatically scales the image to fit and rounds the image corners, and the card template supports image transparency.
 

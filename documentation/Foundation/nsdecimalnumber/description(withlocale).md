@@ -25,7 +25,7 @@ func description(withLocale locale: Any?) -> String
 - (NSString *) descriptionWithLocale:(id) locale;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for calling the [`NSDecimalString(_:_:)`](../nsdecimalstring%28_,_%29.md) function.
 

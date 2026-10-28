@@ -22,7 +22,7 @@ func replaceTextualPortion(of textRange: UITextRange, with token: UISearchToken,
 - (void) replaceTextualPortionOfRange:(UITextRange *) textRange withToken:(UISearchToken *) token atIndex:(NSUInteger) tokenIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes any text in the specified range, inserts the provided token at the specified index, and selects the newly inserted token. Prefer using this convenience method over performing each step with other methods. When your app calls [`replaceTextualPortion(of:with:at:)`](./replacetextualportion%28of,with,at%29.md), UIKit commits any marked text before modifying the text, and creates a single undo group.
 

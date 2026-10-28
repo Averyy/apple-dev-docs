@@ -23,7 +23,7 @@ func scrollRectToVisible(_ rect: CGRect, animated: Bool)
 - (void) scrollRectToVisible:(CGRect) rect animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 This method scrolls the content view so that the area defined by `rect` is just visible inside the scroll view. If the area is already visible, the method does nothing.
 

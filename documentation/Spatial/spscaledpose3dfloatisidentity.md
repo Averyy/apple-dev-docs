@@ -19,11 +19,11 @@
 static bool SPScaledPose3DFloatIsIdentity(SPScaledPose3DFloat scaledPose);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform is the identity pose.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the scaled pose is the identity transform.
 

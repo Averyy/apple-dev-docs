@@ -17,7 +17,7 @@ The optional criteria to use with ad groups to narrow the audience that views yo
 object TargetingDimensions
 ```
 
-#### Discussion
+## Discussion
 
 Specify targeting criteria in the [`TargetingDimensions`](./targetingdimensions.md) object and apply it to ad groups using [`Create an Ad Group`](./create-an-ad-group.md)  and [`Update an Ad Group`](./update-an-ad-group.md) endpoints.
 

@@ -15,7 +15,7 @@ An optional file URL for a thumbnail image.
 var thumbnailURL: URL?
 ```
 
-#### Discussion
+## Discussion
 
 The RCS specification limits the thumbnail size to 10KB.
 

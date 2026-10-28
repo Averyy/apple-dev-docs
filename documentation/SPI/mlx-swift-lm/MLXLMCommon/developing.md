@@ -10,13 +10,13 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 Techniques for developing *in* mlx-swift-lm.
 
-#### Work on Infrastructure
+## Work on Infrastructure
 
 The simplest case for working in mlx-swift-lm is working on infrastructure, e.g. [`KVCache`](./kvcache.md) or [`ToolCallParser`](./toolcallparser.md). You can simply fork mlx-swift-lm and modify the files.  There are unit tests that let you exercise the functionality and you can add more for your specific additions.
 
 The unit tests run without downloading model weights.  There are some tests that exercise the models by using random weights and mock tokenizers, see EvalTests.  This is mostly useful for testing the generation loop itself rather than any particular model.
 
-#### Work on Models
+## Work on Models
 
 If you are working on porting or modifying a model you have a few options:
 
@@ -24,13 +24,13 @@ If you are working on porting or modifying a model you have a few options:
 - use `llm-tool` from mlx-swift-examples
 - use your own application
 
-##### IntegrationTesting
+### IntegrationTesting
 
 `IntegrationTesting.xcodeproj` integrates with the HuggingFace downloader and tokenizer packages directly and uses [MLXHuggingFace](./mlxhuggingface.md) macros to adapt their APIs, see [Using mlx-swift-lm](./using.md) for more information. This uses code from `IntegrationTestHelpers` to download weights and run real models.  You can easily change which models it uses or add your own custom tests.
 
 Note: these tests are *not* run in the CI environment, but are a great way to test the models in your own development environment.
 
-##### mlx-swift-examples / custom application
+### mlx-swift-examples / custom application
 
 You can also test your model by integrating it with a tool or application. This document describes using [llm-tool](https://github.com/ml-explore/mlx-swift-examples/blob/main/Tools/llm-tool/README.md) from `mlx-swift-examples` but the same technique will work with any custom code.
 

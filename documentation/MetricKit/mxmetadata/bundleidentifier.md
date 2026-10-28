@@ -21,7 +21,7 @@ var bundleIdentifier: String { get }
 @property (readonly) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 String representation of the bundle ID of the process.
 

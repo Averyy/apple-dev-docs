@@ -15,7 +15,7 @@ An error that indicates the current platform doesn’t support notification forw
 case unsupportedPlatform
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if you call [`requestForwarding(for:)`](../accessorynotificationcenter/requestforwarding%28for%29.md) on a platform other than iOS.
 

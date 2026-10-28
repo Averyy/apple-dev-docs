@@ -21,7 +21,7 @@ func appendGlyphs(_ glyphs: UnsafeMutablePointer<NSGlyph>, count: Int, in font: 
 - (void) appendBezierPathWithGlyphs:(NSGlyph *) glyphs count:(NSInteger) count inFont:(NSFont *) font;
 ```
 
-#### Discussion
+## Discussion
 
 If the glyphs are not encoded in the font specified by the `fontObj` parameter—that is, the font does not have an entry for one of the specified glyphs—then no path is appended to the receiver.
 

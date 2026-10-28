@@ -25,7 +25,7 @@ func rounding(accordingToBehavior behavior: (any NSDecimalNumberBehaviors)?) -> 
 - (NSDecimalNumber *) decimalNumberByRoundingAccordingToBehavior:(id<NSDecimalNumberBehaviors>) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of the different ways of rounding, see the [`roundingMode`](../numberformatter/roundingmode-swift.property.md) method in the [`NSDecimalNumberBehaviors`](../nsdecimalnumberbehaviors.md) protocol specification.
 

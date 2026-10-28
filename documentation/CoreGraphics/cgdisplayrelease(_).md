@@ -20,7 +20,7 @@ func CGDisplayRelease(_ display: CGDirectDisplayID) -> CGError
 extern CGError CGDisplayRelease(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 

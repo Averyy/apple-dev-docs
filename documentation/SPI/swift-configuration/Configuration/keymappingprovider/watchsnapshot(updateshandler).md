@@ -26,11 +26,11 @@ func watchSnapshot<Return>(updatesHandler: nonisolated(nonsending) (ConfigUpdate
 
 Available when `Upstream` conforms to `ConfigProvider`.
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 The async sequence provided to the handler should immediately emit the current snapshot (equivalent to calling [`snapshot()`](./snapshot%28%29.md)), followed by new snapshots as the provider’s state changes.
 

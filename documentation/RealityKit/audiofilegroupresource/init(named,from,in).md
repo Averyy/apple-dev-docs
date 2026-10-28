@@ -21,7 +21,7 @@ Initializes an audio resource from a Reality Composer Pro project.
 @preconcurrency convenience init(named name: String, from scene: String, in bundle: Bundle) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method initializes a preconfigured [`AudioFileGroupResource`](../audiofilegroupresource.md) from a scene in a Reality Composer Pro project.
 

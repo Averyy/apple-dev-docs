@@ -22,11 +22,11 @@ nonisolated
 func visualEffect(_ effect: @escaping @Sendable (EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the effect applied.
 
-#### Discussion
+## Discussion
 
 You return new effects by calling functions on the first argument provided to the `effect` closure. In this example, `ContentView` is offset by its own size, causing its top left corner to appear where the bottom right corner was originally located:
 

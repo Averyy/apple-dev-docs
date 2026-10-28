@@ -20,7 +20,7 @@ ApplePayDateComponentsRange dateComponentsRange;
 
 - [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use this object to set the expected date range for shipping a package, or the time an item is available for pickup. The payment sheet displays the range as part of the shipping method on the main sheet. When assembling the date components, provide absolute dates to represent the range.
 

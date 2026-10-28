@@ -5,7 +5,7 @@
 
 Configure devices that share directories from the host into the guest system.
 
-#### Overview
+## Overview
 
 Shared directories allow you expose specific directories in the macOS file system to the guest operating system running in a VM, this allows your user to share files between the host and guest operating system. To enable shared directory device support in Linux, configure the Linux guest kernel to enable the `CONFIG_VIRTIO_FS` support.
 

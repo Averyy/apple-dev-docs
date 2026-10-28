@@ -25,7 +25,7 @@ struct SparseAttributesComplex_t
 typedef struct { ... } SparseAttributesComplex_t;
 ```
 
-#### Overview
+## Overview
 
 - **`transpose`**: If `true`, the matrix is implicitly transposed when used in any functions.
 - **`triangle`**: If `kind` is `SparseOrdinary`, this field is ignored. Otherwise it indicates which triangle (upper or lower) represents the matrix.

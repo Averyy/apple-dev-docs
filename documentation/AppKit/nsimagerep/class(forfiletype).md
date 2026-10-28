@@ -21,7 +21,7 @@ class func `class`(forFileType type: String) -> AnyClass?
 + (Class) imageRepClassForFileType:(NSString *) type;
 ```
 
-#### Return Value
+## Return Value
 
 A `Class` object for the image representation that can handle the type of data, or `nil` if no image representation could handle the type.
 

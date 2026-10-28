@@ -25,11 +25,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable dictionary.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer of `NSMutableDictionary`.
 

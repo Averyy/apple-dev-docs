@@ -23,7 +23,7 @@ var attachedBehaviorType: UIAttachmentBehavior.AttachmentType { get }
 @property (nonatomic, readonly) UIAttachmentBehaviorType attachedBehaviorType;
 ```
 
-#### Discussion
+## Discussion
 
 The available types for attachment behaviors are described in the [`UIAttachmentBehavior.AttachmentType`](./attachmenttype.md) enum.
 

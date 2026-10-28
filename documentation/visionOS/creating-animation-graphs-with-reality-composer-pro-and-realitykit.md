@@ -14,7 +14,7 @@ Animate RealityKit entities using blend spaces and state machines with the Anima
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to create an [`AnimationGraphComponent`](../RealityKit/animationgraphcomponent.md) inside Reality Composer Pro 3 to procedurally drive an owl’s animations using Swift. An animation graph is a data driven way to describe how an entity’s animations change over time. Animation graphs use simple parameters and conditions to sequence and blend animations in ways that can be complicated to manage by hand in code. This sample uses an `AnimationGraphComponent` to drive an owl’s pose based on parameters like the owl’s speed.
 
@@ -22,7 +22,7 @@ This sample code project demonstrates how to create an [`AnimationGraphComponent
 
 > **Note**: For more details on navigating the Reality Composer Pro’s user interface, visit [Working with the Animation Graph](../RealityComposerPro/working-with-the-animation-graph.md).
 
-#### Prepare your animations
+## Prepare your animations
 
 The sample authors its animation graph inside of [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md). Before preparing the animation graph, you import the model and animations you plan to use by either dragging and dropping the USD files into the Project Browser or by clicking the import button on the top left of the Project Browser tab and selecting your assets.
 
@@ -32,7 +32,7 @@ The animations in this sample loop seamlessly. Adjust the repeat behavior of ani
 
 ![A screenshot of the Animation Settings of an asset within Reality Composer Pro. A drop-down menu is visible for Repeat Mode to select the Repeat value.](https://developer.apple.com/tutorials/images/com.apple.visionOS/AnimationGraphs-AnimationSettings@2x.png)
 
-#### Create an animation graph
+## Create an animation graph
 
 The sample creates an animation graph asset in the root of the Reality Composer Pro project named Owl Animation Graph. The animation graph uses the `owl_skeldef` and Owl Character imported assets for its Skeleton Definition and Preview Entity, respectively.
 
@@ -58,7 +58,7 @@ The two parameters `speed` and `moving` procedurally control which animation is 
 
 > 💡 **Tip**: To test out the graph, press play at the top of a Reality Composer Pro window, then modify the parameters and review the behavior in real time.
 
-#### Prepare an entity hierarchy
+## Prepare an entity hierarchy
 
 This sample loads the `world` entity asset from the Reality Composer Pro project. Select the `owl_model`, add an [`AnimationGraphComponent`](../RealityKit/animationgraphcomponent.md), and assign the Owl Animation Graph component to it.
 
@@ -70,7 +70,7 @@ This sample loads the `world` entity asset from the Reality Composer Pro project
 
 To test changes within your app, export the `world` entity asset from Reality Composer Pro. Either export the entity directly using the context menu on the `world` asset, or by launching the app using the Run with Xcode workflow. For more information on Xcode linking and the Run with Xcode workflow, see  [Configuring the project workspace](../RealityComposerPro/realitycomposerpro-essentials-configuringprojectworkspace.md).
 
-#### Drive the animation graph from your application
+## Drive the animation graph from your application
 
 The [`AnimationGraphComponent`](../RealityKit/animationgraphcomponent.md) reads the [`parameters`](../RealityKit/entity/parameters.md) to drive its state during runtime. The sample keeps track of the values for `moving` and `speed` on the `ContentView`, as seen below. The sample displays controls for these values on the window toolbar of the application.
 

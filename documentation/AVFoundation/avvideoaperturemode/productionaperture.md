@@ -24,7 +24,7 @@ static let productionAperture: AVVideoApertureMode
 extern AVVideoApertureMode const AVVideoApertureModeProductionAperture;
 ```
 
-#### Discussion
+## Discussion
 
 The image is not cropped to the clean aperture region, but it is scaled according to the pixel aspect ratio. Use this option when you want to see all the pixels in your video, including the edges.
 

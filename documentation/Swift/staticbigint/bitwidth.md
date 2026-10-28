@@ -21,7 +21,7 @@ Returns the minimal number of bits in this value’s binary representation, incl
 var bitWidth: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The following examples show the least significant byte of each value’s binary representation, separated (by an underscore) into excluded and included bits. Negative values are in two’s complement.
 

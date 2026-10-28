@@ -18,7 +18,7 @@ Return `.stop` for semantic generation stops, or `.cancelled` for consumer termi
 mutating func onToken(_ token: Int, logProbabilities: DeferredTokenLogProbabilities?, emit: (sending Output) -> Bool) -> TokenLoopDisposition
 ```
 
-#### Discussion
+## Discussion
 
 `logProbabilities` stays on the GPU until you call [`materialize()`](../deferredtokenlogprobabilities/materialize%28%29.md).
 

@@ -25,7 +25,7 @@ class let displayP3: CFString
 extern CFStringRef const kCGColorSpaceDisplayP3;
 ```
 
-#### Discussion
+## Discussion
 
 This color space uses the DCI P3 primaries, a D65 white point, and the sRGB transfer function.
 

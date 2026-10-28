@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_WRITE: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_WRITE
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`write`](./es_events_t/write.md), which has the type [`es_event_write_t`](./es_event_write_t.md).
 

@@ -12,7 +12,7 @@ virtual IOReturn validateValue(
  OSObject *newValue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the value is valid.
 

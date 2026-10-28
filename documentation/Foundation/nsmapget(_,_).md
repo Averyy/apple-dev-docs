@@ -25,7 +25,7 @@ func NSMapGet(_ table: NSMapTable<AnyObject, AnyObject>, _ key: UnsafeRawPointer
 extern void *NSMapGet(NSMapTable *table, const void *key);
 ```
 
-#### Return Value
+## Return Value
 
 The value that `table` maps to `key`, or `NULL` if `table` doesn’t contain `key`.
 

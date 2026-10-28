@@ -11,7 +11,7 @@ Reports generic features supported by the controller and/or the driver.
 virtual UInt32 getFeatures() const;
 ```
 
-#### Return Value
+## Return Value
 
 This method will always return 0. Subclasses may override this method and return a bit mask of all supported features.
 

@@ -20,7 +20,7 @@ The integral scale that the image reader applies to the image.
 @property (nonatomic, assign, readwrite) CGFloat pixelsPerInch;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0` which indicates a `1.0` scale.
 

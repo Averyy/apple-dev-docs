@@ -29,7 +29,7 @@ func loadFriends(identifiedBy identifiers: [String]) async throws -> [GKPlayer]
 - (void) loadFriendsWithIdentifiers:(NSArray<NSString *> *) identifiers completionHandler:(void (^)(NSArray<GKPlayer *> *friends, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`loadFriendsAuthorizationStatus(_:)`](./loadfriendsauthorizationstatus%28_%29.md) method returns [`GKFriendsAuthorizationStatus.notDetermined`](../gkfriendsauthorizationstatus/notdetermined.md), GameKit presents a prompt to the local player requesting access to the friends that may pause your game. GameKit displays the localized reason that you provide for the [`NSGKFriendListUsageDescription`](../../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key in the information property list.
 

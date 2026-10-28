@@ -21,7 +21,7 @@ Specifies an animation to perform when the binding value changes.
 func animation(_ animation: Animation? = .default) -> Binding<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A new binding.
 

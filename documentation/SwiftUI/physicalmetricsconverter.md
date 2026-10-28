@@ -16,7 +16,7 @@ A physical metrics converter provides conversion between point values and their 
 @preconcurrency struct PhysicalMetricsConverter
 ```
 
-#### Overview
+## Overview
 
 Converters are available from the environment of a `View` or other type that inherits a `View`‘s environments, and are associated with the scene that contains that environment. The conversions expect (or emit) values in points in that scene’s coordinate system, and convert these to (or from) measurements of length in the user’s or scene’s reference frame.
 
@@ -33,7 +33,7 @@ When user action modifies a scene so that measurements have changed (e.g., by ch
 
 Attempting to obtain a converter inside a type not associated with a scene’s contents (for example, from an [`App`](./app.md) or [`Scene`](./scene.md)’s environment) is not supported.
 
-#### Compensating for World Scaling
+## Compensating for World Scaling
 
 By default in apps linked against the visionOS 2.0 SDK or later, these conversions match the scene’s coordinate system, including any scale applied to it by the system. If you’re using meters as the unit, this will match the notion of meters in an unscaled `RealityView` in the same scene.
 

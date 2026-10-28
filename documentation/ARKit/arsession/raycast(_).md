@@ -20,11 +20,11 @@ func raycast(_ query: ARRaycastQuery) -> [ARRaycastResult]
 - (NSArray<ARRaycastResult *> *) raycast:(ARRaycastQuery *) query;
 ```
 
-#### Return Value
+## Return Value
 
 An array of ray-cast results, sorted from nearest to furthest from the camera. The array is empty if the ray cast fails to find an intersection between the query’s ray and a real-world surface.
 
-#### Discussion
+## Discussion
 
 Ray casting provides a 3D location in physical space that corresponds to a given 2D location on the screen. When you call this function, it succeeds in returning a result when a mathematical ray that ARKit casts outward from the user intersects with any real-world surfaces that ARKit detects in the physical environment.
 

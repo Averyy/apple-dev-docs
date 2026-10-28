@@ -23,7 +23,7 @@ var textFirstRect: CGRect { get }
 @property (nonatomic, readonly) CGRect textFirstRect;
 ```
 
-#### Discussion
+## Discussion
 
 Otherwise, this returns a rect representing the bounds of the last word at or before the insertion point.
 

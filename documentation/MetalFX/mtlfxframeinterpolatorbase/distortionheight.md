@@ -24,7 +24,7 @@ var distortionHeight: Int { get set }
 @property (nonatomic, readwrite) NSUInteger distortionHeight;
 ```
 
-#### Discussion
+## Discussion
 
 When set to zero (the default), the frame interpolator uses [`contentHeight`](./contentheight.md) instead.
 

@@ -5,7 +5,7 @@
 
 Send Advanced Commerce API requests from your app that you authorize with a JSON Web Signature (JWS) you generate on your server.
 
-#### Overview
+## Overview
 
 You can make certain [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md) requests through StoreKit in your app, while you make other requests directly from your server.  In both cases, you authorize the calls with signatures you generate on your server.
 
@@ -25,7 +25,7 @@ To make Advanced Commerce requests from your app, follow these steps:
 
 For more information on authorizing server-based calls, see [Authorizing API requests from your server](../AdvancedCommerceAPI/authorizing-server-calls.md).
 
-#### Create the base64-encoded request data
+## Create the base64-encoded request data
 
 Place the Advanced Commerce request data in a UTF-8 JSON string and base64-encode the request.
 
@@ -56,13 +56,13 @@ The result of base64-encoding the example JSON request is:
 
 This value, calculated using your own data, is your *base64-encoded request data*.
 
-#### Generate the JWS using your request data
+## Generate the JWS using your request data
 
 Follow the signing instructions for Advanced Commerce API in-app requests in [Generating JWS to sign App Store requests](./generating-jws-to-sign-app-store-requests.md). The Advanced Commerce API requires a custom claim, `request`. Provide the base64-encoded request data from the previous step as the value of the `request` claim in the JWS payload.
 
 The result after following the instructions is a *JWS compact serialization*.
 
-#### Wrap the JWS and convert it into data
+## Wrap the JWS and convert it into data
 
 Wrap the JWS to create a `signatureInfo` JSON string that contains a `token` key.  You can complete this step on your server or in your app. Create the `signatureInfo` JSON string as shown below:
 
@@ -87,7 +87,7 @@ The result is the Advanced Commerce request data object, referred to as `advance
 
 Securely send the `advancedCommerceRequestData` to your app.
 
-#### Call the StoreKit purchase API using the signed request data
+## Call the StoreKit purchase API using the signed request data
 
 To complete the Advanced Commerce request in the app, call a StoreKit purchase method and provide the signed request, in the Advanced Commerce request data form, as a purchase option.
 

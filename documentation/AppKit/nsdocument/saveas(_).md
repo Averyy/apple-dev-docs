@@ -20,7 +20,7 @@ func saveAs(_ sender: Any?)
 - (void) saveDocumentAs:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation runs the modal Save panel to get the file location under which to save the document. It writes the document to this file, sets the document’s file location and document type (if a native type), and clears the document’s edited status.
 

@@ -25,7 +25,7 @@ var naturalLanguageQuery: String? { get set }
 @property (nonatomic, copy, nullable) NSString * naturalLanguageQuery;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this parameter as a string describing the map-based item you want to look for. The text is equivalent to what the user would type in a search field in the Maps app. For example, the text might contain all or part of an address or it might contain the name of a point of interest.
 

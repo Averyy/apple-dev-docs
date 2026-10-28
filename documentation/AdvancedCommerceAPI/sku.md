@@ -19,7 +19,7 @@ string SKU
 
 **Maximum Length**: `128`
 
-##### Discussion
+### Discussion
 
 Apps that use the Advanced Commerce API manage their own catalogs of Apple In-App Purchases. You assign a SKU to each product, along with other information such as the display name, description, and price.
 

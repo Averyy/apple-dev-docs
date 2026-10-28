@@ -25,7 +25,7 @@ func registerFileRepresentation(forTypeIdentifier typeIdentifier: String, fileOp
 - (void) registerFileRepresentationForTypeIdentifier:(NSString *) typeIdentifier fileOptions:(NSItemProviderFileOptions) fileOptions visibility:(NSItemProviderRepresentationVisibility) visibility loadHandler:(NSProgress * (^)(void (^completionHandler)(NSURL *url, BOOL coordinated, NSError *error))) loadHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If a destination app must access the represented file using a file coordinator, set the `coordinated` parameter in the load handler block to [`true`](../../Swift/true.md).
 

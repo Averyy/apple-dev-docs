@@ -20,7 +20,7 @@ func browseVersions(_ sender: Any?)
 - (void) browseDocumentVersions:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This is the action of the Browse Saved Versions menu item in a document-based app.
 

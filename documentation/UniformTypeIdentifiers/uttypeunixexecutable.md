@@ -21,7 +21,7 @@ A type that represents a UNIX executable.
 extern UTType * const UTTypeUnixExecutable;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.unix-executable`.
 

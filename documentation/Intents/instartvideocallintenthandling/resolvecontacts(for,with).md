@@ -28,7 +28,7 @@ optional func resolveContacts(for intent: INStartVideoCallIntent) async -> [INPe
 - (void) resolveContactsForStartVideoCall:(INStartVideoCallIntent *) intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to verify the identity of any intended call recipients. Always strive toward a successful resolution to a specific user, but feel free to ask for confirmation of the selected user if there’s some uncertainty.
 

@@ -17,7 +17,7 @@ An array of vertex positions for each point in the face mesh.
 var vertices: [simd_float3] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each `float3` value in this array represents the position of a vertex in the mesh, in face coordinates. (See [Tracking Face Position and Orientation](../arfaceanchor.md#Tracking-Face-Position-and-Orientation).)
 

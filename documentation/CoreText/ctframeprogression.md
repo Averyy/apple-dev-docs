@@ -25,7 +25,7 @@ enum CTFrameProgression
 enum CTFrameProgression : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 The lines of text within a frame may stack for either horizontal or vertical text. Values are enumerated for each stacking type supported by [`CTFrameProgression`](./ctframeprogression.md). Frames with a progression type that specifies vertical text rotate lines 90 degrees counterclockwise during drawing.
 

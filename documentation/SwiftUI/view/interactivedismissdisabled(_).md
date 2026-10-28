@@ -22,7 +22,7 @@ nonisolated
 func interactiveDismissDisabled(_ isDisabled: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Users can dismiss certain kinds of presentations using built-in gestures. In particular, a user can dismiss a sheet by dragging it down, or a popover by clicking or tapping outside of the presented view. Use the `interactiveDismissDisabled(_:)` modifier to conditionally prevent this kind of dismissal. You typically do this to prevent the user from dismissing a presentation before providing needed data or completing a required action.
 

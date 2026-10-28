@@ -26,7 +26,7 @@ class ModelContext
 
 - [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
-#### Overview
+## Overview
 
 A model context is central to SwiftData as it’s responsible for managing the entire lifecycle of your persistent models. You use a context to insert new models, track and persist changes to those models, and to delete those models when you no longer need them. A context understands your app’s schema but doesn’t know about any individual models until you tell it to fetch some from the persistent storage or populate it with new models. Afterwards, any changes made to those models exist only in memory until the context implicitly writes them to the persistent storage, or you manually invoke [`save()`](./modelcontext/save%28%29.md). For more information about implicit writes, see [`autosaveEnabled`](./modelcontext/autosaveenabled.md).
 

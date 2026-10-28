@@ -20,7 +20,7 @@ Tears down a motion-estimation session.
 extern void VTMotionEstimationSessionInvalidate(VTMotionEstimationSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 When you are done with a motion-estimation session you created, call this function to tear it down and then `CFRelease` to release the session object reference. When a motion-estimation session’s retain count reaches zero, the system automatically invalidates it, but because multiple parties may retain sessions, it can be hard to predict when this happens. Calling this function ensures a deterministic, orderly teardown.
 

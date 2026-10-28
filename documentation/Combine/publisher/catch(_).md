@@ -21,11 +21,11 @@ Handles errors from an upstream publisher by replacing it with another publisher
 func `catch`<P>(_ handler: @escaping (Self.Failure) -> P) -> Publishers.Catch<Self, P> where P : Publisher, Self.Output == P.Output
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that handles errors from an upstream publisher by replacing the failed publisher with another publisher.
 
-#### Discussion
+## Discussion
 
 Use `catch()` to replace an error from an upstream publisher with a new publisher.
 

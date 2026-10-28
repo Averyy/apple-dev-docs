@@ -25,7 +25,7 @@ var baseAddress: UnsafeRawPointer { get }
 @property (nonatomic, readonly) const void * baseAddress;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This memory must not be modified by the [`CIImageProcessorKernel`](../ciimageprocessorkernel.md).
 

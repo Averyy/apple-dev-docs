@@ -19,7 +19,7 @@ case lowered
 NSBackgroundStyleLowered
 ```
 
-#### Discussion
+## Discussion
 
 You might need to emboss the cell’s content to achieve this effect.
 

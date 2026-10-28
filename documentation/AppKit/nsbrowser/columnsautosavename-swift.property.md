@@ -19,7 +19,7 @@ var columnsAutosaveName: NSBrowser.ColumnsAutosaveName { get set }
 @property (copy) NSBrowserColumnsAutosaveName columnsAutosaveName;
 ```
 
-#### Discussion
+## Discussion
 
 Column configuration is defined as an array of column content widths. One width is saved for each level the user has reached. That is, the browser saves column width based on depth, not on unique paths. To do more complex column persistence, you should register for [`columnConfigurationDidChangeNotification`](./columnconfigurationdidchangenotification.md) and handle persistence yourself. This setting is persistent.
 

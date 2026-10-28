@@ -15,7 +15,7 @@ Determine if a vnode is the root of its filesystem.
 int vnode_isvroot(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is the root, 0 if it is not.
 

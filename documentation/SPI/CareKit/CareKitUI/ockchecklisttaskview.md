@@ -18,7 +18,7 @@ A card that displays a vertically stacked checklist of items. In CareKit, this v
 class OCKChecklistTaskView
 ```
 
-#### Overview
+## Overview
 
 To insert custom views vertically the view, see `contentStack`. The header is an `OCKHeaderView`. The body has a stack of checklist items and an instructions label underneath. To access the checklist item buttons, for instance to hook them up to target actions, see the `items` array. To modify the checklist, see `updateItem`, `appendItem`, `insertItem`, `removeItem` and `clearItems`.
 

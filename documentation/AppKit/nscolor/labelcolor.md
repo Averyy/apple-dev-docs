@@ -19,7 +19,7 @@ class var labelColor: NSColor { get }
 @property (class, strong, readonly) NSColor * labelColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color in the most important text labels of your user interface. You can also use it for other types of primary app content.
 

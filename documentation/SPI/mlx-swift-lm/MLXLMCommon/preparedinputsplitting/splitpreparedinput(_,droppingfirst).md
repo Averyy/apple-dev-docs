@@ -18,11 +18,11 @@ Return the suffix of `input` that begins at `prefixTokenCount`, carrying only th
 func splitPreparedInput(_ input: LMInput, droppingFirst prefixTokenCount: Int) -> LMInput?
 ```
 
-#### Return Value
+## Return Value
 
 An `LMInput` whose tokens are `input`’s tokens after the first `prefixTokenCount`, with a media payload consistent with those tokens, or `nil` if no such input can be produced.
 
-#### Discussion
+## Discussion
 
 Returning `nil` means the input cannot be split safely at this boundary and the caller must fall back to a full prefill. Implementations should return `nil` rather than guess – in particular when the boundary falls inside a media block, when a payload cannot be attributed to individual media items, or when the input carries state the implementation does not know how to slice.
 

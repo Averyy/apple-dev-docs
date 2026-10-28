@@ -15,7 +15,7 @@
 @property (nonatomic, assign) BOOL showsMicrophoneControl;
 ```
 
-#### Discussion
+## Discussion
 
 showsMicrophoneControl Indicates whether the system picker view will show microphone control for user. Default is NO.
 

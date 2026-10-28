@@ -17,7 +17,7 @@ Fetches all alarms from the daemon that belong to the current client.
 var alarms: [Alarm] { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 As soon as an alarm fires and stops it’s deleted from the daemon’s store.  If you want to determine if a one-shot alarm has fired, persist your alarms in your own store and compare that with the result of this function call.  If the array is missing scheduled alarms, then those alarms fired.
 

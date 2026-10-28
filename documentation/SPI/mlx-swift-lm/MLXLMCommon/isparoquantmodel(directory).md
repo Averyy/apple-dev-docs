@@ -17,7 +17,7 @@ Returns `true` if the model directory contains a ParoQuant checkpoint.
 func isParoQuantModel(directory: URL) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Inspects `config.json` for `quant_method == "paroquant"` in `quantization_config` and verifies a supported architecture is declared.
 

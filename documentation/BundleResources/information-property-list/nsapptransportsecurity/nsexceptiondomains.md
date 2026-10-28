@@ -17,7 +17,7 @@ Custom App Transport Security (ATS) configurations for named domains.
 - **Name**: `NSExceptionDomains` (Exception Domains)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The value for this key is a dictionary with keys that name specific domains, IP addresses, or IP address ranges for which you want to set exceptions. The value for each domain key is another dictionary that indicates the exceptions for that domain.
 

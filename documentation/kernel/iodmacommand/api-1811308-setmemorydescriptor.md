@@ -13,11 +13,11 @@ virtual IOReturn setMemoryDescriptor(
  bool autoPrepare = true);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess, kIOReturnBusy if currently prepared, kIOReturnNoSpace if the length(mem) >= Maximum Transfer Size or the error codes returned by prepare() (qv).
 
-#### Overview
+## Overview
 
 The DMA command will configure itself based on the information that it finds in the memory descriptor. It looks for things like the direction of the memory descriptor and whether the current memory descriptor is already mapped into some IOMMU. As a programmer convenience it can also prepare the DMA command immediately. See prepare(). Note the IODMACommand is designed to used multiple times with a succession of memory descriptors, making the pooling of commands possible. It is an error though to attempt to reset a currently prepared() DMA command. Warning: This routine may block so never try to autoprepare an IODMACommand while in a gated context, i.e. one of the WorkLoops action call outs.
 

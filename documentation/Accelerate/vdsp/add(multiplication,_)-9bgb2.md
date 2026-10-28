@@ -25,11 +25,11 @@ static func add<S, T, U>(multiplication: (a: S, b: T), _ vector: U) -> [Float] w
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Return Value
+## Return Value
 
 The output vector `D` in `D = (A * B) + C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of `A` and `B`, adds each product to the corresponding value in `C`, and writes the result to `D`, as follows:
 

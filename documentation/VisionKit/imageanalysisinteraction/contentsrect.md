@@ -19,7 +19,7 @@ A rectangle, in unit coordinate space, that describes the content area of the in
 final var contentsRect: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the interaction’s view isn’t an instance of [`UIImageView`](../../UIKit/uiimageview.md), your app sets the value for this property by implementing the [`ImageAnalysisInteractionDelegate`](../imageanalysisinteractiondelegate.md) callback [`contentsRect(for:)`](../imageanalysisinteractiondelegate/contentsrect%28for%29.md). The default return value is the unit rectangle, `[0.0, 0.0, 1.0, 1.0]`, which represents the whole view contents.
 

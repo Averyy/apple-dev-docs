@@ -26,7 +26,7 @@ convenience init(activityType workoutActivityType: HKWorkoutActivityType, start 
 + (instancetype) workoutWithActivityType:(HKWorkoutActivityType) workoutActivityType startDate:(NSDate *) startDate endDate:(NSDate *) endDate workoutEvents:(NSArray<HKWorkoutEvent *> *) workoutEvents totalEnergyBurned:(HKQuantity *) totalEnergyBurned totalDistance:(HKQuantity *) totalDistance metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Discussion
+## Discussion
 
 This method calculates the workout’s duration based on the amount of time it spends in an active state. A workout starts in an active state. A pause event switches it to an inactive state, and a resume event switches it back to an active state. For more information on workout events, see [`HKWorkoutEvent`](../hkworkoutevent.md).
 

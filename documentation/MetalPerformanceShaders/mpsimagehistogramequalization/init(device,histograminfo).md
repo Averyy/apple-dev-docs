@@ -24,7 +24,7 @@ init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)
 - (instancetype) initWithDevice:(id<MTLDevice>) device histogramInfo:(const MPSImageHistogramInfo *) histogramInfo;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized histogram object.
 

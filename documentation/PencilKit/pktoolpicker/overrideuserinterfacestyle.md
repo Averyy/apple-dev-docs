@@ -22,7 +22,7 @@ var overrideUserInterfaceStyle: UIUserInterfaceStyle { get set }
 @property (nonatomic) UIUserInterfaceStyle overrideUserInterfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property, consider if you need to set [`colorUserInterfaceStyle`](./coloruserinterfacestyle.md) to a select a different user interface style. The default user interface style is [`UIUserInterfaceStyle.unspecified`](../../UIKit/uiuserinterfacestyle/unspecified.md).
 

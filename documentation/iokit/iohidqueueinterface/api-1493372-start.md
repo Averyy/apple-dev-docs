@@ -16,7 +16,7 @@ Starts event delivery to the queue.
 IOReturn (*start)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

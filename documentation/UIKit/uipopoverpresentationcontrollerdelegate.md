@@ -23,7 +23,7 @@ protocol UIPopoverPresentationControllerDelegate : UIAdaptivePresentationControl
 @protocol UIPopoverPresentationControllerDelegate <UIAdaptivePresentationControllerDelegate>
 ```
 
-#### Overview
+## Overview
 
 A popover presentation controller notifies your delegate at appropriate points during the presentation process. You can use the delegate methods to customize this process and respond to changes dynamically.
 

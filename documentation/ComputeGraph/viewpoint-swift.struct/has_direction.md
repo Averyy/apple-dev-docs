@@ -25,7 +25,7 @@ var has_direction: Bool
 bool has_direction;
 ```
 
-#### Discussion
+## Discussion
 
 When `false`, the `direction` value should not be used.
 

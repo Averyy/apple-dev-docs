@@ -22,11 +22,11 @@ convenience init(device: any MTLDevice, start: CGColorSpace, end: CGColorSpace, 
 - (instancetype) initWithDevice:(id<MTLDevice>) device startColorSpace:(CGColorSpaceRef) start endColorSpace:(CGColorSpaceRef) end functionName:(NSString *) name sourceRange:(const MPSFunctions_AABB *) sourceRange options:(MPSFColorConversionOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 On success, a valid MPSFunctionsConversion object. If the conversion can’t be done, for example because it consumes or produces more than four channels, nil will be returned, and an appropriate error code created.
 
-#### Discussion
+## Discussion
 
 Initialize a new MPSFunctionsConversion object
 

@@ -22,7 +22,7 @@ var isEchoCancelledInputAvailable: Bool { get }
 @property (nonatomic, readonly) BOOL isEchoCancelledInputAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the device supports echo cancellation and the app uses the [`playAndRecord`](./category-swift.struct/playandrecord.md) category and [`default`](./mode-swift.struct/default.md) mode.
 

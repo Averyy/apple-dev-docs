@@ -25,11 +25,11 @@ func CMTimeAdd(_ lhs: CMTime, _ rhs: CMTime) -> CMTime
 extern CMTime CMTimeAdd(CMTime lhs, CMTime rhs);
 ```
 
-#### Return Value
+## Return Value
 
 A time value that represents the result of the operation.
 
-#### Discussion
+## Discussion
 
 If both operands have the same timescale, the timescale of the result is the same. If the operands have different timescales, the timescale of the result is the least common multiple of the operands’ timescales. If that value is greater than [`kCMTimeMaxTimescale`](./kcmtimemaxtimescale.md), the system sets the timescale to [`kCMTimeMaxTimescale`](./kcmtimemaxtimescale.md) and uses the default rounding method to convert the result to this timescale.
 

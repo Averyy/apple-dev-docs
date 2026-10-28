@@ -23,7 +23,7 @@ var isCancelled: Bool { get }
 @property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is `false`.
 

@@ -23,7 +23,7 @@ func pong<Content>(_ content: Content? = nil, @ProtocolMetadataBuilder metadata 
 
 Available when `ApplicationProtocol` is `WebSocket`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the send will be enqueued until the connection is ready to send.
 

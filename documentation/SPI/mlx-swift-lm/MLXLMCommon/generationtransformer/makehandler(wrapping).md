@@ -22,7 +22,7 @@ func makeHandler(wrapping base: TextToolTokenLoopHandler) -> Handler
 
 - [Observing token log probabilities](../generation-observability.md)
 
-#### Discussion
+## Discussion
 
 Forward every base event exactly once and in order, exposing it through [`generation`](../generationproviding/generation.md). Preserve the base’s stop-token properties, dispositions, end-of-generation output, and completion metadata. Automatically dispatched tool-call events are consumed by the session.
 

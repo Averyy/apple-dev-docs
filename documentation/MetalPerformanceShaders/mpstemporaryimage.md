@@ -24,7 +24,7 @@ class MPSTemporaryImage
 @interface MPSTemporaryImage : MPSImage
 ```
 
-#### Overview
+## Overview
 
 [`MPSTemporaryImage`](./mpstemporaryimage.md) objects can provide a profound reduction in the aggregate texture memory and associated CPU-side allocation cost in your app. Metal Performance Shaders achieves this by automatically identifying [`MPSTemporaryImage`](./mpstemporaryimage.md) objects that do not overlap in time over the course of a [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) object’s lifetime and can therefore reuse the same memory. [`MPSTemporaryImage`](./mpstemporaryimage.md) objects leverage an internal cache of preallocated reusable memory to hold pixel data to avoid typical memory allocation performance penalties common to ordinary [`MPSImage`](./mpsimage.md) and [`MTLTexture`](../Metal/mtltexture.md) objects.
 
@@ -43,7 +43,7 @@ You may use the [`texture`](./mpsimage/texture.md) property with the `encode` me
 
 [`MPSTemporaryImage`](./mpstemporaryimage.md) objects can otherwise be used wherever [`MPSImage`](./mpsimage.md) objects are used.
 
-##### The MPSTemporaryImage Class
+### The MPSTemporaryImage Class
 
 The [`MPSTemporaryImage`](./mpstemporaryimage.md) class extends the [`MPSImage`](./mpsimage.md) class to provide advanced caching of unused memory, in order to increase performance and reduce memory footprint. [`MPSTemporaryImage`](./mpstemporaryimage.md) objects are intended as fast GPU-only storage for intermediate image data needed only transiently within a single [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) object. They accelerate the common case of image data which is created only to be consumed and destroyed immediately by the next operation(s) encoded in a command buffer. [`MPSTemporaryImage`](./mpstemporaryimage.md) objects provide a convenient and simple way to save memory by automatically aliasing other [`MPSTemporaryImage`](./mpstemporaryimage.md) objects in the same command buffer. Because they alias (i.e., share texel storage with) other textures in the same command buffer, the valid lifetime of the data in an [`MPSTemporaryImage`](./mpstemporaryimage.md) object is extremely short, limited to a portion of a the command buffer itself.
 

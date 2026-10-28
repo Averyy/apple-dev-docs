@@ -24,7 +24,7 @@ case carProfileName
 INVocabularyStringTypeCarProfileName
 ```
 
-#### Discussion
+## Discussion
 
 For example, automotive vendors might include the strings “Roadtrip”, “Rally”, or “Good Weather” to describe specific configurations.
 

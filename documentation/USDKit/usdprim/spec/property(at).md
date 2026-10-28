@@ -20,7 +20,7 @@ Returns the property spec at the given path within this prim.
 func property(at path: USDLayer.Path) -> USDPrim.Property.Spec?
 ```
 
-#### Return Value
+## Return Value
 
 The property spec, or `nil` if none exists at `path`.
 

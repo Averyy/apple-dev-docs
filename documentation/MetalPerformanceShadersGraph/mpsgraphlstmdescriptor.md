@@ -24,7 +24,7 @@ class MPSGraphLSTMDescriptor
 @interface MPSGraphLSTMDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
 

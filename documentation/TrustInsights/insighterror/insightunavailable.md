@@ -16,7 +16,7 @@ An error that indicate the requested insight isn’t available.
 case insightUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 The insight was potentially withdrawn or no longer supported on the active OS.
 

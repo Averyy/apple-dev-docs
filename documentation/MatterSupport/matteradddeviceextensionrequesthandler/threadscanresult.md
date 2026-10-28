@@ -19,7 +19,7 @@ A result of a Thread-scan operation performed on the device
 struct ThreadScanResult
 ```
 
-#### Overview
+## Overview
 
 Use one of these instances to create a [`MatterAddDeviceExtensionRequestHandler.ThreadNetworkAssociation`](./threadnetworkassociation.md) as a possible Thread network for the device to join.
 

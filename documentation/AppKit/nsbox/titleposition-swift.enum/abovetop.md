@@ -17,7 +17,7 @@ case aboveTop
 NSAboveTop
 ```
 
-#### Discussion
+## Discussion
 
 Title positioned above the box’s top border.
 

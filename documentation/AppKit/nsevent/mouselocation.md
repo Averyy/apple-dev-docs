@@ -19,11 +19,11 @@ class var mouseLocation: NSPoint { get }
 @property (class, readonly) NSPoint mouseLocation;
 ```
 
-#### Return Value
+## Return Value
 
 The current mouse location in screen coordinates.
 
-#### Discussion
+## Discussion
 
 This method is similar to the [`mouseLocationOutsideOfEventStream`](../nswindow/mouselocationoutsideofeventstream.md) method of [`NSWindow`](../nswindow.md). It returns the location regardless of the current event or pending events. The difference between these methods is that [`mouseLocationOutsideOfEventStream`](../nswindow/mouselocationoutsideofeventstream.md) returns a point in the receiving window’s coordinates, and [`mouseLocation`](./mouselocation.md) returns the same information in screen coordinates.
 

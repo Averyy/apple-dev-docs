@@ -24,7 +24,7 @@ struct MarkerFormat
 typedef NSString * NSTextListMarkerFormat;
 ```
 
-#### Overview
+## Overview
 
 Select a marker symbol to apply to your list elements in your text list, then set it in [`markerFormat`](./markerformat-swift.property.md). Or, specify a marker symbol when you create a text list with [`init(markerFormat:options:)`](./init%28markerformat,options%29.md) or [`init(markerFormat:options:startingItemNumber:)`](./init%28markerformat,options,startingitemnumber%29.md).
 

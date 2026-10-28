@@ -24,7 +24,7 @@ let kVTPixelTransferPropertyKey_DestinationYCbCrMatrix: CFString
 extern CFStringRef const kVTPixelTransferPropertyKey_DestinationYCbCrMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying this value may lead to performance degradation, as a color matching operation may need to be performed between the source and the destination.
 

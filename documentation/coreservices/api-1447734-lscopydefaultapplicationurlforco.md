@@ -19,11 +19,11 @@ func LSCopyDefaultApplicationURLForContentType(_ inContentType: CFString, _ inRo
 CFURLRef LSCopyDefaultApplicationURLForContentType(CFStringRef inContentType, LSRolesMask inRoleMask, CFErrorRef  _Nullable *outError);
 ```
 
-#### Return Value
+## Return Value
 
 If an acceptable app is found, its URL is returned. If no app could be found, `NULL` is returned and `outError` (if not `NULL`) is populated with [`kLSApplicationNotFoundErr`](./klsapplicationnotfounderr.md). The caller is responsible for releasing this URL.
 
-#### Discussion
+## Discussion
 
 Consults the binding tables to return the application that would be used to open a file of type `inContentType` if it were double-clicked in the Finder. This app will be the user-specified override if appropriate or the default otherwise.
 

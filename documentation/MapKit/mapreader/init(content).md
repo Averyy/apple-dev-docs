@@ -22,7 +22,7 @@ Creates an instance that allows view content to reference information about a co
 @preconcurrency init(@ViewBuilder content: @escaping (MapProxy) -> Content)
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`MapProxy`](../mapproxy.md) that allows you to introspect the content of a map.
 

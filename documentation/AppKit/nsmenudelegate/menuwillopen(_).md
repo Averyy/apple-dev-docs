@@ -20,7 +20,7 @@ optional func menuWillOpen(_ menu: NSMenu)
 - (void) menuWillOpen:(NSMenu *) menu;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t modify the structure of the menu or the menu items during this method.
 

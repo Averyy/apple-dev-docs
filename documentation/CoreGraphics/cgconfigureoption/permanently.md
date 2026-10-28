@@ -18,7 +18,7 @@ static var permanently: CGConfigureOption { get }
 kCGConfigurePermanently
 ```
 
-#### Discussion
+## Discussion
 
 Changes persist in future login sessions by the same user. If the requested changes cannot be supported by the Aqua UI (resolution and pixel depth constraints apply), the settings for the current login session are used instead, and any changes have session scope.
 

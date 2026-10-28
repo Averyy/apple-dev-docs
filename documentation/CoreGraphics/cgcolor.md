@@ -25,7 +25,7 @@ class CGColor
 typedef struct CGColor * CGColorRef;
 ```
 
-#### Overview
+## Overview
 
 `CGColor` is the fundamental data type used internally by Core Graphics to represent colors. `CGColor` objects, and the functions that operate on them, provide a fast and convenient way of managing and setting colors directly, especially colors that are reused (such as black for text).
 

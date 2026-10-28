@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Generate a Software Bill of Materials (SBOM).
 
-#### Overview
+## Overview
 
 ```
 package generate-sbom [--package-path=<package-path>]

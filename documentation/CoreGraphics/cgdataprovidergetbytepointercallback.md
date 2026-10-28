@@ -25,11 +25,11 @@ typealias CGDataProviderGetBytePointerCallback = (UnsafeMutableRawPointer?) -> U
 typedef const void *(*)(void *) CGDataProviderGetBytePointerCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A generic pointer to your provider data. By suppling this pointer, you are giving Core Graphics read-only access to both the pointer and the underlying provider data. You must not move or modify the provider data until Core Graphics calls your [`CGDataProviderReleaseBytePointerCallback`](./cgdataproviderreleasebytepointercallback.md) function.
 
-#### Discussion
+## Discussion
 
 When Core Graphics needs direct access to your provider data, this function is called.
 

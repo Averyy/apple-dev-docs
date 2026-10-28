@@ -16,11 +16,11 @@ Method to get the task's SCSICommandDescriptorBlock.
 IOReturn (*GetCommandDescriptorBlock)(void *task, UInt8 *outCDB);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSucces or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to get the SCSITasks' SCSICommandDescriptorBlock.
 

@@ -14,7 +14,7 @@
 kUSBNotificationPreForcedResume = (1 << kUSBNotificationPreForcedResumeBit)
 ```
 
-#### Discussion
+## Discussion
 
 A notification is sent before a resume which happens after a forced suspend (e.g. system wake).
 

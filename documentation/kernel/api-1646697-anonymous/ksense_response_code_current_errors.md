@@ -13,7 +13,7 @@
 kSENSE_RESPONSE_CODE_Current_Errors = 0x70
 ```
 
-#### Discussion
+## Discussion
 
 Response code indicating current errors are reported.
 

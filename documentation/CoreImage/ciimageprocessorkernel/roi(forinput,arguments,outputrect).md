@@ -24,11 +24,11 @@ class func roi(forInput inputIndex: Int32, arguments: [String : Any]?, outputRec
 + (CGRect) roiForInput:(int) inputIndex arguments:(NSDictionary<NSString *,id> *) arguments outputRect:(CGRect) outputRect;
 ```
 
-#### Return Value
+## Return Value
 
  The `CGRect` of the `inputIndex`th input that is required for the above `outputRect`
 
-#### Discussion
+## Discussion
 
 This will be called one or more times per render to determine what portion of the input images are needed to render a given ‘outputRect’ of the output. This will not be called if processor has no input images.
 

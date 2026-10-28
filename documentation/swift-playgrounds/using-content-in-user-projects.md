@@ -5,11 +5,11 @@
 
 Learn how to bring sample code into your app playground.
 
-#### Overview
+## Overview
 
 While using Swift Playgrounds you might discover some code in one of the various samples that you’d like to use in your app. For example, you might find a particular view has a useful layout, or that a model for a particular part of a sample app is similar to what you want in your own app. To bring code from an app playground (`.swiftpm`), it’s helpful to know what you want to bring over. Here are some tips and tricks when it comes to bringing code from Swift Playgrounds samples into your app.
 
-##### Transfer data models
+### Transfer data models
 
 Data representation is an important part of app development. For example, designing a class with all the necessary properties and methods ensures easy data passing. In addition, it’s important to consider how you store your data to make sure reading and writing happens quickly to make sure users aren’t waiting. The content in Swift Playgrounds shows a number of different models whether it’s a [page of a story](https://developer.apple.com/tutorials/sample-apps/chooseyourownstory), and event in a [date planner](https://developer.apple.com/tutorials/sample-apps/dateplanner), or a panda image used to make a [meme](https://developer.apple.com/tutorials/sample-apps/memecreator).
 
@@ -17,7 +17,7 @@ The first step in adopting code from another app playground is knowing what code
 
 You might find that data on the website you want to download images from uses a different model than the website used by Meme Creator. For example, assume the website allows you to make database style requests and returns a list of addresses. You would find that the `Panda` and `PandaCollection` objects will work as-is. What does change, however, is the code in the `PandaCollectionFetcher` which you use to make a URL request with a database query, and then a small change to the way you process the data to handle a list instead of a dictionary. With those changes – and some renaming to fit the classes into your app – you can use code from Swift Playgrounds in your app.
 
-##### Transfer views and view elements
+### Transfer views and view elements
 
 Views make up the visible portion of your app. Swift Playgrounds shows a number of different concepts for UI that can be used in your app.
 

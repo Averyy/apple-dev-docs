@@ -18,7 +18,7 @@ A standalone Metal-backed render context for creating low-level rendering resour
 final class LowLevelRenderContextStandalone
 ```
 
-#### Overview
+## Overview
 
 `LowLevelRenderContextStandalone` is a concrete implementation of [`LowLevelRenderContext`](./lowlevelrendercontext.md), [`LowLevelRenderContextLighting`](./lowlevelrendercontextlighting.md), and [`LowLevelRenderContextShaderGraph`](./lowlevelrendercontextshadergraph.md). Create one using [`init(configuration:)`](./lowlevelrendercontextstandalone/init%28configuration%29.md) , or [`init(configuration:resources:)`](./lowlevelrendercontextstandalone/init%28configuration,resources%29.md) with a prepared [`LowLevelRenderContextStandalone.Resources`](./lowlevelrendercontextstandalone/resources.md) instance.
 

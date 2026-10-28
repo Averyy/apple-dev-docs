@@ -17,11 +17,11 @@ Looks up and returns the port registered under the specified name on a specified
 - (NSPort *) portForName:(NSString *) name host:(NSString *) host;
 ```
 
-#### Return Value
+## Return Value
 
 The port associated with `portName` on the host `hostName`. Returns `nil` if no such port exists.
 
-#### Discussion
+## Discussion
 
 Invokes [`portForName:host:nameServerPortNumber:`](./portforname_host_nameserverportnumber_.md) with 0 as the name server port number.
 

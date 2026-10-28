@@ -19,7 +19,7 @@ Perform the block with a temporarily altered wired memory limit.
 static func withWiredLimit<R>(_ limit: Int, _ body: () throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 Note: this manipulates a global value.  Nested calls will work as expected but concurrent calls cannot.
 

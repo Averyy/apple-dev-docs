@@ -21,7 +21,7 @@ Removes a node from the graph.
 mutating func removeNode(_ node: ComputeNodeGraph.NodeID) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the node cannot be removed.
 

@@ -12,11 +12,11 @@ virtual IOReturn disable(
  IONetworkInterface *interface);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnUnsupported. Drivers that override this method must return Returns kIOReturnSuccess on success, or an error code otherwise.
 
-#### Overview
+## Overview
 
 This method is called by an interface client to disable the controller. This method should stop the hardware and disable hardware interrupt sources. Any resources allocated by enable() should also be deallocated. This method call is synchronized by the workloop's gate.
 

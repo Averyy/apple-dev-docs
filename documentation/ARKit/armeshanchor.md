@@ -20,7 +20,7 @@ class ARMeshAnchor
 @interface ARMeshAnchor : ARAnchor
 ```
 
-#### Overview
+## Overview
 
 ARKit subdivides the reconstructed, real-world scene surrounding the user into mesh anchors.
 

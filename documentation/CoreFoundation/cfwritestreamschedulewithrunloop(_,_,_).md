@@ -25,7 +25,7 @@ func CFWriteStreamScheduleWithRunLoop(_ stream: CFWriteStream!, _ runLoop: CFRun
 extern void CFWriteStreamScheduleWithRunLoop(CFWriteStreamRef stream, CFRunLoopRef runLoop, CFRunLoopMode runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 After scheduling `stream` into a run loop, its client (set with [`CFWriteStreamSetClient(_:_:_:_:)`](./cfwritestreamsetclient%28_,_,_,_%29.md)) is notified when various events happen with the stream, such as when it finishes opening, when it can accept new bytes, and when an error occurs. A stream can be scheduled into multiple run loops and run loop modes. Use [`CFWriteStreamUnscheduleFromRunLoop(_:_:_:)`](./cfwritestreamunschedulefromrunloop%28_,_,_%29.md) to later remove `stream` from the run loop.
 

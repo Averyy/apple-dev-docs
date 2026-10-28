@@ -17,7 +17,7 @@ A process capability for work in the background.
 case background
 ```
 
-#### Discussion
+## Discussion
 
 This capability grants the helper extension process the ability to run in the background to finish work.
 

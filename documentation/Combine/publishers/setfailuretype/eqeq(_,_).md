@@ -23,7 +23,7 @@ static func == (lhs: Publishers.SetFailureType<Upstream, Failure>, rhs: Publishe
 
 Available when `Upstream` conforms to `Publisher`, `Upstream` conforms to `Equatable`, `Failure` conforms to `Error`, and `Upstream.Failure` is `Never`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `upstream` properties; otherwise `false`.
 

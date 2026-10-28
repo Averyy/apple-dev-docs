@@ -23,7 +23,7 @@ var center: CGPoint { get set }
 @property (nonatomic) CGPoint center;
 ```
 
-#### Discussion
+## Discussion
 
 The center point is specified in the coordinate system of the collection view. Setting the value of this property also updates the origin of the rectangle in the [`frame`](./frame.md) property.
 

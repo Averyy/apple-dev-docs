@@ -23,7 +23,7 @@ case compact
 UISplitViewControllerColumnCompact
 ```
 
-#### Discussion
+## Discussion
 
 If a view controller is set for this column, that view controller is shown when [`isCollapsed`](../iscollapsed.md) is [`true`](../../../Swift/true.md).
 

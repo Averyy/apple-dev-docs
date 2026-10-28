@@ -18,7 +18,7 @@ The full extents of the optional axis-aligned bounding box.
 var fullExtents: SIMD3<Float>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The full extents are equal to twice the [`halfExtents`](./halfextents.md).
 

@@ -24,7 +24,7 @@ weak var delegate: (any MTKViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<MTKViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A delegate is optional. If you provide one, the view calls the delegate when it needs to update its contents. You should either provide a delegate or subclass the view to override the [`draw(_:)`](../../UIKit/uiview/draw%28_%29.md) method, but not both.
 

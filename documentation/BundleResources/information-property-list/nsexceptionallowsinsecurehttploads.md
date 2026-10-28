@@ -21,7 +21,7 @@ A Boolean value indicating whether to allow insecure HTTP loads.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Set the value for this key to `YES` to allow insecure HTTP loads for the given domain, or to be able to loosen the server trust evaluation requirements for HTTPS connections to the domain, as described in [Performing manual server trust authentication](../../Foundation/performing-manual-server-trust-authentication.md).
 

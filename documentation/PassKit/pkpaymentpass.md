@@ -24,7 +24,7 @@ class PKPaymentPass
 @interface PKPaymentPass : PKSecureElementPass
 ```
 
-#### Overview
+## Overview
 
 Use [`PKSecureElementPass`](./pksecureelementpass.md) in apps instead of this class to implement a payment pass in apps with these these system versions:
 

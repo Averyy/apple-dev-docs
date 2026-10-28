@@ -15,7 +15,7 @@ An event that indicates the state of the player is about to change.
 attribute  stateWillChange;
 ```
 
-#### Discussion
+## Discussion
 
 The listener is passed an event object with the following attributes:
 

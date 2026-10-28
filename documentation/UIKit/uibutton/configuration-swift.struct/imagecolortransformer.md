@@ -19,7 +19,7 @@ A block that transforms the image color when the button state changes.
 var imageColorTransformer: UIConfigurationColorTransformer? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to transform an image to, for example, a monochrome or tinted image.
 

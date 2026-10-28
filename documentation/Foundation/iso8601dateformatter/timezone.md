@@ -25,7 +25,7 @@ var timeZone: TimeZone! { get set }
 @property (copy, null_resettable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 Resetting this property can incur a significant performance cost, as it may cause internal state to be regenerated.
 

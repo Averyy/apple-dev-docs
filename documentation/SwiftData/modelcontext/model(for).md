@@ -22,7 +22,7 @@ Returns the persistent model for the specified identifier.
 func model(for persistentModelID: PersistentIdentifier) -> any PersistentModel
 ```
 
-#### Return Value
+## Return Value
 
 The identified persistent model, if known to the context; otherwise, an unsaved model with its [`persistentModelID`](../persistentmodel/persistentmodelid.md) property set to `persistentModelID`.
 

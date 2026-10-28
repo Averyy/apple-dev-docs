@@ -25,7 +25,7 @@ case success
 INSearchForNotebookItemsIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after performing the search. Put the results of the search in your response object.
 

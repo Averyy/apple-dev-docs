@@ -19,7 +19,7 @@ class VZSharedDirectory
 @interface VZSharedDirectory : NSObject
 ```
 
-#### Overview
+## Overview
 
 This exposes a directory from the host file system to the guest.
 

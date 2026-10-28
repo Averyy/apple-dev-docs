@@ -25,11 +25,11 @@ func CTFontCopyCharacterSet(_ font: CTFont) -> CFCharacterSet
 extern CFCharacterSetRefCTFontCopyCharacterSet(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to the font’s character set.
 
-#### Discussion
+## Discussion
 
 The returned character set covers the nominal referenced by the font’s Unicode `'cmap’` table.
 

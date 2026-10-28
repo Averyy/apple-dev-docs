@@ -25,11 +25,11 @@ func bool(forKey aKey: String) -> Bool
 - (BOOL) boolForKey:(NSString *) aKey;
 ```
 
-#### Return Value
+## Return Value
 
 The Boolean value associated with `aKey`, or `false` if the key isn’t present.
 
-#### Discussion
+## Discussion
 
 This method automatically coerces certain values to their equivalent Boolean meanings. For example, it coerces the numbers 1 and 1.0, and the strings “true”, “YES”, and “1” to the value `true`.
 

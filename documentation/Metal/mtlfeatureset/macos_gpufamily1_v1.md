@@ -19,7 +19,7 @@ case macOS_GPUFamily1_v1
 MTLFeatureSet_macOS_GPUFamily1_v1
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with the first family of Mac GPUs that support Metal and run macOS 10.11.
 

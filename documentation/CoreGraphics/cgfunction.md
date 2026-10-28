@@ -25,7 +25,7 @@ class CGFunction
 typedef struct CGFunction * CGFunctionRef;
 ```
 
-#### Overview
+## Overview
 
 These functions can take an arbitrary number of floating-point input values and pass back an arbitrary number of floating-point output values.
 

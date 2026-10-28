@@ -22,7 +22,7 @@ Called during when a distributed actor is deinitialized, or fails to initialize 
 func resignID(_ id: Self.ActorID)
 ```
 
-#### Discussion
+## Discussion
 
 This method is guaranteed to be called at-most-once for a given id (assuming IDs are unique, and not re-cycled by the system), i.e. if it is called during a failure to initialize completely, the call from the actor’s deinitializer will not happen (as under these circumstances, `deinit` will be run).
 

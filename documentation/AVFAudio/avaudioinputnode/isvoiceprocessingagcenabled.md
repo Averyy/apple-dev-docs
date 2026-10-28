@@ -25,7 +25,7 @@ var isVoiceProcessingAGCEnabled: Bool { get set }
 @property (nonatomic, getter=isVoiceProcessingAGCEnabled) BOOL voiceProcessingAGCEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property is in an enabled state by default.
 

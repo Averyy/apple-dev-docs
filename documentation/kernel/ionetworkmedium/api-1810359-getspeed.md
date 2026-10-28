@@ -9,7 +9,7 @@
 virtual UInt64 getSpeed() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the maximum link speed supported by this medium.
 

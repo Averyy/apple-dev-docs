@@ -25,7 +25,7 @@ func removeObjects(in array: [Any])
 - (void) removeObjectsInArray:(NSArray<id> *) array;
 ```
 
-#### Discussion
+## Discussion
 
 This method is similar to [`remove(_:)`](./remove%28_%29.md), but allows you to efficiently remove large sets of objects with a single operation. If the receiving mutable ordered set does not contain objects in array, the method has no effect (although it does incur the overhead of searching the contents).
 

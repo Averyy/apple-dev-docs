@@ -27,7 +27,7 @@ func session(_ session: MCSession, didFinishReceivingResourceWithName resourceNa
 - (void) session:(MCSession *) session didFinishReceivingResourceWithName:(NSString *) resourceName fromPeer:(MCPeerID *) peerID atURL:(NSURL *) localURL withError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The file referenced by `resourceURL` is a temporary file. Your app must either read the file or make a copy in a permanent location before this delegate method returns.
 

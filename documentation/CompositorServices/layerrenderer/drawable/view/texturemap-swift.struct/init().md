@@ -16,7 +16,7 @@ Creates an uninitialized texture map.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Fetch the texture map associated with the view instead of using this initializer.
 

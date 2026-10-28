@@ -22,11 +22,11 @@ Returns the greater of the two given values.
 static func maximum(_ x: Self, _ y: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The greater of `x` and `y`, or whichever is a number if the other is NaN.
 
-#### Discussion
+## Discussion
 
 This method returns the maximum of two values, preserving order and eliminating NaN when possible. For two values `x` and `y`, the result of `maximum(x, y)` is `x` if `x > y`, `y` if `x <= y`, or whichever of `x` or `y` is a number if the other is a quiet NaN. If both `x` and `y` are NaN, or either `x` or `y` is a signaling NaN, the result is NaN.
 

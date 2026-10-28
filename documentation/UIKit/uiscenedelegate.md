@@ -28,7 +28,7 @@ protocol UISceneDelegate : NSObjectProtocol
 
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Overview
+## Overview
 
 Use your [`UISceneDelegate`](./uiscenedelegate.md) object to manage life-cycle events in one instance of your app’s user interface. This interface defines methods for responding to state transitions that affect the scene, including when the scene enters the foreground and becomes active, and when it enters the background. Use your delegate to provide appropriate behavior when these transitions occur. For example, finish critical tasks and quiet your app when it enters the background.
 

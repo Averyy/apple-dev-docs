@@ -29,7 +29,7 @@ class PHAdjustmentData
 - [Editing Asset Content](../PhotoKit/editing-asset-content.md)
 - [Creating Photo Editing Extensions](../PhotoKit/creating-photo-editing-extensions.md)
 
-#### Overview
+## Overview
 
 When a user edits an asset, Photos saves a [`PHAdjustmentData`](./phadjustmentdata.md) object along with the modified image or video data. This object provides an application-defined “recipe” you can use to reconstruct the edit. For example, if your app applies filters to a photo, you might create adjustment data that identifies which filters the user picked, the parameters for each, and the order to apply the filters in. Later, the user can resume working with those filters and parameters by using your app or another app that understands your adjustment data format. When iCloud Photos is enabled, a user can revert or resume edits made on a different device.
 

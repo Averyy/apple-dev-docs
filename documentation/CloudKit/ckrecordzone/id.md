@@ -25,7 +25,7 @@ class ID
 @interface CKRecordZoneID : NSObject
 ```
 
-#### Overview
+## Overview
 
 Zones are a mechanism for grouping related records together. You create zone ID objects when you want to fetch an existing zone object or create a new zone with a specific name.
 
@@ -35,7 +35,7 @@ When creating new record zones, make the name string in the record zone ID uniqu
 
 Don’t create subclasses of this class.
 
-##### Interacting with Record Zone IDs
+### Interacting with Record Zone IDs
 
 After you create a record zone ID, interactions with it typically include:
 
@@ -44,11 +44,11 @@ After you create a record zone ID, interactions with it typically include:
 
 You don’t need to create a record zone ID to create a record zone. The [`CKRecordZone`](../ckrecordzone.md) class has initialization methods that create a record zone ID using the name string you provide.
 
-###### Creating Record Zone IDs for Records
+#### Creating Record Zone IDs for Records
 
 To create a new record in a custom zone, create a record zone ID that specifies the zone name. Use the record zone ID to create a [`CKRecord.ID`](../ckrecord/id.md), and then use the record ID to create the record.
 
-###### Fetching a Record Zone Object from the Database
+#### Fetching a Record Zone Object from the Database
 
 To fetch a record zone from the database, use a [`CKFetchRecordZonesOperation`](../ckfetchrecordzonesoperation.md) object or the [`fetch(withRecordZoneID:completionHandler:)`](../ckdatabase/fetch%28withrecordzoneid,completionhandler%29.md) method of [`CKDatabase`](../ckdatabase.md). Both techniques accept a record zone ID that you provide and retrieve the corresponding record zone object asynchronously. If you use the operation object, you can retrieve multiple record zones at the same time.
 

@@ -19,7 +19,7 @@ class VZGuestProvisioningOptions
 @interface VZGuestProvisioningOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate `VZGuestProvisioningOptions` directly; instead, use one of its subclasses, such as [`VZMacGuestProvisioningOptions`](./vzmacguestprovisioningoptions.md).
 

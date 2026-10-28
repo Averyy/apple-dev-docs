@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_SpeedMultiplier: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_SpeedMultiplier;
 ```
 
-#### Discussion
+## Discussion
 
 For normal playback the speed multiplier would be `1.0` (which is used if this attachment is not present);         for double-speed playback the speed multiplier would be `2.0`, which would halve the output duration.        Speed-multiplication factors take effect after trimming; see [`CMSampleBufferGetOutputDuration(_:)`](./cmsamplebuffergetoutputduration%28_%29.md).        Note that this attachment principally provides information about the duration-stretching effect:        by default, it should be implemented by rate conversion, but other attachments may specify richer         stretching operations—for example, scaling without pitch shift, or pitch shift without changing duration.        Sequences of speed-multiplied sample buffers should have explicit time stamps        to clarify when each should be output (see [`CMSampleBufferSetOutputPresentationTimeStamp(_:newValue:)`](./cmsamplebuffersetoutputpresentationtimestamp%28_,newvalue%29.md)).
 

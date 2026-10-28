@@ -22,7 +22,7 @@ var networkList: [NEHotspotNetwork]? { get }
 @property (readonly, nullable) NSArray<NEHotspotNetwork *> * networkList;
 ```
 
-#### Discussion
+## Discussion
 
 This property will be nil unless `commandType` is `kNEHotspotHelperCommandTypeFilterScanList`.
 

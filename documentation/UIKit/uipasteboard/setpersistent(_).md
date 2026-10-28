@@ -23,7 +23,7 @@ func setPersistent(_ persistent: Bool)
 - (void) setPersistent:(BOOL) persistent;
 ```
 
-#### Discussion
+## Discussion
 
 Nonpersistent named pasteboards remain available. You can use these to implement such features as Duplicate or Copy Style. A nonpersistent named pasteboard is available only in the process that creates it.
 

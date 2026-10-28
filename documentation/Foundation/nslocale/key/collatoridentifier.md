@@ -25,7 +25,7 @@ static let collatorIdentifier: NSLocale.Key
 extern NSLocaleKey const NSLocaleCollatorIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"en"`.
 

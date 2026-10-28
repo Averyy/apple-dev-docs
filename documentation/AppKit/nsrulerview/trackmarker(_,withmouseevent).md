@@ -19,7 +19,7 @@ func trackMarker(_ marker: NSRulerMarker, withMouseEvent event: NSEvent) -> Bool
 - (BOOL) trackMarker:(NSRulerMarker *) marker withMouseEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the receiver adds `aMarker`, [`false`](../../Swift/false.md) if it doesn’t. This method works by sending [`trackMouse(with:adding:)`](../nsrulermarker/trackmouse%28with,adding%29.md) to `aMarker` with `theEvent` and [`true`](../../Swift/true.md) as arguments.
 

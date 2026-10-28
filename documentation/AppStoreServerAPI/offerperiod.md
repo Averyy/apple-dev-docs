@@ -19,7 +19,7 @@ string offerPeriod
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This field is in ISO 8601 duration format.
 

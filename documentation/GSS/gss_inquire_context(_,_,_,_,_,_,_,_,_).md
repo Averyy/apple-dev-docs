@@ -23,11 +23,11 @@ func gss_inquire_context(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ cont
 OM_uint32 gss_inquire_context(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, gss_name_t*src_name, gss_name_t*targ_name, OM_uint32 *lifetime_rec, gss_OID*mech_type, OM_uint32 *ctx_flags, int *locally_initiated, int *xopen);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 The context must exist but need not be fully established for the inquiry to succeed.
 

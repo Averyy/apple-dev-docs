@@ -20,7 +20,7 @@ func ColorSyncCMMCreate(_ cmmBundle: CFBundle!) -> Unmanaged<ColorSyncCMM>?
 extern ColorSyncCMMRefColorSyncCMMCreate(CFBundleRef cmmBundle);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`ColorSyncCMM`](./colorsynccmm.md), or `NULL` in case of failure.
 

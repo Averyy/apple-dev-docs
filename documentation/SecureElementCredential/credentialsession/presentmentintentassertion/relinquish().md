@@ -20,7 +20,7 @@ final func relinquish() async throws
 
 - [Accessing and using secure element credentials](../../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 Call this function after your presentment task finishes.
 

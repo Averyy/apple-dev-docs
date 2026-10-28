@@ -22,7 +22,7 @@ var sourceDeviceType: AVCaptureDevice.DeviceType? { get }
 @property (readonly, nullable) AVCaptureDeviceType sourceDeviceType;
 ```
 
-#### Discussion
+## Discussion
 
 When you capture dual photos with a [`builtInDualCamera`](../avcapturedevice/devicetype-swift.struct/builtindualcamera.md) device and the [`isDualCameraDualPhotoDeliveryEnabled`](../avcapturephotosettings/isdualcameradualphotodeliveryenabled.md) setting, use this property to determine which of the two resulting photo objects is from the [`builtInWideAngleCamera`](../avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md) or [`builtInTelephotoCamera`](../avcapturedevice/devicetype-swift.struct/builtintelephotocamera.md) device.
 

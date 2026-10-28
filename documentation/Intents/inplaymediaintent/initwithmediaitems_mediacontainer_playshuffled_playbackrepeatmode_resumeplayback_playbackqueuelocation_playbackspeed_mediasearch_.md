@@ -20,7 +20,7 @@ Initialize an intent that describes media content such as a song, podcast episod
 - (instancetype) initWithMediaItems:(NSArray<INMediaItem *> *) mediaItems mediaContainer:(INMediaItem *) mediaContainer playShuffled:(NSNumber *) playShuffled playbackRepeatMode:(INPlaybackRepeatMode) playbackRepeatMode resumePlayback:(NSNumber *) resumePlayback playbackQueueLocation:(INPlaybackQueueLocation) playbackQueueLocation playbackSpeed:(NSNumber *) playbackSpeed mediaSearch:(INMediaSearch *) mediaSearch;
 ```
 
-#### Discussion
+## Discussion
 
 The [`INPlayMediaIntent`](../inplaymediaintent.md) object should include information about the media that accurately represents the content. For example, if the user plays a song from a particular album, include both pieces of information in the intent. Provide the song in `mediaItems` and the album in `mediaContainer`. If your app supports options for shuffle play, repeat modes, and resuming playback, include the current settings for those options when creating the intent.
 

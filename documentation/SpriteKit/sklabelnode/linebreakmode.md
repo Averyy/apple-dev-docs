@@ -25,7 +25,7 @@ var lineBreakMode: NSLineBreakMode { get set }
 @property (nonatomic) NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is NSLineBreakByTruncatingTail.
 

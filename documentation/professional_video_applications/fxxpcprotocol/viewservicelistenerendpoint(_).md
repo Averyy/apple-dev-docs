@@ -22,7 +22,7 @@ func viewServiceListenerEndPoint() async -> NSXPCListenerEndpoint?
 - (void) viewServiceListenerEndPoint:(void (^)(NSXPCListenerEndpoint * )) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Obtains the NSXPCListenerEndpoint for ViewBridge to communicate with custom views.
 

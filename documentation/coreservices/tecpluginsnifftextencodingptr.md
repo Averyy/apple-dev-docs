@@ -16,7 +16,7 @@ Defines a pointer toa function that analyzes a text stream and returns the proba
 typedef OSStatus (*TECPluginSniffTextEncodingPtr)(TECSnifferObjectRef encodingSniffer, TECSnifferContextRec *snifContext);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

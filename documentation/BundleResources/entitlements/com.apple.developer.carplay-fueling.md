@@ -15,7 +15,7 @@ A Boolean value that indicates whether the CarPlay app provides details about ne
 - **Name**: `com.apple.developer.carplay-fueling`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 You can include this entitlement and the [CarPlay EV Charging App](./com.apple.developer.carplay-charging.md) entitlement in the same app.
 

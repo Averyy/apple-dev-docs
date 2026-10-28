@@ -25,7 +25,7 @@ static var writeWithoutResponse: CBCharacteristicProperties { get }
 CBCharacteristicPropertyWriteWithoutResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`writeValue(_:for:type:)`](../cbperipheral/writevalue%28_,for,type%29.md) method of the [`CBPeripheral`](../cbperipheral.md) class to write to a characteristic’s value, using the [`CBCharacteristicWriteType.withoutResponse`](../cbcharacteristicwritetype/withoutresponse.md) constant as the parameter for `type`. If a characteristic has this property set, it doesn’t return an error to the central when it fails to write the characteristic’s value.
 

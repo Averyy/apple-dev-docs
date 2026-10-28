@@ -24,7 +24,7 @@ case octaves
 kAudioUnitParameterUnit_Octaves
 ```
 
-#### Discussion
+## Discussion
 
 Octaves in relative pitch, where a value of 1 is equal to an interval of `1200` cents.
 

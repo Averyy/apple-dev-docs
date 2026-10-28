@@ -23,11 +23,11 @@ init(inputPort port: AVCaptureInput.Port, videoPreviewLayer layer: AVCaptureVide
 - (instancetype) initWithInputPort:(AVCaptureInputPort *) port videoPreviewLayer:(AVCaptureVideoPreviewLayer *) layer;
 ```
 
-#### Return Value
+## Return Value
 
 A capture connection that represents a connection between `port` and `layer`.
 
-#### Discussion
+## Discussion
 
 You can add the connection this method returns to an [`AVCaptureSession`](../avcapturesession.md) instance with the [`addConnection(_:)`](../avcapturesession/addconnection%28_%29.md) method.
 

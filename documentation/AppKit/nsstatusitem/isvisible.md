@@ -19,7 +19,7 @@ var isVisible: Bool { get set }
 @property (assign, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property either shows or hides the status item within the menu bar. The item’s visiblity may also change if the user removes the item manually, and you can watch for changes in visibility using key-value observation. The status item’s visiblity persists and restores automatically based on the value of [`autosaveName`](./autosavename-swift.property.md).
 

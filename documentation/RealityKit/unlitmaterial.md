@@ -24,7 +24,7 @@ struct UnlitMaterial
 
 - [Modifying RealityKit rendering using custom materials](./modifying-realitykit-rendering-using-custom-materials.md)
 
-#### Overview
+## Overview
 
 `UnlitMaterial` materials do not respond to virtual or real lighting.
 

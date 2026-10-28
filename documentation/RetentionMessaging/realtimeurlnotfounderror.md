@@ -15,7 +15,7 @@ An error that indicates that the URL for your endpoint isn’t configured.
 object RealtimeUrlNotFoundError
 ```
 
-#### Overview
+## Overview
 
 To configure your `Get Retention Message` endpoint, call [`Configure Realtime URL`](./configure-realtime-url.md). For more information, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 

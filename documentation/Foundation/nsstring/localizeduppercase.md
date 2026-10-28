@@ -25,7 +25,7 @@ var localizedUppercase: String { get }
 @property (copy, readonly) NSString * localizedUppercaseString;
 ```
 
-#### Discussion
+## Discussion
 
 Case transformations aren’t guaranteed to be symmetrical or to produce strings of the same lengths as the originals. See [`lowercased`](./lowercased.md) for an example.
 

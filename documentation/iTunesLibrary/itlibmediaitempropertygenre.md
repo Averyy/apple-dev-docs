@@ -20,7 +20,7 @@ let ITLibMediaItemPropertyGenre: String
 extern NSString * const ITLibMediaItemPropertyGenre;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be empty.
 

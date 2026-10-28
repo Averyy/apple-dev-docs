@@ -18,7 +18,7 @@ The main body text to display in the complication.
 <CLKTextProvider> @objc final var bodyTextProvider: CLKTextProvider { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property supports multicolor text.
 

@@ -23,7 +23,7 @@ class INCar
 @interface INCar : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `INCar` object provides information about a specific electric vehicle that belongs to the user.
 

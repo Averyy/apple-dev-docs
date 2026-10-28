@@ -19,15 +19,15 @@ func MDItemCreateWithURL(_ allocator: CFAllocator!, _ url: CFURL!) -> MDItem!
 MDItemRef MDItemCreateWithURL(CFAllocatorRef allocator, CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 An `MDItem` object or `NULL` if there was a problem creating the object. 
 
-#### Discussion
+## Discussion
 
 Returns a metadata item for the given URL.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.5 and later MDItemRefs may or may not be uniqued. You should always use `CFEqual` for comparison. 
 

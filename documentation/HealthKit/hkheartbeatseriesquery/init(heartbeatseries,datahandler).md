@@ -24,7 +24,7 @@ init(heartbeatSeries: HKHeartbeatSeriesSample, dataHandler: @escaping @Sendable 
 - (instancetype) initWithHeartbeatSeries:(HKHeartbeatSeriesSample *) heartbeatSeries dataHandler:(void (^)(HKHeartbeatSeriesQuery *query, NSTimeInterval timeSinceSeriesStart, BOOL precededByGap, BOOL done, NSError *error)) dataHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the `dataHandler` once for each heartbeat until either the `done` parameter is [`true`](../../Foundation/nsexpression/true.md), or you call [`stop(_:)`](../hkhealthstore/stop%28_%29.md).
 

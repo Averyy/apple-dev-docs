@@ -25,7 +25,7 @@ struct CGDataProviderSequentialCallbacks
 struct CGDataProviderSequentialCallbacks;
 ```
 
-#### Overview
+## Overview
 
 The functions specified by the `CGDataProviderSequentialCallbacks` structure are responsible for sequentially copying data to a memory buffer for Core Graphics to use. The functions are also responsible for handling the data provider’s basic memory management. You supply a `CGDataProviderSequentialCallbacks` structure to the function [`init(sequentialInfo:callbacks:)`](./cgdataprovider/init%28sequentialinfo,callbacks%29.md) to create a sequential-access data provider.
 

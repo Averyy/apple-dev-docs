@@ -22,7 +22,7 @@ func GLKVector3Negate(_ vector: GLKVector3) -> GLKVector3
 static GLKVector3 GLKVector3Negate(GLKVector3 vector);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

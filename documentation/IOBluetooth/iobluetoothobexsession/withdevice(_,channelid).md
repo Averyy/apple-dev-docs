@@ -19,7 +19,7 @@ class func withDevice(_ inDevice: IOBluetoothDevice!, channelID inRFCOMMChannelI
 + (instancetype) withDevice:(IOBluetoothDevice *) inDevice channelID:(BluetoothRFCOMMChannelID) inRFCOMMChannelID;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this does NOT mean the transport connection was open. It will be opened when OBEXConnect is invoked on the session object.
 

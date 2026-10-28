@@ -23,11 +23,11 @@ func placeholderRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) placeholderRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the placeholder text.
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to customize the drawing rectangle for the placeholder text, you can override this method and return a different rectangle.
 

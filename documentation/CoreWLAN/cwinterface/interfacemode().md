@@ -19,7 +19,7 @@ func interfaceMode() -> CWInterfaceMode
 - (CWInterfaceMode) interfaceMode;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current mode. Returns *kCWInterfaceModeNone* in the case of an error, or if the interface is not participating in a network.
 

@@ -15,7 +15,7 @@ The file type.
 extern NSAttributedStringDocumentReadingOptionKey NSFileTypeDocumentOption;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object indicating a document type to be forced when loading the document, specified as a UTI string; mutually exclusive with [`NSDocumentTypeDocumentOption`](./nsdocumenttypedocumentoption.md).
 

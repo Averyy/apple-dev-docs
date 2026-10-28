@@ -28,7 +28,7 @@ A Boolean value indicating whether to enable automatic mode for the climate cont
 @property (atomic, copy, readonly, nullable) NSNumber * enableAutoMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the user modified a different climate control setting.
 

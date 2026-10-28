@@ -19,7 +19,7 @@ case fixed
 NSScrubberModeFixed
 ```
 
-#### Discussion
+## Discussion
 
 When a user swipes horizontally across the scrubber, the scrubber items remain fixed in place and the item under the user’s finger highlights. At the conclusion of the touch interaction, the last-highlighted item is selected.
 

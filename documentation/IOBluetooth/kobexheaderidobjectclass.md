@@ -17,7 +17,7 @@ var kOBEXHeaderIDObjectClass: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDObjectClass
 ```
 
-#### Discussion
+## Discussion
 
 OBEX Object - class of object.
 

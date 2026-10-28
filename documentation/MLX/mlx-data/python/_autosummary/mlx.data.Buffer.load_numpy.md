@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.load_numpy
 
-**Buffer.load_numpy(*self: mlx.data._c.Buffer*, *key: str*, *prefix: str = ''*, *from_memory: bool = False*, *output_key: str = ''*) → mlx.data._c.Buffer**
-: Load an array from a .npy file.
+```python
+Buffer.load_numpy(self: mlx.data._c.Buffer, key: str, prefix: str = '', from_memory: bool = False, output_key: str = '') → mlx.data._c.Buffer
+```
 
-Parameters:
+Load an array from a .npy file.
 
-**key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The sample key that contains the array we are operating on.
-**prefix** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The filepath prefix to use when loading the files. (default: ‘’)
-**from_memory** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If true assume the file contents are in the array
+**Parameters:**
+
+- **key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The sample key that contains the array we are operating on.
+- **prefix** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The filepath prefix to use when loading the files. (default: ‘’)
+- **from_memory** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If true assume the file contents are in the array
 instead of the file name. (default: False)
-**output_key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to store the result in. If it is an empty
+- **output_key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to store the result in. If it is an empty
 string then overwrite the input. (default: ‘’)

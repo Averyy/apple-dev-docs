@@ -10,13 +10,13 @@ Adopt drag interaction APIs to provide items for dragging.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 
-#### Overview
+## Overview
 
 By implementing a drag interaction delegate ([`UIDragInteractionDelegate`](./uidraginteractiondelegate.md)) for a view, you enable that view to function as a drag source in your app.
 
 > **Note**:  The [`UITextView`](./uitextview.md), [`UITableView`](./uitableview.md), and [`UICollectionView`](./uicollectionview.md) classes each provide their own, specialized support for creating drag items. See these classes for more information.
 
-##### Enable a view as a drag source
+### Enable a view as a drag source
 
 Any instance or subclass of [`UIView`](./uiview.md) can act as a drag source. Your first steps to make this happen are:
 
@@ -33,7 +33,7 @@ func customEnableDragging(on view: UIView, dragInteractionDelegate: UIDragIntera
 }
 ```
 
-##### Create a drag item
+### Create a drag item
 
 A drag item encapsulates a source app’s promises for providing a variety of data representations for one model object.
 
@@ -58,7 +58,7 @@ To add more data representations to a drag item, as you typically would in your 
 - The best option for adding multiple data representations to a drag item, in many cases, is to adopt the [`NSItemProviderWriting`](../Foundation/nsitemproviderwriting.md) protocol in your model class. Using this protocol, you place the code for providing multiple data representations within the model class.
 - You can use the [`registerObject(_:visibility:)`](../Foundation/nsitemprovider/registerobject%28_,visibility%29.md) method, or related methods, from the [`NSItemProvider`](../Foundation/nsitemprovider.md) class, to explicitly register data representations.
 
-##### Understand a drag source in context
+### Understand a drag source in context
 
 In the [`dragInteraction(_:itemsForBeginning:)`](./uidraginteractiondelegate/draginteraction%28_,itemsforbeginning%29.md) protocol method, your source app responds to a request from the system. This request is itself triggered by the user starting to drag an item in your app’s UI. The conversation between your app and the system proceeds as shown here:
 

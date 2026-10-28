@@ -19,11 +19,11 @@ optional func baselineDeltaForCharacter(at anIndex: Int) -> CGFloat
 - (CGFloat) baselineDeltaForCharacterAtIndex:(NSUInteger) anIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The vertical distance, in points, between the baseline of the character at `anIndex` and the rectangle origin.
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional. This information allows the caller to determine finer-grained character positioning within the text storage of the text view adopting `NSTextInputClient`.
 

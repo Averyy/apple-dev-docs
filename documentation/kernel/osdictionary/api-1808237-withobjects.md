@@ -15,11 +15,11 @@ static OSDictionary * withObjects(
  unsigned int capacity = 0);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSDictionary containing the key/object pairs provided, with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `objects` and `keys` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new dictionary will grow as needed to accommodate more key/object pairs (*unlike*[CFMutableDictionary](../../CoreFoundation/cfmutabledictionary.md), for which the initial capacity is a hard limit).
 

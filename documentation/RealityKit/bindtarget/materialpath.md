@@ -20,7 +20,7 @@ Material parameters that an animation can target.
 struct MaterialPath
 ```
 
-#### Overview
+## Overview
 
 Each property is a `BindTarget` which defines a parameter an animation can target.
 

@@ -21,7 +21,7 @@ A type that represents the components of a locale, for use when creating a local
 struct Components
 ```
 
-#### Overview
+## Overview
 
 Use [`Locale.Components`](./components.md) with the [`init(components:)`](./init%28components%29.md) initializer to create a custom [`Locale`](../locale.md) that overrides specific traits of a default locale. When you create a locale with components, the locale uses any overridden values instead of defaults preferred by the region or language. Leave a property `nil` to accept the default value.
 

@@ -17,11 +17,11 @@ Creates a new Secure Sockets Layer (SSL) session context.
 OSStatus SSLNewContext(Boolean isServer, SSLContextRef*contextPtr);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The SSL session context is an opaque data structure that identifies a session and stores session information. You must pass this object to every other function in the Secure Transport API.
 

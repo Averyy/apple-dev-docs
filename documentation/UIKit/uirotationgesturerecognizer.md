@@ -27,7 +27,7 @@ class UIRotationGestureRecognizer
 
 - [Handling rotation gestures](./handling-rotation-gestures.md)
 
-#### Overview
+## Overview
 
 [`UIRotationGestureRecognizer`](./uirotationgesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md).
 

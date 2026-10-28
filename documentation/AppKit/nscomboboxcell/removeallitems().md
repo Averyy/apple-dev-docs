@@ -19,7 +19,7 @@ func removeAllItems()
 - (void) removeAllItems;
 ```
 
-#### Discussion
+## Discussion
 
 This method logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md).
 

@@ -25,7 +25,7 @@ var isCameraEnabled: Bool { get set }
 @property (nonatomic, getter=isCameraEnabled) BOOL cameraEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Set this property to [`true`](../../Swift/true.md) to enable the camera. When the app runs in visionOS, the value in this property is [`false`](../../Swift/false.md) and assigning a new value has no effect.
 

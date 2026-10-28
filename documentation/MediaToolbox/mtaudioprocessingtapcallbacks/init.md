@@ -24,7 +24,7 @@ var `init`: MTAudioProcessingTapInitCallback?
 MTAudioProcessingTapInitCallback init;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is called before [`MTAudioProcessingTapCreate(_:_:_:_:)`](../mtaudioprocessingtapcreate%28_,_,_,_%29.md) returns. This field can be `NULL`.
 

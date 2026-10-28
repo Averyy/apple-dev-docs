@@ -18,7 +18,7 @@ A boolean value that indicates whether a translation session can request languag
 var canRequestDownloads: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property is true, then the system prompts the person to authorize downloading additional languages if they aren’t already installed.
 

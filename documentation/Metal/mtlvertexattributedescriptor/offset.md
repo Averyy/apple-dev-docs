@@ -24,7 +24,7 @@ var offset: Int { get set }
 @property (nonatomic, assign) NSUInteger offset;
 ```
 
-#### Discussion
+## Discussion
 
 Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions.
 

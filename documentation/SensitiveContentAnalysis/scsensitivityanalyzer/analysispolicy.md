@@ -27,7 +27,7 @@ var analysisPolicy: SCSensitivityAnalysisPolicy { get }
 
 - [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 
-#### Discussion
+## Discussion
 
 Before attempting to use the framework, first check the [`analysisPolicy`](./analysispolicy.md):
 

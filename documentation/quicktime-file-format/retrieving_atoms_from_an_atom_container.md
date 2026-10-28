@@ -5,7 +5,7 @@
 
 Retrieve information about the types of a parent atom’s children, search for a specific atom, and retrieve a leaf atom’s data.
 
-#### Overview
+## Overview
 
 QuickTime provides functions you can use to retrieve information about the types of a parent atom’s children, to search for a specific atom, and to retrieve a leaf atom’s data.
 

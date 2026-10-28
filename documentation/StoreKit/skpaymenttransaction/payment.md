@@ -27,7 +27,7 @@ var payment: SKPayment { get }
 @property (nonatomic, readonly) SKPayment * payment;
 ```
 
-#### Discussion
+## Discussion
 
 Each payment transaction is created in response to a payment that your application added to the payment queue.
 

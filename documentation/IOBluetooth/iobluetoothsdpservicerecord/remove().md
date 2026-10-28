@@ -19,7 +19,7 @@ func remove() -> IOReturn
 - (IOReturn) removeServiceRecord;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 

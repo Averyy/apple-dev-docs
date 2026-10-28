@@ -21,7 +21,7 @@ var customUserAgent: String! { get set }
 @property (nonatomic, copy) NSString * customUserAgent;
 ```
 
-#### Discussion
+## Discussion
 
 The custom user-agent string is used for all URLs. If `nil`, then the receiver constructs a user-agent string that produces the best rendering results for each URL.
 

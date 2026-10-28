@@ -23,7 +23,7 @@ var minimumFontSize: CGFloat { get set }
 @property (nonatomic) CGFloat minimumFontSize;
 ```
 
-#### Discussion
+## Discussion
 
 When drawing text that might not fit within the bounding rectangle of the text field, you can use this property to prevent the receiver from reducing the font size to the point where it is no longer legible.
 

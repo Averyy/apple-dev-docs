@@ -21,7 +21,7 @@ Performs a low-level lock that acquires a passed-in lock, and blocks if another 
 extern void os_unfair_lock_lock(os_unfair_lock_t lock);
 ```
 
-#### Discussion
+## Discussion
 
 Consider a lock’s data to be opaque and implementation-defined. Locks contain thread-ownership information that the system may use to attempt to resolve priority inversions.
 

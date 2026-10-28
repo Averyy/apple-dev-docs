@@ -28,11 +28,11 @@ func beginBackgroundTask(withName taskName: String?, expirationHandler handler: 
 
 - [Extending your app’s background execution time](../extending-your-app-s-background-execution-time.md)
 
-#### Return Value
+## Return Value
 
 A unique identifier for the new background task. You must pass this value to the [`endBackgroundTask(_:)`](./endbackgroundtask%28_%29.md) method to mark the end of this task. This method returns [`invalid`](../uibackgroundtaskidentifier/invalid.md) if running in the background isn’t possible.
 
-#### Discussion
+## Discussion
 
 This method requests additional background execution time for your app. Call this method when leaving a task unfinished might be detrimental to your app’s user experience. For example, call this method before writing data to a file to prevent the system from suspending your app while the operation is in progress. For background tasks requiring more time, use [Background Tasks](../../BackgroundTasks/BackgroundTasks.md).
 

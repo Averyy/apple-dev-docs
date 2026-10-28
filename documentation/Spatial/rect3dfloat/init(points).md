@@ -21,7 +21,7 @@ Creates a rectangle that’s the bounding box of the specified points.
 init(points: [Point3DFloat])
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The `points` array must contain at least one element.
 

@@ -23,7 +23,7 @@ var playbackStoreID: String { get }
 @property (nonatomic, readonly) NSString * playbackStoreID;
 ```
 
-#### Discussion
+## Discussion
 
 [`MPMusicPlayerController`](../mpmusicplayercontroller.md) uses this ID to enqueue Apple Music media items. This value is `0` for media items that are only present in the user’s media library.
 

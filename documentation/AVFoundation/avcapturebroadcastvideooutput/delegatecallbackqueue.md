@@ -23,7 +23,7 @@ var delegateCallbackQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t delegateCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a dispatch queue on which all delegate method calls will be serialized. If you have not called the [`setDelegate(_:queue:)`](./setdelegate%28_,queue%29.md) method, the value of this property will be `nil`.
 

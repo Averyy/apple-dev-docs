@@ -26,7 +26,7 @@ optional func confirm(getUserCurrentRestaurantReservationBookings intent: INGetU
 - (void) confirmGetUserCurrentRestaurantReservationBookings:(INGetUserCurrentRestaurantReservationBookingsIntent *) intent completion:(void (^)(INGetUserCurrentRestaurantReservationBookingsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can fetch the user’s current reservations. For example, you might use this method to verify the account information for performing the search. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to fetch the reservations.
 

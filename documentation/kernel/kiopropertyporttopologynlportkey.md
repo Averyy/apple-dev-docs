@@ -14,7 +14,7 @@
 #define kIOPropertyPortTopologyNLPortKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of NL_Port for the key kIOPropertyPortTopologyKey. If the topology of the port is an NL_Port, this key should be used.
 

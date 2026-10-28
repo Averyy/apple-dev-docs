@@ -19,7 +19,7 @@ class var contentType: UTType { get }
 @property (class, readonly) UTType * contentType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type when you need to specify the type of the image data. Adaptive images are compatible with the HEIC format, but include extra metadata about the supported resolutions and sizes.
 

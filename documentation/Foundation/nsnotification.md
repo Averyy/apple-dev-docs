@@ -25,7 +25,7 @@ class NSNotification
 @interface NSNotification : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`Notification`](./notification.md); use [`NSNotification`](./nsnotification.md) when you need reference semantics or other Foundation-specific behavior.
 
@@ -35,11 +35,11 @@ You don’t usually create your own notifications directly, but instead call the
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Notification`](./notification.md) structure, which bridges to the [`NSNotification`](./nsnotification.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
-##### Object Comparison
+### Object Comparison
 
 The objects of a notification are compared using pointer equality for local notifications. Distributed notifications use strings as their objects, and those strings are compared using [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md), because pointer equality doesn’t make sense across process boundaries.
 
-##### Creating Subclasses
+### Creating Subclasses
 
 You can subclass [`NSNotification`](./nsnotification.md) to contain information in addition to the notification name, object, and dictionary. This extra data must be agreed upon between notifiers and observers.
 

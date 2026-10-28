@@ -23,11 +23,11 @@ var disablesAutomaticKeyboardDismissal: Bool { get }
 @property (nonatomic, readonly) BOOL disablesAutomaticKeyboardDismissal;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to prevent the dismissal of the input view or [`false`](../../Swift/false.md) if the input view may be dismissed.
 
-#### Discussion
+## Discussion
 
 Override this method in a subclass to allow or disallow the dismissal of the current input view (usually the system keyboard) when changing from a control that wants the input view to one that does not. Under normal circumstances, when the user taps a control that requires an input view, the system automatically displays that view. Tapping in a control that does not want an input view subsequently causes the current input view to be dismissed but may not in all cases. You can override this method in those outstanding cases to allow the input view to be dismissed or use this method to prevent the view from being dismissed in other cases.
 

@@ -15,7 +15,7 @@ The raw data used for the MMS content part.
 var data: Data
 ```
 
-#### Discussion
+## Discussion
 
 Interpreting this value depends on the part’s [`contentType`](./contenttype.md). For example, the data for a file attachment can be the file’s contents in binary. For file attachments, this can be the file contents in binary.
 

@@ -21,7 +21,7 @@ The extended sRGB color space with a linear transfer function.
 case sRGBLinear
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`Color.RGBColorSpace.sRGB`](./srgb.md), but uses a linear transfer function.
 

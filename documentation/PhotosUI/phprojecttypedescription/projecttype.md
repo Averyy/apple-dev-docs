@@ -19,7 +19,7 @@ var projectType: PHProjectType { get }
 @property (nonatomic, copy, readonly) PHProjectType projectType;
 ```
 
-#### Discussion
+## Discussion
 
 Add these identifiers to [`PHProjectType`](../phprojecttype.md), the extensible string enumeration.
 

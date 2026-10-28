@@ -25,7 +25,7 @@ func nw_parameters_set_service_class(_ parameters: nw_parameters_t, _ service_cl
 void nw_parameters_set_service_class(nw_parameters_t parameters, nw_service_class_t service_class);
 ```
 
-#### Discussion
+## Discussion
 
 Service quality affects the on-device queuing priority of your traffic, and packet markings on supported networks. You should only modify this property for cases that have very specific scheduling needs, like interactive voice traffic. You should use the best effort service for most traffic in your app.
 

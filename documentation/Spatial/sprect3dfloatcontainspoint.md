@@ -19,11 +19,11 @@
 static bool SPRect3DFloatContainsPoint(SPRect3DFloat rect, SPPoint3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the rectangle contains the point.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the rectangle contains the point.
 

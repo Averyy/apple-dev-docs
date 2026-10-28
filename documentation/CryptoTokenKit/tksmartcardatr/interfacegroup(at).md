@@ -25,7 +25,7 @@ func interfaceGroup(at index: Int) -> TKSmartCardATR.InterfaceGroup?
 - (TKSmartCardATRInterfaceGroup *) interfaceGroupAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The interface group at the specified index, or `nil` if not present.
 

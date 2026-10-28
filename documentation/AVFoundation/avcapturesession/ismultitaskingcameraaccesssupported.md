@@ -22,7 +22,7 @@ var isMultitaskingCameraAccessSupported: Bool { get }
 @property (nonatomic, readonly, getter=isMultitaskingCameraAccessSupported) BOOL multitaskingCameraAccessSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Query this property to determine whether you can use the camera while multitasking by setting the state of the [`isMultitaskingCameraAccessEnabled`](./ismultitaskingcameraaccessenabled.md) property to `true`.
 

@@ -16,7 +16,7 @@ func expectation(forNotification notificationName: NSNotification.Name, object o
 - (XCTestExpectation *) expectationForNotification:(NSNotificationName) notificationName object:(id) objectToObserve handler:(XCNotificationExpectationHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  For more control over notification-based expectations, use [`XCTNSNotificationExpectation`](../xctnsnotificationexpectation.md) instead of this convenience method.
 

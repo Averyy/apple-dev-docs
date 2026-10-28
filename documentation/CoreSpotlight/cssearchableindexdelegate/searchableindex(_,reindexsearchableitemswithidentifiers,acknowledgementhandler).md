@@ -24,7 +24,7 @@ func searchableIndex(_ searchableIndex: CSSearchableIndex, reindexSearchableItem
 - (void) searchableIndex:(CSSearchableIndex *) searchableIndex reindexSearchableItemsWithIdentifiers:(NSArray<NSString *> *) identifiers acknowledgementHandler:(void (^)()) acknowledgementHandler;
 ```
 
-#### Discussion
+## Discussion
 
 An app extension should not use the index passed in `searchableIndex` when a custom data protection class is needed.
 

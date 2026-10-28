@@ -21,7 +21,7 @@ Set the TCP retransmission attempt timeout.
 func retransmitConnectionDropTime(_ timeout: UInt32) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 A timeout for TCP retransmission attempts, in seconds (`TCP_RXT_CONNDROPTIME`).
 

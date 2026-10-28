@@ -19,7 +19,7 @@ init?(newItem: FSItem, newItemName: FSFileName, newItemAttributes: FSItem.Attrib
 - (instancetype) initWithNewItem:(FSItem *) newItem newItemName:(FSFileName *) newItemName newItemAttributes:(FSItemAttributes *) newItemAttributes directoryAttributes:(FSItemAttributes *) directoryAttributes freeSpace:(FSFreeSpace *) freeSpace;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

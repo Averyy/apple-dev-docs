@@ -16,7 +16,7 @@ Gets the most recently received response code for this transaction.
 UInt32 (*GetResponseCode)(IOFireWireLibCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 The FireWire response code.
 

@@ -24,7 +24,7 @@ func VNNormalizedRectForImageRect(_ imageRect: CGRect, _ imageWidth: Int, _ imag
 extern CGRect VNNormalizedRectForImageRect(CGRect imageRect, size_t imageWidth, size_t imageHeight);
 ```
 
-#### Return Value
+## Return Value
 
 The input rectangle projected into normalized coordinates.
 

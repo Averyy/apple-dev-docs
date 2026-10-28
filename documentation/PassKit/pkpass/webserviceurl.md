@@ -24,7 +24,7 @@ var webServiceURL: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * webServiceURL;
 ```
 
-#### Discussion
+## Discussion
 
 The web service is for updating passes. For information about the web service protocol, see [PassKit Web Service Reference](https://developer.apple.com/library/archive/documentation/PassKit/Reference/PassKit_WebService/WebService.html#//apple_ref/doc/uid/TP40011988).
 

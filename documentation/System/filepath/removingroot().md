@@ -21,7 +21,7 @@ Creates a new path containing just the components, i.e. everything after `root`.
 func removingRoot() -> FilePath
 ```
 
-#### Discussion
+## Discussion
 
 Returns self if `root == nil`.
 

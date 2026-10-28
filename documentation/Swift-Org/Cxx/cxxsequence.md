@@ -17,7 +17,7 @@ Use this protocol to conform custom C++ sequence types to Swift’s `Sequence` p
 protocol CxxSequence<Element> : CxxConvertibleToCollection, Sequence
 ```
 
-#### Overview
+## Overview
 
 ```swift
 extension MyCxxSequenceType : CxxSequence {}

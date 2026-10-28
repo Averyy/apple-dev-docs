@@ -20,13 +20,13 @@ Cancel the current segment while allowing future resumption.
 case cancelled
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when the segment should be canceled (for example, due to background task expiration) but you expect to resume the export later. This preserves the ability to restart from this segment in a future export session.
 
 This is equivalent to calling `cancel()` on the segment request.
 
-#### Use Cases
+## Use Cases
 
 - Background task expiration handler called
 - System resources unavailable

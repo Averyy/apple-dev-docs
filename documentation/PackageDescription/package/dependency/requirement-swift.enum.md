@@ -15,7 +15,7 @@ An enum that represents the requirement for a package dependency.
 enum Requirement
 ```
 
-#### Overview
+## Overview
 
 The dependency requirement can be defined as one of three different version requirements:
 

@@ -20,7 +20,7 @@ A constant value that RealityKit applies as a bias to its shadow calculations.
 var depthBias: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Reduce visual effects such as *shadow acne*, by adjusting this property. The default value is `1.0`.
 

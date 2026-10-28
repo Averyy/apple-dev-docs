@@ -23,7 +23,7 @@ case probing
 TKSmartCardSlotStateProbing
 ```
 
-#### Discussion
+## Discussion
 
 A Smart Card was inserted into the slot and an initial probe is in underway.
 

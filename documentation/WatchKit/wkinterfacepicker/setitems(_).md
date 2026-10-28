@@ -19,7 +19,7 @@ func setItems(_ items: [WKPickerItem]?)
 - (void) setItems:(NSArray<WKPickerItem *> *) items;
 ```
 
-#### Discussion
+## Discussion
 
 The items you specify must be configured appropriate for the picker style. For example, items displayed using the list style must contain a title. The picker displays items in the order they appear in the `items` array. When a selection occurs, the picker reports the index of the selected item to its associated action method.
 

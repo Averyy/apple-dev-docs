@@ -23,7 +23,7 @@ func openPaymentSetup()
 - (void) openPaymentSetup;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to move users to the interface for adding credit cards. This method transfers control to the Wallet app on iPhone or to the Settings app on iPad. For devices that don’t support Apple Pay, this method does nothing.
 

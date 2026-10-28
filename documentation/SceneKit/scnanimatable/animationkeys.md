@@ -26,7 +26,7 @@ var animationKeys: [String] { get }
 @property (readonly) NSArray<NSString *> * animationKeys;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains all keys for which animations are attached to the object, or is empty if there are no attached animations. The ordering of animation keys in the array is arbitrary.
 

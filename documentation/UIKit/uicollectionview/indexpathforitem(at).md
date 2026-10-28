@@ -23,11 +23,11 @@ func indexPathForItem(at point: CGPoint) -> IndexPath?
 - (NSIndexPath *) indexPathForItemAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the item at the specified point or `nil` if no item was found at the specified point.
 
-#### Discussion
+## Discussion
 
 This method relies on the layout information provided by the associated layout object to determine which item contains the point.
 

@@ -20,11 +20,11 @@ optional func applicationShouldTerminate(_ sender: NSApplication) -> NSApplicati
 - (NSApplicationTerminateReply) applicationShouldTerminate:(NSApplication *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 One of the values defined in [`NSApplication.TerminateReply`](../nsapplication/terminatereply.md) constants indicating whether the application should terminate. For compatibility reasons, a return value of [`false`](../../Swift/false.md) is equivalent to [`NSApplication.TerminateReply.terminateCancel`](../nsapplication/terminatereply/terminatecancel.md), and a return value of [`true`](../../Swift/true.md) is equivalent to [`NSApplication.TerminateReply.terminateNow`](../nsapplication/terminatereply/terminatenow.md).
 
-#### Discussion
+## Discussion
 
 This method is called after the application’s Quit menu item has been selected, or after the [`terminate(_:)`](../nsapplication/terminate%28_%29.md) method has been called. Generally, you should return [`NSApplication.TerminateReply.terminateNow`](../nsapplication/terminatereply/terminatenow.md) to allow the termination to complete, but you can cancel the termination process or delay it somewhat as needed. For example, you might delay termination to finish processing some critical data but then terminate the application as soon as you are done by calling the [`reply(toApplicationShouldTerminate:)`](../nsapplication/reply%28toapplicationshouldterminate%29.md) method.
 

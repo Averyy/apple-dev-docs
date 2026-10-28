@@ -17,7 +17,7 @@ Configuration for how LoRA or DoRA should be applied.
 struct LoRAConfiguration
 ```
 
-#### Overview
+## Overview
 
 Note: It’s compatible with `adapter_config.json` file created during training using MLX libraries.
 

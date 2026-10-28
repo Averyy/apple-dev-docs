@@ -15,7 +15,7 @@ Sends a text message to a specified destination.
 final func sendMessage(_ content: RCSMessage.Text, to destination: RCSHandle, using cellularServiceID: CellularServiceID, messageID: RCSMessageID) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**:  If RCS messaging isn’t supported, this method throws [`RCSService.Error.notSupported`](./error/notsupported.md). If the message exceeds the maximum size, it throws [`RCSService.Error.maximumSizeExceeded`](./error/maximumsizeexceeded.md).
 

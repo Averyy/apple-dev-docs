@@ -25,7 +25,7 @@ class Snapshot
 @interface MKMapSnapshot : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. Instead, you use an [`MKMapSnapshotter`](../mkmapsnapshotter.md) object to capture the map contents asynchronously. An `MKMapSnapshotter.Snapshot` object contains the image that the snapshotter generates from the map contents.
 

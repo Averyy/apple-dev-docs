@@ -23,7 +23,7 @@ var backgroundImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * backgroundImage;
 ```
 
-#### Discussion
+## Discussion
 
 Images that are 1 point wide or stretchable images are stretched, otherwise the image is tiled.
 

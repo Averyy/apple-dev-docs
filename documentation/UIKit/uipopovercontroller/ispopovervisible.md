@@ -24,7 +24,7 @@ var isPopoverVisible: Bool { get }
 @property (nonatomic, readonly, getter=isPopoverVisible) BOOL popoverVisible;
 ```
 
-#### Discussion
+## Discussion
 
 You must present the popover to make it visible.
 

@@ -20,7 +20,7 @@ The type of the data in each column.
 var columnTypes: [String : MLDataValue.ValueType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The keys in the dictionary provided by this column correspond to the names of the columns in the data table.
 

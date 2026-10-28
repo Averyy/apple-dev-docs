@@ -5,7 +5,7 @@
 
 Test and iterate on your scenes directly in Reality Composer Pro, with or without a linked Xcode project.
 
-#### Overview
+## Overview
 
 Reality Composer Pro lets you preview or simulate content on both real and virtual devices, with or without a linked Xcode project. You can iterate on your scene and build and run your app without leaving the editor.
 
@@ -13,15 +13,15 @@ Reality Composer Pro lets you preview or simulate content on both real and virtu
 
 The Preview tab shows a preview of the currently selected entity you are working on. For example, you can preview any Reality Composer Pro entity in a simulated visionOS or Mac environment — this mode is suited for content creators who want to preview how their scenes look in real time. To test a scene with actual interactions, views, cameras, game controllers, and live code on a real or simulated device, you need to link your Xcode project first. See [Linking an Xcode project](./realitycomposerpro-essentials-linkingxcodeproject.md) to learn how.
 
-#### Run simulations in the Reality Composer Pro Viewport
+## Run simulations in the Reality Composer Pro Viewport
 
 At the top of the Viewport, next to the Play icon, click **Simulate** to view a simulation in the Viewport.
 
-#### Preview content on a connected device
+## Preview content on a connected device
 
 At the top of the Viewport, next to the Play icon, click **Simulate** > **Preview on Device**. Then click **Devices** and select the device you want to preview on. If you need to connect an Apple Vision Pro, select **Download Reality Composer Pro Preview for visionOS**, then click **Play**.
 
-#### Run simulations for Xcode linked projects
+## Run simulations for Xcode linked projects
 
 Once you have successfully linked an Xcode project, you can use Reality Composer Pro’s Simulator to preview your Xcode and Reality Composer Pro project as a compiled application on either a connected physical device or a simulated device.
 
@@ -29,7 +29,7 @@ Above the Viewport, click **Running Destinations** and then select a connected d
 
 > **Note**: The first time you do this, it may take some time for the project to compile. Subsequent simulations for the same device compile and run faster.
 
-#### Load scenes in your app’s view
+## Load scenes in your app’s view
 
 You can load a Reality Composer Pro scene the same way you load a `.usdz` asset from your app bundle. Specify the Reality Composer Pro package bundle instead, in the `make` closure of a [`RealityView`](../RealityKit/realityview.md) initializer.
 

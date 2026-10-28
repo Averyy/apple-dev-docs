@@ -20,7 +20,7 @@ var parameters: NSMutableDictionary? { get set }
 @property (nonatomic, strong, nullable) NSMutableDictionary<NSString *,id> * parameters;
 ```
 
-#### Discussion
+## Discussion
 
 The parameters of an action reflect the choices made and values entered in the action’s user interface. Keys in the parameters dictionary identify specific user-interface objects. If an action uses the Cocoa bindings mechanism, the parameters of an [`AMBundleAction`](../ambundleaction.md) object are automatically set.
 

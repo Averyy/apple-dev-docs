@@ -27,7 +27,7 @@ class UITableViewDropProposal
 
 - [Supporting drag and drop in table views](./supporting-drag-and-drop-in-table-views.md)
 
-#### Overview
+## Overview
 
 Create instances of this class in the [`tableView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](./uitableviewdropdelegate/tableview%28_,dropsessiondidupdate,withdestinationindexpath%29.md) method of your drop delegate object. You create drop proposals to let the table view know how you intend to handle a drop at the currently specified location. The table view uses that information to provide appropriate visual feedback to the user.
 

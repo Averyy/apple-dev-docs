@@ -23,7 +23,7 @@ class CMPedometerData
 @interface CMPedometerData : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class yourself. Instead, you use a [`CMPedometer`](./cmpedometer.md) object to request pedometer data from the system. The data for each request is packaged into an instance of this class and delivered to the handlers you registered with the pedometer object.
 

@@ -5,7 +5,7 @@
 
 An opaque type that maintains Endpoint Security client state, and functions related to this type.
 
-#### Overview
+## Overview
 
 Create an Endpoint Security client with [`es_new_client(_:_:)`](./es_new_client%28_,_%29.md), then use this client to subscribe to event types of interest to your app or system extension. When Endpoint Security monitors an event your client subscribes to, it sends a message that describes the event to your client. When you no longer need the client, remove it with [`es_delete_client(_:)`](./es_delete_client%28_%29.md).
 

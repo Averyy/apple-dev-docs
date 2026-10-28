@@ -5,7 +5,7 @@
 
 Avoid issues building extensibility into your file.
 
-#### Overview
+## Overview
 
 In order to allow metadata to be rewritten easily and without the need to rewrite the entire QuickTime movie file, free space atoms may occur anywhere in the definition of the metadata atom between the positions of other atoms contained by the metadata atom. Free space atoms may not be inserted between items in the metadata item list atom or within atoms in the metadata item list atom. This restriction on free space atom definition avoids the risk of confusing a free space atom with a meaning of a `‘free’` identifier or a value atom of type `‘free’` defined in the context of the metadata atom structure.
 

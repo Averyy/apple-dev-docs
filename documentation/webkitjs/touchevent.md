@@ -16,7 +16,7 @@ The `TouchEvent` class encapsulates information about a touch event.
 interface TouchEvent
 ```
 
-#### Overview
+## Overview
 
 The system continually sends `TouchEvent` objects to an application as fingers touch and move across a surface. A touch event provides a snapshot of all touches during a multi-touch sequence, most importantly the touches that are new or have changed for a particular target. A multi-touch sequence begins when a finger first touches the surface. Other fingers may subsequently touch the surface, and all fingers may move across the surface. The sequence ends when the last of these fingers is lifted from the surface. An application receives touch event objects during each phase of any touch.
 

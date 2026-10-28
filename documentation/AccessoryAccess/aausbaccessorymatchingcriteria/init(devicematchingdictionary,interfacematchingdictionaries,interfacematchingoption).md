@@ -19,7 +19,7 @@ init?(deviceMatchingDictionary: [String : any Sendable]?, interfaceMatchingDicti
 - (instancetype) initWithDeviceMatchingDictionary:(NSDictionary<NSString *,id> *) deviceMatchingDictionary interfaceMatchingDictionaries:(NSArray<NSDictionary<NSString *,id> *> *) interfaceMatchingDictionaries interfaceMatchingOption:(AAUSBAccessoryMatchingCriteriaInterfaceMatchingOption) interfaceMatchingOption;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:`](../../IOUSBHost/iousbhostdevice/creatematchingdictionarywithvendorid_productid_bcddevice_deviceclass_devicesubclass_deviceprotocol_speed_productidarray_.md) to create a USB device matching dictionary.
 
@@ -27,7 +27,7 @@ Use [`createMatchingDictionaryWithVendorID:productID:bcdDevice:interfaceNumber:c
 
 See USBSpec.h in [USBSpec.h User-Space](../../iokit/usbspec_h_user-space.md) in [IOKit](../../iokit/iokit.md) for more details about dictionary keys for the USB device/interface matching dictionaries.
 
-##### Understanding interface matching options
+### Understanding interface matching options
 
 If you initialize the criteria with [`AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption.matchAll`](./interfacematchingoption/matchall.md), then it evaluates to true for a USB accessory when
 

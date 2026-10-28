@@ -23,7 +23,7 @@ var interactiveMovementTarget: CGPoint { get }
 @property (nonatomic, readonly) CGPoint interactiveMovementTarget;
 ```
 
-#### Discussion
+## Discussion
 
 This property is filled when an interactive move is in progress or has just ended. The value represents the point that was used to determine the new index paths in the [`targetIndexPathsForInteractivelyMovingItems`](./targetindexpathsforinteractivelymovingitems.md) property. You can use this point as needed to calculate the position of items in your layout.
 

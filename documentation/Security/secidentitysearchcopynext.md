@@ -15,7 +15,7 @@ Finds the next identity matching specified search criteria
 OSStatus SecIdentitySearchCopyNext(SecIdentitySearchRef searchRef, SecIdentityRef*identity);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). When there are no more identities that match the parameters specified to [`SecIdentitySearchCreate`](./secidentitysearchcreate.md), [`errSecItemNotFound`](./errsecitemnotfound.md) is returned.
 

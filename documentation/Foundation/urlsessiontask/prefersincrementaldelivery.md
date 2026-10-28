@@ -25,7 +25,7 @@ var prefersIncrementalDelivery: Bool { get set }
 @property BOOL prefersIncrementalDelivery;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` to tell the task that the app would benefit from receiving a partial response body in increments. If the app can’t process the response until it has all the data, set this property to `false`. Task performance may improve when this value is `false`, in which case the task only delivers data when complete.
 

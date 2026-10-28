@@ -20,7 +20,7 @@ Creates and returns an image object from the contents of  `CVImageBuffer` object
 + (CIImage *) imageWithCVImageBuffer:(CVImageBufferRef) imageBuffer options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the contents of the image buffer object and set up with the specified options.
 

@@ -30,7 +30,7 @@ var protectionSpace: URLProtectionSpace { get }
 
 - [Performing manual server trust authentication](../performing-manual-server-trust-authentication.md)
 
-#### Discussion
+## Discussion
 
 A protection space object provides additional information about the authentication request, such as the host, port, authentication realm, and so on. The protection space also tells you whether the authentication challenge is asking you to provide the user’s credentials or to verify the TLS credentials provided by the server.
 

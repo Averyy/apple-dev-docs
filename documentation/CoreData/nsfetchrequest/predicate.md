@@ -25,7 +25,7 @@ var predicate: NSPredicate? { get set }
 @property (nonatomic, strong, nullable) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 The predicate instance constrains the selection of objects the [`NSFetchRequest`](../nsfetchrequest.md) instance is to fetch.
 

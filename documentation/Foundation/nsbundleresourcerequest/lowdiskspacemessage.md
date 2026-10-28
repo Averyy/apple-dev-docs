@@ -22,7 +22,7 @@ A message the system sends when it detects the amount of available disk space ge
 struct LowDiskSpaceMessage
 ```
 
-#### Overview
+## Overview
 
 After receiving this notification, your app should release any on-demand resources that aren’t required. Call [`endAccessingResources()`](./endaccessingresources%28%29.md) to release the managed resources. If the app is in the background and the app doesn’t free up enough space, the system may terminate the app.
 

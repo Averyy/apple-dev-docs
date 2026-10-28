@@ -5,7 +5,7 @@
 
 Combine two images by using alpha blending to create a single output.
 
-#### Overview
+## Overview
 
 vImage provides a suite of functions for compositing two source images into one output. *Alpha blending* uses the alpha value of each pixel in the top layer to determine the visibility of the bottom layer.
 
@@ -13,7 +13,7 @@ The figure below shows the alpha composite of an image of a building with a tran
 
 ![Three photographs. Two smaller photographs are stacked on the left and an arrow points to a larger photograph on the right. The photograph on the top left is of a skyscraper against a transparent background. The photograph on the bottom left is of a rusty metal texture. The larger photograph on the right shows the skyscraper composited over the texture.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3696647@2x.png)
 
-##### Perform an alpha composite
+### Perform an alpha composite
 
 Use the [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](./vimagepremultipliedalphablend_argb8888%28_,_,_,_%29.md) function to blend two images when the top image contains alpha information (for example, when compositing text over a photograph). The images that you pass to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](./vimagepremultipliedalphablend_argb8888%28_,_,_,_%29.md) need to have the premultiplied alpha information in the first channel.
 
@@ -207,7 +207,7 @@ void premultiply(const vImage_Buffer *buffer, CGImageAlphaInfo alphaInfo) {
 }
 ```
 
-##### Perform an alpha composite with a single alpha value
+### Perform an alpha composite with a single alpha value
 
 vImage provides functions to perform an alpha composite using a single alpha value. The functions apply the constant alpha value you supply combined with the top image’s existing alpha to the top layer’s color channels and alpha channels. For each pixel, the constant alpha functions perform the following operation:
 
@@ -244,7 +244,7 @@ The following image shows the result of compositing with [`vImagePremultipliedCo
 
 ![A photograph of a skyscraper composited against a rusty metal texture. The metal texture is partially visible through the skyscraper image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3686488@2x.png)
 
-##### Perform an alpha composite with an overwritten alpha channel
+### Perform an alpha composite with an overwritten alpha channel
 
 Use the [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](./vimageoverwritechannels_argb8888%28_,_,_,_,_%29.md) function to overwrite an image’s alpha channel. The following shows an example of setting a radial gradient as the alpha channel of an image to produce a vignette style blend:
 

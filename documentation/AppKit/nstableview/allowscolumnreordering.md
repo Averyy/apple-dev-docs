@@ -19,7 +19,7 @@ var allowsColumnReordering: Bool { get set }
 @property BOOL allowsColumnReordering;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which allows the user to rearrange the table view’s columns. You can rearrange columns programmatically regardless of this setting.
 

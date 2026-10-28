@@ -22,7 +22,7 @@ func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> Ful
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Scalar` conforms to `Decodable`, `Scalar` conforms to `Encodable`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A fully-connected network multi-label classifier model.
 

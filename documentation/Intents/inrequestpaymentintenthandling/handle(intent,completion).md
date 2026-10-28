@@ -28,7 +28,7 @@ func handle(intent: INRequestPaymentIntent) async -> INRequestPaymentIntentRespo
 - (void) handleRequestPayment:(INRequestPaymentIntent *) intent completion:(void (^)(INRequestPaymentIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must send the request to the designated user. The response object you provide should indicate the success or failure of delivering the request.
 

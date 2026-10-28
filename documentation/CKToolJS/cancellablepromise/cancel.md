@@ -15,7 +15,7 @@ Stops any work the promise is doing.
 void cancel();
 ```
 
-#### Discussion
+## Discussion
 
 When called, it throws a `CancelledError`.
 

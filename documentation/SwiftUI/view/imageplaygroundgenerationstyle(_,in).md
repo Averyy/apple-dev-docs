@@ -20,11 +20,11 @@ nonisolated
 func imagePlaygroundGenerationStyle(_ style: ImagePlaygroundStyle, in allowedStyles: [ImagePlaygroundStyle] = ImagePlaygroundStyle.all) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 An image playground sheet configured with the specified style information.
 
-#### Discussion
+## Discussion
 
 Configures the sheet with the specified style information. At presentation time, the sheet selects the style from the `style` parameter initially, but the person can change the selected style to any of the values in the `allowedStyles` parameter.
 

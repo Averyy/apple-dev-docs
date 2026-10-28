@@ -25,7 +25,7 @@ static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm
 extern AVAudioTimePitchAlgorithm const AVAudioTimePitchAlgorithmLowQualityZeroLatency;
 ```
 
-#### Discussion
+## Discussion
 
 This algorithm is suitable for brief fast-forward and rewind effects, as well as low-quality voice. The rate snaps to `{0.5, 0.666667, 0.8, 1.0, 1.25, 1.5, 2.0}`.
 

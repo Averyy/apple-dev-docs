@@ -3,7 +3,7 @@
 **Framework**: GLKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The `GLKMatrix3` type defines a `3x3` floating-point matrix as well as many mathematical operations commonly used to manipulate matrices. A `3x3` matrix is commonly used in graphics programming to represent scaling or rotation transformations to convert from one coordinate system to another.
 

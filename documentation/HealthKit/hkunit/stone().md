@@ -24,7 +24,7 @@ class func stone() -> Self
 + (instancetype) stoneUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring mass in stones.
 

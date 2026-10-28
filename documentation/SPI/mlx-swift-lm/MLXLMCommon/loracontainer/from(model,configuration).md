@@ -17,7 +17,7 @@ Creates a `LoRAContainer` by applying the configuration to a compatible `Languag
 static func from(model: LanguageModel, configuration: LoRAConfiguration = .init()) throws -> LoRAContainer
 ```
 
-#### Discussion
+## Discussion
 
 Note:  This function freezes the model base weights and applies LoRA layers to it.
 

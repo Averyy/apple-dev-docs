@@ -24,7 +24,7 @@ let HMCharacteristicTypeHue: String
 extern NSString * const HMCharacteristicTypeHue;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point number in units of arc degrees. Values range from 0 to 360, representing the color spectrum starting from red, through yellow, green, cyan, blue, and finally magenta, before wrapping back to red.
 

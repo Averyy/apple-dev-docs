@@ -21,7 +21,7 @@ Removes the given child from the entity.
 @preconcurrency func removeChild(_ entity: Entity, preservingWorldTransform: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 See the [`HasHierarchy`](../hashierarchy.md) protocol’s definition of [`removeChild(_:preservingWorldTransform:)`](./removechild%28_,preservingworldtransform%29.md) for more information.
 

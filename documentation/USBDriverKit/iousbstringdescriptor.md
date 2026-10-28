@@ -15,7 +15,7 @@ The structure for storing a string descriptor.
 struct IOUSBStringDescriptor;
 ```
 
-#### Overview
+## Overview
 
 For more information about this descriptor type, see section 9.6.7 of the USB 2.0 specification at [http://www.usb.org](http://www.usb.org).
 

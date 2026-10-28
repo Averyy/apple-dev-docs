@@ -26,7 +26,7 @@ var showsBuildings: Bool { get set }
 @property (nonatomic) BOOL showsBuildings;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  In iOS 16 and macOS 13, and later, when overlay content is present, this property has no effect and the map renders buildings and trees as transparent. This enables content to be clearly visible while preserving the context of the surroundings.
 

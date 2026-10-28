@@ -20,11 +20,11 @@ optional func selectionShouldChange(in tableView: NSTableView) -> Bool
 - (BOOL) selectionShouldChangeInTableView:(NSTableView *) tableView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the table view to change its selection (typically a row being edited), [`false`](../../Swift/false.md) to deny selection change.
 
-#### Discussion
+## Discussion
 
 The user can select and edit different cells within the same row, but can’t select another row unless the delegate approves. The delegate can implement this method for complex validation of edited rows based on the values of any of their cells.
 

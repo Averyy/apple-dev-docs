@@ -21,7 +21,7 @@ The device verification value you use to verify whether the transaction belongs 
 let deviceVerification: Data
 ```
 
-#### Discussion
+## Discussion
 
 Whenever StoreKit returns a verified transaction, the transaction is valid for the device. To perform your own verification, compute the device verification hash as follows:
 

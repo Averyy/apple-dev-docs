@@ -25,7 +25,7 @@ var textLabel: UILabel? { get }
 @property (nonatomic, strong, readonly, nullable) UILabel * textLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing the value in this property causes the view to create a default label for displaying a detail text string. If you are managing the content of the view yourself by adding subviews to the [`contentView`](./contentview.md) property, you should not access this property.
 

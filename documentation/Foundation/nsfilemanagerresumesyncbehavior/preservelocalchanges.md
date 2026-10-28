@@ -23,7 +23,7 @@ case preserveLocalChanges
 NSFileManagerResumeSyncBehaviorPreserveLocalChanges
 ```
 
-#### Discussion
+## Discussion
 
 If the server has a newer version, the server may create a conflict copy of the file, or may automatically pick the winner of the conflict. Apps can choose to implement conflict handling themselves by passing `NSFileManagerResumeSyncBehaviorAfterUploadWithFailOnConflict`.
 

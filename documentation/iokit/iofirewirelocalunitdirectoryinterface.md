@@ -16,7 +16,7 @@ typedef struct IOFireWireLocalUnitDirectoryInterface_t {
 } IOFireWireLocalUnitDirectoryInterface;
 ```
 
-#### Overview
+## Overview
 
 Allows creation and management of unit directories in the config ROM of the local machine. After the unit directory has been built, Publish() should be called to cause it to appear in the config ROM. Unpublish() has the reverse effect as Publish().
 

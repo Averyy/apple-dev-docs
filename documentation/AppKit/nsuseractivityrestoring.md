@@ -19,7 +19,7 @@ protocol NSUserActivityRestoring : NSObjectProtocol
 @protocol NSUserActivityRestoring <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t conform your classes to [`NSUserActivityRestoring`](./nsuseractivityrestoring.md), as it’s a marker protocol adopted by [`NSResponder`](./nsresponder.md) and [`NSDocument`](./nsdocument.md) for user activity state restoration.
 

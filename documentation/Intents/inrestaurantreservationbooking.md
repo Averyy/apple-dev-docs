@@ -22,7 +22,7 @@ class INRestaurantReservationBooking
 @interface INRestaurantReservationBooking : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INRestaurantReservationBooking`](./inrestaurantreservationbooking.md) object contains information about a potential unbooked reservation. When handling a [`INGetAvailableRestaurantReservationBookingsIntent`](./ingetavailablerestaurantreservationbookingsintent.md) object, create instances of this class for each time slot that you want to offer to the user. The system presents this information to the user, allowing them to choose which time slot they prefer. Each reservation booking contains details about the restaurant, date, and party size. They also contain information about special offers and any requirements needed to complete the reservation.
 

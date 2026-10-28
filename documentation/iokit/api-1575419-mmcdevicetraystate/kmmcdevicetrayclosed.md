@@ -14,7 +14,7 @@
 kMMCDeviceTrayClosed = 0
 ```
 
-#### Discussion
+## Discussion
 
 This value means the tray is closed.
 

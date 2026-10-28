@@ -20,7 +20,7 @@ Returns the compute device for a compute stage.
 - (id<MLComputeDeviceProtocol>) computeDeviceForComputeStage:(VNComputeStage) computeStage;
 ```
 
-#### Return Value
+## Return Value
 
 The current compute device; otherwise, `nil` if one isn’t assigned.
 

@@ -25,7 +25,7 @@ var kvImageTruncateKernel: Int { get }
 kvImageTruncateKernel
 ```
 
-#### Discussion
+## Discussion
 
 This flag is valid only for convolution operations. When you set this flag, vImage restricts calculations to the portion of the kernel overlapping the image. It corrects the calculated pixel by first multiplying by the sum of all the kernel elements, then dividing by the sum of the kernel elements that are actually used. This preserves image brightness at the edges.
 

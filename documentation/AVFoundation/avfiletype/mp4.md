@@ -25,7 +25,7 @@ static let mp4: AVFileType
 extern AVFileType const AVFileTypeMPEG4;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.mpeg-4`. Files of this type have an `.mp4` extension.
 

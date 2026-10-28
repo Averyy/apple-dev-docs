@@ -24,7 +24,7 @@ var lifetime: Float { get set }
 @property float lifetime;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `1.0`.
 

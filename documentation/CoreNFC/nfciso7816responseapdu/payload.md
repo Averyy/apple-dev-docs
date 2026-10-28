@@ -17,7 +17,7 @@ A data object that contains the response data.
 var payload: Data?
 ```
 
-#### Discussion
+## Discussion
 
 The data may be empty even if [`sendCommand(apdu:resultHandler:)`](../nfciso7816tag/sendcommand%28apdu,resulthandler%29.md) completes successfully.
 

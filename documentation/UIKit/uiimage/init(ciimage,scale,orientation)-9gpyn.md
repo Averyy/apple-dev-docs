@@ -23,7 +23,7 @@ init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)
 - (instancetype) initWithCIImage:(CIImage *) ciImage scale:(CGFloat) scale orientation:(UIImageOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `UIImage` object. In Objective-C, this method returns `nil` if the `ciImage` parameter is `nil`.
 

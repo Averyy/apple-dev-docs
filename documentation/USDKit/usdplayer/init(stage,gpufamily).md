@@ -20,7 +20,7 @@ Creates a Metal-less player for the given USD stage.
 convenience init(stage: USDStage, gpuFamily: MTLGPUFamily)
 ```
 
-#### Discussion
+## Discussion
 
 `gpuFamily` is required for CPU-side texture processing.
 

@@ -23,7 +23,7 @@ func convert(_ point: CGPoint, to window: UIWindow?) -> CGPoint
 - (CGPoint) convertPoint:(CGPoint) point toWindow:(UIWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 The point converted to the coordinate system of `window`.
 

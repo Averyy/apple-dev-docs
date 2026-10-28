@@ -25,7 +25,7 @@ let kCGImagePropertyGIFDictionary: CFString
 extern CFStringRef const kCGImagePropertyGIFDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the available metadata keys, see [GIF Image Properties](./gif-image-properties.md).
 

@@ -17,7 +17,7 @@ An error that occurs if a new publisher or `Network/NetworkListener` can’t be 
 case serviceAlreadyPublishing(WAError.ServiceAlreadyPublishingDetails)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs if a publisher is already active on the service.
 

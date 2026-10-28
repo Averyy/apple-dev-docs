@@ -40,7 +40,7 @@ var highlightMenu: NSMenu { get }
 @property (nonatomic, strong, readonly) NSMenu * highlightMenu;
 ```
 
-#### Discussion
+## Discussion
 
 Use this menu to augment an existing menu that the system attaches to the content represented by this [`SWAttributionView`](../swattributionview.md). This menu allows the user to reply to or hide the highlight. Your app needs to add this `hightlightMenu` inline with, and at the end of, the menu elements it augments.
 

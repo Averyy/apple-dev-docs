@@ -19,7 +19,7 @@ var horizontalScroller: NSScroller? { get set }
 @property (strong, nullable) NSScroller * horizontalScroller;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the scroll view has no horizontal scroller.
 

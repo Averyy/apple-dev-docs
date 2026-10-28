@@ -23,7 +23,7 @@ init(style: UIBlurEffect.Style)
 + (UIBlurEffect *) effectWithStyle:(UIBlurEffectStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 The blur effect to be used by a UIVisualEffectView object.
 

@@ -19,7 +19,7 @@ class WKCrownSequencer
 @interface WKCrownSequencer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Do not create instances of this class yourself. Instead, retrieve a crown sequencer object from the current interface controller’s [`crownSequencer`](./wkinterfacecontroller/crownsequencer.md) property. Before the sequencer can receive data, you must call its [`focus()`](./wkcrownsequencer/focus%28%29.md) method. Only one object in your interface can have focus at any given time, so if your interface also contains picker objects or has scrollable scenes, you must coordinate changes in focus accordingly. For example, calling the sequencer’s [`focus()`](./wkcrownsequencer/focus%28%29.md) method causes any picker objects or interface controllers to resign focus. When the user taps on a picker object, the currently active sequencer resigns focus, and the selected picker object gains the focus. Because the crown sequencer is not tied to a specific interface object, you can use it as general input for your app.
 

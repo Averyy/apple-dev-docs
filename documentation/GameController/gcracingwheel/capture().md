@@ -20,7 +20,7 @@ func capture() -> GCRacingWheel
 - (GCRacingWheel *) capture;
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot of the racing wheel.
 

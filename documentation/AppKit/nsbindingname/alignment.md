@@ -19,7 +19,7 @@ static let alignment: NSBindingName
 extern NSBindingName NSAlignmentBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

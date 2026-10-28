@@ -25,7 +25,7 @@ var isPlayableOffline: Bool { get }
 @property (nonatomic, readonly, getter=isPlayableOffline) BOOL playableOffline;
 ```
 
-#### Discussion
+## Discussion
 
 Check the value of this property to determine the asset’s suitability for playback before presenting or attempting to play it.
 

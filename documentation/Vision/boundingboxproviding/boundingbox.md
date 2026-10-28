@@ -22,7 +22,7 @@ The bounding box of the object.
 var boundingBox: NormalizedRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate system is normalized to the dimensions of the processed image, with the origin at the lower-left corner of the image.
 

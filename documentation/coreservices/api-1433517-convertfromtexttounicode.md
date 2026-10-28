@@ -15,11 +15,11 @@ Converts a string from any encoding to Unicode.
 OSStatus ConvertFromTextToUnicode(TextToUnicodeInfo iTextToUnicodeInfo, ByteCount iSourceLen, ConstLogicalAddress iSourceStr, OptionBits iControlFlags, ItemCount iOffsetCount, const ByteOffset iOffsetArray[], ItemCount *oOffsetCount, ByteOffset oOffsetArray[], ByteCount iOutputBufLen, ByteCount *oSourceRead, ByteCount *oUnicodeLen, UniChar oUnicodeStr[]);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). The function returnsa `noErr` result code ifit has completely converted the input string to Unicode withoutusing fallback characters.
 
-#### Discussion
+## Discussion
 
 You specify the source string’s encoding in the Unicodemapping structure that you pass to the function  [`CreateTextToUnicodeInfo`](./api-1433598-createtexttounicodeinfo.md)  to obtain aUnicode converter object for the conversion. You pass the Unicodeconverter object returned by `CreateTextToUnicodeInfo` to `ConvertFromTextToUnicode` asthe `iTextToUnicodeInfo` parameter. ` `
 

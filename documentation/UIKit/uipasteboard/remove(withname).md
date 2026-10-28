@@ -22,7 +22,7 @@ class func remove(withName pasteboardName: UIPasteboard.Name)
 + (void) removePasteboardWithName:(UIPasteboardName) pasteboardName;
 ```
 
-#### Discussion
+## Discussion
 
 Invalidation of an app pasteboard frees up all resources used by it. Once a pasteboard is invalidated, you cannot use the it; `UIPasteboard` ignores any calls to it. The method has no effect if called with the name of a system pasteboard.
 

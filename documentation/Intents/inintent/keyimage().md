@@ -25,7 +25,7 @@ func keyImage() -> INImage?
 - (INImage *) keyImage;
 ```
 
-#### Return Value
+## Return Value
 
 An image associated with a named parameter or another image defined in the intent.
 

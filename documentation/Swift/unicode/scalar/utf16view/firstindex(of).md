@@ -23,11 +23,11 @@ func firstIndex(of element: Self.Element) -> Self.Index?
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 The first index where `element` is found. If `element` is not found in the collection, returns `nil`.
 
-#### Discussion
+## Discussion
 
 After using `firstIndex(of:)` to find the position of a particular element in a collection, you can use it to access the element by subscripting. This example shows how you can modify one of the names in an array of students.
 

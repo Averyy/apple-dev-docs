@@ -25,7 +25,7 @@ class Configuration
 
 - [Adding virtual controls to games that support game controllers in iOS](../adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
-#### Overview
+## Overview
 
 You configure a virtual controller by specifying the input elements it contains. Then using the [`updateConfiguration(forElement:configuration:)`](./updateconfiguration%28forelement,configuration%29.md) method, you can customize individual elements.
 

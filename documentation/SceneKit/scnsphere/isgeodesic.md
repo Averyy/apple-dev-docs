@@ -25,7 +25,7 @@ var isGeodesic: Bool { get set }
 @property (nonatomic, getter=isGeodesic) BOOL geodesic;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md), specifying that SceneKit constructs a sphere mesh using a rectangular grid, like the lines of latitude and longitude on a globe of the Earth. This type of sphere mesh is efficient for most uses, but can cause texture distortion in the areas near its poles.
 

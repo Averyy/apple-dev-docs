@@ -23,7 +23,7 @@ var sectionIndexTrackingBackgroundColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * sectionIndexTrackingBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Table views can display an index along the side of the view, making it easier for users to navigate the contents of the table quickly. This property specifies the color to display in the background of the index when the user drags a finger through it. A value of `nil` represents the default color.
 

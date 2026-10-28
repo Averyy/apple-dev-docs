@@ -20,7 +20,7 @@ The joints which define this skeleton’s hierarchy.
 var joints: [MeshResource.Skeleton.Joint]
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The order of joints in this array is significant; parents need to precede their children.
 

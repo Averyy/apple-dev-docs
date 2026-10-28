@@ -17,7 +17,7 @@ Get the actively used memory in bytes.
 static var activeMemory: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note, this will not always match memory use reported by the system because it does not include cached memory buffers.
 

@@ -19,7 +19,7 @@ func defaultColumnWidth() -> CGFloat
 - (CGFloat) defaultColumnWidth;
 ```
 
-#### Return Value
+## Return Value
 
 The default column width.
 

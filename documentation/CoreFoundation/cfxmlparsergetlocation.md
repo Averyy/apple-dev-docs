@@ -15,11 +15,11 @@ Returns the character index of the current parse location.
 extern CFIndex CFXMLParserGetLocation(CFXMLParserRef parser);
 ```
 
-#### Return Value
+## Return Value
 
 The character index of the current parse location.
 
-#### Discussion
+## Discussion
 
 This function is typically used in conjunction with the [`CFXMLParserHandleErrorCallBack`](./cfxmlparserhandleerrorcallback.md) function so that error location information can be reported.
 

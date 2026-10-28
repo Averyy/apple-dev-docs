@@ -19,7 +19,7 @@ A Boolean value that determines whether the style automatically updates when the
 @property (nonatomic, assign, readwrite) BOOL automaticallyUpdateForSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md) for the [`plainButtonConfiguration`](./plainbuttonconfiguration.md), [`grayButtonConfiguration`](./graybuttonconfiguration.md), and [`tintedButtonConfiguration`](./tintedbuttonconfiguration.md) configurations. Set this value to [`false`](../../Swift/false.md) to customize the selection behavior.
 

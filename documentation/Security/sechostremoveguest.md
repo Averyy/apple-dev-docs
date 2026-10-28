@@ -15,11 +15,11 @@ Removes a guest from a host.
 OSStatus SecHostRemoveGuest(SecGuestRef host, SecGuestRef guest, SecCSFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function removes all memory of the guest-host relationship from the Code Signing Services hosting system. You cannot remove a dedicated guest. The specified guest must have been created using the [`SecHostCreateGuest`](./sechostcreateguest.md) function. If you remove a guest that is also a host, all of the guest’s guests are removed, recursively, as well, even if one or more of those guests are dedicated hosts.
 

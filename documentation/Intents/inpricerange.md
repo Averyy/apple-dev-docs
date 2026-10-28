@@ -23,7 +23,7 @@ class INPriceRange
 @interface INPriceRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INPriceRange`](./inpricerange.md) object encapsulates pricing information for a response that involves a charge for services. Price range objects can specify an exact price, a minimum price, a maximum price, or a specific price range.
 

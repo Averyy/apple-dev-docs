@@ -25,7 +25,7 @@ var decode: UnsafePointer<CGFloat>!
 const CGFloat * decode;
 ```
 
-#### Discussion
+## Discussion
 
 The decode array contains the upper and lower bounds for each color channel. When you define a decode array, the conversion functions that accept a [`vImage_CGImageFormat`](../vimage_cgimageformat.md) parameter apply a linear transform to map colors to the specified bounds.
 

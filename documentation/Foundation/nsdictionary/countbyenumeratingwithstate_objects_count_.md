@@ -21,7 +21,7 @@ Returns by reference a C array of objects over which the sender should iterate.
 - (NSUInteger) countByEnumeratingWithState:(NSFastEnumerationState *) state objects:(K[]) buffer count:(NSUInteger) len;
 ```
 
-#### Return Value
+## Return Value
 
 The number of objects returned in `buffer`. Returns `0` when the iteration is finished.
 

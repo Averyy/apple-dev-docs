@@ -26,7 +26,7 @@ The set of participants currently engaged in the activity.
 - [Configure your visionOS app for sharing with people nearby](../configure-your-app-for-sharing-with-people-nearby.md)
 - [Joining and managing a shared activity](../joining-and-managing-a-shared-activity.md)
 
-#### Discussion
+## Discussion
 
 This property reflects the set of people invited to a group session and currently engaged in the shared activity on their device. Members who join the conversation over FaceTime but don’t join the shared activity aren’t active participants. As people join or leave the activity, the session object updates the set of active participants. To detect changes to this property, configure a subscriber.
 

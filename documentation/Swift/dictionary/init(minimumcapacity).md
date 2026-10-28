@@ -21,7 +21,7 @@ Creates an empty dictionary with preallocated space for at least the specified n
 init(minimumCapacity: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to avoid intermediate reallocations of a dictionary’s storage buffer when you know how many key-value pairs you are adding to a dictionary after creation.
 

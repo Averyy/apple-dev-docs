@@ -23,7 +23,7 @@ class MLCSliceLayer
 @interface MLCSliceLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 The framework supports positive stride.
 

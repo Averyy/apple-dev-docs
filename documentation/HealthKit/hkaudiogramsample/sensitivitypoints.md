@@ -24,7 +24,7 @@ var sensitivityPoints: [HKAudiogramSensitivityPoint] { get }
 @property (copy, readonly) NSArray<HKAudiogramSensitivityPoint *> * sensitivityPoints;
 ```
 
-#### Discussion
+## Discussion
 
 Each sensitivity point represents a single result from a hearing test.
 

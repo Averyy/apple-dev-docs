@@ -23,7 +23,7 @@ init(effect: UIVisualEffect?)
 - (instancetype) initWithEffect:(UIVisualEffect *) effect;
 ```
 
-#### Return Value
+## Return Value
 
 The new view containing the designated visual effect.
 

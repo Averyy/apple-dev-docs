@@ -5,7 +5,7 @@
 
 Discover, pair, and manage streaming sessions between Apple Vision Pro and local streaming endpoints by implementing the session management connection protocol.
 
-#### Overview
+## Overview
 
 Before foveated streaming can begin, Apple Vision Pro and your local streaming endpoint must discover each other on the same network, securely pair through certificate-based authentication, and establish a communication channel to coordinate the streaming session life cycle. The session management connection protocol handles this foundational layer — operating independently of the stream — to ensure reliable connection establishment and session state synchronization.
 
@@ -20,7 +20,7 @@ Implement this TCP-based protocol in your streaming application by doing the fol
 
 > **Note**: Implementing the session management connection protocol is one of several steps involved in streaming your desktop application to Apple Vision Pro. For more information on the other steps, see [Streaming a CloudXR application to Apple Vision Pro with foveation](./streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md).
 
-#### Make your streaming endpoint discoverable
+## Make your streaming endpoint discoverable
 
 Set the mDNS service name to `_apple-foveated-streaming._tcp`. This tells Apple Vision Pro that it can connect to your streaming endpoint by broadcasting an mDNS service from your desktop .
 
@@ -34,7 +34,7 @@ If you don’t specify the bundle ID of your visionOS app it won’t be able to 
 
 For more information on building a visionOS app to display your streamed content, see [Creating a foveated streaming client on visionOS](./creating-a-foveated-streaming-client-on-visionos.md).
 
-#### Interpret the messaging format
+## Interpret the messaging format
 
 Apple Vision Pro uses a TCP connection with the IP address and port number the mDNS service advertises to send and receive messages.
 
@@ -50,7 +50,7 @@ Each message between the Apple Vision Pro and the streaming application begins w
 
 Because TCP doesn’t provide a mechanism to define the size of an atomic “packet”, it’s necessary to prefix each message between the Apple Vision Pro and the streaming application with the message length.
 
-#### Acknowledge a connection request
+## Acknowledge a connection request
 
 Apple Vision Pro sends a connection request to your streaming endpoint when it initiates the connection. The connection request defines the streaming parameters and provides the necessary information for establishing and managing the foveated streaming session.
 
@@ -104,7 +104,7 @@ The Apple Vision Pro expects this response from the streaming endpoint after sen
 
 The streaming endpoint can deny the connection by sending a `RequestSessionDisconnect` message. For more information, see [Request a session disconnect](./establishing-foveated-streaming-sessions-with-apple-vision-pro.md#Request-a-session-disconnect).
 
-#### Acknowledge a barcode presentation request
+## Acknowledge a barcode presentation request
 
 After the streaming application acknowledges the connection request, Apple Vision Pro may request that you present a QR code to authenticate the connection.
 
@@ -144,7 +144,7 @@ The following table describes each parameter in the `AcknowledgeBarcodePresentat
 
 After receiving this message, Apple Vision Pro presents the barcode scanning UI.
 
-#### Notify Apple Vision Pro that you’re ready to stream
+## Notify Apple Vision Pro that you’re ready to stream
 
 Send a message to Apple Vision Pro when your streaming endpoint is ready to receive CloudXR™ connections and stream content.
 
@@ -166,7 +166,7 @@ The following table describes each parameter in the `MediaStreamIsReady` message
 
 Apple Vision Pro doesn’t attempt to connect to your streaming application’s CloudXR port until it receives this message, giving your application time to launch the CloudXR server.
 
-#### Track the streaming session status
+## Track the streaming session status
 
 Apple Vision Pro sends messages when the foveated streaming session status changes.
 
@@ -198,7 +198,7 @@ Status values for the `SessionStatusDidChange` message include:
 
 > **Note**: Dismiss the QR code as soon as you receive the `SessionStatusDidChange` message. If pairing failed, the state will be `DISCONNECTED`.
 
-#### Request a session disconnect
+## Request a session disconnect
 
 Sometimes your streaming application may need to request that the session disconnects, such as when the person quits the streaming application on the computer while the streaming session is still running.
 
@@ -220,7 +220,7 @@ The following table describes each parameter in the `RequestSessionDisconnect` m
 
 This message may also be sent during pairing, which cancels the pairing process on Apple Vision Pro.
 
-#### Understand reconnection behavior
+## Understand reconnection behavior
 
 When a person takes off their Apple Vision Pro, Apple Vision Pro sends a `SessionStatusDidChange` message with the `PAUSED` status. After sending the `PAUSED` status, Apple Vision Pro cancels the streaming connection and gracefully disconnects the TCP connection. When the person puts their Apple Vision Pro back on, Apple Vision Pro attempts to reconnect to the streaming endpoint, sending a `SessionStatusDidChange` message with the current state to alert the endpoint that the session is still active.
 

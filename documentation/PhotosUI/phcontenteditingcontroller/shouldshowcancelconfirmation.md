@@ -24,7 +24,7 @@ var shouldShowCancelConfirmation: Bool { get }
 @property (nonatomic, readonly) BOOL shouldShowCancelConfirmation;
 ```
 
-#### Discussion
+## Discussion
 
 Implement a getter method for this property to customize the Photos app’s behavior when the user chooses to cancel content editing.
 

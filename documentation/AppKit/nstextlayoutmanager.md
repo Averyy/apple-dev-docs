@@ -19,7 +19,7 @@ class NSTextLayoutManager
 @interface NSTextLayoutManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 `NSTextLayoutManager` is the centerpiece of the TextKit object network that maintains the layout geometry through an array of [`NSTextContainer`](./nstextcontainer.md) objects. It lays out results using [`NSTextLayoutFragment`](./nstextlayoutfragment.md) and [`NSTextElement`](./nstextelement.md) objects vended from a [`NSTextContentManager`](./nstextcontentmanager.md) that participates in the content layout process.
 

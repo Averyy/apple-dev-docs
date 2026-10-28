@@ -23,7 +23,7 @@ protocol INCancelWorkoutIntentHandling : NSObjectProtocol
 @protocol INCancelWorkoutIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INCancelWorkoutIntentHandling`](./incancelworkoutintenthandling.md) protocol to resolve, confirm, and handle requests to cancel a workout using your app. Adopt this protocol in an object of your Intents extension capable of validating the workout name.
 

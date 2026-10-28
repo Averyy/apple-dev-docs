@@ -5,40 +5,40 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.4. The SDK comes bundled with Xcode 26.4. For information on the compatibility requirements for Xcode 26.4, see [Xcode 26.4 Release Notes](../Xcode-Release-Notes/xcode-26_4-release-notes.md).
 
-##### Address Sanitizer
+### Address Sanitizer
 
-###### Known Issues
+#### Known Issues
 
 - Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808)
 
   **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
 
-##### Background Assets
+### Background Assets
 
-###### New Features
+#### New Features
 
 - You can now check the status of an asset pack while offline by calling `localStatus(ofAssetPackWithID:)` or `assetPackIsAvailableLocally(withID:)` on the shared asset pack manager. The former method returns all available status information. The latter returns only a Boolean value but can be called synchronously. Not all status information is available offline.  (164498466)
 - You can make the latest version of an asset pack available locally by calling `ensureLocalAvailability(of:requireLatestVersion:)` on the shared asset pack manager and passing `true` to the `shouldUpdate` parameter.  (166237389)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Apps might crash when downloading asset packs.  (169648111)
 
-##### Foveated Streaming
+### Foveated Streaming
 
-###### New Features
+#### New Features
 
 - visionOS 26.4 supports NVIDIA CloudXR with foveated streaming, enabling apps to display high-resolution, low-latency immersive content on Apple Vision Pro. To implement this new feature, refer to the Apple Developer documentation for [FoveatedStreaming](../FoveatedStreaming/FoveatedStreaming.md).  (170184382)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The current remote streaming API `public static func remote (serverName: String)` does not include the signaling headers which is used for Vision Pro connection with the server. The signaling headers can be used for authentication and for manipulating the remote scene.  (170085006)
 
-###### Known Issues
+#### Known Issues
 
 - If the user takes off Apple Vision Pro while using the ‘FoveatedStreaming’ feature to stream CloudXR-enabled content, the steam will not pause as expected and the battery will drain.  (171672303)
 
@@ -47,39 +47,39 @@ The visionOS 26.4 SDK provides support for developing apps for Apple Vision Pro 
 
   **Workaround:** Ensure that your UI is within 4 meters from the streaming space origin. If you run into this issue and input stops working for the UI that was originally outside of the 4 meter distance, force quit the app to get it working again.
 
-##### Managed App Distribution
+### Managed App Distribution
 
-###### Known Issues
+#### Known Issues
 
 - `ManagedAppView` might render blank when multiple apps are displayed simultaneously in Managed App Distribution.  (171016274)
 
   **Workaround:** Display a single `ManagedAppView` in Managed App Distribution.
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Multiple processes leak `CFRunLoopSource` objects when Automatic proxy configuration (PAC) or Auto proxy discovery are configured.
 
   For clients of the `CFNetworkExecuteProxyAutoConfigurationURL` and `CFNetworkExecuteProxyAutoConfigurationScript` API, please check to make sure your process is not working around the leak by overreleasing the `CFRunLoopSourceRef` returned by those functions or the `CFArrayRef` and `CFErrorRef` passed to the completion.  (166839810) (FB21376045)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - New fields [revocationType](../StoreKit/transaction/revocationtype-swift.property.md) and [revocationPercentage](../StoreKit/transaction/revocationpercentage.md) have been added to [Transaction](../StoreKit/transaction.md).  (148858551)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: SwiftUI does not surface the latest `.userActivity` as the current user activity.  (163136831)
 
-###### Known Issues
+#### Known Issues
 
 - Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties.
 

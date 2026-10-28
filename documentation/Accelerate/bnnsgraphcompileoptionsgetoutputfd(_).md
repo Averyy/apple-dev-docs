@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsGetOutputFD(_ options: bnns_graph_compile_options_t)
 int BNNSGraphCompileOptionsGetOutputFD(bnns_graph_compile_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The file descriptor that the [`BNNSGraphCompileOptionsSetOutputFD(_:_:)`](./bnnsgraphcompileoptionssetoutputfd%28_,_%29.md) function defines, if any.
 

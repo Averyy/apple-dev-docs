@@ -20,7 +20,7 @@ Adds an item to the end of an existing playlist.
 func add<MusicItemType>(_ item: MusicItemType, to playlist: Playlist) async throws -> Playlist where MusicItemType : MusicPlaylistAddable
 ```
 
-#### Return Value
+## Return Value
 
 The updated playlist.
 

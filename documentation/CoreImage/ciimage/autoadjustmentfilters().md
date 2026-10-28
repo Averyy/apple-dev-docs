@@ -24,7 +24,7 @@ func autoAdjustmentFilters() -> [CIFilter]
 - (NSArray<CIFilter *> *) autoAdjustmentFilters;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CIFilter`](../cifilter-swift.class.md) instances preconfigured for correcting deficiencies in the supplied image.
 

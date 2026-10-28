@@ -28,11 +28,11 @@ func events(matching predicate: NSPredicate) -> [EKEvent]
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 An array of events that match `predicate`.
 
-#### Discussion
+## Discussion
 
 Only committed events are included in the results. To include events saved using [`save(_:span:commit:)`](./save%28_,span,commit%29.md) with the `commit` parameter set to [`false`](../../Swift/false.md), call [`commit()`](./commit%28%29.md) first.
 

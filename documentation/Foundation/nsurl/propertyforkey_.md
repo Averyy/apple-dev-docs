@@ -15,7 +15,7 @@ Returns the specified property of the receiver’s resource.
 - (id) propertyForKey:(NSString *) propertyKey;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the property of the receiver’s resource for the provided key. Returns `nil` if there is no such key.
 

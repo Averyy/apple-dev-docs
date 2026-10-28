@@ -20,7 +20,7 @@ The behavioral mode that controls the way the physics body moves and interacts w
 var mode: PhysicsBodyMode
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`PhysicsBodyMode.dynamic`](../physicsbodymode/dynamic.md), which means the physics body responds to forces and can collide with all other physics bodies in the simulation.
 

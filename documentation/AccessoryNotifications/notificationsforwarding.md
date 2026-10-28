@@ -15,7 +15,7 @@ A class for handling notification forwarding in your accessory’s data provider
 final class NotificationsForwarding
 ```
 
-#### Overview
+## Overview
 
 Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](./notificationsforwarding/accessorynotificationshandler.md) protocol in your [`AccessoryDataProvider`](../AccessoryTransportExtension/accessorydataprovider.md) extension to receive and manage system notifications that iOS forwards to your accessory.
 

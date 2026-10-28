@@ -21,7 +21,7 @@ var appClipActivationPayload: APActivationPayload? { get }
 @property (nonatomic, strong, readonly, nullable) APActivationPayload * appClipActivationPayload;
 ```
 
-#### Discussion
+## Discussion
 
 When your App Clip launches, use the activation payload to verify a user’s location. For more information, see [Responding to invocations](../../AppClip/responding-to-invocations.md).
 

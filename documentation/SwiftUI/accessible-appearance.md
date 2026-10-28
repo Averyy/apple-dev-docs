@@ -5,7 +5,7 @@
 
 Enhance the legibility of content in your app’s interface.
 
-#### Overview
+## Overview
 
 Make content easier for people to see by making it larger, giving it greater contrast, or reducing the amount of distracting motion.
 

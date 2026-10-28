@@ -5,7 +5,7 @@
 
 Track a real-world object in your iOS app by using a reference-object file.
 
-#### Overview
+## Overview
 
 ARKit enables your iOS app to track real-world objects and attach virtual content to them. For example, you can track a power tool and overlay an animated guide showing how to operate it, or track a household item and highlight a part that needs repair with step-by-step instructions.
 
@@ -15,7 +15,7 @@ Object tracking uses the [`ARSession`](../ARKit/arsession.md) and [`ARWorldTrack
 
 For information about creating a reference object file in Create ML, see [Implementing object tracking in your app](./implementing-object-tracking-in-your-app.md).
 
-#### Configure object tracking for your use case
+## Configure object tracking for your use case
 
 ARKit provides two properties on [`ARWorldTrackingConfiguration`](../ARKit/arworldtrackingconfiguration.md) for tracking `.referenceobject` files, based on how the object behaves in the scene. You can assign different `.referenceobject` files to each property in the same session.
 
@@ -26,7 +26,7 @@ Both [`ARWorldTrackingConfiguration`](../ARKit/arworldtrackingconfiguration.md) 
 
 > ❗ **Important**: You can’t use `.arobject` and `.referenceobject` files in the same session. The older `.arobject` format, introduced for [Scanning and Detecting 3D Objects](../ARKit/scanning-and-detecting-3d-objects.md) in iOS 12, only works with `detectionObjects` and doesn’t support the `trackingObjects` property.
 
-#### Configure a tracking session
+## Configure a tracking session
 
 To load a `.referenceobject` file, use the [`init(archiveURL:)`](../ARKit/arreferenceobject/init%28archiveurl%29.md) initializer with the file’s URL.
 
@@ -68,7 +68,7 @@ When the session starts, ARKit begins looking for objects that match the referen
 
 > ❗ **Important**: High frame-rate tracking with `trackingObjects` significantly increases power consumption and processing load. Only assign objects to `trackingObjects` when they require precise, per-frame pose updates, such as handheld or moving objects.
 
-#### Handle anchor updates
+## Handle anchor updates
 
 As ARKit tracks reference objects, it sends anchor updates through the [`ARSessionDelegate`](../ARKit/arsessiondelegate.md) protocol:
 
@@ -107,7 +107,7 @@ In [`session(_:didUpdate:)`](../ARKit/arsessiondelegate/session%28_,didupdate%29
 
 ARKit doesn’t call [`session(_:didRemove:)`](../ARKit/arsessiondelegate/session%28_,didremove%29.md) for object anchors automatically. Object anchors remain in the session until your app explicitly removes them. If your app does remove an anchor, clean up the corresponding entity from the scene.
 
-#### Access the embedded USDZ file
+## Access the embedded USDZ file
 
 Each `.referenceobject` file can contain an embedded USDZ model of the object from Create ML training. Use the [`usdzFile`](../ARKit/arreferenceobject/usdzfile.md) property to access this model at runtime:
 

@@ -25,7 +25,7 @@ typealias TimeInterval = Double
 typedef double NSTimeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 A [`TimeInterval`](./timeinterval.md) value is always specified in seconds; it yields sub-millisecond precision over a range of 10,000 years.
 

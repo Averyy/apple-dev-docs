@@ -24,7 +24,7 @@ convenience init(for model: MLModel) throws
 + (instancetype) modelForMLModel:(MLModel *) model error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method may fail if the framework doesn’t support the Core ML model. For example, a model that doesn’t accept an image as any of its inputs will yield an [`VNErrorCode.invalidModel`](../vnerrorcode/invalidmodel.md) error.
 

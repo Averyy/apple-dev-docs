@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, assetDownloadTask: AVAssetDownlo
 - (void) URLSession:(NSURLSession *) session assetDownloadTask:(AVAssetDownloadTask *) assetDownloadTask didLoadTimeRange:(CMTimeRange) timeRange totalTimeRangesLoaded:(NSArray<NSValue *> *) loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange) timeRangeExpectedToLoad;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to track the download status of an asset. The following example shows how to calculate the percentage complete for the current download.
 

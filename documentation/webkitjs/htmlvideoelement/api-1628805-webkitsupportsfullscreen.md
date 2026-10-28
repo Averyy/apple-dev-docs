@@ -16,7 +16,7 @@ A Boolean value indicating whether the video can be played in fullscreen mode.
 readonly attribute boolean webkitSupportsFullscreen;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the device supports fullscreen mode; otherwise, `false`. This property is also `false` if the meta data is loaded or the `loadedmetadata` event has not fired, and if the files are audio-only.
 

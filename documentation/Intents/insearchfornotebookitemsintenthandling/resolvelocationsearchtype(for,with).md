@@ -29,7 +29,7 @@ optional func resolveLocationSearchType(for intent: INSearchForNotebookItemsInte
 - (void) resolveLocationSearchTypeForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INLocationSearchTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the location used during a location-based search. Use this method to verify that you can perform a location-based search using the specified information. Consider the value of the [`locationSearchType`](../insearchfornotebookitemsintent/locationsearchtype.md) property of the intent when determining your response. If the search type is unknown, return a value of not required to indicate that you do not intend to use the location information during the search. If the search type is a different value, return a successful resolution if the [`location`](../insearchfornotebookitemsintent/location.md) property of the intent contains enough information to perform the search. Return a different result if it does not.
 

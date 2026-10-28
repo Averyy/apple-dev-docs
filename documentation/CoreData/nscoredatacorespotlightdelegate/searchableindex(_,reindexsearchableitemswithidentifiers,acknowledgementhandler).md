@@ -23,7 +23,7 @@ func searchableIndex(_ searchableIndex: CSSearchableIndex, reindexSearchableItem
 - (void) searchableIndex:(CSSearchableIndex *) searchableIndex reindexSearchableItemsWithIdentifiers:(NSArray<NSString *> *) identifiers acknowledgementHandler:(void (^)()) acknowledgementHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`searchableIndex(_:reindexSearchableItemsWithIdentifiers:acknowledgementHandler:)`](./searchableindex%28_,reindexsearchableitemswithidentifiers,acknowledgementhandler%29.md).
 

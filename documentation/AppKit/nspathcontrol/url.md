@@ -19,7 +19,7 @@ var url: URL? { get set }
 @property (copy, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 When setting, an array of `NSPathComponentCell` objects is automatically set based on the path in `url`. If `url` is a file URL (returns [`true`](../../Swift/true.md) from [`isFileURL`](../../Foundation/nsurl/isfileurl.md)), the images are automatically filled with file icons, if the path exists. The URL value itself is stored in the `objectValue` property of the cell.
 

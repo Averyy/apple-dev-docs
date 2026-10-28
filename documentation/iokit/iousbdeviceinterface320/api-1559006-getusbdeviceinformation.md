@@ -16,11 +16,11 @@ Returns status information about the USB device, such as whether the device is c
 IOReturn (*GetUSBDeviceInformation)(void *self, UInt32 *info);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnUnsupported is the bus doesn't support this function.
 
-#### Discussion
+## Discussion
 
 The device does not have to be open to use this function.
 

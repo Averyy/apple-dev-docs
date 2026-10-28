@@ -21,7 +21,7 @@ The maximum number of rectangles the request returns.
 var maximumObservations: Int
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is `1`. Setting this property to `0` will return a potentially unlimited number of observations.
 

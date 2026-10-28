@@ -25,7 +25,7 @@ let AVVideoAppleProRAWBitDepthKey: String
 extern NSString * const AVVideoAppleProRAWBitDepthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an integer value from 8 to16 bits.
 

@@ -21,11 +21,11 @@ The declaration to configure the properties on the device.
 object ManagementProperties
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.management.properties` as the declaration type.
 
-##### Management declaration example
+### Management declaration example
 
 ```json
 {

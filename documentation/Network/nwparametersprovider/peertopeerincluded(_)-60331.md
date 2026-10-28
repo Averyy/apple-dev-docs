@@ -21,7 +21,7 @@ Include peer-to-peer interfaces when connecting, listening, and browsing.
 func peerToPeerIncluded(_ included: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Connections, Listeners, and Browsers using peer-to-peer interfaces can consume significantly more power and should not be kept running for longer than necessary.
 >

@@ -9,13 +9,13 @@ Play Live Photos on the web.
 **Availability**:
 - LivePhotosKit JS 1.0+
 
-#### Overview
+## Overview
 
 Use the LivePhotosKit JS library to play Live Photos on your web pages.
 
 The JavaScript API presents the player in the form of a DOM element, much like an image or video tag, which can be configured with photo and video resources and other options, and have its playback controlled either programmatically by the consuming developer, or via pre-provided controls by the browsing end-user.
 
-##### Before You Begin
+### Before You Begin
 
 1. Embed LivePhotosKit JS in your webpage.
 
@@ -41,7 +41,7 @@ To enable strict mode for an entire script, put ‘use strict’ before any othe
 >
 > `npm install --save livephotoskit`
 
-##### Declarative HTML
+### Declarative HTML
 
 By including the LivePhotosKit JS script on your page, you can create players by simply adding declarative markup to your HTML. As the page loads, LivePhotosKit JS will determine what player instances are on the page and initialize them. You can use any HTML tag that supports child nodes.
 
@@ -75,7 +75,7 @@ Each DOM element assigned to be a Player will be decorated with a playback contr
 </html>
 ```
 
-##### JavaScript API
+### JavaScript API
 
 Create a new [`LivePhotosKit.Player`](./livephotoskit.player/livephotoskit.player.md) by invoking it either as a wrapper around a pre-existing DOM element, or by calling it without an argument, which will create a new DOM element.
 
@@ -119,7 +119,7 @@ player.currentTime = 0.25 * player.duration;
 player.currentTime = 0.1;
 ```
 
-##### Error Handling
+### Error Handling
 
 A Player will emit error events, if and when errors occur while attempting to load or play. If a Player does experience an error, it will also publish the error to its public property [`errors`](./livephotoskit.player/errors.md) as a way to convey whether or not it is in an error state, and, if so, what the errors were.
 
@@ -143,7 +143,7 @@ player.addEventListener('error', (ev) => {
 })
 ```
 
-##### Browser Compatibility
+### Browser Compatibility
 
 The LivePhotosKit JS player is supported on the following browsers:
 
@@ -154,7 +154,7 @@ The LivePhotosKit JS player is supported on the following browsers:
 | Android (performance depends on device) | Chrome (beta) |
 | Windows | Chrome, Firefox, Edge, Internet Explorer 11 |
 
-##### How to obtain Live Photo assets
+### How to obtain Live Photo assets
 
 Live Photos consist of two components: a still photo and a video of the moments just before and after the photo is taken. Using one of the following methods will let you obtain the still photo as a JPG and the video as a MOV file.
 
@@ -162,20 +162,20 @@ Live Photos consist of two components: a still photo and a video of the moments 
 
 A sample project is also [available](https://developer.apple.com/library/content/samplecode/UsingPhotosFramework/Introduction/Intro.html).
 
-###### Using macOS Photos
+#### Using macOS Photos
 
 - Connect your iOS device to your Mac.
 - Import your photos into the Photos application.
 - Select the Live Photo you wish to export.
 - Use File > Export > Export Unmodified Original to export to your file system.
 
-###### Using macOS Image Capture
+#### Using macOS Image Capture
 
 - Connect your iOS device to your Mac.
 - Select the Live Photo you wish to import from your device to your local file system.
 - Choose the destination folder and click on Import.
 
-###### Using Windows 10 File Explorer
+#### Using Windows 10 File Explorer
 
 - Ensure that iTunes for Windows is installed. You can download it from here: [http://www.apple.com/itunes/download/](http://www.apple.com/itunes/download/)
 - Open File Explorer. This can be opened by pressing the Windows Key and E at the same time.

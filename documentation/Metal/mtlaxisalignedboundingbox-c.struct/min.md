@@ -18,7 +18,7 @@
 MTLPackedFloat3 min;
 ```
 
-#### Discussion
+## Discussion
 
 Minimum point
 

@@ -32,7 +32,7 @@ var profileName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * profileName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the settings if your vehicle supports saving named profiles.
 

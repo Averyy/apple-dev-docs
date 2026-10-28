@@ -14,7 +14,7 @@
 void (*SetDCLRefcon)(NuDCLRef dcl, void *refcon);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

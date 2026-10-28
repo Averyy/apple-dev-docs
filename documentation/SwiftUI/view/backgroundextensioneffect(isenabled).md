@@ -22,7 +22,7 @@ Adds the background extension effect to the view. The view will be duplicated in
 @preconcurrency func backgroundExtensionEffect(isEnabled: Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to create copies outside of the safe area so the view and its copies together can function as backgrounds for other elements on top. The most common use case is to apply this to a view in the detail column of a navigation split view so it can extend under the sidebar or inspector region to provide seamless immersive visuals.
 

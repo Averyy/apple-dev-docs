@@ -5,7 +5,7 @@
 
 Cast instances of the Objective-C `id` type to a specific Swift type.
 
-#### Overview
+## Overview
 
 In Objective-C, the `id` type represents objects that are instances of any Objective-C class. The `id` type is instead imported by Swift as the `Any` type. When you pass a Swift instance to an Objective-C API, it’s bridged as an `id` parameter so that it’s usable in the API as an Objective-C object. When `id` values are imported into Swift as `Any`, the runtime automatically handles bridging back to either class references or value types.
 
@@ -19,7 +19,7 @@ x as? String   // String with value "goodbye"
 x as? NSString // NSString with value "goodbye"
 ```
 
-##### Downcast Objects to Call Methods and Access Properties
+### Downcast Objects to Call Methods and Access Properties
 
 When you work with objects of type `Any` where you know the underlying type, it’s often useful to downcast those objects to the underlying type. However, because the `Any` type can refer to any type, a downcast to a more specific type isn’t guaranteed by the compiler to succeed.
 

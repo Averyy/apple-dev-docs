@@ -24,7 +24,7 @@ optional func draw(_ layer: CALayer, in ctx: CGContext)
 - (void) drawLayer:(CALayer *) layer inContext:(CGContextRef) ctx;
 ```
 
-#### Discussion
+## Discussion
 
 The [`draw(_:in:)`](./draw%28_,in%29.md) method is called when the layer is marked for its content to be reloaded, typically with the [`setNeedsDisplay()`](../calayer/setneedsdisplay%28%29.md) method. It is not called if the delegate implements the [`display(_:)`](./display%28_%29.md) method. You can use the context to draw vectors, such as curves and lines, or images with the [`draw(_:in:byTiling:)`](../../CoreGraphics/cgcontext/draw%28_,in,bytiling%29.md) method.
 

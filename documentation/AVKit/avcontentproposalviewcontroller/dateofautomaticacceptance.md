@@ -19,7 +19,7 @@ var dateOfAutomaticAcceptance: Date? { get set }
 @property (nonatomic, strong, nullable) NSDate * dateOfAutomaticAcceptance;
 ```
 
-#### Discussion
+## Discussion
 
 The system schedules the proposal when you present it, and may unschedule it if the user cancels automatic acceptance, manually accepts, or otherwise dismisses the proposal.
 

@@ -18,7 +18,7 @@ The index of the buffer to use for this layout.
 var bufferIndex: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Most usage scenarios use only one buffer. Use an index less than [`maxVertexBufferCount`](../descriptor-swift.struct/maxvertexbuffercount.md).
 

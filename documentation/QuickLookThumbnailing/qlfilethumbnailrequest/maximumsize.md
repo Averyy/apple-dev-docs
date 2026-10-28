@@ -23,7 +23,7 @@ var maximumSize: CGSize { get }
 @property (nonatomic, readonly) CGSize maximumSize;
 ```
 
-#### Discussion
+## Discussion
 
 The `maximumSize` accepted is also the preferred size of the thumbnail that you need to create. Your generated thumbnail’s width or height should match the `width` or `height` of the `maximumSize`, or, ideally, both.
 

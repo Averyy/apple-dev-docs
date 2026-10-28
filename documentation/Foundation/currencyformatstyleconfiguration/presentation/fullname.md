@@ -21,7 +21,7 @@ A presentation that shows the full name of the currency.
 static var fullName: CurrencyFormatStyleConfiguration.Presentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This presentation produces output like `123.00 US dollars`.
 

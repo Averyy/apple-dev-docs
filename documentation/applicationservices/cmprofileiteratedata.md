@@ -17,7 +17,7 @@ typedef struct CMProfileIterateData {
 } CMProfileIterateData;
 ```
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines the `CMProfileIterateData` structure to provide your [`CMProfileIterateProcPtr`](./cmprofileiterateprocptr.md) callback routine with a description of a profile during an iteration through the available profiles that takes place when you call [CMIterateColorSyncFolder](./colorsync_manager/api-1804904-cmiteratecolorsyncfolder.md).
 

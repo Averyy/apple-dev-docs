@@ -19,7 +19,7 @@ var iconSize: Int { get set }
 @property NSUInteger iconSize;
 ```
 
-#### Discussion
+## Discussion
 
 The icon is square, so only a single dimension is required.
 

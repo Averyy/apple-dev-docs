@@ -21,7 +21,7 @@ init(title: String, handler: CPBarButtonHandler? = nil)
 - (instancetype) initWithTitle:(NSString *) title handler:(CPBarButtonHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A bar button that displays the provided text.
 

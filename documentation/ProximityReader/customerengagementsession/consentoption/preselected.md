@@ -19,7 +19,7 @@ Shows the customer the receive promotions option with a default preference.
 case preSelected
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Deprecated. Pre-selecting consent is no longer supported; this behaves the same as [`CustomerEngagementSession.ConsentOption.visible`](./visible.md) and shows the option with nothing selected, so the customer always makes an explicit choice.
 

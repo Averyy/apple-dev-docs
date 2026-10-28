@@ -19,7 +19,7 @@ var systemName: String { get }
 @property (nonatomic, copy, readonly) NSString * systemName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is “watchOS”.
 

@@ -25,7 +25,7 @@ func CFURLCreateCopyDeletingPathExtension(_ allocator: CFAllocator!, _ url: CFUR
 extern CFURLRefCFURLCreateCopyDeletingPathExtension(CFAllocatorRef allocator, CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `url` with its last path extension removed. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

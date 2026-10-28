@@ -20,11 +20,11 @@ func FFDeviceSetForceFeedbackProperty(_ deviceReference: FFDeviceObjectReference
 extern HRESULT FFDeviceSetForceFeedbackProperty(FFDeviceObjectReference deviceReference, FFProperty property, void *pValue);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK or FFERR_UNSUPPORTED. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 

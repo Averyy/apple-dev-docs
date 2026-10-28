@@ -21,7 +21,7 @@ A type that contains the result of performing an action, and includes optional i
 protocol IntentResult : Sendable
 ```
 
-#### Overview
+## Overview
 
 Instead of implementing this protocol, use the [`ReturnsValue`](./returnsvalue.md), [`OpensAppIntent`](./intentresult/opensappintent.md), [`ProvidesDialog`](./providesdialog.md), and [`ShowsSnippetView`](./showssnippetview.md) type aliases on your [`perform()`](./appintent/perform%28%29.md) implementation in combination with the [`result()`](./intentresult/result%28%29.md) methods as shown in the following example:
 

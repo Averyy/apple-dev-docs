@@ -22,7 +22,7 @@ var urlIsPlayingVideo: Bool { get set }
 @property (nonatomic) BOOL URLIsPlayingVideo;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NO`](../../ObjectiveC/no.md). Set this value when the webpage starts or stops playing video.
 

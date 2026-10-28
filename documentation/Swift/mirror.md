@@ -21,7 +21,7 @@ A representation of the substructure and display style of an instance of any typ
 struct Mirror
 ```
 
-#### Overview
+## Overview
 
 A mirror describes the parts that make up a particular instance, such as the instance’s stored properties, collection or tuple elements, or its active enumeration case. Mirrors also provide a “display style” property that suggests how this mirror might be rendered.
 

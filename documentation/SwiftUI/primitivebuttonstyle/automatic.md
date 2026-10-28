@@ -24,7 +24,7 @@ nonisolated static var automatic: DefaultButtonStyle { get }
 
 Available when `Self` is `DefaultButtonStyle`.
 
-#### Discussion
+## Discussion
 
 If you create a button directly on a blank canvas, the style varies by platform. iOS uses the borderless button style by default, whereas macOS, tvOS, and watchOS use the bordered button style.
 

@@ -25,7 +25,7 @@ class AVCaptureDeviceDirectionMap
 
 - [Choosing a camera by the direction it faces](./choosing-a-camera-by-the-direction-it-faces.md)
 
-#### Overview
+## Overview
 
 You don’t create instances of `AVCaptureDeviceDirectionMap` directly. An [`AVCaptureDeviceDirectionCoordinator`](./avcapturedevicedirectioncoordinator.md) object creates a map for the view you give it, and passes an updated map to your change handler each time a camera changes direction.
 

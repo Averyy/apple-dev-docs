@@ -24,7 +24,7 @@ var tWrapMode: MDLMaterialTextureWrapMode { get set }
 @property (nonatomic, assign) MDLMaterialTextureWrapMode tWrapMode;
 ```
 
-#### Discussion
+## Discussion
 
 Texture coordinates canonically range from `0.0` to `1.0`; wrap mode determines the behavior for samples from outside that range. For details, see [`MDLMaterialTextureWrapMode`](../mdlmaterialtexturewrapmode.md).
 

@@ -16,11 +16,11 @@ Creates a HID event object that represents a digitizer collection.
 IOHIDEvent * createEventForDigitizerCollection(IOHIDDigitizerCollection *collection, uint64_t timestamp, uint32_t reportID);
 ```
 
-#### Return Value
+## Return Value
 
 An `IOHIDEvent` object containing the digitizer-related data. This method returns `NULL` if it encounters an error or if no elements in the collection contain updated values.
 
-#### Discussion
+## Discussion
 
 This method creates an `IOHIDEvent` object with any updated digitizer values that it finds. The [`handleDigitizerReport`](./handledigitizerreport.md) calls this method when processing an input report; don’t call this method directly.
 

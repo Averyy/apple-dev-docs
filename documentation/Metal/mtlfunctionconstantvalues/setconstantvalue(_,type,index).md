@@ -24,7 +24,7 @@ func setConstantValue(_ value: UnsafeRawPointer, type: MTLDataType, index: Int)
 - (void) setConstantValue:(const void *) value type:(MTLDataType) type atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Declare a single function constant in Metal Shading Language (MSL).
 

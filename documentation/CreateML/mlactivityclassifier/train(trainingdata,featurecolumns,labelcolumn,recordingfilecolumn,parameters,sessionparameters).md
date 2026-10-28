@@ -21,7 +21,7 @@ static func train(trainingData: MLActivityClassifier.DataSource, featureColumns:
 static func train(trainingData: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String, parameters: MLActivityClassifier.ModelParameters = ModelParameters(validationData: nil), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLActivityClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the activity classifier training session.
 

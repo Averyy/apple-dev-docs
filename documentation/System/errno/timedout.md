@@ -25,7 +25,7 @@ static var timedOut: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A `connect(2)`, `connectx(2)` or `send(2)` request failed because the connected party didn’t properly respond within the required period of time. The timeout period is dependent on the communication protocol.
 

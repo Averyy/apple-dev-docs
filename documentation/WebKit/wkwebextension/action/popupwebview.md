@@ -23,7 +23,7 @@ var popupWebView: WKWebView? { get }
 @property (nonatomic, readonly, nullable) WKWebView * popupWebView;
 ```
 
-#### Discussion
+## Discussion
 
 The web view will be preloaded with the pop-up page upon first access or after it has been unloaded. Use the [`presentsPopup`](./presentspopup.md) property to determine whether a pop-up should be displayed before using this property.
 

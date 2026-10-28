@@ -25,7 +25,7 @@ var advertisedAppStoreItemIdentifier: NSNumber { get set }
 
 - [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
 
-#### Discussion
+## Discussion
 
 Set this property to the App Store item identifier of the app that you’re advertising.
 

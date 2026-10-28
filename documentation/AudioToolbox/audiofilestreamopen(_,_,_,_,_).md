@@ -24,7 +24,7 @@ func AudioFileStreamOpen(_ inClientData: UnsafeMutableRawPointer?, _ inPropertyL
 extern OSStatus AudioFileStreamOpen(void *inClientData, AudioFileStream_PropertyListenerProc inPropertyListenerProc, AudioFileStream_PacketsProc inPacketsProc, AudioFileTypeID inFileTypeHint, AudioFileStreamID*outAudioFileStream);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

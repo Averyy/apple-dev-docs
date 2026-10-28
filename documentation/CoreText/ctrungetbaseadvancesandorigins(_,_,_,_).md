@@ -25,7 +25,7 @@ func CTRunGetBaseAdvancesAndOrigins(_ runRef: CTRun, _ range: CFRange, _ advance
 extern void CTRunGetBaseAdvancesAndOrigins(CTRunRef runRef, CFRange range, CGSize advancesBuffer[], CGPoint originsBuffer[]);
 ```
 
-#### Discussion
+## Discussion
 
 A run’s base advances and origins determine the positions of its glyphs but require additional processing before being used for drawing.
 

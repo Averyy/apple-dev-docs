@@ -19,15 +19,15 @@ Inverse n-dimensional discrete Fourier Transform on a real input.
 func irfftn(_ array: MLXArray, s: [Int]? = nil, axes: [Int]? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Inverse of [`rfftn(_:s:axes:stream:)`](./rfftn%28_,s,axes,stream%29.md)
 
-#### Discussion
+## Discussion
 
 Note the input is generally complex. The dimensions of the input specified in `axes` are padded or truncated to match the sizes from `s`. The last axis in `axes` is treated as the real axis and will have size `s[s.lastIndex] / 2 + 1`.
 
-##### See Also
+### See Also
 
 - [MLXFFT](./MLXFFT.md)
 

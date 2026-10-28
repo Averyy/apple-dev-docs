@@ -18,11 +18,11 @@ Creates the default configuration you use to style an extra prominent header in 
 static func extraProminentInsetGroupedHeader() -> UIListContentConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for an extra prominent header in an inset grouped list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a header in a table view or collection view list.
 

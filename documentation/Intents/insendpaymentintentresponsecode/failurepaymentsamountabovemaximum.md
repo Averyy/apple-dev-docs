@@ -23,7 +23,7 @@ case failurePaymentsAmountAboveMaximum
 INSendPaymentIntentResponseCodeFailurePaymentsAmountAboveMaximum
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the payment amount is above the maximum transaction amount allowed by your app.
 

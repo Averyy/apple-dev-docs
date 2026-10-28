@@ -25,7 +25,7 @@ func ColorSyncProfileCreateWithURLAndOptions(_ url: CFURL!, _ options: CFDiction
 extern ColorSyncProfileRefColorSyncProfileCreateWithURLAndOptions(CFURLRef url, CFDictionaryRef options, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile, or `NULL` in case of failure.
 

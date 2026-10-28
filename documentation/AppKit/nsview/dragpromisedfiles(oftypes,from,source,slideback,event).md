@@ -21,11 +21,11 @@ func dragPromisedFiles(ofTypes typeArray: [String], from rect: NSRect, source so
 - (BOOL) dragPromisedFilesOfTypes:(NSArray<NSString *> *) typeArray fromRect:(NSRect) rect source:(id) sourceObject slideBack:(BOOL) flag event:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drag operation is initiated successfully, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method must be invoked only within an implementation of the [`mouseDown(with:)`](../nsresponder/mousedown%28with%29.md) method. As part of its implementation, this method invokes [`dragImage:at:offset:event:pasteboard:source:slideBack:`](./dragimage_at_offset_event_pasteboard_source_slideback_.md).
 

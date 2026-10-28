@@ -19,11 +19,11 @@ optional func writingOptions(forType type: NSPasteboard.PasteboardType, pasteboa
 - (NSPasteboardWritingOptions) writingOptionsForType:(NSPasteboardType) type pasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 Options for writing data of type type to `pasteboard`. Return `0` for no options, or a value given in [Pasteboard Writing Options](../pasteboard-writing-options.md).
 
-#### Discussion
+## Discussion
 
 Do not perform other pasteboard operations in the method implementation.
 

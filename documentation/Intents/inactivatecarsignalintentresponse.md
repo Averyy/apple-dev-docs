@@ -23,7 +23,7 @@ class INActivateCarSignalIntentResponse
 @interface INActivateCarSignalIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an `INActivateCarSignalIntentResponse` object to specify the result of a request to activate the signal on the user’s car. You create instances of this class when confirming or handling an activate car signal intent. Use this object to confirm that the request is valid and communicate whether the signal was successfully activated, or to report any errors that occur.
 

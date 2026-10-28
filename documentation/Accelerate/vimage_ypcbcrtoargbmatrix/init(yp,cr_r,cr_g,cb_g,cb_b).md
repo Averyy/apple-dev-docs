@@ -21,11 +21,11 @@ Creates a 3 x 3 matrix for converting Y’CbCr signals to RGB.
 init(Yp: Float, Cr_R: Float, Cr_G: Float, Cb_G: Float, Cb_B: Float)
 ```
 
-#### Return Value
+## Return Value
 
 A 3 x 3 matrix for converting Y’CbCr signals to RGB.
 
-#### Discussion
+## Discussion
 
 The vImage library uses this matrix to convert from YpCbCr to RGB using the following multiplication:
 

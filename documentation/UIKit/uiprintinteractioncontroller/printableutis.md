@@ -22,7 +22,7 @@ class var printableUTIs: Set<String> { get }
 @property (class, nonatomic, readonly) NSSet<NSString *> * printableUTIs;
 ```
 
-#### Return Value
+## Return Value
 
 A set object that contains, as strings, the UTIs identifying data types that UIKit knows how to print natively.
 

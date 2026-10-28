@@ -21,7 +21,7 @@ The scene is in the foreground and interactive.
 case active
 ```
 
-#### Discussion
+## Discussion
 
 An active scene isn’t necessarily front-most. For example, a macOS window might be active even if it doesn’t currently have focus. Nevertheless, all scenes should operate normally in this phase.
 

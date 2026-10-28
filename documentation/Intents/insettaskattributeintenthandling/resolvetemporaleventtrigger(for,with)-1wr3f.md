@@ -29,7 +29,7 @@ optional func resolveTemporalEventTrigger(for intent: INSetTaskAttributeIntent) 
 - (void) resolveTemporalEventTriggerForSetTaskAttribute:(INSetTaskAttributeIntent *) intent withCompletion:(void (^)(INTemporalEventTriggerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the time-based trigger to apply to the task. For apps that support reminders based on the current time, use this method to resolve the trigger information. If time-based reminders are optional, return a successful resolution when the user provides trigger information or return a [`notRequired()`](../inintentresolutionresult/notrequired%28%29.md) resolution when there’s no trigger information. If the intent includes some trigger information, but not enough for a successful resolution, you can ask the user to confirm or disambiguate from among the possible values.
 

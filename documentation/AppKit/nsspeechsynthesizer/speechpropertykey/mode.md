@@ -21,7 +21,7 @@ struct Mode
 typedef NSString * NSSpeechMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use these keys in the [`inputMode`](./inputmode.md), [`characterMode`](./charactermode.md), and [`numberMode`](./numbermode.md) dictionaries.
 

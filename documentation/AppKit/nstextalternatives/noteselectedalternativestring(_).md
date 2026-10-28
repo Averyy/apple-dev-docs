@@ -19,7 +19,7 @@ func noteSelectedAlternativeString(_ alternativeString: String)
 - (void) noteSelectedAlternativeString:(NSString *) alternativeString;
 ```
 
-#### Discussion
+## Discussion
 
 The base class implementation sends a notification, `NSTextAlternativesSelectedAlternativeStringNotification`, with the selected alternative string in the user info under the key `@"NSAlternativeString"`. Using this mechanism, arbitrary objects can listen for user selections of alternative strings.
 

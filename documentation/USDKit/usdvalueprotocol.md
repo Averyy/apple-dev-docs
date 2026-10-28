@@ -20,7 +20,7 @@ A type that can be wrapped in a [`USDValue`](./usdvalue.md).
 protocol USDValueProtocol
 ```
 
-#### Overview
+## Overview
 
 Types that conform to this protocol can be stored in and retrieved from a [`USDValue`](./usdvalue.md).
 

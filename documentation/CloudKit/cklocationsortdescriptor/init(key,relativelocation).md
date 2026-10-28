@@ -25,7 +25,7 @@ init(key: String, relativeLocation: CLLocation)
 - (instancetype) initWithKey:(NSString *) key relativeLocation:(CLLocation *) relativeLocation;
 ```
 
-#### Discussion
+## Discussion
 
 During sorting, the sort descriptor computes the distance between the value in the `relativeLocation` parameter and the location value in the specified key of each record. It then sorts the records in ascending order using the distance between the two points. You can’t change the sort order.
 

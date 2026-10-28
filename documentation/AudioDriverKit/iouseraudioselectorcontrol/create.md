@@ -15,11 +15,11 @@ Allocates and initializes an instance of the selector control class.
 static OSSharedPtr<IOUserAudioSelectorControl> Create(IOUserAudioDriver *in_driver, bool in_is_settable, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioSelectorControl`](../iouseraudioselectorcontrol.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioSelectorControl`](../iouseraudioselectorcontrol.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 

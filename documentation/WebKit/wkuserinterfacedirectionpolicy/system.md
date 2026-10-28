@@ -19,7 +19,7 @@ case system
 WKUserInterfaceDirectionPolicySystem
 ```
 
-#### Discussion
+## Discussion
 
 The web view adheres to the direction in its [`userInterfaceLayoutDirection`](../../AppKit/nsview/userinterfacelayoutdirection.md) property.
 

@@ -18,7 +18,7 @@ The unique identifier for this device.
 let id: String
 ```
 
-#### Discussion
+## Discussion
 
 Use a stable, locally unique identifier for this device, such as a serial number hardware address, or persistent device name. The identifier must be consistent across app launches for the same device.
 

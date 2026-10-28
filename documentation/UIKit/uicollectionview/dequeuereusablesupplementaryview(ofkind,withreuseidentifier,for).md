@@ -23,11 +23,11 @@ func dequeueReusableSupplementaryView(ofKind elementKind: String, withReuseIdent
 - (UICollectionReusableView *) dequeueReusableSupplementaryViewOfKind:(NSString *) elementKind withReuseIdentifier:(NSString *) identifier forIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`UICollectionReusableView`](../uicollectionreusableview.md) object.
 
-#### Discussion
+## Discussion
 
 Call this method from your data source object when asked to provide a new supplementary view for the collection view. This method dequeues an existing view if one is available or creates a new one based on the class or nib file you previously registered.
 

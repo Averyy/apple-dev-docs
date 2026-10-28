@@ -19,7 +19,7 @@ var startingItemNumber: Int { get set }
 @property NSInteger startingItemNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. This value will be used only for ordered lists, and ignored in other cases.
 

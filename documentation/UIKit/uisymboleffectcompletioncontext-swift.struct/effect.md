@@ -20,7 +20,7 @@ The symbol effect that completed.
 var effect: any SymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 For a symbol effect completion, this property may not be the same instance as the original effect.
 

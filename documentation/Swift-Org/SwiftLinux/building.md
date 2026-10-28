@@ -10,15 +10,15 @@ framework: "Swift-Org/SwiftLinux"
 
 Assemble your server applications using Swift Package Manager.
 
-#### Overview
+## Overview
 
 Use [Swift Package Manager](https://www.swift.org/documentation/package-manager/) to build server applications. It provides a cross-platform foundation for building Swift code. You can build using the command line or through an integrated development environment such as Xcode or Visual Studio Code.
 
-#### Choose a build configuration
+## Choose a build configuration
 
 Swift Package Manager supports two distinct build configurations, each optimized for different stages of your development workflow. The configurations are `debug`, which you use during active development, and `release`, which you use when profiling or creating production artifacts.
 
-##### Use debug builds during development
+### Use debug builds during development
 
 When you run `swift build` without additional flags, Swift Package Manager creates a debug build:
 
@@ -28,7 +28,7 @@ swift build
 
 Debug builds include full debugging symbols and runtime safety checks, which are essential during active development. The compiler skips most optimizations to keep compilation times fast and preserve maximum debugging information. This lets you quickly test changes and debug your app using `lldb` and breakpoints. However, skipping optimizations can come at a significant cost to runtime performance. Debug builds typically run more slowly than their release counterparts.
 
-##### Create release builds for production
+### Create release builds for production
 
 For production deployments, use the release configuration by adding the `-c release` flag:
 
@@ -38,11 +38,11 @@ swift build -c release
 
 The release configuration turns on all compiler optimizations. The trade-off is longer compilation times because the optimizer performs extensive analysis and transformations. Release builds still include some debugging information for crash analysis, but omit development-only checks and assertions.
 
-#### Optimize your builds
+## Optimize your builds
 
 Beyond choosing debug or release mode, several compiler flags can fine-tune your builds for specific scenarios.
 
-##### Build specific products
+### Build specific products
 
 If your package defines multiple executables or library products, Swift Package Manager builds everything declared in the package by default. Build only what you need using the `--product` flag:
 
@@ -52,7 +52,7 @@ swift build --product MyAPIServer
 
 Building a specific product is useful in monorepo setups or packages with multiple deployment targets. It avoids compiling tools or test utilities you don’t need for a given deployment.
 
-##### Enable cross-module optimization
+### Enable cross-module optimization
 
 Swift supports cross-module optimization, which lets the compiler optimize code across module boundaries:
 
@@ -64,7 +64,7 @@ The `-Xswiftc` flag passes options to the Swift compiler. `-cross-module-optimiz
 
 For code that frequently calls small functions across module boundaries, this can yield meaningful performance improvements. However, results vary by project because optimizations are specific to your code. Always benchmark your specific workload with and without this flag before deploying to production.
 
-##### Choose static or dynamic linking for the standard library
+### Choose static or dynamic linking for the standard library
 
 By default, Swift build artifacts link the standard library dynamically. This keeps individual build artifacts smaller, and multiple programs can share a single copy of the Swift runtime. However, dynamic linking requires the Swift runtime to be installed on your deployment target.
 
@@ -86,11 +86,11 @@ For deploying to VMs or bare metal where you don’t control the system configur
 
 > **Note**: This technique doesn’t apply to Apple platforms.
 
-#### Preserve debug information for symbolication
+## Preserve debug information for symbolication
 
 Release builds optimize for performance and don’t embed DWARF debug information by default. Without DWARF, a crashing binary’s stack trace reports raw addresses instead of function names, files, and line numbers. You have two ways to keep symbolication working: embed the debug information in the binary, or split it into a sidecar file you ship separately.
 
-##### Split debug information into a sidecar file
+### Split debug information into a sidecar file
 
 For a smaller deployable artifact, separate the debug information into its own file and strip the original binary. This is the layout Linux distributions use for `-debuginfo` and `-dbgsym` packages.
 
@@ -111,7 +111,7 @@ You now have two artifacts: a small, stripped `MyServer` to ship in your contain
 
 For additional examples of this kind of process, review the [backtracing scripts](https://github.com/swiftlang/swift/blob/main/test/Backtracing/Inputs/) in the Swift GitHub repository.
 
-##### Verify build IDs match
+### Verify build IDs match
 
 A sidecar is only useful if it shares a build ID with the binary it describes. The linker writes the build ID into a `.note.gnu.build-id` section that survives stripping, and symbolicators use it to pair the two files.
 
@@ -124,13 +124,13 @@ readelf -n MyServer.debug | grep 'Build ID'
 
 Both commands print the same hexadecimal value when the files match. A mismatch means the binary and sidecar came from different builds; in that case, the sidecar can’t symbolicate the binary, and you need to rebuild both together.
 
-#### Build for another platform
+## Build for another platform
 
 Swift build artifacts are both platform- and architecture-specific. Artifacts you create on macOS run only on macOS; those you create on Linux run only on Linux. This creates a challenge when you work on macOS and deploy to Linux servers.
 
 You can use Xcode for development, but it can’t produce Linux artifacts for deployment. Swift provides two main approaches for cross-platform building.
 
-##### Build with Linux containers
+### Build with Linux containers
 
 On macOS, you can use [Apple’s container tool](https://github.com/apple/container) or the Docker CLI to verify your project builds under Linux. Apple publishes official Swift Docker images to [Docker Hub](https://hub.docker.com/_/swift), which provide complete Linux build environments.
 
@@ -174,11 +174,11 @@ To build your code into a container, you typically use a container declaration �
 
 For more information on packaging your application or service, see [Packaging Swift services with containers](./packaging.md).
 
-##### Build with a VS Code Dev Container
+### Build with a VS Code Dev Container
 
 Visual Studio Code supports the Dev Container feature, which lets you open, build, and debug your project within a container running on your local machine. The Dev Container builds your code in the Linux environment that the container provides. For more information on using a Dev Container, read [Visual Studio Code Dev Containers](https://docs.swift.org/vscode/documentation/userdocs/remote-dev/).
 
-##### Cross-compile with the Static Linux SDK
+### Cross-compile with the Static Linux SDK
 
 If the performance overhead of Docker-based builds affects your workflow, Swift 5.9 and later provide Static Linux SDKs. Find the link to install the static Linux SDK on the [install page at Swift.org](https://www.swift.org/install/); for detailed instructions, see [Getting Started with the Static Linux SDK](https://www.swift.org/documentation/articles/static-linux-getting-started.html). The SDK enables cross-compilation directly from macOS to Linux without using a container:
 
@@ -196,7 +196,7 @@ Cross-compilation runs natively on your Mac’s architecture without emulation, 
 
 For most projects, this distinction doesn’t matter. However, packages with complex C dependencies can behave differently when built natively on Linux versus cross-compiled.
 
-#### Locate your build artifacts
+## Locate your build artifacts
 
 After compiling, locate your build artifacts. Swift Package Manager places them in directories that vary by platform and architecture:
 

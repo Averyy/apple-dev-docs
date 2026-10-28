@@ -25,11 +25,11 @@ convenience init(charactersNoCopy characters: UnsafeMutablePointer<unichar>, len
 - (instancetype) initWithCharactersNoCopy:(unichar *) characters length:(NSUInteger) length freeWhenDone:(BOOL) freeBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSString` object that contains `length` characters from `characters`. The returned object may be different from the original receiver.
 
-#### Discussion
+## Discussion
 
 If an error occurs during the creation of the string, then `bytes` is not freed even if `flag` is [`true`](../../Swift/true.md). In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
 

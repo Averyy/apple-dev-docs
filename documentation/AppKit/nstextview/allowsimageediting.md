@@ -19,7 +19,7 @@ var allowsImageEditing: Bool { get set }
 @property BOOL allowsImageEditing;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if image editing is allowed; otherwise, [`false`](../../Swift/false.md).
 

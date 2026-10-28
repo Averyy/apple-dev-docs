@@ -23,7 +23,7 @@ case handleInApp
 INAddMediaIntentResponseCodeHandleInApp
 ```
 
-#### Discussion
+## Discussion
 
 Because the lifespan of an app extension is short, adding media should happen in your app, not in the Intents app extension. To handle adding media in your app while in the background, return [`INAddMediaIntentResponseCode.handleInApp`](./handleinapp.md) as the response [`code`](../inaddmediaintentresponse/code.md).
 

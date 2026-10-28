@@ -24,7 +24,7 @@ var fillColor: CGColor? { get set }
 @property (nullable) CGColorRef fillColor;
 ```
 
-#### Discussion
+## Discussion
 
 Setting `fillColor` to `nil` results in no fill being rendered.
 

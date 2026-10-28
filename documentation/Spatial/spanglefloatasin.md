@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatAsin(float x);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse sine of the specified value.
 
-#### Discussion
+## Discussion
 
 Returns the inverse sine of the specified value.
 

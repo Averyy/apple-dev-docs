@@ -15,7 +15,7 @@ A flag indicating native-endian packed floating-point values.
 FormatFlagsNativeFloatPacked
 ```
 
-#### Discussion
+## Discussion
 
 This convienence flag set the [`FormatFlagIsFloat`](./formatflagisfloat.md), [`FormatFlagsNativeEndian`](./formatflagsnativeendian.md), and [`FormatFlagIsPacked`](./formatflagispacked.md) flags.
 

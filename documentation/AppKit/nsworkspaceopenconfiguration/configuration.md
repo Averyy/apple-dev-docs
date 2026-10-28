@@ -15,7 +15,7 @@ Creates and returns a new workspace configuration object containing default valu
 + (instancetype) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A new workspace configuration object with default values.
 

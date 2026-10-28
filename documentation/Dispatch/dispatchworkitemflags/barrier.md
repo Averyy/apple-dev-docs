@@ -21,7 +21,7 @@ Cause the work item to act as a barrier block when submitted to a concurrent que
 static let barrier: DispatchWorkItemFlags
 ```
 
-#### Discussion
+## Discussion
 
 When submitted to a concurrent queue, a work item with this flag acts as a barrier. Work items submitted prior to the barrier execute to completion, at which point the barrier work item executes. Once the barrier work item finishes, the queue returns to scheduling work items that were submitted after the barrier.
 

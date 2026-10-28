@@ -19,7 +19,7 @@ class var minimumAllowedMemorySize: UInt64 { get }
 @property (class, readonly) uint64_t minimumAllowedMemorySize;
 ```
 
-#### Discussion
+## Discussion
 
 The value in the [`memorySize`](./memorysize.md) property must be greater than or equal to the value in this property.
 

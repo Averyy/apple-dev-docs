@@ -12,7 +12,7 @@ virtual IOOptionBits getState(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 State bits for the IOService, eg. `kIOServiceInactiveState`, `kIOServiceRegisteredState`.
 

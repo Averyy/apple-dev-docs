@@ -17,7 +17,7 @@ Filters data for the children in the current user’s iCloud family.
 static let children: DeviceActivityFilter.Users
 ```
 
-#### Discussion
+## Discussion
 
 Only parents and guardians in an iCloud family that are actively managing children via the `FamilyControls` framework have permission to report a child’s device activity data.
 

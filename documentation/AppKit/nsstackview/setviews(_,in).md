@@ -19,7 +19,7 @@ func setViews(_ views: [NSView], in gravity: NSStackView.Gravity)
 - (void) setViews:(NSArray<NSView *> *) views inGravity:(NSStackViewGravity) gravity;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method updates the stack view’s layout, which can change the stack view size. As a result, views could detach or clip according to the clipping resistance of the stack view and the visibility priorities of its views.
 

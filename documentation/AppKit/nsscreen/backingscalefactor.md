@@ -19,7 +19,7 @@ var backingScaleFactor: CGFloat { get }
 @property (readonly) CGFloat backingScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 This is the scale factor representing the number of backing store pixels corresponding to each linear unit in screen space on this screen.
 

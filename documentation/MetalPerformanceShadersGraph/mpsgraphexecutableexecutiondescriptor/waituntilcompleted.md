@@ -24,7 +24,7 @@ var waitUntilCompleted: Bool { get set }
 @property (atomic, readwrite) BOOL waitUntilCompleted;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is false.
 

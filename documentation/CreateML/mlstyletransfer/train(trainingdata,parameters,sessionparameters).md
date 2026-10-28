@@ -19,7 +19,7 @@ Begins an asynchronous style transfer model-training session.
 static func train(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.ModelParameters = .init(), sessionParameters: MLTrainingSessionParameters = .init()) throws -> MLJob<MLStyleTransfer>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the style transfer model-training session.
 

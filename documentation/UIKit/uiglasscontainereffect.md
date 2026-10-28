@@ -23,7 +23,7 @@ class UIGlassContainerEffect
 @interface UIGlassContainerEffect : UIVisualEffect
 ```
 
-#### Overview
+## Overview
 
 When using `UIGlassContainerEffect` with a `UIVisualEffectView` you can add individual glass elements to the visual effect view’s contentView by nesting `UIVisualEffectView`‘s configured with `UIGlassEffect`. In that configuration, the glass container will render all glass elements in one combined view, behind the visual effect view’s `contentView`.
 

@@ -18,7 +18,7 @@ Information about a person’s age range based on their response to an age range
 struct AgeRange
 ```
 
-#### Overview
+## Overview
 
 This structure provides the minimum information necessary for you to make content decisions while protecting the person’s privacy. The `requestAgeRange(ageGates:_:_:in:)` methods (for example, [`requestAgeRange(ageGates:_:_:in:)`](./requestagerange%28agegates,_,_,in%29-2go8c.md)) return a response that contains an instance of this structure. Rather than model an exact age, the structure contains a range bounded by the age-gate method parameters.
 

@@ -15,11 +15,11 @@ Gets the floating-point stereo pan value of the control.
 float GetControlValue();
 ```
 
-#### Return Value
+## Return Value
 
 The floating-point stereo pan value of the control.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

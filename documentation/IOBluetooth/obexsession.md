@@ -19,7 +19,7 @@ class OBEXSession
 @interface OBEXSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 You will have no need for a obtaining/using a raw OBEXSession, since it requires an underlying transport to do anything useful. However, once you have an object that is a subclass of this class, you can use the functions herein to manipulate that OBEXSession. First off, you will want to use OBEXConnect (if you are a client session) to actually cause the transport to open a connection to a remote target and establish an OBEX connection over it. From there you can issue more commands based on the responses from a server.
 

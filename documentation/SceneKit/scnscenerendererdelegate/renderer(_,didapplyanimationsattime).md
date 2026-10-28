@@ -25,7 +25,7 @@ optional func renderer(_ renderer: any SCNSceneRenderer, didApplyAnimationsAtTim
 - (void) renderer:(id<SCNSceneRenderer>) renderer didApplyAnimationsAtTime:(NSTimeInterval) time;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit calls this method exactly once per frame, so long as the [`SCNView`](../scnview.md) object (or other [`SCNSceneRenderer`](../scnscenerenderer.md) object) displaying the scene is not paused.
 

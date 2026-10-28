@@ -14,13 +14,13 @@ The default command type to run if no subcommand is given.
 ## Declaration
 
 ```swift
-var defaultSubcommand: (any ParsableCommand.Type)?
+var defaultSubcommand: ParsableCommand.Type?
 ```
 
 ## See Also
 
 ### Declaring Subcommands
-- [var subcommands: [any ParsableCommand.Type]](./subcommands.md)
+- [var subcommands: [ParsableCommand.Type]](./subcommands.md)
   An array of the types that define subcommands for this command.
 
 

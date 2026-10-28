@@ -22,7 +22,7 @@ nonisolated
 func accessibilityAction(_ actionKind: AccessibilityActionKind = .default, _ handler: @escaping () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how a `.default` action to compose a new email could be added to a view.
 

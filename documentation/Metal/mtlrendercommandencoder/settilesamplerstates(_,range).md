@@ -20,7 +20,7 @@ Assigns multiple sampler states to a range of entries in the tile shader argumen
 func setTileSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the sampler state at each index is `nil`.
 

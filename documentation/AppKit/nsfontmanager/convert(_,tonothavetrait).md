@@ -19,7 +19,7 @@ func convert(_ fontObj: NSFont, toNotHaveTrait trait: NSFontTraitMask) -> NSFont
 - (NSFont *) convertFont:(NSFont *) fontObj toNotHaveTrait:(NSFontTraitMask) trait;
 ```
 
-#### Return Value
+## Return Value
 
 A font with matching traits minus the given traits, or `aFont` if it can’t be converted.
 

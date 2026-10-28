@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a baremetal Swift MMIO program that blinks the Raspberry Pi 4B’s status LED, with no SDK or operating system.
 
-#### Overview
+## Overview
 
 This example demonstrates how to build a baremetal Embedded Swift kernel image for the Raspberry Pi 4B using Swift MMIO for type-safe register access, without depending on an SDK. The Swift code toggles the board’s green (ACT) status LED, which is wired to GPIO42 through the BCM2711’s GPIO controller.
 
@@ -46,15 +46,15 @@ struct Application {
 
 > **Note**: This is a baremetal example — there’s no SDK or operating system involved. See [Using Embedded Swift in baremetal mode](./baremetal.md) for general guidance on baremetal Embedded Swift development.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Prepare an SD card
+## Prepare an SD card
 
 Prepare an SD card with a Raspberry Pi OS install on it, so the required boot partition and configuration files already exist. Back up `kernel8.img` and `config.txt` from the SD card if you need the Linux install later, since this example replaces `kernel8.img`.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory and build it:
 
@@ -65,7 +65,7 @@ $ make
 
 This produces `.build/aarch64-none-none-elf/release/Application.bin`, the raw kernel image extracted from the built ELF executable.
 
-#### Run on a device
+## Run on a device
 
 Copy the kernel image to the SD card’s boot partition, replacing the existing `kernel8.img`:
 

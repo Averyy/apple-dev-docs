@@ -16,7 +16,7 @@ Errors that occur when transferring a temporary home to a person’s home hub.
 enum ProvisionalHomeTransferError
 ```
 
-#### Overview
+## Overview
 
 This error type indicates that HomeKit was unable to attempt or complete a transfer, and HomeKit didn’t transfer any accessories to the home hub. To view information about partially successful transfers and error information for an individual accessory, use [`HMHome.ProvisionalHomeTransferResult`](./provisionalhometransferresult.md).
 

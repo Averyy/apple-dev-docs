@@ -23,7 +23,7 @@ var billingAgreement: String? { get set }
 @property (nonatomic, copy, nullable) NSString * billingAgreement;
 ```
 
-#### Discussion
+## Discussion
 
 The merchant may provide an optional, localized [`billingAgreement`](./billingagreement.md) string. The maximum length of the [`billingAgreement`](./billingagreement.md) string is 500 characters.
 

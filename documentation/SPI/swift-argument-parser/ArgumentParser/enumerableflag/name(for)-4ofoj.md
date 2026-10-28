@@ -9,17 +9,13 @@ framework: "swift-argument-parser/ArgumentParser"
 **Kind**: method  
 **Role**: Type Method
 
-Returns the name specification to use for the given flag.
+Inherited from `EnumerableFlag.name(for:)`.
 
 ## Declaration
 
 ```swift
 static func name(for value: Self) -> NameSpecification
 ```
-
-#### Discussion
-
-The default implementation for this method always returns `.long`. Implement this method for your custom `EnumerableFlag` type to provide different name specifications for different cases.
 
 
 ---

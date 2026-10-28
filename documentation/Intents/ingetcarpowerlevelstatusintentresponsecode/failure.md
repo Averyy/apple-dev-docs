@@ -23,7 +23,7 @@ case failure
 INGetCarPowerLevelStatusIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from getting the car’s power levels.
 

@@ -22,7 +22,7 @@ Returns a span over the next group of elements that are ready to by visited, up 
 mutating func nextSpan(maxCount: Int) -> Span<Element>
 ```
 
-#### Discussion
+## Discussion
 
 If the underlying type stores its elements in one or more blocks of contiguous memory, then the returned span typically directly addresses one of those buffers. On the other hand, if the underlying type materializes its elements on demand, then the returned span addresses a temporary buffer managed by the iterator itself. Consequently, the returned span is tied to this particular invocation of `nextSpan`, and it cannot survive beyond the next invocation of this method.
 

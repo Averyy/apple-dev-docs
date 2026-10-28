@@ -20,7 +20,7 @@ Creates a recommended configuration for a widget on platforms that don’t offer
 init(intent: T, description: LocalizedStringResource)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: On platforms that offer a dedicated user interface for configuring widgets — for example, iOS or macOS — `IntentRecommendation` is inactive.
 

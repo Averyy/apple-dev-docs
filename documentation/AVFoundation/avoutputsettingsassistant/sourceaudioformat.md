@@ -24,7 +24,7 @@ var sourceAudioFormat: CMAudioFormatDescription? { get set }
 @property (nonatomic, retain, nullable) CMAudioFormatDescriptionRef sourceAudioFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means the assistant doesn’t know the audio format. Setting a value for this property helps the assistant generate more complete audio settings. After setting a value, requery the [`audioSettings`](./audiosettings.md) property to get the latest values.
 

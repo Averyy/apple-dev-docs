@@ -24,7 +24,7 @@ var label: String { get set }
 @property (nonatomic, copy) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Provide the label in title case—for example, VAT Tax, Gift Wrap and Card, or Discount.
 

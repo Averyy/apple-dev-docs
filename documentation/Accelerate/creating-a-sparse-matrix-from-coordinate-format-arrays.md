@@ -5,11 +5,11 @@
 
 Use separate coordinate format arrays to create sparse matrices.
 
-#### Overview
+## Overview
 
 In some cases — for example, if you’re reading matrix values from a file — you may find it easier to create sparse matrix objects from coordinate format arrays. This approach requires three separate arrays: one that contains the column indexes, a second that contains the row indexes, and a third that contains the matrix values. Each array contains the same number of elements.
 
-##### Create the sparse matrix
+### Create the sparse matrix
 
 The following is an example of a symmetric sparse matrix:
 
@@ -80,7 +80,7 @@ SparseMatrix_Double A = SparseConvertFromCoordinate(4, 4,
                                                     values);
 ```
 
-##### Manage invalid and duplicate entries
+### Manage invalid and duplicate entries
 
 The system ignores the block element and doesn’t include it in the returned matrix if the coordinates `(row[i], column[i])` are invalid, meaning either of the following is true:
 
@@ -93,7 +93,7 @@ The system sums elements with duplicate coordinates and replaces them with a sin
 
 The coordinate-conversion functions support block matrices, that is, those with a `blockSize` greater than 1. The described matrix has `rowCount * blockSize` rows and `columnCount * blockSize` columns. For each `i in 0..<blockCount`, there’s a structurally nonzero block at block position `(row[i], column[i])` with numerical values `data[i * blockSize * blockSize:(i + 1) * blockSize * blockSize - 1]`. The system interprets the block’s values as the elements of a dense column-major matrix with `blockSize` rows and columns.
 
-##### Supply a user-defined workspace
+### Supply a user-defined workspace
 
 There are two variants of each converter. The following functions allocate their own workspace internally and allocate space for the matrices that they return.
 

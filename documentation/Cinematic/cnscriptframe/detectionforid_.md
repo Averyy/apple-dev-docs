@@ -19,7 +19,7 @@ The detection in the frame with the given detection ID, if any.
 - (CNDetection *) detectionForID:(CNDetectionID) detectionID;
 ```
 
-#### Return Value
+## Return Value
 
 A detection for the frame with the given detection ID.
 

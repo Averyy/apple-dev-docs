@@ -25,7 +25,7 @@ class INGetVisualCodeIntentResponse
 @interface INGetVisualCodeIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INGetVisualCodeIntentResponse`](./ingetvisualcodeintentresponse.md) object to provide the visual code to display. When handling the intent, provide an image with the requested visual code. Siri communicates the details back to the user at appropriate times.
 

@@ -16,7 +16,7 @@ The extension can’t run because the feature isn’t available.
 case featureNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 This can occur if the feature is unavailable on the current platform.
 

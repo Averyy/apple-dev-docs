@@ -25,11 +25,11 @@ func mutableArrayValue(forKey key: String) -> NSMutableArray
 - (NSMutableArray *) mutableArrayValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable array proxy that provides read-write access to the ordered to-many relationship specified by `key`.
 
-#### Discussion
+## Discussion
 
 Objects added to the mutable array become related to the receiver, and objects removed from the mutable array become unrelated. The default implementation recognizes the same simple accessor methods and array accessor methods as [`value(forKey:)`](./value%28forkey%29.md), and follows the same direct instance variable access policies, but always returns a mutable collection proxy object instead of the immutable collection that [`value(forKey:)`](./value%28forkey%29.md) would return.
 

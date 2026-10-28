@@ -25,11 +25,11 @@ func CTTypesetterCreateLineWithOffset(_ typesetter: CTTypesetter, _ stringRange:
 extern CTLineRefCTTypesetterCreateLineWithOffset(CTTypesetterRef typesetter, CFRange stringRange, double offset);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a CTLine object if the call was successful; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 The resultant line consists of glyphs in the correct visual order, ready to draw.
 

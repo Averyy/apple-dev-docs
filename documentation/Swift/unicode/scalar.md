@@ -22,7 +22,7 @@ A Unicode scalar value.
 struct Scalar
 ```
 
-#### Overview
+## Overview
 
 The `Unicode.Scalar` type, representing a single Unicode scalar value, is the element type of a string’s `unicodeScalars` collection.
 

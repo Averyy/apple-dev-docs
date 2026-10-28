@@ -22,7 +22,7 @@ A horizontal row in a two dimensional grid container.
 nonisolated struct GridRow<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Use one or more `GridRow` instances to define the rows of a [`Grid`](./grid.md) container. The child views inside the row define successive grid cells. You can add rows to the grid explicitly, or use the [`ForEach`](./foreach.md) structure to generate multiple rows. Similarly, you can add cells to the row explicitly or you can use [`ForEach`](./foreach.md) to generate multiple cells inside the row. The following example mixes these strategies:
 

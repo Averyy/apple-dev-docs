@@ -5,7 +5,7 @@
 
 Allow people to transfer browsing history, bookmarks, reading lists, and browser extensions to or from your app using a system-provided sheet.
 
-#### Overview
+## Overview
 
 When someone wants to transfer data from your browser to another browser on their device, your app can present a BrowserKit *browsing data transfer sheet* that walks them through the process. In the sheet, they can choose a destination browser to which to export data. The sheet also supports importing data to your app; the person chooses the source browser from which to import data. In the sheet, the person also selects the type of data they want to transfer, including page visit history, bookmarks, reading list items, and browser extensions.
 
@@ -17,7 +17,7 @@ When a person chooses your app in the sheet as the source browser for a data exp
 
 > ❗ **Important**: To use the browser-to-browser data transfer API, your app needs to meet the criteria. For more information, see [Preparing your app to be the default web browser](../Xcode/preparing-your-app-to-be-the-default-browser.md).
 
-#### Initiate a browsing-data export
+## Initiate a browsing-data export
 
 To export data in response to someone’s request in your app, make information available to the transfer sheet. To begin, prepare high-level information about what data is available by configuring an [`BEExportMetadata`](./beexportmetadata.md) instance. Also, create a [`BEBrowserDataExportManager`](./bebrowserdataexportmanager.md) object and provide it with the window that displays your app’s view hierarchy.
 
@@ -142,7 +142,7 @@ if exportOptions.dataTypes.contains(.extensions) {
 } //...
 ```
 
-#### Initiate a browsing-data import
+## Initiate a browsing-data import
 
 Use the BrowserKit sheet to import data in response to someone’s request in your app’s user interface. Prepare high-level information about the data transfer methods you support by providing a [`BEImportMetadata`](./beimportmetadata.md) instance. First create a [`BEBrowserDataImportManager`](./bebrowserdataimportmanager.md) object and pass in a reference to your app’s window scene ([`UIWindowScene`](../UIKit/uiwindowscene.md)).
 
@@ -165,7 +165,7 @@ The call triggers the system to present the sheet, which displays a list of avai
 - If [`importFromFiles`](./beimportoptions/importfromfiles.md) is `true`, the person chooses to import from files. In this case, the system doesn’t establish a browser-to-browser data exchange. Prompt the person to select browsing data files from disk using a custom import process of your choosing.
 - If [`importFromFiles`](./beimportoptions/importfromfiles.md) is `false`, the system launches the source browser with the `BEBrowserDataExchangeExportActivity` activity to export the browser’s data. When the source browser finishes exporting the data, the system launches your app with the `BEBrowserDataExchangeImportActivity` activity to import the data.
 
-#### Indicate support for and respond to data transfers
+## Indicate support for and respond to data transfers
 
 The data transfer sheet includes browsers that support transfer requests. To indicate support, use [`NSUserActivity`](../Foundation/nsuseractivity.md) by including the following strings in your app’s [`NSUserActivityTypes`](../BundleResources/information-property-list/nsuseractivitytypes.md) target property:
 
@@ -192,7 +192,7 @@ struct AppView: View {
             // Respond to the launch request to export data.
 ```
 
-#### Provide a required token to validate the transfer
+## Provide a required token to validate the transfer
 
 To ensure a one-to-one data transfer between the initiating and responding browsers, the system generates a unique token to track the request. Retrieve the token from the activity’s [`userInfo`](../Foundation/nsuseractivity/userinfo.md) dictionary and provide it to the system at the time of the data exchange. Pass the  [`importTokenUserInfoKey`](./bebrowserdataimportmanager/importtokenuserinfokey-3bqve.md) user info key to indicate an import, and [`exportTokenUserInfoKey`](./bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md) user info key to indicate an export, as shown below:
 
@@ -234,7 +234,7 @@ struct AppView: View {
 }
 ```
 
-#### Receive imported data in a launch activity
+## Receive imported data in a launch activity
 
 When your app is the data recipient — the destination browser — in all cases, your app receives the actual browsing data within the import launch activity. In your handler, begin receiving the data as a stream by calling [`importBrowserData(token:)`](./bebrowserdataimportmanager/importbrowserdata%28token%29.md). Pass the retrieved token as an argument and process each imported item according to its type:
 
@@ -312,7 +312,7 @@ func importExtension(_ extension: BEBrowserDataExtension) async {
 }
 ```
 
-#### Export data in a launch activity
+## Export data in a launch activity
 
 When someone initiates an import of browsing data from a browser into your browser, the system launches your browser with the `BEBrowserDataExchangeExportActivity` activity (the [`BEBrowserDataExportManager`](./bebrowserdataexportmanager.md) class’s [`userActivityType`](./bebrowserdataexportmanager/useractivitytype-4ar5j.md)). In your activity handler, raise the data transfer sheet to allow the person to select the types of data to export. Then, you export the data by calling [`exportBrowserData(_:)`](./bebrowserdataexportmanager/exportbrowserdata%28_%29.md) in the same way as when your app initiates an export.
 

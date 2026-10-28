@@ -16,7 +16,7 @@ Obtains the queue depth for this IOHIDDeviceQueueInterface instance.
 IOReturn (*getDepth)(void *self, uint32_t *pDepth);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 

@@ -25,11 +25,11 @@ func CGImageMetadataCopyTagWithPath(_ metadata: CGImageMetadata, _ parent: CGIma
 extern CGImageMetadataTagRefCGImageMetadataCopyTagWithPath(CGImageMetadataRef metadata, CGImageMetadataTagRef parent, CFStringRef path);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the [`CGImageMetadataTag`](./cgimagemetadatatag.md) object at the specified path, or `NULL` if the tag wasn’t found.
 
-#### Discussion
+## Discussion
 
 If you specify a valid tag in the `parent` parameter, you may omit the parent’s path information from the `path` parameter. For example, to access the `RedEyeMode` field, specify the [`CGImageMetadataTag`](./cgimagemetadatatag.md) object for the `Flash` parent property, and specify `“RedEyeMode”` for the path string.
 

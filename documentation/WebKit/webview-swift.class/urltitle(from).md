@@ -21,7 +21,7 @@ class func urlTitle(from pasteboard: NSPasteboard!) -> String!
 + (NSString *) URLTitleFromPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the URL on `pasteboard`. Returns `nil` if there’s no URL on `pasteboard` or the URL has no title.
 

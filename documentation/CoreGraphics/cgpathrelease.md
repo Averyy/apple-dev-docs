@@ -21,7 +21,7 @@ Decrements the retain count of a graphics path.
 extern void CGPathRelease(CGPathRef path);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `path` parameter is `NULL`.
 

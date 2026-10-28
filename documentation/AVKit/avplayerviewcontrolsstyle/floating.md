@@ -19,7 +19,7 @@ case floating
 AVPlayerViewControlsStyleFloating
 ```
 
-#### Discussion
+## Discussion
 
 This style matches the look of QuickTime Player’s playback controls.
 

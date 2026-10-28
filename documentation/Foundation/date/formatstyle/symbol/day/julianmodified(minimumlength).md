@@ -21,7 +21,7 @@ Creates a custom day format style representing the modified Julian day.
 static func julianModified(minimumLength: Int = 1) -> Date.FormatStyle.Symbol.Day
 ```
 
-#### Return Value
+## Return Value
 
 The minimum length specifies the minimum number of digits, zero-padded if necessary. For example, `002451334`.
 

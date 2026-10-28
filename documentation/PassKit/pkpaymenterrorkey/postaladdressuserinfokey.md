@@ -24,7 +24,7 @@ static let postalAddressUserInfoKey: PKPaymentErrorKey
 extern PKPaymentErrorKey const PKPaymentErrorPostalAddressUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 See [`CNPostalAddress`](../../Contacts/cnpostaladdress.md) for the values that can be used with this key. These values point to the specific area of the address that is at fault, for example, [`CNPostalAddressStreetKey`](../../Contacts/cnpostaladdressstreetkey.md) indicates the street. When you supply the key values in a payment error, the Apple Pay sheet highlights the appropriate field, enabling the user to correct errors.
 

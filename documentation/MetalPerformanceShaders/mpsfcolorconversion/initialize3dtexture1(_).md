@@ -22,7 +22,7 @@ func initialize3DTexture1(_ tex: (any MTLTexture)?)
 - (void) initialize3DTexture1:(id<MTLTexture>) tex;
 ```
 
-#### Discussion
+## Discussion
 
 Overwrite tex3d_1 will the LUT data needed for the conversion
 

@@ -19,11 +19,11 @@ func writeSelection(to pboard: NSPasteboard, type: NSPasteboard.PasteboardType) 
 - (BOOL) writeSelectionToPasteboard:(NSPasteboard *) pboard type:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was successfully written, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The complete set of data types being written to `pboard` should be declared before invoking this method.
 

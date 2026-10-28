@@ -25,7 +25,7 @@ case publicUser
 CKShareParticipantRolePublicUser
 ```
 
-#### Discussion
+## Discussion
 
 A public user of a share is self-added when accessing the share URL.
 

@@ -16,11 +16,11 @@ Handles an asynchronous report received from the HID device.
 virtual kern_return_t handleReport(uint64_t timestamp, IOMemoryDescriptor *report, uint32_t reportLength, IOHIDReportType reportType, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The default implementation of this method parses the report data and notifies attached interfaces of any changes.
 

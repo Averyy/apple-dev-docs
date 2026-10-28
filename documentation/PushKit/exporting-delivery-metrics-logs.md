@@ -5,7 +5,7 @@
 
 Download and analyze push-notification metrics.
 
-#### Overview
+## Overview
 
 Use the CloudKit Console to export Apple Push Notification service (APNs) delivery metrics logs for your apps. To download the push notification metrics report, create a data export token, request data from iCloud Web Services, and download the results when the request completes. For more information about CloudKit and CloudKit Console, see [Build apps using CloudKit](https://developer.apple.com/icloud/cloudkit/).
 
@@ -17,7 +17,7 @@ The push-notification metrics report includes aggregated, rounded metrics on not
 >
 > [Learn more](https://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
-#### Create a data export token
+## Create a data export token
 
 To access log data for your apps, create a data export token by following these steps:
 
@@ -35,7 +35,7 @@ To access log data for your apps, create a data export token by following these 
 
 The token you create is restricted to your developer account, and only gives you access to the APNs data set for the specified app.
 
-#### Create a data export request
+## Create a data export request
 
 Make an HTTPS `POST` request to the data export request endpoint at:
 
@@ -91,7 +91,7 @@ You can request a download that covers the same date range as a previous downloa
 
 > **Note**:  The status URLs for all requests are available for 6 months after you make the request. Make sure you use the latest URLs for checking status and downloading reports.
 
-#### Check the status of your data export
+## Check the status of your data export
 
 Make an HTTPS `GET` request to the status URL, passing your data export token in the `X-Apple-CloudKit-Management-Token` header. The server responds with a JSON object that contains these fields:
 
@@ -128,7 +128,7 @@ The data export status endpoint might return the following HTTP status codes tha
 - **`404`**: The data export token is invalid.
 - **`500`**: An internal error occurred.
 
-#### Download the exported data
+## Download the exported data
 
 Make an HTTPS `GET` request to URL in the status object’s `downloadDetails.dataUrl` field to receive a CSV file that contains your exported data:
 

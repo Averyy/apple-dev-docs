@@ -29,7 +29,7 @@ func addAllocation(_ allocation: any MTLAllocation)
 
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Discussion
+## Discussion
 
 Finalize the inclusion of these resource allocations, and all other changes you stage, by calling a residency set’s [`commit()`](./commit%28%29.md) method.
 

@@ -23,7 +23,7 @@ var isDepth24Stencil8PixelFormatSupported: Bool { get }
 @property (readonly, getter=isDepth24Stencil8PixelFormatSupported) BOOL depth24Stencil8PixelFormatSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), the device supports the [`MTLPixelFormat.depth24Unorm_stencil8`](../mtlpixelformat/depth24unorm_stencil8.md) pixel format.
 

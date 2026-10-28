@@ -25,7 +25,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not reset the source or destination contexts.
 

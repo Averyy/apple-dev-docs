@@ -19,7 +19,7 @@ func requestSendMessage(_ messageCode: UInt32, outData data: Data, maxReturnedDa
 - (void) requestSendMessage:(unsigned int) messageCode outData:(NSData *) data maxReturnedDataSize:(unsigned int) maxReturnedDataSize sendMessageDelegate:(id) sendMessageDelegate didSendMessageSelector:(SEL) selector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send a private message from a client application to a device module.
 

@@ -5,13 +5,13 @@
 
 Learn how to create and use a digital identity in your application for local network TLS.
 
-#### Overview
+## Overview
 
 In the context of Transport Layer Security (TLS), a *digital identity* is a cryptographic asset that contains a certificate and an associated private key for encrypting network traffic sent between a client and a server. Creating a digital identity for iOS or macOS is done so clients can communicate using TLS over the internet or a local network.
 
 In this scenario, a server accepts client connections on a local network. While this article focuses on local network TLS, you can apply many of the concepts for other use cases. For example, setting up TLS with a certificate obtained from third-party Certificate Authority or configuring any system that needs to establish chain of trust to a root certificate.
 
-##### Prepare the Environment
+### Prepare the Environment
 
 Imagine you’re building an app to handle orders in a restaurant. This app runs on a server device  — like an iPad or Mac — located at the front desk. Out in the restaurant, customers create and send orders to the server to be processed by the server using iOS client devices. In this situation, the server uses a digital identity from a local certificate authority to provide TLS to the clients. The following article explains how to setup both the server and client devices for local network TLS.
 
@@ -25,7 +25,7 @@ An overview of how this would work can be described as follows:
 2. Distribute the identity to the server. On macOS, either create and use an identity on the same machine the server is running on, or securely distribute the PKCS#12 file to the device Keychain. On iOS, import the PKCS#12 file onto the server device. For example, you could load the PKCS#12 file onto a thumb drive and import it to the iOS server app and save it in the Keychain.
 3. On iOS client devices, install the root certificate onto the iOS device to form the chain of trust.
 
-##### Distribute the Identity to the Server
+### Distribute the Identity to the Server
 
 On iOS, the certificate authority owner is faced with the challenge of distributing the identity to the server. After transferring the identity on the server — either through thumb drive or through secure network transfer — save it to the Keychain. To save the identity in the iOS Keychain, use the following:
 
@@ -124,7 +124,7 @@ func getSecIdentity() -> SecIdentity? {
 
 After loading the identity on macOS, you can use the exact same `NWListener` code on iOS.
 
-##### Configure the Client Devices
+### Configure the Client Devices
 
 For clients that connect to the server, install the root certificate on the client device to avoid overriding trust evaluation. After installing the root certificate on the client device, the client connects to the server using a local network name. When connecting from the client side of the connection, use the following:
 

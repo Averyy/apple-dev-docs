@@ -24,7 +24,7 @@ class MTLIntersectionFunctionDescriptor
 @interface MTLIntersectionFunctionDescriptor : MTLFunctionDescriptor
 ```
 
-#### Overview
+## Overview
 
 This class doesn’t add any additional API over its parent class.
 

@@ -21,7 +21,7 @@ Encode a command to render a shallow depth of field (SDoF) image to a metal text
 func encodeRender(to commandBuffer: any MTLCommandBuffer, frameAttributes: CNRenderingSession.FrameAttributes, sourceImage: CVPixelBuffer, sourceDisparity: CVPixelBuffer, destinationRGBA: any MTLTexture) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether encoding the render command was successful
 

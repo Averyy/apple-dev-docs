@@ -18,7 +18,7 @@ The context in which the Home app launches your extension, including the selecte
 final class HomeContext
 ```
 
-#### Overview
+## Overview
 
 You access the context from the environment with `@Environment(\.homeContext)`. The context is available in the SwiftUI environment while the extension is running.
 

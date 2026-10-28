@@ -21,7 +21,7 @@ Returns the rotation around the origin from the first rectangle to the second re
 static SPRotation3D SPRect3DRotationToRect(SPRect3D rect, SPRect3D other);
 ```
 
-#### Return Value
+## Return Value
 
 The rotation between two rectangles.
 

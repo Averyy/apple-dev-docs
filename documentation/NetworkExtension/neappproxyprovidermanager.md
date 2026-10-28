@@ -27,7 +27,7 @@ class NEAppProxyProviderManager
 
 - [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
-#### Overview
+## Overview
 
 Objects cannot be directly instantiated. Instead, App Proxy configurations are created exclusively from `com.apple.vpn.managed.applayer` payloads in configuration profiles.
 

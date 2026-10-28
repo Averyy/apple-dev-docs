@@ -25,7 +25,7 @@ var allowsExpensiveNetworkAccess: Bool { get set }
 @property BOOL allowsExpensiveNetworkAccess;
 ```
 
-#### Discussion
+## Discussion
 
 The system determines what constitutes “expensive” based on the nature of the network interface and other factors. iOS 13 considers most cellular networks and personal hotspots expensive. If there are no nonexpensive network interfaces available and the session’s [`allowsExpensiveNetworkAccess`](./allowsexpensivenetworkaccess.md) property is [`false`](../../Swift/false.md), any task created from the session fails. In this case, the error provided when the task fails has a [`networkUnavailableReason`](../urlerror/networkunavailablereason-swift.property.md) property whose value is [`NSURLErrorNetworkUnavailableReasonExpensive`](../nsurlerrornetworkunavailablereason/nsurlerrornetworkunavailablereasonexpensive.md).
 

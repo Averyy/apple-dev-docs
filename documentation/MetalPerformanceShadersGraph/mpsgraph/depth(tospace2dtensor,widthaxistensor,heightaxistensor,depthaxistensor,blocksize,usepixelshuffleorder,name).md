@@ -24,11 +24,11 @@ func depth(toSpace2DTensor tensor: MPSGraphTensor, widthAxisTensor: MPSGraphTens
 - (MPSGraphTensor *) depthToSpace2DTensor:(MPSGraphTensor *) tensor widthAxisTensor:(MPSGraphTensor *) widthAxisTensor heightAxisTensor:(MPSGraphTensor *) heightAxisTensor depthAxisTensor:(MPSGraphTensor *) depthAxisTensor blockSize:(NSUInteger) blockSize usePixelShuffleOrder:(BOOL) usePixelShuffleOrder name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 This operation outputs a copy of the input tensor, where values from the `depthAxisTensor` dimension are moved in spatial blocks of size `blockSize` to the `heightAxisTensor` and `widthAxisTensor` dimensions.  Use the `usePixelShuffleOrder` parameter to control how the data within spatial blocks is ordered in the `depthAxisTensor` dimension: with `usePixelShuffleOrder = YES` MPSGraph stores the values of the spatial block contiguosly within the `depthAxisTensor` dimension, whereas without it they are stored interleaved with existing values in the `depthAxisTensor` dimension. This operation is the inverse of [`space(toDepth2DTensor:widthAxisTensor:heightAxisTensor:depthAxisTensor:blockSize:usePixelShuffleOrder:name:)`](./space%28todepth2dtensor,widthaxistensor,heightaxistensor,depthaxistensor,blocksize,usepixelshuffleorder,name%29.md).
 

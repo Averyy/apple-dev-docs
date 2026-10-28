@@ -5,13 +5,13 @@
 
 Provide unique app experiences by attaching sounds to windows and volumes in 3D space.
 
-#### Overview
+## Overview
 
 Many audio playback APIs have a property to configure their 3D spatial rendering using the [`SpatialAudioExperience`](./spatialaudioexperience.md) type [`HeadTrackedSpatialAudio`](./headtrackedspatialaudio.md). This article shows how to take advantage of [`HeadTrackedSpatialAudio`](./headtrackedspatialaudio.md) to place each sound at the center of its intended [`UIScene`](../UIKit/uiscene.md) in your multiwindow or multivolume application.
 
 ![An illustration of sound spatializing from two windows.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/spatializing-sound-from-a-uiscene-01@2x.png)
 
-#### Get the scene’s identifier
+## Get the scene’s identifier
 
 Placing a sound on a specific [`UIScene`](../UIKit/uiscene.md) requires knowledge of the target scene’s [`persistentIdentifier`](../UIKit/uiscenesession/persistentidentifier.md). In a SwiftUI application, that means adding both a [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) and [`UISceneDelegate`](../UIKit/uiscenedelegate.md) to your SwiftUI App:
 
@@ -62,7 +62,7 @@ struct ContentView: View {
 }
 ```
 
-#### Anchor the sound to the scene
+## Anchor the sound to the scene
 
 With a [`UIScene`](../UIKit/uiscene.md) identifier in-hand, configure each sound using a [`HeadTrackedSpatialAudio`](./headtrackedspatialaudio.md) structure.
 
@@ -96,14 +96,14 @@ struct ContentView: View {
 
 Besides just [`AVAudioPlayer`](../AVFAudio/avaudioplayer.md), you can also use [`SpatialAudioExperience`](./spatialaudioexperience.md) types with the other playback APIs listed below.
 
-#### Spatialize system and alert sounds
+## Spatialize system and alert sounds
 
 Configure the spatial audio experience of your system and alert sounds using:
 
 - [`AudioServicesPlaySystemSound(_:spatialExperience:)`](./audioservicesplaysystemsound%28_,spatialexperience%29.md)
 - [`AudioServicesPlayAlertSound(_:spatialExperience:)`](./audioservicesplayalertsound%28_,spatialexperience%29.md)
 
-#### Spatialize audio-only playback APIs
+## Spatialize audio-only playback APIs
 
 Configure the spatial audio experience of audio-only playback APIs using the [`intendedSpatialExperience`](../AVFAudio/avaudioplayer/intendedspatialexperience-27klj.md) property on:
 
@@ -112,7 +112,7 @@ Configure the spatial audio experience of audio-only playback APIs using the [`i
 - [AUAudioUnit](./auaudiounit/intendedspatialexperience-7uqrm.md)
 - [CHHapticEngine](../CoreHaptics/chhapticengine/intendedspatialexperience-55ca0.md)
 
-#### Spatialize audio playback APIs that also have video
+## Spatialize audio playback APIs that also have video
 
 Setting a scene identifier on playback APIs that have video content isn’t always necessary as their sound automatically anchors to its visual counterpart. However, if there is no video or if you prefer something besides the automatic behavior, configure the spatial audio experience of these playback APIs using the [`intendedSpatialAudioExperience`](../AVFoundation/avplayer/intendedspatialaudioexperience-1bd87.md) property on:
 

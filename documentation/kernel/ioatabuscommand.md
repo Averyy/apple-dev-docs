@@ -13,7 +13,7 @@
 class IOATABusCommand : IOATACommand
 ```
 
-#### Overview
+## Overview
 
 ATA Device (disk) drivers should use the superclass, IOATACommand and may not derive or use any subclass of IOATACommand.
 

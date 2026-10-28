@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, pasteboardWrite
 - (id<NSPasteboardWriting>) collectionView:(NSCollectionView *) collectionView pasteboardWriterForItemAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The pasteboard writer object to use for managing the item data. Return `nil` to prevent the collection view from dragging the item.
 
-#### Discussion
+## Discussion
 
 The collection view calls this method for each item involved in the drag operation after it has determined that a drag should begin but before the drag operation has started.  Your implementation of this method should create and return the pasteboard writer—an object conforming to the [`NSPasteboardWriting`](../nspasteboardwriting.md) protocol—to use for providing the item’s data. Using the object you provide, the collection view creates an [`NSDraggingItem`](../nsdraggingitem.md) object for you and configures its [`draggingFrame`](../nsdraggingitem/draggingframe.md) and [`imageComponents`](../nsdraggingitem/imagecomponents.md) properties for you using information from the item at the specified index path.
 

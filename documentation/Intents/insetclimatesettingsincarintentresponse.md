@@ -24,7 +24,7 @@ class INSetClimateSettingsInCarIntentResponse
 @interface INSetClimateSettingsInCarIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INSetClimateSettingsInCarIntentResponse`](./insetclimatesettingsincarintentresponse.md) object contains the status of changing the climate control settings in the user’s vehicle. You create instances of this class when confirming or handling a set climate settings in car intent.
 

@@ -5,7 +5,7 @@
 
 Requests to send notifications to all assigned testers that builds are ready for testing.
 
-#### Overview
+## Overview
 
 You use a `buildBetaNotifications` resource to manually notify all assigned beta testers that a build is available for testing.
 

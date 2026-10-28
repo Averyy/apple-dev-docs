@@ -21,7 +21,7 @@ Adds a new reshape layer to the graph using the shape and source tensor you spec
 func reshape(shape: [Int], source: MLCTensor) -> MLCTensor?
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

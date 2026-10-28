@@ -15,7 +15,7 @@ Predicts the label for the given term.
 func prediction(from text: String) throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 A label.
 

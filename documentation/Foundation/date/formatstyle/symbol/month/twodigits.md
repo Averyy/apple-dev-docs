@@ -21,7 +21,7 @@ The custom month format style that uses two digits to represent the numeric mont
 static var twoDigits: Date.FormatStyle.Symbol.Month { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style represents the month like `01` or `12`.
 

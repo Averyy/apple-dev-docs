@@ -19,11 +19,11 @@ func shouldBeTreatedAsInkEvent(_ event: NSEvent) -> Bool
 - (BOOL) shouldBeTreatedAsInkEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the specified event should be treated as an ink event, [`false`](../../Swift/false.md) if it should be treated as a mouse event.
 
-#### Discussion
+## Discussion
 
 This method provides the ability to distinguish when a pen-down event should start inking versus when a pen-down event should be treated as a mouse-down event. This allows for a write-anywhere model for pen-based input.
 

@@ -21,7 +21,7 @@ Identifier for the Gregorian calendar.
 case gregorian
 ```
 
-#### Discussion
+## Discussion
 
 This is the common calendar in Europe, the Western Hemisphere, and elsewhere.
 

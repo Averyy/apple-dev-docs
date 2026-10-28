@@ -25,7 +25,7 @@ func cblas_drotmg(_ D1: UnsafeMutablePointer<Double>, _ D2: UnsafeMutablePointer
 void cblas_drotmg(double *D1, double *D2, double *B1, const double B2, double *P);
 ```
 
-#### Discussion
+## Discussion
 
 The resulting matrix zeroes the second component of the vector `(sqrt(D1)*B1, sqrt(SD2)*B2)`.
 

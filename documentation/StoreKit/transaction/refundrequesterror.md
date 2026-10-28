@@ -21,7 +21,7 @@ The error codes for refund requests.
 enum RefundRequestError
 ```
 
-#### Overview
+## Overview
 
 The following methods throw refund request errors: [`beginRefundRequest(in:)`](./beginrefundrequest%28in%29-9k0pj.md), [`beginRefundRequest(for:in:)`](./beginrefundrequest%28for,in%29-65tph.md), [`beginRefundRequest(in:)`](./beginrefundrequest%28in%29-63bvd.md), and [`beginRefundRequest(for:in:)`](./beginrefundrequest%28for,in%29-9mscy.md).
 

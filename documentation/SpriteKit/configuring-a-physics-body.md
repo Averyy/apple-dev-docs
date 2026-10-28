@@ -5,11 +5,11 @@
 
 Move a physics body, and make it collide with other objects, by setting its physical properties once or changing them dynamically.
 
-#### Overview
+## Overview
 
 You configure mass, area and density to values that create the right level of momentum and transfer of kinetic energy upon collisions of your in-game objects. Though you typically configure a physics body only once, there are exceptions; for example, when a node crosses into a different environment, such as land to space, or land to water.
 
-##### Use Mass to Resist Acceleration
+### Use Mass to Resist Acceleration
 
 You set the mass on every volume-based body in your scene so that it properly reacts to forces applied to it.
 
@@ -22,7 +22,7 @@ When you configure a physics body, you have two options:
 - Set the [`mass`](./skphysicsbody/mass.md) property of the body. The [`density`](./skphysicsbody/density.md) property is then automatically recalculated. This approach is most useful when you want to precisely control each body’s mass.
 - Set the [`density`](./skphysicsbody/density.md) property of the body. The [`mass`](./skphysicsbody/mass.md) property is then automatically recalculated. This approach is most useful when you have a collection of similar bodies created with different sizes. For example, if your physics bodies were used to simulate asteroids, you might give all asteroids the same density, and then set an appropriate bounding polygon for each. Each body automatically computes an appropriate mass based on its size on the screen.
 
-##### Time Your Changes to a Physics Body’s Properties
+### Time Your Changes to a Physics Body’s Properties
 
 Most often, you configure a physics body once and then never change it. For example, the mass of a body is unlikely to change during play. However, you are not restricted from changing it. Some kinds of games may require the ability to adjust a body’s properties even while the simulation is executing. Here are a few examples of when you might do so:
 

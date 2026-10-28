@@ -23,7 +23,7 @@ var initiatorHandle: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * initiatorHandle;
 ```
 
-#### Discussion
+## Discussion
 
 The app that initiates a collaboration sets the `initiatorHandle` to allow the user to confirm the handle before the system begins the collaboration. The value of the handle will not be transmitted to recipients, and is `nil` before the system initiates a collaboration.
 

@@ -26,7 +26,7 @@ ASAuthorizationWebBrowserPublicKeyCredentialManagerAuthorizationStateDenied
 
 - [Authenticating people by using passkeys in browser apps](../../authenticating-people-by-using-passkeys-in-browser-apps.md)
 
-#### Discussion
+## Discussion
 
 The person can change their decision by navigating to Passkeys Access for Web Browsers, in the Privacy & Security pane in Settings.
 

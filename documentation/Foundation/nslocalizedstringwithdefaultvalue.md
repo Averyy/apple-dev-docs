@@ -21,11 +21,11 @@ Returns a localized version of a string identified by a key in the table that yo
 #define NSLocalizedStringWithDefaultValue(key, tbl, bundle, val, comment)
 ```
 
-#### Return Value
+## Return Value
 
 The result of sending [`localizedString(forKey:value:table:)`](./bundle/localizedstring%28forkey,value,table%29.md) to `bundle`, passing the specified `key`, `value`, and `tableName`.
 
-#### Discussion
+## Discussion
 
 Use this macro to automatically generate a strings file named `[tableName].strings` located in `bundle` from your code when exporting localizations from Xcode or the `genstrings` utility. The initial value for `key` in the strings file is `value`. You can specify Unicode characters in `key` using `\\Uxxxx`—see the `-u` option for the `genstrings` utility.
 
@@ -50,7 +50,7 @@ NSLocalizedStringFromTableInBundle(
         @" on the loading screen.");
 ```
 
-##### Choose Meaningful Keys
+### Choose Meaningful Keys
 
 Words can often have multiple different meanings depending on the context in which they’re used. For example, the word “Book” can be a noun referring to a printed literary work or a verb for the action of making a reservation. Words with different meanings that share the same spelling are heteronyms.
 

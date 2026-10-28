@@ -22,7 +22,7 @@ var separatorLayoutGuide: UILayoutGuide { get }
 @property (nonatomic, readonly) UILayoutGuide * separatorLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 This property only takes effect in a layout section that supports separators, like a section that you create using [`list(using:layoutEnvironment:)`](../nscollectionlayoutsection/list%28using,layoutenvironment%29.md).
 

@@ -25,7 +25,7 @@ func writeCompactedSize(accelerationStructure: any MTLAccelerationStructure, buf
 - (void) writeCompactedAccelerationStructureSize:(id<MTLAccelerationStructure>) accelerationStructure toBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset sizeDataType:(MTLDataType) sizeDataType;
 ```
 
-#### Discussion
+## Discussion
 
 The GPU writes the compacted size to the buffer, in bytes, using the `sizeDataType` parameter to determine the size of the output data. The compacted size may be smaller than the source acceleration structure.
 

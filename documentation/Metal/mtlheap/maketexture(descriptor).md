@@ -25,11 +25,11 @@ func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?
 - (id<MTLTexture>) newTextureWithDescriptor:(MTLTextureDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object backed by heap memory, or `nil` if the heap memory is full.
 
-#### Discussion
+## Discussion
 
 You can call the method with the following restrictions:
 

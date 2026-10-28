@@ -27,7 +27,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this initalizer to manually create download tasks. Instead, use the factory methods on [`URLSession`](../urlsession.md) to add tasks to an existing URL session.
 

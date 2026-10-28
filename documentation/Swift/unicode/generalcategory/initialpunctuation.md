@@ -21,7 +21,7 @@ An initial quotation mark.
 case initialPunctuation
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Initial_Punctuation` (abbreviated `Pi`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

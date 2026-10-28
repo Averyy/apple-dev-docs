@@ -22,7 +22,7 @@ var value: Float { get set }
 @property (nonatomic) float value;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get and set the slider’s current value. To render an animated transition from the current value to the new value, use the [`setValue(_:animated:)`](./setvalue%28_,animated%29.md) method instead.
 

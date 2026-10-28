@@ -20,7 +20,7 @@ A predicate for queries that return a collection of matching sample objects.
 struct HKSamplePredicate<Sample> where Sample : HKSample
 ```
 
-#### Overview
+## Overview
 
 The [`HKSamplePredicate`](./hksamplepredicate.md) structure bundles an [`HKSampleType`](./hksampletype.md) and an optional [`NSPredicate`](../Foundation/nspredicate.md). The structure is generic. You can create it for any [`HKSampleType`](./hksampletype.md) subclass, and it automatically sets the `Sample` type to the matching [`HKSampleType`](./hksampletype.md) subtype. As a result, any query that you build using this structure returns properly typed results.
 

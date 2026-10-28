@@ -19,11 +19,11 @@
 static SPPose3D SPPose3DMakeLookAt(SPVector3D forward, SPVector3D up);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose stucture.
 
-#### Discussion
+## Discussion
 
 Returns a pose with the specified forward and up vectors.
 

@@ -21,7 +21,7 @@ The region used by the locale.
 var region: Locale.Region?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to override the region for region-related preferences, such as measuring system, calendar, and first day of the week. If unset, the locale uses the region of the language component.
 

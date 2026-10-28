@@ -23,7 +23,7 @@ func availableVideoCodecTypesForAssetWriter(writingTo outputFileType: AVFileType
 - (NSArray<NSString *> *) availableVideoCodecTypesForAssetWriterWithOutputFileType:(AVFileType) outputFileType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of video codecs.
 

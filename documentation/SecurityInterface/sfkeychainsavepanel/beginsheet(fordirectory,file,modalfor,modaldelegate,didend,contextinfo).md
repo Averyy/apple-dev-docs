@@ -19,7 +19,7 @@ func beginSheet(forDirectory path: String!, file name: String!, modalFor docWind
 - (void) beginSheetForDirectory:(NSString *) path file:(NSString *) name modalForWindow:(NSWindow *) docWindow modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate method has the following signature:
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether your app may configure MFi Wi-Fi accesso
 - **Name**: `com.apple.external-accessory.wireless-configuration` (Wireless Accessory Configuration)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This key indicates whether your app may configure third-party hardware accessories that use [Apple’s MFi licensed technology](https://developer.apple.com/programs/mfi/) to connect to Apple devices.
 

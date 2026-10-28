@@ -24,7 +24,7 @@ func JSObjectMakeTypedArrayWithArrayBufferAndOffset(_ ctx: JSContextRef!, _ arra
 JSObjectRefJSObjectMakeTypedArrayWithArrayBufferAndOffset(JSContextRef ctx, JSTypedArrayType arrayType, JSObjectRef buffer, size_t byteOffset, size_t length, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that is a typed array, or `NULL` if there is an error. The backing store of the typed array is `buffer`.
 

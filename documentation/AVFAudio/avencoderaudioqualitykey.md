@@ -25,7 +25,7 @@ let AVEncoderAudioQualityKey: String
 extern NSString * const AVEncoderAudioQualityKey;
 ```
 
-#### Discussion
+## Discussion
 
 For information about possible values, see [`AVAudioQuality`](./avaudioquality.md).
 

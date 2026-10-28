@@ -5,7 +5,7 @@
 
 Enable Game Center, configure features, and test them locally in your Xcode project.
 
-#### Overview
+## Overview
 
 Game Center is a social gaming network that helps players discover your games across Apple devices. Players can track their scores on leaderboards, view achievement progress, participate in challenges, and more. Before you can use the GameKit framework and access Game Center data, you need to enable Game Center. When you enable Game Center in your project, Xcode adds the Game Center entitlement to your App ID.
 
@@ -13,7 +13,7 @@ After you enable Game Center, you can configure the features you want to use in 
 
 For more information about the Game Center service, see [Overview of Game Center](https://developer.apple.com/help/app-store-connect/configure-game-center/overview-of-game-center).
 
-#### Enable Game Center
+## Enable Game Center
 
 Add the Game Center capability to your project, so you can configure gameplay features for your game:
 
@@ -27,7 +27,7 @@ Add the Game Center capability to your project, so you can configure gameplay fe
 
 For Mac targets, ensure that you enable both Incoming Connections and Outgoing Connections in the App Sandbox capability under Network.
 
-#### Configure Game Center features
+## Configure Game Center features
 
 Use a GameKit bundle file to configure achievements, activities, challenges, leaderboards, and leaderboard sets. You need to configure these features in Xcode before you can access them in your code and begin testing them. When you configure resources, you can organize the list in the way you want Game Center to present them.
 
@@ -54,7 +54,7 @@ The details for the resource then appear in the editor at right. If you already 
 
 If you don’t have an app record in App Store Connect, create one so you can sync your configuration while you develop your game. To create an app record in App Store Connect that matches your App ID in your developer account, see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app/) in App Store Connect Help. To enable Game Center for versions of your app, see the “Enable app version for Game Center” section of [Manage an app version for Game Center](https://developer.apple.com/help/app-store-connect/configure-game-center/manage-an-app-version-for-game-center/).
 
-#### Test Game Center features by using the Game Progress Manager
+## Test Game Center features by using the Game Progress Manager
 
 Use Game Progress Manager to test your game features locally during development by modifying properties, reporting updates, and resetting resources. You can also use it to test features and deep links to your game.
 
@@ -84,7 +84,7 @@ After selecting the device and app, choose the Game Center feature you want to t
 
 To reset the progress for your Game Center resource, click the reset button at the top of the Game Progress Manager. You can’t access previous occurrences of a resource after resetting the Game Progress Manager.
 
-#### Initialize the local player
+## Initialize the local player
 
 In your game, you need to initialize the local player before you can use any GameKit APIs and Game Center services. Game Center isn’t a single sign-on (SSO) authentication service, so don’t use it for authentication. When you initialize the player, you connect the player with the Game Center services.
 

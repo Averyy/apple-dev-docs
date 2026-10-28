@@ -25,7 +25,7 @@ let kCVImageBufferCGColorSpaceKey: CFString
 extern CFStringRef const kCVImageBufferCGColorSpaceKey;
 ```
 
-#### Discussion
+## Discussion
 
 The color space value is of type [`CGColorSpace`](../CoreGraphics/cgcolorspace.md).
 

@@ -22,7 +22,7 @@ var isSearchResultsButtonSelected: Bool { get set }
 @property (nonatomic, getter=isSearchResultsButtonSelected) BOOL searchResultsButtonSelected;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

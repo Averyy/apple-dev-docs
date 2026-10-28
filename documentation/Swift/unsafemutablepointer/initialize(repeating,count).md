@@ -21,7 +21,7 @@ Initializes this pointer’s memory with the specified number of consecutive cop
 func initialize(repeating repeatedValue: Pointee, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The destination memory must be uninitialized or the pointer’s `Pointee` must be a trivial type. After a call to `initialize(repeating:count:)`, the memory referenced by this pointer is initialized.
 

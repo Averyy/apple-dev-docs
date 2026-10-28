@@ -5,13 +5,13 @@
 
 Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 
-#### Overview
+## Overview
 
 iOS does not have a general-purpose API for Wi-Fi scanning and configuration.  However, it does support a wide range of special-purpose Wi-Fi APIs.  This technote lists some use cases supported by those special-purpose APIs.
 
 While the focus of this technote is iOS, these APIs are also available on iPadOS.
 
-#### Navigate an internet hotspot
+## Navigate an internet hotspot
 
 If your app helps the user navigate an internet hotspot — a Wi-Fi network where the user must interact with the network to gain access to the wider internet — adopt the [Hotspot helper](../NetworkExtension/hotspot-helper.md) API.
 
@@ -21,7 +21,7 @@ To use `NEHotspotHelper` you must first be granted a special entitlement (`com.a
 
 iOS 26 introduced support for hotspot helper app extensions.  Adopt these to improve the efficiency, reliability, and privacy of your hotspot helper app.
 
-#### Add an accessory to the user’s network
+## Add an accessory to the user’s network
 
 If you’re creating a hardware accessory and you want to make it easy for the user to add it to their local network, your best option is to build your accessory with that in mind.  Use one of these approaches:
 
@@ -32,17 +32,17 @@ If you’re creating a hardware accessory and you want to make it easy for the u
 
 If your accessory does not support WAC or HomeKit, you can build an accessory configuration experience on top of `NEHotspotConfigurationManager`, although this will not be as seamless as the WAC and HomeKit accessory experience.  For an example of how you might approach this, see [Configuring a Wi-Fi accessory to join a network](../NetworkExtension/configuring-a-wi-fi-accessory-to-join-a-network.md).
 
-#### Temporarily join a network
+## Temporarily join a network
 
 If your app needs to temporarily join a Wi-Fi network — for example, you want to interact with a Wi-Fi enabled accessory with its own independent network — use `NEHotspotConfigurationManager` and set [`joinOnce`](../NetworkExtension/nehotspotconfiguration/joinonce.md) to true.  For more details, see [Wi-Fi configuration](../NetworkExtension/wi-fi-configuration.md).
 
 If you’re working with a Wi-Fi accessory, use [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) to simplify discovery and configuration of your accessory.
 
-#### Permanently join a network
+## Permanently join a network
 
 Some apps need to configure the iOS device to permanently join a Wi-Fi network, as if the user had selected the network in Settings > Wi-Fi.  For example, an app from an ISP might do this to get the user’s iOS device on to the Wi-Fi network published by a new DSL gateway that they’ve just installed.  If your app needs to do this, use `NEHotspotConfigurationManager` and set [`joinOnce`](../NetworkExtension/nehotspotconfiguration/joinonce.md) to false.  For more details, see [Wi-Fi configuration](../NetworkExtension/wi-fi-configuration.md).
 
-#### Peer-to-peer networking
+## Peer-to-peer networking
 
 If your goal is to communicate with nearby devices and accessories without configuring a Wi-Fi network, you have two options:
 
@@ -59,15 +59,15 @@ Apple peer-to-peer Wi-Fi dates all the way back to iOS 7.  It works on all iOS, 
 
 Apple peer-to-peer Wi-Fi is not documented for third-party use, so this mechanism only works between Apple devices.
 
-#### Location tracking
+## Location tracking
 
 If you’d like to use Wi-Fi data to determine the device’s location, use Core Location.  This locates the device using a wide variety of techniques, including Wi-Fi.  For more information, see [Maps and Location](https://developer.apple.com/maps/).
 
-#### Current Wi-Fi network
+## Current Wi-Fi network
 
 If you need to know the name of the device’s current Wi-Fi network, call [`fetchCurrent(completionHandler:)`](../NetworkExtension/nehotspotnetwork/fetchcurrent%28completionhandler%29.md).  That method requires iOS 14 or later.  On older systems, call [`CNCopyCurrentNetworkInfo`](../SystemConfiguration/cncopycurrentnetworkinfo.md).
 
-#### Revision History
+## Revision History
 
 - **2025-08-29** Added information about hotspot helper app extensions and Wi-Fi Aware, both new in iOS 26.
 - **2024-09-24** Added information about AccessorySetupKit.  Added a link to TN3151.  Made other minor editorial changes.

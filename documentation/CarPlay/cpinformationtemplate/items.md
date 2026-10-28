@@ -21,7 +21,7 @@ var items: [CPInformationItem] { get set }
 @property (nonatomic, copy) NSArray<__kindof CPInformationItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a new array to this property to update the items that the template displays. The template can display 10 items maximum. If the array contains more items, the template uses only the first 10.
 

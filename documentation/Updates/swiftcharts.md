@@ -5,15 +5,15 @@
 
 Learn about important changes to Swift Charts.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Swift Charts](../Charts/Charts.md).
 
-#### June 2025
+## June 2025
 
 - Visualize data in 3D with [`Chart3D`](../Charts/chart3d.md), and render bivariate functions using [`SurfacePlot`](../Charts/surfaceplot.md). Use plot types such as [`PointMark`](../Charts/pointmark.md), [`RectangleMark`](../Charts/rectanglemark.md), and [`RuleMark`](../Charts/rulemark.md) that now conform to [`Chart3DContent`](../Charts/chart3dcontent.md).
 
-#### June 2024
+## June 2024
 
 - Plot large collections of data with greater efficiency using new plot types such as [`LinePlot`](../Charts/lineplot.md), [`AreaPlot`](../Charts/areaplot.md), [`BarPlot`](../Charts/barplot.md), and others that conform to  [`VectorizedChartContent`](../Charts/vectorizedchartcontent.md).
 - Graph mathematical functions by passing an equation to a closure when you initialize a [`LinePlot`](../Charts/lineplot.md) or [`AreaPlot`](../Charts/areaplot.md).

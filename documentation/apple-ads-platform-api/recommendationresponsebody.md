@@ -15,7 +15,7 @@ The standard response envelope for all Recommendations and Suggestions API endpo
 object RecommendationResponseBody
 ```
 
-#### Discussion
+## Discussion
 
 The response envelope is the standard wrapper returned by all Recommendations and Suggestions endpoints.
 
@@ -23,7 +23,7 @@ The `result` field contains the response payload. It’s usually an array, but f
 
 The `pagination` field describes the current page position and is `null` for apply and dismiss responses.
 
-##### Example
+### Example
 
 ```json
 {

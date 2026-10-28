@@ -18,7 +18,7 @@ The state of the tracking button on the dock accessory.
 let trackingButtonEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Every dock accessory has a tracking button that a person presses to turn on or off subject tracking.
 

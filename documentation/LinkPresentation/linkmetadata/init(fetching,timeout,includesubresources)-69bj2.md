@@ -22,7 +22,7 @@ nonisolated
 init(fetching url: URL, timeout: Duration = .seconds(30), includeSubresources: Bool = true) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Metadata fetching supports Task cancellation; if the enclosing Task is cancelled, the metadata request will be cancelled.
 

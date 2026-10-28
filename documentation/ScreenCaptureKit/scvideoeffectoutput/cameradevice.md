@@ -19,7 +19,7 @@ var cameraDevice: AVCaptureDevice { get set }
 @property (nonatomic, strong) AVCaptureDevice * cameraDevice;
 ```
 
-#### Discussion
+## Discussion
 
 cameraDevice
 

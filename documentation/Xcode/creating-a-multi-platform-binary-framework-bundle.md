@@ -5,7 +5,7 @@
 
 Combine variants of a binary framework or library into an XCFramework bundle that supports multiple platforms.
 
-#### Overview
+## Overview
 
 An XCFramework bundle, or *artifact*, is a binary package created by Xcode that includes the frameworks and libraries necessary to build for multiple platforms (iOS, iPadOS, macOS, tvOS, visionOS, watchOS, and DriverKit), including Simulator builds. The frameworks can be static or dynamic and also include headers.
 
@@ -13,7 +13,7 @@ Include an XCFramework bundle inside a Swift package to distribute code in binar
 
 > **Related sessions from WWDC19**: Session 417: [Binary Frameworks in Swift](https://developer.apple.com/videos/play/wwdc2019/416)
 
-##### Set up the project
+### Set up the project
 
 To set up your project for creating an XCFramework, ensure your Xcode project has a scheme that builds only the framework target and its dependencies.
 
@@ -25,7 +25,7 @@ Configure these build settings on your target:
 
 For more information, see [Customizing the build schemes for a project](./customizing-the-build-schemes-for-a-project.md) and [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md).
 
-##### Create archives for frameworks or libraries
+### Create archives for frameworks or libraries
 
 Create an archive of your framework or library for each platform you wish to support by running `xcodebuild` in Terminal using the `archive` build action.
 
@@ -49,7 +49,7 @@ To see an extensive list of all the command options, execute `xcodebuild` with t
 
 > **Note**: Clients of your XCFramework need it to support all the possible architectures the platform uses. As platforms move forward to adopt new architectures, such as the adoption of Apple silicon by macOS and iOS Simulator, keep the binaries your XCFramework includes up to date by rebuilding the frameworks and libraries to include new architectures. To determine the architectures of a binary, see [Determine the architectures a binary supports](./creating-a-multi-platform-binary-framework-bundle.md#Determine-the-architectures-a-binary-supports).
 
-##### Generate the XCFramework bundle
+### Generate the XCFramework bundle
 
 To package the built content of a given framework or library for multiple platforms and variants into a single XCFramework bundle, execute `xcodebuild` with the `-create-xcframework` option.
 
@@ -83,7 +83,7 @@ To see all the options the XCFramework utility supports, execute:
 xcodebuild -create-xcframework -help
 ```
 
-##### Sign the XCFramework bundle
+### Sign the XCFramework bundle
 
 Signing your XCFramework using your code signing identity informs developers who use your framework that it came from you and that it hasn’t been tampered with since you added the signature. To sign your framework, run the following command:
 
@@ -95,7 +95,7 @@ To sign a framework for distribution as a member of the Apple Developer Program,
 
 > ❗ **Important**:  If you revoke a certificate for a code signing identity that you use to sign frameworks for distribution, sign the framework with a different code signing identity that isn’t revoked and share that version with developers who use your framework. The Xcode build system fails with an error when it encounters a framework with a code signature that contains a revoked certificate.
 
-##### Avoid issues when using alternate build systems
+### Avoid issues when using alternate build systems
 
 When using an alternative build system, common for open source projects, follow a similar process to compile the source code into static library files, using one binary per platform, or *destination*. Use the files to create the XCFramework.
 
@@ -110,7 +110,7 @@ Avoid using dynamic library files (`.dylib` files) for dynamic linking. An XCFra
 
 If you have further questions on how to compile the library to meet these goals, work with support for the library vendor.
 
-##### Determine the architectures a binary supports
+### Determine the architectures a binary supports
 
 Projects that link to your XCFramework require that it contains universal binaries covering the architectures each platform builds for.
 

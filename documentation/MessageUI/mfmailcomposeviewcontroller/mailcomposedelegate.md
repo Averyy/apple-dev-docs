@@ -22,7 +22,7 @@ weak var mailComposeDelegate: (any MFMailComposeViewControllerDelegate)? { get s
 @property (nonatomic, weak, nullable) id<MFMailComposeViewControllerDelegate> mailComposeDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object is responsible for dismissing the view presented by this view controller at the appropriate time. Therefore, you should always provide a delegate, and that object should implement the methods of the [`MFMailComposeViewControllerDelegate`](../mfmailcomposeviewcontrollerdelegate.md) protocol.
 

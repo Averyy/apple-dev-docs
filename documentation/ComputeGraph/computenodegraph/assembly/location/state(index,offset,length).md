@@ -21,7 +21,7 @@ A context-dependent state value.
 case state(index: Int, offset: Int, length: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Index references into the states table
 

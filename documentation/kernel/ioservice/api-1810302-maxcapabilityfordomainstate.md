@@ -12,11 +12,11 @@ virtual unsigned long maxCapabilityForDomainState(
  IOPMPowerFlagsdomainState );
 ```
 
-#### Return Value
+## Return Value
 
 A state number.
 
-#### Overview
+## Overview
 
 This happens when the power domain is changing state and power management needs to determine which state the device is capable of in the new domain state. Most drivers do not need to implement this method, and can rely upon the default IOService implementation. The IOService implementation scans the power state array looking for the highest state whose `inputPowerRequirement` field exactly matches the value of the `domainState` parameter. If more intelligent determination is required, the driver itself should implement the method and override the superclass's implementation.
 

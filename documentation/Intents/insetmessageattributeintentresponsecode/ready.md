@@ -22,7 +22,7 @@ case ready
 INSetMessageAttributeIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the confirmation phase to indicate that you have access to your message service and are able to modify the specified messages.
 

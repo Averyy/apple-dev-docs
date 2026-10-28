@@ -25,7 +25,7 @@ func useHeap(_ heap: any MTLHeap)
 - (void) useHeap:(id<MTLHeap>) heap;
 ```
 
-#### Discussion
+## Discussion
 
 This method makes all the resources in the heap resident for the duration of a compute pass and ensures that they’re in a format compatible with the compute function.
 

@@ -19,11 +19,11 @@ func setActivationPolicy(_ activationPolicy: NSApplication.ActivationPolicy) -> 
 - (BOOL) setActivationPolicy:(NSApplicationActivationPolicy) activationPolicy;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the policy switch succeded; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can set any activation policy in macOS 10.9 and later; in macOS 10.8 and earlier, you can only set the activation policy to  `NSApplicationActivationPolicyProhibited` or `NSApplicationActivationPolicyRegular`.
 

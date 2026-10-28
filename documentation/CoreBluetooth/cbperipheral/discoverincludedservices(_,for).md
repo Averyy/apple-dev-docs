@@ -25,7 +25,7 @@ func discoverIncludedServices(_ includedServiceUUIDs: [CBUUID]?, for service: CB
 - (void) discoverIncludedServices:(NSArray<CBUUID *> *) includedServiceUUIDs forService:(CBService *) service;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide an array of [`CBUUID`](../cbuuid.md) objects—representing included service UUIDs—in the `includedServiceUUIDs` parameter. When you do, the peripheral returns only the services of the peripheral that match the provided UUIDs.
 

@@ -18,7 +18,7 @@ static func record(_ attachableValue: consuming AttachableValue, named preferred
 
 Available when `AttachableValue` conforms to `Attachable`.
 
-#### Discussion
+## Discussion
 
 When `attachableValue` is an instance of a type that does not conform to the [Sendable](../../Swift/sendable.md) protocol, the testing library calls its [`withUnsafeBytes(for:_:)`](../attachable/withunsafebytes%28for,_%29.md) immediately and records a copy of the resulting buffer instead. If `attachableValue` throws an error when the testing library calls its [`withUnsafeBytes(for:_:)`](../attachable/withunsafebytes%28for,_%29.md) function, the testing library records that error as an issue in the current test.
 

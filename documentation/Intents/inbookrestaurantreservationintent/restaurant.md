@@ -31,7 +31,7 @@ var restaurant: INRestaurant { get set }
 @property (atomic, copy) INRestaurant * restaurant;
 ```
 
-#### Discussion
+## Discussion
 
 Use the information in this object to communicate the reservation details to the restaurant.
 

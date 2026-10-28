@@ -23,7 +23,7 @@ var end: UITextPosition { get }
 @property (nonatomic, readonly) UITextPosition * end;
 ```
 
-#### Discussion
+## Discussion
 
 Compute and store in this property the UITextPosition object representing the end of a range of text.
 

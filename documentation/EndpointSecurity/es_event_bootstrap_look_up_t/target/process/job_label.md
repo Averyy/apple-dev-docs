@@ -14,7 +14,7 @@
 es_string_token_t job_label;
 ```
 
-#### Discussion
+## Discussion
 
 Structure for handling strings
 

@@ -19,11 +19,11 @@ class func invertColor(_ color: CGColor) -> Unmanaged<CGColor>
 + (CGColorRef) invertColor:(CGColorRef) color;
 ```
 
-#### Return Value
+## Return Value
 
 The inverted color.
 
-#### Discussion
+## Discussion
 
 This has the same effect as `convertColor` with opposite user interface styles.
 

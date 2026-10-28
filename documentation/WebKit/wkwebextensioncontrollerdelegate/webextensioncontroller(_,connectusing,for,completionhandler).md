@@ -27,7 +27,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, con
 - (void) webExtensionController:(WKWebExtensionController *) controller connectUsingMessagePort:(WKWebExtensionMessagePort *) port forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented by the app to handle establishing connections to applications.
 

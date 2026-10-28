@@ -22,7 +22,7 @@ var renderingMode: AVAudioSession.RenderingMode { get }
 @property (readonly) AVAudioSessionRenderingMode renderingMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`AVAudioSession.RenderingMode.notApplicable`](./renderingmode-swift.enum/notapplicable.md) in the following cases:
 

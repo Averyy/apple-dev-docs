@@ -18,7 +18,7 @@ A request for the age range of a person logged onto the current device.
 struct AgeRangeService
 ```
 
-#### Overview
+## Overview
 
 Use `AgeRangeService` to request a person’s age range and manage their access to content on your app. This service enables you to create age-appropriate experiences while respecting people’s privacy and meeting regulatory requirements. The system presents an interface that describes the data you’re requesting and asks people to grant permission to share their age range with your app.
 

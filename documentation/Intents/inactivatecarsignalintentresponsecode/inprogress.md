@@ -23,7 +23,7 @@ case inProgress
 INActivateCarSignalIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 When handling the intent, return this code if your activation attempt may take longer than a few seconds to complete.
 

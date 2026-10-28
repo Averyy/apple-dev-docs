@@ -5,7 +5,7 @@
 
 Generate signatures for apps compiled with earlier SDKs.
 
-#### Overview
+## Overview
 
 Generate a signature using the parameters for version 1.0 if you compile your app with an iOS SDK version from 11.3 through 13.7.
 
@@ -19,7 +19,7 @@ The parameters required for a version 1.0 signature are:
 - **[`SKStoreProductParameterAdNetworkNonce`](./skstoreproductparameteradnetworknonce.md)**: A unique `UUID` value that you provide for each ad impression. You must lowercase the string representation of the nonce in the signature. Shown as `nonce` in [Combine the parameters for version 1.0](./combining-parameters-to-generate-a-signature-for-skadnetwork-1.md#Combine-the-parameters-for-version-10).
 - **[`SKStoreProductParameterAdNetworkTimestamp`](./skstoreproductparameteradnetworktimestamp.md)**: A timestamp you generate near the time of the ad impression. Shown as `timestamp` in [Combine the parameters for version 1.0](./combining-parameters-to-generate-a-signature-for-skadnetwork-1.md#Combine-the-parameters-for-version-10).
 
-##### Combine the parameters for version 1.0
+### Combine the parameters for version 1.0
 
 Create the UTF-8 string for version 1.0 if you compile your app with an SDK prior to iOS 14.
 

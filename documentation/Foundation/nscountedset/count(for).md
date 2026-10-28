@@ -25,7 +25,7 @@ func count(for object: Any) -> Int
 - (NSUInteger) countForObject:(ObjectType) object;
 ```
 
-#### Return Value
+## Return Value
 
 The count associated with `object` in the set, which can be thought of as the number of occurrences of `object` present in the set.
 

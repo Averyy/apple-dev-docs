@@ -15,7 +15,7 @@ The minimum alignment of the data buffer sent to read-write calls.
 uint32_t minSegmentAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This minimum affects the `dmaAddr` parameter of the [`DoAsyncReadWrite`](../iouserblockstoragedevice/doasyncreadwrite.md) function.
 

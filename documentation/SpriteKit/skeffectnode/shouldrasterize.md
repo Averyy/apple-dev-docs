@@ -29,7 +29,7 @@ var shouldRasterize: Bool { get set }
 
 - [Creating a New Node By Rendering To a Texture](../creating-a-new-node-by-rendering-to-a-texture.md)
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the effect node caches the filtered image for use in future frames. If the value is [`false`](../../Swift/false.md), then SpriteKit discards the rendered image and redraws it from scratch the next time the node is rendered. The default value is [`false`](../../Swift/false.md). Caching the rendered image uses more memory and may take more time to render. However, if the effect node’s descendants rarely change, caching can improve performance.
 

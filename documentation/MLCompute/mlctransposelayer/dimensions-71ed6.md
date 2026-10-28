@@ -21,7 +21,7 @@ An array that contains an input axis source for each output axis, which represen
 var dimensions: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Permutes the dimensions according to `dimensions`. The returned tensor’s dimension `i` corresponds to `dimensions[i]`.
 

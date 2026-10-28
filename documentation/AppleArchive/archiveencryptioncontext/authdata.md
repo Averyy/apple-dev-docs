@@ -21,7 +21,7 @@ An optional, unencrypted set of data that’s stored in the archive prologue.
 var authData: Data? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property, for example, to store a certificate chain for the archive signing entity. Note that the Apple Encrypted Archive format only transports this data and doesn’t interpret them. You can retrieve this data before you unlock the archive,
 

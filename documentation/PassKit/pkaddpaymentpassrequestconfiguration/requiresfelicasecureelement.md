@@ -23,7 +23,7 @@ var requiresFelicaSecureElement: Bool { get set }
 @property (nonatomic, assign) BOOL requiresFelicaSecureElement;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be used as a filter to determine which cards are shown in the [`PKAddPaymentPassViewController`](../pkaddpaymentpassviewcontroller.md) class’s intro screen. The property defaults to [`false`](../../Swift/false.md).
 

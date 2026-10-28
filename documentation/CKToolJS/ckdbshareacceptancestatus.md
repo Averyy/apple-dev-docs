@@ -21,7 +21,7 @@ interface CKDBShareAcceptanceStatus {
 };
 ```
 
-#### Overview
+## Overview
 
 Possible values are `INVITED`, `ACCEPTED`, `REMOVED`, and `UNKNOWN`.
 

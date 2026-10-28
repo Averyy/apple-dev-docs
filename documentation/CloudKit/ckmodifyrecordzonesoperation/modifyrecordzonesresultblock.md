@@ -21,7 +21,7 @@ The closure to execute after CloudKit modifies all of the record zones.
 var modifyRecordZonesResultBlock: ((Result<Void, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameter:
 

@@ -20,7 +20,7 @@ class NSSpecifierTest
 @interface NSSpecifierTest : NSScriptWhoseTest
 ```
 
-#### Overview
+## Overview
 
 Instances of this class represent a Boolean expression; they evaluate an object specifier and compare the resulting object to another object using a given comparison method. For more information on `NSSpecifierTest`, see the method description for its sole public method, its initializer, [`init(objectSpecifier:comparisonOperator:test:)`](./nsspecifiertest/init%28objectspecifier,comparisonoperator,test%29.md).
 

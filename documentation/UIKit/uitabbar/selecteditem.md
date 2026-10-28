@@ -23,7 +23,7 @@ weak var selectedItem: UITabBarItem? { get set }
 @property (nonatomic, weak, nullable) UITabBarItem * selectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the currently selected item. If you change the value of this property, the tab bar selects the corresponding item and updates the tab bar’s appearance accordingly. Set the property to `nil` to clear the selection.
 

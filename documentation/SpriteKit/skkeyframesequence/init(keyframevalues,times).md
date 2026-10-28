@@ -25,11 +25,11 @@ init(keyframeValues values: [Any], times: [NSNumber])
 - (instancetype) initWithKeyframeValues:(NSArray *) values times:(NSArray<NSNumber *> *) times;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sequence.
 
-#### Discussion
+## Discussion
 
 The two arrays must have an identical number of elements. The keyframes in the new sequence are stored in the same order as the input arrays.
 

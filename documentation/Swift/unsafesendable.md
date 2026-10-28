@@ -23,7 +23,7 @@ A type whose values can safely be passed across concurrency domains by copying, 
 protocol UnsafeSendable : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use an unchecked conformance to `Sendable` instead — for example:
 

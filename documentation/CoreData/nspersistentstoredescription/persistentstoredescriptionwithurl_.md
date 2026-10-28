@@ -21,11 +21,11 @@ Initializes and returns a persistent store description with the given URL.
 + (instancetype) persistentStoreDescriptionWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSPersistentStoreDescription`](../nspersistentstoredescription.md) configured with the given URL.
 
-#### Discussion
+## Discussion
 
 This method is a convenience for creating a new [`NSPersistentStoreDescription`](../nspersistentstoredescription.md) configured with a given URL.
 

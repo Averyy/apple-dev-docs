@@ -24,7 +24,7 @@ var gain: Double { get set }
 @property (nonatomic) double gain;
 ```
 
-#### Discussion
+## Discussion
 
 This property modifies the volume of all the mixer’s audio in the output’s final stages. The framework clamps the value to the range between `0` and `1`, where `0` silences the audio and `1` doesn’t modify the audio’s original volume.
 

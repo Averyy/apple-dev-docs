@@ -19,7 +19,7 @@ Creates a data source from a folder with subfolders that each contain audio file
 case labeledDirectories(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 This data source uses each subdirectory’s name as the label for the audio files contained within them. For example, for a directory that contains a `Laughter` subdirectory, the data source applies the label `"Laughter"` to each audio file in that subdirectory.
 

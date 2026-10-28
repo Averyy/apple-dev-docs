@@ -20,7 +20,7 @@ var appliesPreferredDisplayCriteriaAutomatically: Bool { get set }
 @property (nonatomic) BOOL appliesPreferredDisplayCriteriaAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 If this property value is `true`, the player uses the preferred display criteria of the video asset when playing the content in fullscreen. The display criteria is reset to the display’s default criteria when full-screen playback ends. Don’t change this value during full-screen presentation unless you’ve disposed of the player or player item.
 

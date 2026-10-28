@@ -22,7 +22,7 @@ func GLKVector4Subtract(_ vectorLeft: GLKVector4, _ vectorRight: GLKVector4) -> 
 static GLKVector4 GLKVector4Subtract(GLKVector4 vectorLeft, GLKVector4 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector whose components each represent the difference between the components found in the same positions of the two source vectors.
 

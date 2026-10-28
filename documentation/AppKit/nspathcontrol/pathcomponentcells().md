@@ -21,7 +21,7 @@ func pathComponentCells() -> [NSPathComponentCell]
 - (NSArray<NSPathComponentCell *> *) pathComponentCells;
 ```
 
-#### Return Value
+## Return Value
 
 The array of `NSPathComponentCell` objects.
 

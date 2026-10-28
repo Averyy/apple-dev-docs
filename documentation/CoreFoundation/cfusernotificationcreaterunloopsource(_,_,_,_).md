@@ -19,11 +19,11 @@ func CFUserNotificationCreateRunLoopSource(_ allocator: CFAllocator!, _ userNoti
 extern CFRunLoopSourceRefCFUserNotificationCreateRunLoopSource(CFAllocatorRef allocator, CFUserNotificationRef userNotification, CFUserNotificationCallBack callout, CFIndex order);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFRunLoopSource object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 A run loop source needs to be added to a run loop before it can fire and call its callback function. To add the source to a run loop, use [`CFRunLoopAddSource(_:_:_:)`](./cfrunloopaddsource%28_,_,_%29.md).
 

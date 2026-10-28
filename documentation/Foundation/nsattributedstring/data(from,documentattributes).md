@@ -25,11 +25,11 @@ func data(from range: NSRange, documentAttributes dict: [NSAttributedString.Docu
 - (NSData *) dataFromRange:(NSRange) range documentAttributes:(NSDictionary<NSString *,id> *) dict error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the data for the attributed string, or `nil` if failure. When `nil`, `error` encapsulates the error information.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

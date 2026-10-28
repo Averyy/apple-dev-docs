@@ -25,7 +25,7 @@ var filterType: MKLocalSearchCompleter.FilterType { get set }
 @property (nonatomic, assign) MKSearchCompletionFilterType filterType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine whether you want completions that represent points-of-interest or whether completions might yield additional relevant query strings.
 

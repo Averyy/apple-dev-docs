@@ -21,7 +21,7 @@ func drawStatusBarBackground(in rect: NSRect, withHighlight highlight: Bool)
 - (void) drawStatusBarBackgroundInRect:(NSRect) rect withHighlight:(BOOL) highlight;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to help a custom status-bar item emulate the behavior of a standard item.
 

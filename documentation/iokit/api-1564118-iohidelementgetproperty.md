@@ -16,11 +16,11 @@ Returns the an element property.
 CFTypeRef IOHIDElementGetProperty(IOHIDElementRef element, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the property.
 
-#### Discussion
+## Discussion
 
 Property keys are prefixed by kIOHIDElement and declared in IOHIDKeys.h.
 

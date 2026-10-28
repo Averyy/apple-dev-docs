@@ -17,7 +17,7 @@ Requests a configuration to use for a shield that covers a website because of it
 func configuration(shielding webDomain: WebDomain, in category: ActivityCategory) -> ShieldConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The shield to display.
 

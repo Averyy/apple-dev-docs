@@ -26,11 +26,11 @@ func AUGraphRemoveRenderNotify(_ inGraph: AUGraph, _ inCallback: AURenderCallbac
 extern OSStatus AUGraphRemoveRenderNotify(AUGraph inGraph, AURenderCallback inCallback, void *inRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Removes a previously added render notification callback. You must provide both the callback and the context (in the `inRefCon` parameter) that was used previously to add the callback.
 

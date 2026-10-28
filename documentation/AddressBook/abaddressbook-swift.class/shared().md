@@ -19,11 +19,11 @@ class func shared() -> ABAddressBook!
 + (ABAddressBook *) sharedAddressBook;
 ```
 
-#### Return Value
+## Return Value
 
 The unique shared instance of `ABAddressBook`, or `nil` if the Address Book database can’t be initialized.
 
-#### Discussion
+## Discussion
 
 This method returns the address book for the logged-in user that is shared by every application. If you call this method more than once or try to create a new address book, you will get a pointer to the same shared address book.
 

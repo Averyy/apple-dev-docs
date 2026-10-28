@@ -19,7 +19,7 @@ var NSTextWritingDirectionOverride: Int { get }
 NSTextWritingDirectionOverride
 ```
 
-#### Discussion
+## Discussion
 
 Enables character types with inherent directionality to be overridden when required for special cases, such as for part numbers made of mixed English, digits, and Hebrew letters to be written from right to left.
 

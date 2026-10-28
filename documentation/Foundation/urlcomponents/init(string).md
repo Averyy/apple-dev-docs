@@ -21,7 +21,7 @@ Creates a URL components instance from a URL string.
 init?(string: String)
 ```
 
-#### Discussion
+## Discussion
 
 If `string` represents a malformed URL, this initializer returns `nil`.
 

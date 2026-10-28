@@ -17,13 +17,13 @@ Apply 3D channel-wise dropout during training.
 class Dropout3d
 ```
 
-#### Overview
+## Overview
 
 Randomly zero out entire channels independently with probability `p`. This layer expects the channels to be last, i.e., the input shape should be `NDHWC` or `DHWC` where: `N` is the batch dimension, `D` is the depth, `H` is the input image height, `W` is the input image width, and `C` is the number of input channels.
 
 The remaining channels are scaled by `1 / (1-p)` to maintain the expected value of each element. Unlike traditional dropout, which zeros individual entries, this layer zeros entire channels. This is often beneficial for convolutional layers processing 3D data, like in medical imaging or video processing.
 
-##### See Also
+### See Also
 
 - [`Dropout`](./dropout.md)
 - [`Dropout2d`](./dropout2d.md)

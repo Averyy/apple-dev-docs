@@ -25,11 +25,11 @@ class var current: Calendar { get }
 @property (class, copy, readonly) NSCalendar * currentCalendar;
 ```
 
-#### Return Value
+## Return Value
 
 The logical calendar for the current user.
 
-#### Discussion
+## Discussion
 
 The returned calendar is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified in System Preferences. Settings you get from this calendar do not change as System Preferences are changed, so that your operations are consistent  (contrast with [`autoupdatingCurrent`](./autoupdatingcurrent.md)).
 

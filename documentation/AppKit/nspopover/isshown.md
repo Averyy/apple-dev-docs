@@ -19,7 +19,7 @@ var isShown: Bool { get }
 @property (readonly, getter=isShown) BOOL shown;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if the popover is being shown, [`false`](../../Swift/false.md) otherwise.
 

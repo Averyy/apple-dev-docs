@@ -21,7 +21,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, willEndCu
 - (void) tabBarController:(UITabBarController *) tabBarController willEndCustomizingViewControllers:(NSArray<__kindof UIViewController *> *) viewControllers changed:(BOOL) changed;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called in response to the user tapping the Done button on the sheet but before the sheet is dismissed.
 

@@ -13,7 +13,7 @@
 kINQUIRY_Page89_PageCode = 0x89
 ```
 
-#### Discussion
+## Discussion
 
 Page Code 89h.
 

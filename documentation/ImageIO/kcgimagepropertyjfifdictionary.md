@@ -25,7 +25,7 @@ let kCGImagePropertyJFIFDictionary: CFString
 extern CFStringRef const kCGImagePropertyJFIFDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the available metadata keys, see [JFIF Image Properties](./jfif-image-properties.md).
 

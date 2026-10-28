@@ -16,7 +16,7 @@ An environment value that that indicates potential rendered family for a Live Ac
 var supportedActivityFamilies: Set<ActivityFamily> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To detect the currently rendered activity family size, use the [`activityFamily`](./activityfamily.md) environment variable. The `supportedActivityFamilies` environment value might only be useful if your make you make your Live Activity views available in a Swift package.
 

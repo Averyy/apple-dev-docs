@@ -25,7 +25,7 @@ var sourceEntityName: String? { get set }
 @property (copy, nullable) NSString * sourceEntityName;
 ```
 
-#### Discussion
+## Discussion
 
 Mappings are not directly bound to entity descriptions; you can use the [`sourceEntity(for:)`](../nsmigrationmanager/sourceentity%28for%29.md) method on the migration manager to retrieve the entity description for this entity name.
 

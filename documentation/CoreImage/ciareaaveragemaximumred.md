@@ -24,7 +24,7 @@ protocol CIAreaAverageMaximumRed : CIAreaReductionFilter
 @protocol CIAreaAverageMaximumRed <CIAreaReductionFilter>
 ```
 
-#### Overview
+## Overview
 
 Calculates the average and maximum red component value for the specified area in an image. The result is returned in the red and green channels of a one pixel image.
 

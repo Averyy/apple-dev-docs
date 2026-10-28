@@ -23,7 +23,7 @@ case failureContactNotSupportedByApp
 INStartCallIntentResponseCodeFailureContactNotSupportedByApp
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the sender or recipient can’t take part in a call.
 

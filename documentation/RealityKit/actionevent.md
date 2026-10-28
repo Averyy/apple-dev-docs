@@ -20,7 +20,7 @@ The structure returned to all action event handlers.
 struct ActionEvent<ActionType> where ActionType : EntityAction
 ```
 
-#### Overview
+## Overview
 
 Actions perform their function within one or more custom event handlers associated with an action type.
 

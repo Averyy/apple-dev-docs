@@ -22,7 +22,7 @@ A user interface element that represents an inline tip.
 @preconcurrency struct TipView<Content> where Content : Tip
 ```
 
-#### Overview
+## Overview
 
 You create a tip view by providing a tip along with an optional arrow edge and action handler. The tip is a type that conforms to the [`Tip`](./tip.md) protocol. The arrow edge is a directional arrow pointing away from the tip. The action is a closure that executes when the user triggers a tip’s button.
 

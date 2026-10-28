@@ -15,11 +15,11 @@ Decrement the count of pending writes on a vnode .
 void vnode_writedone(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Also wakes up threads waiting for the write count to drop, as in vnode_waitforwrites.
 

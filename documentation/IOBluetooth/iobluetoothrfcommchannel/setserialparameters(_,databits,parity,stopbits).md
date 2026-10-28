@@ -19,7 +19,7 @@ func setSerialParameters(_ speed: UInt32, dataBits nBits: UInt8, parity: Bluetoo
 - (IOReturn) setSerialParameters:(UInt32) speed dataBits:(UInt8) nBits parity:(BluetoothRFCOMMParityType) parity stopBits:(UInt8) bitStop;
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 

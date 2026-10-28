@@ -19,7 +19,7 @@ func raiseBaseline(_ sender: Any?)
 - (void) raiseBaseline:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 As such, this method defines a more primitive operation than superscripting.
 

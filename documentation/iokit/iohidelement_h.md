@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOHIDElement defines a parsed item contained within a Human Interface Device (HID) object. It is used to obtain properties of the parsed. It can also be used to set properties such as calibration settings. IOHIDElement is a CFType object and as such conforms to all the conventions expected such object.
 
@@ -11,7 +11,7 @@ This documentation assumes that you have a basic understanding of the material c
 
 All of the information described in this document is contained in the header file `IOHIDElement.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDElement.h`.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <IOKit/hid/IOHIDKeys.h>

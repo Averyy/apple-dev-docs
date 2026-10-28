@@ -15,7 +15,7 @@ Keyframes rule type. Read [WebKitCSSKeyframesRule](../webkitcsskeyframesrule.md)
 const unsigned short WEBKIT_KEYFRAMES_RULE;
 ```
 
-#### Discussion
+## Discussion
 
 ```javascript
 const unsigned short WEBKIT_KEYFRAMES_RULE = 7;

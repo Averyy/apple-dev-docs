@@ -11,7 +11,7 @@ Creates targeting keywords in ad groups.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Overview
+## Overview
 
 > **Note**:  If you create duplicate keywords, the payload response indicates an error, but the call returns with a 200 status code.
 
@@ -22,7 +22,7 @@ Creates targeting keywords in ad groups.
 - 429: The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
 - 500: The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
-#### Discussion
+## Discussion
 
 Keywords must belong to a specific ad group, unlike negative keywords, which can belong to a campaign or an ad group.
 
@@ -30,7 +30,7 @@ To create targeting keywords, use the associated `campaignId` and `adgroupId` in
 
 > **Note**:  The limit is 5000 targeting keywords per campaign and per ad group.
 
-##### Payload example: Create ad group targeting keywords
+### Payload example: Create ad group targeting keywords
 
 **Request**:
 
@@ -91,7 +91,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adg
 ]
 ```
 
-##### Payload example: Create ad group targeting keywords in a Maximize Conversions campaign
+### Payload example: Create ad group targeting keywords in a Maximize Conversions campaign
 
 - `bidAmount` must be omitted, `null`, or `0`.
 - Keywords cannot be created in automated ad groups.

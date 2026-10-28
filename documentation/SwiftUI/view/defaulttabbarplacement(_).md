@@ -22,7 +22,7 @@ nonisolated
 func defaultTabBarPlacement(_ defaultPlacement: AdaptableTabBarPlacement) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 On platforms that support adapting between a sidebar and tab bar (currently iPadOS), use [`defaultAdaptableTabBarPlacement(_:)`](./defaultadaptabletabbarplacement%28_%29.md) to configure the adaptable tab bar.
 

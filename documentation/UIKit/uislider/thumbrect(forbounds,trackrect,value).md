@@ -22,11 +22,11 @@ func thumbRect(forBounds bounds: CGRect, trackRect rect: CGRect, value: Float) -
 - (CGRect) thumbRectForBounds:(CGRect) bounds trackRect:(CGRect) rect value:(float) value;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the thumb image.
 
-#### Discussion
+## Discussion
 
 You do not call this method directly. Instead, you override it when you want to customize the thumb image’s drawing rectangle, returning a different rectangle. The rectangle you return must reflect the size of your thumb image and its current position on the slider’s track.
 

@@ -20,7 +20,7 @@ Sets the dimensions of multiple input tensors on a range of buffer bindings.
 - (void) setInputDimensions:(NSArray<MTLTensorExtents *> *) dimensions withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to specify the dimensions of multiple input tensors at a range of indices in a single call.
 

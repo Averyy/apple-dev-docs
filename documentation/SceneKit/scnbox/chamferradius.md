@@ -25,7 +25,7 @@ var chamferRadius: CGFloat { get set }
 @property (nonatomic) CGFloat chamferRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The minimum (and default) corner radius is `0.0`, specifying square corners. Set this property to a nonzero value to add rounded edges and corners to the box. Setting a corner radius of less than zero creates an empty geometry.
 

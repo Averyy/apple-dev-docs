@@ -25,11 +25,11 @@ func vImageConvert_YpCbCrToARGB_GenerateConversion(_ matrix: UnsafePointer<vImag
 vImage_Error vImageConvert_YpCbCrToARGB_GenerateConversion(const vImage_YpCbCrToARGBMatrix *matrix, const vImage_YpCbCrPixelRange *pixelRange, vImage_YpCbCrToARGB *outInfo, vImageYpCbCrType inYpCbCrType, vImageARGBType outARGBType, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 You use this function to create the [`vImage_YpCbCrToARGB`](./vimage_ypcbcrtoargb.md) conversion information necessary for all YUV-to-RGB conversion functions.
 

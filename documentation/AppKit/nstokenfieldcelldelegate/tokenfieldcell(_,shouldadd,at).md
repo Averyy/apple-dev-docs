@@ -20,11 +20,11 @@ optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, shouldAdd token
 - (NSArray *) tokenFieldCell:(NSTokenFieldCell *) tokenFieldCell shouldAddObjects:(NSArray *) tokens atIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 An array of validated tokens.
 
-#### Discussion
+## Discussion
 
 The delegate can return the array unchanged or return a modified array of tokens. To reject the add completely, return an empty array. Returning `nil` causes an error.
 

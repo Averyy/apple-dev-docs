@@ -24,7 +24,7 @@ init(cgImage image: CGImage)
 - (instancetype) initWithCGImage:(CGImageRef) image;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

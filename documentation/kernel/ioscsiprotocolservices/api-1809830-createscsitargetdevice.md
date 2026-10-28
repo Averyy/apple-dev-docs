@@ -12,11 +12,11 @@ virtual bool CreateSCSITargetDevice (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 True if successful, otherwise false.
 
-#### Overview
+## Overview
 
 The CreateSCSITargetDevice member routine will create the appropriate object to represent the Target portion of a SCSI Device. This object is responsible for managing the Target functions of the SCSI Device including the Task Manager and Logical Units.
 

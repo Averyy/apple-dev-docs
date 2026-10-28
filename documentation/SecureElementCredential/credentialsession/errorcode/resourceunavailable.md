@@ -16,7 +16,7 @@ The requested resource is unavailable.
 case resourceUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 You can try again after receiving this error.
 

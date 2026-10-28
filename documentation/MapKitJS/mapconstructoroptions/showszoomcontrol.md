@@ -15,7 +15,7 @@ A Boolean value that determines whether to display a control for zooming in and 
 showsZoomControl?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `true`, unless you configure the map to support pinch-to-zoom.
 

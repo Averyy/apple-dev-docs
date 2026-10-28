@@ -22,7 +22,7 @@ class let touchBarHistoryTemplateName: String
 extern NSImageName const NSImageNameTouchBarHistoryTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for history](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793509@2x.png)
 

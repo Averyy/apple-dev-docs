@@ -24,7 +24,7 @@ case decrementWrap
 MTLStencilOperationDecrementWrap
 ```
 
-#### Discussion
+## Discussion
 
 The operation sets a stencil value to the maximum representable value if its currently equal to `0`.
 

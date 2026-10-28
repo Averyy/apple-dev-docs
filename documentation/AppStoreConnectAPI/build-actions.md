@@ -5,7 +5,7 @@
 
 Read information about actions you configured for an Xcode Cloud workflow and their related data such as artifacts, issues, or test results.
 
-#### Overview
+## Overview
 
 The `ciBuildActions` resource represents the actions Xcode Cloud performed when it built your project or workspace. Use it to read information about the actions Xcode Cloud performed during a build; for example:
 

@@ -15,11 +15,11 @@ Creates the specified view controller from the storyboard and initializes it usi
 func instantiateController<Controller>(identifier: NSStoryboard.SceneIdentifier, creator: ((NSCoder) -> Controller?)? = nil) -> Controller where Controller : NSViewController
 ```
 
-#### Return Value
+## Return Value
 
 The view controller that corresponds to the specified identifier string. If no view controller has the given identifier, this method throws an exception.
 
-#### Discussion
+## Discussion
 
 Use this method to create a view controller object programmatically. Each time you call this method, it creates a new instance of the view controller using the block you provide.
 

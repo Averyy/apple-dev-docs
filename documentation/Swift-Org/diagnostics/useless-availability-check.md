@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that identify `if #available` queries that are guaranteed to succeed because an enclosing scope already restricts availability.
 
-#### Overview
+## Overview
 
 When an `if #available` query checks for an availability that is already implied by the availability of an enclosing scope (such as a containing declaration’s `@available` attribute or another `if #available` block), the check is unnecessary and the guard will always succeed at runtime.
 

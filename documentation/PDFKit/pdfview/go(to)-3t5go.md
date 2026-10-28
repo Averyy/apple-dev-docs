@@ -24,7 +24,7 @@ func go(to selection: PDFSelection)
 - (void) goToSelection:(PDFSelection *) selection;
 ```
 
-#### Discussion
+## Discussion
 
 PDF Kit records the move in its page history.
 

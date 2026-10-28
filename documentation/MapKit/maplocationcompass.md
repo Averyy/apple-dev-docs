@@ -16,7 +16,7 @@ A view that displays a combined user location button and map compass.
 @preconcurrency struct MapLocationCompass
 ```
 
-#### Overview
+## Overview
 
 In watchOS 10 and later, this view displays a combined [`MapUserLocationButton`](./mapuserlocationbutton.md) and [`MapCompass`](./mapcompass.md) control. When the map camera has a heading of zero (where north is up), this view shows the user location button. When the map camera is in a rotated state, it shows a compass.
 

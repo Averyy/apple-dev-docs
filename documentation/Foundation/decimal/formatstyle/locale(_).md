@@ -21,11 +21,11 @@ Modifies the format style to use the specified locale.
 func locale(_ locale: Locale) -> Decimal.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the provided locale.
 
-#### Discussion
+## Discussion
 
 Use this modifier to change the locale that an existing format style uses. To instead determine the locale that this format style uses, use the [`locale`](./locale.md) property.
 

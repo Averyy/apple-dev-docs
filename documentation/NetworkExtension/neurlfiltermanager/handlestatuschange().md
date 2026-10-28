@@ -18,7 +18,7 @@ Sets up an observer for the status notification and models it as an asynchronous
 func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>
 ```
 
-#### Discussion
+## Discussion
 
 The [`AsyncSequence`](../../Swift/asyncsequence.md) created by this method produces a new status every time the filter posts the [`NEURLFilterStatusDidChange`](../../Foundation/nsnotification/name-swift.struct/neurlfilterstatusdidchange.md) notification.
 

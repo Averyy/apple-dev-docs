@@ -18,7 +18,7 @@ Creates a cloth mesh resource from a rendering mesh resource.
 convenience init(from mesh: MeshResource) throws
 ```
 
-#### Discussion
+## Discussion
 
 Generates a cloth mesh from a rendering mesh without remeshing. No remeshing is performed. In other words, the resulting [`ClothMeshResource`](../clothmeshresource.md) will match exactly the original [`MeshResource`](../meshresource.md).
 

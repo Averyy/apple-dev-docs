@@ -15,7 +15,7 @@ A dictionary that contains the attributes Video Toolbox uses to create a pixel b
 var pixelBufferAttributes: [String : any Sendable] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The processor can update this dictionary before it requests a new pixel buffer.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether to prevent receiving tagged memory from o
 - **Name**: `com.apple.security.hardened-process.checked-allocations.no-tagged-receive` (Hardened Process - Prevent Receiving Tagged Memory)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This behavior provides additional protection for processes that run arbitrary code, such as interpreters and JITs.
 

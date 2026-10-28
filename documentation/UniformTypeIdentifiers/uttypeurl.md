@@ -21,7 +21,7 @@ A type that represents a URL.
 extern UTType * const UTTypeURL;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.url`.
 

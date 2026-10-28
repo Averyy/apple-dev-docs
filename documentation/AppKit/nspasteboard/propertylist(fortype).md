@@ -19,15 +19,15 @@ func propertyList(forType dataType: NSPasteboard.PasteboardType) -> Any?
 - (id) propertyListForType:(NSPasteboardType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A property list of objects of the specified type, obtained from the first item in the receiver that contains the type. The returned property list can contain any combination of objects, as long as each object is a valid property-list type (for a list of types, see [Property list](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/PropertyList.html#//apple_ref/doc/uid/TP40008195-CH44)).
 
-#### Discussion
+## Discussion
 
 This method invokes the [`data(forType:)`](./data%28fortype%29.md) method.
 
-##### Special Considerations
+### Special Considerations
 
 It’s a good idea to check [`types`](./types.md) or call [`availableType(from:)`](./availabletype%28from%29.md) before invoking [`propertyList(forType:)`](./propertylist%28fortype%29.md). Although performing this check isn’t required, doing so can help you determine if a `nil` result from a reading method is due to something like a pasteboard timeout.
 

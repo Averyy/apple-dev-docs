@@ -27,7 +27,7 @@ func enumeratorForMaterializedItems() -> any NSFileProviderEnumerator
 
 - [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
 
-#### Discussion
+## Discussion
 
 In most cases, the system requests an enumerator from the File Provider. The file provider creates the enumerator, and uses it to pass information back to the system. In this case, however, the roles are reversed. The File Provider extension calls this method to request an enumerator from the system. The system then creates the enumerator and uses it to pass the list of items currently stored on disk back to the File Provider extension.
 

@@ -24,7 +24,7 @@ var numberOfLoops: Int { get set }
 @property (nonatomic) NSInteger numberOfLoops;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value [`AVMusicTrackLoopCount.forever`](../avmusictrackloopcount/forever.md) to loop the track forever. Otherwise, valid values start at `1`.
 

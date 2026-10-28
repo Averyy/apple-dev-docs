@@ -21,7 +21,7 @@ Loads assets into memory or pre-fills caches ahead of a request.
 func prewarm(model: Self.Model, transcript: Transcript)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The default implementation is a no-op.
 

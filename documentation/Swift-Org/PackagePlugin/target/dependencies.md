@@ -18,7 +18,7 @@ Any other targets on which this target depends, in the same order as they are sp
 var dependencies: [TargetDependency] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Conditional dependencies that do not apply are filtered out.
 

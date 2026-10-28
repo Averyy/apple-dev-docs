@@ -21,7 +21,7 @@ Creates a new string by copying the null-terminated UTF-8 data referenced by the
 init(cString nullTerminatedUTF8: UnsafePointer<CChar>)
 ```
 
-#### Discussion
+## Discussion
 
 If `cString` contains ill-formed UTF-8 code unit sequences, this initializer replaces them with the Unicode replacement character (`"\u{FFFD}"`).
 

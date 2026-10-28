@@ -24,7 +24,7 @@ case anisotropic
 MDLMaterialSemanticAnisotropic
 ```
 
-#### Discussion
+## Discussion
 
 This semantic has no effect in a mesh that does not contain vertex attribute data providing a tangent basis.
 

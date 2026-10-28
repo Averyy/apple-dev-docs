@@ -21,7 +21,7 @@ The maximum number of elements this array can hold without having to reallocate 
 var capacity: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

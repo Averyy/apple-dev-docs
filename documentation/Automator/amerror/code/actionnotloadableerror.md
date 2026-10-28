@@ -20,7 +20,7 @@ case actionNotLoadableError
 AMActionNotLoadableError
 ```
 
-#### Discussion
+## Discussion
 
 If the action uses a custom subclass of [`AMBundleAction`](../../ambundleaction.md) or [`AMAppleScriptAction`](../../amapplescriptaction.md), then the most likely problem is that the bundle’s executable is missing or the `NSPrincipleClass` is not set in the `Info.plist`. Users are likely to be confused by a “missing bundle” error, so Automator presents it as the more generic “action not loadable” error.
 

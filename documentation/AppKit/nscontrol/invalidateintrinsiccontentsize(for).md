@@ -19,7 +19,7 @@ func invalidateIntrinsicContentSize(for cell: NSCell)
 - (void) invalidateIntrinsicContentSizeForCell:(NSCell *) cell;
 ```
 
-#### Discussion
+## Discussion
 
 Controls determine their intrinsic content size based on the cell size for a given bounds returned by their cell. When the content of the cell changes in a way that would change the return value of [`cellSize(forBounds:)`](../nscell/cellsize%28forbounds%29.md), the cell needs to call this method to notify its control that its intrinsic size is no longer valid.
 

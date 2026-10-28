@@ -14,7 +14,7 @@
 kTECFallbackTextLengthFixBit = 1
 ```
 
-#### Discussion
+## Discussion
 
 This is set if the Unicode Converter has a bug fix to use the source length (`srcConvLen) `and destination length (`destConvLen)` returned by a caller-supplied fall-back handler for any status it returns except `kTECUnmappableElementErr`. Previously it honored only these values if `noErr` was returned.
 

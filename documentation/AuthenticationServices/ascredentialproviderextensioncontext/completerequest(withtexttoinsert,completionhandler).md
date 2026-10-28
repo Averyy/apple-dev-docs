@@ -24,7 +24,7 @@ func completeRequest(withTextToInsert text: String) async -> Bool
 - (void) completeRequestWithTextToInsert:(NSString *) text completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
-#### Overview
+## Overview
 
 At some point after you call this method, the system dismisses the associated view controller.
 

@@ -20,7 +20,7 @@ var fullDayEntry: MetricReport.IntervalEntry { get }
 
 Available when `Element` is `MetricReport.IntervalEntry`.
 
-#### Discussion
+## Discussion
 
 This entry contains metrics aggregated across the entire aggregation period while other interval entries represent breakdowns within that period.
 

@@ -15,11 +15,11 @@ Send a response to a connect command to the remote client.
 OBEXError OBEXSessionConnectResponse(OBEXSessionRef inSessionRef, OBEXOpCode inResponseOpCode, OBEXFlags inFlags, OBEXMaxPacketLength inMaxPacketLength, void *inOptionalHeaders, size_t inOptionalHeadersLength, OBEXSessionEventCallback inCallback, void *inUserRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 As all commands for OBEX sessions, this command is asynchronous only. A NULL callback paramter will result in an error.
 

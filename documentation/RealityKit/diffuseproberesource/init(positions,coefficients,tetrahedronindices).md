@@ -21,7 +21,7 @@ nonisolated
 convenience init(positions: [SIMD3<Float>], coefficients: [InlineArray<3, SIMD4<Float>>], tetrahedronIndices: [SIMD4<UInt16>]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the data is invalid — for example, if `positions.count` and `coefficients.count` differ, if fewer than 4 probes are provided, or if any tetrahedral index is out of bounds.
 

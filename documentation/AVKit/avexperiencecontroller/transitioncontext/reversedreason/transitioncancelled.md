@@ -15,7 +15,7 @@ A transition in progress has been cancelled.
 case transitionCancelled
 ```
 
-#### Discussion
+## Discussion
 
 This can happen due to user interaction or some other system event.
 

@@ -20,7 +20,7 @@ optional func spellServer(_ sender: NSSpellServer, didForgetWord word: String, i
 - (void) spellServer:(NSSpellServer *) sender didForgetWord:(NSString *) word inLanguage:(NSString *) language;
 ```
 
-#### Discussion
+## Discussion
 
 If your delegate maintains a similar auxiliary word list, you may wish to edit the list accordingly.
 

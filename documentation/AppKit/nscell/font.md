@@ -19,7 +19,7 @@ var font: NSFont? { get set }
 @property (strong, nullable) NSFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the cell is not a text-type cell. Assigning a new font object to this property converts the cell to a text-type cell if it is not already one.
 

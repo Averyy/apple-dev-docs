@@ -17,7 +17,7 @@ Increment the vector entry for the current process.
 mutating func increment(clockFor uuid: UUID)
 ```
 
-#### Discussion
+## Discussion
 
 This method should be called each time the vector’s owner completes merging a revision.
 

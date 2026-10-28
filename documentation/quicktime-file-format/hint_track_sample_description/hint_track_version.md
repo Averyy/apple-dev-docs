@@ -6,7 +6,7 @@
 
 A 16-bit unsigned integer indicating the version of the hint track specification.
 
-#### Overview
+## Overview
 
 This is currently set to `1`.
 

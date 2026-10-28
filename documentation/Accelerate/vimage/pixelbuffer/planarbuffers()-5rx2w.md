@@ -23,11 +23,11 @@ func planarBuffers() -> [vImage.PixelBuffer<vImage.Planar8>]
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Return Value
+## Return Value
 
 An array of planar pixel buffers.
 
-#### Discussion
+## Discussion
 
 Use this function to deinterleave a buffer and create four new planar buffers that contain copies of each source channel. For example, the following code generates four 1 x 1 planar buffers from an [`vImage.Interleaved8x4`](../interleaved8x4.md) pixel buffer:
 

@@ -23,7 +23,7 @@ func removeFromParent()
 - (void) removeFromParent;
 ```
 
-#### Discussion
+## Discussion
 
 If you remove a context from its parent and don’t add it as the child of another context before you call [`save(completion:)`](../clsdatastore/save%28completion%29.md), then the framework deletes the context entirely.
 

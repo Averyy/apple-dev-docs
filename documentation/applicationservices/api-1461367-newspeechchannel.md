@@ -19,11 +19,11 @@ func NewSpeechChannel(_ voice: UnsafeMutablePointer<VoiceSpec>?, _ chan: UnsafeM
 OSErr NewSpeechChannel(VoiceSpec *voice, SpeechChannel  _Nullable *chan);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `NewSpeechChannel` functionallocates memory for a speech channel structure and sets the speechchannel variable pointed to by the `chan` parameterto point to this speech channel structure. The Speech SynthesisManager automatically locates and opens a connection to the propersynthesizer for the voice specified by the `voice` parameter.
 

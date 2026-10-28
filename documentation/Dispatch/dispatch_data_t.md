@@ -25,7 +25,7 @@ typealias dispatch_data_t = __DispatchData
 typedef NSObject<OS_dispatch_data> * dispatch_data_t;
 ```
 
-#### Discussion
+## Discussion
 
 Any direct access to the memory in a dispatch data object must not modify that memory.
 

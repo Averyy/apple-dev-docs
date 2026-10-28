@@ -16,7 +16,7 @@ Activates the capability.
 func activate() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the capability cannot be activated.
 

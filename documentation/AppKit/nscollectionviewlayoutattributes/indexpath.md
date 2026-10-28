@@ -19,7 +19,7 @@ var indexPath: IndexPath? { get set }
 @property (strong, nullable) NSIndexPath * indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use the index path to locate information about the item in your app’s data structures. For supplementary and decoration views, you must also use the [`representedElementKind`](./representedelementkind.md) property to identify the element.
 

@@ -20,11 +20,11 @@ func FFReleaseDevice(_ deviceReference: FFDeviceObjectReference!) -> HRESULT
 extern HRESULT FFReleaseDevice(FFDeviceObjectReference deviceReference);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, and the device supports FF, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 

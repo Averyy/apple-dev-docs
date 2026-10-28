@@ -15,11 +15,11 @@ Synchronously read a block of a file.
 errno_t buf_bread(vnode_t vp, daddr64_t blkno, int size, kauth_cred_t cred, buf_t *bpp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or an error from buf_biowait().
 
-#### Discussion
+## Discussion
 
 buf_bread() is the traditional way to read a single logical block of a file through the buffer cache. It tries to find the buffer and corresponding page(s) in core, calls VNOP_STRATEGY if necessary to bring the data into memory, and waits for I/O to complete. It should not be used to read blocks of greater than 4K (one VM page) in size; use cluster routines for large reads. Indeed, the cluster layer is a more efficient choice for reading DATA unless you need some finely-tuned semantics that it cannot provide.
 

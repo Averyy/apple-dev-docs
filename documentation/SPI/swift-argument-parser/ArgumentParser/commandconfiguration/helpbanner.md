@@ -17,7 +17,7 @@ A banner shown at the top of the help display for this command and, unless overr
 var helpBanner: String?
 ```
 
-#### Discussion
+## Discussion
 
 If `helpBanner` is `nil`, the banner is inherited from the nearest ancestor command that specifies one. To suppress an inherited banner, set `helpBanner` to the empty string. Unlike `abstract` and `discussion`, a banner is printed verbatim and is never wrapped to the terminal width.
 

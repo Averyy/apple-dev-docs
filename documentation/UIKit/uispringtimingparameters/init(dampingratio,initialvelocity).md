@@ -23,7 +23,7 @@ init(dampingRatio ratio: CGFloat, initialVelocity velocity: CGVector)
 - (instancetype) initWithDampingRatio:(CGFloat) ratio initialVelocity:(CGVector) velocity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized spring timing parameters object or `nil` if the object could not be created.
 

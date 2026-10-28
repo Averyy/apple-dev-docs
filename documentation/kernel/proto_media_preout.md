@@ -13,11 +13,11 @@
 typedef errno_t (*proto_media_preout)(ifnet_t ifp, protocol_family_t protocol, mbuf_t *packet, const struct sockaddr *dest, void *route, char *frame_type, char *link_layer_dest);
 ```
 
-#### Return Value
+## Return Value
 
 If the result is zero, processing will continue normally. If the result is non-zero, processing will stop. If the result is non-zero and not EJUSTRETURN, the packet will be freed by the caller.
 
-#### Discussion
+## Discussion
 
 proto_media_preout is called just before the packet is transmitted. This gives the proto_media_preout function an opportunity to specify the media specific frame type and destination.
 

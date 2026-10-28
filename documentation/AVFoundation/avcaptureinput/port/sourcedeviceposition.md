@@ -22,7 +22,7 @@ var sourceDevicePosition: AVCaptureDevice.Position { get }
 @property (nonatomic, readonly) AVCaptureDevicePosition sourceDevicePosition;
 ```
 
-#### Discussion
+## Discussion
 
 All ports contained in an [`AVCaptureInput`](../../avcaptureinput.md) object’s [`ports`](../ports.md) array have the same [`sourceDevicePosition`](./sourcedeviceposition.md) value.
 

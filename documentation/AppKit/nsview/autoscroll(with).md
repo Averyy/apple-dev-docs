@@ -19,11 +19,11 @@ func autoscroll(with event: NSEvent) -> Bool
 - (BOOL) autoscroll:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if any scrolling is performed; otherwise returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 View objects that track mouse-dragged events can use this method to scroll automatically when the cursor is dragged outside of the [`NSClipView`](../nsclipview.md) object. Repeated invocations of this method (with an appropriate delay) result in continual scrolling, even when the mouse doesn’t move.
 

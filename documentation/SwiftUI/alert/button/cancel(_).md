@@ -23,11 +23,11 @@ Creates an alert button that indicates cancellation, with a system-provided labe
 static func cancel(_ action: (() -> Void)? = {}) -> Alert.Button
 ```
 
-#### Return Value
+## Return Value
 
 An alert button that indicates cancellation.
 
-#### Discussion
+## Discussion
 
 The system automatically chooses locale-appropriate text for the button’s label.
 

@@ -5,7 +5,7 @@
 
 Reference the signatures and conventions that support the color-management APIs.
 
-#### Overview
+## Overview
 
 These symbols support the main color-management tasks rather than being entry points themselves. You use them while working with profiles: to identify a tag inside a profile, or to check the framework version. The header and availability macros are compiler-level implementation details rather than callable API.
 

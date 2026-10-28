@@ -21,7 +21,7 @@ The result of an intent value query.
 struct ResolvedValueQueryResult
 ```
 
-#### Overview
+## Overview
 
 Use the resolved value query result to verify that your [`IntentValueQuery`](../AppIntents/intentvaluequery.md) returns the expected results as shown in the following example:
 

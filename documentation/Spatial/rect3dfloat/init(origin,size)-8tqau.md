@@ -23,11 +23,11 @@ init(origin: Point3DFloat, size: Size3DFloat)
 static SPRect3DFloat SPRect3DFloatMakeAtOrigin(SPPoint3DFloat origin, SPSize3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle at the specified origin.
 

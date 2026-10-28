@@ -23,7 +23,7 @@ var trackImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * trackImage;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a custom image, the [`trackTintColor`](./tracktintcolor.md) property is ignored.
 

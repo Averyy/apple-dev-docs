@@ -25,7 +25,7 @@ protocol AXDataAxisDescriptor : NSCopying
 @protocol AXDataAxisDescriptor <NSCopying>
 ```
 
-#### Overview
+## Overview
 
 Each [`AXChart`](./axchart.md) requires at least two [`AXDataAxisDescriptor`](./axdataaxisdescriptor.md) objects to describe an x-axis and a y-axis.
 

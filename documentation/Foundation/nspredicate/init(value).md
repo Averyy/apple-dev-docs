@@ -25,7 +25,7 @@ init(value: Bool)
 + (NSPredicate *) predicateWithValue:(BOOL) value;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that always evaluates to `value`.
 

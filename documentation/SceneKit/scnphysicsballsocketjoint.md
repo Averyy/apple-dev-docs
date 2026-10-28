@@ -25,7 +25,7 @@ class SCNPhysicsBallSocketJoint
 @interface SCNPhysicsBallSocketJoint : SCNPhysicsBehavior
 ```
 
-#### Overview
+## Overview
 
 A ball and socket joint has three rotational degrees of freedom and zero translational degrees of freedom. You can also use a ball and socket joint to pin a body to a specific location in the coordinate space of the node containing it while allowing it to rotate freely.
 

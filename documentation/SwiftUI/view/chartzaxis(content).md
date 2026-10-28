@@ -20,7 +20,7 @@ nonisolated
 func chartZAxis<Content>(@AxisContentBuilder content: () -> Content) -> some View where Content : AxisContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to customize the z-axis of a chart. Provide an `AxisMarks` builder that composes `AxisGridLine`, `AxisTick`, and `AxisValueLabel` structures to form the axis. Omit components from the builder to omit them from the resulting axis. For example, the following code adds grid lines to the z-axis:
 

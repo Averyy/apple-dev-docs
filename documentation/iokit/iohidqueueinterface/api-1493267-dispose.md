@@ -16,7 +16,7 @@ Disposes of the current queue.
 IOReturn (*dispose)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

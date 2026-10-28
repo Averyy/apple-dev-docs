@@ -20,7 +20,7 @@ struct es_deadline_miss_mode_t
 typedef enum { ... } es_deadline_miss_mode_t;
 ```
 
-#### Overview
+## Overview
 
 Determines how the system responds when a client fails to respond to an auth event within the deadline.
 

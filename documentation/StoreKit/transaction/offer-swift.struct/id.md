@@ -21,7 +21,7 @@ A string that identifies an offer that applies to the transaction.
 let id: String?
 ```
 
-#### Discussion
+## Discussion
 
 The [`id`](./id.md) is the offer identifier that you provide when you set up an offer in App Store Connect.
 

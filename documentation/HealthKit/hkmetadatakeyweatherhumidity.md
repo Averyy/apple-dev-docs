@@ -24,7 +24,7 @@ let HKMetadataKeyWeatherHumidity: String
 extern NSString * const HKMetadataKeyWeatherHumidity;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an `HKQuantity` value expressed as a percentage. Set this key on an [`HKWorkout`](./hkworkout.md) object to represent the overall humidity during the workout.
 

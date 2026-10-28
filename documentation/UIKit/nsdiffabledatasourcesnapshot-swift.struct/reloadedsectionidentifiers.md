@@ -19,7 +19,7 @@ Identifies the sections reloaded by the changes to the snapshot.
 var reloadedSectionIdentifiers: [SectionIdentifierType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 After you make updates to the snapshot, this method returns an array of identifiers corresponding to the sections that the view reloads when you apply the snapshot to your data source.
 

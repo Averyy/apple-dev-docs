@@ -21,11 +21,11 @@ convenience init(date: Date)
 + (instancetype) textProviderWithDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified date.
 
-#### Discussion
+## Discussion
 
 The text provider created by this method uses the default time zone information of the current user. The time value is formatted using the current locale information for the user.
 

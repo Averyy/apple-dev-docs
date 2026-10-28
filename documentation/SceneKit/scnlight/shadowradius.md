@@ -25,7 +25,7 @@ var shadowRadius: CGFloat { get set }
 @property (nonatomic) CGFloat shadowRadius;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit produces soft-edged shadows by rendering the silhouettes of geometry into a 2D shadow map and then using several weighted samples from the shadow map to determine the strength of the shadow at each pixel in the rendered scene. This property controls the radius of shadow map sampling. Lower numbers result in shadows with sharply defined, pixelated edges; higher numbers result in blurry shadows.
 

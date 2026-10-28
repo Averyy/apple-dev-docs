@@ -30,7 +30,7 @@ var rideIdentifier: String { get }
 @property (atomic, copy, readonly) NSString * rideIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 SiriKit sets this property to the ride identifier you provided in your [`INRideStatus`](../inridestatus.md) object when booking the ride or supplying its status.
 

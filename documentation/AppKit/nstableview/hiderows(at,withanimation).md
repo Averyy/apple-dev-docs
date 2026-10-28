@@ -19,7 +19,7 @@ func hideRows(at indexes: IndexSet, withAnimation rowAnimation: NSTableView.Anim
 - (void) hideRowsAtIndexes:(NSIndexSet *) indexes withAnimation:(NSTableViewAnimationOptions) rowAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you no longer want the data to be visible to the user, but you don’t want to permanently remove the data. Hidden table rows have a height of zero and cannot be selected by the user. However, if a selected table row is hidden, it will remain selected.
 

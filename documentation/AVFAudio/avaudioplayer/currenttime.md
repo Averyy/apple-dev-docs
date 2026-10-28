@@ -25,7 +25,7 @@ var currentTime: TimeInterval { get set }
 @property NSTimeInterval currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 If the sound is playing, this property value is the offset, in seconds, from the start of the sound. If the sound isn’t playing, this property indicates the offset from where playback starts upon calling the [`play()`](./play%28%29.md) method.
 

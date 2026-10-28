@@ -5,7 +5,7 @@
 
 Provides information about the windows managed by the macOS window server.
 
-#### Overview
+## Overview
 
 This includes the onscreen windows seen on the user’s desktop and any offscreen windows used by the running applications. You can also use Quartz Window Services to generate images based on the contents of windows.
 

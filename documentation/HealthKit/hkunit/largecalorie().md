@@ -24,7 +24,7 @@ class func largeCalorie() -> Self
 + (instancetype) largeCalorieUnit;
 ```
 
-#### Discussion
+## Discussion
 
 The large calorie is the same as a kilocalorie (1 Cal = 4184.0 J).
 

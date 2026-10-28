@@ -24,7 +24,7 @@ func validate() async throws
 - (void) validateWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ARKit considers certain images invalid for image tracking (for example, an image that’s all white). Call this function on a reference image you create programmatically to make sure ARKit can track it, before passing it in to your session’s [`detectionImages`](../arworldtrackingconfiguration/detectionimages.md) array.
 

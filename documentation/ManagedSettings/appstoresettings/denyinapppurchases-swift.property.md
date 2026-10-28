@@ -17,7 +17,7 @@ A Boolean value that indicates whether to deny the user permission to make in-ap
 var denyInAppPurchases: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t constrain this setting, the value is `nil`.
 

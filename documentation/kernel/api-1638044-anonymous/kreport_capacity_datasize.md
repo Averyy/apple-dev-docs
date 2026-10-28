@@ -13,7 +13,7 @@
 kREPORT_CAPACITY_DataSize = 8
 ```
 
-#### Discussion
+## Discussion
 
 Data size for a READ_CAPACITY command.
 

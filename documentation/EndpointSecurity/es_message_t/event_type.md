@@ -20,7 +20,7 @@ var event_type: es_event_type_t
 es_event_type_t event_type;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine how to access the [`event`](./event.md) field, which is a union of all the possible event types.
 

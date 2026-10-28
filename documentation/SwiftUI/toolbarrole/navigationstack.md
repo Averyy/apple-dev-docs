@@ -20,7 +20,7 @@ The navigationStack role.
 static var navigationStack: ToolbarRole { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this role for content that can be pushed and popped.
 

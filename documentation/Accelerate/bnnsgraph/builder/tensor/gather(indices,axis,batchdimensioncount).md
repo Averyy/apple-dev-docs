@@ -23,7 +23,7 @@ func gather(indices: some BNNSGraph.Builder.OperationParameter<Int32>, axis: Int
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 Register a gather operation, which gathers entire slices of the input tensor along the specified axis. In particular, for each coordinate i valid for the indices tensor, fetch an input slice from the input tensor by indexing the axis dimension at `indices[i...]`, then store the entire slice into the output tensor by indexing it at `i...`.
 

@@ -24,7 +24,7 @@ typealias AURenderObserver = (AudioUnitRenderActionFlags, UnsafePointer<AudioTim
 typedef void (^)(enum AudioUnitRenderActionFlags, const struct AudioTimeStamp *, unsigned int, long) __attribute__((nonblocking)) AURenderObserver;
 ```
 
-#### Discussion
+## Discussion
 
 This block is called by the base class’s AURenderBlock block before and after each render cycle. The observer can distinguish between before and after using the [`unitRenderAction_PreRender`](./audiounitrenderactionflags/unitrenderaction_prerender.md) and [`unitRenderAction_PostRender`](./audiounitrenderactionflags/unitrenderaction_postrender.md)  action flag values.
 

@@ -22,11 +22,11 @@ func dropDuplicates() -> MLDataColumn<Element>
 
 Available when `Element` conforms to `MLDataValueConvertible`.
 
-#### Return Value
+## Return Value
 
 A new column.
 
-#### Discussion
+## Discussion
 
 > **Note**: The new column may not preserve the order of the original column.
 

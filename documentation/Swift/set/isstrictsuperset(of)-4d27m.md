@@ -23,11 +23,11 @@ func isStrictSuperset(of other: Set<Element>) -> Bool
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 `true` if the set is a strict superset of `other`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a strict superset of another set *B* if every member of *B* is also a member of *A* and *A* contains at least one element that is *not* a member of *B*.
 

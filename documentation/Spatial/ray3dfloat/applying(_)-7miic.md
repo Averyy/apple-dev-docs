@@ -21,7 +21,7 @@ Returns a ray that’s transformed by the specified affine transform.
 func applying(_ transform: AffineTransform3DFloat) -> Ray3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed ray.
 

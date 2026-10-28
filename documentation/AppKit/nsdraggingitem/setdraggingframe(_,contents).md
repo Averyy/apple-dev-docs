@@ -19,7 +19,7 @@ func setDraggingFrame(_ frame: NSRect, contents: Any?)
 - (void) setDraggingFrame:(NSRect) frame contents:(id) contents;
 ```
 
-#### Discussion
+## Discussion
 
 Alternate single image component setter.
 

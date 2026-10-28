@@ -23,11 +23,11 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, textLa
 - (NSTextLayoutFragment *) textLayoutManager:(NSTextLayoutManager *) textLayoutManager textLayoutFragmentForLocation:(id<NSTextLocation>) location inTextElement:(NSTextElement *) textElement;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextLayoutFragment`](../nstextlayoutfragment.md).
 
-#### Discussion
+## Discussion
 
 Use this to provide an [`NSTextLayoutFragment`](../nstextlayoutfragment.md) specialized for an [`NSTextElement`](../nstextelement.md) subclass targeted for the rendering surface.
 

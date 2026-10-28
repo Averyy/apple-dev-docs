@@ -25,11 +25,11 @@ typealias CFSetRetainCallBack = (CFAllocator?, UnsafeRawPointer?) -> UnsafeRawPo
 typedef const void *(*)(const struct __CFAllocator *, const void *) CFSetRetainCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 The value to store in the set, which is usually the `value` parameter passed to this callback, but may be a different   value if a different value should be stored in the collection.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFSetCreate(_:_:_:_:)`](./cfsetcreate%28_,_,_,_%29.md) in a [`CFSetCallBacks`](./cfsetcallbacks.md) structure.
 

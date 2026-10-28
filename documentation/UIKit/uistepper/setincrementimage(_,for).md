@@ -22,7 +22,7 @@ func setIncrementImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setIncrementImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 The image you specify is used as a template image to create the final control. If you don’t specify a custom image, a plus (`+`) glyph is used.
 

@@ -24,7 +24,7 @@ var configuration: CXProviderConfiguration { get set }
 @property (nonatomic, copy, readwrite) CXProviderConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a copy of the provider configuration. To change the configuration of the provider, you must set this property to a  new [`CXProviderConfiguration`](../cxproviderconfiguration.md) object.
 

@@ -22,7 +22,7 @@ weak var dataSource: (any QLPreviewControllerDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<QLPreviewControllerDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 To use a Quick Look preview controller, you need to implement a data source. The data source is responsible for providing items for display by the controller, and for telling it how many items to include in the preview navigation list. To learn more about implementing a data source, see [`QLPreviewControllerDataSource`](../qlpreviewcontrollerdatasource.md).
 

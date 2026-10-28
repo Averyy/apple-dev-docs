@@ -26,11 +26,11 @@ func prediction(from input: FullyConnectedNetworkMultiLabelClassifierModel<Scala
 func prediction<S>(from input: S, confidenceThresholds: [Label : Scalar]) throws -> [ClassificationDistribution<Label>] where S : Sequence, S.Element == MLShapedArray<Scalar>
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of labels and confidences.
 
-#### Discussion
+## Discussion
 
 When the confidence threshold is `NaN`, the label-confidence pair is not included in the result, regardless of the label’s confidence.
 

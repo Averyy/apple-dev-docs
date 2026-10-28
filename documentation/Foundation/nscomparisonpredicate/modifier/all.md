@@ -25,7 +25,7 @@ case all
 NSAllPredicateModifier
 ```
 
-#### Discussion
+## Discussion
 
 The left hand side must be a collection. The corresponding predicate compares each value in the left hand side with the right hand side, and returns [`false`](../../../Swift/false.md) when it finds the first mismatch—or [`true`](../../../Swift/true.md) if all match.
 

@@ -23,11 +23,11 @@ init(taskResolutionResult: INTaskResolutionResult)
 - (instancetype) initWithTaskResolutionResult:(INTaskResolutionResult *) taskResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSnoozeTasksTaskResolutionResult`](../insnoozetaskstaskresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to snooze a task.
 

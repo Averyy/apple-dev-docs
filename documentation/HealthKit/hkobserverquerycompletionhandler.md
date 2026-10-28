@@ -28,7 +28,7 @@ typedef void (^)(void) HKObserverQueryCompletionHandler;
 
 - [Executing Observer Queries](./executing-observer-queries.md)
 
-#### Discussion
+## Discussion
 
 This completion handler defines a block that can be called when responding to background deliveries. If your app registers for background deliveries, HealthKit wakes your app when new data has been saved to the HealthKit store. You can specify a maximum frequency for background deliveries. HealthKit wakes your app only once during each time period that is defined by the frequency.
 

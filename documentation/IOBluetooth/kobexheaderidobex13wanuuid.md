@@ -17,7 +17,7 @@ var kOBEXHeaderIDOBEX13WANUUID: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDOBEX13WANUUID
 ```
 
-#### Discussion
+## Discussion
 
 Used to provide state information when layering OBEX over stateless networks. 16byte UUID.
 

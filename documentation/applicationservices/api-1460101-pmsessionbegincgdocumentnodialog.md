@@ -19,11 +19,11 @@ func PMSessionBeginCGDocumentNoDialog(_ printSession: PMPrintSession, _ printSet
 OSStatus PMSessionBeginCGDocumentNoDialog(PMPrintSession printSession, PMPrintSettings printSettings, PMPageFormat pageFormat);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function starts a print job that draws directly into a Quartz graphics context and should be called within your application’s print loop. This function is similar to the function `PMSessionBeginCGDocument` except that the printing status dialog is suppressed.
 

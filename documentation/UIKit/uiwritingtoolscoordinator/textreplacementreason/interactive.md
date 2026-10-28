@@ -22,7 +22,7 @@ case interactive
 UIWritingToolsCoordinatorTextReplacementReasonInteractive
 ```
 
-#### Discussion
+## Discussion
 
 When Writing Tools requests an interactive change in your delegate’s `UIWritingToolsCoordinator/Delegate/writingToolsCoordinator(_:replaceRange:inContext:proposedText:reason:animationParameters:completion:)` method, it passes a valid set of animation parameters to that method. Update your view’s text storage and use the provided [`UIWritingToolsCoordinator.AnimationParameters`](../animationparameters.md) type to create any view-specific animations you need to support the animated replacement of the text.
 

@@ -31,7 +31,7 @@ var chargingFormulaArguments: [String : Any]? { get set }
 @property (atomic, copy, readwrite, nullable) NSDictionary<NSString *,id> * chargingFormulaArguments;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is a dictionary of serializable objects that contains the parameters the electric vehicle’s charging model uses to calculate the duration of charge at a charging point. The keys of the dictionary must match those of the corresponding charging model. `model_id` is a mandatory key and must be the identifier of the charging model the vehicle uses.
 

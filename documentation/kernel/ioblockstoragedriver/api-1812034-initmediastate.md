@@ -12,7 +12,7 @@ virtual void initMediaState(
  void);
 ```
 
-#### Overview
+## Overview
 
 Called when media is not present, this method marks the device state as not having media present, not spun up, and write-enabled.
 

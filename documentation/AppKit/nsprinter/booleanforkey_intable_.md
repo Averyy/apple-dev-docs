@@ -15,7 +15,7 @@ Returns the Boolean value associated with the specified key.
 - (BOOL) booleanForKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 The Boolean value associated with the key. Returns [`false`](../../Swift/false.md) if the key is not in the table or the receiver lacks a PPD file.
 

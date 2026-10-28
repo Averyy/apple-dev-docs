@@ -25,7 +25,7 @@ func setStencilReferenceValue(_ referenceValue: UInt32)
 - (void) setStencilReferenceValue:(uint32_t) referenceValue;
 ```
 
-#### Discussion
+## Discussion
 
 The render pipeline applies this reference value to both front-facing and back-facing primitives.
 

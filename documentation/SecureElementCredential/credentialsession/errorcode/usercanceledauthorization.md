@@ -16,7 +16,7 @@ The person using the app dismissed the authorization sheet.
 case userCanceledAuthorization
 ```
 
-#### Discussion
+## Discussion
 
 In this scenario, the credential session’s underlying state transitions to [`CredentialSession.State.management`](../state-swift.enum/management.md).
 

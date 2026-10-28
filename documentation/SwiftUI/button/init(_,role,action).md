@@ -36,7 +36,7 @@ nonisolated init(_ titleKey: LocalizedStringKey, role: ButtonRole?, action: @esc
 nonisolated init<S>(_ title: S, role: ButtonRole?, action: @escaping @MainActor () -> Void) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 

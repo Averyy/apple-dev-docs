@@ -21,7 +21,7 @@ Calls the given closure with a file stream.
 static func withFileStream<E>(path: FilePath, mode: FileDescriptor.AccessMode, options: FileDescriptor.OpenOptions, permissions: FilePermissions, _ body: (ArchiveByteStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 

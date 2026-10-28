@@ -22,7 +22,7 @@ func removeClipBufferingOutput(_ clipBufferingOutput: SCClipBufferingOutput) thr
 - (BOOL) removeClipBufferingOutput:(SCClipBufferingOutput *) clipBufferingOutput error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Remove SCClipBufferingOutput from the SCStream to stop clip buffering and flush the buffer
 

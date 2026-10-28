@@ -24,7 +24,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). If the value of this property is [`false`](../../Swift/false.md), the annotation view ignores touch events and isn’t selectable. Subclasses may also display the annotation contents differently depending on the value of this property.
 

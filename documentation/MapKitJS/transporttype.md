@@ -24,7 +24,7 @@ type TransportType = (typeof TransportType)[keyof typeof TransportType];
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 Constants that describe the mode of transportation in [`DirectionsRequest`](./directionsrequest.md) and [`DirectionsResponse`](./directionsresponse.md).
 

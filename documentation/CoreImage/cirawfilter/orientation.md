@@ -24,7 +24,7 @@ var orientation: CGImagePropertyOrientation { get set }
 @property (readwrite) CGImagePropertyOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `1...8` and follow the EXIF specification.
 

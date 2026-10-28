@@ -15,7 +15,7 @@ Returns the control’s scope: input, output, global, or play-through.
 IOUserAudioObjectPropertyScope GetControlScope();
 ```
 
-#### Return Value
+## Return Value
 
 The control’s scope.
 

@@ -17,11 +17,11 @@ OSStatus PMSessionBeginDocumentNoDialog (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 The function `PMSessionBeginDocumentNoDialog` starts a print job and should be called within your application’s print loop. This function is similar to the function PMSessionBeginDocument except that the printing status dialog is suppressed.
 
@@ -33,7 +33,7 @@ This function must be called before its corresponding `End` function ([`PMSessio
 
 The printing system automatically handles printing multiple copies. Your application does not need to perform any tasks other than specifying the number of copies in the printing session.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.4 and later, Apple recommends using the function [`PMSessionBeginCGDocumentNoDialog`](../api-1460101-pmsessionbegincgdocumentnodialog.md) instead of this function. QuickDraw is deprecated and your application should be using Quartz 2D for its rendering.
 

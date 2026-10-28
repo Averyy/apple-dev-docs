@@ -21,7 +21,7 @@ Fully assembled configuration of compute graph nodes.
 struct Assembly
 ```
 
-#### Overview
+## Overview
 
 You can create an assembly from a ComputeNodeGraph to obtain the layout of all buffers and uniforms needed by the graph.
 

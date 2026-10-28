@@ -16,11 +16,11 @@ Returns the texture usage value to apply to the layer’s tracking areas texture
 MTLTextureUsage cp_layer_renderer_configuration_get_tracking_areas_usage(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The Metal texture usage value to apply to the layer’s tracking areas textures.
 
-#### Discussion
+## Discussion
 
 Metal optimizes texture-related operations based on the texture’s usage value. The usage value can be a combination of options. For example, a texture might be readable and writable. For more information, see [`MTLTextureUsage`](../Metal/mtltextureusage.md).
 

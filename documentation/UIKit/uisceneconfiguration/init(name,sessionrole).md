@@ -23,11 +23,11 @@ init(name: String?, sessionRole: UISceneSession.Role)
 - (instancetype) initWithName:(NSString *) name sessionRole:(UISceneSessionRole) sessionRole;
 ```
 
-#### Return Value
+## Return Value
 
 A new scene-configuration object.
 
-#### Discussion
+## Discussion
 
 After creating a scene-configuration object, supply values for the [`sceneClass`](./sceneclass.md), [`delegateClass`](./delegateclass.md), and [`storyboard`](./storyboard.md) properties.
 

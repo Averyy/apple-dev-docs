@@ -21,7 +21,7 @@ The opacity of drawing operations in the context.
 var opacity: Double { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to affect the opacity of content that you subsequently draw into the context. Changing this value has no impact on the content you previously drew into the context.
 

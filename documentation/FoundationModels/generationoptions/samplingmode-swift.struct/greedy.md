@@ -24,7 +24,7 @@ static var greedy: GenerationOptions.SamplingMode { get }
 
 - [Analyzing images with multimodal prompting](../../analyzing-images-with-multimodal-prompting.md)
 
-#### Discussion
+## Discussion
 
 This mode always produces the same output for a given input. Responses produced with greedy sampling are statistically likely, but may lack the human-like quality and variety of other sampling strategies.
 

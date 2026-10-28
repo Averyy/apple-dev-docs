@@ -11,11 +11,11 @@ virtual IOReturn SetAlternateInterface(
  UInt16alternateSetting);
 ```
 
-#### Return Value
+## Return Value
 
 exclusive access error if the interface is not open. otherwise the result of the transaction
 
-#### Overview
+## Overview
 
 Select the specified alternate interface.
 

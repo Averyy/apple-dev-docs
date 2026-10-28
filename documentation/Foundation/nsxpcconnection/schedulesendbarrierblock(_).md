@@ -25,7 +25,7 @@ func scheduleSendBarrierBlock(_ block: @escaping () -> Void)
 - (void) scheduleSendBarrierBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 This barrier block runs after any outstanding send commands complete. However, the remote process isn’t guaranteed to receive the sent messages by the time the block executes. If you need to ensure the remote process received a message, wait for a reply from the process.
 

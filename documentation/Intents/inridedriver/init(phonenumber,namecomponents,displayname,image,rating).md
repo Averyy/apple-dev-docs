@@ -23,11 +23,11 @@ init(phoneNumber: String, nameComponents: PersonNameComponents?, displayName: St
 - (instancetype) initWithPhoneNumber:(NSString *) phoneNumber nameComponents:(NSPersonNameComponents *) nameComponents displayName:(NSString *) displayName image:(INImage *) image rating:(NSString *) rating;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized driver object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 You can’t change the driver information after initialization, so specify as much information as you have.
 

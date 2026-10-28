@@ -22,7 +22,7 @@ nonisolated
 func scale(_ scale: CGFloat, anchor: UnitPoint = .center) -> ScaledShape<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A scaled form of this shape.
 

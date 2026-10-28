@@ -21,7 +21,7 @@ Builds a partial result that propagates or erases type information outside a com
 static func buildLimitedAvailability(_ content: some ChartContent) -> AnyChartContent
 ```
 
-#### Discussion
+## Discussion
 
 This method provides support for `if` statements with `#available()` clauses in multi-statement closures, producing content for the conditionally-available branch.
 

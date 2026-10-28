@@ -23,7 +23,7 @@ func searchableIndex(_ searchableIndex: CSSearchableIndex, reindexAllSearchableI
 - (void) searchableIndex:(CSSearchableIndex *) searchableIndex reindexAllSearchableItemsWithAcknowledgementHandler:(void (^)()) acknowledgementHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`searchableIndex(_:reindexAllSearchableItemsWithAcknowledgementHandler:)`](../../CoreSpotlight/cssearchableindexdelegate/searchableindex%28_,reindexallsearchableitemswithacknowledgementhandler%29.md).
 

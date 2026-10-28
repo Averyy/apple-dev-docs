@@ -25,11 +25,11 @@ func UTTypeCopyDeclaration(_ inUTI: CFString) -> Unmanaged<CFDictionary>?
 CFDictionaryRef UTTypeCopyDeclaration(CFStringRef inUTI);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the uniform type’s declaration, or `NULL` if no declaration for that type can be found.
 
-#### Discussion
+## Discussion
 
 A uniform type identifier is declared in a bundle’s information [Property list](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/PropertyList.html#//apple_ref/doc/uid/TP40008195-CH44) (`info.plist`). This function extracts and returns a dictionary that contains the complete declaration of the uniform type identifier. This is useful when your application needs to access properties that does not have a built-in accessor function. For more information on the dictionary format, see [Uniform Type Identifiers Overview](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
 

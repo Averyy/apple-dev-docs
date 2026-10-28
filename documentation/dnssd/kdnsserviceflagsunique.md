@@ -23,7 +23,7 @@ var kDNSServiceFlagsUnique: UInt32 { get }
 kDNSServiceFlagsUnique
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the record’s name is to be unique on the network (e.g. SRV records).
 

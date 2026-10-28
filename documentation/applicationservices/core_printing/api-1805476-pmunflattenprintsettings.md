@@ -16,11 +16,11 @@ OSStatus PMUnflattenPrintSettings (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007). The result code `kPMInvalidParameter` is returned if the flattened `PMPrintSettings` object was created by an incompatible version of Core Printing.
 
-#### Overview
+## Overview
 
 The `PMUnflattenPrintSettings` function creates a new `PMPrintSettings` object containing the data from the flattened print settings. You should call the function [`PMSessionValidatePrintSettings`](../api-1458994-pmsessionvalidateprintsettings.md), as some values in the print settings object may no longer be valid.
 

@@ -19,7 +19,7 @@ var contentSize: NSSize { get set }
 @property NSSize contentSize;
 ```
 
-#### Discussion
+## Discussion
 
 The popover’s content size is set to match the size of the content view when the content view controller is set.
 

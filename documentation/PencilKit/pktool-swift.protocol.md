@@ -19,7 +19,7 @@ An interface adopted by drawing and writing tools used by a canvas view.
 protocol PKTool
 ```
 
-#### Overview
+## Overview
 
 Drawing and writing tools associated with a [`PKCanvasView`](./pkcanvasview.md) adopt the [`PKTool`](./pktool-swift.protocol.md) protocol. Tools are user-facing, and the selected tool determines how the canvas interprets incoming gestures.
 

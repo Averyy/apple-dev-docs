@@ -21,11 +21,11 @@ Creates a new tag collection with the difference of two existing collections.
 extern OSStatus CMTagCollectionCreateDifference(CMTagCollectionRef tagCollectionMinuend, CMTagCollectionRef tagCollectionSubtrahend, CMTagCollectionRef*tagCollectionOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 
-#### Discussion
+## Discussion
 
 This function is non-commutative, meaning that the ordering of arguments is important. To produce a disjoint collection of tags rather than a difference, use [`CMTagCollectionCreateExclusiveOr`](./cmtagcollectioncreateexclusiveor.md).
 

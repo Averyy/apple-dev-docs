@@ -19,7 +19,7 @@ typealias NEFilterPacketHandler = (NEFilterPacketContext, nw_interface_t, NETraf
 typedef enum NEFilterPacketProviderVerdict (^)(NEFilterPacketContext *, NSObject<OS_nw_interface> *, enum NETrafficDirection, const void *, unsigned long) NEFilterPacketHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A verdict on whether the framework should allow, drop, or delay the packet. If the verdict is [`NEFilterPacketProvider.Verdict.delay`](./nefilterpacketprovider/verdict/delay.md), the framework assumes the handler already called [`delayCurrentPacket(_:)`](./nefilterpacketprovider/delaycurrentpacket%28_%29.md).
 

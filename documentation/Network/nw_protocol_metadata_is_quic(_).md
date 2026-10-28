@@ -25,7 +25,7 @@ func nw_protocol_metadata_is_quic(_ metadata: nw_protocol_metadata_t) -> Bool
 bool nw_protocol_metadata_is_quic(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the metadata object contains QUIC connection state.
 

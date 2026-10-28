@@ -21,7 +21,7 @@ actor IdentityDocumentProviderRegistrationStore
 
 - [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md)
 
-#### Discussion
+## Discussion
 
 The system uses the information you register with this store to appropriately surface your app as an option during a presentment. When a person registers a document, the authorization UI you provide through the app’s `IdentityDocumentProvider` extension needs to handle incoming requests for that specific document. The app needs to only register documents that are active and that it can successfully present. If a document becomes inactive, you need to unregister it from the store.
 

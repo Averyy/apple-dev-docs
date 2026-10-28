@@ -31,7 +31,7 @@ static func / (lhs: MLTensor, rhs: some MLTensorScalar & Numeric) -> MLTensor
 static func / (lhs: some MLTensorScalar & Numeric, rhs: MLTensor) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 Shapes must be broadcastable, where the broadcasted shape becomes the shape of the output.
 

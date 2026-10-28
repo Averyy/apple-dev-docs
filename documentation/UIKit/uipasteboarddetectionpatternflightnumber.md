@@ -18,7 +18,7 @@ A pattern that indicates the pasteboard detects a string that contains a flight 
 extern UIPasteboardDetectionPattern const UIPasteboardDetectionPatternFlightNumber;
 ```
 
-#### Discussion
+## Discussion
 
 When you include this pattern in calls to [`detectValuesForPatterns:inItemSet:completionHandler:`](./uipasteboard/detectvaluesforpatterns_initemset_completionhandler_.md) or [`detectValuesForPatterns:completionHandler:`](./uipasteboard/detectvaluesforpatterns_completionhandler_.md) and the pasteboard detects a string that contains a flight number, the system reports the value as an array of [`NSString`](../Foundation/nsstring.md). You can return the detected results in a paste operation with `UIPasteboardDetectionResultFlightNumber`, which contains a semantic representation of the flight number and airline carrier values.
 

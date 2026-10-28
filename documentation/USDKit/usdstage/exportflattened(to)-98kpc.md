@@ -20,7 +20,7 @@ Exports the stage as a flattened USD file.
 func exportFlattened(to url: URL) throws
 ```
 
-#### Discussion
+## Discussion
 
 Composes all layers into a single layer and writes it to the specified location. The output format is determined by the file extension.
 

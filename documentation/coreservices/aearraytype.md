@@ -20,7 +20,7 @@ typealias AEArrayType = Int8
 typedef SInt8 AEArrayType;
 ```
 
-#### Discussion
+## Discussion
 
 You use this data type with the [`AEGetArray(_:_:_:_:_:_:_:)`](./api-1445720-aegetarray.md) function and the [`AEPutArray(_:_:_:_:_:_:)`](./api-1442535-aeputarray.md) function to specify an array type, using one of the constants from [Data Array Constants](./apple_events/api-1542848-data_array_constants.md). 
 

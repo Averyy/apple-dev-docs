@@ -16,11 +16,11 @@ Method to set the task's scatter-gather list entries.
 IOReturn (*SetScatterGatherEntries)(void *task, SCSITaskSGElement *inScatterGatherList, UInt8 inScatterGatherEntries, UInt64 inTransferCount, UInt8 inTransferDirection);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSucces or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to set the SCSITask's scatter-gather list entries. Scatter-gather lists are represented as an array of SCSITaskSGElements. The SCSITaskSGElement structure has two elements, the address of the buffer and the length of the buffer.
 

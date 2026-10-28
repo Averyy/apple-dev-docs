@@ -22,7 +22,7 @@ var prefersEdgeAttachedInCompactHeight: Bool { get set }
 @property (nonatomic) BOOL prefersEdgeAttachedInCompactHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md), which means the sheet defaults to a full screen appearance at compact height. Set this value to [`true`](../../Swift/true.md) to use an alternate appearance in a compact-height size class, causing the sheet to only attach to the screen on its bottom edge.
 

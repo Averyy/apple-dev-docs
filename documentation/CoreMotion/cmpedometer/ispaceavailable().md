@@ -23,11 +23,11 @@ class func isPaceAvailable() -> Bool
 + (BOOL) isPaceAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if pace information is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Pace measurement indicates the ability to determine the user’s pace in seconds per meter. This capability is not supported on all devices.
 

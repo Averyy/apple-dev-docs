@@ -15,7 +15,7 @@ Indicates that the dext completed an asynchronous call.
 virtual void Complete(uint32_t requestID, kern_return_t status);
 ```
 
-#### Discussion
+## Discussion
 
 The dext calls this method to indicate completion of an asynchronous call to methods like [`DoAsyncUnmap`](./doasyncunmap.md), [`DoAsyncSynchronize`](./doasyncsynchronize.md), or [`DoAsyncEjectMedia`](./doasyncejectmedia.md). Use the `requestID` parameter to determine which call resulted in this callback.
 

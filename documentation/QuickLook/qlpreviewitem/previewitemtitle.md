@@ -20,7 +20,7 @@ optional var previewItemTitle: String? { get }
 @property (nonatomic, readonly, nullable) NSString * previewItemTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The item’s title this will be used as apparent item title.
 

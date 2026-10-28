@@ -31,7 +31,7 @@ var recipients: [INPerson]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INPerson *> * recipients;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`INPerson`](../inperson.md) objects, your search should return only messages received by the specified users. Use the operator in the [`recipientsOperator`](./recipientsoperator.md) property to determine whether to search for messages containing all, some, or none of the specified recipients.
 

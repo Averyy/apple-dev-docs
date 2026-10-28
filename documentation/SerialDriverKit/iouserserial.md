@@ -15,7 +15,7 @@ The class for building a service that communicates using a serial connection.
 class IOUserSerial;
 ```
 
-#### Overview
+## Overview
 
 Subclass `IOUserSerial` and use it to implement a service for communicating with serial devices. This class automatically manages the buffers used to store incoming and outgoing data. You are responsible for configuring your hardware, and for reading and writing data at appropriate times. This class supports configuration through standard modem commands or using universal asynchronous receiver/transmitter (UART) hardware.
 

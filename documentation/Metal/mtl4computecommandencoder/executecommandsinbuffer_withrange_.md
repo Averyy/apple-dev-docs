@@ -20,7 +20,7 @@ Encodes a command to execute a series of commands from an indirect command buffe
 - (void) executeCommandsInBuffer:(id<MTLIndirectCommandBuffer>) indirectCommandBuffer withRange:(NSRange) executionRange;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to encode the execution of a range of Metal compute commands in the GPU timeline.
 

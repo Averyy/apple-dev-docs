@@ -23,7 +23,7 @@ var isModalInPresentation: Bool { get set }
 @property (nonatomic, getter=isModalInPresentation) BOOL modalInPresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). When you set it to [`true`](../../Swift/true.md), UIKit ignores events outside the view controller’s bounds and prevents the interactive dismissal of the view controller while it is onscreen.
 

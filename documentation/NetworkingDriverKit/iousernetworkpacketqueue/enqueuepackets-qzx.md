@@ -15,11 +15,11 @@ Adds multiple network packets to the queue for processing.
 virtual uint32_t EnqueuePackets(IOUserNetworkPacket **packets, uint32_t packetCount);
 ```
 
-#### Return Value
+## Return Value
 
 The number of packets actually added to the queue.
 
-#### Discussion
+## Discussion
 
 Call this method when you are ready to submit multiple packets to a completion queue for processing. After the system processes the enqueued network packets, it recycles them and makes them available on the corresponding submission queue.
 

@@ -21,7 +21,7 @@ Divides a single-precision complex vector by a single-precision real vector.
 extern void vDSP_zrvdiv(const DSPSplitComplex *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function divides of the first `N` complex elements of `A` by the corresponding real elements of `B`, writing the result to `C`:
 

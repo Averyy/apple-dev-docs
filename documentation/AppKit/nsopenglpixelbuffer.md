@@ -15,7 +15,7 @@ An object that provides access to accelerated offscreen rendering.
 @interface NSOpenGLPixelBuffer : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Deprecated**: The OpenGL API is deprecated. Use [Metal](../Metal/Metal.md) and [MetalKit](../MetalKit/MetalKit.md) instead.
 

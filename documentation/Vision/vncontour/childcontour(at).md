@@ -24,7 +24,7 @@ func childContour(at childContourIndex: Int) throws -> VNContour
 - (VNContour *) childContourAtIndex:(NSUInteger) childContourIndex error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The child contour object.
 

@@ -20,7 +20,7 @@ Returns the generated genmoji to the delegate.
 @objc optional func imagePlaygroundViewController(_ imagePlaygroundViewController: ImagePlaygroundViewController, didCreate adaptiveImageGlyph: NSAdaptiveImageGlyph)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to access the genmoji. After you finish retrieving the image, dismiss the [`ImagePlaygroundViewController`](../../imageplaygroundviewcontroller.md) from your app’s interface.
 

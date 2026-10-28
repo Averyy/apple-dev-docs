@@ -25,7 +25,7 @@ var deletingPathExtension: URL? { get }
 @property (copy, readonly, nullable) NSURL * URLByDeletingPathExtension;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver represents the root path, this property contains a copy of the original URL. If the URL has multiple path extensions, only the last one is removed.
 

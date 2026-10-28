@@ -19,7 +19,7 @@ func nameAsString() -> String!
 - (NSString *) nameAsString;
 ```
 
-#### Return Value
+## Return Value
 
 Returns NSString with the device name, nil if there is not one or it cannot be read.
 

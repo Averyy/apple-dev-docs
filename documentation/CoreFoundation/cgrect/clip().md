@@ -16,7 +16,7 @@ Modifies the current graphics context clipping path by intersecting it with this
 func clip()
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: There must be a set current NSGraphicsContext.
 

@@ -25,7 +25,7 @@ let AVContentKeyRequestProtocolVersionsKey: String
 extern NSString * const AVContentKeyRequestProtocolVersionsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this key are an [`NSArray`](../Foundation/nsarray.md) or one or more [`NSNumber`](../Foundation/nsnumber.md) objects.
 

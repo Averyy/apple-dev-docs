@@ -15,7 +15,7 @@ Changes the number of bytes to use for the link header to the specified value.
 virtual kern_return_t SetLinkHeaderLength(uint8_t length);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

@@ -19,7 +19,7 @@ var maxAcceleratorLevel: Int { get set }
 @property NSInteger maxAcceleratorLevel;
 ```
 
-#### Discussion
+## Discussion
 
 A multilevel accelerator button is a variation of a standard accelerator button that allows for a configurable number of stepped pressure levels in a system that supports pressure-sensitivity, such as the Force Touch trackpad. As each level is reached, the user receives light tactile feedback, and an action is sent.
 

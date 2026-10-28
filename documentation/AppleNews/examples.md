@@ -5,7 +5,7 @@
 
 Download more example article bundles for Apple News Format articles.
 
-#### Overview
+## Overview
 
 Use this link to download more article bundle examples: [Example Apple News Format Articles](https://developer.apple.com/apple-news/download/Apple-News-Example-Articles.zip)
 

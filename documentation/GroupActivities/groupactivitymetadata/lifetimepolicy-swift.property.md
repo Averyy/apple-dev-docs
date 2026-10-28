@@ -20,7 +20,7 @@ Determines how an activity can be ended.
 var lifetimePolicy: GroupActivityMetadata.LifetimePolicy
 ```
 
-#### Discussion
+## Discussion
 
 Most activities can be left or ended independently by any participant. For example, a game being played together or a TV show being watched together doesn’t depend on a particular participant to be able to continue for everyone else.
 

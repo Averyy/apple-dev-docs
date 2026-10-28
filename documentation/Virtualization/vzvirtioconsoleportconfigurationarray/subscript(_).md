@@ -19,7 +19,7 @@ subscript(portIndex: Int) -> VZVirtioConsolePortConfiguration? { get set }
 - (VZVirtioConsolePortConfiguration *) objectAtIndexedSubscript:(NSUInteger) portIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The [`VZVirtioConsolePortConfiguration`](../vzvirtioconsoleportconfiguration.md), or nil is the index exceeds the number of configurations in the array.
 

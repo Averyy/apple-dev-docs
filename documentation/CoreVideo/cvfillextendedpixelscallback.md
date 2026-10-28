@@ -25,7 +25,7 @@ typealias CVFillExtendedPixelsCallBack = (CVPixelBuffer, UnsafeMutableRawPointer
 typedef unsigned char (*)(struct __CVBuffer *, void *) CVFillExtendedPixelsCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the padding was successful; otherwise, `false`.
 

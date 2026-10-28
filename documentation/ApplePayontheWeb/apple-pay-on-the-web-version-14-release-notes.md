@@ -5,7 +5,7 @@
 
 The version of Apple Pay available in macOS 13 and iOS 16.
 
-#### Overview
+## Overview
 
 New features include:
 

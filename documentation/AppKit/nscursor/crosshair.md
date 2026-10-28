@@ -22,7 +22,7 @@ class var crosshair: NSCursor { get }
 @property (class, strong, readonly) NSCursor * crosshairCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The cross-hair cursor. This cursor is used for situations when precise location is required (where the lines cross is the hot spot).
 

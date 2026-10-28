@@ -23,7 +23,7 @@ var minimum: CGFloat
 CGFloat minimum;
 ```
 
-#### Discussion
+## Discussion
 
 For sliding attachments, it represents the number of points to move along the axis of translation in the negative direction. For pin attachments, it represents the number of radians to rotate in the counter-clockwise direction. This value must be less than or equal to `0`.
 

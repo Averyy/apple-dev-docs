@@ -5,13 +5,13 @@
 
 Add a rule to find players in a range of skill levels to balance competitive gameplay.
 
-#### Overview
+## Overview
 
 When finding players using matchmaking rules, consider adding a rule that finds players in a range of skill levels to make gameplay more enjoyable and fair for all players. To reduce wait times for players, make the rule widen the skill range as the wait time, or age of the match request, increases.
 
 This article shows one way to find players by skill level that you can combine with your other matchmaking rules. For other types of matchmaking rules, see [Letting players join matches using party codes](./letting-players-join-matches-using-party-codes.md) and [Assigning players to teams using rules](./assigning-players-to-teams-using-rules.md).
 
-##### Create a skill-level rule set and queue
+### Create a skill-level rule set and queue
 
 First create a rule set to contain the skill-level rule. Pass a reference name, the minimum players, and the maximum players properties that are game-specific to the [`Create a Rule Set`](../AppStoreConnectAPI/post-v1-gamecentermatchmakingrulesets.md) endpoint.
 
@@ -70,7 +70,7 @@ POST /v1/gameCenterMatchmakingQueues
 }
 ```
 
-##### Choose parameters that work best for your game
+### Choose parameters that work best for your game
 
 You can create a matchmaking rule that initially attempts to match players with similar skill values, then after a few seconds, increases the skill range for another period of seconds. The rule repeats the increments at specified intervals until it reaches a maximum difference in skill levels.
 
@@ -82,7 +82,7 @@ For example, if the skill of players ranges from `0` to `100` in your game, crea
 
 You choose the number of increments and the ranges of wait times and skill levels.
 
-##### Write an expression that matches players by skill level
+### Write an expression that matches players by skill level
 
 Write an expression for a match rule where the expression returns a Boolean value of [`true`](../Swift/true.md) for an acceptable range of skill values that expands at specified time increments. An expression is a JMESPath formatted string with some Game Center matchmaking function additions.
 
@@ -118,7 +118,7 @@ For more information on the Game Center functions you can use in expressions, se
 
 > ❗ **Important**:  If you have previous versions of your game that don’t provide player properties used in your rules, you can write expressions that provide default value for those properties. See [Creating matchmaking rules for backward compatibility](./creating-matchmaking-rules-for-backward-compatibility.md).
 
-##### Create a match rule containing the expression
+### Create a match rule containing the expression
 
 Create a skill-level rule and add it to the rule set. Pass `MATCH` for the rule `type` field, the skill-level expression, and the rule set, along with other settings, to the [`Create a Rule`](../AppStoreConnectAPI/post-v1-gamecentermatchmakingrules.md) ``endpoint.
 
@@ -149,7 +149,7 @@ The `description` and `referenceName` fields are specific to your game. In the `
 
 > **Note**:  Typically, you add more than one rule to a rule set. For example, add a `COMPATIBLE` rule to check whether the player’s app versions are the same and a `DISTANCE` rule to find players nearby that Game Center applies before `MATCH` rules.
 
-##### Submit a skill-level match request
+### Submit a skill-level match request
 
 In your code, create a [`GKMatchRequest`](./gkmatchrequest.md) object that uses the skill-level queue and its set of rules to find players. Set the [`properties`](./gkmatchrequest/properties.md) and [`queueName`](./gkmatchrequest/queuename.md) properties of the match request, so that Game Center uses the matchmaking rules to find players.
 

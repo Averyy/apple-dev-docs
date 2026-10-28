@@ -17,7 +17,7 @@ nonisolated
 final var searchTerritory: String? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 This property is an optional two-letter country code in the ISO 3166-1 alpha-2 standard that the alternative marketplace sets. For more information, see [`setSearchTerritory(_:)`](./setsearchterritory%28_%29.md).
 

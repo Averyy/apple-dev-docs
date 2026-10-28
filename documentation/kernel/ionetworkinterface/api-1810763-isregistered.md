@@ -12,11 +12,11 @@ virtual bool isRegistered(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if interface is registered and attached to the network stack, false otherwise.
 
-#### Overview
+## Overview
 
 Once attached a `kIOBSDNameKey` property is added to the interface object with the assigned BSD name.
 

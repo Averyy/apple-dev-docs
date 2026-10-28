@@ -5,11 +5,11 @@
 
 Options used when creating bookmark data.
 
-#### Overview
+## Overview
 
 When creating a bookmark, use bitwise `OR` operators to combine the options you want to specify, and provide them to the `options` parameter of the [`CFURLCreateBookmarkData(_:_:_:_:_:_:)`](./cfurlcreatebookmarkdata%28_,_,_,_,_,_%29.md) method.
 
-##### Version-Notes
+### Version-Notes
 
 Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
 

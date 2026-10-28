@@ -20,7 +20,7 @@ The object acting as the collection view’s data source for app entity identifi
 @preconcurrency weak var appIntentsDataSource: (any UICollectionViewAppIntentsDataSource)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../../AppIntents/providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../../AppIntents/AppIntents.md).
 

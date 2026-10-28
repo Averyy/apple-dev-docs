@@ -19,7 +19,7 @@ Recreates an asynchronous hand pose classifier’s training session by restoring
 static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandPoseClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLTrainingSession`](../mltrainingsession.md) that represents the hand pose classifier training session.
 

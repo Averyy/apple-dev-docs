@@ -17,17 +17,17 @@ OSStatus PMSessionGetGraphicsContext (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md). You must also call the function `PMSessionGetGraphicsContext` within the scope of the functions `PMSessionBeginPage` and `PMSessionEndPage`.
 
 In OS X v10.3 and earlier, you should call this function for each page you draw for a print job. After each call to the function `PMSessionBeginPage` your application should call `PMSessionGetGraphicsContext` to obtain the current graphics context. If that context is a QuickDraw context, then set the drawing port to this port by calling the QuickDraw `SetPort` function. See the discussion of the function `PMSessionBeginPage` for more information.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.4 and later, Apple recommends using the function [`PMSessionGetCGGraphicsContext`](../api-1461952-pmsessiongetcggraphicscontext.md) instead of this function. QuickDraw is deprecated and your application should be using Quartz 2D for its rendering.
 

@@ -21,7 +21,7 @@ Creates a catalog search suggestions request for a specified search term along w
 init(term: String, includingTopResultsOfTypes types: [any MusicCatalogSearchable.Type] = [])
 ```
 
-#### Discussion
+## Discussion
 
 By default, top results are not fetched.
 

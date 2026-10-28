@@ -25,7 +25,7 @@ func CFStringGetListOfAvailableEncodings() -> UnsafePointer<CFStringEncoding>!
 extern const CFStringEncoding *CFStringGetListOfAvailableEncodings();
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a [`kCFStringEncodingInvalidId`](./kcfstringencodinginvalidid.md)-terminated list of `enum` constants, each of type [`CFStringEncoding`](./cfstringencoding.md).
 

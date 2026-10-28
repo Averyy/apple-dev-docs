@@ -24,7 +24,7 @@ static let widgetAppearanceDictionary: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyWidgetAppearanceDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 For details about widget appearance characteristic objects, see [`PDFAppearanceCharacteristics`](../pdfappearancecharacteristics.md).
 

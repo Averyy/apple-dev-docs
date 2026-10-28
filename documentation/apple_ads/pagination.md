@@ -17,7 +17,7 @@ The procedure to refine returned results using limit and offset parameters.
 object Pagination
 ```
 
-#### Discussion
+## Discussion
 
 In the following example, the two optional parameters limit the number of campaigns that return. You specify `offset` and `limit` as query string parameters.
 

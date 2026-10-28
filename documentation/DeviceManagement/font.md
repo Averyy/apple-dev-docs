@@ -19,13 +19,13 @@ The payload that configures fonts.
 object Font
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.font` as the payload type.
 
 In iPadOS 18 and later, the font profile is available on the user channel for Shared iPad.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ In iPadOS 18 and later, the font profile is available on the user channel for Sh
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

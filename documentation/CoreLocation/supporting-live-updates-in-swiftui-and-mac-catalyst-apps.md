@@ -5,11 +5,11 @@
 
 Enable background events by adding lifecycle event support.
 
-#### Overview
+## Overview
 
 In iOS 17 and later, Core Location supports live updates using Swift concurrency’s async/await capability. In order to adopt live updates, SwiftUI and Mac Catalyst apps need to implement lifecycle event support that enables an app’s `@main app` to have explicit support for the creation and resumption of background run-loops. This enables the system to deliver Core Location events to the app and allows the delivery of events to resume in the event of return from background, launch of the app, or relaunch after a crash.
 
-##### Adding lifecycle events to SwiftUI
+### Adding lifecycle events to SwiftUI
 
 To add support for life cycle events, you need to add three components to your app:
 

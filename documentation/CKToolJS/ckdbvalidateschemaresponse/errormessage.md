@@ -15,7 +15,7 @@ A message if the schema string is not valid.
 attribute string? errorMessage;
 ```
 
-#### Discussion
+## Discussion
 
 Error message for the provided schema string.
 

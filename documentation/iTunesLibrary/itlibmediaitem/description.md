@@ -20,7 +20,7 @@ var description: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * description;
 ```
 
-#### Discussion
+## Discussion
 
 If the media item isn’t a podcast, this property is nil.
 

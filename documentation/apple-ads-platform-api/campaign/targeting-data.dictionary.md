@@ -15,7 +15,7 @@ Defines where a campaign is eligible to serve ads, including supply source, plac
 object Campaign.Targeting
 ```
 
-#### Discussion
+## Discussion
 
 Defines the supply source, placement, and geographic markets where this campaign is eligible to serve. Ad group targeting must operate within these campaign-level boundaries.
 

@@ -24,7 +24,7 @@ func clearCaches()
 - (void) clearCaches;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to remove textures from the texture cache that reference deleted images.
 

@@ -23,7 +23,7 @@ weak var parent: UIViewController? { get }
 @property (nonatomic, weak, readonly, nullable) UIViewController * parentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 If the recipient is a child of a container view controller, this property holds the view controller it is contained in. If the recipient has no parent, the value in this property is `nil`.
 

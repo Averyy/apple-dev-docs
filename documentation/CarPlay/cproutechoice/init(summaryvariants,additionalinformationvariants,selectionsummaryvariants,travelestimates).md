@@ -21,11 +21,11 @@ init(summaryVariants: [String], additionalInformationVariants: [String], selecti
 - (instancetype) initWithSummaryVariants:(NSArray<NSString *> *) summaryVariants additionalInformationVariants:(NSArray<NSString *> *) additionalInformationVariants selectionSummaryVariants:(NSArray<NSString *> *) selectionSummaryVariants travelEstimates:(CPTravelEstimates *) travelEstimates;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteChoice instance with travel estimates
 
-#### Discussion
+## Discussion
 
 This initializer enables you to provide comprehensive route information including supplementary details through the travel estimates parameter. During route selection, users can compare routes based on time, distance, and additional factors like toll costs or energy consumption.
 

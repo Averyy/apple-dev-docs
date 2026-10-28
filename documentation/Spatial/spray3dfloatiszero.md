@@ -19,11 +19,11 @@
 static bool SPRay3DFloatIsZero(SPRay3DFloat ray);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether all of the values of the ray are zero.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether all of the values of the ray are zero.
 

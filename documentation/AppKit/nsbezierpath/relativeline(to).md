@@ -19,7 +19,7 @@ func relativeLine(to point: NSPoint)
 - (void) relativeLineToPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 The destination point is relative to the current point. For example, if the current point is (1, 1) and `aPoint` contains the value (1, 2), a line segment is created between the points (1, 1) and (2, 3).
 

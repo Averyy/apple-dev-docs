@@ -20,7 +20,7 @@ Creates a sample query descriptor.
 init(predicates: [HKSamplePredicate<Sample>], sortDescriptors: [SortDescriptor<Sample>], limit: Int? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the descriptor’s `Output` type based on the `predicates` parameter.
 

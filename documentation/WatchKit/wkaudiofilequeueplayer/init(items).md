@@ -19,11 +19,11 @@ convenience init(items: [WKAudioFilePlayerItem])
 + (instancetype) queuePlayerWithItems:(NSArray<WKAudioFilePlayerItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized player object.
 
-#### Discussion
+## Discussion
 
 The contents of the `items` property represent the initial items to play but you may add items to this queue later.
 

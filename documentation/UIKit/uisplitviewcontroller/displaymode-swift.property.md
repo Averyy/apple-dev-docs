@@ -23,7 +23,7 @@ var displayMode: UISplitViewController.DisplayMode { get }
 @property (nonatomic, readonly) UISplitViewControllerDisplayMode displayMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the arrangement of the child view controllers in a split view interface. The value in this property is never set to [`UISplitViewController.DisplayMode.automatic`](./displaymode-swift.enum/automatic.md). To change the current display mode, change the value of the [`preferredDisplayMode`](./preferreddisplaymode.md) property. If you just want to change which columns are shown, consider using [`show(_:)`](./show%28_%29.md) or [`hide(_:)`](./hide%28_%29.md) and the split view controller will determine how to update the display mode to display the desired columns.
 

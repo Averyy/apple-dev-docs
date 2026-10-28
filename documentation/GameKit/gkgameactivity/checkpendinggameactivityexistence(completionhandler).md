@@ -28,7 +28,7 @@ class var hasPendingGameActivities: Bool { get async }
 + (void) checkPendingGameActivityExistenceWithCompletionHandler:(void (^)(BOOL )) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method before you initialize Game Center to avoid activating the system banner or welcome experience.
 

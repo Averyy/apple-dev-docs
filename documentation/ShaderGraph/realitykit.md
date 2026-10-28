@@ -6,7 +6,7 @@
 
 Add RealityKit surfaces or textures to your material and access and manipulate scene geometry.
 
-#### Overview
+## Overview
 
 Incorporate RealityKit-specific content into your graph and modify that content visually. You can use geometry modifiers to change the vertices of your models. You can also create and configure RealityKit surfaces and textures and use them in your graph.
 

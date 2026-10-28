@@ -24,7 +24,7 @@ static let contraceptive: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierContraceptive;
 ```
 
-#### Discussion
+## Discussion
 
 Samples of this type use values from the [`HKCategoryValueContraceptive`](../hkcategoryvaluecontraceptive.md) enumeration.
 

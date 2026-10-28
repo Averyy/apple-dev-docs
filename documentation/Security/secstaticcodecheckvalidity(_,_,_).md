@@ -20,11 +20,11 @@ func SecStaticCodeCheckValidity(_ staticCode: SecStaticCode, _ flags: SecCSFlags
 OSStatus SecStaticCodeCheckValidity(SecStaticCodeRef staticCode, SecCSFlags flags, SecRequirementRef requirement);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function obtains and verifies the signature on the code specified by the code object. It checks the validity of all sealed components, including resources (if any). It validates the code against a code requirement if one is specified. The call succeeds if all these conditions are satisfactory.
 

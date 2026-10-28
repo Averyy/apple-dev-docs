@@ -23,7 +23,7 @@ var kCTFontTableOpbd: Int { get }
 kCTFontTableOpbd
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for optical bounds.
 

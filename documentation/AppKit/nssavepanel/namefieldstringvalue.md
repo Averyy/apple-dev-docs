@@ -19,7 +19,7 @@ var nameFieldStringValue: String { get set }
 @property (copy) NSString * nameFieldStringValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must not be `nil`. Note that the filename may not display an extension if the value of [`isExtensionHidden`](./isextensionhidden.md) is [`true`](../../Swift/true.md).
 

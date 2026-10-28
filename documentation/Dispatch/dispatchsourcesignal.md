@@ -21,7 +21,7 @@ A dispatch source that monitors the current process for UNIX signals.
 protocol DispatchSourceSignal : DispatchSourceProtocol, Sendable
 ```
 
-#### Overview
+## Overview
 
 You do not adopt this protocol in your objects. Instead, use the [`makeSignalSource(signal:queue:)`](./dispatchsource/makesignalsource%28signal,queue%29.md) method to create an object that adopts this protocol.
 

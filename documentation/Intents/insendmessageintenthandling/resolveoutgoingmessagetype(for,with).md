@@ -28,7 +28,7 @@ optional func resolveOutgoingMessageType(for intent: INSendMessageIntent) async 
 - (void) resolveOutgoingMessageTypeForSendMessage:(INSendMessageIntent *) intent withCompletion:(void (^)(INOutgoingMessageTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If you can’t handle messages of the type specified in the intent’s [`outgoingMessageType`](../insendmessageintent/outgoingmessagetype.md), create a result with [`unsupported()`](../inintentresolutionresult/unsupported%28%29.md) and provide that when you call the completion handler.
 

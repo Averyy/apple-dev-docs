@@ -24,7 +24,7 @@ var outputs: [AVCaptureOutput] { get }
 @property (nonatomic, readonly) NSArray<__kindof AVCaptureOutput *> * outputs;
 ```
 
-#### Discussion
+## Discussion
 
 You add new outputs to a capture session by calling its [`addOutput(_:)`](./addoutput%28_%29.md) method.
 

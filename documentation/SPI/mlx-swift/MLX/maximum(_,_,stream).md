@@ -21,11 +21,11 @@ func maximum(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrD
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Take the element-wise max of two arrays with [Numpy Style Broadcasting](./broadcasting.md) semantics.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`minimum(_:_:stream:)`](./minimum%28_,_,stream%29.md)

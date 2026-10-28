@@ -17,7 +17,7 @@ Provides the source float triplet at the subscripted index.
 subscript(index: Int32) -> (Float, Float, Float) { get }
 ```
 
-#### Discussion
+## Discussion
 
 This subscript operates on three-component geometry sources with a [`format`](./format.md) of [`MTLVertexFormat.float3`](../../Metal/mtlvertexformat/float3.md). This operator returns an (x, y, z) offset relative to its parent anchor’s position that corresponds to the subscripted vertex position in [`vertices`](../armeshgeometry/vertices.md) and to the subscripted normal vector in [`normals`](../armeshgeometry/normals.md).
 

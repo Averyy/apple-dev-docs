@@ -32,7 +32,7 @@ var profileLabel: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * profileLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if your vehicle supports saving named profiles.
 

@@ -16,7 +16,7 @@ The configuration details for the specified layer.
 var configuration: LayerRenderer.Configuration { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the information in this property to set up your rendering loop. The layer ignores any modifications you make to the specified configuration data. To properly configure the layer, specify those details in the initializer for your [`CompositorLayer`](../compositorlayer.md) type.
 

@@ -26,11 +26,11 @@ Check that an expression always throws an error matching some condition.
 @freestanding(expression) macro expect<R>(_ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, performing expression: () async throws -> R, throws errorMatcher: (any Error) async throws -> Bool) -> (any Error)?
 ```
 
-#### Return Value
+## Return Value
 
 If the expectation passes, the error that was thrown by `expression`. If the expectation fails, the result is `nil`.
 
-#### Overview
+## Overview
 
 Use this overload of `#expect()` when the expression `expression` *should* throw an error, but the logic to determine if the error matches is complex:
 

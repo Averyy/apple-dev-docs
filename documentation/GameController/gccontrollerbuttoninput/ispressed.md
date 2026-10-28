@@ -24,7 +24,7 @@ var isPressed: Bool { get }
 @property (nonatomic, readonly, getter=isPressed) BOOL pressed;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the user is putting pressure on the button; otherwise, the user isn’t.
 

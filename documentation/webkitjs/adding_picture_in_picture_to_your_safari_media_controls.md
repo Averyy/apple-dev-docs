@@ -5,11 +5,11 @@
 
 Create a custom control that adds Picture in Picture to your Safari media player. 
 
-#### Overview
+## Overview
 
 Although default controls are available for audio and video elements in your Safari webpage, you can also create your own custom media controls. One of the custom controls you should add is Picture in Picture. With Picture in Picture, your video remains in view in a floating video overlay while users interact with other apps.
 
-##### Write markup for a custom control
+### Write markup for a custom control
 
 In this example, the custom controls for a video have only a Play button and a hidden Pause button: 
 
@@ -21,7 +21,7 @@ In this example, the custom controls for a video have only a Play button and a h
 </div>
 ```
 
-##### Add a Picture-in-Picture element to your markup
+### Add a Picture-in-Picture element to your markup
 
 Add markup for a new Picture-in-Picture button, which is visible by default. 
 
@@ -34,7 +34,7 @@ Add markup for a new Picture-in-Picture button, which is visible by default.
 </div> 
 ```
 
-##### Add functionality to the button
+### Add functionality to the button
 
 Add a function to toggle Picture in Picture using the [`webkitSetPresentationMode`](./htmlvideoelement/api-1631224-webkitsetpresentationmode.md) property from the presentation mode API.
 

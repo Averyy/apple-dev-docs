@@ -19,7 +19,7 @@ var matrix: UnsafePointer<CGFloat> { get }
 @property (readonly) const CGFloat * matrix;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a standard six-element transformation matrix as used in the PostScript language, specifically with the `makefont` operator. In most cases, with a font of `fontSize`, this matrix is [`fontSize` 0 0 `fontSize` 0 0].
 

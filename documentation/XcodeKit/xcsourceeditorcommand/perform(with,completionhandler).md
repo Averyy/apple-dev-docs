@@ -29,7 +29,7 @@ func perform(with invocation: XCSourceEditorCommandInvocation) async throws
 - [Creating a Source Editor Extension](../creating-a-source-editor-extension.md)
 - [Testing Your Source Editor Extension](../testing-your-source-editor-extension.md)
 
-#### Discussion
+## Discussion
 
 Xcode passes the code a completion handler that it must invoke to finish performing the command, passing `nil` on success or an error on failure. A canceled command must still call the completion handler, passing `nil`.
 

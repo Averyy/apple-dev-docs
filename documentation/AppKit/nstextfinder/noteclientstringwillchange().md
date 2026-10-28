@@ -19,7 +19,7 @@ func noteClientStringWillChange()
 - (void) noteClientStringWillChange;
 ```
 
-#### Discussion
+## Discussion
 
 When incremental search is enabled, this method must be called when it is known that the client’s string will be modified. This method must be called before the client string modification takes place.
 

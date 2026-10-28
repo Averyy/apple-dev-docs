@@ -24,7 +24,7 @@ var vertexDescriptor: MDLVertexDescriptor { get }
 @property (nonatomic, readonly, nonnull) MDLVertexDescriptor * vertexDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience property. The [`MTKMesh`](../mtkmesh.md) class does not use this descriptor, but your application may use this object to determine rendering state or create a [`MTLVertexDescriptor`](../../Metal/mtlvertexdescriptor.md) object to build a [`MTLRenderPipelineState`](../../Metal/mtlrenderpipelinestate.md) object capable of interpreting the data in [`vertexBuffers`](./vertexbuffers.md).
 

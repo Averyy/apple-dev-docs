@@ -19,7 +19,7 @@ var isDocumentEdited: Bool { get set }
 @property (getter=isDocumentEdited) BOOL documentEdited;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window’s document has been edited; otherwise, [`false`](../../Swift/false.md). Initially, by default, `NSWindow` objects are in the “not edited” state.
 

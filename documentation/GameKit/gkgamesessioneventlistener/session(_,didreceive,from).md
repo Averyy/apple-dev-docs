@@ -24,7 +24,7 @@ optional func session(_ session: GKGameSession, didReceive data: Data, from play
 - (void) session:(GKGameSession *) session didReceiveData:(NSData *) data fromPlayer:(GKCloudPlayer *) player;
 ```
 
-#### Discussion
+## Discussion
 
 This event fires after the [`send(_:with:completionHandler:)`](../gkgamesession/send%28_,with,completionhandler%29.md) method has been called. All connected players except the calling player are notified.
 

@@ -25,11 +25,11 @@ func objc_getClassList(_ buffer: AutoreleasingUnsafeMutablePointer<AnyClass>?, _
 extern int objc_getClassList(Class*buffer, int bufferCount);
 ```
 
-#### Return Value
+## Return Value
 
 An integer value indicating the total number of registered classes.
 
-#### Discussion
+## Discussion
 
 The Objective-C runtime library automatically registers all the classes defined in your source code. You can create class definitions at runtime and register them with the `objc_addClass` function.
 
@@ -50,7 +50,7 @@ if (numClasses > 0 )
 }
 ```
 
-##### Special Considerations
+### Special Considerations
 
 You can’t assume that class objects you get from this function are classes that inherit from [`NSObject`](./nsobject-swift.class.md), so you can’t safely call any methods on such classes without detecting that the method is implemented first.
 

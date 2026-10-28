@@ -22,7 +22,7 @@ nonisolated
 func formStyle<S>(_ style: S) -> some View where S : FormStyle
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified form style for itself and its child views.
 

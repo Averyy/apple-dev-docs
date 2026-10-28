@@ -15,7 +15,7 @@ A Boolean value that determines whether all zones should be searched.
 readonly attribute Boolean zoneWide;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, all zones are searched. If `false`, only the default zone is searched.
 

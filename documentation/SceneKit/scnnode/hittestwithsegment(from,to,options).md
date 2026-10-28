@@ -25,11 +25,11 @@ func hitTestWithSegment(from pointA: SCNVector3, to pointB: SCNVector3, options:
 - (NSArray<SCNHitTestResult *> *) hitTestWithSegmentFromPoint:(SCNVector3) pointA toPoint:(SCNVector3) pointB options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SCNHitTestResult`](../scnhittestresult.md) objects representing search results.
 
-#### Discussion
+## Discussion
 
 Hit-testing is the process of finding elements of a scene located along a specified line segment in the scene’s coordinate space (or that of a particular node in the scene). For example, you can use this method to determine whether a projectile launched by a game character will hit its target.
 

@@ -21,7 +21,7 @@ The default style for date pickers.
 @preconcurrency struct DefaultDatePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./datepickerstyle/automatic.md) to construct this style.
 

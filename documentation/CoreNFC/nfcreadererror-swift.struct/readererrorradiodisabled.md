@@ -17,7 +17,7 @@ The NFC wireless radio on the device is disabled.
 static var readerErrorRadioDisabled: NFCReaderError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This condition happens, for example, when a person enables airplane mode on their device.
 

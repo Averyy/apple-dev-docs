@@ -25,7 +25,7 @@ var clipDuration: TimeInterval { get set }
 @property (nonatomic, assign) NSTimeInterval clipDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for a movie clip is 5 seconds.
 

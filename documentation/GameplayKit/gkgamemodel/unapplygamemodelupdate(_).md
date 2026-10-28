@@ -24,7 +24,7 @@ optional func unapplyGameModelUpdate(_ gameModelUpdate: any GKGameModelUpdate)
 - (void) unapplyGameModelUpdate:(id<GKGameModelUpdate>) gameModelUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 This method is an optional counterpart to the [`apply(_:)`](./apply%28_%29.md) method. By default, a GameplayKit strategist explores possible moves by copying the current game model, then calling that method to test the effect of a move. Copying a game model (see the [`setGameModel(_:)`](./setgamemodel%28_%29.md) method) repeatedly can increase the time it takes for a strategist to evaluate moves. If your move class (adopting the [`GKGameModelUpdate`](../gkgamemodelupdate.md) protocol) can describe not only how to perform a move, but also how to take back a move—leaving the game model in the same state it was before the move—implement the [`unapplyGameModelUpdate(_:)`](./unapplygamemodelupdate%28_%29.md) method to undo moves. If you implement this method, the strategist can evaluate multiple moves without copying the game model, possibly increasing performance.
 

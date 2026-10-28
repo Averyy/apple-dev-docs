@@ -14,7 +14,7 @@ func simd_quaternion(_ angle: Float16, _ axis: simd_half3) -> simd_quath
 static simd_quath simd_quaternion(_Float16 angle, simd_half3 axis);
 ```
 
-#### Discussion
+## Discussion
 
 Constructs a quaternion that rotates by `angle` radians about `axis`.
 

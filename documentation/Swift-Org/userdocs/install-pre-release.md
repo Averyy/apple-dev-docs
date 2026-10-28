@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 Try out the latest updates by switching to the pre-release version.
 
-#### Overview
+## Overview
 
 The Swift extension provides pre-release builds that you can use to test out unreleased features or get bug fixes before the project publishes an official release. Pre-release build numbers are one minor version ahead of the most recent release.
 

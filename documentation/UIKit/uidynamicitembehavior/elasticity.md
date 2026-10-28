@@ -23,7 +23,7 @@ var elasticity: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat elasticity;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `0.0`. Valid range is from `0.0` for no bounce upon collision, to `1.0` for completely elastic collisions.
 

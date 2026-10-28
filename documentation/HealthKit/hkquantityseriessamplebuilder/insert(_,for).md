@@ -24,7 +24,7 @@ func insert(_ quantity: HKQuantity, for dateInterval: DateInterval) throws
 - (BOOL) insertQuantity:(HKQuantity *) quantity dateInterval:(NSDateInterval *) dateInterval error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add a quantity to the series. The quantity must have a unit that is compatible with the series builder’s quantity type (see [`is(compatibleWith:)`](../hkquantitytype/is%28compatiblewith%29.md)).
 

@@ -25,11 +25,11 @@ func vImageScale_Planar16S(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePo
 vImage_Error vImageScale_Planar16S(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 The relative dimensions of the source image and the destination buffer determine the scaling factors. The function supports nonuniform scaling — that is, the horizontal and vertical ratios can be different.
 
@@ -37,7 +37,7 @@ To avoid artifacts in high-frequency regions of the image, supply image data tha
 
 This function doesn’t work in place — that is, the source and destination buffers need to point to different memory.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

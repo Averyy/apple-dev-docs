@@ -25,11 +25,11 @@ func CFSocketSendData(_ s: CFSocket!, _ address: CFData!, _ data: CFData!, _ tim
 extern CFSocketError CFSocketSendData(CFSocketRef s, CFDataRef address, CFDataRef data, CFTimeInterval timeout);
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This function sets the send timeout of the underlying socket (the `SO_SNDTIMEO` option at the `SOL_SOCKET` level), then calls send (or sendto if you provided an address) with the provided data.
 

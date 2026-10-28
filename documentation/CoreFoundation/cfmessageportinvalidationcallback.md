@@ -25,7 +25,7 @@ typealias CFMessagePortInvalidationCallBack = (CFMessagePort?, UnsafeMutableRawP
 typedef void (*)(struct __CFMessagePort *, void *) CFMessagePortInvalidationCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 Your callback should free any resources allocated for `ms`.
 

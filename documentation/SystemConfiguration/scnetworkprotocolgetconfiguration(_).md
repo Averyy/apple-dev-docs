@@ -19,7 +19,7 @@ func SCNetworkProtocolGetConfiguration(_ protocol: SCNetworkProtocol) -> CFDicti
 CFDictionaryRefSCNetworkProtocolGetConfiguration(SCNetworkProtocolRef protocol);
 ```
 
-#### Return Value
+## Return Value
 
 The configuration settings associated with the protocol, or `NULL` if no configuration settings are associated with the protocol or an error occurred.
 

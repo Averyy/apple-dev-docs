@@ -5,7 +5,7 @@
 
 Present views in different kinds of purpose-driven containers, like forms or control groups.
 
-#### Overview
+## Overview
 
 You can create groups of views that serve different purposes.
 

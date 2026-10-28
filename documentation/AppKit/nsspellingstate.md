@@ -15,7 +15,7 @@ Constants for the spelling state attribute key.
 enum NSSpellingState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants as the values for the [`NSSpellingStateAttributeName`](./nsspellingstateattributename.md) key.
 

@@ -26,11 +26,11 @@ func CFNetServiceUnscheduleFromRunLoop(_ theService: CFNetService, _ runLoop: CF
 extern void CFNetServiceUnscheduleFromRunLoop(CFNetServiceRef theService, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Unschedules the specified service from the specified run loop and mode. Call this function to shut down a service that is running asynchronously. To complete the shutdown, call [`CFNetServiceSetClient(_:_:_:)`](./cfnetservicesetclient%28_,_,_%29.md) and set `clientCB` to `NULL`. Then call [`CFNetServiceCancel(_:)`](./cfnetservicecancel%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

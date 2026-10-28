@@ -25,7 +25,7 @@ static let objectInaccessibleException: NSExceptionName
 extern NSExceptionName const NSObjectInaccessibleException;
 ```
 
-#### Discussion
+## Discussion
 
 See `NSConnection`’s [`enableMultipleThreads`](../nsconnection/enablemultiplethreads.md).
 

@@ -20,7 +20,7 @@ Creates an PDF417 code descriptor for the given payload and parameters.
 + (instancetype) descriptorWithPayload:(NSData *) errorCorrectedPayload isCompact:(BOOL) isCompact rowCount:(NSInteger) rowCount columnCount:(NSInteger) columnCount;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIPDF417CodeDescriptor`](../cipdf417codedescriptor.md) instance or `nil` if the parameters are invalid
 

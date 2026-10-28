@@ -19,7 +19,7 @@ class FSProbeResult
 @interface FSProbeResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 For any [`result`](./fsproberesult/result.md) value other than [`FSMatchResult.notRecognized`](./fsmatchresult/notrecognized.md), ensure the [`name`](./fsproberesult/name.md) and [`containerID`](./fsproberesult/containerid.md) values are non-`nil`. When a container or volume format doesn’t use a name, return an empty string. Also use an empty string in the case in which the format supports a name, but the value isn’t set yet.
 

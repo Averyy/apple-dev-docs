@@ -15,7 +15,7 @@ Creates an asynchronous training session for an action classifier by restoring a
 static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLActionClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLTrainingSession`](../mltrainingsession.md) that represents the action classifier training session.
 

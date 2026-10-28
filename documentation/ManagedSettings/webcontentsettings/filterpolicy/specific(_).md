@@ -17,7 +17,7 @@ The policy blocks the specified domains.
 case specific(Set<WebDomain>)
 ```
 
-#### Discussion
+## Discussion
 
 Your app can block up to 50 web domains at once.
 

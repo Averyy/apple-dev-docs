@@ -25,11 +25,11 @@ class func locationServicesEnabled() -> Bool
 + (BOOL) locationServicesEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if location services are enabled on the device; [`false`](../../Swift/false.md) if they are not.
 
-#### Discussion
+## Discussion
 
 Users can enable or disable location services by toggling the Location Services switch in Settings > Privacy.
 

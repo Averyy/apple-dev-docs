@@ -5,13 +5,13 @@
 
 Review frameworks available to App Clips and identify functionality that makes a great App Clip.
 
-#### Overview
+## Overview
 
 An App Clip is a lightweight version of your app that offers some of its functionality when and where it’s needed, or gives people a way to try a demo version of your app. App Clips offer a focused feature set, and are designed to launch instantly, protect user privacy, and preserve resources. As a result, an App Clip comes with some limitations. Before you create your App Clip, first review the technology available, and identify the functionality that makes a great App Clip.
 
 > **Note**:  Your full app can offer multiple App Clip experiences, but you have to package them as a single App Clip target. Additionally, the full app must include the same functionality as the App Clip.
 
-##### Keep your App Clip within size limitations
+### Keep your App Clip within size limitations
 
 To ensure a fast launch experience, App Clips must be small. Aim to keep your App Clip binary well below the applicable limit:
 
@@ -34,7 +34,7 @@ For more information, refer to [Configuring App Clip experiences](./configuring-
 
 If your App Clip needs to download additional assets; for example, if you offer a demo version of your game; use [Background Assets](../BackgroundAssets/BackgroundAssets.md) to download additional assets. For more information, refer to [Download additional assets](./creating-an-app-clip-with-xcode.md#Download-additional-assets).
 
-##### Review available frameworks and APIs
+### Review available frameworks and APIs
 
 App Clips make use of [SwiftUI](../SwiftUI/SwiftUI.md) and [UIKit](../UIKit/UIKit.md), and have access to the same frameworks as your full app. However, the following frameworks provide no functionality at runtime: [App Intents](../AppIntents/AppIntents.md), [Assets Library](../AssetsLibrary/AssetsLibrary.md), [Background Tasks](../BackgroundTasks/BackgroundTasks.md), [CallKit](../CallKit/CallKit.md), [CareKit](https://www.researchandcare.org) [Contacts](../Contacts/Contacts.md), [Contacts UI](../ContactsUI/ContactsUI.md), [Core Motion](../CoreMotion/CoreMotion.md), [EventKit](../EventKit/EventKit.md), [EventKit UI](../EventKitUI/EventKitUI.md), [File Provider](../FileProvider/FileProvider.md), [File Provider UI](../FileProviderUI/FileProviderUI.md), [HealthKit](../HealthKit/HealthKit.md), [HomeKit](../HomeKit/HomeKit.md), [Media Player](../MediaPlayer/MediaPlayer.md), [Messages](../Messages/Messages.md), [Message UI](../MessageUI/MessageUI.md), [Nearby Interaction](../NearbyInteraction/NearbyInteraction.md), [PhotoKit](../PhotoKit/PhotoKit.md), [ResearchKit](https://www.researchandcare.org), [SensorKit](../SensorKit/SensorKit.md), and [Speech](../Speech/Speech.md).
 
@@ -56,7 +56,7 @@ Some frameworks are available to App Clips but offer only limited functionality,
 
 Note that App Clips may configure Wi-Fi networks using the [`Hotspot Configuration Entitlement`](../BundleResources/entitlements/com.apple.developer.networking.hotspotconfiguration.md). Additionally, to connect to an authentication provider, they may initialize an [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) using [`init(url:callback:completionHandler:)`](../AuthenticationServices/aswebauthenticationsession/init%28url,callback,completionhandler%29-6nut7.md).
 
-##### Preserve user privacy
+### Preserve user privacy
 
 App Clips come with limitations that help to protect user privacy and prevent user tracking across apps and App Clips, for example:
 
@@ -73,7 +73,7 @@ To help protect user data, App Clips can’t access:
 - Data from apps like Calendar, Contacts, Files, Health, Messages, Reminders, and Photos
 - Motion and fitness data
 
-##### Reserve certain functionality for your full app
+### Reserve certain functionality for your full app
 
 App Clips that aren’t demo versions of full apps provide an in-the-moment experience and focus on offering the quickest possible solution to an everyday task, so some functionality works best in your full app. If your App Clip offers an in-the-moment experience, reserve the following functionality for the full app:
 

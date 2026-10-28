@@ -24,7 +24,7 @@ class func process(with inputs: [any CIImageProcessorInput]?, arguments: [String
 + (BOOL) processWithInputs:(NSArray<id<CIImageProcessorInput>> *) inputs arguments:(NSDictionary<NSString *,id> *) arguments outputs:(NSArray<id<CIImageProcessorOutput>> *) outputs error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This supports 0, 1, 2 or more input images and 2 or more output images.
 

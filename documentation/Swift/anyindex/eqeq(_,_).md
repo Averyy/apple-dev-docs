@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two indices wrap equal underlying ind
 static func == (lhs: AnyIndex, rhs: AnyIndex) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The types of the two underlying indices must be identical.
 

@@ -25,7 +25,7 @@ struct Date
 
 - [Encoding and Decoding Custom Types](./encoding-and-decoding-custom-types.md)
 
-#### Overview
+## Overview
 
 A [`Date`](./date.md) value encapsulates a single point in time, independent of any particular calendrical system or time zone. Date values represent a time interval relative to an absolute reference date.
 

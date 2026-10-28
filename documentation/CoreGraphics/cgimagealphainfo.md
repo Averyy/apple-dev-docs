@@ -25,7 +25,7 @@ enum CGImageAlphaInfo
 enum CGImageAlphaInfo : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 A [`CGImageAlphaInfo`](./cgimagealphainfo.md) constant specifies (1) whether a bitmap contains an alpha channel, (2) where the alpha bits are located in the image data, and (3) whether the alpha value is premultiplied. You can obtain a [`CGImageAlphaInfo`](./cgimagealphainfo.md) constant for an image by calling the [`alphaInfo`](./cgimage/alphainfo.md) function. (You provide a [`CGBitmapInfo`](./cgbitmapinfo.md) constant to the function [`init(width:height:bitsPerComponent:bitsPerPixel:bytesPerRow:space:bitmapInfo:provider:decode:shouldInterpolate:intent:)`](./cgimage/init%28width,height,bitspercomponent,bitsperpixel,bytesperrow,space,bitmapinfo,provider,decode,shouldinterpolate,intent%29.md), part of which is a [`CGImageAlphaInfo`](./cgimagealphainfo.md) constant.)
 

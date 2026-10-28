@@ -24,7 +24,7 @@ case lz4
 MTLIOCompressionMethodLZ4
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the LZ4 codec, see:
 

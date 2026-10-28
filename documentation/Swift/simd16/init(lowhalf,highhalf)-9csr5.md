@@ -23,7 +23,7 @@ init(lowHalf: SIMD8<Double>, highHalf: SIMD8<Double>)
 
 Available when `Scalar` is `Double`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

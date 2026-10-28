@@ -19,7 +19,7 @@ case setAttributes
 NSWorkspaceAuthorizationTypeSetAttributes
 ```
 
-#### Discussion
+## Discussion
 
 Signifies that the user has granted authorization for [`setAttributes(_:ofItemAtPath:)`](../../../Foundation/filemanager/setattributes%28_,ofitematpath%29.md).
 

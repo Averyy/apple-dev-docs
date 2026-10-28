@@ -25,7 +25,7 @@ var vectorFloat2Value: vector_float2 { get set }
 @property (nonatomic) vector_float2 vectorFloat2Value;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s original value is a floating-point number, the second item of the vector is set to 0. If the receiver’s original value is a vector of more than two items, the additional items are truncated.
 

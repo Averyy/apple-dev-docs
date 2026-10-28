@@ -18,7 +18,7 @@ var FFERR_OUTOFMEMORY: HRESULT { get }
 #define FFERR_OUTOFMEMORY
 ```
 
-#### Discussion
+## Discussion
 
 Couldn’t allocate sufficient memory to complete the caller’s request.
 

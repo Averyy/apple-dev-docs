@@ -18,7 +18,7 @@ The possible states of Camera Assistance.
 enum NIAlgorithmConvergenceStatus
 ```
 
-#### Overview
+## Overview
 
 When the app enables Camera Assistance by setting [`isCameraAssistanceEnabled`](./ninearbypeerconfiguration/iscameraassistanceenabled.md) to `true`, the framework provides the app one of these values in the [`status`](./nialgorithmconvergence/status-j61c.md) field of the convergence object provided by the [`session(_:didUpdateAlgorithmConvergence:for:)`](./nisessiondelegate/session%28_,didupdatealgorithmconvergence,for%29.md) callback.
 

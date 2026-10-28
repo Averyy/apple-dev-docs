@@ -15,7 +15,7 @@ Creates an affine transformation matrix from translation values.
 init(translationByX x: CGFloat, byY y: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 The matrix takes the following form:
 

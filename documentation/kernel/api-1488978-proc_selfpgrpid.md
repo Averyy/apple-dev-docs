@@ -15,7 +15,7 @@ Get the process group id for the current process, as with proc_pgrpid().
 pid_t proc_selfpgrpid(void);
 ```
 
-#### Return Value
+## Return Value
 
 pgrpid of current process.
 

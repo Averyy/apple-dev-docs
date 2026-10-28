@@ -21,7 +21,7 @@ A request that detects a smudge on a lens from an image or video frame capture.
 struct DetectLensSmudgeRequest
 ```
 
-#### Overview
+## Overview
 
 Use this request to detect whether an image or video is captured with a smudged lens. A smudge is anything that obscures a lens, like a fingerprint or raindrops, resulting in a hazy or blurry capture. Use this capability to find the best frame from a video or set of images.
 

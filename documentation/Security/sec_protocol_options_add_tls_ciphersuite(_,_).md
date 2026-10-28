@@ -25,7 +25,7 @@ func sec_protocol_options_add_tls_ciphersuite(_ options: sec_protocol_options_t,
 void sec_protocol_options_add_tls_ciphersuite(sec_protocol_options_t options, SSLCipherSuite ciphersuite);
 ```
 
-#### Discussion
+## Discussion
 
 Add a TLS ciphersuite to the set of enabled ciphersuites.
 

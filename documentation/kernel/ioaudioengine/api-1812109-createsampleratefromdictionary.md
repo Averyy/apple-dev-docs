@@ -13,11 +13,11 @@ static IOAudioSampleRate *createSampleRateFromDictionary(
  IOAudioSampleRate *sampleRate = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the sample rate.
 
-#### Overview
+## Overview
 
 This is an internal routine used to generate a sample rate from an OSDictionary. It is used to generate a sample rate give a new OSDictionary from the IORegistry - coming from the CoreAudio.framework.
 

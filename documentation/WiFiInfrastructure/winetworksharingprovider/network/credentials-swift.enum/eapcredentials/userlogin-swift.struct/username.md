@@ -17,7 +17,7 @@ Username used to login.
 let username: String
 ```
 
-#### Discussion
+## Discussion
 
 Can be between 1 - 253 characters in length, inclusive.
 

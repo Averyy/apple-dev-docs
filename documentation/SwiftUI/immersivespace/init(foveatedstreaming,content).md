@@ -18,7 +18,7 @@ init<V>(foveatedStreaming session: FoveatedStreamingSession, @ViewBuilder conten
 
 Available when `Content` conforms to `ImmersiveSpaceContent`, `Data` conforms to `Decodable`, `Data` conforms to `Encodable`, and `Data` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 You can add [RealityKit](../../RealityKit/RealityKit.md) content to your space that coexists alongside the streamed content, for example:
 

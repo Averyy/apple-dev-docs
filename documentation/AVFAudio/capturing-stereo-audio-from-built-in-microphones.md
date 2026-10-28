@@ -12,7 +12,7 @@ Configure an iOS device’s built-in microphones to add stereo recording capabil
 - Mac Catalyst 17.0+
 - Xcode 15.4+
 
-#### Overview
+## Overview
 
 Stereo audio uses two channels to create the illusion of multidirectional sound, adding greater depth and dimension to your audio and resulting in an immersive listening experience. iOS provides a number of ways to record audio from the built-in microphones, but until now it’s been limited to mono audio only. Starting in iOS 14 and iPadOS 14, you can now capture stereo audio using the built-in microphones on supported devices.
 
@@ -25,7 +25,7 @@ This sample app shows how to configure your app to record stereo audio, and help
 
 > **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](./avaudiosessiondatasourcedescription/supportedpolarpatterns.md) array contains the [`stereo`](./avaudiosession/polarpattern/stereo.md) polar pattern.
 
-##### Configure the audio session category
+### Configure the audio session category
 
 Recording stereo audio requires the app’s audio session to use either the [`record`](./avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](./avaudiosession/category-swift.struct/playandrecord.md) category. The sample uses the `playAndRecord` category so it can do both. It also passes the `defaultToSpeaker` and `allowBluetooth` options to route the audio to the speaker instead of the receiver, and to Bluetooth headphones.
 
@@ -41,7 +41,7 @@ func setupAudioSession() {
 }
 ```
 
-##### Select and configure a built-In microphone
+### Select and configure a built-In microphone
 
 An iOS device’s built-in microphone input consists of an array of physical microphones and beamformers, each represented as an instance of `AVAudioSessionDataSourceDescription`. The sample app finds the built-in microphone input by querying the available inputs for the one where the port type equals the built-in microphone, and sets it as the preferred input.
 
@@ -66,7 +66,7 @@ private func enableBuiltInMic() {
 }
 ```
 
-##### Configure the microphone input’s directionality
+### Configure the microphone input’s directionality
 
 To configure the microphone input’s directionality, the sample sets its data source’s preferred polar pattern and the session’s input orientation. It performs this configuration in its `selectRecordingOption(_:orientation)`  method, which it calls whenever the user rotates the device or changes the recording option selection.
 

@@ -23,11 +23,11 @@ func ABPersonCreatePeopleInSourceWithVCardRepresentation(_ source: ABRecord!, _ 
 extern CFArrayRefABPersonCreatePeopleInSourceWithVCardRepresentation(ABRecordRef source, CFDataRef vCardData);
 ```
 
-#### Return Value
+## Return Value
 
 The newly created person records.
 
-#### Discussion
+## Discussion
 
 Address Book supports vCard version 3.0.
 

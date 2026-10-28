@@ -12,7 +12,7 @@ Asserts that two values are identical.
 func XCTAssertIdentical(_ expression1: @autoclosure () throws -> AnyObject?, _ expression2: @autoclosure () throws -> AnyObject?, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 Compare two optional values of types that conform to `AnyObject`. The values are identical if they’re the same instance.
 

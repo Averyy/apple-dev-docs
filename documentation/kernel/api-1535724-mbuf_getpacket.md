@@ -13,11 +13,11 @@
 errno_t mbuf_getpacket(mbuf_how_t how, mbuf_t *mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, errno error on failure.
 
-#### Discussion
+## Discussion
 
 Allocate an mbuf, allocate and attach a cluster, and set the packet header flag.
 

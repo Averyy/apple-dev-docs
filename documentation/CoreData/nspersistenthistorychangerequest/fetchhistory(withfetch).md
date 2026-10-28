@@ -25,7 +25,7 @@ class func fetchHistory(withFetch fetchRequest: NSFetchRequest<any NSFetchReques
 + (instancetype) fetchHistoryWithFetchRequest:(NSFetchRequest *) fetchRequest;
 ```
 
-#### Return Value
+## Return Value
 
 A persistent history fetch request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) built using an existing fetch request.
 

@@ -21,7 +21,7 @@ Accesses the capture with the specified name, if a capture with that name exists
 subscript(name: String) -> AnyRegexOutput.Element? { get }
 ```
 
-#### Return Value
+## Return Value
 
 An element providing information about the capture, if there is a capture named `name`; otherwise, `nil`.
 

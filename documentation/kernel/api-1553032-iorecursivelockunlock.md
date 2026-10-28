@@ -24,7 +24,7 @@ void IORecursiveLockUnlock(struct IORecursiveLock *lock);
 void IORecursiveLockUnlock(IORecursiveLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Undo one call to IORecursiveLockLock, if the lock is now unlocked wake any blocked waiters. Results are undefined if the caller does not balance calls to IORecursiveLockLock with IORecursiveLockUnlock. This function may block and so should not be called from interrupt level or while a spin lock is held.
 

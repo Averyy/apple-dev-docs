@@ -16,7 +16,7 @@ func run()
 - (void) runTest;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an instance of the class that [`testRunClass`](./testrunclass.md) specifies, and passes it as a parameter to the [`perform(_:)`](./perform%28_%29.md) method.
 

@@ -14,7 +14,7 @@
 kIOMediaStateOnline = 1
 ```
 
-#### Discussion
+## Discussion
 
 Media is available and ready for operations.
 

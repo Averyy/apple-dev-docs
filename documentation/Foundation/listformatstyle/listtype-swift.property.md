@@ -21,7 +21,7 @@ The type of the list.
 var listType: ListFormatStyle<Style, Base>.ListType
 ```
 
-#### Discussion
+## Discussion
 
 The list type determines the semantics used in the return string.
 

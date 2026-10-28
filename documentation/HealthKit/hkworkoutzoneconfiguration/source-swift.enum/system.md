@@ -20,7 +20,7 @@ A case that indicates the system generated the zones automatically.
 case system
 ```
 
-#### Discussion
+## Discussion
 
 The system calculates zones based on the person’s health metrics, including age, resting heart rate, height, and weight. The system recalculates these zones periodically as the person’s metrics change.
 

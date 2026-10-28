@@ -21,7 +21,7 @@ nonisolated
 func reorderContainer<Item, ItemID>(for item: Item.Type, itemID: KeyPath<Item, ItemID>, isEnabled: Bool = true, move: @escaping (ReorderDifference<ItemID, ReorderableSingleCollectionIdentifier>) -> ()) -> some View where ItemID : Hashable, ItemID : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 Declare this modifier on your list, stack, grid, or custom layout to define a reorderable container. Then, apply [`reorderable()`](../dynamicviewcontent/reorderable%28%29.md) to the content of your container to make those views reorderable.
 

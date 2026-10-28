@@ -19,7 +19,7 @@ class SecTrustedApplication
 typedef struct __SecTrustedApplication * SecTrustedApplicationRef;
 ```
 
-#### Overview
+## Overview
 
 Use the [`SecTrustedApplicationCreateFromPath(_:_:)`](./sectrustedapplicationcreatefrompath%28_,_%29.md) method to create a new trusted app instance.
 

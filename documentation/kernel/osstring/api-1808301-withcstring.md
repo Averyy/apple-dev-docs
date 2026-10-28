@@ -12,7 +12,7 @@ static OSString * withCString(
  const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSString representing the same characters as `aString`, and with a reference count of 1; `NULL` on failure.
 

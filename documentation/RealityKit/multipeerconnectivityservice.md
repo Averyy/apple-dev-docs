@@ -18,7 +18,7 @@ A service that provides scene synchronization among all peers in a multipeer con
 class MultipeerConnectivityService
 ```
 
-#### Overview
+## Overview
 
 RealityKit uses this class to automatically sync scenes with other connected devices running the same app. It leverages the [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md) framework to automatically keep the scenes of all connected devices synchronized. To sync a RealityKit scene, create a [`MultipeerConnectivityService`](./multipeerconnectivityservice.md) object initialized with an [`MCSession`](../MultipeerConnectivity/mcsession.md) and assign it to your scene’s [`synchronizationService`](./scene/synchronizationservice.md) property.
 

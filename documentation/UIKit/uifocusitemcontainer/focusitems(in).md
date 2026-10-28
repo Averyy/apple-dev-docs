@@ -24,11 +24,11 @@ func focusItems(in rect: CGRect) -> [any UIFocusItem]
 - (NSArray<id<UIFocusItem>> *) focusItemsInRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An array of focus items that intersect the provided rectangle. The focus items are expressed in the container’s coordinate space.
 
-#### Discussion
+## Discussion
 
 The found focus items should report their frames in the [`coordinateSpace`](./coordinatespace.md).
 

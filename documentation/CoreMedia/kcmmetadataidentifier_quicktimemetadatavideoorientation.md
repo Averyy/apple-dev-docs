@@ -25,7 +25,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataVideoOrientation: CFString
 extern CFStringRef const kCMMetadataIdentifier_QuickTimeMetadataVideoOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values and their meanings, see [`kCGImagePropertyOrientation`](../ImageIO/kcgimagepropertyorientation.md).
 

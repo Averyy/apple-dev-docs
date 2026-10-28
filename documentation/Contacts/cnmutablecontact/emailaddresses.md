@@ -32,7 +32,7 @@ var emailAddresses: [CNLabeledValue<NSString>] { get set }
 @property (atomic, copy) NSArray<CNLabeledValue<NSString *> *> * emailAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`NSString`](../../Foundation/nsstring.md) value.
 

@@ -23,7 +23,7 @@ init(verticalSizeClass: UIUserInterfaceSizeClass)
 + (UITraitCollection *) traitCollectionWithVerticalSizeClass:(UIUserInterfaceSizeClass) verticalSizeClass;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only a specified vertical size class trait.
 

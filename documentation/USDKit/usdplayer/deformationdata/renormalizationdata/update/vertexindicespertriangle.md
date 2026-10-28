@@ -20,7 +20,7 @@ Changed vertex indices per triangle.
 let vertexIndicesPerTriangle: [UInt32]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

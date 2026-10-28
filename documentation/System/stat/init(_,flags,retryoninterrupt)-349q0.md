@@ -21,7 +21,7 @@ Creates a `Stat` struct from a `FilePath` and `Flags`.
 init(_ path: FilePath, flags: Stat.Flags, retryOnInterrupt: Bool = true) throws(Errno)
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is relative, it is resolved against the current working directory.
 

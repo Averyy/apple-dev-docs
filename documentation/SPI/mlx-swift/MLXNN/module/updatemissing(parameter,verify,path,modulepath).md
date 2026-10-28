@@ -17,7 +17,7 @@ Called from [`update(parameters:verify:path:modulePath:)`](./update%28parameters
 func updateMissing(parameter: String, verify: Module.VerifyUpdate, path: [String], modulePath: [String]) throws
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation will throw [`UpdateError.keyNotFound(path:modules:)`](../updateerror/keynotfound%28path,modules%29.md).
 

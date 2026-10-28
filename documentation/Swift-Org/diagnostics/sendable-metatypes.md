@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Types that are shared in concurrent code generally need to conform to `Sendable`. The same is true in generic code when sharing parameters of a generic parameter `T`. For example, the given code will produce an error under strict concurrency checking
 

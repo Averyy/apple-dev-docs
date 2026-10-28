@@ -24,7 +24,7 @@ func JSValueIsStrictEqual(_ ctx: JSContextRef!, _ a: JSValueRef!, _ b: JSValueRe
 bool JSValueIsStrictEqual(JSContextRef ctx, JSValueRef a, JSValueRef b);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two values are strict equal according to the JavaScript `===` operator; otherwise, [`false`](../Swift/false.md).
 

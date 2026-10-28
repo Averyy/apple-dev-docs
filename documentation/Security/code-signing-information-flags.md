@@ -5,7 +5,7 @@
 
 Use these supplemental flags to retrieve signing information.
 
-#### Overview
+## Overview
 
 Use these constants with the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to specify what type of information to return. See [Signing Information Dictionary Keys](./signing-information-dictionary-keys.md) for more information about the information returned.
 

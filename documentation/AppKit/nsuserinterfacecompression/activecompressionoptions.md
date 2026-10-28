@@ -21,7 +21,7 @@ var activeCompressionOptions: NSUserInterfaceCompressionOptions { get }
 @property (copy, readonly) NSUserInterfaceCompressionOptions * activeCompressionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This property includes only those compression options applied to the view that are actively being respected.
 

@@ -22,7 +22,7 @@ class INGetAvailableRestaurantReservationBookingDefaultsIntentResponse
 @interface INGetAvailableRestaurantReservationBookingDefaultsIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INGetAvailableRestaurantReservationBookingDefaultsIntentResponse`](./ingetavailablerestaurantreservationbookingdefaultsintentresponse.md) object contains the default values to use when booking a reservation at a restaurant. You create instances of this class when confirming or handling an [`INGetAvailableRestaurantReservationBookingDefaultsIntent`](./ingetavailablerestaurantreservationbookingdefaultsintent.md) object.
 

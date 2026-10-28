@@ -18,7 +18,7 @@ object StatusResponse
 - [Managing assets](./managing-assets.md)
 - [Managing users](./managing-users.md)
 
-#### Discussion
+## Discussion
 
 Compare `numCompleted` against `numRequested` to track the progress of an event. When an event finishes with failures, `failures` describes each one.
 

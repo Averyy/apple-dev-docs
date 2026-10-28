@@ -16,7 +16,7 @@ The page expired and is no longer valid.
 case pageExpired
 ```
 
-#### Discussion
+## Discussion
 
 When this error occurs, the system discards locally cached data and restarts a content enumeration.
 

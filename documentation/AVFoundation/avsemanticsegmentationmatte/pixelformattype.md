@@ -25,7 +25,7 @@ var pixelFormatType: OSType { get }
 @property (readonly) OSType pixelFormatType;
 ```
 
-#### Discussion
+## Discussion
 
 Currently, the only supported pixel format type for the matting image is [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md).
 

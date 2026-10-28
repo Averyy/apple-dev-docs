@@ -21,7 +21,7 @@ Set the renderer to render the part indicated by the part index.
 int HVF_set_render_part(HVFPartRenderer *renderer, HVFPartIndex partIndex);
 ```
 
-#### Discussion
+## Discussion
 
 This call resets the axis values to the default value of 0.0.
 

@@ -20,7 +20,7 @@ case microphoneUnauthorized
 ARErrorCodeMicrophoneUnauthorized
 ```
 
-#### Discussion
+## Discussion
 
 When this error occurs, the app needs to prompt the user to give permission to use the microphone in Settings.
 

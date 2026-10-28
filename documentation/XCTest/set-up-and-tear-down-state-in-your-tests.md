@@ -5,7 +5,7 @@
 
 Prepare initial state before tests run, and clean up resources after tests complete.
 
-#### Overview
+## Overview
 
 To consistently and reliably check that your code produces the correct results, tests need to start from a known, predictable state. In some cases, you need to set up state once for all the test methods in a test class; in others, you need to reset to a known state before each test method.
 
@@ -13,7 +13,7 @@ After each test method or test class completes, you might want to delete files t
 
 Prepare your known state for tests, and clean up temporary files after tests using the methods on [`XCTest`](./xctest-page.md) and [`XCTestCase`](./xctestcase.md).
 
-##### Decide When to Set Up and Tear Down State in Your Test Class
+### Decide When to Set Up and Tear Down State in Your Test Class
 
 When you run a test case, XCTest calls the `XCTestCase` `setUp()` class method first. Use this method to set up state common to all the test methods in your test class.
 
@@ -28,7 +28,7 @@ When XCTest finishes running all the test methods and the test class completes, 
 
 > 💡 **Tip**:  You can include test assertions in a test class’s `setUp() async throws`, `setUp()`, `setUpWithError()`, `tearDown() async throws`, `tearDown()`, and `tearDownWithError()` instance methods. XCTest evaluates these assertions as part of every test method’s run. However, you can’t include test assertions in a test class’s `setUp()` or `tearDown()` class methods. Test assertions require a test class instance, which doesn’t exist within the scope of class methods.
 
-##### Prepare and Tear Down State for a Test Class
+### Prepare and Tear Down State for a Test Class
 
 For state that’s common to all the test methods in your test class and that doesn’t need a reset for each test method, use the [`setUp()`](./xctestcase/setup%28%29.md) class method on [`XCTestCase`](./xctestcase.md).
 
@@ -76,7 +76,7 @@ override class func tearDown() {
  }
 ```
 
-##### Prepare and Tear Down State for Each Test Method
+### Prepare and Tear Down State for Each Test Method
 
 For state that you need in each test method, choose one setup method from [`XCTest`](./xctest-page.md) that fits best with your setup requirements:
 
@@ -184,7 +184,7 @@ XCTest runs the teardown methods once after each test method completes: first `t
 
 > ❗ **Important**:  If your setup or teardown code needs to run on the Main actor, specify `@MainActor` for any asynchronous Swift setup or teardown methods you define. If you don’t specify an actor, the test executes asynchronous code in `setUp() async throws` and `tearDown() async throws` on an arbitrary actor.
 
-##### Tear Down State After a Specific Test Method
+### Tear Down State After a Specific Test Method
 
 For teardown that you need to complete immediately after a specific test method is complete, add a teardown block to the test method.
 

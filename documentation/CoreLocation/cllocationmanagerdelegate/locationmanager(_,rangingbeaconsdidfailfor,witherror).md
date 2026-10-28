@@ -24,7 +24,7 @@ optional func locationManager(_ manager: CLLocationManager, rangingBeaconsDidFai
 - (void) locationManager:(CLLocationManager *) manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *) region withError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Errors occur most often when registering a beacon region failed. If the region object itself is invalid or if it contains invalid data, the location manager calls this method to report the problem.
 

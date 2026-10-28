@@ -24,7 +24,7 @@ var lineDashPhase: CGFloat { get set }
 @property CGFloat lineDashPhase;
 ```
 
-#### Discussion
+## Discussion
 
 Line dash phase specifies how far into the dash pattern the line starts.
 

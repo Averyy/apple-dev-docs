@@ -21,7 +21,7 @@ protocol NFCFeliCaTag : NFCNDEFTag, __NFCTag
 @protocol NFCFeliCaTag <NFCTag, NFCNDEFTag>
 ```
 
-#### Overview
+## Overview
 
 FeliCa is a trademark of Sony Corporation.
 

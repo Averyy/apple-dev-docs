@@ -16,7 +16,7 @@ Key for dictionary returned by IOCopySystemLoadAdvisoryDetailed
 #define kIOSystemLoadAdvisoryBatteryLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 Indicates battery constraints on the current SystemLoadAdvisory level.
 

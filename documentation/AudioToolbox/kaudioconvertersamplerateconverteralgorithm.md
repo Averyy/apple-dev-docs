@@ -24,7 +24,7 @@ var kAudioConverterSampleRateConverterAlgorithm: AudioConverterPropertyID { get 
 kAudioConverterSampleRateConverterAlgorithm
 ```
 
-#### Discussion
+## Discussion
 
 This value is deprecated. Use [`kAudioConverterSampleRateConverterComplexity`](./kaudioconvertersamplerateconvertercomplexity.md) instead.
 

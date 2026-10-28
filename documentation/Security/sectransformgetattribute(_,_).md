@@ -21,11 +21,11 @@ func SecTransformGetAttribute(_ transformRef: SecTransform, _ key: CFString) -> 
 extern CFTypeRefSecTransformGetAttribute(SecTransformRef transformRef, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 The value of an attribute. If this attribute is being set as the output of another transform and [`SecTransformExecute(_:_:)`](./sectransformexecute%28_,_%29.md) has not been called on the transform or if the attribute does not exists then `NULL` will be returned.
 
-#### Discussion
+## Discussion
 
 This may be called after [`SecTransformExecute(_:_:)`](./sectransformexecute%28_,_%29.md).
 

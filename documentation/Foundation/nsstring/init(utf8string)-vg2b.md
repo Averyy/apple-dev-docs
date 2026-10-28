@@ -25,7 +25,7 @@ convenience init?(utf8String nullTerminatedCString: UnsafePointer<CChar>)
 - (instancetype) initWithUTF8String:(const char *) nullTerminatedCString;
 ```
 
-#### Return Value
+## Return Value
 
 An @c NSString object initialized by copying the bytes from @c nullTerminatedCString. The returned object may be different from the original receiver.
 

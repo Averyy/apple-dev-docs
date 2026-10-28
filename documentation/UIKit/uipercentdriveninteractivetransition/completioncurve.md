@@ -23,7 +23,7 @@ var completionCurve: UIView.AnimationCurve { get set }
 @property (nonatomic, assign) UIViewAnimationCurve completionCurve;
 ```
 
-#### Discussion
+## Discussion
 
 When the interactive part of a view controller transition is complete, you can set this property to indicate a desired animation completion curve. Default value is [`UIView.AnimationCurve.easeInOut`](../uiview/animationcurve/easeinout.md).
 

@@ -4,7 +4,7 @@
 
 Learn about changes for Safari and Safari View Controller for iOS, iPadOS, macOS, and in visionOS; WKWebView for iOS, iPadOS, macOS, watchOS, and in visionOS; and Web Inspector on macOS.
 
-#### Overview
+## Overview
 
 Safari is a web browser app and web technology platform available on iOS and macOS. It’s built on WebKit, a fast, open-source web rendering engine that implements web standards. Safari includes Apple web innovations such as Intelligent Tracking Prevention, Reader mode, Safari App Extensions, and Web Inspector.
 

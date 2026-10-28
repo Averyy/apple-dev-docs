@@ -25,11 +25,11 @@ func CMSimpleQueueGetTypeID() -> CFTypeID
 extern CFTypeID CMSimpleQueueGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 `CFTypeID` of `CMSimpleQueue` objects.
 
-#### Discussion
+## Discussion
 
 You can check if a `CFTypeRef` object is a `CMSimpleQueue` object by comparing `CFGetTypeID(object)` with `CMSimpleQueueGetTypeID()`.
 

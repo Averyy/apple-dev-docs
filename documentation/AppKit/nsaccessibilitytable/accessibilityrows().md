@@ -20,11 +20,11 @@ func accessibilityRows() -> [any NSAccessibilityRow]?
 - (NSArray<id<NSAccessibilityRow>> *) accessibilityRows;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the table’s row elements.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityRows`](../nsaccessibility-c.protocol/accessibilityrows.md) property.
 

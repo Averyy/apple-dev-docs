@@ -19,7 +19,7 @@ var CPU_BASED2_X2APIC: UInt32 { get }
 CPU_BASED2_X2APIC
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

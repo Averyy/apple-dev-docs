@@ -21,7 +21,7 @@ The generic location representation of a timezone.
 static var genericLocation: Date.FormatStyle.Symbol.TimeZone { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the generic location is unavailable, the system provides the value of [`localizedGMT(_:)`](./localizedgmt%28_%29.md) with a `long` width. For example, `Los Angeles Time`.
 

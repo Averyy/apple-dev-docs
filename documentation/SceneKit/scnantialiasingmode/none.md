@@ -25,7 +25,7 @@ case none
 SCNAntialiasingModeNone
 ```
 
-#### Discussion
+## Discussion
 
 This is the default antialiasing mode on iOS.
 

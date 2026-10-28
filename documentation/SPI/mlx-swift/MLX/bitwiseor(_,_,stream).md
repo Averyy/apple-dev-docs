@@ -17,11 +17,11 @@ Element-wise bitwise or.
 func bitwiseOr(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Take the bitwise or of two arrays with numpy-style broadcasting semantics. Either or both input arrays can also be scalars.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

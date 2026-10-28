@@ -19,7 +19,7 @@ static let fallbackBackgroundColor: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageFallbackBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The color’s alpha value is ignored. The default background color, when this property is not specified, is white. The value of the property should be an [`NSColor`](../../nscolor.md) object. This constant corresponds to the [`kCGImageDestinationBackgroundColor`](../../../ImageIO/kcgimagedestinationbackgroundcolor.md) constant in Quartz.
 

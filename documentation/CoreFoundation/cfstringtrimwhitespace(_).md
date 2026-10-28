@@ -25,7 +25,7 @@ func CFStringTrimWhitespace(_ theString: CFMutableString!)
 extern void CFStringTrimWhitespace(CFMutableStringRef theString);
 ```
 
-#### Discussion
+## Discussion
 
 Whitespace for this function includes space characters, tabs, newlines, carriage returns, and any similar characters that do not have a visible representation.
 

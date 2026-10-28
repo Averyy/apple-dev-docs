@@ -15,11 +15,11 @@ Release a loaded kext based on its load tag.
 OSReturn OSKextReleaseKextWithLoadTag(OSKextLoadTag loadTag);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the kext was released. `kOSKextReturnNotFound` if the kext was not found. `kOSKextReturnInvalidArgument` if `loadTag` is `kOSKextInvalidLoadTag`.
 
-#### Discussion
+## Discussion
 
 The kext should have been retained previously via [`OSKextRetainKextWithLoadTag`](./api-1508272-oskextretainkextwithloadtag.md).
 

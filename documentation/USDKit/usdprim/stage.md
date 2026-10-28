@@ -20,7 +20,7 @@ The stage that owns this prim.
 var stage: USDStage { get }
 ```
 
-#### Discussion
+## Discussion
 
 A prim’s state and validity is connected to its stage. A prim becomes invalid when the lifetime of its stage ends. It can also become invalid when the stage is modified.
 

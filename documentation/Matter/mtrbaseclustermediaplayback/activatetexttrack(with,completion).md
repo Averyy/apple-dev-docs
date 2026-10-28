@@ -29,7 +29,7 @@ func activateTextTrack(with params: MTRMediaPlaybackClusterActivateTextTrackPara
 - (void) activateTextTrackWithParams:(MTRMediaPlaybackClusterActivateTextTrackParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to activate a specific Text Track for the media being played.
 

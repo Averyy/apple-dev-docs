@@ -12,7 +12,7 @@ A user-defined value for the Swift version.
 case version(String)
 ```
 
-#### Discussion
+## Discussion
 
 The value is passed as-is to the Swift compiler’s `-swift-version` flag.
 

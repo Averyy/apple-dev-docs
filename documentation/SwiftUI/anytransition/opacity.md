@@ -18,8 +18,8 @@ A transition from transparent to opaque on insertion, and from opaque to transpa
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) static let opacity: AnyTransition
+nonisolated(unsafe)
+static let opacity: AnyTransition
 ```
 
 ## See Also

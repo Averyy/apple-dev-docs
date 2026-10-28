@@ -25,7 +25,7 @@ func isDate(_ date1: Date, inSameDayAs date2: Date) -> Bool
 - (BOOL) isDate:(NSDate *) date1 inSameDayAsDate:(NSDate *) date2;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if both dates are within the same day, otherwise [`false`](../../Swift/false.md).
 

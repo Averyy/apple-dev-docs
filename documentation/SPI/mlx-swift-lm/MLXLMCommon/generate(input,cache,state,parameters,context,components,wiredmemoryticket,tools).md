@@ -17,11 +17,11 @@ Generates tokens asynchronously using the provided language model input, paramet
 func generate(input: LMInput, cache: [KVCache]? = nil, state: LMOutput.State? = nil, parameters: GenerateParameters, context: ModelContext, components: GenerationComponents = .init(), wiredMemoryTicket: WiredMemoryTicket? = nil, tools: [[String : any Sendable]]? = nil) throws -> AsyncStream<Generation>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` that emits `Generation` values, including generated text chunks (`.chunk`), accepted tool calls (`.toolCall`), rejected tool-call attempts (`.rejectedToolCall`), and completion information (`.info`).
 
-#### Discussion
+## Discussion
 
 This function initializes a `TokenIterator` with the given input, model, and generation parameters, and then streams the token generation process via an `AsyncStream`. The resulting stream yields instances of the `Generation` enum, which can represent text chunks, tool calls, or summary completion information.
 
@@ -29,7 +29,7 @@ This function initializes a `TokenIterator` with the given input, model, and gen
 
 > **Throws**: An error if the `TokenIterator` initialization fails due to invalid input or model configuration.
 
-##### Example Usage:
+### Example Usage:
 
 ```swift
 // Define the input, parameters, and context for token generation.

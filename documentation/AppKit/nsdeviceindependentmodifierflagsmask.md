@@ -15,7 +15,7 @@ Device-independent modifier flags are masked.
 static const NSEventModifierFlags NSDeviceIndependentModifierFlagsMask;
 ```
 
-#### Discussion
+## Discussion
 
 Use this symbol to mask off device-dependent modifier flags, including event coalescing information. The result will contain only key event flags.
 

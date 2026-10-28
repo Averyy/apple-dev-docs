@@ -16,7 +16,7 @@ Emit a single burst of particles when the system spawns.
 void emitter::burst(uint burstSize)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__burst.svg)
 

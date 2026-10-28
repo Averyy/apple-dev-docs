@@ -16,11 +16,11 @@ static IOReturn addUserClientAction(
  void *arg4);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of addUserClient() - kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 This is needed to allow addUserClient() to be called on the IOWorkLoop.
 

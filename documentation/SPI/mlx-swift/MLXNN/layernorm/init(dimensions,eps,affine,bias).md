@@ -17,11 +17,11 @@ Applies layer normalization [1] on the inputs.
 init(dimensions: Int, eps: Float = 1e-5, affine: Bool = true, bias: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 See [LayerNorm python docs](https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.LayerNorm.html) for more information.
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1607.06450](https://arxiv.org/abs/1607.06450)
 

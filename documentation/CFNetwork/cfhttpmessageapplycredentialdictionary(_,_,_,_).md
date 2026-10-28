@@ -24,15 +24,15 @@ func CFHTTPMessageApplyCredentialDictionary(_ request: CFHTTPMessage, _ auth: CF
 extern Boolean CFHTTPMessageApplyCredentialDictionary(CFHTTPMessageRef request, CFHTTPAuthenticationRef auth, CFDictionaryRef dict, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the authentication was successful, otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 This function performs the authentication method specified by `auth` on behalf of the request specified by `request` using the credentials contained in the dictionary specified by `dict`. The dictionary must contain values for the `kCFHTTPAuthenticationUsername` and `kCFHTTPAuthenticationPassword` keys. If [`CFHTTPAuthenticationRequiresAccountDomain(_:)`](./cfhttpauthenticationrequiresaccountdomain%28_%29.md) returns `TRUE` for `auth`, the dictionary must also contain a value for the `kCFHTTPAuthenticationAccountDomain` key.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same `CFHTTPAuthentication` object at the same time.
 

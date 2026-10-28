@@ -15,7 +15,7 @@ Resumes a paused VM and notifies the specified completion handler of the results
 func resume(completionHandler: @escaping (Result<Void, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to resume a VM that’s in the [`VZVirtualMachine.State.paused`](./state-swift.enum/paused.md) state.
 

@@ -20,7 +20,7 @@ var timeStamp: IOUSBHostTime
 IOUSBHostTime timeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Interrupt latency and system load may result in more than one frame completing with the same timestamp.
 

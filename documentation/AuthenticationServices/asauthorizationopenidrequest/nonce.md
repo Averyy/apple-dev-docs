@@ -25,7 +25,7 @@ var nonce: String? { get set }
 @property (nonatomic, copy, nullable) NSString * nonce;
 ```
 
-#### Discussion
+## Discussion
 
 You can verify this value with the identity token provided as part of a successful ASAuthorization response.
 

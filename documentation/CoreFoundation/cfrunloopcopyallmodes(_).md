@@ -25,7 +25,7 @@ func CFRunLoopCopyAllModes(_ rl: CFRunLoop!) -> CFArray!
 extern CFArrayRefCFRunLoopCopyAllModes(CFRunLoopRef rl);
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains all the run loop modes defined for `rl`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

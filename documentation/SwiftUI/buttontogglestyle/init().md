@@ -21,7 +21,7 @@ nonisolated
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. Instead, use the [`button`](../togglestyle/button.md) static variable to create this style:
 

@@ -25,7 +25,7 @@ func CFNumberFormatterCreate(_ allocator: CFAllocator!, _ locale: CFLocale!, _ s
 extern CFNumberFormatterRefCFNumberFormatterCreate(CFAllocatorRef allocator, CFLocaleRef locale, CFNumberFormatterStyle style);
 ```
 
-#### Return Value
+## Return Value
 
 A new number formatter, localized to the given locale, which will format numbers using the given style. Returns `NULL` if there was a problem creating the formatter. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

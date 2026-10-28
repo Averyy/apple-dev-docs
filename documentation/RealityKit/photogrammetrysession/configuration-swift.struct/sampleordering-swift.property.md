@@ -18,7 +18,7 @@ The order of the image samples.
 var sampleOrdering: PhotogrammetrySession.Configuration.SampleOrdering
 ```
 
-#### Discussion
+## Discussion
 
 By default, RealityKit assumes that image samples aren’t in any particular order. If you’re providing the images in order, with adjacent images next to each other, specifying [`PhotogrammetrySession.Configuration.SampleOrdering.sequential`](./sampleordering-swift.enum/sequential.md) for this value may result in better performance.
 

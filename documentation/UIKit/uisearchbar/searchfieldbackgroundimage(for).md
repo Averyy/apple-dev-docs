@@ -23,7 +23,7 @@ func searchFieldBackgroundImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) searchFieldBackgroundImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The search text field image to use for `state`.
 

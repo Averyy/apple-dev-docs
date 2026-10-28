@@ -19,7 +19,7 @@ var orderedIndex: Int { get set }
 @property NSInteger orderedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property to an index that’s out of range, the system sets the position to the nearest value that’s in range.
 

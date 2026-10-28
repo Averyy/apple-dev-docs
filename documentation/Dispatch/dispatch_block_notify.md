@@ -21,7 +21,7 @@ Schedules a notification block to be submitted to a queue when the execution of 
 extern void dispatch_block_notify(dispatch_block_t block, dispatch_queue_t queue, dispatch_block_t notification_block);
 ```
 
-#### Discussion
+## Discussion
 
 This function submits the notification block immediately if execution of the observed block object has already completed.
 

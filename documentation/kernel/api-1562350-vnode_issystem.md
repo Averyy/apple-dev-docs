@@ -15,7 +15,7 @@ Determine if a vnode is marked as a System vnode.
 int vnode_issystem(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is a system vnode, 0 if it is not.
 

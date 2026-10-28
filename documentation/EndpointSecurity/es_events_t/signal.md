@@ -20,7 +20,7 @@ var signal: es_event_signal_t { get set }
 es_event_signal_t signal;
 ```
 
-#### Discussion
+## Discussion
 
 Endpoint Security doesn’t fire this event if a process sends a signal to itself.
 

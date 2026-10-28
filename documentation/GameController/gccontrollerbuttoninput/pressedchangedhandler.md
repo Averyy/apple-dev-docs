@@ -24,7 +24,7 @@ var pressedChangedHandler: GCControllerButtonValueChangedHandler? { get set }
 @property (nonatomic, copy, nullable) GCControllerButtonValueChangedHandler pressedChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Set this handler when you only want to know when the user presses or releases the button — that is, when the [`isPressed`](./ispressed.md) property changes.
 

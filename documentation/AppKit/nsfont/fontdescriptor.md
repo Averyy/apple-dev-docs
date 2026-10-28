@@ -19,7 +19,7 @@ var fontDescriptor: NSFontDescriptor { get }
 @property (strong, readonly) NSFontDescriptor * fontDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 The font descriptor contains a mutable dictionary of optional attributes for creating an `NSFont` object. For more information about font descriptors, see [`NSFontDescriptor`](../nsfontdescriptor.md).
 

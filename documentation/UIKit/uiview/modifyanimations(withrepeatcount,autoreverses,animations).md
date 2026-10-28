@@ -23,7 +23,7 @@ class func modifyAnimations(withRepeatCount count: CGFloat, autoreverses: Bool, 
 + (void) modifyAnimationsWithRepeatCount:(CGFloat) count autoreverses:(BOOL) autoreverses animations:(void (^)()) animations;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method from within an enclosing animation block. The inverse nesting, calling [`animate(withDuration:animations:)`](./animate%28withduration,animations%29.md) from inside the [`modifyAnimations(withRepeatCount:autoreverses:animations:)`](./modifyanimations%28withrepeatcount,autoreverses,animations%29.md) block, doesn’t work.
 

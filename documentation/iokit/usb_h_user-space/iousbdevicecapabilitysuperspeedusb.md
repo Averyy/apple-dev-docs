@@ -18,7 +18,7 @@ struct IOUSBDeviceCapabilitySuperSpeedUSB {
 };
 ```
 
-#### Overview
+## Overview
 
 Device Capability SuperSpeed USB
 

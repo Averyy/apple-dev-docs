@@ -21,7 +21,7 @@ var titleVariants: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * titleVariants;
 ```
 
-#### Discussion
+## Discussion
 
 Each title should be localized and ready for display to the user. The system selects the title to display based on the available screen space.
 

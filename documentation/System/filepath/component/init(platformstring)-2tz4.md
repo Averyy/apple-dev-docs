@@ -21,7 +21,7 @@ Creates a file path component by copying bytes from a null-terminated platform s
 init?(platformString: [CInterop.PlatformChar])
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `platformString` is empty, is a root, or has more than one component in it.
 

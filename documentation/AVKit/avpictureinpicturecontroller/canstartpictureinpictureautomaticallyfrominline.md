@@ -26,7 +26,7 @@ var canStartPictureInPictureAutomaticallyFromInline: Bool { get set }
 
 - [Adopting Picture in Picture for video calls](../adopting-picture-in-picture-for-video-calls.md)
 
-#### Discussion
+## Discussion
 
 Only set this value to `true` for content that you intend to be the user’s primary focus.
 

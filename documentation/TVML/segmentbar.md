@@ -4,7 +4,7 @@
 
 Displays a list of segment bar items.
 
-#### Overview
+## Overview
 
 The `segmentBar` element contains a list of `segmentBarItem` elements that are displayed horizontally. Use the remote to move the cursor between the contained `segmentBarItem` elements. Here’s an example that has a title and subtitle above a segment bar that contains one item.
 
@@ -20,11 +20,11 @@ The `segmentBar` element contains a list of `segmentBarItem` elements that are d
 </segmentBarHeader>
 ```
 
-##### Subelements of segmentBar
+### Subelements of segmentBar
 
 - [segmentBarItem](./segmentbaritem.md)
 
-##### Elements that Use segmentBar
+### Elements that Use segmentBar
 
 - [segmentBarHeader](./segmentbarheader.md)
 

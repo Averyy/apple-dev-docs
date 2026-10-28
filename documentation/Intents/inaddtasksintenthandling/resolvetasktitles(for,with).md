@@ -29,7 +29,7 @@ optional func resolveTaskTitles(for intent: INAddTasksIntent) async -> [INSpeaka
 - (void) resolveTaskTitlesForAddTasks:(INAddTasksIntent *) intent withCompletion:(void (^)(NSArray<INSpeakableStringResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the titles for the taks. Use the intent object to obtain the titles suggested by the user. If the user doesn’t supply any task titles, return a response that indicates you need a value for the task titles. Alternatively, you could return a successful resolution containing a default task title.
 

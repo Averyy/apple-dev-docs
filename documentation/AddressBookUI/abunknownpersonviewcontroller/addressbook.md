@@ -23,7 +23,7 @@ var addressBook: ABAddressBook? { get set }
 @property (nonatomic, readwrite, nullable) ABAddressBookRef addressBook;
 ```
 
-#### Discussion
+## Discussion
 
 When unspecified, this view controller sets the value of this property by creating an `ABAddressBookRef` object.
 

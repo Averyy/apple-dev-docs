@@ -13,7 +13,7 @@ Use layer selection to reduce the number of render passes needed to generate an 
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates dynamic reflections on a chrome sphere, using layer selection to render the frame in two passes. The first pass renders the environment onto the cube map. The second pass renders the environment reflections onto the sphere; it renders additional actors in the scene; and it renders the environment itself.
 
@@ -23,7 +23,7 @@ You can implement an object that reflects its environment by sampling its reflec
 
 ![Render Passes](https://developer.apple.com/tutorials/images/com.apple.metal/reflections-with-layer-selection-2-RenderPasses.png)
 
-##### Getting started
+### Getting started
 
 This sample contains macOS and iOS targets. Run the iOS scheme on a physical device because Metal isn’t supported in the simulator.
 
@@ -37,13 +37,13 @@ supportsLayerSelection = [_view.device supportsFeatureSet:MTLFeatureSet_iOS_GPUF
 
 This sample calls ‘supportsFeatureSet:’ for this purpose within its view controller’s `viewDidLoad:` callback.
 
-##### Separate the scene
+### Separate the scene
 
 A cube map is represented as a render target array with six layers, one for each of its faces. The `[[render_target_array_index]]` attribute qualifier, specified for a structure member of a vertex function return value, identifies each array layer separately. This layer selection feature allows the sample to decide which part of the environment gets rendered to which cube map face.
 
 An `AAPLActorData` object represents an actor in the scene. In this sample, each actor is a temple model with the same mesh data but a different diffuse color. These actors sit on the XZ-plane; they’re always reflected in the X or Z direction relative to the sphere and could be rendered to any of the +X, -X, +Z, or -Z faces of the cube map.
 
-##### Perform culling tests for the reflection pass
+### Perform culling tests for the reflection pass
 
 Before rendering to the cube map, it’s useful to know which faces each actor should be rendered to. Determining this information involves a procedure known as a *culling test*, and it’s performed on each actor for each cube map face.
 
@@ -84,7 +84,7 @@ The following diagram shows the results of the culling tests performed on the te
 
 ![Face Culling and Face Index Assignment](https://developer.apple.com/tutorials/images/com.apple.metal/reflections-with-layer-selection-3-CullingAndFaceIdxSelection.png)
 
-##### Configure render targets for the reflection pass
+### Configure render targets for the reflection pass
 
 The render target for the reflection pass is a cube map. The sample configures the render target by using a `MTLRenderPassDescriptor` object with a color render target, a depth render target, and six layers. The `renderTargetArrayLength` property sets the number of cube map faces and allows the render pipeline to render into any or all of them.
 
@@ -94,7 +94,7 @@ reflectionPassDesc.depthAttachment.texture        = _reflectionCubeMapDepth;
 reflectionPassDesc.renderTargetArrayLength        = 6;
 ```
 
-##### Issue draw calls for the reflection pass
+### Issue draw calls for the reflection pass
 
 The `drawActors:pass:` method sets up the graphics rendering state for each actor. Actors are only drawn if they are visible in any of the six cube map faces, determined by the `visibleVpCount` value (accessed through the `instanceCountInReflection` property). The value of `visibleVpCount` determines the number of instances for the instanced draw call.
 
@@ -111,7 +111,7 @@ The `drawActors:pass:` method sets up the graphics rendering state for each acto
 
 In this draw call, the sample sets the `baseInstance` parameter to the value of `actorIdx * 5`. This setting is important because it tells the vertex function how to select the appropriate render target layer for each instance.
 
-##### Render the reflection pass
+### Render the reflection pass
 
 In the `vertexTransform` vertex function, the `instanceParams` argument points to the buffer that contains the cube map faces that each actor should be rendered to. The `instanceId` value indexes into the `instanceParams` array.
 
@@ -149,7 +149,7 @@ In summary, to render each actor to the reflective cube map, the sample issues a
 
 ![Instanced Draw with render_target_array_index](https://developer.apple.com/tutorials/images/com.apple.metal/reflections-with-layer-selection-4-InstancedRenderingWithTargetIndex.png)
 
-##### Perform culling tests for the final pass
+### Perform culling tests for the final pass
 
 The sample performs similar view updates for the main camera in the final pass. At the start of every frame, a view matrix is calculated and the view’s frustum is stored in the `culler_final` variable.
 
@@ -185,7 +185,7 @@ else
 }
 ```
 
-##### Configure render targets for the final pass
+### Configure render targets for the final pass
 
 The render target for the final pass is the view’s *drawable*, a displayable resource obtained by accessing the view’s `currentRenderPassDescriptor` property. However, don’t access this property prematurely because it implicitly retrieves a drawable. Drawables are expensive system resources created and maintained by the Core Animation framework. Hold a drawable as briefly as possible to avoid resource stalls. In this sample, a drawable is acquired just before the final render pass is encoded.
 
@@ -205,13 +205,13 @@ if(finalPassDescriptor != nil)
 }
 ```
 
-##### Issue draw calls for the final pass
+### Issue draw calls for the final pass
 
 The `drawActors:pass`: method sets up the graphics rendering state for each actor. Actors are only drawn if they are visible to the main camera, as determined by the `visibleVpCount` value (accessed through the `visibleInFinal` property).
 
 Because each actor is drawn only once in the final pass, the `instanceCount` parameter is always set to 1 and the `baseInstance` parameter is always set to 0.
 
-##### Render the final pass
+### Render the final pass
 
 The final pass renders the final frame directly to the view’s drawable, which is then presented onscreen.
 

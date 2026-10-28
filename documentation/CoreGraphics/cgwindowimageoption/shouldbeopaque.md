@@ -18,7 +18,7 @@ static var shouldBeOpaque: CGWindowImageOption { get }
 kCGWindowImageShouldBeOpaque
 ```
 
-#### Discussion
+## Discussion
 
 When capturing the window, partially transparent areas are backed by a solid white color so that the resulting image is fully opaque. You can combine this option with other options.
 

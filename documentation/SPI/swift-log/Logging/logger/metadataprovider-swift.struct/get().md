@@ -17,7 +17,7 @@ Invokes the metadata provider and returns the generated contextual metadata.
 func get() -> Metadata
 ```
 
-#### Return Value
+## Return Value
 
 Metadata dictionary, where values may carry attributes.
 

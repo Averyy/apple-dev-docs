@@ -19,13 +19,13 @@ Set the free cache limit.
 static func set(cacheLimit: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If using more than the given limit, free memory will be reclaimed from the cache on the next allocation. To disable the cache, set the limit to 0.
 
 The cache limit defaults to the memory limit, which may allow very large cache sizes on systems with abundant RAM. For memory-constrained applications or to prevent excessive memory growth during long inference runs, consider setting a much lower cache limit.
 
-#### Performance Optimization
+## Performance Optimization
 
 The optimal cache size varies by workload. Many developers find that relatively small cache sizes (e.g., 2MB) perform just as well as unconstrained cache sizes for their specific use cases. Experiment with different values and measure performance to find the best setting for your workload.
 

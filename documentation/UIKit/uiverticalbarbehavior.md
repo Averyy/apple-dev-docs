@@ -23,7 +23,7 @@ enum UIVerticalBarBehavior
 enum UIVerticalBarBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Return this type from [`preferredVerticalBarBehavior`](./uiviewcontroller/preferredverticalbarbehavior.md) to apply the preferred behavior.
 

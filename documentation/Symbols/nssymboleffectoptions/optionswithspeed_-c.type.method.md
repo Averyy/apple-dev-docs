@@ -21,7 +21,7 @@ A default set of effect options with a preferred speed multiplier.
 + (instancetype) optionsWithSpeed:(double) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of effect options with the preferred speed multiplier.
 

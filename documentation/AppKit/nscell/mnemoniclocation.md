@@ -17,11 +17,11 @@ Returns the position of the underlined mnemonic character in the receiver’s ti
 - (NSUInteger) mnemonicLocation;
 ```
 
-#### Return Value
+## Return Value
 
 A zero-based index into the receiver’s title string indicating the position of the character. If there is no mnemonic character, this method returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

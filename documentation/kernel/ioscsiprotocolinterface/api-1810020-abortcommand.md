@@ -12,7 +12,7 @@ virtual SCSIServiceResponse AbortCommand (
  SCSITaskIdentifier request ) = 0;
 ```
 
-#### Overview
+## Overview
 
 Obsolete. Do not use this method.
 

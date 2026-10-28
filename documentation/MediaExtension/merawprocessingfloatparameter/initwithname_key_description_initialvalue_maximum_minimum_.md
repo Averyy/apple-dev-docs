@@ -15,7 +15,7 @@ Creates a floating-point parameter object with the initial value.
 - (instancetype) initWithName:(NSString *) name key:(NSString *) key description:(NSString *) description initialValue:(float) initialValue maximum:(float) maximum minimum:(float) minimum;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`MERAWProcessingParameter.FloatingPoint`](../merawprocessingparameter/floatingpoint.md).
 

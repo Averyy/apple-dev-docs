@@ -17,7 +17,7 @@ The subscribable service that is, or can be, connected.
 var subscribedService: WASubscribableService? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use `nil` if a subscribable service isn’t in use.
 

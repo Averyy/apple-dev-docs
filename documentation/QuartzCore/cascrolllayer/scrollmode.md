@@ -24,7 +24,7 @@ var scrollMode: CAScrollLayerScrollMode { get set }
 @property (copy) CAScrollLayerScrollMode scrollMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are described in [Scroll Modes](../scroll-modes.md). The default is [`both`](../cascrolllayerscrollmode/both.md).
 

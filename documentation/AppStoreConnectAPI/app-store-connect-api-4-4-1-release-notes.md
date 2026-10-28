@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 4.4.1 provides resources that enable you to automate actions you take in App Store Connect.
 
-#### Added
+## Added
 
 - Manage In-App Purchase metadata as discrete versions. Use [`Create an In-App Purchase version`](./post-v1-inapppurchaseversions.md) to create a new version, [`Read In-App Purchase version information`](./get-v1-inapppurchaseversions-_id_.md) to read a version, and [`List the versions of an In-App Purchase`](./get-v2-inapppurchases-_id_-versions.md) to list all versions for an In-App Purchase. Each version exposes its own localizations and review screenshot through [`List localizations for an In-App Purchase version`](./get-v1-inapppurchaseversions-_id_-localizations.md) and [`Read the image for an In-App Purchase version`](./get-v1-inapppurchaseversions-_id_-image.md).
 - Manage subscription metadata as discrete versions. Use [`Create a subscription version`](./post-v1-subscriptionversions.md) to create a new version, [`Read subscription version information`](./get-v1-subscriptionversions-_id_.md) to read a version, and [`List versions for a subscription`](./get-v1-subscriptions-_id_-versions.md) to list all versions for a subscription. Each version exposes its own localizations and promotional images through [`List localizations for a subscription version`](./get-v1-subscriptionversions-_id_-localizations.md) and [`List images for a subscription version`](./get-v1-subscriptionversions-_id_-images.md).
@@ -21,7 +21,7 @@ App Store Connect API version 4.4.1 provides resources that enable you to automa
 - Use [`List adjusted equalizations for a subscription price point`](./get-v1-subscriptionpricepoints-_id_-adjustedequalizations.md) to read the price points that App Store Connect uses to equalize a subscription’s price across territories when the base price point changes. Filter the endpoint with `filter[upfrontPricePointId]` and `filter[planType]` to identify a specific adjusted equalization.
 - Added the `socialMedia` and `socialMediaAgeRestricted` Boolean attributes to [`AgeRatingDeclaration`](./ageratingdeclaration.md) and [`AgeRatingDeclarationUpdateRequest`](./ageratingdeclarationupdaterequest.md), so you can declare whether your app includes social media features and whether those features are age-restricted.
 
-#### Deprecated
+## Deprecated
 
 - The [In-App Purchase localizations (v1)](./in-app-purchase-localizations-v1.md) resource is deprecated. Use [In-App Purchase Localizations](./in-app-purchase-localizations.md) instead, which scopes localizations to an [`InAppPurchaseVersion`](./inapppurchaseversion.md).
 - The [In-App Purchase images (v1)](./in-app-purchase-images-v1.md) resource is deprecated. Use [In-App Purchase images](./in-app-purchase-images.md) instead, which scopes review screenshots to an [`InAppPurchaseVersion`](./inapppurchaseversion.md).

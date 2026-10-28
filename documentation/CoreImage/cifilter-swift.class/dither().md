@@ -24,11 +24,11 @@ class func dither() -> any CIFilter & CIDither
 + (CIFilter<CIDither> *) ditherFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 The effect applies a dithering effect to the input image. The effect applies randomized noise to the input image to produce a processed look.
 

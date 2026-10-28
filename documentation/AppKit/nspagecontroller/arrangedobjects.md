@@ -19,7 +19,7 @@ var arrangedObjects: [Any] { get set }
 @property (copy) NSArray * arrangedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate will be asked for snapshots as they are needed. Alternatively, you may never directly set this array and use the -[`navigateForward(to:)`](./navigateforward%28to%29.md) method to create a history as the user navigates.
 

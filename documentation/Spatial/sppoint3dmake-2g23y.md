@@ -19,11 +19,11 @@
 static SPPoint3D SPPoint3DMake(double x, double y, double z);
 ```
 
-#### Return Value
+## Return Value
 
 A new point.
 
-#### Discussion
+## Discussion
 
 Creates a point with the specified coordinates.
 

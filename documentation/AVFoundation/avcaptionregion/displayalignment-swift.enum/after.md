@@ -22,7 +22,7 @@ case after
 AVCaptionRegionDisplayAlignmentAfter
 ```
 
-#### Discussion
+## Discussion
 
 Aligns lines to the left for Japanese vertical captions, for example.
 

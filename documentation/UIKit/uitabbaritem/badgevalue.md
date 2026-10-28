@@ -23,7 +23,7 @@ var badgeValue: String? { get set }
 @property (nonatomic, copy, nullable) NSString * badgeValue;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

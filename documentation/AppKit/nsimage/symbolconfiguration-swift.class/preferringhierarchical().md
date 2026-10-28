@@ -19,7 +19,7 @@ class func preferringHierarchical() -> Self
 + (instancetype) configurationPreferringHierarchical;
 ```
 
-#### Discussion
+## Discussion
 
 If the symbol doesn’t support hierarchical, the result will be a monochrome (templated) symbol.
 

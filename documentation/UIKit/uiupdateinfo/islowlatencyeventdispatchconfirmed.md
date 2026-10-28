@@ -23,7 +23,7 @@ var isLowLatencyEventDispatchConfirmed: Bool { get }
 @property (nonatomic, readonly, getter=isLowLatencyEventDispatchConfirmed) BOOL lowLatencyEventDispatchConfirmed;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the system runs low-latency event dispatch during the UI update. Use this information to determine whether to avoid doing the same work more than once. For example, when considering whether to render a pencil-drawing stroke in [`afterEventDispatch`](../uiupdateactionphase/aftereventdispatch.md), if this property is `true`, but [`isPerformingLowLatencyPhases`](./isperforminglowlatencyphases.md) is `false`, you might consider waiting until after low-latency event dispatch to render the stroke.
 

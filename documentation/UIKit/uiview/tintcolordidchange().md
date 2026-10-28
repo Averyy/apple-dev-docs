@@ -23,7 +23,7 @@ func tintColorDidChange()
 - (void) tintColorDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method on a view when your code changes the value of the [`tintColor`](./tintcolor.md) property on that view. In addition, the system calls this method on a subview that inherits a changed interaction tint color.
 

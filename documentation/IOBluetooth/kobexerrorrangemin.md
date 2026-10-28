@@ -17,7 +17,7 @@ var kOBEXErrorRangeMin: OBEXErrorCodes { get }
 kOBEXErrorRangeMin
 ```
 
-#### Discussion
+## Discussion
 
 Minimum value in OBEX error range.
 

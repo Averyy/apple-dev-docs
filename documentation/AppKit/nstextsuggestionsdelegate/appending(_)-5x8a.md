@@ -18,7 +18,7 @@ func appending<T>(_ other: some NSTextSuggestionsDelegate) -> some NSTextSuggest
 
 Available when `SuggestionItemType` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 > **Note**: The returned aggregate text suggestions delegate strongly retains the given text suggestions delegate (`other`).
 

@@ -9,7 +9,7 @@
 virtual IOReturn ResetDevice();
 ```
 
-#### Overview
+## Overview
 
 Reset the device, returning it to the addressed, unconfigured state. This is useful if a device has got badly confused. Note that the AppleUSBComposite driver will automatically reconfigure the device if it is a composite device.
 

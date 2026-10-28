@@ -19,7 +19,7 @@ Contact information for identifying and communicating with a person.
 struct CommunicationHandle
 ```
 
-#### Overview
+## Overview
 
 Use this structure to specify contact information like phone numbers, email addresses, or custom identifiers, along with the type of handle it represents.
 

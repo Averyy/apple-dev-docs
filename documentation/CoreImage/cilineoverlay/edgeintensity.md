@@ -25,7 +25,7 @@ var edgeIntensity: Float { get set }
 @property (nonatomic) float edgeIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 Higher values find more edges, although typically, you’d use a low value (such as 1.0).
 

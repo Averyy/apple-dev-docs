@@ -12,7 +12,7 @@ virtual void removeObject(
  const OSString *aKey);
 ```
 
-#### Overview
+## Overview
 
 The removed key (not necessarily `aKey` itself) and object are automatically released.
 

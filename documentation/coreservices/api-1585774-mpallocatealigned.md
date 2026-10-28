@@ -15,11 +15,11 @@ Allocates a nonrelocatable memory block.
 LogicalAddress MPAllocateAligned(ByteCount size, UInt8 alignment, OptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the allocated memory. If the function cannot allocate the requested memory or the requested alignment, the returned address is `NULL`. 
 
-#### Discussion
+## Discussion
 
 The memory referenced by the returned address is guaranteed to be accessible by the application's cooperative task and any preemptive tasks that it creates, but not by other applications or their preemptive tasks. Any existing non-global heap blocks are freed when the application terminates. As with all shared memory, you must explicitly synchronize access to allocated heap blocks using a notification mechanism.
 
@@ -27,7 +27,7 @@ You can replicate the effect of the older `MPAllocate` function by calling `MPAl
 
 Also see the function  [`MPFree`](./api-1585676-mpfree.md). 
 
-##### Special Considerations
+### Special Considerations
 
 macOS does not support allocation of global (cross address space) or resident memory with this function. In addition, passing the `kMPAllocateNoGrowthMask` constant in the `options` parameter has no effect in macOS, since memory allocation is done with sparse heaps.
 

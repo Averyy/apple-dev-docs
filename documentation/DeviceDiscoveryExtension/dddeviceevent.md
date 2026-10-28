@@ -23,7 +23,7 @@ class DDDeviceEvent
 @interface DDDeviceEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 The extension creates and configures an instance of this class to represent a moment of interest in the device discovery life cycle. The event’s `eventType` ([`DDDeviceEvent.EventType`](./dddeviceevent/eventtype-swift.enum.md)) describes a particular status.
 

@@ -16,7 +16,7 @@ Defines an opaque data type representing an index-based document iterator.
 typedef struct __SKIndexDocumentIterator *SKIndexDocumentIteratorRef;
 ```
 
-#### Discussion
+## Discussion
 
 A Search Kit document iterator lets your application loop through all the document URL objects owned by a given parent document URL object. To create an iterator, use [`SKIndexDocumentIteratorCreate`](./api-1446189-skindexdocumentiteratorcreate.md). To get a copy of the next document in the set owned by the iterator, use [`SKIndexDocumentIteratorCopyNext`](./api-1442212-skindexdocumentiteratorcopynext.md).
 

@@ -25,7 +25,7 @@ func xpc_date_create_from_current() -> xpc_object_t
 extern xpc_object_txpc_date_create_from_current();
 ```
 
-#### Return Value
+## Return Value
 
 A new date object representing the current date.
 

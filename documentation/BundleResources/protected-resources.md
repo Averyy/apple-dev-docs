@@ -5,7 +5,7 @@
 
 Control an app’s access to protected system services and user data.
 
-#### Overview
+## Overview
 
 Before your app can access certain protected resources, like the Bluetooth interface, location information, or the user’s photos, the system asks the user for permission on behalf of your app. The prompt that the system displays includes a `UsageDescription` string you provide, explaining why your app needs to access the protected resource. Enter the string in the Signing and Capabilities editor for your app’s target, as described in [Requesting access to protected resources](../UIKit/requesting-access-to-protected-resources.md). Xcode adds the string as the value for the relevant [`Information Property List`](./information-property-list.md) key in your app’s build settings. The topics below list the keys you use to provide usage-description strings for protected resources.
 

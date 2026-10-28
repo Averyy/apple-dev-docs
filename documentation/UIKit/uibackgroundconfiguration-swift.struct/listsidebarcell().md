@@ -18,11 +18,11 @@ Creates the default configuration you use to style a cell in a sidebar list.
 static func listSidebarCell() -> UIBackgroundConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell in a sidebar list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the styling for the background of a cell in a list. When you apply this configuration to a cell, the background of the cell matches the system default styling for a cell in a sidebar collection view list, including styling for highlighted and selected states.
 

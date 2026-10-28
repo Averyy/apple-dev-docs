@@ -19,11 +19,11 @@ var aliases: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * aliases;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects containing the alternate names for the identity.
 
-#### Discussion
+## Discussion
 
 An identity can have zero or more aliases. Like the full and short names, two identities cannot share an alias.
 

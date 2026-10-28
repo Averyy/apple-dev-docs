@@ -26,11 +26,11 @@ func responds(to aSelector: Selector!) -> Bool
 - (BOOL) respondsToSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver implements or inherits a method that can respond to `aSelector`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 The application is responsible for determining whether a [`NO`](../no.md) response should be considered an error.
 

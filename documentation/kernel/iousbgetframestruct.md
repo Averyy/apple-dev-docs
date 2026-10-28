@@ -15,7 +15,7 @@ A structure that contains frame information.
 typedef struct IOUSBGetFrameStruct IOUSBGetFrameStruct;
 ```
 
-#### Discussion
+## Discussion
 
 This structure holds the frame number and a timestamp for when the frame register read occurred.
 

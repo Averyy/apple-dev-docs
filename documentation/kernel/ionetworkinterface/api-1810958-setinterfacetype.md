@@ -12,11 +12,11 @@ virtual bool setInterfaceType(
  UInt8type );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true to indicate success if the interface has not yet attached to the network stack, otherwise returns false.
 
-#### Overview
+## Overview
 
 Sets the interface type before the interface is attached to the network stack. See `bsd/net/if_types.h` for defined types. The `kIOInterfaceType` is also updated using the provided type.
 

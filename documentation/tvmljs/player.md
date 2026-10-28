@@ -15,7 +15,7 @@ A media player that displays the UI for playing video and audio in an Apple TV c
 interface Player
 ```
 
-#### Overview
+## Overview
 
 After you create a new player, associate the player with a playlist that contains media items. In order to play audio or video, at a minimum, there must be a `Player` object that contains a single [`Playlist`](./playlist.md) object, which contains a single [`MediaItem`](./mediaitem.md) object.
 

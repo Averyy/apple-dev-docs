@@ -24,7 +24,7 @@ var pitchButtonVisibility: MKFeatureVisibility { get set }
 @property (nonatomic, assign) MKFeatureVisibility pitchButtonVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 Use this button to display or hide a button that allows a person to set the map to a pleasing pitch or return the map to a flat appearance.
 

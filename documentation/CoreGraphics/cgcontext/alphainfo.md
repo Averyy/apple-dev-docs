@@ -25,7 +25,7 @@ var alphaInfo: CGImageAlphaInfo { get }
 extern CGImageAlphaInfo CGBitmapContextGetAlphaInfo(CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 Every bitmap context contains an attribute that specifies whether the bitmap contains an alpha component, and how it is generated. The alpha component determines the opacity of a pixel when it is drawn.
 

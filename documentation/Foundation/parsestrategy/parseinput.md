@@ -22,7 +22,7 @@ The input type parsed by this strategy.
 associatedtype ParseInput
 ```
 
-#### Discussion
+## Discussion
 
 Conforming types provide a value for this associated type to declare the type of values they parse.
 

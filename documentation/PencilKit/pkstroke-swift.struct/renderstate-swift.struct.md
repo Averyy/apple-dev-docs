@@ -23,7 +23,7 @@ struct RenderState
 
 - [Controlling stroke rendering for animation and editing](../controlling-stroke-rendering-for-animation-and-editing.md)
 
-#### Overview
+## Overview
 
 Use `RenderState` to preserve rendering fidelity when you manipulate strokes programmatically. For example, substrokes returned by [`substroke(range:)`](./substroke%28range%29.md) may include a `renderState` so that the extracted portion renders identically to the corresponding section of the original stroke. A value of `nil` uses default rendering.
 

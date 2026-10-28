@@ -21,7 +21,7 @@ Creates an index set with an index.
 + (instancetype) indexSetWithIndex:(NSUInteger) value;
 ```
 
-#### Return Value
+## Return Value
 
 [`NSIndexSet`](../nsindexset.md) object containing `index`.
 

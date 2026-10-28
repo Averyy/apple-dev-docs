@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Calling a mutating async method on actor-isolated state allows concurrent access to that state during mutation, risking data races. To resolve this error, copy the state to a local variable, call the mutating async method on the copy, then write it back. This will overwrite concurrent changes.
 
@@ -85,7 +85,7 @@ func getReady() async {
 }
 ```
 
-#### See also
+## See also
 
 - [In-Out Parameters](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations#In-Out-Parameters)
 - [Overlapping accesses, but operation requires exclusive access (ExclusivityViolation)](./exclusivity-violation.md.md)

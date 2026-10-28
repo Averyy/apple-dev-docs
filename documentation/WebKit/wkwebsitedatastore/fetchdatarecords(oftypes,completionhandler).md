@@ -27,7 +27,7 @@ func dataRecords(ofTypes dataTypes: Set<String>) async -> [WKWebsiteDataRecord]
 - (void) fetchDataRecordsOfTypes:(NSSet<NSString *> *) dataTypes completionHandler:(void (^)(NSArray<WKWebsiteDataRecord *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to retrieve information about the types of data that the website saves. The returned records don’t include the data itself, but contain information that you can convey to the user. For example, you might use the returned data records to display the cookies a website uses, or to show which websites cache data.
 

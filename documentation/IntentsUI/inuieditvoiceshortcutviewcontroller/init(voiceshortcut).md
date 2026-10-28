@@ -23,7 +23,7 @@ init(voiceShortcut: INVoiceShortcut)
 - (instancetype) initWithVoiceShortcut:(INVoiceShortcut *) voiceShortcut;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized view controller.
 

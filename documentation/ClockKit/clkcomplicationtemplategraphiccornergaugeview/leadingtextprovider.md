@@ -18,7 +18,7 @@ The text provider for the gauge’s leading text.
 <CLKTextProvider?> @objc final var leadingTextProvider: CLKTextProvider? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The template supports multicolored text from this text provider.
 

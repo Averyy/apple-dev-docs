@@ -22,7 +22,7 @@ var showsCloseButton: Bool { get set }
 @property BOOL showsCloseButton;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), a close button is automatically displayed when the popover bar is displayed. When [`false`](../../Swift/false.md), it is your responsibility to dismiss the popover bar.
 

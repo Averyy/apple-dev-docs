@@ -20,7 +20,7 @@ var enumCodeValue: OSType { get }
 @property (readonly) OSType enumCodeValue;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the descriptor, as an enumeration type, or 0 if an error occurs.
 

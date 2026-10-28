@@ -5,7 +5,7 @@
 
 Update your article template so that your article adapts when Dark Mode is active.
 
-#### Overview
+## Overview
 
 > **Note**:  Automatic Dark Mode support is available in iOS 14, iPadOS 14, and macOS 10.16 and later.
 
@@ -33,7 +33,7 @@ Here are some important points to note about automatic Dark Mode in Apple News:
 
 The sections that follow provide example code that shows how to modify properties to set up your article for Dark Mode.
 
-##### Define Document Style
+### Define Document Style
 
 In this code example, note how the `backgroundColor` property within the `preferredColorScheme`, `dark` condition, sets up the document style for Dark Mode. This conditional background color appears any time a device is in Dark Mode.
 
@@ -55,7 +55,7 @@ In this code example, note how the `backgroundColor` property within the `prefer
 }
 ```
 
-##### Define Text Style
+### Define Text Style
 
 In this code example, note how the `textColor` property within the `preferredColorScheme`, `dark` condition, sets up the text style for Dark Mode. This conditional text color appears any time a device is in Dark Mode.
 
@@ -86,7 +86,7 @@ In this code example, note how the `textColor` property within the `preferredCol
 }
 ```
 
-##### Define Component Text Style
+### Define Component Text Style
 
 In this code example, note how the `textColor` property within the `preferredColorScheme`, `dark` condition, sets up the component text style for Dark Mode. This conditional text color appears any time a device is in Dark Mode.
 
@@ -117,7 +117,7 @@ In this code example, note how the `textColor` property within the `preferredCol
 }
 ```
 
-##### Define Component Style
+### Define Component Style
 
 In this code example, note how the `color` property for the `border` object within the `preferredColorScheme`, `dark` condition, sets up the component style for Dark Mode. This conditional color appears any time a device is in Dark Mode.
 

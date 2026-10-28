@@ -22,7 +22,7 @@ Returns the primitive that results from applying a projective transform to the p
 func applying(_ transform: Self.ProjectiveTransform) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

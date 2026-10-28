@@ -25,11 +25,11 @@ optional func controller(_ controller: NSFetchedResultsController<any NSFetchReq
 - (void) controller:(NSFetchedResultsController *) controller didChangeSection:(id<NSFetchedResultsSectionInfo>) sectionInfo atIndex:(NSUInteger) sectionIndex forChangeType:(NSFetchedResultsChangeType) type;
 ```
 
-#### Discussion
+## Discussion
 
 The fetched results controller reports changes to its section before changes to the fetched result objects.
 
-##### Special Considerations
+### Special Considerations
 
 This method may be invoked many times during an update event (for example, if you are importing data on a background thread and adding them to the context in a batch). You should consider carefully whether you want to update the table view on receipt of each message.
 

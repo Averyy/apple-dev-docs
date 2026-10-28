@@ -19,11 +19,11 @@ object BackgroundMotion
 
 - [About Component Behaviors](../AppleNews/about-component-behaviors.md)
 
-#### Discussion
+## Discussion
 
 When you apply the `BackgroundMotion` behavior to a component, the background of the component moves in the opposite direction of the device motion — much like the background image on the Home Screen on iPhone. [This video](https://developer.apple.com/apple-news/videos/background-motion.mp4) shows an example of the `BackgroundMotion` behavior.
 
-##### Example
+### Example
 
 ```json
 {

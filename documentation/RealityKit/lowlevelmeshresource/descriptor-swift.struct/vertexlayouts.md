@@ -18,7 +18,7 @@ The vertex buffer layouts.
 var vertexLayouts: [LowLevelMeshResource.Layout] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You assign a layout to each vertex attribute with [`layoutIndex`](../attribute/layoutindex.md).
 

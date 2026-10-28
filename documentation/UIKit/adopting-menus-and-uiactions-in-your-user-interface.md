@@ -12,7 +12,7 @@ Add menus to your user interface, with built-in button support and bar-button it
 - Mac Catalyst 14.0+
 - Xcode 11.6+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10052: Build with iOS Pickers, Menus and Actions](https://developer.apple.com/wwdc20/10052/).
 

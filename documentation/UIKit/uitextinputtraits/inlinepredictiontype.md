@@ -23,7 +23,7 @@ optional var inlinePredictionType: UITextInlinePredictionType { get set }
 @property (nonatomic) UITextInlinePredictionType inlinePredictionType;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls whether system-provided text suggestions appear inline during typing. The default value is [`UITextInlinePredictionType.default`](../uitextinlinepredictiontype/default.md).
 

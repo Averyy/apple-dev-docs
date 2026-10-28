@@ -19,11 +19,11 @@ func SKSummaryGetTypeID() -> CFTypeID
 CFTypeID SKSummaryGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A CFTypeID object, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 Search Kit represents summarization results with summarization objects ([`SKSummary`](./sksummary.md) opaque types). If your code needs to determine whether a particular data type is a summary, you can use this function along with the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function and perform a comparison.
 

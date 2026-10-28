@@ -22,7 +22,7 @@ optional func colorPickerViewControllerDidFinish(_ viewController: UIColorPicker
 - (void) colorPickerViewControllerDidFinish:(UIColorPickerViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user dismisses the color picker.
 

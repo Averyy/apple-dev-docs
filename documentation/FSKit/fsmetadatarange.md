@@ -19,7 +19,7 @@ class FSMetadataRange
 @interface FSMetadataRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 This type represents a range that begins at `startOffset` and ends at `startOffset + segmentLength * segmentCount`. Each segment in the range represents a single block in the resource’s buffer cache.
 

@@ -20,7 +20,7 @@ The degree at which the entity rotates toward the camera.
 var blendFactor: Float
 ```
 
-#### Discussion
+## Discussion
 
 The `blendFactor` property is a floating-point number in the range `[0.0, 1.0]`.
 

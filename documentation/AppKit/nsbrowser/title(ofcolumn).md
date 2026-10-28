@@ -19,7 +19,7 @@ func title(ofColumn column: Int) -> String?
 - (NSString *) titleOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the specified column.
 

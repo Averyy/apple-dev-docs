@@ -25,7 +25,7 @@ let MPMediaItemPropertyAlbumTitle: String
 extern NSString * const MPMediaItemPropertyAlbumTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This value property contains the album title, such as “Live On Mars”, as opposed to the title of an individual song on the album, such as “Crater Dance (radio edit)” (which you specify using the [`MPMediaItemPropertyTitle`](./mpmediaitempropertytitle.md) property). Value is an [`NSString`](../Foundation/nsstring.md) object.
 

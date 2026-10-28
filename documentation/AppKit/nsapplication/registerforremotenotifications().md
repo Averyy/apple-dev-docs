@@ -19,7 +19,7 @@ func registerForRemoteNotifications()
 - (void) registerForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to register your app with APNs. When a valid connection is established, APNs sends a device token to your app delegate. Forward that token to your company’s provider server.
 

@@ -17,7 +17,7 @@ The log output.
 var logText: String
 ```
 
-#### Discussion
+## Discussion
 
 The verbatim text in the initial proposal.
 

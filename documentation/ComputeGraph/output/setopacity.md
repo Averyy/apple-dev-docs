@@ -16,7 +16,7 @@ Sets the opacity of the rendered output.
 void output::setOpacity(half opacity)
 ```
 
-#### Discussion
+## Discussion
 
 This function customizes the alpha component of the rendered particle output, controlling its transparency. This affects only the rendered appearance and does not modify the particle node itself.
 

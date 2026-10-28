@@ -25,7 +25,7 @@ var maximumTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval maximumTime;
 ```
 
-#### Discussion
+## Discussion
 
 Timed data is clamped to the minimum and maximum times. If you request transform data for a time sample after the maximum time, Model I/O returns the transform at the maximum time.
 

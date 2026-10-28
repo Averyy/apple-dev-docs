@@ -24,7 +24,7 @@ var isPaused: Bool { get set }
 @property (nonatomic, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), the display link doesn’t send notifications to the target.
 

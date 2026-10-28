@@ -21,7 +21,7 @@ An optional setting that tells the algorithm how to scale an input image before 
 var cropAndScaleAction: ImageCropAndScaleAction
 ```
 
-#### Discussion
+## Discussion
 
 The system applies scaling before generating the feature print. The default value is [`ImageCropAndScaleAction.scaleToFill`](../imagecropandscaleaction/scaletofill.md).
 

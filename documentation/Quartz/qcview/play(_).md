@@ -20,7 +20,7 @@ func play(_ sender: Any!)
 - (void) play:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method starts rendering a composition if it is not already rendering, pauses a composition that is rendering, or resumes rendering for a composition whose rendering is paused. The method is invoked when the user clicks a button or issues a command from some other user interface element, such as a menu.
 

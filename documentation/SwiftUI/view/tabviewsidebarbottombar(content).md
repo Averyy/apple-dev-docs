@@ -20,7 +20,7 @@ nonisolated
 func tabViewSidebarBottomBar<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 The content is pinned at the bottom of the sidebar, so it’s always visible when the sidebar is visible and doesn’t scroll with the content.
 

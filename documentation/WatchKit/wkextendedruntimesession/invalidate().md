@@ -23,7 +23,7 @@ func invalidate()
 
 - [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
-#### Discussion
+## Discussion
 
 This method stops a running session. If you’ve scheduled a session, it cancels the session. If the session isn’t yet running or scheduled, this method triggers a [`WKExtendedRuntimeSessionErrorCode.notYetStarted`](../wkextendedruntimesessionerrorcode/notyetstarted.md) error.
 

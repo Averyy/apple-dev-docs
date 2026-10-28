@@ -12,7 +12,7 @@ unsigned long getDesiredDomainState (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called by the parent.
 

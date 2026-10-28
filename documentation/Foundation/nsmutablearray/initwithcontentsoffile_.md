@@ -21,11 +21,11 @@ Initializes a newly allocated mutable array with the contents of the file specif
 - (NSMutableArray<id> *) initWithContentsOfFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable array initialized to contain the contents of the file specified by `aPath` or `nil` if the file can’t be opened or the contents of the file can’t be parsed into a mutable array. The returned object must be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 The mutable array representation in the file identified by `aPath` must contain only property list objects (`NSString`, `NSData`, `NSDate`, `NSNumber`, `NSArray`, or `NSDictionary` objects). The objects contained by this array are immutable even if the array is mutable.
 

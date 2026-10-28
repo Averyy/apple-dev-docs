@@ -24,7 +24,7 @@ var indexType: MTLIndexType { get }
 @property (nonatomic, readonly) MTLIndexType indexType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for the `indexType` parameter in a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](../../Metal/mtlrendercommandencoder/drawindexedprimitives%28type,indexcount,indextype,indexbuffer,indexbufferoffset%29.md).
 

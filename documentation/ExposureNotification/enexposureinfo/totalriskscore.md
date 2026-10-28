@@ -23,7 +23,7 @@ var totalRiskScore: ENRiskScore { get }
 @property (nonatomic, assign, readonly) ENRiskScore totalRiskScore;
 ```
 
-#### Discussion
+## Discussion
 
 This value is limited by [`ENRiskScoreMax`](../enriskscoremax.md).
 

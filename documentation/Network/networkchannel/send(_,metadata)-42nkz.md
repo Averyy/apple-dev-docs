@@ -23,7 +23,7 @@ func send<Content>(_ content: Content, @ProtocolMetadataBuilder metadata builder
 
 Available when `ApplicationProtocol` conforms to `DatagramProtocol`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the send will be enqueued until the connection is ready to send.
 

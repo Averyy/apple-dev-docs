@@ -24,7 +24,7 @@ var intervalComponents: DateComponents { get }
 @property (copy, readonly) NSDateComponents * intervalComponents;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the length of the time intervals for your collection. The following code sample shows a number of common time intervals.
 

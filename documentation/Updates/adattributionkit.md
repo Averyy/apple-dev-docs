@@ -5,16 +5,16 @@
 
 Learn about important changes to AdAttributionKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [AdAttributionKit](../AdAttributionKit/AdAttributionKit.md).
 
-#### June 2025
+## June 2025
 
 - Receive postbacks in multiple conversion windows and understand where an app is installed with the county-code property in postbacks.
 - Control how the system attributes conversions for your app by using attribution rules and cooldown windows.
 
-#### June 2024
+## June 2024
 
 - Add support for re-engagement, which allows you to measure the success of ad campaigns that lead people to re-engage with apps they’ve already installed, while respecting their privacy.
 - Specify a re-engagement URL: At runtime, advertisements can present a universal link registered for your app to launch to display content inside of advertised apps and begin re-engagement measurement.

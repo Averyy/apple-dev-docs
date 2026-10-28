@@ -24,11 +24,11 @@ subscript(key: String) -> GCControllerElement? { get }
 - (GCControllerElement *) objectForKeyedSubscript:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The element that matches the key.
 
-#### Discussion
+## Discussion
 
 You can access elements of a profile using a subscript notation. For example, get the button with the X label from an instance of [`GCMicroGamepad`](../gcmicrogamepad.md) using `microGamepad[”Button X”]`.
 

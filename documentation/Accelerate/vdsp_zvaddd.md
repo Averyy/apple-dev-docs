@@ -21,7 +21,7 @@ Adds two double-precision complex vectors.
 extern void vDSP_zvaddD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__B, vDSP_Stride __IB, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sums of the first `N` complex elements of `A` and `B`, writing the result to `C`:
 

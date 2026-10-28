@@ -25,7 +25,7 @@ var volume: Float { get set }
 @property (nonatomic) float volume;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the default volume for when a source begins playing. To vary the volume during playback through an [`SCNAudioPlayer`](../scnaudioplayer.md) object, use the player’s [`audioNode`](../scnaudioplayer/audionode.md) property to access real-time audio controls.
 

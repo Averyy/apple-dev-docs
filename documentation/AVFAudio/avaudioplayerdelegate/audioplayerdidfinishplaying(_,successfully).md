@@ -25,7 +25,7 @@ optional func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully 
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *) player successfully:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t call this method on an audio interruption.
 

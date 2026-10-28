@@ -24,7 +24,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 A texture is always associated with the [`MTLDevice`](../mtldevice.md) that created it and can be used only with that device.
 

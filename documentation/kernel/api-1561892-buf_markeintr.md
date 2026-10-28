@@ -15,7 +15,7 @@ Mark a buffer as having been interrupted during I/O.
 void buf_markeintr(buf_t bp);
 ```
 
-#### Discussion
+## Discussion
 
 Waiters for I/O to complete (buf_biowait()) will return with EINTR when woken up. buf_markeintr does not itself do a wakeup.
 

@@ -22,7 +22,7 @@ var printPaper: UIPrintPaper? { get }
 @property (nonatomic, readonly, nullable) UIPrintPaper * printPaper;
 ```
 
-#### Discussion
+## Discussion
 
 `UIPrintInteractionController` sets this property immediately after the user selects a printer and before it calls the delegate’s [`printInteractionControllerWillStartJob(_:)`](../uiprintinteractioncontrollerdelegate/printinteractioncontrollerwillstartjob%28_%29.md) method. If its delegate implements the [`printInteractionController(_:choosePaper:)`](../uiprintinteractioncontrollerdelegate/printinteractioncontroller%28_,choosepaper%29.md) method of the `UIPrintInteractionControllerDelegate` protocol, it can return the [`UIPrintPaper`](../uiprintpaper.md) object to assign to this property. Otherwise, UIKit assigns an object with a default paper size and printing rectangle that is based on the output type and the capabilities of the destination printer. This object is released when the print job finishes.
 

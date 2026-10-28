@@ -23,7 +23,7 @@ class CLHeading
 @interface CLHeading : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`CLHeading`](./clheading.md) object contains computed values for the device’s azimuth (orientation) relative to true or magnetic north. It also includes the raw data for the three-dimensional vector used to compute those values. A navigation app might use the information to rotate a map so that it reflects the direction that the user is facing.
 

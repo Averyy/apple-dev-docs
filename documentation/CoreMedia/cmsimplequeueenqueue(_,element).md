@@ -25,11 +25,11 @@ func CMSimpleQueueEnqueue(_ queue: CMSimpleQueue, element: UnsafeRawPointer) -> 
 extern OSStatus CMSimpleQueueEnqueue(CMSimpleQueueRef queue, const void *element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `noErr` if the call succeeds or `kCMSimpleQueueError_QueueIsFull` if the queue is full.
 
-#### Discussion
+## Discussion
 
 If the queue is full, this operation fails.
 

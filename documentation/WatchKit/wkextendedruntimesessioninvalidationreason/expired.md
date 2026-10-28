@@ -19,7 +19,7 @@ case expired
 WKExtendedRuntimeSessionInvalidationReasonExpired
 ```
 
-#### Discussion
+## Discussion
 
 Sessions can only run for a limited amount of time. Each session type has a different time limit. For more information, see the session’s [`expirationDate`](../wkextendedruntimesession/expirationdate.md) property.
 

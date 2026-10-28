@@ -25,7 +25,7 @@ static let ownerAccountName: FileAttributeKey
 extern NSFileAttributeKey const NSFileOwnerAccountName;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSString`](../nsstring.md) object.
 

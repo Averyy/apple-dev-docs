@@ -24,7 +24,7 @@ var strokeEnd: CGFloat { get set }
 @property (nonatomic, assign) CGFloat strokeEnd;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property and [`strokeStart`](./strokestart.md) to render a portion of the line. As a unit distance, [`strokeEnd`](./strokeend.md) must be a value between 0 and 1. A unit distance of 0 represents the top of the circle and the stroke draws in a clockwise direction.
 

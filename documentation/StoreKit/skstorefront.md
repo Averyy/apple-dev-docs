@@ -27,7 +27,7 @@ class SKStorefront
 @interface SKStorefront : NSObject
 ```
 
-#### Overview
+## Overview
 
 In-app products you create through App Store Connect are available for sale in every region with an App Store. You can use the storefront information to determine the customer’s region, and offer in-app products suitable for that region. StoreKit exposes [`SKStorefront`](./skstorefront.md) storefront information as a read-only property in [`SKPaymentQueue`](./skpaymentqueue.md).
 
@@ -35,7 +35,7 @@ You must maintain your own list of product identifiers and the storefronts in wh
 
 > **Note**:  Don’t save the storefront information with your customer information; storefront information can change at any time. Always get the storefront identifier immediately before you display product information or availability to the customer in your app. Storefront information may not be used to develop or enhance a customer profile, or track customers for advertising or marketing purposes.
 
-##### Show Products Based on the Current Storefront
+### Show Products Based on the Current Storefront
 
 The following example function `shouldShow` returns `false` if your product isn’t suitable for the given storefront. You must create your own list of products available by storefront, referred to as `myProducts` below:
 
@@ -70,7 +70,7 @@ func fetchProductInfo() {
 }
 ```
 
-##### Listen for Storefront Changes
+### Listen for Storefront Changes
 
 The storefront value can change at any time. To listen for changes in this value, implement the [`paymentQueueDidChangeStorefront(_:)`](./skpaymenttransactionobserver/paymentqueuedidchangestorefront%28_%29.md) method. The `shouldShow` function is defined in [Show Products Based on the Current Storefront](./skstorefront.md#Show-Products-Based-on-the-Current-Storefront). Refresh the list of your available products when the storefront changes, as shown below:
 
@@ -87,7 +87,7 @@ func paymentQueueDidChangeStorefront(_ queue: SKPaymentQueue) {
 }
 ```
 
-##### Respond to Storefront Changes
+### Respond to Storefront Changes
 
 The current storefront can change at any time, including during a transaction. The following code listing determines whether the transaction should continue in the updated storefront. Your delegate’s [`paymentQueue(_:shouldContinue:in:)`](./skpaymentqueuedelegate/paymentqueue%28_,shouldcontinue,in%29.md) method must return quickly, before the call times out. The `shouldShow` function is defined in [Show Products Based on the Current Storefront](./skstorefront.md#Show-Products-Based-on-the-Current-Storefront).
 
@@ -116,7 +116,7 @@ func paymentQueue(_ queue: SKPaymentQueue,
 }
 ```
 
-##### Change the App Store Country or Region in the Sandbox Environment
+### Change the App Store Country or Region in the Sandbox Environment
 
 When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test Apple In-App Purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [Test Apple In-App Purchases](https://help.apple.com/app-store-connect/#/dev7e89e149d).
 

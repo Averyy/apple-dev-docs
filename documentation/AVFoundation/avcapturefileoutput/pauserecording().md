@@ -23,7 +23,7 @@ func pauseRecording()
 - (void) pauseRecording;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes the receiver to stop writing captured samples to the current output file returned by [`outputFileURL`](./outputfileurl.md), but leaves the file open so that samples can be written to it in the future, if [`resumeRecording()`](./resumerecording%28%29.md) is called. This allows you to record multiple media segments that are not contiguous in time to a single file.
 

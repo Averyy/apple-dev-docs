@@ -6,7 +6,7 @@
 
 Streamline your app’s API by moving georelated searches from inside your app to your server.
 
-#### Overview
+## Overview
 
 This sample demonstrates how to integrate the Apple Maps Server API into Java-based apps.
 
@@ -22,7 +22,7 @@ The `MapsApiClientDemo.java` file demonstrates how you use the Apple Maps Server
 
 > **Note**: This sample code project is associated with WWDC22 session: 10006 [Meet Apple Maps Server APIs](https://developer.apple.com/wwdc22/10006)
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To build this sample, you need the following tools and other information:
 
@@ -33,7 +33,7 @@ To build this sample, you need the following tools and other information:
 
 In the `MapsApiClientDemo.java` file, edit the `createJwt()` method to set the `teamId`, `keyId`, and `key` variables to the values you obtained from your Apple Developer portal account.
 
-##### Run the sample
+### Run the sample
 
 To run the sample, enter the following commands in Terminal while in the `server-api-examples` directory:
 

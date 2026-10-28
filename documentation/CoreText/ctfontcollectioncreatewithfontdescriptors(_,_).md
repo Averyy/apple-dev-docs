@@ -25,11 +25,11 @@ func CTFontCollectionCreateWithFontDescriptors(_ queryDescriptors: CFArray?, _ o
 extern CTFontCollectionRefCTFontCollectionCreateWithFontDescriptors(CFArrayRef queryDescriptors, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A new font collection based on the provided font descriptors.
 
-#### Discussion
+## Discussion
 
 The contents of the returned collection are defined by matching the provided descriptors against all available font descriptors.
 

@@ -24,7 +24,7 @@ static let completeWhenUserInactive: URLFileProtection
 extern NSURLFileProtectionType const NSURLFileProtectionCompleteWhenUserInactive;
 ```
 
-#### Discussion
+## Discussion
 
 After the first unlock, your app can access the file and continue to access it even if the person using it subsequently locks the device. After access expires, your app can’t access the file until the person using the device unlocks it again.
 

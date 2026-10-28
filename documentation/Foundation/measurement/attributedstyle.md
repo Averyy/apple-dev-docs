@@ -24,7 +24,7 @@ struct AttributedStyle
 
 Available when `UnitType` inherits `Dimension`.
 
-#### Overview
+## Overview
 
 Use either the [`formatted()`](./formatted%28%29.md) or the [`formatted(_:)`](./formatted%28_%29.md) instance method of [`Measurement`](../measurement.md) to create an attributed string representation of a measurement.
 

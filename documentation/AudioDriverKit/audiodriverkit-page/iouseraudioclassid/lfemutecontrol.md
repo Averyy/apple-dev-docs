@@ -15,7 +15,7 @@ The identifier for the low-frequency effect mute control class.
 LFEMuteControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class, where `true` means that the LFE channel that results from bass management isn’t audible. If you use normal audio channels to represent LFE channels, you must use the [`VolumeControl`](./volumecontrol.md) class to manipulate the level.
 

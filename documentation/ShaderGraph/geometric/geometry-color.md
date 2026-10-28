@@ -14,7 +14,7 @@ The color associated with the geometry at the currently-processed geometric posi
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Geometry Color (float)**:
 
@@ -46,7 +46,7 @@ The color associated with the geometry at the currently-processed geometric posi
 | --- | --- |
 | `Out` | Color4 |
 
-#### Parameter description
+## Parameter description
 
 - **`Index`**: The index of the color the node references. The default value is `0`.
 

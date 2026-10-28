@@ -25,7 +25,7 @@ class var `default`: NSParagraphStyle { get }
 @property (class, nonatomic, copy, readonly) NSParagraphStyle * defaultParagraphStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default paragraph style has the following default values:
 

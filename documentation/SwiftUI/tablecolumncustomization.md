@@ -19,7 +19,7 @@ A representation of the state of the columns in a table.
 struct TableColumnCustomization<RowValue> where RowValue : Identifiable
 ```
 
-#### Overview
+## Overview
 
 `TableColumnCustomization` can be created and provided to a table to enable column reordering and column visibility. The state can be queried and updated programmatically, as well as bound to persistent app or scene storage.
 

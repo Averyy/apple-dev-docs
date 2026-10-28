@@ -23,7 +23,7 @@ static var any: TKSmartCardProtocol { get }
 TKSmartCardProtocolAny
 ```
 
-#### Discussion
+## Discussion
 
 Any available transmission protocols.
 

@@ -20,7 +20,7 @@ A path component to animate a named parameter.
 case parameter(String)
 ```
 
-#### Discussion
+## Discussion
 
 This path component terminates an array of paths, and at the same time specifies a named scene or entity property that animates.
 

@@ -22,7 +22,7 @@ func startSearchingForUnconfiguredAccessories(matching predicate: NSPredicate?)
 - (void) startSearchingForUnconfiguredAccessoriesMatchingPredicate:(NSPredicate *) predicate;
 ```
 
-#### Discussion
+## Discussion
 
 This method starts a Wi-Fi scan for unconfigured accessories. Note that searching is a power and resource intensive process and must only be used when actively searching for accessories. As soon as the desired accessories have been located, you should immediately stop a search.
 

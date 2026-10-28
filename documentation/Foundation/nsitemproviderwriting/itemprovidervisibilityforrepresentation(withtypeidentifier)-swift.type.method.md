@@ -25,7 +25,7 @@ optional static func itemProviderVisibilityForRepresentation(withTypeIdentifier 
 + (NSItemProviderRepresentationVisibility) itemProviderVisibilityForRepresentationWithTypeIdentifier:(NSString *) typeIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A representation visibility specification for the given UTI.
 

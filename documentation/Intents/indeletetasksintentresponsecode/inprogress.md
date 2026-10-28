@@ -25,7 +25,7 @@ case inProgress
 INDeleteTasksIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if you began deleting tasks from the task list but didn’t confirm the process was complete. For example, when a server handles the deletion and you’ve not yet received a confirmation from that server. Configure a timer to fire if your server doesn’t return within a few seconds. Use your timer’s handler block to provide the in-progress response back to Siri.
 

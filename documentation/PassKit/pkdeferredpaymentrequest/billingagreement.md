@@ -23,7 +23,7 @@ var billingAgreement: String? { get set }
 @property (nonatomic, copy, nullable) NSString * billingAgreement;
 ```
 
-#### Discussion
+## Discussion
 
 This may include additional details about the cancellation period or penalties for late cancellation. This value is optional.
 

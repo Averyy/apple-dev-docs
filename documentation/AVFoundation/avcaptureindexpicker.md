@@ -27,7 +27,7 @@ class AVCaptureIndexPicker
 
 - [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Overview
+## Overview
 
 Index pickers are appropriate for controls that provide an indexed container of values.
 

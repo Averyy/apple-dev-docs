@@ -15,9 +15,9 @@ The impression share query endpoint returns this response wrapper.
 object ImpressionShareQueryResponse
 ```
 
-#### Response Structure
+## Response Structure
 
-##### Top-Level Fields
+### Top-Level Fields
 
 The `ImpressionShareResultContainer` wrapping `result` exposes a single field.
 
@@ -40,7 +40,7 @@ Each [`ImpressionShareRow`](./impressionsharerow.md) in `rows` carries the follo
 | `rank` | integer | App’s impression share rank for this search term and country. `1` = highest share. |
 | `searchPopularity1to5` | integer | Relative search volume on a 1–5 scale. `5` = most popular. |
 
-##### Impression Share Encoding
+### Impression Share Encoding
 
 The `lowImpressionShare` and `highImpressionShare` fields use a tiered encoding. They are not always a range:
 

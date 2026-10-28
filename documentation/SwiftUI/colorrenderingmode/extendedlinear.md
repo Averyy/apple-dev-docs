@@ -21,7 +21,7 @@ The extended linear sRGB working color space.
 case extendedLinear
 ```
 
-#### Discussion
+## Discussion
 
 Color component values outside the range `[0, 1]` are preserved. This color space isn’t gamma corrected.
 

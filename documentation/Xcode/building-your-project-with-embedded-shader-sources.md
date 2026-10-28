@@ -5,7 +5,7 @@
 
 Prepare to debug your project’s shaders by including source code in the build.
 
-#### Overview
+## Overview
 
 To debug your shaders in Xcode, configure your build to include shader source code by changing your project’s build settings. Select your project in the Project navigator, click the Build Settings tab, and search for the Produce Debugging Information setting in the Metal Compiler Build Options section. Then, change the setting’s Debug entry to “Yes, include source code.”
 

@@ -25,7 +25,7 @@ func nw_tcp_options_set_enable_fast_open(_ options: nw_protocol_options_t, _ ena
 void nw_tcp_options_set_enable_fast_open(nw_protocol_options_t options, bool enable_fast_open);
 ```
 
-#### Discussion
+## Discussion
 
 If TCP Fast Open is enabled and TLS is running on top of TCP, the TLS handshake will automatically be used as the TCP early data. If there is no protocol running on top of TCP, you should also enable fast open on the connection parameters and send idempotent data.
 

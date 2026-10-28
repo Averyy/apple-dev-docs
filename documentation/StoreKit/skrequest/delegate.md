@@ -27,7 +27,7 @@ weak var delegate: (any SKRequestDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<SKRequestDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`SKRequestDelegate`](../skrequestdelegate.md) protocol, although most subclasses of [`SKRequest`](../skrequest.md) provide a more specific protocol to implement.
 

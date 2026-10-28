@@ -23,7 +23,7 @@ func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
 - (void) motionEnded:(UIEventSubtype) motion withEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit informs the responder only when a motion event starts and ends. It doesn’t report intermediate shakes. Motion events are delivered initially to the first responder and are forwarded up the responder chain as appropriate
 

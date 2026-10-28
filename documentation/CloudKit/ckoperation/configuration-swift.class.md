@@ -25,7 +25,7 @@ class Configuration
 @interface CKOperationConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 All of the properties in `CKOperationConfiguration` have a default value. When determining which properties to apply to a CloudKit operation, consult the operation’s configuration property, as well as the [`defaultConfiguration`](../ckoperationgroup/defaultconfiguration.md) property of the group that the operation belongs to. These properties combine through the following rules:
 

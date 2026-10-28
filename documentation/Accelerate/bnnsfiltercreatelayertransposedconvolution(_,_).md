@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerTransposedConvolution(_ layer_params: UnsafePointer<BN
 BNNSFilterBNNSFilterCreateLayerTransposedConvolution(const BNNSLayerParametersConvolution *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use transposed convolution to upsample a tensor by performing an operation that’s effectively the inverse of a convolution.
 

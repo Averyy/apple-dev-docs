@@ -19,7 +19,7 @@ let kLSQuarantineAgentNameKey: CFString
 const CFStringRef kLSQuarantineAgentNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 When setting quarantine properties, this agent name is set automatically to the current process name if this key is not present in the caller’s dictionary.
 

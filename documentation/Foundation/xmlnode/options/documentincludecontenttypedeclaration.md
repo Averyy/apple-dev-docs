@@ -20,7 +20,7 @@ static var documentIncludeContentTypeDeclaration: XMLNode.Options { get }
 NSXMLDocumentIncludeContentTypeDeclaration
 ```
 
-#### Discussion
+## Discussion
 
 (Output)
 

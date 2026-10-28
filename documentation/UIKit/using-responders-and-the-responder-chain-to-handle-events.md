@@ -5,7 +5,7 @@
 
 Learn how to handle events that propagate through your app.
 
-#### Overview
+## Overview
 
 Apps receive and handle events using *responder objects*. A responder object is any instance of the [`UIResponder`](./uiresponder.md) class, and common subclasses include [`UIView`](./uiview.md), [`UIViewController`](./uiviewcontroller.md), and [`UIApplication`](./uiapplication.md). Responders receive the raw event data and must either handle the event or forward it to another responder object. When your app receives an event, UIKit automatically directs that event to the most appropriate responder object, known as the *first responder*.
 
@@ -15,7 +15,7 @@ Unhandled events are passed from responder to responder in the active *responder
 
 If the text field doesn’t handle an event, UIKit sends the event to the text field’s parent [`UIView`](./uiview.md) object, followed by the root view of the window. From the root view, the responder chain diverts to the owning view controller before directing the event to the window. If the window can’t handle the event, UIKit delivers the event to the [`UIApplication`](./uiapplication.md) object, and possibly to the app delegate if that object is an instance of [`UIResponder`](./uiresponder.md) and not already part of the responder chain.
 
-##### Determine an event’s first responder
+### Determine an event’s first responder
 
 UIKit designates an object as the first responder to an event based on the type of that event. Event types include:
 
@@ -33,7 +33,7 @@ Controls communicate directly with their associated target object using action m
 
 Gesture recognizers receive touch and press events before their view does. If a view’s gesture recognizers fail to recognize a sequence of touches, UIKit sends the touches to the view. If the view doesn’t handle the touches, UIKit passes them up the responder chain. For more information about using gesture recognizers to handle events, see [Handling UIKit gestures](./handling-uikit-gestures.md).
 
-##### Determine which responder contained a touch event
+### Determine which responder contained a touch event
 
 UIKit uses view-based hit-testing to determine where touch events occur. Specifically, UIKit compares the touch location to the bounds of view objects in the view hierarchy. The [`hitTest(_:with:)`](./uiview/hittest%28_,with%29.md) method of [`UIView`](./uiview.md) traverses the view hierarchy, looking for the deepest subview that contains the specified touch, which becomes the first responder for the touch event.
 
@@ -41,7 +41,7 @@ UIKit uses view-based hit-testing to determine where touch events occur. Specifi
 
 When a touch occurs, UIKit creates a [`UITouch`](./uitouch.md) object and associates it with a view. As the touch location or other parameters change, UIKit updates the same [`UITouch`](./uitouch.md) object with the new information. The only property that doesn’t change is the view. (Even when the touch location moves outside the original view, the value in the touch’s [`view`](./uitouch/view.md) property doesn’t change). When the touch ends, UIKit releases the [`UITouch`](./uitouch.md) object.
 
-##### Alter the responder chain
+### Alter the responder chain
 
 You can alter the responder chain by overriding the [`next`](./uiresponder/next.md) property of your responder objects. When you do this, the next responder is the object that you return.
 

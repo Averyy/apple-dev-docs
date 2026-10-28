@@ -19,11 +19,11 @@ func hv_vmx_vcpu_set_apic_address(_ vcpu: hv_vcpuid_t, _ gpa: hv_gpaddr_t) -> hv
 extern hv_return_t hv_vmx_vcpu_set_apic_address(hv_vcpuid_t vcpu, hv_gpaddr_t gpa);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function must be called by the owning thread.
 

@@ -25,11 +25,11 @@ class func description() -> String
 + (NSString *) description;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the contents of the receiving class.
 
-#### Discussion
+## Discussion
 
 The debugger’s print-object command invokes this method to produce a textual description of an object.
 

@@ -23,7 +23,7 @@ var shadowImage: UIImage? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIImage * shadowImage;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit uses this property and the [`shadowColor`](./shadowcolor.md) property to determine the shadow’s appearance. When this property is `nil`, the bar displays a default shadow tinted according to the value in the [`shadowColor`](./shadowcolor.md) property. If [`shadowColor`](./shadowcolor.md) is `nil` or contains the [`clear`](../uicolor/clear.md) color, the bar displays no shadow.
 

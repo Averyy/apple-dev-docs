@@ -16,7 +16,7 @@ The set of languages for which allowed menu items have been configured.
 var allowedMenuItemLanguages: Set<Locale.Language> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Contains only languages explicitly added via [`setAllowedMenuItems(_:for:)`](./setallowedmenuitems%28_,for%29.md). Each returned language matches the value originally passed to that method. Does not include languages inferred through localization resolution.
 

@@ -12,11 +12,11 @@ virtual bool removeNetworkData(
  const OSSymbol *aKey );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the object was found and removed, false otherwise.
 
-#### Overview
+## Overview
 
 This method removes an `IONetworkData` object from the collection managed by the interface. The object removed is released.
 

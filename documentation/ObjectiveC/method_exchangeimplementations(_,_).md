@@ -25,7 +25,7 @@ func method_exchangeImplementations(_ m1: Method, _ m2: Method)
 extern void method_exchangeImplementations(Method m1, Method m2);
 ```
 
-#### Discussion
+## Discussion
 
 This is an atomic version of the following:
 

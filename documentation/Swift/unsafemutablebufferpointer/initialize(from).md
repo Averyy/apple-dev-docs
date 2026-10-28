@@ -21,11 +21,11 @@ Initializes the buffer’s memory with the given elements.
 func initialize<S>(from source: S) -> (unwritten: S.Iterator, index: UnsafeMutableBufferPointer<Element>.Index) where Element == S.Element, S : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 An iterator to any elements of `source` that didn’t fit in the buffer, and an index to the next uninitialized element in the buffer.
 
-#### Discussion
+## Discussion
 
 Prior to calling the `initialize(from:)` method on a buffer, the memory it references must be uninitialized, or its `Element` type must be a trivial type. After the call, the memory referenced by the buffer up to, but not including, the returned index is initialized. The buffer must contain sufficient memory to accommodate `source.underestimatedCount`.
 

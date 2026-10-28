@@ -26,7 +26,7 @@ var workoutStyle: Self.WorkoutStyle { get set }
 
 - [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 
-#### Discussion
+## Discussion
 
 Your implementation’s `workoutStyle` property must be a type you define that adopts either the [`AppEnum`](../appenum.md) or [`AppEntity`](../appentity.md) protocol. Declare this property using the [`AppIntent.Parameter`](../appintent/parameter.md) property wrapper.
 

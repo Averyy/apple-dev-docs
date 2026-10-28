@@ -25,7 +25,7 @@ func NSAllMapTableValues(_ table: NSMapTable<AnyObject, AnyObject>) -> [Any]
 extern NSArray *NSAllMapTableValues(NSMapTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 An array object containing all the values in `table`. This function should be called only when `table` values are objects, not when they’re any other type of pointer.
 

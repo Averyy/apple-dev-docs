@@ -17,11 +17,11 @@ Resolves an alias contained in an alias file.
 OSErr FSResolveAliasFile(FSRef *theRef, Boolean resolveAliasChains, Boolean *targetIsFolder, Boolean *wasAliased);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. When it finds the specified volume and parent directory but fails to find the target file or directory in that location, `FSResolveAliasFile` returns `fnfErr`.
 
-#### Discussion
+## Discussion
 
 If your application bypasses the Finder when manipulating documents, it should check for and resolve aliases itself by using the `FSResolveAliasFile` function.
 

@@ -20,11 +20,11 @@ func CGShieldingWindowID(_ display: CGDirectDisplayID) -> CGWindowID
 extern CGWindowID CGShieldingWindowID(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The window ID of the shield window for the specified display, or `NULL` if the display is not shielded.
 
-#### Discussion
+## Discussion
 
 To prevent updates by direct-to-screen programs, Quartz draws a shield window that fills the entire screen of a captured display.
 

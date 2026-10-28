@@ -24,11 +24,11 @@ class func photoEffectMono() -> any CIFilter & CIPhotoEffect
 + (CIFilter<CIPhotoEffect> *) photoEffectMonoFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that imitate black-and-white photography film with low contrast.
 

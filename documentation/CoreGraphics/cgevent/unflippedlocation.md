@@ -20,7 +20,7 @@ var unflippedLocation: CGPoint { get }
 extern CGPoint CGEventGetUnflippedLocation(CGEventRef event);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the location of the mouse cursor associated with the event.  The coordinate system used is relative to the lower-left corner of the main display, and is compatible with the global coordinate system used by the Application Kit.
 

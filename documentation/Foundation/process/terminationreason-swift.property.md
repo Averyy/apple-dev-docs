@@ -19,7 +19,7 @@ var terminationReason: Process.TerminationReason { get }
 @property (readonly) NSTaskTerminationReason terminationReason;
 ```
 
-#### Return Value
+## Return Value
 
 The termination status. The possible values are described in [`Process.TerminationReason`](./terminationreason-swift.enum.md).
 

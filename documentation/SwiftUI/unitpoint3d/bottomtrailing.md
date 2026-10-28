@@ -15,7 +15,7 @@ A point that’s centered in the depth dimension on the bottom-trailing edge of 
 static let bottomTrailing: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 

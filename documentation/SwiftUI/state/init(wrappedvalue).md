@@ -21,7 +21,7 @@ Creates a state property that stores an initial wrapped value.
 init(wrappedValue value: Value)
 ```
 
-#### Discussion
+## Discussion
 
 You don’t call this initializer directly. Instead, SwiftUI calls it for you when you declare a property with the `@State` attribute and provide an initial value:
 

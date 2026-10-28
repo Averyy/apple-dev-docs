@@ -19,7 +19,7 @@ var backgroundViewScrollsWithContent: Bool { get set }
 @property BOOL backgroundViewScrollsWithContent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), which means that [`backgroundView`](./backgroundview.md) (if it exists) fills the collection view’s visible area and remains stationary when the collection view’s content is scrolled. When the value of this property is [`true`](../../Swift/true.md), [`backgroundView`](./backgroundview.md) matches the collection view’s frame and scrolls with the collection view’s items and other content.
 

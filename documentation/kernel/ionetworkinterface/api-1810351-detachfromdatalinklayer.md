@@ -13,7 +13,7 @@ virtual void detachFromDataLinkLayer(
  void *parameter );
 ```
 
-#### Overview
+## Overview
 
 This method is called internally to detach the network interface from the BSD data link layer, after the interface has been terminated and before the last client close. This method will block until the detach operation is complete. The calling context is not synchronized against the driver's work loop. Subclasses may override this method to perform additional cleanup before or after detaching from the network stack. The `getIfnet()` method will return NULL after detach.
 

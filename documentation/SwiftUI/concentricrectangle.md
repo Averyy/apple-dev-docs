@@ -21,7 +21,7 @@ A shape whose corners you configure, individually or uniformly, to be squared, r
 struct ConcentricRectangle
 ```
 
-#### Overview
+## Overview
 
 Use `ConcentricRectangle` to create a rectangular shape that fits inside a container’s shape, similar to the way that a sheet’s corners in iOS match the curvature of the screen. System-provided elements like sheets and popovers do this automatically. You can use this effect for your custom views to match a device’s curved edges, or for your custom views near the edges inside another view with concentric corners. For example, the Notes app format sheet has rounded bottom corners that are concentric relative to the device’s corners, and rounded top corners that have a fixed radius.
 
@@ -31,7 +31,7 @@ A rounded corner of a rectangle is *concentric* relative to the container shape�
 
 ![A diagram of the bottom half of an iPhone with a gray background view. Over the gray background is a green view with uniformly rounded top corners, and uniformly rounded bottom corners that are concentric with the device's edge. Callouts identify the gray background as the container shape, the green view as a concentric rectangle, and a dot that's the common center of the radii of the bottom leading corner curves.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/concentricrectangle-3@2x.png)
 
-##### Create a concentric rectangle
+### Create a concentric rectangle
 
 Create a `ConcentricRectangle` by specifying corner styles that reflect the types of corners you want, with an initializer or static [`Shape`](./shape.md) convenience method that specifies how to shape each corner. By default, `ConcentricRectangle`’s [`init()`](./concentricrectangle/init%28%29.md) creates a shape where each corner is individually concentric with the container shape:
 
@@ -53,7 +53,7 @@ When your `ConcentricRectangle`‘s corners are far away from the containing sha
 
 SwiftUI provides container shapes by default in system-provided views. To allow `ConcentricRectangle` to resolve corner radii based on concentricity in your custom view, use [`containerShape(_:)`](./view/containershape%28_%29-3br47.md) to specify a container shape that implements [`RoundedRectangularShape`](./roundedrectangularshape.md), such as [`Circle`](./circle.md), [`Rectangle`](./rectangle.md), [`RoundedRectangle`](./roundedrectangle.md), or [`Capsule`](./capsule.md). When the container shape does not conform to [`RoundedRectangularShape`](./roundedrectangularshape.md), `ConcentricRectangle` provides an inset version of the container shape like [`ContainerRelativeShape`](./containerrelativeshape.md).
 
-##### Customize corners
+### Customize corners
 
 Select corner styles from the [`Edge.Corner.Style`](./edge/corner/style.md) enumeration to form the following types of corners:
 
@@ -83,7 +83,7 @@ ConcentricRectangle(
 
 ![A screenshot of a green view with a concentric top leading corner with a minimum radius, a fixed radius top trailing corner, a concentric bottom leading corner, and a square bottom trailing corner.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/concentricrectangle-5@2x.png)
 
-##### Create uniform corners
+### Create uniform corners
 
 To create a shape similar to the Notes app format sheet, create a `ConcentricRectangle` that specifies uniform top corners with a fixed radius and concentric uniform bottom corners. The functions with uniform corner styles calculate each uniform corner’s radius first, then use the largest radius for each uniform corner:
 

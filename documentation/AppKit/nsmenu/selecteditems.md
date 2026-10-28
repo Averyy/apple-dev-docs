@@ -19,7 +19,7 @@ var selectedItems: [NSMenuItem] { get set }
 @property (copy) NSArray<NSMenuItem *> * selectedItems;
 ```
 
-#### Discussion
+## Discussion
 
 An item selects when its state is [`on`](../nscontrol/statevalue/on.md). If the tracking mode is [`NSMenu.SelectionMode.selectOne`](./selectionmode-swift.enum/selectone.md) or [`NSMenu.SelectionMode.selectAny`](./selectionmode-swift.enum/selectany.md), the property only selects or returns menu items whose show-target action is `nil`.
 

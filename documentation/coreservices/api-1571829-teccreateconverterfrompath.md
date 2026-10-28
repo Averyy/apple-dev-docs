@@ -15,11 +15,11 @@ Creates a converter object for a specific conversion path—froma source encodin
 OSStatus TECCreateConverterFromPath(TECObjectRef *newEncodingConverter, const TextEncoding inPath[], ItemCount inEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function is faster than the function  [`TECCreateConverter`](./api-1571815-teccreateconverter.md)  since it does notneed to search for a conversion path. You can use the  [`TECGetDestinationTextEncodings`](./api-1571808-tecgetdestinationtextencodings.md) function to determine each step in the sequence from the sourceto the destination encoding.
 

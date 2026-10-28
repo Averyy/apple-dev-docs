@@ -19,7 +19,7 @@ var showsStateColumn: Bool { get set }
 @property BOOL showsStateColumn;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a Boolean value indicating whether the menu displays the state column. The default value for this property is [`true`](../../Swift/true.md).
 

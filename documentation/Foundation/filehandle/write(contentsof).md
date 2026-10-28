@@ -21,7 +21,7 @@ Writes the specified data synchronously to the file handle.
 func write<T>(contentsOf data: T) throws where T : DataProtocol
 ```
 
-#### Discussion
+## Discussion
 
 If the handle represents a file, writing takes place at the file pointer’s current position. After it writes the data, the method advances the file pointer by the number of bytes written. This method throws an error if the file descriptor is closed or isn’t valid, if the handle represents an unconnected pipe or socket endpoint, if there isn’t any free space on the file system, or if any other writing error occurs.
 

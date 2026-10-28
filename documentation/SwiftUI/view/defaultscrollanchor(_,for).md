@@ -22,7 +22,7 @@ nonisolated
 func defaultScrollAnchor(_ anchor: UnitPoint?, for role: ScrollAnchorRole) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can associate a [`UnitPoint`](../unitpoint.md) to a [`ScrollView`](../scrollview.md) using the [`defaultScrollAnchor(_:)`](./defaultscrollanchor%28_%29.md) modifier. By default, the system uses this point for different kinds of behaviors including:
 

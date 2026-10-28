@@ -15,7 +15,7 @@ Multiple text selection.
 extern NSPasteboardType NSMultipleTextSelectionPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`multipleTextSelection`](./nspasteboard/pasteboardtype/multipletextselection.md) instead.
 

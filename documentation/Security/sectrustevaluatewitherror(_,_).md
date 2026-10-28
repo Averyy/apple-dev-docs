@@ -25,11 +25,11 @@ func SecTrustEvaluateWithError(_ trust: SecTrust, _ error: UnsafeMutablePointer<
 bool SecTrustEvaluateWithError(SecTrustRef trust, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the certificate is trusted; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method evaluates a certificate’s validity to establish trust for a particular use—for example, in creating a digital signature or to establish a Secure Sockets Layer connection. The method validates a certificate by verifying its signature plus the signatures of the certificates in its certificate chain, up to the anchor certificate, according to the policy or policies included in the trust management object.
 

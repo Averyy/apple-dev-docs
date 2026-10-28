@@ -25,7 +25,7 @@ var isPausable: Bool { get set }
 @property (getter=isPausable) BOOL pausable;
 ```
 
-#### Discussion
+## Discussion
 
 By default, [`Progress`](../progress.md) objects aren’t pausable.
 

@@ -21,11 +21,11 @@ nonisolated
 func onKeyPress(_ key: KeyEquivalent, phases: KeyPress.Phases, action: @escaping (KeyPress) -> KeyPress.Result) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A modified view that binds hardware keyboard input when focused.
 
-#### Discussion
+## Discussion
 
 SwiftUI performs the action for the specified event phases.
 

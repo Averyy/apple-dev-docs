@@ -14,7 +14,7 @@
 gestaltLaunchFullFileSpec = 2
 ```
 
-#### Discussion
+## Discussion
 
 If this bit is set, the `launchControlFlags` field supports control flags in addition to the `launchContinue` flag, and if the `_Launch` trap can process the `launchAppSpec`, `launchProcessSN`, `launchPreferredSize`, `launchMinimumSize`, `launchAvailableSize`, and `launchAppParameters` fields in the launch parameter block.
 

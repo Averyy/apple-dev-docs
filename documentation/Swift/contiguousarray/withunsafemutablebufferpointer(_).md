@@ -21,11 +21,11 @@ Calls the given closure with a pointer to the array’s mutable contiguous stora
 mutating func withUnsafeMutableBufferPointer<R, E>(_ body: (inout UnsafeMutableBufferPointer<Element>) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 Often, the optimizer can eliminate bounds checks within an array algorithm, but when that fails, invoking the same algorithm on the buffer pointer passed into your closure lets you trade safety for speed.
 

@@ -25,7 +25,7 @@ var emitterShape: SCNGeometry? { get set }
 @property (nonatomic, retain, nullable) SCNGeometry * emitterShape;
 ```
 
-#### Discussion
+## Discussion
 
 To randomize the locations where new particles spawn, assign a geometry to this property. This geometry defines the shape of the space where new particles may spawn, and the [`birthLocation`](./birthlocation.md) and [`birthDirection`](./birthdirection.md) properties define locations within and directions relative to the shape. For example, assigning a sphere geometry causes particles to spawn at random locations along the surface of the sphere (or within the volume of the sphere, according to the [`birthLocation`](./birthlocation.md) property).
 

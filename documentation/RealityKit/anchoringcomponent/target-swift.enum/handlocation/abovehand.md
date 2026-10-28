@@ -15,7 +15,7 @@ An anchor location above the center of the palm in the world space, regardless h
 static let aboveHand: AnchoringComponent.Target.HandLocation
 ```
 
-#### Discussion
+## Discussion
 
 Content anchored this way has its positive y-axis pointing at the user’s head and its positive z-axis pointing towards the ground.
 

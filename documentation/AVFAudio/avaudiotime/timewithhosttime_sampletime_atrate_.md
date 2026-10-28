@@ -21,7 +21,7 @@ Creates an audio time object with the specified host time, sample time, and samp
 + (instancetype) timeWithHostTime:(uint64_t) hostTime sampleTime:(AVAudioFramePosition) sampleTime atRate:(double) sampleRate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

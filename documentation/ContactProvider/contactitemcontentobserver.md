@@ -16,7 +16,7 @@ A protocol that defines a system observer that receives a resumable enumeration 
 protocol ContactItemContentObserver
 ```
 
-#### Overview
+## Overview
 
 Your implementation of [`enumerateContent(in:for:)`](./contactitemenumerator/enumeratecontent%28in,for%29.md) receives an observer that conforms to this type. As you enumerate over your contact items, you provide them to the observer with the [`didEnumerate(_:)`](./contactitemcontentobserver/didenumerate%28_%29.md) method.
 

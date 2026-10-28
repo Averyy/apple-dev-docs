@@ -20,17 +20,17 @@ func LSSetDefaultHandlerForURLScheme(_ inURLScheme: CFString, _ inHandlerBundleI
 OSStatus LSSetDefaultHandlerForURLScheme(CFStringRef inURLScheme, CFStringRef inHandlerBundleID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 Call [`LSCopyDefaultHandlerForURLScheme(_:)`](./api-1441725-lscopydefaulthandlerforurlscheme.md) to get the current setting of the user’s preferred default handler for a specified content type.
 
 URL handling capability is determined according to the value of the `CFBundleURLTypes` key in an app’s `Info.plist`. For information on the `CFBundleURLTypes` key, see the section “CFBundleURLTypes” in *macOS Runtime Configuration Guidelines*.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since OS X v10.4.
 

@@ -24,11 +24,11 @@ func displayName(forPeer peerID: String!) -> String!
 - (NSString *) displayNameForPeer:(NSString *) peerID;
 ```
 
-#### Return Value
+## Return Value
 
 The name for the peer, or `nil` if `peerID` is not associated with a visible peer.
 
-#### Discussion
+## Discussion
 
 The display name is used to populate your user interface with the names of other peers visible to the session.
 

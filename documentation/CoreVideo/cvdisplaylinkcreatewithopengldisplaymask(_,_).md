@@ -22,11 +22,11 @@ func CVDisplayLinkCreateWithOpenGLDisplayMask(_ mask: CGOpenGLDisplayMask, _ dis
 extern CVReturn CVDisplayLinkCreateWithOpenGLDisplayMask(CGOpenGLDisplayMask mask, CVDisplayLinkRef*displayLinkOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Using this function avoids having to call the Core Graphics function `CGOpenGLDisplayMaskToDisplayID`.
 

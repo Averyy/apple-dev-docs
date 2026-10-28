@@ -19,13 +19,13 @@ func drawKnob()
 - (void) drawKnob;
 ```
 
-#### Discussion
+## Discussion
 
 Before this message is sent, a `lockFocus` method must be sent to the cell’s control view.
 
 You might call this method if you override one of the display methods belonging to `NSControl` or `NSCell`.
 
-##### Special Considerations
+### Special Considerations
 
 If you create a subclass of `NSSliderCell`, don’t override this method. Override [`drawKnob(_:)`](./drawknob%28_%29.md) instead.
 

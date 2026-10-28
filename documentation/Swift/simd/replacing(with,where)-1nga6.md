@@ -21,7 +21,7 @@ Returns a copy of this vector, with elements replaced by elements of `other` in 
 func replacing(with other: Self, where mask: SIMDMask<Self.MaskStorage>) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

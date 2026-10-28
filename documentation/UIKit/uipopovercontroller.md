@@ -25,7 +25,7 @@ class UIPopoverController
 @interface UIPopoverController : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `UIPopoverController` class is used to manage the presentation of content in a popover. You use popovers to present information temporarily. The popover content is layered on top of your existing content and the background is dimmed automatically. The popover remains visible until the user taps outside of the popover window or you explicitly dismiss it. Popover controllers are for use exclusively on iPad devices. Attempting to create one on other devices results in an exception.
 

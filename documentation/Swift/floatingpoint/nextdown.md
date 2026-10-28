@@ -22,7 +22,7 @@ The greatest representable value that compares less than this value.
 var nextDown: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any finite value `x`, `x.nextDown` is less than `x`. For `nan` or `-infinity`, `x.nextDown` is `x` itself. The following special cases also apply:
 

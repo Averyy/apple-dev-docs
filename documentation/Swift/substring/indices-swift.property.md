@@ -23,7 +23,7 @@ var indices: DefaultIndices<Self> { get }
 
 Available when `Indices` is `DefaultIndices<Self>`.
 
-#### Discussion
+## Discussion
 
 A collection’s `indices` property can hold a strong reference to the collection itself, causing the collection to be non-uniquely referenced. If you mutate the collection while iterating over its indices, a strong reference can cause an unexpected copy of the collection. To avoid the unexpected copy, use the `index(after:)` method starting with `startIndex` to produce indices instead.
 

@@ -5,7 +5,7 @@
 
 Contain options that describe how to import events and projects into Final Cut Pro.
 
-#### Overview
+## Overview
 
 The `import-options` element can contain zero or more `option` elements. The `option` element describes options for importing events and projects into Final Cut Pro through the key-value pair in the attributes listed below.
 

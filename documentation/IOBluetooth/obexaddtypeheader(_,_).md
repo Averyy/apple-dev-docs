@@ -19,11 +19,11 @@ func OBEXAddTypeHeader(_ type: CFString!, _ dictRef: CFMutableDictionary!) -> OB
 OBEXError OBEXAddTypeHeader(CFStringRef type, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Type header - OBEX Spec, 2.2.3: 1-byte Null terminated ascii string.
 

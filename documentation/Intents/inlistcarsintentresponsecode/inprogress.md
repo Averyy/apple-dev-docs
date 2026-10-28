@@ -23,7 +23,7 @@ case inProgress
 INListCarsIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase of intent handling if the request is likely to take more than a few seconds to complete.
 

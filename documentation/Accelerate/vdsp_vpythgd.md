@@ -21,7 +21,7 @@ Calculates the double-precision hypotenuses of right triangles with legs that ar
 extern void vDSP_vpythgD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const double *__C, vDSP_Stride __IC, const double *__D, vDSP_Stride __ID, double *__E, vDSP_Stride __IE, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the length of the hypotenuse of *n* number of triangles, where *n* is the number of elements in the supplied vectors. The differences between corresponding elements of vectors `x0` and `x1` and vectors `y0` and `y1` define the lengths of the two legs of each triangle.
 

@@ -20,7 +20,7 @@ var preferredOutput: AVAudioSessionPortDescription? { get }
 @property (readonly, nullable) AVAudioSessionPortDescription * preferredOutput;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if a person hasn’t set a preference.
 

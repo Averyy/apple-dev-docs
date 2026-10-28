@@ -19,7 +19,7 @@ func didCloseMenu(_ menu: NSMenu, with event: NSEvent?)
 - (void) didCloseMenu:(NSMenu *) menu withEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called only if the contextual menu had been opened and the view has previously received the [`willOpenMenu(_:with:)`](./willopenmenu%28_,with%29.md) method. When the view receives [`didCloseMenu(_:with:)`](./didclosemenu%28_,with%29.md), it should reset its visual state, if necessary. For example, if a table view selected a row in response to a contextual menu being displayed, this method could deselect the row.
 

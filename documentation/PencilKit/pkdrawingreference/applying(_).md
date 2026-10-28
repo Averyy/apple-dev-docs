@@ -23,7 +23,7 @@ func applying(_ transform: CGAffineTransform) -> PKDrawing
 - (PKDrawing *) drawingByApplyingTransform:(CGAffineTransform) transform;
 ```
 
-#### Return Value
+## Return Value
 
 A new drawing created by applying the specified `transform` to the current object.
 

@@ -19,7 +19,7 @@ var HV_ION_NONE: Int { get }
 HV_ION_NONE
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to clear the I/O notifier’s notification request mask when you no longer want to receive notifications for any notifier event type. This only stops the delivery of notifications, it doesn’t remove notifiers. To remove a specific notifier use [`hv_vm_remove_pio_notifier(_:_:_:_:_:)`](./hv_vm_remove_pio_notifier%28_,_,_,_,_%29.md).
 

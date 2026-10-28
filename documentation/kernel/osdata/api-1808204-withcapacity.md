@@ -12,11 +12,11 @@ static OSData * withCapacity(
  unsigned intcapacity);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSData with a reference count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `capacity` may be zero. The OSData object will allocate a buffer internally when necessary, and will grow as needed to accommodate more bytes (*unlike*[CFMutableData](../../CoreFoundation/cfmutabledata.md), for which a nonzero initial capacity is a hard limit).
 

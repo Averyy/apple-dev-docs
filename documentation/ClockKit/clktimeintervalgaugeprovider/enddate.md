@@ -21,7 +21,7 @@ var endDate: Date { get }
 @property (nonatomic, readonly) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 The end date is equal to or later than the start date.
 

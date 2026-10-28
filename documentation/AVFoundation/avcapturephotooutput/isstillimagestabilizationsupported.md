@@ -21,7 +21,7 @@ var isStillImageStabilizationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isStillImageStabilizationSupported) BOOL stillImageStabilizationSupported;
 ```
 
-#### Discussion
+## Discussion
 
 To capture a photo with image stabilization, set the [`isAutoStillImageStabilizationEnabled`](../avcapturephotosettings/isautostillimagestabilizationenabled.md) property of your photo settings object. Automatic stabilization always includes digital image stabilization, and may also include optical lens stabilization, based on the current device. If a device does not support still image stabilization, set the [`isAutoStillImageStabilizationEnabled`](../avcapturephotosettings/isautostillimagestabilizationenabled.md) property has no effect (that is, the resolved [`isStillImageStabilizationEnabled`](../avcaptureresolvedphotosettings/isstillimagestabilizationenabled.md) setting will always be [`false`](../../Swift/false.md)).
 

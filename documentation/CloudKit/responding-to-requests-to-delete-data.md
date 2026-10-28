@@ -5,11 +5,11 @@
 
 Provide options for users to delete their CloudKit data from your app.
 
-#### Overview
+## Overview
 
 If your app stores data in CloudKit on behalf of your users, give them a simple way to delete their data.
 
-##### Identify Containers
+### Identify Containers
 
 To be sure that you delete all of a user’s data that your app stores in CloudKit, cross-reference the list of containers your app has access to in Xcode and assemble a list of those containers’ identifiers. [Identifying an App’s Containers](./identifying-an-app-s-containers.md) describes this process.
 
@@ -23,7 +23,7 @@ let containers: [CKContainer] = [
 ]
 ```
 
-##### Delete Records
+### Delete Records
 
 The example below uses an instance of [`CKModifyRecordZonesOperation`](./ckmodifyrecordzonesoperation.md) to delete all records in each container’s private database:
 

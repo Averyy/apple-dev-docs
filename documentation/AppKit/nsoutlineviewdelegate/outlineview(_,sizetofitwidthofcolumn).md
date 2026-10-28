@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, sizeToFitWidthOfColumn c
 - (CGFloat) outlineView:(NSOutlineView *) outlineView sizeToFitWidthOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the specified column.
 
-#### Discussion
+## Discussion
 
 By default, `NSOutlineView` iterates every row in the table, accesses a cell via [`preparedCell(atColumn:row:)`](../nstableview/preparedcell%28atcolumn,row%29.md), and requests the [`cellSize`](../nscell/cellsize.md) to find the appropriate largest width to use.
 

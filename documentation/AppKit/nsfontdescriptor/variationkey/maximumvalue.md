@@ -19,7 +19,7 @@ static let maximumValue: NSFontDescriptor.VariationKey
 extern NSFontDescriptorVariationKey NSFontVariationAxisMaximumValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 

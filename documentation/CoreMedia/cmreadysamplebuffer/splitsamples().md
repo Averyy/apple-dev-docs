@@ -23,7 +23,7 @@ func splitSamples() -> [CMReadySampleBuffer<Content>]
 
 Available when `Content` conforms to `CMSampleBuffer.MultiSampleContent`.
 
-#### Discussion
+## Discussion
 
 Each sample buffer in the returned array will have individual samples, referring to the sample data and containing correct timing, size and attachments. Array with a single element is returned if the samples in the sample buffer can not be separated. For example:
 

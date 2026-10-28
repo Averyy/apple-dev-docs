@@ -22,7 +22,7 @@ struct Histogram<DimensionType> where DimensionType : Dimension
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Each [`Histogram.Bucket`](./histogram/bucket.md) in the [`buckets`](./histogram/buckets.md) array covers a range from [`lowerBound`](./histogram/bucket/lowerbound.md) to [`upperBound`](./histogram/bucket/upperbound.md) and reports the number of samples in that range via [`count`](./histogram/bucket/count.md).
 

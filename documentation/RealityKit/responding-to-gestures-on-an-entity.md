@@ -10,11 +10,11 @@ Respond to gestures performed on RealityKit entities using input target and coll
 - visionOS 2.0+
 - Xcode 16.3+
 
-#### Overview
+## Overview
 
 Your app responds to [`RealityView`](./realityview.md) gesture events received from SwiftUI by adding an [`InputTargetComponent`](./inputtargetcomponent.md) and a [`CollisionComponent`](./collisioncomponent.md) to your entities. Add a [`HoverEffectComponent`](./hovereffectcomponent.md) to the entity so it highlights as the gaze intersects the collision shape. The input target component marks the entity as participating in the event system. The system uses the collision component to test if the gaze vector intersects the entity. With both components attached, entities receive events. With the hover effect attached the entity visually appears ready to receive events.
 
-##### Attach components to an entity to process events
+### Attach components to an entity to process events
 
 The sample defines the `ActiveComponent`, which keeps track of the `active` state of the entity.
 

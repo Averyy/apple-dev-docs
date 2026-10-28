@@ -12,11 +12,11 @@ virtual bool lockEnqueue(
  mbuf_tm);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, or false to indicate over-capacity and refusal to accept the packet chain provided.
 
-#### Overview
+## Overview
 
 Packets are not added if the size of the queue has reached its capacity. A spinlock is used to synchronize access to the queue.
 

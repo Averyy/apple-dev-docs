@@ -23,7 +23,7 @@ class AVMetadataMachineReadableCodeObject
 @interface AVMetadataMachineReadableCodeObject : AVMetadataObject
 ```
 
-#### Overview
+## Overview
 
 The `AVMetadataMachineReadableCodeObject` class is a concrete subclass of [`AVMetadataObject`](./avmetadataobject.md) defining the features of a detected one-dimensional or two-dimensional barcode.
 

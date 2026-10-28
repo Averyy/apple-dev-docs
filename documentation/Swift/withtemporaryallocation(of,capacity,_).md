@@ -21,11 +21,11 @@ Provides scoped access to an output span of the specified type and capacity.
 func withTemporaryAllocation<T, R, E>(of type: T.Type, capacity: Int, _ body: @_lifetime(0: copy 0) (inout OutputSpan<T>) throws(E) -> R) throws(E) -> R where E : Error, T : ~Copyable, R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 This function is useful for cheaply allocating storage for a sequence of values for a brief duration. Storage may be allocated on the heap or on the stack, depending on the required size and alignment.
 

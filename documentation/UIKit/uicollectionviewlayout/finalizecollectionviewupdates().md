@@ -23,7 +23,7 @@ func finalizeCollectionViewUpdates()
 - (void) finalizeCollectionViewUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method as the last step before proceeding to animate any changes into place. This method is called within the animation block used to perform all of the insertion, deletion, and move animations so you can create additional animations using this method as needed. Otherwise, you can use it to perform any last minute tasks associated with managing your layout object’s state information.
 

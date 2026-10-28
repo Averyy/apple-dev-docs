@@ -24,11 +24,11 @@ class func cubeMap(withContentsOfFile path: String, options: [String : NSNumber]
 + (GLKTextureInfo *) cubeMapWithContentsOfFile:(NSString *) path options:(NSDictionary<NSString *,NSNumber *> *) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A texture info object that describes the loaded texture or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The file is assumed to be a single image that includes the six faces of the cube map. The image’s height must be six times the width, and the images should be arranged in the following order from top to bottom: north, south, east, west, top, bottom. Alternatively, the image can have a width that is six times the height, and arranged from left to right, but this takes additional processing to load.
 

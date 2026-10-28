@@ -16,7 +16,7 @@ A set of horizontal directions that specify how someone can look at a volume.
 struct Set
 ```
 
-#### Overview
+## Overview
 
 Combine the [`SquareAzimuth`](../squareazimuth.md) constants to name several directions at once. Pass a set to [`supportedVolumeViewpoints(_:)`](../view/supportedvolumeviewpoints%28_%29.md) to say which sides the window bar and ornaments of a volume should follow someone to.
 

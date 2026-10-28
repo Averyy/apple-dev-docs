@@ -24,7 +24,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method stops any pending policy evaluations, causing them to fail with the [`LAError.Code.appCancel`](../laerror-swift.struct/code/appcancel.md) error code. Once an authentication context has been invalidated, it cannot be used for policy evaluation. Invalidating a context that has been already invalidated has no effect.
 

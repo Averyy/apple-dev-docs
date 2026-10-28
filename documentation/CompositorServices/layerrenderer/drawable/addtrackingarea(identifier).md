@@ -20,11 +20,11 @@ func addTrackingArea(identifier: LayerRenderer.Drawable.TrackingArea.Identifier)
 cp_tracking_area_tcp_drawable_add_tracking_area(cp_drawable_t drawable, cp_tracking_area_identifier identifier);
 ```
 
-#### Return Value
+## Return Value
 
 A tracking area that was created.
 
-#### Discussion
+## Discussion
 
 A tracking area describes a region of a view that interacts with the gaze/cursor. Cannot use [`cp_tracking_area_identifier_invalid`](../../cp_tracking_area_identifier_invalid.md) as an identifier.
 

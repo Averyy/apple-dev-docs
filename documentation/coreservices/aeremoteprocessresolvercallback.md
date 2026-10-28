@@ -20,7 +20,7 @@ typealias AERemoteProcessResolverCallback = (AERemoteProcessResolverRef?, Unsafe
 typedef void (*AERemoteProcessResolverCallback)(AERemoteProcessResolverRef ref, void *info);
 ```
 
-#### Return Value
+## Return Value
 
 Your callback routine should not return a value.
 

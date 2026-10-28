@@ -16,7 +16,7 @@ set flags for the listener.
 void (*SetFlags)(IOFWAsyncStreamListenerInterfaceRef self, UInt32 flags);
 ```
 
-#### Return Value
+## Return Value
 
 none.
 

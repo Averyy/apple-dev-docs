@@ -21,7 +21,7 @@ var allowsJSHandleCreationInPageWorld: Bool { get set }
 @property (nonatomic) BOOL allowsJSHandleCreationInPageWorld;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating whether `window.webkit.createJSHandle` will be available in `[WKContentWorld pageWorld]`
 

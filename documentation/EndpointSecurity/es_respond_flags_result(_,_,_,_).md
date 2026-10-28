@@ -19,11 +19,11 @@ func es_respond_flags_result(_ client: OpaquePointer, _ message: UnsafePointer<e
 extern es_respond_result_t es_respond_flags_result(es_client_t *client, const es_message_t *message, uint32_t authorized_flags, bool cache);
 ```
 
-#### Return Value
+## Return Value
 
 A result that indicates whether the response succeeded or failed.
 
-#### Discussion
+## Discussion
 
 Some events require you to respond with [`es_respond_auth_result(_:_:_:_:)`](./es_respond_auth_result%28_,_,_,_%29.md). Responding to such events with this method instead fails with an error.
 

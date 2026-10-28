@@ -13,7 +13,7 @@
 object GameCenterLeaderboardV2VersionsLinkagesResponse.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

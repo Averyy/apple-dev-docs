@@ -23,7 +23,7 @@ var loadState: MPMovieLoadState { get }
 @property (nonatomic, readonly) MPMovieLoadState loadState;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`MPMovieLoadState`](../mpmovieloadstate.md) enumeration for possible values of this property. To be notified of changes to the load state of a movie player, register for the [`MPMoviePlayerLoadStateDidChangeNotification`](../mpmovieplayerloadstatedidchangenotification.md) notification.
 

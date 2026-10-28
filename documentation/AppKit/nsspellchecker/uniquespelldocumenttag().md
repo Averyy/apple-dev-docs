@@ -19,11 +19,11 @@ class func uniqueSpellDocumentTag() -> Int
 + (NSInteger) uniqueSpellDocumentTag;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a unique tag to identified this spell checked object.
 
-#### Discussion
+## Discussion
 
 Use this method to generate tags to avoid collisions with other objects that can be spell checked.
 

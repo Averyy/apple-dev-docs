@@ -21,7 +21,7 @@ func inputKeys() -> [Any]!
 - (NSArray *) inputKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An array of input keys.
 

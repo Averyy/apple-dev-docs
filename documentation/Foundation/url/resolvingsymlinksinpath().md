@@ -21,7 +21,7 @@ Resolves any symlinks in the path of a file URL.
 func resolvingSymlinksInPath() -> URL
 ```
 
-#### Discussion
+## Discussion
 
 If the `isFileURL` is false, this method returns `self`.
 

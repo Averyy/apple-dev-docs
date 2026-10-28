@@ -21,7 +21,7 @@ object AppCategoryCriteria
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 The app category targeting dimension is optional and is only applicable to campaigns using a [`SupplySource`](./supplysource.md) of `APPSTORE_PRODUCT_PAGES_BROWSE`. See the [App Store](https://developer.apple.com/app-store/categories/) for more details about categories.
 

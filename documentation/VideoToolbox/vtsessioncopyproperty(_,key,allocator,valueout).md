@@ -24,11 +24,11 @@ func VTSessionCopyProperty(_ session: VTSession, key propertyKey: CFString, allo
 extern OSStatus VTSessionCopyProperty(VTSessionRef session, CFStringRef propertyKey, CFAllocatorRef allocator, void *propertyValueOut);
 ```
 
-#### Return Value
+## Return Value
 
 `noErr` if successful; [`kVTPropertyNotSupportedErr`](./kvtpropertynotsupportederr.md) for unrecognized or unsupported properties.
 
-#### Discussion
+## Discussion
 
 > **Note**: For most types of properties, the returned values should be considered immutable. In particular, for CFPropertyList types, sharing of mutable property value objects between the client, session and codec should be avoided. However, some properties will be used for exchanging service objects that are inherently mutable (eg, CVPixelBufferPool).
 

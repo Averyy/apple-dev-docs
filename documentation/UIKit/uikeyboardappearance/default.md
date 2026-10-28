@@ -23,7 +23,7 @@ case `default`
 UIKeyboardAppearanceDefault
 ```
 
-#### Discussion
+## Discussion
 
 This constant corresponds to the [`UIKeyboardAppearance.light`](./light.md) value.
 

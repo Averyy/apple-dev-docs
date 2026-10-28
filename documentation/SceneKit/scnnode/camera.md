@@ -25,7 +25,7 @@ var camera: SCNCamera? { get set }
 @property (nonatomic, retain, nullable) SCNCamera * camera;
 ```
 
-#### Discussion
+## Discussion
 
 To use a camera for displaying a scene, set the the [`pointOfView`](../scnscenerenderer/pointofview.md) property of the view (or layer or renderer) displaying the scene to the node containing the camera. A camera looks in the direction of the node’s negative z-axis, so you aim the camera by changing the position and orientation of the node containing it. You control geometric and optical parameters of the camera—projection, field of view, and depth of field—using the attached [`SCNCamera`](../scncamera.md) object.
 

@@ -24,7 +24,7 @@ static var pipelineIndependent: MTLFunctionOptions { get }
 MTLFunctionOptionPipelineIndependent
 ```
 
-#### Discussion
+## Discussion
 
 By default, when you link an [`MTLFunction`](../mtlfunction.md) into a pipeline state, Metal generates a function handle that points to that function’s location in the pipeline’s executable code. Because different pipeline states place functions at different memory addresses, Metal generates different function handles for the same function in each pipeline state. You insert function handles into an [`MTLIntersectionFunctionTable`](../mtlintersectionfunctiontable.md) or [`MTLVisibleFunctionTable`](../mtlvisiblefunctiontable.md) instance, which means you need separate function tables for each pipeline state by default.
 

@@ -23,7 +23,7 @@ Sets a custom pronoun behavior for this morphology to apply to the given languag
 mutating func setCustomPronoun(_ pronoun: Morphology.CustomPronoun?, forLanguage language: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method throws if the system doesn’t support custom pronouns for the given language, or if any of the required pronoun keys aren’t set.
 

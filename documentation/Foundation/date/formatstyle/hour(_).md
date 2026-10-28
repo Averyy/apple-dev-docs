@@ -21,11 +21,11 @@ Modifies the date format style to use the specified hour format style.
 func hour(_ format: Date.FormatStyle.Symbol.Hour = .defaultDigits(amPM: .abbreviated)) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified hour style.
 
-#### Discussion
+## Discussion
 
 Values of [`Date.FormatStyle.Symbol.Hour`](./symbol/hour.md) are [`defaultDigitsNoAMPM`](./symbol/hour/defaultdigitsnoampm.md) and [`twoDigitsNoAMPM`](./symbol/hour/twodigitsnoampm.md).
 

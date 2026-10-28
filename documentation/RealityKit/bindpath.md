@@ -20,7 +20,7 @@ The components of a target’s path that refer to the animation properties of a 
 struct BindPath
 ```
 
-#### Overview
+## Overview
 
 The following code demonstrates bind target paths with varying numbers of elements. For a multicomponent target, call the [`BindPath.Part`](./bindpath/part.md) enumeration for each component. The individual elements form the path’s resulting [`parts`](./bindpath/parts.md) array.
 

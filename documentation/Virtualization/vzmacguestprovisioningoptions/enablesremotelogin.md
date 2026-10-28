@@ -19,7 +19,7 @@ var enablesRemoteLogin: Bool { get set }
 @property (readwrite) BOOL enablesRemoteLogin;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `NO`.
 

@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didReceive notification:
 - (void) application:(UIApplication *) application didReceiveLocalNotification:(UILocalNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Local notifications are similar to remote notifications, but differ in that they are scheduled, displayed, and received entirely on the same device. An app can create and schedule a local notification, and the operating system then delivers it at the scheduled date and time. If the app is not active in the foreground when the notification fires, the system uses the information in the [`UILocalNotification`](../uilocalnotification.md) object to determine whether it should display an alert, badge the app icon, or play a sound. If the app is running in the foreground, the system calls this method directly without alerting the user in any way.
 

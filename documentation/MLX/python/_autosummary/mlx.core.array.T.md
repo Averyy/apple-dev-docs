@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.T
 
-**property array.T**
-: Equivalent to calling `self.transpose()` with no arguments.
+```python
+property array.T
+```
+
+Equivalent to calling `self.transpose()` with no arguments.

@@ -19,17 +19,17 @@ func LSCopyDefaultHandlerForURLScheme(_ inURLScheme: CFString) -> Unmanaged<CFSt
 CFStringRef LSCopyDefaultHandlerForURLScheme(CFStringRef inURLScheme);
 ```
 
-#### Return Value
+## Return Value
 
 The application bundle identifier of the specified URL scheme.
 
-#### Discussion
+## Discussion
 
 This function returns the user’s currently preferred default handler for the specified URL scheme.
 
 URL handling capability is determined according to the value of the `CFBundleURLTypes` key in an application’s `Info.plist`. For information on the `CFBundleURLTypes` key, see the section “CFBundleURLTypes” in *macOS Runtime Configuration Guidelines*.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since OS X v10.4.
 

@@ -25,7 +25,7 @@ static var lastErrnoValue: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 This value is the largest valid value encountered using the C `errno` global variable. It isn’t a valid error.
 

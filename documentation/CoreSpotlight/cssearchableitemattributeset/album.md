@@ -23,7 +23,7 @@ var album: String? { get set }
 @property (copy, nullable) NSString * album;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is analogous to the title of a record album or photo album.
 

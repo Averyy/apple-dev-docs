@@ -25,7 +25,7 @@ case manual
 CKSyncEngineSyncReasonManual
 ```
 
-#### Discussion
+## Discussion
 
 The sync engine uses this reason only when your app invokes the [`fetchChangesWithCompletionHandler:`](../cksyncengine-4b4w9/fetchchangeswithcompletionhandler_.md) and [`sendChangesWithCompletionHandler:`](../cksyncengine-4b4w9/sendchangeswithcompletionhandler_.md) methods and their variants.
 

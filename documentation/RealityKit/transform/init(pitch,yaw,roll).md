@@ -20,7 +20,7 @@ Creates a new transform from the specified Euler angles.
 init(pitch x: Float = 0, yaw y: Float = 0, roll z: Float = 0)
 ```
 
-#### Discussion
+## Discussion
 
 The rotation order using intrinsic rotation order is defined as:
 

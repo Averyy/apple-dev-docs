@@ -20,7 +20,7 @@ An attribute that applies a text effect to the text.
 extern NSAttributedStringKey const NSTextEffectAttributeName;
 ```
 
-#### Overview
+## Overview
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object. Use this attribute to specify a text effect, such as [`NSTextEffectLetterpressStyle`](./nstexteffectletterpressstyle.md). The default value of this property is `nil`, indicating no text effect.
 

@@ -25,11 +25,11 @@ init(texture: SKTexture)
 - (instancetype) initWithTexture:(SKTexture *) texture;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile definition.
 
-#### Discussion
+## Discussion
 
 The size of the newly created tile definition will be the same as the texture used to initialize it.
 

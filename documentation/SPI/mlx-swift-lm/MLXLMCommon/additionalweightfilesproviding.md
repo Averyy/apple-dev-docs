@@ -17,7 +17,7 @@ Weight files a model needs that no naming convention or `model.safetensors.index
 protocol AdditionalWeightFilesProviding
 ```
 
-#### Overview
+## Overview
 
 A checkpoint can ship weights in a file that neither the conventional `model*.safetensors` names nor its own index cover: `jinaai/jina-reranker-v3-mlx` keeps its reranking head in `projector.safetensors` and maps only the transformer shards in its index, so the head is never read and the model fails to load. The reference implementation has the same gap and closes it the same way – the checkpoint’s `rerank.py` loads that file by name.
 

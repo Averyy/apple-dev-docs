@@ -29,7 +29,7 @@ var isDiscretionary: Bool { get set }
 
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 For configuration objects created using the [`background(withIdentifier:)`](./background%28withidentifier%29.md) method, use this property to give the system control over when transfers should occur. This property is ignored for configuration objects created using other methods.
 

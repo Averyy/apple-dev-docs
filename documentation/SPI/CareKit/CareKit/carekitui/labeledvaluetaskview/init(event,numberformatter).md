@@ -20,7 +20,7 @@ init(event: CareStoreFetchedResult<OCKAnyEvent>, numberFormatter: NumberFormatte
 
 Available when `Header` is `_LabeledValueTaskViewHeader`.
 
-#### Discussion
+## Discussion
 
 This view displays the numeric progress for the event by summing outcome values.
 

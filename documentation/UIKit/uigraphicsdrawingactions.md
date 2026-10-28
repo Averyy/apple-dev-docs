@@ -23,7 +23,7 @@ typealias UIGraphicsDrawingActions = (UIGraphicsRendererContext) -> Void
 typedef void (^)(__kindof UIGraphicsRendererContext *) UIGraphicsDrawingActions;
 ```
 
-#### Discussion
+## Discussion
 
 [`UIGraphicsDrawingActions`](./uigraphicsdrawingactions.md) defines a block type that takes a [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md) object as an argument and has no return value.
 

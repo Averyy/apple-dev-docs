@@ -5,7 +5,7 @@
 
 Specify the scope of a query’s search.
 
-#### Overview
+## Overview
 
 These constants can be passed in the `scopeDirectories` array to the function `MDQuerySetSearchScope`.
 

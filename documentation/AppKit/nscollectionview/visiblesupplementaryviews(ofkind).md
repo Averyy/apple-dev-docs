@@ -19,11 +19,11 @@ func visibleSupplementaryViews(ofKind elementKind: NSCollectionView.Supplementar
 - (NSArray<NSView<NSCollectionViewElement> *> *) visibleSupplementaryViewsOfKind:(NSCollectionViewSupplementaryElementKind) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 An array of view objects. The returned array may be empty.
 
-#### Discussion
+## Discussion
 
 The views returned by this method represent the ones that are active and are currently being managed by the collection view. The array may contain supplementary views that are outside of the collection view’s actual visible rectangle. For example, it might contain views that were recently visible but have since been scrolled out of the visible rectangle. To test whether a view is actually visible, check to see if its frame rectangle intersects the [`visibleRect`](../nsview/visiblerect.md) of the collection view.
 

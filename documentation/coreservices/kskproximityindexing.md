@@ -17,7 +17,7 @@ let kSKProximityIndexing: CFString!
 const CFStringRef kSKProximityIndexing;
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean flag indicating whether or not Search Kit should use proximity indexing. The flag can be a `0` or `kCFBoolenFalse` value (for false) or a `1` or `kCFBooleanTrue` value (for true). Proximity indexing is available only for inverted indexes—that is, indexes of type [`kSKIndexInverted`](./kskindexinverted.md).
 

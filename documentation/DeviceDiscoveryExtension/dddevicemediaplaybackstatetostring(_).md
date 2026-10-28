@@ -23,11 +23,11 @@ func DDDeviceMediaPlaybackStateToString(_ inValue: DDDevice.MediaPlaybackState) 
 extern NSString *DDDeviceMediaPlaybackStateToString(DDDeviceMediaPlaybackState inValue);
 ```
 
-#### Return Value
+## Return Value
 
 A textual value for the specified device protocol.
 
-#### Discussion
+## Discussion
 
 Your extension can use this function for logging.
 

@@ -20,7 +20,7 @@ class NSExceptionHandler
 @interface NSExceptionHandler : NSObject
 ```
 
-#### Overview
+## Overview
 
 To use these services, you set a bit mask in the singleton `NSExceptionHandler` instance and, optionally, a delegate. The constants comprising the bit mask indicate the type of exception to be monitored and the behavior of the `NSExceptionHandler` object (or, simply, the exception handler). The delegate is asked to approve the logging and handling of each monitored [`NSException`](../Foundation/nsexception.md) object using the NSExceptionHandlerDelegate protocol.
 

@@ -24,13 +24,13 @@ class PHASEEngine
 @interface PHASEEngine : NSObject
 ```
 
-#### Overview
+## Overview
 
 Before using PHASE, an app creates an instance of this object. Apps access all of the framework’s functionality through engine functions or properties, or through other PHASE classes into which you pass the engine object.
 
 > ❗ **Important**:  You can create multiple engine instances, but normally, apps create only one.
 
-##### Create and Start the Engine
+### Create and Start the Engine
 
 To create an engine object, choose a value for the [`init(updateMode:)`](./phaseengine/init%28updatemode%29.md) argument that selects the desired control over scene setup and playback timing.
 

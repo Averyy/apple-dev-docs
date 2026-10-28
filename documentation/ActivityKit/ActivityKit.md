@@ -11,7 +11,7 @@ Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 
-#### Overview
+## Overview
 
 With the ActivityKit framework, you can start a Live Activity to share live updates from your app. Live Activities offer a rich, interactive, and highly glanceable way for people to keep track of an event or activity over several hours, especially for apps that push the limit of notifications to provide updated information. For example, a sports app might start a Live Activity that makes live information available at a glance for the duration of a game.
 

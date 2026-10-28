@@ -25,7 +25,7 @@ func CFDictionaryGetValueIfPresent(_ theDict: CFDictionary!, _ key: UnsafeRawPoi
 extern Boolean CFDictionaryGetValueIfPresent(CFDictionaryRef theDict, const void *key, const void **value);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a matching key was found, otherwise `false`.
 

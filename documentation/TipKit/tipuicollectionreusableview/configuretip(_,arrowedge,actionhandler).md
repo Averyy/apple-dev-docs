@@ -19,7 +19,7 @@ Configures a reusable view with a tip view embedded.
 @MainActor @preconcurrency final func configureTip(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping @MainActor @Sendable (Tips.Action) -> Void = { _ in }) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A collection reusable view that embeds the specified tip.
 

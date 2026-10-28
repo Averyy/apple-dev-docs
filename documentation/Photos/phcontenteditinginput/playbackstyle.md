@@ -24,7 +24,7 @@ var playbackStyle: PHAsset.PlaybackStyle { get }
 @property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to specify the type of view and the appropriate APIs on the content editing input to display this content.
 

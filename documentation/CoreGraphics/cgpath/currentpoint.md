@@ -25,7 +25,7 @@ var currentPoint: CGPoint { get }
 extern CGPoint CGPathGetCurrentPoint(CGPathRef path);
 ```
 
-#### Discussion
+## Discussion
 
 If the path is empty—that is, if it has no elements—this function returns [`CGPointZero`](../cgpointzero.md) (see [CGGeometry](../cggeometry.md)). To determine whether a path is empty, use [`isEmpty`](./isempty.md).
 

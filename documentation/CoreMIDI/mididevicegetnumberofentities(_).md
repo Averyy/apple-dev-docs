@@ -23,7 +23,7 @@ func MIDIDeviceGetNumberOfEntities(_ device: MIDIDeviceRef) -> Int
 extern ItemCount MIDIDeviceGetNumberOfEntities(MIDIDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 The number of entities the device contains, or 0 if an error occurred.
 

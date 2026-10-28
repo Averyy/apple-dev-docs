@@ -19,7 +19,7 @@ case accelerator
 NSButtonTypeAccelerator
 ```
 
-#### Discussion
+## Discussion
 
 A media player app, for example, might implement an accelerator button to allow a user to adjust the speed of fast forward or rewind with variable pressure. In this case, the button sends actions to the app to indicate when pressure on the button changes. The app then determines the amount of current pressure, and adjusts the playback speed accordingly.
 

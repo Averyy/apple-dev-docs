@@ -21,7 +21,7 @@ func streamProperties(forProperties properties: Set<CMIOExtensionProperty>) thro
 - (CMIOExtensionStreamProperties *) streamPropertiesForProperties:(NSSet<NSString *> *) properties error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An object that contains the states of the requested properties.
 

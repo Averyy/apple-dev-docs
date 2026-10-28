@@ -25,7 +25,7 @@ let kCTFontWeightTrait: CFString
 extern CFStringRef const kCTFontWeightTrait;
 ```
 
-#### Discussion
+## Discussion
 
 The value returned is a [`CFNumber`](../CoreFoundation/cfnumber.md) representing a float value between `-1.0` and `1.0` for normalized weight. The value of `0.0` corresponds to the regular or medium font weight.
 

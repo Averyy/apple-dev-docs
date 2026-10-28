@@ -24,7 +24,7 @@ func cancelImageRequest(_ requestID: PHImageRequestID)
 - (void) cancelImageRequest:(PHImageRequestID) requestID;
 ```
 
-#### Discussion
+## Discussion
 
 When you perform an asynchronous request for image data using the [`requestImage(for:targetSize:contentMode:options:resultHandler:)`](./requestimage%28for,targetsize,contentmode,options,resulthandler%29.md) method, or for a video object using one of the methods listed in Requesting Video Objects, the image manager returns a numeric identifier for the request. To cancel the request before it completes, provide this identifier when calling the [`cancelImageRequest(_:)`](./cancelimagerequest%28_%29.md) method.
 

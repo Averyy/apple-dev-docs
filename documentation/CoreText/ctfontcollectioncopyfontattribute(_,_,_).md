@@ -25,7 +25,7 @@ func CTFontCollectionCopyFontAttribute(_ collection: CTFontCollection, _ attribu
 extern CFArrayRefCTFontCollectionCopyFontAttribute(CTFontCollectionRef collection, CFStringRef attributeName, CTFontCollectionCopyOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains one value for each descriptor.
 

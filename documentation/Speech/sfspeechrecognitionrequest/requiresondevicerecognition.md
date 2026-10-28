@@ -27,7 +27,7 @@ var requiresOnDeviceRecognition: Bool { get set }
 
 - [Asking Permission to Use Speech Recognition](../asking-permission-to-use-speech-recognition.md)
 
-#### Discussion
+## Discussion
 
 Set this property to `true` to prevent an [`SFSpeechRecognitionRequest`](../sfspeechrecognitionrequest.md) from sending audio over the network. However, on-device requests won’t be as accurate.
 

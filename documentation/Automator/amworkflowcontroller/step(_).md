@@ -21,7 +21,7 @@ func step(_ sender: Any)
 - (void) step:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Stepping allows a workflow to be executed one action at a time. This is useful for ensuring that the workflow is doing what it’s supposed to do, as the results of each individual action can be inspected before moving on to the next.
 

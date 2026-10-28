@@ -27,7 +27,7 @@ func addAndSetUpAccessories(payload: HMAccessorySetupPayload) async throws -> [H
 - (void) addAndSetupAccessoriesWithPayload:(HMAccessorySetupPayload *) payload completionHandler:(void (^)(NSArray<HMAccessory *> *accessories, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add accessories that have already been deployed (for example, accessories that have HomeKit support added as a firmware update), or accessories for which scanning a QR code would be difficult. Your app provides the accessory’s HomeKit code using a setup payload. For details on the payload’s content, please join the [MFi Program](https://developer.apple.com/programs/mfi/).
 

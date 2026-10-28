@@ -20,7 +20,7 @@ A mode that displays the entity’s base color with no lighting or material prop
 case baseColor
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `baseColor` to an entity to tell RealityKit to draw that entity’s base color without any shadows, specular highlights, transparency, or reflections.
 

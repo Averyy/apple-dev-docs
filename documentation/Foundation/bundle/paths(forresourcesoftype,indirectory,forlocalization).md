@@ -25,11 +25,11 @@ func paths(forResourcesOfType ext: String?, inDirectory subpath: String?, forLoc
 - (NSArray<NSString *> *) pathsForResourcesOfType:(NSString *) ext inDirectory:(NSString *) subpath forLocalization:(NSString *) localizationName;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the full pathnames for all bundle resources matching the specified criteria. This method returns an empty array if no matching resource files are found.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to [`paths(forResourcesOfType:inDirectory:)`](./paths%28forresourcesoftype,indirectory%29-swift.method.md), except that only nonlocalized resources and those in the language-specific `.lproj` directory specified by `localizationName` are searched.
 

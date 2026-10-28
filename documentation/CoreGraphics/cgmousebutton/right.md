@@ -18,7 +18,7 @@ case right
 kCGMouseButtonRight
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the right mouse button on a two-button or three-button mouse.
 

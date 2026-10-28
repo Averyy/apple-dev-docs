@@ -24,7 +24,7 @@ class VNTrackRectangleRequest
 @interface VNTrackRectangleRequest : VNTrackingRequest
 ```
 
-#### Overview
+## Overview
 
 Use this type of request to track the bounding boxes of rectangles throughout a sequence of images. Vision returns locations for rectangles found in all orientations and sizes.
 

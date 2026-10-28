@@ -15,7 +15,7 @@ A list of image asset URLs for attribution.
 object Attribution
 ```
 
-#### Discussion
+## Discussion
 
 Attribution URLs of image assets are partial. Append the partial URL to `https://weatherkit.apple.com` to obtain the image asset.
 

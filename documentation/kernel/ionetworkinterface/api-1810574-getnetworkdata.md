@@ -12,11 +12,11 @@ virtual IONetworkData * getNetworkData(
  const char *aKey ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a reference to the matching `IONetworkData` object, or NULL if no match was found.
 
-#### Overview
+## Overview
 
 Returns a reference to an `IONetworkData` object that was previously added to the interface, and is associated with the provided key.
 

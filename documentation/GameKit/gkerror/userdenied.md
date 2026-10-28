@@ -21,7 +21,7 @@ The system can’t complete the requested operation because the user denied it.
 static var userDenied: GKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 `GKErrorUserDenied` is only called when Game Center is restricted in Parental Controls or has been turned off entirely in the configuration profile. All other user cancelled actions use `GKErrorCancelled`.
 

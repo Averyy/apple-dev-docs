@@ -4,21 +4,21 @@
 
 Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
 
-#### Overview
+## Overview
 
 Apple Podcasts supports HTTP Live Streaming (HLS) video-on-demand media playback with interstitial advertising. This guide covers how the Apple Podcasts player interprets HLS fields, where Apple Podcasts requirements differ from the general HLS specification, and best practices for delivering your content.
 
-#### Structure a podcast episode
+## Structure a podcast episode
 
 An HLS podcast episode begins with a multivariant playlist. This describes the basic content as variant streams, each of which describes a different version of the same content — for example, video at a particular bit rate, in a particular format, and a particular resolution. You can extend each variant with media renditions, which are alternate versions of part of the content, such as audio produced in different languages.
 
 The player chooses variants automatically, based on download speed, codec support, preferred pathway, and display characteristics. User input is used to choose renditions, and you need to provide identically named renditions for every variant.
 
-#### Deliver HLS video using the Podcasts Connect API
+## Deliver HLS video using the Podcasts Connect API
 
 The Podcasts Connect API provides the capabilities to associate HLS video Primary Playlist URLs with your standard RSS-based episodes. If you host podcasts and want access to the Podcasts Connect API documentation, complete [this survey](https://survey.apple.com/axm/survey/as/6984af5e34487c4f235c595f). If you already have access, see the [Podcasts Connect API documentation](https://amp-partner-docs.apple.com/docs/podcasts-connect-api-user-guide).
 
-#### Apple Developer HLS resources
+## Apple Developer HLS resources
 
 See the [HTTP Live Streaming](https://developer.apple.com/streaming/) technology landing page for additional reference material, such as [Getting Started with HLS Interstitials](https://developer.apple.com/streaming/GettingStartedWithHLSInterstitials.pdf) and [HLS Streaming Examples](https://developer.apple.com/streaming/examples/).
 

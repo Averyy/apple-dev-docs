@@ -21,7 +21,7 @@ var paginationMode: UIWebView.PaginationMode { get set }
 @property (nonatomic) UIWebPaginationMode paginationMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether content in the web view is broken up into pages that fill the view one screen at a time, or shown as one long scrolling view. If set to a paginated form, this property toggles a paginated layout on the content, causing the web view to use the values of [`pageLength`](./pagelength.md) and [`gapBetweenPages`](./gapbetweenpages.md) to relayout its content.
 

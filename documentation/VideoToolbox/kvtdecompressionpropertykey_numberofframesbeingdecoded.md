@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded;
 ```
 
-#### Discussion
+## Discussion
 
 This number may decrease asynchronously as frames are output.
 

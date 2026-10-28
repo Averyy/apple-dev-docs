@@ -20,11 +20,11 @@ func canProvideDocumentSource() -> Bool
 - (BOOL) canProvideDocumentSource;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver can provide source for the document content (for example, HTML source), [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The receiver should return [`true`](../../Swift/true.md) only if it makes sense for someone to view the source of the document in question. For example, a web view returns [`false`](../../Swift/false.md) if the content is an image, was produced by a plug-in, or contains text content already.
 

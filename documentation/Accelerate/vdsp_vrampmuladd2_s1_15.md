@@ -21,7 +21,7 @@ Multiplies a fixed-point, 1.15 format, stereo input vector by a value that ramps
 void vDSP_vrampmuladd2_s1_15(const short *__I0, const short *__I1, vDSP_Stride __IS, short *__Start, const short *__Step, short *__O0, short *__O1, vDSP_Stride __OS, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The functions in this group are similar to [`vDSP_vrampmul`](./vdsp_vrampmul.md), but rather than overwriting the output vector, they add the results to the existing values in the output vector. The following code describes the calculation:
 

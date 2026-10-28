@@ -16,7 +16,7 @@ The environment for any scene(s) being represented by `self`.
 var environment: EnvironmentValues { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the environment values to programmatically present a scene’s window.
 

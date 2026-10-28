@@ -21,11 +21,11 @@ Creates and returns a new data detector instance.
 + (NSDataDetector *) dataDetectorWithTypes:(NSTextCheckingTypes) checkingTypes error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the newly initialized data detector. If an error was encountered returns `nil`, and `error` contains the error.
 
-#### Discussion
+## Discussion
 
 Currently, the supported data detectors `checkingTypes` are:  [`date`](../nstextcheckingresult/checkingtype/date.md), [`address`](../nstextcheckingresult/checkingtype/address.md), [`link`](../nstextcheckingresult/checkingtype/link.md), `NSTextCheckingTypePhoneNumber`, and `NSTextCheckingTypeTransitInformation`.
 

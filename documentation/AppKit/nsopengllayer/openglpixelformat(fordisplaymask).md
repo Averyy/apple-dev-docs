@@ -21,11 +21,11 @@ func openGLPixelFormat(forDisplayMask mask: UInt32) -> NSOpenGLPixelFormat
 - (NSOpenGLPixelFormat *) openGLPixelFormatForDisplayMask:(uint32_t) mask;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object suitable for the displays.
 
-#### Discussion
+## Discussion
 
 You must include an NSOpenGLPFAScreenMask specification in the pixel format attribute list that’s used to instantiate the NSOpenGLPixelFormat.
 

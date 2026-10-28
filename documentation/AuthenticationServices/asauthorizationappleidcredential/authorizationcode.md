@@ -25,7 +25,7 @@ var authorizationCode: Data? { get }
 @property (nonatomic, copy, readonly, nullable) NSData * authorizationCode;
 ```
 
-#### Discussion
+## Discussion
 
 Your app uses this short-lived token as proof that it has authorization to interact with the server.
 

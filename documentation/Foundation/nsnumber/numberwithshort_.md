@@ -21,7 +21,7 @@ Creates and returns an `NSNumber` object containing `value`, treating it as a si
 + (NSNumber *) numberWithShort:(short) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as a signed `short`.
 

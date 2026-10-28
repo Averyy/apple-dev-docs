@@ -19,11 +19,11 @@ func item(at index: Int) -> NSCollectionViewItem?
 - (NSCollectionViewItem *) itemAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSCollectionViewItem`.
 
-#### Discussion
+## Discussion
 
 Rather than using the [`NSCollectionViewItem`](../nscollectionviewitem.md) instance returned by this method to determine the frame of the collection item’s view you should use [`content`](./content.md), it is significantly more efficient.
 

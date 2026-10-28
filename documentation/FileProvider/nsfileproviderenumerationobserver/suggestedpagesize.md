@@ -23,7 +23,7 @@ optional var suggestedPageSize: Int { get }
 @property (nonatomic, readonly) NSInteger suggestedPageSize;
 ```
 
-#### Discussion
+## Discussion
 
 The system suggests a page size to optimize performance based on the enumeration’s context. The system can request the enumeration of a container for various reasons, such as if the user opens the directory in Finder, opens a file in an application, or if the system needs to materialize the contents of a directory. Each case has its own performance profile.
 

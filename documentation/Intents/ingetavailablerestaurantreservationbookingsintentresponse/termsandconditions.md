@@ -31,7 +31,7 @@ var termsAndConditions: INTermsAndConditions? { get set }
 @property (atomic, copy, nullable) INTermsAndConditions * termsAndConditions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify any terms and conditions that apply to using your booking service. The default value of this property is `nil`.
 

@@ -21,7 +21,7 @@ A strategy to fill the buffer at subscription time, and keep it full thereafter.
 case keepFull
 ```
 
-#### Discussion
+## Discussion
 
 This strategy starts by making a demand equal to the buffer’s size from the upstream when the subscriber first connects. Afterwards, it continues to demand elements from the upstream to try to keep the buffer full.
 

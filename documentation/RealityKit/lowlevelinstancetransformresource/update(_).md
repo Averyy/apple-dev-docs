@@ -18,7 +18,7 @@ Updates the transform data in place synchronously on the CPU.
 final func update<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableSpan<float4x4>) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 You pass a closure that receives a mutable span representing the transform data, which the closure may modify. This span is valid only for the duration of the closure.
 

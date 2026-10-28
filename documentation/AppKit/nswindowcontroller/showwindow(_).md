@@ -20,7 +20,7 @@ func showWindow(_ sender: Any?)
 - (void) showWindow:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the window is an [`NSPanel`](../nspanel.md) object and has its [`becomesKeyOnlyIfNeeded`](../nspanel/becomeskeyonlyifneeded.md) flag set to [`true`](../../Swift/true.md), the window is displayed in front of all other windows but is not made key; otherwise it is displayed in front and is made key. This method is useful for menu actions.
 

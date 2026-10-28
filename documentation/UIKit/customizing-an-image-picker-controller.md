@@ -12,7 +12,7 @@ Manage user interactions and present custom information when taking pictures by 
 - Mac Catalyst 10.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 This sample applies an overlay view to display a custom view hierarchy on top of the default image picker interface.
 
@@ -22,13 +22,13 @@ The sample app uses an overlay view to:
 - Display custom information (such as images to enhance the interface).
 - Implement a number of unique camera functions such as single picture capture, timed picture capture, and repeated pictures like a camera with a fast shutter speed.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Because the camera isn’t available in Simulator, you’ll need to build and run this sample on a device with iOS 10 or later installed.
 
 When you first launch the sample app on device, you’ll need to grant the app permission to use the camera.
 
-##### Set up the overlay view
+### Set up the overlay view
 
 The sample app uses the [`cameraOverlayView`](./uiimagepickercontroller/cameraoverlayview.md) property to provide an overlay view that contains the custom view hierarchy. The image picker places the custom overlay view on top of the other image picker views.
 
@@ -76,7 +76,7 @@ if sourceType == UIImagePickerController.SourceType.camera {
 }
 ```
 
-##### Take a picture
+### Take a picture
 
 Take a picture with the Snap button. Its action method calls the [`takePicture()`](./uiimagepickercontroller/takepicture%28%29.md) method to actually take a picture.
 
@@ -86,7 +86,7 @@ imagePickerController.takePicture()
 }
 ```
 
-##### Take a delayed picture
+### Take a delayed picture
 
 Take a picture after a short delay with the Delayed button. Its action method calls the [`takePicture()`](./uiimagepickercontroller/takepicture%28%29.md) method to take a picture when the timer expires.
 
@@ -117,7 +117,7 @@ Take a picture after a short delay with the Delayed button. Its action method ca
 }
 ```
 
-##### Take repeated pictures
+### Take repeated pictures
 
 Take repeated pictures at a certain interval with the Start button; for example, one photo every five seconds. Its action method creates a timer to take pictures at certain intervals using the [`takePicture()`](./uiimagepickercontroller/takepicture%28%29.md) method.
 
@@ -162,7 +162,7 @@ The camera starts taking pictures as soon as the user taps the Start button (whi
 }
 ```
 
-##### Browse media in the Photo Library
+### Browse media in the Photo Library
 
 To browse images saved in the photo albums on the device, add a button that the user can press to go to their Photo Library. The button’s action method configures the picker for browsing saved media by setting its [`sourceType`](./uiimagepickercontroller/sourcetype-swift.property.md) property to `UIImagePickerController.SourceType.photoLibrary`, before presenting the picker’s media browser user interface.
 

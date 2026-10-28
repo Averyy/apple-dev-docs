@@ -25,11 +25,11 @@ func CFURLCopyFileSystemPath(_ anURL: CFURL!, _ pathStyle: CFURLPathStyle) -> CF
 extern CFStringRefCFURLCopyFileSystemPath(CFURLRef anURL, CFURLPathStyle pathStyle);
 ```
 
-#### Return Value
+## Return Value
 
 The URL’s path in the format specified by `pathStyle`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function returns the URL’s path as a file system path for a given path style.
 

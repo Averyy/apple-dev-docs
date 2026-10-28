@@ -30,7 +30,7 @@ func becomeCurrent()
 - [Creating a user activity object](../creating-a-user-activity-object.md)
 - [Supporting the creation of Quick Notes](../supporting-the-creation-of-quick-notes.md)
 
-#### Discussion
+## Discussion
 
 Call this method to let the system know that the user is performing the associated activity. The system makes this object the current user activity object, which makes it available for Handoff and search indexing. If another user activity object was previously active, that object is made inactive.
 

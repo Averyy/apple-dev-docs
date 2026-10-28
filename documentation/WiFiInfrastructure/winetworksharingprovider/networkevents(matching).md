@@ -17,11 +17,11 @@ Returns an async sequence of network events, containing current shared networks 
 func networkEvents(matching predicate: Predicate<WINetworkSharingProvider.Network>? = nil) -> some Sendable & AsyncSequence<WINetworkSharingProvider.NetworkEvent, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence that delivers [`WINetworkSharingProvider.NetworkEvent`](./networkevent.md) instances whenever your app extension needs to update its network information or present UI.
 
-#### Discussion
+## Discussion
 
 Use this method to monitor changes to the shared networks list and respond to system events, like new network availability or sharing requests from your container app.
 

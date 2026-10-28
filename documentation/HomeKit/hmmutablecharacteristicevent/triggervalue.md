@@ -25,7 +25,7 @@ var triggerValue: TriggerValueType? { get set }
 @property (nonatomic, copy, readwrite, nullable) TriggerValueType triggerValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the value that triggers the event.
 

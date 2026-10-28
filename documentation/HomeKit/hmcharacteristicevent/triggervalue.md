@@ -25,7 +25,7 @@ var triggerValue: TriggerValueType? { get }
 @property (nonatomic, copy, readonly, nullable) TriggerValueType triggerValue;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `nil` corresponds to any change in the value of the characteristic.
 

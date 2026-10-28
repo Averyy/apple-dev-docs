@@ -19,7 +19,7 @@ func setDetailsDisclosed(_ disclosed: Bool)
 - (void) setDetailsDisclosed:(BOOL) disclosed;
 ```
 
-#### Discussion
+## Discussion
 
 The certificate details can be shown or hidden depending on whether the user clicks the disclosure triangle. This method sets the state of that disclosure triangle and the visibility of the corresponding view.
 

@@ -21,11 +21,11 @@ Applies the given difference to this collection.
 func applying(_ difference: CollectionDifference<Self.Element>) -> Self?
 ```
 
-#### Return Value
+## Return Value
 
 An instance representing the state of the receiver with the difference applied, or `nil` if the difference is incompatible with the receiver’s state.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n* + *c*), where *n* is `self.count` and *c* is the number of changes contained by the parameter.
 

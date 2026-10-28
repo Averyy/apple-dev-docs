@@ -23,7 +23,7 @@ static func == (lhs: Wrapped?, rhs: Wrapped?) -> Bool
 
 Available when `Wrapped` conforms to `Equatable`.
 
-#### Discussion
+## Discussion
 
 Use this equal-to operator (`==`) to compare any two optional instances of a type that conforms to the `Equatable` protocol. The comparison returns `true` if both arguments are `nil` or if the two arguments wrap values that are equal. Conversely, the comparison returns `false` if only one of the arguments is `nil` or if the two arguments wrap values that are not equal.
 

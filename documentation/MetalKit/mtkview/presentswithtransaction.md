@@ -24,7 +24,7 @@ var presentsWithTransaction: Bool { get set }
 @property (nonatomic) BOOL presentsWithTransaction;
 ```
 
-#### Discussion
+## Discussion
 
 This property mirrors the value on the underlying [`CAMetalLayer`](../../QuartzCore/cametallayer.md) object, and determines whether the view synchronizes updates to its own contents with other content changes in Core Animation. For more information about how this property affects your rendering code, see [`presentsWithTransaction`](../../QuartzCore/cametallayer/presentswithtransaction.md).
 

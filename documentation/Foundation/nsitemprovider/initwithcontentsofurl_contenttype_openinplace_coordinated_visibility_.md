@@ -21,11 +21,11 @@ Provides data-backed content from an existing file with the specified parameters
 - (instancetype) initWithContentsOfURL:(NSURL *) fileURL contentType:(UTType *) contentType openInPlace:(BOOL) openInPlace coordinated:(BOOL) coordinated visibility:(NSItemProviderRepresentationVisibility) visibility;
 ```
 
-#### Return Value
+## Return Value
 
 An item provider for the specified file or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 If [`openInPlace`](../nsitemproviderfileoptions/openinplace.md) is set to `false`, the system copies the file provided before the load handler returns.
 

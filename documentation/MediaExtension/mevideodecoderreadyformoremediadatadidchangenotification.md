@@ -15,7 +15,7 @@ A notification that indicates a change to the decoder’s readiness to process a
 extern NSNotificationName const MEVideoDecoderReadyForMoreMediaDataDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is used to notify the Video Toolbox that the value of the [`isReadyForMoreMediaData`](./mevideodecoder/isreadyformoremediadata.md) property has changed.
 

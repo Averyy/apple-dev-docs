@@ -22,7 +22,7 @@ func setValue(_ value: Any!, forInputKey key: String!) -> Bool
 - (BOOL) setValue:(id) value forInputKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`false`](../../Swift/false.md) if it cannot set the value.
 

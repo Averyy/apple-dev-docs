@@ -11,7 +11,7 @@ Learn how Swift concurrency runtime semantics differ from other runtimes you may
 
 Swift’s concurrency model with a strong focus on async/await, actors and tasks, means that some patterns from other libraries or concurrency runtimes don’t translate directly into this new model. In this section, we’ll explore common patterns and differences in runtime behavior to be aware of, and how to address them while you migrate your code to Swift concurrency.
 
-#### Limiting concurrency using Task Groups
+## Limiting concurrency using Task Groups
 
 Sometimes you may find yourself with a large list of work to be processed.
 

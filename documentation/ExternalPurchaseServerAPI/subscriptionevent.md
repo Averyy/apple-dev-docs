@@ -26,7 +26,7 @@ string subscriptionEvent
 
 - [Reporting tokens with transactions](./reportwithtransactions.md)
 
-#### Discussion
+## Discussion
 
 Allowed values: `SUBSCRIPTION_START`, `RENEWAL`, `SUBSCRIPTION_CHANGE`, `SUBSCRIPTION_PAYMENT`
 

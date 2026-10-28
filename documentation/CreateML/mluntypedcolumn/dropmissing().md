@@ -20,7 +20,7 @@ Creates a subset of the column by removing all elements without a value.
 func dropMissing() -> MLUntypedColumn
 ```
 
-#### Return Value
+## Return Value
 
 A new column.
 

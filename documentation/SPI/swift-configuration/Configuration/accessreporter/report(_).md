@@ -25,7 +25,7 @@ Processes a configuration access event.
 func report(_ event: AccessEvent)
 ```
 
-#### Discussion
+## Discussion
 
 This method is called whenever a configuration value is accessed through a [`ConfigReader`](../configreader.md) or a [`ConfigSnapshotReader`](../configsnapshotreader.md). Implementations should handle events efficiently as they may be called frequently.
 

@@ -25,7 +25,7 @@ var countOfBytesSent: Int64 { get }
 @property (readonly) int64_t countOfBytesSent;
 ```
 
-#### Discussion
+## Discussion
 
 This byte count includes *only* the length of the request body itself, not the request headers.
 

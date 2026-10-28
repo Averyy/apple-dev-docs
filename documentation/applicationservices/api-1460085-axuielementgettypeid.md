@@ -19,7 +19,7 @@ func AXUIElementGetTypeID() -> CFTypeID
 CFTypeID AXUIElementGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a CFTypeID representing the AXUIElementRef type.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeBatteryLevel: String
 extern NSString * const HMCharacteristicTypeBatteryLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an integer that’s the percentage of total battery capacity remaining.
 

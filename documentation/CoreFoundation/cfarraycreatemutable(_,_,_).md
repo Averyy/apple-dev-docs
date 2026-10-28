@@ -25,7 +25,7 @@ func CFArrayCreateMutable(_ allocator: CFAllocator!, _ capacity: CFIndex, _ call
 extern CFMutableArrayRefCFArrayCreateMutable(CFAllocatorRef allocator, CFIndex capacity, const CFArrayCallBacks *callBacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable array, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

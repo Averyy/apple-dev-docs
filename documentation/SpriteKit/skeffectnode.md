@@ -33,7 +33,7 @@ class SKEffectNode
 - [Creating a New Node By Rendering To a Texture](./creating-a-new-node-by-rendering-to-a-texture.md)
 - [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
 
-#### Overview
+## Overview
 
 An [`SKEffectNode`](./skeffectnode.md) object renders its children into a buffer and optionally applies a Core Image filter to this rendered output. Because effect nodes conform to [`SKWarpable`](./skwarpable.md), you can also use them to apply distortions to nodes that don’t implement the protocol, such as shape and video nodes. Use effect nodes to incorporate sophisticated special effects into a scene or to cache the contents of a static subtree for faster rendering performance.
 

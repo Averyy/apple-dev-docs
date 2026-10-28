@@ -15,7 +15,7 @@ Clears the DMACommand's current memory descriptor
 virtual IOReturn clearMemoryDescriptor(bool autoComplete);
 ```
 
-#### Discussion
+## Discussion
 
 completes and invalidates the cache if the DMA command is currently active, copies all data from bounce buffers if necessary and releases all resources acquired during setMemoryDescriptor.
 

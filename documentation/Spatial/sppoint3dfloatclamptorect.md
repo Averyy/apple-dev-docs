@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatClampToRect(SPPoint3DFloat point, SPRect3DFloat rect);
 ```
 
-#### Return Value
+## Return Value
 
 A point that’s clamped to the rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a point with coordinates clamped to the specified rectangle.
 

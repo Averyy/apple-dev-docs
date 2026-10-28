@@ -15,7 +15,7 @@ The content type of the thumbnail.
 var thumbnailContentType: UTType?
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set this property, the framework infers a content type from the URL.
 

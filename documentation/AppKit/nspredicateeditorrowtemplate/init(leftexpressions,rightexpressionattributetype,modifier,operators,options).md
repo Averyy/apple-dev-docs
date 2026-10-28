@@ -19,11 +19,11 @@ init(leftExpressions: [NSExpression], rightExpressionAttributeType attributeType
 - (instancetype) initWithLeftExpressions:(NSArray<NSExpression *> *) leftExpressions rightExpressionAttributeType:(NSAttributeType) attributeType modifier:(NSComparisonPredicateModifier) modifier operators:(NSArray<NSNumber *> *) operators options:(NSUInteger) options;
 ```
 
-#### Return Value
+## Return Value
 
 A row template initialized using the specified arguments.
 
-#### Discussion
+## Discussion
 
 The type of `attributeType` dictates the type of view created. For example, [`NSAttributeType.dateAttributeType`](../../CoreData/nsattributetype/dateattributetype.md) creates an [`NSDatePicker`](../nsdatepicker.md) object, [`NSAttributeType.integer64AttributeType`](../../CoreData/nsattributetype/integer64attributetype.md) creates a short text field, and [`NSAttributeType.stringAttributeType`](../../CoreData/nsattributetype/stringattributetype.md) produces a longer text field. You can resize the views as you want.
 

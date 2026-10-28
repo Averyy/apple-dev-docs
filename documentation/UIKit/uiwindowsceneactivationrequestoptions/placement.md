@@ -19,7 +19,7 @@ The placement you prefer when the system activates the window scene.
 @property (nonatomic, copy, nullable) UIWindowScenePlacement * placement;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a scene placement to influence how the system positions the scene on activation. Set the value to `nil` to indicate that the system should determine the most appropriate placement.
 

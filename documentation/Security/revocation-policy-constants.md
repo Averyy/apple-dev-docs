@@ -5,7 +5,7 @@
 
 Use these flags to create a revocation policy object.
 
-#### Overview
+## Overview
 
 Use these flags with a call to the [`SecPolicyCreateRevocation(_:)`](./secpolicycreaterevocation%28_%29.md) function to characterize the constructed policy.
 

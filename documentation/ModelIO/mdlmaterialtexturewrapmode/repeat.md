@@ -24,7 +24,7 @@ case `repeat`
 MDLMaterialTextureWrapModeRepeat
 ```
 
-#### Discussion
+## Discussion
 
 This effect disregards the whole part of a texture coordinate. For example, sampling at a coordinate value of `2.7` or `5.7` returns the texel color for the coordinate value of `0.7`. The visual effect of this mode is to repeat the texture image endlessly across a surface rendered with the texture.
 

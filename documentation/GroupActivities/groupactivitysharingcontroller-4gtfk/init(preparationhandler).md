@@ -16,7 +16,7 @@ Initializes the SharePlay sharing controller with a closure that creates the act
 init<ActivityType>(preparationHandler: @escaping () async throws -> ActivityType) where ActivityType : GroupActivity
 ```
 
-#### Discussion
+## Discussion
 
 The initializer executes the closure asynchronously so that your app can present the view controller in a timely manner. Use this method when the creation of the [`GroupActivity`](../groupactivity.md) object might take a significant amount of time.
 

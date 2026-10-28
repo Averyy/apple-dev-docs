@@ -23,7 +23,7 @@ var minimumInteritemSpacing: CGFloat { get set }
 @property (nonatomic) CGFloat minimumInteritemSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate object does not implement the [`collectionView(_:layout:minimumInteritemSpacingForSectionAt:)`](../uicollectionviewdelegateflowlayout/collectionview%28_,layout,minimuminteritemspacingforsectionat%29.md) method, the flow layout uses the value in this property to set the spacing between items in the same line.
 

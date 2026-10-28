@@ -16,7 +16,7 @@ get isZoomEnabled(): boolean;
 set isZoomEnabled(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 Pinch-to-zoom with a trackpad requires browser touch event support. You can zoom the map programmatically when zoom isn’t in an enabled state by changing the [`region`](./region.md) or [`visibleMapRect`](./visiblemaprect.md).
 

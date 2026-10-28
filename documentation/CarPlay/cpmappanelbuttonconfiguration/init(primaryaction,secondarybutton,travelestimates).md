@@ -21,7 +21,7 @@ init(primaryAction: CPTextButton, secondaryButton: CPButton?, travelEstimates: C
 - (instancetype) initWithPrimaryAction:(CPTextButton *) primaryAction secondaryButton:(CPButton *) secondaryButton travelEstimates:(CPTravelEstimates *) travelEstimates;
 ```
 
-#### Return Value
+## Return Value
 
 A new map panel button configuration object.
 

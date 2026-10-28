@@ -25,7 +25,7 @@ case unauthorizedRequestData
 SKErrorUnauthorizedRequestData
 ```
 
-#### Discussion
+## Discussion
 
 To use [`requestData`](../../skpayment/requestdata.md), an app must have a required entitlement.
 

@@ -18,7 +18,7 @@ Creates a configuration from a source and target language.
 init(source: Locale.Language? = nil, target: Locale.Language? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 When creating a translation session configuration it’s best to use `Locale.Language` values that return from [`supportedLanguages`](../../languageavailability/supportedlanguages.md). When you pass other `Locale.Language` values, the framework tries to match to one of these supported languages.
 

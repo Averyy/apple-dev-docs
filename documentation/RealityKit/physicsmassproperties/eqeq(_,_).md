@@ -20,7 +20,7 @@ Indicates whether two physics mass properties are equal.
 static func == (lhs: PhysicsMassProperties, rhs: PhysicsMassProperties) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two physics mass properties are equal.
 

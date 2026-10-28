@@ -12,11 +12,11 @@ Lay out text in a custom-shaped container and apply glyph substitutions.
 - Mac Catalyst 13.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 Some apps, such as book and magazine readers, text editors, and games, may need to lay out their text in a way that better fits their app style. TextKit provides a set of APIs for these apps to implement a custom text layout. This sample demonstrates how to use the APIs to display text in a circular container and in a two-column container, how to set up an exclusive area for a text container, and how to substitute a glyph without changing the text storage.
 
-##### Implement a custom-shaped text container
+### Implement a custom-shaped text container
 
 When laying out a line of text, TextKit calls the  [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](./nstextcontainer/linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md) method from [`NSTextContainer`](./nstextcontainer.md) to determine the position and size of the line, which TextKit calls a *line fragment rectangle*. By creating a subclass of `NSTextContainer` to return a custom line fragment rectangle in the method, apps can implement a custom-shaped text container.
 
@@ -48,7 +48,7 @@ override func lineFragmentRect(forProposedRect proposedRect: CGRect,
 }
 ```
 
-##### Lay out text with a custom text container
+### Lay out text with a custom text container
 
 To lay out text with a custom text container, apps simply set up a text view with the container, and let TextKit do the rest. The  [`init(frame:textContainer:)`](./uitextview/init%28frame,textcontainer%29.md) method from [`UITextView`](./uitextview.md) serves this purpose, and this sample uses it to create a `UITextView` instance with its circular text container.
 
@@ -94,7 +94,7 @@ view.addSubview(secondTextView)
 
 Note that after adding a second text container to the layout manager, the text views become uneditable and unselectable.
 
-##### Reserve an area in a text container
+### Reserve an area in a text container
 
 To create an appealing UI, some apps may have their text wrap around a certain shape. They can achieve that by using the [`exclusionPaths`](./nstextcontainer/exclusionpaths.md) property from `NSTextContainer` to reserve an exclusive area for the shape in a text container.
 
@@ -104,7 +104,7 @@ This sample uses the following code to set up an exclusive area where `translate
 textView.textContainer.exclusionPaths = [translatedCirclePath]
 ```
 
-##### Substitute glyphs without changing the text storage
+### Substitute glyphs without changing the text storage
 
 When a text container doesn’t have enough space to display text, apps may need a way to indicate that the container has additional, or *overflow*, text. A standard text container can use the  [`lineBreakMode`](./nstextcontainer/linebreakmode.md) property from  `NSTextContainer` to add an ending ellipsis that helps handle this situation, but the property doesn’t completely support custom-shaped containers like `CircleTextContainer`.
 

@@ -21,7 +21,7 @@ func item<T>() -> T where T : HasDType
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 It is a contract violation to call this on an array with more than one element or to read a type other than the `dtype`.
 

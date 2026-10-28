@@ -18,7 +18,7 @@ Stops multipeer synchronization.
 func stopSync()
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to stop multipeer syncing with connected peers. To resume syncing after calling this method, call [`startSync()`](./startsync%28%29.md).
 

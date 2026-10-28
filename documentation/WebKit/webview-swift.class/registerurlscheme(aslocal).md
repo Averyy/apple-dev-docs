@@ -21,7 +21,7 @@ class func registerURLScheme(asLocal scheme: String!)
 + (void) registerURLSchemeAsLocal:(NSString *) scheme;
 ```
 
-#### Discussion
+## Discussion
 
 You need to register a scheme as local to access resources with file URLs and to have the same security checks as a local file.
 

@@ -20,7 +20,7 @@ A custom collection of named blend shape weights.
 struct BlendShapeWeightsSet
 ```
 
-#### Overview
+## Overview
 
 Retrieve a `BlendShapeWeightsSet` from a [`BlendShapeWeightsComponent`](./blendshapeweightscomponent.md) to access the current weights and weight names for each blend shape managed by the component.
 

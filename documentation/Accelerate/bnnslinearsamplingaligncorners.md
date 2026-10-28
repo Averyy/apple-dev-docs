@@ -25,7 +25,7 @@ var BNNSLinearSamplingAlignCorners: BNNSLinearSamplingMode { get }
 BNNSLinearSamplingAlignCorners
 ```
 
-#### Discussion
+## Discussion
 
 This sampling mode is the same as [`BNNSLinearSamplingStrictAlignCorners`](./bnnslinearsamplingstrictaligncorners.md) unless the input grid has a size of `1`.
 

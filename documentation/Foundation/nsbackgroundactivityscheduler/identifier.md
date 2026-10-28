@@ -19,7 +19,7 @@ var identifier: String { get }
 @property (copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This string should remain constant for an activity across launches of your app because the system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future. `nil` and zero-length strings are not allowed. See [Configure Scheduler Properties](../nsbackgroundactivityscheduler.md#Configure-Scheduler-Properties).
 

@@ -22,7 +22,7 @@ static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F> where Value
 
 Available when `Value` conforms to `Identifiable`.
 
-#### Discussion
+## Discussion
 
 This method provides support for “if” statements in multi-statement closures, producing conditional content for the “then” branch.
 

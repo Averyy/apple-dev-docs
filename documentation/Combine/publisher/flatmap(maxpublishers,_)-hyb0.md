@@ -23,7 +23,7 @@ func flatMap<P>(maxPublishers: Subscribers.Demand = .unlimited, _ transform: @es
 
 Available when `Failure` is `Never`.
 
-#### Return Value
+## Return Value
 
 A publisher that transforms elements from an upstream  publisher into a publisher of that element’s type.
 

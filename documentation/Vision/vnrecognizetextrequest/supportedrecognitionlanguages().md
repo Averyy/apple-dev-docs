@@ -24,7 +24,7 @@ func supportedRecognitionLanguages() throws -> [String]
 - (NSArray<NSString *> *) supportedRecognitionLanguagesAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The language identifiers.
 

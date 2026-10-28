@@ -29,7 +29,7 @@ protocol Generable : ConvertibleFromGeneratedContent, ConvertibleToGeneratedCont
 - [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md)
 - [Managing the context window](./managing-the-context-window.md)
 
-#### Overview
+## Overview
 
 Annotate your Swift structure or enumeration with the `@Generable` macro to allow the model to respond to prompts by generating an instance of your type. Use the `@Guide` macro to provide natural language descriptions of your properties, and programmatically control the values that the model can generate.
 

@@ -24,7 +24,7 @@ static let stairDescentSpeed: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierStairDescentSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 This is a measurement of how fast the user walks down stairs. The system automatically records stair descent samples on Apple Watch Series 5 or later. The user must walk down a 10-foot (3-meter) flight of steps while wearing the watch. The system records 20 samples on a typical day; however, some days may go over 100 samples, for example if the user goes on a long hike. The watch doesn’t record stair descent speed samples if the user’s wheelchair status is on.
 

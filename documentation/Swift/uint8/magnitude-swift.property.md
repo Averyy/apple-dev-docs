@@ -21,7 +21,7 @@ The magnitude of this value.
 var magnitude: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 Every unsigned integer is its own magnitude, so for any value `x`, `x == x.magnitude`.
 

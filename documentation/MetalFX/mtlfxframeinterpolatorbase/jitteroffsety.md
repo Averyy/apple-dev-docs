@@ -24,7 +24,7 @@ var jitterOffsetY: Float { get set }
 @property (nonatomic) float jitterOffsetY;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates the vertical pixel offset this interpolator samples to return to the frame’s reference frame.
 

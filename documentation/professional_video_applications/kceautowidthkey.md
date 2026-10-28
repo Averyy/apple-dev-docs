@@ -19,7 +19,7 @@ var kCEAutoWidthKey: String { get }
 #define kCEAutoWidthKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a negative number if the width is set to automatic; otherwise it’s zero.
 

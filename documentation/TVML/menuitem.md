@@ -5,7 +5,7 @@
 
 Displays a label for an item.
 
-#### Overview
+## Overview
 
 One or more `menuItem` elements are used inside of a `menuBar` element to indicate the available elements. Here’s an example with two items inside of a menu bar.
 
@@ -20,11 +20,11 @@ One or more `menuItem` elements are used inside of a `menuBar` element to indica
 </menuBar>
 ```
 
-##### Subelements of menuItem
+### Subelements of menuItem
 
 - [title](./title.md)
 
-##### Elements that Use menuItem
+### Elements that Use menuItem
 
 - [menuBar](./menubar.md)
 - [section](./section.md)

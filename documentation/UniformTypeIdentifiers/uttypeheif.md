@@ -21,7 +21,7 @@ A type that represents High Efficiency Image File Format images.
 extern UTType * const UTTypeHEIF;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.heif`.
 

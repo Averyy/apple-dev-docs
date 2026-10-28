@@ -29,11 +29,11 @@ var course: CLLocationDirection { get }
 
 - [Getting heading and course information](../getting-heading-and-course-information.md)
 
-#### Discussion
+## Discussion
 
 Course values are measured in degrees starting at due north and continue clockwise around the compass. Thus, north is 0 degrees, east is 90 degrees, south is 180 degrees, and so on. Course values may not be available on all devices. A negative value indicates that the course information is invalid.
 
-##### Special Considerations
+### Special Considerations
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

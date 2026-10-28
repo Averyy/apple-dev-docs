@@ -22,7 +22,7 @@ case share
 UIApplicationShortcutIconTypeShare
 ```
 
-#### Discussion
+## Discussion
 
 ![Share icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934515@2x.png)
 

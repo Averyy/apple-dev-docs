@@ -12,7 +12,7 @@ void setChildHasRequestedPower (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called by the parent.
 

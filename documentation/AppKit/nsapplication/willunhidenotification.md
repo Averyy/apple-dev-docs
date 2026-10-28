@@ -19,7 +19,7 @@ class let willUnhideNotification: NSNotification.Name
 extern NSNotificationName NSApplicationWillUnhideNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is [`shared`](./shared.md). This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 

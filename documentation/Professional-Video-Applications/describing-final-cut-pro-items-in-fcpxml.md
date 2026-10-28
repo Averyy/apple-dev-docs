@@ -5,7 +5,7 @@
 
 Describe clips, projects, and other items in FCPXML to exchange data with Final Cut Pro.
 
-#### Overview
+## Overview
 
 Your app uses FCPXML to describe media, projects, and other information when it sends data to or receives data from Final Cut Pro. Whether the FCPXML is created by your app for Final Cut Pro or by Final Cut Pro for your app, the descriptions in FCPXML are essentially the same.
 
@@ -18,7 +18,7 @@ The following examples show two FCPXML documents that describe media assets and 
 - For more information on Final Cut Pro projects that each represent a sequence of clips, possibly with project markers, see [Describe a Project, Markers, and Assets](./describing-final-cut-pro-items-in-fcpxml.md#Describe-a-Project-Markers-and-Assets).
 - For more information on Final Cut Pro events that contain clips and projects, possibly with keyword collections or smart collections. see [Describe Ratings, Keywords, Collections, and Custom Metadata](./describing-final-cut-pro-items-in-fcpxml.md#Describe-Ratings-Keywords-Collections-and-Custom-Metadata).
 
-##### Receive FCPXML in Your App
+### Receive FCPXML in Your App
 
 The purpose and goals of your app determine how it uses data from Final Cut Pro. Use these tips to get the most from the FCPXML documents that your app receives.
 
@@ -26,7 +26,7 @@ The purpose and goals of your app determine how it uses data from Final Cut Pro.
 - Preserve the editing decisions in a project, along with any project markers. Use that information to identify which special effects you used on which clips, to track assets for rights management, and so on.
 - To preserve how your users have organized their data in Final Cut Pro, use the keywords and ratings that they associated with clips to categorize data in your app. Consider creating equivalents for keyword collections and smart collections.
 
-##### Describe a Project, Markers, and Assets
+### Describe a Project, Markers, and Assets
 
 The following example FCPXML document describes a project with three different clips in its timeline sequence. One of the clips, `MyMovie1`, appears three times. The order of the clips in the project `spine` determines their order in the project. The document also describes the three media assets used in the project, along with URLs to the location of the files on a local file system. The example includes the three clips again at the end of the document, so they can appear in the Final Cut Pro browser in addition to the project to use in further editing. The explanation following this example describes how Final Cut Pro interprets this FCPXML.
 
@@ -88,7 +88,7 @@ This example tells Final Cut Pro to:
 
 > 💡 **Tip**:  You can choose to make the clips used in a project available to users for future editing. In addition to describing clips in the project timeline, add them to the FCPXML document at the same level as the project, as shown in the previous example. When Final Cut Pro processes the document, your users see the clips in the project as well as in the Final Cut Pro browser (inside an event named with today’s date).
 
-##### Describe Ratings, Keywords, Collections, and Custom Metadata
+### Describe Ratings, Keywords, Collections, and Custom Metadata
 
 The following example FCPXML document describes two clips for the media assets (`Evening.mov` and `Morning.mov).` The clips (`Evening` and `Morning`) are organized into an event named `MyBigEvent`. The `Evening` clip contains a keyword (`Ocean`) and the `Morning` clip contains two Final Cut Pro ratings. The document also describes the media assets used in the event, along with URLs to the location of the files; the `Evening.mov` asset contains two pieces of custom metadata. The explanation following this example describes how Final Cut Pro interprets this FCPXML.
 

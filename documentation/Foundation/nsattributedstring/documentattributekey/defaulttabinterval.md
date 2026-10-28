@@ -21,7 +21,7 @@ The default tab stop interval for the document.
 static let defaultTabInterval: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing a float. Represents the document-wide default tab stop interval.
 

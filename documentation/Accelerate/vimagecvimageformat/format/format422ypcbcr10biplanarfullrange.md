@@ -21,7 +21,7 @@ A full-range, two-plane YpCbCr 4:2:2 pixel format with 10 bits per channel.
 case format422YpCbCr10BiPlanarFullRange
 ```
 
-#### Discussion
+## Discussion
 
 This format defines luminance data in the range `0...1023`.
 

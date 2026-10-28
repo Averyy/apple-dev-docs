@@ -19,7 +19,7 @@ protocol NSSharingServiceDelegate : NSObjectProtocol
 @protocol NSSharingServiceDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 See [`NSSharingService`](./nssharingservice.md) for more information.
 

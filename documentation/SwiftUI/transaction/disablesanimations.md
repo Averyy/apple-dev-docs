@@ -21,7 +21,7 @@ A Boolean value that indicates whether views should disable animations.
 var disablesAnimations: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` during the initial phase of a two-part transition update, to prevent [`animation(_:)`](../view/animation%28_%29.md) from inserting new animations into the transaction.
 

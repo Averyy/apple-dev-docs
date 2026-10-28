@@ -29,7 +29,7 @@ func handle(intent: INSetDefrosterSettingsInCarIntent) async -> INSetDefrosterSe
 - (void) handleSetDefrosterSettingsInCar:(INSetDefrosterSettingsInCarIntent *) intent completion:(void (^)(INSetDefrosterSettingsInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should communicate the new defroster settings to the vehicle’s climate control system. When done, execute the provided block with a response object indicating whether you successfully changed the defroster settings.
 

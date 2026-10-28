@@ -17,7 +17,7 @@ A unique identifier for the recognized item.
 var id: UUID { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the same item resides in more than one video frame, the `id` remains the same.
 

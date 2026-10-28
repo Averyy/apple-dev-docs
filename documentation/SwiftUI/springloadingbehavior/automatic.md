@@ -21,7 +21,7 @@ The automatic spring loading behavior.
 static let automatic: SpringLoadingBehavior
 ```
 
-#### Discussion
+## Discussion
 
 This defers to default component behavior for spring loading. Some components, such as `TabView`, will default to allowing spring loading; while others do not.
 

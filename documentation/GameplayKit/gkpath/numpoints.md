@@ -24,7 +24,7 @@ var numPoints: Int { get }
 @property (readonly) NSUInteger numPoints;
 ```
 
-#### Discussion
+## Discussion
 
 You define a path’s vertices when creating it, either directly with the [`initWithPoints:count:radius:cyclical:`](./initwithpoints_count_radius_cyclical_.md) initializer or indirectly with the [`init(graphNodes:radius:)`](./init%28graphnodes,radius%29.md) initializer.
 

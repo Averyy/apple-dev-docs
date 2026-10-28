@@ -24,11 +24,11 @@ typealias AudioFileStream_PropertyListenerProc = (UnsafeMutableRawPointer, Audio
 typedef void (*)(void *, struct OpaqueAudioFileStreamID *, unsigned int, enum AudioFileStreamPropertyFlags *) AudioFileStream_PropertyListenerProc;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your function `MyAudioFileStream_PropertyListenerProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 When the parser calls your property listener, check the `ioFlags` value to see if the property value is being cached. If not, you can call the [`AudioFileStreamGetPropertyInfo(_:_:_:_:)`](./audiofilestreamgetpropertyinfo%28_,_,_,_%29.md) and [`AudioFileStreamGetProperty(_:_:_:_:)`](./audiofilestreamgetproperty%28_,_,_,_%29.md) functions to obtain the value of the property from inside the property listener, or you can set the `kAudioFileStreamPropertyFlag_CacheProperty` flag on return to cause the parser to cache the value.
 

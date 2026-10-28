@@ -20,7 +20,7 @@ A material that comes from a shader graph in a Reality Composer Pro project, or 
 struct ShaderGraphMaterial
 ```
 
-#### Overview
+## Overview
 
 Use ShaderGraphMaterial when retrieving a shaders you build in Reality Composer Pro’s shader graph. The following code demonstrates retrieving the first material from an entity loaded from a Reality Composer Proj project and sets a new value for one of its named parameters:
 

@@ -16,7 +16,7 @@ A URL to receive life-cycle notifications for the merchant-specific payment toke
 DOMString tokenNotificationURL;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t set this property, the framework doesn’t send notifications when life-cycle changes occur for the token, for example when the framework deletes the token.
 

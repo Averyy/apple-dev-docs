@@ -25,7 +25,7 @@ var isMultipath: Bool { get }
 @property (readonly, getter=isMultipath) BOOL multipath;
 ```
 
-#### Discussion
+## Discussion
 
 You configure the use of multipath protocols with the [`multipathServiceType`](../urlsessionconfiguration/multipathservicetype-swift.property.md) property on [`URLSessionConfiguration`](../urlsessionconfiguration.md).
 

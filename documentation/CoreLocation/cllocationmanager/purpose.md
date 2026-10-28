@@ -21,7 +21,7 @@ var purpose: String? { get set }
 @property (nonatomic, copy, nullable) NSString * purpose;
 ```
 
-#### Discussion
+## Discussion
 
 If this property isn’t `nil` and the system needs to ask for the user’s consent to use location services, it displays the provided string. You can use this string to explain why your app is using location services.
 

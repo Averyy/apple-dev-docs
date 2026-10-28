@@ -17,7 +17,7 @@ Qwen2VL VLM
 class Qwen2VL
 ```
 
-#### Overview
+## Overview
 
 This is typically created by [`VLMModelFactory`](./vlmmodelfactory.md).
 

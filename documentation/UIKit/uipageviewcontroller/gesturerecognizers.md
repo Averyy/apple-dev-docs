@@ -23,7 +23,7 @@ var gestureRecognizers: [UIGestureRecognizer] { get }
 @property (nonatomic, readonly) NSArray<__kindof UIGestureRecognizer *> * gestureRecognizers;
 ```
 
-#### Discussion
+## Discussion
 
 These gesture recognizers are initially attached to a view in the page view controller’s hierarchy. To change the region of the screen in which the user can navigate using gestures,  they can be placed on another view.
 

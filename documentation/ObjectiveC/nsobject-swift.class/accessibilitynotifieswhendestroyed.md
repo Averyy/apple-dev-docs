@@ -19,7 +19,7 @@ var accessibilityNotifiesWhenDestroyed: Bool { get }
 @property (readonly) BOOL accessibilityNotifiesWhenDestroyed;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.9 and later, a custom accessibility object that is an [`NSObject`](../nsobject-swift.class.md) subclass can post accessibility notifications if it meets the following criteria:
 

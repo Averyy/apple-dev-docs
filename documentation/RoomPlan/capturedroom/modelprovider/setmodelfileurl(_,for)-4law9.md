@@ -17,7 +17,7 @@ Associates a URL to the given object category.
 mutating func setModelFileURL(_ url: URL?, for category: CapturedRoom.Object.Category) throws
 ```
 
-#### Discussion
+## Discussion
 
 This function throws [`CapturedRoom.ModelProvider.Error.nonExistingFile(url:)`](./error/nonexistingfile%28url%29.md) if a 3D model doesn’t exist at the given URL.
 

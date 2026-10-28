@@ -18,7 +18,7 @@ The style of the outline disclosure accessory.
 @property (nonatomic) UICellAccessoryOutlineDisclosureStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UICellAccessoryOutlineDisclosureStyleAutomatic`](../uicellaccessoryoutlinedisclosurestyle/uicellaccessoryoutlinedisclosurestyleautomatic.md).
 

@@ -23,7 +23,7 @@ optional var userInfo: [AnyHashable : Any]? { get }
 @property (nonatomic, strong, readonly, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `userInfo` data is often used by the predicate for actions defined by the File Provider UI extension. For more information, see `Adding Actions to the Context Menu`.
 

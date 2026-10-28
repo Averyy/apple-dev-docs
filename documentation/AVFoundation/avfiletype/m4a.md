@@ -25,7 +25,7 @@ static let m4a: AVFileType
 extern AVFileType const AVFileTypeAppleM4A;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.apple.m4a-audio`. Files of this type have an .`m4a` extension.
 

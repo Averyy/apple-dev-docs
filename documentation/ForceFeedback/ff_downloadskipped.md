@@ -18,7 +18,7 @@ var FF_DOWNLOADSKIPPED: HRESULT { get }
 #define FF_DOWNLOADSKIPPED
 ```
 
-#### Discussion
+## Discussion
 
 The parameters of the effect were successfully updated by FFEffectSetParameters, but the effect was not downloaded because the FFEP_NODOWNLOAD flag was passed.
 

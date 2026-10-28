@@ -4,7 +4,7 @@
 
 Configure metadata, start conditions, actions, post-actions, and more to create custom Xcode Cloud workflows.
 
-#### Overview
+## Overview
 
 By configuring a first workflow in Xcode, you started a continuous integration and delivery (CI/CD) practice with Xcode Cloud. After you’ve reviewed how you can best refine your CI/CD practice as described in [Developing a workflow strategy for Xcode Cloud](./developing-a-workflow-strategy-for-xcode-cloud.md), create custom workflows that fit the unique needs for ensuring your app’s or framework’s quality. For example, add metadata to describe the purpose of a workflow, configure conditions that start a new build, add actions and post-actions, and more.
 
@@ -12,7 +12,7 @@ You need to use Xcode to initially configure your project or workspace to use Xc
 
 For additional information about Xcode Cloud workflows, see [Explore Xcode Cloud workflows](https://developer.apple.com/wwdc21/10268) and [Customize your advanced Xcode Cloud workflows](https://developer.apple.com/wwdc21/10269).
 
-##### Metadata
+### Metadata
 
 Even if you’re a solo developer, you might create several workflows. To help distinguish workflows from each other and make each workflow’s purpose easy to understand, open the workflow and provide metadata in the General section.
 
@@ -21,7 +21,7 @@ Even if you’re a solo developer, you might create several workflows. To help d
 
 ![A screenshot that shows a workflow in Xcode. The General section is visible and shows the name and description that the user provided.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Xcode-Cloud-Workflow-Reference-1@2x.png)
 
-##### Environment
+### Environment
 
 When you develop and maintain your app or framework over time, you need to make sure that current and upcoming Xcode versions can successfully build it. If your product is a framework, you might need to ensure your framework supports previous Xcode versions.
 
@@ -33,7 +33,7 @@ To configure a workflow’s temporary build environment, navigate to the workflo
 
 > **Note**: The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode — for example, Python — and additionally [Homebrew](https://brew.sh) to support installing third-party dependencies and tools. For more information, see [Making dependencies available to Xcode Cloud](./making-dependencies-available-to-xcode-cloud.md).
 
-##### Perform a clean build
+### Perform a clean build
 
 To reduce the amount of time it takes to perform a build, Xcode Cloud stores each build’s derived data and other cached information for reuse in a secure and private way. However, you might need to perform a clean build that doesn’t cache data. For example, you need to configure a workflow to perform a clean build if you add a post-action that distributes a new version to external testers with [TestFlight](https://developer.apple.com/testflight/).
 
@@ -44,19 +44,19 @@ To configure a workflow that starts a new build without cached data:
 
 > **Note**: Enabling clean builds significantly increases the time it takes to perform a build. Only perform clean builds when necessary; for example, distributing a new version to external testers with TestFlight requires a clean build.
 
-##### Custom environment variables
+### Custom environment variables
 
 In addition to Xcode and macOS versions, you can set custom *environment variables* for a workflow in its Environment section. These variables are available to custom build scripts you use to extend workflows. For example, set a secret environment variable to contain an API key you use in a custom build script that uploads a workflow’s artifacts to your server.
 
 > ❗ **Important**: To securely store an environment variable and make sure it doesn’t appear in any logs, check the “Keep value redacted” (Xcode) or Secret (App Store Connect) box.
 
-##### Start conditions
+### Start conditions
 
 When you create a new workflow, Xcode suggests the Branch Changes condition that starts a new build for every change to your Git repository’s default branch. This condition is useful when you get started with CI. However, starting a build for every change to your default branch might not be the appropriate setting for you. For example, a workflow that runs UI tests on many simulated devices can take a significant amount of time to complete, and starting a build for every branch change isn’t practical. In this case, make changes to the workflow’s start condition or add start conditions to tell Xcode Cloud to perform a workflow less often.
 
 For more information about configuring start conditions, see [Configuring start conditions](./configuring-start-conditions.md).
 
-##### Auto-cancel builds
+### Auto-cancel builds
 
 By default, workflows have the Auto-cancel Builds setting enabled for each start condition. As a result, Xcode Cloud automatically cancels an in-progress build if a workflow queues a new build for the same workflow. This reduces the time to verify your latest code change — a useful setting in case you push updates to a branch in quick succession.
 
@@ -64,7 +64,7 @@ For example, say you push five changes to a branch within five minutes. Xcode Cl
 
 > 💡 **Tip**: If you prefer not to cancel builds automatically, turn off Auto-cancel Builds for one, multiple, or each start condition in a start condition’s Options section.
 
-##### Actions
+### Actions
 
 Automatically and frequently building your project and verifying changes is key to a CI/CD practice. As a result, configuring a workflow’s actions is a fundamental task you perform in its Actions section. A workflow can perform the following actions:
 
@@ -77,7 +77,7 @@ Note how these actions match your project’s or workspace’s scheme actions. T
 
 For detailed information on actions you configure for an Xcode Cloud workflow, see [Configuring your Xcode Cloud workflow’s actions](./configuring-your-xcode-cloud-workflow-s-actions.md). For additional information on using Xcode Cloud to run your tests, see [Author fast and reliable tests for Xcode Cloud](https://developer.apple.com/wwdc22/110361).
 
-##### Post-actions
+### Post-actions
 
 Performing actions is at the core of a workflow. However, similar to how you configure post-actions in a scheme, you can configure post-actions for a workflow that happen after Xcode Cloud performs the workflow’s actions.
 
@@ -89,13 +89,13 @@ By adding post-actions, you can:
 
 For additional information on sending notifications to Slack, see [Connecting Xcode Cloud to Slack](./connecting-xcode-cloud-to-slack.md)
 
-##### Custom build scripts
+### Custom build scripts
 
 Xcode Cloud uses your project’s configured schemes and offers a wide variety of workflow settings. However, you might want to perform additional custom tasks you can’t configure using a scheme or workflow. For example, you might need to install an additional tool to build your project, to upload an app archive to storage, to use a different app icon for nightly builds, and so on.
 
 To address these use cases, you can create shell scripts, referred to as *custom build scripts*, that Xcode Cloud runs at a specific moment during a build. For more information, see [Writing custom build scripts](./writing-custom-build-scripts.md).
 
-##### Automate workflow management
+### Automate workflow management
 
 Using either Xcode or App Store Connect, you can create custom workflows to verify the quality of your apps or frameworks. However, you may need to further automate Xcode Cloud usage and create and manage numerous workflows for multiple apps — especially in a corporate context. If this applies to you, use the App Store Connect API to manage workflows, start builds, and access Xcode Cloud data. For more information, see [Xcode Cloud Workflows and Builds](../AppStoreConnectAPI/xcode-cloud-workflows-and-builds.md).
 

@@ -24,7 +24,7 @@ func reductionAnd(with tensor: MPSGraphTensor, axes: [NSNumber]?, name: String?)
 - (MPSGraphTensor *) reductionAndWithTensor:(MPSGraphTensor *) tensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

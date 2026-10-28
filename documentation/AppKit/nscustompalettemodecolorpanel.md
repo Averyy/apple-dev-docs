@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSCustomPaletteModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Custom palette
 

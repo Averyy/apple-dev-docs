@@ -28,15 +28,15 @@ final class MutableInMemoryProvider
 
 - [Using in-memory providers](./using-in-memory-providers.md)
 
-#### Overview
+## Overview
 
 Unlike [`InMemoryProvider`](./inmemoryprovider.md), this provider allows configuration values to be modified after initialization. It maintains thread-safe access to values and supports real-time notifications when values change, making it ideal for dynamic configuration scenarios.
 
-#### Change notifications
+## Change notifications
 
 The provider supports watching for configuration changes through the standard [`ConfigProvider`](./configprovider.md) watching methods. When a value changes, all active watchers are automatically notified with the new value.
 
-#### Use cases
+## Use cases
 
 The mutable in-memory provider is particularly useful for:
 
@@ -45,11 +45,11 @@ The mutable in-memory provider is particularly useful for:
 - **Testing scenarios**: Simulating configuration changes in unit tests
 - **Feature flags**: Runtime toggles that can be modified programmatically
 
-#### Performance characteristics
+## Performance characteristics
 
 This provider offers O(1) lookup time with minimal synchronization overhead. Value updates are atomic and efficiently notify only the relevant watchers.
 
-#### Usage
+## Usage
 
 ```swift
 // Create provider with initial values

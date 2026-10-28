@@ -21,11 +21,11 @@ Returns a point that results from applying the specified rotation.
 static SPPoint3D SPPoint3DRotate(SPPoint3D point, SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 The point that results from applying the specified rotation.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling [`rotated(by:around:)`](./point3d/rotated%28by,around%29-4tmfq.md) with a zero vector for the pivot.
 

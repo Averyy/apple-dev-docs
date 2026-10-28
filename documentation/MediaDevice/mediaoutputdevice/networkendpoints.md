@@ -17,7 +17,7 @@ The network endpoints for this device group.
 let networkEndpoints: [NWEndpoint]
 ```
 
-#### Discussion
+## Discussion
 
 Typically obtained from `NWBrowser` during network service discovery.
 

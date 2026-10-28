@@ -27,7 +27,7 @@ case reliable
 GKSendDataReliable
 ```
 
-#### Discussion
+## Discussion
 
 Reliable transmissions are delivered in the order they were sent. Use this when you need to guarantee delivery.
 

@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, shouldSetSpellingState value: Int
 - (NSInteger) textView:(NSTextView *) textView shouldSetSpellingState:(NSInteger) value range:(NSRange) affectedCharRange;
 ```
 
-#### Return Value
+## Return Value
 
 The actual spelling state to set.
 
-#### Discussion
+## Discussion
 
 Delegate only. Allows delegate to control the setting of spelling and grammar indicators.
 

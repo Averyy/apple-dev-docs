@@ -25,7 +25,7 @@ var mipmapLevelCount: Int { get }
 @property (readonly) NSUInteger mipmapLevelCount;
 ```
 
-#### Discussion
+## Discussion
 
 For a buffer-backed or multisample texture, the value is `1`.
 

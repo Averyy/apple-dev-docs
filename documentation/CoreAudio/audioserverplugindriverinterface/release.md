@@ -19,11 +19,11 @@
 unsigned int (*)(void *) Release;
 ```
 
-#### Return Value
+## Return Value
 
 The resulting reference count after the reference has been removed.
 
-#### Discussion
+## Discussion
 
 The IUnknown method for releasing a reference to a CFPlugIn type.
 

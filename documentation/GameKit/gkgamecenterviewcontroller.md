@@ -43,7 +43,7 @@ class GKGameCenterViewController
 - [Adding an access point to your game](./adding-an-access-point-to-your-game.md)
 - [Displaying the Game Center dashboard](./displaying-the-game-center-dashboard.md)
 
-#### Overview
+## Overview
 
 This view controller presents the dashboard from which players can browse and manage their Game Center data. You can present the dashboard in a specific state from which players can navigate to other areas, including their profile. Your game should pause other activities before presenting the dashboard.
 

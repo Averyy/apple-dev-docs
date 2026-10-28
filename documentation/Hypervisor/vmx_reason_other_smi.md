@@ -19,7 +19,7 @@ var VMX_REASON_OTHER_SMI: Int { get }
 VMX_REASON_OTHER_SMI
 ```
 
-#### Discussion
+## Discussion
 
 An SMI arrived and caused an SMM VM exit but not immediately after retirement of an I/O instruction.
 

@@ -17,7 +17,7 @@ Represents the valid lengths for an authorization code.
 struct CodeLength
 ```
 
-#### Overview
+## Overview
 
 Use one of the provided static properties to specify the length of an authorization code.
 

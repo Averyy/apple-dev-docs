@@ -21,11 +21,11 @@ Returns the elements of the sequence, sorted using the given predicate as the co
 func sorted(by areInIncreasingOrder: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]
 ```
 
-#### Return Value
+## Return Value
 
 A sorted array of the sequence’s elements.
 
-#### Discussion
+## Discussion
 
 When you want to sort a sequence of elements that don’t conform to the `Comparable` protocol, pass a predicate to this method that returns `true` when the first element should be ordered before the second. The elements of the resulting array are ordered according to the given predicate.
 

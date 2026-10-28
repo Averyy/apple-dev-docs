@@ -22,7 +22,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, animation
 - (id<UIViewControllerAnimatedTransitioning>) tabBarController:(UITabBarController *) tabBarController animationControllerForTransitionFromViewController:(UIViewController *) fromVC toViewController:(UIViewController *) toVC;
 ```
 
-#### Return Value
+## Return Value
 
 The [`UIViewControllerAnimatedTransitioning`](../uiviewcontrolleranimatedtransitioning.md) delegate object responsible for managing the tab bar view controller transition animation.
 

@@ -15,7 +15,7 @@ Display user interface that enables a person to view and interact with their hea
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 HealthKitUI defines user interface for the [HealthKit](../HealthKit/HealthKit.md) framework.
 

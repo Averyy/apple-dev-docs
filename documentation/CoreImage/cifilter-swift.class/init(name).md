@@ -24,11 +24,11 @@ init?(name: String)
 + (CIFilter *) filterWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilter`](../cifilter-swift.class.md) object whose input values are undefined.
 
-#### Discussion
+## Discussion
 
 In macOS, after creating a filter with this method you must call [`setDefaults()`](./setdefaults%28%29.md) or set parameters individually by calling [`setValue(_:forKey:)`](../../ObjectiveC/nsobject-swift.class/setvalue%28_,forkey%29.md). In iOS, the filter’s parameters are automatically set to default values.
 

@@ -25,11 +25,11 @@ class func readingIntent(with url: URL, options: NSFileCoordinator.ReadingOption
 + (instancetype) readingIntentWithURL:(NSURL *) url options:(NSFileCoordinatorReadingOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated and configured file access intent object.
 
-#### Discussion
+## Discussion
 
 When calling a file coordinator’s [`coordinate(with:queue:byAccessor:)`](../nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md) method, you pass an array of file access intent objects. Each intent object represents a specific read or write operation on a single document or directory. Use `readingIntentWithURL:options:` to create an intent object suitable for reading.
 

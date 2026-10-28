@@ -24,7 +24,7 @@ class MPSGraphPooling2DOpDescriptor
 @interface MPSGraphPooling2DOpDescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor with the following methods:
 

@@ -16,11 +16,11 @@ Returns an affine transform for converting between normalized image coordinates 
 - (CGAffineTransform) displayTransformForOrientation:(UIInterfaceOrientation) orientation viewportSize:(CGSize) viewportSize;
 ```
 
-#### Return Value
+## Return Value
 
 A transform matrix that converts from normalized image coordinates in the captured image to normalized image coordinates that account for the specified parameters.
 
-#### Discussion
+## Discussion
 
 Normalized image coordinates range from `(0,0)` in the upper left corner of the image to `(1,1)` in the lower right corner.
 

@@ -17,7 +17,7 @@ Enables or disables the swap rectangle in the context’s drawable object.
 static const NSOpenGLContextParameter NSOpenGLCPSwapRectangleEnable;
 ```
 
-#### Discussion
+## Discussion
 
 If enabled, the area that is affected by the [`flushBuffer()`](./nsopenglcontext/flushbuffer%28%29.md) method is restricted to a rectangle specified by the values of `NSOpenGLCPSwapRectangle`. However, the portion of the drawable object that lies outside of the swap rectangle may still be flushed to the screen by a visibility change or other user interface action.
 

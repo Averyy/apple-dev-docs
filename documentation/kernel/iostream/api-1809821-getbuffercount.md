@@ -10,7 +10,7 @@ virtual IOItemCount getBufferCount(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if all the buffers were successfully removed. Buffers cannot be removed while the stream is open, as this will change the buffer IDs of existing buffers.
 

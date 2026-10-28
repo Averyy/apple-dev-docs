@@ -5,11 +5,11 @@
 
 Use your machine learning model to focus on a specific subject.
 
-#### Overview
+## Overview
 
 You can use your own custom machine learning model, also known as *inference*. This allows DockKit to track a custom subject, such as a dog or a cat. Once you’ve applied your machine learning model on a set of video frames, use DockKit to generate and provide tracking vectors.
 
-#### Obtain video images
+## Obtain video images
 
 Begin by obtaining images from the video capture source.
 
@@ -19,7 +19,7 @@ captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer,
 let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
 ```
 
-#### Provide observations
+## Provide observations
 
 Once you’ve passed your video frames to your custom machine learning model, supply these observations to the accessory using [`track(_:cameraInformation:)`](./dockaccessory/track%28_,camerainformation%29-4yl9b.md).
 

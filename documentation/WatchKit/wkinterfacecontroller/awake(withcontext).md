@@ -24,7 +24,7 @@ func awake(withContext context: Any?)
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method at initialization time to provide the interface controller with any relevant contextual data from a previous interface controller. Use this method to finish the initialization of your interface. For example, you might use this method to load data and to set the values for labels, images, tables, and other interface objects in your storyboard scene. If context data is available, use it to assist in the configuration of the new interface controller.
 

@@ -23,7 +23,7 @@ var attenuationDurations: [NSNumber] { get }
 @property (nonatomic, copy, readonly) NSArray<NSNumber *> * attenuationDurations;
 ```
 
-#### Discussion
+## Discussion
 
 An array that contains the duration, in seconds, at certain attenuations, using an aggregated maximum exposures of 30 minutes.
 

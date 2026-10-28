@@ -9,9 +9,9 @@ Find directions by specific criteria.
 **Availability**:
 - Apple Maps Server API 1.2+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

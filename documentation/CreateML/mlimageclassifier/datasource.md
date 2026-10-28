@@ -23,7 +23,7 @@ enum DataSource
 
 - [Creating an Image Classifier Model](../creating-an-image-classifier-model.md)
 
-#### Overview
+## Overview
 
 Use a data source to provide training or testing data to an image classifier.
 

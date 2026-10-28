@@ -37,7 +37,7 @@ var personHandle: INPersonHandle? { get }
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 The value of this property is an object that uniquely identifies the user to your app. For example, you might provide a handle containing an email address, a phone number, or an account name associated with the user. Siri might show this information when asking the user to choose from among several people with similar names.
 

@@ -21,11 +21,11 @@ func accessibilityActionDescription(_ action: NSAccessibility.Action) -> String?
 - (NSString *) accessibilityActionDescription:(NSAccessibilityActionName) action;
 ```
 
-#### Return Value
+## Return Value
 
 The description of the specified action, in a localized string.
 
-#### Discussion
+## Discussion
 
 User interface classes must implement this method to return descriptions for all actions returned from [`accessibilityActionNames()`](./accessibilityactionnames%28%29.md). A button, for example, might return the string “press” for the `NSAccessibilityPressAction` action. Subclasses should invoke the superclass’s implementation, if it exists, to obtain the descriptions of any inherited actions.
 

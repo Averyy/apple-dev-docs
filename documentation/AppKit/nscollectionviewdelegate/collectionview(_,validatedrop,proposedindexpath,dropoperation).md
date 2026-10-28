@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, validateDrop dr
 - (NSDragOperation) collectionView:(NSCollectionView *) collectionView validateDrop:(id<NSDraggingInfo>) draggingInfo proposedIndexPath:(NSIndexPath **) proposedDropIndexPath dropOperation:(NSCollectionViewDropOperation *) proposedDropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates which dragging operation to perform. Return [`NSDragOperationNone`](../nsdragoperation/nsdragoperationnone.md) to disallow a drop at the proposed location.
 
-#### Discussion
+## Discussion
 
 Although implementation of this method is optional, you must implement it to support drops onto the associated collection view. You must also call the collection view’s [`registerForDraggedTypes(_:)`](../nsview/registerfordraggedtypes%28_%29.md) method to register the types of drops it supports. If you do not perform both of these actions, the collection view does not accept drops.
 

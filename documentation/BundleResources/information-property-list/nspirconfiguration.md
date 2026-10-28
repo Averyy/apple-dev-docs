@@ -16,7 +16,7 @@ The URLs used for a PIR server to support a URL filter or Live Caller ID lookup 
 - **Name**: `NSPIRConfiguration`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Use this key to declare how your extension uses a Private Information Retrieval (PIR) server. You use a different information property list depending on the app type:
 

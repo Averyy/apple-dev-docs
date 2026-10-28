@@ -12,7 +12,7 @@ virtual IOReturn EnableRemoteWake(
  boolenable);
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess if the request is completed successfully, otherwise returns the result of the Device Request to set the feature.
 

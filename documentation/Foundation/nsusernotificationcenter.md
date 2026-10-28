@@ -21,7 +21,7 @@ class NSUserNotificationCenter
 @interface NSUserNotificationCenter : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a user notification’s delivery date has been reached, or it’s manually delivered, the notification center may display the notification to the user. The user notification center reserves the right to decide if a delivered user notification is presented to the user. For example, it may suppress the notification if the application is already frontmost (the delegate can override this action). The application can check the result of this decision by examining the [`isPresented`](./nsusernotification/ispresented.md) property of a delivered user notification.
 
@@ -37,7 +37,7 @@ The [`NSUserNotificationCenterDelegate`](./nsusernotificationcenterdelegate.md) 
 
 > ❗ **Important**:  Many of the NSUserNotificationCenter class’s methods involve talking to a server process, so calling them repeatedly can have a negative effect on performance.
 
-##### Threading Information
+### Threading Information
 
 The `NSUserNotificationCenter` class and the [`NSUserNotification`](./nsusernotification.md) class are both thread safe.
 

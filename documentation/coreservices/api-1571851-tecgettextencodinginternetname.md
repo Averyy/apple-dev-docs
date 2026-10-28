@@ -15,7 +15,7 @@ Returns the Internet encoding name that corresponds toa Mac OS text encoding.
 OSStatus TECGetTextEncodingInternetName(TextEncoding textEncoding, Str255 encodingName);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

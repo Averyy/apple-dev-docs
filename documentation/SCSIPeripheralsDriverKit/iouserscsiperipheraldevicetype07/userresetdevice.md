@@ -15,7 +15,7 @@ Performs a bus reset of the external drive.
 virtual kern_return_t UserResetDevice(SCSIServiceResponse *response);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of the bus reset. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 

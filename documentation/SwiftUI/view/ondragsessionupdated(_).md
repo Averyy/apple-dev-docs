@@ -20,7 +20,7 @@ nonisolated
 func onDragSessionUpdated(_ onUpdate: @escaping (DragSession) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Below is an example of a view that displays a book and supports dragging to copy, move, and delete. If the session ends with moving or deleting the item, in the `onUpdate` closure, the view lets the model layer know that the book should be deleted from the source.
 

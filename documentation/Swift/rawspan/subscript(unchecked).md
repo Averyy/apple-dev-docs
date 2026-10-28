@@ -21,7 +21,7 @@ Accesses the byte at the specified offset in the span.
 subscript(unchecked byteOffset: Int) -> UInt8 { get }
 ```
 
-#### Overview
+## Overview
 
 This subscript does not validate `byteOffset`. Using this subscript with an invalid `byteOffset` results in undefined behaviour.
 

@@ -23,7 +23,7 @@ class NEFilterProvider
 @interface NEFilterProvider : NEProvider
 ```
 
-#### Overview
+## Overview
 
 A Network Content Filter is made up of two Filter Provider extensions:
 
@@ -41,11 +41,11 @@ The Filter Control Provider extension is implemented by creating a custom subcla
 
 > ❗ **Important**:  To use the [`NEFilterProvider`](./nefilterprovider.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [Configure network extensions](http://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NEFilterProvider` should not be subclassed directly. Instead, you should create subclasses of `NEFilterProvider’s` subclasses and override the following methods:
 
-###### Methods to Override
+#### Methods to Override
 
 - [`startFilter(completionHandler:)`](./nefilterprovider/startfilter%28completionhandler%29.md)
 - [`stopFilter(with:completionHandler:)`](./nefilterprovider/stopfilter%28with,completionhandler%29.md)

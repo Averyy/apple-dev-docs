@@ -24,11 +24,11 @@ class func siriLanguageCode() -> String
 + (NSString *) siriLanguageCode;
 ```
 
-#### Return Value
+## Return Value
 
 The locale ID that identifies the language and any optional region or script information. Examples of locale IDs are “en”, “en_GB”, “zh-Hans”, and “zh-Hans_HK”. For more information about the structure of locale IDs, see [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i).
 
-#### Discussion
+## Discussion
 
 This property is for informational purposes only. Siri’s input language can be different than the language displayed on the user’s device. However, your app and Intents extension should always specify content using the user’s preferred language, as indicated by the language settings of the current device.
 

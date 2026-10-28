@@ -21,11 +21,11 @@ Prepares and plays multiple audio resources for synchronized playback at a speci
 @MainActor static func playAudio(_ resourcesAndEntities: [(AudioResource, Entity)], at time: AVAudioTime) throws -> AudioPlaybackGroupController
 ```
 
-#### Return Value
+## Return Value
 
 An `AudioPlaybackGroupController` for the synchronized group.
 
-#### Discussion
+## Discussion
 
 This method creates an `AudioPlaybackGroupController` that coordinates playback across multiple entity/resource pairs. All audio sources in the group will be synchronized to sample-accurate precision. After the controller is created, the [`play(at:)`](../audioplaybackgroupcontroller/play%28at%29.md) method of the controller that it returns is immediately called.
 
@@ -37,7 +37,7 @@ The returned controller’s [`isPlaying`](../audioplaybackgroupcontroller/isplay
 
 > **Throws**: An error if the audio preparation fails.
 
-#### Usage Notes
+## Usage Notes
 
 - The same entity can be used with multiple resources in the same group
 - Entities can participate in multiple groups simultaneously

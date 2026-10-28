@@ -17,7 +17,7 @@ Asks the delegate if an element is currently focused, according to the internal 
 - (BOOL) indirectScribbleInteraction:(UIIndirectScribbleInteraction *) interaction isElementFocused:(UIScribbleElementIdentifier) elementIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the element is the one currently focused.
 

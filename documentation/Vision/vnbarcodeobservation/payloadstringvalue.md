@@ -24,7 +24,7 @@ var payloadStringValue: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * payloadStringValue;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the symbology or the payload data itself, a string representation of the payload may not be available.
 

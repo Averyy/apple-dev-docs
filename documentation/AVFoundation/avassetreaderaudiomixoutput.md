@@ -24,7 +24,7 @@ class AVAssetReaderAudioMixOutput
 @interface AVAssetReaderAudioMixOutput : AVAssetReaderOutput
 ```
 
-#### Overview
+## Overview
 
 Read audio data that you mix from one or more asset tracks by adding an audio mix output to an asset reader. You can read the samples in their stored format or you can convert them to an alternative format.
 

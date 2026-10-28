@@ -24,11 +24,11 @@ func grade(forFact fact: any NSObjectProtocol) -> Float
 - (float) gradeForFact:(id<NSObject>) fact;
 ```
 
-#### Return Value
+## Return Value
 
 A value in the range [0.0, 1.0] representing the fact’s membership grade.
 
-#### Discussion
+## Discussion
 
 Each fact has a membership grade ranging from zero to 1.0, representing variable levels of truth, strength, or confidence for use in fuzzy logic. Use the [`GKRuleSystem`](../gkrulesystem.md) methods listed in Asserting and Retracting Facts to add or remove facts and set their membership grade—asserting a fact increases its grade, adding it to the array if not present; retracting a set reduces its grade, removing it from the array if its grade drops to zero.
 

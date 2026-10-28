@@ -28,11 +28,11 @@ func predicateForIncompleteReminders(withDueDateStarting startDate: Date?, endin
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 A predicate to use when calling [`fetchReminders(matching:completion:)`](./fetchreminders%28matching,completion%29.md).
 
-#### Discussion
+## Discussion
 
 Pass `nil` for both `startDate` and `endDate` to get all incomplete reminders in the specified calendars.
 

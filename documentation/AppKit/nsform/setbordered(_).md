@@ -21,7 +21,7 @@ func setBordered(_ flag: Bool)
 - (void) setBordered:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The border is drawn as a thin line around the editable text field. An entry can have a border or a bezel, but not both.
 

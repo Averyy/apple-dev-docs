@@ -24,11 +24,11 @@ class func `default`() -> PHImageManager
 + (PHImageManager *) defaultManager;
 ```
 
-#### Return Value
+## Return Value
 
 The image manager.
 
-#### Discussion
+## Discussion
 
 This method always returns the same image manager object, which is shared for all uses in your app.
 

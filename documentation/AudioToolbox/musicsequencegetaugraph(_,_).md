@@ -24,11 +24,11 @@ func MusicSequenceGetAUGraph(_ inSequence: MusicSequence, _ outGraph: UnsafeMuta
 extern OSStatus MusicSequenceGetAUGraph(MusicSequence inSequence, AUGraph*outGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 If no audio processing graph is already associated with the music sequence, this function creates a default graph. The default graph contains an Instrument unit (of type DLSMusicDevice) and a dynamic compressor unit (of type DynamicCompressor). In this case, all music tracks in the music sequence have their outputs directed to the Instrument unit.
 

@@ -30,7 +30,7 @@ var guestProvidedSpecialRequestText: String? { get set }
 @property (atomic, copy, nullable) NSString * guestProvidedSpecialRequestText;
 ```
 
-#### Discussion
+## Discussion
 
 Users can include special requests when booking a reservation. For example, the user might use request a non-smoking table or enumerate any dietary restrictions. If the user provides additional requests, this field contains that information.
 

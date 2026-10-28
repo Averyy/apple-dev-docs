@@ -18,7 +18,7 @@ The duration of the frame.
 var frameDuration: CMTime? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The key for this property is [`streamFrameDuration`](../cmioextensionproperty/streamframeduration.md).
 

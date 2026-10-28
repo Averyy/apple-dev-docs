@@ -24,7 +24,7 @@ var lineLayoutPadding: CGFloat { get set }
 @property CGFloat lineLayoutPadding;
 ```
 
-#### Discussion
+## Discussion
 
 The layout and rendering bounds X origin is inset by the padding value. This affects the relationship between the text attachment bounds and `NSLayoutManager` glyph metrics methods [`location(forGlyphAt:)`](../nslayoutmanager/location%28forglyphat%29.md) and [`attachmentSize(forGlyphAt:)`](../nslayoutmanager/attachmentsize%28forglyphat%29.md). The default value is `0.0`.
 

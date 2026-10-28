@@ -25,7 +25,7 @@ class NSMetadataItem
 @interface NSMetadataItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 Metadata items provide a simple interface to retrieve the available attribute names and values.
 

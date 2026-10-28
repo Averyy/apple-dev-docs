@@ -6,7 +6,7 @@
 
 An atom that specifies changes to the appearance of a subtitle.
 
-#### Overview
+## Overview
 
 This extension specifies changes to the appearance of a subtitle. The style information in the subtitle sample description provides the default style for the subtitle text. This extension allows you to override the default style for different parts, or all, of the subtitle text.
 

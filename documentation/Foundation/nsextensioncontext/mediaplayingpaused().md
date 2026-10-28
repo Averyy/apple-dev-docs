@@ -23,7 +23,7 @@ func mediaPlayingPaused()
 - (void) mediaPlayingPaused;
 ```
 
-#### Discussion
+## Discussion
 
 In your Notification Content app extension code, call this method when you programmatically stop playing a media file. When called, the system updates the appearance of the media playback button displayed in the notification content extension’s interface. For more information about implementing a notification content extension, see [`UNNotificationContentExtension`](../../UserNotificationsUI/unnotificationcontentextension.md).
 

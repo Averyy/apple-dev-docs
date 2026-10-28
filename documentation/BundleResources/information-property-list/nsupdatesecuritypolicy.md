@@ -15,7 +15,7 @@ A dictionary that identifies which apps or installer packages the operating syst
 - **Name**: `NSUpdateSecurityPolicy`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The `NSUpdateSecurityPolicy` property list key describes a security policy dictionary that defines the processes and packages that the system allows to modify an app’s bundle. You specify these by Team ID (any package signed by that team), or Team IDs and signing identifiers (to identify a specific executable) signed by a team.
 
@@ -28,7 +28,7 @@ The `NSUpdateSecurityPolicy` key is a dictionary you add to your app’s `info.p
 - `AllowPackages`: An array of Team IDs. The operating system allows any installer package signed by any Team ID in this list to write content into this app’s bundle.
 - `AllowProcesses`: A dictionary that maps Team IDs to an array of signing (bundle) IDs. The operating system allows an app (process) with the matching bundle ID that’s signed by the specified Team ID to write content into this app’s bundle.
 
-##### Add the policy dictionary to your app’s information property list
+### Add the policy dictionary to your app’s information property list
 
 To add the `NSUpdateSecurityPolicy` key to your app’s `info.plist` file, follow these steps:
 

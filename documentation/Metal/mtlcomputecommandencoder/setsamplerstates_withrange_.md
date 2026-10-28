@@ -20,7 +20,7 @@ Encodes multiple texture samplers, allowing compute kernels to use them for samp
 - (void) setSamplerStates:(id<MTLSamplerState> const[]) samplers withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This method requires that the number of instances in `samplers` be the same as the length of `range`.
 

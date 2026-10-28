@@ -19,7 +19,7 @@ Creates a color object using the named asset that’s compatible with the specif
 init?(named name: String, inBundle bundle: Bundle?, compatibleWithTraitCollection traitCollection: UITraitCollection?)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized color object. The returned object uses the color space specified for the asset.
 

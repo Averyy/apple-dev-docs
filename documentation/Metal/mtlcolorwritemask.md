@@ -24,7 +24,7 @@ struct MTLColorWriteMask
 enum MTLColorWriteMask : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The values [`red`](./mtlcolorwritemask/red.md), [`green`](./mtlcolorwritemask/green.md), [`blue`](./mtlcolorwritemask/blue.md), and [`alpha`](./mtlcolorwritemask/alpha.md) select one color channel each, and they can be bitwise combined.
 

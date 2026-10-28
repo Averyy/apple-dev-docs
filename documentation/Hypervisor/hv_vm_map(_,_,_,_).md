@@ -19,11 +19,11 @@ func hv_vm_map(_ addr: UnsafeMutableRawPointer, _ ipa: hv_ipa_t, _ size: Int, _ 
 extern hv_return_t hv_vm_map(void *addr, hv_ipa_t ipa, size_t size, hv_memory_flags_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 The host memory must encompass a single VM region, typically allocated with `mmap` or [`mach_vm_allocate`](../kernel/api-1402376-mach_vm_allocate.md) instead of `malloc`.
 

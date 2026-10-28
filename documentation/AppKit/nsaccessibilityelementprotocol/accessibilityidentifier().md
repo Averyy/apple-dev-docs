@@ -19,11 +19,11 @@ optional func accessibilityIdentifier() -> String
 - (NSString *) accessibilityIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the unique ID for the accessibility element. It is often used in automated testing.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityIdentifier`](../nsaccessibility-c.protocol/accessibilityidentifier.md) property.
 

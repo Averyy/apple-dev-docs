@@ -22,11 +22,11 @@ A closure that receives a message from a client and optionally provides a reply.
 func handleIncomingRequest(_: Self.Input) -> Self.Output?
 ```
 
-#### Return Value
+## Return Value
 
 A response message, if any, to send back to the client; otherwise [`nil`](../../ObjectiveC/nil-227m0.md).
 
-#### Discussion
+## Discussion
 
 If the closure returns [`nil`](../../ObjectiveC/nil-227m0.md), you can still send use [`send(message:)`](../xpcsession/send%28message%29.md) to send an asynchronous reply after handling the message.
 

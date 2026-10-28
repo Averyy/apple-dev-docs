@@ -5,7 +5,7 @@
 
 Four bytes that indicate a type of data that QuickTime supports.
 
-#### Overview
+## Overview
 
 The type indicator is formed of four bytes split between two fields. The first byte indicates the set of types from which the type is drawn. The second through fourth byte forms the second field and its interpretation depends upon the value in the first field.
 

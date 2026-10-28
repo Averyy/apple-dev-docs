@@ -26,7 +26,7 @@ static func makeTrainingSession(trainingData: DataFrame, targetColumn: String, f
 static func makeTrainingSession(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLLogisticRegressionClassifier.ModelParameters = .init(), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLTrainingSession<MLLogisticRegressionClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 A `MLTrainingSession` that can be used to start or resume training.
 

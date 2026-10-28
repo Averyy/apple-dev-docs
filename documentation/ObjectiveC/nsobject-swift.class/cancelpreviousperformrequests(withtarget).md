@@ -25,7 +25,7 @@ class func cancelPreviousPerformRequests(withTarget aTarget: Any)
 + (void) cancelPreviousPerformRequestsWithTarget:(id) aTarget;
 ```
 
-#### Discussion
+## Discussion
 
 All perform requests having the same target `aTarget` are canceled. This method removes perform requests only in the current run loop, not all run loops.
 

@@ -25,7 +25,7 @@ optional func privacyBehavior(for complication: CLKComplication) async -> CLKCom
 - (void) getPrivacyBehaviorForComplication:(CLKComplication *) complication withHandler:(void (^)(CLKComplicationPrivacyBehavior behavior)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 ClockKit calls this method to determine how to display your complication data when the user’s Apple Watch is locked. If your complication contains any personal information for the user, pass the [`CLKComplicationPrivacyBehavior.hideOnLockScreen`](../clkcomplicationprivacybehavior/hideonlockscreen.md) value to the handler. For data that’s already available publicly, you may pass the [`CLKComplicationPrivacyBehavior.showOnLockScreen`](../clkcomplicationprivacybehavior/showonlockscreen.md) value to the handler to allow that data to be displayed.
 

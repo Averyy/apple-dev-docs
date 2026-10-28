@@ -20,7 +20,7 @@ nonisolated
 func listSectionIndexVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The section index shows the section index labels of sections, which are set using the `sectionIndexLabel` modifier. These are typically the letters of the alphabet, used for sorted sections.
 

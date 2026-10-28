@@ -17,7 +17,7 @@ An event type that a cloth collider publishes (before simulation update) when cl
 struct NewBodyCollisions
 ```
 
-#### Overview
+## Overview
 
 This event should be treated as having a non-escapable lifetime. Some of its data is no longer available after its lifetime has ended.
 

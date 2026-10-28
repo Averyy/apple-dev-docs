@@ -15,7 +15,7 @@ Updates the accessories being tracked by a provider.
 final func updateAccessories(_ accessories: [Accessory]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Updates are atomic: if any accessory fails to be added, the entire request fails and the provider continues tracking the original set of accessories.
 

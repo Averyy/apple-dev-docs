@@ -19,7 +19,7 @@ protocol NSAccessibilityContainsTransientUI : NSAccessibilityElementProtocol
 @protocol NSAccessibilityContainsTransientUI <NSAccessibilityElement>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol to support accessibility in a UI that changes dynamically—usually in response to mouse-hover events.
 

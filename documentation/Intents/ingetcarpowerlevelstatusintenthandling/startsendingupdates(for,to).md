@@ -22,7 +22,7 @@ optional func startSendingUpdates(for intent: INGetCarPowerLevelStatusIntent, to
 - (void) startSendingUpdatesForGetCarPowerLevelStatus:(INGetCarPowerLevelStatusIntent *) intent toObserver:(id<INGetCarPowerLevelStatusIntentResponseObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 Maps calls this method when it begins a navigation session, and you must use the observer to inform Maps of any abrupt changes in the electric vehicle’s battery charge. Store a reference to the observer, and continue providing updates until the system calls [`stopSendingUpdates(for:)`](./stopsendingupdates%28for%29.md).
 

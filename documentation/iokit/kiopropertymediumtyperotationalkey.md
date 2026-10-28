@@ -14,7 +14,7 @@
 #define kIOPropertyMediumTypeRotationalKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to indicate the medium type of the device is rotational.
 

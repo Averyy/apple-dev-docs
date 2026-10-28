@@ -15,11 +15,11 @@ Returns an object representing a deferred or asynchronous operation that resolve
 Promise<CloudKit.UserIdentity, CloudKit.CKError> whenUserSignsIn();
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.UserIdentity`](../cloudkit.useridentity.md) dictionary when the user signs in, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use the [`whenUserSignsIn`](./whenusersignsin.md) method to call a function when the user signs in.
 

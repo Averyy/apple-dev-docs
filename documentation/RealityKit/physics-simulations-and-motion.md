@@ -5,7 +5,7 @@
 
 Simulate physical interactions between entities or systems.
 
-#### Overview
+## Overview
 
 RealityKit simulates physical interactions between virtual objects in your scene, as well as between virtual objects and detected surfaces in the real world, such as floors, walls, or tabletops. On devices with a LiDAR Scanner, RealityKit can even simulate interactions between virtual objects and scanned real-world geometry.
 

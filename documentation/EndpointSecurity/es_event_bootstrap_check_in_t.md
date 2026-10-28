@@ -18,7 +18,7 @@ struct es_event_bootstrap_check_in_t
 typedef struct { ... } es_event_bootstrap_check_in_t;
 ```
 
-#### Overview
+## Overview
 
 A process called `bootstrap_check_in()` to register a named service port with launchd. Subsequent `bootstrap_look_up()` calls from other processes will resolve the registered name into a send right to this port.
 

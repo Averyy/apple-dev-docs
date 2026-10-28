@@ -19,7 +19,7 @@ var isVisible: Bool { get set }
 @property (getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to [`true`](../../Swift/true.md) to show the Media Library Browser or [`false`](../../Swift/false.md) to hide it.
 

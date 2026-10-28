@@ -20,7 +20,7 @@ typealias CGOpenGLDisplayMask = UInt32
 typedef uint32_t CGOpenGLDisplayMask;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, OpenGL can provide information about the capabilities of the hardware renderers driving a specified set of displays. A 32-bit mask is used to specify the displays—each bit in the mask represents a single display.
 

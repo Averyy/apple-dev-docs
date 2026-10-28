@@ -25,11 +25,11 @@ func CGImageMetadataTagGetType(_ tag: CGImageMetadataTag) -> CGImageMetadataType
 extern CGImageMetadataType CGImageMetadataTagGetType(CGImageMetadataTagRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 A constant that indicates the type of the value. For a list of possible return values, see [`CGImageMetadataType`](./cgimagemetadatatype.md).
 
-#### Discussion
+## Discussion
 
 To get the value itself, call [`CGImageMetadataTagCopyValue(_:)`](./cgimagemetadatatagcopyvalue%28_%29.md). Metadata tags store string, number, and Boolean values using the [`CGImageMetadataType.string`](./cgimagemetadatatype/string.md) type.
 

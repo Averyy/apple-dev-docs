@@ -15,11 +15,11 @@ Deletes a message queue.
 OSStatus MPDeleteQueue(MPQueueID queue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 After calling `MPDeleteQueue`, the specified queue ID becomes invalid, and all internal resources associated with the queue (including queued messages) are reclaimed. Any tasks waiting on the queue are unblocked and their respective  [`MPWaitOnQueue`](./api-1585762-mpwaitonqueue.md)  calls will return with the result code `kMPDeletedErr`.
 

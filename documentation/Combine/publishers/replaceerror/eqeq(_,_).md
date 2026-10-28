@@ -23,7 +23,7 @@ static func == (lhs: Publishers.ReplaceError<Upstream>, rhs: Publishers.ReplaceE
 
 Available when `Upstream` conforms to `Publisher`, `Upstream` conforms to `Equatable`, and `Upstream.Output` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the two publishers have equal upstream publishers and output elements; otherwise `false`.
 

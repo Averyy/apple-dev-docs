@@ -21,7 +21,7 @@ Returns the negative absolute value of each element in the supplied double-preci
 static func negativeAbsolute<U>(_ vector: U) -> [Double] where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code calculates the negative absolute values of the elements of an array:
 

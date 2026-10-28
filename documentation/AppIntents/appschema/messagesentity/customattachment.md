@@ -19,7 +19,7 @@ An entity schema for a custom attachment.
 var customAttachment: some AppSchemaEntity { get }
 ```
 
-#### Discussion
+## Discussion
 
 To make your app’s content available to Apple Intelligence, conform your [`AppEntity`](../../appentity.md) to a schema that describes your content to the system. If your app’s functionality aligns with the `messages` domain and its content matches the `customAttachment` schema, you can generate the properties and protocol conformance the schema requires for your app entity implementation with the `@AppEntity( .messages.customAttachment)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 

@@ -25,7 +25,7 @@ func inverse() -> Self
 - (instancetype) inverseRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A new region object whose contents include all points that are not in the current region.
 

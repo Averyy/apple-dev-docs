@@ -17,7 +17,7 @@ Matrix multiplication with addition and optional scaling.
 func addMM(_ c: some ScalarOrArray, _ a: some ScalarOrArray, _ b: some ScalarOrArray, alpha: Float = 1.0, beta: Float = 1.0, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Perform the (possibly batched) matrix multiplication of two arrays and add to the result with optional scaling factors.
 
@@ -29,7 +29,7 @@ alpha * matmul(a, b) + beta * c
 
 > **Note**: Note the ordering of the parameters
 
-##### See Also
+### See Also
 
 - [`matmul(_:_:stream:)`](./matmul%28_,_,stream%29.md)
 - [`blockMaskedMM(_:_:blockSize:maskOut:maskLHS:maskRHS:stream:)`](./blockmaskedmm%28_,_,blocksize,maskout,masklhs,maskrhs,stream%29.md)

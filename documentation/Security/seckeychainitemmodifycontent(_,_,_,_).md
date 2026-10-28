@@ -21,11 +21,11 @@ func SecKeychainItemModifyContent(_ itemRef: SecKeychainItem, _ attrList: Unsafe
 OSStatus SecKeychainItemModifyContent(SecKeychainItemRef itemRef, const SecKeychainAttributeList *attrList, UInt32 length, const void *data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The keychain item is written to the keychain’s permanent data store.
 

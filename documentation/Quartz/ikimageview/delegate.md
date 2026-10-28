@@ -20,7 +20,7 @@ unowned(unsafe) var delegate: AnyObject! { get set }
 @property (assign) id delegate;
 ```
 
-#### Discussion
+## Discussion
 
 An `IKImageView` object’s delegate is inserted in the responder chain after the image view itself and is informed of various actions by the image view through delegation messages.
 

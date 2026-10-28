@@ -21,7 +21,7 @@ An enumeration that enables qualifying apps to offer external purchases within t
 enum ExternalPurchase
 ```
 
-#### Overview
+## Overview
 
 This functionality is only available to and required by apps with the [`com.apple.developer.storekit.external-purchase`](../BundleResources/entitlements/com.apple.developer.storekit.external-purchase.md) entitlement. For more information, see:
 

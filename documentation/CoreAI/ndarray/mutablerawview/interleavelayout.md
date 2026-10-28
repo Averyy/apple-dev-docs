@@ -19,7 +19,7 @@ Returns which dimension is interleaved, and by what factor it is interleaved. Or
 var interleaveLayout: NDArray.InterleaveLayout? { get }
 ```
 
-#### Discussion
+## Discussion
 
 See [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md) for full documentation.
 

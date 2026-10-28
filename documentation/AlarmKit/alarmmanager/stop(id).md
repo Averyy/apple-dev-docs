@@ -17,7 +17,7 @@ Stops the alarm with the specified ID.
 func stop(id: Alarm.ID) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the alarm is a one-shot, meaning it doesn’t have a repeating schedule, then the system deletes the alarm. If the alarm repeats then it’s rescheduled to alert or begins counting down at the next scheduled time.
 

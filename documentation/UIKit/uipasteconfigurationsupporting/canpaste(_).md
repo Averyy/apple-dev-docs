@@ -22,7 +22,7 @@ optional func canPaste(_ itemProviders: [NSItemProvider]) -> Bool
 - (BOOL) canPasteItemProviders:(NSArray<NSItemProvider *> *) itemProviders;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the responder object can perform a paste operation using specified item providers; otherwise, [`false`](../../Swift/false.md).
 

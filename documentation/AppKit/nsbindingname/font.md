@@ -19,7 +19,7 @@ static let font: NSBindingName
 extern NSBindingName NSFontBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

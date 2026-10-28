@@ -5,7 +5,7 @@
 
 Obtain information about a point of interest that persists over its lifetime.
 
-#### Overview
+## Overview
 
 [MapKit for AppKit and UIKit](./mapkit-for-appkit-and-uikit.md), [MapKit JS](../MapKitJS/MapKitJS.md), and [Apple Maps Server API](../AppleMapsServerAPI/AppleMapsServerAPI.md) provide a way for you to store and share references to places that matter to your application: the Place ID. A Place ID is an opaque string that semantically represents references to points of interest in the world, rather than particular coordinates or addresses.
 
@@ -13,23 +13,23 @@ A Place ID is a great feature for referencing a place’s information, even afte
 
 > **Note**:  Place IDs are exempt from the storage restrictions in Section 2.5 of Attachment 6 to the [Apple Developer Program License Agreement](https://developer.apple.com/support/terms/apple-developer-program-license-agreement/).
 
-##### Obtain a Place ID
+### Obtain a Place ID
 
 You obtain a Place ID by using Geocoder Lookup, Search, Search Autocomplete, Point-of-Interest Search, or choosing a place from Maps. You can also use a Place ID as a primary key or as part of a composite key in a database, or share Place IDs with other apps.
 
 [`MKMapItem`](./mkmapitem.md) in MapKit for AppKit and UIKit, [`Place`](../MapKitJS/place.md) in MapKit JS, and [`Place`](../AppleMapsServerAPI/place.md) objects in Apple Maps Server API include Place IDs that you can read and store. Additionally, you can obtain Place IDs for specific points of interest interactively from [Place ID Lookup](https://developer.apple.com/maps/place-id-lookup/).
 
-##### Look up referenced place information
+### Look up referenced place information
 
 All MapKit platforms support using a Place ID to obtain the referenced place’s latest information, whether by issuing an [`MKMapItemRequest`](./mkmapitemrequest.md) in MapKit for AppKit and UIKit, a [`PlaceLookup`](../MapKitJS/placelookup.md) in MapKit JS, or a [`Search for places using mulitple identifiers`](../AppleMapsServerAPI/v1-place.md) request in Apple Maps Server API. These always return the most recent information for the place that the Place ID refers to, even if that information changed since you originally obtained it. You don’t have to track these changes or even update the stored Place ID.
 
 A once-valid Place ID might fail to resolve from a lookup. However, this only happens when the referred place is no longer pertinent to Apple Maps. For instance, lookup failure might occur if a place has long been closed or simply no longer exists in the world in any meaningful way.
 
-##### Display a referenced place
+### Display a referenced place
 
 Use Place IDs to display annotations with [`MKMapItemAnnotation`](./mkmapitemannotation.md) from MapKit for AppKit and UIKit or [`PlaceAnnotation`](../MapKitJS/mapkit/placeannotation.md) from MapKit JS.  You can also use Place IDs to show more detailed selection accessories, such as popups that automatically display a place’s name, address, hours, and more, with [`MKSelectionAccessory`](./mkselectionaccessory.md) from MapKit for AppKit and UIKit and [`PlaceSelectionAccessory`](../MapKitJS/placeselectionaccessory.md) from MapKit JS.
 
-##### Maintain a unique collection of places
+### Maintain a unique collection of places
 
 Although Place IDs themselves are unique, they might not uniquely refer to a place. Multiple different Place IDs might refer to the same place. Because of this, storing collections of  Place IDs, where each Place ID refers to a unique place (for example, a user’s favorite place list that shouldn’t contain the same place twice) is more complicated than simply making sure that each ID is bitwise-unique with every other ID in the set.
 

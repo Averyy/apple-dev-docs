@@ -16,7 +16,7 @@ Requires that the session peer has the specified requirement
 func setPeerRequirement(_ requirement: XPCPeerRequirement)
 ```
 
-#### Discussion
+## Discussion
 
 - requirement: The requirement the peer must have
 

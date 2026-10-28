@@ -23,11 +23,11 @@ func extensionContext(for URL: URL) -> WKWebExtensionContext?
 - (WKWebExtensionContext *) extensionContextForURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 An extension context or `nil` if no match was found.
 
-#### Discussion
+## Discussion
 
 This method is useful for determining the extension context to use when about to navigate to an extension URL. For example, you could use this method to retrieve the appropriate extension context and then use its [`webViewConfiguration`](../wkwebextensioncontext/webviewconfiguration.md) property to configure a web view for loading that URL.
 

@@ -20,7 +20,7 @@ nonisolated
 func sectionActions<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, the actions are displayed as items after the content of the section. On macOS, the actions are displayed when a user hovers over the section.
 

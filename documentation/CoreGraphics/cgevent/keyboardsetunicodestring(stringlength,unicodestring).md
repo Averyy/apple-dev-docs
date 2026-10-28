@@ -20,7 +20,7 @@ func keyboardSetUnicodeString(stringLength: Int, unicodeString: UnsafePointer<Un
 extern void CGEventKeyboardSetUnicodeString(CGEventRef event, UniCharCount stringLength, const UniChar *unicodeString);
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system translates the virtual key code in a keyboard event into a Unicode string based on the keyboard ID in the event source. This function allows you to manually override this string. Note that application frameworks may ignore the Unicode string in a keyboard event and do their own translation based on the virtual keycode and perceived event state.
 

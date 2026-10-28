@@ -24,7 +24,7 @@ func calculateHDRStats(for surface: IOSurfaceRef)
 - (void) calculateHDRStatsForIOSurface:(IOSurfaceRef) surface;
 ```
 
-#### Discussion
+## Discussion
 
 If the `IOSurface` has a Clean Aperture rectangle then only pixels within that rectangle are considered.
 

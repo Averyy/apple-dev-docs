@@ -15,11 +15,11 @@ Finds the next endpoint descriptor associated with an interface descriptor.
 const IOUSBEndpointDescriptor *IOUSBGetNextEndpointDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBInterfaceDescriptor *interfaceDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 An endpoint descriptor pointer, or `NULL` if no matching descriptor can be found.
 
-#### Discussion
+## Discussion
 
 This method uses `getNextAssociatedDescriptorWithType` to fetch the next endpoint descriptor associated with a specific interface descriptor.
 

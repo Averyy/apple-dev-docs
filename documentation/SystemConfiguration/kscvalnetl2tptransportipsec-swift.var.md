@@ -19,7 +19,7 @@ let kSCValNetL2TPTransportIPSec: CFString
 extern CFStringRef const kSCValNetL2TPTransportIPSec;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetL2TPTransport`](./kscpropnetl2tptransport-swift.var.md) key.
 

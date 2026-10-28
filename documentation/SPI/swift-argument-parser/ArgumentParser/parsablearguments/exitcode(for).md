@@ -14,14 +14,14 @@ Returns the exit code for the given error.
 ## Declaration
 
 ```swift
-static func exitCode(for error: any Error) -> ExitCode
+static func exitCode(for error: Error) -> ExitCode
 ```
 
-#### Return Value
+## Return Value
 
 The exit code for `error`.
 
-#### Discussion
+## Discussion
 
 The returned code is the same exit code that is used if `error` is passed to `exit(withError:)`.
 
@@ -32,9 +32,9 @@ The returned code is the same exit code that is used if `error` is passed to `ex
 ## See Also
 
 ### Handling Errors
-- [static func message(for: any Error) -> String](./message%28for%29.md)
+- [static func message(for: Error) -> String](./message%28for%29.md)
   Returns a brief message for the given error.
-- [static func fullMessage(for: any Error, columns: Int?) -> String](./fullmessage%28for,columns%29.md)
+- [static func fullMessage(for: Error, columns: Int?) -> String](./fullmessage%28for,columns%29.md)
   Returns a full message for the given error, including usage information, if appropriate.
 
 

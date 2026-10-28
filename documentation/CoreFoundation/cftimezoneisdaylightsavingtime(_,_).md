@@ -25,7 +25,7 @@ func CFTimeZoneIsDaylightSavingTime(_ tz: CFTimeZone!, _ at: CFAbsoluteTime) -> 
 extern Boolean CFTimeZoneIsDaylightSavingTime(CFTimeZoneRef tz, CFAbsoluteTime at);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `tz` is in daylight savings time at `at`, otherwise `false`.
 

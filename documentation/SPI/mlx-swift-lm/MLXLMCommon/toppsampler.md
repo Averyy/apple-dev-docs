@@ -17,7 +17,7 @@ Sampler that uses probability filters (`topP`, `topK`, `minP`) and `temperature`
 struct TopPSampler
 ```
 
-#### Overview
+## Overview
 
 Filters are applied in the same order as Python mlx-lm: top_p → min_p → top_k. Each filter operates on the full vocabulary in original token order, masking rejected tokens with `-inf`. This matches the composable filter chain in `mlx_lm.sample_utils.make_sampler`.
 

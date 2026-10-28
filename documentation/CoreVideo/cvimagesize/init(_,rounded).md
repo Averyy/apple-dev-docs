@@ -21,7 +21,7 @@ Convert `CGSize` to [`CVImageSize`](../cvimagesize.md) using the given rounding 
 init(_ size: CGSize, rounded rule: FloatingPointRoundingRule = .down)
 ```
 
-#### Discussion
+## Discussion
 
 The same rounding rule is applied to both height and width.
 

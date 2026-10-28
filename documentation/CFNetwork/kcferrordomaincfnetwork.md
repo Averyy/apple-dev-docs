@@ -22,7 +22,7 @@ let kCFErrorDomainCFNetwork: CFString
 extern CFStringRef const kCFErrorDomainCFNetwork;
 ```
 
-#### Discussion
+## Discussion
 
 Error domain that returns error codes specific to the CFNetwork stack.
 

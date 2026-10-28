@@ -17,7 +17,7 @@ Compute the sign and natural log of the absolute value of the determinant of a s
 static func slogdet(_ array: MLXArray, stream: StreamOrDevice = .default) -> (sign: MLXArray, logabsdet: MLXArray)
 ```
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. When the input has more than two dimensions, the sign and log-absolute-determinant are computed for each matrix in the last two dimensions.
 

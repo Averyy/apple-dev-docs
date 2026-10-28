@@ -21,7 +21,7 @@ Asynchronously loads a texture resource from a bundle with options.
 @preconcurrency convenience init(named name: String, in bundle: Bundle? = nil, options: TextureResource.CreateOptions) async throws
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit automatically creates a resource name for the texture resource based on the values of `name` and `bundle`. RealityKit uses the resource name to identify resources, and to match texture resources between networked peers. Specify a unique name for each texture resource you load or generate.
 

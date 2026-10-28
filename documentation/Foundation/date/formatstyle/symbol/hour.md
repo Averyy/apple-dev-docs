@@ -21,7 +21,7 @@ A type that specifies a format for the hour in a date format style.
 struct Hour
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Hour`](./hour.md) includes static factory variables and methods that create custom [`Date.FormatStyle.Symbol.Hour`](./hour.md) objects:
 

@@ -33,7 +33,7 @@ var inputItems: [Any] { get }
 @property (atomic, copy, readonly) NSArray * inputItems;
 ```
 
-#### Discussion
+## Discussion
 
 If the context has no input items, this array is empty.
 

@@ -27,7 +27,7 @@ func CFGregorianDateIsValid(_ gdate: CFGregorianDate, _ unitFlags: CFOptionFlags
 extern Boolean CFGregorianDateIsValid(CFGregorianDate gdate, CFOptionFlags unitFlags);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the specified fields are valid, otherwise `false`.
 

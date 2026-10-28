@@ -25,11 +25,11 @@ func sparse_elementwise_norm_double(_ A: sparse_matrix_double!, _ norm: sparse_n
 double sparse_elementwise_norm_double(sparse_matrix_double A, sparse_norm norm);
 ```
 
-#### Return Value
+## Return Value
 
 The requested norm.
 
-#### Discussion
+## Discussion
 
 This is the norm of the matrix treated as a vector, not the operator norm. Specify one of:
 
@@ -52,9 +52,9 @@ If norm is not one of the enumerated norm types, the default value is [`SPARSE_N
 - [func sparse_matrix_vector_product_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_matrix_vector_product_dense_float%28_,_,_,_,_,_,_%29.md)
   Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y*, with all operands containing single-precision values.
 - [func sparse_vector_triangular_solve_dense_double(CBLAS_TRANSPOSE, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_double%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
 - [func sparse_vector_triangular_solve_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_float%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
 - [func sparse_outer_product_dense_double(sparse_dimension, sparse_dimension, sparse_dimension, Double, UnsafePointer<Double>!, sparse_stride, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_double?>!) -> sparse_status](./sparse_outer_product_dense_double%28_,_,_,_,_,_,_,_,_%29.md)
   Computes the outer product of the dense vector *x* and the sparse vector *y*, with both operands containing double-precision values.
 - [func sparse_outer_product_dense_float(sparse_dimension, sparse_dimension, sparse_dimension, Float, UnsafePointer<Float>!, sparse_stride, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_float?>!) -> sparse_status](./sparse_outer_product_dense_float%28_,_,_,_,_,_,_,_,_%29.md)

@@ -20,7 +20,7 @@ set displayPriority(value: number);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 Maps use the display priority as a hint to determine whether to display annotations at any given time. By default, the display priority is [`Required`](../annotationdisplaypriority/required.md), which indicates the annotation always displays on the map.
 

@@ -23,7 +23,7 @@ init(_ pattern: String) throws
 
 Available when `Output` is `AnyRegexOutput`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a `Regex` instance from a regular expression that you have stored in `pattern`.
 

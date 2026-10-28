@@ -24,11 +24,11 @@ class func systemFont(ofSize fontSize: CGFloat, weight: UIFont.Weight) -> UIFont
 + (UIFont *) systemFontOfSize:(CGFloat) fontSize weight:(UIFontWeight) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size and weight.
 
-#### Discussion
+## Discussion
 
 Instead of using this method to get a font, it’s often more appropriate to use [`preferredFont(forTextStyle:)`](./preferredfont%28fortextstyle%29.md) because that method respects the user’s selected content size category.
 

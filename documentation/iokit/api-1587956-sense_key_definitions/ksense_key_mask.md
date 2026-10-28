@@ -15,7 +15,7 @@
 kSENSE_KEY_Mask = 0x0F
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use when checking the SENSE_KEY field for the SENSE_KEY value.
 

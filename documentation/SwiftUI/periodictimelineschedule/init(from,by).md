@@ -21,7 +21,7 @@ Creates a periodic update schedule.
 init(from startDate: Date, by interval: TimeInterval)
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`entries(from:mode:)`](./entries%28from,mode%29.md) method to get the sequence of dates.
 

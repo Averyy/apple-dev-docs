@@ -23,7 +23,7 @@ class var afterLowLatencyEventDispatch: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * afterLowLatencyEventDispatch;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs after [`UIEvent`](../uievent.md) and [`UIGestureRecognizer`](../uigesturerecognizer.md) handlers run for low-latency eligible events.
 

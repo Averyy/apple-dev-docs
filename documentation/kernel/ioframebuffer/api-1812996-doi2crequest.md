@@ -14,11 +14,11 @@ virtual IOReturn doI2CRequest(
  struct IOI2CRequest *request );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. If kIOReturnSuccces, the result of the transaction is returned in the requests result field.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may optionally implement this method to perform I2C bus requests on one of the buses they support. Alternatively they may implement the setDDCClock(), setDDCData(), readDDCClock(), readDDCData() methods and respond from getAttributeForConnection() to the kConnectionSupportsLLDDCSense attribute with success, in which case IOFramebuffer::doI2CRequest() will carry out a software implementation of I2C using the low level routines and conforming to the timing constraints passed in the timing parameter. Subclasses may pass timing parameters tuned for the specific bus, otherwise VESA DDC defaults will apply. @timing event Subclasses may pass timing parameters tuned for the specific bus, otherwise if NULL, VESA DDC defaults will apply.
 

@@ -25,7 +25,7 @@ var classifyingLabel: String? { get }
 @property (nonatomic, readonly, nullable) NSString * classifyingLabel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property may be `nil` if no classifying label is defined for this group.
 

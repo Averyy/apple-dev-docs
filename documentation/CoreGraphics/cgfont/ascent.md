@@ -25,7 +25,7 @@ var ascent: Int32 { get }
 extern int CGFontGetAscent(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 The ascent is the maximum distance above the baseline of glyphs in a font. The value is specified in glyph space  units.
 

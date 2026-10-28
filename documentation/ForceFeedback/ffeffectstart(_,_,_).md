@@ -20,11 +20,11 @@ func FFEffectStart(_ effectReference: FFEffectObjectReference!, _ iterations: UI
 extern HRESULT FFEffectStart(FFEffectObjectReference effectReference, UInt32 iterations, FFEffectStartFlag flags);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
@@ -40,7 +40,7 @@ FFERR_EFFECTTYPEMISMATCH
 
 FFERR_GENERIC
 
-#### Discussion
+## Discussion
 
 Not all devices support multiple iterations.
 

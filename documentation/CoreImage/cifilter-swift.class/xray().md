@@ -24,11 +24,11 @@ class func xRay() -> any CIFilter & CIXRay
 + (CIFilter<CIXRay> *) xRayFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that imitate a photo being scanned by an X-ray.
 

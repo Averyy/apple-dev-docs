@@ -13,7 +13,7 @@
 MBUF_FRAG = 0x0400
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this packet is a fragment of a larger packet.
 

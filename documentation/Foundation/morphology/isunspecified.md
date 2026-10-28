@@ -21,7 +21,7 @@ A Boolean value that indicates whether this instance specifies no particular gra
 var isUnspecified: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to having set none of the properties in this [`Morphology`](../morphology.md). This occurs when the user hasn’t specified preferences, or chose not to share them with this app. When the morphology is unspecified, inflecting a string with this morphology does nothing.
 

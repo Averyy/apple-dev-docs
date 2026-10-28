@@ -5,7 +5,7 @@
 
 Defer the system’s authorization request dialog until your app is ready.
 
-#### Overview
+## Overview
 
 If your app has an onboarding flow that includes obtaining location updates, you may want to defer the Core Location’s request for authorization from the user. You can inhibit the auto-prompting in your app by creating a [`CLServiceSession`](./clservicesession-pt7n.md) at a convenient time in your app, then iterating over its diagnostics property to determine the level of authorization the person using your app selects. The following code snippet demonstrates how to defer the prompting.
 

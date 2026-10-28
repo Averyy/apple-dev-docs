@@ -24,11 +24,11 @@ func accessibilityZoomOut(at point: CGPoint) -> Bool
 - (BOOL) accessibilityZoomOutAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if this method successfully handles zooming; otherwise, [`NO`](../no.md). By default, this method returns [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 If your element has the [`supportsZoom`](../../UIKit/uiaccessibilitytraits/supportszoom.md) trait, you need to implement this method and [`accessibilityZoomIn(at:)`](./accessibilityzoomin%28at%29.md). Use this method to zoom out from the specified point. For example, if the element allows a pinch gesture to zoom out from the view’s content, implement this method so that the VoiceOver zoom action receives the same behavior.
 

@@ -22,7 +22,7 @@ var providerConfiguration: [String : Any] { get set }
 @property (copy) NSDictionary<NSString *,id> * providerConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary’s values must only use data types supported by [`PropertyListSerialization`](../../Foundation/propertylistserialization.md); you can’t use custom types for the values.
 

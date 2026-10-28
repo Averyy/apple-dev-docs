@@ -24,7 +24,7 @@ let HKMetadataKeyGlassesPrescriptionDescription: String
 extern NSString * const HKMetadataKeyGlassesPrescriptionDescription;
 ```
 
-#### Discussion
+## Discussion
 
 If a glasses prescription was designed for a particular use, like reading or distance, use this metadata key to describe that use.
 

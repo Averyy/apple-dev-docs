@@ -25,7 +25,7 @@ case pending
 
 - [Testing Ask to Buy in Xcode](../../testing-ask-to-buy-in-xcode.md)
 
-#### Discussion
+## Discussion
 
 If a pending purchase succeeds, StoreKit delivers the resulting [`Transaction`](../../transaction.md) in the transaction [`updates`](../../transaction/updates.md).
 

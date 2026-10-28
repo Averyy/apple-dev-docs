@@ -13,7 +13,7 @@
 #define kIOOutputQueueStatsKey
 ```
 
-#### Discussion
+## Discussion
 
 Defines the name of an IONetworkData that contains an IOOutputQueueStats.
 

@@ -25,7 +25,7 @@ let CBConnectPeripheralOptionNotifyOnNotificationKey: String
 extern NSString * const CBConnectPeripheralOptionNotifyOnNotificationKey;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../Swift/true.md), the system displays an alert for all notifications received from a given peripheral while the app is suspended.
 

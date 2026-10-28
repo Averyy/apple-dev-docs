@@ -19,11 +19,11 @@ func contains(_ point: NSPoint) -> Bool
 - (BOOL) containsPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the path’s enclosed area contains the specified point; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method checks the point against the path itself and the area it encloses. When determining hits in the enclosed area, this method uses the non-zero winding rule ([`NSNonZeroWindingRule`](../nsnonzerowindingrule.md)). It does not take into account the line width used to stroke the path.
 

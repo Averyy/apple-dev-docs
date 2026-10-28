@@ -16,7 +16,7 @@ Applies a subtle tint color to the surrounding border of a Live Activity that ap
 func keylineTint(_ color: Color?) -> DynamicIsland
 ```
 
-#### Return Value
+## Return Value
 
 The configuration object for the Dynamic Island with the specified keyline tint color.
 

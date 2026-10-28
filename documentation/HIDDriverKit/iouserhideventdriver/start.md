@@ -16,11 +16,11 @@ Starts the current event driver and associates it with the specified provider ob
 virtual kern_return_t Start(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 After successfully matching the specified provider to your event driver, the system instantiates your driver object and calls this method. Use this method to configure your custom data structures and any associated hardware. You might also store a reference to the provider object for later use. After you configure your event driver, call the [`RegisterService`](../../DriverKit/ioservice/registerservice.md) method to let the system know that your driver is running.
 

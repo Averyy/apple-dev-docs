@@ -21,7 +21,7 @@ var hostWindow: NSWindow! { get set }
 @property (nonatomic, strong) NSWindow * hostWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Your application should only use this if a web view is going to be removed from its window temporarily, and you want the web view to continue operating (for example, you don’t want to interrupt a load in progress). Since the receiver maintains a copy of `hostWindow`, it is your responsibility to set the host window to `nil` before closing the window to avoid consuming excess memory.
 

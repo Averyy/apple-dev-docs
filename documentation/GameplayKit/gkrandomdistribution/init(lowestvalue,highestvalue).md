@@ -24,11 +24,11 @@ convenience init(lowestValue lowestInclusive: Int, highestValue highestInclusive
 + (instancetype) distributionWithLowestValue:(NSInteger) lowestInclusive highestValue:(NSInteger) highestInclusive;
 ```
 
-#### Return Value
+## Return Value
 
 A new random distribution.
 
-#### Discussion
+## Discussion
 
 Creating a random source with this method is equivalent to calling the [`init(randomSource:lowestValue:highestValue:)`](./init%28randomsource,lowestvalue,highestvalue%29.md) initializer and passing a new instance of the [`GKARC4RandomSource`](../gkarc4randomsource.md) class for the `source` parameter. Because the newly created distribution uses its own [`GKRandomSource`](../gkrandomsource.md) instance, the random behavior of the distribution is independent from that of other randomizers.
 

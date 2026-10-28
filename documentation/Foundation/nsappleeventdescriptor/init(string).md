@@ -20,7 +20,7 @@ init(string: String)
 + (NSAppleEventDescriptor *) descriptorWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor that contains the text from the specified string, or `nil` if an error occurs.
 

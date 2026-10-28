@@ -22,7 +22,7 @@ func cacheStatus(parameters: GenerateParameters?) throws -> KVCacheStatus
 
 - [KV Cache Quantization](../kv-cache-quantization.md)
 
-#### Discussion
+## Discussion
 
 Use this from [`ModelContainer`](../modelcontainer.md) / [`ChatSession`](../chatsession.md) (or directly on the model) to inspect topology, requested capacity, and strategy compatibility without allocating or casting probe caches in application code.
 

@@ -15,13 +15,13 @@ The payload that configures lights-out management (LOM) settings.
 object LightsOutManagementLOM
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.lom` as the payload type.
 
 You can configure a compatible macOS device to be both a controller and a device. Include the UUID of the certificate in both `DeviceCertificateUUID` and `ControllerCertificateUUID` properties.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ You can configure a compatible macOS device to be both a controller and a device
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

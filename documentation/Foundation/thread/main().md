@@ -25,7 +25,7 @@ func main()
 - (void) main;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method takes the target and selector used to initialize the receiver and invokes the selector on the specified target. If you subclass `NSThread`, you can override this method and use it to implement the main body of your thread instead. If you do so, you do not need to invoke `super`.
 

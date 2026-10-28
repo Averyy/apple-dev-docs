@@ -22,7 +22,7 @@ static var storageModeManaged: MTLResourceOptions { get }
 MTLResourceStorageModeManaged
 ```
 
-#### Discussion
+## Discussion
 
 On Intel-based Mac computers, this is the default storage mode for [`MTLTexture`](../mtltexture.md) objects. In iOS and tvOS, the managed storage mode isn’t available. With managed storage, you synchronize changes between the CPU and GPU manually. For instructions and examples of resource synchronization, see [Synchronizing a managed resource in macOS](../synchronizing-a-managed-resource-in-macos.md).
 

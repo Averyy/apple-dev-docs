@@ -25,7 +25,7 @@ optional func archiver(_ archiver: NSKeyedArchiver, willReplace object: Any?, wi
 - (void) archiver:(NSKeyedArchiver *) archiver willReplaceObject:(id) object withObject:(id) newObject;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called even when the delegate itself is doing, or has done, the substitution. The delegate may use this method if it is keeping track of the encoded or decoded objects.
 

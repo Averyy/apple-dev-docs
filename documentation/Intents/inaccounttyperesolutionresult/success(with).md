@@ -23,11 +23,11 @@ class func success(with resolvedAccountType: INAccountType) -> Self
 + (instancetype) successWithResolvedAccountType:(INAccountType) resolvedAccountType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INAccountTypeResolutionResult`](../inaccounttyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve the account successfully to a recognizable value in your app.
 

@@ -18,7 +18,7 @@ Assigns or clears the transform buffer for GPU instancing.
 final func setInstanceTransforms(_ instanceTransforms: LowLevelInstanceTransformResource?) throws(LowLevelRenderContextError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if `instanceTransforms` is incompatible with this instance.
 

@@ -18,7 +18,7 @@ Creates an instance of a translation response.
 init(sourceLanguage: Locale.Language, targetLanguage: Locale.Language, sourceText: String, targetText: String, clientIdentifier: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 You don’t normally use this initializer directly. Instead, let the translation functions create instances of this type for you. Use this initializer when you want to create sample response for a test, for example in a SwiftUI preview.
 

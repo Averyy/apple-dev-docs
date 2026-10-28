@@ -10,7 +10,7 @@ Build a simple neural network and train it to recognize randomly generated numbe
 - macOS 12.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 This sample code project uses the Basic Neural Network Subroutines (BNNS) library to create a simple neural network that’s capable of recognizing digits.
 
@@ -47,7 +47,7 @@ The image below shows the relationships between the layers:
 
 ![A flow diagram that shows the flow of information during the training phase of the sample code project.](https://developer.apple.com/tutorials/images/com.apple.accelerate/flow_2x.png)
 
-##### Define the filter parameters
+### Define the filter parameters
 
 The sample creates a [`BNNSFilterParameters`](./bnnsfilterparameters.md) structure with [`useClientPointer`](./bnnsflags/useclientpointer.md). This flag instructs the layers to keep the provided pointers at creation time, and to work directly from that data rather than use internal copies of the data.
 
@@ -59,7 +59,7 @@ static var filterParameters = BNNSFilterParameters(
     free_memory: nil)
 ```
 
-##### Create the fused convolution-batch normalization layer
+### Create the fused convolution-batch normalization layer
 
 The convolution-batch normalization layer consists of two sublayers.
 
@@ -144,7 +144,7 @@ static let fusedConvBatchNormLayer: BNNS.FusedParametersLayer = {
 }()
 ```
 
-##### Create the pooling layer
+### Create the pooling layer
 
 Pooling layers downscale their input while preserving the most important information and produce an output that, in the case of this sample code project, consists of the maximum value in each input pixel’s local neighborhood.
 
@@ -169,7 +169,7 @@ static var poolingLayer: BNNS.PoolingLayer = {
 }()
 ```
 
-##### Create the fully connected layer
+### Create the fully connected layer
 
 Fully connected layers compute the matrix-vector product of a weights matrix and its input, and flatten the data to predict the correct label.
 
@@ -210,7 +210,7 @@ static var fullyConnectedLayer: BNNS.FullyConnectedLayer = {
 }()
 ```
 
-##### Create the loss layer
+### Create the loss layer
 
 The loss layer is responsible for quantifying a score that indicates how the predicted values deviate from the labels.
 
@@ -231,7 +231,7 @@ static var lossLayer: BNNS.LossLayer = {
 }()
 ```
 
-##### Create the candidate input
+### Create the candidate input
 
 For each iteration of the training phase, the sample creates a matrix that represents a random digit, and a *one-hot* encoded tensor of the same digit. The sample places digits randomly in a 20 x 20 matrix, so a `3` might appear in the matrix as the image below. This example renders `0` as `⚪️`, and `1` as `⚫️`.
 
@@ -266,7 +266,7 @@ The one-hot encoded tensor contains a `1` at the zero-based index of `3`.
 
 The sample code project uses a batch size of 32, so each iteration generates 32 random digits in random positions in the 20 x 20 grid.
 
-##### Perform the forward pass
+### Perform the forward pass
 
 To perform the forward pass, the sample code calls `apply` on the fused, pooling, and fully connected layers.
 
@@ -285,7 +285,7 @@ try fullyConnectedLayer.apply(batchSize: batchSize,
                               output: fullyConnectedOutput)
 ```
 
-##### Calculate the loss and loss gradient
+### Calculate the loss and loss gradient
 
 Calculating the loss evaluates the efficacy of the neural network. The loss layer generates its output, `lossOutput`, which contains a score that indicates how the predicted values deviate from the labels, and `lossInputGradient`, which is the output gradient parameter to the backward application of the fully connected layer.
 
@@ -297,7 +297,7 @@ try lossLayer.apply(batchSize: batchSize,
                     generatingInputGradient: lossInputGradient)
 ```
 
-##### Create the optimizer
+### Create the optimizer
 
 The optimizer is responsible for updating the weights, biases, beta, and gamma. In the code below, the sample code project creates an optimizer using the Adam algorithm:
 
@@ -310,7 +310,7 @@ static var adam = BNNS.AdamOptimizer(learningRate: 0.01,
                                      regularizationFunction: BNNSOptimizerRegularizationL2)
 ```
 
-##### Perform a backward pass and optimization step on the fully connected layer
+### Perform a backward pass and optimization step on the fully connected layer
 
 The sample code project performs the backward pass in reverse order to the forward pass. Therefore, the sample’s first step is to call `applyBackward` on the fully connected layer, and perform an optimization step on its weights.
 
@@ -326,7 +326,7 @@ try fullyConnectedLayer.applyBackward(
     generatingWeightsGradient: fullyConnectedWeightGradient)
 ```
 
-##### Perform a backward pass on the pooling layer
+### Perform a backward pass on the pooling layer
 
 The backward pass on the pooling layer generates an input gradient that’s the output gradient to the backward apply of the fused layer.
 
@@ -339,7 +339,7 @@ try poolingLayer.applyBackward(
     generatingInputGradient: poolingInputGradientArray)
 ```
 
-##### Perform a backward pass and optimization step on the fused layer
+### Perform a backward pass and optimization step on the fused layer
 
 The sample calls `applyBackward` on the fused layer. This performs an optimization step on the convolution layer’s weights and bias, and the normalization layer’s beta and gamma.
 
@@ -383,7 +383,7 @@ After the app completes all the optimization steps for this iteration, it increm
 adam.timeStep += 1
 ```
 
-##### Evaluate the neural network
+### Evaluate the neural network
 
 The sample iterates over the forward, loss, backward, and optimization steps, and with each iteration, the trend of the loss is to reduce. The following graph shows the loss, as a solid stroke, decreasing during training:
 

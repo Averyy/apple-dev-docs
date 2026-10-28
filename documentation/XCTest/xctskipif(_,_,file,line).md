@@ -12,7 +12,7 @@ Skips remaining tests in a test method if the specified condition is met.
 func XCTSkipIf(_ expression: @autoclosure () throws -> Bool, _ message: @autoclosure () -> String? = nil, file: StaticString = #filePath, line: UInt = #line) throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to skip any remaining code and assertions in the test method when `expression` evaluates to `true`, and mark the test method as skipped. If a test failure occurs in the test method before the skip, the test runner marks the test method as failed.
 

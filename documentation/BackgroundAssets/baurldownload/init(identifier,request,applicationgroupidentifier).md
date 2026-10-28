@@ -22,7 +22,7 @@ convenience init(identifier: String, request: URLRequest, applicationGroupIdenti
 - (instancetype) initWithIdentifier:(NSString *) identifier request:(NSURLRequest *) request applicationGroupIdentifier:(NSString *) applicationGroupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system requires that all URL requests use Hypertext Transfer Protocol Secure (HTTPS). The [`priority`](../badownload/priority-swift.property.md) of the created download is [`default`](../badownload/priority-swift.struct/default.md).
 

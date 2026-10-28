@@ -25,11 +25,11 @@ class func unhide() -> SKAction
 + (SKAction *) unhide;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action has an instantaneous duration. When the action executes, the node’s [`isHidden`](../sknode/ishidden.md) property is set to [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ var usesPreciseCollisionDetection: Bool { get set }
 @property (nonatomic) BOOL usesPreciseCollisionDetection;
 ```
 
-#### Discussion
+## Discussion
 
 When SpriteKit performs collision detection, it first determines the locations of all of the physics bodies in the scene. Then it determines whether collisions or contacts occurred. This computational method is fast, but can sometimes result in missed collisions. A small body might move so fast that it completely passes through another physics body without ever having a frame of animation where the two touch each other.
 

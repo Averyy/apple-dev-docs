@@ -22,11 +22,11 @@ nonisolated
 func offset(_ offset: CGSize) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that offsets this view by `offset`.
 
-#### Discussion
+## Discussion
 
 Use `offset(_:)` to shift the displayed contents by the amount specified in the `offset` parameter.
 

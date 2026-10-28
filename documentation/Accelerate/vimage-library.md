@@ -5,7 +5,7 @@
 
 Manipulate large images using the CPU’s vector processor.
 
-#### Overview
+## Overview
 
 vImage is a high-performance image processing framework. It includes functions for image manipulation—convolutions, geometric transformations, histogram operations, morphological transformations, and alpha compositing—as well as utility functions for format conversions and other operations.
 

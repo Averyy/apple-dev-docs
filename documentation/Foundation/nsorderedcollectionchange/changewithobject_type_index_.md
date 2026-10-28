@@ -21,7 +21,7 @@ Creates an change object that represents inserting or removing an object from an
 + (NSOrderedCollectionChange<id> *) changeWithObject:(ObjectType) anObject type:(NSCollectionChangeType) type index:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents an indexed change to an ordered collection and references the object to be inserted or removed.
 

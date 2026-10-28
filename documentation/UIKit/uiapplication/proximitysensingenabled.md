@@ -19,7 +19,7 @@ A Boolean value that determines whether proximity sensing is enabled.
 @property (nonatomic, getter=isProximitySensingEnabled) BOOL proximitySensingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if proximity sensing is enabled; otherwise [`false`](../../Swift/false.md). Enabling proximity sensing tells iOS that it may need to blank the screen if the user’s face is near it. Proximity sensing is disabled by default.
 

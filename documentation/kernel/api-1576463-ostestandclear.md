@@ -15,11 +15,11 @@ Bit test and clear operation, performed atomically with respect to all devices t
 Boolean OSTestAndClear(UInt32 bit, volatile UInt8 *startAddress);
 ```
 
-#### Return Value
+## Return Value
 
 true if the bit was already clear, false otherwise.
 
-#### Discussion
+## Discussion
 
 The OSTestAndClear function clears a single bit in a byte at a specified address. It returns true if the bit was already clear, false otherwise.
 

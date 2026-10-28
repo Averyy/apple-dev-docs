@@ -29,7 +29,7 @@ var maskNode: SKNode? { get set }
 
 - [Cropping Nodes](../cropping-nodes.md)
 
-#### Discussion
+## Discussion
 
 The node supplied to the crop node must not be a child of another node; however, it may have children of its own.
 

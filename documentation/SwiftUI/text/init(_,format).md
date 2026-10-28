@@ -35,7 +35,7 @@ init<V, F>(_ source: TimeDataSource<V>, format: F) where V == F.FormatInput, F :
 init<V, F>(_ source: TimeDataSource<V>, format: F) where V == F.FormatInput, F : DiscreteFormatStyle, F.FormatOutput == String
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a text view backed by a nonstring value, using a [`FormatStyle`](../../Foundation/formatstyle.md) to convert the type to an attributed string representation. Any changes to the value update the string displayed by the text view.
 

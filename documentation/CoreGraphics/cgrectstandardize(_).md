@@ -25,7 +25,7 @@ func CGRectStandardize(_ rect: CGRect) -> CGRect
 extern CGRect CGRectStandardize(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that represents the source rectangle, but with positive width and height values. Returns a null rectangle if `rect` is a null rectangle.
 

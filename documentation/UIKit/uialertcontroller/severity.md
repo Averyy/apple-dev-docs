@@ -23,7 +23,7 @@ var severity: UIAlertControllerSeverity { get set }
 @property (nonatomic) UIAlertControllerSeverity severity;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`UIAlertControllerSeverity`](../uialertcontrollerseverity.md) enumeration for the list of alert severity constants.
 

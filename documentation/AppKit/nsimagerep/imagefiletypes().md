@@ -21,11 +21,11 @@ class func imageFileTypes() -> [String]
 + (NSArray<NSString *> *) imageFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains a filename extension or HFS file type of a supported format.
 
-#### Discussion
+## Discussion
 
 The list includes both those types returned by the [`imageUnfilteredFileTypes()`](./imageunfilteredfiletypes%28%29.md) class method plus those that can be converted to a supported type by a user-installed filter service. The returned file types can include encoded HFS file types as well as filename extensions.
 

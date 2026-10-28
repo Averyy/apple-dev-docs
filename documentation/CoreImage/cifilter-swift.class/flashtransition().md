@@ -24,11 +24,11 @@ class func flashTransition() -> any CIFilter & CIFlashTransition
 + (CIFilter<CIFlashTransition> *) flashTransitionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the flash transition filter to an image. The effect transitions from the input image to the target image by creating a flash that fills the image and fades to the target image.
 

@@ -19,7 +19,7 @@ static let compressionMethod: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageCompressionMethod;
 ```
 
-#### Discussion
+## Discussion
 
 Used only for TIFF files. The value corresponds to one of the `NSTIFFCompression` constants, described below. It’s set when reading in and used when writing out.
 

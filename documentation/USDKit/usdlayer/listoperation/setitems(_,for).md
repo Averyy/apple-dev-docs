@@ -20,7 +20,7 @@ Sets the items in the given operation’s slot.
 mutating func setItems(_ items: [T], for operation: USDLayer.ListOperationType) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if any item fails validation.
 

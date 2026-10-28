@@ -17,7 +17,7 @@ object Profile.Relationships.Certificates
 ### Objects
 - [object Profile.Relationships.Certificates.Data](./certificates-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
-- [links](./certificates-data.dictionary/links.md)
+- links
   The links to the related data and the relationship’s self-link.
 
 ## Properties

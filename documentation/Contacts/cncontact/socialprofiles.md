@@ -32,7 +32,7 @@ var socialProfiles: [CNLabeledValue<CNSocialProfile>] { get }
 @property (atomic, copy, readonly) NSArray<CNLabeledValue<CNSocialProfile *> *> * socialProfiles;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNSocialProfile`](../cnsocialprofile.md) value.
 

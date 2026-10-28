@@ -21,7 +21,7 @@ A type that represents a bzip2 archive.
 extern UTType * const UTTypeBZ2;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.bzip2-archive`.
 

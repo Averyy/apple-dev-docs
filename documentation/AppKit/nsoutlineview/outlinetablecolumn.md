@@ -19,7 +19,7 @@ unowned(unsafe) var outlineTableColumn: NSTableColumn? { get set }
 @property (assign, nullable) NSTableColumn * outlineTableColumn;
 ```
 
-#### Discussion
+## Discussion
 
 Each level of hierarchical data is indented by the amount specified by the [`indentationPerLevel`](./indentationperlevel.md) property (the default is `16.0`), and decorated with the indentation marker (disclosure triangle) on rows that are expandable. Outline table column data is archived with the rest of the outline view’s state information.
 

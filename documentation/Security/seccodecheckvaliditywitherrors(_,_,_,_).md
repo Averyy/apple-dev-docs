@@ -20,11 +20,11 @@ func SecCodeCheckValidityWithErrors(_ code: SecCode, _ flags: SecCSFlags, _ requ
 OSStatus SecCodeCheckValidityWithErrors(SecCodeRef code, SecCSFlags flags, SecRequirementRef requirement, CFErrorRef*errors);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function obtains and verifies the signature on the code specified by the code object. It checks the validity of only those sealed components required to establish identity. For guest code, first the function checks the code object’s dynamic validity status as reported by its host, then it ensures that the code object’s host is in turn valid. For all code, it validates the code against a code requirement if one is specified. The call succeeds if all these conditions are satisfactory.
 

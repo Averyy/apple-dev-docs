@@ -19,7 +19,7 @@ func SKSummaryGetParagraphSummaryInfo(_ summary: SKSummary!, _ numParagraphsInSu
 CFIndex SKSummaryGetParagraphSummaryInfo(SKSummaryRef summary, CFIndex numParagraphsInSummary, CFIndex *outRankOrderOfParagraphs, CFIndex *outParagraphIndexOfParagraphs);
 ```
 
-#### Return Value
+## Return Value
 
 The number of paragraphs in the summary.
 

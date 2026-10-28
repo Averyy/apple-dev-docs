@@ -23,7 +23,7 @@ optional func splitViewController(_ svc: UISplitViewController, popoverControlle
 - (void) splitViewController:(UISplitViewController *) svc popoverController:(UIPopoverController *) pc willPresentViewController:(UIViewController *) aViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The toolbar button you add to your user interface facilitates the display of the hidden view controller in response to user taps. When the user taps that button, the split view controller calls this method. You can use this method to perform any additional steps prior to displaying the currently hidden view controller.
 

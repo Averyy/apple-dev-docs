@@ -21,11 +21,11 @@ autocomplete(
 ): Promise<SearchAutocompleteResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves when the autocomplete request completes.
 
-#### Discussion
+## Discussion
 
 To provide the user with a menu of search suggestions, invoke the [`autocomplete()`](./autocomplete1.md) method as users type. This method minimizes typing and brings users the results they’re looking for.
 

@@ -24,7 +24,7 @@ optional func mapViewDidChangeVisibleRegion(_ mapView: MKMapView)
 - (void) mapViewDidChangeVisibleRegion:(MKMapView *) mapView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update the map in response to intermediate changes to the region. The map view calls this method each time the value of its visible region changes.
 

@@ -5,7 +5,7 @@
 
 Create and manage untyped data your app uses to exchange information with its shader functions.
 
-#### Overview
+## Overview
 
 Each [`MTLBuffer`](./mtlbuffer.md) instance represents a general purpose, typeless memory allocation that your app uses to send and retrieve data from a shader. Your app decides how to use and interpret the buffer’s underlying bytes.
 

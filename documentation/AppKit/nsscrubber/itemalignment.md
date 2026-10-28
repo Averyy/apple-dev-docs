@@ -19,7 +19,7 @@ var itemAlignment: NSScrubber.Alignment { get set }
 @property NSScrubberAlignment itemAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to something other than [`NSScrubber.Alignment.none`](./alignment/none.md) to ensure that an item is aligned with the specified position when the scrubber comes to rest.
 

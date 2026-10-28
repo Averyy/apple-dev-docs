@@ -6,7 +6,7 @@
 
 The mouse motion scale factor.
 
-#### Discussion
+## Discussion
 
 The number of degrees that an object is panned or tilted when the cursor is dragged the entire width of the VR movie image. The default value is `180.0`.
 

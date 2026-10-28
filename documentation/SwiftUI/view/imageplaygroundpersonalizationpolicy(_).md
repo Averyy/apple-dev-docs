@@ -22,11 +22,11 @@ nonisolated
 func imagePlaygroundPersonalizationPolicy(_ policy: ImagePlaygroundPersonalizationPolicy = .automatic) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 An image playground sheet that does or does not support personalization, based on the `enabled` flag.
 
-#### Discussion
+## Discussion
 
 Enabling people support will allow the user to condition image generation using:
 

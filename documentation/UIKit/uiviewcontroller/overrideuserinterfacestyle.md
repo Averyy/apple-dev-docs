@@ -23,7 +23,7 @@ var overrideUserInterfaceStyle: UIUserInterfaceStyle { get set }
 @property (nonatomic) UIUserInterfaceStyle overrideUserInterfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to force the view controller to always adopt a light or dark interface style. The default value of this property is [`UIUserInterfaceStyle.unspecified`](../uiuserinterfacestyle/unspecified.md), which causes the view controller to inherit the interface style from the system or a parent view controller. If you assign a different value, the new style applies to the view controller, its entire view hierarchy, and any embedded child view controllers.
 

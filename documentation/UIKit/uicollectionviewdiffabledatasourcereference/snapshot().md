@@ -23,7 +23,7 @@ func snapshot() -> NSDiffableDataSourceSnapshotReference
 - (NSDiffableDataSourceSnapshot<id,id> *) snapshot;
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot containing section and item identifiers in the order that they appear in the UI.
 

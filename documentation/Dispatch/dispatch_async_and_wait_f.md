@@ -21,7 +21,7 @@ Submits a function-based work item for execution and returns only after it finis
 extern void dispatch_async_and_wait_f(dispatch_queue_t queue, void *context, dispatch_function_t work);
 ```
 
-#### Discussion
+## Discussion
 
 This function submits work to the specified queue for execution. Unlike [`dispatch_async`](./dispatch_async.md), this function doesn’t return until after the block finishes. Calling this function and targeting the current queue results in deadlock.
 

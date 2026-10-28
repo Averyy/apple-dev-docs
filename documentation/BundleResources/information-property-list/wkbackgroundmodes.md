@@ -23,7 +23,7 @@ The services a watchOS app provides that require it to continue running in the b
 - `alarm`: Enables extended runtime sessions for smart alarms.
 - `underwater-depth`: Enables extended runtime sessions for underwater depth experiences.
 
-#### Discussion
+## Discussion
 
 To add this key to the Information Property List, enable your WatchKit extension’s Background Modes capability in Xcode.
 

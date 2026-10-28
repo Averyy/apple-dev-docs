@@ -17,7 +17,7 @@ var loginRequestHPKEPreSharedKeyID: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * loginRequestHPKEPreSharedKeyID;
 ```
 
-#### Discussion
+## Discussion
 
 The PreSharedKey Id to be used for HPKE PSK for embedded login assertions.  This is required if the loginRequestHPKEPreSharedKey is set.
 

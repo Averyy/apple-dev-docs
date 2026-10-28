@@ -26,7 +26,7 @@ var mapType: MKMapType { get set }
 @property (nonatomic, assign) MKMapType mapType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`MKMapType.standard`](../../mkmaptype/standard.md).
 

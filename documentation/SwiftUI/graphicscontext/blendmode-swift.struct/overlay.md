@@ -21,7 +21,7 @@ A mode that either multiplies or screens the source image samples with the backg
 static var overlay: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Drawing in this mode overlays the existing image samples while preserving the highlights and shadows of the background. The background color mixes with the source image to reflect the lightness or darkness of the background.
 

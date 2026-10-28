@@ -26,7 +26,7 @@ static let supportedDecoderVersions: CIRAWFilterOption
 extern CIRAWFilterOption const kCISupportedDecoderVersionsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is  an [`NSArray`](../../Foundation/nsarray.md) object that contains all supported decoder versions for the given image type, sorted in increasingly newer order. Each entry is an [`NSDictionary`](../../Foundation/nsdictionary.md) object that contains key-value pairs. All entries represent a valid version identifier that can be passed as the `kCIDecoderVersion` value for the key `kCIDecoderMethodKey`. Version values are read-only; attempting to set this value raises an exception. Currently, the only defined key is `@"version"` which has as its value an [`NSString`](../../Foundation/nsstring.md) that uniquely describing a given decoder version. This string might not be suitable for user interface display.
 

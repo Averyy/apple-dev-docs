@@ -20,7 +20,7 @@ Creates a reference component with a name and loading policy.
 init(named name: String, loadingPolicy: ReferenceComponent.LoadingPolicy = .onDemand)
 ```
 
-#### Discussion
+## Discussion
 
 Place references in the app’s main bundle.
 

@@ -21,7 +21,7 @@ The list style that describes a platform’s default behavior and appearance for
 struct DefaultListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./liststyle/automatic.md) to construct this style.
 

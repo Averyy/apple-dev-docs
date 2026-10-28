@@ -23,11 +23,11 @@ static func localizedDoublePercentage(locale: Locale) -> Self
 
 Available when `Self` is `FloatingPointFormatStyle<Double>.Percent`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches localized percentage substrings as [`Double`](../double.md) instances.
 
-#### Discussion
+## Discussion
 
 This method matches percentage substrings in accordance with the provided locale. For example, in the `en_US` locale, `0.75` formats as `75%`, and `12345.67` formats as `1,234,567%`. Other locales use different separators, or omit them entirely. Because of this, the regex needs to know what locale convention to match against.
 

@@ -20,7 +20,7 @@ func removeChild(at index: Int)
 - (void) removeChildAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Subsequent children have their indexes decreased by one. The removed [`XMLNode`](../xmlnode.md) object is autoreleased.
 

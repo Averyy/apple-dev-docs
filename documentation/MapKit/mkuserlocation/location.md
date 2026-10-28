@@ -28,7 +28,7 @@ var location: CLLocation? { get }
 
 - [Converting a user’s location to a descriptive placemark](../converting-a-user-s-location-to-a-descriptive-placemark.md)
 
-#### Discussion
+## Discussion
 
 This property contains `nil` if the map view isn’t showing the user’s location, or if the map view is still determining the user’s location.
 

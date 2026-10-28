@@ -23,7 +23,7 @@ let kCGPDFContextKeywords: CFString
 extern CFStringRef const kCGPDFContextKeywords;
 ```
 
-#### Discussion
+## Discussion
 
 The keywords for this document. This key is optional. If the value of  this key is a [`CFString`](../CoreFoundation/cfstring.md) object, the `/Keywords` entry will be the specified  string. If the value of this key is a [`CFArray`](../CoreFoundation/cfarray.md) object, then it must be an array  of [`CFString`](../CoreFoundation/cfstring.md) objects. The `/Keywords` entry will, in this case, be the concatenation  of the specified strings separated by commas (`","`). In addition, an  entry with the key `"/AAPL:Keywords"` is stored in the document  information dictionary; its value is an array consisting of each of the  specified strings. The value of this key must be in one of the above  forms; otherwise, this key is ignored.
 

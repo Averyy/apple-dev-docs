@@ -27,7 +27,7 @@ var productIdentifier: String { get set }
 @property (nonatomic, copy, readwrite) NSString * productIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The product identifier is a string previously agreed on between your app and the Apple App Store.
 

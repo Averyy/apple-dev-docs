@@ -31,7 +31,7 @@ var isCanceled: Bool { get }
 @property (atomic, readonly, getter=isCanceled) BOOL canceled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when someone canceled the ride. It is [`false`](../../Swift/false.md) when the user was successfully picked up. The method you use to create an instance of this class automatically sets the value of this property.
 

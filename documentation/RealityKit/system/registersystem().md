@@ -25,7 +25,7 @@ Registers a system with RealityKit.
 
 - [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
-#### Discussion
+## Discussion
 
 Calling this method informs RealityKit of a system of defined behavior for its scenes. RealityKit automatically creates an instance of all registered systems for every scene and calls every registered system’s [`update(context:)`](./update%28context%29-3d0qz.md) method on every scene update.
 

@@ -14,7 +14,7 @@
 kIOFBNumCursorFramesShift = 2
 ```
 
-#### Discussion
+## Discussion
 
 Used with waiting cursors.
 

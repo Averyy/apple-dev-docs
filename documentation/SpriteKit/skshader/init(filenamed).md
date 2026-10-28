@@ -25,7 +25,7 @@ convenience init(fileNamed name: String)
 + (instancetype) shaderWithFileNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized shader object whose initial source is loaded from the shader file.
 

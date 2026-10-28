@@ -22,11 +22,11 @@ nonisolated
 func focusEffectDisabled(_ disabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that controls whether focus effects can be displayed in this view.
 
-#### Discussion
+## Discussion
 
 The higher views in a view hierarchy can override the value you set on this view. In the following example, the button does not display a focus effect because the outer `focusEffectDisabled(_:)` modifier overrides the inner one:
 

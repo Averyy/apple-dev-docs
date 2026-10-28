@@ -24,11 +24,11 @@ func yield(with result: sending Result<Element, Failure>) -> AsyncThrowingStream
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 A `YieldResult` that indicates the success or failure of the yield operation.
 
-#### Discussion
+## Discussion
 
 If nothing is awaiting the next value and the result is success, this call attempts to buffer the result’s element.
 

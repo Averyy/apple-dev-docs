@@ -17,11 +17,11 @@ func IOBluetoothGetUniqueFileNameAndPath(_ inName: String!, _ inPath: String!) -
 extern NSString *IOBluetoothGetUniqueFileNameAndPath(NSString *inName, NSString *inPath);
 ```
 
-#### Return Value
+## Return Value
 
 String with a unique name appended on it for the provided path.
 
-#### Discussion
+## Discussion
 
 When passed a VALID filename and a VALID path, this routine will return you a the path with the name appended onto it. If it already exist, it will insert a #1, #2, etc. Example: If you pass @“TestFile.txt” and @”~/Documents”, you will get @“~Documents/TestFile.txt”. If one already exists, you will be returned: @“~Documents/TestFile #1.txt”.
 

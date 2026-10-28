@@ -19,7 +19,7 @@ var selectionHighlightStyle: NSTableView.SelectionHighlightStyle { get set }
 @property NSTableViewSelectionHighlightStyle selectionHighlightStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are specified in [`NSTableView.SelectionHighlightStyle`](../nstableview/selectionhighlightstyle-swift.enum.md) in [`NSTableView`](../nstableview.md).
 

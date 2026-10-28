@@ -23,11 +23,11 @@ func indexPathsToInsertForDecorationView(ofKind elementKind: String) -> [IndexPa
 - (NSArray<NSIndexPath *> *) indexPathsToInsertForDecorationViewOfKind:(NSString *) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects indicating the location of the new decoration views or an empty array if you do not want to add any decoration views.
 
-#### Discussion
+## Discussion
 
 The collection view calls this method whenever you add cells or sections to the collection view. Implementing this method gives your layout object an opportunity to add new decoration views to complement the additions.
 

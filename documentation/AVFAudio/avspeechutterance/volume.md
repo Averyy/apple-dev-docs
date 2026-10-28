@@ -25,7 +25,7 @@ var volume: Float { get set }
 @property (nonatomic) float volume;
 ```
 
-#### Discussion
+## Discussion
 
 Before enqueing the utterance, set this property to a value within the range of `0.0` for silent to `1.0` for loudest volume. The default value is `1.0`. Setting this after enqueing the utterance has no effect.
 

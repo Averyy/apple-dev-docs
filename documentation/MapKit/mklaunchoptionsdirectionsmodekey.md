@@ -24,7 +24,7 @@ let MKLaunchOptionsDirectionsModeKey: String
 extern NSString * const MKLaunchOptionsDirectionsModeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../Foundation/nsstring.md) corresponding to one of the values described in [Directions mode values](./directions-mode-values.md). You specify this key to tell the Maps app which mode of transport to use when generating directions.
 

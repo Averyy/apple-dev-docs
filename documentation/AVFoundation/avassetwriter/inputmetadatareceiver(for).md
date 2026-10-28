@@ -20,7 +20,7 @@ Attaches the input to the writer and returns an input receiver for writing timed
 func inputMetadataReceiver(for input: AVAssetWriterInput) -> sending AVAssetWriterInput.MetadataReceiver
 ```
 
-#### Return Value
+## Return Value
 
 A writer input receiver with an interface for writing timed metadata group.
 

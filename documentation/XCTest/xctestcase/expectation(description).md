@@ -16,7 +16,7 @@ func expectation(description: String) -> XCTestExpectation
 - (XCTestExpectation *) expectationWithDescription:(NSString *) description;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create [`XCTestExpectation`](../xctestexpectation.md) instances that can be fulfilled when asynchronous tasks in your tests complete.
 

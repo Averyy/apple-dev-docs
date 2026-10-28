@@ -21,7 +21,7 @@ The level of confidence in the observation’s accuracy of smudge detection on a
 let confidence: Float
 ```
 
-#### Discussion
+## Discussion
 
 The framework normalizes this value to `[0, 1]`, where `1` represents the most confident. When results come from a [`CoreMLRequest`](../coremlrequest.md), the relevant [Core ML](../../CoreML/CoreML.md) models forward the confidence values.
 

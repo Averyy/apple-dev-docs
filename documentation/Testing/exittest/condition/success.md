@@ -20,7 +20,7 @@ static var success: ExitTest.Condition { get }
 
 - [Exit testing](../../exit-testing.md)
 
-#### Discussion
+## Discussion
 
 This condition matches the exit code `EXIT_SUCCESS`.
 

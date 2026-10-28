@@ -5,7 +5,7 @@
 
 Include property list dictionaries to describe a format reader and register the formats it supports.
 
-#### Overview
+## Overview
 
 An `ExtensionKit` format reader needs to include one required dictionary and can also include an optional dictionary in its `Info.plist` file:
 

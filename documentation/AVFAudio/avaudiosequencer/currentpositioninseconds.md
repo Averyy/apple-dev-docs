@@ -24,7 +24,7 @@ var currentPositionInSeconds: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval currentPositionInSeconds;
 ```
 
-#### Discussion
+## Discussion
 
 This property positions the sequencer’s player to the specified time. You can update this property while the player is in a playing state, in which case, playback resumes at the new position.
 

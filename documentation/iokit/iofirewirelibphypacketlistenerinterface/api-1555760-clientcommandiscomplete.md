@@ -16,7 +16,7 @@ Notify the PHY packet listener object that a packet notification handler has com
 void (*ClientCommandIsComplete)(IOFireWireLibPHYPacketListenerRef self, FWClientCommandID commandID);
 ```
 
-#### Discussion
+## Discussion
 
 Packet notifications are received one at a time, in order. This function must be called after a packet handler has completed its work.
 

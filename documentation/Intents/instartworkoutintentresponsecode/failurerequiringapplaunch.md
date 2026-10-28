@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INStartWorkoutIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this code only when you can’t start the workout through SiriKit because of extenuating circumstances. For example, you might use this code if the user must log into your app before starting workouts and isn’t currently logged in. Don’t use this response code for general errors or to force the user to launch your app.
 

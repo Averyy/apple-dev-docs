@@ -19,7 +19,7 @@ The interaction mode for direct touches on the canvas.
 @preconcurrency var directTouchMode: PaperMarkupViewController.TouchMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To control automatic behavior for direct touches based on system state, see `directTouchAutomaticallyDraws`. Default is `.selection`.
 

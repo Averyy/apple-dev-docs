@@ -17,11 +17,11 @@ Returns the cube map face of the pixel buffer attached to the OpenGL context.
 - (GLenum) pixelBufferCubeMapFace;
 ```
 
-#### Return Value
+## Return Value
 
 For pixel buffers with a texture target of `GL_CUBE_MAP`, this value is zero or one of the following values:
 
-#### Discussion
+## Discussion
 
 - `GL_TEXTURE_CUBE_MAP_POSITIVE_X`
 - `GL_TEXTURE_CUBE_MAP_POSITIVE_Y`

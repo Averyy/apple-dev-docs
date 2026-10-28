@@ -19,7 +19,7 @@ var pointSize: CGFloat { get }
 @property (readonly) CGFloat pointSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the font has a nonstandard matrix, the point size is the effective vertical point size.
 

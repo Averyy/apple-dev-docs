@@ -17,7 +17,7 @@ Respond to the session after receiving and processing an APDU.
 final func respond(response: Data) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Your client must respond to each APDU it receives. Failing to respond throws an error. If your client disposes an APDU object without responding, the card emulation ends.
 

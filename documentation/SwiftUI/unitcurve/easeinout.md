@@ -21,7 +21,7 @@ A bezier curve that starts out slowly, speeds up over the middle, then slows dow
 static let easeInOut: UnitCurve
 ```
 
-#### Discussion
+## Discussion
 
 The start and end control points are located at (x: 0.42, y: 0) and (x: 0.58, y: 1).
 

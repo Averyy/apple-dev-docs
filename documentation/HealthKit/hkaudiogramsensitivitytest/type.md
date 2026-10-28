@@ -22,7 +22,7 @@ var type: HKAudiogramConductionType { get }
 @property (nonatomic, assign, readonly) HKAudiogramConductionType type;
 ```
 
-#### Discussion
+## Discussion
 
 The conduction type
 

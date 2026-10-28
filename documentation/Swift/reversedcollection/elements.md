@@ -23,7 +23,7 @@ typealias Elements = ReversedCollection<Base>
 
 Available when `Base` conforms to `BidirectionalCollection` and `LazySequenceProtocol`.
 
-#### Discussion
+## Discussion
 
 - See also: `elements`
 

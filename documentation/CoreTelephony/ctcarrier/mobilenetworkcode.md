@@ -23,7 +23,7 @@ var mobileNetworkCode: String? { get }
 @property (nonatomic, retain, readonly, nullable) NSString * mobileNetworkCode;
 ```
 
-#### Discussion
+## Discussion
 
 A read-only [`NSString`](../../Foundation/nsstring.md) object that represents the numeric mobile network code (MNC) for the user’s cellular service provider. Typing this property as an [`NSString`](../../Foundation/nsstring.md) object, rather than a number type, preserves leading zeroes in MNCs.
 

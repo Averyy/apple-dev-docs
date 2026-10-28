@@ -35,7 +35,7 @@ nonisolated
 func documentLaunchSubtitle<S>(_ subtitle: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to add descriptive text beneath the launch card title. Apply the modifier to a [`DocumentLaunchView`](../documentlaunchview.md) or any of its ancestors.
 

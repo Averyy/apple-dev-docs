@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INTransferMoneyIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you require additional information that you can only obtain from your app. Don’t use this code for general errors or to force the user to launch your app.
 

@@ -18,7 +18,7 @@ A clock type that increments monotonically, but does not increment when the syst
 kIOTimerClockUptimeRaw
 ```
 
-#### Discussion
+## Discussion
 
 This constant is the type of clock obtained by passing `CLOCK_MONOTONIC_RAW` to `clock_gettime_nsec_np(_:)`. It’s equivalent to a value from `mach_absolute_time()`, but in nanoseconds.
 

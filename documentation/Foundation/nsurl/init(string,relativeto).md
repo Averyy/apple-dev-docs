@@ -25,11 +25,11 @@ init?(string URLString: String, relativeTo baseURL: URL?)
 - (instancetype) initWithString:(NSString *) URLString relativeToURL:(NSURL *) baseURL;
 ```
 
-#### Return Value
+## Return Value
 
 An NSURL object initialized with `URLString` and `baseURL`. If `URLString` was malformed, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method allows you to create a URL relative to a base path or URL. For example, if you have the URL for a folder on disk and the name of a file within that folder, you can construct a URL for the file by providing the folder’s URL as the base path (with a trailing slash) and the filename as the string part.
 

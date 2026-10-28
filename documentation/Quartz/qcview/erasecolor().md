@@ -21,7 +21,7 @@ func eraseColor() -> NSColor!
 - (NSColor *) eraseColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color object previously set using the [`setEraseColor(_:)`](./seterasecolor%28_%29.md) method.
 

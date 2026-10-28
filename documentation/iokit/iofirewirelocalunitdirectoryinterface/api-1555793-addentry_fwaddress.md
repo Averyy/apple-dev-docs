@@ -16,7 +16,7 @@ Append an offset leaf
 IOReturn (*AddEntry_FWAddress)(IOFireWireLibLocalUnitDirectoryRef self, int key, const FWAddress *value, CFStringRef inDesc);
 ```
 
-#### Discussion
+## Discussion
 
 Appends an offset leaf to a unit directory. The address passed in value should be an address in initial unit space of the local config ROM.
 

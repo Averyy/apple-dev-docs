@@ -22,7 +22,7 @@ class let touchBarVolumeUpTemplateName: String
 extern NSImageName const NSImageNameTouchBarVolumeUpTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for volume up](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793479@2x.png)
 

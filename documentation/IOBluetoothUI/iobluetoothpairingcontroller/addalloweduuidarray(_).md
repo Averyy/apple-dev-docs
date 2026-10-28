@@ -19,7 +19,7 @@ func addAllowedUUIDArray(_ allowedUUIDArray: [Any]!)
 - (void) addAllowedUUIDArray:(NSArray *) allowedUUIDArray;
 ```
 
-#### Discussion
+## Discussion
 
 The user’s device selection gets validated against the UUIDs passed to -addAllowedUUID: addAllowedUUIDArray:. Each call to those methods essentially adds a filter that the selected device gets validated with. If any of the filters match, the device is considered valid. If they all fail, the device is not valid and the user is presented with an error code that the device does not support the required services. The UUID passed to -addAllowedUUID: is the only UUID that must be present in the device’s SDP service records. Alternatively, all of the UUIDs in the UUID array passed to -addAllowedUUIDArray must be present.
 

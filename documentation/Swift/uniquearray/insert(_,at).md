@@ -21,7 +21,7 @@ Inserts a new element into the array at the specified position.
 mutating func insert(_ item: consuming Element, at index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold any more elements, then this reallocates storage to extend its capacity, using a geometric growth rate.
 

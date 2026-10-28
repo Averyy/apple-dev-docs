@@ -15,7 +15,7 @@ A package trait.
 struct Trait
 ```
 
-#### Overview
+## Overview
 
 A trait is a package feature that expresses conditional compilation and potentially optional dependencies. It is typically used to expose additional or extended API for the package.
 

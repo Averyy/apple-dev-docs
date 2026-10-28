@@ -15,7 +15,7 @@ The code associated with a function key or other special key.
 var specialKey: NSEvent.SpecialKey? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When someone presses a special function key, this property contains the code for that key. For other keys, this property is `nil`.
 

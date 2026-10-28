@@ -26,7 +26,7 @@ enum UIWritingToolsCoordinatorState : NSInteger;
 
 - [Adding Writing Tools support to a custom UIKit view](../adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Overview
+## Overview
 
 Making changes to your view requires several different levels of interaction. Initially, Writing Tools displays its UI and collects information about what the person wants to do. When the person selects an operation, Writing Tools sends the relevant details to a large language model (LLM) and processes the results. It then works with the custom view to integrate any changes into the view’s text storage. During each of these activities, the coordinator reflects what’s happening in its [`state`](./state-swift.property.md) property. You can use the current state as a guide to making decisions in other parts of your view.
 

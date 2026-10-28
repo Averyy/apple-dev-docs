@@ -24,11 +24,11 @@ class func comicEffect() -> any CIFilter & CIComicEffect
 + (CIFilter<CIComicEffect> *) comicEffectFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the comic effect filter to an image. The effect simulates a comic book drawing by outlining edges and applying a color halftone effect.
 

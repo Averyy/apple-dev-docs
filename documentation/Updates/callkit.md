@@ -5,11 +5,11 @@
 
 Learn about important changes to CallKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [CallKit](../CallKit/CallKit.md).
 
-#### June 2025
+## June 2025
 
 - Configure a call to include an option to use the system’s translation capabilities with a [`CXSetTranslatingCallAction`](../CallKit/cxsettranslatingcallaction.md).
 

@@ -19,17 +19,17 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, should
 - (BOOL) textLayoutManager:(NSTextLayoutManager *) textLayoutManager shouldBreakLineBeforeLocation:(id<NSTextLocation>) location hyphenating:(BOOL) hyphenating;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to allow the break; `false` to prevent it.
 
-#### Discussion
+## Discussion
 
 When `hyphenating` is `false`, [`NSTextLayoutManager`](../nstextlayoutmanager.md) tries to find the next line break opportunity before location. When `hyphenating` is `true`, it is an auto-hyphenation point.
 
 The method the framework calls to determine the soft line break point.
 
-#### Discussion
+## Discussion
 
 When `hyphenating` is `false`, `NSTextLayoutManager` tries to find the next line break opportunity before location. When hyphenating is `true`, it’s an auto-hyphenation point.
 

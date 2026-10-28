@@ -15,7 +15,7 @@ The elements that have links with the accessibility element.
 @property (copy, nullable) NSArray * accessibilityLinkedUIElements;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to define a relationship between different user interface elements. For example, use this property to link a list item with contents displayed in another pane or window.
 

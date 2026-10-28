@@ -25,7 +25,7 @@ class MKReverseGeocodingRequest
 @interface MKReverseGeocodingRequest : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Use this class to look up an address by a coordinate you provide. This example shows how to use a [`Task`](../Swift/task.md) modifier on a SwiftUI view to reverse geocodes an array of coordinates to the corresponding addresses that MapKit returns in an array of [`MKMapItem`](./mkmapitem.md) objects.
 

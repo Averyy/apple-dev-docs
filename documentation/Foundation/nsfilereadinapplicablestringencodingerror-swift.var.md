@@ -21,7 +21,7 @@ Could not read because the string encoding wasn’t applicable.
 var NSFileReadInapplicableStringEncodingError: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Access the bad encoding from the `userInfo` dictionary using the `NSStringEncodingErrorKey` key.
 

@@ -23,11 +23,11 @@ mutating func withUnsafeMutableBytes<E, Result>(_ body: (UnsafeMutableRawBufferP
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Return Value
+## Return Value
 
 The return value of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeMutableBytes(_:)`. Do not store or return the pointer for later use.
 

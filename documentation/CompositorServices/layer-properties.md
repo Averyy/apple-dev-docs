@@ -5,7 +5,7 @@
 
 Information about the textures and views that the system created for your drawing code.
 
-#### Overview
+## Overview
 
 At layer-creation time, the system constructs the textures you use for drawing and stores information about those textures in the layer’s properties. Use that information to configure your render pipeline and set up any app-specific data structures. For example, use the information to get the size and type of the textures. If you want to set up your app’s render pipeline before the layer is available, create a `cp_layer_properties_t` type from the same configuration details you use to construct the layer.
 

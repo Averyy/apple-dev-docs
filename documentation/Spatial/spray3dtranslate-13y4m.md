@@ -23,7 +23,7 @@ Returns a ray with an origin that’s offset by the specified size.
 static SPRay3D SPRay3DTranslate(SPRay3D ray, SPSize3D offset);
 ```
 
-#### Return Value
+## Return Value
 
 The ray with an origin that’s offset by the specified size.
 

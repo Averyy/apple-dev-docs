@@ -20,7 +20,7 @@ func LSMMapAddTextWithWeight(_ mapref: LSMMap, _ textref: LSMText, _ category: L
 OSStatus LSMMapAddTextWithWeight(LSMMapRef mapref, LSMTextRef textref, LSMCategory category, float weight);
 ```
 
-#### Discussion
+## Discussion
 
 The weight may be negative, but global counts are pinned to `0`. The `textref` is no longer needed after this call.
 

@@ -16,7 +16,7 @@ nonisolated
 init(controller: Controller.Type = Controller.self, category: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use a watch notification instance to add support for one or more Apple Watch notification scenes that appear on receipt of the local or remote notification categories you specify. The example below, adds two notification scenes to the app declaration:
 

@@ -16,7 +16,7 @@ Suspends the capability.
 - (BOOL) suspendWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the capability was suspended, or `NO` if an error occurred.
 

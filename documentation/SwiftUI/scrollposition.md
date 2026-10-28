@@ -21,7 +21,7 @@ A type that defines the semantic position of where a scroll view is scrolled wit
 struct ScrollPosition
 ```
 
-#### Overview
+## Overview
 
 Use this type along with the [`scrollPosition(_:anchor:)`](./view/scrollposition%28_,anchor%29.md) modifier to control where a scroll view is positioned. You can use this type to scroll in a variety of ways:
 

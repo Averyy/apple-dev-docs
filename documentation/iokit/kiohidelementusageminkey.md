@@ -16,7 +16,7 @@ Keys used for matching particular elements.
 #define kIOHIDElementUsageMinKey
 ```
 
-#### Discussion
+## Discussion
 
 These keys should only be used with a matching dictionary when searching for elements via copyMatchingElements.
 

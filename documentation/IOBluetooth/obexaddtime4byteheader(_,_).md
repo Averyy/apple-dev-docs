@@ -19,11 +19,11 @@ func OBEXAddTime4ByteHeader(_ time4Byte: UInt32, _ dictRef: CFMutableDictionary!
 OBEXError OBEXAddTime4ByteHeader(uint32_t time4Byte, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Time4Byte headers - OBEX Spec, 2.2.5: 4 Bytes
 

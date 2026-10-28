@@ -21,11 +21,11 @@ Adds a new variant set to the prim.
 func add(_ variantSetName: String) throws -> USDPrim.VariantSet
 ```
 
-#### Return Value
+## Return Value
 
 The newly added variant set.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the variant set cannot be added.
 

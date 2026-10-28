@@ -23,7 +23,7 @@ func addChildBehavior(_ behavior: UIDynamicBehavior)
 - (void) addChildBehavior:(UIDynamicBehavior *) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only on custom subclasses of the [`UIDynamicBehavior`](../uidynamicbehavior.md) class.
 

@@ -23,7 +23,7 @@ var companionDeskViewCamera: AVCaptureDevice? { get }
 @property (nonatomic, readonly, nullable) AVCaptureDevice * companionDeskViewCamera;
 ```
 
-#### Discussion
+## Discussion
 
 The value provides an Desk View camera for a device, if one exists, that derives its framing from the device’s ultra wide camera. When multiple Continuity Camera devices are available on the system, use this property to a relate a particular instance with its associated Desk View device.
 

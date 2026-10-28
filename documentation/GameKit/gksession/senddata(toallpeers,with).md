@@ -26,7 +26,7 @@ func sendData(toAllPeers data: Data!, with mode: GKSendDataMode) throws
 - (BOOL) sendDataToAllPeers:(NSData *) data withDataMode:(GKSendDataMode) mode error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The session queues the data and transmits it when the network is free.
 

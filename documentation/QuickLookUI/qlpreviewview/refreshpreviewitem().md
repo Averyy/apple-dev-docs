@@ -19,7 +19,7 @@ func refreshPreviewItem()
 - (void) refreshPreviewItem;
 ```
 
-#### Discussion
+## Discussion
 
 When you modify the object that the [`previewItem`](./previewitem.md) property points to, call this method to generate and display the new preview.
 

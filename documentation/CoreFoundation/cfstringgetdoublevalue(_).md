@@ -25,11 +25,11 @@ func CFStringGetDoubleValue(_ str: CFString!) -> Double
 extern double CFStringGetDoubleValue(CFStringRef str);
 ```
 
-#### Return Value
+## Return Value
 
 The `double` value represented by `str`, or `0.0` if there is a scanning error (if the string contains disallowed characters or does not represent a double value).
 
-#### Discussion
+## Discussion
 
 Consider the following example:
 

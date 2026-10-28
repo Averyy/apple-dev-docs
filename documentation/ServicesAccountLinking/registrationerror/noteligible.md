@@ -17,7 +17,7 @@ The application is not registered as an authorized partner.
 static var notEligible: RegistrationError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Contact the Apple channel partnership program to resolve.
 

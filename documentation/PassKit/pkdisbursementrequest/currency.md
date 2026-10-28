@@ -18,7 +18,7 @@ The currency to use for this disbursement.
 var currency: Locale.Currency { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Apple Pay interprets the amounts that this request’s summary items provide as amounts in this currency.
 

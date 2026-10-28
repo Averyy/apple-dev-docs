@@ -24,7 +24,7 @@ let kIOSurfacePlaneSize: CFString
 extern CFStringRef const kIOSurfacePlaneSize;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to plane height * plane bytes per row if not specified.
 

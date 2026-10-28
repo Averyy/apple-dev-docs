@@ -5,7 +5,7 @@
 
 Verify that Xcode Cloud can access your GitHub Enterprise repository and fix configuration issues.
 
-#### Overview
+## Overview
 
 Xcode Cloud needs to have access to your Git repository to check out your code and build your app. You grant this access when you create your first workflow, or, in an enterprise context, your team’s administrator configures the connection for you before you start using Xcode Cloud.
 

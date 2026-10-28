@@ -21,7 +21,7 @@ A system-provided option that cancel the app intent.
 static var cancel: IntentChoiceOption { get }
 ```
 
-#### Discussion
+## Discussion
 
 Selecting this option causes the [`requestChoice(between:dialog:)`](../appintent/requestchoice%28between,dialog%29.md) method to throw a cancellation error.
 

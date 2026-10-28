@@ -12,7 +12,7 @@ Creates an executable package product.
 static func executable(name: String, targets: [String]) -> Product
 ```
 
-#### Return Value
+## Return Value
 
 A `Product` instance.
 

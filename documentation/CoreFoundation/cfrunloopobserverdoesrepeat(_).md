@@ -25,7 +25,7 @@ func CFRunLoopObserverDoesRepeat(_ observer: CFRunLoopObserver!) -> Bool
 extern Boolean CFRunLoopObserverDoesRepeat(CFRunLoopObserverRef observer);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `observer` is processed during every pass through the run loop; `false` if `observer` is processed once and then is invalidated.
 

@@ -21,11 +21,11 @@ Formats a byte count measurment, using this style.
 func format(_ value: Measurement<UnitInformationStorage>) -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 A formatted representation of `value`, formatted according to the style’s configuration.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a single style instance, and then use it to format multiple values.
 

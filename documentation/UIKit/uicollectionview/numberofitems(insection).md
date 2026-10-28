@@ -23,7 +23,7 @@ func numberOfItems(inSection section: Int) -> Int
 - (NSInteger) numberOfItemsInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in the specified section.
 

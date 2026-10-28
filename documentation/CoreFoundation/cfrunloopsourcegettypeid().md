@@ -25,7 +25,7 @@ func CFRunLoopSourceGetTypeID() -> CFTypeID
 extern CFTypeID CFRunLoopSourceGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFRunLoopSource opaque type.
 

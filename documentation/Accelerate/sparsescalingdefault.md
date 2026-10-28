@@ -25,7 +25,7 @@ var SparseScalingDefault: SparseScaling_t { get }
 SparseScalingDefault
 ```
 
-#### Discussion
+## Discussion
 
 The default scaling is [`SparseScalingEquilibriationInf`](./sparsescalingequilibriationinf.md) if *LDLᵀ*, or no scaling if Cholesky.
 

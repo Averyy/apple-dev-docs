@@ -21,7 +21,7 @@ var dashboardController: CPDashboardController { get }
 @property (nonatomic, strong, readonly, nonnull) CPDashboardController * dashboardController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the controller CarPlay creates when it connects your navigation app’s dashboard scene. You use this controller to manage the shortcut buttons CarPlay displays in the dashboard when there’s no active navigation session.
 

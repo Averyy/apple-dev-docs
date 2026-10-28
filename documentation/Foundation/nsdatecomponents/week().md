@@ -26,11 +26,11 @@ func week() -> Int
 - (NSInteger) week;
 ```
 
-#### Return Value
+## Return Value
 
 The number of week units for the receiver.
 
-#### Discussion
+## Discussion
 
 This value is interpreted in the context of the calendar with which it is used—see [Calendars, Date Components, and Calendar Units](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtCalendars.html#//apple_ref/doc/uid/TP40003470) in [Date and Time Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 

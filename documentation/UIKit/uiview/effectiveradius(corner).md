@@ -23,11 +23,11 @@ func effectiveRadius(corner: UIRectCorner) -> CGFloat
 - (CGFloat) effectiveRadiusForCorner:(UIRectCorner) corner;
 ```
 
-#### Return Value
+## Return Value
 
 A `CGFloat` value for the effective radius, expressed in points.
 
-#### Overview
+## Overview
 
 When you call this method from [`layoutSubviews()`](./layoutsubviews%28%29.md), [`updateProperties()`](./updateproperties%28%29.md), or [`updateProperties()`](../uiviewcontroller/updateproperties%28%29.md), automatic invalidation occurs if the effective radius changes. If you provide more than one corner (for example, [`allCorners`](../uirectcorner/allcorners.md)), the returned radius represents the maximum effective radius of those corners.
 

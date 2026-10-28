@@ -20,7 +20,7 @@ var exposureOffset: Float { get }
 @property (nonatomic, readonly) float exposureOffset;
 ```
 
-#### Discussion
+## Discussion
 
 If your app displays an AR experience using a custom Metal renderer, use this value to light your scene during its post-processed lighting stage.
 

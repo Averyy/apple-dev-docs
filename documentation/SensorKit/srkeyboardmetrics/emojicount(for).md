@@ -21,7 +21,7 @@ func emojiCount(for category: SRKeyboardMetrics.SentimentCategory) -> Int
 - (NSInteger) emojiCountForSentimentCategory:(SRKeyboardMetricsSentimentCategory) category;
 ```
 
-#### Return Value
+## Return Value
 
 The total number of typed emojis for a sentiment.
 

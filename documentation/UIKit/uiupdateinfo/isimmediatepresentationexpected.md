@@ -23,7 +23,7 @@ var isImmediatePresentationExpected: Bool { get }
 @property (nonatomic, readonly, getter=isImmediatePresentationExpected) BOOL immediatePresentationExpected;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the system presents UI updates immediately upon completion. Use this information to determine whether to minimize the complexity of the code you run during the UI update. Defer any processing that isn’t critical for the current UI update until after the UI update finishes.
 

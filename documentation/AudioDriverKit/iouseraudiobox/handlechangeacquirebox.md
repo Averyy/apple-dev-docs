@@ -15,11 +15,11 @@ Informs the box of a change to its acquisition state.
 virtual kern_return_t HandleChangeAcquireBox(bool in_acquire);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The default implementation calls [`SetIsAcquired`](./setisacquired.md) and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Custom drivers should override this method to validate the change, then return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to confirm the change. If acquisition fails, return the error code returned from [`GetAcquisitionFailure`](./getacquisitionfailure.md).
 

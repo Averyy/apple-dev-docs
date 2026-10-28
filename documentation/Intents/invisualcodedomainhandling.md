@@ -25,7 +25,7 @@ protocol INVisualCodeDomainHandling : INGetVisualCodeIntentHandling
 @protocol INVisualCodeDomainHandling <INGetVisualCodeIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The [`INVisualCodeDomainHandling`](./invisualcodedomainhandling.md) protocol is a convenience protocol that adopts all of the protocols used to handle QR codes and other visual codes. You can adopt this protocol instead of adopting the [`INGetVisualCodeIntentHandling`](./ingetvisualcodeintenthandling.md) protocol.
 

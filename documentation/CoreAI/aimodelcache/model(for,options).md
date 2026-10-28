@@ -23,11 +23,11 @@ final func model(for modelURL: URL, options: SpecializationOptions) throws -> AI
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Return Value
+## Return Value
 
 The model if a matching cache entry exists, or `nil` otherwise.
 
-#### Discussion
+## Discussion
 
 If this cache holds a specialized asset from previously specializing the model at `modelURL` with the specified `options`, this method loads and returns the model. This method never performs specialization.
 

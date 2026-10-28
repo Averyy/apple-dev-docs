@@ -765,8 +765,34 @@
     "handoff_from": {
       "swift": {}
     },
+    "handoff_links": {
+      "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/==(_:_:).json": [
+        [
+          "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor.json",
+          "Distributed",
+          "com.apple.swift"
+        ],
+        [
+          "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/id.json",
+          "Distributed",
+          "com.apple.swift"
+        ]
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/hash(into:).json": [
+        [
+          "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor.json",
+          "Distributed",
+          "com.apple.swift"
+        ],
+        [
+          "https://developer.apple.com/tutorials/data/documentation/distributed/distributedactor/id.json",
+          "Distributed",
+          "com.apple.swift"
+        ]
+      ]
+    },
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 190
   }

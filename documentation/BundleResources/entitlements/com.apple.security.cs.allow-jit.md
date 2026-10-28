@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may create writable and executabl
 - **Name**: `com.apple.security.cs.allow-jit` (Allow Execution of JIT-compiled Code)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 You can create memory that’s both writable and executable by passing the `MAP_JIT` flag to the `mmap()` system function. The Hardened Runtime disallows this by default, because it creates a security risk. However, some apps and system frameworks rely on this functionality, typically for performance reasons. Examples include:
 

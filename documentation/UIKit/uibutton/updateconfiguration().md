@@ -23,7 +23,7 @@ func updateConfiguration()
 - (void) updateConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in your subclass to respond changes to the button’s state. Make any necessary changes and update the button’s configuration.
 

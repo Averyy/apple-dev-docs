@@ -21,7 +21,7 @@ Creates an audio time object with the specified timestamp and sample rate.
 + (instancetype) timeWithAudioTimeStamp:(const AudioTimeStamp *) ts sampleRate:(double) sampleRate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

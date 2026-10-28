@@ -23,7 +23,7 @@ func unregisterImage(with configuration: UIImage.Configuration)
 - (void) unregisterImageWithConfiguration:(UIImageConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 This method searches for an image whose configuration details match the information in the `configuration` parameter. The configuration details must match exactly, and must be associated with an image that you registered previously.
 

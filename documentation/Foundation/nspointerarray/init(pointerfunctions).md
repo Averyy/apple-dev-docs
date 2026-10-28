@@ -25,7 +25,7 @@ init(pointerFunctions functions: NSPointerFunctions)
 - (instancetype) initWithPointerFunctions:(NSPointerFunctions *) functions;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, initialized to use the given functions.
 

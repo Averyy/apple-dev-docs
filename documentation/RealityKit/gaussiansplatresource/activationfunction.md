@@ -19,7 +19,7 @@ A transformation the framework applies to raw scale or opacity values before ren
 enum ActivationFunction
 ```
 
-#### Overview
+## Overview
 
 Trained Gaussian splat models often store scale and opacity in a form that needs a mathematical transformation. Choose the function that matches how your data was trained.
 

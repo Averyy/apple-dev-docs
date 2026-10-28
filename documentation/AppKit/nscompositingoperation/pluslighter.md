@@ -19,7 +19,7 @@ case plusLighter
 NSCompositingOperationPlusLighter
 ```
 
-#### Discussion
+## Discussion
 
 The source image is applied using the formula `R = MIN(1, S + D)`.
 

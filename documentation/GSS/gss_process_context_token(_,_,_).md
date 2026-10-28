@@ -23,11 +23,11 @@ func gss_process_context_token(_ minor_status: UnsafeMutablePointer<OM_uint32>, 
 OM_uint32 gss_process_context_token(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, gss_buffer_t const token_buffer);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 Normally, contexts exchange tokens during the initialization process, using [`gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./gss_init_sec_context%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) and in the initiator and [`gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:)`](./gss_accept_sec_context%28_,_,_,_,_,_,_,_,_,_,_%29.md) in the acceptor. Occasionally, a mechanism needs to send a token asynchronously, for example after a call to the [`gss_delete_sec_context(_:_:_:)`](./gss_delete_sec_context%28_,_,_%29.md) function when you supply an output token buffer. The `gss_process_context_token` function provides a means to supply a token received from a peer to the context unexpectedly.
 

@@ -22,7 +22,7 @@ static var crossFade: CrossFadeNavigationTransition { get }
 
 Available when `Self` is `CrossFadeNavigationTransition`.
 
-#### Discussion
+## Discussion
 
 Specify this transition in a sheet to have it appear by fading in over the content, as opposed to moving upwards to cover content.
 

@@ -23,7 +23,7 @@ case minimal
 UINavigationItemBackButtonDisplayModeMinimal
 ```
 
-#### Discussion
+## Discussion
 
 When you set the [`backButtonDisplayMode`](../backbuttondisplaymode-swift.property.md) property to this value, the Back button doesn’t display a title. Instead, it displays the Back button indicator image.
 

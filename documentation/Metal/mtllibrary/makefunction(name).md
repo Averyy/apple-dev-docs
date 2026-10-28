@@ -25,11 +25,11 @@ func makeFunction(name functionName: String) -> (any MTLFunction)?
 - (id<MTLFunction>) newFunctionWithName:(NSString *) functionName;
 ```
 
-#### Return Value
+## Return Value
 
 An [`MTLFunction`](../mtlfunction.md), or `nil` if the named function isn’t found in the library.
 
-#### Discussion
+## Discussion
 
 If you call this method to retrieve a function that doesn’t use function constants, it returns an [`MTLFunction`](../mtlfunction.md) instance that you can use to build a render or compute pipeline.
 

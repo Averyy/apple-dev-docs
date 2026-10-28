@@ -21,7 +21,7 @@ func NSEnableScreenUpdates()
 extern void NSEnableScreenUpdates();
 ```
 
-#### Discussion
+## Discussion
 
 Reenables, for all windows of a process, the flushing of drawing operations to the screen that was previously disabled by [`NSDisableScreenUpdates()`](./nsdisablescreenupdates%28%29.md). Successive calls to [`NSDisableScreenUpdates()`](./nsdisablescreenupdates%28%29.md) are placed on a stack and must be popped off that stack by matching calls to this function.
 

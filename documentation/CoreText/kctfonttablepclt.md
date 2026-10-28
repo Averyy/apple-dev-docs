@@ -23,7 +23,7 @@ var kCTFontTablePCLT: Int { get }
 kCTFontTablePCLT
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for PCL 5 data.
 

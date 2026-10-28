@@ -21,7 +21,7 @@ let kQLPreviewPropertyAttachmentsKey: CFString!
 extern CFStringRef const kQLPreviewPropertyAttachmentsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object. The keys of the dictionary are the attachment identifiers ([`CFString`](../CoreFoundation/cfstring.md) objects) that can be referenced with the `cid:id` URL. The dictionary’s values are themselves dictionaries that use the [`kQLPreviewPropertyAttachmentDataKey`](./kqlpreviewpropertyattachmentdatakey.md), [`kQLPreviewPropertyMIMETypeKey`](./kqlpreviewpropertymimetypekey.md) and [`kQLPreviewPropertyTextEncodingNameKey`](./kqlpreviewpropertytextencodingnamekey.md) properties.
 

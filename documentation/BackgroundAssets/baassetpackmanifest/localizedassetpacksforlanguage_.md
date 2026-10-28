@@ -20,11 +20,11 @@ Returns the subset of asset packs in this manifest that are available to downloa
 - (NSSet<BAAssetPack *> *) localizedAssetPacksForLanguage:(NSString *) languageIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The localized asset packs.
 
-#### Discussion
+## Discussion
 
 Depending on which languages are available, the returned asset packs’ respective languages may not exactly match the specified language.
 

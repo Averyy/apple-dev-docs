@@ -19,7 +19,7 @@ var tabView: NSTabView { get set }
 @property (strong) NSTabView * tabView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the tab view controller’s content view. The object in this property may not be the same as the one in the tab view controller’s [`view`](../nsviewcontroller/view.md) property. The tab view controller works directly with the [`NSTabView`](../nstabview.md) object, setting itself as the tab view’s delegate. You must not modify the items of the tab view directly or change its delegate. Instead, use the methods of this class to make your changes.
 

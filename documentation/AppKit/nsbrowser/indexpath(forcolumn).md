@@ -19,11 +19,11 @@ func indexPath(forColumn column: Int) -> IndexPath
 - (NSIndexPath *) indexPathForColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the column.
 
-#### Discussion
+## Discussion
 
 This method can only be used if the delegate implements the item data source methods.
 

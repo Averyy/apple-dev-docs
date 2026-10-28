@@ -22,7 +22,7 @@ var messageCommunications: [ILMessageCommunication] { get }
 @property (nonatomic, copy, readonly) NSArray<ILMessageCommunication *> * messageCommunications;
 ```
 
-#### Discussion
+## Discussion
 
 The system sorts the messages by the date received.
 

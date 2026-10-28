@@ -22,11 +22,11 @@ init(fileAt url: URL)
 - (instancetype) initWithFileAtURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 The preview object to display in AR Quick Look.
 
-#### Discussion
+## Discussion
 
 This object will be previewed in AR Quick Look using the default behavior:
 

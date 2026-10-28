@@ -20,7 +20,7 @@ Creates a dynamic library asynchronously.
 func makeDynamicLibrary(library: any MTLLibrary) async throws -> any MTLDynamicLibrary
 ```
 
-#### Return Value
+## Return Value
 
 A dynamic library upon success, otherwise this method throws.
 

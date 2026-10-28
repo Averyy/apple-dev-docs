@@ -28,7 +28,7 @@ var hasText: Bool { get }
 
 - [Handling text interactions in custom keyboards](../handling-text-interactions-in-custom-keyboards.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the backing store has textual content, [`false`](../../Swift/false.md) otherwise.
 

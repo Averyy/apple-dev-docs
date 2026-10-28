@@ -21,7 +21,7 @@ init(networkIdentifier: Int, discoveryMethod: NIDLTDOAConfiguration.DiscoveryMet
 - (instancetype) initWithNetworkIdentifier:(NSInteger) networkIdentifier discoveryMethod:(NIDLTDOADiscoveryMethod) discoveryMethod;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a DL-TDOA configuration that specifies a network identifier for a specific tracked area and the method it uses to discover anchors in the tracked area. The network identifier corresponds to the session ID configured in the DL-TDOA anchors. Anchors with the same session ID belong to the same tracked area.
 

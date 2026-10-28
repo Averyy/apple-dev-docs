@@ -21,7 +21,7 @@ class CPMessageListItem
 @interface CPMessageListItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use `CPMessageListItem` to display information about a conversation or a contact in a list template. Unlike [`CPListItem`](./cplistitem.md), you don’t provide a selection handler. Instead, when the user selects the row, CarPlay invokes Siri using the parameters you provide and begins a message compose, read, or reply flow.
 

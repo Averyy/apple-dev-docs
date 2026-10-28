@@ -25,7 +25,7 @@ case unknown
 INDateSearchTypeUnknown
 ```
 
-#### Discussion
+## Discussion
 
 When specified, don’t consider date values as part of your search criteria.
 

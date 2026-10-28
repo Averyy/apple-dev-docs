@@ -22,7 +22,7 @@ func disableUserAttachments()
 - (void) disableUserAttachments;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7.0 and later, call this method to disable the camera/attachment button in the message composition view. In an app linked against an older version of iOS, the camera/attachment button is not available in any case.
 

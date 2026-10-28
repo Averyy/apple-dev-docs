@@ -23,7 +23,7 @@ optional var collisionBoundingPath: UIBezierPath { get }
 @property (nonatomic, readonly) UIBezierPath * collisionBoundingPath;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`collisionBoundsType`](./collisionboundstype.md) property is [`UIDynamicItemCollisionBoundsType.path`](../uidynamicitemcollisionboundstype/path.md), the object in this property is used as the collision bounds. If your dynamic item implements the [`collisionBoundsType`](./collisionboundstype.md) property, you must also implement this property.
 

@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, didReceive 
 - (void) webView:(WebView *) sender resource:(id) identifier didReceiveResponse:(NSURLResponse *) response fromDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 In some rare cases, multiple responses may be received for a single resource. This happens in the case of multipart/x-mixed-replace, also known as a *server push*. In this case, delegates should assume that the progress of loading this resource restarts, and the expected content length may change.
 

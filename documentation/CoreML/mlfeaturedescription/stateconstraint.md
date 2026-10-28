@@ -25,7 +25,7 @@ var stateConstraint: MLStateConstraint? { get }
 @property (nonatomic, readonly, nullable) MLStateConstraint * stateConstraint;
 ```
 
-#### Discussion
+## Discussion
 
 The property has a value when `.type == MLFeatureTypeState`.
 

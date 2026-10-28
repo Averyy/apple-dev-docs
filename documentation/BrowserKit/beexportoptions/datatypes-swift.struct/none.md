@@ -20,7 +20,7 @@ static var none: BEExportOptions.DataTypes { get }
 BEExportDataTypesNone
 ```
 
-#### Discussion
+## Discussion
 
 When [`dataTypes`](../datatypes-swift.property.md) contains this option, don’t proceed with the export.
 

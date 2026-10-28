@@ -14,7 +14,7 @@
 kCGWindowImageDefault
 ```
 
-#### Discussion
+## Discussion
 
 When the requested capture rectangle is [`CGRectNull`](../cgrectnull.md), using this option captures the entire window plus the area required to display any framing effects, such as the window’s shadow. This is the default behavior.
 

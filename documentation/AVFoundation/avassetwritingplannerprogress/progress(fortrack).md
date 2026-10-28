@@ -24,11 +24,11 @@ func progress(forTrack assemblyTrackID: CMPersistentTrackID) -> Float
 - (float) progressForTrack:(CMPersistentTrackID) assemblyTrackID;
 ```
 
-#### Return Value
+## Return Value
 
 A float value between 0.0 and 1.0 representing the percentage of duration completed for the track. Returns 0.0 if the track ID is not found.
 
-#### Discussion
+## Discussion
 
 The progress is calculated as the ratio of completed duration to total duration for the track.
 

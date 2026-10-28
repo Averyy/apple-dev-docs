@@ -20,7 +20,7 @@ Create ML automatically decides how much of your training dataset it uses for a 
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 Create ML creates a validation dataset by partitioning up to 10% from the training dataset, depending on its size:
 

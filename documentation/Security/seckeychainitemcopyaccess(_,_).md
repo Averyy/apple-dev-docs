@@ -21,11 +21,11 @@ func SecKeychainItemCopyAccess(_ itemRef: SecKeychainItem, _ access: UnsafeMutab
 OSStatus SecKeychainItemCopyAccess(SecKeychainItemRef itemRef, SecAccessRef*access);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the access instance from a keychain item. Alternatively, you can look for the [`kSecAttrAccess`](./ksecattraccess.md) attribute among the keychain item’s attributes when you call the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) method.
 

@@ -22,7 +22,7 @@ var livePhotoMovieFileURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * livePhotoMovieFileURL;
 ```
 
-#### Discussion
+## Discussion
 
 Live Photos capture both a still image and a short movie, which the system presents together in user interfaces such as the Photos app. By default, this property’s value is `nil`, disabling Live Photo capture. Set this property to a file URL to capture Live Photos.
 

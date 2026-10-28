@@ -29,7 +29,7 @@ protocol MTLDrawable : NSObjectProtocol
 - [Managing your Metal app window in iPadOS](./managing-your-metal-app-window-in-ipados.md)
 - [Adjusting for GPU memory bandwidth tradeoffs](./adjusting-for-gpu-memory-bandwidth-tradeoffs.md)
 
-#### Overview
+## Overview
 
 Objects that implement this protocol are connected both to the Metal framework and an underlying display system (such as Core Animation) that’s capable of showing content onscreen. You use drawable objects when you want to render images using Metal and present them onscreen.
 

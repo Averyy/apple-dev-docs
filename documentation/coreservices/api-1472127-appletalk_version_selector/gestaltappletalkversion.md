@@ -14,7 +14,7 @@
 gestaltAppleTalkVersion = 'atlk'
 ```
 
-#### Discussion
+## Discussion
 
 The version number of the AppleTalk driver (in particular, the .MPP driver) currently installed.   The version number is placed into the low-order byte of the result; ignore the three high-order bytes. If an AppleTalk driver is not currently open, the `response` parameter is 0.
 

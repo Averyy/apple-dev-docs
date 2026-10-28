@@ -25,11 +25,11 @@ func CMSampleBufferGetOutputDuration(_ sbuf: CMSampleBuffer) -> CMTime
 extern CMTime CMSampleBufferGetOutputDuration(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The output duration of the `CMSampleBuffer` or `kCMTimeInvalid` if there is an error.
 
-#### Discussion
+## Discussion
 
 The output duration is the duration minus any trimmed duration, all divided by the speed multiplier:
 

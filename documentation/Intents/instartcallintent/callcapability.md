@@ -32,7 +32,7 @@ var callCapability: INCallCapability { get }
 @property (atomic, assign, readonly) INCallCapability callCapability;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the user-initiated call type. If the type of call isn’t known, the value of this property is [`INCallCapability.unknown`](../incallcapability/unknown.md).
 

@@ -21,11 +21,11 @@ func accessibilityArrayAttributeValues(_ attribute: NSAccessibility.Attribute, i
 - (NSArray *) accessibilityArrayAttributeValues:(NSAccessibilityAttributeName) attribute index:(NSUInteger) index maxCount:(NSUInteger) maxCount;
 ```
 
-#### Return Value
+## Return Value
 
 An array of values within the specified index and count.
 
-#### Discussion
+## Discussion
 
 Note that this method does not take a range. The maximum count is the maximum desired number of items requested by an accessibility client. This number may be beyond the bounds of your array.
 

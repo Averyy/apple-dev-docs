@@ -6,6 +6,10 @@ Build your app’s data model, persist that data to disk or iCloud, and access p
 
 Your app’s data drives everything you do, and Apple frameworks provide the types you need to represent that data. Build your data structures with basic types like numbers, strings, dates, URLs. Add collections and other types to organize large amounts of data. Persist data to disk securely, storing your app’s data in designated locations in the file system or in iCloud. Make use of someone’s music, contacts, photos, and other personal data in a privacy friendly way.
 
+## Standard data types and processes
+
+[Read about the standard types and processes](./standard-data-types-and-processes.md)
+
 All apps use integers, floating-point numbers, strings, URLs, collections, and other primitive types to store data. When you use [Swift Standard Library](../Swift/swift-standard-library.md) and the [Foundation](../Foundation/Foundation.md) framework, you get object-oriented versions of these types that work on all Apple platforms. These types also support security and convenience features that make them easier to use in your code.
 
 - Create types as mutable or immutable to match your planned usage.
@@ -16,9 +20,9 @@ All apps use integers, floating-point numbers, strings, URLs, collections, and o
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/standard-data-types-and-processes.png)
 
-#### Standard data types and processes
+## Structured data models
 
-[Read about the standard types and processes](./standard-data-types-and-processes.md)
+[Read about structured data models](./structured-data-models.md)
 
 Build a scalable and efficient data model for your app using technologies like [SwiftData](../SwiftData/SwiftData.md) and [Core Data](../CoreData/CoreData.md). Both technologies offer straightforward ways to build your data structures, and fetch only the data you need. They also offer the features you’d expect, like persistence, undo support, and iCloud integration.
 
@@ -29,9 +33,9 @@ Build a scalable and efficient data model for your app using technologies like [
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/structured-data-models.png)
 
-#### Structured data models
+## Files and directories
 
-[Read about structured data models](./structured-data-models.md)
+[Read about files and directories](./files-and-directories.md)
 
 Learn about the structure of the file system on Apple devices, and how to access that file system using the [Foundation](../Foundation/Foundation.md) framework. If you manage your app’s data using technologies such as [SwiftData](../SwiftData/SwiftData.md), you might not work with files often. When you do, you need to know where to put them, and how to manage them efficiently. You also need to understand some of the special conventions that Apple platforms use to minimize the complexity of the file system for people using Apple devices.
 
@@ -42,9 +46,9 @@ Learn about the structure of the file system on Apple devices, and how to access
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/files-and-directories.png)
 
-#### Files and directories
+## Shared data
 
-[Read about files and directories](./files-and-directories.md)
+[Read about shared data](./shared-data.md)
 
 Make your app’s data available where it’s needed — on one device or multiple devices. Place your data in iCloud to create a feeling of continuity for people moving from one device to the next. Similarly, share data between your app and one of your app extensions to keep your own content synchronized and up to date.
 
@@ -55,9 +59,9 @@ Make your app’s data available where it’s needed — on one device or multip
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/shared-data.png)
 
-#### Shared data
+## Personal data
 
-[Read about shared data](./shared-data.md)
+[Read about personal data](./personal-data.md)
 
 Apple devices can contain a lot of personal information, including contacts, photos, locations, health information, and more. People use the system apps to manage some of this data, but your app can also contribute to that data in a privacy friendly way. Let people know what data you plan to access.
 
@@ -67,10 +71,6 @@ Apple devices can contain a lot of personal information, including contacts, pho
 - Verify someone’s identity, age, or personal information using on-device identity documents in a privacy-friendly way.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/personal-data.png)
-
-#### Personal data
-
-[Read about personal data](./personal-data.md)
 
 ## Topics
 

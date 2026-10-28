@@ -28,7 +28,7 @@ extern NSNotificationName const UIApplicationWillEnterForegroundNotification;
 
 - [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 The `object` of the notification is the [`UIApplication`](../uiapplication.md) object. There is no `userInfo` dictionary.
 

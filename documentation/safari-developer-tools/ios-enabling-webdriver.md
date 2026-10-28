@@ -5,7 +5,7 @@
 
 Enable WebDriver to automate testing of Safari on iOS and iPadOS using a connected Mac.
 
-#### Overview
+## Overview
 
 In addition to having enabled WebDriver on the Mac you will use to remotely automate your iOS or iPadOS device, you must enable WebDriver on your device.
 

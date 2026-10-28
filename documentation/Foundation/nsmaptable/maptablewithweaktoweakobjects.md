@@ -17,11 +17,11 @@ Returns a new map table object which has weak references to the keys and values.
 + (id) mapTableWithWeakToWeakObjects;
 ```
 
-#### Return Value
+## Return Value
 
 A new map table object which has weak references to the keys and values.
 
-#### Discussion
+## Discussion
 
 `NSMapTable` objects created using this method do not support weak references under Automatic Reference Counting (ARC).
 

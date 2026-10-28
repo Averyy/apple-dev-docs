@@ -24,11 +24,11 @@ init!(newPromiseIn context: JSContext!, fromExecutor callback: ((JSValue?, JSVal
 + (JSValue *) valueWithNewPromiseInContext:(JSContext *) context fromExecutor:(void (^)(JSValue *resolve, JSValue *reject)) callback;
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValue`](../jsvalue.md) that represents a new promise JavaScript object.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to calling the `Promise()` constructor in JavaScript.
 

@@ -25,7 +25,7 @@ enum DelayedRequestDisposition
 enum NSURLSessionDelayedRequestDisposition : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The values of this enumeration indicate how to handle a task with a delayed start time (as set with the [`earliestBeginDate`](../urlsessiontask/earliestbegindate.md) property). When the task is ready to start, it calls the [`urlSession(_:task:willBeginDelayedRequest:completionHandler:)`](../urlsessiontaskdelegate/urlsession%28_,task,willbegindelayedrequest,completionhandler%29.md) method of [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md). The implementation of this method must call the provided completion handler, passing in one case of this enumeration as the first argument. If the [`URLSession.DelayedRequestDisposition.useNewRequest`](./delayedrequestdisposition/usenewrequest.md) disposition is used for the first argument, the caller must also provide a new [`NSURLRequest`](../nsurlrequest.md) as the second argument.
 

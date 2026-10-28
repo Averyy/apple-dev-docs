@@ -23,7 +23,7 @@ convenience init(fetchDescriptor: FetchDescriptor<Element> = FetchDescriptor<Ele
 
 Available when `Element` conforms to `PersistentModel` and `SectionTitle` is `Never`.
 
-#### Discussion
+## Discussion
 
 A new `ModelContext` is created from the provided container.
 

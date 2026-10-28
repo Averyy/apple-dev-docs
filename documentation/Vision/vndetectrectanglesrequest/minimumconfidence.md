@@ -24,7 +24,7 @@ var minimumConfidence: VNConfidence { get set }
 @property (nonatomic, assign, readwrite) VNConfidence minimumConfidence;
 ```
 
-#### Discussion
+## Discussion
 
 Vision won’t return rectangles with a confidence score lower than the specified minimum.
 

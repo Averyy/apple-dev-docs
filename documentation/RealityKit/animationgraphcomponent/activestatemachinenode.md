@@ -20,7 +20,7 @@ Debug information for an active state machine node within the graph.
 struct ActiveStateMachineNode
 ```
 
-#### Overview
+## Overview
 
 Use this type to read the current and previous states of a state machine, along with the most recent transition the state machine took. The state and transition values are IDs into the graph definition rather than human-readable strings.
 

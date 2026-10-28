@@ -25,7 +25,7 @@ var mediaType: AVMediaType { get }
 @property (nonatomic, readonly) AVMediaType mediaType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property might be, for example, [`audio`](../avmediatype/audio.md) or [`subtitle`](../avmediatype/subtitle.md).
 

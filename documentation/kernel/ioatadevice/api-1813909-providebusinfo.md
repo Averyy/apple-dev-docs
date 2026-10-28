@@ -12,7 +12,7 @@ virtual IOReturn provideBusInfo(
  IOATABusInfo *getInfo);
 ```
 
-#### Return Value
+## Return Value
 
 kIOSuccess (0) and the getInfo object will be filled out by the bus controller with information about the bus.
 

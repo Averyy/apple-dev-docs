@@ -23,7 +23,7 @@ func MIDIGetDestination(_ destIndex0: Int) -> MIDIEndpointRef
 extern MIDIEndpointRef MIDIGetDestination(ItemCount destIndex0);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a destination, or `NULL` if an error occurred.
 

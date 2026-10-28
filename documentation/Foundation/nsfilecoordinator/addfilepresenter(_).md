@@ -25,7 +25,7 @@ class func addFilePresenter(_ filePresenter: any NSFilePresenter)
 + (void) addFilePresenter:(id<NSFilePresenter>) filePresenter;
 ```
 
-#### Discussion
+## Discussion
 
 This method registers the file presenter object process wide. Thus, any file coordinator objects you create later automatically know about the file presenter object and know to message it when its file or directory is affected.
 

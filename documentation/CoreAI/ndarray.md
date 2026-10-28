@@ -23,7 +23,7 @@ struct NDArray
 
 - [Integrating on-device AI models in your app with Core AI](./integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Overview
+## Overview
 
 An `NDArray` stores data in a layout defined by its [`shape`](./ndarray/shape.md), [`scalarType`](./ndarray/scalartype-swift.property.md), and [`strides`](./ndarray/strides.md).
 

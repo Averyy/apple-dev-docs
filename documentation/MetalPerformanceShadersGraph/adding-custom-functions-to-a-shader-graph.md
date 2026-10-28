@@ -12,11 +12,11 @@ Run your own graph functions on the GPU by building the function programmaticall
 - Mac Catalyst 14.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10677: Build Customized ML Models with the Metal Performance Shaders Graph](https://developer.apple.com/wwdc20/10677/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample requires the following system and software configuration:
 

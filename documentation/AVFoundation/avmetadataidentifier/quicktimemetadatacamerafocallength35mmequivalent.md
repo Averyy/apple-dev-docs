@@ -25,7 +25,7 @@ static let quickTimeMetadataCameraFocalLength35mmEquivalent: AVMetadataIdentifie
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataCameraFocalLength35mmEquivalent;
 ```
 
-#### Discussion
+## Discussion
 
 This is track-level metadata for video track that is associated with the camera.
 

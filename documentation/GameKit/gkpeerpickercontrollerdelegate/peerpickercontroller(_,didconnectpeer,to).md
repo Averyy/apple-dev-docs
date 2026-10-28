@@ -24,7 +24,7 @@ optional func peerPickerController(_ picker: GKPeerPickerController, didConnectP
 - (void) peerPickerController:(GKPeerPickerController *) picker didConnectPeer:(NSString *) peerID toSession:(GKSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Once a peer is connected to the session, your application should take ownership of the session, dismiss the peer picker, and then use the session to communicate with the other peer.
 

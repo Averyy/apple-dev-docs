@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyExcludeFromSuggestions: String
 extern NSString * const MPNowPlayingInfoPropertyExcludeFromSuggestions;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as a `boolean`.
 

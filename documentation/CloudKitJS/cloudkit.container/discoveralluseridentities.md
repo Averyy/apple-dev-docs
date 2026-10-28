@@ -15,11 +15,11 @@ Fetches all user identities in the current user’s address book.
 Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverAllUserIdentities();
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.UserIdentitiesResponse`](../cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve information about other users of the app. This method returns information about those users who meet the following criteria:
 

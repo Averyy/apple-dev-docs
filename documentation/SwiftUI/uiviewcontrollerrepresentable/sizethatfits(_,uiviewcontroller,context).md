@@ -21,11 +21,11 @@ Given a proposed size, returns the preferred size of the composite view.
 @preconcurrency func sizeThatFits(_ proposal: ProposedViewSize, uiViewController: Self.UIViewControllerType, context: Self.Context) -> CGSize?
 ```
 
-#### Return Value
+## Return Value
 
 The composite size of the represented view controller. Returning a value of `nil` indicates that the system should use the default sizing algorithm.
 
-#### Discussion
+## Discussion
 
 This method may be called more than once with different proposed sizes during the same layout pass. SwiftUI views choose their own size, so one of the values returned from this function will always be used as the actual size of the composite view.
 

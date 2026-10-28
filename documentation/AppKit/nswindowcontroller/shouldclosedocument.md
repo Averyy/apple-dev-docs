@@ -19,7 +19,7 @@ var shouldCloseDocument: Bool { get set }
 @property BOOL shouldCloseDocument;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the receiver necessarily closes the associated document when the window it manages is closed, [`false`](../../Swift/false.md) otherwise. The default value is [`false`](../../Swift/false.md).
 

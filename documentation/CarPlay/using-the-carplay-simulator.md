@@ -5,13 +5,13 @@
 
 Configure Simulator to run and debug your CarPlay-enabled app.
 
-#### Overview
+## Overview
 
 Simulator provides the ability to run your CarPlay-enabled app in a second window. The window behaves as the vehicle’s primary CarPlay display, and you can interact with it like you would a real CarPlay system. Simulator provides additional options for navigation apps that you can enable to check your map content at various screen sizes and resolutions.
 
 Don’t use Simulator as your sole method of testing. Apple recommends that you also test in a vehicle or aftermarket system. If possible, use a device that supports wireless CarPlay. This allows you to use Xcode to debug your app while it’s running in a physical CarPlay environment.
 
-##### Open the CarPlay Simulator
+### Open the CarPlay Simulator
 
 Simulator doesn’t open the CarPlay window by default, but does keep it open for the rest of the session after you activate it. Simulator can’t display your CarPlay-enabled app unless it has the necessary entitlements. See [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md) for more information.
 
@@ -22,7 +22,7 @@ To open the CarPlay window:
 
 The CarPlay window is 800 x 480 pixels and uses a display scale of @2x, which represents the common configuration of many CarPlay systems.
 
-##### Enable Additional Options for Navigation Apps
+### Enable Additional Options for Navigation Apps
 
 If you’re developing a CarPlay-enabled navigation app, enable CarPlay’s additional options in Simulator, which allows you to change the window’s width, height, and scale. Use this flexibility to ensure your map content renders in all recommended configurations.
 
@@ -41,7 +41,7 @@ Apple recommends that you test your CarPlay-enabled app using the following conf
 | Standard | 800 x 480 | @2x |
 | High-resolution | 1920 x 720 | @3x |
 
-##### Go Beyond Simulator
+### Go Beyond Simulator
 
 Simulator is useful during development, but it doesn’t provide certain CarPlay features that Apple recommends you include when testing your CarPlay-enabled app.
 

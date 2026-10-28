@@ -25,7 +25,7 @@ Initializes a new label object.
 
 - [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
-#### Return Value
+## Return Value
 
 An initialized label object.
 

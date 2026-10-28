@@ -20,7 +20,7 @@ The width of the bloom blur kernel as a percentage of viewport height
 var blurRadius: Float
 ```
 
-#### Discussion
+## Discussion
 
 Valid range: `[3, 12]`
 

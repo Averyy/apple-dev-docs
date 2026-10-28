@@ -25,7 +25,7 @@ struct AudioStreamPacketDescription
 struct AudioStreamPacketDescription;
 ```
 
-#### Overview
+## Overview
 
 For data formats where the packet size isn’t constant, such as variable bit rate data and data where the channels have unequal sizes, use this structure to supplement the information in the [`AudioStreamBasicDescription`](./audiostreambasicdescription.md) structure.
 

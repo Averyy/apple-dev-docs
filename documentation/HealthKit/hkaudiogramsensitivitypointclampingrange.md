@@ -24,7 +24,7 @@ class HKAudiogramSensitivityPointClampingRange
 @interface HKAudiogramSensitivityPointClampingRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 At times, it may be required to indicate that a sensitivity point has been clamped to a range. These reasons include but are not limited to user safety, hardware limitations, or algorithm features.
 

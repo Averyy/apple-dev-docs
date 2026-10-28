@@ -21,7 +21,7 @@ A curve that starts out slowly, then speeds up as it finishes.
 static let circularEaseIn: UnitCurve
 ```
 
-#### Discussion
+## Discussion
 
 The shape of the curve is equal to the fourth (bottom right) quadrant of a unit circle.
 

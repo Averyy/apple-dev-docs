@@ -19,7 +19,7 @@ final var groupImmersionStyle: SystemCoordinator.GroupImmersionStyles { get }
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 During an activity, the system uses this property to communicate the style for a currently open immersive space. When no participants are displaying an immersive space, the value of this property is `nil`. When any participant displays a space, the system sets the value for all participants to the immersion style of the newly presented space. When a participant presents a space with a different presentation style, the system also updates the property to reflect the new style. For example, if the group is currently in a space with the [`full`](../../SwiftUI/immersionstyle/full.md) style, it updates the property when someone presents a space with the [`full`](../../SwiftUI/immersionstyle/full.md) style.
 

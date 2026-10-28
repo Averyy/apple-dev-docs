@@ -23,7 +23,7 @@ optional var supportsAdaptiveImageGlyph: Bool { get set }
 @property (nonatomic) BOOL supportsAdaptiveImageGlyph;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`false`](../../Swift/false.md), the input system doesn’t allow the text input to contain adaptive images. Set the value of this property to [`true`](../../Swift/true.md) only if your document supports adaptive images and handles them properly. For more information, see [`NSAdaptiveImageGlyph`](../nsadaptiveimageglyph.md)
 

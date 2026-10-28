@@ -25,7 +25,7 @@ final func reportVolatileMetadataUpdate(_ updatedMetadata: VolatileMetadata?)
 
 - [Getting started with StateReporting](../getting-started-with-statereporting.md)
 
-#### Discussion
+## Discussion
 
 Use this method to update rapidly-changing data — such as a progress value or a running count — while staying within the same state. If no state is currently active, this call is a no-op. Calling this method more frequently than user interaction timescales can trigger rate limiting, causing updates to go unlogged.
 

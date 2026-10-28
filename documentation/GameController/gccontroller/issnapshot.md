@@ -24,7 +24,7 @@ var isSnapshot: Bool { get }
 @property (readonly, getter=isSnapshot) BOOL snapshot;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the controller is a snapshot of a controller. A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. If [`false`](../../Swift/false.md), the controller is a real or virtual controller.
 

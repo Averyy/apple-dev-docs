@@ -17,11 +17,11 @@ Creates the view controller object and configures its initial state.
 @preconcurrency func makeNSViewController(context: Self.Context) -> Self.NSViewControllerType
 ```
 
-#### Return Value
+## Return Value
 
 Your AppKit view controller configured with the provided information.
 
-#### Discussion
+## Discussion
 
 You must implement this method and use it to create your view controller object. Create the view controller using your app’s current data and contents of the `context` parameter. The system calls this method only once, when it creates your view controller for the first time. For all subsequent updates, the system calls the [`updateNSViewController(_:context:)`](./updatensviewcontroller%28_,context%29.md) method.
 

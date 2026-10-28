@@ -20,7 +20,7 @@ A subscription-renewal behavior in the testing environment that cancels the subs
 case cancelImmediately
 ```
 
-#### Discussion
+## Discussion
 
 Choose this option for test cases that require an auto-renewable subscription that won’t renew.
 

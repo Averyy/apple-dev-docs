@@ -21,11 +21,11 @@ An effect that replaces a symbol by removing it, and scaling a different symbol 
 + (instancetype) replaceOffUpTransition;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the transition that uses the Off-Up animation.
 
-#### Discussion
+## Discussion
 
 The initial symbol is removed with no animation, and the new symbol scales up as it’s added.
 

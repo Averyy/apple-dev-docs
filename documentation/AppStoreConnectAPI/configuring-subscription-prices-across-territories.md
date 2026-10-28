@@ -5,11 +5,11 @@
 
 Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
 
-#### Overview
+## Overview
 
 The App Store Connect API lets you choose which plan type — monthly or up-front — is available for an auto-renewable subscription in each territory, and then set a consistent price for that subscription everywhere you offer it. Rather than calculating a comparable price for every territory yourself, you can read the *adjusted equalizations* of a base price point and reuse the equalized price points the API returns. This workflow assumes you already created a subscription in a subscription group. To create one, see [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md).
 
-##### Review App Store Connect API usage
+### Review App Store Connect API usage
 
 To manage auto-renewable subscriptions with the App Store Connect API, you need to understand key concepts for using the API. If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [App Store Connect API](./AppStoreConnectAPI.md) and learn how to create API keys, generate JWTs, identify rate limits, and more.
 
@@ -21,7 +21,7 @@ To configure subscription plan types and prices, be sure you have one of the fol
 
 For the full list of App Store Connect user roles, see [`UserRole`](./userrole.md) and [Program Roles](https://developer.apple.com/support/roles).
 
-##### Plan your pricing
+### Plan your pricing
 
 Before you set prices, decide which plan type you offer in each territory and which territory’s price anchors the rest.
 
@@ -42,7 +42,7 @@ Map out your offering before you start. The following example plans a single sub
 | Canada (CAN) | `MONTHLY` | equalized from USA |
 | Japan (JPN) | `MONTHLY` | equalized from USA |
 
-##### Set plan type availability
+### Set plan type availability
 
 Declare which plan type is available for the subscription in each territory by using `POST /v1/subscriptionPlanAvailabilities` ([`Create a subscription plan availability`](./post-v1-subscriptionplanavailabilities.md)). The request requires a `planType` attribute and relationships to the `subscription` and the `availableTerritories` the plan type applies to.
 
@@ -77,7 +77,7 @@ Here’s an example payload:
 
 To review or change which territories offer a plan type later, use [`List plan availabilities for a subscription`](./get-v1-subscriptions-_id_-planavailabilities.md) to list the plan availabilities on a subscription, then [`Replace the available territories for a subscription plan availability`](./patch-v1-subscriptionplanavailabilities-_id_-relationships-availableterritories.md) to update the territories. For more detail, see [Subscription plan availability](./subscription-plan-availability.md).
 
-##### Look up a base price point
+### Look up a base price point
 
 Choose the base price for your subscription in your anchor territory, then look up the price point ID that represents it. Use `GET /v1/subscriptions/{id}/pricePoints` ([`List all price points for a subscription`](./get-v1-subscriptions-_id_-pricepoints.md)) and filter by territory to keep the response small.
 
@@ -111,7 +111,7 @@ Here’s an example response, truncated for clarity:
 
 Note the `id` of the price point whose `customerPrice` matches the base price you planned. You use it as the base price point in the next step.
 
-##### Equalize the price across territories
+### Equalize the price across territories
 
 With your base price point, read its adjusted equalizations to get the comparable price point in every other territory. Use `GET /v1/subscriptionPricePoints/{id}/adjustedEqualizations` ([`List adjusted equalizations for a subscription price point`](./get-v1-subscriptionpricepoints-_id_-adjustedequalizations.md)), where `{id}` is the base price point ID from the previous step.
 
@@ -164,7 +164,7 @@ Here’s an example response, truncated for clarity:
 
 Each entry is the equalized price point for one territory. Note the `id` of each price point — you assign these when you set prices.
 
-##### Set prices per territory
+### Set prices per territory
 
 Assign a price point to the subscription in each territory by using `POST /v1/subscriptionPrices` ([`Create a subscription price change`](./post-v1-subscriptionprices.md)). The request requires relationships to the `subscription` and the `subscriptionPricePoint`. Set `startDate` to `null` to apply the price immediately, or to a future date to schedule the change. Include `planType` to match the plan you made available.
 
@@ -200,7 +200,7 @@ Here’s an example payload that sets the equalized Canadian price point:
 
 Repeat this call for each territory, using the equalized price point ID you noted for that territory. There’s no bulk endpoint that applies equalized prices in a single call.
 
-##### Verify your prices
+### Verify your prices
 
 Confirm the prices you set by using `GET /v1/subscriptions/{id}/prices` ([`List all prices for a subscription`](./get-v1-subscriptions-_id_-prices.md)). Filter by plan type and territory to check a specific configuration.
 

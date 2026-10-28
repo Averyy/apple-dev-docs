@@ -23,7 +23,7 @@ func IODispatchCalloutFromMessage(_ unused: UnsafeMutableRawPointer!, _ msg: Uns
 void IODispatchCalloutFromMessage(void *unused, mach_msg_header_t *msg, void *reference);
 ```
 
-#### Discussion
+## Discussion
 
 A notification object may deliver notifications to a mach messaging client, which should call this function to generate the callbacks associated with the notifications arriving on the port.
 

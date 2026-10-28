@@ -24,7 +24,7 @@ var contents: Any? { get set }
 @property (strong, nullable) id contents;
 ```
 
-#### Discussion
+## Discussion
 
 A layer can set this property to a [`CGImage`](../../CoreGraphics/cgimage.md) to display the image as its contents.
 

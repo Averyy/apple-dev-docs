@@ -19,7 +19,7 @@ func DisposeOSLAccessorUPP(_ userUPP: OSLAccessorUPP!)
 void DisposeOSLAccessorUPP(OSLAccessorUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLAccessorProcPtr`](./oslaccessorprocptr.md) callback function. 
 

@@ -25,11 +25,11 @@ func objc_loadWeak(_ location: AutoreleasingUnsafeMutablePointer<AnyObject?>) ->
 extern idobjc_loadWeak(id*location);
 ```
 
-#### Return Value
+## Return Value
 
 The object pointed to by `location`, or `nil` if `location` is `nil`.
 
-#### Discussion
+## Discussion
 
 This function loads the object referenced by a weak pointer and returns it after retaining and autoreleasing the object. As a result, the object stays alive long enough for the caller to use it. This function is typically used anywhere a `__weak` variable is used in an expression.
 

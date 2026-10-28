@@ -19,7 +19,7 @@ func itemViewForItem(at index: Int) -> NSScrubberItemView?
 - (NSScrubberItemView *) itemViewForItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The view for the specified index or `nil` if the item is not currently visible.
 

@@ -25,7 +25,7 @@ var COMPRESSION_STATUS_ERROR: compression_status { get }
 COMPRESSION_STATUS_ERROR
 ```
 
-#### Discussion
+## Discussion
 
 If there’s an error with stream compression or decompression, for example if the encoded data is corrupted, [`compression_stream_process(_:_:)`](./compression_stream_process%28_,_%29.md) returns [`COMPRESSION_STATUS_ERROR`](./compression_status_error.md).
 

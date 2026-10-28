@@ -21,7 +21,7 @@ static var playthroughOK: MPMovieLoadState { get }
 MPMovieLoadStatePlaythroughOK
 ```
 
-#### Discussion
+## Discussion
 
 Enough data has been buffered for playback to continue uninterrupted.
 

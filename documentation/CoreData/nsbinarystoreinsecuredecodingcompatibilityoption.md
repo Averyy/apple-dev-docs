@@ -25,7 +25,7 @@ let NSBinaryStoreInsecureDecodingCompatibilityOption: String
 extern NSString * const NSBinaryStoreInsecureDecodingCompatibilityOption;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`NSBinaryStoreSecureDecodingClasses`](./nsbinarystoresecuredecodingclasses.md) option instead, if possible, to allow Core Data to securely decode the binary store.
 

@@ -15,7 +15,7 @@ The supply sources and placements where this ad creative is not eligible to serv
 object CreativeEligibility.BlockedGroups
 ```
 
-#### Discussion
+## Discussion
 
 Each entry pairs a set of supply placements with the country or region codes where the ad creative is blocked, along with the reason for the block.
 

@@ -25,11 +25,11 @@ func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishe
 
 - [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
-#### Return Value
+## Return Value
 
 A publisher that buffers elements received from an upstream publisher.
 
-#### Discussion
+## Discussion
 
 Use [`buffer(size:prefetch:whenFull:)`](./buffer%28size,prefetch,whenfull%29.md) to collect a specific number of elements from an upstream publisher before republishing them to the downstream subscriber according to the [`Publishers.BufferingStrategy`](../publishers/bufferingstrategy.md) and [`Publishers.PrefetchStrategy`](../publishers/prefetchstrategy.md) strategy you specify.
 

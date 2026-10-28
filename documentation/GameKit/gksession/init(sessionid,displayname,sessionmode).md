@@ -26,11 +26,11 @@ init!(sessionID: String!, displayName name: String!, sessionMode mode: GKSession
 - (id) initWithSessionID:(NSString *) sessionID displayName:(NSString *) name sessionMode:(GKSessionMode) mode;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized session object, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Only sessions running with the same `sessionID` are visible to your session.
 

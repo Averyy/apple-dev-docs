@@ -17,7 +17,7 @@ var kOBEXHeaderIDName: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDName
 ```
 
-#### Discussion
+## Discussion
 
 Name of the object. Null terminated unicode text.
 

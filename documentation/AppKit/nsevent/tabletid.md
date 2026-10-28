@@ -19,7 +19,7 @@ var tabletID: Int { get }
 @property (readonly) NSUInteger tabletID;
 ```
 
-#### Discussion
+## Discussion
 
 This property is valid for mouse events with subtype `NSTabletProximityEventSubtype` and for `NSTabletProximity` events.
 

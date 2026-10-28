@@ -24,11 +24,11 @@ class func success(with resolvedMass: Measurement<UnitMass>) -> Self
 + (instancetype) successWithResolvedMass:(NSMeasurement<NSUnitMass *> *) resolvedMass;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMassResolutionResult`](../inmassresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

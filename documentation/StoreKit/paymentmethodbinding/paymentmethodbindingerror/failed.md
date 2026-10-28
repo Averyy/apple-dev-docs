@@ -18,7 +18,7 @@ The initialization or binding operation failed.
 case failed
 ```
 
-#### Discussion
+## Discussion
 
 The methods of the [`PaymentMethodBinding`](../../paymentmethodbinding.md) struct can fail if the app isn’t entitled to use this API, or if other errors occur.
 

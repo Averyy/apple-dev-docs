@@ -19,7 +19,7 @@ var directories: [String : VZSharedDirectory] { get }
 @property (copy, readonly) NSDictionary<NSString *,VZSharedDirectory *> * directories;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary string keys are the names for the directory. The keys must be valid names or the system raises an exception.
 

@@ -16,7 +16,7 @@ case success
 INGetUserCurrentRestaurantReservationBookingsIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app was successful in fetching the user’s reservations, even if the fetch returned no results. Include all of the reservations that match the search criteria in the [`userCurrentBookings`](../ingetusercurrentrestaurantreservationbookingsintentresponse/usercurrentbookings.md) property of your response object.
 

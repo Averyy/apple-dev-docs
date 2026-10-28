@@ -32,7 +32,7 @@ var label: INPersonHandleLabel? { get }
 @property (atomic, readonly, nullable) INPersonHandleLabel label;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property to distinguish between person handles with similar types of information. For example, you might use it to distinguish between a person’s home and work phone numbers.
 

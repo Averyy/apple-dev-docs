@@ -27,11 +27,11 @@ func loadObjects(ofClass aClass: any NSItemProviderReading.Type, completion: @es
 
 - [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
-#### Return Value
+## Return Value
 
 An aggregate of the load progress for each object that is loaded.
 
-#### Discussion
+## Discussion
 
 You can use this method only in the drop interaction delegate’s implementation of the [`dropInteraction(_:performDrop:)`](../uidropinteractiondelegate/dropinteraction%28_,performdrop%29.md) method. This method is called after the user drops the items into the destination view.
 

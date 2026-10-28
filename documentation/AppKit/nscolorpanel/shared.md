@@ -19,7 +19,7 @@ class var shared: NSColorPanel { get }
 @property (class, strong, readonly) NSColorPanel * sharedColorPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The shared `NSColorPanel` instance.
 

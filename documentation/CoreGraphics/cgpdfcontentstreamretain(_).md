@@ -25,7 +25,7 @@ func CGPDFContentStreamRetain(_ cs: CGPDFContentStreamRef) -> CGPDFContentStream
 extern CGPDFContentStreamRefCGPDFContentStreamRetain(CGPDFContentStreamRef cs);
 ```
 
-#### Return Value
+## Return Value
 
 The same PDF content stream you passed in as the `cs` parameter.
 

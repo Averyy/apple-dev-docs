@@ -21,7 +21,7 @@ A URL that locates a file saved to disk.
 var fileURL: URL? { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 If the file is saved outside of your app’s container, make sure to surround access to file contents with `startAccessingSecurityScopedResource()` and `stopAccessingSecurityScopedResource()`.
 

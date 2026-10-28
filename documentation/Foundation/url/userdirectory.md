@@ -21,7 +21,7 @@ The container directory of user home directories.
 static var userDirectory: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this directory is within the app’s sandbox directory. In macOS, it’s within the app’s sandbox directory for sandboxed apps, or the `/Users` directory if the app isn’t sandboxed.
 

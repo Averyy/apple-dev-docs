@@ -21,7 +21,7 @@ func clearGLContext()
 - (void) clearGLContext;
 ```
 
-#### Discussion
+## Discussion
 
 If necessary, this method calls the [`clearDrawable()`](../nsopenglcontext/cleardrawable%28%29.md) method of the context object before releasing it.
 

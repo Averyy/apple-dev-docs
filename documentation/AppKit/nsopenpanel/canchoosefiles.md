@@ -19,7 +19,7 @@ var canChooseFiles: Bool { get set }
 @property BOOL canChooseFiles;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), users can choose files in the panel.
 

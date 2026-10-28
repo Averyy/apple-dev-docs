@@ -23,7 +23,7 @@ var isHighlighted: Bool { get set }
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 ```
 
-#### Discussion
+## Discussion
 
 This property manages the highlight state of the cell only. The default value of this property is [`false`](../../Swift/false.md), which indicates that the cell isn’t in a highlighted state.
 

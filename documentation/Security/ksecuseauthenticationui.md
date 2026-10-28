@@ -25,7 +25,7 @@ let kSecUseAuthenticationUI: CFString
 extern CFStringRef const kSecUseAuthenticationUI;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains one of the values listed in [UI authentication values](./search-attribute-keys-and-values.md#UI-authentication-values). The value specifies whether or not the user is prompted for authentication, if needed. A default value of [`kSecUseAuthenticationUIAllow`](./ksecuseauthenticationuiallow.md) is assumed when this key is not present.
 

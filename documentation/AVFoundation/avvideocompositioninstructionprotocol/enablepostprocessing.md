@@ -25,7 +25,7 @@ var enablePostProcessing: Bool { get }
 @property (nonatomic, readonly) BOOL enablePostProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 A value of [`false`](../../Swift/false.md) indicates to skip post-processing for the duration of the instruction.
 

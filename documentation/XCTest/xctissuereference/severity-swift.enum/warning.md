@@ -16,7 +16,7 @@ case warning
 XCTIssueSeverityWarning
 ```
 
-#### Discussion
+## Discussion
 
 An issue with warning severity does not cause the test it’s associated with to be marked as a failure, but is noted in the results.
 

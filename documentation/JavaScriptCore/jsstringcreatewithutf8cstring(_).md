@@ -24,7 +24,7 @@ func JSStringCreateWithUTF8CString(_ string: UnsafePointer<CChar>!) -> JSStringR
 JSStringRefJSStringCreateWithUTF8CString(const char *string);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSStringRef`](./jsstringref.md) that contains `string`. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

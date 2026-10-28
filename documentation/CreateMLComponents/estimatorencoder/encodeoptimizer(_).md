@@ -22,7 +22,7 @@ Encodes an estimator optimizer.
 mutating func encodeOptimizer<T>(_ value: T) throws where T : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 Optimizers are used when fitting an estimator and usually contain state information such as momentum. This method encodes the optimizer state separately from model parameters.
 

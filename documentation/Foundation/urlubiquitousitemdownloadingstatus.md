@@ -25,7 +25,7 @@ struct URLUbiquitousItemDownloadingStatus
 typedef NSString * NSURLUbiquitousItemDownloadingStatus;
 ```
 
-#### Discussion
+## Discussion
 
 These constants are possible values for the [`ubiquitousItemDownloadingStatusKey`](./urlresourcekey/ubiquitousitemdownloadingstatuskey.md) key.
 

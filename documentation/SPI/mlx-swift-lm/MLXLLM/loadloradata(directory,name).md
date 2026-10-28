@@ -17,7 +17,7 @@ Load a LoRA data file.
 func loadLoRAData(directory: URL, name: String) throws -> [String]
 ```
 
-#### Discussion
+## Discussion
 
 Given a directory and a base name, e.g. `train`, this will load a `.jsonl` or `.txt` file if possible.
 

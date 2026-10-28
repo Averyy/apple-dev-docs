@@ -25,14 +25,14 @@ func compression_stream_destroy(_ stream: UnsafeMutablePointer<compression_strea
 extern compression_status compression_stream_destroy(compression_stream *stream);
 ```
 
-##### Return Value
+### Return Value
 
 A value of type [`compression_status`](./compression_status.md), interpreted as follows:
 
 - [`COMPRESSION_STATUS_OK`](./compression_status_ok.md) means that the function successfully destroyed the stream.
 - [`COMPRESSION_STATUS_ERROR`](./compression_status_error.md) means an error occurred.
 
-#### Discussion
+## Discussion
 
 Note that [`compression_stream_destroy(_:)`](./compression_stream_destroy%28_%29.md) doesn’t free the stream object or the buffers allocated by the caller.
 

@@ -22,7 +22,7 @@ func GLKMatrix3InvertAndTranspose(_ matrix: GLKMatrix3, _ isInvertible: UnsafeMu
 GLKMatrix3 GLKMatrix3InvertAndTranspose(GLKMatrix3 matrix, bool *isInvertible);
 ```
 
-#### Return Value
+## Return Value
 
 If `isInvertible` was set to [`true`](../Swift/true.md), this holds an inverted and transposed matrix. Otherwise, the identity matrix is returned.
 

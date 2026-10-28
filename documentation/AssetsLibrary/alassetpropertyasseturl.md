@@ -12,7 +12,7 @@ The key to retrieve a URL identifier for the asset.
 extern NSString * const ALAssetPropertyAssetURL;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSURL`](../Foundation/nsurl.md) object.
 

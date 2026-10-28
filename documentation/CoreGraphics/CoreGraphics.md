@@ -15,7 +15,7 @@ Harness the power of Quartz technology to perform lightweight 2D rendering with 
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 The Core Graphics framework is based on the Quartz advanced drawing engine. It provides low-level, lightweight 2D rendering with unmatched output fidelity. You use this framework to handle path-based drawing, transformations, color management, offscreen rendering, patterns, gradients and shadings, image data management, image creation, and image masking, as well as PDF document creation, display, and parsing.
 

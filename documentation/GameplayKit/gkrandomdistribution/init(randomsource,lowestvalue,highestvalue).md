@@ -24,11 +24,11 @@ init(randomSource source: any GKRandom, lowestValue lowestInclusive: Int, highes
 - (instancetype) initWithRandomSource:(id<GKRandom>) source lowestValue:(NSInteger) lowestInclusive highestValue:(NSInteger) highestInclusive;
 ```
 
-#### Return Value
+## Return Value
 
 A new random distribution.
 
-#### Discussion
+## Discussion
 
 A random distribution works by mapping the values produced by the `source` randomizer to the range and characteristics specified by the distribution. Multiple distributions can share the same source, with the side effect that retrieving a random value through one distribution affects the sequence of random numbers produced by the source.
 

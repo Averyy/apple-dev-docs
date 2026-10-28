@@ -19,7 +19,7 @@ init?(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A metadata item for the file identified by `url`.
 

@@ -23,11 +23,11 @@ var adaptivePresentationStyle: UIModalPresentationStyle { get }
 @property (nonatomic, readonly) UIModalPresentationStyle adaptivePresentationStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The value provided by the presentation controller’s delegate or [`UIModalPresentationStyle.none`](../uimodalpresentationstyle/none.md) if a delegate was not provided or does not return a valid value.
 
-#### Discussion
+## Discussion
 
 After the content managed by the presentation controller is onscreen, this method returns the presentation style to use when transitioning to a horizontally compact environment. This method is not meant to be overridden. The implementation consults its delegate object and returns the value provided by that object’s [`adaptivePresentationStyle(for:)`](../uiadaptivepresentationcontrollerdelegate/adaptivepresentationstyle%28for%29.md) method. Some system-supplied presentation controllers may also provide a new style that is more suited for a compact environment. For example, presentation controllers that manage popovers and form sheets return the [`UIModalPresentationStyle.fullScreen`](../uimodalpresentationstyle/fullscreen.md) value.
 

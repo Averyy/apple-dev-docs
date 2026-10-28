@@ -17,7 +17,7 @@ An error that indicates the client doesn’t have permission to access a request
 case permissionDenied
 ```
 
-#### Discussion
+## Discussion
 
 This failure happens when a person declines the EnergyKit approval prompt. A person can adjust the relevant setting in:
 

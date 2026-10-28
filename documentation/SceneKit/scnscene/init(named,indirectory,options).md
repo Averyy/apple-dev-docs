@@ -25,11 +25,11 @@ convenience init?(named name: String, inDirectory directory: String?, options: [
 + (instancetype) sceneNamed:(NSString *) name inDirectory:(NSString *) directory options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new scene object, or `nil` if no scene could be loaded.
 
-#### Discussion
+## Discussion
 
 This method provides a convenient way to load a complete scene from a file in the app’s main bundle. Calling this method is equivalent to using the [`Bundle`](../../Foundation/bundle.md) class to locate the scene file and passing the resulting URL to the [`init(url:options:)`](./init%28url,options%29-7ugvv.md) method.
 

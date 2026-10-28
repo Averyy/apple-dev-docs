@@ -16,7 +16,7 @@ Updates a notification with new content.
 func updateNotification(_ notification: AccessoryNotification)
 ```
 
-#### Discussion
+## Discussion
 
 Accessories don’t need to alert the person for notification updates; update the displayed notification content without triggering additional alerts.
 

@@ -27,7 +27,7 @@ var value: Any? { get }
 @property (readonly, nullable) id value;
 ```
 
-#### Discussion
+## Discussion
 
 The exact type of `value` varies based on the type of the element.
 

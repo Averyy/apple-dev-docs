@@ -19,11 +19,11 @@ class func shared() -> QLPreviewPanel!
 + (QLPreviewPanel *) sharedPreviewPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The shared Quick Look preview panel instance for the application.
 
-#### Discussion
+## Discussion
 
 This method creates the panel if it doesn’t exist yet. Use [`sharedPreviewPanelExists()`](./sharedpreviewpanelexists%28%29.md) if you want to determine whether the panel exists without creating it.
 

@@ -23,7 +23,7 @@ case failure
 INGetCarLockStatusIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that would prevent your app from getting the car’s lock status.
 

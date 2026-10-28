@@ -19,7 +19,7 @@ The shape to use for the hover effect.
 @preconcurrency var shape: UIShape? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil`, the system chooses a default shape based on the view.
 

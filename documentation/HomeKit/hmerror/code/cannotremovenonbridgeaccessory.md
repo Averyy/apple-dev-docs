@@ -24,7 +24,7 @@ case cannotRemoveNonBridgeAccessory
 HMErrorCodeCannotRemoveNonBridgeAccessory
 ```
 
-#### Discussion
+## Discussion
 
 You can only remove standalone or bridge accessories.
 

@@ -5,7 +5,7 @@
 
 Access the diffable data source’s implementations of protocol methods.
 
-#### Overview
+## Overview
 
 The diffable data source type conforms to several protocols, including [`NSCollectionViewDataSource`](./nscollectionviewdatasource.md) and [`Hashable`](../Swift/hashable.md). This page lists the diffable data source type’s implementations of those protocol requirements.
 

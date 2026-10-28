@@ -22,7 +22,7 @@ A type that applies a custom appearance to all labels within a view.
 @preconcurrency protocol LabelStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current label style for a view hierarchy, use the [`labelStyle(_:)`](./view/labelstyle%28_%29.md) modifier.
 

@@ -26,7 +26,7 @@ func cancelPendingPrerolls()
 - (void) cancelPendingPrerolls;
 ```
 
-#### Discussion
+## Discussion
 
 This method cancels and releases the completion handlers for any pending prerolls. The finished parameter of the completion handlers passed to [`preroll(atRate:completionHandler:)`](./preroll%28atrate,completionhandler%29.md) will be set to `false`.
 

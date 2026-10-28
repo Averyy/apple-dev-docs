@@ -20,7 +20,7 @@ The name of the stage as you want it to appear in the pipeline.
 static var name: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Keep stage names simple and descriptive, and don’t use the same stage name for multiple custom stage types.
 

@@ -24,7 +24,7 @@ static let time: CHHapticPattern.Key
 extern CHHapticPatternKey CHHapticPatternKeyTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with the key is a real number in units of seconds.
 

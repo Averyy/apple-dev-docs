@@ -5,13 +5,13 @@
 
 Create an encrypted login response and configure the concatenation key derivation function (Concat KDF).
 
-#### Overview
+## Overview
 
 The identity provider (IdP) creates a login response, which is a JWE that’s encrypted according to RFC 7516 Section 5.1 with JWE Compact Serialization. The supported key agreement algorithm is ECDH-ES per RFC 7518 Section 4.6. See the following section for a description of the concatenation key derivation function (Concat KDF) inputs.
 
 Key agreement uses the public key for the `UserDeviceEncryptionKey` that’s exchanged during registration. The supported encryption algorithm is A256GCM per RFC 7518 Section 5.3.
 
-##### Configure Concat KDF
+### Configure Concat KDF
 
 RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2 describe the configuration of Concat KDF for Platform SSO. See the table below for input definitions. The system concatenates the values per NIST.800-56A sections 5.8.1, and then computes a SHA-256 hash that it uses to create the key. The login response header needs to contain the `PartyUInfo`.
 
@@ -115,7 +115,7 @@ The Concat KDF result is:
 
 `A146E4A23BDA2E53826C04D2F442BCFBD87BC2719D74B8A7DA00AF976267712E`
 
-##### Create the response JWE header
+### Create the response JWE header
 
 The response is a JWE that’s decrypted according to RFC 7516 Section 5.2 with JWE Compact Serialization.
 
@@ -150,7 +150,7 @@ The following code provides an example of a login response JWE header:
 }
 ```
 
-##### Create the response JWE body
+### Create the response JWE body
 
 The IdP creates a successful login response formatted per the OpenID spec, including an `id_token` and `refresh_token`. The `refresh_token` is the token that the system uses for SSO.
 
@@ -178,7 +178,7 @@ The following code provides an example of a login response JWE body:
 }
 ```
 
-##### Handle a failed response
+### Handle a failed response
 
 If the response returns a status code other than `200`, Platform SSO checks whether there’s a credential failure. If the credential is incorrect, the system prompts the user to enter it again. Other errors require another login attempt at a later time.
 
@@ -198,7 +198,7 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-##### Use the Kerberos mapping
+### Use the Kerberos mapping
 
 The SSO response from the IdP can optionally include Kerberos ticket-granting tickets (TGTs) for the user. Platform SSO uses the kerberos mapping from the login configuration to import the TGTs into a Kerberos cache and optionally use the TGT with the Kerberos extension.
 

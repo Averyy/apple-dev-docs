@@ -21,7 +21,7 @@ Hashes the essential components of the digest by feeding them into the given has
 func hash(into hasher: inout Hasher)
 ```
 
-#### Discussion
+## Discussion
 
 This method is part of the digest’s conformance to Swift standard library’s [`Hashable`](../../Swift/hashable.md) protocol, making it possible to compare digests. Don’t confuse that hashing with the cryptographically secure hashing that you use to create the digest in the first place by, for example, calling `SHA384/hash(data:)`.
 

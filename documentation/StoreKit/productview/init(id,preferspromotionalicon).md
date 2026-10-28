@@ -22,7 +22,7 @@ nonisolated
 init(id productID: Product.ID, prefersPromotionalIcon: Bool = false) where Icon == EmptyView, PlaceholderIcon == EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 By default, the view doesn’t show an icon. If you set the `prefersPromotionalIcon` parameter to `true`, the view displays a placeholder icon while loading, and replaces the placeholder with the promotional image for the product.
 

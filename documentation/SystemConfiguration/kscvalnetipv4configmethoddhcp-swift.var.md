@@ -19,7 +19,7 @@ let kSCValNetIPv4ConfigMethodDHCP: CFString
 extern CFStringRef const kSCValNetIPv4ConfigMethodDHCP;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetIPv4ConfigMethod`](./kscpropnetipv4configmethod-swift.var.md) key.
 

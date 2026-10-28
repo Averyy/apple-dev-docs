@@ -24,7 +24,7 @@ var identifier: String { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 An example classification could be a string like `cat` or `hotdog`.  The model used for the classification defines the domain of strings that may result.  Usually, these strings are unlocalized technical labels not meant for direct presentation to the end user.
 

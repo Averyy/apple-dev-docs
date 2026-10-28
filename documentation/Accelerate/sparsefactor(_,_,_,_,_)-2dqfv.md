@@ -25,11 +25,11 @@ func SparseFactor(_ symbolicFactor: SparseOpaqueSymbolicFactorization, _ Matrix:
 static SparseOpaqueFactorization_Complex_Float SparseFactor(SparseOpaqueSymbolicFactorization SymbolicFactor, SparseMatrix_Complex_Float Matrix, SparseNumericFactorOptions nfoptions, void *factorStorage, void *workspace);
 ```
 
-#### Return Value
+## Return Value
 
 Factorization of Matrix.
 
-#### Discussion
+## Discussion
 
 Note that internal memory allocations may occur in the case of pivoted factorizations that result in delayed pivots. If you require closer control over memory allocations, supply a `sfoptions.malloc()` function that implements the required behaviour, or use an alternative non-pivoted factorization returns. Note that if `sfoptions.malloc()` returns NULL the factorization will abort immediately.
 

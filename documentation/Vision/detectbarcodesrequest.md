@@ -21,7 +21,7 @@ A request that detects barcodes in an image.
 struct DetectBarcodesRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates a collection of [`BarcodeObservation`](./barcodeobservation.md) objects that describe each barcode the request detects.
 

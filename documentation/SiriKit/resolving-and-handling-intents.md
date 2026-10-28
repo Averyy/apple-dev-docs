@@ -5,7 +5,7 @@
 
 Resolve, confirm, and handle user requests for your app’s services.
 
-#### Overview
+## Overview
 
 SiriKit works with your Intents app extension to verify that you are able to fulfill the user’s request based on the provided information. During the resolution phase, you validate the individual parameters of an intent object and ask SiriKit for clarifications as needed. During the confirmation phase, you perform one final check of all intent parameters and verify that your services are ready to fulfill the intent. If you validate the intent successfully, SiriKit asks you to handle the intent.
 

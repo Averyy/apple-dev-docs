@@ -20,11 +20,11 @@ optional func application(_ application: NSApplication, handlerFor intent: INInt
 - (id) application:(NSApplication *) application handlerForIntent:(INIntent *) intent;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of a type capable of handling the specified intent, or `nil` if your app doesn’t handle the intent. Return an instance of a type that conforms to the protocol for handling intents of the same type as the provided `intent`.
 
-#### Discussion
+## Discussion
 
 Siri invokes this method on the main queue when it wants to process one of your app’s supported intents. To indicate the intents that your app supports, populate the [`INIntentsSupported`](../../BundleResources/information-property-list/inintentssupported.md) array in your app target’s `Info.plist` file.
 

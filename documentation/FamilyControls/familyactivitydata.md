@@ -16,11 +16,11 @@ An interface to a person’s family activity data.
 class FamilyActivityData
 ```
 
-#### Overview
+## Overview
 
 To fetch a person’s family activity data, use [`installedApplications`](./familyactivitydata/installedapplications.md), [`visitedWebDomains`](./familyactivitydata/visitedwebdomains.md), or [`activityCategories`](./familyactivitydata/activitycategories.md) based on the type of data you need.
 
-##### Region support, authorization, and entitlement
+### Region support, authorization, and entitlement
 
 You can develop and test an app that uses this class on devices in any region. Customer installations of your app can only use the class on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 

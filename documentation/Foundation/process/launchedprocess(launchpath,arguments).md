@@ -21,11 +21,11 @@ class func launchedProcess(launchPath path: String, arguments: [String]) -> Proc
 + (NSTask *) launchedTaskWithLaunchPath:(NSString *) path arguments:(NSArray<NSString *> *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSTask` object with the supplied `arguments`.
 
-#### Discussion
+## Discussion
 
 The task inherits its environment from the process that invokes this method.
 

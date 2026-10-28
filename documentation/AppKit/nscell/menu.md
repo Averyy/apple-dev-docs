@@ -19,7 +19,7 @@ var menu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * menu;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a menu containing contextual commands associated with the cell. If the cell does not have a menu, set this property to `nil`.
 

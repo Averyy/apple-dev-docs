@@ -19,7 +19,7 @@ class NSProgressIndicator
 @interface NSProgressIndicator : NSView
 ```
 
-#### Overview
+## Overview
 
 Progress indicators can be determinate or indeterminate. A determinate indicator displays the completion percentage of a task. An indeterminate indicator shows that the app is busy without providing a visual indication of how long the task will take.
 

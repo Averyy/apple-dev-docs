@@ -25,11 +25,11 @@ convenience init?(forReadingAtPath path: String)
 + (instancetype) fileHandleForReadingAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized file handle object or `nil` if no file exists at `path`.
 
-#### Discussion
+## Discussion
 
 The system sets the file pointer to the beginning of the file. You can’t write data to the returned file handle object. Use the [`readDataToEndOfFile()`](./readdatatoendoffile%28%29.md) or [`readData(ofLength:)`](./readdata%28oflength%29.md) methods to read data from it.
 

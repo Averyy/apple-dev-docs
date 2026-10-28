@@ -23,7 +23,7 @@ Creates a view representing the body of a progress view.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 The view hierarchy calls this method for each progress view where this style is the current progress view style.
 

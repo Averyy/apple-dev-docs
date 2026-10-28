@@ -11,7 +11,7 @@ Releases a reference to the object, freeing it immediately if the reference coun
 virtual void release() const;
 ```
 
-#### Overview
+## Overview
 
 This function decrements the reference count of the receiver by 1. If the reference count drops to zero, the object is immediately freed using free.
 

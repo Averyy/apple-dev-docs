@@ -21,7 +21,7 @@ A type that can be initialized by string interpolation with a string literal tha
 protocol ExpressibleByStringInterpolation : ExpressibleByStringLiteral
 ```
 
-#### Overview
+## Overview
 
 Use string interpolation to include one or more expressions in a string literal, wrapped in a set of parentheses and prefixed by a backslash. For example:
 
@@ -33,17 +33,17 @@ print(message)
 // Prints "One cookie: $2, 3 cookies: $6."
 ```
 
-### Extending the Default Interpolation Behavior
+## Extending the Default Interpolation Behavior
 
 Add new interpolation behavior to existing types by extending `DefaultStringInterpolation`, the type that implements interpolation for types like `String` and `Substring`, to add an overload of `appendInterpolation(_:)` with their new behavior.
 
 For more information, see the `DefaultStringInterpolation` and `StringInterpolationProtocol` documentation.
 
-### Creating a Type That Supports the Default String Interpolation
+## Creating a Type That Supports the Default String Interpolation
 
 To create a new type that supports string literals and interpolation, but that doesn’t need any custom behavior, conform the type to `ExpressibleByStringInterpolation` and implement the `init(stringLiteral: String)` initializer declared by the `ExpressibleByStringLiteral` protocol. Swift will automatically use `DefaultStringInterpolation` as the interpolation type and provide an implementation for `init(stringInterpolation:)` that passes the interpolated literal’s contents to `init(stringLiteral:)`, so you don’t need to implement anything specific to this protocol.
 
-### Creating a Type That Supports Custom String Interpolation
+## Creating a Type That Supports Custom String Interpolation
 
 If you want a conforming type to differentiate between literal and interpolated segments, restrict the types that can be interpolated, support different interpolators from the ones on `String`, or avoid constructing a `String` containing the data, the type must specify a custom `StringInterpolation` associated type. This type must conform to `StringInterpolationProtocol` and have a matching `StringLiteralType`.
 

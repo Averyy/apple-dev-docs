@@ -20,11 +20,11 @@ func animator() -> Self
 - (instancetype) animator;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a proxy object for the receiver that can initiate implied animations in response to property changes.
 
-#### Discussion
+## Discussion
 
 The animator proxy object  should be treated as if it was the receiver itself, and may be passed to any code that accepts the receiver as a parameter.
 

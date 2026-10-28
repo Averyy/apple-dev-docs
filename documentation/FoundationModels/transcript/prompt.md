@@ -20,7 +20,7 @@ A prompt from the user to the model.
 struct Prompt
 ```
 
-#### Overview
+## Overview
 
 Prompts typically contain content sourced directly from the user, though you may choose to augment prompts by interpolating content from end users into a template that you control.
 

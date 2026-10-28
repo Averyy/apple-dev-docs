@@ -17,7 +17,7 @@ An object that defines the appearance of a shield to display over an application
 struct ShieldConfiguration
 ```
 
-#### Overview
+## Overview
 
 The system provides a default appearance for any properties you set to `nil`.
 

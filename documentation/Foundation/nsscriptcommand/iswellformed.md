@@ -20,7 +20,7 @@ var isWellFormed: Bool { get }
 @property (readonly, getter=isWellFormed) BOOL wellFormed;
 ```
 
-#### Discussion
+## Discussion
 
 The method ensures that there is a description of the command and that the number of arguments and the types of non-specifier arguments conform to the command description.
 

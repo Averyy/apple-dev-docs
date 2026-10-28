@@ -19,7 +19,7 @@ static var fullScreenDisallowsTiling: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorFullScreenDisallowsTiling
 ```
 
-#### Discussion
+## Discussion
 
 For more information about full-screen tile window support, see [`fullScreenAllowsTiling`](./fullscreenallowstiling.md).
 

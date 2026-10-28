@@ -24,11 +24,11 @@ func JSStringCreateWithCFString(_ string: CFString!) -> JSStringRef!
 JSStringRefJSStringCreateWithCFString(CFStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSStringRef`](./jsstringref.md) that contains `string`. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The system optimizes this function to take advantage of cases when [`CFStringGetCharactersPtr(_:)`](../CoreFoundation/cfstringgetcharactersptr%28_%29.md) returns a valid pointer.
 

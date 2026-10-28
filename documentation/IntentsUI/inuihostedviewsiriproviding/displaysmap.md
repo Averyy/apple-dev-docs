@@ -26,7 +26,7 @@ optional var displaysMap: Bool { get }
 
 - [Configuring the View Controller for Your Custom Interface](../../SiriKit/configuring-the-view-controller-for-your-custom-interface.md)
 
-#### Discussion
+## Discussion
 
 Implement this property and return [`true`](../../Swift/true.md) when you want your view controller to provide the map showing location-related information. If you do not implement this property, or your implementation returns [`false`](../../Swift/false.md), Siri displays its own map in addition to the content that you provide.
 

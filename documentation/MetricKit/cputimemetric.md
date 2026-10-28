@@ -18,7 +18,7 @@ A metric that measures the total CPU time used by the app.
 struct CPUTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.cpuTime(_:)`](./metricresult/cputime%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

@@ -17,7 +17,7 @@ The grayscale color-space model.
 static const NSColorSpaceModel NSGrayColorSpaceModel;
 ```
 
-#### Discussion
+## Discussion
 
 Can refer to both device-dependent and generic color space variants.
 

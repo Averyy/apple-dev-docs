@@ -22,7 +22,7 @@ func GLKQuaternionLength(_ quaternion: GLKQuaternion) -> Float
 static float GLKQuaternionLength(GLKQuaternion quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The length of the quaternion.
 

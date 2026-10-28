@@ -15,11 +15,11 @@ Determine if there is currently a mount occurring which will cover this vnode.
 int vnode_ismount(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if there is a mount in progress, 0 otherwise.
 
-#### Discussion
+## Discussion
 
 Note that this is only a snapshot; a mount may begin or end at any time.
 

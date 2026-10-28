@@ -20,7 +20,7 @@ Creates a portal component with a target entity, clipping mode, and crossing mod
 init(target: Entity, clippingMode: PortalComponent.ClippingMode, crossingMode: PortalComponent.CrossingMode)
 ```
 
-#### Discussion
+## Discussion
 
 To render a portal, an entity needs a [`PortalComponent`](../portalcomponent.md) and a [`ModelComponent`](../modelcomponent.md), using one or more [`PortalMaterial`](../portalmaterial.md) instances.
 

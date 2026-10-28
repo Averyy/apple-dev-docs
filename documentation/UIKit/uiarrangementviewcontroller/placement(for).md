@@ -20,7 +20,7 @@ Returns the placement for the view controller you provide in the arrangement.
 @preconcurrency final func placement(for viewController: UIViewController) -> UIArrangementViewController.ViewPlacement?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the provided view controller isn’t one of the view controllers in the arrangement with a specific placement.
 

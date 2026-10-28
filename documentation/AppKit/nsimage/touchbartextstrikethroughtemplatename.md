@@ -22,7 +22,7 @@ class let touchBarTextStrikethroughTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextStrikethroughTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for strikethrough text](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825137@2x.png)
 

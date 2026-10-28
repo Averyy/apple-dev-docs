@@ -5,7 +5,7 @@
 
 Build your intents from types that define common behaviors such as opening or deleting items, playing or recording media, and more.
 
-#### Overview
+## Overview
 
 The app intents you create conform to the [`AppIntent`](./appintent.md) protocol for basic features, but you can choose other protocols as an alternate starting point. You might choose a different protocol for an intent that offers a specific behavior or supports a particular capability. For example, use the [`OpenIntent`](./openintent.md) protocol if your app intent launches your app and displays a specific item. These protocols also conform to the [`AppIntent`](./appintent.md) protocol, giving you both the base features and the additional behaviors you need for your specific app intent.
 

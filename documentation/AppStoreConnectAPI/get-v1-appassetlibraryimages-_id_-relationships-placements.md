@@ -13,9 +13,9 @@ Get a list of placement resource IDs for a specific app asset library image.
 
 - [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -23,7 +23,7 @@ protocol RemoteMediaSessionExtension<Attributes> : AppExtension
 
 - [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
-#### Overview
+## Overview
 
 Implement this protocol in your app extension to handle remote playback sessions.
 

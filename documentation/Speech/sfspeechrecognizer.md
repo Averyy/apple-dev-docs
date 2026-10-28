@@ -27,7 +27,7 @@ class SFSpeechRecognizer
 
 - [Asking Permission to Use Speech Recognition](./asking-permission-to-use-speech-recognition.md)
 
-#### Overview
+## Overview
 
 An [`SFSpeechRecognizer`](./sfspeechrecognizer.md) object is the central object for managing the speech recognizer process. Use this object to:
 
@@ -35,7 +35,7 @@ An [`SFSpeechRecognizer`](./sfspeechrecognizer.md) object is the central object 
 - Specify the language to use during the recognition process.
 - Initiate new speech recognition tasks.
 
-##### Set up speech recognition
+### Set up speech recognition
 
 Each speech recognizer supports only one language, which you specify at creation time. The successful creation of a speech recognizer does not guarantee that speech recognition services are available. For some languages, the recognizer might require an Internet connection. Use the [`isAvailable`](./sfspeechrecognizer/isavailable.md) property to find out if speech recognition services are available for the current language.
 
@@ -50,7 +50,7 @@ To initiate the speech recognition process, do the following:
 
 The type of recognition request object you create depends on whether you are processing an existing audio file or an incoming stream of audio. For existing audio files, create a [`SFSpeechURLRecognitionRequest`](./sfspeechurlrecognitionrequest.md) object. For audio streams, create a [`SFSpeechAudioBufferRecognitionRequest`](./sfspeechaudiobufferrecognitionrequest.md) object.
 
-##### Create a great user experience for speech recognition
+### Create a great user experience for speech recognition
 
 Here are some tips to consider when adding speech recognition support to your app.
 

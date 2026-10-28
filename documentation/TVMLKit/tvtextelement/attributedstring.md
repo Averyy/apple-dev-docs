@@ -21,7 +21,7 @@ var attributedString: NSAttributedString? { get }
 @property (nonatomic, readonly, nullable) NSAttributedString * attributedText;
 ```
 
-#### Discussion
+## Discussion
 
 The text for an element is an [`NSAttributedString`](../../Foundation/nsattributedstring.md) object.
 

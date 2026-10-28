@@ -24,7 +24,7 @@ string CampaignDisplayStatus
 - `PROCESSING`: The campaign was recently created or modified and is being processed.
 - `DELETED`: The campaign has been soft-deleted.
 
-#### Discussion
+## Discussion
 
 The `CampaignDisplayStatus` is a read-only, derived field on [`Campaign`](./campaign.md) that surfaces the effective delivery state. It combines `CampaignStatus` (advertiser intent) and `CampaignSystemStatus` (system evaluation) into one actionable label. Use this field when displaying campaign health in a UI. Inspect `CampaignSystemStatusReason` for the root cause when the status isn’t `RUNNING`.
 

@@ -21,7 +21,7 @@ Appends a timer interval to a string interpolation.
 mutating func appendInterpolation(timerInterval: ClosedRange<Date>, pauseTime: Date? = nil, countsDown: Bool = true, showsHours: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 

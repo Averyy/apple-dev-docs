@@ -24,7 +24,7 @@ var isHighResolutionCaptureEnabled: Bool { get set }
 @property (nonatomic, getter=isHighResolutionCaptureEnabled) BOOL highResolutionCaptureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Some capture formats support output of still images at a resolution higher than the resolution they use for live preview and video capture (see the [`AVCaptureDevice.Format`](../avcapturedevice/format.md) [`highResolutionStillImageDimensions`](../avcapturedevice/format/highresolutionstillimagedimensions.md) property). Under some conditions, a capture session needs to set up its internal rendering pipeline differently to support high resolution still image capture.
 

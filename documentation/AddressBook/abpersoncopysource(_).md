@@ -23,7 +23,7 @@ func ABPersonCopySource(_ person: ABRecord!) -> Unmanaged<ABRecord>!
 extern ABRecordRefABPersonCopySource(ABRecordRef person);
 ```
 
-#### Return Value
+## Return Value
 
 The source of the person record.
 

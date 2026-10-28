@@ -19,7 +19,7 @@ Determines if the asset is Cinematic asynchronously.
 class func isCinematic(asset: AVAsset) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A flag that indicates whether the asset is Cinematic.
 

@@ -21,7 +21,7 @@ Only present if the audio sample is an independent frame or immediate playout fr
 var audioIndependentSampleDecoderRefreshCount: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Zero indicates an Immediate Playout Frame. Non-zero indicates an Independent Frame.
 

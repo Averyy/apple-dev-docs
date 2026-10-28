@@ -25,7 +25,7 @@ case resetting
 CBManagerStateResetting
 ```
 
-#### Discussion
+## Discussion
 
 This state indicates that Bluetooth is trying to reconnect. After it reconnects, Core Bluetooth updates the state value.
 

@@ -25,7 +25,7 @@ func convertToUserSpace(_ point: CGPoint) -> CGPoint
 extern CGPoint CGContextConvertPointToUserSpace(CGContextRef c, CGPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates of the point in user space coordinates.
 

@@ -40,7 +40,7 @@ func mapRectThatFits(_ mapRect: MKMapRect, edgePadding insets: NSEdgeInsets) -> 
 - (MKMapRect) mapRectThatFits:(MKMapRect) mapRect edgePadding:(NSEdgeInsets) insets;
 ```
 
-#### Return Value
+## Return Value
 
 MapKit centers the map rectangle on the same point of the map, and adjusts the width and height to fit in the map view’s frame, minus its inset values.
 

@@ -32,7 +32,7 @@ var soundSetting: UNNotificationSetting { get }
 @property (atomic, readonly) UNNotificationSetting soundSetting;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`UNNotificationSetting.enabled`](../unnotificationsetting/enabled.md), the system authorizes the app to play sounds. The system tries to play a sound when the [`sound`](../unnotificationcontent/sound.md) property of the [`UNNotificationContent`](../unnotificationcontent.md) object contains a value, or when the `aps` dictionary in a remote notification contains the `sound` key.
 

@@ -15,7 +15,7 @@ The universally unique identifier (UUID) of the device.
 readonly attribute String vendorIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The UUID for a device stays the same across all apps from a vendor.
 

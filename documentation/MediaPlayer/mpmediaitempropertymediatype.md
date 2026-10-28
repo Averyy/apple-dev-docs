@@ -25,7 +25,7 @@ let MPMediaItemPropertyMediaType: String
 extern NSString * const MPMediaItemPropertyMediaType;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object that represents an [`NSInteger`](../ObjectiveC/nsinteger.md) data type. The `NSInteger` value represents a bit field flag, or set of flags, from [`MPMediaType`](./mpmediatype.md).
 

@@ -15,11 +15,11 @@ Returns a copy of a property from a protocol handler reference.
 CFTypeRef WSProtocolHandlerCopyProperty(WSProtocolHandlerRef ref, CFStringRef propertyName);
 ```
 
-#### Return Value
+## Return Value
 
 The `CFTypeRef` value of the property, or `NULL` if the specified property does not exist.
 
-#### Discussion
+## Discussion
 
 Returns a property from a protocol handler.  If the result is `NULL`, the property doesn't exist.  Since this is a Copy call, you must release the result.
 

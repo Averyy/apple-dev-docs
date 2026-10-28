@@ -23,7 +23,7 @@ func histogram() -> vImage.PixelBuffer<Format>.Histogram8888
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Return Value
+## Return Value
 
 The histogram of the pixel buffer.
 

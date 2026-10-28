@@ -19,7 +19,7 @@ var image: UIImage? { get }
 @property (readonly, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is set using the [`init(image:)`](./init%28image%29.md) method. For image objects created using other methods, this property is `nil`.
 

@@ -21,7 +21,7 @@ Flag indicating that the code was signed by the linker and not an invocation of 
 static let isSignedByLinker: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `CS_LINKER_SIGNED` in C APIs.
 

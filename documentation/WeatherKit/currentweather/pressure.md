@@ -21,7 +21,7 @@ The sea level air pressure in millibars.
 var pressure: Measurement<UnitPressure>
 ```
 
-#### Discussion
+## Discussion
 
 This is a reduced pressure calculated by using observed conditions to remove the effects of elevation from pressure readings.
 

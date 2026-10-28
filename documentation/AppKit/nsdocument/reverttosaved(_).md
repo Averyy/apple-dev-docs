@@ -20,7 +20,7 @@ func revertToSaved(_ sender: Any?)
 - (void) revertDocumentToSaved:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method presents an alert dialog giving the user the opportunity to cancel the operation. If the user chooses to continue, the method ensures that any editor registered using the Cocoa Bindings `NSEditorRegistration` informal protocol has discarded its changes and then invokes [`revert(toContentsOf:ofType:)`](./revert%28tocontentsof,oftype%29.md). If that returns [`false`](../../Swift/false.md), the method presents the error to the user in an document-modal alert dialog.
 

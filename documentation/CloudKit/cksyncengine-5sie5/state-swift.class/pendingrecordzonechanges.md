@@ -21,7 +21,7 @@ A list of record zone changes that the sync engine has yet to send to the iCloud
 final var pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This array contains any pending record zone changes to send to the iCloud servers. After the sync engine sends those changes, your app’s sync delegate receives an event of type [`CKSyncEngine.Event.SentRecordZoneChanges`](../event/sentrecordzonechanges.md).
 

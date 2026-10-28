@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sq
 
 # mlx.core.square
 
-**square(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise square.
+```python
+square(a: array, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+Element-wise square.
 
-Returns:
-The square of `a`.
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The square of `a`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

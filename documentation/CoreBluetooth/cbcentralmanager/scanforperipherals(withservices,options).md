@@ -25,7 +25,7 @@ func scanForPeripherals(withServices serviceUUIDs: [CBUUID]?, options: [String :
 - (void) scanForPeripheralsWithServices:(NSArray<CBUUID *> *) serviceUUIDs options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide an array of [`CBUUID`](../cbuuid.md) objects — representing service UUIDs — in the `serviceUUIDs` parameter. When you do, the central manager returns only peripherals that advertise the services you specify. If the `serviceUUIDs` parameter is `nil`, this method returns all discovered peripherals, regardless of their supported services.
 

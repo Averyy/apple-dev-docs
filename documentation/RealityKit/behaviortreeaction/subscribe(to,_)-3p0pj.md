@@ -28,7 +28,7 @@ Shadows the `EntityAction.subscribe(to:_:)` overload that takes a `-> Void` clos
 @preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> ActionResult)
 ```
 
-#### Discussion
+## Discussion
 
 When the handler doesn’t return a value, the action status is preserved: the value already in `actionStatusPointer` at the time the handler is called is read and written back, leaving the behavior tree’s status unchanged.
 

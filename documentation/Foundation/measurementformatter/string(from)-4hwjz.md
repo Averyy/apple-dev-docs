@@ -25,7 +25,7 @@ func string(from unit: Unit) -> String
 - (NSString *) stringFromUnit:(NSUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A user-readable string that represents the unit of measure. If the unit cannot be localized, the unit’s [`symbol`](../unit/symbol.md) value is used.
 

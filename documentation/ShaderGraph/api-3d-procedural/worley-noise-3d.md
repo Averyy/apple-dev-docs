@@ -14,7 +14,7 @@ A 3D Worley noise generator.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Worley Noise 3D (float)**:
 
@@ -49,12 +49,12 @@ A 3D Worley noise generator.
 | --- | --- |
 | `Out` | Vector2f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Position`**: The 3D coordinates at which the node reads the data for mapping a texture to a surface. The default uses the current 3D object-space coordinates.
 - **`Jitter`**: The amount of *jitter* or shift the center of each cell experiences. The default value is `1.0`. A smaller value creates a more regular pattern, and `0` creates perfect squares.
 
-#### Discussion
+## Discussion
 
 The `Worley Noise 3D` node procedurally generates nonuniform cellular regions. The node creates a finite number of center points, and each region is a polygon that surrounds the points closest to each center point. Because this node generates noise in 3D, the texture doesn’t repeat in the Z direction but rather continues as depth changes. Below is an example of a simple node graph that uses the `Worley Noise 3D` node to generate a black and white pattern procedurally:
 

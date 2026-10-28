@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the size contains the specified p
 static bool SPSize3DContainsPoint(SPSize3D size, SPPoint3D other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the size contains the specified point.
 

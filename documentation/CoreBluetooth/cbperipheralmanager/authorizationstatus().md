@@ -27,11 +27,11 @@ class func authorizationStatus() -> CBPeripheralManagerAuthorizationStatus
 + (CBPeripheralManagerAuthorizationStatus) authorizationStatus;
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the app has authorization to share data using Bluetooth services while in the background. For a list of possible values, see [`CBPeripheralManagerAuthorizationStatus`](../cbperipheralmanagerauthorizationstatus.md).
 
-#### Discussion
+## Discussion
 
 The system manages the authorization status of a given app, and considers several factors. The user must explicitly authorize apps to share data using Bluetooth services while in the background state. The system automatically displays a request for user authorization when your app first attempts to use Bluetooth services to share data.
 

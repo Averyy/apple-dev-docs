@@ -6,7 +6,7 @@
 
 A Boolean that indicates whether the embedded movie should be considered when performing step operations.
 
-#### Overview
+## Overview
 
 This is specifically using the interesting time calls with the `nextTimeStep` flag. If this atom is not present or is set to false, the embedded movie is not included in step calculations. If the atom is set to true, it is included in step calculations.
 

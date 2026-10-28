@@ -23,7 +23,7 @@ class ActivationRequestOptions
 @interface UIWindowSceneActivationRequestOptions : UISceneActivationRequestOptions
 ```
 
-#### Overview
+## Overview
 
 Create a [`UIWindowScene.ActivationRequestOptions`](./activationrequestoptions.md) object before you activate a scene using the [`activateSceneSession(for:errorHandler:)`](../uiapplication/activatescenesession%28for,errorhandler%29.md) (Swift) or [`activateSceneSessionForRequest:errorHandler:`](../uiapplication/activatescenesessionforrequest_errorhandler_.md) (Objective-C) method of [`UIApplication`](../uiapplication.md). Use this object to specify the preferred presentation style of the new scene.
 

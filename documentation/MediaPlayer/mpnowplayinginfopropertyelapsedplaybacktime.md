@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyElapsedPlaybackTime: String
 extern NSString * const MPNowPlayingInfoPropertyElapsedPlaybackTime;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as a `double`. Elapsed time is automatically calculated, by the system, from the previously provided elapsed time and the playback rate. It isn’t necessary to update this property frequently.
 

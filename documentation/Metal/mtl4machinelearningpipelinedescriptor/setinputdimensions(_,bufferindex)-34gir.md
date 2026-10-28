@@ -24,7 +24,7 @@ func setInputDimensions(_ dimensions: MTLTensorExtents?, bufferIndex: Int)
 - (void) setInputDimensions:(MTLTensorExtents *) dimensions atBufferIndex:(NSInteger) bufferIndex;
 ```
 
-#### Discussion
+## Discussion
 
 When the compiled model declares the input as unranked (unknown rank), any concrete `dimensions` are accepted. Otherwise `dimensions.rank` must equal the model’s input rank, and each static (non `-1`) dimension must match.
 

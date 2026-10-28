@@ -21,17 +21,17 @@ func CGInhibitLocalEvents(_ inhibit: boolean_t) -> CGError
 extern CGError CGInhibitLocalEvents(boolean_t inhibit);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See the result codes described in [Quartz Display Services](./quartz-display-services.md).
 
-#### Discussion
+## Discussion
 
 This function is typically used during remote operation of a system to disconnect the keyboard and mouse for a short period of time, as in automated system testing or telecommuting applications.
 
 The `CGInhibitLocalEvents` function is not recommended for general use because of undocumented special cases and undesirable side effects. For example, this function can permanently disable the keyboard and mouse, rendering the system unusable. The recommended replacement for this function is [`setLocalEventsFilterDuringSuppressionState(_:state:)`](./cgeventsource/setlocaleventsfilterduringsuppressionstate%28_,state%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v10.2 and earlier, this function inhibits local events only after a synthetic keyboard or mouse event is posted by the calling application. In macOS 10.3 and later, event inhibition takes effect immediately. If your application terminates for any reason, event inhibition on the remote system is immediately turned off.
 

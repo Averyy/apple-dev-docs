@@ -22,7 +22,7 @@ weak var delegate: (any PKAddPassesViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<PKAddPassesViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 For information about the protocol that the delegate must implement, see [`PKAddPassesViewControllerDelegate`](../pkaddpassesviewcontrollerdelegate.md).
 

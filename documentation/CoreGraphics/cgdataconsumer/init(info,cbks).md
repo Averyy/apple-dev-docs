@@ -25,7 +25,7 @@ init?(info: UnsafeMutableRawPointer?, cbks: UnsafePointer<CGDataConsumerCallback
 extern CGDataConsumerRefCGDataConsumerCreate(void *info, const CGDataConsumerCallbacks *cbks);
 ```
 
-#### Return Value
+## Return Value
 
 A new data consumer object. In Objective-C, you’re responsible for releasing this object using [`CGDataConsumerRelease`](../cgdataconsumerrelease.md).
 

@@ -21,7 +21,7 @@ Modifies the format style to use the specified sign display strategy.
 func sign(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified sign display strategy.
 

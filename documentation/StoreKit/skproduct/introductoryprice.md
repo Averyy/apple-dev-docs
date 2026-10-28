@@ -31,7 +31,7 @@ var introductoryPrice: SKProductDiscount? { get }
 
 - [Implementing introductory offers in your app](../implementing-introductory-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 If you’ve set up introductory prices in App Store Connect, the introductory price property will be populated. This property is `nil` if the product has no introductory price.
 

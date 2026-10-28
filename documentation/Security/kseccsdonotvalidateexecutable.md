@@ -20,7 +20,7 @@ var kSecCSDoNotValidateExecutable: UInt32 { get }
 kSecCSDoNotValidateExecutable
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the main executable are normally validated.
 

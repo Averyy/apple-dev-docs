@@ -19,11 +19,11 @@ func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, sta
 - (BOOL) restoreWindowWithIdentifier:(NSUserInterfaceItemIdentifier) identifier state:(NSCoder *) state completionHandler:(void (^)(NSWindow *, NSError *)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the window was restored; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the receiver knows how to restore the identified window, it should invoke the completion handler with the window, possibly creating it. It is acceptable to use a pre-existing window, though you should not pass the same window to more than one completion handler. If the receiver cannot restore the identified window (for example, the window referenced a document that has been deleted), it should invoke the completion handler with a nil window.
 

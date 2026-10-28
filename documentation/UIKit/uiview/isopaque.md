@@ -23,7 +23,7 @@ var isOpaque: Bool { get set }
 @property (nonatomic, getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a hint to the drawing system as to how it should treat the view. If set to [`true`](../../Swift/true.md), the drawing system treats the view as fully opaque, which allows the drawing system to optimize some drawing operations and improve performance. If set to [`false`](../../Swift/false.md), the drawing system composites the view normally with other content. The default value of this property is [`true`](../../Swift/true.md).
 

@@ -19,7 +19,7 @@ func removeItem(at index: Int)
 - (void) removeItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The removed object receives a `release` message. This method raises an `NSRangeException` if `index` is beyond the end of the list and logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 

@@ -21,11 +21,11 @@ Returns a value from a uniform, independent distribution of binary data.
 mutating func next<T>() -> T where T : FixedWidthInteger, T : UnsignedInteger
 ```
 
-#### Return Value
+## Return Value
 
 A random value of `T`. Bits are randomly distributed so that every value of `T` is equally likely to be returned.
 
-#### Discussion
+## Discussion
 
 Use this method when you need random binary data to generate another value. If you need an integer value within a specific range, use the static `random(in:using:)` method on that integer type instead of this method.
 

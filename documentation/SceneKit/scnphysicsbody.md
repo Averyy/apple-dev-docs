@@ -25,13 +25,13 @@ class SCNPhysicsBody
 @interface SCNPhysicsBody : NSObject
 ```
 
-#### Overview
+## Overview
 
 When SceneKit prepares to render a new frame, it performs physics calculations on physics bodies attached to nodes in the scene. These calculations include gravity, friction, and collisions with other bodies. You can also apply your own forces and impulses to a body. After SceneKit completes these calculations, it updates the positions and orientations of the node objects before rendering the frame.
 
 To add physics to a node, create and configure an [`SCNPhysicsBody`](./scnphysicsbody.md) object and then assign it to the [`physicsBody`](./scnnode/physicsbody.md) property of the [`SCNNode`](./scnnode.md) object. A physics body must be associated with a node object before you apply forces or impulses to it.
 
-##### A Body’s Physical Characteristics
+### A Body’s Physical Characteristics
 
 The [`SCNPhysicsBody`](./scnphysicsbody.md) class defines the physical characteristics for the body when it is simulated by the scene. Three properties are most important for physics simulation:
 
@@ -43,13 +43,13 @@ All values in SceneKit’s physics simulation use the International System of Un
 
 For a dynamic body, you can control how the body is affected by forces or collisions. See Defining How Forces Affect a Physics Body.
 
-##### Defining a Body’s Category and Collisions
+### Defining a Body’s Category and Collisions
 
 When you design a game that uses physics, you define the different categories of physics objects that appear in the scene. You define different categories of physics bodies for the behaviors your want for your app. A body can be assigned to as many of these categories as you want. In addition to declaring its own categories, a physics body also declares which categories of bodies it interacts with.
 
 Use the [`categoryBitMask`](./scnphysicsbody/categorybitmask.md) and [`collisionBitMask`](./scnphysicsbody/collisionbitmask.md) properties to define an object’s collision behavior. The constants listed in [`SCNPhysicsCollisionCategory`](./scnphysicscollisioncategory.md) provide default values for these properties. In addition, with the [`contactTestBitMask`](./scnphysicsbody/contacttestbitmask.md) property you can define interactions where a pair of bodies generates contact messages (see the [`SCNPhysicsContactDelegate`](./scnphysicscontactdelegate.md) protocol) without the bodies being affected by the collision.
 
-##### Related Physics Classes
+### Related Physics Classes
 
 Physics fields create forces that affect all bodies in an area, such as vortices and gravitational attraction. For details and a list of available field types, see [`SCNPhysicsField`](./scnphysicsfield.md).
 
@@ -57,7 +57,7 @@ You can add higher-level behaviors that control interactions between multiple bo
 
 A scene’s [`physicsWorld`](./scnscene/physicsworld.md) property holds an [`SCNPhysicsWorld`](./scnphysicsworld.md) object that manages physics characteristics that affect the entire scene.
 
-##### Physics and the Rendering Loop
+### Physics and the Rendering Loop
 
 SceneKit evaluates its physics simulation as part of the rendering loop described in [`SCNSceneRendererDelegate`](./scnscenerendererdelegate.md). On each pass through this loop, SceneKit determines the state of all nodes with attached physics bodies, and simulates the effects of physics on those bodies for one time step—for example, by updating the position or rotation of a body based on its velocity and angular velocity. After simulating physics, SceneKit applies the results of the physics simulation to the scene for display.
 

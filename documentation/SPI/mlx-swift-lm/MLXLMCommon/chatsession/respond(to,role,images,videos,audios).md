@@ -17,7 +17,7 @@ Produces a response to a prompt.
 func respond(to prompt: String, role: Chat.Message.Role = .user, images: consuming [UserInput.Image], videos: consuming [UserInput.Video], audios: consuming [UserInput.Audio]) async throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 The model’s response
 

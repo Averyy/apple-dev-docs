@@ -5,17 +5,17 @@
 
 Support modern, phishing-resistant, and flexible authentication methods.
 
-#### Overview
+## Overview
 
 With web-based authentication, Platform Single Sign-on (Platform SSO) presents a built-in web view that loads your identity provider’s OAuth 2.0/OpenID Connect (OIDC) authorization endpoint. You define the content of the web view and any required authentication steps.
 
-#### Prepare the SSO extension
+## Prepare the SSO extension
 
 Web-based authentication uses the Platform SSO 2.0 protocol and specifically requires support of the key service and shared device keys. For more information, see [Creating extensions that support Platform SSO](./creating-extensions-that-support-platform-sso.md).
 
 The SSO extension needs to support the [`tokenExchange`](./asauthorizationproviderextensionsupportedgranttypes/tokenexchange.md) grant type and return this value from [`supportedGrantTypes()`](./asauthorizationproviderextensionregistrationhandler/supportedgranttypes%28%29.md) during device registration.
 
-#### Provide a login configuration
+## Provide a login configuration
 
 When you set [`ASAuthorizationProviderExtensionAuthenticationMethod.openID`](./asauthorizationproviderextensionauthenticationmethod/openid.md), or when the options include [`ASAuthorizationProviderExtensionRequestOptionsOpenIDFallback`](./asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.md), the SSO extension needs to provide a login configuration for web-based authentication.
 
@@ -29,14 +29,14 @@ Regardless of how you provide the URL, Platform SSO makes the following changes 
 | `login_hint` | Removed if already present and set to the identity provider username. |
 | `scope` | Removed if already present and re-added as a whitespace-deduplicated merge of the URL’s scope and the Platform SSO specific login scope. If the login request includes a request object, Platform SSO updates the scope to the same value before signing. |
 
-##### Use a static OAuth URL
+### Use a static OAuth URL
 
 This method uses a static URL for the authorization endpoint:
 
 - Set [`federationType`](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) or [`fallbackFederationType`](./asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.openID`](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/openid.md).
 - Set [`authorizationURL`](./asauthorizationproviderextensionloginconfiguration/authorizationurl.md) to the full static URL to use for login.
 
-##### Use a dynamic OAuth URL
+### Use a dynamic OAuth URL
 
 This method retrieves the authorization URL from the authorization endpoint using the federation pre-authentication request and uses it for authentication:
 
@@ -45,7 +45,7 @@ This method retrieves the authorization URL from the authorization endpoint usin
 
 If you include an `authorizationRequest` dictionary in the federation pre-authentication response, Platform SSO creates a JWT OpenID request object from it and signs it with the device signing key. Platform SSO also updates the scope value to include the current scope for the request.
 
-#### Perform the authentication
+## Perform the authentication
 
 Web-based authentication assumes that the identity provider is a nonpublic client for OAuth and uses the following flow:
 
@@ -276,7 +276,7 @@ The following is an example JWT login request:
 
 Platform SSO processes and validates the login response the same way as other login requests. It then uses the Platform SSO 2.0 key service to unlock the user’s keybag and complete the login or unlock flow. Platform SSO always uses the key service during web-based authentication.
 
-#### Sync the password
+## Sync the password
 
 Optionally, you can sync the password the user enters during web-based authentication to the local user account. Use this option when the device management configuration sets the `AllowWebLoginPasswordSync` key to `true`. This requires the identity provider to embed a JavaScript snippet (like the following conceptual example) in the authorization endpoint login page:
 
@@ -304,7 +304,7 @@ Optionally, you can sync the password the user enters during web-based authentic
 </script>
 ```
 
-#### Support QR code authentication
+## Support QR code authentication
 
 QR code scanning is a supplementary feature that the authorization endpoint’s webpage initiates during web-based authentication. The sign-in page calls a JavaScript API injected into the web view, which opens an attached camera for QR code scanning. The JavaScript caller receives the scanned data and stores it for inclusion in the OAuth credential submission.
 

@@ -19,7 +19,7 @@ var allowsTruncatedLabels: Bool { get set }
 @property BOOL allowsTruncatedLabels;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the tab view allows truncating for labels that don’t fit on a tab, otherwise it does not. The default value is [`true`](../../Swift/true.md). When truncating is allowed, the tab view inserts an ellipsis, if necessary, to fit a label in the tab.
 

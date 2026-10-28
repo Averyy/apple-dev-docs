@@ -24,7 +24,7 @@ static let widgetFieldFlags: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyWidgetFieldFlags;
 ```
 
-#### Discussion
+## Discussion
 
 For a full description of the possible widget field flags, see [Table 221](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf#page=441), [Table 226](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf#page=447), [Table 228](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf#page=451), and [Table 230](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf#page=452) in the [Adobe PDF 1.7 Specification](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf).
 

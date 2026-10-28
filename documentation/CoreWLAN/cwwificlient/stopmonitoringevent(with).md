@@ -19,7 +19,7 @@ func stopMonitoringEvent(with type: CWEventType) throws
 - (BOOL) stopMonitoringEventWithType:(CWEventType) type error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to indicate that the client should no longer send notifications for the given event type.
 

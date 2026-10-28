@@ -17,11 +17,11 @@ Generates a data table of the data source’s video URL locations and action ann
 func videosWithAnnotations() throws -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A data table.
 
-#### Discussion
+## Discussion
 
 The data table includes a column for the annotation’s label, and if applicable, the annotation’s starting- and ending-time indices.
 

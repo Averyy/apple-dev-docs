@@ -29,11 +29,11 @@ func downloadTask(withResumeData resumeData: Data, completionHandler: @escaping 
 
 - [Pausing and resuming downloads](../pausing-and-resuming-downloads.md)
 
-#### Return Value
+## Return Value
 
 The new session download task.
 
-#### Discussion
+## Discussion
 
 By using a completion handler, the task bypasses calls to delegate methods for response and data delivery, and instead provides any resulting data, response, or error inside the completion handler. Delegate methods for handling authentication challenges, however, are still called.
 

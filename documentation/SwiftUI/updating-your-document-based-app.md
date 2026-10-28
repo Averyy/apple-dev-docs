@@ -5,7 +5,7 @@
 
 Migrate an existing app to adopt URL-based document reading and writing with Swift concurrency.
 
-#### Overview
+## Overview
 
 If you have an existing document-based app, you can adopt the [`Document`](./document.md) protocol to take advantage of direct URL access, Swift concurrency integration, and modern observation. The [`Document`](./document.md) protocol separates reading and writing into dedicated types, which gives you more control over file I/O and enables partial reads and writes for complex document formats.
 
@@ -23,7 +23,7 @@ The following table highlights the differences between these three protocols to 
 | Undo | Automatic (value semantics) | Manual ([UndoManager](../Foundation/undomanager.md)) | Manual ([`UndoManager`](../Foundation/undomanager.md)) |
 | Observation | N/A (value type) | [ObservableObject](../Combine/observableobject.md) | [@Observable](../Observation/observable.md) |
 
-#### Update your app
+## Update your app
 
 Depending on which deprecated protocol your app uses, select the appropriate tab and follow the checklist to update your app:
 

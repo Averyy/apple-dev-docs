@@ -20,7 +20,7 @@ enum Code
 enum BEBrowserDataExchangeError : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The static [`BEBrowserDataExchangeError`](../bebrowserdataexchangeerror-swift.struct.md) members are of this type.
 

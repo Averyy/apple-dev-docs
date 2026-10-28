@@ -23,11 +23,11 @@ func gss_init_sec_context(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ ini
 OM_uint32 gss_init_sec_context(OM_uint32 *minor_status, gss_cred_id_t const initiator_cred_handle, gss_ctx_id_t*context_handle, gss_name_t const target_name, gss_OID const input_mech_type, OM_uint32 req_flags, OM_uint32 time_req, gss_channel_bindings_t const input_chan_bindings, gss_buffer_t const input_token, gss_OID*actual_mech_type, gss_buffer_t output_token, OM_uint32 *ret_flags, OM_uint32 *time_rec);
 ```
 
-#### Return Value
+## Return Value
 
 A status code indicating the outcome of the call. A code of [`GSS_S_COMPLETE`](./gss_s_complete.md) means the context is complete. A code of [`GSS_S_CONTINUE_NEEDED`](./gss_s_continue_needed.md) indicates the need for another round of calls. Any other return code represents an error condition. See [Function Status](./function-status.md) for a complete list of possible status results.
 
-#### Discussion
+## Discussion
 
 Don’t call this function on a UI update thread because it may block on network activity.
 

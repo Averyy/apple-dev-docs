@@ -25,7 +25,7 @@ var mostRecentQuantity: HKQuantity { get }
 @property (copy, readonly) HKQuantity * mostRecentQuantity;
 ```
 
-#### Discussion
+## Discussion
 
 The sample sorts its contained quantities based on the [`startDate`](../../Foundation/nsdateinterval/startdate.md) property for the quantity’s date interval.
 

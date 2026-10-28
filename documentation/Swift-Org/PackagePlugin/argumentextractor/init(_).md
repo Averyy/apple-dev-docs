@@ -17,7 +17,7 @@ Creates an argument extractor with a list of strings from which to extract flags
 init(_ arguments: [String])
 ```
 
-#### Discussion
+## Discussion
 
 If the list contains `--`, any arguments that follow it are considered positional arguments.
 

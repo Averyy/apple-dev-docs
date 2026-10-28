@@ -19,7 +19,7 @@ func removeItems(_ items: [Any]!)
 - (void) removeItems:(NSArray *) items;
 ```
 
-#### Discussion
+## Discussion
 
 When successful, this method posts a notification ([`WebHistoryItemsRemovedNotification`](../webhistoryitemsremovednotification.md)).
 

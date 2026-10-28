@@ -6,7 +6,7 @@
 
 Register a new device for app development.
 
-#### Overview
+## Overview
 
 - HTTPBody
 

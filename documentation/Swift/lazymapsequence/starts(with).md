@@ -23,11 +23,11 @@ func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix) -> Bool where P
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the initial elements of the sequence are the same as the elements of `possiblePrefix`; otherwise, `false`. If `possiblePrefix` has no elements, the return value is `true`.
 
-#### Discussion
+## Discussion
 
 This example tests whether one countable range begins with the elements of another countable range.
 

@@ -25,11 +25,11 @@ func CMFormatDescriptionGetExtension(_ desc: CMFormatDescription, extensionKey: 
 extern CFPropertyListRefCMFormatDescriptionGetExtension(CMFormatDescriptionRef desc, CFStringRef extensionKey);
 ```
 
-#### Return Value
+## Return Value
 
 An extension, or `NULL` if it doesn’t exist.
 
-#### Discussion
+## Discussion
 
 The extension is always a valid property list object. This means that it will be either a `CFNumber`, `CFString`, `CFBoolean`, `CFArray`, `CFDictionary`, `CFDate`, or `CFData`. If it’s a `CFDictionary`, the keys will all be `CFStrings`. The extension this function returns is not retained by this call, so it’s only valid as long as the `CMFormatDescription` is valid — retain it to keep it longer.
 

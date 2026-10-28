@@ -17,7 +17,7 @@ Releases the cache of existing `NSHost` objects so subsequent requests for `NSHo
 + (void) flushHostCache;
 ```
 
-#### Discussion
+## Discussion
 
 `NSHost` objects that were retained before this method was invoked remain valid.
 

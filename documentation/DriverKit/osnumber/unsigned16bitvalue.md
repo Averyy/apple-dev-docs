@@ -18,7 +18,7 @@ Returns the value of the OSNumber as a uint16_t value.
 uint16_t unsigned16BitValue() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the OSNumber as a uint16_t value.
 

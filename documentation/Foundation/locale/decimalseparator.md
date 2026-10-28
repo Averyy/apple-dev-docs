@@ -21,7 +21,7 @@ The decimal separator of the locale.
 var decimalSeparator: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for “en_US”, returns “.”.
 

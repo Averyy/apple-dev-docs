@@ -20,7 +20,7 @@
 func encode<T>(_ value: T) throws -> Data where T : Encodable
 ```
 
-#### Return Value
+## Return Value
 
 Encoded data or throws an error if unable to encode
 

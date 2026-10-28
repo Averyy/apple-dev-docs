@@ -14,7 +14,7 @@ Calculates the cross product vector of 2 input vectors.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Cross Product**:
 

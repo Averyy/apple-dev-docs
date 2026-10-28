@@ -26,7 +26,7 @@ var serverSideProcessingTimeout: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * serverSideProcessingTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 The command will then time out if that much time, plus an allowance for retransmits due to network failures, passes.
 

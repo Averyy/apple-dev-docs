@@ -16,11 +16,11 @@ Check whether the sender of the received message satisfies the specified require
 func senderSatisfies(_ requirement: XPCPeerRequirement) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A `Bool` indicating whether the sender satisfies the requirement
 
-#### Discussion
+## Discussion
 
 - requirement: The requirement the peer must have
 

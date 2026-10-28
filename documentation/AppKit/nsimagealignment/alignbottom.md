@@ -17,7 +17,7 @@ case alignBottom
 NSImageAlignBottom
 ```
 
-#### Discussion
+## Discussion
 
 Align the image with the bottom edge of the cell.
 

@@ -5,11 +5,11 @@
 
 A threshold that measures the user’s proximity to one or more prims.
 
-#### Overview
+## Overview
 
 This distance is in stage units (see [Encoding Stage Linear Units](https://openusd.org/docs/api/group___usd_geom_linear_units__group.html)) and measures from the center of each prim in [affectedObjects](./affectedobjects.md), to the device’s camera.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform double distance = 0.0

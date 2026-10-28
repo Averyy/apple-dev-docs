@@ -19,7 +19,7 @@ The offset of the shadow used to display the receiver’s title.
 @property (nonatomic) CGSize titleShadowOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The horizontal and vertical offset values, specified using the `width` and `height` fields of the `CGSize` data type. Positive values always extend up and to the right from the user’s perspective. The default value is [`CGSizeZero`](../../CoreGraphics/cgsizezero.md).
 

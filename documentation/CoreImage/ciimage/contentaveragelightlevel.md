@@ -24,7 +24,7 @@ var contentAverageLightLevel: Float { get }
 @property (nonatomic, readonly) float contentAverageLightLevel;
 ```
 
-#### Discussion
+## Discussion
 
 If the image average light level is unknown, then the value 0.0 will be returned.
 

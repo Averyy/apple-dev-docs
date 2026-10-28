@@ -13,11 +13,11 @@
 void * mbuf_pkthdr_header(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the packet header.
 
-#### Discussion
+## Discussion
 
 Returns a pointer to the packet header.
 

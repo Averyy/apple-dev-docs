@@ -25,7 +25,7 @@ var textEncodingName: String? { get }
 @property (copy, readonly, nullable) NSString * textEncodingName;
 ```
 
-#### Discussion
+## Discussion
 
 If no text encoding was provided by the protocol, this property’s value is `nil`.
 

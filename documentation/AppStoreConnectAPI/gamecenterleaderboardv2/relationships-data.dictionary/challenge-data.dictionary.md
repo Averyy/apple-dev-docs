@@ -15,7 +15,7 @@ The data and links that describe the challenge of the Game Center leaderboard v2
 object GameCenterLeaderboardV2.Relationships.Challenge
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

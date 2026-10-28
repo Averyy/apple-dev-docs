@@ -25,11 +25,11 @@ class func playAudio(_ source: SCNAudioSource, waitForCompletion wait: Bool) -> 
 + (SCNAction *) playAudioSource:(SCNAudioSource *) source waitForCompletion:(BOOL) wait;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, SceneKit plays the audio source on the target node—any positional audio effects are based on the node’s position. For more information about positional audio in SceneKit, see [`SCNAudioPlayer`](../scnaudioplayer.md).
 

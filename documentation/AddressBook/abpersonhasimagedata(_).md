@@ -21,7 +21,7 @@ func ABPersonHasImageData(_ person: ABRecord!) -> Bool
 extern bool ABPersonHasImageData(ABRecordRef person);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when `person` has a picture, `false` otherwise.
 

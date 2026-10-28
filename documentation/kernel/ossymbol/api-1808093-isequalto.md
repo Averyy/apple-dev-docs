@@ -12,7 +12,7 @@ virtual bool isEqualTo(
  const char *cString) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the OSSymbol's characters are equivalent to the C string's, `false` otherwise.
 

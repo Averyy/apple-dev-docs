@@ -23,7 +23,7 @@ var returnsSequences: Bool { get }
 @property (nonatomic, readonly) BOOL returnsSequences;
 ```
 
-#### Discussion
+## Discussion
 
 If `false`, the layer returns output for only the last sequences.
 

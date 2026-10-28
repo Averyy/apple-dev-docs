@@ -25,7 +25,7 @@ let kCTFramePathWidthAttributeName: CFString
 extern CFStringRef const kCTFramePathWidthAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing a value specifying the frame width. The default width value is zero.
 

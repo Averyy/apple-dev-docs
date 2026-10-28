@@ -24,7 +24,7 @@ var kFxPropertyKey_NeedsFullBuffer: String { get }
 - [Building an FxPlug plug-in manually](../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
 - [Working with tiled images](../Professional-Video-Applications/working-with-tiled-images.md)
 
-#### Discussion
+## Discussion
 
 This value of this key is a Boolean `NSNumber` indicating whether this plug-in needs the entire image to do its processing. Note that setting this value to `YES` incurs a significant performance penalty and makes your plug-in unable to render large input images. The default value is `NO`.
 

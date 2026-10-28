@@ -24,11 +24,11 @@ class func confirmationRequired(with carSeatToConfirm: INCarSeat) -> Self
 + (instancetype) confirmationRequiredWithCarSeatToConfirm:(INCarSeat) carSeatToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarSeatResolutionResult`](../incarseatresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to an equivalent seat position and want the user to confirm the replacement value before proceeding.
 

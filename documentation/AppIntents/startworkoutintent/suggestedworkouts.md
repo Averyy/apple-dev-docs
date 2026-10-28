@@ -26,7 +26,7 @@ static var suggestedWorkouts: [Self] { get }
 
 - [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 
-#### Discussion
+## Discussion
 
 If your app is installed on Apple Watch Ultra, the system displays these workouts as options under the First Press settings when someone sets your app as the workout app in Settings > Action Button.
 

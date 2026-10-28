@@ -23,7 +23,7 @@ convenience init(title: String, action: Selector, modifierFlags: UIKeyModifierFl
 + (instancetype) alternateWithTitle:(NSString *) title action:(SEL) action modifierFlags:(UIKeyModifierFlags) modifierFlags;
 ```
 
-#### Return Value
+## Return Value
 
 A command alternative object.
 

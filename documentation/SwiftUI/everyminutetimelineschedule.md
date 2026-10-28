@@ -21,7 +21,7 @@ A schedule for updating a timeline view at the start of every minute.
 struct EveryMinuteTimelineSchedule
 ```
 
-#### Overview
+## Overview
 
 You can also use [`everyMinute`](./timelineschedule/everyminute.md) to construct this schedule.
 

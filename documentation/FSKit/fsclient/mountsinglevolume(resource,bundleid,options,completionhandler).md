@@ -23,7 +23,7 @@ func mountSingleVolume(resource: FSResource, bundleID: String, options: [String]
 - (void) mountSingleVolumeForResource:(FSResource *) resource bundleID:(NSString *) bundleID options:(NSArray<NSString *> *) options completionHandler:(void (^)(NSURL *mountPath, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows a client with the `com.apple.developer.fskit.mount` entitlement to mount a single-volume file system. Calling this method performs the complete workflow of resource loading, volume activation, mount point creation, and actual mounting. The system mounts the volume within the `/Volumes/` directory.
 

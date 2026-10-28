@@ -19,7 +19,7 @@ var supportsFastStatFS: Bool { get set }
 @property (nonatomic) BOOL supportsFastStatFS;
 ```
 
-#### Discussion
+## Discussion
 
 A true value means this volume hints to upper layers to indicate that `statfs(2)` is fast enough that its results need not be cached by the caller.
 

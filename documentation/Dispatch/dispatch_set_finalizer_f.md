@@ -21,7 +21,7 @@ Sets the finalizer function for a dispatch object.
 extern void dispatch_set_finalizer_f(dispatch_object_t object, dispatch_function_t finalizer);
 ```
 
-#### Discussion
+## Discussion
 
 The finalizer for a  dispatch object is invoked on that object’s target queue after all references to the object are released. The application can use the finalizer to release any resources associated with the object, such as the object’s application-defined context. The context parameter passed to the finalizer function is the current context of the dispatch object at the time the finalizer call is made. The finalizer is not called if the application-defined context is `NULL`.
 

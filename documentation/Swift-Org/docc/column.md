@@ -22,7 +22,7 @@ A container directive that holds general markup content describing a column with
 }
 ```
 
-#### Overview
+## Overview
 
 Create a column inside a [`Row`](./row.md) by nesting a `@Column` directive within the content for an `@Row` directive.
 

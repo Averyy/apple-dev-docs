@@ -22,7 +22,7 @@ class var resizeUp: NSCursor { get }
 @property (class, strong, readonly) NSCursor * resizeUpCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The resize-up cursor. This cursor is used when moving or resizing an object to indicate that the user can move only in the indicated direction.
 

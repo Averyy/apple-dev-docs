@@ -16,11 +16,11 @@ Issues a READ_TRACK_INFORMATION command to the device as defined in MMC-2.
 IOReturn (*ReadTrackInformation)(void *self, SCSICmdField2Bit ADDRESS_NUMBER_TYPE, SCSICmdField4Byte LOGICAL_BLOCK_ADDRESS_TRACK_SESSION_NUMBER, void *buffer, SCSICmdField2Byte bufferSize, SCSITaskStatus *taskStatus, SCSI_Sense_Data *senseDataBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNoMemory if a SCSITask couldn't be created, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened the client may send this command to read information about selected tracks on the disc.
 

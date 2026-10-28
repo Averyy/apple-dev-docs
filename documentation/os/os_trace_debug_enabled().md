@@ -27,7 +27,7 @@ func os_trace_debug_enabled() -> Bool
 extern bool os_trace_debug_enabled();
 ```
 
-#### Discussion
+## Discussion
 
 Generally, trace points should not involve expensive operations, however some circumstances warrant it.  Use this function to do expensive work only when debug level trace messages are enabled.
 

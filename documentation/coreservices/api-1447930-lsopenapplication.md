@@ -19,17 +19,17 @@ func LSOpenApplication(_ appParams: UnsafePointer<LSApplicationParameters>!, _ o
 OSStatus LSOpenApplication(const LSApplicationParameters *appParams, ProcessSerialNumber *outPSN);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The `LSOpenApplication` launches one application. This function is an updated alternative to the Process Manager's `LaunchApplication` function. Launch arguments are specified in the `inAppParams` argument, which must be supplied. If the application is already running in the current session, it is made the front process (unless the `kLSLaunchNewInstance` flag is used, which always causes a new process to be created).
 
 If `outPSN` is not `NULL`, on return, the structure it points to contains the PSN of the launched (or activated) process. Note that for asynchronous launches, the application may not have finished launching when this function returns.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since OS X v10.4.
 

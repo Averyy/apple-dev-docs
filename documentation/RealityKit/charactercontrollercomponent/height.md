@@ -20,7 +20,7 @@ The capsule height.
 var height: Float
 ```
 
-#### Discussion
+## Discussion
 
 The capsule height includes radii and should be specified the entity’s coordinate system.
 

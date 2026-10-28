@@ -16,11 +16,11 @@ Returns the data in the HID device’s report descriptor.
 virtual OSData * newReportDescriptor();
 ```
 
-#### Return Value
+## Return Value
 
 An [`OSData`](../../DriverKit/osdata.md) object containing the report descriptor for the device.
 
-#### Discussion
+## Discussion
 
 Override this method and use it to fetch the report descriptor from the device. Return the raw bytes for that report in an [`OSData`](../../DriverKit/osdata.md) object.
 

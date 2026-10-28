@@ -19,7 +19,7 @@ func noteHeightOfRowsWithIndexesChanged(_ indexSet: IndexSet, inColumn columnInd
 - (void) noteHeightOfRowsWithIndexesChanged:(NSIndexSet *) indexSet inColumn:(NSInteger) columnIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The browser’s delegate must implement
 

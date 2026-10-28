@@ -23,7 +23,7 @@ protocol UIVideoEditorControllerDelegate : NSObjectProtocol
 @protocol UIVideoEditorControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The methods of this protocol notify your delegate when the system has saved an edited movie or the user has canceled editing to discard any changes. There’s also a method for responding to errors encountered by the video editor.
 

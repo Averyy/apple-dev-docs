@@ -22,7 +22,7 @@ A collection whose elements are key-value pairs.
 struct Dictionary<Key, Value> where Key : Hashable
 ```
 
-#### Overview
+## Overview
 
 A dictionary is a type of hash table, providing fast access to the entries it contains. Each entry in the table is identified using its key, which is a hashable type such as a string or number. You use that key to retrieve the corresponding value, which can be any object. In other languages, similar data types are known as hashes or associated arrays.
 
@@ -47,7 +47,7 @@ var emptyDict: [String: String] = [:]
 
 Any type that conforms to the `Hashable` protocol can be used as a dictionary’s `Key` type, including all of Swift’s basic types. You can use your own custom types as dictionary keys by making them conform to the `Hashable` protocol.
 
-### Getting and Setting Dictionary Values
+## Getting and Setting Dictionary Values
 
 The most common way to access values in a dictionary is to use a key as a subscript. Subscripting with a key takes the following form:
 
@@ -105,7 +105,7 @@ print(interestingNumbers["primes"]!)
 // Prints "[17, 13, 11, 7, 5, 3, 2]"
 ```
 
-### Iterating Over the Contents of a Dictionary
+## Iterating Over the Contents of a Dictionary
 
 Every dictionary is an unordered collection of key-value pairs. You can iterate over a dictionary using a `for`-`in` loop, decomposing each key-value pair into the elements of a tuple.
 
@@ -147,7 +147,7 @@ A dictionary’s indices stay valid across additions to the dictionary as long a
 
 When you know how many new values you’re adding to a dictionary, use the `init(minimumCapacity:)` initializer to allocate the correct amount of buffer.
 
-### Bridging Between Dictionary and NSDictionary
+## Bridging Between Dictionary and NSDictionary
 
 You can bridge between `Dictionary` and `NSDictionary` using the `as` operator. For bridging to be possible, the `Key` and `Value` types of a dictionary must be classes, `@objc` protocols, or types that bridge to Foundation types.
 

@@ -23,7 +23,7 @@ optional func urlSession(_ session: URLSession, assetDownloadTask: AVAssetDownlo
 - (void) URLSession:(NSURLSession *) session assetDownloadTask:(AVAssetDownloadTask *) assetDownloadTask didResolveMediaSelection:(AVMediaSelection *) resolvedMediaSelection;
 ```
 
-#### Discussion
+## Discussion
 
 For the best chance of playing back downloaded content without further network I/O, set this selection on the associated [`AVPlayerItem`](../avplayeritem.md).
 

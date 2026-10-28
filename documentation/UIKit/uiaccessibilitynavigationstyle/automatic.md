@@ -24,7 +24,7 @@ case automatic
 UIAccessibilityNavigationStyleAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value.
 

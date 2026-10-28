@@ -18,7 +18,7 @@ var FFERR_INVALIDDOWNLOADID: Int { get }
 #define FFERR_INVALIDDOWNLOADID
 ```
 
-#### Discussion
+## Discussion
 
 The effect index provided by the API in downloadID is not recognized by the IOForceFeedbackLib driver.
 

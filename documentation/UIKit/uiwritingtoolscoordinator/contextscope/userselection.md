@@ -22,7 +22,7 @@ case userSelection
 UIWritingToolsCoordinatorContextScopeUserSelection
 ```
 
-#### Discussion
+## Discussion
 
 With this option, include the selected text in your context object, along with some additional text before and after the selection. When performing changes inline with your view’s content, Writing Tools applies animations only to the selected text.
 

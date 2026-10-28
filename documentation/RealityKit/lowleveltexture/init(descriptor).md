@@ -21,7 +21,7 @@ Creates a low-level texture from a descriptor.
 init(descriptor: LowLevelTexture.Descriptor) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the descriptor is invalid or if memory was not allocated successfully.
 

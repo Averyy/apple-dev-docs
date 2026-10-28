@@ -21,7 +21,7 @@ case natural
 CLKRelativeDateStyleNatural
 ```
 
-#### Discussion
+## Discussion
 
 The text provider breaks the time interval into various components. For example, it formats 10 hours and 9 minutes as “10hrs 9min”.
 

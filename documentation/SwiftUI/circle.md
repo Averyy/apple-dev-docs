@@ -27,7 +27,7 @@ struct Circle
 - [Laying out a simple view](./laying-out-a-simple-view.md)
 - [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
-#### Overview
+## Overview
 
 The circle’s radius equals half the length of the frame rectangle’s smallest edge.
 

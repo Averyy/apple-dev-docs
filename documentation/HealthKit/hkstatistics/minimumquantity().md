@@ -24,7 +24,7 @@ func minimumQuantity() -> HKQuantity?
 - (HKQuantity *) minimumQuantity;
 ```
 
-#### Return Value
+## Return Value
 
 If the [`discreteMin`](../hkstatisticsoptions/discretemin.md) option was set, this method returns a quantity object containing the minimum value from all the samples matching the query; otherwise, it returns `nil`.
 

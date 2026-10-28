@@ -23,7 +23,7 @@ class PKAddPaymentPassRequest
 @interface PKAddPaymentPassRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 All sensitive data must be encrypted before being assigned to this object. Because the encryption keys vary depending on the server, create [`PKAddPaymentPassRequest`](./pkaddpaymentpassrequest.md) instances only when your [`PKAddPaymentPassViewControllerDelegate`](./pkaddpaymentpassviewcontrollerdelegate.md) object’s [`addPaymentPassViewController(_:generateRequestWithCertificateChain:nonce:nonceSignature:completionHandler:)`](./pkaddpaymentpassviewcontrollerdelegate/addpaymentpassviewcontroller%28_,generaterequestwithcertificatechain,nonce,noncesignature,completionhandler%29.md) method is called. The required server certificates are provided at that time.
 

@@ -19,7 +19,7 @@ An error that indicates the compilation of a rule list failed.
 static var contentRuleListStoreCompileFailed: WKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check the [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary of the error object for an explanation of the compilation error that occurred.
 

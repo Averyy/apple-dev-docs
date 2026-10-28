@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.fftfreq
 
-**fftfreq(*n: int*, *d: float = 1.0*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Return the discrete Fourier Transform sample frequencies.
+```python
+fftfreq(n: int, d: float = 1.0, stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None) → array
+```
 
-Parameters:
+Return the discrete Fourier Transform sample frequencies.
 
-**n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Window length.
-**d** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Sample spacing. The default is `1.0`.
+**Parameters:**
 
-Returns:
-The sample frequencies as a one-dimensional array of type `float32`.
+- **n** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Window length.
+- **d** ([float](https://docs.python.org/3/builtins/functions.html#float), *optional*) – Sample spacing. The default is `1.0`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The sample frequencies as a one-dimensional array of type `float32`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

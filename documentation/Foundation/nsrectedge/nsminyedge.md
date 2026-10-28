@@ -16,7 +16,7 @@ The minimum Y edge.
 NSMinYEdge
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`CGRectEdge.minYEdge`](../../CoreFoundation/cgrectedge/minyedge.md), and also to [`NSRectEdge.minY`](./miny.md).
 

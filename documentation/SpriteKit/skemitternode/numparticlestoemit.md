@@ -29,7 +29,7 @@ var numParticlesToEmit: Int { get set }
 
 - [Creating Particle Effects](../creating-particle-effects.md)
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which indicates that emitter creates an endless stream of particles. If a non-zero value is provided, then the emitter stops generating particles after it has created the specified number of particles.
 

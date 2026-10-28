@@ -22,7 +22,7 @@ A property wrapper type that instantiates an observable object.
 @frozen @propertyWrapper @preconcurrency struct StateObject<ObjectType> where ObjectType : ObservableObject
 ```
 
-#### Overview
+## Overview
 
 Use a state object as the single source of truth for a reference type that you store in a view hierarchy. Create a state object in an [`App`](./app.md), [`Scene`](./scene.md), or [`View`](./view.md) by applying the `@StateObject` attribute to a property declaration and providing an initial value that conforms to the [`ObservableObject`](../Combine/observableobject.md) protocol. Declare state objects as private to prevent setting them from a memberwise initializer, which can conflict with the storage management that SwiftUI provides:
 
@@ -47,7 +47,7 @@ SwiftUI creates a new instance of the model object only once during the lifetime
 
 > **Note**: If you need to store a value type, like a structure, string, or integer, use the [`State`](./state.md) property wrapper instead. Also use [`State`](./state.md) if you need to store a reference type that conforms to the [`Observable()`](../Observation/observable%28%29.md) protocol. To learn more about Observation in SwiftUI, see [Managing model data in your app](./managing-model-data-in-your-app.md).
 
-##### Share state objects with subviews
+### Share state objects with subviews
 
 You can pass a state object into a subview through a property that has the [`ObservedObject`](./observedobject.md) attribute. Alternatively, add the object to the environment of a view hierarchy by applying the [`environmentObject(_:)`](./view/environmentobject%28_%29.md) modifier to a view, like `MySubView` in the above code. You can then read the object inside `MySubView` or any of its descendants using the [`EnvironmentObject`](./environmentobject.md) attribute:
 
@@ -63,7 +63,7 @@ struct MySubView: View {
 
 Get a [`Binding`](./binding.md) to the state object’s properties using the dollar sign (`$`) operator. Use a binding when you want to create a two-way connection. In the above code, the [`Toggle`](./toggle.md) controls the model’s `isEnabled` value through a binding.
 
-##### Initialize state objects using external data
+### Initialize state objects using external data
 
 When a state object’s initial state depends on data that comes from outside its container, you can call the object’s initializer explicitly from within its container’s initializer. For example, suppose the data model from the previous example takes a `name` input during initialization and you want to use a value for that name that comes from outside the view. You can do this with a call to the state object’s initializer inside an explicit initializer that you create for the view:
 
@@ -103,7 +103,7 @@ var body: some View {
 
 > ❗ **Important**: Even for a configurable state object, you still declare it as private. This ensures that you can’t accidentally set the parameter through a memberwise initializer of the view, because doing so can conflict with the framework’s storage management and produce unexpected results.
 
-##### Force reinitialization by changing view identity
+### Force reinitialization by changing view identity
 
 If you want SwiftUI to reinitialize a state object when a view input changes, make sure that the view’s identity changes at the same time. One way to do this is to bind the view’s identity to the value that changes using the [`id(_:)`](./view/id%28_%29.md) modifier. For example, you can ensure that the identity of an instance of `MyInitializableView` changes when its `name` input changes:
 

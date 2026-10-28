@@ -14,11 +14,11 @@
 extern OSStatus AudioHardwareAddPropertyListener(AudioHardwarePropertyID inPropertyID, AudioHardwarePropertyListenerProc inProc, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Registers the given AudioHardwarePropertyListenerProc to receive notifications when the given property changes.
 

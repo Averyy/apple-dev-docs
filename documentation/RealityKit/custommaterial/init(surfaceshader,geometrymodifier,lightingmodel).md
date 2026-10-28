@@ -23,7 +23,7 @@ init(surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMateri
 
 - [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md)
 
-#### Discussion
+## Discussion
 
 This initializer creates a custom material using a lighting model you specify, which determines how RealityKit renders the output of your shader functions. The [`CustomMaterial.LightingModel.lit`](./lightingmodel-swift.enum/lit.md) and [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md) use RealityKit’s physically-based shaders to render the entity based on the output of your shader functions. When using these lighting models, RealityKit uses all provided material attributes like [`baseColor`](./basecolor-swift.property.md), [`metallic`](./metallic-swift.property.md) and [`normal`](./normal-swift.property.md).
 

@@ -22,7 +22,7 @@ func GLKVector2Maximum(_ vectorLeft: GLKVector2, _ vectorRight: GLKVector2) -> G
 static GLKVector2 GLKVector2Maximum(GLKVector2 vectorLeft, GLKVector2 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

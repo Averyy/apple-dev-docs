@@ -23,7 +23,7 @@ mutating func encode(_ value: UInt128) throws
 
 Available when `Self` conforms to `UnkeyedEncodingContainer`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 

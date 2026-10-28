@@ -37,7 +37,7 @@ var matchData: Data? { get }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Use this property to get the game-specific data that you store in Game Center when ending a turn, saving a turn, or leaving a match. This property is `nil` until you fetch the data from Game Center using the [`loadMatchData(completionHandler:)`](./loadmatchdata%28completionhandler%29.md) method.
 

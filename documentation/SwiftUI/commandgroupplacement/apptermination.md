@@ -19,7 +19,7 @@ Placement for commands that result in app termination.
 static let appTermination: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following command in macOS:
 

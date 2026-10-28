@@ -20,7 +20,7 @@ optional func animationDidStop(_ animation: NSAnimation)
 - (void) animationDidStop:(NSAnimation *) animation;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSAnimation` object stops running when it receives a [`stop()`](../nsanimation/stop%28%29.md) message.
 

@@ -19,7 +19,7 @@ func sort(with sortDescriptors: [NSSortDescriptor], recursively: Bool)
 - (void) sortWithSortDescriptors:(NSArray<NSSortDescriptor *> *) sortDescriptors recursively:(BOOL) recursively;
 ```
 
-#### Discussion
+## Discussion
 
 All the represented objects in the child nodes must be key-value coding compliant for the keys specified in the sort descriptors.
 

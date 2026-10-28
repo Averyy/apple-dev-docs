@@ -21,7 +21,7 @@ Loads an audio resource from a Reality Composer Pro project.
 @preconcurrency static func load(named name: String, from scene: String, in bundle: Bundle? = nil) throws -> AudioFileGroupResource
 ```
 
-#### Discussion
+## Discussion
 
 This method loads a preconfigured [`AudioFileGroupResource`](../audiofilegroupresource.md) from a scene in a Reality Composer Pro project.
 

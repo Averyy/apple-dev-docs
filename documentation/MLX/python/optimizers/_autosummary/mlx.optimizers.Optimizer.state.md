@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.Optimizer.state
 
-**property Optimizer.state**
-: The optimizer’s state dictionary.
+```python
+property Optimizer.state
+```
+
+The optimizer’s state dictionary.

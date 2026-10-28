@@ -21,7 +21,7 @@ static var camera: CameraRealityCoordinateSpace { get }
 
 Available when `Self` is `CameraRealityCoordinateSpace`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This static type is equivalent to a [`CameraRealityCoordinateSpace`](../camerarealitycoordinatespace.md) instance.
 

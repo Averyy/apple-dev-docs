@@ -25,7 +25,7 @@ func CFDateFormatterGetFormat(_ formatter: CFDateFormatter!) -> CFString!
 extern CFStringRefCFDateFormatterGetFormat(CFDateFormatterRef formatter);
 ```
 
-#### Return Value
+## Return Value
 
 The format string for `formatter` as was specified by calling the [`CFDateFormatterSetFormat(_:_:)`](./cfdateformattersetformat%28_,_%29.md) function, or derived from the date formatter’s date or time styles. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

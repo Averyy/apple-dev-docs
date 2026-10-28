@@ -15,7 +15,7 @@ Implements a bounded FIFO queue of mbuf packets.
 class IOPacketQueue : OSObject
 ```
 
-#### Overview
+## Overview
 
 Packets are removed from the head of the queue (dequeue), and new packets are added to the tail of the queue (enqueue). A spinlock is used to synchronize access to the queue between methods that have a "lock" prefix.
 

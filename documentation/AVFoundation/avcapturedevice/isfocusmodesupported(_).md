@@ -23,7 +23,7 @@ func isFocusModeSupported(_ focusMode: AVCaptureDevice.FocusMode) -> Bool
 - (BOOL) isFocusModeSupported:(AVCaptureFocusMode) focusMode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports the focus mode; otherwise, [`false`](../../Swift/false.md).
 

@@ -19,7 +19,7 @@ class SFKeychainSavePanel
 @interface SFKeychainSavePanel : NSSavePanel
 ```
 
-#### Overview
+## Overview
 
 The following figure shows an example of a keychain save panel.
 

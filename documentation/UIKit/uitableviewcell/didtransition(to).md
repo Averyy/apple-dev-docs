@@ -23,7 +23,7 @@ func didTransition(to state: UITableViewCell.StateMask)
 - (void) didTransitionToState:(UITableViewCellStateMask) state;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses of `UITableViewCell` can implement this method to animate additional changes to a cell when it is changing state. `UITableViewCell` calls this method whenever a cell transitions between states, such as from a normal state (the default) to editing mode. This method is called at the end of the animation block, which gives the custom cell a chance to clean up after the state change—for example, removing the edit and reorder controls after transitioning out of editing.  Subclasses must always call `super` when overriding this method.
 

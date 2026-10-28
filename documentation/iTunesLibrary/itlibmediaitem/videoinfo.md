@@ -20,7 +20,7 @@ var videoInfo: ITLibMediaItemVideoInfo? { get }
 @property (nonatomic, retain, readonly, nullable) ITLibMediaItemVideoInfo * videoInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If this media item isn’t a video, this property is `nil`.
 

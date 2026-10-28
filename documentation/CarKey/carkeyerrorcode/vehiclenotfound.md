@@ -19,7 +19,7 @@ An error that indicates a vehicle with the specified ID wasn’t found.
 case VehicleNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Check the vehicle identifier you used during the operation.
 

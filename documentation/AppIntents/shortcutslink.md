@@ -19,7 +19,7 @@ A button that brings users to the current app’s App Shortcuts page in the Shor
 @preconcurrency struct ShortcutsLink
 ```
 
-#### Overview
+## Overview
 
 You can create a button by calling the initializer with an additional closure, which gets called whenever the button is tapped before opening the Shortcuts app.
 

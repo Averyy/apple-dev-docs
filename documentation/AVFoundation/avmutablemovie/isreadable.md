@@ -19,7 +19,7 @@ A Boolean value that indicates whether you can extract the asset’s media data 
 var isReadable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can use [`AVAssetReader`](../avassetreader.md) to extract the composition’s media data.
 

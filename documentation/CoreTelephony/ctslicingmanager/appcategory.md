@@ -17,7 +17,7 @@ App categories for network slicing.
 enum AppCategory
 ```
 
-#### Discussion
+## Discussion
 
 Network slicing allows carriers to optimize their network for specific types of apps. The `AppCategory` enumeration defines the supported app types that can use network slicing.
 

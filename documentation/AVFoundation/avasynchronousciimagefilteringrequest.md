@@ -26,7 +26,7 @@ class AVAsynchronousCIImageFilteringRequest
 @interface AVAsynchronousCIImageFilteringRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use this class when creating a composition for Core Image filtering with the [`init(asset:applyingCIFiltersWithHandler:)`](./avvideocomposition/init%28asset,applyingcifilterswithhandler%29.md) method. In that method call, you provide a block to be called by AVFoundation as it processes each frame of video, and the block’s sole parameter is a [`AVAsynchronousCIImageFilteringRequest`](./avasynchronousciimagefilteringrequest.md) object. Use that object both to the video frame image to be filtered and allows you to return a filtered image to AVFoundation for display or export. The code listing below shows an example of applying a filter to an asset.
 

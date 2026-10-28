@@ -19,17 +19,17 @@ func SKIndexGetMaximumDocumentID(_ inIndex: SKIndex!) -> SKDocumentID
 SKDocumentID SKIndexGetMaximumDocumentID(SKIndexRef inIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A document ID object containing the highest-numbered document ID in the index.
 
-#### Discussion
+## Discussion
 
 Use this function with [`SKIndexGetDocumentCount(_:)`](./api-1449093-skindexgetdocumentcount.md) to determine whether an index is fragmented and in need of compaction. See [`SKIndexCompact(_:)`](./api-1443628-skindexcompact.md).
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
-##### Version-Notes
+### Version-Notes
 
 In versions of macOS prior to OS X v10.4, the return type for `SKIndexGetMaximumDocumentID` was `CFIndex`. The return type in macOS 10.4 and later is `SKDocumentID`.
 

@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionStyle_Height: CFString
 extern CFStringRef const kCMTextFormatDescriptionStyle_Height;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be `SInt16`.
 

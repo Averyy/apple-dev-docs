@@ -24,7 +24,7 @@ var curveType: PHASECurveType { get set }
 @property (nonatomic, assign) PHASECurveType curveType;
 ```
 
-#### Discussion
+## Discussion
 
 The option you choose for this property determines the segment’s y_-_value rate of change along the input.
 

@@ -19,7 +19,7 @@ var systemFrame: CGRect { get }
 @property (nonatomic, readonly) CGRect systemFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the current frame of the scene in the system coordinate space, where an origin of `(0, 0)` corresponds to the top-left corner of the main display.
 

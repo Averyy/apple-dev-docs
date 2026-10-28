@@ -21,7 +21,7 @@ A base type that represents anything containing user-viewable content.
 static var content: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Types that conform to content include documents, pasteboard data, and document packages. Types describing files or packages must also conform to [`UTTypeData`](../uttypedata.md) or [`UTTypePackage`](../uttypepackage.md) for the system to bind documents to them.
 

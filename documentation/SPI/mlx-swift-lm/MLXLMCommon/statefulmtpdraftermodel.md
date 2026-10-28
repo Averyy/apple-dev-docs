@@ -17,7 +17,7 @@ Optional capability for MTP drafters that maintain per-stream state.
 protocol StatefulMTPDrafterModel : MTPDrafterModel
 ```
 
-#### Overview
+## Overview
 
 This keeps the base [`MTPDrafterModel`](./mtpdraftermodel.md) surface minimal for stateless drafters such as Gemma 4 assistants while giving Qwen-style MTP predictors an iterator-owned state that can carry and trim their private KV cache. The state must not be stored on the model instance because drafter models can be shared across concurrent generation streams.
 

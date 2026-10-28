@@ -21,7 +21,7 @@ The size of a pixel on the screen.
 var pixelLength: CGFloat { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is usually equal to `1` divided by [`displayScale`](./displayscale.md).
 

@@ -24,7 +24,7 @@ class PKStoredValuePassBalance
 @interface PKStoredValuePassBalance : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  A stored balance of type of [`cash`](./pkstoredvaluepassbalance/balancetype-swift.struct/cash.md) requires a valid currency code.
 

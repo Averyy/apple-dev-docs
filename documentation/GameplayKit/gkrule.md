@@ -24,7 +24,7 @@ class GKRule
 @interface GKRule : NSObject
 ```
 
-#### Overview
+## Overview
 
 Evaluating a [`GKRuleSystem`](./gkrulesystem.md) object tests each of its rules, which typically examine the state or facts associated with the rule system, and executes the actions specified by each rule whose test passes, such as asserting or retracting facts in the rule system or modifying its state.
 
@@ -41,18 +41,18 @@ There are multiple ways to create rules for use in a rule system, each with its 
 
 For more information about rules and rule systems, read [Rule Systems](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/RuleSystems.html#//apple_ref/doc/uid/TP40015172-CH10) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 GameplayKit evaluates rules in the context of a [`GKRuleSystem`](./gkrulesystem.md) object, so custom rule classes should be *functional*—that is, they generally should not carry independent state that affects their predicate or action.
 
-###### Methods to Override
+#### Methods to Override
 
 Subclasses of [`GKRule`](./gkrule.md) must implement both of the following methods:
 
 - Override the [`evaluatePredicate(in:)`](./gkrule/evaluatepredicate%28in%29.md) method to evaluate your rule in the context of the provided rule system.
 - Override the [`performAction(in:)`](./gkrule/performaction%28in%29.md) method to perform whatever actions should result when your rule is satisfied (that is, when your [`evaluatePredicate(in:)`](./gkrule/evaluatepredicate%28in%29.md) implementation returns [`true`](../Swift/true.md)) in the context of the provided rule system.
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 - Use the [`init(predicate:assertingFact:grade:)`](./gkrule/init%28predicate,assertingfact,grade%29.md) or [`init(predicate:retractingFact:grade:)`](./gkrule/init%28predicate,retractingfact,grade%29.md) to create a rule that uses an [`NSPredicate`](../Foundation/nspredicate.md) object for evaluation and whose action asserts or retracts a fact in the containing rule system.
 - Subclass [`GKNSPredicateRule`](./gknspredicaterule.md) instead to use an [`NSPredicate`](../Foundation/nspredicate.md) object for evaluating the rule and write custom logic only for the rule’s action.

@@ -17,7 +17,7 @@ framework: "CareKit/CareKitStore"
 final class OCKWatchConnectivityPeer
 ```
 
-#### Overview
+## Overview
 
 The watch is capable of waking its companion app to send it messages, so the watch can synchronize with the phone at any time. The phone however, cannot wake the watch, so synchronizations initiated from the phone will only succeed when the companion app is in a reachable state.
 

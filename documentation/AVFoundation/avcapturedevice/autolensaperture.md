@@ -22,7 +22,7 @@ class let autoLensAperture: Float
 extern const float AVCaptureLensApertureAuto;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be passed to [`setExposureModeCustom(lensAperture:duration:iso:completionHandler:)`](./setexposuremodecustom%28lensaperture,duration,iso,completionhandler%29.md) to enable “priority” modes, where some parameters are locked to specified values (given “priority”), whereas the ones specified as “auto” will be continually adjusted by the system to maintain image brightness.
 

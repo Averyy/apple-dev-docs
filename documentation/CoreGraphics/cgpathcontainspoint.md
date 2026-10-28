@@ -21,11 +21,11 @@ Checks whether a point is contained in a graphics path.
 extern bool CGPathContainsPoint(CGPathRef path, const CGAffineTransform *m, CGPoint point, bool eoFill);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the point is contained in the path; [`false`](../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 A point is contained in a path if it would be inside the painted region when the path is filled.
 

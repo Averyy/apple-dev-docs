@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, runOpenPanelForFileButtonWith resultLi
 - (void) webView:(WebView *) sender runOpenPanelForFileButtonWithResultListener:(id<WebOpenPanelResultListener>) resultListener;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses a listener object to set the results of the open panel, instead of returning the value directly. This approach allows delegates to implement the open panel as a modal dialog. No action is taken if you do not implement this method.
 

@@ -24,7 +24,7 @@ let HKMetadataKeyDateOfEarliestDataUsedForEstimate: String
 extern NSString * const HKMetadataKeyDateOfEarliestDataUsedForEstimate;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a [`Date`](../Foundation/date.md) value, indicating the earliest date from the data used by HealthKit to calculate the sample’s value.
 

@@ -3,7 +3,7 @@
 **Framework**: QuickTime File Format  
 **Role**: Article
 
-#### VR World atom types
+## VR World atom types
 
 ```c
 enum {
@@ -17,7 +17,7 @@ enum {
 };
 ```
 
-#### Node information atom types
+## Node information atom types
 
 ```c
 enum {
@@ -29,7 +29,7 @@ enum {
 };
 ```
 
-#### Miscellaneous Atom Types
+## Miscellaneous Atom Types
 
 ```c
 enum {
@@ -48,7 +48,7 @@ enum {
 };
 ```
 
-#### Track Reference Types
+## Track Reference Types
 
 ```c
 enum {
@@ -57,7 +57,7 @@ enum {
 };
 ```
 
-#### Imaging Property Valid Flags
+## Imaging Property Valid Flags
 
 ```c
 enum {
@@ -68,7 +68,7 @@ enum {
 };
 ```
 
-#### Link Hot Spot Valid Bits
+## Link Hot Spot Valid Bits
 
 ```c
 enum {
@@ -79,7 +79,7 @@ enum {
 };
 ```
 
-#### Animation Settings
+## Animation Settings
 
 ```c
 enum QTVRAnimationSettings {
@@ -94,7 +94,7 @@ enum QTVRAnimationSettings {
 };
 ```
 
-#### Control Settings
+## Control Settings
 
 ```c
 enum QTVRControlSettings {
@@ -108,7 +108,7 @@ enum QTVRControlSettings {
 };
 ```
 
-#### Controller Subtype and ID
+## Controller Subtype and ID
 
 ```c
 enum {
@@ -117,7 +117,7 @@ enum {
 };
 ```
 
-#### Object Controller Types
+## Object Controller Types
 
 ```c
 enum ObjectUITypes {
@@ -129,7 +129,7 @@ enum ObjectUITypes {
 };
 ```
 
-#### Node Location Flag
+## Node Location Flag
 
 ```c
 enum {
@@ -137,7 +137,7 @@ enum {
 };
 ```
 
-#### Panorama Sample Flag
+## Panorama Sample Flag
 
 ```c
 enum {

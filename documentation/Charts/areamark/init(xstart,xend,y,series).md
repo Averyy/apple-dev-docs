@@ -22,7 +22,7 @@ nonisolated
 init<X, Y, S>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>) where X : Plottable, Y : Plottable, S : Plottable
 ```
 
-#### Discussion
+## Discussion
 
 The initializer behaves like [`init(xStart:xEnd:y:)`](./init%28xstart,xend,y%29.md), except that you can indicate which region each interval belongs to by providing a value for the `series` input. This enables you to plot more than one region on a single chart.
 

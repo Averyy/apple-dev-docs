@@ -17,11 +17,11 @@ Returns the rectangle, in unit coordinate space, that contains the image within 
 func contentsRect(for overlayView: ImageAnalysisOverlayView) -> CGRect
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle of the image within the view, in unit coordinates. The default return value is the unit rectangle `[0.0, 0.0, 1.0, 1.0]`, which represents the whole view contents.
 
-#### Discussion
+## Discussion
 
 Implement this method if the [`trackingImageView`](../imageanalysisoverlayview/trackingimageview.md) type isn’t [`NSImageView`](../../AppKit/nsimageview.md).
 

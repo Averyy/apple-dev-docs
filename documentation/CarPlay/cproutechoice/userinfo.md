@@ -21,7 +21,7 @@ var userInfo: Any? { get set }
 @property (nonatomic, strong, nullable) id userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Your app determines what information to include in `userInfo`.
 

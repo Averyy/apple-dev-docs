@@ -16,7 +16,7 @@ Handles a new session request for the accessory.
 func accept(sessionRequest: AccessoryTransportSession.Request) -> AccessoryTransportSession.Request.Decision
 ```
 
-#### Discussion
+## Discussion
 
 Implement this callback and respond to its invocations by the framework.
 

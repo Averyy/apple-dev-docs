@@ -18,7 +18,7 @@ The network request failed.
 static var networkRequestFailed: ILMessageFilterError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The network request failed; the `NSUnderlyingErrorKey` in the [`errorUserInfo`](../../Foundation/customnserror/erroruserinfo-1aas5.md) dictionary may have additional details.
 

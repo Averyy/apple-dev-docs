@@ -23,11 +23,11 @@ class func confirmationRequired(with spatialEventTriggerToConfirm: INSpatialEven
 + (instancetype) confirmationRequiredWithSpatialEventTriggerToConfirm:(INSpatialEventTrigger *) spatialEventTriggerToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpatialEventTriggerResolutionResult`](../inspatialeventtriggerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you have to make assumptions about the location details specified by the user. Provide an [`INSpatialEventTrigger`](../inspatialeventtrigger.md) object with the trigger details as you intend to apply them.
 

@@ -23,7 +23,7 @@ var isReplaceAllowed: Bool { get }
 @property (nonatomic, readonly, getter=isReplaceAllowed) BOOL replaceAllowed;
 ```
 
-#### Discussion
+## Discussion
 
 For example, replacement shouldn’t be allowed in password fields or when the selected text is only consists of whitespace.
 

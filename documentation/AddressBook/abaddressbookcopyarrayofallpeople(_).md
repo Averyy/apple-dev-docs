@@ -23,7 +23,7 @@ func ABAddressBookCopyArrayOfAllPeople(_ addressBook: ABAddressBook!) -> Unmanag
 extern CFArrayRefABAddressBookCopyArrayOfAllPeople(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 Array containing the person records in `addressBook`.
 

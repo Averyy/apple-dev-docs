@@ -28,7 +28,7 @@ func allVoiceShortcuts() async throws -> [INVoiceShortcut]
 - (void) getAllVoiceShortcutsWithCompletion:(void (^)(NSArray<INVoiceShortcut *> *voiceShortcuts, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Let users know when an action they perform in your app has an associated shortcut. For example, a user has created a shortcut in the soup-ordering app Soup Chef that allows them to place an order for tomato soup by speaking the phrase “Soup time.” The app shows the phrase in the user’s order history, reminding them that the shortcut exists and of the phrase to speak in order to invoke the shortcut in Siri.
 

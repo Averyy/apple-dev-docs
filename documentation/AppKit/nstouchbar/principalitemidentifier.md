@@ -22,7 +22,7 @@ var principalItemIdentifier: NSTouchBarItem.Identifier? { get set }
 @property (copy, nullable) NSTouchBarItemIdentifier principalItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system attempts to center a principal item within the Touch Bar. If you want a group of items to appear centered in the Touch Bar, designate the group item (of type [`NSGroupTouchBarItem`](../nsgrouptouchbaritem.md)) as the principal item.
 

@@ -21,11 +21,11 @@ Modifies the format style to use the specified sign display strategy for display
 func sign(strategy: Decimal.FormatStyle.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified sign display strategy.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`Decimal.FormatStyle`](../formatstyle.md) for the `en_US` locale, and a second style that displays a sign for all values except zero. It then applies each style to an array of decimal values. The formatting that the modified style applies adds the negative (`-`) or positive (`+`) sign to all the numbers.
 

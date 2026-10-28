@@ -27,7 +27,7 @@ A view that contains RealityKit content.
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 - [Implementing scene understanding and reconstruction in your RealityKit app](./realitykit-scene-understanding.md)
 
-#### Overview
+## Overview
 
 Use `RealityView` to display rich 3D RealityKit content in your app, including content you author in Reality Composer Pro. `RealityView` passes a structure that conforms to [`RealityViewContentProtocol`](./realityviewcontentprotocol.md) to its `make` and `update` closures, which you can use to add and remove RealityKit entities to your view.
 

@@ -25,7 +25,7 @@ func characterIsMember(_ aCharacter: unichar) -> Bool
 - (BOOL) characterIsMember:(unichar) aCharacter;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aCharacter` is in the receiving character set, otherwise [`false`](../../Swift/false.md).
 

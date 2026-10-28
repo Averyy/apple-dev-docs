@@ -19,7 +19,7 @@ var naturalSize: CGSize { get set }
 @property (nonatomic) CGSize naturalSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only valid for tracks with visual media types and is [`zero`](../../CoreFoundation/cgsize/zero.md) for other track types.
 

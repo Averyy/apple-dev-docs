@@ -20,7 +20,7 @@ A boolean expression over path patterns for selecting sets of prims.
 struct PathExpression
 ```
 
-#### Overview
+## Overview
 
 Path expressions combine patterns using set operations (union, intersection, complement, difference) and can reference other named expressions. The struct wraps `pxr::SdfPathExpression` and provides access to common expression patterns through static properties and string-based initialization.
 

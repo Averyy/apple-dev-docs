@@ -26,7 +26,7 @@ var exists: Bool { get }
 @property (readonly) BOOL exists;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines if the element exists within the app’s current UI hierarchy.
 

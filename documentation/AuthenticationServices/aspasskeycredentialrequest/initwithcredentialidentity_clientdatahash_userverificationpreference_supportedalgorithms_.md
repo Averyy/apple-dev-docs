@@ -19,11 +19,11 @@ Initializes a passkey credential request.
 - (instancetype) initWithCredentialIdentity:(ASPasskeyCredentialIdentity *) credentialIdentity clientDataHash:(NSData *) clientDataHash userVerificationPreference:(ASAuthorizationPublicKeyCredentialUserVerificationPreference) userVerificationPreference supportedAlgorithms:(NSArray<NSNumber *> *) supportedAlgorithms;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized passkey credential request.
 
-#### Discussion
+## Discussion
 
 For credential assertion requests, supply an empty array for the `supportedAlgorithms`. For credential registration requests, supply an array of one or more numbers from the Internet Assigned Numbers Authority (IANA) [Concise Binary Object Representation Object Signing and Encryption (COSE) algorithms registry](https://www.iana.org/assignments/cose/cose.xhtml#algorithms) as [`NSNumber`](../../Foundation/nsnumber.md) objects.
 

@@ -17,11 +17,11 @@ Returns the full pathnames of any newly mounted disks.
 - (NSArray *) mountNewRemovableMedia;
 ```
 
-#### Return Value
+## Return Value
 
 An array of NSString objects, each of which contains the full pathname to a newly mounted disk.
 
-#### Discussion
+## Discussion
 
 This method polls the system’s drives for any disks that have been inserted but not yet mounted and waits until the new disks have been mounted. This method posts an [`didMountNotification`](./didmountnotification.md) to the `NSWorkspace` object’s notification center when it is finished. Currently provides the same functionality as [`mountedRemovableMedia()`](./mountedremovablemedia%28%29.md).
 
